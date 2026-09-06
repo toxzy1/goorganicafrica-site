@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or site.name }}{% if title %} | {{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="keywords" content="organic farming Africa, organic farming Nigeria, farm profit calculator Africa, hydroponic fodder farming, black soldier fly farming Nigeria, oyster mushroom farming Nigeria, cassava farming Nigeria, livestock feed cost reduction, organic fertilizer Nigeria, agribusiness Nigeria, farming guide Africa, how to farm in Nigeria, crop farming Nigeria, poultry farming Nigeria, catfish farming Nigeria, goat farming Nigeria, organic farming guide, profitable farming Africa, small scale farming Nigeria, farming for beginners Africa">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  {% if ogImage %}<meta property="og:image" content="{{ site.url }}{{ ogImage }}">{% endif %}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title or site.name }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+
+  {% if jsonLd %}
+  <script type="application/ld+json">{{ jsonLd | safe }}</script>
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ site.phone }}",
+      "email": "{{ site.email }}",
+      "contactType": "Customer Support",
+      "areaServed": ["NG","GH","KE","UG","TZ","ZA","ZM","RW","CM","ET"],
+      "availableLanguage": "English"
+    },
+    "founder": { "@type": "Person", "name": "{{ site.author }}" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "partials/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script src="/js/main.js" defer></script>
+
+</body>
+</html>

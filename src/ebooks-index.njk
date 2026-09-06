@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: All Organic Farming Guides
+description: Browse all organic farming guides from GoOrganicAfrica — hydroponic fodder, mushroom farming, black soldier fly farming and weed-free cassava production.
+permalink: "/ebooks/"
+---
+
+<section class="section" style="padding-top: 48px;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">All Guides</span>
+      <h1>Organic Farming Guides</h1>
+      <p class="lede">Practical, step-by-step guides written from real farm experience and research.</p>
+    </div>
+    <div class="ebook-grid">
+      {% for ebook in collections.ebooks %}
+      <a class="ebook-card" href="{{ ebook.url }}">
+        <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} guide cover">
+        <h3>{{ ebook.data.title }}</h3>
+        <p class="tagline">{{ ebook.data.tagline }}</p>
+        <div class="card-footer">
+          <span class="price">{{ ebook.data.price | currency }}</span>
+          <span class="cta">View Guide &rarr;</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

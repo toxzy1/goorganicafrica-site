@@ -1,0 +1,209 @@
+---
+layout: layouts/base.njk
+title: "GoOrganicAfrica — Free Farm Profit Calculator & Organic Farming Guides for Africa"
+description: "Free farm profit calculator for Nigerian and African farmers. Calculate farming costs, revenue, profit and ROI for 17 crops and livestock across 10 African countries. Expert organic farming guides on hydroponic fodder, mushroom farming, black soldier fly farming and cassava production."
+permalink: "/"
+---
+
+<!-- HERO: Tool first, SaaS positioning -->
+<section class="hero" style="background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-mid) 100%); color: var(--white); padding: 64px 0 80px;">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" style="color: var(--gold);">Free Farming Tool</span>
+      <h1 style="color: var(--white);">Know Your Farm Profit Before You Plant</h1>
+      <p class="lede" style="color: var(--white); max-width: 52ch;">
+        Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.
+      </p>
+      <ul class="hero-bullets" style="color: var(--white);">
+        <li id="hp-country-line">Covering Nigeria, Ghana, Kenya &amp; more African countries</li>
+        <li>Crops, livestock &amp; more — continuously expanding</li>
+        <li>Enter farm size in acres, plots or hectares</li>
+        <li>Override any figure with your own local numbers</li>
+        <li>Conservative, Expected &amp; Optimistic profit scenarios</li>
+      </ul>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/tools/farm-profit-calculator/" style="background:var(--gold);color:var(--green-deep);box-shadow:3px 3px 0 rgba(0,0,0,0.3);">
+          &#9654; Calculate My Farm Profit
+        </a>
+        <a class="btn btn-outline" href="/ebooks/" style="border-color:rgba(255,255,255,0.5);color:var(--white);">
+          Browse Farming Guides
+        </a>
+      </div>
+    </div>
+
+    <!-- Calculator preview card -->
+    <a href="/tools/farm-profit-calculator/" style="text-decoration:none;">
+      <div class="packet" style="background:var(--white); box-shadow: 8px 8px 0 rgba(0,0,0,0.25);">
+        <div class="packet-header">
+          <span class="packet-batch" style="color:var(--soil);">FREE TOOL</span>
+          <span style="font-size:2.2rem;">&#127807;</span>
+        </div>
+        <h2 class="packet-title">Farm Profit Calculator Africa</h2>
+        <p class="packet-tagline">Plan Your Farm. Calculate Your Profit.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin: 16px 0;">
+          <div style="background:var(--sage-light);border-radius:8px;padding:10px;text-align:center;">
+            <div style="font-family:var(--font-label);font-size:1.1rem;font-weight:800;color:var(--green-deep);">{{ calculatorCommodities | selectattr("category", "equalto", "crop") | list | length }}+</div>
+            <div style="font-size:0.72rem;color:var(--ink-soft);">Crops & growing</div>
+          </div>
+          <div style="background:var(--sage-light);border-radius:8px;padding:10px;text-align:center;">
+            <div style="font-family:var(--font-label);font-size:1.1rem;font-weight:800;color:var(--green-deep);">{{ calculatorCommodities | selectattr("category", "equalto", "livestock") | list | length }}+</div>
+            <div style="font-size:0.72rem;color:var(--ink-soft);">Livestock & growing</div>
+          </div>
+        </div>
+        <div class="packet-footer">
+          <span class="packet-price" style="color:var(--green-mid);">100% Free</span>
+          <span class="btn btn-sm btn-primary">Open Calculator</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="section section-alt" style="padding: 32px 0;">
+  <div class="container">
+    <div class="trust-strip">
+      <div class="trust-item">
+        <span class="num">{{ calculatorCommodities | length }}+</span>
+        <span class="label">Crops & livestock (expanding)</span>
+      </div>
+      <div class="trust-item">
+        <span class="num">10</span>
+        <span class="label">African countries (expanding)</span>
+      </div>
+      <div class="trust-item">
+        <span class="num">2001</span>
+        <span class="label">Certified since</span>
+      </div>
+      <div class="trust-item">
+        <span class="num">100%</span>
+        <span class="label">Free to use</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS: 3-step SaaS explainer -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three Steps to Your Farm Profit Report</h2>
+      <p class="lede">No sign-up. No payment. Just your numbers.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="text-align:center;padding:24px 16px;">
+        <div style="font-size:2.4rem;margin-bottom:12px;">&#127758;</div>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">1. Pick Your Country & Crop</h3>
+        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;">Select your African country, your region, and the crop or livestock you plan to farm. Currency and data adjust automatically.</p>
+      </div>
+      <div style="text-align:center;padding:24px 16px;border-left:1px solid var(--line);border-right:1px solid var(--line);">
+        <div style="font-size:2.4rem;margin-bottom:12px;">&#9999;&#65039;</div>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">2. Enter Your Farm Details</h3>
+        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;">Choose farm size in acres, plots or hectares. Use our researched cost and price estimates, or enter your own local figures.</p>
+      </div>
+      <div style="text-align:center;padding:24px 16px;">
+        <div style="font-size:2.4rem;margin-bottom:12px;">&#128200;</div>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;">3. Get Your Profit Report</h3>
+        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;">See your total investment, expected revenue, estimated profit, ROI, and break-even price — plus 3 scenarios and personalised advice.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a class="btn btn-primary" href="/tools/farm-profit-calculator/">Try the Calculator — It's Free</a>
+    </div>
+  </div>
+</section>
+
+<!-- EBOOKS SECTION -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Farming Guides</span>
+      <h2>Go Deeper With Expert Guides</h2>
+      <p class="lede">Step-by-step organic farming guides — written from real research and farm experience, not theory.</p>
+    </div>
+    <div class="ebook-grid">
+      {% for ebook in collections.ebooks %}
+      <a class="ebook-card" href="{{ ebook.url }}">
+        <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} guide cover">
+        <h3>{{ ebook.data.title }}</h3>
+        <p class="tagline">{{ ebook.data.tagline }}</p>
+        <div class="card-footer">
+          <span class="price">{{ ebook.data.price | currency }}</span>
+          <span class="cta">View Guide &rarr;</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div style="text-align:center;margin-top:28px;">
+      <a class="btn btn-outline" href="/ebooks/">See All Guides</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="section">
+  <div class="container" style="display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
+    <div style="flex:1;min-width:260px;">
+      <span class="eyebrow">About GoOrganicAfrica</span>
+      <h2>Built from the Farm, Not the Classroom</h2>
+      <p style="color:var(--ink-soft);">
+        GoOrganicAfrica is built by Amoo Oluwatoyin Owolabi &mdash; farmer, agricultural researcher, and organic bio-fertilizer producer with a certificate in Agriculture since 2001. Every tool and guide here comes from real production experience across Nigeria, Cameroon and beyond.
+      </p>
+      <a class="btn btn-outline btn-sm" href="/about/">Read More</a>
+    </div>
+    <div style="flex:1;min-width:220px;">
+      <div class="trust-strip" style="grid-template-columns:repeat(2,1fr);">
+        <div class="trust-item">
+          <span class="num">{{ collections.ebooks.length }}</span>
+          <span class="label">Practical guides</span>
+        </div>
+        <div class="trust-item">
+          <span class="num">3+</span>
+          <span class="label">Countries reached</span>
+        </div>
+        <div class="trust-item">
+          <span class="num">100%</span>
+          <span class="label">Farm-tested</span>
+        </div>
+        <div class="trust-item">
+          <span class="num">Free</span>
+          <span class="label">Calculator tool</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">From the Blog</span>
+      <h2>Farming Insights & Market Analysis</h2>
+      <p class="lede">Practical articles across 6 categories — written to help African farmers make better decisions.</p>
+    </div>
+    <div class="empty-state">
+      <p>Articles are being written and will appear here soon.</p>
+      <a class="btn btn-outline btn-sm" href="/blog/">Explore Blog Categories</a>
+    </div>
+  </div>
+</section>
+
+<script>
+// Dynamically update the country line based on farmer's saved country preference
+(function () {
+  var countryNames = {
+    NG: "Nigeria", GH: "Ghana", KE: "Kenya", UG: "Uganda",
+    TZ: "Tanzania", ZA: "South Africa", ZM: "Zambia",
+    RW: "Rwanda", CM: "Cameroon", ET: "Ethiopia"
+  };
+  try {
+    var saved = localStorage.getItem("fpc_country");
+    var el = document.getElementById("hp-country-line");
+    if (el && saved && countryNames[saved]) {
+      el.textContent = "African country data loaded \u2014 switch anytime in the calculator";
+    }
+  } catch (e) {}
+})();
+</script>

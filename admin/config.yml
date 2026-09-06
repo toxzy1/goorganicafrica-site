@@ -1,0 +1,353 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME
+  branch: main
+  use_graphql: true
+  base_url: https://YOUR-OAUTH-PROXY.workers.dev
+  auth_endpoint: /auth
+
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+site_url: https://YOUR-PAGES-SITE.pages.dev
+display_url: https://YOUR-PAGES-SITE.pages.dev
+logo_url: /images/brand-mark.svg
+publish_mode: editorial_workflow
+
+collections:
+  - name: "ebooks"
+    label: "Ebooks"
+    folder: "src/ebooks"
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    summary: "{{title}} — ₦{{price}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/ebook.njk"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "/ebooks/{{slug}}/"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "URL Slug", name: "slug", widget: "string"}
+      - {label: "Tagline", name: "tagline", widget: "string"}
+      - {label: "Cover Image", name: "icon", widget: "image"}
+      - {label: "Price (NGN)", name: "price", widget: "number", value_type: "int"}
+      - {label: "Selar Checkout Link", name: "selar_link", widget: "string"}
+      - {label: "Featured?", name: "featured", widget: "boolean", default: false}
+      - {label: "Display Order", name: "order", widget: "number", value_type: "int"}
+      - {label: "Category", name: "category", widget: "select", options: ["Livestock & Feed Production", "Crop Production", "Mushroom Farming", "Organic Fertilizers & Soil Health", "Farm Business"]}
+      - {label: "Audience", name: "audience", widget: "list"}
+      - {label: "Benefits", name: "benefits", widget: "list"}
+      - {label: "Bonus", name: "bonus", widget: "string", required: false}
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        fields:
+          - {label: "Question", name: "q", widget: "string"}
+          - {label: "Answer", name: "a", widget: "text"}
+      - {label: "Meta Description", name: "description", widget: "text"}
+      - {label: "Page Body", name: "body", widget: "markdown", required: false}
+
+  - name: "blog_categories"
+    label: "Blog Categories"
+    folder: "src/blog-categories"
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "URL Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Display Order", name: "order", widget: "number", value_type: "int"}
+
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "src/blog/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: true}
+      - {label: "Meta Title", name: "meta_title", widget: "string", required: false}
+      - {label: "Meta Description", name: "description", widget: "text"}
+      - {label: "SEO Keywords", name: "keywords", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "calculator_countries"
+    label: "Calculator: Countries"
+    files:
+      - label: "Country List"
+        name: "countries"
+        file: "src/_data/calculatorCountries.json"
+        editor: {preview: false}
+        fields:
+          - label: "Countries"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "Country Code", name: "code", widget: "string"}
+              - {label: "Country Name", name: "name", widget: "string"}
+              - {label: "Currency Code", name: "currency", widget: "string"}
+              - {label: "Currency Symbol", name: "symbol", widget: "string"}
+              - {label: "Available in Calculator?", name: "available", widget: "boolean", default: true}
+              - {label: "Flag", name: "flag", widget: "string", required: false}
+
+  - name: "calculator_data"
+    label: "Calculator: Prices, Seeds, Costs & Yields"
+    files:
+      - label: "All Calculator Data"
+        name: "all_data"
+        file: "src/_data/calculatorData.json"
+        editor: {preview: false}
+        fields:
+          - label: "Commodities"
+            name: "commodities"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["crop", "animal"]}
+              - {label: "Unit Mode", name: "unit_mode", widget: "string"}
+              - {label: "Unit Label", name: "unit_label", widget: "string"}
+              - {label: "Cycle (days)", name: "cycle_days", widget: "number", value_type: "int"}
+              - {label: "Cycle Label", name: "cycle_label", widget: "string"}
+              - {label: "Related eBook Slug", name: "related_ebook_slug", widget: "string", required: false}
+              - label: "Country Data"
+                name: "country_data"
+                widget: "object"
+                fields:
+                  - label: "NG"
+                    name: "NG"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "GH"
+                    name: "GH"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "KE"
+                    name: "KE"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "UG"
+                    name: "UG"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "TZ"
+                    name: "TZ"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "ZA"
+                    name: "ZA"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "ZM"
+                    name: "ZM"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "RW"
+                    name: "RW"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "CM"
+                    name: "CM"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+                  - label: "ET"
+                    name: "ET"
+                    widget: "object"
+                    fields:
+                      - {label: "Cost per Unit", name: "cost_per_unit", widget: "number", value_type: "float"}
+                      - label: "Cost Breakdown"
+                        name: "cost_breakdown"
+                        widget: "list"
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "Amount", name: "amount", widget: "number", value_type: "float"}
+                      - {label: "Low Yield", name: "yield_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Yield", name: "yield_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Yield", name: "yield_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Yield Unit", name: "yield_unit", widget: "string", required: false}
+                      - {label: "Low Price", name: "price_low", widget: "number", value_type: "float", required: false}
+                      - {label: "Expected Price", name: "price_expected", widget: "number", value_type: "float", required: false}
+                      - {label: "High Price", name: "price_high", widget: "number", value_type: "float", required: false}
+                      - {label: "Price Unit", name: "price_unit", widget: "string", required: false}
+                      - {label: "Data Source", name: "source", widget: "string", required: false}
+                      - {label: "As Of", name: "as_of", widget: "string", required: false}
+
+  - name: "ag_data_sources"
+    label: "Automatic Data: Sources & Rules"
+    files:
+      - label: "Source Registry"
+        name: "sources"
+        file: "config/ag-data-sources.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Sources"
+            name: "sources"
+            widget: "list"
+            fields:
+              - {label: "Source ID", name: "id", widget: "string"}
+              - {label: "Country", name: "country", widget: "string"}
+              - {label: "Data Type", name: "data_type", widget: "select", options: ["commodity_price", "seed_price", "input_price", "exchange_rate", "government_statistic"]}
+              - {label: "Publisher", name: "publisher", widget: "string"}
+              - {label: "Source URL", name: "url", widget: "string", required: false}
+              - {label: "Frequency", name: "frequency", widget: "string"}
+              - {label: "Status", name: "status", widget: "string"}
+              - {label: "Method", name: "method", widget: "string"}
+              - {label: "Auto Publish", name: "auto_publish", widget: "boolean", default: false}
+              - {label: "Notes", name: "notes", widget: "text", required: false}

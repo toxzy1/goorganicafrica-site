@@ -1,0 +1,329 @@
+{
+  "id": "layer",
+  "name": "Poultry - Layers",
+  "category": "livestock",
+  "icon": "🥚",
+  "unit_mode": "livestock_recurring",
+  "unit_label": "bird",
+  "quantity_label": "Number of birds",
+  "output_label": "eggs per bird per year",
+  "cycle_days": 365,
+  "cycle_label": "12 months of laying (from point-of-lay)",
+  "related_ebook_slug": "hydroponic-fodder-farming",
+  "country_data": {
+    "NG": {
+      "cost_per_unit": 47000,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 6500
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 32000
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 3000
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 3500
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 2000
+        }
+      ],
+      "survival_rate": 95,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_per_unit": 190,
+      "price_low": 150,
+      "price_high": 220,
+      "price_unit": "per egg (crate of 30 ≈ ₦5,000-6,500)",
+      "source": "CircularGuru Nigeria Layer Profit data; NBS egg price watch (March 2026); PoultryFarmGuide.com",
+      "as_of": "2026-03"
+    },
+    "GH": {
+      "cost_per_unit": 320,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 75
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 200
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 25
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 20
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 95,
+      "price_per_unit": 1.5,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 1.0,
+      "price_high": 2.0,
+      "price_unit": "per egg"
+    },
+    "KE": {
+      "cost_per_unit": 6500,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 1500
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 4000
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 600
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 400
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-05",
+      "survival_rate": 95,
+      "price_per_unit": 18,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 15,
+      "price_high": 25,
+      "price_unit": "per egg"
+    },
+    "UG": {
+      "cost_per_unit": 165000,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 38000
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 104000
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 13000
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 10000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 95,
+      "price_per_unit": 600,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 450,
+      "price_high": 800,
+      "price_unit": "per egg"
+    },
+    "TZ": {
+      "cost_per_unit": 120000,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 28000
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 75000
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 10000
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 7000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 95,
+      "price_per_unit": 450,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 350,
+      "price_high": 600,
+      "price_unit": "per egg"
+    },
+    "ZA": {
+      "cost_per_unit": 1000,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 220
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 640
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 80
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 60
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 3.5,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 2.5,
+      "price_high": 5,
+      "price_unit": "per egg"
+    },
+    "ZM": {
+      "cost_per_unit": 800,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 180
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 500
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 70
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 50
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 3,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 2,
+      "price_high": 4,
+      "price_unit": "per egg"
+    },
+    "RW": {
+      "cost_per_unit": 42000,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 9500
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 26000
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 4000
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 2500
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 200,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 150,
+      "price_high": 280,
+      "price_unit": "per egg"
+    },
+    "CM": {
+      "cost_per_unit": 27000,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 6000
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 17000
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 2500
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 1500
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 120,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 80,
+      "price_high": 160,
+      "price_unit": "per egg"
+    },
+    "ET": {
+      "cost_per_unit": 2700,
+      "cost_breakdown": [
+        {
+          "label": "Point-of-lay pullet",
+          "amount": 600
+        },
+        {
+          "label": "Feed (12 months)",
+          "amount": 1700
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 250
+        },
+        {
+          "label": "Housing & labour (share)",
+          "amount": 150
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 12,
+      "output_low": 220,
+      "output_expected": 270,
+      "output_high": 320,
+      "price_low": 8,
+      "price_high": 18,
+      "price_unit": "per egg"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+title: Blog — Organic Farming Insights for Africa
+description: Practical articles on hydroponic fodder farming, black soldier fly farming, cassava production, oyster mushroom farming and more — written for Nigerian and African farmers.
+permalink: "/blog/"
+---
+
+<section class="section" style="padding-top: 48px;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Blog</span>
+      <h1>GoOrganicAfrica Farming Blog</h1>
+      <p class="lede">Practical, research-backed articles to help African farmers make better decisions and grow more profitably.</p>
+    </div>
+
+    <h2 style="font-size:1.2rem;color:var(--green-deep);margin-bottom:16px;">Browse by Category</h2>
+
+    <!-- Category filter -->
+    <div class="category-grid" style="margin-bottom: 40px;">
+      {% for cat in collections.blogCategories %}
+      <div class="category-card">
+        <h3>{{ cat.data.title }}</h3>
+        <p>{{ cat.data.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Articles -->
+    {% if collections.posts.length > 0 %}
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+      {% for post in collections.posts %}
+      <a href="/blog/{{ post.data.slug }}/" style="text-decoration:none;">
+        <div class="ebook-card" style="height:100%;">
+          {% if post.data.featured_image %}
+          <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}"
+            style="width:100%;height:180px;object-fit:cover;border-radius:4px;">
+          {% endif %}
+          <span class="eyebrow" style="font-size:0.68rem;">{{ post.data.category }}</span>
+          <h3 style="font-size:1.05rem;">{{ post.data.title }}</h3>
+          <p class="tagline" style="font-size:0.88rem;">{{ post.data.description }}</p>
+          <div class="card-footer">
+            <span style="font-size:0.8rem;color:var(--ink-soft);">Read article</span>
+            <span class="cta">&rarr;</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>Articles are being written and will appear here soon.</p>
+    </div>
+    {% endif %}
+
+    <div style="text-align:center;margin-top:40px;">
+      <a class="btn btn-primary" href="/tools/farm-profit-calculator/">Try the Free Farm Profit Calculator</a>
+    </div>
+  </div>
+</section>

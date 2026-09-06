@@ -1,0 +1,523 @@
+{
+  "id": "bell-pepper",
+  "name": "Bell Pepper (Sweet Pepper)",
+  "category": "crop",
+  "icon": "🫑",
+  "unit_mode": "crop",
+  "unit_label": "hectare",
+  "cycle_days": 150,
+  "cycle_label": "5-6 months",
+  "related_ebook_slug": null,
+  "country_data": {
+    "NG": {
+      "cost_per_unit": 1767000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 150000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 534000
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 50000
+        },
+        {
+          "label": "Staking / support stakes & ties",
+          "amount": 150000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 475000
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 80000
+        },
+        {
+          "label": "Labour (transplanting, staking, harvest)",
+          "amount": 200000
+        },
+        {
+          "label": "Tools, transport & packaging",
+          "amount": 50000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 78000
+        }
+      ],
+      "yield_low": 10,
+      "yield_expected": 15,
+      "yield_high": 40,
+      "yield_unit": "tonnes",
+      "price_low": 300,
+      "price_expected": 500,
+      "price_high": 1000,
+      "price_unit": "per kg",
+      "source": "Veggie Concept sweet pepper farm budget, Nigeria",
+      "as_of": "2025-09"
+    },
+    "GH": {
+      "cost_per_unit": 9000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 1100
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 2200
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 800
+        },
+        {
+          "label": "Staking / support stakes & ties",
+          "amount": 1100
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 2000
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 700
+        },
+        {
+          "label": "Labour (transplanting, staking, harvest)",
+          "amount": 800
+        },
+        {
+          "label": "Tools, transport & packaging",
+          "amount": 200
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 100
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 10.0,
+      "yield_expected": 15.0,
+      "yield_high": 40.0,
+      "yield_unit": "tonnes",
+      "price_low": 10,
+      "price_expected": 25,
+      "price_high": 50,
+      "price_unit": "per kg"
+    },
+    "KE": {
+      "cost_per_unit": 210000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 24000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 50000
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 18000
+        },
+        {
+          "label": "Staking / support stakes & ties",
+          "amount": 24000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 56000
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 16000
+        },
+        {
+          "label": "Labour",
+          "amount": 16000
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 4000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 2000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-05",
+      "yield_low": 11.0,
+      "yield_expected": 16.5,
+      "yield_high": 44.0,
+      "yield_unit": "tonnes",
+      "price_low": 80,
+      "price_expected": 150,
+      "price_high": 300,
+      "price_unit": "per kg"
+    },
+    "UG": {
+      "cost_per_unit": 4900000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 560000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 1180000
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 420000
+        },
+        {
+          "label": "Staking / support stakes",
+          "amount": 560000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 1320000
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 370000
+        },
+        {
+          "label": "Labour",
+          "amount": 370000
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 70000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 50000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 8.5,
+      "yield_expected": 12.8,
+      "yield_high": 34.0,
+      "yield_unit": "tonnes",
+      "price_low": 1500,
+      "price_expected": 3500,
+      "price_high": 7000,
+      "price_unit": "per kg"
+    },
+    "TZ": {
+      "cost_per_unit": 3500000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 400000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 840000
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 300000
+        },
+        {
+          "label": "Staking / support stakes",
+          "amount": 400000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 940000
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 265000
+        },
+        {
+          "label": "Labour",
+          "amount": 265000
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 55000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 35000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 9.0,
+      "yield_expected": 13.5,
+      "yield_high": 36.0,
+      "yield_unit": "tonnes",
+      "price_low": 1000,
+      "price_expected": 2500,
+      "price_high": 5000,
+      "price_unit": "per kg"
+    },
+    "ZA": {
+      "cost_per_unit": 68000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 7800
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 16200
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 5800
+        },
+        {
+          "label": "Staking / support stakes",
+          "amount": 7800
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 18200
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 5100
+        },
+        {
+          "label": "Labour",
+          "amount": 5100
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 1000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 1000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 13.0,
+      "yield_expected": 19.5,
+      "yield_high": 52.0,
+      "yield_unit": "tonnes",
+      "price_low": 15,
+      "price_expected": 30,
+      "price_high": 60,
+      "price_unit": "per kg"
+    },
+    "ZM": {
+      "cost_per_unit": 52000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 6000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 12400
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 4400
+        },
+        {
+          "label": "Staking / support stakes",
+          "amount": 6000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 13900
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 3900
+        },
+        {
+          "label": "Labour",
+          "amount": 3900
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 800
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 700
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 8.5,
+      "yield_expected": 12.8,
+      "yield_high": 34.0,
+      "yield_unit": "tonnes",
+      "price_low": 10,
+      "price_expected": 22,
+      "price_high": 45,
+      "price_unit": "per kg"
+    },
+    "RW": {
+      "cost_per_unit": 1400000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 160000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 330000
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 118000
+        },
+        {
+          "label": "Staking / support stakes",
+          "amount": 160000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 373000
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 105000
+        },
+        {
+          "label": "Labour",
+          "amount": 105000
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 25000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 24000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 10.0,
+      "yield_expected": 15.0,
+      "yield_high": 40.0,
+      "yield_unit": "tonnes",
+      "price_low": 500,
+      "price_expected": 1200,
+      "price_high": 2400,
+      "price_unit": "per kg"
+    },
+    "CM": {
+      "cost_per_unit": 880000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 101000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 209000
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 74000
+        },
+        {
+          "label": "Staking / support stakes",
+          "amount": 101000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 234000
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 66000
+        },
+        {
+          "label": "Labour",
+          "amount": 66000
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 15000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 14000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 9.0,
+      "yield_expected": 13.5,
+      "yield_high": 36.0,
+      "yield_unit": "tonnes",
+      "price_low": 250,
+      "price_expected": 600,
+      "price_high": 1200,
+      "price_unit": "per kg"
+    },
+    "ET": {
+      "cost_per_unit": 102000,
+      "cost_breakdown": [
+        {
+          "label": "Hybrid seeds",
+          "amount": 12000
+        },
+        {
+          "label": "Fertilizer (NPK + CAN)",
+          "amount": 24000
+        },
+        {
+          "label": "Manure / soil amendment",
+          "amount": 8600
+        },
+        {
+          "label": "Staking / support stakes",
+          "amount": 12000
+        },
+        {
+          "label": "Drip irrigation system",
+          "amount": 27200
+        },
+        {
+          "label": "Pesticides & fungicides",
+          "amount": 7700
+        },
+        {
+          "label": "Labour",
+          "amount": 7700
+        },
+        {
+          "label": "Tools & packaging",
+          "amount": 1800
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 1000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 8.0,
+      "yield_expected": 12.0,
+      "yield_high": 32.0,
+      "yield_unit": "tonnes",
+      "price_low": 25,
+      "price_expected": 60,
+      "price_high": 120,
+      "price_unit": "per kg"
+    }
+  }
+}

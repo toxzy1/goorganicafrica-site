@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "description": "Sources monitored by the GoOrganicAfrica agricultural data update engine.",
+  "sources": [
+    {
+      "id": "nbs-selected-food-price-watch",
+      "country": "NG",
+      "data_type": "commodity_price",
+      "publisher": "National Bureau of Statistics (Nigeria)",
+      "url": "https://microdata.nigerianstat.gov.ng/index.php/catalog/162/related-materials",
+      "frequency": "monthly",
+      "status": "active",
+      "method": "nbs_food_price_watch_zip_xlsx",
+      "auto_publish": false,
+      "notes": "The updater discovers the latest available NBS Food Price Watch ZIP, extracts the Excel tables and prepares candidate reference-price updates. Changes are proposed for review before publication."
+    },
+    {
+      "id": "seed-prices-market-feed",
+      "country": "NG",
+      "data_type": "seed_price",
+      "publisher": "Configured agricultural-market sources",
+      "url": "",
+      "frequency": "weekly",
+      "status": "ready_for_source_configuration",
+      "method": "csv_json_feed",
+      "auto_publish": false,
+      "notes": "Seed prices are deliberately modeled separately from commodity selling prices. Configure one or more reliable agro-dealer/cooperative/government feeds when a machine-readable source is available. Until then, the CMS remains the approval/override source."
+    },
+    {
+      "id": "official-currency-rates",
+      "country": "MULTI",
+      "data_type": "exchange_rate",
+      "publisher": "Configured official/market FX source",
+      "url": "",
+      "frequency": "daily",
+      "status": "ready_for_source_configuration",
+      "method": "json_feed",
+      "auto_publish": false,
+      "notes": "FX is kept separate so future currency conversion can update without changing agronomic assumptions."
+    }
+  ]
+}

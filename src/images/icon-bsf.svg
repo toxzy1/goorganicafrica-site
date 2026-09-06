@@ -1,0 +1,10 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Black soldier fly bin icon">
+  <path d="M14 22 L50 22 L46 52 L18 52 Z" fill="#5C4430"/>
+  <rect x="12" y="18" width="40" height="6" rx="2" fill="#8A6B4F"/>
+  <g fill="#2C5240">
+    <ellipse cx="26" cy="34" rx="4" ry="2.4"/>
+    <ellipse cx="34" cy="30" rx="4" ry="2.4" transform="rotate(20 34 30)"/>
+    <ellipse cx="30" cy="40" rx="4" ry="2.4" transform="rotate(-15 30 40)"/>
+    <ellipse cx="38" cy="42" rx="4" ry="2.4" transform="rotate(10 38 42)"/>
+  </g>
+</svg>

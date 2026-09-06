@@ -1,0 +1,367 @@
+{
+  "id": "cassava",
+  "name": "Cassava",
+  "category": "crop",
+  "icon": "🍠",
+  "unit_mode": "crop",
+  "unit_label": "hectare",
+  "cycle_days": 300,
+  "cycle_label": "9-12 months",
+  "related_ebook_slug": "weed-free-farming-technique",
+  "country_data": {
+    "NG": {
+      "cost_per_unit": 472000,
+      "cost_breakdown": [
+        {
+          "label": "Land acquisition/prep",
+          "amount": 150000
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 30000
+        },
+        {
+          "label": "Clearing, ploughing & harrowing",
+          "amount": 60000
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 100000
+        },
+        {
+          "label": "Labour (weeding, planting, harvest)",
+          "amount": 110000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 22000
+        }
+      ],
+      "yield_low": 20,
+      "yield_expected": 32,
+      "yield_high": 40,
+      "yield_unit": "tonnes",
+      "price_low": 25,
+      "price_expected": 40,
+      "price_high": 80,
+      "price_unit": "per kg",
+      "source": "Costs & Returns Analysis of Cassava Production, Ogun State (2023 study, inflation-adjusted); Veggie Grow / Vantage Nigeria cassava pricing (2025)",
+      "as_of": "2025-11"
+    },
+    "GH": {
+      "cost_per_unit": 2200,
+      "cost_breakdown": [
+        {
+          "label": "Land clearing & preparation",
+          "amount": 700
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 200
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 600
+        },
+        {
+          "label": "Labour (weeding, planting, harvest)",
+          "amount": 600
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 100
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "yield_low": 20.0,
+      "yield_expected": 32.0,
+      "yield_high": 40.0,
+      "yield_unit": "tonnes",
+      "price_low": 0.5,
+      "price_expected": 1.2,
+      "price_high": 2.5,
+      "price_unit": "per kg"
+    },
+    "KE": {
+      "cost_per_unit": 42000,
+      "cost_breakdown": [
+        {
+          "label": "Land clearing & preparation",
+          "amount": 12000
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 3000
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 12000
+        },
+        {
+          "label": "Labour",
+          "amount": 12000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 3000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-05",
+      "yield_low": 22.0,
+      "yield_expected": 35.2,
+      "yield_high": 44.0,
+      "yield_unit": "tonnes",
+      "price_low": 10,
+      "price_expected": 20,
+      "price_high": 40,
+      "price_unit": "per kg"
+    },
+    "UG": {
+      "cost_per_unit": 950000,
+      "cost_breakdown": [
+        {
+          "label": "Land preparation",
+          "amount": 280000
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 80000
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 250000
+        },
+        {
+          "label": "Labour",
+          "amount": 300000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 40000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "yield_low": 17.0,
+      "yield_expected": 27.2,
+      "yield_high": 34.0,
+      "yield_unit": "tonnes",
+      "price_low": 200,
+      "price_expected": 500,
+      "price_high": 1000,
+      "price_unit": "per kg"
+    },
+    "TZ": {
+      "cost_per_unit": 680000,
+      "cost_breakdown": [
+        {
+          "label": "Land preparation",
+          "amount": 200000
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 55000
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 175000
+        },
+        {
+          "label": "Labour",
+          "amount": 215000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 30000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "yield_low": 18.0,
+      "yield_expected": 28.8,
+      "yield_high": 36.0,
+      "yield_unit": "tonnes",
+      "price_low": 150,
+      "price_expected": 350,
+      "price_high": 700,
+      "price_unit": "per kg"
+    },
+    "ZA": {
+      "cost_per_unit": 12000,
+      "cost_breakdown": [
+        {
+          "label": "Land preparation",
+          "amount": 3500
+        },
+        {
+          "label": "Cassava stems/cuttings",
+          "amount": 1000
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 3500
+        },
+        {
+          "label": "Labour",
+          "amount": 3500
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 500
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "yield_low": 26.0,
+      "yield_expected": 41.6,
+      "yield_high": 52.0,
+      "yield_unit": "tonnes",
+      "price_low": 3,
+      "price_expected": 6,
+      "price_high": 12,
+      "price_unit": "per kg"
+    },
+    "ZM": {
+      "cost_per_unit": 9000,
+      "cost_breakdown": [
+        {
+          "label": "Land preparation",
+          "amount": 2700
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 700
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 2600
+        },
+        {
+          "label": "Labour",
+          "amount": 2600
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 400
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "yield_low": 17.0,
+      "yield_expected": 27.2,
+      "yield_high": 34.0,
+      "yield_unit": "tonnes",
+      "price_low": 2,
+      "price_expected": 4,
+      "price_high": 8,
+      "price_unit": "per kg"
+    },
+    "RW": {
+      "cost_per_unit": 250000,
+      "cost_breakdown": [
+        {
+          "label": "Land preparation",
+          "amount": 70000
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 20000
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 70000
+        },
+        {
+          "label": "Labour",
+          "amount": 80000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 10000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "yield_low": 20.0,
+      "yield_expected": 32.0,
+      "yield_high": 40.0,
+      "yield_unit": "tonnes",
+      "price_low": 100,
+      "price_expected": 200,
+      "price_high": 400,
+      "price_unit": "per kg"
+    },
+    "CM": {
+      "cost_per_unit": 165000,
+      "cost_breakdown": [
+        {
+          "label": "Land preparation",
+          "amount": 48000
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 13000
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 44000
+        },
+        {
+          "label": "Labour",
+          "amount": 52000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 8000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "yield_low": 18.0,
+      "yield_expected": 28.8,
+      "yield_high": 36.0,
+      "yield_unit": "tonnes",
+      "price_low": 80,
+      "price_expected": 150,
+      "price_high": 300,
+      "price_unit": "per kg"
+    },
+    "ET": {
+      "cost_per_unit": 23000,
+      "cost_breakdown": [
+        {
+          "label": "Land preparation",
+          "amount": 7000
+        },
+        {
+          "label": "Cassava stems",
+          "amount": 1800
+        },
+        {
+          "label": "Fertilizer/manure",
+          "amount": 6200
+        },
+        {
+          "label": "Labour",
+          "amount": 7200
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 800
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "yield_low": 16.0,
+      "yield_expected": 25.6,
+      "yield_high": 32.0,
+      "yield_unit": "tonnes",
+      "price_low": 10,
+      "price_expected": 20,
+      "price_high": 40,
+      "price_unit": "per kg"
+    }
+  }
+}
