@@ -88,3 +88,17 @@ Seed prices are a separate data type because they can change by variety, brand, 
 ## Security
 
 Never store any GitHub OAuth Client Secret, GitHub personal access token, or other credential in `admin/config.yml`, JavaScript, HTML, JSON data, or GitHub Actions source. Store secrets in the appropriate Cloudflare/GitHub secret store.
+
+## Current control-panel architecture
+
+The CMS is now designed around extensible data lists rather than fixed ten-country fields. It includes:
+- Ebooks & Selar Products
+- Blog Posts and Blog Categories
+- Calculator Countries
+- Calculator States / Regions / Provinces
+- Calculator Enterprises with country-specific costs, selling prices, seed prices, yields and source metadata
+- Automatic Agricultural Data Sources
+- Data Quality & Publishing Rules
+- Global Site Settings, SEO and AdSense controls
+
+Routine content updates should be made in the admin panel and committed through the GitHub backend. Cloudflare Pages then rebuilds the site from `main`.
