@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ meta_title or title }}{% if not meta_title and title %} | {{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
+  <meta name="keywords" content="farm profit calculator Africa, farm profit calculator Nigeria, farming cost calculator, crop profit calculator, livestock profit calculator, hydroponic fodder farming, black soldier fly farming, oyster mushroom farming, cassava farming Nigeria, organic farming Africa, agribusiness calculator, farming ROI calculator">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% if locale %}
+  {% for lang in languages %}<link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{{ locale.countryCode | lower }}/{{ lang.code }}/farm-profit-calculator/">{% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/farm-profit-calculator/">
+  {% endif %}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:image" content="{{ site.url }}/images/brand-mark.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/brand-mark.svg">
+
+  <meta name="theme-color" content="#1F3A2E">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/calculator.css">
+
+  <!-- WebApplication structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GoOrganicAfrica Farm Profit Calculator",
+    "description": "Free farm profit calculator for Nigerian and African farmers covering {{ site.calculator.enterpriseCount }} crops and livestock across {{ site.calculator.countryCount }} African countries with automatic currency switching.",
+    "url": "{{ site.url }}/farm-profit-calculator/",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "NGN" },
+    "creator": { "@type": "Person", "name": "{{ site.author }}" }
+  }
+  </script>
+
+  <!-- Organization structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}",
+    "founder": { "@type": "Person", "name": "{{ site.author }}" }
+  }
+  </script>
+
+  {% if jsonLd %}<script type="application/ld+json">{{ jsonLd | safe }}</script>{% endif %}
+  {% if site.adsense.enabled and site.adsense.publisher_id and site.adsense.auto_ads %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.publisher_id }}" crossorigin="anonymous"></script>
+  {% endif %}
+</head>
+<body style="background:var(--white);">
+  <a class="skip-link" href="#calc-root">Skip to calculator</a>
+  {{ content | safe }}
+  <noscript><p style="padding:32px;text-align:center">Please enable JavaScript to use this calculator.</p></noscript>
+</body>
+</html>

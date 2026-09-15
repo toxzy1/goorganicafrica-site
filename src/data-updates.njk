@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+title: Agricultural Data Sources & Update Policy — GoOrganicAfrica
+description: How GoOrganicAfrica monitors agricultural market prices, seed prices, input costs and official statistics for its farming tools.
+permalink: "/data-updates/"
+---
+
+<section class="section" style="padding-top:48px;">
+  <div class="container" style="max-width:900px;">
+    <span class="eyebrow">Data Transparency</span>
+    <h1>Agricultural Data Sources & Updates</h1>
+    <p class="lede">GoOrganicAfrica is designed to refresh agricultural reference data from government, market and relevant agricultural-agency sources while keeping uncertain changes under review.</p>
+
+    <div class="trust-strip" style="margin:28px 0;grid-template-columns:repeat(3,1fr);">
+      <div class="trust-item"><span class="num">{{ site.calculator.countryCount }}</span><span class="label">Active countries</span></div>
+      <div class="trust-item"><span class="num">{{ site.calculator.enterpriseCount }}</span><span class="label">Farming enterprises</span></div>
+      <div class="trust-item"><span class="num">{{ site.calculator.priceRecordCount }}</span><span class="label">Country price records</span></div>
+    </div>
+
+    <h2>What can be updated automatically?</h2>
+    <ul class="benefit-list">
+      <li><span class="mark">✓</span><span>Commodity selling prices from reliable market or government datasets.</span></li>
+      <li><span class="mark">✓</span><span>Seed prices, including variety, brand, pack size, supplier and location where the source provides them.</span></li>
+      <li><span class="mark">✓</span><span>Livestock and animal market prices where trustworthy machine-readable data is available.</span></li>
+      <li><span class="mark">✓</span><span>Fertilizer, feed, irrigation, labour and other input-cost datasets where reliable sources are configured.</span></li>
+      <li><span class="mark">✓</span><span>Exchange-rate data so currencies can be refreshed independently of agronomic assumptions.</span></li>
+    </ul>
+
+    <h2>How publishing is protected</h2>
+    <p>Automated collection does not mean blindly replacing calculator values. The update system records the source, date, unit and geography and can send changes for review. This is especially important when a government spreadsheet changes columns, units or regional definitions.</p>
+
+    <h2>Current source registry</h2>
+    {% if site.data.sources.length %}
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;">
+        <thead><tr><th style="text-align:left;padding:10px;border-bottom:1px solid var(--line);">Publisher</th><th style="text-align:left;padding:10px;border-bottom:1px solid var(--line);">Data</th><th style="text-align:left;padding:10px;border-bottom:1px solid var(--line);">Country</th><th style="text-align:left;padding:10px;border-bottom:1px solid var(--line);">Frequency</th><th style="text-align:left;padding:10px;border-bottom:1px solid var(--line);">Status</th></tr></thead>
+        <tbody>
+        {% for source in site.data.sources %}
+          <tr><td style="padding:10px;border-bottom:1px solid var(--line);">{{ source.publisher }}</td><td style="padding:10px;border-bottom:1px solid var(--line);">{{ source.data_type }}</td><td style="padding:10px;border-bottom:1px solid var(--line);">{{ source.country }}</td><td style="padding:10px;border-bottom:1px solid var(--line);">{{ source.frequency }}</td><td style="padding:10px;border-bottom:1px solid var(--line);">{{ source.status }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+    <p style="margin-top:28px;color:var(--ink-soft);font-size:.9rem;"><strong>Latest calculator reference period detected:</strong> {{ site.calculator.latestAsOf }}. Always verify prices with local buyers, suppliers and current market conditions before investing.</p>
+  </div>
+</section>

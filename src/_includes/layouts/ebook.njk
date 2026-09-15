@@ -1,0 +1,104 @@
+---
+layout: layouts/base.njk
+---
+{% set ogImage = icon %}
+{% set jsonLd %}
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ title }}",
+  "description": "{{ meta_description or description or tagline }}",
+  "brand": { "@type": "Brand", "name": "{{ site.name }}" },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "NGN",
+    "price": "{{ price }}",
+    "availability": "https://schema.org/InStock",
+    "url": "{{ selar_link }}"
+  }
+}
+{% endset %}
+
+<section class="ebook-detail-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Home</a> / <a href="/ebooks/">Guides</a> / {{ title }}</p>
+    <div class="ebook-detail-grid">
+      <div>
+        {% if icon %}
+        <img src="{{ icon }}" alt="{{ title }} guide cover" style="width:100%;max-width:360px;border-radius:8px;box-shadow:6px 6px 0 var(--sage);margin-bottom:24px;display:block;">
+        {% endif %}
+        <span class="eyebrow">{{ category }}</span>
+        <h1>{{ title }}</h1>
+        <p class="lede">{{ tagline }}</p>
+        <div class="audience-tags">
+          {% for a in audience %}<span>{{ a }}</span>{% endfor %}
+        </div>
+      </div>
+      <div class="buy-box">
+        <div class="price-tag">{{ price | currency }}</div>
+        <p class="price-note">One-time payment &middot; instant digital delivery</p>
+        <a class="btn btn-primary" href="{{ selar_link }}">Get This Guide Now</a>
+        <a class="btn btn-outline" href="{{ site.whatsapp }}">Ask a Question on WhatsApp</a>
+        {% if bonus %}<p class="bonus-note">&#10022; {{ bonus }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 760px;">
+    <h2>What You'll Learn</h2>
+    <ul class="benefit-list">
+      {% for b in benefits %}
+      <li><span class="mark">&#10003;</span><span>{{ b }}</span></li>
+      {% endfor %}
+    </ul>
+
+    <h2>Who This Guide Is For</h2>
+    <ul class="benefit-list">
+      {% for a in audience %}
+      <li><span class="mark">&#10003;</span><span>{{ a }}</span></li>
+      {% endfor %}
+    </ul>
+
+    {% if faqs %}
+    <h2>Frequently Asked Questions</h2>
+    <div>
+      {% for f in faqs %}
+      <details class="faq-item">
+        <summary>{{ f.q }}</summary>
+        <p>{{ f.a }}</p>
+      </details>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div style="text-align:center; margin-top: 48px;">
+      <a class="btn btn-primary" href="{{ selar_link }}">Get {{ title }} &mdash; {{ price | currency }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">More Guides</span>
+      <h2>You Might Also Like</h2>
+    </div>
+    <div class="ebook-grid">
+      {% for ebook in collections.ebooks %}
+        {% if ebook.data.slug != slug %}
+        <a class="ebook-card" href="{{ ebook.url }}">
+          <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} guide cover">
+          <h3>{{ ebook.data.title }}</h3>
+          <p class="tagline">{{ ebook.data.tagline }}</p>
+          <div class="card-footer">
+            <span class="price">{{ ebook.data.price | currency }}</span>
+            <span class="cta">View Guide &rarr;</span>
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

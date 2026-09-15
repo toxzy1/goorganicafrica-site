@@ -1,0 +1,35 @@
+{
+  "site_name": "GoOrganicAfrica",
+  "site_url": "https://goorganicafrica-site.pages.dev",
+  "tagline": "Practical, research-based organic farming guides for Africa",
+  "description": "Free farm profit calculator and practical organic farming guides for Nigerian and African farmers, with agricultural market data, farming costs, prices and profitability tools.",
+  "author": "Amoo Oluwatoyin Owolabi (Amoo Toyin)",
+  "email": "amootoyin@gmail.com",
+  "phone": "+2348035887054",
+  "whatsapp": "https://wa.link/cd0tt7",
+  "adsense": {
+    "enabled": false,
+    "publisher_id": "",
+    "auto_ads": false,
+    "notes": "Keep disabled until the Google AdSense account/site is approved and the publisher ID has been entered. Ad placement should remain useful and non-intrusive."
+  },
+  "seo": {
+    "default_meta_title": "GoOrganicAfrica — Farm Profit Calculator & Organic Farming Guides for Africa",
+    "default_meta_description": "Practical farming tools, agricultural market data and organic farming guides for farmers across Africa.",
+    "default_keywords": [
+      "organic farming Africa",
+      "farm profit calculator Africa",
+      "farming costs Africa",
+      "agricultural market prices Africa",
+      "seed prices Africa",
+      "crop farming Africa",
+      "livestock farming Africa",
+      "agribusiness Africa"
+    ]
+  },
+  "analytics": {
+    "enabled": false,
+    "measurement_id": "",
+    "notes": "Enable only after Google Analytics is configured. Keep the Measurement ID in this control panel; never place credentials or API secrets here."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "description": "Source registry for automated monitoring of agricultural selling prices, seed prices, livestock prices, input costs, labour costs, FX and government statistics. Sources are monitored automatically where machine-readable access exists; uncertain changes are sent for review rather than silently published.",
+  "sources": [
+    {
+      "id": "nbs-selected-food-price-watch",
+      "country": "NG",
+      "region": "",
+      "data_type": "commodity_price",
+      "source_type": "government",
+      "publisher": "National Bureau of Statistics (Nigeria)",
+      "url": "https://microdata.nigerianstat.gov.ng/index.php/catalog/162/related-materials",
+      "frequency": "monthly",
+      "status": "active",
+      "method": "nbs_food_price_watch_zip_xlsx",
+      "priority": 10,
+      "auto_publish": false,
+      "requires_review": true,
+      "notes": "The updater discovers the latest NBS Food Price Watch ZIP and prepares candidate reference-price updates. Unit, geography and national-average column must be verified before publication."
+    },
+    {
+      "id": "seed-prices-market-feed",
+      "country": "NG",
+      "region": "",
+      "data_type": "seed_price",
+      "source_type": "market",
+      "publisher": "Configured agricultural-market sources",
+      "url": "",
+      "frequency": "weekly",
+      "status": "ready_for_source_configuration",
+      "method": "csv_json_feed",
+      "priority": 20,
+      "auto_publish": false,
+      "requires_review": true,
+      "notes": "Seed prices remain separate from crop selling prices because variety, brand, pack size, supplier and location can change independently. Add trusted machine-readable market, government, seed-regulator or agricultural-agency feeds as they become available."
+    },
+    {
+      "id": "official-currency-rates",
+      "country": "MULTI",
+      "region": "",
+      "data_type": "exchange_rate",
+      "source_type": "government",
+      "publisher": "Configured official/market FX source",
+      "url": "",
+      "frequency": "daily",
+      "status": "ready_for_source_configuration",
+      "method": "json_feed",
+      "priority": 30,
+      "auto_publish": false,
+      "requires_review": true,
+      "notes": "FX is kept separate so currency conversion can be refreshed without changing agronomic assumptions."
+    }
+  ]
+}

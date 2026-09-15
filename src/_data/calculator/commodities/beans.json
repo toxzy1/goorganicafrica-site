@@ -1,0 +1,338 @@
+{
+  "id": "beans",
+  "name": "Beans (Cowpea)",
+  "category": "crop",
+  "icon": "🫨",
+  "unit_mode": "crop",
+  "unit_label": "hectare",
+  "cycle_days": 90,
+  "cycle_label": "2.5-3 months",
+  "related_ebook_slug": null,
+  "country_data": [
+    {
+      "country_code": "NG",
+      "cost_per_unit": 368000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 50000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 70000
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 130000
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 100000
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 18000
+        }
+      ],
+      "yield_low": 0.5,
+      "yield_expected": 0.8,
+      "yield_high": 1.2,
+      "yield_unit": "tonnes",
+      "price_low": 900,
+      "price_expected": 1300,
+      "price_high": 1900,
+      "price_unit": "per kg",
+      "source": "National Bureau of Statistics (NBS) Selected Food Price Watch, March 2026",
+      "as_of": "2026-03"
+    },
+    {
+      "country_code": "GH",
+      "cost_per_unit": 1900,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 280
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 400
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 750
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 470
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 0.5,
+      "yield_expected": 0.8,
+      "yield_high": 1.2,
+      "yield_unit": "tonnes",
+      "price_low": 4,
+      "price_expected": 7,
+      "price_high": 12,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "KE",
+      "cost_per_unit": 40000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 5800
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 8000
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 15900
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 10300
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-05",
+      "yield_low": 0.6,
+      "yield_expected": 0.9,
+      "yield_high": 1.3,
+      "yield_unit": "tonnes",
+      "price_low": 80,
+      "price_expected": 130,
+      "price_high": 200,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "UG",
+      "cost_per_unit": 960000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 140000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 192000
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 384000
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 244000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 0.4,
+      "yield_expected": 0.7,
+      "yield_high": 1.0,
+      "yield_unit": "tonnes",
+      "price_low": 1500,
+      "price_expected": 2300,
+      "price_high": 3500,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "TZ",
+      "cost_per_unit": 690000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 100000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 138000
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 276000
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 176000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 0.5,
+      "yield_expected": 0.7,
+      "yield_high": 1.1,
+      "yield_unit": "tonnes",
+      "price_low": 1000,
+      "price_expected": 1800,
+      "price_high": 2800,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "ZA",
+      "cost_per_unit": 11000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 1600
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 2200
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 4400
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 2800
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.7,
+      "yield_expected": 1.0,
+      "yield_high": 1.6,
+      "yield_unit": "tonnes",
+      "price_low": 10,
+      "price_expected": 16,
+      "price_high": 28,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "ZM",
+      "cost_per_unit": 8500,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 1240
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 1700
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 3400
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 2160
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.4,
+      "yield_expected": 0.7,
+      "yield_high": 1.0,
+      "yield_unit": "tonnes",
+      "price_low": 7,
+      "price_expected": 12,
+      "price_high": 20,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "RW",
+      "cost_per_unit": 230000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 33500
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 46000
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 92000
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 58500
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.5,
+      "yield_expected": 0.8,
+      "yield_high": 1.2,
+      "yield_unit": "tonnes",
+      "price_low": 400,
+      "price_expected": 750,
+      "price_high": 1200,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "CM",
+      "cost_per_unit": 145000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 21000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 29000
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 58000
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 37000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.5,
+      "yield_expected": 0.7,
+      "yield_high": 1.1,
+      "yield_unit": "tonnes",
+      "price_low": 250,
+      "price_expected": 450,
+      "price_high": 750,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "ET",
+      "cost_per_unit": 17000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 2500
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 3400
+        },
+        {
+          "label": "Fertilizer & agrochemicals",
+          "amount": 6800
+        },
+        {
+          "label": "Labour (planting, weeding, harvest)",
+          "amount": 4300
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.4,
+      "yield_expected": 0.6,
+      "yield_high": 1.0,
+      "yield_unit": "tonnes",
+      "price_low": 35,
+      "price_expected": 65,
+      "price_high": 110,
+      "price_unit": "per kg"
+    }
+  ],
+  "active": true
+}

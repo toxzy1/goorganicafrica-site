@@ -1,0 +1,114 @@
+{
+  "list": [
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "currency": "NGN",
+      "symbol": "₦",
+      "available": true,
+      "flag": "🇳🇬",
+      "slug": "nigeria",
+      "default_language": "en",
+      "source_profile": "ng-ag-data"
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "currency": "GHS",
+      "symbol": "GH₵",
+      "available": true,
+      "flag": "🇬🇭",
+      "slug": "ghana",
+      "default_language": "en",
+      "source_profile": "gh-ag-data"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "currency": "KES",
+      "symbol": "KSh",
+      "available": true,
+      "flag": "🇰🇪",
+      "slug": "kenya",
+      "default_language": "en",
+      "source_profile": "ke-ag-data"
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "currency": "UGX",
+      "symbol": "USh",
+      "available": true,
+      "flag": "🇺🇬",
+      "slug": "uganda",
+      "default_language": "en",
+      "source_profile": "ug-ag-data"
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "currency": "TZS",
+      "symbol": "TSh",
+      "available": true,
+      "flag": "🇹🇿",
+      "slug": "tanzania",
+      "default_language": "en",
+      "source_profile": "tz-ag-data"
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "currency": "ZAR",
+      "symbol": "R",
+      "available": true,
+      "flag": "🇿🇦",
+      "slug": "south-africa",
+      "default_language": "en",
+      "source_profile": "za-ag-data"
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "currency": "ZMW",
+      "symbol": "ZK",
+      "available": true,
+      "flag": "🇿🇲",
+      "slug": "zambia",
+      "default_language": "en",
+      "source_profile": "zm-ag-data"
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "currency": "RWF",
+      "symbol": "FRw",
+      "available": true,
+      "flag": "🇷🇼",
+      "slug": "rwanda",
+      "default_language": "en",
+      "source_profile": "rw-ag-data"
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "currency": "XAF",
+      "symbol": "FCFA",
+      "available": true,
+      "flag": "🇨🇲",
+      "slug": "cameroon",
+      "default_language": "en",
+      "source_profile": "cm-ag-data"
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "currency": "ETB",
+      "symbol": "Br",
+      "available": true,
+      "flag": "🇪🇹",
+      "slug": "ethiopia",
+      "default_language": "en",
+      "source_profile": "et-ag-data"
+    }
+  ]
+}

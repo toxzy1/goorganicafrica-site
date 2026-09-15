@@ -1,0 +1,7 @@
+module.exports = {
+  en: { label: "English", step: "Step", country: "Select Your Country", region: "Select Your Region", type: "What Are You Farming?", crop: "Crop", livestock: "Livestock", continue: "Continue", back: "Back", language: "Language", selectLanguage: "Language", search: "Search for an eBook" },
+  fr: { label: "Français", step: "Étape", country: "Sélectionnez votre pays", region: "Sélectionnez votre région", type: "Que cultivez-vous ou élevez-vous ?", crop: "Culture", livestock: "Élevage", continue: "Continuer", back: "Retour", language: "Langue", selectLanguage: "Langue", search: "Rechercher un eBook" },
+  ar: { label: "العربية", step: "الخطوة", country: "اختر بلدك", region: "اختر منطقتك", type: "ماذا تزرع أو تربي؟", crop: "محاصيل", livestock: "الثروة الحيوانية", continue: "متابعة", back: "رجوع", language: "اللغة", selectLanguage: "اللغة", search: "ابحث عن كتاب إلكتروني" },
+  pt: { label: "Português", step: "Etapa", country: "Selecione o seu país", region: "Selecione a sua região", type: "O que você cultiva ou cria?", crop: "Cultivo", livestock: "Pecuária", continue: "Continuar", back: "Voltar", language: "Idioma", selectLanguage: "Idioma", search: "Pesquisar eBook" },
+  sw: { label: "Kiswahili", step: "Hatua", country: "Chagua nchi yako", region: "Chagua eneo lako", type: "Unalima au kufuga nini?", crop: "Mazao", livestock: "Mifugo", continue: "Endelea", back: "Rudi", language: "Lugha", selectLanguage: "Lugha", search: "Tafuta eBook" }
+};

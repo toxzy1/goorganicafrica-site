@@ -1,0 +1,414 @@
+{
+  "id": "soybean",
+  "name": "Soybean",
+  "category": "crop",
+  "icon": "🫘",
+  "unit_mode": "crop",
+  "unit_label": "hectare",
+  "cycle_days": 110,
+  "cycle_label": "3-4 months",
+  "related_ebook_slug": null,
+  "country_data": [
+    {
+      "country_code": "NG",
+      "cost_per_unit": 300000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds (TGX variety)",
+          "amount": 45000
+        },
+        {
+          "label": "Land clearing, ploughing & harrowing",
+          "amount": 60000
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 35000
+        },
+        {
+          "label": "Inoculant",
+          "amount": 15000
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 120000
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 25000
+        }
+      ],
+      "yield_low": 1,
+      "yield_expected": 1.5,
+      "yield_high": 2.5,
+      "yield_unit": "tonnes",
+      "price_low": 580,
+      "price_expected": 620,
+      "price_high": 650,
+      "price_unit": "per kg",
+      "source": "Price of Soya Beans in Nigeria, Kano market (Jan 2026); USDA FAS Nigeria soybean yield data; Veggie Grow farm budget (inflation-adjusted)",
+      "as_of": "2026-01"
+    },
+    {
+      "country_code": "GH",
+      "cost_per_unit": 1700,
+      "cost_breakdown": [
+        {
+          "label": "Seeds (TGX variety)",
+          "amount": 250
+        },
+        {
+          "label": "Land clearing, ploughing & harrowing",
+          "amount": 350
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 200
+        },
+        {
+          "label": "Inoculant",
+          "amount": 80
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 650
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 170
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 1.0,
+      "yield_expected": 1.5,
+      "yield_high": 2.5,
+      "yield_unit": "tonnes",
+      "price_low": 3,
+      "price_expected": 5,
+      "price_high": 8,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "KE",
+      "cost_per_unit": 36000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds (TGX variety)",
+          "amount": 5000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 7000
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 4000
+        },
+        {
+          "label": "Inoculant",
+          "amount": 1500
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 14500
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 4000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-05",
+      "yield_low": 1.1,
+      "yield_expected": 1.7,
+      "yield_high": 2.8,
+      "yield_unit": "tonnes",
+      "price_low": 60,
+      "price_expected": 90,
+      "price_high": 130,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "UG",
+      "cost_per_unit": 870000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 120000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 175000
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 98000
+        },
+        {
+          "label": "Inoculant",
+          "amount": 37000
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 349000
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 91000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 0.8,
+      "yield_expected": 1.3,
+      "yield_high": 2.1,
+      "yield_unit": "tonnes",
+      "price_low": 1500,
+      "price_expected": 2500,
+      "price_high": 3500,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "TZ",
+      "cost_per_unit": 625000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 86000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 125000
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 70000
+        },
+        {
+          "label": "Inoculant",
+          "amount": 26000
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 250000
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 68000
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-04",
+      "yield_low": 0.9,
+      "yield_expected": 1.4,
+      "yield_high": 2.2,
+      "yield_unit": "tonnes",
+      "price_low": 1000,
+      "price_expected": 1800,
+      "price_high": 2800,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "ZA",
+      "cost_per_unit": 9000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 1250
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 1800
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 1000
+        },
+        {
+          "label": "Inoculant",
+          "amount": 380
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 3600
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 970
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 1.3,
+      "yield_expected": 2.0,
+      "yield_high": 3.2,
+      "yield_unit": "tonnes",
+      "price_low": 7,
+      "price_expected": 10,
+      "price_high": 15,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "ZM",
+      "cost_per_unit": 7000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 970
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 1390
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 780
+        },
+        {
+          "label": "Inoculant",
+          "amount": 300
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 2800
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 760
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.8,
+      "yield_expected": 1.3,
+      "yield_high": 2.1,
+      "yield_unit": "tonnes",
+      "price_low": 5,
+      "price_expected": 8,
+      "price_high": 13,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "RW",
+      "cost_per_unit": 195000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 27000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 39000
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 22000
+        },
+        {
+          "label": "Inoculant",
+          "amount": 8300
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 78000
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 20700
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 1.0,
+      "yield_expected": 1.5,
+      "yield_high": 2.5,
+      "yield_unit": "tonnes",
+      "price_low": 400,
+      "price_expected": 700,
+      "price_high": 1100,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "CM",
+      "cost_per_unit": 122000,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 17000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 24400
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 13700
+        },
+        {
+          "label": "Inoculant",
+          "amount": 5200
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 48800
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 12900
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.9,
+      "yield_expected": 1.4,
+      "yield_high": 2.2,
+      "yield_unit": "tonnes",
+      "price_low": 250,
+      "price_expected": 400,
+      "price_high": 650,
+      "price_unit": "per kg"
+    },
+    {
+      "country_code": "ET",
+      "cost_per_unit": 14300,
+      "cost_breakdown": [
+        {
+          "label": "Seeds",
+          "amount": 2000
+        },
+        {
+          "label": "Land clearing & preparation",
+          "amount": 2860
+        },
+        {
+          "label": "Herbicides & insecticide",
+          "amount": 1600
+        },
+        {
+          "label": "Inoculant",
+          "amount": 610
+        },
+        {
+          "label": "Fertilizer & micronutrients",
+          "amount": 5720
+        },
+        {
+          "label": "Labour & misc.",
+          "amount": 1510
+        }
+      ],
+      "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
+      "as_of": "2026-03",
+      "yield_low": 0.8,
+      "yield_expected": 1.2,
+      "yield_high": 2.0,
+      "yield_unit": "tonnes",
+      "price_low": 30,
+      "price_expected": 55,
+      "price_high": 90,
+      "price_unit": "per kg"
+    }
+  ],
+  "active": true
+}

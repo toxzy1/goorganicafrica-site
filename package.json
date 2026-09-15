@@ -1,0 +1,23 @@
+{
+  "name": "goorganicafrica-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/sync-calculator-data.js && eleventy && node scripts/check-links.js",
+    "start": "eleventy --serve",
+    "check": "node scripts/check-site.js",
+    "sync:data": "node scripts/sync-calculator-data.js",
+    "check:links": "node scripts/check-links.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "2.0.1",
+    "luxon": "3.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

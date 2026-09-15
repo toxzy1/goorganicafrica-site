@@ -1,0 +1,6 @@
+<div class="site-language" aria-label="Language selector">
+  <label for="site-language-select">Language</label>
+  <select id="site-language-select">
+    {% for lang in languages %}<option value="{{ lang.code }}">{{ lang.native }}</option>{% endfor %}
+  </select>
+</div>

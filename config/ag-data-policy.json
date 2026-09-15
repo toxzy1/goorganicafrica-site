@@ -1,0 +1,8 @@
+{
+  "default_requires_review": true,
+  "max_price_age_days": 45,
+  "max_seed_price_age_days": 45,
+  "max_fx_age_days": 3,
+  "allow_auto_publish": false,
+  "validation_notes": "Prefer official government statistics, recognised market information systems, agricultural agencies, universities/research institutions and reputable market feeds. Validate unit, geography, date, variety/brand and currency before publishing. Never silently replace an existing calculator value when a source changes structure or meaning. Keep manual override available for exceptional local conditions."
+}

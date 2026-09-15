@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+title: All Organic Farming Guides
+description: Browse all organic farming guides from GoOrganicAfrica — hydroponic fodder, mushroom farming, black soldier fly farming and weed-free cassava production.
+permalink: "/ebooks/"
+---
+
+<section class="section" style="padding-top: 48px;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">All Guides</span>
+      <h1>Organic Farming Guides</h1>
+      <p class="lede">Practical, step-by-step guides written from real farm experience and research.</p>
+    </div>
+    <div class="ebook-search" role="search" aria-label="Search farming guides">
+      <label for="ebook-search-input">Search for an eBook</label>
+      <div class="ebook-search-box">
+        <input id="ebook-search-input" type="search" inputmode="search" autocomplete="off" placeholder="Try: pig farming ebook, mushroom, cassava..." aria-describedby="ebook-search-help">
+        <span aria-hidden="true">⌕</span>
+      </div>
+      <p id="ebook-search-help" class="ebook-search-help">Start typing a farming topic or eBook name. Matching guides appear immediately.</p>
+    </div>
+    <div class="ebook-grid" id="ebook-results" aria-live="polite">
+      {% for ebook in collections.ebooks %}
+      <a class="ebook-card ebook-search-item" href="{{ ebook.url }}" data-search="{{ ebook.data.title }} {{ ebook.data.tagline }} {{ ebook.data.category }} {{ ebook.data.audience }} {{ ebook.data.slug }} {{ ebook.data.search_terms }}" data-ebook-title="{{ ebook.data.title }}">
+        <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} guide cover">
+        <h3>{{ ebook.data.title }}</h3>
+        <p class="tagline">{{ ebook.data.tagline }}</p>
+        <div class="card-footer">
+          <span class="price">{{ ebook.data.price | currency }}</span>
+          <span class="cta">View Guide &rarr;</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <p id="ebook-no-results" class="ebook-no-results" hidden>No eBook matches that search yet. Try a broader farming topic or check back as new guides are added.</p>
+  </div>
+</section>
+<script src="/js/ebook-search.js" defer></script>

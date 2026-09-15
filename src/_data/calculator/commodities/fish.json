@@ -1,0 +1,305 @@
+{
+  "id": "fish",
+  "name": "Fish (Catfish)",
+  "category": "livestock",
+  "icon": "🐟",
+  "unit_mode": "livestock_unit",
+  "unit_label": "fish",
+  "quantity_label": "Number of fish stocked",
+  "cycle_days": 165,
+  "cycle_label": "5-6 months",
+  "related_ebook_slug": "black-soldier-fly-farming",
+  "country_data": [
+    {
+      "country_code": "NG",
+      "cost_per_unit": 2200,
+      "cost_breakdown": [
+        {
+          "label": "Juvenile/fingerling",
+          "amount": 45
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 1900
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 150
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 105
+        }
+      ],
+      "survival_rate": 85,
+      "price_per_unit": 3000,
+      "price_low": 2650,
+      "price_high": 4400,
+      "price_unit": "per kg (farm-gate, ~1-1.2kg fish)",
+      "source": "WithinNigeria catfish farming guide (June 2026); Selina Wamucii Nigeria catfish price data; Agric4Profits cost estimates",
+      "as_of": "2026-06"
+    },
+    {
+      "country_code": "GH",
+      "cost_per_unit": 14,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 0.5
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 11
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 1.5
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 1
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 85,
+      "price_per_unit": 18,
+      "price_low": 12,
+      "price_high": 25,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "KE",
+      "cost_per_unit": 280,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 10
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 220
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 30
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 20
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-05",
+      "survival_rate": 85,
+      "price_per_unit": 400,
+      "price_low": 280,
+      "price_high": 550,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "UG",
+      "cost_per_unit": 8000,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 300
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 6200
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 900
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 600
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 85,
+      "price_per_unit": 12000,
+      "price_low": 8000,
+      "price_high": 18000,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "TZ",
+      "cost_per_unit": 5500,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 200
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 4300
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 600
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 400
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 85,
+      "price_per_unit": 8000,
+      "price_low": 5000,
+      "price_high": 12000,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "ZA",
+      "cost_per_unit": 60,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 2
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 47
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 7
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 4
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 85,
+      "price_per_unit": 85,
+      "price_low": 60,
+      "price_high": 120,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "ZM",
+      "cost_per_unit": 45,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 1.5
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 35
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 5
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 3.5
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 85,
+      "price_per_unit": 65,
+      "price_low": 45,
+      "price_high": 95,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "RW",
+      "cost_per_unit": 2400,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 90
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 1870
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 280
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 160
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 85,
+      "price_per_unit": 3500,
+      "price_low": 2500,
+      "price_high": 5000,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "CM",
+      "cost_per_unit": 1500,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 55
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 1170
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 175
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 100
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 85,
+      "price_per_unit": 2000,
+      "price_low": 1400,
+      "price_high": 3000,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "ET",
+      "cost_per_unit": 140,
+      "cost_breakdown": [
+        {
+          "label": "Fingerling/juvenile",
+          "amount": 5
+        },
+        {
+          "label": "Feed (5-6 months)",
+          "amount": 109
+        },
+        {
+          "label": "Pond prep & water treatment (share)",
+          "amount": 16
+        },
+        {
+          "label": "Labour & misc. (share)",
+          "amount": 10
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 85,
+      "price_per_unit": 180,
+      "price_low": 120,
+      "price_high": 280,
+      "price_unit": "per kg (farm-gate, ~1kg fish)"
+    }
+  ],
+  "active": true
+}

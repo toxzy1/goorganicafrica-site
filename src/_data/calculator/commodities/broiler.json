@@ -1,0 +1,309 @@
+{
+  "id": "broiler",
+  "name": "Poultry - Broilers",
+  "category": "livestock",
+  "icon": "🐔",
+  "unit_mode": "livestock_unit",
+  "unit_label": "bird",
+  "quantity_label": "Number of birds",
+  "cycle_days": 56,
+  "cycle_label": "6-8 weeks",
+  "related_ebook_slug": "hydroponic-fodder-farming",
+  "country_data": [
+    {
+      "country_code": "NG",
+      "cost_per_unit": 4200,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 1000
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 2500
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 300
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 200
+        },
+        {
+          "label": "Miscellaneous & contingency",
+          "amount": 200
+        }
+      ],
+      "survival_rate": 95,
+      "price_per_unit": 12000,
+      "price_low": 10000,
+      "price_high": 15000,
+      "price_unit": "per bird (live, ~2-2.5kg)",
+      "source": "Legit.ng & NaijaSabi Nigeria poultry cost guides (2026)",
+      "as_of": "2026-05"
+    },
+    {
+      "country_code": "GH",
+      "cost_per_unit": 28,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 7
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 16
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 3
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 2
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 95,
+      "price_per_unit": 45,
+      "price_low": 35,
+      "price_high": 60,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "KE",
+      "cost_per_unit": 600,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 120
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 380
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 60
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 40
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-05",
+      "survival_rate": 95,
+      "price_per_unit": 800,
+      "price_low": 600,
+      "price_high": 1100,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "UG",
+      "cost_per_unit": 15000,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 3500
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 9000
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 1500
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 1000
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 95,
+      "price_per_unit": 22000,
+      "price_low": 15000,
+      "price_high": 30000,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "TZ",
+      "cost_per_unit": 11000,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 2500
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 6500
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 1200
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 800
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-04",
+      "survival_rate": 95,
+      "price_per_unit": 16000,
+      "price_low": 12000,
+      "price_high": 22000,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "ZA",
+      "cost_per_unit": 90,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 18
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 58
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 8
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 6
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 160,
+      "price_low": 120,
+      "price_high": 200,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "ZM",
+      "cost_per_unit": 70,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 14
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 44
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 7
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 5
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 120,
+      "price_low": 90,
+      "price_high": 160,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "RW",
+      "cost_per_unit": 3800,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 900
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 2400
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 300
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 200
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 6000,
+      "price_low": 4500,
+      "price_high": 8000,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "CM",
+      "cost_per_unit": 2400,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 550
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 1500
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 200
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 150
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 3500,
+      "price_low": 2500,
+      "price_high": 5000,
+      "price_unit": "per bird (live, ~2kg)"
+    },
+    {
+      "country_code": "ET",
+      "cost_per_unit": 240,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick",
+          "amount": 55
+        },
+        {
+          "label": "Feed (6-8 weeks)",
+          "amount": 150
+        },
+        {
+          "label": "Vaccines & medication",
+          "amount": 22
+        },
+        {
+          "label": "Housing, equipment & labour (share)",
+          "amount": 13
+        }
+      ],
+      "source": "Researched costs: GeraFarm 2026, Farmers Trend Kenya 2026, Farmgain Africa 2026, Uganda MAAIF, Tanzania MAFC, South Africa AgriSA, ZARI Zambia, Rwanda RAB, MINADER Cameroon, EIAR Ethiopia. Costs converted to local currency at mid-2026 rates.",
+      "as_of": "2026-03",
+      "survival_rate": 95,
+      "price_per_unit": 350,
+      "price_low": 250,
+      "price_high": 500,
+      "price_unit": "per bird (live, ~2kg)"
+    }
+  ],
+  "active": true
+}

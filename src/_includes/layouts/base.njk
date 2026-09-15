@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if meta_title %}{{ meta_title }}{% elif title %}{{ title }} | {{ site.name }}{% else %}{{ site.meta_title or site.seo.default_meta_title or site.name }}{% endif %}</title>
+  <meta name="description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
+  <meta name="keywords" content="{{ site.seo.default_keywords | join(", " ) }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ meta_title or title or site.meta_title or site.name }}">
+  <meta property="og:description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  {% if ogImage %}<meta property="og:image" content="{{ site.url }}{{ ogImage }}">{% endif %}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ meta_title or title or site.meta_title or site.name }}">
+  <meta name="twitter:description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+
+  {% if site.adsense.enabled and site.adsense.publisher_id and site.adsense.auto_ads %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.publisher_id }}" crossorigin="anonymous"></script>
+  {% endif %}
+
+  {% if site.analytics.enabled and site.analytics.measurement_id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.measurement_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.analytics.measurement_id }}');
+  </script>
+  {% endif %}
+
+  {% if jsonLd %}
+  <script type="application/ld+json">{{ jsonLd | safe }}</script>
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}",
+    "areaServed": {{ site.data.countryCodes | jsonify }},
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ site.phone }}",
+      "email": "{{ site.email }}",
+      "contactType": "Customer Support",
+      "areaServed": {{ site.data.countryCodes | jsonify }},
+      "availableLanguage": "English"
+    },
+    "founder": { "@type": "Person", "name": "{{ site.author }}" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "partials/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script src="/js/main.js" defer></script>
+  <script src="/js/language-switcher.js" defer></script>
+
+</body>
+</html>
