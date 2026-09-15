@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-# Disallow admin panel from search indexing
-Disallow: /admin/
-
-Sitemap: https://goorganicafrica.netlify.app/sitemap.xml
