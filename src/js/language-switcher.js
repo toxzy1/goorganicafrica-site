@@ -1,222 +1,306 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const select = document.getElementById("site-language-select");
-  if (!select) return;
+  const selector = document.getElementById("site-language-select");
+
+  if (!selector) return;
 
   const translations = {
     en: {
-      Home: "Home",
-      Calculator: "Calculator",
-      Guides: "Guides",
-      Blog: "Blog",
-      About: "About",
-      Contact: "Contact",
-      Language: "Language",
-      "Free Farming Tool": "Free Farming Tool",
-      "Know Your Farm Profit Before You Plant":
-        "Know Your Farm Profit Before You Plant",
-      "Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.":
-        "Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.",
-      "Crops, livestock & more — continuously expanding":
-        "Crops, livestock & more — continuously expanding",
-      "Enter farm size in acres, plots or hectares":
-        "Enter farm size in acres, plots or hectares",
-      "Override any figure with your own local numbers":
-        "Override any figure with your own local numbers",
-      "Conservative, Expected & Optimistic profit scenarios":
-        "Conservative, Expected & Optimistic profit scenarios",
-      "Calculate My Farm Profit": "Calculate My Farm Profit",
-      "Browse Farming Guides": "Browse Farming Guides",
-      "Plan Your Farm. Calculate Your Profit.":
-        "Plan Your Farm. Calculate Your Profit.",
-      "100% Free": "100% Free",
-      "Open Calculator": "Open Calculator",
-      "How it works": "How it works",
-      "Three Steps to Your Farm Profit Report":
-        "Three Steps to Your Farm Profit Report",
-      "No sign-up. No payment. Just your numbers.":
-        "No sign-up. No payment. Just your numbers.",
-      "Farming Guides": "Farming Guides",
-      "Go Deeper With Expert Guides":
-        "Go Deeper With Expert Guides",
-      "About GoOrganicAfrica": "About GoOrganicAfrica",
-      "From the Blog": "From the Blog",
-      "Farming Insights & Market Analysis":
-        "Farming Insights & Market Analysis"
+      free_tool: "Free Farming Tool",
+      hero_title: "Know Your Farm Profit Before You Plant",
+      hero_description: "Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.",
+      crops_livestock: "Crops, livestock & more — continuously expanding",
+      farm_size: "Enter farm size in acres, plots or hectares",
+      local_numbers: "Override any figure with your own local numbers",
+      profit_scenarios: "Conservative, Expected & Optimistic profit scenarios",
+      calculate_profit: "▶ Calculate My Farm Profit",
+      browse_guides: "Browse Farming Guides",
+      free_tool_upper: "FREE TOOL",
+      calculator_title: "Farm Profit Calculator Africa",
+      calculator_tagline: "Plan Your Farm. Calculate Your Profit.",
+      crops_growing: "Crops & growing",
+      livestock_growing: "Livestock & growing",
+      free_100: "100% Free",
+      open_calculator: "Open Calculator",
+      farming_enterprises: "Farming enterprises",
+      african_countries: "African countries",
+      regions: "States / regions / provinces",
+      free_to_use: "Free to use",
+      how_it_works: "How it works",
+      three_steps: "Three Steps to Your Farm Profit Report",
+      no_signup: "No sign-up. No payment. Just your numbers.",
+      step1_title: "1. Pick Your Country & Crop",
+      step1_text: "Select your African country, your region, and the crop or livestock you plan to farm. Currency and data adjust automatically.",
+      step2_title: "2. Enter Your Farm Details",
+      step2_text: "Choose farm size in acres, plots or hectares. Use our researched cost and price estimates, or enter your own local figures.",
+      step3_title: "3. Get Your Profit Report",
+      step3_text: "See your total investment, expected revenue, estimated profit, ROI, and break-even price — plus 3 scenarios and personalised advice.",
+      try_calculator: "Try the Calculator — It's Free",
+      farming_guides: "Farming Guides",
+      expert_guides: "Go Deeper With Expert Guides",
+      guides_description: "Step-by-step organic farming guides — written from real research and farm experience, not theory.",
+      view_guide: "View Guide →",
+      see_all_guides: "See All Guides",
+      about_goa: "About GoOrganicAfrica",
+      about_title: "Built from the Farm, Not the Classroom",
+      about_text: "GoOrganicAfrica is built by Amoo Oluwatoyin Owolabi — farmer, agricultural researcher, and organic bio-fertilizer producer with a certificate in Agriculture since 2001. Every tool and guide here comes from real production experience across Nigeria, Cameroon and beyond.",
+      read_more: "Read More",
+      practical_guides: "Practical guides",
+      calculator_countries: "Calculator countries",
+      farm_tested: "Farm-tested",
+      calculator_tool: "Calculator tool",
+      from_blog: "From the Blog",
+      blog_title: "Farming Insights & Market Analysis",
+      blog_description: "Practical articles across",
+      blog_categories: "categories — written to help African farmers make better decisions.",
+      read_article: "Read article",
+      explore_articles: "Explore All Articles",
+      articles_future: "Articles will appear here automatically when published from the admin panel.",
+      explore_blog: "Explore Blog"
     },
 
     fr: {
-      Home: "Accueil",
-      Calculator: "Calculateur",
-      Guides: "Guides",
-      Blog: "Blog",
-      About: "À propos",
-      Contact: "Contact",
-      Language: "Langue",
-      "Free Farming Tool": "Outil agricole gratuit",
-      "Know Your Farm Profit Before You Plant":
-        "Connaissez votre bénéfice avant de planter",
-      "Calculate My Farm Profit": "Calculer le bénéfice de ma ferme",
-      "Browse Farming Guides": "Parcourir les guides agricoles",
-      "Plan Your Farm. Calculate Your Profit.":
-        "Planifiez votre ferme. Calculez votre bénéfice.",
-      "100% Free": "100 % gratuit",
-      "Open Calculator": "Ouvrir le calculateur",
-      "How it works": "Comment ça marche",
-      "Three Steps to Your Farm Profit Report":
-        "Trois étapes pour votre rapport de bénéfice",
-      "No sign-up. No payment. Just your numbers.":
-        "Aucune inscription. Aucun paiement. Seulement vos chiffres.",
-      "Farming Guides": "Guides agricoles",
-      "Go Deeper With Expert Guides":
-        "Allez plus loin avec nos guides spécialisés",
-      "About GoOrganicAfrica": "À propos de GoOrganicAfrica",
-      "From the Blog": "Depuis le blog",
-      "Farming Insights & Market Analysis":
-        "Conseils agricoles et analyse du marché"
+      free_tool: "Outil agricole gratuit",
+      hero_title: "Connaissez le bénéfice de votre ferme avant de planter",
+      hero_description: "Calculez gratuitement vos coûts de production, revenus prévus, bénéfices, ROI et seuil de rentabilité au Nigeria et en Afrique, dans votre propre devise.",
+      crops_livestock: "Cultures, élevage et plus encore — en expansion continue",
+      farm_size: "Entrez la superficie en acres, parcelles ou hectares",
+      local_numbers: "Remplacez les chiffres par vos propres données locales",
+      profit_scenarios: "Scénarios de bénéfice prudent, attendu et optimiste",
+      calculate_profit: "▶ Calculer le bénéfice de ma ferme",
+      browse_guides: "Parcourir les guides agricoles",
+      free_tool_upper: "OUTIL GRATUIT",
+      calculator_title: "Calculateur de bénéfice agricole pour l'Afrique",
+      calculator_tagline: "Planifiez votre ferme. Calculez votre bénéfice.",
+      crops_growing: "Cultures",
+      livestock_growing: "Élevage",
+      free_100: "100 % gratuit",
+      open_calculator: "Ouvrir le calculateur",
+      farming_enterprises: "Entreprises agricoles",
+      african_countries: "Pays africains",
+      regions: "États / régions / provinces",
+      free_to_use: "Utilisation gratuite",
+      how_it_works: "Comment ça marche",
+      three_steps: "Trois étapes pour votre rapport de bénéfice agricole",
+      no_signup: "Aucune inscription. Aucun paiement. Seulement vos chiffres.",
+      step1_title: "1. Choisissez votre pays et votre culture",
+      step1_text: "Sélectionnez votre pays africain, votre région et la culture ou l'élevage que vous souhaitez pratiquer. La devise et les données s'adaptent automatiquement.",
+      step2_title: "2. Entrez les détails de votre ferme",
+      step2_text: "Choisissez la superficie en acres, parcelles ou hectares. Utilisez nos estimations de coûts et de prix ou saisissez vos propres chiffres locaux.",
+      step3_title: "3. Obtenez votre rapport de bénéfice",
+      step3_text: "Consultez votre investissement total, vos revenus prévus, votre bénéfice estimé, votre ROI et votre seuil de rentabilité, avec trois scénarios et des conseils personnalisés.",
+      try_calculator: "Essayer le calculateur — c'est gratuit",
+      farming_guides: "Guides agricoles",
+      expert_guides: "Approfondissez vos connaissances avec nos guides",
+      guides_description: "Des guides agricoles biologiques étape par étape, basés sur la recherche et l'expérience réelle.",
+      view_guide: "Voir le guide →",
+      see_all_guides: "Voir tous les guides",
+      about_goa: "À propos de GoOrganicAfrica",
+      about_title: "Construit à partir de la ferme, pas de la salle de classe",
+      about_text: "GoOrganicAfrica est créé par Amoo Oluwatoyin Owolabi, agriculteur, chercheur agricole et producteur de biofertilisants organiques. Chaque outil et chaque guide repose sur une expérience réelle de production au Nigeria, au Cameroun et ailleurs.",
+      read_more: "Lire la suite",
+      practical_guides: "Guides pratiques",
+      calculator_countries: "Pays du calculateur",
+      farm_tested: "Testé à la ferme",
+      calculator_tool: "Outil de calcul",
+      from_blog: "Depuis le blog",
+      blog_title: "Conseils agricoles et analyse du marché",
+      blog_description: "Des articles pratiques dans",
+      blog_categories: "catégories pour aider les agriculteurs africains à prendre de meilleures décisions.",
+      read_article: "Lire l'article",
+      explore_articles: "Explorer tous les articles",
+      articles_future: "Les articles apparaîtront automatiquement lorsqu'ils seront publiés depuis le panneau d'administration.",
+      explore_blog: "Explorer le blog"
     },
 
     ar: {
-      Home: "الرئيسية",
-      Calculator: "حاسبة الأرباح",
-      Guides: "الأدلة",
-      Blog: "المدونة",
-      About: "من نحن",
-      Contact: "اتصل بنا",
-      Language: "اللغة",
-      "Free Farming Tool": "أداة زراعية مجانية",
-      "Know Your Farm Profit Before You Plant":
-        "اعرف ربح مزرعتك قبل أن تزرع",
-      "Calculate My Farm Profit": "احسب ربح مزرعتي",
-      "Browse Farming Guides": "تصفح الأدلة الزراعية",
-      "Plan Your Farm. Calculate Your Profit.":
-        "خطط لمزرعتك واحسب أرباحك",
-      "100% Free": "مجاني 100%",
-      "Open Calculator": "افتح الحاسبة",
-      "How it works": "كيف تعمل",
-      "Three Steps to Your Farm Profit Report":
-        "ثلاث خطوات للحصول على تقرير أرباح مزرعتك",
-      "No sign-up. No payment. Just your numbers.":
-        "لا تسجيل ولا دفع، فقط أرقام مزرعتك",
-      "Farming Guides": "الأدلة الزراعية",
-      "Go Deeper With Expert Guides":
-        "تعرف أكثر من خلال أدلتنا المتخصصة",
-      "About GoOrganicAfrica": "عن GoOrganicAfrica",
-      "From the Blog": "من المدونة",
-      "Farming Insights & Market Analysis":
-        "رؤى زراعية وتحليل السوق"
+      free_tool: "أداة زراعية مجانية",
+      hero_title: "اعرف ربح مزرعتك قبل أن تزرع",
+      hero_description: "احسب تكاليف الإنتاج والإيرادات المتوقعة والأرباح والعائد على الاستثمار ونقطة التعادل مجانًا في نيجيريا وأفريقيا وبعملتك المحلية.",
+      crops_livestock: "المحاصيل والثروة الحيوانية والمزيد — في توسع مستمر",
+      farm_size: "أدخل مساحة المزرعة بالأفدنة أو القطع أو الهكتارات",
+      local_numbers: "استبدل أي رقم بأرقامك المحلية",
+      profit_scenarios: "سيناريوهات الربح المتحفظ والمتوقع والمتفائل",
+      calculate_profit: "▶ احسب ربح مزرعتي",
+      browse_guides: "تصفح الأدلة الزراعية",
+      free_tool_upper: "أداة مجانية",
+      calculator_title: "حاسبة أرباح المزارع في أفريقيا",
+      calculator_tagline: "خطط لمزرعتك واحسب أرباحك",
+      crops_growing: "المحاصيل",
+      livestock_growing: "الثروة الحيوانية",
+      free_100: "مجاني 100%",
+      open_calculator: "افتح الحاسبة",
+      farming_enterprises: "المشاريع الزراعية",
+      african_countries: "الدول الأفريقية",
+      regions: "الولايات / المناطق / المقاطعات",
+      free_to_use: "مجاني للاستخدام",
+      how_it_works: "كيف تعمل",
+      three_steps: "ثلاث خطوات للحصول على تقرير أرباح مزرعتك",
+      no_signup: "لا تسجيل. لا دفع. أرقام مزرعتك فقط.",
+      step1_title: "1. اختر بلدك ومحصولك",
+      step1_text: "اختر بلدك الأفريقي ومنطقتك والمحصول أو الثروة الحيوانية التي تخطط لإنتاجها. تتكيف العملة والبيانات تلقائيًا.",
+      step2_title: "2. أدخل تفاصيل مزرعتك",
+      step2_text: "اختر مساحة المزرعة بالأفدنة أو القطع أو الهكتارات. استخدم تقديرات التكلفة والأسعار أو أدخل أرقامك المحلية.",
+      step3_title: "3. احصل على تقرير الأرباح",
+      step3_text: "شاهد إجمالي الاستثمار والإيرادات المتوقعة والربح والعائد على الاستثمار وسعر التعادل، مع ثلاثة سيناريوهات ونصائح مخصصة.",
+      try_calculator: "جرّب الحاسبة — مجانًا",
+      farming_guides: "الأدلة الزراعية",
+      expert_guides: "تعمق أكثر مع الأدلة المتخصصة",
+      guides_description: "أدلة زراعية عضوية خطوة بخطوة مبنية على البحث والخبرة الزراعية الحقيقية.",
+      view_guide: "عرض الدليل ←",
+      see_all_guides: "عرض جميع الأدلة",
+      about_goa: "عن GoOrganicAfrica",
+      about_title: "مبني من المزرعة وليس من الفصل الدراسي",
+      about_text: "تم إنشاء GoOrganicAfrica بواسطة Amoo Oluwatoyin Owolabi، وهو مزارع وباحث زراعي ومنتج للأسمدة الحيوية العضوية. تعتمد كل أداة ودليل على خبرة إنتاج حقيقية في نيجيريا والكاميرون وخارجهما.",
+      read_more: "اقرأ المزيد",
+      practical_guides: "أدلة عملية",
+      calculator_countries: "دول الحاسبة",
+      farm_tested: "مختبر في المزرعة",
+      calculator_tool: "أداة الحاسبة",
+      from_blog: "من المدونة",
+      blog_title: "رؤى زراعية وتحليل السوق",
+      blog_description: "مقالات عملية عبر",
+      blog_categories: "فئات لمساعدة المزارعين الأفارقة على اتخاذ قرارات أفضل.",
+      read_article: "اقرأ المقال",
+      explore_articles: "استكشف جميع المقالات",
+      articles_future: "ستظهر المقالات هنا تلقائيًا عند نشرها من لوحة الإدارة.",
+      explore_blog: "استكشف المدونة"
     },
 
     pt: {
-      Home: "Início",
-      Calculator: "Calculadora",
-      Guides: "Guias",
-      Blog: "Blog",
-      About: "Sobre",
-      Contact: "Contacto",
-      Language: "Idioma",
-      "Free Farming Tool": "Ferramenta agrícola gratuita",
-      "Know Your Farm Profit Before You Plant":
-        "Conheça o lucro da sua fazenda antes de plantar",
-      "Calculate My Farm Profit": "Calcular o lucro da minha fazenda",
-      "Browse Farming Guides": "Ver guias agrícolas",
-      "Plan Your Farm. Calculate Your Profit.":
-        "Planeje sua fazenda. Calcule seu lucro.",
-      "100% Free": "100% gratuito",
-      "Open Calculator": "Abrir calculadora",
-      "How it works": "Como funciona",
-      "Three Steps to Your Farm Profit Report":
-        "Três passos para o seu relatório de lucro",
-      "No sign-up. No payment. Just your numbers.":
-        "Sem cadastro. Sem pagamento. Apenas os seus números.",
-      "Farming Guides": "Guias agrícolas",
-      "Go Deeper With Expert Guides":
-        "Aprofunde-se com nossos guias especializados",
-      "About GoOrganicAfrica": "Sobre a GoOrganicAfrica",
-      "From the Blog": "Do blog",
-      "Farming Insights & Market Analysis":
-        "Informações agrícolas e análise de mercado"
+      free_tool: "Ferramenta agrícola gratuita",
+      hero_title: "Conheça o lucro da sua fazenda antes de plantar",
+      hero_description: "Calcule gratuitamente os custos de produção, receita esperada, lucro, ROI e ponto de equilíbrio na Nigéria e em África, na sua própria moeda.",
+      crops_livestock: "Culturas, pecuária e muito mais — em expansão contínua",
+      farm_size: "Informe o tamanho da fazenda em acres, parcelas ou hectares",
+      local_numbers: "Substitua qualquer valor pelos seus dados locais",
+      profit_scenarios: "Cenários de lucro conservador, esperado e otimista",
+      calculate_profit: "▶ Calcular o lucro da minha fazenda",
+      browse_guides: "Ver guias agrícolas",
+      free_tool_upper: "FERRAMENTA GRATUITA",
+      calculator_title: "Calculadora de lucro agrícola para África",
+      calculator_tagline: "Planeie a sua fazenda. Calcule o seu lucro.",
+      crops_growing: "Culturas",
+      livestock_growing: "Pecuária",
+      free_100: "100% gratuito",
+      open_calculator: "Abrir calculadora",
+      farming_enterprises: "Empresas agrícolas",
+      african_countries: "Países africanos",
+      regions: "Estados / regiões / províncias",
+      free_to_use: "Gratuito para usar",
+      how_it_works: "Como funciona",
+      three_steps: "Três passos para o seu relatório de lucro agrícola",
+      no_signup: "Sem cadastro. Sem pagamento. Apenas os seus números.",
+      step1_title: "1. Escolha o seu país e cultura",
+      step1_text: "Selecione o seu país africano, região e cultura ou criação que pretende produzir. A moeda e os dados são ajustados automaticamente.",
+      step2_title: "2. Informe os detalhes da sua fazenda",
+      step2_text: "Escolha o tamanho em acres, parcelas ou hectares. Use as nossas estimativas ou introduza os seus próprios valores locais.",
+      step3_title: "3. Obtenha o seu relatório de lucro",
+      step3_text: "Veja o investimento total, receita esperada, lucro estimado, ROI e ponto de equilíbrio, além de três cenários e recomendações personalizadas.",
+      try_calculator: "Experimentar a calculadora — é grátis",
+      farming_guides: "Guias agrícolas",
+      expert_guides: "Aprofunde-se com os nossos guias especializados",
+      guides_description: "Guias de agricultura orgânica passo a passo, baseados em pesquisa e experiência real.",
+      view_guide: "Ver guia →",
+      see_all_guides: "Ver todos os guias",
+      about_goa: "Sobre a GoOrganicAfrica",
+      about_title: "Construído na fazenda, não apenas na sala de aula",
+      about_text: "A GoOrganicAfrica foi criada por Amoo Oluwatoyin Owolabi, agricultor, pesquisador agrícola e produtor de biofertilizantes orgânicos. Cada ferramenta e guia baseia-se em experiência real de produção na Nigéria, Camarões e além.",
+      read_more: "Leia mais",
+      practical_guides: "Guias práticos",
+      calculator_countries: "Países da calculadora",
+      farm_tested: "Testado na fazenda",
+      calculator_tool: "Ferramenta de cálculo",
+      from_blog: "Do blog",
+      blog_title: "Informações agrícolas e análise de mercado",
+      blog_description: "Artigos práticos em",
+      blog_categories: "categorias para ajudar agricultores africanos a tomar melhores decisões.",
+      read_article: "Ler artigo",
+      explore_articles: "Explorar todos os artigos",
+      articles_future: "Os artigos aparecerão automaticamente quando forem publicados no painel de administração.",
+      explore_blog: "Explorar blog"
     },
 
     sw: {
-      Home: "Nyumbani",
-      Calculator: "Kikokotoo",
-      Guides: "Miongozo",
-      Blog: "Blogu",
-      About: "Kuhusu",
-      Contact: "Wasiliana",
-      Language: "Lugha",
-      "Free Farming Tool": "Zana ya Kilimo ya Bure",
-      "Know Your Farm Profit Before You Plant":
-        "Jua faida ya shamba lako kabla ya kupanda",
-      "Calculate My Farm Profit": "Hesabu Faida ya Shamba Langu",
-      "Browse Farming Guides": "Vinjari Miongozo ya Kilimo",
-      "Plan Your Farm. Calculate Your Profit.":
-        "Panga Shamba Lako. Hesabu Faida Yako.",
-      "100% Free": "Bure 100%",
-      "Open Calculator": "Fungua Kikokotoo",
-      "How it works": "Jinsi inavyofanya kazi",
-      "Three Steps to Your Farm Profit Report":
-        "Hatua tatu za kupata ripoti ya faida ya shamba",
-      "No sign-up. No payment. Just your numbers.":
-        "Hakuna usajili. Hakuna malipo. Nambari zako tu.",
-      "Farming Guides": "Miongozo ya Kilimo",
-      "Go Deeper With Expert Guides":
-        "Jifunze zaidi kupitia miongozo yetu ya kitaalamu",
-      "About GoOrganicAfrica": "Kuhusu GoOrganicAfrica",
-      "From the Blog": "Kutoka kwenye Blogu",
-      "Farming Insights & Market Analysis":
-        "Maarifa ya kilimo na uchambuzi wa soko"
+      free_tool: "Zana ya Kilimo ya Bure",
+      hero_title: "Jua Faida ya Shamba Lako Kabla ya Kupanda",
+      hero_description: "Hesabu gharama za uzalishaji, mapato yanayotarajiwa, faida, ROI na kiwango cha kuvunja hasara bila malipo nchini Nigeria na Afrika.",
+      crops_livestock: "Mazao, mifugo na zaidi — vinaendelea kuongezeka",
+      farm_size: "Ingiza ukubwa wa shamba kwa ekari, vipande au hekta",
+      local_numbers: "Badilisha takwimu kwa nambari zako za eneo lako",
+      profit_scenarios: "Matukio ya faida ya tahadhari, inayotarajiwa na yenye matumaini",
+      calculate_profit: "▶ Hesabu Faida ya Shamba Langu",
+      browse_guides: "Vinjari Miongozo ya Kilimo",
+      free_tool_upper: "ZANA YA BURE",
+      calculator_title: "Kikokotoo cha Faida ya Shamba Afrika",
+      calculator_tagline: "Panga Shamba Lako. Hesabu Faida Yako.",
+      crops_growing: "Mazao",
+      livestock_growing: "Mifugo",
+      free_100: "Bure 100%",
+      open_calculator: "Fungua Kikokotoo",
+      farming_enterprises: "Biashara za kilimo",
+      african_countries: "Nchi za Afrika",
+      regions: "Majimbo / maeneo / mikoa",
+      free_to_use: "Bure kutumia",
+      how_it_works: "Jinsi inavyofanya kazi",
+      three_steps: "Hatua Tatu za Ripoti ya Faida ya Shamba Lako",
+      no_signup: "Hakuna usajili. Hakuna malipo. Nambari zako tu.",
+      step1_title: "1. Chagua Nchi na Zao Lako",
+      step1_text: "Chagua nchi yako ya Afrika, eneo lako na zao au mifugo unayopanga kufuga au kulima. Sarafu na data hubadilika kiotomatiki.",
+      step2_title: "2. Ingiza Maelezo ya Shamba Lako",
+      step2_text: "Chagua ukubwa wa shamba kwa ekari, vipande au hekta. Tumia makadirio yetu au ingiza takwimu zako za eneo lako.",
+      step3_title: "3. Pata Ripoti ya Faida",
+      step3_text: "Angalia uwekezaji wako wote, mapato yanayotarajiwa, faida, ROI na bei ya kuvunja hasara, pamoja na matukio matatu na ushauri maalum.",
+      try_calculator: "Jaribu Kikokotoo — Ni Bure",
+      farming_guides: "Miongozo ya Kilimo",
+      expert_guides: "Jifunze zaidi kupitia miongozo yetu ya kitaalamu",
+      guides_description: "Miongozo ya kilimo hai hatua kwa hatua inayotokana na utafiti na uzoefu halisi wa shamba.",
+      view_guide: "Tazama Mwongozo →",
+      see_all_guides: "Tazama Miongozo Yote",
+      about_goa: "Kuhusu GoOrganicAfrica",
+      about_title: "Imejengwa Kutoka Shambani, Sio Darasani",
+      about_text: "GoOrganicAfrica imejengwa na Amoo Oluwatoyin Owolabi, mkulima, mtafiti wa kilimo na mtengenezaji wa mbolea hai. Kila zana na mwongozo unatokana na uzoefu halisi wa uzalishaji nchini Nigeria, Cameroon na maeneo mengine.",
+      read_more: "Soma Zaidi",
+      practical_guides: "Miongozo ya vitendo",
+      calculator_countries: "Nchi za kikokotoo",
+      farm_tested: "Imejaribiwa shambani",
+      calculator_tool: "Zana ya kikokotoo",
+      from_blog: "Kutoka kwenye Blogu",
+      blog_title: "Maarifa ya Kilimo na Uchambuzi wa Soko",
+      blog_description: "Makala za vitendo katika",
+      blog_categories: "makundi yaliyoundwa kuwasaidia wakulima wa Afrika kufanya maamuzi bora.",
+      read_article: "Soma makala",
+      explore_articles: "Vinjari Makala Zote",
+      articles_future: "Makala zitaonekana hapa kiotomatiki zitakapochapishwa kupitia paneli ya usimamizi.",
+      explore_blog: "Vinjari Blogu"
     }
   };
 
-  const originalText = new Map();
+  const savedLanguage = localStorage.getItem("goa_language") || "en";
 
-  function translateElement(element, lang) {
-    const text = element.textContent.trim();
+  function applyLanguage(language) {
+    const dictionary = translations[language] || translations.en;
 
-    if (!originalText.has(element)) {
-      originalText.set(element, text);
-    }
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
 
-    const original = originalText.get(element);
-    const translated = translations[lang] && translations[lang][original];
+    document.querySelectorAll("[data-i18n]").forEach(function (element) {
+      const key = element.getAttribute("data-i18n");
 
-    if (translated) {
-      element.textContent = translated;
-    } else if (lang === "en") {
-      element.textContent = original;
-    }
-  }
-
-  function applyLanguage(lang) {
-    if (!translations[lang]) lang = "en";
-
-    localStorage.setItem("goa_language", lang);
-
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-
-    document.querySelectorAll(
-      "nav a, nav label, .hero .eyebrow, .hero h1, .hero p, .hero li, .hero .btn, " +
-      ".packet-title, .packet-tagline, .packet-price, .packet-footer .btn, " +
-      ".section-head .eyebrow, .section-head h2, .section-head .lede, " +
-      ".trust-item .label, section h2, section h3, section p, section .btn"
-    ).forEach(function (element) {
-      translateElement(element, lang);
+      if (dictionary[key]) {
+        element.textContent = dictionary[key];
+      }
     });
+
+    localStorage.setItem("goa_language", language);
   }
 
-  const saved = localStorage.getItem("goa_language") || "en";
-
-  if (Array.from(select.options).some(function (option) {
-    return option.value === saved;
-  })) {
-    select.value = saved;
+  if ([...selector.options].some(option => option.value === savedLanguage)) {
+    selector.value = savedLanguage;
   }
 
-  select.addEventListener("change", function () {
+  selector.addEventListener("change", function () {
     applyLanguage(this.value);
   });
 
-  applyLanguage(saved);
+  applyLanguage(selector.value || savedLanguage);
 });
