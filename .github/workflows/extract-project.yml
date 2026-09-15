@@ -14,41 +14,45 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Find and extract ZIP
-        shell: bash
+      - name: Extract project
         run: |
           set -e
 
           ZIP_FILE=$(find . -maxdepth 1 -type f -iname "*.zip" | head -n 1)
 
           if [ -z "$ZIP_FILE" ]; then
-            echo "ERROR: No ZIP file found in repository root."
+            echo "No ZIP file found."
             exit 1
           fi
 
-          echo "Found ZIP: $ZIP_FILE"
+          echo "Found: $ZIP_FILE"
 
           rm -rf .extract
           mkdir .extract
 
           unzip -q "$ZIP_FILE" -d .extract
 
-          echo "Extracted contents:"
-          find .extract -maxdepth 2 -type f | head -50
-
-          cp -a .extract/. .
+          # Copy everything EXCEPT the ZIP and .github
+          cp -a .extract/.eleventy.js .
+          cp -a .extract/admin .
+          cp -a .extract/config .
+          cp -a .extract/data .
+          cp -a .extract/scripts .
+          cp -a .extract/src .
+          cp -a .extract/.gitignore .
+          cp -a .extract/package.json .
+          cp -a .extract/README.md .
+          cp -a .extract/*.md . 2>/dev/null || true
+          cp -a .extract/netlify.toml . 2>/dev/null || true
 
           rm -rf .extract
           rm -f "$ZIP_FILE"
 
       - name: Commit extracted project
-        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
-
           git commit -m "Extract GoOrganicAfrica project" || echo "Nothing to commit"
-
           git push
