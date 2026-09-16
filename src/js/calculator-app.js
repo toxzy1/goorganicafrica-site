@@ -102,12 +102,13 @@
 
 
   var LOCALES = {
-    en:{label:"English",country:"Select Your Country",region:"Select Your Region",type:"What Are You Farming?",crop:"Crop",livestock:"Livestock",continue:"Continue",back:"Back"},
-    fr:{label:"Français",country:"Sélectionnez votre pays",region:"Sélectionnez votre région",type:"Que cultivez-vous ou élevez-vous ?",crop:"Culture",livestock:"Élevage",continue:"Continuer",back:"Retour"},
-    ar:{label:"العربية",country:"اختر بلدك",region:"اختر منطقتك",type:"ماذا تزرع أو تربي؟",crop:"محاصيل",livestock:"الثروة الحيوانية",continue:"متابعة",back:"رجوع"},
-    pt:{label:"Português",country:"Selecione o seu país",region:"Selecione a sua região",type:"O que você cultiva ou cria?",crop:"Cultivo",livestock:"Pecuária",continue:"Continuar",back:"Voltar"},
-    sw:{label:"Kiswahili",country:"Chagua nchi yako",region:"Chagua eneo lako",type:"Unalima au kufuga nini?",crop:"Mazao",livestock:"Mifugo",continue:"Endelea",back:"Rudi"}
+    en:{label:"English",country:"Select Your Country",region:"Select Your Region",type:"What Are You Farming?",crop:"Crop",livestock:"Livestock",continue:"Continue",back:"Back",step:"Step"},
+    fr:{label:"Français",country:"Sélectionnez votre pays",region:"Sélectionnez votre région",type:"Que cultivez-vous ou élevez-vous ?",crop:"Culture",livestock:"Élevage",continue:"Continuer",back:"Retour",step:"Étape"},
+    ar:{label:"العربية",country:"اختر بلدك",region:"اختر منطقتك",type:"ماذا تزرع أو تربي؟",crop:"محاصيل",livestock:"الثروة الحيوانية",continue:"متابعة",back:"رجوع",step:"الخطوة"},
+    pt:{label:"Português",country:"Selecione o seu país",region:"Selecione a sua região",type:"O que você cultiva ou cria?",crop:"Cultivo",livestock:"Pecuária",continue:"Continuar",back:"Voltar",step:"Etapa"},
+    sw:{label:"Kiswahili",country:"Chagua nchi yako",region:"Chagua eneo lako",type:"Unalima au kufuga nini?",crop:"Mazao",livestock:"Mifugo",continue:"Endelea",back:"Rudi",step:"Hatua"}
   };
+  function T(section,key,vars,fallback){ if(window.GOA_I18N&&window.GOA_I18N.t) return window.GOA_I18N.t(section,key,vars); return fallback||key; }
   function locale(){ return LOCALES[state.language] || LOCALES.en; }
   function setupToolbar(){
     var cs=document.getElementById("calc-country-switcher"), ls=document.getElementById("calc-language-switcher");
@@ -229,7 +230,7 @@
     stepHeader(root, locale().step + " 2 of 8", locale().region);
     var note = document.createElement("div");
     note.className = "calc-reference-box";
-    note.textContent = "We use National Reference data for cost, yield and price estimates. Your region personalizes your report but does not change the calculation figures.";
+    note.textContent = T("calc","nationalReference");
     root.appendChild(note);
 
     var regionList = regions[state.country] || [];
@@ -282,7 +283,7 @@
   /* ---------- STEP: COMMODITY ---------- */
 
   function renderCommodityStep() {
-    stepHeader(root, "Step 4 of 8", state.category === "crop" ? "Select Your Crop" : "Select Your Livestock");
+    stepHeader(root, locale().step + " 4 of 8", state.category === "crop" ? T("calc","selectCrop") : T("calc","selectLivestock"));
     var grid = document.createElement("div");
     grid.className = "calc-option-grid";
     var filtered = commodities.filter(function (c) { return c.category === state.category; });
@@ -316,7 +317,7 @@
   function renderSizeStep() {
     var isCrop = state.commodity.unit_mode === "crop";
     var animalLabel = state.commodity.unit_label.charAt(0).toUpperCase() + state.commodity.unit_label.slice(1);
-    stepHeader(root, "Step 5 of 8", isCrop ? "Farm Size" : "How Many " + animalLabel + "s?");
+    stepHeader(root, locale().step + " 5 of 8", isCrop ? T("calc","farmSize") : "How Many " + animalLabel + "s?");
 
     if (isCrop) {
       // Land unit switcher
@@ -401,7 +402,7 @@
     var mode = state.commodity.unit_mode;
 
     if (mode === "livestock_unit") {
-      stepHeader(root, "Step 6 of 8", "Expected Survival Rate");
+      stepHeader(root, locale().step + " 6 of 8", T("calc","expectedSurvival"));
       var box = document.createElement("div");
       box.className = "calc-reference-box";
       box.innerHTML = "Reference survival rate for " + state.commodity.name + ": <strong>" + cd.survival_rate + "%</strong><br><span class=\"as-of\">Source: " + cd.source + "</span>";
@@ -428,7 +429,7 @@
     }
 
     var isRecurring = mode === "livestock_recurring";
-    stepHeader(root, "Step 6 of 8", isRecurring ? "Expected Output" : "Expected Yield");
+    stepHeader(root, locale().step + " 6 of 8", isRecurring ? T("calc","expectedOutput") : T("calc","expectedYield"));
 
     var refBox = document.createElement("div");
     refBox.className = "calc-reference-box";
@@ -443,7 +444,7 @@
     toggleGroup.className = "calc-toggle-group";
     var btnRec = document.createElement("button");
     btnRec.className = "calc-toggle-btn" + (state.yieldMode === "recommended" ? " active" : "");
-    btnRec.textContent = "Use Recommended Estimate";
+    btnRec.textContent = T("calc","recommendedEstimate");
     btnRec.onclick = function () {
       state.yieldMode = "recommended";
       state.yieldValue = isRecurring ? cd.output_expected : cd.yield_expected;
@@ -451,7 +452,7 @@
     };
     var btnCustom = document.createElement("button");
     btnCustom.className = "calc-toggle-btn" + (state.yieldMode === "custom" ? " active" : "");
-    btnCustom.textContent = "Enter My Own";
+    btnCustom.textContent = T("calc","enterOwn");
     btnCustom.onclick = function () {
       state.yieldMode = "custom";
       render();
@@ -488,7 +489,7 @@
   function renderPriceStep() {
     var cd = getCommodityCountryData(state.commodity, state.country);
     var mode = state.commodity.unit_mode;
-    stepHeader(root, "Step 7 of 8", "Expected Selling Price");
+    stepHeader(root, locale().step + " 7 of 8", T("calc","sellingPrice"));
 
     var refBox = document.createElement("div");
     refBox.className = "calc-reference-box";
@@ -514,7 +515,7 @@
     toggleGroup.className = "calc-toggle-group";
     var btnRec = document.createElement("button");
     btnRec.className = "calc-toggle-btn" + (state.priceMode === "recommended" ? " active" : "");
-    btnRec.textContent = "Use Reference Price";
+    btnRec.textContent = T("calc","referencePrice");
     btnRec.onclick = function () {
       state.priceMode = "recommended";
       state.priceValue = defaultPrice;
@@ -522,7 +523,7 @@
     };
     var btnCustom = document.createElement("button");
     btnCustom.className = "calc-toggle-btn" + (state.priceMode === "custom" ? " active" : "");
-    btnCustom.textContent = "Enter My Own Price";
+    btnCustom.textContent = T("calc","enterOwnPrice");
     btnCustom.onclick = function () {
       state.priceMode = "custom";
       render();
@@ -555,7 +556,7 @@
 
   function renderCostsStep() {
     var cd = getCommodityCountryData(state.commodity, state.country);
-    stepHeader(root, "Step 8 of 8", "Production Costs");
+    stepHeader(root, locale().step + " 8 of 8", T("calc","productionCosts"));
 
     var currency = currencySymbol();
     var isCrop = state.commodity.unit_mode === "crop";
@@ -582,7 +583,7 @@
     toggleGroup.className = "calc-toggle-group";
     var btnRec = document.createElement("button");
     btnRec.className = "calc-toggle-btn" + (state.costMode === "recommended" ? " active" : "");
-    btnRec.textContent = "Use Estimated Costs";
+    btnRec.textContent = T("calc","estimatedCosts");
     btnRec.onclick = function () {
       state.costMode = "recommended";
       state.costItems = cd.cost_breakdown.map(function (i) { return { label: i.label, amount: i.amount }; });
@@ -590,7 +591,7 @@
     };
     var btnCustom = document.createElement("button");
     btnCustom.className = "calc-toggle-btn" + (state.costMode === "custom" ? " active" : "");
-    btnCustom.textContent = "Edit My Own Costs";
+    btnCustom.textContent = T("calc","editCosts");
     btnCustom.onclick = function () {
       state.costMode = "custom";
       if (!state.costItems.length) {
@@ -646,7 +647,7 @@
       }
     }
 
-    actionBar(root, { back: goBack, next: goToResults, nextLabel: "Calculate My Profit" });
+    actionBar(root, { back: goBack, next: goToResults, nextLabel: T("calc","calculateProfit") });
   }
 
   function sumCosts() {
@@ -791,11 +792,11 @@
     var ppu = result.profitPerUnit !== null ? fmtMoney(result.profitPerUnit, currency) : "\u2014";
 
     var cards = [
-      { label: "Total Investment", value: fmtMoney(result.totalCost, currency), icon: "\ud83d\udcb0" },
-      { label: "Expected Revenue", value: fmtMoney(result.totalRevenue, currency), icon: "\ud83d\udcb5" },
-      { label: "Return on Investment", value: roi, icon: "\ud83d\udcc8" },
-      { label: "Break-even Price", value: bep, icon: "\u2696\ufe0f" },
-      { label: "Break-even Yield", value: bey, icon: "\ud83c\udf31" },
+      { label: T("calc","totalInvestment"), value: fmtMoney(result.totalCost, currency), icon: "\ud83d\udcb0" },
+      { label: T("calc","expectedRevenue"), value: fmtMoney(result.totalRevenue, currency), icon: "\ud83d\udcb5" },
+      { label: T("calc","roi"), value: roi, icon: "\ud83d\udcc8" },
+      { label: T("calc","breakEvenPrice"), value: bep, icon: "\u2696\ufe0f" },
+      { label: T("calc","breakEvenYield"), value: bey, icon: "\ud83c\udf31" },
       { label: profitPerLabel, value: ppu, icon: "\ud83c\udfe1" },
     ];
     cards.forEach(function (c) {
@@ -811,80 +812,59 @@
     // --- TECHNICAL ADVICE SECTION ---
     var adviceSection = document.createElement("div");
     adviceSection.style.cssText = "margin:24px 0;";
-
     var adviceTitle = document.createElement("h3");
     adviceTitle.style.cssText = "font-family:var(--font-display);color:var(--green-deep);margin-bottom:14px;font-size:1.15rem;";
-    adviceTitle.textContent = "\ud83d\udca1 Technical Analysis & Advice";
+    adviceTitle.textContent = "💡 " + T("calc","technical");
     adviceSection.appendChild(adviceTitle);
 
-    // Profitability interpretation
     var profitBlock = document.createElement("div");
     profitBlock.style.cssText = "background:var(--sage-light);border-left:4px solid var(--green-deep);border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:12px;";
     var profitText = "";
     if (result.roi === null) {
-      profitText = "Unable to calculate ROI. Check your cost and price entries.";
+      profitText = T("analysis","roiUnavailable");
     } else if (result.profit < 0) {
-      profitText = "\u26a0\ufe0f Loss of " + fmtMoney(Math.abs(result.profit), currency) + " projected. Your costs exceed expected revenue by " + Math.abs(result.roi).toFixed(1) + "%. Before investing, review: (1) Can you reduce input costs — especially labour, seeds or fertilizer? (2) Can you access a better selling price through direct buyers, processors or urban markets? (3) Can you improve yield through better variety selection or agronomic practice?";
+      profitText = "⚠️ " + T("analysis","loss", {amount:fmtMoney(Math.abs(result.profit), currency), roi:Math.abs(result.roi).toFixed(1)});
     } else if (result.roi < 20) {
-      profitText = "\ud83d\udcc9 Thin margin (" + result.roi.toFixed(1) + "% ROI). A 10\u201315% drop in selling price or a 10% yield shortfall could wipe out your profit. This enterprise carries significant price and yield risk. Consider whether you can reduce costs or access premium buyers before scaling up.";
+      profitText = "📉 " + T("analysis","thin", {roi:result.roi.toFixed(1)});
     } else if (result.roi < 60) {
-      profitText = "\u2705 Reasonable return (" + result.roi.toFixed(1) + "% ROI). This is a viable enterprise if your inputs and prices hold. Monitor seasonal price changes — markets for most African crops and livestock can swing significantly at peak supply periods. Build a 10\u201315% cost buffer into your planning.";
+      profitText = "✅ " + T("analysis","reasonable", {roi:result.roi.toFixed(1)});
     } else {
-      profitText = "\ud83c\udf1f Strong projected return (" + result.roi.toFixed(1) + "% ROI). Excellent margin if achieved. Verify your cost and price assumptions against your local market before scaling. Start at a manageable scale, confirm results, then expand.";
+      profitText = "🌟 " + T("analysis","strong", {roi:result.roi.toFixed(1)});
     }
-    profitBlock.innerHTML = '<div style="font-weight:700;color:var(--green-deep);margin-bottom:6px;font-size:0.95rem;">\ud83d\udcca Profitability Assessment</div>' +
+    profitBlock.innerHTML = '<div style="font-weight:700;color:var(--green-deep);margin-bottom:6px;font-size:0.95rem;">📊 ' + T("calc","profitability") + '</div>' +
       '<p style="margin:0;font-size:0.88rem;color:var(--ink-soft);line-height:1.7;">' + profitText + "</p>";
     adviceSection.appendChild(profitBlock);
 
-    // Break-even interpretation
     if (result.breakEvenPrice !== null && result.breakEvenPrice > 0) {
       var cd2 = getCommodityCountryData(state.commodity, state.country);
       var bepBlock = document.createElement("div");
       bepBlock.style.cssText = "background:#edf4ff;border-left:4px solid #4a7cc7;border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:12px;";
-      var bepText = "Your break-even selling price is " + fmtMoney(result.breakEvenPrice, currency) + " " + (cd2 ? cd2.price_unit || "" : "") + ". This is the minimum price you must receive to cover all your costs. ";
-      if (cd2 && cd2.price_low && result.breakEvenPrice > cd2.price_low * 0.9) {
-        bepText += "Your break-even is close to the reference market floor price (" + fmtMoney(cd2.price_low, currency) + "). If prices fall to their seasonal low, you risk a loss. Secure buyers before harvest or target premium markets.";
-      } else {
-        bepText += "This gives you a reasonable buffer above the reference low-end market price. Maintain your cost discipline to protect this buffer.";
-      }
-      bepBlock.innerHTML = '<div style="font-weight:700;color:#1a3a6b;margin-bottom:6px;font-size:0.95rem;">\u2696\ufe0f Break-even Analysis</div>' +
+      var bepVars = {price:fmtMoney(result.breakEvenPrice, currency), unit:(cd2 ? cd2.price_unit || "" : ""), low:fmtMoney(cd2 && cd2.price_low ? cd2.price_low : 0, currency)};
+      var bepText = (cd2 && cd2.price_low && result.breakEvenPrice > cd2.price_low * 0.9) ? T("analysis","breakEvenLow",bepVars) : T("analysis","breakEvenBuffer",bepVars);
+      bepBlock.innerHTML = '<div style="font-weight:700;color:#1a3a6b;margin-bottom:6px;font-size:0.95rem;">⚖️ ' + T("calc","breakEven") + '</div>' +
         '<p style="margin:0;font-size:0.88rem;color:var(--ink-soft);line-height:1.7;">' + bepText + "</p>";
       adviceSection.appendChild(bepBlock);
     }
 
-    // Scenario comparison advice
     var scenBlock = document.createElement("div");
     scenBlock.style.cssText = "background:#fff8e8;border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:12px;";
     var consProfit = scenarios.conservative ? scenarios.conservative.profit : null;
     var optProfit = scenarios.optimistic ? scenarios.optimistic.profit : null;
-    var scenText = "The three scenarios above apply a \u00b115% variation to your yield and price inputs. ";
+    var scenText = T("analysis","scenarioBase");
     if (consProfit !== null && optProfit !== null) {
       var range = fmtMoney(Math.abs(optProfit - consProfit), currency);
-      scenText += "The difference between your Conservative and Optimistic outcomes is " + range + ". ";
-      if (consProfit < 0) {
-        scenText += "Your conservative scenario shows a loss \u2014 meaning if prices or yields underperform by just 15%, this enterprise loses money. This is a high-risk profile. Only proceed if you have strong buyer relationships or yield confidence.";
-      } else {
-        scenText += "Even in the conservative case your enterprise is profitable, which indicates a resilient enterprise with good downside protection.";
-      }
+      scenText += " " + (consProfit < 0 ? T("analysis","scenarioLoss",{range:range}) : T("analysis","scenarioProfit",{range:range}));
     }
-    scenBlock.innerHTML = '<div style="font-weight:700;color:#6b4e10;margin-bottom:6px;font-size:0.95rem;">\ud83d\udcca Scenario Range Analysis</div>' +
+    scenBlock.innerHTML = '<div style="font-weight:700;color:#6b4e10;margin-bottom:6px;font-size:0.95rem;">📊 ' + T("calc","scenario") + '</div>' +
       '<p style="margin:0;font-size:0.88rem;color:var(--ink-soft);line-height:1.7;">' + scenText + "</p>";
     adviceSection.appendChild(scenBlock);
 
-    // What to do next
     var nextBlock = document.createElement("div");
     nextBlock.style.cssText = "background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px;";
-    nextBlock.innerHTML = '<div style="font-weight:700;color:var(--green-deep);margin-bottom:8px;font-size:0.95rem;">\ud83d\udea6 Recommended Next Steps</div>' +
+    nextBlock.innerHTML = '<div style="font-weight:700;color:var(--green-deep);margin-bottom:8px;font-size:0.95rem;">🚦 ' + T("calc","nextSteps") + '</div>' +
       '<ul style="margin:0;padding-left:18px;font-size:0.88rem;color:var(--ink-soft);line-height:1.9;">' +
-      "<li>Compare these figures against your own local input costs before committing capital</li>" +
-      "<li>Verify your expected selling price with at least 2\u20133 local buyers or market visits</li>" +
-      "<li>Start at a scale you can afford to lose if results differ from projections</li>" +
-      "<li>Keep records of your actual costs and revenue to improve future planning</li>" +
-      "<li>Re-run this calculator with your real numbers once you have market price data</li>" +
-      "</ul>";
+      '<li>' + T("analysis","next1") + '</li><li>' + T("analysis","next2") + '</li><li>' + T("analysis","next3") + '</li><li>' + T("analysis","next4") + '</li><li>' + T("analysis","next5") + '</li></ul>';
     adviceSection.appendChild(nextBlock);
-
-    root.appendChild(adviceSection);
 
     // --- COMMODITY-SPECIFIC ADVICE (from advice engine) ---
     if (window.FarmAdviceEngine) {
@@ -898,7 +878,7 @@
     // --- ADSENSE SLOT ---
     var adSlot = document.createElement("div");
     adSlot.className = "calc-ad-slot";
-    adSlot.textContent = "Advertisement (activates after AdSense approval)";
+    adSlot.textContent = T("calc","advertisement");
     root.appendChild(adSlot);
 
     // --- DISCLAIMER ---
@@ -912,7 +892,7 @@
     actions.className = "calc-action-bar";
     var restartBtn = document.createElement("button");
     restartBtn.className = "btn btn-outline";
-    restartBtn.textContent = "Start New Calculation";
+    restartBtn.textContent = T("calc","startNew");
     restartBtn.onclick = function () {
       var keepCountry = state.country;
       state = {
@@ -925,7 +905,7 @@
     };
     var editBtn = document.createElement("button");
     editBtn.className = "btn btn-primary";
-    editBtn.textContent = "Edit My Inputs";
+    editBtn.textContent = T("calc","editInputs");
     editBtn.onclick = function () { goToStep("size"); };
     actions.appendChild(restartBtn);
     actions.appendChild(editBtn);

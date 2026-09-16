@@ -20,3 +20,11 @@ Country URLs represent regional content/data versions. They do not spoof visitor
 
 ## eBooks
 The eBook catalogue is searchable client-side and CMS-driven. Adding 100+ guides does not require changing the search code; title, tagline, category, audience, slug and `search_terms` are indexed automatically.
+
+## Multilingual CMS architecture
+
+The website language system is data-driven. `src/_data/siteTranslations.json` contains the language registry plus the translation dictionary for each enabled language. The Decap CMS exposes this file under **Languages & Translations**, so an administrator can add a new language, choose `ltr` or `rtl`, enable/disable it, and maintain its common website, calculator, technical-analysis and advice translations without changing JavaScript.
+
+Localized calculator routes are generated from the same CMS language registry. Adding an enabled language therefore makes that language available to the calculator route generator as well as the site selector. English remains the fallback language.
+
+For enterprise-specific Technical Analysis content, the calculator also supports CMS-managed `advice` and `recommendations` fields. These remain data-driven so future enterprise advice can be maintained from the control panel rather than hard-coded into the calculator engine.

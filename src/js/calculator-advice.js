@@ -42,7 +42,7 @@ window.FarmAdviceEngine = (function () {
       advice.push({
         type: "danger",
         icon: "⚠️",
-        heading: "This enterprise is showing a loss",
+        heading: (window.GOA_I18N ? window.GOA_I18N.t("advice","loss") : "This enterprise is showing a loss"),
         body: "Your projected costs (" + fmt(totalCost, sym) + ") exceed your projected revenue (" + fmt(totalRevenue, sym) + "). " +
               "Before committing funds, review three key levers: " +
               "(1) Can you reduce your input costs — especially labour, fertilizer and any hired equipment? " +
@@ -54,7 +54,7 @@ window.FarmAdviceEngine = (function () {
       advice.push({
         type: "warning",
         icon: "📉",
-        heading: "Thin margin — this enterprise carries risk",
+        heading: (window.GOA_I18N ? window.GOA_I18N.t("advice","thin") : "Thin margin — this enterprise carries risk"),
         body: "An ROI of " + roi.toFixed(1) + "% is low for agriculture, where input prices and yields are variable. " +
               "A 10–15% drop in your selling price, or a 10% yield shortfall, could wipe out your profit entirely. " +
               "Consider whether you can negotiate better input prices in bulk, reduce hired labour costs, or sell directly to end buyers rather than market middlemen."
@@ -63,7 +63,7 @@ window.FarmAdviceEngine = (function () {
       advice.push({
         type: "info",
         icon: "✅",
-        heading: "Reasonable profit — but watch these risks",
+        heading: (window.GOA_I18N ? window.GOA_I18N.t("advice","reasonable") : "Reasonable profit — but watch these risks"),
         body: "An ROI of " + roi.toFixed(1) + "% is a solid return if your inputs and selling price hold. " +
               "Key risks to monitor: (1) Seasonal gluts — prices for " + name + " can fall sharply at peak harvest season when many farmers sell at once. " +
               "Consider staggered planting to spread harvest timing. " +
@@ -73,7 +73,7 @@ window.FarmAdviceEngine = (function () {
       advice.push({
         type: "success",
         icon: "🌱",
-        heading: "Strong projected profit",
+        heading: (window.GOA_I18N ? window.GOA_I18N.t("advice","strong") : "Strong projected profit"),
         body: "An ROI of " + roi.toFixed(1) + "% is excellent. To protect this: " +
               "(1) Don't scale up too fast — confirm these results on a small plot first before investing heavily. " +
               "(2) Lock in buyers before harvest if possible — off-taker agreements with restaurants, processors or exporters reduce price uncertainty. " +
@@ -88,7 +88,7 @@ window.FarmAdviceEngine = (function () {
         advice.push({
           type: "warning",
           icon: "📊",
-          heading: "Your break-even price is close to the market floor",
+          heading: (window.GOA_I18N ? window.GOA_I18N.t("advice","breakEvenClose") : "Your break-even price is close to the market floor"),
           body: "Your break-even selling price is " + fmt(breakEvenPrice, sym) + ". " +
                 "The reference low-end market price for " + name + " is around " + fmt(refLow, sym) + ". " +
                 "If prices fall to their seasonal low, you may struggle to break even. " +
@@ -234,7 +234,7 @@ window.FarmAdviceEngine = (function () {
 
     var heading = document.createElement("h3");
     heading.style.cssText = "font-family:var(--font-display);color:var(--green-deep);margin:28px 0 16px;font-size:1.2rem;";
-    heading.textContent = "Advice & Insights";
+    heading.textContent = window.GOA_I18N ? window.GOA_I18N.t("advice","adviceInsights") : "Advice & Insights";
     containerEl.appendChild(heading);
 
     var colors = {
@@ -254,7 +254,7 @@ window.FarmAdviceEngine = (function () {
         cta.innerHTML =
           "<h4>" + item.icon + " Want to go deeper?</h4>" +
           "<p>Get the complete step-by-step guide for this enterprise — written from real research and farm experience.</p>" +
-          '<a class="btn btn-primary btn-sm" href="/ebooks/' + item.ebookSlug + '/">Get the Complete Guide</a>';
+          '<a class="btn btn-primary btn-sm" href="/ebooks/' + item.ebookSlug + '/"><span>Get the Complete Guide</span></a>';
         containerEl.appendChild(cta);
         return;
       }

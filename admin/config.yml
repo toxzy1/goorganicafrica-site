@@ -247,3 +247,115 @@ collections:
           - {label: "Maximum FX Age (days)", name: "max_fx_age_days", widget: "number", value_type: "int", default: 3}
           - {label: "Allow Automatic Publishing", name: "allow_auto_publish", widget: "boolean", default: false}
           - {label: "Validation Notes", name: "validation_notes", widget: "text"}
+
+
+  - name: "languages_and_translations"
+    label: "🌐 Languages & Translations"
+    files:
+      - label: "Language Registry & Translation Dictionary"
+        name: "language_registry"
+        file: "src/_data/siteTranslations.json"
+        editor: {preview: false}
+        fields:
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - {label: "Code", name: "code", widget: "string", hint: "Short code such as en, fr, ar, pt, sw."}
+              - {label: "Language Name", name: "name", widget: "string"}
+              - {label: "Native Name", name: "native", widget: "string"}
+              - {label: "Text Direction", name: "dir", widget: "select", options: ["ltr", "rtl"], default: "ltr"}
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - label: "Common Website Translations"
+                name: "common"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - {label: "Language", name: "Language", widget: "string"}
+                  - {label: "Home", name: "Home", widget: "string"}
+                  - {label: "Calculator", name: "Calculator", widget: "string"}
+                  - {label: "Guides", name: "Guides", widget: "string"}
+                  - {label: "Blog", name: "Blog", widget: "string"}
+                  - {label: "About", name: "About", widget: "string"}
+                  - {label: "Contact", name: "Contact", widget: "string"}
+                  - {label: "Free Farming Tool", name: "Free Farming Tool", widget: "string"}
+                  - {label: "Know Your Farm Profit Before You Plant", name: "Know Your Farm Profit Before You Plant", widget: "string"}
+                  - {label: "Browse Farming Guides", name: "Browse Farming Guides", widget: "string"}
+                  - {label: "Calculate My Farm Profit", name: "Calculate My Farm Profit", widget: "string"}
+                  - {label: "Open Calculator", name: "Open Calculator", widget: "string"}
+                  - {label: "Farming enterprises", name: "Farming enterprises", widget: "string"}
+                  - {label: "African countries", name: "African countries", widget: "string"}
+                  - {label: "States / regions / provinces", name: "States / regions / provinces", widget: "string"}
+                  - {label: "Free to use", name: "Free to use", widget: "string"}
+                  - {label: "How it works", name: "How it works", widget: "string"}
+                  - {label: "Three Steps to Your Farm Profit Report", name: "Three Steps to Your Farm Profit Report", widget: "string"}
+                  - {label: "No sign-up. No payment. Just your numbers.", name: "No sign-up. No payment. Just your numbers.", widget: "string"}
+                  - {label: "Crops & growing", name: "Crops & growing", widget: "string"}
+                  - {label: "Livestock & growing", name: "Livestock & growing", widget: "string"}
+                  - {label: "100% Free", name: "100% Free", widget: "string"}
+              - label: "Calculator & Technical Analysis Translations"
+                name: "calc"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - {label: "Step", name: "step", widget: "string"}
+                  - {label: "Select Your Country", name: "country", widget: "string"}
+                  - {label: "Select Your Region", name: "region", widget: "string"}
+                  - {label: "What Are You Farming?", name: "type", widget: "string"}
+                  - {label: "Crop", name: "crop", widget: "string"}
+                  - {label: "Livestock", name: "livestock", widget: "string"}
+                  - {label: "Continue", name: "continue", widget: "string"}
+                  - {label: "Back", name: "back", widget: "string"}
+                  - {label: "Select Your Crop", name: "selectCrop", widget: "string"}
+                  - {label: "Select Your Livestock", name: "selectLivestock", widget: "string"}
+                  - {label: "Farm Size", name: "farmSize", widget: "string"}
+                  - {label: "Expected Survival Rate", name: "expectedSurvival", widget: "string"}
+                  - {label: "Expected Output", name: "expectedOutput", widget: "string"}
+                  - {label: "Expected Yield", name: "expectedYield", widget: "string"}
+                  - {label: "Expected Selling Price", name: "sellingPrice", widget: "string"}
+                  - {label: "Production Costs", name: "productionCosts", widget: "string"}
+                  - {label: "Calculate My Profit", name: "calculateProfit", widget: "string"}
+                  - {label: "Your Profit Report", name: "profitReport", widget: "string"}
+                  - {label: "Technical Analysis & Advice", name: "technical", widget: "string"}
+                  - {label: "Profitability Assessment", name: "profitability", widget: "string"}
+                  - {label: "Break-even Analysis", name: "breakEven", widget: "string"}
+                  - {label: "Scenario Range Analysis", name: "scenario", widget: "string"}
+                  - {label: "Recommended Next Steps", name: "nextSteps", widget: "string"}
+                  - {label: "Start New Calculation", name: "startNew", widget: "string"}
+                  - {label: "Edit My Inputs", name: "editInputs", widget: "string"}
+                  - {label: "Important disclaimer", name: "importantDisclaimer", widget: "string"}
+                  - {label: "Advertisement", name: "advertisement", widget: "string"}
+              - label: "Advice Headings"
+                name: "advice"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - {label: "Practical recommendation", name: "practicalRecommendation", widget: "string"}
+                  - {label: "Loss", name: "loss", widget: "string"}
+                  - {label: "Thin margin", name: "thin", widget: "string"}
+                  - {label: "Reasonable profit", name: "reasonable", widget: "string"}
+                  - {label: "Strong projected profit", name: "strong", widget: "string"}
+                  - {label: "Break-even close", name: "breakEvenClose", widget: "string"}
+                  - {label: "Advice & Insights", name: "adviceInsights", widget: "string"}
+                  - {label: "Want to go deeper?", name: "deeper", widget: "string"}
+                  - {label: "Get the Complete Guide", name: "completeGuide", widget: "string"}
+              - label: "Technical Analysis Text"
+                name: "analysis"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - {label: "Loss", name: "loss", widget: "text"}
+                  - {label: "Thin margin", name: "thin", widget: "text"}
+                  - {label: "Reasonable", name: "reasonable", widget: "text"}
+                  - {label: "Strong", name: "strong", widget: "text"}
+                  - {label: "ROI unavailable", name: "roiUnavailable", widget: "text"}
+                  - {label: "Break-even near low", name: "breakEvenLow", widget: "text"}
+                  - {label: "Break-even buffer", name: "breakEvenBuffer", widget: "text"}
+                  - {label: "Scenario base", name: "scenarioBase", widget: "text"}
+                  - {label: "Scenario loss", name: "scenarioLoss", widget: "text"}
+                  - {label: "Scenario profit", name: "scenarioProfit", widget: "text"}
+                  - {label: "Next step 1", name: "next1", widget: "text"}
+                  - {label: "Next step 2", name: "next2", widget: "text"}
+                  - {label: "Next step 3", name: "next3", widget: "text"}
+                  - {label: "Next step 4", name: "next4", widget: "text"}
+                  - {label: "Next step 5", name: "next5", widget: "text"}
