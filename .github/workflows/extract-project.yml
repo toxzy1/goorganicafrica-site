@@ -14,25 +14,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Extract project
+      - name: Extract MULTILINGUAL CMS project
         run: |
           set -e
 
-          ZIP_FILE=$(find . -maxdepth 1 -type f -iname "*.zip" | head -n 1)
+          ZIP_FILE="./GoOrganicAfrica-MULTILINGUAL-CMS-FINAL.zip"
 
-          if [ -z "$ZIP_FILE" ]; then
-            echo "No ZIP file found."
+          if [ ! -f "$ZIP_FILE" ]; then
+            echo "ERROR: GoOrganicAfrica-MULTILINGUAL-CMS-FINAL.zip was not found in repository root."
+            echo "Make sure the exact ZIP file is uploaded to the repository root."
             exit 1
           fi
 
-          echo "Found: $ZIP_FILE"
+          echo "Using: $ZIP_FILE"
 
           rm -rf .extract
           mkdir .extract
 
           unzip -q "$ZIP_FILE" -d .extract
 
-          # Copy everything EXCEPT the ZIP and .github
+          if [ ! -f ".extract/package.json" ]; then
+            echo "ERROR: package.json was not found at ZIP root."
+            exit 1
+          fi
+
           cp -a .extract/.eleventy.js .
           cp -a .extract/admin .
           cp -a .extract/config .
@@ -41,12 +46,25 @@ jobs:
           cp -a .extract/src .
           cp -a .extract/.gitignore .
           cp -a .extract/package.json .
-          cp -a .extract/README.md .
+          cp -a .extract/README.md . 2>/dev/null || true
           cp -a .extract/*.md . 2>/dev/null || true
           cp -a .extract/netlify.toml . 2>/dev/null || true
 
           rm -rf .extract
           rm -f "$ZIP_FILE"
+
+      - name: Verify multilingual CMS files
+        run: |
+          set -e
+
+          test -f src/_data/siteTranslations.js
+          test -f src/_data/siteTranslations.json
+          test -f src/js/language-switcher.js
+          test -f src/js/calculator-app.js
+          test -f src/js/calculator-advice.js
+          test -f admin/config.yml
+
+          echo "Multilingual CMS files verified successfully."
 
       - name: Commit extracted project
         run: |
@@ -54,5 +72,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
-          git commit -m "Extract GoOrganicAfrica project" || echo "Nothing to commit"
+          git commit -m "Install multilingual CMS update" || echo "Nothing to commit"
           git push
