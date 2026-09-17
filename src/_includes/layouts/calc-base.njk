@@ -1,5 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+/* GoOrganicAfrica central calculator translation engine */
+window.GOA_I18N_DATA = {{ siteTranslations | dump | safe }};
+
+window.GOA_I18N = (function () {
+  var data = window.GOA_I18N_DATA || {};
+  var languages = data.languages || [];
+
+  function getLanguage() {
+    return localStorage.getItem("goa_language") ||
+           document.documentElement.lang ||
+           "en";
+  }
+
+  function getPack() {
+    var lang = getLanguage();
+    return languages.find(function (item) {
+      return item.code === lang;
+    }) || languages.find(function (item) {
+      return item.code === "en";
+    }) || {};
+  }
+
+  function replaceVars(text, vars) {
+    if (!vars) return text;
+    Object.keys(vars).forEach(function (key) {
+      text = text.replace(
+        new RegExp("\\{" + key + "\\}", "g"),
+        String(vars[key])
+      );
+    });
+    return text;
+  }
+
+  function t(section, key, vars) {
+    var pack = getPack();
+    var group = pack[section] || {};
+    var value = group[key];
+
+    if (value === undefined || value === null) {
+      var english = languages.find(function (item) {
+        return item.code === "en";
+      }) || {};
+      value = (english[section] || {})[key];
+    }
+
+    return replaceVars(value !== undefined ? value : key, vars);
+  }
+
+  function refreshDirection() {
+    var lang = getLanguage();
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  }
+
+  refreshDirection();
+
+  return {
+    t: t,
+    getLanguage: getLanguage,
+    refreshDirection: refreshDirection
+  };
+})();
+</script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
