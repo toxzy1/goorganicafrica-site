@@ -1,0 +1,52 @@
+name: Extract Corrected GoOrganicAfrica Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'GoOrganicAfrica-CORRECTED-FINAL.zip'
+
+permissions:
+  contents: write
+
+jobs:
+  extract-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract corrected website
+        run: |
+          mkdir -p /tmp/goorganicafrica
+          unzip -q GoOrganicAfrica-CORRECTED-FINAL.zip -d /tmp/goorganicafrica
+
+          ROOT="/tmp/goorganicafrica"
+
+          echo "Extracted project contents:"
+          find "$ROOT" -maxdepth 2 -type f | head -50
+
+          # Remove the uploaded ZIP after extraction
+          rm -f GoOrganicAfrica-CORRECTED-FINAL.zip
+
+          # Copy the complete corrected project into the repository root
+          cp -a "$ROOT"/. .
+
+      - name: Commit extracted website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Install corrected GoOrganicAfrica website"
+          git push
