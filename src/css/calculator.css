@@ -451,3 +451,43 @@
   .calc-select-label { display:none; }
   .calc-toolbar-select { max-width:118px; min-height:32px; font-size:.7rem; }
 }
+/* =========================================================
+   Calculator readability and spacing fix
+   ========================================================= */
+
+.calc-app,
+.calc-shell,
+.calc-reference-box,
+.calc-field,
+.calc-result-card,
+.calc-hero-result,
+.calc-disclaimer,
+.calc-action-bar {
+  word-spacing: 0.04em;
+}
+
+.calc-reference-box,
+.calc-disclaimer,
+.calc-result-card,
+.calc-hero-result {
+  line-height: 1.7;
+}
+
+.calc-reference-box strong {
+  margin-left: 0.12em;
+  margin-right: 0.12em;
+}
+
+.calc-reference-box .as-of {
+  display: inline-block;
+  margin-top: 4px;
+  line-height: 1.6;
+}
+
+.calc-cost-total {
+  line-height: 1.7;
+}
+
+.calc-cost-total span:first-child {
+  word-spacing: 0.08em;
+}
