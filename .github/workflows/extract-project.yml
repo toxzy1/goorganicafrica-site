@@ -37,6 +37,25 @@ jobs:
             exit 1
           fi
 
+          echo "Fixing siteTranslations.json..."
+
+          python3 - <<'PY'
+          import json
+
+          path = ".extract/src/_data/siteTranslations.json"
+
+          with open(path, "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          if isinstance(data.get("languages"), dict) and isinstance(data["languages"].get("languages"), list):
+              data["languages"] = data["languages"]["languages"]
+
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+
+          print("siteTranslations.json corrected.")
+          PY
+
           cp -a .extract/.eleventy.js .
           cp -a .extract/admin .
           cp -a .extract/config .
@@ -66,6 +85,16 @@ jobs:
           test -f src/_data/siteTranslations.json
           test -f src/js/calculator-app.js
           test -f admin/config.yml
+
+          python3 - <<'PY'
+          import json
+
+          with open("src/_data/siteTranslations.json", encoding="utf-8") as f:
+              data = json.load(f)
+
+          assert isinstance(data.get("languages"), list)
+          print("Translation language structure verified.")
+          PY
 
           echo "FINAL REBUILT files verified successfully."
 
