@@ -14,14 +14,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: - name: - name: Extract FINAL REBUILT project
+      - name: Extract FINAL REBUILT project
         run: |
           set -e
 
           ZIP_FILE="./GoOrganicAfrica-FINAL-REBUILT (2).zip"
+
           if [ ! -f "$ZIP_FILE" ]; then
-            echo "ERROR: GoOrganicAfrica-MULTILINGUAL-CMS-FINAL.zip was not found in repository root."
-            echo "Make sure the exact ZIP file is uploaded to the repository root."
+            echo "ERROR: $ZIP_FILE was not found in repository root."
             exit 1
           fi
 
@@ -45,6 +45,7 @@ jobs:
           cp -a .extract/src .
           cp -a .extract/.gitignore .
           cp -a .extract/package.json .
+
           cp -a .extract/README.md . 2>/dev/null || true
           cp -a .extract/*.md . 2>/dev/null || true
           cp -a .extract/netlify.toml . 2>/dev/null || true
@@ -52,18 +53,18 @@ jobs:
           rm -rf .extract
           rm -f "$ZIP_FILE"
 
-      - name: Verify multilingual CMS files
+      - name: Verify FINAL REBUILT files
         run: |
           set -e
 
-          test -f src/_data/siteTranslations.js
+          test -f package.json
+          test -f src/_data/calculatorCountries.json
+          test -f src/_data/categories.json
           test -f src/_data/siteTranslations.json
-          test -f src/js/language-switcher.js
           test -f src/js/calculator-app.js
-          test -f src/js/calculator-advice.js
           test -f admin/config.yml
 
-          echo "Multilingual CMS files verified successfully."
+          echo "FINAL REBUILT files verified successfully."
 
       - name: Commit extracted project
         run: |
@@ -71,5 +72,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
-          git commit -m "Install multilingual CMS update" || echo "Nothing to commit"
+          git commit -m "Install FINAL REBUILT GoOrganicAfrica project" || echo "Nothing to commit"
           git push
