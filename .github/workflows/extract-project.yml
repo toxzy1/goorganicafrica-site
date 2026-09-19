@@ -14,12 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Extract MULTILINGUAL CMS project
+      - name: - name: Extract FINAL REBUILT project
         run: |
           set -e
 
-          ZIP_FILE="./GoOrganicAfrica-MULTILINGUAL-CMS-FINAL.zip"
-
+          ZIP_FILE="./GoOrganicAfrica-FINAL-REBUILT (2).zip"
           if [ ! -f "$ZIP_FILE" ]; then
             echo "ERROR: GoOrganicAfrica-MULTILINGUAL-CMS-FINAL.zip was not found in repository root."
             echo "Make sure the exact ZIP file is uploaded to the repository root."
