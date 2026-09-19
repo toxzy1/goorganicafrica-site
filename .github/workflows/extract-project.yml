@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: - name: Extract FINAL REBUILT project
+      - name: - name: - name: Extract FINAL REBUILT project
         run: |
           set -e
 
