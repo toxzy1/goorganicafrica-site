@@ -17,8 +17,11 @@ const calculatorData = fs.readdirSync(commoditiesDir)
   .map((name) => readJson(`src/_data/calculator/commodities/${name}`))
   .filter((c) => c.active !== false);
 const sourceRegistry = readJson("config/ag-data-sources.json").sources || [];
+const categoryRegistry = readJson("src/_data/categories.json").categories || [];
 
+const directoryCountries = countriesData;
 const activeCountries = countriesData.filter((c) => c.available !== false);
+const activeCategories = categoryRegistry.filter((c) => c.active !== false);
 const activeCountryCodes = new Set(activeCountries.map((c) => c.code));
 const featuredCountryNames = activeCountries.slice(0, 3).map((c) => c.name);
 const cropCount = calculatorData.filter((c) => c.category === "crop").length;
@@ -66,6 +69,8 @@ module.exports = {
   phone: settings.phone,
   calculator: {
     countryCount: activeCountries.length,
+    directoryCountryCount: directoryCountries.length,
+    categoryCount: activeCategories.length,
     regionCount,
     cropCount,
     livestockCount,
@@ -80,6 +85,8 @@ module.exports = {
   },
   data: {
     activeCountries,
+    directoryCountries,
+    categories: activeCategories,
     countryCodes: activeCountries.map((c) => c.code),
     countryNames: Object.fromEntries(activeCountries.map((c) => [c.code, c.name])),
     featuredCountryNames,

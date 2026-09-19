@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "slug": "crop-production",
+      "title": "Crop Production",
+      "parent": "",
+      "active": true,
+      "order": 1,
+      "description": "Practical crop production, nursery, planting and harvesting content.",
+      "seo_title": "Crop Production in Africa",
+      "seo_description": "Practical crop production guides and resources for African farmers."
+    },
+    {
+      "slug": "livestock-farming",
+      "title": "Livestock Farming",
+      "parent": "",
+      "active": true,
+      "order": 2,
+      "description": "Livestock production, feeding, housing and farm management.",
+      "seo_title": "Livestock Farming in Africa",
+      "seo_description": "Practical livestock farming information for African farmers."
+    },
+    {
+      "slug": "organic-farming",
+      "title": "Organic & Regenerative Farming",
+      "parent": "",
+      "active": true,
+      "order": 3,
+      "description": "Organic inputs, soil health and regenerative farming practices.",
+      "seo_title": "Organic Farming in Africa",
+      "seo_description": "Organic and regenerative farming resources for African agriculture."
+    },
+    {
+      "slug": "agribusiness",
+      "title": "Agribusiness & Farm Business",
+      "parent": "",
+      "active": true,
+      "order": 4,
+      "description": "Farm profitability, markets, enterprise planning and agribusiness.",
+      "seo_title": "Agribusiness in Africa",
+      "seo_description": "Farm business, profitability and agribusiness resources for African farmers."
+    },
+    {
+      "slug": "farm-inputs",
+      "title": "Farm Inputs & Technology",
+      "parent": "",
+      "active": true,
+      "order": 5,
+      "description": "Seeds, fertilizers, biological inputs, irrigation and farm technology.",
+      "seo_title": "Farm Inputs & Technology Africa",
+      "seo_description": "Agricultural inputs and practical farm technology resources."
+    },
+    {
+      "slug": "farming-data",
+      "title": "Agricultural Data & Markets",
+      "parent": "",
+      "active": true,
+      "order": 6,
+      "description": "Agricultural prices, seed prices, market information and data updates.",
+      "seo_title": "Agricultural Data and Market Prices Africa",
+      "seo_description": "Agricultural market, commodity and seed price information for Africa."
+    }
+  ]
+}

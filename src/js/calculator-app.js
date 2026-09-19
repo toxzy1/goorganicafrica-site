@@ -102,11 +102,11 @@
 
 
   var LOCALES = {
-    en:{label:"English",country:"Select Your Country",region:"Select Your Region",type:"What Are You Farming?",crop:"Crop",livestock:"Livestock",continue:"Continue",back:"Back",step:"Step"},
-    fr:{label:"Français",country:"Sélectionnez votre pays",region:"Sélectionnez votre région",type:"Que cultivez-vous ou élevez-vous ?",crop:"Culture",livestock:"Élevage",continue:"Continuer",back:"Retour",step:"Étape"},
-    ar:{label:"العربية",country:"اختر بلدك",region:"اختر منطقتك",type:"ماذا تزرع أو تربي؟",crop:"محاصيل",livestock:"الثروة الحيوانية",continue:"متابعة",back:"رجوع",step:"الخطوة"},
-    pt:{label:"Português",country:"Selecione o seu país",region:"Selecione a sua região",type:"O que você cultiva ou cria?",crop:"Cultivo",livestock:"Pecuária",continue:"Continuar",back:"Voltar",step:"Etapa"},
-    sw:{label:"Kiswahili",country:"Chagua nchi yako",region:"Chagua eneo lako",type:"Unalima au kufuga nini?",crop:"Mazao",livestock:"Mifugo",continue:"Endelea",back:"Rudi",step:"Hatua"}
+    en:{label:"English",country:"Select Your Country",region:"Select Your Region",type:"What Are You Farming?",crop:"Crop",livestock:"Livestock",continue:"Continue",back:"Back",step:"Step",countryLabel:"Country",languageLabel:"Language",homeLabel:"Home"},
+    fr:{label:"Français",country:"Sélectionnez votre pays",region:"Sélectionnez votre région",type:"Que cultivez-vous ou élevez-vous ?",crop:"Culture",livestock:"Élevage",continue:"Continuer",back:"Retour",step:"Étape",countryLabel:"Pays",languageLabel:"Langue",homeLabel:"Accueil"},
+    ar:{label:"العربية",country:"اختر بلدك",region:"اختر منطقتك",type:"ماذا تزرع أو تربي؟",crop:"محاصيل",livestock:"الثروة الحيوانية",continue:"متابعة",back:"رجوع",step:"الخطوة",countryLabel:"البلد",languageLabel:"اللغة",homeLabel:"الرئيسية"},
+    pt:{label:"Português",country:"Selecione o seu país",region:"Selecione a sua região",type:"O que você cultiva ou cria?",crop:"Cultivo",livestock:"Pecuária",continue:"Continuar",back:"Voltar",step:"Etapa",countryLabel:"País",languageLabel:"Idioma",homeLabel:"Início"},
+    sw:{label:"Kiswahili",country:"Chagua nchi yako",region:"Chagua eneo lako",type:"Unalima au kufuga nini?",crop:"Mazao",livestock:"Mifugo",continue:"Endelea",back:"Rudi",step:"Hatua",countryLabel:"Nchi",languageLabel:"Lugha",homeLabel:"Nyumbani"}
   };
   function T(section,key,vars,fallback){ if(window.GOA_I18N&&window.GOA_I18N.t) return window.GOA_I18N.t(section,key,vars); return fallback||key; }
   function locale(){ return LOCALES[state.language] || LOCALES.en; }
@@ -118,25 +118,23 @@
     cs.onchange=function(){
       state.country=this.value; state.region=null; state.commodity=null;
       try{localStorage.setItem("fpc_country",state.country)}catch(e){}
-      if (/^\/[a-z]{2}\/(en|fr|ar|pt|sw)\/farm-profit-calculator\//.test(window.location.pathname)) {
-        var c=currentCountryObj();
-        window.location.href="/"+String(c.code).toLowerCase()+"/"+state.language+"/farm-profit-calculator/";
-      } else render();
+      var c=currentCountryObj();
+      // Country selection always gets its own country/language URL for SEO and shareable localized pages.
+      window.location.href="/"+String(c.code).toLowerCase()+"/"+state.language+"/farm-profit-calculator/";
     };
     ls.onchange=function(){
       state.language=this.value;
       try{localStorage.setItem("goa_language",state.language)}catch(e){}
       document.documentElement.lang=state.language; document.documentElement.dir=state.language==="ar"?"rtl":"ltr";
       var countryCode = String(currentCountryObj().code).toLowerCase();
-      if (window.location.pathname.indexOf("/farm-profit-calculator/") !== -1) {
-        window.location.href = "/" + countryCode + "/" + state.language + "/farm-profit-calculator/";
-      } else { render(); }
+      // Language selection always gets a country + language URL for SEO and shareable localized pages.
+      window.location.href = "/" + countryCode + "/" + state.language + "/farm-profit-calculator/";
     };
     document.documentElement.lang=state.language; document.documentElement.dir=state.language==="ar"?"rtl":"ltr";
   }
   function localizeToolbar(){
     var l=locale(); var ls=document.getElementById("calc-language-switcher"); var cs=document.getElementById("calc-country-switcher");
-    if(ls) ls.setAttribute("aria-label",l.label); if(cs) cs.setAttribute("aria-label",l.country);
+    if(ls) ls.setAttribute("aria-label",l.languageLabel || l.label); if(cs) cs.setAttribute("aria-label",l.countryLabel || l.country);
   }
 
   function render() {
@@ -317,7 +315,7 @@
   function renderSizeStep() {
     var isCrop = state.commodity.unit_mode === "crop";
     var animalLabel = state.commodity.unit_label.charAt(0).toUpperCase() + state.commodity.unit_label.slice(1);
-    stepHeader(root, locale().step + " 5 of 8", isCrop ? T("calc","farmSize") : "How Many " + animalLabel + "s?");
+    stepHeader(root, locale().step + " 5 of 8", isCrop ? T("calc","farmSize") : T("calc","quantity") + " " + animalLabel + "s?");
 
     if (isCrop) {
       // Land unit switcher
@@ -884,7 +882,7 @@
     // --- DISCLAIMER ---
     var disclaimer = document.createElement("div");
     disclaimer.className = "calc-disclaimer";
-    disclaimer.innerHTML = "<strong>Important disclaimer:</strong> All figures are estimates based on reference data and your inputs. They are not guaranteed returns. Actual farm performance depends on yield, input prices, weather, pests, diseases, labour availability, transportation and market conditions. Always verify local prices and costs before making any investment decision. <strong>GoOrganicAfrica accepts no liability for financial decisions made based on these estimates.</strong>";
+    disclaimer.innerHTML = "<strong>" + T("calc","importantDisclaimer") + ":</strong> " + T("calc","disclaimerText") + "";
     root.appendChild(disclaimer);
 
     // --- ACTION BUTTONS ---
@@ -907,6 +905,12 @@
     editBtn.className = "btn btn-primary";
     editBtn.textContent = T("calc","editInputs");
     editBtn.onclick = function () { goToStep("size"); };
+    var homeBtn = document.createElement("a");
+    homeBtn.className = "btn btn-outline";
+    homeBtn.href = "/";
+    homeBtn.textContent = T("common","Home",{},"Home");
+    homeBtn.setAttribute("aria-label", T("common","Home",{},"Home"));
+    actions.appendChild(homeBtn);
     actions.appendChild(restartBtn);
     actions.appendChild(editBtn);
     root.appendChild(actions);

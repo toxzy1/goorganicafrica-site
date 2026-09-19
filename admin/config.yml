@@ -55,6 +55,27 @@ collections:
               - {label: "Default Meta Description", name: "default_meta_description", widget: "text"}
               - {label: "Default Keywords", name: "default_keywords", widget: "list"}
 
+  - name: "categories"
+    label: "🗂️ Global Agricultural Categories"
+    files:
+      - label: "Category Registry"
+        name: "categories"
+        file: "src/_data/categories.json"
+        editor: {preview: false}
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "URL Slug", name: "slug", widget: "string"}
+              - {label: "Parent Category", name: "parent", widget: "string", required: false}
+              - {label: "Active?", name: "active", widget: "boolean", default: true}
+              - {label: "Display Order", name: "order", widget: "number", value_type: "int"}
+              - {label: "Description", name: "description", widget: "text", required: false}
+              - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+              - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
+
   - name: "ebooks"
     label: "📚 Ebooks & Selar Products"
     folder: "src/ebooks"
@@ -147,6 +168,7 @@ collections:
               - {label: "URL Slug", name: "slug", widget: "string", required: false}
               - {label: "Default Language", name: "default_language", widget: "string", default: "en"}
               - {label: "Agricultural Data Source Profile", name: "source_profile", widget: "string", required: false, hint: "Automatic routing profile used to match this country to its configured government/market/agricultural data sources."}
+              - {label: "Directory Only", name: "directory_only", widget: "boolean", default: false, required: false, hint: "Keep ON until country-specific regional, yield and price data is fully configured."}
 
   - name: "calculator_regions"
     label: "📍 Calculator: States, Regions & Provinces"

@@ -1,7 +1,7 @@
 ---
 layout: layouts/calc-base.njk
-title: Free Farm Profit Calculator — {{ country.name }} ({{ language.name }})
-description: Free farm profit calculator for {{ country.name }} with local currency, regional settings, crops, livestock and agricultural reference data.
+title: {{ locale.language.pageTitle }} — {{ locale.country.name }}
+description: Farm profit calculator for {{ locale.country.name }} with local currency, regional settings, crops, livestock and agricultural reference data.
 pagination:
   data: calculatorLocales
   size: 1
@@ -9,16 +9,17 @@ pagination:
 permalink: "/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-profit-calculator/"
 ---
 <div style="background:var(--green-deep);color:var(--white);padding:20px 20px 0;text-align:center;">
-  <h1 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:0 0 6px;color:var(--white);">Free Farm Profit Calculator — {{ locale.country.name }}</h1>
-  <h2 style="font-family:var(--font-body);font-size:0.88rem;font-weight:400;margin:0 0 16px;opacity:0.85;color:var(--white);">Country: {{ locale.country.name }} · Language: {{ locale.language.name }} · Currency: {{ locale.country.currency }}</h2>
+  <h1 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:0 0 6px;color:var(--white);">{{ locale.language.pageTitle }} — {{ locale.country.name }}</h1>
+  <h2 style="font-family:var(--font-body);font-size:0.88rem;font-weight:400;margin:0 0 16px;opacity:0.85;color:var(--white);">{{ locale.language.pageSubtitle }} · {{ locale.country.name }} · {{ locale.country.currency }}</h2>
 </div>
 <div class="calc-app" id="calc-app">
   <div class="calc-topbar">
-    <a class="calc-brand" href="/farm-profit-calculator/"><img src="/images/brand-mark.svg" alt="" width="24" height="24">Farm Profit Calculator</a>
+    <a class="calc-brand" href="/"><img src="/images/brand-mark.svg" alt="" width="24" height="24">Farm Profit Calculator</a>
+    <a class="calc-home-link" href="/" aria-label="{{ locale.language.homeLabel }}">⌂ {{ locale.language.homeLabel }}</a>
     <div class="calc-toolbar">
-      <label class="calc-select-label" for="calc-country-switcher">Country</label>
+      <label class="calc-select-label" for="calc-country-switcher">{{ locale.language.countryLabel }}</label>
       <select id="calc-country-switcher" class="calc-toolbar-select" aria-label="Calculator country"></select>
-      <label class="calc-select-label" for="calc-language-switcher">Language</label>
+      <label class="calc-select-label" for="calc-language-switcher">{{ locale.language.languageLabel }}</label>
       <select id="calc-language-switcher" class="calc-toolbar-select" aria-label="Calculator language"></select>
     </div>
   </div>
