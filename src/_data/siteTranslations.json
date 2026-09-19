@@ -1,38 +1,36 @@
 {
-  "languages": {
-    "languages": [
-      {
-        "code": "en",
-        "name": "English",
-        "native": "English",
-        "dir": "ltr"
-      },
-      {
-        "code": "fr",
-        "name": "French",
-        "native": "Français",
-        "dir": "ltr"
-      },
-      {
-        "code": "ar",
-        "name": "Arabic",
-        "native": "العربية",
-        "dir": "rtl"
-      },
-      {
-        "code": "pt",
-        "name": "Portuguese",
-        "native": "Português",
-        "dir": "ltr"
-      },
-      {
-        "code": "sw",
-        "name": "Swahili",
-        "native": "Kiswahili",
-        "dir": "ltr"
-      }
-    ]
-  },
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "native": "English",
+      "dir": "ltr"
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "native": "Français",
+      "dir": "ltr"
+    },
+    {
+      "code": "ar",
+      "name": "Arabic",
+      "native": "العربية",
+      "dir": "rtl"
+    },
+    {
+      "code": "pt",
+      "name": "Portuguese",
+      "native": "Português",
+      "dir": "ltr"
+    },
+    {
+      "code": "sw",
+      "name": "Swahili",
+      "native": "Kiswahili",
+      "dir": "ltr"
+    }
+  ],
   "en": {
     "common": {
       "Home": "Home"
