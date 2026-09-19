@@ -40,11 +40,14 @@ jobs:
           cp -a .extract/.eleventy.js .
           cp -a .extract/admin .
           cp -a .extract/config .
-          cp -a .extract/data .
           cp -a .extract/scripts .
           cp -a .extract/src .
           cp -a .extract/.gitignore .
           cp -a .extract/package.json .
+
+          if [ -d ".extract/data" ]; then
+            cp -a .extract/data .
+          fi
 
           cp -a .extract/README.md . 2>/dev/null || true
           cp -a .extract/*.md . 2>/dev/null || true
