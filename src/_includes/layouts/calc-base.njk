@@ -63,6 +63,9 @@
   </script>
 
   {% if jsonLd %}<script type="application/ld+json">{{ jsonLd | safe }}</script>{% endif %}
+  <script>window.GOA_LANGUAGES={{ siteLanguages.languages | dump | safe }}; window.GOA_TRANSLATIONS={{ siteTranslations | dump | safe }};</script>
+  <script src="/js/language-switcher.js" defer></script>
+
   {% if site.adsense.enabled and site.adsense.publisher_id and site.adsense.auto_ads %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.publisher_id }}" crossorigin="anonymous"></script>
   {% endif %}
