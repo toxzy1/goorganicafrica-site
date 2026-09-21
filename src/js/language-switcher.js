@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  var LANGS=Array.isArray(window.GOA_LANGUAGES)?window.GOA_LANGUAGES:[];
+  var LANGS=Array.isArray(window.GOA_LANGUAGES)?window.GOA_LANGUAGES.filter(function(x){return x && x.code && x.enabled!==false;}):[];
   var DICT=window.GOA_TRANSLATIONS||{};
   function lang(){try{return localStorage.getItem('goa_language')||'en'}catch(e){return 'en'}}
   function setLang(code){
@@ -36,7 +36,7 @@
       var v=lookup(trim,code); if(v&&v!==trim)n.nodeValue=raw.replace(trim,v);
     });
   }
-  function refresh(){var code=setLang(lang()); translate(document.body,code); var s=document.getElementById('site-language-select'); if(s)s.value=code;}
+  function refresh(){var code=setLang(lang()); translate(document.body,code); var s=document.getElementById('site-language-select'); if(s)s.value=code; document.dispatchEvent(new CustomEvent('goa:languagechange',{detail:{language:code}}));}
   window.GOA_I18N={lang:lang,setLanguage:setLang,t:function(section,key,vars){
     var code=lang(),d=DICT[code]||DICT.en||{},v=(d[section]||{})[key]||((DICT.en||{})[section]||{})[key]||key;
     vars=vars||{}; return String(v).replace(/\{(\w+)\}/g,function(_,k){return vars[k]===undefined?'':vars[k]});

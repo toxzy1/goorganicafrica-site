@@ -23,18 +23,23 @@ window.FarmAdviceEngine = (function () {
 
     // 0. DATA-DRIVEN ADVICE: new crops/livestock can supply recommendations
     // through CMS-managed enterprise fields without changing this JavaScript.
+    var currentLang = window.GOA_I18N && window.GOA_I18N.lang ? window.GOA_I18N.lang() : "en";
     var configuredAdvice = Array.isArray(commodity.advice) ? commodity.advice : [];
     var configuredRecommendations = Array.isArray(commodity.recommendations) ? commodity.recommendations : [];
     if (countryData && Array.isArray(countryData.recommendations)) {
       configuredRecommendations = configuredRecommendations.concat(countryData.recommendations);
     }
     configuredAdvice.forEach(function (item) {
-      if (item && item.heading && item.body) advice.push({
+      if (!item || (item.language && item.language !== currentLang)) return;
+      if (item.heading && item.body) advice.push({
         type: item.type || "tip", icon: item.icon || "💡", heading: item.heading, body: item.body
       });
     });
-    configuredRecommendations.forEach(function (text) {
-      if (text) advice.push({type:"tip", icon:"💡", heading:"Practical recommendation", body:String(text)});
+    configuredRecommendations.forEach(function (item) {
+      if (!item) return;
+      if (typeof item === "object" && item.language && item.language !== currentLang) return;
+      var text = typeof item === "object" ? item.text : item;
+      if (text) advice.push({type:"tip", icon:"💡", heading:(window.GOA_I18N ? window.GOA_I18N.t("advice","practicalRecommendation") : "Practical recommendation"), body:String(text)});
     });
 
     // 1. PROFIT/LOSS SUMMARY ADVICE

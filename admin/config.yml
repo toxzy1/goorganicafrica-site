@@ -203,6 +203,23 @@ collections:
       - {label: "Cycle (days)", name: "cycle_days", widget: "number", value_type: "int"}
       - {label: "Cycle Label", name: "cycle_label", widget: "string"}
       - {label: "Related eBook Slug", name: "related_ebook_slug", widget: "string", required: false}
+      - label: "Enterprise Advice & Recommendations (Optional)"
+        name: "advice"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Language Code", name: "language", widget: "string", default: "en", hint: "Use the language code from the Language Registry, e.g. en, fr, ar, pt, sw."}
+          - {label: "Type", name: "type", widget: "select", options: ["tip", "info", "warning", "danger", "success"], default: "tip"}
+          - {label: "Icon", name: "icon", widget: "string", required: false}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Body", name: "body", widget: "text"}
+      - label: "Practical Recommendations (Optional)"
+        name: "recommendations"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Language Code", name: "language", widget: "string", default: "en"}
+          - {label: "Recommendation", name: "text", widget: "text"}
       - label: "Country Data & Prices"
         name: "country_data"
         widget: "list"
@@ -346,6 +363,7 @@ collections:
                   - {label: "Start New Calculation", name: "startNew", widget: "string"}
                   - {label: "Edit My Inputs", name: "editInputs", widget: "string"}
                   - {label: "Important disclaimer", name: "importantDisclaimer", widget: "string"}
+                  - {label: "Disclaimer Text", name: "disclaimerText", widget: "text"}
                   - {label: "Advertisement", name: "advertisement", widget: "string"}
               - label: "Advice Headings"
                 name: "advice"

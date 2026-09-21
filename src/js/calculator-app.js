@@ -137,6 +137,11 @@
     if(ls) ls.setAttribute("aria-label",l.languageLabel || l.label); if(cs) cs.setAttribute("aria-label",l.countryLabel || l.country);
   }
 
+  document.addEventListener('goa:languagechange', function () {
+    if (state && state.stepIndex === 6) { render(); }
+    else { render(); }
+  });
+
   function render() {
     localizeToolbar();
     var stepName = STEPS[state.stepIndex];
