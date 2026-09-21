@@ -18,7 +18,7 @@ jobs:
         run: |
           set -e
 
-          ZIP_FILE="./GoOrganicAfrica-LOCALIZATION-FIX (1).zip"
+          ZIP_FILE="./GoOrganicAfrica-LOCALIZATION-FIX (1) (1).zip"
 
           if [ ! -f "$ZIP_FILE" ]; then
             echo "ERROR: $ZIP_FILE was not found in repository root."
