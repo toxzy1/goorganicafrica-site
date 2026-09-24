@@ -4,16 +4,16 @@
       <img class="brand-mark" src="/images/brand-mark.svg" alt="" width="28" height="28">
       {{ site.name }}
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Toggle menu" data-i18n-aria-label="common.toggleMenu" aria-expanded="false">
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/farm-profit-calculator/">Calculator</a></li>
-      <li><a href="/ebooks/">eBooks</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/contact/">Contact</a></li>
+      <li><a href="/" data-i18n="common.home">Home</a></li>
+      <li><a href="/farm-profit-calculator/" data-i18n="common.calculator">Calculator</a></li>
+      <li><a href="/ebooks/" data-i18n="common.ebooks">eBooks</a></li>
+      <li><a href="/blog/" data-i18n="common.blog">Blog</a></li>
+      <li><a href="/about/" data-i18n="common.about">About</a></li>
+      <li><a href="/contact/" data-i18n="common.contact">Contact</a></li>
     </ul>
     {% include "partials/language-switcher.njk" %}
   </nav>

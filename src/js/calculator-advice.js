@@ -256,10 +256,11 @@ window.FarmAdviceEngine = (function () {
         // Render as the existing ebook CTA card
         var cta = document.createElement("div");
         cta.className = "calc-ebook-cta";
+        var translate = window.GOA_I18N ? window.GOA_I18N.t : function (_section, key) { return key; };
         cta.innerHTML =
-          "<h4>" + item.icon + " Want to go deeper?</h4>" +
-          "<p>Get the complete step-by-step guide for this enterprise — written from real research and farm experience.</p>" +
-          '<a class="btn btn-primary btn-sm" href="/ebooks/' + item.ebookSlug + '/"><span>Get the Complete Guide</span></a>';
+          "<h4>" + item.icon + " " + translate("calc", "ebookHeading") + "</h4>" +
+          "<p>" + translate("calc", "ebookBody") + "</p>" +
+          '<a class="btn btn-primary btn-sm" href="/ebooks/' + item.ebookSlug + '/"><span>' + translate("calc", "ebookCta") + "</span></a>";
         containerEl.appendChild(cta);
         return;
       }

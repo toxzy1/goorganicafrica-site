@@ -1,50 +1,19 @@
-(function(){
-  'use strict';
-  var LANGS=Array.isArray(window.GOA_LANGUAGES)?window.GOA_LANGUAGES.filter(function(x){return x && x.code && x.enabled!==false;}):[];
-  var DICT=window.GOA_TRANSLATIONS||{};
-  function lang(){try{return localStorage.getItem('goa_language')||'en'}catch(e){return 'en'}}
-  function setLang(code){
-    if(!DICT[code]) code='en';
-    try{localStorage.setItem('goa_language',code)}catch(e){}
-    var m=LANGS.find(function(x){return x.code===code})||{dir:code==='ar'?'rtl':'ltr'};
-    document.documentElement.lang=code; document.documentElement.dir=m.dir||'ltr'; return code;
+(function () {
+  "use strict";
+  var languages = Array.isArray(window.GOA_LANGUAGES) ? window.GOA_LANGUAGES.filter(function (item) { return item && item.code && item.enabled !== false; }) : [];
+  var dictionary = window.GOA_TRANSLATIONS || {};
+  function currentLanguage() { try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; } catch (_) { return document.documentElement.lang || "en"; } }
+  function metadata(code) { return languages.find(function (item) { return item.code === code; }) || languages.find(function (item) { return item.code === "en"; }) || { code: "en", dir: "ltr" }; }
+  function resolve(code, path) { var parts = path.split("."); var value = dictionary[code] || {}; var english = dictionary.en || {}; parts.forEach(function (part) { value = value && value[part]; english = english && english[part]; }); return value === undefined || value === null || value === "" ? english : value; }
+  function interpolate(value, variables) { return String(value).replace(/\{(\w+)\}/g, function (_, key) { return variables && variables[key] !== undefined ? variables[key] : ""; }); }
+  function apply(root, code) {
+    if (!root) return;
+    root.querySelectorAll("[data-i18n]").forEach(function (element) { var value = resolve(code, element.getAttribute("data-i18n")); if (value !== undefined) element.textContent = value; });
+    root.querySelectorAll("[data-i18n-placeholder]").forEach(function (element) { var value = resolve(code, element.getAttribute("data-i18n-placeholder")); if (value !== undefined) element.placeholder = value; });
+    root.querySelectorAll("[data-i18n-aria-label]").forEach(function (element) { var value = resolve(code, element.getAttribute("data-i18n-aria-label")); if (value !== undefined) element.setAttribute("aria-label", value); });
   }
-  function lookup(text,code){
-    var target=DICT[code]||{}, base=DICT.en||{};
-    var sections=['common','calc','analysis','advice'];
-    for(var i=0;i<sections.length;i++){
-      var sec=sections[i], b=base[sec]||{}, t=target[sec]||{};
-      for(var key in b){
-        if(Object.prototype.hasOwnProperty.call(b,key) && b[key]===text && Object.prototype.hasOwnProperty.call(t,key)) return t[key];
-      }
-    }
-    return null;
-  }
-  function translate(root,code){
-    if(!root)return;
-    root.querySelectorAll('[data-i18n]').forEach(function(el){
-      var key=el.getAttribute('data-i18n'), d=DICT[code]||{}, v=null;
-      ['common','calc','analysis','advice'].some(function(sec){v=(d[sec]||{})[key];return v!==undefined;});
-      if(v!==undefined && v!==null) el.textContent=v;
-    });
-    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT), nodes=[];
-    while(walker.nextNode()) nodes.push(walker.currentNode);
-    nodes.forEach(function(n){
-      var p=n.parentElement;
-      if(!p||['SCRIPT','STYLE','OPTION','TEXTAREA','INPUT'].indexOf(p.tagName)>=0)return;
-      var raw=n.nodeValue, trim=raw.trim(); if(!trim)return;
-      var v=lookup(trim,code); if(v&&v!==trim)n.nodeValue=raw.replace(trim,v);
-    });
-  }
-  function refresh(){var code=setLang(lang()); translate(document.body,code); var s=document.getElementById('site-language-select'); if(s)s.value=code; document.dispatchEvent(new CustomEvent('goa:languagechange',{detail:{language:code}}));}
-  window.GOA_I18N={lang:lang,setLanguage:setLang,t:function(section,key,vars){
-    var code=lang(),d=DICT[code]||DICT.en||{},v=(d[section]||{})[key]||((DICT.en||{})[section]||{})[key]||key;
-    vars=vars||{}; return String(v).replace(/\{(\w+)\}/g,function(_,k){return vars[k]===undefined?'':vars[k]});
-  },refresh:refresh,translate:translate};
-  document.addEventListener('DOMContentLoaded',function(){
-    var s=document.getElementById('site-language-select');
-    if(s){s.innerHTML=''; LANGS.forEach(function(l){var o=document.createElement('option');o.value=l.code;o.textContent=l.native;o.selected=l.code===lang();s.appendChild(o);}); s.addEventListener('change',function(){setLang(this.value); refresh();});}
-    refresh();
-    var obs=new MutationObserver(function(){translate(document.body,lang());}); obs.observe(document.body,{childList:true,subtree:true});
-  });
-})();
+  function setLanguage(requested) { var code = dictionary[requested] ? requested : "en"; var meta = metadata(code); try { localStorage.setItem("goa_language", code); } catch (_) {} document.documentElement.lang = code; document.documentElement.dir = meta.dir || "ltr"; return code; }
+  function refresh() { var code = setLanguage(currentLanguage()); apply(document.body, code); var selector = document.getElementById("site-language-select"); if (selector) selector.value = code; document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } })); }
+  window.GOA_I18N = { lang: currentLanguage, setLanguage: setLanguage, t: function (section, key, variables) { return interpolate(resolve(currentLanguage(), section + "." + key), variables); }, refresh: refresh, translate: apply };
+  document.addEventListener("DOMContentLoaded", function () { var selector = document.getElementById("site-language-select"); if (selector) { selector.innerHTML = ""; languages.forEach(function (item) { var option = document.createElement("option"); option.value = item.code; option.textContent = item.native; selector.appendChild(option); }); selector.addEventListener("change", function () { setLanguage(this.value); refresh(); }); } refresh(); });
+}());

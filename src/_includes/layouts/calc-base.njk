@@ -64,15 +64,15 @@
 
   {% if jsonLd %}<script type="application/ld+json">{{ jsonLd | safe }}</script>{% endif %}
   <script>window.GOA_LANGUAGES={{ siteLanguages.languages | dump | safe }}; window.GOA_TRANSLATIONS={{ siteTranslations | dump | safe }};</script>
-  <script src="/js/language-switcher.js" defer></script>
+  <script src="/js/language-switcher.js"></script>
 
   {% if site.adsense.enabled and site.adsense.publisher_id and site.adsense.auto_ads %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.publisher_id }}" crossorigin="anonymous"></script>
   {% endif %}
 </head>
 <body style="background:var(--white);">
-  <a class="skip-link" href="#calc-root">Skip to calculator</a>
+  <a class="skip-link" href="#calc-root" data-i18n="common.skipToContent">Skip to calculator</a>
   {{ content | safe }}
-  <noscript><p style="padding:32px;text-align:center">Please enable JavaScript to use this calculator.</p></noscript>
+  <noscript><p style="padding:32px;text-align:center" data-i18n="calc.calculatorLoadError">Please enable JavaScript to use this calculator.</p></noscript>
 </body>
 </html>
