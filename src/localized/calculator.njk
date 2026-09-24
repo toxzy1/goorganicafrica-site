@@ -16,15 +16,15 @@ defaultLanguage: "{{ country.default_language or 'en' }}"
 </div>
 <div class="calc-app" id="calc-app">
   <div class="calc-topbar">
-    <a class="calc-brand" href="/farm-profit-calculator/"><img src="/images/brand-mark.svg" alt="" width="24" height="24">Farm Profit Calculator</a>
+    <a class="calc-brand" href="/farm-profit-calculator/"><img src="/images/brand-mark.svg" alt="" width="24" height="24" data-i18n="common.calculator">Farm Profit Calculator</a>
     <div class="calc-toolbar">
-      <label class="calc-select-label" for="calc-country-switcher">Country</label>
+      <label class="calc-select-label" for="calc-country-switcher" data-i18n="calc.country">Country</label>
       <select id="calc-country-switcher" class="calc-toolbar-select" aria-label="Calculator country"></select>
-      <label class="calc-select-label" for="calc-language-switcher">Language</label>
+      <label class="calc-select-label" for="calc-language-switcher" data-i18n="common.language">Language</label>
       <select id="calc-language-switcher" class="calc-toolbar-select" aria-label="Calculator language"></select>
     </div>
   </div>
-  <div class="calc-shell" id="calc-root"><p style="color:var(--ink-soft);padding:40px 0;text-align:center;">Loading calculator&hellip;</p></div>
+  <div class="calc-shell" id="calc-root"><p style="color:var(--ink-soft);padding:40px 0;text-align:center;" data-i18n="common.loading">Loading calculator&hellip;</p></div>
 </div>
 <script>window.__CALC_DATA__={commodities:{{ calculatorCommodities | dump | safe }},countries:{{ calculator.countries | dump | safe }},regions:{{ calculator.regions | dump | safe }},defaultCountry:"{{ country.code }}",defaultLanguage:"{{ country.default_language or 'en' }}"};</script>
 <script src="/js/calculator-engine.js"></script><script src="/js/calculator-advice.js"></script><script src="/js/calculator-app.js"></script>
