@@ -447,11 +447,6 @@
     }
     root.appendChild(refBox);
 
-    /* translated reference box */
-    if (false) {
-      refBox.innerHTML = "Reference: <strong>" + cd.output_low + " \u2013 " + cd.output_high + "</strong> " + state.commodity.output_label + " (typical: " + cd.output_expected + ")<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>";
-    }
-
     var toggleGroup = document.createElement("div");
     toggleGroup.className = "calc-toggle-group";
     var btnRec = document.createElement("button");
@@ -480,7 +475,7 @@
     var field = document.createElement("div");
     field.className = "calc-field";
     var label = document.createElement("label");
-    label.textContent = isRecurring ? state.commodity.output_label ? state.commodity.output_label : T("calc", "yieldInput", {unit: cd.yield_unit, area: LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area"});
+    label.textContent = isRecurring ? localizedDataLabel(state.commodity.output_label || "") : T("calc", "yieldInput", {unit: localizedDataLabel(cd.yield_unit), area: LAND_UNITS[state.landUnit] ? T("calc", state.landUnit === "hectare" ? "hectares" : state.landUnit === "acre" ? "acres" : "plots").toLowerCase() : "area"});
     field.appendChild(label);
     var input = document.createElement("input");
     input.type = "number";
@@ -509,9 +504,9 @@
     var priceLabel, defaultPrice;
 
     if (mode === "crop") {
-      priceLabel = T("calc", "sellingPriceUnit", {currency: currency, unit: "per kg"});
+      priceLabel = T("calc", "sellingPriceUnit", {currency: currency, unit: localizedDataLabel("per kg")});
       defaultPrice = cd.price_expected;
-      refBox.innerHTML = T("calc", "referencePriceRange", {low: fmtMoney(cd.price_low, currency), high: fmtMoney(cd.price_high, currency), unit: cd.price_unit, source: cd.source, date: cd.as_of});
+      refBox.innerHTML = T("calc", "referencePriceRange", {low: fmtMoney(cd.price_low, currency), high: fmtMoney(cd.price_high, currency), unit: localizedDataLabel(cd.price_unit), source: cd.source, date: cd.as_of});
     } else if (mode === "livestock_unit") {
       priceLabel = T("calc", "sellingPriceUnit", {currency: currency, unit: cd.price_unit});
       defaultPrice = cd.price_per_unit;
@@ -731,7 +726,7 @@
     try {
       input = buildEngineInput();
     } catch (e) {
-      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">Error preparing inputs: ' + e.message + '. Please go back and check your entries.</p>';
+      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">' + T("calc", "inputError") + '</p>';
       return;
     }
 
@@ -740,7 +735,7 @@
     try {
       scenarios = engine.calculateScenarios(input, 15);
     } catch (e) {
-      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">Calculation error: ' + e.message + '. Please go back and try again.</p>';
+      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">' + T("calc", "calculationError") + '</p>';
       return;
     }
 
