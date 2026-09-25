@@ -6,9 +6,12 @@
   function metadata(code) { return languages.find(function (item) { return item.code === code; }) || languages.find(function (item) { return item.code === "en"; }) || { code: "en", dir: "ltr" }; }
   function resolve(code, path) { var parts = path.split("."); var value = dictionary[code] || {}; var english = dictionary.en || {}; parts.forEach(function (part) { value = value && value[part]; english = english && english[part]; }); return value === undefined || value === null || value === "" ? english : value; }
   function interpolate(value, variables) { return String(value).replace(/\{(\w+)\}/g, function (_, key) { return variables && variables[key] !== undefined ? variables[key] : ""; }); }
+  function varsFor(element) {
+    try { return JSON.parse(element.getAttribute("data-i18n-vars") || "{}"); } catch (_) { return {}; }
+  }
   function apply(root, code) {
     if (!root) return;
-    root.querySelectorAll("[data-i18n]").forEach(function (element) { var value = resolve(code, element.getAttribute("data-i18n")); if (value !== undefined) element.textContent = value; });
+    root.querySelectorAll("[data-i18n]").forEach(function (element) { var value = resolve(code, element.getAttribute("data-i18n")); if (value !== undefined) element.textContent = interpolate(value, varsFor(element)); });
     root.querySelectorAll("[data-i18n-placeholder]").forEach(function (element) { var value = resolve(code, element.getAttribute("data-i18n-placeholder")); if (value !== undefined) element.placeholder = value; });
     root.querySelectorAll("[data-i18n-aria-label]").forEach(function (element) { var value = resolve(code, element.getAttribute("data-i18n-aria-label")); if (value !== undefined) element.setAttribute("aria-label", value); });
   }
