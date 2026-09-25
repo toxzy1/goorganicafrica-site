@@ -105,6 +105,21 @@
   function commodityName(c) { return T("commodityNames", c.id) || c.name; }
   function translateUnit(unit) { var map = { hectare: T("calc","hectares"), acre: T("calc","acres"), plot: T("calc","plots"), bird: "bird", head: "head", fish: "fish", goat: "goat", pig: "pig" }; return map[unit] || unit; }
   function localizedCommodity(c) { return commodityName(c); }
+  function localizedDataLabel(value) {
+    if (!value) return value;
+    var lang = window.GOA_I18N ? window.GOA_I18N.lang() : "en";
+    var maps = {
+      en: {"Number of birds":"Number of birds","Number of cattle":"Number of cattle","Number of fish stocked":"Number of fish stocked","Number of goats":"Number of goats","Number of pigs":"Number of pigs","eggs per bird per year":"eggs per bird per year","per kg":"per kg","per bird":"per bird","per head":"per head","per mature goat":"per mature goat","per pig":"per pig","per egg":"per egg"},
+      fr: {"Number of birds":"Nombre de volailles","Number of cattle":"Nombre de bovins","Number of fish stocked":"Nombre de poissons introduits","Number of goats":"Nombre de chèvres","Number of pigs":"Nombre de porcs","eggs per bird per year":"œufs par volaille et par an","per kg":"par kg","per bird":"par volaille","per head":"par tête","per mature goat":"par chèvre adulte","per pig":"par porc","per egg":"par œuf"},
+      ar: {"Number of birds":"عدد الطيور","Number of cattle":"عدد الأبقار","Number of fish stocked":"عدد الأسماك المُخزنة","Number of goats":"عدد الماعز","Number of pigs":"عدد الخنازير","eggs per bird per year":"بيض لكل طائر في السنة","per kg":"لكل كغ","per bird":"لكل طائر","per head":"لكل رأس","per mature goat":"لكل ماعز بالغ","per pig":"لكل خنزير","per egg":"لكل بيضة"},
+      pt: {"Number of birds":"Número de aves","Number of cattle":"Número de bovinos","Number of fish stocked":"Número de peixes povoados","Number of goats":"Número de cabras","Number of pigs":"Número de porcos","eggs per bird per year":"ovos por ave por ano","per kg":"por kg","per bird":"por ave","per head":"por cabeça","per mature goat":"por cabra adulta","per pig":"por porco","per egg":"por ovo"},
+      sw: {"Number of birds":"Idadi ya kuku","Number of cattle":"Idadi ya ng'ombe","Number of fish stocked":"Idadi ya samaki waliowekwa","Number of goats":"Idadi ya mbuzi","Number of pigs":"Idadi ya nguruwe","eggs per bird per year":"mayai kwa kuku kwa mwaka","per kg":"kwa kilo","per bird":"kwa kuku","per head":"kwa kichwa","per mature goat":"kwa mbuzi aliyekomaa","per pig":"kwa nguruwe","per egg":"kwa yai"}
+    };
+    var map = maps[lang] || maps.en;
+    var out = value;
+    Object.keys(map).forEach(function (key) { out = out.split(key).join(map[key]); });
+    return out;
+  }
   function locale() { return { label: (window.GOA_LANGUAGES || []).find(function (item) { return item.code === state.language; })?.native || "English", country: T("calc", "country"), region: T("calc", "region"), type: T("calc", "farmingType"), crop: T("calc", "crop"), livestock: T("calc", "livestock"), continue: T("calc", "continue"), back: T("calc", "back"), step: T("calc", "step"), countryLabel: T("calc", "country"), languageLabel: T("common", "language"), homeLabel: T("common", "home") }; }
   function setupToolbar(){
     var cs=document.getElementById("calc-country-switcher"), ls=document.getElementById("calc-language-switcher");
@@ -352,7 +367,7 @@
       var u = LAND_UNITS[state.landUnit];
       label.textContent = T("calc", "farmSizeUnit", {unit: T("calc", state.landUnit === "hectare" ? "hectares" : state.landUnit === "acre" ? "acres" : "plots").toLowerCase()});
     } else {
-      label.textContent = state.commodity.quantity_label || T("calc", "numberOf", {unit: animalLabel + "s"});
+      label.textContent = state.commodity.quantity_label ? localizedDataLabel(state.commodity.quantity_label) : T("calc", "numberOf", {unit: animalLabel + "s"});
     }
     field.appendChild(label);
 
@@ -426,7 +441,7 @@
     var refBox = document.createElement("div");
     refBox.className = "calc-reference-box";
     if (isRecurring) {
-      refBox.innerHTML = T("calc", "referenceOutput", {low: cd.output_low, high: cd.output_high, unit: state.commodity.output_label || "", expected: cd.output_expected, source: cd.source, date: cd.as_of});
+      refBox.innerHTML = T("calc", "referenceOutput", {low: cd.output_low, high: cd.output_high, unit: localizedDataLabel(state.commodity.output_label || ""), expected: cd.output_expected, source: cd.source, date: cd.as_of});
     } else {
       refBox.innerHTML = T("calc", "referenceYield", {low: cd.yield_low, high: cd.yield_high, unit: cd.yield_unit, expected: cd.yield_expected, source: cd.source, date: cd.as_of});
     }
@@ -680,7 +695,7 @@
         pricePerKg: state.priceValue,
         displayQuantity: state.quantity,
         displayUnit: LAND_UNITS[state.landUnit].abbr,
-        displayLabel: LAND_UNITS[state.landUnit].label,
+        displayLabel: T("calc", state.landUnit === "hectare" ? "hectares" : state.landUnit === "acre" ? "acres" : "plots"),
       };
     } else if (mode === "livestock_unit") {
       return {
@@ -836,7 +851,7 @@
       var cd2 = getCommodityCountryData(state.commodity, state.country);
       var bepBlock = document.createElement("div");
       bepBlock.style.cssText = "background:#edf4ff;border-left:4px solid #4a7cc7;border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:12px;";
-      var bepVars = {price:fmtMoney(result.breakEvenPrice, currency), unit:(cd2 ? cd2.price_unit || "" : ""), low:fmtMoney(cd2 && cd2.price_low ? cd2.price_low : 0, currency)};
+      var bepVars = {price:fmtMoney(result.breakEvenPrice, currency), unit:(cd2 ? localizedDataLabel(cd2.price_unit || "") : ""), low:fmtMoney(cd2 && cd2.price_low ? cd2.price_low : 0, currency)};
       var bepText = (cd2 && cd2.price_low && result.breakEvenPrice > cd2.price_low * 0.9) ? T("analysis","breakEvenLow",bepVars) : T("analysis","breakEvenBuffer",bepVars);
       bepBlock.innerHTML = '<div style="font-weight:700;color:#1a3a6b;margin-bottom:6px;font-size:0.95rem;">⚖️ ' + T("calc","breakEven") + '</div>' +
         '<p style="margin:0;font-size:0.88rem;color:var(--ink-soft);line-height:1.7;">' + bepText + "</p>";
