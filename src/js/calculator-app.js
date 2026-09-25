@@ -457,7 +457,7 @@
     var field = document.createElement("div");
     field.className = "calc-field";
     var label = document.createElement("label");
-    label.textContent = isRecurring ? state.commodity.output_label : ("Yield (" + cd.yield_unit + " per hectare — scaled to your " + (LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area") + ")");
+    label.textContent = isRecurring ? state.commodity.output_label : T("calc", "yieldInput", {unit: cd.yield_unit, area: LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area"});
     field.appendChild(label);
     var input = document.createElement("input");
     input.type = "number";
@@ -899,8 +899,8 @@
     var homeBtn = document.createElement("a");
     homeBtn.className = "btn btn-outline";
     homeBtn.href = "/";
-    homeBtn.textContent = T("common","Home",{},"Home");
-    homeBtn.setAttribute("aria-label", T("common","Home",{},"Home"));
+    homeBtn.textContent = T("common","home");
+    homeBtn.setAttribute("aria-label", T("common","home"));
     actions.appendChild(homeBtn);
     actions.appendChild(restartBtn);
     actions.appendChild(editBtn);

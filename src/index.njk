@@ -9,23 +9,23 @@ permalink: "/"
 <section class="hero" style="background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-mid) 100%); color: var(--white); padding: 64px 0 80px;">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow" style="color: var(--gold);">Free Farming Tool</span>
-      <h1 style="color: var(--white);">Know Your Farm Profit Before You Plant</h1>
+      <span class="eyebrow" style="color: var(--gold);" data-i18n="home.eyebrow">Free Farming Tool</span>
+      <h1 style="color: var(--white);" data-i18n="home.headline">Know Your Farm Profit Before You Plant</h1>
       <p class="lede" style="color: var(--white); max-width: 52ch;">
         Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.
       </p>
       <ul class="hero-bullets" style="color: var(--white);">
         <li id="hp-country-line">Covering {{ site.calculator.countryCount }} African countries{% if site.data.featuredCountryNames | length %} — including {{ site.data.featuredCountryNames | join(", ") }}{% if site.calculator.countryCount > 3 %} &amp; more{% endif %}{% endif %}</li>
-        <li>Crops, livestock &amp; more — continuously expanding</li>
-        <li>Enter farm size in acres, plots or hectares</li>
-        <li>Override any figure with your own local numbers</li>
-        <li>Conservative, Expected &amp; Optimistic profit scenarios</li>
+        <li data-i18n="home.bullet1">Crops, livestock &amp; more — continuously expanding</li>
+        <li data-i18n="home.bullet2">Enter farm size in acres, plots or hectares</li>
+        <li data-i18n="home.bullet3">Override any figure with your own local numbers</li>
+        <li data-i18n="home.bullet4">Conservative, Expected &amp; Optimistic profit scenarios</li>
       </ul>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="/farm-profit-calculator/" style="background:var(--gold);color:var(--green-deep);box-shadow:3px 3px 0 rgba(0,0,0,0.3);">
+        <a class="btn btn-primary" href="/farm-profit-calculator/" data-i18n="home.calculateCta" style="background:var(--gold);color:var(--green-deep);box-shadow:3px 3px 0 rgba(0,0,0,0.3);">
           &#9654; Calculate My Farm Profit
         </a>
-        <a class="btn btn-outline" href="/ebooks/" style="border-color:rgba(255,255,255,0.5);color:var(--white);">
+        <a class="btn btn-outline" href="/ebooks/" data-i18n="home.guidesCta" style="border-color:rgba(255,255,255,0.5);color:var(--white);">
           Browse Farming Guides
         </a>
       </div>
@@ -35,24 +35,24 @@ permalink: "/"
     <a href="/farm-profit-calculator/" style="text-decoration:none;">
       <div class="packet" style="background:var(--white); box-shadow: 8px 8px 0 rgba(0,0,0,0.25);">
         <div class="packet-header">
-          <span class="packet-batch" style="color:var(--soil);">FREE TOOL</span>
+          <span class="packet-batch" style="color:var(--soil);" data-i18n="home.freeTool">FREE TOOL</span>
           <span style="font-size:2.2rem;">&#127807;</span>
         </div>
-        <h2 class="packet-title">Farm Profit Calculator Africa</h2>
-        <p class="packet-tagline">Plan Your Farm. Calculate Your Profit.</p>
+        <h2 class="packet-title" data-i18n="home.calculatorTitle">Farm Profit Calculator Africa</h2>
+        <p class="packet-tagline" data-i18n="home.calculatorTagline">Plan Your Farm. Calculate Your Profit.</p>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin: 16px 0;">
           <div style="background:var(--sage-light);border-radius:8px;padding:10px;text-align:center;">
             <div style="font-family:var(--font-label);font-size:1.1rem;font-weight:800;color:var(--green-deep);">{{ site.calculator.cropCount }}</div>
-            <div style="font-size:0.72rem;color:var(--ink-soft);">Crops & growing</div>
+            <div style="font-size:0.72rem;color:var(--ink-soft);" data-i18n="home.cropsGrowing">Crops & growing</div>
           </div>
           <div style="background:var(--sage-light);border-radius:8px;padding:10px;text-align:center;">
             <div style="font-family:var(--font-label);font-size:1.1rem;font-weight:800;color:var(--green-deep);">{{ site.calculator.livestockCount }}</div>
-            <div style="font-size:0.72rem;color:var(--ink-soft);">Livestock & growing</div>
+            <div style="font-size:0.72rem;color:var(--ink-soft);" data-i18n="home.livestockGrowing">Livestock & growing</div>
           </div>
         </div>
         <div class="packet-footer">
-          <span class="packet-price" style="color:var(--green-mid);">100% Free</span>
-          <span class="btn btn-sm btn-primary">Open Calculator</span>
+          <span class="packet-price" style="color:var(--green-mid);" data-i18n="home.free">100% Free</span>
+          <span class="btn btn-sm btn-primary" data-i18n="home.openCalculator">Open Calculator</span>
         </div>
       </div>
     </a>
@@ -65,23 +65,23 @@ permalink: "/"
     <div class="trust-strip">
       <div class="trust-item">
         <span class="num">{{ site.calculator.enterpriseCount }}</span>
-        <span class="label">Farming enterprises</span>
+        <span class="label" data-i18n="home.enterprises">Farming enterprises</span>
       </div>
       <div class="trust-item">
         <span class="num">{{ site.calculator.directoryCountryCount }}</span>
-        <span class="label">African countries in directory</span>
+        <span class="label" data-i18n="home.directoryCountries">African countries in directory</span>
       </div>
       <div class="trust-item">
         <span class="num">{{ site.calculator.countryCount }}</span>
-        <span class="label">Calculator-ready countries</span>
+        <span class="label" data-i18n="home.readyCountries">Calculator-ready countries</span>
       </div>
       <div class="trust-item">
         <span class="num">{{ site.calculator.regionCount }}</span>
-        <span class="label">Active states / regions / provinces</span>
+        <span class="label" data-i18n="home.regions">Active states / regions / provinces</span>
       </div>
       <div class="trust-item">
         <span class="num">100%</span>
-        <span class="label">Free to use</span>
+        <span class="label" data-i18n="home.freeToUse">Free to use</span>
       </div>
     </div>
     <p style="text-align:center;margin:14px 0 0;color:var(--ink-soft);font-size:0.82rem;">Country directory records can be expanded through the CMS. Calculator-ready countries are counted separately so unavailable regional or price data is never presented as verified data.</p>
@@ -92,29 +92,29 @@ permalink: "/"
 <section class="section">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">How it works</span>
-      <h2>Three Steps to Your Farm Profit Report</h2>
-      <p class="lede">No sign-up. No payment. Just your numbers.</p>
+      <span class="eyebrow" data-i18n="home.howItWorks">How it works</span>
+      <h2 data-i18n="home.threeSteps">Three Steps to Your Farm Profit Report</h2>
+      <p class="lede" data-i18n="home.noSignup">No sign-up. No payment. Just your numbers.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
       <div style="text-align:center;padding:24px 16px;">
         <div style="font-size:2.4rem;margin-bottom:12px;">&#127758;</div>
-        <h3 style="font-size:1.1rem;margin-bottom:8px;">1. Pick Your Country & Crop</h3>
-        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;">Select your African country, your region, and the crop or livestock you plan to farm. Currency and data adjust automatically.</p>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;" data-i18n="home.step1Title">1. Pick Your Country & Crop</h3>
+        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;" data-i18n="home.step1Body">Select your African country, your region, and the crop or livestock you plan to farm. Currency and data adjust automatically.</p>
       </div>
       <div style="text-align:center;padding:24px 16px;border-left:1px solid var(--line);border-right:1px solid var(--line);">
         <div style="font-size:2.4rem;margin-bottom:12px;">&#9999;&#65039;</div>
-        <h3 style="font-size:1.1rem;margin-bottom:8px;">2. Enter Your Farm Details</h3>
-        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;">Choose farm size in acres, plots or hectares. Use our researched cost and price estimates, or enter your own local figures.</p>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;" data-i18n="home.step2Title">2. Enter Your Farm Details</h3>
+        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;" data-i18n="home.step2Body">Choose farm size in acres, plots or hectares. Use our researched cost and price estimates, or enter your own local figures.</p>
       </div>
       <div style="text-align:center;padding:24px 16px;">
         <div style="font-size:2.4rem;margin-bottom:12px;">&#128200;</div>
-        <h3 style="font-size:1.1rem;margin-bottom:8px;">3. Get Your Profit Report</h3>
-        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;">See your total investment, expected revenue, estimated profit, ROI, and break-even price — plus 3 scenarios and personalised advice.</p>
+        <h3 style="font-size:1.1rem;margin-bottom:8px;" data-i18n="home.step3Title">3. Get Your Profit Report</h3>
+        <p style="font-size:0.9rem;color:var(--ink-soft);margin:0;" data-i18n="home.step3Body">See your total investment, expected revenue, estimated profit, ROI, and break-even price — plus 3 scenarios and personalised advice.</p>
       </div>
     </div>
     <div style="text-align:center;margin-top:32px;">
-      <a class="btn btn-primary" href="/farm-profit-calculator/">Try the Calculator — It's Free</a>
+      <a class="btn btn-primary" href="/farm-profit-calculator/" data-i18n="home.tryCalculator">Try the Calculator — It's Free</a>
     </div>
   </div>
 </section>
@@ -123,9 +123,9 @@ permalink: "/"
 <section class="section section-alt">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">eBooks</span>
-      <h2>Go Deeper With Practical eBooks</h2>
-      <p class="lede">Practical, step-by-step agricultural eBooks — written from real research and farm experience.</p>
+      <span class="eyebrow" data-i18n="home.ebooksEyebrow">eBooks</span>
+      <h2 data-i18n="home.ebooksTitle">Go Deeper With Practical eBooks</h2>
+      <p class="lede" data-i18n="home.ebooksDescription">Practical, step-by-step agricultural eBooks — written from real research and farm experience.</p>
     </div>
     <div class="ebook-grid">
       {% for ebook in collections.ebooks %}
@@ -135,13 +135,13 @@ permalink: "/"
         <p class="tagline">{{ ebook.data.tagline }}</p>
         <div class="card-footer">
           <span class="price">{{ ebook.data.price | currency }}</span>
-          <span class="cta">View Guide &rarr;</span>
+          <span class="cta" data-i18n="home.viewGuide">View Guide &rarr;</span>
         </div>
       </a>
       {% endfor %}
     </div>
     <div style="text-align:center;margin-top:28px;">
-      <a class="btn btn-outline" href="/ebooks/">See All eBooks</a>
+      <a class="btn btn-outline" href="/ebooks/" data-i18n="home.allEbooks">See All eBooks</a>
     </div>
   </div>
 </section>
@@ -150,30 +150,30 @@ permalink: "/"
 <section class="section">
   <div class="container" style="display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
     <div style="flex:1;min-width:260px;">
-      <span class="eyebrow">About GoOrganicAfrica</span>
-      <h2>Built from the Farm, Not the Classroom</h2>
+      <span class="eyebrow" data-i18n="home.aboutEyebrow">About GoOrganicAfrica</span>
+      <h2 data-i18n="home.aboutTitle">Built from the Farm, Not the Classroom</h2>
       <p style="color:var(--ink-soft);">
         GoOrganicAfrica is built by Amoo Oluwatoyin Owolabi &mdash; farmer, agricultural researcher, and organic bio-fertilizer producer with a certificate in Agriculture since 2001. Every tool and guide here comes from real production experience across Nigeria, Cameroon and beyond.
       </p>
-      <a class="btn btn-outline btn-sm" href="/about/">Read More</a>
+      <a class="btn btn-outline btn-sm" href="/about/" data-i18n="home.readMore">Read More</a>
     </div>
     <div style="flex:1;min-width:220px;">
       <div class="trust-strip" style="grid-template-columns:repeat(2,1fr);">
         <div class="trust-item">
           <span class="num">{{ collections.ebooks.length }}</span>
-          <span class="label">eBooks</span>
+          <span class="label" data-i18n="home.ebooksEyebrow">eBooks</span>
         </div>
         <div class="trust-item">
           <span class="num">{{ site.calculator.countryCount }}</span>
-          <span class="label">Calculator countries</span>
+          <span class="label" data-i18n="home.calculatorCountries">Calculator countries</span>
         </div>
         <div class="trust-item">
           <span class="num">100%</span>
-          <span class="label">Farm-tested</span>
+          <span class="label" data-i18n="home.farmTested">Farm-tested</span>
         </div>
         <div class="trust-item">
           <span class="num">Free</span>
-          <span class="label">Calculator tool</span>
+          <span class="label" data-i18n="home.calculatorTool">Calculator tool</span>
         </div>
       </div>
     </div>
@@ -184,8 +184,8 @@ permalink: "/"
 <section class="section section-alt">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">From the Blog</span>
-      <h2>Farming Insights & Market Analysis</h2>
+      <span class="eyebrow" data-i18n="home.blogEyebrow">From the Blog</span>
+      <h2 data-i18n="home.blogTitle">Farming Insights & Market Analysis</h2>
       <p class="lede">Practical articles across {{ collections.blogCategories | length }} categories — written to help African farmers make better decisions.</p>
     </div>
     {% if collections.posts.length > 0 %}
@@ -197,14 +197,14 @@ permalink: "/"
           <span class="eyebrow" style="font-size:0.68rem;">{{ post.data.category }}</span>
           <h3 style="font-size:1.05rem;">{{ post.data.title }}</h3>
           <p class="tagline" style="font-size:0.88rem;">{{ post.data.description }}</p>
-          <div class="card-footer"><span style="font-size:0.8rem;color:var(--ink-soft);">Read article</span><span class="cta">&rarr;</span></div>
+          <div class="card-footer"><span style="font-size:0.8rem;color:var(--ink-soft);" data-i18n="home.readArticle">Read article</span><span class="cta">&rarr;</span></div>
         </div>
       </a>
       {% endfor %}
     </div>
-    <div style="text-align:center;margin-top:28px;"><a class="btn btn-outline btn-sm" href="/blog/">Explore All Articles</a></div>
+    <div style="text-align:center;margin-top:28px;"><a class="btn btn-outline btn-sm" href="/blog/" data-i18n="home.allArticles">Explore All Articles</a></div>
     {% else %}
-    <div class="empty-state"><p>Articles will appear here automatically when published from the admin panel.</p><a class="btn btn-outline btn-sm" href="/blog/">Explore Blog</a></div>
+    <div class="empty-state"><p data-i18n="home.articlesEmpty">Articles will appear here automatically when published from the admin panel.</p><a class="btn btn-outline btn-sm" href="/blog/">Explore Blog</a></div>
     {% endif %}
   </div>
 </section>

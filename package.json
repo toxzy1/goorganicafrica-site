@@ -8,7 +8,8 @@
     "start": "eleventy --serve",
     "check": "node scripts/check-site.js",
     "sync:data": "node scripts/sync-calculator-data.js",
-    "check:links": "node scripts/check-links.js"
+    "check:links": "node scripts/check-links.js",
+    "check:i18n": "node scripts/check-localization.js"
   },
   "keywords": [],
   "author": "",
