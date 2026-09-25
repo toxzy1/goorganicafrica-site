@@ -102,6 +102,9 @@
 
 
   function T(section, key, vars) { return window.GOA_I18N && window.GOA_I18N.t ? window.GOA_I18N.t(section, key, vars) : key; }
+  function commodityName(c) { return T("commodityNames", c.id) || c.name; }
+  function translateUnit(unit) { var map = { hectare: T("calc","hectares"), acre: T("calc","acres"), plot: T("calc","plots"), bird: "bird", head: "head", fish: "fish", goat: "goat", pig: "pig" }; return map[unit] || unit; }
+  function localizedCommodity(c) { return commodityName(c); }
   function locale() { return { label: (window.GOA_LANGUAGES || []).find(function (item) { return item.code === state.language; })?.native || "English", country: T("calc", "country"), region: T("calc", "region"), type: T("calc", "farmingType"), crop: T("calc", "crop"), livestock: T("calc", "livestock"), continue: T("calc", "continue"), back: T("calc", "back"), step: T("calc", "step"), countryLabel: T("calc", "country"), languageLabel: T("common", "language"), homeLabel: T("common", "home") }; }
   function setupToolbar(){
     var cs=document.getElementById("calc-country-switcher"), ls=document.getElementById("calc-language-switcher");
@@ -280,7 +283,7 @@
       var hasData = !!getCommodityCountryData(c, state.country);
       var card = document.createElement("div");
       card.className = "calc-option-card" + (state.commodity && state.commodity.id === c.id ? " selected" : "") + (!hasData ? " disabled" : "");
-      card.innerHTML = '<span class="emoji">' + c.icon + "</span><span>" + c.name + "</span>" +
+      card.innerHTML = '<span class="emoji">' + c.icon + "</span><span>" + localizedCommodity(c) + "</span>" +
         (!hasData ? '<span style="font-size:0.65rem;color:var(--soil);">' + T("common", "dataComingSoon") + '</span>' : "");
       if (hasData) {
         card.onclick = function () {
@@ -306,7 +309,7 @@
   function renderSizeStep() {
     var isCrop = state.commodity.unit_mode === "crop";
     var animalLabel = state.commodity.unit_label.charAt(0).toUpperCase() + state.commodity.unit_label.slice(1);
-    stepHeader(root, T("calc", "step", {current: 5, total: 8}), isCrop ? T("calc","farmSize") : T("calc","quantity") + " " + animalLabel + "s?");
+    stepHeader(root, T("calc", "step", {current: 5, total: 8}), isCrop ? T("calc","farmSize") : T("calc","quantity") + " " + (localizedCommodity(state.commodity) || animalLabel) + "?");
 
     if (isCrop) {
       // Land unit switcher
@@ -394,7 +397,7 @@
       stepHeader(root, T("calc", "step", {current: 6, total: 8}), T("calc","expectedSurvival"));
       var box = document.createElement("div");
       box.className = "calc-reference-box";
-      box.innerHTML = T("calc", "referenceSurvival", {commodity: state.commodity.name, rate: cd.survival_rate, source: cd.source});
+      box.innerHTML = T("calc", "referenceSurvival", {commodity: localizedCommodity(state.commodity), rate: cd.survival_rate, source: cd.source});
       root.appendChild(box);
 
       var field = document.createElement("div");
@@ -423,11 +426,16 @@
     var refBox = document.createElement("div");
     refBox.className = "calc-reference-box";
     if (isRecurring) {
-      refBox.innerHTML = "Reference: <strong>" + cd.output_low + " \u2013 " + cd.output_high + "</strong> " + state.commodity.output_label + " (typical: " + cd.output_expected + ")<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>";
+      refBox.innerHTML = T("calc", "referenceOutput", {low: cd.output_low, high: cd.output_high, unit: state.commodity.output_label || "", expected: cd.output_expected, source: cd.source, date: cd.as_of});
     } else {
       refBox.innerHTML = T("calc", "referenceYield", {low: cd.yield_low, high: cd.yield_high, unit: cd.yield_unit, expected: cd.yield_expected, source: cd.source, date: cd.as_of});
     }
     root.appendChild(refBox);
+
+    /* translated reference box */
+    if (false) {
+      refBox.innerHTML = "Reference: <strong>" + cd.output_low + " \u2013 " + cd.output_high + "</strong> " + state.commodity.output_label + " (typical: " + cd.output_expected + ")<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>";
+    }
 
     var toggleGroup = document.createElement("div");
     toggleGroup.className = "calc-toggle-group";
@@ -457,7 +465,7 @@
     var field = document.createElement("div");
     field.className = "calc-field";
     var label = document.createElement("label");
-    label.textContent = isRecurring ? state.commodity.output_label : T("calc", "yieldInput", {unit: cd.yield_unit, area: LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area"});
+    label.textContent = isRecurring ? state.commodity.output_label ? state.commodity.output_label : T("calc", "yieldInput", {unit: cd.yield_unit, area: LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area"});
     field.appendChild(label);
     var input = document.createElement("input");
     input.type = "number";
@@ -737,7 +745,7 @@
     summary.style.marginBottom = "16px";
     summary.innerHTML =
       '<div class="calc-step-label">' + T("calc", "profitReport") + '</div>' +
-      '<h2 class="calc-step-title" style="margin-bottom:4px;">' + state.commodity.name + "</h2>" +
+      '<h2 class="calc-step-title" style="margin-bottom:4px;">' + localizedCommodity(state.commodity) + "</h2>" +
       '<p style="color:var(--ink-soft);font-size:0.9rem;">' +
         currentCountryObj().name + (state.region ? " \u2014 " + state.region : "") +
         " \u00b7 " + displayQty +
