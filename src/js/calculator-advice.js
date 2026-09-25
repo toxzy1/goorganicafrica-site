@@ -38,6 +38,11 @@ window.FarmAdviceEngine = (function () {
     var tips = {tomato:["🍅","tipTomato"], cucumber:["🥒","tipCucumber"], cassava:["🍠","tipCassava"], maize:["🌽","tipMaize"], rice:["🌾","tipRice"], habanero:["🌶️","tipHabanero"], broiler:["🐔","tipBroiler"], layer:["🥚","tipLayer"], fish:["🐟","tipFish"], pig:["🐷","tipPig"], cattle:["🐄","tipCattle"], goat:["🐐","tipGoat"] };
     var tip = tips[commodity.id];
     if (tip) advice.push({ type: "tip", icon: tip[0], heading: t(tip[1] + "Title"), body: t(tip[1] + "Body") });
+    if (result.totalCost > 0) advice.push({ type: "info", icon: "🧾", heading: t("costControlTitle"), body: t("costControlBody", {cost: fmt(result.totalCost, sym)}) });
+    if (result.totalRevenue > 0) advice.push({ type: "tip", icon: "🛒", heading: t("marketTitle"), body: t("marketBody") });
+    if (result.breakEvenPrice !== null) advice.push({ type: "info", icon: "🎯", heading: t("breakEvenActionTitle"), body: t("breakEvenActionBody", {price: fmt(result.breakEvenPrice, sym)}) });
+    advice.push({ type: "tip", icon: "📒", heading: t("recordsTitle"), body: t("recordsBody") });
+    advice.push({ type: "tip", icon: "🔁", heading: t("returnVisitTitle"), body: t("returnVisitBody") });
     if (commodity.related_ebook_slug) advice.push({ type: "ebook", icon: "📗", heading: t("ebookHeading"), body: null, ebookSlug: commodity.related_ebook_slug });
     return advice;
   }
