@@ -3,7 +3,7 @@
     <div class="footer-grid">
       <div>
         <h4>{{ site.name }}</h4>
-        <p>{{ site.tagline }}. Written from real farm experience and continuous agricultural research by {{ site.author }}.</p>
+        <p data-i18n="common.footerDescription">{{ site.tagline }}. Written from real farm experience and continuous agricultural research by {{ site.author }}.</p>
       </div>
       <div>
         <h4 data-i18n="common.quickLinks">Quick Links</h4>
@@ -25,13 +25,13 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; {{ site.currentYear }} {{ site.name }}. All rights reserved.</span>
+      <span data-i18n="common.copyright" data-i18n-vars='{"year":"{{ site.currentYear }}"}'>&copy; {{ site.currentYear }} {{ site.name }}. All rights reserved.</span>
       <span>
         <a href="/privacy-policy/" style="color:#a9bfa4;text-decoration:none;" data-i18n="common.privacy">Privacy Policy</a>
         &nbsp;&middot;&nbsp;
-        Organic farming guides for Nigeria, Africa &amp; beyond.
+        <span data-i18n="common.organicGuides">Organic farming guides for Nigeria, Africa &amp; beyond.</span>
       </span>
     </div>
   </div>
-  <a href="/data-updates/">Data Sources & Updates</a>
+  <a href="/data-updates/" data-i18n="common.dataSources">Data Sources &amp; Updates</a>
 </footer>
