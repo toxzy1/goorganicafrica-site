@@ -12,10 +12,10 @@ permalink: "/"
       <span class="eyebrow" style="color: var(--gold);" data-i18n="home.eyebrow">Free Farming Tool</span>
       <h1 style="color: var(--white);" data-i18n="home.headline">Know Your Farm Profit Before You Plant</h1>
       <p class="lede" style="color: var(--white); max-width: 52ch;">
-        Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.
+        <span data-i18n="home.description">Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.</span>
       </p>
       <ul class="hero-bullets" style="color: var(--white);">
-        <li id="hp-country-line">Covering {{ site.calculator.countryCount }} African countries{% if site.data.featuredCountryNames | length %} — including {{ site.data.featuredCountryNames | join(", ") }}{% if site.calculator.countryCount > 3 %} &amp; more{% endif %}{% endif %}</li>
+        <li id="hp-country-line" data-i18n="home.countryLine" data-i18n-vars='{"count":"{{ site.calculator.countryCount }}"}'>Covering {{ site.calculator.countryCount }} African countries{% if site.data.featuredCountryNames | length %} — including {{ site.data.featuredCountryNames | join(", ") }}{% if site.calculator.countryCount > 3 %} &amp; more{% endif %}{% endif %}</li>
         <li data-i18n="home.bullet1">Crops, livestock &amp; more — continuously expanding</li>
         <li data-i18n="home.bullet2">Enter farm size in acres, plots or hectares</li>
         <li data-i18n="home.bullet3">Override any figure with your own local numbers</li>
@@ -84,7 +84,7 @@ permalink: "/"
         <span class="label" data-i18n="home.freeToUse">Free to use</span>
       </div>
     </div>
-    <p style="text-align:center;margin:14px 0 0;color:var(--ink-soft);font-size:0.82rem;">Country directory records can be expanded through the CMS. Calculator-ready countries are counted separately so unavailable regional or price data is never presented as verified data.</p>
+    <p style="text-align:center;margin:14px 0 0;color:var(--ink-soft);font-size:0.82rem;" data-i18n="home.directoryNote">Country directory records can be expanded through the CMS. Calculator-ready countries are counted separately so unavailable regional or price data is never presented as verified data.</p>
   </div>
 </section>
 
@@ -153,7 +153,7 @@ permalink: "/"
       <span class="eyebrow" data-i18n="home.aboutEyebrow">About GoOrganicAfrica</span>
       <h2 data-i18n="home.aboutTitle">Built from the Farm, Not the Classroom</h2>
       <p style="color:var(--ink-soft);">
-        GoOrganicAfrica is built by Amoo Oluwatoyin Owolabi &mdash; farmer, agricultural researcher, and organic bio-fertilizer producer with a certificate in Agriculture since 2001. Every tool and guide here comes from real production experience across Nigeria, Cameroon and beyond.
+        <span data-i18n="home.aboutDescription">GoOrganicAfrica is built by Amoo Oluwatoyin Owolabi &mdash; farmer, agricultural researcher, and organic bio-fertilizer producer with a certificate in Agriculture since 2001. Every tool and guide here comes from real production experience across Nigeria, Cameroon and beyond.</span>
       </p>
       <a class="btn btn-outline btn-sm" href="/about/" data-i18n="home.readMore">Read More</a>
     </div>
@@ -186,7 +186,7 @@ permalink: "/"
     <div class="section-head">
       <span class="eyebrow" data-i18n="home.blogEyebrow">From the Blog</span>
       <h2 data-i18n="home.blogTitle">Farming Insights & Market Analysis</h2>
-      <p class="lede">Practical articles across {{ collections.blogCategories | length }} categories — written to help African farmers make better decisions.</p>
+      <p class="lede" data-i18n="home.blogDescription">Practical articles across {{ collections.blogCategories | length }} categories — written to help African farmers make better decisions.</p>
     </div>
     {% if collections.posts.length > 0 %}
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
