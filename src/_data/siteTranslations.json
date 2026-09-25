@@ -173,7 +173,10 @@
         "blogTitle": "Farming insights & market analysis",
         "readArticle": "Read article",
         "allArticles": "Explore all articles",
-        "articlesEmpty": "Articles will appear here automatically when published from the admin panel."
+        "articlesEmpty": "Articles will appear here automatically when published from the admin panel.",
+        "directoryNote": "Our country directory can expand through the CMS. Calculator-ready countries are counted separately so regional and price data is not presented as verified when it is unavailable.",
+        "blogDescription": "Practical articles across {count} categories — covering production, farm management, markets, technology and profitable agricultural enterprise.",
+        "aboutDescription": "GoOrganicAfrica is built by Amoo Oluwatoyin Owolabi — farmer, agricultural researcher and organic bio-fertilizer producer. The platform combines practical farm experience, agricultural research and simple decision tools to help African farmers plan with clearer numbers."
       },
       "advice": {
         "adviceInsights": "Advice & insights",
@@ -183,35 +186,36 @@
         "reasonable": "Reasonable profit — but watch these risks",
         "strong": "Strong projected profit",
         "breakEvenClose": "Your break-even price is close to the market floor",
-        "lossBody": "Your projected costs ({cost}) exceed your projected revenue ({revenue}). Before committing funds, review costs, yield and the market price.",
-        "thinBody": "An ROI of {roi}% is low for agriculture. A drop in price or yield could remove your profit; reduce costs and secure better buyers.",
-        "reasonableBody": "An ROI of {roi}% is a solid return if your inputs and selling price hold. Monitor seasonal prices and input-cost inflation.",
-        "strongBody": "An ROI of {roi}% is excellent. Confirm the result at a manageable scale, secure buyers and keep detailed cost records.",
-        "breakEvenBody": "Your break-even selling price is {price}. The reference low-end market price for {commodity} is around {low}. Reduce costs or target premium buyers if prices fall.",
+        "lossBody": "Your projected costs ({cost}) are higher than projected revenue ({revenue}). Before investing, check each major cost, confirm realistic yield assumptions, verify the current selling price with buyers and test the enterprise at a manageable scale.",
+        "thinBody": "An ROI of {roi}% leaves a narrow safety margin. A modest fall in selling price, yield or survival can remove the projected profit. Reduce avoidable costs, improve production efficiency and secure buyers before scaling.",
+        "reasonableBody": "An ROI of {roi}% indicates a potentially workable margin if your production assumptions hold. Protect it by confirming input prices, monitoring yield closely, reducing post-harvest losses and checking the market before harvest.",
+        "strongBody": "An ROI of {roi}% produces a strong projected return under the current assumptions, but the calculator is a planning tool rather than a guarantee. Confirm costs and selling prices locally, secure a realistic market and keep production records so the result can be tested against actual performance.",
+        "breakEvenBody": "Your break-even selling price is {price}. The reference low-end market price is around {low} for {commodity}. Keep a safety margin: control production costs, improve quality and avoid relying on a single buyer.",
         "tipTomatoTitle": "Tomato farming tip",
-        "tipTomatoBody": "Tomato prices are highly seasonal. Consider dry-season production and rapid transport or processing to reduce post-harvest losses.",
+        "tipTomatoBody": "Tomato prices can change sharply by season and location. Plan irrigation and disease management carefully, harvest at the right maturity, reduce handling losses and identify buyers before peak harvest so more of your crop reaches the market in saleable condition.",
         "tipCucumberTitle": "Cucumber farming tip",
-        "tipCucumberBody": "Stake cucumbers to improve quality and reduce disease. Urban supermarkets, hotels and restaurants can pay a premium.",
+        "tipCucumberBody": "Use trellising or staking where practical to keep fruits clean, improve airflow and make harvesting easier. Because cucumber is highly perishable, plan regular harvesting and arrange nearby buyers such as retailers, restaurants and hotels before production peaks.",
         "tipCassavaTitle": "Cassava farming tip",
-        "tipCassavaBody": "Value addition can improve cassava returns. Early weed management is essential for protecting yield.",
+        "tipCassavaBody": "Yield is strongly affected by planting material, weed control and soil fertility during early growth. Use healthy stems, establish the crop quickly, control weeds early and consider processing or reliable bulk buyers so higher yield can translate into better returns.",
         "tipMaizeTitle": "Maize farming tip",
-        "tipMaizeBody": "Storage can improve maize returns after harvest. Use safe storage to sell when seasonal stocks are lower.",
+        "tipMaizeBody": "Profit depends on yield, input costs and the price available at harvest. Use quality seed suited to your environment, manage weeds and nutrients early, monitor pests and plan safe drying and storage so you are not forced to sell immediately when prices are weak.",
         "tipRiceTitle": "Rice farming tip",
-        "tipRiceBody": "Milling and quality grading can increase rice value. Plan drying and market access before harvest.",
+        "tipRiceBody": "Rice profitability depends on field management, harvest losses, drying, milling quality and market access. Plan water and nutrient management early, harvest at the appropriate moisture level and arrange drying, milling and buyers before the crop is ready.",
         "tipHabaneroTitle": "Habanero pepper farming tip",
-        "tipHabaneroBody": "Harvest frequently and handle peppers carefully. Secure buyers before peak harvest to manage price swings.",
+        "tipHabaneroBody": "Pepper can generate strong returns but prices and quality vary quickly. Use healthy seedlings, maintain steady irrigation and pest management, harvest frequently and handle fruits carefully. Identify buyers and packaging requirements before peak harvest.",
         "tipBroilerTitle": "Broiler farming tip",
-        "tipBroilerBody": "Feed is the main cost. Buy reliable chicks, manage feed closely and plan sales before birds reach market weight.",
+        "tipBroilerBody": "Feed is usually the largest broiler cost, so monitor feed intake, growth and mortality every day. Start with reliable chicks, maintain ventilation and biosecurity, control heat and water access, and schedule buyers before birds reach market weight.",
         "tipLayerTitle": "Layer farming tip",
-        "tipLayerBody": "Track feed conversion and egg production daily. Stable buyers and good flock health protect margins.",
+        "tipLayerBody": "Layer profitability depends on feed efficiency, flock health and consistent egg sales. Record daily feed use, egg production and mortality, maintain clean water and housing, and build dependable buyers so production is not disrupted by weak market access.",
         "tipFishTitle": "Catfish farming tip",
-        "tipFishBody": "Control feed waste and water quality. Grade fish regularly and arrange buyers before harvest.",
+        "tipFishBody": "Feed efficiency and water quality are central to fish profitability. Avoid overfeeding, monitor dissolved oxygen and water condition, grade fish when appropriate and arrange buyers before harvest. Good records help identify when growth or feed conversion begins to deteriorate.",
         "tipPigTitle": "Pig farming tip",
-        "tipPigBody": "Feed management and biosecurity are central to pig profitability. Keep strict hygiene and production records.",
+        "tipPigBody": "Feed, health and biosecurity drive pig production costs. Maintain strict hygiene, monitor growth and feed intake, prevent disease introduction and plan sales around market demand. Use reliable records before replacing commercial feed with alternative ingredients.",
         "tipCattleTitle": "Cattle fattening tip",
-        "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
+        "tipCattleBody": "Cattle fattening margins depend heavily on purchase price, weight gain, feed cost and selling timing. Buy healthy animals, assess body condition carefully, control feed waste, provide adequate water and plan the sale before costs begin to erode the expected margin.",
         "tipGoatTitle": "Goat farming tip",
-        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices."
+        "tipGoatBody": "Goat profitability is strongly influenced by purchase price, health and timing of sale. Select healthy animals, provide adequate nutrition and parasite control, keep records of growth and target periods of strong demand rather than relying only on a high seasonal price.",
+        "ebookHeading": "Explore the complete farming guide"
       }
     }
   },
@@ -344,8 +348,8 @@
       "home": {
         "eyebrow": "Free farming tool",
         "headline": "Connaissez le bénéfice de votre ferme avant de planter",
-        "description": "Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.",
-        "countryLine": "Covering {count} African countries",
+        "description": "Calculez vos coûts de production, revenus prévus, bénéfices, ROI et prix d’équilibre — gratuitement, au Nigeria et en Afrique, dans votre propre devise.",
+        "countryLine": "Couvre {count} pays africains",
         "bullet1": "Crops, livestock & more — continuously expanding",
         "bullet2": "Enter farm size in acres, plots or hectares",
         "bullet3": "Override any figure with your own local numbers",
@@ -389,7 +393,10 @@
         "blogTitle": "Farming insights & market analysis",
         "readArticle": "Read article",
         "allArticles": "Explore all articles",
-        "articlesEmpty": "Articles will appear here automatically when published from the admin panel."
+        "articlesEmpty": "Articles will appear here automatically when published from the admin panel.",
+        "directoryNote": "Notre répertoire de pays peut être élargi depuis le CMS. Les pays prêts pour le calculateur sont comptés séparément afin de ne pas présenter comme vérifiées des données régionales ou de prix indisponibles.",
+        "blogDescription": "Des articles pratiques dans {count} catégories — production, gestion agricole, marchés, technologies et entreprises agricoles rentables.",
+        "aboutDescription": "GoOrganicAfrica est créé par Amoo Oluwatoyin Owolabi — agriculteur, chercheur en agriculture et producteur de biofertilisants organiques. La plateforme associe expérience pratique, recherche agricole et outils simples pour aider les agriculteurs africains à mieux planifier."
       },
       "advice": {
         "adviceInsights": "Conseils et analyses",
@@ -427,7 +434,8 @@
         "tipCattleTitle": "Conseil pour l’engraissement bovin",
         "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
         "tipGoatTitle": "Conseil pour l’élevage caprin",
-        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices."
+        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices.",
+        "ebookHeading": "Découvrez le guide agricole complet"
       }
     }
   },
@@ -560,8 +568,8 @@
       "home": {
         "eyebrow": "Free farming tool",
         "headline": "اعرف أرباح مزرعتك قبل أن تزرع",
-        "description": "Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.",
-        "countryLine": "Covering {count} African countries",
+        "description": "احسب تكاليف الإنتاج والإيرادات المتوقعة والأرباح والعائد على الاستثمار وسعر التعادل — مجانًا في نيجيريا وأفريقيا وبعملتك المحلية.",
+        "countryLine": "يغطي {count} دولة أفريقية",
         "bullet1": "Crops, livestock & more — continuously expanding",
         "bullet2": "Enter farm size in acres, plots or hectares",
         "bullet3": "Override any figure with your own local numbers",
@@ -605,7 +613,10 @@
         "blogTitle": "Farming insights & market analysis",
         "readArticle": "Read article",
         "allArticles": "Explore all articles",
-        "articlesEmpty": "Articles will appear here automatically when published from the admin panel."
+        "articlesEmpty": "Articles will appear here automatically when published from the admin panel.",
+        "directoryNote": "يمكن توسيع دليل الدول من خلال نظام إدارة المحتوى. ويتم فصل الدول الجاهزة للحاسبة حتى لا تُعرض البيانات الإقليمية أو السعرية غير المتاحة على أنها بيانات مؤكدة.",
+        "blogDescription": "مقالات عملية عبر {count} فئات — تشمل الإنتاج وإدارة المزارع والأسواق والتقنيات والمشروعات الزراعية المربحة.",
+        "aboutDescription": "تم إنشاء GoOrganicAfrica بواسطة Amoo Oluwatoyin Owolabi — مزارع وباحث زراعي ومنتج للأسمدة الحيوية العضوية. تجمع المنصة بين الخبرة العملية والبحث الزراعي وأدوات القرار البسيطة لمساعدة المزارعين في أفريقيا على التخطيط بصورة أوضح."
       },
       "advice": {
         "adviceInsights": "نصائح وإرشادات",
@@ -643,7 +654,8 @@
         "tipCattleTitle": "نصيحة لتسمين الماشية",
         "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
         "tipGoatTitle": "نصيحة لتربية الماعز",
-        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices."
+        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices.",
+        "ebookHeading": "استكشف الدليل الزراعي الكامل"
       }
     }
   },
@@ -776,8 +788,8 @@
       "home": {
         "eyebrow": "Free farming tool",
         "headline": "Conheça o lucro da sua fazenda antes de plantar",
-        "description": "Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.",
-        "countryLine": "Covering {count} African countries",
+        "description": "Calcule custos de produção, receita esperada, lucro, ROI e ponto de equilíbrio — gratuitamente, na Nigéria e em África, na sua própria moeda.",
+        "countryLine": "Abrange {count} países africanos",
         "bullet1": "Crops, livestock & more — continuously expanding",
         "bullet2": "Enter farm size in acres, plots or hectares",
         "bullet3": "Override any figure with your own local numbers",
@@ -821,7 +833,10 @@
         "blogTitle": "Farming insights & market analysis",
         "readArticle": "Read article",
         "allArticles": "Explore all articles",
-        "articlesEmpty": "Articles will appear here automatically when published from the admin panel."
+        "articlesEmpty": "Articles will appear here automatically when published from the admin panel.",
+        "directoryNote": "O diretório de países pode ser ampliado pelo CMS. Os países prontos para o calculador são contabilizados separadamente para que dados regionais ou de preços indisponíveis não sejam apresentados como verificados.",
+        "blogDescription": "Artigos práticos em {count} categorias — produção, gestão agrícola, mercados, tecnologia e negócios agrícolas rentáveis.",
+        "aboutDescription": "A GoOrganicAfrica foi criada por Amoo Oluwatoyin Owolabi — agricultor, investigador agrícola e produtor de biofertilizantes orgânicos. A plataforma combina experiência prática, investigação agrícola e ferramentas simples para ajudar agricultores africanos a planear com mais clareza."
       },
       "advice": {
         "adviceInsights": "Conselhos e informações",
@@ -859,7 +874,8 @@
         "tipCattleTitle": "Dica para engorda de gado",
         "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
         "tipGoatTitle": "Dica para criação de cabras",
-        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices."
+        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices.",
+        "ebookHeading": "Explore o guia agrícola completo"
       }
     }
   },
@@ -992,8 +1008,8 @@
       "home": {
         "eyebrow": "Free farming tool",
         "headline": "Jua faida ya shamba lako kabla ya kupanda",
-        "description": "Calculate your cost of production, expected revenue, profit, ROI and break-even point — free, across Nigeria and Africa, in your own currency.",
-        "countryLine": "Covering {count} African countries",
+        "description": "Hesabu gharama za uzalishaji, mapato yanayotarajiwa, faida, ROI na bei ya kufikia usawa — bila malipo, Nigeria na Afrika, kwa sarafu yako.",
+        "countryLine": "Inahudumia nchi {count} za Afrika",
         "bullet1": "Crops, livestock & more — continuously expanding",
         "bullet2": "Enter farm size in acres, plots or hectares",
         "bullet3": "Override any figure with your own local numbers",
@@ -1037,7 +1053,10 @@
         "blogTitle": "Farming insights & market analysis",
         "readArticle": "Read article",
         "allArticles": "Explore all articles",
-        "articlesEmpty": "Articles will appear here automatically when published from the admin panel."
+        "articlesEmpty": "Articles will appear here automatically when published from the admin panel.",
+        "directoryNote": "Orodha ya nchi inaweza kupanuliwa kupitia CMS. Nchi zilizo tayari kwa kikokotoo huhesabiwa tofauti ili data ya maeneo au bei isiyopatikana isiwasilishwe kama data iliyothibitishwa.",
+        "blogDescription": "Makala za vitendo katika kategoria {count} — kuhusu uzalishaji, usimamizi wa shamba, masoko, teknolojia na biashara za kilimo zenye faida.",
+        "aboutDescription": "GoOrganicAfrica imejengwa na Amoo Oluwatoyin Owolabi — mkulima, mtafiti wa kilimo na mtengenezaji wa mbolea hai. Jukwaa linaunganisha uzoefu wa shambani, utafiti wa kilimo na zana rahisi za maamuzi ili kuwasaidia wakulima wa Afrika kupanga kwa uelewa zaidi."
       },
       "advice": {
         "adviceInsights": "Ushauri na maarifa",
@@ -1075,7 +1094,8 @@
         "tipCattleTitle": "Ushauri wa unenepeshaji wa ng’ombe",
         "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
         "tipGoatTitle": "Ushauri wa ufugaji wa mbuzi",
-        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices."
+        "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices.",
+        "ebookHeading": "Gundua mwongozo kamili wa kilimo"
       }
     }
   }
