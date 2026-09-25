@@ -24,7 +24,11 @@
         "comingSoon": "Coming soon",
         "dataComingSoon": "Data coming soon",
         "installApp": "Install app",
-        "errorRefresh": "Please refresh the page and try again."
+        "errorRefresh": "Please refresh the page and try again.",
+        "footerDescription": "GoOrganicAfrica combines real farm experience with continuous agricultural research and practical tools for farmers.",
+        "copyright": "© {year} GoOrganicAfrica. All rights reserved.",
+        "organicGuides": "Organic farming guides for Nigeria, Africa & beyond.",
+        "dataSources": "Data Sources & Updates"
       },
       "calc": {
         "step": "Step {current} of {total}",
@@ -106,7 +110,10 @@
         "ebookHeading": "Want to go deeper?",
         "ebookBody": "Get the complete step-by-step guide for this enterprise — written from real research and farm experience.",
         "ebookCta": "Get the complete guide",
-        "calculatorLoadError": "Calculator failed to load. Please refresh the page."
+        "calculatorLoadError": "Calculator failed to load. Please refresh the page.",
+        "pageTitle": "Farm Profit Calculator",
+        "pageSubtitle": "Plan your farm and estimate your profit.",
+        "calculatorBrand": "Farm Profit Calculator"
       },
       "analysis": {
         "roiUnavailable": "ROI is unavailable because the calculation has no investment cost.",
@@ -254,7 +261,11 @@
         "comingSoon": "Bientôt disponible",
         "dataComingSoon": "Données bientôt disponibles",
         "installApp": "Installer l’application",
-        "errorRefresh": "Veuillez actualiser la page et réessayer."
+        "errorRefresh": "Veuillez actualiser la page et réessayer.",
+        "footerDescription": "GoOrganicAfrica associe l’expérience réelle de la ferme à une recherche agricole continue et à des outils pratiques pour les agriculteurs.",
+        "copyright": "© {year} GoOrganicAfrica. Tous droits réservés.",
+        "organicGuides": "Guides d’agriculture biologique pour le Nigeria, l’Afrique et au-delà.",
+        "dataSources": "Sources des données et mises à jour"
       },
       "calc": {
         "step": "Étape {current} sur {total}",
@@ -336,7 +347,10 @@
         "ebookHeading": "Vous voulez aller plus loin ?",
         "ebookBody": "Obtenez le guide complet étape par étape pour cette activité, fondé sur la recherche et l’expérience agricole.",
         "ebookCta": "Obtenir le guide complet",
-        "calculatorLoadError": "Le calculateur n’a pas pu se charger. Actualisez la page et réessayez."
+        "calculatorLoadError": "Le calculateur n’a pas pu se charger. Actualisez la page et réessayez.",
+        "pageTitle": "Calculateur de rentabilité agricole",
+        "pageSubtitle": "Planifiez votre ferme et estimez votre bénéfice.",
+        "calculatorBrand": "Calculateur de rentabilité agricole"
       },
       "analysis": {
         "roiUnavailable": "Le ROI n’est pas disponible car le calcul ne comporte aucun coût d’investissement.",
@@ -484,7 +498,11 @@
         "comingSoon": "قريبًا",
         "dataComingSoon": "البيانات قريبًا",
         "installApp": "تثبيت التطبيق",
-        "errorRefresh": "يرجى تحديث الصفحة والمحاولة مرة أخرى."
+        "errorRefresh": "يرجى تحديث الصفحة والمحاولة مرة أخرى.",
+        "footerDescription": "تجمع GoOrganicAfrica بين الخبرة الحقيقية في المزرعة والبحث الزراعي المستمر والأدوات العملية للمزارعين.",
+        "copyright": "© {year} GoOrganicAfrica. جميع الحقوق محفوظة.",
+        "organicGuides": "أدلة الزراعة العضوية لنيجيريا وأفريقيا وما بعدها.",
+        "dataSources": "مصادر البيانات والتحديثات"
       },
       "calc": {
         "step": "الخطوة {current} من {total}",
@@ -566,7 +584,10 @@
         "ebookHeading": "هل تريد التعمق أكثر؟",
         "ebookBody": "احصل على الدليل الكامل خطوة بخطوة لهذا النشاط، المبني على البحث والخبرة الزراعية.",
         "ebookCta": "احصل على الدليل الكامل",
-        "calculatorLoadError": "تعذر تحميل الحاسبة. حدّث الصفحة وحاول مرة أخرى."
+        "calculatorLoadError": "تعذر تحميل الحاسبة. حدّث الصفحة وحاول مرة أخرى.",
+        "pageTitle": "حاسبة أرباح المزرعة",
+        "pageSubtitle": "خطط لمزرعتك وقدّر ربحك.",
+        "calculatorBrand": "حاسبة أرباح المزرعة"
       },
       "analysis": {
         "roiUnavailable": "لا يتوفر ROI لأن الحساب لا يتضمن تكلفة استثمار.",
@@ -714,7 +735,11 @@
         "comingSoon": "Em breve",
         "dataComingSoon": "Dados em breve",
         "installApp": "Instalar aplicação",
-        "errorRefresh": "Atualize a página e tente novamente."
+        "errorRefresh": "Atualize a página e tente novamente.",
+        "footerDescription": "A GoOrganicAfrica combina experiência real de campo, investigação agrícola contínua e ferramentas práticas para agricultores.",
+        "copyright": "© {year} GoOrganicAfrica. Todos os direitos reservados.",
+        "organicGuides": "Guias de agricultura biológica para a Nigéria, África e além.",
+        "dataSources": "Fontes de dados e atualizações"
       },
       "calc": {
         "step": "Etapa {current} de {total}",
@@ -796,7 +821,10 @@
         "ebookHeading": "Quer aprofundar?",
         "ebookBody": "Obtenha o guia completo passo a passo para esta atividade, baseado em investigação e experiência agrícola.",
         "ebookCta": "Obter o guia completo",
-        "calculatorLoadError": "A calculadora não carregou. Atualize a página e tente novamente."
+        "calculatorLoadError": "A calculadora não carregou. Atualize a página e tente novamente.",
+        "pageTitle": "Calculadora de lucro agrícola",
+        "pageSubtitle": "Planeie a sua exploração e estime o seu lucro.",
+        "calculatorBrand": "Calculadora de lucro agrícola"
       },
       "analysis": {
         "roiUnavailable": "O ROI não está disponível porque o cálculo não tem custo de investimento.",
@@ -944,7 +972,11 @@
         "comingSoon": "Inakuja hivi karibuni",
         "dataComingSoon": "Data inakuja hivi karibuni",
         "installApp": "Sakinisha programu",
-        "errorRefresh": "Onyesha upya ukurasa na ujaribu tena."
+        "errorRefresh": "Onyesha upya ukurasa na ujaribu tena.",
+        "footerDescription": "GoOrganicAfrica inaunganisha uzoefu halisi wa shambani, utafiti endelevu wa kilimo na zana rahisi kwa wakulima.",
+        "copyright": "© {year} GoOrganicAfrica. Haki zote zimehifadhiwa.",
+        "organicGuides": "Miongozo ya kilimo hai kwa Nigeria, Afrika na zaidi.",
+        "dataSources": "Vyanzo vya data na masasisho"
       },
       "calc": {
         "step": "Hatua ya {current} kati ya {total}",
@@ -1026,7 +1058,10 @@
         "ebookHeading": "Unataka kujifunza zaidi?",
         "ebookBody": "Pata mwongozo kamili wa hatua kwa hatua wa biashara hii, uliotokana na utafiti na uzoefu wa shambani.",
         "ebookCta": "Pata mwongozo kamili",
-        "calculatorLoadError": "Kikokotoo hakikupakia. Onyesha upya ukurasa na ujaribu tena."
+        "calculatorLoadError": "Kikokotoo hakikupakia. Onyesha upya ukurasa na ujaribu tena.",
+        "pageTitle": "Kikokotoo cha Faida ya Shamba",
+        "pageSubtitle": "Panga shamba lako na kadiria faida yako.",
+        "calculatorBrand": "Kikokotoo cha Faida ya Shamba"
       },
       "analysis": {
         "roiUnavailable": "ROI haipatikani kwa sababu hesabu haina gharama ya uwekezaji.",
