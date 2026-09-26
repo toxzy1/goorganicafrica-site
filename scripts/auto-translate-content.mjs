@@ -79,7 +79,7 @@ async function translate(text, language) {
   });
   if (!response.ok) throw new Error("OpenAI translation request failed: " + response.status);
   const data = await response.json();
-  return data.output_text || "";
+  const raw = data.output_text || "";\n  const cleaned = raw.replace(/^```json\\s*/i, "").replace(/\\s*```$/i, "").trim();\n  return JSON.parse(cleaned);
 }
 
 async function main() {
@@ -103,9 +103,9 @@ async function main() {
       const outPath = path.join(outDir, outName);
       if (fs.existsSync(outPath)) continue;
 
-      const translatedBody = await translate(body, target);
+      const translated = await translate(JSON.stringify({\n        title: yamlValue(front, "title"),\n        description: yamlValue(front, "description"),\n        meta_title: yamlValue(front, "meta_title"),\n        meta_description: yamlValue(front, "meta_description"),\n        category: yamlValue(front, "category"),\n        keywords: yamlValue(front, "keywords"),\n        body\n      }), target);
       let translatedFront = front;
-      translatedFront = setYaml(translatedFront, "language", target.code);
+      translatedFront = setYaml(translatedFront, "title", JSON.stringify(translated.title || title));\n      translatedFront = setYaml(translatedFront, "description", JSON.stringify(translated.description || yamlValue(front, "description")));\n      translatedFront = setYaml(translatedFront, "meta_title", JSON.stringify(translated.meta_title || yamlValue(front, "meta_title")));\n      translatedFront = setYaml(translatedFront, "meta_description", JSON.stringify(translated.meta_description || yamlValue(front, "meta_description")));\n      translatedFront = setYaml(translatedFront, "category", JSON.stringify(translated.category || yamlValue(front, "category")));\n      translatedFront = setYaml(translatedFront, "language", target.code);
       translatedFront = setYaml(translatedFront, "source_language", "en");
       translatedFront = setYaml(translatedFront, "translation_group", group);
       translatedFront = setYaml(translatedFront, "translation_status", "in_review");
