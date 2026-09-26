@@ -234,16 +234,22 @@ def translate_file(source_path: Path, target: str) -> None:
             translated = [translate_text(v, target, cache) for v in values]
             translated_front = replace_simple_list(translated_front, key, translated)
 
-    faq_pattern = r"(?m)^(\s*- q:)\s*(.*)$"
+    def translate_faq_q(match):
+        value = match.group(2).strip().strip('"')
+        return match.group(1) + " " + yaml_quote(translate_text(value, target, cache))
+
+    def translate_faq_a(match):
+        value = match.group(2).strip().strip('"')
+        return match.group(1) + " " + yaml_quote(translate_text(value, target, cache))
+
     translated_front = re.sub(
-        faq_pattern,
-        lambda m: f"{m.group(1)} {yaml_quote(translate_text(m.group(2).strip().strip('\"'), target, cache))}",
+        r"(?m)^(\s*- q:)\s*(.*)$",
+        translate_faq_q,
         translated_front,
     )
-    faq_answer_pattern = r"(?m)^(\s*a:)\s*(.*)$"
     translated_front = re.sub(
-        faq_answer_pattern,
-        lambda m: f"{m.group(1)} {yaml_quote(translate_text(m.group(2).strip().strip('\"'), target, cache))}",
+        r"(?m)^(\s*a:)\s*(.*)$",
+        translate_faq_a,
         translated_front,
     )
 
