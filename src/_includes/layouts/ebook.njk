@@ -19,9 +19,11 @@ layout: layouts/base.njk
 }
 {% endset %}
 
+{% set translationLinks %}<div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group or slug }}" hidden>{% for ebook in collections.ebooks %}{% if (ebook.data.translation_group or ebook.data.slug) == (translation_group or slug) %}<a data-content-variant data-language="{{ ebook.data.language or 'en' }}" href="{{ ebook.url }}">{{ ebook.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>{% endset %}
+
 <section class="ebook-detail-hero">
   <div class="container">
-    <p class="breadcrumb"><a href="/">Home</a> / <a href="/ebooks/">Guides</a> / {{ title }}</p>
+    <p class="breadcrumb"><a href="/" data-i18n="common.home">Home</a> / <a href="/ebooks/" data-i18n="common.ebooks">Guides</a> / {{ title }}</p>
     <div class="ebook-detail-grid">
       <div>
         {% if icon %}
@@ -36,9 +38,9 @@ layout: layouts/base.njk
       </div>
       <div class="buy-box">
         <div class="price-tag">{{ price | currency }}</div>
-        <p class="price-note">One-time payment &middot; instant digital delivery</p>
-        <a class="btn btn-primary" href="{{ selar_link }}">Get This Guide Now</a>
-        <a class="btn btn-outline" href="{{ site.whatsapp }}">Ask a Question on WhatsApp</a>
+        <p class="price-note" data-i18n="ebooks.instantDelivery">One-time payment &middot; instant digital delivery</p>
+        <a class="btn btn-primary" href="{{ selar_link }}" data-i18n="ebooks.getGuide">Get This Guide Now</a>
+        <a class="btn btn-outline" href="{{ site.whatsapp }}" data-i18n="ebooks.askWhatsApp">Ask a Question on WhatsApp</a>
         {% if bonus %}<p class="bonus-note">&#10022; {{ bonus }}</p>{% endif %}
       </div>
     </div>
@@ -47,14 +49,14 @@ layout: layouts/base.njk
 
 <section class="section">
   <div class="container" style="max-width: 760px;">
-    <h2>What You'll Learn</h2>
+    <h2 data-i18n="ebooks.whatLearn">What You'll Learn</h2>
     <ul class="benefit-list">
       {% for b in benefits %}
       <li><span class="mark">&#10003;</span><span>{{ b }}</span></li>
       {% endfor %}
     </ul>
 
-    <h2>Who This Guide Is For</h2>
+    <h2 data-i18n="ebooks.forWho">Who This Guide Is For</h2>
     <ul class="benefit-list">
       {% for a in audience %}
       <li><span class="mark">&#10003;</span><span>{{ a }}</span></li>
@@ -62,7 +64,7 @@ layout: layouts/base.njk
     </ul>
 
     {% if faqs %}
-    <h2>Frequently Asked Questions</h2>
+    <h2 data-i18n="ebooks.faqs">Frequently Asked Questions</h2>
     <div>
       {% for f in faqs %}
       <details class="faq-item">
@@ -74,7 +76,7 @@ layout: layouts/base.njk
     {% endif %}
 
     <div style="text-align:center; margin-top: 48px;">
-      <a class="btn btn-primary" href="{{ selar_link }}">Get {{ title }} &mdash; {{ price | currency }}</a>
+      <a class="btn btn-primary" href="{{ selar_link }}"><span data-i18n="ebooks.completeGuide">Get the complete guide</span> — {{ price | currency }}</a>
     </div>
   </div>
 </section>
@@ -82,19 +84,19 @@ layout: layouts/base.njk
 <section class="section section-alt">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">More Guides</span>
-      <h2>You Might Also Like</h2>
+      <span class="eyebrow" data-i18n="ebooks.moreGuides">More Guides</span>
+      <h2 data-i18n="ebooks.youMightLike">You Might Also Like</h2>
     </div>
     <div class="ebook-grid">
       {% for ebook in collections.ebooks %}
         {% if ebook.data.slug != slug %}
-        <a class="ebook-card" href="{{ ebook.url }}">
+        <a class="ebook-card content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}">
           <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} guide cover">
           <h3>{{ ebook.data.title }}</h3>
           <p class="tagline">{{ ebook.data.tagline }}</p>
           <div class="card-footer">
             <span class="price">{{ ebook.data.price | currency }}</span>
-            <span class="cta">View Guide &rarr;</span>
+            <span class="cta" data-i18n="ebooks.viewGuide">View Guide &rarr;</span>
           </div>
         </a>
         {% endif %}
