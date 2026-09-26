@@ -112,15 +112,19 @@ def translate_text(text, target, cache):
 
 
 def translate_body(body, target, cache):
+    parts = re.split(r"(\n\s*\n)", body)
     out = []
-    for line in body.splitlines(keepends=True):
-        ending = "\n" if line.endswith("\n") else ""
-        content = line[:-1] if ending else line
-        out.append(line if not content.strip() else translate_text(content, target, cache) + ending)
+    for part in parts:
+        if re.fullmatch(r"\n\s*\n", part or ""):
+            out.append(part)
+        elif part.strip():
+            out.append(translate_text(part, target, cache))
+        else:
+            out.append(part)
     return "".join(out)
 
 
-def translate_file(path, target, overwrite, status):
+def translate_file(path, target, overwrite, status, cache):
     source = path.read_text(encoding="utf-8")
     front, body = split_front(source)
     if scalar(front, "language") not in ("", "en"):
@@ -186,9 +190,10 @@ def main():
     install_models(languages)
     overwrite = bool(config.get("auto_update_existing_translations", True))
     status = config.get("mark_new_translations", "in_review")
+    cache = {}
     for path in files:
         for target in languages:
-            translate_file(path, target, overwrite, status)
+            translate_file(path, target, overwrite, status, cache)
 
 
 if __name__ == "__main__":
