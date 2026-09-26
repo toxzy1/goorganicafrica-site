@@ -103,10 +103,35 @@
 
   function T(section, key, vars) { return window.GOA_I18N && window.GOA_I18N.t ? window.GOA_I18N.t(section, key, vars) : key; }
   function locale() { return { label: (window.GOA_LANGUAGES || []).find(function (item) { return item.code === state.language; })?.native || "English", country: T("calc", "country"), region: T("calc", "region"), type: T("calc", "farmingType"), crop: T("calc", "crop"), livestock: T("calc", "livestock"), continue: T("calc", "continue"), back: T("calc", "back"), step: T("calc", "step"), countryLabel: T("calc", "country"), languageLabel: T("common", "language"), homeLabel: T("common", "home") }; }
+  function localizedCommodityName(c) { return c ? (T("commodity", c.id) || c.name) : ""; }
+  function localizedCountryName(c) {
+    if (!c) return "";
+    try {
+      if (window.Intl && Intl.DisplayNames) {
+        var localeCode = state.language === "sw" ? "sw" : state.language;
+        var name = new Intl.DisplayNames([localeCode], { type: "region" }).of(c.code);
+        if (name) return name;
+      }
+    } catch (e) {}
+    return c.name;
+  }
+  function localizedUnit(key, fallback) { return T("units", key) || fallback || key; }
+  function localizedDataUnit(unit) {
+    var u = String(unit || "").toLowerCase();
+    if (u === "hectare" || u === "hectares") return localizedUnit("hectare", unit);
+    if (u === "acre" || u === "acres") return localizedUnit("acre", unit);
+    if (u === "plot" || u === "plots") return localizedUnit("plot", unit);
+    if (u === "bird" || u === "birds") return localizedUnit("bird", unit);
+    if (u === "head" || u === "heads") return localizedUnit("head", unit);
+    if (u === "fish") return localizedUnit("fish", unit);
+    if (u === "goat" || u === "goats") return localizedUnit("goat", unit);
+    if (u === "pig" || u === "pigs") return localizedUnit("pig", unit);
+    return unit;
+  }
   function setupToolbar(){
     var cs=document.getElementById("calc-country-switcher"), ls=document.getElementById("calc-language-switcher");
     if(!cs || !ls) return;
-    cs.innerHTML=""; countries.forEach(function(c){ var o=document.createElement("option"); o.value=c.code; o.textContent=(c.flag||"")+" "+c.name; o.selected=c.code===state.country; cs.appendChild(o); });
+    cs.innerHTML=""; countries.forEach(function(c){ var o=document.createElement("option"); o.value=c.code; o.textContent=(c.flag||"")+" "+localizedCountryName(c); o.selected=c.code===state.country; cs.appendChild(o); });
     ls.innerHTML=""; (window.GOA_LANGUAGES || []).filter(function(item){ return item.enabled !== false; }).forEach(function(item){ var o=document.createElement("option"); o.value=item.code; o.textContent=item.native; o.selected=item.code===state.language; ls.appendChild(o); });
     cs.onchange=function(){
       state.country=this.value; state.region=null; state.commodity=null;
@@ -305,7 +330,7 @@
 
   function renderSizeStep() {
     var isCrop = state.commodity.unit_mode === "crop";
-    var animalLabel = state.commodity.unit_label.charAt(0).toUpperCase() + state.commodity.unit_label.slice(1);
+    var animalLabel = localizedDataUnit(state.commodity.unit_label).charAt(0).toUpperCase() + localizedDataUnit(state.commodity.unit_label).slice(1);
     stepHeader(root, T("calc", "step", {current: 5, total: 8}), isCrop ? T("calc","farmSize") : T("calc","quantity") + " " + animalLabel + "s?");
 
     if (isCrop) {
@@ -349,7 +374,7 @@
       var u = LAND_UNITS[state.landUnit];
       label.textContent = T("calc", "farmSizeUnit", {unit: T("calc", state.landUnit === "hectare" ? "hectares" : state.landUnit === "acre" ? "acres" : "plots").toLowerCase()});
     } else {
-      label.textContent = state.commodity.quantity_label || T("calc", "numberOf", {unit: animalLabel + "s"});
+      label.textContent = state.commodity.quantity_label || T("calc", "numberOf", {unit: localizedDataUnit(animalLabel) + "s"});
     }
     field.appendChild(label);
 
@@ -423,7 +448,7 @@
     var refBox = document.createElement("div");
     refBox.className = "calc-reference-box";
     if (isRecurring) {
-      refBox.innerHTML = "Reference: <strong>" + cd.output_low + " \u2013 " + cd.output_high + "</strong> " + state.commodity.output_label + " (typical: " + cd.output_expected + ")<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>";
+      refBox.innerHTML = "Reference: <strong>" + cd.output_low + " \u2013 " + cd.output_high + "</strong> " + T("units","eggsPerBirdYear") + " (typical: " + cd.output_expected + ")<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>";
     } else {
       refBox.innerHTML = T("calc", "referenceYield", {low: cd.yield_low, high: cd.yield_high, unit: cd.yield_unit, expected: cd.yield_expected, source: cd.source, date: cd.as_of});
     }
@@ -457,7 +482,7 @@
     var field = document.createElement("div");
     field.className = "calc-field";
     var label = document.createElement("label");
-    label.textContent = isRecurring ? state.commodity.output_label : T("calc", "yieldInput", {unit: cd.yield_unit, area: LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area"});
+    label.textContent = isRecurring ? T("units","eggsPerBirdYear") : T("calc", "yieldInput", {unit: cd.yield_unit, area: LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area"});
     field.appendChild(label);
     var input = document.createElement("input");
     input.type = "number";
@@ -486,7 +511,7 @@
     var priceLabel, defaultPrice;
 
     if (mode === "crop") {
-      priceLabel = T("calc", "sellingPriceUnit", {currency: currency, unit: "per kg"});
+      priceLabel = T("calc", "sellingPriceUnit", {currency: currency, unit: localizedUnit("perKg", "per kg")});
       defaultPrice = cd.price_expected;
       refBox.innerHTML = T("calc", "referencePriceRange", {low: fmtMoney(cd.price_low, currency), high: fmtMoney(cd.price_high, currency), unit: cd.price_unit, source: cd.source, date: cd.as_of});
     } else if (mode === "livestock_unit") {
@@ -557,7 +582,8 @@
     refBox.className = "calc-reference-box";
     if (isCrop && hectares && hectares !== 1) {
       var scaledTotal = cd.cost_per_unit * hectares;
-      refBox.innerHTML = "Reference cost: <strong>" + fmtMoney(cd.cost_per_unit, currency) + " per hectare</strong>" +
+      refBox.innerHTML = T("calc", "referenceCostScaled", {cost: fmtMoney(cd.cost_per_unit, currency), hectares: hectares.toFixed(3), quantity: state.quantity, unit: unitInfo.abbr, total: fmtMoney(scaledTotal, currency), source: cd.source, date: cd.as_of});
+      /*
         " &times; " + hectares.toFixed(3) + " ha (" + state.quantity + " " + unitInfo.abbr + ")" +
         " = estimated total <strong>" + fmtMoney(scaledTotal, currency) + "</strong>" +
         "<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>" +
@@ -708,7 +734,7 @@
     try {
       input = buildEngineInput();
     } catch (e) {
-      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">Error preparing inputs: ' + e.message + '. Please go back and check your entries.</p>';
+      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">' + T("calc","inputError") + "</p>";
       return;
     }
 
@@ -717,7 +743,7 @@
     try {
       scenarios = engine.calculateScenarios(input, 15);
     } catch (e) {
-      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">Calculation error: ' + e.message + '. Please go back and try again.</p>';
+      root.innerHTML = '<p style="color:red;padding:24px;text-align:center;">' + T("calc","calculationError") + "</p>";
       return;
     }
 
@@ -737,7 +763,7 @@
     summary.style.marginBottom = "16px";
     summary.innerHTML =
       '<div class="calc-step-label">' + T("calc", "profitReport") + '</div>' +
-      '<h2 class="calc-step-title" style="margin-bottom:4px;">' + state.commodity.name + "</h2>" +
+      '<h2 class="calc-step-title" style="margin-bottom:4px;">' + localizedCommodityName(state.commodity) + "</h2>" +
       '<p style="color:var(--ink-soft);font-size:0.9rem;">' +
         currentCountryObj().name + (state.region ? " \u2014 " + state.region : "") +
         " \u00b7 " + displayQty +
@@ -751,7 +777,7 @@
     hero.innerHTML =
       '<div class="label">' + T("calc", "estimatedProfit", {scenario: T("calc", state.scenarioTab)}) + '</div>' +
       '<div class="value' + (isLoss ? " negative" : "") + '">' + fmtMoney(result.profit, currency) + "</div>" +
-      (isLoss ? '<div style="font-size:0.85rem;opacity:0.8;margin-top:6px;">&#9888; This enterprise shows a loss under current inputs. See advice below.</div>' : "");
+      (isLoss ? '<div style="font-size:0.85rem;opacity:0.8;margin-top:6px;">&#9888; ' + T("calc","lossNotice") + '</div>' : "");
     root.appendChild(hero);
 
     // --- SCENARIO TABS ---
