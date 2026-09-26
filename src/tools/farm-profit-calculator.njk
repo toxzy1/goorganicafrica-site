@@ -23,10 +23,10 @@ permalink: "/farm-profit-calculator/"
     </a>
     <div class="calc-toolbar">
       <label class="calc-select-label" for="calc-country-switcher" data-i18n="calc.country">Country</label>
-      <select id="calc-country-switcher" class="calc-toolbar-select" aria-label="Calculator country"></select>
+      <select id="calc-country-switcher" class="calc-toolbar-select" data-i18n-aria-label="calc.country" aria-label="Calculator country"></select>
       <label class="calc-select-label" for="calc-language-switcher" data-i18n="common.language">Language</label>
-      <select id="calc-language-switcher" class="calc-toolbar-select" aria-label="Calculator language"></select>
-      <button class="calc-install-btn" id="install-btn" title="Install this app on your device">&#8681; Install App</button>
+      <select id="calc-language-switcher" class="calc-toolbar-select" data-i18n-aria-label="common.language" aria-label="Calculator language"></select>
+      <button class="calc-install-btn" id="install-btn" data-i18n-title="common.installApp" data-i18n="common.installApp">&#8681; Install App</button>
     </div>
   </div>
 
@@ -47,9 +47,9 @@ permalink: "/farm-profit-calculator/"
 </script>
 
 <!-- Scripts loaded in strict order, NO defer - each must finish before next starts -->
-<script src="/js/calculator-engine.js?v=20260926"></script>
-<script src="/js/calculator-advice.js"></script>
-<script src="/js/calculator-app.js"></script>
+<script defer src="/js/calculator-engine.js?v=20260926"></script>
+<script defer src="/js/calculator-advice.js?v=20260926"></script>
+<script defer src="/js/calculator-app.js?v=20260926"></script>
 
 <script>
 (function () {
