@@ -276,7 +276,25 @@
     "recommendedGuide": "Guia recomendado",
     "allArticles": "Todos os artigos",
     "filedUnder": "Classificado em:",
-    "browseGuides": "Explorar guias"
+    "browseGuides": "Explorar guias",
+    "cards": {
+      "bsf": {
+        "title": "Criação de mosca-soldado-negra em África",
+        "description": "Transforme resíduos orgânicos em ração rica em proteína e reduza os custos de alimentação."
+      },
+      "fodder": {
+        "title": "Produção de forragem hidropónica em África",
+        "description": "Cultive forragem fresca para o gado em 4–8 dias usando pouco espaço."
+      },
+      "mushroom": {
+        "title": "Cultivo de cogumelos ostra na Nigéria",
+        "description": "Aprenda a produzir, colher e comercializar cogumelos ostra de forma prática."
+      },
+      "cassava": {
+        "title": "Cultivo de mandioca sem capina na Nigéria",
+        "description": "Uma abordagem prática de produção de mandioca em cinco meses sem herbicidas."
+      }
+    }
   },
   "ebooks": {
     "eyebrow": "eBooks",
@@ -296,6 +314,24 @@
     "viewGuide": "Ver guia",
     "askWhatsApp": "Fazer uma pergunta no WhatsApp",
     "instantDelivery": "Pagamento único · entrega digital instantânea",
-    "completeGuide": "Obter o guia completo"
+    "completeGuide": "Obter o guia completo",
+    "cards": {
+      "bsf": {
+        "title": "Criação de Mosca-Soldado-Negra",
+        "tagline": "Transforme resíduos orgânicos numa fonte rica em proteína para animais e peixes"
+      },
+      "fodder": {
+        "title": "Produção de Forragem Hidropónica",
+        "tagline": "Cultive forragem fresca para o gado em 4–8 dias, mesmo num espaço pequeno"
+      },
+      "mushroom": {
+        "title": "Guia Completo de Cultivo de Cogumelos Ostra",
+        "tagline": "Uma abordagem prática e baseada em pesquisa para cultivar cogumelos ostra"
+      },
+      "cassava": {
+        "title": "Técnica de Agricultura sem Capina",
+        "tagline": "Guia de cinco meses para produção de mandioca sem herbicidas"
+      }
+    }
   }
 }
