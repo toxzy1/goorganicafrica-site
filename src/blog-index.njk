@@ -19,7 +19,7 @@ permalink: "/blog/"
       {% for cat in collections.blogCategories %}
         {% if cat.data.active != false %}
         <div class="category-card">
-          <h3 data-i18n="blog.categories.{{ "crop" if cat.data.slug == "crop-production" else "livestock" if cat.data.slug == "livestock-farming" else "organic" if cat.data.slug == "organic-farming" else "agribusiness" if cat.data.slug == "agribusiness" else "inputs" if cat.data.slug == "farm-inputs" else "markets" if cat.data.slug == "farming-data" else cat.data.slug }}">{{ cat.data.title }}</h3>
+          <h3 data-i18n="blog.categories.{{ 'crop' if cat.data.slug == 'crop-production' else 'livestock' if cat.data.slug == 'livestock-farming' else 'organic' if cat.data.slug == 'organic-farming' else 'agribusiness' if cat.data.slug == 'agribusiness' else 'inputs' if cat.data.slug == 'farm-inputs' else 'markets' if cat.data.slug == 'farming-data' else cat.data.slug }}">{{ cat.data.title }}</h3>
           <p>{{ cat.data.description }}</p>
         </div>
         {% endif %}
