@@ -11,21 +11,26 @@ defaultCountry: "{{ country.code }}"
 defaultLanguage: "{{ country.default_language or 'en' }}"
 ---
 <div style="background:var(--green-deep);color:var(--white);padding:20px 20px 0;text-align:center;">
-  <h1 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:0 0 6px;color:var(--white);">Free Farm Profit Calculator — {{ country.name }}</h1>
-  <h2 style="font-family:var(--font-body);font-size:0.88rem;font-weight:400;margin:0 0 16px;opacity:0.85;color:var(--white);">Calculate farming costs, revenue, profit &amp; ROI using {{ country.name }} reference settings.</h2>
+  <h1 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:0 0 6px;color:var(--white);" data-i18n="calc.pageTitle">Free Farm Profit Calculator</h1>
+  <h2 style="font-family:var(--font-body);font-size:0.88rem;font-weight:400;margin:0 0 16px;opacity:0.85;color:var(--white);" data-i18n="calc.pageSubtitle">Plan your farm and estimate your profit.</h2>
 </div>
 <div class="calc-app" id="calc-app">
   <div class="calc-topbar">
-    <a class="calc-brand" href="/farm-profit-calculator/"><img src="/images/brand-mark.svg" alt="" width="24" height="24" data-i18n="common.calculator">Farm Profit Calculator</a>
+    <a class="calc-brand" href="/farm-profit-calculator/"><img src="/images/brand-mark.svg" alt="" width="24" height="24"><span data-i18n="calc.calculatorBrand">Farm Profit Calculator</span></a>
     <div class="calc-toolbar">
       <label class="calc-select-label" for="calc-country-switcher" data-i18n="calc.country">Country</label>
-      <select id="calc-country-switcher" class="calc-toolbar-select" aria-label="Calculator country"></select>
+      <select id="calc-country-switcher" class="calc-toolbar-select" data-i18n-aria-label="calc.country" aria-label="Calculator country"></select>
       <label class="calc-select-label" for="calc-language-switcher" data-i18n="common.language">Language</label>
-      <select id="calc-language-switcher" class="calc-toolbar-select" aria-label="Calculator language"></select>
+      <select id="calc-language-switcher" class="calc-toolbar-select" data-i18n-aria-label="common.language" aria-label="Calculator language"></select>
     </div>
   </div>
   <div class="calc-shell" id="calc-root"><p style="color:var(--ink-soft);padding:40px 0;text-align:center;" data-i18n="common.loading">Loading calculator&hellip;</p></div>
 </div>
 <script>window.__CALC_DATA__={commodities:{{ calculatorCommodities | dump | safe }},countries:{{ calculator.countries | dump | safe }},regions:{{ calculator.regions | dump | safe }},defaultCountry:"{{ country.code }}",defaultLanguage:"{{ country.default_language or 'en' }}"};</script>
-<script src="/js/calculator-engine.js?v=20260926"></script><script src="/js/calculator-advice.js"></script><script src="/js/calculator-app.js"></script>
-<script>if(window.FarmProfitCalculator){FarmProfitCalculator.init(document.getElementById("calc-root"),window.__CALC_DATA__);}</script>
+<script defer src="/js/calculator-engine.js?v=20260926"></script><script defer src="/js/calculator-advice.js?v=20260926"></script><script defer src="/js/calculator-app.js?v=20260926"></script>
+<script>function startLocalizedCalc() {
+  if (!window.FarmProfitCalculator) return;
+  var run = function () { window.FarmProfitCalculator.init(document.getElementById("calc-root"), window.__CALC_DATA__); };
+  if (window.GOA_I18N && window.GOA_I18N.ready) window.GOA_I18N.ready.then(run); else run();
+}
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", startLocalizedCalc); else startLocalizedCalc();</script>
