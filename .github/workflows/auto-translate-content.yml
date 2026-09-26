@@ -1,0 +1,47 @@
+name: Automatic Content Translation Drafts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/blog/posts/**"
+      - "src/ebooks/**"
+      - "scripts/auto-translate-content.mjs"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  translate:
+    if: ${{ secrets.OPENAI_API_KEY != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Generate translation drafts
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/auto-translate-content.mjs
+
+      - name: Create translation pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet; then
+            echo "No translation files were generated."
+            exit 0
+          fi
+          BRANCH="auto/translations-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
+          git config user.name "GoOrganicAfrica Translation Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/blog/posts src/ebooks
+          git commit -m "Draft multilingual content translations"
+          git push origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" --title "Draft multilingual Blog/eBook translations" --body "Automatically generated translation drafts. Review every language before merging. English remains the source of truth."
