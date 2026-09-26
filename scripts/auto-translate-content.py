@@ -256,7 +256,7 @@ def translate_file(source_path: Path, target: str) -> None:
     translated_front = replace_scalar(translated_front, "language", target)
     translated_front = replace_scalar(translated_front, "source_language", "en")
     translated_front = replace_scalar(translated_front, "translation_group", group)
-    translated_front = replace_scalar(translated_front, "translation_status", "in_review")
+    translated_front = replace_scalar(translated_front, "translation_status", translation_status)
     translated_front = replace_scalar(translated_front, "slug", f"{source_slug}-{target}")
 
     related = yaml_scalar(front, "related_ebook_slug")
