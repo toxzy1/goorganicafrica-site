@@ -41,5 +41,8 @@ search_terms:
   - weed-free cassava
   - cassava production
   - herbicide free farming
+translation_group: ebook-cassava
+source_language: en
+translation_status: source
 
 ---
