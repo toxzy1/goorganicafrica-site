@@ -15,7 +15,6 @@ permalink: "/blog/"
 
     <h2 style="font-size:1.2rem;color:var(--green-deep);margin-bottom:16px;" data-i18n="blog.browseCategory">Browse by Category</h2>
 
-    <!-- Category filter -->
     <div class="category-grid" style="margin-bottom: 40px;">
       {% for cat in collections.blogCategories %}
         {% if cat.data.active != false %}
@@ -27,10 +26,15 @@ permalink: "/blog/"
       {% endfor %}
     </div>
 
-    <!-- Articles -->
     {% if collections.posts.length > 0 %}
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
       {% for post in collections.posts %}
+      {% set cardKey = "blog.cards." + (
+        "bsf" if post.data.slug == "black-soldier-fly-farming-africa" else
+        "fodder" if post.data.slug == "hydroponic-fodder-farming-africa" else
+        "mushroom" if post.data.slug == "oyster-mushroom-farming-nigeria" else
+        "cassava" if post.data.slug == "weed-free-cassava-farming-nigeria" else post.data.slug
+      ) %}
       <a href="{{ post.url }}" class="content-variant" data-content-group="{{ post.data.translation_group or post.data.slug }}" data-content-language="{{ post.data.language or 'en' }}" style="text-decoration:none;">
         <div class="ebook-card" style="height:100%;">
           {% if post.data.featured_image %}
@@ -38,8 +42,8 @@ permalink: "/blog/"
             style="width:100%;height:180px;object-fit:cover;border-radius:4px;">
           {% endif %}
           <span class="eyebrow" style="font-size:0.68rem;">{{ post.data.category }}</span>
-          <h3 style="font-size:1.05rem;">{{ post.data.title }}</h3>
-          <p class="tagline" style="font-size:0.88rem;">{{ post.data.description }}</p>
+          <h3 style="font-size:1.05rem;" data-i18n="{{ cardKey }}.title">{{ post.data.title }}</h3>
+          <p class="tagline" style="font-size:0.88rem;" data-i18n="{{ cardKey }}.description">{{ post.data.description }}</p>
           <div class="card-footer">
             <span style="font-size:0.8rem;color:var(--ink-soft);" data-i18n="blog.readArticle">Read article</span>
             <span class="cta">&rarr;</span>
