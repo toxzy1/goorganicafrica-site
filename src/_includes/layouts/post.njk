@@ -54,6 +54,7 @@ layout: layouts/base.njk
       {% endfor %}
     </div>
     {% endif %}
+    <div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group }}" hidden>{% for p in collections.posts %}{% if p.data.translation_group == translation_group %}<a data-content-variant data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}">{{ p.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>
 
     <!-- Article meta -->
     <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:12px 0 24px;font-size:0.82rem;color:var(--ink-soft);">
