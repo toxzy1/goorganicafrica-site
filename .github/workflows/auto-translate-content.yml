@@ -1,4 +1,4 @@
-name: Automatic Content Translation Drafts
+name: Automatic Free Content Translation Drafts
 
 on:
   workflow_dispatch:
@@ -7,7 +7,8 @@ on:
     paths:
       - "src/blog/posts/**"
       - "src/ebooks/**"
-      - "scripts/auto-translate-content.mjs"
+      - "scripts/auto-translate-content.py"
+      - ".github/workflows/auto-translate-content.yml"
 
 permissions:
   contents: write
@@ -20,12 +21,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
-      - name: Generate translation drafts
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: node scripts/auto-translate-content.mjs
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install free offline translator
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install argostranslate
+
+      - name: Generate multilingual drafts
+        run: python scripts/auto-translate-content.py
 
       - name: Create translation pull request
         env:
@@ -35,6 +44,7 @@ jobs:
             echo "No translation files were generated."
             exit 0
           fi
+
           BRANCH="auto/translations-$(date +%Y%m%d-%H%M%S)"
           git checkout -b "$BRANCH"
           git config user.name "GoOrganicAfrica Translation Bot"
@@ -42,4 +52,5 @@ jobs:
           git add src/blog/posts src/ebooks
           git commit -m "Draft multilingual content translations"
           git push origin "$BRANCH"
-          gh pr create --base main --head "$BRANCH" --title "Draft multilingual Blog/eBook translations" --body "Automatically generated translation drafts. Review every language before merging. English remains the source of truth."
+
+          gh pr create --base main --head "$BRANCH" --title "Draft multilingual Blog/eBook translations" --body "Generated locally with the open-source Argos Translate engine. No commercial translation API or API key is used. Review every language before merging. English remains the source of truth."
