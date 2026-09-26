@@ -470,3 +470,9 @@
 .calc-page-heading h1{clear:both;font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:0 0 6px;color:var(--white);}
 .calc-page-heading h2{font-family:var(--font-body);font-size:.88rem;font-weight:400;margin:0;opacity:.85;color:var(--white);}
 @media (max-width:600px){.calc-page-heading{padding:8px 10px 16px;text-align:center}.calc-page-home{float:none;display:flex;width:max-content;max-width:100%;margin:0 auto 10px;padding:8px 12px}.calc-page-heading h1{font-size:1.12rem}.calc-page-heading h2{font-size:.78rem}}
+
+/* Universal Home navigation: shared by every calculator route. */
+.calc-universal-home-wrap{background:var(--green-deep);padding:10px 16px 0;}
+.calc-universal-home{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:8px 14px;border:1px solid rgba(255,255,255,.42);border-radius:8px;background:rgba(255,255,255,.10);color:var(--white);text-decoration:none;font-weight:700;font-size:.86rem;line-height:1;}
+.calc-universal-home:hover,.calc-universal-home:focus{background:rgba(255,255,255,.18);color:var(--white);text-decoration:underline;}
+@media (max-width:600px){.calc-universal-home-wrap{padding:8px 10px 0}.calc-universal-home{min-height:34px;padding:8px 13px;font-size:.82rem;}}
