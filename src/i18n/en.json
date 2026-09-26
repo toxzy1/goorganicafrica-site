@@ -276,7 +276,25 @@
     "recommendedGuide": "Recommended Guide",
     "allArticles": "All Articles",
     "filedUnder": "Filed under:",
-    "browseGuides": "Browse Guides"
+    "browseGuides": "Browse Guides",
+    "cards": {
+      "bsf": {
+        "title": "Black Soldier Fly Farming in Africa",
+        "description": "Turn organic waste into high-protein livestock feed and cut feed costs."
+      },
+      "fodder": {
+        "title": "Hydroponic Fodder Farming in Africa",
+        "description": "Grow fresh livestock feed in 4–8 days using minimal space."
+      },
+      "mushroom": {
+        "title": "Oyster Mushroom Farming in Nigeria",
+        "description": "Learn practical oyster mushroom production, harvesting and marketing."
+      },
+      "cassava": {
+        "title": "Weed-Free Cassava Farming in Nigeria",
+        "description": "A practical five-month cassava production approach without herbicides."
+      }
+    }
   },
   "ebooks": {
     "eyebrow": "eBooks",
@@ -296,6 +314,24 @@
     "viewGuide": "View Guide",
     "askWhatsApp": "Ask a Question on WhatsApp",
     "instantDelivery": "One-time payment · instant digital delivery",
-    "completeGuide": "Get the complete guide"
+    "completeGuide": "Get the complete guide",
+    "cards": {
+      "bsf": {
+        "title": "Black Soldier Fly Farming",
+        "tagline": "Turn organic waste into a protein-rich livestock and fish feed source"
+      },
+      "fodder": {
+        "title": "Hydroponic Fodder Farming",
+        "tagline": "Grow fresh livestock feed in 4–8 days, even in a small space"
+      },
+      "mushroom": {
+        "title": "Comprehensive Guide to Oyster Mushroom Farming",
+        "tagline": "A practical, research-based approach to growing oyster mushrooms"
+      },
+      "cassava": {
+        "title": "Weed-Free Farming Technique",
+        "tagline": "A 5-month guide to weed-free cassava without herbicides"
+      }
+    }
   }
 }
