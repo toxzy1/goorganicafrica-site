@@ -33,7 +33,7 @@ FIELD_KEYS = (
     "bonus",
     "category",
 )
-LIST_KEYS = ("audience", "benefits", "search_terms")
+LIST_KEYS = ("audience", "benefits", "search_terms", "keywords")
 
 
 def changed_source_files() -> list[Path]:
