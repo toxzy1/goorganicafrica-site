@@ -8,15 +8,19 @@ pagination:
   alias: locale
 permalink: "/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-profit-calculator/"
 ---
-<div style="background:var(--green-deep);color:var(--white);padding:20px 20px 0;text-align:center;">
-  <h1 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:0 0 6px;color:var(--white);"><span data-i18n="calc.pageTitle">{{ locale.language.pageTitle }}</span> — {{ locale.country.name }}</h1>
-  <h2 style="font-family:var(--font-body);font-size:0.88rem;font-weight:400;margin:0 0 16px;opacity:0.85;color:var(--white);"><span data-i18n="calc.pageSubtitle">{{ locale.language.pageSubtitle }}</span> · {{ locale.country.name }} · {{ locale.country.currency }}</h2>
+<div class="calc-page-heading">
+  <div class="calc-page-heading-inner">
+    <a class="calc-page-home" href="/" aria-label="{{ locale.language.homeLabel }}">
+      <span aria-hidden="true">⌂</span><span data-i18n="common.home">{{ locale.language.homeLabel }}</span>
+    </a>
+    <h1><span data-i18n="calc.pageTitle">{{ locale.language.pageTitle }}</span> — {{ locale.country.name }}</h1>
+    <h2><span data-i18n="calc.pageSubtitle">{{ locale.language.pageSubtitle }}</span> · {{ locale.country.name }} · {{ locale.country.currency }}</h2>
+  </div>
 </div>
 <div class="calc-app" id="calc-app">
   <div class="calc-topbar">
     <div class="calc-topbar-left">
       <a class="calc-brand" href="/"><img src="/images/brand-mark.svg" alt="" width="24" height="24"><span data-i18n="calc.calculatorBrand">Farm Profit Calculator</span></a>
-      <a class="calc-home-link" href="/" aria-label="{{ locale.language.homeLabel }}">⌂ <span data-i18n="common.home">{{ locale.language.homeLabel }}</span></a>
     </div>
     <div class="calc-toolbar">
       <label class="calc-select-label" for="calc-country-switcher" data-i18n="calc.country">{{ locale.language.countryLabel }}</label>
@@ -28,5 +32,5 @@ permalink: "/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-pro
   <div class="calc-shell" id="calc-root"><p style="color:var(--ink-soft);padding:40px 0;text-align:center;" data-i18n="common.loading">Loading calculator&hellip;</p></div>
 </div>
 <script>window.__CALC_DATA__={commodities:{{ calculatorCommodities | dump | safe }},countries:{{ calculator.countries | dump | safe }},regions:{{ calculator.regions | dump | safe }},defaultCountry:"{{ locale.countryCode }}",defaultLanguage:"{{ locale.languageCode }}"};</script>
-<script src="/js/calculator-engine.js"></script><script src="/js/calculator-advice.js"></script><script src="/js/calculator-app.js"></script>
+<script src="/js/calculator-engine.js?v=20260928"></script><script src="/js/calculator-advice.js?v=20260928"></script><script src="/js/calculator-app.js?v=20260928"></script>
 <script>if(window.FarmProfitCalculator){FarmProfitCalculator.init(document.getElementById("calc-root"),window.__CALC_DATA__);}</script>
