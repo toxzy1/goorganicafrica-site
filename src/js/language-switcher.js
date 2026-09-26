@@ -5,6 +5,7 @@
     ? window.GOA_LANGUAGES.filter(function (item) { return item && item.code && item.enabled !== false; })
     : [];
   var dictionary = window.GOA_TRANSLATIONS || {};
+  var languageLoads = {};
   var readyResolve;
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
@@ -67,7 +68,7 @@
   }
 
   function setLanguage(requested) {
-    var code = dictionary[requested] ? requested : "en";
+    var code = languages.some(function (item) { return item.code === requested; }) ? requested : "en";
     var meta = metadata(code);
     try { localStorage.setItem("goa_language", code); } catch (_) {}
     document.documentElement.lang = code;
@@ -75,23 +76,44 @@
     return code;
   }
 
+  function loadLanguage(code) {
+    if (dictionary[code]) return Promise.resolve(dictionary[code]);
+    if (languageLoads[code]) return languageLoads[code];
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json", { cache: "force-cache" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("Translation bundle unavailable");
+        return response.json();
+      })
+      .then(function (translations) {
+        dictionary[code] = translations || {};
+        return dictionary[code];
+      })
+      .catch(function () {
+        dictionary[code] = dictionary.en || {};
+        return dictionary[code];
+      });
+    return languageLoads[code];
+  }
+
   function refresh() {
     var code = setLanguage(currentLanguage());
-    apply(document.body, code);
+    return loadLanguage(code).then(function () {
+      apply(document.body, code);
 
-    var homeTitle = resolve(code, "home.pageTitle");
-    var homeDescription = resolve(code, "home.metaDescription");
-    if (homeTitle && (location.pathname === "/" || location.pathname === "")) document.title = homeTitle;
+      var homeTitle = resolve(code, "home.pageTitle");
+      var homeDescription = resolve(code, "home.metaDescription");
+      if (homeTitle && (location.pathname === "/" || location.pathname === "")) document.title = homeTitle;
 
-    var meta = document.querySelector('meta[name="description"]');
-    if (meta && homeDescription && (location.pathname === "/" || location.pathname === "")) {
-      meta.setAttribute("content", homeDescription);
-    }
+      var meta = document.querySelector('meta[name="description"]');
+      if (meta && homeDescription && (location.pathname === "/" || location.pathname === "")) {
+        meta.setAttribute("content", homeDescription);
+      }
 
-    var selector = document.getElementById("site-language-select");
-    if (selector) selector.value = code;
-    document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } }));
-    return code;
+      var selector = document.getElementById("site-language-select");
+      if (selector) selector.value = code;
+      document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } }));
+      return code;
+    });
   }
 
   window.GOA_I18N = {
@@ -120,7 +142,6 @@
         refresh();
       });
     }
-    refresh();
-    readyResolve(window.GOA_I18N);
+    refresh().then(function () { readyResolve(window.GOA_I18N); });
   });
 }());
