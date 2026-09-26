@@ -276,7 +276,25 @@
     "recommendedGuide": "Mwongozo unaopendekezwa",
     "allArticles": "Makala zote",
     "filedUnder": "Imewekwa chini ya:",
-    "browseGuides": "Vinjari miongozo"
+    "browseGuides": "Vinjari miongozo",
+    "cards": {
+      "bsf": {
+        "title": "Ufugaji wa Black Soldier Fly Afrika",
+        "description": "Geuza taka za kikaboni kuwa chakula chenye protini nyingi na punguza gharama za chakula."
+      },
+      "fodder": {
+        "title": "Kilimo cha Malisho ya Hydroponic Afrika",
+        "description": "Lima malisho mapya ya mifugo ndani ya siku 4–8 kwa kutumia nafasi ndogo."
+      },
+      "mushroom": {
+        "title": "Kilimo cha Uyoga wa Oyster Nigeria",
+        "description": "Jifunze uzalishaji, uvunaji na uuzaji wa uyoga wa oyster kwa vitendo."
+      },
+      "cassava": {
+        "title": "Kilimo cha Muhogo Bila Palizi Nigeria",
+        "description": "Njia ya vitendo ya kuzalisha muhogo ndani ya miezi mitano bila viua magugu."
+      }
+    }
   },
   "ebooks": {
     "eyebrow": "Vitabu pepe",
@@ -296,6 +314,24 @@
     "viewGuide": "Tazama mwongozo",
     "askWhatsApp": "Uliza swali kwenye WhatsApp",
     "instantDelivery": "Malipo ya mara moja · uwasilishaji wa kidijitali papo hapo",
-    "completeGuide": "Pata mwongozo kamili"
+    "completeGuide": "Pata mwongozo kamili",
+    "cards": {
+      "bsf": {
+        "title": "Ufugaji wa Black Soldier Fly",
+        "tagline": "Geuza taka za kikaboni kuwa chanzo cha protini kwa mifugo na samaki"
+      },
+      "fodder": {
+        "title": "Kilimo cha Malisho ya Hydroponic",
+        "tagline": "Lima malisho mapya ya mifugo ndani ya siku 4–8 hata kwenye nafasi ndogo"
+      },
+      "mushroom": {
+        "title": "Mwongozo Kamili wa Kilimo cha Uyoga wa Oyster",
+        "tagline": "Njia ya vitendo inayotegemea utafiti ya kulima uyoga wa oyster"
+      },
+      "cassava": {
+        "title": "Mbinu ya Kilimo Bila Palizi",
+        "tagline": "Mwongozo wa miezi mitano wa kilimo cha muhogo bila viua magugu"
+      }
+    }
   }
 }
