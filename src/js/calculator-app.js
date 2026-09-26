@@ -222,7 +222,7 @@
     countries.forEach(function (c) {
       var card = document.createElement("div");
       card.className = "calc-option-card" + (state.country === c.code ? " selected" : "") + (!c.active ? " disabled" : "");
-      card.innerHTML = '<span class="emoji">' + c.flag + "</span><span>" + c.name + "</span>" +
+      card.innerHTML = '<span class="emoji">' + c.flag + "</span><span>" + localizedCountryName(c) + "</span>" +
         (!c.active ? '<span style="font-size:0.68rem;color:var(--soil);">' + T("common", "comingSoon") + '</span>' : "");
       if (c.active) {
         card.onclick = function () {
