@@ -151,7 +151,13 @@
     if(ls) ls.setAttribute("aria-label",l.languageLabel || l.label); if(cs) cs.setAttribute("aria-label",l.countryLabel || l.country);
   }
 
-  document.addEventListener('goa:languagechange', function (event) { if (state) { state.language = event.detail.language; render(); } });
+  document.addEventListener('goa:languagechange', function (event) {
+    if (state) {
+      state.language = event.detail.language;
+      setupToolbar();
+      render();
+    }
+  });
 
   function render() {
     localizeToolbar();
