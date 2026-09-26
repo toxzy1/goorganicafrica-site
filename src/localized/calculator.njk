@@ -27,5 +27,5 @@ defaultLanguage: "{{ country.default_language or 'en' }}"
   <div class="calc-shell" id="calc-root"><p style="color:var(--ink-soft);padding:40px 0;text-align:center;" data-i18n="common.loading">Loading calculator&hellip;</p></div>
 </div>
 <script>window.__CALC_DATA__={commodities:{{ calculatorCommodities | dump | safe }},countries:{{ calculator.countries | dump | safe }},regions:{{ calculator.regions | dump | safe }},defaultCountry:"{{ country.code }}",defaultLanguage:"{{ country.default_language or 'en' }}"};</script>
-<script src="/js/calculator-engine.js"></script><script src="/js/calculator-advice.js"></script><script src="/js/calculator-app.js"></script>
+<script src="/js/calculator-engine.js?v=20260926"></script><script src="/js/calculator-advice.js"></script><script src="/js/calculator-app.js"></script>
 <script>if(window.FarmProfitCalculator){FarmProfitCalculator.init(document.getElementById("calc-root"),window.__CALC_DATA__);}</script>
