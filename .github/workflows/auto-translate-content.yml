@@ -1,4 +1,4 @@
-name: Automatic Free Content Translation Drafts
+name: Automatic Free Content Translation
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
       - name: Generate multilingual drafts
         run: python scripts/auto-translate-content.py
 
-      - name: Create translation pull request
+      - name: Publish reviewed translation drafts to main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -50,14 +50,10 @@ jobs:
             exit 0
           fi
 
-          BRANCH="auto/translations-$(date +%Y%m%d-%H%M%S)"
-          git checkout -b "$BRANCH"
           git config user.name "GoOrganicAfrica Translation Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/blog/posts src/ebooks
           echo "Translation files ready for review:"
           git status --short -- src/blog/posts src/ebooks
           git commit -m "Draft multilingual content translations"
-          git push origin "$BRANCH"
-
-          gh pr create --base main --head "$BRANCH" --title "Draft multilingual Blog/eBook translations" --body "Generated locally with the open-source Argos Translate engine. No commercial translation API or API key is used. Review every language before merging. English remains the source of truth."
+          git push origin main
