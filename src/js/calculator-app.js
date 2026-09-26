@@ -305,7 +305,7 @@
       var hasData = !!getCommodityCountryData(c, state.country);
       var card = document.createElement("div");
       card.className = "calc-option-card" + (state.commodity && state.commodity.id === c.id ? " selected" : "") + (!hasData ? " disabled" : "");
-      card.innerHTML = '<span class="emoji">' + c.icon + "</span><span>" + c.name + "</span>" +
+      card.innerHTML = '<span class="emoji">' + c.icon + "</span><span>" + localizedCommodityName(c) + "</span>" +
         (!hasData ? '<span style="font-size:0.65rem;color:var(--soil);">' + T("common", "dataComingSoon") + '</span>' : "");
       if (hasData) {
         card.onclick = function () {
@@ -448,7 +448,7 @@
     var refBox = document.createElement("div");
     refBox.className = "calc-reference-box";
     if (isRecurring) {
-      refBox.innerHTML = "Reference: <strong>" + cd.output_low + " \u2013 " + cd.output_high + "</strong> " + T("units","eggsPerBirdYear") + " (typical: " + cd.output_expected + ")<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>";
+      refBox.innerHTML = T("calc", "referenceOutput", {low: cd.output_low, high: cd.output_high, unit: T("units","eggsPerBirdYear"), expected: cd.output_expected, source: cd.source, date: cd.as_of});
     } else {
       refBox.innerHTML = T("calc", "referenceYield", {low: cd.yield_low, high: cd.yield_high, unit: cd.yield_unit, expected: cd.yield_expected, source: cd.source, date: cd.as_of});
     }
@@ -482,7 +482,7 @@
     var field = document.createElement("div");
     field.className = "calc-field";
     var label = document.createElement("label");
-    label.textContent = isRecurring ? T("units","eggsPerBirdYear") : T("calc", "yieldInput", {unit: cd.yield_unit, area: LAND_UNITS[state.landUnit] ? LAND_UNITS[state.landUnit].label.toLowerCase() : "area"});
+    label.textContent = isRecurring ? T("units","eggsPerBirdYear") : T("calc", "yieldInput", {unit: cd.yield_unit, area: localizedUnit(state.landUnit === "hectare" ? "hectare" : state.landUnit === "acre" ? "acre" : "plot", "area")});
     field.appendChild(label);
     var input = document.createElement("input");
     input.type = "number";
@@ -582,15 +582,22 @@
     refBox.className = "calc-reference-box";
     if (isCrop && hectares && hectares !== 1) {
       var scaledTotal = cd.cost_per_unit * hectares;
-      refBox.innerHTML = T("calc", "referenceCostScaled", {cost: fmtMoney(cd.cost_per_unit, currency), hectares: hectares.toFixed(3), quantity: state.quantity, unit: unitInfo.abbr, total: fmtMoney(scaledTotal, currency), source: cd.source, date: cd.as_of});
-      /*
-        " &times; " + hectares.toFixed(3) + " ha (" + state.quantity + " " + unitInfo.abbr + ")" +
-        " = estimated total <strong>" + fmtMoney(scaledTotal, currency) + "</strong>" +
-        "<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>" +
-        "<br><small style='opacity:0.8'>Each cost line below is per hectare. Your actual total is automatically scaled to your farm size.</small>";
+      refBox.innerHTML = T("calc", "referenceCostScaled", {
+        cost: fmtMoney(cd.cost_per_unit, currency),
+        hectares: hectares.toFixed(3),
+        quantity: state.quantity,
+        unit: unitInfo.abbr,
+        total: fmtMoney(scaledTotal, currency),
+        source: cd.source,
+        date: cd.as_of
+      });
     } else {
-      refBox.innerHTML = "Reference total cost per " + (isCrop ? "hectare" : state.commodity.unit_label) + ": <strong>" + fmtMoney(cd.cost_per_unit, currency) + "</strong>" +
-        "<br><span class=\"as-of\">Source: " + cd.source + " \u2014 as of " + cd.as_of + "</span>";
+      refBox.innerHTML = T("calc", "referenceTotalCost", {
+        unit: localizedDataUnit(isCrop ? "hectare" : state.commodity.unit_label),
+        cost: fmtMoney(cd.cost_per_unit, currency),
+        source: cd.source,
+        date: cd.as_of
+      });
     }
     root.appendChild(refBox);
 
@@ -755,8 +762,8 @@
 
     var isCrop = state.commodity.unit_mode === "crop";
     var unitInfo = isCrop ? (LAND_UNITS[state.landUnit] || LAND_UNITS.hectare) : null;
-    var displayQty = state.quantity + " " + (isCrop ? unitInfo.abbr : state.commodity.unit_label + (state.quantity != 1 ? "s" : ""));
-    var profitPerLabel = T("calc", "profitPer", {unit: isCrop ? unitInfo.label.replace(/s$/, "").toLowerCase() : state.commodity.unit_label});
+    var displayQty = state.quantity + " " + (isCrop ? unitInfo.abbr : localizedDataUnit(state.commodity.unit_label) + (state.quantity != 1 ? "s" : ""));
+    var profitPerLabel = T("calc", "profitPer", {unit: isCrop ? localizedUnit(state.landUnit === "hectare" ? "hectare" : state.landUnit === "acre" ? "acre" : "plot", unitInfo.label.replace(/s$/, "").toLowerCase()) : localizedDataUnit(state.commodity.unit_label)});
 
     // --- HEADER ---
     var summary = document.createElement("div");
@@ -765,7 +772,7 @@
       '<div class="calc-step-label">' + T("calc", "profitReport") + '</div>' +
       '<h2 class="calc-step-title" style="margin-bottom:4px;">' + localizedCommodityName(state.commodity) + "</h2>" +
       '<p style="color:var(--ink-soft);font-size:0.9rem;">' +
-        currentCountryObj().name + (state.region ? " \u2014 " + state.region : "") +
+        localizedCountryName(currentCountryObj()) + (state.region ? " \u2014 " + state.region : "") +
         " \u00b7 " + displayQty +
       "</p>";
     root.appendChild(summary);
