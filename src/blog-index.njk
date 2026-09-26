@@ -8,12 +8,12 @@ permalink: "/blog/"
 <section class="section" style="padding-top: 48px;">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">The Blog</span>
-      <h1>GoOrganicAfrica Farming Blog</h1>
-      <p class="lede">Practical, research-backed articles to help African farmers make better decisions and grow more profitably.</p>
+      <span class="eyebrow" data-i18n="blog.eyebrow">The Blog</span>
+      <h1 data-i18n="blog.title">GoOrganicAfrica Farming Blog</h1>
+      <p class="lede" data-i18n="blog.description">Practical, research-backed articles to help African farmers make better decisions and grow more profitably.</p>
     </div>
 
-    <h2 style="font-size:1.2rem;color:var(--green-deep);margin-bottom:16px;">Browse by Category</h2>
+    <h2 style="font-size:1.2rem;color:var(--green-deep);margin-bottom:16px;" data-i18n="blog.browseCategory">Browse by Category</h2>
 
     <!-- Category filter -->
     <div class="category-grid" style="margin-bottom: 40px;">
@@ -31,7 +31,7 @@ permalink: "/blog/"
     {% if collections.posts.length > 0 %}
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
       {% for post in collections.posts %}
-      <a href="/blog/{{ post.data.slug }}/" style="text-decoration:none;">
+      <a href="{{ post.url }}" class="content-variant" data-content-group="{{ post.data.translation_group or post.data.slug }}" data-content-language="{{ post.data.language or 'en' }}" style="text-decoration:none;">
         <div class="ebook-card" style="height:100%;">
           {% if post.data.featured_image %}
           <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}"
@@ -41,7 +41,7 @@ permalink: "/blog/"
           <h3 style="font-size:1.05rem;">{{ post.data.title }}</h3>
           <p class="tagline" style="font-size:0.88rem;">{{ post.data.description }}</p>
           <div class="card-footer">
-            <span style="font-size:0.8rem;color:var(--ink-soft);">Read article</span>
+            <span style="font-size:0.8rem;color:var(--ink-soft);" data-i18n="blog.readArticle">Read article</span>
             <span class="cta">&rarr;</span>
           </div>
         </div>
@@ -50,12 +50,12 @@ permalink: "/blog/"
     </div>
     {% else %}
     <div class="empty-state">
-      <p>Articles are being written and will appear here soon.</p>
+      <p data-i18n="blog.empty">Articles are being written and will appear here soon.</p>
     </div>
     {% endif %}
 
     <div style="text-align:center;margin-top:40px;">
-      <a class="btn btn-primary" href="/farm-profit-calculator/">Try the Free Farm Profit Calculator</a>
+      <a class="btn btn-primary" href="/farm-profit-calculator/" data-i18n="blog.tryCalculator">Try the Free Farm Profit Calculator</a>
     </div>
   </div>
 </section>
