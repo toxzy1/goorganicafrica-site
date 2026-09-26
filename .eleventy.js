@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   // Static passthroughs
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/i18n");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy({ "src/_redirects": "_redirects" });
