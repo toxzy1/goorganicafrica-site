@@ -292,6 +292,23 @@ collections:
           - {label: "Validation Notes", name: "validation_notes", widget: "text"}
 
 
+  - name: "translation_automation"
+    label: "🤖 Automatic Free Translation"
+    files:
+      - label: "Translation Automation Settings"
+        name: "settings"
+        file: "src/_data/translationSettings.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Enable Translation Automation", name: "enabled", widget: "boolean", default: true, hint: "Keep ON to automatically prepare translations when English Blog/eBook content changes."}
+          - {label: "Source Language", name: "source_language", widget: "select", options: ["en"], default: "en"}
+          - {label: "Target Languages", name: "target_languages", widget: "select", multiple: true, options: ["fr", "ar", "pt", "sw"], default: ["fr", "ar", "pt", "sw"], hint: "French, Arabic, Portuguese and Kiswahili."}
+          - {label: "Automatic Generation", name: "automatic_generation", widget: "boolean", default: true}
+          - {label: "Require Review", name: "require_review", widget: "boolean", default: true, hint: "Machine translations are marked in_review so they can be checked before publishing."}
+          - {label: "Translation Status for New Drafts", name: "mark_new_translations", widget: "select", options: ["in_review", "translated"], default: "in_review"}
+          - {label: "Automatically Update Existing Translations", name: "auto_update_existing_translations", widget: "boolean", default: true, hint: "When English source content changes, regenerate the corresponding language versions."}
+          - {label: "Notes", name: "notes", widget: "text", required: false}
+          
   - name: "languages_and_translations"
     label: "🌐 Languages & Translations"
     files:
