@@ -71,8 +71,8 @@
   </main>
   {% include "partials/footer.njk" %}
   <script src="/js/main.js" defer></script>
-  <script>window.GOA_LANGUAGES={{ siteLanguages.languages | dump | safe }}; window.GOA_TRANSLATIONS={{ siteTranslations | dump | safe }};</script>
-  <script src="/js/language-switcher.js?v=20260925" defer></script>
+  <script>window.GOA_LANGUAGES={{ siteLanguages.languages | dump | safe }}; window.GOA_TRANSLATIONS={en:{{ siteTranslations.en | dump | safe }}};</script>
+  <script src="/js/language-switcher.js?v=20260926" defer></script>
 
 </body>
 </html>
