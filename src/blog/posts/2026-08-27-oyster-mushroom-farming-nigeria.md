@@ -16,7 +16,10 @@ keywords:
   - how to grow oyster mushrooms Africa
   - mushroom farming Nigeria 2026
   - Pleurotus ostreatus Nigeria
-  - profitable mushroom business Nigeria
+  - profitable mushroom business Nigeriatranslation_group: blog-mushroom
+source_language: en
+translation_status: source
+
 ---
 
 <article class="blog-post">
