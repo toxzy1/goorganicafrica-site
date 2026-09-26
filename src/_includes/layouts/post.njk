@@ -49,7 +49,7 @@ layout: layouts/base.njk
       {% set hasTranslation = false %}
       {% for p in collections.posts %}
         {% if p.data.translation_group == translation_group %}
-          {% set hasTranslation = true %}<a href="{{ p.url }}" hreflang="{{ p.data.language or 'en' }}">{{ p.data.language or 'en' }}</a>
+          {% set hasTranslation = true %}<a data-content-variant data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}" hreflang="{{ p.data.language or 'en' }}">{{ p.data.language or 'en' }}</a>
         {% endif %}
       {% endfor %}
     </div>
