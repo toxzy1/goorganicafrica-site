@@ -43,5 +43,8 @@ search_terms:
   - mushroom business
   - mushroom production
   - fungi farming
+translation_group: ebook-mushroom
+source_language: en
+translation_status: source
 
 ---
