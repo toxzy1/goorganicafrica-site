@@ -14,8 +14,10 @@ permalink: "/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-pro
 </div>
 <div class="calc-app" id="calc-app">
   <div class="calc-topbar">
-    <a class="calc-brand" href="/"><img src="/images/brand-mark.svg" alt="" width="24" height="24"><span data-i18n="calc.calculatorBrand">Farm Profit Calculator</span></a>
-    <a class="calc-home-link" href="/" aria-label="{{ locale.language.homeLabel }}">⌂ <span data-i18n="common.home">{{ locale.language.homeLabel }}</span></a>
+    <div class="calc-topbar-left">
+      <a class="calc-brand" href="/"><img src="/images/brand-mark.svg" alt="" width="24" height="24"><span data-i18n="calc.calculatorBrand">Farm Profit Calculator</span></a>
+      <a class="calc-home-link" href="/" aria-label="{{ locale.language.homeLabel }}">⌂ <span data-i18n="common.home">{{ locale.language.homeLabel }}</span></a>
+    </div>
     <div class="calc-toolbar">
       <label class="calc-select-label" for="calc-country-switcher" data-i18n="calc.country">{{ locale.language.countryLabel }}</label>
       <select id="calc-country-switcher" class="calc-toolbar-select" aria-label="{{ locale.language.countryLabel }}"></select>
