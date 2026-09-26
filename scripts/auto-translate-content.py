@@ -95,7 +95,7 @@ def protect(text):
     return out, saved
 
 
-def translate_text(text, target, cache, translators):
+def translate_text(text, target, cache):
     if not text.strip() or not re.search(r"[A-Za-z]", text):
         return text
     key = (target, text)
@@ -104,21 +104,21 @@ def translate_text(text, target, cache, translators):
     safe, saved = protect(text)
     if not safe.strip():
         return text
-    result = translators[target].translate(safe)
+    result = argostranslate.translate.translate(safe, "en", target)
     for token, value in saved.items():
         result = result.replace(token, value)
     cache[key] = result
     return result
 
 
-def translate_body(body, target, cache, translators):
+def translate_body(body, target, cache):
     out = []
     for line in body.splitlines(keepends=True):
         ending = "\n" if line.endswith("\n") else ""
         content = line[:-1] if ending else line
-        out.append(line if not content.strip() else translate_text(content, target, cache, translators) + ending)
+        out.append(line if not content.strip() else translate_text(content, target, cache) + ending)
     return "".join(out)
-def translate_file(path, target, overwrite, status, cache, translators):
+def translate_file(path, target, overwrite, status, cache):
     source = path.read_text(encoding="utf-8")
     front, body = split_front(source)
     if scalar(front, "language") not in ("", "en"):
@@ -140,20 +140,20 @@ def translate_file(path, target, overwrite, status, cache, translators):
     for key in FIELDS:
         value = scalar(front, key)
         if value:
-            tf = replace_scalar(tf, key, translate_text(value, target, cache, translators))
+            tf = replace_scalar(tf, key, translate_text(value, target, cache))
 
     for key in LISTS:
         m = re.search(r"(?ms)^" + re.escape(key) + r":\n(?:  - .*\n?)+", front)
         if m:
             values = [x.strip().strip("'\"") for x in re.findall(r"(?m)^  - (.*)$", m.group(0))]
-            block = key + ":\n" + "".join("  - " + quote(translate_text(x, target, cache, translators)) + "\n" for x in values)
+            block = key + ":\n" + "".join("  - " + quote(translate_text(x, target, cache)) + "\n" for x in values)
             tf = re.sub(r"(?ms)^" + re.escape(key) + r":\n(?:  - .*\n?)+", block, tf, count=1)
     faq_match = re.search(r"(?ms)^faqs:\n((?:  - q:.*\n    a:.*\n?)*)", front)
     if faq_match:
         faq_lines = []
         for q, a in re.findall(r"(?m)^  - q: (.*)\n    a: (.*)$", faq_match.group(1)):
-            faq_lines.append("  - q: " + quote(translate_text(q.strip().strip("'\""), target, cache, translators)) + "\n")
-            faq_lines.append("    a: " + quote(translate_text(a.strip().strip("'\""), target, cache, translators)) + "\n")
+            faq_lines.append("  - q: " + quote(translate_text(q.strip().strip("'\""), target, cache)) + "\n")
+            faq_lines.append("    a: " + quote(translate_text(a.strip().strip("'\""), target, cache)) + "\n")
         block = "faqs:\n" + "".join(faq_lines)
         tf = re.sub(r"(?ms)^faqs:\n(?:  - q:.*\n    a:.*\n?)*", block, tf, count=1)
 
@@ -167,7 +167,7 @@ def translate_file(path, target, overwrite, status, cache, translators):
     if related:
         tf = replace_scalar(tf, "related_ebook_slug", related + "-" + target)
 
-    output.write_text("---\n" + tf.rstrip() + "\n---\n" + translate_body(body, target, cache, translators).lstrip(), encoding="utf-8")
+    output.write_text("---\n" + tf.rstrip() + "\n---\n" + translate_body(body, target, cache).lstrip(), encoding="utf-8")
     print("Created/updated:", output)
 
 
@@ -182,16 +182,12 @@ def main():
     if not files or not languages:
         return
     install_models(languages)
-    translators = {
-        target: argostranslate.translate.get_translation_from_codes("en", target)
-        for target in languages
-    }
     overwrite = bool(config.get("auto_update_existing_translations", True))
     status = config.get("mark_new_translations", "in_review")
     cache = {}
     for path in files:
         for target in languages:
-            translate_file(path, target, overwrite, status, cache, translators)
+            translate_file(path, target, overwrite, status, cache)
 
 
 if __name__ == "__main__":
