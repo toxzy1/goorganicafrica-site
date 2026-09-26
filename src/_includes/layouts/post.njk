@@ -35,8 +35,8 @@ layout: layouts/base.njk
 
     <!-- Breadcrumb for SEO -->
     <nav aria-label="Breadcrumb" style="font-size:0.85rem;color:var(--ink-soft);margin-bottom:16px;">
-      <a href="/" style="color:var(--soil);text-decoration:none;">Home</a> /
-      <a href="/blog/" style="color:var(--soil);text-decoration:none;">Blog</a> /
+      <a href="/" style="color:var(--soil);text-decoration:none;" data-i18n="common.home">Home</a> /
+      <a href="/blog/" style="color:var(--soil);text-decoration:none;" data-i18n="common.blog">Blog</a> /
       <span>{{ category }}</span>
     </nav>
 
@@ -45,15 +45,16 @@ layout: layouts/base.njk
 
     {% if translation_group %}
     <div class="translation-links" aria-label="Available article languages">
-      <strong>Language:</strong>
+      <strong data-i18n="blog.language">Language:</strong>
       {% set hasTranslation = false %}
       {% for p in collections.posts %}
         {% if p.data.translation_group == translation_group %}
-          {% set hasTranslation = true %}<a href="{{ p.url }}" hreflang="{{ p.data.language or 'en' }}">{{ p.data.language or 'en' }}</a>
+          {% set hasTranslation = true %}<a data-content-variant data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}" hreflang="{{ p.data.language or 'en' }}">{{ p.data.language or 'en' }}</a>
         {% endif %}
       {% endfor %}
     </div>
     {% endif %}
+    <div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group }}" hidden>{% for p in collections.posts %}{% if p.data.translation_group == translation_group %}<a data-content-variant data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}">{{ p.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>
 
     <!-- Article meta -->
     <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:12px 0 24px;font-size:0.82rem;color:var(--ink-soft);">
@@ -75,7 +76,7 @@ layout: layouts/base.njk
 
     <!-- Tags / related categories -->
     <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);">
-      <strong style="font-size:0.85rem;">Filed under:</strong>
+      <strong style="font-size:0.85rem;" data-i18n="blog.filedUnder">Filed under:</strong>
       <a href="/blog/" style="background:var(--sage-light);color:var(--green-deep);padding:4px 12px;border-radius:20px;font-size:0.82rem;text-decoration:none;margin-left:8px;font-weight:600;">{{ category }}</a>
     </div>
 
@@ -83,7 +84,7 @@ layout: layouts/base.njk
       {% set relatedEbook = collections.ebooks | findByDataSlug(related_ebook_slug) %}
       {% if relatedEbook %}
       <div style="margin-top:32px;padding:24px;border:1px solid var(--line);border-radius:12px;background:var(--sage-light);">
-        <span class="eyebrow">Recommended Guide</span>
+        <span class="eyebrow" data-i18n="blog.recommendedGuide">Recommended Guide</span>
         <h2 style="margin:8px 0;">{{ relatedEbook.data.title }}</h2>
         <p style="margin:0 0 16px;color:var(--ink-soft);">{{ relatedEbook.data.tagline }}</p>
         <a class="btn btn-primary btn-sm" href="{{ relatedEbook.data.selar_link }}">Get the Guide — {{ relatedEbook.data.price | currency }}</a>
@@ -93,9 +94,9 @@ layout: layouts/base.njk
 
     <!-- Internal navigation -->
     <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);">
-      <a class="btn btn-outline btn-sm" href="/blog/">&larr; All Articles</a>
-      <a class="btn btn-primary btn-sm" href="/farm-profit-calculator/">Try Farm Profit Calculator</a>
-      <a class="btn btn-outline btn-sm" href="/ebooks/">Browse Guides</a>
+      <a class="btn btn-outline btn-sm" href="/blog/"><span data-i18n="blog.allArticles">&larr; All Articles</span></a>
+      <a class="btn btn-primary btn-sm" href="/farm-profit-calculator/" data-i18n="blog.tryCalculator">Try Farm Profit Calculator</a>
+      <a class="btn btn-outline btn-sm" href="/ebooks/" data-i18n="blog.browseGuides">Browse Guides</a>
     </div>
 
   </div>
@@ -105,20 +106,20 @@ layout: layouts/base.njk
 <section class="section section-alt" style="padding:48px 0;">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Related Guides</span>
-      <h2>Go Deeper With Our Farming Guides</h2>
-      <p class="lede">Step-by-step organic farming guides written from real research and farm experience across Nigeria and Africa.</p>
+      <span class="eyebrow" data-i18n="blog.relatedGuides">Related Guides</span>
+      <h2 data-i18n="blog.goDeeper">Go Deeper With Our Farming Guides</h2>
+      <p class="lede" data-i18n="blog.relatedDescription">Step-by-step organic farming guides written from real research and farm experience across Nigeria and Africa.</p>
     </div>
     <div class="ebook-grid">
       {% for ebook in collections.ebooks %}
-      <a class="ebook-card" href="{{ ebook.url }}">
+      <a class="ebook-card content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}">
         <img class="ebook-card-icon" src="{{ ebook.data.icon }}"
           alt="{{ ebook.data.title }} farming guide cover">
         <h3>{{ ebook.data.title }}</h3>
         <p class="tagline">{{ ebook.data.tagline }}</p>
         <div class="card-footer">
           <span class="price">{{ ebook.data.price | currency }}</span>
-          <span class="cta">View Guide &rarr;</span>
+          <span class="cta" data-i18n="ebooks.viewGuide">View Guide &rarr;</span>
         </div>
       </a>
       {% endfor %}
