@@ -43,5 +43,8 @@ search_terms:
   - goat feed
   - sheep feed
   - cattle feed
+translation_group: ebook-fodder
+source_language: en
+translation_status: source
 
 ---
