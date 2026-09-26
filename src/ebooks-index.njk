@@ -22,10 +22,16 @@ permalink: "/ebooks/"
     </div>
     <div class="ebook-grid" id="ebook-results" aria-live="polite">
       {% for ebook in collections.ebooks %}
+      {% set cardKey = "ebooks.cards." + (
+        "bsf" if ebook.data.slug == "black-soldier-fly-farming" else
+        "fodder" if ebook.data.slug == "hydroponic-fodder-farming" else
+        "mushroom" if ebook.data.slug == "oyster-mushroom-farming" else
+        "cassava" if ebook.data.slug == "weed-free-farming-technique" else ebook.data.slug
+      ) %}
       <a class="ebook-card ebook-search-item content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}" data-search="{{ ebook.data.title }} {{ ebook.data.tagline }} {{ ebook.data.category }} {{ ebook.data.audience }} {{ ebook.data.slug }} {{ ebook.data.search_terms }}" data-ebook-title="{{ ebook.data.title }}">
         <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} eBook cover">
-        <h3>{{ ebook.data.title }}</h3>
-        <p class="tagline">{{ ebook.data.tagline }}</p>
+        <h3 data-i18n="{{ cardKey }}.title">{{ ebook.data.title }}</h3>
+        <p class="tagline" data-i18n="{{ cardKey }}.tagline">{{ ebook.data.tagline }}</p>
         <div class="card-footer">
           <span class="price">{{ ebook.data.price | currency }}</span>
           <span class="cta" data-i18n="ebooks.view">View eBook &rarr;</span>
@@ -36,4 +42,4 @@ permalink: "/ebooks/"
     <p id="ebook-no-results" class="ebook-no-results" hidden data-i18n="ebooks.noResults">No eBook matches that search yet. Try a broader farming topic or check back as new eBooks are added.</p>
   </div>
 </section>
-<script src="/js/ebook-search.js" defer></script>
+<script src="/js/ebook-search.js?v=20260928" defer></script>
