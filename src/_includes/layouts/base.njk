@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ language or 'en' }}" dir="{{ 'rtl' if language == 'ar' else 'ltr' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,18 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% if translation_group %}
+  {% for p in collections.posts %}
+    {% if p.data.translation_group == translation_group %}
+  <link rel="alternate" hreflang="{{ p.data.language or 'en' }}" href="{{ site.url }}{{ p.url }}">
+    {% endif %}
+  {% endfor %}
+  {% for ebook in collections.ebooks %}
+    {% if ebook.data.translation_group == translation_group %}
+  <link rel="alternate" hreflang="{{ ebook.data.language or 'en' }}" href="{{ site.url }}{{ ebook.url }}">
+    {% endif %}
+  {% endfor %}
+  {% endif %}
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
