@@ -109,12 +109,12 @@ def protect_markup(text: str) -> tuple[str, dict[str, str]]:
         return token
 
     patterns = [
-        r"https?://[^\s)\]<>\"']+",
-        r"\x60[^\x60]+\x60",
-        r"\[[^\]]+\]\([^\)]+\)",
         r"<[^>]+>",
         r"\{\{[^}]+\}\}",
         r"\{%[^%]+%\}",
+        r"\[[^\]]+\]\([^\)]+\)",
+        r"\x60[^\x60]+\x60",
+        r"https?://[^\s)\]<>\"']+",
     ]
     result = text
     for pattern in patterns:
