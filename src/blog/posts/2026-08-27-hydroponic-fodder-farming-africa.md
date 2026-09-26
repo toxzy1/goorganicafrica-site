@@ -16,7 +16,10 @@ keywords:
   - hydroponic fodder Nigeria
   - how to grow hydroponic fodder
   - livestock feed cost reduction Africa
-  - fresh fodder for poultry goats cattle
+  - fresh fodder for poultry goats cattletranslation_group: blog-fodder
+source_language: en
+translation_status: source
+
 ---
 
 <article class="blog-post">
