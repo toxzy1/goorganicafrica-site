@@ -16,7 +16,10 @@ keywords:
   - cassava farming Nigeria 2026
   - how to grow cassava in 5 months
   - cassava yield improvement Nigeria
-  - herbicide free cassava farming Africa
+  - herbicide free cassava farming Africatranslation_group: blog-cassava
+source_language: en
+translation_status: source
+
 ---
 
 <article class="blog-post">
