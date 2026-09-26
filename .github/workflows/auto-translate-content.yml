@@ -8,6 +8,7 @@ on:
       - "src/blog/posts/**"
       - "src/ebooks/**"
       - "scripts/auto-translate-content.py"
+      - "src/_data/translationSettings.json"
       - ".github/workflows/auto-translate-content.yml"
 
 concurrency:
