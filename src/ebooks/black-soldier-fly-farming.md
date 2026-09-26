@@ -43,5 +43,8 @@ search_terms:
   - animal feed
   - poultry feed
   - fish feed
+translation_group: ebook-bsf
+source_language: en
+translation_status: source
 
 ---
