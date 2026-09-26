@@ -10,6 +10,10 @@ on:
       - "scripts/auto-translate-content.py"
       - ".github/workflows/auto-translate-content.yml"
 
+concurrency:
+  group: goorganicafrica-translation-drafts
+  cancel-in-progress: true
+
 permissions:
   contents: write
   pull-requests: write
