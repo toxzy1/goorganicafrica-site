@@ -19,7 +19,7 @@ layout: layouts/base.njk
 }
 {% endset %}
 
-{% set translationLinks %}<div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group or slug }}" hidden>{% for ebook in collections.ebooks %}{% if (ebook.data.translation_group or ebook.data.slug) == (translation_group or slug) %}<a data-content-variant data-language="{{ ebook.data.language or 'en' }}" href="{{ ebook.url }}">{{ ebook.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>{% endset %}
+<div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group or slug }}" hidden>{% for ebook in collections.ebooks %}{% if (ebook.data.translation_group or ebook.data.slug) == (translation_group or slug) %}<a data-content-variant data-language="{{ ebook.data.language or 'en' }}" href="{{ ebook.url }}">{{ ebook.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>
 
 <section class="ebook-detail-hero">
   <div class="container">
