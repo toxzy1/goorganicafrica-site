@@ -16,7 +16,10 @@ keywords:
   - BSF farming Nigeria
   - insect protein livestock feed
   - how to farm black soldier fly
-  - alternative animal feed Nigeria
+  - alternative animal feed Nigeriatranslation_group: blog-bsf
+source_language: en
+translation_status: source
+
 ---
 
 <article class="blog-post">
