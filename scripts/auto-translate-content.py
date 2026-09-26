@@ -152,8 +152,8 @@ def translate_file(path, target, overwrite, status, cache, translators):
     if faq_match:
         faq_lines = []
         for q, a in re.findall(r"(?m)^  - q: (.*)\n    a: (.*)$", faq_match.group(1)):
-            faq_lines.append("  - q: " + quote(translate_text(q.strip().strip("'\""), target, cache)) + "\n")
-            faq_lines.append("    a: " + quote(translate_text(a.strip().strip("'\""), target, cache)) + "\n")
+            faq_lines.append("  - q: " + quote(translate_text(q.strip().strip("'\""), target, cache, translators)) + "\n")
+            faq_lines.append("    a: " + quote(translate_text(a.strip().strip("'\""), target, cache, translators)) + "\n")
         block = "faqs:\n" + "".join(faq_lines)
         tf = re.sub(r"(?ms)^faqs:\n(?:  - q:.*\n    a:.*\n?)*", block, tf, count=1)
 
