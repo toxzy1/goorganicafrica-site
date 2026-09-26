@@ -79,7 +79,7 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json", { cache: "force-cache" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20260927", { cache: "no-store" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
