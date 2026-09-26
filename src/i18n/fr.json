@@ -276,7 +276,25 @@
     "recommendedGuide": "Guide recommandé",
     "allArticles": "Tous les articles",
     "filedUnder": "Classé dans :",
-    "browseGuides": "Parcourir les guides"
+    "browseGuides": "Parcourir les guides",
+    "cards": {
+      "bsf": {
+        "title": "Élevage de mouche soldat noire en Afrique",
+        "description": "Transformez les déchets organiques en aliment riche en protéines et réduisez les coûts."
+      },
+      "fodder": {
+        "title": "Culture de fourrage hydroponique en Afrique",
+        "description": "Produisez du fourrage frais en 4 à 8 jours avec très peu d’espace."
+      },
+      "mushroom": {
+        "title": "Culture de pleurotes au Nigeria",
+        "description": "Découvrez la production, la récolte et la commercialisation pratique des pleurotes."
+      },
+      "cassava": {
+        "title": "Culture du manioc sans désherbage au Nigeria",
+        "description": "Une méthode pratique de production du manioc en cinq mois sans herbicides."
+      }
+    }
   },
   "ebooks": {
     "eyebrow": "eBooks",
@@ -296,6 +314,24 @@
     "viewGuide": "Voir le guide",
     "askWhatsApp": "Poser une question sur WhatsApp",
     "instantDelivery": "Paiement unique · livraison numérique instantanée",
-    "completeGuide": "Obtenir le guide complet"
+    "completeGuide": "Obtenir le guide complet",
+    "cards": {
+      "bsf": {
+        "title": "Élevage de la mouche soldat noire",
+        "tagline": "Transformez les déchets organiques en aliment riche en protéines pour le bétail et les poissons"
+      },
+      "fodder": {
+        "title": "Culture de fourrage hydroponique",
+        "tagline": "Produisez du fourrage frais pour le bétail en 4 à 8 jours, même dans un petit espace"
+      },
+      "mushroom": {
+        "title": "Guide complet de la culture des pleurotes",
+        "tagline": "Une approche pratique et fondée sur la recherche pour cultiver les pleurotes"
+      },
+      "cassava": {
+        "title": "Technique de culture sans désherbage",
+        "tagline": "Guide de cinq mois pour produire du manioc sans herbicides"
+      }
+    }
   }
 }
