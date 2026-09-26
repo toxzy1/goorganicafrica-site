@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "source_language": "en",
+  "target_languages": ["fr", "ar", "pt", "sw"],
+  "automatic_generation": true,
+  "require_review": true,
+  "mark_new_translations": "in_review",
+  "auto_update_existing_translations": true,
+  "notes": "English is the source of truth. The free Argos Translate engine creates draft translations in GitHub Actions. Review translations before publishing."
+}
