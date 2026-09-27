@@ -37,10 +37,10 @@ permalink: "/blog/"
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
       {% for post in collections.posts %}
       {% set cardKey = "blog.cards." + post.data.slug %}
-      {% if post.data.slug == "black-soldier-fly-farming-africa" %}{% set cardKey = "blog.cards.bsf" %}{% endif %}
-      {% if post.data.slug == "hydroponic-fodder-farming-africa" %}{% set cardKey = "blog.cards.fodder" %}{% endif %}
-      {% if post.data.slug == "oyster-mushroom-farming-nigeria" %}{% set cardKey = "blog.cards.mushroom" %}{% endif %}
-      {% if post.data.slug == "weed-free-cassava-farming-nigeria" %}{% set cardKey = "blog.cards.cassava" %}{% endif %}
+      {% if post.data.translation_group == "blog-bsf" or post.data.slug == "black-soldier-fly-farming-africa" %}{% set cardKey = "blog.cards.bsf" %}{% endif %}
+      {% if post.data.translation_group == "blog-fodder" or post.data.slug == "hydroponic-fodder-farming-africa" %}{% set cardKey = "blog.cards.fodder" %}{% endif %}
+      {% if post.data.translation_group == "blog-mushroom" or post.data.slug == "oyster-mushroom-farming-nigeria" %}{% set cardKey = "blog.cards.mushroom" %}{% endif %}
+      {% if post.data.translation_group == "blog-cassava" or post.data.slug == "weed-free-cassava-farming-nigeria" %}{% set cardKey = "blog.cards.cassava" %}{% endif %}
       {% set postCategoryKey = post.data.category %}
       {% if post.data.category == "Crop Production" or post.data.category == "crop-production" %}{% set postCategoryKey = "crop" %}{% endif %}
       {% if post.data.category == "Livestock Farming" or post.data.category == "livestock-farming" %}{% set postCategoryKey = "livestock" %}{% endif %}
