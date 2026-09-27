@@ -62,4 +62,6 @@ jobs:
           echo "Translation files ready for review:"
           git status --short -- src/blog/posts src/ebooks
           git commit -m "Draft multilingual content translations"
+          git fetch origin main
+          git rebase origin/main
           git push origin main
