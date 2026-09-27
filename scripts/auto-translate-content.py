@@ -172,7 +172,7 @@ def translate_file(path, target, overwrite, status, cache):
         )
         tf = re.sub(pattern, block, tf, count=1)
 
-    faq_pattern = r"(?ms)^faqs:\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:|\\Z)"
+    faq_pattern = r"(?ms)^faqs:\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:|\Z)"
     faq_match = re.search(faq_pattern, front)
     if faq_match:
         faq_lines = []
