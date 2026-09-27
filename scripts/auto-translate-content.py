@@ -98,22 +98,33 @@ def _needs_fallback(source, result, target):
 
 
 def _google_translate(text, target):
-    global _GOOGLE_TRANSLATOR
-    try:
-        if _GOOGLE_TRANSLATOR is None:
-            try:
-                from deep_translator import GoogleTranslator
-            except ImportError:
-                subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "deep-translator"])
-                from deep_translator import GoogleTranslator
-            _GOOGLE_TRANSLATOR = {}
-        if target not in _GOOGLE_TRANSLATOR:
-            from deep_translator import GoogleTranslator
-            _GOOGLE_TRANSLATOR[target] = GoogleTranslator(source="en", target=target)
-        return _GOOGLE_TRANSLATOR[target].translate(text)
-    except Exception as exc:
-        print("Google fallback unavailable:", exc)
-        return None
+    """Use Google's public endpoint with retries; never silently downgrade quality."""
+    import time
+    from urllib.parse import quote
+    from urllib.request import Request, urlopen
+
+    url = (
+        "https://translate.googleapis.com/translate_a/single"
+        "?client=gtx&sl=en&tl=" + quote(target) +
+        "&dt=t&q=" + quote(text)
+    )
+    last_error = None
+    for attempt in range(3):
+        try:
+            req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urlopen(req, timeout=30) as response:
+                data = json.loads(response.read().decode("utf-8"))
+            result = "".join(
+                part[0] for part in data[0]
+                if isinstance(part, list) and part and isinstance(part[0], str)
+            )
+            if result.strip():
+                return result
+            raise RuntimeError("Google returned an empty translation")
+        except Exception as exc:
+            last_error = exc
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"Google translation failed for {target}: {last_error}")
 
 
 def translate_text(text, target, cache):
@@ -160,11 +171,12 @@ def translate_text(text, target, cache):
         key = (target, chunk)
         if key not in cache:
             result = _google_translate(chunk, target)
-            # Only invoke the slower local model when Google actually fails.
-            if not result or not result.strip():
-                result = argostranslate.translate.translate(chunk, "en", target)
             if not result or not result.strip():
                 raise RuntimeError(f"Translation failed for {target}: {chunk[:120]!r}")
+            if _english_ratio(result) > 0.30 and _english_ratio(chunk) > 0.25:
+                raise RuntimeError(
+                    f"Translation quality check failed for {target}: excessive English remained"
+                )
             cache[key] = result
         translated.append(cache[key])
 
@@ -270,6 +282,17 @@ def translate_file(path, target, overwrite, status, cache):
         tf = replace_scalar(tf, "related_ebook_slug", related + "-" + target)
 
     translated_body = translate_markup(body, target, cache)
+
+    # Protected URLs are not translated by design. Localize internal ebook
+    # links after translating visible text.
+    if target != "en":
+        translated_body = re.sub(
+            r"/ebooks/([A-Za-z0-9-]+)(?=[/)\"'\s])",
+            lambda m: "/ebooks/" + m.group(1) if m.group(1).endswith("-" + target)
+            else "/ebooks/" + m.group(1) + "-" + target,
+            translated_body,
+        )
+
     result = "---\n" + tf.rstrip() + "\n---\n" + translated_body.lstrip()
     clean_check(result, output)
 
