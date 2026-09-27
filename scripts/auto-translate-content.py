@@ -142,20 +142,35 @@ def translate_file(path, target, overwrite, status, cache):
         if value:
             tf = replace_scalar(tf, key, translate_text(value, target, cache))
 
+    # Translate each top-level YAML list as a bounded block. This avoids
+    # accidentally swallowing the following field when a translated value
+    # contains punctuation or line breaks.
     for key in LISTS:
-        m = re.search(r"(?ms)^" + re.escape(key) + r":\n(?:  - .*\n?)+", front)
-        if m:
-            values = [x.strip().strip("'\"") for x in re.findall(r"(?m)^  - (.*)$", m.group(0))]
-            block = key + ":\n" + "".join("  - " + quote(translate_text(x, target, cache)) + "\n" for x in values)
-            tf = re.sub(r"(?ms)^" + re.escape(key) + r":\n(?:  - .*\n?)+", block, tf, count=1)
-    faq_match = re.search(r"(?ms)^faqs:\n((?:  - q:.*\n    a:.*\n?)*)", front)
+        pattern = r"(?ms)^" + re.escape(key) + r":\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:|\\Z)"
+        m = re.search(pattern, front)
+        if not m:
+            continue
+        values = []
+        for line in m.group(1).splitlines():
+            if re.match(r"^  - ", line):
+                values.append(line[4:].strip().strip("'\""))
+        block = key + ":\n" + "".join(
+            "  - " + quote(translate_text(value, target, cache)) + "\n"
+            for value in values
+        )
+        tf = re.sub(pattern, block, tf, count=1)
+
+    faq_pattern = r"(?ms)^faqs:\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:|\\Z)"
+    faq_match = re.search(faq_pattern, front)
     if faq_match:
         faq_lines = []
         for q, a in re.findall(r"(?m)^  - q: (.*)\n    a: (.*)$", faq_match.group(1)):
-            faq_lines.append("  - q: " + quote(translate_text(q.strip().strip("'\""), target, cache)) + "\n")
-            faq_lines.append("    a: " + quote(translate_text(a.strip().strip("'\""), target, cache)) + "\n")
+            q = q.strip().strip("'\"")
+            a = a.strip().strip("'\"")
+            faq_lines.append("  - q: " + quote(translate_text(q, target, cache)) + "\n")
+            faq_lines.append("    a: " + quote(translate_text(a, target, cache)) + "\n")
         block = "faqs:\n" + "".join(faq_lines)
-        tf = re.sub(r"(?ms)^faqs:\n(?:  - q:.*\n    a:.*\n?)*", block, tf, count=1)
+        tf = re.sub(faq_pattern, block, tf, count=1)
 
     tf = replace_scalar(tf, "language", target)
     tf = replace_scalar(tf, "source_language", "en")
