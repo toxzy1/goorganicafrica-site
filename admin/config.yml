@@ -3,7 +3,7 @@ backend:
   repo: toxzy1/goorganicafrica-site
   branch: main
   use_graphql: true
-  base_url: https://YOUR-OAUTH-PROXY.workers.dev
+  base_url: https://goorganicafrica-cms-auth.goorganicafricans.workers.dev
   auth_endpoint: /auth
 
 media_folder: "src/images/uploads"
