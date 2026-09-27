@@ -117,40 +117,57 @@ def _google_translate(text, target):
 
 
 def translate_text(text, target, cache):
-    """Translate prose in short units and retry unchanged English with Google Translate."""
+    """Translate prose in bounded Google requests; use Argos only as a failure fallback."""
     if not text or not text.strip() or not re.search(r"[A-Za-z]", text):
         return text
+
+    # The previous implementation sent one HTTP request for every sentence.
+    # With 8 source documents x 4 languages this could become hundreds/thousands
+    # of requests and leave GitHub Actions apparently stuck in this step.
+    # Google Translate accepts multi-sentence requests, so pack prose into
+    # bounded chunks while keeping paragraph/sentence order intact.
     sentences = re.split(r"(?<=[.!?])(?=\s+|$)", text)
     chunks = []
+    current = ""
+    max_chars = 3500
     for sentence in sentences:
-        words = sentence.split()
-        if len(words) <= 70:
-            chunks.append(sentence)
-        else:
-            for i in range(0, len(words), 60):
-                piece = " ".join(words[i:i+60])
-                if i + 60 < len(words):
-                    piece += " "
+        if not sentence:
+            continue
+        if current and len(current) + len(sentence) > max_chars:
+            chunks.append(current)
+            current = ""
+        if len(sentence) > max_chars:
+            words = sentence.split()
+            piece = ""
+            for word in words:
+                if piece and len(piece) + len(word) + 1 > max_chars:
+                    chunks.append(piece)
+                    piece = ""
+                piece += ("" if not piece else " ") + word
+            if piece:
                 chunks.append(piece)
+        else:
+            current += sentence
+    if current:
+        chunks.append(current)
+
     translated = []
     for chunk in chunks:
-        if not chunk or not chunk.strip() or not re.search(r"[A-Za-z]", chunk):
+        if not chunk.strip() or not re.search(r"[A-Za-z]", chunk):
             translated.append(chunk)
             continue
+
         key = (target, chunk)
         if key not in cache:
-            # Prefer Google Translate for quality on the existing multilingual
-            # content. Argos remains the offline fallback if Google is unavailable.
             result = _google_translate(chunk, target)
+            # Only invoke the slower local model when Google actually fails.
             if not result or not result.strip():
                 result = argostranslate.translate.translate(chunk, "en", target)
-            elif _needs_fallback(chunk, result, target):
-                # Retry with Argos only when Google unexpectedly leaves substantial English.
-                argos_result = argostranslate.translate.translate(chunk, "en", target)
-                if argos_result and _english_ratio(argos_result) < _english_ratio(result):
-                    result = argos_result
+            if not result or not result.strip():
+                raise RuntimeError(f"Translation failed for {target}: {chunk[:120]!r}")
             cache[key] = result
         translated.append(cache[key])
+
     return "".join(translated)
 
 
