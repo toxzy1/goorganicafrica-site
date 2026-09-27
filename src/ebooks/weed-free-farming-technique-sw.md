@@ -5,7 +5,7 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Teknolojia ya kilimo ya Weed-Free"
 slug: "weed-free-farming-technique-sw"
 meta_title: "Kilimo cha Cassava nchini Nigeria | GoOrganicAfrica"
-meta_description: "Kugundua mbinu ya kilimo cha cassava isiyo na magugu ambayo husaidia wakulima wa Nigeria kupata mavuno makubwa katika miezi ya 5 bila dawa za kuua magugu. Mwongozo wa hatua kwa hatua kutoka kwa maandalizi ya ardhi kwa kuvuna."
+meta_description: "Kugundua mbinu ya kilimo cha cassava isiyo na magugu ambayo husaidia wakulima wa Nigeria kupata mavuno makubwa katika miezi ya 5 bila dawa za kuua magugu.Mwongozo wa hatua kwa hatua kutoka kwa maandalizi ya ardhi kwa kuvuna."
 description: "Jifunze mbinu ya kilimo cha cassava ya kupanda, kusimamia na kuvuna cassava katika miezi mitano bila herbicides."
 tagline: "Mwezi wa tano ni wakati wa kuvuna mwongozo wa cassava isiyo na magugu, bila herbicides"
 icon: /images/ebooks/weed-free-cassava.jpg
@@ -34,7 +34,7 @@ faqs:
   - q: "Je, hii ni kwa ajili ya Cassava?"
     a: "Mwongozo umejengwa karibu na uzalishaji wa cassava, kutoka kwa prep ardhi kupitia mavuno."
   - q: "Ni nani aliye bora zaidi katika mwongozo huu?"
-    a: "Wakulima ambao wanataka mbinu ya utendaji, iliyojaribiwa ya kudhibiti magugu bila kutegemea dawa za kemikali."
+    a: "Wakulima ambao wanataka njia ya vitendo, iliyojaribiwa ya kudhibiti magugu bila kutegemea dawa za kemikali."
 search_terms:
   - "Kilimo cha casava"
   - "Kilimo cha bure"

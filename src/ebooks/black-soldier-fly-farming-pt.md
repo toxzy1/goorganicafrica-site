@@ -2,11 +2,11 @@
 language: "pt"
 layout: layouts/ebook.njk
 permalink: "/ebooks/{{ slug }}/"
-title: "Agricultores Black Soldier Fly"
+title: "Agricultor de voo soldado negro"
 slug: "black-soldier-fly-farming-pt"
 meta_title: "Black Soldier Fly Farming in Nigeria & África"
-meta_description: "Soldado Negro A agricultura de moscas transforma resíduos orgânicos em alimentos para animais de alta proteína. Saiba como os agricultores africanos estão economizando até 60% dos custos de alimentação usando larvas BSF em 2026."
-description: "Saiba como cultivar larvas de soldados negros e transforme resíduos orgânicos em ração de alta proteína para aves, peixes e gado em África."
+meta_description: "Soldado Negro A agricultura de mosca transforma resíduos orgânicos em alimentos para animais de alta proteína.Saiba como os agricultores africanos estão economizando até 60% dos custos de alimentação usando larvas BSF em 2026."
+description: "Aprenda a cultivar larvas de soldados negros e a transformar resíduos orgânicos em alimentos ricos em proteínas para aves, peixes e gado em África."
 tagline: "Transformar resíduos orgânicos em animais ricos em proteínas e fonte de alimentação de peixes"
 icon: /images/ebooks/black-soldier-fly.jpg
 price: 3000
@@ -18,17 +18,17 @@ category: "Produção de animais e alimentos para animais"
 audience:
   - "Aves de capoeira"
   - "Pescadores"
-  - "Agricultores que pretendem reduzir os custos de alimentação animal"
+  - "Agricultores que procuram reduzir os custos de alimentação animal"
   - "Agricultores interessados em sistemas de resíduos a valor"
 benefits:
   - "Guia prático para produzir larvas de mosca de soldado preto como fonte de alimentação"
   - "Transforma os resíduos orgânicos numa produção agrícola utilizável"
   - "Adequado para configurações de pequena e comercial"
-  - "Escrito a partir da experiência de produção real"
+  - "Escrito a partir de experiência de produção real"
 bonus: "Consulta gratuita do WhatsApp após compra"
 faqs:
-  - q: "O que é a agricultura de moscas de soldado negro?"
-    a: "É a prática de reproduzir moscas de soldado preto para que suas larvas possam ser colhidas como um ingrediente de alimentação rico em proteínas para animais e peixes."
+  - q: "O que é que o soldado negro faz?"
+    a: "É a prática de reprodução de moscas de soldado preto para que suas larvas possam ser colhidas como um ingrediente alimentar rico em proteínas para animais e peixes."
   - q: "Isto é adequado para iniciantes?"
     a: "Sim, o guia é escrito de forma prática, passo a passo, para os agricultores novos no processo."
   - q: "A que podem ser alimentadas as larvas?"
@@ -38,8 +38,8 @@ faqs:
 search_terms:
   - "Agricultura BSF"
   - "preto soldado voar"
-  - "criação de insectos"
-  - "proteína do inseto"
+  - "criação de insetos"
+  - "proteína de insecto"
   - "Alimentos para animais"
   - "Alimentos para aves de capoeira"
   - "ração dos peixes"
