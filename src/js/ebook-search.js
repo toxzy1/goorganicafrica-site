@@ -40,23 +40,34 @@ document.addEventListener("DOMContentLoaded", function () {
     return Math.min(scoreValue, 75);
   }
 
+  function variantInfo(item) {
+    var slug = item.getAttribute("data-content-slug") || "";
+    var match = slug.match(/^(.*)-(fr|ar|pt|sw)$/);
+    var fallbackGroup = match ? match[1] : slug;
+    var fallbackLanguage = match ? match[2] : "en";
+    return {
+      group: item.getAttribute("data-content-group") || fallbackGroup || item.getAttribute("href"),
+      language: item.getAttribute("data-content-language") || fallbackLanguage
+    };
+  }
+
   function preferredVariants(language) {
     var groups = {};
     items.forEach(function (item) {
-      var group = item.getAttribute("data-content-group") || item.getAttribute("href");
-      if (!groups[group]) groups[group] = [];
-      groups[group].push(item);
+      var info = variantInfo(item);
+      if (!groups[info.group]) groups[info.group] = [];
+      groups[info.group].push({ item: item, language: info.language });
     });
 
     var preferred = [];
     Object.keys(groups).forEach(function (group) {
       var variants = groups[group];
-      var target = variants.find(function (item) {
-        return (item.getAttribute("data-content-language") || "en") === language;
-      }) || variants.find(function (item) {
-        return (item.getAttribute("data-content-language") || "en") === "en";
+      var target = variants.find(function (entry) {
+        return entry.language === language;
+      }) || variants.find(function (entry) {
+        return entry.language === "en";
       }) || variants[0];
-      if (target) preferred.push(target);
+      if (target) preferred.push(target.item);
     });
     return preferred;
   }
