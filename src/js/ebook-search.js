@@ -78,9 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
       return b.score - a.score || a.index - b.index;
     });
 
-    items.forEach(function (item) { item.hidden = true; });
+    items.forEach(function (item) { item.hidden = true; item.classList.add("is-language-hidden"); });
     ranked.forEach(function (entry) {
       entry.item.hidden = false;
+      entry.item.classList.remove("is-language-hidden");
       results.appendChild(entry.item);
     });
     noResults.hidden = ranked.length !== 0;
