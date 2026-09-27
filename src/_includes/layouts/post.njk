@@ -87,7 +87,7 @@ layout: layouts/base.njk
         <span class="eyebrow" data-i18n="blog.recommendedGuide">Recommended Guide</span>
         <h2 style="margin:8px 0;">{{ relatedEbook.data.title }}</h2>
         <p style="margin:0 0 16px;color:var(--ink-soft);">{{ relatedEbook.data.tagline }}</p>
-        <a class="btn btn-primary btn-sm" href="{{ relatedEbook.data.selar_link }}">Get the Guide — {{ relatedEbook.data.price | currency }}</a>
+        <a class="btn btn-primary btn-sm" href="{{ relatedEbook.data.selar_link }}"><span data-i18n="ebooks.getGuide">Get This Guide Now</span> — {{ relatedEbook.data.price | currency }}</a>
       </div>
       {% endif %}
     {% endif %}
