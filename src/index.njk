@@ -127,9 +127,12 @@ permalink: "/"
       <h2 data-i18n="home.ebooksTitle">Go Deeper With Practical eBooks</h2>
       <p class="lede" data-i18n="home.ebooksDescription">Practical, step-by-step agricultural eBooks — written from real research and farm experience.</p>
     </div>
-    <div class="ebook-grid">
+    <div class="ebook-grid" id="homepage-ebook-results">
       {% for ebook in collections.ebooks %}
-      <a class="ebook-card" href="{{ ebook.url }}">
+      <a class="ebook-card content-variant" href="{{ ebook.url }}"
+         data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}"
+         data-content-language="{{ ebook.data.language or 'en' }}"
+         data-content-slug="{{ ebook.data.slug }}">
         <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} guide cover">
         <h3>{{ ebook.data.title }}</h3>
         <p class="tagline">{{ ebook.data.tagline }}</p>
