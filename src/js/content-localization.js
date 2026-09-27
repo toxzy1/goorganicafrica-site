@@ -26,8 +26,10 @@
       }) || variants[0];
 
       variants.forEach(function (item) {
-        item.hidden = item !== preferred;
-        item.classList.toggle("is-language-hidden", item !== preferred);
+        var isPreferred = item === preferred;
+        item.hidden = !isPreferred;
+        item.style.display = isPreferred ? "" : "none";
+        item.classList.toggle("is-language-hidden", !isPreferred);
       });
     });
   }
