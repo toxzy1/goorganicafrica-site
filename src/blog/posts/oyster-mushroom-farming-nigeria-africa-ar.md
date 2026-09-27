@@ -17,9 +17,8 @@ keywords:
   - "زراعة الفطر"
   - "Pleurotus ostreatus Nigeria"
   - "تجارة الفطر المربحة في نيجيريا"
-
-source_language: "en"
 translation_group: "blog-mushroom"
+source_language: "en"
 translation_status: "in_review"
 ---
 GoA TOKEN 0 END Nigeria produces roughly 300 tonnes of mushrooms per year. The country needs approximately 1,200. وهذه الفجوة - أي العجز السنوي البالغ ٩٠٠ طن - ليست مشكلة. إنها فرصة وبالنسبة لصغار المزارعين الذين يفهمون عملية الإنتاج، فإن زراعة الفطر المحارية هي واحدة من أكثر الأعمال التجارية الزراعية المتاحة في نيجيريا اليوم تيسيراً وسرعاً وأكثرها غرابة.  
@@ -36,13 +35,12 @@ GA TOKEN 0 ENDThe Middle East and Africa oyster mushroom cultivation market was 
 
 GA TOKEN 0 ENDOf the many mushroom species that can be cultivated commercially, oyster mushrooms (Pleurotus ostreatus) stand out as the practical choice for Nigerian and West African producers for several reasons:  
 
-
-GoA TOKEN 0 ENDGOA TOKEN 1 ENDTropical tolerance:GOA TOKEN وتثمر فطر أوستر في درجات حرارة تتراوح بين 24 درجة مئوية و32 درجة مئوية - وهي بالتحديد نطاق معظم البيئات المتنامية النيجيرية دون الحاجة إلى نظم مكلفة لمراقبة المناخ.  BAR   BAR   BAR 
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSubstrate versatility:GOA TOKEN 2 وهي تنمو على نطاق واسع من مواد النفايات الزراعية - المنشار، وأوساخ الأرز، وكعكة النخيل، وكعب الذرة، وأكياس قصب السكر، وبذور القطن - وجميعها متاحة بشكل واف في جميع أنحاء نيجيريا بتكلفة منخفضة.  BAR   BAR   BAR 
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDShort production cycle:GOA TOKEN 2 END ومن التلقيح إلى الحصاد الأول عادة ما يتراوح بين ٢١ و ٣٥ يوما، مع إمكانية الحصول على حصاد إضافي )نبات( يتراوح بين ٢ و ٣ محصولا من نفس الحقيبة الفرعية على مدى الأسابيع التالية.  BAR   BAR   BAR 
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDMarket acceptance:GOA TOKEN 2 END فطر الأوستر هي أكثر الفطر المزروعة قبولا في الأسواق الحضرية النيجيرية والمطاعم والفنادق والمتاجر الكبرى.  BAR   BAR   BAR 
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDLow land requirement:GOA TOKEN 2 END وتعمل مزرعة فطر منتجة في غرفة واحدة أو في مبنى صغير - مما يجعلها واحدة من أكثر المؤسسات الزراعية كفاءة من حيث الأراضي.  BAR   BAR   BAR 
-
+GoA TOKEN 1 ENDGOA TOKEN 2 ENDTropical tolerance:GOA TOKEN 3 وتثمر فطر أوستر في درجات حرارة تتراوح بين 24 درجة مئوية و32 درجة مئوية - وهي بالتحديد نطاق معظم البيئات المتنامية النيجيرية دون الحاجة إلى نظم مكلفة لمراقبة المناخ.  BAR   BAR 
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDSubstrate versatility:GOA TOKEN 7 وهي تنمو على نطاق واسع من مواد النفايات الزراعية - المنشار، وأوساخ الأرز، وكعكة النخيل، وكعب الذرة، وأكياس قصب السكر، وبذور القطن - وجميعها متاحة بشكل واف في جميع أنحاء نيجيريا بتكلفة منخفضة.  BAR   BAR   BAR   BAR 
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDShort production cycle:GOA TOKEN 11 END ومن التلقيح إلى الحصاد الأول عادة ما يتراوح بين ٢١ و ٣٥ يوما، مع إمكانية الحصول على حصاد إضافي )نبات( يتراوح بين ٢ و ٣ محصولا من نفس الحقيبة الفرعية على مدى الأسابيع التالية. حسناً
+GOA TOKEN 13 ENDGOA TOKEN 14 ENDMarket acceptance:GOA TOKEN 15 END فطر الأوستر هي أكثر الفطر المزروعة قبولا في الأسواق الحضرية النيجيرية والمطاعم والفنادق والمتاجر الكبرى.  BAR   BAR   BAR 
+GOA TOKEN 17 ENDGOA TOKEN 18 ENDLow land requirement:GOA TOKEN 19 END وتعمل مزرعة فطر منتجة في غرفة واحدة أو في مبنى صغير - مما يجعلها واحدة من أكثر المؤسسات الزراعية كفاءة من حيث الأراضي. حسناً
+BAR   BAR   BAR   BAR 
 
 GoA TOKEN 0 END THE Complete Oyster Mushroom Production ProcessGOA TOKEN 1
 
@@ -53,12 +51,12 @@ GoA TOKEN 0 ENDStage 1 - Substrate PreparationGOA TOKEN 1
 GA TOKEN 0 ENDThe substrate is the growing medium that feeds mushroom — it is the equivalent of soil in crop farming. وفيما يتعلق بفطر المحار في نيجيريا، فإن الحد الأدنى المعياري هو مزيج من الخشب الصلب (مصدر الكربون الرئيسي)، وسقف الأرز (للإزهار والتصريف)، وملحق تغذوي مثل كعكة النخيل (PKC) أو طحين الذرة (لدعم محتوى البروتين والعائد).  
 
 GA TOKEN 0 ENDA الصيغة القياسية لإنتاج نحو 50 كيساً فرعياً (1 كغم لكل منها) هي:GOA TOKEN 1 END
-
-GoA TOKEN 0 ENDSawdust: 20 kgGOA TOKEN 1 END
-GOA TOKEN 0 ENDRice husk: 9.5 kgGOA TOKEN 1
-GoA TOKEN 0 ENDPKC or corn flour: 12 kgGOA TOKEN 1
-GoA TOKEN 0 ENDCalcium carbonate (agricultural lime): 1 kgGOA TOKEN 1 END
-
+BAR   BAR   BAR 
+GoA TOKEN 3 ENDSawdust: 20 kgGOA TOKEN 4 END
+GOA TOKEN 5 ENDRice husk: 9.5 kgGOA TOKEN 6 END
+GoA TOKEN 7 ENDPKC or corn flour: 12 kgGOA TOKEN 8 END
+GOA TOKEN 9 ENDCalcium carbonate (agricultural lime): 1 kgGOA TOKEN 10 END
+BAR   BAR   BAR 
 
 GOA TOKEN 0 ENDA critical note on the calcium carbonate: only agricultural lime (calcium carbonate, CaCO3) should be used - never construction lime (hydrated lime or quicklime), which burns skin on contact and kills mushroom mycelium immediately. هذه المواد تبدو متشابهة لكن لها خصائص كيميائية مختلفة تماماً كربونات الكالسيوم ناعمة وصغيرة ولا تحرق الجلد  
 
@@ -72,8 +70,7 @@ GoA TOKEN 0 ENDStage 3 - Pasteurization (Sterilization)GOA TOKEN 1
 
 إن الإفراط في التمجيد يقتل الكائنات المجهرية المتنافسة الضارة - البكتيريا والولد وغيرها من الفطريات - التي من شأنها أن تتنافس مع أسطورة الفطر وتلوث الحقائب. وهي واحدة من أهم المراحل في العملية برمتها. والسرقة أو عدم كفاية التمدد هي السبب الرئيسي لخسائر التلوث بين مزارعي الفطر الجدد.  
 
-
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSteam pasteurization of substrate bags using a metal drum over firewood — the most widely used method in Nigerian mushroom farming. كوك لمدة 6 ساعات (حطب) أو 4 ساعات (غاز). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDSteam pasteurization of substrate bags using a metal drum over firewood — the most widely used method in Nigerian mushroom farming. كوك لمدة 6 ساعات (حطب) أو 4 ساعات (غاز). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 المنهج النيجيري الصغير يستخدم طبول معدني على حطب أو حريق غاز وتوضع أكياس فرعية على منصة خشبية أو معدنية متطورة داخل الطبل - ويجب ألا تجلس مباشرة في الماء، حيث أن البخار (لا يغلي الماء) هو ما يغذي الحقائب. وقت الطبخ هو 6 ساعات مع الحطب أو 4 ساعات مع الغاز. وبعد الطهي، يسمح للأكياس بأن تبرد تماما )التي قد تستغرق ١٠-١٢ ساعة( قبل الشروع في التلقيح. إنتخاب الحقائب الدافئه يقتل السباون  
 
@@ -81,15 +78,13 @@ GoA TOKEN 0 ENDStage 4 - InoculationGOA TOKEN
 
 التنويم هو عملية إدخال غسيل الفطر (الفطر بذرة) إلى أكياس تحتية وهذه هي المرحلة الأكثر عرضة للفشل في التلوث إذا لم يتم الحفاظ على الصحة بصرامة. أهم قواعد التلقيح هي:
 
+GoA TOKEN 1 END لا يَتكلّمُ بينما يَشْغّلُ - يُطلِعُ قطراتَ saliva التي تَحْملُ الكائنات المجهريةَ الملوثةَ.  BAR   BAR   BAR 
+GoA TOKEN 3 ENDSterilize hands with 80% ethanol before starting, and re-sterilize after every 5-10 bags.  BAR   BAR 
+GoA TOKEN 5 ENDWork near an ethanol flame - keep the spawn bottle mouth close to the flame when opening to create a sterile airflow barrier.  BAR   BAR   BAR 
+BAR   BAR   BAR  أضف 2-3 طاولات من الرش لكل كيس من الكيلومترات، يهتز بلطف لتوزيعه، ثم يغلق ويربط على الفور.  BAR   BAR   BAR   BAR 
+BAR   BAR   BAR 
 
-GoA TOKEN 0 END لا يَتكلّمُ بينما يَشْغّلُ - يُطلِعُ قطراتَ saliva التي تَحْملُ التلويثَ الكائنات المجهرية.  
-GoA TOKEN 0 ENDSterilize hands with 80% ethanol before starting, and re-sterilize after every 5-10 bags.  
-GoA TOKEN 0 ENDWork near an ethanol flame - keep the spawn bottle mouth close to the flame when opening to create a sterile airflow barrier.  
-GoA TOKEN 0 ENDAdd 2-3 tablespoons of spawn per 1 kg bag, shake gently to distribute, then close and tie immediately.  
-
-
-
-GoA TOKEN 0 ENDGOA TOKEN 1 ENDOyster mushroom spawn in glass bottles at different stages of colonization - from freshly inoculated grain (right) to fully colonized white mycelium (left). وتكتسي نوعية البخار أهمية حاسمة في نجاح الإنتاج. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GoA TOKEN 1 ENDGOA TOKEN 2 ENDOyster mushroom spawn in glass bottles at different stages of colonization - from freshly inoculated grain (right) to fully colonized white mycelium (left). وتكتسي نوعية البخار أهمية حاسمة في نجاح الإنتاج. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GoA TOKEN 0 ENDStage 5 - IncubationGOA TOKEN
 
@@ -97,8 +92,7 @@ GoA TOKEN 0 ENDAfter inoculation, bags are placed in a dark, clean incubation ro
 
 يجب أن يُرصد بعناية أثناء هذه المرحلة Remove any bag showing green, black or persistentصف coloration immediately - these indicate contamination by Aspergillus niger, Trichoderma or other competing moulds that can spread to adjacent bags. The only safe response to contamination is immediate removal of the affected bag from the incubation room.  
 
-
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSubstrate bags in the incubation room at different stages of mycelium colonization - from newly inoculated dark bags (top) to heavily colonized white bags (bottom). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDSubstrate bags in the incubation room at different stages of mycelium colonization - from newly inoculated dark bags (top) to heavily colonized white bags (bottom). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GoA TOKEN 0 ENDStage 6 - Fruiting and HarvestGOA TOKEN 1
 
@@ -120,42 +114,37 @@ GoA TOKEN 0 END THE African Market Opportunity Beyond NigeriaGOA TOKEN 1 END
 
 حسناً
 
-
-ولا تنتج الشبكة سوى 300 طن من الفطر سنوياً مقابل طلب يقدر بـ 200 1 طن - مما يخلق فرصة سوقية كبيرة للمنتجين الجدد.  
-GoA TOKEN 0 ENDOyster mushrooms are the most practical species for Nigerian farmers due to their tropical temperature tolerance, substrate versatility and market acceptance.  
-إن دورة الإنتاج الكاملة من التلقيح إلى الحصاد الأول هي ٢١-٣٥ يوما، مع احتمال وجود فرشتين إضافيتين لكل كيس.  
-والنظافة الصحية للتغذية هي أهم مرحلتين - فالتلوث في أي نقطة هو السبب الرئيسي لفشل الإنتاج.  
-GoA TOKEN 0 ENDFresh mush mushrooms retail at .7,280-.10,000 per kilogram in Nigerian urban markets, representing exceptional margin potential.  
-والمتطلبات المتعلقة بالهياكل الأساسية الداخلية ضئيلة - فغرفة واحدة أو مبنى صغير يكفي لتشغيل عملية صغيرة مربحة.  
+ولا تنتج الشبكة سوى 300 طن من الفطر سنوياً مقابل طلب يقدر بـ 200 1 طن - مما يخلق فرصة سوقية كبيرة للمنتجين الجدد.  BAR   BAR   BAR 
+GoA TOKEN 3 ENDOyster mushrooms are the most practical species for Nigerian farmers due to their tropical temperature tolerance, substrate versatility and market acceptance.  BAR   BAR 
+إن دورة الإنتاج الكاملة من التلقيح إلى الحصاد الأول هي ٢١-٣٥ يوما، مع احتمال وجود فرشتين إضافيتين لكل كيس.  BAR   BAR   BAR 
+والنظافة الصحية للتغذية هي أهم مرحلتين - فالتلوث في أي نقطة هو السبب الرئيسي لفشل الإنتاج.  BAR   BAR   BAR   BAR 
+GoA TOKEN 9 ENDFresh mush mushrooms retail at .7,280-.10,000 per kilogram in Nigerian urban markets, representing exceptional margin potential.  BAR   BAR   BAR 
+والمتطلبات المتعلقة بالهياكل الداخلية هي الحد الأدنى - فغرفة واحدة أو مبنى صغير يكفي لتشغيل عملية صغيرة مربحة. حسناً
 
 
 BAR   BAR   BAR 
 
+كم سيكلف البدء في زراعة الفطر المحار في نيجيريا؟  BAR   BAR   BAR 
+GA TOKEN 3 ENDA small-scale start with 50 bags requires investment in substrate materials (sawdust, rice husk, PKC, calcium carbonate), spawn, heat-resistant bags and basic inoculation equipment (ethanol, cotton wool). ويبدأ كثير من المزارعين في نيجيريا بصورة مربحة في هذا النطاق قبل التوسع، حيث تراوحت تكاليف البدء الإجمالية في دفعة من 50 حقيبة عادة بين 000 30 و 000 80 دولار حسب تكاليف المواد المحلية.  BAR   BAR 
+BAR   BAR   BAR 
 
-كم سيكلف البدء في زراعة الفطر المحار في نيجيريا؟  
-GA TOKEN 0 ENDA small-scale start with 50 bags requires investment in substrate materials (sawdust, rice husk, PKC, calcium carbonate), spawn, heat-resistant bags and basic inoculation equipment (ethanol, cotton wool). ويبدأ كثير من المزارعين في نيجيريا بصورة مربحة في هذا النطاق قبل التوسع، حيث تراوحت تكاليف البدء الإجمالية في دفعة من 50 حقيبة عادة بين 000 30 و 000 80 دولار حسب تكاليف المواد المحلية.  
+ ما هو أكبر خطأ يقوم به مزارعو الفطر الجديد؟  BAR   BAR   BAR 
+GoA TOKEN 3 ENDInadequate pasteurization and poor inoculation hygiene are the two most common causes of failure. Many farmers either Cook bags for an insufficient time, or talk/move around too much during inoculation, introducing contamination that destroys the entire batch. ويعتبر تناول مسألة النظافة الصحية على أنها غير قابلة للتفاوض - وليس على سبيل الإزعاج - أهم تحول في العقل بالنسبة للمنتجين الجدد.  BAR   BAR 
+BAR   BAR   BAR 
 
+أين أبيع فطر المحار في نيجيريا؟  BAR   BAR   BAR 
+GA TOKEN 3 ENDUrban hotels, restaurants, supermarkets, health food stores and direct-to-consumer online sales through WhatsApp or social media are all established sales channels in Nigeria. والمطاعم والفنادق هي عموما أفضل العملاء - فهي تحتاج إلى إمدادات ثابتة، وأسعار أقساط مدفوعة الأجر، وبناء علاقات طويلة الأجل مع الموردين. بدءًا بشبكتك المباشرة والعمل في الخارج هو أكثر الطرق شيوعاً للمنتجين الصغار  BAR   BAR 
+BAR   BAR   BAR 
 
-
- ما هو أكبر خطأ يقوم به مزارعو الفطر الجديد؟  
-GoA TOKEN 0 ENDInadequate pasteurization and poor inoculation hygiene are the two most common causes of failure. Many farmers either Cook bags for an insufficient time, or talk/move around too much during inoculation, introducing contamination that destroys the entire batch. ويعتبر تناول مسألة النظافة الصحية على أنها غير قابلة للتفاوض - وليس على سبيل الإزعاج - أهم تحول في العقل بالنسبة للمنتجين الجدد.  
-
-
-
- أين أبيع فطر المحار في نيجيريا؟  
-GA TOKEN 0 ENDUrban hotels, restaurants, supermarkets, health food stores and direct-to-consumer online sales through WhatsApp or social media are all established sales channels in Nigeria. والمطاعم والفنادق هي عموما أفضل العملاء - فهي تحتاج إلى إمدادات ثابتة، وأسعار أقساط مدفوعة الأجر، وبناء علاقات طويلة الأجل مع الموردين. بدءًا بشبكتك المباشرة والعمل في الخارج هو أكثر الطرق شيوعاً للمنتجين الصغار  
-
-
-
- من أين يمكنني الحصول على دليل الإنتاج التدريجي الكامل؟  
-GoA TOKEN 0 ENDOur GOA TOKEN 1 ENDComprehensive Guide to Oyster Mushroom FarmingGOA TOKEN 2 END covers the full production process in practical detail - substrate formulas, pasteurization methods, inoculation procedures, contamination identification, fruiting management, harvest timing, scaling from 50 to 1000 bags, and marketing. إرفع الدليل الكامل هنا  BAR   BAR   BAR 
-
+من أين يمكن أن أحصل على دليل الإنتاج التدريجي الكامل؟  BAR   BAR   BAR 
+GOA TOKEN 3 ENDOur GOA TOKEN 4 ENDComprehensive Guide to Oyster Mushroom FarmingGOA TOKEN 5 END covers the full production process in practical detail - substrate formulas, pasteurization methods, inoculation procedures, contamination identification, fruiting management, harvest timing, scaling from 50 to 1000 bags, and marketing. إرفع الدليل الكامل هنا  BAR 
+BAR   BAR   BAR 
 
 GOA TOKEN 0 ENDFurther Reading and External ResourcesGOA TOKEN 1 END
-GOA TOKEN 0 END FOR additional research on mushroom cultivation and markets in Africa:GOA TOKEN 1 END
-
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: Global mushroom production data and food systems researchGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITAGOA TOKEN 2 END: African agricultural research supporting sustainable food productionGOA TOKEN 3 END
+GOA TOKEN 2 END FOR additional research on mushroom cultivation and markets in Africa:GOA TOKEN 3 END
+BAR   BAR 
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDFAOGOA TOKEN 7 END: Global mushroom production data and food systems researchGOA TOKEN 8 END
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDIITAGOA TOKEN 11 END: African agricultural research supporting sustainable food productionGOA TOKEN 12 END
 
 
 لن يبقى مفتوحاً للأبد
@@ -164,10 +153,8 @@ GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITAGOA TOKEN 2 END: African agricultural research
 
 ويكافأ المزارعون الذين يستثمرون في فهم العملية على نحو سليم منذ البداية. أما الخسائر في التلوث التي تثبط معظم المبتدئين فهي، في الغالبية العظمى من الحالات، يمكن الوقاية منها بالنظافة الصحية الجيدة والتقنيات الصحيحة. فالمزارعون الذين يحققون نتائج ملحوظة من ٢٥ إلى ١٠٠ كيس في نيجيريا لا يعملون في نظم سرية - بل إنهم يتقنون ببساطة أسس التمدد، والنظافة الصحية للاحتلال، وإدارة غرف الفواكه.  
 
-
-GoA TOKEN 0 ENDGet the Complete Oyster Mushroom Farming GuideGOA TOKEN 1 END
-ويغطي الدليل الشامل الصيغ الفرعية، والتعقيم، والتلقيح، والاحتجاز، والثمن، والحصاد، والارتقاء - المكتوبة من تجربة الإنتاج الحقيقية في نيجيريا.  
-GOA TOKEN 0 ENDGet the Complete GuideGOA TOKEN 1 END
-
-
+GoA TOKEN 1 ENDGet the Complete Oyster Mushroom Farming GuideGOA TOKEN 2 END
+ويغطي الدليل الشامل الصيغ الفرعية، والتعقيم، والتلقيح، والاحتجاز، والثمن، والحصاد، والارتقاء - المكتوبة من تجربة الإنتاج الحقيقية في نيجيريا.  BAR   BAR 
+GOA TOKEN 5 ENDGet the Complete GuideGOA TOKEN 6 END
+BAR   BAR   BAR 
 

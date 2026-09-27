@@ -20,14 +20,22 @@ audience:
   - "Producteurs de chèvres, de moutons et de bovins"
   - "Petits agriculteurs"
   - "Agriculteurs à terres limitées"
+benefits:
   - "Processus de production pratique, étape par étape, de la semence à la récolte"
   - "Orientations sur l'incorporation du fourrage dans l'alimentation sans devinette"
   - "Conçu pour la production de petits espaces et de faibles capitaux"
   - "Ecrit à partir d'expérience agricole réelle, pas de théorie"
-  - "q: Qu'est-ce que l'agriculture fourragère hydroponique?"
-  - "q: Combien de temps ça prend?"
-  - "q: Ai-je besoin d'une grande ferme pour commencer?"
-  - "q: Est-ce que cela remplacera tous mes aliments traditionnels?"
+bonus: "Consultation gratuite de WhatsApp après achat"
+faqs:
+  - q: "Qu'est-ce que l'agriculture fourragère hydroponique?"
+    a: "C'est une méthode de culture de fourrage vert frais à partir de semences dans des plateaux, sans sol, comme une source d'alimentation supplémentaire pour le bétail."
+  - q: "Combien de temps ça prend ?"
+    a: "Le guide passe par un court cycle de production de quelques jours, des semences aux fourrages prêts à la récolte."
+  - q: "Ai-je besoin d'une grande ferme pour commencer?"
+    a: "C'est pas vrai. Le système est conçu pour fonctionner dans un petit espace contrôlé près de votre bétail."
+  - q: "Cela remplacera-t-il tous mes aliments traditionnels?"
+    a: "C'est pas vrai. Le guide explique comment le fourrage hydroponique s'inscrit dans le cadre d'une alimentation équilibrée."
+search_terms:
   - "fourrages hydroponiques"
   - "fourrages verts"
   - "aliments pour animaux"
@@ -35,8 +43,7 @@ audience:
   - "Aliments pour chèvres"
   - "Aliments pour moutons"
   - "aliments pour animaux"
-
-source_language: "en"
 translation_group: "ebook-fodder"
+source_language: "en"
 translation_status: "in_review"
 ---

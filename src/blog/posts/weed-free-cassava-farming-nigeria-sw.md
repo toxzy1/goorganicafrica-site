@@ -17,9 +17,8 @@ keywords:
   - "Jinsi ya kukua nyanya katika miezi 5"
   - "Casava aipongeza Nigeria"
   - "Kilimo cha bure cha cassava Afrika"
-
-source_language: "en"
 translation_group: "blog-cassava"
+source_language: "en"
 translation_status: "in_review"
 ---
 wa wa wa wa wa
@@ -42,7 +41,7 @@ GOA TOKEN 0 END Mbinu ya kilimo cha casava haitegemei juu ya matumizi ya baada y
 wa wa wa wa wa Kanuni ya msingi ni hii: ikiwa unatayarisha ardhi vizuri - unalima kwa kina vya kutosha, unapungua kabisa, na kuruhusu muda wa kutosha wa mbegu za magugu kuletwa kwenye uso ili kuota na kufa kabla ya kupanda - unapunguza shinikizo la ushindani wakati wa kipindi muhimu cha kuanzishwa mapema. Pamoja na wiani sahihi wa kupanda na uteuzi wa aina ya casava, mbinu hii inafikia mazao ya bure au ya karibu-weed-bure kusimama kupitia usimamizi wa canopy badala ya ukandamizaji wa kemikali. wa wa wa wa wa
 
 wa wa wa wa wa
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDDeep mitambo ya kulima inverts topsoil, kuzika mbegu za magugu chini ya kina cha kuota na kufichua mbegu za magugu zilizozikwa kwa uharibifu. Hatua hii moja ni hatua muhimu zaidi katika mbinu ya bure ya weed. Picha zote na Wizara ya Mambo ya Ndani ya Nchi. ....................................................................
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDDeep mitambo ya kulima inverts topsoil, kuzika mbegu za magugu chini ya kina cha kuota na kufichua mbegu za magugu zilizozikwa kwa uharibifu. Hatua hii moja ni hatua muhimu zaidi katika mbinu ya bure ya weed. Picha zote na Wizara ya Mambo ya Ndani ya Nchi. ....................................................................
 
 GOA TOKEN 0 END
 
@@ -63,14 +62,14 @@ GOA TOKEN 0 ENDMonth 1 - Kupanda: Uchaguzi na SpacingGOA TOKEN 1 END
 GoA TOKEN 0 ENDCassava imepandwa kutoka kata za shina (ssets), sio mbegu. Seti ya uteuzi ni muhimu:GOA TOKEN 1 END
 
 wa wa wa wa wa
-GOA TOKEN 0 ENDUse afya, ugonjwa-bure shina kutoka aina ya uzalishaji. Nchini Nigeria, aina zilizoboreshwa ikiwa ni pamoja na TME 419, NR 8082 na TMS 30572 zinapendekezwa kwa mazao yao ya juu, upinzani wa magonjwa na kubadilika. wa wa wa wa wa
-GOA TOKEN 0 ENDCut inaweka urefu wa 25-30 cm na angalau nodes 5-6 kwa ukuaji wa kuaminika. wa wa wa wa wa
-GOA TOKEN 0 ENDPlant katika 1m × 1m (mimea ya 10,000 kwa hekta) kwa mbinu ya bure ya magugu. Kuenea kwa karibu huharakisha kufungwa kwa canopy - hii ni jinsi mazao "yanavyotoka" magugu bila herbicide mara moja imeanzishwa. wa wa wa wa wa
-GOA TOKEN 0 ENDPlant katika mwelekeo sahihi - seti zilizopandwa kwa usawa au kwa pembe kidogo zinaanzisha sawa zaidi kuliko kupanda wima katika aina nyingi za udongo wa Nigeria. wa wa wa wa wa
+GOA TOKEN 1 ENDUse afya, ugonjwa-bure shina kutoka aina ya uzalishaji. Nchini Nigeria, aina zilizoboreshwa ikiwa ni pamoja na TME 419, NR 8082 na TMS 30572 zinapendekezwa kwa mazao yao ya juu, upinzani wa magonjwa na kubadilika. wa wa wa wa wa
+GOA TOKEN 3 ENDCut inaweka urefu wa 25-30 cm na angalau nodes 5-6 kwa ukuaji wa kuaminika. wa wa wa wa wa
+GOA TOKEN 5 ENDPlant katika 1m × 1m (mimea ya 10,000 kwa hekta) kwa mbinu ya bure ya magugu. Kuenea kwa karibu huharakisha kufungwa kwa canopy - hii ni jinsi mazao "yanavyotoka" magugu bila herbicide mara moja imeanzishwa. wa wa wa wa wa wa
+wa wa wa wa wa wa Kupanda katika mwelekeo sahihi - seti zilizopandwa kwa usawa au kwa pembe kidogo huanzisha sawa zaidi kuliko kupanda wima katika aina nyingi za udongo wa Nigeria. wa wa wa wa wa wa
 wa wa wa wa wa
 
 wa wa wa wa wa
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFertilizer maombi wakati wa maandalizi ya ardhi inaboresha lishe ya udongo na huongeza uanzishwaji wa mapema wa cassava - hatua muhimu ambayo inasaidia maendeleo ya kasi na ukandamizaji wa mapema wa magugu. Picha zote na Wizara ya Mambo ya Ndani ya Nchi. ....................................................................
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDFertilizer maombi wakati wa maandalizi ya ardhi inaboresha lishe ya udongo na huongeza uanzishwaji wa mapema wa cassava - hatua muhimu ambayo inasaidia maendeleo ya kasi na ukandamizaji wa mapema wa magugu. Picha zote na Wizara ya Mambo ya Ndani ya Nchi. ....................................................................
 
 GOA TOKEN 0 ENDMonth 2 - Kuanzishwa kwa Mapema: Dirisha la Muhimu
 
@@ -87,7 +86,7 @@ GOA TOKEN 0 ENDMonth 5 - MavunoGOA TOKEN 1 END
 Wakati aina nyingi za cassava nchini Nigeria kwa kawaida huvunwa kwa miezi 9-12, aina zilizoboreshwa mapema - hasa ikiwa ni pamoja na maandalizi bora ya ardhi, wiani sahihi wa kupanda, mbolea ya kutosha na usimamizi wa bure wa magugu - inaweza kuzalisha mazao ya kibiashara kwa miezi 5, hasa katika maeneo ya kusini mwa Nigeria. Kiashiria muhimu cha utayarishaji wa mavuno ni uvimbe wa mizizi kwa ukubwa ambapo mizizi imeundwa vizuri na imepata mkusanyiko wa kutosha wa nyota. wa wa wa wa wa
 
 wa wa wa wa wa
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDA casava yenye afya ilianza kukua na malezi ya mizizi imara - matokeo ya uteuzi wa ubora na maandalizi mazuri ya udongo. Haki miliki ya picha GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDA casava yenye afya ilianza kukua na malezi ya mizizi imara - matokeo ya uteuzi wa ubora na maandalizi mazuri ya udongo. Haki miliki ya picha GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 END Kwa nini Mechanization ni muhimu kwa Mbinu ya Weed-Free
 
@@ -104,41 +103,41 @@ GOA TOKEN 0 ENDProcessed cassava bidhaa - garri, unga wa casava, fufu, starch na
 GOA TOKEN 0 ENDKey TakeawaysGOA TOKEN 1 END
 
 wa wa wa wa wa
-Majani ya GOA TOKEN 0 ENDI yasiyodhibitiwa yanaweza kupunguza mavuno ya casava hadi 80% kwa hekta - na kufanya usimamizi wa magugu moja ya uzalishaji wa athari zaidi baada ya uteuzi wa aina. wa wa wa wa wa
-GOA TOKEN 0 END Mbinu ya weed-bure huzungumzia magugu kwenye chanzo kupitia maandalizi kamili ya ardhi, sio mwongozo wa ufanisi wa kunyunyizia au matumizi ya mara kwa mara ya herbicide. wa wa wa wa wa
-GOA TOKEN 0 ENDA njia mbili za kupitisha - kulima kwa kina ikifuatiwa na kuongezeka kwa mvua baada ya kupanda mbegu za mbegu - hupunguza benki ya mbegu ya mbegu ya mbegu kabla ya casava kupandwa. wa wa wa wa wa
-GOA TOKEN 0 ENDCorrect kupanda wiani (1m × 1m) huharakisha kufungwa kwa canopy, kwa kawaida kuzuia magugu kwa mwezi 3-4 bila kuingilia kati zaidi. wa wa wa wa wa
-GOA TOKEN 0 ENDEarly-maturing kuboresha aina inaweza kuzalisha mazao ya kibiashara katika miezi ya 5 katika maeneo ya mvua ya Nigeria wakati kusimamiwa vizuri. wa wa wa wa wa
-GOA TOKEN 0 END Nigeria inazalisha zaidi ya tani milioni 59 za casava kila mwaka lakini ina uwezo mkubwa wa kuboresha mazao kupitia kilimo bora. wa wa wa wa wa
+Majani ya GOA TOKEN 1 ENDI yasiyodhibitiwa yanaweza kupunguza mavuno ya casava hadi 80% kwa hekta - na kufanya usimamizi wa magugu moja ya uzalishaji wa athari zaidi baada ya uteuzi wa aina. wa wa wa wa wa
+GOA TOKEN 3 END Mbinu ya weed-bure huzungumzia magugu kwenye chanzo kupitia maandalizi kamili ya ardhi, sio mwongozo wa ufanisi au matumizi ya mara kwa mara ya herbicide. wa wa wa wa wa
+GOA TOKEN 5 ENDA njia mbili za kupitisha - kulima kwa kina ikifuatiwa na kuongezeka kwa mvua baada ya kupanda mbegu - hupunguza benki ya mbegu ya mbegu ya mbegu kabla ya casava kupandwa. wa wa wa wa wa wa
+GOA TOKEN 7 ENDCorrect kupanda wiani (1m × 1m) huharakisha kufungwa kwa canopy, kwa kawaida kuzuia magugu kwa mwezi 3-4 bila kuingilia kati zaidi. wa wa wa wa wa wa
+GOA TOKEN 9  EndEarly-maturing kuboresha aina inaweza kuzalisha mazao ya kibiashara katika miezi ya 5 katika maeneo ya mvua ya Nigeria wakati kusimamiwa vizuri. wa wa wa wa wa
+GOA TOKEN 11 END Nigeria inazalisha zaidi ya tani milioni 59 za casava kila mwaka lakini ina uwezo mkubwa wa kuboresha mazao kupitia kilimo bora. wa wa wa wa wa
 wa wa wa wa wa
 
 GoA TOKEN 0 ENDFrequent Asked QuestionsGOA TOKEN 1 END
 
 wa wa wa wa wa
-wa wa wa wa wa Unahitaji kutumia dawa yoyote ya mitishamba na mbinu ya weed-free? wa wa wa wa wa
-GOA TOKEN 0 END Mbinu ya bure ya magugu imeundwa kufanya kazi bila herbicides kama mkakati wa msingi wa udhibiti wa magugu. Maandalizi ya ardhi ya kutosha kabla ya kupanda, pamoja na moja ya magugu yaliyolengwa katika wiki za 4 baada ya kupanda ikiwa inahitajika, kawaida hutoa udhibiti wa kutosha katika mazingira mengi ya kilimo cha Nigeria. Baadhi ya wakulima wanakamilisha hili kwa maombi ya herbicide kabla ya kupanda katika hali ya shinikizo la juu, lakini hii haihitajiki na mbinu. wa wa wa wa wa
-wa wa wa wa wa
+wa wa wa wa wa wa wa wa wa Unahitaji kutumia dawa yoyote ya mitishamba na mbinu ya weed-free? wa wa wa wa wa
+GOA TOKEN 3 END Mbinu ya bure ya magugu imeundwa kufanya kazi bila herbicides kama mkakati wa msingi wa udhibiti wa magugu. Maandalizi ya ardhi ya kutosha kabla ya kupanda, pamoja na moja ya magugu yaliyolengwa katika wiki za 4 baada ya kupanda ikiwa inahitajika, kawaida hutoa udhibiti wa kutosha katika mazingira mengi ya kilimo cha Nigeria. Baadhi ya wakulima wanakamilisha hili kwa maombi ya herbicide kabla ya kupanda katika hali ya shinikizo la juu, lakini hii haihitajiki na mbinu. wa wa wa wa wa
+wa wa wa wa wa wa
 
 wa wa wa wa wa
-wa wa wa wa wa Je, mimi kukua cassava katika 5 miezi katika kila sehemu ya Nigeria? wa wa wa wa wa
-Mavuno ya miezi mitano ya GOA TOKEN 0 END yanaweza kupatikana zaidi katika maeneo ya kusini mwa Nigeria ambapo mvua na joto ni bora. Katika mikoa ya kaskazini ya drier au wakati wa majira ya kavu, kipindi cha vegetative ni muda mrefu zaidi. Aina iliyochaguliwa pia ni muhimu sana - aina za kuboresha mapema zinazalishwa hasa kwa maendeleo ya haraka. Mwongozo kamili unahusisha uteuzi wa aina mbalimbali na mkoa kwa undani. wa wa wa wa wa
-wa wa wa wa wa
+wa wa wa wa wa wa wa wa wa Je, mimi kukua cassava katika 5 miezi katika kila sehemu ya Nigeria? wa wa wa wa wa
+Mavuno ya miezi mitano ya GOA TOKEN 3 END ni uwezekano mkubwa katika maeneo ya kusini mwa Nigeria ambapo mvua na joto ni bora. Katika mikoa ya kaskazini ya drier au wakati wa majira ya kavu, kipindi cha vegetative ni muda mrefu zaidi. Aina iliyochaguliwa pia ni muhimu sana - aina za kuboresha mapema zinazalishwa hasa kwa maendeleo ya haraka. Mwongozo kamili unahusisha uteuzi wa aina mbalimbali na mkoa kwa undani. wa wa wa wa wa
+wa wa wa wa wa wa
 
 wa wa wa wa wa
 wa wa wa wa wa Ni uwekezaji gani muhimu zaidi katika teknolojia ya bure ya weed? wa wa wa wa wa
-GoA TOKEN 0 ENDLand maandalizi - hasa njia mbili za kulima-na-harrow kabla ya kupanda. Uwekezaji huu mmoja katika maandalizi sahihi ya udongo wa mechanized hufanya zaidi kuamua mazao ya mwisho ya casava kuliko pembejeo nyingine yoyote, ikiwa ni pamoja na mbolea. Wakulima ambao hukata pembe katika maandalizi ya ardhi huripoti matatizo mabaya zaidi ya magugu na mavuno ya chini. wa wa wa wa wa
-wa wa wa wa wa
+GoA TOKEN 3 ENDLand maandalizi - hasa njia mbili za kulima-na-harrow kabla ya kupanda. Uwekezaji huu mmoja katika maandalizi sahihi ya udongo wa mechanized hufanya zaidi kuamua mazao ya mwisho ya casava kuliko pembejeo nyingine yoyote, ikiwa ni pamoja na mbolea. Wakulima ambao hukata pembe katika maandalizi ya ardhi huripoti matatizo mabaya zaidi ya magugu na mavuno ya chini. wa wa wa wa wa
+wa wa wa wa wa wa
 
 wa wa wa wa wa
-wa wa wa wa wa Ninaweza kujifunza wapi hatua zote za uzalishaji? wa wa wa wa wa
-GOA TOKEN 0 ENDOur GOA TOKEN 1 ENDWeed-Free Farming Technique guideGOA TOKEN 2 END inashughulikia kalenda kamili ya uzalishaji wa miezi ya 5 - kutoka kwa maandalizi ya ardhi na kuweka uteuzi kupitia kuvuna - ikiwa ni pamoja na vipimo maalum, muda, mapendekezo ya mbolea na utatuzi wa shida. GoA TOKEN 3 ENDView mwongozo kamili hapa. Picha zote na Wizara ya Mambo ya Ndani ya Nchi. ....................................................................
+GoA TOKEN 1 END Ninaweza kujifunza wapi hatua kamili za uzalishaji kwa undani? wa wa wa wa wa
+GOA TOKEN 3 ENDOur GOA TOKEN 4 ENDWeed-Free Farming Technique guideGOA TOKEN 5 END inashughulikia kalenda kamili ya uzalishaji wa miezi ya 5 - kutoka kwa maandalizi ya ardhi na kuweka uteuzi kupitia kuvuna - ikiwa ni pamoja na vipimo maalum, muda, mapendekezo ya mbolea na utatuzi wa shida. GoA TOKEN 6 ENDView mwongozo kamili hapa. Picha zote na Wizara ya Mambo ya Ndani ya Nchi. ....................................................................
 wa wa wa wa wa
 
 GoA TOKEN 0 ENDFurther Reading and External ResourcesGOA TOKEN 1 END
-GOA TOKEN 0 END Kwa utafiti wa ziada na data juu ya uzalishaji wa cassava nchini Nigeria na Afrika:GOA TOKEN 1 END
+GOA TOKEN 2 END Kwa utafiti wa ziada na data juu ya uzalishaji wa casava nchini Nigeria na Afrika:GOA TOKEN 3 END
 wa wa wa wa wa
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITA Cassava Mpango wa UtafitiGOA TOKEN 2 END: taasisi inayoongoza ya utafiti juu ya aina za casssava, agronomy na usimamizi wa magugu katika AfrikaGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: takwimu za uzalishaji wa cassava na data ya kilimo ndogo
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDIITA Cassava Mpango wa UtafitiGOA TOKEN 7 END: taasisi inayoongoza ya utafiti juu ya aina za casssava, agronomy na usimamizi wa magugu katika AfrikaGOA TOKEN 8 END
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDFAOGOA TOKEN 11 END: takwimu za uzalishaji wa cassava na data ya kilimo cha wadogo
 wa wa wa wa wa
 
 GOA TOKEN 0 ENDConclusion: Kilimo cha Cassava Jinsi ya kufanya hivyo kwa kutumia OneGOA TOKEN 1 END
@@ -148,9 +147,9 @@ Sekta ya cassava ya GOA TOKEN 0 END Nigeria ina uwezo mkubwa. Pengo kati ya mavu
 Wakulima wanaofikia mavuno ya juu ya cassava nchini Nigeria hawafanyi chochote cha kichawi. Wao wanafanya msingi sahihi - kuanzia na udongo. wa wa wa wa wa
 
 wa wa wa wa wa
-GOA TOKEN 0 ENDGet the Complete Weed-Free Cassava Farming GuideGOA TOKEN 1 END
-GOA TOKEN 0 END Mwongozo kamili wa hatua kwa hatua inashughulikia maandalizi ya ardhi, kuweka uteuzi, kupanda, usimamizi wa mifereji na mavuno - kila kitu unachohitaji kutekeleza mbinu ya bure ya magugu kwenye shamba lako. wa wa wa wa wa
-GoA TOKEN 0 ENDGet the Complete GuideGOA TOKEN 1 END
-wa wa wa wa wa
+GOA TOKEN 1 ENDGet the Complete Weed-Free Cassava Farming GuideGOA TOKEN 2 END
+GOA TOKEN 3 END Mwongozo kamili wa hatua kwa hatua inashughulikia maandalizi ya ardhi, kuweka uteuzi, kupanda, usimamizi wa mifereji na mavuno - kila kitu unachohitaji kutekeleza mbinu ya bure ya magugu kwenye shamba lako. wa wa wa wa wa
+GoA TOKEN 5 ENDGet the Complete GuideGOA TOKEN 6 END
+wa wa wa wa wa wa
 
 wa wa wa wa wa

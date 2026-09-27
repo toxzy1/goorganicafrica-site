@@ -20,14 +20,22 @@ audience:
   - "Mbuzi na wakulima wa mifugo"
   - "Wakulima wadogo"
   - "Wakulima wa ardhi ndogo"
+benefits:
   - "Vitendo, hatua kwa hatua mchakato wa uzalishaji kutoka mbegu kwa kuvuna"
   - "Mwongozo wa Kuingiza Chakula Katika Chakula Bila guesswork"
   - "Iliyoundwa kwa ajili ya nafasi ndogo na uzalishaji wa chini"
   - "Imeandikwa kutoka kwa uzoefu halisi wa kilimo, sio nadharia"
-  - "Q: Je, ni kiasi gani cha mbolea ya hydroponic?"
-  - "Q: Inachukua muda gani?"
-  - "Q: Je, ninahitaji kufungua akaunti?"
-  - "Q: Je, hii itabadilisha chakula changu cha kawaida?"
+bonus: "Ushauri wa bure wa WhatsApp baada ya kununua"
+faqs:
+  - q: "Kilimo cha hydroponic ni nini?"
+    a: "Ni njia ya kukua fodder safi ya kijani kutoka mbegu katika trays, bila udongo, kama chanzo cha kulisha kwa mifugo."
+  - q: "Inachukua muda gani?"
+    a: "Mwongozo hutembea kupitia mzunguko mfupi wa uzalishaji wa siku chache kutoka mbegu hadi mazao ya mavuno."
+  - q: "Je, ninahitaji kilimo kuanza?"
+    a: "Hapana. Mfumo huo umeundwa kufanya kazi katika nafasi ndogo, iliyodhibitiwa karibu na mifugo yako."
+  - q: "Je, hii itabadilisha chakula changu cha kawaida?"
+    a: "Hapana. Mwongozo unaelezea jinsi lishe ya hydroponic inafaa pamoja na malisho ya kawaida kama sehemu ya njia ya kulisha uwiano."
+search_terms:
   - "Chakula cha Hydroponic"
   - "Chakula cha kijani"
   - "Chakula cha mifugo"
@@ -35,8 +43,7 @@ audience:
   - "Chakula cha jioni"
   - "Chakula cha kondoo"
   - "Chakula cha mifugo"
-
-source_language: "en"
 translation_group: "ebook-fodder"
+source_language: "en"
 translation_status: "in_review"
 ---

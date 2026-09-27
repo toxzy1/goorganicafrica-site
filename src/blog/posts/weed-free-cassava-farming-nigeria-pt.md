@@ -17,9 +17,8 @@ keywords:
   - "como cultivar mandioca em 5 meses"
   - "melhoria da produtividade de mandioca Nigéria"
   - "cultivo de mandioca livre de herbicidas África"
-
-source_language: "en"
 translation_group: "blog-cassava"
+source_language: "en"
 translation_status: "in_review"
 ---
 GOA TOKEN 0 FIM
@@ -42,7 +41,7 @@ GOA TOKEN 0 ENDA técnica de cultivo de mandioca sem ervas daninhas não depende
 GOA TOKEN 0 FIM O princípio básico é o seguinte: se preparar corretamente a terra — arar suficientemente profundamente, angustiar - se cabalmente, e permitir tempo suficiente para que as sementes de ervas daninhas trazidas à superfície germinem e morram antes de plantar — você reduz drasticamente a pressão competitiva da erva daninha durante o período crítico de estabelecimento precoce. Combinado com densidade de plantio correta e seleção de variedades de mandioca, esta abordagem alcança um suporte de cultura sem ervas daninhas ou quase sem algas através do manejo do dossel em vez de supressão química. GOA TOKEN 1 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDDeep arado mecânico inverte o solo superior, enterrando sementes de ervas daninhas abaixo da profundidade de germinação e expondo sementes de plantas daninhas enterradas à dessecação. Essa única etapa é a intervenção mais importante na técnica sem ervas daninhas. GOA TOKEN 2 ENDGOA TOKEN 3 End
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDDeep arado mecânico inverte o solo superior, enterrando sementes de ervas daninhas abaixo da profundidade de germinação e expondo sementes de plantas daninhas enterradas à dessecação. Essa única etapa é a intervenção mais importante na técnica sem ervas daninhas. GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDERO Calendário de Produção de 5 meses de CassavaGOA TOKEN 1 ENDER
 
@@ -63,14 +62,14 @@ GOA TOKEN 0 ENDMonth 1 — Plantação: Seleção e EspaçoGOA TOKEN 1 END
 GOA TOKEN 0 ENNDCassava é plantada a partir de estacas de caule (sets), não sementes. A seleção do conjunto é crítica:GOA TOKEN 1 END
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDUse saudável, livre de doenças provém de uma variedade produtiva. Na Nigéria, as variedades melhoradas, incluindo TME 419, NR 8082 e TMS 30572, são recomendadas por seu alto rendimento, resistência à doença e adaptabilidade. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDCortar conjuntos de 25–30 cm de comprimento com pelo menos 5–6 nós para brotação confiável. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDPlanta a 1m × 1m de espaçamento (10.000 plantas por hectare) para a técnica sem ervas daninhas. O espaçamento mais próximo acelera o fechamento do dossel — é assim que a cultura "sombra" ervas daninhas sem herbicida uma vez estabelecido. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDPlant na orientação correta — conjuntos plantados horizontalmente ou em um ângulo leve estabelecer mais uniformemente do que a plantação vertical na maioria dos tipos de solo nigeriano. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDUse saudável, livre de doenças vem de uma variedade produtiva. Na Nigéria, as variedades melhoradas, incluindo TME 419, NR 8082 e TMS 30572, são recomendadas por seu alto rendimento, resistência à doença e adaptabilidade. GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDCortar conjuntos de 25-30 cm de comprimento com pelo menos 5-6 nós para brotação confiável. GOA TOKEN 4 FIM
+GOA TOKEN 5 ENDPlante a 1m × 1m de espaçamento (10.000 plantas por hectare) para a técnica sem ervas daninhas. O espaçamento mais próximo acelera o fechamento do dossel — é assim que a cultura "sombra" ervas daninhas sem herbicida uma vez estabelecido. GOA TOKEN 6 FIM
+GOA TOKEN 7 FIM Planta na orientação correta — conjuntos plantados horizontalmente ou em um ângulo leve estabelecer mais uniformemente do que a plantação vertical na maioria dos tipos de solo nigeriano. GOA TOKEN 8 FIM
+GOA TOKEN 9 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFertilizer aplicação durante a preparação do solo melhora a nutrição do solo e aumenta o estabelecimento de mandioca precoce — uma etapa crítica que suporta o desenvolvimento mais rápido do dossel e anterior supressão de ervas daninhas. GOA TOKEN 2 ENDGOA TOKEN 3 End
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDFertilizer aplicação durante a preparação do solo melhora a nutrição do solo e aumenta o estabelecimento de mandioca precoce — uma etapa crítica que suporta o desenvolvimento mais rápido do dossel e anterior supressão de ervas daninhas. GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDMês 2 — Estabelecimento precoce: A Janela CríticaGOA TOKEN 1 END
 
@@ -87,7 +86,7 @@ GOA TOKEN 0 FIMMês 5 — Colheita GOA TOKEN 1 FIM
 GOA TOKEN 0 ENDEnquanto a maioria das variedades de mandioca na Nigéria são tipicamente colhidas entre 9 e 12 meses, a maturação precoce de variedades melhoradas — especialmente quando combinadas com excelente preparação de terras, densidade correta de plantio, fertilização adequada e manejo livre de ervas daninhas — pode produzir rendimentos comercialmente viáveis aos 5 meses, especialmente nas zonas úmidas do sul da Nigéria. O indicador chave da prontidão da colheita é o inchaço das raízes para um tamanho onde os tubérculos são bem formados e alcançaram uma acumulação adequada de amido. GOA TOKEN 1 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDA conjunto saudável de mandioca brotando com forte formação de raízes — o resultado da seleção de conjuntos de qualidade e boa preparação do solo. Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDA conjunto saudável de mandioca brotando com forte formação de raízes — o resultado da seleção de conjuntos de qualidade e boa preparação do solo. Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDPor que a mecanização é central para a técnica livre de ervas daninhasGOA TOKEN 1 END
 
@@ -104,42 +103,42 @@ GOA TOKEN 0 ENDProdutos de mandioca – garri, farinha de mandioca, fufu, amido 
 GOA TOKEN 0 ENDKey TakeawaysGOA TOKEN 1 END
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDAs ervas daninhas não controladas podem reduzir o rendimento de mandioca em até 80% por hectare — tornando o manejo de ervas daninhas a variável de produção mais impactante após a seleção de variedades. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDA técnica sem ervas daninhas aborda ervas daninhas na fonte através de uma preparação de terra mecanizada completa, não capina manual reativa ou uso repetido de herbicidas. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDA abordagem de duas passagens — arado profundo seguido de arrowing após a emergência de mudas de ervas daninhas — esgota o banco de sementes de ervas daninhas de superfície antes da mandioca ser plantada. GOA TOKEN 1 FIM
-GOA TOKEN 0 END Densidade de plantio correta (1m × 1m) acelera o fechamento do dossel, suprimindo naturalmente ervas daninhas no mês 3-4 sem intervenção adicional. GOA TOKEN 1 FIM
-GOA TOKEN 0 END As variedades melhoradas de maturação precoce podem produzir rendimentos comercialmente viáveis aos 5 meses nas zonas húmidas da Nigéria quando geridas correctamente. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDNigeria produz mais de 59 milhões de toneladas de mandioca anualmente, mas tem significativo potencial de melhoria de rendimento inexplorado através de melhor agronomia. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDAs ervas daninhas não controladas podem reduzir o rendimento de mandioca em até 80% por hectare — tornando o manejo de ervas daninhas a variável de produção mais impactante após a seleção de variedades. GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDA técnica sem ervas daninhas aborda as ervas daninhas na fonte através de uma preparação mecanizada completa da terra, não capina manual reativa ou uso repetido de herbicidas. GOA TOKEN 4 FIM
+GOA TOKEN 5 ENDA abordagem de duas passagens — arado profundo seguido de acariciamento após a emergência de mudas de ervas daninhas — esgota o banco de sementes de ervas daninhas de superfície antes da mandioca ser plantada. GOA TOKEN 6 FIM
+GOA TOKEN 7 END Densidade de plantio correta (1m × 1m) acelera o fechamento do dossel, suprimindo naturalmente ervas daninhas no mês 3-4 sem intervenção adicional. GOA TOKEN 8 FIM
+GOA TOKEN 9 END As variedades melhoradas de maturação precoce podem produzir rendimentos comercialmente viáveis aos 5 meses nas zonas húmidas da Nigéria quando geridas correctamente. GOA TOKEN 10 FIM
+GOA TOKEN 11 ENDNigeria produz mais de 59 milhões de toneladas de mandioca anualmente, mas tem significativo potencial de melhoria de rendimento inexplorado através de melhor agronomia. GOA TOKEN 12 FIM
+GOA TOKEN 13 FIM
 
 GOA TOKEN 0 EndPerguntas FrequentesGOA TOKEN 1 End
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDO Preciso de usar algum herbicida com a técnica sem ervas daninhas? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDA técnica sem ervas daninhas é projetada para trabalhar sem herbicidas como estratégia primária de controle de ervas daninhas. A preparação integral de terra antes do plantio, combinada com uma capina alvo em 4 semanas após o plantio, se necessário, normalmente fornece controle suficiente na maioria dos ambientes agrícolas nigerianos. Alguns agricultores complementam isso com uma aplicação de herbicidas de pré-emergência imediatamente após o plantio em situações de ervas daninhas de alta pressão, mas isso não é exigido pela técnica. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDO Preciso de usar algum herbicida com a técnica sem ervas daninhas? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDA técnica sem ervas daninhas é projetada para trabalhar sem herbicidas como estratégia primária de controle de ervas daninhas. A preparação integral de terra antes do plantio, combinada com uma capina alvo em 4 semanas após o plantio, se necessário, normalmente fornece controle suficiente na maioria dos ambientes agrícolas nigerianos. Alguns agricultores complementam isso com uma aplicação de herbicidas de pré-emergência imediatamente após o plantio em situações de ervas daninhas de alta pressão, mas isso não é exigido pela técnica. GOA TOKEN 4 FIM
+GOA TOKEN 5 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDCan Eu cultivo mandioca em 5 meses em cada parte da Nigéria? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDCinco meses de colheita é mais alcançável nas zonas úmidas do sul da Nigéria, onde as chuvas e a temperatura são ótimas. Nas regiões mais secas do norte ou durante as estações secas, o período vegetativo é tipicamente mais longo. A variedade seleccionada também é significativamente importante — as variedades melhoradas de maturação precoce são especificamente criadas para um desenvolvimento mais rápido. O guia completo abrange a seleção de variedades por região em detalhe. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN  1  ENDCan Eu cultivo mandioca em 5 meses em cada parte da Nigéria? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDCinco meses de colheita é mais alcançável nas zonas úmidas do sul da Nigéria, onde a chuva e a temperatura são ótimas. Nas regiões mais secas do norte ou durante as estações secas, o período vegetativo é tipicamente mais longo. A variedade seleccionada também é significativamente importante — as variedades melhoradas de maturação precoce são especificamente criadas para um desenvolvimento mais rápido. O guia completo abrange a seleção de variedades por região em detalhe. GOA TOKEN 4 FIM
+GOA TOKEN 5 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 FIM Qual é o investimento mais importante na técnica sem ervas daninhas? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDLand preparação — especificamente a abordagem arado-e-harrow de duas passagens antes do plantio. Este único investimento em preparação adequada do solo mecanizado faz mais para determinar o rendimento final de mandioca do que qualquer outro entrada única, incluindo fertilizante. Agricultores que cortam cantos na preparação da terra consistentemente relatam os piores problemas de ervas daninhas e rendimentos mais baixos. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 FIM Qual é o investimento mais importante na técnica sem ervas daninhas? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDLand preparação — especificamente a abordagem arado-e-harrow de duas passagens antes do plantio. Este único investimento em preparação adequada do solo mecanizado faz mais para determinar o rendimento final de mandioca do que qualquer outro entrada única, incluindo fertilizante. Agricultores que cortam cantos na preparação da terra consistentemente relatam os piores problemas de ervas daninhas e rendimentos mais baixos. GOA TOKEN 4 FIM
+GOA TOKEN 5 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 FIM Onde posso aprender os passos completos de produção em detalhes? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDNosso GOA TOKEN 1 ENDWeed-Free Farming Technique guiaGOA TOKEN 2 END cobre o calendário de produção completo de 5 meses — desde a preparação do solo e a seleção de conjuntos até a colheita — incluindo medições específicas, tempo, recomendações de fertilizantes e solução de problemas. GOA TOKEN 3 ENDVeja aqui o guia completo. GOA TOKEN 4 ENDGOA TOKEN 5 End
-GOA TOKEN 0 FIM
+GOA TOKEN 1 END Onde posso aprender os passos completos de produção em detalhes? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDNosso GOA TOKEN 4 ENDWeed-Free Farming Technique GOA TOKEN 5 END abrange o calendário completo de produção de 5 meses — desde a preparação de terras e a seleção de conjuntos até a colheita — incluindo medições específicas, tempo, recomendações de fertilizantes e solução de problemas. GOA TOKEN 6 ENDVeja aqui o guia completo. GOA TOKEN 7 ENDGOA TOKEN 8 END
+GOA TOKEN 9 FIM
 
 GOA TOKEN 0 ENDERMais leitura e recursos externosGOA TOKEN 1 ENDER
-GOA TOKEN 0 ENDEPara mais investigação e dados sobre a produção de mandioca na Nigéria e África:GOA TOKEN 1 END
-GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITA Cassava Research ProgrammeGOA TOKEN 2 END: instituição líder em pesquisa sobre variedades de mandioca, agronomia e manejo de ervas daninhas em ÁfricaGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: estatísticas globais da produção de mandioca e dados sobre a agricultura de pequenos proprietários
-GOA TOKEN 0 FIM
+GOA TOKEN 2 ENDEPara mais investigação e dados sobre a produção de mandioca na Nigéria e África:GOA TOKEN 3 END
+GOA TOKEN 4 FIM
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDIITA Cassava Research ProgrammeGOA TOKEN 7 END: principal instituição de investigação sobre variedades de mandioca, agronomia e gestão de ervas daninhas em ÁfricaGOA TOKEN 8 END
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDFAOGOA TOKEN 11 END: estatísticas globais de produção de mandioca e dados relativos à agricultura de pequenos agricultoresGOA TOKEN 12 END
+GOA TOKEN 13 FIM
 
 GOA TOKEN 0 ENDConclusão: Agricultura de Cassava É um negócio — tratá-lo como OneGOA TOKEN 1 END
 
@@ -148,9 +147,9 @@ GOA TOKEN 0 ENDNigeria tem um enorme potencial inexplorado. A diferença entre o
 GOA TOKEN 0 ENDOs agricultores que alcançam consistentemente altos rendimentos de mandioca na Nigéria não estão fazendo nada mágico. Estão fazendo os fundamentos corretamente — começando pelo solo. GOA TOKEN 1 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 END Obtenha o Guia completo de Agricultura de Cassava sem Ervas GOA TOKEN 1 END
-GOA TOKEN 0 ENDO guia passo-a-passo completo abrange a preparação da terra, seleção de conjuntos, plantio, gerenciamento do dossel e colheita — tudo que você precisa para implementar a técnica sem ervas daninhas em sua fazenda. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDERO Guia completoGOA TOKEN 1 ENDER
-GOA TOKEN 0 FIM
+GOA TOKEN 1 END Obtenha o Guia completo de Agricultura de Cassava sem Erva GOA TOKEN 2 END
+GOA TOKEN 3 ENDO guia completo passo a passo abrange a preparação da terra, seleção de conjuntos, plantio, gerenciamento de dossels e colheitas — tudo que você precisa para implementar a técnica sem ervas daninhas em sua fazenda. GOA TOKEN 4 FIM
+GOA TOKEN 5 END Obtenha o Guia completoGOA TOKEN 6 END
+GOA TOKEN 7 FIM
 
 GOA TOKEN 0 FIM

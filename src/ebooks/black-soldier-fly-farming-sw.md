@@ -20,14 +20,22 @@ audience:
   - "Wakulima wa samaki"
   - "Wakulima wa kilimo wajitahidi kupunguza gharama za chakula"
   - "Wakulima wahimizwa kuwekeza katika miradi ya maji"
+benefits:
   - "Mwongozo wa vitendo wa kuzalisha larvae nyeusi kuruka kama chanzo cha kulisha"
   - "Inabadilisha taka za kikaboni kuwa pembejeo ya kilimo inayoweza kutumika"
   - "Inafaa kwa vifaa vidogo na vya kibiashara"
   - "Imeandikwa kutoka kwa uzoefu halisi wa uzalishaji"
-  - "Q: Je, ni aina gani ya mazao ya kilimo ya nguruwe?"
-  - "Q: Je, inafaa kwa Kompyuta?"
-  - "Q: Je, ni kiasi gani cha chakula unaweza kula?"
-  - "Q: Je, ninahitaji bidhaa?"
+bonus: "Ushauri wa bure wa WhatsApp baada ya kununua"
+faqs:
+  - q: "Je, ni nini maana ya Jeshi la Kujenga Taifa?"
+    a: "Ni mazoezi ya kuzaliana nzi wa askari mweusi ili mabuu yao yanaweza kuvunwa kama kiungo cha kulisha protini kwa mifugo na samaki."
+  - q: "Je, hii inafaa kwa Kompyuta?"
+    a: "Ndiyo, mwongozo unaandikwa kwa njia ya vitendo, hatua kwa hatua kwa wakulima wapya kwa mchakato."
+  - q: "Ni chakula gani cha kuku kinaweza kuliwa?"
+    a: "Mwongozo hufunika kutumia mabuu kama pembejeo ya kulisha kwa kuku, samaki na mifugo mingine."
+  - q: "Unahitaji vifaa maalum?"
+    a: "Mwongozo inaelezea usanidi unaohitajika, kufanya kazi na vifaa rahisi na kupatikana."
+search_terms:
   - "Kilimo cha BSF"
   - "Ndege ya Black"
   - "kilimo cha umwagiliaji"
@@ -35,8 +43,7 @@ audience:
   - "Chakula cha wanyama"
   - "Chakula cha kuku"
   - "Chakula cha samaki"
-
-source_language: "en"
 translation_group: "ebook-bsf"
+source_language: "en"
 translation_status: "in_review"
 ---

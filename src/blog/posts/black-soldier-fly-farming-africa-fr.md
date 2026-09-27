@@ -17,9 +17,8 @@ keywords:
   - "aliments pour animaux"
   - "comment cultiver la mouche de soldat noir"
   - "Autres aliments pour animaux Nigéria"
-
-source_language: "en"
 translation_group: "blog-bsf"
+source_language: "en"
 translation_status: "in_review"
 ---
 GOA TOKEN 0 END
@@ -40,26 +39,26 @@ GOA TOKEN 0 END Soldat noir L'élevage à la mouche est l'élevage contrôlé de
 GOA TOKEN 0 ENDLes larves contiennent 35 à 45 % de protéines brutes et 25 à 35 % de matières grasses sur une base sèche, ce qui les rend comparables sur le plan nutritionnel aux farines de poisson, l'une des sources de protéines conventionnelles les plus chères et les plus rares dans la formulation des aliments du bétail. Contrairement aux aliments traditionnels, les larves de BSF peuvent être produites en continu à la ferme à partir d'intrants organiques à faible coût ou à coût nul. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDLe soldat noir complet Cycle de vie de vol de l'adulte à l'oeuf jusqu'à cinq larves d'étoiles et de pupa. La compréhension de ce cycle est essentielle à la gestion efficace d'un système agricole BSF. OBJECTIFS D'ÉTABLISSEMENT
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDLe soldat noir complet Cycle de vie de vol de l'adulte à l'oeuf jusqu'à cinq larves d'étoiles et de pupa. La compréhension de ce cycle est essentielle à la gestion efficace d'un système agricole BSF. OBJECTIFS D'EXÉCUTION
 
 GOA TOKEN 0 ENDLe cycle de vie du BSF : comprendre votre système de productionGOA TOKEN 1 END
 
 GOA TOKEN 0 ENDL'agriculture BSF réussie nécessite de comprendre le cycle de vie de l'insecte, qui va des oeufs aux larves récoltables en environ 14 à 21 jours dans des conditions tropicales chaudes, idéales pour le Nigeria et la majeure partie de l'Afrique subsaharienne. GOA TOKEN 1 END
 
 GOA TOKEN 0 ENDAdult StageGOA TOKEN 1 END
-GOA TOKEN 0 ENDL'adulte BSF ne mange pas pendant son stade adulte — il ne vit que 5 à 8 jours d'accouplement et de ponte. Les adultes sont attirés par la matière organique en décomposition pour la ponte. Une cage de reproduction bien gérée maintient une population adulte permanente pour assurer l'approvisionnement continu en oeufs. GOA TOKEN 1 END
+GOA TOKEN 2 ENDLe BSF adulte ne mange pas pendant son stade adulte, il ne vit que 5 à 8 jours, accouplement et ponte. Les adultes sont attirés par la matière organique en décomposition pour la ponte. Une cage de reproduction bien gérée maintient une population adulte permanente pour assurer l'approvisionnement continu en oeufs. OBJECTIFS
 
 OBJECTIFS D'EXÉCUTION
-GOA TOKEN 0 ENDA Une seule femelle BSF pond entre 500 et 900 œufs, qui éclosent dans les 4 jours. Les oeufs sont généralement pondus près des substrats organiques — un morceau de bois avec de petites rainures placées près du substrat est un piège commun utilisé par les agriculteurs. GOA TOKEN 1 END
+GOA TOKEN 2 ENDA Une seule femelle BSF pond entre 500 et 900 œufs, qui éclosent dans les 4 jours. Les oeufs sont généralement pondus près des substrats organiques — un morceau de bois avec de petites rainures placées près du substrat est un piège commun utilisé par les agriculteurs. OBJECTIFS
 
 GOA TOKEN 0 ENDLarval Stage — Le stade de productionGOA TOKEN 1 END
-GOA TOKEN 0 ENDC'est là que la valeur économique est générée. Les larves traversent cinq stades de croissance sur une période de 14 à 21 jours. Au cours des stades ultérieurs (3e-5e), les larves entrent dans une frénésie alimentaire, consomment rapidement des déchets organiques et accumulent des protéines et des graisses. C'est la fenêtre de récolte. Les agriculteurs commerciaux intelligents parcourent des lots pour qu'un nouveau contenant de larves atteigne le stade de la récolte tous les jours, assurant ainsi un approvisionnement quotidien continu de larves fraîches. GOA TOKEN 1 END
+GOA TOKEN 2 END C'est là que la valeur économique est générée. Les larves traversent cinq stades de croissance sur une période de 14 à 21 jours. Au cours des stades ultérieurs (3e-5e), les larves entrent dans une frénésie alimentaire, consomment rapidement des déchets organiques et accumulent des protéines et des graisses. C'est la fenêtre de récolte. Les agriculteurs commerciaux intelligents parcourent des lots pour qu'un nouveau contenant de larves atteigne le stade de la récolte tous les jours, assurant ainsi un approvisionnement quotidien continu de larves fraîches. OBJECTIFS
 
 GOA TOKEN 0 ENDÉtape préparatoire — Le point de récolteGOA TOKEN 1 END
-GOA TOKEN 0 ENDLorsque les larves sont prêtes à pupitre, elles s'autorécoltent — en migrant vers le haut et loin du substrat. Les agriculteurs utilisent des rampes ou des tubes qui guident la préparation dans les contenants de collecte. Les larves peuvent ensuite être nourries à l'état frais au bétail, séchées et broyées en farine ou conservées pour utilisation ultérieure. GOA TOKEN 1 END
+GOA TOKEN 2 ENDLorsque les larves sont prêtes à pupitre, elles se récoltent elles-mêmes, en migrant vers le haut et loin du substrat. Les agriculteurs utilisent des rampes ou des tubes qui guident la préparation dans les contenants de collecte. Les larves peuvent ensuite être nourries à l'état frais au bétail, séchées et broyées en farine ou conservées pour utilisation ultérieure. OBJECTIFS
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDUn soldat noir séché Les larves de mouches – un produit d'alimentation riche en protéines qui peut remplacer les farines de poisson et le soja classiques dans les formulations d'aliments pour le bétail et le poisson. Photo: GoOrganicAfrica Research Collection.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDSoldier noir séché Les larves de mouches – un produit d'alimentation riche en protéines qui peut remplacer les farines de poisson et le soja classiques dans les formulations d'aliments pour le bétail et le poisson. Photo: GoOrganicAfrica Research Collection.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDL'économie : que vous sauve réellement l'agriculture BSF ?GOA TOKEN 1 END
 
@@ -68,35 +67,35 @@ GOA TOKEN 0 ENDL'argument financier de l'agriculture BSF est convaincant. Une an
 GOA TOKEN 0 ENDPour les agriculteurs nigérians, les chiffres sont plus immédiats. Un agriculteur qui utilise 500 poulets à griller qui remplace 25 % de sa ration d'alimentation commerciale par des larves fraîches de BSF peut s'attendre à des économies significatives sur sa facture mensuelle d'alimentation — avec les larves produites à partir de déchets de cuisine, de déchets de marché ou de sous-produits agricoles qui coûtent peu ou rien. GOA TOKEN 1 END
 
 GOA TOKEN 0 ENDLe revenu secondaire : fertilisant FrassGOA TOKEN 1 END
-GOA TOKEN 0 ENDUn avantage significatif de l'agriculture BSF que de nombreux producteurs ne tiennent pas compte pour la première fois est la valeur de frass — l'excrément et la matière organique résiduelle laissée après que les larves ont fini de transformer le substrat. BSF frass est un engrais organique très efficace, riche en azote, phosphore et potassium, avec une teneur supplémentaire en chitine qui soutient l'immunité végétale contre les pathogènes. Frass séchée vend commercialement et fournit un second flux de revenus provenant du même processus de production. GOA TOKEN 1 END
+GOA TOKEN 2 ENDUn avantage important de l'agriculture BSF que beaucoup de producteurs ne tiennent pas compte pour la première fois est la valeur de frass — l'excrément et la matière organique résiduelle laissée après que les larves ont fini de transformer le substrat. BSF frass est un engrais organique très efficace, riche en azote, phosphore et potassium, avec une teneur supplémentaire en chitine qui soutient l'immunité végétale contre les pathogènes. Frass séchée vend commercialement et fournit un second flux de revenus provenant du même processus de production. OBJECTIFS
 
 GOA TOKEN 0 ENDConfiguration de l'agriculture BSF : ce dont vous avez besoin pour démarrerGOA TOKEN 1 END
 
 GOA TOKEN 0 ENDA L'unité agricole BSF de base nécessite une infrastructure relativement modeste:GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDCage de montage:GOA TOKEN 2 END Un espace clos (peut être une simple cage de filet ou une salle dédiée) où les adultes s'accouplent et pondent des œufs. OBJECTIFS
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDEgg support/trap de collecte:GOA TOKEN 2 END Les morceaux de bois ou de carton placés près du substrat organique attirent les adultes pondeurs d'oeufs. La bande d'oeufs en bois sculptée montrée dans les images ci-dessus est un exemple pratique d'un outil de collection d'oeufs simple, fait localement. OBJECTIFS
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDConteneurs/trahisons:GOA TOKEN 2 END Conteneurs peu profonds où les larves sont nourries du substrat organique. Peut être des caisses en plastique, des bassins ou des plateaux personnalisés. OBJECTIFS
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDApprovisionnement en déchets organiques:GOA TOKEN 2 END L'intrant qui ne coûte rien: déchets de cuisine, légumes de marché, déchets de brasserie, pelages de manioc, farine de palmiste, abats de poisson. OBJECTIFS
-Matériel de séchage (facultatif): Pour les opérations commerciales, un simple séchoir solaire ou un four est utilisé pour sécher les larves pour le stockage et la mouture. OBJECTIFS
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDCage de montage:GOA TOKEN 3 END Un espace clos (peut être une simple cage de filet ou une salle dédiée) où les adultes s'accouplent et pondent des œufs. GOA TOKEN 4 END
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDEgg support/trap de collecte:GOA TOKEN 7 END Les morceaux de bois ou de carton placés près du substrat organique attirent les adultes pondeurs d'oeufs. La bande d'oeufs en bois sculptée montrée dans les images ci-dessus est un exemple pratique d'un outil de collection d'oeufs simple, fait localement. OBJECTIFS
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDConteneurs/trais:GOA TOKEN 11 END Conteneurs peu profonds où les larves sont nourries du substrat organique. Peut être des caisses en plastique, des bassins ou des plateaux personnalisés. GOA TOKEN 12 END
+GOA TOKEN 13 ENDGOA TOKEN 14 ENDApprovisionnement en déchets organiques:GOA TOKEN 15 END L'intrant qui ne coûte rien: déchets de cuisine, légumes de marché, déchets de brasserie, pelages de manioc, farine de palmiste, abats de poisson. OBJECTIFS
+GOA TOKEN 17 ENDGOA TOKEN 18 ENDMatériel de séchage (facultatif):GOA TOKEN 19 END Pour les opérations commerciales, un simple séchoir solaire ou un four est utilisé pour sécher les larves pour le stockage et la mouture. GOA TOKEN 20 END
+GOA TOKEN 21 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 END Soldat noir Les oeufs de mouche se regroupent sur une bande de collecte d'oeufs en bois, un outil simple fabriqué localement qui encourage les femelles à pondre dans des endroits contrôlés pour une collecte facile. Photo: GoOrganicAfrica Research Collection.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 END Soldat noir Les oeufs de mouche se regroupent sur une bande de collecte d'oeufs en bois, un outil simple fabriqué localement qui encourage les femelles à pondre dans des endroits contrôlés pour une collecte facile. Photo: GoOrganicAfrica Research Collection.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDQuels sont les avantages pour le bétail qui proviennent le plus des larves de BSF?GOA TOKEN 1 END
 
 Les larves de GOA TOKEN 0 ENDBSF ont été incorporées avec succès dans le régime alimentaire de plusieurs classes de bétail, avec des résultats positifs documentés : GOA TOKEN 1 END
 
 GOA TOKEN 0 ENDPoulerie (colonnes et couches)GOA TOKEN 1 END
-GOA TOKEN 0 ENDLes plantes nourries à base de farine BSFL de 25 à 50% en remplacement des farines de poisson ont montré des taux de croissance comparables ou améliorés par rapport aux aliments conventionnels dans plusieurs essais de recherche en Afrique. Pour les couches, les larves de BSF améliorent les taux de production des oeufs, la qualité de la coquille et la couleur du jaune lorsqu'elles sont nourries à des niveaux d'inclusion appropriés. GOA TOKEN 1 END
+GOA TOKEN 2 ENDLes producteurs nourris avec 25 à 50% de farine de BSFL comme substitut de farine de poisson ont montré des taux de croissance comparables ou améliorés par rapport aux contrôles conventionnels des aliments pour animaux dans plusieurs essais de recherche en Afrique. Pour les couches, les larves de BSF améliorent les taux de production des oeufs, la qualité de la coquille et la couleur du jaune lorsqu'elles sont nourries à des niveaux d'inclusion appropriés. OBJECTIFS
 
 GOA TOKEN 0 ENDFish (Catfish et Tilapia)GOA TOKEN 1 END
-GOA TOKEN 0 ENDLes fermiers du Nigeria sont parmi les plus enthousiastes qui adoptent le BSF comme alternative à l'omena cher (cyprinide argentée) et à la farine de poisson importée. La protéine BSFL est très digestible pour le poisson-chat et le tilapia et a montré des résultats positifs sur le taux de croissance et l'efficacité de la conversion des aliments pour animaux. GOA TOKEN 1 END
+GOA TOKEN 2 ENDLes fermiers du Nigeria sont parmi les plus enthousiastes qui adoptent le BSF comme alternative à l'omena cher (cyprinide argentée) et aux farines de poisson importées. La protéine BSFL est très digestible pour le poisson-chat et le tilapia et a montré des résultats positifs sur le taux de croissance et l'efficacité de la conversion des aliments pour animaux. OBJECTIFS
 
 OBJECTIFS
-GOA TOKEN 0 ENDPigs consomme facilement les larves de BSF fraîchement — les agriculteurs permettent souvent aux porcs de se récolter eux-mêmes à partir de bacs à larves, combinant la gestion des déchets, la production de protéines et l'alimentation des porcs en un seul système intégré. Les taux d'inclusion de 30 à 50 % de BSFL dans les rations de porc ont montré des résultats positifs en matière de croissance. GOA TOKEN 1 END
+GOA TOKEN 2 ENDPigs consomme facilement les larves de BSF fraîchement — les agriculteurs permettent souvent aux porcs de se récolter eux-mêmes à partir de bacs à larves, combinant gestion des déchets, production de protéines et alimentation des porcs en un seul système intégré. Les taux d'inclusion de 30 à 50 % de BSFL dans les rations de porc ont montré des résultats positifs en matière de croissance. OBJECTIFS
 
 GOA TOKEN 0 ENDL'histoire nigériane et africaine de l'agriculture BSFGOA TOKEN 1 END
 
@@ -107,42 +106,42 @@ GOA TOKEN 0 ENDA 2026 article de recherche publié dans Frontiers in Environment
 GOA TOKEN 0 ENDTraitements clésGOA TOKEN 1 END
 
 GOA TOKEN 0 END
-Les larves de GOA TOKEN 0 ENDBSF contiennent 35 à 45 % de protéines brutes, comparables aux farines de poisson, et peuvent être produites à partir de déchets organiques à coût nul. GOA TOKEN 1 END
-GOA TOKEN 0 ENDDes réductions de coûts de 30 à 60 % ont été documentées lorsque BSFL remplace les sources conventionnelles de protéines dans les rations animales. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLe cycle de vie du BSF produit des larves exploitables en 14-21 jours dans des conditions tropicales nigérianes. GOA TOKEN 1 END
-GOA TOKEN 0 ENDFrass engrais fournit un deuxième flux de revenus du même processus de production. GOA TOKEN 1 END
-L'élevage GOA TOKEN 0 ENDBSF est applicable aux volailles, aux poissons-chats, aux tilapia, aux porcs et autres animaux. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLes besoins en infrastructures sont modestes et peuvent être réduits de petites opérations à des opérations commerciales. GOA TOKEN 1 END
-GOA TOKEN 0 END
+Les larves de GOA TOKEN 1 ENDBSF contiennent 35 à 45 % de protéines brutes, comparables aux farines de poisson, et peuvent être produites à partir de déchets organiques à coût nul. BIEN TOKEN 2 END
+GOA TOKEN 3 ENDDes réductions de coûts de 30 à 60 % ont été documentées lorsque BSFL remplace les sources conventionnelles de protéines dans les rations animales. GOA TOKEN 4 END
+GOA TOKEN 5 ENDLe cycle de vie du BSF produit des larves exploitables en 14–21 jours dans des conditions tropicales nigérianes. OBJECTIF
+GOA TOKEN 7 ENDL'engrais frass fournit un deuxième flux de revenus provenant du même processus de production. OBJECTIFS
+L'élevage GOA TOKEN 9 ENDBSF s'applique à la volaille, au poisson-chat, au tilapia, aux porcs et autres animaux. GOA TOKEN 10 END
+GOA TOKEN 11 ENDLes besoins en infrastructures sont modestes et peuvent être étendus de petites à des opérations commerciales. GOA TOKEN 12 END
+OBJECTIFS
 
 GOA TOKEN 0 ENDQuestions fréquemment poséesGOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDEst-ce que le BSF sent ou attire la maladie? GOA TOKEN 1 END
-GOA TOKEN 0 ENDA bien gérée L'unité BSF a une odeur minimale par rapport aux déchets organiques non transformés. Les larves de BSF suppriment en fait les espèces de mouches concurrentes (y compris les mouches domestiques porteuses de maladies) parce qu'elles produisent des composés antimicrobiens et concurrencent d'autres insectes pour le substrat organique. Une bonne gestion de l'humidité réduit au minimum les odeurs. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDDo L'odeur du BSF ou attirer la maladie? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDA L'unité BSF bien gérée a une odeur minimale par rapport aux déchets organiques non transformés. Les larves de BSF suppriment en fait les espèces de mouches concurrentes (y compris les mouches domestiques porteuses de maladies) parce qu'elles produisent des composés antimicrobiens et concurrencent d'autres insectes pour le substrat organique. Une bonne gestion de l'humidité réduit au minimum les odeurs. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDL'agriculture BSF peut-elle être faite à l'intérieur? GOA TOKEN 1 END
-GOA TOKEN 0 ENDOui — et pour les élevages et la collecte d'oeufs, les environnements intérieurs ou semi-couverts produisent en fait des résultats plus cohérents. Une cage ou une pièce fermée maintient les mouches adultes et favorise l'accouplement contrôlé et la ponte. Les bacs à croissance larvaire peuvent être conservés à l'intérieur ou dans un espace extérieur ombragé. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDCan L'agriculture BSF se fait à l'intérieur ? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDOui — et pour les élevages et la collecte d'oeufs, les environnements intérieurs ou semi-couverts produisent des résultats plus cohérents. Une cage ou une pièce fermée maintient les mouches adultes et favorise l'accouplement contrôlé et la ponte. Les bacs à croissance larvaire peuvent être conservés à l'intérieur ou dans un espace extérieur ombragé. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 END Où puis-je trouver ma première colonie BSF? GOA TOKEN 1 END
-GOA TOKEN 0 ENDAu Nigeria, les colonies de BSF peuvent provenir d'agriculteurs et d'établissements de recherche établis, ou attirés par la nature – placer des déchets organiques dans une zone extérieure par temps chaud attirera généralement les femelles de BSF sauvages pour la ponte en quelques semaines. En commençant par une colonie achetée auprès d'une source réputée, vous gagnerez beaucoup de temps. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 END Où puis-je trouver ma première colonie BSF? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDAu Nigeria, les colonies de BSF peuvent provenir d'agriculteurs et d'établissements de recherche établis de la BSF, ou être attirées naturellement. En commençant par une colonie achetée auprès d'une source réputée, vous gagnerez beaucoup de temps. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 END Combien peut produire un bac BSF ? GOA TOKEN 1 END
-GOA TOKEN 0 ENDUne seule benne à BSF bien gérée (environ 60 cm × 40 cm) remplie d'une quantité suffisante d'oeufs peut produire de 2 à 5 kg de larves fraîches sur un cycle de 14 jours, selon la qualité et la quantité du substrat organique. Plusieurs bacs décalés en rotation créent une récolte quotidienne continue. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 END Combien peut produire un bac BSF ? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDUn seul bac BSF bien géré (environ 60 cm × 40 cm) rempli d'une quantité suffisante d'oeufs peut produire de 2 à 5 kg de larves fraîches sur un cycle de 14 jours, selon la qualité et la quantité du substrat organique. Plusieurs bacs décalés en rotation créent une récolte quotidienne continue. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 ENDAutres lectures et ressources externesGOA TOKEN 1 END
-GOA TOKEN 0 ENDPour des recherches supplémentaires sur l'élevage de la mouche noire et les protéines des insectes en Afrique:GOA TOKEN 1 END
-GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAO — Insectes comestibles et protéines d'insectesGOA TOKEN 2 END: recherche mondiale faisant autorité sur l'alimentation animale à base d'insectesGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITAGOA TOKEN 2 END: l'institution africaine de recherche agricole soutient des alternatives alimentaires durablesGOA TOKEN 3 END
-GOA TOKEN 0 END
+GOA TOKEN 2 ENDPour de plus amples recherches sur l'élevage de la mouche noire et les protéines des insectes en Afrique:GOA TOKEN 3 END
+GOA TOKEN 4 END
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDFAO — Insectes comestibles et protéines d'insectesGOA TOKEN 7 END: recherche mondiale faisant autorité sur l'alimentation animale à base d'insectesGOA TOKEN 8 END
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDIITAGOA TOKEN 11 END: Institut africain de recherche agricole pour l'alimentation durable
+OBJECTIFS
 
 GOA TOKEN 0 ENDConclusion: BSF L'agriculture est une agriculture, pas seulement une alimentation alternativeGOA TOKEN 1 END
 
@@ -151,9 +150,9 @@ GOA TOKEN 0 END Soldat noir L'agriculture de mouche représente quelque chose de
 GOA TOKEN 0 ENDLa technologie n'est plus expérimentale. Les agriculteurs du Nigéria, du Kenya, du Ghana, de l'Ouganda et de l'Afrique du Sud mènent déjà des opérations rentables de FSF. La question n'est plus de savoir si cela fonctionne — c'est quand vous commencerez. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDObtenez le guide complet de l'agriculture BSFGOA TOKEN 1 END
-GOA TOKEN 0 ENDNotre guide Fly Farming de soldat noir couvre le processus de production complet, les taux d'alimentation, la configuration des équipements et la façon de construire une entreprise agricole BSF rentable depuis le début. GOA TOKEN 1 END
-GOA TOKEN 0 ENDObtenez le guide completGOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDObtenez le guide complet de l'agriculture BSFGOA TOKEN 2 END
+GOA TOKEN 3 ENDNotre guide Fly Farming pour les soldats noirs couvre le processus de production complet, les taux d'alimentation, la configuration des équipements et la façon de construire une entreprise agricole BSF rentable depuis le début. GOA TOKEN 4 END
+GOA TOKEN 5 ENDObtenez le guide completGOA TOKEN 6 END
+OBJECTIFS
 
 GOA TOKEN 0 END

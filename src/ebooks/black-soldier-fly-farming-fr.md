@@ -20,14 +20,22 @@ audience:
   - "Pêcheurs"
   - "Les éleveurs qui cherchent à réduire les coûts alimentaires"
   - "Agriculteurs intéressés par les systèmes de valorisation des déchets"
+benefits:
   - "Guide pratique pour produire des larves de mouches de soldat noir comme source d'alimentation"
   - "Transforme les déchets organiques en intrants agricoles utilisables"
   - "Convient pour les configurations à petite échelle et à échelle commerciale"
   - "Ecrit à partir d'une expérience de production réelle"
-  - "q: Qu'est-ce que l'agriculture de la mouche de soldat noir?"
-  - "q: Est-ce approprié pour les débutants?"
-  - "q: À quoi les larves peuvent-elles être nourries?"
-  - "q: Ai-je besoin d'équipement spécial?"
+bonus: "Consultation gratuite de WhatsApp après achat"
+faqs:
+  - q: "Qu'est-ce que l'agriculture à la mouche ?"
+    a: "C'est la pratique de la reproduction de mouches de soldat noir afin que leurs larves puissent être récoltées comme un ingrédient d'alimentation riche en protéines pour le bétail et le poisson."
+  - q: "Est-ce approprié pour les débutants?"
+    a: "Oui, le guide est rédigé de façon pratique, étape par étape, pour les agriculteurs nouveaux au processus."
+  - q: "À quoi peuvent servir les larves?"
+    a: "Le guide traite de l'utilisation des larves comme aliment pour la volaille, le poisson et d'autres animaux."
+  - q: "Ai-je besoin d'équipement spécial?"
+    a: "Le guide explique la configuration nécessaire, en travaillant avec des matériaux simples et accessibles."
+search_terms:
   - "BSF agriculture"
   - "soldat noir voler"
   - "Insecticulture"
@@ -35,8 +43,7 @@ audience:
   - "aliments pour animaux"
   - "aliments pour volailles"
   - "aliments pour poissons"
-
-source_language: "en"
 translation_group: "ebook-bsf"
+source_language: "en"
 translation_status: "in_review"
 ---

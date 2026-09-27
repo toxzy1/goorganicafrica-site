@@ -17,9 +17,8 @@ keywords:
   - "agriculture de champignons Nigeria 2026"
   - "Pleurotus ostreatus Nigeria"
   - "commerce de champignons rentable Nigeria"
-
-source_language: "en"
 translation_group: "blog-mushroom"
+source_language: "en"
 translation_status: "in_review"
 ---
 GOA TOKEN 0 END
@@ -40,12 +39,12 @@ GOA TOKEN 0 ENDPourquoi les champignons d'huître Sont le bon choix pour les agr
 GOA TOKEN 0 ENDParmi les nombreuses espèces de champignons qui peuvent être cultivées commercialement, les champignons huîtres (Pleurotus ostreatus) se distinguent comme le choix pratique pour les producteurs nigérians et ouest-africains pour plusieurs raisons : GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDTolérancetropicale:GOA TOKEN 2 END Les champignons d'huîtres fruits bien à des températures comprises entre 24°C et 32°C — précisément la gamme de la plupart des environnements de culture nigérians sans la nécessité de systèmes de contrôle climatique coûteux. OBJECTIFS
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDCompatibilité du substrat:GOA TOKEN 2 END Ils poussent sur une large gamme de déchets agricoles - sciure, écaille de riz, gâteau à grains de palme, corbeilles, bagasse de canne à sucre, graine de coton - qui sont largement disponibles dans tout le Nigeria à faible coût. OBJECTIFS
-GOA TOKEN 0 ENDGOA TOKEN 1 END Cycle de production court:GOA TOKEN 2 END De l'inoculation à la première récolte est généralement 21–35 jours, avec 2–3 récoltes supplémentaires (flus) possibles à partir du même sac de substrat au cours des semaines suivantes. OBJECTIFS
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDAcceptation du marché:GOA TOKEN 2 END Les champignons d'huître sont le champignon cultivé le plus largement accepté dans les marchés urbains nigérians, les restaurants, les hôtels et les supermarchés. OBJECTIFS
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDBesoin de terres faibles:GOA TOKEN 2 END Une ferme de champignons productive fonctionne dans une seule pièce ou dans un petit bâtiment, ce qui en fait l'une des entreprises agricoles les plus efficaces. OBJECTIFS
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDTolérancetropicale:GOA TOKEN 3 END Les champignons d'huîtres fruits bien à des températures comprises entre 24°C et 32°C — précisément la gamme de la plupart des environnements de culture nigérians sans la nécessité de systèmes de contrôle climatique coûteux. GOA TOKEN 4 END
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDCompatibilité du substrat:GOA TOKEN 7 END Ils poussent sur une large gamme de déchets agricoles - sciure, écaille de riz, gâteau à grains de palme, corbeilles, bagasse de canne à sucre, graine de coton - qui sont largement disponibles dans tout le Nigeria à faible coût. OBJECTIFS
+GOA TOKEN 9 ENDGOA TOKEN 10 END Cycle de production court:GOA TOKEN 11 END De l'inoculation à la première récolte est généralement 21–35 jours, avec 2–3 récoltes supplémentaires (flus) possibles à partir du même sac de substrat au cours des semaines suivantes. GOA TOKEN 12 END
+GOA TOKEN 13 ENDGOA TOKEN 14 ENDAcceptation du marché:GOA TOKEN 15 END Les champignons d'huître sont le champignon cultivé le plus largement accepté dans les marchés urbains nigérians, les restaurants, les hôtels et les supermarchés. OBJECTIFS
+GOA TOKEN 17 ENDGOA TOKEN 18 ENDBesoin de terres faibles:GOA TOKEN 19 END Une ferme de champignons productive fonctionne dans une seule pièce ou dans un petit bâtiment, ce qui en fait l'une des entreprises agricoles les plus efficaces. GOA TOKEN 20 END
+GOA TOKEN 21 END
 
 GOA TOKEN 0 ENDProcessus complet de production de champignons d'huîtreGOA TOKEN 1 END
 
@@ -56,12 +55,12 @@ GOA TOKEN 0 ENDStage 1 — Préparation du substratGOA TOKEN 1 END
 GOA TOKEN 0 ENDLe substrat est le milieu de culture qui alimente le champignon — c'est l'équivalent du sol dans l'agriculture. Pour les champignons huîtres au Nigéria, le substrat standard est une combinaison de sciure de bois feuillus vieilli (la principale source de carbone), d'une peau de riz (pour l'aération et le drainage) et d'un supplément nutritionnel tel que le gâteau à grains de palme (PKC) ou la farine de maïs (pour augmenter la teneur en protéines et le rendement). GOA TOKEN 1 END
 
 GOA TOKEN 0 ENDA formule standard pour produire environ 50 sacs de substrat (1 kg chacun) est:GOA TOKEN 1 END
-GOA TOKEN 0 END
-GOA TOKEN 0 ENDSciure: 20 kgGOA TOKEN 1 END
-GOA TOKEN 0 ENDRice: 9,5 kgGOA TOKEN 1 END
-GOA TOKEN 0 ENDPKC ou farine de maïs: 12 kgGOA TOKEN 1 END
+BIEN TOKEN 2 END
+GOA TOKEN 3 ENDSawdust: 20 kgGOA TOKEN 4 END
+GOA TOKEN 5 ENDRice: 9,5 kgGOA TOKEN 6 END
+GOA TOKEN 7 ENDPKC ou farine de maïs: 12 kgGOA TOKEN 8 END
 carbonate de calcium (chaux agricole): 1 kg
-GOA TOKEN 0 END
+GOA TOKEN 11 END
 
 GOA TOKEN 0 ENDUne note critique sur le carbonate de calcium: seule la chaux agricole (carbonate de calcium, CaCO3) doit être utilisée — jamais la chaux de construction (chaux hydratée ou chaux rapide), qui brûle la peau au contact et tue instantanément le mycélium champignon. Ces matériaux sont similaires, mais ont des propriétés chimiques complètement différentes. Le carbonate de calcium est doux, doux et ne brûle pas la peau. GOA TOKEN 1 END
 
@@ -76,7 +75,7 @@ GOA TOKEN 0 ENDStage 3 — Pasteurisation (Stérilisation)GOA TOKEN 1 END
 GOA TOKEN 0 ENDLa pasteurisation tue les micro-organismes nuisibles — bactéries, moisissures et autres champignons — qui concurrenceraient le mycélium des champignons et contamineraient les sacs. C'est l'une des étapes les plus critiques du processus. Le saut ou l'insuffisance de pasteurisation est la principale cause de pertes de contamination chez les nouveaux cultivateurs de champignons. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSteam pasteurisation des sacs de substrat à l'aide d'un tambour métallique sur bois de chauffage — la méthode la plus utilisée dans l'agriculture des champignons nigérians. Cuire 6 heures (bois de chauffage) ou 4 heures (gaz). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDSteam pasteurisation de sacs de substrat à l'aide d'un tambour métallique sur du bois de chauffage — la méthode la plus utilisée dans l'agriculture des champignons nigérians. Cuire 6 heures (bois de chauffage) ou 4 heures (gaz). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDLa méthode nigériane à petite échelle utilise un tambour métallique sur un feu de bois ou de gaz. Les sacs de substrat sont placés sur une plate-forme en bois ou en métal surélevée à l'intérieur du tambour — ils ne doivent pas s'asseoir directement dans l'eau, car la vapeur (eau non bouillante) est ce qui pasteurise les sacs. Le temps de cuisson est de 6 heures avec du bois de chauffage ou de 4 heures avec du gaz. Après cuisson, laisser refroidir complètement les sacs (ce qui peut prendre 10 à 12 heures) avant de procéder à l'inoculation. L'inoculation de sacs chauds tue le frai. GOA TOKEN 1 END
 
@@ -85,14 +84,14 @@ GOA TOKEN 0 ENDStage 4 — InoculationGOA TOKEN 1 END
 GOA TOKEN 0 ENDL'inoculation est le processus d'introduction de la fraie des champignons (la « graine » des champignons) dans les sacs de substrat. C'est l'étape la plus sujette à la contamination si l'hygiène n'est pas maintenue rigoureusement. Les règles les plus importantes pendant l'inoculation sont:GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDNe parlez pas en inoculation — parler libère des gouttelettes de salive qui transportent des microorganismes contaminants. GOA TOKEN 1 END
-GOA TOKEN 0 ENDStérilisez les mains avec 80% d'éthanol avant de commencer, et re-stérilisez après chaque 5-10 sacs. GOA TOKEN 1 END
-GOA TOKEN 0 ENDTravailler près d'une flamme d'éthanol — garder la bouche de la bouteille de frayer près de la flamme lors de l'ouverture pour créer une barrière stérile de débit d'air. GOA TOKEN 1 END
-GOA TOKEN 0 ENDAjouter 2 à 3 cuillères à soupe de frai par sac de 1 kg, agiter doucement pour distribuer, puis fermer et attacher immédiatement. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDNe parlez pas en inoculation — parler libère des gouttelettes de salive qui transportent des microorganismes contaminants. BIEN TOKEN 2 END
+GOA TOKEN 3 ENDStérilisez les mains avec 80% d'éthanol avant de commencer, et re-stérilisez après chaque 5-10 sacs. GOA TOKEN 4 END
+GOA TOKEN 5 ENDTravailler près d'une flamme d'éthanol — garder la bouche de la bouteille de frayer près de la flamme lors de l'ouverture pour créer une barrière stérile de débit d'air. OBJECTIF
+OBJECTIFS Ajouter 2 à 3 cuillères à soupe de frai par sac de 1 kg, agiter doucement pour distribuer, puis fermer et attacher immédiatement. OBJECTIFS
+GOA TOKEN 9 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDOyster frayent dans des bouteilles de verre à différents stades de colonisation — du grain fraîchement inoculé (à droite) au mycélium blanc entièrement colonisé (à gauche). La qualité des spawn est essentielle au succès de la production. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDOyster frayent dans des bouteilles de verre à différents stades de la colonisation — du grain fraîchement inoculé (à droite) au mycélium blanc entièrement colonisé (à gauche). La qualité des spawn est essentielle au succès de la production. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDStage 5 — IncubationGOA TOKEN 1 END
 
@@ -101,7 +100,7 @@ GOA TOKEN 0 ENDAprès l'inoculation, les sacs sont placés dans une chambre d'in
 GOA TOKEN 0 ENDLa contamination doit être surveillée avec soin durant cette étape. Retirez immédiatement tout sac présentant une coloration jaune vert, noir ou persistant, ce qui indique une contamination par Aspergillus niger, Trichoderma ou d'autres moules concurrents qui peuvent s'étendre aux sacs adjacents. La seule réponse sûre à la contamination est le retrait immédiat du sac touché de la salle d'incubation. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSous-sacs dans la salle d'incubation à différents stades de la colonisation du mycélium — des sacs foncés nouvellement inoculés (en haut) aux sacs blancs fortement colonisés (en bas). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDSous-sacs dans la salle d'incubation à différents stades de la colonisation du mycélium — des sacs foncés nouvellement inoculés (en haut) aux sacs blancs fortement colonisés (en bas). Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDStage 6 — Fruits et récoltesGOA TOKEN 1 END
 
@@ -124,42 +123,42 @@ GOA TOKEN 0 ENDPour les agriculteurs nigérians disposant d'une capacité de pro
 GOA TOKEN 0 ENDTraitements clésGOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDNigéria produit seulement 300 tonnes de champignons par an contre une demande estimée à 1 200 tonnes, ce qui crée une importante opportunité pour les nouveaux producteurs. GOA TOKEN 1 END
-GOA TOKEN 0 ENDOyster champignons sont l'espèce la plus pratique pour les agriculteurs nigérians en raison de leur tolérance à la température tropicale, la polyvalence du substrat et l'acceptation du marché. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLe cycle de production complet de l'inoculation à la première récolte est de 21–35 jours, avec 2–3 rinçages supplémentaires possibles par sac. GOA TOKEN 1 END
-GOA TOKEN 0 ENDL'hygiène de la pasteurisation et de l'inoculation sont les deux étapes les plus critiques — la contamination à chaque point est la principale cause de défaillance de la production. GOA TOKEN 1 END
-GOA TOKEN 0 ENDChampignons d'huîtres fresh au détail à 7 280–10 000 par kilogramme sur les marchés urbains nigérians, ce qui représente un potentiel de marge exceptionnel. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLes exigences en matière d'infrastructure sont minimes: une seule pièce ou un petit bâtiment suffit pour réaliser une opération rentable à petite échelle. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDNigéria produit seulement 300 tonnes de champignons par an contre une demande estimée à 1 200 tonnes, ce qui crée une importante opportunité pour les nouveaux producteurs. BIEN TOKEN 2 END
+GOA TOKEN 3 ENDOyster champignons sont les espèces les plus pratiques pour les agriculteurs nigérians en raison de leur tolérance à la température tropicale, la polyvalence du substrat et l'acceptation du marché. GOA TOKEN 4 END
+GOA TOKEN 5 ENDLe cycle de production complet de l'inoculation à la première récolte est de 21–35 jours, avec 2–3 rinçages supplémentaires possibles par sac. OBJECTIF
+GOA TOKEN 7 ENDL'hygiène de la pasteurisation et de l'inoculation sont les deux étapes les plus critiques — la contamination à chaque point est la principale cause de défaillance de la production. OBJECTIFS
+GOA TOKEN 9 ENDChampignons d'huîtres fresh au détail de 7 280 à 10 000 par kilogramme sur les marchés urbains nigérians, ce qui représente un potentiel de marge exceptionnel. GOA TOKEN 10 END
+GOA TOKEN 11 ENDLes exigences en matière d'infrastructure sont minimes: une seule pièce ou un petit bâtiment suffit pour effectuer une opération rentable à petite échelle. GOA TOKEN 12 END
+OBJECTIFS
 
 GOA TOKEN 0 ENDQuestions fréquemment poséesGOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDCombien coûte l'exploitation des champignons huîtres au Nigeria ? GOA TOKEN 1 END
-GOA TOKEN 0 ENDUn démarrage à petite échelle avec 50 sacs nécessite des investissements dans des matériaux substrats (sciure, riz, PKC, carbonate de calcium), des frayères, des sacs résistants à la chaleur et des équipements d'inoculation de base (éthanol, laine de coton). Beaucoup d'agriculteurs nigérians commencent à tirer profit de cette échelle avant de se développer, avec des coûts de démarrage totaux pour un lot de 50 sacs allant généralement de 30 000 à 80 000 selon les coûts du matériel local. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDCombien coûte le démarrage de l'élevage des champignons huîtres au Nigeria ? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDUn démarrage à petite échelle avec 50 sacs nécessite des investissements dans les matériaux de substrat (sciure, riz, PKC, carbonate de calcium), le frayage, les sacs résistants à la chaleur et les équipements d'inoculation de base (éthanol, laine de coton). Beaucoup d'agriculteurs nigérians commencent à tirer profit de cette échelle avant de se développer, avec des coûts de démarrage totaux pour un lot de 50 sacs allant généralement de 30 000 à 80 000 selon les coûts du matériel local. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 END Quelle est la plus grosse erreur des nouveaux agriculteurs de champignons? GOA TOKEN 1 END
-GOA TOKEN 0 ENDUne pasteurisation inadéquate et une mauvaise hygiène d'inoculation sont les deux causes les plus courantes d'échec. Beaucoup d'agriculteurs font cuire des sacs pendant un temps insuffisant, ou parlent/déplacent trop pendant l'inoculation, introduisant une contamination qui détruit tout le lot. Le fait de traiter l'hygiène comme non négociable — et non comme un inconvénient — est le changement d'attitude le plus important pour les nouveaux producteurs. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 END Quelle est la plus grosse erreur des nouveaux agriculteurs de champignons? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDUne pasteurisation inadéquate et une mauvaise hygiène d'inoculation sont les deux causes les plus courantes d'échec. Beaucoup d'agriculteurs font cuire des sacs pendant un temps insuffisant, ou parlent/déplacent trop pendant l'inoculation, introduisant une contamination qui détruit tout le lot. Le fait de traiter l'hygiène comme non négociable — et non comme un inconvénient — est le changement d'attitude le plus important pour les nouveaux producteurs. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 END Où puis-je vendre des champignons huîtres au Nigeria? GOA TOKEN 1 END
-GOA TOKEN 0 ENDUrban hôtels, restaurants, supermarchés, magasins de produits de santé et ventes en ligne directes au consommateur via WhatsApp ou les réseaux sociaux sont tous des canaux de vente établis au Nigeria. Les restaurants et les hôtels sont généralement les meilleurs clients — ils ont besoin d'un approvisionnement cohérent, paient des prix élevés et établissent des relations avec les fournisseurs à long terme. En commençant par votre réseau immédiat et en travaillant vers l'extérieur est le chemin le plus commun pour les petits producteurs. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDOù puis-je vendre des champignons huîtres au Nigeria ? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDUrban hôtels, restaurants, supermarchés, magasins de produits de santé et ventes en ligne directes aux consommateurs via WhatsApp ou les médias sociaux sont tous des canaux de vente établis au Nigeria. Les restaurants et les hôtels sont généralement les meilleurs clients — ils ont besoin d'un approvisionnement cohérent, paient des prix élevés et établissent des relations avec les fournisseurs à long terme. En commençant par votre réseau immédiat et en travaillant vers l'extérieur est le chemin le plus commun pour les petits producteurs. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 END Où puis-je obtenir le guide complet de production étape par étape? GOA TOKEN 1 END
-GOA TOKEN 0 ENDNotre GOA TOKEN 1 ENDGuide complet de l'élevage de champignons d'huîtresGOA TOKEN 2 END couvre le processus de production complet en détail pratique — formules de substrats, méthodes de pasteurisation, procédures d'inoculation, identification de la contamination, gestion des fruits, calendrier de récolte, échelle de 50 à 1000 sacs et marketing. GOA TOKEN 3 ENDVoir le guide complet ici. OBJECTIFS D'EXÉCUTION
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDOù puis-je obtenir le guide de production complet étape par étape? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDNotre GOA TOKEN 4 ENDGuide complet de l'élevage des champignons d'huîtresGOA TOKEN 5 END couvre le processus de production complet en détail pratique — formules de substrat, méthodes de pasteurisation, procédures d'inoculation, identification de la contamination, gestion des fruits, calendrier de récolte, échelle de 50 à 1000 sacs et marketing. GOA TOKEN 6 ENDVoir le guide complet ici. OBJECTIFS D'EXÉCUTION
+GOA TOKEN 9 END
 
 GOA TOKEN 0 ENDAutres lectures et ressources externesGOA TOKEN 1 END
-GOA TOKEN 0 ENDPour des recherches supplémentaires sur la culture des champignons et les marchés en Afrique:GOA TOKEN 1 END
-GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: données mondiales sur la production de champignons et recherche sur les systèmes alimentairesGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITAGOA TOKEN 2 END: la recherche agricole africaine soutient la production alimentaire durableGOA TOKEN 3 END
-GOA TOKEN 0 END
+GOA TOKEN 2 ENDPour des recherches supplémentaires sur la culture des champignons et les marchés en Afrique:GOA TOKEN 3 END
+GOA TOKEN 4 END
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDFAOGOA TOKEN 7 END: données mondiales sur la production de champignons et recherche sur les systèmes alimentairesGOA TOKEN 8 END
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDIITAGOA TOKEN 11 END: la recherche agricole africaine soutient la production alimentaire durableGOA TOKEN 12 END
+OBJECTIFS
 
 GOA TOKEN 0 ENDConclusion: La fenêtre est ouverte — mais elle ne restera pas ouverte pour toujoursGOA TOKEN 1 END
 
@@ -168,9 +167,9 @@ GOA TOKEN 0 ENDLe marché des champignons d'huîtres nigérians et africains se 
 GOA TOKEN 0 ENDL'agriculture de champignons récompense ceux qui investissent dans la compréhension du processus correctement dès le début. Les pertes de contamination qui découragent la plupart des débutants sont, dans la grande majorité des cas, évitables par une bonne hygiène et une technique correcte. Les agriculteurs qui obtiennent des résultats remarquables de 25 à 100 sacs au Nigeria n'utilisent pas de systèmes secrets — ils ont simplement maîtrisé les fondamentaux de la pasteurisation, de l'hygiène de l'inoculation et de la gestion des salles de fruits. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDObtenez le guide complet de l'agriculture de champignons de l'huîtreGOA TOKEN 1 END
-GOA TOKEN 0 ENDLe guide complet porte sur les formules de substrat, la pasteurisation, l'inoculation, l'incubation, le fruit, la récolte et l'échelle — écrites à partir de l'expérience de production réelle au Nigeria. GOA TOKEN 1 END
-GOA TOKEN 0 ENDObtenez le guide completGOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDObtenez le guide complet de l'agriculture de champignons d'huîtresGOA TOKEN 2 END
+GOA TOKEN 3 ENDLe guide complet porte sur les formules de substrat, la pasteurisation, l'inoculation, l'incubation, le fruitage, la récolte et l'échelle. GOA TOKEN 4 END
+GOA TOKEN 5 ENDObtenez le guide completGOA TOKEN 6 END
+OBJECTIFS
 
 GOA TOKEN 0 END

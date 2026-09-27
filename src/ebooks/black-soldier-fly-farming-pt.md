@@ -20,14 +20,22 @@ audience:
   - "Pescadores"
   - "Agricultores que procuram reduzir os custos de alimentação animal"
   - "Agricultores interessados em sistemas de resíduos a valor"
+benefits:
   - "Guia prático para produzir larvas de mosca de soldado preto como fonte de alimentação"
   - "Transforma os resíduos orgânicos numa produção agrícola utilizável"
   - "Adequado para configurações de pequena e comercial"
   - "Escrito a partir de experiência de produção real"
-  - "q: O que é a agricultura de mosca de soldado negro?"
-  - "q: Isso é adequado para iniciantes?"
-  - "q: A que as larvas podem ser alimentadas?"
-  - "q: Eu preciso de equipamento especial?"
+bonus: "Consulta gratuita do WhatsApp após compra"
+faqs:
+  - q: "O que é que o soldado negro faz?"
+    a: "É a prática de reprodução de moscas de soldado preto para que suas larvas possam ser colhidas como um ingrediente alimentar rico em proteínas para animais e peixes."
+  - q: "Isto é adequado para iniciantes?"
+    a: "Sim, o guia é escrito de forma prática, passo a passo, para os agricultores novos no processo."
+  - q: "A que podem ser alimentadas as larvas?"
+    a: "O guia abrange a utilização das larvas como alimento para aves de capoeira, peixes e outros animais."
+  - q: "Preciso de equipamento especial?"
+    a: "O guia explica a configuração necessária, trabalhando com materiais simples e acessíveis."
+search_terms:
   - "Agricultura BSF"
   - "preto soldado voar"
   - "criação de insetos"
@@ -35,8 +43,7 @@ audience:
   - "Alimentos para animais"
   - "Alimentos para aves de capoeira"
   - "ração dos peixes"
-
-source_language: "en"
 translation_group: "ebook-bsf"
+source_language: "en"
 translation_status: "in_review"
 ---

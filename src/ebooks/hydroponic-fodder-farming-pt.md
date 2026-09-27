@@ -20,14 +20,22 @@ audience:
   - "Cabras, ovinos e bovinos"
   - "Pequenos agricultores"
   - "Agricultores com terras limitadas"
+benefits:
   - "Processo de produção prático, passo a passo, da semente à colheita"
   - "Orientação sobre a incorporação de forragens na alimentação sem adivinhação"
   - "Projetado para produção de pequeno espaço e baixo capital"
   - "Escrito a partir de experiência real fazenda, não teoria"
-  - "q: O que é a forragem hidropônica?"
-  - "q: Quanto tempo leva?"
-  - "q: Eu preciso de uma grande fazenda para começar?"
-  - "q: Isto irá substituir toda a minha alimentação convencional?"
+bonus: "Consulta gratuita do WhatsApp após compra"
+faqs:
+  - q: "O que é a criação de forragens hidropónicas?"
+    a: "É um método de cultivo de forragem verde fresca a partir de sementes em bandejas, sem solo, como fonte de alimentação suplementar para o gado."
+  - q: "Quanto tempo demora?"
+    a: "O guia percorre um curto ciclo de produção de poucos dias desde a semente até a forragem pronta para a colheita."
+  - q: "Preciso de uma quinta grande para começar?"
+    a: "Não. O sistema é projetado para trabalhar em um pequeno espaço controlado perto de seu gado."
+  - q: "Isto vai substituir toda a minha alimentação convencional?"
+    a: "Não. O guia explica como as forragens hidropônicas se encaixam ao lado das rações convencionais como parte de uma abordagem de alimentação equilibrada."
+search_terms:
   - "Forragens hidropónicas"
   - "Forragens verdes"
   - "Alimentos para animais"
@@ -35,8 +43,7 @@ audience:
   - "Alimentos para cabras"
   - "Alimentos para ovinos"
   - "Alimentos para animais"
-
-source_language: "en"
 translation_group: "ebook-fodder"
+source_language: "en"
 translation_status: "in_review"
 ---

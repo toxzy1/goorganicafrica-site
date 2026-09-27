@@ -17,9 +17,8 @@ keywords:
   - "كيف ينمو (كاسافا) خلال 5 أشهر"
   - "تحسين إنتاج الكاسافا"
   - "زراعة الكاسافا في أفريقيا"
-
-source_language: "en"
 translation_group: "blog-cassava"
+source_language: "en"
 translation_status: "in_review"
 ---
 وتنتج الرابطة ما يزيد على ٥٩ مليون طن من الكاسفا سنويا - وهو أعلى بلد في العالم. ومع ذلك، فإن معظم مزارعي الكاسافا النيجيريين يتركون جزءاً كبيراً من غلتهم المحتملة في الأرض بسبب مشكلة واحدة لم يحلوها بالكامل: الحشيش. وتقنية الزراعة الخالية من الأعشاب المثبتة تتغير، وتبدأ بالأرض - قبل أن تزرع المجموعة الأولى.  
@@ -37,7 +36,6 @@ GoA TOKEN 0 END THE Weed-Free Farming Technique: A Different ApproachGOA TOKEN 1
 GoA TOKEN 0 ENDThe weed-free cassava farming technique does not rely on post-emergence hand weeding or repeated herbicide applications as the primary weed control strategy. وبدلاً من ذلك، تعامل إدارة الحشيش كتحدٍ من التحديات في النظم - وهو أمر تقرره إلى حد كبير قبل أن تتحول المجموعة الأولى من الكاسافا إلى الأرض، من خلال الإعداد الشامل والميسر للأراضي، إلى جانب التوقيت الاستراتيجي للزراعة.  
 
  والمبدأ الأساسي هو هذا: إذا أعدتم الأراضي على نحو سليم - تغرقون بعمق كاف، وتهتزون بشكل دقيق، وتسمحون بوقت كاف لبذور الحشيش التي تجلب إلى السطح لتبريد وتموت قبل زرعها - فإنكم تخفضون بشكل كبير الضغط التنافسي على الأعشاب أثناء فترة الإنشاء المبكر الحرجة. وهذا النهج، الذي يقترن بكثافة زراعية صحيحة واختيار مجموعة متنوعة من المسافا، يحقق موقفاً من المحاصيل الخالية من الأعشاب أو شبه الخالية من الأعشاب من خلال إدارة العبوات بدلاً من القمع الكيميائي.  
-
 
 يدفن البذور الحشيشية تحت عمق الجراثيم ويكشف بذور الحشيش المدفونة للتحلل هذه الخطوة الوحيدة هي أهم تدخل في التقنية الخالية من الأعشاب.  BAR 
 
@@ -59,15 +57,13 @@ GOA TOKEN 0 ENDMonth 1 - Planting: Selection and SpacingGOA TOKEN
 
 يزرع من قطع الجذع وليس البذور مجموعة الاختيار حاسمة:
 
+الهدف الأول: الاستخدام السليم، خالي من الأمراض ينبع من تنوع إنتاجي. In Nigeria, improved varieties including TME 419, NR 8082 and TMS 30572 are recommended for their high yield, disease resistance and adaptability.  BAR   BAR   BAR 
+GoA TOKEN 3 ENDCut sets to 25–30 cm length with at least 5-6 nodes for reliable sprouting.  BAR   BAR 
+GoA TOKEN 5 ENDPlant at 1m × 1m spacing (10,000 plants per hectare) for the weed-free technique. الإبطاء يُسرع بإغلاق الوريد هذا هو كيف يُخرج المحصول من الحشيش بدون مبيدات الأعشاب عندما يُنشأ  BAR   BAR   BAR 
+BAR   BAR   BAR  كما أن النباتات في الاتجاه الصحيح - تزرع أفقيا أو على زاوية طفيفة تُثبت بشكل موحد أكثر من الزراعة العمودية في معظم أنواع التربة النيجيرية.  BAR   BAR   BAR   BAR 
+BAR   BAR   BAR 
 
-فصيل عبد الواحد - فصيل عبد الواحد In Nigeria, improved varieties including TME 419, NR 8082 and TMS 30572 are recommended for their high yield, disease resistance and adaptability.  
-GoA TOKEN 0 ENDCut sets to 25–30 cm length with at least 5-6 nodes for reliable sprouting.  
-GoA TOKEN 0 ENDPlant at 1m × 1m spacing (10,000 plants per hectare) for the weed-free technique. الإبطاء يُسرع بإغلاق الوريد هذا هو كيف يُخرج المحصول من الحشيش بدون مبيدات الأعشاب عندما يُنشأ  
-GA TOKEN 0 ENDPlant at the correct orientation — sets planted horizontally or at a slight angle establish more uniformly than spiritual planting in most Nigerian soil types.  
-
-
-
-GA TOKEN 0 ENDGOA TOKEN 1 ENDFertilizer application during land preparation improves soil nutrition and boosts early cassava establishment — a critical step that supports faster canopy development and earlier weed suppression.  BAR 
+GA TOKEN 1 ENDGOA TOKEN 2 ENDFertilizer application during land preparation improves soil nutrition and boosts early cassava establishment - a critical step that supports faster canopy development and earlier weed suppression.  BAR 
 
 GA TOKEN 0 ENDMonth 2 - Early Establishment: The Critical WindowGOA TOKEN 1
 
@@ -83,8 +79,7 @@ GOA TOKEN 0 ENDMonth 5 - HarvestGOA TOKEN
 
 وعادة ما يتم جمع معظم أصناف الغازات المسفاة في نيجيريا في الفترة من ٩ إلى ١٢ شهرا، ويمكن أن ينتج عن ذلك في وقت مبكر أصناف محسنة - لا سيما عندما يقترن ذلك بالتحضير الممتاز للأراضي، والكثافة الزراعية الصحيحة، والتخصيب الكافي، والإدارة الخالية من الأعشاب الضارة - محاصيل صالحة تجاريا في ٥ أشهر، ولا سيما في المناطق الجنوبية الرطبة في نيجيريا. والمؤشر الرئيسي على استعداد الحصاد هو توسّع الجذور إلى حجم تكون فيه الأنابيب جيدة الشكل وقد حققت تراكماً كافياً في النجوم.  
 
-
-GoA TOKEN 0 ENDGOA TOKEN 1 ENDA healthy cassava set sprouting with strong root formation — the result of quality set selection and good soil preparation. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GoA TOKEN 1 ENDGOA TOKEN 2 ENDA healthy cassava set sprouting with strong root formation — the result of quality set selection and good soil preparation. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 {\pos(190,210)}{\pos(190,210)}{\pos(190,210)}{\pos(190,210)}{\pos(190,210)}{\pos(190,210)}{\pos(190,210)}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fnAdobe Arabic}{\fn
 
@@ -100,42 +95,37 @@ GoA TOKEN 0 ENDProcessed cassava products — garri, cassava flour, fufu, starch
 
 حسناً
 
-
-ويمكن أن تقلل الأعشاب الخاضعة لسيطرة حكومة غيانا من غلة الكاسفا بنسبة تصل إلى 80 في المائة لكل هكتار - مما يجعل إدارة الأعشاب أكثر متغير إنتاجي أثراً بعد اختيار مختلف.  
-GoA TOKEN 0 ENDThe weed-free technique addresses weeds at the source through thorough mechanized land preparation, not reactive manual weeding or repeated herbicide use.  
-GoA TOKEN 0 ENDA two-pass approach - deep ploughing followed by harrowing after weed seedling emergence - depletes the surface weed seed bank before cassava is planted.  
-GoA TOKEN 0 ENDCorrect planting density (1m × 1m) accelerates canopy closure, naturally suppressing weeds by month 3 - 4 without additional intervention.  
-فصيلة محسنة قادرة على إنتاج غلات قابلة للبقاء تجارياً في 5 أشهر في المناطق الرطبة في نيجيريا  
-GoA TOKEN 0 END Nigeria produces over 59 million tonnes of cassava annually but has significant untapped yield improvement potential through better agronomy.  
+GA TOKEN 1 ENDUn controlled weeds can reduce cassava yield by up to 80% per hectare — making weed management the single most impactful production variable after variety selection.  BAR   BAR   BAR 
+GoA TOKEN 3 ENDThe weed-free technique addresses weeds at the source through thorough mechanized land preparation, not reactive manual weeding or repeated herbicide use.  BAR   BAR 
+GoA TOKEN 5 ENDA two-pass approach - deep ploughing followed by harrowing after weed seedling emergence - depletes the surface weed seed bank before cassava is planted.  BAR   BAR   BAR 
+GoA TOKEN 7 ENDCorrect planting density (1m × 1m) accelerates canopy closure, naturally suppressing weeds by month 3 - 4 without additional intervention.  BAR   BAR   BAR   BAR 
+فصيلة محسنة قادرة على إنتاج غلات قابلة للبقاء تجارياً في 5 أشهر في المناطق الرطبة في نيجيريا  BAR   BAR   BAR 
+GoA TOKEN 11 END Nigeria produces over 59 million tonnes of cassava annually but has significant untapped yield improvement potential through better agronomy. حسناً
 
 
 BAR   BAR   BAR 
 
+BAR   BAR   BAR   BAR   BAR  أَحتاجُ أَنْ أَستعملَ أيّ مبيدات أعشابِ بالتقنيةِ الخاليةِ من الأعشاب؟  BAR   BAR   BAR 
+صممت التقنية الخالية من الأعشاب للعمل بدون مبيدات الأعشاب كإستراتيجية التحكم في الأعشاب وعادة ما يوفر إعداد الأراضي قبل الزراعة، مقترناً بزراعة واحدة مستهدفة بعد 4 أسابيع من الزراعة إذا لزم الأمر، رقابة كافية في معظم البيئات الزراعية النيجيرية. Some farmers complement this with a pre-emergence herbicide application immediately after planting in very high-pressure weed situations, but this is not required by the technique.  BAR   BAR 
+BAR   BAR   BAR 
 
-حسناً أَحتاجُ أَنْ أَستعملَ أيّ مبيدات أعشابِ بالتقنيةِ الخاليةِ من الأعشاب؟  
-صممت التقنية الخالية من الأعشاب للعمل بدون مبيدات الأعشاب كإستراتيجية التحكم في الأعشاب وعادة ما يوفر إعداد الأراضي قبل الزراعة، مقترناً بزراعة واحدة مستهدفة بعد 4 أسابيع من الزراعة إذا لزم الأمر، رقابة كافية في معظم البيئات الزراعية النيجيرية. Some farmers complement this with a pre-emergence herbicide application immediately after planting in very high-pressure weed situations, but this is not required by the technique.  
+{\pos(192,230)} أنا أزرع (كاسافا) خلال 5 أشهر في كل جزء من نيجيريا؟  BAR   BAR   BAR 
+الحصاد النصفي الشهري يمكن تحقيقه في المناطق الرطبة الجنوبية في نيجيريا حيث تساقط الأمطار ودرجات الحرارة مثالية وفي المناطق الشمالية الجافة أو خلال المواسم الجافة، تكون الفترة النباتية أطول عادة. كما أن التنوع المختار يكتسي أهمية كبيرة - فالأصناف المحسنة المبكِّرة للطباعة في وقت مبكر تميل بشكل خاص إلى سرعة التنمية. ويغطي الدليل الكامل مجموعة متنوعة من الاختيارات حسب المنطقة بالتفصيل.  BAR   BAR 
+BAR   BAR   BAR 
 
+ ما أهم استثمار في التقنية الخالية من الأعشاب؟  BAR   BAR   BAR 
+GOA TOKEN 3 ENDLand preparation — specifically the two-pass plough-and-harrow approach before planting. This single investment in proper mechanized soil preparation does more to determine final cassava yield than any other single input, including fertilizer. المزارعون الذين يقطعون الزوايا على إعداد الأراضي يبلّغون باستمرار عن أسوأ مشاكل الأعشاب والأدنى غلة.  BAR   BAR 
+BAR   BAR   BAR 
 
-
-{\pos(192,230)} أنا أزرع (كاسافا) خلال 5 أشهر في كل جزء من نيجيريا؟  
-الحصاد النصفي الشهري يمكن تحقيقه في المناطق الرطبة الجنوبية في نيجيريا حيث تساقط الأمطار ودرجة الحرارة مثالية وفي المناطق الشمالية الجافة أو خلال المواسم الجافة، تكون الفترة النباتية أطول عادة. كما أن التنوع المختار يكتسي أهمية كبيرة - فالأصناف المحسنة المبكِّرة للطباعة في وقت مبكر تميل بشكل خاص إلى سرعة التنمية. ويغطي الدليل الكامل مجموعة متنوعة من الاختيارات حسب المنطقة بالتفصيل.  
-
-
-
- ما أهم استثمار في التقنية الخالية من الأعشاب؟  
-GoA TOKEN 0 ENDLand preparation — specifically the two-pass plough-and-harrow approach before planting. This single investment in proper mechanized soil preparation does more to determine final cassava yield than any other single input, including fertilizer. المزارعون الذين يقطعون الزوايا على إعداد الأراضي يبلّغون باستمرار عن أسوأ مشاكل الأعشاب والأدنى غلة.  
-
-
-
- أين يمكنني تعلم خطوات الإنتاج الكاملة بالتفصيل؟  
-GOA TOKEN 0 ENDOur GOA TOKEN 1 ENDWeed-Free Farming Technique guideGOGOA TOKEN 2 END إرفع الدليل الكامل هنا  BAR   BAR   BAR 
-
+أين يمكنني أن أتعلم خطوات الإنتاج الكاملة بالتفصيل؟  BAR   BAR   BAR 
+GOA TOKEN 3 ENDOur GOA TOKEN 4 ENDWeed-Free Farming Technique guideGOGOA TOKEN 5 END إرفع الدليل الكامل هنا  BAR 
+BAR   BAR   BAR 
 
 GOA TOKEN 0 ENDFurther Reading and External ResourcesGOA TOKEN 1 END
-GOA TOKEN 0 END FOR additional research and data on cassava production in Nigeria and Africa:GOA TOKEN 1 END
-
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITA Cassava Research ProgrammeGOA TOKEN 2 END: leading research institution on cassava varieties, agronomy and weed management in AfricaGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: Global cassava production statistics and smallholder farming dataGOA TOKEN 3 END
+GOA TOKEN 2 END FOR additional research and data on cassava production in Nigeria and Africa:GOA TOKEN 3 END
+BAR   BAR 
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDIITA Cassava Research ProgrammeGOA TOKEN 7 END: leading research institution on cassava varieties, agronomy and weed management in AfricaGOA TOKEN 8 END
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDFAOGOA TOKEN 11 END: Global cassava production statistics and smallholder farming dataGOA TOKEN 12 END
 
 
 مزرعة كاسافا هو عمل - يُعالجُه مثل OneGOA TOKEN
@@ -144,10 +134,8 @@ GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: Global cassava production stat
 
 إن المزارعين الذين يحققون دائماً أرباحاً عالية في نيجيريا لا يقومون بأي شيء سحري. وهم يفعلون الأساسيات بشكل صحيح - بدءا من التربة.  
 
-
-GoA TOKEN 0 ENDGet the Complete Weed-Free Cassava Farming GuideGOA TOKEN 1 END
-ويغطي الدليل التفصيلي الكامل إعداد الأراضي، والاختيار، والزراعة، وإدارة العصيان، والحصاد - كل ما تحتاجه لتنفيذ التقنية الخالية من الأعشاب في مزرعتك.  
-GOA TOKEN 0 ENDGet the Complete GuideGOA TOKEN 1 END
-
-
+GoA TOKEN 1 ENDGet the Complete Weed-Free Cassava Farming GuideGOA TOKEN 2 END
+ويغطي الدليل التفصيلي الكامل إعداد الأراضي، والاختيار، والزراعة، وإدارة العصيان، والحصاد - كل ما تحتاجه لتنفيذ التقنية الخالية من الأعشاب في مزرعتك.  BAR   BAR 
+GOA TOKEN 5 ENDGet the Complete GuideGOA TOKEN 6 END
+BAR   BAR   BAR 
 

@@ -17,9 +17,8 @@ keywords:
   - "cultivo de cogumelos Nigéria 2026"
   - "Pleurotus ostreatus Nigéria"
   - "negócio rentável de cogumelos Nigéria"
-
-source_language: "en"
 translation_group: "blog-mushroom"
+source_language: "en"
 translation_status: "in_review"
 ---
 GOA TOKEN 0 FIM
@@ -40,12 +39,12 @@ GOA TOKEN 0 ENDPor que cogumelos de ostra São a escolha certa para os agriculto
 GOA TOKEN 0 ENDDentre as muitas espécies de cogumelos que podem ser cultivadas comercialmente, os cogumelos de ostras (Pleurotus ostreatus) destacam-se como a escolha prática para os produtores nigerianos e africanos ocidentais por várias razões: GOA TOKEN 1 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 END Tolerância tropical:GOA TOKEN 2 END Cogumelos de oyster frutificam bem a temperaturas entre 24°C e 32°C – precisamente a variedade da maioria dos ambientes de cultivo nigeriano sem a necessidade de sistemas de controle climático caros. GOA TOKEN 3 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSubstrato de versatilidade:GOA TOKEN 2 END Eles crescem em uma grande variedade de resíduos agrícolas — serragem, casca de arroz, bolo de palmiste, espigas de milho, bagaço de cana, semente de algodão — todos os quais estão abundantemente disponíveis em toda a Nigéria a baixo custo. GOA TOKEN 3 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 Endshort production cycle:GOA TOKEN 2 End Da inoculação à primeira colheita é tipicamente 21–35 dias, com 2–3 colheitas adicionais (flushes) possíveis a partir do mesmo saco substrato nas semanas seguintes. GOA TOKEN 3 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDA Aceitação do mercado:GOA TOKEN 2 END Os cogumelos oyster são os cogumelos cultivados mais amplamente aceitos nos mercados urbanos nigerianos, restaurantes, hotéis e supermercados. GOA TOKEN 3 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 EndRequisito de terra:GOA TOKEN 2 END Uma fazenda de cogumelos produtivos opera em um único quarto ou pequeno edifício, tornando-se uma das empresas agrícolas mais eficientes do país. GOA TOKEN 3 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDTolerância tropical:GOA TOKEN 3 END Cogumelos de oyster frutificam bem a temperaturas entre 24°C e 32°C – precisamente a variedade da maioria dos ambientes de cultivo nigeriano sem a necessidade de sistemas de controle climático caros. GOA TOKEN 4 FIM
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDSubstrate versatilidade:GOA TOKEN 7 END Eles crescem em uma grande variedade de resíduos agrícolas — serragem, casca de arroz, bolo de palmiste, espigas de milho, bagaço de cana, semente de algodão — todos os quais estão abundantemente disponíveis em toda a Nigéria a baixo custo. GOA TOKEN 8 FIM
+GOA TOKEN 9 ENDGOA TOKEN 10 Endshort production cycle:GOA TOKEN 11 End Da inoculação à primeira colheita é tipicamente 21–35 dias, com 2–3 colheitas adicionais (flushes) possíveis a partir do mesmo saco substrato nas semanas seguintes. GOA TOKEN 12 FIM
+GOA TOKEN 13 ENDGOA TOKEN 14 ENDA Aceitação do mercado:GOA TOKEN 15 END Os cogumelos oyster são os cogumelos cultivados mais amplamente aceitos nos mercados urbanos nigerianos, restaurantes, hotéis e supermercados. GOA TOKEN 16 FIM
+GOA TOKEN 17 ENDGOA TOKEN 18 EndLow land requirement:GOA TOKEN 19 End Uma fazenda de cogumelos produtivos opera em um único quarto ou pequeno edifício, tornando-se uma das empresas agrícolas mais eficientes do país. GOA TOKEN 20 FIM
+GOA TOKEN 21 FIM
 
 GOA TOKEN 0 ENDO Processo de Produção de Cogumelos de Ostra CompletoGOA TOKEN 1 END
 
@@ -56,12 +55,12 @@ GOA TOKEN 0 ENDStage 1 — Preparação do substratoGOA TOKEN 1 END
 GOA TOKEN 0 ENDO substrato é o meio de cultivo que alimenta o cogumelo — é o equivalente do solo na cultura. Para cogumelos de ostras na Nigéria, o substrato padrão é uma combinação de serragem de madeira envelhecida (a principal fonte de carbono), casca de arroz (para aeração e drenagem), e um suplemento nutricional, como bolo de palmiste (PKC) ou farinha de milho (para aumentar o teor de proteína e rendimento). GOA TOKEN 1 FIM
 
 A fórmula padrão GOA TOKEN 0 ENDA para produzir aproximadamente 50 sacos de substrato (1 kg cada) é:GOA TOKEN 1 END
-GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDSawdust: 20 kgGOA TOKEN 1 END
-CASCA DE GOA TOKEN 0 ENDRice: 9,5 kgGOA TOKEN 1 EN
-GOA TOKEN 0 ENDPKC ou farinha de milho: 12 kgGOA TOKEN 1 FEN
-GOA TOKEN 0 END Carbonato de cálcio (cal agrícola): 1 kgGOA TOKEN 1 END
-GOA TOKEN 0 FIM
+GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDSawdust: 20 kgGOA TOKEN 4 END
+GOA TOKEN 5 ENDRice husk: 9,5 kgGOA TOKEN 6 END
+GOA TOKEN 7 ENDPKC ou farinha de milho: 12 kgGOA TOKEN 8 ENDE
+GOA TOKEN 9 END Carbonato de cálcio (cal agrícola): 1 kgGOA TOKEN 10 END
+GOA TOKEN 11 FIM
 
 GOA TOKEN 0 ENDA nota crítica sobre o carbonato de cálcio: apenas cal agrícola (carbonato de cálcio, CaCO3) deve ser usado — nunca construir cal (cal hidratada ou cal rápida), que queima a pele em contato e mata micélio de cogumelos instantaneamente. Estes materiais parecem semelhantes, mas têm propriedades químicas completamente diferentes. O carbonato de cálcio é macio, suave e não queima a pele. GOA TOKEN 1 FIM
 
@@ -76,7 +75,7 @@ GOA TOKEN 0 ENDStage 3 — Pasteurização (esterilização)GOA TOKEN 1 END
 GOA TOKEN 0 ENDPasteurização mata microrganismos prejudiciais concorrentes — bactérias, moldes e outros fungos — que de outra forma competiriam com o micélio do cogumelo e contaminariam os sacos. É uma das etapas mais críticas em todo o processo. Saltar ou pasteurização inadequada é a principal causa de perdas de contaminação entre os novos produtores de cogumelos. GOA TOKEN 1 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSteam pasteurização de sacos de substrato usando um tambor de metal sobre lenha — o método mais utilizado na agricultura nigeriana de cogumelos. Cozinhe durante 6 horas (fogueira) ou 4 horas (gás). Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDSteam pasteurização de sacos de substrato usando um tambor de metal sobre lenha — o método mais utilizado na agricultura de cogumelos nigerianos. Cozinhe durante 6 horas (fogueira) ou 4 horas (gás). Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDO método de pequena escala nigeriano usa um tambor de metal em uma lenha ou fogo a gás. Os sacos de substrato são colocados numa plataforma de madeira ou metal levantada dentro do tambor — não devem sentar - se diretamente na água, visto que o vapor (não água fervente) é o que pasteuriza os sacos. O tempo de cozedura é de 6 horas com lenha ou 4 horas com gás. Após cozinhar, deixe os sacos esfriar completamente (o que pode levar 10-12 horas) antes de iniciar a inoculação. Inocular sacos quentes mata a desova. GOA TOKEN 1 FIM
 
@@ -85,14 +84,14 @@ GOA TOKEN 0 ENDStage 4 — InoculaçãoGOA TOKEN 1 END
 GOA TOKEN 0 ENDInoculação é o processo de introdução da desova de cogumelos (a "semente") nos sacos de substrato. Esta é a fase mais propensa à falha de contaminação se a higiene não for mantida rigorosamente. As regras mais importantes durante a inoculação são:GOA TOKEN 1 END
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDNão fale enquanto inocula — fala libera gotículas salivares que transportam microrganismos contaminantes. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDEsterilizar as mãos com 80% de etanol antes de começar, e re-esterilizar após cada 5-10 sacos. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDTrabalhar perto de uma chama de etanol — manter a boca da garrafa de desova perto da chama ao abrir para criar uma barreira de fluxo de ar estéril. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDAdicionar 2-3 colheres de sopa de desova por 1 kg de saco, agitar suavemente para distribuir, então fechar e amarrar imediatamente. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDNão fale enquanto inocula — fala libera gotículas salivares que transportam microrganismos contaminantes. GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDEsterilizar as mãos com 80% de etanol antes de começar, e re-esterilizar após cada 5-10 sacos. GOA TOKEN 4 FIM
+GOA TOKEN 5 ENDTrabalhar perto de uma chama de etanol — manter a boca da garrafa de desova perto da chama ao abrir para criar uma barreira de fluxo de ar estéril. GOA TOKEN 6 FIM
+GOA TOKEN 7 FIM Adicionar 2-3 colheres de sopa de desova por 1 kg saco, agitar suavemente para distribuir, em seguida, fechar e amarrar imediatamente. GOA TOKEN 8 FIM
+GOA TOKEN 9 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDOyster cogumelo desova em garrafas de vidro em diferentes estágios de colonização — desde grão inoculado (direita) até micélio branco totalmente colonizado (esquerda). A qualidade do spawn é fundamental para o sucesso da produção. Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDOyster cogumelo desova em garrafas de vidro em diferentes estágios de colonização — desde grão inoculado (direita) até micélio branco totalmente colonizado (esquerda). A qualidade do spawn é fundamental para o sucesso da produção. Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDStage 5 — IncubaçãoGOA TOKEN 1 END
 
@@ -101,7 +100,7 @@ GOA TOKEN 0 ENDApós inoculação, os sacos são colocados em uma sala de incuba
 GOA TOKEN 0 ENDContaminação deve ser monitorada cuidadosamente durante esta fase. Remova qualquer saco mostrando coloração verde, preta ou amarela persistente imediatamente — estes indicam contaminação por Aspergillus niger, Trichoderma ou outros moldes concorrentes que podem se espalhar para sacos adjacentes. A única resposta segura à contaminação é a retirada imediata do saco afetado da sala de incubação. GOA TOKEN 1 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDSubstrato de sacos na sala de incubação em diferentes estágios de colonização por micélio — de sacos escuros recentemente inoculados (topo) a sacos brancos fortemente colonizados (bottom). Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDSubstrato de sacos na sala de incubação em diferentes estágios de colonização por micélio — de sacos escuros recentemente inoculados (topo) a sacos brancos fortemente colonizados (bottom). Foto: GoOrganicAfrica Research Farm, Nigéria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDStage 6 — Frutificação e colheita GOA TOKEN 1 END
 
@@ -124,42 +123,42 @@ GOA TOKEN 0 ENDPara os agricultores nigerianos com capacidade de produção cons
 GOA TOKEN 0 ENDKey TakeawaysGOA TOKEN 1 END
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDNigeria produz apenas 300 toneladas de cogumelos anualmente contra uma procura estimada de 1.200 toneladas — criando uma grande oportunidade de mercado para novos produtores. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDOyster cogumelos são as espécies mais práticas para os agricultores nigerianos devido à sua tolerância à temperatura tropical, versatilidade do substrato e aceitação do mercado. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDO ciclo de produção completo da inoculação à primeira colheita é de 21–35 dias, com 2–3 descargas adicionais possíveis por saco. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDPasteurização e higiene da inoculação são as duas fases mais críticas — a contaminação em qualquer ponto é a principal causa de falha na produção. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDFresh varejista de cogumelos de ostras em 7.280–10.000 por quilograma nos mercados urbanos nigerianos, representando potencial de margem excepcional. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDRequisitos de infra-estrutura são mínimos — um único quarto ou edifício pequeno é suficiente para executar uma operação rentável em pequena escala. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDNigeria produz apenas 300 toneladas de cogumelos anualmente em comparação com uma procura estimada de 1.200 toneladas — criando uma grande oportunidade de mercado para novos produtores. GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDOyster cogumelos são as espécies mais práticas para os agricultores nigerianos devido à sua tolerância à temperatura tropical, versatilidade do substrato e aceitação do mercado. GOA TOKEN 4 FIM
+GOA TOKEN 5 ENDO ciclo de produção completo da inoculação à primeira colheita é de 21–35 dias, com 2–3 descargas adicionais possíveis por saco. GOA TOKEN 6 FIM
+GOA TOKEN 7 ENDPasteurização e higiene da inoculação são os dois estágios mais críticos — a contaminação em qualquer ponto é a principal causa de falha de produção. GOA TOKEN 8 FIM
+GOA TOKEN 9 ENDFresh varejista de cogumelos de ostras em 7.280–10.000 por quilograma nos mercados urbanos nigerianos, representando um potencial de margem excepcional. GOA TOKEN 10 FIM
+GOA TOKEN 11 ENDRequisitos de infra-estrutura são mínimos — um único quarto ou edifício pequeno é suficiente para executar uma operação rentável em pequena escala. GOA TOKEN 12 FIM
+GOA TOKEN 13 FIM
 
 GOA TOKEN 0 EndPerguntas FrequentesGOA TOKEN 1 End
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDQuanto custa começar a cultivar ostras na Nigéria? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDA Início em pequena escala com 50 sacos requer investimento em materiais de substrato (sawdust, casca de arroz, PKC, carbonato de cálcio), desova, sacos resistentes ao calor e equipamento básico de inoculação (etanol, algodão). Muitos agricultores na Nigéria começam lucravelmente nesta escala antes de expandir, com os custos totais de inicialização para um lote de 50 sacos tipicamente variando de 30.000 a 80.000, dependendo dos custos materiais locais. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDQuanto custa começar a agricultura de cogumelos de ostras na Nigéria? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDA Pequeno início com 50 sacos requer investimento em materiais de substrato (sawdust, casca de arroz, PKC, carbonato de cálcio), desova, sacos resistentes ao calor e equipamento básico de inoculação (etanol, algodão). Muitos agricultores na Nigéria começam lucravelmente nesta escala antes de expandir, com os custos totais de inicialização para um lote de 50 sacos tipicamente variando de 30.000 a 80.000, dependendo dos custos materiais locais. GOA TOKEN 4 FIM
+GOA TOKEN 5 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 FIM Qual é o maior erro que os novos produtores de cogumelos cometem? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDPasteurização inadequada e má higiene da inoculação são as duas causas mais comuns de falha. Muitos agricultores ou cozinham sacos por um tempo insuficiente, ou conversam / se movem muito durante a inoculação, introduzindo contaminação que destrói todo o lote. Tratar a higiene como não negociável — não como inconveniente — é a mudança de mentalidade mais importante para os novos produtores. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 FIM Qual é o maior erro que os novos produtores de cogumelos cometem? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDPasteurização inadequada e má higiene da inoculação são as duas causas mais comuns de falha. Muitos agricultores ou cozinham sacos por um tempo insuficiente, ou conversam / se movem muito durante a inoculação, introduzindo contaminação que destrói todo o lote. Tratar a higiene como não negociável — não como inconveniente — é a mudança de mentalidade mais importante para os novos produtores. GOA TOKEN 4 FIM
+GOA TOKEN 5 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 FIM Onde vendo cogumelos de ostras na Nigéria? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDUrban hotéis, restaurantes, supermercados, lojas de alimentos saudáveis e vendas on-line direto ao consumidor através do WhatsApp ou mídia social são todos canais de vendas estabelecidos na Nigéria. Restaurantes e hotéis são geralmente os melhores clientes – eles precisam de fornecimento consistente, pagar preços premium e construir relações de longo prazo de fornecedores. Começar pela sua rede imediata e trabalhar para fora é o caminho mais comum para pequenos produtores. GOA TOKEN 1 FIM
-GOA TOKEN 0 FIM
+GOA TOKEN 1 END Onde vendo cogumelos de ostras na Nigéria? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDUrban hotéis, restaurantes, supermercados, lojas de alimentos saudáveis e vendas on-line direto ao consumidor através do WhatsApp ou mídia social são todos canais de vendas estabelecidos na Nigéria. Restaurantes e hotéis são geralmente os melhores clientes – eles precisam de fornecimento consistente, pagar preços premium e construir relações de longo prazo de fornecedores. Começar pela sua rede imediata e trabalhar para fora é o caminho mais comum para pequenos produtores. GOA TOKEN 4 FIM
+GOA TOKEN 5 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 FIM Onde posso obter o guia de produção passo a passo completo? GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDNosso GOA TOKEN 1 ENDGuia compreensivo de Oyster Mushroom FarmingGOA TOKEN 2 END abrange todo o processo de produção em detalhes práticos — fórmulas de substrato, métodos de pasteurização, procedimentos de inoculação, identificação de contaminação, manejo de frutificação, tempo de colheita, escala de 50 a 1000 sacos e comercialização. GOA TOKEN 3 ENDVeja aqui o guia completo. GOA TOKEN 4 ENDGOA TOKEN 5 End
-GOA TOKEN 0 FIM
+GOA TOKEN 1 ENDOnde posso obter o guia de produção passo a passo completo? GOA TOKEN 2 FIM
+GOA TOKEN 3 ENDO nosso GOA TOKEN 4 ENDGuia compreensivo de Oyster Mushroom FarmingGOA TOKEN 5 END abrange todo o processo de produção em detalhes práticos — fórmulas de substrato, métodos de pasteurização, procedimentos de inoculação, identificação de contaminação, gestão de frutificação, timing de colheita, escala de 50 a 1000 sacos e comercialização. GOA TOKEN 6 ENDVeja aqui o guia completo. GOA TOKEN 7 ENDGOA TOKEN 8 END
+GOA TOKEN 9 FIM
 
 GOA TOKEN 0 ENDERMais leitura e recursos externosGOA TOKEN 1 ENDER
-GOA TOKEN 0 ENDEInvestigação adicional sobre cultivo de cogumelos e mercados em África:GOA TOKEN 1 END
-GOA TOKEN 0 FIM
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: dados globais de produção de cogumelos e investigação de sistemas alimentaresGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITAGOA TOKEN 2 END: Investigação agrícola africana que apoia a produção alimentar sustentável
-GOA TOKEN 0 FIM
+GOA TOKEN 2 ENDEInvestigação adicional sobre o cultivo e os mercados de cogumelos em África:GOA TOKEN 3 END
+GOA TOKEN 4 FIM
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDFAOGOA TOKEN 7 END: dados globais de produção de cogumelos e investigação de sistemas alimentares
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDIITAGOA TOKEN 11 END: Investigação agrícola africana que apoia a produção alimentar sustentável
+GOA TOKEN 13 FIM
 
 GOA TOKEN 0 ENDConclusão: A janela está aberta — mas não ficará aberta para sempreGOA TOKEN 1 END
 
@@ -168,9 +167,9 @@ GOA TOKEN 0 ENDO mercado de cogumelos de ostra nigeriano e africano encontra-se 
 GOA TOKEN 0 ENDA agricultura de cogumelos recompensa aqueles que investem na compreensão do processo corretamente desde o início. As perdas de contaminação que desencorajam a maioria dos iniciantes são, na grande maioria dos casos, evitáveis com boa higiene e técnica correta. Os agricultores que alcançam resultados notáveis de 25 a 100 sacos na Nigéria não estão operando sistemas secretos — eles simplesmente dominaram os fundamentos da pasteurização, higiene da inoculação e gestão de salas frutíferas. GOA TOKEN 1 FIM
 
 GOA TOKEN 0 FIM
-GOA TOKEN 0 END Obtenha o Guia de Agricultura de Cogumelos de Ostra completoGOA TOKEN 1 END
-GOA TOKEN 0 ENDO guia abrangente abrange fórmulas de substrato, pasteurização, inoculação, incubação, frutificação, colheita e escalonamento — escrito a partir da experiência de produção real na Nigéria. GOA TOKEN 1 FIM
-GOA TOKEN 0 ENDERO Guia completoGOA TOKEN 1 ENDER
-GOA TOKEN 0 FIM
+GOA TOKEN 1 END Obtenha o Guia completo de Agricultura de Cogumelos de OstraGOA TOKEN 2 END
+GOA TOKEN 3 ENDO guia abrangente abrange fórmulas de substrato, pasteurização, inoculação, incubação, frutificação, colheita e escalonamento — escrito a partir da experiência de produção real na Nigéria. GOA TOKEN 4 FIM
+GOA TOKEN 5 END Obtenha o Guia completoGOA TOKEN 6 END
+GOA TOKEN 7 FIM
 
 GOA TOKEN 0 FIM

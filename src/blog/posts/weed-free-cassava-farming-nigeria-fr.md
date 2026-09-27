@@ -17,9 +17,8 @@ keywords:
   - "comment faire pousser le manioc en 5 mois"
   - "amélioration du rendement du manioc Nigeria"
   - "herbicide sans manioc Afrique"
-
-source_language: "en"
 translation_group: "blog-cassava"
+source_language: "en"
 translation_status: "in_review"
 ---
 GOA TOKEN 0 END
@@ -42,7 +41,7 @@ GOA TOKEN 0 ENDLa technique d'élevage du manioc sans mauvaises herbes ne repose
 GOA TOKEN 0 END Le principe fondamental est le suivant: si vous préparez correctement la terre — labourer suffisamment profondément, larguer soigneusement, et laisser suffisamment de temps pour que les graines de mauvaises herbes apportées à la surface germent et meurent avant la plantation — vous réduisez considérablement la pression concurrentielle des mauvaises herbes pendant la période critique d'établissement précoce. Combinée à une densité de plantation correcte et à la sélection de variétés de manioc, cette approche permet d'atteindre un peuplement de culture exempt de mauvaises herbes ou sans herbe proche grâce à la gestion du couvert plutôt qu'à la suppression chimique. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDLe labourage mécanique profond inverse le sol, enterre les graines de mauvaises herbes sous la profondeur de germination et expose les graines de mauvaises herbes enterrées à la dessiccation. Cette seule étape est l'intervention la plus importante dans la technique sans mauvaises herbes. OBJECTIFS D'ÉTABLISSEMENT
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDLe labourage mécanique profond inverse la couche supérieure, enterre les graines de mauvaises herbes sous la profondeur de germination et expose les graines de mauvaises herbes enterrées à la dessiccation. Cette seule étape est l'intervention la plus importante dans la technique sans mauvaises herbes. OBJECTIFS D'EXÉCUTION
 
 GOA TOKEN 0 ENDLe calendrier de production de 5 mois de maniocGOA TOKEN 1 END
 
@@ -63,14 +62,14 @@ GOA TOKEN 0 ENDMois 1 — Plantation: sélection et espacementGOA TOKEN 1 END
 GOA TOKEN 0 ENDCassava est planté à partir de boutures de tiges (ensembles), pas de graines. Définir la sélection est critique:GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDUtilisez des tiges saines et sans maladie provenant d'une variété productive. Au Nigéria, des variétés améliorées, dont TME 419, NR 8082 et TMS 30572, sont recommandées pour leur rendement élevé, leur résistance aux maladies et leur capacité d'adaptation. GOA TOKEN 1 END
-GOA TOKEN 0 ENDCut fixe une longueur de 25 à 30 cm avec au moins 5 à 6 nœuds pour une germination fiable. GOA TOKEN 1 END
-GOA TOKEN 0 ENDPlant à 1m × 1m d'espacement (10 000 plants par hectare) pour la technique sans mauvaises herbes. L'espacement plus étroit accélère la fermeture de la canopée — c'est ainsi que la culture « éclipse » les mauvaises herbes sans herbicide une fois qu'elle est établie. GOA TOKEN 1 END
-GOA TOKEN 0 ENDPlant à la bonne orientation — les ensembles plantés horizontalement ou à un angle léger établissent plus uniformément que la plantation verticale dans la plupart des types de sols nigérians. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDUtiliser des produits sains et exempts de maladies provient d'une variété productive. Au Nigéria, des variétés améliorées, dont TME 419, NR 8082 et TMS 30572, sont recommandées pour leur rendement élevé, leur résistance aux maladies et leur capacité d'adaptation. BIEN TOKEN 2 END
+GOA TOKEN 3 ENDCut se fixe à 25–30 cm de longueur avec au moins 5–6 nœuds pour une germination fiable. GOA TOKEN 4 END
+GOA TOKEN 5 ENDPlant à 1m × 1m d'espacement (10 000 plants par hectare) pour la technique sans mauvaises herbes. L'espacement plus étroit accélère la fermeture de la canopée — c'est ainsi que la culture « éclipse » les mauvaises herbes sans herbicide une fois qu'elle est établie. OBJECTIF
+OBJECTIFS Planter à l'orientation correcte — les ensembles plantés horizontalement ou à un angle léger établissent plus uniformément que la plantation verticale dans la plupart des types de sols nigérians. OBJECTIFS
+GOA TOKEN 9 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDL'application d'engrais lors de la préparation des sols améliore la nutrition des sols et stimule l'établissement précoce du manioc, une étape critique qui favorise le développement plus rapide du couvert et la suppression des mauvaises herbes. OBJECTIFS D'ÉTABLISSEMENT
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDL'application d'engrais lors de la préparation des sols améliore la nutrition des sols et stimule l'établissement précoce du manioc, étape critique qui favorise le développement plus rapide du couvert et la suppression des mauvaises herbes. OBJECTIFS D'EXÉCUTION
 
 GOA TOKEN 0 ENDMois 2 — Établissement précoce: la fenêtre critiqueGOA TOKEN 1 END
 
@@ -87,7 +86,7 @@ GOA TOKEN 0 ENDMois 5 — RécolteGOA TOKEN 1 END
 GOA TOKEN 0 ENDSi la plupart des variétés de manioc au Nigeria sont généralement récoltées de 9 à 12 mois, les variétés améliorées à maturité précoce — en particulier lorsqu'elles sont associées à une excellente préparation des terres, à une densité de plantation correcte, à une fertilisation adéquate et à une gestion sans mauvaises herbes — peuvent produire des rendements commercialement viables à 5 mois, en particulier dans les zones humides du sud du Nigeria. L'indicateur clé de la préparation à la récolte est le gonflement des racines à une taille où les tubercules sont bien formés et ont obtenu une accumulation adéquate d'amidon. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDUn ensemble de manioc sain qui pousse avec une forte formation de racines, résultat d'une sélection de la qualité et d'une bonne préparation du sol. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 2 ENDGOA TOKEN 3 END
+GOA TOKEN 1 ENDGOA TOKEN 2 ENDA ensemble de manioc sain germant avec une forte formation de racines — le résultat de la sélection des ensembles de qualité et une bonne préparation du sol. Photo: GoOrganicAfrica Research Farm, Nigeria.GOA TOKEN 3 ENDGOA TOKEN 4 END
 
 GOA TOKEN 0 ENDPourquoi la mécanisation est centrale à la technique sans mauvaises herbesGOA TOKEN 1 END
 
@@ -104,42 +103,42 @@ GOA TOKEN 0 ENDLes produits de manioc — garri, farine de manioc, fufu, fécule
 GOA TOKEN 0 ENDTraitements clésGOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDLes mauvaises herbes non contrôlées peuvent réduire le rendement du manioc jusqu'à 80 % par hectare, ce qui fait de la gestion des mauvaises herbes la variable de production la plus pertinente après la sélection des variétés. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLa technique sans mauvaises herbes s'adresse aux mauvaises herbes à la source par une préparation mécanisée approfondie des terres, et non par des mauvaises herbes manuelles réactives ou une utilisation répétée d'herbicides. GOA TOKEN 1 END
-GOA TOKEN 0 ENDA approche à deux passages — labour profond suivi d'une herse après émergence de semis de mauvaises herbes — épuise la banque de graines de mauvaises herbes de surface avant la plantation du manioc. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLa densité de plantation (1m × 1m) accélère la fermeture du couvert, éliminant naturellement les mauvaises herbes du mois 3-4 sans intervention supplémentaire. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLes variétés améliorées précocement peuvent produire des rendements commercialement viables à 5 mois dans les zones humides du Nigeria lorsqu'elles sont gérées correctement. GOA TOKEN 1 END
-GOA TOKEN 0 ENDLe Nigeria produit plus de 59 millions de tonnes de manioc chaque année, mais possède un potentiel important d'amélioration des rendements non exploité grâce à une meilleure agronomie. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDLes mauvaises herbes non contrôlées peuvent réduire le rendement du manioc jusqu'à 80 % par hectare, ce qui fait de la gestion des mauvaises herbes la variable de production la plus pertinente après la sélection des variétés. BIEN TOKEN 2 END
+GOA TOKEN 3 ENDLa technique sans mauvaises herbes s'adresse aux mauvaises herbes à la source par une préparation mécanisée approfondie des terres, et non par des mauvaises herbes manuelles réactives ou une utilisation répétée d'herbicides. GOA TOKEN 4 END
+GOA TOKEN 5 ENDA approche à deux passages — labour profond suivi d'une herse après émergence de semis de mauvaises herbes — épuise la banque de graines de mauvaises herbes de surface avant la plantation du manioc. OBJECTIF
+GOA TOKEN 7 ENDCorrect la densité de plantation (1m × 1m) accélère la fermeture du couvert, supprimant naturellement les mauvaises herbes du mois 3–4 sans intervention supplémentaire. OBJECTIFS
+GOA TOKEN 9 ENDL'amélioration rapide des variétés peut produire des rendements commercialement viables à 5 mois dans les zones humides du Nigeria lorsqu'ils sont gérés correctement. GOA TOKEN 10 END
+GOA TOKEN 11 ENDLe Nigeria produit plus de 59 millions de tonnes de manioc chaque année, mais possède un potentiel important d'amélioration des rendements inexploité grâce à une meilleure agronomie. GOA TOKEN 12 END
+OBJECTIFS
 
 GOA TOKEN 0 ENDQuestions fréquemment poséesGOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDDo Je dois utiliser un herbicide avec la technique sans mauvaises herbes ? GOA TOKEN 1 END
-GOA TOKEN 0 ENDLa technique sans mauvaises herbes est conçue pour fonctionner sans herbicides comme stratégie primaire de lutte contre les mauvaises herbes. La préparation approfondie des terres avant la plantation, combinée à une mauvaise herbe ciblée quatre semaines après la plantation, au besoin, fournit généralement un contrôle suffisant dans la plupart des milieux agricoles nigérians. Certains agriculteurs le complètent par une application d'herbicides pré-émergents immédiatement après la plantation dans des situations de mauvaises herbes à très haute pression, mais cette technique n'est pas nécessaire. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDDo Je dois utiliser un herbicide avec la technique sans mauvaises herbes ? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDLa technique sans mauvaises herbes est conçue pour fonctionner sans herbicides comme stratégie primaire de lutte contre les mauvaises herbes. La préparation approfondie des terres avant la plantation, combinée à une mauvaise herbe ciblée quatre semaines après la plantation, au besoin, fournit généralement un contrôle suffisant dans la plupart des milieux agricoles nigérians. Certains agriculteurs le complètent par une application d'herbicides pré-émergents immédiatement après la plantation dans des situations de mauvaises herbes à très haute pression, mais cette technique n'est pas nécessaire. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDCan Je cultive du manioc en 5 mois dans chaque partie du Nigeria ? GOA TOKEN 1 END
-GOA TOKEN 0 ENDLa récolte de cinq mois est la plus réalisable dans les zones humides du sud du Nigeria où les précipitations et la température sont optimales. Dans les régions nordiques plus sèches ou pendant les saisons sèches, la période végétative est généralement plus longue. La variété sélectionnée est également importante: les variétés améliorées à maturité précoce sont spécifiquement conçues pour un développement plus rapide. Le guide complet couvre la sélection des variétés par région en détail. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDCan Je cultive du manioc en 5 mois dans chaque partie du Nigeria ? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDLa récolte de cinq mois est la plus réalisable dans les zones humides du sud du Nigeria où les précipitations et la température sont optimales. Dans les régions nordiques plus sèches ou pendant les saisons sèches, la période végétative est généralement plus longue. La variété sélectionnée est également importante: les variétés améliorées à maturité précoce sont spécifiquement conçues pour un développement plus rapide. Le guide complet couvre la sélection des variétés par région en détail. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 END Quel est l'investissement le plus important dans la technique sans mauvaises herbes? GOA TOKEN 1 END
-GOA TOKEN 0 ENDPréparation des terres — en particulier l'approche de labour et herse à deux passages avant plantation. Cet investissement unique dans la préparation des sols mécanisés permet plus de déterminer le rendement final du manioc que tout autre apport unique, y compris l'engrais. Les agriculteurs qui coupent des virages dans la préparation des terres signalent systématiquement les pires problèmes de mauvaises herbes et les rendements les plus faibles. GOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 END Quel est l'investissement le plus important dans la technique sans mauvaises herbes? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDPréparation des terres — en particulier l'approche de labour et herse à deux passages avant plantation. Cet investissement unique dans la préparation des sols mécanisés permet plus de déterminer le rendement final du manioc que tout autre apport unique, y compris l'engrais. Les agriculteurs qui coupent des virages dans la préparation des terres signalent systématiquement les pires problèmes de mauvaises herbes et les rendements les plus faibles. GOA TOKEN 4 END
+GOA TOKEN 5 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 END Où puis-je apprendre en détail les étapes complètes de la production? GOA TOKEN 1 END
-GOA TOKEN 0 ENDNotre GOA TOKEN 1 ENDGuide technique de l'agriculture sans mauvaises herbesGOA TOKEN 2 END couvre le calendrier de production complet de 5 mois, de la préparation des terres et de la sélection jusqu'à la récolte, y compris les mesures spécifiques, le calendrier, les recommandations en matière d'engrais et le dépannage. GOA TOKEN 3 ENDVoir le guide complet ici. OBJECTIFS D'EXÉCUTION
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDOù puis-je apprendre en détail les étapes complètes de la production ? BIEN TOKEN 2 END
+GOA TOKEN 3 ENDNotre GOA TOKEN 4 ENDGuide technique de l'agriculture sans mauvaises herbesGOA TOKEN 5 END couvre l'intégralité du calendrier de production de 5 mois — de la préparation des terres et la sélection jusqu'à la récolte — y compris les mesures spécifiques, le calendrier, les recommandations en matière d'engrais et le dépannage. GOA TOKEN 6 ENDVoir le guide complet ici. OBJECTIFS D'EXÉCUTION
+GOA TOKEN 9 END
 
 GOA TOKEN 0 ENDAutres lectures et ressources externesGOA TOKEN 1 END
-GOA TOKEN 0 ENDPour des recherches et des données supplémentaires sur la production de manioc au Nigeria et en Afrique:GOA TOKEN 1 END
-GOA TOKEN 0 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDIITA Cassava Research ProgrammeGOA TOKEN 2 END: principal établissement de recherche sur les variétés de manioc, l'agronomie et la gestion des mauvaises herbes en AfriqueGOA TOKEN 3 END
-GOA TOKEN 0 ENDGOA TOKEN 1 ENDFAOGOA TOKEN 2 END: statistiques mondiales sur la production de manioc et données sur les petits exploitants agricolesGOA TOKEN 3 END
-GOA TOKEN 0 END
+GOA TOKEN 2 ENDPour des recherches et des données supplémentaires sur la production de manioc au Nigeria et en Afrique:GOA TOKEN 3 END
+GOA TOKEN 4 END
+GOA TOKEN 5 ENDGOA TOKEN 6 ENDIITA Cassava Research ProgrammeGOA TOKEN 7 END: établissement de recherche de premier plan sur les variétés de manioc, l'agronomie et la gestion des mauvaises herbes en AfriqueGOA TOKEN 8 END
+GOA TOKEN 9 ENDGOA TOKEN 10 ENDFAOGOA TOKEN 11 END: statistiques mondiales sur la production de manioc et données sur les petits exploitants agricolesGOA TOKEN 12 END
+OBJECTIFS
 
 GOA TOKEN 0 ENDConclusion: L'agriculture de manioc Est une entreprise — Traitez-la comme oneGOA TOKEN 1 END
 
@@ -148,9 +147,9 @@ GOA TOKEN 0 ENDLe secteur du manioc du Nigeria possède un énorme potentiel ine
 GOA TOKEN 0 ENDLes agriculteurs qui obtiennent des rendements de manioc toujours élevés au Nigeria ne font rien de magique. Ils font les fondamentaux correctement, en commençant par le sol. GOA TOKEN 1 END
 
 GOA TOKEN 0 END
-GOA TOKEN 0 ENDObtenez le guide complet de l'agriculture de manioc sans mauvaises herbesGOA TOKEN 1 END
-GOA TOKEN 0 ENDLe guide complet par étape couvre la préparation des terres, la sélection, la plantation, la gestion et la récolte du couvert, tout ce dont vous avez besoin pour mettre en œuvre la technique sans mauvaises herbes sur votre ferme. GOA TOKEN 1 END
-GOA TOKEN 0 ENDObtenez le guide completGOA TOKEN 1 END
-GOA TOKEN 0 END
+GOA TOKEN 1 ENDObtenez le guide complet de l'agriculture de manioc sans mauvaises herbesGOA TOKEN 2 END
+GOA TOKEN 3 ENDLe guide complet, étape par étape, couvre la préparation des terres, la sélection, la plantation, la gestion du couvert et la récolte, tout ce dont vous avez besoin pour implémenter la technique sans mauvaises herbes sur votre ferme. GOA TOKEN 4 END
+GOA TOKEN 5 ENDObtenez le guide completGOA TOKEN 6 END
+OBJECTIFS
 
 GOA TOKEN 0 END
