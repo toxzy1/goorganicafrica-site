@@ -23,8 +23,8 @@ audience:
 benefits:
   - "Inashughulikia maandalizi ya substrate, pasteurization, inoculation, incubation, matunda na kuvuna"
   - "Jinsi ya kutambua na kuzuia uchafuzi"
-  - "Ni pamoja na formula scalable kutoka 50 hadi mifuko 1000 +"
-  - "Imeandikwa kutoka uzoefu halisi wa kilimo, utafiti na mazoezi ya uzalishaji"
+  - "Inajumuisha formula ya scalable kutoka 50 hadi mifuko ya 1000 +"
+  - "Imeandikwa kutoka kwa uzoefu halisi wa kilimo, utafiti na mazoezi ya uzalishaji"
 bonus: "Ushauri wa bure wa WhatsApp baada ya kununua"
 faqs:
   - q: "Je, ninahitaji kiasi cha ardhi kuanza kilimo cha uyoga?"

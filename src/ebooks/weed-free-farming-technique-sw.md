@@ -34,7 +34,7 @@ faqs:
   - q: "Je, hii ni kwa ajili ya Cassava?"
     a: "Mwongozo umejengwa karibu na uzalishaji wa cassava, kutoka kwa prep ardhi kupitia mavuno."
   - q: "Ni nani aliye bora zaidi katika mwongozo huu?"
-    a: "Wakulima ambao wanataka njia ya vitendo, iliyojaribiwa ya kudhibiti magugu bila kutegemea dawa za kemikali."
+    a: "Wakulima ambao wanataka mbinu ya utendaji, iliyojaribiwa ya kudhibiti magugu bila kutegemea dawa za kemikali."
 search_terms:
   - "Kilimo cha casava"
   - "Kilimo cha bure"
