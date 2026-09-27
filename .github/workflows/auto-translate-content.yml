@@ -39,7 +39,13 @@ jobs:
           python -m pip install argostranslate
 
       - name: Generate multilingual drafts
-        run: python scripts/auto-translate-content.py
+        run: |
+          python -u scripts/auto-translate-content.py
+          echo "Generated translation files:"
+          find src/blog/posts src/ebooks -maxdepth 1 -type f \( -name '*-fr.md' -o -name '*-ar.md' -o -name '*-pt.md' -o -name '*-sw.md' \) -print
+          count=$(find src/blog/posts src/ebooks -maxdepth 1 -type f \( -name '*-fr.md' -o -name '*-ar.md' -o -name '*-pt.md' -o -name '*-sw.md' \) | wc -l)
+          echo "Translation file count: $count"
+          test "$count" -gt 0
 
       - name: Publish reviewed translation drafts to main
         env:
