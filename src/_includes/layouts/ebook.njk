@@ -89,7 +89,7 @@ layout: layouts/base.njk
     </div>
     <div class="ebook-grid">
       {% for ebook in collections.ebooks %}
-        {% if ebook.data.slug != slug %}
+        {% if ebook.data.slug != slug and (ebook.data.language or 'en') == (language or 'en') %}
         <a class="ebook-card content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}">
           <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }}">
           <h3>{{ ebook.data.title }}</h3>
