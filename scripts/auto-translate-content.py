@@ -139,11 +139,16 @@ def translate_text(text, target, cache):
             continue
         key = (target, chunk)
         if key not in cache:
-            result = argostranslate.translate.translate(chunk, "en", target)
-            if _needs_fallback(chunk, result, target):
-                fallback = _google_translate(chunk, target)
-                if fallback and fallback.strip():
-                    result = fallback
+            # Prefer Google Translate for quality on the existing multilingual
+            # content. Argos remains the offline fallback if Google is unavailable.
+            result = _google_translate(chunk, target)
+            if not result or not result.strip():
+                result = argostranslate.translate.translate(chunk, "en", target)
+            elif _needs_fallback(chunk, result, target):
+                # Retry with Argos only when Google unexpectedly leaves substantial English.
+                argos_result = argostranslate.translate.translate(chunk, "en", target)
+                if argos_result and _english_ratio(argos_result) < _english_ratio(result):
+                    result = argos_result
             cache[key] = result
         translated.append(cache[key])
     return "".join(translated)
