@@ -27,6 +27,7 @@
 
       variants.forEach(function (item) {
         item.hidden = item !== preferred;
+        item.classList.toggle("is-language-hidden", item !== preferred);
       });
     });
   }
