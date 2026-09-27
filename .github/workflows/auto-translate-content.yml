@@ -45,7 +45,8 @@ jobs:
           find src/blog/posts src/ebooks -maxdepth 1 -type f \( -name '*-fr.md' -o -name '*-ar.md' -o -name '*-pt.md' -o -name '*-sw.md' \) -print
           count=$(find src/blog/posts src/ebooks -maxdepth 1 -type f \( -name '*-fr.md' -o -name '*-ar.md' -o -name '*-pt.md' -o -name '*-sw.md' \) | wc -l)
           echo "Translation file count: $count"
-          test "$count" -gt 0
+          test "$count" -eq 32
+          echo "Verified 32 multilingual drafts (8 sources x 4 languages)."
 
       - name: Publish reviewed translation drafts to main
         env:
