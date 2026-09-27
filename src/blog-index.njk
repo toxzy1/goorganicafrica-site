@@ -41,7 +41,7 @@ permalink: "/blog/"
       {% if post.data.slug == "hydroponic-fodder-farming-africa" %}{% set cardKey = "blog.cards.fodder" %}{% endif %}
       {% if post.data.slug == "oyster-mushroom-farming-nigeria" %}{% set cardKey = "blog.cards.mushroom" %}{% endif %}
       {% if post.data.slug == "weed-free-cassava-farming-nigeria" %}{% set cardKey = "blog.cards.cassava" %}{% endif %}
-      <a href="{{ post.url }}" class="content-variant" data-content-group="{{ post.data.translation_group or post.data.slug }}" data-content-language="{{ post.data.language or 'en' }}" style="text-decoration:none;">
+      <a href="{{ post.url }}" class="content-variant" data-content-group="{{ post.data.translation_group or post.data.slug }}" data-content-language="{{ post.data.language or 'en' }}" data-content-slug="{{ post.data.slug }}" style="text-decoration:none;">
         <div class="ebook-card" style="height:100%;">
           {% if post.data.featured_image %}
           <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}"
