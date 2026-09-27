@@ -2,10 +2,6 @@ name: Automatic Free Content Translation
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [main]
-    paths:
-      - ".github/translation-trigger.txt"
   push:
     branches: [main]
     paths:
@@ -17,7 +13,7 @@ on:
 
 concurrency:
   group: goorganicafrica-translation-drafts
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
