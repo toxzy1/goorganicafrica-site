@@ -3,10 +3,14 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 import argostranslate.package
 import argostranslate.translate
+
+_GOOGLE_TRANSLATOR = None
 
 ROOTS = (Path("src/blog/posts"), Path("src/ebooks"))
 SETTINGS = Path("src/_data/translationSettings.json")
@@ -80,11 +84,54 @@ def install_models(languages):
         pkg.install()
 
 
+def _english_ratio(text):
+    words = re.findall(r"\b[A-Za-z]{2,}\b", text)
+    return len(words) / max(1, len(re.findall(r"\S+", text)))
+
+
+def _needs_fallback(source, result, target):
+    if target == "en" or not re.search(r"[A-Za-z]", source):
+        return False
+    if not result or result.strip() == source.strip():
+        return True
+    return _english_ratio(result) > 0.45 and _english_ratio(source) > 0.25
+
+
+def _google_translate(text, target):
+    global _GOOGLE_TRANSLATOR
+    try:
+        if _GOOGLE_TRANSLATOR is None:
+            try:
+                from deep_translator import GoogleTranslator
+            except ImportError:
+                subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "deep-translator"])
+                from deep_translator import GoogleTranslator
+            _GOOGLE_TRANSLATOR = {}
+        if target not in _GOOGLE_TRANSLATOR:
+            from deep_translator import GoogleTranslator
+            _GOOGLE_TRANSLATOR[target] = GoogleTranslator(source="en", target=target)
+        return _GOOGLE_TRANSLATOR[target].translate(text)
+    except Exception as exc:
+        print("Google fallback unavailable:", exc)
+        return None
+
+
 def translate_text(text, target, cache):
-    """Translate prose in small sentence-sized units so no long chunk is silently left in English."""
+    """Translate prose in short units and retry unchanged English with Google Translate."""
     if not text or not text.strip() or not re.search(r"[A-Za-z]", text):
         return text
-    chunks = re.split(r"(?<=[.!?])(?=\s+|$)", text)
+    sentences = re.split(r"(?<=[.!?])(?=\s+|$)", text)
+    chunks = []
+    for sentence in sentences:
+        words = sentence.split()
+        if len(words) <= 70:
+            chunks.append(sentence)
+        else:
+            for i in range(0, len(words), 60):
+                piece = " ".join(words[i:i+60])
+                if i + 60 < len(words):
+                    piece += " "
+                chunks.append(piece)
     translated = []
     for chunk in chunks:
         if not chunk or not chunk.strip() or not re.search(r"[A-Za-z]", chunk):
@@ -92,9 +139,16 @@ def translate_text(text, target, cache):
             continue
         key = (target, chunk)
         if key not in cache:
-            cache[key] = argostranslate.translate.translate(chunk, "en", target)
+            result = argostranslate.translate.translate(chunk, "en", target)
+            if _needs_fallback(chunk, result, target):
+                fallback = _google_translate(chunk, target)
+                if fallback and fallback.strip():
+                    result = fallback
+            cache[key] = result
         translated.append(cache[key])
     return "".join(translated)
+
+
 def translate_markup(body, target, cache):
     """
     Translate visible text while preserving HTML/Markdown structure exactly.
