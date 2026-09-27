@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!input || !results || !items.length) return;
 
+  function currentLanguage() {
+    try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
+    catch (_) { return document.documentElement.lang || "en"; }
+  }
+
   function normalize(value) {
     return String(value || "")
       .toLowerCase()
@@ -35,10 +40,38 @@ document.addEventListener("DOMContentLoaded", function () {
     return Math.min(scoreValue, 75);
   }
 
+  function preferredVariants(language) {
+    var groups = {};
+    items.forEach(function (item) {
+      var group = item.getAttribute("data-content-group") || item.getAttribute("href");
+      if (!groups[group]) groups[group] = [];
+      groups[group].push(item);
+    });
+
+    var preferred = [];
+    Object.keys(groups).forEach(function (group) {
+      var variants = groups[group];
+      var target = variants.find(function (item) {
+        return (item.getAttribute("data-content-language") || "en") === language;
+      }) || variants.find(function (item) {
+        return (item.getAttribute("data-content-language") || "en") === "en";
+      }) || variants[0];
+      if (target) preferred.push(target);
+    });
+    return preferred;
+  }
+
   function search() {
+    var language = currentLanguage();
+    var visibleItems = preferredVariants(language);
     var query = input.value;
-    var ranked = items.map(function (item, index) {
-      return { item: item, index: index, score: score(query, item.getAttribute("data-search")) };
+
+    var ranked = visibleItems.map(function (item, index) {
+      return {
+        item: item,
+        index: index,
+        score: score(query, item.getAttribute("data-search"))
+      };
     }).filter(function (entry) {
       return !normalize(query) || entry.score > 0;
     }).sort(function (a, b) {
@@ -46,10 +79,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     items.forEach(function (item) { item.hidden = true; });
-    ranked.forEach(function (entry) { entry.item.hidden = false; results.appendChild(entry.item); });
+    ranked.forEach(function (entry) {
+      entry.item.hidden = false;
+      results.appendChild(entry.item);
+    });
     noResults.hidden = ranked.length !== 0;
   }
 
   input.addEventListener("input", search);
   input.addEventListener("search", search);
+  document.addEventListener("goa:languagechange", search);
+
+  search();
 });
