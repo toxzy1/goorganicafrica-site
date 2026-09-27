@@ -441,7 +441,7 @@ p { margin: 0 0 1em; }
   color: var(--ink-soft);
   font-size: .9rem;
 }
-.ebook-search-item[hidden] { display: none; }
+.ebook-search-item[hidden], .content-variant.is-language-hidden { display: none !important; }
 .ebook-no-results {
   text-align: center;
   margin: 24px 0 0;
