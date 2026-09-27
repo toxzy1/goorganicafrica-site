@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import json
 import re
-import subprocess
 from pathlib import Path
 
 import argostranslate.package
@@ -14,6 +13,17 @@ SETTINGS = Path("src/_data/translationSettings.json")
 DEFAULT_LANGUAGES = ("fr", "ar", "pt", "sw")
 FIELDS = ("title", "description", "meta_title", "meta_description", "tagline", "bonus", "category")
 LISTS = ("audience", "benefits", "search_terms", "keywords")
+
+BAD_ARTIFACTS = (
+    "GOA_TOKEN",
+    "GoA TOKEN",
+    "GA TOKEN",
+    "BAR BAR",
+    "FIM",
+    "ENDGOA TOKEN",
+    "\\pos(",
+    "\\fnAdobe Arabic",
+)
 
 
 def load_settings():
@@ -70,66 +80,50 @@ def install_models(languages):
         pkg.install()
 
 
-def protect(text):
-    saved = {}
-    n = 0
-
-    def save(m):
-        nonlocal n
-        token = "GOA_TOKEN_" + str(n) + "_END"
-        n += 1
-        saved[token] = m.group(0)
-        return token
-
-    patterns = [
-        r"<[^>]+>",
-        r"\{\{[^}]+\}\}",
-        r"\{%[^%]+%\}",
-        r"\[[^\]]+\]\([^\)]+\)",
-        r"\x60[^\x60]+\x60",
-        r"https?://[^\s)\]<>\"']+",
-    ]
-    out = text
-    for pattern in patterns:
-        out = re.sub(pattern, save, out)
-    return out, saved
-
-
 def translate_text(text, target, cache):
-    if not text.strip() or not re.search(r"[A-Za-z]", text):
+    """Translate plain text only. Never inject synthetic placeholder tokens into Argos."""
+    if not text or not text.strip() or not re.search(r"[A-Za-z]", text):
         return text
     key = (target, text)
     if key in cache:
         return cache[key]
-    safe, saved = protect(text)
-    if not safe.strip():
-        return text
-    result = argostranslate.translate.translate(safe, "en", target)
-    for token, value in saved.items():
-        result = result.replace(token, value)
+    result = argostranslate.translate.translate(text, "en", target)
     cache[key] = result
     return result
 
 
-def translate_body(body, target, cache):
-    # Translate paragraph-sized blocks instead of every line. This keeps the
-    # free offline workflow practical on GitHub Actions while preserving
-    # blank-line structure and protected Markdown/HTML tokens.
-    parts = re.split(r"(\n\s*\n)", body)
+def translate_markup(body, target, cache):
+    """
+    Translate visible text while preserving HTML/Markdown structure exactly.
+    The old generator inserted GOA_TOKEN placeholders. Argos tokenized those
+    markers, causing markers and neighbouring language fragments to leak out.
+    """
+    inline = chr(96)
+    pattern = re.compile(
+        r"(<!--(?:.|\n)*?-->|<[^>]+>|https?://[^\s)\]<>\"']+|"
+        r"\[[^\]]+\]\([^\)]+\)|" + re.escape(inline) + r"[^" + re.escape(inline) + r"]+" + re.escape(inline) + r"|"
+        r"&(?:amp|lt|gt|quot|apos|nbsp);)",
+        re.S,
+    )
+
+    parts = pattern.split(body)
     out = []
     for part in parts:
-        if re.fullmatch(r"\n\s*\n", part or ""):
-            out.append(part)
+        if not part:
             continue
-        if not part.strip():
+        if pattern.fullmatch(part):
             out.append(part)
-            continue
-        # Preserve fenced code blocks exactly; translate only surrounding text.
-        if re.match(r"^\s*```", part):
-            out.append(part)
-            continue
-        out.append(translate_text(part, target, cache))
+        else:
+            out.append(translate_text(part, target, cache))
     return "".join(out)
+
+
+def clean_check(text, path):
+    for artifact in BAD_ARTIFACTS:
+        if artifact in text:
+            raise RuntimeError(f"Translation artifact '{artifact}' detected in {path}")
+
+
 def translate_file(path, target, overwrite, status, cache):
     source = path.read_text(encoding="utf-8")
     front, body = split_front(source)
@@ -144,9 +138,14 @@ def translate_file(path, target, overwrite, status, cache):
 
     output = path.parent / (slug + "-" + target + ".md")
     if output.exists() and not overwrite:
-        return
+        existing = output.read_text(encoding="utf-8")
+        try:
+            clean_check(existing, output)
+        except RuntimeError:
+            print("Replacing corrupted translation:", output)
+        else:
+            return
 
-    cache = {}
     tf = front
 
     for key in FIELDS:
@@ -154,9 +153,6 @@ def translate_file(path, target, overwrite, status, cache):
         if value:
             tf = replace_scalar(tf, key, translate_text(value, target, cache))
 
-    # Translate each top-level YAML list as a bounded block. This avoids
-    # accidentally swallowing the following field when a translated value
-    # contains punctuation or line breaks.
     for key in LISTS:
         pattern = r"(?ms)^" + re.escape(key) + r":\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:|\Z)"
         m = re.search(pattern, front)
@@ -194,7 +190,11 @@ def translate_file(path, target, overwrite, status, cache):
     if related:
         tf = replace_scalar(tf, "related_ebook_slug", related + "-" + target)
 
-    output.write_text("---\n" + tf.rstrip() + "\n---\n" + translate_body(body, target, cache).lstrip(), encoding="utf-8")
+    translated_body = translate_markup(body, target, cache)
+    result = "---\n" + tf.rstrip() + "\n---\n" + translated_body.lstrip()
+    clean_check(result, output)
+
+    output.write_text(result, encoding="utf-8")
     print("Created/updated:", output)
 
 
@@ -203,15 +203,24 @@ def main():
     if not config.get("enabled", True) or not config.get("automatic_generation", True):
         print("Translation automation disabled.")
         return
-    files = source_files()
+
+    files = []
+    for path in source_files():
+        front, _ = split_front(path.read_text(encoding="utf-8"))
+        if scalar(front, "language") in ("", "en"):
+            files.append(path)
+
     print("English source files:", len(files))
     print("Target languages:", languages)
+
     if not files or not languages:
         return
+
     install_models(languages)
     overwrite = bool(config.get("auto_update_existing_translations", True))
     status = config.get("mark_new_translations", "in_review")
     cache = {}
+
     for path in files:
         for target in languages:
             translate_file(path, target, overwrite, status, cache)
