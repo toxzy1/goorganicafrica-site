@@ -4,10 +4,10 @@ layout: layouts/ebook.njk
 permalink: "/ebooks/{{ slug }}/"
 title: "دليل شامل لمزارع أويستر موشروم"
 slug: "oyster-mushroom-farming-ar"
-meta_title: "زراعة فطر المحار في نيجيريا | GoOrganicAfrica"
+meta_title: "Oyster Mushroom Farming in Nigeria   GoOrganicAfrica"
 meta_description: "وفي عام 2026، تزدهر زراعة الفطر في نيجيريا.تعلم كيف تنمو وتجنيد وبيع فطر المحار باستخدام النفايات الزراعية والمعدات البسيطة."
-description: "دليل عملي لزراعة فطر المحار، يشمل إعداد الوسط الزراعي والإنتاج والحصاد والتسويق المربح في أفريقيا."
-tagline: "منهج عملي قائم على البحث والزراعة العضوية لإنتاج فطر المحار"
+description: "A practical guide to oyster mushroom farming, including substrate preparation, production, harvesting and profitable marketing in Africa."
+tagline: "A practical, research-based and organic approach to growing oyster mushrooms"
 icon: /images/ebooks/oyster-mushroom.jpg
 price: 3000
 selar_link: https://selar.com/15h2j99135
