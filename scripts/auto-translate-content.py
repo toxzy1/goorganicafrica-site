@@ -146,7 +146,7 @@ def translate_file(path, target, overwrite, status, cache):
     # accidentally swallowing the following field when a translated value
     # contains punctuation or line breaks.
     for key in LISTS:
-        pattern = r"(?ms)^" + re.escape(key) + r":\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:|\\Z)"
+        pattern = r"(?ms)^" + re.escape(key) + r":\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:|\Z)"
         m = re.search(pattern, front)
         if not m:
             continue
