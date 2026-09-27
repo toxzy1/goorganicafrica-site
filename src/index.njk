@@ -194,6 +194,13 @@ permalink: "/"
     {% if collections.posts.length > 0 %}
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
       {% for post in collections.posts | slice(0, 4) %}
+      {% set postCategoryKey = post.data.category %}
+      {% if post.data.category == "Crop Production" or post.data.category == "crop-production" %}{% set postCategoryKey = "crop" %}{% endif %}
+      {% if post.data.category == "Livestock Farming" or post.data.category == "livestock-farming" %}{% set postCategoryKey = "livestock" %}{% endif %}
+      {% if post.data.category == "Organic & Regenerative Farming" or post.data.category == "organic-farming" %}{% set postCategoryKey = "organic" %}{% endif %}
+      {% if post.data.category == "Agribusiness & Farm Business" or post.data.category == "agribusiness" %}{% set postCategoryKey = "agribusiness" %}{% endif %}
+      {% if post.data.category == "Farm Inputs & Technology" or post.data.category == "farm-inputs" %}{% set postCategoryKey = "inputs" %}{% endif %}
+      {% if post.data.category == "Agricultural Data & Markets" or post.data.category == "farming-data" %}{% set postCategoryKey = "markets" %}{% endif %}
       <a href="{{ post.url }}" class="content-variant"
          data-content-group="{{ post.data.translation_group or post.data.slug }}"
          data-content-language="{{ post.data.language or 'en' }}"
@@ -201,7 +208,7 @@ permalink: "/"
          style="text-decoration:none;">
         <div class="ebook-card" style="height:100%;">
           {% if post.data.featured_image %}<img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" style="width:100%;height:180px;object-fit:cover;border-radius:4px;">{% endif %}
-          <span class="eyebrow" style="font-size:0.68rem;" data-i18n="blog.categories.{{ post.data.category }}">{{ post.data.category }}</span>
+          <span class="eyebrow" style="font-size:0.68rem;" data-i18n="blog.categories.{{ postCategoryKey }}">{{ post.data.category }}</span>
           <h3 style="font-size:1.05rem;">{{ post.data.title }}</h3>
           <p class="tagline" style="font-size:0.88rem;">{{ post.data.description }}</p>
           <div class="card-footer"><span style="font-size:0.8rem;color:var(--ink-soft);" data-i18n="home.readArticle">Read article</span><span class="cta">&rarr;</span></div>
