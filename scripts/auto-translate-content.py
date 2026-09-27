@@ -112,11 +112,23 @@ def translate_text(text, target, cache):
 
 
 def translate_body(body, target, cache):
+    # Translate paragraph-sized blocks instead of every line. This keeps the
+    # free offline workflow practical on GitHub Actions while preserving
+    # blank-line structure and protected Markdown/HTML tokens.
+    parts = re.split(r"(\n\s*\n)", body)
     out = []
-    for line in body.splitlines(keepends=True):
-        ending = "\n" if line.endswith("\n") else ""
-        content = line[:-1] if ending else line
-        out.append(line if not content.strip() else translate_text(content, target, cache) + ending)
+    for part in parts:
+        if re.fullmatch(r"\n\s*\n", part or ""):
+            out.append(part)
+            continue
+        if not part.strip():
+            out.append(part)
+            continue
+        # Preserve fenced code blocks exactly; translate only surrounding text.
+        if re.match(r"^\s*```", part):
+            out.append(part)
+            continue
+        out.append(translate_text(part, target, cache))
     return "".join(out)
 def translate_file(path, target, overwrite, status, cache):
     source = path.read_text(encoding="utf-8")
