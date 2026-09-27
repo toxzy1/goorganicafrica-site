@@ -12,8 +12,8 @@ on:
       - ".github/workflows/auto-translate-content.yml"
 
 concurrency:
-  group: goorganicafrica-translation-final-20260927
-  cancel-in-progress: false
+  group: goorganicafrica-translation-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
