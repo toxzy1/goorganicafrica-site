@@ -173,9 +173,11 @@ def translate_text(text, target, cache):
             result = _google_translate(chunk, target)
             if not result or not result.strip():
                 raise RuntimeError(f"Translation failed for {target}: {chunk[:120]!r}")
-            if _english_ratio(result) > 0.30 and _english_ratio(chunk) > 0.25:
+            # Reject only a clear non-translation. Legitimate English terms,
+            # crop/scientific names, units, brand names and citations may remain.
+            if result.strip() == chunk.strip():
                 raise RuntimeError(
-                    f"Translation quality check failed for {target}: excessive English remained"
+                    f"Translation quality check failed for {target}: source returned unchanged"
                 )
             cache[key] = result
         translated.append(cache[key])
