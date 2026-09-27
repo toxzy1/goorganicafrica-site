@@ -12,7 +12,7 @@ on:
       - ".github/workflows/auto-translate-content.yml"
 
 concurrency:
-  group: goorganicafrica-translation-drafts
+  group: goorganicafrica-translation-final-20260927
   cancel-in-progress: false
 
 permissions:
