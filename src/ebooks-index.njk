@@ -27,7 +27,7 @@ permalink: "/ebooks/"
       {% if ebook.data.slug == "hydroponic-fodder-farming" %}{% set cardKey = "ebooks.cards.fodder" %}{% endif %}
       {% if ebook.data.slug == "oyster-mushroom-farming" %}{% set cardKey = "ebooks.cards.mushroom" %}{% endif %}
       {% if ebook.data.slug == "weed-free-farming-technique" %}{% set cardKey = "ebooks.cards.cassava" %}{% endif %}
-      <a class="ebook-card ebook-search-item content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}" data-search="{{ ebook.data.title }} {{ ebook.data.tagline }} {{ ebook.data.category }} {{ ebook.data.audience }} {{ ebook.data.slug }} {{ ebook.data.search_terms }}" data-ebook-title="{{ ebook.data.title }}">
+      <a class="ebook-card ebook-search-item content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}" data-content-slug="{{ ebook.data.slug }}" data-search="{{ ebook.data.title }} {{ ebook.data.tagline }} {{ ebook.data.category }} {{ ebook.data.audience }} {{ ebook.data.slug }} {{ ebook.data.search_terms }}" data-ebook-title="{{ ebook.data.title }}">
         <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} eBook cover">
         <h3 data-i18n="{{ cardKey }}.title">{{ ebook.data.title }}</h3>
         <p class="tagline" data-i18n="{{ cardKey }}.tagline">{{ ebook.data.tagline }}</p>
