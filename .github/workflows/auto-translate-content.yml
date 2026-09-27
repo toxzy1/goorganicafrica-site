@@ -39,6 +39,7 @@ jobs:
           python -m pip install argostranslate deep-translator
 
       - name: Generate multilingual drafts
+        timeout-minutes: 30
         run: |
           python -u scripts/auto-translate-content.py
           echo "Generated translation files:"
