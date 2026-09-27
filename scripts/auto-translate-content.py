@@ -81,17 +81,20 @@ def install_models(languages):
 
 
 def translate_text(text, target, cache):
-    """Translate plain text only. Never inject synthetic placeholder tokens into Argos."""
+    """Translate prose in small sentence-sized units so no long chunk is silently left in English."""
     if not text or not text.strip() or not re.search(r"[A-Za-z]", text):
         return text
-    key = (target, text)
-    if key in cache:
-        return cache[key]
-    result = argostranslate.translate.translate(text, "en", target)
-    cache[key] = result
-    return result
-
-
+    chunks = re.split(r"(?<=[.!?])(?=\s+|$)", text)
+    translated = []
+    for chunk in chunks:
+        if not chunk or not chunk.strip() or not re.search(r"[A-Za-z]", chunk):
+            translated.append(chunk)
+            continue
+        key = (target, chunk)
+        if key not in cache:
+            cache[key] = argostranslate.translate.translate(chunk, "en", target)
+        translated.append(cache[key])
+    return "".join(translated)
 def translate_markup(body, target, cache):
     """
     Translate visible text while preserving HTML/Markdown structure exactly.
