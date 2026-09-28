@@ -10,7 +10,7 @@ ROOTS = (Path("src/blog/posts"), Path("src/ebooks"))
 SETTINGS = Path("src/_data/translationSettings.json")
 DEFAULT_LANGUAGES = ("fr", "ar", "pt", "sw")
 CACHE_FILE = Path(".translation-cache.json")
-CACHE_VERSION = "v6"
+CACHE_VERSION = "v7"
 FIELDS = ("title", "description", "meta_title", "meta_description", "tagline", "bonus", "category")
 LISTS = ("audience", "benefits", "search_terms", "keywords")
 
@@ -157,45 +157,28 @@ def _translate_chunk(chunk, target, cache):
     cache[key] = result
     return result
 
-# Protect numbers themselves, but NEVER protect English unit words such as
-# "days", "weeks", "hours", or "tonnes". The translation engine must translate
-# those words naturally in every target language.
-# Match numeric values wherever they occur, including when translation places
-# them directly beside a word (for example "60%na" in Swahili or "60%et" in
-# French). Structural HTML/URLs are already excluded from translated prose.
+# Keep numeric values in the text so the public translation endpoint can
+# translate the surrounding prose naturally. Numeric integrity is checked
+# after translation by numeric_signature(). Earlier placeholder schemes caused
+# Swahili and other languages to lose or alter numbers, so numbers are no
+# longer replaced with artificial tokens.
 NUMBER_RE = re.compile(r"\d+(?:[\.,]\d+)?")
 BRAND_RE = re.compile(r"GoOrganicAfrica", re.I)
-# Tokens contain letters only so the translation service cannot reinterpret the
-# numeric part of a placeholder as a real number. This is important for all
-# languages, especially Swahili where the service may otherwise alter spacing
-# or punctuation around protected numeric placeholders.
-PLACEHOLDER_RE = re.compile(r"__GOA_(?:NUM|BRAND)_[A-Z]+__")
-
-def _token_id(index):
-    # Spreadsheet-style alphabetic IDs: A..Z, AA..AZ, BA.. etc.
-    value = index
-    token = ""
-    while True:
-        token = chr(65 + (value % 26)) + token
-        value = value // 26 - 1
-        if value < 0:
-            return token
 
 def _protect(text):
+    # Only protect the site brand. Do not replace numeric values with sentinels:
+    # the translation service is much more reliable when it receives ordinary
+    # numbers, and the quality check below verifies that every numeric value
+    # survives unchanged.
     values = []
-    def num(m):
-        values.append(("NUM", m.group(0)))
-        return f"__GOA_NUM_{_token_id(len(values)-1)}__"
-    protected = NUMBER_RE.sub(num, text)
     def brand(m):
         values.append(("BRAND", m.group(0)))
-        return f"__GOA_BRAND_{_token_id(len(values)-1)}__"
-    protected = BRAND_RE.sub(brand, protected)
-    return protected, values
+        return "__GOA_BRAND__"
+    return BRAND_RE.sub(brand, text), values
 
 def _restore(text, values):
-    for i, (kind, value) in enumerate(values):
-        text = text.replace(f"__GOA_{kind}_{_token_id(i)}__", value)
+    for _, value in values:
+        text = text.replace("__GOA_BRAND__", value)
     return text
 
 def _translate_plain_text(text, target, cache):
