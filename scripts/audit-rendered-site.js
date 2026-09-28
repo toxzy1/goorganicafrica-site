@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const site = path.join(__dirname, "..", "_site");
+const source = path.join(__dirname, "..", "src");
 if (!fs.existsSync(site)) throw new Error("Rendered site is missing.");
 
 function walk(dir) {
@@ -33,11 +34,55 @@ function cardHrefs(html) {
   return out;
 }
 
+// The five public blog indexes are mandatory. Previously these checks silently
+// skipped missing localized indexes, allowing a broken build to pass.
+for (const [rel, lang] of [
+  ["blog/index.html","en"],["fr/blog/index.html","fr"],["ar/blog/index.html","ar"],
+  ["pt/blog/index.html","pt"],["sw/blog/index.html","sw"]
+]) {
+  const html = read(rel);
+  if (!html) continue;
+  const expectedPrefix = lang === "en" ? "/blog/" : "/" + lang + "/blog/";
+  const cards = cardHrefs(html);
+  if (cards.length !== new Set(cards).size) failures.push(rel + ": duplicate section card links");
+  if (cards.some(h => h.includes("/blog/") && !h.startsWith(expectedPrefix))) {
+    failures.push(rel + ": section contains blog cards from another language");
+  }
+}
+
+// Verify every published source post has a rendered URL, and every translation
+// group has exactly one published page in each enabled language.
+const postDir = path.join(source, "blog", "posts");
+const postFiles = fs.existsSync(postDir) ? fs.readdirSync(postDir).filter(n => n.endsWith(".md")) : [];
+const groups = new Map();
+for (const name of postFiles) {
+  const raw = fs.readFileSync(path.join(postDir, name), "utf8");
+  const fm = (raw.match(/^---\n([\s\S]*?)\n---/) || [,""])[1];
+  const lang = (fm.match(/^language:\s*([^\n\r]+)/m) || [,"en"])[1].trim().replace(/^["']|["']$/g, "");
+  const slug = (fm.match(/^slug:\s*([^\n\r]+)/m) || [,""])[1].trim().replace(/^["']|["']$/g, "");
+  const group = (fm.match(/^translation_group:\s*([^\n\r]+)/m) || [,""])[1].trim().replace(/^["']|["']$/g, "");
+  const status = (fm.match(/^translation_status:\s*([^\n\r]+)/m) || [,"published"])[1].trim().replace(/^["']|["']$/g, "");
+  const active = !/^active:\s*false$/m.test(fm);
+  if (!active || status === "in_review" || !slug) continue;
+  const base = slug.replace(/-(fr|ar|pt|sw)$/, "");
+  const url = lang === "en" ? "/blog/" + base + "/" : "/" + lang + "/blog/" + base + "/";
+  const target = path.join(site, url.replace(/^\//, ""), "index.html");
+  if (!fs.existsSync(target)) failures.push("Source post does not render: " + name + " -> " + url);
+  if (group) {
+    if (!groups.has(group)) groups.set(group, new Map());
+    const byLang = groups.get(group);
+    if (byLang.has(lang)) failures.push("Duplicate published post language in " + group + ": " + lang);
+    byLang.set(lang, url);
+  }
+}
+for (const [group, byLang] of groups) {
+  for (const lang of ["en","fr","ar","pt","sw"]) {
+    if (!byLang.has(lang)) failures.push("Translation group " + group + " is missing published " + lang + " blog post");
+  }
+}
+
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
-
-  // Every localized detail page must expose one exact sibling URL per
-  // available language, and the visible language links must match that map.
   if (html.includes('id="goa-language-targets"')) {
     const mapAttrs = {};
     for (const m of html.matchAll(/data-url-(en|fr|ar|pt|sw)=["']([^"']+)["']/gi)) {
@@ -50,11 +95,13 @@ for (const file of htmlFiles) {
         visible[a[1]] = a[2];
       }
     }
-    for (const lang of Object.keys(mapAttrs)) {
-      if (visible[lang] !== mapAttrs[lang]) failures.push(path.relative(site, file) + ": language target mismatch for " + lang);
-      const targetRel = mapAttrs[lang].replace(/^\//, "");
-      const targetFile = path.join(site, targetRel, "index.html");
-      if (!fs.existsSync(targetFile)) failures.push(path.relative(site, file) + ": target does not render for " + lang + ": " + mapAttrs[lang]);
+    for (const lang of ["en","fr","ar","pt","sw"]) {
+      if (!mapAttrs[lang]) failures.push(path.relative(site, file) + ": missing language target for " + lang);
+      else {
+        if (visible[lang] !== mapAttrs[lang]) failures.push(path.relative(site, file) + ": language target mismatch for " + lang);
+        const targetFile = path.join(site, mapAttrs[lang].replace(/^\//, ""), "index.html");
+        if (!fs.existsSync(targetFile)) failures.push(path.relative(site, file) + ": target does not render for " + lang + ": " + mapAttrs[lang]);
+      }
     }
   }
   const rel = path.relative(site, file);
@@ -89,14 +136,16 @@ for (const [rel, lang] of [["index.html","en"],["fr/index.html","fr"],["ar/index
 }
 
 for (const [rel, prefix] of [
-  ["ebooks/index.html","/ebooks/"],["fr/ebooks/index.html","/fr/ebooks/"],["ar/ebooks/index.html","/ar/ebooks/"],["pt/ebooks/index.html","/pt/ebooks/"],["sw/ebooks/index.html","/sw/ebooks/"],
-  ["blog/index.html","/blog/"],["fr/blog/index.html","/fr/blog/"],["ar/blog/index.html","/ar/blog/"],["pt/blog/index.html","/pt/blog/"],["sw/blog/index.html","/sw/blog/"]
+  ["ebooks/index.html","/ebooks/"],["fr/ebooks/index.html","/fr/ebooks/"],["ar/ebooks/index.html","/ar/ebooks/"],
+  ["pt/ebooks/index.html","/pt/ebooks/"],["sw/ebooks/index.html","/sw/ebooks/"]
 ]) {
   const html = read(rel);
   if (!html) continue;
   const cards = cardHrefs(html);
   if (cards.length !== new Set(cards).size) failures.push(rel + ": duplicate section card links");
-  if (cards.some(h => (h.includes("/blog/") || h.includes("/ebooks/")) && !h.startsWith(prefix))) failures.push(rel + ": section contains cards from another language");
+  if (cards.some(h => (h.includes("/blog/") || h.includes("/ebooks/")) && !h.startsWith(prefix))) {
+    failures.push(rel + ": section contains cards from another language");
+  }
 }
 
 if (failures.length) {
