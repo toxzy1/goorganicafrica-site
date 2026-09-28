@@ -10,7 +10,7 @@ ROOTS = (Path("src/blog/posts"), Path("src/ebooks"))
 SETTINGS = Path("src/_data/translationSettings.json")
 DEFAULT_LANGUAGES = ("fr", "ar", "pt", "sw")
 CACHE_FILE = Path(".translation-cache.json")
-CACHE_VERSION = "v8"
+CACHE_VERSION = "v9"
 FIELDS = ("title", "description", "meta_title", "meta_description", "tagline", "bonus", "category")
 LISTS = ("audience", "benefits", "search_terms", "keywords")
 
@@ -97,53 +97,32 @@ def source_files():
         files.extend(root.glob("*.md"))
     return sorted(files)
 
-def _google_translate(text, target):
-    import random
-    import time
-    from urllib.error import HTTPError
-    from urllib.parse import quote
-    from urllib.request import Request, urlopen
+def _argos_translate(text, target):
+    """Translate locally with the free/open-source Argos Translate engine.
 
-    url = ("https://translate.googleapis.com/translate_a/single"
-           "?client=gtx&sl=en&tl=" + quote(target) + "&dt=t&q=" + quote(text))
-    last_error = None
-    for attempt in range(7):
-        try:
-            req = Request(url, headers={
-                "User-Agent": "Mozilla/5.0",
-                "Accept": "application/json,text/plain,*/*",
-            })
-            with urlopen(req, timeout=45) as response:
-                data = json.loads(response.read().decode("utf-8"))
-            result = "".join(
-                part[0] for part in data[0]
-                if isinstance(part, list) and part and isinstance(part[0], str)
-            )
-            if result.strip():
-                time.sleep(0.8)
-                return result
-            raise RuntimeError("Google returned an empty translation")
-        except HTTPError as exc:
-            last_error = exc
-            retryable = exc.code == 429 or 500 <= exc.code < 600
-            if not retryable or attempt == 6:
-                break
-            retry_after = exc.headers.get("Retry-After")
-            try:
-                delay = float(retry_after) if retry_after else min(90, 5 * (2 ** attempt))
-            except (TypeError, ValueError):
-                delay = min(90, 5 * (2 ** attempt))
-            delay += random.uniform(0.5, 2.0)
-            print(f"Google HTTP {exc.code} for {target}; retrying in {delay:.1f}s...")
-            time.sleep(delay)
-        except Exception as exc:
-            last_error = exc
-            if attempt == 6:
-                break
-            delay = min(30, 3 * (2 ** attempt)) + random.uniform(0.5, 1.5)
-            print(f"Google translation error for {target}; retrying in {delay:.1f}s: {exc}")
-            time.sleep(delay)
-    raise RuntimeError(f"Google translation failed for {target}: {last_error}")
+    No API key or third-party translation request is used here. The GitHub
+    Actions workflow installs the required English -> target language models
+    before this script runs, so provider rate limits such as HTTP 429 cannot
+    break the translation job.
+    """
+    try:
+        import argostranslate.translate
+    except ImportError as exc:
+        raise RuntimeError(
+            "Argos Translate is not installed. The workflow must install "
+            "argostranslate before running this script."
+        ) from exc
+
+    try:
+        result = argostranslate.translate.translate(text, "en", target)
+    except Exception as exc:
+        raise RuntimeError(
+            f"Argos translation failed for {target}: {exc}"
+        ) from exc
+
+    if not isinstance(result, str) or not result.strip():
+        raise RuntimeError(f"Argos returned an empty translation for {target}")
+    return result
 
 def _translate_chunk(chunk, target, cache):
     key = (CACHE_VERSION, target, chunk)
