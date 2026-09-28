@@ -5,7 +5,7 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Guide complet de la culture des pleurotes"
 slug: "oyster-mushroom-farming-fr"
 meta_title: "Culture de pleurotes au Nigeria et en Afrique |GoOrganicAfrica"
-meta_description: "La culture des pleurotes est en plein essor au Nigeria en 2026. Apprenez à cultiver, récolter et vendre des pleurotes de manière rentable en utilisant des déchets agricoles et du matériel simple."
+meta_description: "La culture des pleurotes est en plein essor au Nigeria en2026. Apprenez à cultiver, récolter et vendre des pleurotes de manière rentable en utilisant des déchets agricoles et du matériel simple."
 description: "Un guide pratique sur la culture des pleurotes, comprenant la préparation du substrat, la production, la récolte et la commercialisation rentable en Afrique."
 tagline: "Une approche pratique, scientifique et biologique de la culture des pleurotes"
 icon: /images/ebooks/oyster-mushroom.jpg
@@ -23,7 +23,7 @@ audience:
 benefits:
   - "Couvre la préparation du substrat, la pasteurisation, l'inoculation, l'incubation, la fructification et la récolte"
   - "Explique comment identifier et prévenir la contamination"
-  - "Comprend une formule évolutive de 50 à 1000+ sacs"
+  - "Comprend une formule évolutive de50jusqu'à1000+ sacs"
   - "Écrit à partir d'une expérience agricole réelle, de recherches et de pratiques de production pratiques"
 bonus: "Consultation WhatsApp gratuite après l'achat"
 faqs:
@@ -36,7 +36,7 @@ faqs:
   - q: "Comment est gérée la contamination ?"
     a: "Le guide explique comment reconnaître les signes de contamination et quoi faire lorsque cela se produit."
   - q: "La production peut-elle être augmentée ?"
-    a: "Oui, le guide comprend des formules permettant de passer d'un petit lot à 500 et 1 000 sacs."
+    a: "Oui, le guide comprend des formules pour passer d'un petit lot à500et1000sacs."
 search_terms:
   - "pleurotes"
   - "culture de champignons"

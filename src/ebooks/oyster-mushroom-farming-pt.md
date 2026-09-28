@@ -5,7 +5,7 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Guia abrangente para cultivo de cogumelos ostra"
 slug: "oyster-mushroom-farming-pt"
 meta_title: "Cultivo de cogumelos ostra na Nigéria e na África |GoOrganicAfrica"
-meta_description: "O cultivo de cogumelos ostra está crescendo na Nigéria em 2026. Aprenda como cultivar, colher e vender cogumelos ostra de forma lucrativa usando resíduos agrícolas e equipamentos simples."
+meta_description: "O cultivo de cogumelos ostra está crescendo na Nigéria em2026. Aprenda como cultivar, colher e vender cogumelos ostra de forma lucrativa, usando resíduos agrícolas e equipamentos simples."
 description: "Um guia prático para o cultivo de cogumelos ostra, incluindo preparação de substrato, produção, colheita e comercialização lucrativa em África."
 tagline: "Uma abordagem prática, baseada em pesquisa e orgânica para o cultivo de cogumelos ostra"
 icon: /images/ebooks/oyster-mushroom.jpg
@@ -23,7 +23,7 @@ audience:
 benefits:
   - "Abrange preparação de substrato, pasteurização, inoculação, incubação, frutificação e colheita"
   - "Explica como identificar e prevenir a contaminação"
-  - "Inclui uma fórmula escalonável de 50 a mais de 1.000 sacos"
+  - "Inclui uma fórmula escalável de50até1000+ bolsas"
   - "Escrito a partir de experiência agrícola real, pesquisa e prática prática de produção"
 bonus: "Consulta gratuita do WhatsApp após a compra"
 faqs:
@@ -36,7 +36,7 @@ faqs:
   - q: "Como é tratada a contaminação?"
     a: "O guia explica como reconhecer sinais de contaminação e o que fazer quando isso acontecer."
   - q: "A produção pode ser ampliada?"
-    a: "Sim, o guia inclui fórmulas para dimensionamento desde um lote pequeno até 500 e 1.000 sacas."
+    a: "Sim, o guia inclui fórmulas para dimensionar desde um lote pequeno até500e1000sacos."
 search_terms:
   - "cogumelo ostra"
   - "cultivo de cogumelos"

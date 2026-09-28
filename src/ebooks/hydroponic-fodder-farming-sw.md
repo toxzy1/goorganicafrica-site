@@ -5,9 +5,9 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Kilimo cha Lishe cha Hydroponic"
 slug: "hydroponic-fodder-farming-sw"
 meta_title: "Kilimo cha Lishe cha Hydroponic nchini Nigeria na Afrika |GoOrganicAfrica"
-meta_description: "Kilimo cha malisho cha haidroponiki kinawasaidia wakulima wa Kiafrika kukuza chakula kipya cha mifugo katika siku 4-8 kwa kutumia ardhi ndogo. Jifunze jinsi inavyofanya kazi, gharama yake, na jinsi ya kuanza nchini Nigeria."
-description: "Jifunze jinsi ya kukuza lishe safi ya hydroponic katika siku 4-8, kupunguza gharama za malisho ya mifugo na kutoa lishe bora na nafasi ndogo."
-tagline: "Panda malisho safi ya mifugo katika siku 4-8, hata katika nafasi ndogo"
+meta_description: "Kilimo cha lishe cha Hydroponic kinasaidia wakulima wa Kiafrika kukuza chakula kipya cha mifugo4–8 dayskutumia ardhi ndogo. Jifunze jinsi inavyofanya kazi, gharama yake, na jinsi ya kuanza nchini Nigeria."
+description: "Jifunze jinsi ya kukuza lishe mpya ya hydroponic ndani4–8 days, kupunguza gharama za malisho ya mifugo na kuzalisha malisho yenye nafasi ndogo."
+tagline: "Panda malisho safi ya mifugo ndani4-8 days, hata katika nafasi ndogo"
 icon: /images/ebooks/hydroponic-fodder.jpg
 price: 3000
 selar_link: https://selar.com/2221h2

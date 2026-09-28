@@ -5,9 +5,9 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Cultivo de forragem hidropônica"
 slug: "hydroponic-fodder-farming-pt"
 meta_title: "Cultivo de forragem hidropônica na Nigéria e na África |GoOrganicAfrica"
-meta_description: "A agricultura hidropónica de forragem está a ajudar os agricultores africanos a cultivar rações frescas para o gado em 4 a 8 dias, utilizando um mínimo de terra. Saiba como funciona, quanto custa e como começar na Nigéria."
-description: "Aprenda como cultivar forragem hidropônica fresca em 4–8 dias, reduzir os custos de alimentação do gado e produzir alimentos nutritivos com espaço limitado."
-tagline: "Cultive ração fresca para gado em 4 a 8 dias, mesmo em um espaço pequeno"
+meta_description: "A agricultura hidropónica de forragem está a ajudar os agricultores africanos a cultivar rações frescas para gado em4–8 daysusando o mínimo de terra. Saiba como funciona, quanto custa e como começar na Nigéria."
+description: "Aprenda como cultivar forragem hidropônica fresca em4–8 days, reduzir os custos de alimentação do gado e produzir alimentos nutritivos com espaço limitado."
+tagline: "Cultive ração fresca para gado em4-8 days, mesmo em um espaço pequeno"
 icon: /images/ebooks/hydroponic-fodder.jpg
 price: 3000
 selar_link: https://selar.com/2221h2

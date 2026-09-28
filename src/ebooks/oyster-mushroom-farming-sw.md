@@ -5,7 +5,7 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Mwongozo Kabambe wa Kilimo cha Uyoga wa Oyster"
 slug: "oyster-mushroom-farming-sw"
 meta_title: "Kilimo cha Uyoga wa Oyster nchini Nigeria na Afrika |GoOrganicAfrica"
-meta_description: "Kilimo cha uyoga cha oyster kinashamiri nchini Nigeria mwaka wa 2026. Jifunze jinsi ya kukuza, kuvuna na kuuza uyoga wa oyster kwa faida kwa kutumia taka za kilimo na vifaa rahisi."
+meta_description: "Kilimo cha uyoga cha oyster kinashamiri nchini Nigeria2026. Jifunze jinsi ya kukuza, kuvuna na kuuza uyoga wa oyster kwa faida kwa kutumia taka za kilimo na vifaa rahisi."
 description: "Mwongozo wa vitendo wa kilimo cha uyoga wa oyster, ikijumuisha utayarishaji wa mkatetaka, uzalishaji, uvunaji na uuzaji wa faida barani Afrika."
 tagline: "Mbinu ya vitendo, msingi wa utafiti na ya kikaboni ya kukuza uyoga wa oyster"
 icon: /images/ebooks/oyster-mushroom.jpg
@@ -23,7 +23,7 @@ audience:
 benefits:
   - "Inashughulikia utayarishaji wa substrate, pasteurization, chanjo, incubation, matunda na kuvuna"
   - "Inaeleza jinsi ya kutambua na kuzuia uchafuzi"
-  - "Inajumuisha fomula inayoweza kuongezeka kutoka kwa mifuko 50 hadi 1000+"
+  - "Inajumuisha fomula inayoweza kupanuka kutoka50hadi1000+ mifuko"
   - "Imeandikwa kutokana na uzoefu halisi wa shamba, utafiti na mazoezi ya uzalishaji kwa vitendo"
 bonus: "Ushauri wa bure wa WhatsApp baada ya ununuzi"
 faqs:
@@ -36,7 +36,7 @@ faqs:
   - q: "Je, uchafuzi unashughulikiwaje?"
     a: "Mwongozo unaeleza jinsi ya kutambua dalili za uchafuzi na nini cha kufanya unapotokea."
   - q: "Je, uzalishaji unaweza kuongezwa?"
-    a: "Ndio, mwongozo unajumuisha fomula za kuongeza kutoka kwa kundi ndogo hadi mifuko 500 na 1000."
+    a: "Ndio, mwongozo unajumuisha kanuni za kuongeza kiwango kutoka kwa kundi dogo hadi500na1000mifuko."
 search_terms:
   - "uyoga wa oyster"
   - "kilimo cha uyoga"

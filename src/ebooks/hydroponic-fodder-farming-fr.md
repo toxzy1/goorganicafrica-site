@@ -5,9 +5,9 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Culture fourragère hydroponique"
 slug: "hydroponic-fodder-farming-fr"
 meta_title: "Culture fourragère hydroponique au Nigeria et en Afrique |GoOrganicAfrica"
-meta_description: "La culture fourragère hydroponique aide les agriculteurs africains à cultiver des aliments frais pour le bétail en 4 à 8 jours en utilisant un minimum de terres. Découvrez comment cela fonctionne, ce que cela coûte et comment démarrer au Nigeria."
-description: "Apprenez à cultiver du fourrage hydroponique frais en 4 à 8 jours, à réduire les coûts d'alimentation du bétail et à produire des aliments nutritifs dans un espace limité."
-tagline: "Cultivez des aliments frais pour le bétail en 4 à 8 jours, même dans un petit espace"
+meta_description: "La culture fourragère hydroponique aide les agriculteurs africains à cultiver des aliments frais pour leur bétail.4–8 daysen utilisant un minimum de terrain. Découvrez comment cela fonctionne, ce que cela coûte et comment démarrer au Nigeria."
+description: "Apprenez à cultiver du fourrage hydroponique frais dans4–8 days, réduisez les coûts d’alimentation du bétail et produisez des aliments nutritifs dans un espace limité."
+tagline: "Cultivez des aliments frais pour le bétail4-8 days, même dans un petit espace"
 icon: /images/ebooks/hydroponic-fodder.jpg
 price: 3000
 selar_link: https://selar.com/2221h2

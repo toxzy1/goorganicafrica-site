@@ -5,9 +5,9 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Técnica de cultivo sem ervas daninhas"
 slug: "weed-free-farming-technique-pt"
 meta_title: "Cultivo de mandioca sem ervas daninhas na Nigéria |GoOrganicAfrica"
-meta_description: "Descubra a técnica de cultivo de mandioca sem ervas daninhas que ajuda os agricultores nigerianos a obter altos rendimentos em 5 meses sem herbicidas. Guia passo a passo desde a preparação do terreno até a colheita."
+meta_description: "Descubra a técnica de cultivo de mandioca sem ervas daninhas que ajuda os agricultores nigerianos a obter altos rendimentos em5meses sem herbicidas. Guia passo a passo desde a preparação do terreno até a colheita."
 description: "Aprenda uma técnica prática de cultivo de mandioca sem ervas daninhas para plantar, manejar e colher mandioca em cerca de cinco meses sem herbicidas."
-tagline: "Um guia de preparação da terra para colheita de 5 meses para mandioca livre de ervas daninhas e sem herbicidas"
+tagline: "UM5Guia de preparação da terra para colheita de mandioca sem ervas daninhas e sem herbicidas por meses"
 icon: /images/ebooks/weed-free-cassava.jpg
 price: 3000
 selar_link: https://selar.com/4c5155
@@ -22,13 +22,13 @@ audience:
   - "Agricultores que procuram reduzir custos de mão-de-obra com capina"
 benefits:
   - "Preparação passo a passo da terra até a colheita"
-  - "Um guia completo de produção de mandioca de 5 meses"
+  - "Um completo5guia mensal de produção de mandioca"
   - "Não é necessário uso de herbicida"
   - "Escrito a partir de pesquisa real e prática de campo"
 bonus: "Consulta gratuita do WhatsApp após a compra"
 faqs:
   - q: "O que este guia cobre?"
-    a: "Abrange a preparação da terra e um processo de plantio até a colheita de mandioca de 5 meses, projetado para controlar ervas daninhas sem herbicidas."
+    a: "Abrange a preparação do terreno e uma5Processo mensal de plantio até a colheita da mandioca projetado para controlar ervas daninhas sem herbicidas."
   - q: "Preciso de herbicidas químicos para este método?"
     a: "Não, a técnica é construída em torno do controle de ervas daninhas sem herbicida."
   - q: "Isso é só para mandioca?"

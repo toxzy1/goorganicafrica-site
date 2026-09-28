@@ -5,7 +5,7 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Kilimo cha Kuruka kwa Askari Mweusi"
 slug: "black-soldier-fly-farming-sw"
 meta_title: "Kilimo cha Ndege cha Askari Mweusi nchini Nigeria na Afrika |GoOrganicAfrica"
-meta_description: "Kilimo cha Black Soldier Fly kinageuza takataka kuwa chakula cha mifugo chenye protini nyingi. Jifunze jinsi wakulima wa Kiafrika wanavyookoa hadi 60% kwa gharama ya malisho kwa kutumia mabuu ya BSF mnamo 2026."
+meta_description: "Kilimo cha Black Soldier Fly kinageuza takataka kuwa chakula cha mifugo chenye protini nyingi. Jifunze jinsi wakulima wa Kiafrika wanavyoweka akiba hadi60%juu ya gharama za malisho kwa kutumia mabuu ya BSF ndani2026."
 description: "Jifunze jinsi ya kufuga mabuu ya askari weusi na kugeuza takataka kuwa malisho yenye protini nyingi kwa kuku, samaki na mifugo barani Afrika."
 tagline: "Badilisha taka za kikaboni kuwa chanzo cha protini nyingi za mifugo na samaki"
 icon: /images/ebooks/black-soldier-fly.jpg

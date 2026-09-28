@@ -5,7 +5,7 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Cultivo de Moscas do Soldado Negro"
 slug: "black-soldier-fly-farming-pt"
 meta_title: "Cultivo de moscas de soldados negros na Nigéria e na África |GoOrganicAfrica"
-meta_description: "A agricultura Black Soldier Fly transforma resíduos orgânicos em ração para gado com alto teor de proteína. Saiba como os agricultores africanos estão a poupar até 60% nos custos de alimentação utilizando larvas de BSF em 2026."
+meta_description: "A agricultura Black Soldier Fly transforma resíduos orgânicos em ração para gado com alto teor de proteína. Saiba como os agricultores africanos estão a poupar até60%sobre os custos de alimentação usando larvas de BSF em2026."
 description: "Aprenda como cultivar larvas de mosca-soldado negro e transformar resíduos orgânicos em alimentos ricos em proteínas para aves, peixes e gado na África."
 tagline: "Transforme resíduos orgânicos em uma fonte de alimentação rica em proteínas para gado e peixes"
 icon: /images/ebooks/black-soldier-fly.jpg

@@ -5,7 +5,7 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Élevage de mouches soldats noirs"
 slug: "black-soldier-fly-farming-fr"
 meta_title: "Élevage de mouches soldats noires au Nigeria et en Afrique |GoOrganicAfrica"
-meta_description: "L’élevage de Black Soldier Fly transforme les déchets organiques en aliments pour bétail riches en protéines. Découvrez comment les agriculteurs africains économisent jusqu'à 60 % sur les coûts d'alimentation en utilisant les larves de BSF en 2026."
+meta_description: "L’élevage de Black Soldier Fly transforme les déchets organiques en aliments pour bétail riches en protéines. Découvrez comment les agriculteurs africains économisent jusqu'à60%sur les coûts d'alimentation utilisant des larves de BSF dans2026."
 description: "Apprenez à élever des larves de mouches soldats noires et à transformer les déchets organiques en aliments riches en protéines pour la volaille, le poisson et le bétail en Afrique."
 tagline: "Transformez les déchets organiques en une source d'aliments riche en protéines pour le bétail et les poissons."
 icon: /images/ebooks/black-soldier-fly.jpg

@@ -5,9 +5,9 @@ permalink: "/ebooks/{{ slug }}/"
 title: "Technique agricole sans mauvaises herbes"
 slug: "weed-free-farming-technique-fr"
 meta_title: "Culture de manioc sans mauvaises herbes au Nigeria |GoOrganicAfrica"
-meta_description: "Découvrez la technique de culture du manioc sans mauvaises herbes qui aide les agriculteurs nigérians à obtenir des rendements élevés en 5 mois sans herbicides. Guide étape par étape, de la préparation du terrain à la récolte."
+meta_description: "Découvrez la technique de culture du manioc sans mauvaises herbes qui aide les agriculteurs nigérians à obtenir des rendements élevés en5mois sans herbicides. Guide étape par étape, de la préparation du terrain à la récolte."
 description: "Apprenez une technique pratique de culture du manioc sans mauvaises herbes pour planter, gérer et récolter le manioc en cinq mois environ sans herbicides."
-tagline: "Un guide de préparation des terres à la récolte sur 5 mois pour un manioc sans mauvaises herbes et sans herbicides"
+tagline: "UN5Guide de préparation des terres d'un mois à la récolte pour un manioc sans mauvaises herbes, sans herbicides"
 icon: /images/ebooks/weed-free-cassava.jpg
 price: 3000
 selar_link: https://selar.com/4c5155
@@ -22,13 +22,13 @@ audience:
   - "Les agriculteurs cherchent à réduire les coûts de main-d’œuvre pour le désherbage"
 benefits:
   - "Préparation du terrain étape par étape jusqu'à la récolte"
-  - "Un guide complet de production de manioc sur 5 mois"
+  - "Un plein5guide de production de manioc d'un mois"
   - "Aucune utilisation d'herbicide requise"
   - "Écrit à partir de recherches réelles et de pratiques de terrain"
 bonus: "Consultation WhatsApp gratuite après l'achat"
 faqs:
   - q: "Que couvre ce guide ?"
-    a: "Il couvre la préparation du sol et un processus de plantation à la récolte de manioc de 5 mois conçu pour lutter contre les mauvaises herbes sans herbicides."
+    a: "Il couvre la préparation du terrain et un5Processus de plantation à la récolte de manioc d'une durée d'un mois conçu pour lutter contre les mauvaises herbes sans herbicides."
   - q: "Ai-je besoin d’herbicides chimiques pour cette méthode ?"
     a: "Non, la technique est construite autour du désherbage sans herbicide."
   - q: "Est-ce uniquement pour le manioc ?"
