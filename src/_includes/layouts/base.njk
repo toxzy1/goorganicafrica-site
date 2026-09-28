@@ -7,7 +7,7 @@
   <meta name="description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
   <meta name="keywords" content="{{ site.seo.default_keywords | join(", " ) }}">
   <meta name="author" content="{{ site.author }}">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{{ "noindex, nofollow" if translation_status == "in_review" else "index, follow" }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {% if translation_group %}
   {% for p in collections.posts %}
