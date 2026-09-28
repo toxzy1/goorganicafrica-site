@@ -33,14 +33,38 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v8-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v9-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
-            goa-translation-cache-v8-${{ github.ref_name }}-
+            goa-translation-cache-v9-${{ github.ref_name }}-
+
+      - name: Restore Argos language-model cache
+        id: argos-cache
+        uses: actions/cache@v5
+        with:
+          path: |
+            ~/.local/share/argos-translate
+            ~/.local/cache/argos-translate
+          key: goa-argos-models-v1-${{ runner.os }}-en-fr-ar-pt-sw
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+
+      - name: Install free offline Argos translation engine
+        env:
+          ARGOS_DEVICE_TYPE: cpu
+          ARGOS_COMPUTE_TYPE: int8_float32
+          ARGOS_BATCH_SIZE: "32"
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install argostranslate
+          argospm update
+          argospm install translate-en_fr
+          argospm install translate-en_ar
+          argospm install translate-en_pt
+          argospm install translate-en_sw
+          argospm list
 
       - name: Generate multilingual drafts
         timeout-minutes: 180
@@ -80,4 +104,4 @@ jobs:
         uses: actions/cache/save@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v8-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v9-${{ github.ref_name }}-${{ github.run_id }}
