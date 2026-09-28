@@ -11,7 +11,7 @@ ROOTS = (Path("src/blog/posts"), Path("src/ebooks"))
 SETTINGS = Path("src/_data/translationSettings.json")
 DEFAULT_LANGUAGES = ("fr", "ar", "pt", "sw")
 CACHE_FILE = Path(".translation-cache.json")
-CACHE_VERSION = "v9"
+CACHE_VERSION = "v10"
 FIELDS = ("title", "description", "meta_title", "meta_description", "tagline", "bonus", "category")
 LISTS = ("audience", "benefits", "search_terms", "keywords")
 
@@ -254,7 +254,18 @@ def _canonical_number(value):
     return value
 
 def numeric_signature(text):
-    return Counter(_canonical_number(v) for v in NUMBER_RE.findall(text))
+    # Compare the actual digit sequences, not punctuation/spacing. This makes
+    # validation language-neutral: 1,200 / 1 200 / ١٬٢٠٠ all resolve to the
+    # same digit sequence, while a genuinely missing or changed number still
+    # fails validation.
+    values = []
+    for value in re.findall(r"\\d+", text):
+        normalized = "".join(
+            str(unicodedata.digit(ch)) if ch.isdigit() else ch
+            for ch in value
+        )
+        values.append(normalized)
+    return Counter(values)
 
 def url_signature(text):
     return Counter(re.findall(r"https?://[^\s)\]<>\"']+", text))
