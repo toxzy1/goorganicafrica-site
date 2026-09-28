@@ -11,12 +11,12 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {% if translation_group %}
   {% for p in collections.posts %}
-    {% if p.data.translation_group == translation_group %}
+    {% if p.data.translation_group == translation_group and p.data.active != false and (p.data.translation_status or "published") != "in_review" %}
   <link rel="alternate" hreflang="{{ p.data.language or 'en' }}" href="{{ site.url }}{{ p.url }}">
     {% endif %}
   {% endfor %}
   {% for ebook in collections.ebooks %}
-    {% if ebook.data.translation_group == translation_group %}
+    {% if ebook.data.translation_group == translation_group and ebook.data.active != false and (ebook.data.translation_status or "published") != "in_review" %}
   <link rel="alternate" hreflang="{{ ebook.data.language or 'en' }}" href="{{ site.url }}{{ ebook.url }}">
     {% endif %}
   {% endfor %}
