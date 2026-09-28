@@ -142,7 +142,11 @@
     };
     ls.onchange=function(){
       state.language=this.value;
-      if (window.GOA_I18N) { window.GOA_I18N.setLanguage(state.language); window.GOA_I18N.refresh(); } else { render(); }
+      var c=currentCountryObj();
+      if (c && c.code) {
+        try { localStorage.setItem("goa_language", state.language); } catch(e) {}
+        window.location.href="/"+String(c.code).toLowerCase()+"/"+state.language+"/farm-profit-calculator/";
+      }
     };
     document.documentElement.lang=state.language; document.documentElement.dir=state.language==="ar"?"rtl":"ltr";
   }
