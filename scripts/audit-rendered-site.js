@@ -60,8 +60,8 @@ for (const [rel, lang] of [["index.html","en"],["fr/index.html","fr"],["ar/index
   const blogPrefix = lang === "en" ? "/blog/" : "/" + lang + "/blog/";
   const ebookLinks = hrefs.filter(h => /\/ebooks\/[^/]+/.test(h));
   const blogLinks = hrefs.filter(h => /\/blog\/[^/]+/.test(h));
-  if (!ebookLinks.length) failures.push(rel + ": no eBook links rendered");
-  if (!blogLinks.length) failures.push(rel + ": no blog links rendered");
+  if (!hrefs.some(h => h === ebookPrefix)) failures.push(rel + ": no eBook section link rendered");
+  if (!hrefs.some(h => h === blogPrefix)) failures.push(rel + ": no blog section link rendered");
   if (ebookLinks.some(h => /\/((fr|ar|pt|sw)\/)?ebooks\//.test(h) && !h.startsWith(ebookPrefix))) failures.push(rel + ": homepage contains eBook links from another language");
   if (blogLinks.some(h => /\/((fr|ar|pt|sw)\/)?blog\//.test(h) && !h.startsWith(blogPrefix))) failures.push(rel + ": homepage contains blog links from another language");
 }
