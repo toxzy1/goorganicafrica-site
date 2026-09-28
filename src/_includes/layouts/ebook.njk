@@ -19,7 +19,7 @@ layout: layouts/base.njk
 }
 {% endset %}
 
-<div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group or slug }}" hidden>{% for ebook in collections.ebooks %}{% if (ebook.data.translation_group or ebook.data.slug) == (translation_group or slug) %}<a data-content-variant data-language="{{ ebook.data.language or 'en' }}" href="{{ ebook.url }}">{{ ebook.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>
+<div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group or slug }}" hidden>{% for ebook in collections.ebooks %}{% if (ebook.data.translation_group or ebook.data.slug) == (translation_group or slug) %}<a data-content-variant data-status="{{ ebook.data.translation_status or 'published' }}" data-language="{{ ebook.data.language or 'en' }}" href="{{ ebook.url }}">{{ ebook.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>
 
 <section class="ebook-detail-hero">
   <div class="container">
@@ -89,7 +89,7 @@ layout: layouts/base.njk
     </div>
     <div class="ebook-grid">
       {% for ebook in collections.ebooks %}
-        {% if ebook.data.slug != slug and (ebook.data.language or 'en') == (language or 'en') %}
+        {% if ebook.data.slug != slug and (ebook.data.language or 'en') == (language or 'en') and (ebook.data.translation_status or 'published') != 'in_review' %}
         <a class="ebook-card content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}">
           <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }}">
           <h3>{{ ebook.data.title }}</h3>
