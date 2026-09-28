@@ -10,7 +10,7 @@
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
   function currentLanguage() {
-    try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
+    try { return document.documentElement.lang || localStorage.getItem("goa_language") || "en"; }
     catch (_) { return document.documentElement.lang || "en"; }
   }
 
@@ -83,6 +83,9 @@
     }
 
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
+    if (path === "/" || /^\/(fr|ar|pt|sw)$/.test(path)) {
+      return code === "en" ? "/" : "/" + code + "/";
+    }
     var localizedMatch = path.match(new RegExp("^/(fr|ar|pt|sw)/(blog|ebooks)(?:/(.*))?$"));
     if (localizedMatch) {
       return code === "en"
@@ -101,7 +104,9 @@
   function updateLocalizedNavigation(code) {
     document.querySelectorAll("[data-localized-section]").forEach(function (link) {
       var section = link.getAttribute("data-localized-section");
-      link.href = code === "en" ? "/" + section + "/" : "/" + code + "/" + section + "/";
+      link.href = section === "home"
+        ? (code === "en" ? "/" : "/" + code + "/")
+        : (code === "en" ? "/" + section + "/" : "/" + code + "/" + section + "/");
     });
   }
 
