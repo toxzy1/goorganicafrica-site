@@ -8,6 +8,7 @@ from pathlib import Path
 ROOTS = (Path("src/blog/posts"), Path("src/ebooks"))
 SETTINGS = Path("src/_data/translationSettings.json")
 DEFAULT_LANGUAGES = ("fr", "ar", "pt", "sw")
+CACHE_FILE = Path(".translation-cache.json")
 FIELDS = ("title", "description", "meta_title", "meta_description", "tagline", "bonus", "category")
 LISTS = ("audience", "benefits", "search_terms", "keywords")
 
@@ -43,29 +44,67 @@ def source_files():
     return sorted(files)
 
 def _google_translate(text, target):
+    import random
     import time
+    from urllib.error import HTTPError
     from urllib.parse import quote
     from urllib.request import Request, urlopen
+
     url = ("https://translate.googleapis.com/translate_a/single"
            "?client=gtx&sl=en&tl=" + quote(target) + "&dt=t&q=" + quote(text))
     last_error = None
-    for attempt in range(3):
+
+    # The free Google endpoint can return 429 when requests arrive too quickly.
+    # Use Retry-After when supplied, otherwise exponential backoff with jitter.
+    for attempt in range(7):
         try:
-            req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
-            with urlopen(req, timeout=30) as response:
+            req = Request(url, headers={
+                "User-Agent": "Mozilla/5.0",
+                "Accept": "application/json,text/plain,*/*",
+            })
+            with urlopen(req, timeout=45) as response:
                 data = json.loads(response.read().decode("utf-8"))
-            result = "".join(part[0] for part in data[0]
-                             if isinstance(part, list) and part and isinstance(part[0], str))
-            if result.strip(): return result
+
+            result = "".join(
+                part[0] for part in data[0]
+                if isinstance(part, list) and part and isinstance(part[0], str)
+            )
+            if result.strip():
+                # Small pacing delay prevents a successful burst from immediately
+                # triggering the next rate limit.
+                time.sleep(0.8)
+                return result
             raise RuntimeError("Google returned an empty translation")
+
+        except HTTPError as exc:
+            last_error = exc
+            retryable = exc.code == 429 or 500 <= exc.code < 600
+            if not retryable or attempt == 6:
+                break
+            retry_after = exc.headers.get("Retry-After")
+            try:
+                delay = float(retry_after) if retry_after else min(90, 5 * (2 ** attempt))
+            except (TypeError, ValueError):
+                delay = min(90, 5 * (2 ** attempt))
+            delay += random.uniform(0.5, 2.0)
+            print(f"Google HTTP {exc.code} for {target}; retrying in {delay:.1f}s...")
+            time.sleep(delay)
+
         except Exception as exc:
             last_error = exc
-            time.sleep(2 ** attempt)
+            if attempt == 6:
+                break
+            delay = min(30, 3 * (2 ** attempt)) + random.uniform(0.5, 1.5)
+            print(f"Google translation error for {target}; retrying in {delay:.1f}s: {exc}")
+            time.sleep(delay)
+
     raise RuntimeError(f"Google translation failed for {target}: {last_error}")
+
 
 def _translate_chunk(chunk, target, cache):
     key = (target, chunk)
-    if key in cache: return cache[key]
+    if key in cache:
+        return cache[key]
     result = _google_translate(chunk, target)
     # A short unchanged result can be a proper noun, acronym or technical term.
     # For a longer unchanged result, retry sentence-by-sentence before preserving it.
@@ -204,9 +243,31 @@ def main():
     if not files or not languages: return
     overwrite = bool(config.get("auto_update_existing_translations", True))
     status = config.get("mark_new_translations", "in_review")
+
+    # Persist successful chunk translations between workflow runs. This is
+    # especially important for the free Google endpoint because a rerun should
+    # not immediately repeat hundreds of already-completed requests.
     cache = {}
+    if CACHE_FILE.exists():
+        try:
+            raw = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+            for key, value in raw.items():
+                target, chunk = key.split("\\n", 1)
+                cache[(target, chunk)] = value
+            print("Loaded cached translations:", len(cache))
+        except Exception as exc:
+            print("Ignoring unreadable translation cache:", exc)
+
+    def save_cache():
+        serialised = {target + "\\n" + chunk: value for (target, chunk), value in cache.items()}
+        tmp = CACHE_FILE.with_suffix(".tmp")
+        tmp.write_text(json.dumps(serialised, ensure_ascii=False), encoding="utf-8")
+        tmp.replace(CACHE_FILE)
+
     for path in files:
-        for target in languages: translate_file(path, target, overwrite, status, cache)
+        for target in languages:
+            translate_file(path, target, overwrite, status, cache)
+            save_cache()
 
 if __name__ == "__main__":
     main()
