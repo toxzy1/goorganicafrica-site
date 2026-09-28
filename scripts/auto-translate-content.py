@@ -165,24 +165,37 @@ def _translate_chunk(chunk, target, cache):
 # French). Structural HTML/URLs are already excluded from translated prose.
 NUMBER_RE = re.compile(r"\d+(?:[\.,]\d+)?")
 BRAND_RE = re.compile(r"GoOrganicAfrica", re.I)
-PLACEHOLDER_RE = re.compile(r"__GOA_(?:NUM|BRAND)_\d+__")
+# Tokens contain letters only so the translation service cannot reinterpret the
+# numeric part of a placeholder as a real number. This is important for all
+# languages, especially Swahili where the service may otherwise alter spacing
+# or punctuation around protected numeric placeholders.
+PLACEHOLDER_RE = re.compile(r"__GOA_(?:NUM|BRAND)_[A-Z]+__")
+
+def _token_id(index):
+    # Spreadsheet-style alphabetic IDs: A..Z, AA..AZ, BA.. etc.
+    value = index
+    token = ""
+    while True:
+        token = chr(65 + (value % 26)) + token
+        value = value // 26 - 1
+        if value < 0:
+            return token
 
 def _protect(text):
     values = []
     def num(m):
-        values.append(m.group(0))
-        return f"__GOA_NUM_{len(values)-1}__"
+        values.append(("NUM", m.group(0)))
+        return f"__GOA_NUM_{_token_id(len(values)-1)}__"
     protected = NUMBER_RE.sub(num, text)
     def brand(m):
-        values.append(m.group(0))
-        return f"__GOA_BRAND_{len(values)-1}__"
+        values.append(("BRAND", m.group(0)))
+        return f"__GOA_BRAND_{_token_id(len(values)-1)}__"
     protected = BRAND_RE.sub(brand, protected)
     return protected, values
 
 def _restore(text, values):
-    for i, value in enumerate(values):
-        text = text.replace(f"__GOA_NUM_{i}__", value)
-        text = text.replace(f"__GOA_BRAND_{i}__", value)
+    for i, (kind, value) in enumerate(values):
+        text = text.replace(f"__GOA_{kind}_{_token_id(i)}__", value)
     return text
 
 def _translate_plain_text(text, target, cache):
