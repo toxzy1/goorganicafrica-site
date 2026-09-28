@@ -189,35 +189,35 @@
     "reasonable": "Bénéfice raisonnable — surveillez ces risques",
     "strong": "Bénéfice projeté solide",
     "breakEvenClose": "Votre prix d’équilibre est proche du prix plancher",
-    "lossBody": "Vos coûts prévus ({cost}) dépassent vos recettes prévues ({revenue}). Avant d’engager des fonds, vérifiez les coûts, le rendement et le prix du marché.",
-    "thinBody": "Un ROI de {roi} % est faible pour l’agriculture. Une baisse du prix ou du rendement pourrait supprimer votre bénéfice ; réduisez les coûts et trouvez de meilleurs acheteurs.",
-    "reasonableBody": "Un ROI de {roi} % est un rendement solide si vos intrants et votre prix de vente restent stables. Surveillez les prix saisonniers et l’inflation des coûts des intrants.",
-    "strongBody": "Un ROI de {roi} % est excellent. Confirmez le résultat à une échelle maîtrisable, sécurisez les acheteurs et conservez des relevés détaillés des coûts.",
-    "breakEvenBody": "Votre prix de vente d’équilibre est de {price}. Le prix de référence bas pour {commodity} est d’environ {low}. Réduisez les coûts ou ciblez des acheteurs prêts à payer davantage si les prix baissent.",
+    "lossBody": "Your projected costs ({cost}) exceed your projected revenue ({revenue}). Before committing funds, review costs, yield and the market price.",
+    "thinBody": "An ROI of {roi}% is low for agriculture. A drop in price or yield could remove your profit; reduce costs and secure better buyers.",
+    "reasonableBody": "An ROI of {roi}% is a solid return if your inputs and selling price hold. Monitor seasonal prices and input-cost inflation.",
+    "strongBody": "An ROI of {roi}% is excellent. Confirm the result at a manageable scale, secure buyers and keep detailed cost records.",
+    "breakEvenBody": "Your break-even selling price is {price}. The reference low-end market price for {commodity} is around {low}. Reduce costs or target premium buyers if prices fall.",
     "tipTomatoTitle": "Conseil pour la tomate",
-    "tipTomatoBody": "Les prix de la tomate sont très saisonniers. Envisagez la production en saison sèche et un transport ou une transformation rapides pour réduire les pertes après récolte.",
+    "tipTomatoBody": "Tomato prices are highly seasonal. Consider dry-season production and rapid transport or processing to reduce post-harvest losses.",
     "tipCucumberTitle": "Conseil pour le concombre",
-    "tipCucumberBody": "Tuteurez les concombres pour améliorer la qualité et réduire les maladies. Les supermarchés urbains, hôtels et restaurants peuvent payer davantage.",
+    "tipCucumberBody": "Stake cucumbers to improve quality and reduce disease. Urban supermarkets, hotels and restaurants can pay a premium.",
     "tipCassavaTitle": "Conseil pour le manioc",
-    "tipCassavaBody": "La transformation peut améliorer la rentabilité du manioc. Une bonne gestion précoce des mauvaises herbes est essentielle pour protéger le rendement.",
+    "tipCassavaBody": "Value addition can improve cassava returns. Early weed management is essential for protecting yield.",
     "tipMaizeTitle": "Conseil pour le maïs",
-    "tipMaizeBody": "Le stockage peut améliorer la rentabilité du maïs après la récolte. Utilisez un stockage sûr pour vendre lorsque les stocks saisonniers diminuent.",
+    "tipMaizeBody": "Storage can improve maize returns after harvest. Use safe storage to sell when seasonal stocks are lower.",
     "tipRiceTitle": "Conseil pour le riz",
-    "tipRiceBody": "La transformation et le classement par qualité peuvent augmenter la valeur du riz. Planifiez le séchage et l’accès au marché avant la récolte.",
+    "tipRiceBody": "Milling and quality grading can increase rice value. Plan drying and market access before harvest.",
     "tipHabaneroTitle": "Conseil pour le piment habanero",
-    "tipHabaneroBody": "Récoltez fréquemment et manipulez les piments avec soin. Sécurisez les acheteurs avant le pic de récolte pour limiter les variations de prix.",
+    "tipHabaneroBody": "Harvest frequently and handle peppers carefully. Secure buyers before peak harvest to manage price swings.",
     "tipBroilerTitle": "Conseil pour les poulets de chair",
-    "tipBroilerBody": "L’aliment est le principal coût. Achetez des poussins fiables, maîtrisez l’alimentation et planifiez les ventes avant que les oiseaux atteignent le poids du marché.",
+    "tipBroilerBody": "Feed is the main cost. Buy reliable chicks, manage feed closely and plan sales before birds reach market weight.",
     "tipLayerTitle": "Conseil pour les poules pondeuses",
-    "tipLayerBody": "Suivez chaque jour la conversion alimentaire et la production d’œufs. Des acheteurs stables et un bon état sanitaire protègent les marges.",
+    "tipLayerBody": "Track feed conversion and egg production daily. Stable buyers and good flock health protect margins.",
     "tipFishTitle": "Conseil pour le poisson-chat",
-    "tipFishBody": "Maîtrisez les pertes d’aliment et la qualité de l’eau. Triez régulièrement les poissons et organisez les acheteurs avant la récolte.",
+    "tipFishBody": "Control feed waste and water quality. Grade fish regularly and arrange buyers before harvest.",
     "tipPigTitle": "Conseil pour l’élevage porcin",
-    "tipPigBody": "La gestion de l’alimentation et la biosécurité sont essentielles à la rentabilité porcine. Maintenez une hygiène et des registres de production stricts.",
+    "tipPigBody": "Feed management and biosecurity are central to pig profitability. Keep strict hygiene and production records.",
     "tipCattleTitle": "Conseil pour l’engraissement bovin",
-    "tipCattleBody": "Achetez des animaux sains et planifiez les ventes pendant les périodes de forte demande. L’efficacité alimentaire détermine la marge.",
+    "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
     "tipGoatTitle": "Conseil pour l’élevage caprin",
-    "tipGoatBody": "Planifiez les ventes pendant les périodes de forte demande et gardez les animaux en bonne santé. Les chèvres adultes peuvent obtenir des prix supérieurs.",
+    "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices.",
     "ebookHeading": "Découvrez le guide agricole complet",
     "costControlTitle": "Maîtrisez vos plus gros coûts",
     "costControlBody": "Examinez d’abord les principales dépenses. L’investissement modélisé est de {cost}. Comparez semences, aliments, engrais, main-d’œuvre, irrigation, transport et pertes après récolte avec les prix locaux, puis réduisez les dépenses évitables sans sacrifier la qualité.",
@@ -276,41 +276,7 @@
     "recommendedGuide": "Guide recommandé",
     "allArticles": "Tous les articles",
     "filedUnder": "Classé dans :",
-    "browseGuides": "Parcourir les guides",
-    "cards": {
-      "bsf": {
-        "title": "Élevage de mouche soldat noire en Afrique",
-        "description": "Transformez les déchets organiques en aliment riche en protéines et réduisez les coûts."
-      },
-      "fodder": {
-        "title": "Culture de fourrage hydroponique en Afrique",
-        "description": "Produisez du fourrage frais en 4 à 8 jours avec très peu d’espace."
-      },
-      "mushroom": {
-        "title": "Culture de pleurotes au Nigeria",
-        "description": "Découvrez la production, la récolte et la commercialisation pratique des pleurotes."
-      },
-      "cassava": {
-        "title": "Culture du manioc sans désherbage au Nigeria",
-        "description": "Une méthode pratique de production du manioc en cinq mois sans herbicides."
-      }
-    },
-    "categories": {
-      "crop": "Production végétale",
-      "livestock": "Élevage",
-      "organic": "Agriculture biologique et régénératrice",
-      "agribusiness": "Agro-industrie et entreprise agricole",
-      "inputs": "Intrants et technologies agricoles",
-      "markets": "Données agricoles et marchés"
-    },
-    "categoryDescriptions": {
-      "crop": "Conseils pratiques sur la production végétale, les pépinières, la plantation et la récolte.",
-      "livestock": "Production animale, alimentation, logement et gestion des élevages.",
-      "organic": "Intrants biologiques, santé des sols et pratiques d’agriculture régénératrice.",
-      "agribusiness": "Rentabilité agricole, marchés, planification des activités et agro-industrie.",
-      "inputs": "Semences, engrais, intrants biologiques, irrigation et technologies agricoles.",
-      "markets": "Prix agricoles, prix des semences, informations de marché et mises à jour des données."
-    }
+    "browseGuides": "Parcourir les guides"
   },
   "ebooks": {
     "eyebrow": "eBooks",
@@ -330,24 +296,97 @@
     "viewGuide": "Voir le guide",
     "askWhatsApp": "Poser une question sur WhatsApp",
     "instantDelivery": "Paiement unique · livraison numérique instantanée",
-    "completeGuide": "Obtenir le guide complet",
-    "cards": {
-      "bsf": {
-        "title": "Élevage de la mouche soldat noire",
-        "tagline": "Transformez les déchets organiques en aliment riche en protéines pour le bétail et les poissons"
-      },
-      "fodder": {
-        "title": "Culture de fourrage hydroponique",
-        "tagline": "Produisez du fourrage frais pour le bétail en 4 à 8 jours, même dans un petit espace"
-      },
-      "mushroom": {
-        "title": "Guide complet de la culture des pleurotes",
-        "tagline": "Une approche pratique et fondée sur la recherche pour cultiver les pleurotes"
-      },
-      "cassava": {
-        "title": "Technique de culture sans désherbage",
-        "tagline": "Guide de cinq mois pour produire du manioc sans herbicides"
-      }
+    "completeGuide": "Obtenir le guide complet"
+  },
+  "static": {
+    "about": {
+      "eyebrow": "À propos de nous",
+      "title": "Des connaissances agricoles pratiques, fondées sur la recherche réelle",
+      "intro": "GoOrganicAfrica repose sur une idée simple : les connaissances agricoles doivent être pratiques, testées et partagées librement en Afrique.",
+      "who": "Qui sommes-nous ?",
+      "whoText": "Les guides et outils de GoOrganicAfrica sont créés par {author} — agriculteur, chercheur agricole et producteur de biofertilisants organiques, titulaire d'un certificat en agriculture depuis 2001. Nos guides et données du Calculateur gratuit de rentabilité agricole reposent sur l'expérience réelle de production et une recherche continue, pas seulement sur la théorie.",
+      "what": "Ce que nous faisons",
+      "whatText": "Au-delà de la recherche et de la rédaction, le travail de GoOrganicAfrica couvre plusieurs produits agricoles biologiques :",
+      "inoc": "InoculumPlus — un biofertilisant organique à base de mycorhizes vendu aux agriculteurs du Nigeria, du Cameroun et du Niger",
+      "organic": "OrganicGrow — une solution biologique pour la volaille, les poissons et autres animaux d'élevage, utilisée par des agriculteurs au Cameroun et en Côte d'Ivoire",
+      "tools": "Nos outils et guides",
+      "toolsIntro": "Nous proposons deux ressources principales aux agriculteurs africains :",
+      "calculator": "Calculateur gratuit de rentabilité agricole",
+      "calculatorText": " — calculez vos coûts de production, revenus attendus, bénéfices, ROI et seuil de rentabilité dans {countries} pays africains et {enterprises} activités agricoles, avec conversion automatique des devises",
+      "guides": "Guides d'agriculture biologique",
+      "guidesText": " — des guides pratiques étape par étape sur le fourrage hydroponique, l'élevage de mouches soldats noires, la culture des pleurotes et la production de manioc sans désherbage",
+      "mission": "Notre mission",
+      "missionText": "Contribuer à rendre l'agriculture au Nigeria, en Afrique et dans le monde plus rentable et plus durable — un guide et un outil pratiques, testés à la ferme, à la fois. Découvrez nos dernières analyses sur le blog agricole GoOrganicAfrica.",
+      "external": "Ressources externes que nous recommandons",
+      "externalText": "Pour les agriculteurs à la recherche de données et de recherches agricoles supplémentaires, nous recommandons :",
+      "fao": "FAO (Organisation des Nations Unies pour l'alimentation et l'agriculture) — statistiques et recherches agricoles mondiales",
+      "iita": "IITA (Institut international d'agriculture tropicale) — recherche agricole et sur les cultures axée sur l'Afrique",
+      "calcBtn": "Essayez le calculateur gratuit",
+      "guidesBtn": "Parcourir les guides agricoles",
+      "contactBtn": "Nous contacter"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Nous contacter",
+      "intro": "Vous avez une question sur un guide avant de l'acheter, besoin d'aide avec le calculateur ou envie de conseils agricoles gratuits ? Contactez-nous directement.",
+      "details": "Coordonnées",
+      "whatsapp": "Discuter sur WhatsApp — consultation agricole gratuite",
+      "help": "Comment pouvons-nous vous aider ?",
+      "help1": "Questions sur nos guides d'agriculture biologique",
+      "help2": "Aide à l'utilisation du Calculateur de rentabilité agricole",
+      "help3": "Conseils sur le fourrage hydroponique, les champignons, l'élevage de BSF ou la production de manioc",
+      "help4": "Informations sur nos produits fertilisants biologiques (InoculumPlus, OrganicGrow)",
+      "help5": "Formation et consultation pour les agriculteurs du Nigeria et d'Afrique",
+      "consult": "Consultation gratuite",
+      "consultText": "Chaque achat de guide comprend une consultation WhatsApp gratuite. Vous pouvez également nous contacter avant l'achat — nous serons heureux de répondre d'abord à vos questions.",
+      "message": "Nous écrire sur WhatsApp",
+      "about": "En savoir plus sur nous"
+    },
+    "privacy": {
+      "eyebrow": "Mentions légales",
+      "title": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : août 2026",
+      "who": "1. Qui sommes-nous ?",
+      "whoText": "GoOrganicAfrica est une plateforme d'éducation agricole et de produits numériques gérée par Amoo Oluwatoyin Owolabi, basée au Nigeria. Ce site propose un Calculateur gratuit de rentabilité agricole, des guides d'agriculture biologique et des articles pour les agriculteurs africains.",
+      "collect": "2. Informations que nous collectons",
+      "collect1": "Le Calculateur de rentabilité agricole stocke votre préférence de pays localement dans votre navigateur (localStorage) afin de mémoriser votre choix. Ces données restent sur votre appareil et ne sont jamais transmises à nos serveurs.",
+      "collect2": "Si vous nous contactez via notre page Contact, WhatsApp ou e-mail, nous recevons votre nom et vos coordonnées uniquement pour répondre à votre demande.",
+      "ads": "3. Google AdSense",
+      "adsText": "Ce site peut afficher des publicités diffusées par Google AdSense. Google utilise des cookies pour diffuser des annonces basées sur les visites précédentes des utilisateurs. Vous pouvez désactiver la publicité personnalisée dans les paramètres publicitaires de Google.",
+      "external": "4. Liens externes",
+      "externalText": "Ce site contient des liens vers Selar (pour l'achat de livres électroniques) et d'autres sites externes. Nous ne sommes pas responsables des pratiques de confidentialité des sites tiers. Les achats via Selar sont régis par ses propres conditions et sa politique de confidentialité.",
+      "cookies": "5. Cookies",
+      "cookiesText": "Nous utilisons uniquement les cookies fonctionnels nécessaires au bon fonctionnement du site. Nous n'utilisons pas de cookies de suivi au-delà de ceux éventuellement placés automatiquement par Google AdSense.",
+      "rights": "6. Vos droits",
+      "rightsText": "Vous pouvez effacer à tout moment le localStorage de votre navigateur pour supprimer les données stockées localement par ce site. Pour demander la suppression des informations que vous nous avez fournies directement, contactez-nous à {email}.",
+      "disclaimer": "7. Avertissement",
+      "disclaimerText": "Tous les calculs du Calculateur sont des estimations et ne constituent pas des conseils financiers, d'investissement ou agricoles. Les résultats réels dépendent du rendement, des prix des intrants, de la météo, des ravageurs, des maladies, de la main-d'œuvre, du transport et du marché. Vérifiez toujours les prix et coûts locaux avant d'investir.",
+      "contact": "8. Contact",
+      "contactText": "Pour toute question relative à la confidentialité, contactez-nous à {email} ou via WhatsApp."
+    },
+    "dataUpdates": {
+      "eyebrow": "Transparence des données",
+      "title": "Sources et mises à jour des données agricoles",
+      "intro": "GoOrganicAfrica est conçu pour actualiser les données agricoles de référence provenant des gouvernements, marchés et agences agricoles pertinentes, tout en soumettant les changements incertains à examen.",
+      "active": "Pays actifs",
+      "enterprises": "Activités agricoles",
+      "records": "Enregistrements de prix par pays",
+      "auto": "Que peut-on mettre à jour automatiquement ?",
+      "auto1": "Prix de vente des produits agricoles provenant de données fiables du marché ou des gouvernements.",
+      "auto2": "Prix des semences, y compris variété, marque, taille du paquet, fournisseur et localisation lorsque la source les fournit.",
+      "auto3": "Prix du bétail et des animaux lorsque des données fiables et lisibles par machine sont disponibles.",
+      "auto4": "Données sur les engrais, aliments, irrigation, main-d'œuvre et autres coûts d'intrants lorsque des sources fiables sont configurées.",
+      "auto5": "Données de taux de change afin que les devises puissent être actualisées indépendamment des hypothèses agronomiques.",
+      "protect": "Comment la publication est protégée",
+      "protectText": "La collecte automatisée ne remplace pas aveuglément les valeurs du calculateur. Le système enregistre la source, la date, l'unité et la zone géographique et peut soumettre les changements à examen. C'est essentiel lorsqu'un fichier gouvernemental modifie ses colonnes, unités ou définitions régionales.",
+      "registry": "Registre actuel des sources",
+      "publisher": "Éditeur",
+      "data": "Données",
+      "country": "Pays",
+      "frequency": "Fréquence",
+      "status": "Statut",
+      "latest": "Dernière période de référence détectée pour le calculateur :",
+      "verify": "Vérifiez toujours les prix auprès des acheteurs, fournisseurs et conditions actuelles du marché avant d'investir."
     }
   }
 }
