@@ -1,0 +1,50 @@
+{
+  "content_governance": {
+    "source_of_truth": "en",
+    "translation_workflow": "review_before_publish",
+    "allowed_statuses": ["draft", "in_review", "published", "archived"],
+    "default_new_content_status": "draft",
+    "default_new_translation_status": "in_review",
+    "allow_unreviewed_publication": false,
+    "allow_translation_overwrite": false,
+    "require_source_content_before_translation": true,
+    "require_translation_review_before_publication": true
+  },
+  "translation_control": {
+    "enabled": true,
+    "automatic_generation": false,
+    "provider_mode": "manual_or_approved_draft_engine",
+    "auto_update_existing_translations": false,
+    "publish_machine_translations_automatically": false,
+    "preserve_reviewed_translations": true,
+    "fallback_to_source_language": true,
+    "target_languages": ["fr", "ar", "pt", "sw"],
+    "review_queue": true,
+    "quality_checks_required": [
+      "frontmatter_integrity",
+      "urls_and_links",
+      "numbers_and_units",
+      "html_markdown_structure",
+      "language_consistency",
+      "no_source_text_leakage"
+    ]
+  },
+  "cms_sustainability": {
+    "translation_memory": true,
+    "glossary_enabled": true,
+    "per_language_glossary": true,
+    "translation_history": true,
+    "audit_log": true,
+    "rollback_supported": true,
+    "bulk_overwrite_requires_confirmation": true,
+    "delete_published_translation_requires_confirmation": true,
+    "new_language_requires_configuration": true
+  },
+  "publishing_safety": {
+    "english_remains_publishable_if_translation_is_missing": true,
+    "missing_translation_behavior": "fallback_to_english",
+    "unreviewed_translation_behavior": "hide_from_language_switcher_and_navigation",
+    "unreviewed_translation_indexing": false,
+    "failed_translation_must_not_block_build": true
+  }
+}
