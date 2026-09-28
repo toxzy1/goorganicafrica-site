@@ -112,7 +112,9 @@
         ? (code === "en" ? "/" : "/" + code + "/")
         : (section === "calculator"
           ? "/farm-profit-calculator/"
-          : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/"));
+          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
+            ? "/" + sectionPath + "/"
+            : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/")));
     });
   }
 
