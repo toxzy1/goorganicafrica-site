@@ -1,10 +1,15 @@
 {
   "enabled": true,
   "source_language": "en",
-  "target_languages": ["fr", "ar", "pt", "sw"],
-  "automatic_generation": true,
+  "target_languages": [
+    "fr",
+    "ar",
+    "pt",
+    "sw"
+  ],
+  "automatic_generation": false,
   "require_review": true,
   "mark_new_translations": "in_review",
   "auto_update_existing_translations": false,
-  "notes": "English is the source of truth. Free Argos Translate may create drafts only when a translation file is missing. Existing translations are protected from automatic overwrite until a reviewed replacement is deliberately approved."
+  "notes": "English is the source of truth. Automatic machine translation is paused so unreviewed machine-generated content cannot be published or overwrite reviewed translations. Existing translations remain protected. New translations should be created and reviewed before publication."
 }
