@@ -58,8 +58,8 @@ for (const [rel, lang] of [["index.html","en"],["fr/index.html","fr"],["ar/index
   const hrefs = [...html.matchAll(/href=["']([^"']+)["']/gi)].map(x => x[1]);
   const ebookPrefix = lang === "en" ? "/ebooks/" : "/" + lang + "/ebooks/";
   const blogPrefix = lang === "en" ? "/blog/" : "/" + lang + "/blog/";
-  const ebookLinks = hrefs.filter(h => h.includes("/ebooks/"));
-  const blogLinks = hrefs.filter(h => h.includes("/blog/"));
+  const ebookLinks = hrefs.filter(h => /\/ebooks\/[^/]+/.test(h));
+  const blogLinks = hrefs.filter(h => /\/blog\/[^/]+/.test(h));
   if (!ebookLinks.length) failures.push(rel + ": no eBook links rendered");
   if (!blogLinks.length) failures.push(rel + ": no blog links rendered");
   if (ebookLinks.some(h => /\/((fr|ar|pt|sw)\/)?ebooks\//.test(h) && !h.startsWith(ebookPrefix))) failures.push(rel + ": homepage contains eBook links from another language");
