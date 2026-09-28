@@ -276,41 +276,7 @@
     "recommendedGuide": "Recommended Guide",
     "allArticles": "All Articles",
     "filedUnder": "Filed under:",
-    "browseGuides": "Browse Guides",
-    "cards": {
-      "bsf": {
-        "title": "Black Soldier Fly Farming in Africa",
-        "description": "Turn organic waste into high-protein livestock feed and cut feed costs."
-      },
-      "fodder": {
-        "title": "Hydroponic Fodder Farming in Africa",
-        "description": "Grow fresh livestock feed in 4–8 days using minimal space."
-      },
-      "mushroom": {
-        "title": "Oyster Mushroom Farming in Nigeria",
-        "description": "Learn practical oyster mushroom production, harvesting and marketing."
-      },
-      "cassava": {
-        "title": "Weed-Free Cassava Farming in Nigeria",
-        "description": "A practical five-month cassava production approach without herbicides."
-      }
-    },
-    "categories": {
-      "crop": "Crop Production",
-      "livestock": "Livestock Farming",
-      "organic": "Organic & Regenerative Farming",
-      "agribusiness": "Agribusiness & Farm Business",
-      "inputs": "Farm Inputs & Technology",
-      "markets": "Agricultural Data & Markets"
-    },
-    "categoryDescriptions": {
-      "crop": "Practical crop production, nursery, planting and harvesting content.",
-      "livestock": "Livestock production, feeding, housing and farm management.",
-      "organic": "Organic inputs, soil health and regenerative farming practices.",
-      "agribusiness": "Farm profitability, markets, enterprise planning and agribusiness.",
-      "inputs": "Seeds, fertilizers, biological inputs, irrigation and farm technology.",
-      "markets": "Agricultural prices, seed prices, market information and data updates."
-    }
+    "browseGuides": "Browse Guides"
   },
   "ebooks": {
     "eyebrow": "eBooks",
@@ -330,24 +296,97 @@
     "viewGuide": "View Guide",
     "askWhatsApp": "Ask a Question on WhatsApp",
     "instantDelivery": "One-time payment · instant digital delivery",
-    "completeGuide": "Get the complete guide",
-    "cards": {
-      "bsf": {
-        "title": "Black Soldier Fly Farming",
-        "tagline": "Turn organic waste into a protein-rich livestock and fish feed source"
-      },
-      "fodder": {
-        "title": "Hydroponic Fodder Farming",
-        "tagline": "Grow fresh livestock feed in 4–8 days, even in a small space"
-      },
-      "mushroom": {
-        "title": "Comprehensive Guide to Oyster Mushroom Farming",
-        "tagline": "A practical, research-based approach to growing oyster mushrooms"
-      },
-      "cassava": {
-        "title": "Weed-Free Farming Technique",
-        "tagline": "A 5-month guide to weed-free cassava without herbicides"
-      }
+    "completeGuide": "Get the complete guide"
+  },
+  "static": {
+    "about": {
+      "eyebrow": "About Us",
+      "title": "Practical Farming Knowledge, Rooted in Real Research",
+      "intro": "GoOrganicAfrica is built around one simple idea: farming knowledge should be practical, tested, and shared freely across Africa.",
+      "who": "Who We Are",
+      "whoText": "GoOrganicAfrica's guides and tools are built by {author} — a farmer, agricultural researcher, and organic bio-fertilizer producer holding a certificate in Agriculture since 2001. Every guide and every data point in our free Farm Profit Calculator comes from real production experience and continuous agricultural research, not theory alone.",
+      "what": "What We Do",
+      "whatText": "Beyond research and writing, the work behind GoOrganicAfrica spans several organic agricultural products:",
+      "inoc": "InoculumPlus — a Mycorrhiza-based organic bio-fertilizer sold to farmers across Nigeria, Cameroon and Niger Republic",
+      "organic": "OrganicGrow — an organic solution for poultry, fish and other livestock that has reached farmers in Cameroon and Ivory Coast",
+      "tools": "Our Tools and Guides",
+      "toolsIntro": "We provide two core resources for African farmers:",
+      "calculator": "Free Farm Profit Calculator",
+      "calculatorText": " — calculate your cost of production, expected revenue, profit, ROI and break-even point across {countries} African countries and {enterprises} farming enterprises, with automatic currency switching",
+      "guides": "Organic Farming Guides",
+      "guidesText": " — step-by-step practical guides on hydroponic fodder farming, black soldier fly farming, oyster mushroom farming and weed-free cassava production",
+      "mission": "Our Mission",
+      "missionText": "To help make farming across Nigeria, Africa and the wider world more profitable and more sustainable — one practical, farm-tested guide and tool at a time. Read our latest insights on the GoOrganicAfrica farming blog.",
+      "external": "External Resources We Trust",
+      "externalText": "For farmers seeking additional agricultural data and research, we recommend:",
+      "fao": "FAO (Food and Agriculture Organization of the United Nations) — global agricultural statistics and research",
+      "iita": "IITA (International Institute of Tropical Agriculture) — Africa-focused crop and farming research",
+      "calcBtn": "Try the Free Calculator",
+      "guidesBtn": "Browse Farming Guides",
+      "contactBtn": "Contact Us"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Get In Touch",
+      "intro": "Have a question about a guide before you buy, need help using the calculator, or want free farming advice? Reach out directly.",
+      "details": "Contact Details",
+      "whatsapp": "Chat on WhatsApp — free farming consultation",
+      "help": "What Can We Help You With?",
+      "help1": "Questions about any of our organic farming guides",
+      "help2": "Help using the Farm Profit Calculator",
+      "help3": "Advice on hydroponic fodder, mushroom farming, BSF farming or cassava production",
+      "help4": "Information about our organic fertilizer products (InoculumPlus, OrganicGrow)",
+      "help5": "Training and consultation for farmers across Nigeria and Africa",
+      "consult": "Free Consultation",
+      "consultText": "Every guide purchase includes a free WhatsApp consultation. You can also reach out before purchasing — we are happy to answer your questions first.",
+      "message": "Message Us on WhatsApp",
+      "about": "Learn More About Us"
+    },
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "updated": "Last updated: August 2026",
+      "who": "1. Who We Are",
+      "whoText": "GoOrganicAfrica is an agricultural education and digital product platform operated by Amoo Oluwatoyin Owolabi, based in Nigeria. This website provides a free Farm Profit Calculator, organic farming guides and blog content for farmers across Africa.",
+      "collect": "2. Information We Collect",
+      "collect1": "The Farm Profit Calculator stores your country preference locally in your browser (localStorage) so the site remembers your selection on future visits. This data is stored only on your own device and is never transmitted to our servers.",
+      "collect2": "If you contact us via our Contact page, WhatsApp or email, we receive your name and contact details solely for the purpose of responding to your inquiry.",
+      "ads": "3. Google AdSense",
+      "adsText": "This website may display advertisements served by Google AdSense. Google uses cookies to serve ads based on users' prior visits to this and other websites. You can opt out of personalized advertising by visiting Google's Ads Settings.",
+      "external": "4. External Links",
+      "externalText": "This site contains links to Selar (for ebook purchases) and other external sites. We are not responsible for the privacy practices of third-party websites. Purchases made through Selar are governed by Selar's own terms and privacy policy.",
+      "cookies": "5. Cookies",
+      "cookiesText": "We use only functional cookies necessary for the site to work correctly. We do not use tracking cookies beyond any automatically placed by Google AdSense.",
+      "rights": "6. Your Rights",
+      "rightsText": "You may clear your browser's localStorage at any time to remove any data stored locally by this site. To request deletion of any information you have provided to us directly, contact us at {email}.",
+      "disclaimer": "7. Disclaimer",
+      "disclaimerText": "All calculations provided by the Farm Profit Calculator are estimates only and do not constitute financial, investment or agricultural advice. Actual farm performance depends on many variables including yield, input prices, weather, pests, diseases, labour, transportation and market conditions. Always verify local prices and costs before making investment decisions.",
+      "contact": "8. Contact",
+      "contactText": "For any privacy-related questions, contact us at {email} or via WhatsApp."
+    },
+    "dataUpdates": {
+      "eyebrow": "Data Transparency",
+      "title": "Agricultural Data Sources & Updates",
+      "intro": "GoOrganicAfrica is designed to refresh agricultural reference data from government, market and relevant agricultural-agency sources while keeping uncertain changes under review.",
+      "active": "Active countries",
+      "enterprises": "Farming enterprises",
+      "records": "Country price records",
+      "auto": "What can be updated automatically?",
+      "auto1": "Commodity selling prices from reliable market or government datasets.",
+      "auto2": "Seed prices, including variety, brand, pack size, supplier and location where the source provides them.",
+      "auto3": "Livestock and animal market prices where trustworthy machine-readable data is available.",
+      "auto4": "Fertilizer, feed, irrigation, labour and other input-cost datasets where reliable sources are configured.",
+      "auto5": "Exchange-rate data so currencies can be refreshed independently of agronomic assumptions.",
+      "protect": "How publishing is protected",
+      "protectText": "Automated collection does not mean blindly replacing calculator values. The update system records the source, date, unit and geography and can send changes for review. This is especially important when a government spreadsheet changes columns, units or regional definitions.",
+      "registry": "Current source registry",
+      "publisher": "Publisher",
+      "data": "Data",
+      "country": "Country",
+      "frequency": "Frequency",
+      "status": "Status",
+      "latest": "Latest calculator reference period detected:",
+      "verify": "Always verify prices with local buyers, suppliers and current market conditions before investing."
     }
   }
 }
