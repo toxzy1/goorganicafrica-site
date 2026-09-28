@@ -1,4 +1,5 @@
 name: Build and Validate Site
+# End-to-end build validation for every main deployment.
 
 on:
   push:
