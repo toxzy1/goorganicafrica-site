@@ -26,6 +26,7 @@
       var preferred = variants.find(function (item) {
         var slug = item.getAttribute("data-content-slug") || "";
         var match = slug.match(/^(.*)-(fr|ar|pt|sw)$/);
+        if ((item.getAttribute("data-content-status") || "published") === "in_review") return false;
         return (item.getAttribute("data-content-language") || (match ? match[2] : "en")) === language;
       }) || variants.find(function (item) {
         var slug = item.getAttribute("data-content-slug") || "";
@@ -48,6 +49,7 @@
 
     var variants = Array.prototype.slice.call(map.querySelectorAll("[data-content-variant]"));
     var target = variants.find(function (item) {
+      if ((item.getAttribute("data-status") || "published") === "in_review") return false;
       return (item.getAttribute("data-language") || "en") === language;
     });
 
