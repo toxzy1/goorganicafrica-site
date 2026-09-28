@@ -77,6 +77,11 @@
   }
 
   function localizedContentUrl(code) {
+    var translatedLink = document.querySelector('.translation-links a[data-language="' + code + '"]');
+    if (translatedLink && translatedLink.getAttribute("href")) {
+      return translatedLink.getAttribute("href");
+    }
+
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
     var localizedMatch = path.match(new RegExp("^/(fr|ar|pt|sw)/(blog|ebooks)(?:/(.*))?$"));
     if (localizedMatch) {
