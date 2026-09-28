@@ -36,7 +36,7 @@ layout: layouts/base.njk
     <!-- Breadcrumb for SEO -->
     <nav aria-label="Breadcrumb" style="font-size:0.85rem;color:var(--ink-soft);margin-bottom:16px;">
       <a href="/" style="color:var(--soil);text-decoration:none;" data-i18n="common.home">Home</a> /
-      <a href="/blog/" style="color:var(--soil);text-decoration:none;" data-i18n="common.blog">Blog</a> /
+      <a data-localized-section="blog" href="{% if language == 'en' %}/blog/{% else %}/{{ language }}/blog/{% endif %}" style="color:var(--soil);text-decoration:none;" data-i18n="common.blog">Blog</a> /
       <span>{{ category }}</span>
     </nav>
 
@@ -54,7 +54,14 @@ layout: layouts/base.njk
       {% endfor %}
     </div>
     {% endif %}
-    <div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group }}" hidden>{% for p in collections.posts %}{% if p.data.translation_group == translation_group %}<a data-content-variant data-content-status="{{ p.data.translation_status or 'published' }}" data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}">{{ p.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>
+    <div class="translation-links" aria-label="Available article languages">
+      <strong data-i18n="blog.language">Language:</strong>
+      {% for p in collections.posts %}
+        {% if p.data.translation_group == translation_group and (p.data.translation_status or 'published') != 'in_review' %}
+          <a data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}" hreflang="{{ p.data.language or 'en' }}">{{ p.data.language or 'en' }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
 
     <!-- Article meta -->
     <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:12px 0 24px;font-size:0.82rem;color:var(--ink-soft);">
@@ -114,10 +121,9 @@ layout: layouts/base.njk
       <p class="lede" data-i18n="blog.relatedDescription">Step-by-step organic farming guides written from real research and farm experience across Nigeria and Africa.</p>
     </div>
     <div class="ebook-grid">
-      {% for ebook in collections.ebooks %}
-      <a class="ebook-card content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}">
-        <img class="ebook-card-icon" src="{{ ebook.data.icon }}"
-          alt="{{ ebook.data.title }}">
+      {% for ebook in collections.ebooks | filterByLanguage(language or 'en') %}
+      <a class="ebook-card" href="{{ ebook.url }}">
+        <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }}">
         <h3>{{ ebook.data.title }}</h3>
         <p class="tagline">{{ ebook.data.tagline }}</p>
         <div class="card-footer">
