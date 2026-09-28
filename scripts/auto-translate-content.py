@@ -317,11 +317,24 @@ def quality_check(source, translated, path, target):
         for m in re.finditer(r"(?<!\d)(\d+)(?:st|nd|rd|th)\b", source_visible, flags=re.I)
     )
 
+    # Accept common localized ordinal spellings produced by the target
+    # language. This is intentionally target-aware so ordinary corruption such
+    # as 2024et or 300tonnes is still rejected.
+    localized_ordinal_patterns = {
+        "fr": r"^\d+(?:e|er)$",
+        "pt": r"^\d+(?:o|a|º|ª)$",
+        "sw": r"^\d+(?:\w+)?$",
+        "ar": r"^\d+(?:م|ة|ـ)?$",
+    }
+
     def is_allowed_localized_ordinal(fragment):
         if not fragment or not fragment[0].isdigit():
             return False
         m = re.match(r"(\d+)", fragment)
-        return bool(m and int(m.group(1)) in source_ordinals)
+        if not m or int(m.group(1)) not in source_ordinals:
+            return False
+        pattern = localized_ordinal_patterns.get(target)
+        return bool(pattern and re.fullmatch(pattern, fragment, flags=re.I))
 
     bad = [
         x for x in translated_compact
