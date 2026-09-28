@@ -43,7 +43,7 @@
           {% if post.data.featured_image %}
           <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" style="width:100%;height:180px;object-fit:cover;border-radius:4px;">
           {% endif %}
-          <span class="eyebrow" style="font-size:0.68rem;" data-i18n="blog.categories.{{ postCategoryKey }}">{{ post.data.category }}</span>
+          <span class="eyebrow" style="font-size:0.68rem;">{{ post.data.category }}</span>
           <h3 style="font-size:1.05rem;">{{ post.data.title }}</h3>
           <p class="tagline" style="font-size:0.88rem;">{{ post.data.description }}</p>
           <div class="card-footer">
