@@ -128,7 +128,7 @@ def _translate_chunk(chunk, target, cache):
     key = (CACHE_VERSION, target, chunk)
     if key in cache:
         return cache[key]
-    result = _google_translate(chunk, target)
+    result = _argos_translate(chunk, target)
     if result.strip() == chunk.strip() and len(chunk.strip()) > 120:
         sentences = re.split(r"(?<=[.!?])\s+", chunk.strip())
         if len(sentences) > 1:
@@ -297,13 +297,13 @@ def quality_check(source, translated, path, target):
     # numeric ordinal values even though the following letters/symbols differ.
     source_ordinals = set(
         int(m.group(1))
-        for m in re.finditer(r"(?<!\\d)(\\d+)(?:st|nd|rd|th)\\b", source_visible, flags=re.I)
+        for m in re.finditer(r"(?<!\d)(\d+)(?:st|nd|rd|th)\b", source_visible, flags=re.I)
     )
 
     def is_allowed_localized_ordinal(fragment):
         if not fragment or not fragment[0].isdigit():
             return False
-        m = re.match(r"(\\d+)", fragment)
+        m = re.match(r"(\d+)", fragment)
         return bool(m and int(m.group(1)) in source_ordinals)
 
     bad = [
