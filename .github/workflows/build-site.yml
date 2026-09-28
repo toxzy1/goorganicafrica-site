@@ -31,3 +31,6 @@ jobs:
 
       - name: Run site architecture checks
         run: npm run check
+
+      - name: Audit rendered pages for duplicate and mixed-language content
+        run: npm run audit:rendered
