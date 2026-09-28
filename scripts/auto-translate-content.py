@@ -259,7 +259,13 @@ def url_signature(text):
     return Counter(re.findall(r"https?://[^\s)\]<>\"']+", text))
 
 def tag_signature(text):
-    return Counter(re.findall(r"</?[A-Za-z][^>]*>", text))
+    # Compare HTML tag structure (name + open/close state), not the full
+    # attribute text. HTML attributes are protected from translation, while
+    # whitespace/quote normalization must not make a valid translation fail.
+    return Counter(
+        (closing, name.lower())
+        for closing, name in re.findall(r"<(/?)([A-Za-z][A-Za-z0-9:-]*)\\b[^>]*>", text)
+    )
 
 def quality_check(source, translated, path, target):
     for artifact in BAD_ARTIFACTS:
