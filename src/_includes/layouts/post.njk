@@ -114,7 +114,7 @@ layout: layouts/base.njk
       {% for ebook in collections.ebooks %}
       <a class="ebook-card content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}">
         <img class="ebook-card-icon" src="{{ ebook.data.icon }}"
-          alt="{{ ebook.data.title }} farming guide cover">
+          alt="{{ ebook.data.title }}">
         <h3>{{ ebook.data.title }}</h3>
         <p class="tagline">{{ ebook.data.tagline }}</p>
         <div class="card-footer">
