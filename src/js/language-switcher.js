@@ -77,7 +77,7 @@
   }
 
   function localizedContentUrl(code) {
-    var path = window.location.pathname.replace(/\\/+$/, "") || "/";
+    var path = window.location.pathname.replace(/\/+$/, "") || "/";
     var localizedMatch = path.match(new RegExp("^/(fr|ar|pt|sw)/(blog|ebooks)(?:/(.*))?$"));
     if (localizedMatch) {
       return code === "en"
