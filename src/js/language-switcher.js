@@ -77,32 +77,26 @@
   }
 
   function localizedContentUrl(code) {
+    // Content pages publish an explicit, server-generated language map.
+    // Never derive or guess article/eBook destinations from the current URL.
+    var map = document.getElementById("goa-language-targets");
+    if (map) {
+      var target = map.getAttribute("data-url-" + code);
+      return target || null;
+    }
+
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
 
     // Static pages intentionally keep one shared URL; only their text changes.
-    if (/^\/(about|contact|privacy-policy|data-updates)\/?$/.test(path)) {
-      return path;
-    }
+    if (/^\/(about|contact|privacy-policy|data-updates)\/?$/.test(path)) return path;
 
-    // Home page keeps the language prefix.
+    // Home page is the only remaining case where a language prefix is derived.
     if (path === "/" || /^\/(fr|ar|pt|sw)$/.test(path)) {
       return code === "en" ? "/" : "/" + code + "/";
     }
 
-    // Blog and eBook pages use the same slug in every language.
-    var localizedMatch = path.match(/^\/(fr|ar|pt|sw)\/(blog|ebooks)(?:\/(.*))?$/);
-    if (localizedMatch) {
-      return code === "en"
-        ? "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/")
-        : "/" + code + "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/");
-    }
-
-    var englishMatch = path.match(/^\/(blog|ebooks)(?:\/(.*))?$/);
-    if (englishMatch) {
-      return code === "en"
-        ? "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/")
-        : "/" + code + "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/");
-    }
+    // Shared pages (such as the calculator) stay on the same URL.
+    if (path === "/farm-profit-calculator") return "/farm-profit-calculator/";
 
     return null;
   }
