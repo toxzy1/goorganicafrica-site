@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
@@ -141,7 +142,7 @@ def _translate_chunk(chunk, target, cache):
 # after translation by numeric_signature(). Earlier placeholder schemes caused
 # Swahili and other languages to lose or alter numbers, so numbers are no
 # longer replaced with artificial tokens.
-NUMBER_RE = re.compile(r"\d[\d\s]*(?:[\.,]\d+)?")
+NUMBER_RE = re.compile(r"\d[\d\s\u00A0\u066B\u066C,\.]*")
 BRAND_RE = re.compile(r"GoOrganicAfrica", re.I)
 
 def _protect(text):
@@ -233,6 +234,11 @@ def _canonical_number(value):
     # and decimal comma/dot forms such as 0.73 / 0,73. The comparison is
     # about numeric value, not the punctuation convention used by a language.
     value = value.strip().replace("\u00a0", "").replace(" ", "")
+    # Normalize Arabic-Indic/Persian and other Unicode decimal digits to ASCII
+    # so 1,200 and ١٬٢٠٠ are treated as the same numeric value.
+    value = "".join(str(unicodedata.digit(ch)) if ch.isdigit() else ch for ch in value)
+    # Normalize Arabic decimal/thousands separators.
+    value = value.replace("\u066B", ".").replace("\u066C", ",")
     if "," in value and "." in value:
         # Last separator is the decimal separator when both are present.
         if value.rfind(",") > value.rfind("."):
