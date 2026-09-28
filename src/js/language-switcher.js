@@ -76,6 +76,28 @@
     return code;
   }
 
+  function localizedContentUrl(code) {
+    var path = window.location.pathname.replace(/\\/+$/, "") || "/";
+    var match = path.match(/^\\/(fr|ar|pt|sw)\\/(blog|ebooks)(?:\\/(.*))?$/);
+    if (!match) {
+      match = path.match(/^\\/(blog|ebooks)(?:\\/(.*))?$/);
+      if (!match) return null;
+      return code === "en"
+        ? "/" + match[1] + (match[2] ? "/" + match[2] + "/" : "/")
+        : "/" + code + "/" + match[1] + (match[2] ? "/" + match[2] + "/" : "/");
+    }
+    return code === "en"
+      ? "/" + match[2] + (match[3] ? "/" + match[3] + "/" : "/")
+      : "/" + code + "/" + match[2] + (match[3] ? "/" + match[3] + "/" : "/");
+  }
+
+  function updateLocalizedNavigation(code) {
+    document.querySelectorAll("[data-localized-section]").forEach(function (link) {
+      var section = link.getAttribute("data-localized-section");
+      link.href = code === "en" ? "/" + section + "/" : "/" + code + "/" + section + "/";
+    });
+  }
+
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
@@ -109,6 +131,7 @@
         meta.setAttribute("content", homeDescription);
       }
 
+      updateLocalizedNavigation(code);
       var selector = document.getElementById("site-language-select");
       if (selector) selector.value = code;
       document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } }));
@@ -138,7 +161,13 @@
         selector.appendChild(option);
       });
       selector.addEventListener("change", function () {
-        setLanguage(this.value);
+        var requested = this.value;
+        var targetUrl = localizedContentUrl(requested);
+        setLanguage(requested);
+        if (targetUrl) {
+          window.location.assign(targetUrl);
+          return;
+        }
         refresh();
       });
     }
