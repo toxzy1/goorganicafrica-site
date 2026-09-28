@@ -128,7 +128,7 @@ permalink: "/"
       <p class="lede" data-i18n="home.ebooksDescription">Practical, step-by-step agricultural eBooks — written from real research and farm experience.</p>
     </div>
     <div class="ebook-grid" id="homepage-ebook-results">
-      {% for ebook in collections.ebooks %}
+      {% for ebook in collections.ebooks | filterByLanguage("en") %}
       <a class="ebook-card content-variant" href="{{ ebook.url }}"
          data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}"
          data-content-language="{{ ebook.data.language or 'en' }}"
@@ -163,7 +163,7 @@ permalink: "/"
     <div style="flex:1;min-width:220px;">
       <div class="trust-strip" style="grid-template-columns:repeat(2,1fr);">
         <div class="trust-item">
-          <span class="num">{{ collections.ebooks.length }}</span>
+          <span class="num">{{ (collections.ebooks | filterByLanguage("en")).length }}</span>
           <span class="label" data-i18n="home.ebooksEyebrow">eBooks</span>
         </div>
         <div class="trust-item">
@@ -191,9 +191,9 @@ permalink: "/"
       <h2 data-i18n="home.blogTitle">Farming Insights & Market Analysis</h2>
       <p class="lede" data-i18n="home.blogDescription">Practical articles across {{ collections.blogCategories | length }} categories — written to help African farmers make better decisions.</p>
     </div>
-    {% if collections.posts.length > 0 %}
+    {% if (collections.posts | filterByLanguage("en")).length > 0 %}
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
-      {% for post in collections.posts | slice(0, 4) %}
+      {% for post in collections.posts | filterByLanguage("en") | slice(0, 4) %}
       <a href="{{ post.url }}" class="content-variant"
          data-content-group="{{ post.data.translation_group or post.data.slug }}"
          data-content-language="{{ post.data.language or 'en' }}"
