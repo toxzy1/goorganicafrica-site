@@ -160,9 +160,10 @@ def _translate_chunk(chunk, target, cache):
 # Protect numbers themselves, but NEVER protect English unit words such as
 # "days", "weeks", "hours", or "tonnes". The translation engine must translate
 # those words naturally in every target language.
-NUMBER_RE = re.compile(
-    r"(?<![A-Za-z])(?:\d{1,3}(?:[,\. ]\d{3})+|\d+(?:[\.,]\d+)?)"
-)
+# Match numeric values wherever they occur, including when translation places
+# them directly beside a word (for example "60%na" in Swahili or "60%et" in
+# French). Structural HTML/URLs are already excluded from translated prose.
+NUMBER_RE = re.compile(r"\d+(?:[\.,]\d+)?")
 BRAND_RE = re.compile(r"GoOrganicAfrica", re.I)
 PLACEHOLDER_RE = re.compile(r"__GOA_(?:NUM|BRAND)_\d+__")
 
