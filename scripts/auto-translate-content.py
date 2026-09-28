@@ -264,7 +264,7 @@ def tag_signature(text):
     # whitespace/quote normalization must not make a valid translation fail.
     return Counter(
         (closing, name.lower())
-        for closing, name in re.findall(r"<(/?)([A-Za-z][A-Za-z0-9:-]*)\\b[^>]*>", text)
+        for closing, name in re.findall(r"<(/?)([A-Za-z][A-Za-z0-9:-]*)\b[^>]*>", text)
     )
 
 def quality_check(source, translated, path, target):
