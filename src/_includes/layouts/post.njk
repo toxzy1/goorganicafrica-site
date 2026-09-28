@@ -81,7 +81,10 @@ layout: layouts/base.njk
     </div>
 
     {% if show_ebook_cta and related_ebook_slug %}
-      {% set relatedEbook = collections.ebooks | findByDataSlug(related_ebook_slug) %}
+      {% set relatedEbook = collections.ebooks | findByDataSlugAndLanguage(related_ebook_slug, language or 'en') %}
+      {% if not relatedEbook %}
+        {% set relatedEbook = collections.ebooks | findByDataSlugAndLanguage(related_ebook_slug, 'en') %}
+      {% endif %}
       {% if relatedEbook %}
       <div style="margin-top:32px;padding:24px;border:1px solid var(--line);border-radius:12px;background:var(--sage-light);">
         <span class="eyebrow" data-i18n="blog.recommendedGuide">Recommended Guide</span>
