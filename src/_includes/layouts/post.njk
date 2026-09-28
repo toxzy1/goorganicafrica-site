@@ -93,9 +93,9 @@ layout: layouts/base.njk
 
     <!-- Internal navigation -->
     <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);">
-      <a class="btn btn-outline btn-sm" href="/blog/"><span data-i18n="blog.allArticles">&larr; All Articles</span></a>
+      <a class="btn btn-outline btn-sm" data-localized-section="blog" href="{% if language == "en" %}/blog/{% else %}/{{ language }}/blog/{% endif %}"><span data-i18n="blog.allArticles">&larr; All Articles</span></a>
       <a class="btn btn-primary btn-sm" href="/farm-profit-calculator/" data-i18n="blog.tryCalculator">Try Farm Profit Calculator</a>
-      <a class="btn btn-outline btn-sm" href="/ebooks/" data-i18n="blog.browseGuides">Browse Guides</a>
+      <a class="btn btn-outline btn-sm" data-localized-section="ebooks" href="{% if language == "en" %}/ebooks/{% else %}/{{ language }}/ebooks/{% endif %}" data-i18n="blog.browseGuides">Browse Guides</a>
     </div>
 
   </div>
