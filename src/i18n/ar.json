@@ -189,35 +189,35 @@
     "reasonable": "ربح معقول — راقب هذه المخاطر",
     "strong": "ربح متوقع قوي",
     "breakEvenClose": "سعر التعادل قريب من سعر السوق الأدنى",
-    "lossBody": "تتجاوز تكاليفك المتوقعة ({cost}) إيراداتك المتوقعة ({revenue}). قبل استثمار الأموال، راجع التكاليف والإنتاجية وسعر السوق.",
-    "thinBody": "عائد الاستثمار بنسبة {roi}% منخفض للزراعة. قد يؤدي انخفاض السعر أو الإنتاجية إلى إلغاء الربح؛ خفّض التكاليف وابحث عن مشترين أفضل.",
-    "reasonableBody": "عائد الاستثمار بنسبة {roi}% جيد إذا حافظت المدخلات وسعر البيع على مستوياتهما. راقب الأسعار الموسمية وارتفاع تكاليف المدخلات.",
-    "strongBody": "عائد الاستثمار بنسبة {roi}% ممتاز. أكد النتيجة على نطاق يمكن التحكم فيه، وأمّن المشترين واحتفظ بسجلات دقيقة للتكاليف.",
-    "breakEvenBody": "سعر البيع عند نقطة التعادل هو {price}. ويبلغ السعر المرجعي المنخفض لـ{commodity} نحو {low}. خفّض التكاليف أو استهدف مشترين يدفعون سعراً أعلى إذا انخفضت الأسعار.",
+    "lossBody": "Your projected costs ({cost}) exceed your projected revenue ({revenue}). Before committing funds, review costs, yield and the market price.",
+    "thinBody": "An ROI of {roi}% is low for agriculture. A drop in price or yield could remove your profit; reduce costs and secure better buyers.",
+    "reasonableBody": "An ROI of {roi}% is a solid return if your inputs and selling price hold. Monitor seasonal prices and input-cost inflation.",
+    "strongBody": "An ROI of {roi}% is excellent. Confirm the result at a manageable scale, secure buyers and keep detailed cost records.",
+    "breakEvenBody": "Your break-even selling price is {price}. The reference low-end market price for {commodity} is around {low}. Reduce costs or target premium buyers if prices fall.",
     "tipTomatoTitle": "نصيحة لزراعة الطماطم",
-    "tipTomatoBody": "أسعار الطماطم موسمية بدرجة كبيرة. فكّر في الإنتاج خلال الموسم الجاف والنقل أو التصنيع السريع لتقليل خسائر ما بعد الحصاد.",
+    "tipTomatoBody": "Tomato prices are highly seasonal. Consider dry-season production and rapid transport or processing to reduce post-harvest losses.",
     "tipCucumberTitle": "نصيحة لزراعة الخيار",
-    "tipCucumberBody": "ادعم نباتات الخيار لتحسين الجودة وتقليل الأمراض. قد تدفع المتاجر الكبرى والفنادق والمطاعم في المدن سعراً أعلى.",
+    "tipCucumberBody": "Stake cucumbers to improve quality and reduce disease. Urban supermarkets, hotels and restaurants can pay a premium.",
     "tipCassavaTitle": "نصيحة لزراعة الكسافا",
-    "tipCassavaBody": "يمكن أن تزيد القيمة المضافة من عائدات الكسافا. وتعد مكافحة الأعشاب الضارة مبكراً ضرورية لحماية الإنتاجية.",
+    "tipCassavaBody": "Value addition can improve cassava returns. Early weed management is essential for protecting yield.",
     "tipMaizeTitle": "نصيحة لزراعة الذرة",
-    "tipMaizeBody": "يمكن أن يحسن التخزين عائدات الذرة بعد الحصاد. استخدم تخزيناً آمناً للبيع عندما تنخفض المخزونات الموسمية.",
+    "tipMaizeBody": "Storage can improve maize returns after harvest. Use safe storage to sell when seasonal stocks are lower.",
     "tipRiceTitle": "نصيحة لزراعة الأرز",
-    "tipRiceBody": "يمكن أن تزيد عملية الطحن وتصنيف الجودة من قيمة الأرز. خطط للتجفيف والوصول إلى السوق قبل الحصاد.",
+    "tipRiceBody": "Milling and quality grading can increase rice value. Plan drying and market access before harvest.",
     "tipHabaneroTitle": "نصيحة لزراعة فلفل هابانيرو",
-    "tipHabaneroBody": "احصد الفلفل بشكل متكرر وتعامل معه بعناية. أمّن المشترين قبل ذروة الحصاد للحد من تقلبات الأسعار.",
+    "tipHabaneroBody": "Harvest frequently and handle peppers carefully. Secure buyers before peak harvest to manage price swings.",
     "tipBroilerTitle": "نصيحة لتربية دجاج اللحم",
-    "tipBroilerBody": "العلف هو التكلفة الرئيسية. اشترِ كتاكيت موثوقة، وأدر العلف بدقة، وخطط للبيع قبل وصول الطيور إلى وزن السوق.",
+    "tipBroilerBody": "Feed is the main cost. Buy reliable chicks, manage feed closely and plan sales before birds reach market weight.",
     "tipLayerTitle": "نصيحة لتربية الدجاج البياض",
-    "tipLayerBody": "تابع معامل تحويل العلف وإنتاج البيض يومياً. المشترون المستقرون وصحة القطيع الجيدة يحافظان على الهوامش.",
+    "tipLayerBody": "Track feed conversion and egg production daily. Stable buyers and good flock health protect margins.",
     "tipFishTitle": "نصيحة لتربية سمك السلور",
-    "tipFishBody": "سيطر على هدر العلف وجودة المياه. صنّف الأسماك بانتظام ورتب المشترين قبل الحصاد.",
+    "tipFishBody": "Control feed waste and water quality. Grade fish regularly and arrange buyers before harvest.",
     "tipPigTitle": "نصيحة لتربية الخنازير",
-    "tipPigBody": "إدارة العلف والأمن الحيوي أساسيان لربحية تربية الخنازير. حافظ على النظافة الصارمة وسجلات الإنتاج.",
+    "tipPigBody": "Feed management and biosecurity are central to pig profitability. Keep strict hygiene and production records.",
     "tipCattleTitle": "نصيحة لتسمين الماشية",
-    "tipCattleBody": "اشترِ حيوانات سليمة وخطط للبيع خلال فترات الطلب القوي. كفاءة التغذية هي المحرك الرئيسي للهامش.",
+    "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
     "tipGoatTitle": "نصيحة لتربية الماعز",
-    "tipGoatBody": "خطط للبيع خلال فترات الطلب المرتفع وحافظ على صحة الحيوانات. يمكن للماعز البالغ الحصول على أسعار أعلى.",
+    "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices.",
     "ebookHeading": "استكشف الدليل الزراعي الكامل",
     "costControlTitle": "تحكم في أكبر تكاليفك",
     "costControlBody": "راجع أكبر بنود التكلفة أولًا. الاستثمار المحسوب حاليًا هو {cost}. قارن أسعار البذور والأعلاف والأسمدة والعمالة والري والنقل وما بعد الحصاد بالأسعار المحلية، ثم خفّض التكاليف التي يمكن تجنبها دون التأثير في الجودة.",
@@ -276,41 +276,7 @@
     "recommendedGuide": "الدليل الموصى به",
     "allArticles": "جميع المقالات",
     "filedUnder": "التصنيف:",
-    "browseGuides": "تصفح الأدلة",
-    "cards": {
-      "bsf": {
-        "title": "تربية ذبابة الجندي الأسود في أفريقيا",
-        "description": "حوّل النفايات العضوية إلى علف غني بالبروتين وخفّض تكاليف التغذية."
-      },
-      "fodder": {
-        "title": "زراعة الأعلاف المائية في أفريقيا",
-        "description": "ازرع علفًا طازجًا للماشية خلال 4–8 أيام وبمساحة محدودة."
-      },
-      "mushroom": {
-        "title": "زراعة فطر المحار في نيجيريا",
-        "description": "تعلّم إنتاج فطر المحار وحصاده وتسويقه بطريقة عملية."
-      },
-      "cassava": {
-        "title": "زراعة الكسافا بدون إزالة الأعشاب في نيجيريا",
-        "description": "طريقة عملية لإنتاج الكسافا خلال خمسة أشهر دون مبيدات أعشاب."
-      }
-    },
-    "categories": {
-      "crop": "إنتاج المحاصيل",
-      "livestock": "تربية الماشية",
-      "organic": "الزراعة العضوية والتجديدية",
-      "agribusiness": "الأعمال الزراعية وإدارة المزارع",
-      "inputs": "المدخلات والتقنيات الزراعية",
-      "markets": "البيانات الزراعية والأسواق"
-    },
-    "categoryDescriptions": {
-      "crop": "محتوى عملي حول إنتاج المحاصيل والمشاتل والزراعة والحصاد.",
-      "livestock": "إنتاج الماشية والتغذية والإيواء وإدارة المزارع.",
-      "organic": "المدخلات العضوية وصحة التربة وممارسات الزراعة التجديدية.",
-      "agribusiness": "ربحية المزارع والأسواق وتخطيط المشاريع والأعمال الزراعية.",
-      "inputs": "البذور والأسمدة والمدخلات الحيوية والري والتقنيات الزراعية.",
-      "markets": "الأسعار الزراعية وأسعار البذور ومعلومات الأسواق وتحديثات البيانات."
-    }
+    "browseGuides": "تصفح الأدلة"
   },
   "ebooks": {
     "eyebrow": "الكتب الإلكترونية",
@@ -330,24 +296,97 @@
     "viewGuide": "عرض الدليل",
     "askWhatsApp": "اطرح سؤالًا على واتساب",
     "instantDelivery": "دفع لمرة واحدة · تسليم رقمي فوري",
-    "completeGuide": "احصل على الدليل الكامل",
-    "cards": {
-      "bsf": {
-        "title": "تربية ذبابة الجندي الأسود",
-        "tagline": "حوّل النفايات العضوية إلى مصدر غني بالبروتين لعلف الماشية والأسماك"
-      },
-      "fodder": {
-        "title": "زراعة الأعلاف المائية",
-        "tagline": "ازرع علفًا طازجًا للماشية خلال 4–8 أيام حتى في مساحة صغيرة"
-      },
-      "mushroom": {
-        "title": "الدليل الشامل لزراعة فطر المحار",
-        "tagline": "نهج عملي قائم على البحث لزراعة فطر المحار"
-      },
-      "cassava": {
-        "title": "تقنية الزراعة بدون إزالة الأعشاب",
-        "tagline": "دليل لمدة خمسة أشهر لزراعة الكسافا دون مبيدات أعشاب"
-      }
+    "completeGuide": "احصل على الدليل الكامل"
+  },
+  "static": {
+    "about": {
+      "eyebrow": "من نحن",
+      "title": "معرفة زراعية عملية، متجذرة في البحث الحقيقي",
+      "intro": "GoOrganicAfrica imejengwa juu ya wazo moja rahisi: maarifa ya kilimo yanapaswa kuwa ya vitendo, yaliyojaribiwa na kushirikishwa kwa uhuru kote Afrika.",
+      "who": "Sisi ni nani",
+      "whoText": "Miongozo na zana za GoOrganicAfrica zimeandaliwa na {author} — mkulima, mtafiti wa kilimo na mtengenezaji wa mbolea hai mwenye cheti cha Kilimo tangu 2001. Kila mwongozo na kila data katika Kikokotoo chetu cha bure cha Faida ya Shamba hutokana na uzoefu halisi wa uzalishaji na utafiti endelevu wa kilimo, si nadharia pekee.",
+      "what": "Tunachofanya",
+      "whatText": "Mbali na utafiti na uandishi, kazi ya GoOrganicAfrica inahusisha bidhaa kadhaa za kilimo hai:",
+      "inoc": "InoculumPlus — mbolea hai yenye msingi wa Mycorrhiza inayouzwa kwa wakulima Nigeria, Cameroon na Niger",
+      "organic": "OrganicGrow — suluhisho la kilimo hai kwa kuku, samaki na mifugo mingine, lililowafikia wakulima Cameroon na Ivory Coast",
+      "tools": "Zana na miongozo yetu",
+      "toolsIntro": "Tunatoa rasilimali mbili kuu kwa wakulima wa Afrika:",
+      "calculator": "Kikokotoo cha Bure cha Faida ya Shamba",
+      "calculatorText": " — hesabu gharama za uzalishaji, mapato yanayotarajiwa, faida, ROI na bei ya usawa katika nchi {countries} za Afrika na biashara {enterprises} za kilimo, kwa kubadilisha sarafu kiotomatiki",
+      "guides": "Miongozo ya Kilimo Hai",
+      "guidesText": " — miongozo ya hatua kwa hatua kuhusu hydroponic fodder, ufugaji wa Black Soldier Fly, kilimo cha uyoga wa oyster na uzalishaji wa muhogo bila palizi",
+      "mission": "Dhamira yetu",
+      "missionText": "Kusaidia kufanya kilimo Nigeria, Afrika na duniani kuwa na faida zaidi na endelevu — kwa mwongozo na zana moja ya vitendo, iliyojaribiwa shambani, kwa wakati mmoja. Soma maarifa yetu ya hivi karibuni kwenye blogu ya GoOrganicAfrica.",
+      "external": "Rasilimali za Nje Tunazoziamini",
+      "externalText": "Kwa wakulima wanaotafuta data na utafiti zaidi wa kilimo, tunapendekeza:",
+      "fao": "FAO (Shirika la Chakula na Kilimo la Umoja wa Mataifa) — takwimu na utafiti wa kilimo duniani",
+      "iita": "IITA (Taasisi ya Kimataifa ya Kilimo cha Kitropiki) — utafiti wa mazao na kilimo unaolenga Afrika",
+      "calcBtn": "Jaribu Kikokotoo cha Bure",
+      "guidesBtn": "Vinjari Miongozo ya Kilimo",
+      "contactBtn": "Wasiliana nasi"
+    },
+    "contact": {
+      "eyebrow": "اتصل بنا",
+      "title": "تواصل معنا",
+      "intro": "Je, una swali kuhusu mwongozo kabla ya kununua, unahitaji msaada wa kutumia kikokotoo, au unataka ushauri wa kilimo bila malipo? Wasiliana nasi moja kwa moja.",
+      "details": "Maelezo ya Mawasiliano",
+      "whatsapp": "Ongea nasi WhatsApp — ushauri wa kilimo bila malipo",
+      "help": "Tunaweza kukusaidia kwa nini?",
+      "help1": "Maswali kuhusu miongozo yetu ya kilimo hai",
+      "help2": "Msaada wa kutumia Kikokotoo cha Faida ya Shamba",
+      "help3": "Ushauri kuhusu hydroponic fodder, uyoga, ufugaji wa BSF au uzalishaji wa muhogo",
+      "help4": "Taarifa kuhusu bidhaa zetu za mbolea hai (InoculumPlus, OrganicGrow)",
+      "help5": "Mafunzo na ushauri kwa wakulima Nigeria na Afrika",
+      "consult": "Ushauri Bila Malipo",
+      "consultText": "Kila ununuzi wa mwongozo unajumuisha ushauri wa WhatsApp bila malipo. Unaweza pia kuwasiliana nasi kabla ya kununua — tutafurahi kujibu maswali yako kwanza.",
+      "message": "Tutumie ujumbe WhatsApp",
+      "about": "Jifunze zaidi kutuhusu"
+    },
+    "privacy": {
+      "eyebrow": "Kisheria",
+      "title": "Sera ya Faragha",
+      "updated": "Ilisasishwa mwisho: Agosti 2026",
+      "who": "1. Sisi ni nani",
+      "whoText": "GoOrganicAfrica ni jukwaa la elimu ya kilimo na bidhaa za kidijitali linaloendeshwa na Amoo Oluwatoyin Owolabi nchini Nigeria. Tovuti hii hutoa Kikokotoo cha Bure cha Faida ya Shamba, miongozo ya kilimo hai na makala kwa wakulima Afrika.",
+      "collect": "2. Taarifa Tunazokusanya",
+      "collect1": "Kikokotoo huhifadhi chaguo la nchi yako ndani ya kivinjari (localStorage) ili tovuti ikumbuke chaguo lako. Data hii huhifadhiwa kwenye kifaa chako tu na haitumwi kwenye seva zetu.",
+      "collect2": "Ukituwasiliana kupitia ukurasa wa Mawasiliano, WhatsApp au barua pepe, tunapokea jina na maelezo yako ya mawasiliano kwa ajili ya kujibu ombi lako pekee.",
+      "ads": "3. Google AdSense",
+      "adsText": "Tovuti hii inaweza kuonyesha matangazo ya Google AdSense. Google hutumia cookies kuonyesha matangazo kulingana na ziara za awali. Unaweza kuzima matangazo yaliyobinafsishwa kupitia mipangilio ya matangazo ya Google.",
+      "external": "4. Viungo vya Nje",
+      "externalText": "Tovuti hii ina viungo vya Selar kwa ununuzi wa vitabu pepe na tovuti nyingine. Hatuwajibiki kwa taratibu za faragha za tovuti za watu wengine. Ununuzi kupitia Selar unasimamiwa na masharti na sera ya faragha ya Selar.",
+      "cookies": "5. Cookies",
+      "cookiesText": "Tunatumia cookies za utendaji zinazohitajika kwa tovuti kufanya kazi. Hatutumii cookies za ufuatiliaji zaidi ya zinazowekwa kiotomatiki na Google AdSense.",
+      "rights": "6. Haki Zako",
+      "rightsText": "Unaweza kufuta localStorage ya kivinjari chako wakati wowote ili kuondoa data iliyohifadhiwa na tovuti hii. Kuomba kufutwa kwa taarifa ulizotupatia moja kwa moja, wasiliana nasi kupitia {email}.",
+      "disclaimer": "7. Kanusho",
+      "disclaimerText": "Hesabu zote za Kikokotoo ni makadirio tu na si ushauri wa kifedha, uwekezaji au kilimo. Utendaji halisi wa shamba hutegemea mavuno, bei za pembejeo, hali ya hewa, wadudu, magonjwa, kazi, usafirishaji na soko. Thibitisha bei na gharama za eneo lako kabla ya kuwekeza.",
+      "contact": "8. Mawasiliano",
+      "contactText": "Kwa maswali kuhusu faragha, wasiliana nasi kupitia {email} au WhatsApp."
+    },
+    "dataUpdates": {
+      "eyebrow": "Uwazi wa Data",
+      "title": "Vyanzo na Masasisho ya Data za Kilimo",
+      "intro": "GoOrganicAfrica imeundwa kusasisha data za rejea za kilimo kutoka serikali, masoko na taasisi husika za kilimo, huku mabadiliko yasiyo na uhakika yakipitiwa.",
+      "active": "Nchi zinazotumika",
+      "enterprises": "Biashara za kilimo",
+      "records": "Rekodi za bei kwa nchi",
+      "auto": "Ni nini kinaweza kusasishwa kiotomatiki?",
+      "auto1": "Bei za bidhaa za kilimo kutoka data za kuaminika za soko au serikali.",
+      "auto2": "Bei za mbegu, ikiwa ni pamoja na aina, chapa, ukubwa wa pakiti, muuzaji na eneo pale chanzo kinapotoa.",
+      "auto3": "Bei za mifugo na wanyama pale data ya kuaminika inayosomeka na mashine inapopatikana.",
+      "auto4": "Data za mbolea, chakula, umwagiliaji, kazi na gharama nyingine za pembejeo kutoka vyanzo vya kuaminika.",
+      "auto5": "Data za viwango vya ubadilishaji ili sarafu ziweze kusasishwa bila kutegemea makadirio ya kilimo.",
+      "protect": "Jinsi uchapishaji unavyolindwa",
+      "protectText": "Ukusanyaji wa kiotomatiki haumaanishi kubadilisha thamani za kikokotoo bila ukaguzi. Mfumo huhifadhi chanzo, tarehe, kipimo na eneo na unaweza kutuma mabadiliko yapitiwe. Hili ni muhimu hasa lahajedwali la serikali linapobadilisha safu, vipimo au maana za maeneo.",
+      "registry": "Orodha ya sasa ya vyanzo",
+      "publisher": "Mchapishaji",
+      "data": "Data",
+      "country": "Nchi",
+      "frequency": "Mara kwa mara",
+      "status": "Hali",
+      "latest": "Kipindi cha hivi karibuni cha rejea cha kikokotoo kilichogunduliwa:",
+      "verify": "Thibitisha bei kila wakati kwa wanunuzi, wauzaji na hali ya sasa ya soko kabla ya kuwekeza."
     }
   }
 }
