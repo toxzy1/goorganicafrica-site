@@ -4,12 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var items = Array.prototype.slice.call(document.querySelectorAll(".ebook-search-item"));
   var noResults = document.getElementById("ebook-no-results");
 
-  if (!input || !results || !items.length) return;
-
-  function currentLanguage() {
-    try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
-    catch (_) { return document.documentElement.lang || "en"; }
-  }
+  if (!input || !results) return;
 
   function normalize(value) {
     return String(value || "")
@@ -28,56 +23,19 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!q || !t) return 0;
     if (t === q) return 100;
     if (t.indexOf(q) !== -1) return 80;
-
     var words = q.split(" ").filter(function (word) {
       return word.length > 1 && word !== "ebook";
     });
     if (!words.length) return t.indexOf(q) !== -1 ? 70 : 0;
-
     var matched = words.filter(function (word) { return t.indexOf(word) !== -1; }).length;
     var scoreValue = matched ? (matched / words.length) * 70 : 0;
     if (q.indexOf("farming") !== -1 && t.indexOf("farm") !== -1) scoreValue += 5;
     return Math.min(scoreValue, 75);
   }
 
-  function variantInfo(item) {
-    var slug = item.getAttribute("data-content-slug") || "";
-    var match = slug.match(/^(.*)-(fr|ar|pt|sw)$/);
-    var fallbackGroup = match ? match[1] : slug;
-    var fallbackLanguage = match ? match[2] : "en";
-    return {
-      group: item.getAttribute("data-content-group") || fallbackGroup || item.getAttribute("href"),
-      language: item.getAttribute("data-content-language") || fallbackLanguage
-    };
-  }
-
-  function preferredVariants(language) {
-    var groups = {};
-    items.forEach(function (item) {
-      var info = variantInfo(item);
-      if (!groups[info.group]) groups[info.group] = [];
-      groups[info.group].push({ item: item, language: info.language });
-    });
-
-    var preferred = [];
-    Object.keys(groups).forEach(function (group) {
-      var variants = groups[group];
-      var target = variants.find(function (entry) {
-        return entry.language === language;
-      }) || variants.find(function (entry) {
-        return entry.language === "en";
-      }) || variants[0];
-      if (target) preferred.push(target.item);
-    });
-    return preferred;
-  }
-
   function search() {
-    var language = currentLanguage();
-    var visibleItems = preferredVariants(language);
     var query = input.value;
-
-    var ranked = visibleItems.map(function (item, index) {
+    var ranked = items.map(function (item, index) {
       return {
         item: item,
         index: index,
@@ -89,19 +47,21 @@ document.addEventListener("DOMContentLoaded", function () {
       return b.score - a.score || a.index - b.index;
     });
 
-    items.forEach(function (item) { item.hidden = true; item.style.display = "none"; item.classList.add("is-language-hidden"); });
+    items.forEach(function (item) {
+      item.hidden = true;
+      item.style.display = "none";
+    });
+
     ranked.forEach(function (entry) {
       entry.item.hidden = false;
       entry.item.style.display = "";
-      entry.item.classList.remove("is-language-hidden");
       results.appendChild(entry.item);
     });
-    noResults.hidden = ranked.length !== 0;
+
+    if (noResults) noResults.hidden = ranked.length !== 0;
   }
 
   input.addEventListener("input", search);
   input.addEventListener("search", search);
-  document.addEventListener("goa:languagechange", search);
-
   search();
 });
