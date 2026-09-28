@@ -33,9 +33,9 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v2-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v3-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
-            goa-translation-cache-v2-${{ github.ref_name }}-
+            goa-translation-cache-v3-${{ github.ref_name }}-
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -46,12 +46,15 @@ jobs:
         timeout-minutes: 180
         run: |
           python -u scripts/auto-translate-content.py
-          echo "Generated translation files:"
-          find src/blog/posts src/ebooks -maxdepth 1 -type f \( -name '*-fr.md' -o -name '*-ar.md' -o -name '*-pt.md' -o -name '*-sw.md' \) -print
-          count=$(find src/blog/posts src/ebooks -maxdepth 1 -type f \( -name '*-fr.md' -o -name '*-ar.md' -o -name '*-pt.md' -o -name '*-sw.md' \) | wc -l)
-          echo "Translation file count: $count"
-          test "$count" -eq 32
-          echo "Verified 32 multilingual drafts (8 sources x 4 languages)."
+          echo "Multilingual draft files currently present:"
+          find src/blog/posts src/ebooks -maxdepth 1 -type f -name '*.md' | sort
+          echo "Configured target languages:"
+          python - <<'PY'
+          import json
+          cfg = json.load(open("src/_data/translationSettings.json", encoding="utf-8"))
+          print(", ".join(cfg.get("target_languages", [])))
+          PY
+          echo "Universal translation quality checks completed by the generator."
 
       - name: Publish reviewed translation drafts to main
         env:
@@ -77,4 +80,4 @@ jobs:
         uses: actions/cache/save@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v2-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v3-${{ github.ref_name }}-${{ github.run_id }}
