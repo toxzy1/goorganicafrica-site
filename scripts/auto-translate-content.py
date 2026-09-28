@@ -161,7 +161,8 @@ def _translate_chunk(chunk, target, cache):
 # "days", "weeks", "hours", or "tonnes". The translation engine must translate
 # those words naturally in every target language.
 NUMBER_RE = re.compile(
-    r"(?<![A-Za-z])(?:\d{1,3}(?:[,\. ]\d{3})+|\d+(?:[\.,]\d+)?)"\n)
+    r"(?<![A-Za-z])(?:\d{1,3}(?:[,\. ]\d{3})+|\d+(?:[\.,]\d+)?)"
+)
 BRAND_RE = re.compile(r"GoOrganicAfrica", re.I)
 PLACEHOLDER_RE = re.compile(r"__GOA_(?:NUM|BRAND)_\d+__")
 
