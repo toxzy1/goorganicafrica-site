@@ -10,7 +10,7 @@ ROOTS = (Path("src/blog/posts"), Path("src/ebooks"))
 SETTINGS = Path("src/_data/translationSettings.json")
 DEFAULT_LANGUAGES = ("fr", "ar", "pt", "sw")
 CACHE_FILE = Path(".translation-cache.json")
-CACHE_VERSION = "v3"
+CACHE_VERSION = "v4"
 FIELDS = ("title", "description", "meta_title", "meta_description", "tagline", "bonus", "category")
 LISTS = ("audience", "benefits", "search_terms", "keywords")
 
@@ -280,16 +280,22 @@ def quality_check(source, translated, path, target):
     # Check visible prose only. HTML tags, URLs, Markdown destinations, and
     # inline code are structural data, not prose, so they must never trigger
     # a false positive (for example <h2> or <p>).
-    visible = re.sub(r"<!--(?:.|\n)*?-->|<[^>]+>|https?://[^\s)\]<>\"']+|`[^`]*`", " ", translated, flags=re.S)
-    visible = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"\1", visible)
-    visible = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", visible)
+    def visible_prose(value):
+        value = re.sub(r"<!--(?:.|\n)*?-->|<[^>]+>|https?://[^\s)\]<>\"']+|`[^`]*`", " ", value, flags=re.S)
+        value = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"\1", value)
+        return re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", value)
 
-    # Detect letters touching digits in rendered prose, regardless of script.
-    # This catches corruption such as "300tonnes" and "2024et", while the
-    # explicit technical whitelist permits legitimate forms such as F1/CO2.
-    compact = re.findall(r"[^\W\d_]\d|\d[^\W\d_]", visible, flags=re.UNICODE)
+    source_visible = visible_prose(source)
+    translated_visible = visible_prose(translated)
+
+    # Detect newly introduced digit/letter collisions. Existing source forms
+    # such as English ordinals (3rd, 5th) must not be rejected simply because
+    # the target language retained them. What we must catch are NEW collisions
+    # created by translation, such as 300tonnes, 2024et, 60%et, or 35%protéines.
+    source_compact = set(re.findall(r"[^\W\d_]\d|\d[^\W\d_]", source_visible, flags=re.UNICODE))
+    translated_compact = re.findall(r"[^\W\d_]\d|\d[^\W\d_]", translated_visible, flags=re.UNICODE)
     allowed = {"F1", "F2", "B2B", "H2", "H3", "H4", "CO2"}
-    bad = [x for x in compact if x.upper() not in allowed]
+    bad = [x for x in translated_compact if x.upper() not in allowed and x not in source_compact]
     if bad:
         raise RuntimeError(f"Number/word spacing corruption in {path} ({target}): {bad[:5]}")
 
