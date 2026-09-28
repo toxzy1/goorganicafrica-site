@@ -312,7 +312,25 @@ def quality_check(source, translated, path, target):
     collision_pattern = r"[A-Za-z]\d|\d[A-Za-z]|\d[%.,][A-Za-z]"
     source_compact = set(re.findall(collision_pattern, source_visible))
     translated_compact = re.findall(collision_pattern, translated_visible)
-    bad = [x for x in translated_compact if x not in source_compact]
+
+    # Ordinals are legitimately localized by language. For example, English
+    # 3rd/5th may become French 3e/5e or Portuguese 3º/5º. Allow the same
+    # numeric ordinal values even though the following letters/symbols differ.
+    source_ordinals = set(
+        int(m.group(1))
+        for m in re.finditer(r"(?<!\\d)(\\d+)(?:st|nd|rd|th)\\b", source_visible, flags=re.I)
+    )
+
+    def is_allowed_localized_ordinal(fragment):
+        if not fragment or not fragment[0].isdigit():
+            return False
+        m = re.match(r"(\\d+)", fragment)
+        return bool(m and int(m.group(1)) in source_ordinals)
+
+    bad = [
+        x for x in translated_compact
+        if x not in source_compact and not is_allowed_localized_ordinal(x)
+    ]
     if bad:
         raise RuntimeError(f"Number/word spacing corruption in {path} ({target}): {bad[:5]}")
 
