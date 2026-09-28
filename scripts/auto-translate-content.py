@@ -280,14 +280,14 @@ def quality_check(source, translated, path, target):
     # Check visible prose only. HTML tags, URLs, Markdown destinations, and
     # inline code are structural data, not prose, so they must never trigger
     # a false positive (for example <h2> or <p>).
-    visible = re.sub(r"<!--(?:.|\\n)*?-->|<[^>]+>|https?://[^\\s)\\]<>\\\"\']+|`[^`]*`", " ", translated, flags=re.S)
-    visible = re.sub(r"!\\[([^\\]]*)\\]\\([^)]*\\)", r"\\1", visible)
-    visible = re.sub(r"\\[([^\\]]*)\\]\\([^)]*\\)", r"\\1", visible)
+    visible = re.sub(r"<!--(?:.|\n)*?-->|<[^>]+>|https?://[^\s)\]<>\"']+|`[^`]*`", " ", translated, flags=re.S)
+    visible = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"\1", visible)
+    visible = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", visible)
 
     # Detect letters touching digits in rendered prose, regardless of script.
     # This catches corruption such as "300tonnes" and "2024et", while the
     # explicit technical whitelist permits legitimate forms such as F1/CO2.
-    compact = re.findall(r"[^\\W\\d_]\\d|\\d[^\\W\\d_]", visible, flags=re.UNICODE)
+    compact = re.findall(r"[^\W\d_]\d|\d[^\W\d_]", visible, flags=re.UNICODE)
     allowed = {"F1", "F2", "B2B", "H2", "H3", "H4", "CO2"}
     bad = [x for x in compact if x.upper() not in allowed]
     if bad:
