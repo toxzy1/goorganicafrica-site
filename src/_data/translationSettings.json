@@ -1,15 +1,15 @@
 {
   "enabled": true,
   "source_language": "en",
-  "target_languages": [
-    "fr",
-    "ar",
-    "pt",
-    "sw"
-  ],
+  "target_languages": ["fr", "ar", "pt", "sw"],
   "automatic_generation": false,
+  "provider_mode": "manual_or_approved_draft_engine",
   "require_review": true,
   "mark_new_translations": "in_review",
   "auto_update_existing_translations": false,
-  "notes": "English is the source of truth. Automatic machine translation is paused so unreviewed machine-generated content cannot be published or overwrite reviewed translations. Existing translations remain protected. New translations should be created and reviewed before publication."
+  "publish_machine_translations_automatically": false,
+  "preserve_reviewed_translations": true,
+  "fallback_to_source_language": true,
+  "review_queue": true,
+  "notes": "English is the source of truth. New translations must enter the review queue. Reviewed translations are protected from automatic overwrite. A draft translation engine may be used only to create reviewable drafts; it must never publish directly or replace a reviewed translation. Missing or unreviewed translations fall back to English."
 }
