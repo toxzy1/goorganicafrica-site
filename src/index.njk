@@ -129,10 +129,8 @@ permalink: "/"
     </div>
     <div class="ebook-grid" id="homepage-ebook-results">
       {% for ebook in collections.ebooks | filterByLanguage("en") %}
-      <a class="ebook-card content-variant" href="{{ ebook.url }}"
-         data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}"
-         data-content-language="{{ ebook.data.language or 'en' }}"
-         data-content-slug="{{ ebook.data.slug }}">
+      <a class="ebook-card" href="{{ ebook.url }}"
+>
         <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }} guide cover">
         <h3>{{ ebook.data.title }}</h3>
         <p class="tagline">{{ ebook.data.tagline }}</p>
@@ -194,10 +192,8 @@ permalink: "/"
     {% if (collections.posts | filterByLanguage("en")).length > 0 %}
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
       {% for post in collections.posts | filterByLanguage("en") | slice(0, 4) %}
-      <a href="{{ post.url }}" class="content-variant"
-         data-content-group="{{ post.data.translation_group or post.data.slug }}"
-         data-content-language="{{ post.data.language or 'en' }}"
-         data-content-slug="{{ post.data.slug }}"
+      <a href="{{ post.url }}" 
+
          style="text-decoration:none;">
         <div class="ebook-card" style="height:100%;">
           {% if post.data.featured_image %}<img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" style="width:100%;height:180px;object-fit:cover;border-radius:4px;">{% endif %}
