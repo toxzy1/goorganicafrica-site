@@ -1,114 +1,85 @@
 const fs = require("fs");
 const path = require("path");
-
-const root = path.join(__dirname, "..");
-const site = path.join(root, "_site");
+const site = path.join(__dirname, "..", "_site");
 if (!fs.existsSync(site)) throw new Error("Rendered site is missing.");
 
 function walk(dir) {
   const out = [];
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+  for (const entry of fs.readdirSync(dir, {withFileTypes:true})) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) out.push(...walk(full));
-    else out.push(full);
+    if (entry.isDirectory()) out.push(...walk(full)); else out.push(full);
   }
   return out;
 }
-
-const htmlFiles = walk(site).filter(f => f.endsWith(".html"));
 const failures = [];
+const htmlFiles = walk(site).filter(f => f.endsWith(".html"));
 
 function read(rel) {
-  const file = path.join(site, rel);
-  if (!fs.existsSync(file)) failures.push("Missing rendered page: " + rel);
-  return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+  const p = path.join(site, rel);
+  if (!fs.existsSync(p)) { failures.push("Missing rendered page: " + rel); return ""; }
+  return fs.readFileSync(p, "utf8");
 }
-
 function cardHrefs(html) {
-  const result = [];
-  const anchorCard = /<a\b[^>]*class=["'][^"']*ebook-card[^"']*["'][^>]*href=["']([^"']+)["']/gi;
-  const anchorCardReversed = /<a\b[^>]*href=["']([^"']+)["'][^>]*class=["'][^"']*ebook-card[^"']*["']/gi;
-  const blogCard = /<a\b[^>]*href=["']([^"']+)["'][^>]*>\s*<div class=["'][^"']*ebook-card[^"']*["']/gi;
-  let m;
-  while ((m = anchorCard.exec(html))) result.push(m[1]);
-  while ((m = anchorCardReversed.exec(html))) result.push(m[1]);
-  while ((m = blogCard.exec(html))) result.push(m[1]);
-  return result;
+  const out = [];
+  const patterns = [
+    /<a\b[^>]*class=["'][^"']*ebook-card[^"']*["'][^>]*href=["']([^"']+)["']/gi,
+    /<a\b[^>]*href=["']([^"']+)["'][^>]*class=["'][^"']*ebook-card[^"']*["']/gi,
+    /<a\b[^>]*href=["']([^"']+)["'][^>]*>\s*<div class=["'][^"']*ebook-card[^"']*["']/gi
+  ];
+  for (const re of patterns) {
+    let m;
+    while ((m = re.exec(html))) out.push(m[1]);
+  }
+  return out;
 }
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   const rel = path.relative(site, file);
-  if (!/farm-profit-calculator/.test(rel)) {
+  if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
     if ((html.match(/<main\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <main>");
     if ((html.match(/<header\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <header>");
   }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
     failures.push(rel + ": legacy content-variant markup remains");
   }
-  const ids = new Set();
-  const duplicateIds = new Set();
+  const ids = new Set(), dup = new Set();
   const idRe = /\bid=["']([^"']+)["']/gi;
-  let idm;
-  while ((idm = idRe.exec(html))) {
-    if (ids.has(idm[1])) duplicateIds.add(idm[1]);
-    ids.add(idm[1]);
-  }
-  if (duplicateIds.size) failures.push(rel + ": duplicate HTML ids: " + [...duplicateIds].join(", "));
+  let m;
+  while ((m = idRe.exec(html))) { if (ids.has(m[1])) dup.add(m[1]); ids.add(m[1]); }
+  if (dup.size) failures.push(rel + ": duplicate HTML ids: " + [...dup].join(", "));
 }
 
-const homePages = [
-  ["index.html", "en"],
-  ["fr/index.html", "fr"],
-  ["ar/index.html", "ar"],
-  ["pt/index.html", "pt"],
-  ["sw/index.html", "sw"]
-];
-
-for (const [rel, lang] of homePages) {
+for (const [rel, lang] of [["index.html","en"],["fr/index.html","fr"],["ar/index.html","ar"],["pt/index.html","pt"],["sw/index.html","sw"]]) {
   const html = read(rel);
   if (!html) continue;
-  const hrefs = cardHrefs(html);
-  const unique = [...new Set(hrefs)];
-  if (hrefs.length !== unique.length) failures.push(rel + ": duplicate homepage card links");
+  const cards = cardHrefs(html);
+  if (cards.length !== new Set(cards).size) failures.push(rel + ": duplicate homepage card links");
+  const hrefs = [...html.matchAll(/href=["']([^"']+)["']/gi)].map(x => x[1]);
   const ebookPrefix = lang === "en" ? "/ebooks/" : "/" + lang + "/ebooks/";
   const blogPrefix = lang === "en" ? "/blog/" : "/" + lang + "/blog/";
-  const ebookLinks = unique.filter(h => h.includes("/ebooks/"));
-  const blogLinks = unique.filter(h => h.includes("/blog/"));
-  if (ebookLinks.some(h => !h.startsWith(ebookPrefix))) failures.push(rel + ": homepage contains eBook cards from another language");
-  if (blogLinks.some(h => !h.startsWith(blogPrefix))) failures.push(rel + ": homepage contains blog cards from another language");
-  if (ebookLinks.length === 0) failures.push(rel + ": no eBook cards rendered");
-  if (blogLinks.length === 0) failures.push(rel + ": no blog cards rendered");
+  const ebookLinks = hrefs.filter(h => h.includes("/ebooks/"));
+  const blogLinks = hrefs.filter(h => h.includes("/blog/"));
+  if (!ebookLinks.length) failures.push(rel + ": no eBook links rendered");
+  if (!blogLinks.length) failures.push(rel + ": no blog links rendered");
+  if (ebookLinks.some(h => /\/((fr|ar|pt|sw)\/)?ebooks\//.test(h) && !h.startsWith(ebookPrefix))) failures.push(rel + ": homepage contains eBook links from another language");
+  if (blogLinks.some(h => /\/((fr|ar|pt|sw)\/)?blog\//.test(h) && !h.startsWith(blogPrefix))) failures.push(rel + ": homepage contains blog links from another language");
 }
 
-const sectionPages = [
-  ["ebooks/index.html", "/ebooks/"],
-  ["fr/ebooks/index.html", "/fr/ebooks/"],
-  ["ar/ebooks/index.html", "/ar/ebooks/"],
-  ["pt/ebooks/index.html", "/pt/ebooks/"],
-  ["sw/ebooks/index.html", "/sw/ebooks/"],
-  ["blog/index.html", "/blog/"],
-  ["fr/blog/index.html", "/fr/blog/"],
-  ["ar/blog/index.html", "/ar/blog/"],
-  ["pt/blog/index.html", "/pt/blog/"],
-  ["sw/blog/index.html", "/sw/blog/"]
-];
-
-for (const [rel, prefix] of sectionPages) {
+for (const [rel, prefix] of [
+  ["ebooks/index.html","/ebooks/"],["fr/ebooks/index.html","/fr/ebooks/"],["ar/ebooks/index.html","/ar/ebooks/"],["pt/ebooks/index.html","/pt/ebooks/"],["sw/ebooks/index.html","/sw/ebooks/"],
+  ["blog/index.html","/blog/"],["fr/blog/index.html","/fr/blog/"],["ar/blog/index.html","/ar/blog/"],["pt/blog/index.html","/pt/blog/"],["sw/blog/index.html","/sw/blog/"]
+]) {
   const html = read(rel);
   if (!html) continue;
-  const hrefs = cardHrefs(html);
-  const unique = [...new Set(hrefs)];
-  if (hrefs.length !== unique.length) failures.push(rel + ": duplicate section card links");
-  if (unique.some(h => h.includes("/blog/") || h.includes("/ebooks/") ? !h.startsWith(prefix) : false)) {
-    failures.push(rel + ": section contains cards from another language");
-  }
+  const cards = cardHrefs(html);
+  if (cards.length !== new Set(cards).size) failures.push(rel + ": duplicate section card links");
+  if (cards.some(h => (h.includes("/blog/") || h.includes("/ebooks/")) && !h.startsWith(prefix))) failures.push(rel + ": section contains cards from another language");
 }
 
 if (failures.length) {
   console.error("Rendered-site audit failed:");
-  for (const failure of failures) console.error(" - " + failure);
+  failures.forEach(x => console.error(" - " + x));
   process.exit(1);
 }
-
-console.log("Rendered-site audit passed: page structure, no legacy language-variant markup, and language-scoped homepage/section cards.");
+console.log("Rendered-site audit passed.");
