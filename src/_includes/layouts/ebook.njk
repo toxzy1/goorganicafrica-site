@@ -19,11 +19,18 @@ layout: layouts/base.njk
 }
 {% endset %}
 
-<div class="content-translation-map" data-content-localization="detail" data-content-group="{{ translation_group or slug }}" hidden>{% for ebook in collections.ebooks %}{% if (ebook.data.translation_group or ebook.data.slug) == (translation_group or slug) %}<a data-content-variant data-status="{{ ebook.data.translation_status or 'published' }}" data-language="{{ ebook.data.language or 'en' }}" href="{{ ebook.url }}">{{ ebook.data.language or 'en' }}</a>{% endif %}{% endfor %}</div>
+<div class="translation-links" aria-label="Available guide languages">
+  <strong data-i18n="blog.language">Language:</strong>
+  {% for localized in collections.ebooks %}
+    {% if localized.data.translation_group == (translation_group or slug) and (localized.data.translation_status or 'published') != 'in_review' %}
+      <a data-language="{{ localized.data.language or 'en' }}" href="{{ localized.url }}" hreflang="{{ localized.data.language or 'en' }}">{{ localized.data.language or 'en' }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
 
 <section class="ebook-detail-hero">
   <div class="container">
-    <p class="breadcrumb"><a href="/" data-i18n="common.home">Home</a> / <a href="/ebooks/" data-i18n="common.ebooks">Guides</a> / {{ title }}</p>
+    <p class="breadcrumb"><a href="/" data-i18n="common.home">Home</a> / <a data-localized-section="ebooks" href="{% if language == 'en' %}/ebooks/{% else %}/{{ language }}/ebooks/{% endif %}" data-i18n="common.ebooks">Guides</a> / {{ title }}</p>
     <div class="ebook-detail-grid">
       <div>
         {% if icon %}
