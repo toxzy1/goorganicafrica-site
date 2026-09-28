@@ -77,31 +77,36 @@
   }
 
   function localizedContentUrl(code) {
-    var translatedLink = document.querySelector('.translation-links a[data-language="' + code + '"]');
-    if (translatedLink && translatedLink.getAttribute("href")) {
-      return translatedLink.getAttribute("href");
+    var path = window.location.pathname.replace(/\\/+$/, "") || "/";
+
+    // Static pages intentionally keep one shared URL; only their text changes.
+    if (/^\\/(about|contact|privacy-policy|data-updates)\\/?$/.test(path)) {
+      return path;
     }
 
-    var path = window.location.pathname.replace(/\/+$/, "") || "/";
-    if (path === "/" || /^\/(fr|ar|pt|sw)$/.test(path)) {
+    // Home page keeps the language prefix.
+    if (path === "/" || /^\\/(fr|ar|pt|sw)$/.test(path)) {
       return code === "en" ? "/" : "/" + code + "/";
     }
-    var localizedMatch = path.match(new RegExp("^/(fr|ar|pt|sw)/(blog|ebooks)(?:/(.*))?$"));
+
+    // Blog and eBook pages use the same slug in every language. Build the
+    // destination from the current URL rather than trusting per-page links,
+    // which prevents a language change from jumping to an unrelated page.
+    var localizedMatch = path.match(/^\\/(fr|ar|pt|sw)\\/(blog|ebooks)(?:\\/(.*))?$/);
     if (localizedMatch) {
       return code === "en"
         ? "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/")
         : "/" + code + "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/");
     }
 
-    var englishMatch = path.match(new RegExp("^/(blog|ebooks)(?:/(.*))?$"));
-    if (!englishMatch) {
-      var staticMatch = path.match(new RegExp("^/(about|contact|privacy-policy|data-updates)/?$"));
-      return staticMatch ? path : null;
+    var englishMatch = path.match(/^\\/(blog|ebooks)(?:\\/(.*))?$/);
+    if (englishMatch) {
+      return code === "en"
+        ? "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/")
+        : "/" + code + "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/");
     }
 
-    return code === "en"
-      ? "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/")
-      : "/" + code + "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/");
+    return null;
   }
 
   function updateLocalizedNavigation(code) {
