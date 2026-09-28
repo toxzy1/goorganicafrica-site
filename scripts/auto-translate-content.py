@@ -10,7 +10,7 @@ ROOTS = (Path("src/blog/posts"), Path("src/ebooks"))
 SETTINGS = Path("src/_data/translationSettings.json")
 DEFAULT_LANGUAGES = ("fr", "ar", "pt", "sw")
 CACHE_FILE = Path(".translation-cache.json")
-CACHE_VERSION = "v7"
+CACHE_VERSION = "v8"
 FIELDS = ("title", "description", "meta_title", "meta_description", "tagline", "bonus", "category")
 LISTS = ("audience", "benefits", "search_terms", "keywords")
 
