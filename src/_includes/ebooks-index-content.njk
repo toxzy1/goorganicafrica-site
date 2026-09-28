@@ -14,7 +14,7 @@
       <p id="ebook-search-help" class="ebook-search-help" data-i18n="ebooks.searchHelp">Start typing a farming topic or eBook name. Matching eBooks appear immediately.</p>
     </div>
     <div class="ebook-grid" id="ebook-results" aria-live="polite">
-      {% set localizedEbooks = collections.ebooks | where("data.language", pageLanguage) %}
+      {% set localizedEbooks = collections.ebooks | filterByLanguage(pageLanguage) %}
       {% for ebook in localizedEbooks %}
       {% if (ebook.data.translation_status or "published") != "in_review" %}
       <a class="ebook-card ebook-search-item" href="{{ ebook.url }}"
