@@ -189,35 +189,35 @@
     "reasonable": "Faida ya kuridhisha — angalia hatari hizi",
     "strong": "Faida kubwa inayotarajiwa",
     "breakEvenClose": "Bei yako ya kufikia usawa iko karibu na bei ya chini ya soko",
-    "lossBody": "Gharama zako zinazokadiriwa ({cost}) zinazidi mapato yako yanayokadiriwa ({revenue}). Kabla ya kuwekeza, kagua gharama, mavuno na bei ya soko.",
-    "thinBody": "ROI ya {roi}% ni ndogo kwa kilimo. Kushuka kwa bei au mavuno kunaweza kuondoa faida yako; punguza gharama na tafuta wanunuzi bora.",
-    "reasonableBody": "ROI ya {roi}% ni nzuri ikiwa pembejeo na bei yako ya kuuza zitaendelea kuwa thabiti. Fuatilia bei za msimu na ongezeko la gharama za pembejeo.",
-    "strongBody": "ROI ya {roi}% ni bora sana. Thibitisha matokeo kwa kiwango unachoweza kudhibiti, pata wanunuzi na weka kumbukumbu za kina za gharama.",
-    "breakEvenBody": "Bei yako ya mauzo ya usawa ni {price}. Bei ya chini ya rejea ya {commodity} ni karibu {low}. Punguza gharama au lenga wanunuzi wanaolipa zaidi ikiwa bei itashuka.",
+    "lossBody": "Your projected costs ({cost}) exceed your projected revenue ({revenue}). Before committing funds, review costs, yield and the market price.",
+    "thinBody": "An ROI of {roi}% is low for agriculture. A drop in price or yield could remove your profit; reduce costs and secure better buyers.",
+    "reasonableBody": "An ROI of {roi}% is a solid return if your inputs and selling price hold. Monitor seasonal prices and input-cost inflation.",
+    "strongBody": "An ROI of {roi}% is excellent. Confirm the result at a manageable scale, secure buyers and keep detailed cost records.",
+    "breakEvenBody": "Your break-even selling price is {price}. The reference low-end market price for {commodity} is around {low}. Reduce costs or target premium buyers if prices fall.",
     "tipTomatoTitle": "Ushauri wa kilimo cha nyanya",
-    "tipTomatoBody": "Bei za nyanya hubadilika sana kulingana na msimu. Fikiria uzalishaji wa msimu wa kiangazi na usafirishaji au uchakataji wa haraka ili kupunguza hasara baada ya mavuno.",
+    "tipTomatoBody": "Tomato prices are highly seasonal. Consider dry-season production and rapid transport or processing to reduce post-harvest losses.",
     "tipCucumberTitle": "Ushauri wa kilimo cha tango",
-    "tipCucumberBody": "Funga mimea ya matango kwenye nguzo ili kuboresha ubora na kupunguza magonjwa. Maduka makubwa, hoteli na migahawa mijini yanaweza kulipa bei ya juu.",
+    "tipCucumberBody": "Stake cucumbers to improve quality and reduce disease. Urban supermarkets, hotels and restaurants can pay a premium.",
     "tipCassavaTitle": "Ushauri wa kilimo cha muhogo",
-    "tipCassavaBody": "Kuongeza thamani kunaweza kuboresha mapato ya muhogo. Udhibiti wa magugu mapema ni muhimu kulinda mavuno.",
+    "tipCassavaBody": "Value addition can improve cassava returns. Early weed management is essential for protecting yield.",
     "tipMaizeTitle": "Ushauri wa kilimo cha mahindi",
-    "tipMaizeBody": "Uhifadhi unaweza kuboresha mapato ya mahindi baada ya mavuno. Tumia uhifadhi salama kuuza wakati akiba ya msimu inapokuwa ndogo.",
+    "tipMaizeBody": "Storage can improve maize returns after harvest. Use safe storage to sell when seasonal stocks are lower.",
     "tipRiceTitle": "Ushauri wa kilimo cha mpunga",
-    "tipRiceBody": "Kusaga na kupanga mchele kwa ubora kunaweza kuongeza thamani. Panga ukaushaji na upatikanaji wa soko kabla ya mavuno.",
+    "tipRiceBody": "Milling and quality grading can increase rice value. Plan drying and market access before harvest.",
     "tipHabaneroTitle": "Ushauri wa kilimo cha pilipili habanero",
-    "tipHabaneroBody": "Vuna pilipili mara kwa mara na ishughulikie kwa uangalifu. Pata wanunuzi kabla ya kilele cha mavuno ili kudhibiti mabadiliko ya bei.",
+    "tipHabaneroBody": "Harvest frequently and handle peppers carefully. Secure buyers before peak harvest to manage price swings.",
     "tipBroilerTitle": "Ushauri wa ufugaji wa kuku wa nyama",
-    "tipBroilerBody": "Chakula ndicho gharama kuu. Nunua vifaranga vya kuaminika, dhibiti chakula vizuri na panga mauzo kabla kuku kufikia uzito wa soko.",
+    "tipBroilerBody": "Feed is the main cost. Buy reliable chicks, manage feed closely and plan sales before birds reach market weight.",
     "tipLayerTitle": "Ushauri wa ufugaji wa kuku wa mayai",
-    "tipLayerBody": "Fuatilia matumizi ya chakula na uzalishaji wa mayai kila siku. Wanunuzi thabiti na afya nzuri ya kundi hulinda faida.",
+    "tipLayerBody": "Track feed conversion and egg production daily. Stable buyers and good flock health protect margins.",
     "tipFishTitle": "Ushauri wa ufugaji wa kambale",
-    "tipFishBody": "Dhibiti upotevu wa chakula na ubora wa maji. Panga samaki kwa ukubwa mara kwa mara na tafuta wanunuzi kabla ya mavuno.",
+    "tipFishBody": "Control feed waste and water quality. Grade fish regularly and arrange buyers before harvest.",
     "tipPigTitle": "Ushauri wa ufugaji wa nguruwe",
-    "tipPigBody": "Usimamizi wa chakula na usalama wa mifugo ni muhimu kwa faida ya ufugaji wa nguruwe. Dumisha usafi mkali na kumbukumbu za uzalishaji.",
+    "tipPigBody": "Feed management and biosecurity are central to pig profitability. Keep strict hygiene and production records.",
     "tipCattleTitle": "Ushauri wa unenepeshaji wa ng’ombe",
-    "tipCattleBody": "Nunua wanyama wenye afya na panga mauzo wakati wa mahitaji makubwa. Ufanisi wa chakula huamua faida.",
+    "tipCattleBody": "Buy healthy animals and plan sales around strong demand periods. Feed efficiency drives the margin.",
     "tipGoatTitle": "Ushauri wa ufugaji wa mbuzi",
-    "tipGoatBody": "Panga mauzo wakati wa mahitaji makubwa na dumisha afya ya wanyama. Mbuzi waliokomaa wanaweza kupata bei nzuri.",
+    "tipGoatBody": "Time sales for high-demand periods and keep animals healthy. Mature goats can command premium prices.",
     "ebookHeading": "Gundua mwongozo kamili wa kilimo",
     "costControlTitle": "Dhibiti gharama zako kubwa",
     "costControlBody": "Kagua gharama kubwa kwanza. Uwekezaji unaokadiriwa sasa ni {cost}. Linganisha mbegu, chakula, mbolea, kazi, umwagiliaji, usafirishaji na hasara baada ya mavuno na bei za eneo lako, kisha punguza gharama zinazoweza kuepukwa bila kupunguza ubora.",
@@ -276,41 +276,7 @@
     "recommendedGuide": "Mwongozo unaopendekezwa",
     "allArticles": "Makala zote",
     "filedUnder": "Imewekwa chini ya:",
-    "browseGuides": "Vinjari miongozo",
-    "cards": {
-      "bsf": {
-        "title": "Ufugaji wa Black Soldier Fly Afrika",
-        "description": "Geuza taka za kikaboni kuwa chakula chenye protini nyingi na punguza gharama za chakula."
-      },
-      "fodder": {
-        "title": "Kilimo cha Malisho ya Hydroponic Afrika",
-        "description": "Lima malisho mapya ya mifugo ndani ya siku 4–8 kwa kutumia nafasi ndogo."
-      },
-      "mushroom": {
-        "title": "Kilimo cha Uyoga wa Oyster Nigeria",
-        "description": "Jifunze uzalishaji, uvunaji na uuzaji wa uyoga wa oyster kwa vitendo."
-      },
-      "cassava": {
-        "title": "Kilimo cha Muhogo Bila Palizi Nigeria",
-        "description": "Njia ya vitendo ya kuzalisha muhogo ndani ya miezi mitano bila viua magugu."
-      }
-    },
-    "categories": {
-      "crop": "Uzalishaji wa Mazao",
-      "livestock": "Ufugaji wa Mifugo",
-      "organic": "Kilimo Hai na Regenerative",
-      "agribusiness": "Biashara ya Kilimo na Usimamizi wa Shamba",
-      "inputs": "Pembejeo na Teknolojia za Kilimo",
-      "markets": "Data za Kilimo na Masoko"
-    },
-    "categoryDescriptions": {
-      "crop": "Maudhui ya vitendo kuhusu uzalishaji wa mazao, vitalu, upandaji na uvunaji.",
-      "livestock": "Uzalishaji wa mifugo, lishe, mabanda na usimamizi wa shamba.",
-      "organic": "Pembejeo hai, afya ya udongo na mbinu za kilimo kinachorejesha afya ya mazingira.",
-      "agribusiness": "Faida ya shamba, masoko, mipango ya shughuli na biashara ya kilimo.",
-      "inputs": "Mbegu, mbolea, pembejeo za kibaolojia, umwagiliaji na teknolojia ya kilimo.",
-      "markets": "Bei za mazao, bei za mbegu, taarifa za soko na masasisho ya data."
-    }
+    "browseGuides": "Vinjari miongozo"
   },
   "ebooks": {
     "eyebrow": "Vitabu pepe",
@@ -330,24 +296,97 @@
     "viewGuide": "Tazama mwongozo",
     "askWhatsApp": "Uliza swali kwenye WhatsApp",
     "instantDelivery": "Malipo ya mara moja · uwasilishaji wa kidijitali papo hapo",
-    "completeGuide": "Pata mwongozo kamili",
-    "cards": {
-      "bsf": {
-        "title": "Ufugaji wa Black Soldier Fly",
-        "tagline": "Geuza taka za kikaboni kuwa chanzo cha protini kwa mifugo na samaki"
-      },
-      "fodder": {
-        "title": "Kilimo cha Malisho ya Hydroponic",
-        "tagline": "Lima malisho mapya ya mifugo ndani ya siku 4–8 hata kwenye nafasi ndogo"
-      },
-      "mushroom": {
-        "title": "Mwongozo Kamili wa Kilimo cha Uyoga wa Oyster",
-        "tagline": "Njia ya vitendo inayotegemea utafiti ya kulima uyoga wa oyster"
-      },
-      "cassava": {
-        "title": "Mbinu ya Kilimo Bila Palizi",
-        "tagline": "Mwongozo wa miezi mitano wa kilimo cha muhogo bila viua magugu"
-      }
+    "completeGuide": "Pata mwongozo kamili"
+  },
+  "static": {
+    "about": {
+      "eyebrow": "Kuhusu sisi",
+      "title": "Maarifa ya kilimo ya vitendo, yanayotokana na utafiti halisi",
+      "intro": "GoOrganicAfrica imejengwa juu ya wazo moja rahisi: maarifa ya kilimo yanapaswa kuwa ya vitendo, yaliyojaribiwa na kushirikishwa kwa uhuru kote Afrika.",
+      "who": "Sisi ni nani",
+      "whoText": "Miongozo na zana za GoOrganicAfrica zimeandaliwa na {author} — mkulima, mtafiti wa kilimo na mtengenezaji wa mbolea hai mwenye cheti cha Kilimo tangu 2001. Kila mwongozo na kila data katika Kikokotoo chetu cha bure hutokana na uzoefu halisi wa uzalishaji na utafiti endelevu, si nadharia pekee.",
+      "what": "Tunachofanya",
+      "whatText": "Mbali na utafiti na uandishi, kazi ya GoOrganicAfrica inahusisha bidhaa kadhaa za kilimo hai:",
+      "inoc": "InoculumPlus — mbolea hai yenye msingi wa Mycorrhiza inayouzwa kwa wakulima Nigeria, Cameroon na Niger",
+      "organic": "OrganicGrow — suluhisho la kilimo hai kwa kuku, samaki na mifugo mingine, lililowafikia wakulima Cameroon na Ivory Coast",
+      "tools": "Zana na miongozo yetu",
+      "toolsIntro": "Tunatoa rasilimali mbili kuu kwa wakulima wa Afrika:",
+      "calculator": "Kikokotoo cha Bure cha Faida ya Shamba",
+      "calculatorText": " — hesabu gharama za uzalishaji, mapato, faida, ROI na bei ya usawa katika nchi {countries} za Afrika na biashara {enterprises} za kilimo, kwa kubadilisha sarafu kiotomatiki",
+      "guides": "Miongozo ya Kilimo Hai",
+      "guidesText": " — miongozo ya hatua kwa hatua kuhusu hydroponic fodder, ufugaji wa Black Soldier Fly, kilimo cha uyoga wa oyster na muhogo bila palizi",
+      "mission": "Dhamira yetu",
+      "missionText": "Kusaidia kufanya kilimo Nigeria, Afrika na duniani kuwa na faida zaidi na endelevu — kwa mwongozo na zana moja ya vitendo kwa wakati mmoja. Soma maarifa yetu ya hivi karibuni kwenye blogu ya GoOrganicAfrica.",
+      "external": "Rasilimali za Nje Tunazoziamini",
+      "externalText": "Kwa wakulima wanaotafuta data na utafiti zaidi wa kilimo, tunapendekeza:",
+      "fao": "FAO (Shirika la Chakula na Kilimo la Umoja wa Mataifa) — takwimu na utafiti wa kilimo duniani",
+      "iita": "IITA (Taasisi ya Kimataifa ya Kilimo cha Kitropiki) — utafiti wa mazao na kilimo unaolenga Afrika",
+      "calcBtn": "Jaribu Kikokotoo cha Bure",
+      "guidesBtn": "Vinjari Miongozo ya Kilimo",
+      "contactBtn": "Wasiliana nasi"
+    },
+    "contact": {
+      "eyebrow": "Wasiliana",
+      "title": "Wasiliana nasi",
+      "intro": "Una swali kuhusu mwongozo kabla ya kununua, unahitaji msaada wa kikokotoo, au unataka ushauri wa kilimo bila malipo? Wasiliana nasi moja kwa moja.",
+      "details": "Maelezo ya Mawasiliano",
+      "whatsapp": "Ongea nasi WhatsApp — ushauri wa kilimo bila malipo",
+      "help": "Tunaweza kukusaidia kwa nini?",
+      "help1": "Maswali kuhusu miongozo yetu ya kilimo hai",
+      "help2": "Msaada wa kutumia Kikokotoo cha Faida ya Shamba",
+      "help3": "Ushauri kuhusu hydroponic fodder, uyoga, BSF au muhogo",
+      "help4": "Taarifa kuhusu bidhaa zetu za mbolea hai (InoculumPlus, OrganicGrow)",
+      "help5": "Mafunzo na ushauri kwa wakulima Nigeria na Afrika",
+      "consult": "Ushauri Bila Malipo",
+      "consultText": "Kila ununuzi wa mwongozo unajumuisha ushauri wa WhatsApp bila malipo. Unaweza pia kuwasiliana nasi kabla ya kununua.",
+      "message": "Tutumie ujumbe WhatsApp",
+      "about": "Jifunze zaidi kutuhusu"
+    },
+    "privacy": {
+      "eyebrow": "Kisheria",
+      "title": "Sera ya Faragha",
+      "updated": "Ilisasishwa mwisho: Agosti 2026",
+      "who": "1. Sisi ni nani",
+      "whoText": "GoOrganicAfrica ni jukwaa la elimu ya kilimo na bidhaa za kidijitali linaloendeshwa na Amoo Oluwatoyin Owolabi nchini Nigeria. Tovuti hii hutoa Kikokotoo cha Bure, miongozo ya kilimo hai na makala kwa wakulima Afrika.",
+      "collect": "2. Taarifa Tunazokusanya",
+      "collect1": "Kikokotoo huhifadhi chaguo la nchi ndani ya kivinjari (localStorage). Data hii hubaki kwenye kifaa chako na haitumwi kwenye seva zetu.",
+      "collect2": "Ukituwasiliana nasi kupitia Mawasiliano, WhatsApp au barua pepe, tunapokea jina na maelezo yako kwa ajili ya kujibu ombi lako pekee.",
+      "ads": "3. Google AdSense",
+      "adsText": "Tovuti hii inaweza kuonyesha matangazo ya Google AdSense. Google hutumia cookies kulingana na ziara za awali. Unaweza kuzima matangazo yaliyobinafsishwa kupitia mipangilio ya Google.",
+      "external": "4. Viungo vya Nje",
+      "externalText": "Tovuti hii ina viungo vya Selar na tovuti nyingine. Hatuwajibiki kwa sera za faragha za tovuti za watu wengine.",
+      "cookies": "5. Cookies",
+      "cookiesText": "Tunatumia cookies za utendaji zinazohitajika kwa tovuti kufanya kazi. Hatutumii cookies za ufuatiliaji zaidi ya zinazowekwa na Google AdSense.",
+      "rights": "6. Haki Zako",
+      "rightsText": "Unaweza kufuta localStorage ya kivinjari chako wakati wowote. Kuomba kufutwa kwa taarifa ulizotupatia moja kwa moja, wasiliana nasi kupitia {email}.",
+      "disclaimer": "7. Kanusho",
+      "disclaimerText": "Hesabu zote za Kikokotoo ni makadirio tu na si ushauri wa kifedha, uwekezaji au kilimo. Utendaji halisi hutegemea mavuno, bei za pembejeo, hali ya hewa, wadudu, magonjwa, kazi, usafirishaji na soko. Thibitisha bei na gharama za eneo lako kabla ya kuwekeza.",
+      "contact": "8. Mawasiliano",
+      "contactText": "Kwa maswali kuhusu faragha, wasiliana nasi kupitia {email} au WhatsApp."
+    },
+    "dataUpdates": {
+      "eyebrow": "Uwazi wa Data",
+      "title": "Vyanzo na Masasisho ya Data za Kilimo",
+      "intro": "GoOrganicAfrica imeundwa kusasisha data za rejea za kilimo kutoka serikali, masoko na taasisi husika, huku mabadiliko yasiyo na uhakika yakipitiwa.",
+      "active": "Nchi zinazotumika",
+      "enterprises": "Biashara za kilimo",
+      "records": "Rekodi za bei kwa nchi",
+      "auto": "Ni nini kinaweza kusasishwa kiotomatiki?",
+      "auto1": "Bei za bidhaa za kilimo kutoka data za kuaminika.",
+      "auto2": "Bei za mbegu pamoja na aina, chapa, ukubwa, muuzaji na eneo pale zinapopatikana.",
+      "auto3": "Bei za mifugo na wanyama pale data ya kuaminika inapopatikana.",
+      "auto4": "Data za mbolea, chakula, umwagiliaji, kazi na gharama nyingine kutoka vyanzo vya kuaminika.",
+      "auto5": "Data za viwango vya ubadilishaji ili sarafu ziweze kusasishwa bila kutegemea makadirio ya kilimo.",
+      "protect": "Jinsi uchapishaji unavyolindwa",
+      "protectText": "Ukusanyaji wa kiotomatiki haumaanishi kubadilisha thamani bila ukaguzi. Mfumo huhifadhi chanzo, tarehe, kipimo na eneo na unaweza kutuma mabadiliko yapitiwe.",
+      "registry": "Orodha ya sasa ya vyanzo",
+      "publisher": "Mchapishaji",
+      "data": "Data",
+      "country": "Nchi",
+      "frequency": "Marudio",
+      "status": "Hali",
+      "latest": "Kipindi cha hivi karibuni cha rejea cha kikokotoo kilichogunduliwa:",
+      "verify": "Thibitisha bei kila wakati kwa wanunuzi, wauzaji na hali ya sasa ya soko kabla ya kuwekeza."
     }
   }
 }
