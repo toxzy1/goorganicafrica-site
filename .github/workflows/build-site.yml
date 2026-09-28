@@ -28,3 +28,5 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Run site architecture checks
+        run: npm run check
