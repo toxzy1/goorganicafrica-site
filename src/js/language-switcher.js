@@ -93,8 +93,11 @@
         : "/" + code + "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/");
     }
 
-    var englishMatch = path.match(new RegExp("^/(blog|ebooks|about|contact|privacy-policy|data-updates)(?:/(.*))?$"));
-    if (!englishMatch) return null;
+    var englishMatch = path.match(new RegExp("^/(blog|ebooks)(?:/(.*))?$"));
+    if (!englishMatch) {
+      var staticMatch = path.match(new RegExp("^/(about|contact|privacy-policy|data-updates)/?$"));
+      return staticMatch ? path : null;
+    }
 
     return code === "en"
       ? "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/")
