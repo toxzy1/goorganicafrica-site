@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: true
     <priority>0.8</priority>
   </url>
   <!-- Individual ebook pages -->
-  {% for ebook in collections.ebooks %}
+  {% for ebook in collections.ebooks | filterByLanguage(ebook.data.language or 'en') %}
   <url>
     <loc>{{ site.url }}{{ ebook.url }}</loc>
     <changefreq>monthly</changefreq>
@@ -37,7 +37,7 @@ eleventyExcludeFromCollections: true
     <priority>0.8</priority>
   </url>
   <!-- Blog posts -->
-  {% for post in collections.posts %}
+  {% for post in collections.posts | filterByLanguage(post.data.language or 'en') %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     <changefreq>monthly</changefreq>
