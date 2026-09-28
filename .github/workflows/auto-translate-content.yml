@@ -24,9 +24,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
+
+      - name: Restore translation cache
+        id: translation-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: .translation-cache.json
+          key: goa-translation-cache-v2-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            goa-translation-cache-v2-${{ github.ref_name }}-
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -34,7 +43,7 @@ jobs:
           python-version: "3.12"
 
       - name: Generate multilingual drafts
-        timeout-minutes: 90
+        timeout-minutes: 180
         run: |
           python -u scripts/auto-translate-content.py
           echo "Generated translation files:"
@@ -62,3 +71,10 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git push origin main
+
+      - name: Save translation cache
+        if: always()
+        uses: actions/cache/save@v5
+        with:
+          path: .translation-cache.json
+          key: goa-translation-cache-v2-${{ github.ref_name }}-${{ github.run_id }}
