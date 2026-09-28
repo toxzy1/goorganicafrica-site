@@ -57,8 +57,8 @@ if (!read('src/_includes/layouts/base.njk').includes('site.meta_title')) throw n
 if (!read('src/_includes/layouts/base.njk').includes('site.meta_description')) throw new Error('Global SEO description fallback is not wired to site settings.');
 if (!read('src/_includes/layouts/base.njk').includes('{% if meta_title %}')) throw new Error('Custom meta titles may be duplicated with the site name.');
 if (!read('src/sitemap.njk').includes('/data-updates/')) throw new Error('Data updates page missing from sitemap.');
-if (!read('src/ebooks/ebooks.11tydata.js').includes('active === false ? false')) throw new Error('Inactive eBooks are not protected from output.');
-if (!read('src/blog/posts/posts.11tydata.js').includes('active === false ? false')) throw new Error('Inactive blog posts are not protected from output.');
+if (!read('src/ebooks/ebooks.11tydata.js').includes('data.active === false')) throw new Error('Inactive eBooks are not protected from output.');
+if (!read('src/blog/posts/posts.11tydata.js').includes('data.active === false')) throw new Error('Inactive blog posts are not protected from output.');
 if (!read('src/_data/site.js').includes('replace(/\\/+$/, "")')) throw new Error('Canonical site URL is not normalized.');
 if (read('admin/index.html').includes('netlifyIdentity') || read('admin/index.html').includes('identity.netlify.com')) throw new Error('Legacy Netlify Identity admin auth remains.');
 if (read('src/index.njk').includes('Countries reached')) throw new Error('Hard-coded country-reach statistic remains on homepage.');
