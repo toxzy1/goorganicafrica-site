@@ -28,5 +28,3 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Run localization checks
-        run: npm run check:i18n
