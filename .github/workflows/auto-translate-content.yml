@@ -34,7 +34,7 @@ jobs:
           python-version: "3.12"
 
       - name: Generate multilingual drafts
-        timeout-minutes: 30
+        timeout-minutes: 90
         run: |
           python -u scripts/auto-translate-content.py
           echo "Generated translation files:"
