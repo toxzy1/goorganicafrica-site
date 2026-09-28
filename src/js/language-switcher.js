@@ -78,17 +78,19 @@
 
   function localizedContentUrl(code) {
     var path = window.location.pathname.replace(/\\/+$/, "") || "/";
-    var match = path.match(/^\\/(fr|ar|pt|sw)\\/(blog|ebooks)(?:\\/(.*))?$/);
-    if (!match) {
-      match = path.match(/^\\/(blog|ebooks)(?:\\/(.*))?$/);
-      if (!match) return null;
+    var localizedMatch = path.match(new RegExp("^/(fr|ar|pt|sw)/(blog|ebooks)(?:/(.*))?$"));
+    if (localizedMatch) {
       return code === "en"
-        ? "/" + match[1] + (match[2] ? "/" + match[2] + "/" : "/")
-        : "/" + code + "/" + match[1] + (match[2] ? "/" + match[2] + "/" : "/");
+        ? "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/")
+        : "/" + code + "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/");
     }
+
+    var englishMatch = path.match(new RegExp("^/(blog|ebooks)(?:/(.*))?$"));
+    if (!englishMatch) return null;
+
     return code === "en"
-      ? "/" + match[2] + (match[3] ? "/" + match[3] + "/" : "/")
-      : "/" + code + "/" + match[2] + (match[3] ? "/" + match[3] + "/" : "/");
+      ? "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/")
+      : "/" + code + "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/");
   }
 
   function updateLocalizedNavigation(code) {
