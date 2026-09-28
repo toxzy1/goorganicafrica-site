@@ -77,29 +77,27 @@
   }
 
   function localizedContentUrl(code) {
-    var path = window.location.pathname.replace(/\\/+$/, "") || "/";
+    var path = window.location.pathname.replace(/\/+$/, "") || "/";
 
     // Static pages intentionally keep one shared URL; only their text changes.
-    if (/^\\/(about|contact|privacy-policy|data-updates)\\/?$/.test(path)) {
+    if (/^\/(about|contact|privacy-policy|data-updates)\/?$/.test(path)) {
       return path;
     }
 
     // Home page keeps the language prefix.
-    if (path === "/" || /^\\/(fr|ar|pt|sw)$/.test(path)) {
+    if (path === "/" || /^\/(fr|ar|pt|sw)$/.test(path)) {
       return code === "en" ? "/" : "/" + code + "/";
     }
 
-    // Blog and eBook pages use the same slug in every language. Build the
-    // destination from the current URL rather than trusting per-page links,
-    // which prevents a language change from jumping to an unrelated page.
-    var localizedMatch = path.match(/^\\/(fr|ar|pt|sw)\\/(blog|ebooks)(?:\\/(.*))?$/);
+    // Blog and eBook pages use the same slug in every language.
+    var localizedMatch = path.match(/^\/(fr|ar|pt|sw)\/(blog|ebooks)(?:\/(.*))?$/);
     if (localizedMatch) {
       return code === "en"
         ? "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/")
         : "/" + code + "/" + localizedMatch[2] + (localizedMatch[3] ? "/" + localizedMatch[3] + "/" : "/");
     }
 
-    var englishMatch = path.match(/^\\/(blog|ebooks)(?:\\/(.*))?$/);
+    var englishMatch = path.match(/^\/(blog|ebooks)(?:\/(.*))?$/);
     if (englishMatch) {
       return code === "en"
         ? "/" + englishMatch[1] + (englishMatch[2] ? "/" + englishMatch[2] + "/" : "/")
