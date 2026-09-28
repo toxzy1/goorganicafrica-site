@@ -43,17 +43,6 @@ layout: layouts/base.njk
     <span class="eyebrow">{{ category }}</span>
     <h1>{{ title }}</h1>
 
-    {% if translation_group %}
-    <div class="translation-links" aria-label="Available article languages">
-      <strong data-i18n="blog.language">Language:</strong>
-      {% set hasTranslation = false %}
-      {% for p in collections.posts %}
-        {% if p.data.translation_group == translation_group %}
-          {% set hasTranslation = true %}<a data-content-variant data-content-status="{{ p.data.translation_status or 'published' }}" data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}" hreflang="{{ p.data.language or 'en' }}">{{ p.data.language or 'en' }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}
     <div class="translation-links" aria-label="Available article languages">
       <strong data-i18n="blog.language">Language:</strong>
       {% for p in collections.posts %}
