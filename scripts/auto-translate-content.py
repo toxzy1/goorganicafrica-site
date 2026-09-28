@@ -162,7 +162,7 @@ def _translate_chunk(chunk, target, cache):
 # after translation by numeric_signature(). Earlier placeholder schemes caused
 # Swahili and other languages to lose or alter numbers, so numbers are no
 # longer replaced with artificial tokens.
-NUMBER_RE = re.compile(r"\d+(?:[\.,]\d+)?")
+NUMBER_RE = re.compile(r"\d[\d\s]*(?:[\.,]\d+)?")
 BRAND_RE = re.compile(r"GoOrganicAfrica", re.I)
 
 def _protect(text):
@@ -249,8 +249,27 @@ def apply_glossary(text, target):
         text = re.sub(pattern, replacement, text, flags=re.I)
     return text
 
+def _canonical_number(value):
+    # Accept ordinary localized formatting such as 1000 / 1 000 / 1,000
+    # and decimal comma/dot forms such as 0.73 / 0,73. The comparison is
+    # about numeric value, not the punctuation convention used by a language.
+    value = value.strip().replace("\u00a0", "").replace(" ", "")
+    if "," in value and "." in value:
+        # Last separator is the decimal separator when both are present.
+        if value.rfind(",") > value.rfind("."):
+            value = value.replace(".", "").replace(",", ".")
+        else:
+            value = value.replace(",", "")
+    elif "," in value:
+        left, right = value.rsplit(",", 1)
+        value = left.replace(",", "") + ("." + right if len(right) != 3 else right)
+    elif "." in value:
+        left, right = value.rsplit(".", 1)
+        value = left.replace(".", "") + ("." + right if len(right) != 3 else right)
+    return value
+
 def numeric_signature(text):
-    return Counter(NUMBER_RE.findall(text))
+    return Counter(_canonical_number(v) for v in NUMBER_RE.findall(text))
 
 def url_signature(text):
     return Counter(re.findall(r"https?://[^\s)\]<>\"']+", text))
