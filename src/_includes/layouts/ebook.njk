@@ -19,6 +19,15 @@ layout: layouts/base.njk
 }
 {% endset %}
 
+<div id="goa-language-targets" aria-hidden="true" style="display:none;"
+{% for localized in collections.ebooks %}{% if localized.data.translation_group == (translation_group or slug) and (localized.data.translation_status or 'published') != 'in_review' %} data-url-{{ localized.data.language or 'en' }}="{{ localized.url }}"{% endif %}{% endfor %}>
+  {% for localized in collections.ebooks %}
+    {% if localized.data.translation_group == (translation_group or slug) and (localized.data.translation_status or 'published') != 'in_review' %}
+      <span data-language="{{ localized.data.language or 'en' }}" data-url="{{ localized.url }}"></span>
+    {% endif %}
+  {% endfor %}
+</div>
+
 <div class="translation-links" aria-label="Available guide languages">
   <strong data-i18n="blog.language">Language:</strong>
   {% for localized in collections.ebooks %}
