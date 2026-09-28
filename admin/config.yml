@@ -293,22 +293,82 @@ collections:
 
 
   - name: "translation_automation"
-    label: "🤖 Automatic Free Translation"
+    label: "🛡️ Translation Governance & Automation"
     files:
       - label: "Translation Automation Settings"
         name: "settings"
         file: "src/_data/translationSettings.json"
         editor: {preview: false}
         fields:
-          - {label: "Enable Translation Automation", name: "enabled", widget: "boolean", default: true, hint: "Keep ON to automatically prepare translations when English Blog/eBook content changes."}
+          - {label: "Enable Translation System", name: "enabled", widget: "boolean", default: true}
           - {label: "Source Language", name: "source_language", widget: "select", options: ["en"], default: "en"}
-          - {label: "Target Languages", name: "target_languages", widget: "select", multiple: true, options: ["fr", "ar", "pt", "sw"], default: ["fr", "ar", "pt", "sw"], hint: "French, Arabic, Portuguese and Kiswahili."}
-          - {label: "Automatic Generation", name: "automatic_generation", widget: "boolean", default: true}
-          - {label: "Require Review", name: "require_review", widget: "boolean", default: true, hint: "Machine translations are marked in_review so they can be checked before publishing."}
-          - {label: "Translation Status for New Drafts", name: "mark_new_translations", widget: "select", options: ["in_review", "translated"], default: "in_review"}
-          - {label: "Automatically Update Existing Translations", name: "auto_update_existing_translations", widget: "boolean", default: true, hint: "When English source content changes, regenerate the corresponding language versions."}
+          - {label: "Target Languages", name: "target_languages", widget: "select", multiple: true, options: ["fr", "ar", "pt", "sw"], default: ["fr", "ar", "pt", "sw"]}
+          - {label: "Automatic Generation", name: "automatic_generation", widget: "boolean", default: false, hint: "Keep OFF until a translation engine has passed quality testing. Draft generation must never publish automatically."}
+          - {label: "Require Human Review", name: "require_review", widget: "boolean", default: true}
+          - {label: "New Translation Status", name: "mark_new_translations", widget: "select", options: ["in_review", "translated"], default: "in_review"}
+          - {label: "Automatically Update Existing Translations", name: "auto_update_existing_translations", widget: "boolean", default: false, hint: "Keep OFF to protect reviewed translations from automatic overwrite."}
+          - {label: "Publish Machine Translations Automatically", name: "publish_machine_translations_automatically", widget: "boolean", default: false}
+          - {label: "Preserve Reviewed Translations", name: "preserve_reviewed_translations", widget: "boolean", default: true}
+          - {label: "Fallback to English", name: "fallback_to_source_language", widget: "boolean", default: true}
+          - {label: "Review Queue", name: "review_queue", widget: "boolean", default: true}
           - {label: "Notes", name: "notes", widget: "text", required: false}
-          
+
+  - name: "content_governance"
+    label: "🔐 CMS Content Governance & Safety"
+    files:
+      - label: "Publishing & Translation Safety Rules"
+        name: "governance"
+        file: "src/_data/cmsSettings.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Source of Truth", name: "content_governance.source_of_truth", widget: "select", options: ["en"], default: "en"}
+          - {label: "Translation Workflow", name: "content_governance.translation_workflow", widget: "select", options: ["review_before_publish"], default: "review_before_publish"}
+          - {label: "Allowed Content Statuses", name: "content_governance.allowed_statuses", widget: "select", multiple: true, options: ["draft", "in_review", "published", "archived"], default: ["draft", "in_review", "published", "archived"]}
+          - {label: "Default New Content Status", name: "content_governance.default_new_content_status", widget: "select", options: ["draft", "in_review"], default: "draft"}
+          - {label: "Default New Translation Status", name: "content_governance.default_new_translation_status", widget: "select", options: ["in_review"], default: "in_review"}
+          - {label: "Allow Unreviewed Publication", name: "content_governance.allow_unreviewed_publication", widget: "boolean", default: false}
+          - {label: "Allow Translation Overwrite", name: "content_governance.allow_translation_overwrite", widget: "boolean", default: false}
+          - {label: "Require Source Before Translation", name: "content_governance.require_source_content_before_translation", widget: "boolean", default: true}
+          - {label: "Require Translation Review Before Publication", name: "content_governance.require_translation_review_before_publication", widget: "boolean", default: true}
+          - label: "Translation Controls"
+            name: "translation_control"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Translation System Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Automatic Generation", name: "automatic_generation", widget: "boolean", default: false}
+              - {label: "Provider Mode", name: "provider_mode", widget: "string", default: "manual_or_approved_draft_engine"}
+              - {label: "Auto-update Existing Translations", name: "auto_update_existing_translations", widget: "boolean", default: false}
+              - {label: "Auto-publish Machine Translations", name: "publish_machine_translations_automatically", widget: "boolean", default: false}
+              - {label: "Preserve Reviewed Translations", name: "preserve_reviewed_translations", widget: "boolean", default: true}
+              - {label: "Fallback to Source Language", name: "fallback_to_source_language", widget: "boolean", default: true}
+              - {label: "Review Queue Enabled", name: "review_queue", widget: "boolean", default: true}
+              - {label: "Target Languages", name: "target_languages", widget: "list", default: ["fr", "ar", "pt", "sw"]}
+          - label: "Sustainability & Audit"
+            name: "cms_sustainability"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Translation Memory", name: "translation_memory", widget: "boolean", default: true}
+              - {label: "Glossary Enabled", name: "glossary_enabled", widget: "boolean", default: true}
+              - {label: "Per-language Glossary", name: "per_language_glossary", widget: "boolean", default: true}
+              - {label: "Translation History", name: "translation_history", widget: "boolean", default: true}
+              - {label: "Audit Log", name: "audit_log", widget: "boolean", default: true}
+              - {label: "Rollback Supported", name: "rollback_supported", widget: "boolean", default: true}
+              - {label: "Confirm Bulk Overwrite", name: "bulk_overwrite_requires_confirmation", widget: "boolean", default: true}
+              - {label: "Confirm Published Translation Deletion", name: "delete_published_translation_requires_confirmation", widget: "boolean", default: true}
+              - {label: "Configure New Languages", name: "new_language_requires_configuration", widget: "boolean", default: true}
+          - label: "Publishing Safety"
+            name: "publishing_safety"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "English Remains Publishable Without Translation", name: "english_remains_publishable_if_translation_is_missing", widget: "boolean", default: true}
+              - {label: "Missing Translation Behavior", name: "missing_translation_behavior", widget: "select", options: ["fallback_to_english"], default: "fallback_to_english"}
+              - {label: "Unreviewed Translation Behavior", name: "unreviewed_translation_behavior", widget: "select", options: ["hide_from_language_switcher_and_navigation"], default: "hide_from_language_switcher_and_navigation"}
+              - {label: "Noindex Unreviewed Translations", name: "unreviewed_translation_indexing", widget: "boolean", default: false}
+              - {label: "Failed Translation Must Not Block Build", name: "failed_translation_must_not_block_build", widget: "boolean", default: true}
+
   - name: "languages_and_translations"
     label: "🌐 Languages & Translations"
     files:
