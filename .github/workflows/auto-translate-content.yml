@@ -33,9 +33,9 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v9-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v10-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
-            goa-translation-cache-v9-${{ github.ref_name }}-
+            goa-translation-cache-v10-${{ github.ref_name }}-
 
       - name: Restore Argos language-model cache
         id: argos-cache
@@ -80,21 +80,17 @@ jobs:
           PY
           echo "Universal translation quality checks completed by the generator."
 
-      - name: Publish reviewed translation drafts to main
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit only newly generated translation drafts
         run: |
           if [ -z "$(git status --porcelain -- src/blog/posts src/ebooks)" ]; then
-            echo "No translation files were generated."
+            echo "No new translation files were generated."
             exit 0
           fi
 
           git config user.name "GoOrganicAfrica Translation Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/blog/posts src/ebooks
-          echo "Translation files ready for review:"
-          git status --short -- src/blog/posts src/ebooks
-          git commit -m "Draft multilingual content translations"
+          git commit -m "Draft new multilingual content translations"
           git fetch origin main
           git rebase origin/main
           git push origin main
@@ -104,4 +100,4 @@ jobs:
         uses: actions/cache/save@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v9-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v10-${{ github.ref_name }}-${{ github.run_id }}

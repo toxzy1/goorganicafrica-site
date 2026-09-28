@@ -5,6 +5,6 @@
   "automatic_generation": true,
   "require_review": true,
   "mark_new_translations": "in_review",
-  "auto_update_existing_translations": true,
-  "notes": "English is the source of truth. The free Argos Translate engine creates draft translations in GitHub Actions. Review translations before publishing."
+  "auto_update_existing_translations": false,
+  "notes": "English is the source of truth. Free Argos Translate may create drafts only when a translation file is missing. Existing translations are protected from automatic overwrite until a reviewed replacement is deliberately approved."
 }
