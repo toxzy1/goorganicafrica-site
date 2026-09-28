@@ -10,7 +10,13 @@
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
   function currentLanguage() {
-    try { return document.documentElement.lang || localStorage.getItem("goa_language") || "en"; }
+    // Language-prefixed URLs are authoritative for localized content.
+    // Shared pages (About, Contact, Privacy, Data Updates, Calculator)
+    // remember the user's selected language because their URL stays unchanged.
+    var path = window.location.pathname.replace(/\/+$/, "") || "/";
+    var urlLanguage = path.match(/^\/(fr|ar|pt|sw)(?:\/|$)/);
+    if (urlLanguage) return urlLanguage[1];
+    try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
     catch (_) { return document.documentElement.lang || "en"; }
   }
 
@@ -190,7 +196,11 @@
         var requested = this.value;
         var targetUrl = localizedContentUrl(requested);
         setLanguage(requested);
-        if (targetUrl) {
+        // Shared pages intentionally keep the same URL. Do not reload them,
+        // because a reload restores the server's default <html lang="en">.
+        var currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+        var targetPath = targetUrl ? new URL(targetUrl, window.location.origin).pathname.replace(/\/+$/, "") || "/" : null;
+        if (targetUrl && targetPath !== currentPath) {
           window.location.assign(targetUrl);
           return;
         }
