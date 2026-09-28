@@ -31,13 +31,6 @@
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
       {% for post in localizedPosts %}
       {% if (post.data.translation_status or "published") != "in_review" %}
-      {% set postCategoryKey = post.data.category %}
-      {% if post.data.category == "Crop Production" or post.data.category == "crop-production" %}{% set postCategoryKey = "crop" %}{% endif %}
-      {% if post.data.category == "Livestock Farming" or post.data.category == "livestock-farming" %}{% set postCategoryKey = "livestock" %}{% endif %}
-      {% if post.data.category == "Organic & Regenerative Farming" or post.data.category == "organic-farming" %}{% set postCategoryKey = "organic" %}{% endif %}
-      {% if post.data.category == "Agribusiness & Farm Business" or post.data.category == "agribusiness" %}{% set postCategoryKey = "agribusiness" %}{% endif %}
-      {% if post.data.category == "Farm Inputs & Technology" or post.data.category == "farm-inputs" %}{% set postCategoryKey = "inputs" %}{% endif %}
-      {% if post.data.category == "Agricultural Data & Markets" or post.data.category == "farming-data" %}{% set postCategoryKey = "markets" %}{% endif %}
       <a href="{{ post.url }}" style="text-decoration:none;">
         <div class="ebook-card" style="height:100%;">
           {% if post.data.featured_image %}
