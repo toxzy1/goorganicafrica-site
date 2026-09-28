@@ -277,13 +277,21 @@ def quality_check(source, translated, path, target):
         raise RuntimeError(f"URL changed or lost in {path} ({target})")
     if tag_signature(source) != tag_signature(translated):
         raise RuntimeError(f"HTML tags changed or lost in {path} ({target})")
-    # Catch the exact class of spacing corruption seen in the previous drafts.
-    if re.search(r"[A-Za-zÀ-ÿ]\d", translated) or re.search(r"\d[A-Za-zÀ-ÿ]", translated):
-        compact = re.findall(r"[A-Za-zÀ-ÿ]\d|\d[A-Za-zÀ-ÿ]", translated)
-        allowed = {"F1", "F2", "B2B", "H2", "H3", "H4", "CO2"}
-        bad = [x for x in compact if x not in allowed]
-        if bad:
-            raise RuntimeError(f"Number/word spacing corruption in {path} ({target}): {bad[:5]}")
+    # Check visible prose only. HTML tags, URLs, Markdown destinations, and
+    # inline code are structural data, not prose, so they must never trigger
+    # a false positive (for example <h2> or <p>).
+    visible = re.sub(r"<!--(?:.|\\n)*?-->|<[^>]+>|https?://[^\\s)\\]<>\\\"\']+|`[^`]*`", " ", translated, flags=re.S)
+    visible = re.sub(r"!\\[([^\\]]*)\\]\\([^)]*\\)", r"\\1", visible)
+    visible = re.sub(r"\\[([^\\]]*)\\]\\([^)]*\\)", r"\\1", visible)
+
+    # Detect letters touching digits in rendered prose, regardless of script.
+    # This catches corruption such as "300tonnes" and "2024et", while the
+    # explicit technical whitelist permits legitimate forms such as F1/CO2.
+    compact = re.findall(r"[^\\W\\d_]\\d|\\d[^\\W\\d_]", visible, flags=re.UNICODE)
+    allowed = {"F1", "F2", "B2B", "H2", "H3", "H4", "CO2"}
+    bad = [x for x in compact if x.upper() not in allowed]
+    if bad:
+        raise RuntimeError(f"Number/word spacing corruption in {path} ({target}): {bad[:5]}")
 
 def translate_file(path, target, overwrite, status, cache):
     source = path.read_text(encoding="utf-8")
