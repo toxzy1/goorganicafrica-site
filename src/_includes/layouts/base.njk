@@ -9,6 +9,14 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="robots" content="{{ "noindex, nofollow" if translation_status == "in_review" else "index, follow" }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% if page.url == "/" or page.url in ["/fr/","/ar/","/pt/","/sw/"] %}
+  {% for lang in siteLanguages.languages %}
+    {% if lang.enabled != false %}
+  <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}">
+    {% endif %}
+  {% endfor %}
+  {% endif %}
+
   {% if translation_group %}
   {% for p in collections.posts %}
     {% if p.data.translation_group == translation_group and p.data.active != false and (p.data.translation_status or "published") != "in_review" %}
