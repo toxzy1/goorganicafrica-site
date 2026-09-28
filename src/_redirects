@@ -20,3 +20,8 @@
 /cm/farm-profit-calculator /cm/en/farm-profit-calculator/ 301
 /et/farm-profit-calculator/ /et/en/farm-profit-calculator/ 301
 /et/farm-profit-calculator /et/en/farm-profit-calculator/ 301
+/en/ / 301
+/en/blog /blog/ 301
+/en/blog/* /blog/:splat 301
+/en/ebooks /ebooks/ 301
+/en/ebooks/* /ebooks/:splat 301
