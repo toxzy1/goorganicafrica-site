@@ -77,7 +77,7 @@ def _translate_chunk(chunk, target, cache):
     return result
 
 PROTECTED_TOKEN_RE = re.compile(
-    r"(?:₦|NGN|\\$|€|£|¥)?(?:\\d{1,3}(?:[,\\. ]\\d{3})*(?:\\.\\d+)?|\\d+(?:[\\. ]\\d+)?)(?:%|\\s*(?:kg|g|mg|ml|L|ha|ac|acre|acres|tons?|tonnes?|days?|weeks?|hours?|minutes?|\\$|€|£|¥|₦|NGN))?",
+    r"GoOrganicAfrica|(?:₦|NGN|\\$|€|£|¥)?(?:\\d{1,3}(?:[,\\. ]\\d{3})*(?:\\.\\d+)?|\\d+(?:[\\. ]\\d+)?)(?:%|\\s*(?:kg|g|mg|ml|L|ha|ac|acre|acres|tons?|tonnes?|days?|weeks?|hours?|minutes?|\\$|€|£|¥|₦|NGN))?",
     re.I
 )
 
@@ -97,36 +97,30 @@ def _translate_plain_text(text, target, cache):
             if piece: chunks.append(piece)
         else:
             current += sentence
+    if current: chunks.append(current)
     return "".join(_translate_chunk(c, target, cache) if c.strip() and re.search(r"[A-Za-z]", c) else c for c in chunks)
 
 def translate_text(text, target, cache):
     if not text or not text.strip() or not re.search(r"[A-Za-z]", text): return text
 
-    # Never allow the machine translator to reinterpret figures, currencies,
-    # percentages, measurements, or the GoOrganicAfrica brand name.
-    protected = []
-    def hold(match):
-        protected.append(match.group(0))
-        return f" __GOA_PROTECTED_{len(protected)-1}__ "
+    # Translate around protected tokens rather than inserting placeholders.
+    # This prevents the translation service from changing currencies, figures,
+    # measurements, percentages, or the GoOrganicAfrica brand.
+    parts = PROTECTED_TOKEN_RE.split(text)
+    matches = PROTECTED_TOKEN_RE.findall(text)
+    translated_parts = []
+    mi = 0
+    for part in parts:
+        if part:
+            translated_parts.append(_translate_plain_text(part, target, cache) if re.search(r"[A-Za-z]", part) else part)
+        if mi < len(matches):
+            translated_parts.append(matches[mi])
+            mi += 1
+    translated = "".join(translated_parts)
 
-    # Protect the brand and numeric/currency tokens before translation.
-    marked = re.sub(r"GoOrganicAfrica", hold, text, flags=re.I)
-    marked = PROTECTED_TOKEN_RE.sub(hold, marked)
-
-    translated = _translate_plain_text(marked, target, cache)
-
-    # Restore exact source tokens. This also prevents ₦ being changed to ¥.
-    for i, token in enumerate(protected):
-        translated = translated.replace(f"__GOA_PROTECTED_{i}__", token)
-
-    # Arabic readers commonly expect Arabic-Indic digits. Keep scientific
-    # names and URLs untouched, while localising ordinary numeric tokens.
     if target == "ar":
-        def arabic_digits(match):
-            return str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
         def localise_num(match):
-            value = match.group(0)
-            return value.translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩"))
+            return match.group(0).translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩"))
         translated = re.sub(r"(?<![A-Za-z])\\d+(?:[.,]\\d+)?", localise_num, translated)
 
     return translated
