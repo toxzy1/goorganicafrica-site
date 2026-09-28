@@ -321,15 +321,20 @@ collections:
         file: "src/_data/cmsSettings.json"
         editor: {preview: false}
         fields:
-          - {label: "Source of Truth", name: "content_governance.source_of_truth", widget: "select", options: ["en"], default: "en"}
-          - {label: "Translation Workflow", name: "content_governance.translation_workflow", widget: "select", options: ["review_before_publish"], default: "review_before_publish"}
-          - {label: "Allowed Content Statuses", name: "content_governance.allowed_statuses", widget: "select", multiple: true, options: ["draft", "in_review", "published", "archived"], default: ["draft", "in_review", "published", "archived"]}
-          - {label: "Default New Content Status", name: "content_governance.default_new_content_status", widget: "select", options: ["draft", "in_review"], default: "draft"}
-          - {label: "Default New Translation Status", name: "content_governance.default_new_translation_status", widget: "select", options: ["in_review"], default: "in_review"}
-          - {label: "Allow Unreviewed Publication", name: "content_governance.allow_unreviewed_publication", widget: "boolean", default: false}
-          - {label: "Allow Translation Overwrite", name: "content_governance.allow_translation_overwrite", widget: "boolean", default: false}
-          - {label: "Require Source Before Translation", name: "content_governance.require_source_content_before_translation", widget: "boolean", default: true}
-          - {label: "Require Translation Review Before Publication", name: "content_governance.require_translation_review_before_publication", widget: "boolean", default: true}
+          - label: "Content Governance"
+            name: "content_governance"
+            widget: "object"
+            collapsed: false
+            fields:
+              - {label: "Source of Truth", name: "source_of_truth", widget: "select", options: ["en"], default: "en"}
+              - {label: "Translation Workflow", name: "translation_workflow", widget: "select", options: ["review_before_publish"], default: "review_before_publish"}
+              - {label: "Allowed Content Statuses", name: "allowed_statuses", widget: "select", multiple: true, options: ["draft", "in_review", "published", "archived"], default: ["draft", "in_review", "published", "archived"]}
+              - {label: "Default New Content Status", name: "default_new_content_status", widget: "select", options: ["draft", "in_review"], default: "draft"}
+              - {label: "Default New Translation Status", name: "default_new_translation_status", widget: "select", options: ["in_review"], default: "in_review"}
+              - {label: "Allow Unreviewed Publication", name: "allow_unreviewed_publication", widget: "boolean", default: false}
+              - {label: "Allow Translation Overwrite", name: "allow_translation_overwrite", widget: "boolean", default: false}
+              - {label: "Require Source Before Translation", name: "require_source_content_before_translation", widget: "boolean", default: true}
+              - {label: "Require Translation Review Before Publication", name: "require_translation_review_before_publication", widget: "boolean", default: true}
           - label: "Translation Controls"
             name: "translation_control"
             widget: "object"
