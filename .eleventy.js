@@ -81,4 +81,3 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
   };
 };
-// already defined above - just adding new passthroughs
