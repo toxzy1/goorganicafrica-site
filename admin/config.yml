@@ -97,7 +97,7 @@ collections:
       - {label: "Content Language", name: "language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en"}
       - {label: "Translation Group", name: "translation_group", widget: "string", required: false, hint: "Use the same stable group ID for every language version of this eBook, e.g. ebook-bsf."}
       - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", hint: "The language of the original/source content for this translation group."}
-      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "source", hint: "Mark needs_update when the source article changes and this translation needs review."}
+      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "in_review", "published", "translated", "needs_update", "archived"], default: "source", hint: "Mark needs_update when the source article changes and this translation needs review."}
       - {label: "Display Order", name: "order", widget: "number", value_type: "int"}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Audience", name: "audience", widget: "list"}
