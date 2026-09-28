@@ -77,12 +77,12 @@ def _translate_chunk(chunk, target, cache):
     return result
 
 PROTECTED_TOKEN_RE = re.compile(
-    r"GoOrganicAfrica|(?:₦|NGN|\\$|€|£|¥)?(?:\\d{1,3}(?:[,\\. ]\\d{3})*(?:\\.\\d+)?|\\d+(?:[\\. ]\\d+)?)(?:%|\\s*(?:kg|g|mg|ml|L|ha|ac|acre|acres|tons?|tonnes?|days?|weeks?|hours?|minutes?|\\$|€|£|¥|₦|NGN))?",
+    r"GoOrganicAfrica|(?:₦|NGN|\$|€|£|¥)?(?:\d{1,3}(?:[,\. ]\d{3})*(?:\.\d+)?|\d+(?:[\. ]\d+)?)(?:%|\s*(?:kg|g|mg|ml|L|ha|ac|acre|acres|tons?|tonnes?|days?|weeks?|hours?|minutes?|\$|€|£|¥|₦|NGN))?",
     re.I
 )
 
 def _translate_plain_text(text, target, cache):
-    sentences = re.split(r"(?<=[.!?])(?=\\s+|$)", text)
+    sentences = re.split(r"(?<=[.!?])(?=\s+|$)", text)
     chunks, current, max_chars = [], "", 3500
     for sentence in sentences:
         if not sentence: continue
@@ -121,7 +121,7 @@ def translate_text(text, target, cache):
     if target == "ar":
         def localise_num(match):
             return match.group(0).translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩"))
-        translated = re.sub(r"(?<![A-Za-z])\\d+(?:[.,]\\d+)?", localise_num, translated)
+        translated = re.sub(r"(?<![A-Za-z])\d+(?:[.,]\d+)?", localise_num, translated)
 
     return translated
 
