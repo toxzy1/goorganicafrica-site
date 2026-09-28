@@ -95,9 +95,9 @@ layout: layouts/base.njk
       <h2 data-i18n="ebooks.youMightLike">You Might Also Like</h2>
     </div>
     <div class="ebook-grid">
-      {% for ebook in collections.ebooks %}
-        {% if ebook.data.slug != slug and (ebook.data.language or 'en') == (language or 'en') and (ebook.data.translation_status or 'published') != 'in_review' %}
-        <a class="ebook-card content-variant" href="{{ ebook.url }}" data-content-group="{{ ebook.data.translation_group or ebook.data.slug }}" data-content-language="{{ ebook.data.language or 'en' }}">
+      {% for ebook in collections.ebooks | filterByLanguage(language or 'en') %}
+        {% if ebook.data.slug != slug %}
+        <a class="ebook-card" href="{{ ebook.url }}">
           <img class="ebook-card-icon" src="{{ ebook.data.icon }}" alt="{{ ebook.data.title }}">
           <h3>{{ ebook.data.title }}</h3>
           <p class="tagline">{{ ebook.data.tagline }}</p>
