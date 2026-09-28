@@ -48,8 +48,17 @@ module.exports = function (eleventyConfig) {
     return (items || []).find((item) => item && item.data && item.data.slug === slug);
   });
 
-  // Find the localized version of a content item without accidentally
-  // returning the English source when several languages share the same slug.
+  eleventyConfig.addFilter("filterByLanguage", (items, language) => {
+    const targetLanguage = language || "en";
+    return (items || []).filter((item) => {
+      return item && item.data &&
+        (item.data.language || "en") === targetLanguage &&
+        (item.data.active !== false) &&
+        (item.data.translation_status || "published") !== "in_review";
+    });
+  });
+
+  // Find the localized version of a content item by stable slug and language.
   eleventyConfig.addFilter("findByDataSlugAndLanguage", (items, slug, language) => {
     const targetLanguage = language || "en";
     return (items || []).find((item) => {
