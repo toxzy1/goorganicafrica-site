@@ -77,26 +77,35 @@
   }
 
   function localizedContentUrl(code) {
-    // Content pages publish an explicit, server-generated language map.
-    // Never derive or guess article/eBook destinations from the current URL.
+    // Detail pages publish an explicit, server-generated language map.
+    // Prefer that exact destination and never guess a translated content slug.
     var map = document.getElementById("goa-language-targets");
     if (map) {
       var target = map.getAttribute("data-url-" + code);
-      return target || null;
+      if (target) return target;
     }
+
+    // Keep the visible per-content language links as a safe fallback.
+    // This also protects pages created before the target map was added.
+    var link = document.querySelector('.translation-links a[data-language="' + code + '"]');
+    if (link && link.getAttribute("href")) return link.getAttribute("href");
 
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
+    var languageMatch = path.match(/^\/(fr|ar|pt|sw)(?:\/(.*))?$/);
+    var rest = languageMatch ? (languageMatch[2] || "") : path.replace(/^\//, "");
 
     // Static pages intentionally keep one shared URL; only their text changes.
-    if (/^\/(about|contact|privacy-policy|data-updates)\/?$/.test(path)) return path;
+    if (/^(about|contact|privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
 
-    // Home page is the only remaining case where a language prefix is derived.
-    if (path === "/" || /^\/(fr|ar|pt|sw)$/.test(path)) {
-      return code === "en" ? "/" : "/" + code + "/";
-    }
+    // Home page.
+    if (rest === "") return code === "en" ? "/" : "/" + code + "/";
+
+    // Blog and eBook index pages are language-specific server-rendered pages.
+    if (rest === "blog") return code === "en" ? "/blog/" : "/" + code + "/blog/";
+    if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
 
     // Shared pages (such as the calculator) stay on the same URL.
-    if (path === "/farm-profit-calculator") return "/farm-profit-calculator/";
+    if (rest === "farm-profit-calculator") return "/farm-profit-calculator/";
 
     return null;
   }
