@@ -33,9 +33,9 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v6-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v7-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
-            goa-translation-cache-v6-${{ github.ref_name }}-
+            goa-translation-cache-v7-${{ github.ref_name }}-
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -80,4 +80,4 @@ jobs:
         uses: actions/cache/save@v5
         with:
           path: .translation-cache.json
-          key: goa-translation-cache-v6-${{ github.ref_name }}-${{ github.run_id }}
+          key: goa-translation-cache-v7-${{ github.ref_name }}-${{ github.run_id }}
