@@ -6,17 +6,27 @@
     catch (_) { return document.documentElement.lang || "en"; }
   }
 
+  function itemLanguage(item) {
+    return item.getAttribute("data-content-language") ||
+      item.getAttribute("data-language") ||
+      "en";
+  }
+
+  function isReviewable(item) {
+    return (item.getAttribute("data-content-status") ||
+      item.getAttribute("data-status") ||
+      "published") !== "in_review";
+  }
+
   function applyListing(language) {
     var items = Array.prototype.slice.call(document.querySelectorAll(".content-variant"));
     if (!items.length) return;
 
     var groups = {};
     items.forEach(function (item) {
-      var slug = item.getAttribute("data-content-slug") || "";
-      var match = slug.match(/^(.*)-(fr|ar|pt|sw)$/);
-      var fallbackGroup = match ? match[1] : slug;
-      var fallbackLanguage = match ? match[2] : "en";
-      var group = item.getAttribute("data-content-group") || fallbackGroup || item.getAttribute("href");
+      var group = item.getAttribute("data-content-group") ||
+        item.getAttribute("data-content-slug") ||
+        item.getAttribute("href");
       if (!groups[group]) groups[group] = [];
       groups[group].push(item);
     });
@@ -24,15 +34,10 @@
     Object.keys(groups).forEach(function (group) {
       var variants = groups[group];
       var preferred = variants.find(function (item) {
-        var slug = item.getAttribute("data-content-slug") || "";
-        var match = slug.match(/^(.*)-(fr|ar|pt|sw)$/);
-        if ((item.getAttribute("data-content-status") || "published") === "in_review") return false;
-        return (item.getAttribute("data-content-language") || (match ? match[2] : "en")) === language;
+        return isReviewable(item) && itemLanguage(item) === language;
       }) || variants.find(function (item) {
-        var slug = item.getAttribute("data-content-slug") || "";
-        var match = slug.match(/^(.*)-(fr|ar|pt|sw)$/);
-        return (item.getAttribute("data-content-language") || (match ? match[2] : "en")) === "en";
-      }) || variants[0];
+        return isReviewable(item) && itemLanguage(item) === "en";
+      }) || variants.find(isReviewable) || variants[0];
 
       variants.forEach(function (item) {
         var isPreferred = item === preferred;
@@ -49,8 +54,9 @@
 
     var variants = Array.prototype.slice.call(map.querySelectorAll("[data-content-variant]"));
     var target = variants.find(function (item) {
-      if ((item.getAttribute("data-status") || "published") === "in_review") return false;
-      return (item.getAttribute("data-language") || "en") === language;
+      return isReviewable(item) && itemLanguage(item) === language;
+    }) || variants.find(function (item) {
+      return isReviewable(item) && itemLanguage(item) === "en";
     });
 
     if (target && target.getAttribute("href") !== window.location.pathname) {
