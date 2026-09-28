@@ -104,9 +104,12 @@
   function updateLocalizedNavigation(code) {
     document.querySelectorAll("[data-localized-section]").forEach(function (link) {
       var section = link.getAttribute("data-localized-section");
+      var sectionPath = section === "calculator" ? "farm-profit-calculator" : section;
       link.href = section === "home"
         ? (code === "en" ? "/" : "/" + code + "/")
-        : (code === "en" ? "/" + section + "/" : "/" + code + "/" + section + "/");
+        : (section === "calculator"
+          ? "/farm-profit-calculator/"
+          : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/"));
     });
   }
 
