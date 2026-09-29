@@ -1,5 +1,6 @@
 ---
 language: sw
+permalink: "/sw/blog/weed-free-cassava-farming-nigeria/"
 layout: layouts/post.njk
 title: "Kilimo cha Muhogo Bila Magugu Nigeria"
 slug: weed-free-cassava-farming-nigeria-sw
