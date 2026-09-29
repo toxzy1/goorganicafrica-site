@@ -1,5 +1,6 @@
 ---
 language: sw
+permalink: "/sw/blog/hydroponic-fodder-farming-africa/"
 layout: layouts/post.njk
 title: "Kilimo cha Hydroponic Fodder Afrika"
 slug: hydroponic-fodder-farming-africa-sw
