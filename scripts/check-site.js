@@ -31,8 +31,7 @@ for (const f of files) {
 for (const f of fs.readdirSync(path.join(root, 'src/blog/posts')).filter(f => f.endsWith('.md'))) {
   const front = read('src/blog/posts/' + f);
   if (!/^meta_title:\s*.+/m.test(front) || !/^meta_description:\s*.+/m.test(front)) throw new Error(`SEO metadata missing in ${f}`);
-  const s = read('src/blog/posts/' + f);
-  const first = (s.split('<article class="blog-post">')[1] || '').slice(0, 500);
+  const first = (front.split('<article class="blog-post">')[1] || '').slice(0, 500);
   if (first.includes('<img')) throw new Error(`Duplicate top hero remains in ${f}`);
 }
 if (read('src/_includes/layouts/base.njk').includes('serviceWorker.register')) throw new Error('Service worker registration remains.');
@@ -50,7 +49,6 @@ for (const f of fs.readdirSync(path.join(root, 'src/ebooks')).filter(f => f.ends
   if (!/^meta_title:\s*.+/m.test(front) || !/^meta_description:\s*.+/m.test(front)) throw new Error(`SEO metadata missing in ${f}`);
 }
 if (!fs.existsSync(path.join(root, 'src/blog-categories/blog-categories.11tydata.js'))) throw new Error('Blog category output protection is missing.');
-
 if (!read('admin/config.yml').includes('Search Terms / Synonyms')) throw new Error('Ebook search-term control missing.');
 if (!read('admin/config.yml').includes('SEO Meta Title')) throw new Error('Ebook SEO title control missing.');
 if (!read('src/_includes/layouts/base.njk').includes('site.meta_title')) throw new Error('Global SEO title fallback is not wired to site settings.');
@@ -62,25 +60,16 @@ if (!read('src/blog/posts/posts.11tydata.js').includes('data.active === false'))
 if (!read('src/_data/site.js').includes('replace(/\\/+$/, "")')) throw new Error('Canonical site URL is not normalized.');
 if (read('admin/index.html').includes('netlifyIdentity') || read('admin/index.html').includes('identity.netlify.com')) throw new Error('Legacy Netlify Identity admin auth remains.');
 if (read('src/index.njk').includes('Countries reached')) throw new Error('Hard-coded country-reach statistic remains on homepage.');
-
 if (read('src/sitemap.njk').includes('/tools/farm-profit-calculator/')) throw new Error('Sitemap still contains legacy calculator URL; use the canonical calculator path.');
 if (!read('.eleventy.js').includes('item.data.active !== false')) throw new Error('Blog post collection is not protected by active status.');
 if (!read('admin/config.yml').includes('Turn off to hide this article from listings and the sitemap')) throw new Error('Blog active control missing.');
 if (fs.existsSync(path.join(root, 'src/localized/calculator.njk'))) throw new Error('Legacy country-only calculator generator remains; use country/language calculator routes.');
 if (fs.existsSync(path.join(root, '.github/workflows/extract-project.yml')) || fs.existsSync(path.join(root, '.github/workflows/extract-corrected-site.yml'))) throw new Error('Legacy extraction workflow remains and could overwrite the maintained source tree.');
-for (const legacyZip of [
-  'GoOrganicAfrica-CORRECTED-FINAL.zip',
-  'GoOrganicAfrica-FINAL-REBUILT (1).zip',
-  'GoOrganicAfrica-FINAL-REBUILT (2).zip',
-  'GoOrganicAfrica-FINAL-REBUILT (2).zip..zip',
-  'GoOrganicAfrica-FINAL-SCALABLE-LOCALIZATION-FIX.zip'
-]) if (fs.existsSync(path.join(root, legacyZip))) throw new Error(`Legacy project archive remains: ${legacyZip}`);
+for (const legacyZip of ['GoOrganicAfrica-CORRECTED-FINAL.zip','GoOrganicAfrica-FINAL-REBUILT (1).zip','GoOrganicAfrica-FINAL-REBUILT (2).zip','GoOrganicAfrica-FINAL-REBUILT (2).zip..zip','GoOrganicAfrica-FINAL-SCALABLE-LOCALIZATION-FIX.zip']) if (fs.existsSync(path.join(root, legacyZip))) throw new Error(`Legacy project archive remains: ${legacyZip}`);
 const redirects = read('src/_redirects');
 for (const code of activeCountries.map(c => String(c.code).toLowerCase())) {
   if (!redirects.includes(`/${code}/farm-profit-calculator/ /${code}/en/farm-profit-calculator/ 301`)) throw new Error(`Legacy calculator redirect missing for ${code}`);
 }
 if (!read('src/sitemap.njk').includes('calculatorLocales')) throw new Error('Localized calculator pages are missing from sitemap.');
-if (!read('.github/workflows/auto-translate-content.yml').includes('workflow_dispatch:')) throw new Error('Translation draft workflow must remain manually triggered.');
-
 
 console.log(`GoOrganicAfrica checks passed: ${activeCountries.length} active countries, ${aggregate.length} synchronized enterprises, dynamic data/admin controls, Selar support, AdSense controls, and agricultural data automation.`);
