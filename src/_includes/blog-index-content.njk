@@ -1,5 +1,6 @@
-<section class="section" style="padding-top: 48px;">
+<section class="section blog-index-section" style="padding-top:48px;">
   <div class="container">
+
     <div class="section-head">
       <span class="eyebrow" data-i18n="blog.eyebrow">The Blog</span>
       <h1 data-i18n="blog.title">GoOrganicAfrica Farming Blog</h1>
@@ -8,54 +9,68 @@
 
     <h2 style="font-size:1.2rem;color:var(--green-deep);margin-bottom:16px;" data-i18n="blog.browseCategory">Browse by Category</h2>
 
-    <div class="category-grid" style="margin-bottom: 40px;">
+    <div class="category-grid" style="margin-bottom:40px;">
       {% for cat in collections.blogCategories %}
         {% if cat.data.active != false %}
-        {% set categoryKey = cat.data.slug %}
-        {% if cat.data.slug == "crop-production" %}{% set categoryKey = "crop" %}{% endif %}
-        {% if cat.data.slug == "livestock-farming" %}{% set categoryKey = "livestock" %}{% endif %}
-        {% if cat.data.slug == "organic-farming" %}{% set categoryKey = "organic" %}{% endif %}
-        {% if cat.data.slug == "agribusiness" %}{% set categoryKey = "agribusiness" %}{% endif %}
-        {% if cat.data.slug == "farm-inputs" %}{% set categoryKey = "inputs" %}{% endif %}
-        {% if cat.data.slug == "farming-data" %}{% set categoryKey = "markets" %}{% endif %}
-        <div class="category-card">
-          <h3 data-i18n="blog.categories.{{ categoryKey }}">{{ cat.data.title }}</h3>
-          <p data-i18n="blog.categoryDescriptions.{{ categoryKey }}">{{ cat.data.description }}</p>
-        </div>
+          {% set categoryKey = cat.data.slug %}
+          {% if cat.data.slug == "crop-production" %}{% set categoryKey = "crop" %}{% endif %}
+          {% if cat.data.slug == "livestock-farming" %}{% set categoryKey = "livestock" %}{% endif %}
+          {% if cat.data.slug == "organic-farming" %}{% set categoryKey = "organic" %}{% endif %}
+          {% if cat.data.slug == "agribusiness" %}{% set categoryKey = "agribusiness" %}{% endif %}
+          {% if cat.data.slug == "farm-inputs" %}{% set categoryKey = "inputs" %}{% endif %}
+          {% if cat.data.slug == "farming-data" %}{% set categoryKey = "markets" %}{% endif %}
+          <div class="category-card">
+            <h3 data-i18n="blog.categories.{{ categoryKey }}">{{ cat.data.title }}</h3>
+            <p data-i18n="blog.categoryDescriptions.{{ categoryKey }}">{{ cat.data.description }}</p>
+          </div>
         {% endif %}
       {% endfor %}
     </div>
 
-    {% set localizedPosts = collections.posts | filterByLanguage(pageLanguage) %}
+    {# The blog index is server-rendered by language. There is deliberately
+       no client-side hiding/filtering of translated cards here. This prevents
+       one language from leaking into another when the selector changes. #}
+    {% set currentLanguage = pageLanguage or language or "en" %}
+    {% set localizedPosts = collections.posts | filterByLanguage(currentLanguage) %}
+
     {% if localizedPosts.length > 0 %}
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
-      {% for post in localizedPosts %}
-      {% if (post.data.translation_status or "published") != "in_review" %}
-      <a href="{{ post.url }}" style="text-decoration:none;">
-        <div class="ebook-card" style="height:100%;">
-          {% if post.data.featured_image %}
-          <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" style="width:100%;height:180px;object-fit:cover;border-radius:4px;">
+      <div class="blog-card-grid">
+        {% for post in localizedPosts %}
+          {% if (post.data.translation_status or "published") != "in_review" %}
+            <article class="blog-list-card">
+              <a href="{{ post.url }}" class="ebook-card" style="height:100%;text-decoration:none;display:flex;flex-direction:column;">
+                {% if post.data.featured_image %}
+                  <img src="{{ post.data.featured_image }}"
+                       alt="{{ post.data.title }}"
+                       loading="lazy"
+                       style="width:100%;height:190px;object-fit:cover;border-radius:4px;">
+                {% endif %}
+
+                <div style="display:flex;flex-direction:column;flex:1;">
+                  <span class="eyebrow" style="font-size:.68rem;margin-top:14px;">{{ post.data.category }}</span>
+                  <h2 style="font-size:1.08rem;margin-top:8px;">{{ post.data.title }}</h2>
+                  {% if post.data.description %}
+                    <p class="tagline" style="font-size:.88rem;">{{ post.data.description }}</p>
+                  {% endif %}
+                  <div class="card-footer" style="margin-top:auto;">
+                    <span style="font-size:.8rem;color:var(--ink-soft);" data-i18n="blog.readArticle">Read article</span>
+                    <span class="cta" aria-hidden="true">&rarr;</span>
+                  </div>
+                </div>
+              </a>
+            </article>
           {% endif %}
-          <span class="eyebrow" style="font-size:0.68rem;">{{ post.data.category }}</span>
-          <h3 style="font-size:1.05rem;">{{ post.data.title }}</h3>
-          <p class="tagline" style="font-size:0.88rem;">{{ post.data.description }}</p>
-          <div class="card-footer">
-            <span style="font-size:0.8rem;color:var(--ink-soft);" data-i18n="blog.readArticle">Read article</span>
-            <span class="cta">&rarr;</span>
-          </div>
-        </div>
-      </a>
-      {% endif %}
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
     {% else %}
-    <div class="empty-state">
-      <p data-i18n="blog.empty">Articles are being written and will appear here soon.</p>
-    </div>
+      <div class="empty-state">
+        <p data-i18n="blog.empty">Articles are being written and will appear here soon.</p>
+      </div>
     {% endif %}
 
     <div style="text-align:center;margin-top:40px;">
       <a class="btn btn-primary" href="/farm-profit-calculator/" data-i18n="blog.tryCalculator">Try the Free Farm Profit Calculator</a>
     </div>
+
   </div>
 </section>
