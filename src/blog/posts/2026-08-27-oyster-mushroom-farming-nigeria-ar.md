@@ -1,5 +1,6 @@
 ---
 language: ar
+permalink: "/ar/blog/oyster-mushroom-farming-nigeria/"
 layout: layouts/post.njk
 title: "زراعة فطر المحار في نيجيريا"
 slug: oyster-mushroom-farming-nigeria-ar
