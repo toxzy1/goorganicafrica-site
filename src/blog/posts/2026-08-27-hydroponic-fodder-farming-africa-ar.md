@@ -1,5 +1,6 @@
 ---
 language: ar
+permalink: "/ar/blog/hydroponic-fodder-farming-africa/"
 layout: layouts/post.njk
 title: "زراعة العلف المائي في أفريقيا"
 slug: hydroponic-fodder-farming-africa-ar
