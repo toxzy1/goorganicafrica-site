@@ -91,7 +91,7 @@
   </main>
   {% include "partials/footer.njk" %}
   <script src="/js/main.js" defer></script>
-  <script>window.GOA_LANGUAGES={{ siteLanguages.languages | dump | safe }}; window.GOA_TRANSLATIONS={en:{{ siteTranslations.en | dump | safe }}};</script>
+  <script>window.GOA_LANGUAGES={{ siteLanguages.languages | dump | safe }}; window.GOA_TRANSLATIONS={en:{{ siteTranslations.en | dump | safe }}{% if (language or "en") != "en" %},{{ language or "en" }}:{{ siteTranslations[language or "en"] | dump | safe }}{% endif %}};</script>
   <script src="/js/language-switcher.js?v=20260932" defer></script>
 
 </body>
