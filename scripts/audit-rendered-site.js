@@ -83,26 +83,40 @@ for (const [group, byLang] of groups) {
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
-  if (html.includes('id="goa-language-targets"')) {
+  const rel = path.relative(site, file);
+  const isIndexMap = /(?:^|\\/)blog\\/index\\.html$|(?:^|\\/)ebooks\\/index\\.html$/.test(rel);
+  if (html.includes('id="goa-language-targets"') && !isIndexMap) {
     const mapAttrs = {};
     for (const m of html.matchAll(/data-url-(en|fr|ar|pt|sw)=["']([^"']+)["']/gi)) {
-      if (mapAttrs[m[1]]) failures.push(path.relative(site, file) + ": duplicate target for " + m[1]);
+      if (mapAttrs[m[1]]) failures.push(rel + ": duplicate target for " + m[1]);
       mapAttrs[m[1]] = m[2];
     }
     const visible = {};
-    for (const m of html.matchAll(/class=["'][^"']*translation-links[^"']*[\s\S]*?<\/div>/gi)) {
-      for (const a of m[0].matchAll(/<a\b[^>]*data-language=["'](en|fr|ar|pt|sw)["'][^>]*href=["']([^"']+)["']/gi)) {
+    for (const m of html.matchAll(/class=["'][^"']*translation-links[^"']*[\\s\\S]*?<\\/div>/gi)) {
+      for (const a of m[0].matchAll(/<a\\b[^>]*data-language=["'](en|fr|ar|pt|sw)["'][^>]*href=["']([^"']+)["']/gi)) {
         visible[a[1]] = a[2];
       }
     }
-    const isIndexMap = /(?:^|\\/)blog\\/index\\.html$|(?:^|\\/)ebooks\\/index\\.html$/.test(path.relative(site, file));
     for (const lang of ["en","fr","ar","pt","sw"]) {
-      if (!mapAttrs[lang]) failures.push(path.relative(site, file) + ": missing language target for " + lang);
+      if (!mapAttrs[lang]) failures.push(rel + ": missing language target for " + lang);
       else {
-        if (!isIndexMap && visible[lang] !== mapAttrs[lang]) failures.push(path.relative(site, file) + ": language target mismatch for " + lang);
-        const targetFile = path.join(site, mapAttrs[lang].replace(/^\//, ""), "index.html");
-        if (!fs.existsSync(targetFile)) failures.push(path.relative(site, file) + ": target does not render for " + lang + ": " + mapAttrs[lang]);
+        if (visible[lang] !== mapAttrs[lang]) failures.push(rel + ": language target mismatch for " + lang);
+        const targetFile = path.join(site, mapAttrs[lang].replace(/^\\//, ""), "index.html");
+        if (!fs.existsSync(targetFile)) failures.push(rel + ": target does not render for " + lang + ": " + mapAttrs[lang]);
       }
+    }
+  }
+  if (isIndexMap) {
+    const expected = rel.startsWith("blog/") ? {
+      en: "/blog/", fr: "/fr/blog/", ar: "/ar/blog/", pt: "/pt/blog/", sw: "/sw/blog/"
+    } : {
+      en: "/ebooks/", fr: "/fr/ebooks/", ar: "/ar/ebooks/", pt: "/pt/ebooks/", sw: "/sw/ebooks/"
+    };
+    for (const lang of Object.keys(expected)) {
+      const marker = 'data-url-' + lang + '="' + expected[lang] + '"';
+      if (!html.includes(marker)) failures.push(rel + ": missing explicit language target " + lang);
+      const targetFile = path.join(site, expected[lang].replace(/^\\//, ""), "index.html");
+      if (!fs.existsSync(targetFile)) failures.push(rel + ": index language target does not render for " + lang + ": " + expected[lang]);
     }
   }
   const rel = path.relative(site, file);
