@@ -1,5 +1,6 @@
 ---
 language: pt
+permalink: "/pt/blog/hydroponic-fodder-farming-africa/"
 layout: layouts/post.njk
 title: "Produção de forragem hidropónica em África"
 slug: hydroponic-fodder-farming-africa-pt
