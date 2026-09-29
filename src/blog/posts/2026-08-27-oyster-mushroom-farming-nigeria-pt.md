@@ -1,5 +1,6 @@
 ---
 language: pt
+permalink: "/pt/blog/oyster-mushroom-farming-nigeria/"
 layout: layouts/post.njk
 title: "Cultivo de cogumelos ostra na Nigéria"
 slug: oyster-mushroom-farming-nigeria-pt
