@@ -276,7 +276,23 @@
     "recommendedGuide": "Guia recomendado",
     "allArticles": "Todos os artigos",
     "filedUnder": "Classificado em:",
-    "browseGuides": "Explorar guias"
+    "browseGuides": "Explorar guias",
+    "categories": {
+      "crop": "Produção de Culturas",
+      "livestock": "Criação de Animais",
+      "organic": "Agricultura Orgânica e Regenerativa",
+      "agribusiness": "Agronegócio e Gestão Rural",
+      "inputs": "Insumos e Tecnologia Agrícola",
+      "markets": "Dados e Mercados Agrícolas"
+    },
+    "categoryDescriptions": {
+      "crop": "Orientações práticas sobre produção de culturas, plantio, solo, pragas e colheita.",
+      "livestock": "Orientações práticas para aves, peixes, suínos, caprinos, bovinos e outras atividades pecuárias.",
+      "organic": "Abordagens orgânicas, regenerativas e de baixo uso de insumos para solos mais saudáveis e propriedades sustentáveis.",
+      "agribusiness": "Planejamento, rentabilidade, marketing, agregação de valor e gestão de negócios agrícolas.",
+      "inputs": "Sementes, fertilizantes, bioinsumos, irrigação, equipamentos e tecnologias agrícolas práticas.",
+      "markets": "Preços agrícolas, inteligência de mercado, economia rural e dados para melhores decisões."
+    }
   },
   "ebooks": {
     "eyebrow": "eBooks",
