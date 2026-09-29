@@ -1,5 +1,6 @@
 ---
 language: en
+permalink: "/blog/hydroponic-fodder-farming-africa/"
 layout: layouts/post.njk
 title: "Hydroponic Fodder Farming: How African Farmers Are Slashing Feed Costs and Feeding Livestock in 4–8 Days"
 slug: hydroponic-fodder-farming-africa
