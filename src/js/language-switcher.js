@@ -91,14 +91,15 @@
       if (target) return target;
     }
 
-    // Keep the visible per-content language links as a safe fallback.
-    // This also protects pages created before the target map was added.
-    var link = document.querySelector('.translation-links a[data-language="' + code + '"]');
-    if (link && link.getAttribute("href")) return link.getAttribute("href");
-
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
     var languageMatch = path.match(/^\/(fr|ar|pt|sw)(?:\/(.*))?$/);
     var rest = languageMatch ? (languageMatch[2] || "") : path.replace(/^\//, "");
+
+    // Blog and eBook index pages are language-specific server-rendered pages.
+    // Resolve these deterministically before consulting generic translation links,
+    // so an unrelated/stale content link can never redirect the selector elsewhere.
+    if (rest === "blog") return code === "en" ? "/blog/" : "/" + code + "/blog/";
+    if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
 
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact|privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
@@ -106,12 +107,13 @@
     // Home page.
     if (rest === "") return code === "en" ? "/" : "/" + code + "/";
 
-    // Blog and eBook index pages are language-specific server-rendered pages.
-    if (rest === "blog") return code === "en" ? "/blog/" : "/" + code + "/blog/";
-    if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
-
     // Shared pages (such as the calculator) stay on the same URL.
     if (rest === "farm-profit-calculator") return "/farm-profit-calculator/";
+
+    // Keep the visible per-content language links as a fallback for older
+    // localized content that does not yet have an explicit target map.
+    var link = document.querySelector('.translation-links a[data-language="' + code + '"]');
+    if (link && link.getAttribute("href")) return link.getAttribute("href");
 
     return null;
   }
