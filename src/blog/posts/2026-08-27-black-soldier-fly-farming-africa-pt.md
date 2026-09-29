@@ -1,5 +1,6 @@
 ---
 language: pt
+permalink: "/pt/blog/black-soldier-fly-farming-africa/"
 layout: layouts/post.njk
 title: "Criação de Mosca-Soldado-Negra em África"
 slug: black-soldier-fly-farming-africa-pt
