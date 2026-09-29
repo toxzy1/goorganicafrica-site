@@ -1,5 +1,6 @@
 ---
 language: en
+permalink: "/blog/black-soldier-fly-farming-africa/"
 layout: layouts/post.njk
 title: "Black Soldier Fly Farming in Africa: How to Turn Organic Waste Into High-Protein Livestock Feed and Cut Your Feed Bill by Half"
 slug: black-soldier-fly-farming-africa
