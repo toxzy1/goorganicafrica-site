@@ -1,5 +1,6 @@
 ---
 language: pt
+permalink: "/pt/blog/weed-free-cassava-farming-nigeria/"
 layout: layouts/post.njk
 title: "Cultivo de mandioca sem ervas daninhas na Nigéria"
 slug: weed-free-cassava-farming-nigeria-pt
