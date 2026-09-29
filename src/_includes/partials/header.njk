@@ -24,7 +24,31 @@
           {% endfor %}
         </select>
       </li>
+      {% else %}
+      <li class="site-language">
+        <label for="section-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
+        <select id="section-language-select" class="site-language-select section-language-select" aria-label="Language" data-i18n-aria-label="common.language">
+          {% for lang in siteLanguages.languages %}
+          {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
+          {% endfor %}
+        </select>
+      </li>
       {% endif %}
     </ul>
   </nav>
+  {% if isBlogOrEbookDetail %}
+  <script>
+    (function () {
+      var selector = document.getElementById('section-language-select');
+      if (!selector) return;
+      selector.addEventListener('change', function () {
+        var path = window.location.pathname;
+        var basePath = path.replace(/^\/(fr|ar|pt|sw)(?=\/)/, '');
+        if (!basePath) basePath = '/';
+        var target = selector.value === 'en' ? basePath : '/' + selector.value + basePath;
+        window.location.assign(target);
+      });
+    }());
+  </script>
+  {% endif %}
 </header>
