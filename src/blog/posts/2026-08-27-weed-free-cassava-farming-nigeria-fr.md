@@ -1,5 +1,6 @@
 ---
 language: fr
+permalink: "/fr/blog/weed-free-cassava-farming-nigeria/"
 layout: layouts/post.njk
 title: "Culture du manioc sans mauvaises herbes au Nigeria"
 slug: weed-free-cassava-farming-nigeria-fr
