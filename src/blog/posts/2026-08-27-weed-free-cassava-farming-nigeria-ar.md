@@ -1,5 +1,6 @@
 ---
 language: ar
+permalink: "/ar/blog/weed-free-cassava-farming-nigeria/"
 layout: layouts/post.njk
 title: "زراعة الكسافا بدون أعشاب في نيجيريا"
 slug: weed-free-cassava-farming-nigeria-ar
