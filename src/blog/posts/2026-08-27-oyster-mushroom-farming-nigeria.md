@@ -1,5 +1,6 @@
 ---
 language: en
+permalink: "/blog/oyster-mushroom-farming-nigeria-africa/"
 layout: layouts/post.njk
 title: "Oyster Mushroom Farming in Nigeria: How to Grow, Harvest and Profit From Africa's Fastest-Growing Agribusiness Opportunity"
 slug: oyster-mushroom-farming-nigeria-africa
