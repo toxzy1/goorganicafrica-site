@@ -35,8 +35,8 @@ layout: layouts/base.njk
 
     <!-- Breadcrumb for SEO -->
     <nav aria-label="Breadcrumb" style="font-size:0.85rem;color:var(--ink-soft);margin-bottom:16px;">
-      <a href="/" style="color:var(--soil);text-decoration:none;" data-i18n="common.home">Home</a> /
-      <a data-localized-section="blog" href="{% if language == 'en' %}/blog/{% else %}/{{ language }}/blog/{% endif %}" style="color:var(--soil);text-decoration:none;" data-i18n="common.blog">Blog</a> /
+      <a href="{% if (language or 'en') == 'en' %}/{% else %}/{{ language or 'en' }}/{% endif %}" style="color:var(--soil);text-decoration:none;" data-i18n="common.home">Home</a> /
+      <a data-localized-section="blog" href="{% if (language or 'en') == 'en' %}/blog/{% else %}/{{ language or 'en' }}/blog/{% endif %}" style="color:var(--soil);text-decoration:none;" data-i18n="common.blog">Blog</a> /
       <span>{{ category }}</span>
     </nav>
 
@@ -82,7 +82,7 @@ layout: layouts/base.njk
     <!-- Tags / related categories -->
     <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);">
       <strong style="font-size:0.85rem;" data-i18n="blog.filedUnder">Filed under:</strong>
-      <a href="/blog/" style="background:var(--sage-light);color:var(--green-deep);padding:4px 12px;border-radius:20px;font-size:0.82rem;text-decoration:none;margin-left:8px;font-weight:600;">{{ category }}</a>
+      <a href="{% if (language or 'en') == 'en' %}/blog/{% else %}/{{ language or 'en' }}/blog/{% endif %}" style="background:var(--sage-light);color:var(--green-deep);padding:4px 12px;border-radius:20px;font-size:0.82rem;text-decoration:none;margin-left:8px;font-weight:600;">{{ category }}</a>
     </div>
 
     {% if show_ebook_cta and related_ebook_slug %}
@@ -102,9 +102,9 @@ layout: layouts/base.njk
 
     <!-- Internal navigation -->
     <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);">
-      <a class="btn btn-outline btn-sm" data-localized-section="blog" href="{% if language == "en" %}/blog/{% else %}/{{ language }}/blog/{% endif %}"><span data-i18n="blog.allArticles">&larr; All Articles</span></a>
+      <a class="btn btn-outline btn-sm" data-localized-section="blog" href="{% if (language or "en") == "en" %}/blog/{% else %}/{{ language or 'en' }}/blog/{% endif %}"><span data-i18n="blog.allArticles">&larr; All Articles</span></a>
       <a class="btn btn-primary btn-sm" href="/farm-profit-calculator/" data-i18n="blog.tryCalculator">Try Farm Profit Calculator</a>
-      <a class="btn btn-outline btn-sm" data-localized-section="ebooks" href="{% if language == "en" %}/ebooks/{% else %}/{{ language }}/ebooks/{% endif %}" data-i18n="blog.browseGuides">Browse Guides</a>
+      <a class="btn btn-outline btn-sm" data-localized-section="ebooks" href="{% if (language or "en") == "en" %}/ebooks/{% else %}/{{ language or 'en' }}/ebooks/{% endif %}" data-i18n="blog.browseGuides">Browse Guides</a>
     </div>
 
   </div>
