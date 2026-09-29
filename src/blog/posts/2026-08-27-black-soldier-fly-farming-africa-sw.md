@@ -1,5 +1,6 @@
 ---
 language: sw
+permalink: "/sw/blog/black-soldier-fly-farming-africa/"
 layout: layouts/post.njk
 title: "Ufugaji wa Black Soldier Fly Afrika"
 slug: black-soldier-fly-farming-africa-sw
