@@ -276,7 +276,23 @@
     "recommendedGuide": "Recommended Guide",
     "allArticles": "All Articles",
     "filedUnder": "Filed under:",
-    "browseGuides": "Browse Guides"
+    "browseGuides": "Browse Guides",
+    "categories": {
+      "crop": "Crop Production",
+      "livestock": "Livestock Farming",
+      "organic": "Organic & Regenerative Farming",
+      "agribusiness": "Agribusiness & Farm Business",
+      "inputs": "Farm Inputs & Technology",
+      "markets": "Agricultural Data & Markets"
+    },
+    "categoryDescriptions": {
+      "crop": "Practical crop production, planting, soil, pest and harvest guidance.",
+      "livestock": "Practical guidance for poultry, fish, pigs, goats, cattle and other livestock enterprises.",
+      "organic": "Organic, regenerative and low-input approaches for healthier soils and sustainable farms.",
+      "agribusiness": "Farm business planning, profitability, marketing, value addition and enterprise management.",
+      "inputs": "Seeds, fertilizers, bio-inputs, irrigation, equipment and practical farm technology.",
+      "markets": "Agricultural prices, market intelligence, farm economics and data for better decisions."
+    }
   },
   "ebooks": {
     "eyebrow": "eBooks",
