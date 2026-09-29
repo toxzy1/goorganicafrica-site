@@ -1,5 +1,6 @@
 ---
 language: fr
+permalink: "/fr/blog/hydroponic-fodder-farming-africa/"
 layout: layouts/post.njk
 title: "Culture de fourrage hydroponique en Afrique"
 slug: hydroponic-fodder-farming-africa-fr
