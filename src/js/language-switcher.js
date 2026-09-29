@@ -16,6 +16,14 @@
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
     var urlLanguage = path.match(/^\/(fr|ar|pt|sw)(?:\/|$)/);
     if (urlLanguage) return urlLanguage[1];
+
+    // Language-prefixed content has an authoritative URL. The English
+    // versions of the blog, eBooks and homepage are also authoritative:
+    // never let an old localStorage choice silently turn /blog/ into a
+    // French/Arabic/Portuguese/Swahili page while the URL remains English.
+    if (path === "/" || path === "/blog" || path === "/ebooks") return "en";
+
+    // Shared pages intentionally remember the user's selected language.
     try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
     catch (_) { return document.documentElement.lang || "en"; }
   }
