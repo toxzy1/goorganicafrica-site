@@ -1,5 +1,6 @@
 ---
 language: fr
+permalink: "/fr/blog/oyster-mushroom-farming-nigeria/"
 layout: layouts/post.njk
 title: "Culture des pleurotes au Nigeria"
 slug: oyster-mushroom-farming-nigeria-fr
