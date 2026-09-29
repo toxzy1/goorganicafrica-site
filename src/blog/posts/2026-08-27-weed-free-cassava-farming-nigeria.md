@@ -1,5 +1,6 @@
 ---
 language: en
+permalink: "/blog/weed-free-cassava-farming-nigeria/"
 layout: layouts/post.njk
 title: "Weed-Free Cassava Farming: How to Plant, Manage and Harvest High-Yield Cassava in 5 Months Without Herbicides"
 slug: weed-free-cassava-farming-nigeria
