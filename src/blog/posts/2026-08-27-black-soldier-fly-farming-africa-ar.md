@@ -1,5 +1,6 @@
 ---
 language: ar
+permalink: "/ar/blog/black-soldier-fly-farming-africa/"
 layout: layouts/post.njk
 title: "تربية ذبابة الجندي الأسود في أفريقيا"
 slug: black-soldier-fly-farming-africa-ar
