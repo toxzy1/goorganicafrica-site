@@ -276,7 +276,23 @@
     "recommendedGuide": "Mwongozo unaopendekezwa",
     "allArticles": "Makala zote",
     "filedUnder": "Imewekwa chini ya:",
-    "browseGuides": "Vinjari miongozo"
+    "browseGuides": "Vinjari miongozo",
+    "categories": {
+      "crop": "Uzalishaji wa Mazao",
+      "livestock": "Ufugaji wa Mifugo",
+      "organic": "Kilimo Hai na Rejenerative",
+      "agribusiness": "Biashara ya Kilimo na Usimamizi wa Shamba",
+      "inputs": "Pembejeo na Teknolojia za Kilimo",
+      "markets": "Taarifa na Masoko ya Kilimo"
+    },
+    "categoryDescriptions": {
+      "crop": "Mwongozo wa vitendo kuhusu uzalishaji wa mazao, upandaji, udongo, wadudu na uvunaji.",
+      "livestock": "Mwongozo wa vitendo kwa kuku, samaki, nguruwe, mbuzi, ng’ombe na shughuli nyingine za ufugaji.",
+      "organic": "Mbinu za kilimo hai, regenerative na zenye matumizi madogo ya pembejeo kwa udongo wenye afya na mashamba endelevu.",
+      "agribusiness": "Mipango ya biashara ya kilimo, faida, masoko, kuongeza thamani na usimamizi wa shughuli.",
+      "inputs": "Mbegu, mbolea, pembejeo hai, umwagiliaji, vifaa na teknolojia za vitendo za kilimo.",
+      "markets": "Bei za mazao, taarifa za masoko, uchumi wa kilimo na data kwa maamuzi bora."
+    }
   },
   "ebooks": {
     "eyebrow": "Vitabu pepe",
