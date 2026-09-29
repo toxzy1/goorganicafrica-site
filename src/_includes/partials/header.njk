@@ -14,8 +14,6 @@
       <li><a href="{% if (language or 'en') == 'en' %}/blog/{% else %}/{{ language or 'en' }}/blog/{% endif %}" data-localized-section="blog" data-i18n="common.blog">Blog</a></li>
       <li><a href="/about/" data-localized-section="about" data-i18n="common.about">About</a></li>
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
-      {% set isBlogOrEbookDetail = (page.url or "").startsWith("/blog/") or (page.url or "").startsWith("/fr/blog/") or (page.url or "").startsWith("/ar/blog/") or (page.url or "").startsWith("/pt/blog/") or (page.url or "").startsWith("/sw/blog/") or (page.url or "").startsWith("/ebooks/") or (page.url or "").startsWith("/fr/ebooks/") or (page.url or "").startsWith("/ar/ebooks/") or (page.url or "").startsWith("/pt/ebooks/") or (page.url or "").startsWith("/sw/ebooks/") %}
-      {% if not isBlogOrEbookDetail %}
       <li class="site-language">
         <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
         <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
@@ -24,31 +22,6 @@
           {% endfor %}
         </select>
       </li>
-      {% else %}
-      <li class="site-language">
-        <label for="section-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
-        <select id="section-language-select" class="site-language-select section-language-select" aria-label="Language" data-i18n-aria-label="common.language">
-          {% for lang in siteLanguages.languages %}
-          {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
-          {% endfor %}
-        </select>
-      </li>
-      {% endif %}
     </ul>
   </nav>
-  {% if isBlogOrEbookDetail %}
-  <script>
-    (function () {
-      var selector = document.getElementById('section-language-select');
-      if (!selector) return;
-      selector.addEventListener('change', function () {
-        var path = window.location.pathname;
-        var basePath = path.replace(/^\/(fr|ar|pt|sw)(?=\/)/, '');
-        if (!basePath) basePath = '/';
-        var target = selector.value === 'en' ? basePath : '/' + selector.value + basePath;
-        window.location.assign(target);
-      });
-    }());
-  </script>
-  {% endif %}
 </header>
