@@ -1,5 +1,6 @@
 ---
 language: fr
+permalink: "/fr/blog/black-soldier-fly-farming-africa/"
 layout: layouts/post.njk
 title: "Élevage de la mouche soldat noire en Afrique"
 slug: black-soldier-fly-farming-africa-fr
