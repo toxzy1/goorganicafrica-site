@@ -14,6 +14,14 @@
       <li><a href="{% if (language or 'en') == 'en' %}/blog/{% else %}/{{ language or 'en' }}/blog/{% endif %}" data-localized-section="blog" data-i18n="common.blog">Blog</a></li>
       <li><a href="/about/" data-localized-section="about" data-i18n="common.about">About</a></li>
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
+      <li class="nav-language">
+        <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
+        <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
+          {% for lang in siteLanguages.languages %}
+          {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
+          {% endfor %}
+        </select>
+      </li>
     </ul>
   </nav>
 </header>
