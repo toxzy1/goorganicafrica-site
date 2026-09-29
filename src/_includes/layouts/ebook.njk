@@ -39,7 +39,7 @@ layout: layouts/base.njk
 
 <section class="ebook-detail-hero">
   <div class="container">
-    <p class="breadcrumb"><a href="/" data-i18n="common.home">Home</a> / <a data-localized-section="ebooks" href="{% if language == 'en' %}/ebooks/{% else %}/{{ language }}/ebooks/{% endif %}" data-i18n="common.ebooks">Guides</a> / {{ title }}</p>
+    <p class="breadcrumb"><a href="{% if (language or 'en') == 'en' %}/{% else %}/{{ language or 'en' }}/{% endif %}" data-i18n="common.home">Home</a> / <a data-localized-section="ebooks" href="{% if (language or 'en') == 'en' %}/ebooks/{% else %}/{{ language or 'en' }}/ebooks/{% endif %}" data-i18n="common.ebooks">Guides</a> / {{ title }}</p>
     <div class="ebook-detail-grid">
       <div>
         {% if icon %}
