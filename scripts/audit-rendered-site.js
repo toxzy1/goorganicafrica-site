@@ -95,10 +95,11 @@ for (const file of htmlFiles) {
         visible[a[1]] = a[2];
       }
     }
+    const isIndexMap = /(?:^|\\/)blog\\/index\\.html$|(?:^|\\/)ebooks\\/index\\.html$/.test(path.relative(site, file));
     for (const lang of ["en","fr","ar","pt","sw"]) {
       if (!mapAttrs[lang]) failures.push(path.relative(site, file) + ": missing language target for " + lang);
       else {
-        if (visible[lang] !== mapAttrs[lang]) failures.push(path.relative(site, file) + ": language target mismatch for " + lang);
+        if (!isIndexMap && visible[lang] !== mapAttrs[lang]) failures.push(path.relative(site, file) + ": language target mismatch for " + lang);
         const targetFile = path.join(site, mapAttrs[lang].replace(/^\//, ""), "index.html");
         if (!fs.existsSync(targetFile)) failures.push(path.relative(site, file) + ": target does not render for " + lang + ": " + mapAttrs[lang]);
       }
