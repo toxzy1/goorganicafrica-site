@@ -1,5 +1,6 @@
 ---
 language: sw
+permalink: "/sw/blog/oyster-mushroom-farming-nigeria/"
 layout: layouts/post.njk
 title: "Kilimo cha Uyoga wa Oyster nchini Nigeria"
 slug: oyster-mushroom-farming-nigeria-sw
