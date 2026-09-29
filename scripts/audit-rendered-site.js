@@ -85,6 +85,7 @@ for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   const rel = path.relative(site, file);
   const isIndexMap = /(?:^|\\/)blog\\/index\\.html$|(?:^|\\/)ebooks\\/index\\.html$/.test(rel);
+
   if (html.includes('id="goa-language-targets"') && !isIndexMap) {
     const mapAttrs = {};
     for (const m of html.matchAll(/data-url-(en|fr|ar|pt|sw)=["']([^"']+)["']/gi)) {
@@ -92,7 +93,7 @@ for (const file of htmlFiles) {
       mapAttrs[m[1]] = m[2];
     }
     const visible = {};
-    for (const m of html.matchAll(/class=["'][^"']*translation-links[^"']*[\\s\\S]*?<\\/div>/gi)) {
+    for (const m of html.matchAll(/class=["'][^"']*translation-links[\\s\\S]*?<\\/div>/gi)) {
       for (const a of m[0].matchAll(/<a\\b[^>]*data-language=["'](en|fr|ar|pt|sw)["'][^>]*href=["']([^"']+)["']/gi)) {
         visible[a[1]] = a[2];
       }
@@ -106,6 +107,7 @@ for (const file of htmlFiles) {
       }
     }
   }
+
   if (isIndexMap) {
     const expected = rel.startsWith("blog/") ? {
       en: "/blog/", fr: "/fr/blog/", ar: "/ar/blog/", pt: "/pt/blog/", sw: "/sw/blog/"
@@ -119,16 +121,16 @@ for (const file of htmlFiles) {
       if (!fs.existsSync(targetFile)) failures.push(rel + ": index language target does not render for " + lang + ": " + expected[lang]);
     }
   }
-  const rel = path.relative(site, file);
-  if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
-    if ((html.match(/<main\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <main>");
-    if ((html.match(/<header\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <header>");
+
+  if (!/farm-profit-calculator/.test(rel) && !/^admin\\//.test(rel)) {
+    if ((html.match(/<main\\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <main>");
+    if ((html.match(/<header\\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <header>");
   }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
     failures.push(rel + ": legacy content-variant markup remains");
   }
   const ids = new Set(), dup = new Set();
-  const idRe = /\bid=["']([^"']+)["']/gi;
+  const idRe = /\\bid=["']([^"']+)["']/gi;
   let m;
   while ((m = idRe.exec(html))) { if (ids.has(m[1])) dup.add(m[1]); ids.add(m[1]); }
   if (dup.size) failures.push(rel + ": duplicate HTML ids: " + [...dup].join(", "));
