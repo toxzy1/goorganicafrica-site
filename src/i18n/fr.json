@@ -276,7 +276,23 @@
     "recommendedGuide": "Guide recommandé",
     "allArticles": "Tous les articles",
     "filedUnder": "Classé dans :",
-    "browseGuides": "Parcourir les guides"
+    "browseGuides": "Parcourir les guides",
+    "categories": {
+      "crop": "Production végétale",
+      "livestock": "Élevage",
+      "organic": "Agriculture biologique et régénérative",
+      "agribusiness": "Agro-industrie et gestion agricole",
+      "inputs": "Intrants et technologies agricoles",
+      "markets": "Données agricoles et marchés"
+    },
+    "categoryDescriptions": {
+      "crop": "Conseils pratiques sur les cultures, la plantation, les sols, les ravageurs et la récolte.",
+      "livestock": "Conseils pratiques pour la volaille, les poissons, les porcs, les chèvres, les bovins et autres élevages.",
+      "organic": "Approches biologiques, régénératives et à faibles intrants pour des sols plus sains et des fermes durables.",
+      "agribusiness": "Planification, rentabilité, commercialisation, transformation et gestion des activités agricoles.",
+      "inputs": "Semences, engrais, bio-intrants, irrigation, équipements et technologies agricoles pratiques.",
+      "markets": "Prix agricoles, informations de marché, économie agricole et données pour de meilleures décisions."
+    }
   },
   "ebooks": {
     "eyebrow": "eBooks",
