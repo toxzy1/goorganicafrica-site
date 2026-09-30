@@ -626,3 +626,5 @@ collections:
               - {label: "Featured?", name: "featured", widget: "boolean", default: false}
               - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
               - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
+
+# 54-country resource registry is maintained in src/_data/africaCountries.json and its CMS collection will be added here.
