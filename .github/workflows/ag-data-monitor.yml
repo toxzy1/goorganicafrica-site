@@ -1,0 +1,40 @@
+name: Agricultural Data Monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install data parser
+        run: python -m pip install --disable-pip-version-check openpyxl
+
+      - name: Collect agricultural data candidates
+        run: python scripts/update-ag-data.py
+
+      - name: Commit review candidates
+        run: |
+          git config user.name "goorganicafrica-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/ag-data/pending; then
+            echo "No agricultural data candidate changes."
+            exit 0
+          fi
+          git add data/ag-data/pending
+          git commit -m "Update agricultural data review queue"
+          git push
