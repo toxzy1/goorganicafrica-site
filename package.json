@@ -6,11 +6,12 @@
   "scripts": {
     "build": "node scripts/sync-calculator-data.js && eleventy && node scripts/check-links.js",
     "start": "eleventy --serve",
-    "check": "node scripts/check-site.js",
+    "check": "node scripts/check-site.js && node scripts/check-cms.js",
     "sync:data": "node scripts/sync-calculator-data.js",
     "check:links": "node scripts/check-links.js",
     "check:i18n": "node scripts/check-localization.js",
-    "audit:rendered": "node scripts/audit-rendered-site.js"
+    "audit:rendered": "node scripts/audit-rendered-site.js",
+    "check:cms": "node scripts/check-cms.js"
   },
   "keywords": [],
   "author": "",
