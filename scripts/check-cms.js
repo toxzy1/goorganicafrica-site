@@ -20,6 +20,8 @@ const requiredFiles = [
   "config/ag-data-policy.json",
   "src/_data/directoryListings.json",
   "src/_data/agriculturalGrants.json",
+  "src/_data/africaCountries.json",
+  "src/_data/agriculturalResourceCoverage.json",
   "src/agriculture-resources.njk",
   "src/agricultural-finance.njk",
   "src/agricultural-grants.njk",
@@ -54,6 +56,8 @@ const requiredConfigMarkers = [
   'name: "ag_data_pending"',
   'name: "directory_listings"',
   'name: "agricultural_grants"',
+  'name: "africa_resource_countries"',
+  'name: "agricultural_resource_coverage"',
   "Finance Type",
   "Equipment Category",
   "Verification Status",
@@ -81,6 +85,8 @@ const settings = JSON.parse(read("src/_data/siteSettings.json"));
 const languages = JSON.parse(read("src/_data/siteLanguages.json")).languages || [];
 const countries = JSON.parse(read("src/_data/calculatorCountries.json")).list || [];
 const directory = JSON.parse(read("src/_data/directoryListings.json"));
+const africa = JSON.parse(read("src/_data/africaCountries.json"));
+const coverage = JSON.parse(read("src/_data/agriculturalResourceCoverage.json"));
 
 if (!settings.site_url) throw new Error("CMS site settings have no canonical URL.");
 if (!languages.some(l => l.code === "en" && l.enabled !== false)) throw new Error("English runtime language is unavailable.");
@@ -90,6 +96,11 @@ if (!languages.some(l => l.code === "fr") || !languages.some(l => l.code === "ar
 }
 if (!countries.some(c => c.available !== false)) throw new Error("CMS calculator has no active country.");
 if (!Array.isArray(directory.listings)) throw new Error("Directory registry is malformed.");
+if (!Array.isArray(africa.countries) || africa.countries.length !== 54) throw new Error("Africa resource country registry must contain exactly 54 countries.");
+if (new Set(africa.countries.map(c => c.code)).size !== 54) throw new Error("Africa resource country codes must be unique.");
+if (!Array.isArray(coverage.countries) || coverage.countries.length !== 54) throw new Error("Resource coverage tracker must contain exactly 54 countries.");
+const registryCodes = new Set(africa.countries.map(c => c.code));
+for (const row of coverage.countries) if (!registryCodes.has(row.country_code)) throw new Error("Coverage tracker contains a country outside the 54-country registry: " + row.country_code);
 
 const monitor = read("scripts/update-ag-data.py");
 if (!monitor.includes("needs_review")) throw new Error("Agricultural data monitor does not enforce review status.");
