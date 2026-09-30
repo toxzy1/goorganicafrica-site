@@ -146,8 +146,9 @@ def main():
         errors.append({'source': 'configured machine-readable feeds', 'error': str(e)})
 
     stamp = datetime.now(timezone.utc)
-    out = PENDING / f'ag-data-candidates-{stamp.strftime("%Y-%m")}.json'
+    out = PENDING / f'ag-data-candidates-{stamp.strftime("%Y-%m-%d-%H%M%S")}.json'
     out.write_text(json.dumps({
+        'title': f'Agricultural data review queue — {stamp.strftime("%Y-%m-%d %H:%M UTC")}',
         'generated_at': stamp.isoformat(),
         'candidate_count': len(candidates),
         'candidates': candidates,
