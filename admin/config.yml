@@ -485,3 +485,101 @@ collections:
                   - {label: "Next step 3", name: "next3", widget: "text"}
                   - {label: "Next step 4", name: "next4", widget: "text"}
                   - {label: "Next step 5", name: "next5", widget: "text"}
+
+  - name: "language_runtime"
+    label: "🌐 Runtime Language Controls"
+    files:
+      - label: "Enabled Site Languages"
+        name: "languages"
+        file: "src/_data/siteLanguages.json"
+        editor: {preview: false}
+        fields:
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - {label: "Code", name: "code", widget: "string"}
+              - {label: "Language Name", name: "name", widget: "string"}
+              - {label: "Native Name", name: "native", widget: "string"}
+              - {label: "Text Direction", name: "dir", widget: "select", options: ["ltr", "rtl"], default: "ltr"}
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+
+  - name: "ag_data_pending"
+    label: "🔎 Agricultural Data Review Queue"
+    folder: "data/ag-data/pending"
+    create: false
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    fields:
+      - {label: "Review Batch", name: "title", widget: "string"}
+      - {label: "Generated At", name: "generated_at", widget: "datetime"}
+      - {label: "Candidate Count", name: "candidate_count", widget: "number", value_type: "int"}
+      - label: "Candidates"
+        name: "candidates"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Enterprise ID", name: "commodity_id", widget: "string"}
+          - {label: "Country", name: "country", widget: "string"}
+          - {label: "Region", name: "region", widget: "string", required: false}
+          - {label: "Data Type", name: "data_type", widget: "string"}
+          - {label: "Source Type", name: "source_type", widget: "string"}
+          - {label: "Publisher", name: "publisher", widget: "string", required: false}
+          - {label: "Source", name: "source", widget: "string", required: false}
+          - {label: "Source URL", name: "source_url", widget: "string", required: false}
+          - {label: "Download URL", name: "download_url", widget: "string", required: false}
+          - {label: "Variety", name: "variety", widget: "string", required: false}
+          - {label: "Brand", name: "brand", widget: "string", required: false}
+          - {label: "Pack Size", name: "pack_size", widget: "string", required: false}
+          - {label: "Price", name: "price", widget: "number", value_type: "float", required: false}
+          - {label: "Unit", name: "unit", widget: "string", required: false}
+          - {label: "As Of", name: "as_of", widget: "string", required: false}
+          - {label: "Retrieved At", name: "retrieved_at", widget: "datetime", required: false}
+          - {label: "Review Status", name: "status", widget: "select", options: ["needs_review", "approved", "rejected"], default: "needs_review"}
+          - {label: "Reason / Validation Note", name: "reason", widget: "text", required: false}
+          - {label: "Reviewer Notes", name: "review_notes", widget: "text", required: false}
+          - label: "Matched Source Row"
+            name: "matched_row"
+            widget: "list"
+            required: false
+          - label: "Numeric Source Cells"
+            name: "numeric_cells"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Column Index", name: "column_index", widget: "number", value_type: "int"}
+              - {label: "Value", name: "value", widget: "number", value_type: "float"}
+      - label: "Source Errors"
+        name: "errors"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Source", name: "source", widget: "string"}
+          - {label: "Error", name: "error", widget: "text"}
+
+  - name: "directory_listings"
+    label: "🛒 Marketplace, Produce & Farm Tools"
+    files:
+      - label: "Directory Registry"
+        name: "registry"
+        file: "src/_data/directoryListings.json"
+        editor: {preview: false}
+        fields:
+          - label: "Listings"
+            name: "listings"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Type", name: "type", widget: "select", options: ["marketplace", "produce", "farm_tool", "farm_input", "equipment", "finance", "insurance", "service"]}
+              - {label: "Category", name: "category", widget: "string", required: false}
+              - {label: "Country", name: "country", widget: "string"}
+              - {label: "Region", name: "region", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Website / Listing URL", name: "url", widget: "string", required: false}
+              - {label: "Contact / WhatsApp", name: "contact", widget: "string", required: false}
+              - {label: "Active?", name: "active", widget: "boolean", default: true}
+              - {label: "Featured?", name: "featured", widget: "boolean", default: false}
+              - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+              - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
