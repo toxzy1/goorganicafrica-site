@@ -606,6 +606,20 @@ collections:
           - {label: "Last Verified", name: "last_verified", widget: "datetime"}
           - {label: "Countries", name: "countries", widget: "list", fields: [{label: "Country Code", name: "code", widget: "string"}, {label: "Country Name", name: "name", widget: "string"}, {label: "URL Slug", name: "slug", widget: "string"}, {label: "African Region", name: "region", widget: "string"}, {label: "Active?", name: "active", widget: "boolean", default: true}]}
 
+  - name: "agricultural_resource_coverage"
+    label: "Agricultural Resources: 54-Country Coverage"
+    files:
+      - label: "Coverage Tracker"
+        name: "coverage"
+        file: "src/_data/agriculturalResourceCoverage.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Registry Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Last Updated", name: "last_updated", widget: "datetime"}
+          - {label: "Scope", name: "scope", widget: "string"}
+          - {label: "Allowed Statuses", name: "statuses", widget: "list"}
+          - {label: "Country Coverage", name: "countries", widget: "list", fields: [{label: "Country Code", name: "country_code", widget: "string"}, {label: "Country", name: "country", widget: "string"}, {label: "Region", name: "region", widget: "string"}, {label: "Finance Status", name: "finance", widget: "select", options: ["verified", "researching", "no_verified_listing"], default: "no_verified_listing"}, {label: "Grants Status", name: "grants", widget: "select", options: ["verified", "researching", "no_verified_listing"], default: "no_verified_listing"}, {label: "Machinery Status", name: "machinery", widget: "select", options: ["verified", "researching", "no_verified_listing"], default: "no_verified_listing"}, {label: "Finance Listings", name: "finance_count", widget: "number", value_type: "int", default: 0}, {label: "Grant Listings", name: "grants_count", widget: "number", value_type: "int", default: 0}, {label: "Machinery Listings", name: "machinery_count", widget: "number", value_type: "int", default: 0}, {label: "Last Verified", name: "last_verified", widget: "datetime", required: false}, {label: "Notes", name: "notes", widget: "text", required: false}]}
+
   - name: "directory_listings"
     label: "🛒 Marketplace, Produce & Farm Tools"
     files:
