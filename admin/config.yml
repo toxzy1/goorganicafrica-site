@@ -591,6 +591,21 @@ collections:
               - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
               - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
 
+  - name: "africa_resource_countries"
+    label: "Africa: 54-Country Resource Registry"
+    files:
+      - label: "Country Registry"
+        name: "countries"
+        file: "src/_data/africaCountries.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Registry Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Scope", name: "scope", widget: "string"}
+          - {label: "Source", name: "source", widget: "string"}
+          - {label: "Source URL", name: "source_url", widget: "string"}
+          - {label: "Last Verified", name: "last_verified", widget: "datetime"}
+          - {label: "Countries", name: "countries", widget: "list", fields: [{label: "Country Code", name: "code", widget: "string"}, {label: "Country Name", name: "name", widget: "string"}, {label: "URL Slug", name: "slug", widget: "string"}, {label: "African Region", name: "region", widget: "string"}, {label: "Active?", name: "active", widget: "boolean", default: true}]}
+
   - name: "directory_listings"
     label: "🛒 Marketplace, Produce & Farm Tools"
     files:
@@ -626,5 +641,3 @@ collections:
               - {label: "Featured?", name: "featured", widget: "boolean", default: false}
               - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
               - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
-
-# 54-country resource registry is maintained in src/_data/africaCountries.json and its CMS collection will be added here.
