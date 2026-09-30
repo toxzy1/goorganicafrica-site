@@ -606,6 +606,16 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Type", name: "type", widget: "select", options: ["marketplace", "produce", "farm_tool", "farm_input", "equipment", "finance", "insurance", "service"]}
+              - {label: "Finance Type", name: "finance_type", widget: "select", options: ["loan", "grant", "insurance", "input_finance", "equipment_finance", "lease", "blended_finance", "other"], required: false}
+              - {label: "Finance Amount / Range", name: "finance_amount", widget: "string", required: false}
+              - {label: "Interest / Pricing", name: "pricing", widget: "string", required: false}
+              - {label: "Eligibility", name: "eligibility", widget: "text", required: false}
+              - {label: "Requirements", name: "requirements", widget: "list", required: false}
+              - {label: "Application URL", name: "application_url", widget: "string", required: false}
+              - {label: "Equipment Category", name: "equipment_category", widget: "select", options: ["tractor", "planter", "harvester", "irrigation", "processing", "greenhouse", "solar_pumping", "implements", "other"], required: false}
+              - {label: "Lease / Rental Terms", name: "lease_terms", widget: "text", required: false}
+              - {label: "Last Verified", name: "last_verified", widget: "datetime", required: false}
+              - {label: "Verification Status", name: "verification_status", widget: "select", options: ["verified", "needs_review", "expired", "closed"], default: "needs_review"}
               - {label: "Category", name: "category", widget: "string", required: false}
               - {label: "Country", name: "country", widget: "string"}
               - {label: "Region", name: "region", widget: "string", required: false}
