@@ -558,6 +558,39 @@ collections:
           - {label: "Source", name: "source", widget: "string"}
           - {label: "Error", name: "error", widget: "text"}
 
+  - name: "agricultural_grants"
+    label: "🎯 Agricultural Grants & Opportunities"
+    files:
+      - label: "Funding & Opportunity Registry"
+        name: "grants"
+        file: "src/_data/agriculturalGrants.json"
+        editor: {preview: false}
+        fields:
+          - label: "Opportunities"
+            name: "opportunities"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Opportunity Type", name: "type", widget: "select", options: ["grant", "subsidy", "competition", "youth_program", "women_program", "cooperative_support", "training", "other"]}
+              - {label: "Provider / Organisation", name: "provider", widget: "string"}
+              - {label: "Country", name: "country", widget: "string"}
+              - {label: "Region / State", name: "region", widget: "string", required: false}
+              - {label: "Target Applicants", name: "target", widget: "list", required: false}
+              - {label: "Eligibility", name: "eligibility", widget: "text"}
+              - {label: "What It Supports", name: "supports", widget: "text"}
+              - {label: "Amount / Benefit", name: "amount", widget: "string", required: false}
+              - {label: "Deadline", name: "deadline", widget: "string", required: false}
+              - {label: "Application URL", name: "application_url", widget: "string", required: false}
+              - {label: "Official Source URL", name: "official_url", widget: "string"}
+              - {label: "Contact", name: "contact", widget: "string", required: false}
+              - {label: "Verification Status", name: "verification_status", widget: "select", options: ["verified", "needs_review", "expired", "closed"], default: "needs_review"}
+              - {label: "Last Verified", name: "last_verified", widget: "datetime", required: false}
+              - {label: "Active?", name: "active", widget: "boolean", default: true}
+              - {label: "Featured?", name: "featured", widget: "boolean", default: false}
+              - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+              - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
+
   - name: "directory_listings"
     label: "🛒 Marketplace, Produce & Farm Tools"
     files:
