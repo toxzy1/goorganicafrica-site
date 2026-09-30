@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "scope": "AfDB regional member countries",
+  "source": "African Development Bank member-country list",
+  "source_url": "https://www.afdb.org/en/about-us/corporate-information/members",
+  "last_verified": "2026-09-30",
+  "countries": [
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "slug": "algeria",
+      "region": "north",
+      "active": true
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "slug": "angola",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "slug": "benin",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "slug": "botswana",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "slug": "brkina-aso",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "slug": "brndi",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "slug": "cabo-verde",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "slug": "cameroon",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "slug": "central-arican-repblic",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "slug": "chad",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "slug": "comoros",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "CG",
+      "name": "Republic of the Congo",
+      "slug": "repblic-o-the-congo",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "CI",
+      "name": "Côte d’Ivoire",
+      "slug": "co-te-d-ivoire",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "slug": "democratic-repblic-o-the-congo",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "slug": "djiboti",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "slug": "egypt",
+      "region": "north",
+      "active": true
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "slug": "eqatorial-ginea",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "slug": "eritrea",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "slug": "eswatini",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "slug": "ethiopia",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "slug": "gabon",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "GM",
+      "name": "The Gambia",
+      "slug": "the-gambia",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "slug": "ghana",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "slug": "ginea",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "slug": "ginea-bissa",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "slug": "kenya",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "slug": "lesotho",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "slug": "liberia",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "slug": "libya",
+      "region": "north",
+      "active": true
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "slug": "madagascar",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "slug": "malawi",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "slug": "mali",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "slug": "maritania",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "slug": "maritis",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "slug": "morocco",
+      "region": "north",
+      "active": true
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "slug": "mozambiqe",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "slug": "namibia",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "slug": "niger",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "slug": "rwanda",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "slug": "sa-o-tome-and-pri-ncipe",
+      "region": "central",
+      "active": true
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "slug": "senegal",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "slug": "seychelles",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "slug": "sierra-leone",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "slug": "somalia",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "slug": "soth-arica",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "slug": "soth-sdan",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "slug": "sdan",
+      "region": "north",
+      "active": true
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "slug": "tanzania",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "slug": "togo",
+      "region": "west",
+      "active": true
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "slug": "tnisia",
+      "region": "north",
+      "active": true
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "slug": "ganda",
+      "region": "east",
+      "active": true
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "slug": "zambia",
+      "region": "southern",
+      "active": true
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "slug": "zimbabwe",
+      "region": "southern",
+      "active": true
+    }
+  ]
+}
