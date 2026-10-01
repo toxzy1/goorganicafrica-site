@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-01",
   "scope": "54 AfDB regional member countries",
   "statuses": [
     "verified",
@@ -235,12 +235,12 @@
       "region": "east",
       "finance": "no_verified_listing",
       "grants": "no_verified_listing",
-      "machinery": "no_verified_listing",
+      "machinery": "verified",
       "finance_count": 0,
       "grants_count": 0,
-      "machinery_count": 0,
-      "last_verified": null,
-      "notes": "No listing is published until an official source and current verification date are recorded."
+      "machinery_count": 1,
+      "last_verified": "2026-10-01",
+      "notes": "At least one verified official-source listing is currently published for this country; regional listings may cover additional countries."
     },
     {
       "country_code": "SZ",
@@ -417,11 +417,11 @@
       "region": "west",
       "finance": "no_verified_listing",
       "grants": "verified",
-      "machinery": "no_verified_listing",
+      "machinery": "verified",
       "finance_count": 0,
       "grants_count": 1,
-      "machinery_count": 0,
-      "last_verified": "2026-09-30",
+      "machinery_count": 1,
+      "last_verified": "2026-10-01",
       "notes": "At least one verified official-source listing is currently published for this country; regional listings may cover additional countries."
     },
     {
@@ -573,12 +573,12 @@
       "region": "west",
       "finance": "no_verified_listing",
       "grants": "no_verified_listing",
-      "machinery": "no_verified_listing",
+      "machinery": "verified",
       "finance_count": 0,
       "grants_count": 0,
-      "machinery_count": 0,
-      "last_verified": null,
-      "notes": "No listing is published until an official source and current verification date are recorded."
+      "machinery_count": 1,
+      "last_verified": "2026-10-01",
+      "notes": "At least one verified official-source listing is currently published for this country; regional listings may cover additional countries."
     },
     {
       "country_code": "SO",
