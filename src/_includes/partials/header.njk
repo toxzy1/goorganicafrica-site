@@ -16,7 +16,7 @@
       <li><a href="/about/" data-localized-section="about" data-i18n="common.about">About</a></li>
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
       {% set currentPath = page.url or "/" %}
-      {% set isHomeOrCalculator = currentPath == "/" or currentPath == "/fr/" or currentPath == "/ar/" or currentPath == "/pt/" or currentPath == "/sw/" or currentPath.startsWith("/farm-profit-calculator") or currentPath.startsWith("/fr/farm-profit-calculator") or currentPath.startsWith("/ar/farm-profit-calculator") or currentPath.startsWith("/pt/farm-profit-calculator") or currentPath.startsWith("/sw/farm-profit-calculator") or currentPath.matches("/^\\/[^\\/]+\\/[^\\/]+\\/farm-profit-calculator\\//") %}
+      {% set isHomeOrCalculator = currentPath == "/" or currentPath == "/fr/" or currentPath == "/ar/" or currentPath == "/pt/" or currentPath == "/sw/" or currentPath.startsWith("/farm-profit-calculator") or currentPath.startsWith("/fr/farm-profit-calculator") or currentPath.startsWith("/ar/farm-profit-calculator") or currentPath.startsWith("/pt/farm-profit-calculator") or currentPath.startsWith("/sw/farm-profit-calculator") or currentPath.split("/")[3] == "farm-profit-calculator" %}
       {% if isHomeOrCalculator %}
       <li class="site-language">
         <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
