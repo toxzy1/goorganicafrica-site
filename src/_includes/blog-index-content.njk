@@ -48,7 +48,7 @@
         {% for post in localizedPosts %}
           {% if (post.data.translation_status or "published") != "in_review" %}
             <article class="blog-list-card">
-              <a href="{{ post.url }}" class="ebook-card" style="height:100%;text-decoration:none;display:flex;flex-direction:column;">
+              <a href="{{ post | localizedPostUrl }}" class="ebook-card" style="height:100%;text-decoration:none;display:flex;flex-direction:column;">
                 {% if post.data.featured_image %}
                   <img src="{{ post.data.featured_image }}"
                        alt="{{ post.data.title }}"
