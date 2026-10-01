@@ -19,24 +19,6 @@ layout: layouts/base.njk
 }
 {% endset %}
 
-<div id="goa-language-targets" aria-hidden="true" style="display:none;"
-{% for localized in collections.ebooks %}{% if localized.data.translation_group == (translation_group or slug) and (localized.data.translation_status or 'published') != 'in_review' %} data-url-{{ localized.data.language or 'en' }}="{{ localized.url }}"{% endif %}{% endfor %}>
-  {% for localized in collections.ebooks %}
-    {% if localized.data.translation_group == (translation_group or slug) and (localized.data.translation_status or 'published') != 'in_review' %}
-      <span data-language="{{ localized.data.language or 'en' }}" data-url="{{ localized.url }}"></span>
-    {% endif %}
-  {% endfor %}
-</div>
-
-<div class="translation-links" aria-label="Available guide languages">
-  <strong data-i18n="blog.language">Language:</strong>
-  {% for localized in collections.ebooks %}
-    {% if localized.data.translation_group == (translation_group or slug) and (localized.data.translation_status or 'published') != 'in_review' %}
-      <a data-language="{{ localized.data.language or 'en' }}" href="{{ localized.url }}" hreflang="{{ localized.data.language or 'en' }}">{{ localized.data.language or 'en' }}</a>
-    {% endif %}
-  {% endfor %}
-</div>
-
 <section class="ebook-detail-hero">
   <div class="container">
     <p class="breadcrumb"><a href="{% if (language or 'en') == 'en' %}/{% else %}/{{ language or 'en' }}/{% endif %}" data-i18n="common.home">Home</a> / <a data-localized-section="ebooks" href="{% if (language or 'en') == 'en' %}/ebooks/{% else %}/{{ language or 'en' }}/ebooks/{% endif %}" data-i18n="common.ebooks">Guides</a> / {{ title }}</p>
