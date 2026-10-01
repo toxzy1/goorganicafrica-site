@@ -25,7 +25,12 @@
       "active": true,
       "featured": true,
       "seo_title": "IFAD Central Sahel Food Systems Transformation Grant",
-      "seo_description": "Official IFAD call for a USD 2 million regional grant supporting food systems transformation in Burkina Faso, Mali and Niger."
+      "seo_description": "Official IFAD call for a USD 2 million regional grant supporting food systems transformation in Burkina Faso, Mali and Niger.",
+      "countries_covered": [
+        "BF",
+        "ML",
+        "NE"
+      ]
     },
     {
       "title": "IFAD Grant: Rural Sector Performance Assessment for Policy and Investment",
@@ -40,7 +45,7 @@
       "eligibility": "Eligible recipient or consortium under the IFAD grant call and its published financing requirements; this is an institutional grant opportunity rather than a general farmer cash grant.",
       "supports": "Leveraging IFAD's Rural Sector Performance Assessment for policy and investment, subject to the published call requirements.",
       "amount": "Up to USD 1.2 million",
-      "deadline": "Check the official IFAD call page for the current submission deadline and requirements",
+      "deadline": "7 October 2026 at 23:59 CEST (UTC+2, Rome time)",
       "application_url": "https://www.ifad.org/en/call-for-proposals",
       "official_url": "https://www.ifad.org/en/call-for-proposals",
       "contact": "IFAD call-for-proposals contact listed on the official call page",
@@ -49,7 +54,8 @@
       "active": true,
       "featured": false,
       "seo_title": "IFAD Rural Sector Performance Assessment Grant",
-      "seo_description": "Official IFAD grant call for rural-sector performance assessment work supporting policy and investment."
+      "seo_description": "Official IFAD grant call for rural-sector performance assessment work supporting policy and investment.",
+      "countries_covered": []
     }
   ]
 }
