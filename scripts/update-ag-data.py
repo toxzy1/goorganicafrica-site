@@ -146,6 +146,9 @@ def main():
         errors.append({'source': 'configured machine-readable feeds', 'error': str(e)})
 
     stamp = datetime.now(timezone.utc)
+    if not candidates and not errors:
+        print('No new agricultural data candidates or source errors; review queue unchanged.')
+        return
     out = PENDING / f'ag-data-candidates-{stamp.strftime("%Y-%m-%d-%H%M%S")}.json'
     out.write_text(json.dumps({
         'title': f'Agricultural data review queue — {stamp.strftime("%Y-%m-%d %H:%M UTC")}',
