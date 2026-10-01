@@ -59,6 +59,17 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+
+  // Generate the article URL directly from the post language and stable slug.
+  // This avoids relying on a stale/incorrect collection URL in localized indexes.
+  eleventyConfig.addFilter("localizedPostUrl", (post) => {
+    if (!post || !post.data) return "#";
+    const language = post.data.language || "en";
+    const rawSlug = post.data.slug || post.fileSlug || "";
+    const slug = rawSlug.replace(/-(fr|ar|pt|sw)$/, "");
+    return language === "en" ? `/blog/${slug}/` : `/${language}/blog/${slug}/`;
+  });
+
   // Find the localized version of a content item by stable slug and language.
   eleventyConfig.addFilter("findByDataSlugAndLanguage", (items, slug, language) => {
     const targetLanguage = language || "en";
