@@ -17,6 +17,11 @@
     var urlLanguage = path.match(/^\/(fr|ar|pt|sw)(?:\/|$)/);
     if (urlLanguage) return urlLanguage[1];
 
+    // Calculator pages use /<country>/<language>/farm-profit-calculator/.
+    // The language segment is authoritative even though the country comes first.
+    var calculatorLanguage = path.match(/^\/[^/]+\/(en|fr|ar|pt|sw)\/farm-profit-calculator(?:\/|$)/);
+    if (calculatorLanguage) return calculatorLanguage[1];
+
     // Language-prefixed content has an authoritative URL. The English
     // versions of the blog, eBooks and homepage are also authoritative:
     // never let an old localStorage choice silently turn /blog/ into a
