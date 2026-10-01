@@ -162,8 +162,28 @@
     return languageLoads[code];
   }
 
+  function isServerRenderedContentPath() {
+    var path = window.location.pathname.replace(/\/+$/, "") || "/";
+    return path === "/blog" || path.indexOf("/blog/") === 0 ||
+      path === "/ebooks" || path.indexOf("/ebooks/") === 0 ||
+      path === "/fr/blog" || path.indexOf("/fr/blog/") === 0 ||
+      path === "/ar/blog" || path.indexOf("/ar/blog/") === 0 ||
+      path === "/pt/blog" || path.indexOf("/pt/blog/") === 0 ||
+      path === "/sw/blog" || path.indexOf("/sw/blog/") === 0 ||
+      path === "/fr/ebooks" || path.indexOf("/fr/ebooks/") === 0 ||
+      path === "/ar/ebooks" || path.indexOf("/ar/ebooks/") === 0 ||
+      path === "/pt/ebooks" || path.indexOf("/pt/ebooks/") === 0 ||
+      path === "/sw/ebooks" || path.indexOf("/sw/ebooks/") === 0;
+  }
+
   function refresh() {
     var code = setLanguage(currentLanguage());
+    if (isServerRenderedContentPath()) {
+      // Blog and eBook pages are fully server-rendered in their own language.
+      // Do not run the generic client-side translation layer on these routes.
+      document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } }));
+      return Promise.resolve(code);
+    }
     return loadLanguage(code).then(function () {
       apply(document.body, code);
 
