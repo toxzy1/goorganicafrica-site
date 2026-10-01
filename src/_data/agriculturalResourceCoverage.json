@@ -194,14 +194,14 @@
       "country_code": "DJ",
       "country": "Djibouti",
       "region": "east",
-      "finance": "no_verified_listing",
+      "finance": "verified",
       "grants": "no_verified_listing",
       "machinery": "no_verified_listing",
-      "finance_count": 0,
+      "finance_count": 1,
       "grants_count": 0,
       "machinery_count": 0,
-      "last_verified": null,
-      "notes": "No listing is published until an official source and current verification date are recorded."
+      "last_verified": "2026-10-01",
+      "notes": "At least one verified official-source listing is currently published for this country; regional listings may cover additional countries."
     },
     {
       "country_code": "EG",
@@ -340,10 +340,10 @@
       "finance": "verified",
       "grants": "no_verified_listing",
       "machinery": "no_verified_listing",
-      "finance_count": 1,
+      "finance_count": 2,
       "grants_count": 0,
       "machinery_count": 0,
-      "last_verified": "2026-09-30",
+      "last_verified": "2026-10-01",
       "notes": "At least one verified official-source listing is currently published for this country; regional listings may cover additional countries."
     },
     {
@@ -522,7 +522,7 @@
       "finance": "verified",
       "grants": "no_verified_listing",
       "machinery": "no_verified_listing",
-      "finance_count": 2,
+      "finance_count": 3,
       "grants_count": 0,
       "machinery_count": 0,
       "last_verified": "2026-10-01",
@@ -639,10 +639,10 @@
       "finance": "verified",
       "grants": "no_verified_listing",
       "machinery": "no_verified_listing",
-      "finance_count": 2,
+      "finance_count": 3,
       "grants_count": 0,
       "machinery_count": 0,
-      "last_verified": "2026-09-30",
+      "last_verified": "2026-10-01",
       "notes": "At least one verified official-source listing is currently published for this country; regional listings may cover additional countries."
     },
     {
@@ -678,10 +678,10 @@
       "finance": "verified",
       "grants": "no_verified_listing",
       "machinery": "no_verified_listing",
-      "finance_count": 2,
+      "finance_count": 3,
       "grants_count": 0,
       "machinery_count": 0,
-      "last_verified": "2026-09-30",
+      "last_verified": "2026-10-01",
       "notes": "At least one verified official-source listing is currently published for this country; regional listings may cover additional countries."
     },
     {
