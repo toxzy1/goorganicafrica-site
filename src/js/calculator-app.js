@@ -45,8 +45,19 @@
     } catch (e) {}
     state.country = data.defaultCountry || savedCountry || "NG";
     state.language = data.defaultLanguage || localStorage.getItem("goa_language") || "en";
-    setupToolbar();
-    render();
+
+    // Wait for the shared translation loader before the first calculator render.
+    // This prevents a visible English fallback while pt/fr/ar/sw is loading.
+    if (window.GOA_I18N && window.GOA_I18N.ready && typeof window.GOA_I18N.ready.then === "function") {
+      window.GOA_I18N.ready.then(function () {
+        state.language = data.defaultLanguage || window.GOA_I18N.lang() || state.language;
+        setupToolbar();
+        render();
+      });
+    } else {
+      setupToolbar();
+      render();
+    }
   }
 
   function goNext() {
