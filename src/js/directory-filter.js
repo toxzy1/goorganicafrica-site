@@ -13,6 +13,27 @@ document.addEventListener("DOMContentLoaded", function () {
       .replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9\s-]/g, " ")
       .replace(/\s+/g, " ").trim();
   }
+  function buildOptions(select, attribute) {
+    if (!select || select.getAttribute("data-auto-options") !== "true") return;
+    var first = select.options[0];
+    select.innerHTML = "";
+    if (first) select.appendChild(first);
+    var values = {};
+    items.forEach(function (item) {
+      var value = item.getAttribute(attribute);
+      if (value) values[value] = true;
+    });
+    Object.keys(values).sort(function(a,b){ return a.localeCompare(b); }).forEach(function(value){
+      var option = document.createElement("option");
+      option.value = value;
+      option.textContent = value.replace(/_/g, " ");
+      select.appendChild(option);
+    });
+  }
+
+  buildOptions(country, "data-country");
+  buildOptions(category, "data-category");
+
   function matches(item) {
     var q = normalize(search ? search.value : "");
     var countryValue = normalize(country ? country.value : "");
