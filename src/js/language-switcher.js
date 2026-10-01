@@ -21,7 +21,8 @@
     // versions of the blog, eBooks and homepage are also authoritative:
     // never let an old localStorage choice silently turn /blog/ into a
     // French/Arabic/Portuguese/Swahili page while the URL remains English.
-    if (path === "/" || path === "/blog" || path === "/ebooks") return "en";
+    if (path === "/" || path === "/blog" || path === "/ebooks" ||
+        path.indexOf("/blog/") === 0 || path.indexOf("/ebooks/") === 0) return "en";
 
     // Shared pages intentionally remember the user's selected language.
     try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
@@ -134,9 +135,11 @@
         ? (code === "en" ? "/" : "/" + code + "/")
         : (section === "calculator"
           ? "/farm-profit-calculator/"
-          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
-            ? "/" + sectionPath + "/"
-            : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/")));
+          : (section === "resources"
+            ? "/agriculture-resources/"
+            : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
+              ? "/" + sectionPath + "/"
+              : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/"))));
     });
   }
 
