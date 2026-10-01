@@ -43,24 +43,6 @@ layout: layouts/base.njk
     <span class="eyebrow">{{ category }}</span>
     <h1>{{ title }}</h1>
 
-    <div id="goa-language-targets" aria-hidden="true" style="display:none;"
-{% for p in collections.posts %}{% if p.data.translation_group == translation_group and (p.data.translation_status or 'published') != 'in_review' %} data-url-{{ p.data.language or 'en' }}="{{ p.url }}"{% endif %}{% endfor %}>
-      {% for p in collections.posts %}
-        {% if p.data.translation_group == translation_group and (p.data.translation_status or 'published') != 'in_review' %}
-          <span data-language="{{ p.data.language or 'en' }}" data-url="{{ p.url }}"></span>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="translation-links" aria-label="Available article languages">
-      <strong data-i18n="blog.language">Language:</strong>
-      {% for p in collections.posts %}
-        {% if p.data.translation_group == translation_group and (p.data.translation_status or 'published') != 'in_review' %}
-          <a data-language="{{ p.data.language or 'en' }}" href="{{ p.url }}" hreflang="{{ p.data.language or 'en' }}">{{ p.data.language or 'en' }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-
     <!-- Article meta -->
     <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:12px 0 24px;font-size:0.82rem;color:var(--ink-soft);">
       <span>&#128100; {{ site.author }}</span>
