@@ -62,10 +62,11 @@ for (const name of postFiles) {
   const slug = (fm.match(/^slug:\s*([^\n\r]+)/m) || [,""])[1].trim().replace(/^["']|["']$/g, "");
   const group = (fm.match(/^translation_group:\s*([^\n\r]+)/m) || [,""])[1].trim().replace(/^["']|["']$/g, "");
   const status = (fm.match(/^translation_status:\s*([^\n\r]+)/m) || [,"published"])[1].trim().replace(/^["']|["']$/g, "");
+  const permalink = (fm.match(/^permalink:\s*["']([^"']+)["']/m) || [,""])[1].trim();
   const active = !/^active:\s*false$/m.test(fm);
   if (!active || status === "in_review" || !slug) continue;
   const base = slug.replace(/-(fr|ar|pt|sw)$/, "");
-  const url = lang === "en" ? "/blog/" + base + "/" : "/" + lang + "/blog/" + base + "/";
+  const url = permalink || (lang === "en" ? "/blog/" + base + "/" : "/" + lang + "/blog/" + base + "/");
   const target = path.join(site, url.replace(/^\//, ""), "index.html");
   if (!fs.existsSync(target)) failures.push("Source post does not render: " + name + " -> " + url);
   if (group) {
@@ -78,6 +79,32 @@ for (const name of postFiles) {
 for (const [group, byLang] of groups) {
   for (const lang of ["en","fr","ar","pt","sw"]) {
     if (!byLang.has(lang)) failures.push("Translation group " + group + " is missing published " + lang + " blog post");
+  }
+}
+
+// Strong route-integrity check: every card on each language blog index must point
+// to an actual published post URL for that same language, not merely a URL with
+// the correct /<language>/blog/ prefix. This catches same-language wrong-page links.
+const expectedBlogUrls = new Map();
+for (const [group, byLang] of groups) {
+  for (const [lang, url] of byLang) {
+    if (!expectedBlogUrls.has(lang)) expectedBlogUrls.set(lang, new Set());
+    expectedBlogUrls.get(lang).add(url);
+  }
+}
+for (const [rel, lang] of [
+  ["blog/index.html","en"],["fr/blog/index.html","fr"],["ar/blog/index.html","ar"],
+  ["pt/blog/index.html","pt"],["sw/blog/index.html","sw"]
+]) {
+  const html = read(rel);
+  if (!html) continue;
+  const cards = cardHrefs(html);
+  const expected = expectedBlogUrls.get(lang) || new Set();
+  for (const href of cards) {
+    if (!expected.has(href)) failures.push(rel + ": blog card points to non-existent or wrong post route: " + href);
+  }
+  if (cards.length !== expected.size) {
+    failures.push(rel + ": expected " + expected.size + " published blog cards but rendered " + cards.length);
   }
 }
 
