@@ -15,8 +15,9 @@
       <li><a href="/agriculture-resources/" data-localized-section="resources">Resources</a></li>
       <li><a href="/about/" data-localized-section="about" data-i18n="common.about">About</a></li>
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
-      {% set isBlogOrEbookDetail = (page.url or "").startsWith("/blog/") or (page.url or "").startsWith("/fr/blog/") or (page.url or "").startsWith("/ar/blog/") or (page.url or "").startsWith("/pt/blog/") or (page.url or "").startsWith("/sw/blog/") or (page.url or "").startsWith("/ebooks/") or (page.url or "").startsWith("/fr/ebooks/") or (page.url or "").startsWith("/ar/ebooks/") or (page.url or "").startsWith("/pt/ebooks/") or (page.url or "").startsWith("/sw/ebooks/") %}
-      {% if not isBlogOrEbookDetail %}
+      {% set currentPath = page.url or "/" %}
+      {% set isHomeOrCalculator = currentPath == "/" or currentPath == "/fr/" or currentPath == "/ar/" or currentPath == "/pt/" or currentPath == "/sw/" or currentPath.startsWith("/farm-profit-calculator") or currentPath.startsWith("/fr/farm-profit-calculator") or currentPath.startsWith("/ar/farm-profit-calculator") or currentPath.startsWith("/pt/farm-profit-calculator") or currentPath.startsWith("/sw/farm-profit-calculator") or currentPath.matches("/^\\/[^\\/]+\\/[^\\/]+\\/farm-profit-calculator\\//") %}
+      {% if isHomeOrCalculator %}
       <li class="site-language">
         <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
         <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
