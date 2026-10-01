@@ -60,14 +60,18 @@ module.exports = function (eleventyConfig) {
   });
 
 
-  // Generate the article URL directly from the post language and stable slug.
-  // This avoids relying on a stale/incorrect collection URL in localized indexes.
+  // Use the article's declared permalink as the single source of truth.
+  // Translated posts already define their exact public route in front matter.
+  // This prevents the index from inventing a route from slug/file naming.
   eleventyConfig.addFilter("localizedPostUrl", (post) => {
-    if (!post || !post.data) return "#";
-    const language = post.data.language || "en";
-    const rawSlug = post.data.slug || post.fileSlug || "";
-    const slug = rawSlug.replace(/-(fr|ar|pt|sw)$/, "");
-    return language === "en" ? `/blog/${slug}/` : `/${language}/blog/${slug}/`;
+    if (!post) return "#";
+    if (post.data && typeof post.data.permalink === "string" && post.data.permalink.trim()) {
+      return post.data.permalink.trim();
+    }
+    if (typeof post.url === "string" && post.url.trim()) {
+      return post.url;
+    }
+    return "#";
   });
 
   // Find the localized version of a content item by stable slug and language.
