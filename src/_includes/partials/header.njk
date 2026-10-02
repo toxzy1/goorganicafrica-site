@@ -17,7 +17,7 @@
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
       {% set currentPath = page.url or "/" %}
       {% set isCalculator = currentPath.startsWith("/farm-profit-calculator") or currentPath.startsWith("/fr/farm-profit-calculator") or currentPath.startsWith("/ar/farm-profit-calculator") or currentPath.startsWith("/pt/farm-profit-calculator") or currentPath.startsWith("/sw/farm-profit-calculator") or currentPath.split("/")[3] == "farm-profit-calculator" %}
-      {% if isCalculator %}
+      {% if isCalculator and not currentPath.split("/")[3] == "farm-profit-calculator" %}
       <li class="site-language">
         <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
         <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
