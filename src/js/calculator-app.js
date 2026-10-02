@@ -144,10 +144,9 @@
     return unit;
   }
   function setupToolbar(){
-    var cs=document.getElementById("calc-country-switcher"), ls=document.getElementById("calc-language-switcher");
-    if(!cs || !ls) return;
+    var cs=document.getElementById("calc-country-switcher");
+    if(!cs) return;
     cs.innerHTML=""; countries.forEach(function(c){ var o=document.createElement("option"); o.value=c.code; o.textContent=(c.flag||"")+" "+localizedCountryName(c); o.selected=c.code===state.country; cs.appendChild(o); });
-    ls.innerHTML=""; (window.GOA_LANGUAGES || []).filter(function(item){ return item.enabled !== false; }).forEach(function(item){ var o=document.createElement("option"); o.value=item.code; o.textContent=item.native; o.selected=item.code===state.language; ls.appendChild(o); });
     cs.onchange=function(){
       state.country=this.value; state.region=null; state.commodity=null;
       try{localStorage.setItem("fpc_country",state.country)}catch(e){}
@@ -158,29 +157,12 @@
         var target = "/"+String(c.code).toLowerCase()+"/"+String(state.language).toLowerCase()+"/farm-profit-calculator/";
         window.location.assign(target);
     };
-    ls.onchange=function(){
-      state.language=this.value;
-      var c=currentCountryObj();
-      if (c && c.code) {
-        try { localStorage.setItem("goa_language", state.language); } catch(e) {}
-        try { localStorage.setItem("goa_language", state.language); } catch(e) {}
-        window.location.assign("/"+String(c.code).toLowerCase()+"/"+String(state.language).toLowerCase()+"/farm-profit-calculator/");
-      }
-    };
     document.documentElement.lang=state.language; document.documentElement.dir=state.language==="ar"?"rtl":"ltr";
   }
   function localizeToolbar(){
-    var l=locale(); var ls=document.getElementById("calc-language-switcher"); var cs=document.getElementById("calc-country-switcher");
-    if(ls) ls.setAttribute("aria-label",l.languageLabel || l.label); if(cs) cs.setAttribute("aria-label",l.countryLabel || l.country);
+    var l=locale(); var cs=document.getElementById("calc-country-switcher");
+    if(cs) cs.setAttribute("aria-label",l.countryLabel || l.country);
   }
-
-  document.addEventListener('goa:languagechange', function (event) {
-    if (state) {
-      state.language = event.detail.language;
-      setupToolbar();
-      render();
-    }
-  });
 
   function render() {
     localizeToolbar();
