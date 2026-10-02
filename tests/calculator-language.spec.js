@@ -83,3 +83,27 @@ test("NG: calculator reaches the complete final results page", async ({ page }) 
   await expect(page.getByRole("link", { name: /home/i })).toBeVisible();
   expect(errors).toEqual([]);
 });
+
+
+test("Homepage: language selector switches to a language-specific homepage", async ({ page }) => {
+  const errors = [];
+  page.on("pageerror", error => errors.push(error.message));
+
+  await page.goto("/", { waitUntil: "networkidle" });
+  await expect(page.locator("#site-language-select")).toHaveCount(1);
+  await page.locator("#site-language-select").selectOption("pt");
+  await page.waitForURL(/\/pt\/?$/);
+  await expect(page.locator("html")).toHaveAttribute("lang", "pt");
+  await expect(page.locator("#site-language-select")).toHaveValue("pt");
+  expect(errors).toEqual([]);
+});
+
+for (const section of ["blog", "ebooks"]) {
+  for (const language of ["en", "fr", "ar", "pt", "sw"]) {
+    test(`${section}: ${language} page has no global language selector`, async ({ page }) => {
+      const prefix = language === "en" ? "" : "/" + language;
+      await page.goto(prefix + "/" + section + "/", { waitUntil: "networkidle" });
+      await expect(page.locator("#site-language-select")).toHaveCount(0);
+    });
+  }
+}
