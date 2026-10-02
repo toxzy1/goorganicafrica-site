@@ -80,7 +80,7 @@ test("NG: calculator reaches the complete final results page", async ({ page }) 
   await expect(page.locator(".calc-result-grid")).toBeVisible();
   await expect(page.locator(".calc-disclaimer")).toBeVisible();
   await expect(page.getByRole("button", { name: /start new|new calculation/i })).toBeVisible();
-  await expect(page.getByRole("link", { name: /home/i })).toBeVisible();
+  await expect(page.locator("#calc-root a.btn-outline").filter({ hasText: /home/i })).toBeVisible();
   expect(errors).toEqual([]);
 });
 
