@@ -115,6 +115,13 @@
     if (rest === "blog") return code === "en" ? "/blog/" : "/" + code + "/blog/";
     if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
 
+    // Calculator pages use /<country>/<language>/farm-profit-calculator/.
+    // Keep the country while changing only the requested language.
+    var calculatorMatch = path.match(/^\/([^/]+)\/(en|fr|ar|pt|sw)\/farm-profit-calculator$/);
+    if (calculatorMatch) {
+      return "/" + calculatorMatch[1].toLowerCase() + "/" + code + "/farm-profit-calculator/";
+    }
+
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact|privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
 
@@ -139,7 +146,16 @@
       link.href = section === "home"
         ? (code === "en" ? "/" : "/" + code + "/")
         : (section === "calculator"
-          ? "/farm-profit-calculator/"
+          ? (function () {
+              var path = window.location.pathname.replace(/\\/+$/, "") || "/";
+              var match = path.match(/^\/([^/]+)\/(en|fr|ar|pt|sw)\/farm-profit-calculator$/);
+              if (match) return "/" + match[1].toLowerCase() + "/" + code + "/farm-profit-calculator/";
+              try {
+                var stored = localStorage.getItem("fpc_country");
+                if (stored) return "/" + stored.toLowerCase() + "/" + code + "/farm-profit-calculator/";
+              } catch (_) {}
+              return "/ng/" + code + "/farm-profit-calculator/";
+            })()
           : (section === "resources"
             ? "/agriculture-resources/"
             : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
