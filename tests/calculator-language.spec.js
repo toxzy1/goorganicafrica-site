@@ -9,8 +9,8 @@ for (const country of countries) {
       const errors = [];
       page.on("pageerror", error => errors.push(error.message));
 
-      await page.goto(`/${country}/${language}/farm-profit-calculator/`, { waitUntil: "networkidle" });
-      await page.waitForTimeout(1000);
+      await page.goto(`/${country}/${language}/farm-profit-calculator/`, { waitUntil: "domcontentloaded" });
+      await page.waitForTimeout(300);
 
       await expect(page).toHaveURL(new RegExp(`/${country}/${language}/farm-profit-calculator/?$`));
       await expect(page.locator("html")).toHaveAttribute("lang", language);
