@@ -147,7 +147,7 @@
         ? (code === "en" ? "/" : "/" + code + "/")
         : (section === "calculator"
           ? (function () {
-              var path = window.location.pathname.replace(/\\/+$/, "") || "/";
+              var path = window.location.pathname.replace(/\/+$/, "") || "/";
               var match = path.match(/^\/([^/]+)\/(en|fr|ar|pt|sw)\/farm-profit-calculator$/);
               if (match) return "/" + match[1].toLowerCase() + "/" + code + "/farm-profit-calculator/";
               try {
