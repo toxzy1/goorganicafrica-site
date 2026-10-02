@@ -50,7 +50,9 @@
     // This prevents a visible English fallback while pt/fr/ar/sw is loading.
     if (window.GOA_I18N && window.GOA_I18N.ready && typeof window.GOA_I18N.ready.then === "function") {
       window.GOA_I18N.ready.then(function () {
-        state.language = data.defaultLanguage || window.GOA_I18N.lang() || state.language;
+        // The calculator URL is authoritative. This prevents the build-time default
+        // language from forcing /<country>/pt/ back to English after translations load.
+        state.language = (window.GOA_I18N && typeof window.GOA_I18N.lang === "function" ? window.GOA_I18N.lang() : null) || data.defaultLanguage || state.language;
         setupToolbar();
         render();
       });
@@ -149,7 +151,10 @@
       try{localStorage.setItem("fpc_country",state.country)}catch(e){}
       var c=currentCountryObj();
       // Country selection always gets its own country/language URL for SEO and shareable localized pages.
-      window.location.href="/"+String(c.code).toLowerCase()+"/"+state.language+"/farm-profit-calculator/";
+      // Build the localized calculator URL directly from the selected country and language.
+        // Do not depend on the generic site language-switcher for this navigation.
+        var target = "/"+String(c.code).toLowerCase()+"/"+String(state.language).toLowerCase()+"/farm-profit-calculator/";
+        window.location.assign(target);
     };
     ls.onchange=function(){
       state.language=this.value;
