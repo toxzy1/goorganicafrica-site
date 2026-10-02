@@ -20,7 +20,7 @@
       {% if isHomePage %}
       <li class="site-language">
         <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
-        <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
+        <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language" data-native-route="true" onchange="window.location.assign(this.value === 'en' ? '/' : '/' + this.value + '/');">
           {% for lang in siteLanguages.languages %}
           {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
           {% endfor %}
