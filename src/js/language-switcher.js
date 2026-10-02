@@ -264,11 +264,31 @@
       });
       selector.addEventListener("change", function () {
         var requested = this.value;
-        var targetUrl = localizedContentUrl(requested);
         setLanguage(requested);
-        // Shared pages intentionally keep the same URL. Do not reload them,
-        // because a reload restores the server's default <html lang="en">.
+
+        // Home/blog/eBook indexes are server-rendered language routes.
+        // Navigate directly so a shared-page refresh can never swallow the
+        // route change or restore the English URL.
         var currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+        var isHome = currentPath === "/" || /^\/(fr|ar|pt|sw)$/.test(currentPath);
+        var isSectionIndex = /^\/(fr|ar|pt|sw)?\/?(blog|ebooks)$/.test(currentPath);
+        if (isHome) {
+          var homeUrl = requested === "en" ? "/" : "/" + requested + "/";
+          if (homeUrl !== (currentPath + "/")) {
+            window.location.assign(homeUrl);
+            return;
+          }
+        }
+        if (isSectionIndex) {
+          var section = currentPath.split("/").filter(Boolean).pop();
+          var sectionUrl = requested === "en" ? "/" + section + "/" : "/" + requested + "/" + section + "/";
+          if (sectionUrl !== currentPath + "/") {
+            window.location.assign(sectionUrl);
+            return;
+          }
+        }
+
+        var targetUrl = localizedContentUrl(requested);
         var targetPath = targetUrl ? new URL(targetUrl, window.location.origin).pathname.replace(/\/+$/, "") || "/" : null;
         if (targetUrl && targetPath !== currentPath) {
           window.location.assign(targetUrl);
