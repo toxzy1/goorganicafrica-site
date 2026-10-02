@@ -44,7 +44,8 @@
       savedCountry = localStorage.getItem("fpc_country");
     } catch (e) {}
     state.country = data.defaultCountry || savedCountry || "NG";
-    state.language = data.defaultLanguage || localStorage.getItem("goa_language") || "en";
+    var pathLanguage = window.location.pathname.match(/^\/[^/]+\/(en|fr|ar|pt|sw)\/farm-profit-calculator(?:\/|$)/);
+    state.language = pathLanguage ? pathLanguage[1] : (data.defaultLanguage || localStorage.getItem("goa_language") || "en");
 
     // Wait for the shared translation loader before the first calculator render.
     // This prevents a visible English fallback while pt/fr/ar/sw is loading.
@@ -52,7 +53,8 @@
       window.GOA_I18N.ready.then(function () {
         // The calculator URL is authoritative. This prevents the build-time default
         // language from forcing /<country>/pt/ back to English after translations load.
-        state.language = (window.GOA_I18N && typeof window.GOA_I18N.lang === "function" ? window.GOA_I18N.lang() : null) || data.defaultLanguage || state.language;
+        var urlLanguage = window.location.pathname.match(/^\/[^/]+\/(en|fr|ar|pt|sw)\/farm-profit-calculator(?:\/|$)/);
+        state.language = urlLanguage ? urlLanguage[1] : state.language;
         setupToolbar();
         render();
       });
@@ -161,7 +163,8 @@
       var c=currentCountryObj();
       if (c && c.code) {
         try { localStorage.setItem("goa_language", state.language); } catch(e) {}
-        window.location.href="/"+String(c.code).toLowerCase()+"/"+state.language+"/farm-profit-calculator/";
+        try { localStorage.setItem("goa_language", state.language); } catch(e) {}
+        window.location.assign("/"+String(c.code).toLowerCase()+"/"+String(state.language).toLowerCase()+"/farm-profit-calculator/");
       }
     };
     document.documentElement.lang=state.language; document.documentElement.dir=state.language==="ar"?"rtl":"ltr";
