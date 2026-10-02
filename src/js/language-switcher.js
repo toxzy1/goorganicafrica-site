@@ -254,7 +254,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     var selector = document.getElementById("site-language-select");
-    if (selector) {
+    if (selector && selector.getAttribute("data-native-route") !== "true") {
       selector.innerHTML = "";
       languages.forEach(function (item) {
         var option = document.createElement("option");
