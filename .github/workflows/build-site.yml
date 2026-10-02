@@ -13,7 +13,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,3 +34,9 @@ jobs:
 
       - name: Audit rendered pages for duplicate and mixed-language content
         run: npm run audit:rendered
+
+      - name: Install Chromium for calculator browser tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Test calculator language switching
+        run: npx playwright test
