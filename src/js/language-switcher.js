@@ -151,19 +151,29 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261001", { cache: "default" })
-      .then(function (response) {
+
+    var version = window.GOA_ASSET_VERSION || "20261002";
+    var url = "/i18n/" + encodeURIComponent(code) + ".json?v=" + encodeURIComponent(version);
+
+    function request(attempt) {
+      return fetch(url, { cache: "default" }).then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
-      })
-      .then(function (translations) {
-        dictionary[code] = translations || {};
-        return dictionary[code];
-      })
-      .catch(function () {
-        dictionary[code] = dictionary.en || {};
-        return dictionary[code];
+      }).catch(function (error) {
+        if (attempt < 1) return request(attempt + 1);
+        throw error;
       });
+    }
+
+    languageLoads[code] = request(0).then(function (translations) {
+      dictionary[code] = translations || {};
+      return dictionary[code];
+    }).catch(function () {
+      // Never replace a failed language with English. The caller can leave
+      // server-rendered text untouched instead of silently showing the wrong language.
+      delete languageLoads[code];
+      return null;
+    });
     return languageLoads[code];
   }
 
@@ -189,7 +199,13 @@
       document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } }));
       return Promise.resolve(code);
     }
-    return loadLanguage(code).then(function () {
+    return loadLanguage(code).then(function (translations) {
+      if (!translations) {
+        // Translation loading failed after one retry. Do not overwrite the
+        // server-rendered page with the English fallback.
+        document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code, translationLoadFailed: true } }));
+        return code;
+      }
       apply(document.body, code);
 
       var homeTitle = resolve(code, "home.pageTitle");
