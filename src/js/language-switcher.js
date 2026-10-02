@@ -106,6 +106,18 @@
     }
 
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
+
+    // Calculator pages use a country-first URL: /<country>/<language>/farm-profit-calculator/.
+    // The calculator has its own language selector, but the shared header selector is
+    // also rendered on these pages. Handle this route explicitly so selecting
+    // Portuguese (or any other language) navigates to the matching country/language
+    // URL instead of falling through to a null target and immediately reverting to
+    // the URL-authoritative language.
+    var calculatorMatch = path.match(/^\/([^/]+)\/(en|fr|ar|pt|sw)\/farm-profit-calculator(?:\/|$)/);
+    if (calculatorMatch) {
+      return "/" + calculatorMatch[1].toLowerCase() + "/" + code + "/farm-profit-calculator/";
+    }
+
     var languageMatch = path.match(/^\/(fr|ar|pt|sw)(?:\/(.*))?$/);
     var rest = languageMatch ? (languageMatch[2] || "") : path.replace(/^\//, "");
 
