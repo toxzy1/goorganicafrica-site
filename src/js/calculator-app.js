@@ -44,24 +44,9 @@
       savedCountry = localStorage.getItem("fpc_country");
     } catch (e) {}
     state.country = data.defaultCountry || savedCountry || "NG";
-    var pathLanguage = window.location.pathname.match(/^\/[^/]+\/(en|fr|ar|pt|sw)\/farm-profit-calculator(?:\/|$)/);
-    state.language = pathLanguage ? pathLanguage[1] : (data.defaultLanguage || localStorage.getItem("goa_language") || "en");
-
-    // Wait for the shared translation loader before the first calculator render.
-    // This prevents a visible English fallback while pt/fr/ar/sw is loading.
-    if (window.GOA_I18N && window.GOA_I18N.ready && typeof window.GOA_I18N.ready.then === "function") {
-      window.GOA_I18N.ready.then(function () {
-        // The calculator URL is authoritative. This prevents the build-time default
-        // language from forcing /<country>/pt/ back to English after translations load.
-        var urlLanguage = window.location.pathname.match(/^\/[^/]+\/(en|fr|ar|pt|sw)\/farm-profit-calculator(?:\/|$)/);
-        state.language = urlLanguage ? urlLanguage[1] : state.language;
-        setupToolbar();
-        render();
-      });
-    } else {
-      setupToolbar();
-      render();
-    }
+    state.language = data.defaultLanguage || localStorage.getItem("goa_language") || "en";
+    setupToolbar();
+    render();
   }
 
   function goNext() {
@@ -144,61 +129,39 @@
     return unit;
   }
   function setupToolbar(){
-    var cs=document.getElementById("calc-country-switcher");
-    var ls=document.getElementById("calc-language-switcher");
-    if(!cs) return;
-
-    // The calculator URL is the single source of truth for language. Stored site language
-    // preferences are never allowed to override the language of the current calculator URL.
-    var pathMatch = window.location.pathname.match(/^\\/([^/]+)\\/(en|fr|ar|pt|sw)\\/farm-profit-calculator(?:\\/|$)/);
-    if(pathMatch) state.language = pathMatch[2];
-
+    var cs=document.getElementById("calc-country-switcher"), ls=document.getElementById("calc-language-switcher");
+    if(!cs || !ls) return;
     cs.innerHTML=""; countries.forEach(function(c){ var o=document.createElement("option"); o.value=c.code; o.textContent=(c.flag||"")+" "+localizedCountryName(c); o.selected=c.code===state.country; cs.appendChild(o); });
+    ls.innerHTML=""; (window.GOA_LANGUAGES || []).filter(function(item){ return item.enabled !== false; }).forEach(function(item){ var o=document.createElement("option"); o.value=item.code; o.textContent=item.native; o.selected=item.code===state.language; ls.appendChild(o); });
     cs.onchange=function(){
       state.country=this.value; state.region=null; state.commodity=null;
       try{localStorage.setItem("fpc_country",state.country)}catch(e){}
-      navigateCalculator(state.country, state.language);
+      var c=currentCountryObj();
+      // Country selection always gets its own country/language URL for SEO and shareable localized pages.
+      window.location.href="/"+String(c.code).toLowerCase()+"/"+state.language+"/farm-profit-calculator/";
     };
-
-    if(ls){
-      ls.innerHTML="";
-      [
-        {code:"en", native:"English"},
-        {code:"fr", native:"Français"},
-        {code:"ar", native:"العربية"},
-        {code:"pt", native:"Português"},
-        {code:"sw", native:"Kiswahili"}
-      ].forEach(function(item){
-        var o=document.createElement("option");
-        o.value=item.code;
-        o.textContent=item.native;
-        o.selected=item.code===state.language;
-        ls.appendChild(o);
-      });
-      ls.onchange=function(){
-        var nextLanguage=this.value;
-        // Language changes are calculator-only navigations. Do not update global site language
-        // state, localStorage, or dispatch a shared language-change event that could redirect us.
-        navigateCalculator(state.country, nextLanguage);
-      };
-    }
-
-    document.documentElement.lang=state.language;
-    document.documentElement.dir=state.language==="ar"?"rtl":"ltr";
+    ls.onchange=function(){
+      state.language=this.value;
+      var c=currentCountryObj();
+      if (c && c.code) {
+        try { localStorage.setItem("goa_language", state.language); } catch(e) {}
+        window.location.href="/"+String(c.code).toLowerCase()+"/"+state.language+"/farm-profit-calculator/";
+      }
+    };
+    document.documentElement.lang=state.language; document.documentElement.dir=state.language==="ar"?"rtl":"ltr";
   }
-
-  function navigateCalculator(countryCode, languageCode){
-    var target = "/"+String(countryCode).toLowerCase()+"/"+String(languageCode).toLowerCase()+"/farm-profit-calculator/";
-    window.location.assign(target);
-  }
-
   function localizeToolbar(){
-    var l=locale();
-    var cs=document.getElementById("calc-country-switcher");
-    var ls=document.getElementById("calc-language-switcher");
-    if(cs) cs.setAttribute("aria-label",l.countryLabel || l.country);
-    if(ls) ls.setAttribute("aria-label",l.languageLabel || "Language");
+    var l=locale(); var ls=document.getElementById("calc-language-switcher"); var cs=document.getElementById("calc-country-switcher");
+    if(ls) ls.setAttribute("aria-label",l.languageLabel || l.label); if(cs) cs.setAttribute("aria-label",l.countryLabel || l.country);
   }
+
+  document.addEventListener('goa:languagechange', function (event) {
+    if (state) {
+      state.language = event.detail.language;
+      setupToolbar();
+      render();
+    }
+  });
 
   function render() {
     localizeToolbar();
