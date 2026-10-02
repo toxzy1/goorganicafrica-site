@@ -6,41 +6,34 @@ eleventyExcludeFromCollections: true
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>{{ site.url }}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   {% for lang in siteLanguages.languages %}
-  {% if lang.enabled !== false %}
+  {% if lang.enabled != false %}
   <url><loc>{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   {% endif %}
   {% endfor %}
-
   <url><loc>{{ site.url }}/farm-profit-calculator/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-
   {% for locale in calculatorLocales %}
   <url><loc>{{ site.url }}/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-profit-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   {% endfor %}
-
   <url><loc>{{ site.url }}/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/fr/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/ar/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/pt/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/sw/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
   {% for ebook in collections.ebooks %}
   {% if ebook.data.active != false and (ebook.data.translation_status or "published") != "in_review" %}
   <url><loc>{{ site.url }}{{ ebook.url }}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   {% endif %}
   {% endfor %}
-
   <url><loc>{{ site.url }}/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/fr/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/ar/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/pt/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>{{ site.url }}/sw/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-
   {% for post in collections.posts %}
   {% if post.data.active != false and (post.data.translation_status or "published") != "in_review" %}
   <url><loc>{{ site.url }}{{ post.url }}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   {% endif %}
   {% endfor %}
-
   <url><loc>{{ site.url }}/agriculture-resources/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>{{ site.url }}/agricultural-finance/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>{{ site.url }}/agricultural-grants/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -49,4 +42,9 @@ eleventyExcludeFromCollections: true
   <url><loc>{{ site.url }}/about/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>{{ site.url }}/contact/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>{{ site.url }}/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>{{ site.url }}/cookie-policy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>{{ site.url }}/terms-and-conditions/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>{{ site.url }}/disclaimer/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>{{ site.url }}/editorial-policy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>{{ site.url }}/commercial-disclosure/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
