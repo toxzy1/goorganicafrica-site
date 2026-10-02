@@ -1,5 +1,6 @@
 name: Build and Validate Site
 # End-to-end build validation for every main deployment.
+# Preserve the original agricultural resources release baseline.
 
 on:
   push:
