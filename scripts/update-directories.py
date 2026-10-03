@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config/directory-sources.json"
+COVERAGE = ROOT / "config/directory-country-coverage.json"
 PENDING = ROOT / "data/directories/pending"
 
 def get(url: str) -> bytes:
@@ -31,8 +32,26 @@ def read_feed(url: str, method: str):
 def main():
     PENDING.mkdir(parents=True, exist_ok=True)
     config = json.loads(CONFIG.read_text())
+    coverage = json.loads(COVERAGE.read_text()) if COVERAGE.exists() else {"countries": []}
     candidates, errors = [], []
     stamp = datetime.now(timezone.utc)
+
+    active_sources = [s for s in config.get("sources", []) if s.get("status") == "active"]
+    country_names = {c.get("name"): c for c in coverage.get("countries", []) if c.get("active", True)}
+    exact_source_countries = {
+        s.get("country") for s in active_sources
+        if s.get("country") and s.get("country") != "MULTI"
+    }
+    coverage_summary = {
+        "target_country_count": len(country_names),
+        "countries_with_country_specific_source": sorted(
+            name for name in country_names if name in exact_source_countries
+        ),
+        "countries_without_country_specific_source": sorted(
+            name for name in country_names if name not in exact_source_countries
+        ),
+        "multi_country_source_count": sum(1 for s in active_sources if s.get("country") == "MULTI")
+    }
 
     for src in config.get("sources", []):
         if src.get("status") != "active":
@@ -82,7 +101,8 @@ def main():
         "generated_at": stamp.isoformat(),
         "candidate_count": len(candidates),
         "candidates": candidates,
-        "errors": errors
+        "errors": errors,
+        "coverage_summary": coverage_summary
     }, ensure_ascii=False, indent=2) + "\n"
     out = PENDING / f"directory-candidates-{stamp.strftime('%Y-%m-%d-%H%M%S')}.json"
     latest = PENDING / "directory-candidates-latest.json"
