@@ -15,7 +15,7 @@ for (const file of files) {
 for (const file of ['src/index.njk', 'src/_includes/partials/header.njk', 'src/_includes/partials/footer.njk']) {
   if (!fs.existsSync(file)) continue;
   const source = fs.readFileSync(file, 'utf8');
-  for (const match of source.matchAll(/data-i18n(?:-[\w-]+)?=["']([^"']+)["']/g)) keys.add(match[1]);
+  for (const match of source.matchAll(/data-i18n(?:-(?!vars\b)[\w-]+)?=["']([^"']+)["']/g)) keys.add(match[1]);
 }
 
 const missing = [];
