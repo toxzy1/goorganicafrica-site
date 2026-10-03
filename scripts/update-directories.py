@@ -77,15 +77,18 @@ def main():
         except Exception as exc:
             errors.append({"source": src.get("id"), "error": str(exc)})
 
-    out = PENDING / f"directory-candidates-{stamp.strftime('%Y-%m-%d-%H%M%S')}.json"
-    out.write_text(json.dumps({
+    payload = json.dumps({
         "title": f"Directory review queue — {stamp.strftime('%Y-%m-%d %H:%M UTC')}",
         "generated_at": stamp.isoformat(),
         "candidate_count": len(candidates),
         "candidates": candidates,
         "errors": errors
-    }, ensure_ascii=False, indent=2) + "\n")
-    print(f"Created {out}: {len(candidates)} candidates, {len(errors)} source errors")
+    }, ensure_ascii=False, indent=2) + "\n"
+    out = PENDING / f"directory-candidates-{stamp.strftime('%Y-%m-%d-%H%M%S')}.json"
+    latest = PENDING / "directory-candidates-latest.json"
+    out.write_text(payload)
+    latest.write_text(payload)
+    print(f"Created {out} and updated {latest}: {len(candidates)} candidates, {len(errors)} source errors")
 
 if __name__ == "__main__":
     main()
