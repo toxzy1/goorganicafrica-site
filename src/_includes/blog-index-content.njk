@@ -24,9 +24,22 @@
           {% if cat.data.slug == "agribusiness" or cat.data.slug == "farm-business" %}{% set categoryKey = "agribusiness" %}{% endif %}
           {% if cat.data.slug == "farm-inputs" %}{% set categoryKey = "inputs" %}{% endif %}
           {% if cat.data.slug == "farming-data" %}{% set categoryKey = "markets" %}{% endif %}
+
+          {% set categoryTitle = categoryTranslations[categoryKey] or cat.data.title %}
+          {% set categoryDescription = categoryDescriptionTranslations[categoryKey] or cat.data.description %}
+
+          {% if currentLanguage == "sw" and cat.data.slug == "organic-fertilizers" %}
+            {% set categoryTitle = "Mbolea Hai na Afya ya Udongo" %}
+            {% set categoryDescription = "Mbolea hai, usimamizi wa virutubisho na kujenga udongo wenye afya kwa njia za kikaboni." %}
+          {% endif %}
+          {% if currentLanguage == "sw" and cat.data.slug == "farm-business" %}
+            {% set categoryTitle = "Biashara ya Kilimo na Masoko" %}
+            {% set categoryDescription = "Gharama, kuongeza uzalishaji na kuuza mazao kwa faida." %}
+          {% endif %}
+
           <div class="category-card">
-            <h3>{{ categoryTranslations[categoryKey] or cat.data.title }}</h3>
-            <p>{{ categoryDescriptionTranslations[categoryKey] or cat.data.description }}</p>
+            <h3>{{ categoryTitle }}</h3>
+            <p>{{ categoryDescription }}</p>
           </div>
         {% endif %}
       {% endfor %}
