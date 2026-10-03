@@ -624,6 +624,15 @@ collections:
         fields:
           - {label: "Generated At", name: "generated_at", widget: "datetime", required: false}
           - {label: "Candidate Count", name: "candidate_count", widget: "number", value_type: "int", required: false}
+          - label: "Coverage Summary"
+            name: "coverage_summary"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Target Country Count", name: "target_country_count", widget: "number", value_type: "int", required: false}
+              - {label: "Countries With Country-Specific Source", name: "countries_with_country_specific_source", widget: "list", required: false}
+              - {label: "Countries Without Country-Specific Source", name: "countries_without_country_specific_source", widget: "list", required: false}
+              - {label: "Multi-Country Source Count", name: "multi_country_source_count", widget: "number", value_type: "int", required: false}
           - label: "Candidates"
             name: "candidates"
             widget: "list"
