@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Agricultural Resources by Country | GoOrganicAfrica
+description: Browse GoOrganicAfrica agricultural finance, grants and machinery resources across 54 African countries.
+permalink: "/agriculture-resources/countries/"
+---
+{% include "partials/language-selectors/static.njk" %}
+<section class="section" style="padding-top:48px;">
+  <div class="container" style="max-width:1100px;">
+    <span class="eyebrow">Farmer Resources</span>
+    <h1>Agricultural Resources by Country</h1>
+    <p class="lede">Explore the GoOrganicAfrica directory across all 54 target African country markets. Each country has a dedicated page; country-specific records are added only after official sources are verified.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:30px;">
+      {% for country in directoryCountryCoverage.countries %}
+        <a class="ebook-card" href="/agricultural-resources/countries/{{ country.code | lower }}/" style="text-decoration:none;">
+          <h2 style="font-size:1.05rem;">{{ country.name }}</h2>
+          <p style="margin-bottom:0;">{{ country.coverage_status | replace("_"," ") }}</p>
+        </a>
+      {% endfor %}
+    </div>
+    <p style="margin-top:32px;"><a href="/agriculture-resources/">← Back to Resources</a></p>
+  </div>
+</section>

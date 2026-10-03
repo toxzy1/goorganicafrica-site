@@ -403,6 +403,13 @@
       "status": "Status",
       "latest": "Latest calculator reference period detected:",
       "verify": "Always verify prices with local buyers, suppliers and current market conditions before investing."
+    },
+    "resources": {
+      "directoryLabels": {
+        "officialSource": "Official source:",
+        "verified": "Verified:",
+        "open": "Open official resource"
+      }
     }
   }
 }

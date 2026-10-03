@@ -1,0 +1,126 @@
+{
+  "version": 2,
+  "description": "Approved official and relevant institutional sources for monitoring agricultural finance, grants and machinery resources. Sources are checked automatically where possible and changes enter a human review queue before publication.",
+  "sources": [
+    {
+      "id": "ifad-grants",
+      "country": "MULTI",
+      "category": "grants",
+      "publisher": "International Fund for Agricultural Development (IFAD)",
+      "url": "https://www.ifad.org/en/grants",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official IFAD grants programme information."
+    },
+    {
+      "id": "ifad-call-for-proposals",
+      "country": "MULTI",
+      "category": "grants",
+      "publisher": "International Fund for Agricultural Development (IFAD)",
+      "url": "https://www.ifad.org/en/call-for-proposals",
+      "method": "official_page_review",
+      "frequency": "daily",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official IFAD call-for-proposals page; opportunities and closing dates can change."
+    },
+    {
+      "id": "ifad-finance",
+      "country": "MULTI",
+      "category": "finance",
+      "publisher": "International Fund for Agricultural Development (IFAD)",
+      "url": "https://www.ifad.org/en/finance",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official IFAD agricultural and rural finance information."
+    },
+    {
+      "id": "ifad-rural-finance",
+      "country": "MULTI",
+      "category": "finance",
+      "publisher": "International Fund for Agricultural Development (IFAD)",
+      "url": "https://www.ifad.org/en/rural-finance",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official IFAD rural finance information and programme context."
+    },
+    {
+      "id": "afdb-acfm",
+      "country": "MULTI",
+      "category": "finance",
+      "publisher": "African Development Bank Group",
+      "url": "https://www.afdb.org/en/topics-and-sectors/initiatives-and-partnerships/agri-food-sme-catalytic-financing-mechanism-acfm",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Agri-Food SME Catalytic Financing Mechanism information."
+    },
+    {
+      "id": "afdb-affm",
+      "country": "MULTI",
+      "category": "finance",
+      "publisher": "African Development Bank Group",
+      "url": "https://www.afdb.org/en/affm",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Africa Fertilizer Financing Mechanism information."
+    },
+    {
+      "id": "afdb-gafsp",
+      "country": "MULTI",
+      "category": "finance",
+      "publisher": "African Development Bank Group",
+      "url": "https://www.afdb.org/en/topics-and-sectors/initiatives-and-partnerships/global-agriculture-and-food-security-program/financial-instruments",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official GAFSP financial instruments information."
+    },
+    {
+      "id": "fao-africa-mechanization",
+      "country": "MULTI",
+      "category": "machinery",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "https://www.fao.org/africa/news-stories/news-detail/mechanizing-africa-s-farms-won-t-work-unless-we-do-it-differently/en",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official FAO Africa mechanization resource; used as a machinery/mechanization information source."
+    },
+    {
+      "id": "afdb-namsip",
+      "country": "Namibia",
+      "category": "machinery",
+      "publisher": "African Development Bank Group",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-na-aa0-005",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official NAMSIP project and mechanisation information."
+    },
+    {
+      "id": "fao-machinery-supply-chain",
+      "country": "MULTI",
+      "category": "machinery",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization/strategies/machinery-supply-chain/en/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official FAO machinery supply-chain, hire and repair resource."
+    }
+  ]
+}

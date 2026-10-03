@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "scope": "GoOrganicAfrica 54-country agricultural directory coverage target",
+  "note": "The African Union lists 55 member states, including the Sahrawi Republic. GoOrganicAfrica's directory target remains 54 country markets; the Sahrawi Republic is intentionally excluded from this market coverage registry. Country-specific entries are seeded only where an official institutional programme has been verified; remaining countries stay explicitly marked for source review rather than receiving invented records.",
+  "continuous_monitoring": {
+    "enabled": true,
+    "principle": "Monitor approved official and relevant institutional sources continuously; create review candidates for new, changed or expired information; never silently publish.",
+    "country_specific_sources": "Add official country government, ministry, agency, development-bank or programme sources as they are verified.",
+    "multi_country_sources": "Use approved continental and regional sources where they legitimately cover multiple countries.",
+    "gap_detection": "The monitor must report countries that lack a country-specific approved source so they are visible in the CMS review queue."
+  },
+  "countries": [
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-benin"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-car"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "CG",
+      "name": "Congo",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "CI",
+      "name": "Côte d’Ivoire",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-cote-divoire"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "CD",
+      "name": "DR Congo",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-gambia"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-ghana"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-guinea-bissau"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-kenya"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-liberia"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-malawi"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-mali"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-mauritania"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-niger"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "active": true,
+      "country_specific_sources": [
+        "farm-p3-rwanda"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-senegal"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "active": true,
+      "country_specific_sources": [
+        "farm-p3-sierra-leone"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-tanzania"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "active": true,
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "active": true,
+      "country_specific_sources": [
+        "gafsp-zambia"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "active": true,
+      "country_specific_sources": [
+        "farm-p3-zimbabwe"
+      ],
+      "coverage_status": "source_registered"
+    }
+  ]
+}

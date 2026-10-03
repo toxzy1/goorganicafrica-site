@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: directoryCountryCoverage.countries
+  size: 1
+  alias: country
+permalink: "/agricultural-resources/countries/{{ country.code | lower }}/"
+---
+{% include "partials/language-selectors/static.njk" %}
+{% set countryListings = directoryListings.listings | selectattr("active") | selectattr("country", "equalto", country.name) | list %}
+{% set multiListings = directoryListings.listings | selectattr("active") | selectattr("country", "equalto", "MULTI") | list %}
+<section class="section" style="padding-top:48px;">
+  <div class="container" style="max-width:1100px;">
+    <span class="eyebrow">GoOrganicAfrica Resources</span>
+    <h1>Agricultural Resources in {{ country.name }}</h1>
+    <p class="lede">Verified agricultural finance, grants and machinery resources available for {{ country.name }}, together with relevant multi-country African programmes. Country-specific coverage is expanded as official sources are verified.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;">
+      <span class="resource-badge">Country coverage: {{ country.coverage_status | replace("_"," ") }}</span>
+      <span class="resource-badge">{{ countryListings | length }} country-specific listing{{ "" if countryListings | length == 1 else "s" }}</span>
+      <span class="resource-badge">{{ multiListings | length }} multi-country listing{{ "" if multiListings | length == 1 else "s" }}</span>
+    </div>
+
+    {% if countryListings | length %}
+      <h2>Country-specific resources</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:20px 0 36px;">
+        {% for item in countryListings %}
+          <article class="ebook-card">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            <p><strong>{{ item.category }}</strong></p>
+            <p><small>Official source: {{ item.official_source }}<br>Verified: {{ item.verification_date }}</small></p>
+            <a class="btn btn-primary" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">View official resource</a>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div style="padding:22px;border:1px solid var(--line);border-radius:12px;margin:24px 0;">
+        <h2>Country-specific sources are still being verified</h2>
+        <p>This country already has a permanent place in the GoOrganicAfrica 54-country directory. The automated monitoring system will flag verified government, ministry, agency and development-institution sources for review rather than inventing or publishing unverified information.</p>
+      </div>
+    {% endif %}
+
+    <h2>Relevant multi-country resources</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:20px 0;">
+      {% for item in multiListings %}
+        <article class="ebook-card">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          <p><strong>{{ item.category }}</strong></p>
+          <p><small>Official source: {{ item.official_source }}<br>Verified: {{ item.verification_date }}</small></p>
+          <a class="btn btn-primary" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">View official resource</a>
+        </article>
+      {% endfor %}
+    </div>
+    <p style="margin-top:32px;"><a href="/agriculture-resources/">← Back to Agricultural Resources</a></p>
+  </div>
+</section>

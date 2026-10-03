@@ -57,6 +57,35 @@
     catch (_) { return {}; }
   }
 
+  function applyDirectoryTranslations(root, code) {
+    var source = window.GOA_DIRECTORY_TRANSLATIONS || {};
+    root.querySelectorAll("[data-goa-directory-id]").forEach(function (card) {
+      var id = card.getAttribute("data-goa-directory-id");
+      var listingData = source[id] || {};
+      var item = listingData[code] || listingData.en;
+      if (!item) return;
+      card.querySelectorAll("[data-goa-directory-field]").forEach(function (element) {
+        var field = element.getAttribute("data-goa-directory-field");
+        if (field === "official_source") {
+          var sources = {
+            "International Fund for Agricultural Development (IFAD)": { en: "International Fund for Agricultural Development (IFAD)", fr: "Fonds international de développement agricole (FIDA)", ar: "الصندوق الدولي للتنمية الزراعية (إيفاد)", pt: "Fundo Internacional de Desenvolvimento Agrícola (FIDA)", sw: "Mfuko wa Kimataifa wa Maendeleo ya Kilimo (IFAD)" },
+            "African Development Bank Group": { en: "African Development Bank Group", fr: "Groupe de la Banque africaine de développement", ar: "مجموعة البنك الأفريقي للتنمية", pt: "Grupo do Banco Africano de Desenvolvimento", sw: "Kundi la Benki ya Maendeleo ya Afrika" },
+            "Food and Agriculture Organization of the United Nations (FAO)": { en: "Food and Agriculture Organization of the United Nations (FAO)", fr: "Organisation des Nations Unies pour l’alimentation et l’agriculture (FAO)", ar: "منظمة الأغذية والزراعة للأمم المتحدة (الفاو)", pt: "Organização das Nações Unidas para a Alimentação e a Agricultura (FAO)", sw: "Shirika la Chakula na Kilimo la Umoja wa Mataifa (FAO)" }
+          };
+          var sourceText = element.textContent.trim();
+          if (sources[sourceText]) element.textContent = sources[sourceText][code] || sources[sourceText].en;
+          return;
+        }
+        if (field === "country" && element.textContent.trim() === "MULTI") {
+          var countries = { en: "Multiple countries", fr: "Plusieurs pays", ar: "عدة دول", pt: "Vários países", sw: "Nchi nyingi" };
+          element.textContent = countries[code] || countries.en;
+          return;
+        }
+        if (item[field] !== undefined && item[field] !== null) element.textContent = item[field];
+      });
+    });
+  }
+
   function apply(root, code) {
     if (!root) return;
     root.querySelectorAll("[data-i18n]").forEach(function (element) {
@@ -79,6 +108,7 @@
       var value = resolve(code, element.getAttribute("data-i18n-aria-label"));
       if (value !== undefined) element.setAttribute("aria-label", value);
     });
+    applyDirectoryTranslations(root, code);
   }
 
   function setLanguage(requested) {
@@ -111,6 +141,7 @@
 
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact|privacy-policy|data-updates|agricultural-finance|agricultural-grants|agriculture-resources|farm-machinery)$/.test(rest)) return "/" + rest + "/";
+    if (/^agricultural-resources\/countries(?:\/[^/]+)?$/.test(rest)) return "/" + rest + "/";
 
     // Home page.
     if (rest === "") return code === "en" ? "/" : "/" + code + "/";
@@ -129,12 +160,12 @@
   function updateLocalizedNavigation(code) {
     document.querySelectorAll("[data-localized-section]").forEach(function (link) {
       var section = link.getAttribute("data-localized-section");
-      var sectionPath = section === "calculator" ? "farm-profit-calculator" : section;
+      var sectionPath = section === "calculator" ? "farm-profit-calculator" : (section === "resources" ? "agriculture-resources" : section);
       link.href = section === "home"
         ? (code === "en" ? "/" : "/" + code + "/")
         : (section === "calculator"
           ? "/farm-profit-calculator/"
-          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
+          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates" || section === "resources" || section === "agriculture-resources")
             ? "/" + sectionPath + "/"
             : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/")));
     });
@@ -143,7 +174,7 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20260929", { cache: "default" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261004", { cache: "default" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
