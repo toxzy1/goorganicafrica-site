@@ -1,0 +1,32 @@
+name: Monitor agricultural directories
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check approved directory sources
+        run: python scripts/update-directories.py
+      - name: Commit review candidates
+        run: |
+          git config user.name "GoOrganicAfrica Directory Monitor"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/directories/pending
+          if git diff --cached --quiet; then
+            echo "No directory candidates generated."
+            exit 0
+          fi
+          git commit -m "Add directory monitoring candidates"
+          git push
