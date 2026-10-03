@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   monitor:
@@ -18,9 +19,15 @@ jobs:
           python-version: "3.12"
       - name: Check approved directory sources
         run: python scripts/update-directories.py
-      - name: Store review queue as workflow artifact
-        uses: actions/upload-artifact@v4
+      - name: Create review PR for latest queue
+        uses: peter-evans/create-pull-request@v7
         with:
-          name: directory-review-queue
-          path: data/directories/pending/
-          if-no-files-found: ignore
+          branch: automated/directory-review-queue
+          delete-branch: true
+          commit-message: "Update agricultural directory review queue"
+          title: "Automated agricultural directory review queue"
+          body: |
+            Automated review queue generated from approved agricultural resource sources.
+            Review candidates before publishing or changing public directory records.
+          add-paths: |
+            data/directories/pending/directory-candidates-latest.json
