@@ -17,7 +17,8 @@
       "active": true,
       "featured": true,
       "seo_title": "IFAD Agricultural Grants | GoOrganicAfrica",
-      "seo_description": "Official IFAD grants information for agricultural and rural development."
+      "seo_description": "Official IFAD grants information for agricultural and rural development.",
+      "id": "ifad-grants"
     },
     {
       "title": "IFAD Calls for Proposals",
@@ -36,7 +37,8 @@
       "active": true,
       "featured": true,
       "seo_title": "IFAD Calls for Proposals | GoOrganicAfrica",
-      "seo_description": "Find current official IFAD agricultural and rural development calls for proposals."
+      "seo_description": "Find current official IFAD agricultural and rural development calls for proposals.",
+      "id": "ifad-calls"
     },
     {
       "title": "Agri-Food SME Catalytic Financing Mechanism (ACFM)",
@@ -55,7 +57,8 @@
       "active": true,
       "featured": true,
       "seo_title": "AfDB Agri-Food SME Catalytic Financing | GoOrganicAfrica",
-      "seo_description": "Official African Development Bank information on agricultural SME concessional finance and technical assistance."
+      "seo_description": "Official African Development Bank information on agricultural SME concessional finance and technical assistance.",
+      "id": "acfm"
     },
     {
       "title": "Africa Fertilizer Financing Mechanism",
@@ -74,7 +77,8 @@
       "active": true,
       "featured": false,
       "seo_title": "Africa Fertilizer Financing Mechanism | GoOrganicAfrica",
-      "seo_description": "Official information on the Africa Fertilizer Financing Mechanism and agricultural input finance."
+      "seo_description": "Official information on the Africa Fertilizer Financing Mechanism and agricultural input finance.",
+      "id": "affm"
     },
     {
       "title": "GAFSP Financial Instruments",
@@ -93,7 +97,8 @@
       "active": true,
       "featured": false,
       "seo_title": "GAFSP Agricultural Finance & Grants | GoOrganicAfrica",
-      "seo_description": "Official GAFSP financial instruments supporting agriculture and food security."
+      "seo_description": "Official GAFSP financial instruments supporting agriculture and food security.",
+      "id": "gafsp"
     },
     {
       "title": "IFAD Rural Finance",
@@ -112,7 +117,8 @@
       "active": true,
       "featured": false,
       "seo_title": "IFAD Rural & Agricultural Finance | GoOrganicAfrica",
-      "seo_description": "Official IFAD information on rural finance and agricultural financial inclusion."
+      "seo_description": "Official IFAD information on rural finance and agricultural financial inclusion.",
+      "id": "ifad-rural"
     },
     {
       "title": "FAO Africa Agricultural Mechanization Resources",
@@ -131,7 +137,8 @@
       "active": true,
       "featured": true,
       "seo_title": "Agricultural Mechanization in Africa | GoOrganicAfrica",
-      "seo_description": "FAO resource on sustainable agricultural mechanization, equipment, financing and service models in Africa."
+      "seo_description": "FAO resource on sustainable agricultural mechanization, equipment, financing and service models in Africa.",
+      "id": "fao-mechanization"
     },
     {
       "title": "Namibia Agricultural Mechanisation and Seed Improvement Project (NAMSIP)",
@@ -150,7 +157,8 @@
       "active": true,
       "featured": true,
       "seo_title": "Namibia Agricultural Mechanisation Project | GoOrganicAfrica",
-      "seo_description": "Official AfDB information on Namibia's agricultural mechanisation and equipment project."
+      "seo_description": "Official AfDB information on Namibia's agricultural mechanisation and equipment project.",
+      "id": "namsip"
     },
     {
       "title": "FAO Machinery Supply Chain Resources",
@@ -169,7 +177,8 @@
       "active": true,
       "featured": true,
       "seo_title": "FAO Machinery Supply Chain Resources | GoOrganicAfrica",
-      "seo_description": "Official FAO resources on machinery suppliers, hire services, repair and agricultural mechanization."
+      "seo_description": "Official FAO resources on machinery suppliers, hire services, repair and agricultural mechanization.",
+      "id": "fao-supply-chain"
     }
   ]
 }
