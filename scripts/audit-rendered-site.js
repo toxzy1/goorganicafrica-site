@@ -96,15 +96,15 @@ for (const file of htmlFiles) {
       }
     }
     const selectorOptions = new Set();
-    for (const m of html.matchAll(/<select\\b[^>]*class=["'][^"']*site-language-select[^"']*["'][^>]*>([\\s\\S]*?)<\\/select>/gi)) {
-      for (const opt of m[1].matchAll(/<option\\b[^>]*value=["'](en|fr|ar|pt|sw)["']/gi)) selectorOptions.add(opt[1]);
+    for (const m of html.matchAll(/<select\b[^>]*class=["\'][^"\']*site-language-select[^"\']*["\'][^>]*>([\s\S]*?)<\/select>/gi)) {
+      for (const opt of m[1].matchAll(/<option\b[^>]*value=["\'](en|fr|ar|pt|sw)["\']/gi)) selectorOptions.add(opt[1]);
     }
     for (const lang of ["en","fr","ar","pt","sw"]) {
       if (!mapAttrs[lang]) failures.push(path.relative(site, file) + ": missing language target for " + lang);
       else {
         if (Object.keys(visible).length && visible[lang] !== mapAttrs[lang]) failures.push(path.relative(site, file) + ": language target mismatch for " + lang);
         if (!Object.keys(visible).length && !selectorOptions.has(lang)) failures.push(path.relative(site, file) + ": language selector missing option for " + lang);
-        const targetFile = path.join(site, mapAttrs[lang].replace(/^\\//, ""), "index.html");
+        const targetFile = path.join(site, mapAttrs[lang].replace(/^\//, ""), "index.html");
         if (!fs.existsSync(targetFile)) failures.push(path.relative(site, file) + ": target does not render for " + lang + ": " + mapAttrs[lang]);
       }
     }
