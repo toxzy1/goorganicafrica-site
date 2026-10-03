@@ -97,6 +97,30 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official FAO Africa mechanization resource; used as a machinery/mechanization information source."
+    },
+    {
+      "id": "afdb-namsip",
+      "country": "Namibia",
+      "category": "machinery",
+      "publisher": "African Development Bank Group",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-na-aa0-005",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official NAMSIP project and mechanisation information."
+    },
+    {
+      "id": "fao-machinery-supply-chain",
+      "country": "MULTI",
+      "category": "machinery",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization/strategies/machinery-supply-chain/en/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official FAO machinery supply-chain, hire and repair resource."
     }
   ]
 }
