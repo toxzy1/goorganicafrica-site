@@ -141,6 +141,7 @@
 
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact|privacy-policy|data-updates|agricultural-finance|agricultural-grants|agriculture-resources|farm-machinery)$/.test(rest)) return "/" + rest + "/";
+    if (/^agricultural-resources\/countries(?:\/[^/]+)?$/.test(rest)) return "/" + rest + "/";
 
     // Home page.
     if (rest === "") return code === "en" ? "/" : "/" + code + "/";
@@ -173,7 +174,7 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20260929", { cache: "default" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261004", { cache: "default" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
