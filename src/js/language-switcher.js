@@ -59,13 +59,23 @@
 
   function applyDirectoryTranslations(root, code) {
     var source = window.GOA_DIRECTORY_TRANSLATIONS || {};
-    var languageData = source[code] || source.en || {};
     root.querySelectorAll("[data-goa-directory-id]").forEach(function (card) {
       var id = card.getAttribute("data-goa-directory-id");
-      var item = languageData[id] || (source.en && source.en[id]);
+      var listingData = source[id] || {};
+      var item = listingData[code] || listingData.en;
       if (!item) return;
       card.querySelectorAll("[data-goa-directory-field]").forEach(function (element) {
         var field = element.getAttribute("data-goa-directory-field");
+        if (field === "official_source") {
+          var sources = {
+            "International Fund for Agricultural Development (IFAD)": { en: "International Fund for Agricultural Development (IFAD)", fr: "Fonds international de développement agricole (FIDA)", ar: "الصندوق الدولي للتنمية الزراعية (إيفاد)", pt: "Fundo Internacional de Desenvolvimento Agrícola (FIDA)", sw: "Mfuko wa Kimataifa wa Maendeleo ya Kilimo (IFAD)" },
+            "African Development Bank Group": { en: "African Development Bank Group", fr: "Groupe de la Banque africaine de développement", ar: "مجموعة البنك الأفريقي للتنمية", pt: "Grupo do Banco Africano de Desenvolvimento", sw: "Kundi la Benki ya Maendeleo ya Afrika" },
+            "Food and Agriculture Organization of the United Nations (FAO)": { en: "Food and Agriculture Organization of the United Nations (FAO)", fr: "Organisation des Nations Unies pour l’alimentation et l’agriculture (FAO)", ar: "منظمة الأغذية والزراعة للأمم المتحدة (الفاو)", pt: "Organização das Nações Unidas para a Alimentação e a Agricultura (FAO)", sw: "Shirika la Chakula na Kilimo la Umoja wa Mataifa (FAO)" }
+          };
+          var sourceText = element.textContent.trim();
+          if (sources[sourceText]) element.textContent = sources[sourceText][code] || sources[sourceText].en;
+          return;
+        }
         if (field === "country" && element.textContent.trim() === "MULTI") {
           var countries = { en: "Multiple countries", fr: "Plusieurs pays", ar: "عدة دول", pt: "Vários países", sw: "Nchi nyingi" };
           element.textContent = countries[code] || countries.en;
