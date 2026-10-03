@@ -15,7 +15,8 @@
       <li><a href="/about/" data-localized-section="about" data-i18n="common.about">About</a></li>
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
       {% set isCalculatorPage = (page.url or "").endsWith("/farm-profit-calculator/") %}
-      {% if isCalculatorPage %}
+      {% set isHomePage = page.url == "/" or page.url == "/fr/" or page.url == "/ar/" or page.url == "/pt/" or page.url == "/sw/" %}
+      {% if isCalculatorPage or isHomePage %}
       <li class="site-language">
         <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
         <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
