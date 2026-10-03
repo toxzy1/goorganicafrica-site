@@ -129,12 +129,12 @@
   function updateLocalizedNavigation(code) {
     document.querySelectorAll("[data-localized-section]").forEach(function (link) {
       var section = link.getAttribute("data-localized-section");
-      var sectionPath = section === "calculator" ? "farm-profit-calculator" : section;
+      var sectionPath = section === "calculator" ? "farm-profit-calculator" : (section === "resources" ? "agriculture-resources" : section);
       link.href = section === "home"
         ? (code === "en" ? "/" : "/" + code + "/")
         : (section === "calculator"
           ? "/farm-profit-calculator/"
-          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
+          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates" || section === "resources" || section === "agriculture-resources")
             ? "/" + sectionPath + "/"
             : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/")));
     });
