@@ -134,23 +134,42 @@
       "seo_description": "FAO resource on sustainable agricultural mechanization, equipment, financing and service models in Africa."
     },
     {
-      "title": "Africa Fertilizer Financing Mechanism — Projects",
+      "title": "Namibia Agricultural Mechanisation and Seed Improvement Project (NAMSIP)",
       "type": "machinery",
-      "category": "Farm inputs and agricultural equipment ecosystem",
-      "country": "MULTI",
-      "description": "The AFFM project portfolio provides examples of financed agricultural input and market-access interventions. Use the official project information to identify relevant national and value-chain mechanisms.",
-      "url": "https://www.afdb.org/en/affm",
+      "category": "Mechanization project",
+      "country": "Namibia",
+      "description": "African Development Bank project information covering agricultural mechanisation, production and processing machinery, irrigation equipment, farmer cooperatives and training. The official project page describes the scope and implementation status.",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-na-aa0-005",
       "official_source": "African Development Bank Group",
       "source_type": "development_institution",
       "verification_date": "2026-10-03",
       "last_checked": "2026-10-03",
       "status": "active",
       "auto_discovered": false,
-      "notes": "Classified here as an agricultural resource; it is not a machinery supplier.",
+      "notes": "Project/resource information, not a general machinery marketplace.",
       "active": true,
-      "featured": false,
-      "seo_title": "African Agricultural Input Financing Projects | GoOrganicAfrica",
-      "seo_description": "Official African Development Bank agricultural input financing and project information."
+      "featured": true,
+      "seo_title": "Namibia Agricultural Mechanisation Project | GoOrganicAfrica",
+      "seo_description": "Official AfDB information on Namibia's agricultural mechanisation and equipment project."
+    },
+    {
+      "title": "FAO Machinery Supply Chain Resources",
+      "type": "machinery",
+      "category": "Machinery supply, hire and repair services",
+      "country": "MULTI",
+      "description": "FAO guidance on agricultural machinery supply chains, including importers, manufacturers, retailers, machinery hire services, repair services, training, maintenance and farmer access to equipment services.",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization/strategies/machinery-supply-chain/en/",
+      "official_source": "Food and Agriculture Organization of the United Nations (FAO)",
+      "source_type": "development_institution",
+      "verification_date": "2026-10-03",
+      "last_checked": "2026-10-03",
+      "status": "active",
+      "auto_discovered": false,
+      "notes": "Information resource for finding and understanding machinery supply-chain and service models.",
+      "active": true,
+      "featured": true,
+      "seo_title": "FAO Machinery Supply Chain Resources | GoOrganicAfrica",
+      "seo_description": "Official FAO resources on machinery suppliers, hire services, repair and agricultural mechanization."
     }
   ]
 }
