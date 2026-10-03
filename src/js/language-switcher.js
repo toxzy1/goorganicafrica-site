@@ -57,6 +57,25 @@
     catch (_) { return {}; }
   }
 
+  function applyDirectoryTranslations(root, code) {
+    var source = window.GOA_DIRECTORY_TRANSLATIONS || {};
+    var languageData = source[code] || source.en || {};
+    root.querySelectorAll("[data-goa-directory-id]").forEach(function (card) {
+      var id = card.getAttribute("data-goa-directory-id");
+      var item = languageData[id] || (source.en && source.en[id]);
+      if (!item) return;
+      card.querySelectorAll("[data-goa-directory-field]").forEach(function (element) {
+        var field = element.getAttribute("data-goa-directory-field");
+        if (field === "country" && element.textContent.trim() === "MULTI") {
+          var countries = { en: "Multiple countries", fr: "Plusieurs pays", ar: "عدة دول", pt: "Vários países", sw: "Nchi nyingi" };
+          element.textContent = countries[code] || countries.en;
+          return;
+        }
+        if (item[field] !== undefined && item[field] !== null) element.textContent = item[field];
+      });
+    });
+  }
+
   function apply(root, code) {
     if (!root) return;
     root.querySelectorAll("[data-i18n]").forEach(function (element) {
@@ -79,6 +98,7 @@
       var value = resolve(code, element.getAttribute("data-i18n-aria-label"));
       if (value !== undefined) element.setAttribute("aria-label", value);
     });
+    applyDirectoryTranslations(root, code);
   }
 
   function setLanguage(requested) {
