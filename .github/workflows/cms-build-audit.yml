@@ -19,4 +19,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - name: Localization audit
-        run: node src/scripts/check-localization.js
+        run: node scripts/check-localization.js
