@@ -1,3 +1,5 @@
+{% include "partials/language-selectors/home.njk" %}
+
 <!-- Single canonical homepage content shared by every language route. -->
 {% set pageLanguage = pageLanguage or language or "en" %}
 {% set localizedEbooks = collections.ebooks | filterByLanguage(pageLanguage) %}

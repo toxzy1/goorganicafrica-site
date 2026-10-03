@@ -282,7 +282,29 @@
         "recommendedGuide": "Recommended Guide",
         "allArticles": "All Articles",
         "filedUnder": "Filed under:",
-        "browseGuides": "Browse Guides"
+        "browseGuides": "Browse Guides",
+        "categories": {
+          "hydroponic-fodder-farming": "Hydroponic Fodder Farming",
+          "mushroom-farming": "Mushroom Farming",
+          "black-soldier-fly-farming": "Black Soldier Fly Farming",
+          "crop": "Crop Production",
+          "livestock": "Livestock Farming",
+          "organic": "Organic Fertilizers & Soil Health",
+          "agribusiness": "Farm Business & Marketing",
+          "inputs": "Farm Inputs & Technology",
+          "markets": "Agricultural Data & Markets"
+        },
+        "categoryDescriptions": {
+          "hydroponic-fodder-farming": "Growing fresh green livestock feed without soil.",
+          "mushroom-farming": "Organic oyster mushroom production, from substrate to harvest.",
+          "black-soldier-fly-farming": "Turning organic waste into protein-rich livestock and fish feed.",
+          "crop": "Practical crop production, nursery, planting and harvesting content.",
+          "livestock": "Livestock production, feeding, housing and farm management.",
+          "organic": "Bio-fertilizers, nutrient management and building healthy soil organically.",
+          "agribusiness": "Costing, scaling production and selling farm products profitably.",
+          "inputs": "Seeds, fertilizers, biological inputs, irrigation and farm technology.",
+          "markets": "Agricultural prices, seed prices, market information and data updates."
+        }
       },
       "ebooks": {
         "eyebrow": "eBooks",
@@ -393,6 +415,28 @@
           "status": "Status",
           "latest": "Latest calculator reference period detected:",
           "verify": "Always verify prices with local buyers, suppliers and current market conditions before investing."
+        },
+        "resources": {
+          "eyebrow": "Farmer Resources",
+          "financeTitle": "Agricultural Finance",
+          "financeIntro": "Loans, insurance, input finance, equipment finance, leasing and other agricultural funding routes.",
+          "financeText": "GoOrganicAfrica is building a verified directory of agricultural finance opportunities. Listings will be published with official source links and verification dates where available.",
+          "grantsTitle": "Grants & Opportunities",
+          "grantsIntro": "Grants, subsidies, competitions, youth and women programmes, training and other agricultural opportunities.",
+          "grantsText": "GoOrganicAfrica is building a verified directory of agricultural opportunities. Listings will be published with official source links and verification dates where available.",
+          "machineryTitle": "Farm Machinery",
+          "machineryIntro": "Tractors, planters, harvesters, irrigation, processing, greenhouse and other farm equipment.",
+          "machineryText": "GoOrganicAfrica is building a verified machinery and equipment directory. Listings will be published with official source links and verification dates where available.",
+          "resourcesTitle": "Agricultural Finance, Grants & Machinery",
+          "resourcesIntro": "A structured resource centre for finding agricultural funding, grant opportunities, machinery, equipment and related services. Listings are intended to be verified and maintained through the GoOrganicAfrica CMS.",
+          "financeCardTitle": "Agricultural Finance",
+          "financeCardText": "Loans, insurance, input finance, equipment finance, leasing and other agricultural funding routes.",
+          "grantsCardTitle": "Grants & Opportunities",
+          "grantsCardText": "Grants, subsidies, competitions, youth and women programmes, training and other opportunities.",
+          "machineryCardTitle": "Farm Machinery",
+          "machineryCardText": "Tractors, planters, harvesters, irrigation, processing, greenhouse and other farm equipment.",
+          "verifyTitle": "Verification matters",
+          "verifyText": "Funding and equipment offers can change, close or have eligibility restrictions. GoOrganicAfrica will publish active directory records only when their verification status is suitable for public display, with official source links and verification dates where available."
         }
       }
     }
@@ -680,7 +724,29 @@
         "recommendedGuide": "Guide recommandé",
         "allArticles": "Tous les articles",
         "filedUnder": "Classé dans :",
-        "browseGuides": "Parcourir les guides"
+        "browseGuides": "Parcourir les guides",
+        "categories": {
+          "hydroponic-fodder-farming": "Culture de fourrage hydroponique",
+          "mushroom-farming": "Culture des champignons",
+          "black-soldier-fly-farming": "Élevage de la mouche soldat noire",
+          "crop": "Production végétale",
+          "livestock": "Élevage",
+          "organic": "Fertilisants biologiques et santé des sols",
+          "agribusiness": "Agriculture et commercialisation",
+          "inputs": "Intrants et technologies agricoles",
+          "markets": "Données agricoles et marchés"
+        },
+        "categoryDescriptions": {
+          "hydroponic-fodder-farming": "Produire du fourrage vert frais pour le bétail sans sol.",
+          "mushroom-farming": "Production de pleurotes biologiques, du substrat à la récolte.",
+          "black-soldier-fly-farming": "Transformer les déchets organiques en aliments riches en protéines pour le bétail et les poissons.",
+          "crop": "Contenus pratiques sur les cultures, les pépinières, la plantation et la récolte.",
+          "livestock": "Production animale, alimentation, logement et gestion de l’élevage.",
+          "organic": "Biofertilisants, gestion des nutriments et amélioration biologique de la santé des sols.",
+          "agribusiness": "Calcul des coûts, développement de la production et commercialisation rentable des produits agricoles.",
+          "inputs": "Semences, engrais, intrants biologiques, irrigation et technologies agricoles.",
+          "markets": "Prix agricoles, prix des semences, informations sur les marchés et mises à jour des données."
+        }
       },
       "ebooks": {
         "eyebrow": "eBooks",
@@ -791,6 +857,28 @@
           "status": "Statut",
           "latest": "Dernière période de référence détectée pour le calculateur :",
           "verify": "Vérifiez toujours les prix auprès des acheteurs, fournisseurs et conditions actuelles du marché avant d'investir."
+        },
+        "resources": {
+          "eyebrow": "Ressources pour les agriculteurs",
+          "financeTitle": "Financement agricole",
+          "financeIntro": "Prêts, assurances, financement des intrants, financement des équipements, crédit-bail et autres solutions de financement agricole.",
+          "financeText": "GoOrganicAfrica construit un répertoire vérifié des possibilités de financement agricole. Les fiches seront publiées avec des liens officiels et des dates de vérification lorsque ces informations sont disponibles.",
+          "grantsTitle": "Subventions et opportunités",
+          "grantsIntro": "Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités agricoles.",
+          "grantsText": "GoOrganicAfrica construit un répertoire vérifié des opportunités agricoles. Les fiches seront publiées avec des liens officiels et des dates de vérification lorsque ces informations sont disponibles.",
+          "machineryTitle": "Machines agricoles",
+          "machineryIntro": "Tracteurs, planteuses, récolteuses, irrigation, transformation, serres et autres équipements agricoles.",
+          "machineryText": "GoOrganicAfrica construit un répertoire vérifié des machines et équipements agricoles. Les fiches seront publiées avec des liens officiels et des dates de vérification lorsque ces informations sont disponibles.",
+          "resourcesTitle": "Financement, subventions et machines agricoles",
+          "resourcesIntro": "Un centre de ressources structuré pour trouver des financements agricoles, des subventions, des machines, des équipements et des services associés.",
+          "financeCardTitle": "Financement agricole",
+          "financeCardText": "Prêts, assurances, financement des intrants, financement des équipements, crédit-bail et autres solutions.",
+          "grantsCardTitle": "Subventions et opportunités",
+          "grantsCardText": "Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités.",
+          "machineryCardTitle": "Machines agricoles",
+          "machineryCardText": "Tracteurs, planteuses, récolteuses, irrigation, transformation, serres et autres équipements.",
+          "verifyTitle": "La vérification est importante",
+          "verifyText": "Les offres de financement et d'équipement peuvent changer, fermer ou avoir des conditions d'éligibilité. GoOrganicAfrica publiera les fiches actives avec des liens officiels et des dates de vérification lorsque disponibles."
         }
       }
     }
@@ -1078,7 +1166,29 @@
         "recommendedGuide": "الدليل الموصى به",
         "allArticles": "جميع المقالات",
         "filedUnder": "التصنيف:",
-        "browseGuides": "تصفح الأدلة"
+        "browseGuides": "تصفح الأدلة",
+        "categories": {
+          "hydroponic-fodder-farming": "زراعة الأعلاف المائية",
+          "mushroom-farming": "زراعة الفطر",
+          "black-soldier-fly-farming": "تربية ذبابة الجندي الأسود",
+          "crop": "إنتاج المحاصيل",
+          "livestock": "تربية الماشية",
+          "organic": "الأسمدة العضوية وصحة التربة",
+          "agribusiness": "الأعمال الزراعية والتسويق",
+          "inputs": "المدخلات والتقنيات الزراعية",
+          "markets": "البيانات الزراعية والأسواق"
+        },
+        "categoryDescriptions": {
+          "hydroponic-fodder-farming": "زراعة علف أخضر طازج للماشية دون تربة.",
+          "mushroom-farming": "إنتاج فطر المحار العضوي، من إعداد الركيزة إلى الحصاد.",
+          "black-soldier-fly-farming": "تحويل النفايات العضوية إلى علف غني بالبروتين للماشية والأسماك.",
+          "crop": "إرشادات عملية حول إنتاج المحاصيل والمشاتل والزراعة والحصاد.",
+          "livestock": "إنتاج الماشية وتغذيتها وإيوائها وإدارة المزرعة.",
+          "organic": "الأسمدة الحيوية وإدارة المغذيات وبناء تربة صحية بالطرق العضوية.",
+          "agribusiness": "حساب التكاليف وتوسيع الإنتاج وبيع المنتجات الزراعية بربحية.",
+          "inputs": "البذور والأسمدة والمدخلات الحيوية والري والتقنيات الزراعية.",
+          "markets": "أسعار المنتجات الزراعية وأسعار البذور ومعلومات الأسواق وتحديثات البيانات."
+        }
       },
       "ebooks": {
         "eyebrow": "الكتب الإلكترونية",
@@ -1189,6 +1299,28 @@
           "status": "Hali",
           "latest": "Kipindi cha hivi karibuni cha rejea cha kikokotoo kilichogunduliwa:",
           "verify": "Thibitisha bei kila wakati kwa wanunuzi, wauzaji na hali ya sasa ya soko kabla ya kuwekeza."
+        },
+        "resources": {
+          "eyebrow": "موارد المزارعين",
+          "financeTitle": "التمويل الزراعي",
+          "financeIntro": "القروض والتأمين وتمويل المدخلات وتمويل المعدات والتأجير وغيرها من مسارات تمويل الزراعة.",
+          "financeText": "تعمل GoOrganicAfrica على إنشاء دليل موثّق لفرص التمويل الزراعي. ستُنشر القوائم مع الروابط الرسمية وتواريخ التحقق عند توفرها.",
+          "grantsTitle": "المنح والفرص",
+          "grantsIntro": "المنح والدعم والمسابقات وبرامج الشباب والنساء والتدريب وغيرها من الفرص الزراعية.",
+          "grantsText": "تعمل GoOrganicAfrica على إنشاء دليل موثّق للفرص الزراعية. ستُنشر القوائم مع الروابط الرسمية وتواريخ التحقق عند توفرها.",
+          "machineryTitle": "الآلات الزراعية",
+          "machineryIntro": "الجرارات وآلات الزراعة والحصاد والري والمعالجة والصوبات وغيرها من المعدات الزراعية.",
+          "machineryText": "تعمل GoOrganicAfrica على إنشاء دليل موثّق للآلات والمعدات الزراعية. ستُنشر القوائم مع الروابط الرسمية وتواريخ التحقق عند توفرها.",
+          "resourcesTitle": "التمويل والمنح والآلات الزراعية",
+          "resourcesIntro": "مركز موارد منظم للعثور على التمويل الزراعي وفرص المنح والآلات والمعدات والخدمات المرتبطة بها.",
+          "financeCardTitle": "التمويل الزراعي",
+          "financeCardText": "القروض والتأمين وتمويل المدخلات وتمويل المعدات والتأجير وغيرها.",
+          "grantsCardTitle": "المنح والفرص",
+          "grantsCardText": "المنح والدعم والمسابقات وبرامج الشباب والنساء والتدريب وغيرها من الفرص.",
+          "machineryCardTitle": "الآلات الزراعية",
+          "machineryCardText": "الجرارات وآلات الزراعة والحصاد والري والمعالجة والصوبات وغيرها من المعدات.",
+          "verifyTitle": "التحقق مهم",
+          "verifyText": "قد تتغير عروض التمويل والمعدات أو تنتهي أو تكون لها شروط أهلية. ستنشر GoOrganicAfrica السجلات النشطة مع الروابط الرسمية وتواريخ التحقق عند توفرها."
         }
       }
     }
@@ -1476,7 +1608,29 @@
         "recommendedGuide": "Guia recomendado",
         "allArticles": "Todos os artigos",
         "filedUnder": "Classificado em:",
-        "browseGuides": "Explorar guias"
+        "browseGuides": "Explorar guias",
+        "categories": {
+          "hydroponic-fodder-farming": "Produção de Forragem Hidropónica",
+          "mushroom-farming": "Cultivo de Cogumelos",
+          "black-soldier-fly-farming": "Criação de Mosca-Soldado-Negra",
+          "crop": "Produção de Culturas",
+          "livestock": "Criação de Gado",
+          "organic": "Fertilizantes Orgânicos e Saúde do Solo",
+          "agribusiness": "Agronegócio e Comercialização",
+          "inputs": "Insumos e Tecnologia Agrícola",
+          "markets": "Dados Agrícolas e Mercados"
+        },
+        "categoryDescriptions": {
+          "hydroponic-fodder-farming": "Produção de forragem verde fresca para o gado sem solo.",
+          "mushroom-farming": "Produção orgânica de cogumelos ostra, do substrato à colheita.",
+          "black-soldier-fly-farming": "Transformação de resíduos orgânicos em alimento rico em proteína para animais e peixes.",
+          "crop": "Conteúdos práticos sobre produção de culturas, viveiros, plantação e colheita.",
+          "livestock": "Produção animal, alimentação, alojamento e gestão da exploração.",
+          "organic": "Biofertilizantes, gestão de nutrientes e construção de solos saudáveis de forma orgânica.",
+          "agribusiness": "Custos, expansão da produção e venda rentável de produtos agrícolas.",
+          "inputs": "Sementes, fertilizantes, insumos biológicos, irrigação e tecnologia agrícola.",
+          "markets": "Preços agrícolas, preços de sementes, informação de mercado e atualizações de dados."
+        }
       },
       "ebooks": {
         "eyebrow": "eBooks",
@@ -1587,6 +1741,28 @@
           "status": "Estado",
           "latest": "Último período de referência do calculador detetado:",
           "verify": "Confirme sempre os preços com compradores, fornecedores e condições atuais do mercado antes de investir."
+        },
+        "resources": {
+          "eyebrow": "Recursos para agricultores",
+          "financeTitle": "Financiamento agrícola",
+          "financeIntro": "Empréstimos, seguros, financiamento de insumos, financiamento de equipamentos, leasing e outras formas de financiamento agrícola.",
+          "financeText": "A GoOrganicAfrica está criando um diretório verificado de oportunidades de financiamento agrícola. As listagens serão publicadas com links oficiais e datas de verificação quando disponíveis.",
+          "grantsTitle": "Subsídios e oportunidades",
+          "grantsIntro": "Subsídios, apoios, concursos, programas para jovens e mulheres, formação e outras oportunidades agrícolas.",
+          "grantsText": "A GoOrganicAfrica está criando um diretório verificado de oportunidades agrícolas. As listagens serão publicadas com links oficiais e datas de verificação quando disponíveis.",
+          "machineryTitle": "Máquinas agrícolas",
+          "machineryIntro": "Tratores, plantadoras, colheitadeiras, irrigação, processamento, estufas e outros equipamentos agrícolas.",
+          "machineryText": "A GoOrganicAfrica está criando um diretório verificado de máquinas e equipamentos agrícolas. As listagens serão publicadas com links oficiais e datas de verificação quando disponíveis.",
+          "resourcesTitle": "Financiamento, subsídios e máquinas agrícolas",
+          "resourcesIntro": "Um centro de recursos estruturado para encontrar financiamento agrícola, oportunidades de subsídios, máquinas, equipamentos e serviços relacionados.",
+          "financeCardTitle": "Financiamento agrícola",
+          "financeCardText": "Empréstimos, seguros, financiamento de insumos, financiamento de equipamentos, leasing e outras opções.",
+          "grantsCardTitle": "Subsídios e oportunidades",
+          "grantsCardText": "Subsídios, apoios, concursos, programas para jovens e mulheres, formação e outras oportunidades.",
+          "machineryCardTitle": "Máquinas agrícolas",
+          "machineryCardText": "Tratores, plantadoras, colheitadeiras, irrigação, processamento, estufas e outros equipamentos.",
+          "verifyTitle": "A verificação é importante",
+          "verifyText": "Ofertas de financiamento e equipamentos podem mudar, terminar ou ter restrições de elegibilidade. A GoOrganicAfrica publicará registros ativos com links oficiais e datas de verificação quando disponíveis."
         }
       }
     }
@@ -1874,7 +2050,29 @@
         "recommendedGuide": "Mwongozo unaopendekezwa",
         "allArticles": "Makala zote",
         "filedUnder": "Imewekwa chini ya:",
-        "browseGuides": "Vinjari miongozo"
+        "browseGuides": "Vinjari miongozo",
+        "categories": {
+          "hydroponic-fodder-farming": "Kilimo cha Malisho ya Hydroponic",
+          "mushroom-farming": "Kilimo cha Uyoga",
+          "black-soldier-fly-farming": "Ufugaji wa Inzi Askari Mweusi",
+          "crop": "Uzalishaji wa Mazao",
+          "livestock": "Ufugaji wa Mifugo",
+          "organic": "Mbolea Hai na Afya ya Udongo",
+          "agribusiness": "Biashara ya Kilimo na Masoko",
+          "inputs": "Pembejeo na Teknolojia za Kilimo",
+          "markets": "Data za Kilimo na Masoko"
+        },
+        "categoryDescriptions": {
+          "hydroponic-fodder-farming": "Kukuza malisho mabichi kwa mifugo bila udongo.",
+          "mushroom-farming": "Uzalishaji wa uyoga wa oyster kwa njia hai, kutoka substrate hadi mavuno.",
+          "black-soldier-fly-farming": "Kubadilisha taka za kikaboni kuwa chakula chenye protini nyingi kwa mifugo na samaki.",
+          "crop": "Maudhui ya vitendo kuhusu uzalishaji wa mazao, vitalu, upandaji na uvunaji.",
+          "livestock": "Uzalishaji wa mifugo, lishe, makazi na usimamizi wa shamba.",
+          "organic": "Mbolea hai, usimamizi wa virutubisho na kujenga udongo wenye afya kwa njia za kikaboni.",
+          "agribusiness": "Gharama, kuongeza uzalishaji na kuuza mazao kwa faida.",
+          "inputs": "Mbegu, mbolea, pembejeo za kibaolojia, umwagiliaji na teknolojia ya kilimo.",
+          "markets": "Bei za mazao, bei za mbegu, taarifa za masoko na masasisho ya data."
+        }
       },
       "ebooks": {
         "eyebrow": "Vitabu pepe",
@@ -1985,6 +2183,28 @@
           "status": "Hali",
           "latest": "Kipindi cha hivi karibuni cha rejea cha kikokotoo kilichogunduliwa:",
           "verify": "Thibitisha bei kila wakati kwa wanunuzi, wauzaji na hali ya sasa ya soko kabla ya kuwekeza."
+        },
+        "resources": {
+          "eyebrow": "Rasilimali kwa wakulima",
+          "financeTitle": "Fedha za kilimo",
+          "financeIntro": "Mikopo, bima, ufadhili wa pembejeo, ufadhili wa vifaa, ukodishaji na njia nyingine za kupata fedha za kilimo.",
+          "financeText": "GoOrganicAfrica inaunda orodha iliyothibitishwa ya fursa za fedha za kilimo. Taarifa zitawekwa pamoja na viungo rasmi na tarehe za uthibitishaji inapowezekana.",
+          "grantsTitle": "Ruzuku na fursa",
+          "grantsIntro": "Ruzuku, misaada, mashindano, programu za vijana na wanawake, mafunzo na fursa nyingine za kilimo.",
+          "grantsText": "GoOrganicAfrica inaunda orodha iliyothibitishwa ya fursa za kilimo. Taarifa zitawekwa pamoja na viungo rasmi na tarehe za uthibitishaji inapowezekana.",
+          "machineryTitle": "Mashine za kilimo",
+          "machineryIntro": "Matrekta, mashine za kupanda, kuvuna, umwagiliaji, usindikaji, greenhouses na vifaa vingine vya shamba.",
+          "machineryText": "GoOrganicAfrica inaunda orodha iliyothibitishwa ya mashine na vifaa vya kilimo. Taarifa zitawekwa pamoja na viungo rasmi na tarehe za uthibitishaji inapowezekana.",
+          "resourcesTitle": "Fedha, ruzuku na mashine za kilimo",
+          "resourcesIntro": "Kituo cha rasilimali kilichopangwa cha kutafuta fedha za kilimo, fursa za ruzuku, mashine, vifaa na huduma zinazohusiana.",
+          "financeCardTitle": "Fedha za kilimo",
+          "financeCardText": "Mikopo, bima, ufadhili wa pembejeo, ufadhili wa vifaa, ukodishaji na njia nyingine.",
+          "grantsCardTitle": "Ruzuku na fursa",
+          "grantsCardText": "Ruzuku, misaada, mashindano, programu za vijana na wanawake, mafunzo na fursa nyingine.",
+          "machineryCardTitle": "Mashine za kilimo",
+          "machineryCardText": "Matrekta, mashine za kupanda, kuvuna, umwagiliaji, usindikaji, greenhouses na vifaa vingine.",
+          "verifyTitle": "Uthibitishaji ni muhimu",
+          "verifyText": "Ofa za fedha na vifaa zinaweza kubadilika, kufungwa au kuwa na masharti ya kustahiki. GoOrganicAfrica itachapisha rekodi hai zenye viungo rasmi na tarehe za uthibitishaji inapowezekana."
         }
       }
     }

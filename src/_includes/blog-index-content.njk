@@ -1,11 +1,4 @@
-    <nav class="translation-links section-language-nav" aria-label="Available languages">
-      <strong data-i18n="common.language">Language:</strong>
-      {% for lang in siteLanguages.languages %}
-        {% if lang.enabled != false %}
-          <a href="{% if lang.code == "en" %}/blog/{% else %}/{{ lang.code }}/blog/{% endif %}" hreflang="{{ lang.code }}" lang="{{ lang.code }}">{{ lang.native }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+{% include "partials/language-selectors/blog.njk" %}
 
 <section class="section blog-index-section" style="padding-top:48px;">
   <div class="container">
@@ -16,31 +9,42 @@
       <p class="lede" data-i18n="blog.description">Practical, research-backed articles to help African farmers make better decisions and grow more profitably.</p>
     </div>
 
-
     <h2 style="font-size:1.2rem;color:var(--green-deep);margin-bottom:16px;" data-i18n="blog.browseCategory">Browse by Category</h2>
 
+    {% set currentLanguage = pageLanguage or language or "en" %}
+    {% set categoryTranslations = (siteTranslations[currentLanguage]).translations.blog.categories %}
+    {% set categoryDescriptionTranslations = (siteTranslations[currentLanguage]).translations.blog.categoryDescriptions %}
     <div class="category-grid" style="margin-bottom:40px;">
       {% for cat in collections.blogCategories %}
         {% if cat.data.active != false %}
           {% set categoryKey = cat.data.slug %}
           {% if cat.data.slug == "crop-production" %}{% set categoryKey = "crop" %}{% endif %}
           {% if cat.data.slug == "livestock-farming" %}{% set categoryKey = "livestock" %}{% endif %}
-          {% if cat.data.slug == "organic-farming" %}{% set categoryKey = "organic" %}{% endif %}
-          {% if cat.data.slug == "agribusiness" %}{% set categoryKey = "agribusiness" %}{% endif %}
+          {% if cat.data.slug == "organic-farming" or cat.data.slug == "organic-fertilizers" %}{% set categoryKey = "organic" %}{% endif %}
+          {% if cat.data.slug == "agribusiness" or cat.data.slug == "farm-business" %}{% set categoryKey = "agribusiness" %}{% endif %}
           {% if cat.data.slug == "farm-inputs" %}{% set categoryKey = "inputs" %}{% endif %}
           {% if cat.data.slug == "farming-data" %}{% set categoryKey = "markets" %}{% endif %}
+
+          {% set categoryTitle = categoryTranslations[categoryKey] or cat.data.title %}
+          {% set categoryDescription = categoryDescriptionTranslations[categoryKey] or cat.data.description %}
+
+          {% if currentLanguage == "sw" and cat.data.slug == "organic-fertilizers" %}
+            {% set categoryTitle = "Mbolea Hai na Afya ya Udongo" %}
+            {% set categoryDescription = "Mbolea hai, usimamizi wa virutubisho na kujenga udongo wenye afya kwa njia za kikaboni." %}
+          {% endif %}
+          {% if currentLanguage == "sw" and cat.data.slug == "farm-business" %}
+            {% set categoryTitle = "Biashara ya Kilimo na Masoko" %}
+            {% set categoryDescription = "Gharama, kuongeza uzalishaji na kuuza mazao kwa faida." %}
+          {% endif %}
+
           <div class="category-card">
-            <h3 data-i18n="blog.categories.{{ categoryKey }}">{{ cat.data.title }}</h3>
-            <p data-i18n="blog.categoryDescriptions.{{ categoryKey }}">{{ cat.data.description }}</p>
+            <h3>{{ categoryTitle }}</h3>
+            <p>{{ categoryDescription }}</p>
           </div>
         {% endif %}
       {% endfor %}
     </div>
 
-    {# The blog index is server-rendered by language. There is deliberately
-       no client-side hiding/filtering of translated cards here. This prevents
-       one language from leaking into another when the selector changes. #}
-    {% set currentLanguage = pageLanguage or language or "en" %}
     {% set localizedPosts = collections.posts | filterByLanguage(currentLanguage) %}
 
     {% if localizedPosts.length > 0 %}

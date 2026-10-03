@@ -1,9 +1,10 @@
 module.exports = {
   eleventyComputed: {
-    // Keep inactive posts out of generated output while giving every
-    // translation the same stable article slug under its language prefix.
+    // Keep inactive posts out of generated output. Respect an explicit
+    // permalink first; otherwise generate the stable language-prefixed slug.
     permalink: (data) => {
       if (data.active === false) return false;
+      if (data.permalink) return data.permalink;
       const lang = data.language || "en";
       const rawSlug = data.slug || data.page?.fileSlug;
       if (!rawSlug) return undefined;
