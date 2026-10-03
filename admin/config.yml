@@ -558,6 +558,36 @@ collections:
           - {label: "Source", name: "source", widget: "string"}
           - {label: "Error", name: "error", widget: "text"}
 
+  - name: "directory_country_coverage"
+    label: "🌍 54-Country Directory Coverage"
+    files:
+      - label: "Country Coverage Registry"
+        name: "coverage"
+        file: "config/directory-country-coverage.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Scope", name: "scope", widget: "text"}
+          - {label: "Coverage Note", name: "note", widget: "text"}
+          - label: "Continuous Monitoring"
+            name: "continuous_monitoring"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Principle", name: "principle", widget: "text"}
+              - {label: "Country-Specific Sources", name: "country_specific_sources", widget: "text"}
+              - {label: "Multi-Country Sources", name: "multi_country_sources", widget: "text"}
+              - {label: "Gap Detection", name: "gap_detection", widget: "text"}
+          - label: "Countries"
+            name: "countries"
+            widget: "list"
+            fields:
+              - {label: "Country Code", name: "code", widget: "string"}
+              - {label: "Country", name: "name", widget: "string"}
+              - {label: "Active?", name: "active", widget: "boolean", default: true}
+              - {label: "Country-Specific Approved Source IDs", name: "country_specific_sources", widget: "list", required: false}
+              - {label: "Coverage Status", name: "coverage_status", widget: "select", options: ["needs_country_source_review", "source_registered", "active_monitoring"], default: "needs_country_source_review"}
+
   - name: "directory_sources"
     label: "🔎 Agricultural Directory Source Registry"
     files:
