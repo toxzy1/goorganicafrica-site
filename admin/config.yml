@@ -572,7 +572,7 @@ collections:
             required: false
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Type", name: "type", widget: "select", options: ["marketplace", "produce", "farm_tool", "farm_input", "equipment", "finance", "insurance", "service"]}
+              - {label: "Type", name: "type", widget: "select", options: ["marketplace", "produce", "farm_tool", "farm_input", "equipment", "machinery", "finance", "grant", "insurance", "service"]}
               - {label: "Category", name: "category", widget: "string", required: false}
               - {label: "Country", name: "country", widget: "string"}
               - {label: "Region", name: "region", widget: "string", required: false}
