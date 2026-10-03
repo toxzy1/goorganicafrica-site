@@ -1,0 +1,8 @@
+<nav class="translation-links section-language-nav" aria-label="Available languages" data-goa-language-selector="static">
+  <strong data-i18n="common.language">Language:</strong>
+  <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
+    {% for lang in siteLanguages.languages %}
+      {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (pageLanguage or language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
+    {% endfor %}
+  </select>
+</nav>
