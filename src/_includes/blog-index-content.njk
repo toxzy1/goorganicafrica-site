@@ -12,6 +12,8 @@
 
     <h2 style="font-size:1.2rem;color:var(--green-deep);margin-bottom:16px;" data-i18n="blog.browseCategory">Browse by Category</h2>
 
+    {% set categoryTranslations = (siteTranslations[currentLanguage or pageLanguage or language or "en"]).translations.blog.categories %}
+    {% set categoryDescriptionTranslations = (siteTranslations[currentLanguage or pageLanguage or language or "en"]).translations.blog.categoryDescriptions %}
     <div class="category-grid" style="margin-bottom:40px;">
       {% for cat in collections.blogCategories %}
         {% if cat.data.active != false %}
@@ -23,8 +25,8 @@
           {% if cat.data.slug == "farm-inputs" %}{% set categoryKey = "inputs" %}{% endif %}
           {% if cat.data.slug == "farming-data" %}{% set categoryKey = "markets" %}{% endif %}
           <div class="category-card">
-            <h3 data-i18n="blog.categories.{{ categoryKey }}">{{ cat.data.title }}</h3>
-            <p data-i18n="blog.categoryDescriptions.{{ categoryKey }}">{{ cat.data.description }}</p>
+            <h3>{{ categoryTranslations[categoryKey] or cat.data.title }}</h3>
+            <p>{{ categoryDescriptionTranslations[categoryKey] or cat.data.description }}</p>
           </div>
         {% endif %}
       {% endfor %}
