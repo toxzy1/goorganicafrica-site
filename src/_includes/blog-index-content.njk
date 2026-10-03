@@ -1,11 +1,4 @@
-    <nav class="translation-links section-language-nav" aria-label="Available languages">
-      <strong data-i18n="common.language">Language:</strong>
-      {% for lang in siteLanguages.languages %}
-        {% if lang.enabled != false %}
-          <a href="{% if lang.code == "en" %}/blog/{% else %}/{{ lang.code }}/blog/{% endif %}" hreflang="{{ lang.code }}" lang="{{ lang.code }}">{{ lang.native }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+{% include "partials/language-selectors/blog.njk" %}
 
 <section class="section blog-index-section" style="padding-top:48px;">
   <div class="container">
