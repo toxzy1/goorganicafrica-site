@@ -18,10 +18,10 @@ permalink: "/agricultural-finance/"
         <h2 style="margin-top:0;">{{ item.title }}</h2>
         <p>{{ item.description }}</p>
         <p><strong>{{ item.country }}</strong>{% if item.category %} · {{ item.category }}{% endif %}</p>
-        {% if item.official_source %}<p><strong>Official source:</strong> {{ item.official_source }}</p>{% endif %}
-        {% if item.verification_date %}<p><strong>Verified:</strong> {{ item.verification_date }}</p>{% endif %}
+        {% if item.official_source %}<p><strong data-i18n="static.resources.directoryLabels.officialSource">Official source:</strong> {{ item.official_source }}</p>{% endif %}
+        {% if item.verification_date %}<p><strong data-i18n="static.resources.directoryLabels.verified">Verified:</strong> {{ item.verification_date }}</p>{% endif %}
         {% if item.notes %}<p><small>{{ item.notes }}</small></p>{% endif %}
-        {% if item.url %}<p><a href="{{ item.url }}">{{ item.official_source or "Open official resource" }}</a></p>{% endif %}
+        {% if item.url %}<p><a href="{{ item.url }}"><span data-i18n="static.resources.directoryLabels.open">Open official resource</span></a></p>{% endif %}
       </article>
 {% endif %}{% endfor %}
     </div>
