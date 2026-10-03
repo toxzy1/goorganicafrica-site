@@ -11,6 +11,19 @@ permalink: "/agricultural-grants/"
     <span class="eyebrow"><span data-i18n="static.resources.eyebrow">Farmer Resources</span></span>
     <h1><span data-i18n="static.resources.grantsTitle">Grants & Opportunities</span></h1>
     <p class="lede"><span data-i18n="static.resources.grantsIntro">Grants, subsidies, competitions, youth and women programmes, training and other agricultural opportunities.</span></p>
-    <p><span data-i18n="static.resources.grantsText">GoOrganicAfrica is building a verified directory of agricultural opportunities. Listings will be published with official source links and verification dates where available.</span></p>
+    <p><span data-i18n="static.resources.grantsText">Verified opportunities are listed below with direct official links. Availability and eligibility can change, so the official source is always the final authority.</span></p>
+    <div style="display:grid;gap:18px;margin-top:30px;">
+{% for item in directoryListings.listings %}{% if item.type == "grant" and item.active != false %}
+      <article class="ebook-card" style="padding:22px;">
+        <h2 style="margin-top:0;">{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+        <p><strong>{{ item.country }}</strong>{% if item.category %} · {{ item.category }}{% endif %}</p>
+        {% if item.official_source %}<p><strong>Official source:</strong> {{ item.official_source }}</p>{% endif %}
+        {% if item.verification_date %}<p><strong>Verified:</strong> {{ item.verification_date }}</p>{% endif %}
+        {% if item.notes %}<p><small>{{ item.notes }}</small></p>{% endif %}
+        {% if item.url %}<p><a href="{{ item.url }}">{{ item.official_source or "Open official resource" }}</a></p>{% endif %}
+      </article>
+{% endif %}{% endfor %}
+    </div>
   </div>
 </section>
