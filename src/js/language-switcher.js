@@ -6,6 +6,9 @@
     : [];
   var dictionary = window.GOA_TRANSLATIONS || {};
   var languageLoads = {};
+  // Prevent an earlier asynchronous language load from repainting the page
+  // after the user has already selected a newer language.
+  var languageRequestId = 0;
   var readyResolve;
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
@@ -232,7 +235,9 @@
 
   function refresh() {
     var code = setLanguage(currentLanguage());
+    var requestId = ++languageRequestId;
     return loadLanguage(code).then(function () {
+      if (requestId !== languageRequestId) return code;
       apply(document.body, code);
 
       var homeTitle = resolve(code, "home.pageTitle");
@@ -275,6 +280,7 @@
       });
       selector.addEventListener("change", function () {
         var requested = this.value;
+        var requestId = ++languageRequestId;
         var section = selector.getAttribute("data-goa-selector-section");
         var targetUrl = localizedContentUrl(requested);
         if (section === "blog" || section === "ebooks") {
@@ -294,6 +300,7 @@
         // by the user. The calculator keeps its existing refresh behavior.
         if (!/^\/[^/]*farm-profit-calculator(?:\/|$)/.test(currentPath)) {
           loadLanguage(requested).then(function () {
+            if (requestId !== languageRequestId) return;
             apply(document.body, requested);
             updateLocalizedNavigation(requested);
             var selected = document.getElementById("site-language-select");
