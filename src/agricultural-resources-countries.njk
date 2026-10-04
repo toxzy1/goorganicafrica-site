@@ -13,7 +13,7 @@ permalink: "/agriculture-resources/countries/"
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:30px;">
       {% for country in directoryCountryCoverage.countries %}
         <a class="ebook-card" href="/agricultural-resources/countries/{{ country.code | lower }}/" style="text-decoration:none;">
-          <h2 style="font-size:1.05rem;">{{ country.name }}</h2>
+          <h2 style="font-size:1.05rem;" data-goa-country-name="{{ country.code | lower }}">{{ country.name }}</h2>
           <p style="margin-bottom:0;">
             {% if country.coverage_status == "source_registered" %}
               <span data-i18n="static.countryDirectory.statusSourceRegistered">Source registered</span>
