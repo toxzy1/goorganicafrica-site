@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: <span data-i18n="static.resources.resourcesTitle"><span data-i18n="static.resources.financeCardTitle">Agricultural Finance</span>, Grants & Machinery</span> Resources | GoOrganicAfrica
+title: Agricultural Finance, Grants & Machinery Resources | GoOrganicAfrica
 description: Find structured agricultural finance, grants, machinery, equipment and marketplace resources for African farmers and agribusinesses.
 permalink: "/agriculture-resources/"
 ---
@@ -9,6 +9,14 @@ permalink: "/agriculture-resources/"
     <span class="eyebrow"><span data-i18n="static.resources.eyebrow">Farmer Resources</span></span>
     <h1>Agricultural Finance, Grants & Machinery</h1>
     <p class="lede"><span data-i18n="static.resources.resourcesIntro">A structured resource centre for finding agricultural funding, grant opportunities, machinery, equipment and related services. Listings are intended to be verified and maintained through the GoOrganicAfrica CMS.</span></p>
+    <div class="resource-language" style="margin-top:24px;">
+  <label for="resource-language-select" class="visually-hidden">Language</label>
+  <select id="resource-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agriculture-resources">
+    {% for lang in siteLanguages.languages %}
+    {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
+    {% endfor %}
+  </select>
+</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:32px;">
       <a class="ebook-card" href="/agricultural-finance/" style="text-decoration:none;"><h2>Agricultural Finance</h2><p><span data-i18n="static.resources.financeCardText">Loans, insurance, input finance, equipment finance, leasing and other agricultural funding routes.</span></p></a>
       <a class="ebook-card" href="/agricultural-grants/" style="text-decoration:none;"><h2><span data-i18n="static.resources.grantsCardTitle">Grants & Opportunities</span></h2><p><span data-i18n="static.resources.grantsCardText">Grants, subsidies, competitions, youth and women programmes, training and other opportunities.</span></p></a>
