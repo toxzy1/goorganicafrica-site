@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Ressources agricoles | GoOrganicAfrica
+description: Un centre de ressources structuré pour trouver des financements agricoles, des subventions, des machines, des équipements et des services connexes. Les ressources sont destinées à être vérifiées et gérées via le CMS de GoOrganicAfrica.
+language: fr
+permalink: "/fr/agriculture-resources/"
+---
+<section class="section" style="padding-top:48px;">
+<div class="container" style="max-width:900px;" dir="ltr">
+<span class="eyebrow">Ressources agricoles</span><h1>Ressources agricoles</h1><p class="lede">Un centre de ressources structuré pour trouver des financements agricoles, des subventions, des machines, des équipements et des services connexes. Les ressources sont destinées à être vérifiées et gérées via le CMS de GoOrganicAfrica.</p><div class="resource-language" style="margin-top:24px;">
+  <label for="resource-language-select" class="visually-hidden">Language</label>
+  <select id="resource-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agriculture-resources">
+    {% for lang in siteLanguages.languages %}
+    {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
+    {% endfor %}
+  </select>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:32px;">
+<a class="ebook-card" href="/fr/agricultural-finance/" style="text-decoration:none;"><h2>Financement agricole</h2><p>Prêts, assurances, financement des intrants, financement des équipements, crédit-bail et autres solutions de financement agricole.</p></a>
+<a class="ebook-card" href="/fr/agricultural-grants/" style="text-decoration:none;"><h2>Subventions & opportunités</h2><p>Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités agricoles.</p></a>
+<a class="ebook-card" href="/fr/farm-machinery/" style="text-decoration:none;"><h2>Machines agricoles</h2><p>Tracteurs, semoirs, récolteuses, irrigation, transformation, serres et autres équipements agricoles.</p></a></div>
+<div style="margin-top:36px;padding:20px;border:1px solid var(--line);border-radius:12px;"><h2>La vérification est importante</h2><p>Les offres de financement et d’équipement peuvent changer, fermer ou comporter des conditions d’éligibilité. GoOrganicAfrica publiera les ressources actives avec des liens officiels et des dates de vérification lorsque disponibles.</p></div>
+</div></section>
