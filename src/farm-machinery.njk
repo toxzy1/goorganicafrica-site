@@ -18,7 +18,7 @@ permalink: "/farm-machinery/"
       <article class="ebook-card" style="padding:22px;" data-goa-directory-id="{{ item.id }}">
         <h2 style="margin-top:0;" data-goa-directory-field="title">{{ item.title }}</h2>
         <p data-goa-directory-field="description">{{ item.description }}</p>
-        <p><strong data-goa-directory-field="country">{{ item.country }}</strong>{% if item.category %} · <span data-goa-directory-field="category">{{ item.category }}</span>{% endif %}</p>
+        <p><strong data-goa-directory-field="country" data-goa-directory-country="{{ item.country }}">{{ item.country }}</strong>{% if item.category %} · <span data-goa-directory-field="category">{{ item.category }}</span>{% endif %}</p>
         {% if item.official_source %}<p><strong data-i18n="static.resources.directoryLabels.officialSource">Official source:</strong> {{ item.official_source }}</p>{% endif %}
         {% if item.verification_date %}<p><strong data-i18n="static.resources.directoryLabels.verified">Verified:</strong> {{ item.verification_date }}</p>{% endif %}
         {% if item.notes %}<p><small data-goa-directory-field="notes">{{ item.notes }}</small></p>{% endif %}
