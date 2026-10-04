@@ -10,22 +10,24 @@
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
   function currentLanguage() {
-    // Language-prefixed URLs are authoritative for localized content.
-    // Shared pages (About, Contact, Privacy, Data Updates, Calculator)
-    // remember the user's selected language because their URL stays unchanged.
+    // Calculator routes are the only shared URLs allowed to remember a
+    // selected language. All other pages are authoritative from their URL:
+    // unprefixed pages are English, while /fr/, /ar/, /pt/ and /sw/ pages
+    // are explicitly localized.
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
+
+    var calculatorLanguage = path.match(/^\/(?:[a-z]{2}\/)?(fr|ar|pt|sw)\/farm-profit-calculator$/);
+    if (calculatorLanguage) return calculatorLanguage[1];
+
+    if (path === "/farm-profit-calculator") {
+      try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
+      catch (_) { return document.documentElement.lang || "en"; }
+    }
+
     var urlLanguage = path.match(/^\/(fr|ar|pt|sw)(?:\/|$)/);
     if (urlLanguage) return urlLanguage[1];
 
-    // Language-prefixed content has an authoritative URL. The English
-    // versions of the blog, eBooks and homepage are also authoritative:
-    // never let an old localStorage choice silently turn /blog/ into a
-    // French/Arabic/Portuguese/Swahili page while the URL remains English.
-    if (path === "/" || path === "/blog" || path === "/ebooks") return "en";
-
-    // Shared pages intentionally remember the user's selected language.
-    try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
-    catch (_) { return document.documentElement.lang || "en"; }
+    return "en";
   }
 
   function metadata(code) {
