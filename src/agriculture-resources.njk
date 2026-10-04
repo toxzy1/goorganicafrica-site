@@ -32,11 +32,11 @@ permalink: "/agriculture-resources/"
           <div style="margin-top:12px;">
             {% for category in agriculturalResources.categories %}
               {% if country.records[category] and country.records[category] | length %}
-                <h3 style="font-size:1rem;margin:14px 0 8px;text-transform:capitalize;">{{ category }}</h3>
+                <h3 style="font-size:1rem;margin:14px 0 8px;">{% if category == "finance" %}Finance{% elif category == "grants" %}Grants{% elif category == "machinery" %}Machinery{% else %}General{% endif %}</h3>
                 {% for record in country.records[category] %}
                 <div style="padding:12px;margin:8px 0;border:1px solid var(--line);border-radius:8px;">
-                  <strong>{{ record.title }}</strong>
-                  <p style="margin:6px 0;">{{ record.description }}</p>
+                  <strong>{% if language == "fr" and record.localized.fr %}{{ record.localized.fr.title }}{% elif language == "ar" and record.localized.ar %}{{ record.localized.ar.title }}{% elif language == "pt" and record.localized.pt %}{{ record.localized.pt.title }}{% elif language == "sw" and record.localized.sw %}{{ record.localized.sw.title }}{% else %}{{ record.title }}{% endif %}</strong>
+                  <p style="margin:6px 0;">{% if language == "fr" and record.localized.fr %}{{ record.localized.fr.description }}{% elif language == "ar" and record.localized.ar %}{{ record.localized.ar.description }}{% elif language == "pt" and record.localized.pt %}{{ record.localized.pt.description }}{% elif language == "sw" and record.localized.sw %}{{ record.localized.sw.description }}{% else %}{{ record.description }}{% endif %}</p>
                   <div style="font-size:.82rem;opacity:.78;">Source: {{ record.source }} · Verified: {{ record.verified }}</div>
                   <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer">Open official source →</a>
                 </div>
