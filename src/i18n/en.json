@@ -410,6 +410,26 @@
         "verified": "Verified:",
         "open": "Open official resource"
       }
+    },
+    "countryDirectory": {
+      "eyebrow": "Farmer Resources",
+      "title": "Agricultural Resources by Country",
+      "intro": "Explore the GoOrganicAfrica directory across all 54 target African country markets. Each country has a dedicated page; country-specific records are added only after official sources are verified.",
+      "back": "← Back to Resources",
+      "countryEyebrow": "GoOrganicAfrica Resources",
+      "countryTitle": "Agricultural Resources in",
+      "countryIntro": "Verified agricultural finance, grants and machinery resources available for this country, together with relevant multi-country African programmes. Country-specific coverage is expanded as official sources are verified.",
+      "coverage": "Country coverage:",
+      "countrySpecificListings": "country-specific listings",
+      "multiCountryListings": "multi-country listings",
+      "countrySpecificTitle": "Country-specific resources",
+      "reviewTitle": "Country-specific sources are still being verified",
+      "reviewText": "This country already has a permanent place in the GoOrganicAfrica 54-country directory. The automated monitoring system will flag verified government, ministry, agency and development-institution sources for review rather than inventing or publishing unverified information.",
+      "multiCountryTitle": "Relevant multi-country resources",
+      "backToResources": "← Back to Agricultural Resources",
+      "statusSourceRegistered": "Source registered",
+      "statusActiveMonitoring": "Active monitoring",
+      "statusNeedsReview": "Country source review needed"
     }
   }
 }
