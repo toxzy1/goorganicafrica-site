@@ -558,6 +558,97 @@ collections:
           - {label: "Source", name: "source", widget: "string"}
           - {label: "Error", name: "error", widget: "text"}
 
+  - name: "directory_country_coverage"
+    label: "🌍 54-Country Directory Coverage"
+    files:
+      - label: "Country Coverage Registry"
+        name: "coverage"
+        file: "config/directory-country-coverage.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Scope", name: "scope", widget: "text"}
+          - {label: "Coverage Note", name: "note", widget: "text"}
+          - label: "Continuous Monitoring"
+            name: "continuous_monitoring"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Principle", name: "principle", widget: "text"}
+              - {label: "Country-Specific Sources", name: "country_specific_sources", widget: "text"}
+              - {label: "Multi-Country Sources", name: "multi_country_sources", widget: "text"}
+              - {label: "Gap Detection", name: "gap_detection", widget: "text"}
+          - label: "Countries"
+            name: "countries"
+            widget: "list"
+            fields:
+              - {label: "Country Code", name: "code", widget: "string"}
+              - {label: "Country", name: "name", widget: "string"}
+              - {label: "Active?", name: "active", widget: "boolean", default: true}
+              - {label: "Country-Specific Approved Source IDs", name: "country_specific_sources", widget: "list", required: false}
+              - {label: "Coverage Status", name: "coverage_status", widget: "select", options: ["needs_country_source_review", "source_registered", "active_monitoring"], default: "needs_country_source_review"}
+
+  - name: "directory_sources"
+    label: "🔎 Agricultural Directory Source Registry"
+    files:
+      - label: "Approved Sources"
+        name: "sources"
+        file: "config/directory-sources.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Approved Sources"
+            name: "sources"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Source ID", name: "id", widget: "string"}
+              - {label: "Country / MULTI", name: "country", widget: "string"}
+              - {label: "Directory Category", name: "category", widget: "select", options: ["finance", "grants", "machinery"]}
+              - {label: "Publisher", name: "publisher", widget: "string"}
+              - {label: "Official URL", name: "url", widget: "string"}
+              - {label: "Method", name: "method", widget: "select", options: ["json_feed", "csv_feed", "official_page_review"]}
+              - {label: "Check Frequency", name: "frequency", widget: "string"}
+              - {label: "Status", name: "status", widget: "select", options: ["active", "paused"]}
+              - {label: "Requires Human Review", name: "requires_review", widget: "boolean", default: true}
+              - {label: "Notes", name: "notes", widget: "text", required: false}
+
+  - name: "directory_review_queue"
+    label: "🛡️ Agricultural Directory Review Queue"
+    files:
+      - label: "Pending Directory Candidates"
+        name: "pending"
+        file: "data/directories/pending/directory-candidates-latest.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Generated At", name: "generated_at", widget: "datetime", required: false}
+          - {label: "Candidate Count", name: "candidate_count", widget: "number", value_type: "int", required: false}
+          - label: "Coverage Summary"
+            name: "coverage_summary"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Target Country Count", name: "target_country_count", widget: "number", value_type: "int", required: false}
+              - {label: "Countries With Country-Specific Source", name: "countries_with_country_specific_source", widget: "list", required: false}
+              - {label: "Countries Without Country-Specific Source", name: "countries_without_country_specific_source", widget: "list", required: false}
+              - {label: "Multi-Country Source Count", name: "multi_country_source_count", widget: "number", value_type: "int", required: false}
+          - label: "Candidates"
+            name: "candidates"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Action", name: "action", widget: "select", options: ["review", "new", "update", "expire"]}
+              - {label: "Category", name: "category", widget: "select", options: ["finance", "grants", "machinery"]}
+              - {label: "Country", name: "country", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Official Source", name: "official_source", widget: "string"}
+              - {label: "Source URL", name: "source_url", widget: "string"}
+              - {label: "Verification Date", name: "verification_date", widget: "string"}
+              - {label: "Status", name: "status", widget: "select", options: ["needs_review", "approved", "rejected"]}
+              - {label: "Reason", name: "reason", widget: "text", required: false}
+              - {label: "Notes", name: "notes", widget: "text", required: false}
+
   - name: "directory_listings"
     label: "🛒 Marketplace, Produce & Farm Tools"
     files:
@@ -572,12 +663,19 @@ collections:
             required: false
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Type", name: "type", widget: "select", options: ["marketplace", "produce", "farm_tool", "farm_input", "equipment", "finance", "insurance", "service"]}
+              - {label: "Type", name: "type", widget: "select", options: ["marketplace", "produce", "farm_tool", "farm_input", "equipment", "machinery", "finance", "grant", "insurance", "service"]}
               - {label: "Category", name: "category", widget: "string", required: false}
               - {label: "Country", name: "country", widget: "string"}
               - {label: "Region", name: "region", widget: "string", required: false}
               - {label: "Description", name: "description", widget: "text"}
-              - {label: "Website / Listing URL", name: "url", widget: "string", required: false}
+              - {label: "Website / Direct Resource URL", name: "url", widget: "string", required: false}
+              - {label: "Official Source", name: "official_source", widget: "string", required: false}
+              - {label: "Source Type", name: "source_type", widget: "select", options: ["government", "relevant_agency", "development_institution", "market", "manual"], default: "manual"}
+              - {label: "Verification Date", name: "verification_date", widget: "string", required: false}
+              - {label: "Last Checked", name: "last_checked", widget: "string", required: false}
+              - {label: "Status", name: "status", widget: "select", options: ["active", "needs_review", "expired", "archived"], default: "needs_review"}
+              - {label: "Auto-discovered?", name: "auto_discovered", widget: "boolean", default: false}
+              - {label: "Notes", name: "notes", widget: "text", required: false}
               - {label: "Contact / WhatsApp", name: "contact", widget: "string", required: false}
               - {label: "Active?", name: "active", widget: "boolean", default: true}
               - {label: "Featured?", name: "featured", widget: "boolean", default: false}

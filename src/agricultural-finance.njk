@@ -5,12 +5,26 @@ description: Agricultural finance resources for African farmers and agribusiness
 permalink: "/agricultural-finance/"
 ---
 {% include "partials/language-selectors/static.njk" %}
+<script>window.GOA_DIRECTORY_TRANSLATIONS = {{ directoryTranslations | dump | safe }};</script>
 
 <section class="section" style="padding-top:48px;">
   <div class="container" style="max-width:900px;">
     <span class="eyebrow"><span data-i18n="static.resources.eyebrow">Farmer Resources</span></span>
-    <h1>Agricultural Finance</h1>
+    <h1><span data-i18n="static.resources.financeTitle">Agricultural Finance</span></h1>
     <p class="lede"><span data-i18n="static.resources.financeIntro">Loans, insurance, input finance, equipment finance, leasing and other agricultural funding routes.</span></p>
-    <p><span data-i18n="static.resources.financeText">GoOrganicAfrica is building a verified directory of agricultural finance opportunities. Listings will be published with official source links and verification dates where available.</span></p>
+    <p><span data-i18n="static.resources.financeText">Verified finance resources are listed below with their official source and verification date. Always confirm eligibility, closing dates and application requirements on the official source.</span></p>
+    <div style="display:grid;gap:18px;margin-top:30px;">
+{% for item in directoryListings.listings %}{% if item.type == "finance" and item.active != false %}
+      <article class="ebook-card" style="padding:22px;" data-goa-directory-id="{{ item.id }}">
+        <h2 style="margin-top:0;" data-goa-directory-field="title">{{ item.title }}</h2>
+        <p data-goa-directory-field="description">{{ item.description }}</p>
+        <p><strong data-goa-directory-field="country" data-goa-directory-country="{{ item.country }}">{{ item.country }}</strong>{% if item.category %} · <span data-goa-directory-field="category">{{ item.category }}</span>{% endif %}</p>
+        {% if item.official_source %}<p><strong data-i18n="static.resources.directoryLabels.officialSource">Official source:</strong> <span data-goa-directory-source="{{ item.official_source }}">{{ item.official_source }}</span></p>{% endif %}
+        {% if item.verification_date %}<p><strong data-i18n="static.resources.directoryLabels.verified">Verified:</strong> {{ item.verification_date }}</p>{% endif %}
+        {% if item.notes %}<p><small data-goa-directory-field="notes">{{ item.notes }}</small></p>{% endif %}
+        {% if item.url %}<p><a href="{{ item.url }}"><span data-i18n="static.resources.directoryLabels.open">Open official resource</span></a></p>{% endif %}
+      </article>
+{% endif %}{% endfor %}
+    </div>
   </div>
 </section>

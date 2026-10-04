@@ -403,6 +403,53 @@
       "status": "Statut",
       "latest": "Dernière période de référence détectée pour le calculateur :",
       "verify": "Vérifiez toujours les prix auprès des acheteurs, fournisseurs et conditions actuelles du marché avant d'investir."
+    },
+    "resources": {
+      "eyebrow": "Ressources pour les agriculteurs",
+      "financeTitle": "Financement agricole",
+      "financeIntro": "Prêts, assurances, financement des intrants, financement des équipements, crédit-bail et autres solutions de financement agricole.",
+      "financeText": "GoOrganicAfrica construit un répertoire vérifié des possibilités de financement agricole. Les fiches seront publiées avec des liens officiels et des dates de vérification lorsque ces informations sont disponibles.",
+      "grantsTitle": "Subventions et opportunités",
+      "grantsIntro": "Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités agricoles.",
+      "grantsText": "GoOrganicAfrica construit un répertoire vérifié des opportunités agricoles. Les fiches seront publiées avec des liens officiels et des dates de vérification lorsque ces informations sont disponibles.",
+      "machineryTitle": "Machines agricoles",
+      "machineryIntro": "Tracteurs, planteuses, récolteuses, irrigation, transformation, serres et autres équipements agricoles.",
+      "machineryText": "GoOrganicAfrica construit un répertoire vérifié des machines et équipements agricoles. Les fiches seront publiées avec des liens officiels et des dates de vérification lorsque ces informations sont disponibles.",
+      "resourcesTitle": "Financement, subventions et machines agricoles",
+      "resourcesIntro": "Un centre de ressources structuré pour trouver des financements agricoles, des subventions, des machines, des équipements et des services associés.",
+      "financeCardTitle": "Financement agricole",
+      "financeCardText": "Prêts, assurances, financement des intrants, financement des équipements, crédit-bail et autres solutions.",
+      "grantsCardTitle": "Subventions et opportunités",
+      "grantsCardText": "Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités.",
+      "machineryCardTitle": "Machines agricoles",
+      "machineryCardText": "Tracteurs, planteuses, récolteuses, irrigation, transformation, serres et autres équipements.",
+      "verifyTitle": "La vérification est importante",
+      "verifyText": "Les offres de financement et d'équipement peuvent changer, fermer ou avoir des conditions d'éligibilité. GoOrganicAfrica publiera les fiches actives avec des liens officiels et des dates de vérification lorsque disponibles.",
+      "directoryLabels": {
+        "officialSource": "Source officiel :",
+        "verified": "Vérifié :",
+        "open": "Ouvrir la ressource officielle"
+      }
+    },
+    "countryDirectory": {
+      "eyebrow": "Ressources pour les agriculteurs",
+      "title": "Ressources agricoles par pays",
+      "intro": "Explorez le répertoire GoOrganicAfrica dans les 54 marchés africains ciblés. Chaque pays dispose d’une page dédiée ; les ressources propres au pays ne sont ajoutées qu’après vérification de sources officielles.",
+      "back": "← Retour aux ressources",
+      "countryEyebrow": "Ressources GoOrganicAfrica",
+      "countryTitle": "Ressources agricoles en",
+      "countryIntro": "Ressources vérifiées de financement agricole, de subventions et de machines disponibles pour ce pays, ainsi que les programmes africains couvrant plusieurs pays. La couverture nationale est élargie à mesure que les sources officielles sont vérifiées.",
+      "coverage": "Couverture du pays :",
+      "countrySpecificListings": "ressources propres au pays",
+      "multiCountryListings": "ressources multi-pays",
+      "countrySpecificTitle": "Ressources propres au pays",
+      "reviewTitle": "Les sources propres au pays sont encore en cours de vérification",
+      "reviewText": "Ce pays dispose déjà d’une place permanente dans le répertoire GoOrganicAfrica des 54 pays. Le système de suivi automatisé signalera les sources vérifiées des gouvernements, ministères, agences et institutions de développement pour examen, plutôt que d’inventer ou de publier des informations non vérifiées.",
+      "multiCountryTitle": "Ressources pertinentes pour plusieurs pays",
+      "backToResources": "← Retour aux ressources agricoles",
+      "statusSourceRegistered": "Source enregistrée",
+      "statusActiveMonitoring": "Suivi actif",
+      "statusNeedsReview": "Vérification de la source du pays nécessaire"
     }
   }
 }
