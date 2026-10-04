@@ -13,7 +13,7 @@
       <li><a href="{% if (language or 'en') == 'en' %}/ebooks/{% else %}/{{ language or 'en' }}/ebooks/{% endif %}" data-localized-section="ebooks" data-i18n="common.ebooks">eBooks</a></li>
       <li><a href="{% if (language or 'en') == 'en' %}/blog/{% else %}/{{ language or 'en' }}/blog/{% endif %}" data-localized-section="blog" data-i18n="common.blog">Blog</a></li>
 
-      <li><a href="/agriculture-resources/" data-i18n="common.resources">Resources</a></li>
+      <li><a href="/agriculture-resources/" data-localized-section="resources" data-i18n="common.resources">Resources</a></li>
       <li><a href="/about/" data-localized-section="about" data-i18n="common.about">About</a></li>
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
       {% set isCalculatorPage = (page.url or "").endsWith("/farm-profit-calculator/") %}
