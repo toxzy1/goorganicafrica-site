@@ -12,7 +12,7 @@ permalink: "/agricultural-resources/countries/{{ country.code | lower }}/"
 <section class="section" style="padding-top:48px;">
   <div class="container" style="max-width:1100px;">
     <span class="eyebrow" data-i18n="static.countryDirectory.countryEyebrow">GoOrganicAfrica Resources</span>
-    <h1><span data-i18n="static.countryDirectory.countryTitle">Agricultural Resources in</span> {{ country.name }}</h1>
+    <h1><span data-i18n="static.countryDirectory.countryTitle">Agricultural Resources in</span> <span data-goa-country-name="{{ country.code | lower }}">{{ country.name }}</span></h1>
     <p class="lede" data-i18n="static.countryDirectory.countryIntro">Verified agricultural finance, grants and machinery resources available for this country, together with relevant multi-country African programmes. Country-specific coverage is expanded as official sources are verified.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;">
       <span class="resource-badge"><span data-i18n="static.countryDirectory.coverage">Country coverage:</span>
@@ -32,11 +32,11 @@ permalink: "/agricultural-resources/countries/{{ country.code | lower }}/"
       <h2 data-i18n="static.countryDirectory.countrySpecificTitle">Country-specific resources</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:20px 0 36px;">
         {% for item in countryListings %}
-          <article class="ebook-card">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
-            <p><strong>{{ item.category }}</strong></p>
-            <p><small><span data-i18n="static.resources.directoryLabels.officialSource">Official source:</span> {{ item.official_source }}<br><span data-i18n="static.resources.directoryLabels.verified">Verified:</span> {{ item.verification_date }}</small></p>
+          <article class="ebook-card" data-goa-directory-id="{{ item.id }}">
+            <h3 data-goa-directory-field="title">{{ item.title }}</h3>
+            <p data-goa-directory-field="description">{{ item.description }}</p>
+            <p><strong data-goa-directory-field="category">{{ item.category }}</strong></p>
+            <p><small><span data-i18n="static.resources.directoryLabels.officialSource">Official source:</span> <span data-goa-directory-field="official_source">{{ item.official_source }}</span><br><span data-i18n="static.resources.directoryLabels.verified">Verified:</span> {{ item.verification_date }}</small></p>
             <a class="btn btn-primary" href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-i18n="static.resources.directoryLabels.open">View official resource</a>
           </article>
         {% endfor %}
@@ -51,11 +51,11 @@ permalink: "/agricultural-resources/countries/{{ country.code | lower }}/"
     <h2 data-i18n="static.countryDirectory.multiCountryTitle">Relevant multi-country resources</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:20px 0;">
       {% for item in multiListings %}
-        <article class="ebook-card">
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.description }}</p>
-          <p><strong>{{ item.category }}</strong></p>
-          <p><small><span data-i18n="static.resources.directoryLabels.officialSource">Official source:</span> {{ item.official_source }}<br><span data-i18n="static.resources.directoryLabels.verified">Verified:</span> {{ item.verification_date }}</small></p>
+        <article class="ebook-card" data-goa-directory-id="{{ item.id }}">
+          <h3 data-goa-directory-field="title">{{ item.title }}</h3>
+          <p data-goa-directory-field="description">{{ item.description }}</p>
+          <p><strong data-goa-directory-field="category">{{ item.category }}</strong></p>
+          <p><small><span data-i18n="static.resources.directoryLabels.officialSource">Official source:</span> <span data-goa-directory-field="official_source">{{ item.official_source }}</span><br><span data-i18n="static.resources.directoryLabels.verified">Verified:</span> {{ item.verification_date }}</small></p>
           <a class="btn btn-primary" href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-i18n="static.resources.directoryLabels.open">View official resource</a>
         </article>
       {% endfor %}
