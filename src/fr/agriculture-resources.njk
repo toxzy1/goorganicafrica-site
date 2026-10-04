@@ -19,5 +19,17 @@ permalink: "/fr/agriculture-resources/"
 <a class="ebook-card" href="/fr/agricultural-finance/" style="text-decoration:none;"><h2>Financement agricole</h2><p>Prêts, assurances, financement des intrants, financement des équipements, crédit-bail et autres solutions de financement agricole.</p></a>
 <a class="ebook-card" href="/fr/agricultural-grants/" style="text-decoration:none;"><h2>Subventions & opportunités</h2><p>Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités agricoles.</p></a>
 <a class="ebook-card" href="/fr/farm-machinery/" style="text-decoration:none;"><h2>Machines agricoles</h2><p>Tracteurs, semoirs, récolteuses, irrigation, transformation, serres et autres équipements agricoles.</p></a></div>
+<div style="margin-top:36px;">
+  <h2>Répertoire des 54 pays africains</h2>
+  <p>Ressources officielles en cours de vérification pour chaque pays.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:18px;">
+    {% for country in agriculturalResources.countries %}
+    <div style="padding:12px;border:1px solid var(--line);border-radius:10px;">
+      <strong>{{ country.flag }} {{ country.name }}</strong>
+      <div style="font-size:.85rem;opacity:.75;margin-top:4px;">Ressources officielles en cours de vérification pour chaque pays.</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 <div style="margin-top:36px;padding:20px;border:1px solid var(--line);border-radius:12px;"><h2>La vérification est importante</h2><p>Les offres de financement et d’équipement peuvent changer, fermer ou comporter des conditions d’éligibilité. GoOrganicAfrica publiera les ressources actives avec des liens officiels et des dates de vérification lorsque disponibles.</p></div>
 </div></section>
