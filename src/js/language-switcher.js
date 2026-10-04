@@ -116,7 +116,7 @@
           if (sources[sourceText]) element.textContent = sources[sourceText][code] || sources[sourceText].en;
           return;
         }
-        if (field === "country" && element.textContent.trim() === "MULTI") {
+        if (field === "country" && element.getAttribute("data-goa-directory-country") === "MULTI") {
           var countries = { en: "Multiple countries", fr: "Plusieurs pays", ar: "عدة دول", pt: "Vários países", sw: "Nchi nyingi" };
           element.textContent = countries[code] || countries.en;
           return;
