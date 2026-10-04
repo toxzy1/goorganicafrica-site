@@ -178,6 +178,8 @@
     if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
 
     // Static pages intentionally keep one shared URL; only their text changes.
+    // This must also handle language-prefixed versions: selecting English must
+    // strip the language prefix and navigate to the canonical shared URL.
     if (/^(about|contact|privacy-policy|data-updates|agricultural-finance|agricultural-grants|agriculture-resources|farm-machinery)$/.test(rest)) return "/" + rest + "/";
     if (/^agricultural-resources\/countries(?:\/[^/]+)?$/.test(rest)) return "/" + rest + "/";
 
@@ -274,11 +276,10 @@
       selector.addEventListener("change", function () {
         var requested = this.value;
         var section = selector.getAttribute("data-goa-selector-section");
-        var targetUrl = section
-          ? (requested === "en"
-            ? "/" + (section === "home" ? "" : section + "/")
-            : "/" + requested + "/" + (section === "home" ? "" : section + "/"))
-          : localizedContentUrl(requested);
+        var targetUrl = localizedContentUrl(requested);
+        if (section === "blog" || section === "ebooks") {
+          targetUrl = requested === "en" ? "/" + section + "/" : "/" + requested + "/" + section + "/";
+        }
         setLanguage(requested);
         // Shared pages intentionally keep the same URL. Do not reload them,
         // because a reload restores the server's default <html lang="en">.
