@@ -9,7 +9,7 @@ permalink: "/fr/agriculture-resources/"
 <div class="container" style="max-width:900px;" dir="ltr">
 <span class="eyebrow">Ressources agricoles</span><h1>Ressources agricoles</h1><p class="lede">Un centre de ressources structuré pour trouver des financements agricoles, des subventions, des machines, des équipements et des services connexes. Les ressources sont destinées à être vérifiées et gérées via le CMS de GoOrganicAfrica.</p><div class="resource-language" style="margin-top:24px;">
   <label for="resource-language-select" class="visually-hidden">Language</label>
-  <select id="resource-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agriculture-resources">
+  <select id="site-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agriculture-resources">
     {% for lang in siteLanguages.languages %}
     {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
     {% endfor %}
