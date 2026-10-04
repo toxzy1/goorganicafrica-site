@@ -71,12 +71,35 @@
     });
   }
 
+  var directoryFallbackCountries = {
+    "gafsp-gambia":["Gambia","Gambie","غامبيا","Gâmbia","Gambia"],"gafsp-ghana":["Ghana","Ghana","غانا","Gana","Ghana"],"gafsp-senegal":["Senegal","Sénégal","السنغال","Senegal","Senegal"],"gafsp-liberia":["Liberia","Libéria","ليبيريا","Libéria","Liberia"],"gafsp-cote-divoire":["Côte d’Ivoire","Côte d’Ivoire","ساحل العاج","Costa do Marfim","Côte d’Ivoire"],"gafsp-mauritania":["Mauritania","Mauritanie","موريتانيا","Mauritânia","Mauritania"],"gafsp-tanzania":["Tanzania","Tanzanie","تنزانيا","Tanzânia","Tanzania"],"gafsp-guinea-bissau":["Guinea-Bissau","Guinée-Bissau","غينيا بيساو","Guiné-Bissau","Guinea-Bissau"],"gafsp-car":["Central African Republic","République centrafricaine","جمهورية أفريقيا الوسطى","República Centro-Africana","Jamhuri ya Afrika ya Kati"],"gafsp-mali":["Mali","Mali","مالي","Mali","Mali"],"gafsp-niger":["Niger","Niger","النيجر","Níger","Niger"],"gafsp-benin":["Benin","Bénin","بنين","Benim","Benini"],"gafsp-kenya":["Kenya","Kenya","كينيا","Quénia","Kenya"],"gafsp-malawi":["Malawi","Malawi","ملاوي","Malawi","Malawi"],"gafsp-zambia":["Zambia","Zambie","زامبيا","Zâmbia","Zambia"],"farm-p3-rwanda":["Rwanda","Rwanda","رواندا","Ruanda","Rwanda"],"farm-p3-senegal":["Senegal","Sénégal","السنغال","Senegal","Senegal"],"farm-p3-sierra-leone":["Sierra Leone","Sierra Leone","سيراليون","Serra Leoa","Sierra Leone"],"farm-p3-zimbabwe":["Zimbabwe","Zimbabwe","زيمبابوي","Zimbábue","Zimbabwe"]
+  };
+  function fallbackDirectoryTranslation(id, code) {
+    var c = directoryFallbackCountries[id];
+    if (!c) return null;
+    var i = {en:0,fr:1,ar:2,pt:3,sw:4}[code] || 0, country = c[i];
+    var data = {title:"",category:"",description:"",notes:""};
+    if (id === "gafsp-gambia") {
+      data.title = {en:"Agriculture and Food Security Project (GAFSP)",fr:"Projet Agriculture et sécurité alimentaire (GAFSP)",ar:"مشروع الزراعة والأمن الغذائي (GAFSP)",pt:"Projeto de Agricultura e Segurança Alimentar (GAFSP)",sw:"Mradi wa Kilimo na Usalama wa Chakula (GAFSP)"}[code];
+    } else if (id.indexOf("gafsp-") === 0) {
+      data.title = {en:"GAFSP agricultural investment portfolio — "+country,fr:"Portefeuille d’investissement agricole du GAFSP — "+country,ar:"محفظة GAFSP للاستثمار الزراعي — "+country,pt:"Portfólio de investimento agrícola do GAFSP — "+country,sw:"Jalada la uwekezaji wa kilimo la GAFSP — "+country}[code];
+    } else {
+      data.title = {en:"FARM P3 — "+country,fr:"FARM P3 — "+country,ar:"FARM P3 — "+country,pt:"FARM P3 — "+country,sw:"FARM P3 — "+country}[code];
+    }
+    data.category = {en:"Agricultural finance and development",fr:"Financement et développement agricoles",ar:"التمويل والتنمية الزراعية",pt:"Financiamento e desenvolvimento agrícola",sw:"Ufadhili na maendeleo ya kilimo"}[code];
+    data.description = id.indexOf("gafsp-") === 0
+      ? {en:"Official GAFSP agricultural investment information for "+country+". Verify the current project, implementation arrangements, eligibility and access route on the official source.",fr:"Informations officielles sur les investissements agricoles du GAFSP pour "+country+". Vérifiez le projet actuel, les modalités de mise en œuvre, l’éligibilité et la voie d’accès sur la source officielle.",ar:"معلومات رسمية عن استثمارات GAFSP الزراعية في "+country+". تحقق من المشروع الحالي وترتيبات التنفيذ والأهلية وطريقة الوصول من المصدر الرسمي.",pt:"Informações oficiais sobre investimentos agrícolas do GAFSP para "+country+". Confirme o projeto atual, as modalidades de implementação, a elegibilidade e a via de acesso na fonte oficial.",sw:"Taarifa rasmi kuhusu uwekezaji wa kilimo wa GAFSP nchini "+country+". Thibitisha mradi wa sasa, utekelezaji, ustahiki na njia ya kupata huduma kwenye chanzo rasmi."}[code]
+      : {en:"Official IFAD FARM P3 information for "+country+". Verify the current project status, implementation arrangements, eligibility and access route on the official source.",fr:"Informations officielles du FARM P3 de l’IFAD pour "+country+". Vérifiez le statut actuel du projet, les modalités de mise en œuvre, l’éligibilité et la voie d’accès sur la source officielle.",ar:"معلومات رسمية عن FARM P3 التابع للصندوق الدولي للتنمية الزراعية في "+country+". تحقق من حالة المشروع الحالية وترتيبات التنفيذ والأهلية وطريقة الوصول من المصدر الرسمي.",pt:"Informações oficiais do FARM P3 do FIDA para "+country+". Confirme o estado atual do projeto, as modalidades de implementação, a elegibilidade e a via de acesso na fonte oficial.",sw:"Taarifa rasmi za FARM P3 ya IFAD nchini "+country+". Thibitisha hali ya sasa ya mradi, utekelezaji, ustahiki na njia ya kupata huduma kwenye chanzo rasmi."}[code];
+    data.notes = {en:"Official institutional resource. Verify current eligibility, application route, programme status and closing dates before acting.",fr:"Ressource institutionnelle officielle. Vérifiez l’éligibilité, la voie de candidature, le statut du programme et les dates limites avant d’agir.",ar:"مورد مؤسسي رسمي. تحقق من الأهلية وطريقة التقديم وحالة البرنامج والمواعيد النهائية قبل اتخاذ أي إجراء.",pt:"Recurso institucional oficial. Verifique a elegibilidade, a via de candidatura, o estado do programa e os prazos antes de agir.",sw:"Rasilimali rasmi ya taasisi. Thibitisha ustahiki, njia ya maombi, hali ya mpango na tarehe za mwisho kabla ya kuchukua hatua."}[code];
+    return data;
+  }
+
   function applyDirectoryTranslations(root, code) {
     var source = window.GOA_DIRECTORY_TRANSLATIONS || {};
     root.querySelectorAll("[data-goa-directory-id]").forEach(function (card) {
       var id = card.getAttribute("data-goa-directory-id");
       var listingData = source[id] || {};
-      var item = listingData[code] || listingData.en;
+      var item = listingData[code] || listingData.en || fallbackDirectoryTranslation(id, code);
       if (!item) return;
       card.querySelectorAll("[data-goa-directory-field]").forEach(function (element) {
         var field = element.getAttribute("data-goa-directory-field");
