@@ -1,0 +1,661 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-04",
+  "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
+  "categories": [
+    "finance",
+    "grants",
+    "machinery",
+    "general"
+  ],
+  "countries": [
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "flag": "🇳🇬",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "slug": "ghana",
+      "flag": "🇬🇭",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "slug": "kenya",
+      "flag": "🇰🇪",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "slug": "uganda",
+      "flag": "🇺🇬",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "slug": "tanzania",
+      "flag": "🇹🇿",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "flag": "🇿🇦",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "slug": "zambia",
+      "flag": "🇿🇲",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "slug": "rwanda",
+      "flag": "🇷🇼",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "slug": "cameroon",
+      "flag": "🇨🇲",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "slug": "ethiopia",
+      "flag": "🇪🇹",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "slug": "algeria",
+      "flag": "🇩🇿",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "slug": "angola",
+      "flag": "🇦🇴",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "slug": "benin",
+      "flag": "🇧🇯",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "slug": "botswana",
+      "flag": "🇧🇼",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "slug": "burkina-faso",
+      "flag": "🇧🇫",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "slug": "burundi",
+      "flag": "🇧🇮",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "slug": "cabo-verde",
+      "flag": "🇨🇻",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "slug": "central-african-republic",
+      "flag": "🇨🇫",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "slug": "chad",
+      "flag": "🇹🇩",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "slug": "comoros",
+      "flag": "🇰🇲",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "slug": "democratic-republic-of-the-congo",
+      "flag": "🇨🇩",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire",
+      "slug": "cote-divoire",
+      "flag": "🇨🇮",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "slug": "djibouti",
+      "flag": "🇩🇯",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "slug": "egypt",
+      "flag": "🇪🇬",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "slug": "equatorial-guinea",
+      "flag": "🇬🇶",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "slug": "eritrea",
+      "flag": "🇪🇷",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "slug": "eswatini",
+      "flag": "🇸🇿",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "slug": "gabon",
+      "flag": "🇬🇦",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "slug": "gambia",
+      "flag": "🇬🇲",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "slug": "guinea",
+      "flag": "🇬🇳",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "slug": "guinea-bissau",
+      "flag": "🇬🇼",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "slug": "lesotho",
+      "flag": "🇱🇸",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "slug": "liberia",
+      "flag": "🇱🇷",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "slug": "libya",
+      "flag": "🇱🇾",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "slug": "madagascar",
+      "flag": "🇲🇬",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "slug": "malawi",
+      "flag": "🇲🇼",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "slug": "mali",
+      "flag": "🇲🇱",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "slug": "mauritania",
+      "flag": "🇲🇷",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "slug": "mauritius",
+      "flag": "🇲🇺",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "slug": "morocco",
+      "flag": "🇲🇦",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "slug": "mozambique",
+      "flag": "🇲🇿",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "slug": "namibia",
+      "flag": "🇳🇦",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "slug": "niger",
+      "flag": "🇳🇪",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "CG",
+      "name": "Republic of the Congo",
+      "slug": "republic-of-the-congo",
+      "flag": "🇨🇬",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "slug": "sao-tome-and-principe",
+      "flag": "🇸🇹",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "slug": "senegal",
+      "flag": "🇸🇳",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "slug": "seychelles",
+      "flag": "🇸🇨",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "slug": "sierra-leone",
+      "flag": "🇸🇱",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "slug": "somalia",
+      "flag": "🇸🇴",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "slug": "south-sudan",
+      "flag": "🇸🇸",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "slug": "sudan",
+      "flag": "🇸🇩",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "slug": "togo",
+      "flag": "🇹🇬",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "slug": "tunisia",
+      "flag": "🇹🇳",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "slug": "zimbabwe",
+      "flag": "🇿🇼",
+      "records": {
+        "finance": [],
+        "grants": [],
+        "machinery": [],
+        "general": []
+      }
+    }
+  ]
+}
