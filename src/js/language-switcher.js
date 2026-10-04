@@ -222,7 +222,7 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261010", { cache: "no-store" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261011", { cache: "no-store" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
@@ -301,17 +301,13 @@
           return;
         }
 
-        // Shared non-calculator pages apply the language explicitly selected
-        // by the user. The calculator keeps its existing refresh behavior.
+        // Shared non-calculator pages use one canonical URL. Reload after an
+        // explicit language selection so the server-rendered page and the
+        // client-side directory translations always start from the same state.
+        // This eliminates stale mixed-language DOM state on Resources pages.
         if (!/^\/[^/]*farm-profit-calculator(?:\/|$)/.test(currentPath)) {
-          loadLanguage(requested).then(function () {
-            if (requestId !== languageRequestId) return;
-            apply(document.body, requested);
-            updateLocalizedNavigation(requested);
-            var selected = document.getElementById("site-language-select");
-            if (selected) selected.value = requested;
-            document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: requested } }));
-          });
+          var sharedTarget = targetUrl || currentPath + (window.location.search || "");
+          window.location.assign(sharedTarget);
           return;
         }
         refresh();
