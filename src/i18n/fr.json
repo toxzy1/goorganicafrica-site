@@ -430,6 +430,26 @@
         "verified": "Vérifié :",
         "open": "Ouvrir la ressource officielle"
       }
+    },
+    "countryDirectory": {
+      "eyebrow": "Ressources pour les agriculteurs",
+      "title": "Ressources agricoles par pays",
+      "intro": "Explorez le répertoire GoOrganicAfrica dans les 54 marchés africains ciblés. Chaque pays dispose d’une page dédiée ; les ressources propres au pays ne sont ajoutées qu’après vérification de sources officielles.",
+      "back": "← Retour aux ressources",
+      "countryEyebrow": "Ressources GoOrganicAfrica",
+      "countryTitle": "Ressources agricoles en",
+      "countryIntro": "Ressources vérifiées de financement agricole, de subventions et de machines disponibles pour ce pays, ainsi que les programmes africains couvrant plusieurs pays. La couverture nationale est élargie à mesure que les sources officielles sont vérifiées.",
+      "coverage": "Couverture du pays :",
+      "countrySpecificListings": "ressources propres au pays",
+      "multiCountryListings": "ressources multi-pays",
+      "countrySpecificTitle": "Ressources propres au pays",
+      "reviewTitle": "Les sources propres au pays sont encore en cours de vérification",
+      "reviewText": "Ce pays dispose déjà d’une place permanente dans le répertoire GoOrganicAfrica des 54 pays. Le système de suivi automatisé signalera les sources vérifiées des gouvernements, ministères, agences et institutions de développement pour examen, plutôt que d’inventer ou de publier des informations non vérifiées.",
+      "multiCountryTitle": "Ressources pertinentes pour plusieurs pays",
+      "backToResources": "← Retour aux ressources agricoles",
+      "statusSourceRegistered": "Source enregistrée",
+      "statusActiveMonitoring": "Suivi actif",
+      "statusNeedsReview": "Vérification de la source du pays nécessaire"
     }
   }
 }
