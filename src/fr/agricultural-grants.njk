@@ -9,7 +9,7 @@ permalink: "/fr/agricultural-grants/"
 <div class="container" style="max-width:900px;" dir="ltr">
 <span class="eyebrow">Ressources agricoles</span><h1>Subventions & opportunités</h1><p class="lede">Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités agricoles.</p><div class="resource-language" style="margin-top:24px;">
   <label for="resource-language-select" class="visually-hidden">Language</label>
-  <select id="resource-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agricultural-grants">
+  <select id="site-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agricultural-grants">
     {% for lang in siteLanguages.languages %}
     {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
     {% endfor %}
