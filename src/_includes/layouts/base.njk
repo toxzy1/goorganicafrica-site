@@ -13,10 +13,19 @@
   {% set isBlogIndex = page.url == "/blog/" or page.url == "/fr/blog/" or page.url == "/ar/blog/" or page.url == "/pt/blog/" or page.url == "/sw/blog/" %}
   {% set isEbookIndex = page.url == "/ebooks/" or page.url == "/fr/ebooks/" or page.url == "/ar/ebooks/" or page.url == "/pt/ebooks/" or page.url == "/sw/ebooks/" %}
   {% set isHomeIndex = page.url == "/" or page.url == "/fr/" or page.url == "/ar/" or page.url == "/pt/" or page.url == "/sw/" %}
-  {% if isHomeIndex or isBlogIndex or isEbookIndex %}
+  {% set resourceRoutes = ["/agriculture-resources/","/agricultural-finance/","/agricultural-grants/","/farm-machinery/"] %}
+  {% set isResourcePage = page.url in resourceRoutes %}
+  {% set isLocalizedResourcePage = false %}
+  {% for rr in resourceRoutes %}
+    {% if page.url == "/fr" + rr or page.url == "/ar" + rr or page.url == "/pt" + rr or page.url == "/sw" + rr %}{% set isLocalizedResourcePage = true %}{% endif %}
+  {% endfor %}
+  {% if isHomeIndex or isBlogIndex or isEbookIndex or isResourcePage or isLocalizedResourcePage %}
   {% for lang in siteLanguages.languages %}
     {% if lang.enabled != false %}
-      {% if isBlogIndex %}
+      {% if isResourcePage or isLocalizedResourcePage %}
+  {% set resourceSlug = page.url | replace("/fr/","/") | replace("/ar/","/") | replace("/pt/","/") | replace("/sw/","/") %}
+  <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}{% endif %}{{ resourceSlug }}">
+      {% elif isBlogIndex %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}blog/">
       {% elif isEbookIndex %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}ebooks/">
@@ -25,7 +34,9 @@
       {% endif %}
     {% endif %}
   {% endfor %}
-  {% if isBlogIndex %}
+  {% if isResourcePage or isLocalizedResourcePage %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ resourceSlug }}">
+  {% elif isBlogIndex %}
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}/blog/">
   {% elif isEbookIndex %}
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}/ebooks/">
