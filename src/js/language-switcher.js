@@ -131,7 +131,7 @@
   function updateLocalizedNavigation(code) {
     document.querySelectorAll("[data-localized-section]").forEach(function (link) {
       var section = link.getAttribute("data-localized-section");
-      var sectionPath = section === "calculator" ? "farm-profit-calculator" : section;
+      var sectionPath = section === "calculator" ? "farm-profit-calculator" : (section === "resources" ? "agriculture-resources" : section);
       link.href = section === "home"
         ? (code === "en" ? "/" : "/" + code + "/")
         : (section === "calculator"
