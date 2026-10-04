@@ -70,7 +70,12 @@
     var map = countryNames[code] || {};
     root.querySelectorAll("[data-goa-country-name]").forEach(function (element) {
       var key = element.getAttribute("data-goa-country-name");
-      if (map[key]) element.textContent = map[key];
+      var fallback = element.getAttribute("data-goa-country-default") || element.textContent;
+      var translated = map[key];
+      if (!translated && typeof Intl !== "undefined" && Intl.DisplayNames) {
+        try { translated = new Intl.DisplayNames([code], { type: "region" }).of(String(key).toUpperCase()); } catch (_) {}
+      }
+      element.textContent = translated || fallback;
     });
   }
 
@@ -112,8 +117,8 @@
             "African Development Bank Group": { en: "African Development Bank Group", fr: "Groupe de la Banque africaine de développement", ar: "مجموعة البنك الأفريقي للتنمية", pt: "Grupo do Banco Africano de Desenvolvimento", sw: "Kundi la Benki ya Maendeleo ya Afrika" },
             "Food and Agriculture Organization of the United Nations (FAO)": { en: "Food and Agriculture Organization of the United Nations (FAO)", fr: "Organisation des Nations Unies pour l’alimentation et l’agriculture (FAO)", ar: "منظمة الأغذية والزراعة للأمم المتحدة (الفاو)", pt: "Organização das Nações Unidas para a Alimentação e a Agricultura (FAO)", sw: "Shirika la Chakula na Kilimo la Umoja wa Mataifa (FAO)" }
           };
-          var sourceText = element.textContent.trim();
-          if (sources[sourceText]) element.textContent = sources[sourceText][code] || sources[sourceText].en;
+          var sourceKey = element.getAttribute("data-goa-directory-source") || element.textContent.trim();
+          if (sources[sourceKey]) element.textContent = sources[sourceKey][code] || sources[sourceKey].en;
           return;
         }
         if (field === "country" && element.getAttribute("data-goa-directory-country") === "MULTI") {
@@ -217,7 +222,7 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261006", { cache: "default" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261010", { cache: "no-store" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
