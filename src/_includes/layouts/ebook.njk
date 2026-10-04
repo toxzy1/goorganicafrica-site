@@ -19,8 +19,6 @@ layout: layouts/base.njk
 }
 {% endset %}
 
-{% include "partials/language-selectors/static.njk" %}
-
 <div id="goa-language-targets" aria-hidden="true" style="display:none;"
 {% for localized in collections.ebooks %}{% if localized.data.translation_group == (translation_group or slug) and (localized.data.translation_status or 'published') != 'in_review' %} data-url-{{ localized.data.language or 'en' }}="{{ localized.url }}"{% endif %}{% endfor %}>
   {% for localized in collections.ebooks %}
