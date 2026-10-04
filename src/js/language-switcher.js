@@ -57,6 +57,20 @@
     catch (_) { return {}; }
   }
 
+  var countryNames = {
+    fr: {"dz":"Algérie","bj":"Bénin","cv":"Cap-Vert","cm":"Cameroun","cf":"République centrafricaine","td":"Tchad","km":"Comores","ci":"Côte d’Ivoire","cd":"RDC","eg":"Égypte","gq":"Guinée équatoriale","er":"Érythrée","et":"Éthiopie","gm":"Gambie","gn":"Guinée","gw":"Guinée-Bissau","lr":"Libéria","ly":"Libye","mg":"Madagascar","mr":"Mauritanie","mu":"Maurice","ma":"Maroc","mz":"Mozambique","na":"Namibie","ne":"Niger","ng":"Nigéria","rw":"Rwanda","st":"São Tomé-et-Príncipe","sn":"Sénégal","so":"Somalie","za":"Afrique du Sud","ss":"Soudan du Sud","sd":"Soudan","tz":"Tanzanie","tn":"Tunisie","ug":"Ouganda","zm":"Zambie"},
+    ar: {"dz":"الجزائر","ao":"أنغولا","bj":"بنين","bw":"بوتسوانا","bf":"بوركينا فاسو","bi":"بوروندي","cv":"الرأس الأخضر","cm":"الكاميرون","cf":"جمهورية أفريقيا الوسطى","td":"تشاد","km":"جزر القمر","cg":"الكونغو","ci":"ساحل العاج","cd":"جمهورية الكونغو الديمقراطية","dj":"جيبوتي","eg":"مصر","gq":"غينيا الاستوائية","er":"إريتريا","sz":"إسواتيني","et":"إثيوبيا","ga":"الغابون","gm":"غامبيا","gh":"غانا","gn":"غينيا","gw":"غينيا بيساو","ke":"كينيا","ls":"ليسوتو","lr":"ليبيريا","ly":"ليبيا","mg":"مدغشقر","mw":"ملاوي","ml":"مالي","mr":"موريتانيا","mu":"موريشيوس","ma":"المغرب","mz":"موزمبيق","na":"ناميبيا","ne":"النيجر","ng":"نيجيريا","rw":"رواندا","st":"ساو تومي وبرينسيبي","sn":"السنغال","sc":"سيشل","sl":"سيراليون","so":"الصومال","za":"جنوب أفريقيا","ss":"جنوب السودان","sd":"السودان","tz":"تنزانيا","tg":"توغو","tn":"تونس","ug":"أوغندا","zm":"زامبيا","zw":"زيمبابوي"},
+    pt: {"dz":"Argélia","bj":"Benim","bw":"Botsuana","cv":"Cabo Verde","cm":"Camarões","cf":"República Centro-Africana","td":"Chade","ci":"Costa do Marfim","cd":"RD Congo","dj":"Djibuti","eg":"Egito","gq":"Guiné Equatorial","er":"Eritreia","sz":"Essuatíni","et":"Etiópia","ga":"Gabão","gm":"Gâmbia","gh":"Gana","gn":"Guiné","gw":"Guiné-Bissau","ke":"Quénia","ls":"Lesoto","lr":"Libéria","ly":"Líbia","mg":"Madagáscar","mr":"Mauritânia","mu":"Maurícia","ma":"Marrocos","mz":"Moçambique","na":"Namíbia","ne":"Níger","ng":"Nigéria","rw":"Ruanda","st":"São Tomé e Príncipe","sc":"Seicheles","sl":"Serra Leoa","so":"Somália","za":"África do Sul","ss":"Sudão do Sul","sd":"Sudão","tz":"Tanzânia","tn":"Tunísia","ug":"Uganda","zm":"Zâmbia","zw":"Zimbábue"},
+    sw: {"bj":"Benini","cf":"Jamhuri ya Afrika ya Kati","ci":"Côte d’Ivoire","cd":"DRC","eg":"Misri","gq":"Guinea ya Ikweta","gm":"Gambia","gw":"Guinea-Bissau","lr":"Liberia","ly":"Libya","mg":"Madagaska","ma":"Moroko","mz":"Msumbiji","mr":"Mauritania","ng":"Nigeria","rw":"Rwanda","st":"São Tomé na Príncipe","sc":"Shelisheli","za":"Afrika Kusini","ss":"Sudan Kusini","sd":"Sudan","tz":"Tanzania","ug":"Uganda","zm":"Zambia","zw":"Zimbabwe"}
+  };
+  function applyCountryNames(root, code) {
+    var map = countryNames[code] || {};
+    root.querySelectorAll("[data-goa-country-name]").forEach(function (element) {
+      var key = element.getAttribute("data-goa-country-name");
+      if (map[key]) element.textContent = map[key];
+    });
+  }
+
   function applyDirectoryTranslations(root, code) {
     var source = window.GOA_DIRECTORY_TRANSLATIONS || {};
     root.querySelectorAll("[data-goa-directory-id]").forEach(function (card) {
@@ -109,6 +123,7 @@
       if (value !== undefined) element.setAttribute("aria-label", value);
     });
     applyDirectoryTranslations(root, code);
+    applyCountryNames(root, code);
   }
 
   function setLanguage(requested) {
@@ -174,7 +189,7 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261004", { cache: "default" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261006", { cache: "default" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
