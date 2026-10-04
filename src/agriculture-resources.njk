@@ -25,14 +25,28 @@ permalink: "/agriculture-resources/"
     <div style="margin-top:36px;">
       <h2>Africa-wide directory</h2>
       <p>Coverage framework: <strong>{{ agriculturalResources.countries | length }} African countries</strong>. Each country will use the same verified record structure for finance, grants, machinery and other agricultural resources.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:18px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px;">
         {% for country in agriculturalResources.countries %}
-        <div style="padding:12px;border:1px solid var(--line);border-radius:10px;">
-          <strong>{{ country.flag }} {{ country.name }}</strong>
-          <div style="font-size:.85rem;opacity:.75;margin-top:4px;">Official resources being verified</div>
-        </div>
+        <details style="padding:14px;border:1px solid var(--line);border-radius:10px;">
+          <summary style="cursor:pointer;font-weight:700;">{{ country.flag }} {{ country.name }}</summary>
+          <div style="margin-top:12px;">
+            {% for category in agriculturalResources.categories %}
+              {% if country.records[category] and country.records[category] | length %}
+                <h3 style="font-size:1rem;margin:14px 0 8px;text-transform:capitalize;">{{ category }}</h3>
+                {% for record in country.records[category] %}
+                <div style="padding:12px;margin:8px 0;border:1px solid var(--line);border-radius:8px;">
+                  <strong>{{ record.title }}</strong>
+                  <p style="margin:6px 0;">{{ record.description }}</p>
+                  <div style="font-size:.82rem;opacity:.78;">Source: {{ record.source }} · Verified: {{ record.verified }}</div>
+                  <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer">Open official source →</a>
+                </div>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </details>
         {% endfor %}
-      </div>
+      </div></div>
     </div>
     <div style="margin-top:36px;padding:20px;border:1px solid var(--line);border-radius:12px;">
       <h2><span data-i18n="static.resources.verifyTitle">Verification matters</span></h2>
