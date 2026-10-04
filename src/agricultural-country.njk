@@ -7,8 +7,8 @@ pagination:
 permalink: "/agricultural-resources/countries/{{ country.code | lower }}/"
 ---
 {% include "partials/language-selectors/static.njk" %}
-{% set countryListings = directoryListings.listings | selectattr("active") | selectattr("country", "equalto", country.name) | list %}
-{% set multiListings = directoryListings.listings | selectattr("active") | selectattr("country", "equalto", "MULTI") | list %}
+{% set countryListings = directoryListings.listings | selectattr("country", "equalto", country.name) | selectattr("active") | list %}
+{% set multiListings = directoryListings.listings | selectattr("country", "equalto", "MULTI") | selectattr("active") | list %}
 <section class="section" style="padding-top:48px;">
   <div class="container" style="max-width:1100px;">
     <span class="eyebrow" data-i18n="static.countryDirectory.countryEyebrow">GoOrganicAfrica Resources</span>
