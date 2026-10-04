@@ -289,6 +289,19 @@
           window.location.assign(targetUrl);
           return;
         }
+
+        // Shared non-calculator pages apply the language explicitly selected
+        // by the user. The calculator keeps its existing refresh behavior.
+        if (!/^\/[^/]*farm-profit-calculator(?:\/|$)/.test(currentPath)) {
+          loadLanguage(requested).then(function () {
+            apply(document.body, requested);
+            updateLocalizedNavigation(requested);
+            var selected = document.getElementById("site-language-select");
+            if (selected) selected.value = requested;
+            document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: requested } }));
+          });
+          return;
+        }
         refresh();
       });
     }
