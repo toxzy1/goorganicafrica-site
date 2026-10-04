@@ -301,13 +301,20 @@
           return;
         }
 
-        // Shared non-calculator pages use one canonical URL. Reload after an
-        // explicit language selection so the server-rendered page and the
-        // client-side directory translations always start from the same state.
-        // This eliminates stale mixed-language DOM state on Resources pages.
+        // Shared non-calculator pages stay on their canonical URL.
+        // Apply the explicitly selected language immediately instead of
+        // navigating/reloading. This prevents the old local language state
+        // from being reapplied during a second page initialization.
         if (!/^\/[^/]*farm-profit-calculator(?:\/|$)/.test(currentPath)) {
-          var sharedTarget = targetUrl || currentPath + (window.location.search || "");
-          window.location.assign(sharedTarget);
+          loadLanguage(requested).then(function () {
+            if (requestId !== languageRequestId) return;
+            setLanguage(requested);
+            apply(document.body, requested);
+            updateLocalizedNavigation(requested);
+            var selected = document.getElementById("site-language-select");
+            if (selected) selected.value = requested;
+            document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: requested } }));
+          });
           return;
         }
         refresh();
