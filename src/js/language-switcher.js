@@ -99,7 +99,7 @@
     root.querySelectorAll("[data-goa-directory-id]").forEach(function (card) {
       var id = card.getAttribute("data-goa-directory-id");
       var listingData = source[id] || {};
-      var item = listingData[code] || listingData.en || fallbackDirectoryTranslation(id, code);
+      var item = listingData[code] || fallbackDirectoryTranslation(id, code) || listingData.en;
       if (!item) return;
       card.querySelectorAll("[data-goa-directory-field]").forEach(function (element) {
         var field = element.getAttribute("data-goa-directory-field");
