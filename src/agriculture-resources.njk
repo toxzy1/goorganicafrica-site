@@ -11,7 +11,7 @@ permalink: "/agriculture-resources/"
     <p class="lede"><span data-i18n="static.resources.resourcesIntro">A structured resource centre for finding agricultural funding, grant opportunities, machinery, equipment and related services. Listings are intended to be verified and maintained through the GoOrganicAfrica CMS.</span></p>
     <div class="resource-language" style="margin-top:24px;">
   <label for="resource-language-select" class="visually-hidden">Language</label>
-  <select id="resource-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agriculture-resources">
+  <select id="site-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agriculture-resources">
     {% for lang in siteLanguages.languages %}
     {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
     {% endfor %}
