@@ -11,7 +11,7 @@ permalink: "/agricultural-finance/"
     <p class="lede"><span data-i18n="static.resources.financeIntro">Loans, insurance, input finance, equipment finance, leasing and other agricultural funding routes.</span></p>
     <div class="resource-language" style="margin-top:24px;">
   <label for="resource-language-select" class="visually-hidden">Language</label>
-  <select id="resource-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agricultural-finance">
+  <select id="site-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agricultural-finance">
     {% for lang in siteLanguages.languages %}
     {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
     {% endfor %}
