@@ -16,7 +16,7 @@
     // are explicitly localized.
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
 
-    var calculatorLanguage = path.match(/^\/(?:[a-z]{2}\/)?(fr|ar|pt|sw)\/farm-profit-calculator$/);
+    var calculatorLanguage = path.match(/^\/[a-z]{2}\/(fr|ar|pt|sw)\/farm-profit-calculator$/);
     if (calculatorLanguage) return calculatorLanguage[1];
 
     if (path === "/farm-profit-calculator") {
