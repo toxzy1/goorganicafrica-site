@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "discovery": {
+    "automatic": true,
+    "frequency": "scheduled",
+    "lookback_days_news": 14,
+    "lookback_days_opportunities": 60
+  },
+  "publication": {
+    "default_status": "review",
+    "automatic_publication": false,
+    "require_human_verification": true,
+    "require_source_url": true,
+    "require_verification_date": true
+  },
+  "expiry": {
+    "news_review_after_days": 30,
+    "opportunity_recheck_after_days": 14,
+    "price_recheck_after_days": 45,
+    "seed_price_recheck_after_days": 45
+  },
+  "quality_rules": [
+    "Prefer official government, FAO, CGIAR/IITA, recognised African agricultural organisations, development institutions and reputable market information systems.",
+    "Never invent a grant, loan, price, deadline, supplier, news story or programme.",
+    "Never treat a generic country profile as a grant, finance or machinery opportunity.",
+    "Retain original source URL and verification date.",
+    "Expired opportunities must be flagged or removed from active listings.",
+    "Manual CMS overrides remain available but must be visibly marked."
+  ]
+}
