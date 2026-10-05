@@ -13,16 +13,22 @@
   {% set isBlogIndex = page.url == "/blog/" or page.url == "/fr/blog/" or page.url == "/ar/blog/" or page.url == "/pt/blog/" or page.url == "/sw/blog/" %}
   {% set isEbookIndex = page.url == "/ebooks/" or page.url == "/fr/ebooks/" or page.url == "/ar/ebooks/" or page.url == "/pt/ebooks/" or page.url == "/sw/ebooks/" %}
   {% set isHomeIndex = page.url == "/" or page.url == "/fr/" or page.url == "/ar/" or page.url == "/pt/" or page.url == "/sw/" %}
+  {% set isAboutPage = page.url == "/about/" or page.url == "/fr/about/" or page.url == "/ar/about/" or page.url == "/pt/about/" or page.url == "/sw/about/" %}
+  {% set isContactPage = page.url == "/contact/" or page.url == "/fr/contact/" or page.url == "/ar/contact/" or page.url == "/pt/contact/" or page.url == "/sw/contact/" %}
   {% set resourceRoutes = ["/agriculture-resources/","/agricultural-finance/","/agricultural-grants/","/farm-machinery/"] %}
   {% set isResourcePage = page.url in resourceRoutes %}
   {% set isLocalizedResourcePage = false %}
   {% for rr in resourceRoutes %}
     {% if page.url == "/fr" + rr or page.url == "/ar" + rr or page.url == "/pt" + rr or page.url == "/sw" + rr %}{% set isLocalizedResourcePage = true %}{% endif %}
   {% endfor %}
-  {% if isHomeIndex or isBlogIndex or isEbookIndex or isResourcePage or isLocalizedResourcePage %}
+  {% if isHomeIndex or isBlogIndex or isEbookIndex or isResourcePage or isLocalizedResourcePage or isAboutPage or isContactPage %}
   {% for lang in siteLanguages.languages %}
     {% if lang.enabled != false %}
-      {% if isResourcePage or isLocalizedResourcePage %}
+      {% if isAboutPage %}
+  <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}about/">
+      {% elif isContactPage %}
+  <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}contact/">
+      {% elif isResourcePage or isLocalizedResourcePage %}
   {% set resourceSlug = page.url | replace("/fr/","/") | replace("/ar/","/") | replace("/pt/","/") | replace("/sw/","/") %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}{% endif %}{{ resourceSlug }}">
       {% elif isBlogIndex %}
@@ -34,7 +40,11 @@
       {% endif %}
     {% endif %}
   {% endfor %}
-  {% if isResourcePage or isLocalizedResourcePage %}
+  {% if isAboutPage %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/about/">
+  {% elif isContactPage %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/contact/">
+  {% elif isResourcePage or isLocalizedResourcePage %}
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ resourceSlug }}">
   {% elif isBlogIndex %}
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}/blog/">
