@@ -38,6 +38,3 @@ jobs:
             Nothing is published to the main site until this PR is reviewed and merged.
           branch: automation/agricultural-news
           delete-branch: false
-          labels: |
-            agricultural-news
-            needs-review
