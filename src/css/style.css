@@ -1018,5 +1018,8 @@ p { margin: 0 0 1em; }
 .site-language select { border:1px solid var(--line); border-radius:7px; padding:5px 7px; background:var(--white); color:var(--ink); font:inherit; font-size:.75rem; }
 @media (max-width: 760px) { .site-language { margin:10px 0 0; justify-content:flex-end; } }
 
+.top-language-bar { display:flex;justify-content:flex-end;align-items:center;padding:8px 5%;background:var(--surface,#f7f8f4);border-bottom:1px solid var(--line); }
+.top-language-bar .translation-links { margin:0; }
+.top-language-bar .site-language-select { min-width:145px;font-size:.95rem;font-weight:700;padding:7px 10px; }
 .translation-links { display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0 18px;font-size:.8rem;color:var(--ink-soft); }
 .translation-links a { text-transform:uppercase;text-decoration:none;padding:4px 8px;border:1px solid var(--line);border-radius:6px;color:var(--green-deep);font-weight:700; }
