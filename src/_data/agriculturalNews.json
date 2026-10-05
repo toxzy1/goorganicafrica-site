@@ -27,7 +27,28 @@
       "name": "Ghana",
       "slug": "ghana",
       "flag": "🇬🇭",
-      "articles": []
+      "articles": [
+        {
+          "category": "policy",
+          "title": "MoFA launches National Horticultural Seed Roadmap",
+          "summary": "Ghana's Ministry of Food and Agriculture launched the National Horticultural Seed Roadmap on 17 September 2026.",
+          "url": "https://www.mofa.gov.gh/site/media-centre/latest-news",
+          "source": "Ghana Ministry of Food and Agriculture (MoFA)",
+          "published": "2026-09-17",
+          "verified": "2026-10-05",
+          "status": "official"
+        },
+        {
+          "category": "crops",
+          "title": "Ghana launches Tomato Self-Sufficiency Initiative",
+          "summary": "The Ministry of Food and Agriculture launched the Ghana Tomato Self-Sufficiency Initiative to increase domestic tomato production.",
+          "url": "https://www.mofa.gov.gh/site/media-centre/latest-news",
+          "source": "Ghana Ministry of Food and Agriculture (MoFA)",
+          "published": "2026-09",
+          "verified": "2026-10-05",
+          "status": "official"
+        }
+      ]
     },
     {
       "code": "KE",
@@ -335,7 +356,18 @@
       "name": "Senegal",
       "slug": "senegal",
       "flag": "🇸🇳",
-      "articles": []
+      "articles": [
+        {
+          "category": "policy",
+          "title": "African countries strengthen capacities on agricultural heritage systems",
+          "summary": "FAO reported that a Johannesburg workshop brought 16 African countries together to strengthen agricultural heritage system proposals, action plans and partnerships.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO Regional Office for Africa",
+          "published": "2026-09-28",
+          "verified": "2026-10-05",
+          "status": "official"
+        }
+      ]
     },
     {
       "code": "SC",
@@ -356,7 +388,18 @@
       "name": "Somalia",
       "slug": "somalia",
       "flag": "🇸🇴",
-      "articles": []
+      "articles": [
+        {
+          "category": "weather-climate",
+          "title": "Flood risks and funding shortfalls threaten vulnerable communities",
+          "summary": "FAO reported projected floods and funding shortfalls as continuing threats to food security and livelihoods in Somalia.",
+          "url": "https://www.fao.org/emergencies/resources-repository/news/en",
+          "source": "FAO Emergencies and Resilience",
+          "published": "2026-09-23",
+          "verified": "2026-10-05",
+          "status": "official"
+        }
+      ]
     },
     {
       "code": "SS",
@@ -370,7 +413,18 @@
       "name": "Sudan",
       "slug": "sudan",
       "flag": "🇸🇩",
-      "articles": []
+      "articles": [
+        {
+          "category": "livestock",
+          "title": "FAO launches nationwide livestock vaccination campaign",
+          "summary": "FAO reported a nationwide livestock vaccination campaign in Sudan aimed at protecting food security and rural livelihoods amid conflict.",
+          "url": "https://www.fao.org/emergencies/resources-repository/news/en",
+          "source": "FAO Emergencies and Resilience",
+          "published": "2026-09-25",
+          "verified": "2026-10-05",
+          "status": "official"
+        }
+      ]
     },
     {
       "code": "TG",
@@ -391,7 +445,18 @@
       "name": "Zimbabwe",
       "slug": "zimbabwe",
       "flag": "🇿🇼",
-      "articles": []
+      "articles": [
+        {
+          "category": "finance",
+          "title": "Zimbabwe presents investment opportunities at FAO Hand-in-Hand Investment Forum",
+          "summary": "FAO reported Zimbabwe's participation in the 2026 Hand-in-Hand Investment Forum to present agrifood investment opportunities.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO Regional Office for Africa",
+          "published": "2026-09-17",
+          "verified": "2026-10-05",
+          "status": "official"
+        }
+      ]
     }
   ]
 }
