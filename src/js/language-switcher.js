@@ -110,6 +110,7 @@
     // so an unrelated/stale content link can never redirect the selector elsewhere.
     if (rest === "blog") return code === "en" ? "/blog/" : "/" + code + "/blog/";
     if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
+    if (rest === "organic-farming") return code === "en" ? "/organic-farming/" : "/" + code + "/organic-farming/";
     if (rest === "agricultural-news") return code === "en" ? "/agricultural-news/" : "/" + code + "/agricultural-news/";
     if (rest === "agriculture-resources") return code === "en" ? "/agriculture-resources/" : "/" + code + "/agriculture-resources/";
     if (rest === "agricultural-finance") return code === "en" ? "/agricultural-finance/" : "/" + code + "/agricultural-finance/";
@@ -119,6 +120,7 @@
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact)$/.test(rest)) return code === "en" ? "/" + rest + "/" : "/" + code + "/" + rest + "/";
     if (/^(privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
+    if (rest === "organic-farming") return code === "en" ? "/organic-farming/" : "/" + code + "/organic-farming/";
 
     // Home page.
     if (rest === "") return code === "en" ? "/" : "/" + code + "/";
