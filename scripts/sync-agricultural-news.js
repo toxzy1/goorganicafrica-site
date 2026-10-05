@@ -4,16 +4,34 @@ const path = require("path");
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalNews.json");
 const FEEDS = [
   {
-    name: "FAO News discovery",
-    url: "https://news.google.com/rss/search?q=site%3Afao.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
-    source: "FAO",
+    name: "FAO Africa discovery",
+    url: "https://news.google.com/rss/search?q=site%3Afao.org%2Fafrica%20agriculture%20Africa&hl=en&gl=US&ceid=US%3Aen",
+    source: "FAO Regional Office for Africa",
     allowedHost: "fao.org"
   },
   {
     name: "FAO Emergencies discovery",
-    url: "https://news.google.com/rss/search?q=site%3Afao.org%20emergencies%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    url: "https://news.google.com/rss/search?q=site%3Afao.org%2Femergencies%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
     source: "FAO Emergencies and Resilience",
     allowedHost: "fao.org"
+  },
+  {
+    name: "IITA discovery",
+    url: "https://news.google.com/rss/search?q=site%3Aiita.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "International Institute of Tropical Agriculture (IITA)",
+    allowedHost: "iita.org"
+  },
+  {
+    name: "AATF discovery",
+    url: "https://news.google.com/rss/search?q=site%3Aaatf-africa.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "African Agricultural Technology Foundation (AATF)",
+    allowedHost: "aatf-africa.org"
+  },
+  {
+    name: "AGRA discovery",
+    url: "https://news.google.com/rss/search?q=site%3Aagra.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "Alliance for a Green Revolution in Africa (AGRA)",
+    allowedHost: "agra.org"
   },
   {
     name: "Ghana MoFA discovery",
