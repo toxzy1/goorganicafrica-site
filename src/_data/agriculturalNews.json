@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-05",
+  "editorial_policy": "Publish only current, verifiable agricultural news from official or authoritative sources. Store the original source URL and verification date. Do not copy full articles.",
+  "categories": [
+    "general",
+    "crops",
+    "livestock",
+    "markets",
+    "finance",
+    "policy",
+    "weather-climate",
+    "machinery-technology",
+    "research-innovation",
+    "grants-programmes"
+  ],
+  "countries": [
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "flag": "🇳🇬",
+      "articles": []
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "slug": "ghana",
+      "flag": "🇬🇭",
+      "articles": []
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "slug": "kenya",
+      "flag": "🇰🇪",
+      "articles": []
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "slug": "uganda",
+      "flag": "🇺🇬",
+      "articles": []
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "slug": "tanzania",
+      "flag": "🇹🇿",
+      "articles": []
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "flag": "🇿🇦",
+      "articles": []
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "slug": "zambia",
+      "flag": "🇿🇲",
+      "articles": []
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "slug": "rwanda",
+      "flag": "🇷🇼",
+      "articles": []
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "slug": "cameroon",
+      "flag": "🇨🇲",
+      "articles": []
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "slug": "ethiopia",
+      "flag": "🇪🇹",
+      "articles": []
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "slug": "algeria",
+      "flag": "🇩🇿",
+      "articles": []
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "slug": "angola",
+      "flag": "🇦🇴",
+      "articles": []
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "slug": "benin",
+      "flag": "🇧🇯",
+      "articles": []
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "slug": "botswana",
+      "flag": "🇧🇼",
+      "articles": []
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "slug": "burkina-faso",
+      "flag": "🇧🇫",
+      "articles": []
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "slug": "burundi",
+      "flag": "🇧🇮",
+      "articles": []
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "slug": "cabo-verde",
+      "flag": "🇨🇻",
+      "articles": []
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "slug": "central-african-republic",
+      "flag": "🇨🇫",
+      "articles": []
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "slug": "chad",
+      "flag": "🇹🇩",
+      "articles": []
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "slug": "comoros",
+      "flag": "🇰🇲",
+      "articles": []
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "slug": "democratic-republic-of-the-congo",
+      "flag": "🇨🇩",
+      "articles": []
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire",
+      "slug": "c-te-d-ivoire",
+      "flag": "🇨🇮",
+      "articles": []
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "slug": "djibouti",
+      "flag": "🇩🇯",
+      "articles": []
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "slug": "egypt",
+      "flag": "🇪🇬",
+      "articles": []
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "slug": "equatorial-guinea",
+      "flag": "🇬🇶",
+      "articles": []
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "slug": "eritrea",
+      "flag": "🇪🇷",
+      "articles": []
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "slug": "eswatini",
+      "flag": "🇸🇿",
+      "articles": []
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "slug": "gabon",
+      "flag": "🇬🇦",
+      "articles": []
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "slug": "gambia",
+      "flag": "🇬🇲",
+      "articles": []
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "slug": "guinea",
+      "flag": "🇬🇳",
+      "articles": []
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "slug": "guinea-bissau",
+      "flag": "🇬🇼",
+      "articles": []
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "slug": "lesotho",
+      "flag": "🇱🇸",
+      "articles": []
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "slug": "liberia",
+      "flag": "🇱🇷",
+      "articles": []
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "slug": "libya",
+      "flag": "🇱🇾",
+      "articles": []
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "slug": "madagascar",
+      "flag": "🇲🇬",
+      "articles": []
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "slug": "malawi",
+      "flag": "🇲🇼",
+      "articles": []
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "slug": "mali",
+      "flag": "🇲🇱",
+      "articles": []
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "slug": "mauritania",
+      "flag": "🇲🇷",
+      "articles": []
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "slug": "mauritius",
+      "flag": "🇲🇺",
+      "articles": []
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "slug": "morocco",
+      "flag": "🇲🇦",
+      "articles": []
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "slug": "mozambique",
+      "flag": "🇲🇿",
+      "articles": []
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "slug": "namibia",
+      "flag": "🇳🇦",
+      "articles": []
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "slug": "niger",
+      "flag": "🇳🇪",
+      "articles": []
+    },
+    {
+      "code": "CG",
+      "name": "Republic of the Congo",
+      "slug": "republic-of-the-congo",
+      "flag": "🇨🇬",
+      "articles": []
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "slug": "s-o-tom-and-pr-ncipe",
+      "flag": "🇸🇹",
+      "articles": []
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "slug": "senegal",
+      "flag": "🇸🇳",
+      "articles": []
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "slug": "seychelles",
+      "flag": "🇸🇨",
+      "articles": []
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "slug": "sierra-leone",
+      "flag": "🇸🇱",
+      "articles": []
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "slug": "somalia",
+      "flag": "🇸🇴",
+      "articles": []
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "slug": "south-sudan",
+      "flag": "🇸🇸",
+      "articles": []
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "slug": "sudan",
+      "flag": "🇸🇩",
+      "articles": []
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "slug": "togo",
+      "flag": "🇹🇬",
+      "articles": []
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "slug": "tunisia",
+      "flag": "🇹🇳",
+      "articles": []
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "slug": "zimbabwe",
+      "flag": "🇿🇼",
+      "articles": []
+    }
+  ]
+}
