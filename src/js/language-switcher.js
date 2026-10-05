@@ -112,7 +112,8 @@
     if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
 
     // Static pages intentionally keep one shared URL; only their text changes.
-    if (/^(about|contact|privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
+    if (/^(about|contact)$/.test(rest)) return code === "en" ? "/" + rest + "/" : "/" + code + "/" + rest + "/";
+    if (/^(privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
 
     // Home page.
     if (rest === "") return code === "en" ? "/" : "/" + code + "/";
@@ -137,7 +138,7 @@
         : (section === "calculator"
           ? "/farm-profit-calculator/"
           : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
-            ? "/" + sectionPath + "/"
+            ? ((section === "about" || section === "contact") ? (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/") : "/" + sectionPath + "/")
             : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/")));
     });
   }
