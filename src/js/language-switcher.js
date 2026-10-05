@@ -120,7 +120,6 @@
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact)$/.test(rest)) return code === "en" ? "/" + rest + "/" : "/" + code + "/" + rest + "/";
     if (/^(privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
-    if (rest === "organic-farming") return code === "en" ? "/organic-farming/" : "/" + code + "/organic-farming/";
 
     // Home page.
     if (rest === "") return code === "en" ? "/" : "/" + code + "/";
