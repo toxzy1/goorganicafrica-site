@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+title: Organic Farming — GoOrganicAfrica
+description: Practical organic farming, biological inputs, organic products, soil health and farmer education from GoOrganicAfrica.
+language: en
+pageLanguage: en
+pageSection: organic-farming
+permalink: "/organic-farming/"
+---
+
+<section class="section" style="padding-top:48px;">
+  <div class="container" style="max-width:900px;">
+    <span class="eyebrow" data-i18n="organic.eyebrow">Organic Farming</span>
+    <h1 data-i18n="organic.title">Practical Organic Farming for Africa</h1>
+    <p class="lede" data-i18n="organic.intro">GoOrganicAfrica promotes practical, responsible organic farming across Africa — combining real farm experience, biological inputs, soil health, livestock care and farmer education.</p>
+
+    <div class="section-head" style="text-align:left;margin:42px 0 24px;">
+      <h2 data-i18n="organic.missionTitle">From the farm to African farmers</h2>
+      <p class="lede" data-i18n="organic.missionBody">This section is where we document the organic farming approach behind GoOrganicAfrica and introduce products developed or used through that work.</p>
+    </div>
+
+    <div class="category-grid">
+      <article class="category-card">
+        <h3 data-i18n="organic.inoculumTitle">InoculumPlus</h3>
+        <p data-i18n="organic.inoculumBody">A mycorrhiza-fungi-based biofertilizer for supporting beneficial relationships between plant roots and soil fungi. Product information, application guidance and field experience can be added here.</p>
+      </article>
+      <article class="category-card">
+        <h3 data-i18n="organic.organicGrowTitle">OrganicGrow</h3>
+        <p data-i18n="organic.organicGrowBody">An organic farming solution presented for poultry, fish and other livestock. Farmers can learn about its intended uses, application guidance and practical experience.</p>
+      </article>
+      <article class="category-card">
+        <h3 data-i18n="organic.nutrientsTitle">Organic Calcium, Phosphorus, Potassium &amp; Sulfur</h3>
+        <p data-i18n="organic.nutrientsBody">Organic nutrient solutions for crop production and soil fertility management. Each product can have its own detailed guide, dosage information and demonstration.</p>
+      </article>
+    </div>
+
+    <div class="section" style="padding:52px 0 20px;">
+      <div class="section-head" style="text-align:left;margin:0 0 24px;">
+        <span class="eyebrow" data-i18n="organic.videoEyebrow">Video education</span>
+        <h2 data-i18n="organic.youtubeTitle">Watch Organic Farming in Practice</h2>
+        <p class="lede" data-i18n="organic.youtubeBody">We will feature practical organic-farming videos here so farmers can see the methods, products and ideas being demonstrated rather than only reading about them.</p>
+      </div>
+      {% if organicFarming.youtubeVideoUrl %}
+      <div style="border:2px solid var(--green-deep);border-radius:12px;padding:24px;background:var(--sage-light);">
+        <a class="btn btn-primary" href="{{ organicFarming.youtubeVideoUrl }}" target="_blank" rel="noopener noreferrer" data-i18n="organic.watchButton">Watch the video on YouTube →</a>
+      </div>
+      {% elif organicFarming.youtubeChannelUrl %}
+      <div style="border:2px solid var(--green-deep);border-radius:12px;padding:24px;background:var(--sage-light);">
+        <a class="btn btn-primary" href="{{ organicFarming.youtubeChannelUrl }}" target="_blank" rel="noopener noreferrer" data-i18n="organic.channelButton">Visit our YouTube channel →</a>
+      </div>
+      {% endif %}
+    </div>
+
+    <div style="margin-top:24px;padding:24px;background:var(--paper);border:1px solid var(--line);border-radius:10px;">
+      <h2 data-i18n="organic.guidesTitle">Keep learning</h2>
+      <p data-i18n="organic.guidesBody">Explore our farming guides and blog for practical information on soil health, biological inputs, livestock, crops, markets and profitable farm management.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:18px;">
+        <a class="btn btn-primary" href="/ebooks/" data-localized-section="ebooks" data-i18n="organic.guidesButton">Browse Farming Guides</a>
+        <a class="btn btn-outline" href="/blog/" data-localized-section="blog" data-i18n="organic.blogButton">Read the Blog</a>
+        <a class="btn btn-outline" href="/contact/" data-localized-section="contact" data-i18n="organic.contactButton">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
