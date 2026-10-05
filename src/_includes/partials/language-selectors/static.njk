@@ -1,4 +1,4 @@
-<nav class="translation-links section-language-nav" aria-label="Available languages" data-goa-language-selector="static">
+<nav class="translation-links section-language-nav" aria-label="Available languages" data-goa-language-selector="static" data-goa-selector-section="{{ pageSection or "" }}">
   <strong data-i18n="common.language">Language:</strong>
   <select id="site-language-select" class="site-language-select" aria-label="Language" data-i18n-aria-label="common.language">
     {% for lang in siteLanguages.languages %}
