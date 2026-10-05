@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "description": "Authoritative and high-value source registry for GoOrganicAfrica content discovery. Discovery may be automated; publication remains subject to verification unless explicitly marked safe for auto-publish.",
+  "source_groups": [
+    {
+      "id": "africa-ag-news",
+      "label": "African agricultural news",
+      "areas": ["news", "policy", "research", "technology", "markets", "climate", "livestock"],
+      "publish_policy": "review_required",
+      "sources": [
+        {"name":"FAO Regional Office for Africa","url":"https://www.fao.org/africa/","priority":10},
+        {"name":"IITA","url":"https://iita.org/news-item/","priority":10},
+        {"name":"AATF","url":"https://www.aatf-africa.org/","priority":20},
+        {"name":"AGRA","url":"https://agra.org/","priority":20}
+      ]
+    },
+    {
+      "id": "country-opportunities",
+      "label": "Country grants, finance and farmer programmes",
+      "areas": ["grants", "finance", "insurance", "subsidies", "farmer-programmes", "competitions"],
+      "publish_policy": "review_required",
+      "sources": [
+        {"name":"National agriculture ministries/agencies","url":"","priority":10},
+        {"name":"National agricultural development/funding institutions","url":"","priority":10},
+        {"name":"FAO country offices","url":"https://www.fao.org/countryprofiles/","priority":20},
+        {"name":"IFAD","url":"https://www.ifad.org/","priority":20},
+        {"name":"African Development Bank","url":"https://www.afdb.org/","priority":20}
+      ]
+    },
+    {
+      "id": "equipment",
+      "label": "Farm machinery and equipment",
+      "areas": ["tractors", "irrigation", "processing", "greenhouse", "solar", "leasing", "rental"],
+      "publish_policy": "review_required",
+      "sources": [
+        {"name":"Government mechanisation programmes","url":"","priority":10},
+        {"name":"Agricultural research and extension institutions","url":"","priority":20},
+        {"name":"Verified equipment suppliers/dealers","url":"","priority":30}
+      ]
+    },
+    {
+      "id": "markets-inputs",
+      "label": "Markets, seed and farm-input information",
+      "areas": ["commodity-prices", "seed-prices", "fertilizer", "bioinputs", "livestock-prices", "labour", "fx"],
+      "publish_policy": "review_required",
+      "sources": [
+        {"name":"National statistics offices","url":"","priority":10},
+        {"name":"Government market information systems","url":"","priority":10},
+        {"name":"Seed regulators and recognised seed organisations","url":"","priority":20},
+        {"name":"Recognised commodity market systems","url":"","priority":30}
+      ]
+    }
+  ]
+}
