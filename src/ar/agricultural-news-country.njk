@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: agriculturalNews.countries
+  size: 1
+  alias: country
+permalink: "/ar/agricultural-news/{{ country.slug }}/"
+language: ar
+pageLanguage: ar
+---
+<div id="goa-language-targets"
+ data-url-en="/agricultural-news/{{ country.slug }}/"
+ data-url-fr="/fr/agricultural-news/{{ country.slug }}/"
+ data-url-ar="/ar/agricultural-news/{{ country.slug }}/"
+ data-url-pt="/pt/agricultural-news/{{ country.slug }}/"
+ data-url-sw="/sw/agricultural-news/{{ country.slug }}/"></div>
+{% include "partials/language-selectors/static.njk" %}
+<section class="section" style="padding-top:48px;">
+<div class="container">
+<p><a href="/ar/agricultural-news/">← جميع الأخبار الزراعية</a></p>
+<h1>{{ country.flag }} الأخبار الزراعية — {{ country.name }}</h1>
+<p class="lede">آخر التطورات الزراعية الموثقة لهذا البلد.</p>
+{% if country.articles and country.articles.length %}
+{% for article in country.articles %}
+<article class="card" style="margin:16px 0;">
+<h2>{{ article.title }}</h2><p>{{ article.summary }}</p>
+<p><small>المصدر: {{ article.source }} · تم التحقق: {{ article.verified }}</small></p>
+<a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">قراءة المصدر الأصلي ←</a>
+</article>
+{% endfor %}
+{% else %}
+<div class="card"><h2>جارٍ التحقق من الأخبار</h2><p>لم تُنشر بعد أخبار حالية موثقة لهذا البلد.</p><p>لن تتم إضافة الأخبار إلا بعد التحقق من مصدر رسمي أو موثوق.</p></div>
+{% endif %}
+</div></section>
