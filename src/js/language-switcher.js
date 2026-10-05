@@ -111,6 +111,10 @@
     if (rest === "blog") return code === "en" ? "/blog/" : "/" + code + "/blog/";
     if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
     if (rest === "agricultural-news") return code === "en" ? "/agricultural-news/" : "/" + code + "/agricultural-news/";
+    if (rest === "agriculture-resources") return code === "en" ? "/agriculture-resources/" : "/" + code + "/agriculture-resources/";
+    if (rest === "agricultural-finance") return code === "en" ? "/agricultural-finance/" : "/" + code + "/agricultural-finance/";
+    if (rest === "agricultural-grants") return code === "en" ? "/agricultural-grants/" : "/" + code + "/agricultural-grants/";
+    if (rest === "farm-machinery") return code === "en" ? "/farm-machinery/" : "/" + code + "/farm-machinery/";
 
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact)$/.test(rest)) return code === "en" ? "/" + rest + "/" : "/" + code + "/" + rest + "/";
@@ -209,13 +213,18 @@
       selector.addEventListener("change", function () {
         var requested = this.value;
         var section = selector.getAttribute("data-goa-selector-section");
-        var targetUrl = document.getElementById("goa-language-targets")
-          ? localizedContentUrl(requested)
-          : (section
-            ? (requested === "en"
-              ? "/" + (section === "home" ? "" : section + "/")
-              : "/" + requested + "/" + (section === "home" ? "" : section + "/"))
-            : localizedContentUrl(requested));
+        // Always prefer the page's exact localized destination. This handles
+        // Blog/eBook detail pages, Agricultural News country pages, and all
+        // localized section indexes before falling back to generic sections.
+        var targetUrl = localizedContentUrl(requested);
+        if (!targetUrl && section) {
+          var sectionPath = section === "calculator"
+            ? "farm-profit-calculator"
+            : (section === "resources" ? "agriculture-resources" : section);
+          targetUrl = requested === "en"
+            ? "/" + (section === "home" ? "" : sectionPath + "/")
+            : "/" + requested + "/" + (section === "home" ? "" : sectionPath + "/");
+        }
         setLanguage(requested);
         // Shared pages intentionally keep the same URL. Do not reload them,
         // because a reload restores the server's default <html lang="en">.
