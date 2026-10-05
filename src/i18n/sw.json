@@ -7,7 +7,7 @@
     "about": "Kuhusu",
     "contact": "Wasiliana",
     "resources": "Rasilimali",
-    "agriculturalNews": "Habari za kilimo",,
+    "agriculturalNews": "Habari za kilimo",
     "privacy": "Sera ya faragha",
     "quickLinks": "Viungo vya haraka",
     "getInTouch": "Wasiliana nasi",
@@ -24,7 +24,8 @@
     "footerDescription": "GoOrganicAfrica inaunganisha uzoefu halisi wa shambani, utafiti endelevu wa kilimo na zana rahisi kwa wakulima.",
     "copyright": "© {year} GoOrganicAfrica. Haki zote zimehifadhiwa.",
     "organicGuides": "Miongozo ya kilimo hai kwa Nigeria, Afrika na zaidi.",
-    "dataSources": "Vyanzo vya data na masasisho"
+    "dataSources": "Vyanzo vya data na masasisho",
+    "organicFarming": "Kilimo hai"
   },
   "calc": {
     "step": "Hatua ya {current} kati ya {total}",
@@ -406,5 +407,28 @@
       "latest": "Kipindi cha hivi karibuni cha rejea cha kikokotoo kilichogunduliwa:",
       "verify": "Thibitisha bei kila wakati kwa wanunuzi, wauzaji na hali ya sasa ya soko kabla ya kuwekeza."
     }
+  },
+  "organic": {
+    "eyebrow": "Kilimo hai",
+    "title": "Kilimo hai cha vitendo kwa Afrika",
+    "intro": "GoOrganicAfrica inakuza kilimo hai cha vitendo na kinachowajibika barani Afrika kwa kuunganisha uzoefu halisi wa shambani, pembejeo za kibayolojia, afya ya udongo, utunzaji wa mifugo na elimu ya wakulima.",
+    "missionTitle": "Kutoka shambani hadi kwa wakulima wa Afrika",
+    "missionBody": "Sehemu hii inaeleza mbinu ya GoOrganicAfrica ya kilimo hai na kutambulisha bidhaa zinazotengenezwa au kutumiwa katika kazi hiyo.",
+    "inoculumTitle": "InoculumPlus",
+    "inoculumBody": "Mbolea ya kibayolojia yenye msingi wa fangasi wa mycorrhiza inayolenga kusaidia uhusiano wenye manufaa kati ya mizizi ya mimea na fangasi wa udongo. Taarifa za bidhaa, matumizi na uzoefu wa shambani vinaweza kuongezwa hapa.",
+    "organicGrowTitle": "OrganicGrow",
+    "organicGrowBody": "Suluhisho la kilimo hai linalowasilishwa kwa kuku, samaki na mifugo mingine. Wakulima wanaweza kujifunza matumizi yake, namna ya kutumia na uzoefu wa vitendo.",
+    "nutrientsTitle": "Calcium, Phosphorus, Potassium na Sulfur hai",
+    "nutrientsBody": "Suluhisho za virutubisho hai kwa uzalishaji wa mazao na usimamizi wa rutuba ya udongo. Kila bidhaa inaweza kuwa na mwongozo wake, vipimo na maonyesho.",
+    "videoEyebrow": "Elimu kwa video",
+    "youtubeTitle": "Tazama kilimo hai kwa vitendo",
+    "youtubeBody": "Tutaweka hapa video za vitendo za kilimo hai ili wakulima waone mbinu, bidhaa na mawazo yakitumika badala ya kusoma tu kuzihusu.",
+    "watchButton": "Tazama video kwenye YouTube →",
+    "channelButton": "Tembelea kituo chetu cha YouTube →",
+    "guidesTitle": "Endelea kujifunza",
+    "guidesBody": "Chunguza miongozo na blogu yetu kwa taarifa za vitendo kuhusu afya ya udongo, pembejeo za kibayolojia, mifugo, mazao, masoko na usimamizi wa shamba wenye faida.",
+    "guidesButton": "Tazama miongozo ya kilimo",
+    "blogButton": "Soma blogu",
+    "contactButton": "Wasiliana nasi"
   }
 }
