@@ -209,11 +209,13 @@
       selector.addEventListener("change", function () {
         var requested = this.value;
         var section = selector.getAttribute("data-goa-selector-section");
-        var targetUrl = section
-          ? (requested === "en"
-            ? "/" + (section === "home" ? "" : section + "/")
-            : "/" + requested + "/" + (section === "home" ? "" : section + "/"))
-          : localizedContentUrl(requested);
+        var targetUrl = document.getElementById("goa-language-targets")
+          ? localizedContentUrl(requested)
+          : (section
+            ? (requested === "en"
+              ? "/" + (section === "home" ? "" : section + "/")
+              : "/" + requested + "/" + (section === "home" ? "" : section + "/"))
+            : localizedContentUrl(requested));
         setLanguage(requested);
         // Shared pages intentionally keep the same URL. Do not reload them,
         // because a reload restores the server's default <html lang="en">.
