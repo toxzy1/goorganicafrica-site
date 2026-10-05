@@ -1,0 +1,44 @@
+name: Agricultural Opportunities Update — Review Queue
+
+on:
+  schedule:
+    - cron: "41 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-opportunities:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Discover current opportunity candidates
+        run: node scripts/sync-agricultural-opportunities.js
+
+      - name: Create review PR when candidates are found
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update agricultural opportunity candidates"
+          title: "💰 Agricultural opportunities — review required"
+          body: |
+            Automated candidate discovery from configured authoritative sources.
+
+            Review before merging:
+            - verify the original source
+            - confirm eligibility
+            - confirm deadline/application period
+            - confirm country assignment
+            - confirm that the opportunity is still open
+            - complete amount/contact/application details where available
+
+            Nothing is published to the main site until this PR is reviewed and merged.
+          branch: automation/agricultural-opportunities
+          delete-branch: false
+          labels: |
+            agricultural-opportunities
+            needs-review
