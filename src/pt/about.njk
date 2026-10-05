@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Sobre a GoOrganicAfrica — Agricultura em África
+description: A GoOrganicAfrica partilha conhecimento prático e ferramentas agrícolas para África.
+permalink: "/pt/about/"
+language: pt
+pageLanguage: pt
+pageSection: about
+---
+{% include "partials/language-selectors/static.njk" %}
+
+<section class="section" style="padding-top: 48px;">
+  <div class="container" style="max-width: 760px;">
+    <span class="eyebrow" data-i18n="static.about.eyebrow">About Us</span>
+    <h1 data-i18n="static.about.title">Practical Farming Knowledge, Rooted in Real Research</h1>
+    <p class="lede" data-i18n="static.about.intro">GoOrganicAfrica is built around one simple idea: farming knowledge should be practical, tested, and shared freely across Africa.</p>
+    <h2 data-i18n="static.about.who">Who We Are</h2>
+    <p data-i18n="static.about.whoText" data-i18n-vars='{"author":"{{ site.author }}"}'>GoOrganicAfrica's guides and tools are built by {{ site.author }}.</p>
+    <h2 data-i18n="static.about.what">What We Do</h2>
+    <p data-i18n="static.about.whatText">Beyond research and writing, the work behind GoOrganicAfrica spans several organic agricultural products:</p>
+    <ul><li data-i18n="static.about.inoc">InoculumPlus — a Mycorrhiza-based organic bio-fertilizer.</li><li data-i18n="static.about.organic">OrganicGrow — an organic solution for poultry, fish and other livestock.</li></ul>
+    <h2 data-i18n="static.about.tools">Our Tools and Guides</h2>
+    <p data-i18n="static.about.toolsIntro">We provide two core resources for African farmers:</p>
+    <ul>
+      <li><strong><a href="/farm-profit-calculator/" data-localized-section="calculator" data-i18n="static.about.calculator">Free Farm Profit Calculator</a></strong><span data-i18n="static.about.calculatorText" data-i18n-vars='{"countries":"{{ site.calculator.countryCount }}","enterprises":"{{ site.calculator.enterpriseCount }}"}'> — calculate your costs.</span></li>
+      <li><strong><a href="/ebooks/" data-localized-section="ebooks" data-i18n="static.about.guides">Organic Farming Guides</a></strong><span data-i18n="static.about.guidesText"> — practical step-by-step guides.</span></li>
+    </ul>
+    <h2 data-i18n="static.about.mission">Our Mission</h2><p data-i18n="static.about.missionText">To help make farming more profitable and sustainable.</p>
+    <h2 data-i18n="static.about.external">External Resources We Trust</h2>
+    <p data-i18n="static.about.externalText">For farmers seeking additional agricultural data and research, we recommend:</p>
+    <ul><li><a href="https://www.fao.org/home/en" rel="noopener noreferrer" target="_blank" data-i18n="static.about.fao">FAO — global agricultural statistics and research</a></li><li><a href="https://www.iita.org" rel="noopener noreferrer" target="_blank" data-i18n="static.about.iita">IITA — Africa-focused crop and farming research</a></li></ul>
+    <div style="margin-top: 32px; display:flex; gap:14px; flex-wrap:wrap;">
+      <a class="btn btn-primary" href="/farm-profit-calculator/" data-localized-section="calculator" data-i18n="static.about.calcBtn">Try the Free Calculator</a>
+      <a class="btn btn-outline" href="/ebooks/" data-localized-section="ebooks" data-i18n="static.about.guidesBtn">Browse Farming Guides</a>
+      <a class="btn btn-outline" href="/contact/" data-localized-section="contact" data-i18n="static.about.contactBtn">Contact Us</a>
+    </div>
+  </div>
+</section>
