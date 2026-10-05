@@ -7,7 +7,7 @@
     "about": "About",
     "contact": "Contact",
     "resources": "Resources",
-    "agriculturalNews": "Agricultural News",,
+    "agriculturalNews": "Agricultural News",
     "privacy": "Privacy Policy",
     "quickLinks": "Quick Links",
     "getInTouch": "Get in touch",
@@ -24,7 +24,8 @@
     "footerDescription": "GoOrganicAfrica combines real farm experience with continuous agricultural research and practical tools for farmers.",
     "copyright": "© {year} GoOrganicAfrica. All rights reserved.",
     "organicGuides": "Organic farming guides for Nigeria, Africa & beyond.",
-    "dataSources": "Data Sources & Updates"
+    "dataSources": "Data Sources & Updates",
+    "organicFarming": "Organic Farming"
   },
   "calc": {
     "step": "Step {current} of {total}",
@@ -406,5 +407,28 @@
       "latest": "Latest calculator reference period detected:",
       "verify": "Always verify prices with local buyers, suppliers and current market conditions before investing."
     }
+  },
+  "organic": {
+    "eyebrow": "Organic Farming",
+    "title": "Practical Organic Farming for Africa",
+    "intro": "GoOrganicAfrica promotes practical, responsible organic farming across Africa — combining real farm experience, biological inputs, soil health, livestock care and farmer education.",
+    "missionTitle": "From the farm to African farmers",
+    "missionBody": "This section is where we document the organic farming approach behind GoOrganicAfrica and introduce products developed or used through that work.",
+    "inoculumTitle": "InoculumPlus",
+    "inoculumBody": "A mycorrhiza-fungi-based biofertilizer for supporting beneficial relationships between plant roots and soil fungi. Product information, application guidance and field experience can be added here.",
+    "organicGrowTitle": "OrganicGrow",
+    "organicGrowBody": "An organic farming solution presented for poultry, fish and other livestock. Farmers can learn about its intended uses, application guidance and practical experience.",
+    "nutrientsTitle": "Organic Calcium, Phosphorus, Potassium & Sulfur",
+    "nutrientsBody": "Organic nutrient solutions for crop production and soil fertility management. Each product can have its own detailed guide, dosage information and demonstration.",
+    "videoEyebrow": "Video education",
+    "youtubeTitle": "Watch Organic Farming in Practice",
+    "youtubeBody": "We will feature practical organic-farming videos here so farmers can see the methods, products and ideas being demonstrated rather than only reading about them.",
+    "watchButton": "Watch the video on YouTube →",
+    "channelButton": "Visit our YouTube channel →",
+    "guidesTitle": "Keep learning",
+    "guidesBody": "Explore our farming guides and blog for practical information on soil health, biological inputs, livestock, crops, markets and profitable farm management.",
+    "guidesButton": "Browse Farming Guides",
+    "blogButton": "Read the Blog",
+    "contactButton": "Contact Us"
   }
 }
