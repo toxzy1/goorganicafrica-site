@@ -8,15 +8,6 @@ permalink: "/agricultural-grants/"
   <div class="container" style="max-width:900px;">
     <span class="eyebrow"><span data-i18n="static.resources.eyebrow">Farmer Resources</span></span>
     <h1>Grants & Opportunities</h1>
-    <p class="lede"><span data-i18n="static.resources.grantsIntro">Grants, subsidies, competitions, youth and women programmes, training and other agricultural opportunities.</span></p>
-    <div class="resource-language" style="margin-top:24px;">
-  <label for="resource-language-select" class="visually-hidden">Language</label>
-  <select id="site-language-select" class="site-language-select" aria-label="Language" data-goa-selector-section="agricultural-grants">
-    {% for lang in siteLanguages.languages %}
-    {% if lang.enabled != false %}<option value="{{ lang.code }}"{% if (language or "en") == lang.code %} selected{% endif %}>{{ lang.native }}</option>{% endif %}
-    {% endfor %}
-  </select>
-</div>
-    <p><span data-i18n="static.resources.grantsText">GoOrganicAfrica is building a verified directory of agricultural opportunities. Listings will be published with official source links and verification dates where available.</span></p>
+    <p class="lede"><span data-i18n="static.resources.grantsIntro">Grants, subsidies, competitions, youth and women programmes, training and other agricultural opportunities.</span></p><p><span data-i18n="static.resources.grantsText">GoOrganicAfrica is building a verified directory of agricultural opportunities. Listings will be published with official source links and verification dates where available.</span></p>
   </div>
 </section>
