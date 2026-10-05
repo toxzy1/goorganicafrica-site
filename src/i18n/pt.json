@@ -7,7 +7,7 @@
     "about": "Sobre",
     "contact": "Contacto",
     "resources": "Recursos",
-    "agriculturalNews": "Notícias agrícolas",,
+    "agriculturalNews": "Notícias agrícolas",
     "privacy": "Política de privacidade",
     "quickLinks": "Links rápidos",
     "getInTouch": "Entre em contacto",
@@ -24,7 +24,8 @@
     "footerDescription": "A GoOrganicAfrica combina experiência real de campo, investigação agrícola contínua e ferramentas práticas para agricultores.",
     "copyright": "© {year} GoOrganicAfrica. Todos os direitos reservados.",
     "organicGuides": "Guias de agricultura biológica para a Nigéria, África e além.",
-    "dataSources": "Fontes de dados e atualizações"
+    "dataSources": "Fontes de dados e atualizações",
+    "organicFarming": "Agricultura biológica"
   },
   "calc": {
     "step": "Etapa {current} de {total}",
@@ -406,5 +407,28 @@
       "latest": "Último período de referência do calculador detetado:",
       "verify": "Confirme sempre os preços com compradores, fornecedores e condições atuais do mercado antes de investir."
     }
+  },
+  "organic": {
+    "eyebrow": "Agricultura biológica",
+    "title": "Agricultura biológica prática para África",
+    "intro": "A GoOrganicAfrica promove uma agricultura biológica prática e responsável em África, combinando experiência real de campo, insumos biológicos, saúde do solo, cuidados com animais e educação dos agricultores.",
+    "missionTitle": "Da exploração agrícola para os agricultores africanos",
+    "missionBody": "Esta secção apresenta a abordagem de agricultura biológica da GoOrganicAfrica e os produtos desenvolvidos ou utilizados nesse trabalho.",
+    "inoculumTitle": "InoculumPlus",
+    "inoculumBody": "Um biofertilizante à base de fungos micorrízicos para apoiar relações benéficas entre as raízes das plantas e os fungos do solo. As informações do produto, orientações de aplicação e experiência de campo podem ser acrescentadas aqui.",
+    "organicGrowTitle": "OrganicGrow",
+    "organicGrowBody": "Uma solução de agricultura biológica apresentada para aves, peixes e outros animais de criação. Os agricultores poderão conhecer os usos previstos, a aplicação e a experiência prática.",
+    "nutrientsTitle": "Cálcio, fósforo, potássio e enxofre orgânicos",
+    "nutrientsBody": "Soluções nutritivas orgânicas para a produção agrícola e gestão da fertilidade do solo. Cada produto poderá ter o seu próprio guia detalhado, doses e demonstração.",
+    "videoEyebrow": "Educação em vídeo",
+    "youtubeTitle": "Veja a agricultura biológica na prática",
+    "youtubeBody": "Apresentaremos aqui vídeos práticos para que os agricultores possam ver os métodos, produtos e ideias em demonstração, em vez de apenas ler sobre eles.",
+    "watchButton": "Ver o vídeo no YouTube →",
+    "channelButton": "Visitar o nosso canal do YouTube →",
+    "guidesTitle": "Continue a aprender",
+    "guidesBody": "Explore os nossos guias e blog para informações práticas sobre saúde do solo, insumos biológicos, pecuária, culturas, mercados e gestão rentável da exploração.",
+    "guidesButton": "Ver guias agrícolas",
+    "blogButton": "Ler o blog",
+    "contactButton": "Contacte-nos"
   }
 }
