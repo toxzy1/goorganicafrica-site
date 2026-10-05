@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-04",
+  "last_updated": "2026-10-05",
   "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
   "categories": [
     "finance",
@@ -15,10 +15,42 @@
       "slug": "nigeria",
       "flag": "🇳🇬",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "NADF Onlending Programme",
+            "description": "National Agricultural Development Fund financing programme that channels concessionary funds through approved participating financial institutions to eligible farmers, cooperatives and agribusinesses across the agricultural value chain.",
+            "url": "https://nadf.gov.ng/faq/",
+            "source": "National Agricultural Development Fund (NADF), Nigeria",
+            "verified": "2026-10-05",
+            "status": "official",
+            "type": "Agricultural finance / onlending",
+            "amount": "",
+            "eligibility": "Smallholder farmers, cooperatives, micro, small, medium and large agribusinesses, processors, input suppliers, storage/logistics businesses and mechanisation service providers, subject to participating financial institution credit requirements.",
+            "beneficiary": "Farmers and agricultural value-chain businesses",
+            "deadline": "Ongoing programme; confirm current intake with an approved participating financial institution.",
+            "application_url": "https://nadf.gov.ng/faq/",
+            "contact": "NADF / approved participating financial institutions"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
+          {
+            "title": "IITA Nigeria — agricultural research and innovation",
+            "description": "Authoritative Nigeria agriculture information from IITA covering crops, seed systems, digital agriculture, climate-smart agriculture, projects and farmer-focused innovations.",
+            "url": "https://iita.org/nigeria/",
+            "source": "International Institute of Tropical Agriculture (IITA)",
+            "verified": "2026-10-05",
+            "status": "official"
+          },
+          {
+            "title": "Federal Ministry of Agriculture and Food Security",
+            "description": "Official Nigerian agriculture ministry portal covering current programmes, policies, farmer support initiatives, publications and agricultural-sector announcements.",
+            "url": "https://agriculture.gov.ng/",
+            "source": "Federal Ministry of Agriculture and Food Security (FMAFS), Nigeria",
+            "verified": "2026-10-05",
+            "status": "official"
+          },
           {
             "title": "FAO Nigeria country agriculture profile",
             "description": "Official FAO country information covering agriculture, food systems, programmes, data and related agricultural development resources for Nigeria.",
@@ -94,7 +126,23 @@
       "flag": "🇰🇪",
       "records": {
         "finance": [],
-        "grants": [],
+        "grants": [
+          {
+            "title": "GEF-7 FOLUR Mt. Elgon Direct Beneficiary Grants",
+            "description": "FAO call for direct beneficiary grants supporting nature-based livelihood enterprises in coffee and maize value chains and related Ogiek livelihoods in Western Kenya.",
+            "url": "https://www.fao.org/kenya/news/newsdetails/nature-positive-food-systems-for-the-mt.-elgon-landscape--gef-7-folur-direct-beneficiary-grants-open-for-coffee--maize-and-ogiek-livelihoods/en",
+            "source": "FAO Kenya / GEF-7 FOLUR / Government of Kenya",
+            "verified": "2026-10-05",
+            "status": "official",
+            "type": "Grant",
+            "amount": "",
+            "eligibility": "Legally registered Kenyan smallholder forest and farm producer organizations, farmer cooperatives, community-based organizations and other eligible member-based organizations in the specified Mt. Elgon area.",
+            "beneficiary": "Eligible producer organizations, cooperatives and community organizations",
+            "deadline": "Applications open 1 October 2026 to 9 November 2026.",
+            "application_url": "https://tally.so/r/q4yWK2",
+            "contact": "FAO Kenya — official call page"
+          }
+        ],
         "machinery": [],
         "general": [
           {
