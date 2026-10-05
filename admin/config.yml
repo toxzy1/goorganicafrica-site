@@ -340,7 +340,6 @@ collections:
                       - {label: "Description", name: "description", widget: "text"}
                       - {label: "Official Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
-                      - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Type", name: "type", widget: "string", required: false}
                       - {label: "Amount / Value", name: "amount", widget: "string", required: false}
                       - {label: "Eligibility", name: "eligibility", widget: "text", required: false}
@@ -359,6 +358,13 @@ collections:
                       - {label: "Description", name: "description", widget: "text"}
                       - {label: "Official Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Type", name: "type", widget: "string", required: false}
+                      - {label: "Amount / Value", name: "amount", widget: "string", required: false}
+                      - {label: "Eligibility", name: "eligibility", widget: "text", required: false}
+                      - {label: "Beneficiary", name: "beneficiary", widget: "string", required: false}
+                      - {label: "Deadline / Application Period", name: "deadline", widget: "string", required: false}
+                      - {label: "Application URL", name: "application_url", widget: "string", required: false}
+                      - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "Machinery & Equipment"
@@ -370,6 +376,11 @@ collections:
                       - {label: "Description", name: "description", widget: "text"}
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Equipment Type", name: "type", widget: "string", required: false}
+                      - {label: "Availability / Service Area", name: "availability", widget: "string", required: false}
+                      - {label: "Price / Financing", name: "amount", widget: "string", required: false}
+                      - {label: "Application / Purchase URL", name: "application_url", widget: "string", required: false}
+                      - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "General Agricultural Resources"
