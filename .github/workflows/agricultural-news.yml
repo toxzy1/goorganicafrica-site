@@ -1,0 +1,31 @@
+name: Agricultural News Auto Update
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync official agricultural news
+        run: node scripts/sync-agricultural-news.js
+
+      - name: Commit updated news data
+        run: |
+          if git diff --quiet -- src/_data/agriculturalNews.json; then
+            echo "No new agricultural news."
+            exit 0
+          fi
+          git config user.name "GoOrganicAfrica News Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/_data/agriculturalNews.json
+          git commit -m "Auto-update agricultural news"
+          git push
