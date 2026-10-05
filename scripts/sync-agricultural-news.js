@@ -4,10 +4,22 @@ const path = require("path");
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalNews.json");
 const FEEDS = [
   {
-    name: "FAO News",
-    url: "https://www.fao.org/news/rss-feed/en/",
+    name: "FAO News discovery",
+    url: "https://news.google.com/rss/search?q=site%3Afao.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
     source: "FAO",
     allowedHost: "fao.org"
+  },
+  {
+    name: "FAO Emergencies discovery",
+    url: "https://news.google.com/rss/search?q=site%3Afao.org%20emergencies%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "FAO Emergencies and Resilience",
+    allowedHost: "fao.org"
+  },
+  {
+    name: "Ghana MoFA discovery",
+    url: "https://news.google.com/rss/search?q=site%3Amofa.gov.gh%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "Ghana Ministry of Food and Agriculture (MoFA)",
+    allowedHost: "mofa.gov.gh"
   }
 ];
 
@@ -96,9 +108,13 @@ async function main() {
     for (const item of items) {
       const title = field(item, "title");
       const summary = field(item, "description");
-      const url = normalizeUrl(field(item, "link"));
+      let url = normalizeUrl(field(item, "link"));
+      const sourceLink = normalizeUrl(field(item, "source"));
+      if (url.includes("news.google.com") && sourceLink) url = sourceLink;
       const published = isoDate(field(item, "pubDate") || field(item, "dc:date"));
       if (!title || !url || !published || !url.includes(feed.allowedHost)) continue;
+      const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
+      if (ageDays > 14) continue;
 
       const country = findCountry(title, summary, data.countries);
       if (!country || existing.has(url) || existing.has(title)) continue;
