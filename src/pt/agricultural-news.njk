@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Notícias agrícolas de África
+description: Notícias agrícolas, mercados, políticas e desenvolvimentos recentes nos 54 países africanos.
+permalink: "/pt/agricultural-news/"
+language: pt
+pageLanguage: pt
+pageSection: agricultural-news
+---
+{% include "partials/language-selectors/static.njk" %}
+<section class="section" style="padding-top:48px;">
+<div class="container">
+<h1>Notícias agrícolas atuais</h1>
+<p class="lede">Acompanhe os desenvolvimentos agrícolas atuais nos 54 países africanos. As notícias serão publicadas somente após verificação em fontes oficiais ou confiáveis.</p>
+<p><strong>54 diretórios agrícolas nacionais</strong></p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+{% for country in agriculturalNews.countries %}
+<a class="card" href="/pt/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
+<h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.name }}</h2>
+<p>Ver as notícias agrícolas deste país →</p>
+</a>
+{% endfor %}
+</div>
+</div>
+</section>
