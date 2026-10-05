@@ -7,7 +7,7 @@
     "about": "À propos",
     "contact": "Contact",
     "resources": "Ressources",
-    "agriculturalNews": "Actualités agricoles",,
+    "agriculturalNews": "Actualités agricoles",
     "privacy": "Politique de confidentialité",
     "quickLinks": "Liens rapides",
     "getInTouch": "Nous contacter",
@@ -24,7 +24,8 @@
     "footerDescription": "GoOrganicAfrica associe l’expérience réelle de la ferme à une recherche agricole continue et à des outils pratiques pour les agriculteurs.",
     "copyright": "© {year} GoOrganicAfrica. Tous droits réservés.",
     "organicGuides": "Guides d’agriculture biologique pour le Nigeria, l’Afrique et au-delà.",
-    "dataSources": "Sources des données et mises à jour"
+    "dataSources": "Sources des données et mises à jour",
+    "organicFarming": "Agriculture biologique"
   },
   "calc": {
     "step": "Étape {current} sur {total}",
@@ -406,5 +407,28 @@
       "latest": "Dernière période de référence détectée pour le calculateur :",
       "verify": "Vérifiez toujours les prix auprès des acheteurs, fournisseurs et conditions actuelles du marché avant d'investir."
     }
+  },
+  "organic": {
+    "eyebrow": "Agriculture biologique",
+    "title": "Une agriculture biologique pratique pour l’Afrique",
+    "intro": "GoOrganicAfrica promeut une agriculture biologique pratique et responsable en Afrique, en combinant expérience de terrain, intrants biologiques, santé des sols, élevage et formation des agriculteurs.",
+    "missionTitle": "De la ferme aux agriculteurs africains",
+    "missionBody": "Cette section présente l’approche d’agriculture biologique de GoOrganicAfrica et les produits développés ou utilisés dans ce travail.",
+    "inoculumTitle": "InoculumPlus",
+    "inoculumBody": "Un biofertilisant à base de champignons mycorhiziens destiné à favoriser les relations bénéfiques entre les racines des plantes et les champignons du sol. Les informations produit, les conseils d’application et l’expérience de terrain pourront être ajoutés ici.",
+    "organicGrowTitle": "OrganicGrow",
+    "organicGrowBody": "Une solution d’agriculture biologique présentée pour la volaille, les poissons et les autres animaux d’élevage. Les agriculteurs pourront découvrir ses usages, son mode d’application et l’expérience pratique.",
+    "nutrientsTitle": "Calcium, phosphore, potassium et soufre biologiques",
+    "nutrientsBody": "Des solutions nutritives biologiques pour la production végétale et la gestion de la fertilité des sols. Chaque produit pourra avoir son propre guide détaillé, ses doses et sa démonstration.",
+    "videoEyebrow": "Formation vidéo",
+    "youtubeTitle": "Voir l’agriculture biologique en pratique",
+    "youtubeBody": "Nous présenterons ici des vidéos pratiques afin que les agriculteurs puissent voir les méthodes, les produits et les idées en démonstration plutôt que de seulement les lire.",
+    "watchButton": "Voir la vidéo sur YouTube →",
+    "channelButton": "Visiter notre chaîne YouTube →",
+    "guidesTitle": "Continuez à apprendre",
+    "guidesBody": "Découvrez nos guides et notre blog pour des informations pratiques sur la santé des sols, les intrants biologiques, l’élevage, les cultures, les marchés et la gestion rentable des exploitations.",
+    "guidesButton": "Voir les guides agricoles",
+    "blogButton": "Lire le blog",
+    "contactButton": "Nous contacter"
   }
 }
