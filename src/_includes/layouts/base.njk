@@ -15,19 +15,22 @@
   {% set isHomeIndex = page.url == "/" or page.url == "/fr/" or page.url == "/ar/" or page.url == "/pt/" or page.url == "/sw/" %}
   {% set isAboutPage = page.url == "/about/" or page.url == "/fr/about/" or page.url == "/ar/about/" or page.url == "/pt/about/" or page.url == "/sw/about/" %}
   {% set isContactPage = page.url == "/contact/" or page.url == "/fr/contact/" or page.url == "/ar/contact/" or page.url == "/pt/contact/" or page.url == "/sw/contact/" %}
+  {% set isOrganicPage = page.url == "/organic-farming/" or page.url == "/fr/organic-farming/" or page.url == "/ar/organic-farming/" or page.url == "/pt/organic-farming/" or page.url == "/sw/organic-farming/" %}
   {% set resourceRoutes = ["/agriculture-resources/","/agricultural-finance/","/agricultural-grants/","/farm-machinery/"] %}
   {% set isResourcePage = page.url in resourceRoutes %}
   {% set isLocalizedResourcePage = false %}
   {% for rr in resourceRoutes %}
     {% if page.url == "/fr" + rr or page.url == "/ar" + rr or page.url == "/pt" + rr or page.url == "/sw" + rr %}{% set isLocalizedResourcePage = true %}{% endif %}
   {% endfor %}
-  {% if isHomeIndex or isBlogIndex or isEbookIndex or isResourcePage or isLocalizedResourcePage or isAboutPage or isContactPage %}
+  {% if isHomeIndex or isBlogIndex or isEbookIndex or isResourcePage or isLocalizedResourcePage or isAboutPage or isContactPage or isOrganicPage %}
   {% for lang in siteLanguages.languages %}
     {% if lang.enabled != false %}
       {% if isAboutPage %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}about/">
       {% elif isContactPage %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}contact/">
+      {% elif isOrganicPage %}
+  <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}organic-farming/">
       {% elif isResourcePage or isLocalizedResourcePage %}
   {% set resourceSlug = page.url | replace("/fr/","/") | replace("/ar/","/") | replace("/pt/","/") | replace("/sw/","/") %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}{% endif %}{{ resourceSlug }}">
