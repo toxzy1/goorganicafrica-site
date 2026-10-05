@@ -340,6 +340,14 @@ collections:
                       - {label: "Description", name: "description", widget: "text"}
                       - {label: "Official Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Type", name: "type", widget: "string", required: false}
+                      - {label: "Amount / Value", name: "amount", widget: "string", required: false}
+                      - {label: "Eligibility", name: "eligibility", widget: "text", required: false}
+                      - {label: "Beneficiary", name: "beneficiary", widget: "string", required: false}
+                      - {label: "Deadline / Application Period", name: "deadline", widget: "string", required: false}
+                      - {label: "Application URL", name: "application_url", widget: "string", required: false}
+                      - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "Grants & Opportunities"
@@ -375,6 +383,66 @@ collections:
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Verified Date", name: "verified", widget: "string"}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "official"}
+  - name: "content_sources"
+    label: "🔎 Content Discovery Sources"
+    files:
+      - label: "Authoritative Source Registry"
+        name: "registry"
+        file: "config/content-source-registry.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Source Groups"
+            name: "source_groups"
+            widget: "list"
+            fields:
+              - {label: "Source Group ID", name: "id", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Areas", name: "areas", widget: "list"}
+              - {label: "Publication Policy", name: "publish_policy", widget: "select", options: ["review_required", "approved_auto_publish"]}
+              - label: "Sources"
+                name: "sources"
+                widget: "list"
+                fields:
+                  - {label: "Source Name", name: "name", widget: "string"}
+                  - {label: "Source URL", name: "url", widget: "string", required: false}
+                  - {label: "Priority", name: "priority", widget: "number", value_type: "int", default: 50}
+  - name: "content_update_policy"
+    label: "🛡️ Content Update & Verification Policy"
+    files:
+      - label: "Discovery, Review & Expiry Rules"
+        name: "policy"
+        file: "config/content-update-policy.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - label: "Discovery"
+            name: "discovery"
+            widget: "object"
+            fields:
+              - {label: "Automatic Discovery", name: "automatic", widget: "boolean", default: true}
+              - {label: "Frequency", name: "frequency", widget: "string"}
+              - {label: "News Lookback (days)", name: "lookback_days_news", widget: "number", value_type: "int"}
+              - {label: "Opportunity Lookback (days)", name: "lookback_days_opportunities", widget: "number", value_type: "int"}
+          - label: "Publication"
+            name: "publication"
+            widget: "object"
+            fields:
+              - {label: "Default Status", name: "default_status", widget: "select", options: ["review", "draft", "published"]}
+              - {label: "Automatic Publication", name: "automatic_publication", widget: "boolean", default: false}
+              - {label: "Human Verification Required", name: "require_human_verification", widget: "boolean", default: true}
+              - {label: "Source URL Required", name: "require_source_url", widget: "boolean", default: true}
+              - {label: "Verification Date Required", name: "require_verification_date", widget: "boolean", default: true}
+          - label: "Expiry"
+            name: "expiry"
+            widget: "object"
+            fields:
+              - {label: "News Review After (days)", name: "news_review_after_days", widget: "number", value_type: "int"}
+              - {label: "Opportunity Recheck After (days)", name: "opportunity_recheck_after_days", widget: "number", value_type: "int"}
+              - {label: "Price Recheck After (days)", name: "price_recheck_after_days", widget: "number", value_type: "int"}
+              - {label: "Seed Price Recheck After (days)", name: "seed_price_recheck_after_days", widget: "number", value_type: "int"}
+          - {label: "Quality Rules", name: "quality_rules", widget: "list"}
   - name: "data_quality"
     label: "🛡️ Data Quality & Publishing Rules"
     files:
