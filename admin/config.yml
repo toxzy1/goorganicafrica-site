@@ -276,6 +276,105 @@ collections:
               - {label: "Requires Review", name: "requires_review", widget: "boolean", default: true}
               - {label: "Notes", name: "notes", widget: "text", required: false}
 
+  - name: "agricultural_news"
+    label: "📰 Agricultural News — 54 Countries"
+    files:
+      - label: "News Database & Verification"
+        name: "news"
+        file: "src/_data/agriculturalNews.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Last Updated", name: "last_updated", widget: "string"}
+          - {label: "Editorial Policy", name: "editorial_policy", widget: "text"}
+          - label: "Countries"
+            name: "countries"
+            widget: "list"
+            fields:
+              - {label: "Country Code", name: "code", widget: "string"}
+              - {label: "Country Name", name: "name", widget: "string"}
+              - {label: "URL Slug", name: "slug", widget: "string"}
+              - {label: "Flag", name: "flag", widget: "string", required: false}
+              - label: "Articles"
+                name: "articles"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "research-innovation", "grants-programmes"]}
+                  - {label: "Headline", name: "title", widget: "string"}
+                  - {label: "Summary", name: "summary", widget: "text"}
+                  - {label: "Original Source URL", name: "url", widget: "string"}
+                  - {label: "Source / Publisher", name: "source", widget: "string"}
+                  - {label: "Published Date", name: "published", widget: "string"}
+                  - {label: "Verified Date", name: "verified", widget: "string"}
+                  - {label: "Status", name: "status", widget: "select", options: ["official", "official-feed", "review", "expired", "archived"], default: "review"}
+  - name: "agricultural_resources"
+    label: "🌍 Agricultural Resources — 54 Countries"
+    files:
+      - label: "Finance, Grants, Machinery & General Resources"
+        name: "resources"
+        file: "src/_data/agriculturalResources.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Last Updated", name: "last_updated", widget: "string"}
+          - {label: "Verification Policy", name: "verification_policy", widget: "text"}
+          - label: "Countries"
+            name: "countries"
+            widget: "list"
+            fields:
+              - {label: "Country Code", name: "code", widget: "string"}
+              - {label: "Country Name", name: "name", widget: "string"}
+              - {label: "URL Slug", name: "slug", widget: "string"}
+              - {label: "Flag", name: "flag", widget: "string", required: false}
+              - label: "Resource Records"
+                name: "records"
+                widget: "object"
+                fields:
+                  - label: "Finance"
+                    name: "finance"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Description", name: "description", widget: "text"}
+                      - {label: "Official Source URL", name: "url", widget: "string"}
+                      - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
+                  - label: "Grants & Opportunities"
+                    name: "grants"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Description", name: "description", widget: "text"}
+                      - {label: "Official Source URL", name: "url", widget: "string"}
+                      - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
+                  - label: "Machinery & Equipment"
+                    name: "machinery"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Description", name: "description", widget: "text"}
+                      - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
+                      - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
+                  - label: "General Agricultural Resources"
+                    name: "general"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Description", name: "description", widget: "text"}
+                      - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
+                      - {label: "Provider", name: "source", widget: "string"}
+                      - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "official"}
   - name: "data_quality"
     label: "🛡️ Data Quality & Publishing Rules"
     files:
