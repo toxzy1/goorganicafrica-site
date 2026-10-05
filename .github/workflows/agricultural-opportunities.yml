@@ -39,6 +39,3 @@ jobs:
             Nothing is published to the main site until this PR is reviewed and merged.
           branch: automation/agricultural-opportunities
           delete-branch: false
-          labels: |
-            agricultural-opportunities
-            needs-review
