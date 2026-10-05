@@ -1,4 +1,8 @@
 <header class="site-header">
+  {% set isCalculatorPage = (page.url or "").endsWith("/farm-profit-calculator/") %}
+  {% if not isCalculatorPage %}
+  <div class="top-language-bar">{% include "partials/language-selectors/static.njk" %}</div>
+  {% endif %}
   <nav class="nav">
     <a class="brand" href="{% if (language or 'en') == 'en' %}/{% else %}/{{ language or 'en' }}/{% endif %}" data-localized-section="home">
       <img class="brand-mark" src="/images/brand-mark.svg" alt="" width="28" height="28">
@@ -17,7 +21,6 @@
       <li><a href="/agricultural-news/" data-localized-section="agricultural-news" data-i18n="common.agriculturalNews">Agricultural News</a></li>
       <li><a href="/about/" data-localized-section="about" data-i18n="common.about">About</a></li>
       <li><a href="/contact/" data-localized-section="contact" data-i18n="common.contact">Contact</a></li>
-      {% set isCalculatorPage = (page.url or "").endsWith("/farm-profit-calculator/") %}
       {% if isCalculatorPage %}
       <li class="site-language">
         <label for="site-language-select" class="visually-hidden" data-i18n="common.language">Language</label>
