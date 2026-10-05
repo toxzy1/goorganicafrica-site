@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: الأخبار الزراعية في أفريقيا
+description: آخر الأخبار والتطورات الزراعية والأسواق والسياسات في جميع الدول الأفريقية.
+permalink: "/ar/agricultural-news/"
+language: ar
+pageLanguage: ar
+pageSection: agricultural-news
+---
+{% include "partials/language-selectors/static.njk" %}
+<section class="section" style="padding-top:48px;">
+<div class="container">
+<h1>الأخبار الزراعية الحالية</h1>
+<p class="lede">تابع التطورات الزراعية الحالية في جميع الدول الأفريقية البالغ عددها 54 دولة. لن تُنشر الأخبار إلا بعد التحقق من مصادر رسمية أو موثوقة.</p>
+<p><strong>54 دليلاً زراعياً للدول الأفريقية</strong></p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+{% for country in agriculturalNews.countries %}
+<a class="card" href="/ar/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
+<h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.name }}</h2>
+<p>عرض الأخبار الزراعية لهذا البلد ←</p>
+</a>
+{% endfor %}
+</div>
+</div>
+</section>
