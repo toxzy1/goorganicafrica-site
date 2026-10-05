@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Contact GoOrganicAfrica
+description: A GoOrganicAfrica partilha conhecimento prático e ferramentas agrícolas para África.
+permalink: "/pt/contact/"
+language: pt
+pageLanguage: pt
+pageSection: contact
+---
+{% include "partials/language-selectors/static.njk" %}
+
+<section class="section" style="padding-top: 48px;">
+  <div class="container" style="max-width: 680px;">
+    <span class="eyebrow" data-i18n="static.contact.eyebrow">Contact</span>
+    <h1 data-i18n="static.contact.title">Get In Touch</h1>
+    <p class="lede" data-i18n="static.contact.intro">Have a question about a guide before you buy, need help using the calculator, or want free farming advice? Reach out directly.</p>
+    <h2 data-i18n="static.contact.details">Contact Details</h2>
+    <ul class="benefit-list"><li><span class="mark">&#9993;</span><span><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></li><li><span class="mark">&#9742;</span><span>{{ site.phone }}</span></li><li><span class="mark">&#128172;</span><span><a href="{{ site.whatsapp }}" rel="noopener noreferrer" target="_blank" data-i18n="static.contact.whatsapp">Chat on WhatsApp — free farming consultation</a></span></li></ul>
+    <h2 data-i18n="static.contact.help">What Can We Help You With?</h2>
+    <ul>
+      <li><a href="/ebooks/" data-localized-section="ebooks" data-i18n="static.contact.help1">Questions about any of our organic farming guides</a></li>
+      <li><a href="/farm-profit-calculator/" data-localized-section="calculator" data-i18n="static.contact.help2">Help using the Farm Profit Calculator</a></li>
+      <li data-i18n="static.contact.help3">Advice on hydroponic fodder, mushroom farming, BSF farming or cassava production</li>
+      <li data-i18n="static.contact.help4">Information about our organic fertilizer products</li>
+      <li data-i18n="static.contact.help5">Training and consultation for farmers across Nigeria and Africa</li>
+    </ul>
+    <h2 data-i18n="static.contact.consult">Free Consultation</h2><p data-i18n="static.contact.consultText">Every guide purchase includes a free WhatsApp consultation.</p>
+    <div style="margin-top: 28px;"><a class="btn btn-primary" href="{{ site.whatsapp }}" rel="noopener noreferrer" target="_blank" data-i18n="static.contact.message">Message Us on WhatsApp</a><a class="btn btn-outline" href="/about/" data-localized-section="about" data-i18n="static.contact.about">Learn More About Us</a></div>
+  </div>
+</section>
