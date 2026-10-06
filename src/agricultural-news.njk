@@ -6,11 +6,29 @@ permalink: "/agricultural-news/"
 language: en
 pageLanguage: en
 pageSection: agricultural-news
----<section class="section" style="padding-top:48px;">
+---
+<section class="section" style="padding-top:48px;">
 <div class="container">
 <h1>Agricultural Current News</h1>
 <p class="lede">Follow current agricultural developments across all 54 African countries. News will be published only after verification from official or authoritative sources.</p>
-<p><strong>54 African country news directories</strong></p>
+
+{% set latestShown = 0 %}
+{% for country in agriculturalNews.countries %}
+  {% if country.articles and country.articles.length and latestShown < 6 %}
+    {% set latestShown = latestShown + 1 %}
+    {% set article = country.articles[0] %}
+    <article class="card" style="margin:18px 0;">
+      <p style="margin:0 0 6px;"><strong>{{ country.flag }} {{ country.name }}</strong> · {{ article.category | replace("-", " ") }}</p>
+      <h2 style="font-size:1.25rem;margin:0 0 8px;">{{ article.title }}</h2>
+      <p>{{ article.summary }}</p>
+      <p style="font-size:.85rem;margin-bottom:0;">{{ article.source }} · Verified {{ article.verified }}</p>
+      <p style="margin-bottom:0;"><a href="{{ article.url }}" target="_blank" rel="noopener">Read original source →</a></p>
+    </article>
+  {% endif %}
+{% endfor %}
+
+<h2 style="margin-top:40px;">54 African Country News Directories</h2>
+<p>Select a country to see its verified agricultural news and developments.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
 {% for country in agriculturalNews.countries %}
 <a class="card" href="/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
