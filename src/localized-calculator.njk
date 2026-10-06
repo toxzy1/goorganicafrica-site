@@ -28,6 +28,6 @@ permalink: "/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-pro
   </div>
   <div class="calc-shell" id="calc-root"><p style="color:var(--ink-soft);padding:40px 0;text-align:center;" data-i18n="common.loading">Loading calculator&hellip;</p></div>
 </div>
-<script>window.__CALC_DATA__={commodities:{{ calculatorCommodities | dump | safe }},countries:{{ calculator.countries | dump | safe }},regions:{{ calculator.regions | dump | safe }},defaultCountry:"{{ locale.countryCode }}",defaultLanguage:"{{ locale.languageCode }}"};</script>
-<script src="/js/calculator-engine.js?v=20260931"></script><script src="/js/calculator-advice.js?v=20260931"></script><script src="/js/calculator-app.js?v=20260931"></script>
+<script>window.__CALC_DATA__={commodities:{{ calculatorCommodities | dump | safe }},countries:{{ calculator.countries | dump | safe }},regions:{{ calculator.regions | dump | safe }},fallback:{{ calculatorFallback | dump | safe }},defaultCountry:"{{ locale.countryCode }}",defaultLanguage:"{{ locale.languageCode }}"};</script>
+<script src="/js/calculator-engine.js?v=20261006"></script><script src="/js/calculator-advice.js?v=20261006"></script><script src="/js/calculator-app.js?v=20261006"></script>
 <script>if(window.FarmProfitCalculator){FarmProfitCalculator.init(document.getElementById("calc-root"),window.__CALC_DATA__);}</script>
