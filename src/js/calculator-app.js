@@ -30,13 +30,14 @@
     scenarioTab: "expected",
   };
 
-  var root, commodities, countries, regions, engine;
+  var root, commodities, countries, regions, engine, fallback;
 
   function init(rootEl, data) {
     root = rootEl;
     commodities = data.commodities;
     countries = data.countries;
     regions = data.regions;
+    fallback = data.fallback || {};
     engine = window.FarmCalcEngine;
 
     var savedCountry = null;
@@ -86,16 +87,72 @@
     return currentCountryObj().currency_symbol;
   }
 
+  function median(values) {
+    var a = values.filter(function (v) { return typeof v === "number" && isFinite(v); }).sort(function (x, y) { return x - y; });
+    if (!a.length) return null;
+    var m = Math.floor(a.length / 2);
+    return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2;
+  }
+
+  function benchmarkCommodityData(commodity, countryCode) {
+    var targetRate = Number(fallback.currency_per_usd && fallback.currency_per_usd[countryCode]);
+    if (!commodity || !commodity.country_data || !targetRate) return null;
+    var rows = Array.isArray(commodity.country_data) ? commodity.country_data : Object.keys(commodity.country_data).map(function (k) {
+      var v = commodity.country_data[k]; if (!v) return null; v = Object.assign({}, v); v.country_code = k; return v;
+    });
+    var verifiedCodes = countries.filter(function (c) { return c.active && !fallback.currency_per_usd[c.code]; }).map(function (c) { return c.code; });
+    var usable = rows.filter(function (r) { return verifiedCodes.indexOf(r.country_code) >= 0; });
+    if (!usable.length) return null;
+    var rates = {NG:1327.65,GH:11.75,KE:129,UG:3570,TZ:2639.43,ZA:16.64,ZM:19.77,RW:1477,CM:566.75,ET:158.22};
+    function moneyMedian(key) {
+      return median(usable.map(function (r) {
+        var rate = rates[r.country_code];
+        return rate && r[key] != null ? Number(r[key]) / rate : null;
+      })) * targetRate;
+    }
+    var out = {
+      cost_per_unit: moneyMedian("cost_per_unit"),
+      yield_low: median(usable.map(function(r){return r.yield_low;})),
+      yield_expected: median(usable.map(function(r){return r.yield_expected;})),
+      yield_high: median(usable.map(function(r){return r.yield_high;})),
+      yield_unit: usable.find(function(r){return r.yield_unit;})?.yield_unit,
+      price_low: moneyMedian("price_low"),
+      price_expected: moneyMedian("price_expected"),
+      price_high: moneyMedian("price_high"),
+      price_unit: usable.find(function(r){return r.price_unit;})?.price_unit,
+      output_low: median(usable.map(function(r){return r.output_low;})),
+      output_expected: median(usable.map(function(r){return r.output_expected;})),
+      output_high: median(usable.map(function(r){return r.output_high;})),
+      output_unit: usable.find(function(r){return r.output_unit;})?.output_unit,
+      survival_rate: median(usable.map(function(r){return r.survival_rate;})),
+      source: "Africa benchmark estimate — derived from current verified calculator-country reference data; not country-specific",
+      as_of: fallback.as_of,
+      data_quality: "benchmark"
+    };
+    var proportions = usable.find(function(r){return Array.isArray(r.cost_breakdown) && r.cost_breakdown.length;});
+    if (proportions && out.cost_per_unit) {
+      out.cost_breakdown = proportions.cost_breakdown.map(function(item) {
+        var share = Number(item.amount) / Number(proportions.cost_per_unit || 1);
+        return {label:item.label, amount:out.cost_per_unit * share};
+      });
+    }
+    return out;
+  }
+
   function getCommodityCountryData(commodity, countryCode) {
     if (!commodity || !commodity.country_data) return null;
+    var exact = null;
     if (Array.isArray(commodity.country_data)) {
-      var match = commodity.country_data.find(function (x) { return x.country_code === countryCode; });
-      if (!match) return null;
-      var copy = Object.assign({}, match);
+      exact = commodity.country_data.find(function (x) { return x.country_code === countryCode; });
+    } else {
+      exact = commodity.country_data[countryCode] || null;
+    }
+    if (exact) {
+      var copy = Object.assign({}, exact);
       delete copy.country_code;
       return copy;
     }
-    return commodity.country_data[countryCode] || null;
+    return benchmarkCommodityData(commodity, countryCode);
   }
 
   /* ---------- RENDER DISPATCH ---------- */
