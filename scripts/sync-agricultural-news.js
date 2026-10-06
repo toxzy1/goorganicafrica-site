@@ -163,7 +163,9 @@ async function main() {
       if (!title || !url || !published) continue;
       let parsedUrl;
       try { parsedUrl = new URL(url); } catch (_) { continue; }
-      if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost)) continue;
+      const sourceHost = sourceUrl ? (() => { try { return new URL(sourceUrl).hostname; } catch (_) { return ""; } })() : "";
+      if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost) &&
+          sourceHost !== feed.allowedHost && !sourceHost.endsWith("." + feed.allowedHost)) continue;
       const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
       if (ageDays > 14) continue;
 
