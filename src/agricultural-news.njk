@@ -12,13 +12,23 @@ pageSection: agricultural-news
 <h1>Agricultural Current News</h1>
 <p class="lede">Follow current agricultural developments across all 54 African countries. News will be published only after verification from official or authoritative sources.</p>
 
-{% set latestShown = 0 %}
+{% set latestArticles = [] %}
 {% for country in agriculturalNews.countries %}
-  {% if country.articles and country.articles.length and latestShown < 6 %}
-    {% set latestShown = latestShown + 1 %}
-    {% set article = country.articles[0] %}
+  {% for article in country.articles %}
+    {% set latestArticles = latestArticles.concat([{
+      "country": country.name,
+      "flag": country.flag,
+      "article": article
+    }]) %}
+  {% endfor %}
+{% endfor %}
+{% set latestArticles = latestArticles | sort(attribute="article.published") | reverse %}
+
+{% for item in latestArticles %}
+  {% if loop.index <= 6 %}
+    {% set article = item.article %}
     <article class="card" style="margin:18px 0;">
-      <p style="margin:0 0 6px;"><strong>{{ country.flag }} {{ country.name }}</strong> · {{ article.category | replace("-", " ") }}</p>
+      <p style="margin:0 0 6px;"><strong>{{ item.flag }} {{ item.country }}</strong> · {{ article.category | replace("-", " ") }} · {{ article.published }}</p>
       <h2 style="font-size:1.25rem;margin:0 0 8px;">{{ article.title }}</h2>
       <p>{{ article.summary }}</p>
       <p style="font-size:.85rem;margin-bottom:0;">{{ article.source }} · Verified {{ article.verified }}</p>
