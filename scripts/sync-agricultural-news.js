@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalNews.json");
-const FEEDS = [
+const BASE_FEEDS = [
   {
     name: "FAO Africa discovery",
     url: "https://news.google.com/rss/search?q=site%3Afao.org%2Fafrica%20agriculture%20Africa&hl=en&gl=US&ceid=US%3Aen",
@@ -32,14 +32,36 @@ const FEEDS = [
     url: "https://news.google.com/rss/search?q=site%3Aagra.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
     source: "Alliance for a Green Revolution in Africa (AGRA)",
     allowedHost: "agra.org"
-  },
-  {
-    name: "Ghana MoFA discovery",
-    url: "https://news.google.com/rss/search?q=site%3Amofa.gov.gh%20agriculture&hl=en&gl=US&ceid=US%3Aen",
-    source: "Ghana Ministry of Food and Agriculture (MoFA)",
-    allowedHost: "mofa.gov.gh"
   }
 ];
+
+function googleFeed(query) {
+  return "https://news.google.com/rss/search?q=" + encodeURIComponent(query) + "&hl=en&gl=US&ceid=US%3Aen";
+}
+
+function buildFeeds(countries) {
+  const feeds = [...BASE_FEEDS];
+
+  // Country-level FAO discovery gives every one of the 54 countries a
+  // dedicated search path without inventing country news. Results still
+  // pass the same host, age and country checks below.
+  for (const country of countries) {
+    feeds.push({
+      name: "FAO country discovery — " + country.name,
+      url: googleFeed('site:fao.org "' + country.name + '" agriculture'),
+      source: "FAO",
+      allowedHost: "fao.org"
+    });
+    feeds.push({
+      name: "FAO emergency discovery — " + country.name,
+      url: googleFeed('site:fao.org/emergencies "' + country.name + '" agriculture'),
+      source: "FAO Emergencies and Resilience",
+      allowedHost: "fao.org"
+    });
+  }
+
+  return feeds;
+}
 
 const COUNTRY_ALIASES = {
   "democratic republic of the congo": "democratic-republic-of-the-congo",
@@ -112,6 +134,7 @@ function categoryFor(title, summary) {
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
   const today = new Date().toISOString().slice(0, 10);
+  const feeds = buildFeeds(data.countries);
   const existing = new Set(
     data.countries.flatMap(c => (c.articles || []).map(a => a.url || a.title))
   );
@@ -127,10 +150,20 @@ async function main() {
       const title = field(item, "title");
       const summary = field(item, "description");
       let url = normalizeUrl(field(item, "link"));
-      const sourceLink = normalizeUrl(field(item, "source"));
-      if (url.includes("news.google.com") && sourceLink) url = sourceLink;
+      const sourceTag = item.match(/<source(?:\\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
+      const sourceUrl = sourceTag ? normalizeUrl(sourceTag[1]) : "";
+      if (url.includes("news.google.com") && sourceUrl) url = sourceUrl;
+      if (url.includes("news.google.com")) {
+        try {
+          const resolved = await fetch(url, { redirect: "follow", headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
+          if (resolved.url) url = resolved.url;
+        } catch (_) {}
+      }
       const published = isoDate(field(item, "pubDate") || field(item, "dc:date"));
-      if (!title || !url || !published || !url.includes(feed.allowedHost)) continue;
+      if (!title || !url || !published) continue;
+      let parsedUrl;
+      try { parsedUrl = new URL(url); } catch (_) { continue; }
+      if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost)) continue;
       const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
       if (ageDays > 14) continue;
 
