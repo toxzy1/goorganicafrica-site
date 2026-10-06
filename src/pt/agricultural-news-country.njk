@@ -20,8 +20,9 @@ pageLanguage: pt
 <p class="lede">Desenvolvimentos agrícolas atuais e verificados para este país.</p>
 {% if country.articles and country.articles.length %}
 {% for article in country.articles %}
+{% set translated = article.translations[pageLanguage or language] if article.translations else null %}
 <article class="card" style="margin:16px 0;">
-<h2>{{ article.title }}</h2><p>{{ article.summary }}</p>
+<h2>{{ translated.title or article.title }}</h2><p>{{ translated.summary or article.summary }}</p>
 <p><small>Fonte: {{ article.source }} · Verificado: {{ article.verified }}</small></p>
 <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">Ler fonte original →</a>
 </article>
