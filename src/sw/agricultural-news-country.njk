@@ -15,8 +15,9 @@ pageLanguage: sw
  data-url-pt="/pt/agricultural-news/{{ country.slug }}/"
  data-url-sw="/sw/agricultural-news/{{ country.slug }}/"></div><section class="section" style="padding-top:48px;">
 <div class="container">
+{% set displayCountryName = country.localizedNames[pageLanguage] if country.localizedNames and pageLanguage != "en" else country.name %}
 <p><a href="/sw/agricultural-news/">← Habari zote za kilimo</a></p>
-<h1>{{ country.flag }} Habari za kilimo — {{ country.name }}</h1>
+<h1>{{ country.flag }} Habari za kilimo — {{ displayCountryName }}</h1>
 <p class="lede">Maendeleo ya sasa na yaliyothibitishwa ya kilimo kwa nchi hii.</p>
 {% if country.articles and country.articles.length %}
 {% for article in country.articles %}
