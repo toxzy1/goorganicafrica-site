@@ -37,14 +37,15 @@ permalink: "/farm-profit-calculator/"
     commodities: {{ calculatorCommodities | dump | safe }},
     countries:   {{ calculator.countries | dump | safe }},
     regions:     {{ calculator.regions | dump | safe }},
+    fallback:     {{ calculatorFallback | dump | safe }},
     defaultCountry: "{{ defaultCountry or '' }}",
     defaultLanguage: "{{ defaultLanguage or 'en' }}"
   };
 </script>
 
 <!-- Scripts loaded in strict order, NO defer - each must finish before next starts -->
-<script defer src="/js/calculator-engine.js?v=20260926"></script>
-<script defer src="/js/calculator-advice.js?v=20260926"></script>
+<script defer src="/js/calculator-engine.js?v=20261006"></script>
+<script defer src="/js/calculator-advice.js?v=20261006"></script>
 <script defer src="/js/calculator-app.js?v=20260926"></script>
 
 <script>
