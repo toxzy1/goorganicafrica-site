@@ -140,7 +140,7 @@ async function main() {
   );
   let added = 0;
 
-  for (const feed of FEEDS) {
+  for (const feed of feeds) {
     const response = await fetch(feed.url, { headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
     if (!response.ok) throw new Error(`${feed.name}: HTTP ${response.status}`);
     const xml = await response.text();
@@ -152,7 +152,6 @@ async function main() {
       let url = normalizeUrl(field(item, "link"));
       const sourceTag = item.match(/<source(?:\\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
       const sourceUrl = sourceTag ? normalizeUrl(sourceTag[1]) : "";
-      if (url.includes("news.google.com") && sourceUrl) url = sourceUrl;
       if (url.includes("news.google.com")) {
         try {
           const resolved = await fetch(url, { redirect: "follow", headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
