@@ -316,6 +316,9 @@
 
     var regionList = regions[state.country] || [];
 
+    // Countries without verified regional data still work using a national/benchmark reference.
+    if (!regionList.length) regionList = ["National reference"];
+
     // Auto-select first region if none selected yet (so Continue is never blocked)
     if (!state.region && regionList.length > 0) {
       state.region = regionList[0];
