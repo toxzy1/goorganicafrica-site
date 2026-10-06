@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-05",
+  "last_updated": "2026-10-06",
   "editorial_policy": "Publish only current, verifiable agricultural news from official or authoritative sources. Store the original source URL and verification date. Do not copy full articles.",
   "categories": [
     "general",
@@ -49,7 +49,13 @@
             }
           }
         }
-      ]
+      ],
+      "localizedNames": {
+        "fr": "Nigeria",
+        "ar": "نيجيريا",
+        "pt": "Nigéria",
+        "sw": "Nigeria"
+      }
     },
     {
       "code": "GH",
@@ -113,7 +119,13 @@
             }
           }
         }
-      ]
+      ],
+      "localizedNames": {
+        "fr": "Ghana",
+        "ar": "غانا",
+        "pt": "Gana",
+        "sw": "Ghana"
+      }
     },
     {
       "code": "KE",
@@ -149,301 +161,559 @@
             }
           }
         }
-      ]
+      ],
+      "localizedNames": {
+        "fr": "Kenya",
+        "ar": "كينيا",
+        "pt": "Quénia",
+        "sw": "Kenya"
+      }
     },
     {
       "code": "UG",
       "name": "Uganda",
       "slug": "uganda",
       "flag": "🇺🇬",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Ouganda",
+        "ar": "أوغندا",
+        "pt": "Uganda",
+        "sw": "Uganda"
+      }
     },
     {
       "code": "TZ",
       "name": "Tanzania",
       "slug": "tanzania",
       "flag": "🇹🇿",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Tanzanie",
+        "ar": "تنزانيا",
+        "pt": "Tanzânia",
+        "sw": "Tanzania"
+      }
     },
     {
       "code": "ZA",
       "name": "South Africa",
       "slug": "south-africa",
       "flag": "🇿🇦",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Afrique du Sud",
+        "ar": "جنوب أفريقيا",
+        "pt": "África do Sul",
+        "sw": "Afrika Kusini"
+      }
     },
     {
       "code": "ZM",
       "name": "Zambia",
       "slug": "zambia",
       "flag": "🇿🇲",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Zambie",
+        "ar": "زامبيا",
+        "pt": "Zâmbia",
+        "sw": "Zambia"
+      }
     },
     {
       "code": "RW",
       "name": "Rwanda",
       "slug": "rwanda",
       "flag": "🇷🇼",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Rwanda",
+        "ar": "رواندا",
+        "pt": "Ruanda",
+        "sw": "Rwanda"
+      }
     },
     {
       "code": "CM",
       "name": "Cameroon",
       "slug": "cameroon",
       "flag": "🇨🇲",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Cameroun",
+        "ar": "الكاميرون",
+        "pt": "Camarões",
+        "sw": "Kameruni"
+      }
     },
     {
       "code": "ET",
       "name": "Ethiopia",
       "slug": "ethiopia",
       "flag": "🇪🇹",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Éthiopie",
+        "ar": "إثيوبيا",
+        "pt": "Etiópia",
+        "sw": "Ethiopia"
+      }
     },
     {
       "code": "DZ",
       "name": "Algeria",
       "slug": "algeria",
       "flag": "🇩🇿",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Algérie",
+        "ar": "الجزائر",
+        "pt": "Argélia",
+        "sw": "Aljeria"
+      }
     },
     {
       "code": "AO",
       "name": "Angola",
       "slug": "angola",
       "flag": "🇦🇴",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Angola",
+        "ar": "أنغولا",
+        "pt": "Angola",
+        "sw": "Angola"
+      }
     },
     {
       "code": "BJ",
       "name": "Benin",
       "slug": "benin",
       "flag": "🇧🇯",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Bénin",
+        "ar": "بنين",
+        "pt": "Benim",
+        "sw": "Benini"
+      }
     },
     {
       "code": "BW",
       "name": "Botswana",
       "slug": "botswana",
       "flag": "🇧🇼",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Botswana",
+        "ar": "بوتسوانا",
+        "pt": "Botsuana",
+        "sw": "Botswana"
+      }
     },
     {
       "code": "BF",
       "name": "Burkina Faso",
       "slug": "burkina-faso",
       "flag": "🇧🇫",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Burkina Faso",
+        "ar": "بوركينا فاسو",
+        "pt": "Burquina Faso",
+        "sw": "Burkina Faso"
+      }
     },
     {
       "code": "BI",
       "name": "Burundi",
       "slug": "burundi",
       "flag": "🇧🇮",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Burundi",
+        "ar": "بوروندي",
+        "pt": "Burundi",
+        "sw": "Burundi"
+      }
     },
     {
       "code": "CV",
       "name": "Cabo Verde",
       "slug": "cabo-verde",
       "flag": "🇨🇻",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Cap-Vert",
+        "ar": "الرأس الأخضر",
+        "pt": "Cabo Verde",
+        "sw": "Cabo Verde"
+      }
     },
     {
       "code": "CF",
       "name": "Central African Republic",
       "slug": "central-african-republic",
       "flag": "🇨🇫",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "République centrafricaine",
+        "ar": "جمهورية أفريقيا الوسطى",
+        "pt": "República Centro-Africana",
+        "sw": "Jamhuri ya Afrika ya Kati"
+      }
     },
     {
       "code": "TD",
       "name": "Chad",
       "slug": "chad",
       "flag": "🇹🇩",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Tchad",
+        "ar": "تشاد",
+        "pt": "Chade",
+        "sw": "Chad"
+      }
     },
     {
       "code": "KM",
       "name": "Comoros",
       "slug": "comoros",
       "flag": "🇰🇲",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Comores",
+        "ar": "جزر القمر",
+        "pt": "Comores",
+        "sw": "Komoro"
+      }
     },
     {
       "code": "CD",
       "name": "Democratic Republic of the Congo",
       "slug": "democratic-republic-of-the-congo",
       "flag": "🇨🇩",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "République démocratique du Congo",
+        "ar": "جمهورية الكونغو الديمقراطية",
+        "pt": "República Democrática do Congo",
+        "sw": "Jamhuri ya Kidemokrasia ya Kongo"
+      }
     },
     {
       "code": "CI",
       "name": "Côte d'Ivoire",
       "slug": "c-te-d-ivoire",
       "flag": "🇨🇮",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Côte d'Ivoire",
+        "ar": "ساحل العاج",
+        "pt": "Costa do Marfim",
+        "sw": "Côte d'Ivoire"
+      }
     },
     {
       "code": "DJ",
       "name": "Djibouti",
       "slug": "djibouti",
       "flag": "🇩🇯",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Djibouti",
+        "ar": "جيبوتي",
+        "pt": "Djibuti",
+        "sw": "Djibouti"
+      }
     },
     {
       "code": "EG",
       "name": "Egypt",
       "slug": "egypt",
       "flag": "🇪🇬",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Égypte",
+        "ar": "مصر",
+        "pt": "Egito",
+        "sw": "Misri"
+      }
     },
     {
       "code": "GQ",
       "name": "Equatorial Guinea",
       "slug": "equatorial-guinea",
       "flag": "🇬🇶",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Guinée équatoriale",
+        "ar": "غينيا الاستوائية",
+        "pt": "Guiné Equatorial",
+        "sw": "Guinea ya Ikweta"
+      }
     },
     {
       "code": "ER",
       "name": "Eritrea",
       "slug": "eritrea",
       "flag": "🇪🇷",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Érythrée",
+        "ar": "إريتريا",
+        "pt": "Eritreia",
+        "sw": "Eritrea"
+      }
     },
     {
       "code": "SZ",
       "name": "Eswatini",
       "slug": "eswatini",
       "flag": "🇸🇿",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Eswatini",
+        "ar": "إسواتيني",
+        "pt": "Essuatíni",
+        "sw": "Eswatini"
+      }
     },
     {
       "code": "GA",
       "name": "Gabon",
       "slug": "gabon",
       "flag": "🇬🇦",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Gabon",
+        "ar": "الغابون",
+        "pt": "Gabão",
+        "sw": "Gaboni"
+      }
     },
     {
       "code": "GM",
       "name": "Gambia",
       "slug": "gambia",
       "flag": "🇬🇲",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Gambie",
+        "ar": "غامبيا",
+        "pt": "Gâmbia",
+        "sw": "Gambia"
+      }
     },
     {
       "code": "GN",
       "name": "Guinea",
       "slug": "guinea",
       "flag": "🇬🇳",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Guinée",
+        "ar": "غينيا",
+        "pt": "Guiné",
+        "sw": "Guinea"
+      }
     },
     {
       "code": "GW",
       "name": "Guinea-Bissau",
       "slug": "guinea-bissau",
       "flag": "🇬🇼",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Guinée-Bissau",
+        "ar": "غينيا بيساو",
+        "pt": "Guiné-Bissau",
+        "sw": "Guinea-Bisau"
+      }
     },
     {
       "code": "LS",
       "name": "Lesotho",
       "slug": "lesotho",
       "flag": "🇱🇸",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Lesotho",
+        "ar": "ليسوتو",
+        "pt": "Lesoto",
+        "sw": "Lesotho"
+      }
     },
     {
       "code": "LR",
       "name": "Liberia",
       "slug": "liberia",
       "flag": "🇱🇷",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Libéria",
+        "ar": "ليبيريا",
+        "pt": "Libéria",
+        "sw": "Liberia"
+      }
     },
     {
       "code": "LY",
       "name": "Libya",
       "slug": "libya",
       "flag": "🇱🇾",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Libye",
+        "ar": "ليبيا",
+        "pt": "Líbia",
+        "sw": "Libya"
+      }
     },
     {
       "code": "MG",
       "name": "Madagascar",
       "slug": "madagascar",
       "flag": "🇲🇬",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Madagascar",
+        "ar": "مدغشقر",
+        "pt": "Madagáscar",
+        "sw": "Madagaska"
+      }
     },
     {
       "code": "MW",
       "name": "Malawi",
       "slug": "malawi",
       "flag": "🇲🇼",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Malawi",
+        "ar": "ملاوي",
+        "pt": "Malawi",
+        "sw": "Malawi"
+      }
     },
     {
       "code": "ML",
       "name": "Mali",
       "slug": "mali",
       "flag": "🇲🇱",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Mali",
+        "ar": "مالي",
+        "pt": "Mali",
+        "sw": "Mali"
+      }
     },
     {
       "code": "MR",
       "name": "Mauritania",
       "slug": "mauritania",
       "flag": "🇲🇷",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Mauritanie",
+        "ar": "موريتانيا",
+        "pt": "Mauritânia",
+        "sw": "Mauritania"
+      }
     },
     {
       "code": "MU",
       "name": "Mauritius",
       "slug": "mauritius",
       "flag": "🇲🇺",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Maurice",
+        "ar": "موريشيوس",
+        "pt": "Maurícia",
+        "sw": "Morisi"
+      }
     },
     {
       "code": "MA",
       "name": "Morocco",
       "slug": "morocco",
       "flag": "🇲🇦",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Maroc",
+        "ar": "المغرب",
+        "pt": "Marrocos",
+        "sw": "Moroko"
+      }
     },
     {
       "code": "MZ",
       "name": "Mozambique",
       "slug": "mozambique",
       "flag": "🇲🇿",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Mozambique",
+        "ar": "موزمبيق",
+        "pt": "Moçambique",
+        "sw": "Msumbiji"
+      }
     },
     {
       "code": "NA",
       "name": "Namibia",
       "slug": "namibia",
       "flag": "🇳🇦",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Namibie",
+        "ar": "ناميبيا",
+        "pt": "Namíbia",
+        "sw": "Namibia"
+      }
     },
     {
       "code": "NE",
       "name": "Niger",
       "slug": "niger",
       "flag": "🇳🇪",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Niger",
+        "ar": "النيجر",
+        "pt": "Níger",
+        "sw": "Nijeri"
+      }
     },
     {
       "code": "CG",
       "name": "Republic of the Congo",
       "slug": "republic-of-the-congo",
       "flag": "🇨🇬",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "République du Congo",
+        "ar": "جمهورية الكونغو",
+        "pt": "República do Congo",
+        "sw": "Jamhuri ya Kongo"
+      }
     },
     {
       "code": "ST",
       "name": "São Tomé and Príncipe",
       "slug": "s-o-tom-and-pr-ncipe",
       "flag": "🇸🇹",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Sao Tomé-et-Principe",
+        "ar": "ساو تومي وبرينسيبي",
+        "pt": "São Tomé e Príncipe",
+        "sw": "São Tomé na Príncipe"
+      }
     },
     {
       "code": "SN",
@@ -479,21 +749,39 @@
             }
           }
         }
-      ]
+      ],
+      "localizedNames": {
+        "fr": "Sénégal",
+        "ar": "السنغال",
+        "pt": "Senegal",
+        "sw": "Senegal"
+      }
     },
     {
       "code": "SC",
       "name": "Seychelles",
       "slug": "seychelles",
       "flag": "🇸🇨",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Seychelles",
+        "ar": "سيشل",
+        "pt": "Seicheles",
+        "sw": "Shelisheli"
+      }
     },
     {
       "code": "SL",
       "name": "Sierra Leone",
       "slug": "sierra-leone",
       "flag": "🇸🇱",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Sierra Leone",
+        "ar": "سيراليون",
+        "pt": "Serra Leoa",
+        "sw": "Sierra Leone"
+      }
     },
     {
       "code": "SO",
@@ -529,14 +817,26 @@
             }
           }
         }
-      ]
+      ],
+      "localizedNames": {
+        "fr": "Somalie",
+        "ar": "الصومال",
+        "pt": "Somália",
+        "sw": "Somalia"
+      }
     },
     {
       "code": "SS",
       "name": "South Sudan",
       "slug": "south-sudan",
       "flag": "🇸🇸",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Soudan du Sud",
+        "ar": "جنوب السودان",
+        "pt": "Sudão do Sul",
+        "sw": "Sudan Kusini"
+      }
     },
     {
       "code": "SD",
@@ -572,21 +872,39 @@
             }
           }
         }
-      ]
+      ],
+      "localizedNames": {
+        "fr": "Soudan",
+        "ar": "السودان",
+        "pt": "Sudão",
+        "sw": "Sudan"
+      }
     },
     {
       "code": "TG",
       "name": "Togo",
       "slug": "togo",
       "flag": "🇹🇬",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Togo",
+        "ar": "توغو",
+        "pt": "Togo",
+        "sw": "Togo"
+      }
     },
     {
       "code": "TN",
       "name": "Tunisia",
       "slug": "tunisia",
       "flag": "🇹🇳",
-      "articles": []
+      "articles": [],
+      "localizedNames": {
+        "fr": "Tunisie",
+        "ar": "تونس",
+        "pt": "Tunísia",
+        "sw": "Tunisia"
+      }
     },
     {
       "code": "ZW",
@@ -622,7 +940,13 @@
             }
           }
         }
-      ]
+      ],
+      "localizedNames": {
+        "fr": "Zimbabwe",
+        "ar": "زيمبابوي",
+        "pt": "Zimbábue",
+        "sw": "Zimbabwe"
+      }
     }
   ]
 }
