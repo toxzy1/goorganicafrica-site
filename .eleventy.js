@@ -12,7 +12,54 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/manifest.webmanifest");
   eleventyConfig.addPassthroughCopy("src/favicon.svg");
 
-  // Merge the primary agricultural resource registry with reviewed supplement records.\n  eleventyConfig.addGlobalData("agriculturalResourcesAll", () => {\n    const fs = require("fs");\n    const path = require("path");\n    const primary = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalResources.json"), "utf8"));\n    const supplement = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalResourcesSupplement.json"), "utf8"));\n    const categories = [...new Set([...(primary.categories || []), ...(supplement.records || []).map(r => r.category).filter(Boolean)])];\n    const countries = (primary.countries || []).map(c => ({ ...c, records: Object.fromEntries(categories.map(cat => [cat, [...(c.records?.[cat] || [])]])) }));\n    const byCode = new Map(countries.map(c => [c.code, c]));\n    for (const r of supplement.records || []) {\n      const c = byCode.get(r.country_code);\n      if (!c || !r.category) continue;\n      c.records[r.category] = c.records[r.category] || [];\n      const key = `${r.country_code}|${r.category}|${r.url}|${r.title}`;\n      if (!c.records[r.category].some(x => `${c.code}|${r.category}|${x.url}|${x.title}` === key)) c.records[r.category].push(r);\n    }\n    for (const c of countries) c.total = categories.reduce((n, cat) => n + (c.records[cat] || []).length, 0);\n    return { ...primary, categories, countries, total: countries.reduce((n, c) => n + c.total, 0) };\n  });\n\n  // Collections\n  eleventyConfig.addCollection("ebooks", function (collectionApi) {
+  // Merge the primary agricultural resource registry with reviewed supplement records.
+  eleventyConfig.addGlobalData("agriculturalResourcesAll", () => {
+    const fs = require("fs");
+    const path = require("path");
+    const primary = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalResources.json"), "utf8"));
+    const supplement = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalResourcesSupplement.json"), "utf8"));
+    const categories = [...new Set([...(primary.categories || []), ...(supplement.records || []).map(r => r.category).filter(Boolean)])];
+    const countries = (primary.countries || []).map(c => ({
+      ...c,
+      records: Object.fromEntries(categories.map(cat => [cat, [...(c.records?.[cat] || [])]]))
+    }));
+    const byCode = new Map(countries.map(c => [c.code, c]));
+
+    for (const r of supplement.records || []) {
+      const c = byCode.get(r.country_code);
+      if (!c || !r.category) continue;
+      c.records[r.category] = c.records[r.category] || [];
+      const key = `${r.country_code}|${r.category}|${r.url}|${r.title}`;
+      if (!c.records[r.category].some(x => `${c.code}|${r.category}|${x.url}|${x.title}` === key)) {
+        c.records[r.category].push(r);
+      }
+    }
+
+    const sharedByUrl = new Map();
+    for (const c of countries) {
+      for (const cat of categories) {
+        for (const r of c.records[cat] || []) {
+          if (!r.url) continue;
+          if (!sharedByUrl.has(r.url)) sharedByUrl.set(r.url, new Set());
+          sharedByUrl.get(r.url).add(c.code);
+        }
+      }
+    }
+
+    for (const c of countries) {
+      for (const cat of categories) {
+        c.records[cat] = (c.records[cat] || []).map(r => {
+          const shared = r.url ? [...(sharedByUrl.get(r.url) || [])] : [];
+          return shared.length > 1 ? { ...r, shared_coverage: shared } : r;
+        });
+      }
+      c.total = categories.reduce((n, cat) => n + (c.records[cat] || []).length, 0);
+    }
+
+    return { ...primary, categories, countries, total: countries.reduce((n, c) => n + c.total, 0) };
+  });
+
+  // Collections\n  eleventyConfig.addCollection("ebooks", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/ebooks/*.md").filter((item) => item.data.active !== false).sort((a, b) => {
       return (a.data.order || 99) - (b.data.order || 99);
     });
