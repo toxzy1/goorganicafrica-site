@@ -14,7 +14,7 @@ pageSection: agricultural-news
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
 {% for country in agriculturalNews.countries %}
 <a class="card" href="/ar/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
-<h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.name }}</h2>
+<h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.localizedNames[pageLanguage] if country.localizedNames and pageLanguage != "en" else country.name }}</h2>
 <p>عرض الأخبار الزراعية لهذا البلد ←</p>
 </a>
 {% endfor %}
