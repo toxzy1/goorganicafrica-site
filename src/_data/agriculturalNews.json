@@ -238,6 +238,19 @@
       "flag": "🇰🇪",
       "articles": [
         {
+          "category": "finance",
+          "title": "IFAD and AgDevCo target early-stage agricultural enterprises in Africa",
+          "summary": "A US$10 million blended-finance initiative initially focuses on Ethiopia, Kenya, Rwanda, Tanzania and Uganda, supporting early-stage agricultural enterprises and smallholder-linked value chains.",
+          "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
+          "source": "IFAD / AgDevCo",
+          "source_id": "ifad-agdevco",
+          "source_tier": 1,
+          "published": "2026-09-03",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
           "category": "grants-programmes",
           "title": "FAO opens direct beneficiary grants for nature-positive livelihoods in Western Kenya",
           "summary": "FAO announced a GEF-7 FOLUR call supporting eligible Kenyan producer organizations, cooperatives and community organizations working in coffee, maize and related nature-based livelihoods in the Mt. Elgon landscape.",
@@ -292,6 +305,19 @@
       "slug": "uganda",
       "flag": "🇺🇬",
       "articles": [
+        {
+          "category": "finance",
+          "title": "IFAD and AgDevCo target early-stage agricultural enterprises in Uganda",
+          "summary": "Uganda is among the initial focus countries for an IFAD-AgDevCo blended-finance initiative supporting early-stage agricultural enterprises across production, inputs, aggregation and processing.",
+          "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
+          "source": "IFAD / AgDevCo",
+          "source_id": "ifad-agdevco",
+          "source_tier": 1,
+          "published": "2026-09-03",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
         {
           "category": "finance",
           "title": "AfDB approves $140 million programme for irrigation and agro-industrialisation in Uganda",
@@ -397,7 +423,21 @@
       "name": "Rwanda",
       "slug": "rwanda",
       "flag": "🇷🇼",
-      "articles": [],
+      "articles": [
+        {
+          "category": "finance",
+          "title": "IFAD and AgDevCo target early-stage agricultural enterprises in Rwanda",
+          "summary": "Rwanda is among the initial focus countries for a US$10 million IFAD-AgDevCo initiative supporting early-stage agricultural enterprises and inclusive agribusiness investment.",
+          "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
+          "source": "IFAD / AgDevCo",
+          "source_id": "ifad-agdevco",
+          "source_tier": 1,
+          "published": "2026-09-03",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Rwanda",
         "ar": "رواندا",
@@ -423,7 +463,21 @@
       "name": "Ethiopia",
       "slug": "ethiopia",
       "flag": "🇪🇹",
-      "articles": [],
+      "articles": [
+        {
+          "category": "finance",
+          "title": "IFAD and AgDevCo target early-stage agricultural enterprises in Ethiopia",
+          "summary": "Ethiopia is among the initial focus countries for a US$10 million IFAD-AgDevCo initiative supporting early-stage agricultural enterprises and smallholder-linked value chains.",
+          "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
+          "source": "IFAD / AgDevCo",
+          "source_id": "ifad-agdevco",
+          "source_tier": 1,
+          "published": "2026-09-03",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Éthiopie",
         "ar": "إثيوبيا",
@@ -646,7 +700,21 @@
       "name": "Djibouti",
       "slug": "djibouti",
       "flag": "🇩🇯",
-      "articles": [],
+      "articles": [
+        {
+          "category": "finance",
+          "title": "IFAD joins Djibouti AgriConnect Compact",
+          "summary": "Djibouti, IFAD, the World Bank and partners launched an AgriConnect Compact focused on livestock, horticulture and date-palm value chains, rural livelihoods and food security.",
+          "url": "https://www.ifad.org/en/w/news/ifad-joins-government-of-djibouti-and-world-bank-to-accelerate-agri-food-transformation-and-strengthen-food-security-through-agriconnect",
+          "source": "IFAD",
+          "source_id": "ifad-agdevco",
+          "source_tier": 1,
+          "published": "2026-09-16",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Djibouti",
         "ar": "جيبوتي",
@@ -1094,7 +1162,21 @@
       "name": "South Sudan",
       "slug": "south-sudan",
       "flag": "🇸🇸",
-      "articles": [],
+      "articles": [
+        {
+          "category": "finance",
+          "title": "IFAD and South Sudan launch US$41.8 million Sustainable Agriculture Development Project",
+          "summary": "The SADEP project aims to strengthen food security and rural resilience, including climate-resilient sorghum and fisheries value chains, market access and agricultural services.",
+          "url": "https://www.ifad.org/en/w/news/ifad-and-south-sudan-launch-us-41.8-million-project-to-boost-food-security-and-rural-resilience",
+          "source": "IFAD",
+          "source_id": "ifad-agdevco",
+          "source_tier": 1,
+          "published": "2026-07-21",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Soudan du Sud",
         "ar": "جنوب السودان",
