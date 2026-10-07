@@ -426,7 +426,20 @@
       "slug": "tanzania",
       "flag": "🇹🇿",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Farmers’ Organization Financing Programme — Tanzania (FOFP-T)",
+            "description": "IFAD-approved programme designed to strengthen financing for farmers’ organizations and rural producers in Tanzania.",
+            "url": "https://webapps.ifad.org/members/lapse-of-time",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural finance programme",
+            "access": "Official IFAD approval record; beneficiary and implementation conditions apply."
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -1090,6 +1103,18 @@
             "verified": "2026-10-07",
             "status": "official",
             "type": "Agricultural development programme/project"
+          },
+          {
+            "title": "ProPEA — Vocational Training, Employment and Rural Entrepreneurship Promotion Project",
+            "description": "IFAD-supported Benin project combining rural entrepreneurship, employment and vocational training to strengthen inclusive rural economic opportunities.",
+            "url": "https://www.ifad.org/en/w/projects/2000005083",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Rural entrepreneurship and agricultural development programme",
+            "access": "Programme information; implementation and beneficiary criteria apply."
           }
         ],
         "research": [],
@@ -1261,7 +1286,20 @@
       "records": {
         "finance": [],
         "grants": [],
-        "machinery": [],
+        "machinery": [
+          {
+            "title": "PADCAE-B maize processing and livestock-feed units",
+            "description": "African Development Bank-supported Burundi agricultural and livestock value-chain project includes study and supervision of construction works for a maize-processing unit and livestock-feed unit.",
+            "url": "https://www.afdb.org/en/projects-and-operations/p-bi-a00-008",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural processing infrastructure",
+            "access": "Official project/procurement information."
+          }
+        ],
         "general": [
           {
             "title": "FAO Burundi country agriculture profile",
@@ -1354,7 +1392,20 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "title": "PRO-AGUA — Sustainable and Inclusive Access to Water for Resilient Agriculture",
+            "description": "IFAD-approved Cabo Verde programme focused on sustainable and inclusive access to water for resilient agriculture.",
+            "url": "https://webapps.ifad.org/members/lapse-of-time",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Water and climate-resilient agriculture programme",
+            "access": "Official IFAD approval record; implementation conditions apply."
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Cabo Verde",
@@ -2214,7 +2265,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Guinea-Bissau PADES — Economic Development Project for the Southern Regions",
+            "description": "IFAD-approved project supporting economic development in Guinea-Bissau's southern regions and rural communities.",
+            "url": "https://webapps.ifad.org/members/lapse-of-time",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Rural economic development project",
+            "access": "Official IFAD approval record; detailed implementation documents available through IFAD."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -2629,7 +2693,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "TRADE — Transforming Agriculture through Diversification and Entrepreneurship Programme",
+            "description": "IFAD programme supporting agricultural diversification, entrepreneurship, rural livelihoods and market-oriented value chains in Malawi; the IFAD project page lists current supervision documentation.",
+            "url": "https://www.ifad.org/en/w/projects/2000001600",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural development programme",
+            "access": "Programme information; eligibility and implementation conditions apply."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -2857,7 +2934,20 @@
       "records": {
         "finance": [],
         "grants": [],
-        "machinery": [],
+        "machinery": [
+          {
+            "title": "Cuamba Agri-Hub Signature Gate and supporting infrastructure — SAPZ",
+            "description": "African Development Bank-financed Special Agri-Industrial Processing Zone works in Niassa Province covering the Cuamba Agri-Hub signature gate, road accessibility and supporting office infrastructure.",
+            "url": "https://www.afdb.org/fr/documents/eoi-mozambique-construction-cuamba-agri-hub-signature-gate-emblematic-infrastructure-road-accessibility-and-supporting-office-sapz",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural infrastructure / agri-processing zone",
+            "access": "Official procurement notice; participation subject to the published eligibility and procurement conditions."
+          }
+        ],
         "general": [
           {
             "title": "FAO Mozambique country agriculture profile",
@@ -2889,7 +2979,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "PROCAVA — Inclusive Agrifood Value Chain Development Programme",
+            "description": "IFAD programme covering horticulture under irrigation, red meat, poultry, cassava and legumes across 75 districts in all 10 provinces of Mozambique, with a focus on climate-resilient value chains and rural incomes.",
+            "url": "https://www.ifad.org/en/w/projects/2000001981",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agrifood value-chain development programme",
+            "access": "Programme information; implementation conditions apply."
+          }
+        ],
         "research": [],
         "climate": [
           {
@@ -3234,6 +3337,18 @@
             "status": "official",
             "type": "Agricultural transformation programme",
             "access": "Programme information"
+          },
+          {
+            "title": "Senegal Support to Food Sovereignty Project (SFSP)",
+            "description": "IFAD-approved project focused on strengthening food sovereignty and rural transformation in Senegal.",
+            "url": "https://webapps.ifad.org/members/lapse-of-time",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural development project",
+            "access": "Official IFAD approval record; detailed implementation documents available through IFAD."
           }
         ],
         "research": [],
@@ -3522,7 +3637,20 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "title": "SADEP — Sustainable Agriculture Development Project",
+            "description": "US$41.8 million IFAD project targeting more than 110,000 people, strengthening climate-resilient sorghum and fisheries value chains, rural infrastructure, markets, finance, extension and food security.",
+            "url": "https://www.ifad.org/en/w/news/ifad-and-south-sudan-launch-us-41.8-million-project-to-boost-food-security-and-rural-resilience",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-resilient agriculture and rural livelihoods project",
+            "access": "Programme information; implementation conditions apply."
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — South Sudan",
