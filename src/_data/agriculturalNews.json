@@ -156,6 +156,32 @@
           "published": "2026-04-21",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "finance",
+          "title": "AfDB approves US$200 million to boost Nigeria agricultural production",
+          "summary": "The African Development Bank approved US$200 million for NAGS-AP Phase II, targeting agricultural productivity, priority value chains, extension, digital and climate-smart farming, and agricultural data.",
+          "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-02-13",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "research-innovation",
+          "title": "AfDB awards US$16.61 million TAAT-III grant to IITA",
+          "summary": "AfDB and IITA launched TAAT-III to scale climate-resilient agricultural technologies, strengthen seed systems and expand partnerships across Africa.",
+          "url": "https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-group-awards-166-million-grant-iita-scale-agricultural-technologies-africa-91059",
+          "source": "African Development Bank / IITA",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-02-20",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -380,6 +406,19 @@
           "source_id": "fao",
           "source_tier": 1,
           "published": "2026-10-01",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "research-innovation",
+          "title": "African countries strengthen agricultural heritage systems capacity",
+          "summary": "FAO reported that a Johannesburg workshop brought 16 African countries together to strengthen agricultural heritage proposals, action plans, partnerships and resource mobilisation.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-28",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
@@ -782,7 +821,21 @@
       "name": "South Africa",
       "slug": "south-africa",
       "flag": "🇿🇦",
-      "articles": [],
+      "articles": [
+        {
+          "category": "weather-climate",
+          "title": "FAO strengthens early action after Southern Africa climate outlook",
+          "summary": "FAO highlighted SARCOF-33's forecast of drier conditions and the need for early agricultural preparedness across Southern Africa.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-07",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Afrique du Sud",
         "ar": "جنوب أفريقيا",
@@ -1572,6 +1625,19 @@
           "published": "2026-07-24",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "farmer-support",
+          "title": "FAO expands support for agricultural communities affected by Ebola in eastern DRC",
+          "summary": "FAO expanded support for communities affected by Ebola in Ituri and North Kivu, with agricultural and livelihood assistance financed through the DRC Humanitarian Fund.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-08",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -1810,7 +1876,21 @@
       "name": "Gambia",
       "slug": "gambia",
       "flag": "🇬🇲",
-      "articles": [],
+      "articles": [
+        {
+          "category": "farmer-support",
+          "title": "FAO-supported borehole improves water access in Gambian community",
+          "summary": "A borehole supported by FAO in Ngunta is easing water access and supporting rural livelihoods, agriculture and community resilience.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-16",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Gambie",
         "ar": "غامبيا",
@@ -2468,6 +2548,19 @@
           "source_id": "fao",
           "source_tier": 1,
           "published": "2026-09-21",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "farmer-support",
+          "title": "FAO Senegal highlights women farmers and rural entrepreneurs",
+          "summary": "Women farmers, livestock keepers, processors, oyster harvesters, beekeepers and rural entrepreneurs were highlighted during Senegal activities recognising their role in food security and local development.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-08-04",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
