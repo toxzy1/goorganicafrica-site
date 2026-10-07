@@ -1,5 +1,6 @@
 const managedCountries = require('./calculatorCountries.json');
 const regionsSource = require('./calculator/regions.json');
+const fallback = require('./calculator/fallback.json');
 
 const countries = (managedCountries.list || []).map((c) => ({
   code: c.code,
@@ -17,4 +18,4 @@ const regions = Array.isArray(regionsSource.regions)
   ? Object.fromEntries(regionsSource.regions.map((r) => [r.country_code, r.regions || []]))
   : regionsSource;
 
-module.exports = { countries, regions };
+module.exports = { countries, regions, fallback };
