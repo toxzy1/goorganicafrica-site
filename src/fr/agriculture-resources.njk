@@ -1,41 +1,8 @@
 ---
 layout: layouts/base.njk
 title: Ressources agricoles | GoOrganicAfrica
-description: Un centre de ressources structuré pour trouver des financements agricoles, des subventions, des machines, des équipements et des services connexes. Les ressources sont vérifiées à partir de sources officielles et présentées avec leurs informations de vérification.
+description: Répertoire vérifié de ressources agricoles en Afrique.
 language: fr
 permalink: "/fr/agriculture-resources/"
 ---
-<section class="section" style="padding-top:48px;">
-<div class="container" style="max-width:900px;" dir="ltr">
-<span class="eyebrow">Ressources agricoles</span><h1>Ressources agricoles</h1><p class="lede">Un centre de ressources structuré pour trouver des financements agricoles, des subventions, des machines, des équipements et des services connexes. Les ressources sont destinées à être vérifiées et gérées via le CMS de GoOrganicAfrica.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:32px;">
-<a class="ebook-card" href="/fr/agricultural-finance/" style="text-decoration:none;"><h2>Financement agricole</h2><p>Prêts, assurances, financement des intrants, financement des équipements, crédit-bail et autres solutions de financement agricole.</p></a>
-<a class="ebook-card" href="/fr/agricultural-grants/" style="text-decoration:none;"><h2>Subventions & opportunités</h2><p>Subventions, aides, concours, programmes pour les jeunes et les femmes, formations et autres opportunités agricoles.</p></a>
-<a class="ebook-card" href="/fr/farm-machinery/" style="text-decoration:none;"><h2>Machines agricoles</h2><p>Tracteurs, semoirs, récolteuses, irrigation, transformation, serres et autres équipements agricoles.</p></a></div>
-<div style="margin-top:36px;">
-  <h2>Répertoire des 54 pays africains</h2>
-  <p>Ressources officielles en cours de vérification pour chaque pays.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px;">
-    {% for country in agriculturalResources.countries %}
-    <details style="padding:14px;border:1px solid var(--line);border-radius:10px;">
-      <summary style="cursor:pointer;font-weight:700;">{{ country.flag }} {{ country.name }}</summary>
-      <div style="margin-top:12px;">
-        {% for category in agriculturalResources.categories %}
-          {% if country.records[category] and country.records[category] | length %}
-            <h3 style="font-size:1rem;margin:14px 0 8px;">{% if category == "finance" %}Financement{% elif category == "grants" %}Subventions{% elif category == "machinery" %}Machines{% else %}Ressources générales{% endif %}</h3>
-            {% for record in country.records[category] %}
-            <div style="padding:12px;margin:8px 0;border:1px solid var(--line);border-radius:8px;">
-              <strong>{% if language == "fr" and record.localized.fr %}{{ record.localized.fr.title }}{% elif language == "ar" and record.localized.ar %}{{ record.localized.ar.title }}{% elif language == "pt" and record.localized.pt %}{{ record.localized.pt.title }}{% elif language == "sw" and record.localized.sw %}{{ record.localized.sw.title }}{% else %}{{ record.title }}{% endif %}</strong>
-              <p style="margin:6px 0;">{% if language == "fr" and record.localized.fr %}{{ record.localized.fr.description }}{% elif language == "ar" and record.localized.ar %}{{ record.localized.ar.description }}{% elif language == "pt" and record.localized.pt %}{{ record.localized.pt.description }}{% elif language == "sw" and record.localized.sw %}{{ record.localized.sw.description }}{% else %}{{ record.description }}{% endif %}</p>
-              <div style="font-size:.82rem;opacity:.78;">Source : {{ record.source }} · Vérifié : {{ record.verified }}</div>
-              <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer">Ouvrir la source officielle →</a>
-            </div>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </details>
-    {% endfor %}
-  </div>
-</div>
-<div style="margin-top:36px;padding:20px;border:1px solid var(--line);border-radius:12px;"><h2>La vérification est importante</h2><p>Les offres de financement et d’équipement peuvent changer, fermer ou comporter des conditions d’éligibilité. GoOrganicAfrica publiera les ressources actives avec des liens officiels et des dates de vérification lorsque disponibles.</p></div>
-</div></section>
+{% include "resources-directory.njk" %}
