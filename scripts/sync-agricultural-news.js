@@ -73,27 +73,42 @@ function googleFeed(query) {
 function buildFeeds(countries) {
   const feeds = [...BASE_FEEDS];
 
-  // Country-level FAO discovery gives every one of the 54 countries a
-  // dedicated search path without inventing country news. Results still
-  // pass the same host, age and country checks below.
+  // Give every country its own authoritative discovery paths. The country
+  // is carried by the feed itself, so articles do not depend on the country
+  // name appearing in the headline/summary.
   for (const country of countries) {
-    feeds.push({
-      name: "FAO country discovery — " + country.name,
-      url: googleFeed('site:fao.org "' + country.name + '" agriculture'),
-      source: "FAO",
-      allowedHost: "fao.org"
-    });
-    feeds.push({
-      name: "FAO emergency discovery — " + country.name,
-      url: googleFeed('site:fao.org/emergencies "' + country.name + '" agriculture'),
-      source: "FAO Emergencies and Resilience",
-      allowedHost: "fao.org"
-    });
+    const q = encodeURIComponent('"'+country.name+'" agriculture');
+    const sources = [
+      {
+        name: "FAO country discovery — " + country.name,
+        url: googleFeed('site:fao.org "' + country.name + '" agriculture'),
+        source: "FAO",
+        allowedHost: "fao.org"
+      },
+      {
+        name: "IFAD country discovery — " + country.name,
+        url: googleFeed('site:ifad.org "' + country.name + '" agriculture'),
+        source: "IFAD",
+        allowedHost: "ifad.org"
+      },
+      {
+        name: "African Development Bank country discovery — " + country.name,
+        url: googleFeed('site:afdb.org "' + country.name + '" agriculture'),
+        source: "African Development Bank",
+        allowedHost: "afdb.org"
+      },
+      {
+        name: "World Bank country discovery — " + country.name,
+        url: googleFeed('site:worldbank.org "' + country.name + '" agriculture'),
+        source: "World Bank",
+        allowedHost: "worldbank.org"
+      }
+    ];
+    for (const feed of sources) feeds.push({ ...feed, country });
   }
 
   return feeds;
 }
-
 const COUNTRY_ALIASES = {
   "democratic republic of the congo": "democratic-republic-of-the-congo",
   "republic of the congo": "republic-of-the-congo",
@@ -197,7 +212,7 @@ async function main() {
       if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost) &&
           sourceHost !== feed.allowedHost && !sourceHost.endsWith("." + feed.allowedHost)) continue;
       const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
-      if (ageDays > 14) continue;
+      if (ageDays > 30) continue;
 
       const country = findCountry(title, summary, data.countries);
       if (!country || existing.has(url) || existing.has(title)) continue;
@@ -211,7 +226,9 @@ async function main() {
         source: feed.source,
         published,
         verified: today,
-        status: "official-feed"
+        status: "official-feed",
+        source_tier: 1,
+        country_code: country.code
       });
       existing.add(url);
       existing.add(title);
