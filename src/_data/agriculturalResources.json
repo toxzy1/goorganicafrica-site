@@ -73,6 +73,18 @@
             "status": "official",
             "type": "Agrifood investment opportunity",
             "access": "Official investment information; not a direct grant application."
+          },
+          {
+            "title": "Nigeria AgriConnect Compact — national agricultural transformation framework",
+            "description": "IFAD, the World Bank and Nigeria's Federal Ministry of Agriculture and Food Security launched a national framework targeting stronger farmer organisations, market access, affordable finance, digital solutions and private-sector participation. Indicative targets include nearly 3 million people with improved food and nutrition security and 2.56 million jobs by 2031.",
+            "url": "https://www.ifad.org/en/w/news/ifad-joins-government-of-nigeria-and-world-bank-to-accelerate-agricultural-transformation-through-agriconnect",
+            "source": "IFAD",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-09-28"
           }
         ],
         "grants": [],
@@ -138,7 +150,20 @@
         ],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "TAAT III — scaling proven agricultural technologies across Africa",
+            "description": "The AfDB-backed Technologies for African Agricultural Transformation programme, implemented with IITA, is scaling climate-resilient agricultural technologies, seed systems and productivity solutions across Africa.",
+            "url": "https://www.afdb.org/en/projects-and-operations/p-z1-aa0-143",
+            "source": "African Development Bank / IITA",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-09-30"
+          }
+        ],
         "climate": [
           {
             "title": "Sustainable Power and Irrigation for Nigeria Project — 2026 procurement plan",
@@ -175,7 +200,20 @@
       "slug": "ghana",
       "flag": "🇬🇭",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Ghana AgriConnect Compact — priority value-chain investment",
+            "description": "National framework prioritising cocoa, oil palm, rice, maize and poultry, alongside cashew, coconut, rubber, fisheries and the forest economy; first-phase financing needs are about USD 3.5 billion.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/06/03/ghana-launches-agriconnect-compact-to-strengthen-food-security-create-jobs-and-mobilize-investment",
+            "source": "World Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-06-03"
+          }
+        ],
         "grants": [
           {
             "title": "Regional West Africa Resilient Rice Value Chains (REWARD)",
@@ -1292,6 +1330,18 @@
             "verified": "2026-10-07",
             "status": "official",
             "type": "Agricultural value-chain development project"
+          },
+          {
+            "title": "Angola AgriConnect Compact — agricultural value-chain investment",
+            "description": "Country framework to boost domestic food production, processing, logistics, agricultural services and private investment; targets up to 700,000 jobs and up to USD 1.45 billion in public and private finance by 2030.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/06/24/angola-s-agriconnect-compact-targets-food-security-jobs-and-agricultural-growth",
+            "source": "World Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-06-24"
           }
         ],
         "grants": [],
@@ -1658,7 +1708,20 @@
             "access": "Official project/procurement information."
           }
         ],
-        "climate": [],
+        "climate": [
+          {
+            "title": "ORIAM-SA — climate-resilient agricultural and rural infrastructure",
+            "description": "IFAD-backed six-year project (2026–2031) with total project cost of USD 157 million, targeting 60,000 rural people and value chains including rice, cassava, maize, vegetables, poultry and pork.",
+            "url": "https://www.ifad.org/en/w/news/ifad-and-burkina-faso-sign-a-us-59-million-financing-agreement-to-boost-climate-resilient-agriculture",
+            "source": "IFAD",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-05-08"
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Burkina Faso",
@@ -1695,6 +1758,18 @@
             "status": "official",
             "type": "Agricultural processing infrastructure",
             "access": "Official project/procurement information."
+          },
+          {
+            "title": "PADCAE-B — maize processing and livestock-feed infrastructure",
+            "description": "AfDB-supported agricultural and livestock value-chain programme in Burundi with current procurement for studies and supervision of a maize-processing unit and livestock-feed unit.",
+            "url": "https://www.afdb.org/en/projects-and-operations/p-bi-a00-008",
+            "source": "African Development Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-10-05"
           }
         ],
         "general": [
@@ -1886,7 +1961,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "PADFP-PEJA — agribusiness and youth and women entrepreneurship in Central African Republic",
+            "description": "AfDB-supported project coordination work covers development of promising agricultural value chains and promotion of youth and women entrepreneurship in agribusiness.",
+            "url": "https://www.afdb.org/fr/documents/ami-rca-recrutement-du-coordonnateur-national-du-padfp-peja",
+            "source": "African Development Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-09-30"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -2238,6 +2326,18 @@
             "type": "Agrifood investment opportunity",
             "access": "Official investment profile; not a direct grant application.",
             "investment_highlights": "USD 110.8M total investment, 25.65% IRR and USD 287.76M NPV. The profile includes market gardening using shaded tunnels and acclimatised greenhouses across Djibouti's five regions."
+          },
+          {
+            "title": "Djibouti AgriConnect Compact — livestock, horticulture and date palms",
+            "description": "National AgriConnect framework prioritising livestock, horticulture and date palms, with investment in agricultural services, rural finance and infrastructure and an estimated USD 243 million investment need through 2030.",
+            "url": "https://www.ifad.org/en/w/news/ifad-joins-government-of-djibouti-and-world-bank-to-accelerate-agri-food-transformation-and-strengthen-food-security-through-agriconnect",
+            "source": "IFAD",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-09-16"
           }
         ],
         "grants": [],
@@ -2834,6 +2934,18 @@
             "status": "official",
             "type": "Rural economic development project",
             "access": "Official IFAD approval record; detailed implementation documents available through IFAD."
+          },
+          {
+            "title": "P2-P2RS Guinea-Bissau — pastoral code and Sahel resilience programme",
+            "description": "AfDB-funded P2-P2RS component in Guinea-Bissau includes work to develop a national pastoral code as part of a broader food and nutrition insecurity resilience programme.",
+            "url": "https://www.afdb.org/en/documents/ami-guinee-bissau-recrutement-dun-consultant-individuel-pour-lelaboration-dun-code-pastoral-en-guinee-bissau-p2-p2rs",
+            "source": "African Development Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-09-30"
           }
         ],
         "research": [],
@@ -3296,7 +3408,20 @@
       "slug": "mali",
       "flag": "🇲🇱",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "AfDB Mali — private-sector access to agricultural and agro-industrial finance",
+            "description": "AfDB and Mali business leaders are strengthening dialogue around financing instruments, bankable projects, blended finance, guarantees and technical assistance, including opportunities in agro-industry and the cotton value chain.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/mali-african-development-bank-and-business-leaders-strengthen-dialogue-improve-private-sector-access-financing-97238",
+            "source": "African Development Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-10-02"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -3597,6 +3722,18 @@
             "status": "official",
             "type": "Agricultural infrastructure / agri-processing zone",
             "access": "Official procurement notice; participation subject to the published eligibility and procurement conditions."
+          },
+          {
+            "title": "Cuamba Agri-Hub — Pemba-Lichinga Integrated Development Corridor SAPZ",
+            "description": "AfDB-financed Special Agri-Industrial Processing Zone infrastructure in Niassa Province, including the Cuamba Agri-Hub, road accessibility and supporting facilities.",
+            "url": "https://www.afdb.org/fr/documents/eoi-mozambique-construction-cuamba-agri-hub-signature-gate-emblematic-infrastructure-road-accessibility-and-supporting-office-sapz",
+            "source": "African Development Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-10-05"
           }
         ],
         "general": [
@@ -3943,7 +4080,20 @@
       "slug": "senegal",
       "flag": "🇸🇳",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Senegal AgriConnect Compact — grains, horticulture and livestock",
+            "description": "Country-led framework focused on agricultural infrastructure and services, policy reform and private investment across grains, horticulture and livestock, with targets for food security and formal agricultural employment.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/02/10/senegal-launches-agriconnect-compact-to-transform-its-agriculture-sector",
+            "source": "World Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-02-10"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -4268,7 +4418,20 @@
           }
         ],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "BREFONS Somalia — gender and social inclusion in livestock, forestry and rangeland resilience",
+            "description": "Current AfDB project support includes gender mainstreaming, social inclusion, women and youth participation, field monitoring and capacity building under the BREFONS project.",
+            "url": "https://www.afdb.org/en/documents/eoi-somalia-project-gender-specialist-brefons",
+            "source": "African Development Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-09-30"
+          }
+        ],
         "research": [],
         "climate": [
           {
@@ -4448,6 +4611,18 @@
             "status": "official",
             "type": "Agrifood resilience programme",
             "access": "Programme information"
+          },
+          {
+            "title": "BOOST Sudan — agrifood systems resilience and smallholder recovery",
+            "description": "African Development Bank-led programme targeting 232,000 smallholder farmers across 175 cooperatives in Blue Nile and Sennar, with climate-resilient seed systems, technology, storage and processing support.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/sudan-african-development-bank-and-partners-launch-boost-targeting-stronger-harvests-jobs-and-resilient-livelihoods-96962",
+            "source": "African Development Bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme / resource",
+            "access": "Official programme or project information; eligibility and implementation conditions apply.",
+            "published": "2026-09-22"
           }
         ],
         "research": [],
