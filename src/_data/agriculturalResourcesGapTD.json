@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-08",
+  "records": [
+    {
+      "country_code": "TD",
+      "category": "climate",
+      "title": "FAO GIEWS Country Brief — Chad",
+      "description": "Current FAO agricultural and food-security intelligence for Chad.",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=TCD",
+      "source": "FAO GIEWS",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural data"
+    },
+    {
+      "country_code": "TD",
+      "category": "markets",
+      "title": "PROLAC — Lake Chad irrigation and rural livelihoods",
+      "description": "World Bank evidence on irrigation, rural roads, value chains and markets supporting farmers in Chad.",
+      "url": "https://www.worldbank.org/en/news/feature/2026/07/22/beyond-hardship-how-prolac-is-restoring-hope-jobs-and-resilience-around-lake-chad",
+      "source": "World Bank",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural infrastructure and markets"
+    }
+  ]
+}
