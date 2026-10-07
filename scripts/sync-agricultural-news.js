@@ -175,7 +175,7 @@ async function main() {
     const response = await fetch(feed.url, { headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
     if (!response.ok) throw new Error(`${feed.name}: HTTP ${response.status}`);
     const xml = await response.text();
-    const items = xml.match(/<item(?:\\s[^>]*)?>[\\s\\S]*?<\\/item>/gi) || [];
+    const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
 
     for (const item of items) {
       const title = field(item, "title");
