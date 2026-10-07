@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "last_updated": "2026-10-07",
   "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
   "categories": [
@@ -522,7 +522,20 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "Zambia Cashew Development Programme Phase II Preparation Project",
+            "description": "AfDB-supported preparation work for the next phase of Zambia's cashew development programme, including feasibility and environmental studies.",
+            "type": "Agricultural value-chain development project",
+            "access": "Project information"
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -664,7 +677,20 @@
       "slug": "ethiopia",
       "flag": "🇪🇹",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "Agri-MSMEs Development for Jobs (AMD4J)",
+            "description": "AfDB agriculture project supporting agricultural micro, small and medium enterprises and job creation in Ethiopia.",
+            "type": "Agricultural enterprise development project",
+            "access": "Project information"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -888,7 +914,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "PROMAC — Aquaculture Promotion and Fisheries Value-Chain Competitiveness",
+            "description": "AfDB project supporting aquaculture development and competitiveness of fisheries value chains in Benin.",
+            "type": "Aquaculture and fisheries project",
+            "access": "Project information"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -1360,7 +1399,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "Agricultural Value-Chain Development Support Project (PADCV-PTA)",
+            "description": "AfDB-supported project focused on agricultural value chains and transformation in the Democratic Republic of the Congo.",
+            "type": "Agricultural value-chain project",
+            "access": "Project information"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -2188,7 +2240,20 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "Madagascar Lower Mangoky Irrigation Area Extension Project — Phase II",
+            "description": "AfDB-supported irrigation expansion project designed to strengthen agricultural production and resilience in the Lower Mangoky area.",
+            "type": "Irrigation and agricultural infrastructure project",
+            "access": "Project information"
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Madagascar",
@@ -2245,7 +2310,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "Enhancing Climate-Adapted Agricultural Productivity Through Improved Water Management (CAWMA)",
+            "description": "AfDB-approved agriculture and rural-development project focused on climate-adapted productivity and improved water management in Malawi.",
+            "type": "Agricultural development project",
+            "access": "Project information"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -2483,7 +2561,20 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "Technical Assistance for PAASIFEJ Environmental and Social Action Plan",
+            "description": "AfDB technical assistance supporting environmental and social implementation within Morocco's agricultural development programme.",
+            "type": "Agricultural technical assistance",
+            "access": "Project information"
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Morocco",
@@ -2978,7 +3069,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+            "title": "Sierra Leone Rice Agro-Industrial Special Zone Project — Phase I",
+            "description": "AfDB agriculture project supporting rice-focused agro-industrial development and value-chain transformation in Sierra Leone.",
+            "type": "Agricultural value-chain project",
+            "access": "Project information"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
