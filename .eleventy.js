@@ -18,14 +18,19 @@ module.exports = function (eleventyConfig) {
     const path = require("path");
     const primary = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalResources.json"), "utf8"));
     const supplement = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalResourcesSupplement.json"), "utf8"));
-    const categories = [...new Set([...(primary.categories || []), ...(supplement.records || []).map(r => r.category).filter(Boolean)])];
+    const gapFiles = fs.readdirSync(path.join(process.cwd(), "src/_data")).filter(name => /^agriculturalResourcesGap.*\\.json$/.test(name));
+    const gapRecords = gapFiles.flatMap(name => { try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data", name), "utf8")).records || []; } catch (_) { return []; } });
+    const allSupplementRecords = [...(supplement.records || []), ...gapRecords];
+    const categoryAliases = { "weather-climate": "climate", "policy": "general" };
+    const normalisedSupplementRecords = allSupplementRecords.map(r => ({ ...r, category: categoryAliases[r.category] || r.category }));
+    const categories = [...new Set([...(primary.categories || []), ...normalisedSupplementRecords.map(r => r.category).filter(Boolean)])];
     const countries = (primary.countries || []).map(c => ({
       ...c,
       records: Object.fromEntries(categories.map(cat => [cat, [...(c.records?.[cat] || [])]]))
     }));
     const byCode = new Map(countries.map(c => [c.code, c]));
 
-    for (const r of supplement.records || []) {
+    for (const r of normalisedSupplementRecords) {
       const c = byCode.get(r.country_code);
       if (!c || !r.category) continue;
       c.records[r.category] = c.records[r.category] || [];
