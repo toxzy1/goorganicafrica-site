@@ -2,16 +2,33 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalResources.json");
-const FEEDS = [
-  { name: "World Bank agriculture finance", url: "https://news.google.com/rss/search?q=site%3Aworldbank.org%20Africa%20agriculture%20funding%20grant%20finance&hl=en&gl=US&ceid=US%3Aen", host: "worldbank.org", source: "World Bank" },
-  { name: "African Development Bank agriculture opportunities", url: "https://news.google.com/rss/search?q=site%3Aafdb.org%20Africa%20agriculture%20grant%20finance%20project&hl=en&gl=US&ceid=US%3Aen", host: "afdb.org", source: "African Development Bank" },
-  { name: "CGIAR agriculture programmes", url: "https://news.google.com/rss/search?q=site%3Acgiar.org%20Africa%20agriculture%20programme%20funding&hl=en&gl=US&ceid=US%3Aen", host: "cgiar.org", source: "CGIAR" },
-  { name: "WFP agriculture resilience", url: "https://news.google.com/rss/search?q=site%3Awfp.org%20Africa%20agriculture%20resilience%20funding&hl=en&gl=US&ceid=US%3Aen", host: "wfp.org", source: "World Food Programme" },
-  { name: "FAO grants", url: "https://news.google.com/rss/search?q=site%3Afao.org%20Africa%20grant%20agriculture%20call%20proposals&hl=en&gl=US&ceid=US%3Aen", host: "fao.org", source: "FAO" },
-  { name: "IFAD opportunities", url: "https://news.google.com/rss/search?q=site%3Aifad.org%20Africa%20agriculture%20finance%20grant&hl=en&gl=US&ceid=US%3Aen", host: "ifad.org", source: "IFAD" },
-  { name: "AfDB agriculture finance", url: "https://news.google.com/rss/search?q=site%3Aafdb.org%20Africa%20agriculture%20finance%20funding&hl=en&gl=US&ceid=US%3Aen", host: "afdb.org", source: "African Development Bank" },
-  { name: "EAC funding", url: "https://news.google.com/rss/search?q=site%3Aeac.int%20agriculture%20funding%20grants&hl=en&gl=US&ceid=US%3Aen", host: "eac.int", source: "East African Community" }
+const BASE_FEEDS = [
+  { name: "World Bank agriculture finance", query: "site:worldbank.org agriculture funding grant finance", host: "worldbank.org", source: "World Bank" },
+  { name: "African Development Bank agriculture opportunities", query: "site:afdb.org agriculture grant finance project", host: "afdb.org", source: "African Development Bank" },
+  { name: "FAO grants and programmes", query: "site:fao.org agriculture grant call proposals programme", host: "fao.org", source: "FAO" },
+  { name: "IFAD opportunities and programmes", query: "site:ifad.org agriculture finance grant call proposals programme", host: "ifad.org", source: "IFAD" },
+  { name: "CGIAR agriculture programmes", query: "site:cgiar.org Africa agriculture programme funding", host: "cgiar.org", source: "CGIAR" },
+  { name: "WFP agriculture resilience", query: "site:wfp.org Africa agriculture resilience funding", host: "wfp.org", source: "World Food Programme" }
 ];
+
+function googleFeed(query) {
+  return "https://news.google.com/rss/search?q=" + encodeURIComponent(query) + "&hl=en&gl=US&ceid=US%3Aen";
+}
+
+function buildFeeds(countries) {
+  const feeds = [];
+  for (const country of countries) {
+    for (const base of BASE_FEEDS) {
+      feeds.push({
+        ...base,
+        name: base.name + " — " + country.name,
+        url: googleFeed(base.query + ' "' + country.name + '"'),
+        country
+      });
+    }
+  }
+  return feeds;
+}
 
 function clean(s = "") {
   return s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/<[^>]+>/g, " ")
@@ -42,6 +59,8 @@ async function main() {
   const existing = new Set(data.countries.flatMap(c => Object.values(c.records || {}).flatMap(list => (list || []).map(r => r.url || r.title))));
   let added = 0;
 
+  const FEEDS = buildFeeds(data.countries);
+
   for (const feed of FEEDS) {
     const response = await fetch(feed.url, {headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}});
     if (!response.ok) throw new Error(feed.name + ": HTTP " + response.status);
@@ -58,10 +77,10 @@ async function main() {
       if (!title || !link || !published || !link.includes(feed.host) || existing.has(link) || existing.has(title)) continue;
 
       const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
-      if (age > 60) continue;
+      if (age > 90) continue;
 
       const hay = (title + " " + summary).toLowerCase();
-      const country = data.countries.find(c => hay.includes(c.name.toLowerCase()));
+      const country = feed.country || data.countries.find(c => hay.includes(c.name.toLowerCase()));
       if (!country) continue;
 
       const bucket = categoryFor(title, summary);
@@ -73,6 +92,8 @@ async function main() {
         source: feed.source,
         verified: today,
         status: "review",
+        source_tier: 1,
+        country_code: country.code,
         type: "Opportunity / resource candidate",
         amount: "",
         eligibility: "",
