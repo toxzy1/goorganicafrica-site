@@ -1,12 +1,19 @@
 {
-  "version": 1,
-  "last_updated": "2026-10-05",
+  "version": 2,
+  "last_updated": "2026-10-07",
   "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
   "categories": [
     "finance",
     "grants",
     "machinery",
-    "general"
+    "general",
+    "inputs",
+    "markets",
+    "insurance",
+    "farmer-support",
+    "research",
+    "climate",
+    "data"
   ],
   "countries": [
     {
@@ -16,6 +23,30 @@
       "flag": "🇳🇬",
       "records": {
         "finance": [
+          {
+            "title": "National Agricultural Growth Scheme — Agro-Pocket (NAGS-AP)",
+            "description": "African Development Bank financing supports agricultural inputs, priority crop value chains, extension, digital and climate-smart agriculture, and agricultural data management in Nigeria.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural programme and finance",
+            "access": "Programme information; not a direct farmer application page"
+          },
+          {
+            "title": "Nigeria AGROW — Sustainable Agricultural Value-Chains for Growth",
+            "description": "World Bank-supported programme focused on smallholder productivity, value-chain development, agribusiness investment and a results-based matching-grant facility for eligible agribusinesses.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/03/31/nigeria-world-bank-approves-project-to-expand-agricultural-value-chains-and-jobs",
+            "source": "World Bank",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural value-chain finance and support",
+            "access": "Programme information; eligibility and implementation conditions apply"
+          },
           {
             "title": "NADF Onlending Programme",
             "description": "National Agricultural Development Fund financing programme that channels concessionary funds through approved participating financial institutions to eligible farmers, cooperatives and agribusinesses across the agricultural value chain.",
@@ -77,6 +108,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Nigeria",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=NGA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -87,7 +138,20 @@
       "flag": "🇬🇭",
       "records": {
         "finance": [],
-        "grants": [],
+        "grants": [
+          {
+            "title": "Regional West Africa Resilient Rice Value Chains (REWARD)",
+            "description": "African Development Bank grant-backed programme supporting climate-resilient rice production, quality inputs, mechanisation, irrigation, processing and market linkages in Ghana and the wider regional value chain.",
+            "url": "https://www.afdb.org/en/news-and-events/ghana-african-development-bank-approves-188-million-grant-boost-rice-production-96002",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural grant-supported programme",
+            "access": "Programme information"
+          }
+        ],
         "machinery": [],
         "general": [
           {
@@ -115,6 +179,39 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Ghana."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [
+          {
+            "title": "Ghana AgriConnect Compact",
+            "description": "National framework supported by the World Bank and partners to strengthen food security, jobs, investment, value addition, irrigation, seed systems, mechanisation, farmer services and agricultural finance.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/06/03/ghana-launches-agriconnect-compact-to-strengthen-food-security-create-jobs-and-mobilize-investment",
+            "source": "World Bank",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural transformation programme",
+            "access": "Programme information"
+          }
+        ],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Ghana",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=GHA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -171,6 +268,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Kenya",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=KEN",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -180,7 +297,20 @@
       "slug": "uganda",
       "flag": "🇺🇬",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Multipurpose Water for Climate Resilient Irrigation and Agro-Industrialization Programme",
+            "description": "African Development Bank programme expands irrigation, climate-smart technologies, certified seeds, soil restoration, livestock services, storage, cold chains and agricultural enterprise support in Uganda's Bunyoro subregion.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/uganda-african-development-bank-group-approves-140-million-programme-expand-irrigation-agro-industrialisation-jobs-rural-incomes-94365",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Irrigation and agro-industrialisation programme",
+            "access": "Programme information"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -209,6 +339,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Uganda."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Uganda",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=UGA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -249,6 +399,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Tanzania",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=TZA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -287,6 +457,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa South Africa."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — South Africa",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=ZAF",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -327,6 +517,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Zambia",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=ZMB",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -365,6 +575,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Rwanda."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Rwanda",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=RWA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -405,6 +635,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Cameroon",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=CMR",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -443,6 +693,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Ethiopia."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Ethiopia",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=ETH",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -483,6 +753,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Algeria",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=DZA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -521,6 +811,39 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Angola."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [
+          {
+            "title": "Eastern Region Agricultural Value Chain Development Project",
+            "description": "Government of Angola and African Development Bank project supporting cereals, beans, soybeans, groundnuts, cassava, coffee, cocoa and palm oil value chains, market access, finance, technology and inclusion.",
+            "url": "https://www.afdb.org/en/news-and-events/angola-government-and-african-development-bank-group-launch-project-stimulate-agriculture-productivity-eastern-angola-96251",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural value-chain programme",
+            "access": "Programme information"
+          }
+        ],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Angola",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=AGO",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -561,6 +884,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Benin",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=BEN",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -599,6 +942,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Botswana."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Botswana",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=BWA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -639,6 +1002,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Burkina Faso",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=BFA",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -677,6 +1060,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Burundi."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Burundi",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=BDI",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -717,6 +1120,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Cabo Verde",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=CPV",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -755,6 +1178,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Central African Republic."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Central African Republic",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=CAF",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -795,6 +1238,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Chad",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=TCD",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -833,6 +1296,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Comoros."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Comoros",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=COM",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -873,6 +1356,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Democratic Republic of the Congo",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=COD",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -911,6 +1414,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Côte d'Ivoire."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Côte d'Ivoire",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=CIV",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -951,6 +1474,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Djibouti",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=DJI",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -989,6 +1532,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Egypt."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Egypt",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=EGY",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1029,6 +1592,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Equatorial Guinea",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=GNQ",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1067,6 +1650,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Eritrea."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Eritrea",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=ERI",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1107,6 +1710,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Eswatini",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=SWZ",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1145,6 +1768,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Gabon."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Gabon",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=GAB",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1185,6 +1828,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Gambia",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=GMB",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1223,6 +1886,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Guinea."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Guinea",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=GIN",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1263,6 +1946,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Guinea-Bissau",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=GNB",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1301,6 +2004,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Lesotho."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Lesotho",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=LSO",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1341,6 +2064,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Liberia",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=LBR",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1379,6 +2122,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Libya."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Libya",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=LBY",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1419,6 +2182,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Madagascar",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=MDG",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1457,6 +2240,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Malawi."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Malawi",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=MWI",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1497,6 +2300,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Mali",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=MLI",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1535,6 +2358,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Mauritania."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Mauritania",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=MRT",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1575,6 +2418,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Mauritius",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=MUS",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1613,6 +2476,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Morocco."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Morocco",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=MAR",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1653,6 +2536,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Mozambique",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=MOZ",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1691,6 +2594,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Namibia."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Namibia",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=NAM",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1731,6 +2654,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Niger",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=NER",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1769,6 +2712,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Republic of the Congo."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Republic of the Congo",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=COG",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1809,6 +2772,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — São Tomé and Príncipe",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=STP",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1847,6 +2830,51 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Senegal."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [
+          {
+            "title": "Northern and Central Agricultural Production Areas Connectivity Project",
+            "description": "Additional World Bank financing is improving resilient rural roads, processing platforms, storage, markets and community infrastructure in major agricultural areas of Senegal.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/07/15/world-bank-approves-140-million-to-improve-road-connectivity-in-senegal-s-northern-and-central-agricultural-areas",
+            "source": "World Bank",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural infrastructure and market access",
+            "access": "Project information"
+          },
+          {
+            "title": "Senegal AgriConnect Compact",
+            "description": "World Bank-supported national framework focused on grains, horticulture and livestock through infrastructure, agricultural services, policy reform and private investment.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/02/10/senegal-launches-agriconnect-compact-to-transform-its-agriculture-sector",
+            "source": "World Bank",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural transformation programme",
+            "access": "Programme information"
+          }
+        ],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Senegal",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=SEN",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1887,6 +2915,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Seychelles",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=SYC",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -1925,6 +2973,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Sierra Leone."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Sierra Leone",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=SLE",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -1965,6 +3033,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Somalia",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=SOM",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -2003,6 +3091,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa South Sudan."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — South Sudan",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=SSD",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -2043,6 +3151,39 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [
+          {
+            "title": "BOOST — Boosting Agrifood Systems Resilience in Sudan",
+            "description": "African Development Bank and WFP project supporting farming households to restore production, reduce post-harvest losses, improve incomes and strengthen local market links.",
+            "url": "https://www.afdb.org/en/news-and-events/african-development-bank-group-launches-project-boost-agriculture-sudan-94222",
+            "source": "African Development Bank / WFP",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agrifood resilience programme",
+            "access": "Programme information"
+          }
+        ],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Sudan",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=SDN",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -2081,6 +3222,26 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Togo."
               }
             }
+          }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Togo",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=TGO",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -2121,6 +3282,26 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Tunisia",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=TUN",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     },
@@ -2131,7 +3312,20 @@
       "flag": "🇿🇼",
       "records": {
         "finance": [],
-        "grants": [],
+        "grants": [
+          {
+            "title": "Agricultural Climate Resilient and Vulnerability Reduction Project (ACRES)",
+            "description": "African Development Bank grant-supported project for climate-exposed rural communities, smallholder agriculture, grazing areas, water resources and private-sector investment in selected Zimbabwean provinces.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/zimbabwe-african-development-bank-grants-25-million-protect-drought-prone-communities-and-strengthen-food-security-92674",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-resilience grant programme",
+            "access": "Programme information"
+          }
+        ],
         "machinery": [],
         "general": [
           {
@@ -2160,8 +3354,28 @@
               }
             }
           }
+        ],
+        "inputs": [],
+        "markets": [],
+        "insurance": [],
+        "farmer-support": [],
+        "research": [],
+        "climate": [],
+        "data": [
+          {
+            "title": "FAO GIEWS Country Brief — Zimbabwe",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=ZWE",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
+          }
         ]
       }
     }
   ]
-}
+}\n
