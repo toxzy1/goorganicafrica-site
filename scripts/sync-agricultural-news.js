@@ -214,7 +214,7 @@ async function main() {
       const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
       if (ageDays > 30) continue;
 
-      const country = findCountry(title, summary, data.countries);
+      const country = feed.country || findCountry(title, summary, data.countries);
       if (!country || existing.has(url) || existing.has(title)) continue;
 
       country.articles = country.articles || [];
