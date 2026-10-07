@@ -59,7 +59,8 @@ module.exports = function (eleventyConfig) {
     return { ...primary, categories, countries, total: countries.reduce((n, c) => n + c.total, 0) };
   });
 
-  // Collections\n  eleventyConfig.addCollection("ebooks", function (collectionApi) {
+  // Collections
+  eleventyConfig.addCollection("ebooks", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/ebooks/*.md").filter((item) => item.data.active !== false).sort((a, b) => {
       return (a.data.order || 99) - (b.data.order || 99);
     });
