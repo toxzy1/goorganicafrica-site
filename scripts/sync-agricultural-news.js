@@ -4,6 +4,37 @@ const path = require("path");
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalNews.json");
 const BASE_FEEDS = [
   {
+    name: "World Bank Africa agriculture discovery",
+    url: "https://news.google.com/rss/search?q=site%3Aworldbank.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "World Bank",
+    allowedHost: "worldbank.org"
+  },
+  {
+    name: "African Development Bank agriculture discovery",
+    url: "https://news.google.com/rss/search?q=site%3Aafdb.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "African Development Bank",
+    allowedHost: "afdb.org"
+  },
+  {
+    name: "IFAD Africa agriculture discovery",
+    url: "https://news.google.com/rss/search?q=site%3Aifad.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "International Fund for Agricultural Development (IFAD)",
+    allowedHost: "ifad.org"
+  },
+  {
+    name: "CGIAR Africa agriculture discovery",
+    url: "https://news.google.com/rss/search?q=site%3Acgiar.org%20Africa%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "CGIAR",
+    allowedHost: "cgiar.org"
+  },
+  {
+    name: "WFP Africa food security discovery",
+    url: "https://news.google.com/rss/search?q=site%3Awfp.org%20Africa%20food%20security%20agriculture&hl=en&gl=US&ceid=US%3Aen",
+    source: "World Food Programme (WFP)",
+    allowedHost: "wfp.org"
+  },
+
+  {
     name: "FAO Africa discovery",
     url: "https://news.google.com/rss/search?q=site%3Afao.org%2Fafrica%20agriculture%20Africa&hl=en&gl=US&ceid=US%3Aen",
     source: "FAO Regional Office for Africa",
