@@ -186,6 +186,17 @@
         "insurance": [],
         "farmer-support": [
           {
+            "title": "Ghana AgriConnect Compact — IFAD partnership",
+            "description": "IFAD partnership with Ghana, the World Bank and other partners to accelerate agri-food transformation, market integration and inclusive rural growth.",
+            "url": "https://www.ifad.org/en/v/press-release/ifad-partners-with-government-of-ghana-and-world-bank-to-transform-agri-food-systems-through-agriconnect-compact",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural transformation and farmer-support programme"
+          },
+          {
             "title": "Ghana AgriConnect Compact",
             "description": "National framework supported by the World Bank and partners to strengthen food security, jobs, investment, value addition, irrigation, seed systems, mechanisation, farmer services and agricultural finance.",
             "url": "https://www.worldbank.org/en/news/press-release/2026/06/03/ghana-launches-agriconnect-compact-to-strengthen-food-security-create-jobs-and-mobilize-investment",
@@ -298,6 +309,17 @@
       "flag": "🇺🇬",
       "records": {
         "finance": [
+          {
+            "title": "Multipurpose Water for Climate Resilient Irrigation Development and Agro-Industrialization Programme",
+            "description": "African Development Bank-supported programme focused on irrigation expansion, climate resilience and agro-industrialisation in Uganda.",
+            "url": "https://www.afdb.org/en/news-and-events/uganda-african-development-bank-group-approves-140-million-programme-expand-irrigation-agro-industrialisation-jobs-and-rural-incomes-94365",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Irrigation and agro-industrialisation programme"
+          },
           {
             "title": "Multipurpose Water for Climate Resilient Irrigation and Agro-Industrialization Programme",
             "description": "African Development Bank programme expands irrigation, climate-smart technologies, certified seeds, soil restoration, livestock services, storage, cold chains and agricultural enterprise support in Uganda's Bunyoro subregion.",
@@ -808,7 +830,19 @@
       "slug": "angola",
       "flag": "🇦🇴",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Eastern Region Agricultural Value Chain Development Project",
+            "description": "African Development Bank project launched to stimulate agricultural productivity and strengthen agricultural value chains in eastern Angola.",
+            "url": "https://www.afdb.org/en/news-and-events/angola-government-and-african-development-bank-group-launch-project-stimulate-agriculture-productivity-eastern-angola-96251",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural value-chain development project"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -1011,7 +1045,19 @@
       "slug": "burkina-faso",
       "flag": "🇧🇫",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Strengthening Agricultural and Rural Infrastructure for Food Sovereignty Project",
+            "description": "IFAD financing supports climate-resilient agriculture, stronger food value chains, rural incomes and food and nutrition security in Burkina Faso.",
+            "url": "https://www.ifad.org/en/v/press-release/ifad-and-burkina-faso-sign-a-us-59-million-financing-agreement-to-boost-climate-resilient-agriculture",
+            "source": "IFAD",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural finance and climate-resilience project"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -3274,7 +3320,19 @@
           }
         ],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "title": "BOOST — Boosting Agrifood Systems Resilience in Sudan",
+            "description": "A four-year AfDB and WFP initiative supporting more than 230,000 farming households, agricultural production, post-harvest management and local market linkages.",
+            "url": "https://www.afdb.org/en/news-and-events/african-development-bank-group-launches-project-boost-agriculture-sudan-94222",
+            "source": "African Development Bank and World Food Programme",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate resilience and food-systems programme"
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Sudan",
