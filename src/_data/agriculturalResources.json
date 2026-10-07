@@ -85,6 +85,19 @@
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
             "published": "2026-09-28"
+          },
+          {
+            "title": "AfDB Nigeria NAGS-AP Phase II — US$200 million agricultural production and value-chain financing",
+            "description": "AfDB approved a US$200 million loan for the second phase of Nigeria's National Agricultural Growth Scheme–Agro-Pocket, supporting quality inputs, priority crop value chains, extension, digital and climate-smart agriculture, and agricultural data management.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-02-13"
           }
         ],
         "grants": [],
@@ -133,7 +146,21 @@
             }
           }
         ],
-        "inputs": [],
+        "inputs": [
+          {
+            "title": "Nigeria NAGS-AP Phase II — improved agricultural inputs and digital delivery",
+            "description": "The programme expands access to quality agricultural inputs and builds on an ICT-based system used to deliver seeds, pesticides and fertiliser through agro-dealers, alongside stronger agricultural data and extension services.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
+            "source": "African Development Bank",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-02-13"
+          }
+        ],
         "markets": [
           {
             "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
@@ -196,6 +223,19 @@
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
             "published": "2026-04-21"
+          },
+          {
+            "title": "TAAT-III — AfDB and IITA scale climate-resilient agricultural technologies",
+            "description": "A US$16.61 million AfDB grant to IITA launches TAAT-III to scale proven agricultural technologies, strengthen seed systems and expand partnerships among research institutions, governments and private-sector actors across Africa.",
+            "url": "https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-group-awards-166-million-grant-iita-scale-agricultural-technologies-africa-91059",
+            "source": "African Development Bank / IITA",
+            "source_id": "afdb",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-02-20"
           }
         ],
         "climate": [
@@ -430,6 +470,19 @@
             "type": "Agricultural innovation and value-chain resource",
             "access": "Official information; eligibility and implementation conditions apply.",
             "published": "2026-10-01"
+          },
+          {
+            "title": "FAO agricultural heritage systems capacity programme for Africa",
+            "description": "FAO brought 16 African countries together in Johannesburg to strengthen proposals, action plans, partnerships and resource mobilisation for Globally Important Agricultural Heritage Systems.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail",
+            "source": "FAO",
+            "source_id": "fao",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-09-28"
           }
         ],
         "climate": [],
@@ -1007,7 +1060,21 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "title": "FAO Southern Africa climate outlook — early agricultural preparedness",
+            "description": "FAO strengthened early action following SARCOF-33's forecast of drier conditions across Southern Africa, helping agriculture stakeholders prepare for climate-related production risks.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail",
+            "source": "FAO",
+            "source_id": "fao",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-09-07"
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — South Africa",
@@ -2602,6 +2669,19 @@
             "verified": "2026-10-07",
             "status": "official",
             "type": "Agricultural development programme/project"
+          },
+          {
+            "title": "FAO DRC — support to communities affected by Ebola in Ituri and North Kivu",
+            "description": "FAO expanded support for communities affected by Ebola in Ituri and North Kivu with financing from the DRC Humanitarian Fund, targeting agricultural and livelihood recovery.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail",
+            "source": "FAO",
+            "source_id": "fao",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-09-08"
           }
         ],
         "research": [
@@ -3230,7 +3310,21 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "FAO Gambia — community borehole support for water security and rural livelihoods",
+            "description": "FAO-supported borehole infrastructure in Ngunta, Gambia is improving access to water while contributing to local livelihoods, sustainable agriculture and cross-border community resilience.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail",
+            "source": "FAO",
+            "source_id": "fao",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-09-16"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -4689,6 +4783,19 @@
             "status": "official",
             "type": "Agricultural development project",
             "access": "Official IFAD approval record; detailed implementation documents available through IFAD."
+          },
+          {
+            "title": "FAO Senegal — International Year of Women Farmers rural-enterprise support",
+            "description": "FAO highlighted Senegalese women farmers, livestock keepers, processors, oyster harvesters, beekeepers and rural entrepreneurs as contributors to food security and local development, with emphasis on recognition and support.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail",
+            "source": "FAO",
+            "source_id": "fao",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-08-04"
           }
         ],
         "research": [
