@@ -11,7 +11,8 @@
     "check:links": "node scripts/check-links.js",
     "check:i18n": "node scripts/check-localization.js",
     "audit:rendered": "node scripts/audit-rendered-site.js",
-    "check:cms": "node scripts/check-cms.js"
+    "check:cms": "node scripts/check-cms.js",
+    "sync:agriculture": "node scripts/sync-agricultural-news.js && node scripts/sync-agricultural-opportunities.js"
   },
   "keywords": [],
   "author": "",
