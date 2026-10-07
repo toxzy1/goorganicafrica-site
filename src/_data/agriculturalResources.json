@@ -162,6 +162,28 @@
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
             "published": "2026-09-30"
+          },
+          {
+            "title": "IITA digital breeding capacity pilot — Nigeria",
+            "description": "IITA's 2026 capacity-development pilot is strengthening digital breeding data management and analytics for Nigerian researchers and national breeding programmes using CGIAR-recommended platforms.",
+            "url": "https://iita.org/capacity-development-office/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          },
+          {
+            "title": "IITA Capacity Development Office — African agrifood learning and innovation",
+            "description": "IITA's Capacity Development Office develops agricultural knowledge and skills programmes across sub-Saharan Africa, including support for women, youth and farming communities.",
+            "url": "https://iita.org/capacity-development-office/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
           }
         ],
         "climate": [
@@ -347,6 +369,17 @@
             "status": "official",
             "type": "Agricultural finance/research programme",
             "access": "Official programme information; eligibility and implementation conditions apply."
+          },
+          {
+            "title": "IITA digital breeding capacity pilot — Ghana",
+            "description": "IITA's 2026 capacity-development pilot is strengthening digital breeding data management and analytics for Ghanaian researchers and national breeding programmes.",
+            "url": "https://iita.org/capacity-development-office/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
           }
         ],
         "climate": [],
@@ -698,7 +731,19 @@
         ],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "IITA digital breeding capacity pilot — Uganda",
+            "description": "IITA's 2026 capacity-development pilot is strengthening digital breeding data management and analytics for Ugandan researchers and national breeding programmes.",
+            "url": "https://iita.org/capacity-development-office/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -815,6 +860,17 @@
             "status": "official",
             "type": "Agricultural finance/research programme",
             "access": "Official programme information; eligibility and implementation conditions apply."
+          },
+          {
+            "title": "IITA digital breeding capacity pilot — Tanzania",
+            "description": "IITA's 2026 capacity-development pilot is strengthening digital breeding data management and analytics for Tanzanian researchers and national breeding programmes.",
+            "url": "https://iita.org/capacity-development-office/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
           }
         ],
         "climate": [
@@ -1177,8 +1233,32 @@
         ],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
-        "climate": [],
+        "research": [
+          {
+            "title": "IITA cassava innovations and clean-seed value chain support",
+            "description": "IITA showcased cassava innovations and clean-seed-to-food value-chain solutions at Rwanda's 2026 Agrishow, supporting improved planting material, processing and farmer-oriented commercialization.",
+            "url": "https://iita.org/news-item/from-clean-seed-to-food-and-feed-iita-showcases-cassava-innovations-at-rwanda-s-agrishow/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
+        "climate": [
+          {
+            "title": "FAO Eastern Africa climate-finance investment pipelines",
+            "description": "FAO brought together eight Eastern African countries to strengthen preparation of investment-ready climate-finance programmes for resilient and sustainable agrifood systems.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail/from-ideas-to-investments-fao-boosts-climate-finance-capacity-across-eastern-africa/en",
+            "source": "FAO",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Rwanda",
@@ -1379,7 +1459,19 @@
         ],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "Africa Forum on Harnessing Science and Innovation for Agrifood Systems Transformation",
+            "description": "FAO's 27–29 October 2026 Africa forum in Addis Ababa focuses on scaling crop, livestock, fisheries and aquaculture innovations, investment opportunities and a regional research-and-innovation roadmap.",
+            "url": "https://www.fao.org/africa/events/events-detail/africa-forum-on-harnessing-science-and-innovation-for-agrifood-systems-transformation/en",
+            "source": "FAO",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -2032,7 +2124,19 @@
           }
         ],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "IFAD PRO-AGUA — sustainable and inclusive water access for resilient agriculture",
+            "description": "IFAD approved PRO-AGUA in Cabo Verde on 10 September 2026, supporting sustainable and inclusive water access for resilient agriculture.",
+            "url": "https://www.ifad.org/en/projects-list",
+            "source": "IFAD",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "research": [],
         "climate": [
           {
@@ -2346,7 +2450,19 @@
             "type": "Agricultural development programme/project"
           }
         ],
-        "research": [],
+        "research": [
+          {
+            "title": "IITA agricultural innovation and partnership support in the Democratic Republic of Congo",
+            "description": "IITA's 2026 work in the DRC includes agricultural innovation, technical support and partnerships aimed at scaling technologies and strengthening value chains.",
+            "url": "https://iita.org/news-item/iita-democratic-republic-of-the-congo-strengthen-agricultural-partnership-with-new-mou/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -3236,7 +3352,19 @@
         ],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "FAO Atoms4Food country assessment — food and nutrition security innovation",
+            "description": "FAO and IAEA are assessing how nuclear and related technologies can strengthen food safety, nutrition, crop and livestock productivity and evidence-based agricultural decision-making in Liberia.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail/atoms4food-charts-path-to-food-security-in-liberia/en",
+            "source": "FAO / IAEA",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -3794,6 +3922,17 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Morocco."
               }
             }
+          },
+          {
+            "title": "IFAD Integrated Rural Development Project in Khenifra",
+            "description": "IFAD approved a rural development project in Morocco in September 2026, adding current rural infrastructure and productive-capacity support to the country's agricultural development pipeline.",
+            "url": "https://www.ifad.org/en/projects-list",
+            "source": "IFAD",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
           }
         ],
         "inputs": [],
@@ -4210,7 +4349,19 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "IITA seed-system strengthening in São Tomé and Príncipe",
+            "description": "IITA is supporting stronger seed systems for cassava, maize, sweet potato and yam to improve food security, nutrition and rural livelihoods in São Tomé and Príncipe.",
+            "url": "https://iita.org/news-item/iita-strengthens-seed-systems-in-sao-tome-and-principe/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -4790,7 +4941,19 @@
             "published": "2026-09-22"
           }
         ],
-        "research": [],
+        "research": [
+          {
+            "title": "Sudan Digital Agriculture and Food Safety Academy",
+            "description": "IITA and partners are developing a digital learning platform covering food safety, climate-smart agriculture, agronomy, plant health and postharvest management for farmers, extension workers, processors and agribusinesses in Sudan.",
+            "url": "https://iita.org/capacity-development-office/",
+            "source": "IITA / CGIAR",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural research / programme resource",
+            "access": "Official information; programme eligibility and implementation conditions apply."
+          }
+        ],
         "climate": [
           {
             "title": "BOOST — Boosting Agrifood Systems Resilience in Sudan",
