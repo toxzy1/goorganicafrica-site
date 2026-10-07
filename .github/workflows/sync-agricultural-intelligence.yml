@@ -1,0 +1,52 @@
+name: Sync agricultural intelligence
+
+on:
+  schedule:
+    - cron: "17 3 * * 1,4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agricultural-intelligence-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync news and opportunities
+        run: npm run sync:agriculture
+
+      - name: Check generated data
+        run: |
+          npm run check:cms
+          npm run check:i18n
+
+      - name: Commit updated intelligence
+        run: |
+          git config user.name "GoOrganicAfrica Agriculture Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No agricultural data changes."
+            exit 0
+          fi
+          git add src/_data/agriculturalNews.json src/_data/agriculturalResources.json
+          git commit -m "Update agricultural intelligence data"
+          git push
