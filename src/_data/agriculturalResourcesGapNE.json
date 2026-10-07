@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-10-08",
+  "records": [
+    {
+      "country_code": "NE",
+      "country": "Niger",
+      "category": "general",
+      "title": "Ministère de l'Agriculture et de l'Élevage — portail officiel",
+      "description": "Official ministry portal covering agricultural and livestock policy, programmes, public documents, bulletins, rural support and sector information.",
+      "source": "Ministère de l'Agriculture et de l'Élevage du Niger",
+      "source_tier": 1,
+      "url": "https://agriculture.gouv.ne/",
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "NE",
+      "country": "Niger",
+      "category": "farmer-support",
+      "title": "APCA — Agence de Promotion du Conseil Agricole",
+      "description": "Official agricultural advisory promotion agency resource for farmer extension and agricultural counselling.",
+      "source": "Ministère de l'Agriculture et de l'Élevage du Niger",
+      "source_tier": 1,
+      "url": "https://agriculture.gouv.ne/?page_id=2245",
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "NE",
+      "country": "Niger",
+      "category": "farmer-support",
+      "title": "ProDAF — Programme de Développement de l'Agriculture Familiale",
+      "description": "Official family agriculture development programme supporting agricultural development and family farming.",
+      "source": "Ministère de l'Agriculture et de l'Élevage du Niger",
+      "source_tier": 1,
+      "url": "https://agriculture.gouv.ne/?page_id=2801",
+      "verified": "2026-10-08",
+      "status": "official"
+    }
+  ]
+}
