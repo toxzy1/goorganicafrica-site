@@ -716,7 +716,21 @@
       "name": "Burundi",
       "slug": "burundi",
       "flag": "🇧🇮",
-      "articles": [],
+      "articles": [
+        {
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official",
+          "category": "machinery-technology",
+          "title": "Burundi advances maize processing and livestock-feed infrastructure under PADCAE-B",
+          "summary": "The African Development Bank published an October 2026 procurement notice for studies and construction supervision for a maize-processing unit and livestock-feed unit under Burundi's PADCAE-B agricultural and livestock value-chain project.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-bi-a00-008",
+          "published": "2026-10-05"
+        }
+      ],
       "localizedNames": {
         "fr": "Burundi",
         "ar": "بوروندي",
@@ -1058,7 +1072,21 @@
       "name": "Mali",
       "slug": "mali",
       "flag": "🇲🇱",
-      "articles": [],
+      "articles": [
+        {
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official",
+          "category": "farmer-support",
+          "title": "IFAD TRADE programme continues agricultural diversification and entrepreneurship support in Malawi",
+          "summary": "IFAD's project portfolio lists a July 2026 supervision report for the Transforming Agriculture through Diversification and Entrepreneurship Programme, covering agricultural diversification, entrepreneurship and rural value chains in Malawi.",
+          "url": "https://www.ifad.org/en/w/projects/2000001600",
+          "published": "2026-07-31"
+        }
+      ],
       "localizedNames": {
         "fr": "Mali",
         "ar": "مالي",
@@ -1137,6 +1165,32 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official",
+          "category": "farmer-support",
+          "title": "Cuamba Agri-Hub infrastructure procurement advances under Mozambique SAPZ",
+          "summary": "The African Development Bank published an October 2026 procurement notice for the Cuamba Agri-Hub signature gate, road accessibility and supporting office in Niassa Province under the Pemba-Lichinga Integrated Development Corridor Special Agri-Industrial Processing Zone.",
+          "url": "https://www.afdb.org/fr/documents/eoi-mozambique-construction-cuamba-agri-hub-signature-gate-emblematic-infrastructure-road-accessibility-and-supporting-office-sapz",
+          "published": "2026-10-05"
+        },
+        {
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official",
+          "category": "crops",
+          "title": "IFAD-backed PROCAVA expands climate-resilient agrifood value-chain focus in Mozambique",
+          "summary": "IFAD's current project page describes PROCAVA across 75 districts and all 10 provinces, targeting irrigated horticulture, red meat, poultry, cassava and legumes to improve resilient rural incomes.",
+          "url": "https://www.ifad.org/en/w/projects/2000001981",
+          "published": "2026-06-24"
         }
       ],
       "localizedNames": {
@@ -1406,6 +1460,19 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official",
+          "category": "livestock",
+          "title": "South Sudan launches US$41.8 million sustainable agriculture and rural resilience project",
+          "summary": "IFAD and the Government of South Sudan launched SADEP to support more than 110,000 people through climate-resilient sorghum and fisheries value chains, market access, finance, extension and rural infrastructure.",
+          "url": "https://www.ifad.org/en/w/news/ifad-and-south-sudan-launch-us-41.8-million-project-to-boost-food-security-and-rural-resilience",
+          "published": "2026-07-21"
         }
       ],
       "localizedNames": {
