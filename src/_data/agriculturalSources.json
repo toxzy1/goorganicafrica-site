@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-07",
+  "editorial_rule": "Discovery may be automated, but publication requires human verification. Never treat a generic country profile as a current funding opportunity.",
+  "sources": [
+    {
+      "id": "fao-africa",
+      "name": "FAO Regional Office for Africa",
+      "domain": "fao.org",
+      "host": "fao.org",
+      "tier": 1,
+      "type": "UN agriculture authority",
+      "news": true,
+      "resources": true,
+      "categories": ["general", "grants", "climate", "research", "markets", "farmer-support"]
+    },
+    {
+      "id": "fao-giews",
+      "name": "FAO GIEWS",
+      "domain": "fao.org/giews",
+      "host": "fao.org",
+      "tier": 1,
+      "type": "UN food-security and agriculture data",
+      "news": true,
+      "resources": true,
+      "categories": ["markets", "climate", "data", "food-security"]
+    },
+    {
+      "id": "world-bank",
+      "name": "World Bank",
+      "domain": "worldbank.org",
+      "host": "worldbank.org",
+      "tier": 1,
+      "type": "multilateral development institution",
+      "news": true,
+      "resources": true,
+      "categories": ["finance", "grants", "farmer-support", "markets", "climate", "research"]
+    },
+    {
+      "id": "afdb",
+      "name": "African Development Bank",
+      "domain": "afdb.org",
+      "host": "afdb.org",
+      "tier": 1,
+      "type": "African multilateral development bank",
+      "news": true,
+      "resources": true,
+      "categories": ["finance", "grants", "farmer-support", "infrastructure", "climate"]
+    },
+    {
+      "id": "ifad",
+      "name": "International Fund for Agricultural Development",
+      "domain": "ifad.org",
+      "host": "ifad.org",
+      "tier": 1,
+      "type": "UN rural development finance institution",
+      "news": true,
+      "resources": true,
+      "categories": ["finance", "grants", "farmer-support", "markets", "rural-development"]
+    },
+    {
+      "id": "cgiar",
+      "name": "CGIAR",
+      "domain": "cgiar.org",
+      "host": "cgiar.org",
+      "tier": 1,
+      "type": "global agricultural research network",
+      "news": true,
+      "resources": true,
+      "categories": ["research", "climate", "crops", "livestock", "data"]
+    },
+    {
+      "id": "iita",
+      "name": "International Institute of Tropical Agriculture",
+      "domain": "iita.org",
+      "host": "iita.org",
+      "tier": 1,
+      "type": "agricultural research institute",
+      "news": true,
+      "resources": true,
+      "categories": ["research", "crops", "livestock", "climate", "farmer-support"]
+    },
+    {
+      "id": "agra",
+      "name": "Alliance for a Green Revolution in Africa",
+      "domain": "agra.org",
+      "host": "agra.org",
+      "tier": 2,
+      "type": "African agriculture organization",
+      "news": true,
+      "resources": true,
+      "categories": ["markets", "farmer-support", "finance", "inputs", "research"]
+    },
+    {
+      "id": "aatf",
+      "name": "African Agricultural Technology Foundation",
+      "domain": "aatf-africa.org",
+      "host": "aatf-africa.org",
+      "tier": 2,
+      "type": "African agricultural technology organization",
+      "news": true,
+      "resources": true,
+      "categories": ["technology", "crops", "research", "farmer-support"]
+    },
+    {
+      "id": "wfp",
+      "name": "World Food Programme",
+      "domain": "wfp.org",
+      "host": "wfp.org",
+      "tier": 1,
+      "type": "UN food-security organization",
+      "news": true,
+      "resources": true,
+      "categories": ["food-security", "markets", "climate", "farmer-support"]
+    }
+  ]
+}
