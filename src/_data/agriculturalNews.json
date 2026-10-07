@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "last_updated": "2026-10-06",
+  "version": 2,
+  "last_updated": "2026-10-07",
   "editorial_policy": "Publish only current, verifiable agricultural news from official or authoritative sources. Store the original source URL and verification date. Do not copy full articles.",
   "categories": [
     "general",
@@ -48,6 +48,58 @@
               "summary": "Wizara ya Kilimo na Usalama wa Chakula ya Nigeria imeripoti hatua mpya za kuanzisha sajili ya kitaifa ya kidijitali ya wakulima na uhakiki upya wa vyama vya ushirika kwa miezi sita ili kuboresha ulengaji wa msaada wa kilimo."
             }
           }
+        },
+        {
+          "category": "finance",
+          "title": "IFAD joins Nigeria AgriConnect to accelerate agricultural transformation",
+          "summary": "IFAD joined Nigeria, the World Bank and partners around a national framework focused on farmer organizations, market links, finance, digital solutions and private-sector participation.",
+          "url": "https://www.ifad.org/en/w/news/ifad-joins-government-of-nigeria-and-world-bank-to-accelerate-agricultural-transformation-through-agriconnect",
+          "source": "IFAD",
+          "source_id": "ifad",
+          "source_tier": 1,
+          "published": "2026-09-28",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "markets",
+          "title": "FAO GIEWS updates Nigeria agricultural and food-security outlook",
+          "summary": "The latest country brief reports uncertain 2026 cereal production prospects, elevated food inflation and severe food-security pressures in Borno State, while noting localized production impacts from dry spells in several southern and central states.",
+          "url": "https://cb.apps.fao.org/country.jsp?code=NGA",
+          "source": "FAO GIEWS",
+          "source_id": "fao-africa",
+          "source_tier": 1,
+          "published": "2026-09-16",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "finance",
+          "title": "World Bank approves $500 million Nigeria AGROW project",
+          "summary": "The new project targets smallholder productivity, stronger agricultural value chains and jobs, with a results-based matching-grant facility for eligible agribusinesses and priority value chains including rice, maize, cassava and soybeans.",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/03/31/nigeria-world-bank-approves-project-to-expand-agricultural-value-chains-and-jobs",
+          "source": "World Bank",
+          "source_id": "world-bank",
+          "source_tier": 1,
+          "published": "2026-03-30",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "finance",
+          "title": "AfDB approves $200 million to boost Nigeria agricultural production",
+          "summary": "The financing supports agricultural inputs, priority crop value chains, extension, digital and climate-smart agriculture and agricultural data management under the second phase of NAGS-AP.",
+          "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-02-13",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -118,6 +170,45 @@
               "summary": "Wizara ya Chakula na Kilimo imezindua Mpango wa Ghana wa Kujitosheleza kwa Nyanya ili kuongeza uzalishaji wa nyanya nchini."
             }
           }
+        },
+        {
+          "category": "grants-programmes",
+          "title": "AfDB approves $18.8 million grant for Ghana rice production",
+          "summary": "The REWARD project will support climate-resilient rice production, quality inputs, mechanisation, irrigation, processing and market linkages in Ghana's rice value chain.",
+          "url": "https://www.afdb.org/en/news-and-events/ghana-african-development-bank-approves-188-million-grant-boost-rice-production-96002",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-08-03",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "finance",
+          "title": "IFAD partners with Ghana and World Bank on AgriConnect",
+          "summary": "IFAD reaffirmed its partnership with Ghana and the World Bank to accelerate transformation of the country's agri-food systems and inclusive economic growth.",
+          "url": "https://www.ifad.org/en/v/48663510",
+          "source": "IFAD",
+          "source_id": "ifad",
+          "source_tier": 1,
+          "published": "2026-06-04",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "policy",
+          "title": "Ghana launches AgriConnect Compact",
+          "summary": "Ghana and development partners launched a national framework covering food security, jobs, investment, value addition, irrigation, seed systems, mechanisation, farmer services and agricultural finance.",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/06/03/ghana-launches-agriconnect-compact-to-strengthen-food-security-create-jobs-and-mobilize-investment",
+          "source": "World Bank",
+          "source_id": "world-bank",
+          "source_tier": 1,
+          "published": "2026-06-03",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -160,6 +251,19 @@
               "summary": "FAO imetangaza wito wa GEF-7 FOLUR unaolenga kusaidia mashirika ya wazalishaji, vyama vya ushirika na mashirika ya jamii yanayostahili nchini Kenya yanayofanya kazi na kahawa, mahindi na maisha yanayotegemea uhifadhi wa mazingira katika eneo la Mlima Elgon."
             }
           }
+        },
+        {
+          "category": "climate",
+          "title": "FAO GIEWS reports major rainfall and agricultural risks in Kenya",
+          "summary": "The latest GIEWS brief reports exceptionally high early 2026 long-rains in key crop areas, improving some conditions while increasing risks from excessive rainfall, fertilizer constraints and later rainfall variability.",
+          "url": "https://cb.apps.fao.org/country.jsp?code=KEN",
+          "source": "FAO GIEWS",
+          "source_id": "fao-africa",
+          "source_tier": 1,
+          "published": "2026-05-04",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -174,7 +278,21 @@
       "name": "Uganda",
       "slug": "uganda",
       "flag": "🇺🇬",
-      "articles": [],
+      "articles": [
+        {
+          "category": "finance",
+          "title": "AfDB approves $140 million programme for Uganda irrigation and agro-industrialisation",
+          "summary": "The programme expands climate-resilient irrigation and supports certified seeds, soil restoration, livestock services, storage, cold chains, finance and agricultural enterprise development in Bunyoro.",
+          "url": "https://www.afdb.org/en/news-and-events/press-releases/uganda-african-development-bank-group-approves-140-million-programme-expand-irrigation-agro-industrialisation-jobs-rural-incomes-94365",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-06-12",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Ouganda",
         "ar": "أوغندا",
@@ -187,7 +305,34 @@
       "name": "Tanzania",
       "slug": "tanzania",
       "flag": "🇹🇿",
-      "articles": [],
+      "articles": [
+        {
+          "category": "finance",
+          "title": "IFAD country programme focuses on climate-resilient production and market access in Tanzania",
+          "summary": "IFAD's Tanzania programme emphasizes climate-resilient crop, livestock and fishery value chains, stronger market access and support for small-scale producers and rural enterprises.",
+          "url": "https://www.ifad.org/en/w/countries/tanzania",
+          "source": "IFAD",
+          "source_id": "ifad",
+          "source_tier": 1,
+          "published": "2026-10-07",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "climate",
+          "title": "FAO GIEWS reports mixed 2026 seasonal conditions in Tanzania",
+          "summary": "FAO reports erratic rainfall timing affecting Masika and Msimu crops, while maize prices in May were close to the previous year's level and pockets of food insecurity remained.",
+          "url": "https://cb.apps.fao.org/country.jsp?code=TZA",
+          "source": "FAO GIEWS",
+          "source_id": "fao-africa",
+          "source_tier": 1,
+          "published": "2026-07-10",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Tanzanie",
         "ar": "تنزانيا",
@@ -278,7 +423,34 @@
       "name": "Angola",
       "slug": "angola",
       "flag": "🇦🇴",
-      "articles": [],
+      "articles": [
+        {
+          "category": "farmer-support",
+          "title": "Angola and AfDB launch Eastern Region Agricultural Value Chain Development Project",
+          "summary": "The project supports cereals, beans, soybeans, groundnuts, cassava, coffee, cocoa and palm oil value chains, with emphasis on market access, technology, finance and inclusion.",
+          "url": "https://www.afdb.org/en/news-and-events/angola-government-and-african-development-bank-group-launch-project-stimulate-agriculture-productivity-eastern-angola-96251",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-08-19",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "policy",
+          "title": "Angola launches AgriConnect Compact for food security, jobs and investment",
+          "summary": "The World Bank-supported compact brings government, finance, private-sector and farmer stakeholders together around agricultural value chains, processing, logistics and services.",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/06/24/angola-s-agriconnect-compact-targets-food-security-jobs-and-agricultural-growth",
+          "source": "World Bank",
+          "source_id": "world-bank",
+          "source_tier": 1,
+          "published": "2026-06-24",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        }
+      ],
       "localizedNames": {
         "fr": "Angola",
         "ar": "أنغولا",
@@ -748,6 +920,45 @@
               "summary": "FAO iliripoti kuwa warsha iliyofanyika Johannesburg ilileta pamoja nchi 16 za Afrika ili kuimarisha mapendekezo, mipango ya utekelezaji na ushirikiano kuhusu mifumo ya urithi wa kilimo."
             }
           }
+        },
+        {
+          "category": "farmer-support",
+          "title": "World Bank adds $140 million for Senegal's agricultural production areas",
+          "summary": "Additional financing is expanding resilient rural connectivity, processing platforms, storage, market access and community infrastructure in major agricultural corridors.",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/07/15/world-bank-approves-140-million-to-improve-road-connectivity-in-senegal-s-northern-and-central-agricultural-areas",
+          "source": "World Bank",
+          "source_id": "world-bank",
+          "source_tier": 1,
+          "published": "2026-07-14",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "policy",
+          "title": "FAO highlights stronger implementation of Africa's agrifood commitments",
+          "summary": "FAO's regional conference work in Africa is emphasizing implementation, investment, innovation and measurable results for agrifood transformation.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/fao-reports-scaled-up-results-and-sets-priorities-to-accelerate-agrifood-systems-transformation-in-africa/",
+          "source": "FAO Regional Office for Africa",
+          "source_id": "fao-africa",
+          "source_tier": 1,
+          "published": "2026-04-14",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "policy",
+          "title": "Senegal launches AgriConnect Compact to transform agriculture",
+          "summary": "The compact prioritizes grains, horticulture and livestock, combining agricultural infrastructure and services, policy reform and private investment.",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/02/10/senegal-launches-agriconnect-compact-to-transform-its-agriculture-sector",
+          "source": "World Bank",
+          "source_id": "world-bank",
+          "source_tier": 1,
+          "published": "2026-02-10",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -871,6 +1082,19 @@
               "summary": "FAO imeripoti kampeni ya kitaifa ya chanjo kwa mifugo nchini Sudan inayolenga kulinda usalama wa chakula na maisha ya vijijini wakati wa mzozo."
             }
           }
+        },
+        {
+          "category": "farmer-support",
+          "title": "AfDB and WFP launch $87 million BOOST agriculture resilience project in Sudan",
+          "summary": "BOOST is designed to help farming communities restore production, reduce post-harvest losses, improve incomes and strengthen links to local markets.",
+          "url": "https://www.afdb.org/en/news-and-events/african-development-bank-group-launches-project-boost-agriculture-sudan-94222",
+          "source": "African Development Bank / WFP",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-06-08",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -939,6 +1163,19 @@
               "summary": "FAO iliripoti kuwa Zimbabwe ilishiriki katika Jukwaa la Uwekezaji la Hand-in-Hand 2026 ili kuwasilisha fursa za uwekezaji katika mifumo ya kilimo na chakula."
             }
           }
+        },
+        {
+          "category": "grants-programmes",
+          "title": "AfDB approves $25 million climate-resilience grant for Zimbabwe",
+          "summary": "The ACRES project targets climate-exposed rural communities and aims to strengthen smallholder agriculture, grazing areas, water resources and private-sector investment.",
+          "url": "https://www.afdb.org/en/news-and-events/press-releases/zimbabwe-african-development-bank-grants-25-million-protect-drought-prone-communities-and-strengthen-food-security-92674",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-04-23",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -948,5 +1185,10 @@
         "sw": "Zimbabwe"
       }
     }
-  ]
-}
+  ],
+  "discovery": {
+    "sources_registry": "src/_data/agriculturalSources.json",
+    "publication_requires_human_review": true,
+    "max_articles_per_country": 30
+  }
+}\n
