@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-08",
+  "records": [
+    {
+      "country_code": "EG",
+      "category": "data",
+      "title": "Egypt agricultural statistics and sector publications — Ministry of Agriculture",
+      "description": "Official Egyptian agricultural statistics and publications covering agricultural statistics, machinery and tractors, food balances, farm income and sustainable agricultural development.",
+      "url": "https://www.agri.gov.eg/",
+      "source": "Ministry of Agriculture and Land Reclamation, Egypt",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural statistics and publications"
+    },
+    {
+      "country_code": "EG",
+      "category": "machinery",
+      "title": "Egypt agricultural machinery and tractors statistical bulletin",
+      "description": "Official Ministry of Agriculture publication listing agricultural machinery and tractor statistics within its economic-sector publications.",
+      "url": "https://www.agri.gov.eg/",
+      "source": "Ministry of Agriculture and Land Reclamation, Egypt",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural machinery data"
+    }
+  ]
+}
