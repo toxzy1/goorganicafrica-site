@@ -3,6 +3,10 @@ const path = require("path");
 
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalResources.json");
 const FEEDS = [
+  { name: "World Bank agriculture finance", url: "https://news.google.com/rss/search?q=site%3Aworldbank.org%20Africa%20agriculture%20funding%20grant%20finance&hl=en&gl=US&ceid=US%3Aen", host: "worldbank.org", source: "World Bank" },
+  { name: "African Development Bank agriculture opportunities", url: "https://news.google.com/rss/search?q=site%3Aafdb.org%20Africa%20agriculture%20grant%20finance%20project&hl=en&gl=US&ceid=US%3Aen", host: "afdb.org", source: "African Development Bank" },
+  { name: "CGIAR agriculture programmes", url: "https://news.google.com/rss/search?q=site%3Acgiar.org%20Africa%20agriculture%20programme%20funding&hl=en&gl=US&ceid=US%3Aen", host: "cgiar.org", source: "CGIAR" },
+  { name: "WFP agriculture resilience", url: "https://news.google.com/rss/search?q=site%3Awfp.org%20Africa%20agriculture%20resilience%20funding&hl=en&gl=US&ceid=US%3Aen", host: "wfp.org", source: "World Food Programme" },
   { name: "FAO grants", url: "https://news.google.com/rss/search?q=site%3Afao.org%20Africa%20grant%20agriculture%20call%20proposals&hl=en&gl=US&ceid=US%3Aen", host: "fao.org", source: "FAO" },
   { name: "IFAD opportunities", url: "https://news.google.com/rss/search?q=site%3Aifad.org%20Africa%20agriculture%20finance%20grant&hl=en&gl=US&ceid=US%3Aen", host: "ifad.org", source: "IFAD" },
   { name: "AfDB agriculture finance", url: "https://news.google.com/rss/search?q=site%3Aafdb.org%20Africa%20agriculture%20finance%20funding&hl=en&gl=US&ceid=US%3Aen", host: "afdb.org", source: "African Development Bank" },
@@ -20,12 +24,22 @@ function field(block, tag) {
 }
 function url(v) { const m = v.match(/https?:\/\/[^\s<>"']+/i); return m ? m[0].replace(/[),.;]+$/, "") : ""; }
 function date(v) { const d = new Date(v); return Number.isNaN(d.getTime()) ? "" : d.toISOString().slice(0,10); }
+function categoryFor(title, summary) {
+  const t = (title + " " + summary).toLowerCase();
+  if (/tractor|machinery|equipment|irrigation|mechaniz/.test(t)) return "machinery";
+  if (/loan|finance|credit|investment|bank|funding/.test(t)) return "finance";
+  if (/insurance|risk finance|risk management/.test(t)) return "insurance";
+  if (/market|trade|value chain|commodity/.test(t)) return "markets";
+  if (/research|innovation|science|technology/.test(t)) return "research";
+  if (/climate|drought|resilien|weather/.test(t)) return "climate";
+  return "grants";
+}
 function slugify(v) { return v.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""); }
 
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
   const today = new Date().toISOString().slice(0,10);
-  const existing = new Set(data.countries.flatMap(c => (c.records?.grants || []).map(r => r.url || r.title)));
+  const existing = new Set(data.countries.flatMap(c => Object.values(c.records || {}).flatMap(list => (list || []).map(r => r.url || r.title))));
   let added = 0;
 
   for (const feed of FEEDS) {
@@ -50,15 +64,16 @@ async function main() {
       const country = data.countries.find(c => hay.includes(c.name.toLowerCase()));
       if (!country) continue;
 
-      country.records.grants = country.records.grants || [];
-      country.records.grants.unshift({
+      const bucket = categoryFor(title, summary);
+      country.records[bucket] = country.records[bucket] || [];
+      country.records[bucket].unshift({
         title,
         description: summary.slice(0, 600),
         url: link,
         source: feed.source,
         verified: today,
         status: "review",
-        type: "Opportunity / grant candidate",
+        type: "Opportunity / resource candidate",
         amount: "",
         eligibility: "",
         beneficiary: "",
