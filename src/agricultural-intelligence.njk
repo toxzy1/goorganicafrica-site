@@ -12,11 +12,17 @@ permalink: /agricultural-intelligence/
   </div>
   <div style="margin:1.25rem 0;"><input id="ai-search" type="search" placeholder="Search a country or agricultural topic..." aria-label="Search agricultural intelligence" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;"></div>
   <div id="ai-results"></div>
+  <div style="margin-top:2rem;">
+    <h2>Value-chain & topic connections</h2>
+    <p>These connections are generated only where the same topic appears in real indexed records. Select a topic to search across the connected sections.</p>
+    <div id="ai-topics" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;"></div>
+  </div>
 </div>
 
 <script>
 (function(){
   const data = {{ agriculturalKnowledgeConnections.records | jsonify }};
+  const topics = {{ agriculturalTopicConnections.topics | jsonify }};
   const input = document.getElementById('ai-search'), out = document.getElementById('ai-results');
   const labels = {resources:'Resources',markets:'Markets',opportunities:'Opportunities',services:'Services & Machinery',news:'Agricultural News'};
   function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
@@ -28,6 +34,9 @@ permalink: /agricultural-intelligence/
       return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+esc(x.country)+'</h2><p><strong>'+x.total+'</strong> connected intelligence records</p><p>'+links+'</p></article>';
     }).join('') : '<p>No connected intelligence found. Try a country name or broader topic.</p>';
   }
+  const topicOut=document.getElementById('ai-topics');
+  const sectionLabels={markets:'Markets',opportunities:'Opportunities',resources:'Resources',services:'Services & Machinery',news:'Agricultural News'};
+  topicOut.innerHTML=topics.map(t=>'<a class="card" href="/search/?q='+encodeURIComponent(t.key)+'" style="text-decoration:none;padding:14px;"><strong>'+esc(t.label)+'</strong><br><span style="font-size:.85rem;">'+t.total+' connected records</span><br><span style="font-size:.8rem;">'+Object.entries(t.sections).map(([k,n])=>esc(sectionLabels[k]||k)+' '+n).join(' · ')+'</span></a>').join('');
   input.addEventListener('input',render); render();
 })();
 </script>
