@@ -20,6 +20,23 @@ module.exports = function (eleventyConfig) {
     return data;
   });
 
+  // Agricultural markets: structured market intelligence and verified source registry.
+  eleventyConfig.addGlobalData("agriculturalMarkets", () => {
+    const fs = require("fs");
+    const path = require("path");
+    const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalMarkets.json"), "utf8"));
+    const now = new Date("2026-10-08T00:00:00Z");
+    data.records = (data.records || []).map(record => {
+      const observed = record.observed_date ? new Date(record.observed_date) : null;
+      const ageDays = observed && !Number.isNaN(observed.getTime()) ? Math.floor((now - observed) / 86400000) : null;
+      const freshness = ageDays === null ? "source_reference" : ageDays <= 31 ? "recent" : ageDays <= 180 ? "older" : "stale";
+      return { ...record, freshness, is_current: freshness === "recent" };
+    });
+    data.total = data.records.length;
+    data.current_total = data.records.filter(r => r.is_current).length;
+    return data;
+  });
+
   // Static passthroughs
   // Build validation: localized content is rendered at build time.
   eleventyConfig.addPassthroughCopy("src/css");
