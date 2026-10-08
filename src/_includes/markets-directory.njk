@@ -32,6 +32,7 @@
 </article>
 {% endfor %}
 </div>
+<section style="margin:24px 0"><h2>Market indicators</h2><p>Official economic indicators provide context for market conditions; they are not substitutes for commodity quotations.</p>{% for r in agriculturalMarkets.market_indicators %}<article style="border:1px solid #ddd;border-radius:10px;padding:16px;margin:10px 0"><strong>{{ r.country }} · {{ r.indicator }}</strong><p><b>{{ r.value }} {{ r.unit }}</b> · Period: {{ r.period }}</p><small>Observed {{ r.observed_date }} · Verified {{ r.verified }} · {{ r.source }}</small><p>{{ r.note }}</p><a href="{{ r.source_url }}" target="_blank" rel="noopener noreferrer">View official source</a></article>{% endfor %}</section>
 <h2>54-country market-source coverage</h2>
 <p>Every GoOrganicAfrica country profile now has a verified market-information starting point. Regional systems are used where they provide broader coverage; FAO FPMA is the continental fallback. This is a source map, not a claim that every country has a live national quotation available today.</p>
 <div id="market-source-map" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">
