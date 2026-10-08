@@ -455,7 +455,7 @@
       "price": 14000,
       "currency": "UGX",
       "unit": "kg",
-      "price_type": "consumer market price",
+      "price_type": "wholesale",
       "observed_date": "2026-10-08",
       "source": "Uganda National Agro-Market Information Services",
       "source_url": "https://namis.uwrsa.go.ug/",
@@ -472,7 +472,7 @@
       "price": 25000,
       "currency": "UGX",
       "unit": "kg",
-      "price_type": "consumer market price",
+      "price_type": "wholesale",
       "observed_date": "2026-10-08",
       "source": "Uganda National Agro-Market Information Services",
       "source_url": "https://namis.uwrsa.go.ug/",
@@ -489,7 +489,7 @@
       "price": 4050,
       "currency": "UGX",
       "unit": "kg",
-      "price_type": "consumer market price",
+      "price_type": "wholesale",
       "observed_date": "2026-10-08",
       "source": "Uganda National Agro-Market Information Services",
       "source_url": "https://namis.uwrsa.go.ug/",
@@ -506,7 +506,7 @@
       "price": 800,
       "currency": "UGX",
       "unit": "kg",
-      "price_type": "consumer market price",
+      "price_type": "wholesale",
       "observed_date": "2026-10-08",
       "source": "Uganda National Agro-Market Information Services",
       "source_url": "https://namis.uwrsa.go.ug/",
@@ -523,7 +523,7 @@
       "price": 800,
       "currency": "UGX",
       "unit": "kg",
-      "price_type": "consumer market price",
+      "price_type": "wholesale",
       "observed_date": "2026-10-08",
       "source": "Uganda National Agro-Market Information Services",
       "source_url": "https://namis.uwrsa.go.ug/",
@@ -531,6 +531,40 @@
       "source_tier": 1,
       "status": "official",
       "note": "Current NAMIS displayed market price; retrieval date recorded as observation date."
+    },
+    {
+      "country_code": "UG",
+      "country": "Uganda",
+      "market": "NAMIS - Mbarara",
+      "commodity": "Beef",
+      "price": 16000,
+      "currency": "UGX",
+      "unit": "kg",
+      "price_type": "retail",
+      "observed_date": "2026-10-08",
+      "source": "Uganda National Agro-Market Information Services",
+      "source_url": "https://namis.uwrsa.go.ug/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "note": "Current NAMIS displayed retail market price; observation date recorded as retrieval date."
+    },
+    {
+      "country_code": "UG",
+      "country": "Uganda",
+      "market": "NAMIS - Mbarara",
+      "commodity": "Milk",
+      "price": 1000,
+      "currency": "UGX",
+      "unit": "kg",
+      "price_type": "retail",
+      "observed_date": "2026-10-08",
+      "source": "Uganda National Agro-Market Information Services",
+      "source_url": "https://namis.uwrsa.go.ug/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "note": "Current NAMIS displayed retail market price; observation date recorded as retrieval date."
     }
   ],
   "sources": [
@@ -639,8 +673,7 @@
       "source": "FAO FPMA",
       "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
       "verified": "2026-10-08"
-    }
-,
+    },
     {
       "country_code": "TZ",
       "country": "Tanzania",
@@ -878,7 +911,8 @@
       "source_tier": 1,
       "status": "official",
       "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    }  ],
+    }
+  ],
   "country_source_map": [
     {
       "country_code": "NG",
