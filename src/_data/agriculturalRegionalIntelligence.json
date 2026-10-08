@@ -169,6 +169,114 @@
         "women and youth",
         "SMEs"
       ]
+    },
+    {
+      "code": "eastern-africa",
+      "name": "Eastern Africa",
+      "countries": [
+        "BI",
+        "DJ",
+        "ER",
+        "ET",
+        "KE",
+        "RW",
+        "SO",
+        "SS",
+        "SD",
+        "TZ",
+        "UG"
+      ],
+      "type": "subregional-investment-and-resilience",
+      "title": "Eastern Africa — climate finance, agribusiness and value-chain investment intelligence",
+      "description": "FAO's Eastern Africa work links climate and environmental finance, agribusiness, agricultural value chains, resilience, market systems and investment-ready pipelines. Current 2026 work includes country climate-finance action plans and draft investment pipelines for 2027–2030.",
+      "url": "https://www.fao.org/africa/news-stories/news-detail/from-ideas-to-investments--fao-boosts-climate-finance-capacity-across-eastern-africa/en",
+      "source": "Food and Agriculture Organization of the United Nations (FAO)",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "tags": [
+        "climate finance",
+        "investment",
+        "agribusiness",
+        "value chains",
+        "resilience",
+        "markets",
+        "livestock",
+        "fisheries"
+      ]
+    },
+    {
+      "code": "west-africa",
+      "name": "West Africa",
+      "countries": [
+        "BJ",
+        "BF",
+        "CV",
+        "CI",
+        "GM",
+        "GH",
+        "GN",
+        "GW",
+        "LR",
+        "ML",
+        "MR",
+        "NE",
+        "NG",
+        "SN",
+        "SL",
+        "TG"
+      ],
+      "type": "subregional-agrifood-system",
+      "title": "West Africa — agrifood productivity, resilience, water and market systems",
+      "description": "FAO's West Africa programme covers agricultural policy, food security, sustainable agriculture, climate adaptation, water and soil management, livestock, fisheries, resilience, digital innovation, market systems and value chains across the subregion.",
+      "url": "https://www.fao.org/africa/about-us/our-offices/fao-subregional-office-for-west-africa/en",
+      "source": "Food and Agriculture Organization of the United Nations (FAO)",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "tags": [
+        "water management",
+        "food security",
+        "climate adaptation",
+        "digital innovation",
+        "markets",
+        "value chains",
+        "livestock",
+        "fisheries"
+      ]
+    },
+    {
+      "code": "central-africa",
+      "name": "Central Africa",
+      "countries": [
+        "BI",
+        "CM",
+        "CF",
+        "TD",
+        "CG",
+        "CD",
+        "GQ",
+        "GA",
+        "ST"
+      ],
+      "type": "subregional-agrifood-system",
+      "title": "Central Africa — production, food security, natural resources and regional integration",
+      "description": "FAO's Central Africa office supports agricultural policy, crop and livestock production, fisheries, forestry and natural-resource management, food and nutrition security and emergency resilience, while working with regional integration institutions.",
+      "url": "https://www.fao.org/africa/about-us/our-offices/fao-subregional-office-for-central-africa/en",
+      "source": "Food and Agriculture Organization of the United Nations (FAO)",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "tags": [
+        "food security",
+        "crops",
+        "livestock",
+        "fisheries",
+        "forestry",
+        "natural resources",
+        "regional integration",
+        "resilience"
+      ]
     }
   ]
 }
