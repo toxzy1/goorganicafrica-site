@@ -1,0 +1,12 @@
+---
+permalink: /feeds/markets.json
+eleventyExcludeFromCollections: true
+---
+{% set records = [] %}
+{% for r in agriculturalMarkets.records %}
+  {% if r.country_code != "ALL" and r.status not in ["draft","review","needs_review"] %}
+    {% set obj = {"country_code": r.country_code, "country": r.country, "market": r.market, "commodity": r.commodity, "price": r.price, "currency": r.currency, "unit": r.unit, "price_type": r.price_type, "observed_date": r.observed_date, "previous_price": r.previous_price, "change_percent": r.change_percent, "trend": r.trend, "market_signal": r.market_signal, "source_url": r.source_url, "source_tier": r.source_tier} %}
+    {% set records = (records.push(obj), records) %}
+  {% endif %}
+{% endfor %}
+{{ {"feed":"goorganicafrica.markets","version":1,"generated":"2026-10-08","records":records} | dump | safe }}
