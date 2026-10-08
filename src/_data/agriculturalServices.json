@@ -701,6 +701,125 @@
         "agriculture",
         "event"
       ]
+    },
+    {
+      "id": "NG-NADF-NAMSP-VERIFIED-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "training",
+      "type": "mechanization service-provider training",
+      "title": "National Agricultural Mechanisation Service Providers Training Programme",
+      "provider": "National Agricultural Development Fund (NADF)",
+      "services": [
+        "tractor operation",
+        "mechanics",
+        "machinery management",
+        "maintenance",
+        "occupational safety",
+        "enterprise development"
+      ],
+      "audience": [
+        "tractor operators",
+        "mechanics",
+        "mechanization service providers",
+        "women",
+        "youth"
+      ],
+      "summary": "National training programme building certified mechanisation service capacity. NADF reports the first cohort of about 250 graduates and a wider target of 4,000 tractor drivers and mechanics.",
+      "source": "National Agricultural Development Fund",
+      "url": "https://nadf.gov.ng/nadf-graduates-first-250-agricultural-mechanisation-service-providers/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Nigeria",
+        "NADF",
+        "mechanization",
+        "training",
+        "tractor",
+        "mechanics"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-MAINT-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "training",
+      "type": "certified online course",
+      "title": "Operation and Maintenance of Agricultural Equipment for Hire Service Businesses",
+      "provider": "FAO eLearning Academy",
+      "services": [
+        "tractor operation",
+        "equipment maintenance",
+        "repair",
+        "power sources",
+        "planters",
+        "sprayers",
+        "pumps",
+        "post-harvest equipment"
+      ],
+      "audience": [
+        "smallholder farmers",
+        "cooperatives",
+        "rural youth",
+        "hire-service providers",
+        "machinery suppliers"
+      ],
+      "summary": "Certified course covering correct operation, preventive maintenance and repair of agricultural machinery and equipment used by mechanisation hire businesses.",
+      "source": "FAO eLearning Academy",
+      "url": "https://elearning.fao.org/course/view.php?id=780",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "FAO",
+        "training",
+        "maintenance",
+        "machinery",
+        "hire services"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-SERIES-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "training",
+      "type": "certified e-learning series",
+      "title": "FAO E-learning Series: Agricultural Mechanization",
+      "provider": "FAO eLearning Academy",
+      "services": [
+        "hire-service business",
+        "market assessment",
+        "equipment selection",
+        "maintenance",
+        "business management",
+        "harvest and post-harvest machinery"
+      ],
+      "audience": [
+        "farmers",
+        "cooperatives",
+        "rural youth",
+        "mechanization providers",
+        "machinery suppliers"
+      ],
+      "summary": "Six-course certified series covering the full agricultural mechanization hire-service cycle from local market assessment and equipment selection to maintenance, business management and post-harvest machinery.",
+      "source": "FAO eLearning Academy",
+      "url": "https://elearning.fao.org/course/view.php?id=1383",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "FAO",
+        "e-learning",
+        "mechanization",
+        "hire services",
+        "training"
+      ]
     }
   ]
 }
