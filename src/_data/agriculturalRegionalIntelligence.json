@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-08",
+  "editorial_policy": "Regional records describe shared agricultural, climate, infrastructure, trade, value-chain or investment systems spanning multiple African countries. Each record keeps an authoritative source and verification date.",
+  "regions": [
+    {
+      "code": "southern-africa",
+      "name": "Southern Africa",
+      "countries": [
+        "AO",
+        "BW",
+        "SZ",
+        "LS",
+        "MG",
+        "MW",
+        "MZ",
+        "NA",
+        "ZA",
+        "ZM",
+        "ZW"
+      ],
+      "type": "regional-initiative",
+      "title": "FAO Hand-in-Hand 2026 — Southern Africa regional agrifood investment initiative",
+      "description": "A regional investment framework covering shared priorities including community reservoirs and solar pumping for irrigation, mechanization hire-service hubs, agroprocessing, seed systems, and market integration and trade.",
+      "url": "https://fao.sitefinity.cloud/hand-in-hand/investment-forum-2026/southern-africa-2026/en",
+      "source": "Food and Agriculture Organization of the United Nations (FAO)",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "tags": [
+        "irrigation",
+        "mechanization",
+        "agroprocessing",
+        "seed systems",
+        "trade",
+        "market integration"
+      ]
+    },
+    {
+      "code": "african-sids",
+      "name": "African Small Island Developing States",
+      "countries": [
+        "KM",
+        "MG",
+        "MU",
+        "SC",
+        "CV",
+        "GW",
+        "ST"
+      ],
+      "type": "regional-initiative",
+      "title": "FAO African SIDS — regional agrifood and blue-economy investment initiative",
+      "description": "A regional framework focused on resilient agrifood systems, blue transformation, value chains and market access, youth and women empowerment, innovation, knowledge sharing and technology transfer across participating African island states.",
+      "url": "https://www.fao.org/africa/events/events-detail/fao-african-sids-solutions-and-investment-forum/en",
+      "source": "Food and Agriculture Organization of the United Nations (FAO)",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "tags": [
+        "blue economy",
+        "fisheries",
+        "aquaculture",
+        "value chains",
+        "climate resilience",
+        "innovation",
+        "trade"
+      ]
+    },
+    {
+      "code": "lobito-corridor",
+      "name": "Lobito Corridor",
+      "countries": [
+        "AO",
+        "CD",
+        "ZM"
+      ],
+      "type": "regional-corridor",
+      "title": "Lobito Corridor — food-market and agricultural trade connectivity",
+      "description": "A regional corridor linking Angola, the Democratic Republic of the Congo and Zambia. FAO's 2026 investment forum highlights its potential to connect producers with regional and international food markets through transport and logistics infrastructure.",
+      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
+      "source": "Food and Agriculture Organization of the United Nations (FAO)",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "tags": [
+        "logistics",
+        "transport",
+        "trade",
+        "market access",
+        "food markets",
+        "regional integration"
+      ]
+    }
+  ]
+}
