@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-08",
+  "records": [
+    {
+      "category": "inputs",
+      "title": "Tanzania Agri-Inputs Platform",
+      "description": "Ministry-linked public platform providing searchable information on quality seeds, fertilizers, crop-protection products and agricultural input-sector participants.",
+      "url": "https://taip.kilimo.go.tz/",
+      "type": "Agricultural input directory",
+      "country_code": "TZ",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "category": "data",
+      "title": "Tanzania Agricultural Routine Data System",
+      "description": "Ministry system for collecting, managing and transmitting agricultural performance information from local government authorities through regional structures.",
+      "url": "https://ards.kilimo.go.tz/",
+      "type": "Agricultural data system",
+      "country_code": "TZ",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "category": "markets",
+      "title": "Tanzania Mobile Kilimo market access service",
+      "description": "Ministry online systems include Mobile Kilimo, designed to help farmers, livestock keepers and fishers access markets for agricultural products through mobile technology.",
+      "url": "https://www.kilimo.go.tz/pages/online-application",
+      "type": "Digital agricultural market service",
+      "country_code": "TZ",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    }
+  ]
+}
