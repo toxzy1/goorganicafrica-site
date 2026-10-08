@@ -820,6 +820,120 @@
         "hire services",
         "training"
       ]
+    },
+    {
+      "id": "ET-ESAE-PASAE-2026",
+      "country_code": "ET",
+      "country": "Ethiopia",
+      "category": "events",
+      "type": "agricultural engineering conference",
+      "title": "ESAE-PASAE Joint Conference on Agricultural Engineering and Food Systems Transformation",
+      "provider": "Ethiopian Society of Agricultural Engineers and Pan-African Society of Agricultural Engineers",
+      "services": [
+        "agricultural engineering",
+        "mechanization",
+        "digital agriculture",
+        "climate-resilient technologies",
+        "research exchange"
+      ],
+      "audience": [
+        "agricultural engineers",
+        "researchers",
+        "policymakers",
+        "academics",
+        "private sector",
+        "technology developers",
+        "development partners"
+      ],
+      "summary": "African agricultural engineering conference in Addis Ababa focused on mechanization, digital agriculture and climate-resilient technologies.",
+      "source": "FDRE Ministry of Agriculture Ethiopia",
+      "url": "https://www.moa.gov.et/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-09",
+      "tags": [
+        "Ethiopia",
+        "Africa",
+        "engineering",
+        "mechanization",
+        "digital agriculture"
+      ]
+    },
+    {
+      "id": "NG-NAMSP-NATIONAL-DB-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "suppliers",
+      "type": "mechanization service-provider registry",
+      "title": "NADF National Mechanisation Service Provider Database Initiative",
+      "provider": "National Agricultural Development Fund",
+      "services": [
+        "certified operator identification",
+        "mechanization service-provider access",
+        "machinery management",
+        "service-provider verification"
+      ],
+      "audience": [
+        "farmers",
+        "cooperatives",
+        "agribusinesses",
+        "government programmes",
+        "machinery users"
+      ],
+      "summary": "NADF is developing a national database of proficient agricultural mechanization service providers following certification of the first NAMSP trainees.",
+      "source": "National Agricultural Development Fund",
+      "url": "https://nadf.gov.ng/nadf-graduates-first-250-agricultural-mechanisation-service-providers/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Nigeria",
+        "NADF",
+        "service providers",
+        "registry",
+        "mechanization"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-EQUIPMENT-DB-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "suppliers",
+      "type": "equipment manufacturer discovery",
+      "title": "FAO Equipment and Manufacturers Database",
+      "provider": "FAO",
+      "services": [
+        "equipment search",
+        "manufacturer discovery",
+        "country filtering",
+        "model search",
+        "power-source filtering"
+      ],
+      "audience": [
+        "farmers",
+        "procurement teams",
+        "mechanization providers",
+        "researchers",
+        "policymakers"
+      ],
+      "summary": "FAO's selected equipment and manufacturers database allows users to search agricultural equipment by type, model, company, power source and country. Inclusion is informational and is not an FAO endorsement.",
+      "source": "FAO Sustainable Agricultural Mechanization",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization/database/en/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "FAO",
+        "equipment",
+        "manufacturers",
+        "machinery"
+      ]
     }
   ]
 }
