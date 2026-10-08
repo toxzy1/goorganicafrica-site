@@ -1,0 +1,30 @@
+<section class="container" style="max-width:1100px;margin:0 auto;padding:24px 16px;">
+  <header style="margin-bottom:24px">
+    <h1>Agricultural Opportunities</h1>
+    <p>Verified grants, funding calls, investment programmes and agricultural opportunities. Open opportunities are shown first; closed opportunities remain in the archive.</p>
+    <input id="opportunity-search" type="search" placeholder="Search opportunities..." aria-label="Search opportunities" style="width:100%;padding:12px;margin:12px 0">
+    <select id="opportunity-status" style="padding:10px"><option value="current">Open opportunities</option><option value="all">All opportunities</option><option value="expired">Expired / archived</option></select>
+  </header>
+  <div id="opportunity-list">
+  {% for record in agriculturalOpportunities.records %}
+    <article class="opportunity-card" data-status="{{ record.lifecycle }}" data-search="{{ record.title }} {{ record.country }} {{ record.category }} {{ record.type }} {{ record.eligibility }} {{ record.summary }} {{ record.tags | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+      <div style="font-size:.9em">{{ record.country }} · {{ record.category }} · {{ record.type }}</div>
+      <h2 style="margin:8px 0">{{ record.title }}</h2>
+      <p>{{ record.summary }}</p>
+      <p><strong>Eligibility:</strong> {{ record.eligibility }}</p>
+      {% if record.deadline %}<p><strong>Deadline:</strong> {{ record.deadline }}</p>{% endif %}
+      <p><strong>Source:</strong> {{ record.source }} · Verified {{ record.verified }}</p>
+      {% if record.lifecycle == "expired" %}<p><strong>Status:</strong> Expired / archived</p>{% else %}<p><strong>Status:</strong> Open</p>{% endif %}
+      <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer">View official source</a>
+    </article>
+  {% endfor %}
+  </div>
+</section>
+<script>
+(() => {
+ const input=document.getElementById('opportunity-search'), select=document.getElementById('opportunity-status');
+ const cards=[...document.querySelectorAll('.opportunity-card')];
+ function filter(){const q=input.value.toLowerCase().trim(), s=select.value; cards.forEach(c=>{const okS=s==='all'||c.dataset.status===s; const okQ=!q||c.dataset.search.toLowerCase().includes(q); c.hidden=!(okS&&okQ);});}
+ input.addEventListener('input',filter); select.addEventListener('change',filter); filter();
+})();
+</script>
