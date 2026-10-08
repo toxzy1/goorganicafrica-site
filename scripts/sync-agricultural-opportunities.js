@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalResources.json");
+const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalOpportunities.json");
 const BASE_FEEDS = [
   { name: "World Bank agriculture finance", query: "site:worldbank.org agriculture funding grant finance", host: "worldbank.org", source: "World Bank" },
   { name: "African Development Bank agriculture opportunities", query: "site:afdb.org agriculture grant finance project", host: "afdb.org", source: "African Development Bank" },
@@ -56,7 +56,7 @@ function slugify(v) { return v.toLowerCase().normalize("NFKD").replace(/[\u0300-
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
   const today = new Date().toISOString().slice(0,10);
-  const existing = new Set(data.countries.flatMap(c => Object.values(c.records || {}).flatMap(list => (list || []).map(r => r.url || r.title))));
+  const existing = new Set((data.records || []).map(r => r.url || r.title));
   let added = 0;
 
   const FEEDS = buildFeeds(data.countries);
@@ -80,18 +80,17 @@ async function main() {
       if (age > 90) continue;
 
       const hay = (title + " " + summary).toLowerCase();
-      const country = feed.country || data.countries.find(c => hay.includes(c.name.toLowerCase()));
+      const country = feed.country;
       if (!country) continue;
-
-      const bucket = categoryFor(title, summary);
-      country.records[bucket] = country.records[bucket] || [];
-      country.records[bucket].unshift({
+      data.records = data.records || [];
+      data.records.unshift({
         title,
         description: summary.slice(0, 600),
         url: link,
         source: feed.source,
         verified: today,
         status: "review",
+        lifecycle: "needs_review",
         source_tier: 1,
         country_code: country.code,
         type: "Opportunity / resource candidate",
@@ -108,14 +107,7 @@ async function main() {
     }
   }
 
-  for (const c of data.countries) {
-    c.records = c.records || {};
-    c.records.finance = c.records.finance || [];
-    c.records.grants = c.records.grants || [];
-    c.records.machinery = c.records.machinery || [];
-    c.records.general = c.records.general || [];
-  }
-  if (added) {
+    if (added) {
     data.last_updated = today;
     fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2) + "\n");
   }
