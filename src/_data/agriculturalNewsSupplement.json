@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "records": [
     {
       "country_code": "BF",
@@ -1440,6 +1440,66 @@
       "source_tier": 1,
       "published": "2026-01-19",
       "verified": "2026-10-07",
+      "status": "official"
+    },
+    {
+      "country_code": "CV",
+      "category": "finance",
+      "headline": "Cabo Verde presents US$20.23 million fisheries and value-chain investment plan",
+      "summary": "FAO's 2026 Hand-in-Hand profile presents three investment cases focused on fishing-fleet modernization, fleet reconversion and integrated fish value chains.",
+      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
+      "source": "FAO",
+      "source_tier": 1,
+      "published": "2026-10-06",
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "CV",
+      "category": "machinery-technology",
+      "headline": "Cabo Verde targets safer, lower-loss fishing through fleet modernization",
+      "summary": "The semi-industrial fleet proposal combines vessel modernization, solar-powered freezing, improved storage, hybrid propulsion and digital traceability.",
+      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
+      "source": "FAO",
+      "source_tier": 1,
+      "published": "2026-10-06",
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "CV",
+      "category": "markets",
+      "headline": "Cabo Verde's integrated fish project links fishers to buyers through digital markets",
+      "summary": "The investment case proposes a digital marketplace connecting fishers with canneries, hotels and export buyers while expanding cold storage and value-added processing.",
+      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
+      "source": "FAO",
+      "source_tier": 1,
+      "published": "2026-10-06",
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "CV",
+      "category": "policy",
+      "headline": "Cabo Verde approves ENSANS 2035 to reshape food governance",
+      "summary": "FAO reports that Cabo Verde approved its National Strategy for Food and Nutrition Security and Sustainable Food Systems 2035, emphasizing territorial and multisectoral governance.",
+      "url": "https://www.fao.org/policy-support/blog/detail/sids/2026/06/25/feeding-an-archipelago--how-cabo-verde-is-rewriting-food-governance-across-its-islands/en",
+      "source": "FAO",
+      "source_tier": 1,
+      "published": "2026-06-25",
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "CV",
+      "category": "weather-climate",
+      "headline": "Cabo Verde's 2025 maize harvest falls below average amid rainfall shocks",
+      "summary": "FAO GIEWS reports maize production around 1,100 tonnes in 2025, nearly 40 percent below the five-year average, after erratic and insufficient rainfall.",
+      "url": "https://cb.apps.fao.org/country.jsp?code=CPV",
+      "source": "FAO GIEWS",
+      "source_tier": 1,
+      "published": "2026-01-19",
+      "verified": "2026-10-08",
       "status": "official"
     }
   ]
