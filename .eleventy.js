@@ -87,9 +87,40 @@ module.exports = function (eleventyConfig) {
       });
     }
 
+    const now = new Date("2026-10-08T00:00:00Z");
+    const historicalCutoff = new Date(now);
+    historicalCutoff.setUTCDate(historicalCutoff.getUTCDate() - 180);
+
     for (const country of countries) {
+      country.articles = country.articles.map(article => {
+        const explicitStatus = String(article.status || "official").toLowerCase();
+        const deadline = article.deadline || article.expiry_date || article.closing_date || "";
+        const deadlineDate = deadline ? new Date(deadline) : null;
+        let lifecycle = "current";
+
+        if (["expired", "closed"].includes(explicitStatus) || (deadlineDate && !Number.isNaN(deadlineDate.getTime()) && deadlineDate < now)) {
+          lifecycle = "expired";
+        } else if (["archived", "historical"].includes(explicitStatus)) {
+          lifecycle = "historical";
+        } else if (article.published) {
+          const publishedDate = new Date(article.published);
+          if (!Number.isNaN(publishedDate.getTime()) && publishedDate < historicalCutoff) lifecycle = "historical";
+        }
+
+        return {
+          ...article,
+          lifecycle,
+          is_current: lifecycle === "current",
+          is_expired: lifecycle === "expired",
+          is_historical: lifecycle === "historical"
+        };
+      });
+
       country.articles.sort((a, b) => String(b.published || "").localeCompare(String(a.published || "")));
       country.total = country.articles.length;
+      country.current_total = country.articles.filter(a => a.is_current).length;
+      country.historical_total = country.articles.filter(a => a.is_historical).length;
+      country.expired_total = country.articles.filter(a => a.is_expired).length;
     }
 
     return {
