@@ -3,7 +3,7 @@
 <h1>Agricultural Markets</h1>
 <p>Verified agricultural market intelligence, price-monitoring sources and regional market signals. A price is shown as current only when it has a defined market, commodity, unit and observation date.</p>
 <input id="market-search" type="search" placeholder="Search commodity, market, country or source..." aria-label="Search markets" style="width:100%;padding:12px;margin:12px 0">
-<select id="market-country" style="padding:10px"><option value="all">All countries</option>{% for r in agriculturalMarkets.records %}{% if r.country_code != "ALL" %}<option value="{{ r.country_code }}">{{ r.country }}</option>{% endif %}{% endfor %}</select>
+<select id="market-country" style="padding:10px"><option value="all">All countries</option>{% for r in agriculturalMarkets.country_source_map %}<option value="{{ r.country_code }}">{{ r.country }}</option>{% endfor %}</select>
 </header>
 <div id="market-list">
 {% for r in agriculturalMarkets.records %}
@@ -18,6 +18,15 @@
 </article>
 {% endfor %}
 </div>
+<h2>54-country market-source coverage</h2>
+<p>Every GoOrganicAfrica country profile now has a verified market-information starting point. Regional systems are used where they provide broader coverage; FAO FPMA is the continental fallback. This is a source map, not a claim that every country has a live national quotation available today.</p>
+<div id="market-source-map" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">
+{% for r in agriculturalMarkets.country_source_map %}
+<article class="market-source-card" data-country="{{ r.country_code }}" data-search="{{ r.country }} {{ r.primary_market_source }} {{ r.coverage }}" style="border:1px solid #ddd;border-radius:10px;padding:16px">
+<strong>{{ r.country }}</strong><p style="margin:6px 0">{{ r.primary_market_source }}</p><small>{{ r.source_scope | title }} source · Tier {{ r.source_tier }} · Verified {{ r.verified }}</small><p>{{ r.coverage }}</p><a href="{{ r.source_url }}" target="_blank" rel="noopener noreferrer">Open official source</a>
+</article>
+{% endfor %}
+</div>
 <h2>Regional market signals</h2>
 {% for r in agriculturalMarkets.regional_roundups %}
 <article style="border:1px solid #ddd;border-radius:10px;padding:16px;margin:10px 0">
@@ -26,5 +35,5 @@
 {% endfor %}
 </section>
 <script>
-(()=>{const q=document.getElementById('market-search'),c=document.getElementById('market-country'),cards=[...document.querySelectorAll('.market-card')];function f(){const s=q.value.toLowerCase().trim(),cc=c.value;cards.forEach(x=>{x.hidden=!( (cc==='all'||x.dataset.country===cc) && (!s||x.dataset.search.toLowerCase().includes(s)) );});}q.addEventListener('input',f);c.addEventListener('change',f);})();
+(()=>{const q=document.getElementById('market-search'),c=document.getElementById('market-country'),cards=[...document.querySelectorAll('.market-card')],sources=[...document.querySelectorAll('.market-source-card')];function f(){const s=q.value.toLowerCase().trim(),cc=c.value;cards.forEach(x=>{x.hidden=!((cc==='all'||x.dataset.country===cc)&&(!s||x.dataset.search.toLowerCase().includes(s)));});sources.forEach(x=>{x.hidden=!((cc==='all'||x.dataset.country===cc)&&(!s||x.dataset.search.toLowerCase().includes(s)));});}q.addEventListener('input',f);c.addEventListener('change',f);})();
 </script>
