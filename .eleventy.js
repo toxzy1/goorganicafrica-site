@@ -14,6 +14,11 @@ module.exports = function (eleventyConfig) {
       return { ...record, lifecycle: expired ? "expired" : "current", is_current: !expired, is_expired: expired };
     });
     data.records.sort((a,b) => Number(b.is_current) - Number(a.is_current) || String(a.deadline || "9999").localeCompare(String(b.deadline || "9999")));
+    data.market_signals = data.records.filter(r => r.market_signal === "strong_move" || r.market_signal === "notable_move").map(r => ({
+      country_code: r.country_code, country: r.country, market: r.market, commodity: r.commodity,
+      trend: r.trend, change_percent: r.change_percent, observed_date: r.observed_date,
+      previous_observed_date: r.previous_observed_date, signal: r.market_signal
+    }));
     data.total = data.records.length;
     data.current_total = data.records.filter(r => r.is_current).length;
     data.expired_total = data.records.filter(r => r.is_expired).length;
@@ -55,6 +60,7 @@ module.exports = function (eleventyConfig) {
         current.change = Number(change.toFixed(2));
         current.change_percent = pct === null ? null : Number(pct.toFixed(2));
         current.trend = change > 0 ? "rising" : change < 0 ? "falling" : "stable";
+        current.market_signal = pct === null ? "none" : Math.abs(pct) >= 20 ? "strong_move" : Math.abs(pct) >= 10 ? "notable_move" : "normal_move";
       }
     }
     data.records = records;
