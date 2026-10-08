@@ -33,7 +33,7 @@
 <strong>{{ r.region }}</strong><p>{{ r.title }}</p><small>{{ r.source }} · {{ r.published }} · Verified {{ r.verified }}</small><br><a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">View source</a>
 </article>
 {% endfor %}
-</section>
+<section style="margin-top:28px"><h2>International market benchmarks</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">{% for r in agriculturalMarkets.market_intelligence.international %}<article style="border:1px solid #ddd;border-radius:10px;padding:16px"><strong>{{ r.provider }}</strong><p>{{ r.coverage }}</p><small>{{ r.scope | title }} · Tier {{ r.source_tier }} · Verified {{ r.verified }}</small><p><a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">Open official source</a></p></article>{% endfor %}</div><h3>How market data is interpreted</h3><ul>{% for rule in agriculturalMarkets.market_intelligence.interpretation_rules %}<li>{{ rule }}</li>{% endfor %}</ul></section></section>
 <script>
 (()=>{const q=document.getElementById('market-search'),c=document.getElementById('market-country'),cards=[...document.querySelectorAll('.market-card')],sources=[...document.querySelectorAll('.market-source-card')];function f(){const s=q.value.toLowerCase().trim(),cc=c.value;cards.forEach(x=>{x.hidden=!((cc==='all'||x.dataset.country===cc)&&(!s||x.dataset.search.toLowerCase().includes(s)));});sources.forEach(x=>{x.hidden=!((cc==='all'||x.dataset.country===cc)&&(!s||x.dataset.search.toLowerCase().includes(s)));});}q.addEventListener('input',f);c.addEventListener('change',f);})();
 </script>
