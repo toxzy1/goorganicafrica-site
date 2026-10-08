@@ -124,7 +124,7 @@ language: en
     const matchedSections=sections.map(s=>({s,count:matches.filter(x=>x.type===s[0]).length})).filter(x=>x.count);
     if(q && matchedSections.length){
       connections.style.display='block';
-      connectionCards.innerHTML=matchedSections.map(x=>'<a class="card" href="'+x.s[2]+'?q='+encodeURIComponent(q)+'" style="text-decoration:none;padding:12px;"><strong>'+x.s[1]+'</strong><br><span style="font-size:.85rem;">'+x.count+' matching result'+(x.count===1?'':'s')+'</span></a>').join('');
+      connectionCards.innerHTML=matchedSections.map(x=>'<a class="card" href="'+x.s[2]+'" style="text-decoration:none;padding:12px;"><strong>'+x.s[1]+'</strong><br><span style="font-size:.85rem;">'+x.count+' matching result'+(x.count===1?'':'s')+'</span></a>').join('');
     }else{
       connections.style.display='none';
       connectionCards.innerHTML='';
