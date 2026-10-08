@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-08",
+  "records": [
+    {
+      "country_code": "BW",
+      "category": "general",
+      "title": "Botswana Ministry of Lands and Agriculture",
+      "description": "Official ministry portal covering agricultural development, crop production, animal production, agribusiness promotion, veterinary services and plant health.",
+      "url": "https://gov.bw/ministries/ministry-lands-and-agriculture",
+      "source": "Government of Botswana",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural government resource"
+    },
+    {
+      "country_code": "BW",
+      "category": "training",
+      "title": "Botswana agricultural farmer training services",
+      "description": "Government rural training centres provide courses in crop production, animal production, agricultural marketing, agro-processing and conservation of natural resources.",
+      "url": "https://gov.bw/extension-services/application-training-services?page=1",
+      "source": "Government of Botswana",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Farmer training and extension"
+    },
+    {
+      "country_code": "BW",
+      "category": "farmer-support",
+      "title": "Botswana Thuo Letlotlo livestock support programme",
+      "description": "Official programme guidelines cover livestock production packages, beneficiary training and eligibility requirements for citizen farmers and agricultural businesses.",
+      "url": "https://www.thuoletlotlo.gov.bw/programme-details",
+      "source": "Ministry of Agriculture, Botswana",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Livestock farmer support"
+    }
+  ]
+}
