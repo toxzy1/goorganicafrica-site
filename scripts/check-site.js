@@ -6,12 +6,13 @@ const json = p => JSON.parse(read(p));
 const countries = json('src/_data/calculatorCountries.json').list || [];
 if (!countries.length || countries.some(c => !c.code || !c.name || c.available === undefined)) throw new Error('Country registry is incomplete.');
 const activeCountries = countries.filter(c => c.available !== false);
+const calculatorCountries = activeCountries.filter(c => c.directory_only !== true);
 if (!activeCountries.length) throw new Error('No active calculator countries.');
 
 const regionsSource = json('src/_data/calculator/regions.json');
 const regionRecords = Array.isArray(regionsSource.regions) ? regionsSource.regions : Object.entries(regionsSource).map(([country_code, regions]) => ({country_code, regions}));
-for (const c of activeCountries) {
-  if (!regionRecords.some(r => r.country_code === c.code)) throw new Error(`Missing regions for active country ${c.code}`);
+for (const c of calculatorCountries) {
+  if (!regionRecords.some(r => r.country_code === c.code)) throw new Error(`Missing regions for calculator country ${c.code}`);
 }
 
 const dir = path.join(root, 'src/_data/calculator/commodities');
