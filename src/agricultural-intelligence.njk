@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: Agricultural Intelligence Hub
+permalink: /agricultural-intelligence/
+---
+
+<div class="container" style="padding-top:2rem;padding-bottom:3rem;">
+  <div class="section-head">
+    <span class="eyebrow">Connected Agriculture</span>
+    <h1>Agricultural Intelligence Hub</h1>
+    <p class="lede">Connect countries with agricultural resources, markets, opportunities, services and news so you can move from information to action.</p>
+  </div>
+  <div style="margin:1.25rem 0;"><input id="ai-search" type="search" placeholder="Search a country or agricultural topic..." aria-label="Search agricultural intelligence" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;"></div>
+  <div id="ai-results"></div>
+</div>
+
+<script>
+(function(){
+  const data = {{ agriculturalKnowledgeConnections.records | jsonify }};
+  const input = document.getElementById('ai-search'), out = document.getElementById('ai-results');
+  const labels = {resources:'Resources',markets:'Markets',opportunities:'Opportunities',services:'Services & Machinery',news:'Agricultural News'};
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  function render(){
+    const q=input.value.trim().toLowerCase();
+    const rows=data.filter(x=>!q || x.country.toLowerCase().includes(q) || x.topics.some(t=>t.includes(q))).slice(0,54);
+    out.innerHTML=rows.length ? rows.map(x=>{
+      const links=Object.entries(x.sections).map(([k,n])=>'<a href="/search/" style="text-decoration:none;">'+esc(labels[k]||k)+' ('+n+')</a>').join(' · ');
+      return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+esc(x.country)+'</h2><p><strong>'+x.total+'</strong> connected intelligence records</p><p>'+links+'</p></article>';
+    }).join('') : '<p>No connected intelligence found. Try a country name or broader topic.</p>';
+  }
+  input.addEventListener('input',render); render();
+})();
+</script>
