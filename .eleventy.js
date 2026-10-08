@@ -138,6 +138,70 @@ module.exports = function (eleventyConfig) {
     return { version: 1, generated: "2026-10-08", records };
   });
 
+  // Topic/value-chain connection layer: derive real cross-section links from published records.
+  eleventyConfig.addGlobalData("agriculturalTopicConnections", () => {
+    const fs = require("fs");
+    const path = require("path");
+    const dataDir = path.join(process.cwd(), "src/_data");
+    const read = name => JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8"));
+    const topics = [
+      { key:"maize", label:"Maize", aliases:["maize","corn"] },
+      { key:"rice", label:"Rice", aliases:["rice","paddy"] },
+      { key:"cassava", label:"Cassava", aliases:["cassava","manioc","yuca"] },
+      { key:"soybean", label:"Soybean", aliases:["soybean","soybeans","soya"] },
+      { key:"cocoa", label:"Cocoa", aliases:["cocoa","cacao"] },
+      { key:"coffee", label:"Coffee", aliases:["coffee"] },
+      { key:"cashew", label:"Cashew", aliases:["cashew"] },
+      { key:"tea", label:"Tea", aliases:["tea"] },
+      { key:"poultry", label:"Poultry", aliases:["poultry","chicken","broiler","layer"] },
+      { key:"livestock", label:"Livestock & Dairy", aliases:["livestock","cattle","beef","dairy","milk","goat","sheep"] },
+      { key:"fish", label:"Fisheries & Aquaculture", aliases:["fish","fisheries","aquaculture","tilapia","catfish"] },
+      { key:"vegetables", label:"Vegetables", aliases:["vegetable","vegetables","tomato","pepper","onion"] },
+      { key:"fruits", label:"Fruits", aliases:["fruit","fruits","banana","pineapple","avocado","mango"] },
+      { key:"seeds", label:"Seeds", aliases:["seed","seeds","certified seed","seed multiplication"] },
+      { key:"inputs", label:"Farm Inputs", aliases:["fertilizer","fertiliser","inputs","agro-input","agrochemical"] },
+      { key:"irrigation", label:"Irrigation & Water", aliases:["irrigation","water management","water access","solar pumping"] },
+      { key:"mechanization", label:"Mechanization", aliases:["mechanization","mechanisation","tractor","machinery","equipment"] },
+      { key:"finance", label:"Agricultural Finance", aliases:["finance","funding","grant","grants","loan","investment","credit","financing"] },
+      { key:"climate", label:"Climate Resilience", aliases:["climate","resilience","drought","early warning","climate-smart"] },
+      { key:"markets", label:"Markets & Trade", aliases:["market","markets","trade","export","value chain","agribusiness"] }
+    ];
+    const items = [];
+    const add = (section, r, text, countryCode, country) => {
+      if (!r || !r.title) return;
+      items.push({ section, title:r.title, summary:r.summary || r.description || "", text:String(text || "").toLowerCase(), country_code:countryCode || "", country:country || "", url:r.url || r.source_url || r.application_url || "" });
+    };
+    const opp = read("agriculturalOpportunities.json").records || [];
+    const markets = read("agriculturalMarkets.json").records || [];
+    const services = read("agriculturalServices.json").records || [];
+    const news = read("agriculturalNews.json");
+    const newsSupplement = read("agriculturalNewsSupplement.json").records || [];
+    const newsExpansion = read("agriculturalNewsExpansion.json").records || [];
+    const resources = read("agriculturalResources.json").countries || [];
+    const resourceSupplement = read("agriculturalResourcesSupplement.json").records || [];
+    const gapFiles = fs.readdirSync(dataDir).filter(name => /^agriculturalResourcesGap.*\.json$/.test(name));
+    const resourceGaps = gapFiles.flatMap(name => { try { return JSON.parse(fs.readFileSync(path.join(dataDir,name),"utf8")).records || []; } catch (_) { return []; } });
+    for (const r of opp) add("opportunities", r, [r.title,r.summary,r.description,r.type,r.category,...(r.tags||[]),...(r.sectors||[]),...(r.value_chains||[])].join(" "), r.country_code || r.code, r.country);
+    for (const r of markets) if (r.country_code !== "ALL") add("markets", r, [r.commodity,r.market,r.note,r.price_type].join(" "), r.country_code, r.country);
+    for (const r of services) add("services", r, [r.title,r.summary,r.type,r.category,r.provider,...(r.services||[]),...(r.tags||[])].join(" "), r.country_code, r.country);
+    for (const c of (news.countries || [])) for (const r of (c.articles || [])) add("news", r, [r.title,r.summary,r.category].join(" "), c.code, c.name || c.country);
+    for (const r of [...newsSupplement,...newsExpansion]) add("news", r, [r.title,r.summary,r.category].join(" "), r.country_code, r.country);
+    for (const c of resources) for (const list of Object.values(c.records || {})) for (const r of (list || [])) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), c.code, c.name || c.country);
+    for (const r of [...resourceSupplement,...resourceGaps]) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), r.country_code, r.country);
+    const result = topics.map(topic => {
+      const matched = items.filter(item => topic.aliases.some(alias => item.text.includes(alias.toLowerCase())));
+      const bySection = {};
+      const countries = {};
+      for (const item of matched) {
+        bySection[item.section] = (bySection[item.section] || 0) + 1;
+        if (item.country_code) countries[item.country_code] = countries[item.country_code] || { code:item.country_code, country:item.country, sections:{} };
+        if (item.country_code) countries[item.country_code].sections[item.section] = (countries[item.country_code].sections[item.section] || 0) + 1;
+      }
+      return { ...topic, total:matched.length, sections:bySection, countries:Object.values(countries).sort((a,b)=>a.country.localeCompare(b.country)) };
+    }).filter(topic => topic.total > 0);
+    return { version:1, generated:"2026-10-08", topics:result };
+  });
+
   // Static passthroughs
   // Build validation: localized content is rendered at build time.
   eleventyConfig.addPassthroughCopy("src/css");
