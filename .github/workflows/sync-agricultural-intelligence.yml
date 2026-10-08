@@ -38,6 +38,7 @@ jobs:
         run: |
           npm run check:cms
           npm run check:i18n
+          npm run audit:resources
 
       - name: Commit updated intelligence
         run: |
