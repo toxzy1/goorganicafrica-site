@@ -10,7 +10,11 @@ permalink: /agricultural-intelligence/
     <h1>Agricultural Intelligence Hub</h1>
     <p class="lede">Connect countries with agricultural resources, markets, opportunities, services and news so you can move from information to action.</p>
   </div>
-  <div style="margin:1.25rem 0;"><input id="ai-search" type="search" placeholder="Search a country or agricultural topic..." aria-label="Search agricultural intelligence" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;"></div>
+  <div style="margin:1.25rem 0;">
+    <label for="ai-search"><strong>Search connected intelligence</strong></label>
+    <input id="ai-search" type="search" placeholder="Try Nigeria, maize, finance, irrigation, machinery..." aria-label="Search connected agricultural intelligence" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;margin-top:6px;">
+    <p style="margin:.5rem 0 0;">Search by country or topic, then open the matching section. For a full record-by-record search, use <a href="/search/">Global Agricultural Search</a>.</p>
+  </div>
   <div id="ai-results"></div>
   <div style="margin-top:2rem;">
     <h2>Value-chain & topic connections</h2>
@@ -28,9 +32,14 @@ permalink: /agricultural-intelligence/
   function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
   function render(){
     const q=input.value.trim().toLowerCase();
-    const rows=data.filter(x=>!q || x.country.toLowerCase().includes(q) || x.topics.some(t=>t.includes(q))).slice(0,54);
+    const words=q.split(/\s+/).filter(Boolean);
+    const rows=data.filter(x=>{
+      if(!words.length) return true;
+      const hay=(x.country+' '+x.topics.join(' ')).toLowerCase();
+      return words.every(w=>hay.includes(w));
+    }).slice(0,54);
     out.innerHTML=rows.length ? rows.map(x=>{
-      const links=Object.entries(x.sections).map(([k,n])=>'<a href="/search/" style="text-decoration:none;">'+esc(labels[k]||k)+' ('+n+')</a>').join(' · ');
+      const links=Object.entries(x.sections).map(([k,n])=>'<a href="/search/?q='+encodeURIComponent(x.country)+'" style="text-decoration:none;">'+esc(labels[k]||k)+' ('+n+')</a>').join(' · ');
       return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+esc(x.country)+'</h2><p><strong>'+x.total+'</strong> connected intelligence records</p><p>'+links+'</p></article>';
     }).join('') : '<p>No connected intelligence found. Try a country name or broader topic.</p>';
   }
