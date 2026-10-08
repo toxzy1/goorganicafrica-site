@@ -12,7 +12,7 @@ pageSection: agricultural-news
 <p class="lede">Suivez les développements agricoles actuels dans les 54 pays africains. Les actualités seront publiées après vérification auprès de sources officielles ou fiables.</p>
 <p><strong>54 répertoires agricoles nationaux</strong></p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
-{% for country in agriculturalNewsMerged.countries %}
+{% for country in agriculturalNewsMergedMerged.countries %}
 <a class="card" href="/fr/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
 <h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.localizedNames[pageLanguage] if country.localizedNames and pageLanguage != "en" else country.name }}</h2>
 <p>Voir les actualités agricoles de ce pays →</p>
