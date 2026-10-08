@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-08",
+  "editorial_policy": "Market records are intelligence references, not guaranteed live quotations. Prices must carry a market, commodity, unit, currency, observation date and source. Official or recognized statistical sources are preferred; stale quotations are retained historically rather than presented as current.",
+  "schemas": {
+    "record": [
+      "country_code",
+      "market",
+      "commodity",
+      "price",
+      "currency",
+      "unit",
+      "price_type",
+      "observed_date",
+      "source",
+      "source_url",
+      "verified",
+      "source_tier",
+      "status"
+    ],
+    "source": [
+      "country_code",
+      "scope",
+      "provider",
+      "coverage",
+      "url",
+      "source_tier",
+      "verified",
+      "status"
+    ]
+  },
+  "records": [
+    {
+      "country_code": "NG",
+      "country": "Nigeria",
+      "market": "National market coverage",
+      "commodity": "Maize",
+      "price": null,
+      "currency": "NGN",
+      "unit": "local market unit",
+      "price_type": "market reference",
+      "observed_date": "",
+      "source": "NAERLS National Food Price Monitoring and Market Information System",
+      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "note": "Use the official market selector and observation period before quoting a price."
+    },
+    {
+      "country_code": "NG",
+      "country": "Nigeria",
+      "market": "National market coverage",
+      "commodity": "Rice",
+      "price": null,
+      "currency": "NGN",
+      "unit": "local market unit",
+      "price_type": "market reference",
+      "observed_date": "",
+      "source": "NAERLS National Food Price Monitoring and Market Information System",
+      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official"
+    },
+    {
+      "country_code": "NG",
+      "country": "Nigeria",
+      "market": "National market coverage",
+      "commodity": "Soybeans",
+      "price": null,
+      "currency": "NGN",
+      "unit": "local market unit",
+      "price_type": "market reference",
+      "observed_date": "",
+      "source": "NAERLS National Food Price Monitoring and Market Information System",
+      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official"
+    },
+    {
+      "country_code": "NG",
+      "country": "Nigeria",
+      "market": "National market coverage",
+      "commodity": "Cassava",
+      "price": null,
+      "currency": "NGN",
+      "unit": "local market unit",
+      "price_type": "market reference",
+      "observed_date": "",
+      "source": "NAERLS National Food Price Monitoring and Market Information System",
+      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official"
+    },
+    {
+      "country_code": "NG",
+      "country": "Nigeria",
+      "market": "National market coverage",
+      "commodity": "Livestock and fish",
+      "price": null,
+      "currency": "NGN",
+      "unit": "market unit",
+      "price_type": "market reference",
+      "observed_date": "",
+      "source": "NAERLS National Food Price Monitoring and Market Information System",
+      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "note": "NAERLS interface includes livestock and fishery market information."
+    },
+    {
+      "country_code": "NG",
+      "country": "Nigeria",
+      "market": "73 monitored markets",
+      "commodity": "Basic food commodities",
+      "price": null,
+      "currency": "NGN",
+      "unit": "monthly market observation",
+      "price_type": "estimated monthly price",
+      "observed_date": "2026-09-01",
+      "source": "World Bank Real Time Food Prices — Nigeria",
+      "source_url": "https://microdata.worldbank.org/catalog/4503/variable/NGA_2021_RTFP_MKT/V068",
+      "verified": "2026-10-08",
+      "source_tier": 2,
+      "status": "reference",
+      "note": "Dataset covers 73 Nigerian markets and monthly observations through September 2026."
+    }
+  ],
+  "sources": [
+    {
+      "country_code": "NG",
+      "scope": "national",
+      "provider": "National Agricultural Extension and Research Liaison Services (NAERLS)",
+      "coverage": "Market/product price information with selectable markets, agricultural products and price regimes",
+      "url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "NG",
+      "scope": "national",
+      "provider": "Federal Ministry of Agriculture and Food Security",
+      "coverage": "National agricultural policy, market-access programmes and farmer support context",
+      "url": "https://agriculture.gov.ng/",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "ALL",
+      "scope": "continental",
+      "provider": "FAO Food Price Monitoring and Analysis",
+      "coverage": "Domestic food prices, price anomalies and regional market monitoring",
+      "url": "https://www.fao.org/giews/food-prices/en/",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "ALL",
+      "scope": "international",
+      "provider": "FAO Markets and Trade",
+      "coverage": "Commodity supply, demand, trade and international price intelligence",
+      "url": "https://www.fao.org/markets-and-trade/commodities-overview/",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    },
+    {
+      "country_code": "ALL",
+      "scope": "international",
+      "provider": "FAO Statistics — Food prices and market information",
+      "coverage": "FAOSTAT, AMIS and FPMA food-price and market databases",
+      "url": "https://www.fao.org/statistics/data-dissemination/food-prices-and-market-information/",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official"
+    }
+  ],
+  "regional_roundups": [
+    {
+      "region": "East Africa",
+      "published": "2026-09-14",
+      "title": "Coarse-grain prices elevated in Sudan, South Sudan and Somalia",
+      "source": "FAO FPMA",
+      "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
+      "verified": "2026-10-08"
+    },
+    {
+      "region": "West Africa",
+      "published": "2026-09-14",
+      "title": "Coarse-grain prices varied but remained lower year-on-year in monitored markets",
+      "source": "FAO FPMA",
+      "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
+      "verified": "2026-10-08"
+    },
+    {
+      "region": "Southern Africa",
+      "published": "2026-09-14",
+      "title": "Seasonal maize price increases emerged while abundant supplies contained upward pressure",
+      "source": "FAO FPMA",
+      "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
+      "verified": "2026-10-08"
+    }
+  ]
+}
