@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "records": [
     {
       "country_code": "BF",
@@ -2511,6 +2511,84 @@
       "verified": "2026-10-07",
       "status": "official",
       "type": "Emergency support"
+    },
+    {
+      "country_code": "CV",
+      "category": "finance",
+      "title": "Cabo Verde Hand-in-Hand agrifood investment portfolio — US$20.23 million",
+      "description": "FAO's 2026 Cabo Verde investment profile seeks US$20.23 million for fisheries and integrated value-chain development, with 9,600 direct beneficiaries.",
+      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
+      "source": "FAO Hand-in-Hand Initiative",
+      "source_tier": 1,
+      "published": "2026-10-08",
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agrifood investment portfolio"
+    },
+    {
+      "country_code": "CV",
+      "category": "machinery",
+      "title": "Cabo Verde semi-industrial fishing-fleet modernization — US$5.8 million",
+      "description": "The investment case modernizes vessels with solar-powered freezing, insulated storage, blast freezers, hybrid propulsion, digital monitoring and traceability.",
+      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
+      "source": "FAO Hand-in-Hand Initiative",
+      "source_tier": 1,
+      "published": "2026-10-08",
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Fleet modernization"
+    },
+    {
+      "country_code": "CV",
+      "category": "climate",
+      "title": "Cabo Verde ENSANS 2035 sustainable food-systems strategy",
+      "description": "Cabo Verde's National Strategy for Food and Nutrition Security and Sustainable Food Systems to 2035 emphasizes territorial governance, local production, resilience, nutrition and reduced external dependency.",
+      "url": "https://www.fao.org/policy-support/blog/detail/sids/2026/06/25/feeding-an-archipelago--how-cabo-verde-is-rewriting-food-governance-across-its-islands/en",
+      "source": "FAO",
+      "source_tier": 1,
+      "published": "2026-10-08",
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Food systems strategy"
+    },
+    {
+      "country_code": "CV",
+      "category": "farmer-support",
+      "title": "Cabo Verde territorial food-security forums and local-food procurement",
+      "description": "ENSANS 2035 proposes municipal food-security forums and stronger links between local producers, fishers and institutions, including local sourcing for school feeding.",
+      "url": "https://www.fao.org/policy-support/blog/detail/sids/2026/06/25/feeding-an-archipelago--how-cabo-verde-is-rewriting-food-governance-across-its-islands/en",
+      "source": "FAO",
+      "source_tier": 1,
+      "published": "2026-10-08",
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Territorial food governance"
+    },
+    {
+      "country_code": "CV",
+      "category": "data",
+      "title": "Cabo Verde national food-security information and monitoring system",
+      "description": "ENSANS 2035 strengthens national food-security information, monitoring and reporting, with a proposed system connecting territorial diagnostics to national decision-making.",
+      "url": "https://www.fao.org/policy-support/blog/detail/sids/2026/06/25/feeding-an-archipelago--how-cabo-verde-is-rewriting-food-governance-across-its-islands/en",
+      "source": "FAO",
+      "source_tier": 1,
+      "published": "2026-10-08",
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Food-security data"
+    },
+    {
+      "country_code": "CV",
+      "category": "climate",
+      "title": "Cabo Verde drought, rainfall and cereal-risk monitoring",
+      "description": "FAO GIEWS reports below-average 2025 maize production following erratic and insufficient rainfall, with climate variability and water scarcity remaining major agricultural constraints.",
+      "url": "https://cb.apps.fao.org/country.jsp?code=CPV",
+      "source": "FAO GIEWS",
+      "source_tier": 1,
+      "published": "2026-10-08",
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Climate and crop risk"
     }
   ]
 }
