@@ -1,0 +1,197 @@
+---
+layout: layouts/base.njk
+title: My Agriculture Watchlist
+meta_title: My Agriculture Watchlist | GoOrganicAfrica
+meta_description: Save your country, agricultural interests and goals to create a personalized GoOrganicAfrica brief from verified agricultural intelligence.
+permalink: /my-agriculture/
+---
+
+<div class="container" style="padding-top:2rem;padding-bottom:3rem;">
+  <div class="section-head">
+    <span class="eyebrow">Personalized Agricultural Intelligence</span>
+    <h1>My Agriculture Watchlist</h1>
+    <p class="lede">Choose your country and interests once. GoOrganicAfrica will use them to organize relevant markets, opportunities, news, resources, services and training from the existing verified intelligence system.</p>
+  </div>
+
+  <div class="card" style="padding:18px;margin:1.25rem 0;">
+    <h2 style="margin-top:0;">1. Set your watchlist</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+      <label><strong>Country</strong><br>
+        <select id="watch-country" style="width:100%;padding:11px;margin-top:6px;border:1px solid var(--line);border-radius:8px;">
+          <option value="">All countries</option>
+          {% for c in agriculturalDecisionCentre.countries | sort(attribute="name") %}
+          <option value="{{ c.code }}">{{ c.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label><strong>Primary goal</strong><br>
+        <select id="watch-goal" style="width:100%;padding:11px;margin-top:6px;border:1px solid var(--line);border-radius:8px;">
+          <option value="all">Full agricultural brief</option>
+          {% for g in agriculturalDecisionCentre.goals %}
+          {% if g.id != "all" %}<option value="{{ g.id }}">{{ g.label }}</option>{% endif %}
+          {% endfor %}
+        </select>
+      </label>
+    </div>
+    <fieldset style="border:0;padding:0;margin:16px 0 0;">
+      <legend><strong>Topics I want to follow</strong></legend>
+      <div id="watch-topics" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:8px;"></div>
+    </fieldset>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;">
+      <button id="watch-save" type="button">Save my watchlist</button>
+      <button id="watch-clear" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);">Clear</button>
+      <button id="watch-check" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);">Check for updates</button>
+    </div>
+    <p id="watch-status" style="margin:.75rem 0 0;font-size:.9rem;"></p>
+  </div>
+
+  <div id="watch-summary" class="card" style="padding:18px;margin:1.25rem 0;"></div>
+  <div id="watch-alerts" style="display:grid;gap:12px;margin:1.25rem 0;"></div>
+
+  <div class="card" style="padding:18px;margin:1.25rem 0;">
+    <h2 style="margin-top:0;">How the watchlist works</h2>
+    <ul>
+      <li>Your preferences are stored only in this browser using local storage.</li>
+      <li>The watchlist uses records already present in GoOrganicAfrica's agricultural intelligence system; it does not invent prices, grants, deadlines or advisories.</li>
+      <li>Important items are ranked first: current opportunities, notable market movements, recent news, training/events and useful resources/services.</li>
+      <li>“Check for updates” compares the current site data with your last saved check. It does not send data to a paid alert provider.</li>
+    </ul>
+    <p><strong>Important:</strong> Market figures, programme eligibility and deadlines can change. Always open the original source before acting.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const allRecords = {{ agriculturalDecisionCentre.json | safe }};
+  const topics = {{ agriculturalDecisionCentre.topics | jsonify }};
+  const topicLabels = {
+    maize:"Maize", rice:"Rice", cassava:"Cassava", soybean:"Soybean", cocoa:"Cocoa",
+    coffee:"Coffee", cashew:"Cashew", tea:"Tea", poultry:"Poultry", livestock:"Livestock & Dairy",
+    fish:"Fisheries & Aquaculture", vegetables:"Vegetables", fruits:"Fruits", seeds:"Seeds",
+    inputs:"Farm Inputs", irrigation:"Irrigation & Water", mechanization:"Mechanization",
+    finance:"Agricultural Finance", climate:"Climate Resilience", markets:"Markets & Trade"
+  };
+  const goalSections = {
+    market:["markets"], finance:["opportunities","resources"], inputs:["resources","services"],
+    machinery:["services","resources"], training:["services","resources"],
+    climate:["news","resources","markets"], all:["markets","opportunities","resources","services","news"]
+  };
+  const countryEl=document.getElementById("watch-country");
+  const goalEl=document.getElementById("watch-goal");
+  const topicsEl=document.getElementById("watch-topics");
+  const summaryEl=document.getElementById("watch-summary");
+  const alertsEl=document.getElementById("watch-alerts");
+  const statusEl=document.getElementById("watch-status");
+  const STORAGE="goa-my-agriculture-v1";
+  const CHECK="goa-my-agriculture-last-check-v1";
+
+  topicsEl.innerHTML=topics.map(t=>{
+    const label=topicLabels[t]||t.replace(/-/g," ");
+    return '<label style="display:flex;gap:7px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:8px;"><input type="checkbox" value="'+t+'"> '+label+'</label>';
+  }).join("");
+
+  function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+  function load(){
+    try{
+      const p=JSON.parse(localStorage.getItem(STORAGE)||"{}");
+      countryEl.value=p.country||"";
+      goalEl.value=p.goal||"all";
+      (p.topics||[]).forEach(t=>{const el=topicsEl.querySelector('input[value="'+CSS.escape(t)+'"]');if(el)el.checked=true;});
+      if(p.country||p.goal||(p.topics||[]).length) statusEl.textContent="Saved preferences loaded from this browser.";
+    }catch(e){}
+  }
+  function prefs(){
+    return {
+      country:countryEl.value,
+      goal:goalEl.value,
+      topics:[...topicsEl.querySelectorAll("input:checked")].map(x=>x.value)
+    };
+  }
+  function relevant(){
+    const p=prefs(), sections=goalSections[p.goal]||goalSections.all;
+    const words=p.topics;
+    return allRecords.filter(r=>{
+      if(p.country && r.country_code!==p.country) return false;
+      if(!sections.includes(r.section)) return false;
+      if(!words.length) return true;
+      const hay=(r.title+" "+r.text+" "+r.country).toLowerCase();
+      return words.some(t=>{
+        const aliases={
+          maize:["maize","corn"],soybean:["soybean","soybeans","soya"],livestock:["livestock","cattle","beef","dairy","milk","goat","sheep"],
+          fish:["fish","fisheries","aquaculture","tilapia","catfish"],poultry:["poultry","chicken","broiler","layer"],
+          vegetables:["vegetable","tomato","pepper","onion"],fruits:["fruit","banana","pineapple","avocado","mango"],
+          seeds:["seed","seeds"],inputs:["fertilizer","fertiliser","inputs","agro-input"],irrigation:["irrigation","water"],
+          mechanization:["mechanization","mechanisation","tractor","machinery","equipment"],finance:["finance","funding","grant","loan","investment","credit"],
+          climate:["climate","resilience","drought","early warning"],markets:["market","markets","trade","export","value chain"]
+        };
+        return (aliases[t]||[t]).some(a=>hay.includes(a));
+      });
+    });
+  }
+  function rank(rows){
+    const now=Date.now();
+    return rows.map(r=>{
+      let score=0;
+      if(r.section==="opportunities") score+=50;
+      if(r.section==="markets") score+=40;
+      if(r.section==="news") score+=30;
+      if(r.section==="services") score+=20;
+      if(r.section==="resources") score+=10;
+      const d=r.date?Date.parse(r.date):NaN;
+      if(!Number.isNaN(d)){
+        const age=(now-d)/86400000;
+        if(age<=14) score+=30; else if(age<=30) score+=20; else if(age<=90) score+=10;
+      }
+      if(Number(r.tier||5)<=2) score+=10;
+      return {...r,score};
+    }).sort((a,b)=>b.score-a.score);
+  }
+  function sectionLabel(s){return ({markets:"Market intelligence",opportunities:"Opportunities",services:"Services & training",news:"Agricultural news",resources:"Resources"})[s]||s;}
+  function render(){
+    const p=prefs(), rows=rank(relevant());
+    const counts={};
+    rows.forEach(r=>counts[r.section]=(counts[r.section]||0)+1);
+    const topicText=p.topics.length?p.topics.map(t=>topicLabels[t]||t).join(", "):"all agricultural topics";
+    summaryEl.innerHTML='<h2 style="margin-top:0;">Your brief</h2><p><strong>'+(p.country?esc(countryEl.options[countryEl.selectedIndex].text):"All African countries")+'</strong> · '+esc(topicText)+' · '+esc(goalEl.options[goalEl.selectedIndex].text)+'</p><div style="display:flex;flex-wrap:wrap;gap:8px;">'+Object.entries(counts).map(([k,v])=>'<span style="padding:6px 9px;border:1px solid var(--line);border-radius:999px;">'+esc(sectionLabel(k))+': '+v+'</span>').join("")+'</div><p style="font-size:.9rem;margin-bottom:0;">Showing '+rows.length+' matching records.</p>';
+    if(!rows.length){
+      alertsEl.innerHTML='<div class="card" style="padding:18px;"><h2 style="margin-top:0;">No matching records yet</h2><p>Broaden your goal, remove a topic, or choose “All countries”. This does not mean the country lacks agricultural activity; it means the current verified index has no matching record for this exact combination.</p></div>';
+      return;
+    }
+    alertsEl.innerHTML=rows.slice(0,30).map((r,i)=>{
+      const date=r.date?'<span>Verified/dated: '+esc(r.date)+'</span>':'';
+      return '<article class="card" style="padding:16px;"><div style="font-size:.82rem;opacity:.8;">'+esc(sectionLabel(r.section))+(i<5?' · Priority item':'')+'</div><h2 style="margin:.35rem 0;">'+esc(r.title)+'</h2><p>'+esc(r.text).slice(0,360)+(r.text.length>360?'…':'')+'</p><p style="font-size:.85rem;">'+esc(r.country||r.country_code||"Africa")+(date?' · '+date:'')+' · Source tier '+esc(r.tier||5)+'</p>'+(r.url?'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">Open original source →</a>':'')+'</article>';
+    }).join("");
+  }
+  function save(){
+    const p=prefs();
+    localStorage.setItem(STORAGE,JSON.stringify(p));
+    localStorage.setItem(CHECK,JSON.stringify({at:new Date().toISOString(),keys:relevant().map(r=>r.section+"|"+r.country_code+"|"+r.title+"|"+r.date)}));
+    statusEl.textContent="Watchlist saved on this browser.";
+    render();
+  }
+  function check(){
+    let previous=[];
+    try{previous=JSON.parse(localStorage.getItem(CHECK)||"{}").keys||[];}catch(e){}
+    const current=relevant().map(r=>r.section+"|"+r.country_code+"|"+r.title+"|"+r.date);
+    const old=new Set(previous), added=current.filter(k=>!old.has(k));
+    localStorage.setItem(CHECK,JSON.stringify({at:new Date().toISOString(),keys:current}));
+    statusEl.textContent=added.length
+      ? added.length+" new matching item"+(added.length===1?"":"s")+" found since your last check."
+      : "No new matching items found since your last check.";
+    if(added.length && "Notification" in window && Notification.permission==="granted"){
+      new Notification("GoOrganicAfrica watchlist", {body:added.length+" new agricultural intelligence item"+(added.length===1?"":"s")+" match your watchlist."});
+    }
+    render();
+  }
+  document.getElementById("watch-save").addEventListener("click",save);
+  document.getElementById("watch-clear").addEventListener("click",function(){
+    localStorage.removeItem(STORAGE);localStorage.removeItem(CHECK);
+    countryEl.value="";goalEl.value="all";topicsEl.querySelectorAll("input").forEach(x=>x.checked=false);
+    statusEl.textContent="Watchlist cleared.";render();
+  });
+  document.getElementById("watch-check").addEventListener("click",check);
+  [countryEl,goalEl].forEach(el=>el.addEventListener("change",render));
+  topicsEl.addEventListener("change",render);
+  load();render();
+})();
+</script>
