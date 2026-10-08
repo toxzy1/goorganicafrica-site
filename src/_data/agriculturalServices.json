@@ -401,6 +401,113 @@
         "mechanization",
         "hire services"
       ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-DATABASE-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "machinery",
+      "type": "equipment and manufacturer database",
+      "title": "FAO Sustainable Agricultural Mechanization Equipment & Manufacturers Database",
+      "provider": "FAO",
+      "services": [
+        "equipment discovery",
+        "manufacturer search",
+        "equipment comparison",
+        "country filtering"
+      ],
+      "audience": [
+        "farmers",
+        "mechanization providers",
+        "researchers",
+        "procurement teams",
+        "policymakers"
+      ],
+      "summary": "FAO database for exploring agricultural equipment and manufacturers by equipment type, model, company and country.",
+      "source": "FAO Sustainable Agricultural Mechanization",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "machinery",
+        "manufacturers",
+        "equipment",
+        "FAO"
+      ]
+    },
+    {
+      "id": "NG-EAGRI-TOOAN-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "suppliers",
+      "type": "tractor and machinery hire/access network",
+      "title": "Tractor Owners and Operators Association of Nigeria (TOOAN)",
+      "provider": "Tractor Owners and Operators Association of Nigeria",
+      "services": [
+        "tractor access",
+        "tractor hire",
+        "machinery operators",
+        "farm mechanization"
+      ],
+      "audience": [
+        "farmers",
+        "commercial farms",
+        "cooperatives",
+        "agribusinesses"
+      ],
+      "summary": "Listed by Nigeria's National e-Agriculture Portal as a source through which agricultural tractors can be accessed by farmers.",
+      "source": "National e-Agriculture Web Portal",
+      "url": "https://eagriculture.gov.ng/PrimaryProduction/AgricMachineries.aspx",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Nigeria",
+        "tractor",
+        "hire",
+        "TOOAN",
+        "mechanization"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-HIRE-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "training",
+      "type": "certified course",
+      "title": "Small-scale Agricultural Mechanization Hire Services as a Business Enterprise",
+      "provider": "FAO eLearning Academy",
+      "services": [
+        "hire-service business",
+        "feasibility assessment",
+        "equipment selection",
+        "mechanization entrepreneurship"
+      ],
+      "audience": [
+        "smallholder farmers",
+        "cooperatives",
+        "rural youth",
+        "hire-service providers",
+        "machinery suppliers"
+      ],
+      "summary": "Certified FAO course teaching how agricultural mechanization hire services can operate as a viable business, including feasibility, equipment and service models.",
+      "source": "FAO eLearning Academy",
+      "url": "https://elearning.fao.org/course/view.php?id=711",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "training",
+        "mechanization",
+        "hire services",
+        "entrepreneurship"
+      ]
     }
   ]
 }
