@@ -68,7 +68,7 @@ if (fs.existsSync(path.join(root, 'src/localized/calculator.njk'))) throw new Er
 if (fs.existsSync(path.join(root, '.github/workflows/extract-project.yml')) || fs.existsSync(path.join(root, '.github/workflows/extract-corrected-site.yml'))) throw new Error('Legacy extraction workflow remains and could overwrite the maintained source tree.');
 for (const legacyZip of ['GoOrganicAfrica-CORRECTED-FINAL.zip','GoOrganicAfrica-FINAL-REBUILT (1).zip','GoOrganicAfrica-FINAL-REBUILT (2).zip','GoOrganicAfrica-FINAL-REBUILT (2).zip..zip','GoOrganicAfrica-FINAL-SCALABLE-LOCALIZATION-FIX.zip']) if (fs.existsSync(path.join(root, legacyZip))) throw new Error(`Legacy project archive remains: ${legacyZip}`);
 const redirects = read('src/_redirects');
-for (const code of activeCountries.map(c => String(c.code).toLowerCase())) {
+for (const code of calculatorCountries.map(c => String(c.code).toLowerCase())) {
   if (!redirects.includes(`/${code}/farm-profit-calculator/ /${code}/en/farm-profit-calculator/ 301`)) throw new Error(`Legacy calculator redirect missing for ${code}`);
 }
 if (!read('src/sitemap.njk').includes('calculatorLocales')) throw new Error('Localized calculator pages are missing from sitemap.');
