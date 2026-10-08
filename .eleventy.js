@@ -34,6 +34,15 @@ module.exports = function (eleventyConfig) {
     });
     data.total = data.records.length;
     data.current_total = data.records.filter(r => r.is_current).length;
+    data.source_reference_total = data.records.filter(r => r.freshness === "source_reference").length;
+    data.commodities = [...new Set(data.records.map(r => r.commodity).filter(Boolean))].sort();
+    data.price_types = [...new Set(data.records.map(r => r.price_type).filter(Boolean))].sort();
+    data.freshness_totals = {
+      recent: data.records.filter(r => r.freshness === "recent").length,
+      older: data.records.filter(r => r.freshness === "older").length,
+      stale: data.records.filter(r => r.freshness === "stale").length,
+      source_reference: data.source_reference_total
+    };
     return data;
   });
 
