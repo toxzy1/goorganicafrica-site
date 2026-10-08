@@ -59,7 +59,7 @@ language: en
     {% for r in agriculturalResourcesAll %}
       <article data-type="Resource" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url or '' }}"></article>
     {% endfor %}
-    {% for country in agriculturalNews.countries %}
+    {% for country in agriculturalNewsMerged.countries %}
       {% for r in country.articles %}
         <article data-type="News" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url or '' }}"></article>
       {% endfor %}
