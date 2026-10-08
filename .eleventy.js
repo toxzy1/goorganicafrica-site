@@ -97,6 +97,47 @@ module.exports = function (eleventyConfig) {
     return data;
   });
 
+  // Cross-directory agricultural knowledge connections: country, topic/value chain and intelligence section counts.
+  eleventyConfig.addGlobalData("agriculturalKnowledgeConnections", () => {
+    const fs = require("fs");
+    const path = require("path");
+    const dataDir = path.join(process.cwd(), "src/_data");
+    const read = name => JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8"));
+    const opp = read("agriculturalOpportunities.json").records || [];
+    const markets = read("agriculturalMarkets.json").records || [];
+    const services = read("agriculturalServices.json").records || [];
+    const news = read("agriculturalNewsExpansion.json").records || [];
+    const resourcesPrimary = read("agriculturalResources.json").countries || [];
+    const resourcesSupplement = read("agriculturalResourcesSupplement.json").records || [];
+    const countries = new Map();
+    const ensure = (code, name) => {
+      if (!code) return null;
+      if (!countries.has(code)) countries.set(code, { code, country: name || code, sections: {}, topics: new Set() });
+      return countries.get(code);
+    };
+    const add = (code, name, section, text) => {
+      const c = ensure(code, name); if (!c) return;
+      c.sections[section] = (c.sections[section] || 0) + 1;
+      String(text || "").toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length >= 4).forEach(w => c.topics.add(w));
+    };
+    for (const r of opp) add(r.code || r.country_code, r.country, "opportunities", [r.title, r.summary, ...(r.tags || [])].join(" "));
+    for (const r of markets) if (r.country_code && r.country_code !== "ALL") add(r.country_code, r.country, "markets", [r.commodity, r.market].join(" "));
+    for (const r of services) add(r.country_code, r.country, "services", [r.title, r.summary, ...(r.tags || [])].join(" "));
+    for (const r of news) add(r.country_code, r.country, "news", [r.title, r.summary, r.category].join(" "));
+    for (const country of resourcesPrimary) {
+      const text = Object.values(country.records || {}).flat().map(r => [r.title, r.description, r.type, ...(r.tags || [])].join(" ")).join(" ");
+      if (text) add(country.code, country.name || country.country, "resources", text);
+    }
+    for (const r of resourcesSupplement) add(r.country_code, r.country, "resources", [r.title, r.description, r.type, ...(r.tags || [])].join(" "));
+    const records = [...countries.values()].map(c => ({
+      code: c.code, country: c.country,
+      sections: c.sections,
+      total: Object.values(c.sections).reduce((a,b) => a + b, 0),
+      topics: [...c.topics].sort()
+    })).sort((a,b) => a.country.localeCompare(b.country));
+    return { version: 1, generated: "2026-10-08", records };
+  });
+
   // Static passthroughs
   // Build validation: localized content is rendered at build time.
   eleventyConfig.addPassthroughCopy("src/css");
