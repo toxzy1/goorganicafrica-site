@@ -934,6 +934,120 @@
         "manufacturers",
         "machinery"
       ]
+    },
+    {
+      "id": "KE-AIAE-2026",
+      "country_code": "KE",
+      "country": "Kenya",
+      "category": "events",
+      "type": "agricultural technology expo",
+      "title": "Africa International Agricultural Expo 2026",
+      "provider": "Agri Africa / AIAE",
+      "services": [
+        "agricultural technology",
+        "machinery",
+        "market access",
+        "B2B networking",
+        "innovation"
+      ],
+      "audience": [
+        "farmers",
+        "agribusinesses",
+        "technology providers",
+        "investors",
+        "buyers"
+      ],
+      "summary": "Agricultural technology and business expo scheduled at KICC Nairobi, bringing together exhibitors, buyers, innovators and institutions.",
+      "source": "Africa International Agricultural Expo",
+      "url": "https://www.agriexpo.africa/2026-aiae-expo",
+      "verified": "2026-10-08",
+      "source_tier": 3,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-10-23",
+      "end_date": "2026-10-25",
+      "tags": [
+        "Kenya",
+        "Africa",
+        "expo",
+        "machinery",
+        "technology",
+        "B2B"
+      ]
+    },
+    {
+      "id": "NG-AGROMEQA-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "events",
+      "type": "agricultural mechanization expo",
+      "title": "AGROMEQA EXPO 2026",
+      "provider": "Agricultural Trade Group and JMT Plus Farms and Agro Allied in collaboration with Abuja Chamber of Commerce and Industry",
+      "services": [
+        "agricultural mechanization",
+        "technology adoption",
+        "investment",
+        "agro-export"
+      ],
+      "audience": [
+        "farmers",
+        "agribusinesses",
+        "machinery providers",
+        "investors",
+        "exporters"
+      ],
+      "summary": "Two-day Abuja expo focused on technology and investment for agro-export and agricultural mechanization.",
+      "source": "Abuja Chamber of Commerce and Industry / Guardian Nigeria event report",
+      "url": "https://guardian.ng/news/agro-mechanisation-expo-gets-october-15-date-as-acci-targets-investment-export-growth/",
+      "verified": "2026-10-08",
+      "source_tier": 3,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-16",
+      "tags": [
+        "Nigeria",
+        "Abuja",
+        "mechanization",
+        "expo",
+        "agro-export"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-CATALOGUE-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "suppliers",
+      "type": "mechanization catalogue",
+      "title": "FAO Mechanization Catalogue for Practitioners",
+      "provider": "FAO",
+      "services": [
+        "mechanization planning",
+        "technology selection",
+        "women farmer mechanization",
+        "equipment guidance"
+      ],
+      "audience": [
+        "farmers",
+        "extension workers",
+        "mechanization practitioners",
+        "policymakers",
+        "development partners"
+      ],
+      "summary": "FAO practitioner catalogue providing guidance for selecting and applying mechanization technologies, including approaches designed around women farmers' needs.",
+      "source": "FAO Sustainable Agricultural Mechanization",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization/en/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "FAO",
+        "mechanization",
+        "catalogue",
+        "women farmers"
+      ]
     }
   ]
 }
