@@ -25,11 +25,9 @@ language: en
 @media(max-width:650px){.goa-search-controls{grid-template-columns:1fr}}
 </style>
 
-<main class="goa-search">
-  <header>
-    <h1>Global Agricultural Search</h1>
-    <p class="goa-search-intro">Search across GoOrganicAfrica's resources, news, opportunities, markets, machinery, suppliers, training, events, eBooks and blog.</p>
-  </header>
+<div class="goa-search">
+  <h1>Global Agricultural Search</h1>
+  <p class="goa-search-intro">Search across GoOrganicAfrica resources, news, opportunities, markets, machinery, suppliers, training, events, eBooks and blog.</p>
 
   <div class="goa-search-controls">
     <input id="goa-global-search" class="goa-search-box" type="search" placeholder="Search agriculture, maize, Nigeria, finance, machinery, training..." autocomplete="off" aria-label="Search GoOrganicAfrica">
@@ -79,7 +77,7 @@ language: en
       {% endif %}
     {% endfor %}
   </div>
-</main>
+</div>
 
 <script>
 (function(){
