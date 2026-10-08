@@ -25,6 +25,25 @@ module.exports = function (eleventyConfig) {
     return data;
   });
 
+  // Agricultural services directory: suppliers, machinery, training and events.
+  eleventyConfig.addGlobalData("agriculturalServices", () => {
+    const fs = require("fs");
+    const path = require("path");
+    const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalServices.json"), "utf8"));
+    const records = (data.records || []).map(record => ({
+      ...record,
+      is_current: String(record.lifecycle || "current") === "current",
+      is_historical: String(record.lifecycle || "") === "historical"
+    }));
+    data.records = records;
+    data.total = records.length;
+    data.current_total = records.filter(r => r.is_current).length;
+    data.historical_total = records.filter(r => r.is_historical).length;
+    data.categories = [...new Set(records.map(r => r.category).filter(Boolean))].sort();
+    data.countries = [...new Set(records.map(r => r.country_code).filter(Boolean))].sort();
+    return data;
+  });
+
   // Agricultural markets: structured market intelligence and verified source registry.
   eleventyConfig.addGlobalData("agriculturalMarkets", () => {
     const fs = require("fs");
