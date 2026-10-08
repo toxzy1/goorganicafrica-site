@@ -34,6 +34,9 @@ jobs:
       - name: Sync news and opportunities
         run: npm run sync:agriculture
 
+      - name: Monitor freshness and review queues
+        run: npm run monitor:agriculture
+
       - name: Check generated data
         run: |
           npm run check:cms
@@ -48,6 +51,6 @@ jobs:
             echo "No agricultural data changes."
             exit 0
           fi
-          git add src/_data/agriculturalNews.json src/_data/agriculturalResources.json
+          git add src/_data/agriculturalNews.json src/_data/agriculturalResources.json src/_data/agriculturalOpportunities.json reports/agricultural-data-monitor.json
           git commit -m "Update agricultural intelligence data"
           git push
