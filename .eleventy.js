@@ -56,6 +56,13 @@ module.exports = function (eleventyConfig) {
     return { ...primary, categories, countries, total: countries.reduce((n, c) => n + c.total, 0) };
   });
 
+  // Regional agricultural intelligence layer: shared initiatives and corridors spanning multiple countries.
+  eleventyConfig.addGlobalData("agriculturalRegionalIntelligence", () => {
+    const fs = require("fs");
+    const path = require("path");
+    return JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalRegionalIntelligence.json"), "utf8"));
+  });
+
   // Merge primary agricultural news with reviewed supplement and expansion records.
   eleventyConfig.addGlobalData("agriculturalNewsMerged", () => {
     const fs = require("fs");
