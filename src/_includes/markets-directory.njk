@@ -18,6 +18,7 @@
 <h2 style="margin:8px 0">{{ r.commodity }}</h2>
 {% if r.price %}<p><strong>Price:</strong> {{ r.price }} {{ r.currency }} / {{ r.unit }}</p>{% else %}<p><strong>Price:</strong> Source reference — no current quotation is displayed.</p>{% endif %}
 <p><strong>Freshness:</strong> {{ r.freshness | replace("_", " ") | title }}{% if r.observed_date %} · Observation: {{ r.observed_date }}{% endif %}</p>
+{% if r.trend and r.trend != "baseline" %}<p><strong>Trend:</strong> {% if r.trend == "rising" %}↑ Rising{% elif r.trend == "falling" %}↓ Falling{% else %}→ Stable{% endif %}{% if r.change_percent is defined and r.change_percent is not null %} ({{ r.change_percent }}%){% endif %}{% if r.previous_observed_date %} · Previous: {{ r.previous_observed_date }}{% endif %}</p>{% endif %}
 <p><strong>Source:</strong> {{ r.source }}</p>
 <p><strong>Verified:</strong> {{ r.verified }}</p>
 {% if r.note %}<p>{{ r.note }}</p>{% endif %}
