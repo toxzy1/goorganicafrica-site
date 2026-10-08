@@ -1,0 +1,119 @@
+---
+layout: layouts/base.njk
+title: Global Agricultural Search
+meta_title: Global Agricultural Search | GoOrganicAfrica
+meta_description: Search GoOrganicAfrica resources, agricultural news, opportunities, markets, machinery, training, events, eBooks and blog content in one place.
+description: Search across GoOrganicAfrica's agricultural intelligence and knowledge directories.
+permalink: /search/
+language: en
+---
+
+<style>
+.goa-search{max-width:1100px;margin:0 auto;padding:24px 16px}
+.goa-search h1{margin-bottom:8px}
+.goa-search-intro{margin-bottom:18px}
+.goa-search-box{width:100%;padding:14px 16px;border:1px solid #ccc;border-radius:10px;font-size:1rem;box-sizing:border-box}
+.goa-search-controls{display:grid;grid-template-columns:1fr 220px;gap:10px;margin:12px 0 18px}
+.goa-search-results{display:grid;gap:12px}
+.goa-search-card{border:1px solid #ddd;border-radius:10px;padding:15px;background:#fff}
+.goa-search-card h2{font-size:1.05rem;margin:0 0 6px}
+.goa-search-card a{color:inherit;text-decoration:none}
+.goa-search-card a:hover{text-decoration:underline}
+.goa-search-meta{font-size:.85rem;opacity:.75;margin-bottom:7px}
+.goa-search-summary{margin:0}
+.goa-search-empty{padding:24px;border:1px dashed #bbb;border-radius:10px;text-align:center}
+@media(max-width:650px){.goa-search-controls{grid-template-columns:1fr}}
+</style>
+
+<main class="goa-search">
+  <header>
+    <h1>Global Agricultural Search</h1>
+    <p class="goa-search-intro">Search across GoOrganicAfrica's resources, news, opportunities, markets, machinery, suppliers, training, events, eBooks and blog.</p>
+  </header>
+
+  <div class="goa-search-controls">
+    <input id="goa-global-search" class="goa-search-box" type="search" placeholder="Search agriculture, maize, Nigeria, finance, machinery, training..." autocomplete="off" aria-label="Search GoOrganicAfrica">
+    <select id="goa-search-type" class="goa-search-box" aria-label="Filter search results">
+      <option value="">All sections</option>
+      <option value="Resource">Resources</option>
+      <option value="News">Agricultural News</option>
+      <option value="Opportunity">Opportunities</option>
+      <option value="Market">Markets</option>
+      <option value="Service">Services & Machinery</option>
+      <option value="eBook">eBooks</option>
+      <option value="Blog">Blog</option>
+    </select>
+  </div>
+
+  <p id="goa-search-count" aria-live="polite"></p>
+  <div id="goa-search-results" class="goa-search-results"></div>
+
+  <noscript><p class="goa-search-empty">Please enable JavaScript to use Global Search.</p></noscript>
+
+  <div id="goa-search-source" hidden>
+    {% for r in agriculturalResourcesAll %}
+      <article data-type="Resource" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url or '' }}"></article>
+    {% endfor %}
+    {% for country in agriculturalNews.countries %}
+      {% for r in country.articles %}
+        <article data-type="News" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url or '' }}"></article>
+      {% endfor %}
+    {% endfor %}
+    {% for r in agriculturalOpportunities.records %}
+      <article data-type="Opportunity" data-title="{{ r.title }}" data-summary="{{ r.summary or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.type or r.category or '' }} · {{ r.provider or r.source or '' }}" data-url="{{ r.application_url or r.source_url or r.url or '' }}"></article>
+    {% endfor %}
+    {% for r in agriculturalMarkets.records %}
+      <article data-type="Market" data-title="{{ r.commodity or 'Market information' }}{% if r.market %} — {{ r.market }}{% endif %}" data-summary="{{ r.note or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.price_type or '' }}{% if r.observed_date %} · {{ r.observed_date }}{% endif %}" data-url="{{ r.source_url or r.url or '' }}"></article>
+    {% endfor %}
+    {% for r in agriculturalServices.records %}
+      <article data-type="Service" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.provider or '' }}" data-url="{{ r.url or '' }}"></article>
+    {% endfor %}
+    {% for item in collections.ebooks %}
+      {% if item.data.active !== false and (item.data.translation_status or 'published') !== 'in_review' %}
+        <article data-type="eBook" data-title="{{ item.data.title or item.data.name or '' }}" data-summary="{{ item.data.tagline or item.data.description or item.data.audience or '' }}" data-meta="{{ item.data.category or '' }} · eBook" data-url="{{ item.url }}"></article>
+      {% endif %}
+    {% endfor %}
+    {% for item in collections.posts %}
+      {% if item.data.active !== false and (item.data.translation_status or 'published') !== 'in_review' %}
+        <article data-type="Blog" data-title="{{ item.data.title or '' }}" data-summary="{{ item.data.description or item.data.excerpt or '' }}" data-meta="{{ item.data.category or '' }} · Blog · {{ item.data.language or 'en' }}" data-url="{{ item.url }}"></article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</main>
+
+<script>
+(function(){
+  const input=document.getElementById('goa-global-search');
+  const type=document.getElementById('goa-search-type');
+  const results=document.getElementById('goa-search-results');
+  const count=document.getElementById('goa-search-count');
+  const source=[...document.querySelectorAll('#goa-search-source article')].map(el=>({
+    type:el.dataset.type||'',
+    title:el.dataset.title||'',
+    summary:el.dataset.summary||'',
+    meta:el.dataset.meta||'',
+    url:el.dataset.url||''
+  })).filter(x=>x.title&&x.url);
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  function render(){
+    const q=input.value.trim().toLowerCase();
+    const t=type.value;
+    const words=q.split(/\s+/).filter(Boolean);
+    const matches=source.filter(x=>{
+      if(t&&x.type!==t)return false;
+      const hay=(x.title+' '+x.summary+' '+x.meta).toLowerCase();
+      return !words.length||words.every(w=>hay.includes(w));
+    });
+    const shown=matches.slice(0,100);
+    count.textContent=matches.length+' result'+(matches.length===1?'':'s')+(matches.length>100?' (showing first 100)':'');
+    if(!shown.length){
+      results.innerHTML='<div class="goa-search-empty">No matching results found. Try a broader search or choose “All sections”.</div>';
+      return;
+    }
+    results.innerHTML=shown.map(x=>'<article class="goa-search-card"><div class="goa-search-meta">'+esc(x.type)+' · '+esc(x.meta)+'</div><h2><a href="'+esc(x.url)+'">'+esc(x.title)+'</a></h2><p class="goa-search-summary">'+esc(x.summary).slice(0,320)+'</p></article>').join('');
+  }
+  input.addEventListener('input',render);
+  type.addEventListener('change',render);
+  render();
+})();
+</script>
