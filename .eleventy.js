@@ -1,6 +1,25 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+
+  // Agricultural opportunities: unified current/expired lifecycle registry.
+  eleventyConfig.addGlobalData("agriculturalOpportunities", () => {
+    const fs = require("fs");
+    const path = require("path");
+    const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalOpportunities.json"), "utf8"));
+    const now = new Date("2026-10-08T00:00:00Z");
+    data.records = (data.records || []).map(record => {
+      const deadline = record.deadline ? new Date(record.deadline + "T23:59:59Z") : null;
+      const expired = String(record.status || "").toLowerCase() === "expired" || (deadline && !Number.isNaN(deadline.getTime()) && deadline < now);
+      return { ...record, lifecycle: expired ? "expired" : "current", is_current: !expired, is_expired: expired };
+    });
+    data.records.sort((a,b) => Number(b.is_current) - Number(a.is_current) || String(a.deadline || "9999").localeCompare(String(b.deadline || "9999")));
+    data.total = data.records.length;
+    data.current_total = data.records.filter(r => r.is_current).length;
+    data.expired_total = data.records.filter(r => r.is_expired).length;
+    return data;
+  });
+
   // Static passthroughs
   // Build validation: localized content is rendered at build time.
   eleventyConfig.addPassthroughCopy("src/css");
