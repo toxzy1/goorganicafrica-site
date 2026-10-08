@@ -44,6 +44,13 @@ language: en
   </div>
 
   <p id="goa-search-count" aria-live="polite"></p>
+  <div id="goa-search-connections" style="display:none;margin:16px 0 24px;">
+    <div style="border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--paper);">
+      <h2 style="margin-top:0;">Connected Agricultural Intelligence</h2>
+      <p style="margin-bottom:14px;">Use the same topic or country across different GoOrganicAfrica sections to move from information to action.</p>
+      <div id="goa-connection-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;"></div>
+    </div>
+  </div>
   <div id="goa-search-results" class="goa-search-results"></div>
 
   <noscript><p class="goa-search-empty">Please enable JavaScript to use Global Search.</p></noscript>
@@ -84,6 +91,8 @@ language: en
   const input=document.getElementById('goa-global-search');
   const type=document.getElementById('goa-search-type');
   const results=document.getElementById('goa-search-results');
+  const connections=document.getElementById('goa-search-connections');
+  const connectionCards=document.getElementById('goa-connection-cards');
   const count=document.getElementById('goa-search-count');
   const source=[...document.querySelectorAll('#goa-search-source article')].map(el=>({
     type:el.dataset.type||'',
@@ -103,6 +112,23 @@ language: en
       return !words.length||words.every(w=>hay.includes(w));
     });
     const shown=matches.slice(0,100);
+    const sections=[
+      ['Market','Markets','/markets/','Compare market information'],
+      ['Opportunity','Opportunities','/opportunities/','Look for finance and programmes'],
+      ['Resource','Resources','/agriculture-resources/','Find supporting resources'],
+      ['Service','Services & Machinery','/agricultural-services/','Find machinery and training'],
+      ['News','Agricultural News','/agricultural-news/','Follow recent developments'],
+      ['eBook','eBooks','/ebooks/','Learn practical methods'],
+      ['Blog','Blog','/blog/','Read detailed guides']
+    ];
+    const matchedSections=sections.map(s=>({s,count:matches.filter(x=>x.type===s[0]).length})).filter(x=>x.count);
+    if(q && matchedSections.length){
+      connections.style.display='block';
+      connectionCards.innerHTML=matchedSections.map(x=>'<a class="card" href="'+x.s[2]+'?q='+encodeURIComponent(q)+'" style="text-decoration:none;padding:12px;"><strong>'+x.s[1]+'</strong><br><span style="font-size:.85rem;">'+x.count+' matching result'+(x.count===1?'':'s')+'</span></a>').join('');
+    }else{
+      connections.style.display='none';
+      connectionCards.innerHTML='';
+    }
     count.textContent=matches.length+' result'+(matches.length===1?'':'s')+(matches.length>100?' (showing first 100)':'');
     if(!shown.length){
       results.innerHTML='<div class="goa-search-empty">No matching results found. Try a broader search or choose “All sections”.</div>';
