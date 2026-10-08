@@ -12,7 +12,7 @@ pageSection: agricultural-news
 <p class="lede">Fuatilia maendeleo ya sasa ya kilimo katika nchi zote 54 za Afrika. Habari zitachapishwa baada ya kuthibitishwa kutoka vyanzo rasmi au vinavyoaminika.</p>
 <p><strong>Saraka 54 za habari za kilimo za nchi</strong></p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
-{% for country in agriculturalNewsMerged.countries %}
+{% for country in agriculturalNewsMergedMerged.countries %}
 <a class="card" href="/sw/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
 <h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.localizedNames[pageLanguage] if country.localizedNames and pageLanguage != "en" else country.name }}</h2>
 <p>Tazama habari za kilimo za nchi hii →</p>
