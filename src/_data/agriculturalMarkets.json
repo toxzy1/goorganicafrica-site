@@ -899,5 +899,49 @@
       "status": "official",
       "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
     }
-  ]
+  ],
+  "market_intelligence": {
+    "international": [
+      {
+        "provider": "FAO Food Price Monitoring and Analysis (FPMA)",
+        "scope": "domestic",
+        "coverage": "Domestic food prices, price changes and anomalies; compare markets, commodities and seasons.",
+        "url": "https://www.fao.org/giews/food-prices/price-tool/en/",
+        "verified": "2026-10-08",
+        "source_tier": 1
+      },
+      {
+        "provider": "FAO Agricultural Market Information System (AMIS)",
+        "scope": "international",
+        "coverage": "Wheat, maize, rice and soybeans; international market developments and outlook.",
+        "url": "https://www.fao.org/markets-and-trade/areas-of-work/amis/en/",
+        "verified": "2026-10-08",
+        "source_tier": 1
+      }
+    ],
+    "regional": [
+      {
+        "region": "West Africa",
+        "provider": "ECOWAS / ECOAGRIS",
+        "coverage": "Regional agricultural information, production, market and trade statistics; national integration varies.",
+        "url": "https://www.ecowas.int/sector/agriculture/",
+        "verified": "2026-10-08",
+        "source_tier": 1
+      },
+      {
+        "region": "Southern Africa",
+        "provider": "SADC AIMS",
+        "coverage": "Regional agricultural information and food-security/market indicators using Member State and secondary data.",
+        "url": "https://aims.sadc.int/agricultural-information-management-system",
+        "verified": "2026-10-08",
+        "source_tier": 1
+      }
+    ],
+    "interpretation_rules": [
+      "Never present a source-reference record as a current quotation.",
+      "A current quotation requires market, commodity, price, currency, unit and observation date.",
+      "Keep historical and stale observations for trend analysis but label their freshness.",
+      "Use regional signals as context, not as a substitute for a market-specific price."
+    ]
+  }
 }
