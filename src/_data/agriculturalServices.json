@@ -291,6 +291,116 @@
         "food security",
         "event"
       ]
+    },
+    {
+      "id": "NG-NCAM-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "machinery",
+      "type": "public mechanization service and technology centre",
+      "title": "National Centre for Agricultural Mechanization (NCAM)",
+      "provider": "National Centre for Agricultural Mechanization",
+      "services": [
+        "agricultural machinery",
+        "training",
+        "standardization and certification",
+        "research and development",
+        "repair",
+        "spare parts",
+        "technical guidance"
+      ],
+      "audience": [
+        "farmers",
+        "technicians",
+        "mechanization service providers",
+        "institutions"
+      ],
+      "summary": "Nigeria's national agricultural mechanization centre providing machinery development, training, certification, research, repairs, spare parts and technical support.",
+      "source": "National Centre for Agricultural Mechanization",
+      "url": "https://ncam.gov.ng/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Nigeria",
+        "NCAM",
+        "machinery",
+        "training",
+        "repair",
+        "mechanization"
+      ]
+    },
+    {
+      "id": "NG-EAGRI-MACHINERY-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "machinery",
+      "type": "machinery source directory",
+      "title": "National e-Agriculture Machinery Directory",
+      "provider": "Federal Ministry of Agriculture / NITDA",
+      "services": [
+        "tractor sources",
+        "cassava planters",
+        "ploughs",
+        "machinery contacts",
+        "hire-service leads"
+      ],
+      "audience": [
+        "farmers",
+        "agribusinesses",
+        "mechanization providers"
+      ],
+      "summary": "Government e-Agriculture portal identifying machinery types and organizations where agricultural machinery can be obtained or accessed in Nigeria.",
+      "source": "National e-Agriculture Web Portal",
+      "url": "https://eagriculture.gov.ng/PrimaryProduction/AgricMachineries.aspx",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Nigeria",
+        "machinery",
+        "tractors",
+        "planter",
+        "e-agriculture"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-ELEARNING-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "training",
+      "type": "certified e-learning",
+      "title": "FAO Agricultural Mechanization E-learning Series",
+      "provider": "FAO eLearning Academy",
+      "services": [
+        "mechanization hire services",
+        "business planning",
+        "local market assessment",
+        "equipment management"
+      ],
+      "audience": [
+        "smallholder farmers",
+        "cooperatives",
+        "rural youth",
+        "hire-service providers",
+        "machinery suppliers"
+      ],
+      "summary": "Certified online training series covering sustainable mechanization and the business of providing farm machinery hire services.",
+      "source": "FAO eLearning Academy",
+      "url": "https://elearning.fao.org/course/view.php?id=1383",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "training",
+        "e-learning",
+        "mechanization",
+        "hire services"
+      ]
     }
   ]
 }
