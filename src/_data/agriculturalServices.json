@@ -182,6 +182,115 @@
         "technology",
         "event"
       ]
+    },
+    {
+      "id": "AFRICA-SCIENCE-INNOVATION-2026",
+      "country_code": "ET",
+      "country": "Ethiopia",
+      "category": "events",
+      "type": "forum",
+      "title": "Africa Forum on Harnessing Science and Innovation for Agrifood Systems Transformation",
+      "provider": "FAO Regional Office for Africa and partners",
+      "services": [
+        "science and innovation",
+        "investment",
+        "policy dialogue",
+        "knowledge exchange"
+      ],
+      "audience": [
+        "policymakers",
+        "researchers",
+        "innovators",
+        "investors",
+        "development partners"
+      ],
+      "summary": "Continental forum focused on how science, technology and innovation can drive productive, resilient, sustainable and inclusive agrifood systems.",
+      "source": "FAO Regional Office for Africa",
+      "url": "https://www.fao.org/africa/events/en/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-10-27",
+      "end_date": "2026-10-29",
+      "tags": [
+        "Africa",
+        "innovation",
+        "agrifood",
+        "Ethiopia",
+        "event"
+      ]
+    },
+    {
+      "id": "AFRICA-CLIMATE-SOCIAL-PROTECTION-2026",
+      "country_code": "BW",
+      "country": "Botswana",
+      "category": "training",
+      "type": "regional training workshop",
+      "title": "Regional training workshop on integrating social protection systems with inclusive climate action in Sub-Saharan Africa",
+      "provider": "FAO",
+      "services": [
+        "climate adaptation",
+        "social protection",
+        "resilience",
+        "policy capacity"
+      ],
+      "audience": [
+        "policymakers",
+        "practitioners",
+        "development partners"
+      ],
+      "summary": "Regional training workshop examining how social protection can strengthen climate adaptation, just transitions and resilient livelihoods.",
+      "source": "FAO Regional Office for Africa",
+      "url": "https://www.fao.org/africa/events/en/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-30",
+      "tags": [
+        "Botswana",
+        "training",
+        "climate",
+        "social protection"
+      ]
+    },
+    {
+      "id": "AFRICA-WEST-MDT-2026",
+      "country_code": "GN",
+      "country": "Guinea",
+      "category": "events",
+      "type": "regional meeting",
+      "title": "18th MDT Meeting of the FAO Subregional Office for West Africa",
+      "provider": "FAO Subregional Office for West Africa",
+      "services": [
+        "water management",
+        "agriculture",
+        "food security",
+        "regional policy"
+      ],
+      "audience": [
+        "policymakers",
+        "agricultural specialists",
+        "development partners"
+      ],
+      "summary": "Regional multidisciplinary meeting focused on water management for agriculture and food security in West Africa.",
+      "source": "FAO Regional Office for Africa",
+      "url": "https://www.fao.org/africa/events/en/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-11-23",
+      "end_date": "2026-11-27",
+      "tags": [
+        "Guinea",
+        "West Africa",
+        "water",
+        "food security",
+        "event"
+      ]
     }
   ]
 }
