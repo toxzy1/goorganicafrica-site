@@ -1048,6 +1048,117 @@
         "catalogue",
         "women farmers"
       ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-SUPPLYCHAIN-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "suppliers",
+      "type": "mechanization supply-chain guidance",
+      "title": "FAO Sustainable Agricultural Mechanization Supply Chain Resources",
+      "provider": "FAO",
+      "services": [
+        "equipment sourcing",
+        "spare parts",
+        "maintenance support",
+        "dealer networks",
+        "technical services"
+      ],
+      "audience": [
+        "farmers",
+        "machinery dealers",
+        "service providers",
+        "mechanics",
+        "policymakers",
+        "agribusinesses"
+      ],
+      "summary": "FAO guidance and knowledge resources on building reliable mechanization supply chains linking equipment, spare parts, maintenance, dealers, technicians and farmers.",
+      "source": "FAO Sustainable Agricultural Mechanization",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "FAO",
+        "mechanization",
+        "supply chain",
+        "spare parts",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-WOMEN-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "training",
+      "type": "mechanization practitioner catalogue",
+      "title": "Empowering Women Farmers – Mechanization Catalogue for Practitioners",
+      "provider": "FAO",
+      "services": [
+        "gender-responsive mechanization",
+        "technology selection",
+        "labour-saving technologies",
+        "farmer support"
+      ],
+      "audience": [
+        "women farmers",
+        "extension workers",
+        "mechanization practitioners",
+        "development partners",
+        "policymakers"
+      ],
+      "summary": "FAO practitioner catalogue focused on identifying and applying mechanization technologies that respond to the needs and constraints of women farmers.",
+      "source": "FAO Sustainable Agricultural Mechanization",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "FAO",
+        "women farmers",
+        "mechanization",
+        "training"
+      ]
+    },
+    {
+      "id": "AFRICA-FAO-MECH-BUSINESS-2026",
+      "country_code": "AFRICA",
+      "country": "Africa",
+      "category": "training",
+      "type": "certified mechanization business course",
+      "title": "Local Area and Market Assessment for Mechanization Hire Services",
+      "provider": "FAO eLearning Academy",
+      "services": [
+        "market assessment",
+        "hire-service planning",
+        "local demand analysis",
+        "business planning"
+      ],
+      "audience": [
+        "hire-service entrepreneurs",
+        "cooperatives",
+        "rural youth",
+        "machinery providers"
+      ],
+      "summary": "FAO training resource teaching prospective and existing mechanization hire-service businesses how to assess local demand and market conditions before investing.",
+      "source": "FAO Sustainable Agricultural Mechanization",
+      "url": "https://www.fao.org/sustainable-agricultural-mechanization",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Africa",
+        "FAO",
+        "training",
+        "market assessment",
+        "hire services",
+        "business"
+      ]
     }
   ]
 }
