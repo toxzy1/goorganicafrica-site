@@ -57,13 +57,13 @@ module.exports = function (eleventyConfig) {
   });
 
   // Merge primary agricultural news with reviewed supplement and expansion records.
-  eleventyConfig.addGlobalData("agriculturalNewsMergedMerged", () => {
+  eleventyConfig.addGlobalData("agriculturalNewsMerged", () => {
     const fs = require("fs");
     const path = require("path");
     const dataDir = path.join(process.cwd(), "src/_data");
-    const primary = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsMergedMerged.json"), "utf8"));
-    const supplement = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsMergedMergedSupplement.json"), "utf8"));
-    const expansion = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsMergedMergedExpansion.json"), "utf8"));
+    const primary = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNews.json"), "utf8"));
+    const supplement = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsSupplement.json"), "utf8"));
+    const expansion = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsExpansion.json"), "utf8"));
     const countries = (primary.countries || []).map(c => ({ ...c, articles: [...(c.articles || [])] }));
     const byCode = new Map(countries.map(c => [c.code, c]));
     const incoming = [...(supplement.records || []), ...(expansion.records || [])];
