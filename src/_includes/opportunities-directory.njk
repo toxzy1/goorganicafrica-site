@@ -25,7 +25,7 @@
 (() => {
  const input=document.getElementById('opportunity-search'), select=document.getElementById('opportunity-status'), category=document.getElementById('opportunity-category');
  const cards=[...document.querySelectorAll('.opportunity-card')];
- function filter(){const q=input.value.toLowerCase().trim(), s=select.value, cat=category.value; cards.forEach(c=>{const okS=s==='all'||c.dataset.status===s; const okC=cat==='all'||c.dataset.category===cat; const okQ=!q||c.dataset.search.toLowerCase().includes(q); c.hidden=!(okS&&okC&&okQ);});}
+ function filter(){const q=input.value.toLowerCase().trim(), s=select.value, cat=category.value; cards.forEach(c=>{const status=(c.dataset.status||'').toLowerCase(); const lifecycle=(status==='expired'||status==='closed'||status==='archived')?'expired':'current'; const okS=s==='all'||lifecycle===s; const okC=cat==='all'||c.dataset.category===cat; const okQ=!q||c.dataset.search.toLowerCase().includes(q); c.hidden=!(okS&&okC&&okQ);});}
  input.addEventListener('input',filter); select.addEventListener('change',filter); category.addEventListener('change',filter); filter();
 })();
 </script>
