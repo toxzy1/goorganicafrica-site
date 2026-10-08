@@ -35,33 +35,69 @@ module.exports = function (eleventyConfig) {
       if (!c || !r.category) continue;
       c.records[r.category] = c.records[r.category] || [];
       const key = `${r.country_code}|${r.category}|${r.url}|${r.title}`;
-      if (!c.records[r.category].some(x => `${c.code}|${r.category}|${x.url}|${x.title}` === key)) {
-        c.records[r.category].push(r);
-      }
+      if (!c.records[r.category].some(x => `${c.code}|${r.category}|${x.url}|${x.title}` === key)) c.records[r.category].push(r);
     }
 
     const sharedByUrl = new Map();
-    for (const c of countries) {
-      for (const cat of categories) {
-        for (const r of c.records[cat] || []) {
-          if (!r.url) continue;
-          if (!sharedByUrl.has(r.url)) sharedByUrl.set(r.url, new Set());
-          sharedByUrl.get(r.url).add(c.code);
-        }
-      }
+    for (const c of countries) for (const cat of categories) for (const r of c.records[cat] || []) {
+      if (!r.url) continue;
+      if (!sharedByUrl.has(r.url)) sharedByUrl.set(r.url, new Set());
+      sharedByUrl.get(r.url).add(c.code);
     }
 
-    for (const c of countries) {
-      for (const cat of categories) {
-        c.records[cat] = (c.records[cat] || []).map(r => {
-          const shared = r.url ? [...(sharedByUrl.get(r.url) || [])] : [];
-          return shared.length > 1 ? { ...r, shared_coverage: shared } : r;
-        });
-      }
-      c.total = categories.reduce((n, cat) => n + (c.records[cat] || []).length, 0);
+    for (const c of countries) for (const cat of categories) {
+      c.records[cat] = (c.records[cat] || []).map(r => {
+        const shared = r.url ? [...(sharedByUrl.get(r.url) || [])] : [];
+        return shared.length > 1 ? { ...r, shared_coverage: shared } : r;
+      });
+      c.total = categories.reduce((n, category) => n + (c.records[category] || []).length, 0);
     }
 
     return { ...primary, categories, countries, total: countries.reduce((n, c) => n + c.total, 0) };
+  });
+
+  // Merge primary agricultural news with reviewed supplement and expansion records.
+  eleventyConfig.addGlobalData("agriculturalNews", () => {
+    const fs = require("fs");
+    const path = require("path");
+    const dataDir = path.join(process.cwd(), "src/_data");
+    const primary = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNews.json"), "utf8"));
+    const supplement = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsSupplement.json"), "utf8"));
+    const expansion = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsExpansion.json"), "utf8"));
+    const countries = (primary.countries || []).map(c => ({ ...c, articles: [...(c.articles || [])] }));
+    const byCode = new Map(countries.map(c => [c.code, c]));
+    const incoming = [...(supplement.records || []), ...(expansion.records || [])];
+
+    for (const article of incoming) {
+      const country = byCode.get(article.country_code);
+      if (!country || !article.title || !article.url) continue;
+      const duplicate = country.articles.some(existing =>
+        existing.url === article.url ||
+        (existing.title === article.title && existing.published === article.published)
+      );
+      if (!duplicate) country.articles.push({
+        category: article.category || "general",
+        title: article.title,
+        summary: article.summary || "",
+        url: article.url,
+        source: article.source || "",
+        published: article.published || "",
+        verified: article.verified || "",
+        status: article.status || "official"
+      });
+    }
+
+    for (const country of countries) {
+      country.articles.sort((a, b) => String(b.published || "").localeCompare(String(a.published || "")));
+      country.total = country.articles.length;
+    }
+
+    return {
+      ...primary,
+      countries,
+      total: countries.reduce((sum, country) => sum + country.articles.length, 0),
+      last_updated: "2026-10-08"
+    };
   });
 
   // Collections
@@ -93,9 +129,7 @@ module.exports = function (eleventyConfig) {
     return "\u20A6" + Number(value).toLocaleString("en-NG");
   });
 
-  eleventyConfig.addFilter("jsonify", (value) => {
-    return JSON.stringify(value);
-  });
+  eleventyConfig.addFilter("jsonify", (value) => JSON.stringify(value));
 
   eleventyConfig.addFilter("findByDataSlug", (items, slug) => {
     return (items || []).find((item) => item && item.data && item.data.slug === slug);
@@ -103,23 +137,19 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("filterByLanguage", (items, language) => {
     const targetLanguage = language || "en";
-    return (items || []).filter((item) => {
-      return item && item.data &&
-        (item.data.language || "en") === targetLanguage &&
-        (item.data.active !== false) &&
-        (item.data.translation_status || "published") !== "in_review";
-    });
+    return (items || []).filter((item) => item && item.data &&
+      (item.data.language || "en") === targetLanguage &&
+      (item.data.active !== false) &&
+      (item.data.translation_status || "published") !== "in_review");
   });
 
   // Find the localized version of a content item by stable slug and language.
   eleventyConfig.addFilter("findByDataSlugAndLanguage", (items, slug, language) => {
     const targetLanguage = language || "en";
-    return (items || []).find((item) => {
-      return item && item.data &&
-        item.data.slug === slug &&
-        (item.data.language || "en") === targetLanguage &&
-        (item.data.translation_status || "published") !== "in_review";
-    });
+    return (items || []).find((item) => item && item.data &&
+      item.data.slug === slug &&
+      (item.data.language || "en") === targetLanguage &&
+      (item.data.translation_status || "published") !== "in_review");
   });
 
   return {
