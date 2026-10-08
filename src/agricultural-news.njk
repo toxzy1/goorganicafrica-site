@@ -13,7 +13,7 @@ pageSection: agricultural-news
 <p class="lede">Follow current agricultural developments across all 54 African countries. Stories are sourced from official or authoritative organizations and displayed with the original source and verification date.</p>
 
 {% set latestArticles = [] %}
-{% for country in agriculturalNews.countries %}
+{% for country in agriculturalNewsMerged.countries %}
   {% for article in country.articles %}
     {% set latestArticles = latestArticles.concat([{
       "country": country.name,
@@ -40,7 +40,7 @@ pageSection: agricultural-news
 <div style="margin-top:28px;padding:18px;border:1px solid var(--line);border-radius:12px;"><strong>Current coverage:</strong> {{ latestArticles | length }} recent stories are indexed in the latest-news view. Each country directory can hold up to 30 verified/reviewed stories from multiple source organizations.</div>\n\n<h2 style="margin-top:40px;">54 African Country News Directories</h2>
 <p>Select a country to see its verified agricultural news and developments.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
-{% for country in agriculturalNews.countries %}
+{% for country in agriculturalNewsMerged.countries %}
 <a class="card" href="/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
 <h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.name }}</h2>
 <p>{{ country.articles | length }} indexed stories · multiple authoritative sources where available</p>
