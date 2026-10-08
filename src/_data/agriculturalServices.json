@@ -508,6 +508,199 @@
         "hire services",
         "entrepreneurship"
       ]
+    },
+    {
+      "id": "NG-NADF-NAMSP-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "training",
+      "type": "national mechanization service-provider training",
+      "title": "National Agricultural Mechanisation Service Providers Training Programme",
+      "provider": "National Agricultural Development Fund (NADF)",
+      "services": [
+        "tractor operator training",
+        "mechanic training",
+        "machinery management",
+        "maintenance",
+        "occupational safety",
+        "enterprise development"
+      ],
+      "audience": [
+        "tractor operators",
+        "mechanics",
+        "mechanization service providers",
+        "women",
+        "youth"
+      ],
+      "summary": "National programme designed to build a pool of skilled agricultural mechanisation service providers; NADF reports a target of 4,000 tractor drivers and mechanics, with the first cohort of about 250 graduates.",
+      "source": "National Agricultural Development Fund",
+      "url": "https://nadf.gov.ng/nadf-graduates-first-250-agricultural-mechanisation-service-providers/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Nigeria",
+        "NADF",
+        "mechanization",
+        "tractor operators",
+        "mechanics",
+        "training"
+      ]
+    },
+    {
+      "id": "NG-NCAM-TRAIN-2026",
+      "country_code": "NG",
+      "country": "Nigeria",
+      "category": "training",
+      "type": "professional agricultural mechanization training",
+      "title": "NCAM Agricultural Mechanization Training Programmes",
+      "provider": "National Centre for Agricultural Mechanization (NCAM)",
+      "services": [
+        "farm machinery operation and safety",
+        "equipment maintenance and repairs",
+        "mechanized crop production",
+        "fabrication and local manufacturing",
+        "precision agriculture",
+        "mechanization entrepreneurship"
+      ],
+      "audience": [
+        "farmers",
+        "agripreneurs",
+        "extension officers",
+        "equipment operators",
+        "technicians",
+        "students",
+        "researchers"
+      ],
+      "summary": "Government-certified practical training programmes covering machinery operation, repairs, crop production, local fabrication, precision agriculture and mechanization entrepreneurship.",
+      "source": "National Centre for Agricultural Mechanization",
+      "url": "https://ncam.gov.ng/training-programs/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "tags": [
+        "Nigeria",
+        "NCAM",
+        "training",
+        "machinery",
+        "precision agriculture",
+        "entrepreneurship"
+      ]
+    },
+    {
+      "id": "ET-AFRICA-SIF-2026",
+      "country_code": "ET",
+      "country": "Ethiopia",
+      "category": "events",
+      "type": "Africa agrifood science and innovation forum",
+      "title": "Africa Forum on Harnessing Science and Innovation for Agrifood Systems Transformation",
+      "provider": "FAO Regional Office for Africa and partners",
+      "services": [
+        "science and innovation",
+        "value-chain innovation",
+        "investment",
+        "policy dialogue",
+        "knowledge exchange"
+      ],
+      "audience": [
+        "policymakers",
+        "researchers",
+        "innovators",
+        "investors",
+        "development partners"
+      ],
+      "summary": "Continental forum in Addis Ababa focused on scaling science, technology and innovation for productive, resilient, sustainable and inclusive agrifood systems.",
+      "source": "FAO Regional Office for Africa",
+      "url": "https://www.fao.org/africa/events/events-detail/africa-forum-on-harnessing-science-and-innovation-for-agrifood-systems-transformation/en",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-10-27",
+      "end_date": "2026-10-29",
+      "tags": [
+        "Africa",
+        "Ethiopia",
+        "science",
+        "innovation",
+        "agrifood",
+        "event"
+      ]
+    },
+    {
+      "id": "BW-CLIMATE-SOCIAL-2026",
+      "country_code": "BW",
+      "country": "Botswana",
+      "category": "training",
+      "type": "regional training workshop",
+      "title": "Regional Training Workshop on Inclusive Climate Action and Social Protection",
+      "provider": "FAO",
+      "services": [
+        "climate adaptation",
+        "social protection",
+        "resilient livelihoods",
+        "policy capacity"
+      ],
+      "audience": [
+        "policymakers",
+        "practitioners",
+        "development partners"
+      ],
+      "summary": "Regional workshop in Gaborone examining how social protection can strengthen climate adaptation, just transitions and resilient livelihoods.",
+      "source": "FAO Regional Office for Africa",
+      "url": "https://www.fao.org/africa/events/en/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-30",
+      "tags": [
+        "Africa",
+        "Botswana",
+        "climate",
+        "training",
+        "resilience"
+      ]
+    },
+    {
+      "id": "GN-MDT-18-2026",
+      "country_code": "GN",
+      "country": "Guinea",
+      "category": "events",
+      "type": "FAO subregional multidisciplinary meeting",
+      "title": "18th MDT Meeting of the FAO Subregional Office for West Africa",
+      "provider": "FAO Subregional Office for West Africa",
+      "services": [
+        "water management",
+        "agriculture",
+        "food security",
+        "regional policy"
+      ],
+      "audience": [
+        "policymakers",
+        "agricultural specialists",
+        "development partners"
+      ],
+      "summary": "West Africa multidisciplinary meeting in Conakry focused on water management for agriculture and food security.",
+      "source": "FAO Regional Office for Africa",
+      "url": "https://www.fao.org/africa/events/en/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "lifecycle": "current",
+      "start_date": "2026-11-23",
+      "end_date": "2026-11-27",
+      "tags": [
+        "Africa",
+        "Guinea",
+        "West Africa",
+        "water",
+        "agriculture",
+        "event"
+      ]
     }
   ]
 }
