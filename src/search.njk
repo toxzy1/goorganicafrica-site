@@ -94,6 +94,9 @@ language: en
   const connections=document.getElementById('goa-search-connections');
   const connectionCards=document.getElementById('goa-connection-cards');
   const count=document.getElementById('goa-search-count');
+  const topicAliases={maize:['maize','corn'],rice:['rice','paddy'],cassava:['cassava','manioc','yuca'],soybean:['soybean','soybeans','soya'],poultry:['poultry','chicken','broiler','layer'],livestock:['livestock','cattle','beef','dairy','milk','goat','sheep'],fish:['fish','fisheries','aquaculture','tilapia','catfish'],vegetables:['vegetable','vegetables','tomato','pepper','onion'],fruits:['fruit','fruits','banana','pineapple','avocado','mango'],seeds:['seed','seeds','certified seed','seed multiplication'],inputs:['fertilizer','fertiliser','inputs','agro-input','agrochemical'],irrigation:['irrigation','water management','water access','solar pumping'],mechanization:['mechanization','mechanisation','tractor','machinery','equipment'],finance:['finance','funding','grant','grants','loan','investment','credit','financing'],climate:['climate','resilience','drought','early warning','climate-smart'],markets:['market','markets','trade','export','value chain','agribusiness']};
+  const params=new URLSearchParams(location.search);
+  if(params.get('q')) input.value=params.get('q');
   const source=[...document.querySelectorAll('#goa-search-source article')].map(el=>({
     type:el.dataset.type||'',
     title:el.dataset.title||'',
@@ -109,7 +112,7 @@ language: en
     const matches=source.filter(x=>{
       if(t&&x.type!==t)return false;
       const hay=(x.title+' '+x.summary+' '+x.meta).toLowerCase();
-      return !words.length||words.every(w=>hay.includes(w));
+      return !words.length||words.every(w=>{const variants=topicAliases[w]||[w];return variants.some(v=>hay.includes(v));});
     });
     const shown=matches.slice(0,100);
     const sections=[
