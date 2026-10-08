@@ -26,12 +26,38 @@ module.exports = function (eleventyConfig) {
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalMarkets.json"), "utf8"));
     const now = new Date("2026-10-08T00:00:00Z");
-    data.records = (data.records || []).map(record => {
+    const records = (data.records || []).map(record => {
       const observed = record.observed_date ? new Date(record.observed_date) : null;
       const ageDays = observed && !Number.isNaN(observed.getTime()) ? Math.floor((now - observed) / 86400000) : null;
       const freshness = ageDays === null ? "source_reference" : ageDays <= 31 ? "recent" : ageDays <= 180 ? "older" : "stale";
       return { ...record, freshness, is_current: freshness === "recent" };
     });
+    const datedBySeries = new Map();
+    for (const record of records) {
+      if (!record.observed_date || record.price === null || record.price === undefined) continue;
+      const key = [record.country_code, record.market, record.commodity, record.currency, record.unit].join("|");
+      if (!datedBySeries.has(key)) datedBySeries.set(key, []);
+      datedBySeries.get(key).push(record);
+    }
+    for (const series of datedBySeries.values()) {
+      series.sort((a,b) => String(a.observed_date).localeCompare(String(b.observed_date)));
+      for (let i=0; i<series.length; i++) {
+        const current = series[i];
+        const previous = series[i-1];
+        if (!previous) {
+          current.trend = "baseline";
+          continue;
+        }
+        const change = Number(current.price) - Number(previous.price);
+        const pct = Number(previous.price) ? (change / Number(previous.price)) * 100 : null;
+        current.previous_price = previous.price;
+        current.previous_observed_date = previous.observed_date;
+        current.change = Number(change.toFixed(2));
+        current.change_percent = pct === null ? null : Number(pct.toFixed(2));
+        current.trend = change > 0 ? "rising" : change < 0 ? "falling" : "stable";
+      }
+    }
+    data.records = records;
     data.total = data.records.length;
     data.current_total = data.records.filter(r => r.is_current).length;
     data.source_reference_total = data.records.filter(r => r.freshness === "source_reference").length;
