@@ -1,0 +1,16 @@
+---
+permalink: /feeds/resources.json
+eleventyExcludeFromCollections: true
+---
+{% set records = [] %}
+{% for country in agriculturalResourcesAll.countries %}
+  {% for category, list in country.records %}
+    {% for r in list %}
+      {% if r.status not in ["draft","review","needs_review"] %}
+        {% set obj = {"country_code": country.code, "country": country.name, "category": r.category or category, "title": r.title, "description": r.description, "url": r.url, "source": r.source, "verified_date": r.verified_date or r.verified, "source_tier": r.source_tier} %}
+        {% set records = (records.push(obj), records) %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+{{ {"feed":"goorganicafrica.resources","version":1,"generated":"2026-10-08","records":records} | dump | safe }}
