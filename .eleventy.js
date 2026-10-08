@@ -138,6 +138,34 @@ module.exports = function (eleventyConfig) {
     return { version: 1, generated: "2026-10-08", records };
   });
 
+  eleventyConfig.addGlobalData("agriculturalDecisionCentre", () => {
+    const fs = require("fs"), path = require("path"), dir = path.join(process.cwd(), "src/_data");
+    const read = n => JSON.parse(fs.readFileSync(path.join(dir,n), "utf8"));
+    const countries = read("calculatorCountries.json").list || [];
+    const markets = read("agriculturalMarkets.json").records || [];
+    const opportunities = read("agriculturalOpportunities.json").records || [];
+    const services = read("agriculturalServices.json").records || [];
+    const news = [];
+    const primaryNews = read("agriculturalNews.json").countries || [];
+    primaryNews.forEach(c => (c.articles||[]).forEach(a => news.push({...a,country_code:c.code,country:c.name})));
+    news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]));
+    const resources = [];
+    (read("agriculturalResources.json").countries||[]).forEach(c => Object.values(c.records||{}).flat().forEach(r=>resources.push({...r,country_code:c.code,country:c.name})));
+    resources.push(...(read("agriculturalResourcesSupplement.json").records||[]));
+    const records=[];
+    const add=(section,r,code,country,title,text,url,date,tier,status)=>{
+      if(code && title) records.push({section,country_code:code,country:country||code,title,text:String(text||""),url:url||"",date:date||"",tier:tier||5,status:status||"official"});
+    };
+    markets.forEach(r=>add("markets",r,r.country_code,r.country,r.commodity||r.market||"Market information",[r.market,r.commodity,r.note].join(" "),r.source_url,r.observed_date||r.verified,r.source_tier,r.status));
+    opportunities.forEach(r=>add("opportunities",r,r.country_code||r.code,r.country,r.title,[r.summary,r.type,r.category,r.target_audience,r.eligibility,(r.tags||[]).join(" ")].join(" "),r.application_url||r.source_url||r.url,r.verified||r.verified_date,r.source_tier,r.status));
+    services.forEach(r=>add("services",r,r.country_code,r.country,r.title,[r.summary,r.category,r.type,(r.services||[]).join(" "),(r.tags||[]).join(" ")].join(" "),r.url,r.verified,r.source_tier,r.status));
+    news.forEach(r=>add("news",r,r.country_code,r.country,r.title,[r.summary,r.category,r.source].join(" "),r.url,r.published,r.source_tier,r.status));
+    resources.forEach(r=>add("resources",r,r.country_code,r.country,r.title,[r.description,r.type,(r.tags||[]).join(" ")].join(" "),r.url,r.verified_date||r.verified,r.source_tier,r.status));
+    const topics=["maize","rice","cassava","soybean","cocoa","coffee","cashew","tea","poultry","livestock","fish","vegetables","fruits","seeds","inputs","irrigation","mechanization","finance","climate","markets"];
+    const goals=[["market","Find markets & price information",["markets"]],["finance","Find finance & opportunities",["opportunities","resources"]],["inputs","Find inputs & production resources",["resources","services"]],["machinery","Find machinery & services",["services","resources"]],["training","Find training & events",["services","resources"]],["climate","Check climate, resilience & current news",["news","resources","markets"]],["all","Show my full agricultural brief",["markets","opportunities","resources","services","news"]]].map(x=>({id:x[0],label:x[1],sections:x[2]}));
+    return {version:1,generated:"2026-10-08",countries:countries.map(c=>({code:c.code,name:c.name})),topics,goals,records};
+  });
+
   // Topic/value-chain connection layer: derive real cross-section links from published records.
   eleventyConfig.addGlobalData("agriculturalTopicConnections", () => {
     const fs = require("fs");
