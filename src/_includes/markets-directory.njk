@@ -11,6 +11,12 @@
 </div>
 <p id="market-summary" style="margin:12px 0 0;font-size:.95em">{{ agriculturalMarkets.current_total }} recent market records · {{ agriculturalMarkets.source_reference_total }} source references · {{ agriculturalMarkets.total }} total records</p>
 </header>
+<section id="market-signals" style="margin:20px 0">
+<h2>Market movement signals</h2>
+<p>Signals are generated only from comparable dated price observations. They are indicators, not forecasts.</p>
+{% if agriculturalMarkets.market_signals.length %}<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">
+{% for s in agriculturalMarkets.market_signals | reverse %}<article style="border:1px solid #ddd;border-radius:10px;padding:16px"><strong>{{ s.country }} · {{ s.commodity }}</strong><p>{% if s.trend == "rising" %}↑ Rising{% elif s.trend == "falling" %}↓ Falling{% else %}→ Stable{% endif %} · {{ s.change_percent }}%</p><small>{{ s.observed_date }} compared with {{ s.previous_observed_date }}</small></article>{% endfor %}</div>{% else %}<p>No notable comparable movements are currently available.</p>{% endif %}
+</section>
 <div id="market-list">
 {% for r in agriculturalMarkets.records %}
 <article class="market-card" data-country="{{ r.country_code }}" data-commodity="{{ r.commodity }}" data-freshness="{{ r.freshness }}" data-price-type="{{ r.price_type }}" data-search="{{ r.country }} {{ r.market }} {{ r.commodity }} {{ r.source }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
