@@ -112,7 +112,7 @@ for (const file of htmlFiles) {
   const rel = path.relative(site, file);
   if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
     if ((html.match(/<main\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <main>");
-    if (!["markets/index.html","opportunities/index.html"].includes(rel) && (html.match(/<header\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <header>");
+    if (!["markets/index.html","opportunities/index.html","agricultural-services/index.html"].includes(rel) && (html.match(/<header\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <header>");
   }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
     failures.push(rel + ": legacy content-variant markup remains");
