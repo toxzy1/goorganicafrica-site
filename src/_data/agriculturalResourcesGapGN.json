@@ -25,6 +25,42 @@
       "verified": "2026-10-08",
       "status": "official",
       "type": "Agricultural machinery support"
+    },
+    {
+      "country_code": "GN",
+      "category": "finance",
+      "title": "Guinea Agricultural Development Fund (FODA)",
+      "description": "Public agricultural development fund providing financial and non-financial support to agricultural promoters, including mechanisms for finance, equipment, irrigation, storage, processing and renewable energy investments.",
+      "url": "https://foda.gov.gn/",
+      "source": "Fonds de Développement Agricole (FODA), Guinea",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural finance and investment support"
+    },
+    {
+      "country_code": "GN",
+      "category": "machinery",
+      "title": "Guinea FODA agricultural equipment request portal",
+      "description": "Official application portal for agricultural equipment needs, including tractors, harvesters and implements for agricultural enterprises and producer organisations.",
+      "url": "https://faley.foda.gov.gn/demande_equipements",
+      "source": "FODA, Guinea",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural machinery request service"
+    },
+    {
+      "country_code": "GN",
+      "category": "research",
+      "title": "Guinea Institute of Agronomic Research (IRAG)",
+      "description": "Public agricultural research institute providing agronomic advice, improved seed production, technical training, research programmes and farmer-oriented technical resources.",
+      "url": "https://irag.gov.gn/",
+      "source": "Institut de Recherche Agronomique de Guinée (IRAG)",
+      "source_tier": 1,
+      "verified": "2026-10-08",
+      "status": "official",
+      "type": "Agricultural research and extension resource"
     }
   ]
 }
