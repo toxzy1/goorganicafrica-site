@@ -1,0 +1,30 @@
+<section class="container" style="max-width:1100px;margin:0 auto;padding:24px 16px;">
+<header style="margin-bottom:24px">
+<h1>Agricultural Markets</h1>
+<p>Verified agricultural market intelligence, price-monitoring sources and regional market signals. A price is shown as current only when it has a defined market, commodity, unit and observation date.</p>
+<input id="market-search" type="search" placeholder="Search commodity, market, country or source..." aria-label="Search markets" style="width:100%;padding:12px;margin:12px 0">
+<select id="market-country" style="padding:10px"><option value="all">All countries</option>{% for r in agriculturalMarkets.records %}{% if r.country_code != "ALL" %}<option value="{{ r.country_code }}">{{ r.country }}</option>{% endif %}{% endfor %}</select>
+</header>
+<div id="market-list">
+{% for r in agriculturalMarkets.records %}
+<article class="market-card" data-country="{{ r.country_code }}" data-search="{{ r.country }} {{ r.market }} {{ r.commodity }} {{ r.source }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+<div style="font-size:.9em">{{ r.country }} · {{ r.market }} · {{ r.commodity }}</div>
+<h2 style="margin:8px 0">{{ r.commodity }}</h2>
+{% if r.price %}<p><strong>Price:</strong> {{ r.price }} {{ r.currency }} / {{ r.unit }}</p>{% else %}<p><strong>Price:</strong> Consult the official market source for the selected market and observation period.</p>{% endif %}
+<p><strong>Source:</strong> {{ r.source }}</p>
+<p><strong>Verified:</strong> {{ r.verified }}{% if r.observed_date %} · Observation: {{ r.observed_date }}{% endif %}</p>
+{% if r.note %}<p>{{ r.note }}</p>{% endif %}
+<a href="{{ r.source_url }}" target="_blank" rel="noopener noreferrer">View official market source</a>
+</article>
+{% endfor %}
+</div>
+<h2>Regional market signals</h2>
+{% for r in agriculturalMarkets.regional_roundups %}
+<article style="border:1px solid #ddd;border-radius:10px;padding:16px;margin:10px 0">
+<strong>{{ r.region }}</strong><p>{{ r.title }}</p><small>{{ r.source }} · {{ r.published }} · Verified {{ r.verified }}</small><br><a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">View source</a>
+</article>
+{% endfor %}
+</section>
+<script>
+(()=>{const q=document.getElementById('market-search'),c=document.getElementById('market-country'),cards=[...document.querySelectorAll('.market-card')];function f(){const s=q.value.toLowerCase().trim(),cc=c.value;cards.forEach(x=>{x.hidden=!( (cc==='all'||x.dataset.country===cc) && (!s||x.dataset.search.toLowerCase().includes(s)) );});}q.addEventListener('input',f);c.addEventListener('change',f);})();
+</script>
