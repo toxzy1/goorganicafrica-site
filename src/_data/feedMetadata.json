@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "purpose": "Public machine-readable agricultural intelligence feeds",
+  "generated": "2026-10-08",
+  "policy": {
+    "published_only": true,
+    "source_required": true,
+    "original_source_should_be_checked": true,
+    "paid_api": false
+  },
+  "feeds": [
+    {"name":"news","path":"/feeds/news.json","scope":"Current agricultural news"},
+    {"name":"opportunities","path":"/feeds/opportunities.json","scope":"Current agricultural opportunities"},
+    {"name":"markets","path":"/feeds/markets.json","scope":"Agricultural market intelligence"},
+    {"name":"resources","path":"/feeds/resources.json","scope":"Agricultural resources"},
+    {"name":"services","path":"/feeds/services.json","scope":"Services, machinery and training"}
+  ]
+}
