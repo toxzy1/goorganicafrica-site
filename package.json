@@ -13,7 +13,8 @@
     "audit:rendered": "node scripts/audit-rendered-site.js",
     "check:cms": "node scripts/check-cms.js",
     "sync:agriculture": "node scripts/sync-agricultural-news.js && node scripts/sync-agricultural-opportunities.js",
-    "audit:resources": "node scripts/analyze-agricultural-resources.js"
+    "audit:resources": "node scripts/analyze-agricultural-resources.js",
+    "monitor:agriculture": "node scripts/monitor-agricultural-data.js"
   },
   "keywords": [],
   "author": "",
