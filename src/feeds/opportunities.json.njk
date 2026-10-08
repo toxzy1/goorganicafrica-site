@@ -1,0 +1,12 @@
+---
+permalink: /feeds/opportunities.json
+eleventyExcludeFromCollections: true
+---
+{% set records = [] %}
+{% for r in agriculturalOpportunities.records %}
+  {% if r.is_current and r.status not in ["draft","review","needs_review"] %}
+    {% set obj = {"country_code": r.country_code, "country": r.country, "title": r.title, "summary": r.summary, "type": r.type, "provider": r.provider, "deadline": r.deadline, "application_url": r.application_url, "source_url": r.source_url, "verified": r.verified, "source_tier": r.source_tier} %}
+    {% set records = (records.push(obj), records) %}
+  {% endif %}
+{% endfor %}
+{{ {"feed":"goorganicafrica.opportunities","version":1,"generated":"2026-10-08","records":records} | dump | safe }}
