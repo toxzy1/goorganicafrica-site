@@ -19,7 +19,7 @@
 <p style="margin-top:22px;font-size:.9em;"><strong>Important:</strong> This is an information and discovery guide, not financial, legal or professional agronomic advice. Market records without a current dated quotation are shown as source references, not as current prices.</p>
 <script>
 (function(){
-  const data={{ agriculturalDecisionCentre.records | dump | safe }};
+  const data={{ agriculturalDecisionCentre.json | safe }};
   const goals={{ agriculturalDecisionCentre.goals | dump | safe }};
   const country=document.getElementById("dc-country"), topic=document.getElementById("dc-topic"), goal=document.getElementById("dc-goal"), out=document.getElementById("dc-output"), btn=document.getElementById("dc-build");
   const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
