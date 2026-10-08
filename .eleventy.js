@@ -163,7 +163,7 @@ module.exports = function (eleventyConfig) {
     resources.forEach(r=>add("resources",r,r.country_code,r.country,r.title,[r.description,r.type,(r.tags||[]).join(" ")].join(" "),r.url,r.verified_date||r.verified,r.source_tier,r.status));
     const topics=["maize","rice","cassava","soybean","cocoa","coffee","cashew","tea","poultry","livestock","fish","vegetables","fruits","seeds","inputs","irrigation","mechanization","finance","climate","markets"];
     const goals=[["market","Find markets & price information",["markets"]],["finance","Find finance & opportunities",["opportunities","resources"]],["inputs","Find inputs & production resources",["resources","services"]],["machinery","Find machinery & services",["services","resources"]],["training","Find training & events",["services","resources"]],["climate","Check climate, resilience & current news",["news","resources","markets"]],["all","Show my full agricultural brief",["markets","opportunities","resources","services","news"]]].map(x=>({id:x[0],label:x[1],sections:x[2]}));
-    return {version:1,generated:"2026-10-08",countries:countries.map(c=>({code:c.code,name:c.name})),topics,goals,records};
+    return {version:1,generated:"2026-10-08",countries:countries.map(c=>({code:c.code,name:c.name})),topics,goals,records,json:JSON.stringify(records)};
   });
 
   // Topic/value-chain connection layer: derive real cross-section links from published records.
