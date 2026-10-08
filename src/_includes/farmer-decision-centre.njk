@@ -1,0 +1,41 @@
+<section aria-labelledby="decision-form-title">
+  <h2 id="decision-form-title">Build my agricultural brief</h2>
+  <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:16px 0;">
+    <label>Country
+      <select id="dc-country" style="width:100%;padding:12px;margin-top:5px;"><option value="">Select country</option>{% for c in agriculturalDecisionCentre.countries | sort(false,false,"name") %}<option value="{{c.code}}">{{c.name}}</option>{% endfor %}</select>
+    </label>
+    <label>Enterprise or topic
+      <select id="dc-topic" style="width:100%;padding:12px;margin-top:5px;"><option value="">Select enterprise/topic</option>{% for t in agriculturalDecisionCentre.topics %}<option value="{{t}}">{{t | title}}</option>{% endfor %}</select>
+    </label>
+    <label>What do you need?
+      <select id="dc-goal" style="width:100%;padding:12px;margin-top:5px;">{% for g in agriculturalDecisionCentre.goals %}<option value="{{g.id}}">{{g.label}}</option>{% endfor %}</select>
+    </label>
+  </div>
+  <button id="dc-build" type="button" style="padding:12px 18px;cursor:pointer;">Build My Agricultural Brief</button>
+</section>
+<section id="dc-output" aria-live="polite" style="margin-top:24px;">
+  <p>Select a country and topic, then build your brief.</p>
+</section>
+<p style="margin-top:22px;font-size:.9em;"><strong>Important:</strong> This is an information and discovery guide, not financial, legal or professional agronomic advice. Market records without a current dated quotation are shown as source references, not as current prices.</p>
+<script>
+(function(){
+  const data={{ agriculturalDecisionCentre.records | dump | safe }};
+  const goals={{ agriculturalDecisionCentre.goals | dump | safe }};
+  const country=document.getElementById("dc-country"), topic=document.getElementById("dc-topic"), goal=document.getElementById("dc-goal"), out=document.getElementById("dc-output"), btn=document.getElementById("dc-build");
+  const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const aliases={maize:["maize","corn"],rice:["rice","paddy"],cassava:["cassava","manioc","yuca"],soybean:["soybean","soya"],cocoa:["cocoa","cacao"],coffee:["coffee"],cashew:["cashew"],tea:["tea"],poultry:["poultry","chicken","broiler","layer"],livestock:["livestock","dairy","cattle","goat","sheep"],fish:["fish","fisheries","aquaculture","tilapia","catfish"],vegetables:["vegetable","tomato","pepper","onion"],fruits:["fruit","banana","pineapple","avocado","mango"],seeds:["seed","certified seed"],inputs:["input","fertilizer","fertiliser","agro-input"],irrigation:["irrigation","water","solar pumping"],mechanization:["mechanization","mechanisation","tractor","machinery","equipment"],finance:["finance","funding","grant","loan","investment","credit"],climate:["climate","resilience","drought","early warning"],markets:["market","trade","export","value chain"]};
+  function render(){
+    const cc=country.value, tt=topic.value, g=goals.find(x=>x.id===goal.value)||goals[goals.length-1], terms=(aliases[tt]||[tt]).map(x=>x.toLowerCase());
+    if(!cc){out.innerHTML="<p>Please select a country first.</p>";return;}
+    const allowed=g.sections;
+    let rows=data.filter(r=>r.country_code===cc && allowed.includes(r.section));
+    if(tt) rows=rows.filter(r=>{const hay=(r.title+" "+r.text).toLowerCase();return terms.some(t=>hay.includes(t));});
+    rows.sort((a,b)=>(b.tier||5)-(a.tier||5)||String(b.date).localeCompare(String(a.date)));
+    const groups=allowed.map(sec=>[sec,rows.filter(r=>r.section===sec).slice(0,8)]).filter(x=>x[1].length);
+    const name=country.options[country.selectedIndex].text;
+    out.innerHTML="<h2>Your brief: "+esc(name)+(tt?" — "+esc(topic.options[topic.selectedIndex].text):"")+"</h2>"+(groups.length?groups.map(([sec,items])=>"<section style='margin:18px 0'><h3>"+esc(sec.replace(/s$/,"").replace(/-/g," "))+" <small>("+items.length+")</small></h3><div>"+items.map(r=>"<article class='card' style='margin:8px 0'><strong>"+esc(r.title)+"</strong><p>"+esc(r.text.slice(0,280))+(r.text.length>280?"…":"")+"</p><small>Verified/source date: "+esc(r.date||"Not stated")+" · Source tier "+esc(r.tier)+"</small>"+(r.url?"<br><a href='"+esc(r.url)+"' target='_blank' rel='noopener'>Open source</a>":"")+"</article>").join("")+"</div></section>").join(""):"<p>No matching records were found for this exact combination yet. Try another enterprise/topic or choose the full brief.</p>");
+  }
+  btn.addEventListener("click",render);
+  country.addEventListener("change",()=>{out.innerHTML="<p>Now choose an enterprise/topic and click <strong>Build My Agricultural Brief</strong>.</p>";});
+})();
+</script>
