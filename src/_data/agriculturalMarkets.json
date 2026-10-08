@@ -514,6 +514,23 @@
       "source_tier": 1,
       "status": "official",
       "note": "Current NAMIS displayed market price; observation date recorded as retrieval date."
+    },
+    {
+      "country_code": "UG",
+      "country": "Uganda",
+      "market": "NAMIS - Mbarara",
+      "commodity": "Milk",
+      "price": 800,
+      "currency": "UGX",
+      "unit": "kg",
+      "price_type": "consumer market price",
+      "observed_date": "2026-10-08",
+      "source": "Uganda National Agro-Market Information Services",
+      "source_url": "https://namis.uwrsa.go.ug/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "note": "Current NAMIS displayed market price; retrieval date recorded as observation date."
     }
   ],
   "sources": [
