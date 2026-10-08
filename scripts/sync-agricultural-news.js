@@ -226,7 +226,8 @@ async function main() {
         source: feed.source,
         published,
         verified: today,
-        status: "official-feed",
+        status: "review",
+        lifecycle: "needs_review",
         source_tier: 1,
         country_code: country.code
       });
