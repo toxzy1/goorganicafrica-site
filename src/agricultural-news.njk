@@ -15,11 +15,11 @@ pageSection: agricultural-news
 {% set latestArticles = [] %}
 {% for country in agriculturalNewsMerged.countries %}
   {% for article in country.articles %}
-    {% set latestArticles = latestArticles.concat([{
+    {% if article.status != "review" and article.status != "draft" and article.status != "needs_review" %}{% set latestArticles = latestArticles.concat([{
       "country": country.name,
       "flag": country.flag,
       "article": article
-    }]) %}
+    }]) %}{% endif %}
   {% endfor %}
 {% endfor %}
 {% set latestArticles = latestArticles | sort(attribute="article.published") | reverse %}
