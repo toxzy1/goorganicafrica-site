@@ -1,0 +1,21 @@
+---
+permalink: /feeds/news.json
+eleventyExcludeFromCollections: true
+---
+{
+  "feed": "goorganicafrica.agricultural-news",
+  "version": 1,
+  "generated": "{{ agriculturalNewsMerged.last_updated }}",
+  "records": [
+  {% set items = [] %}
+  {% for country in agriculturalNewsMerged.countries %}
+    {% for item in country.articles %}
+      {% if item.status not in ["draft","review","needs_review"] and item.lifecycle != "expired" %}
+        {% set itemObj = {"country_code": country.code, "country": country.name, "category": item.category, "title": item.title, "summary": item.summary, "url": item.url, "source": item.source, "published": item.published, "verified": item.verified} %}
+        {% set items = (items.push(itemObj), items) %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  {{ items | dump | safe }}
+  ]
+}
