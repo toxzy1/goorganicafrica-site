@@ -1614,5 +1614,37 @@
       "Other verified institutional source"
     ],
     "price_record_rule": "A displayed current quotation must have country, market, commodity, price, currency, unit and observation date. Source-reference records with price=null are never rendered as current prices."
-  }
+  },
+  "market_indicators": [
+    {
+      "country_code": "ZM",
+      "country": "Zambia",
+      "indicator": "Annual food inflation",
+      "value": 5.8,
+      "unit": "%",
+      "period": "2026-09",
+      "observed_date": "2026-09-30",
+      "source": "Zambia Statistics Agency",
+      "source_url": "https://www.zamstats.gov.zm/annual-food-and-non-food-inflation-september-2026/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "note": "Annual change in food prices; this is an inflation indicator, not a commodity quotation."
+    },
+    {
+      "country_code": "ZM",
+      "country": "Zambia",
+      "indicator": "Annual non-food inflation",
+      "value": 6.6,
+      "unit": "%",
+      "period": "2026-09",
+      "observed_date": "2026-09-30",
+      "source": "Zambia Statistics Agency",
+      "source_url": "https://www.zamstats.gov.zm/annual-food-and-non-food-inflation-september-2026/",
+      "verified": "2026-10-08",
+      "source_tier": 1,
+      "status": "official",
+      "note": "Annual non-food inflation indicator; retained for market-cost context, not commodity pricing."
+    }
+  ]
 }
