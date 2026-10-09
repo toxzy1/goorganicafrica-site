@@ -14,7 +14,8 @@
     "check:cms": "node scripts/check-cms.js",
     "sync:agriculture": "node scripts/sync-agricultural-news.js && node scripts/sync-agricultural-opportunities.js",
     "audit:resources": "node scripts/analyze-agricultural-resources.js",
-    "monitor:agriculture": "node scripts/monitor-agricultural-data.js"
+    "monitor:agriculture": "node scripts/monitor-agricultural-data.js",
+    "audit:agriculture": "node scripts/audit-agriculture-coverage.js"
   },
   "keywords": [],
   "author": "",
