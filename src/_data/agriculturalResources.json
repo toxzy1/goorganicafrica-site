@@ -2917,7 +2917,44 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "IFAD Comoros country programme and rural development projects",
+            "description": "Official IFAD country page summarizing its work in Comoros, rural livelihoods, family farming, climate resilience and market access. Use the country page to identify programmes and confirm their current implementation status; this is not a general open grant application.",
+            "url": "https://www.ifad.org/en/w/countries/comoros",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Country programme and rural development directory",
+            "access": "Public programme information; project participation and eligibility depend on each programme and implementing agency."
+          },
+          {
+            "title": "Comoros PREFER — Family Farming Productivity and Resilience Support Project",
+            "description": "IFAD project supporting smallholder productivity, climate resilience, market links and local staple crops including bananas, cassava and vegetables. The project page provides its objectives and supervision documents; confirm with the implementing agency whether farmer enrollment or services are currently available.",
+            "url": "https://www.ifad.org/en/w/projects/2000001157",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Family farming and climate-resilience project",
+            "access": "Project information, not a public grant call; participation is subject to local implementation arrangements."
+          },
+          {
+            "title": "Comoros FORCE-Jeunes — rural youth entrepreneurship and training project",
+            "description": "IFAD project focused on improving young people's access to employment and strengthening rural enterprises in crop farming, livestock and fisheries through training, entrepreneurship support and business linkages. Check project documents and local implementing partners for current activities and eligibility.",
+            "url": "https://www.ifad.org/en/w/projects/2000003992",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Youth agribusiness training and entrepreneurship support",
+            "access": "Programme information; this page is not an open application form. Confirm current intake with the local implementing agency."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -2962,6 +2999,18 @@
                 "description": "FAO inaripoti kuwa serikali ya Comoro iliwasilisha matokeo ya sensa ya pili ya jumla ya kilimo tarehe 2 Aprili 2026. Takwimu zinahusu mashamba, mifugo, uvuvi wa jadi na hali za maisha za wazalishaji. Hii ni rasilimali ya takwimu, si programu ya ufadhili."
               }
             }
+          },
+          {
+            "title": "FAO agricultural statistics capacity support — Comoros",
+            "description": "FAO country reference describing support for agricultural and rural statistics in Comoros, including survey tools, production data and statistical capacity. Useful for evidence-based planning; it is not a funding opportunity.",
+            "url": "https://www.fao.org/in-action/global-strategy-agricultural-statistics/countries/COM/en",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
+            "source_id": "fao",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural statistics and data capacity reference",
+            "access": "Public information; the page describes activities planned for 2021–2024, so confirm whether any listed support remains active."
           }
         ]
       }
