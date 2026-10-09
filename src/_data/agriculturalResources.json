@@ -1159,7 +1159,38 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "South Africa farmer registration portal",
+            "description": "The Department of Agriculture’s registration portal is intended to register farmers nationally and improve the department’s ability to plan support and respond when disasters affect producers. Check the portal’s current registration instructions and data requirements before submitting information.",
+            "url": "https://webapps2.dalrrd.gov.za/FarmersRegistration/home.do",
+            "source": "Department of Agriculture, Land Reform and Rural Development — South Africa",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Farmer registration and support administration",
+            "access": "Official information; verify current eligibility, deadlines and service availability with the responsible agency.",
+            "localized": {
+              "fr": {
+                "title": "Afrique du Sud — portail d’enregistrement des agriculteurs",
+                "description": "Le portail du ministère vise à enregistrer les agriculteurs à l’échelle nationale et à améliorer la planification de l’appui ainsi que la réponse aux catastrophes touchant les producteurs. Consultez les instructions et exigences actuelles avant de transmettre des informations."
+              },
+              "ar": {
+                "title": "جنوب أفريقيا — بوابة تسجيل المزارعين",
+                "description": "تهدف بوابة الوزارة إلى تسجيل المزارعين على المستوى الوطني وتحسين تخطيط الدعم والاستجابة للكوارث التي تؤثر في المنتجين. تحقق من تعليمات التسجيل ومتطلبات البيانات الحالية قبل إرسال المعلومات."
+              },
+              "pt": {
+                "title": "África do Sul — portal de registo de agricultores",
+                "description": "O portal do departamento destina-se a registar agricultores a nível nacional e melhorar o planeamento do apoio e a resposta a desastres que afetem os produtores. Consulte as instruções de registo e os requisitos de dados atuais antes de enviar informações."
+              },
+              "sw": {
+                "title": "Afrika Kusini — tovuti ya usajili wa wakulima",
+                "description": "Tovuti ya idara inalenga kusajili wakulima kitaifa na kuboresha upangaji wa msaada na mwitikio wakati majanga yanapoathiri wazalishaji. Angalia maelekezo ya sasa ya usajili na mahitaji ya data kabla ya kutuma taarifa."
+              }
+            }
+          }
+        ],
         "research": [],
         "climate": [
           {
@@ -2238,6 +2269,36 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Botswana."
               }
             }
+          },
+          {
+            "title": "Botswana Ministry of Lands and Agriculture",
+            "description": "Official government ministry page outlining agricultural and land policy, crop and animal production, agribusiness promotion, veterinary services and plant health. It also lists public agencies and parastatals relevant to farmers and agricultural businesses.",
+            "url": "https://www.gov.bw/ministries/ministry-lands-and-agriculture",
+            "source": "Government of Botswana",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Government agricultural agency",
+            "access": "Official information; verify current eligibility, deadlines and service availability with the responsible agency.",
+            "localized": {
+              "fr": {
+                "title": "Ministère des Terres et de l’Agriculture du Botswana",
+                "description": "Page officielle du gouvernement présentant les politiques agricoles et foncières, la production végétale et animale, la promotion de l’agro-industrie, les services vétérinaires et la santé des plantes. Elle répertorie également des organismes publics utiles aux agriculteurs et entreprises agricoles."
+              },
+              "ar": {
+                "title": "وزارة الأراضي والزراعة في بوتسوانا",
+                "description": "صفحة حكومية رسمية تعرض سياسات الزراعة والأراضي وإنتاج المحاصيل والحيوانات وتعزيز الأعمال الزراعية والخدمات البيطرية وصحة النبات. كما تسرد الهيئات العامة ذات الصلة بالمزارعين والشركات الزراعية."
+              },
+              "pt": {
+                "title": "Ministério das Terras e Agricultura do Botsuana",
+                "description": "Página oficial do governo que apresenta políticas agrícolas e fundiárias, produção vegetal e animal, promoção do agronegócio, serviços veterinários e saúde vegetal. Também lista entidades públicas relevantes para agricultores e empresas agrícolas."
+              },
+              "sw": {
+                "title": "Wizara ya Ardhi na Kilimo ya Botswana",
+                "description": "Ukurasa rasmi wa serikali unaoeleza sera za ardhi na kilimo, uzalishaji wa mazao na mifugo, kukuza biashara za kilimo, huduma za mifugo na afya ya mimea. Pia unaorodhesha taasisi za umma zinazohusika na wakulima na biashara za kilimo."
+              }
+            }
           }
         ],
         "inputs": [],
@@ -2726,6 +2787,36 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Chad."
               }
             }
+          },
+          {
+            "title": "Chad government — monitoring of priority agricultural projects",
+            "description": "The Prime Minister’s office reported a 17 March 2026 review of agricultural production and processing projects, including land development studies, fertiliser production planning and sesame and wheat value chains. This is programme context, not an open grant or farmer application.",
+            "url": "https://primature.gouv.td/le-premier-ministre-intensifie-le-suivi-des-projets-agricoles-prioritaires/",
+            "source": "Primature of Chad",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Official agricultural programme update",
+            "access": "Official information; verify current eligibility, deadlines and service availability with the responsible agency.",
+            "localized": {
+              "fr": {
+                "title": "Tchad — suivi gouvernemental des projets agricoles prioritaires",
+                "description": "La Primature a publié le 17 mars 2026 un point sur les projets de production et de transformation agricoles, notamment les études d’aménagement des terres, la planification d’une unité d’engrais et les filières sésame et blé. Il s’agit d’informations sur les programmes, et non d’un appel à subvention ouvert."
+              },
+              "ar": {
+                "title": "تشاد — متابعة حكومية للمشروعات الزراعية ذات الأولوية",
+                "description": "أفاد مكتب رئيس الوزراء في 17 مارس 2026 بمراجعة مشروعات الإنتاج والتصنيع الزراعي، بما فيها دراسات استصلاح الأراضي والتخطيط لإنتاج الأسمدة وسلسلتا السمسم والقمح. هذه معلومات عن البرامج وليست إعلاناً عن منحة مفتوحة."
+              },
+              "pt": {
+                "title": "Chade — acompanhamento governamental de projetos agrícolas prioritários",
+                "description": "A Primatura informou, em 17 de março de 2026, uma revisão de projetos de produção e transformação agrícola, incluindo estudos de desenvolvimento de terras, planeamento de produção de fertilizantes e cadeias de sésamo e trigo. É informação sobre programas, não uma candidatura aberta a subsídios."
+              },
+              "sw": {
+                "title": "Chad — ufuatiliaji wa serikali wa miradi ya kilimo ya kipaumbele",
+                "description": "Ofisi ya Waziri Mkuu iliripoti tarehe 17 Machi 2026 mapitio ya miradi ya uzalishaji na usindikaji wa kilimo, ikiwemo tafiti za ardhi, mipango ya uzalishaji wa mbolea na minyororo ya ufuta na ngano. Haya ni maelezo ya programu, si tangazo la ruzuku iliyo wazi."
+              }
+            }
           }
         ],
         "inputs": [],
@@ -2805,6 +2896,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Comoros agricultural census 2026 — FAO and national statistical data reference",
+            "description": "The FAO reports that the Comoros government presented results of the second General Agricultural Census on 2 April 2026. The census covers farms, livestock, artisanal fisheries and producers’ living conditions, providing a reference for agricultural planning; it is a data resource, not a farmer funding programme.",
+            "url": "https://www.fao.org/africa/news-stories/news-detail/national-presentation-of-the-results-of-the-second-general-agricultural-census-%28rga2%29/en",
+            "source": "FAO Africa / Government of the Union of the Comoros / INSEED",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural statistics and planning resource",
+            "access": "Official information; verify current eligibility, deadlines and service availability with the responsible agency.",
+            "localized": {
+              "fr": {
+                "title": "Comores — recensement général de l’agriculture 2026",
+                "description": "La FAO indique que le gouvernement comorien a présenté le 2 avril 2026 les résultats du deuxième Recensement général de l’agriculture. Les données couvrent les exploitations, l’élevage, la pêche artisanale et les conditions de vie des producteurs. Il s’agit d’une ressource statistique, et non d’un programme de financement."
+              },
+              "ar": {
+                "title": "جزر القمر — التعداد الزراعي العام لعام 2026",
+                "description": "أفادت الفاو بأن حكومة جزر القمر عرضت في 2 أبريل 2026 نتائج التعداد الزراعي العام الثاني. وتشمل البيانات المزارع والثروة الحيوانية والصيد الحرفي وظروف معيشة المنتجين. هذا مرجع إحصائي وليس برنامج تمويل للمزارعين."
+              },
+              "pt": {
+                "title": "Comores — recenseamento geral da agricultura de 2026",
+                "description": "A FAO informa que o governo das Comores apresentou, em 2 de abril de 2026, os resultados do segundo Recenseamento Geral da Agricultura. Os dados abrangem explorações, pecuária, pesca artesanal e condições de vida dos produtores. É uma referência estatística, não um programa de financiamento."
+              },
+              "sw": {
+                "title": "Comoro — sensa ya jumla ya kilimo ya 2026",
+                "description": "FAO inaripoti kuwa serikali ya Comoro iliwasilisha matokeo ya sensa ya pili ya jumla ya kilimo tarehe 2 Aprili 2026. Takwimu zinahusu mashamba, mifugo, uvuvi wa jadi na hali za maisha za wazalishaji. Hii ni rasilimali ya takwimu, si programu ya ufadhili."
+              }
+            }
           }
         ]
       }
