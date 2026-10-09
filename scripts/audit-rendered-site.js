@@ -153,6 +153,70 @@ for (const [rel, prefix] of [
   }
 }
 
+// Step 7: verify Resources and Agricultural News are rendered in all five languages.
+const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
+const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
+const hasLang = (html, lang) => new RegExp('<html\\b[^>]*\\blang="' + lang + '"', "i").test(html);
+const hasRtl = (html) => new RegExp('<html\\b[^>]*\\bdir="rtl"', "i").test(html);
+const selectorCount = (html) => (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
+const resourcePages = enabledLanguages.map((lang) => ({
+  lang,
+  rel: languagePrefix(lang) + "agriculture-resources/index.html",
+  title: ({en:"Agricultural Resources",fr:"Ressources agricoles",ar:"الموارد الزراعية",pt:"Recursos agrícolas",sw:"Rasilimali za Kilimo"})[lang]
+}));
+const newsPages = enabledLanguages.map((lang) => ({
+  lang,
+  rel: languagePrefix(lang) + "agricultural-news/index.html"
+}));
+
+for (const item of resourcePages) {
+  const html = read(item.rel);
+  if (!html) continue;
+  if (!hasLang(html, item.lang)) failures.push(item.rel + ": html lang does not match " + item.lang);
+  if (item.lang === "ar" && !hasRtl(html)) failures.push(item.rel + ": Arabic page must render dir=rtl");
+  for (const id of ["resourceSearch", "resourceCountry", "resourceCategory", "resourceDirectory", "resourceCount"]) {
+    if (!html.includes('id="' + id + '"')) failures.push(item.rel + ": missing resource search/filter element #" + id);
+  }
+  if (!html.includes(item.title)) failures.push(item.rel + ": expected localized resource heading is missing");
+  const selectors = selectorCount(html);
+  if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
+}
+
+for (const item of newsPages) {
+  const html = read(item.rel);
+  if (!html) continue;
+  if (!hasLang(html, item.lang)) failures.push(item.rel + ": html lang does not match " + item.lang);
+  if (item.lang === "ar" && !hasRtl(html)) failures.push(item.rel + ": Arabic page must render dir=rtl");
+  const selectors = selectorCount(html);
+  if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
+}
+
+const newsSourcePath = path.join(source, "_data", "agriculturalNews.json");
+if (fs.existsSync(newsSourcePath)) {
+  const newsData = JSON.parse(fs.readFileSync(newsSourcePath, "utf8"));
+  for (const country of (newsData.countries || [])) {
+    if (!country.slug) {
+      failures.push("Agricultural News country is missing slug: " + (country.name || country.code || "unknown"));
+      continue;
+    }
+    for (const lang of enabledLanguages) {
+      const rel = languagePrefix(lang) + "agricultural-news/" + country.slug + "/index.html";
+      const html = read(rel);
+      if (!html) continue;
+      if (!hasLang(html, lang)) failures.push(rel + ": html lang does not match " + lang);
+      if (lang === "ar" && !hasRtl(html)) failures.push(rel + ": Arabic country page must render dir=rtl");
+      for (const targetLang of enabledLanguages) {
+        const target = targetLang === "en"
+          ? "/agricultural-news/" + country.slug + "/"
+          : "/" + targetLang + "/agricultural-news/" + country.slug + "/";
+        if (!html.includes('data-url-' + targetLang + '="' + target + '"')) {
+          failures.push(rel + ": incorrect or missing language target for " + targetLang);
+        }
+      }
+    }
+  }
+}
+
 if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
