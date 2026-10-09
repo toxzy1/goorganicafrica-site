@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-09",
   "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
   "categories": [
     "finance",
@@ -4881,7 +4881,38 @@
       "slug": "republic-of-the-congo",
       "flag": "🇨🇬",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Fonds de soutien à l’agriculture — official agricultural financing institution",
+            "description": "The Republic of the Congo’s Ministry of Agriculture describes this public institution as financing agricultural, livestock and fisheries production, marketing and conservation, as well as research, extension, training and value-chain development. This is institutional information, not confirmation that a current application window is open; contact the fund to confirm eligibility and procedures.",
+            "url": "https://agriculture.agriculture.gouv.cg/?page_id=4240",
+            "source": "Ministry of Agriculture, Livestock and Fisheries — Republic of the Congo",
+            "source_id": "congo-ministry-agriculture",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Public agricultural financing institution",
+            "access": "Contact the fund to confirm current programmes, eligibility, required documents and application procedures.",
+            "localized": {
+              "fr": {
+                "title": "Fonds de soutien à l’agriculture — organisme public de financement agricole",
+                "description": "Le ministère de l’Agriculture de la République du Congo présente cet établissement public comme finançant la production agricole, pastorale et halieutique, la commercialisation, la conservation, la recherche-développement, la vulgarisation, la formation et le développement des filières. Cette fiche ne confirme pas l’ouverture d’un appel à candidatures ; contactez le Fonds pour vérifier les conditions et procédures actuelles."
+              },
+              "ar": {
+                "title": "صندوق دعم الزراعة — مؤسسة عامة للتمويل الزراعي",
+                "description": "توضح وزارة الزراعة في جمهورية الكونغو أن هذه المؤسسة العامة تموّل الإنتاج الزراعي والحيواني والسمكي والتسويق والحفظ، إضافة إلى البحث والإرشاد والتدريب وتطوير سلاسل القيمة. لا تؤكد هذه الصفحة وجود باب تقديم مفتوح حالياً؛ يُرجى التواصل مع الصندوق للتحقق من الأهلية والإجراءات."
+              },
+              "pt": {
+                "title": "Fundo de Apoio à Agricultura — instituição pública de financiamento agrícola",
+                "description": "O Ministério da Agricultura da República do Congo descreve esta instituição pública como financiadora da produção agrícola, pecuária e pesqueira, comercialização, conservação, investigação, extensão, formação e desenvolvimento de cadeias de valor. Esta ficha não confirma candidaturas abertas; contacte o Fundo para verificar elegibilidade e procedimentos atuais."
+              },
+              "sw": {
+                "title": "Mfuko wa Msaada wa Kilimo — taasisi ya umma ya ufadhili wa kilimo",
+                "description": "Wizara ya Kilimo ya Jamhuri ya Kongo inaeleza kuwa taasisi hii ya umma hufadhili uzalishaji wa mazao, mifugo na uvuvi, biashara, uhifadhi, utafiti, huduma za ugani, mafunzo na maendeleo ya minyororo ya thamani. Taarifa hii haithibitishi kuwa maombi yamefunguliwa; wasiliana na mfuko kuthibitisha vigezo na taratibu."
+              }
+            }
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -4910,12 +4941,73 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Republic of the Congo."
               }
             }
+          },
+          {
+            "title": "Ministry of Agriculture, Livestock and Fisheries — Republic of the Congo",
+            "description": "Official ministry portal for agricultural policy, public programmes, farmer support and sector information. The ministry also describes protected agricultural zones that can provide support such as mechanisation, irrigation, water, seeds and fertilisers; availability and access conditions should be confirmed locally.",
+            "url": "https://agriculture.agriculture.gouv.cg/",
+            "source": "Ministry of Agriculture, Livestock and Fisheries — Republic of the Congo",
+            "source_id": "congo-ministry-agriculture",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Government agricultural agency",
+            "access": "Official information portal; contact the ministry or relevant local office for programme access.",
+            "localized": {
+              "fr": {
+                "title": "Ministère de l’Agriculture, de l’Élevage et de la Pêche — République du Congo",
+                "description": "Portail officiel du ministère présentant les politiques agricoles, programmes publics, dispositifs d’appui aux agriculteurs et informations sectorielles. Le ministère décrit également les zones agricoles protégées, qui peuvent apporter un appui en mécanisation, irrigation, eau, semences et fertilisants ; vérifiez localement les disponibilités et conditions d’accès."
+              },
+              "ar": {
+                "title": "وزارة الزراعة والثروة الحيوانية ومصايد الأسماك — جمهورية الكونغو",
+                "description": "البوابة الرسمية للوزارة للمعلومات عن السياسات الزراعية والبرامج العامة ودعم المزارعين والقطاع. وتصف الوزارة أيضاً مناطق زراعية محمية يمكن أن توفر دعماً في الميكنة والري والمياه والبذور والأسمدة؛ يجب التحقق محلياً من التوافر وشروط الوصول."
+              },
+              "pt": {
+                "title": "Ministério da Agricultura, Pecuária e Pescas — República do Congo",
+                "description": "Portal oficial do ministério com políticas agrícolas, programas públicos, apoio aos agricultores e informações do setor. O ministério também descreve zonas agrícolas protegidas que podem oferecer mecanização, irrigação, água, sementes e fertilizantes; confirme localmente a disponibilidade e as condições de acesso."
+              },
+              "sw": {
+                "title": "Wizara ya Kilimo, Mifugo na Uvuvi — Jamhuri ya Kongo",
+                "description": "Tovuti rasmi ya wizara yenye sera za kilimo, programu za umma, msaada kwa wakulima na taarifa za sekta. Wizara pia inaeleza maeneo ya kilimo yaliyolindwa ambayo yanaweza kutoa msaada wa mitambo, umwagiliaji, maji, mbegu na mbolea; thibitisha upatikanaji na masharti katika eneo lako."
+              }
+            }
           }
         ],
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Incubateur Agricole du Congo — agricultural entrepreneurship and youth support",
+            "description": "The Ministry’s official profile describes the Incubateur Agricole du Congo as a programme that has helped professionalise and support the integration of young people into agriculture. Contact the ministry to confirm current locations, cohorts, eligibility and intake dates.",
+            "url": "https://agriculture.agriculture.gouv.cg/?page_id=2736",
+            "source": "Ministry of Agriculture, Livestock and Fisheries — Republic of the Congo",
+            "source_id": "congo-ministry-agriculture",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural entrepreneurship and youth support",
+            "access": "Programme information only; confirm current enrolment and conditions with the ministry.",
+            "localized": {
+              "fr": {
+                "title": "Incubateur Agricole du Congo — accompagnement à l’entrepreneuriat agricole des jeunes",
+                "description": "La présentation officielle du ministère décrit l’Incubateur Agricole du Congo comme un programme ayant contribué à la professionnalisation et à l’insertion des jeunes dans l’agriculture. Contactez le ministère pour confirmer les sites, cohortes, critères d’éligibilité et dates d’inscription actuels."
+              },
+              "ar": {
+                "title": "حاضنة الزراعة في الكونغو — دعم ريادة الأعمال الزراعية والشباب",
+                "description": "يصف الملف الرسمي للوزارة حاضنة الزراعة في الكونغو بأنها برنامج ساهم في التأهيل المهني وإدماج الشباب في القطاع الزراعي. يرجى التواصل مع الوزارة للتحقق من المواقع والدفعات وشروط الأهلية ومواعيد التسجيل الحالية."
+              },
+              "pt": {
+                "title": "Incubadora Agrícola do Congo — apoio ao empreendedorismo agrícola juvenil",
+                "description": "O perfil oficial do ministério descreve a Incubadora Agrícola do Congo como um programa que contribuiu para a profissionalização e integração de jovens na agricultura. Contacte o ministério para confirmar locais, turmas, critérios de elegibilidade e datas de inscrição atuais."
+              },
+              "sw": {
+                "title": "Incubator ya Kilimo ya Kongo — msaada kwa ujasiriamali wa kilimo wa vijana",
+                "description": "Wasifu rasmi wa wizara unaeleza Incubator ya Kilimo ya Kongo kama programu iliyosaidia kuandaa vijana kitaaluma na kuwaingiza katika kilimo. Wasiliana na wizara kuthibitisha maeneo, makundi, vigezo vya kustahiki na tarehe za sasa za kujiandikisha."
+              }
+            }
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
