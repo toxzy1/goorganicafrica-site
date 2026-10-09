@@ -1967,6 +1967,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Algeria National Agricultural Information System — 2026 launch and data scope",
+            "description": "The Algerian ministry reported launching the first version of its national agricultural information system in June 2026. Planned modules cover harvest monitoring, agricultural land and farmer registries, input supply, finance, insurance, markets, water and climate indicators. The system is being rolled out in stages; confirm which modules are currently available.",
+            "url": "https://madr.gov.dz/2026/06/29/%D8%A7%D9%84%D8%B3%D9%8A%D8%AF-%D9%8A%D8%A7%D8%B3%D9%8A%D9%86-%D9%88%D9%84%D9%8A%D8%AF-%D9%8A%D8%B4%D8%B1%D9%81-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%B1%D8%B3/",
+            "source": "Ministry of Agriculture, Rural Development and Fisheries — Algeria",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "National agricultural data system",
+            "access": "Official information; verify current availability and requirements with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Algérie — lancement du Système national d’information agricole",
+                "description": "Le ministère algérien a annoncé en juin 2026 le lancement de la première version du système national d’information agricole. Les modules prévus couvrent le suivi des récoltes, les registres fonciers et des agriculteurs, les intrants, le financement, l’assurance, les marchés, l’eau et le climat. Le déploiement est progressif : vérifiez quels modules sont disponibles."
+              },
+              "ar": {
+                "title": "الجزائر — إطلاق النظام الوطني للمعلومات الفلاحية",
+                "description": "أعلنت الوزارة الجزائرية في يونيو 2026 إطلاق النسخة الأولى من النظام الوطني للمعلومات الفلاحية. وتشمل الوحدات المخططة متابعة الحصاد وسجلات الأراضي والمزارعين والمدخلات والتمويل والتأمين والأسواق والمياه والمناخ. يجري التنفيذ على مراحل؛ تحقق من الوحدات المتاحة حالياً."
+              },
+              "pt": {
+                "title": "Argélia — lançamento do Sistema Nacional de Informação Agrícola",
+                "description": "O ministério argelino anunciou em junho de 2026 o lançamento da primeira versão do sistema nacional de informação agrícola. Os módulos previstos abrangem monitorização das colheitas, registos de terras e agricultores, insumos, financiamento, seguros, mercados, água e clima. A implementação é gradual; confirme quais módulos já estão disponíveis."
+              },
+              "sw": {
+                "title": "Algeria — uzinduzi wa Mfumo wa Kitaifa wa Taarifa za Kilimo",
+                "description": "Wizara ya Algeria ilitangaza Juni 2026 uzinduzi wa toleo la kwanza la mfumo wa kitaifa wa taarifa za kilimo. Vipengele vilivyopangwa vinajumuisha ufuatiliaji wa mavuno, rejista za ardhi na wakulima, pembejeo, fedha, bima, masoko, maji na hali ya hewa. Utekelezaji ni wa hatua kwa hatua; thibitisha vipengele vinavyopatikana sasa."
+              }
+            }
           }
         ]
       }
@@ -2883,7 +2913,38 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "FAO Chad country office — agricultural publications and rural development",
+            "description": "FAO’s Chad country page links to agricultural publications, rural land-governance material, food-security information and country programming. Use the publication date and document details to determine relevance; this is a knowledge resource, not a direct funding application.",
+            "url": "https://www.fao.org/tchad/",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural research and technical publications",
+            "access": "Official information; verify current availability and requirements with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "FAO au Tchad — publications agricoles et développement rural",
+                "description": "La page pays de la FAO donne accès à des publications agricoles, des ressources sur la gouvernance foncière rurale, des informations sur la sécurité alimentaire et le cadre de programmation pays. Vérifiez la date et le contenu des documents ; il s’agit d’une ressource documentaire, pas d’une demande directe de financement."
+              },
+              "ar": {
+                "title": "الفاو في تشاد — المنشورات الزراعية والتنمية الريفية",
+                "description": "توفر صفحة الفاو القطرية منشورات زراعية ومواد عن حوكمة الأراضي الريفية ومعلومات الأمن الغذائي وبرمجة التعاون القطري. تحقق من تاريخ كل وثيقة ومحتواها؛ هذا مورد معرفي وليس طلب تمويل مباشر."
+              },
+              "pt": {
+                "title": "FAO no Chade — publicações agrícolas e desenvolvimento rural",
+                "description": "A página nacional da FAO dá acesso a publicações agrícolas, materiais sobre governação da terra rural, informação de segurança alimentar e programação nacional. Verifique a data e o conteúdo dos documentos; é um recurso de conhecimento, não uma candidatura direta a financiamento."
+              },
+              "sw": {
+                "title": "FAO Chad — machapisho ya kilimo na maendeleo ya vijijini",
+                "description": "Ukurasa wa FAO wa nchi unaunganisha machapisho ya kilimo, nyenzo kuhusu usimamizi wa ardhi vijijini, taarifa za usalama wa chakula na programu za nchi. Angalia tarehe na maudhui ya hati; hii ni rasilimali ya maarifa, si maombi ya moja kwa moja ya ufadhili."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -2934,6 +2995,36 @@
               "sw": {
                 "title": "Wasifu wa kilimo wa FAO kwa Comoros",
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Comoros."
+              }
+            }
+          },
+          {
+            "title": "Union of the Comoros government digital portal",
+            "description": "Official government portal linking citizens to government services and ministry information, including agricultural ministry announcements and references to agriculture-related programmes. Some legacy items may be outdated; verify the date and current contact details before acting.",
+            "url": "https://www.egouv.km/en/",
+            "source": "Government of the Union of the Comoros",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Government service and ministry directory",
+            "access": "Official information; verify current availability and requirements with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Portail numérique du gouvernement de l’Union des Comores",
+                "description": "Portail officiel reliant les citoyens aux services publics et aux informations des ministères, y compris des annonces agricoles et des références à des programmes liés à l’agriculture. Certains anciens éléments peuvent être périmés ; vérifiez les dates et coordonnées actuelles."
+              },
+              "ar": {
+                "title": "البوابة الرقمية لحكومة اتحاد جزر القمر",
+                "description": "بوابة حكومية رسمية تربط المواطنين بالخدمات والمعلومات الوزارية، بما في ذلك إعلانات زراعية وإشارات إلى برامج مرتبطة بالزراعة. قد تكون بعض المواد القديمة غير محدثة؛ تحقق من التاريخ وبيانات الاتصال الحالية."
+              },
+              "pt": {
+                "title": "Portal digital do Governo da União das Comores",
+                "description": "Portal oficial que liga os cidadãos aos serviços públicos e informações ministeriais, incluindo anúncios agrícolas e referências a programas relacionados com a agricultura. Alguns itens antigos podem estar desatualizados; confirme as datas e os contactos atuais."
+              },
+              "sw": {
+                "title": "Tovuti ya kidijitali ya Serikali ya Muungano wa Comoro",
+                "description": "Tovuti rasmi inayowaunganisha wananchi na huduma za serikali na taarifa za wizara, ikiwemo matangazo ya kilimo na marejeo ya programu zinazohusiana na kilimo. Baadhi ya taarifa za zamani zinaweza kuwa zimepitwa na wakati; thibitisha tarehe na mawasiliano ya sasa."
               }
             }
           }
@@ -3439,7 +3530,38 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Egypt Ministry of Agriculture — central electronic services and agricultural agencies",
+            "description": "Official service portal for submitting requests and finding ministry services, with links to bodies responsible for feed, pesticide residue analysis, animal health research and seed production and certification. Check the individual agency for eligibility, fees and current service requirements.",
+            "url": "https://services.moa.gov.eg/",
+            "source": "Ministry of Agriculture and Land Reclamation — Egypt",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural services and public agencies",
+            "access": "Official information; verify current availability and requirements with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Égypte — services électroniques du ministère de l’Agriculture",
+                "description": "Portail officiel pour demander des services ministériels, avec des liens vers les organismes chargés des aliments pour animaux, des résidus de pesticides, de la recherche en santé animale et de la production et certification des semences. Consultez chaque organisme pour connaître les critères, frais et exigences actuels."
+              },
+              "ar": {
+                "title": "مصر — الخدمات الإلكترونية المركزية لوزارة الزراعة",
+                "description": "بوابة رسمية لطلب خدمات الوزارة، مع روابط إلى جهات الأعلاف وتحليل متبقيات المبيدات وبحوث صحة الحيوان وإنتاج واعتماد البذور. راجع كل جهة لمعرفة شروط الأهلية والرسوم والمتطلبات الحالية."
+              },
+              "pt": {
+                "title": "Egito — serviços eletrónicos centrais do Ministério da Agricultura",
+                "description": "Portal oficial para solicitar serviços ministeriais, com ligações a entidades responsáveis por rações, análise de resíduos de pesticidas, investigação em saúde animal e produção e certificação de sementes. Consulte cada entidade sobre elegibilidade, taxas e requisitos atuais."
+              },
+              "sw": {
+                "title": "Misri — huduma kuu za kielektroniki za Wizara ya Kilimo",
+                "description": "Tovuti rasmi ya kuomba huduma za wizara, yenye viungo vya taasisi zinazohusika na chakula cha mifugo, uchambuzi wa mabaki ya viuatilifu, utafiti wa afya ya wanyama na uzalishaji na uthibitishaji wa mbegu. Angalia kila taasisi kwa vigezo, ada na mahitaji ya sasa."
+              }
+            }
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
