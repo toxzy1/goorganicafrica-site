@@ -2475,7 +2475,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Burundi–Rwanda Integrated Development Project — IFAD",
+            "description": "Regional IFAD project supporting rural development and agricultural livelihoods in Burundi and Rwanda. Review the project page for its target areas, implementation arrangements and current status.",
+            "url": "https://www.ifad.org/en/w/projects/2000004971",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Regional rural and agricultural development",
+            "access": "Project information only; this is not an open grant application. Check local implementing partners for active services."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -3529,6 +3542,18 @@
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
             "published": "2025-12-29"
+          },
+          {
+            "title": "Equatorial Guinea Climate Resilient Agrifood Value Chains Development Project",
+            "description": "IFAD project approved in December 2025 to support climate-resilient agrifood value chains in Equatorial Guinea; the project page lists financing structure and project documentation.",
+            "url": "https://www.ifad.org/en/w/projects/2000005185",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Climate-resilient agricultural value-chain development",
+            "access": "Project information, not a direct farmer grant application; implementation and beneficiary arrangements are project-specific."
           }
         ],
         "data": [
@@ -4103,7 +4128,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "AgriFARM — Family Farming, Resilience and Markets in Upper and Middle Guinea",
+            "description": "IFAD programme targeting family-farming households in 15 prefectures, with activities including resilient production training, support to producer organisations, market infrastructure and rural enterprise development.",
+            "url": "https://www.ifad.org/en/w/projects/2000001059",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Farmer support, market access and rural enterprise development",
+            "access": "Project-specific programme; verify active implementation and beneficiary selection with local partners."
+          }
+        ],
         "research": [
           {
             "title": "Institute of Agronomic Research of Guinea (IRAG)",
@@ -5100,7 +5138,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Mauritania Ministry of Agriculture — projects and programmes directory",
+            "description": "Official ministry directory of agricultural projects and programmes, including rural producer development and sector initiatives. Use it to identify programmes and confirm their current implementation status.",
+            "url": "https://www.agriculture.gov.mr/fr/Projets",
+            "source": "Ministry of Agriculture and Food Sovereignty, Mauritania",
+            "source_id": "mauritania-ministry",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural projects and programme directory",
+            "access": "Programme listings do not imply that applications are open; check each programme's current status and eligibility."
+          }
+        ],
         "research": [
           {
             "title": "FAO Mauritania country profile — agricultural programmes and technical cooperation",
@@ -5364,7 +5415,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Integrated Rural Development Project in the Province of Khenifra — IFAD",
+            "description": "IFAD rural development project approved in September 2026 for Morocco's Khenifra Province. Consult the project page for scope, financing and implementation details.",
+            "url": "https://www.ifad.org/en/w/projects/2000004992",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Rural and agricultural development",
+            "access": "Project information, not a public grant application; beneficiary access depends on implementation arrangements."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -6020,6 +6084,19 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "São Tomé and Príncipe General Agricultural Census — FAO technical assistance",
+            "description": "FAO and the government signed a technical-assistance agreement to prepare the General Agricultural Census, strengthening agricultural statistics for planning and monitoring rural-development policies.",
+            "url": "https://www.fao.org/sao-tome-e-principe/noticias/detail-events/en/c/1709622/",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
+            "source_id": "fao",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural statistics and policy-planning resource",
+            "access": "Statistical and programme reference, not a funding application.",
+            "published": "2024-06-10"
           }
         ]
       }
