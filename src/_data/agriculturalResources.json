@@ -4664,6 +4664,66 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Libya open agricultural data — 2025 palm, pasture and agricultural-service indicators",
+            "description": "Libya’s open-data portal lists agricultural datasets from the Ministry of Agriculture and Livestock Information and Documentation Center, including 2025 indicators on date-palm development and production, pasture services and facilities, and agricultural police. Downloadable formats may include CSV, XLSX and JSON. Check dataset metadata and reference year before reusing figures.",
+            "url": "https://opendata.gia.gov.ly/dashboard/dataset/?organization=agriculture-information-center&res_format=JSON",
+            "source": "Libya Open Data Platform / Ministry of Agriculture and Livestock Information and Documentation Center",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Open agricultural datasets",
+            "access": "Public official information; check publication dates and dataset metadata before making time-sensitive decisions.",
+            "localized": {
+              "fr": {
+                "title": "Libye — données agricoles ouvertes : indicateurs 2025 sur le palmier dattier, les pâturages et les services",
+                "description": "Le portail national de données ouvertes répertorie des jeux de données agricoles du Centre d’information et de documentation du ministère, notamment des indicateurs 2025 sur les palmiers dattiers, les services et équipements pastoraux et la police agricole. Des formats CSV, XLSX et JSON peuvent être disponibles. Vérifiez les métadonnées et l’année de référence."
+              },
+              "ar": {
+                "title": "ليبيا — بيانات زراعية مفتوحة: مؤشرات 2025 للنخيل والمراعي والخدمات",
+                "description": "تعرض بوابة البيانات المفتوحة مجموعات بيانات زراعية من مركز المعلومات والتوثيق بالوزارة، منها مؤشرات عام 2025 عن تنمية النخيل وإنتاج التمور وخدمات ومرافق المراعي والشرطة الزراعية. قد تتوفر ملفات CSV وXLSX وJSON. تحقق من البيانات الوصفية والسنة المرجعية."
+              },
+              "pt": {
+                "title": "Líbia — dados agrícolas abertos: indicadores de 2025 sobre tamareiras, pastagens e serviços",
+                "description": "O portal nacional de dados abertos lista conjuntos de dados agrícolas do Centro de Informação e Documentação do ministério, incluindo indicadores de 2025 sobre palmeiras-das-tâmaras, serviços e instalações de pastagens e polícia agrícola. Podem existir ficheiros CSV, XLSX e JSON. Verifique os metadados e o ano de referência."
+              },
+              "sw": {
+                "title": "Libya — data huria za kilimo: viashiria vya 2025 kuhusu mitende, malisho na huduma",
+                "description": "Tovuti ya taifa ya data huria inaorodhesha seti za data za kilimo kutoka Kituo cha Taarifa na Nyaraka cha wizara, zikiwemo viashiria vya 2025 kuhusu ukuzaji na uzalishaji wa tende, huduma na vifaa vya malisho, na polisi wa kilimo. Faili za CSV, XLSX na JSON zinaweza kupatikana. Angalia metadata na mwaka wa rejea."
+              }
+            }
+          },
+          {
+            "title": "FAO Earth Observation — Libya crop, vegetation and drought indicators",
+            "description": "FAO’s Earth Observation platform provides seasonal and vegetation indicators for Libya, including cropland and grassland, precipitation, vegetation health and agricultural drought intensity. It can support monitoring and planning, but the indicators are not a substitute for local field observations or current official advisories.",
+            "url": "https://eo.apps.fao.org/country/index.jsp?code=LBY&lang=en",
+            "source": "FAO Earth Observation / Global Information and Early Warning System",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Satellite-based agricultural and drought monitoring",
+            "access": "Public official information; check publication dates and dataset metadata before making time-sensitive decisions.",
+            "localized": {
+              "fr": {
+                "title": "FAO Observation de la Terre — indicateurs agricoles, végétation et sécheresse en Libye",
+                "description": "La plateforme de la FAO propose des indicateurs saisonniers et de végétation pour la Libye, notamment sur les terres cultivées et les pâturages, les précipitations, l’état de la végétation et l’intensité de la sécheresse agricole. Ces indicateurs complètent les observations de terrain et les avis officiels actuels, sans les remplacer."
+              },
+              "ar": {
+                "title": "رصد الأرض لدى الفاو — مؤشرات الزراعة والغطاء النباتي والجفاف في ليبيا",
+                "description": "توفر منصة الفاو مؤشرات موسمية ومؤشرات للغطاء النباتي في ليبيا، بما يشمل الأراضي المزروعة والمراعي والأمطار وصحة الغطاء النباتي وشدة الجفاف الزراعي. تساعد هذه المؤشرات في الرصد والتخطيط لكنها لا تحل محل الملاحظات الميدانية أو التنبيهات الرسمية الحالية."
+              },
+              "pt": {
+                "title": "Observação da Terra da FAO — indicadores agrícolas, vegetação e seca na Líbia",
+                "description": "A plataforma da FAO fornece indicadores sazonais e de vegetação para a Líbia, incluindo terras cultivadas e pastagens, precipitação, saúde da vegetação e intensidade da seca agrícola. Estes indicadores apoiam a monitorização e o planeamento, mas não substituem observações locais nem avisos oficiais atualizados."
+              },
+              "sw": {
+                "title": "FAO Earth Observation — viashiria vya kilimo, mimea na ukame Libya",
+                "description": "Jukwaa la FAO hutoa viashiria vya msimu na uoto kwa Libya, ikiwemo mashamba na malisho, mvua, afya ya uoto na ukali wa ukame wa kilimo. Viashiria hivi vinaweza kusaidia ufuatiliaji na mipango, lakini havichukui nafasi ya uchunguzi wa shambani au tahadhari rasmi za sasa."
+              }
+            }
           }
         ]
       }
