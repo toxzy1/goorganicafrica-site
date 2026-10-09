@@ -1189,6 +1189,36 @@
                 "description": "Tovuti ya idara inalenga kusajili wakulima kitaifa na kuboresha upangaji wa msaada na mwitikio wakati majanga yanapoathiri wazalishaji. Angalia maelekezo ya sasa ya usajili na mahitaji ya data kabla ya kutuma taarifa."
               }
             }
+          },
+          {
+            "title": "South Africa National Extension Support Services",
+            "description": "The Department of Agriculture’s National Extension Support directorate coordinates standards, provincial extension programmes and partnerships for agricultural advisory services. Farmers can use the official page to identify the responsible provincial extension channel; it is not itself a grant application.",
+            "url": "https://nda.gov.za/index.php/publication/130-national-extension-support",
+            "source": "Department of Agriculture — South Africa",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural extension and advisory services",
+            "access": "Public information; check publication reference dates and confirm current services with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Afrique du Sud — Services nationaux d’appui à la vulgarisation agricole",
+                "description": "La direction nationale du ministère coordonne les normes, les programmes provinciaux de vulgarisation et les partenariats de conseil agricole. Cette page aide à identifier le canal provincial compétent ; elle ne constitue pas une demande de subvention."
+              },
+              "ar": {
+                "title": "جنوب أفريقيا — خدمات الدعم الوطني للإرشاد الزراعي",
+                "description": "تنسق إدارة الإرشاد الوطني بالوزارة المعايير وبرامج الإرشاد على مستوى المقاطعات والشراكات للخدمات الاستشارية الزراعية. تساعد الصفحة في تحديد قناة الإرشاد الإقليمية المناسبة؛ وهي ليست طلب منحة."
+              },
+              "pt": {
+                "title": "África do Sul — Serviços Nacionais de Apoio à Extensão Agrícola",
+                "description": "A direção nacional do departamento coordena normas, programas provinciais de extensão e parcerias de aconselhamento agrícola. A página ajuda a identificar o canal provincial competente; não é uma candidatura a subsídio."
+              },
+              "sw": {
+                "title": "Afrika Kusini — Huduma za Kitaifa za Usaidizi wa Ugani",
+                "description": "Idara ya kitaifa ya ugani ya wizara huratibu viwango, programu za ugani za majimbo na ushirikiano wa huduma za ushauri wa kilimo. Ukurasa husaidia kutambua njia sahihi ya ugani ya jimbo; si ombi la ruzuku."
+              }
+            }
           }
         ],
         "research": [],
@@ -1219,6 +1249,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Statistics South Africa — Agricultural Survey 2024",
+            "description": "Statistics South Africa published the Agricultural Survey 2024 on 20 November 2025, with data on income, expenditure and employment in agriculture and related services, plus downloadable time-series data. The figures describe the 2024 reference period, not current-year forecasts.",
+            "url": "https://www.statssa.gov.za/?PPN=P1101&page_id=1854",
+            "source": "Statistics South Africa",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Official agricultural statistics",
+            "access": "Public information; check publication reference dates and confirm current services with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Statistics South Africa — Enquête agricole 2024",
+                "description": "Statistics South Africa a publié l’Enquête agricole 2024 le 20 novembre 2025, avec des données sur les revenus, dépenses et emplois dans l’agriculture et les services connexes, ainsi que des séries chronologiques téléchargeables. Les chiffres portent sur la période de référence 2024, et non sur des prévisions pour l’année en cours."
+              },
+              "ar": {
+                "title": "إحصاءات جنوب أفريقيا — المسح الزراعي لعام 2024",
+                "description": "نشرت هيئة إحصاءات جنوب أفريقيا المسح الزراعي لعام 2024 في 20 نوفمبر 2025، متضمناً بيانات عن الدخل والإنفاق والتوظيف في الزراعة والخدمات المرتبطة بها، مع بيانات زمنية قابلة للتنزيل. تعود الأرقام إلى الفترة المرجعية 2024 وليست توقعات للسنة الحالية."
+              },
+              "pt": {
+                "title": "Statistics South Africa — Inquérito Agrícola de 2024",
+                "description": "A Statistics South Africa publicou o Inquérito Agrícola de 2024 em 20 de novembro de 2025, com dados sobre rendimentos, despesas e emprego na agricultura e serviços relacionados, além de séries temporais para descarregar. Os números referem-se ao período de 2024, não a previsões do ano atual."
+              },
+              "sw": {
+                "title": "Statistics South Africa — Utafiti wa Kilimo wa 2024",
+                "description": "Statistics South Africa ilichapisha Utafiti wa Kilimo wa 2024 tarehe 20 Novemba 2025, wenye data kuhusu mapato, matumizi na ajira katika kilimo na huduma zinazohusiana, pamoja na mfululizo wa takwimu unaoweza kupakuliwa. Takwimu zinahusu kipindi cha 2024, si utabiri wa mwaka huu."
+              }
+            }
           }
         ]
       }
@@ -1684,7 +1744,38 @@
             "published": "2025-05-14"
           }
         ],
-        "research": [],
+        "research": [
+          {
+            "title": "Cameroon Agricultural Research Institute for Development (IRAD)",
+            "description": "The official research institute works on plant, animal, fisheries, forestry, environmental production and food/agro-industrial technologies. Its research and technology resources can help farmers and agribusinesses identify locally relevant production guidance; confirm the availability of specific services with the institute.",
+            "url": "https://minresi.gov.cm/en/agricultural-research-institute-for-development/",
+            "source": "Ministry of Scientific Research and Innovation — Cameroon / IRAD",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural research and production technology",
+            "access": "Public information; check publication reference dates and confirm current services with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Cameroun — Institut de recherche agricole pour le développement (IRAD)",
+                "description": "L’institut officiel mène des travaux sur les productions végétales, animales, halieutiques, forestières et environnementales, ainsi que sur les technologies alimentaires et agro-industrielles. Ses ressources de recherche peuvent aider à trouver des conseils adaptés au contexte local ; confirmez auprès de l’institut les services disponibles."
+              },
+              "ar": {
+                "title": "الكاميرون — معهد البحوث الزراعية من أجل التنمية (IRAD)",
+                "description": "يعمل المعهد الرسمي في مجالات الإنتاج النباتي والحيواني والسمكي والغابي والبيئي، وتقنيات الأغذية والصناعات الزراعية. يمكن أن تساعد موارده البحثية في العثور على إرشادات مناسبة محلياً؛ تحقق من المعهد بشأن الخدمات المتاحة."
+              },
+              "pt": {
+                "title": "Camarões — Instituto de Investigação Agrícola para o Desenvolvimento (IRAD)",
+                "description": "O instituto oficial investiga produção vegetal, animal, pesqueira, florestal e ambiental, bem como tecnologias alimentares e agroindustriais. Os seus recursos de investigação podem ajudar a encontrar orientações adaptadas ao contexto local; confirme com o instituto os serviços disponíveis."
+              },
+              "sw": {
+                "title": "Cameroon — Taasisi ya Utafiti wa Kilimo kwa Maendeleo (IRAD)",
+                "description": "Taasisi rasmi hufanya utafiti kuhusu uzalishaji wa mimea, mifugo, uvuvi, misitu na mazingira, pamoja na teknolojia za chakula na viwanda vya kilimo. Rasilimali zake za utafiti zinaweza kusaidia kupata mwongozo unaofaa eneo husika; thibitisha huduma zinazopatikana na taasisi."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -1698,6 +1789,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Cameroon MINADER — Directorate of Agricultural Surveys and Statistics (DESA)",
+            "description": "The ministry directorate is responsible for collecting, analysing and publishing agricultural statistics, including surveys, agricultural accounts, production, farm and market indicators. The page links to statistical yearbooks and crop-season materials; check the reference year for each publication.",
+            "url": "https://www.minader.cm/index.php/direction-des-enquetes-et-statistiques-agricoles-desa/",
+            "source": "Ministry of Agriculture and Rural Development (MINADER) — Cameroon",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Government agricultural statistics",
+            "access": "Public information; check publication reference dates and confirm current services with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Cameroun — Direction des enquêtes et statistiques agricoles (DESA) du MINADER",
+                "description": "Cette direction ministérielle collecte, analyse et diffuse les statistiques agricoles, notamment les enquêtes, comptes agricoles, données sur la production, les exploitations et les marchés. La page donne accès à des annuaires statistiques et à des documents de campagne ; vérifiez l’année de référence de chaque publication."
+              },
+              "ar": {
+                "title": "الكاميرون — مديرية المسوح والإحصاءات الزراعية بوزارة MINADER",
+                "description": "تتولى هذه المديرية جمع الإحصاءات الزراعية وتحليلها ونشرها، بما يشمل المسوح والحسابات الزراعية ومؤشرات الإنتاج والمزارع والأسواق. وتربط الصفحة بالسنويات الإحصائية ومواد المواسم الزراعية؛ تحقق من السنة المرجعية لكل منشور."
+              },
+              "pt": {
+                "title": "Camarões — Direção de Inquéritos e Estatísticas Agrícolas (DESA) do MINADER",
+                "description": "Esta direção ministerial recolhe, analisa e publica estatísticas agrícolas, incluindo inquéritos, contas agrícolas e indicadores de produção, explorações e mercados. A página liga a anuários estatísticos e materiais sobre campanhas agrícolas; verifique o ano de referência de cada publicação."
+              },
+              "sw": {
+                "title": "Cameroon — Kurugenzi ya Tafiti na Takwimu za Kilimo (DESA) ya MINADER",
+                "description": "Kurugenzi hii ya wizara hukusanya, kuchambua na kuchapisha takwimu za kilimo, zikiwemo tafiti, hesabu za kilimo na viashiria vya uzalishaji, mashamba na masoko. Ukurasa una viungo vya vitabu vya takwimu na nyenzo za misimu; angalia mwaka wa rejea wa kila chapisho."
+              }
+            }
           }
         ]
       }
