@@ -24,16 +24,17 @@
       "records": {
         "finance": [
           {
-            "title": "National Agricultural Growth Scheme — Agro-Pocket (NAGS-AP)",
-            "description": "African Development Bank financing supports agricultural inputs, priority crop value chains, extension, digital and climate-smart agriculture, and agricultural data management in Nigeria.",
+            "title": "AfDB Nigeria NAGS-AP Phase II — US$200 million agricultural production and value-chain financing",
+            "description": "AfDB approved a US$200 million loan for the second phase of Nigeria's National Agricultural Growth Scheme–Agro-Pocket, supporting quality inputs, priority crop value chains, extension, digital and climate-smart agriculture, and agricultural data management.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
             "source": "African Development Bank",
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
             "status": "official",
-            "type": "Agricultural programme and finance",
-            "access": "Programme information; not a direct farmer application page"
+            "type": "Agricultural resource",
+            "access": "Official information; eligibility or implementation conditions may apply.",
+            "published": "2026-02-13"
           },
           {
             "title": "Nigeria AGROW — Sustainable Agricultural Value-Chains for Growth",
@@ -85,19 +86,6 @@
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
             "published": "2026-09-28"
-          },
-          {
-            "title": "AfDB Nigeria NAGS-AP Phase II — US$200 million agricultural production and value-chain financing",
-            "description": "AfDB approved a US$200 million loan for the second phase of Nigeria's National Agricultural Growth Scheme–Agro-Pocket, supporting quality inputs, priority crop value chains, extension, digital and climate-smart agriculture, and agricultural data management.",
-            "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
-            "source": "African Development Bank",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural resource",
-            "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-02-13"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Nigeria agrifood investment opportunities",
@@ -158,35 +146,8 @@
             }
           }
         ],
-        "inputs": [
-          {
-            "title": "Nigeria NAGS-AP Phase II — improved agricultural inputs and digital delivery",
-            "description": "The programme expands access to quality agricultural inputs and builds on an ICT-based system used to deliver seeds, pesticides and fertiliser through agro-dealers, alongside stronger agricultural data and extension services.",
-            "url": "https://www.afdb.org/en/news-and-events/press-releases/nigeria-african-development-bank-group-approves-200-million-boost-agricultural-production-and-reduce-food-imports-90885",
-            "source": "African Development Bank",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural resource",
-            "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-02-13"
-          }
-        ],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Nigeria is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "inputs": [],
+        "markets": [],
         "insurance": [],
         "farmer-support": [],
         "research": [
@@ -201,17 +162,6 @@
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
             "published": "2026-09-30"
-          },
-          {
-            "title": "IITA digital breeding capacity pilot — Nigeria",
-            "description": "IITA's 2026 capacity-development pilot is strengthening digital breeding data management and analytics for Nigerian researchers and national breeding programmes using CGIAR-recommended platforms.",
-            "url": "https://iita.org/capacity-development-office/",
-            "source": "IITA / CGIAR",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
           },
           {
             "title": "IITA Capacity Development Office — African agrifood learning and innovation",
@@ -384,18 +334,6 @@
         "inputs": [],
         "markets": [
           {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Ghana is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          },
-          {
             "title": "FAO Hand-in-Hand Ghana 2026 — agrifood investment opportunities",
             "description": "Ghana's 2026 Hand-in-Hand investment plan highlights priority agrifood value chains including rice, maize, cocoa, oil palm and livestock-related opportunities.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/en",
@@ -434,18 +372,6 @@
             "verified": "2026-10-07",
             "status": "official",
             "type": "Agricultural transformation and farmer-support programme"
-          },
-          {
-            "title": "Ghana AgriConnect Compact",
-            "description": "National framework supported by the World Bank and partners to strengthen food security, jobs, investment, value addition, irrigation, seed systems, mechanisation, farmer services and agricultural finance.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/06/03/ghana-launches-agriconnect-compact-to-strengthen-food-security-create-jobs-and-mobilize-investment",
-            "source": "World Bank",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural transformation programme",
-            "access": "Programme information"
           }
         ],
         "research": [
@@ -462,17 +388,6 @@
             "access": "Programme information; participation is through government and institutional partners."
           },
           {
-            "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping Ghana, Kenya, Malawi, Senegal, Tanzania and Zambia improve fertilizer-support design, soil health, agricultural productivity, digital registries, soil testing, research and extension.",
-            "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
-            "source": "World Bank Group",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
-          },
-          {
             "title": "IITA digital breeding capacity pilot — Ghana",
             "description": "IITA's 2026 capacity-development pilot is strengthening digital breeding data management and analytics for Ghanaian researchers and national breeding programmes.",
             "url": "https://iita.org/capacity-development-office/",
@@ -482,18 +397,6 @@
             "status": "official",
             "type": "Agricultural research / programme resource",
             "access": "Official information; programme eligibility and implementation conditions apply."
-          },
-          {
-            "title": "FAO Seeds to Foods 2026 initiative",
-            "description": "FAO's Seeds to Foods initiative supports stronger seed systems, crop diversity and pathways from quality seed to food security and resilient agrifood systems.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/seeds-to-foods-2026/en",
-            "source": "FAO",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural programme / opportunity",
-            "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-10-01"
           },
           {
             "title": "Seeds to Foods 2026 — African seed-to-food innovation showcase",
@@ -582,17 +485,6 @@
             "access": "Official programme information; eligibility and implementation conditions apply."
           },
           {
-            "title": "AgDevCo blended financing for Africa's next generation of agribusinesses",
-            "description": "IFAD and AgDevCo signed a USD 10 million loan agreement supporting early-stage agribusinesses, initially in Ethiopia, Kenya, Rwanda, Tanzania and Uganda.",
-            "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
-            "source": "IFAD",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
-          },
-          {
             "title": "FAO Hand-in-Hand 2026 — Kenya agrifood investment opportunities",
             "description": "FAO's 2026 Hand-in-Hand investment programme identifies coffee and agrifood value-chain investment among the priority value chains or investment areas for Kenya. The plans are government-led and designed to connect evidence-based agricultural priorities with financing, partnerships and investment.",
             "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
@@ -653,18 +545,6 @@
         ],
         "inputs": [],
         "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Kenya is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          },
           {
             "title": "FAO Hand-in-Hand Kenya 2026 — agrifood investment opportunities",
             "description": "Kenya's 2026 Hand-in-Hand investment plan is among the government-led African investment cases presented to agrifood investors.",
@@ -742,17 +622,6 @@
             "status": "official",
             "type": "Agricultural policy, soil health and input-support programme",
             "access": "Programme information; participation is through government and institutional partners."
-          },
-          {
-            "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
-            "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
-            "source": "World Bank Group",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
           },
           {
             "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
@@ -851,17 +720,6 @@
             "access": "Official programme information; eligibility and implementation conditions apply."
           },
           {
-            "title": "AgDevCo blended financing for Africa's next generation of agribusinesses",
-            "description": "IFAD and AgDevCo signed a USD 10 million loan agreement supporting early-stage agribusinesses, initially in Ethiopia, Kenya, Rwanda, Tanzania and Uganda.",
-            "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
-            "source": "IFAD",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
-          },
-          {
             "title": "FAO Hand-in-Hand 2026 — Uganda agrifood investment opportunities",
             "description": "FAO's 2026 Hand-in-Hand investment programme identifies dairy, mechanization and agroprocessing among the priority value chains or investment areas for Uganda. The plans are government-led and designed to connect evidence-based agricultural priorities with financing, partnerships and investment.",
             "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
@@ -906,18 +764,6 @@
         ],
         "inputs": [],
         "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Uganda is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
             "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
@@ -1065,17 +911,6 @@
             "status": "official",
             "type": "Agricultural policy, soil health and input-support programme",
             "access": "Programme information; participation is through government and institutional partners."
-          },
-          {
-            "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
-            "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
-            "source": "World Bank Group",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
           },
           {
             "title": "IITA digital breeding capacity pilot — Tanzania",
@@ -1331,32 +1166,22 @@
                 "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Zambia."
               }
             }
-          },
+          }
+        ],
+        "inputs": [],
+        "markets": [
           {
-            "title": "AfDB Cashew Development Programme Phase II Preparation Project",
-            "description": "African Development Bank project approved in June 2026 to prepare the second phase of Zambia's cashew development programme, including feasibility and environmental studies.",
+            "title": "AfDB Zambia Cashew Development Programme Phase II preparation",
+            "description": "Verified African Development Bank record covering afdb zambia cashew development programme phase ii preparation. See the official source for scope, implementation status and eligibility or participation conditions.",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "source": "African Development Bank",
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
             "status": "official",
-            "type": "Agricultural development programme/project"
-          }
-        ],
-        "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Zambia is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "type": "Agricultural value-chain programme preparation",
+            "access": "Official information; eligibility and implementation conditions apply.",
+            "published": "2026-06-15"
           },
           {
             "title": "FAO Hand-in-Hand Zambia 2026 — agrifood investment opportunities",
@@ -1383,36 +1208,11 @@
             "status": "official",
             "type": "Agrifood investment opportunity",
             "access": "Official investment information; not a direct grant application."
-          },
-          {
-            "title": "AfDB Zambia Cashew Development Programme Phase II preparation",
-            "description": "Verified African Development Bank record covering afdb zambia cashew development programme phase ii preparation. See the official source for scope, implementation status and eligibility or participation conditions.",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "source": "African Development Bank",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural value-chain programme preparation",
-            "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-06-15"
           }
         ],
         "insurance": [],
         "farmer-support": [],
         "research": [
-          {
-            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "title": "Zambia Cashew Development Programme Phase II Preparation Project",
-            "description": "AfDB-supported preparation work for the next phase of Zambia's cashew development programme, including feasibility and environmental studies.",
-            "type": "Agricultural value-chain development project",
-            "access": "Project information"
-          },
           {
             "title": "World Bank Repurposing Agricultural Support for Soil Health Impact Program",
             "description": "World Bank programme supporting participating African countries to improve agricultural support and fertilizer-subsidy design, soil health, productivity, digital farm registries, e-vouchers, research and extension, and private-sector finance.",
@@ -1424,17 +1224,6 @@
             "status": "official",
             "type": "Agricultural policy, soil health and input-support programme",
             "access": "Programme information; participation is through government and institutional partners."
-          },
-          {
-            "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
-            "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
-            "source": "World Bank Group",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
           },
           {
             "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
@@ -1532,18 +1321,6 @@
             "status": "official",
             "type": "Agricultural finance/research programme",
             "access": "Official programme information; eligibility and implementation conditions apply."
-          },
-          {
-            "title": "FAO Hand-in-Hand 2026 — Rwanda agrifood investment opportunities",
-            "description": "FAO's 2026 Hand-in-Hand investment programme identifies coffee, tea and avocado among the priority value chains or investment areas for Rwanda. The plans are government-led and designed to connect evidence-based agricultural priorities with financing, partnerships and investment.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao-hand-in-hand",
-            "source_tier": 1,
-            "verified": "2026-10-08",
-            "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
           }
         ],
         "grants": [
@@ -1831,15 +1608,15 @@
       "records": {
         "finance": [
           {
-            "title": "IFAD-AgDevCo blended finance for early-stage agribusinesses",
-            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing.",
+            "title": "AgDevCo blended financing for Africa's next generation of agribusinesses",
+            "description": "IFAD and AgDevCo signed a USD 10 million loan agreement supporting early-stage agribusinesses, initially in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, with a focus on resilient and inclusive food systems.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
-            "source": "IFAD / AgDevCo",
-            "source_id": "ifad-agdevco",
+            "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
             "status": "official",
-            "type": "Agribusiness blended finance"
+            "type": "Agricultural finance/research programme",
+            "access": "Official programme information; eligibility and implementation conditions apply."
           },
           {
             "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
@@ -1876,17 +1653,6 @@
             "type": "Agrifood investment opportunity",
             "access": "Official investment profile; not a direct grant application.",
             "investment_highlights": "USD 744.6M total investment, 22.7% IRR and USD 312.7M NPV. The mechanization case is USD 350.8M and focuses on local manufacture of tractors, irrigation pumps and affordable farm machinery."
-          },
-          {
-            "title": "AgDevCo blended financing for Africa's next generation of agribusinesses",
-            "description": "IFAD and AgDevCo signed a USD 10 million loan agreement supporting early-stage agribusinesses, initially in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, with a focus on resilient and inclusive food systems.",
-            "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
-            "source": "IFAD",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Ethiopia agrifood investment opportunities",
@@ -1933,18 +1699,6 @@
         ],
         "inputs": [],
         "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Ethiopia is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
             "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
@@ -2160,17 +1914,6 @@
       "records": {
         "finance": [
           {
-            "title": "Eastern Region Agricultural Value Chain Development Project",
-            "description": "African Development Bank project launched to stimulate agricultural productivity and strengthen agricultural value chains in eastern Angola.",
-            "url": "https://www.afdb.org/en/news-and-events/angola-government-and-african-development-bank-group-launch-project-stimulate-agriculture-productivity-eastern-angola-96251",
-            "source": "African Development Bank",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural value-chain development project"
-          },
-          {
             "title": "Angola AgriConnect Compact — agricultural value-chain investment",
             "description": "Country framework to boost domestic food production, processing, logistics, agricultural services and private investment; targets up to 700,000 jobs and up to USD 1.45 billion in public and private finance by 2030.",
             "url": "https://www.worldbank.org/en/news/press-release/2026/06/24/angola-s-agriconnect-compact-targets-food-security-jobs-and-agricultural-growth",
@@ -2227,18 +1970,6 @@
         ],
         "inputs": [],
         "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Angola is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          },
           {
             "title": "FAO Hand-in-Hand Angola 2026 — agrifood investment opportunities",
             "description": "Angola's 2026 Hand-in-Hand investment plan covers priority agrifood value chains and is part of FAO's government-led investment portfolio presented to investors.",
@@ -2304,33 +2035,7 @@
       "slug": "benin",
       "flag": "🇧🇯",
       "records": {
-        "finance": [
-          {
-            "title": "FAO Hand-in-Hand Benin 2026 — rice, soybean and poultry investment opportunities",
-            "description": "FAO's 2026 Benin investment agenda prioritizes rice, soybean and poultry value chains, supporting food security, processing, productivity and stronger market links.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural investment and policy",
-            "access": "Official information; confirm programme eligibility and implementation status before applying.",
-            "investment_highlights": "Priority value chains include rice, soybean and poultry."
-          },
-          {
-            "title": "FAO Hand-in-Hand 2026 — Benin agrifood investment opportunities",
-            "description": "FAO's 2026 Hand-in-Hand investment programme identifies rice, soybean and poultry among the priority value chains or investment areas for Benin. The plans are government-led and designed to connect evidence-based agricultural priorities with financing, partnerships and investment.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao-hand-in-hand",
-            "source_tier": 1,
-            "verified": "2026-10-08",
-            "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
-          }
-        ],
+        "finance": [],
         "grants": [],
         "machinery": [],
         "general": [
@@ -2707,18 +2412,6 @@
             "status": "official",
             "type": "Agricultural processing infrastructure",
             "access": "Official project/procurement information."
-          },
-          {
-            "title": "PADCAE-B — maize processing and livestock-feed infrastructure",
-            "description": "AfDB-supported agricultural and livestock value-chain programme in Burundi with current procurement for studies and supervision of a maize-processing unit and livestock-feed unit.",
-            "url": "https://www.afdb.org/en/projects-and-operations/p-bi-a00-008",
-            "source": "African Development Bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural programme / resource",
-            "access": "Official programme or project information; eligibility and implementation conditions apply.",
-            "published": "2026-10-05"
           }
         ],
         "general": [
@@ -2865,20 +2558,7 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Cabo Verde is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
         "farmer-support": [
           {
@@ -2992,21 +2672,7 @@
           }
         ],
         "research": [],
-        "climate": [
-          {
-            "title": "IFAD Climate Resilient Agribusiness Promotion Programme",
-            "description": "Verified IFAD record covering ifad climate resilient agribusiness promotion programme. See the official source for scope, implementation status and eligibility or participation conditions.",
-            "url": "https://www.ifad.org/en/projects-list",
-            "source": "IFAD",
-            "source_id": "ifad",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate-resilient agribusiness programme",
-            "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2025-12-09"
-          }
-        ],
+        "climate": [],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Central African Republic",
@@ -3326,20 +2992,7 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Democratic Republic of the Congo is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
         "farmer-support": [
           {
@@ -3473,20 +3126,7 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Côte d’Ivoire is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
         "farmer-support": [],
         "research": [],
@@ -3585,18 +3225,6 @@
         "inputs": [],
         "markets": [
           {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Djibouti is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          },
-          {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
             "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
@@ -3610,19 +3238,7 @@
           }
         ],
         "insurance": [],
-        "farmer-support": [
-          {
-            "title": "Djibouti AgriConnect Compact",
-            "description": "IFAD, the World Bank and partners' national framework focused on livestock, horticulture and date-palm value chains, rural livelihoods, jobs and food security.",
-            "url": "https://www.ifad.org/en/w/news/ifad-joins-government-of-djibouti-and-world-bank-to-accelerate-agri-food-transformation-and-strengthen-food-security-through-agriconnect",
-            "source": "IFAD",
-            "source_id": "ifad-agdevco",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural transformation programme"
-          }
-        ],
+        "farmer-support": [],
         "research": [],
         "climate": [],
         "data": [
@@ -4059,20 +3675,7 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Eswatini is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
         "farmer-support": [],
         "research": [],
@@ -4307,6 +3910,36 @@
                 "description": "Ukurasa rasmi wa serikali wenye mawasiliano ya wizara na viungo vya taasisi kama Wakala wa Mifugo na Masoko wa Gambia, Taasisi ya Kitaifa ya Utafiti wa Kilimo na Sekretarieti ya Kitaifa ya Mbegu, pamoja na nyaraka za sera."
               }
             }
+          },
+          {
+            "title": "Gambia Central Projects Coordinating Unit (CPCU) — agricultural projects and resource hub",
+            "description": "Official unit of the Ministry of Agriculture, Livestock and Food Security overseeing agricultural projects. The resource hub provides sector reports, policies, project documents, safeguards, and application forms where available. Each opportunity must be checked for its own deadline and eligibility.",
+            "url": "https://www.cpcu.gm/downloads",
+            "source": "Central Projects Coordinating Unit, Ministry of Agriculture, Livestock and Food Security, The Gambia",
+            "source_id": "gambia-cpcu-resource-hub",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural project information and document library",
+            "access": "Public reports and documents; the presence of an application form does not mean applications are currently open.",
+            "localized": {
+              "fr": {
+                "title": "Unité centrale de coordination des projets de Gambie (CPCU) — projets agricoles et centre de ressources",
+                "description": "Unité officielle du ministère chargée de superviser les projets agricoles. Le centre de ressources propose des rapports sectoriels, politiques, documents de projets, garanties environnementales et formulaires lorsqu’ils sont disponibles. Vérifiez les dates limites et critères de chaque opportunité."
+              },
+              "ar": {
+                "title": "وحدة تنسيق المشاريع المركزية في غامبيا (CPCU) — المشاريع الزراعية ومركز الموارد",
+                "description": "وحدة رسمية تابعة لوزارة الزراعة تشرف على المشاريع الزراعية. يوفر مركز الموارد تقارير قطاعية وسياسات ووثائق مشاريع وضمانات ونماذج طلبات عند توفرها. وجود نموذج لا يعني أن باب التقديم مفتوح حاليًا."
+              },
+              "pt": {
+                "title": "Unidade Central de Coordenação de Projetos da Gâmbia (CPCU) — projetos agrícolas e centro de recursos",
+                "description": "Unidade oficial do ministério que supervisiona projetos agrícolas. O centro disponibiliza relatórios setoriais, políticas, documentos de projetos, salvaguardas e formulários quando disponíveis. Verifique os prazos e critérios de cada oportunidade."
+              },
+              "sw": {
+                "title": "Kitengo Kikuu cha Uratibu wa Miradi Gambia (CPCU) — miradi ya kilimo na kituo cha rasilimali",
+                "description": "Kitengo rasmi cha wizara kinachosimamia miradi ya kilimo. Kituo cha rasilimali hutoa ripoti za sekta, sera, nyaraka za miradi, tahadhari na fomu za maombi zinapopatikana. Kuwepo kwa fomu hakumaanishi kuwa maombi yako wazi sasa."
+              }
+            }
           }
         ],
         "inputs": [],
@@ -4325,6 +3958,36 @@
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
             "published": "2026-09-16"
+          },
+          {
+            "title": "The Gambia eExtension — digital agricultural advice and farmer support",
+            "description": "Digital extension service connected with the Ministry of Agriculture, offering crop-production advice, access to agricultural specialists and multilingual voice support in English, Wolof, Mandinka and Pular. This is an advisory service, not a grant or loan.",
+            "url": "https://www.agriextension.gm/",
+            "source": "The Gambia Ministry of Agriculture / eExtension platform",
+            "source_id": "gambia-eextension",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Digital agricultural extension and advisory service",
+            "access": "Farmers can use the platform’s published contact channels; confirm phone availability and service coverage directly.",
+            "localized": {
+              "fr": {
+                "title": "eExtension Gambie — conseils agricoles numériques et appui aux producteurs",
+                "description": "Service de vulgarisation numérique lié au ministère de l’Agriculture, proposant des conseils sur les cultures, l’accès à des spécialistes et une assistance vocale en anglais, wolof, mandinka et pulaar. Il s’agit d’un service de conseil, pas d’une subvention ou d’un prêt."
+              },
+              "ar": {
+                "title": "خدمة الإرشاد الزراعي الرقمي في غامبيا — نصائح ودعم للمزارعين",
+                "description": "خدمة إرشاد رقمي مرتبطة بوزارة الزراعة، تقدم نصائح لإنتاج المحاصيل وإمكانية التواصل مع المختصين ودعمًا صوتيًا بلغات متعددة. إنها خدمة استشارية وليست منحة أو قرضًا."
+              },
+              "pt": {
+                "title": "eExtension da Gâmbia — aconselhamento agrícola digital e apoio aos agricultores",
+                "description": "Serviço de extensão digital ligado ao Ministério da Agricultura, com aconselhamento sobre culturas, acesso a especialistas e apoio por voz em vários idiomas locais. É um serviço de orientação, não uma subvenção nem um empréstimo."
+              },
+              "sw": {
+                "title": "eExtension Gambia — ushauri wa kilimo wa kidijitali na msaada kwa wakulima",
+                "description": "Huduma ya ugani wa kidijitali inayohusishwa na Wizara ya Kilimo, inayotoa ushauri wa uzalishaji wa mazao, ufikiaji wa wataalamu na msaada wa sauti kwa lugha nyingi. Ni huduma ya ushauri, si ruzuku wala mkopo."
+              }
+            }
           }
         ],
         "research": [],
@@ -4355,32 +4018,6 @@
         "grants": [],
         "machinery": [],
         "general": [
-          {
-            "title": "FAO Guinea country agriculture profile",
-            "description": "Official FAO country information covering agriculture, food systems, programmes, data and related agricultural development resources for Guinea.",
-            "url": "https://www.fao.org/countryprofiles/iso3/GIN/en/",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "verified": "2026-10-04",
-            "status": "official",
-            "localized": {
-              "fr": {
-                "title": "Profil agricole de la FAO pour Guinea",
-                "description": "Informations officielles de la FAO sur l’agriculture, les systèmes alimentaires, les programmes, les données et les ressources connexes de développement agricole pour Guinea."
-              },
-              "ar": {
-                "title": "الملف الزراعي لمنظمة الأغذية والزراعة (الفاو) في Guinea",
-                "description": "معلومات رسمية من منظمة الأغذية والزراعة حول الزراعة والنظم الغذائية والبرامج والبيانات وموارد التنمية الزراعية ذات الصلة في Guinea."
-              },
-              "pt": {
-                "title": "Perfil agrícola da FAO para Guinea",
-                "description": "Informações oficiais da FAO sobre agricultura, sistemas alimentares, programas, dados e recursos relacionados ao desenvolvimento agrícola para Guinea."
-              },
-              "sw": {
-                "title": "Wasifu wa kilimo wa FAO kwa Guinea",
-                "description": "Taarifa rasmi za FAO kuhusu kilimo, mifumo ya chakula, programu, data na rasilimali zinazohusiana na maendeleo ya kilimo kwa Guinea."
-              }
-            }
-          },
           {
             "title": "Guinea Ministry of Agriculture — official sector portal",
             "description": "Official ministry portal covering agricultural policy, food security, public notices, calls for tenders, seed distribution announcements, priority projects and links to public agricultural bodies and research institutions.",
@@ -4451,18 +4088,6 @@
         "climate": [],
         "data": [
           {
-            "title": "FAO GIEWS Country Brief — Guinea",
-            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
-            "url": "https://cb.apps.fao.org/country.jsp?code=GIN",
-            "source": "FAO Global Information and Early Warning System (GIEWS)",
-            "source_id": "fao-giews",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural data and food-security reference",
-            "access": "Public information"
-          },
-          {
             "title": "FAO Guinea country profile and agricultural data",
             "description": "FAO country profile linking to country data, agricultural statistics, thematic profiles, publications and FAO projects. Use the linked datasets and publications for context and check each dataset’s reference year before applying figures to current decisions.",
             "url": "https://www.fao.org/countryprofiles/iso3/GIN/en/",
@@ -4491,6 +4116,18 @@
                 "description": "Wasifu wa FAO unaounganisha data za nchi, takwimu za kilimo, wasifu wa mada, machapisho na miradi. Angalia mwaka wa rejea wa kila mkusanyiko wa data kabla ya kutumia takwimu katika maamuzi ya sasa."
               }
             }
+          },
+          {
+            "title": "FAO GIEWS Country Brief — Guinea",
+            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "url": "https://cb.apps.fao.org/country.jsp?code=GIN",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "fao-giews",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Agricultural data and food-security reference",
+            "access": "Public information"
           }
         ]
       }
@@ -4853,20 +4490,7 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Liberia is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
         "farmer-support": [],
         "research": [
@@ -4880,19 +4504,6 @@
             "status": "official",
             "type": "Agricultural research / programme resource",
             "access": "Official information; programme eligibility and implementation conditions apply."
-          },
-          {
-            "title": "Atoms4Food Liberia — food-security and agricultural assessment",
-            "description": "Verified FAO / IAEA record covering atoms4food liberia — food-security and agricultural assessment. See the official source for scope, implementation status and eligibility or participation conditions.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/atoms4food-charts-path-to-food-security-in-liberia/en",
-            "source": "FAO / IAEA",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural research and innovation",
-            "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-10-05"
           }
         ],
         "climate": [],
@@ -5069,19 +4680,6 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand Madagascar 2026 — rice, maize, soybean and special economic zones",
-            "description": "FAO's 2026 Madagascar investment agenda includes rice, maize and soybean value chains and six special economic zones designed to support market gardening, rice, maize, soybean and fodder development.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural investment and policy",
-            "access": "Official information; confirm programme eligibility and implementation status before applying.",
-            "investment_highlights": "Priority value chains include rice, maize and soybean; six special economic zones are planned."
-          },
-          {
             "title": "FAO Hand-in-Hand 2026 — Madagascar agrifood investment opportunities",
             "description": "FAO's 2026 Hand-in-Hand investment programme identifies rice, maize, soybean, beef and special economic zones among the priority value chains or investment areas for Madagascar. The plans are government-led and designed to connect evidence-based agricultural priorities with financing, partnerships and investment.",
             "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
@@ -5125,20 +4723,7 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Madagascar is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
         "farmer-support": [
           {
@@ -5156,31 +4741,7 @@
           }
         ],
         "research": [],
-        "climate": [
-          {
-            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "title": "Madagascar Lower Mangoky Irrigation Area Extension Project — Phase II",
-            "description": "AfDB-supported irrigation expansion project designed to strengthen agricultural production and resilience in the Lower Mangoky area.",
-            "type": "Irrigation and agricultural infrastructure project",
-            "access": "Project information"
-          },
-          {
-            "title": "AfDB Lower Mangoky Irrigation Area Extension Project — Phase II",
-            "description": "African Development Bank irrigation project approved in March 2026 to extend the Lower Mangoky irrigation area and strengthen agricultural production and resilience in Madagascar.",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "source": "African Development Bank",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
-          }
-        ],
+        "climate": [],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Madagascar",
@@ -5248,35 +4809,9 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Malawi is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
-        "farmer-support": [
-          {
-            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "title": "Enhancing Climate-Adapted Agricultural Productivity Through Improved Water Management (CAWMA)",
-            "description": "AfDB-approved agriculture and rural-development project focused on climate-adapted productivity and improved water management in Malawi.",
-            "type": "Agricultural development project",
-            "access": "Project information"
-          }
-        ],
+        "farmer-support": [],
         "research": [
           {
             "title": "World Bank Repurposing Agricultural Support for Soil Health Impact Program",
@@ -5289,17 +4824,6 @@
             "status": "official",
             "type": "Agricultural policy, soil health and input-support programme",
             "access": "Programme information; participation is through government and institutional partners."
-          },
-          {
-            "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
-            "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
-            "source": "World Bank Group",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
           }
         ],
         "climate": [
@@ -5778,31 +5302,7 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [
-          {
-            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "title": "Technical Assistance for PAASIFEJ Environmental and Social Action Plan",
-            "description": "AfDB technical assistance supporting environmental and social implementation within Morocco's agricultural development programme.",
-            "type": "Agricultural technical assistance",
-            "access": "Project information"
-          },
-          {
-            "title": "AfDB PAASIFEJ Environmental and Social Action Plan — Technical Assistance",
-            "description": "African Development Bank technical assistance approved in June 2026 for implementation of the environmental and social action plan associated with the PAASIFEJ programme in Morocco.",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "source": "African Development Bank",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
-          }
-        ],
+        "climate": [],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Morocco",
@@ -5865,18 +5365,6 @@
             "status": "official",
             "type": "Agricultural infrastructure / agri-processing zone",
             "access": "Official procurement notice; participation subject to the published eligibility and procurement conditions."
-          },
-          {
-            "title": "Cuamba Agri-Hub — Pemba-Lichinga Integrated Development Corridor SAPZ",
-            "description": "AfDB-financed Special Agri-Industrial Processing Zone infrastructure in Niassa Province, including the Cuamba Agri-Hub, road accessibility and supporting facilities.",
-            "url": "https://www.afdb.org/fr/documents/eoi-mozambique-construction-cuamba-agri-hub-signature-gate-emblematic-infrastructure-road-accessibility-and-supporting-office-sapz",
-            "source": "African Development Bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural programme / resource",
-            "access": "Official programme or project information; eligibility and implementation conditions apply.",
-            "published": "2026-10-05"
           }
         ],
         "general": [
@@ -5908,20 +5396,7 @@
           }
         ],
         "inputs": [],
-        "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Mozambique is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          }
-        ],
+        "markets": [],
         "insurance": [],
         "farmer-support": [
           {
@@ -6552,18 +6027,6 @@
             "access": "Project information"
           },
           {
-            "title": "Senegal AgriConnect Compact",
-            "description": "World Bank-supported national framework focused on grains, horticulture and livestock through infrastructure, agricultural services, policy reform and private investment.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/02/10/senegal-launches-agriconnect-compact-to-transform-its-agriculture-sector",
-            "source": "World Bank",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural transformation programme",
-            "access": "Programme information"
-          },
-          {
             "title": "Senegal Support to Food Sovereignty Project (SFSP)",
             "description": "IFAD-approved project focused on strengthening food sovereignty and rural transformation in Senegal.",
             "url": "https://webapps.ifad.org/members/lapse-of-time",
@@ -6603,17 +6066,6 @@
             "access": "Programme information; participation is through government and institutional partners."
           },
           {
-            "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
-            "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
-            "source": "World Bank Group",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
-          },
-          {
             "title": "FAO agrifood public-spending and investment planning tools for Africa",
             "description": "FAO has highlighted tools to help African governments analyse agricultural public spending and improve investment decisions for agrifood transformation.",
             "url": "https://www.fao.org/africa/news-stories/news-detail/african-countries-strengthen-tools-to-improve-agrifood-public-spending/en",
@@ -6639,21 +6091,7 @@
             "published": "2026-03-26"
           }
         ],
-        "climate": [
-          {
-            "title": "FAO West Africa Climate and Environment mechanism",
-            "description": "Verified FAO Regional Office for Africa record covering fao west africa climate and environment mechanism. See the official source for scope, implementation status and eligibility or participation conditions.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail",
-            "source": "FAO Regional Office for Africa",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Regional climate and agrifood resource",
-            "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-09-21"
-          }
-        ],
+        "climate": [],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Senegal",
@@ -6865,35 +6303,10 @@
             "verified": "2026-10-07",
             "status": "official",
             "type": "Agricultural development programme/project"
-          },
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Sierra Leone is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
           }
         ],
         "insurance": [],
-        "farmer-support": [
-          {
-            "source": "African Development Bank — MapAfrica Agriculture and Rural Development",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "url": "https://new-mapafrica.afdb.org/en/sectors/A",
-            "title": "Sierra Leone Rice Agro-Industrial Special Zone Project — Phase I",
-            "description": "AfDB agriculture project supporting rice-focused agro-industrial development and value-chain transformation in Sierra Leone.",
-            "type": "Agricultural value-chain project",
-            "access": "Project information"
-          }
-        ],
+        "farmer-support": [],
         "research": [],
         "climate": [],
         "data": [
@@ -7029,19 +6442,7 @@
       "slug": "south-sudan",
       "flag": "🇸🇸",
       "records": {
-        "finance": [
-          {
-            "title": "Sustainable Agriculture Development Project (SADEP)",
-            "description": "US$41.8 million IFAD-supported project targeting food security, rural resilience, climate-resilient sorghum and fisheries value chains, markets, finance and agricultural services.",
-            "url": "https://www.ifad.org/en/w/news/ifad-and-south-sudan-launch-us-41.8-million-project-to-boost-food-security-and-rural-resilience",
-            "source": "IFAD",
-            "source_id": "ifad-agdevco",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Rural resilience and food-security project"
-          }
-        ],
+        "finance": [],
         "grants": [],
         "machinery": [],
         "general": [
@@ -7199,19 +6600,7 @@
             "access": "Official information; programme eligibility and implementation conditions apply."
           }
         ],
-        "climate": [
-          {
-            "title": "BOOST — Boosting Agrifood Systems Resilience in Sudan",
-            "description": "A four-year AfDB and WFP initiative supporting more than 230,000 farming households, agricultural production, post-harvest management and local market linkages.",
-            "url": "https://www.afdb.org/en/news-and-events/african-development-bank-group-launches-project-boost-agriculture-sudan-94222",
-            "source": "African Development Bank and World Food Programme",
-            "source_id": "afdb",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate resilience and food-systems programme"
-          }
-        ],
+        "climate": [],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Sudan",
@@ -7577,18 +6966,6 @@
           }
         ],
         "markets": [
-          {
-            "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
-            "description": "Zimbabwe is among the 20 African countries selected to present government-led agrifood investment plans at FAO's 2026 Hand-in-Hand Investment Forum in Rome, creating an official reference point for agrifood investment opportunities and value-chain priorities.",
-            "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-            "source": "Food and Agriculture Organization of the United Nations (FAO)",
-            "source_id": "fao",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
-          },
           {
             "title": "FAO Hand-in-Hand Zimbabwe 2026 — agrifood investment opportunities",
             "description": "Zimbabwe's 2026 Hand-in-Hand investment plan includes mechanization, irrigation and agrifood value-chain investment opportunities.",
