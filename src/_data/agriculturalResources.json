@@ -4679,7 +4679,38 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Lesotho Ministry of Agriculture — farmer services and livestock support",
+            "description": "Government service charter describing farmer-facing support such as training and technical assistance, fish-farming services, livestock health and disease prevention, inspections and laboratory services. Contact the responsible department to confirm local coverage, fees and current availability.",
+            "url": "https://www.gov.ls/government-service-charter/",
+            "source": "Government of Lesotho",
+            "source_id": "lesotho-agriculture-service-charter",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural extension and livestock services",
+            "access": "Service descriptions are official; delivery, eligibility and any charges should be confirmed with the relevant department.",
+            "localized": {
+              "fr": {
+                "title": "Ministère de l’Agriculture du Lesotho — services aux agriculteurs et appui à l’élevage",
+                "description": "La charte des services publics décrit l’appui aux agriculteurs, notamment la formation et l’assistance technique, les services d’aquaculture, la santé animale, la prévention des maladies, les inspections et les laboratoires. Confirmez la couverture locale, les frais et la disponibilité."
+              },
+              "ar": {
+                "title": "وزارة الزراعة في ليسوتو — خدمات المزارعين ودعم الثروة الحيوانية",
+                "description": "يصف ميثاق الخدمات الحكومية دعم المزارعين مثل التدريب والمساعدة الفنية وخدمات الاستزراع السمكي وصحة الحيوان والوقاية من الأمراض والتفتيش والمختبرات. تحقق من التغطية المحلية والأهلية والرسوم والتوفر."
+              },
+              "pt": {
+                "title": "Ministério da Agricultura do Lesoto — serviços aos agricultores e apoio pecuário",
+                "description": "A carta de serviços do governo descreve apoio aos agricultores, incluindo formação e assistência técnica, serviços de piscicultura, saúde animal, prevenção de doenças, inspeções e laboratórios. Confirme a cobertura local, taxas e disponibilidade."
+              },
+              "sw": {
+                "title": "Wizara ya Kilimo ya Lesotho — huduma kwa wakulima na msaada wa mifugo",
+                "description": "Mkataba wa huduma za serikali unaeleza msaada kwa wakulima kama mafunzo na usaidizi wa kiufundi, huduma za ufugaji samaki, afya ya mifugo, kinga ya magonjwa, ukaguzi na maabara. Thibitisha huduma za eneo lako, gharama na upatikanaji."
+              }
+            }
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -4722,6 +4753,36 @@
               "sw": {
                 "title": "FAO GIEWS — uzalishaji wa nafaka na mtazamo wa usalama wa chakula Lesotho",
                 "description": "Taarifa ya FAO ya tarehe 24 Agosti 2026 inahusu kupungua kwa mavuno ya nafaka ya 2026, mahitaji ya kuagiza na mtazamo wa ukosefu wa usalama wa chakula. Ni rasilimali ya ufuatiliaji yenye tarehe, si ofa ya ufadhili; angalia toleo la karibuni kwa takwimu zilizosasishwa."
+              }
+            }
+          },
+          {
+            "title": "Lesotho Bureau of Statistics — Agriculture and Food Security Statistics",
+            "description": "Official statistics portal publishing agricultural and food-security reports, including seasonal crop forecasts, cereal availability and utilization, crop production surveys, and livestock reports. Check each report’s reference season before comparing it with current farm conditions.",
+            "url": "https://www.bos.gov.ls/Publications.htm",
+            "source": "Lesotho Bureau of Statistics",
+            "source_id": "lesotho-bos-agriculture",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural statistics and reports",
+            "access": "Public statistical publications; reports cover different seasons and reference periods.",
+            "localized": {
+              "fr": {
+                "title": "Bureau des statistiques du Lesotho — statistiques agricoles et sécurité alimentaire",
+                "description": "Portail statistique officiel publiant des rapports agricoles et de sécurité alimentaire, notamment des prévisions de récolte saisonnières, la disponibilité et l’utilisation des céréales, des enquêtes sur la production végétale et des rapports sur l’élevage. Vérifiez la saison de référence de chaque rapport."
+              },
+              "ar": {
+                "title": "مكتب الإحصاء في ليسوتو — إحصاءات الزراعة والأمن الغذائي",
+                "description": "بوابة إحصائية رسمية تنشر تقارير الزراعة والأمن الغذائي، بما في ذلك توقعات المحاصيل الموسمية وتوافر الحبوب واستخدامها ومسوح إنتاج المحاصيل وتقارير الثروة الحيوانية. تحقق من الموسم المرجعي لكل تقرير."
+              },
+              "pt": {
+                "title": "Departamento de Estatística do Lesoto — estatísticas agrícolas e segurança alimentar",
+                "description": "Portal estatístico oficial com relatórios agrícolas e de segurança alimentar, incluindo previsões sazonais de colheitas, disponibilidade e utilização de cereais, inquéritos de produção vegetal e relatórios pecuários. Confira a época de referência de cada relatório."
+              },
+              "sw": {
+                "title": "Ofisi ya Takwimu ya Lesotho — takwimu za kilimo na usalama wa chakula",
+                "description": "Tovuti rasmi ya takwimu inayochapisha ripoti za kilimo na usalama wa chakula, ikiwemo utabiri wa mavuno ya msimu, upatikanaji na matumizi ya nafaka, tafiti za uzalishaji wa mazao na ripoti za mifugo. Angalia msimu wa rejea wa kila ripoti."
               }
             }
           }
@@ -6121,6 +6182,36 @@
               "sw": {
                 "title": "FAO Niger — mfumo wa programu za kilimo na usalama wa chakula",
                 "description": "Ukurasa wa FAO wa nchi unaeleza mwelekeo wa kimkakati wa programu na nafasi ya kilimo katika maisha ya watu na usalama wa chakula. Una viungo vya programu na ushirikiano wa kiufundi; angalia kila mradi kwa wigo na namna ya kushiriki."
+              }
+            }
+          },
+          {
+            "title": "National Institute of Agricultural Research of Niger (INRAN)",
+            "description": "Niger’s public agricultural research institute works on rain-fed and irrigated crops, animal production, natural-resource management, rural economics and technology transfer. Its site shares research updates and technical resources; contact the institute to verify availability of seed, training or specific services.",
+            "url": "https://inran.ne/",
+            "source": "Institut National de la Recherche Agronomique du Niger (INRAN)",
+            "source_id": "inran-niger",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural research and technology transfer",
+            "access": "Public research and institutional information; access to seeds, training or services may require direct enquiry.",
+            "localized": {
+              "fr": {
+                "title": "Institut National de la Recherche Agronomique du Niger (INRAN)",
+                "description": "L’institut public de recherche agricole du Niger travaille sur les cultures pluviales et irriguées, la production animale, la gestion des ressources naturelles, l’économie rurale et le transfert de technologies. Consultez ses actualités et ressources techniques et vérifiez directement la disponibilité des semences, formations ou services."
+              },
+              "ar": {
+                "title": "المعهد الوطني للبحوث الزراعية في النيجر (INRAN)",
+                "description": "يعمل معهد البحوث الزراعية العام في النيجر على المحاصيل المطرية والمروية والإنتاج الحيواني وإدارة الموارد الطبيعية والاقتصاد الريفي ونقل التكنولوجيا. تحقق مباشرة من توفر البذور أو التدريب أو الخدمات."
+              },
+              "pt": {
+                "title": "Instituto Nacional de Pesquisa Agronômica do Níger (INRAN)",
+                "description": "O instituto público de pesquisa agrícola do Níger trabalha com culturas de sequeiro e irrigadas, produção animal, gestão de recursos naturais, economia rural e transferência de tecnologia. Consulte as atualizações e confirme diretamente a disponibilidade de sementes, formação ou serviços."
+              },
+              "sw": {
+                "title": "Taasisi ya Taifa ya Utafiti wa Kilimo ya Niger (INRAN)",
+                "description": "Taasisi ya umma ya utafiti wa kilimo ya Niger hushughulikia mazao ya mvua na umwagiliaji, uzalishaji wa mifugo, usimamizi wa rasilimali asilia, uchumi wa vijijini na uhamishaji wa teknolojia. Thibitisha moja kwa moja upatikanaji wa mbegu, mafunzo au huduma."
               }
             }
           }
