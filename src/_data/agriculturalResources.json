@@ -3128,7 +3128,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "ANADER — agricultural extension, farmer advisory and rural development programmes",
+            "description": "The National Agency for Rural Development Support provides agricultural advisory programmes across crop, livestock and fisheries value chains, including mechanisation, e-extension, training, climate adaptation and support to producer organisations.",
+            "url": "https://www.anader.ci/projets-et-programmes/",
+            "source": "Agence Nationale d'Appui au Développement Rural (ANADER), Côte d’Ivoire",
+            "source_id": "anader",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural extension and farmer support",
+            "access": "Consult ANADER for current local services, training and programme eligibility."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -3677,7 +3690,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Eswatini Agricultural Extension Services",
+            "description": "Official government service supporting farmers with practical skills and advice to improve production, productivity, rural livelihoods and food security.",
+            "url": "https://gov.sz/index.php/departments-sp-741563992/agricultural-extension-services?catid=80%3Aagriculture&id=661%3Aextension-services&view=article",
+            "source": "Government of Eswatini — Ministry of Agriculture",
+            "source_id": "eswatini-gov",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural extension and farmer support",
+            "access": "Contact the local extension service for current services and eligibility."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -4738,6 +4764,19 @@
             "type": "Emergency agricultural and livelihood support",
             "access": "Official information; eligibility and implementation conditions apply.",
             "published": "2026-05-08"
+          },
+          {
+            "title": "Madagascar Directorate General of Agriculture — technical services and farmer training",
+            "description": "The Ministry’s Directorate General of Agriculture coordinates plant-sector development, agricultural productivity, technical innovation and dissemination, access to inputs, and agricultural and rural training.",
+            "url": "https://www.minae.gov.mg/direction-generale-de-lagriculture-dga/",
+            "source": "Ministry of Agriculture and Food Sovereignty, Madagascar (MINAE)",
+            "source_id": "minae",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural extension, training and technical support",
+            "access": "Official service information; ask the Ministry or regional services about locally available programmes.",
+            "published": "2026-04-13"
           }
         ],
         "research": [],
@@ -6178,7 +6217,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Seychelles Agricultural Extension Services",
+            "description": "Official extension service offering farmer visits and advice on pest and disease management, soil nutrients, water, livestock, beekeeping, farm records, business plans and loan requests; it also describes access to agricultural inputs and local produce markets.",
+            "url": "https://mofbe.gov.sc/agriculture-department/extension-services/",
+            "source": "Ministry of Fisheries, Agriculture and Blue Economy, Seychelles",
+            "source_id": "seychelles-mofbe",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural extension and farmer support",
+            "access": "Contact the Extension Services Division to confirm current availability, store stock and any fees."
+          }
+        ],
         "research": [
           {
             "title": "FAO Seychelles country profile — agrifood and fisheries cooperation",
@@ -6517,6 +6569,18 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "South Sudan Directorate of Planning and Agricultural Economics — statistics and market prices",
+            "description": "Ministry directorate responsible for agricultural surveys, crop data, agricultural statistics, food-balance information, market-price monitoring, policy and programme planning, and early warning for food-security risks.",
+            "url": "https://mafs.gov.ss/planning-and-programming/",
+            "source": "Ministry of Agriculture and Food Security, South Sudan",
+            "source_id": "ss-mafs",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural statistics and market information",
+            "access": "Public institutional information; confirm the latest datasets and reporting periods with the Ministry."
           }
         ]
       }
