@@ -2118,6 +2118,36 @@
                 "description": "Wizara ya Algeria ilitangaza Juni 2026 uzinduzi wa toleo la kwanza la mfumo wa kitaifa wa taarifa za kilimo. Vipengele vilivyopangwa vinajumuisha ufuatiliaji wa mavuno, rejista za ardhi na wakulima, pembejeo, fedha, bima, masoko, maji na hali ya hewa. Utekelezaji ni wa hatua kwa hatua; thibitisha vipengele vinavyopatikana sasa."
               }
             }
+          },
+          {
+            "title": "Algeria General Agricultural Census 2024 (RGA)",
+            "description": "Official Ministry of Agriculture portal for Algeria’s 2024 General Agricultural Census, including census information and the process for agricultural holdings not yet counted. Use it as a national agricultural-structure and data resource; it is not a grant application.",
+            "url": "https://madr.gov.dz/rga-ar/",
+            "source": "Algerian Ministry of Agriculture and Rural Development",
+            "source_id": "madr-rga-2024",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural census and statistics",
+            "access": "Official census information; the census collection period described on the page is historical, so check the ministry for any updated data releases or services.",
+            "localized": {
+              "fr": {
+                "title": "Recensement général de l’agriculture 2024 en Algérie",
+                "description": "Portail officiel du ministère consacré au Recensement général de l’agriculture 2024, avec des informations sur le recensement et la procédure destinée aux exploitations non encore recensées. Ressource sur la structure agricole et les données nationales, et non une demande de subvention."
+              },
+              "ar": {
+                "title": "التعداد العام للفلاحة في الجزائر 2024",
+                "description": "بوابة رسمية للوزارة بشأن التعداد العام للفلاحة لعام 2024، تتضمن معلومات التعداد وإجراءات الاستدراك للمستثمرات التي لم يشملها الإحصاء. مورد للبيانات والبنية الزراعية الوطنية وليس طلب منحة."
+              },
+              "pt": {
+                "title": "Recenseamento Geral da Agricultura da Argélia 2024",
+                "description": "Portal oficial do ministério sobre o Recenseamento Geral da Agricultura de 2024, com informações e procedimentos para explorações ainda não recenseadas. É uma referência de dados e estrutura agrícola nacional, não um pedido de subsídio."
+              },
+              "sw": {
+                "title": "Sensa ya Jumla ya Kilimo Algeria 2024",
+                "description": "Tovuti rasmi ya wizara kuhusu Sensa ya Jumla ya Kilimo ya 2024, ikijumuisha maelezo ya sensa na utaratibu kwa mashamba ambayo hayajahesabiwa. Ni rasilimali ya takwimu na muundo wa kilimo nchini, si maombi ya ruzuku."
+              }
+            }
           }
         ]
       }
@@ -2513,6 +2543,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Statistics Botswana — Agriculture data and publications",
+            "description": "Official national statistics portal linking agricultural data, cultivated-land indicators, agriculture statistics, reports and data portals. Use it to find published statistics and datasets; publication dates and coverage vary by series.",
+            "url": "https://www.statsbots.org.bw/sector-and-key-indicators/agriculture",
+            "source": "Statistics Botswana",
+            "source_id": "statsbots-agriculture",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural statistics and data portal",
+            "access": "Public statistical information; some datasets may have separate access interfaces or metadata requirements.",
+            "localized": {
+              "fr": {
+                "title": "Statistics Botswana — données et publications agricoles",
+                "description": "Portail officiel de statistiques nationales donnant accès aux données agricoles, aux indicateurs de terres cultivées, aux statistiques, rapports et portails de données. Les dates et la couverture varient selon les séries."
+              },
+              "ar": {
+                "title": "هيئة إحصاءات بوتسوانا — البيانات والمنشورات الزراعية",
+                "description": "بوابة الإحصاءات الوطنية الرسمية التي تربط ببيانات الزراعة ومؤشرات الأراضي المزروعة والإحصاءات والتقارير وبوابات البيانات. تختلف تواريخ النشر والتغطية حسب السلسلة."
+              },
+              "pt": {
+                "title": "Statistics Botswana — dados e publicações agrícolas",
+                "description": "Portal oficial de estatísticas nacionais com acesso a dados agrícolas, indicadores de terras cultivadas, estatísticas, relatórios e portais de dados. As datas e a cobertura variam conforme a série."
+              },
+              "sw": {
+                "title": "Statistics Botswana — data na machapisho ya kilimo",
+                "description": "Tovuti rasmi ya takwimu za kitaifa inayounganisha data za kilimo, viashiria vya ardhi inayolimwa, takwimu, ripoti na tovuti za data. Tarehe na wigo hutofautiana kulingana na mfululizo wa data."
+              }
+            }
           }
         ]
       }
@@ -3697,6 +3757,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Egypt Ministry of Agriculture — plant production database",
+            "description": "Official agricultural-economics database with selectable crop, season and year fields and tables for planted area, productivity and production by old and newly reclaimed lands and governorates. Check the selected series and year before using figures.",
+            "url": "https://www.agri.gov.eg/databases/42",
+            "source": "Egypt Ministry of Agriculture and Land Reclamation — Economic Affairs Sector",
+            "source_id": "agri-egypt-plant-production",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Crop production statistics database",
+            "access": "Public-facing database; data availability depends on selected crop, season and year.",
+            "localized": {
+              "fr": {
+                "title": "Ministère égyptien de l’Agriculture — base de données sur la production végétale",
+                "description": "Base officielle du secteur des affaires économiques avec des filtres par culture, saison et année et des tableaux sur les superficies, les rendements et la production par type de terres et gouvernorat. Vérifiez la série et l’année sélectionnées avant d’utiliser les chiffres."
+              },
+              "ar": {
+                "title": "وزارة الزراعة المصرية — قاعدة بيانات الإنتاج النباتي",
+                "description": "قاعدة بيانات رسمية تتيح اختيار المحصول والموسم والسنة وتعرض المساحات والإنتاجية والإنتاج بحسب أنواع الأراضي والمحافظات. تحقق من السلسلة والسنة المحددتين قبل استخدام الأرقام."
+              },
+              "pt": {
+                "title": "Ministério da Agricultura do Egito — base de dados de produção vegetal",
+                "description": "Base oficial do setor de assuntos econômicos com filtros por cultura, época e ano, e tabelas de área plantada, produtividade e produção por tipo de terra e governadorado. Confira a série e o ano selecionados antes de usar os números."
+              },
+              "sw": {
+                "title": "Wizara ya Kilimo ya Misri — hifadhidata ya uzalishaji wa mazao",
+                "description": "Hifadhidata rasmi yenye chaguo za zao, msimu na mwaka, pamoja na jedwali la eneo lililopandwa, tija na uzalishaji kwa aina za ardhi na mikoa. Hakikisha mfululizo na mwaka uliochaguliwa kabla ya kutumia takwimu."
+              }
+            }
           }
         ]
       }
