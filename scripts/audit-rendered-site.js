@@ -156,6 +156,9 @@ for (const [rel, prefix] of [
 // Step 7: verify Resources and Agricultural News are rendered in all five languages.
 const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
+const hasLang = (html, lang) => new RegExp('<html\\b[^>]*\\blang="' + lang + '"', "i").test(html);
+const hasRtl = (html) => new RegExp('<html\\b[^>]*\\bdir="rtl"', "i").test(html);
+const selectorCount = (html) => (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
 const resourcePages = enabledLanguages.map((lang) => ({
   lang,
   rel: languagePrefix(lang) + "agriculture-resources/index.html",
@@ -169,30 +172,22 @@ const newsPages = enabledLanguages.map((lang) => ({
 for (const item of resourcePages) {
   const html = read(item.rel);
   if (!html) continue;
-  if (!new RegExp('<html\\b[^>]*\\blang=["\\']' + item.lang + '["\\']', "i").test(html)) {
-    failures.push(item.rel + ": html lang does not match " + item.lang);
-  }
-  if (item.lang === "ar" && !/<html\\b[^>]*\\bdir=["\\']rtl["\\']/i.test(html)) {
-    failures.push(item.rel + ": Arabic page must render dir=rtl");
-  }
+  if (!hasLang(html, item.lang)) failures.push(item.rel + ": html lang does not match " + item.lang);
+  if (item.lang === "ar" && !hasRtl(html)) failures.push(item.rel + ": Arabic page must render dir=rtl");
   for (const id of ["resourceSearch", "resourceCountry", "resourceCategory", "resourceDirectory", "resourceCount"]) {
-    if (!html.includes('id="' + id + '"').test(html)) failures.push(item.rel + ": missing resource search/filter element #" + id);
+    if (!html.includes('id="' + id + '"')) failures.push(item.rel + ": missing resource search/filter element #" + id);
   }
   if (!html.includes(item.title)) failures.push(item.rel + ": expected localized resource heading is missing");
-  const selectors = (html.match(/class=["'][^"']*site-language-select[^"']*["']/gi) || []).length;
+  const selectors = selectorCount(html);
   if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
 }
 
 for (const item of newsPages) {
   const html = read(item.rel);
   if (!html) continue;
-  if (!new RegExp('<html\\b[^>]*\\blang=["\\']' + item.lang + '["\\']', "i").test(html)) {
-    failures.push(item.rel + ": html lang does not match " + item.lang);
-  }
-  if (item.lang === "ar" && !/<html\\b[^>]*\\bdir=["\\']rtl["\\']/i.test(html)) {
-    failures.push(item.rel + ": Arabic page must render dir=rtl");
-  }
-  const selectors = (html.match(/class=["'][^"']*site-language-select[^"']*["']/gi) || []).length;
+  if (!hasLang(html, item.lang)) failures.push(item.rel + ": html lang does not match " + item.lang);
+  if (item.lang === "ar" && !hasRtl(html)) failures.push(item.rel + ": Arabic page must render dir=rtl");
+  const selectors = selectorCount(html);
   if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
 }
 
@@ -205,16 +200,11 @@ if (fs.existsSync(newsSourcePath)) {
       continue;
     }
     for (const lang of enabledLanguages) {
-      const prefix = languagePrefix(lang);
-      const rel = prefix + "agricultural-news/" + country.slug + "/index.html";
+      const rel = languagePrefix(lang) + "agricultural-news/" + country.slug + "/index.html";
       const html = read(rel);
       if (!html) continue;
-      if (!new RegExp('<html\\b[^>]*\\blang=["\\']' + lang + '["\\']', "i").test(html)) {
-        failures.push(rel + ": html lang does not match " + lang);
-      }
-      if (lang === "ar" && !/<html\\b[^>]*\\bdir=["\\']rtl["\\']/i.test(html)) {
-        failures.push(rel + ": Arabic country page must render dir=rtl");
-      }
+      if (!hasLang(html, lang)) failures.push(rel + ": html lang does not match " + lang);
+      if (lang === "ar" && !hasRtl(html)) failures.push(rel + ": Arabic country page must render dir=rtl");
       for (const targetLang of enabledLanguages) {
         const target = targetLang === "en"
           ? "/agricultural-news/" + country.slug + "/"
