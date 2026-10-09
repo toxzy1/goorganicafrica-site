@@ -4416,7 +4416,38 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "Institute of Agronomic Research of Guinea (IRAG)",
+            "description": "National public agricultural research institute with regional research centres, field stations, technical resources, improved-seed information and training links. Useful for locally relevant crop research and production techniques; availability of products or training should be confirmed with IRAG.",
+            "url": "https://irag.gov.gn/",
+            "source": "Institut de Recherche Agronomique de Guinée (IRAG)",
+            "source_id": "irag-guinea",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural research, seed and extension resource",
+            "access": "Public institutional information; individual services, seed availability and training may require direct enquiry.",
+            "localized": {
+              "fr": {
+                "title": "Institut de Recherche Agronomique de Guinée (IRAG)",
+                "description": "Institut public national de recherche agricole disposant de centres régionaux, de stations, de ressources techniques, d’informations sur les semences améliorées et de possibilités de formation. Vérifiez directement auprès de l’IRAG la disponibilité des produits et formations."
+              },
+              "ar": {
+                "title": "معهد البحوث الزراعية في غينيا (IRAG)",
+                "description": "معهد وطني عام للبحوث الزراعية يضم مراكز إقليمية ومحطات بحثية وموارد فنية ومعلومات عن البذور المحسنة وروابط للتدريب. تحقق مباشرة من المعهد بشأن توفر المنتجات والتدريب."
+              },
+              "pt": {
+                "title": "Instituto de Pesquisa Agronômica da Guiné (IRAG)",
+                "description": "Instituto público nacional de pesquisa agrícola com centros regionais, estações de campo, recursos técnicos, informações sobre sementes melhoradas e oportunidades de formação. Confirme diretamente com o IRAG a disponibilidade de produtos e formação."
+              },
+              "sw": {
+                "title": "Taasisi ya Utafiti wa Kilimo ya Guinea (IRAG)",
+                "description": "Taasisi ya taifa ya utafiti wa kilimo yenye vituo vya kikanda, vituo vya majaribio, rasilimali za kiufundi, taarifa za mbegu zilizoboreshwa na fursa za mafunzo. Thibitisha upatikanaji wa bidhaa au mafunzo moja kwa moja na IRAG."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
