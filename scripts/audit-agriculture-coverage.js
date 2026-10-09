@@ -1,0 +1,127 @@
+#!/usr/bin/env node
+"use strict";
+
+const fs = require("fs");
+const path = require("path");
+const root = path.resolve(__dirname, "..");
+const readJson = (name) => JSON.parse(fs.readFileSync(path.join(root, name), "utf8"));
+
+const EXPECTED = [
+  ["DZ","Algeria"],["AO","Angola"],["BJ","Benin"],["BW","Botswana"],["BF","Burkina Faso"],
+  ["BI","Burundi"],["CV","Cabo Verde"],["CM","Cameroon"],["CF","Central African Republic"],
+  ["TD","Chad"],["KM","Comoros"],["CG","Republic of the Congo"],["CI","Côte d’Ivoire"],
+  ["CD","Democratic Republic of the Congo"],["DJ","Djibouti"],["EG","Egypt"],["GQ","Equatorial Guinea"],
+  ["ER","Eritrea"],["SZ","Eswatini"],["ET","Ethiopia"],["GA","Gabon"],["GM","Gambia"],
+  ["GH","Ghana"],["GN","Guinea"],["GW","Guinea-Bissau"],["KE","Kenya"],["LS","Lesotho"],
+  ["LR","Liberia"],["LY","Libya"],["MG","Madagascar"],["MW","Malawi"],["ML","Mali"],
+  ["MR","Mauritania"],["MU","Mauritius"],["MA","Morocco"],["MZ","Mozambique"],["NA","Namibia"],
+  ["NE","Niger"],["NG","Nigeria"],["RW","Rwanda"],["ST","São Tomé and Príncipe"],
+  ["SN","Senegal"],["SC","Seychelles"],["SL","Sierra Leone"],["SO","Somalia"],
+  ["ZA","South Africa"],["SS","South Sudan"],["SD","Sudan"],["TZ","Tanzania"],["TG","Togo"],
+  ["TN","Tunisia"],["UG","Uganda"],["ZM","Zambia"],["ZW","Zimbabwe"]
+];
+const EXPECTED_CODES = new Set(EXPECTED.map(([code]) => code));
+const LANGS = ["fr", "ar", "pt", "sw"];
+const errors = [];
+const warnings = [];
+const nonempty = (v) => v !== undefined && v !== null && String(v).trim() !== "";
+const safeArray = (v) => Array.isArray(v) ? v : [];
+
+function flattenResources(data) {
+  if (Array.isArray(data.records)) return data.records;
+  return safeArray(data.countries).flatMap((country) =>
+    Object.entries(country.records || {}).flatMap(([category, records]) =>
+      safeArray(records).map((record) => ({
+        ...record,
+        country_code: record.country_code || country.code,
+        country: record.country || country.name,
+        category: record.category || category
+      }))
+    )
+  );
+}
+function summarizeCounts(label, counts, min, countryNames) {
+  const zero = EXPECTED.filter(([code]) => (counts[code] || 0) === 0).map(([code,name]) => `${code} ${name}`);
+  const low = EXPECTED.filter(([code]) => (counts[code] || 0) > 0 && (counts[code] || 0) < min)
+    .map(([code,name]) => `${code} ${name} (${counts[code]})`);
+  if (zero.length) warnings.push(`${label}: no records for ${zero.length} countries: ${zero.join(", ")}`);
+  if (low.length) warnings.push(`${label}: below recommended minimum ${min}: ${low.join(", ")}`);
+}
+
+const primary = flattenResources(readJson("src/_data/agriculturalResources.json"));
+const supplement = flattenResources(readJson("src/_data/agriculturalResourcesSupplement.json"));
+const resources = [...primary, ...supplement];
+const resourceCounts = Object.fromEntries([...EXPECTED_CODES].map((c) => [c, 0]));
+const resourceCategoryCounts = Object.fromEntries([...EXPECTED_CODES].map((c) => [c, new Set()]));
+const resourceUrls = new Map();
+resources.forEach((r, i) => {
+  const code = String(r.country_code || "").toUpperCase();
+  if (!EXPECTED_CODES.has(code)) {
+    if (code !== "SADC" && code !== "AFRICA") errors.push(`Resource ${i + 1}: unexpected country code "${code}" (${r.title || "untitled"})`);
+    return;
+  }
+  resourceCounts[code]++;
+  if (nonempty(r.category)) resourceCategoryCounts[code].add(String(r.category).toLowerCase());
+  for (const field of ["title", "description", "source", "url", "verified", "category"]) {
+    if (!nonempty(r[field])) errors.push(`Resource ${i + 1} (${code}): missing ${field}`);
+  }
+  if (nonempty(r.url) && !/^https?:\/\//i.test(r.url)) errors.push(`Resource ${i + 1} (${code}): URL is not HTTP(S): ${r.url}`);
+  if (nonempty(r.url)) resourceUrls.set(r.url, (resourceUrls.get(r.url) || 0) + 1);
+});
+summarizeCounts("Resources (country-specific plus shared)", resourceCounts, 5);
+for (const [code, name] of EXPECTED) {
+  if (resourceCategoryCounts[code].size < 3) warnings.push(`Resources: ${name} has only ${resourceCategoryCounts[code].size} populated categories`);
+}
+const duplicateResourceUrls = [...resourceUrls.entries()].filter(([,count]) => count > 1).length;
+if (duplicateResourceUrls) warnings.push(`Resources: ${duplicateResourceUrls} URLs are reused across records; verify shared-country applicability and avoid duplicate display where inappropriate.`);
+
+const newsData = readJson("src/_data/agriculturalNews.json");
+const newsCountries = safeArray(newsData.countries);
+const newsCodes = new Set(newsCountries.map((c) => String(c.code || "").toUpperCase()));
+for (const [code, name] of EXPECTED) if (!newsCodes.has(code)) errors.push(`Agricultural News: country record missing for ${name} (${code})`);
+for (const code of newsCodes) if (!EXPECTED_CODES.has(code)) errors.push(`Agricultural News: unexpected country code ${code}`);
+const newsCounts = Object.fromEntries([...EXPECTED_CODES].map((c) => [c, 0]));
+const translationCounts = Object.fromEntries(LANGS.map((l) => [l, 0]));
+const newsUrls = new Map();
+let newsTotal = 0;
+newsCountries.forEach((country) => {
+  const code = String(country.code || "").toUpperCase();
+  for (const article of safeArray(country.articles)) {
+    newsTotal++;
+    if (EXPECTED_CODES.has(code)) newsCounts[code]++;
+    for (const field of ["title", "summary", "source", "url", "published", "verified", "category"]) {
+      if (!nonempty(article[field])) errors.push(`News ${newsTotal} (${code}): missing ${field}`);
+    }
+    if (nonempty(article.url) && !/^https?:\/\//i.test(article.url)) errors.push(`News ${newsTotal} (${code}): URL is not HTTP(S): ${article.url}`);
+    if (nonempty(article.url)) newsUrls.set(article.url, (newsUrls.get(article.url) || 0) + 1);
+    for (const lang of LANGS) {
+      if (nonempty(article.translations && article.translations[lang] && article.translations[lang].title) &&
+          nonempty(article.translations && article.translations[lang] && article.translations[lang].summary)) translationCounts[lang]++;
+    }
+  }
+});
+summarizeCounts("Agricultural News", newsCounts, 4);
+const duplicateNewsUrls = [...newsUrls.entries()].filter(([,count]) => count > 1).length;
+if (duplicateNewsUrls) warnings.push(`Agricultural News: ${duplicateNewsUrls} URLs are reused; check whether these are deliberate source/region records or accidental duplicates.`);
+
+const countryRegistry = readJson("src/_data/calculatorCountries.json").list || [];
+const registryCodes = new Set(countryRegistry.map((c) => String(c.code || "").toUpperCase()));
+for (const [code, name] of EXPECTED) if (!registryCodes.has(code)) errors.push(`Country registry missing ${name} (${code})`);
+const translationData = readJson("src/_data/siteTranslations.json");
+for (const lang of ["en", ...LANGS]) if (!translationData[lang]) errors.push(`Missing site UI translation dataset: ${lang}`);
+if (translationData.ar && translationData.ar.dir !== "rtl") errors.push("Arabic UI dataset must declare dir=rtl");
+
+console.log("GoOrganicAfrica agriculture coverage audit");
+console.log(`Country registry: ${countryRegistry.length} entries; expected ${EXPECTED.length} African countries.`);
+console.log(`Resources: ${primary.length} primary + ${supplement.length} supplemental = ${resources.length} records.`);
+console.log(`Agricultural News: ${newsTotal} articles across ${newsCountries.length} country records.`);
+console.log("Resources by country: " + EXPECTED.map(([c,n]) => `${c}=${resourceCounts[c]}`).join("  "));
+console.log("News by country: " + EXPECTED.map(([c,n]) => `${c}=${newsCounts[c]}`).join("  "));
+console.log("News articles with title+summary translations: " + LANGS.map((l) => `${l}=${translationCounts[l]}/${newsTotal}`).join("  "));
+warnings.forEach((w) => console.warn("WARNING: " + w));
+if (errors.length) {
+  console.error(`FAILED: ${errors.length} structural/data-quality errors:`);
+  errors.forEach((e) => console.error(" - " + e));
+  process.exit(1);
+}
+console.log(`Structural checks passed with ${warnings.length} coverage warning(s). Warnings indicate gaps to fix, not verified errors.`);
