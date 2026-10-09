@@ -2669,6 +2669,18 @@
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
             "published": "2026-09-30"
+          },
+          {
+            "title": "IFAD Project to Improve Agricultural Productivity and Market Access in the Savannah Zones",
+            "description": "IFAD project focused on improving rural resilience, crop and livestock production, and market access for small-scale farmers in selected prefectures of the Central African Republic.",
+            "url": "https://www.ifad.org/en/w/projects/2000002442",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural development and market access",
+            "access": "Project information, not an open grant application; check the project page for current implementation status and geographic coverage."
           }
         ],
         "research": [],
@@ -2792,7 +2804,20 @@
             }
           }
         ],
-        "climate": [],
+        "climate": [
+          {
+            "title": "Chad RePER — Strengthening Productivity and Resilience of Agropastoral Family Farms",
+            "description": "IFAD-supported programme to improve productivity, food security and resilience for agropastoral households through water infrastructure, rural roads, diversified family farming and value addition in Chad’s Sahel region.",
+            "url": "https://www.ifad.org/en/w/projects/2000001060",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Climate resilience and agricultural development",
+            "access": "Programme information, not a general public grant application; activities and beneficiary areas are project-specific."
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Chad",
