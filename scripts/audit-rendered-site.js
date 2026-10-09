@@ -176,7 +176,7 @@ for (const item of resourcePages) {
     failures.push(item.rel + ": Arabic page must render dir=rtl");
   }
   for (const id of ["resourceSearch", "resourceCountry", "resourceCategory", "resourceDirectory", "resourceCount"]) {
-    if (!new RegExp('id=["\\']' + id + '["\\']').test(html)) failures.push(item.rel + ": missing resource search/filter element #" + id);
+    if (!html.includes('id="' + id + '"').test(html)) failures.push(item.rel + ": missing resource search/filter element #" + id);
   }
   if (!html.includes(item.title)) failures.push(item.rel + ": expected localized resource heading is missing");
   const selectors = (html.match(/class=["'][^"']*site-language-select[^"']*["']/gi) || []).length;
