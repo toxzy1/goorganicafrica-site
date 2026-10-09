@@ -4208,6 +4208,36 @@
                 "description": "Taarifa ya FAO ya tarehe 4 Juni 2026 inahusu matarajio ya mazao, mvua na mahitaji ya kuagiza nafaka. Hii ni rejea yenye tarehe; angalia toleo la hivi karibuni kabla ya kufanya maamuzi ya uzalishaji au soko."
               }
             }
+          },
+          {
+            "title": "Gabon plant and animal production survey (EPVA 2022–2023)",
+            "description": "Gabon’s official statistics institute presents results and documents from the 2022–2023 survey measuring crop and animal production. Use the published survey materials for reference and check the report’s methodology and reference period before comparing figures.",
+            "url": "https://new.instatgabon.org/fr/enquete-de-productions-vegetale-et-animale",
+            "source": "INSTAT Gabon — National Institute of Statistics",
+            "source_id": "instat-gabon-epva",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural production survey",
+            "access": "Official statistical publications; figures refer to the survey period 2022–2023.",
+            "localized": {
+              "fr": {
+                "title": "Enquête sur les productions végétale et animale du Gabon (EPVA 2022–2023)",
+                "description": "L’institut national de statistique du Gabon présente les résultats et documents de l’enquête 2022–2023 sur les productions végétales et animales. Vérifiez la méthodologie et la période de référence avant toute comparaison."
+              },
+              "ar": {
+                "title": "مسح الإنتاج النباتي والحيواني في الغابون (2022–2023)",
+                "description": "يعرض المعهد الوطني للإحصاء في الغابون نتائج ووثائق مسح الإنتاج النباتي والحيواني للفترة 2022–2023. تحقق من المنهجية والفترة المرجعية قبل مقارنة الأرقام."
+              },
+              "pt": {
+                "title": "Inquérito à produção vegetal e animal do Gabão (2022–2023)",
+                "description": "O instituto nacional de estatística do Gabão apresenta resultados e documentos do inquérito de 2022–2023 sobre produção vegetal e animal. Verifique a metodologia e o período de referência antes de comparar os números."
+              },
+              "sw": {
+                "title": "Utafiti wa uzalishaji wa mimea na wanyama Gabon (2022–2023)",
+                "description": "Taasisi ya taifa ya takwimu ya Gabon inatoa matokeo na nyaraka za utafiti wa uzalishaji wa mimea na wanyama wa 2022–2023. Kagua mbinu na kipindi cha rejea kabla ya kulinganisha takwimu."
+              }
+            }
           }
         ]
       }
@@ -5553,6 +5583,36 @@
               "sw": {
                 "title": "Mauritius — takwimu za uzalishaji wa kilimo na uvuvi, Januari hadi Juni 2026",
                 "description": "Statistics Mauritius ilichapisha takwimu rasmi za Januari hadi Juni 2026 kuhusu miwa, chai, mazao ya chakula, mifugo, kuku na samaki, pamoja na ulinganisho na 2025. Zingatia kipindi kilichotajwa na angalia machapisho mapya kwa takwimu zilizosasishwa."
+              }
+            }
+          },
+          {
+            "title": "Mauritius Census of Agriculture 2024",
+            "description": "Statistics Mauritius provides official information on the 2024 Census of Agriculture, including methodology, questionnaires, publications and report materials for Mauritius and Rodrigues. This is a statistical reference, not a funding programme.",
+            "url": "https://statsmauritius.govmu.org/Pages/Censuses%20and%20Surveys/CA/CA_2024.aspx",
+            "source": "Statistics Mauritius",
+            "source_id": "statsmauritius-ca2024",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural census and statistics",
+            "access": "Census data and publications; the fieldwork took place from July to November 2024.",
+            "localized": {
+              "fr": {
+                "title": "Recensement de l’agriculture 2024 de Maurice",
+                "description": "Statistics Mauritius fournit des informations officielles sur le recensement agricole de 2024, notamment la méthodologie, les questionnaires, les publications et les rapports pour Maurice et Rodrigues. Il s’agit d’une référence statistique, et non d’un programme de financement."
+              },
+              "ar": {
+                "title": "التعداد الزراعي في موريشيوس لعام 2024",
+                "description": "تقدم هيئة إحصاءات موريشيوس معلومات رسمية عن التعداد الزراعي لعام 2024، بما في ذلك المنهجية والاستبيانات والمنشورات والتقارير لموريشيوس ورودريغز. هذا مرجع إحصائي وليس برنامج تمويل."
+              },
+              "pt": {
+                "title": "Censo Agrícola das Maurícias de 2024",
+                "description": "A Statistics Mauritius fornece informações oficiais sobre o Censo Agrícola de 2024, incluindo metodologia, questionários, publicações e relatórios para Maurícias e Rodrigues. É uma referência estatística, não um programa de financiamento."
+              },
+              "sw": {
+                "title": "Sensa ya Kilimo ya Mauritius ya 2024",
+                "description": "Statistics Mauritius hutoa taarifa rasmi kuhusu Sensa ya Kilimo ya 2024, ikiwemo mbinu, dodoso, machapisho na ripoti za Mauritius na Rodrigues. Hii ni rejea ya takwimu, si mpango wa ufadhili."
               }
             }
           }
@@ -7117,7 +7177,38 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "Togo Institute of Agronomic Research (ITRA)",
+            "description": "Official agricultural research institute supporting technology development, productivity, food and nutrition security, and farmer-facing innovation. Its site publishes research projects, technical initiatives and agricultural news; confirm the scope and eligibility of any programme directly with the institute.",
+            "url": "https://itra.tg/",
+            "source": "Institut Togolais de Recherche Agronomique (ITRA)",
+            "source_id": "itra-togo",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural research and innovation institute",
+            "access": "Institutional information and research updates; specific project participation may have separate eligibility requirements.",
+            "localized": {
+              "fr": {
+                "title": "Institut Togolais de Recherche Agronomique (ITRA)",
+                "description": "Institut officiel de recherche agricole qui soutient le développement technologique, la productivité, la sécurité alimentaire et nutritionnelle ainsi que l’innovation destinée aux producteurs. Son site présente des projets et initiatives techniques; confirmez directement les conditions de participation."
+              },
+              "ar": {
+                "title": "المعهد التوغولي للبحوث الزراعية (ITRA)",
+                "description": "معهد رسمي للبحوث الزراعية يدعم تطوير التكنولوجيا والإنتاجية والأمن الغذائي والتغذوي والابتكار الموجه للمزارعين. ينشر الموقع المشاريع والمبادرات الفنية؛ تحقق مباشرة من شروط المشاركة في أي برنامج."
+              },
+              "pt": {
+                "title": "Instituto Togolês de Pesquisa Agronômica (ITRA)",
+                "description": "Instituto oficial de pesquisa agrícola que apoia o desenvolvimento tecnológico, a produtividade, a segurança alimentar e nutricional e a inovação para agricultores. O site publica projetos e iniciativas técnicas; confirme diretamente os requisitos de participação."
+              },
+              "sw": {
+                "title": "Taasisi ya Togo ya Utafiti wa Kilimo (ITRA)",
+                "description": "Taasisi rasmi ya utafiti wa kilimo inayosaidia maendeleo ya teknolojia, tija, usalama wa chakula na lishe, pamoja na ubunifu kwa wakulima. Tovuti huchapisha miradi na mipango ya kiufundi; thibitisha masharti ya kushiriki moja kwa moja."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
