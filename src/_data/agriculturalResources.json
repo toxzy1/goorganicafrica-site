@@ -5120,7 +5120,38 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "FAO Mauritania country profile — agricultural programmes and technical cooperation",
+            "description": "FAO’s country profile lists technical cooperation projects related to agricultural mechanisation, irrigation planning, agropastoral resilience and agricultural investment. Project budgets and dates describe cooperation programmes, not necessarily direct grants open to individual farmers; check the project owner for participation routes.",
+            "url": "https://www.fao.org/countryprofiles/index/en/?iso3=MRT&lang=en&paia=10",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural development projects and technical cooperation",
+            "access": "Public information; confirm current programme status with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Profil pays de la FAO pour la Mauritanie — programmes agricoles et coopération technique",
+                "description": "Le profil de la FAO répertorie des projets de coopération technique portant sur la mécanisation agricole, la planification de l’irrigation, la résilience agropastorale et l’investissement agricole. Les budgets et dates décrivent des programmes de coopération, pas nécessairement des subventions directes ouvertes aux agriculteurs."
+              },
+              "ar": {
+                "title": "ملف الفاو القطري لموريتانيا — البرامج الزراعية والتعاون الفني",
+                "description": "يسرد ملف الفاو مشروعات تعاون فني في الميكنة الزراعية وتخطيط الري والقدرة على الصمود الرعوي الزراعي والاستثمار الزراعي. ميزانيات المشروعات وتواريخها لا تعني بالضرورة وجود منح مباشرة مفتوحة للمزارعين؛ تحقق من الجهة المنفذة."
+              },
+              "pt": {
+                "title": "Perfil da FAO para a Mauritânia — programas agrícolas e cooperação técnica",
+                "description": "O perfil da FAO lista projetos de cooperação técnica sobre mecanização agrícola, planeamento da irrigação, resiliência agropastoril e investimento agrícola. Os orçamentos e datas descrevem programas de cooperação, não necessariamente subsídios diretos abertos a agricultores."
+              },
+              "sw": {
+                "title": "Wasifu wa FAO wa Mauritania — programu za kilimo na ushirikiano wa kiufundi",
+                "description": "Wasifu wa FAO unaorodhesha miradi ya ushirikiano wa kiufundi kuhusu mitambo ya kilimo, mipango ya umwagiliaji, ustahimilivu wa kilimo na ufugaji, na uwekezaji wa kilimo. Bajeti na tarehe za miradi hazimaanishi ruzuku za moja kwa moja ziko wazi kwa wakulima."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -5223,6 +5254,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "Mauritius agricultural and fish production statistics — January to June 2026",
+            "description": "Statistics Mauritius published official January–June 2026 data on sugar cane, tea, food crops, livestock, poultry and fish production, including comparisons with the same period of 2025. Use the reference period shown and check later releases for updated figures.",
+            "url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/Agriculture/Agri_Fish_Jan-Jun26.aspx",
+            "source": "Statistics Mauritius — Government of Mauritius",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Official agricultural production statistics",
+            "access": "Public information; confirm current programme status with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Maurice — statistiques de production agricole et halieutique, janvier à juin 2026",
+                "description": "Statistics Mauritius a publié les données officielles de janvier à juin 2026 sur la canne à sucre, le thé, les cultures vivrières, l’élevage, la volaille et la pêche, avec des comparaisons avec 2025. Respectez la période de référence et consultez les publications ultérieures pour les chiffres actualisés."
+              },
+              "ar": {
+                "title": "موريشيوس — إحصاءات الإنتاج الزراعي والسمكي من يناير إلى يونيو 2026",
+                "description": "نشرت هيئة الإحصاء في موريشيوس بيانات رسمية للفترة من يناير إلى يونيو 2026 عن قصب السكر والشاي والمحاصيل الغذائية والثروة الحيوانية والدواجن والأسماك، مع مقارنات بالفترة نفسها من 2025. راعِ الفترة المرجعية وراجع الإصدارات اللاحقة للأرقام المحدثة."
+              },
+              "pt": {
+                "title": "Maurícias — estatísticas de produção agrícola e pesqueira, janeiro a junho de 2026",
+                "description": "A Statistics Mauritius publicou dados oficiais de janeiro a junho de 2026 sobre cana-de-açúcar, chá, culturas alimentares, pecuária, aves e peixe, com comparações com 2025. Considere o período de referência e consulte publicações posteriores para valores atualizados."
+              },
+              "sw": {
+                "title": "Mauritius — takwimu za uzalishaji wa kilimo na uvuvi, Januari hadi Juni 2026",
+                "description": "Statistics Mauritius ilichapisha takwimu rasmi za Januari hadi Juni 2026 kuhusu miwa, chai, mazao ya chakula, mifugo, kuku na samaki, pamoja na ulinganisho na 2025. Zingatia kipindi kilichotajwa na angalia machapisho mapya kwa takwimu zilizosasishwa."
+              }
+            }
           }
         ]
       }
@@ -5670,7 +5731,38 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "FAO Niger country office — agriculture and food-security programme framework",
+            "description": "FAO’s Niger country page describes the strategic alignment of its country programming and outlines the role of agriculture in livelihoods and food security. It links to country programme information and technical cooperation; check each project page for scope and participation arrangements.",
+            "url": "https://www.fao.org/niger/notre-bureau/fao-au-niger/fr",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural programme and technical cooperation reference",
+            "access": "Public information; confirm current programme status with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "FAO au Niger — cadre de programmation agricole et de sécurité alimentaire",
+                "description": "La page pays de la FAO décrit l’alignement stratégique de ses programmes et le rôle de l’agriculture dans les moyens de subsistance et la sécurité alimentaire. Elle renvoie aux informations sur les programmes et la coopération technique ; consultez chaque projet pour connaître son champ d’action."
+              },
+              "ar": {
+                "title": "الفاو في النيجر — إطار برامج الزراعة والأمن الغذائي",
+                "description": "توضح صفحة الفاو القطرية التوافق الاستراتيجي للبرامج ودور الزراعة في سبل العيش والأمن الغذائي. وتربط بمعلومات البرامج والتعاون الفني؛ راجع كل مشروع لمعرفة نطاقه وآليات المشاركة."
+              },
+              "pt": {
+                "title": "FAO no Níger — quadro de programas agrícolas e segurança alimentar",
+                "description": "A página nacional da FAO descreve o alinhamento estratégico da programação e o papel da agricultura nos meios de subsistência e na segurança alimentar. Liga a informações de programas e cooperação técnica; consulte cada projeto para conhecer o seu âmbito."
+              },
+              "sw": {
+                "title": "FAO Niger — mfumo wa programu za kilimo na usalama wa chakula",
+                "description": "Ukurasa wa FAO wa nchi unaeleza mwelekeo wa kimkakati wa programu na nafasi ya kilimo katika maisha ya watu na usalama wa chakula. Una viungo vya programu na ushirikiano wa kiufundi; angalia kila mradi kwa wigo na namna ya kushiriki."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -6196,7 +6288,38 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "FAO Seychelles country profile — agrifood and fisheries cooperation",
+            "description": "FAO’s country profile lists technical cooperation projects including an agrifood-systems data initiative and support for tuna grading in the Seychelles fishing industry. Project descriptions provide institutional context; check the project owner for current activities and any participation opportunities.",
+            "url": "https://www.fao.org/countryprofiles/index/en/?iso3=SYC",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agrifood and fisheries technical cooperation",
+            "access": "Public information; confirm current programme status with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "Profil pays de la FAO pour les Seychelles — coopération agroalimentaire et halieutique",
+                "description": "Le profil de la FAO répertorie des projets de coopération technique, notamment une initiative de données sur les systèmes agroalimentaires et un appui au classement du thon dans la filière de pêche. Vérifiez auprès du responsable du projet les activités actuelles et les possibilités de participation."
+              },
+              "ar": {
+                "title": "ملف الفاو القطري لسيشل — التعاون الزراعي والغذائي والسمكي",
+                "description": "يسرد ملف الفاو مشروعات تعاون فني تشمل مبادرة بيانات للنظم الزراعية والغذائية ودعماً لتصنيف التونة في قطاع الصيد. تحقق من الجهة المسؤولة عن المشروع لمعرفة الأنشطة الحالية وفرص المشاركة."
+              },
+              "pt": {
+                "title": "Perfil da FAO para as Seicheles — cooperação agroalimentar e pesqueira",
+                "description": "O perfil da FAO lista projetos de cooperação técnica, incluindo uma iniciativa de dados para sistemas agroalimentares e apoio à classificação de atum na indústria pesqueira. Consulte o responsável pelo projeto para conhecer atividades atuais e oportunidades de participação."
+              },
+              "sw": {
+                "title": "Wasifu wa FAO wa Seychelles — ushirikiano wa mifumo ya chakula na uvuvi",
+                "description": "Wasifu wa FAO unaorodhesha miradi ya ushirikiano wa kiufundi ikiwemo mpango wa data za mifumo ya chakula na msaada wa upangaji daraja la tuna katika sekta ya uvuvi. Wasiliana na mwenye mradi kuthibitisha shughuli za sasa na fursa za kushiriki."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
@@ -6737,6 +6860,36 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          },
+          {
+            "title": "FAO GIEWS Country Brief — Togo 2026 crop and food-security outlook",
+            "description": "FAO’s 28 August 2026 brief covers seasonal rainfall, crop prospects, cereal prices and food-security estimates. It is a dated monitoring source, not a current grant notice; check the latest issue before relying on seasonal or market figures.",
+            "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=TGO&lang=en",
+            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Crop monitoring and food-security data",
+            "access": "Public information; confirm current programme status with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "FAO SMIAR — perspectives agricoles et sécurité alimentaire au Togo en 2026",
+                "description": "Le bulletin de la FAO du 28 août 2026 couvre les pluies saisonnières, les perspectives des cultures, les prix des céréales et les estimations de sécurité alimentaire. Il s’agit d’une source de suivi datée, pas d’un avis de subvention ; consultez la dernière édition avant d’utiliser les chiffres."
+              },
+              "ar": {
+                "title": "ملخص الفاو — آفاق المحاصيل والأمن الغذائي في توغو لعام 2026",
+                "description": "يتناول ملخص الفاو المؤرخ 28 أغسطس 2026 الأمطار الموسمية وآفاق المحاصيل وأسعار الحبوب وتقديرات الأمن الغذائي. هذه بيانات رصد مؤرخة وليست إعلان منحة؛ راجع أحدث إصدار قبل الاعتماد على الأرقام."
+              },
+              "pt": {
+                "title": "FAO GIEWS — perspetivas agrícolas e segurança alimentar no Togo em 2026",
+                "description": "O boletim da FAO de 28 de agosto de 2026 aborda chuvas sazonais, perspetivas das culturas, preços dos cereais e estimativas de segurança alimentar. É uma fonte de monitorização datada, não um aviso de subsídio; consulte a edição mais recente antes de usar os números."
+              },
+              "sw": {
+                "title": "FAO GIEWS — matarajio ya mazao na usalama wa chakula Togo 2026",
+                "description": "Taarifa ya FAO ya tarehe 28 Agosti 2026 inahusu mvua za msimu, matarajio ya mazao, bei za nafaka na makadirio ya usalama wa chakula. Ni chanzo cha ufuatiliaji chenye tarehe, si tangazo la ruzuku; angalia toleo la karibuni kabla ya kutumia takwimu."
+              }
+            }
           }
         ]
       }
@@ -6812,7 +6965,38 @@
         "markets": [],
         "insurance": [],
         "farmer-support": [],
-        "research": [],
+        "research": [
+          {
+            "title": "FAO Tunisia country office — sustainable agrifood systems and rural development",
+            "description": "FAO Tunisia’s country page provides agricultural publications and programme information on sustainable agrifood systems, rural women’s economic empowerment, adaptation planning and aquaculture. Check publication dates and project pages for current status.",
+            "url": "https://www.fao.org/tunisie/fr",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
+            "source_id": "official-agriculture-resource",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural development and technical publications",
+            "access": "Public information; confirm current programme status with the responsible institution.",
+            "localized": {
+              "fr": {
+                "title": "FAO en Tunisie — systèmes agroalimentaires durables et développement rural",
+                "description": "La page pays de la FAO propose des publications et informations sur les programmes relatifs aux systèmes agroalimentaires durables, à l’autonomisation économique des femmes rurales, à l’adaptation et à l’aquaculture. Vérifiez les dates et pages de projet pour connaître leur état actuel."
+              },
+              "ar": {
+                "title": "الفاو في تونس — النظم الزراعية والغذائية المستدامة والتنمية الريفية",
+                "description": "توفر صفحة الفاو القطرية منشورات ومعلومات عن برامج النظم الزراعية والغذائية المستدامة والتمكين الاقتصادي للنساء الريفيات والتكيف والاستزراع المائي. تحقق من تواريخ النشر وصفحات المشروعات لمعرفة الوضع الحالي."
+              },
+              "pt": {
+                "title": "FAO na Tunísia — sistemas agroalimentares sustentáveis e desenvolvimento rural",
+                "description": "A página nacional da FAO oferece publicações e informações sobre programas de sistemas agroalimentares sustentáveis, capacitação económica das mulheres rurais, adaptação e aquicultura. Verifique as datas e páginas dos projetos para confirmar o estado atual."
+              },
+              "sw": {
+                "title": "FAO Tunisia — mifumo endelevu ya chakula na maendeleo ya vijijini",
+                "description": "Ukurasa wa FAO wa nchi una machapisho na taarifa za programu kuhusu mifumo endelevu ya chakula, uwezeshaji wa kiuchumi wa wanawake wa vijijini, kukabiliana na mabadiliko na ufugaji wa viumbe majini. Angalia tarehe na kurasa za miradi kuthibitisha hali ya sasa."
+              }
+            }
+          }
+        ],
         "climate": [],
         "data": [
           {
