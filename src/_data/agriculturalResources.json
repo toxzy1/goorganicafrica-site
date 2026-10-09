@@ -3657,7 +3657,20 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "title": "Eritrea Integrated Agriculture Development Project — IFAD",
+            "description": "IFAD project supporting sustainable smallholder production and productivity, with components related to irrigation, seed systems, improved inputs, extension services and small-livestock production. The project page includes supervision reports, including a July 2026 report.",
+            "url": "https://www.ifad.org/en/w/projects/2000002081",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "source_id": "ifad",
+            "source_tier": 1,
+            "verified": "2026-10-09",
+            "status": "official",
+            "type": "Agricultural development and smallholder productivity",
+            "access": "Project information, not a direct public grant application; confirm current implementation and local beneficiary arrangements."
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Eritrea",
