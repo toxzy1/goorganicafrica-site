@@ -57,7 +57,7 @@ jobs:
           body: |
             This pull request contains draft translations generated locally with the free Argos Translate engine.
 
-            Human review is required before merging. The workflow never pushes translation changes directly to main, and the script does not overwrite existing translated fields. Please review meaning, agricultural terminology, country names, dates, numbers, and Arabic rendering before approval.
+            Human review is required before merging. The workflow never pushes translation changes directly to main, and the script does not overwrite existing translated fields. Review meaning, agricultural terminology, country names, dates, numbers, and Arabic rendering. Before merging, change translation_review_status to approved for accepted records and correct or remove any rejected translations.
           add-paths: |
             src/_data/agriculturalNews.json
             src/_data/agriculturalNewsSupplement.json
