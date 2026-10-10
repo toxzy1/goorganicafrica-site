@@ -92,8 +92,11 @@
       "code": "CF",
       "name": "Central African Republic",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "car-ministry-agriculture-projects",
+        "car-fao-country-programme-2024-2028"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "TD",
@@ -117,8 +120,10 @@
       "code": "CG",
       "name": "Congo",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "congo-agriculture-support-fund"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "CI",
@@ -175,8 +180,10 @@
       "code": "SZ",
       "name": "Eswatini",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "eswatini-government-input-subsidy-mechanisation"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "ET",
@@ -203,8 +210,12 @@
       "code": "GM",
       "name": "Gambia",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "gambia-cpcu-agricultural-projects",
+        "gambia-girav-2026-equipment-support",
+        "gambia-2026-agricultural-support-north-bank"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "GH",
