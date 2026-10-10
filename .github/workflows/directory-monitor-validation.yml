@@ -47,12 +47,17 @@ jobs:
               assert source["method"] in ("json_feed", "csv_feed", "official_page_review"), f"{source['id']}: unsupported method"
               assert source["requires_review"] is True, f"{source['id']}: review gate must remain enabled"
           source_ids = set(ids)
+          source_by_id = {source["id"]: source for source in sources["sources"]}
           for country in coverage["countries"]:
               registered = country.get("country_specific_sources", [])
               assert all(source_id in source_ids for source_id in registered), f"{country['name']}: references an unregistered source ID"
+              for source_id in registered:
+                  assert source_by_id[source_id].get("country") == country["name"], f"{country['name']}: source {source_id} belongs to {source_by_id[source_id].get('country')}, not this country"
               expected = "source_registered" if registered else "needs_country_source_review"
               assert country.get("coverage_status") == expected, f"{country['name']}: coverage status does not match registered sources"
-          print(f"Validated {len(sources['sources'])} sources and {len(coverage['countries'])} country entries with consistent source references.")
+              if country.get("active", True):
+                  assert registered, f"{country['name']}: active target country has no country-specific source"
+          print(f"Validated {len(sources['sources'])} sources and {len(coverage['countries'])} country entries with country-matched source references.")
           PY
       - uses: actions/setup-node@v4
         with:
