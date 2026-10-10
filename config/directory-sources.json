@@ -169,6 +169,54 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official government news on agricultural financing allocations; contextual monitoring source, not proof that a specific grant or loan is open."
+    },
+    {
+      "id": "nigeria-eagriculture-machinery",
+      "country": "Nigeria",
+      "category": "machinery",
+      "publisher": "National e-Agriculture Web Portal / Federal Ministry of Agriculture",
+      "url": "https://eagriculture.gov.ng/PrimaryProduction/AgricMachineries.aspx",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official portal listing agricultural machinery classes and sources; verify supplier contacts and availability before publishing."
+    },
+    {
+      "id": "nigeria-eagriculture-credit",
+      "country": "Nigeria",
+      "category": "finance",
+      "publisher": "National e-Agriculture Web Portal / Federal Ministry of Agriculture",
+      "url": "https://eagriculture.gov.ng/Finance/Credit_Facilities.aspx",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official portal describing agricultural credit facilities and lending institutions; confirm present availability with providers."
+    },
+    {
+      "id": "nigeria-cbn-cacs",
+      "country": "Nigeria",
+      "category": "finance",
+      "publisher": "Central Bank of Nigeria",
+      "url": "https://www.cbn.gov.ng/DFD/agriculture/cacs.html",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official CACS scheme information including machinery financing; scheme page is historical, so verify current application availability before listing as open."
+    },
+    {
+      "id": "angola-fada-equipment-finance",
+      "country": "Angola",
+      "category": "machinery",
+      "publisher": "Fundo de Apoio ao Desenvolvimento Agrário (FADA)",
+      "url": "https://www.fada.gov.ao/financiamento-ao-investimento/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official investment-financing page includes agricultural equipment and tractor categories; confirm current terms, availability and eligibility before publication."
     }
   ]
 }
