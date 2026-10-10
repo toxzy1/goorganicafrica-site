@@ -34,7 +34,9 @@
       "name": "Benin",
       "active": true,
       "country_specific_sources": [
-        "benin-government-agricultural-mechanization-programme"
+        "benin-government-agricultural-mechanization-programme",
+        "benin-government-agricultural-finance-support",
+        "benin-agricultural-insurance-2026"
       ],
       "coverage_status": "source_registered"
     },
@@ -76,8 +78,10 @@
       "code": "CM",
       "name": "Cameroon",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "cameroon-pmeaa-agricultural-sme-support"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "CF",
@@ -404,8 +408,10 @@
       "code": "TG",
       "name": "Togo",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "ecowas-togo-benin-prima"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "TN",
