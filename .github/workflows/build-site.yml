@@ -27,6 +27,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Setup Python for translation safety tests
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test translation draft safety and batch limits
+        run: python -m unittest discover -s tests -p "test_translate_agricultural_news.py"
+
       - name: Build site
         run: npm run build
 
