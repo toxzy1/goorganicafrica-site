@@ -73,8 +73,11 @@
       "code": "CV",
       "name": "Cabo Verde",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "cabo-verde-2026-protected-cultivation-subsidy",
+        "cabo-verde-2026-drip-irrigation-subsidy"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "CM",
@@ -105,8 +108,10 @@
       "code": "KM",
       "name": "Comoros",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "comoros-fao-agricultural-census-2026"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "CG",
@@ -188,8 +193,11 @@
       "code": "GA",
       "name": "Gabon",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "gabon-government-agricultural-farm-finance-2026",
+        "gabon-agriculture-import-duty-exemptions"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "GM",
