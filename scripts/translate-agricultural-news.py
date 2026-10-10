@@ -10,7 +10,6 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
-from urllib.parse import urlparse
 
 import argostranslate.package
 import argostranslate.translate
@@ -119,7 +118,7 @@ def main() -> None:
             print("Drafted:", label)
 
     for filename, count in changed_by_file.items():
-        filename.write_text(json.dumps(data_by_file[filename], ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+        filename.write_text(json.dumps(data_by_file[filename], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"Saved {count} translated records to {filename.relative_to(ROOT)}")
 
 
