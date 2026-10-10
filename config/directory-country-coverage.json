@@ -324,8 +324,10 @@
       "code": "SN",
       "name": "Senegal",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "senegal-pmas-groundnut-equipment-subsidy"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "SC",
@@ -373,8 +375,10 @@
       "code": "TZ",
       "name": "Tanzania",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "tanzania-moa-mechanisation-irrigation-division"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "TG",
