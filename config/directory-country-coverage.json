@@ -166,8 +166,10 @@
       "code": "GQ",
       "name": "Equatorial Guinea",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "equatorial-guinea-ministry-agriculture"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "ER",
@@ -231,15 +233,19 @@
       "code": "GN",
       "name": "Guinea",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "guinea-ministry-agriculture-official-portal"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "GW",
       "name": "Guinea-Bissau",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "guinea-bissau-fao-country-programme"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "KE",
@@ -254,15 +260,19 @@
       "code": "LS",
       "name": "Lesotho",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "lesotho-ministry-agriculture-official-portal"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "LR",
       "name": "Liberia",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "liberia-ministry-agriculture-projects"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "LY",
