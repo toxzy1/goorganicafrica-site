@@ -24,6 +24,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: Set up Python for automation tests
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run free translation automation unit tests
+        run: python -m unittest discover -s tests -p "test_translate_agricultural_news.py"
+
       - name: Install dependencies
         run: npm install
 
