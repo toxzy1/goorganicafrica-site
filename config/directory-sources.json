@@ -409,6 +409,42 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official notice on the Senegal Agricultural Mechanization Programme (PMAS 2026–2030) and subsidized groundnut cleaning equipment described for the 2025–2026 campaign. Verify campaign dates, remaining allocations and current eligibility before presenting support as open."
+    },
+    {
+      "id": "malawi-agcom-commercialisation-grants",
+      "country": "Malawi",
+      "category": "finance",
+      "publisher": "Agricultural Commercialisation Project (AGCOM), Malawi Ministry of Agriculture",
+      "url": "https://agcom.gov.mw/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official agricultural commercialisation project portal reporting matching-grant windows, productive alliances, farmer/cooperative support and project news. Check the specific call, eligibility, contribution requirements and closing date before describing any grant as open."
+    },
+    {
+      "id": "tanzania-camartec-mechanization-supply",
+      "country": "Tanzania",
+      "category": "machinery",
+      "publisher": "Centre for Agricultural Mechanization and Rural Technology (CAMARTEC), Tanzania",
+      "url": "https://camartec.go.tz/programs/supply-of-agricultural-mechanization",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official CAMARTEC programme page describing supply of modern agricultural mechanization equipment. Verify actual equipment inventory, prices, delivery coverage and procurement process directly with CAMARTEC."
+    },
+    {
+      "id": "zambia-moa-fisp-2026-2027",
+      "country": "Zambia",
+      "category": "finance",
+      "publisher": "Zambia Ministry of Agriculture",
+      "url": "https://www.agriculture.gov.zm/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Ministry portal currently advertises 2026/2027 FISP e-voucher input-supplier registration. This is a supplier registration notice, not necessarily an open farmer grant; monitor for the exact notice/download and distinguish farmer eligibility from supplier applications."
     }
   ]
 }
