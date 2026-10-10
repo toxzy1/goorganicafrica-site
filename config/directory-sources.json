@@ -829,6 +829,66 @@
       "status": "active",
       "requires_review": true,
       "notes": "Report dated 5 October 2026 describes fertilizer, seed, ploughing services, equipment and infrastructure interventions in the North Bank Region. This is a regional progress report, not an application call; confirm local eligibility and current distribution schedules."
+    },
+    {
+      "id": "equatorial-guinea-ministry-agriculture",
+      "country": "Equatorial Guinea",
+      "category": "grants",
+      "publisher": "Government of Equatorial Guinea, Ministry responsible for Agriculture",
+      "url": "https://guineaecuatorialpress.com/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official government press portal can be used to discover agriculture policy and project announcements. It is not a dedicated farmer-support page; only add specific opportunities after locating a dated ministry or programme notice and confirming eligibility."
+    },
+    {
+      "id": "guinea-ministry-agriculture-official-portal",
+      "country": "Guinea",
+      "category": "grants",
+      "publisher": "Ministry of Agriculture, Republic of Guinea",
+      "url": "https://agriculture.gov.gn/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official agriculture ministry portal for policy, programme and project discovery. Verify that each programme is current and has a documented farmer/cooperative access route before publishing as an opportunity."
+    },
+    {
+      "id": "guinea-bissau-fao-country-programme",
+      "country": "Guinea-Bissau",
+      "category": "research-innovation",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "https://www.fao.org/guinea-bissau/en/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "FAO country portal provides authoritative agriculture, food security and rural development programme information. Use for source discovery and institutional context; confirm specific projects, dates and local implementing partners before listing farmer-facing support."
+    },
+    {
+      "id": "lesotho-ministry-agriculture-official-portal",
+      "country": "Lesotho",
+      "category": "grants",
+      "publisher": "Government of Lesotho, Ministry of Agriculture, Food Security and Nutrition",
+      "url": "https://www.gov.ls/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official government portal for discovering ministry and agricultural programme announcements. This is a discovery source, not evidence of a current grant; identify and verify a specific current programme and application route before publishing it as an opportunity."
+    },
+    {
+      "id": "liberia-ministry-agriculture-projects",
+      "country": "Liberia",
+      "category": "grants",
+      "publisher": "Ministry of Agriculture, Republic of Liberia",
+      "url": "https://moa.gov.lr/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry portal for agricultural policy and project announcements. Confirm current programme dates, geographic coverage, target beneficiaries and application instructions before listing support as open."
     }
   ]
 }
