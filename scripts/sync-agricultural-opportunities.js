@@ -59,7 +59,17 @@ async function main() {
   const existing = new Set((data.records || []).map(r => r.url || r.title));
   let added = 0;
 
-  const FEEDS = buildFeeds(data.countries);
+  // Opportunities data is a flat records list; country metadata lives in the
+  // agricultural resources registry. Do not assume opportunities.json has a
+  // top-level countries array.
+  const registryPath = path.join(process.cwd(), "src", "_data", "agriculturalResources.json");
+  const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
+  const countries = Array.isArray(data.countries) && data.countries.length
+    ? data.countries
+    : (registry.countries || []).map(c => ({ code: c.code, name: c.name }));
+  if (!countries.length) throw new Error("No country registry found for agricultural opportunity discovery.");
+
+  const FEEDS = buildFeeds(countries);
 
   for (const feed of FEEDS) {
     const response = await fetch(feed.url, {headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}});
@@ -85,14 +95,16 @@ async function main() {
       data.records = data.records || [];
       data.records.unshift({
         title,
-        description: summary.slice(0, 600),
+        country: country.name,
+        code: country.code,
+        category: categoryFor(title, summary),
+        summary: summary.slice(0, 600),
         url: link,
         source: feed.source,
         verified: today,
         status: "review",
         lifecycle: "needs_review",
         source_tier: 1,
-        country_code: country.code,
         type: "Opportunity / resource candidate",
         amount: "",
         eligibility: "",
