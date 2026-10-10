@@ -7,6 +7,7 @@ on:
       - "config/directory-sources.json"
       - "config/directory-country-coverage.json"
       - "scripts/update-directories.py"
+      - "tests/test_update_directories.py"
       - "data/directories/pending/**"
       - ".github/workflows/directory-monitor.yml"
       - ".github/workflows/directory-monitor-validation.yml"
@@ -26,6 +27,8 @@ jobs:
           python-version: "3.12"
       - name: Compile monitor without contacting external sources
         run: python -m py_compile scripts/update-directories.py
+      - name: Test review queue safety and idempotency without network access
+        run: python -m unittest discover -s tests -p "test_update_directories.py" -v
       - name: Validate source registry and country coverage
         run: |
           python - <<'PY'
