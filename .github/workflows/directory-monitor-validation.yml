@@ -43,7 +43,13 @@ jobs:
               assert source["url"].startswith(("https://", "http://")), f"{source['id']}: invalid URL"
               assert source["method"] in ("json_feed", "csv_feed", "official_page_review"), f"{source['id']}: unsupported method"
               assert source["requires_review"] is True, f"{source['id']}: review gate must remain enabled"
-          print(f"Validated {len(sources['sources'])} sources and {len(coverage['countries'])} country entries.")
+          source_ids = set(ids)
+          for country in coverage["countries"]:
+              registered = country.get("country_specific_sources", [])
+              assert all(source_id in source_ids for source_id in registered), f"{country['name']}: references an unregistered source ID"
+              expected = "source_registered" if registered else "needs_country_source_review"
+              assert country.get("coverage_status") == expected, f"{country['name']}: coverage status does not match registered sources"
+          print(f"Validated {len(sources['sources'])} sources and {len(coverage['countries'])} country entries with consistent source references.")
           PY
       - uses: actions/setup-node@v4
         with:
