@@ -511,12 +511,12 @@
       "country": "Benin",
       "category": "machinery",
       "publisher": "Government of Benin, Government Action Programme portal",
-      "url": "https://beninrevele.olasoft.net/secteur/agriculture/",
+      "url": "https://beninrevele.bj/secteur/agriculture/",
       "method": "official_page_review",
       "frequency": "weekly",
       "status": "active",
       "requires_review": true,
-      "notes": "Government programme overview lists a national agricultural mechanisation development programme and related agriculture support initiatives. Check current implementation and application channels; programme listing alone is not an open call."
+      "notes": "Official Government of Benin programme portal lists the National Agricultural Mechanisation Development Programme and related agriculture projects. Confirm current implementation and application channels; a programme listing is not an open call."
     },
     {
       "id": "burkina-badf-agricultural-credit",
@@ -565,6 +565,54 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official programme describes livestock support packages and grants. Confirm whether applications are open, current package rules, citizen-only eligibility and approved supplier requirements before presenting as an active opportunity."
+    },
+    {
+      "id": "benin-government-agricultural-finance-support",
+      "country": "Benin",
+      "category": "finance",
+      "publisher": "Government of Benin, Government Action Programme portal",
+      "url": "https://beninrevele.bj/appui-financement-agriculture/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official programme page describes agricultural credit access, subsidised credit-linked support, equipment acquisition financing and agricultural insurance measures. Confirm current eligibility, financing terms and active application windows; do not assume every listed measure is currently open."
+    },
+    {
+      "id": "benin-agricultural-insurance-2026",
+      "country": "Benin",
+      "category": "finance",
+      "publisher": "Government of the Republic of Benin",
+      "url": "https://www.gouv.bj/article/3628/assurance-agricole-millions-fcfa-proteger-producteurs-face-aleas-climatiques/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Government report dated 9 August 2026 on agricultural insurance indemnities for the 2025-2026 season and intended expansion for 2026-2027. This is programme status/context, not a direct open application; verify current enrolment through the ministry/FNDA."
+    },
+    {
+      "id": "cameroon-pmeaa-agricultural-sme-support",
+      "country": "Cameroon",
+      "category": "finance",
+      "publisher": "Cameroon Ministry of Small and Medium-Sized Enterprises, Social Economy and Handicrafts",
+      "url": "https://www.minpmeesa.cm/site/ministere/structures-sous-tutelle/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry page describes the PMEAA programme supporting agricultural and agro-food SMEs, including credit access and non-financial business support. The description references an earlier programme cycle; verify whether current support or successor programmes remain available before listing it as an opportunity."
+    },
+    {
+      "id": "ecowas-togo-benin-prima",
+      "country": "Togo",
+      "category": "finance",
+      "publisher": "ECOWAS Regional Agency for Agriculture and Food (ARAA)",
+      "url": "https://www.ecowas.int/the-executive-director-of-araa-reinforces-political-support-for-the-prima-programme-with-the-minister-for-agriculture-fisheries-livestock-and-food-sovereignty-of-togo/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "ECOWAS update dated 30 July 2026 describes PRIMA regional agricultural market integration activities in Togo and Benin. Use as regional programme context; verify any farmer/SME application route separately."
     }
   ]
 }
