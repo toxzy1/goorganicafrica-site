@@ -1763,7 +1763,20 @@
       "slug": "algeria",
       "flag": "🇩🇿",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "category": "finance",
+            "title": "Algeria supplier-credit mechanism for crop-protection products and seasonal inputs",
+            "description": "The Ministry of Agriculture announced a supplier-credit mechanism to help cereal producers obtain crop-protection products and other agricultural inputs, including seeds and fertilisers, with repayment after the harvest is marketed. Confirm current terms with the ministry before applying.",
+            "url": "https://madr.gov.dz/2026/04/09/%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD%D8%A9-%D8%AA%D8%B7%D9%84%D9%82-%D9%82%D8%B1%D8%B6-%D8%A7%D9%84%D9%85%D9%88%D8%B1%D8%AF-%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%A7/",
+            "source": "Ministry of Agriculture, Rural Development and Fisheries — Algeria",
+            "verified": "2026-10-10",
+            "published": "2026-04-09",
+            "status": "official",
+            "type": "Agricultural input finance",
+            "access": "Official announcement; farmers should confirm eligibility and current implementation terms with the ministry."
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -3905,7 +3918,19 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "category": "farmer-support",
+            "title": "IFAD Agricultural and Rural Development Project, Phase II — Gabon",
+            "description": "IFAD's official project page describes Gabon's Agricultural and Rural Development Project Phase II, co-financed by IFAD, the African Development Bank and the national Ministry of Agriculture, Livestock and Rural Development. The page includes project documents and implementation information.",
+            "url": "https://www.ifad.org/en/w/projects/2000001070",
+            "source": "International Fund for Agricultural Development (IFAD)",
+            "verified": "2026-10-10",
+            "status": "official",
+            "type": "Agricultural development project",
+            "access": "Project information and documents; confirm whether any support window is currently open."
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -4747,7 +4772,20 @@
         "insurance": [],
         "farmer-support": [],
         "research": [],
-        "climate": [],
+        "climate": [
+          {
+            "category": "climate",
+            "title": "FAO Libya project on integrated climate, water, energy and food-security planning",
+            "description": "FAO's project page describes a Green Climate Fund-supported initiative to strengthen integrated water-energy-food-ecosystem planning in Libya, including agricultural water use, climate resilience and food security.",
+            "url": "https://www.fao.org/energy/projects/project-details/strengthening-governance-and-institutional-framework-for-integrated-climate-change--water--energy-and-food-security-strategies-in-libya/en",
+            "source": "Food and Agriculture Organization of the United Nations (FAO) / Green Climate Fund",
+            "verified": "2026-10-10",
+            "published": "2025-09-10",
+            "status": "official",
+            "type": "Climate-resilient agriculture and water management",
+            "access": "Project information; confirm current implementation status with FAO."
+          }
+        ],
         "data": [
           {
             "title": "FAO GIEWS Country Brief — Libya",
@@ -5271,8 +5309,32 @@
       "flag": "🇲🇺",
       "records": {
         "finance": [],
-        "grants": [],
-        "machinery": [],
+        "grants": [
+          {
+            "category": "grants",
+            "title": "Mauritius Small Farmers Welfare Fund — agricultural grants and financial facilities",
+            "description": "The Small Farmers Welfare Fund lists financial support schemes for registered farmers, including grants for rainwater harvesting, agricultural and processing equipment, sheltered farming and technology introduction. Amounts, eligibility and open application windows vary by scheme.",
+            "url": "https://sfwf.govmu.org/sfwf/?page_id=1934",
+            "source": "Small Farmers Welfare Fund (SFWF), Government of Mauritius",
+            "verified": "2026-10-10",
+            "status": "official",
+            "type": "Agricultural grants and financial facilities",
+            "access": "Official scheme information; confirm current eligibility, funding availability and application dates."
+          }
+        ],
+        "machinery": [
+          {
+            "category": "machinery",
+            "title": "Mauritius Subsidy on Agricultural Mechanisation Scheme (SAMS)",
+            "description": "The Small Farmers Welfare Fund provides official information and application material for the mechanisation subsidy scheme supporting registered food-crop planters with agricultural machinery services.",
+            "url": "https://sfwf.govmu.org/sfwf/?page_id=2715",
+            "source": "Small Farmers Welfare Fund (SFWF), Government of Mauritius",
+            "verified": "2026-10-10",
+            "status": "official",
+            "type": "Agricultural mechanisation support",
+            "access": "Application terms apply; confirm current registration and scheme status."
+          }
+        ],
         "general": [
           {
             "title": "FAO Mauritius country agriculture profile",
