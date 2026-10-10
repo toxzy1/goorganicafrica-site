@@ -1,0 +1,56 @@
+name: Validate agricultural directory monitor
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "config/directory-sources.json"
+      - "config/directory-country-coverage.json"
+      - "scripts/update-directories.py"
+      - "data/directories/pending/**"
+      - ".github/workflows/directory-monitor.yml"
+      - ".github/workflows/directory-monitor-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-directory-monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile monitor without contacting external sources
+        run: python -m py_compile scripts/update-directories.py
+      - name: Validate source registry and country coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          sources = json.loads(Path("config/directory-sources.json").read_text())
+          coverage = json.loads(Path("config/directory-country-coverage.json").read_text())
+          assert isinstance(sources.get("sources"), list) and sources["sources"], "Source registry must not be empty"
+          assert len(coverage.get("countries", [])) == 54, "Expected 54 target country entries"
+          ids = [s.get("id") for s in sources["sources"]]
+          assert len(ids) == len(set(ids)), "Source IDs must be unique"
+          for source in sources["sources"]:
+              for field in ("id", "country", "category", "publisher", "url", "method", "status", "requires_review"):
+                  assert source.get(field) not in (None, ""), f"{source.get('id', 'unknown')}: missing {field}"
+              assert source["url"].startswith(("https://", "http://")), f"{source['id']}: invalid URL"
+              assert source["method"] in ("json_feed", "csv_feed", "official_page_review"), f"{source['id']}: unsupported method"
+              assert source["requires_review"] is True, f"{source['id']}: review gate must remain enabled"
+          print(f"Validated {len(sources['sources'])} sources and {len(coverage['countries'])} country entries.")
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install site dependencies
+        run: npm install
+      - name: Build site
+        run: npm run build
+      - name: Check site and CMS configuration
+        run: npm run check
