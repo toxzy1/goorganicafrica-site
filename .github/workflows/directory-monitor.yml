@@ -19,7 +19,7 @@ jobs:
           python-version: "3.12"
       - name: Check approved directory sources
         run: python scripts/update-directories.py
-      - name: Create review PR for latest queue
+      - name: Create review PR for queue and monitoring state
         uses: peter-evans/create-pull-request@v7
         with:
           branch: automated/directory-review-queue
@@ -29,5 +29,7 @@ jobs:
           body: |
             Automated review queue generated from approved agricultural resource sources.
             Review candidates before publishing or changing public directory records.
+            Monitoring state records each source fingerprint and last-check timestamp.
           add-paths: |
             data/directories/pending/directory-candidates-latest.json
+            data/directories/pending/directory-monitor-state.json
