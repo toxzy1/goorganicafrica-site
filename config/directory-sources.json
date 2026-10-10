@@ -445,6 +445,54 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official Ministry portal currently advertises 2026/2027 FISP e-voucher input-supplier registration. This is a supplier registration notice, not necessarily an open farmer grant; monitor for the exact notice/download and distinguish farmer eligibility from supplier applications."
+    },
+    {
+      "id": "morocco-ada-agricultural-development-fund",
+      "country": "Morocco",
+      "category": "finance",
+      "publisher": "Agency for Agricultural Development (ADA), Morocco",
+      "url": "https://www.ada.gov.ma/en/government-support",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official government agricultural development fund incentives, including agricultural machinery and irrigation investment support. Verify current rates, applicant eligibility, application windows and local implementing office before presenting as available."
+    },
+    {
+      "id": "south-africa-nda-producer-support",
+      "country": "South Africa",
+      "category": "finance",
+      "publisher": "South African Department of Agriculture",
+      "url": "https://www.nda.gov.za/index.php/publication/248-producer-support-and-development",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official producer support and development guidance directing applicants to provincial or regional agriculture departments. Not itself a live open grant call; confirm provincial programme and current application status."
+    },
+    {
+      "id": "egypt-agricultural-mechanization-finance",
+      "country": "Egypt",
+      "category": "machinery",
+      "publisher": "Egypt Digital Climate and Environmental Investment Portal / Agricultural Bank of Egypt",
+      "url": "https://clei.moenv.gov.eg/ar/%D8%A7%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%A3%D8%AE%D8%B6%D8%B1/%D8%A7%D9%84%D8%A8%D9%86%D9%83-%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Government-hosted Arabic listing describes agricultural mechanization finance for small farmers, cooperatives and agricultural projects. Confirm product terms, current limits, interest, and bank availability directly before publication."
+    },
+    {
+      "id": "zimbabwe-cbz-microfinance-agriculture-loan",
+      "country": "Zimbabwe",
+      "category": "finance",
+      "publisher": "CBZ Holdings",
+      "url": "https://www.cbz.co.zw/borrowing/microfinance-agriculture-loan/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Lender's own page describes a microfinance agriculture loan for smallholder farmers. This is a commercial loan, not a government grant; confirm current loan limits, security requirements, rates and availability."
     }
   ]
 }
