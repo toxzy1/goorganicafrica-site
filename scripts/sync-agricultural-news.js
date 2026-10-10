@@ -197,13 +197,13 @@ async function main() {
       });
       if (!response.ok) throw new Error("HTTP " + response.status);
       const xml = await response.text();
-      const items = xml.match(/<item(?:\\s[^>]*)?>[\\s\\S]*?<\\/item>/gi) || [];
+      const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
 
       for (const item of items) {
         const title = field(item, "title");
         const summary = field(item, "description");
         let url = normalizeUrl(field(item, "link"));
-        const sourceTag = item.match(/<source(?:\\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
+        const sourceTag = item.match(/<source(?:\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
         const sourceUrl = sourceTag ? normalizeUrl(sourceTag[1]) : "";
         if (url.includes("news.google.com")) {
           try {
