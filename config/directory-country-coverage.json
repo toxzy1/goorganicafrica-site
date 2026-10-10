@@ -315,8 +315,11 @@
       "code": "MR",
       "name": "Mauritania",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "mauritania-ministry-agriculture-official-portal",
+        "mauritania-2026-food-security-agricultural-equipment-support"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "MU",
@@ -388,8 +391,11 @@
       "code": "ST",
       "name": "São Tomé and Príncipe",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "sao-tome-mapdr-mais-alimentos-2026",
+        "sao-tome-agriculture-fisheries-credit-line-proposal-2026"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "SN",
@@ -438,8 +444,11 @@
       "code": "SS",
       "name": "South Sudan",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "south-sudan-ministry-agriculture-projects",
+        "south-sudan-resilient-agricultural-livelihoods-project"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "SD",
@@ -471,8 +480,11 @@
       "code": "TN",
       "name": "Tunisia",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "tunisia-apia-agricultural-investment-incentives",
+        "tunisia-apia-pvpi-dcv-call-september-2026"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "UG",
