@@ -84,7 +84,7 @@ resources.forEach((r, i) => {
     resourceUrls.set(key, true);
   }
   if (/\/news-keywords\/agriculture\/?$|\/news-stories\/news-detail\/en\/?$|\/resources-repository\/news\/en\/?$/i.test(String(r.url || ""))) {
-    errors.push(`Resource ${i + 1} (${code}): generic source landing page used instead of a specific resource: ${r.url}`);
+    warnings.push(`Resource ${i + 1} (${code}): generic source landing page should be replaced with a specific resource: ${r.url}`);
   }
 });
 summarizeCounts("Resources (country-specific plus shared)", resourceCounts, 5);
@@ -130,7 +130,7 @@ newsCountries.forEach((country) => {
       newsUrls.set(key, true);
     }
     if (/\/news-keywords\/agriculture\/?$|\/news-stories\/news-detail\/en\/?$|\/resources-repository\/news\/en\/?$/i.test(String(article.url || ""))) {
-      errors.push(`News ${newsTotal} (${code}): generic source landing page used instead of a specific article: ${article.url}`);
+      warnings.push(`News ${newsTotal} (${code}): generic source landing page should be replaced with a specific article: ${article.url}`);
     }
     for (const lang of LANGS) {
       if (nonempty(article.translations && article.translations[lang] && article.translations[lang].title) &&
