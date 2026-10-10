@@ -745,6 +745,90 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official customs guidance describes incentive regimes for agricultural machinery, equipment, fertilizers and some livestock/fish-feed imports, subject to technical approval and documentation. Verify current law and procedures with customs and the agriculture ministry before advising farmers."
+    },
+    {
+      "id": "car-ministry-agriculture-projects",
+      "country": "Central African Republic",
+      "category": "grants",
+      "publisher": "Ministry of Agriculture and Rural Development, Central African Republic",
+      "url": "https://madr-gouv.com/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry portal lists agricultural institutions and current project/news updates, including equipment handovers and project recruitment notices in 2026. Review individual notices for actual eligibility and open dates; portal itself is not an application call."
+    },
+    {
+      "id": "car-fao-country-programme-2024-2028",
+      "country": "Central African Republic",
+      "category": "grants",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "https://www.fao.org/central-african-republic/programmes-et-projets/fr",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "FAO country programme 2024–2028 outlines agropastoral, fisheries and climate-resilience priorities. Use for project discovery and institutional context; verify each project separately before listing farmer-facing support."
+    },
+    {
+      "id": "congo-agriculture-support-fund",
+      "country": "Congo",
+      "category": "finance",
+      "publisher": "Republic of the Congo, Agricultural Support Fund",
+      "url": "https://agriculture.agriculture.gouv.cg/?page_id=4240",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official fund page describes financing for agricultural, pastoral and fisheries production, marketing, storage, extension, training and value-chain development. Confirm current application procedure, active funding allocations and eligibility before calling it available finance."
+    },
+    {
+      "id": "eswatini-government-input-subsidy-mechanisation",
+      "country": "Eswatini",
+      "category": "machinery",
+      "publisher": "National Maize Corporation (NMC), Eswatini",
+      "url": "https://www.nmc.co.sz/subsidy-programmes-overview/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "NMC describes the government input subsidy programme, including subsidised agricultural inputs and mechanisation/tractor-hire services. Contributions and annual availability are announced seasonally; verify current season rates, dates and participating service points."
+    },
+    {
+      "id": "gambia-cpcu-agricultural-projects",
+      "country": "Gambia",
+      "category": "grants",
+      "publisher": "Central Projects Coordinating Unit, Ministry of Agriculture, Livestock and Food Security, The Gambia",
+      "url": "https://www.cpcu.gm/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official coordinating unit lists agricultural projects including GIRAV, GAFSp and RVCTP, with project updates and farmer support stories. Verify current beneficiary criteria and whether any application or procurement window is open."
+    },
+    {
+      "id": "gambia-girav-2026-equipment-support",
+      "country": "Gambia",
+      "category": "machinery",
+      "publisher": "Office of the President, Republic of The Gambia",
+      "url": "https://op.gov.gm/statement-his-excellency-president-adama-barrow-president-republic-gambia-handing-over-ceremony",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Government statement dated 31 March 2026 reports handover of agricultural production and processing equipment under the World Bank- and government-funded GIRAV project. Treat as evidence of project delivery, not an open public grant; confirm project contact and selection routes."
+    },
+    {
+      "id": "gambia-2026-agricultural-support-north-bank",
+      "country": "Gambia",
+      "category": "grants",
+      "publisher": "The Gambia News Agency (state news agency)",
+      "url": "https://gamna.gov.gm/minister-sabally-showcases-governments-agricultural-support-to-north-bank-farmers/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Report dated 5 October 2026 describes fertilizer, seed, ploughing services, equipment and infrastructure interventions in the North Bank Region. This is a regional progress report, not an application call; confirm local eligibility and current distribution schedules."
     }
   ]
 }
