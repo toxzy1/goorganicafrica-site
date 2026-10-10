@@ -129,7 +129,7 @@ newsCountries.forEach((country) => {
       if (newsUrls.has(key)) warnings.push(`News ${newsTotal} (${code}): duplicate URL within country: ${article.url}`);
       newsUrls.set(key, true);
     }
-    if (/\/news-keywords\/agriculture\/?$|\/news-stories\/news-detail\/en\/?$|\/resources-repository\/news\/en\/?$/i.test(String(article.url || ""))) {
+    if (/\/news-keywords\/agriculture\/?$|\/news-stories\/news-detail\/?$|\/news-stories\/news-detail\/en\/?$|\/resources-repository\/news\/en\/?$|\/projects-list\/?$|\/sectors\/A\/?$/i.test(String(article.url || ""))) {
       warnings.push(`News ${newsTotal} (${code}): generic source landing page should be replaced with a specific article: ${article.url}`);
     }
     for (const lang of LANGS) {
