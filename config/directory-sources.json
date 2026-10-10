@@ -385,6 +385,30 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official government overview of agricultural transformation initiatives and investment/infrastructure priorities. Use for programme discovery; do not imply a live grant or loan application unless a specific open call is verified."
+    },
+    {
+      "id": "tanzania-moa-mechanisation-irrigation-division",
+      "country": "Tanzania",
+      "category": "machinery",
+      "publisher": "Tanzania Ministry of Agriculture",
+      "url": "https://kilimo.go.tz/pages/directorate-units",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Ministry directory describing the Agricultural Mechanisation and Irrigation Division, machinery information/advisory functions and coordination responsibilities. It is a government contact and service-discovery source, not a machinery sales listing or proof of an open subsidy."
+    },
+    {
+      "id": "senegal-pmas-groundnut-equipment-subsidy",
+      "country": "Senegal",
+      "category": "machinery",
+      "publisher": "Senegal Ministry of Agriculture, Food Sovereignty and Livestock",
+      "url": "https://agriculture.gouv.sn/modernisation-agricole-au-service-du-developpement-reintroduction-des-cribles-et-tarares-pour-une-filiere-arachide-competitive/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official notice on the Senegal Agricultural Mechanization Programme (PMAS 2026–2030) and subsidized groundnut cleaning equipment described for the 2025–2026 campaign. Verify campaign dates, remaining allocations and current eligibility before presenting support as open."
     }
   ]
 }
