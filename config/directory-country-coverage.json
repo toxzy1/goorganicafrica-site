@@ -22,7 +22,8 @@
       "name": "Angola",
       "active": true,
       "country_specific_sources": [
-        "angola-fada-equipment-finance"
+        "angola-fada-equipment-finance",
+        "angola-fada-financing-application"
       ],
       "coverage_status": "source_registered"
     },
@@ -299,8 +300,11 @@
       "code": "RW",
       "name": "Rwanda",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "rwanda-minagri-agri-concessional-lending",
+        "rwanda-rab-farm-power"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "ST",
