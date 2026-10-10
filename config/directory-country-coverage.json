@@ -64,8 +64,10 @@
       "code": "BI",
       "name": "Burundi",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "burundi-mineagrie-agricultural-mechanisation"
+      ],
+      "coverage_status": "source_registered_pending_review"
     },
     {
       "code": "CV",
@@ -115,8 +117,10 @@
       "code": "CI",
       "name": "Côte d’Ivoire",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "cote-ivoire-2026-agricultural-equipment-support"
+      ],
+      "coverage_status": "source_registered_pending_review"
     },
     {
       "code": "CD",
