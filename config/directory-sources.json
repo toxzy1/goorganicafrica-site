@@ -985,6 +985,102 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official federal ministry portal identifies crop production, irrigation, agricultural technology and mechanisation services, including equipment, rentals and possible subsidies. Verify specific current services, geographic availability and eligibility with the ministry before publishing a concrete offer."
+    },
+    {
+      "id": "mauritania-ministry-agriculture-official-portal",
+      "country": "Mauritania",
+      "category": "grants",
+      "publisher": "Mauritania Ministry of Agriculture and Food Sovereignty",
+      "url": "https://www.agriculture.gov.mr/fr?page=0",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry portal with agricultural strategy, project information, public notices and current sector announcements. Use as a discovery source; verify each programme's current status, eligibility and application route before publishing it as an opportunity."
+    },
+    {
+      "id": "mauritania-2026-food-security-agricultural-equipment-support",
+      "country": "Mauritania",
+      "category": "machinery",
+      "publisher": "Mauritania Food Security Commission (CSA)",
+      "url": "https://csa.gov.mr/node/1960",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official 2026 report on a food-for-work and income-generating programme that included fencing for more than 100 farms and agricultural equipment support in rural areas. This describes programme implementation and selected beneficiaries, not an open national application; confirm new calls with CSA."
+    },
+    {
+      "id": "sao-tome-mapdr-mais-alimentos-2026",
+      "country": "São Tomé and Príncipe",
+      "category": "grants",
+      "publisher": "Ministry of Agriculture, Fisheries and Rural Development (MAPDR)",
+      "url": "https://mapdr.gov.st/ler-noticia.php?id=129",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official report dated 14 April 2026 says the Mais Alimentos programme delivered seeds, inputs and crop-spraying machines to selected farmers. This is a record of support already delivered, not proof of an open application; check ministry announcements for new beneficiary rounds."
+    },
+    {
+      "id": "sao-tome-agriculture-fisheries-credit-line-proposal-2026",
+      "country": "São Tomé and Príncipe",
+      "category": "finance",
+      "publisher": "Ministry of Agriculture, Fisheries and Rural Development (MAPDR)",
+      "url": "https://mapdr.gov.st/ler-noticia.php?id=136",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official report dated 10 June 2026 says the ministry and OIKOS were developing a proposed agriculture and fisheries credit line and agricultural fund, with resource mobilisation still underway. It is a proposal under development, not an available loan; verify launch and application terms before listing as finance."
+    },
+    {
+      "id": "south-sudan-ministry-agriculture-projects",
+      "country": "South Sudan",
+      "category": "grants",
+      "publisher": "Republic of South Sudan, Ministry of Agriculture and Food Security",
+      "url": "https://mafs.gov.ss/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry portal lists national schemes and current project announcements, including 2026 food-security and agricultural transformation updates. Treat individual projects as programme information unless an explicit farmer-facing call and eligibility process are verified."
+    },
+    {
+      "id": "south-sudan-resilient-agricultural-livelihoods-project",
+      "country": "South Sudan",
+      "category": "grants",
+      "publisher": "South Sudan Ministry of Agriculture and Food Security; World Bank; FAO",
+      "url": "https://mafs.gov.ss/resilient-agricultural-livelihoods-project-ralp/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official project page describes RALP, a World Bank-funded farmer resilience project with a stated 2021–2026 duration, support for inputs, farmer groups and mechanisation. As the stated end year is 2026, verify extension/closure and whether any farmer registration is still open; do not imply general applications are available."
+    },
+    {
+      "id": "tunisia-apia-agricultural-investment-incentives",
+      "country": "Tunisia",
+      "category": "finance",
+      "publisher": "Agricultural Investment Promotion Agency (APIA), Tunisia",
+      "url": "https://www.apia.com.tn/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official agency under Tunisia's agriculture ministry with investment incentives, financial incentives, land loans and application-procedure guidance. Verify current rules, investor eligibility and application documents for each scheme before publishing specific financial support."
+    },
+    {
+      "id": "tunisia-apia-pvpi-dcv-call-september-2026",
+      "country": "Tunisia",
+      "category": "grants",
+      "publisher": "Agricultural Investment Promotion Agency (APIA), Tunisia",
+      "url": "https://apia.com.tn/ar/actualites/detail/226",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official announcement dated 21 September 2026 for a financing call under PVPI-DCV in Kairouan, Sidi Bouzid and Kasserine; the stated deadline was 30 September 2026 and has passed. Retain for monitoring and historical context only; never list as open unless a new deadline is officially announced."
     }
   ]
 }
