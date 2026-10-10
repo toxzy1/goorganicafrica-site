@@ -100,11 +100,16 @@ const newsCountries = safeArray(newsData.countries).map((country) => ({
   articles: safeArray(country.articles).slice()
 }));
 const newsByCode = new Map(newsCountries.map((country) => [String(country.code || "").toUpperCase(), country]));
-for (const article of safeArray(newsSupplement.records)) {
+for (const rawArticle of safeArray(newsSupplement.records)) {
+  // Supplemental feeds use "headline"; normalize it to "title" for a consistent audit.
+  const article = { ...rawArticle, title: rawArticle.title || rawArticle.headline || "" };
   const code = String(article.country_code || "").toUpperCase();
   const country = newsByCode.get(code);
   if (!country) continue;
-  if (!country.articles.some((existing) => existing.url === article.url || existing.title === article.title)) {
+  if (!country.articles.some((existing) =>
+    existing.url === article.url ||
+    (existing.title || existing.headline) === article.title
+  )) {
     country.articles.push(article);
   }
 }
