@@ -198,6 +198,34 @@
           "status": "official"
         },
         {
+          "category": "policy",
+          "title": "MoFA launches National Horticultural Seed Roadmap",
+          "summary": "Ghana's Ministry of Food and Agriculture launched the National Horticultural Seed Roadmap on 17 September 2026.",
+          "url": "https://www.mofa.gov.gh/site/media-centre/latest-news",
+          "source": "Ghana Ministry of Food and Agriculture (MoFA)",
+          "published": "2026-09-17",
+          "verified": "2026-10-05",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le MoFA lance la feuille de route nationale sur les semences horticoles",
+              "summary": "Le ministère ghanéen de l'Alimentation et de l'Agriculture a lancé la feuille de route nationale sur les semences horticoles le 17 septembre 2026."
+            },
+            "ar": {
+              "title": "وزارة الغذاء والزراعة تطلق خارطة الطريق الوطنية لبذور البستنة",
+              "summary": "أطلقت وزارة الغذاء والزراعة في غانا خارطة الطريق الوطنية لبذور البستنة في 17 سبتمبر 2026."
+            },
+            "pt": {
+              "title": "MoFA lança o roteiro nacional de sementes hortícolas",
+              "summary": "O Ministério da Alimentação e Agricultura do Gana lançou o roteiro nacional de sementes hortícolas em 17 de setembro de 2026."
+            },
+            "sw": {
+              "title": "MoFA yazindua mpango wa kitaifa wa mbegu za mazao ya bustani",
+              "summary": "Wizara ya Chakula na Kilimo ya Ghana ilizindua mpango wa kitaifa wa mbegu za mazao ya bustani tarehe 17 Septemba 2026."
+            }
+          }
+        },
+        {
           "category": "crops",
           "title": "Ghana launches Tomato Self-Sufficiency Initiative",
           "summary": "The Ministry of Food and Agriculture launched the Ghana Tomato Self-Sufficiency Initiative to increase domestic tomato production.",
@@ -2338,17 +2366,32 @@
       "flag": "🇸🇳",
       "articles": [
         {
-          "category": "farmer-support",
-          "title": "FAO Senegal highlights women farmers and rural entrepreneurs",
-          "summary": "Women farmers, livestock keepers, processors, oyster harvesters, beekeepers and rural entrepreneurs were highlighted during Senegal activities recognising their role in food security and local development.",
+          "category": "policy",
+          "title": "African countries strengthen capacities on agricultural heritage systems",
+          "summary": "FAO reported that a Johannesburg workshop brought 16 African countries together to strengthen agricultural heritage system proposals, action plans and partnerships.",
           "url": "https://www.fao.org/africa/news-stories/news-detail",
-          "source": "FAO",
-          "source_id": "fao",
-          "source_tier": 1,
-          "published": "2026-08-04",
-          "verified": "2026-10-07",
-          "review_after": "2026-11-06",
-          "status": "official"
+          "source": "FAO Regional Office for Africa",
+          "published": "2026-09-28",
+          "verified": "2026-10-05",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Les pays africains renforcent leurs capacités sur les systèmes de patrimoine agricole",
+              "summary": "La FAO a indiqué qu'un atelier organisé à Johannesburg a réuni 16 pays africains pour renforcer les propositions, plans d'action et partenariats relatifs aux systèmes de patrimoine agricole."
+            },
+            "ar": {
+              "title": "الدول الأفريقية تعزز قدراتها بشأن نظم التراث الزراعي",
+              "summary": "أفادت الفاو بأن ورشة عمل في جوهانسبرغ جمعت 16 دولة أفريقية لتعزيز المقترحات وخطط العمل والشراكات الخاصة بنظم التراث الزراعي."
+            },
+            "pt": {
+              "title": "Países africanos reforçam capacidades sobre sistemas de património agrícola",
+              "summary": "A FAO informou que um workshop realizado em Joanesburgo reuniu 16 países africanos para reforçar propostas, planos de ação e parcerias sobre sistemas de património agrícola."
+            },
+            "sw": {
+              "title": "Nchi za Afrika zinaimarisha uwezo kuhusu mifumo ya urithi wa kilimo",
+              "summary": "FAO iliripoti kuwa warsha iliyofanyika Johannesburg ilileta pamoja nchi 16 za Afrika ili kuimarisha mapendekezo, mipango ya utekelezaji na ushirikiano kuhusu mifumo ya urithi wa kilimo."
+            }
+          }
         },
         {
           "category": "farmer-support",
@@ -2404,6 +2447,32 @@
           "source": "FAO",
           "published": "2026-09-04",
           "verified": "2026-10-07",
+          "status": "official"
+        },
+        {
+          "category": "weather-climate",
+          "title": "FAO strengthens West Africa climate and environment support mechanism",
+          "summary": "FAO's West Africa regional office strengthened its Climate and Environment mechanism to help countries translate climate and environmental priorities into resilient agrifood-system action.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO / IAEA",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-21",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "farmer-support",
+          "title": "FAO Senegal highlights women farmers and rural entrepreneurs",
+          "summary": "Women farmers, livestock keepers, processors, oyster harvesters, beekeepers and rural entrepreneurs were highlighted during Senegal activities recognising their role in food security and local development.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-08-04",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
           "status": "official"
         },
         {
@@ -2726,17 +2795,32 @@
       "flag": "🇿🇼",
       "articles": [
         {
-          "category": "policy",
-          "title": "FAO calls for stronger implementation of CAADP commitments",
-          "summary": "FAO urged African countries to move from commitments to implementation, investment and measurable results as the continent pursues agrifood-system transformation.",
+          "category": "finance",
+          "title": "Zimbabwe presents investment opportunities at FAO Hand-in-Hand Investment Forum",
+          "summary": "FAO reported Zimbabwe's participation in the 2026 Hand-in-Hand Investment Forum to present agrifood investment opportunities.",
           "url": "https://www.fao.org/africa/news-stories/news-detail",
-          "source": "FAO / IAEA",
-          "source_id": "fao",
-          "source_tier": 1,
-          "published": "2026-09-24",
-          "verified": "2026-10-07",
-          "review_after": "2026-11-06",
-          "status": "official"
+          "source": "FAO Regional Office for Africa",
+          "published": "2026-09-17",
+          "verified": "2026-10-05",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Zimbabwe présente des opportunités d'investissement au Forum d'investissement Hand-in-Hand de la FAO",
+              "summary": "La FAO a indiqué que le Zimbabwe a participé au Forum d'investissement Hand-in-Hand 2026 pour présenter des opportunités d'investissement dans les systèmes agroalimentaires."
+            },
+            "ar": {
+              "title": "زيمبابوي تعرض فرصاً استثمارية في منتدى الفاو للاستثمار ضمن مبادرة هاند-إن-هاند",
+              "summary": "أفادت الفاو بأن زيمبابوي شاركت في منتدى الاستثمار هاند-إن-هاند لعام 2026 لعرض فرص الاستثمار في النظم الزراعية والغذائية."
+            },
+            "pt": {
+              "title": "Zimbabué apresenta oportunidades de investimento no Fórum de Investimento Hand-in-Hand da FAO",
+              "summary": "A FAO informou que o Zimbabué participou no Fórum de Investimento Hand-in-Hand 2026 para apresentar oportunidades de investimento nos sistemas agroalimentares."
+            },
+            "sw": {
+              "title": "Zimbabwe yaonyesha fursa za uwekezaji katika Jukwaa la Uwekezaji la FAO la Hand-in-Hand",
+              "summary": "FAO iliripoti kuwa Zimbabwe ilishiriki katika Jukwaa la Uwekezaji la Hand-in-Hand 2026 ili kuwasilisha fursa za uwekezaji katika mifumo ya kilimo na chakula."
+            }
+          }
         },
         {
           "category": "grants-programmes",
@@ -2812,6 +2896,19 @@
           "source_id": "fao",
           "source_tier": 1,
           "published": "2026-09-18",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "policy",
+          "title": "FAO calls for stronger implementation of CAADP commitments",
+          "summary": "FAO urged African countries to move from commitments to implementation, investment and measurable results as the continent pursues agrifood-system transformation.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail",
+          "source": "FAO / IAEA",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-24",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
