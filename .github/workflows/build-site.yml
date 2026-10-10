@@ -30,6 +30,9 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Audit agricultural data coverage and integrity
+        run: npm run audit:agriculture
+
       - name: Run site architecture checks
         run: npm run check
 
