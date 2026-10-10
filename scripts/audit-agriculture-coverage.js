@@ -155,6 +155,10 @@ console.log(`Agricultural News: ${newsTotal} unique articles across ${newsCountr
 console.log("Resources by country: " + EXPECTED.map(([c,n]) => `${c}=${resourceCounts[c]}`).join("  "));
 console.log("News by country: " + EXPECTED.map(([c,n]) => `${c}=${newsCounts[c]}`).join("  "));
 console.log("News articles with title+summary translations: " + LANGS.map((l) => `${l}=${translationCounts[l]}/${newsTotal}`).join("  "));
+for (const lang of LANGS) {
+  const percent = newsTotal ? Math.round((translationCounts[lang] / newsTotal) * 100) : 0;
+  if (percent < 80) warnings.push(`Translation coverage: ${lang} has ${translationCounts[lang]}/${newsTotal} articles translated (${percent}%), below the 80% review target.`);
+}
 warnings.forEach((w) => console.warn("WARNING: " + w));
 if (errors.length) {
   console.error(`FAILED: ${errors.length} structural/data-quality errors:`);
