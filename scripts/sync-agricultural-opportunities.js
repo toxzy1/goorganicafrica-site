@@ -71,67 +71,87 @@ async function main() {
 
   const FEEDS = buildFeeds(countries);
 
-  for (const feed of FEEDS) {
-    const response = await fetch(feed.url, {headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}});
-    if (!response.ok) throw new Error(feed.name + ": HTTP " + response.status);
-    const xml = await response.text();
-    const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
+  async function processFeed(feed) {
+    try {
+      const response = await fetch(feed.url, {
+        headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"},
+        signal: AbortSignal.timeout(15000)
+      });
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      const xml = await response.text();
+      const items = xml.match(/<item(?:\\s[^>]*)?>[\\s\\S]*?<\\/item>/gi) || [];
+      const candidates = [];
 
-    for (const item of items) {
-      const title = field(item, "title");
-      const summary = field(item, "description");
-      let link = url(field(item, "link"));
-      // Google News RSS item links are redirect URLs, not publisher article URLs.
-      // Resolve them before applying the trusted-host filter; never replace them
-      // with the publisher homepage from the <source url="..."> attribute.
-      if (link.includes("news.google.com")) {
-        try {
-          const resolved = await fetch(link, {
-            redirect: "follow",
-            headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}
-          });
-          if (resolved.ok && resolved.url && !resolved.url.includes("news.google.com")) {
-            link = resolved.url;
-          } else {
+      for (const item of items) {
+        const title = field(item, "title");
+        const summary = field(item, "description");
+        let link = url(field(item, "link"));
+        if (link.includes("news.google.com")) {
+          try {
+            const resolved = await fetch(link, {
+              redirect: "follow",
+              headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"},
+              signal: AbortSignal.timeout(10000)
+            });
+            if (resolved.ok && resolved.url && !resolved.url.includes("news.google.com")) {
+              link = resolved.url;
+            } else {
+              continue;
+            }
+          } catch (_) {
             continue;
           }
-        } catch (_) {
-          continue;
         }
+        const published = date(field(item, "pubDate") || field(item, "dc:date"));
+        if (!title || !link || !published || !link.includes(feed.host)) continue;
+        const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
+        if (age > 90) continue;
+        if (!feed.country) continue;
+
+        candidates.push({
+          title,
+          country: feed.country.name,
+          code: feed.country.code,
+          category: categoryFor(title, summary),
+          summary: summary.slice(0, 600),
+          url: link,
+          source: feed.source,
+          verified: today,
+          status: "review",
+          lifecycle: "needs_review",
+          source_tier: 1,
+          type: "Opportunity / resource candidate",
+          amount: "",
+          eligibility: "",
+          beneficiary: "",
+          deadline: "",
+          application_url: link,
+          contact: ""
+        });
       }
-      const published = date(field(item, "pubDate") || field(item, "dc:date"));
-      if (!title || !link || !published || !link.includes(feed.host) || existing.has(link) || existing.has(title)) continue;
+      return candidates;
+    } catch (error) {
+      console.warn("Skipping unavailable opportunity feed " + feed.name + ": " + error.message);
+      return [];
+    }
+  }
 
-      const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
-      if (age > 90) continue;
-
-      const hay = (title + " " + summary).toLowerCase();
-      const country = feed.country;
-      if (!country) continue;
-      data.records = data.records || [];
-      data.records.unshift({
-        title,
-        country: country.name,
-        code: country.code,
-        category: categoryFor(title, summary),
-        summary: summary.slice(0, 600),
-        url: link,
-        source: feed.source,
-        verified: today,
-        status: "review",
-        lifecycle: "needs_review",
-        source_tier: 1,
-        type: "Opportunity / resource candidate",
-        amount: "",
-        eligibility: "",
-        beneficiary: "",
-        deadline: "",
-        application_url: link,
-        contact: ""
-      });
-      existing.add(link);
-      existing.add(title);
-      added++;
+  // Bounded concurrency prevents one slow or temporarily unavailable source
+  // from blocking all country/source combinations. Candidates are merged
+  // sequentially below so duplicate checks remain deterministic.
+  const FEED_BATCH_SIZE = 8;
+  for (let i = 0; i < FEEDS.length; i += FEED_BATCH_SIZE) {
+    const batch = FEEDS.slice(i, i + FEED_BATCH_SIZE);
+    const results = await Promise.all(batch.map(processFeed));
+    for (const candidates of results) {
+      for (const candidate of candidates) {
+        if (existing.has(candidate.url) || existing.has(candidate.title)) continue;
+        data.records = data.records || [];
+        data.records.unshift(candidate);
+        existing.add(candidate.url);
+        existing.add(candidate.title);
+        added++;
+      }
     }
   }
 
