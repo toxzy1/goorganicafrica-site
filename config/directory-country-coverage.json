@@ -285,8 +285,11 @@
       "code": "MG",
       "name": "Madagascar",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "madagascar-ministry-vikina-matching-grants-2026",
+        "madagascar-ministry-inputs-water-2026"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "MW",
@@ -302,8 +305,11 @@
       "code": "ML",
       "name": "Mali",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "mali-fnaa-national-agriculture-support-fund",
+        "mali-national-rural-engineering-mechanisation"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "MR",
@@ -316,8 +322,10 @@
       "code": "MU",
       "name": "Mauritius",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "mauritius-small-farmers-welfare-fund-support-schemes"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "MA",
@@ -348,8 +356,10 @@
       "code": "NE",
       "name": "Niger",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "niger-prodaf-family-agriculture-development"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "NG",
@@ -401,15 +411,19 @@
       "code": "SL",
       "name": "Sierra Leone",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "sierra-leone-ministry-fsrp-matching-grants-2026"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "SO",
       "name": "Somalia",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "somalia-ministry-agriculture-irrigation-mechanisation"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "ZA",
