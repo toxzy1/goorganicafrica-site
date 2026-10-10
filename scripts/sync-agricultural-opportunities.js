@@ -81,8 +81,24 @@ async function main() {
       const title = field(item, "title");
       const summary = field(item, "description");
       let link = url(field(item, "link"));
-      const sourceLink = url(field(item, "source"));
-      if (link.includes("news.google.com") && sourceLink) link = sourceLink;
+      // Google News RSS item links are redirect URLs, not publisher article URLs.
+      // Resolve them before applying the trusted-host filter; never replace them
+      // with the publisher homepage from the <source url="..."> attribute.
+      if (link.includes("news.google.com")) {
+        try {
+          const resolved = await fetch(link, {
+            redirect: "follow",
+            headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}
+          });
+          if (resolved.ok && resolved.url && !resolved.url.includes("news.google.com")) {
+            link = resolved.url;
+          } else {
+            continue;
+          }
+        } catch (_) {
+          continue;
+        }
+      }
       const published = date(field(item, "pubDate") || field(item, "dc:date"));
       if (!title || !link || !published || !link.includes(feed.host) || existing.has(link) || existing.has(title)) continue;
 
