@@ -843,7 +843,25 @@
           "review_after": "2026-11-09",
           "category": "markets",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO prévoit une nouvelle récolte céréalière supérieure à la moyenne en Afrique du Sud en 2026",
+              "summary": "Le bulletin pays d’avril 2026 prévoit une récolte importante, dont environ 17,1 millions de tonnes de maïs, tout en signalant que l’offre abondante et la baisse de la demande à l’exportation font pression sur les prix du maïs."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تتوقع محصول حبوب أعلى من المتوسط في جنوب أفريقيا عام 2026",
+              "summary": "توقع التقرير القطري الصادر في أبريل 2026 محصولاً كبيراً يشمل نحو 17.1 مليون طن من الذرة، مع الإشارة إلى أن وفرة المعروض وتراجع طلب التصدير يضغطان على أسعار الذرة."
+            },
+            "pt": {
+              "title": "FAO prevê outra colheita de cereais acima da média na África do Sul em 2026",
+              "summary": "O boletim nacional de abril de 2026 prevê uma colheita elevada, incluindo cerca de 17,1 milhões de toneladas de milho, embora a oferta abundante e a menor procura externa pressionem os preços."
+            },
+            "sw": {
+              "title": "FAO yatabiri mavuno mengine ya nafaka yaliyo juu ya wastani Afrika Kusini mwaka 2026",
+              "summary": "Taarifa ya Aprili 2026 inatabiri mavuno makubwa, yakiwemo takriban tani milioni 17.1 za mahindi, huku usambazaji mwingi na kupungua kwa mahitaji ya mauzo ya nje kukishusha bei."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1098,20 +1116,20 @@
           "source_tier": 1,
           "translations": {
             "fr": {
-              "title": "La FAO avertit que les conflits et les chocs climatiques continuent d’affecter les perspectives agricoles du Cameroun en 2026",
-              "summary": "Le bulletin pays de la FAO d’avril 2026 indique que les conflits dans les régions du Nord-Ouest et du Sud-Ouest et le coût élevé des intrants limitent les agriculteurs, tandis que les calendriers de semis et de récolte varient selon les zones pluviométriques."
+              "title": "La FAO avertit que les conflits et les chocs climatiques affectent encore les perspectives agricoles du Cameroun en 2026",
+              "summary": "Le bulletin pays d’avril 2026 indique que les conflits dans le Nord-Ouest et le Sud-Ouest ainsi que le coût élevé des intrants limitent les agriculteurs, tandis que les calendriers de semis et de récolte varient selon les zones pluviométriques."
             },
             "ar": {
-              "title": "منظمة الأغذية والزراعة تحذر من استمرار تأثير النزاعات والصدمات المناخية على آفاق المحاصيل في الكاميرون لعام 2026",
-              "summary": "يشير التقرير القطري للمنظمة في أبريل 2026 إلى أن النزاع في منطقتي الشمال الغربي والجنوب الغربي وارتفاع تكاليف المدخلات يحدّان من قدرة المزارعين، كما تختلف مواعيد الزراعة والحصاد حسب مناطق الأمطار."
+              "title": "منظمة الأغذية والزراعة تحذر من استمرار تأثير النزاعات والصدمات المناخية على محاصيل الكاميرون في 2026",
+              "summary": "يشير التقرير القطري الصادر في أبريل 2026 إلى أن النزاعات في الشمال الغربي والجنوب الغربي وارتفاع تكاليف المدخلات يحدان من قدرة المزارعين، كما تختلف مواعيد الزراعة والحصاد حسب مناطق الأمطار."
             },
             "pt": {
               "title": "FAO alerta que conflitos e choques climáticos continuam a afetar as perspetivas agrícolas dos Camarões em 2026",
-              "summary": "O boletim nacional da FAO de abril de 2026 indica que os conflitos nas regiões Noroeste e Sudoeste e os custos elevados dos insumos limitam os agricultores, enquanto os calendários de sementeira e colheita variam conforme as zonas de precipitação."
+              "summary": "O boletim nacional de abril de 2026 indica que os conflitos no Noroeste e Sudoeste e os elevados custos dos insumos limitam os agricultores, enquanto os calendários de sementeira e colheita variam conforme as zonas de precipitação."
             },
             "sw": {
-              "title": "FAO yaonya kuwa migogoro na mishtuko ya tabianchi inaendelea kuathiri matarajio ya mazao nchini Kamerun mwaka 2026",
-              "summary": "Taarifa ya FAO ya Aprili 2026 inasema migogoro katika maeneo ya Kaskazini-Magharibi na Kusini-Magharibi pamoja na gharama kubwa za pembejeo zinawazuia wakulima, huku ratiba za kupanda na kuvuna zikitofautiana kulingana na maeneo ya mvua."
+              "title": "FAO yaonya kuwa migogoro na mishtuko ya tabianchi inaendelea kuathiri matarajio ya mazao Kamerun mwaka 2026",
+              "summary": "Taarifa ya Aprili 2026 inasema migogoro Kaskazini-Magharibi na Kusini-Magharibi pamoja na gharama kubwa za pembejeo zinawazuia wakulima; ratiba za kupanda na kuvuna hutofautiana kulingana na maeneo ya mvua."
             }
           }
         }
@@ -2127,19 +2145,19 @@
           "translations": {
             "fr": {
               "title": "La FAO et la société gabonaise de garantie étudient un partenariat de financement pour les producteurs agricoles",
-              "summary": "La FAO au Gabon et la Société Gabonaise de Garantie ont discuté d’un partenariat visant à faciliter l’accès au financement des producteurs et entrepreneurs ruraux grâce au partage des risques et à des garanties destinées aux banques et institutions de microfinance."
+              "summary": "La FAO au Gabon et la Société Gabonaise de Garantie ont discuté d’un partenariat pour faciliter le financement des producteurs et entrepreneurs ruraux grâce au partage des risques et à des garanties pour les banques et institutions de microfinance."
             },
             "ar": {
-              "title": "منظمة الأغذية والزراعة وشركة الضمان الزراعي في الغابون تبحثان شراكة لتمويل المنتجين",
-              "summary": "بحث مكتب المنظمة في الغابون وشركة الضمان الغابونية شراكة لتسهيل حصول المنتجين الزراعيين ورواد الأعمال الريفيين على التمويل عبر تقاسم المخاطر وتقديم ضمانات للبنوك ومؤسسات التمويل الأصغر."
+              "title": "منظمة الأغذية والزراعة وشركة الضمان في الغابون تبحثان شراكة لتمويل المنتجين الزراعيين",
+              "summary": "بحثت منظمة الأغذية والزراعة في الغابون وشركة الضمان الغابونية شراكة لتسهيل تمويل المنتجين الزراعيين ورواد الأعمال الريفيين من خلال تقاسم المخاطر وتقديم ضمانات للبنوك ومؤسسات التمويل الأصغر."
             },
             "pt": {
-              "title": "FAO e a sociedade gabonesa de garantias exploram parceria de financiamento para produtores agrícolas",
-              "summary": "A FAO no Gabão e a Société Gabonaise de Garantie discutiram uma parceria para facilitar o acesso ao financiamento de produtores e empresários rurais através da partilha de riscos e de garantias para bancos e instituições de microfinanças."
+              "title": "FAO e sociedade gabonesa de garantias exploram parceria de financiamento para produtores agrícolas",
+              "summary": "A FAO no Gabão e a Société Gabonaise de Garantie discutiram uma parceria para facilitar o financiamento de produtores e empresários rurais através da partilha de riscos e garantias para bancos e instituições de microfinanças."
             },
             "sw": {
-              "title": "FAO na kampuni ya dhamana ya kilimo ya Gabon zachunguza ushirikiano wa ufadhili kwa wazalishaji",
-              "summary": "FAO nchini Gabon na Société Gabonaise de Garantie zilijadili ushirikiano wa kuboresha upatikanaji wa fedha kwa wazalishaji wa kilimo na wajasiriamali wa vijijini kupitia kugawana hatari na dhamana kwa benki na taasisi za mikopo midogo."
+              "title": "FAO na kampuni ya dhamana ya Gabon zachunguza ushirikiano wa ufadhili kwa wazalishaji",
+              "summary": "FAO nchini Gabon na Société Gabonaise de Garantie zilijadili ushirikiano wa kurahisisha ufadhili kwa wazalishaji wa kilimo na wajasiriamali wa vijijini kupitia kugawana hatari na dhamana kwa benki na taasisi za mikopo midogo."
             }
           }
         }
@@ -2206,7 +2224,25 @@
           "review_after": "2026-11-09",
           "category": "land-restoration",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO soutient la restauration des paysages dégradés en Guinée grâce à la régénération naturelle assistée",
+              "summary": "La FAO soutient la régénération naturelle assistée à Mamou, en Guinée, comme moyen pratique de restaurer les terres dégradées, de renforcer la résilience des écosystèmes et d’aider les communautés à faire face au changement climatique."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تدعم استعادة الأراضي المتدهورة في غينيا عبر التجدد الطبيعي المساعد",
+              "summary": "تدعم المنظمة التجدد الطبيعي المساعد في مامو بغينيا بوصفه وسيلة عملية لاستعادة الأراضي المتدهورة وتعزيز قدرة النظم البيئية على الصمود ومساعدة المجتمعات على مواجهة تغير المناخ."
+            },
+            "pt": {
+              "title": "FAO apoia a recuperação de paisagens degradadas na Guiné através da regeneração natural assistida",
+              "summary": "A FAO apoia a regeneração natural assistida em Mamou, na Guiné, como uma forma prática de restaurar terras degradadas, reforçar a resiliência dos ecossistemas e ajudar as comunidades a enfrentar as alterações climáticas."
+            },
+            "sw": {
+              "title": "FAO yaunga mkono kurejesha mandhari yaliyoharibika nchini Guinea kupitia uotaji upya wa asili unaosaidiwa",
+              "summary": "FAO inaunga mkono uotaji upya wa asili unaosaidiwa huko Mamou, Guinea, kama njia ya kurejesha ardhi iliyoharibika, kuimarisha ustahimilivu wa mifumo ikolojia na kusaidia jamii kukabiliana na mabadiliko ya tabianchi."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2420,19 +2456,19 @@
           "translations": {
             "fr": {
               "title": "La FAO prévoit une production céréalière inférieure à la moyenne et des besoins d’importation accrus en Libye",
-              "summary": "Le bulletin de la FAO de juillet 2026 indique que la sécheresse a réduit les superficies céréalières dans certaines régions libyennes et que la production de 2026 pourrait être inférieure d’environ 20 % à la moyenne quinquennale."
+              "summary": "Le bulletin de juillet 2026 indique que la sécheresse a réduit les superficies céréalières dans certaines régions de Libye et que la production pourrait être inférieure d’environ 20 % à la moyenne quinquennale."
             },
             "ar": {
               "title": "منظمة الأغذية والزراعة تحذر من انخفاض إنتاج الحبوب عن المتوسط وارتفاع احتياجات الاستيراد في ليبيا",
-              "summary": "ذكر التقرير القطري للمنظمة في يوليو 2026 أن الجفاف قلّص المساحات المزروعة بالحبوب في أجزاء من ليبيا، وأن إنتاج عام 2026 قد يقل بنحو 20 بالمئة عن متوسط السنوات الخمس."
+              "summary": "ذكر تقرير يوليو 2026 أن الجفاف قلّص المساحات المزروعة بالحبوب في أجزاء من ليبيا، وأن إنتاج 2026 قد يقل بنحو 20 بالمئة عن متوسط السنوات الخمس."
             },
             "pt": {
               "title": "FAO prevê produção de cereais abaixo da média e aumento das necessidades de importação na Líbia",
-              "summary": "O boletim da FAO de julho de 2026 indica que a seca reduziu as áreas semeadas com cereais em partes da Líbia e que a produção de 2026 poderá ficar cerca de 20% abaixo da média dos últimos cinco anos."
+              "summary": "O boletim de julho de 2026 indica que a seca reduziu as áreas semeadas com cereais em partes da Líbia e que a produção poderá ficar cerca de 20% abaixo da média dos últimos cinco anos."
             },
             "sw": {
-              "title": "FAO yaonya kuhusu uzalishaji wa nafaka chini ya wastani na ongezeko la mahitaji ya kuagiza nchini Libya",
-              "summary": "Taarifa ya FAO ya Julai 2026 inasema ukame ulipunguza maeneo yaliyopandwa nafaka katika sehemu za Libya na kwamba uzalishaji wa 2026 unaweza kuwa chini kwa takriban asilimia 20 ya wastani wa miaka mitano."
+              "title": "FAO yaonya kuhusu uzalishaji wa nafaka chini ya wastani na mahitaji makubwa ya uagizaji Libya",
+              "summary": "Taarifa ya Julai 2026 inasema ukame ulipunguza maeneo yaliyopandwa nafaka katika sehemu za Libya na uzalishaji wa 2026 unaweza kuwa chini kwa takriban asilimia 20 ya wastani wa miaka mitano."
             }
           }
         }
@@ -2655,8 +2691,8 @@
               "summary": "Des spécialistes de la FAO ont travaillé avec les autorités mauritaniennes et les partenaires au développement pour renforcer l’agriculture numérique, en s’appuyant sur une stratégie nationale d’agriculture électronique et sur les services publics numériques."
             },
             "ar": {
-              "title": "موريتانيا ومنظمة الأغذية والزراعة تدفعان التحول الرقمي للنظم الزراعية والغذائية",
-              "summary": "عمل خبراء المنظمة مع السلطات الموريتانية وشركاء التنمية على تعزيز الزراعة الرقمية، بالاستناد إلى استراتيجية وطنية للزراعة الإلكترونية وتطور البنية التحتية للخدمات العامة الرقمية."
+              "title": "موريتانيا ومنظمة الأغذية والزراعة تعززان التحول الرقمي للنظم الزراعية والغذائية",
+              "summary": "عمل خبراء المنظمة مع السلطات الموريتانية وشركاء التنمية على تعزيز الزراعة الرقمية بالاستناد إلى استراتيجية وطنية للزراعة الإلكترونية وتطور البنية التحتية للخدمات العامة الرقمية."
             },
             "pt": {
               "title": "Mauritânia e FAO avançam na transformação digital dos sistemas agroalimentares",
@@ -2664,7 +2700,7 @@
             },
             "sw": {
               "title": "Mauritania na FAO zaendeleza mabadiliko ya kidijitali ya mifumo ya kilimo na chakula",
-              "summary": "Wataalamu wa FAO walifanya kazi na mamlaka za Mauritania na washirika wa maendeleo kuimarisha kilimo cha kidijitali, kwa kutegemea mkakati wa kitaifa wa kilimo mtandaoni na miundombinu ya huduma za umma za kidijitali."
+              "summary": "Wataalamu wa FAO walishirikiana na mamlaka za Mauritania na washirika wa maendeleo kuimarisha kilimo cha kidijitali, kwa kutegemea mkakati wa kitaifa wa kilimo cha kielektroniki na miundombinu ya huduma za umma za kidijitali."
             }
           }
         }
@@ -2704,7 +2740,25 @@
           "review_after": "2026-11-09",
           "category": "machinery-technology",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Maurice lance un programme d’agriculture de précision et de production alimentaire fondée sur l’IA",
+              "summary": "L’Institut mauricien de recherche et de vulgarisation agricoles a lancé un programme aidant les agriculteurs à adopter drones, stations météo, capteurs de sol et de plantes, irrigation intelligente et conseils numériques pour améliorer la productivité et la résilience."
+            },
+            "ar": {
+              "title": "موريشيوس تطلق برنامجاً للزراعة الدقيقة وإنتاج الغذاء المدعوم بالذكاء الاصطناعي",
+              "summary": "أطلق معهد البحوث والإرشاد الزراعي في موريشيوس برنامجاً لمساعدة المزارعين على استخدام الطائرات المسيّرة ومحطات الطقس ومستشعرات التربة والنبات والري الذكي والإرشاد الرقمي لزيادة الإنتاجية والقدرة على الصمود."
+            },
+            "pt": {
+              "title": "Maurícia lança programa de agricultura de precisão e produção alimentar orientada por IA",
+              "summary": "O Instituto de Investigação e Extensão Agrícola das Maurícias lançou um programa para ajudar agricultores a adotar drones, estações meteorológicas, sensores de solo e plantas, irrigação inteligente e aconselhamento digital para melhorar a produtividade e a resiliência."
+            },
+            "sw": {
+              "title": "Mauritius yazindua mpango wa kilimo cha usahihi na uzalishaji wa chakula unaotumia AI",
+              "summary": "Taasisi ya Utafiti na Ugani wa Kilimo ya Mauritius imezindua mpango wa kuwasaidia wakulima kutumia ndege zisizo na rubani, vituo vya hali ya hewa, vihisi vya udongo na mimea, umwagiliaji mahiri na ushauri wa kidijitali kuongeza uzalishaji na ustahimilivu."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -3295,7 +3349,25 @@
           "review_after": "2026-11-09",
           "category": "fisheries",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO et les Seychelles réaffirment leur coopération dans la pêche, l’agriculture et l’économie bleue",
+              "summary": "Le Directeur général de la FAO a rencontré le ministre des Seychelles chargé de la pêche, de l’agriculture et de l’économie bleue afin d’évoquer la poursuite de la coopération et du soutien aux systèmes agroalimentaires et au secteur halieutique du pays."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة وسيشل تؤكدان التعاون في مصايد الأسماك والزراعة والاقتصاد الأزرق",
+              "summary": "التقى المدير العام للمنظمة وزير سيشل المسؤول عن مصايد الأسماك والزراعة والاقتصاد الأزرق لبحث مواصلة التعاون ودعم النظم الزراعية والغذائية وقطاع مصايد الأسماك في البلاد."
+            },
+            "pt": {
+              "title": "FAO e Seychelles reafirmam cooperação na pesca, agricultura e economia azul",
+              "summary": "O diretor-geral da FAO reuniu-se com o ministro das Seychelles responsável pelas pescas, agricultura e economia azul para discutir a continuidade da cooperação e do apoio aos sistemas agroalimentares e ao setor das pescas do país."
+            },
+            "sw": {
+              "title": "FAO na Shelisheli zathibitisha ushirikiano katika uvuvi, kilimo na uchumi wa buluu",
+              "summary": "Mkurugenzi Mkuu wa FAO alikutana na waziri wa Shelisheli anayehusika na uvuvi, kilimo na uchumi wa buluu kujadili kuendeleza ushirikiano na msaada kwa mifumo ya kilimo na chakula pamoja na sekta ya uvuvi."
+            }
+          }
         }
       ],
       "localizedNames": {
