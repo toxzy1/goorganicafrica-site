@@ -285,8 +285,10 @@
       "code": "NA",
       "name": "Namibia",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "afdb-namsip"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "NE",
