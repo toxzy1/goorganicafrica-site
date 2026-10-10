@@ -28,10 +28,8 @@
       "code": "BJ",
       "name": "Benin",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-benin"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "BW",
@@ -72,10 +70,8 @@
       "code": "CF",
       "name": "Central African Republic",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-car"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "TD",
@@ -102,10 +98,8 @@
       "code": "CI",
       "name": "Côte d’Ivoire",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-cote-divoire"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "CD",
@@ -167,19 +161,15 @@
       "code": "GM",
       "name": "Gambia",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-gambia"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "GH",
       "name": "Ghana",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-ghana"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "GN",
@@ -192,19 +182,15 @@
       "code": "GW",
       "name": "Guinea-Bissau",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-guinea-bissau"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "KE",
       "name": "Kenya",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-kenya"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "LS",
@@ -217,10 +203,8 @@
       "code": "LR",
       "name": "Liberia",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-liberia"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "LY",
@@ -240,28 +224,22 @@
       "code": "MW",
       "name": "Malawi",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-malawi"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "ML",
       "name": "Mali",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-mali"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "MR",
       "name": "Mauritania",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-mauritania"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "MU",
@@ -295,10 +273,8 @@
       "code": "NE",
       "name": "Niger",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-niger"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "NG",
@@ -311,10 +287,8 @@
       "code": "RW",
       "name": "Rwanda",
       "active": true,
-      "country_specific_sources": [
-        "farm-p3-rwanda"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "ST",
@@ -327,10 +301,8 @@
       "code": "SN",
       "name": "Senegal",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-senegal"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "SC",
@@ -343,10 +315,8 @@
       "code": "SL",
       "name": "Sierra Leone",
       "active": true,
-      "country_specific_sources": [
-        "farm-p3-sierra-leone"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "SO",
@@ -380,10 +350,8 @@
       "code": "TZ",
       "name": "Tanzania",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-tanzania"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "TG",
@@ -410,19 +378,15 @@
       "code": "ZM",
       "name": "Zambia",
       "active": true,
-      "country_specific_sources": [
-        "gafsp-zambia"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     },
     {
       "code": "ZW",
       "name": "Zimbabwe",
       "active": true,
-      "country_specific_sources": [
-        "farm-p3-zimbabwe"
-      ],
-      "coverage_status": "source_registered"
+      "country_specific_sources": [],
+      "coverage_status": "needs_country_source_review"
     }
   ]
 }
