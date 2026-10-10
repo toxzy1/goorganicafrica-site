@@ -289,6 +289,66 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official project-financing information includes commercial agriculture and agro-processing. Applicants must confirm current eligibility, terms and availability directly with the bank."
+    },
+    {
+      "id": "uganda-maiif-mechanization-services",
+      "country": "Uganda",
+      "category": "machinery",
+      "publisher": "Ministry of Agriculture, Animal Industry and Fisheries (MAAIF), Uganda",
+      "url": "https://www.agriculture.go.ug/mechanization-services/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official agricultural mechanization services and tractor access/management guidance. Confirm current district-level equipment access and service terms before listing."
+    },
+    {
+      "id": "uganda-micro-scale-irrigation",
+      "country": "Uganda",
+      "category": "finance",
+      "publisher": "Ministry of Agriculture, Animal Industry and Fisheries (MAAIF), Uganda",
+      "url": "https://createa.agriculture.go.ug/micro-scale-irrigation-program",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official micro-scale irrigation matching-grant programme information. Confirm current application window, approved equipment, farmer contribution and eligibility before presenting as open."
+    },
+    {
+      "id": "uganda-agricultural-investment-unit",
+      "country": "Uganda",
+      "category": "finance",
+      "publisher": "Ministry of Agriculture, Animal Industry and Fisheries (MAAIF), Uganda",
+      "url": "https://www.agriculture.go.ug/department-of-agricultural-investment/",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Agricultural Investment Unit page describing links to agricultural credit facilities and support for agribusiness proposals. It is a guidance/contact route, not confirmation of an open grant."
+    },
+    {
+      "id": "zambia-moa-mechanization-centres",
+      "country": "Zambia",
+      "category": "machinery",
+      "publisher": "Zambia Ministry of Agriculture",
+      "url": "https://www.agriculture.gov.zm/2026/03/government-hands-over-40-mechanization-centres/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official report on 40 mechanization service centres and equipment handed to districts under a development project. Confirm current centre locations, service availability and fees locally."
+    },
+    {
+      "id": "zambia-moa-sustainable-agriculture-finance",
+      "country": "Zambia",
+      "category": "finance",
+      "publisher": "Zambia Ministry of Agriculture",
+      "url": "https://www.agriculture.gov.zm/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry portal currently links Sustainable Agriculture Financing Facility information and application materials. Verify the specific form, application period and eligibility on the linked official document before listing."
     }
   ]
 }
