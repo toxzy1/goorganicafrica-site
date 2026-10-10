@@ -5,7 +5,7 @@ import tempfile
 import types
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 # Keep these unit tests runnable in the lightweight site-build job without
 # downloading Argos models or installing the optional translation engine.
@@ -73,6 +73,31 @@ class TranslationDraftTests(unittest.TestCase):
             self.assertEqual(saved[0]["translations"]["fr"]["summary"], "Résumé déjà validé")
             self.assertTrue(saved[0]["translations"]["ar"]["title"].startswith("ar:"))
             self.assertTrue(saved[0]["translations"]["sw"]["summary"].startswith("sw:"))
+
+    def test_install_models_preflights_all_pairs_before_installing(self):
+        packages = [
+            types.SimpleNamespace(from_code="en", to_code=target, install=MagicMock())
+            for target in ("fr", "ar", "pt", "sw")
+        ]
+        installed = [types.SimpleNamespace(from_code="en", to_code="fr")]
+        with (
+            patch.object(TRANSLATOR.argostranslate.package, "update_package_index", create=True),
+            patch.object(TRANSLATOR.argostranslate.package, "get_available_packages", return_value=packages, create=True),
+            patch.object(TRANSLATOR.argostranslate.package, "get_installed_packages", return_value=installed, create=True),
+        ):
+            TRANSLATOR.install_models()
+        self.assertEqual([p.to_code for p in packages if p.install.called], ["ar", "pt", "sw"])
+
+    def test_missing_model_fails_before_any_download(self):
+        french = types.SimpleNamespace(from_code="en", to_code="fr", install=MagicMock())
+        with (
+            patch.object(TRANSLATOR.argostranslate.package, "update_package_index", create=True),
+            patch.object(TRANSLATOR.argostranslate.package, "get_available_packages", return_value=[french], create=True),
+            patch.object(TRANSLATOR.argostranslate.package, "get_installed_packages", return_value=[], create=True),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "en->ar"):
+                TRANSLATOR.install_models()
+        french.install.assert_not_called()
 
 
 if __name__ == "__main__":
