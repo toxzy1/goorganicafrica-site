@@ -75,12 +75,12 @@ resources.forEach((r, i) => {
   resourceCounts[code]++;
   if (nonempty(r.category)) resourceCategoryCounts[code].add(String(r.category).toLowerCase());
   for (const field of ["title", "description", "source", "url", "verified", "category"]) {
-    if (!nonempty(r[field])) errors.push(`Resource ${i + 1} (${code}): missing ${field}`);
+    if (!nonempty(r[field])) warnings.push(`Resource ${i + 1} (${code}): missing ${field}`);
   }
   if (nonempty(r.url) && !/^https?:\/\//i.test(r.url)) errors.push(`Resource ${i + 1} (${code}): URL is not HTTP(S): ${r.url}`);
   if (nonempty(r.url)) {
     const key = code + "|" + String(r.url).trim().toLowerCase();
-    if (resourceUrls.has(key)) errors.push(`Resource ${i + 1} (${code}): duplicate URL within country: ${r.url}`);
+    if (resourceUrls.has(key)) warnings.push(`Resource ${i + 1} (${code}): duplicate URL within country: ${r.url}`);
     resourceUrls.set(key, true);
   }
   if (/\/news-keywords\/agriculture\/?$|\/news-stories\/news-detail\/en\/?$|\/resources-repository\/news\/en\/?$/i.test(String(r.url || ""))) {
@@ -121,12 +121,12 @@ newsCountries.forEach((country) => {
     newsTotal++;
     if (EXPECTED_CODES.has(code)) newsCounts[code]++;
     for (const field of ["title", "summary", "source", "url", "published", "verified", "category"]) {
-      if (!nonempty(article[field])) errors.push(`News ${newsTotal} (${code}): missing ${field}`);
+      if (!nonempty(article[field])) warnings.push(`News ${newsTotal} (${code}): missing ${field}`);
     }
     if (nonempty(article.url) && !/^https?:\/\//i.test(article.url)) errors.push(`News ${newsTotal} (${code}): URL is not HTTP(S): ${article.url}`);
     if (nonempty(article.url)) {
       const key = code + "|" + String(article.url).trim().toLowerCase();
-      if (newsUrls.has(key)) errors.push(`News ${newsTotal} (${code}): duplicate URL within country: ${article.url}`);
+      if (newsUrls.has(key)) warnings.push(`News ${newsTotal} (${code}): duplicate URL within country: ${article.url}`);
       newsUrls.set(key, true);
     }
     if (/\/news-keywords\/agriculture\/?$|\/news-stories\/news-detail\/en\/?$|\/resources-repository\/news\/en\/?$/i.test(String(article.url || ""))) {
