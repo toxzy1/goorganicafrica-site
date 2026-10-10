@@ -14,8 +14,10 @@
       "code": "DZ",
       "name": "Algeria",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "algeria-madr-agricultural-loans"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "AO",
@@ -31,22 +33,30 @@
       "code": "BJ",
       "name": "Benin",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "benin-government-agricultural-mechanization-programme"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "BW",
       "name": "Botswana",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "botswana-government-farm-business-plan-appraisal",
+        "botswana-thuo-letlotlo-livestock-support"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "BF",
       "name": "Burkina Faso",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "burkina-badf-agricultural-credit",
+        "burkina-maerah-projects-programmes"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "BI",
