@@ -685,6 +685,66 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official ministry report dated 17 March 2026 describes tractor and input handovers and support for young agripreneurs in Tshopo. This is a specific project report, not proof of an open national application; confirm local selection and current beneficiary routes."
+    },
+    {
+      "id": "cabo-verde-2026-protected-cultivation-subsidy",
+      "country": "Cabo Verde",
+      "category": "grants",
+      "publisher": "Official Gazette of Cabo Verde (Boletim Oficial)",
+      "url": "https://boe.incv.cv/Bulletins/View?id=113560",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Resolution 106/2026 establishes a national protected-cultivation greenhouse incentive, with a 75% subsidy and programme validity through December 2026. Verify current implementing instructions, farmer registration, eligibility and whether remaining funds are available before presenting it as open."
+    },
+    {
+      "id": "cabo-verde-2026-drip-irrigation-subsidy",
+      "country": "Cabo Verde",
+      "category": "machinery",
+      "publisher": "Official Gazette of Cabo Verde (Boletim Oficial)",
+      "url": "https://boe.incv.cv/Bulletins/View?id=113559",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Resolution 107/2026 describes a national subsidy covering 75% of drip-irrigation equipment and installation costs, with a 60 million escudo programme. Verify implementing arrangements, remaining budget, participating suppliers and application steps."
+    },
+    {
+      "id": "comoros-fao-agricultural-census-2026",
+      "country": "Comoros",
+      "category": "research-innovation",
+      "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "https://www.fao.org/africa/news-stories/news-detail/national-presentation-of-the-results-of-the-second-general-agricultural-census-%28rga2%29/en",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "FAO report dated 2 April 2026 covers the presentation of Comoros' second general agricultural census, supported technically by FAO and financially by the World Bank. This is an authoritative data/research resource, not a grant or open funding call."
+    },
+    {
+      "id": "gabon-government-agricultural-farm-finance-2026",
+      "country": "Gabon",
+      "category": "finance",
+      "publisher": "Government of Gabon, Ministry of Agriculture",
+      "url": "https://gouvernement.ga/2026/01/27/de-la-visite-de-terrain-au-financement-des-solutions-concretes-pour-les-exploitants-avant-larrivee-a-makokou/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Government report dated 27 January 2026 describes agricultural farm financing through BCEG, including a reported agricultural fund and preferential loan terms for previously identified farms. Do not treat it as a public open call; verify eligibility, lender terms, current availability and application channel."
+    },
+    {
+      "id": "gabon-agriculture-import-duty-exemptions",
+      "country": "Gabon",
+      "category": "machinery",
+      "publisher": "Gabon Directorate General of Customs and Indirect Duties",
+      "url": "https://douanes.ga/professionnels/agriculture",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official customs guidance describes incentive regimes for agricultural machinery, equipment, fertilizers and some livestock/fish-feed imports, subject to technical approval and documentation. Verify current law and procedures with customs and the agriculture ministry before advising farmers."
     }
   ]
 }
