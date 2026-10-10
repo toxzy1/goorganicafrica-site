@@ -2,9 +2,25 @@ import importlib.util
 import json
 import sys
 import tempfile
+import types
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+
+# Keep these unit tests runnable in the lightweight site-build job without
+# downloading Argos models or installing the optional translation engine.
+try:
+    import argostranslate  # noqa: F401
+except ModuleNotFoundError:
+    argos_stub = types.ModuleType("argostranslate")
+    package_stub = types.ModuleType("argostranslate.package")
+    translate_stub = types.ModuleType("argostranslate.translate")
+    translate_stub.translate = lambda text, source, target: text
+    argos_stub.package = package_stub
+    argos_stub.translate = translate_stub
+    sys.modules["argostranslate"] = argos_stub
+    sys.modules["argostranslate.package"] = package_stub
+    sys.modules["argostranslate.translate"] = translate_stub
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "translate-agricultural-news.py"
