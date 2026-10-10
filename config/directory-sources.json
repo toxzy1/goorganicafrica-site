@@ -253,6 +253,42 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official FADA financing application procedure; applicants must check current product terms and submit required documents through official channels."
+    },
+    {
+      "id": "ethiopia-moa-mechanization-strategy",
+      "country": "Ethiopia",
+      "category": "machinery",
+      "publisher": "FDRE Ministry of Agriculture",
+      "url": "https://www.moa.gov.et/wp-content/uploads/2026/02/National-Agricultural-Mechanization-strategy-new-2026-MoA-Final_compressed.pdf",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official National Agricultural Mechanization Strategy 2026–2035. Policy and planning resource, not a direct equipment offer; review for current implementation opportunities before listing."
+    },
+    {
+      "id": "ethiopia-moa-machinery-support",
+      "country": "Ethiopia",
+      "category": "machinery",
+      "publisher": "FDRE Ministry of Agriculture",
+      "url": "https://www.moa.gov.et/ministry-of-agriculture-hands-over-farm-machinery-to-boost-mechanization/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official 2026 report on farm machinery distributed through an agricultural value-chain project. Context for identifying current project contacts; not proof of an open equipment application."
+    },
+    {
+      "id": "ethiopia-development-bank-agriculture-finance",
+      "country": "Ethiopia",
+      "category": "finance",
+      "publisher": "Development Bank of Ethiopia",
+      "url": "https://dbe.com.et/?stm_works=project-financing",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official project-financing information includes commercial agriculture and agro-processing. Applicants must confirm current eligibility, terms and availability directly with the bank."
     }
   ]
 }
