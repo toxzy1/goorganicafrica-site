@@ -29,12 +29,26 @@ def install_models() -> None:
     argostranslate.package.update_package_index()
     available = argostranslate.package.get_available_packages()
     installed = {(p.from_code, p.to_code) for p in argostranslate.package.get_installed_packages()}
+
+    # Preflight every required language pair before downloading anything. This
+    # avoids a half-installed run if one model is missing from the free index.
+    to_install = []
+    missing = []
     for target in LANGUAGES:
         if ("en", target) in installed:
             continue
         package = next((p for p in available if p.from_code == "en" and p.to_code == target), None)
         if package is None:
-            raise RuntimeError(f"No free Argos Translate model found for en->{target}")
+            missing.append(target)
+        else:
+            to_install.append((target, package))
+    if missing:
+        raise RuntimeError(
+            "No free Argos Translate model found for: "
+            + ", ".join(f"en->{target}" for target in missing)
+        )
+
+    for target, package in to_install:
         print(f"Installing offline model en->{target}")
         package.install()
 
