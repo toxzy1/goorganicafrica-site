@@ -493,6 +493,78 @@
       "status": "active",
       "requires_review": true,
       "notes": "Lender's own page describes a microfinance agriculture loan for smallholder farmers. This is a commercial loan, not a government grant; confirm current loan limits, security requirements, rates and availability."
+    },
+    {
+      "id": "algeria-madr-agricultural-loans",
+      "country": "Algeria",
+      "category": "finance",
+      "publisher": "Algerian Ministry of Agriculture and Rural Development",
+      "url": "https://madr.gov.dz/%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD%D8%A9/%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D9%82/%D8%A7%D9%84%D9%82%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD%D9%8A%D8%A9/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry information about RFIG seasonal subsidised credit and ETTAHADI investment credit. Confirm current terms, participating bank procedures and eligibility before presenting as currently available."
+    },
+    {
+      "id": "benin-government-agricultural-mechanization-programme",
+      "country": "Benin",
+      "category": "machinery",
+      "publisher": "Government of Benin, Government Action Programme portal",
+      "url": "https://beninrevele.olasoft.net/secteur/agriculture/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Government programme overview lists a national agricultural mechanisation development programme and related agriculture support initiatives. Check current implementation and application channels; programme listing alone is not an open call."
+    },
+    {
+      "id": "burkina-badf-agricultural-credit",
+      "country": "Burkina Faso",
+      "category": "finance",
+      "publisher": "Banque Agricole du Faso (BADF)",
+      "url": "https://www.badf.bf/credits-agricoles/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Agricultural bank information on production credit, farm working capital, equipment and agricultural development financing. Verify current product terms, borrower criteria and availability with the bank."
+    },
+    {
+      "id": "burkina-maerah-projects-programmes",
+      "country": "Burkina Faso",
+      "category": "machinery",
+      "publisher": "Ministry of Agriculture, Water, Animal and Fisheries Resources of Burkina Faso",
+      "url": "https://www.agriculture.bf/projets-et-programmes/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry projects and programmes index includes agricultural mechanisation modernisation and other rural development projects. Use as programme context; verify active status and current beneficiary calls."
+    },
+    {
+      "id": "botswana-government-farm-business-plan-appraisal",
+      "country": "Botswana",
+      "category": "finance",
+      "publisher": "Government of Botswana, Ministry of Lands and Agriculture",
+      "url": "https://www.gov.bw/advisory-role/business-plan-appraisal-farming",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official service assesses farm business plans for submission to financial institutions. It is advisory support, not a grant or loan by itself; eligibility and service requirements are stated on the official page."
+    },
+    {
+      "id": "botswana-thuo-letlotlo-livestock-support",
+      "country": "Botswana",
+      "category": "grants",
+      "publisher": "Thuo Letlotlo, Botswana Ministry of Agriculture programme",
+      "url": "https://thuoletlotlo.gov.bw/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official programme describes livestock support packages and grants. Confirm whether applications are open, current package rules, citizen-only eligibility and approved supplier requirements before presenting as an active opportunity."
     }
   ]
 }
