@@ -613,6 +613,30 @@
       "status": "active",
       "requires_review": true,
       "notes": "ECOWAS update dated 30 July 2026 describes PRIMA regional agricultural market integration activities in Togo and Benin. Use as regional programme context; verify any farmer/SME application route separately."
+    },
+    {
+      "id": "burundi-mineagrie-agricultural-mechanisation",
+      "country": "Burundi",
+      "category": "machinery",
+      "publisher": "Burundi Ministry of Environment, Agriculture and Livestock (MINEAGRIE)",
+      "url": "https://mineagrie.gov.bi/index.php/news-list-view/actualites?start=3",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official ministry news page includes reporting on a pilot distribution of power tillers to selected cooperatives. Treat this as historical programme context only; verify whether any current equipment support, training or application channel is open before listing it as an opportunity."
+    },
+    {
+      "id": "cote-ivoire-2026-agricultural-equipment-support",
+      "country": "Côte d’Ivoire",
+      "category": "machinery",
+      "publisher": "Government of Côte d’Ivoire, official government news portal",
+      "url": "https://www.gouv.ci/actualite/campagne-agricole-2026-le-ministre-bruno-nabagne-kone-remet-du-materiel-agricoles-et-des-intrants-aux-beneficiaires-des-projets-2pai-nord-et-padsv-8485",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official report dated 19 July 2026 describes equipment and input distribution through 2PAI-NORD and PADSV to producer organisations in four northern regions. This is evidence of project support, not an open nationwide application; verify current beneficiary selection and project channels."
     }
   ]
 }
