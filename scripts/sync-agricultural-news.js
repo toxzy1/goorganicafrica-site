@@ -186,55 +186,78 @@ async function main() {
   );
   let added = 0;
 
-  for (const feed of feeds) {
-    const response = await fetch(feed.url, { headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
-    if (!response.ok) throw new Error(`${feed.name}: HTTP ${response.status}`);
-    const xml = await response.text();
-    const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
-
-    for (const item of items) {
-      const title = field(item, "title");
-      const summary = field(item, "description");
-      let url = normalizeUrl(field(item, "link"));
-      const sourceTag = item.match(/<source(?:\\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
-      const sourceUrl = sourceTag ? normalizeUrl(sourceTag[1]) : "";
-      if (url.includes("news.google.com")) {
-        try {
-          const resolved = await fetch(url, { redirect: "follow", headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
-          if (resolved.url) url = resolved.url;
-        } catch (_) {}
-      }
-      const published = isoDate(field(item, "pubDate") || field(item, "dc:date"));
-      if (!title || !url || !published) continue;
-      let parsedUrl;
-      try { parsedUrl = new URL(url); } catch (_) { continue; }
-      const sourceHost = sourceUrl ? (() => { try { return new URL(sourceUrl).hostname; } catch (_) { return ""; } })() : "";
-      if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost) &&
-          sourceHost !== feed.allowedHost && !sourceHost.endsWith("." + feed.allowedHost)) continue;
-      const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
-      if (ageDays > 30) continue;
-
-      const country = feed.country || findCountry(title, summary, data.countries);
-      if (!country || existing.has(url) || existing.has(title)) continue;
-
-      country.articles = country.articles || [];
-      country.articles.unshift({
-        category: categoryFor(title, summary),
-        title,
-        summary: summary.slice(0, 420),
-        url,
-        source: feed.source,
-        published,
-        verified: today,
-        status: "review",
-        lifecycle: "needs_review",
-        source_tier: 1,
-        country_code: country.code
+  // Fetch in bounded batches instead of serially. There are hundreds of
+  // country/source combinations; a single slow RSS endpoint must not stall
+  // the entire scheduled review-queue run.
+  async function processFeed(feed) {
+    try {
+      const response = await fetch(feed.url, {
+        headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" },
+        signal: AbortSignal.timeout(15000)
       });
-      existing.add(url);
-      existing.add(title);
-      added++;
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      const xml = await response.text();
+      const items = xml.match(/<item(?:\\s[^>]*)?>[\\s\\S]*?<\\/item>/gi) || [];
+
+      for (const item of items) {
+        const title = field(item, "title");
+        const summary = field(item, "description");
+        let url = normalizeUrl(field(item, "link"));
+        const sourceTag = item.match(/<source(?:\\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
+        const sourceUrl = sourceTag ? normalizeUrl(sourceTag[1]) : "";
+        if (url.includes("news.google.com")) {
+          try {
+            const resolved = await fetch(url, {
+              redirect: "follow",
+              headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" },
+              signal: AbortSignal.timeout(10000)
+            });
+            if (resolved.ok && resolved.url && !resolved.url.includes("news.google.com")) {
+              url = resolved.url;
+            } else {
+              continue;
+            }
+          } catch (_) { continue; }
+        }
+        const published = isoDate(field(item, "pubDate") || field(item, "dc:date"));
+        if (!title || !url || !published) continue;
+        let parsedUrl;
+        try { parsedUrl = new URL(url); } catch (_) { continue; }
+        const sourceHost = sourceUrl ? (() => { try { return new URL(sourceUrl).hostname; } catch (_) { return ""; } })() : "";
+        if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost) &&
+            sourceHost !== feed.allowedHost && !sourceHost.endsWith("." + feed.allowedHost)) continue;
+        const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
+        if (ageDays > 30) continue;
+
+        const country = feed.country || findCountry(title, summary, data.countries);
+        if (!country || existing.has(url) || existing.has(title)) continue;
+
+        country.articles = country.articles || [];
+        country.articles.unshift({
+          category: categoryFor(title, summary),
+          title,
+          summary: summary.slice(0, 420),
+          url,
+          source: feed.source,
+          published,
+          verified: today,
+          status: "review",
+          lifecycle: "needs_review",
+          source_tier: 1,
+          country_code: country.code
+        });
+        existing.add(url);
+        existing.add(title);
+        added++;
+      }
+    } catch (error) {
+      console.warn("Skipping unavailable news feed " + feed.name + ": " + error.message);
     }
+  }
+
+  const FEED_BATCH_SIZE = 8;
+  for (let i = 0; i < feeds.length; i += FEED_BATCH_SIZE) {
+    await Promise.all(feeds.slice(i, i + FEED_BATCH_SIZE).map(processFeed));
   }
 
   for (const country of data.countries) {
