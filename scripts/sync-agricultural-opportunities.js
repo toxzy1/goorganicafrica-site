@@ -79,7 +79,7 @@ async function main() {
       });
       if (!response.ok) throw new Error("HTTP " + response.status);
       const xml = await response.text();
-      const items = xml.match(/<item(?:\\s[^>]*)?>[\\s\\S]*?<\\/item>/gi) || [];
+      const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
       const candidates = [];
 
       for (const item of items) {
