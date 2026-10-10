@@ -217,6 +217,42 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official investment-financing page includes agricultural equipment and tractor categories; confirm current terms, availability and eligibility before publication."
+    },
+    {
+      "id": "rwanda-minagri-agri-concessional-lending",
+      "country": "Rwanda",
+      "category": "finance",
+      "publisher": "Rwanda Ministry of Agriculture and Animal Resources (MINAGRI)",
+      "url": "https://www.minagri.gov.rw/updates/news-details/rwanda-agricultural-show-2026-stakeholders-urged-to-leverage-innovation-and-strategic-partnerships-for-agri-food-systems-transformation",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official 2026 report describing concessional agricultural lending through participating financial institutions. Verify current rates, participating lenders and eligibility before listing as an available offer."
+    },
+    {
+      "id": "rwanda-rab-farm-power",
+      "country": "Rwanda",
+      "category": "machinery",
+      "publisher": "Rwanda Agriculture and Animal Resources Development Board (RAB)",
+      "url": "https://www.rab.gov.rw/program-details?cHash=e6b787c534214a86775002e810904c52&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=29263",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Farm Power Technology Programme page on mechanization services, equipment and links to service providers; confirm current programme activities before publication."
+    },
+    {
+      "id": "angola-fada-financing-application",
+      "country": "Angola",
+      "category": "finance",
+      "publisher": "Fundo de Apoio ao Desenvolvimento Agrário (FADA)",
+      "url": "https://www.fada.gov.ao/como-solicitar-o-financiamento/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official FADA financing application procedure; applicants must check current product terms and submit required documents through official channels."
     }
   ]
 }
