@@ -96,8 +96,10 @@
       "code": "TD",
       "name": "Chad",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "chad-world-bank-agricultural-productivity-support"
+      ],
+      "coverage_status": "source_registered_pending_review"
     },
     {
       "code": "KM",
@@ -126,15 +128,20 @@
       "code": "CD",
       "name": "DR Congo",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "dr-congo-minasa-agricultural-projects",
+        "dr-congo-minasa-2026-mechanisation-update"
+      ],
+      "coverage_status": "source_registered_pending_review"
     },
     {
       "code": "DJ",
       "name": "Djibouti",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "djibouti-maepe-rh-agricultural-projects"
+      ],
+      "coverage_status": "source_registered_pending_review"
     },
     {
       "code": "EG",
