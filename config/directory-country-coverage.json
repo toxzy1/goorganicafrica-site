@@ -122,8 +122,10 @@
       "code": "EG",
       "name": "Egypt",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "egypt-agricultural-mechanization-finance"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "GQ",
@@ -267,8 +269,10 @@
       "code": "MA",
       "name": "Morocco",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "morocco-ada-agricultural-development-fund"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "MZ",
@@ -355,8 +359,10 @@
       "code": "ZA",
       "name": "South Africa",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "south-africa-nda-producer-support"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "SS",
@@ -423,8 +429,10 @@
       "code": "ZW",
       "name": "Zimbabwe",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "zimbabwe-cbz-microfinance-agriculture-loan"
+      ],
+      "coverage_status": "source_registered"
     }
   ]
 }
