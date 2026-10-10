@@ -21,8 +21,10 @@
       "code": "AO",
       "name": "Angola",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "angola-fada-equipment-finance"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "BJ",
@@ -286,7 +288,10 @@
       "active": true,
       "country_specific_sources": [
         "nigeria-nadf-finance",
-        "nigeria-cbn-acgsf"
+        "nigeria-cbn-acgsf",
+        "nigeria-eagriculture-machinery",
+        "nigeria-eagriculture-credit",
+        "nigeria-cbn-cacs"
       ],
       "coverage_status": "source_registered"
     },
