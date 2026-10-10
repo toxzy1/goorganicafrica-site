@@ -150,8 +150,12 @@
       "code": "ET",
       "name": "Ethiopia",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "ethiopia-moa-mechanization-strategy",
+        "ethiopia-moa-machinery-support",
+        "ethiopia-development-bank-agriculture-finance"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "GA",
