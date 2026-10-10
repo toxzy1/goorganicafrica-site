@@ -1328,6 +1328,18 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "title": "IFAD project page: Botswana Livestock Commercialization Project",
+          "summary": "IFAD's official project page describes the Botswana Livestock Commercialization Project, including its financing structure and design report, with aims to strengthen livestock commercialization and market participation.",
+          "url": "https://www.ifad.org/en/w/projects/2000005356",
+          "source": "International Fund for Agricultural Development (IFAD)",
+          "published": "2025-12-09",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "livestock",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -1402,6 +1414,18 @@
           "summary": "The African Development Bank published an October 2026 procurement notice for studies and construction supervision for a maize-processing unit and livestock-feed unit under Burundi's PADCAE-B agricultural and livestock value-chain project.",
           "url": "https://www.afdb.org/en/projects-and-operations/p-bi-a00-008",
           "published": "2026-10-05"
+        },
+        {
+          "title": "AfDB publishes Burundi emergency agricultural production project completion report",
+          "summary": "The African Development Bank's completion report reviews Burundi's emergency agricultural production project, which aimed to strengthen food security and support agricultural transformation and value-chain development.",
+          "url": "https://www.afdb.org/en/documents/burundi-projet-de-production-agricole-durgence-au-burundi-rapport-dachevement-de-projet",
+          "source": "African Development Bank",
+          "published": "2025-10-30",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "food-security",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -1512,7 +1536,20 @@
       "name": "Comoros",
       "slug": "comoros",
       "flag": "🇰🇲",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB publishes completion report for Comoros emergency agricultural production support project",
+          "summary": "The report reviews the Comoros emergency agricultural production project, which aimed to boost local food production, strengthen food-system resilience, intensify maize, potato and sweet-potato production, and support vulnerable households.",
+          "url": "https://www.afdb.org/en/documents/comoros-emergency-agricultural-production-support-project-aefpf-comores-project-completion-report",
+          "source": "African Development Bank",
+          "published": "2026-06-11",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "food-security",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Comores",
         "ar": "جزر القمر",
@@ -1695,7 +1732,20 @@
       "name": "Egypt",
       "slug": "egypt",
       "flag": "🇪🇬",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB publishes Egypt National Drainage Programme implementation progress update",
+          "summary": "The African Development Bank's project page lists an April 2026 implementation progress report for Egypt's National Drainage Programme, which aims to improve drainage efficiency and support water-resource management for agriculture.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-eg-aac-019",
+          "source": "African Development Bank",
+          "published": "2026-04-09",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Égypte",
         "ar": "مصر",
@@ -1719,6 +1769,18 @@
           "verified": "2026-10-10",
           "status": "official",
           "review_after": "2026-11-09"
+        },
+        {
+          "title": "AfDB publishes appraisal report for Equatorial Guinea integrated agricultural value-chain project",
+          "summary": "The appraisal report covers technical, environmental and climate feasibility studies for a planned integrated agricultural value-chain investment project intended to improve productivity, climate resilience and rural livelihoods.",
+          "url": "https://www.afdb.org/en/documents/guinee-equatoriale-assistance-technique-pour-la-realisation-des-etudes-de-faisabilite-technique-et-environnementales-et-climatique-projet-de-developpement-integre-des-chaines-de-valeurs-agricoles-rapport-devaluation-de-projet",
+          "source": "African Development Bank",
+          "published": "2026-02-26",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "value-chains",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -1797,7 +1859,20 @@
       "name": "Gabon",
       "slug": "gabon",
       "flag": "🇬🇦",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB lists 2026 implementation and procurement notices for Gabon's agricultural PPP programme",
+          "summary": "The African Development Bank's project page lists 2026 notices and procurement activity for Gabon's PAPG1 agricultural and agro-industrial public-private partnership programme.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-ga-a00-003",
+          "source": "African Development Bank",
+          "published": "2026-05-19",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agribusiness",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Gabon",
         "ar": "الغابون",
@@ -1860,6 +1935,18 @@
           "published": "2026-09-30",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "title": "World Bank project document outlines Guinea-Bissau Sustainable Agriculture and Rural Development Project",
+          "summary": "The World Bank's project appraisal document outlines a proposed five-year programme to increase agricultural productivity, market access and climate resilience, with support for family farms and selected agrifood value chains.",
+          "url": "https://documents1.worldbank.org/curated/en/099042225052529510/pdf/P509731-25303c17-629e-4884-aff3-7148ab728254.pdf",
+          "source": "World Bank",
+          "published": "2025-04-22",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "rural-development",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -2319,7 +2406,20 @@
       "name": "Niger",
       "slug": "niger",
       "flag": "🇳🇪",
-      "articles": [],
+      "articles": [
+        {
+          "title": "World Bank publishes implementation aide-memoire for Niger irrigated-crops and livestock intensification project",
+          "summary": "The World Bank's October 2025 aide-memoire documents an implementation support mission for Niger's PACIPA project, covering irrigated-crop development and intensification of livestock production.",
+          "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099102725084034257",
+          "source": "World Bank",
+          "published": "2025-10-10",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Niger",
         "ar": "النيجر",
@@ -2506,7 +2606,20 @@
       "name": "Seychelles",
       "slug": "seychelles",
       "flag": "🇸🇨",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB publishes Seychelles green recovery and climate-resilience programme appraisal report",
+          "summary": "The African Development Bank's October 2026 appraisal report describes a programme supporting green recovery and climate resilience, including the agriculture and agro-industry sector among its areas of relevance.",
+          "url": "https://www.afdb.org/en/documents/seychelles-economic-resilience-and-green-recovery-support-programme-iii-ergrsp-iii-streamlined-appraisal-report",
+          "source": "African Development Bank",
+          "published": "2026-10-03",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "climate-resilience",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Seychelles",
         "ar": "سيشل",
@@ -2775,7 +2888,20 @@
       "name": "Togo",
       "slug": "togo",
       "flag": "🇹🇬",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB updates Togo agro-food transformation project implementation record",
+          "summary": "The African Development Bank's project page lists 2026 implementation progress and procurement notices for PTA-Togo, an agro-food transformation programme supporting value chains, investment, storage and processing infrastructure.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-tg-aa0-009",
+          "source": "African Development Bank",
+          "published": "2026-08-26",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agribusiness",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Togo",
         "ar": "توغو",
@@ -2788,7 +2914,20 @@
       "name": "Tunisia",
       "slug": "tunisia",
       "flag": "🇹🇳",
-      "articles": [],
+      "articles": [
+        {
+          "title": "World Bank approves Tunisia irrigation water security and agricultural resilience project",
+          "summary": "The World Bank approved a US$124 million project to modernize irrigation services, rehabilitate key infrastructure, strengthen irrigation operators and help farmers adopt climate-smart technologies and access higher-value markets.",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/04/01/tunisia-major-push-to-strengthen-water-security-and-resilience",
+          "source": "World Bank",
+          "published": "2026-04-01",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Tunisie",
         "ar": "تونس",
