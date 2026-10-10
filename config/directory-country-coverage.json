@@ -176,7 +176,8 @@
       "name": "Ghana",
       "active": true,
       "country_specific_sources": [
-        "ghana-mofa-gasip"
+        "ghana-mofa-gasip",
+        "ghana-piaa-agriculture-programmes"
       ],
       "coverage_status": "source_registered"
     },
@@ -235,8 +236,10 @@
       "code": "MW",
       "name": "Malawi",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "malawi-agriinvestment-opportunities"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "ML",
@@ -404,7 +407,8 @@
       "active": true,
       "country_specific_sources": [
         "zambia-moa-mechanization-centres",
-        "zambia-moa-sustainable-agriculture-finance"
+        "zambia-moa-sustainable-agriculture-finance",
+        "zambia-moa-saff-financing"
       ],
       "coverage_status": "source_registered"
     },
