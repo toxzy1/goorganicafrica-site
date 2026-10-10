@@ -1363,7 +1363,25 @@
           "review_after": "2026-11-09",
           "category": "food-safety",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Botswana améliore les normes agricoles pour faciliter l’accès aux marchés et renforcer la sécurité sanitaire des aliments",
+              "summary": "La FAO et le ministère botswanais de l’Entrepreneuriat ont développé les bonnes pratiques agricoles et les systèmes de gestion de la qualité dans plusieurs filières, formé des agriculteurs et des agents de vulgarisation et soutenu la certification de produits transformés."
+            },
+            "ar": {
+              "title": "بوتسوانا تطور المعايير الزراعية لتحسين الوصول إلى الأسواق وسلامة الأغذية",
+              "summary": "عملت منظمة الأغذية والزراعة ووزارة ريادة الأعمال في بوتسوانا على توسيع الممارسات الزراعية الجيدة وأنظمة إدارة الجودة في عدة سلاسل قيمة، وتدريب المزارعين وموظفي الإرشاد ودعم اعتماد المنتجات المصنعة."
+            },
+            "pt": {
+              "title": "Botsuana reforça normas agrícolas para melhorar o acesso aos mercados e a segurança alimentar",
+              "summary": "A FAO e o Ministério do Empreendedorismo do Botsuana ampliaram as boas práticas agrícolas e os sistemas de gestão da qualidade em várias cadeias de valor, formaram agricultores e extensionistas e apoiaram a certificação de produtos transformados."
+            },
+            "sw": {
+              "title": "Botswana yaimarisha viwango vya kilimo ili kuboresha upatikanaji wa masoko na usalama wa chakula",
+              "summary": "FAO na Wizara ya Ujasiriamali ya Botswana zilipanua mbinu bora za kilimo na mifumo ya usimamizi wa ubora katika minyororo kadhaa ya thamani, zikawafundisha wakulima na maafisa ugani na kusaidia uthibitishaji wa bidhaa zilizochakatwa."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1461,7 +1479,25 @@
           "review_after": "2026-11-09",
           "category": "agroecology",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Burundi lance un projet national pour évaluer et renforcer les pratiques agroécologiques",
+              "summary": "La FAO, l’Union européenne et le ministère burundais chargé de l’agriculture ont lancé le projet national TAPE+ pour recueillir des données sur les systèmes agricoles et orienter les politiques vers une agriculture plus résiliente et durable."
+            },
+            "ar": {
+              "title": "بوروندي تطلق مشروعاً وطنياً لتقييم الممارسات الزراعية الإيكولوجية وتعزيزها",
+              "summary": "أطلقت منظمة الأغذية والزراعة والاتحاد الأوروبي والوزارة البوروندية المسؤولة عن الزراعة مشروع TAPE+ الوطني لجمع بيانات عن النظم الزراعية وتوجيه السياسات نحو زراعة أكثر قدرة على الصمود واستدامة."
+            },
+            "pt": {
+              "title": "Burundi lança projeto nacional para avaliar e reforçar práticas agroecológicas",
+              "summary": "A FAO, a União Europeia e o ministério burundês responsável pela agricultura lançaram o projeto nacional TAPE+ para recolher dados sobre sistemas agrícolas e orientar políticas para uma agricultura mais resiliente e sustentável."
+            },
+            "sw": {
+              "title": "Burundi yazindua mradi wa kitaifa kutathmini na kuimarisha mbinu za agroikolojia",
+              "summary": "FAO, Umoja wa Ulaya na wizara ya Burundi inayohusika na kilimo zilizindua mradi wa kitaifa wa TAPE+ kukusanya data kuhusu mifumo ya kilimo na kuelekeza sera katika kilimo endelevu kinachostahimili changamoto."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1608,7 +1644,25 @@
           "review_after": "2026-11-09",
           "category": "seeds",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Les Comores renforcent leurs systèmes semenciers pour améliorer la sécurité alimentaire",
+              "summary": "La FAO et la Banque africaine de développement ont soutenu l’initiative SEPAREF pour développer le système semencier national, améliorer la production de semences locales adaptées, renforcer l’alerte précoce et former agriculteurs et techniciens."
+            },
+            "ar": {
+              "title": "جزر القمر تبني أنظمة بذور قادرة على الصمود لتعزيز الأمن الغذائي",
+              "summary": "دعمت منظمة الأغذية والزراعة وبنك التنمية الأفريقي مبادرة SEPAREF لتطوير نظام البذور الوطني وتحسين إنتاج البذور المحلية الملائمة وتعزيز الإنذار المبكر وتدريب المزارعين والفنيين."
+            },
+            "pt": {
+              "title": "Comores desenvolve sistemas de sementes resilientes para reforçar a segurança alimentar",
+              "summary": "A FAO e o Banco Africano de Desenvolvimento apoiaram a iniciativa SEPAREF para desenvolver o sistema nacional de sementes, melhorar a produção de sementes locais adaptadas, reforçar o alerta precoce e formar agricultores e técnicos."
+            },
+            "sw": {
+              "title": "Comoro hujenga mifumo imara ya mbegu ili kuimarisha usalama wa chakula",
+              "summary": "FAO na Benki ya Maendeleo ya Afrika ziliunga mkono mpango wa SEPAREF wa kuendeleza mfumo wa kitaifa wa mbegu, kuboresha uzalishaji wa mbegu za ndani zinazofaa, kuimarisha tahadhari za mapema na kuwafundisha wakulima na wataalamu."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1828,7 +1882,25 @@
           "review_after": "2026-11-09",
           "category": "post-harvest",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO soutient l’amélioration des pratiques de récolte et d’après-récolte dans la filière des dattes en Égypte",
+              "summary": "La FAO et le ministère égyptien de l’Agriculture ont formé 150 ingénieurs agricoles et spécialistes du contrôle qualité aux bonnes pratiques de récolte, de tri, d’emballage, de stockage et de sécurité sanitaire des dattes dans dix zones de production."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تدعم تحسين ممارسات حصاد التمور وما بعد الحصاد في مصر",
+              "summary": "درّبت منظمة الأغذية والزراعة ووزارة الزراعة المصرية 150 مهندساً زراعياً ومتخصصاً في مراقبة الجودة على ممارسات حصاد التمور وفرزها وتعبئتها وتخزينها وسلامتها في عشر مناطق إنتاج."
+            },
+            "pt": {
+              "title": "FAO apoia melhores práticas de colheita e pós-colheita na cadeia de valor das tâmaras no Egito",
+              "summary": "A FAO e o Ministério da Agricultura do Egito formaram 150 engenheiros agrónomos e especialistas em controlo de qualidade em boas práticas de colheita, seleção, embalagem, armazenamento e segurança alimentar das tâmaras em dez zonas produtoras."
+            },
+            "sw": {
+              "title": "FAO yaunga mkono mbinu bora za uvunaji na baada ya mavuno katika mnyororo wa thamani wa tende nchini Misri",
+              "summary": "FAO na Wizara ya Kilimo ya Misri ziliwafundisha wahandisi wa kilimo na wataalamu 150 wa udhibiti wa ubora kuhusu uvunaji, upangaji, ufungashaji, uhifadhi na usalama wa tende katika maeneo kumi ya uzalishaji."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1953,7 +2025,25 @@
           "review_after": "2026-11-09",
           "category": "horticulture",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "L’Eswatini développe l’horticulture fondée sur la nature pour renforcer la résilience climatique et les moyens de subsistance ruraux",
+              "summary": "La FAO, le gouvernement de l’Eswatini et NAMBOARD ont soutenu les petits exploitants avec des tunnels de culture protégée, l’irrigation goutte à goutte, des formations horticoles adaptées au climat et de meilleurs liens avec les marchés."
+            },
+            "ar": {
+              "title": "إسواتيني توسع البستنة القائمة على الطبيعة لتعزيز القدرة على التكيف مع المناخ وسبل العيش الريفية",
+              "summary": "دعمت منظمة الأغذية والزراعة وحكومة إسواتيني وهيئة NAMBOARD صغار المزارعين بأنفاق زراعية محمية والري بالتنقيط والتدريب على البستنة الذكية مناخياً وتحسين الروابط بالأسواق."
+            },
+            "pt": {
+              "title": "Essuatíni amplia a horticultura baseada na natureza para reforçar a resiliência climática e os meios de vida rurais",
+              "summary": "A FAO, o governo de Essuatíni e a NAMBOARD apoiaram pequenos agricultores com túneis de cultivo protegido, irrigação gota a gota, formação em horticultura adaptada ao clima e melhores ligações aos mercados."
+            },
+            "sw": {
+              "title": "Eswatini yaongeza kilimo cha bustani kinachotegemea mazingira ili kuimarisha ustahimilivu wa tabianchi na maisha ya vijijini",
+              "summary": "FAO, serikali ya Eswatini na NAMBOARD ziliwasaidia wakulima wadogo kwa vichuguu vya kilimo kilicholindwa, umwagiliaji wa matone, mafunzo ya bustani yanayozingatia tabianchi na uhusiano bora na masoko."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2080,7 +2170,25 @@
           "review_after": "2026-11-09",
           "category": "value-chains",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO renforce la filière cajou de la Guinée-Bissau grâce à des pratiques durables et à la diversification des revenus",
+              "summary": "L’initiative Un pays, un produit prioritaire de la FAO soutient la filière cajou, principal produit d’exportation de la Guinée-Bissau, par la cartographie des producteurs, la formation aux bonnes pratiques agricoles et le renforcement de la transformation locale."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تعزز سلسلة قيمة الكاجو في غينيا بيساو بالممارسات المستدامة وتنويع الدخل",
+              "summary": "تدعم مبادرة المنظمة «بلد واحد، منتج ذو أولوية واحدة» قطاع الكاجو، وهو أهم صادرات غينيا بيساو، من خلال حصر المنتجين والتدريب على الممارسات الزراعية الجيدة وتعزيز التصنيع المحلي."
+            },
+            "pt": {
+              "title": "FAO reforça a cadeia de valor do caju na Guiné-Bissau com práticas sustentáveis e diversificação de rendimentos",
+              "summary": "A iniciativa da FAO Um País, Um Produto Prioritário apoia o caju, principal produto de exportação da Guiné-Bissau, através do mapeamento de produtores, formação em boas práticas agrícolas e reforço do processamento local."
+            },
+            "sw": {
+              "title": "FAO yaimarisha mnyororo wa thamani wa korosho nchini Guinea-Bissau kupitia mbinu endelevu na utofauti wa mapato",
+              "summary": "Mpango wa FAO wa Nchi Moja, Bidhaa Moja ya Kipaumbele unaunga mkono korosho, bidhaa kuu ya mauzo ya nje ya Guinea-Bissau, kupitia utambuzi wa wazalishaji, mafunzo ya mbinu bora za kilimo na kuimarisha uchakataji wa ndani."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2118,7 +2226,25 @@
           "review_after": "2026-11-09",
           "category": "crop-value-chain",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La Journée internationale de la pomme de terre 2026 met en valeur la filière et les moyens de subsistance ruraux du Lesotho",
+              "summary": "La célébration mondiale organisée à Maseru par la FAO a souligné les projets du Lesotho visant à accroître la production de pommes de terre, améliorer l’accès aux semences de qualité et à la formation agronomique, et élargir les débouchés commerciaux."
+            },
+            "ar": {
+              "title": "اليوم الدولي للبطاطس 2026 يبرز سلسلة قيمة البطاطس وسبل العيش الريفية في ليسوتو",
+              "summary": "سلط الاحتفال العالمي الذي نظمته منظمة الأغذية والزراعة في ماسيرو الضوء على خطط ليسوتو لزيادة إنتاج البطاطس وتحسين الوصول إلى البذور الجيدة والتدريب الزراعي وتوسيع فرص التسويق للمزارعين."
+            },
+            "pt": {
+              "title": "Dia Internacional da Batata 2026 destaca a cadeia de valor da batata e os meios de vida rurais no Lesoto",
+              "summary": "A celebração global organizada pela FAO em Maseru destacou os planos do Lesoto para aumentar a produção de batata, melhorar o acesso a sementes de qualidade e formação agronómica e ampliar as oportunidades de mercado para os agricultores."
+            },
+            "sw": {
+              "title": "Siku ya Kimataifa ya Viazi 2026 yaangazia mnyororo wa thamani wa viazi na maisha ya vijijini Lesotho",
+              "summary": "Maadhimisho ya kimataifa yaliyoandaliwa na FAO mjini Maseru yalionyesha mipango ya Lesotho ya kuongeza uzalishaji wa viazi, kuboresha upatikanaji wa mbegu bora na mafunzo ya kilimo, na kupanua fursa za masoko kwa wakulima."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2573,7 +2699,25 @@
           "review_after": "2026-11-09",
           "category": "farmer-training",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Les champs-écoles paysans renforcent la résilience climatique dans le Grand Maputo",
+              "summary": "Le projet d’adaptation de la FAO dans le Grand Maputo a mis en place 14 champs-écoles paysans pour 377 agriculteurs, dont 85 % de femmes, avec une formation pratique en maraîchage, agroécologie et agriculture résiliente au climat."
+            },
+            "ar": {
+              "title": "مدارس المزارعين الحقلية تعزز القدرة على مواجهة تغير المناخ في منطقة مابوتو الكبرى",
+              "summary": "أنشأ مشروع التكيف التابع لمنظمة الأغذية والزراعة في منطقة مابوتو الكبرى 14 مدرسة حقلية لخدمة 377 مزارعاً، 85 بالمئة منهم نساء، مع تدريب عملي على زراعة الخضروات والزراعة الإيكولوجية والممارسات المقاومة للمناخ."
+            },
+            "pt": {
+              "title": "Escolas de Campo para Agricultores reforçam a resiliência climática na Grande Maputo",
+              "summary": "O projeto de adaptação da FAO na Grande Maputo criou 14 Escolas de Campo para Agricultores, envolvendo 377 agricultores, 85% dos quais mulheres, com formação prática em horticultura, agroecologia e agricultura resiliente ao clima."
+            },
+            "sw": {
+              "title": "Shule za Wakulima Mashambani zaimarisha ustahimilivu wa tabianchi katika eneo kubwa la Maputo",
+              "summary": "Mradi wa FAO wa kukabiliana na mabadiliko ya tabianchi katika eneo kubwa la Maputo umeanzisha shule 14 za wakulima zinazohudumia wakulima 377, asilimia 85 wakiwa wanawake, kwa mafunzo ya bustani za mboga, agroikolojia na kilimo kinachostahimili tabianchi."
+            }
+          }
         },
         {
           "title": "Agricultural support gives new opportunities to families in Mozambique's Balama district",
@@ -2585,7 +2729,25 @@
           "review_after": "2026-11-09",
           "category": "farmer-support",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "L’aide agricole ouvre de nouvelles perspectives aux familles du district de Balama au Mozambique",
+              "summary": "La FAO décrit un soutien aux ménages vulnérables de Cabo Delgado sous forme d’intrants agricoles et d’assistance technique pour les cultures maraîchères et vivrières, afin de surmonter le manque de semences, d’outils et de connaissances."
+            },
+            "ar": {
+              "title": "الدعم الزراعي يفتح آفاقاً جديدة للأسر في منطقة بالاما بموزمبيق",
+              "summary": "توضح منظمة الأغذية والزراعة دعم الأسر الضعيفة في كابو ديلغادو بالمدخلات الزراعية والمساعدة الفنية لإنتاج الخضروات والمحاصيل الغذائية، لمواجهة نقص البذور والأدوات والمعرفة الزراعية."
+            },
+            "pt": {
+              "title": "Apoio agrícola abre novas oportunidades para famílias no distrito de Balama, em Moçambique",
+              "summary": "A FAO descreve o apoio a famílias vulneráveis de Cabo Delgado com insumos agrícolas e assistência técnica para horticultura e culturas alimentares, ajudando a superar a falta de sementes, ferramentas e conhecimentos de produção."
+            },
+            "sw": {
+              "title": "Msaada wa kilimo wafungua fursa mpya kwa familia katika wilaya ya Balama, Msumbiji",
+              "summary": "FAO inaeleza msaada kwa kaya zilizo hatarini Cabo Delgado kupitia pembejeo za kilimo na ushauri wa kiufundi kwa mboga na mazao ya chakula, ili kukabiliana na uhaba wa mbegu, zana na maarifa ya uzalishaji."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2637,7 +2799,25 @@
           "review_after": "2026-11-09",
           "category": "climate-resilience",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Un projet de résilience financé par le Japon fournit ses premiers intrants agricoles aux communautés de Hardap en Namibie",
+              "summary": "La FAO, le ministère namibien de l’Agriculture et le Japon ont commencé à distribuer semences, outils, irrigation solaire, structures d’ombrage et systèmes hydroponiques, accompagnés d’une formation à l’agriculture adaptée au climat pour les ménages touchés par la sécheresse."
+            },
+            "ar": {
+              "title": "مشروع للصمود بتمويل ياباني يسلّم أول مدخلات زراعية لمجتمعات هارداب في ناميبيا",
+              "summary": "بدأت منظمة الأغذية والزراعة ووزارة الزراعة الناميبية واليابان توزيع البذور والأدوات وأنظمة الري بالطاقة الشمسية ومظلات الزراعة وأنظمة الزراعة المائية، إلى جانب التدريب على الزراعة المتكيفة مع المناخ للأسر المتضررة من الجفاف."
+            },
+            "pt": {
+              "title": "Projeto de resiliência financiado pelo Japão entrega os primeiros insumos agrícolas às comunidades de Hardap, na Namíbia",
+              "summary": "A FAO, o Ministério da Agricultura da Namíbia e o Japão começaram a distribuir sementes, ferramentas, irrigação solar, estruturas de sombra e sistemas hidropónicos, além de formação em agricultura adaptada ao clima para famílias afetadas pela seca."
+            },
+            "sw": {
+              "title": "Mradi wa ustahimilivu unaofadhiliwa na Japani wakabidhi pembejeo za kwanza kwa jamii za wakulima Hardap nchini Namibia",
+              "summary": "FAO, Wizara ya Kilimo ya Namibia na Japani zimeanza kusambaza mbegu, zana, umwagiliaji wa nishati ya jua, miundo ya kivuli na mifumo ya hydroponiki, pamoja na mafunzo ya kilimo kinachokabiliana na tabianchi kwa kaya zilizoathiriwa na ukame."
+            }
+          }
         },
         {
           "title": "A Namibian poultry farmer rebuilds her livelihood in drought-hit Erongo",
@@ -2649,7 +2829,25 @@
           "review_after": "2026-11-09",
           "category": "livestock",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Une avicultrice namibienne reconstruit ses moyens de subsistance dans la région d’Erongo touchée par la sécheresse",
+              "summary": "Le portrait d’une agricultrice publié par la FAO montre comment l’élevage de volailles est devenu une source plus gérable de nourriture et de revenus pour une femme vivant dans la région d’Erongo frappée par la sécheresse."
+            },
+            "ar": {
+              "title": "مزارعة دواجن ناميبية تعيد بناء سبل عيشها في إيرونغو المتضررة من الجفاف",
+              "summary": "يعرض تقرير لمنظمة الأغذية والزراعة كيف أصبحت تربية الدواجن مصدراً أسهل للإدارة للغذاء والدخل بالنسبة إلى مزارعة تعيش في منطقة إيرونغو المتضررة من الجفاف."
+            },
+            "pt": {
+              "title": "Criadora de aves namibiana reconstrói os seus meios de subsistência na região de Erongo, afetada pela seca",
+              "summary": "O perfil de uma agricultora publicado pela FAO mostra como a criação de aves se tornou uma fonte mais fácil de gerir de alimentos e rendimento para uma mulher numa região de Erongo atingida pela seca."
+            },
+            "sw": {
+              "title": "Mfugaji wa kuku nchini Namibia ajenga upya maisha yake katika Erongo iliyoathiriwa na ukame",
+              "summary": "Wasifu wa mkulima uliochapishwa na FAO unaonyesha jinsi ufugaji wa kuku ulivyokuwa chanzo rahisi zaidi cha chakula na mapato kwa mwanamke anayeishi katika eneo la Erongo lililoathiriwa na ukame."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2687,7 +2885,25 @@
           "review_after": "2026-11-09",
           "category": "agricultural-policy",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO, le Niger et les partenaires au développement réaffirment leur coopération pour une agriculture inclusive et durable",
+              "summary": "À l’issue d’une mission de haut niveau à Niamey, la FAO et le gouvernement nigérien ont examiné leur coopération dans l’agriculture, la transformation rurale et le lien entre action humanitaire, développement et paix."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة والنيجر وشركاء التنمية يجددون التعاون من أجل زراعة شاملة ومستدامة",
+              "summary": "عقب بعثة رفيعة المستوى إلى نيامي، بحثت منظمة الأغذية والزراعة والحكومة النيجرية التعاون في الزراعة والتحول الريفي والترابط بين العمل الإنساني والتنمية والسلام."
+            },
+            "pt": {
+              "title": "FAO, Níger e parceiros de desenvolvimento reafirmam cooperação para uma agricultura inclusiva e sustentável",
+              "summary": "Após uma missão de alto nível a Niamey, a FAO e o governo do Níger analisaram a cooperação em agricultura, transformação rural e na ligação entre ação humanitária, desenvolvimento e paz."
+            },
+            "sw": {
+              "title": "FAO, Niger na washirika wa maendeleo wathibitisha tena ushirikiano kwa kilimo jumuishi na endelevu",
+              "summary": "Baada ya ujumbe wa ngazi ya juu mjini Niamey, FAO na serikali ya Niger zilipitia ushirikiano katika kilimo, mageuzi ya vijijini na uhusiano kati ya hatua za kibinadamu, maendeleo na amani."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -3103,7 +3319,25 @@
           "review_after": "2026-11-09",
           "category": "agrifood-investment",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La conférence agricole du Soudan du Sud appelle à accroître les investissements pour réduire la dépendance aux importations alimentaires",
+              "summary": "La FAO indique que la conférence agricole de mai 2026 a réuni le gouvernement, les partenaires de développement et le secteur privé afin d’identifier des investissements dans les cultures, l’élevage, la pêche et les technologies agricoles pour renforcer la production nationale."
+            },
+            "ar": {
+              "title": "مؤتمر الزراعة في جنوب السودان يدعو إلى زيادة الاستثمار للحد من الاعتماد على واردات الغذاء",
+              "summary": "أفادت منظمة الأغذية والزراعة بأن مؤتمر الزراعة في مايو 2026 جمع الحكومة وشركاء التنمية والقطاع الخاص لتحديد فرص الاستثمار في المحاصيل والثروة الحيوانية ومصايد الأسماك والتكنولوجيا الزراعية لتعزيز الإنتاج المحلي."
+            },
+            "pt": {
+              "title": "Conferência Agrícola do Sudão do Sul pede mais investimento para reduzir a dependência das importações de alimentos",
+              "summary": "A FAO informou que a conferência agrícola de maio de 2026 reuniu o governo, parceiros de desenvolvimento e o setor privado para identificar investimentos em culturas, pecuária, pesca e tecnologia agrícola, reforçando a produção nacional."
+            },
+            "sw": {
+              "title": "Mkutano wa Kilimo wa Sudan Kusini wataka uwekezaji zaidi kupunguza utegemezi wa uagizaji wa chakula",
+              "summary": "FAO iliripoti kuwa mkutano wa kilimo wa Mei 2026 uliwakutanisha serikali, washirika wa maendeleo na sekta binafsi kutambua uwekezaji katika mazao, mifugo, uvuvi na teknolojia ya kilimo ili kuimarisha uzalishaji wa ndani."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -3437,7 +3671,25 @@
           "review_after": "2026-11-09",
           "category": "post-harvest",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Zimbabwe crée une plateforme nationale pour améliorer la gestion après récolte",
+              "summary": "La FAO et le gouvernement zimbabwéen ont créé un groupe technique national pour coordonner le stockage, la manutention, la chaîne du froid et la transformation, afin de réduire les pertes après récolte et d’améliorer les revenus des agriculteurs."
+            },
+            "ar": {
+              "title": "زيمبابوي تنشئ منصة وطنية لتحسين إدارة ما بعد الحصاد",
+              "summary": "أنشأت منظمة الأغذية والزراعة والحكومة الزيمبابوية فريق عمل تقنياً وطنياً لتنسيق التخزين والمناولة والتبريد والتصنيع، بهدف الحد من فاقد ما بعد الحصاد وتحسين دخل المزارعين."
+            },
+            "pt": {
+              "title": "Zimbábue cria plataforma nacional para melhorar a gestão pós-colheita",
+              "summary": "A FAO e o governo do Zimbábue criaram um grupo técnico nacional para coordenar armazenamento, manuseamento, cadeia de frio e processamento, reduzindo perdas pós-colheita e melhorando os rendimentos dos agricultores."
+            },
+            "sw": {
+              "title": "Zimbabwe yaanzisha jukwaa la kitaifa kuboresha usimamizi baada ya mavuno",
+              "summary": "FAO na serikali ya Zimbabwe zimeanzisha kikundi cha kitaifa cha kiufundi kuratibu uhifadhi, ushughulikiaji, minyororo ya baridi na uchakataji ili kupunguza upotevu baada ya mavuno na kuongeza mapato ya wakulima."
+            }
+          }
         },
         {
           "title": "FAO and China support Zimbabwean farmers to restore soil fertility and crop yields",
@@ -3449,7 +3701,25 @@
           "review_after": "2026-11-09",
           "category": "soil-health",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO et la Chine aident les agriculteurs zimbabwéens à restaurer la fertilité des sols et les rendements",
+              "summary": "Une initiative de gestion des sols dans le district de Zvimba aide les agriculteurs et les agents de vulgarisation à utiliser les analyses de sol et des pratiques adaptées pour lutter contre la baisse de fertilité et renforcer la résilience des cultures."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة والصين تدعمان مزارعي زيمبابوي لاستعادة خصوبة التربة والمحاصيل",
+              "summary": "تساعد مبادرة لإدارة التربة في مقاطعة زيمبا المزارعين وموظفي الإرشاد على استخدام فحوص التربة وممارسات مناسبة محلياً لمعالجة تراجع الخصوبة وتعزيز قدرة المحاصيل على الصمود."
+            },
+            "pt": {
+              "title": "FAO e China apoiam agricultores do Zimbábue na recuperação da fertilidade do solo e da produtividade",
+              "summary": "Uma iniciativa de gestão do solo no distrito de Zvimba ajuda agricultores e extensionistas a usar análises de solo e práticas adequadas ao contexto local para enfrentar a perda de fertilidade e aumentar a resiliência das culturas."
+            },
+            "sw": {
+              "title": "FAO na China zawaunga mkono wakulima wa Zimbabwe kurejesha rutuba ya udongo na mavuno",
+              "summary": "Mpango wa usimamizi wa udongo katika wilaya ya Zvimba unawasaidia wakulima na maafisa ugani kutumia vipimo vya udongo na mbinu zinazofaa eneo husika kukabiliana na kupungua kwa rutuba na kuimarisha ustahimilivu wa mazao."
+            }
+          }
         },
         {
           "title": "Zimbabwe strengthens agricultural coordination and anticipatory action ahead of the 2026/27 season",
@@ -3461,7 +3731,25 @@
           "review_after": "2026-11-09",
           "category": "climate-resilience",
           "status": "official",
-          "source_tier": 1
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Zimbabwe renforce la coordination agricole et l’anticipation avant la campagne 2026-2027",
+              "summary": "Les partenaires du développement agricole du Zimbabwe ont coordonné les pouvoirs publics, les investisseurs et les organismes techniques pour préparer la campagne 2026-2027 et renforcer la résilience face à une variabilité climatique croissante."
+            },
+            "ar": {
+              "title": "زيمبابوي تعزز التنسيق الزراعي والعمل الاستباقي استعداداً لموسم 2026-2027",
+              "summary": "نسّق شركاء التنمية الزراعية في زيمبابوي جهود الحكومة والمستثمرين والجهات الفنية للاستعداد لموسم 2026-2027 وتعزيز القدرة على الصمود أمام تزايد تقلبات المناخ."
+            },
+            "pt": {
+              "title": "Zimbábue reforça a coordenação agrícola e a ação antecipada para a época de 2026/27",
+              "summary": "Os parceiros de desenvolvimento agrícola do Zimbábue coordenaram o governo, investidores e agências técnicas para preparar a época de 2026/27 e reforçar a resiliência perante a crescente variabilidade climática."
+            },
+            "sw": {
+              "title": "Zimbabwe yaimarisha uratibu wa kilimo na hatua za mapema kabla ya msimu wa 2026/27",
+              "summary": "Washirika wa maendeleo ya kilimo nchini Zimbabwe waliratibu serikali, wawekezaji na mashirika ya kiufundi kujiandaa kwa msimu wa 2026/27 na kuimarisha ustahimilivu dhidi ya mabadiliko makubwa ya hali ya hewa."
+            }
+          }
         }
       ],
       "localizedNames": {
