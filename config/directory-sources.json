@@ -349,6 +349,42 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official ministry portal currently links Sustainable Agriculture Financing Facility information and application materials. Verify the specific form, application period and eligibility on the linked official document before listing."
+    },
+    {
+      "id": "zambia-moa-saff-financing",
+      "country": "Zambia",
+      "category": "finance",
+      "publisher": "Zambia Ministry of Agriculture",
+      "url": "https://www.agriculture.gov.zm/landing-page/marketing/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Sustainable Agriculture Financing Facility (SAFF) programme page describing eligibility and application route. Confirm current season, participating banks, remaining funds and application status before listing as currently open."
+    },
+    {
+      "id": "malawi-agriinvestment-opportunities",
+      "country": "Malawi",
+      "category": "finance",
+      "publisher": "Malawi Ministry of Agriculture / AgriInvestment platform",
+      "url": "https://identity.agriculture.gov.mw/opportunities",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official agricultural investment opportunities portal covering finance and insurance, mechanization, irrigation, inputs and other agribusiness areas. Treat as an investment/opportunity directory, not evidence that a specific grant or loan is open."
+    },
+    {
+      "id": "ghana-piaa-agriculture-programmes",
+      "country": "Ghana",
+      "category": "finance",
+      "publisher": "Presidential Initiatives in Agriculture and Agribusiness (Ghana)",
+      "url": "https://piaa.gov.gh/departments/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official government overview of agricultural transformation initiatives and investment/infrastructure priorities. Use for programme discovery; do not imply a live grant or loan application unless a specific open call is verified."
     }
   ]
 }
