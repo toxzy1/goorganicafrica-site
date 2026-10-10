@@ -175,8 +175,10 @@
       "code": "ER",
       "name": "Eritrea",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "eritrea-fao-country-agriculture-programme"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "SZ",
@@ -278,8 +280,11 @@
       "code": "LY",
       "name": "Libya",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "libya-ministry-agriculture-official-portal",
+        "libya-national-development-agency-agricultural-projects"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "MG",
@@ -343,8 +348,10 @@
       "code": "MZ",
       "name": "Mozambique",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "mozambique-rural-enterprise-financing-line-2026"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "NA",
@@ -410,8 +417,11 @@
       "code": "SC",
       "name": "Seychelles",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "seychelles-agricultural-development-fund-schemes",
+        "seychelles-agriculture-department-farmer-services"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "SL",
@@ -454,8 +464,11 @@
       "code": "SD",
       "name": "Sudan",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "sudan-ministry-agriculture-official-portal",
+        "sudan-fao-country-programming-framework-2026-2028"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "TZ",
