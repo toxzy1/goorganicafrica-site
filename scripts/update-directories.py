@@ -40,7 +40,9 @@ def main():
         old_queue = json.loads(latest.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         old_queue = {}
-    unresolved = {c.get("source_id"): c for c in old_queue.get("candidates", [])
+    def candidate_key(c):
+        return str(c.get("source_id", "")) + "::" + str(c.get("title", "")) + "::" + str(c.get("source_url", ""))
+    unresolved = {candidate_key(c): c for c in old_queue.get("candidates", [])
                   if c.get("source_id") and c.get("status") == "needs_review"}
     candidates, errors = [], []
     active_sources = [s for s in config.get("sources", []) if s.get("status") == "active"]
@@ -105,7 +107,7 @@ def main():
         except Exception as exc:
             errors.append({"source": sid, "error": str(exc)})
     for candidate in candidates:
-        unresolved[candidate["source_id"]] = candidate
+        unresolved[candidate_key(candidate)] = candidate
     queue = sorted(unresolved.values(), key=lambda c: (str(c.get("country", "")), str(c.get("official_source", ""))))
     payload_obj = {
         "title": f"Directory review queue — {stamp.strftime('%Y-%m-%d %H:%M UTC')}",
