@@ -391,15 +391,22 @@
       "code": "UG",
       "name": "Uganda",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "uganda-maiif-mechanization-services",
+        "uganda-micro-scale-irrigation",
+        "uganda-agricultural-investment-unit"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "ZM",
       "name": "Zambia",
       "active": true,
-      "country_specific_sources": [],
-      "coverage_status": "needs_country_source_review"
+      "country_specific_sources": [
+        "zambia-moa-mechanization-centres",
+        "zambia-moa-sustainable-agriculture-finance"
+      ],
+      "coverage_status": "source_registered"
     },
     {
       "code": "ZW",
