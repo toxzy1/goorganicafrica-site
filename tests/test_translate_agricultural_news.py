@@ -13,6 +13,7 @@ try:
     import argostranslate  # noqa: F401
 except ModuleNotFoundError:
     argos_stub = types.ModuleType("argostranslate")
+    argos_stub.__path__ = []
     package_stub = types.ModuleType("argostranslate.package")
     translate_stub = types.ModuleType("argostranslate.translate")
     translate_stub.translate = lambda text, source, target: text
