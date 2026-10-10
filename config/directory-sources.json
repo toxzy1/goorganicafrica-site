@@ -121,6 +121,54 @@
       "status": "active",
       "requires_review": true,
       "notes": "Official FAO machinery supply-chain, hire and repair resource."
+    },
+    {
+      "id": "nigeria-nadf-finance",
+      "country": "Nigeria",
+      "category": "finance",
+      "publisher": "National Agricultural Development Fund (Nigeria)",
+      "url": "https://nadf.gov.ng/faq/",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official NADF FAQ describing agricultural finance, on-lending and eligibility routes; verify current products and participating institutions before listing."
+    },
+    {
+      "id": "nigeria-cbn-acgsf",
+      "country": "Nigeria",
+      "category": "finance",
+      "publisher": "Central Bank of Nigeria",
+      "url": "https://www.cbn.gov.ng/DFD/agriculture/acgsf.html",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Agricultural Credit Guarantee Scheme Fund information; confirm current application process with the relevant lending bank before listing."
+    },
+    {
+      "id": "ghana-mofa-gasip",
+      "country": "Ghana",
+      "category": "finance",
+      "publisher": "Ghana Ministry of Food and Agriculture",
+      "url": "https://mofa.gov.gh/site/programmes/gasip",
+      "method": "official_page_review",
+      "frequency": "weekly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official Ghana Agriculture Sector Investment Programme page covering value-chain financing and grant mechanisms; verify current programme status and eligibility before listing."
+    },
+    {
+      "id": "kenya-government-agri-finance",
+      "country": "Kenya",
+      "category": "finance",
+      "publisher": "Government Advertising Agency, Kenya",
+      "url": "https://www.gaa.go.ke/farmers-benefit-government-increases-agricultural-financing",
+      "method": "official_page_review",
+      "frequency": "monthly",
+      "status": "active",
+      "requires_review": true,
+      "notes": "Official government news on agricultural financing allocations; contextual monitoring source, not proof that a specific grant or loan is open."
     }
   ]
 }
