@@ -20,7 +20,11 @@ function merge(baseName, supplementName, countryField, listField, bucketed) {
       if (!country.records[bucket].some(r => r.url === record.url || r.title === record.title)) country.records[bucket].push(record);
     } else {
       country[listField] = country[listField] || [];
-      if (!country[listField].some(r => r.url === record.url || r.title === record.title)) country[listField].push(record);
+      // Supplemental news sources may use "headline" while the templates
+      // consume "title". Normalize at merge time so no rendered card is blank.
+      const normalized = { ...record, title: record.title || record.headline || "" };
+      delete normalized.headline;
+      if (!country[listField].some(r => r.url === normalized.url || r.title === normalized.title)) country[listField].push(normalized);
     }
   }
   base.last_updated = today;
