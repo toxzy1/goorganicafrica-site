@@ -71,10 +71,26 @@ async function main() {
       const title = field(item, "title");
       const summary = field(item, "description");
       let link = url(field(item, "link"));
-      const sourceLink = url(field(item, "source"));
-      if (link.includes("news.google.com") && sourceLink) link = sourceLink;
+      if (link) {
+        try {
+          const candidate = new URL(link);
+          if (candidate.hostname === "news.google.com" || candidate.hostname.endsWith(".news.google.com")) {
+            const resolved = await fetch(link, {
+              redirect: "follow",
+              headers: { "user-agent": "GoOrganicAfrica-OpportunityBot/1.0" }
+            });
+            if (resolved.url) link = resolved.url;
+          }
+        } catch (_) {
+          // Unresolvable discovery links are excluded by the host check below.
+        }
+      }
       const published = date(field(item, "pubDate") || field(item, "dc:date"));
-      if (!title || !link || !published || !link.includes(feed.host) || existing.has(link) || existing.has(title)) continue;
+      if (!title || !link || !published || existing.has(link) || existing.has(title)) continue;
+      let parsedLink;
+      try { parsedLink = new URL(link); } catch (_) { continue; }
+      const hostname = parsedLink.hostname.toLowerCase();
+      if (hostname !== feed.host && !hostname.endsWith("." + feed.host)) continue;
 
       const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
       if (age > 90) continue;
