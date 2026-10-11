@@ -181,4 +181,9 @@ if (!freshnessMonitor.includes("missing_verification_date") || !freshnessMonitor
   throw new Error("Agricultural freshness monitor must flag missing verification dates, not treat them as fresh.");
 }
 
+
+if (!newsSync.includes('if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost)) continue;') || newsSync.includes("sourceHost !== feed.allowedHost")) {
+  throw new Error("News discovery must validate the final article URL host, not trust RSS source attribution alone.");
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
