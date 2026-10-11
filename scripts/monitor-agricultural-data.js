@@ -15,9 +15,9 @@ news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agr
 const report={
  generated_at:today.toISOString(),
  policies:{resource_recheck_days:180,market_recheck_days:45,opportunity_recheck_days:14,news_review_days:30},
- resources:{total:resources.length+resources2.length,stale:resources.concat(resources2).filter(r=>(age(r.verified_date||r.verified)||0)>180).length,missing_source:resources.concat(resources2).filter(r=>!r.url).length},
+ resources:{total:resources.length+resources2.length,stale:resources.concat(resources2).filter(r=>{const d=r.verified_date||r.verified;return !d||age(d)>180;}).length,missing_verification_date:resources.concat(resources2).filter(r=>!(r.verified_date||r.verified)).length,missing_source:resources.concat(resources2).filter(r=>!r.url).length},
  markets:{total:markets.length,stale:markets.filter(r=>r.observed_date&&age(r.observed_date)>45).length,missing_observation_date:markets.filter(r=>!r.observed_date&&r.price!=null).length},
- opportunities:{total:opp.length,needs_reverification:opp.filter(r=>(age(r.verified)||0)>14&&["open","active"].includes(String(r.status).toLowerCase())).length,expired:opp.filter(r=>r.deadline&&new Date(r.deadline)<today).length},
+ opportunities:{total:opp.length,needs_reverification:opp.filter(r=>["open","active"].includes(String(r.status).toLowerCase())&&(!r.verified||age(r.verified)>14)).length,missing_verification_date:opp.filter(r=>!(r.verified)).length,expired:opp.filter(r=>r.deadline&&new Date(r.deadline)<today).length},
  news:{total:news.length,stale:news.filter(r=>(age(r.published)||0)>30).length,review:news.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())).length},
  action:"Review flagged records in CMS before publication or replacement. This monitor never changes live records."
 };
