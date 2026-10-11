@@ -199,7 +199,7 @@ async function main() {
       const xml = await response.text();
       // Search feeds may return many items. Ten recent entries per source
       // are enough for review discovery and bound redirect traffic.
-      const items = (xml.match(/<item(?:\\s[^>]*)?>[\\s\\S]*?<\\/item>/gi) || []).slice(0, 10);
+      const items = (xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || []).slice(0, 10);
 
       for (const item of items) {
         const title = field(item, "title");
