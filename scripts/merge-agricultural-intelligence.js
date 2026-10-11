@@ -40,8 +40,9 @@ function merge(baseName, supplementName, countryField, listField, bucketed) {
     const country = countries.get(record[countryField]);
     if (!country) continue;
 
-    // Compare against all categories for this country, not only the target
-    // category, so supplemental records cannot reintroduce duplicate URLs.
+    // Compare across categories, but only skip when both the normalized URL and
+    // normalized title match. Different records can legitimately share a programme
+    // or overview page; the report-only audit flags those for editorial review.
     let existing;
     if (bucketed) {
       country.records = country.records || {};
@@ -52,7 +53,12 @@ function merge(baseName, supplementName, countryField, listField, bucketed) {
     }
 
     const candidateUrl = normalizeUrl(record.url);
-    const isDuplicate = candidateUrl && existing.some(item => normalizeUrl(item.url) === candidateUrl);
+    const normalizeTitle = value => String(value || '').trim().toLowerCase().replace(/\\s+/g, ' ');
+    const candidateTitle = normalizeTitle(record.title || record.headline);
+    const isDuplicate = candidateUrl && candidateTitle && existing.some(item =>
+      normalizeUrl(item.url) === candidateUrl &&
+      normalizeTitle(item.title || item.headline) === candidateTitle
+    );
     if (isDuplicate) {
       skippedDuplicates++;
       continue;
@@ -70,7 +76,7 @@ function merge(baseName, supplementName, countryField, listField, bucketed) {
 
   base.last_updated = today;
   fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\n');
-  console.log(`${baseName}: added ${added}, skipped duplicate URLs ${skippedDuplicates}.`);
+  console.log(`${baseName}: added ${added}, skipped same-title/same-URL duplicates ${skippedDuplicates}.`);
   return added;
 }
 
