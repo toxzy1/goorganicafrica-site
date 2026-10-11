@@ -32,7 +32,9 @@ jobs:
         run: npm install
 
       - name: Check agricultural automation scripts
-        run: node --check scripts/sync-agricultural-opportunities.js
+        run: |
+          node --check scripts/sync-agricultural-opportunities.js
+          node scripts/sync-agricultural-opportunities.js --self-test
 
       - name: Run free translation automation unit tests
         run: python -m unittest discover -s tests -p "test_translate_agricultural_news.py"
