@@ -1,0 +1,535 @@
+{
+  "version": 1,
+  "scope": "GoOrganicAfrica 54-country agricultural directory coverage target",
+  "note": "The African Union lists 55 member states, including the Sahrawi Republic. GoOrganicAfrica's directory target remains 54 country markets; the Sahrawi Republic is intentionally excluded from this market coverage registry. Country-specific entries are seeded only where an official institutional programme has been verified; remaining countries stay explicitly marked for source review rather than receiving invented records.",
+  "continuous_monitoring": {
+    "enabled": true,
+    "principle": "Monitor approved official and relevant institutional sources continuously; create review candidates for new, changed or expired information; never silently publish.",
+    "country_specific_sources": "Add official country government, ministry, agency, development-bank or programme sources as they are verified.",
+    "multi_country_sources": "Use approved continental and regional sources where they legitimately cover multiple countries.",
+    "gap_detection": "The monitor must report countries that lack a country-specific approved source so they are visible in the CMS review queue."
+  },
+  "countries": [
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "active": true,
+      "country_specific_sources": [
+        "algeria-madr-agricultural-loans"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "active": true,
+      "country_specific_sources": [
+        "angola-fada-equipment-finance",
+        "angola-fada-financing-application"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "active": true,
+      "country_specific_sources": [
+        "benin-government-agricultural-mechanization-programme",
+        "benin-government-agricultural-finance-support",
+        "benin-agricultural-insurance-2026"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "active": true,
+      "country_specific_sources": [
+        "botswana-government-farm-business-plan-appraisal",
+        "botswana-thuo-letlotlo-livestock-support"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "active": true,
+      "country_specific_sources": [
+        "burkina-badf-agricultural-credit",
+        "burkina-maerah-projects-programmes"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "active": true,
+      "country_specific_sources": [
+        "burundi-mineagrie-agricultural-mechanisation"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "active": true,
+      "country_specific_sources": [
+        "cabo-verde-2026-protected-cultivation-subsidy",
+        "cabo-verde-2026-drip-irrigation-subsidy"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "active": true,
+      "country_specific_sources": [
+        "cameroon-pmeaa-agricultural-sme-support"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "active": true,
+      "country_specific_sources": [
+        "car-ministry-agriculture-projects",
+        "car-fao-country-programme-2024-2028"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "active": true,
+      "country_specific_sources": [
+        "chad-world-bank-agricultural-productivity-support"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "active": true,
+      "country_specific_sources": [
+        "comoros-fao-agricultural-census-2026"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "CG",
+      "name": "Congo",
+      "active": true,
+      "country_specific_sources": [
+        "congo-agriculture-support-fund"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "CI",
+      "name": "Côte d’Ivoire",
+      "active": true,
+      "country_specific_sources": [
+        "cote-ivoire-2026-agricultural-equipment-support"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "CD",
+      "name": "DR Congo",
+      "active": true,
+      "country_specific_sources": [
+        "dr-congo-minasa-agricultural-projects",
+        "dr-congo-minasa-2026-mechanisation-update"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "active": true,
+      "country_specific_sources": [
+        "djibouti-maepe-rh-agricultural-projects"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "active": true,
+      "country_specific_sources": [
+        "egypt-agricultural-mechanization-finance"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "active": true,
+      "country_specific_sources": [
+        "equatorial-guinea-ministry-agriculture"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "active": true,
+      "country_specific_sources": [
+        "eritrea-fao-country-agriculture-programme"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "active": true,
+      "country_specific_sources": [
+        "eswatini-government-input-subsidy-mechanisation"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "active": true,
+      "country_specific_sources": [
+        "ethiopia-moa-mechanization-strategy",
+        "ethiopia-moa-machinery-support",
+        "ethiopia-development-bank-agriculture-finance"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "active": true,
+      "country_specific_sources": [
+        "gabon-government-agricultural-farm-finance-2026",
+        "gabon-agriculture-import-duty-exemptions"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "active": true,
+      "country_specific_sources": [
+        "gambia-cpcu-agricultural-projects",
+        "gambia-girav-2026-equipment-support",
+        "gambia-2026-agricultural-support-north-bank"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "active": true,
+      "country_specific_sources": [
+        "ghana-mofa-gasip",
+        "ghana-piaa-agriculture-programmes"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "active": true,
+      "country_specific_sources": [
+        "guinea-ministry-agriculture-official-portal"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "active": true,
+      "country_specific_sources": [
+        "guinea-bissau-fao-country-programme"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "active": true,
+      "country_specific_sources": [
+        "kenya-government-agri-finance"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "active": true,
+      "country_specific_sources": [
+        "lesotho-ministry-agriculture-official-portal"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "active": true,
+      "country_specific_sources": [
+        "liberia-ministry-agriculture-projects"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "active": true,
+      "country_specific_sources": [
+        "libya-ministry-agriculture-official-portal",
+        "libya-national-development-agency-agricultural-projects"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "active": true,
+      "country_specific_sources": [
+        "madagascar-ministry-vikina-matching-grants-2026",
+        "madagascar-ministry-inputs-water-2026"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "active": true,
+      "country_specific_sources": [
+        "malawi-agriinvestment-opportunities",
+        "malawi-agcom-commercialisation-grants"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "active": true,
+      "country_specific_sources": [
+        "mali-fnaa-national-agriculture-support-fund",
+        "mali-national-rural-engineering-mechanisation"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "active": true,
+      "country_specific_sources": [
+        "mauritania-ministry-agriculture-official-portal",
+        "mauritania-2026-food-security-agricultural-equipment-support"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "active": true,
+      "country_specific_sources": [
+        "mauritius-small-farmers-welfare-fund-support-schemes"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "active": true,
+      "country_specific_sources": [
+        "morocco-ada-agricultural-development-fund"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "active": true,
+      "country_specific_sources": [
+        "mozambique-rural-enterprise-financing-line-2026"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "active": true,
+      "country_specific_sources": [
+        "afdb-namsip"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "active": true,
+      "country_specific_sources": [
+        "niger-prodaf-family-agriculture-development"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "active": true,
+      "country_specific_sources": [
+        "nigeria-nadf-finance",
+        "nigeria-cbn-acgsf",
+        "nigeria-eagriculture-machinery",
+        "nigeria-eagriculture-credit",
+        "nigeria-cbn-cacs"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "active": true,
+      "country_specific_sources": [
+        "rwanda-minagri-agri-concessional-lending",
+        "rwanda-rab-farm-power"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "active": true,
+      "country_specific_sources": [
+        "sao-tome-mapdr-mais-alimentos-2026",
+        "sao-tome-agriculture-fisheries-credit-line-proposal-2026"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "active": true,
+      "country_specific_sources": [
+        "senegal-pmas-groundnut-equipment-subsidy"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "active": true,
+      "country_specific_sources": [
+        "seychelles-agricultural-development-fund-schemes",
+        "seychelles-agriculture-department-farmer-services"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "active": true,
+      "country_specific_sources": [
+        "sierra-leone-ministry-fsrp-matching-grants-2026"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "active": true,
+      "country_specific_sources": [
+        "somalia-ministry-agriculture-irrigation-mechanisation"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "active": true,
+      "country_specific_sources": [
+        "south-africa-nda-producer-support"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "active": true,
+      "country_specific_sources": [
+        "south-sudan-ministry-agriculture-projects",
+        "south-sudan-resilient-agricultural-livelihoods-project"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "active": true,
+      "country_specific_sources": [
+        "sudan-ministry-agriculture-official-portal",
+        "sudan-fao-country-programming-framework-2026-2028"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "active": true,
+      "country_specific_sources": [
+        "tanzania-moa-mechanisation-irrigation-division",
+        "tanzania-camartec-mechanization-supply"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "active": true,
+      "country_specific_sources": [
+        "ecowas-togo-benin-prima"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "active": true,
+      "country_specific_sources": [
+        "tunisia-apia-agricultural-investment-incentives",
+        "tunisia-apia-pvpi-dcv-call-september-2026"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "active": true,
+      "country_specific_sources": [
+        "uganda-maiif-mechanization-services",
+        "uganda-micro-scale-irrigation",
+        "uganda-agricultural-investment-unit"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "active": true,
+      "country_specific_sources": [
+        "zambia-moa-mechanization-centres",
+        "zambia-moa-sustainable-agriculture-finance",
+        "zambia-moa-saff-financing",
+        "zambia-moa-fisp-2026-2027"
+      ],
+      "coverage_status": "source_registered"
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "active": true,
+      "country_specific_sources": [
+        "zimbabwe-cbz-microfinance-agriculture-loan"
+      ],
+      "coverage_status": "source_registered"
+    }
+  ]
+}
