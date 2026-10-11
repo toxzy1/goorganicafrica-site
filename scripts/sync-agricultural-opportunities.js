@@ -189,4 +189,19 @@ async function main() {
   }
   console.log("GoOrganicAfrica opportunity sync: " + added + " candidate(s).");
 }
-main().catch(e => { console.error(e); process.exit(1); });
+function selfTestCandidateKey() {
+  const sameA = candidateKey({ code: "NG", url: "https://EXAMPLE.org/program/" });
+  const sameB = candidateKey({ code: "NG", url: "https://example.org/program#overview" });
+  const otherCountry = candidateKey({ code: "GH", url: "https://example.org/program" });
+  const titleFallback = candidateKey({ code: "NG", title: "Sample call" });
+  if (sameA !== sameB) throw new Error("Candidate key must normalize host casing, trailing slashes and fragments.");
+  if (sameA === otherCountry) throw new Error("Candidate keys must remain country-scoped.");
+  if (!titleFallback.endsWith("sample call")) throw new Error("Candidate key must fall back to a normalized title when URL is absent.");
+  console.log("Opportunity candidate-key self-test passed.");
+}
+
+if (process.argv.includes("--self-test")) {
+  selfTestCandidateKey();
+} else {
+  main().catch(e => { console.error(e); process.exit(1); });
+}
