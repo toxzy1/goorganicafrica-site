@@ -18,7 +18,7 @@ const report={
  resources:{total:resources.length+resources2.length,stale:resources.concat(resources2).filter(r=>{const d=r.verified_date||r.verified;return !d||age(d)>180;}).length,missing_verification_date:resources.concat(resources2).filter(r=>!(r.verified_date||r.verified)).length,missing_source:resources.concat(resources2).filter(r=>!r.url).length},
  markets:{total:markets.length,stale:markets.filter(r=>r.observed_date&&age(r.observed_date)>45).length,missing_observation_date:markets.filter(r=>!r.observed_date&&r.price!=null).length},
  opportunities:{total:opp.length,needs_reverification:opp.filter(r=>["open","active"].includes(String(r.status).toLowerCase())&&(!r.verified||age(r.verified)>14)).length,missing_verification_date:opp.filter(r=>!(r.verified)).length,expired:opp.filter(r=>r.deadline&&new Date(r.deadline)<today).length},
- news:{total:news.length,stale:news.filter(r=>(age(r.published)||0)>30).length,review:news.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())).length},
+ news:{total:news.length,stale:news.filter(r=>{const d=r.published||r.date;return !d||age(d)>30;}).length,missing_publication_date:news.filter(r=>!(r.published||r.date)).length,review:news.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length},
  action:"Review flagged records in CMS before publication or replacement. This monitor never changes live records."
 };
 const out=path.join(root,"reports","agricultural-data-monitor.json");fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,JSON.stringify(report,null,2)+"\n");console.log(JSON.stringify(report,null,2));
