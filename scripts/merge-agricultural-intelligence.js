@@ -13,10 +13,10 @@ function normalizeUrl(value) {
     parsed.hostname = parsed.hostname.toLowerCase();
     if ((parsed.protocol === 'https:' && parsed.port === '443') ||
         (parsed.protocol === 'http:' && parsed.port === '80')) parsed.port = '';
-    parsed.pathname = parsed.pathname.replace(/\\/+$/, '') || '/';
-    return parsed.toString().replace(/\\/$/, parsed.pathname === '/' ? '/' : '');
+    parsed.pathname = parsed.pathname.replace(/\/+$/, '') || '/';
+    return parsed.toString().replace(/\/$/, parsed.pathname === '/' ? '/' : '');
   } catch (_) {
-    return raw.replace(/#.*$/, '').replace(/\\/+$/, '').toLowerCase();
+    return raw.replace(/#.*$/, '').replace(/\/+$/, '').toLowerCase();
   }
 }
 
@@ -33,9 +33,8 @@ function merge(baseName, supplementName, countryField, listField, bucketed) {
     const country = countries.get(record[countryField]);
     if (!country) continue;
 
-    // Build the seen set across every category for this country. This prevents
-    // a supplemental record from reintroducing a URL already present in the
-    // primary dataset or another category, including trailing-slash variants.
+    // Compare against all categories for this country, not only the target
+    // category, so supplemental records cannot reintroduce duplicate URLs.
     let existing;
     if (bucketed) {
       country.records = country.records || {};
@@ -63,7 +62,7 @@ function merge(baseName, supplementName, countryField, listField, bucketed) {
   }
 
   base.last_updated = today;
-  fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\\n');
+  fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\n');
   console.log(`${baseName}: added ${added}, skipped duplicate URLs ${skippedDuplicates}.`);
   return added;
 }
