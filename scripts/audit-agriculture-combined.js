@@ -131,7 +131,7 @@ function sourceQuality(records) {
       invalidUrl++;
       continue;
     }
-    const host = url.hostname.toLowerCase().replace(/^www\\./, "");
+    const host = url.hostname.toLowerCase().replace(/^www\./, "");
     hosts.set(host, (hosts.get(host) || 0) + 1);
     if (url.pathname === "/" || !url.pathname) homepageUrl++;
     if (!String(record.source || "").trim()) missingSource++;
