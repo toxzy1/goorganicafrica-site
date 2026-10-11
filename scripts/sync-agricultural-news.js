@@ -187,9 +187,25 @@ async function main() {
   let added = 0;
 
   for (const feed of feeds) {
-    const response = await fetch(feed.url, { headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
-    if (!response.ok) throw new Error(`${feed.name}: HTTP ${response.status}`);
-    const xml = await response.text();
+    let xml;
+    try {
+      let response;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          response = await fetch(feed.url, { headers: { "user-agent": "GoOrganicAfrica-NewsBot/1.0" } });
+          if (response.ok) break;
+          if (response.status < 500 && response.status !== 429) break;
+        } catch (error) {
+          if (attempt === 3) throw error;
+        }
+        if (attempt < 3) await new Promise(resolve => setTimeout(resolve, attempt * 750));
+      }
+      if (!response || !response.ok) throw new Error("HTTP " + (response ? response.status : "network error"));
+      xml = await response.text();
+    } catch (error) {
+      console.warn(`Skipping unavailable news feed ${feed.name}: ${error.message}`);
+      continue;
+    }
     const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
 
     for (const item of items) {
