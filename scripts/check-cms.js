@@ -100,7 +100,7 @@ if (!intelligenceWorkflow.includes("peter-evans/create-pull-request@v7")) {
 if (!intelligenceWorkflow.includes("draft: true")) {
   throw new Error("Agricultural intelligence sync pull requests must start as drafts.");
 }
-if (/\\bgit\\s+push\\b|\\bgit\\s+commit\\s+-m\\b/.test(intelligenceWorkflow)) {
+if (/\bgit\s+push\b|\bgit\s+commit\s+-m\b/.test(intelligenceWorkflow)) {
   throw new Error("Agricultural intelligence sync must not commit or push directly to a production branch.");
 }
 if (!intelligenceWorkflow.includes("pull-requests: write")) {
