@@ -1,0 +1,61 @@
+name: Temporary Review-First Live Automation Test
+
+on:
+  push:
+    branches: [integration-8-step-validation-current]
+
+permissions:
+  contents: read
+
+jobs:
+  news-discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout integration test branch
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run live news discovery without publishing or committing
+        run: |
+          cp src/_data/agriculturalNews.json "$RUNNER_TEMP/news-before.json"
+          node scripts/sync-agricultural-news.js
+          node <<'NODE'
+          const fs = require('fs');
+          const before = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/news-before.json', 'utf8'));
+          const after = JSON.parse(fs.readFileSync('src/_data/agriculturalNews.json', 'utf8'));
+          const prior = new Set(before.countries.flatMap(c => (c.articles || []).map(a => a.url)).filter(Boolean));
+          const added = after.countries.flatMap(c => (c.articles || []).map(a => a.url && !prior.has(a.url) ? a : null)).filter(Boolean);
+          const invalid = added.filter(a => a.status !== 'review' || a.lifecycle !== 'needs_review');
+          console.log('New news candidates:', added.length);
+          console.log('Review-only candidate status violations:', invalid.length);
+          if (invalid.length) process.exit(1);
+          NODE
+
+  opportunity-discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout integration test branch
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run live opportunity discovery without publishing or committing
+        run: |
+          cp src/_data/agriculturalOpportunities.json "$RUNNER_TEMP/opportunities-before.json"
+          node scripts/sync-agricultural-opportunities.js
+          node <<'NODE'
+          const fs = require('fs');
+          const before = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/opportunities-before.json', 'utf8'));
+          const after = JSON.parse(fs.readFileSync('src/_data/agriculturalOpportunities.json', 'utf8'));
+          const prior = new Set((before.records || []).map(a => a.url).filter(Boolean));
+          const added = (after.records || []).filter(a => a.url && !prior.has(a.url));
+          const invalid = added.filter(a => a.status !== 'review' || a.lifecycle !== 'needs_review' || !a.code);
+          console.log('New opportunity candidates:', added.length);
+          console.log('Review-only candidate status violations:', invalid.length);
+          if (invalid.length) process.exit(1);
+          NODE
