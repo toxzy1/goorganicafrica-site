@@ -132,14 +132,14 @@ for (const [name, script] of [["news", newsSync], ["opportunities", opportunityS
     throw new Error("Agricultural " + name + " sync must mark new records as needs_review.");
   }
 }
-if (!opportunitiesTemplate.includes('record.status != "review" and record.lifecycle != "needs_review"')) {
-  throw new Error("Opportunity directory must hide unreviewed automated candidates.");
+if (!['record.status != "review"', 'record.status != "draft"', 'record.status != "needs_review"', 'record.lifecycle != "needs_review"', 'record.lifecycle != "draft"'].every(marker => opportunitiesTemplate.includes(marker))) {
+  throw new Error("Opportunity directory must hide all draft and review-state candidates.");
 }
-if (!newsCountryTemplate.includes('candidate.status != "review"') || !newsCountryTemplate.includes("publishedArticles")) {
-  throw new Error("Country news pages must hide unreviewed discovery candidates.");
+if (!['candidate.status != "review"', 'candidate.status != "draft"', 'candidate.status != "needs_review"', 'candidate.lifecycle != "needs_review"', 'candidate.lifecycle != "draft"'].every(marker => newsCountryTemplate.includes(marker)) || !newsCountryTemplate.includes("publishedArticles")) {
+  throw new Error("Country news pages must hide all draft and review-state candidates.");
 }
-if (!newsIndexTemplate.includes('article.lifecycle != "needs_review"')) {
-  throw new Error("News index must hide candidates marked for review by lifecycle.");
+if (!['article.status != "review"', 'article.status != "draft"', 'article.status != "needs_review"', 'article.lifecycle != "needs_review"', 'article.lifecycle != "draft"'].every(marker => newsIndexTemplate.includes(marker))) {
+  throw new Error("News index must hide all draft and review-state candidates.");
 }
 if (!opportunitiesTemplate.includes('record.lifecycle or record.status')) {
   throw new Error("Opportunity directory must fall back to the existing status field when lifecycle is absent.");
