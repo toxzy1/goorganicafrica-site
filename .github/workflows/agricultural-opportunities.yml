@@ -16,6 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check opportunity sync JavaScript syntax
+        run: node --check scripts/sync-agricultural-opportunities.js
+
       - name: Discover current opportunity candidates
         run: node scripts/sync-agricultural-opportunities.js
 

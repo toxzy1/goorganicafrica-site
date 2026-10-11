@@ -27,6 +27,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Check agricultural automation scripts
+        run: |
+          node --check scripts/sync-agricultural-opportunities.js
+          node scripts/sync-agricultural-opportunities.js --self-test
+
       - name: Build site
         run: npm run build
 
