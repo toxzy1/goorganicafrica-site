@@ -21,7 +21,7 @@ pageLanguage: en
 <p class="lede">Current, verified agricultural developments for this country.</p>
 {% set publishedArticles = [] %}
 {% for candidate in country.articles %}
-  {% if candidate.status != "review" and candidate.status != "draft" and candidate.status != "needs_review" and candidate.lifecycle != "needs_review" and candidate.lifecycle != "draft" %}{% set publishedArticles = publishedArticles.concat([candidate]) %}{% endif %}
+  {% if candidate.status != "review" and candidate.status != "draft" and candidate.status != "needs_review" and candidate.lifecycle != "review" and candidate.lifecycle != "needs_review" and candidate.lifecycle != "draft" %}{% set publishedArticles = publishedArticles.concat([candidate]) %}{% endif %}
 {% endfor %}
 {% if publishedArticles.length %}
 {% for article in publishedArticles %}
