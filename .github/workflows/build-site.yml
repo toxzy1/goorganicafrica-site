@@ -35,3 +35,6 @@ jobs:
 
       - name: Audit rendered pages for duplicate and mixed-language content
         run: npm run audit:rendered
+
+      - name: Report combined agriculture coverage and duplicate URLs
+        run: npm run audit:agriculture:combined
