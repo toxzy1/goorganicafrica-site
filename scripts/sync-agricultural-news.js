@@ -241,7 +241,7 @@ async function main() {
         url,
         source: feed.source,
         published,
-        verified: today,
+        discovered: today,
         status: "review",
         lifecycle: "needs_review",
         source_tier: 1,
@@ -254,9 +254,9 @@ async function main() {
   }
 
   for (const country of data.countries) {
+    // Sort for stable display without truncating or deleting existing records.
     country.articles = (country.articles || [])
-      .sort((a, b) => String(b.published).localeCompare(String(a.published)))
-      .slice(0, 20);
+      .sort((a, b) => String(b.published).localeCompare(String(a.published)));
   }
 
   if (added > 0) {
