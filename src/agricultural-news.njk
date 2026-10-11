@@ -15,7 +15,7 @@ pageSection: agricultural-news
 {% set latestArticles = [] %}
 {% for country in agriculturalNewsMerged.countries %}
   {% for article in country.articles %}
-    {% if article.status != "review" and article.status != "draft" and article.status != "needs_review" and article.lifecycle != "needs_review" and article.lifecycle != "draft" %}{% set latestArticles = latestArticles.concat([{
+    {% if article.status != "review" and article.status != "draft" and article.status != "needs_review" and article.lifecycle != "review" and article.lifecycle != "needs_review" and article.lifecycle != "draft" %}{% set latestArticles = latestArticles.concat([{
       "country": country.name,
       "flag": country.flag,
       "article": article
@@ -37,14 +37,16 @@ pageSection: agricultural-news
   {% endif %}
 {% endfor %}
 
-<div style="margin-top:28px;padding:18px;border:1px solid var(--line);border-radius:12px;"><strong>Current coverage:</strong> {{ latestArticles | length }} recent stories are indexed in the latest-news view. Each country directory can hold up to 30 verified/reviewed stories from multiple source organizations.</div>\n\n<h2 style="margin-top:40px;">54 African Country News Directories</h2>
+<div style="margin-top:28px;padding:18px;border:1px solid var(--line);border-radius:12px;"><strong>Current coverage:</strong> {{ latestArticles | length }} recent stories are indexed in the latest-news view. Each country directory can hold up to 30 verified/reviewed stories from multiple source organizations.</div>
+
+<h2 style="margin-top:40px;">54 African Country News Directories</h2>
 <p>Select a country to see its verified agricultural news and developments.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
 {% for country in agriculturalNewsMerged.countries %}
 <a class="card" href="/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
 <h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.name }}</h2>
 {% set publishedCountryArticles = [] %}
-{% for article in country.articles %}{% if article.status != "review" and article.status != "draft" and article.status != "needs_review" and article.lifecycle != "needs_review" and article.lifecycle != "draft" %}{% set publishedCountryArticles = publishedCountryArticles.concat([article]) %}{% endif %}{% endfor %}
+{% for article in country.articles %}{% if article.status != "review" and article.status != "draft" and article.status != "needs_review" and article.lifecycle != "review" and article.lifecycle != "needs_review" and article.lifecycle != "draft" %}{% set publishedCountryArticles = publishedCountryArticles.concat([article]) %}{% endif %}{% endfor %}
 <p>{{ publishedCountryArticles | length }} published stories · multiple authoritative sources where available</p>
 </a>
 {% endfor %}
