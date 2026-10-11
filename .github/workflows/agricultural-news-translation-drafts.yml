@@ -1,0 +1,66 @@
+name: Free agricultural news translation drafts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 5 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "src/_data/agriculturalNews.json"
+      - "src/_data/agriculturalNewsSupplement.json"
+      - "scripts/translate-agricultural-news.py"
+      - ".github/workflows/agricultural-news-translation-drafts.yml"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: goorganicafrica-agricultural-news-translation-drafts
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out production source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install free offline translation engine
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install argostranslate
+
+      - name: Test translation draft safety and batch limits
+        run: python -m unittest discover -s tests -p "test_translate_agricultural_news.py"
+
+      - name: Generate missing translation drafts
+        run: python -u scripts/translate-agricultural-news.py
+
+      - name: Validate JSON and site build
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('src/_data/agriculturalNews.json','utf8'))"
+          node -e "JSON.parse(require('fs').readFileSync('src/_data/agriculturalNewsSupplement.json','utf8'))"
+          npm install
+          npm run build
+
+      - name: Open or update human-review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/agricultural-news-translation-drafts
+          delete-branch: false
+          commit-message: "Draft free offline translations for agricultural news"
+          title: "Review free offline translations for Agricultural News"
+          body: |
+            This pull request contains draft translations generated locally with the free Argos Translate engine.
+
+            Human review is required before merging. The workflow never pushes translation changes directly to main, and the script does not overwrite existing translated fields. Review meaning, agricultural terminology, country names, dates, numbers, and Arabic rendering. Before merging, change translation_review_status to approved for accepted records and correct or remove any rejected translations.
+          add-paths: |
+            src/_data/agriculturalNews.json
+            src/_data/agriculturalNewsSupplement.json
