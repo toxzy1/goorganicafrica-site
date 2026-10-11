@@ -1,0 +1,58 @@
+name: Temporary Directory Review-Queue Live Smoke Test
+
+on:
+  push:
+    branches: [directory-live-smoke]
+
+permissions:
+  contents: read
+
+jobs:
+  directory-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout isolated smoke-test branch
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Limit workspace to five active official sources
+        run: |
+          python <<'PY'
+          import json
+          from pathlib import Path
+          path = Path("config/directory-sources.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+          data["sources"] = [s for s in data.get("sources", []) if s.get("status") == "active"][:5]
+          if len(data["sources"]) != 5:
+              raise SystemExit("Expected five active sources for smoke test.")
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+          print("Live official sources selected:", [s.get("id") for s in data["sources"]])
+          PY
+      - name: Run live directory monitor without publishing or committing
+        run: |
+          python scripts/update-directories.py
+          python <<'PY'
+          import json
+          from pathlib import Path
+          config = json.loads(Path("config/directory-sources.json").read_text(encoding="utf-8"))
+          state = json.loads(Path("data/directories/pending/directory-monitor-state.json").read_text(encoding="utf-8"))
+          queue = json.loads(Path("data/directories/pending/directory-candidates-latest.json").read_text(encoding="utf-8"))
+          ids = [s.get("id") for s in config.get("sources", [])]
+          checked = [sid for sid in ids if state.get("sources", {}).get(sid, {}).get("last_checked")]
+          errors = queue.get("errors", [])
+          candidates = queue.get("candidates", [])
+          invalid = [c for c in candidates if c.get("status") != "needs_review"]
+          print("Sources successfully checked:", len(checked), "of", len(ids))
+          print("Source errors recorded:", len(errors))
+          print("Review candidates:", len(candidates))
+          print("Non-review candidate status violations:", len(invalid))
+          if not checked:
+              raise SystemExit("No official source was successfully checked.")
+          if len(errors) >= len(ids):
+              raise SystemExit("All source requests failed.")
+          if invalid:
+              raise SystemExit("A directory candidate is not marked needs_review.")
+          PY
