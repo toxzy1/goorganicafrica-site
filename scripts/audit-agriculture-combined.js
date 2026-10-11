@@ -63,6 +63,25 @@ function groupDuplicates(records) {
   return [...groups.entries()].filter(([, titles]) => titles.length > 1)
     .map(([key, titles]) => ({ country: key.split("\t")[0], url: key.split("\t")[1], titles }));
 }
+function groupSameTitleUrl(records) {
+  const groups = new Map();
+  for (const record of records) {
+    const code = String(record.country_code || "").toUpperCase();
+    const url = normalizeUrl(record.url);
+    const title = String(record.title || record.headline || "").trim().toLowerCase().replace(/\\s+/g, " ");
+    if (!expectedCodes.has(code) || !url || !title) continue;
+    const key = code + "\\t" + url + "\\t" + title;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(record);
+  }
+  return [...groups.entries()].filter(([, records]) => records.length > 1)
+    .map(([key, records]) => ({
+      country: key.split("\\t")[0],
+      url: key.split("\\t")[1],
+      title: records[0].title || records[0].headline || "(untitled)",
+      records: records.map((r) => ({ category: r.category || "", summary: r.summary || r.description || "" }))
+    }));
+}
 function overlapGroups(primary, supplement) {
   const keys = new Set(primary.map((r) => String(r.country_code || "").toUpperCase() + "\t" + normalizeUrl(r.url)).filter((k) => !k.endsWith("\t")));
   return supplement.filter((r) => {
@@ -85,7 +104,7 @@ const newsSupplement = flattenNews(read("src/_data/agriculturalNewsSupplement.js
 const resources = [...resourcePrimary, ...resourceSupplement];
 const news = [...newsPrimary, ...newsSupplement];
 const resourceDupes = groupDuplicates(resources);
-const newsDupes = groupDuplicates(news);
+const newsDupes = groupDuplicates(news);\nconst resourceSameTitleUrl = groupSameTitleUrl(resources);\nconst newsSameTitleUrl = groupSameTitleUrl(news);
 const resourceOverlaps = overlapGroups(resourcePrimary, resourceSupplement);
 const newsOverlaps = overlapGroups(newsPrimary, newsSupplement);
 const resourceCounts = counts(resources);
@@ -97,13 +116,21 @@ console.log("GoOrganicAfrica combined agriculture data audit (report-only)");
 console.log(`Resources: ${resourcePrimary.length} primary + ${resourceSupplement.length} supplemental = ${resources.length} raw records`);
 console.log(`News: ${newsPrimary.length} primary + ${newsSupplement.length} supplemental = ${news.length} raw records`);
 console.log(`Resource same-country normalized duplicate groups: ${resourceDupes.length}; primary/supplement overlaps: ${resourceOverlaps.length}`);
-console.log(`News same-country normalized duplicate groups: ${newsDupes.length}; primary/supplement overlaps: ${newsOverlaps.length}`);
+console.log(`News same-country normalized duplicate groups: ${newsDupes.length}; primary/supplement overlaps: ${newsOverlaps.length}`);\nconsole.log(`Same-title + same-URL review candidates: ${resourceSameTitleUrl.length} resource groups; ${newsSameTitleUrl.length} news groups`);
 console.log(`Countries with resources: ${EXPECTED.length - resourceGaps.length}/${EXPECTED.length}${resourceGaps.length ? " — gaps: " + resourceGaps.join(", ") : ""}`);
 console.log(`Countries with news: ${EXPECTED.length - newsGaps.length}/${EXPECTED.length}${newsGaps.length ? " — gaps: " + newsGaps.join(", ") : ""}`);
 for (const [label, groups] of [["RESOURCE DUPLICATES", resourceDupes], ["NEWS DUPLICATES", newsDupes]]) {
   if (!groups.length) continue;
   console.log("\n" + label + " (review before removing; some records may be distinct stories):");
   for (const g of groups) console.log(`- ${g.country} | ${g.url} | ${g.titles.join(" / ")}`);
+}
+for (const [label, groups] of [["RESOURCE SAME-TITLE URL CANDIDATES", resourceSameTitleUrl], ["NEWS SAME-TITLE URL CANDIDATES", newsSameTitleUrl]]) {
+  if (!groups.length) continue;
+  console.log("\\n" + label + " (stronger duplicate candidates; summaries/categories still need human review):");
+  for (const g of groups) {
+    console.log(`- ${g.country} | ${g.title} | ${g.url}`);
+    for (const r of g.records) console.log(`  • ${r.category || "uncategorized"} | ${String(r.summary).slice(0, 220)}`);
+  }
 }
 if (resourceGaps.length || newsGaps.length || resourceDupes.length || newsDupes.length || resourceOverlaps.length || newsOverlaps.length) {
   console.log("\nReview needed. This script does not delete records or fail the build; regional applicability and story identity require editorial judgment.");
