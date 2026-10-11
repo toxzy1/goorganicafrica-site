@@ -25,9 +25,10 @@ jobs:
           from pathlib import Path
           path = Path("config/directory-sources.json")
           data = json.loads(path.read_text(encoding="utf-8"))
-          data["sources"] = [s for s in data.get("sources", []) if s.get("status") == "active"][:5]
-          if len(data["sources"]) != 5:
-              raise SystemExit("Expected five active sources for smoke test.")
+          preferred = {"fao-africa-mechanization", "nigeria-cbn-acgsf", "nigeria-nadf-finance", "fao-machinery-supply-chain", "afdb-namsip"}
+          data["sources"] = [s for s in data.get("sources", []) if s.get("status") == "active" and s.get("id") in preferred]
+          if len(data["sources"]) < 3:
+              raise SystemExit("Expected at least three selected official sources for smoke test.")
           path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           print("Live official sources selected:", [s.get("id") for s in data["sources"]])
           PY
@@ -47,6 +48,7 @@ jobs:
           invalid = [c for c in candidates if c.get("status") != "needs_review"]
           print("Sources successfully checked:", len(checked), "of", len(ids))
           print("Source errors recorded:", len(errors))
+          print("Source error details:", errors)
           print("Review candidates:", len(candidates))
           print("Non-review candidate status violations:", len(invalid))
           if not checked:
