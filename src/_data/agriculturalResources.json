@@ -145,7 +145,20 @@
             }
           }
         ],
-        "inputs": [],
+        "inputs": [
+          {
+            "title": "Nigeria NAGS-AP Phase II — official assessment of agricultural input delivery",
+            "description": "The Federal Ministry's NAGS 2.0 Environmental and Social Assessment document describes the programme's approach to agricultural input delivery and safeguards. This is programme documentation, not a live farmer application or supplier registration.",
+            "url": "https://agriculture.gov.ng/wp-content/uploads/2025/06/FINALIZED-NAGS-2.0-ESSA-Document.pdf",
+            "source": "Federal Ministry of Agriculture and Food Security (FMAFS), Nigeria",
+            "source_id": "fmafs",
+            "source_tier": 1,
+            "verified": "2026-10-10",
+            "status": "official",
+            "type": "Agricultural inputs programme documentation",
+            "access": "Reference document only; check current ministry notices for active programme access."
+          }
+        ],
         "markets": [],
         "insurance": [],
         "farmer-support": [],
