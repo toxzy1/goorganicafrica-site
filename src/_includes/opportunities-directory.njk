@@ -8,16 +8,19 @@
   </header>
   <div id="opportunity-list">
   {% for record in agriculturalOpportunities.records %}
-    <article class="opportunity-card" data-status="{{ record.lifecycle }}" data-category="{{ record.category }}" data-search="{{ record.title }} {{ record.country }} {{ record.category }} {{ record.type }} {{ record.eligibility }} {{ record.summary }} {{ (record.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+    {# Never render automated candidates until an editor approves them. #}
+    {% if record.status != "review" and record.lifecycle != "needs_review" %}
+    <article class="opportunity-card" data-status="{{ record.lifecycle or record.status }}" data-category="{{ record.category }}" data-search="{{ record.title }} {{ record.country }} {{ record.category }} {{ record.type }} {{ record.eligibility }} {{ record.summary }} {{ (record.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
       <div style="font-size:.9em">{{ record.country }} · {{ record.category }} · {{ record.type }}</div>
       <h2 style="margin:8px 0">{{ record.title }}</h2>
       <p>{{ record.summary }}</p>
       <p><strong>Eligibility:</strong> {{ record.eligibility }}</p>
       {% if record.deadline %}<p><strong>Deadline:</strong> {{ record.deadline }}</p>{% endif %}
       <p><strong>Source:</strong> {{ record.source }} · Verified {{ record.verified }}</p>
-      {% if record.lifecycle == "expired" %}<p><strong>Status:</strong> Expired / archived</p>{% else %}<p><strong>Status:</strong> Open</p>{% endif %}
+      {% if record.lifecycle == "expired" or record.status == "expired" or record.status == "closed" or record.status == "archived" %}<p><strong>Status:</strong> Expired / archived</p>{% else %}<p><strong>Status:</strong> {{ record.status or "Open" }}</p>{% endif %}
       <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer">View official source</a>
     </article>
+    {% endif %}
   {% endfor %}
   </div>
 </section>
