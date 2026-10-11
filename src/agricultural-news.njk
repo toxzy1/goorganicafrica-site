@@ -15,7 +15,7 @@ pageSection: agricultural-news
 {% set latestArticles = [] %}
 {% for country in agriculturalNewsMerged.countries %}
   {% for article in country.articles %}
-    {% if article.status != "review" and article.status != "draft" and article.status != "needs_review" %}{% set latestArticles = latestArticles.concat([{
+    {% if article.status != "review" and article.status != "draft" and article.status != "needs_review" and article.lifecycle != "needs_review" %}{% set latestArticles = latestArticles.concat([{
       "country": country.name,
       "flag": country.flag,
       "article": article
@@ -43,7 +43,9 @@ pageSection: agricultural-news
 {% for country in agriculturalNewsMerged.countries %}
 <a class="card" href="/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
 <h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.name }}</h2>
-<p>{{ country.articles | length }} indexed stories · multiple authoritative sources where available</p>
+{% set publishedCount = 0 %}
+{% for article in country.articles %}{% if article.status != "review" and article.status != "draft" and article.status != "needs_review" and article.lifecycle != "needs_review" %}{% set publishedCount = publishedCount + 1 %}{% endif %}{% endfor %}
+<p>{{ publishedCount }} published stories · multiple authoritative sources where available</p>
 </a>
 {% endfor %}
 </div>
