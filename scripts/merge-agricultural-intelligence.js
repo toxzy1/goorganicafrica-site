@@ -53,7 +53,7 @@ function merge(baseName, supplementName, countryField, listField, bucketed) {
     }
 
     const candidateUrl = normalizeUrl(record.url);
-    const normalizeTitle = value => String(value || '').trim().toLowerCase().replace(/\\s+/g, ' ');
+    const normalizeTitle = value => String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
     const candidateTitle = normalizeTitle(record.title || record.headline);
     const isDuplicate = candidateUrl && candidateTitle && existing.some(item =>
       normalizeUrl(item.url) === candidateUrl &&
