@@ -187,7 +187,7 @@ if (!newsSync.includes('if (parsedUrl.hostname !== feed.allowedHost && !parsedUr
 }
 
 
-if (!freshnessMonitor.includes("missing_publication_date") || !freshnessMonitor.includes("return !d||age(d)===null||age(d)>180") || !freshnessMonitor.includes("return !d||age(d)===null||age(d)>30") || !freshnessMonitor.includes('String(r.lifecycle||"").toLowerCase()==="needs_review"')) {
+if (!freshnessMonitor.includes("missing_publication_date") || !freshnessMonitor.includes("return !d||age(d)===null||age(d)>180") || !freshnessMonitor.includes("return !d||age(d)===null||age(d)>30") || !freshnessMonitor.includes('String(r.lifecycle||"").toLowerCase()==="needs_review"') || !freshnessMonitor.includes("age(r.observed_date)===null") || !freshnessMonitor.includes("invalid_deadline_date") || !freshnessMonitor.includes("opportunities:{total:opp.length,review:")) {
   throw new Error("Agricultural freshness monitor must flag missing resource verification dates and news publication dates, including lifecycle review queues.");
 }
 
