@@ -139,5 +139,13 @@ if (!opportunitySync.includes('candidate.hostname === "news.google.com"') ||
     !opportunitySync.includes('hostname !== feed.host && !hostname.endsWith("." + feed.host)')) {
   throw new Error("Opportunity discovery must resolve aggregator links and validate the final source hostname.");
 }
+if (!opportunitySync.includes('calculatorCountries.json') || !opportunitySync.includes('countryRegistry.list')) {
+  throw new Error("Opportunity discovery must use the canonical country registry, not an absent countries field.");
+}
+if (!opportunitySync.includes('Skipping unavailable opportunity feed') ||
+    !newsSync.includes('Skipping unavailable news feed') ||
+    !opportunitySync.includes('attempt <= 3') || !newsSync.includes('attempt <= 3')) {
+  throw new Error("News and opportunity discovery must retry transient failures and continue with other feeds.");
+}
 
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
