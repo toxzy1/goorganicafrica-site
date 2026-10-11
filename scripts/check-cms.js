@@ -186,4 +186,9 @@ if (!newsSync.includes('if (parsedUrl.hostname !== feed.allowedHost && !parsedUr
   throw new Error("News discovery must validate the final article URL host, not trust RSS source attribution alone.");
 }
 
+
+if (!freshnessMonitor.includes("missing_publication_date") || !freshnessMonitor.includes("return !d||age(d)>180") || !freshnessMonitor.includes('String(r.lifecycle||"").toLowerCase()==="needs_review"')) {
+  throw new Error("Agricultural freshness monitor must flag missing resource verification dates and news publication dates, including lifecycle review queues.");
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
