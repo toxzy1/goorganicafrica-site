@@ -135,5 +135,9 @@ if (!newsSync.includes("ageDays > 30")) {
 if (!opportunitySync.includes("age > 90")) {
   throw new Error("Opportunity discovery must reject items older than its 90-day discovery window.");
 }
+if (!opportunitySync.includes('candidate.hostname === "news.google.com"') ||
+    !opportunitySync.includes('hostname !== feed.host && !hostname.endsWith("." + feed.host)')) {
+  throw new Error("Opportunity discovery must resolve aggregator links and validate the final source hostname.");
+}
 
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
