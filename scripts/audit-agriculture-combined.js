@@ -68,16 +68,16 @@ function groupSameTitleUrl(records) {
   for (const record of records) {
     const code = String(record.country_code || "").toUpperCase();
     const url = normalizeUrl(record.url);
-    const title = String(record.title || record.headline || "").trim().toLowerCase().replace(/\\s+/g, " ");
+    const title = String(record.title || record.headline || "").trim().toLowerCase().replace(/\s+/g, " ");
     if (!expectedCodes.has(code) || !url || !title) continue;
-    const key = code + "\\t" + url + "\\t" + title;
+    const key = code + "\t" + url + "\t" + title;
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(record);
   }
   return [...groups.entries()].filter(([, records]) => records.length > 1)
     .map(([key, records]) => ({
-      country: key.split("\\t")[0],
-      url: key.split("\\t")[1],
+      country: key.split("\t")[0],
+      url: key.split("\t")[1],
       title: records[0].title || records[0].headline || "(untitled)",
       records: records.map((r) => ({ category: r.category || "", summary: r.summary || r.description || "" }))
     }));
@@ -129,7 +129,7 @@ for (const [label, groups] of [["RESOURCE DUPLICATES", resourceDupes], ["NEWS DU
 }
 for (const [label, groups] of [["RESOURCE SAME-TITLE URL CANDIDATES", resourceSameTitleUrl], ["NEWS SAME-TITLE URL CANDIDATES", newsSameTitleUrl]]) {
   if (!groups.length) continue;
-  console.log("\\n" + label + " (stronger duplicate candidates; summaries/categories still need human review):");
+  console.log("\n" + label + " (stronger duplicate candidates; summaries/categories still need human review):");
   for (const g of groups) {
     console.log(`- ${g.country} | ${g.title} | ${g.url}`);
     for (const r of g.records) console.log(`  • ${r.category || "uncategorized"} | ${String(r.summary).slice(0, 220)}`);
