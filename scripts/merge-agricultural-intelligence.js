@@ -13,13 +13,20 @@ function normalizeUrl(value) {
     parsed.hostname = parsed.hostname.toLowerCase();
     if ((parsed.protocol === 'https:' && parsed.port === '443') ||
         (parsed.protocol === 'http:' && parsed.port === '80')) parsed.port = '';
-    parsed.pathname = parsed.pathname.replace(/\/+$/, '') || '/';
-    return parsed.toString().replace(/\/$/, parsed.pathname === '/' ? '/' : '');
+    while (parsed.pathname.length > 1 && parsed.pathname.endsWith('/')) {
+      parsed.pathname = parsed.pathname.slice(0, -1);
+    }
+    const serialized = parsed.toString();
+    return parsed.pathname === '/'
+      ? serialized
+      : (serialized.endsWith('/') ? serialized.slice(0, -1) : serialized);
   } catch (_) {
-    return raw.replace(/#.*$/, '').replace(/\/+$/, '').toLowerCase();
+    const hashIndex = raw.indexOf('#');
+    let cleaned = hashIndex >= 0 ? raw.slice(0, hashIndex) : raw;
+    while (cleaned.endsWith('/')) cleaned = cleaned.slice(0, -1);
+    return cleaned.toLowerCase();
   }
 }
-
 function merge(baseName, supplementName, countryField, listField, bucketed) {
   const basePath = path.join(root, 'src', '_data', baseName);
   const extraPath = path.join(root, 'src', '_data', supplementName);
