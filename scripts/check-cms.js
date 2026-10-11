@@ -91,4 +91,33 @@ if (!workflow.includes("schedule:")) throw new Error("Agricultural data monitor 
 if (!workflow.includes("workflow_dispatch:")) throw new Error("Agricultural data monitor has no manual trigger.");
 if (!workflow.includes("contents: write")) throw new Error("Agricultural data monitor cannot save its review queue.");
 
-console.log("CMS end-to-end configuration checks passed.");
+// Automated news/opportunity discovery must create a human-review PR rather
+// than writing candidates directly to the production branch.
+const intelligenceWorkflow = read(".github/workflows/sync-agricultural-intelligence.yml");
+if (!intelligenceWorkflow.includes("peter-evans/create-pull-request@v7")) {
+  throw new Error("Agricultural intelligence sync must use a pull request for review.");
+}
+if (!intelligenceWorkflow.includes("draft: true")) {
+  throw new Error("Agricultural intelligence sync pull requests must start as drafts.");
+}
+if (/\\bgit\\s+push\\b|\\bgit\\s+commit\\s+-m\\b/.test(intelligenceWorkflow)) {
+  throw new Error("Agricultural intelligence sync must not commit or push directly to a production branch.");
+}
+if (!intelligenceWorkflow.includes("pull-requests: write")) {
+  throw new Error("Agricultural intelligence sync needs permission to open review pull requests.");
+}
+
+const cmsSettings = JSON.parse(read("src/_data/cmsSettings.json"));
+const governance = cmsSettings.content_governance || {};
+const translation = cmsSettings.translation_control || {};
+if (governance.allow_unreviewed_publication !== false) {
+  throw new Error("CMS must not allow unreviewed content to be published.");
+}
+if (governance.require_translation_review_before_publication !== true) {
+  throw new Error("Translations must require review before publication.");
+}
+if (translation.publish_machine_translations_automatically !== false) {
+  throw new Error("Machine translations must not be published automatically.");
+}
+
+console.log("CMS end-to-end configuration and review-first publishing checks passed.");
