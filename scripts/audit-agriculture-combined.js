@@ -104,7 +104,9 @@ const newsSupplement = flattenNews(read("src/_data/agriculturalNewsSupplement.js
 const resources = [...resourcePrimary, ...resourceSupplement];
 const news = [...newsPrimary, ...newsSupplement];
 const resourceDupes = groupDuplicates(resources);
-const newsDupes = groupDuplicates(news);\nconst resourceSameTitleUrl = groupSameTitleUrl(resources);\nconst newsSameTitleUrl = groupSameTitleUrl(news);
+const newsDupes = groupDuplicates(news);
+const resourceSameTitleUrl = groupSameTitleUrl(resources);
+const newsSameTitleUrl = groupSameTitleUrl(news);
 const resourceOverlaps = overlapGroups(resourcePrimary, resourceSupplement);
 const newsOverlaps = overlapGroups(newsPrimary, newsSupplement);
 const resourceCounts = counts(resources);
@@ -116,7 +118,8 @@ console.log("GoOrganicAfrica combined agriculture data audit (report-only)");
 console.log(`Resources: ${resourcePrimary.length} primary + ${resourceSupplement.length} supplemental = ${resources.length} raw records`);
 console.log(`News: ${newsPrimary.length} primary + ${newsSupplement.length} supplemental = ${news.length} raw records`);
 console.log(`Resource same-country normalized duplicate groups: ${resourceDupes.length}; primary/supplement overlaps: ${resourceOverlaps.length}`);
-console.log(`News same-country normalized duplicate groups: ${newsDupes.length}; primary/supplement overlaps: ${newsOverlaps.length}`);\nconsole.log(`Same-title + same-URL review candidates: ${resourceSameTitleUrl.length} resource groups; ${newsSameTitleUrl.length} news groups`);
+console.log(`News same-country normalized duplicate groups: ${newsDupes.length}; primary/supplement overlaps: ${newsOverlaps.length}`);
+console.log(`Same-title + same-URL review candidates: ${resourceSameTitleUrl.length} resource groups; ${newsSameTitleUrl.length} news groups`);
 console.log(`Countries with resources: ${EXPECTED.length - resourceGaps.length}/${EXPECTED.length}${resourceGaps.length ? " — gaps: " + resourceGaps.join(", ") : ""}`);
 console.log(`Countries with news: ${EXPECTED.length - newsGaps.length}/${EXPECTED.length}${newsGaps.length ? " — gaps: " + newsGaps.join(", ") : ""}`);
 for (const [label, groups] of [["RESOURCE DUPLICATES", resourceDupes], ["NEWS DUPLICATES", newsDupes]]) {
