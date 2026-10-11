@@ -175,4 +175,10 @@ if (newsSync.includes(".slice(0, 20)")) {
   throw new Error("News discovery must not truncate and silently delete existing country records.");
 }
 
+
+const freshnessMonitor = read("scripts/monitor-agricultural-data.js");
+if (!freshnessMonitor.includes("missing_verification_date") || !freshnessMonitor.includes("!r.verified||age(r.verified)>14") || !freshnessMonitor.includes("return !d||age(d)>180")) {
+  throw new Error("Agricultural freshness monitor must flag missing verification dates, not treat them as fresh.");
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
