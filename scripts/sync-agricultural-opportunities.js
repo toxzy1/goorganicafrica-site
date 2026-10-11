@@ -56,54 +56,104 @@ function slugify(v) { return v.toLowerCase().normalize("NFKD").replace(/[\u0300-
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
   const today = new Date().toISOString().slice(0,10);
-  const existing = new Set((data.records || []).map(r => r.url || r.title));
+  // A regional story may legitimately be relevant to more than one country.
+  // Deduplicate by country + canonical URL/title, not URL globally.
+  const existing = new Set((data.records || []).map(candidateKey));
   let added = 0;
 
-  const FEEDS = buildFeeds(data.countries);
+  // Opportunities data is a flat records list; country metadata lives in the
+  // agricultural resources registry. Do not assume opportunities.json has a
+  // top-level countries array.
+  const registryPath = path.join(process.cwd(), "src", "_data", "agriculturalResources.json");
+  const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
+  const countries = Array.isArray(data.countries) && data.countries.length
+    ? data.countries
+    : (registry.countries || []).map(c => ({ code: c.code, name: c.name }));
+  if (!countries.length) throw new Error("No country registry found for agricultural opportunity discovery.");
 
-  for (const feed of FEEDS) {
-    const response = await fetch(feed.url, {headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}});
-    if (!response.ok) throw new Error(feed.name + ": HTTP " + response.status);
-    const xml = await response.text();
-    const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
+  const FEEDS = buildFeeds(countries);
 
-    for (const item of items) {
-      const title = field(item, "title");
-      const summary = field(item, "description");
-      let link = url(field(item, "link"));
-      const sourceLink = url(field(item, "source"));
-      if (link.includes("news.google.com") && sourceLink) link = sourceLink;
-      const published = date(field(item, "pubDate") || field(item, "dc:date"));
-      if (!title || !link || !published || !link.includes(feed.host) || existing.has(link) || existing.has(title)) continue;
-
-      const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
-      if (age > 90) continue;
-
-      const hay = (title + " " + summary).toLowerCase();
-      const country = feed.country;
-      if (!country) continue;
-      data.records = data.records || [];
-      data.records.unshift({
-        title,
-        description: summary.slice(0, 600),
-        url: link,
-        source: feed.source,
-        verified: today,
-        status: "review",
-        lifecycle: "needs_review",
-        source_tier: 1,
-        country_code: country.code,
-        type: "Opportunity / resource candidate",
-        amount: "",
-        eligibility: "",
-        beneficiary: "",
-        deadline: "",
-        application_url: link,
-        contact: ""
+  async function processFeed(feed) {
+    try {
+      const response = await fetch(feed.url, {
+        headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"},
+        signal: AbortSignal.timeout(15000)
       });
-      existing.add(link);
-      existing.add(title);
-      added++;
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      const xml = await response.text();
+      const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
+      const candidates = [];
+
+      for (const item of items) {
+        const title = field(item, "title");
+        const summary = field(item, "description");
+        let link = url(field(item, "link"));
+        if (link.includes("news.google.com")) {
+          try {
+            const resolved = await fetch(link, {
+              redirect: "follow",
+              headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"},
+              signal: AbortSignal.timeout(10000)
+            });
+            if (resolved.ok && resolved.url && !resolved.url.includes("news.google.com")) {
+              link = resolved.url;
+            } else {
+              continue;
+            }
+          } catch (_) {
+            continue;
+          }
+        }
+        const published = date(field(item, "pubDate") || field(item, "dc:date"));
+        if (!title || !link || !published || !link.includes(feed.host)) continue;
+        const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
+        if (age > 90) continue;
+        if (!feed.country) continue;
+
+        candidates.push({
+          title,
+          country: feed.country.name,
+          code: feed.country.code,
+          category: categoryFor(title, summary),
+          summary: summary.slice(0, 600),
+          url: link,
+          source: feed.source,
+          verified: today,
+          status: "review",
+          lifecycle: "needs_review",
+          source_tier: 1,
+          type: "Opportunity / resource candidate",
+          amount: "",
+          eligibility: "",
+          beneficiary: "",
+          deadline: "",
+          application_url: link,
+          contact: ""
+        });
+      }
+      return candidates;
+    } catch (error) {
+      console.warn("Skipping unavailable opportunity feed " + feed.name + ": " + error.message);
+      return [];
+    }
+  }
+
+  // Bounded concurrency prevents one slow or temporarily unavailable source
+  // from blocking all country/source combinations. Candidates are merged
+  // sequentially below so duplicate checks remain deterministic.
+  const FEED_BATCH_SIZE = 8;
+  for (let i = 0; i < FEEDS.length; i += FEED_BATCH_SIZE) {
+    const batch = FEEDS.slice(i, i + FEED_BATCH_SIZE);
+    const results = await Promise.all(batch.map(processFeed));
+    for (const candidates of results) {
+      for (const candidate of candidates) {
+        const key = candidateKey(candidate);
+        if (existing.has(key)) continue;
+        data.records = data.records || [];
+        data.records.unshift(candidate);
+        existing.add(key);
+        added++;
+      }
     }
   }
 
