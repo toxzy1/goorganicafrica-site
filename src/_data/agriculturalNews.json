@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-11",
   "editorial_policy": "Publish only current, verifiable agricultural news from official or authoritative sources. Store the original source URL and verification date. Do not copy full articles.",
   "categories": [
     "general",
@@ -376,6 +376,75 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "category": "policy",
+          "title": "MoFA launches National Horticultural Seed Roadmap",
+          "summary": "Ghana's Ministry of Food and Agriculture launched the National Horticultural Seed Roadmap on 17 September 2026.",
+          "url": "https://mofa.gov.gh/site/index.php/media-centre/latest-news/item/727-mofa-launches-national-horticultural-seed-roadmap",
+          "source": "Ghana Ministry of Food and Agriculture (MoFA)",
+          "published": "2026-09-17",
+          "verified": "2026-10-05",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le MoFA lance la feuille de route nationale sur les semences horticoles",
+              "summary": "Le ministère ghanéen de l'Alimentation et de l'Agriculture a lancé la feuille de route nationale sur les semences horticoles le 17 septembre 2026."
+            },
+            "ar": {
+              "title": "وزارة الغذاء والزراعة تطلق خارطة الطريق الوطنية لبذور البستنة",
+              "summary": "أطلقت وزارة الغذاء والزراعة في غانا خارطة الطريق الوطنية لبذور البستنة في 17 سبتمبر 2026."
+            },
+            "pt": {
+              "title": "MoFA lança o roteiro nacional de sementes hortícolas",
+              "summary": "O Ministério da Alimentação e Agricultura do Gana lançou o roteiro nacional de sementes hortícolas em 17 de setembro de 2026."
+            },
+            "sw": {
+              "title": "MoFA yazindua mpango wa kitaifa wa mbegu za mazao ya bustani",
+              "summary": "Wizara ya Chakula na Kilimo ya Ghana ilizindua mpango wa kitaifa wa mbegu za mazao ya bustani tarehe 17 Septemba 2026."
+            }
+          }
+        },
+        {
+          "category": "crops",
+          "title": "Ghana launches Tomato Self-Sufficiency Initiative",
+          "summary": "The Ministry of Food and Agriculture launched the Ghana Tomato Self-Sufficiency Initiative to increase domestic tomato production.",
+          "url": "https://mofa.gov.gh/site/index.php/media-centre/latest-news/item/726-ghana-launches-tomato-self-sufficiency-initiative-to-boost-local-production",
+          "source": "Ghana Ministry of Food and Agriculture (MoFA)",
+          "published": "2026-09-15",
+          "verified": "2026-10-05",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Ghana lance une initiative pour l'autosuffisance en tomates",
+              "summary": "Le ministère de l'Alimentation et de l'Agriculture a lancé l'Initiative ghanéenne pour l'autosuffisance en tomates afin d'accroître la production nationale de tomates."
+            },
+            "ar": {
+              "title": "غانا تطلق مبادرة الاكتفاء الذاتي من الطماطم",
+              "summary": "أطلقت وزارة الغذاء والزراعة مبادرة غانا للاكتفاء الذاتي من الطماطم لزيادة إنتاج الطماطم محلياً."
+            },
+            "pt": {
+              "title": "Gana lança iniciativa de autossuficiência em tomate",
+              "summary": "O Ministério da Alimentação e Agricultura lançou a Iniciativa do Gana para a Autossuficiência em Tomate para aumentar a produção nacional de tomate."
+            },
+            "sw": {
+              "title": "Ghana yazindua mpango wa kujitosheleza kwa nyanya",
+              "summary": "Wizara ya Chakula na Kilimo imezindua Mpango wa Ghana wa Kujitosheleza kwa Nyanya ili kuongeza uzalishaji wa nyanya nchini."
+            }
+          }
+        },
+        {
+          "category": "crops",
+          "title": "AfDB project page: Regional Program for Rice Development in West Africa (REWARD G2)",
+          "summary": "The African Development Bank's project page covers the regional REWARD G2 programme, which supports rice-sector development and food security across participating West African countries.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-z1-aa0-185",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-05-26",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -536,6 +605,19 @@
           "source_id": "world-bank",
           "source_tier": 1,
           "published": "2026-03-26",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "grants-programmes",
+          "title": "AfDB publishes Kenya ENABLE Youth project implementation update",
+          "summary": "The African Development Bank published a September 2026 implementation update for ENABLE Youth Kenya, an ongoing programme supporting youth participation and employment in agriculture.",
+          "published": "2026-09-13",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-ke-aaz-014",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
@@ -758,6 +840,48 @@
           "verified": "2026-10-11",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "title": "South African women farmers expand market access through targeted rural investment",
+          "summary": "The African Development Bank reports that 25 women farmers in Mpumalanga moved into supplying retailers, school-feeding schemes and lodges after receiving support with training, technology and financial literacy.",
+          "url": "https://www.afdb.org/en/success-stories/south-africas-mpumalanga-fields-quiet-revolution-underway-and-women-farmers-are-leading-it-91547",
+          "source": "African Development Bank",
+          "published": "2026-03-13",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "farmer-support",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "FAO forecasts another above-average cereal harvest for South Africa in 2026",
+          "summary": "FAO's April 2026 country brief forecast a strong South African cereal harvest, including about 17.1 million tonnes of maize, while noting that reduced export demand and abundant supply were putting downward pressure on maize prices.",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ZA",
+          "source": "FAO Global Information and Early Warning System (GIEWS)",
+          "published": "2026-04-22",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "markets",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO prévoit une nouvelle récolte céréalière supérieure à la moyenne en Afrique du Sud en 2026",
+              "summary": "Le bulletin pays d’avril 2026 prévoit une récolte importante, dont environ 17,1 millions de tonnes de maïs, tout en signalant que l’offre abondante et la baisse de la demande à l’exportation font pression sur les prix du maïs."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تتوقع محصول حبوب أعلى من المتوسط في جنوب أفريقيا عام 2026",
+              "summary": "توقع التقرير القطري الصادر في أبريل 2026 محصولاً كبيراً يشمل نحو 17.1 مليون طن من الذرة، مع الإشارة إلى أن وفرة المعروض وتراجع طلب التصدير يضغطان على أسعار الذرة."
+            },
+            "pt": {
+              "title": "FAO prevê outra colheita de cereais acima da média na África do Sul em 2026",
+              "summary": "O boletim nacional de abril de 2026 prevê uma colheita elevada, incluindo cerca de 17,1 milhões de toneladas de milho, embora a oferta abundante e a menor procura externa pressionem os preços."
+            },
+            "sw": {
+              "title": "FAO yatabiri mavuno mengine ya nafaka yaliyo juu ya wastani Afrika Kusini mwaka 2026",
+              "summary": "Taarifa ya Aprili 2026 inatabiri mavuno makubwa, yakiwemo takriban tani milioni 17.1 za mahindi, huku usambazaji mwingi na kupungua kwa mahitaji ya mauzo ya nje kukishusha bei."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -859,6 +983,19 @@
           "published": "2026-03-26",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "grants-programmes",
+          "title": "AfDB project page: Zambia Cashew Development Programme Phase II preparation",
+          "summary": "The African Development Bank's project record covers preparation studies for Zambia's Cashew Development Programme Phase II, including lessons learned, feasibility and environmental studies.",
+          "published": "2026-06-15",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-zm-aa0-057",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
           "status": "official"
         }
       ],
@@ -984,6 +1121,47 @@
           "published": "2025-05-14",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "grants-programmes",
+          "title": "IFAD's Youth Agropastoral Entrepreneurship Promotion Programme Phase II in Cameroon",
+          "summary": "IFAD's official project page describes Phase II of Cameroon's youth agropastoral entrepreneurship programme, including business incubation, access to finance and financial services, and support for young rural entrepreneurs.",
+          "url": "https://www.ifad.org/en/w/projects/2000004318",
+          "source": "IFAD",
+          "published": "2025-05-14",
+          "verified": "2026-10-10",
+          "status": "official",
+          "review_after": "2026-11-09"
+        },
+        {
+          "title": "FAO warns that conflict and climate shocks continue to affect Cameroon's 2026 crop outlook",
+          "summary": "FAO's April 2026 country brief reports that conflict in the Northwest and Southwest and elevated input costs are constraining farmers, while maize, millet and sorghum planting and harvest schedules vary across the country's rainfall zones.",
+          "url": "https://cb.apps.fao.org/country.jsp?code=CMR",
+          "source": "FAO Global Information and Early Warning System (GIEWS)",
+          "published": "2026-04-07",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "markets-food-security",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO avertit que les conflits et les chocs climatiques affectent encore les perspectives agricoles du Cameroun en 2026",
+              "summary": "Le bulletin pays d’avril 2026 indique que les conflits dans le Nord-Ouest et le Sud-Ouest ainsi que le coût élevé des intrants limitent les agriculteurs, tandis que les calendriers de semis et de récolte varient selon les zones pluviométriques."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تحذر من استمرار تأثير النزاعات والصدمات المناخية على محاصيل الكاميرون في 2026",
+              "summary": "يشير التقرير القطري الصادر في أبريل 2026 إلى أن النزاعات في الشمال الغربي والجنوب الغربي وارتفاع تكاليف المدخلات يحدان من قدرة المزارعين، كما تختلف مواعيد الزراعة والحصاد حسب مناطق الأمطار."
+            },
+            "pt": {
+              "title": "FAO alerta que conflitos e choques climáticos continuam a afetar as perspetivas agrícolas dos Camarões em 2026",
+              "summary": "O boletim nacional de abril de 2026 indica que os conflitos no Noroeste e Sudoeste e os elevados custos dos insumos limitam os agricultores, enquanto os calendários de sementeira e colheita variam conforme as zonas de precipitação."
+            },
+            "sw": {
+              "title": "FAO yaonya kuwa migogoro na mishtuko ya tabianchi inaendelea kuathiri matarajio ya mazao Kamerun mwaka 2026",
+              "summary": "Taarifa ya Aprili 2026 inasema migogoro Kaskazini-Magharibi na Kusini-Magharibi pamoja na gharama kubwa za pembejeo zinawazuia wakulima; ratiba za kupanda na kuvuna hutofautiana kulingana na maeneo ya mvua."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1073,6 +1251,19 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "category": "finance",
+          "title": "AfDB publishes Ethiopia Agri-MSMEs Development for Jobs project update",
+          "summary": "The African Development Bank published a September 2026 implementation progress report for the Agri-MSMEs Development for Jobs project in Ethiopia.",
+          "published": "2026-09-13",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-et-aaz-002",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -1087,7 +1278,20 @@
       "name": "Algeria",
       "slug": "algeria",
       "flag": "🇩🇿",
-      "articles": [],
+      "articles": [
+        {
+          "title": "Algeria introduces supplier credit to help cereal producers finance seasonal agricultural inputs",
+          "summary": "Algeria's Ministry of Agriculture announced a supplier-credit mechanism to help cereal producers obtain crop-protection products, seeds and fertilisers, with payment deferred until after the crop is marketed.",
+          "url": "https://madr.gov.dz/2026/04/09/%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD%D8%A9-%D8%AA%D8%B7%D9%84%D9%82-%D9%82%D8%B1%D8%B6-%D8%A7%D9%84%D9%85%D9%88%D8%B1%D8%AF-%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%A7/",
+          "source": "Ministry of Agriculture, Rural Development and Fisheries — Algeria",
+          "published": "2026-04-09",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "finance",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Algérie",
         "ar": "الجزائر",
@@ -1189,6 +1393,19 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "category": "livestock",
+          "title": "Benin and AfDB launch sustainable aquaculture and fisheries value-chain project",
+          "summary": "The African Development Bank and Benin launched the PROMAC project to expand sustainable aquaculture, improve fisheries value chains and strengthen food security. This is the original project launch story, not a 2026 progress report.",
+          "published": "2024-05-17",
+          "url": "https://www.afdb.org/en/news-and-events/press-releases/benin-government-and-african-development-bank-project-launched-boost-fisheries-and-aquaculture-sector",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -1216,6 +1433,48 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "title": "IFAD project page: Botswana Livestock Commercialization Project",
+          "summary": "IFAD's official project page describes the Botswana Livestock Commercialization Project, including its financing structure and design report, with aims to strengthen livestock commercialization and market participation.",
+          "url": "https://www.ifad.org/en/w/projects/2000005356",
+          "source": "International Fund for Agricultural Development (IFAD)",
+          "published": "2025-12-09",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "livestock",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "Botswana advances agricultural standards to improve market access and food safety",
+          "summary": "FAO and Botswana's Ministry of Entrepreneurship scaled up Good Agricultural Practices and Quality Management Systems across horticulture, cereals, pulses and small-stock value chains. The initiative developed national codes of practice, trained farmers and extension officers, and supported certification of agro-processed products.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/botswana-advances-agricultural-standards-to-boost-market-access-and-food-safety/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2025-11-04",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "food-safety",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Botswana améliore les normes agricoles pour faciliter l’accès aux marchés et renforcer la sécurité sanitaire des aliments",
+              "summary": "La FAO et le ministère botswanais de l’Entrepreneuriat ont développé les bonnes pratiques agricoles et les systèmes de gestion de la qualité dans plusieurs filières, formé des agriculteurs et des agents de vulgarisation et soutenu la certification de produits transformés."
+            },
+            "ar": {
+              "title": "بوتسوانا تطور المعايير الزراعية لتحسين الوصول إلى الأسواق وسلامة الأغذية",
+              "summary": "عملت منظمة الأغذية والزراعة ووزارة ريادة الأعمال في بوتسوانا على توسيع الممارسات الزراعية الجيدة وأنظمة إدارة الجودة في عدة سلاسل قيمة، وتدريب المزارعين وموظفي الإرشاد ودعم اعتماد المنتجات المصنعة."
+            },
+            "pt": {
+              "title": "Botsuana reforça normas agrícolas para melhorar o acesso aos mercados e a segurança alimentar",
+              "summary": "A FAO e o Ministério do Empreendedorismo do Botsuana ampliaram as boas práticas agrícolas e os sistemas de gestão da qualidade em várias cadeias de valor, formaram agricultores e extensionistas e apoiaram a certificação de produtos transformados."
+            },
+            "sw": {
+              "title": "Botswana yaimarisha viwango vya kilimo ili kuboresha upatikanaji wa masoko na usalama wa chakula",
+              "summary": "FAO na Wizara ya Ujasiriamali ya Botswana zilipanua mbinu bora za kilimo na mifumo ya usimamizi wa ubora katika minyororo kadhaa ya thamani, zikawafundisha wakulima na maafisa ugani na kusaidia uthibitishaji wa bidhaa zilizochakatwa."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1290,6 +1549,48 @@
           "summary": "The African Development Bank published an October 2026 procurement notice for studies and construction supervision for a maize-processing unit and livestock-feed unit under Burundi's PADCAE-B agricultural and livestock value-chain project.",
           "url": "https://www.afdb.org/en/projects-and-operations/p-bi-a00-008",
           "published": "2026-10-05"
+        },
+        {
+          "title": "AfDB publishes Burundi emergency agricultural production project completion report",
+          "summary": "The African Development Bank's completion report reviews Burundi's emergency agricultural production project, which aimed to strengthen food security and support agricultural transformation and value-chain development.",
+          "url": "https://www.afdb.org/en/documents/burundi-projet-de-production-agricole-durgence-au-burundi-rapport-dachevement-de-projet",
+          "source": "African Development Bank",
+          "published": "2025-10-30",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "food-security",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "Burundi launches national project to assess and strengthen agroecological practices",
+          "summary": "FAO, the European Union and Burundi's Ministry of Environment, Agriculture and Livestock launched the TAPE+ national project to collect data on farming systems and guide policies supporting more resilient and environmentally sustainable agriculture.",
+          "url": "https://www.fao.org/plant-production-protection/news-and-events/news/news-detail/a-multidimensional-approach-to-agriculture--tool-for-agroecology-performance-evaluation-%28tape-%29--national-project-launches-in-burundi/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2026-05-15",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agroecology",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Burundi lance un projet national pour évaluer et renforcer les pratiques agroécologiques",
+              "summary": "La FAO, l’Union européenne et le ministère burundais chargé de l’agriculture ont lancé le projet national TAPE+ pour recueillir des données sur les systèmes agricoles et orienter les politiques vers une agriculture plus résiliente et durable."
+            },
+            "ar": {
+              "title": "بوروندي تطلق مشروعاً وطنياً لتقييم الممارسات الزراعية الإيكولوجية وتعزيزها",
+              "summary": "أطلقت منظمة الأغذية والزراعة والاتحاد الأوروبي والوزارة البوروندية المسؤولة عن الزراعة مشروع TAPE+ الوطني لجمع بيانات عن النظم الزراعية وتوجيه السياسات نحو زراعة أكثر قدرة على الصمود واستدامة."
+            },
+            "pt": {
+              "title": "Burundi lança projeto nacional para avaliar e reforçar práticas agroecológicas",
+              "summary": "A FAO, a União Europeia e o ministério burundês responsável pela agricultura lançaram o projeto nacional TAPE+ para recolher dados sobre sistemas agrícolas e orientar políticas para uma agricultura mais resiliente e sustentável."
+            },
+            "sw": {
+              "title": "Burundi yazindua mradi wa kitaifa kutathmini na kuimarisha mbinu za agroikolojia",
+              "summary": "FAO, Umoja wa Ulaya na wizara ya Burundi inayohusika na kilimo zilizindua mradi wa kitaifa wa TAPE+ kukusanya data kuhusu mifumo ya kilimo na kuelekeza sera katika kilimo endelevu kinachostahimili changamoto."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1324,6 +1625,17 @@
           "published": "2026-09-10",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "grants-programmes",
+          "title": "IFAD project page: PRO-AGUA resilient agriculture and water access programme in Cabo Verde",
+          "summary": "IFAD's project page covers the Programme for Sustainable and Inclusive Access to Water for Resilient Agriculture, with project design documents and financing information for Cabo Verde.",
+          "url": "https://www.ifad.org/en/w/projects/2000001812",
+          "source": "IFAD",
+          "published": "2026-09-10",
+          "verified": "2026-10-10",
+          "status": "official",
+          "review_after": "2026-11-09"
         }
       ],
       "localizedNames": {
@@ -1358,6 +1670,17 @@
           "published": "2025-12-09",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "grants-programmes",
+          "title": "IFAD's Climate Resilient Agribusiness Promotion Programme in Central African Republic",
+          "summary": "IFAD's official project page describes a grant-supported programme to promote climate-resilient agribusiness in the Central African Republic, including project design and financing information.",
+          "url": "https://www.ifad.org/en/w/projects/2000004962",
+          "source": "IFAD",
+          "published": "2025-12-09",
+          "verified": "2026-10-10",
+          "status": "official",
+          "review_after": "2026-11-09"
         }
       ],
       "localizedNames": {
@@ -1372,7 +1695,20 @@
       "name": "Chad",
       "slug": "chad",
       "flag": "🇹🇩",
-      "articles": [],
+      "articles": [
+        {
+          "title": "IFAD evaluation reports stronger agricultural productivity and resilience in Chad",
+          "summary": "IFAD's Independent Office of Evaluation reported that investments in improved farming practices, small dams, compost and manure, small mechanization, soil and water conservation, and diversified livelihoods helped strengthen agricultural productivity and resilience in Chad.",
+          "url": "https://ioe.ifad.org/en/w/improved-agricultural-productivity-and-more-resilient-production-systems-achieved-in-chad",
+          "source": "Independent Office of Evaluation, IFAD",
+          "published": "2026-02-05",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "climate-resilience",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Tchad",
         "ar": "تشاد",
@@ -1385,7 +1721,50 @@
       "name": "Comoros",
       "slug": "comoros",
       "flag": "🇰🇲",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB publishes completion report for Comoros emergency agricultural production support project",
+          "summary": "The report reviews the Comoros emergency agricultural production project, which aimed to boost local food production, strengthen food-system resilience, intensify maize, potato and sweet-potato production, and support vulnerable households.",
+          "url": "https://www.afdb.org/en/documents/comoros-emergency-agricultural-production-support-project-aefpf-comores-project-completion-report",
+          "source": "African Development Bank",
+          "published": "2026-06-11",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "food-security",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "Comoros builds resilient seed systems to strengthen food security",
+          "summary": "FAO and the African Development Bank supported the SEPAREF initiative to develop Comoros' national seed system, improve locally adapted seed production, strengthen early-warning capacity and train farmers and technical staff.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/comoros-builds-resilient-seed-systems-to-strengthen-food-security/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2025-11-04",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "seeds",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Les Comores renforcent leurs systèmes semenciers pour améliorer la sécurité alimentaire",
+              "summary": "La FAO et la Banque africaine de développement ont soutenu l’initiative SEPAREF pour développer le système semencier national, améliorer la production de semences locales adaptées, renforcer l’alerte précoce et former agriculteurs et techniciens."
+            },
+            "ar": {
+              "title": "جزر القمر تبني أنظمة بذور قادرة على الصمود لتعزيز الأمن الغذائي",
+              "summary": "دعمت منظمة الأغذية والزراعة وبنك التنمية الأفريقي مبادرة SEPAREF لتطوير نظام البذور الوطني وتحسين إنتاج البذور المحلية الملائمة وتعزيز الإنذار المبكر وتدريب المزارعين والفنيين."
+            },
+            "pt": {
+              "title": "Comores desenvolve sistemas de sementes resilientes para reforçar a segurança alimentar",
+              "summary": "A FAO e o Banco Africano de Desenvolvimento apoiaram a iniciativa SEPAREF para desenvolver o sistema nacional de sementes, melhorar a produção de sementes locais adaptadas, reforçar o alerta precoce e formar agricultores e técnicos."
+            },
+            "sw": {
+              "title": "Comoro hujenga mifumo imara ya mbegu ili kuimarisha usalama wa chakula",
+              "summary": "FAO na Benki ya Maendeleo ya Afrika ziliunga mkono mpango wa SEPAREF wa kuendeleza mfumo wa kitaifa wa mbegu, kuboresha uzalishaji wa mbegu za ndani zinazofaa, kuimarisha tahadhari za mapema na kuwafundisha wakulima na wataalamu."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Comores",
         "ar": "جزر القمر",
@@ -1442,6 +1821,32 @@
           "source_tier": 1,
           "published": "2026-06-17",
           "verified": "2026-10-11",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "grants-programmes",
+          "title": "AfDB publishes DRC agricultural value-chain project progress report",
+          "summary": "The African Development Bank published a September 2026 implementation update for the PADCV-PTA project supporting agricultural value chains under the Democratic Republic of Congo's agriculture transformation programme.",
+          "published": "2026-09-13",
+          "url": "https://www.afdb.org/en/documents/republique-democratique-du-congo-projet-dappui-au-developpement-des-chaines-de-valeurs-en-soutien-au-programme-de-transformation-de-lagriculture-padcv-pta-eer-fevrier-2026",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "farmer-support",
+          "title": "FAO expands support for agricultural communities affected by Ebola in eastern DRC",
+          "summary": "FAO expanded support for communities affected by Ebola in Ituri and North Kivu, with agricultural and livelihood assistance financed through the DRC Humanitarian Fund.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/ebola--fao-expands-its-support-for-affected-communities-in-ituri-and-north-kivu/en",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-08",
+          "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
         }
@@ -1532,7 +1937,62 @@
       "name": "Egypt",
       "slug": "egypt",
       "flag": "🇪🇬",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB publishes Egypt National Drainage Programme implementation progress update",
+          "summary": "The African Development Bank's project page lists an April 2026 implementation progress report for Egypt's National Drainage Programme, which aims to improve drainage efficiency and support water-resource management for agriculture.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-eg-aac-019",
+          "source": "African Development Bank",
+          "published": "2026-04-09",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "IFAD project page: Climate-resilient on-farm water management in Egypt's Nile Valley",
+          "summary": "IFAD's official project page describes an initiative to improve on-farm water management and climate resilience for smallholders in Egypt's Nile Valley, with project design and financing information.",
+          "url": "https://www.ifad.org/en/w/projects/2000004001",
+          "source": "International Fund for Agricultural Development (IFAD)",
+          "published": "2024-12-11",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "FAO supports better harvest and post-harvest practices across Egypt's date value chain",
+          "summary": "FAO and Egypt's Ministry of Agriculture trained 150 agricultural engineers and quality-control professionals in good date-harvesting, grading, packaging, storage and food-safety practices across ten production and processing locations, aiming to reduce losses and improve market access.",
+          "url": "https://www.fao.org/egypt/news/detail/from-field-to-market--fao-supports-a-transformative-shift-in-the-quality-of-egyptian-dates-through-improved-harvest-and-post-harvest-practices/en",
+          "source": "FAO in Egypt",
+          "published": "2026-04-23",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "post-harvest",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO soutient l’amélioration des pratiques de récolte et d’après-récolte dans la filière des dattes en Égypte",
+              "summary": "La FAO et le ministère égyptien de l’Agriculture ont formé 150 ingénieurs agricoles et spécialistes du contrôle qualité aux bonnes pratiques de récolte, de tri, d’emballage, de stockage et de sécurité sanitaire des dattes dans dix zones de production."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تدعم تحسين ممارسات حصاد التمور وما بعد الحصاد في مصر",
+              "summary": "درّبت منظمة الأغذية والزراعة ووزارة الزراعة المصرية 150 مهندساً زراعياً ومتخصصاً في مراقبة الجودة على ممارسات حصاد التمور وفرزها وتعبئتها وتخزينها وسلامتها في عشر مناطق إنتاج."
+            },
+            "pt": {
+              "title": "FAO apoia melhores práticas de colheita e pós-colheita na cadeia de valor das tâmaras no Egito",
+              "summary": "A FAO e o Ministério da Agricultura do Egito formaram 150 engenheiros agrónomos e especialistas em controlo de qualidade em boas práticas de colheita, seleção, embalagem, armazenamento e segurança alimentar das tâmaras em dez zonas produtoras."
+            },
+            "sw": {
+              "title": "FAO yaunga mkono mbinu bora za uvunaji na baada ya mavuno katika mnyororo wa thamani wa tende nchini Misri",
+              "summary": "FAO na Wizara ya Kilimo ya Misri ziliwafundisha wahandisi wa kilimo na wataalamu 150 wa udhibiti wa ubora kuhusu uvunaji, upangaji, ufungashaji, uhifadhi na usalama wa tende katika maeneo kumi ya uzalishaji."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Égypte",
         "ar": "مصر",
@@ -1555,6 +2015,29 @@
           "published": "2025-12-29",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "grants-programmes",
+          "title": "IFAD's Climate Resilient Agrifood Value Chains Development Project in Equatorial Guinea",
+          "summary": "IFAD's official project page describes the Climate Resilient Agrifood Value Chains Development Project, including project design documents and the planned financing structure.",
+          "url": "https://www.ifad.org/en/w/projects/2000005185",
+          "source": "IFAD",
+          "published": "2025-12-29",
+          "verified": "2026-10-10",
+          "status": "official",
+          "review_after": "2026-11-09"
+        },
+        {
+          "title": "AfDB publishes appraisal report for Equatorial Guinea integrated agricultural value-chain project",
+          "summary": "The appraisal report covers technical, environmental and climate feasibility studies for a planned integrated agricultural value-chain investment project intended to improve productivity, climate resilience and rural livelihoods.",
+          "url": "https://www.afdb.org/en/documents/guinee-equatoriale-assistance-technique-pour-la-realisation-des-etudes-de-faisabilite-technique-et-environnementales-et-climatique-projet-de-developpement-integre-des-chaines-de-valeurs-agricoles-rapport-devaluation-de-projet",
+          "source": "African Development Bank",
+          "published": "2026-02-26",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "value-chains",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -1582,6 +2065,18 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "title": "IFAD project page: Sustainable Fisheries Livelihoods Programme in Eritrea",
+          "summary": "IFAD's official project page describes support for sustainable fisheries livelihoods in Eritrea, including small-scale fish production, processing, marketing, cooperatives and income opportunities for coastal and inland communities.",
+          "url": "https://www.ifad.org/en/w/projects/2000003988",
+          "source": "International Fund for Agricultural Development (IFAD)",
+          "published": "2024-12-16",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "fisheries",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -1606,6 +2101,36 @@
           "published": "2026-10-06",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "title": "Eswatini scales up nature-based horticulture for climate resilience and rural livelihoods",
+          "summary": "FAO, the Government of Eswatini and NAMBOARD supported smallholders with protected cultivation tunnels, drip irrigation, climate-smart horticulture training and stronger market links, including support for women- and youth-led farmer groups.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/eswatini-scales-up-nature-based-horticulture-to-boost-climate-resilience-and-rural-livelihoods/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2025-11-04",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "horticulture",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "L’Eswatini développe l’horticulture fondée sur la nature pour renforcer la résilience climatique et les moyens de subsistance ruraux",
+              "summary": "La FAO, le gouvernement de l’Eswatini et NAMBOARD ont soutenu les petits exploitants avec des tunnels de culture protégée, l’irrigation goutte à goutte, des formations horticoles adaptées au climat et de meilleurs liens avec les marchés."
+            },
+            "ar": {
+              "title": "إسواتيني توسع البستنة القائمة على الطبيعة لتعزيز القدرة على التكيف مع المناخ وسبل العيش الريفية",
+              "summary": "دعمت منظمة الأغذية والزراعة وحكومة إسواتيني وهيئة NAMBOARD صغار المزارعين بأنفاق زراعية محمية والري بالتنقيط والتدريب على البستنة الذكية مناخياً وتحسين الروابط بالأسواق."
+            },
+            "pt": {
+              "title": "Essuatíni amplia a horticultura baseada na natureza para reforçar a resiliência climática e os meios de vida rurais",
+              "summary": "A FAO, o governo de Essuatíni e a NAMBOARD apoiaram pequenos agricultores com túneis de cultivo protegido, irrigação gota a gota, formação em horticultura adaptada ao clima e melhores ligações aos mercados."
+            },
+            "sw": {
+              "title": "Eswatini yaongeza kilimo cha bustani kinachotegemea mazingira ili kuimarisha ustahimilivu wa tabianchi na maisha ya vijijini",
+              "summary": "FAO, serikali ya Eswatini na NAMBOARD ziliwasaidia wakulima wadogo kwa vichuguu vya kilimo kilicholindwa, umwagiliaji wa matone, mafunzo ya bustani yanayozingatia tabianchi na uhusiano bora na masoko."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1620,7 +2145,50 @@
       "name": "Gabon",
       "slug": "gabon",
       "flag": "🇬🇦",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB lists 2026 implementation and procurement notices for Gabon's agricultural PPP programme",
+          "summary": "The African Development Bank's project page lists 2026 notices and procurement activity for Gabon's PAPG1 agricultural and agro-industrial public-private partnership programme.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-ga-a00-003",
+          "source": "African Development Bank",
+          "published": "2026-05-19",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agribusiness",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "FAO and Gabon's agricultural guarantee company explore financing partnership for producers",
+          "summary": "FAO Gabon and the Société Gabonaise de Garantie discussed a strategic partnership to improve access to finance for agricultural producers and rural entrepreneurs through risk-sharing mechanisms and guarantees for banks and microfinance institutions.",
+          "url": "https://www.fao.org/gabon/actualites/detail/la-fao-et-la-soci%C3%A9t%C3%A9-gabonaise-de-garantie-explorent-un-partenariat-en-faveur-du-financement-agricole/fr",
+          "source": "FAO in Gabon",
+          "published": "2026-07-22",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "finance",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO et la société gabonaise de garantie étudient un partenariat de financement pour les producteurs agricoles",
+              "summary": "La FAO au Gabon et la Société Gabonaise de Garantie ont discuté d’un partenariat pour faciliter le financement des producteurs et entrepreneurs ruraux grâce au partage des risques et à des garanties pour les banques et institutions de microfinance."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة وشركة الضمان في الغابون تبحثان شراكة لتمويل المنتجين الزراعيين",
+              "summary": "بحثت منظمة الأغذية والزراعة في الغابون وشركة الضمان الغابونية شراكة لتسهيل تمويل المنتجين الزراعيين ورواد الأعمال الريفيين من خلال تقاسم المخاطر وتقديم ضمانات للبنوك ومؤسسات التمويل الأصغر."
+            },
+            "pt": {
+              "title": "FAO e sociedade gabonesa de garantias exploram parceria de financiamento para produtores agrícolas",
+              "summary": "A FAO no Gabão e a Société Gabonaise de Garantie discutiram uma parceria para facilitar o financiamento de produtores e empresários rurais através da partilha de riscos e garantias para bancos e instituições de microfinanças."
+            },
+            "sw": {
+              "title": "FAO na kampuni ya dhamana ya Gabon zachunguza ushirikiano wa ufadhili kwa wazalishaji",
+              "summary": "FAO nchini Gabon na Société Gabonaise de Garantie zilijadili ushirikiano wa kurahisisha ufadhili kwa wazalishaji wa kilimo na wajasiriamali wa vijijini kupitia kugawana hatari na dhamana kwa benki na taasisi za mikopo midogo."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Gabon",
         "ar": "الغابون",
@@ -1646,6 +2214,19 @@
           "verified": "2026-10-11",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "category": "farmer-support",
+          "title": "FAO-supported borehole improves water access in Gambian community",
+          "summary": "A borehole supported by FAO in Ngunta is easing water access and supporting rural livelihoods, agriculture and community resilience.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/ngunta-finds-relief-as-fao-supported-borehole-eases-water-tensions-and-strengthens-cross-border-peace/en",
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-16",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
         }
       ],
       "localizedNames": {
@@ -1660,7 +2241,50 @@
       "name": "Guinea",
       "slug": "guinea",
       "flag": "🇬🇳",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB publishes June 2026 implementation report for Guinea's youth agribusiness transformation project",
+          "summary": "The African Development Bank's project page lists the June 2026 implementation progress report for PATAG-EAJ, a project supporting agricultural transformation and youth entrepreneurship in Guinea.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-gn-a00-004",
+          "source": "African Development Bank",
+          "published": "2026-08-06",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "youth-agribusiness",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "FAO supports restoration of degraded landscapes in Guinea through assisted natural regeneration",
+          "summary": "FAO is supporting assisted natural regeneration in Mamou, Guinea, as a practical way to restore degraded land, strengthen ecosystem resilience and help communities respond to climate change.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/fao-supports-restoration-of-degraded-landscapes-in-guinea-through-assisted-natural-regeneration/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2026-03-30",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "land-restoration",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO soutient la restauration des paysages dégradés en Guinée grâce à la régénération naturelle assistée",
+              "summary": "La FAO soutient la régénération naturelle assistée à Mamou, en Guinée, comme moyen pratique de restaurer les terres dégradées, de renforcer la résilience des écosystèmes et d’aider les communautés à faire face au changement climatique."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تدعم استعادة الأراضي المتدهورة في غينيا عبر التجدد الطبيعي المساعد",
+              "summary": "تدعم المنظمة التجدد الطبيعي المساعد في مامو بغينيا بوصفه وسيلة عملية لاستعادة الأراضي المتدهورة وتعزيز قدرة النظم البيئية على الصمود ومساعدة المجتمعات على مواجهة تغير المناخ."
+            },
+            "pt": {
+              "title": "FAO apoia a recuperação de paisagens degradadas na Guiné através da regeneração natural assistida",
+              "summary": "A FAO apoia a regeneração natural assistida em Mamou, na Guiné, como uma forma prática de restaurar terras degradadas, reforçar a resiliência dos ecossistemas e ajudar as comunidades a enfrentar as alterações climáticas."
+            },
+            "sw": {
+              "title": "FAO yaunga mkono kurejesha mandhari yaliyoharibika nchini Guinea kupitia uotaji upya wa asili unaosaidiwa",
+              "summary": "FAO inaunga mkono uotaji upya wa asili unaosaidiwa huko Mamou, Guinea, kama njia ya kurejesha ardhi iliyoharibika, kuimarisha ustahimilivu wa mifumo ikolojia na kusaidia jamii kukabiliana na mabadiliko ya tabianchi."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Guinée",
         "ar": "غينيا",
@@ -1683,6 +2307,48 @@
           "published": "2026-09-30",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "title": "World Bank project document outlines Guinea-Bissau Sustainable Agriculture and Rural Development Project",
+          "summary": "The World Bank's project appraisal document outlines a proposed five-year programme to increase agricultural productivity, market access and climate resilience, with support for family farms and selected agrifood value chains.",
+          "url": "https://documents1.worldbank.org/curated/en/099042225052529510/pdf/P509731-25303c17-629e-4884-aff3-7148ab728254.pdf",
+          "source": "World Bank",
+          "published": "2025-04-22",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "rural-development",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "FAO strengthens Guinea-Bissau's cashew value chain through sustainable practices and income diversification",
+          "summary": "FAO's One Country, One Priority Product initiative is supporting Guinea-Bissau's key cashew sector with producer mapping, good agricultural practices and capacity building to improve productivity, sustainability, local processing and rural incomes.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/fao-strengthens-the-cashew-nut-value-chain-in-guinea-bissau-through-sustainable-practices-and-income-diversification/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2026-03-16",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "value-chains",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO renforce la filière cajou de la Guinée-Bissau grâce à des pratiques durables et à la diversification des revenus",
+              "summary": "L’initiative Un pays, un produit prioritaire de la FAO soutient la filière cajou, principal produit d’exportation de la Guinée-Bissau, par la cartographie des producteurs, la formation aux bonnes pratiques agricoles et le renforcement de la transformation locale."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة تعزز سلسلة قيمة الكاجو في غينيا بيساو بالممارسات المستدامة وتنويع الدخل",
+              "summary": "تدعم مبادرة المنظمة «بلد واحد، منتج ذو أولوية واحدة» قطاع الكاجو، وهو أهم صادرات غينيا بيساو، من خلال حصر المنتجين والتدريب على الممارسات الزراعية الجيدة وتعزيز التصنيع المحلي."
+            },
+            "pt": {
+              "title": "FAO reforça a cadeia de valor do caju na Guiné-Bissau com práticas sustentáveis e diversificação de rendimentos",
+              "summary": "A iniciativa da FAO Um País, Um Produto Prioritário apoia o caju, principal produto de exportação da Guiné-Bissau, através do mapeamento de produtores, formação em boas práticas agrícolas e reforço do processamento local."
+            },
+            "sw": {
+              "title": "FAO yaimarisha mnyororo wa thamani wa korosho nchini Guinea-Bissau kupitia mbinu endelevu na utofauti wa mapato",
+              "summary": "Mpango wa FAO wa Nchi Moja, Bidhaa Moja ya Kipaumbele unaunga mkono korosho, bidhaa kuu ya mauzo ya nje ya Guinea-Bissau, kupitia utambuzi wa wazalishaji, mafunzo ya mbinu bora za kilimo na kuimarisha uchakataji wa ndani."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -1697,7 +2363,50 @@
       "name": "Lesotho",
       "slug": "lesotho",
       "flag": "🇱🇸",
-      "articles": [],
+      "articles": [
+        {
+          "title": "World Bank documents how Lesotho smallholder farmers expanded climate-smart vegetable businesses",
+          "summary": "The World Bank's feature story follows smallholder farmers who used matching grants, irrigation, protected cultivation and market links to expand vegetable production and create rural jobs in Lesotho.",
+          "url": "https://www.worldbank.org/en/news/feature/2022/10/13/transforming-lesotho-s-farmers-into-entrepreneurs",
+          "source": "World Bank",
+          "published": "2022-10-13",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "farmer-support",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "International Day of Potato 2026 highlights Lesotho's potato value chain and rural livelihoods",
+          "summary": "FAO's global potato observance in Maseru highlighted Lesotho's plans to expand potato production, improve access to quality seed and agronomic training, and strengthen market opportunities for farmers through its One Country One Priority Product initiative.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/international-day-of-potato-2026--fao-highlights-potatoes-as-a-driver-of-resilient-livelihoods-and-agrifood-systems/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2026-05-29",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "crop-value-chain",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La Journée internationale de la pomme de terre 2026 met en valeur la filière et les moyens de subsistance ruraux du Lesotho",
+              "summary": "La célébration mondiale organisée à Maseru par la FAO a souligné les projets du Lesotho visant à accroître la production de pommes de terre, améliorer l’accès aux semences de qualité et à la formation agronomique, et élargir les débouchés commerciaux."
+            },
+            "ar": {
+              "title": "اليوم الدولي للبطاطس 2026 يبرز سلسلة قيمة البطاطس وسبل العيش الريفية في ليسوتو",
+              "summary": "سلط الاحتفال العالمي الذي نظمته منظمة الأغذية والزراعة في ماسيرو الضوء على خطط ليسوتو لزيادة إنتاج البطاطس وتحسين الوصول إلى البذور الجيدة والتدريب الزراعي وتوسيع فرص التسويق للمزارعين."
+            },
+            "pt": {
+              "title": "Dia Internacional da Batata 2026 destaca a cadeia de valor da batata e os meios de vida rurais no Lesoto",
+              "summary": "A celebração global organizada pela FAO em Maseru destacou os planos do Lesoto para aumentar a produção de batata, melhorar o acesso a sementes de qualidade e formação agronómica e ampliar as oportunidades de mercado para os agricultores."
+            },
+            "sw": {
+              "title": "Siku ya Kimataifa ya Viazi 2026 yaangazia mnyororo wa thamani wa viazi na maisha ya vijijini Lesotho",
+              "summary": "Maadhimisho ya kimataifa yaliyoandaliwa na FAO mjini Maseru yalionyesha mipango ya Lesotho ya kuongeza uzalishaji wa viazi, kuboresha upatikanaji wa mbegu bora na mafunzo ya kilimo, na kupanua fursa za masoko kwa wakulima."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Lesotho",
         "ar": "ليسوتو",
@@ -1744,7 +2453,20 @@
       "name": "Libya",
       "slug": "libya",
       "flag": "🇱🇾",
-      "articles": [],
+      "articles": [
+        {
+          "title": "Libyan partners advance Marwat 2 project coordination for sustainable agricultural water management",
+          "summary": "A January 2026 technical meeting involving FAO and Libyan institutions discussed the Marwat 2 project, scientific evaluation of agricultural projects, more efficient irrigation-water use and data-informed planning.",
+          "url": "https://loae.ly/en/a-technical-meeting-for-the-marwat-2-project-was-held-today-wednesday-january-7-2026/",
+          "source": "Libyan Organization for Agriculture and Environment (LOAE)",
+          "published": "2026-01-07",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Libye",
         "ar": "ليبيا",
@@ -1792,6 +2514,32 @@
           "published": "2026-05-08",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "crops",
+          "title": "AfDB project page: Lower Mangoky Irrigation Area Extension Project Phase II",
+          "summary": "The African Development Bank's project page lists the Lower Mangoky Irrigation Area Extension Project Phase II in Madagascar and its March 2026 appraisal report.",
+          "published": "2026-03-17",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-mg-a00-013",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "status": "official"
+        },
+        {
+          "category": "weather-climate",
+          "title": "AfDB approves emergency support for communities affected by Cyclone Gezani in Madagascar",
+          "summary": "The African Development Bank's project page records a US$500,000 emergency grant to support communities affected by Cyclone Gezani, including food-security assistance and resilience to recurring climate shocks.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-mg-a00-018",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-05-11",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
           "status": "official"
         }
       ],
@@ -1842,6 +2590,19 @@
           "source": "World Bank Group",
           "published": "2026-02-01",
           "verified": "2026-10-07",
+          "status": "official"
+        },
+        {
+          "category": "weather-climate",
+          "title": "AfDB publishes Malawi fisheries, aquaculture and watershed project update",
+          "summary": "The African Development Bank's September 2026 agriculture update reports implementation progress on Malawi's sustainable fisheries, aquaculture development and watershed management project.",
+          "published": "2026-09-13",
+          "url": "https://www.afdb.org/en/documents/malawi-sustainable-fisheries-aquaculture-and-watershed-management-project-ipr-december-2025",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
           "status": "official"
         }
       ],
@@ -1920,7 +2681,20 @@
       "name": "Mauritania",
       "slug": "mauritania",
       "flag": "🇲🇷",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB updates Mauritania Agricultural Transformation Support Project implementation record",
+          "summary": "The African Development Bank's project page lists the November 2025 implementation progress report for Mauritania's PATAM agricultural transformation project, including activity updates and procurement notices.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-mr-aac-011",
+          "source": "African Development Bank",
+          "published": "2026-01-15",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agribusiness",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Mauritanie",
         "ar": "موريتانيا",
@@ -1933,7 +2707,51 @@
       "name": "Mauritius",
       "slug": "mauritius",
       "flag": "🇲🇺",
-      "articles": [],
+      "articles": [
+        {
+          "title": "Mauritius presents grants, vouchers and equipment schemes to support planters and breeders",
+          "summary": "The Ministry of Agro-Industry reported support schemes for planters and breeders, including vouchers, grants, cheques and agricultural equipment under the 2025–2026 accompanying measures.",
+          "url": "https://agriculture.govmu.org/Slider/SitePages/Agriculture--Schemes-set-to-support-planters-and-breeders.aspx",
+          "source": "Ministry of Agro-Industry, Food Security, Blue Economy and Fisheries — Mauritius",
+          "published": "2025-10-14",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "grants-programmes",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "Mauritius launches Precision Farming and AI-Driven Food Production Scheme",
+          "summary": "The Food and Agricultural Research and Extension Institute (FAREI) launched the scheme on 18 August 2026. Eligible local producers can receive a grant covering 50% of eligible project costs, capped at MUR 2 million, for precision agriculture, automation, smart water management and advanced growing systems.",
+          "url": "https://farei.mu/farei2021/?p=5919",
+          "source": "Food and Agricultural Research and Extension Institute (FAREI), Mauritius",
+          "published": "2026-08-18",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "machinery-technology",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Maurice lance un programme d’agriculture de précision et de production alimentaire fondée sur l’IA",
+              "summary": "L’Institut mauricien de recherche et de vulgarisation agricoles a lancé un programme aidant les agriculteurs à adopter drones, stations météo, capteurs de sol et de plantes, irrigation intelligente et conseils numériques pour améliorer la productivité et la résilience."
+            },
+            "ar": {
+              "title": "موريشيوس تطلق برنامجاً للزراعة الدقيقة وإنتاج الغذاء المدعوم بالذكاء الاصطناعي",
+              "summary": "أطلق معهد البحوث والإرشاد الزراعي في موريشيوس برنامجاً لمساعدة المزارعين على استخدام الطائرات المسيّرة ومحطات الطقس ومستشعرات التربة والنبات والري الذكي والإرشاد الرقمي لزيادة الإنتاجية والقدرة على الصمود."
+            },
+            "pt": {
+              "title": "Maurícia lança programa de agricultura de precisão e produção alimentar orientada por IA",
+              "summary": "O Instituto de Investigação e Extensão Agrícola das Maurícias lançou um programa para ajudar agricultores a adotar drones, estações meteorológicas, sensores de solo e plantas, irrigação inteligente e aconselhamento digital para melhorar a produtividade e a resiliência."
+            },
+            "sw": {
+              "title": "Mauritius yazindua mpango wa kilimo cha usahihi na uzalishaji wa chakula unaotumia AI",
+              "summary": "Taasisi ya Utafiti na Ugani wa Kilimo ya Mauritius imezindua mpango wa kuwasaidia wakulima kutumia ndege zisizo na rubani, vituo vya hali ya hewa, vihisi vya udongo na mimea, umwagiliaji mahiri na ushauri wa kidijitali kuongeza uzalishaji na ustahimilivu."
+            }
+          },
+          "source_id": "farei"
+        }
+      ],
       "localizedNames": {
         "fr": "Maurice",
         "ar": "موريشيوس",
@@ -1982,6 +2800,55 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "category": "weather-climate",
+          "title": "AfDB publishes Morocco PADIDZAR technical-assistance implementation update",
+          "summary": "The African Development Bank published a May 2026 implementation progress and results report for technical assistance under Morocco's PADIDZAR agricultural and rural development programme.",
+          "published": "2026-06-26",
+          "url": "https://www.afdb.org/fr/documents/maroc-programme-dappui-au-developpement-inclusif-et-durable-des-zones-agricoles-et-rurales-padidzar-assistance-technique-mic-eer-mai-2026",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "status": "official"
+        },
+        {
+          "category": "general",
+          "title": "IFAD project page: Integrated Rural Development Project in Morocco's Khenifra province",
+          "summary": "IFAD's official project page describes the Integrated Rural Development Project in Khenifra province, including the project design report and financing information.",
+          "url": "https://www.ifad.org/en/w/projects/2000004992",
+          "source": "IFAD",
+          "published": "2026-09-15",
+          "verified": "2026-10-10",
+          "status": "official",
+          "review_after": "2026-11-09"
+        },
+        {
+          "category": "grants",
+          "title": "AfDB project page: Morocco PAASIFEJ support programme for women and young farmers",
+          "summary": "The African Development Bank's project page covers Morocco's PAASIFEJ programme, which aims to improve food security, create sustainable jobs and strengthen the resilience of smallholder agriculture, with a focus on women and young people.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-ma-aa0-024",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "published": "2026-04-09",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "status": "official"
+        },
+        {
+          "title": "AfDB publishes Morocco climate-fund project completion report for agricultural environmental and social studies",
+          "summary": "The African Development Bank's completion report covers environmental and social studies prepared for a climate-fund financing proposal, including safeguards for projects in Morocco's agricultural and rural development portfolio.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-ma-e00-019",
+          "source": "African Development Bank",
+          "published": "2026-06-26",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "climate-resilience",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -2045,6 +2912,66 @@
           "summary": "IFAD's current project page describes PROCAVA across 75 districts and all 10 provinces, targeting irrigated horticulture, red meat, poultry, cassava and legumes to improve resilient rural incomes.",
           "url": "https://www.ifad.org/en/w/projects/2000001981",
           "published": "2026-06-24"
+        },
+        {
+          "title": "Farmer Field Schools build climate resilience across Greater Maputo",
+          "summary": "FAO's Greater Maputo ecosystem-based adaptation project established 14 Farmer Field Schools serving 377 farmers, 85 percent of them women, with practical training in vegetable production, agroecology, soil and water management and climate-resilient farming.",
+          "url": "https://www.fao.org/mozambique/news/details/growing-resilience--farmer-field-schools-take-root-across-greater-maputo/",
+          "source": "FAO in Mozambique",
+          "published": "2026-07-24",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "farmer-training",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Les champs-écoles paysans renforcent la résilience climatique dans le Grand Maputo",
+              "summary": "Le projet d’adaptation de la FAO dans le Grand Maputo a mis en place 14 champs-écoles paysans pour 377 agriculteurs, dont 85 % de femmes, avec une formation pratique en maraîchage, agroécologie et agriculture résiliente au climat."
+            },
+            "ar": {
+              "title": "مدارس المزارعين الحقلية تعزز القدرة على مواجهة تغير المناخ في منطقة مابوتو الكبرى",
+              "summary": "أنشأ مشروع التكيف التابع لمنظمة الأغذية والزراعة في منطقة مابوتو الكبرى 14 مدرسة حقلية لخدمة 377 مزارعاً، 85 بالمئة منهم نساء، مع تدريب عملي على زراعة الخضروات والزراعة الإيكولوجية والممارسات المقاومة للمناخ."
+            },
+            "pt": {
+              "title": "Escolas de Campo para Agricultores reforçam a resiliência climática na Grande Maputo",
+              "summary": "O projeto de adaptação da FAO na Grande Maputo criou 14 Escolas de Campo para Agricultores, envolvendo 377 agricultores, 85% dos quais mulheres, com formação prática em horticultura, agroecologia e agricultura resiliente ao clima."
+            },
+            "sw": {
+              "title": "Shule za Wakulima Mashambani zaimarisha ustahimilivu wa tabianchi katika eneo kubwa la Maputo",
+              "summary": "Mradi wa FAO wa kukabiliana na mabadiliko ya tabianchi katika eneo kubwa la Maputo umeanzisha shule 14 za wakulima zinazohudumia wakulima 377, asilimia 85 wakiwa wanawake, kwa mafunzo ya bustani za mboga, agroikolojia na kilimo kinachostahimili tabianchi."
+            }
+          }
+        },
+        {
+          "title": "Agricultural support gives new opportunities to families in Mozambique's Balama district",
+          "summary": "FAO describes support for vulnerable households in Cabo Delgado through agricultural inputs and technical assistance for horticulture and staple crops, helping smallholder families address shortages of seeds, tools and production knowledge.",
+          "url": "https://www.fao.org/mozambique/news/details/agricultural-support-gives-new-opportunities-to-families-in-balama/en",
+          "source": "FAO in Mozambique",
+          "published": "2026-07-23",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "farmer-support",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "L’aide agricole ouvre de nouvelles perspectives aux familles du district de Balama au Mozambique",
+              "summary": "La FAO décrit un soutien aux ménages vulnérables de Cabo Delgado sous forme d’intrants agricoles et d’assistance technique pour les cultures maraîchères et vivrières, afin de surmonter le manque de semences, d’outils et de connaissances."
+            },
+            "ar": {
+              "title": "الدعم الزراعي يفتح آفاقاً جديدة للأسر في منطقة بالاما بموزمبيق",
+              "summary": "توضح منظمة الأغذية والزراعة دعم الأسر الضعيفة في كابو ديلغادو بالمدخلات الزراعية والمساعدة الفنية لإنتاج الخضروات والمحاصيل الغذائية، لمواجهة نقص البذور والأدوات والمعرفة الزراعية."
+            },
+            "pt": {
+              "title": "Apoio agrícola abre novas oportunidades para famílias no distrito de Balama, em Moçambique",
+              "summary": "A FAO descreve o apoio a famílias vulneráveis de Cabo Delgado com insumos agrícolas e assistência técnica para horticultura e culturas alimentares, ajudando a superar a falta de sementes, ferramentas e conhecimentos de produção."
+            },
+            "sw": {
+              "title": "Msaada wa kilimo wafungua fursa mpya kwa familia katika wilaya ya Balama, Msumbiji",
+              "summary": "FAO inaeleza msaada kwa kaya zilizo hatarini Cabo Delgado kupitia pembejeo za kilimo na ushauri wa kiufundi kwa mboga na mazao ya chakula, ili kukabiliana na uhaba wa mbegu, zana na maarifa ya uzalishaji."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2085,6 +3012,66 @@
           "verified": "2026-10-11",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "title": "Japan-funded resilience project delivers first agricultural inputs to Namibia's Hardap farming communities",
+          "summary": "FAO, Namibia's agriculture ministry and Japan began delivering seeds, tools, solar irrigation, shade-net and hydroponic systems, plus climate-smart farming training, under a project targeting drought-affected households and extension services.",
+          "url": "https://www.fao.org/namibia/news/detail/japan-funded-resilience-project-delivers-first-inputs-to-hardap-farming-communities/en",
+          "source": "FAO in Namibia",
+          "published": "2026-06-11",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "climate-resilience",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Un projet de résilience financé par le Japon fournit ses premiers intrants agricoles aux communautés de Hardap en Namibie",
+              "summary": "La FAO, le ministère namibien de l’Agriculture et le Japon ont commencé à distribuer semences, outils, irrigation solaire, structures d’ombrage et systèmes hydroponiques, accompagnés d’une formation à l’agriculture adaptée au climat pour les ménages touchés par la sécheresse."
+            },
+            "ar": {
+              "title": "مشروع للصمود بتمويل ياباني يسلّم أول مدخلات زراعية لمجتمعات هارداب في ناميبيا",
+              "summary": "بدأت منظمة الأغذية والزراعة ووزارة الزراعة الناميبية واليابان توزيع البذور والأدوات وأنظمة الري بالطاقة الشمسية ومظلات الزراعة وأنظمة الزراعة المائية، إلى جانب التدريب على الزراعة المتكيفة مع المناخ للأسر المتضررة من الجفاف."
+            },
+            "pt": {
+              "title": "Projeto de resiliência financiado pelo Japão entrega os primeiros insumos agrícolas às comunidades de Hardap, na Namíbia",
+              "summary": "A FAO, o Ministério da Agricultura da Namíbia e o Japão começaram a distribuir sementes, ferramentas, irrigação solar, estruturas de sombra e sistemas hidropónicos, além de formação em agricultura adaptada ao clima para famílias afetadas pela seca."
+            },
+            "sw": {
+              "title": "Mradi wa ustahimilivu unaofadhiliwa na Japani wakabidhi pembejeo za kwanza kwa jamii za wakulima Hardap nchini Namibia",
+              "summary": "FAO, Wizara ya Kilimo ya Namibia na Japani zimeanza kusambaza mbegu, zana, umwagiliaji wa nishati ya jua, miundo ya kivuli na mifumo ya hydroponiki, pamoja na mafunzo ya kilimo kinachokabiliana na tabianchi kwa kaya zilizoathiriwa na ukame."
+            }
+          }
+        },
+        {
+          "title": "A Namibian poultry farmer rebuilds her livelihood in drought-hit Erongo",
+          "summary": "FAO's farmer profile describes how poultry became a more manageable source of food and income for a rural woman farmer in drought-affected Erongo, highlighting small-scale livestock production and livelihood resilience.",
+          "url": "https://www.fao.org/namibia/news/detail/rebuilding-with-resilience-a-poultry-farmer/en",
+          "source": "FAO in Namibia",
+          "published": "2026-04-07",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "livestock",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Une avicultrice namibienne reconstruit ses moyens de subsistance dans la région d’Erongo touchée par la sécheresse",
+              "summary": "Le portrait d’une agricultrice publié par la FAO montre comment l’élevage de volailles est devenu une source plus gérable de nourriture et de revenus pour une femme vivant dans la région d’Erongo frappée par la sécheresse."
+            },
+            "ar": {
+              "title": "مزارعة دواجن ناميبية تعيد بناء سبل عيشها في إيرونغو المتضررة من الجفاف",
+              "summary": "يعرض تقرير لمنظمة الأغذية والزراعة كيف أصبحت تربية الدواجن مصدراً أسهل للإدارة للغذاء والدخل بالنسبة إلى مزارعة تعيش في منطقة إيرونغو المتضررة من الجفاف."
+            },
+            "pt": {
+              "title": "Criadora de aves namibiana reconstrói os seus meios de subsistência na região de Erongo, afetada pela seca",
+              "summary": "O perfil de uma agricultora publicado pela FAO mostra como a criação de aves se tornou uma fonte mais fácil de gerir de alimentos e rendimento para uma mulher numa região de Erongo atingida pela seca."
+            },
+            "sw": {
+              "title": "Mfugaji wa kuku nchini Namibia ajenga upya maisha yake katika Erongo iliyoathiriwa na ukame",
+              "summary": "Wasifu wa mkulima uliochapishwa na FAO unaonyesha jinsi ufugaji wa kuku ulivyokuwa chanzo rahisi zaidi cha chakula na mapato kwa mwanamke anayeishi katika eneo la Erongo lililoathiriwa na ukame."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2099,7 +3086,50 @@
       "name": "Niger",
       "slug": "niger",
       "flag": "🇳🇪",
-      "articles": [],
+      "articles": [
+        {
+          "title": "World Bank publishes implementation aide-memoire for Niger irrigated-crops and livestock intensification project",
+          "summary": "The World Bank's October 2025 aide-memoire documents an implementation support mission for Niger's PACIPA project, covering irrigated-crop development and intensification of livestock production.",
+          "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099102725084034257",
+          "source": "World Bank",
+          "published": "2025-10-10",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "FAO, Niger and development partners reaffirm cooperation for inclusive and sustainable agriculture",
+          "summary": "Following a high-level mission to Niamey, FAO and Niger's government reviewed cooperation on agriculture, rural transformation and the humanitarian-development-peace nexus, reaffirming support for inclusive and sustainable agrifood systems.",
+          "url": "https://www.fao.org/niger/news/detail/la-fao--le-niger-et-les-partenaires-consolident-leur-partenariat-pour-une-agriculture-inclusive-et-durable/fr",
+          "source": "FAO in Niger",
+          "published": "2026-06-30",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agricultural-policy",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO, le Niger et les partenaires au développement réaffirment leur coopération pour une agriculture inclusive et durable",
+              "summary": "À l’issue d’une mission de haut niveau à Niamey, la FAO et le gouvernement nigérien ont examiné leur coopération dans l’agriculture, la transformation rurale et le lien entre action humanitaire, développement et paix."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة والنيجر وشركاء التنمية يجددون التعاون من أجل زراعة شاملة ومستدامة",
+              "summary": "عقب بعثة رفيعة المستوى إلى نيامي، بحثت منظمة الأغذية والزراعة والحكومة النيجرية التعاون في الزراعة والتحول الريفي والترابط بين العمل الإنساني والتنمية والسلام."
+            },
+            "pt": {
+              "title": "FAO, Níger e parceiros de desenvolvimento reafirmam cooperação para uma agricultura inclusiva e sustentável",
+              "summary": "Após uma missão de alto nível a Niamey, a FAO e o governo do Níger analisaram a cooperação em agricultura, transformação rural e na ligação entre ação humanitária, desenvolvimento e paz."
+            },
+            "sw": {
+              "title": "FAO, Niger na washirika wa maendeleo wathibitisha tena ushirikiano kwa kilimo jumuishi na endelevu",
+              "summary": "Baada ya ujumbe wa ngazi ya juu mjini Niamey, FAO na serikali ya Niger zilipitia ushirikiano katika kilimo, mageuzi ya vijijini na uhusiano kati ya hatua za kibinadamu, maendeleo na amani."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Niger",
         "ar": "النيجر",
@@ -2135,6 +3165,30 @@
           "published": "2026-06-15",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "title": "IFAD project page: Transition towards sustainable and nutritious food systems in São Tomé and Príncipe",
+          "summary": "IFAD's official project page records the transition programme for more sustainable and nutritious food systems in São Tomé and Príncipe, with project design and financing information.",
+          "url": "https://www.ifad.org/en/w/projects/2000004947",
+          "source": "International Fund for Agricultural Development (IFAD)",
+          "published": "2025-12-05",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "food-security",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "FAO and São Tomé and Príncipe prepare the country's General Agricultural Census",
+          "summary": "FAO and the government signed a technical-assistance agreement to prepare the General Agricultural Census, strengthening agricultural statistics for planning, monitoring and rural-development policy.",
+          "url": "https://www.fao.org/sao-tome-e-principe/noticias/detail-events/en/c/1709622/",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2024-06-10",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agricultural-data",
+          "status": "official",
+          "source_tier": 1
         }
       ],
       "localizedNames": {
@@ -2289,7 +3343,20 @@
       "name": "Seychelles",
       "slug": "seychelles",
       "flag": "🇸🇨",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB publishes Seychelles green recovery and climate-resilience programme appraisal report",
+          "summary": "The African Development Bank's October 2026 appraisal report describes a programme supporting green recovery and climate resilience, including the agriculture and agro-industry sector among its areas of relevance.",
+          "url": "https://www.afdb.org/en/documents/seychelles-economic-resilience-and-green-recovery-support-programme-iii-ergrsp-iii-streamlined-appraisal-report",
+          "source": "African Development Bank",
+          "published": "2026-10-03",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "climate-resilience",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Seychelles",
         "ar": "سيشل",
@@ -2324,6 +3391,19 @@
           "source_tier": 1,
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "category": "crops",
+          "title": "AfDB publishes Sierra Leone rice agro-industrial zone Phase I appraisal report",
+          "summary": "The African Development Bank's appraisal report describes Phase I of Sierra Leone's Rice Special Agro-Industrial Processing Zone project, aligned with the Feed Salone strategy and national rice development goals.",
+          "published": "2026-04-23",
+          "url": "https://www.afdb.org/en/documents/sierra-leone-rice-special-agro-industrial-processing-zone-sleraz-project-phase-i-project-appraisal-report",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
           "status": "official"
         }
       ],
@@ -2413,6 +3493,59 @@
           "published": "2026-08-31",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "weather-climate",
+          "title": "FAO and Somalia warn of hunger crisis as projected floods and funding shortfalls threaten communities",
+          "summary": "FAO and Somalia's government warned that projected October–December flooding and funding shortfalls could worsen hunger and acute malnutrition, disrupt farming and livestock livelihoods, and displace rural communities.",
+          "url": "https://www.fao.org/newsroom/detail/hunger-and-malnutrition-crises-persist-in-somalia-as-projected-floods-and-funding-shortfalls-threaten-vulnerable-populations/en",
+          "source": "FAO Emergencies and Resilience",
+          "published": "2026-09-23",
+          "verified": "2026-10-10",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Les risques d'inondation et les déficits de financement menacent les communautés vulnérables",
+              "summary": "La FAO a signalé que les inondations prévues et les déficits de financement continuent de menacer la sécurité alimentaire et les moyens de subsistance en Somalie."
+            },
+            "ar": {
+              "title": "مخاطر الفيضانات ونقص التمويل يهددان المجتمعات الهشة",
+              "summary": "أفادت الفاو بأن الفيضانات المتوقعة ونقص التمويل لا يزالان يشكلان تهديداً للأمن الغذائي وسبل العيش في الصومال."
+            },
+            "pt": {
+              "title": "Riscos de cheias e défices de financiamento ameaçam comunidades vulneráveis",
+              "summary": "A FAO informou que as cheias previstas e os défices de financiamento continuam a ameaçar a segurança alimentar e os meios de subsistência na Somália."
+            },
+            "sw": {
+              "title": "Hatari za mafuriko na upungufu wa fedha zinatishia jamii zilizo hatarini",
+              "summary": "FAO iliripoti kuwa mafuriko yanayotarajiwa na upungufu wa fedha vinaendelea kutishia usalama wa chakula na maisha ya watu nchini Somalia."
+            }
+          },
+          "review_after": "2026-11-09"
+        },
+        {
+          "category": "weather-climate",
+          "title": "AfDB publishes completion report for Horn of Africa rural-livelihoods climate adaptation project",
+          "summary": "The African Development Bank published a completion report for IGAD's Rural Livelihoods' Adaptation to Climate Change II project, including Somalia, covering pastoral resilience, water management, livestock services and livelihood diversification.",
+          "published": "2026-09-27",
+          "url": "https://www.afdb.org/en/documents/multinational-igad-rural-livelihoods-adaptation-climate-change-horn-africa-ii-rlacc-ii-somalia-project-completion-report",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "status": "official"
+        },
+        {
+          "category": "weather-climate",
+          "title": "FAO warns of elevated Deyr flooding risk in Somalia and urges early action",
+          "summary": "FAO's Somalia Water and Land Information Management programme highlighted a strong forecast signal for above-normal rainfall and potential severe flooding during the October–December 2026 Deyr season.",
+          "url": "https://www.fao.org/somalia/news/details/strong-el-ni%C3%B1o-weather-condition-raises-risk-of-severe-deyr-flooding-in-somalia--fao-warns/en",
+          "source": "FAO",
+          "published": "2026-09-01",
+          "verified": "2026-10-10",
+          "status": "official",
+          "review_after": "2026-11-09"
         }
       ],
       "localizedNames": {
@@ -2453,6 +3586,36 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "title": "South Sudan Agriculture Conference calls for scaled investment to reduce food import dependence",
+          "summary": "FAO reported that South Sudan's May 2026 Agriculture Conference brought government, development partners and private-sector actors together to identify investment opportunities across crops, livestock, fisheries and agricultural technology, aiming to strengthen domestic production and reduce reliance on food imports.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/south-sudan-agriculture-conference-calls-for-scaled-investment-to-reduce-food-import-dependence/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2026-05-07",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agrifood-investment",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La conférence agricole du Soudan du Sud appelle à accroître les investissements pour réduire la dépendance aux importations alimentaires",
+              "summary": "La FAO indique que la conférence agricole de mai 2026 a réuni le gouvernement, les partenaires de développement et le secteur privé afin d’identifier des investissements dans les cultures, l’élevage, la pêche et les technologies agricoles pour renforcer la production nationale."
+            },
+            "ar": {
+              "title": "مؤتمر الزراعة في جنوب السودان يدعو إلى زيادة الاستثمار للحد من الاعتماد على واردات الغذاء",
+              "summary": "أفادت منظمة الأغذية والزراعة بأن مؤتمر الزراعة في مايو 2026 جمع الحكومة وشركاء التنمية والقطاع الخاص لتحديد فرص الاستثمار في المحاصيل والثروة الحيوانية ومصايد الأسماك والتكنولوجيا الزراعية لتعزيز الإنتاج المحلي."
+            },
+            "pt": {
+              "title": "Conferência Agrícola do Sudão do Sul pede mais investimento para reduzir a dependência das importações de alimentos",
+              "summary": "A FAO informou que a conferência agrícola de maio de 2026 reuniu o governo, parceiros de desenvolvimento e o setor privado para identificar investimentos em culturas, pecuária, pesca e tecnologia agrícola, reforçando a produção nacional."
+            },
+            "sw": {
+              "title": "Mkutano wa Kilimo wa Sudan Kusini wataka uwekezaji zaidi kupunguza utegemezi wa uagizaji wa chakula",
+              "summary": "FAO iliripoti kuwa mkutano wa kilimo wa Mei 2026 uliwakutanisha serikali, washirika wa maendeleo na sekta binafsi kutambua uwekezaji katika mazao, mifugo, uvuvi na teknolojia ya kilimo ili kuimarisha uzalishaji wa ndani."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2528,6 +3691,35 @@
           "published": "2026-07-01",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "livestock",
+          "title": "FAO launches nationwide livestock vaccination campaign in Sudan",
+          "summary": "FAO launched its 2026–2027 vaccination campaign to protect 9.8 million animals and support 1.2 million livestock-owning households amid conflict and food-security pressures.",
+          "url": "https://www.fao.org/newsroom/detail/sudan--fao-launches-nationwide-livestock-vaccination-campaign-to-protect-food-security-and-livelihoods-amid-conflict/en",
+          "source": "FAO Emergencies and Resilience",
+          "published": "2026-09-25",
+          "verified": "2026-10-10",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La FAO lance une campagne nationale de vaccination du bétail",
+              "summary": "La FAO a annoncé une campagne nationale de vaccination du bétail au Soudan visant à protéger la sécurité alimentaire et les moyens de subsistance ruraux dans le contexte du conflit."
+            },
+            "ar": {
+              "title": "الفاو تطلق حملة وطنية لتطعيم الثروة الحيوانية",
+              "summary": "أعلنت الفاو عن حملة وطنية لتطعيم الثروة الحيوانية في السودان تهدف إلى حماية الأمن الغذائي وسبل العيش الريفية وسط الصراع."
+            },
+            "pt": {
+              "title": "FAO lança campanha nacional de vacinação do gado",
+              "summary": "A FAO informou sobre uma campanha nacional de vacinação do gado no Sudão destinada a proteger a segurança alimentar e os meios de subsistência rurais em meio ao conflito."
+            },
+            "sw": {
+              "title": "FAO yazindua kampeni ya kitaifa ya chanjo kwa mifugo",
+              "summary": "FAO imeripoti kampeni ya kitaifa ya chanjo kwa mifugo nchini Sudan inayolenga kulinda usalama wa chakula na maisha ya vijijini wakati wa mzozo."
+            }
+          },
+          "review_after": "2026-11-09"
         }
       ],
       "localizedNames": {
@@ -2542,7 +3734,44 @@
       "name": "Togo",
       "slug": "togo",
       "flag": "🇹🇬",
-      "articles": [],
+      "articles": [
+        {
+          "title": "AfDB updates Togo agro-food transformation project implementation record",
+          "summary": "The African Development Bank's project page lists 2026 implementation progress and procurement notices for PTA-Togo, an agro-food transformation programme supporting value chains, investment, storage and processing infrastructure.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-tg-aa0-009",
+          "source": "African Development Bank",
+          "published": "2026-08-26",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agribusiness",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "World Bank approves US$300 million programme to modernize Togo's agribusiness and animal-nutrition sector",
+          "summary": "The World Bank approved a results-based programme to scale Togo's Agricultural Modernization Program, improve productivity and strengthen agribusiness and animal nutrition value chains.",
+          "url": "https://www.worldbank.org/en/news/press-release/2025/06/11/positioning-togo-as-a-regional-hub-in-agribusiness-and-animal-nutrition",
+          "source": "World Bank",
+          "published": "2025-06-11",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agribusiness",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "AfDB lists new agro-industrial park procurement under Togo's PTA-Togo programme",
+          "summary": "The African Development Bank's project record lists a June 2026 contract award related to construction of the Broukou agro-industrial park under Togo's agro-food transformation programme.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-tg-aa0-012",
+          "source": "African Development Bank",
+          "published": "2026-06-29",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "agribusiness",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Togo",
         "ar": "توغو",
@@ -2555,7 +3784,44 @@
       "name": "Tunisia",
       "slug": "tunisia",
       "flag": "🇹🇳",
-      "articles": [],
+      "articles": [
+        {
+          "title": "World Bank approves Tunisia irrigation water security and agricultural resilience project",
+          "summary": "The World Bank approved a US$124 million project to modernize irrigation services, rehabilitate key infrastructure, strengthen irrigation operators and help farmers adopt climate-smart technologies and access higher-value markets.",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/04/01/tunisia-major-push-to-strengthen-water-security-and-resilience",
+          "source": "World Bank",
+          "published": "2026-04-01",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "water-irrigation",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "AfDB publishes Tunisia cereal-sector support project implementation update",
+          "summary": "The African Development Bank's project page lists a June 2026 implementation progress report for Tunisia's PADIDFIC programme, which supports an inclusive and sustainable cereal value chain and food self-sufficiency.",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-tn-aa0-031",
+          "source": "African Development Bank",
+          "published": "2026-08-06",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "grains-food-security",
+          "status": "official",
+          "source_tier": 1
+        },
+        {
+          "title": "AfDB publishes Tunisia cereal-sector project implementation progress report",
+          "summary": "The African Development Bank published an implementation progress and results report for Tunisia's PADIDFIC cereal-sector programme, which aims to improve food security and self-sufficiency through support across the cereal value chain.",
+          "url": "https://www.afdb.org/en/documents/tunisie-projet-dappui-au-developpement-inclusif-et-durable-de-la-filiere-cerealiere-padidfic-eer-novembre-2025",
+          "source": "African Development Bank",
+          "published": "2026-01-12",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "grains-food-security",
+          "status": "official",
+          "source_tier": 1
+        }
+      ],
       "localizedNames": {
         "fr": "Tunisie",
         "ar": "تونس",
@@ -2659,6 +3925,150 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "category": "finance",
+          "title": "Zimbabwe presents investment opportunities at FAO Hand-in-Hand Investment Forum",
+          "summary": "FAO reported Zimbabwe's participation in the 2026 Hand-in-Hand Investment Forum to present agrifood investment opportunities.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/zimbabwe-takes-investment-opportunities-to-fao-hand-in-hand-investment-forum-2026/en",
+          "source": "FAO Regional Office for Africa",
+          "published": "2026-09-17",
+          "verified": "2026-10-05",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Zimbabwe présente des opportunités d'investissement au Forum d'investissement Hand-in-Hand de la FAO",
+              "summary": "La FAO a indiqué que le Zimbabwe a participé au Forum d'investissement Hand-in-Hand 2026 pour présenter des opportunités d'investissement dans les systèmes agroalimentaires."
+            },
+            "ar": {
+              "title": "زيمبابوي تعرض فرصاً استثمارية في منتدى الفاو للاستثمار ضمن مبادرة هاند-إن-هاند",
+              "summary": "أفادت الفاو بأن زيمبابوي شاركت في منتدى الاستثمار هاند-إن-هاند لعام 2026 لعرض فرص الاستثمار في النظم الزراعية والغذائية."
+            },
+            "pt": {
+              "title": "Zimbabué apresenta oportunidades de investimento no Fórum de Investimento Hand-in-Hand da FAO",
+              "summary": "A FAO informou que o Zimbabué participou no Fórum de Investimento Hand-in-Hand 2026 para apresentar oportunidades de investimento nos sistemas agroalimentares."
+            },
+            "sw": {
+              "title": "Zimbabwe yaonyesha fursa za uwekezaji katika Jukwaa la Uwekezaji la FAO la Hand-in-Hand",
+              "summary": "FAO iliripoti kuwa Zimbabwe ilishiriki katika Jukwaa la Uwekezaji la Hand-in-Hand 2026 ili kuwasilisha fursa za uwekezaji katika mifumo ya kilimo na chakula."
+            }
+          }
+        },
+        {
+          "category": "weather-climate",
+          "title": "AfDB publishes Zimbabwe ACRES agricultural climate-resilience project notice",
+          "summary": "The African Development Fund's project notice describes Zimbabwe's Agricultural Climate Resilient and Vulnerability Reduction Project, designed to strengthen rural resilience, grazing areas, water resources and agricultural input supply chains.",
+          "published": "2026-05-05",
+          "url": "https://www.afdb.org/en/documents/gpn-zimbabwe-agricultural-climate-resilient-and-vulnerability-reduction-project",
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "status": "official"
+        },
+        {
+          "category": "policy",
+          "title": "FAO calls for stronger implementation of CAADP commitments",
+          "summary": "FAO urged African countries to move from commitments to implementation, investment and measurable results as the continent pursues agrifood-system transformation.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/fao-calls-for-stronger-implementation-to-turn-caadp-commitments-into-results/en",
+          "source": "FAO / IAEA",
+          "source_id": "fao",
+          "source_tier": 1,
+          "published": "2026-09-24",
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official"
+        },
+        {
+          "title": "Zimbabwe establishes a national platform for smarter post-harvest management",
+          "summary": "FAO and Zimbabwe's government established a national technical working group to coordinate storage, handling, cold-chain, processing and other measures to reduce post-harvest losses and improve farmer incomes across staple and livestock value chains.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/zimbabwe-establishes-a-national-platform-for-a-smarter-post-harvest-management-architecture/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2026-05-15",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "post-harvest",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Zimbabwe crée une plateforme nationale pour améliorer la gestion après récolte",
+              "summary": "La FAO et le gouvernement zimbabwéen ont créé un groupe technique national pour coordonner le stockage, la manutention, la chaîne du froid et la transformation, afin de réduire les pertes après récolte et d’améliorer les revenus des agriculteurs."
+            },
+            "ar": {
+              "title": "زيمبابوي تنشئ منصة وطنية لتحسين إدارة ما بعد الحصاد",
+              "summary": "أنشأت منظمة الأغذية والزراعة والحكومة الزيمبابوية فريق عمل تقنياً وطنياً لتنسيق التخزين والمناولة والتبريد والتصنيع، بهدف الحد من فاقد ما بعد الحصاد وتحسين دخل المزارعين."
+            },
+            "pt": {
+              "title": "Zimbábue cria plataforma nacional para melhorar a gestão pós-colheita",
+              "summary": "A FAO e o governo do Zimbábue criaram um grupo técnico nacional para coordenar armazenamento, manuseamento, cadeia de frio e processamento, reduzindo perdas pós-colheita e melhorando os rendimentos dos agricultores."
+            },
+            "sw": {
+              "title": "Zimbabwe yaanzisha jukwaa la kitaifa kuboresha usimamizi baada ya mavuno",
+              "summary": "FAO na serikali ya Zimbabwe zimeanzisha kikundi cha kitaifa cha kiufundi kuratibu uhifadhi, ushughulikiaji, minyororo ya baridi na uchakataji ili kupunguza upotevu baada ya mavuno na kuongeza mapato ya wakulima."
+            }
+          }
+        },
+        {
+          "title": "FAO and China support Zimbabwean farmers to restore soil fertility and crop yields",
+          "summary": "A soil-management initiative in Zvimba District is helping farmers and extension officers use soil testing and locally appropriate land-management practices to address declining fertility and improve the resilience of crop production.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/fao-and-china-support-zimbabwean-farmers-to-restore-tired-soils-and-revive-crop-yields/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
+          "published": "2026-05-09",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "soil-health",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "La FAO et la Chine aident les agriculteurs zimbabwéens à restaurer la fertilité des sols et les rendements",
+              "summary": "Une initiative de gestion des sols dans le district de Zvimba aide les agriculteurs et les agents de vulgarisation à utiliser les analyses de sol et des pratiques adaptées pour lutter contre la baisse de fertilité et renforcer la résilience des cultures."
+            },
+            "ar": {
+              "title": "منظمة الأغذية والزراعة والصين تدعمان مزارعي زيمبابوي لاستعادة خصوبة التربة والمحاصيل",
+              "summary": "تساعد مبادرة لإدارة التربة في مقاطعة زيمبا المزارعين وموظفي الإرشاد على استخدام فحوص التربة وممارسات مناسبة محلياً لمعالجة تراجع الخصوبة وتعزيز قدرة المحاصيل على الصمود."
+            },
+            "pt": {
+              "title": "FAO e China apoiam agricultores do Zimbábue na recuperação da fertilidade do solo e da produtividade",
+              "summary": "Uma iniciativa de gestão do solo no distrito de Zvimba ajuda agricultores e extensionistas a usar análises de solo e práticas adequadas ao contexto local para enfrentar a perda de fertilidade e aumentar a resiliência das culturas."
+            },
+            "sw": {
+              "title": "FAO na China zawaunga mkono wakulima wa Zimbabwe kurejesha rutuba ya udongo na mavuno",
+              "summary": "Mpango wa usimamizi wa udongo katika wilaya ya Zvimba unawasaidia wakulima na maafisa ugani kutumia vipimo vya udongo na mbinu zinazofaa eneo husika kukabiliana na kupungua kwa rutuba na kuimarisha ustahimilivu wa mazao."
+            }
+          }
+        },
+        {
+          "title": "Zimbabwe strengthens agricultural coordination and anticipatory action ahead of the 2026/27 season",
+          "summary": "Zimbabwe's agriculture development partners coordinated government, investors and technical agencies around preparedness for the 2026/27 season, including early action and resilience planning in response to increasing climate variability.",
+          "url": "https://www.fao.org/zimbabwe/news/detail/zimbabwe-strengthens-agricultural-coordination-and-anticipatory-action-ahead-of-the-2026-27-season/en",
+          "source": "FAO in Zimbabwe",
+          "published": "2026-06-17",
+          "verified": "2026-10-10",
+          "review_after": "2026-11-09",
+          "category": "climate-resilience",
+          "status": "official",
+          "source_tier": 1,
+          "translations": {
+            "fr": {
+              "title": "Le Zimbabwe renforce la coordination agricole et l’anticipation avant la campagne 2026-2027",
+              "summary": "Les partenaires du développement agricole du Zimbabwe ont coordonné les pouvoirs publics, les investisseurs et les organismes techniques pour préparer la campagne 2026-2027 et renforcer la résilience face à une variabilité climatique croissante."
+            },
+            "ar": {
+              "title": "زيمبابوي تعزز التنسيق الزراعي والعمل الاستباقي استعداداً لموسم 2026-2027",
+              "summary": "نسّق شركاء التنمية الزراعية في زيمبابوي جهود الحكومة والمستثمرين والجهات الفنية للاستعداد لموسم 2026-2027 وتعزيز القدرة على الصمود أمام تزايد تقلبات المناخ."
+            },
+            "pt": {
+              "title": "Zimbábue reforça a coordenação agrícola e a ação antecipada para a época de 2026/27",
+              "summary": "Os parceiros de desenvolvimento agrícola do Zimbábue coordenaram o governo, investidores e agências técnicas para preparar a época de 2026/27 e reforçar a resiliência perante a crescente variabilidade climática."
+            },
+            "sw": {
+              "title": "Zimbabwe yaimarisha uratibu wa kilimo na hatua za mapema kabla ya msimu wa 2026/27",
+              "summary": "Washirika wa maendeleo ya kilimo nchini Zimbabwe waliratibu serikali, wawekezaji na mashirika ya kiufundi kujiandaa kwa msimu wa 2026/27 na kuimarisha ustahimilivu dhidi ya mabadiliko makubwa ya hali ya hewa."
+            }
+          }
         }
       ],
       "localizedNames": {
