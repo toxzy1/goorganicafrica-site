@@ -197,13 +197,21 @@ async function main() {
       });
       if (!response.ok) throw new Error("HTTP " + response.status);
       const xml = await response.text();
-      const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
+      // Search feeds may return many items. Ten recent entries per source
+      // are enough for review discovery and bound redirect traffic.
+      const items = (xml.match(/<item(?:\\s[^>]*)?>[\\s\\S]*?<\\/item>/gi) || []).slice(0, 10);
 
       for (const item of items) {
         const title = field(item, "title");
         const summary = field(item, "description");
+        const published = isoDate(field(item, "pubDate") || field(item, "dc:date"));
+        if (!title || !published) continue;
+        const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
+        if (ageDays > 30) continue;
+
         let url = normalizeUrl(field(item, "link"));
-        const sourceTag = item.match(/<source(?:\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
+        if (!url) continue;
+        const sourceTag = item.match(/<source(?:\\s[^>]*)?url=["']([^"']+)["'][^>]*>/i);
         const sourceUrl = sourceTag ? normalizeUrl(sourceTag[1]) : "";
         if (url.includes("news.google.com")) {
           try {
@@ -219,16 +227,11 @@ async function main() {
             }
           } catch (_) { continue; }
         }
-        const published = isoDate(field(item, "pubDate") || field(item, "dc:date"));
-        if (!title || !url || !published) continue;
         let parsedUrl;
         try { parsedUrl = new URL(url); } catch (_) { continue; }
         const sourceHost = sourceUrl ? (() => { try { return new URL(sourceUrl).hostname; } catch (_) { return ""; } })() : "";
         if (parsedUrl.hostname !== feed.allowedHost && !parsedUrl.hostname.endsWith("." + feed.allowedHost) &&
             sourceHost !== feed.allowedHost && !sourceHost.endsWith("." + feed.allowedHost)) continue;
-        const ageDays = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
-        if (ageDays > 30) continue;
-
         const country = feed.country || findCountry(title, summary, data.countries);
         if (!country || existing.has(url) || existing.has(title)) continue;
 
