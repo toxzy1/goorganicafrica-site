@@ -51,6 +51,42 @@ function categoryFor(title, summary) {
   if (/climate|drought|resilien|weather/.test(t)) return "climate";
   return "grants";
 }
+function candidateKey(record) {
+  const country = String(record.code || record.country_code || record.country || "").trim().toUpperCase();
+  let identity = String(record.url || "").trim();
+  if (identity) {
+    try {
+      const parsed = new URL(identity);
+      parsed.hash = "";
+      parsed.hostname = parsed.hostname.toLowerCase();
+      if ((parsed.protocol === "https:" && parsed.port === "443") ||
+          (parsed.protocol === "http:" && parsed.port === "80")) parsed.port = "";
+      while (parsed.pathname.length > 1 && parsed.pathname.endsWith("/")) {
+        parsed.pathname = parsed.pathname.slice(0, -1);
+      }
+      identity = parsed.toString();
+    } catch (_) {
+      const hashIndex = identity.indexOf("#");
+      if (hashIndex >= 0) identity = identity.slice(0, hashIndex);
+      while (identity.endsWith("/")) identity = identity.slice(0, -1);
+      identity = identity.toLowerCase();
+    }
+  } else {
+    identity = String(record.title || "").trim().toLowerCase();
+  }
+  return country + "::" + identity;
+}
+
+function isAllowedHost(value, allowedHost) {
+  try {
+    const hostname = new URL(value).hostname.toLowerCase();
+    const allowed = String(allowedHost || "").toLowerCase();
+    return hostname === allowed || hostname.endsWith("." + allowed);
+  } catch (_) {
+    return false;
+  }
+}
+
 function slugify(v) { return v.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""); }
 
 async function main() {
@@ -105,7 +141,7 @@ async function main() {
           }
         }
         const published = date(field(item, "pubDate") || field(item, "dc:date"));
-        if (!title || !link || !published || !link.includes(feed.host)) continue;
+        if (!title || !link || !published || !isAllowedHost(link, feed.host)) continue;
         const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
         if (age > 90) continue;
         if (!feed.country) continue;
@@ -163,4 +199,21 @@ async function main() {
   }
   console.log("GoOrganicAfrica opportunity sync: " + added + " candidate(s).");
 }
-main().catch(e => { console.error(e); process.exit(1); });
+function selfTestCandidateKey() {
+  const sameA = candidateKey({ code: "NG", url: "https://EXAMPLE.org/program/" });
+  const sameB = candidateKey({ code: "NG", url: "https://example.org/program#overview" });
+  const otherCountry = candidateKey({ code: "GH", url: "https://example.org/program" });
+  const titleFallback = candidateKey({ code: "NG", title: "Sample call" });
+  if (!isAllowedHost("https://news.example.org/story", "example.org")) throw new Error("Allowed subdomains must pass the source-host check.");
+  if (isAllowedHost("https://notexample.org/story", "example.org")) throw new Error("Lookalike hosts must fail the source-host check.");
+  if (sameA !== sameB) throw new Error("Candidate key must normalize host casing, trailing slashes and fragments.");
+  if (sameA === otherCountry) throw new Error("Candidate keys must remain country-scoped.");
+  if (!titleFallback.endsWith("sample call")) throw new Error("Candidate key must fall back to a normalized title when URL is absent.");
+  console.log("Opportunity candidate-key self-test passed.");
+}
+
+if (process.argv.includes("--self-test")) {
+  selfTestCandidateKey();
+} else {
+  main().catch(e => { console.error(e); process.exit(1); });
+}
