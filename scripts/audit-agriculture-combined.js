@@ -114,9 +114,51 @@ const newsCounts = counts(news);
 const resourceGaps = EXPECTED.filter(([c]) => !resourceCounts[c]).map(([,n]) => n);
 const newsGaps = EXPECTED.filter(([c]) => !newsCounts[c]).map(([,n]) => n);
 
+function sourceQuality(records) {
+  const hosts = new Map();
+  let missingUrl = 0;
+  let invalidUrl = 0;
+  let homepageUrl = 0;
+  let missingSource = 0;
+  for (const record of records) {
+    const raw = String(record.url || "").trim();
+    if (!raw) { missingUrl++; continue; }
+    let url;
+    try {
+      url = new URL(raw);
+      if (url.protocol !== "http:" && url.protocol !== "https:") throw new Error("unsupported protocol");
+    } catch (_) {
+      invalidUrl++;
+      continue;
+    }
+    const host = url.hostname.toLowerCase().replace(/^www\\./, "");
+    hosts.set(host, (hosts.get(host) || 0) + 1);
+    if (url.pathname === "/" || !url.pathname) homepageUrl++;
+    if (!String(record.source || "").trim()) missingSource++;
+  }
+  const ranked = [...hosts.entries()].sort((a, b) => b[1] - a[1]);
+  return {
+    records: records.length,
+    distinctHosts: hosts.size,
+    topHosts: ranked.slice(0, 8),
+    topThreeShare: records.length ? Number((ranked.slice(0, 3).reduce((sum, [, count]) => sum + count, 0) / records.length * 100).toFixed(1)) : 0,
+    homepageUrl,
+    missingUrl,
+    invalidUrl,
+    missingSource
+  };
+}
+function printSourceQuality(label, records) {
+  const q = sourceQuality(records);
+  console.log(`${label} source quality: ${q.distinctHosts} distinct hosts; top 3 hosts account for ${q.topThreeShare}% of records`);
+  console.log(`  Homepage-only links: ${q.homepageUrl}; missing URLs: ${q.missingUrl}; invalid URLs: ${q.invalidUrl}; missing source labels: ${q.missingSource}`);
+  if (q.topHosts.length) console.log("  Most-used hosts: " + q.topHosts.map(([host, count]) => `${host} (${count})`).join(", "));
+}
 console.log("GoOrganicAfrica combined agriculture data audit (report-only)");
 console.log(`Resources: ${resourcePrimary.length} primary + ${resourceSupplement.length} supplemental = ${resources.length} raw records`);
 console.log(`News: ${newsPrimary.length} primary + ${newsSupplement.length} supplemental = ${news.length} raw records`);
+printSourceQuality("Resources", resources);
+printSourceQuality("News", news);
 console.log(`Resource same-country normalized duplicate groups: ${resourceDupes.length}; primary/supplement overlaps: ${resourceOverlaps.length}`);
 console.log(`News same-country normalized duplicate groups: ${newsDupes.length}; primary/supplement overlaps: ${newsOverlaps.length}`);
 console.log(`Same-title + same-URL review candidates: ${resourceSameTitleUrl.length} resource groups; ${newsSameTitleUrl.length} news groups`);
