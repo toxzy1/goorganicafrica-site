@@ -1,6 +1,5 @@
 name: Build and Validate Site
-# End-to-end build validation for every main deployment.
-# Preserve the original agricultural resources release baseline.
+# Integrated validation for site build, agricultural data and review-first automation.
 
 on:
   push:
@@ -14,7 +13,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,11 +23,25 @@ jobs:
         with:
           node-version: 20
 
+      - name: Set up Python for automation tests
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Install dependencies
         run: npm install
 
+      - name: Check agricultural automation scripts
+        run: node --check scripts/sync-agricultural-opportunities.js
+
+      - name: Run free translation automation unit tests
+        run: python -m unittest discover -s tests -p "test_translate_agricultural_news.py"
+
       - name: Build site
         run: npm run build
+
+      - name: Audit agricultural data coverage and integrity
+        run: npm run audit:agriculture
 
       - name: Run site architecture checks
         run: npm run check
