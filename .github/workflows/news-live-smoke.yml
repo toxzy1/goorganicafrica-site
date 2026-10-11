@@ -1,0 +1,45 @@
+name: Temporary News Review-Queue Live Smoke Test
+
+on:
+  push:
+    branches: [news-live-smoke]
+
+permissions:
+  contents: read
+
+jobs:
+  news-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout isolated smoke-test branch
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Restrict workspace to two countries and save baseline
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const p = 'src/_data/agriculturalNews.json';
+          const d = JSON.parse(fs.readFileSync(p, 'utf8'));
+          d.countries = d.countries.filter(c => ['NG', 'GH'].includes(c.code));
+          if (d.countries.length !== 2) throw new Error('Expected Nigeria and Ghana in the smoke-test data.');
+          fs.writeFileSync(p, JSON.stringify(d, null, 2) + '\\n');
+          NODE
+          cp src/_data/agriculturalNews.json "$RUNNER_TEMP/news-before.json"
+      - name: Run live news discovery without publishing or committing
+        run: |
+          node scripts/sync-agricultural-news.js
+          node <<'NODE'
+          const fs = require('fs');
+          const before = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/news-before.json', 'utf8'));
+          const after = JSON.parse(fs.readFileSync('src/_data/agriculturalNews.json', 'utf8'));
+          const prior = new Set(before.countries.flatMap(c => (c.articles || []).map(a => a.url)).filter(Boolean));
+          const added = after.countries.flatMap(c => (c.articles || []).map(a => a.url && !prior.has(a.url) ? a : null)).filter(Boolean);
+          const invalid = added.filter(a => a.status !== 'review' || a.lifecycle !== 'needs_review');
+          console.log('New news candidates:', added.length);
+          console.log('Review-only candidate status violations:', invalid.length);
+          if (invalid.length) process.exit(1);
+          NODE
