@@ -150,6 +150,41 @@ function sourceQuality(records) {
     missingSource
   };
 }
+function sourceDiversityByCountry(records) {
+  const byCountry = new Map();
+  for (const record of records) {
+    const code = String(record.country_code || "").toUpperCase();
+    if (!expectedCodes.has(code)) continue;
+    const raw = String(record.url || "").trim();
+    if (!raw) continue;
+    let host;
+    try {
+      const parsed = new URL(raw);
+      if (parsed.protocol !== "http:" && parsed.protocol !== "https:") continue;
+      host = parsed.hostname.toLowerCase().replace(/^www\./, "");
+    } catch (_) {
+      continue;
+    }
+    if (!byCountry.has(code)) byCountry.set(code, { records: 0, hosts: new Map() });
+    const country = byCountry.get(code);
+    country.records++;
+    country.hosts.set(host, (country.hosts.get(host) || 0) + 1);
+  }
+  return EXPECTED.map(([code, name]) => {
+    const data = byCountry.get(code) || { records: 0, hosts: new Map() };
+    const ranked = [...data.hosts.entries()].sort((a, b) => b[1] - a[1]);
+    const dominantShare = data.records ? Number((ranked[0][1] / data.records * 100).toFixed(1)) : 0;
+    return { code, name, records: data.records, distinctHosts: data.hosts.size, dominantHost: ranked[0]?.[0] || "", dominantShare };
+  });
+}
+function printCountrySourceDiversity(label, records) {
+  const report = sourceDiversityByCountry(records);
+  const flagged = report.filter((r) => r.records === 0 || r.distinctHosts < 2 || r.dominantShare >= 80);
+  console.log(`${label} country-level source diversity: ${report.filter((r) => r.records > 0).length}/${EXPECTED.length} countries have records; ${flagged.length} country-level review flags (no records, fewer than 2 hosts, or one host >=80%)`);
+  for (const r of flagged) {
+    console.log(`  - ${r.code} ${r.name}: ${r.records} records, ${r.distinctHosts} host(s)${r.dominantHost ? `, dominant ${r.dominantHost} (${r.dominantShare}%)` : ""}`);
+  }
+}
 function printSourceQuality(label, records) {
   const q = sourceQuality(records);
   console.log(`${label} source quality: ${q.distinctHosts} distinct hosts; top 3 hosts account for ${q.topThreeShare}% of records`);
@@ -161,6 +196,8 @@ console.log(`Resources: ${resourcePrimary.length} primary + ${resourceSupplement
 console.log(`News: ${newsPrimary.length} primary + ${newsSupplement.length} supplemental = ${news.length} raw records`);
 printSourceQuality("Resources", resources);
 printSourceQuality("News", news);
+printCountrySourceDiversity("Resources", resources);
+printCountrySourceDiversity("News", news);
 console.log(`Resource same-country normalized duplicate groups: ${resourceDupes.length}; primary/supplement overlaps: ${resourceOverlaps.length}`);
 console.log(`News same-country normalized duplicate groups: ${newsDupes.length}; primary/supplement overlaps: ${newsOverlaps.length}`);
 console.log(`Same-title + same-URL review candidates: ${resourceSameTitleUrl.length} resource groups; ${newsSameTitleUrl.length} news groups`);
