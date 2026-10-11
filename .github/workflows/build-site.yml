@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Report combined agriculture coverage and duplicate URLs
+        run: npm run audit:agriculture:combined
+
       - name: Build site
         run: npm run build
 
