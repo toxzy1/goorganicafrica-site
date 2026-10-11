@@ -166,4 +166,13 @@ if (!opportunitySync.includes('Skipping unavailable opportunity feed') ||
   throw new Error("News and opportunity discovery must retry transient failures and continue with other feeds.");
 }
 
+// Discovery is not verification: new news records must not receive a verified date
+// until a person checks the original source. Sorting must never delete older records.
+if (!newsSync.includes("discovered: today") || newsSync.includes("verified: today")) {
+  throw new Error("News discovery must record discovery date without falsely marking candidates verified.");
+}
+if (newsSync.includes(".slice(0, 20)")) {
+  throw new Error("News discovery must not truncate and silently delete existing country records.");
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
