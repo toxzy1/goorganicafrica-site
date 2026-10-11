@@ -117,13 +117,21 @@ async function main() {
       });
       if (!response.ok) throw new Error("HTTP " + response.status);
       const xml = await response.text();
-      const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
+      // Process only the ten newest RSS entries per source. Check publication age
+      // before resolving redirects to keep scheduled runs within their time budget.
+      const items = (xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || []).slice(0, 10);
       const candidates = [];
 
       for (const item of items) {
         const title = field(item, "title");
         const summary = field(item, "description");
+        const published = date(field(item, "pubDate") || field(item, "dc:date"));
+        if (!title || !published) continue;
+        const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
+        if (age > 90) continue;
+
         let link = url(field(item, "link"));
+        if (!link) continue;
         if (link.includes("news.google.com")) {
           try {
             const resolved = await fetch(link, {
@@ -140,11 +148,7 @@ async function main() {
             continue;
           }
         }
-        const published = date(field(item, "pubDate") || field(item, "dc:date"));
-        if (!title || !link || !published || !isAllowedHost(link, feed.host)) continue;
-        const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
-        if (age > 90) continue;
-        if (!feed.country) continue;
+        if (!isAllowedHost(link, feed.host) || !feed.country) continue;
 
         candidates.push({
           title,
@@ -174,6 +178,9 @@ async function main() {
     }
   }
 
+  const MAX_NEW_PER_COUNTRY = 5;
+  const addedByCountry = new Map();
+
   // Bounded concurrency prevents one slow or temporarily unavailable source
   // from blocking all country/source combinations. Candidates are merged
   // sequentially below so duplicate checks remain deterministic.
@@ -185,10 +192,14 @@ async function main() {
       for (const candidate of candidates) {
         const key = candidateKey(candidate);
         if (existing.has(key)) continue;
+        const countryCode = String(candidate.code || "").toUpperCase();
+        const countryAdded = addedByCountry.get(countryCode) || 0;
+        if (countryAdded >= MAX_NEW_PER_COUNTRY) continue;
         data.records = data.records || [];
         data.records.unshift(candidate);
         existing.add(key);
         added++;
+        addedByCountry.set(countryCode, countryAdded + 1);
       }
     }
   }
