@@ -7,8 +7,13 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: review-first-live-test
+  cancel-in-progress: true
+
 jobs:
   news-discovery:
+    if: contains(github.event.head_commit.message, '[run-news]')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -35,6 +40,7 @@ jobs:
           NODE
 
   opportunity-discovery:
+    if: contains(github.event.head_commit.message, '[run-opportunity]')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -59,3 +65,30 @@ jobs:
           console.log('Review-only candidate status violations:', invalid.length);
           if (invalid.length) process.exit(1);
           NODE
+
+  directory-monitor:
+    if: contains(github.event.head_commit.message, '[run-directory]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout integration test branch
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run directory monitor against live sources without committing
+        run: |
+          python scripts/update-directories.py
+          python <<'PY'
+          import json
+          from pathlib import Path
+          queue = json.loads(Path("data/directories/pending/directory-candidates-latest.json").read_text(encoding="utf-8"))
+          candidates = queue.get("candidates", [])
+          invalid = [c for c in candidates if c.get("status") != "needs_review"]
+          print("Unresolved directory review candidates:", len(candidates))
+          print("Source errors recorded for review:", len(queue.get("errors", [])))
+          print("Non-review directory candidate status violations:", len(invalid))
+          if invalid:
+              raise SystemExit(1)
+          PY
