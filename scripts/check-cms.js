@@ -125,6 +125,8 @@ if (translation.publish_machine_translations_automatically !== false) {
 const newsSync = read("scripts/sync-agricultural-news.js");
 const opportunitySync = read("scripts/sync-agricultural-opportunities.js");
 const opportunitiesTemplate = read("src/_includes/opportunities-directory.njk");
+const newsCountryTemplate = read("src/agricultural-news-country.njk");
+const newsIndexTemplate = read("src/agricultural-news.njk");
 for (const [name, script] of [["news", newsSync], ["opportunities", opportunitySync]]) {
   if (!script.includes('status: "review"') || !script.includes('lifecycle: "needs_review"')) {
     throw new Error("Agricultural " + name + " sync must mark new records as needs_review.");
@@ -132,6 +134,12 @@ for (const [name, script] of [["news", newsSync], ["opportunities", opportunityS
 }
 if (!opportunitiesTemplate.includes('record.status != "review" and record.lifecycle != "needs_review"')) {
   throw new Error("Opportunity directory must hide unreviewed automated candidates.");
+}
+if (!newsCountryTemplate.includes('candidate.status != "review"') || !newsCountryTemplate.includes("publishedArticles")) {
+  throw new Error("Country news pages must hide unreviewed discovery candidates.");
+}
+if (!newsIndexTemplate.includes('article.lifecycle != "needs_review"')) {
+  throw new Error("News index must hide candidates marked for review by lifecycle.");
 }
 if (!opportunitiesTemplate.includes('record.lifecycle or record.status')) {
   throw new Error("Opportunity directory must fall back to the existing status field when lifecycle is absent.");
