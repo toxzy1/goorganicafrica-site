@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Check agricultural news sync syntax
+        run: node --check scripts/sync-agricultural-news.js
+
       - name: Install dependencies
         run: npm install
 
