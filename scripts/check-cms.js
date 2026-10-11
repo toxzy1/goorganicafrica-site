@@ -120,4 +120,20 @@ if (translation.publish_machine_translations_automatically !== false) {
   throw new Error("Machine translations must not be published automatically.");
 }
 
+// Verify that discovery scripts explicitly label newly collected items as
+// unreviewed candidates; a draft PR alone is not a content approval.
+const newsSync = read("scripts/sync-agricultural-news.js");
+const opportunitySync = read("scripts/sync-agricultural-opportunities.js");
+for (const [name, script] of [["news", newsSync], ["opportunities", opportunitySync]]) {
+  if (!script.includes('status: "review"') || !script.includes('lifecycle: "needs_review"')) {
+    throw new Error("Agricultural " + name + " sync must mark new records as needs_review.");
+  }
+}
+if (!newsSync.includes("ageDays > 30")) {
+  throw new Error("Agricultural news discovery must reject stories older than its 30-day freshness window.");
+}
+if (!opportunitySync.includes("age > 90")) {
+  throw new Error("Opportunity discovery must reject items older than its 90-day discovery window.");
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
