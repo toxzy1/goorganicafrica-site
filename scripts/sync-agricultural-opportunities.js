@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalOpportunities.json");
+const COUNTRIES_FILE = path.join(process.cwd(), "src", "_data", "calculatorCountries.json");
 const BASE_FEEDS = [
   { name: "World Bank agriculture finance", query: "site:worldbank.org agriculture funding grant finance", host: "worldbank.org", source: "World Bank" },
   { name: "African Development Bank agriculture opportunities", query: "site:afdb.org agriculture grant finance project", host: "afdb.org", source: "African Development Bank" },
@@ -55,16 +56,35 @@ function slugify(v) { return v.toLowerCase().normalize("NFKD").replace(/[\u0300-
 
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
+  const countryRegistry = JSON.parse(fs.readFileSync(COUNTRIES_FILE, "utf8"));
+  const countries = Array.isArray(countryRegistry.list) ? countryRegistry.list : [];
+  if (!countries.length) throw new Error("Country registry is missing or empty.");
   const today = new Date().toISOString().slice(0,10);
   const existing = new Set((data.records || []).map(r => r.url || r.title));
   let added = 0;
 
-  const FEEDS = buildFeeds(data.countries);
+  const FEEDS = buildFeeds(countries);
 
   for (const feed of FEEDS) {
-    const response = await fetch(feed.url, {headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}});
-    if (!response.ok) throw new Error(feed.name + ": HTTP " + response.status);
-    const xml = await response.text();
+    let xml;
+    try {
+      let response;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          response = await fetch(feed.url, { headers: { "user-agent": "GoOrganicAfrica-OpportunityBot/1.0" } });
+          if (response.ok) break;
+          if (response.status < 500 && response.status !== 429) break;
+        } catch (error) {
+          if (attempt === 3) throw error;
+        }
+        if (attempt < 3) await new Promise(resolve => setTimeout(resolve, attempt * 750));
+      }
+      if (!response || !response.ok) throw new Error("HTTP " + (response ? response.status : "network error"));
+      xml = await response.text();
+    } catch (error) {
+      console.warn("Skipping unavailable opportunity feed " + feed.name + ": " + error.message);
+      continue;
+    }
     const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
 
     for (const item of items) {
