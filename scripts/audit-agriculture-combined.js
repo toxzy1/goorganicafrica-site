@@ -120,7 +120,9 @@ function sourceQuality(records) {
   let invalidUrl = 0;
   let homepageUrl = 0;
   let missingSource = 0;
+  let validUrlRecords = 0;
   for (const record of records) {
+    if (!String(record.source || "").trim()) missingSource++;
     const raw = String(record.url || "").trim();
     if (!raw) { missingUrl++; continue; }
     let url;
@@ -131,17 +133,17 @@ function sourceQuality(records) {
       invalidUrl++;
       continue;
     }
+    validUrlRecords++;
     const host = url.hostname.toLowerCase().replace(/^www\./, "");
     hosts.set(host, (hosts.get(host) || 0) + 1);
     if (url.pathname === "/" || !url.pathname) homepageUrl++;
-    if (!String(record.source || "").trim()) missingSource++;
   }
   const ranked = [...hosts.entries()].sort((a, b) => b[1] - a[1]);
   return {
     records: records.length,
     distinctHosts: hosts.size,
     topHosts: ranked.slice(0, 8),
-    topThreeShare: records.length ? Number((ranked.slice(0, 3).reduce((sum, [, count]) => sum + count, 0) / records.length * 100).toFixed(1)) : 0,
+    topThreeShare: validUrlRecords ? Number((ranked.slice(0, 3).reduce((sum, [, count]) => sum + count, 0) / validUrlRecords * 100).toFixed(1)) : 0,
     homepageUrl,
     missingUrl,
     invalidUrl,
