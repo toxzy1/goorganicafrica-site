@@ -132,13 +132,13 @@ for (const [name, script] of [["news", newsSync], ["opportunities", opportunityS
     throw new Error("Agricultural " + name + " sync must mark new records as needs_review.");
   }
 }
-if (!['record.status != "review"', 'record.status != "draft"', 'record.status != "needs_review"', 'record.lifecycle != "needs_review"', 'record.lifecycle != "draft"'].every(marker => opportunitiesTemplate.includes(marker))) {
+if (!['record.status != "review"', 'record.status != "draft"', 'record.status != "needs_review"', 'record.lifecycle != "review"', 'record.lifecycle != "needs_review"', 'record.lifecycle != "draft"'].every(marker => opportunitiesTemplate.includes(marker))) {
   throw new Error("Opportunity directory must hide all draft and review-state candidates.");
 }
-if (!['candidate.status != "review"', 'candidate.status != "draft"', 'candidate.status != "needs_review"', 'candidate.lifecycle != "needs_review"', 'candidate.lifecycle != "draft"'].every(marker => newsCountryTemplate.includes(marker)) || !newsCountryTemplate.includes("publishedArticles")) {
+if (!['candidate.status != "review"', 'candidate.status != "draft"', 'candidate.status != "needs_review"', 'candidate.lifecycle != "review"', 'candidate.lifecycle != "needs_review"', 'candidate.lifecycle != "draft"'].every(marker => newsCountryTemplate.includes(marker)) || !newsCountryTemplate.includes("publishedArticles")) {
   throw new Error("Country news pages must hide all draft and review-state candidates.");
 }
-if (!['article.status != "review"', 'article.status != "draft"', 'article.status != "needs_review"', 'article.lifecycle != "needs_review"', 'article.lifecycle != "draft"'].every(marker => newsIndexTemplate.includes(marker))) {
+if (!['article.status != "review"', 'article.status != "draft"', 'article.status != "needs_review"', 'article.lifecycle != "review"', 'article.lifecycle != "needs_review"', 'article.lifecycle != "draft"'].every(marker => newsIndexTemplate.includes(marker))) {
   throw new Error("News index must hide all draft and review-state candidates.");
 }
 if (!opportunitiesTemplate.includes('record.lifecycle or record.status')) {
