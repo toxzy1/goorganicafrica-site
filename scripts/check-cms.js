@@ -124,10 +124,20 @@ if (translation.publish_machine_translations_automatically !== false) {
 // unreviewed candidates; a draft PR alone is not a content approval.
 const newsSync = read("scripts/sync-agricultural-news.js");
 const opportunitySync = read("scripts/sync-agricultural-opportunities.js");
+const opportunitiesTemplate = read("src/_includes/opportunities-directory.njk");
 for (const [name, script] of [["news", newsSync], ["opportunities", opportunitySync]]) {
   if (!script.includes('status: "review"') || !script.includes('lifecycle: "needs_review"')) {
     throw new Error("Agricultural " + name + " sync must mark new records as needs_review.");
   }
+}
+if (!opportunitiesTemplate.includes('record.status != "review" and record.lifecycle != "needs_review"')) {
+  throw new Error("Opportunity directory must hide unreviewed automated candidates.");
+}
+if (!opportunitiesTemplate.includes('record.lifecycle or record.status')) {
+  throw new Error("Opportunity directory must fall back to the existing status field when lifecycle is absent.");
+}
+if (!opportunitySync.includes("discovered: today") || !opportunitySync.includes("country: country.name") || !opportunitySync.includes("code: country.code")) {
+  throw new Error("Opportunity candidates must use the existing country schema and must not claim to be verified before review.");
 }
 if (!newsSync.includes("ageDays > 30")) {
   throw new Error("Agricultural news discovery must reject stories older than its 30-day freshness window.");
