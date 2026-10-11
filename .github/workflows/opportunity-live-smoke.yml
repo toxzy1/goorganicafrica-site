@@ -1,0 +1,45 @@
+name: Temporary Opportunity Review-Queue Live Smoke Test
+
+on:
+  push:
+    branches: [opportunity-live-smoke]
+
+permissions:
+  contents: read
+
+jobs:
+  opportunity-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout isolated smoke-test branch
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Restrict workspace registry to three countries and save baseline
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const p = 'src/_data/agriculturalResources.json';
+          const d = JSON.parse(fs.readFileSync(p, 'utf8'));
+          d.countries = d.countries.filter(c => ['NG', 'GH', 'KE'].includes(c.code));
+          if (d.countries.length !== 3) throw new Error('Expected Nigeria, Ghana and Kenya in smoke-test data.');
+          fs.writeFileSync(p, JSON.stringify(d, null, 2) + '\\n');
+          NODE
+          cp src/_data/agriculturalOpportunities.json "$RUNNER_TEMP/opportunities-before.json"
+      - name: Run live opportunity discovery without publishing or committing
+        run: |
+          node scripts/sync-agricultural-opportunities.js
+          node <<'NODE'
+          const fs = require('fs');
+          const before = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/opportunities-before.json', 'utf8'));
+          const after = JSON.parse(fs.readFileSync('src/_data/agriculturalOpportunities.json', 'utf8'));
+          const prior = new Set((before.records || []).map(a => String(a.code || '').toUpperCase() + '::' + a.url));
+          const added = (after.records || []).filter(a => a.url && !prior.has(String(a.code || '').toUpperCase() + '::' + a.url));
+          const invalid = added.filter(a => a.status !== 'review' || a.lifecycle !== 'needs_review' || !a.code);
+          console.log('New opportunity candidates:', added.length);
+          console.log('Review-only candidate status violations:', invalid.length);
+          if (invalid.length) process.exit(1);
+          NODE
