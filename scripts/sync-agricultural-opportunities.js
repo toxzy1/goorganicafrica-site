@@ -56,7 +56,9 @@ function slugify(v) { return v.toLowerCase().normalize("NFKD").replace(/[\u0300-
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
   const today = new Date().toISOString().slice(0,10);
-  const existing = new Set((data.records || []).map(r => r.url || r.title));
+  // A regional story may legitimately be relevant to more than one country.
+  // Deduplicate by country + canonical URL/title, not URL globally.
+  const existing = new Set((data.records || []).map(candidateKey));
   let added = 0;
 
   // Opportunities data is a flat records list; country metadata lives in the
@@ -145,11 +147,11 @@ async function main() {
     const results = await Promise.all(batch.map(processFeed));
     for (const candidates of results) {
       for (const candidate of candidates) {
-        if (existing.has(candidate.url) || existing.has(candidate.title)) continue;
+        const key = candidateKey(candidate);
+        if (existing.has(key)) continue;
         data.records = data.records || [];
         data.records.unshift(candidate);
-        existing.add(candidate.url);
-        existing.add(candidate.title);
+        existing.add(key);
         added++;
       }
     }
