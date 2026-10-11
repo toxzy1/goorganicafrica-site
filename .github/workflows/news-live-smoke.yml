@@ -26,7 +26,7 @@ jobs:
           const d = JSON.parse(fs.readFileSync(p, 'utf8'));
           d.countries = d.countries.filter(c => ['NG', 'GH'].includes(c.code));
           if (d.countries.length !== 2) throw new Error('Expected Nigeria and Ghana in the smoke-test data.');
-          fs.writeFileSync(p, JSON.stringify(d, null, 2) + '\\n');
+          fs.writeFileSync(p, JSON.stringify(d, null, 2) + '\n');
           NODE
           cp src/_data/agriculturalNews.json "$RUNNER_TEMP/news-before.json"
       - name: Run live news discovery without publishing or committing
