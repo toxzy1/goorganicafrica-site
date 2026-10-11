@@ -171,7 +171,7 @@ const newsPages = enabledLanguages.map((lang) => ({
 
 for (const item of resourcePages) {
   const html = read(item.rel);
-  if (!html) continue;
+  if (!html) { failures.push(item.rel + ": required localized Resources page is missing"); continue; }
   if (!hasLang(html, item.lang)) failures.push(item.rel + ": html lang does not match " + item.lang);
   if (item.lang === "ar" && !hasRtl(html)) failures.push(item.rel + ": Arabic page must render dir=rtl");
   for (const id of ["resourceSearch", "resourceCountry", "resourceCategory", "resourceDirectory", "resourceCount"]) {
@@ -184,7 +184,7 @@ for (const item of resourcePages) {
 
 for (const item of newsPages) {
   const html = read(item.rel);
-  if (!html) continue;
+  if (!html) { failures.push(item.rel + ": required localized Agricultural News page is missing"); continue; }
   if (!hasLang(html, item.lang)) failures.push(item.rel + ": html lang does not match " + item.lang);
   if (item.lang === "ar" && !hasRtl(html)) failures.push(item.rel + ": Arabic page must render dir=rtl");
   const selectors = selectorCount(html);
@@ -202,7 +202,7 @@ if (fs.existsSync(newsSourcePath)) {
     for (const lang of enabledLanguages) {
       const rel = languagePrefix(lang) + "agricultural-news/" + country.slug + "/index.html";
       const html = read(rel);
-      if (!html) continue;
+      if (!html) { failures.push(rel + ": required localized country-news page is missing"); continue; }
       if (!hasLang(html, lang)) failures.push(rel + ": html lang does not match " + lang);
       if (lang === "ar" && !hasRtl(html)) failures.push(rel + ": Arabic country page must render dir=rtl");
       for (const targetLang of enabledLanguages) {
