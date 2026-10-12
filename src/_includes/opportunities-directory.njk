@@ -9,7 +9,7 @@
   <div id="opportunity-list">
   {% for record in agriculturalOpportunities.records %}
     {# Never render automated candidates until an editor approves them. #}
-    {% if record.status != "review" and record.status != "draft" and record.status != "needs_review" and record.lifecycle != "review" and record.lifecycle != "needs_review" and record.lifecycle != "draft" %}
+    {% if (record.status == "open" or record.status == "active" or record.status == "closed" or record.status == "expired" or record.status == "archived") and record.lifecycle != "review" and record.lifecycle != "needs_review" and record.lifecycle != "draft" %}
     <article class="opportunity-card" data-status="{{ record.lifecycle or record.status }}" data-category="{{ record.category }}" data-search="{{ record.title }} {{ record.country }} {{ record.category }} {{ record.type }} {{ record.eligibility }} {{ record.summary }} {{ (record.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
       <div style="font-size:.9em">{{ record.country }} · {{ record.category }} · {{ record.type }}</div>
       <h2 style="margin:8px 0">{{ record.title }}</h2>
