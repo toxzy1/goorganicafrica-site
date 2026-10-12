@@ -3084,16 +3084,6 @@
           "status": "official"
         },
         {
-          "category": "policy",
-          "title": "Senegal launches AgriConnect Compact for grains, horticulture and livestock",
-          "summary": "Senegal launched a country-led framework combining infrastructure and services, policy reform and private investment across grains, horticulture and livestock.",
-          "url": "https://www.worldbank.org/en/news/press-release/2026/02/10/senegal-launches-agriconnect-compact-to-transform-its-agriculture-sector",
-          "source": "World Bank",
-          "published": "2026-02-10",
-          "verified": "2026-10-07",
-          "status": "official"
-        },
-        {
           "category": "research-innovation",
           "title": "World Bank Group soil-health programme expands agricultural-support reform",
           "summary": "Senegal is one of six African countries participating in a programme focused on better fertilizer-support design, soil health and agricultural productivity.",
@@ -3151,6 +3141,37 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official"
+        },
+        {
+          "category": "machinery-technology",
+          "title": "Senegal expands digital tracking of subsidized agricultural inputs",
+          "summary": "Senegal’s Ministry of Agriculture, Food Sovereignty and Livestock announced the nationwide rollout of its Agro-Pastoral Platform (ERP PAS) to modernize distribution of subsidized fertilizer and seeds. The ministry reports that the pilot enrolled more than 60,000 producers and tracked about CFAF 6.4 billion in subsidies through 213,847 transactions; these are ministry-reported pilot figures, not an independent impact evaluation.",
+          "url": "https://agriculture.gouv.sn/agriculture-le-senegal-generalise-la-digitalisation-de-la-distribution-des-intrants-agricoles-avec-lerp-pas/",
+          "source": "Senegal Ministry of Agriculture, Food Sovereignty and Livestock (MASAE)",
+          "source_id": "senegal-masae",
+          "source_tier": 1,
+          "published": "2026-10-10",
+          "verified": "2026-10-12",
+          "review_after": "2026-11-11",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Sénégal étend le suivi numérique de la distribution des intrants agricoles subventionnés",
+              "summary": "Le ministère sénégalais de l’Agriculture, de la Souveraineté alimentaire et de l’Élevage a annoncé le déploiement national de la plateforme agro-pastorale (ERP PAS) pour moderniser la distribution des engrais et semences subventionnés. Le ministère indique que la phase pilote a enrôlé plus de 60 000 producteurs et suivi environ 6,4 milliards de FCFA de subventions au moyen de 213 847 opérations ; ces chiffres proviennent du ministère et ne constituent pas une évaluation indépendante de l’impact."
+            },
+            "ar": {
+              "title": "السنغال توسّع التتبع الرقمي لتوزيع المدخلات الزراعية المدعومة",
+              "summary": "أعلنت وزارة الزراعة والسيادة الغذائية والثروة الحيوانية في السنغال التوسع الوطني لمنصة الزراعة والرعي (ERP PAS) لتحديث توزيع الأسمدة والبذور المدعومة. وتقول الوزارة إن المرحلة التجريبية سجلت أكثر من 60 ألف منتج وتتبعَت نحو 6.4 مليار فرنك أفريقي من الدعم عبر 213,847 معاملة؛ وهذه أرقام أبلغت عنها الوزارة وليست تقييماً مستقلاً للأثر."
+            },
+            "pt": {
+              "title": "Senegal amplia o acompanhamento digital da distribuição de insumos agrícolas subsidiados",
+              "summary": "O Ministério da Agricultura, Soberania Alimentar e Pecuária do Senegal anunciou a expansão nacional da Plataforma Agro-Pastoral (ERP PAS) para modernizar a distribuição de fertilizantes e sementes subsidiados. O ministério informa que a fase-piloto registou mais de 60 mil produtores e acompanhou cerca de 6,4 mil milhões de FCFA em subsídios através de 213 847 operações; são números divulgados pelo ministério, não uma avaliação independente do impacto."
+            },
+            "sw": {
+              "title": "Senegal yaongeza ufuatiliaji wa kidijitali wa usambazaji wa pembejeo za kilimo zinazofadhiliwa",
+              "summary": "Wizara ya Kilimo, Ukuu wa Chakula na Ufugaji ya Senegal imetangaza upanuzi wa kitaifa wa Jukwaa la Kilimo na Ufugaji (ERP PAS) ili kuboresha usambazaji wa mbolea na mbegu zinazofadhiliwa. Wizara inasema awamu ya majaribio ilisajili wazalishaji zaidi ya 60,000 na kufuatilia takriban faranga bilioni 6.4 za CFA za ruzuku kupitia miamala 213,847; hizi ni takwimu zilizotolewa na wizara, si tathmini huru ya athari."
+            }
+          }
         }
       ],
       "localizedNames": {
