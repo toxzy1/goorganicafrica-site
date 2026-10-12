@@ -117,6 +117,13 @@
     if (rest === "agricultural-grants") return code === "en" ? "/agricultural-grants/" : "/" + code + "/agricultural-grants/";
     if (rest === "farm-machinery") return code === "en" ? "/farm-machinery/" : "/" + code + "/farm-machinery/";
 
+    // Search and discovery tools do not have separately generated localized
+    // route trees. Keep these tools on their real shared URL while translating
+    // their interface; never guess /fr/, /ar/, /pt/ or /sw/ routes that may 404.
+    if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services)$/.test(rest)) {
+      return "/" + rest + "/";
+    }
+
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact)$/.test(rest)) return code === "en" ? "/" + rest + "/" : "/" + code + "/" + rest + "/";
     if (/^(privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
