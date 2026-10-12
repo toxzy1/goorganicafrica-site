@@ -20,7 +20,8 @@ const sourceUrlAudit=(records)=>{
   if(!r.url)return false;
   try{
    const u=new URL(r.url);
-   return u.pathname==="/"||/^\/(?:latest-news|news-detail|projects-list|call-for-proposals)\/?$/i.test(u.pathname)||/^\/en\/(?:sectors|)$/.test(u.pathname);
+   const pathname=u.pathname.replace(/\/+$/, "")||"/";
+   return pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname)||/^\/en$/.test(pathname);
   }catch{return true;}
  });
  return {
