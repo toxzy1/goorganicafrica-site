@@ -73,4 +73,21 @@ for (const code of calculatorCountries.map(c => String(c.code).toLowerCase())) {
 }
 if (!read('src/sitemap.njk').includes('calculatorLocales')) throw new Error('Localized calculator pages are missing from sitemap.');
 
+const languageSwitcher = read('src/js/language-switcher.js');
+for (const sharedPage of ['search', 'farmer-decision-centre', 'markets', 'opportunities', 'agricultural-services']) {
+  if (!languageSwitcher.includes('^(search|farmer-decision-centre|markets|opportunities|agricultural-services) ${activeCountries.length} active countries, ${aggregate.length} synchronized enterprises, dynamic data/admin controls, Selar support, AdSense controls, and agricultural data automation.`);
+)) {
+    throw new Error('Language switcher must preserve valid shared routes for search and discovery tools.');
+  }
+}
+const globalSearch = read('src/search.njk');
+if (!globalSearch.includes('goa-global-search') || !globalSearch.includes("input.addEventListener('input',render)") || !globalSearch.includes("'<h2><a href=\\\"'+esc(x.url)+'\\\">'")) {
+  throw new Error('Global search must provide live query handling and clickable result destinations.');
+}
+const decisionPage = read('src/farmer-decision-centre.njk');
+const decisionUi = read('src/_includes/farmer-decision-centre-ui.njk');
+if (!decisionPage.includes('farmer-decision-centre-ui.njk') || !decisionUi.includes('btn.addEventListener("click",render)') || !decisionUi.includes('Open source')) {
+  throw new Error('Farmer Decision Centre must retain its interactive brief builder and source links.');
+}
+
 console.log(`GoOrganicAfrica checks passed: ${activeCountries.length} active countries, ${aggregate.length} synchronized enterprises, dynamic data/admin controls, Selar support, AdSense controls, and agricultural data automation.`);
