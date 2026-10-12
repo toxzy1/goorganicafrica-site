@@ -20,7 +20,7 @@ const sourceUrlAudit=(records)=>{
   if(!r.url)return false;
   try{
    const u=new URL(r.url);
-   return u.pathname==="/"||/^\\/(?:latest-news|news-detail|projects-list|call-for-proposals)\\/?$/i.test(u.pathname)||/^\\/en\\/(?:sectors|)$/.test(u.pathname);
+   return u.pathname==="/"||/^\/(?:latest-news|news-detail|projects-list|call-for-proposals)\/?$/i.test(u.pathname)||/^\/en\/(?:sectors|)$/.test(u.pathname);
   }catch{return true;}
  });
  return {
