@@ -10,7 +10,8 @@ const resources2=read("agriculturalResourcesSupplement.json").records||[];
 const markets=read("agriculturalMarkets.json").records||[];
 const opp=read("agriculturalOpportunities.json").records||[];
 const news=[];
-for(const c of read("agriculturalNews.json").countries||[]) for(const a of c.articles||[]) news.push(a);
+const newsCountryCoverage=(read("agriculturalNews.json").countries||[]).map(c=>({code:c.code,name:c.name,story_count:(c.articles||[]).length}));
+for(const c of read("agriculturalNews.json").countries||[]) for(const a of c.articles||[]) news.push({...a,country_code:c.code,country_name:c.name});
 news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]));
 const sourceUrlAudit=(records)=>{
  const counts=new Map();
@@ -46,6 +47,7 @@ const report={
  markets:{total:markets.length,stale:markets.filter(r=>r.observed_date&&(age(r.observed_date)===null||age(r.observed_date)>45)).length,missing_observation_date:markets.filter(r=>!r.observed_date&&r.price!=null).length},
  opportunities:{total:opp.length,review:opp.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length,needs_reverification:opp.filter(r=>["open","active"].includes(String(r.status).toLowerCase())&&(!r.verified||age(r.verified)===null||age(r.verified)>14)).length,missing_verification_date:opp.filter(r=>!(r.verified)).length,expired:opp.filter(r=>r.deadline&&age(r.deadline)!==null&&new Date(r.deadline)<today).length,invalid_deadline_date:opp.filter(r=>r.deadline&&age(r.deadline)===null).length},
  news:{total:news.length,stale:news.filter(r=>{const d=r.published||r.date;return !d||age(d)===null||age(d)>30;}).length,missing_publication_date:news.filter(r=>!(r.published||r.date)).length,review:news.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length},
+ news_country_coverage:{countries:newsCountryCoverage.length,zero_story_countries:newsCountryCoverage.filter(c=>c.story_count===0),single_story_countries:newsCountryCoverage.filter(c=>c.story_count===1),coverage_by_country:newsCountryCoverage},
  source_quality:sourceQuality,
  action:"Review flagged records in CMS before publication or replacement. Duplicate and generic-source findings are review flags only; this monitor never deletes or changes live records."
 };
