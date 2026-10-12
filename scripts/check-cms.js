@@ -177,6 +177,9 @@ if (newsSync.includes(".slice(0, 20)")) {
 
 
 const freshnessMonitor = read("scripts/monitor-agricultural-data.js");
+if (!freshnessMonitor.includes("sourceUrlAudit") || !freshnessMonitor.includes("generic_landing_page_records") || !freshnessMonitor.includes("duplicate_url_groups") || !freshnessMonitor.includes("news-keywords\\/agriculture")) {
+  throw new Error("Agricultural data monitor must flag duplicate source URLs and nested generic landing pages for editorial review.");
+}
 if (!freshnessMonitor.includes("missing_verification_date") || !freshnessMonitor.includes("!r.verified||age(r.verified)===null||age(r.verified)>14") || !freshnessMonitor.includes("return !d||age(d)===null||age(d)>180")) {
   throw new Error("Agricultural freshness monitor must flag missing verification dates, not treat them as fresh.");
 }
