@@ -441,6 +441,18 @@ if (decisionHtml) {
     }
   }
 }
+// News lifecycle is optional for legacy verified records. Missing lifecycle means
+// current unless explicitly marked otherwise; requiring lifecycle="current" hid most official stories.
+for (const rel of ["agricultural-news.njk", "agricultural-news-country.njk", "search.njk"]) {
+  const p = path.join(source, rel);
+  if (!fs.existsSync(p)) { failures.push("Agricultural News filter source is missing: " + rel); continue; }
+  const template = fs.readFileSync(p, "utf8");
+  if (!template.includes("not ") || !template.includes("lifecycle")) failures.push(rel + ": missing lifecycle compatibility handling");
+  if (rel === "agricultural-news.njk" && template.includes('article.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
+  if (rel === "agricultural-news-country.njk" && template.includes('candidate.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
+  if (rel === "search.njk" && template.includes('r.lifecycle == "current" and r.url')) failures.push(rel + ": strict lifecycle filter hides legacy official news from search");
+}
+
 const newsSourcePath = path.join(source, "_data", "agriculturalNews.json");
 if (fs.existsSync(newsSourcePath)) {
   const newsData = JSON.parse(fs.readFileSync(newsSourcePath, "utf8"));
