@@ -4032,6 +4032,34 @@
       "lifecycle": "current",
       "type": "Government agricultural information portal",
       "access": "Official information source; check individual notices for current eligibility and deadlines"
+    },
+    {
+      "country_code": "ZA",
+      "country": "South Africa",
+      "category": "data",
+      "title": "FAO GIEWS country brief: South Africa’s 2026 cereal production and food-security outlook",
+      "summary": "FAO’s Global Information and Early Warning System country brief provides a current reference on South Africa’s 2026 cereal output, maize export outlook and food-security conditions. The brief is a data resource, not a news article or funding call.",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ZA",
+      "source": "FAO GIEWS",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Direct FAO country brief checked; awaiting editorial approval for the Resources directory."
+    },
+    {
+      "country_code": "SS",
+      "country": "South Sudan",
+      "category": "data",
+      "title": "FAO GIEWS country brief: South Sudan’s September 2026 food-security and cereal outlook",
+      "summary": "FAO’s September 2026 country brief summarizes acute food-insecurity risks, concerns about 2026 cereal production and exceptionally high cereal prices in South Sudan. It provides an official reference for planning and monitoring, not a news article or funding call.",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=SSD&lang=en",
+      "source": "FAO GIEWS",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Direct FAO country brief checked; awaiting editorial approval for the Resources directory."
     }
   ]
 }
