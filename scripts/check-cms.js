@@ -196,7 +196,7 @@ if (!agriculturalDataWorkflow.includes("peter-evans/create-pull-request@v7") || 
 }
 
 const eleventySource = read(".eleventy.js");
-if (!eleventySource.includes("const collectPublishableNews") || !eleventySource.includes("const collectPublishableResources") || !eleventySource.includes("articles: dedupeAgriculturalRecords(") || !eleventySource.includes("const incoming = [...(supplement.records || []), ...(expansion.records || [])]") || !eleventySource.includes('title: article.title || article.headline || ""') || !eleventySource.includes("isSpecificAgriculturalNewsUrl(article.url)") || !eleventySource.includes("const allSupplementRecords = [...(supplement.records || []), ...gapRecords.map")) {
+if (!eleventySource.includes("const collectPublishableNews") || !eleventySource.includes("const collectPublishableResources") || !eleventySource.includes("articles: dedupeAgriculturalRecords(") || !eleventySource.includes("const incoming = [...(supplement.records || []), ...(expansion.records || [])]") || !eleventySource.includes('title: article.title || article.headline || ""') || !eleventySource.includes("isSpecificAgriculturalNewsUrl(article.url)") || !eleventySource.includes("const allSupplementRecords = [...(supplement.records || []), ...gapRecords.map") || !eleventySource.includes("const isGenericAgriculturalResourceUrl = value =>") || !eleventySource.includes("shouldPublishAgriculturalResource(r, cat)")) {
   throw new Error("Public agricultural search, news and resource data must normalize eligible news, deduplicate sources and exclude generic or review-queue records.");
 }
 if (eleventySource.includes('new Date("2026-10-08T00:00:00Z")') || !eleventySource.includes("new Date().toISOString().slice(0, 10)")) {
