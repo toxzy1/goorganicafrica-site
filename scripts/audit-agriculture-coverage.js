@@ -89,7 +89,13 @@ newsCountries.forEach((country) => {
   for (const article of safeArray(country.articles)) {
     newsTotal++;
     if (EXPECTED_CODES.has(code)) newsCounts[code]++;
-    for (const field of ["title", "summary", "source", "url", "published", "verified", "category"]) {
+    const reviewOnly = ["review", "needs_review", "draft"].includes(String(article.status || "").toLowerCase()) ||
+      ["review", "needs_review", "draft"].includes(String(article.lifecycle || "").toLowerCase());
+    const requiredNewsFields = ["title", "summary", "source", "url", "verified", "category"];
+    // Review-queue candidates may not yet have a confirmed publication date.
+    // Published/current records must still carry a publication date.
+    if (!reviewOnly) requiredNewsFields.push("published");
+    for (const field of requiredNewsFields) {
       if (!nonempty(article[field])) errors.push(`News ${newsTotal} (${code}): missing ${field}`);
     }
     if (nonempty(article.url) && !/^https?:\/\//i.test(article.url)) errors.push(`News ${newsTotal} (${code}): URL is not HTTP(S): ${article.url}`);
