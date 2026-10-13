@@ -34,30 +34,48 @@ const newsCountryCoverage=newsCountryList.map(c=>{
  const sources=new Set(countryRecords.map(r=>String(r.source||r.publisher||"").trim()).filter(Boolean));
  return {code:c.code,name:c.name,story_count:urls.size,source_count:sources.size};
 });
-const sourceUrlAudit=(records, resourceMode=false)=>{
+const sourceUrlAudit=(records, resourceMode=false, kind="generic")=>{
  const sourceUrl=r=>String(r.url||r.source_url||r.application_url||"").trim();
- const counts=new Map(), recordsByUrl=new Map();
+ const counts=new Map(), recordsByUrl=new Map(), duplicateCounts=new Map(), duplicateRecordsByKey=new Map();
  for(const r of records){
   const url=sourceUrl(r);if(!url)continue;
   counts.set(url,(counts.get(url)||0)+1);
   if(!recordsByUrl.has(url))recordsByUrl.set(url,[]);
   recordsByUrl.get(url).push(r);
+  const country=String(r.country_code||r.code||r.country||r.country_name||"unassigned").toUpperCase();
+  const duplicateKey=kind==="markets" ? [url,country,r.commodity||"",r.market||"",r.observed_date||r.date||""].join("|") : url;
+  duplicateCounts.set(duplicateKey,(duplicateCounts.get(duplicateKey)||0)+1);
+  if(!duplicateRecordsByKey.has(duplicateKey))duplicateRecordsByKey.set(duplicateKey,[]);
+  duplicateRecordsByKey.get(duplicateKey).push(r);
  }
- const duplicateGroups=[...counts.entries()].filter(([,count])=>count>1).sort((a,b)=>b[1]-a[1]);
+ const duplicateGroups=[...duplicateCounts.entries()].filter(([,count])=>count>1).sort((a,b)=>b[1]-a[1]);
  const sameCountryGroups=[],crossCountryGroups=[];
+ if(kind==="markets"){
+  for(const [key,group] of duplicateRecordsByKey){
+   if(group.length<2)continue;
+   const sample=group[0];
+   sameCountryGroups.push({url:sourceUrl(sample),records:group.length,countries:[String(sample.country_code||sample.code||sample.country||"unassigned").toUpperCase()],commodity:sample.commodity||"",market:sample.market||"",observed_date:sample.observed_date||sample.date||""});
+  }
+ }else{
+  for(const [url,group] of recordsByUrl){
+   if(group.length<2)continue;
+   const byCountry=new Map();
+   for(const record of group){
+    const country=String(record.country_code||record.code||record.country||record.country_name||"unassigned").toUpperCase();
+    byCountry.set(country,(byCountry.get(country)||0)+1);
+   }
+   if([...byCountry.values()].some(count=>count>1))sameCountryGroups.push({url,records:group.length,countries:[...byCountry.keys()]});
+  }
+ }
  for(const [url,group] of recordsByUrl){
   if(group.length<2)continue;
-  const byCountry=new Map();
-  for(const record of group){
-   const country=String(record.country_code||record.code||record.country||record.country_name||"unassigned").toUpperCase();
-   byCountry.set(country,(byCountry.get(country)||0)+1);
-  }
-  if([...byCountry.values()].some(count=>count>1))sameCountryGroups.push({url,records:group.length,countries:[...byCountry.keys()]});
-  if(byCountry.size>1)crossCountryGroups.push({url,records:group.length,countries:[...byCountry.keys()]});
+  const byCountry=new Set(group.map(record=>String(record.country_code||record.code||record.country||record.country_name||"unassigned").toUpperCase()));
+  if(byCountry.size>1)crossCountryGroups.push({url,records:group.length,countries:[...byCountry]});
  }
  const genericRecords=records.filter(r=>{
   const url=sourceUrl(r);
   if(!url)return false;
+  if(kind==="markets" && r.price!==null && r.price!==undefined && String(r.commodity||"").trim() && String(r.market||"").trim())return false;
   try{
    const u=new URL(url);
    const pathname=u.pathname.replace(/\/+$/, "")||"/";
@@ -75,6 +93,12 @@ const sourceUrlAudit=(records, resourceMode=false)=>{
     if(institutional && ["general","data","farmer-support"].includes(cat))return false;
     if(portal && ["general","data","farmer-support","inputs","markets"].includes(cat))return false;
    }
+   if(kind==="services" && (pathname==="/"||/^\/en$/.test(pathname))){
+    const title=String(r.title||r.provider||"");
+    const institutional=/\b(ministry|authority|department|agency|institute|centre|center|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+    const cat=String(r.category||"").toLowerCase();
+    if(institutional && ["machinery","suppliers","training","services","general"].includes(cat))return false;
+   }
    return true;
   }catch{return true;}
  });
@@ -87,23 +111,29 @@ const sourceUrlAudit=(records, resourceMode=false)=>{
   duplicate_url_same_country_examples:sameCountryGroups.slice(0,8),
   duplicate_url_cross_country_groups:crossCountryGroups.length,
   duplicate_url_cross_country_examples:crossCountryGroups.slice(0,8),
-  duplicate_url_examples:duplicateGroups.slice(0,10).map(([url,count])=>({url,count})),
+  duplicate_url_examples:duplicateGroups.slice(0,10).map(([key,count])=>({url:sourceUrl(duplicateRecordsByKey.get(key)[0]),count,commodity:duplicateRecordsByKey.get(key)[0].commodity||"",market:duplicateRecordsByKey.get(key)[0].market||""})),
   generic_landing_page_records:genericRecords.length,
-  generic_landing_page_examples:genericRecords.slice(0,10).map(r=>({title:r.title||"",url:sourceUrl(r)}))
+  generic_landing_page_examples:genericRecords.slice(0,10).map(r=>({title:r.title||r.name||"",url:sourceUrl(r)}))
  };
 };
 const publishableOpportunities=opp.filter(r=>!isResourceReviewRecord(r));
 const opportunityReviewQueue=opp.filter(isResourceReviewRecord);
 const newsReviewQueue=news.filter(r=>!["official","published","verified"].includes(String(r.status||"").toLowerCase())||isResourceReviewRecord(r));
+const publishableMarkets=markets.filter(r=>!isResourceReviewRecord(r)&&!["expired","closed"].includes(String(r.status||"").toLowerCase())&&!["expired","closed","historical"].includes(String(r.lifecycle||"").toLowerCase()));
+const marketReviewQueue=markets.filter(r=>!publishableMarkets.includes(r));
+const publishableServices=services.filter(r=>!isResourceReviewRecord(r)&&!["expired","closed"].includes(String(r.status||"").toLowerCase())&&!["expired","closed","historical"].includes(String(r.lifecycle||"").toLowerCase()));
+const serviceReviewQueue=services.filter(r=>!publishableServices.includes(r));
 const sourceQuality={
- news:sourceUrlAudit(publishableNews),
- news_review_queue:sourceUrlAudit(newsReviewQueue),
- opportunities:sourceUrlAudit(publishableOpportunities),
- opportunity_review_queue:sourceUrlAudit(opportunityReviewQueue),
- resources:sourceUrlAudit(publicResourceRecords,true),
- resource_review_queue:sourceUrlAudit(resourceQueue,true),
- markets:sourceUrlAudit(markets),
- services:sourceUrlAudit(services)
+ news:sourceUrlAudit(publishableNews,false,"news"),
+ news_review_queue:sourceUrlAudit(newsReviewQueue,false,"news"),
+ opportunities:sourceUrlAudit(publishableOpportunities,false,"opportunities"),
+ opportunity_review_queue:sourceUrlAudit(opportunityReviewQueue,false,"opportunities"),
+ resources:sourceUrlAudit(publicResourceRecords,true,"resources"),
+ resource_review_queue:sourceUrlAudit(resourceQueue,true,"resources"),
+ markets:sourceUrlAudit(publishableMarkets,false,"markets"),
+ market_review_queue:sourceUrlAudit(marketReviewQueue,false,"markets"),
+ services:sourceUrlAudit(publishableServices,false,"services"),
+ service_review_queue:sourceUrlAudit(serviceReviewQueue,false,"services")
 };
 const report={
  generated_at:today.toISOString(),
