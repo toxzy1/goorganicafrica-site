@@ -47,7 +47,9 @@ const isGenericAgriculturalResourceUrl = value => {
       /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname) || /\/newsdetails(?:\/en)?$/i.test(pathname) || /\/news\/detail(?:\/en)?$/i.test(pathname) ||
       /^\/en$/i.test(pathname) ||
       /\/newsdetails(?:\/en)?$/i.test(pathname) ||
-      /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname);
+      /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname) ||
+      /\/hand-in-hand\/investment-forum-2026\/en$/i.test(pathname) ||
+      /\/members\/lapse-of-time$/i.test(pathname);
   } catch {
     return true;
   }
