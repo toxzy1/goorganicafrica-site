@@ -2356,7 +2356,68 @@
       "name": "Mauritius",
       "slug": "mauritius",
       "flag": "🇲🇺",
-      "articles": [],
+      "articles": [
+        {
+          "category": "policy",
+          "title": "Mauritius sets out smart-agriculture priorities at Assises de l’Agriculture 2026",
+          "summary": "The Ministry of Agro-Industry’s 2026 agriculture forum focused on smart agriculture and resilience, highlighting food security, modernisation, climate resilience, farmer livelihoods and stronger agricultural production systems.",
+          "url": "https://agriculture.govmu.org/News/SitePages/Assises-de-l%E2%80%99Agriculture-2026-focus-on-Smart-practices-for-a-Resilient-Mauritius.aspx",
+          "source": "Mauritius Ministry of Agro-Industry, Food Security, Blue Economy and Fisheries",
+          "source_id": "mauritius-ministry-agriculture",
+          "source_tier": 1,
+          "published": "2026-01-27",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Maurice définit ses priorités pour une agriculture intelligente lors des Assises de l’agriculture 2026",
+              "summary": "Le forum agricole 2026 du ministère de l’Agro-industrie a mis l’accent sur l’agriculture intelligente et la résilience, notamment la sécurité alimentaire, la modernisation, la résilience climatique, les moyens de subsistance des agriculteurs et le renforcement des systèmes de production."
+            },
+            "ar": {
+              "title": "موريشيوس تحدد أولويات الزراعة الذكية في مؤتمر الزراعة لعام 2026",
+              "summary": "ركز المنتدى الزراعي لعام 2026 التابع لوزارة الصناعات الزراعية على الزراعة الذكية والقدرة على الصمود، بما يشمل الأمن الغذائي والتحديث والمرونة المناخية وسبل عيش المزارعين وتعزيز نظم الإنتاج الزراعي."
+            },
+            "pt": {
+              "title": "Maurícia define prioridades de agricultura inteligente nas Jornadas da Agricultura de 2026",
+              "summary": "O fórum agrícola de 2026 do Ministério da Agroindústria destacou a agricultura inteligente e a resiliência, incluindo segurança alimentar, modernização, resiliência climática, meios de subsistência dos agricultores e sistemas de produção mais fortes."
+            },
+            "sw": {
+              "title": "Mauritius yaweka vipaumbele vya kilimo mahiri katika kongamano la kilimo la 2026",
+              "summary": "Jukwaa la kilimo la 2026 la Wizara ya Agro-Industry lilisisitiza kilimo mahiri na ustahimilivu, ikijumuisha usalama wa chakula, kisasaishaji, ustahimilivu wa hali ya hewa, maisha ya wakulima na kuimarisha mifumo ya uzalishaji."
+            }
+          }
+        },
+        {
+          "category": "markets",
+          "title": "Mauritius reports agricultural and fish production for January–June 2026",
+          "summary": "Statistics Mauritius reports first-half 2026 production indicators for sugar cane, tea, food crops, livestock, poultry and fish, including changes against the same period in 2025.",
+          "url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/Agriculture/Agri_Fish_Jan-Jun26.aspx",
+          "source": "Statistics Mauritius",
+          "source_id": "statistics-mauritius",
+          "source_tier": 1,
+          "published": "2026-09-23",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Maurice publie les données de production agricole et halieutique de janvier à juin 2026",
+              "summary": "Statistics Mauritius présente les indicateurs de production du premier semestre 2026 pour la canne à sucre, le thé, les cultures vivrières, l’élevage, la volaille et la pêche, avec des comparaisons à la même période de 2025."
+            },
+            "ar": {
+              "title": "موريشيوس تنشر بيانات الإنتاج الزراعي والسمكي من يناير إلى يونيو 2026",
+              "summary": "تعرض هيئة الإحصاء في موريشيوس مؤشرات إنتاج النصف الأول من عام 2026 لقصب السكر والشاي والمحاصيل الغذائية والثروة الحيوانية والدواجن والأسماك، مع مقارنتها بالفترة نفسها من عام 2025."
+            },
+            "pt": {
+              "title": "Maurícia divulga dados de produção agrícola e piscatória de janeiro a junho de 2026",
+              "summary": "A Statistics Mauritius apresenta indicadores de produção do primeiro semestre de 2026 para cana-de-açúcar, chá, culturas alimentares, pecuária, aves e peixe, comparando-os com o mesmo período de 2025."
+            },
+            "sw": {
+              "title": "Mauritius yatoa takwimu za uzalishaji wa kilimo na samaki Januari–Juni 2026",
+              "summary": "Statistics Mauritius imetoa viashiria vya uzalishaji wa nusu ya kwanza ya 2026 kwa miwa, chai, mazao ya chakula, mifugo, kuku na samaki, pamoja na ulinganisho na kipindi kama hicho mwaka 2025."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Maurice",
         "ar": "موريشيوس",
