@@ -1715,10 +1715,27 @@
       "source_tier": 1,
       "published": "2026-10-03",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
+      "lifecycle": "current",
       "coverage_scope": "regional",
-      "review_reason": "Direct FAO regional article checked; awaiting editorial approval before publication."
+      "translations": {
+        "fr": {
+          "title": "La FAO et l’IWMI renforcent leurs partenariats pour des systèmes agroalimentaires résilients en Afrique australe",
+          "summary": "La FAO et l’Institut international de gestion de l’eau ont discuté de la coopération régionale sur la gestion de l’eau et la résilience climatique face aux risques de sécheresse, de maladies des cultures et du bétail, de ravageurs et de chocs des prix. L’article souligne la préparation de la prochaine campagne agricole et l’importance de la collaboration transfrontalière."
+        },
+        "ar": {
+          "title": "الفاو والمعهد الدولي لإدارة المياه يعززان الشراكات من أجل نظم زراعية وغذائية قادرة على الصمود في جنوب أفريقيا",
+          "summary": "ناقشت الفاو والمعهد الدولي لإدارة المياه التعاون الإقليمي في إدارة المياه والقدرة على التكيف مع المناخ في ظل مخاطر الجفاف وأمراض المحاصيل والماشية والآفات وتقلبات الأسعار. ويبرز التقرير الاستعداد للموسم الزراعي المقبل وأهمية التعاون عبر الحدود."
+        },
+        "pt": {
+          "title": "FAO e IWMI reforçam parcerias para sistemas agroalimentares resilientes na África Austral",
+          "summary": "A FAO e o Instituto Internacional de Gestão da Água discutiram a cooperação regional na gestão da água e na resiliência climática perante riscos de seca, doenças das culturas e do gado, pragas e choques de preços. O artigo destaca a preparação para a próxima campanha agrícola e a importância da colaboração transfronteiriça."
+        },
+        "sw": {
+          "title": "FAO na IWMI zaimarisha ushirikiano kwa mifumo ya kilimo na chakula inayostahimili mishtuko Kusini mwa Afrika",
+          "summary": "FAO na Taasisi ya Kimataifa ya Usimamizi wa Maji zilijadili ushirikiano wa kikanda katika usimamizi wa maji na ustahimilivu wa tabianchi kutokana na hatari za ukame, magonjwa ya mazao na mifugo, wadudu waharibifu na mishtuko ya bei. Makala inasisitiza maandalizi ya msimu ujao wa kilimo na umuhimu wa ushirikiano wa kuvuka mipaka."
+        }
+      }
     },
     {
       "country_code": "NA",
