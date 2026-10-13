@@ -300,7 +300,7 @@ collections:
                 widget: "list"
                 required: false
                 fields:
-                  - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "research-innovation", "grants-programmes"]}
+                  - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "research-innovation", "grants-programmes", "climate", "data", "events", "farmer-support", "fisheries", "food-safety", "food-security", "grants", "insurance", "machinery", "organic", "resilience", "seeds", "services"]}
                   - {label: "Headline", name: "title", widget: "string"}
                   - {label: "Summary", name: "summary", widget: "text"}
                   - {label: "Original Source URL", name: "url", widget: "string"}
