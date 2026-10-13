@@ -91,12 +91,11 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
   return added;
 }
 
-const resourceGapFiles = fs.readdirSync(path.join(root, 'src', '_data'))
-  .filter(name => /^agriculturalResourcesGap(?:[A-Z]{2}|Batch)\.json$/.test(name))
-  .sort();
+// Gap-file records are review candidates. Do not merge them into the public
+// base dataset automatically; Eleventy and the monitor keep them in review.
 const resources = merge(
   'agriculturalResources.json',
-  ['agriculturalResourcesSupplement.json', ...resourceGapFiles],
+  ['agriculturalResourcesSupplement.json'],
   'country_code',
   'records',
   true
