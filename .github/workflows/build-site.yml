@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Validate agricultural source-quality monitor
+        run: npm run monitor:agriculture
+
       - name: Build site
         run: npm run build
 
