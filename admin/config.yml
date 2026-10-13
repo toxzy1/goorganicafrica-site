@@ -337,6 +337,7 @@ collections:
                           - {label: "Headline", name: "title", widget: "string", required: false}
                           - {label: "Summary", name: "summary", widget: "text", required: false}
                   - {label: "Original Source URL", name: "url", widget: "string"}
+                  - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                   - {label: "Source / Publisher", name: "source", widget: "string"}
                   - {label: "Source ID", name: "source_id", widget: "string", required: false}
                   - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
@@ -413,6 +414,7 @@ collections:
                               - {label: "Description", name: "description", widget: "text", required: false}
                       - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Type", name: "type", widget: "string", required: false}
                       - {label: "Amount / Value", name: "amount", widget: "string", required: false}
@@ -471,6 +473,7 @@ collections:
                               - {label: "Description", name: "description", widget: "text", required: false}
                       - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Type", name: "type", widget: "string", required: false}
                       - {label: "Amount / Value", name: "amount", widget: "string", required: false}
@@ -529,6 +532,7 @@ collections:
                               - {label: "Description", name: "description", widget: "text", required: false}
                       - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Equipment Type", name: "type", widget: "string", required: false}
                       - {label: "Availability / Service Area", name: "availability", widget: "string", required: false}
@@ -585,6 +589,7 @@ collections:
                               - {label: "Description", name: "description", widget: "text", required: false}
                       - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Verified Date", name: "verified", widget: "string"}
                       - {label: "Published Date", name: "published", widget: "string", required: false}
@@ -649,6 +654,7 @@ collections:
                       - {label: "Summary", name: "summary", widget: "text", required: false}
               - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
               - {label: "Direct Source URL", name: "url", widget: "string"}
+              - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
               - {label: "Source / Publisher", name: "source", widget: "string"}
               - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
               - {label: "Published Date", name: "published", widget: "string", required: false}
@@ -712,6 +718,7 @@ collections:
                       - {label: "Headline", name: "title", widget: "string", required: false}
                       - {label: "Summary", name: "summary", widget: "text", required: false}
               - {label: "Direct Source URL", name: "url", widget: "string"}
+              - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
               - {label: "Source / Publisher", name: "source", widget: "string"}
               - {label: "Source ID", name: "source_id", widget: "string", required: false}
               - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
@@ -780,6 +787,7 @@ collections:
               - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
               - {label: "Summary", name: "summary", widget: "text", required: false}
               - {label: "Direct Source URL", name: "url", widget: "string"}
+              - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
               - {label: "Source / Provider", name: "source", widget: "string"}
               - {label: "Source ID", name: "source_id", widget: "string", required: false}
               - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
