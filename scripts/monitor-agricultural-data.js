@@ -10,9 +10,17 @@ const resources2=read("agriculturalResourcesSupplement.json").records||[];
 const markets=read("agriculturalMarkets.json").records||[];
 const opp=read("agriculturalOpportunities.json").records||[];
 const news=[];
-const newsCountryCoverage=(read("agriculturalNews.json").countries||[]).map(c=>({code:c.code,name:c.name,story_count:(c.articles||[]).length}));
-for(const c of read("agriculturalNews.json").countries||[]) for(const a of c.articles||[]) news.push({...a,country_code:c.code,country_name:c.name});
+const newsCountryList=read("agriculturalNews.json").countries||[];
+for(const c of newsCountryList) for(const a of c.articles||[]) news.push({...a,country_code:c.code,country_name:c.name});
 news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]));
+// Coverage must include the supplemental and expansion records too, otherwise
+// countries with stories outside the base file are incorrectly reported empty.
+// Count unique story URLs per country so duplicate records do not inflate coverage.
+const newsCountryCoverage=newsCountryList.map(c=>{
+ const code=String(c.code||"").toUpperCase();
+ const urls=new Set(news.filter(r=>String(r.country_code||r.code||"").toUpperCase()===code).map(r=>String(r.url||r.title||"").trim()).filter(Boolean));
+ return {code:c.code,name:c.name,story_count:urls.size};
+});
 const sourceUrlAudit=(records)=>{
  const counts=new Map();
  for(const r of records){if(!r.url)continue;const url=String(r.url).trim();counts.set(url,(counts.get(url)||0)+1);}
