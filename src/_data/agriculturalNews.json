@@ -93,7 +93,9 @@
           "published": "2026-09-16",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
         },
         {
           "category": "finance",
@@ -194,7 +196,9 @@
           "source": "African Development Bank / IITA",
           "published": "2026-09-30",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "Project landing page rather than a specific news article; hold for migration to Resources or replacement with a direct story."
         },
         {
           "category": "research-innovation",
@@ -657,7 +661,9 @@
           "published": "2026-05-04",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
         },
         {
           "category": "grants-programmes",
@@ -947,7 +953,9 @@
           "published": "2026-10-07",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "Country profile page rather than a specific news article; hold for migration to Resources or replacement with a direct story."
         },
         {
           "category": "climate",
@@ -960,7 +968,9 @@
           "published": "2026-07-10",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
         },
         {
           "category": "weather-climate",
@@ -1813,12 +1823,14 @@
           "source_tier": 1,
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "category": "machinery-technology",
           "title": "Burundi advances maize processing and livestock-feed infrastructure under PADCAE-B",
           "summary": "The African Development Bank published an October 2026 procurement notice for studies and construction supervision for a maize-processing unit and livestock-feed unit under Burundi's PADCAE-B agricultural and livestock value-chain project.",
           "url": "https://www.afdb.org/en/projects-and-operations/p-bi-a00-008",
-          "published": "2026-10-05"
+          "published": "2026-10-05",
+          "lifecycle": "needs_review",
+          "review_reason": "Project landing page rather than a specific news article; hold for migration to Resources or replacement with a direct story."
         },
         {
           "category": "machinery-technology",
@@ -1906,7 +1918,9 @@
           "source": "African Development Bank",
           "published": "2026-09-30",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "Procurement/consultancy notice belongs in Opportunities, not Agricultural News; hold for editorial migration."
         },
         {
           "category": "grants-programmes",
@@ -2381,7 +2395,7 @@
           "source_tier": 1,
           "published": "2026-07-22",
           "verified": "2026-10-13",
-          "status": "official",
+          "status": "review",
           "translations": {
             "fr": {
               "title": "La FAO prévoit une production proche de la moyenne pour les cultures vivrières en Guinée équatoriale en 2026",
@@ -2399,7 +2413,9 @@
               "title": "FAO yatabiri uzalishaji wa karibu na wastani wa mazao ya chakula Guinea ya Ikweta mwaka 2026",
               "summary": "Taarifa ya nchi ya mfumo wa GIEWS wa FAO, yenye tarehe ya marejeo ya 22 Julai 2026, ilitabiri uzalishaji wa karibu na wastani wa viazi vitamu, muhogo na ndizi za kupika. Pia ilikadiria uagizaji wa chakula kuwa karibu na wastani na kubainisha kupungua kwa mfumuko wa bei mwaka 2025."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
         }
       ],
       "localizedNames": {
@@ -2608,7 +2624,9 @@
           "source": "African Development Bank",
           "published": "2026-09-30",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "Procurement/consultancy notice belongs in Opportunities, not Agricultural News; hold for editorial migration."
         }
       ],
       "localizedNames": {
@@ -3289,12 +3307,14 @@
           "source_tier": 1,
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "category": "farmer-support",
           "title": "Cuamba Agri-Hub infrastructure procurement advances under Mozambique SAPZ",
           "summary": "The African Development Bank published an October 2026 procurement notice for the Cuamba Agri-Hub signature gate, road accessibility and supporting office in Niassa Province under the Pemba-Lichinga Integrated Development Corridor Special Agri-Industrial Processing Zone.",
           "url": "https://www.afdb.org/fr/documents/eoi-mozambique-construction-cuamba-agri-hub-signature-gate-emblematic-infrastructure-road-accessibility-and-supporting-office-sapz",
-          "published": "2026-10-05"
+          "published": "2026-10-05",
+          "lifecycle": "needs_review",
+          "review_reason": "Procurement/consultancy notice belongs in Opportunities, not Agricultural News; hold for editorial migration."
         },
         {
           "source": "African Development Bank",
@@ -3859,7 +3879,9 @@
           "source": "African Development Bank",
           "published": "2026-09-30",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "review",
+          "lifecycle": "needs_review",
+          "review_reason": "Procurement/consultancy notice belongs in Opportunities, not Agricultural News; hold for editorial migration."
         },
         {
           "category": "weather-climate",
