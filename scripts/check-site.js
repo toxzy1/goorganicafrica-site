@@ -86,7 +86,7 @@ if (!globalSearch.includes('goa-global-search') || !globalSearch.includes("input
 }
 const decisionPage = read('src/farmer-decision-centre.njk');
 const decisionUi = read('src/_includes/farmer-decision-centre-ui.njk');
-if (!decisionPage.includes('farmer-decision-centre-ui.njk') || !decisionUi.includes('btn.addEventListener("click",render)') || !decisionUi.includes('Open source')) {
+if (!decisionPage.includes('farmer-decision-centre-ui.njk') || !decisionUi.includes('btn.addEventListener("click",render)') || !decisionUi.includes('tr("openSource")')) {
   throw new Error('Farmer Decision Centre must retain its interactive brief builder and source links.');
 }
 
