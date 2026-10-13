@@ -348,7 +348,17 @@ module.exports = function (eleventyConfig) {
     const primary = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNews.json"), "utf8"));
     const supplement = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsSupplement.json"), "utf8"));
     const expansion = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsExpansion.json"), "utf8"));
-    const countries = (primary.countries || []).map(c => ({ ...c, articles: [...(c.articles || [])].filter(isPublishableAgriculturalRecord) }));
+    const countries = (primary.countries || []).map(c => ({
+      ...c,
+      // The primary country feeds can contain repeated URLs under slightly
+      // different headlines. Keep one public card per country/source URL.
+      articles: dedupeAgriculturalRecords(
+        (c.articles || []).filter(isPublishableAgriculturalRecord).map(article => ({
+          ...article,
+          country_code: article.country_code || c.code
+        }))
+      ).map(({ country_code, ...article }) => article)
+    }));
     const byCode = new Map(countries.map(c => [c.code, c]));
     const incoming = [...(supplement.records || []), ...(expansion.records || [])].filter(isPublishableAgriculturalRecord);
 
