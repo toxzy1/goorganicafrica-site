@@ -344,7 +344,7 @@ collections:
                   - {label: "Verified Date", name: "verified", widget: "string"}
                   - {label: "Deadline / Expiry", name: "deadline", widget: "string", required: false}
                   - {label: "Coverage Scope", name: "coverage_scope", widget: "select", options: ["country-specific", "regional"], required: false}
-                  - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+                  - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                   - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
                   - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                   - {label: "Status", name: "status", widget: "select", options: ["official", "official-feed", "review", "expired", "archived"], default: "review"}
@@ -411,7 +411,7 @@ collections:
                             fields:
                               - {label: "Headline", name: "title", widget: "string", required: false}
                               - {label: "Description", name: "description", widget: "text", required: false}
-                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Type", name: "type", widget: "string", required: false}
@@ -469,7 +469,7 @@ collections:
                             fields:
                               - {label: "Headline", name: "title", widget: "string", required: false}
                               - {label: "Description", name: "description", widget: "text", required: false}
-                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Type", name: "type", widget: "string", required: false}
@@ -527,7 +527,7 @@ collections:
                             fields:
                               - {label: "Headline", name: "title", widget: "string", required: false}
                               - {label: "Description", name: "description", widget: "text", required: false}
-                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Equipment Type", name: "type", widget: "string", required: false}
@@ -583,7 +583,7 @@ collections:
                             fields:
                               - {label: "Headline", name: "title", widget: "string", required: false}
                               - {label: "Description", name: "description", widget: "text", required: false}
-                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Verified Date", name: "verified", widget: "string"}
@@ -647,7 +647,7 @@ collections:
                     fields:
                       - {label: "Headline", name: "title", widget: "string", required: false}
                       - {label: "Summary", name: "summary", widget: "text", required: false}
-              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
               - {label: "Direct Source URL", name: "url", widget: "string"}
               - {label: "Source / Publisher", name: "source", widget: "string"}
               - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
@@ -719,7 +719,7 @@ collections:
               - {label: "Verified Date", name: "verified", widget: "string", required: false}
               - {label: "Deadline / Expiry", name: "deadline", widget: "string", required: false}
               - {label: "Coverage Scope", name: "coverage_scope", widget: "select", options: ["country-specific", "regional"], required: false}
-              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
               - {label: "Status", name: "status", widget: "select", options: ["official", "official-feed", "review", "expired", "archived"], default: "review"}
               - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
               - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
@@ -777,7 +777,7 @@ collections:
                     fields:
                       - {label: "Headline", name: "title", widget: "string", required: false}
                       - {label: "Description", name: "description", widget: "text", required: false}
-              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
               - {label: "Summary", name: "summary", widget: "text", required: false}
               - {label: "Direct Source URL", name: "url", widget: "string"}
               - {label: "Source / Provider", name: "source", widget: "string"}
