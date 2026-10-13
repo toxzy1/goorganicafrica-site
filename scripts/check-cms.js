@@ -237,9 +237,10 @@ if (!freshnessMonitor.includes("missing_publication_date") || !freshnessMonitor.
   throw new Error("Agricultural freshness monitor must flag missing resource verification dates and news publication dates, including lifecycle review queues.");
 }
 
-if (!freshnessMonitor.includes('publishableNews=news.filter') ||
-    !freshnessMonitor.includes('["review","needs_review","draft"].includes(String(r.lifecycle||"").toLowerCase())')) {
-  throw new Error("Country news coverage must exclude unpublished review-queue candidates.");
+if (!freshnessMonitor.includes('publishableNews=news.filter(isCurrentNewsRecord)') ||
+    !freshnessMonitor.includes("isSpecificNewsUrl") ||
+    !freshnessMonitor.includes('["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle)')) {
+  throw new Error("Country news coverage must exclude unpublished, historical, expired, and generic-source records.");
 }
 
 // Generic landing pages may be useful for research, but must never be presented
