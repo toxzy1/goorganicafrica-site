@@ -33,7 +33,7 @@ const badMarkers = [/GOA_TOKEN/i, /GoA TOKEN/i, /GA TOKEN/i, /BAR BAR/i, /\\\\po
 for (const root of contentRoots) {
   if (!fs.existsSync(root)) continue;
   for (const file of fs.readdirSync(root)) {
-    if (!/\\.md$/i.test(file) || !/-((fr)|(ar)|(pt)|(sw))\\.md$/i.test(file)) continue;
+    if (!/\.md$/i.test(file) || !/-((fr)|(ar)|(pt)|(sw))\.md$/i.test(file)) continue;
     const full = path.join(root, file);
     const source = fs.readFileSync(full, 'utf8');
     for (const marker of badMarkers) {
