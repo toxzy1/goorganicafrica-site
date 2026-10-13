@@ -15,7 +15,7 @@ const normalizeAgriculturalUrl = value => {
   try {
     const url = new URL(raw);
     url.hash = "";
-    url.hostname = url.hostname.toLowerCase().replace(/^www\\./, "");
+    url.hostname = url.hostname.toLowerCase().replace(/^www\./, "");
     if ((url.protocol === "https:" && url.port === "443") ||
         (url.protocol === "http:" && url.port === "80")) url.port = "";
     while (url.pathname.length > 1 && url.pathname.endsWith("/")) {
@@ -23,7 +23,7 @@ const normalizeAgriculturalUrl = value => {
     }
     return url.toString();
   } catch (_) {
-    return raw.split("#")[0].replace(/\\/+$/, "").toLowerCase();
+    return raw.split("#")[0].replace(/\/+$/, "").toLowerCase();
   }
 };
 
