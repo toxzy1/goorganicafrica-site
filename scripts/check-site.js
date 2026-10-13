@@ -83,9 +83,6 @@ if (!languageSwitcher.includes('if (/^(search|farmer-decision-centre|markets|opp
 if (!languageSwitcher.includes('link.href = "/" + sectionPath + "/";')) {
   throw new Error('Shared discovery navigation must not create missing language-prefixed routes.');
 }
-if (!languageSwitcher.includes('if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services)$/.test(rest))')) {
-  throw new Error('Language switcher must preserve valid shared routes for search and discovery tools.');
-}
 const globalSearch = read('src/search.njk');
 if (!globalSearch.includes('goa-global-search') || !globalSearch.includes("input.addEventListener('input',render)") || !globalSearch.includes('esc(x.url)')) {
   throw new Error('Global search must provide live query handling and clickable result destinations.');
