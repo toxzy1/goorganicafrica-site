@@ -246,13 +246,13 @@ if (fs.existsSync(newsSourcePath)) {
   }
 }
 
+if (emptyNewsPages.length) {
+  failures.push("Rendered agricultural-news coverage: " + emptyNewsPages.length + " country-language pages have no current verified story cards.");
+  emptyNewsPages.slice(0, 30).forEach(x => failures.push(x.lang + ":" + x.country + " (" + x.rel + ")"));
+}
 if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
   process.exit(1);
-}
-if (emptyNewsPages.length) {
-  console.warn("Rendered agricultural-news coverage warning: " + emptyNewsPages.length + " country-language pages have no current verified story cards.");
-  console.warn(emptyNewsPages.slice(0, 30).map(x => x.lang + ":" + x.country + " (" + x.rel + ")").join("\n"));
 }
 console.log("Rendered-site audit passed.");
