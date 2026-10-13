@@ -45,7 +45,7 @@ const sourceUrlAudit=(records)=>{
   }catch{return true;}
  });
  return {
-  records_with_url:records.filter(r=>r.url).length,
+  records_with_url:records.filter(r=>sourceUrl(r)).length,
   unique_urls:counts.size,
   duplicate_url_groups:duplicateGroups.length,
   duplicate_url_records:duplicateGroups.reduce((sum,[,count])=>sum+count,0),
