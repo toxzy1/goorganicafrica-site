@@ -3239,6 +3239,71 @@
       "status": "official",
       "type": "Agricultural campaign and input planning",
       "access": "Government announcement; check current ministry guidance for operational details."
+    },
+    {
+      "country_code": "DZ",
+      "category": "machinery",
+      "title": "Algeria National Council for Agricultural Mechanisation — government announcement",
+      "description": "The Prime Minister's Office records the establishment of Algeria's National Council for Agricultural Mechanisation, a policy reference relevant to agricultural machinery and mechanisation coordination.",
+      "url": "https://www.premier-ministre.gov.dz/ar/post/%D8%A7%D9%84%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%8A%D9%86%D8%B5%D8%A8-%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%84%D9%84%D9%85%D9%83%D9%86%D9%86%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD%D9%8A%D8%A9",
+      "source": "Prime Minister's Office, Algeria",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "Agricultural mechanisation policy reference",
+      "access": "Official government announcement; check the ministry for implementation details."
+    },
+    {
+      "country_code": "CF",
+      "category": "farmer-support",
+      "title": "Central African Republic — support to revive local tilapia production",
+      "description": "FAO and the government are supporting local fingerling production and technical guidance for about 470 fish farmers, including training on stocking, acclimatisation and feeding practices.",
+      "url": "https://www.fao.org/central-african-republic/actualites/d%C3%A9tail/le-gouvernement-et-la-fao-soutiennent-la-relance-de-la-production-des-tilapias-en-r%C3%A9publique-centrafricaine/fr",
+      "source": "FAO in the Central African Republic",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "Aquaculture and farmer-support resource",
+      "access": "Project report; confirm whether new beneficiary intake is open."
+    },
+    {
+      "country_code": "MU",
+      "category": "farmer-support",
+      "title": "Mauritius MoBeez mobile application for small farmers",
+      "description": "The Ministry of Agro-Industry and Food Security announced the MoBeez mobile application to help small farmers receive timely information, alongside related small-farmer support measures.",
+      "url": "https://agriculture.govmu.org/News/SitePages/Agro-Industry--MoBeez-Mobile-Application-launched-for-Small-Farmers.aspx",
+      "source": "Ministry of Agro-Industry and Food Security, Mauritius",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "Digital farmer information service",
+      "access": "Announcement from 2025; confirm current app availability before relying on it."
+    },
+    {
+      "country_code": "CG",
+      "category": "general",
+      "title": "Republic of the Congo — Directorate-General of Agriculture official mission and data",
+      "description": "The Ministry of Agriculture's Directorate-General of Agriculture page provides official information about its mission and agricultural-sector data.",
+      "url": "https://agriculture.agriculture.gouv.cg/?page_id=3672",
+      "source": "Ministère de l'Agriculture, de l'Élevage et de la Pêche — République du Congo",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "Government agricultural services reference",
+      "access": "Official ministry information; contact the department for current services."
+    },
+    {
+      "country_code": "ST",
+      "category": "data",
+      "title": "FAO GIEWS Country Brief — São Tomé and Príncipe",
+      "description": "FAO's country brief provides an official reference for crop prospects, food security and market conditions for São Tomé and Príncipe.",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ST",
+      "source": "FAO Global Information and Early Warning System (GIEWS)",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "Agricultural and food-security data reference",
+      "access": "Public data reference; country-level data coverage may vary."
     }
   ]
 }
