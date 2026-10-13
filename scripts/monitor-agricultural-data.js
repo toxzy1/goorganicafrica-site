@@ -16,9 +16,12 @@ news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agr
 // Coverage must include the supplemental and expansion records too, otherwise
 // countries with stories outside the base file are incorrectly reported empty.
 // Count unique story URLs per country so duplicate records do not inflate coverage.
+const publishableNews=news.filter(r=>["official","published","verified"].includes(String(r.status||"").toLowerCase()) && !["review","needs_review","draft"].includes(String(r.lifecycle||"").toLowerCase()));
 const newsCountryCoverage=newsCountryList.map(c=>{
  const code=String(c.code||"").toUpperCase();
- const urls=new Set(news.filter(r=>String(r.country_code||r.code||"").toUpperCase()===code).map(r=>String(r.url||r.title||"").trim()).filter(Boolean));
+ // Coverage counts only stories the public templates can display; review-queue
+ // candidates must not hide a real country coverage gap.
+ const urls=new Set(publishableNews.filter(r=>String(r.country_code||r.code||"").toUpperCase()===code).map(r=>String(r.url||r.title||"").trim()).filter(Boolean));
  return {code:c.code,name:c.name,story_count:urls.size};
 });
 const sourceUrlAudit=(records)=>{
