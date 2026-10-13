@@ -44,11 +44,6 @@ const isCurrentNewsRecord=r=>{
  return Boolean((r.title||r.headline)&&isSpecificNewsUrl(r.url));
 };
 const publishableNews=news.filter(isCurrentNewsRecord);
-const newsReviewCandidatesByCountry=newsCountryList.map(c=>({
- code:String(c.code||"").toUpperCase(),
- name:c.name,
- count:newsReviewQueue.filter(r=>String(r.country_code||r.code||"").toUpperCase()===String(c.code||"").toUpperCase()).length
-})).filter(c=>c.count>0).sort((a,b)=>b.count-a.count);
 const newsCountryCoverage=newsCountryList.map(c=>{
  const code=String(c.code||"").toUpperCase();
  // Coverage counts only stories the public templates can display; review-queue
@@ -148,6 +143,11 @@ const sourceUrlAudit=(records, resourceMode=false, kind="generic")=>{
 const publishableOpportunities=opp.filter(r=>!isResourceReviewRecord(r));
 const opportunityReviewQueue=opp.filter(isResourceReviewRecord);
 const newsReviewQueue=news.filter(r=>!["official","published","verified"].includes(String(r.status||"").toLowerCase())||isResourceReviewRecord(r));
+const newsReviewCandidatesByCountry=newsCountryList.map(c=>({
+ code:String(c.code||"").toUpperCase(),
+ name:c.name,
+ count:newsReviewQueue.filter(r=>String(r.country_code||r.code||"").toUpperCase()===String(c.code||"").toUpperCase()).length
+})).filter(c=>c.count>0).sort((a,b)=>b.count-a.count);
 const publishableMarkets=markets.filter(r=>!isResourceReviewRecord(r)&&!["expired","closed"].includes(String(r.status||"").toLowerCase())&&!["expired","closed","historical"].includes(String(r.lifecycle||"").toLowerCase()));
 const marketReviewQueue=markets.filter(r=>!publishableMarkets.includes(r));
 const publishableServices=services.filter(r=>!isResourceReviewRecord(r)&&!["expired","closed"].includes(String(r.status||"").toLowerCase())&&!["expired","closed","historical"].includes(String(r.lifecycle||"").toLowerCase()));
