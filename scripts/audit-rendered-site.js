@@ -282,6 +282,42 @@ if (emptyNewsPages.length) {
   failures.push("Rendered agricultural-news coverage: " + emptyNewsPages.length + " country-language pages have no current verified story cards.");
   emptyNewsPages.slice(0, 30).forEach(x => failures.push(x.lang + ":" + x.country + " (" + x.rel + ")"));
 }
+// Validate that the Global Search page has a populated source index, not only
+// a working input handler, and that the Farmer Decision Centre embeds usable
+// records from multiple countries and all five discovery sections.
+const searchHtml = read("search/index.html");
+const searchSource = searchHtml && searchHtml.match(/<div id=["']goa-search-source["'] hidden>([\\s\\S]*?)<\\/div>/i);
+if (!searchSource) {
+  failures.push("Global Search page is missing its embedded source index.");
+} else {
+  const sourceBlock = searchSource[1];
+  const sourceCount = (sourceBlock.match(/<article\\b/g) || []).length;
+  if (sourceCount < 100) failures.push("Global Search source index is unexpectedly small (" + sourceCount + " records).");
+  for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
+    if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("Global Search source index has no " + type + " records.");
+  }
+}
+const decisionHtml = read("farmer-decision-centre/index.html");
+const decisionMatch = decisionHtml && decisionHtml.match(/const data=(\\[[\\s\\S]*?\\]);\\s*const goals=/);
+if (!decisionMatch) {
+  failures.push("Farmer Decision Centre is missing its embedded data records.");
+} else {
+  try {
+    const decisionRecords = JSON.parse(decisionMatch[1]);
+    const decisionCountries = new Set(decisionRecords.map(r => r.country_code).filter(Boolean));
+    const decisionSections = new Set(decisionRecords.map(r => r.section).filter(Boolean));
+    const decisionSources = decisionRecords.filter(r => r.url).length;
+    if (decisionRecords.length < 100) failures.push("Farmer Decision Centre has too few records (" + decisionRecords.length + ").");
+    if (decisionCountries.size < 40) failures.push("Farmer Decision Centre covers only " + decisionCountries.size + " country codes.");
+    if (decisionSources < 100) failures.push("Farmer Decision Centre has too few linked source records (" + decisionSources + ").");
+    for (const section of ["markets", "opportunities", "resources", "services", "news"]) {
+      if (!decisionSections.has(section)) failures.push("Farmer Decision Centre has no records for section " + section + ".");
+    }
+  } catch (error) {
+    failures.push("Farmer Decision Centre embedded data is not valid JSON: " + error.message);
+  }
+}
+
 if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
