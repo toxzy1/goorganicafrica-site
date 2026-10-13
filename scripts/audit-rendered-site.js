@@ -475,8 +475,15 @@ if (fs.existsSync(newsSourcePath)) {
           failures.push(rel + ": incorrect or missing language target for " + targetLang);
         }
       }
-      const storyCards = (html.match(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["']/gi) || []).length;
-      if (storyCards === 0) emptyNewsPages.push({ lang, country: country.name || country.code, rel });
+      const storyCards = (html.match(/<article\\b[^>]*class=["'][^"']*\\bcard\\b[^"']*["']/gi) || []).length;
+      if (storyCards === 0) {
+        const localizedPrefix = lang === "en" ? "" : "/" + lang;
+        const fallbackIsUseful = html.includes('class="card news-empty-fallback"') &&
+          html.includes('href="' + localizedPrefix + '/agriculture-resources/"') &&
+          html.includes('href="' + localizedPrefix + '/opportunities/"') &&
+          html.includes('href="/search/"');
+        if (!fallbackIsUseful) emptyNewsPages.push({ lang, country: country.name || country.code, rel });
+      }
 
     }
   }
