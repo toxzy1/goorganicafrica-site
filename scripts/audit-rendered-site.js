@@ -237,16 +237,41 @@ if (searchHtml) {
   for (const id of ["goa-global-search", "goa-search-type", "goa-search-results"]) {
     if (!searchHtml.includes('id="' + id + '"')) failures.push("search/index.html: missing search UI element #" + id);
   }
-  const searchableRecords = (searchHtml.match(/<article\b[^>]*data-type=/gi) || []).length;
-  if (searchableRecords < 50) failures.push("search/index.html: expected at least 50 searchable source records, found " + searchableRecords);
+  const sourceMatch = searchHtml.match(/<div id=["']goa-search-source["'] hidden>([\s\S]*?)<\/div>/i);
+  if (!sourceMatch) {
+    failures.push("search/index.html: embedded source index is missing");
+  } else {
+    const sourceBlock = sourceMatch[1];
+    const searchableRecords = (sourceBlock.match(/<article\b[^>]*data-type=/gi) || []).length;
+    if (searchableRecords < 100) failures.push("search/index.html: expected at least 100 searchable source records, found " + searchableRecords);
+    for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
+      if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("search/index.html: no searchable " + type + " records");
+    }
+  }
 }
 const decisionHtml = read("farmer-decision-centre/index.html");
 if (decisionHtml) {
   for (const id of ["dc-country", "dc-topic", "dc-goal", "dc-build", "dc-output"]) {
     if (!decisionHtml.includes('id="' + id + '"')) failures.push("farmer-decision-centre/index.html: missing interactive element #" + id);
   }
-  if (!decisionHtml.includes("const data=") || !decisionHtml.includes('tr("openSource")')) {
-    failures.push("farmer-decision-centre/index.html: source data or source-link action is missing");
+  const decisionMatch = decisionHtml.match(/const data=(\[[\s\S]*?\]);\s*const goals=/);
+  if (!decisionMatch || !decisionHtml.includes('tr("openSource")')) {
+    failures.push("farmer-decision-centre/index.html: embedded source data or source-link action is missing");
+  } else {
+    try {
+      const decisionRecords = JSON.parse(decisionMatch[1]);
+      const decisionCountries = new Set(decisionRecords.map(r => r.country_code).filter(Boolean));
+      const decisionSections = new Set(decisionRecords.map(r => r.section).filter(Boolean));
+      const decisionSources = decisionRecords.filter(r => r.url).length;
+      if (decisionRecords.length < 100) failures.push("farmer-decision-centre/index.html: too few source records (" + decisionRecords.length + ")");
+      if (decisionCountries.size < 40) failures.push("farmer-decision-centre/index.html: covers only " + decisionCountries.size + " country codes");
+      if (decisionSources < 100) failures.push("farmer-decision-centre/index.html: too few linked source records (" + decisionSources + ")");
+      for (const section of ["markets", "opportunities", "resources", "services", "news"]) {
+        if (!decisionSections.has(section)) failures.push("farmer-decision-centre/index.html: no records for " + section);
+      }
+    } catch (error) {
+      failures.push("farmer-decision-centre/index.html: embedded data is not valid JSON: " + error.message);
+    }
   }
 }
 const newsSourcePath = path.join(source, "_data", "agriculturalNews.json");
@@ -282,42 +307,6 @@ if (emptyNewsPages.length) {
   failures.push("Rendered agricultural-news coverage: " + emptyNewsPages.length + " country-language pages have no current verified story cards.");
   emptyNewsPages.slice(0, 30).forEach(x => failures.push(x.lang + ":" + x.country + " (" + x.rel + ")"));
 }
-// Validate that the Global Search page has a populated source index, not only
-// a working input handler, and that the Farmer Decision Centre embeds usable
-// records from multiple countries and all five discovery sections.
-const searchHtml = read("search/index.html");
-const searchSource = searchHtml && searchHtml.match(/<div id=["']goa-search-source["'] hidden>([\\s\\S]*?)<\\/div>/i);
-if (!searchSource) {
-  failures.push("Global Search page is missing its embedded source index.");
-} else {
-  const sourceBlock = searchSource[1];
-  const sourceCount = (sourceBlock.match(/<article\\b/g) || []).length;
-  if (sourceCount < 100) failures.push("Global Search source index is unexpectedly small (" + sourceCount + " records).");
-  for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
-    if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("Global Search source index has no " + type + " records.");
-  }
-}
-const decisionHtml = read("farmer-decision-centre/index.html");
-const decisionMatch = decisionHtml && decisionHtml.match(/const data=(\\[[\\s\\S]*?\\]);\\s*const goals=/);
-if (!decisionMatch) {
-  failures.push("Farmer Decision Centre is missing its embedded data records.");
-} else {
-  try {
-    const decisionRecords = JSON.parse(decisionMatch[1]);
-    const decisionCountries = new Set(decisionRecords.map(r => r.country_code).filter(Boolean));
-    const decisionSections = new Set(decisionRecords.map(r => r.section).filter(Boolean));
-    const decisionSources = decisionRecords.filter(r => r.url).length;
-    if (decisionRecords.length < 100) failures.push("Farmer Decision Centre has too few records (" + decisionRecords.length + ").");
-    if (decisionCountries.size < 40) failures.push("Farmer Decision Centre covers only " + decisionCountries.size + " country codes.");
-    if (decisionSources < 100) failures.push("Farmer Decision Centre has too few linked source records (" + decisionSources + ").");
-    for (const section of ["markets", "opportunities", "resources", "services", "news"]) {
-      if (!decisionSections.has(section)) failures.push("Farmer Decision Centre has no records for section " + section + ".");
-    }
-  } catch (error) {
-    failures.push("Farmer Decision Centre embedded data is not valid JSON: " + error.message);
-  }
-}
-
 if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
