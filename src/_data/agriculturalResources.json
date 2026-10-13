@@ -222,10 +222,12 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
             "access": "Official information; programme eligibility and implementation conditions apply.",
-            "category": "research"
+            "category": "research",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           },
           {
             "title": "IITA Capacity Development Office — African agrifood learning and innovation",
@@ -238,7 +240,7 @@
             "type": "Agricultural research / programme resource",
             "access": "Official information; programme eligibility and implementation conditions apply.",
             "lifecycle": "needs_review",
-            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           },
           {
             "title": "IFAD AgTech and FinTech evidence-for-scale grant opportunity",
@@ -524,9 +526,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           },
           {
             "title": "FAO Seeds to Foods 2026 initiative",
@@ -1000,9 +1004,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ],
         "climate": [],
@@ -1145,9 +1151,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ],
         "climate": [
@@ -5901,9 +5909,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ],
         "climate": [
