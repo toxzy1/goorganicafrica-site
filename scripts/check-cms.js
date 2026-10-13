@@ -199,6 +199,9 @@ const eleventySource = read(".eleventy.js");
 if (!eleventySource.includes("const collectPublishableNews") || !eleventySource.includes("const collectPublishableResources") || !eleventySource.includes("articles: [...(c.articles || [])].filter(isPublishableAgriculturalRecord)") || !eleventySource.includes("const incoming = [...(supplement.records || []), ...(expansion.records || [])].filter(isPublishableAgriculturalRecord)") || !eleventySource.includes("const allSupplementRecords = [...(supplement.records || []), ...gapRecords.map")) {
   throw new Error("Public agricultural search, news and resource data must merge eligible records while excluding review-queue candidates.");
 }
+if (eleventySource.includes('new Date("2026-10-08T00:00:00Z")') || !eleventySource.includes("new Date().toISOString().slice(0, 10)")) {
+  throw new Error("Agricultural expiry, freshness and generated-date metadata must not be frozen to an old build date.");
+}
 
 const freshnessMonitor = read("scripts/monitor-agricultural-data.js");
 if (!freshnessMonitor.includes("sourceUrlAudit") || !freshnessMonitor.includes("generic_landing_page_records") || !freshnessMonitor.includes("duplicate_url_groups") || !freshnessMonitor.includes("news-keywords\\/agriculture") || !freshnessMonitor.includes("news_country_coverage") || !freshnessMonitor.includes("zero_story_countries")) {
