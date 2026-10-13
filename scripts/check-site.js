@@ -97,6 +97,9 @@ const searchPage = read('src/search.njk');
 if (!searchPage.includes('data-i18n="search.title"') || !searchPage.includes('goa:languagechange') || !searchPage.includes("tr('noResults')")) {
   throw new Error('Global search must translate its interface and update dynamic messages when language changes.');
 }
+if (!searchPage.includes('r.status == "official"') || !searchPage.includes('r.status == "open" or r.status == "active"') || !searchPage.includes('r.lifecycle != "needs_review"')) {
+  throw new Error('Global search must exclude unreviewed news and inactive or unreviewed opportunities.');
+}
 if (!decisionPage.includes('data-i18n="decisionCentre.title"') || !decisionUi.includes('data-i18n="decisionCentre.buildTitle"') || !decisionUi.includes('tr("noMatch")')) {
   throw new Error('Farmer Decision Centre must translate its interface and dynamic empty states.');
 }
