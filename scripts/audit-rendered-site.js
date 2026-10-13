@@ -212,7 +212,7 @@ if (decisionHtml) {
   for (const id of ["dc-country", "dc-topic", "dc-goal", "dc-build", "dc-output"]) {
     if (!decisionHtml.includes('id="' + id + '"')) failures.push("farmer-decision-centre/index.html: missing interactive element #" + id);
   }
-  if (!decisionHtml.includes("const data=") || !decisionHtml.includes("Open source")) {
+  if (!decisionHtml.includes("const data=") || !decisionHtml.includes('tr("openSource")')) {
     failures.push("farmer-decision-centre/index.html: source data or source-link action is missing");
   }
 }
