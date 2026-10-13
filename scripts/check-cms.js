@@ -253,7 +253,10 @@ const sourceCandidates = [
   ...(opportunityData.records || [])
 ];
 const genericSourcePath = pathname => pathname === "/" ||
-  /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
+  /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname) ||
+  /\/newsdetails(?:\/en)?$/i.test(pathname) ||
+  /\/news\/detail(?:\/en)?$/i.test(pathname) ||
+  /\/hand-in-hand\/investment-forum-2026\//i.test(pathname) ||
   pathname === "/en";
 const publicNewsStatus = record =>
   ["official", "published", "verified"].includes(String(record.status || "").toLowerCase()) &&
