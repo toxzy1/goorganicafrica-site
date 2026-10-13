@@ -30,7 +30,7 @@ pageLanguage: pt
 {% if translated and translated.title and translated.summary %}
 <h2>{{ translated.title }}</h2><p>{{ translated.summary }}</p>
 {% else %}
-<p class="translation-pending-note" data-translation-status="pending"><small>Tradução indisponível ou ainda não revisada; o título e o resumo disponíveis são exibidos.</small></p>
+<p class="translation-pending-note" data-translation-status="pending"><small>Tradução em revisão</small></p>
 <h2>{{ article.title }}</h2><p>{{ article.summary }}</p>
 {% endif %}
 <p><small>Fonte: {{ article.source }} · Verificado: {{ article.verified }}</small></p>
