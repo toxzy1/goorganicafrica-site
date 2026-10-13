@@ -1538,7 +1538,9 @@
       "source_tier": 1,
       "published": "2026-06-10",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
     },
     {
       "country_code": "BJ",
@@ -1644,7 +1646,9 @@
       "source_tier": 1,
       "published": "2026-01-19",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
     },
     {
       "country_code": "CV",
