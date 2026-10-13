@@ -308,6 +308,11 @@ if (decisionHtml) {
       if (decisionRecords.length < 100) failures.push("farmer-decision-centre/index.html: too few source records (" + decisionRecords.length + ")");
       if (decisionCountries.size < 40) failures.push("farmer-decision-centre/index.html: covers only " + decisionCountries.size + " country codes");
       if (decisionSources < 100) failures.push("farmer-decision-centre/index.html: too few linked source records (" + decisionSources + ")");
+      const unusableDecisionRecords = decisionRecords.filter(r => !String(r.title || "").trim() || !searchTargetExists(r.url));
+      if (unusableDecisionRecords.length) {
+        failures.push("farmer-decision-centre/index.html: " + unusableDecisionRecords.length + " records have a missing title or unusable destination");
+        unusableDecisionRecords.slice(0, 20).forEach(r => failures.push("Decision Centre source: " + (r.title || "(untitled)") + " -> " + (r.url || "(no URL)")));
+      }
       for (const section of ["markets", "opportunities", "resources", "services", "news"]) {
         if (!decisionSections.has(section)) failures.push("farmer-decision-centre/index.html: no records for " + section);
       }
