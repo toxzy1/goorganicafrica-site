@@ -1055,7 +1055,25 @@
       "published": "2026-09-10",
       "verified": "2026-10-13",
       "status": "official",
-      "coverage_scope": "national"
+      "coverage_scope": "national",
+      "translations": {
+        "fr": {
+          "title": "São Tomé-et-Príncipe fait avancer une stratégie nationale de durabilité « 100 % Bio »",
+          "summary": "Le ministère de l’Agriculture, de la Pêche et du Développement rural présente une vision nationale reliant la production biologique, la sécurité alimentaire, la biodiversité, l’emploi, le tourisme, la protection de l’environnement et l’économie bleue. Le projet RETSA est présenté comme un moyen de concrétiser cette vision."
+        },
+        "ar": {
+          "title": "ساو تومي وبرينسيبي تمضي قدماً في استراتيجية وطنية للاستدامة بعنوان «100% عضوي»",
+          "summary": "تعرض وزارة الزراعة ومصايد الأسماك والتنمية الريفية رؤية وطنية تربط الإنتاج العضوي بالأمن الغذائي والتنوع البيولوجي والوظائف والسياحة وحماية البيئة والاقتصاد الأزرق، مع تحديد مشروع RETSA منصةً لتنفيذ الرؤية."
+        },
+        "pt": {
+          "title": "São Tomé e Príncipe avança com uma estratégia nacional de sustentabilidade «100% Bio»",
+          "summary": "O Ministério da Agricultura, Pescas e Desenvolvimento Rural apresenta uma visão nacional que liga a produção biológica, a segurança alimentar, a biodiversidade, o emprego, o turismo, a proteção ambiental e a economia azul. O projeto RETSA é apontado como uma plataforma para concretizar essa visão."
+        },
+        "sw": {
+          "title": "São Tomé na Príncipe yaendeleza mkakati wa kitaifa wa uendelevu wa “100% Bio”",
+          "summary": "Wizara ya Kilimo, Uvuvi na Maendeleo ya Vijijini inaeleza maono ya kitaifa yanayounganisha uzalishaji wa kilimo-hai, usalama wa chakula, bioanuwai, ajira, utalii, ulinzi wa mazingira na uchumi wa buluu. Mradi wa RETSA umetajwa kuwa jukwaa la kutekeleza maono hayo."
+        }
+      }
     },
     {
       "country_code": "CG",
@@ -1523,9 +1541,26 @@
       "source_tier": 1,
       "published": "2026-06-17",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official country story found; verify summary, date and country/category assignment before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "L’Érythrée marque la Journée mondiale de la sécurité sanitaire des aliments en réaffirmant son engagement pour des aliments plus sûrs",
+          "summary": "La FAO indique que des représentants du gouvernement érythréen, de la recherche, du secteur privé et de partenaires internationaux ont discuté des maladies d’origine alimentaire, des risques liés aux pesticides, des systèmes d’inspection et de l’élaboration d’une politique nationale de contrôle des aliments."
+        },
+        "ar": {
+          "title": "إريتريا تحيي اليوم العالمي لسلامة الأغذية وتؤكد التزامها بغذاء أكثر أماناً",
+          "summary": "أفادت الفاو بأن ممثلين عن الحكومة الإريترية والباحثين والقطاع الخاص والشركاء الدوليين ناقشوا الأمراض المنقولة بالغذاء ومخاطر المبيدات وأنظمة التفتيش وإعداد سياسة وطنية للرقابة على الأغذية."
+        },
+        "pt": {
+          "title": "Eritreia assinala o Dia Mundial da Segurança dos Alimentos e reafirma o compromisso com alimentos mais seguros",
+          "summary": "A FAO informa que representantes do governo da Eritreia, da investigação, do setor privado e de parceiros internacionais discutiram doenças transmitidas por alimentos, riscos dos pesticidas, sistemas de inspeção e a elaboração de uma política nacional de controlo alimentar."
+        },
+        "sw": {
+          "title": "Eritrea yaadhimisha Siku ya Usalama wa Chakula Duniani na kusisitiza kujitolea kwa chakula salama",
+          "summary": "FAO inaripoti kuwa wawakilishi wa serikali ya Eritrea, watafiti, sekta binafsi na washirika wa kimataifa walijadili magonjwa yatokanayo na chakula, hatari za viuatilifu, mifumo ya ukaguzi na uundaji wa sera ya kitaifa ya udhibiti wa chakula."
+        }
+      }
     },
     {
       "country_code": "CF",
