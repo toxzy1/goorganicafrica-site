@@ -62,7 +62,10 @@ const sourceUrlAudit=(records, resourceMode=false)=>{
    const u=new URL(url);
    const pathname=u.pathname.replace(/\/+$/, "")||"/";
    if(resourceMode && pathname==="/" && u.searchParams.has("page_id"))return false;
-   const generic=pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname)||/\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname)||/^\/en$/.test(pathname);
+   const commonGeneric=pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname)||/\/newsdetails(?:\/en)?$/i.test(pathname)||/\/news\/detail(?:\/en)?$/i.test(pathname)||/^\/en$/.test(pathname);
+   const investmentProfile=/\/hand-in-hand\/investment-forum-2026\//i.test(pathname);
+   const regionalOverview=/\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname);
+   const generic=commonGeneric||(resourceMode?regionalOverview:investmentProfile);
    if(!generic)return false;
    if(resourceMode && (pathname==="/"||/^\/en$/.test(pathname))){
     const title=String(r.title||r.name||"");
