@@ -286,37 +286,51 @@ if (searchHtml) {
     }
     if (unusable) failures.push("search/index.html: " + unusable + " indexed records cannot lead visitors to a usable destination");
 
-    // Review-only resource records must stay in the editorial queue, not leak
-    // into the public search index. Check both primary and supplemental data.
+    // Review-only resources must not be the only indexed version for a country/source.
+    // Some datasets intentionally contain a review duplicate alongside an official record;
+    // compare by country and URL so those legitimate published copies do not false-fail.
     const resourceFiles = ["_data/agriculturalResources.json", "_data/agriculturalResourcesSupplement.json"];
-    const reviewTitles = new Set();
+    const resourceRecords = [];
     const flattenResourceRecords = data => {
       if (Array.isArray(data.records)) return data.records;
       return (data.countries || []).flatMap(country =>
-        Object.values(country.records || {}).flatMap(items => Array.isArray(items) ? items : [])
+        Object.values(country.records || {}).flatMap(items =>
+          (Array.isArray(items) ? items : []).map(record => ({
+            ...record,
+            country_code: record.country_code || country.code
+          }))
+        )
       );
     };
     for (const relData of resourceFiles) {
       const filePath = path.join(source, relData);
       if (!fs.existsSync(filePath)) continue;
       const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
-      for (const record of flattenResourceRecords(data)) {
-        const status = String(record.status || "official").toLowerCase();
-        const lifecycle = String(record.lifecycle || "").toLowerCase();
-        if (["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(status) ||
-            ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle)) {
-          if (record.title) reviewTitles.add(String(record.title));
-        }
-      }
+      resourceRecords.push(...flattenResourceRecords(data));
     }
-    const escapeAttr = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-    for (const match of sourceBlock.matchAll(/<article\b([^>]*)>/gi)) {
+    const sourceKey = record => String(record.country_code || "").toUpperCase() + "|" + normalizedSourceHref(record.url || record.source_url || "");
+    const isPublicResource = record => {
+      const status = String(record.status || "official").toLowerCase();
+      const lifecycle = String(record.lifecycle || "").toLowerCase();
+      return ["official","published","verified"].includes(status) && (!lifecycle || lifecycle === "current");
+    };
+    const publicKeys = new Set(resourceRecords.filter(isPublicResource).map(sourceKey));
+    const reviewKeys = new Set(resourceRecords.filter(record => {
+      const status = String(record.status || "official").toLowerCase();
+      const lifecycle = String(record.lifecycle || "").toLowerCase();
+      const reviewOnly = ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(status) ||
+        ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle);
+      return reviewOnly && record.title && !publicKeys.has(sourceKey(record));
+    }).map(sourceKey));
+    for (const match of sourceBlock.matchAll(/<article\\b([^>]*)>/gi)) {
       const attrs = match[1];
-      if (!/\bdata-type=["']Resource["']/i.test(attrs)) continue;
-      const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
-      const title = titleMatch ? titleMatch[1] : "";
-      if (reviewTitles.has(title) || [...reviewTitles].some(t => escapeAttr(t) === title)) {
-        failures.push("search/index.html: review-only resource leaked into public search: " + title);
+      if (!/\\bdata-type=["']Resource["']/i.test(attrs)) continue;
+      const codeMatch = attrs.match(/\\bdata-country-code=["']([^"']*)["']/i);
+      const urlMatch = attrs.match(/\\bdata-url=["']([^"']*)["']/i);
+      const key = String(codeMatch ? codeMatch[1] : "").toUpperCase() + "|" + normalizedSourceHref(urlMatch ? urlMatch[1] : "");
+      if (reviewKeys.has(key)) {
+        const titleMatch = attrs.match(/\\bdata-title=["']([^"']*)["']/i);
+        failures.push("search/index.html: review-only resource leaked into public search: " + (titleMatch ? titleMatch[1] : "(untitled)") + " (" + key + ")");
       }
     }
   }
