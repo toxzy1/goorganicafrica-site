@@ -126,7 +126,7 @@ language: en
     const t=type.value;
     // Normalize punctuation and hyphenated slugs so "rabbit farming ebook" can
     // match metadata stored as "rabbit-farming" or "rabbit_farming".
-    const normalize=value=>String(value||'').toLowerCase().replace(/[^\\w\\u00C0-\\u024F\\u0600-\\u06FF]+/g,' ').trim().replace(/\\s+/g,' ');
+    const normalize=value=>String(value||'').toLowerCase().replace(/[^\w\u00C0-\u024F\u0600-\u06FF]+/g,' ').trim().replace(/\s+/g,' ');
     const words=normalize(q).split(' ').filter(Boolean);
     const matches=source.filter(x=>{
       if(t&&x.type!==t)return false;
