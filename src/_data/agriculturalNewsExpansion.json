@@ -323,7 +323,7 @@
       "source_tier": 1,
       "published": "2026-09-18",
       "verified": "2026-10-08",
-      "status": "official",
+      "status": "review",
       "coverage_scope": "regional",
       "translations": {
         "fr": {
@@ -342,7 +342,9 @@
           "title": "Nchi za Kusini, Kati na Mashariki mwa Afrika zaimarisha hatua za pamoja dhidi ya PPR",
           "summary": "Warsha ya kikanda mjini Dar es Salaam ilikubaliana hatua za ufuatiliaji wa mipakani, maandalizi, kubadilishana taarifa na kudhibiti ugonjwa wa PPR unaoathiri kondoo na mbuzi."
         }
-      }
+      },
+      "lifecycle": "needs_review",
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "CD",
@@ -396,7 +398,7 @@
       "source_tier": 1,
       "published": "2026-09-18",
       "verified": "2026-10-08",
-      "status": "official",
+      "status": "review",
       "coverage_scope": "regional",
       "translations": {
         "fr": {
@@ -415,7 +417,9 @@
           "title": "Zambia yashiriki hatua za kikanda kuimarisha ufuatiliaji na maandalizi dhidi ya PPR",
           "summary": "Zambia ilishiriki warsha ya kikanda kuhusu PPR iliyokubaliana hatua za pamoja za ufuatiliaji na maandalizi na kusisitiza njia za kudumisha hali ya kutokuwa na ugonjwa huo."
         }
-      }
+      },
+      "lifecycle": "needs_review",
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "SN",
@@ -427,7 +431,7 @@
       "source_tier": 1,
       "published": "2026-09-21",
       "verified": "2026-10-08",
-      "status": "official",
+      "status": "review",
       "translations": {
         "fr": {
           "title": "La FAO renforce le mécanisme climat et environnement en Afrique de l’Ouest pour mieux soutenir les pays",
@@ -446,7 +450,9 @@
           "summary": "Mfumo wa Tabianchi na Mazingira wa FAO kwa Afrika Magharibi ulikutana Dakar kuimarisha msaada kwa nchi na kuendeleza mifumo ya kilimo na chakula inayostahimili mabadiliko ya tabianchi."
         }
       },
-      "coverage_scope": "regional"
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "SO",
@@ -1719,8 +1725,8 @@
       "source_tier": 1,
       "published": "2026-10-02",
       "verified": "2026-10-13",
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "coverage_scope": "regional",
       "translations": {
         "fr": {
@@ -1739,7 +1745,8 @@
           "title": "Togo na Burkina Faso zaimarisha biashara ya muhogo kuvuka mipaka",
           "summary": "Wizara ya Kilimo ya Togo iliripoti mkutano kati ya wadau wa mnyororo wa muhogo wa Togo na shirika la kitaaluma la muhogo la Burkina Faso. Majadiliano yalihusu mahitaji yanayokadiriwa kuwa tani 80,000 za unga mzito wa muhogo, kiasi, ubora, uchakataji, bei na usafirishaji; hii ni fursa ya biashara inayoendelea, si mkataba wa ununuzi uliothibitishwa."
         }
-      }
+      },
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "SC",
@@ -1877,8 +1884,8 @@
       "source_tier": 1,
       "published": "2026-07-15",
       "verified": "2026-10-13",
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "translations": {
         "fr": {
           "title": "Le Programme phytosanitaire africain élargit la surveillance de la santé des plantes et la lutte contre les ravageurs",
@@ -1897,7 +1904,8 @@
           "summary": "Taarifa ya FAO ya Julai 2026 inaeleza mifumo ya ufuatiliaji wa kidijitali, mafunzo na huduma za afya ya mimea za Mpango wa Afya ya Mimea Afrika. Misri ni miongoni mwa nchi zinazotumia ushahidi wa mpango kuboresha ugunduzi wa wadudu na upatikanaji wa masoko ya nje."
         }
       },
-      "coverage_scope": "regional"
+      "coverage_scope": "regional",
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "TD",
@@ -1909,8 +1917,8 @@
       "source_tier": 1,
       "published": "2026-05-05",
       "verified": "2026-10-13",
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "coverage_scope": "regional",
       "translations": {
         "fr": {
@@ -1929,7 +1937,8 @@
           "title": "Nchi za Afrika ya Kati ziratibu ufuatiliaji ili kutokomeza PPR kufikia 2030",
           "summary": "Mkutano wa kikanda wa FAO mjini N’Djamena ulikubaliana kuimarisha ufuatiliaji wa kuvuka mipaka, uchunguzi wa maabara, ubadilishanaji wa data na uratibu wa mifugo ili kufikia kutokomeza ugonjwa wa PPR katika Afrika ya Kati ifikapo 2030."
         }
-      }
+      },
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "GM",
@@ -2241,8 +2250,8 @@
       "source_tier": 1,
       "published": "2026-10-03",
       "verified": "2026-10-13",
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "coverage_scope": "regional",
       "translations": {
         "fr": {
@@ -2261,7 +2270,8 @@
           "title": "FAO na IWMI zaimarisha ushirikiano kwa mifumo ya kilimo na chakula inayostahimili mishtuko Kusini mwa Afrika",
           "summary": "FAO na Taasisi ya Kimataifa ya Usimamizi wa Maji zilijadili ushirikiano wa kikanda katika usimamizi wa maji na ustahimilivu wa tabianchi kutokana na hatari za ukame, magonjwa ya mazao na mifugo, wadudu waharibifu na mishtuko ya bei. Makala inasisitiza maandalizi ya msimu ujao wa kilimo na umuhimu wa ushirikiano wa kuvuka mipaka."
         }
-      }
+      },
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "NA",
@@ -2699,8 +2709,8 @@
       "source_tier": 1,
       "published": "2026-04-30",
       "verified": "2026-10-13",
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "coverage_scope": "regional",
       "translations": {
         "fr": {
@@ -2719,7 +2729,8 @@
           "title": "Tanzania yaandaa viongozi wa kikanda kuendeleza uwezeshaji wa wanawake katika mifumo ya kilimo na chakula",
           "summary": "Nchi za Afrika Mashariki na Kusini zilikutana Dar es Salaam kujadili Miongozo ya Hiari ya Kamati ya Usalama wa Chakula Duniani kuhusu usawa wa kijinsia na uwezeshaji wa wanawake na wasichana katika muktadha wa usalama wa chakula na lishe."
         }
-      }
+      },
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "ET",
