@@ -4077,6 +4077,36 @@
       "status": "review",
       "lifecycle": "needs_review",
       "review_reason": "Direct official FAO country brief verified; editorially confirm country/category assignment and whether the latest issue remains current before publication."
+    },
+    {
+      "country_code": "ER",
+      "country": "Eritrea",
+      "category": "data",
+      "title": "FAO GIEWS country brief: Eritrea’s 2026 main-season crop outlook",
+      "description": "FAO’s Global Information and Early Warning System country brief reports that June–September 2026 rainfall was 20–40 percent below average in key producing regions, raising concerns about the 2026 main-season wheat, barley, sorghum, maize, teff and pulse crops.",
+      "summary": "FAO’s Global Information and Early Warning System country brief reports that June–September 2026 rainfall was 20–40 percent below average in key producing regions, raising concerns about the 2026 main-season wheat, barley, sorghum, maize, teff and pulse crops.",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ERI",
+      "source": "FAO GIEWS",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Direct official country brief verified; confirm the latest reference date and country/category assignment before publication."
+    },
+    {
+      "country_code": "GW",
+      "country": "Guinea-Bissau",
+      "category": "data",
+      "title": "FAO GIEWS country brief: Guinea-Bissau cereal production and food-security outlook",
+      "description": "FAO’s country brief summarizes 2025 cereal production, rice-price movements and food-insecurity conditions, with a reference date of 6 February 2026. Treat it as a dated monitoring resource rather than current price data.",
+      "summary": "FAO’s country brief summarizes 2025 cereal production, rice-price movements and food-insecurity conditions, with a reference date of 6 February 2026. Treat it as a dated monitoring resource rather than current price data.",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GNB",
+      "source": "FAO GIEWS",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Direct official country brief verified; confirm whether its February 2026 reference remains useful before publication."
     }
   ]
 }
