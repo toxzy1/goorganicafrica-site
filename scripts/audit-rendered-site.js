@@ -485,7 +485,7 @@ if (fs.existsSync(newsSourcePath)) {
           failures.push(rel + ": incorrect or missing language target for " + targetLang);
         }
       }
-            const storyCards = (html.match(/<article\\b[^>]*class=["'][^"']*\\bcard\\b[^"']*["']/gi) || []).length;
+      const storyCards = (html.match(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["']/gi) || []).length;
       if (storyCards === 0) {
         // An empty story queue is acceptable only when the page explains the gap
         // and gives visitors a working route into other agriculture content.
