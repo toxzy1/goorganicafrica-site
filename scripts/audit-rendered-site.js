@@ -122,6 +122,28 @@ for (const file of htmlFiles) {
   if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
     const selectors = (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
     if (selectors !== 1) failures.push(rel + ": expected exactly one site language selector, found " + selectors);
+    const selectorOptions = new Set();
+    for (const select of html.matchAll(/<select\b[^>]*class=["'][^"']*site-language-select[^"']*["'][^>]*>([\s\S]*?)<\/select>/gi)) {
+      for (const option of select[1].matchAll(/<option\b[^>]*value=["'](en|fr|ar|pt|sw)["']/gi)) selectorOptions.add(option[1]);
+    }
+    for (const lang of ["en", "fr", "ar", "pt", "sw"]) {
+      if (!selectorOptions.has(lang)) failures.push(rel + ": language selector is missing option " + lang);
+    }
+  }
+  // Every generated country-news page must link to the matching country slug
+  // in all five language trees. This catches accidental homepage fallbacks,
+  // guessed slugs, and language options that lead to nonexistent pages.
+  const countryNewsRoute = rel.match(/^(?:(fr|ar|pt|sw)\/)?agricultural-news\/([^/]+)\/index\.html$/);
+  if (countryNewsRoute) {
+    const slug = countryNewsRoute[2];
+    const targets = {};
+    for (const match of html.matchAll(/data-url-(en|fr|ar|pt|sw)=["']([^"']+)["']/gi)) targets[match[1]] = match[2];
+    for (const lang of ["en", "fr", "ar", "pt", "sw"]) {
+      const expected = "/" + (lang === "en" ? "" : lang + "/") + "agricultural-news/" + slug + "/";
+      if (targets[lang] !== expected) failures.push(rel + ": language target " + lang + " should be " + expected + ", found " + (targets[lang] || "(missing)"));
+      const targetFile = path.join(site, expected.replace(/^\//, ""), "index.html");
+      if (!fs.existsSync(targetFile)) failures.push(rel + ": language target does not render for " + lang + ": " + expected);
+    }
   }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
     failures.push(rel + ": legacy content-variant markup remains");
