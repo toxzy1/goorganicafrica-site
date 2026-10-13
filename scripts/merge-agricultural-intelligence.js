@@ -12,7 +12,7 @@ function normalizeUrl(value) {
   try {
     const url = new URL(raw);
     url.hash = '';
-    url.hostname = url.hostname.toLowerCase().replace(/^www\\./, '');
+    url.hostname = url.hostname.toLowerCase().replace(/^www\./, '');
     if ((url.protocol === 'https:' && url.port === '443') ||
         (url.protocol === 'http:' && url.port === '80')) url.port = '';
     while (url.pathname.length > 1 && url.pathname.endsWith('/')) {
@@ -20,12 +20,12 @@ function normalizeUrl(value) {
     }
     return url.toString();
   } catch (_) {
-    return raw.split('#')[0].replace(/\\/+$/, '').toLowerCase();
+    return raw.split('#')[0].replace(/\/+$/, '').toLowerCase();
   }
 }
 
 function normalizeTitle(value) {
-  return String(value || '').trim().toLowerCase().replace(/\\s+/g, ' ');
+  return String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
 }
 
 function merge(baseName, supplementNames, countryField, listField, bucketed) {
@@ -81,7 +81,7 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
   }
 
   base.last_updated = today;
-  fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\\n');
+  fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\n');
   console.log(baseName + ': added ' + added + ', skipped exact normalized duplicates ' + skippedDuplicates + '.');
   return added;
 }
