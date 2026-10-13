@@ -19,8 +19,12 @@ pageLanguage: pt
 <p><a href="/pt/agricultural-news/">← Todas as notícias agrícolas</a></p>
 <h1>{{ country.flag }} Notícias agrícolas — {{ displayCountryName }}</h1>
 <p class="lede">Desenvolvimentos agrícolas atuais e verificados para este país.</p>
-{% if country.articles and country.articles.length %}
-{% for article in country.articles %}
+{% set publishedCountryArticles = [] %}
+{% for candidate in country.articles %}
+  {% if candidate.lifecycle == "current" %}{% set publishedCountryArticles = publishedCountryArticles.concat([candidate]) %}{% endif %}
+{% endfor %}
+{% if publishedCountryArticles.length %}
+{% for article in publishedCountryArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
 <article class="card" style="margin:16px 0;">
 <h2>{{ translated.title or article.title }}</h2><p>{{ translated.summary or article.summary }}</p>
