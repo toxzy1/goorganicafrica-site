@@ -235,10 +235,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-04-21"
+            "published": "2026-04-21",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "TAAT-III — AfDB and IITA scale climate-resilient agricultural technologies",
@@ -352,10 +354,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Regional agricultural programme",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-05-26"
+            "published": "2026-05-26",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -524,10 +528,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-28"
+            "published": "2026-09-28",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
@@ -736,10 +742,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-04-24"
+            "published": "2026-04-24",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -1186,10 +1194,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-07"
+            "published": "2026-09-07",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -1267,8 +1277,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "inputs": [],
@@ -1321,10 +1333,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural value-chain programme preparation",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-06-15"
+            "published": "2026-06-15",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "insurance": [],
@@ -1335,12 +1349,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Zambia Cashew Development Programme Phase II Preparation Project",
             "description": "AfDB-supported preparation work for the next phase of Zambia's cashew development programme, including feasibility and environmental studies.",
             "type": "Agricultural value-chain development project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "World Bank Repurposing Agricultural Support for Soil Health Impact Program",
@@ -1485,10 +1501,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-11-27"
+            "published": "2025-11-27",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -1641,10 +1659,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-05-14"
+            "published": "2025-05-14",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -1688,12 +1708,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Agri-MSMEs Development for Jobs (AMD4J)",
             "description": "AfDB agriculture project supporting agricultural micro, small and medium enterprises and job creation in Ethiopia.",
             "type": "Agricultural enterprise development project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB Agri-MSMEs Development for Jobs (AMD4J)",
@@ -1703,8 +1725,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "FAO Hand-in-Hand Ethiopia 2026 — mechanization, animal feed and ranching",
@@ -2149,12 +2173,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "PROMAC — Aquaculture Promotion and Fisheries Value-Chain Competitiveness",
             "description": "AfDB project supporting aquaculture development and competitiveness of fisheries value chains in Benin.",
             "type": "Aquaculture and fisheries project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "Benin PROMAC — Sustainable Aquaculture and Fisheries Value Chains",
@@ -2187,10 +2213,12 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Rural entrepreneurship and agricultural support programme",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-06-04"
+            "published": "2026-06-04",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -2310,10 +2338,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-09-21"
+            "published": "2026-09-21",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -2568,9 +2598,11 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -2618,10 +2650,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-12-09"
+            "published": "2025-12-09",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "grants": [],
@@ -2681,10 +2715,12 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Climate-resilient agribusiness programme",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2025-12-09"
+            "published": "2025-12-09",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -2910,12 +2946,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Agricultural Value-Chain Development Support Project (PADCV-PTA)",
             "description": "AfDB-supported project focused on agricultural value chains and transformation in the Democratic Republic of the Congo.",
             "type": "Agricultural value-chain project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB PADCV-PTA — Agricultural Value Chains Transformation Support Project",
@@ -2925,8 +2963,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "FAO DRC — support to communities affected by Ebola in Ituri and North Kivu",
@@ -2936,10 +2976,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-08"
+            "published": "2026-09-08",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -3321,10 +3363,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-12-29"
+            "published": "2025-12-29",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -3625,10 +3669,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-16"
+            "published": "2026-09-16",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -4131,10 +4177,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Emergency agricultural and livelihood support",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-05-08"
+            "published": "2026-05-08",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -4144,12 +4192,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Madagascar Lower Mangoky Irrigation Area Extension Project — Phase II",
             "description": "AfDB-supported irrigation expansion project designed to strengthen agricultural production and resilience in the Lower Mangoky area.",
             "type": "Irrigation and agricultural infrastructure project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB Lower Mangoky Irrigation Area Extension Project — Phase II",
@@ -4159,8 +4209,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -4255,12 +4307,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Enhancing Climate-Adapted Agricultural Productivity Through Improved Water Management (CAWMA)",
             "description": "AfDB-approved agriculture and rural-development project focused on climate-adapted productivity and improved water management in Malawi.",
             "type": "Agricultural development project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -4297,8 +4351,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
@@ -4562,10 +4618,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / technical assistance",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-06-17"
+            "published": "2026-06-17",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -4603,9 +4661,11 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "inputs": [],
@@ -4619,12 +4679,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Technical Assistance for PAASIFEJ Environmental and Social Action Plan",
             "description": "AfDB technical assistance supporting environmental and social implementation within Morocco's agricultural development programme.",
             "type": "Agricultural technical assistance",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB PAASIFEJ Environmental and Social Action Plan — Technical Assistance",
@@ -4634,8 +4696,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -4870,10 +4934,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Climate-risk and agricultural preparedness resource",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-09-07"
+            "published": "2026-09-07",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -5179,10 +5245,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-08-04"
+            "published": "2026-08-04",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -5244,10 +5312,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Regional climate and agrifood resource",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-09-21"
+            "published": "2026-09-21",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -5400,8 +5470,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
@@ -5425,12 +5497,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Sierra Leone Rice Agro-Industrial Special Zone Project — Phase I",
             "description": "AfDB agriculture project supporting rice-focused agro-industrial development and value-chain transformation in Sierra Leone.",
             "type": "Agricultural value-chain project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -5528,8 +5602,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -6017,8 +6093,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
@@ -6056,10 +6134,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy and implementation resource",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-09-24"
+            "published": "2026-09-24",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ]
       }
