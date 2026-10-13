@@ -165,8 +165,8 @@ for (const [rel, prefix] of [
 // Step 7: verify Resources and Agricultural News are rendered in all five languages.
 const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
-const hasLang = (html, lang) => new RegExp('<html\\b[^>]*\\blang="' + lang + '"', "i").test(html);
-const hasRtl = (html) => new RegExp('<html\\b[^>]*\\bdir="rtl"', "i").test(html);
+const hasLang = (html, lang) => new RegExp('<html\b[^>]*\blang="' + lang + '"', "i").test(html);
+const hasRtl = (html) => new RegExp('<html\b[^>]*\bdir="rtl"', "i").test(html);
 const resourcePages = enabledLanguages.map((lang) => ({
   lang,
   rel: languagePrefix(lang) + "agriculture-resources/index.html",
@@ -247,17 +247,17 @@ if (searchHtml) {
     for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
       if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("search/index.html: no searchable " + type + " records");
     }
-    const records = [...sourceBlock.matchAll(/<article\\b([^>]*)>/gi)];
+    const records = [...sourceBlock.matchAll(/<article\b([^>]*)>/gi)];
     let unusable = 0;
     for (const match of records) {
       const attrs = match[1];
-      const urlMatch = attrs.match(/\\bdata-url=["']([^"']*)["']/i);
-      const titleMatch = attrs.match(/\\bdata-title=["']([^"']*)["']/i);
+      const urlMatch = attrs.match(/\bdata-url=["']([^"']*)["']/i);
+      const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
       const title = titleMatch ? titleMatch[1].trim() : "";
       const url = urlMatch ? urlMatch[1].trim() : "";
       if (!title || !searchTargetExists(url)) {
         unusable++;
-        failures.push("search/index.html: indexed " + ((attrs.match(/\\bdata-type=["']([^"']*)["']/i) || [,"unknown"])[1]) +
+        failures.push("search/index.html: indexed " + ((attrs.match(/\bdata-type=["']([^"']*)["']/i) || [,"unknown"])[1]) +
           " record has missing title or unusable destination: " + (title || "(untitled)") + " -> " + (url || "(no URL)"));
       }
     }
