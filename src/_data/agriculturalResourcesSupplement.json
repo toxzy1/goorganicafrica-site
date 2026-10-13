@@ -2153,8 +2153,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official",
-      "type": "Market infrastructure"
+      "status": "review",
+      "type": "Market infrastructure",
+      "lifecycle": "needs_review",
+      "review_reason": "This URL is a generic news/landing page, not a direct resource. Replace it with a verified article or programme page."
     },
     {
       "country_code": "ET",
@@ -2509,8 +2511,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official",
-      "type": "Agricultural data"
+      "status": "review",
+      "type": "Agricultural data",
+      "lifecycle": "needs_review",
+      "review_reason": "This URL is a generic news/landing page, not a direct resource. Replace it with a verified article or programme page."
     },
     {
       "country_code": "AO",
@@ -2914,9 +2918,11 @@
       "source": "Ministère de l'Agriculture, de l'Élevage et de la Pêche — République du Congo",
       "source_tier": 1,
       "verified": "2026-10-13",
-      "status": "official",
+      "status": "review",
       "type": "Agricultural support fund",
-      "access": "Official fund information; funding windows and eligibility should be confirmed with the ministry."
+      "access": "Official fund information; funding windows and eligibility should be confirmed with the ministry.",
+      "lifecycle": "needs_review",
+      "review_reason": "This URL is a generic news/landing page, not a direct resource. Replace it with a verified article or programme page."
     },
     {
       "country_code": "GN",
@@ -3031,9 +3037,11 @@
       "source": "Ministère de l'Agriculture et de l'Élevage du Niger",
       "source_tier": 1,
       "verified": "2026-10-13",
-      "status": "official",
+      "status": "review",
       "type": "Family farming development programme",
-      "access": "Programme information; confirm current geographic coverage and beneficiary criteria with the ministry."
+      "access": "Programme information; confirm current geographic coverage and beneficiary criteria with the ministry.",
+      "lifecycle": "needs_review",
+      "review_reason": "This URL is a generic news/landing page, not a direct resource. Replace it with a verified article or programme page."
     },
     {
       "country_code": "SC",
@@ -3317,9 +3325,11 @@
       "source": "Ministère de l'Agriculture, de l'Élevage et de la Pêche — République du Congo",
       "source_tier": 1,
       "verified": "2026-10-13",
-      "status": "official",
+      "status": "review",
       "type": "Agricultural mechanisation resource",
-      "access": "Official information; confirm equipment access and current programmes with the ministry."
+      "access": "Official information; confirm equipment access and current programmes with the ministry.",
+      "lifecycle": "needs_review",
+      "review_reason": "This URL is a generic news/landing page, not a direct resource. Replace it with a verified article or programme page."
     },
     {
       "country_code": "SC",
