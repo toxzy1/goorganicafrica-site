@@ -3001,6 +3001,21 @@
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
       "review_reason": "Direct official FAO project article located. Confirm whether this belongs in Agricultural News or the Resources/data directory and avoid overlap with other Malawi agricultural data stories."
+    },
+    {
+      "country_code": "GN",
+      "category": "livestock",
+      "title": "Guinea uses technology to improve cattle artificial insemination",
+      "summary": "FAO, through the World Bank-funded Commercial Agriculture Development Project in Guinea, introduced veterinary ultrasound technology and practical training for technicians to improve cattle reproduction management across six prefectures.",
+      "url": "https://www.fao.org/africa/news-stories/news-detail/guinea--technology-improves-the-performance-of-artificial-insemination-in-cattle/en",
+      "source": "FAO Regional Office for Africa",
+      "source_tier": 1,
+      "published": "2026-05-19",
+      "discovered": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "coverage_scope": "country_specific",
+      "review_reason": "Direct FAO article located. Confirm Guinea country assignment and category; keep in review until checked against existing cattle and livestock-service records."
     }
   ]
 }
