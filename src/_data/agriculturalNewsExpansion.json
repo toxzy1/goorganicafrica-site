@@ -612,10 +612,28 @@
       "source_tier": 1,
       "published": "2026-10-02",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
+      "lifecycle": "current",
       "translation_status": "in_review",
-      "review_reason": "Direct official FAO story verified. Complete and review the five-language content before publication."
+      "translations": {
+        "fr": {
+          "title": "Le Tchad renforce les chaînes de valeur locales de la farine grâce à une nouvelle étude sur la transformation alimentaire",
+          "summary": "La FAO, le ministère tchadien de la Production agricole et de l’Industrialisation, le Programme alimentaire mondial et l’Union européenne ont réuni institutions publiques, producteurs et transformateurs pour valider une étude sur les chaînes de valeur des farines enrichies et non enrichies. Le travail doit guider les actions sur la transformation locale, la compétitivité des marchés et les systèmes alimentaires sensibles à la nutrition."
+        },
+        "ar": {
+          "title": "تشاد تعزز سلاسل قيمة الدقيق المحلي عبر دراسة جديدة لتصنيع الأغذية",
+          "summary": "جمعت الفاو ووزارة الإنتاج الزراعي والتصنيع في تشاد وبرنامج الأغذية العالمي والاتحاد الأوروبي المؤسسات العامة والمنتجين والمصنّعين للتحقق من دراسة حول سلاسل قيمة الدقيق المدعم وغير المدعم. وتهدف الدراسة إلى توجيه العمل في مجال التصنيع المحلي وتنافسية الأسواق والنظم الغذائية المراعية للتغذية."
+        },
+        "pt": {
+          "title": "Chade reforça as cadeias de valor locais da farinha através de um novo estudo sobre transformação alimentar",
+          "summary": "A FAO, o Ministério da Produção Agrícola e Industrialização do Chade, o Programa Alimentar Mundial e a União Europeia reuniram instituições públicas, produtores e transformadores para validar um estudo sobre cadeias de valor de farinhas fortificadas e não fortificadas. O trabalho deverá orientar ações de processamento local, competitividade dos mercados e sistemas alimentares sensíveis à nutrição."
+        },
+        "sw": {
+          "title": "Chad yaimarisha minyororo ya thamani ya unga wa ndani kupitia utafiti mpya wa uchakataji wa chakula",
+          "summary": "FAO, Wizara ya Uzalishaji wa Kilimo na Ustawishaji wa Viwanda ya Chad, Mpango wa Chakula Duniani na Umoja wa Ulaya ziliwakutanisha taasisi za umma, wazalishaji na wachakataji kuthibitisha utafiti kuhusu minyororo ya thamani ya unga ulioboreshwa na usioboreshwa. Kazi hiyo inalenga kuongoza uchakataji wa ndani, ushindani wa masoko na mifumo ya chakula inayozingatia lishe."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "TN",
@@ -1377,9 +1395,27 @@
       "source_tier": 1,
       "published": "2026-08-18",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO renforce les compétences en sécurité sanitaire des aliments dans la chaîne de valeur agricole au Togo",
+          "summary": "La FAO a organisé en août 2026 au Togo une formation de formateurs pour renforcer les bonnes pratiques d’hygiène et les compétences en sécurité sanitaire fondées sur le système HACCP dans l’ensemble de la chaîne alimentaire. L’initiative soutient un commerce alimentaire plus sûr et une meilleure capacité nationale de contrôle des aliments."
+        },
+        "ar": {
+          "title": "الفاو تعزز قدرات سلامة الأغذية في سلسلة القيمة الزراعية في توغو",
+          "summary": "نظمت الفاو في أغسطس 2026 تدريباً للمدربين في توغو لتعزيز ممارسات النظافة الجيدة ومهارات سلامة الأغذية القائمة على نظام HACCP عبر سلسلة الغذاء. وتدعم المبادرة تجارة غذائية أكثر أماناً وقدرات وطنية أقوى للرقابة على الأغذية."
+        },
+        "pt": {
+          "title": "FAO reforça as competências de segurança dos alimentos na cadeia de valor agrícola do Togo",
+          "summary": "Em agosto de 2026, a FAO realizou no Togo uma formação de formadores para reforçar as boas práticas de higiene e as competências de segurança alimentar baseadas no sistema HACCP ao longo da cadeia alimentar. A iniciativa apoia um comércio alimentar mais seguro e maior capacidade nacional de controlo dos alimentos."
+        },
+        "sw": {
+          "title": "FAO yaimarisha uwezo wa usalama wa chakula katika mnyororo wa thamani wa kilimo nchini Togo",
+          "summary": "FAO iliandaa mafunzo ya wakufunzi nchini Togo mnamo Agosti 2026 ili kuimarisha kanuni bora za usafi na ujuzi wa usalama wa chakula unaotegemea mfumo wa HACCP katika mnyororo mzima wa chakula. Mpango huu unaunga mkono biashara salama zaidi ya chakula na uwezo mkubwa wa kitaifa wa udhibiti wa chakula."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "BF",
@@ -1423,9 +1459,27 @@
       "source_tier": 1,
       "published": "2026-06-04",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO soutient l’examen du cadre de biosécurité aux Seychelles",
+          "summary": "Le Service du droit du développement de la FAO indique que le ministère de l’Environnement des Seychelles et ses partenaires ont examiné et validé un projet de rapport sur la gouvernance des organismes génétiquement modifiés et la législation sur la biosécurité, en lien avec le Protocole de Cartagena et le cadre réglementaire national."
+        },
+        "ar": {
+          "title": "الفاو تدعم مراجعة حوكمة السلامة الأحيائية في سيشل",
+          "summary": "أفادت دائرة قانون التنمية التابعة للفاو بأن وزارة البيئة في سيشل والجهات الشريكة راجعت وصادقت على مسودة تقرير بشأن حوكمة الكائنات المعدلة وراثياً وتشريعات السلامة الأحيائية، بما يتصل ببروتوكول قرطاجنة والإطار التنظيمي الوطني."
+        },
+        "pt": {
+          "title": "FAO apoia a revisão da governação da biossegurança nas Seychelles",
+          "summary": "O Serviço de Direito do Desenvolvimento da FAO informou que o ministério do Ambiente das Seychelles e agências parceiras analisaram e validaram um projeto de relatório sobre a governação dos organismos geneticamente modificados e a legislação de biossegurança, no âmbito do Protocolo de Cartagena e do quadro regulatório nacional."
+        },
+        "sw": {
+          "title": "FAO yaunga mkono mapitio ya utawala wa usalama wa viumbe nchini Shelisheli",
+          "summary": "Kitengo cha Sheria ya Maendeleo cha FAO kiliripoti kuwa wizara ya mazingira ya Shelisheli na washirika wake walipitia na kuthibitisha rasimu ya ripoti kuhusu usimamizi wa viumbe vilivyobadilishwa vinasaba na sheria za usalama wa viumbe, ikihusiana na Itifaki ya Cartagena na mfumo wa kitaifa wa udhibiti."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "CM",
@@ -1499,9 +1553,27 @@
       "source_tier": 1,
       "published": "2026-09-22",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO country-office article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO, l’Égypte et l’Irak renforcent les compétences en production durable du palmier dattier et en lutte contre les ravageurs",
+          "summary": "Un programme de formation de la FAO au Caire en septembre 2026 a réuni des partenaires égyptiens et irakiens pour développer les capacités techniques en culture de tissus du palmier dattier et en lutte intégrée contre les ravageurs, notamment la prévention et le contrôle du charançon rouge."
+        },
+        "ar": {
+          "title": "الفاو ومصر والعراق يعززون المهارات في إنتاج النخيل المستدام ومكافحة الآفات",
+          "summary": "جمع برنامج تدريبي للفاو في القاهرة خلال سبتمبر 2026 شركاء مصريين وعراقيين لبناء القدرات الفنية في زراعة أنسجة نخيل التمر والإدارة المتكاملة للآفات، مع التركيز على الوقاية من سوسة النخيل الحمراء ومكافحتها."
+        },
+        "pt": {
+          "title": "FAO, Egito e Iraque reforçam competências na produção sustentável de tamareiras e no controlo de pragas",
+          "summary": "Um programa de formação da FAO no Cairo, em setembro de 2026, reuniu parceiros egípcios e iraquianos para desenvolver capacidades técnicas em cultura de tecidos de tamareira e gestão integrada de pragas, com destaque para a prevenção e o controlo do gorgulho-vermelho-das-palmeiras."
+        },
+        "sw": {
+          "title": "FAO, Misri na Iraq zaimarisha ujuzi wa uzalishaji endelevu wa tende na udhibiti wa wadudu",
+          "summary": "Programu ya mafunzo ya FAO mjini Cairo mnamo Septemba 2026 iliwaleta pamoja washirika wa Misri na Iraq kujenga uwezo wa kiufundi katika uzalishaji wa miche ya mitende kwa utamaduni wa tishu na udhibiti jumuishi wa wadudu, hasa kuzuia na kudhibiti mdudu wa red palm weevil."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "EG",
@@ -1908,9 +1980,27 @@
       "source_tier": 1,
       "published": "2026-07-17",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official feature story found; verify date, country/category assignment and whether the story remains useful before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO et l’OIT mettent en avant l’entrepreneuriat agroalimentaire des jeunes et la résilience en Mauritanie",
+          "summary": "Un projet conjoint de la FAO et de l’OIT en Mauritanie illustre comment les entreprises agroalimentaires dirigées par des jeunes, le travail décent et les investissements agricoles responsables peuvent renforcer la cohésion sociale et la résilience."
+        },
+        "ar": {
+          "title": "الفاو ومنظمة العمل الدولية تبرزان ريادة الأعمال الزراعية والغذائية للشباب والقدرة على الصمود في موريتانيا",
+          "summary": "يوضح مشروع مشترك بين الفاو ومنظمة العمل الدولية في موريتانيا كيف يمكن للشركات الزراعية والغذائية التي يقودها الشباب والعمل اللائق والاستثمارات الزراعية المسؤولة أن تعزز التماسك الاجتماعي والقدرة على الصمود."
+        },
+        "pt": {
+          "title": "FAO e OIT destacam o empreendedorismo agroalimentar juvenil e a resiliência na Mauritânia",
+          "summary": "Um projeto conjunto da FAO e da OIT na Mauritânia demonstra como empresas agroalimentares lideradas por jovens, trabalho digno e investimento agrícola responsável podem apoiar a coesão social e a resiliência."
+        },
+        "sw": {
+          "title": "FAO na ILO zaangazia ujasiriamali wa kilimo na chakula wa vijana na ustahimilivu nchini Mauritania",
+          "summary": "Mradi wa pamoja wa FAO na ILO nchini Mauritania unaonyesha jinsi biashara za kilimo na chakula zinazoongozwa na vijana, kazi zenye staha na uwekezaji wa kilimo wenye uwajibikaji vinavyoweza kuimarisha mshikamano wa kijamii na ustahimilivu."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "KM",
@@ -1922,9 +2012,27 @@
       "source_tier": 1,
       "published": "2026-06-04",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official feature story with explicit Comoros context; verify country/category assignment and summary before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO met en avant le renforcement des contrôles de sécurité sanitaire des aliments importés aux Comores",
+          "summary": "La FAO décrit comment les inspecteurs de sécurité sanitaire des aliments aux Comores utilisent des procédures davantage fondées sur les données pour contrôler les aliments importés, notamment les produits de volaille, et renforcer les garanties dans un pays insulaire fortement dépendant des importations."
+        },
+        "ar": {
+          "title": "الفاو تسلط الضوء على تعزيز الرقابة على سلامة الأغذية المستوردة في جزر القمر",
+          "summary": "توضح الفاو كيف يستخدم مفتشو سلامة الأغذية في جزر القمر إجراءات أكثر اعتماداً على الأدلة لفحص الأغذية المستوردة، بما فيها منتجات الدواجن، وتعزيز الضمانات في دولة جزرية تعتمد بشدة على الواردات."
+        },
+        "pt": {
+          "title": "FAO destaca o reforço do controlo de segurança dos alimentos importados nas Comores",
+          "summary": "A FAO descreve como os inspetores de segurança alimentar nas Comores utilizam procedimentos mais baseados em evidências para avaliar alimentos importados, incluindo produtos avícolas, e reforçar as salvaguardas num país insular muito dependente das importações."
+        },
+        "sw": {
+          "title": "FAO yaangazia kuimarishwa kwa udhibiti wa usalama wa chakula kinachoagizwa nchini Comoro",
+          "summary": "FAO inaeleza jinsi wakaguzi wa usalama wa chakula nchini Comoro wanavyotumia taratibu zinazotegemea ushahidi zaidi kukagua chakula kinachoagizwa, ikiwemo bidhaa za kuku, na kuimarisha ulinzi katika taifa la visiwa linalotegemea sana uagizaji."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "ST",
