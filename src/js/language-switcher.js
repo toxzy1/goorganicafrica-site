@@ -119,7 +119,7 @@
     // Search and discovery tools do not have separately generated localized
     // route trees. Keep these tools on their real shared URL while translating
     // their interface; never guess /fr/, /ar/, /pt/ or /sw/ routes that may 404.
-    if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services)$/.test(rest)) {
+    if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence)$/.test(rest)) {
       return "/" + rest + "/";
     }
 
