@@ -239,8 +239,11 @@ if (!freshnessMonitor.includes("missing_publication_date") || !freshnessMonitor.
 
 if (!freshnessMonitor.includes('publishableNews=news.filter(isCurrentNewsRecord)') ||
     !freshnessMonitor.includes("isSpecificNewsUrl") ||
-    !freshnessMonitor.includes('["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle)')) {
-  throw new Error("Country news coverage must exclude unpublished, historical, expired, and generic-source records.");
+    !freshnessMonitor.includes('["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle)') ||
+    !freshnessMonitor.includes("country_specific_story_count") ||
+    !freshnessMonitor.includes("regional_story_count") ||
+    !freshnessMonitor.includes("under_four_country_specific_story_countries")) {
+  throw new Error("Country news coverage must distinguish regional stories from country-specific coverage and exclude unpublished, historical, expired, and generic-source records.");
 }
 
 // Generic landing pages may be useful for research, but must never be presented
@@ -267,7 +270,7 @@ const sourceCandidates = [
   ...(opportunityData.records || [])
 ];
 const genericSourcePath = pathname => pathname === "/" ||
-  /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname) ||
+  /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname) ||
   /\/newsdetails(?:\/en)?$/i.test(pathname) ||
   /\/news\/detail(?:\/en)?$/i.test(pathname) ||
   /\/hand-in-hand\/investment-forum-2026\//i.test(pathname) ||
@@ -302,7 +305,7 @@ if (genericUnreviewed.length) {
     genericUnreviewed.map(record => (record.title || record.headline || "Untitled") + " -> " + record.url).join("; "));
 }
 const genericResourceSourcePath = pathname => pathname === "/" ||
-  /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname) ||
+  /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname) ||
   /\/newsdetails(?:\/en)?$/i.test(pathname) ||
   /\/news\/detail(?:\/en)?$/i.test(pathname) ||
   /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname);
