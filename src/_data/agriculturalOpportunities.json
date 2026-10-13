@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-13",
   "editorial_policy": "Opportunities are sourced from authoritative organisations and classified by lifecycle. Expired or closed opportunities remain in the archive and are removed from active listings; they are never silently deleted.",
   "records": [
     {
@@ -456,6 +456,24 @@
         "markets",
         "finance"
       ]
+    },
+    {
+      "code": "MU",
+      "country": "Mauritius",
+      "title": "Mauritius 2026–2027 fruit-protection financial assistance scheme",
+      "category": "grants",
+      "type": "Time-limited financial assistance scheme",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "published": "2026-10-01",
+      "deadline": "2026-11-06",
+      "eligibility": "Orchard owners and members of the public seeking fruit-protection nets, subject to the Ministry’s stated conditions. The communiqué describes a 50% subsidy for up to five backyard fruit trees or 60 trees in orchards; applicants should confirm eligibility and remaining availability with FAREI.",
+      "summary": "The Ministry announced a financial assistance scheme for fruit-protection nets valid from 1 October through 6 November 2026. This is a time-limited subsidy notice, not a general agricultural loan or an unrestricted grant.",
+      "source": "Mauritius Ministry of Agro-Industry, Food Security, Blue Economy and Fisheries",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "url": "https://agriculture.govmu.org/Communique/2026/October/Communique_amended.docx%2002.10.26.pdf",
+      "review_reason": "Direct ministry communiqué checked. Confirm the live application process and remaining allocation before approving this time-limited opportunity."
     }
   ]
 }
