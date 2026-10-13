@@ -67,7 +67,7 @@ language: en
       {% endfor %}
     {% endfor %}
     {% for r in agriculturalOpportunities.records %}
-      {% if (r.status == "open" or r.status == "active") and r.is_current and (r.application_url or r.source_url or r.url) %}
+      {% if (r.status == "open" or r.status == "active") and (not r.lifecycle or r.lifecycle == "current") and (r.application_url or r.source_url or r.url) %}
         <article data-type="Opportunity" data-title="{{ r.title }}" data-summary="{{ r.summary or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.type or r.category or '' }} · {{ r.provider or r.source or '' }}" data-url="{{ r.application_url or r.source_url or r.url }}"></article>
       {% endif %}
     {% endfor %}
