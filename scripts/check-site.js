@@ -104,6 +104,9 @@ const eleventyConfig = read('.eleventy.js');
 if (!eleventyConfig.includes('articles: dedupeAgriculturalRecords(') || !eleventyConfig.includes('country_code: article.country_code || c.code')) {
   throw new Error('Public country news must deduplicate repeated source URLs within each country.');
 }
+if (!eleventyConfig.includes('title: article.title || article.headline || ""') || !eleventyConfig.includes('!isSpecificNewsUrl(article.url)')) {
+  throw new Error('Public news merging must normalize headline-only records and reject generic listing URLs.');
+}
 if (!decisionPage.includes('data-i18n="decisionCentre.title"') || !decisionUi.includes('data-i18n="decisionCentre.buildTitle"') || !decisionUi.includes('tr("noMatch")')) {
   throw new Error('Farmer Decision Centre must translate its interface and dynamic empty states.');
 }
