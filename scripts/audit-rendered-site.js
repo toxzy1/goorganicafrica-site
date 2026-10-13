@@ -114,6 +114,12 @@ for (const file of htmlFiles) {
     if ((html.match(/<main\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <main>");
     if (!["markets/index.html","opportunities/index.html","agricultural-services/index.html"].includes(rel) && (html.match(/<header\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <header>");
   }
+  // The site-wide selector is a shared layout contract. Catch missing or
+  // duplicated selectors on every visitor-facing page, not only directory pages.
+  if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
+    const selectors = selectorCount(html);
+    if (selectors !== 1) failures.push(rel + ": expected exactly one site language selector, found " + selectors);
+  }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
     failures.push(rel + ": legacy content-variant markup remains");
   }
