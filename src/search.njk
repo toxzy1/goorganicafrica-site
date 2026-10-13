@@ -138,7 +138,7 @@ language: en
       results.innerHTML='<div class="goa-search-empty">'+esc(tr('noResults'))+'</div>';
       return;
     }
-    results.innerHTML=shown.map(x=>'<article class="goa-search-card"><div class="goa-search-meta">'+esc(x.type)+' · '+esc(x.meta)+'</div><h2><a href="'+esc(x.url)+'">'+esc(x.title)+'</a></h2><p class="goa-search-summary">'+esc(x.summary).slice(0,320)+'</p></article>').join('');
+    results.innerHTML=shown.map(x=>'<article class="goa-search-card"><div class="goa-search-meta">'+esc(({Resource:tr('resources'),News:tr('news'),Opportunity:tr('opportunities'),Market:tr('markets'),Service:tr('services'),eBook:tr('ebooks'),Blog:tr('blog')})[x.type]||x.type)+' · '+esc(x.meta)+'</div><h2><a href="'+esc(x.url)+'">'+esc(x.title)+'</a></h2><p class="goa-search-summary">'+esc(x.summary).slice(0,320)+'</p></article>').join('');
   }
   input.addEventListener('input',render);
   type.addEventListener('change',render);
