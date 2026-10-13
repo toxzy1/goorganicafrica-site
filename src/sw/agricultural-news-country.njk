@@ -19,8 +19,12 @@ pageLanguage: sw
 <p><a href="/sw/agricultural-news/">← Habari zote za kilimo</a></p>
 <h1>{{ country.flag }} Habari za kilimo — {{ displayCountryName }}</h1>
 <p class="lede">Maendeleo ya sasa na yaliyothibitishwa ya kilimo kwa nchi hii.</p>
-{% if country.articles and country.articles.length %}
-{% for article in country.articles %}
+{% set publishedCountryArticles = [] %}
+{% for candidate in country.articles %}
+  {% if candidate.lifecycle == "current" %}{% set publishedCountryArticles = publishedCountryArticles.concat([candidate]) %}{% endif %}
+{% endfor %}
+{% if publishedCountryArticles.length %}
+{% for article in publishedCountryArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
 <article class="card" style="margin:16px 0;">
 <h2>{{ translated.title or article.title }}</h2><p>{{ translated.summary or article.summary }}</p>
