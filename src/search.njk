@@ -124,11 +124,14 @@ language: en
   function render(){
     const q=input.value.trim().toLowerCase();
     const t=type.value;
-    const words=q.split(/\s+/).filter(Boolean);
+    // Normalize punctuation and hyphenated slugs so "rabbit farming ebook" can
+    // match metadata stored as "rabbit-farming" or "rabbit_farming".
+    const normalize=value=>String(value||'').toLowerCase().replace(/[^\\w\\u00C0-\\u024F\\u0600-\\u06FF]+/g,' ').trim().replace(/\\s+/g,' ');
+    const words=normalize(q).split(' ').filter(Boolean);
     const matches=source.filter(x=>{
       if(t&&x.type!==t)return false;
-      const hay=(x.title+' '+x.summary+' '+x.keywords+' '+x.meta).toLowerCase();
-      return !words.length||words.every(w=>{const variants=topicAliases[w]||[w];return variants.some(v=>hay.includes(v));});
+      const hay=normalize(x.title+' '+x.summary+' '+x.keywords+' '+x.meta);
+      return !words.length||words.every(w=>{const variants=(topicAliases[w]||[w]).map(normalize);return variants.some(v=>hay.includes(v));});
     });
     const shown=matches.slice(0,100);
     const sections=[
