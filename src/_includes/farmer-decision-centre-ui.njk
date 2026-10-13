@@ -5,7 +5,7 @@
       <select id="dc-country" style="width:100%;padding:12px;margin-top:5px;"><option value="" data-i18n="decisionCentre.selectCountry">Select country</option>{% for c in agriculturalDecisionCentre.countries | sort(false,false,"name") %}<option value="{{c.code}}">{{c.name}}</option>{% endfor %}</select>
     </label>
     <label><span data-i18n="decisionCentre.topic">Enterprise or topic</span>
-      <select id="dc-topic" style="width:100%;padding:12px;margin-top:5px;"><option value="" data-i18n="decisionCentre.selectTopic">Select enterprise/topic</option>{% for t in agriculturalDecisionCentre.topics %}<option value="{{t}}">{{t | title}}</option>{% endfor %}</select>
+      <select id="dc-topic" style="width:100%;padding:12px;margin-top:5px;"><option value="" data-i18n="decisionCentre.selectTopic">Select enterprise/topic</option>{% for t in agriculturalDecisionCentre.topics %}<option value="{{t}}" data-i18n="decisionCentre.topic_{{t}}">{{t | title}}</option>{% endfor %}</select>
     </label>
     <label><span data-i18n="decisionCentre.goal">What do you need?</span>
       <select id="dc-goal" style="width:100%;padding:12px;margin-top:5px;">{% for g in agriculturalDecisionCentre.goals %}<option value="{{g.id}}" data-i18n="decisionCentre.goal_{{g.id}}">{{g.label}}</option>{% endfor %}</select>
