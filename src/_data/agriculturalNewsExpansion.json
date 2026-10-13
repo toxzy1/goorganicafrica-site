@@ -302,7 +302,25 @@
       "published": "2026-09-18",
       "verified": "2026-10-08",
       "status": "official",
-      "coverage_scope": "regional"
+      "coverage_scope": "regional",
+      "translations": {
+        "fr": {
+          "title": "Les pays d’Afrique australe, centrale et orientale renforcent l’action coordonnée contre la PPR",
+          "summary": "Un atelier régional à Dar es Salaam a convenu de mesures de surveillance transfrontalière, de préparation, de partage d’informations et de lutte contre la peste des petits ruminants qui touche les moutons et les chèvres."
+        },
+        "ar": {
+          "title": "دول جنوب ووسط وشرق أفريقيا تعزز العمل المنسق لمكافحة طاعون المجترات الصغيرة",
+          "summary": "اتفقت ورشة إقليمية في دار السلام على تدابير للرصد عبر الحدود والاستعداد وتبادل المعلومات ومكافحة طاعون المجترات الصغيرة الذي يصيب الأغنام والماعز."
+        },
+        "pt": {
+          "title": "Países da África Austral, Central e Oriental reforçam a ação coordenada contra a PPR",
+          "summary": "Um workshop regional em Dar es Salaam acordou medidas de vigilância transfronteiriça, preparação, partilha de informação e controlo da peste dos pequenos ruminantes, que afeta ovinos e caprinos."
+        },
+        "sw": {
+          "title": "Nchi za Kusini, Kati na Mashariki mwa Afrika zaimarisha hatua za pamoja dhidi ya PPR",
+          "summary": "Warsha ya kikanda mjini Dar es Salaam ilikubaliana hatua za ufuatiliaji wa mipakani, maandalizi, kubadilishana taarifa na kudhibiti ugonjwa wa PPR unaoathiri kondoo na mbuzi."
+        }
+      }
     },
     {
       "country_code": "CD",
@@ -339,7 +357,25 @@
       "published": "2026-09-18",
       "verified": "2026-10-08",
       "status": "official",
-      "coverage_scope": "regional"
+      "coverage_scope": "regional",
+      "translations": {
+        "fr": {
+          "title": "La Zambie participe à l’action régionale pour renforcer la surveillance et la préparation contre la PPR",
+          "summary": "La Zambie a participé à l’atelier régional sur la PPR, qui a convenu de mesures coordonnées de surveillance et de préparation et a souligné les moyens de préserver le statut indemne de la maladie."
+        },
+        "ar": {
+          "title": "زامبيا تنضم إلى الجهود الإقليمية لتعزيز رصد طاعون المجترات الصغيرة والاستعداد له",
+          "summary": "شاركت زامبيا في ورشة إقليمية بشأن طاعون المجترات الصغيرة اتفقت على تدابير منسقة للرصد والاستعداد وسلطت الضوء على سبل الحفاظ على وضع خلو البلاد من المرض."
+        },
+        "pt": {
+          "title": "Zâmbia participa na ação regional para reforçar a vigilância e a preparação contra a PPR",
+          "summary": "A Zâmbia participou no workshop regional sobre a PPR, que acordou medidas coordenadas de vigilância e preparação e destacou formas de manter o estatuto livre da doença."
+        },
+        "sw": {
+          "title": "Zambia yashiriki hatua za kikanda kuimarisha ufuatiliaji na maandalizi dhidi ya PPR",
+          "summary": "Zambia ilishiriki warsha ya kikanda kuhusu PPR iliyokubaliana hatua za pamoja za ufuatiliaji na maandalizi na kusisitiza njia za kudumisha hali ya kutokuwa na ugonjwa huo."
+        }
+      }
     },
     {
       "country_code": "SN",
@@ -351,7 +387,25 @@
       "source_tier": 1,
       "published": "2026-09-21",
       "verified": "2026-10-08",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO renforce le mécanisme climat et environnement en Afrique de l’Ouest pour mieux soutenir les pays",
+          "summary": "Le mécanisme Climat et Environnement de la FAO pour l’Afrique de l’Ouest s’est réuni à Dakar afin de renforcer l’appui aux pays et de faire progresser des systèmes agroalimentaires résilients au climat."
+        },
+        "ar": {
+          "title": "الفاو تعزز آلية المناخ والبيئة في غرب أفريقيا لتحسين دعم البلدان",
+          "summary": "اجتمعت آلية المناخ والبيئة التابعة للفاو في غرب أفريقيا في داكار لتعزيز الدعم المقدم للبلدان ودفع نظم زراعية وغذائية قادرة على الصمود أمام تغير المناخ."
+        },
+        "pt": {
+          "title": "FAO reforça o mecanismo de clima e ambiente na África Ocidental para apoiar melhor os países",
+          "summary": "O mecanismo de Clima e Ambiente da FAO para a África Ocidental reuniu-se em Dakar para reforçar o apoio aos países e promover sistemas agroalimentares resilientes às alterações climáticas."
+        },
+        "sw": {
+          "title": "FAO yaimarisha mfumo wa tabianchi na mazingira Afrika Magharibi ili kusaidia nchi vyema",
+          "summary": "Mfumo wa Tabianchi na Mazingira wa FAO kwa Afrika Magharibi ulikutana Dakar kuimarisha msaada kwa nchi na kuendeleza mifumo ya kilimo na chakula inayostahimili mabadiliko ya tabianchi."
+        }
+      }
     },
     {
       "country_code": "SO",
