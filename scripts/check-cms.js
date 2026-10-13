@@ -211,6 +211,11 @@ if (!freshnessMonitor.includes("newsCountryCoverage=newsCountryList.map") || !fr
   throw new Error("Country news coverage must include supplemental/expansion records and count unique stories per country.");
 }
 const mergeScript = read("scripts/merge-agricultural-intelligence.js");
+if (!mergeScript.includes("title: record.headline || record.name ||") ||
+    !mergeScript.includes("country[listField].push(candidate)") ||
+    !mergeScript.includes("country.records[category].push(candidate)")) {
+  throw new Error("Agricultural intelligence merge must normalize headline-only records before public rendering.");
+}
 if (!mergeScript.includes("resourceGapFiles") || !mergeScript.includes("agriculturalResourcesSupplement.json") ||
     !freshnessMonitor.includes("resourceGapFiles") || !freshnessMonitor.includes("allResourceRecords")) {
   throw new Error("Country resource-gap files must be included in the site build merge and agricultural data audit.");
