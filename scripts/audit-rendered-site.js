@@ -322,14 +322,14 @@ if (searchHtml) {
         ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle);
       return reviewOnly && record.title && !publicKeys.has(sourceKey(record));
     }).map(sourceKey));
-    for (const match of sourceBlock.matchAll(/<article\\b([^>]*)>/gi)) {
+    for (const match of sourceBlock.matchAll(/<article\b([^>]*)>/gi)) {
       const attrs = match[1];
-      if (!/\\bdata-type=["']Resource["']/i.test(attrs)) continue;
-      const codeMatch = attrs.match(/\\bdata-country-code=["']([^"']*)["']/i);
-      const urlMatch = attrs.match(/\\bdata-url=["']([^"']*)["']/i);
+      if (!/\bdata-type=["']Resource["']/i.test(attrs)) continue;
+      const codeMatch = attrs.match(/\bdata-country-code=["']([^"']*)["']/i);
+      const urlMatch = attrs.match(/\bdata-url=["']([^"']*)["']/i);
       const key = String(codeMatch ? codeMatch[1] : "").toUpperCase() + "|" + normalizedSourceHref(urlMatch ? urlMatch[1] : "");
       if (reviewKeys.has(key)) {
-        const titleMatch = attrs.match(/\\bdata-title=["']([^"']*)["']/i);
+        const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
         failures.push("search/index.html: review-only resource leaked into public search: " + (titleMatch ? titleMatch[1] : "(untitled)") + " (" + key + ")");
       }
     }
