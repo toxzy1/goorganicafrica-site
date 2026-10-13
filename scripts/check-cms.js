@@ -207,7 +207,7 @@ const freshnessMonitor = read("scripts/monitor-agricultural-data.js");
 if (!freshnessMonitor.includes("sourceUrlAudit") || !freshnessMonitor.includes("generic_landing_page_records") || !freshnessMonitor.includes("duplicate_url_groups") || !freshnessMonitor.includes("news-keywords\\/agriculture") || !freshnessMonitor.includes("news_country_coverage") || !freshnessMonitor.includes("zero_story_countries") || !freshnessMonitor.includes("under_four_story_countries") || !freshnessMonitor.includes("future_publication_dates") || !freshnessMonitor.includes("source_count") || !freshnessMonitor.includes("single_source_countries") || !freshnessMonitor.includes("under_three_sources_countries")) {
   throw new Error("Agricultural data monitor must flag duplicate source URLs and nested generic landing pages for editorial review.");
 }
-if (!freshnessMonitor.includes("newsCountryCoverage=newsCountryList.map") || !freshnessMonitor.includes("newsCountryExpansion.json") && !freshnessMonitor.includes("agriculturalNewsExpansion.json") || !freshnessMonitor.includes("new Set(publishableNews.filter")) {
+if (!freshnessMonitor.includes("newsCountryCoverage=newsCountryList.map") || !freshnessMonitor.includes("newsCountryExpansion.json") && !freshnessMonitor.includes("agriculturalNewsExpansion.json") || !freshnessMonitor.includes("const countryRecords=publishableNews.filter") || !freshnessMonitor.includes("source_count:sources.size")) {
   throw new Error("Country news coverage must include supplemental/expansion records and count unique stories per country.");
 }
 const mergeScript = read("scripts/merge-agricultural-intelligence.js");
