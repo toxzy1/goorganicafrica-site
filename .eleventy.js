@@ -1,5 +1,12 @@
 const { DateTime } = require("luxon");
 
+const isPublishableAgriculturalRecord = record => {
+  const status = String(record?.status || "").toLowerCase();
+  const lifecycle = String(record?.lifecycle || "").toLowerCase();
+  return !["review", "needs_review", "draft", "rejected"].includes(status) &&
+    !["review", "needs_review", "draft", "rejected"].includes(lifecycle);
+};
+
 module.exports = function (eleventyConfig) {
 
   // Agricultural opportunities: unified current/expired lifecycle registry.
@@ -10,8 +17,9 @@ module.exports = function (eleventyConfig) {
     const now = new Date("2026-10-08T00:00:00Z");
     data.records = (data.records || []).map(record => {
       const deadline = record.deadline ? new Date(record.deadline + "T23:59:59Z") : null;
+      const review = !isPublishableAgriculturalRecord(record);
       const expired = String(record.status || "").toLowerCase() === "expired" || (deadline && !Number.isNaN(deadline.getTime()) && deadline < now);
-      return { ...record, lifecycle: expired ? "expired" : "current", is_current: !expired, is_expired: expired };
+      return { ...record, lifecycle: review ? "needs_review" : (expired ? "expired" : "current"), is_current: !review && !expired, is_expired: !review && !!expired };
     });
     data.records.sort((a,b) => Number(b.is_current) - Number(a.is_current) || String(a.deadline || "9999").localeCompare(String(b.deadline || "9999")));
     data.market_signals = data.records.filter(r => r.market_signal === "strong_move" || r.market_signal === "notable_move").map(r => ({
@@ -103,12 +111,11 @@ module.exports = function (eleventyConfig) {
     const path = require("path");
     const dataDir = path.join(process.cwd(), "src/_data");
     const read = name => JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8"));
-    const opp = read("agriculturalOpportunities.json").records || [];
-    const markets = read("agriculturalMarkets.json").records || [];
-    const services = read("agriculturalServices.json").records || [];
-    const news = read("agriculturalNewsExpansion.json").records || [];
+    const opp = (read("agriculturalOpportunities.json").records || []).filter(isPublishableAgriculturalRecord);
+    const markets = (read("agriculturalMarkets.json").records || []).filter(isPublishableAgriculturalRecord);
+    const services = (read("agriculturalServices.json").records || []).filter(isPublishableAgriculturalRecord);
+    const news = (read("agriculturalNews.json").countries || []).flatMap(c => (c.articles || []).filter(isPublishableAgriculturalRecord).map(a => ({...a,country_code:c.code,country:c.name})));
     const resourcesPrimary = read("agriculturalResources.json").countries || [];
-    const resourcesSupplement = read("agriculturalResourcesSupplement.json").records || [];
     const countries = new Map();
     const ensure = (code, name) => {
       if (!code) return null;
@@ -128,7 +135,7 @@ module.exports = function (eleventyConfig) {
       const text = Object.values(country.records || {}).flat().map(r => [r.title, r.description, r.type, ...(r.tags || [])].join(" ")).join(" ");
       if (text) add(country.code, country.name || country.country, "resources", text);
     }
-    for (const r of resourcesSupplement) add(r.country_code, r.country, "resources", [r.title, r.description, r.type, ...(r.tags || [])].join(" "));
+    
     const records = [...countries.values()].map(c => ({
       code: c.code, country: c.country,
       sections: c.sections,
@@ -143,22 +150,20 @@ module.exports = function (eleventyConfig) {
     const read = n => JSON.parse(fs.readFileSync(path.join(dir,n), "utf8"));
     const countries = read("calculatorCountries.json").list || [];
     const markets = read("agriculturalMarkets.json").records || [];
-    const opportunities = read("agriculturalOpportunities.json").records || [];
-    const services = read("agriculturalServices.json").records || [];
+    const opportunities = (read("agriculturalOpportunities.json").records || []).filter(isPublishableAgriculturalRecord);
+    const services = (read("agriculturalServices.json").records || []).filter(isPublishableAgriculturalRecord);
     const news = [];
     const primaryNews = read("agriculturalNews.json").countries || [];
-    primaryNews.forEach(c => (c.articles||[]).forEach(a => news.push({...a,country_code:c.code,country:c.name})));
-    news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]));
+    primaryNews.forEach(c => (c.articles||[]).filter(isPublishableAgriculturalRecord).forEach(a => news.push({...a,country_code:c.code,country:c.name})));
     const resources = [];
-    (read("agriculturalResources.json").countries||[]).forEach(c => Object.values(c.records||{}).flat().forEach(r=>resources.push({...r,country_code:c.code,country:c.name})));
-    resources.push(...(read("agriculturalResourcesSupplement.json").records||[]));
+    (read("agriculturalResources.json").countries||[]).forEach(c => Object.values(c.records||{}).flat().filter(isPublishableAgriculturalRecord).forEach(r=>resources.push({...r,country_code:c.code,country:c.name})));
     const records=[];
     const add=(section,r,code,country,title,text,url,date,tier,status)=>{
       if(code && title) records.push({section,country_code:code,country:country||code,title,text:String(text||""),url:url||"",date:date||"",tier:tier||5,status:status||"official"});
     };
-    markets.forEach(r=>add("markets",r,r.country_code,r.country,r.commodity||r.market||"Market information",[r.market,r.commodity,r.note].join(" "),r.source_url,r.observed_date||r.verified,r.source_tier,r.status));
+    markets.filter(isPublishableAgriculturalRecord).forEach(r=>add("markets",r,r.country_code,r.country,r.commodity||r.market||"Market information",[r.market,r.commodity,r.note].join(" "),r.source_url,r.observed_date||r.verified,r.source_tier,r.status));
     opportunities.forEach(r=>add("opportunities",r,r.country_code||r.code,r.country,r.title,[r.summary,r.type,r.category,r.target_audience,r.eligibility,(r.tags||[]).join(" ")].join(" "),r.application_url||r.source_url||r.url,r.verified||r.verified_date,r.source_tier,r.status));
-    services.forEach(r=>add("services",r,r.country_code,r.country,r.title,[r.summary,r.category,r.type,(r.services||[]).join(" "),(r.tags||[]).join(" ")].join(" "),r.url,r.verified,r.source_tier,r.status));
+    services.filter(isPublishableAgriculturalRecord).forEach(r=>add("services",r,r.country_code,r.country,r.title,[r.summary,r.category,r.type,(r.services||[]).join(" "),(r.tags||[]).join(" ")].join(" "),r.url,r.verified,r.source_tier,r.status));
     news.forEach(r=>add("news",r,r.country_code,r.country,r.title,[r.summary,r.category,r.source].join(" "),r.url,r.published,r.source_tier,r.status));
     resources.forEach(r=>add("resources",r,r.country_code,r.country,r.title,[r.description,r.type,(r.tags||[]).join(" ")].join(" "),r.url,r.verified_date||r.verified,r.source_tier,r.status));
     const topics=["maize","rice","cassava","soybean","cocoa","coffee","cashew","tea","poultry","livestock","fish","vegetables","fruits","seeds","inputs","irrigation","mechanization","finance","climate","markets"];
@@ -203,19 +208,12 @@ module.exports = function (eleventyConfig) {
     const markets = read("agriculturalMarkets.json").records || [];
     const services = read("agriculturalServices.json").records || [];
     const news = read("agriculturalNews.json");
-    const newsSupplement = read("agriculturalNewsSupplement.json").records || [];
-    const newsExpansion = read("agriculturalNewsExpansion.json").records || [];
     const resources = read("agriculturalResources.json").countries || [];
-    const resourceSupplement = read("agriculturalResourcesSupplement.json").records || [];
-    const gapFiles = fs.readdirSync(dataDir).filter(name => /^agriculturalResourcesGap.*\.json$/.test(name));
-    const resourceGaps = gapFiles.flatMap(name => { try { return JSON.parse(fs.readFileSync(path.join(dataDir,name),"utf8")).records || []; } catch (_) { return []; } });
-    for (const r of opp) add("opportunities", r, [r.title,r.summary,r.description,r.type,r.category,...(r.tags||[]),...(r.sectors||[]),...(r.value_chains||[])].join(" "), r.country_code || r.code, r.country);
-    for (const r of markets) if (r.country_code !== "ALL") add("markets", r, [r.commodity,r.market,r.note,r.price_type].join(" "), r.country_code, r.country);
-    for (const r of services) add("services", r, [r.title,r.summary,r.type,r.category,r.provider,...(r.services||[]),...(r.tags||[])].join(" "), r.country_code, r.country);
-    for (const c of (news.countries || [])) for (const r of (c.articles || [])) add("news", r, [r.title,r.summary,r.category].join(" "), c.code, c.name || c.country);
-    for (const r of [...newsSupplement,...newsExpansion]) add("news", r, [r.title,r.summary,r.category].join(" "), r.country_code, r.country);
-    for (const c of resources) for (const list of Object.values(c.records || {})) for (const r of (list || [])) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), c.code, c.name || c.country);
-    for (const r of [...resourceSupplement,...resourceGaps]) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), r.country_code, r.country);
+    for (const r of opp) if (isPublishableAgriculturalRecord(r)) add("opportunities", r, [r.title,r.summary,r.description,r.type,r.category,...(r.tags||[]),...(r.sectors||[]),...(r.value_chains||[])].join(" "), r.country_code || r.code, r.country);
+    for (const r of markets) if (r.country_code !== "ALL" && isPublishableAgriculturalRecord(r)) add("markets", r, [r.commodity,r.market,r.note,r.price_type].join(" "), r.country_code, r.country);
+    for (const r of services) if (isPublishableAgriculturalRecord(r)) add("services", r, [r.title,r.summary,r.type,r.category,r.provider,...(r.services||[]),...(r.tags||[])].join(" "), r.country_code, r.country);
+    for (const c of (news.countries || [])) for (const r of (c.articles || [])) if (isPublishableAgriculturalRecord(r)) add("news", r, [r.title,r.summary,r.category].join(" "), c.code, c.name || c.country);
+    for (const c of resources) for (const list of Object.values(c.records || {})) for (const r of (list || [])) if (isPublishableAgriculturalRecord(r)) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), c.code, c.name || c.country);
     const result = topics.map(topic => {
       const matched = items.filter(item => topic.aliases.some(alias => item.text.includes(alias.toLowerCase())));
       const bySection = {};
