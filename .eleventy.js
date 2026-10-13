@@ -20,6 +20,18 @@ const dedupeAgriculturalRecords = records => {
   });
 };
 
+const isSpecificAgriculturalNewsUrl = value => {
+  try {
+    const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
+    return !(pathname === "/" ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
+      /^\/en$/i.test(pathname) ||
+      /\/newsdetails(?:\/en)?$/i.test(pathname));
+  } catch {
+    return false;
+  }
+};
+
 const collectPublishableNews = read => {
   const primary = (read("agriculturalNews.json").countries || []).flatMap(country =>
     (country.articles || []).map(article => ({
@@ -34,9 +46,14 @@ const collectPublishableNews = read => {
   ].map(article => ({
     ...article,
     country_code: article.country_code || article.code,
-    country: article.country || article.country_name
+    country: article.country || article.country_name,
+    title: article.title || article.headline || ""
   }));
-  return dedupeAgriculturalRecords([...primary, ...incoming].filter(isPublishableAgriculturalRecord));
+  return dedupeAgriculturalRecords(
+    [...primary, ...incoming]
+      .filter(isPublishableAgriculturalRecord)
+      .filter(article => article.title && isSpecificAgriculturalNewsUrl(article.url))
+  );
 };
 
 const collectPublishableResources = read => {
@@ -353,33 +370,22 @@ module.exports = function (eleventyConfig) {
       // The primary country feeds can contain repeated URLs under slightly
       // different headlines. Keep one public card per country/source URL.
       articles: dedupeAgriculturalRecords(
-        (c.articles || []).filter(isPublishableAgriculturalRecord).map(article => ({
+        (c.articles || []).filter(article => isPublishableAgriculturalRecord(article) && article.title && isSpecificAgriculturalNewsUrl(article.url)).map(article => ({
           ...article,
           country_code: article.country_code || c.code
         }))
       ).map(({ country_code, ...article }) => article)
     }));
     const byCode = new Map(countries.map(c => [c.code, c]));
-    const isSpecificNewsUrl = value => {
-      try {
-        const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
-        return !(pathname === "/" ||
-          /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
-          /^\/en$/i.test(pathname) ||
-          /\/newsdetails(?:\/en)?$/i.test(pathname));
-      } catch {
-        return false;
-      }
-    };
     // Some approved supplement records use "headline" rather than "title".
     // Normalize the schema, but keep generic listing pages out of public news.
     const incoming = [...(supplement.records || []), ...(expansion.records || [])]
       .map(article => ({ ...article, title: article.title || article.headline || "" }))
-      .filter(isPublishableAgriculturalRecord);
+      .filter(article => isPublishableAgriculturalRecord(article) && article.title && isSpecificAgriculturalNewsUrl(article.url));
 
     for (const article of incoming) {
       const country = byCode.get(article.country_code);
-      if (!country || !article.title || !article.url || !isSpecificNewsUrl(article.url)) continue;
+      if (!country || !article.title || !article.url) continue;
       const duplicate = country.articles.some(existing =>
         existing.url === article.url ||
         (existing.title === article.title && existing.published === article.published)
