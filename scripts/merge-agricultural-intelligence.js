@@ -43,7 +43,12 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
     const extra = JSON.parse(fs.readFileSync(extraPath, 'utf8'));
 
     for (const record of extra.records || []) {
-      const country = countries.get(record[countryField]);
+      // Some curated feed records use "headline" rather than "title". The
+      // public templates render title, so normalize the field during merge.
+      const candidate = String(record.title || "").trim()
+        ? record
+        : {...record, title: record.headline || record.name || ""};
+      const country = countries.get(candidate[countryField]);
       if (!country) continue;
 
       let existing;
@@ -55,8 +60,8 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
         existing = country[listField];
       }
 
-      const candidateUrl = normalizeUrl(record.url);
-      const candidateTitle = normalizeTitle(record.title || record.headline);
+      const candidateUrl = normalizeUrl(candidate.url);
+      const candidateTitle = normalizeTitle(candidate.title);
       // Skip only a same-country record with both the same normalized URL
       // and title. A shared regional/project page alone is not enough to
       // declare two differently titled records duplicates.
@@ -70,11 +75,11 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
       }
 
       if (bucketed) {
-        const category = record.category || 'general';
+        const category = candidate.category || 'general';
         country.records[category] = country.records[category] || [];
-        country.records[category].push(record);
+        country.records[category].push(candidate);
       } else {
-        country[listField].push(record);
+        country[listField].push(candidate);
       }
       added++;
     }
