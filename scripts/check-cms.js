@@ -228,6 +228,13 @@ if (!eleventySource.includes("const normalizeAgriculturalUrl = value =>") ||
   throw new Error("Public agricultural deduplication must normalize URL variants without rewriting the source links.");
 }
 
+if (!eleventySource.includes("const bestByUrl = new Map()") ||
+    !eleventySource.includes("normalizeAgriculturalUrl(r.url || r.source_url)") ||
+    !eleventySource.includes("retainedRecords.has(r)") ||
+    !eleventySource.includes("suppressedResourceDuplicates")) {
+  throw new Error("The public resources directory must suppress duplicate source cards across categories within each country.");
+}
+
 if (eleventySource.includes('new Date("2026-10-08T00:00:00Z")') || !eleventySource.includes("new Date().toISOString().slice(0, 10)")) {
   throw new Error("Agricultural expiry, freshness and generated-date metadata must not be frozen to an old build date.");
 }
