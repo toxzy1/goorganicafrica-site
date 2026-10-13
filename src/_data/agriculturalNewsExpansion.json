@@ -1392,6 +1392,34 @@
       "status": "review",
       "lifecycle": "needs_review",
       "review_reason": "Direct official FAO story found; verify that its forestry/livelihood focus fits the Agricultural News category and confirm country assignment before publication."
+    },
+    {
+      "country_code": "GW",
+      "category": "markets",
+      "title": "World Bank analysis identifies nearly US$30 million in annual agrifood value-chain potential for Guinea-Bissau",
+      "summary": "A World Bank analysis says improvements in productivity, storage, processing, transport and market access could unlock nearly US$30 million a year across Guinea-Bissau’s rice and cashew value chains.",
+      "url": "https://blogs.worldbank.org/en/opendata/from-farm-to-market--the-data-behind-guinea-bissau-s-us-30-milli",
+      "source": "World Bank Blogs",
+      "source_tier": 1,
+      "published": "2026-09-01",
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Direct World Bank analysis found; verify exact article title and summary, and ensure it is not already represented by another country record before publication."
+    },
+    {
+      "country_code": "GW",
+      "category": "markets",
+      "title": "World Bank Group report examines Guinea-Bissau’s cashew-led growth and productivity challenges",
+      "summary": "The World Bank Group’s 2026 economic update notes that a strong cashew harvest and farmgate prices supported growth in 2025, while access to finance, productivity, export concentration and rural incomes remain key issues.",
+      "url": "https://www.worldbank.org/en/news/press-release/2026/06/24/world-bank-group-report-pathways-for-unlocking-productivity-led-private-sector-growth-in-guinea-bissau",
+      "source": "World Bank Group",
+      "source_tier": 1,
+      "published": "2026-06-24",
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Direct World Bank press release found; verify that the agrifood summary is appropriately scoped and not duplicative before publication."
     }
   ]
 }
