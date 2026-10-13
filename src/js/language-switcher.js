@@ -234,14 +234,10 @@
         // Blog/eBook detail pages, Agricultural News country pages, and all
         // localized section indexes before falling back to generic sections.
         var targetUrl = localizedContentUrl(requested);
-        if (!targetUrl && section) {
-          var sectionPath = section === "calculator"
-            ? "farm-profit-calculator"
-            : (section === "resources" ? "agriculture-resources" : section);
-          targetUrl = requested === "en"
-            ? "/" + (section === "home" ? "" : sectionPath + "/")
-            : "/" + requested + "/" + (section === "home" ? "" : sectionPath + "/");
-        }
+        // Do not guess a language-prefixed URL when this page has no known
+        // destination. A guessed route can 404 or send visitors to the wrong
+        // section/homepage. Explicit maps and known section routes above are
+        // the only safe navigation targets; otherwise translate in place.
         setLanguage(requested);
         // Shared pages intentionally keep the same URL. Do not reload them,
         // because a reload restores the server's default <html lang="en">.
