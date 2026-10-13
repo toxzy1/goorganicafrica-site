@@ -107,6 +107,17 @@ if (!intelligenceWorkflow.includes("pull-requests: write")) {
   throw new Error("Agricultural intelligence sync needs permission to open review pull requests.");
 }
 
+for (const [name, file] of [
+  ["news", ".github/workflows/agricultural-news.yml"],
+  ["opportunities", ".github/workflows/agricultural-opportunities.yml"],
+  ["agricultural data", ".github/workflows/ag-data-monitor.yml"]
+]) {
+  const workflowText = read(file);
+  if (!workflowText.includes("peter-evans/create-pull-request@v7") || !workflowText.includes("draft: true") || /\\bgit\\s+push\\b/.test(workflowText)) {
+    throw new Error("Scheduled " + name + " discovery must use a draft review PR and must not push directly.");
+  }
+}
+
 const cmsSettings = JSON.parse(read("src/_data/cmsSettings.json"));
 const governance = cmsSettings.content_governance || {};
 const translation = cmsSettings.translation_control || {};
