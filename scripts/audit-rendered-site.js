@@ -117,7 +117,7 @@ for (const file of htmlFiles) {
   // The site-wide selector is a shared layout contract. Catch missing or
   // duplicated selectors on every visitor-facing page, not only directory pages.
   if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
-    const selectors = selectorCount(html);
+    const selectors = (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
     if (selectors !== 1) failures.push(rel + ": expected exactly one site language selector, found " + selectors);
   }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
