@@ -5718,10 +5718,12 @@
             "source": "FAO",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-08-31"
+            "published": "2026-08-31",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ]
       }
