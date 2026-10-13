@@ -57,7 +57,8 @@ const sourceUrlAudit=(records)=>{
 const sourceQuality={
  news:sourceUrlAudit(news),
  opportunities:sourceUrlAudit(opp),
- resources:sourceUrlAudit(allResourceRecords),
+ resources:sourceUrlAudit([...resources,...resources2]),
+ resource_review_queue:sourceUrlAudit(resourceGapRecords),
  markets:sourceUrlAudit(markets),
  services:sourceUrlAudit(services)
 };
