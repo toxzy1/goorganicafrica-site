@@ -86,9 +86,12 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
   return added;
 }
 
+const resourceGapFiles = fs.readdirSync(path.join(root, 'src', '_data'))
+  .filter(name => /^agriculturalResourcesGap(?:[A-Z]{2}|Batch)\.json$/.test(name))
+  .sort();
 const resources = merge(
   'agriculturalResources.json',
-  ['agriculturalResourcesSupplement.json'],
+  ['agriculturalResourcesSupplement.json', ...resourceGapFiles],
   'country_code',
   'records',
   true
