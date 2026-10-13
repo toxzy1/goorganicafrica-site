@@ -285,6 +285,40 @@ if (searchHtml) {
       }
     }
     if (unusable) failures.push("search/index.html: " + unusable + " indexed records cannot lead visitors to a usable destination");
+
+    // Review-only resource records must stay in the editorial queue, not leak
+    // into the public search index. Check both primary and supplemental data.
+    const resourceFiles = ["_data/agriculturalResources.json", "_data/agriculturalResourcesSupplement.json"];
+    const reviewTitles = new Set();
+    const flattenResourceRecords = data => {
+      if (Array.isArray(data.records)) return data.records;
+      return (data.countries || []).flatMap(country =>
+        Object.values(country.records || {}).flatMap(items => Array.isArray(items) ? items : [])
+      );
+    };
+    for (const relData of resourceFiles) {
+      const filePath = path.join(source, relData);
+      if (!fs.existsSync(filePath)) continue;
+      const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+      for (const record of flattenResourceRecords(data)) {
+        const status = String(record.status || "official").toLowerCase();
+        const lifecycle = String(record.lifecycle || "").toLowerCase();
+        if (["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(status) ||
+            ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle)) {
+          if (record.title) reviewTitles.add(String(record.title));
+        }
+      }
+    }
+    const escapeAttr = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    for (const match of sourceBlock.matchAll(/<article\\b([^>]*)>/gi)) {
+      const attrs = match[1];
+      if (!/\\bdata-type=["']Resource["']/i.test(attrs)) continue;
+      const titleMatch = attrs.match(/\\bdata-title=["']([^"']*)["']/i);
+      const title = titleMatch ? titleMatch[1] : "";
+      if (reviewTitles.has(title) || [...reviewTitles].some(t => escapeAttr(t) === title)) {
+        failures.push("search/index.html: review-only resource leaked into public search: " + title);
+      }
+    }
   }
 }
 
