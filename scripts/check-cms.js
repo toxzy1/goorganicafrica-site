@@ -195,6 +195,11 @@ if (!agriculturalDataWorkflow.includes("peter-evans/create-pull-request@v7") || 
   throw new Error("Agricultural data candidates must go through a draft review PR and never push directly to the production branch.");
 }
 
+const eleventySource = read(".eleventy.js");
+if (!eleventySource.includes("const collectPublishableNews") || !eleventySource.includes("const collectPublishableResources") || !eleventySource.includes("articles: [...(c.articles || [])].filter(isPublishableAgriculturalRecord)") || !eleventySource.includes("const incoming = [...(supplement.records || []), ...(expansion.records || [])].filter(isPublishableAgriculturalRecord)") || !eleventySource.includes("const allSupplementRecords = [...(supplement.records || []), ...gapRecords.map")) {
+  throw new Error("Public agricultural search, news and resource data must merge eligible records while excluding review-queue candidates.");
+}
+
 const freshnessMonitor = read("scripts/monitor-agricultural-data.js");
 if (!freshnessMonitor.includes("sourceUrlAudit") || !freshnessMonitor.includes("generic_landing_page_records") || !freshnessMonitor.includes("duplicate_url_groups") || !freshnessMonitor.includes("news-keywords\\/agriculture") || !freshnessMonitor.includes("news_country_coverage") || !freshnessMonitor.includes("zero_story_countries")) {
   throw new Error("Agricultural data monitor must flag duplicate source URLs and nested generic landing pages for editorial review.");
