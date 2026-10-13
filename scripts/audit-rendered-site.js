@@ -13,6 +13,7 @@ function walk(dir) {
   return out;
 }
 const failures = [];
+const emptyNewsPages = [];
 const htmlFiles = walk(site).filter(f => f.endsWith(".html"));
 
 function read(rel) {
@@ -238,6 +239,9 @@ if (fs.existsSync(newsSourcePath)) {
           failures.push(rel + ": incorrect or missing language target for " + targetLang);
         }
       }
+      const storyCards = (html.match(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["']/gi) || []).length;
+      if (storyCards === 0) emptyNewsPages.push({ lang, country: country.name || country.code, rel });
+
     }
   }
 }
@@ -246,5 +250,9 @@ if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
   process.exit(1);
+}
+if (emptyNewsPages.length) {
+  console.warn("Rendered agricultural-news coverage warning: " + emptyNewsPages.length + " country-language pages have no current verified story cards.");
+  console.warn(emptyNewsPages.slice(0, 30).map(x => x.lang + ":" + x.country + " (" + x.rel + ")").join("\n"));
 }
 console.log("Rendered-site audit passed.");
