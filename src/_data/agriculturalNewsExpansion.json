@@ -997,7 +997,25 @@
       "source_tier": 2,
       "published": "2026-09-30",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "L’Eswatini conseille aux agriculteurs de semer tôt et de se préparer aux risques El Niño",
+          "summary": "Le gouvernement de l’Eswatini a conseillé aux agriculteurs de semer tôt, d’envisager des variétés tolérantes à la sécheresse, de diversifier les cultures, d’économiser l’eau et de protéger le bétail à l’approche de la saison 2026–2027 et des risques liés à El Niño."
+        },
+        "ar": {
+          "title": "إسواتيني تحث المزارعين على الزراعة المبكرة والاستعداد لمخاطر النينيو",
+          "summary": "حثت حكومة إسواتيني المزارعين على الزراعة المبكرة واختيار أصناف تتحمل الجفاف وتنويع الإنتاج وترشيد المياه وحماية الماشية مع اقتراب موسم 2026–2027 ومخاطر ظاهرة النينيو."
+        },
+        "pt": {
+          "title": "Essuatíni aconselha os agricultores a semear cedo e a preparar-se para os riscos do El Niño",
+          "summary": "O governo de Essuatíni aconselhou os agricultores a semear cedo, considerar variedades tolerantes à seca, diversificar a produção, conservar água e proteger o gado à medida que se aproxima a época de 2026–2027 e aumentam os riscos associados ao El Niño."
+        },
+        "sw": {
+          "title": "Eswatini yawashauri wakulima kupanda mapema na kujiandaa kwa hatari za El Niño",
+          "summary": "Serikali ya Eswatini iliwashauri wakulima kupanda mapema, kuzingatia aina za mazao zinazostahimili ukame, kutofautisha uzalishaji, kuhifadhi maji na kulinda mifugo msimu wa 2026–2027 unapokaribia kukiwa na hatari za El Niño."
+        }
+      }
     },
     {
       "country_code": "SZ",
