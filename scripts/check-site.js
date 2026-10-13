@@ -101,8 +101,8 @@ const searchPage = read('src/search.njk');
 if (!searchPage.includes('data-i18n="search.title"') || !searchPage.includes('goa:languagechange') || !searchPage.includes("tr('noResults')")) {
   throw new Error('Global search must translate its interface and update dynamic messages when language changes.');
 }
-if (!searchPage.includes('r.status == "official"') || !searchPage.includes('r.lifecycle == "current"') || !searchPage.includes('r.status == "open" or r.status == "active"') || !searchPage.includes('r.is_current')) {
-  throw new Error('Global search must exclude historical news and expired opportunities.');
+if (!searchPage.includes('r.status == "official"') || !searchPage.includes('(not r.lifecycle or r.lifecycle == "current")') || !searchPage.includes('r.status == "open" or r.status == "active"') || searchPage.includes('r.is_current')) {
+  throw new Error('Global search must include publishable news with no explicit lifecycle and open/current opportunities without relying on absent fields.');
 }
 const eleventyConfig = read('.eleventy.js');
 if (!eleventyConfig.includes('articles: dedupeAgriculturalRecords(') || !eleventyConfig.includes('country_code: article.country_code || c.code')) {
