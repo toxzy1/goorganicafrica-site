@@ -59,7 +59,7 @@ language: en
     {% for country in agriculturalResourcesAll.countries %}
       {% for category in agriculturalResourcesAll.categories %}
         {% for r in country.records[category] %}
-          <article data-type="Resource" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ category }} · {{ r.source or '' }}" data-url="{{ r.url or r.source_url or '' }}"></article>
+          <article data-type="Resource" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ category }} · {{ r.source or '' }}" data-url="{{ r.url or r.source_url or '/agriculture-resources/' }}"></article>
         {% endfor %}
       {% endfor %}
     {% endfor %}
@@ -71,15 +71,15 @@ language: en
       {% endfor %}
     {% endfor %}
     {% for r in agriculturalOpportunities.records %}
-      {% if (r.status == "open" or r.status == "active") and (not r.lifecycle or r.lifecycle == "current") and (r.application_url or r.source_url or r.url) %}
-        <article data-type="Opportunity" data-title="{{ r.title }}" data-summary="{{ r.summary or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.type or r.category or '' }} · {{ r.provider or r.source or '' }}" data-url="{{ r.application_url or r.source_url or r.url }}"></article>
+      {% if (r.status == "open" or r.status == "active") and (not r.lifecycle or r.lifecycle == "current") %}
+        <article data-type="Opportunity" data-title="{{ r.title }}" data-summary="{{ r.summary or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.type or r.category or '' }} · {{ r.provider or r.source or '' }}" data-url="{{ r.application_url or r.source_url or r.url or '/opportunities/' }}"></article>
       {% endif %}
     {% endfor %}
     {% for r in agriculturalMarkets.records %}
-      <article data-type="Market" data-title="{{ r.commodity or 'Market information' }}{% if r.market %} — {{ r.market }}{% endif %}" data-summary="{{ r.note or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.price_type or '' }}{% if r.observed_date %} · {{ r.observed_date }}{% endif %}" data-url="{{ r.source_url or r.url or '' }}"></article>
+      <article data-type="Market" data-title="{{ r.commodity or 'Market information' }}{% if r.market %} — {{ r.market }}{% endif %}" data-summary="{{ r.note or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.price_type or '' }}{% if r.observed_date %} · {{ r.observed_date }}{% endif %}" data-url="{{ r.source_url or r.url or '/markets/' }}"></article>
     {% endfor %}
     {% for r in agriculturalServices.records %}
-      <article data-type="Service" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.provider or '' }}" data-url="{{ r.url or '' }}"></article>
+      <article data-type="Service" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.provider or '' }}" data-url="{{ r.url or '/agricultural-services/' }}"></article>
     {% endfor %}
     {% for item in collections.ebooks %}
       {% if item.data.active !== false and (item.data.translation_status or 'published') !== 'in_review' %}
