@@ -219,7 +219,7 @@ if (!mergeScript.includes("title: record.headline || record.name ||") ||
 if (mergeScript.includes("resourceGapFiles") || !mergeScript.includes("agriculturalResourcesSupplement.json") ||
     !freshnessMonitor.includes("resourceGapFiles") ||
     !freshnessMonitor.includes('resource_review_queue:sourceUrlAudit(resourceQueue,true,"resources")') ||
-    !eleventySource.includes('gapRecords.map(record => ({ ...record, lifecycle: record.lifecycle || "needs_review" }))')) {
+    !eleventySource.includes('gapRecords.map(r => ({ ...r, lifecycle: r.lifecycle || "needs_review" }))')) {
   throw new Error("Country resource-gap candidates must remain in the review queue and must not be merged directly into public data.");
 }
 
