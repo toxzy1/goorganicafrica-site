@@ -3037,9 +3037,27 @@
           "published": "2026-09-01",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "review",
-          "lifecycle": "needs_review",
-          "review_reason": "Direct FAO article URL supplied. Keep in review until the country assignment, publication date and translations are checked."
+          "status": "official",
+          "lifecycle": "current",
+          "translations": {
+            "fr": {
+              "title": "Un forage soutenu par la FAO améliore l’accès à l’eau dans une communauté gambienne",
+              "summary": "Un forage soutenu par la FAO à Ngunta facilite l’accès à l’eau et soutient les moyens de subsistance ruraux, l’agriculture et la résilience communautaire."
+            },
+            "ar": {
+              "title": "بئر بدعم من الفاو يحسن الوصول إلى المياه في مجتمع بغامبيا",
+              "summary": "يسهم بئر تدعمه الفاو في نغونتا في تسهيل الوصول إلى المياه ودعم سبل العيش الريفية والزراعة وقدرة المجتمع على الصمود."
+            },
+            "pt": {
+              "title": "Um furo apoiado pela FAO melhora o acesso à água numa comunidade da Gâmbia",
+              "summary": "Um furo apoiado pela FAO em Ngunta está a facilitar o acesso à água e a apoiar os meios de subsistência rurais, a agricultura e a resiliência comunitária."
+            },
+            "sw": {
+              "title": "Kisima kinachoungwa mkono na FAO chaboresha upatikanaji wa maji katika jamii ya Gambia",
+              "summary": "Kisima kinachoungwa mkono na FAO huko Ngunta kinaboresha upatikanaji wa maji na kusaidia maisha ya vijijini, kilimo na ustahimilivu wa jamii."
+            }
+          },
+          "coverage_scope": "country"
         },
         {
           "category": "crops",
@@ -3052,27 +3070,27 @@
           "published": "2026-09-02",
           "verified": "2026-10-13",
           "review_after": "2026-11-12",
-          "status": "review",
-          "lifecycle": "needs_review",
-          "review_reason": "Direct FAO country article reviewed on 2026-10-13. Keep unpublished until the date, country assignment and translations receive editorial approval.",
+          "status": "official",
+          "lifecycle": "current",
           "translations": {
             "fr": {
-              "title": "Une formation FAO-Chine renforce les capacités de contrôle et de stockage des semences en Gambie",
-              "summary": "Une formation de deux jours du projet de coopération FAO-Chine-Gambie a renforcé les compétences pratiques en contrôle et stockage des semences chez les techniciens agricoles et les agriculteurs relais, afin de soutenir la production de riz et de mil."
+              "title": "Une formation FAO-Chine renforce les tests de qualité et le stockage des semences en Gambie",
+              "summary": "Une formation de deux jours dans le cadre du projet FAO-Chine–Gambie a renforcé les compétences pratiques en analyse et stockage des semences chez les techniciens agricoles et les agriculteurs leaders, pour soutenir une meilleure production de riz et de mil."
             },
             "ar": {
-              "title": "تدريب بين الفاو والصين يعزز قدرات اختبار البذور وتخزينها في غامبيا",
-              "summary": "عزز تدريب لمدة يومين ضمن مشروع التعاون بين الفاو والصين وغامبيا المهارات العملية لفحص البذور وتخزينها لدى الفنيين الزراعيين والمزارعين الرواد، دعماً لتحسين إنتاج الأرز والدخن."
+              "title": "تدريب مشترك بين الفاو والصين يعزز اختبار جودة البذور وقدرات تخزينها في غامبيا",
+              "summary": "عزز تدريب لمدة يومين ضمن مشروع الفاو والصين وغامبيا المهارات العملية لفحص البذور وتخزينها لدى الفنيين الزراعيين والمزارعين الرواد، دعماً لتحسين إنتاج الأرز والدخن."
             },
             "pt": {
-              "title": "Formação FAO-China reforça a capacidade de testar e armazenar sementes na Gâmbia",
-              "summary": "Uma formação de dois dias do projeto de cooperação FAO-China-Gâmbia reforçou competências práticas de teste e armazenamento de sementes entre técnicos agrícolas e agricultores líderes, apoiando a melhoria da produção de arroz e painço."
+              "title": "Formação FAO-China reforça os testes de qualidade e a capacidade de armazenamento de sementes na Gâmbia",
+              "summary": "Uma formação de dois dias no âmbito do projeto FAO-China–Gâmbia reforçou as competências práticas de técnicos agrícolas e agricultores líderes em testes e armazenamento de sementes, apoiando uma melhor produção de arroz e milhete."
             },
             "sw": {
-              "title": "Mafunzo ya FAO-China yaimarisha uwezo wa kupima na kuhifadhi mbegu nchini Gambia",
-              "summary": "Mafunzo ya siku mbili ya mradi wa ushirikiano wa FAO-China-Gambia yaliimarisha ujuzi wa vitendo wa kupima na kuhifadhi mbegu kwa mafundi wa kilimo na wakulima vinara, yakisaidia kuboresha uzalishaji wa mpunga na mtama."
+              "title": "Mafunzo ya FAO na China yaimarisha upimaji wa ubora wa mbegu na uwezo wa kuzihifadhi nchini Gambia",
+              "summary": "Mafunzo ya siku mbili chini ya mradi wa FAO-China–Gambia yaliimarisha ujuzi wa vitendo wa kupima na kuhifadhi mbegu kwa mafundi wa kilimo na wakulima viongozi, kusaidia uzalishaji bora wa mpunga na ulezi."
             }
-          }
+          },
+          "coverage_scope": "country"
         },
         {
           "category": "finance",
@@ -3843,23 +3861,22 @@
           "summary": "A high-level roundtable convened by Morocco’s agriculture and water ministries with FAO examined stronger policy coordination, transparent data and sustainable water management to protect food production under growing water stress.",
           "url": "https://www.fao.org/maroc/news/detail/morocco-seeks-stronger-water-agriculture-coordination-amid-growing-scarcity/en",
           "published": "2026-06-15",
-          "review_reason": "Direct FAO Morocco article checked on 2026-10-13. Keep in review until country relevance, date and translations are approved.",
           "translations": {
             "fr": {
-              "title": "Le Maroc cherche à renforcer la coordination entre l’eau et l’agriculture face à la pénurie",
-              "summary": "Une table ronde de haut niveau réunissant les ministères marocains de l’Agriculture et de l’Eau avec la FAO a examiné une meilleure coordination des politiques, la transparence des données et une gestion durable de l’eau pour protéger la production alimentaire face au stress hydrique."
+              "title": "Le Maroc cherche à renforcer la coordination entre l’eau et l’agriculture face à la pénurie croissante",
+              "summary": "Une table ronde de haut niveau réunissant les ministères marocains de l’Agriculture et de l’Eau avec la FAO a examiné la coordination des politiques, la transparence des données et la gestion durable de l’eau pour protéger la production alimentaire face au stress hydrique croissant."
             },
             "ar": {
-              "title": "المغرب يسعى إلى تعزيز التنسيق بين المياه والزراعة في ظل تزايد الندرة",
-              "summary": "ناقشت مائدة مستديرة رفيعة المستوى نظمتها وزارتا الزراعة والمياه في المغرب بالتعاون مع الفاو تعزيز تنسيق السياسات وشفافية البيانات والإدارة المستدامة للمياه لحماية إنتاج الغذاء في ظل تزايد الإجهاد المائي."
+              "title": "المغرب يسعى إلى تعزيز التنسيق بين قطاعي المياه والزراعة في ظل تزايد الشح",
+              "summary": "بحثت مائدة مستديرة رفيعة المستوى جمعت وزارتي الزراعة والمياه في المغرب والفاو تنسيق السياسات وشفافية البيانات والإدارة المستدامة للمياه لحماية إنتاج الغذاء مع تزايد الإجهاد المائي."
             },
             "pt": {
-              "title": "Marrocos procura reforçar a coordenação entre água e agricultura perante a escassez",
-              "summary": "Uma mesa-redonda de alto nível organizada pelos ministérios marroquinos da Agricultura e da Água com a FAO analisou uma melhor coordenação política, transparência dos dados e gestão sustentável da água para proteger a produção alimentar perante a crescente pressão hídrica."
+              "title": "Marrocos procura reforçar a coordenação entre água e agricultura perante a crescente escassez",
+              "summary": "Uma mesa-redonda de alto nível convocada pelos ministérios marroquinos da Agricultura e da Água com a FAO analisou a coordenação de políticas, a transparência dos dados e a gestão sustentável da água para proteger a produção alimentar perante o crescente stress hídrico."
             },
             "sw": {
-              "title": "Moroko inatafuta kuimarisha uratibu kati ya maji na kilimo kutokana na uhaba",
-              "summary": "Mkutano wa ngazi ya juu ulioandaliwa na wizara za kilimo na maji za Moroko pamoja na FAO ulijadili uratibu bora wa sera, uwazi wa data na usimamizi endelevu wa maji ili kulinda uzalishaji wa chakula wakati wa kuongezeka kwa uhaba wa maji."
+              "title": "Morocco yatafuta kuimarisha uratibu kati ya maji na kilimo huku uhaba ukiongezeka",
+              "summary": "Mkutano wa ngazi ya juu ulioitishwa na wizara za kilimo na maji za Morocco pamoja na FAO ulijadili uratibu wa sera, uwazi wa data na usimamizi endelevu wa maji ili kulinda uzalishaji wa chakula huku uhaba wa maji ukiongezeka."
             }
           },
           "source": "FAO",
@@ -3867,8 +3884,9 @@
           "source_tier": 1,
           "verified": "2026-10-13",
           "review_after": "2026-11-12",
-          "status": "review",
-          "lifecycle": "needs_review"
+          "status": "official",
+          "lifecycle": "current",
+          "coverage_scope": "country"
         }
       ],
       "localizedNames": {
