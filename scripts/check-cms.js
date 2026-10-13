@@ -278,8 +278,9 @@ if (!freshnessMonitor.includes('publishableNews=news.filter(isCurrentNewsRecord)
     !freshnessMonitor.includes('["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle)') ||
     !freshnessMonitor.includes("country_specific_story_count") ||
     !freshnessMonitor.includes("regional_story_count") ||
-    !freshnessMonitor.includes("under_four_country_specific_story_countries")) {
-  throw new Error("Country news coverage must distinguish regional stories from country-specific coverage and exclude unpublished, historical, expired, and generic-source records.");
+    !freshnessMonitor.includes("under_four_country_specific_story_countries") ||
+    !freshnessMonitor.includes("review_candidates_by_country")) {
+  throw new Error("Country news coverage must distinguish regional stories, report review candidates by country, and exclude unpublished, historical, expired, and generic-source records.");
 }
 
 // Generic landing pages may be useful for research, but must never be presented
