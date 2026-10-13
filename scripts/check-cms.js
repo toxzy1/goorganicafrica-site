@@ -202,6 +202,12 @@ if (!freshnessMonitor.includes("sourceUrlAudit") || !freshnessMonitor.includes("
 if (!freshnessMonitor.includes("newsCountryCoverage=newsCountryList.map") || !freshnessMonitor.includes("newsCountryExpansion.json") && !freshnessMonitor.includes("agriculturalNewsExpansion.json") || !freshnessMonitor.includes("new Set(publishableNews.filter") {
   throw new Error("Country news coverage must include supplemental/expansion records and count unique stories per country.");
 }
+const mergeScript = read("scripts/merge-agricultural-intelligence.js");
+if (!mergeScript.includes("resourceGapFiles") || !mergeScript.includes("agriculturalResourcesSupplement.json") ||
+    !freshnessMonitor.includes("resourceGapFiles") || !freshnessMonitor.includes("allResourceRecords")) {
+  throw new Error("Country resource-gap files must be included in the site build merge and agricultural data audit.");
+}
+
 if (!freshnessMonitor.includes("missing_verification_date") || !freshnessMonitor.includes("!r.verified||age(r.verified)===null||age(r.verified)>14") || !freshnessMonitor.includes("return !d||age(d)===null||age(d)>180")) {
   throw new Error("Agricultural freshness monitor must flag missing verification dates, not treat them as fresh.");
 }
