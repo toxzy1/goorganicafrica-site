@@ -53,7 +53,7 @@ const collectPublishableResources = read => {
   const dataDir = path.join(process.cwd(), "src/_data");
   // Gap files are an editorial queue: they remain hidden until a reviewer
   // explicitly approves them in a published registry.
-  const gapFiles = fs.readdirSync(dataDir).filter(name => /^agriculturalResourcesGap.*\\.json$/.test(name));
+  const gapFiles = fs.readdirSync(dataDir).filter(name => /^agriculturalResourcesGap.*\.json$/.test(name));
   const queued = gapFiles.flatMap(name => {
     try {
       return (JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8")).records || [])
