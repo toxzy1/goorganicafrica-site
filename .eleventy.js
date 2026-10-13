@@ -44,7 +44,7 @@ const isGenericAgriculturalResourceUrl = value => {
     // These query-addressed CMS pages are direct records, not generic homepages.
     if (pathname === "/" && parsed.searchParams.has("page_id")) return false;
     return pathname === "/" ||
-      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname) || /\/newsdetails(?:\/en)?$/i.test(pathname) || /\/news\/detail(?:\/en)?$/i.test(pathname) ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname) || /\/newsdetails(?:\/en)?$/i.test(pathname) || /\/news\/detail(?:\/en)?$/i.test(pathname) ||
       /^\/en$/i.test(pathname) ||
       /\/newsdetails(?:\/en)?$/i.test(pathname) ||
       /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname);
