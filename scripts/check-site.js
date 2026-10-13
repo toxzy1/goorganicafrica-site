@@ -100,6 +100,10 @@ if (!searchPage.includes('data-i18n="search.title"') || !searchPage.includes('go
 if (!searchPage.includes('r.status == "official"') || !searchPage.includes('r.status == "open" or r.status == "active"') || !searchPage.includes('r.lifecycle != "needs_review"')) {
   throw new Error('Global search must exclude unreviewed news and inactive or unreviewed opportunities.');
 }
+const eleventyConfig = read('.eleventy.js');
+if (!eleventyConfig.includes('articles: dedupeAgriculturalRecords(') || !eleventyConfig.includes('country_code: article.country_code || c.code')) {
+  throw new Error('Public country news must deduplicate repeated source URLs within each country.');
+}
 if (!decisionPage.includes('data-i18n="decisionCentre.title"') || !decisionUi.includes('data-i18n="decisionCentre.buildTitle"') || !decisionUi.includes('tr("noMatch")')) {
   throw new Error('Farmer Decision Centre must translate its interface and dynamic empty states.');
 }
