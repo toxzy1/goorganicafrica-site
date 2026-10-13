@@ -205,7 +205,27 @@
       "source_tier": 1,
       "published": "2026-09-01",
       "verified": "2026-10-08",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Tanzanie adopte un plan d’action pour renforcer la filière avocat",
+          "summary": "Le ministère tanzanien de l’Agriculture et la FAO ont réuni les parties prenantes à Njombe pour convenir d’actions pratiques sur le matériel végétal, la gestion des vergers, la récolte, la manutention après récolte et l’accès aux marchés afin d’accroître les revenus et les exportations d’avocats."
+        },
+        "ar": {
+          "title": "تنزانيا تتفق على خطة عمل لتعزيز سلسلة قيمة الأفوكادو",
+          "summary": "جمعت وزارة الزراعة التنزانية والفاو أصحاب المصلحة في نْجومبي للاتفاق على إجراءات عملية بشأن مواد الزراعة وإدارة البساتين والحصاد والتعامل بعد الحصاد والوصول إلى الأسواق لزيادة الدخل وصادرات الأفوكادو."
+        },
+        "pt": {
+          "title": "Tanzânia aprova plano de ação para reforçar a cadeia de valor do abacate",
+          "summary": "O Ministério da Agricultura da Tanzânia e a FAO reuniram intervenientes em Njombe para acordar ações práticas sobre material de plantação, gestão dos pomares, colheita, manuseamento pós-colheita e acesso aos mercados, visando aumentar rendimentos e exportações de abacate."
+        },
+        "sw": {
+          "title": "Tanzania yakubaliana mpango wa hatua wa kuimarisha mnyororo wa thamani wa parachichi",
+          "summary": "Wizara ya Kilimo ya Tanzania na FAO ziliwakutanisha wadau mjini Njombe kukubaliana hatua za vitendo kuhusu miche, usimamizi wa bustani, uvunaji, utunzaji baada ya mavuno na masoko ili kuongeza mapato na mauzo ya nje ya parachichi."
+        }
+      },
+      "lifecycle": "current",
+      "coverage_scope": "country"
     },
     {
       "country_code": "GN",
@@ -2483,6 +2503,105 @@
         "sw": {
           "title": "FAO yaendeleza kilimo cha mikataba ili kuboresha upatikanaji wa masoko kwa wakulima wadogo nchini Benin",
           "summary": "Kupitia mradi wa PADAAM wa kusaidia maendeleo ya kilimo na upatikanaji wa masoko, FAO inawasaidia wakulima wadogo wa muhogo, mahindi na mpunga kuanzisha ushirikiano rasmi na wanunuzi. Lengo ni kuboresha mapato, usalama wa chakula na lishe, hasa kwa wanawake na vijana, kwa kuimarisha uzalishaji unaolenga soko na mahusiano ya ugavi yanayotegemewa."
+        }
+      }
+    },
+    {
+      "country_code": "TZ",
+      "country": "Tanzania",
+      "category": "gender-and-rural-development",
+      "title": "Fueling progress: Tanzania hosts regional champions for women’s empowerment",
+      "summary": "Countries from Eastern and Southern Africa met in Dar es Salaam to discuss the Committee on World Food Security’s Voluntary Guidelines on Gender Equality and Women’s and Girls’ Empowerment in the Context of Food Security and Nutrition.",
+      "url": "https://www.fao.org/tanzania/news/detail/fueling-progress--tanzania-hosts-regional-champions-for-women-s-empowerment/en",
+      "source": "FAO in Tanzania",
+      "source_tier": 1,
+      "published": "2026-04-30",
+      "verified": "2026-10-13",
+      "status": "official",
+      "lifecycle": "current",
+      "coverage_scope": "regional",
+      "translations": {
+        "fr": {
+          "title": "La Tanzanie accueille des responsables régionaux pour promouvoir l’autonomisation des femmes dans les systèmes agroalimentaires",
+          "summary": "Des pays d’Afrique orientale et australe se sont réunis à Dar es Salaam pour examiner les Directives volontaires du Comité de la sécurité alimentaire mondiale sur l’égalité des genres et l’autonomisation des femmes et des filles dans le contexte de la sécurité alimentaire et de la nutrition."
+        },
+        "ar": {
+          "title": "تنزانيا تستضيف قيادات إقليمية لتعزيز تمكين المرأة في النظم الزراعية والغذائية",
+          "summary": "اجتمعت دول من شرق وجنوب أفريقيا في دار السلام لمناقشة المبادئ التوجيهية الطوعية للجنة الأمن الغذائي العالمي بشأن المساواة بين الجنسين وتمكين النساء والفتيات في سياق الأمن الغذائي والتغذية."
+        },
+        "pt": {
+          "title": "Tanzânia acolhe líderes regionais para promover o empoderamento das mulheres nos sistemas agroalimentares",
+          "summary": "Países da África Oriental e Austral reuniram-se em Dar es Salaam para analisar as Diretrizes Voluntárias do Comité de Segurança Alimentar Mundial sobre igualdade de género e empoderamento das mulheres e raparigas no contexto da segurança alimentar e nutrição."
+        },
+        "sw": {
+          "title": "Tanzania yaandaa viongozi wa kikanda kuendeleza uwezeshaji wa wanawake katika mifumo ya kilimo na chakula",
+          "summary": "Nchi za Afrika Mashariki na Kusini zilikutana Dar es Salaam kujadili Miongozo ya Hiari ya Kamati ya Usalama wa Chakula Duniani kuhusu usawa wa kijinsia na uwezeshaji wa wanawake na wasichana katika muktadha wa usalama wa chakula na lishe."
+        }
+      }
+    },
+    {
+      "country_code": "ET",
+      "country": "Ethiopia",
+      "category": "food-security",
+      "title": "FAO delivers lifesaving assistance to over 500,000 vulnerable people facing overlapping shocks across Ethiopia",
+      "summary": "FAO is delivering seeds, fertilizers, livestock feed, cash support and animal-health services to communities affected by overlapping shocks. The programme aims to protect productive assets, stabilize food access and help farming and pastoral households cope with the 2026 lean season.",
+      "url": "https://www.fao.org/ethiopia/news/detail/fao-delivers-lifesaving-assistance-to-over-500-000-vulnerable-people-facing-overlapping-shocks-across-ethiopia/en",
+      "source": "FAO in Ethiopia",
+      "source_tier": 1,
+      "published": "2026-06-03",
+      "verified": "2026-10-13",
+      "status": "official",
+      "lifecycle": "current",
+      "coverage_scope": "country",
+      "translations": {
+        "fr": {
+          "title": "La FAO apporte une aide agricole vitale à plus de 500 000 personnes vulnérables en Éthiopie",
+          "summary": "La FAO fournit des semences, des engrais, des aliments pour le bétail, une aide financière et des services de santé animale aux communautés touchées par plusieurs crises. Le programme vise à protéger les moyens de production, stabiliser l’accès à la nourriture et aider les ménages agricoles et pastoraux à faire face à la saison de soudure 2026."
+        },
+        "ar": {
+          "title": "الفاو تقدم مساعدات زراعية منقذة للحياة لأكثر من 500 ألف شخص ضعيف في إثيوبيا",
+          "summary": "تقدم الفاو البذور والأسمدة وأعلاف الماشية والمساعدات النقدية وخدمات صحة الحيوان للمجتمعات المتضررة من أزمات متداخلة. ويهدف البرنامج إلى حماية الأصول الإنتاجية واستقرار الحصول على الغذاء ومساعدة الأسر الزراعية والرعوية على مواجهة موسم الشح لعام 2026."
+        },
+        "pt": {
+          "title": "FAO presta assistência agrícola vital a mais de 500 mil pessoas vulneráveis na Etiópia",
+          "summary": "A FAO está a fornecer sementes, fertilizantes, alimentação animal, apoio financeiro e serviços de saúde animal às comunidades afetadas por crises simultâneas. O programa pretende proteger os ativos produtivos, estabilizar o acesso aos alimentos e ajudar famílias agrícolas e pastoris a enfrentar a época de escassez de 2026."
+        },
+        "sw": {
+          "title": "FAO yatoa msaada muhimu wa kilimo kwa zaidi ya watu 500,000 walio hatarini nchini Ethiopia",
+          "summary": "FAO inatoa mbegu, mbolea, chakula cha mifugo, msaada wa fedha na huduma za afya ya wanyama kwa jamii zilizoathiriwa na mishtuko mingi. Mpango unalenga kulinda mali za uzalishaji, kutuliza upatikanaji wa chakula na kusaidia kaya za wakulima na wafugaji kukabiliana na kipindi cha upungufu wa chakula cha 2026."
+        }
+      }
+    },
+    {
+      "country_code": "ET",
+      "country": "Ethiopia",
+      "category": "seeds",
+      "title": "Community seed multiplication through Farmers Field Schools: FAO supports restoring hope and resilience in northern Ethiopia",
+      "summary": "Through Farmers Field Schools, FAO and partners are helping communities in Amhara, Tigray and Afar produce quality seeds despite conflict, drought and supply-chain disruption. One farmer in Kalu harvested 3.4 tonnes of sorghum per hectare, more than double her previous yield.",
+      "url": "https://www.fao.org/ethiopia/news/detail/community-seed-multiplication-through-farmers-field-schools--fao-supports-restoring-hope-and-resilience-in-northern-ethiopia/en",
+      "source": "FAO in Ethiopia",
+      "source_tier": 1,
+      "published": "2026-05-11",
+      "verified": "2026-10-13",
+      "status": "official",
+      "lifecycle": "current",
+      "coverage_scope": "country",
+      "translations": {
+        "fr": {
+          "title": "La FAO soutient la multiplication communautaire des semences dans le nord de l’Éthiopie",
+          "summary": "Grâce aux champs-écoles des producteurs, la FAO et ses partenaires aident les communautés d’Amhara, du Tigré et de l’Afar à produire des semences de qualité malgré les conflits, les sécheresses et les perturbations des chaînes d’approvisionnement. Une agricultrice de Kalu a récolté 3,4 tonnes de sorgho par hectare, plus du double de son rendement antérieur."
+        },
+        "ar": {
+          "title": "الفاو تدعم إكثار البذور على مستوى المجتمعات في شمال إثيوبيا",
+          "summary": "من خلال مدارس المزارعين الحقلية، تساعد الفاو وشركاؤها مجتمعات أمهرة وتيغراي وعفر على إنتاج بذور جيدة رغم النزاعات والجفاف واضطراب سلاسل الإمداد. وقد حصدت مزارعة في كالو 3.4 أطنان من الذرة الرفيعة للهكتار، أي أكثر من ضعف محصولها السابق."
+        },
+        "pt": {
+          "title": "FAO apoia a multiplicação comunitária de sementes no norte da Etiópia",
+          "summary": "Através das Escolas de Campo para Agricultores, a FAO e parceiros ajudam comunidades de Amhara, Tigray e Afar a produzir sementes de qualidade apesar dos conflitos, secas e perturbações nas cadeias de abastecimento. Uma agricultora de Kalu colheu 3,4 toneladas de sorgo por hectare, mais do dobro do rendimento anterior."
+        },
+        "sw": {
+          "title": "FAO yaunga mkono uzalishaji wa mbegu katika jamii kaskazini mwa Ethiopia",
+          "summary": "Kupitia Shule za Wakulima, FAO na washirika wake wanasaidia jamii za Amhara, Tigray na Afar kuzalisha mbegu bora licha ya migogoro, ukame na kukatika kwa minyororo ya ugavi. Mkulima mmoja wa Kalu alivuna tani 3.4 za mtama kwa hekta, zaidi ya mara mbili ya mavuno yake ya awali."
         }
       }
     }
