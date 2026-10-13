@@ -145,13 +145,23 @@
     document.querySelectorAll("[data-localized-section]").forEach(function (link) {
       var section = link.getAttribute("data-localized-section");
       var sectionPath = section === "calculator" ? "farm-profit-calculator" : (section === "resources" ? "agriculture-resources" : section);
-      link.href = section === "home"
-        ? (code === "en" ? "/" : "/" + code + "/")
-        : (section === "calculator"
-          ? "/farm-profit-calculator/"
-          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
-            ? ((section === "about" || section === "contact") ? (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/") : "/" + sectionPath + "/")
-            : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/")));
+
+      // These pages intentionally use one URL and translate their interface
+      // in place. Do not manufacture language-prefixed links that 404.
+      if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|privacy-policy|data-updates)$/.test(section)) {
+        link.href = "/" + sectionPath + "/";
+        return;
+      }
+
+      if (section === "home") {
+        link.href = code === "en" ? "/" : "/" + code + "/";
+      } else if (section === "calculator") {
+        link.href = "/farm-profit-calculator/";
+      } else if (section === "about" || section === "contact") {
+        link.href = code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/";
+      } else {
+        link.href = code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/";
+      }
     });
   }
 
