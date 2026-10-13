@@ -107,4 +107,15 @@ for (const code of ['en','fr','ar','pt','sw']) {
   }
 }
 
+const intelligenceMerge = read('scripts/merge-agricultural-intelligence.js');
+if (!intelligenceMerge.includes("'agriculturalNewsExpansion.json'") ||
+    !intelligenceMerge.includes("normalizeUrl(item.url) === candidateUrl") ||
+    !intelligenceMerge.includes("normalizeTitle(item.title || item.headline) === candidateTitle")) {
+  throw new Error('Build-time agricultural merge must include expanded news and skip only exact normalized same-title/same-URL duplicates.');
+}
+const newsExpansion = JSON.parse(read('src/_data/agriculturalNewsExpansion.json'));
+if (!Array.isArray(newsExpansion.records)) {
+  throw new Error('Expanded agricultural news must use the records schema consumed by the build-time merge.');
+}
+
 console.log(`GoOrganicAfrica checks passed: ${activeCountries.length} active countries, ${aggregate.length} synchronized enterprises, dynamic data/admin controls, Selar support, AdSense controls, and agricultural data automation.`);
