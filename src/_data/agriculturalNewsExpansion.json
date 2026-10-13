@@ -2395,7 +2395,7 @@
     },
     {
       "country_code": "CG",
-      "category": "policy",
+      "category": "forestry-and-rural-livelihoods",
       "title": "FAO and the Republic of the Congo discuss sustainable forest management and rural livelihoods",
       "summary": "FAO’s Director-General met the Republic of the Congo’s Minister of Forest Economy to discuss sustainable forest management, protection of forests important to food security and livelihoods, and potential technical cooperation to support national priorities.",
       "url": "https://www.fao.org/director-general/news/details/bilateral-meeting-with-h.e.-rosalie-matondo--minister-of-forest-economy-of-the-republic-of-the-congo/en",
@@ -2403,9 +2403,27 @@
       "source_tier": 1,
       "published": "2026-10-01",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official FAO story verified; its focus is forestry rather than crop/livestock production, so confirm its relevance to the Agricultural News category before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "coverage_scope": "country",
+      "translations": {
+        "fr": {
+          "title": "La FAO et la République du Congo discutent de la gestion durable des forêts et des moyens de subsistance ruraux",
+          "summary": "Lors d’une rencontre avec la ministre de l’Économie forestière de la République du Congo, la FAO a examiné les priorités de gestion durable des forêts, de restauration des paysages forestiers et de développement de filières forestières qui soutiennent les revenus et les moyens de subsistance des communautés rurales."
+        },
+        "ar": {
+          "title": "الفاو وجمهورية الكونغو تبحثان الإدارة المستدامة للغابات وسبل العيش الريفية",
+          "summary": "خلال لقاء مع وزيرة الاقتصاد الغابي في جمهورية الكونغو، بحثت الفاو أولويات الإدارة المستدامة للغابات واستعادة المناظر الطبيعية الحرجية وتطوير سلاسل قيمة غابية تدعم دخل المجتمعات الريفية وسبل عيشها."
+        },
+        "pt": {
+          "title": "FAO e República do Congo discutem a gestão florestal sustentável e os meios de subsistência rurais",
+          "summary": "Numa reunião com a ministra da Economia Florestal da República do Congo, a FAO analisou prioridades de gestão sustentável das florestas, restauração de paisagens florestais e desenvolvimento de cadeias de valor florestais que apoiem os rendimentos e os meios de subsistência das comunidades rurais."
+        },
+        "sw": {
+          "title": "FAO na Jamhuri ya Congo zajadili usimamizi endelevu wa misitu na maisha ya vijijini",
+          "summary": "Katika mkutano na waziri wa uchumi wa misitu wa Jamhuri ya Congo, FAO ilijadili vipaumbele vya usimamizi endelevu wa misitu, urejeshaji wa mandhari ya misitu na maendeleo ya minyororo ya thamani ya misitu inayosaidia mapato na maisha ya jamii za vijijini."
+        }
+      }
     },
     {
       "country_code": "BJ",
