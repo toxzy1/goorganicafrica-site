@@ -768,7 +768,25 @@
       "source_tier": 1,
       "published": "2026-10-06",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO transforme les données pédologiques du Ghana en conseils pratiques pour la gestion des exploitations",
+          "summary": "La FAO et l’Institut de recherche sur les sols du CSIR aident les agriculteurs de la région de l’Upper West à convertir les évaluations des sols en décisions pratiques de gestion durable dans le cadre de RECSOIL."
+        },
+        "ar": {
+          "title": "الفاو تحوّل بيانات التربة في غانا إلى إجراءات عملية لإدارة المزارع",
+          "summary": "تساعد الفاو ومعهد أبحاث التربة التابع لمجلس البحوث العلمية والصناعية المزارعين في إقليم أبر ويست على تحويل تقييمات التربة إلى قرارات عملية للإدارة المستدامة ضمن مبادرة RECSOIL."
+        },
+        "pt": {
+          "title": "FAO transforma dados sobre os solos do Gana em ações práticas de gestão agrícola",
+          "summary": "A FAO e o Instituto de Investigação dos Solos do CSIR estão a ajudar agricultores da Região do Alto Oeste a converter avaliações dos solos em decisões práticas de gestão sustentável no âmbito da iniciativa RECSOIL."
+        },
+        "sw": {
+          "title": "FAO yageuza data za udongo nchini Ghana kuwa hatua za vitendo za usimamizi wa mashamba",
+          "summary": "FAO na Taasisi ya Utafiti wa Udongo ya CSIR zinawasaidia wakulima katika Mkoa wa Upper West kubadilisha tathmini za udongo kuwa maamuzi ya vitendo ya usimamizi endelevu kupitia mpango wa RECSOIL."
+        }
+      }
     },
     {
       "country_code": "GH",
@@ -902,7 +920,26 @@
       "source_tier": 1,
       "published": "2026-10-01",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Vihiga County receives drone to strengthen GIS mapping and evidence-based planning",
+      "translations": {
+        "fr": {
+          "title": "Le comté de Vihiga reçoit un drone pour renforcer la cartographie SIG et la planification fondée sur des données probantes",
+          "summary": "Un nouveau drone remis au comté de Vihiga dans le cadre du programme de gouvernance foncière numérique UE-FAO soutiendra la collecte de données spatiales, l’aménagement du territoire, la préparation aux catastrophes et la prise de décision fondée sur des données."
+        },
+        "ar": {
+          "title": "مقاطعة فيهيغا تتلقى طائرة مسيّرة لتعزيز رسم الخرائط الجغرافية والتخطيط القائم على الأدلة",
+          "summary": "ستدعم طائرة مسيّرة جديدة سُلّمت إلى مقاطعة فيهيغا ضمن برنامج الاتحاد الأوروبي والفاو للحوكمة الرقمية للأراضي جمع البيانات المكانية وتخطيط استخدام الأراضي والاستعداد للكوارث واتخاذ القرارات القائمة على الأدلة."
+        },
+        "pt": {
+          "title": "Condado de Vihiga recebe drone para reforçar o mapeamento SIG e o planeamento baseado em evidências",
+          "summary": "Um novo drone entregue ao condado de Vihiga no âmbito do Programa de Governação Digital da Terra UE-FAO apoiará a recolha de dados espaciais, o planeamento do uso do solo, a preparação para desastres e a tomada de decisões baseada em evidências."
+        },
+        "sw": {
+          "title": "Kaunti ya Vihiga yapokea ndege isiyo na rubani kuimarisha ramani za GIS na mipango inayotegemea ushahidi",
+          "summary": "Ndege mpya isiyo na rubani iliyokabidhiwa kaunti ya Vihiga chini ya Mpango wa Utawala wa Ardhi wa Kidijitali wa EU-FAO itasaidia ukusanyaji wa data za kijiografia, mipango ya matumizi ya ardhi, maandalizi ya majanga na maamuzi yanayotegemea ushahidi."
+        }
+      }
     },
     {
       "country_code": "KE",
@@ -1195,7 +1232,26 @@
       "source_tier": 1,
       "published": "2026-10-01",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Ethiopia and Japan sign grant agreement to support rice-sector machinery",
+      "translations": {
+        "fr": {
+          "title": "L’Éthiopie et le Japon signent un accord de subvention pour soutenir la mécanisation de la filière rizicole",
+          "summary": "L’Éthiopie et le Japon ont signé un accord de subvention destiné à financer des moissonneuses-batteuses, des tracteurs, des rizeries et du matériel de préparation des terres pour la filière rizicole."
+        },
+        "ar": {
+          "title": "إثيوبيا واليابان توقّعان اتفاق منحة لدعم معدات قطاع الأرز",
+          "summary": "وقّعت إثيوبيا واليابان اتفاق منحة لتمويل حصادات آلية وجرارات ومطاحن أرز ومعدات لإعداد الأراضي لدعم قطاع الأرز."
+        },
+        "pt": {
+          "title": "Etiópia e Japão assinam acordo de subvenção para apoiar a mecanização do setor do arroz",
+          "summary": "A Etiópia e o Japão assinaram um acordo de subvenção para financiar ceifeiras-debulhadoras, tratores, moinhos de arroz e equipamento de preparação dos terrenos para o setor orizícola."
+        },
+        "sw": {
+          "title": "Ethiopia na Japani zasaini makubaliano ya ruzuku kusaidia vifaa vya sekta ya mpunga",
+          "summary": "Ethiopia na Japani zilisaini makubaliano ya ruzuku ya kufadhili mashine za kuvunia na kupura, matrekta, mashine za kusaga mpunga na vifaa vya kuandaa mashamba kwa ajili ya sekta ya mpunga."
+        }
+      }
     },
     {
       "country_code": "ET",
