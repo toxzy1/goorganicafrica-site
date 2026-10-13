@@ -1688,7 +1688,6 @@
           "summary": "FAO is supporting Cameroon’s environment ministry on an integrated landscape-management initiative in the North and Far North regions to improve biodiversity stewardship, drought resilience and rural livelihoods.",
           "url": "https://www.fao.org/cameroun/news/detail/fao-supports-cameroon-in-its-integrated-management-of-landscapes-and-biodiversity/en",
           "published": "2026-07-31",
-          "review_reason": "Direct FAO country article checked on 2026-10-13. Keep in review until country relevance, date and translations are approved.",
           "translations": {
             "fr": {
               "title": "La FAO soutient le Cameroun dans la gestion intégrée des paysages et de la biodiversité",
@@ -1712,8 +1711,8 @@
           "source_tier": 1,
           "verified": "2026-10-13",
           "review_after": "2026-11-12",
-          "status": "review",
-          "lifecycle": "needs_review"
+          "status": "official",
+          "lifecycle": "current"
         }
       ],
       "localizedNames": {
@@ -1976,7 +1975,25 @@
           "published": "2026-08-19",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "L’Angola et la BAD lancent un projet de développement des chaînes de valeur agricoles dans l’Est du pays",
+              "summary": "Le projet de la Banque africaine de développement et du gouvernement angolais vise à stimuler la productivité agricole et à renforcer les chaînes de valeur des céréales, haricots, soja, arachides, manioc, café, cacao et huile de palme, notamment par l’accès aux marchés, la technologie et le financement."
+            },
+            "ar": {
+              "title": "أنغولا والبنك الأفريقي للتنمية يطلقان مشروعاً لتطوير سلاسل القيمة الزراعية في شرق البلاد",
+              "summary": "يهدف المشروع الذي أطلقته الحكومة الأنغولية والبنك الأفريقي للتنمية إلى زيادة الإنتاجية الزراعية وتعزيز سلاسل قيمة الحبوب والفاصوليا وفول الصويا والفول السوداني والكسافا والقهوة والكاكاو وزيت النخيل، مع التركيز على الأسواق والتكنولوجيا والتمويل."
+            },
+            "pt": {
+              "title": "Angola e BAD lançam projeto para desenvolver cadeias de valor agrícolas no leste do país",
+              "summary": "O projeto do Banco Africano de Desenvolvimento e do governo angolano visa aumentar a produtividade agrícola e reforçar as cadeias de valor de cereais, feijão, soja, amendoim, mandioca, café, cacau e óleo de palma, com foco no acesso aos mercados, tecnologia e financiamento."
+            },
+            "sw": {
+              "title": "Angola na AfDB wazindua mradi wa kuendeleza minyororo ya thamani ya kilimo mashariki mwa nchi",
+              "summary": "Mradi wa Benki ya Maendeleo ya Afrika na serikali ya Angola unalenga kuongeza uzalishaji wa kilimo na kuimarisha minyororo ya thamani ya nafaka, maharagwe, soya, karanga, muhogo, kahawa, kakao na mafuta ya mawese, kwa kuzingatia masoko, teknolojia na ufadhili."
+            }
+          }
         },
         {
           "category": "farmer-support",
@@ -2004,7 +2021,25 @@
           "published": "2026-06-24",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "L’Angola lance le Compact AgriConnect pour renforcer la sécurité alimentaire, l’emploi et l’investissement agricole",
+              "summary": "L’Angola et le Groupe de la Banque mondiale ont lancé un cadre qui vise jusqu’à 700 000 emplois, jusqu’à 2,2 milliards de dollars de valeur ajoutée annuelle et jusqu’à 1,45 milliard de dollars de financement public et privé d’ici 2030, en renforçant les chaînes de valeur, la transformation, la logistique et les services."
+            },
+            "ar": {
+              "title": "أنغولا تطلق اتفاق AgriConnect لتعزيز الأمن الغذائي والوظائف والاستثمار الزراعي",
+              "summary": "أطلقت أنغولا ومجموعة البنك الدولي إطاراً يستهدف توفير ما يصل إلى 700 ألف وظيفة وتحقيق قيمة مضافة سنوية تصل إلى 2.2 مليار دولار وتعبئة ما يصل إلى 1.45 مليار دولار من التمويل العام والخاص بحلول عام 2030، عبر تعزيز سلاسل القيمة والتصنيع والخدمات اللوجستية والخدمات."
+            },
+            "pt": {
+              "title": "Angola lança o Compacto AgriConnect para reforçar a segurança alimentar, o emprego e o investimento agrícola",
+              "summary": "Angola e o Grupo Banco Mundial lançaram um quadro que visa até 700 mil empregos, até 2,2 mil milhões de dólares em valor acrescentado anual e até 1,45 mil milhões de dólares em financiamento público e privado até 2030, reforçando cadeias de valor, processamento, logística e serviços."
+            },
+            "sw": {
+              "title": "Angola yazindua Mkataba wa AgriConnect kuimarisha usalama wa chakula, ajira na uwekezaji wa kilimo",
+              "summary": "Angola na Kundi la Benki ya Dunia zimezindua mfumo unaolenga hadi ajira 700,000, thamani iliyoongezwa ya kila mwaka hadi dola bilioni 2.2 na ufadhili wa umma na binafsi hadi dola bilioni 1.45 kufikia 2030, kwa kuimarisha minyororo ya thamani, uchakataji, usafirishaji na huduma."
+            }
+          }
         },
         {
           "category": "weather-climate",
@@ -4693,22 +4728,23 @@
           "status": "official",
           "translations": {
             "fr": {
-              "title": "Le Togo et le Burkina Faso renforcent les échanges commerciaux de manioc",
-              "summary": "Le ministère togolais de l’Agriculture a rendu compte d’une rencontre entre les acteurs togolais de la filière manioc et l’interprofession du manioc du Burkina Faso. Les échanges ont porté sur la demande, les volumes, la qualité, la transformation, les prix, la livraison et d’éventuels accords commerciaux."
+              "title": "Le Togo et le Burkina Faso renforcent les échanges transfrontaliers de manioc",
+              "summary": "Le ministère togolais de l’Agriculture rapporte une rencontre entre acteurs de la filière manioc du Togo et l’interprofession du manioc du Burkina Faso. Les discussions ont porté sur la demande estimée à 80 000 tonnes de pâte de manioc, les volumes, la qualité, la transformation, les prix et la livraison; il s’agit d’une piste commerciale en cours, pas d’un contrat d’achat confirmé."
             },
             "ar": {
-              "title": "توغو وبوركينا فاسو تعززان الروابط التجارية للكسافا",
-              "summary": "أفادت وزارة الزراعة في توغو بعقد لقاء تجاري بين الجهات العاملة في سلسلة الكسافا في توغو والهيئة المهنية للكسافا في بوركينا فاسو. وتناولت المناقشات الطلب والكميات والجودة والتصنيع والأسعار والتسليم والاتفاقات التجارية المحتملة."
+              "title": "توغو وبوركينا فاسو تعززان التجارة العابرة للحدود في الكسافا",
+              "summary": "أفادت وزارة الزراعة في توغو بعقد لقاء بين الجهات الفاعلة في سلسلة قيمة الكسافا في توغو والهيئة المهنية للكسافا في بوركينا فاسو. وناقش المشاركون طلباً محتملاً يقدر بنحو 80 ألف طن من معجون الكسافا، والكميات والجودة والتصنيع والأسعار والتسليم؛ وهذه فرصة تجارية قيد التطوير وليست عقد شراء مؤكداً."
             },
             "pt": {
-              "title": "Togo e Burkina Faso reforçam as ligações comerciais da mandioca",
-              "summary": "O Ministério da Agricultura do Togo informou sobre uma reunião comercial entre os intervenientes togoleses da cadeia da mandioca e a organização interprofissional da mandioca do Burkina Faso. As conversações abrangeram procura, volumes, qualidade, transformação, preços, entrega e possíveis acordos comerciais."
+              "title": "Togo e Burkina Faso reforçam o comércio transfronteiriço de mandioca",
+              "summary": "O Ministério da Agricultura do Togo relatou uma reunião entre intervenientes da cadeia da mandioca togolesa e a organização interprofissional da mandioca do Burkina Faso. As conversações abordaram uma procura estimada de 80 mil toneladas de pasta de mandioca, volumes, qualidade, processamento, preços e entrega; trata-se de uma oportunidade comercial em desenvolvimento, não de um contrato de compra confirmado."
             },
             "sw": {
               "title": "Togo na Burkina Faso zaimarisha biashara ya muhogo kuvuka mipaka",
-              "summary": "Wizara ya Kilimo ya Togo iliripoti mkutano wa kibiashara kati ya wadau wa muhogo wa Togo na shirika la kitaaluma la muhogo la Burkina Faso. Mazungumzo yalihusu mahitaji, kiasi, ubora, uchakataji, bei, usafirishaji na mikataba inayowezekana."
+              "summary": "Wizara ya Kilimo ya Togo iliripoti mkutano kati ya wadau wa mnyororo wa muhogo wa Togo na shirika la kitaaluma la muhogo la Burkina Faso. Majadiliano yalihusu mahitaji yanayokadiriwa kuwa tani 80,000 za unga mzito wa muhogo, kiasi, ubora, uchakataji, bei na usafirishaji; hii ni fursa ya biashara inayoendelea, si mkataba wa ununuzi uliothibitishwa."
             }
-          }
+          },
+          "coverage_scope": "regional"
         }
       ],
       "localizedNames": {
