@@ -310,7 +310,7 @@ if (searchHtml) {
       }
     }
     const escapeAttr = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-    for (const match of sourceBlock.matchAll(/<article\\b([^>]*)>/gi)) {
+    for (const match of sourceBlock.matchAll(/<article\b([^>]*)>/gi)) {
       const attrs = match[1];
       if (!/\bdata-type=["']Resource["']/i.test(attrs)) continue;
       const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
