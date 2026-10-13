@@ -26,34 +26,34 @@ language: en
 </style>
 
 <div class="goa-search">
-  <h1>Global Agricultural Search</h1>
-  <p class="goa-search-intro">Search across GoOrganicAfrica resources, news, opportunities, markets, machinery, suppliers, training, events, eBooks and blog.</p>
+  <h1 data-i18n="search.title">Global Agricultural Search</h1>
+  <p class="goa-search-intro" data-i18n="search.intro">Search across GoOrganicAfrica resources, news, opportunities, markets, machinery, suppliers, training, events, eBooks and blog.</p>
 
   <div class="goa-search-controls">
-    <input id="goa-global-search" class="goa-search-box" type="search" placeholder="Search agriculture, maize, Nigeria, finance, machinery, training..." autocomplete="off" aria-label="Search GoOrganicAfrica">
-    <select id="goa-search-type" class="goa-search-box" aria-label="Filter search results">
-      <option value="">All sections</option>
-      <option value="Resource">Resources</option>
-      <option value="News">Agricultural News</option>
-      <option value="Opportunity">Opportunities</option>
-      <option value="Market">Markets</option>
-      <option value="Service">Services & Machinery</option>
-      <option value="eBook">eBooks</option>
-      <option value="Blog">Blog</option>
+    <input id="goa-global-search" class="goa-search-box" type="search" placeholder="Search agriculture, maize, Nigeria, finance, machinery, training..." data-i18n-placeholder="search.placeholder" autocomplete="off" aria-label="Search GoOrganicAfrica" data-i18n-aria-label="search.ariaLabel">
+    <select id="goa-search-type" class="goa-search-box" aria-label="Filter search results" data-i18n-aria-label="search.filterLabel">
+      <option value="" data-i18n="search.allSections">All sections</option>
+      <option value="Resource" data-i18n="search.resources">Resources</option>
+      <option value="News" data-i18n="search.news">Agricultural News</option>
+      <option value="Opportunity" data-i18n="search.opportunities">Opportunities</option>
+      <option value="Market" data-i18n="search.markets">Markets</option>
+      <option value="Service" data-i18n="search.services">Services & Machinery</option>
+      <option value="eBook" data-i18n="search.ebooks">eBooks</option>
+      <option value="Blog" data-i18n="search.blog">Blog</option>
     </select>
   </div>
 
   <p id="goa-search-count" aria-live="polite"></p>
   <div id="goa-search-connections" style="display:none;margin:16px 0 24px;">
     <div style="border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--paper);">
-      <h2 style="margin-top:0;">Connected Agricultural Intelligence</h2>
-      <p style="margin-bottom:14px;">Use the same topic or country across different GoOrganicAfrica sections to move from information to action.</p>
+      <h2 style="margin-top:0;" data-i18n="search.connectedTitle">Connected Agricultural Intelligence</h2>
+      <p style="margin-bottom:14px;" data-i18n="search.connectedIntro">Use the same topic or country across different GoOrganicAfrica sections to move from information to action.</p>
       <div id="goa-connection-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;"></div>
     </div>
   </div>
   <div id="goa-search-results" class="goa-search-results"></div>
 
-  <noscript><p class="goa-search-empty">Please enable JavaScript to use Global Search.</p></noscript>
+  <noscript><p class="goa-search-empty" data-i18n="search.noScript">Please enable JavaScript to use Global Search.</p></noscript>
 
   <div id="goa-search-source" hidden>
     {% for r in agriculturalResourcesAll %}
@@ -95,6 +95,7 @@ language: en
   const connectionCards=document.getElementById('goa-connection-cards');
   const count=document.getElementById('goa-search-count');
   const topicAliases={maize:['maize','corn'],rice:['rice','paddy'],cassava:['cassava','manioc','yuca'],soybean:['soybean','soybeans','soya'],poultry:['poultry','chicken','broiler','layer'],livestock:['livestock','cattle','beef','dairy','milk','goat','sheep'],fish:['fish','fisheries','aquaculture','tilapia','catfish'],vegetables:['vegetable','vegetables','tomato','pepper','onion'],fruits:['fruit','fruits','banana','pineapple','avocado','mango'],seeds:['seed','seeds','certified seed','seed multiplication'],inputs:['fertilizer','fertiliser','inputs','agro-input','agrochemical'],irrigation:['irrigation','water management','water access','solar pumping'],mechanization:['mechanization','mechanisation','tractor','machinery','equipment'],finance:['finance','funding','grant','grants','loan','investment','credit','financing'],climate:['climate','resilience','drought','early warning','climate-smart'],markets:['market','markets','trade','export','value chain','agribusiness']};
+  const tr=(key)=>window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t("search",key):({resultSingular:"result",resultPlural:"results",showingFirst:"showing first 100",matching:"matching result",matchingPlural:"matching results",noResults:"No matching results found. Try a broader search or choose “All sections”."}[key]||key);
   const params=new URLSearchParams(location.search);
   if(params.get('q')) input.value=params.get('q');
   const source=[...document.querySelectorAll('#goa-search-source article')].map(el=>({
@@ -116,31 +117,32 @@ language: en
     });
     const shown=matches.slice(0,100);
     const sections=[
-      ['Market','Markets','/markets/','Compare market information'],
-      ['Opportunity','Opportunities','/opportunities/','Look for finance and programmes'],
-      ['Resource','Resources','/agriculture-resources/','Find supporting resources'],
-      ['Service','Services & Machinery','/agricultural-services/','Find machinery and training'],
-      ['News','Agricultural News','/agricultural-news/','Follow recent developments'],
-      ['eBook','eBooks','/ebooks/','Learn practical methods'],
-      ['Blog','Blog','/blog/','Read detailed guides']
+      ['Market',tr('markets'),'/markets/','compareMarkets'],
+      ['Opportunity',tr('opportunities'),'/opportunities/','financePrograms'],
+      ['Resource',tr('resources'),'/agriculture-resources/','supportingResources'],
+      ['Service',tr('services'),'/agricultural-services/','servicesTraining'],
+      ['News',tr('news'),'/agricultural-news/','recentDevelopments'],
+      ['eBook',tr('ebooks'),'/ebooks/','practicalMethods'],
+      ['Blog',tr('blog'),'/blog/','detailedGuides']
     ];
     const matchedSections=sections.map(s=>({s,count:matches.filter(x=>x.type===s[0]).length})).filter(x=>x.count);
     if(q && matchedSections.length){
       connections.style.display='block';
-      connectionCards.innerHTML=matchedSections.map(x=>'<a class="card" href="'+x.s[2]+'" style="text-decoration:none;padding:12px;"><strong>'+x.s[1]+'</strong><br><span style="font-size:.85rem;">'+x.count+' matching result'+(x.count===1?'':'s')+'</span></a>').join('');
+      connectionCards.innerHTML=matchedSections.map(x=>'<a class="card" href="'+x.s[2]+'" style="text-decoration:none;padding:12px;"><strong>'+x.s[1]+'</strong><br><span style="font-size:.85rem;">'+x.count+' '+tr(x.count===1?'matching':'matchingPlural')+'</span></a>').join('');
     }else{
       connections.style.display='none';
       connectionCards.innerHTML='';
     }
-    count.textContent=matches.length+' result'+(matches.length===1?'':'s')+(matches.length>100?' (showing first 100)':'');
+    count.textContent=matches.length+' '+tr(matches.length===1?'resultSingular':'resultPlural')+(matches.length>100?' ('+tr('showingFirst')+')':'');
     if(!shown.length){
-      results.innerHTML='<div class="goa-search-empty">No matching results found. Try a broader search or choose “All sections”.</div>';
+      results.innerHTML='<div class="goa-search-empty">'+esc(tr('noResults'))+'</div>';
       return;
     }
     results.innerHTML=shown.map(x=>'<article class="goa-search-card"><div class="goa-search-meta">'+esc(x.type)+' · '+esc(x.meta)+'</div><h2><a href="'+esc(x.url)+'">'+esc(x.title)+'</a></h2><p class="goa-search-summary">'+esc(x.summary).slice(0,320)+'</p></article>').join('');
   }
   input.addEventListener('input',render);
   type.addEventListener('change',render);
+  document.addEventListener('goa:languagechange',render);
   render();
 })();
 </script>
