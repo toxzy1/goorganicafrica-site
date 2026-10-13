@@ -249,6 +249,32 @@ if (searchHtml) {
     }
   }
 }
+
+// Validate that search records are not merely counted: every indexed result must
+// have a usable destination, and internal destinations must exist in the rendered site.
+function searchTargetExists(rawUrl) {
+  const value = String(rawUrl || "").trim().replace(/&amp;/g, "&");
+  if (!value || /^(javascript:|data:|vbscript:)/i.test(value)) return false;
+  if (/^https?:\/\//i.test(value)) return true;
+  if (/^(mailto:|tel:)/i.test(value)) return true;
+  if (/^\/\//.test(value)) return true;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return false;
+  const pathname = value.split(/[?#]/)[0];
+  if (!pathname) return true;
+  const normalized = pathname.startsWith("/") ? pathname.slice(1) : pathname;
+  const candidates = [];
+  if (!normalized || normalized.endsWith("/")) candidates.push(path.join(site, normalized, "index.html"));
+  else {
+    candidates.push(path.join(site, normalized));
+    candidates.push(path.join(site, normalized, "index.html"));
+    if (!path.extname(normalized)) candidates.push(path.join(site, normalized, "index.html"));
+  }
+  return candidates.some(candidate => {
+    const resolved = path.resolve(candidate);
+    return resolved.startsWith(path.resolve(site) + path.sep) || resolved === path.resolve(site + "/index.html");
+  }) && candidates.some(candidate => fs.existsSync(candidate) && fs.statSync(candidate).isFile());
+}
+
 const decisionHtml = read("farmer-decision-centre/index.html");
 if (decisionHtml) {
   for (const id of ["dc-country", "dc-topic", "dc-goal", "dc-build", "dc-output"]) {
