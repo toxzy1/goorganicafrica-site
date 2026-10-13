@@ -645,10 +645,28 @@
       "source_tier": 1,
       "published": "2026-10-02",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
+      "lifecycle": "current",
       "translation_status": "in_review",
-      "review_reason": "Direct official FAO story verified. Complete and review the five-language content before publication."
+      "translations": {
+        "fr": {
+          "title": "Le projet ASCO de la FAO place les producteurs et exportateurs au cœur de la modernisation du système phytosanitaire tunisien",
+          "summary": "Dans le cadre du projet ASCO financé par l’Union européenne, la FAO et les autorités tunisiennes de santé végétale ont consulté plus de 30 unités de production agricole exportatrices. Les échanges ont porté sur l’information phytosanitaire numérique et la lutte intégrée contre les ravageurs afin de réduire les risques de non-conformité et d’aider les producteurs à satisfaire aux exigences des marchés d’exportation."
+        },
+        "ar": {
+          "title": "مشروع ASCO المدعوم من الفاو يضع المنتجين والمصدرين في صميم تحديث النظام الصحي النباتي في تونس",
+          "summary": "في إطار مشروع ASCO الممول من الاتحاد الأوروبي، تشاورت الفاو والسلطات التونسية للصحة النباتية مع أكثر من 30 وحدة إنتاج زراعي موجهة للتصدير. وركزت المناقشات على المعلومات الصحية النباتية الرقمية والإدارة المتكاملة للآفات لتقليل مخاطر عدم الامتثال ومساعدة المنتجين على تلبية متطلبات أسواق التصدير."
+        },
+        "pt": {
+          "title": "Projeto ASCO apoiado pela FAO coloca produtores e exportadores no centro da modernização do sistema fitossanitário tunisino",
+          "summary": "No âmbito do projeto ASCO financiado pela União Europeia, a FAO e as autoridades fitossanitárias tunisinas consultaram mais de 30 unidades de produção agrícola ligadas à exportação. As discussões abordaram informação fitossanitária digital e gestão integrada de pragas, visando reduzir riscos de incumprimento e ajudar os produtores a cumprir os requisitos dos mercados de exportação."
+        },
+        "sw": {
+          "title": "Mradi wa ASCO unaoungwa mkono na FAO waweka wazalishaji na wauzaji nje katikati ya kuboresha mfumo wa afya ya mimea Tunisia",
+          "summary": "Chini ya mradi wa ASCO unaofadhiliwa na Umoja wa Ulaya, FAO na mamlaka za afya ya mimea za Tunisia zilishauriana na vitengo zaidi ya 30 vya uzalishaji wa kilimo vinavyohudumia mauzo ya nje. Majadiliano yalihusu taarifa za kidijitali za afya ya mimea na udhibiti jumuishi wa wadudu ili kupunguza hatari za kutokidhi viwango vya soko la nje."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "EG",
@@ -903,10 +921,28 @@
       "source_tier": 1,
       "published": "2026-07-07",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
+      "lifecycle": "current",
       "translation_status": "in_review",
-      "review_reason": "Direct official FAO story verified. Review its age and prepare reviewed five-language content before publication."
+      "translations": {
+        "fr": {
+          "title": "La FAO et le Gabon renforcent les capacités des producteurs grâce à des équipements agricoles et halieutiques",
+          "summary": "La FAO et le gouvernement gabonais ont remis des équipements agricoles et de pêche aux bénéficiaires d’un projet à Lébamba après plusieurs mois de formation. L’initiative soutient la modernisation agricole, l’amélioration des conditions de production et la sécurité alimentaire, avec une attention particulière aux femmes et aux jeunes."
+        },
+        "ar": {
+          "title": "الفاو والغابون تعززان قدرات المنتجين بمعدات زراعية وسمكية",
+          "summary": "قدمت الفاو والحكومة الغابونية معدات زراعية ومعدات للصيد إلى المستفيدين من مشروع في ليبامبا بعد أشهر من التدريب. ويدعم البرنامج تحديث الزراعة وتحسين ظروف الإنتاج والأمن الغذائي، مع اهتمام خاص بالنساء والشباب."
+        },
+        "pt": {
+          "title": "FAO e Gabão reforçam as capacidades dos produtores com equipamentos agrícolas e de pesca",
+          "summary": "A FAO e o governo do Gabão entregaram equipamentos agrícolas e de pesca aos beneficiários de um projeto em Lébamba após vários meses de formação. A iniciativa apoia a modernização agrícola, melhores condições de produção e segurança alimentar, com atenção especial às mulheres e aos jovens."
+        },
+        "sw": {
+          "title": "FAO na Gabon zaimarisha uwezo wa wazalishaji kwa vifaa vya kilimo na uvuvi",
+          "summary": "FAO na serikali ya Gabon zilikabidhi vifaa vya kilimo na uvuvi kwa wanufaika wa mradi mjini Lébamba baada ya miezi kadhaa ya mafunzo. Mpango unaunga mkono kisasaishaji cha kilimo, kuboresha mazingira ya uzalishaji na usalama wa chakula, hasa kwa wanawake na vijana."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "NE",
@@ -1381,9 +1417,27 @@
       "source_tier": 1,
       "published": "2026-06-16",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct World Bank press release checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La Banque mondiale finance l’amélioration des liaisons logistiques entre les zones de production agricole et les marchés au Togo",
+          "summary": "La Banque mondiale a approuvé 200 millions de dollars pour améliorer les systèmes de transport et de logistique du Togo, notamment les liaisons entre les zones agricoles à fort potentiel et les marchés. Le programme vise à réduire les pertes après récolte, améliorer l’accès aux marchés et renforcer la compétitivité agroalimentaire; il s’agit d’un financement d’infrastructure, pas d’une subvention directe aux agriculteurs."
+        },
+        "ar": {
+          "title": "البنك الدولي يمول تحسين الروابط اللوجستية بين مناطق الإنتاج الزراعي والأسواق في توغو",
+          "summary": "وافق البنك الدولي على تمويل بقيمة 200 مليون دولار لتحسين أنظمة النقل والخدمات اللوجستية في توغو، بما في ذلك الربط بين مناطق الإنتاج الزراعي ذات الإمكانات العالية والأسواق. ويهدف البرنامج إلى تقليل خسائر ما بعد الحصاد وتحسين الوصول إلى الأسواق وتعزيز القدرة التنافسية للقطاع الزراعي والغذائي؛ وهو تمويل للبنية التحتية وليس منحة مباشرة للمزارعين."
+        },
+        "pt": {
+          "title": "Banco Mundial financia a melhoria das ligações logísticas entre zonas de produção agrícola e mercados no Togo",
+          "summary": "O Banco Mundial aprovou 200 milhões de dólares para melhorar os sistemas de transporte e logística do Togo, incluindo ligações entre áreas agrícolas de elevado potencial e mercados. O programa pretende reduzir perdas pós-colheita, melhorar o acesso aos mercados e reforçar a competitividade agroalimentar; trata-se de financiamento de infraestruturas, não de uma subvenção direta aos agricultores."
+        },
+        "sw": {
+          "title": "Benki ya Dunia yafadhili kuboresha miunganisho ya usafirishaji kati ya maeneo ya uzalishaji wa kilimo na masoko nchini Togo",
+          "summary": "Benki ya Dunia iliidhinisha dola milioni 200 kuboresha mifumo ya usafiri na usafirishaji nchini Togo, ikiwemo miunganisho kati ya maeneo yenye uwezo mkubwa wa uzalishaji wa kilimo na masoko. Mpango unalenga kupunguza upotevu baada ya mavuno, kuboresha masoko na kuimarisha ushindani wa kilimo na chakula; huu ni ufadhili wa miundombinu, si ruzuku ya moja kwa moja kwa wakulima."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "TG",
@@ -1585,9 +1639,27 @@
       "source_tier": 1,
       "published": "2026-07-15",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "Le Programme phytosanitaire africain élargit la surveillance de la santé des plantes et la lutte contre les ravageurs",
+          "summary": "Une mise à jour de la FAO de juillet 2026 décrit les systèmes numériques de surveillance, la formation et les dispositifs de santé végétale du Programme phytosanitaire africain. L’Égypte figure parmi les pays utilisant les données du programme pour améliorer la détection des ravageurs et l’accès aux marchés d’exportation."
+        },
+        "ar": {
+          "title": "البرنامج الأفريقي للصحة النباتية يوسع المراقبة ومكافحة الآفات",
+          "summary": "يعرض تحديث للفاو في يوليو 2026 أنظمة المراقبة الرقمية والتدريب وخدمات صحة النبات ضمن البرنامج الأفريقي للصحة النباتية. ومصر من بين البلدان التي تستخدم بيانات البرنامج لتحسين اكتشاف الآفات والوصول إلى أسواق التصدير."
+        },
+        "pt": {
+          "title": "Programa Fitossanitário Africano amplia a vigilância da saúde vegetal e o controlo de pragas",
+          "summary": "Uma atualização da FAO de julho de 2026 descreve a vigilância digital, a formação e os sistemas de saúde vegetal do Programa Fitossanitário Africano. O Egito está entre os países que utilizam os dados do programa para melhorar a deteção de pragas e o acesso aos mercados de exportação."
+        },
+        "sw": {
+          "title": "Mpango wa Afya ya Mimea Afrika wapanua ufuatiliaji na udhibiti wa wadudu waharibifu",
+          "summary": "Taarifa ya FAO ya Julai 2026 inaeleza mifumo ya ufuatiliaji wa kidijitali, mafunzo na huduma za afya ya mimea za Mpango wa Afya ya Mimea Afrika. Misri ni miongoni mwa nchi zinazotumia ushahidi wa mpango kuboresha ugunduzi wa wadudu na upatikanaji wa masoko ya nje."
+        }
+      },
+      "coverage_scope": "regional"
     },
     {
       "country_code": "TD",
@@ -1864,9 +1936,27 @@
       "source_tier": 1,
       "published": "2026-04-20",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO programme update checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "Le programme Agri-Accelerator 360 de la Tunisie progresse dans la sélection des jeunes entrepreneurs agricoles",
+          "summary": "La FAO et l’Agence de promotion des investissements agricoles tunisienne ont renforcé les comités régionaux de sélection du programme Agri-Accelerator 360, qui cible les jeunes entrepreneurs agroalimentaires dans six gouvernorats et quatre chaînes de valeur agricoles par région. La période de candidature initiale s’est terminée en mars 2026; il s’agit d’une mise à jour du programme, pas d’un appel ouvert."
+        },
+        "ar": {
+          "title": "برنامج Agri-Accelerator 360 في تونس يواصل اختيار رواد الأعمال الزراعيين الشباب",
+          "summary": "عززت الفاو ووكالة النهوض بالاستثمارات الفلاحية التونسية لجان الاختيار الإقليمية لبرنامج Agri-Accelerator 360، الذي يستهدف رواد الأعمال الزراعيين الشباب في ست ولايات وأربع سلاسل قيمة زراعية بكل منطقة. وانتهت فترة التقديم الأصلية في مارس 2026؛ وهذا تحديث للبرنامج وليس دعوة مفتوحة."
+        },
+        "pt": {
+          "title": "Programa Agri-Accelerator 360 da Tunísia avança na seleção de jovens empreendedores agrícolas",
+          "summary": "A FAO e a Agência de Promoção do Investimento Agrícola da Tunísia reforçaram os comités regionais de seleção do Agri-Accelerator 360, que visa jovens empreendedores agroalimentares em seis províncias e quatro cadeias de valor agrícolas por região. O período inicial de candidaturas terminou em março de 2026; trata-se de uma atualização do programa, não de um concurso aberto."
+        },
+        "sw": {
+          "title": "Mpango wa Agri-Accelerator 360 nchini Tunisia waendeleza uteuzi wa wajasiriamali vijana wa kilimo",
+          "summary": "FAO na Wakala wa Kukuza Uwekezaji wa Kilimo wa Tunisia ziliimarisha kamati za uteuzi za kikanda za Agri-Accelerator 360, inayolenga wajasiriamali vijana wa kilimo na chakula katika maeneo sita na minyororo minne ya thamani ya kilimo kwa kila eneo. Kipindi cha awali cha maombi kilifungwa Machi 2026; hii ni taarifa ya maendeleo ya mpango, si mwito ulio wazi."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "ZA",
@@ -1938,9 +2028,27 @@
       "source_tier": 1,
       "published": "2026-07-22",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official country story found; verify source language, summary, date and country/category assignment before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO et la Société Gabonaise de Garantie explorent un partenariat de financement agricole",
+          "summary": "La FAO au Gabon et la Société Gabonaise de Garantie ont discuté d’un partenariat visant à améliorer l’accès au crédit pour les producteurs agricoles et les entrepreneurs ruraux, avec un projet pilote destiné aux éleveurs de volailles et une éventuelle extension à la pisciculture."
+        },
+        "ar": {
+          "title": "الفاو وشركة الضمان الغابونية تبحثان شراكة لتمويل المنتجين الزراعيين",
+          "summary": "ناقشت الفاو في الغابون وشركة الضمان الغابونية شراكة لتحسين حصول المنتجين الزراعيين ورواد الأعمال الريفيين على الائتمان، مع مشروع تجريبي لمربي الدواجن واحتمال توسيعه ليشمل تربية الأسماك."
+        },
+        "pt": {
+          "title": "FAO e a Sociedade Gabonesa de Garantia estudam parceria de financiamento agrícola",
+          "summary": "A FAO no Gabão e a Sociedade Gabonesa de Garantia discutiram uma parceria para melhorar o acesso ao crédito de produtores agrícolas e empreendedores rurais, com um projeto-piloto para avicultores e possível expansão para a piscicultura."
+        },
+        "sw": {
+          "title": "FAO na Kampuni ya Dhamana ya Gabon zachunguza ushirikiano wa ufadhili wa kilimo",
+          "summary": "FAO nchini Gabon na Kampuni ya Dhamana ya Gabon zilijadili ushirikiano wa kuboresha upatikanaji wa mikopo kwa wazalishaji wa kilimo na wajasiriamali wa vijijini, ukiwa na mradi wa majaribio kwa wafugaji wa kuku na uwezekano wa kupanuliwa kwa ufugaji wa samaki."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "KM",
