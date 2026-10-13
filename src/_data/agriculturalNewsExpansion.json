@@ -2899,18 +2899,39 @@
     },
     {
       "country_code": "SO",
-      "category": "climate",
-      "title": "UK adds £2.5 million to RESTORE for Somali flood preparedness and resilient livelihoods",
-      "summary": "FAO reports additional UK funding for RESTORE to strengthen early warning, flood protection, temporary relocation and cash assistance, alongside longer-term water management and climate-adaptive farming in Somalia's Shabelle Basin.",
+      "category": "weather-climate",
+      "title": "UK adds £2.5 million to Somalia’s RESTORE project for flood preparedness",
+      "summary": "FAO reported that the United Kingdom allocated an additional £2.5 million through the RESTORE project to restore riverine ecosystems and improve water management along the Shabelle River. The work is intended to help vulnerable communities prepare for anticipated El Niño-related flooding during the October–December 2026 rainy season.",
       "url": "https://www.fao.org/somalia/news/details/uk-commits--2.5-million-to-restore-to-help-somali-commun-ities-prepare-for-el-ni%C3%B1o-flooding/en",
       "source": "FAO in Somalia",
       "source_tier": 1,
       "published": "2026-09-30",
       "discovered": "2026-10-13",
-      "status": "review",
+      "status": "official",
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct official FAO country article located. Confirm the summary and distinguish the project funding announcement from other RESTORE/JOSP stories before approval."
+      "review_reason": "Direct official FAO country article located. Confirm the summary and distinguish the project funding announcement from other RESTORE/JOSP stories before approval.",
+      "source_id": "fao-so",
+      "verified": "2026-10-13",
+      "translation_status": "translated",
+      "translations": {
+        "fr": {
+          "title": "Le Royaume-Uni ajoute 2,5 millions de livres au projet RESTORE en Somalie pour préparer les inondations",
+          "summary": "La FAO a indiqué que le Royaume-Uni avait alloué 2,5 millions de livres supplémentaires au projet RESTORE pour restaurer les écosystèmes riverains et améliorer la gestion de l’eau le long du Chébéli. Les travaux doivent aider les communautés vulnérables à se préparer aux inondations liées à El Niño prévues pendant la saison des pluies d’octobre à décembre 2026."
+        },
+        "ar": {
+          "title": "المملكة المتحدة تضيف 2.5 مليون جنيه إسترليني لمشروع RESTORE في الصومال للاستعداد للفيضانات",
+          "summary": "أفادت الفاو بأن المملكة المتحدة خصصت 2.5 مليون جنيه إسترليني إضافية عبر مشروع RESTORE لاستعادة النظم البيئية النهرية وتحسين إدارة المياه على طول نهر شبيلي. ويهدف العمل إلى مساعدة المجتمعات المعرضة للخطر على الاستعداد للفيضانات المتوقعة المرتبطة بظاهرة النينيو خلال موسم الأمطار من أكتوبر إلى ديسمبر 2026."
+        },
+        "pt": {
+          "title": "Reino Unido acrescenta 2,5 milhões de libras ao projeto RESTORE na Somália para preparação contra cheias",
+          "summary": "A FAO informou que o Reino Unido destinou mais 2,5 milhões de libras ao projeto RESTORE para recuperar ecossistemas ribeirinhos e melhorar a gestão da água ao longo do rio Shabelle. O trabalho pretende ajudar comunidades vulneráveis a prepararem-se para as cheias associadas ao El Niño previstas para a época chuvosa de outubro a dezembro de 2026."
+        },
+        "sw": {
+          "title": "Uingereza yaongeza pauni milioni 2.5 kwa mradi wa RESTORE nchini Somalia kujiandaa na mafuriko",
+          "summary": "FAO iliripoti kuwa Uingereza ilitenga pauni milioni 2.5 za ziada kupitia mradi wa RESTORE kurejesha mifumo ya ikolojia kando ya mito na kuboresha usimamizi wa maji kwenye Mto Shabelle. Kazi hiyo inalenga kusaidia jamii zilizo hatarini kujiandaa kwa mafuriko yanayotarajiwa kuhusishwa na El Niño katika msimu wa mvua wa Oktoba hadi Desemba 2026."
+        }
+      }
     },
     {
       "country_code": "SO",
@@ -3216,6 +3237,198 @@
       "coverage_scope": "country_specific",
       "source_language": "fr",
       "review_reason": "Direct official FAO article in French located. Review the translated title/summary and confirm whether this story adds distinct value beyond the related equipment-delivery article before approval."
+    },
+    {
+      "country_code": "CV",
+      "category": "irrigation",
+      "title": "Cabo Verde reviews progress on its agricultural water-mobilization project",
+      "summary": "Cabo Verde’s agriculture ministry reviewed progress and outstanding technical, administrative and financial issues in a Hungarian-credit-funded project to mobilize water for agriculture. The ministry reported that the Achada Baleia desalination unit on Santiago was operating and had produced more than 30,000 cubic metres of water, while other works remained underway across Santiago, São Vicente, Maio and Boa Vista.",
+      "url": "https://www.maa.gov.cv/index.php/noticias/435-madrp-e-vtk-innosystem-avaliam-avancos-e-desafios-do-projeto-de-mobilizacao-de-agua-para-a-agricultura",
+      "source": "Cabo Verde Ministry of Agriculture and Environment",
+      "source_id": "maa-cv",
+      "source_tier": 1,
+      "published": "2026-10-12",
+      "verified": "2026-10-13",
+      "status": "official",
+      "translation_status": "translated",
+      "translations": {
+        "fr": {
+          "title": "Le Cap-Vert fait le point sur son projet de mobilisation de l’eau pour l’agriculture",
+          "summary": "Le ministère capverdien de l’Agriculture a examiné les progrès et les difficultés techniques, administratives et financières d’un projet de mobilisation de l’eau financé par une ligne de crédit hongroise. L’unité de dessalement d’Achada Baleia, à Santiago, était opérationnelle et avait produit plus de 30 000 mètres cubes d’eau, tandis que d’autres travaux se poursuivaient à Santiago, São Vicente, Maio et Boa Vista."
+        },
+        "ar": {
+          "title": "الرأس الأخضر يستعرض التقدم في مشروع تعبئة المياه للزراعة",
+          "summary": "استعرضت وزارة الزراعة في الرأس الأخضر التقدم والتحديات الفنية والإدارية والمالية في مشروع لتعبئة المياه للزراعة ممول بخط ائتمان مجري. وأفادت الوزارة بأن وحدة تحلية المياه في أشادا بااليا بجزيرة سانتياغو تعمل وقد أنتجت أكثر من 30 ألف متر مكعب من المياه، فيما تستمر أعمال أخرى في سانتياغو وساو فيسنتي ومايو وبوا فيستا."
+        },
+        "pt": {
+          "title": "MADRP e VTK Innosystem avaliam avanços e desafios do projeto de mobilização de água para a agricultura",
+          "summary": "O Ministério da Agricultura de Cabo Verde analisou os avanços e as questões técnicas, administrativas e financeiras pendentes num projeto de mobilização de água para a agricultura financiado por uma linha de crédito húngara. A unidade de dessalinização de Achada Baleia, em Santiago, estava operacional e já tinha produzido mais de 30 mil metros cúbicos de água, enquanto continuavam trabalhos em Santiago, São Vicente, Maio e Boa Vista."
+        },
+        "sw": {
+          "title": "Cabo Verde yakagua maendeleo ya mradi wa maji kwa kilimo",
+          "summary": "Wizara ya Kilimo ya Cabo Verde ilikagua maendeleo na changamoto za kiufundi, kiutawala na kifedha za mradi wa maji kwa kilimo unaofadhiliwa kupitia mkopo wa Hungary. Kituo cha kuondoa chumvi majini cha Achada Baleia huko Santiago kilikuwa kikifanya kazi na kilikuwa kimezalisha zaidi ya mita za ujazo 30,000 za maji, huku kazi nyingine zikiendelea Santiago, São Vicente, Maio na Boa Vista."
+        }
+      }
+    },
+    {
+      "country_code": "BJ",
+      "category": "finance",
+      "title": "Benin allocates FCFA 561.8 million in agricultural insurance compensation",
+      "summary": "Benin’s government announced FCFA 561.8 million in compensation for rice and cotton producers who suffered yield losses during the 2025–2026 season. The payments were made under a pilot multi-risk agricultural index-insurance project launched in 2024; farmers should confirm eligibility and any current programme terms with the responsible authorities.",
+      "url": "https://www.gouv.bj/article/3628/assurance-agricole-millions-fcfa-proteger-producteurs-face-aleas-climatiques/",
+      "source": "Government of Benin",
+      "source_id": "gouv-bj",
+      "source_tier": 1,
+      "published": "2026-08-09",
+      "verified": "2026-10-13",
+      "status": "official",
+      "translation_status": "translated",
+      "translations": {
+        "fr": {
+          "title": "Le Bénin alloue 561,8 millions de FCFA d’indemnités d’assurance agricole",
+          "summary": "Le gouvernement béninois a annoncé 561,8 millions de FCFA d’indemnités pour les producteurs de riz et de coton ayant subi des pertes de rendement pendant la campagne 2025-2026. Les paiements relèvent d’un projet pilote d’assurance agricole indicielle multirisque lancé en 2024 ; les agriculteurs doivent confirmer leur admissibilité et les conditions actuelles auprès des autorités compétentes."
+        },
+        "ar": {
+          "title": "بنين تخصص 561.8 مليون فرنك أفريقي لتعويضات التأمين الزراعي",
+          "summary": "أعلنت حكومة بنين تخصيص 561.8 مليون فرنك أفريقي لتعويض منتجي الأرز والقطن الذين تكبدوا خسائر في الإنتاج خلال موسم 2025–2026. وتندرج المدفوعات ضمن مشروع تجريبي للتأمين الزراعي متعدد المخاطر القائم على المؤشرات أُطلق عام 2024؛ وينبغي للمزارعين تأكيد الأهلية والشروط الحالية لدى السلطات المختصة."
+        },
+        "pt": {
+          "title": "Benim atribui 561,8 milhões de FCFA em indemnizações de seguro agrícola",
+          "summary": "O Governo do Benim anunciou 561,8 milhões de FCFA em indemnizações para produtores de arroz e algodão que sofreram perdas de rendimento na campanha de 2025–2026. Os pagamentos integram um projeto-piloto de seguro agrícola por índices e multirriscos lançado em 2024; os agricultores devem confirmar a elegibilidade e as condições atuais junto das autoridades competentes."
+        },
+        "sw": {
+          "title": "Benin yatenga FCFA milioni 561.8 kwa fidia ya bima ya kilimo",
+          "summary": "Serikali ya Benin ilitangaza fidia ya FCFA milioni 561.8 kwa wakulima wa mpunga na pamba waliopata hasara ya mavuno katika msimu wa 2025–2026. Malipo hayo ni sehemu ya mradi wa majaribio wa bima ya kilimo ya hatari nyingi unaotegemea viashiria ulioanzishwa mwaka 2024; wakulima wanapaswa kuthibitisha ustahiki na masharti ya sasa kwa mamlaka husika."
+        }
+      }
+    },
+    {
+      "country_code": "BJ",
+      "category": "crops",
+      "title": "Benin advances local processing of cassava and other agricultural products",
+      "summary": "During a June 2026 field visit, Benin’s agriculture ministry highlighted progress on a cassava-processing unit at Paouignan and called for more domestic processing of value chains including cashew, rice, cassava and cotton. The announcement emphasizes adding value locally rather than exporting only raw commodities.",
+      "url": "https://www.gouv.bj/article/3539/secteur-agricole-benin-mise-transformation-locale-productions/",
+      "source": "Government of Benin",
+      "source_id": "gouv-bj",
+      "source_tier": 1,
+      "published": "2026-06-16",
+      "verified": "2026-10-13",
+      "status": "official",
+      "translation_status": "translated",
+      "translations": {
+        "fr": {
+          "title": "Le Bénin accélère la transformation locale du manioc et d’autres produits agricoles",
+          "summary": "Lors d’une visite de terrain en juin 2026, le ministère béninois de l’Agriculture a mis en avant l’avancement d’une unité de transformation du manioc à Paouignan et appelé à développer la transformation locale de filières comme l’anacarde, le riz, le manioc et le coton. L’objectif est de créer davantage de valeur sur place plutôt que d’exporter uniquement des produits bruts."
+        },
+        "ar": {
+          "title": "بنين تعزز التصنيع المحلي للكسافا والمنتجات الزراعية الأخرى",
+          "summary": "خلال زيارة ميدانية في يونيو 2026، سلطت وزارة الزراعة في بنين الضوء على تقدم إنشاء وحدة لمعالجة الكسافا في باوانيان ودعت إلى توسيع التصنيع المحلي لسلاسل قيمة الكاجو والأرز والكسافا والقطن. وتركز المبادرة على إضافة القيمة محلياً بدلاً من تصدير السلع الخام فقط."
+        },
+        "pt": {
+          "title": "Benim promove o processamento local da mandioca e de outros produtos agrícolas",
+          "summary": "Durante uma visita de campo em junho de 2026, o Ministério da Agricultura do Benim destacou o avanço de uma unidade de processamento de mandioca em Paouignan e apelou a mais transformação local de cadeias como caju, arroz, mandioca e algodão. O objetivo é acrescentar valor no país em vez de exportar apenas matérias-primas."
+        },
+        "sw": {
+          "title": "Benin yaendeleza uchakataji wa ndani wa muhogo na mazao mengine",
+          "summary": "Wakati wa ziara ya uwanjani Juni 2026, Wizara ya Kilimo ya Benin ilieleza maendeleo ya kituo cha kuchakata muhogo huko Paouignan na kuhimiza uchakataji wa ndani wa korosho, mpunga, muhogo na pamba. Lengo ni kuongeza thamani nchini badala ya kuuza mazao ghafi pekee."
+        }
+      }
+    },
+    {
+      "country_code": "SZ",
+      "category": "crops",
+      "title": "FAO and Eswatini strengthen banana biosecurity against Fusarium wilt",
+      "summary": "FAO, Eswatini’s government and SADC, with European Union support, held training on recognizing and managing Fusarium wilt. The initiative is intended to strengthen national surveillance and preventive measures protecting banana production and related livelihoods.",
+      "url": "https://www.fao.org/eswatini/news/news-details/fao-strengthens-banana-biosecurity-through-fusarium-wilt-recognition-and-management-training/en",
+      "source": "FAO in Eswatini",
+      "source_id": "fao-sz",
+      "source_tier": 1,
+      "published": "2026-09-15",
+      "verified": "2026-10-13",
+      "status": "official",
+      "translation_status": "translated",
+      "translations": {
+        "fr": {
+          "title": "La FAO et l’Eswatini renforcent la biosécurité de la banane contre la fusariose",
+          "summary": "La FAO, le gouvernement de l’Eswatini et la SADC, avec le soutien de l’Union européenne, ont organisé une formation sur la reconnaissance et la gestion de la fusariose. L’initiative vise à renforcer la surveillance nationale et les mesures préventives pour protéger la production de bananes et les moyens de subsistance associés."
+        },
+        "ar": {
+          "title": "الفاو وإسواتيني تعززان الأمن الحيوي للموز ضد مرض الذبول الفيوزاريومي",
+          "summary": "نظمت منظمة الأغذية والزراعة وحكومة إسواتيني ومجموعة تنمية الجنوب الأفريقي، بدعم من الاتحاد الأوروبي، تدريباً على التعرف على مرض الذبول الفيوزاريومي وإدارته. وتهدف المبادرة إلى تعزيز الرصد الوطني والتدابير الوقائية لحماية إنتاج الموز وسبل العيش المرتبطة به."
+        },
+        "pt": {
+          "title": "FAO e Essuatíni reforçam a biossegurança da banana contra a murcha de Fusarium",
+          "summary": "A FAO, o Governo de Essuatíni e a SADC, com apoio da União Europeia, realizaram formação sobre o reconhecimento e a gestão da murcha de Fusarium. A iniciativa pretende reforçar a vigilância nacional e as medidas preventivas para proteger a produção de banana e os meios de subsistência associados."
+        },
+        "sw": {
+          "title": "FAO na Eswatini yaimarisha usalama wa migomba dhidi ya mnyauko wa Fusarium",
+          "summary": "FAO, serikali ya Eswatini na SADC, kwa msaada wa Umoja wa Ulaya, ziliendesha mafunzo ya kutambua na kudhibiti mnyauko wa Fusarium. Mpango huu unalenga kuimarisha ufuatiliaji wa kitaifa na hatua za kinga zinazolinda uzalishaji wa ndizi na maisha yanayotegemea zao hilo."
+        }
+      }
+    },
+    {
+      "country_code": "SZ",
+      "category": "markets",
+      "title": "Eswatini strengthens plant-health certification and export trade through ePhyto training",
+      "summary": "FAO and Eswatini’s Ministry of Agriculture supported training for plant-product industry stakeholders on the electronic phytosanitary certification system known as ePhyto. The initiative aims to modernize plant-health trade procedures and improve alignment with international standards.",
+      "url": "https://www.fao.org/eswatini/news/news-details/eswatini-strengthens-plant-health-certification-and-trade-facilitation-through-ephyto-training/en",
+      "source": "FAO in Eswatini",
+      "source_id": "fao-sz",
+      "source_tier": 1,
+      "published": "2026-07-30",
+      "verified": "2026-10-13",
+      "status": "official",
+      "translation_status": "translated",
+      "translations": {
+        "fr": {
+          "title": "L’Eswatini renforce la certification phytosanitaire et le commerce grâce à la formation ePhyto",
+          "summary": "La FAO et le ministère de l’Agriculture de l’Eswatini ont soutenu une formation destinée aux acteurs des produits végétaux sur le système électronique de certification phytosanitaire ePhyto. L’initiative vise à moderniser les procédures commerciales liées à la santé des végétaux et à mieux respecter les normes internationales."
+        },
+        "ar": {
+          "title": "إسواتيني تعزز شهادات صحة النبات والتجارة عبر التدريب على نظام ePhyto",
+          "summary": "دعمت منظمة الأغذية والزراعة ووزارة الزراعة في إسواتيني تدريب أصحاب المصلحة في قطاع المنتجات النباتية على نظام الشهادات الإلكترونية للصحة النباتية المعروف باسم ePhyto. وتهدف المبادرة إلى تحديث إجراءات التجارة المرتبطة بصحة النبات وتعزيز التوافق مع المعايير الدولية."
+        },
+        "pt": {
+          "title": "Essuatíni reforça a certificação fitossanitária e o comércio com formação em ePhyto",
+          "summary": "A FAO e o Ministério da Agricultura de Essuatíni apoiaram uma formação para intervenientes do setor de produtos vegetais sobre o sistema eletrónico de certificação fitossanitária ePhyto. A iniciativa pretende modernizar os procedimentos comerciais fitossanitários e melhorar a conformidade com as normas internacionais."
+        },
+        "sw": {
+          "title": "Eswatini yaimarisha vyeti vya afya ya mimea na biashara kupitia mafunzo ya ePhyto",
+          "summary": "FAO na Wizara ya Kilimo ya Eswatini ziliunga mkono mafunzo kwa wadau wa bidhaa za mimea kuhusu mfumo wa kielektroniki wa vyeti vya afya ya mimea unaoitwa ePhyto. Mpango huu unalenga kuboresha taratibu za biashara ya mimea na kuimarisha ulinganifu na viwango vya kimataifa."
+        }
+      }
+    },
+    {
+      "country_code": "ZA",
+      "category": "markets",
+      "title": "South African cherry producers gain market access to China",
+      "summary": "South Africa’s Department of Agriculture reported that a sanitary and phytosanitary protocol was signed to open the Chinese market to South African cherries. Exporters should confirm the current import protocol, certification and operational requirements with the relevant authorities before shipping.",
+      "url": "https://www.gov.za/news/media-statements/minister-willie-aucamp-signs-protocol-opening-market-export-south-african",
+      "source": "South African Government, Department of Agriculture",
+      "source_id": "govza-agriculture",
+      "source_tier": 1,
+      "published": "2026-09-08",
+      "verified": "2026-10-13",
+      "status": "official",
+      "translation_status": "translated",
+      "translations": {
+        "fr": {
+          "title": "Les producteurs sud-africains de cerises obtiennent un accès au marché chinois",
+          "summary": "Le ministère sud-africain de l’Agriculture a annoncé la signature d’un protocole sanitaire et phytosanitaire ouvrant le marché chinois aux cerises sud-africaines. Avant toute expédition, les exportateurs doivent confirmer auprès des autorités les exigences actuelles du protocole d’importation, de certification et d’exploitation."
+        },
+        "ar": {
+          "title": "منتجو الكرز في جنوب أفريقيا يحصلون على منفذ إلى السوق الصينية",
+          "summary": "أعلنت وزارة الزراعة في جنوب أفريقيا توقيع بروتوكول للصحة والصحة النباتية يفتح السوق الصينية أمام الكرز الجنوب أفريقي. وينبغي للمصدرين تأكيد متطلبات الاستيراد والشهادات والإجراءات التشغيلية الحالية لدى السلطات المختصة قبل الشحن."
+        },
+        "pt": {
+          "title": "Produtores sul-africanos de cereja obtêm acesso ao mercado chinês",
+          "summary": "O Departamento de Agricultura da África do Sul informou que foi assinado um protocolo sanitário e fitossanitário para abrir o mercado chinês às cerejas sul-africanas. Antes de exportar, os produtores devem confirmar junto das autoridades os requisitos atuais de importação, certificação e operação."
+        },
+        "sw": {
+          "title": "Wazalishaji wa cherries wa Afrika Kusini wapata ufikiaji wa soko la China",
+          "summary": "Idara ya Kilimo ya Afrika Kusini ilitangaza kusainiwa kwa itifaki ya afya ya mimea na usalama wa chakula inayofungua soko la China kwa cherries za Afrika Kusini. Kabla ya kusafirisha bidhaa, wauzaji nje wanapaswa kuthibitisha mahitaji ya sasa ya uingizaji, vyeti na taratibu kwa mamlaka husika."
+        }
+      }
     }
   ]
 }
