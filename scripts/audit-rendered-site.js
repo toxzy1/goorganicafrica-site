@@ -188,8 +188,8 @@ for (const [rel, prefix] of [
 // Step 7: verify Resources and Agricultural News are rendered in all five languages.
 const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
-const hasLang = (html, lang) => new RegExp('<html\b[^>]*\blang="' + lang + '"', "i").test(html);
-const hasRtl = (html) => new RegExp('<html\b[^>]*\bdir="rtl"', "i").test(html);
+const hasLang = (html, lang) => { const match = html.match(/<html\b[^>]*\blang=["\']([^"\']+)["\']/i); return !!match && match[1].split("-")[0].toLowerCase() === lang; };
+const hasRtl = (html) => /<html\b[^>]*\bdir=["\']rtl["\']/i.test(html);
 const resourcePages = enabledLanguages.map((lang) => ({
   lang,
   rel: languagePrefix(lang) + "agriculture-resources/index.html",
