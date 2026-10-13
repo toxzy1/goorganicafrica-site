@@ -1866,9 +1866,27 @@
       "source_tier": 1,
       "published": "2026-06-30",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "coverage_scope": "country",
+      "translations": {
+        "fr": {
+          "title": "La FAO et le Niger réaffirment leur partenariat pour une agriculture inclusive et durable",
+          "summary": "À la suite d’une mission de haut niveau à Niamey en juin 2026, la FAO et les partenaires du Niger ont réaffirmé leur coopération sur la transformation agricole, le développement rural et le lien entre action humanitaire, développement et paix. La mise à jour présente les priorités de coordination des politiques et de partenariat."
+        },
+        "ar": {
+          "title": "الفاو والنيجر تؤكدان مجدداً الشراكة من أجل زراعة شاملة ومستدامة",
+          "summary": "عقب بعثة رفيعة المستوى إلى نيامي في يونيو 2026، أكدت الفاو وشركاء النيجر التعاون في التحول الزراعي والتنمية الريفية والربط بين العمل الإنساني والتنمية والسلام. وتلخص التحديثات أولويات تنسيق السياسات والشراكات."
+        },
+        "pt": {
+          "title": "FAO e Níger reafirmam a parceria para uma agricultura inclusiva e sustentável",
+          "summary": "Após uma missão de alto nível a Niamey em junho de 2026, a FAO e os parceiros do Níger reafirmaram a cooperação na transformação agrícola, desenvolvimento rural e ligação entre ação humanitária, desenvolvimento e paz. A atualização resume prioridades de coordenação política e parceria."
+        },
+        "sw": {
+          "title": "FAO na Niger zathibitisha upya ushirikiano wa kilimo jumuishi na endelevu",
+          "summary": "Baada ya ujumbe wa ngazi ya juu mjini Niamey mwezi Juni 2026, FAO na washirika wa Niger walithibitisha ushirikiano katika mageuzi ya kilimo, maendeleo ya vijijini na uhusiano kati ya misaada ya kibinadamu, maendeleo na amani. Taarifa inaeleza vipaumbele vya uratibu wa sera na ushirikiano."
+        }
+      }
     },
     {
       "country_code": "SS",
