@@ -148,6 +148,14 @@ const newsReviewCandidatesByCountry=newsCountryList.map(c=>({
  name:c.name,
  count:newsReviewQueue.filter(r=>String(r.country_code||r.code||"").toUpperCase()===String(c.code||"").toUpperCase()).length
 })).filter(c=>c.count>0).sort((a,b)=>b.count-a.count);
+const countryReviewPriorities=newsCountryCoverage.map(c=>({
+ code:c.code,
+ name:c.name,
+ current_country_specific_stories:c.country_specific_story_count,
+ current_country_specific_sources:c.country_specific_source_count,
+ pending_review_candidates:(newsReviewCandidatesByCountry.find(r=>r.code===String(c.code||"").toUpperCase())||{}).count||0
+})).filter(c=>c.current_country_specific_stories<4||c.current_country_specific_sources<3)
+.sort((a,b)=>a.current_country_specific_stories-b.current_country_specific_stories||a.current_country_specific_sources-b.current_country_specific_sources||b.pending_review_candidates-a.pending_review_candidates);
 const publishableMarkets=markets.filter(r=>!isResourceReviewRecord(r)&&!["expired","closed"].includes(String(r.status||"").toLowerCase())&&!["expired","closed","historical"].includes(String(r.lifecycle||"").toLowerCase()));
 const marketReviewQueue=markets.filter(r=>!publishableMarkets.includes(r));
 const publishableServices=services.filter(r=>!isResourceReviewRecord(r)&&!["expired","closed"].includes(String(r.status||"").toLowerCase())&&!["expired","closed","historical"].includes(String(r.lifecycle||"").toLowerCase()));
@@ -175,7 +183,7 @@ const report={
  service_review_queue:{total:serviceReviewQueue.length,missing_verification_date:serviceReviewQueue.filter(r=>!(r.verified_date||r.verified)).length},
  opportunities:{total:opp.length,review:opp.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length,needs_reverification:opp.filter(r=>["open","active"].includes(String(r.status).toLowerCase())&&(!r.verified||age(r.verified)===null||age(r.verified)>14)).length,missing_verification_date:opp.filter(r=>!(r.verified)).length,expired:opp.filter(r=>r.deadline&&age(r.deadline)!==null&&new Date(r.deadline)<today).length,invalid_deadline_date:opp.filter(r=>r.deadline&&age(r.deadline)===null).length},
  news:{total:news.length,stale:news.filter(r=>{const d=r.published||r.date;return !d||age(d)===null||age(d)>30;}).length,missing_publication_date:news.filter(r=>!(r.published||r.date)).length,future_publication_dates:news.filter(r=>{const d=r.published||r.date;return d&&age(d)!==null&&age(d)<0;}).map(r=>({country_code:r.country_code||r.code||"",title:r.title||"",published:r.published||r.date,url:r.url||"",lifecycle:r.lifecycle||""})),review:news.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length},
- news_country_coverage:{countries:newsCountryCoverage.length,zero_story_countries:newsCountryCoverage.filter(c=>c.story_count===0),single_story_countries:newsCountryCoverage.filter(c=>c.story_count===1),under_four_story_countries:newsCountryCoverage.filter(c=>c.story_count<4),under_four_country_specific_story_countries:newsCountryCoverage.filter(c=>c.country_specific_story_count<4),single_source_countries:newsCountryCoverage.filter(c=>c.source_count===1),under_three_sources_countries:newsCountryCoverage.filter(c=>c.source_count<3),under_three_country_specific_sources:newsCountryCoverage.filter(c=>c.country_specific_source_count<3),review_candidates:newsReviewQueue.length,review_candidates_by_country:newsReviewCandidatesByCountry,coverage_by_country:newsCountryCoverage},
+ news_country_coverage:{countries:newsCountryCoverage.length,zero_story_countries:newsCountryCoverage.filter(c=>c.story_count===0),single_story_countries:newsCountryCoverage.filter(c=>c.story_count===1),under_four_story_countries:newsCountryCoverage.filter(c=>c.story_count<4),under_four_country_specific_story_countries:newsCountryCoverage.filter(c=>c.country_specific_story_count<4),single_source_countries:newsCountryCoverage.filter(c=>c.source_count===1),under_three_sources_countries:newsCountryCoverage.filter(c=>c.source_count<3),under_three_country_specific_sources:newsCountryCoverage.filter(c=>c.country_specific_source_count<3),review_candidates:newsReviewQueue.length,review_candidates_by_country:newsReviewCandidatesByCountry,country_review_priorities:countryReviewPriorities,coverage_by_country:newsCountryCoverage},
  source_quality:sourceQuality,
  action:"Review flagged records in CMS before publication or replacement. Duplicate and generic-source findings are review flags only; this monitor never deletes or changes live records."
 };
