@@ -56,8 +56,12 @@ language: en
   <noscript><p class="goa-search-empty" data-i18n="search.noScript">Please enable JavaScript to use Global Search.</p></noscript>
 
   <div id="goa-search-source" hidden>
-    {% for r in agriculturalResourcesAll %}
-      <article data-type="Resource" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url or '' }}"></article>
+    {% for country in agriculturalResourcesAll.countries %}
+      {% for category in agriculturalResourcesAll.categories %}
+        {% for r in country.records[category] %}
+          <article data-type="Resource" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ category }} · {{ r.source or '' }}" data-url="{{ r.url or r.source_url or '' }}"></article>
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
     {% for country in agriculturalNewsMerged.countries %}
       {% for r in country.articles %}
