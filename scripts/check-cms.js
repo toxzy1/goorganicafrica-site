@@ -113,7 +113,7 @@ for (const [name, file] of [
   ["agricultural data", ".github/workflows/ag-data-monitor.yml"]
 ]) {
   const workflowText = read(file);
-  if (!workflowText.includes("peter-evans/create-pull-request@v7") || !workflowText.includes("draft: true") || /\bgit\s+push\b/.test(workflowText)) {
+  if (!workflowText.includes("peter-evans/create-pull-request@v7") || !workflowText.includes("draft: true") || !workflowText.includes("actions/checkout@v4") || !workflowText.includes("actions/setup-node@v4") || !workflowText.includes("run: npm ci") || /\bgit\s+push\b/.test(workflowText)) {
     throw new Error("Scheduled " + name + " discovery must use a draft review PR and must not push directly.");
   }
 }
