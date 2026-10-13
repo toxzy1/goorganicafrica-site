@@ -453,6 +453,16 @@ for (const rel of ["agricultural-news.njk", "agricultural-news-country.njk", "se
   if (rel === "search.njk" && template.includes('r.lifecycle == "current" and r.url')) failures.push(rel + ": strict lifecycle filter hides legacy official news from search");
 }
 
+// Keep fallback routes localized in source templates even when there are no approved stories.
+for (const [rel, lang] of [["agricultural-news-country.njk","en"],["fr/agricultural-news-country.njk","fr"],["ar/agricultural-news-country.njk","ar"],["pt/agricultural-news-country.njk","pt"],["sw/agricultural-news-country.njk","sw"]]) {
+  const p = path.join(source, rel);
+  if (!fs.existsSync(p)) { failures.push("Missing country-news template: " + rel); continue; }
+  const template = fs.readFileSync(p, "utf8");
+  if (!template.includes("news-empty-fallback") || !template.includes('href="/search/"')) failures.push(rel + ": empty state must offer a search route");
+  const prefix = lang === "en" ? "" : "/" + lang;
+  if (!template.includes('href="' + prefix + '/agriculture-resources/"') || !template.includes('href="' + prefix + '/opportunities/"')) failures.push(rel + ": empty state must link to localized resources and opportunities");
+}
+
 const newsSourcePath = path.join(source, "_data", "agriculturalNews.json");
 if (fs.existsSync(newsSourcePath)) {
   const newsData = JSON.parse(fs.readFileSync(newsSourcePath, "utf8"));
@@ -475,13 +485,11 @@ if (fs.existsSync(newsSourcePath)) {
           failures.push(rel + ": incorrect or missing language target for " + targetLang);
         }
       }
-            const storyCards = (html.match(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["']/gi) || []).length;
+            const storyCards = (html.match(/<article\\b[^>]*class=["'][^"']*\\bcard\\b[^"']*["']/gi) || []).length;
       if (storyCards === 0) {
-        const localizedPrefix = lang === "en" ? "" : "/" + lang;
-        const fallbackIsUseful = html.includes('class="card news-empty-fallback"') &&
-          html.includes('href="' + localizedPrefix + '/agriculture-resources/"') &&
-          html.includes('href="' + localizedPrefix + '/opportunities/"') &&
-          html.includes('href="/search/"');
+        // An empty story queue is acceptable only when the page explains the gap
+        // and gives visitors a working route into other agriculture content.
+        const fallbackIsUseful = html.includes("news-empty-fallback") && html.includes('href="/search/"');
         if (!fallbackIsUseful) emptyNewsPages.push({ lang, country: country.name || country.code, rel });
       }
 
