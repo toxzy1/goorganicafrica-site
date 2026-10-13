@@ -23,7 +23,10 @@ const uiFiles = [
 for (const file of uiFiles) {
   if (!fs.existsSync(file)) continue;
   const source = fs.readFileSync(file, 'utf8');
-  for (const match of source.matchAll(/data-i18n(?:-[\w-]+)?=["']([^"']+)["']/g)) keys.add(match[1]);
+  for (const match of source.matchAll(/data-i18n(?:-[\w-]+)?=["']([^"']+)["']/g)) {
+    const key = match[1].trim();
+    if (key && !/[{}]/.test(key)) keys.add(key);
+  }
 }
 
 const missing = [];
