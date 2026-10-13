@@ -475,7 +475,7 @@ if (fs.existsSync(newsSourcePath)) {
           failures.push(rel + ": incorrect or missing language target for " + targetLang);
         }
       }
-      const storyCards = (html.match(/<article\\b[^>]*class=["'][^"']*\\bcard\\b[^"']*["']/gi) || []).length;
+            const storyCards = (html.match(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["']/gi) || []).length;
       if (storyCards === 0) {
         const localizedPrefix = lang === "en" ? "" : "/" + lang;
         const fallbackIsUseful = html.includes('class="card news-empty-fallback"') &&
