@@ -39,6 +39,5 @@
   btn.addEventListener("click",render);
   country.addEventListener("change",()=>{out.innerHTML="<p>"+esc(tr("chooseTopic"))+" <strong>"+esc(tr("buildButton"))+"</strong>.</p>";});
   document.addEventListener("goa:languagechange",()=>{if(!country.value){out.innerHTML="<p>"+esc(tr("initialPrompt"))+"</p>";}});
-  document.addEventListener("goa:languagechange",()=>{if(!country.value){out.innerHTML="<p>"+esc(tr("initialPrompt"))+"</p>";}});
 })();
 </script>
