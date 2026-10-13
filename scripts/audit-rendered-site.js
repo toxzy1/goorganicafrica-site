@@ -247,6 +247,21 @@ if (searchHtml) {
     for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
       if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("search/index.html: no searchable " + type + " records");
     }
+    const records = [...sourceBlock.matchAll(/<article\\b([^>]*)>/gi)];
+    let unusable = 0;
+    for (const match of records) {
+      const attrs = match[1];
+      const urlMatch = attrs.match(/\\bdata-url=["']([^"']*)["']/i);
+      const titleMatch = attrs.match(/\\bdata-title=["']([^"']*)["']/i);
+      const title = titleMatch ? titleMatch[1].trim() : "";
+      const url = urlMatch ? urlMatch[1].trim() : "";
+      if (!title || !searchTargetExists(url)) {
+        unusable++;
+        failures.push("search/index.html: indexed " + ((attrs.match(/\\bdata-type=["']([^"']*)["']/i) || [,"unknown"])[1]) +
+          " record has missing title or unusable destination: " + (title || "(untitled)") + " -> " + (url || "(no URL)"));
+      }
+    }
+    if (unusable) failures.push("search/index.html: " + unusable + " indexed records cannot lead visitors to a usable destination");
   }
 }
 
@@ -271,8 +286,9 @@ function searchTargetExists(rawUrl) {
   }
   return candidates.some(candidate => {
     const resolved = path.resolve(candidate);
-    return resolved.startsWith(path.resolve(site) + path.sep) || resolved === path.resolve(site + "/index.html");
-  }) && candidates.some(candidate => fs.existsSync(candidate) && fs.statSync(candidate).isFile());
+    const withinSite = resolved.startsWith(path.resolve(site) + path.sep) || resolved === path.resolve(site + "/index.html");
+    return withinSite && fs.existsSync(resolved) && fs.statSync(resolved).isFile();
+  });
 }
 
 const decisionHtml = read("farmer-decision-centre/index.html");
