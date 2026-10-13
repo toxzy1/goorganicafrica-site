@@ -216,9 +216,11 @@ if (!mergeScript.includes("title: record.headline || record.name ||") ||
     !mergeScript.includes("country.records[category].push(candidate)")) {
   throw new Error("Agricultural intelligence merge must normalize headline-only records before public rendering.");
 }
-if (!mergeScript.includes("resourceGapFiles") || !mergeScript.includes("agriculturalResourcesSupplement.json") ||
-    !freshnessMonitor.includes("resourceGapFiles") || !freshnessMonitor.includes("allResourceRecords")) {
-  throw new Error("Country resource-gap files must be included in the site build merge and agricultural data audit.");
+if (mergeScript.includes("resourceGapFiles") || !mergeScript.includes("agriculturalResourcesSupplement.json") ||
+    !freshnessMonitor.includes("resourceGapFiles") ||
+    !freshnessMonitor.includes('resource_review_queue:sourceUrlAudit(resourceQueue,true,"resources")') ||
+    !eleventySource.includes('gapRecords.map(record => ({ ...record, lifecycle: record.lifecycle || "needs_review" }))')) {
+  throw new Error("Country resource-gap candidates must remain in the review queue and must not be merged directly into public data.");
 }
 
 if (!freshnessMonitor.includes("missing_verification_date") || !freshnessMonitor.includes("!r.verified||age(r.verified)===null||age(r.verified)>14") || !freshnessMonitor.includes("return !d||age(d)===null||age(d)>180")) {
