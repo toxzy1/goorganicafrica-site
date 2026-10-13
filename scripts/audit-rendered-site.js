@@ -20,6 +20,8 @@ function read(rel) {
   if (!fs.existsSync(p)) { failures.push("Missing rendered page: " + rel); return ""; }
   return fs.readFileSync(p, "utf8");
 }
+const selectorCount = (html) => (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
+
 function cardHrefs(html) {
   const out = [];
   const patterns = [
@@ -164,7 +166,6 @@ const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
 const hasLang = (html, lang) => new RegExp('<html\\b[^>]*\\blang="' + lang + '"', "i").test(html);
 const hasRtl = (html) => new RegExp('<html\\b[^>]*\\bdir="rtl"', "i").test(html);
-const selectorCount = (html) => (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
 const resourcePages = enabledLanguages.map((lang) => ({
   lang,
   rel: languagePrefix(lang) + "agriculture-resources/index.html",
