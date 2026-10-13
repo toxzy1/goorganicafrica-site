@@ -93,7 +93,9 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "This IITA article covers the same September 2026 Mali climate-smart agriculture study already represented by the canonical IITA story in agriculturalNews.json; keep one public card unless an editor confirms distinct findings."
     },
     {
       "country_code": "RW",
