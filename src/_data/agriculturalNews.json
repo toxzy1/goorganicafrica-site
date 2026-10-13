@@ -2089,6 +2089,66 @@
           "status": "review",
           "lifecycle": "needs_review",
           "review_reason": "The source URL resolves to a generic homepage, section/listing, or search page rather than the specific story. Keep unpublished until an editor verifies and replaces it with a direct article URL."
+        },
+        {
+          "category": "policy",
+          "title": "Equatorial Guinea outlines agriculture priorities for the second half of 2026",
+          "summary": "The Government of Equatorial Guinea presented ministerial action plans for July–December 2026. The agriculture ministry highlighted actions to increase domestic cocoa and coffee production, launch a food-testing laboratory, strengthen agricultural and forestry inspections, lower production costs and support the farming sector.",
+          "url": "https://www.guineaecuatorialpress.com/noticias/comienzan_las_jornadas_de_presentacion_de_los_planes_de_accion_ministeriales_para_el_segundo_semestre_de_2026",
+          "source": "Government of the Republic of Equatorial Guinea",
+          "source_id": "equatorial-guinea-government",
+          "source_tier": 1,
+          "published": "2026-07-03",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La Guinée équatoriale présente ses priorités agricoles pour le second semestre 2026",
+              "summary": "Le gouvernement de Guinée équatoriale a présenté les plans d’action ministériels pour juillet–décembre 2026. Le ministère de l’Agriculture a mis en avant l’augmentation de la production nationale de cacao et de café, la mise en service d’un laboratoire d’analyse alimentaire, le renforcement des inspections agricoles et forestières, la réduction des coûts de production et le soutien aux agriculteurs."
+            },
+            "ar": {
+              "title": "غينيا الاستوائية تحدد أولويات الزراعة للنصف الثاني من عام 2026",
+              "summary": "عرضت حكومة غينيا الاستوائية خطط العمل الوزارية للفترة من يوليو إلى ديسمبر 2026. وأبرزت وزارة الزراعة إجراءات لزيادة إنتاج الكاكاو والقهوة محلياً، وتشغيل مختبر لفحص الأغذية، وتعزيز التفتيش الزراعي والغابي، وخفض تكاليف الإنتاج ودعم القطاع الزراعي."
+            },
+            "pt": {
+              "title": "Guiné Equatorial define prioridades agrícolas para o segundo semestre de 2026",
+              "summary": "O Governo da Guiné Equatorial apresentou os planos de ação ministeriais para julho–dezembro de 2026. O Ministério da Agricultura destacou medidas para aumentar a produção nacional de cacau e café, colocar em funcionamento um laboratório de análise alimentar, reforçar as inspeções agrícolas e florestais, reduzir os custos de produção e apoiar o setor agrícola."
+            },
+            "sw": {
+              "title": "Guinea ya Ikweta yaweka vipaumbele vya kilimo kwa nusu ya pili ya 2026",
+              "summary": "Serikali ya Guinea ya Ikweta iliwasilisha mipango ya utekelezaji ya wizara kwa Julai–Desemba 2026. Wizara ya Kilimo ilisisitiza kuongeza uzalishaji wa ndani wa kakao na kahawa, kuanzisha maabara ya kupima chakula, kuimarisha ukaguzi wa kilimo na misitu, kupunguza gharama za uzalishaji na kusaidia sekta ya kilimo."
+            }
+          }
+        },
+        {
+          "category": "food-security",
+          "title": "FAO forecasts near-average staple crop production in Equatorial Guinea in 2026",
+          "summary": "FAO’s GIEWS country brief, with a reference date of 22 July 2026, forecast near-average production of sweet potatoes, cassava and plantains. It also assessed food imports as near average and noted a decline in inflation during 2025.",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GNQ&lang=fr",
+          "source": "FAO Global Information and Early Warning System on Food and Agriculture (GIEWS)",
+          "source_id": "fao-giews",
+          "source_tier": 1,
+          "published": "2026-07-22",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La FAO prévoit une production proche de la moyenne pour les cultures vivrières en Guinée équatoriale en 2026",
+              "summary": "La note pays du système GIEWS de la FAO, datée du 22 juillet 2026, prévoyait une production proche de la moyenne de patates douces, de manioc et de bananes plantain. Elle estimait également les importations alimentaires proches de la moyenne et relevait une baisse de l’inflation en 2025."
+            },
+            "ar": {
+              "title": "الفاو تتوقع إنتاجاً قريباً من المتوسط للمحاصيل الغذائية في غينيا الاستوائية عام 2026",
+              "summary": "توقعت المذكرة القطرية لنظام الإنذار المبكر والمعلومات الزراعية التابع للفاو، بتاريخ مرجعي 22 يوليو 2026، إنتاجاً قريباً من المتوسط للبطاطا الحلوة والكسافا والموز البلانتين. كما توقعت أن تكون واردات الغذاء قريبة من المتوسط وأشارت إلى انخفاض التضخم خلال عام 2025."
+            },
+            "pt": {
+              "title": "FAO prevê produção próxima da média de culturas alimentares na Guiné Equatorial em 2026",
+              "summary": "O relatório nacional do sistema GIEWS da FAO, com data de referência de 22 de julho de 2026, previa produção próxima da média de batata-doce, mandioca e banana-pão. Também estimou importações alimentares próximas da média e assinalou uma descida da inflação em 2025."
+            },
+            "sw": {
+              "title": "FAO yatabiri uzalishaji wa karibu na wastani wa mazao ya chakula Guinea ya Ikweta mwaka 2026",
+              "summary": "Taarifa ya nchi ya mfumo wa GIEWS wa FAO, yenye tarehe ya marejeo ya 22 Julai 2026, ilitabiri uzalishaji wa karibu na wastani wa viazi vitamu, muhogo na ndizi za kupika. Pia ilikadiria uagizaji wa chakula kuwa karibu na wastani na kubainisha kupungua kwa mfumuko wa bei mwaka 2025."
+            }
+          }
         }
       ],
       "localizedNames": {
