@@ -355,6 +355,12 @@ collections:
                       - {label: "Application URL", name: "application_url", widget: "string", required: false}
                       - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "Grants & Opportunities"
                     name: "grants"
@@ -373,6 +379,12 @@ collections:
                       - {label: "Application URL", name: "application_url", widget: "string", required: false}
                       - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "Machinery & Equipment"
                     name: "machinery"
@@ -389,6 +401,12 @@ collections:
                       - {label: "Application / Purchase URL", name: "application_url", widget: "string", required: false}
                       - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "General Agricultural Resources"
                     name: "general"
@@ -400,7 +418,13 @@ collections:
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Verified Date", name: "verified", widget: "string"}
-                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "official"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
+                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
   - name: "agricultural_news_supplement"
     label: "📰 Agricultural News — Supplemental Review Queue"
     files:
