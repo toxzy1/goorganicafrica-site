@@ -2986,6 +2986,21 @@
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
       "review_reason": "Direct official FAO country article located. Confirm the health-risk framing, current relevance and category before approval."
+    },
+    {
+      "country_code": "MW",
+      "category": "data",
+      "title": "Malawi strengthens agricultural data systems through SADC AIMS training",
+      "summary": "FAO reports that Malawi's agriculture officials and statistics teams received training on the SADC Agricultural Information Management System, with a new national technical working group formed to improve agricultural indicators, data validation and reporting.",
+      "url": "https://www.fao.org/in-action/stosar/news/latest-news/detail/malawi-takes-steps-towards-stronger-agricultural-data/en",
+      "source": "FAO STOSAR II",
+      "source_tier": 1,
+      "published": "2026-10-03",
+      "discovered": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "coverage_scope": "country_specific",
+      "review_reason": "Direct official FAO project article located. Confirm whether this belongs in Agricultural News or the Resources/data directory and avoid overlap with other Malawi agricultural data stories."
     }
   ]
 }
