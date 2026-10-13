@@ -199,7 +199,7 @@ const freshnessMonitor = read("scripts/monitor-agricultural-data.js");
 if (!freshnessMonitor.includes("sourceUrlAudit") || !freshnessMonitor.includes("generic_landing_page_records") || !freshnessMonitor.includes("duplicate_url_groups") || !freshnessMonitor.includes("news-keywords\\/agriculture") || !freshnessMonitor.includes("news_country_coverage") || !freshnessMonitor.includes("zero_story_countries")) {
   throw new Error("Agricultural data monitor must flag duplicate source URLs and nested generic landing pages for editorial review.");
 }
-if (!freshnessMonitor.includes("newsCountryCoverage=newsCountryList.map") || !freshnessMonitor.includes("newsCountryExpansion.json") && !freshnessMonitor.includes("agriculturalNewsExpansion.json") || !freshnessMonitor.includes("new Set(publishableNews.filter") {
+if (!freshnessMonitor.includes("newsCountryCoverage=newsCountryList.map") || !freshnessMonitor.includes("newsCountryExpansion.json") && !freshnessMonitor.includes("agriculturalNewsExpansion.json") || !freshnessMonitor.includes("new Set(publishableNews.filter")) {
   throw new Error("Country news coverage must include supplemental/expansion records and count unique stories per country.");
 }
 const mergeScript = read("scripts/merge-agricultural-intelligence.js");
