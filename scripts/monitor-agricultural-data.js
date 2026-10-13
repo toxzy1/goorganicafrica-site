@@ -104,7 +104,7 @@ const sourceUrlAudit=(records, resourceMode=false, kind="generic")=>{
    const u=new URL(url);
    const pathname=u.pathname.replace(/\/+$/, "")||"/";
    if(resourceMode && pathname==="/" && u.searchParams.has("page_id"))return false;
-   const commonGeneric=pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname)||/\/newsdetails(?:\/en)?$/i.test(pathname)||/\/news\/detail(?:\/en)?$/i.test(pathname)||/^\/en$/.test(pathname);
+   const commonGeneric=pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname)||/\/newsdetails(?:\/en)?$/i.test(pathname)||/\/news\/detail(?:\/en)?$/i.test(pathname)||/^\/en$/.test(pathname)||/\/hand-in-hand\/investment-forum-2026\/en$/i.test(pathname)||/\/members\/lapse-of-time$/i.test(pathname);
    const investmentProfile=/\/hand-in-hand\/investment-forum-2026\//i.test(pathname);
    const regionalOverview=/\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname);
    const generic=commonGeneric||(resourceMode?regionalOverview:investmentProfile);
