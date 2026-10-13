@@ -71,6 +71,11 @@ for (const marker of requiredConfigMarkers) {
 if (!config.includes('options: ["current", "needs_review", "closed", "expired", "archived", "historical"]')) {
   throw new Error("CMS lifecycle selectors must support closed, expired, archived and historical records.");
 }
+if (!config.includes('name: "translations"') ||
+    !config.includes('name: "localized"') ||
+    !config.includes('name: "translation_status"')) {
+  throw new Error("CMS must expose news translations, resource localizations and their review status for human approval.");
+}
 
 const reviewCollections = [
   ["agricultural_news_supplement", "src/_data/agriculturalNewsSupplement.json"],
