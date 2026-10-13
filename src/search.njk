@@ -60,7 +60,7 @@ language: en
       {% for category in agriculturalResourcesAll.categories %}
         {% for r in country.records[category] %}
           {% if (r.status == "official" or r.status == "published" or r.status == "verified") and (not r.lifecycle or r.lifecycle == "current") and r.title %}
-            <article data-type="Resource" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ category }} · {{ r.source or '' }}" data-url="{{ r.url or r.source_url or '/agriculture-resources/' }}"></article>
+            <article data-type="Resource" data-country-code="{{ country.code }}" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ category }} · {{ r.source or '' }}" data-url="{{ r.url or r.source_url or '/agriculture-resources/' }}"></article>
           {% endif %}
         {% endfor %}
       {% endfor %}
