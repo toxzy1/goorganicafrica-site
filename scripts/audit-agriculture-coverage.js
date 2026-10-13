@@ -110,6 +110,21 @@ summarizeCounts("Agricultural News", newsCounts, 4);
 const duplicateNewsUrls = [...newsUrls.entries()].filter(([,count]) => count > 1).length;
 if (duplicateNewsUrls) warnings.push(`Agricultural News: ${duplicateNewsUrls} URLs are reused; check whether these are deliberate source/region records or accidental duplicates.`);
 
+const monitorReportPath = path.join(root, "reports", "agricultural-data-monitor.json");
+if (fs.existsSync(monitorReportPath)) {
+  const monitorReport = JSON.parse(fs.readFileSync(monitorReportPath, "utf8"));
+  const specificGaps = monitorReport.news_country_coverage?.under_four_country_specific_story_countries || [];
+  if (specificGaps.length) {
+    const examples = specificGaps.slice(0, 12).map(c => `${c.code}=${c.country_specific_story_count}`).join(", ");
+    warnings.push(`Agricultural News: country-specific story coverage is below 4 in ${specificGaps.length} countries; examples: ${examples}`);
+  }
+  const sourceGaps = monitorReport.news_country_coverage?.under_three_country_specific_sources || [];
+  if (sourceGaps.length) {
+    const examples = sourceGaps.slice(0, 12).map(c => `${c.code}=${c.country_specific_source_count}`).join(", ");
+    warnings.push(`Agricultural News: country-specific source diversity is below 3 in ${sourceGaps.length} countries; examples: ${examples}`);
+  }
+}
+
 const countryRegistry = readJson("src/_data/calculatorCountries.json").list || [];
 const registryCodes = new Set(countryRegistry.map((c) => String(c.code || "").toUpperCase()));
 for (const [code, name] of EXPECTED) if (!registryCodes.has(code)) errors.push(`Country registry missing ${name} (${code})`);
