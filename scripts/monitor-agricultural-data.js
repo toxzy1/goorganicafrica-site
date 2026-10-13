@@ -10,6 +10,10 @@ const resources2=read("agriculturalResourcesSupplement.json").records||[];
 const resourceGapFiles=fs.readdirSync(dir).filter(name=>/^agriculturalResourcesGap(?:[A-Z]{2}|Batch)\.json$/.test(name)).sort();
 const resourceGapRecords=resourceGapFiles.flatMap(name=>read(name).records||[]);
 const allResourceRecords=resources.concat(resources2,resourceGapRecords);
+const isResourceReviewRecord=r=>["review","needs_review","draft","rejected"].includes(String(r.status||"").toLowerCase())||["review","needs_review","draft","rejected"].includes(String(r.lifecycle||"").toLowerCase());
+const publicResourceRecords=[...resources,...resources2].filter(r=>!isResourceReviewRecord(r));
+const reviewResourceRecords=[...resources,...resources2].filter(isResourceReviewRecord);
+const resourceQueue=resourceGapRecords.concat(reviewResourceRecords);
 const markets=read("agriculturalMarkets.json").records||[];
 const services=read("agriculturalServices.json").records||[];
 const opp=read("agriculturalOpportunities.json").records||[];
@@ -57,15 +61,16 @@ const sourceUrlAudit=(records)=>{
 const sourceQuality={
  news:sourceUrlAudit(news),
  opportunities:sourceUrlAudit(opp),
- resources:sourceUrlAudit([...resources,...resources2]),
- resource_review_queue:sourceUrlAudit(resourceGapRecords),
+ resources:sourceUrlAudit(publicResourceRecords),
+ resource_review_queue:sourceUrlAudit(resourceQueue),
  markets:sourceUrlAudit(markets),
  services:sourceUrlAudit(services)
 };
 const report={
  generated_at:today.toISOString(),
  policies:{resource_recheck_days:180,market_recheck_days:45,opportunity_recheck_days:14,news_review_days:30},
- resources:{total:allResourceRecords.length,stale:allResourceRecords.filter(r=>{const d=r.verified_date||r.verified;return !d||age(d)===null||age(d)>180;}).length,missing_verification_date:allResourceRecords.filter(r=>!(r.verified_date||r.verified)).length,missing_source:allResourceRecords.filter(r=>!r.url).length},
+ resources:{total:publicResourceRecords.length,stale:publicResourceRecords.filter(r=>{const d=r.verified_date||r.verified;return !d||age(d)===null||age(d)>180;}).length,missing_verification_date:publicResourceRecords.filter(r=>!(r.verified_date||r.verified)).length,missing_source:publicResourceRecords.filter(r=>!r.url).length},
+ resource_review_queue:{total:resourceQueue.length,missing_verification_date:resourceQueue.filter(r=>!(r.verified_date||r.verified)).length,missing_source:resourceQueue.filter(r=>!r.url&&!r.source_url).length},
  markets:{total:markets.length,stale:markets.filter(r=>r.observed_date&&(age(r.observed_date)===null||age(r.observed_date)>45)).length,missing_observation_date:markets.filter(r=>!r.observed_date&&r.price!=null).length},
  opportunities:{total:opp.length,review:opp.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length,needs_reverification:opp.filter(r=>["open","active"].includes(String(r.status).toLowerCase())&&(!r.verified||age(r.verified)===null||age(r.verified)>14)).length,missing_verification_date:opp.filter(r=>!(r.verified)).length,expired:opp.filter(r=>r.deadline&&age(r.deadline)!==null&&new Date(r.deadline)<today).length,invalid_deadline_date:opp.filter(r=>r.deadline&&age(r.deadline)===null).length},
  news:{total:news.length,stale:news.filter(r=>{const d=r.published||r.date;return !d||age(d)===null||age(d)>30;}).length,missing_publication_date:news.filter(r=>!(r.published||r.date)).length,future_publication_dates:news.filter(r=>{const d=r.published||r.date;return d&&age(d)!==null&&age(d)<0;}).map(r=>({country_code:r.country_code||r.code||"",title:r.title||"",published:r.published||r.date,url:r.url||"",lifecycle:r.lifecycle||""})),review:news.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length},
