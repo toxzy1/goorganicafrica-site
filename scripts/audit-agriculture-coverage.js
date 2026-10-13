@@ -91,10 +91,11 @@ newsCountries.forEach((country) => {
     if (EXPECTED_CODES.has(code)) newsCounts[code]++;
     const reviewOnly = ["review", "needs_review", "draft"].includes(String(article.status || "").toLowerCase()) ||
       ["review", "needs_review", "draft"].includes(String(article.lifecycle || "").toLowerCase());
-    const requiredNewsFields = ["title", "summary", "source", "url", "verified", "category"];
-    // Review-queue candidates may not yet have a confirmed publication date.
-    // Published/current records must still carry a publication date.
-    if (!reviewOnly) requiredNewsFields.push("published");
+    // Review-queue candidates must have usable content and a source URL, but
+    // must not be marked verified before editorial review. Published/current
+    // records must carry both verification and publication dates.
+    const requiredNewsFields = ["title", "summary", "source", "url", "category"];
+    if (!reviewOnly) requiredNewsFields.push("verified", "published");
     for (const field of requiredNewsFields) {
       if (!nonempty(article[field])) errors.push(`News ${newsTotal} (${code}): missing ${field}`);
     }
