@@ -1477,6 +1477,39 @@
           "status": "review",
           "lifecycle": "needs_review",
           "review_reason": "Direct IFAD project page supplied instead of the generic projects list. Keep in review because this is a programme page, not a dated news article; editorially confirm the best content section and current status."
+        },
+        {
+          "category": "weather-climate",
+          "title": "FAO supports Cameroon in integrated management of landscapes and biodiversity",
+          "summary": "FAO is supporting Cameroon’s environment ministry on an integrated landscape-management initiative in the North and Far North regions to improve biodiversity stewardship, drought resilience and rural livelihoods.",
+          "url": "https://www.fao.org/cameroun/news/detail/fao-supports-cameroon-in-its-integrated-management-of-landscapes-and-biodiversity/en",
+          "published": "2026-07-31",
+          "review_reason": "Direct FAO country article checked on 2026-10-13. Keep in review until country relevance, date and translations are approved.",
+          "translations": {
+            "fr": {
+              "title": "La FAO soutient le Cameroun dans la gestion intégrée des paysages et de la biodiversité",
+              "summary": "La FAO soutient le ministère camerounais de l’Environnement dans une initiative de gestion intégrée des paysages dans les régions du Nord et de l’Extrême-Nord afin de mieux protéger la biodiversité, renforcer la résilience à la sécheresse et soutenir les moyens de subsistance ruraux."
+            },
+            "ar": {
+              "title": "الفاو تدعم الكاميرون في الإدارة المتكاملة للمناظر الطبيعية والتنوع البيولوجي",
+              "summary": "تدعم الفاو وزارة البيئة الكاميرونية في مبادرة للإدارة المتكاملة للمناظر الطبيعية في منطقتي الشمال وأقصى الشمال، بهدف حماية التنوع البيولوجي وتعزيز القدرة على مواجهة الجفاف ودعم سبل العيش الريفية."
+            },
+            "pt": {
+              "title": "FAO apoia Camarões na gestão integrada de paisagens e biodiversidade",
+              "summary": "A FAO apoia o ministério do ambiente dos Camarões numa iniciativa de gestão integrada da paisagem nas regiões Norte e Extremo Norte, para melhorar a proteção da biodiversidade, reforçar a resiliência à seca e apoiar os meios de subsistência rurais."
+            },
+            "sw": {
+              "title": "FAO yaunga mkono Kamerun katika usimamizi jumuishi wa mandhari na bioanuwai",
+              "summary": "FAO inaunga mkono wizara ya mazingira ya Kamerun katika mpango wa usimamizi jumuishi wa mandhari katika maeneo ya Kaskazini na Kaskazini ya Mbali ili kuboresha uhifadhi wa bioanuwai, kuimarisha ustahimilivu dhidi ya ukame na kusaidia maisha ya jamii za vijijini."
+            }
+          },
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "verified": "2026-10-13",
+          "review_after": "2026-11-12",
+          "status": "review",
+          "lifecycle": "needs_review"
         }
       ],
       "localizedNames": {
@@ -3519,6 +3552,39 @@
           "status": "review",
           "lifecycle": "needs_review",
           "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication."
+        },
+        {
+          "category": "weather-climate",
+          "title": "Morocco seeks stronger coordination between water and agriculture amid scarcity",
+          "summary": "A high-level roundtable convened by Morocco’s agriculture and water ministries with FAO examined stronger policy coordination, transparent data and sustainable water management to protect food production under growing water stress.",
+          "url": "https://www.fao.org/maroc/news/detail/morocco-seeks-stronger-water-agriculture-coordination-amid-growing-scarcity/en",
+          "published": "2026-06-15",
+          "review_reason": "Direct FAO Morocco article checked on 2026-10-13. Keep in review until country relevance, date and translations are approved.",
+          "translations": {
+            "fr": {
+              "title": "Le Maroc cherche à renforcer la coordination entre l’eau et l’agriculture face à la pénurie",
+              "summary": "Une table ronde de haut niveau réunissant les ministères marocains de l’Agriculture et de l’Eau avec la FAO a examiné une meilleure coordination des politiques, la transparence des données et une gestion durable de l’eau pour protéger la production alimentaire face au stress hydrique."
+            },
+            "ar": {
+              "title": "المغرب يسعى إلى تعزيز التنسيق بين المياه والزراعة في ظل تزايد الندرة",
+              "summary": "ناقشت مائدة مستديرة رفيعة المستوى نظمتها وزارتا الزراعة والمياه في المغرب بالتعاون مع الفاو تعزيز تنسيق السياسات وشفافية البيانات والإدارة المستدامة للمياه لحماية إنتاج الغذاء في ظل تزايد الإجهاد المائي."
+            },
+            "pt": {
+              "title": "Marrocos procura reforçar a coordenação entre água e agricultura perante a escassez",
+              "summary": "Uma mesa-redonda de alto nível organizada pelos ministérios marroquinos da Agricultura e da Água com a FAO analisou uma melhor coordenação política, transparência dos dados e gestão sustentável da água para proteger a produção alimentar perante a crescente pressão hídrica."
+            },
+            "sw": {
+              "title": "Moroko inatafuta kuimarisha uratibu kati ya maji na kilimo kutokana na uhaba",
+              "summary": "Mkutano wa ngazi ya juu ulioandaliwa na wizara za kilimo na maji za Moroko pamoja na FAO ulijadili uratibu bora wa sera, uwazi wa data na usimamizi endelevu wa maji ili kulinda uzalishaji wa chakula wakati wa kuongezeka kwa uhaba wa maji."
+            }
+          },
+          "source": "FAO",
+          "source_id": "fao",
+          "source_tier": 1,
+          "verified": "2026-10-13",
+          "review_after": "2026-11-12",
+          "status": "review",
+          "lifecycle": "needs_review"
         }
       ],
       "localizedNames": {
