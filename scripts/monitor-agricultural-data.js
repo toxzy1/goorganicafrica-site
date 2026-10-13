@@ -7,7 +7,7 @@ const age=d=>{const x=new Date(d);return isNaN(x)?null:Math.floor((today-x)/8640
 const resources=[];
 for(const c of read("agriculturalResources.json").countries||[]) for(const list of Object.values(c.records||{})) for(const r of list||[]) resources.push({...r,country_code:c.code});
 const resources2=read("agriculturalResourcesSupplement.json").records||[];
-const resourceGapFiles=fs.readdirSync(dir).filter(name=>/^agriculturalResourcesGap(?:[A-Z]{2}|Batch)\\.json$/.test(name)).sort();
+const resourceGapFiles=fs.readdirSync(dir).filter(name=>/^agriculturalResourcesGap(?:[A-Z]{2}|Batch)\.json$/.test(name)).sort();
 const resourceGapRecords=resourceGapFiles.flatMap(name=>read(name).records||[]);
 const allResourceRecords=resources.concat(resources2,resourceGapRecords);
 const markets=read("agriculturalMarkets.json").records||[];
