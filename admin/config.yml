@@ -412,6 +412,7 @@ collections:
               - {label: "Country Code", name: "country_code", widget: "string"}
               - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "grants-programmes", "research-innovation", "climate", "data", "events", "farmer-support", "fisheries", "food-safety", "food-security", "grants", "insurance", "machinery", "organic", "resilience", "seeds", "services"]}
               - {label: "Headline", name: "title", widget: "string"}
+              - {label: "Legacy Headline", name: "headline", widget: "string", required: false}
               - {label: "Summary", name: "summary", widget: "text"}
               - {label: "Direct Source URL", name: "url", widget: "string"}
               - {label: "Source / Publisher", name: "source", widget: "string"}
@@ -445,6 +446,7 @@ collections:
               - {label: "Summary", name: "summary", widget: "text"}
               - {label: "Direct Source URL", name: "url", widget: "string"}
               - {label: "Source / Publisher", name: "source", widget: "string"}
+              - {label: "Source ID", name: "source_id", widget: "string", required: false}
               - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
               - {label: "Published Date", name: "published", widget: "string", required: false}
               - {label: "Verified Date", name: "verified", widget: "string", required: false}
@@ -478,8 +480,10 @@ collections:
               - {label: "Summary", name: "summary", widget: "text", required: false}
               - {label: "Direct Source URL", name: "url", widget: "string"}
               - {label: "Source / Provider", name: "source", widget: "string"}
+              - {label: "Source ID", name: "source_id", widget: "string", required: false}
               - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
               - {label: "Type", name: "type", widget: "string", required: false}
+              - {label: "Published Date", name: "published", widget: "string", required: false}
               - {label: "Verified Date", name: "verified", widget: "string", required: false}
               - {label: "Access / Eligibility", name: "access", widget: "text", required: false}
               - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
@@ -514,8 +518,15 @@ collections:
               - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
               - {label: "Published Date", name: "published", widget: "string", required: false}
               - {label: "Deadline / End Date", name: "deadline", widget: "string", required: false}
+              - {label: "End Date", name: "end_date", widget: "string", required: false}
               - {label: "Verified Date", name: "verified", widget: "string", required: false}
               - {label: "Amount / Value", name: "amount", widget: "string", required: false}
+              - {label: "Access Notes", name: "access", widget: "text", required: false}
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                required: false
+                field: {label: "Tag", name: "tag", widget: "string"}
               - {label: "Status", name: "status", widget: "select", options: ["open", "active", "review", "closed", "expired"], default: "review"}
               - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review"], required: false}
               - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
