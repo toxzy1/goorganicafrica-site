@@ -827,7 +827,25 @@
       "source_tier": 1,
       "published": "2026-09-15",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Mauritanie prépare une campagne nationale de soutien à la production maraîchère",
+          "summary": "La Société nationale de forage et de puits décrit une campagne de soutien à la production de légumes destinée aux communautés proches de ses sites, dans le cadre des actions de développement local et de renforcement des moyens de subsistance."
+        },
+        "ar": {
+          "title": "موريتانيا تستعد لحملة وطنية لدعم إنتاج الخضروات",
+          "summary": "تصف الشركة الوطنية للحفر والآبار حملة لدعم إنتاج الخضروات لصالح المجتمعات القريبة من مواقعها، ضمن جهود التنمية المحلية وتعزيز سبل العيش."
+        },
+        "pt": {
+          "title": "Mauritânia prepara uma campanha nacional de apoio à produção hortícola",
+          "summary": "A Empresa Nacional de Perfuração e Poços descreve uma campanha de apoio à produção de hortícolas para as comunidades próximas das suas instalações, como parte das ações de desenvolvimento local e reforço dos meios de subsistência."
+        },
+        "sw": {
+          "title": "Mauritania yaandaa kampeni ya kitaifa ya kusaidia uzalishaji wa mboga",
+          "summary": "Kampuni ya Kitaifa ya Uchimbaji na Visima inaeleza kampeni ya kusaidia uzalishaji wa mboga kwa jamii zilizo karibu na maeneo yake, kama sehemu ya juhudi za maendeleo ya eneo na kuimarisha maisha."
+        }
+      }
     },
     {
       "country_code": "MA",
@@ -842,20 +860,20 @@
       "status": "official",
       "translations": {
         "fr": {
-          "title": "Les pluies du début d’automne ravivent les espoirs pour la nouvelle saison agricole au Maroc",
+          "title": "Les premières pluies d’automne ravivent l’espoir pour la nouvelle saison agricole au Maroc",
           "summary": "Les agriculteurs marocains préparent les sols, les semences, les engrais et les systèmes d’irrigation pour la nouvelle campagne, tandis que les producteurs des régions pluviales et irriguées attendent des précipitations plus régulières."
         },
         "ar": {
-          "title": "أمطار أوائل الخريف تجدد الآمال بموسم زراعي جديد في المغرب",
-          "summary": "يستعد المزارعون المغاربة لتجهيز التربة والبذور والأسمدة والبنية التحتية للري للموسم الجديد، بينما ينتظر المنتجون في المناطق البعلية والمروية هطول أمطار أكثر انتظاماً."
+          "title": "أمطار الخريف المبكرة تجدد الآمال بالموسم الزراعي الجديد في المغرب",
+          "summary": "يستعد المزارعون في المغرب بتجهيز التربة والبذور والأسمدة وشبكات الري للموسم الجديد، فيما ينتظر المنتجون في المناطق البعلية والمروية هطول أمطار أكثر انتظاماً."
         },
         "pt": {
-          "title": "As chuvas do início do outono renovam as esperanças para a nova época agrícola em Marrocos",
-          "summary": "Os agricultores marroquinos estão a preparar solos, sementes, fertilizantes e infraestruturas de irrigação para a nova campanha, enquanto os produtores de regiões de sequeiro e irrigadas aguardam chuvas mais regulares."
+          "title": "As primeiras chuvas de outono renovam a esperança para a nova época agrícola em Marrocos",
+          "summary": "Os agricultores marroquinos estão a preparar os solos, sementes, fertilizantes e infraestruturas de irrigação para a nova campanha, enquanto os produtores de regiões de sequeiro e irrigadas aguardam chuvas mais regulares."
         },
         "sw": {
-          "title": "Mvua za mwanzo wa vuli zafufua matumaini ya msimu mpya wa kilimo nchini Morocco",
-          "summary": "Wakulima wa Morocco wanaandaa udongo, mbegu, mbolea na miundombinu ya umwagiliaji kwa msimu mpya, huku wazalishaji katika maeneo ya kutegemea mvua na maeneo ya umwagiliaji wakisubiri mvua endelevu zaidi."
+          "title": "Mvua za mwanzo za vuli zafufua matumaini ya msimu mpya wa kilimo nchini Morocco",
+          "summary": "Wakulima wa Morocco wanaandaa udongo, mbegu, mbolea na miundombinu ya umwagiliaji kwa msimu mpya, huku wazalishaji katika maeneo ya mvua na umwagiliaji wakisubiri mvua endelevu zaidi."
         }
       }
     },
@@ -1235,7 +1253,25 @@
       "source_tier": 1,
       "published": "2026-09-15",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Des oléicultrices marocaines partagent leur expérience de la chaîne de valeur au MOSAIC 2026",
+          "summary": "La FAO et le CIHEAM Bari ont réuni des productrices, des coopératives et des entrepreneures pour échanger sur la culture de l’olivier, la qualité de l’huile, la gestion après récolte, la certification, la traçabilité et l’accès aux marchés. La coopérative Taymate du Maroc était représentée par sa présidente, Rabha Imloui."
+        },
+        "ar": {
+          "title": "مزارعات زيتون مغربيات يتبادلن خبرات سلسلة القيمة في MOSAIC 2026",
+          "summary": "جمعت الفاو ومركز CIHEAM باري منتِجات وتعاونيات ورائدات أعمال لتبادل الخبرات حول زراعة الزيتون وجودة الزيت وإدارة ما بعد الحصاد والشهادات والتتبع والوصول إلى الأسواق. ومثلت رئيسة تعاونية تايمات المغربية، رباح إملوي، المغرب في اللقاء."
+        },
+        "pt": {
+          "title": "Mulheres olivicultoras marroquinas partilham experiências da cadeia de valor no MOSAIC 2026",
+          "summary": "A FAO e o CIHEAM Bari reuniram produtoras, cooperativas e empreendedoras para trocar experiências sobre olivicultura, qualidade do azeite, gestão pós-colheita, certificação, rastreabilidade e acesso aos mercados. A cooperativa marroquina Taymate foi representada pela sua presidente, Rabha Imloui."
+        },
+        "sw": {
+          "title": "Wakulima wanawake wa mizeituni Morocco washiriki uzoefu wa mnyororo wa thamani katika MOSAIC 2026",
+          "summary": "FAO na CIHEAM Bari ziliwakutanisha wazalishaji wanawake, vyama vya ushirika na wajasiriamali kubadilishana uzoefu kuhusu kilimo cha mizeituni, ubora wa mafuta, usimamizi baada ya mavuno, uthibitishaji, ufuatiliaji na masoko. Ushirika wa Taymate wa Morocco uliwakilishwa na mwenyekiti wake, Rabha Imloui."
+        }
+      }
     },
     {
       "country_code": "NE",
@@ -1404,20 +1440,20 @@
       "status": "official",
       "translations": {
         "fr": {
-          "title": "L’Agence de développement agricole du Maroc met en avant des modèles de financement pour les petits exploitants et les filières agroalimentaires",
-          "summary": "L’Agence de développement agricole du Maroc a présenté un séminaire sur l’inclusion financière agricole. Les discussions ont porté sur l’agriculture solidaire, l’entrepreneuriat rural, les produits locaux, l’agrégation, les données agricoles et les moyens d’améliorer l’accès des petits exploitants à des financements adaptés."
+          "title": "L’Agence marocaine de développement agricole présente des modèles de financement pour les petits producteurs",
+          "summary": "L’Agence pour le développement agricole du Maroc a rendu compte d’un séminaire sur l’inclusion financière agricole. Les discussions ont porté sur l’agriculture solidaire, l’entrepreneuriat rural, les produits locaux, l’agrégation, les données agricoles et les moyens d’améliorer l’accès des petits exploitants à des financements adaptés."
         },
         "ar": {
-          "title": "وكالة التنمية الفلاحية بالمغرب تبرز نماذج تمويل صغار المزارعين وسلاسل القيمة الزراعية والغذائية",
-          "summary": "عرضت وكالة التنمية الفلاحية بالمغرب ندوة حول الشمول المالي الزراعي، تناولت الزراعة التضامنية وريادة الأعمال الريفية والمنتجات المحلية وتجميع المنتجين والبيانات الزراعية وسبل تحسين حصول صغار المزارعين على تمويل مناسب."
+          "title": "وكالة التنمية الفلاحية المغربية تعرض نماذج تمويل لصغار المنتجين",
+          "summary": "عرضت وكالة التنمية الفلاحية في المغرب نتائج ندوة حول الشمول المالي الزراعي. وتناولت المناقشات الزراعة التضامنية وريادة الأعمال الريفية والمنتجات المحلية وتجميع الإنتاج والبيانات الزراعية وسبل تحسين وصول صغار المزارعين إلى التمويل المناسب."
         },
         "pt": {
-          "title": "Agência de Desenvolvimento Agrícola de Marrocos destaca modelos de financiamento para pequenos agricultores e cadeias agroalimentares",
-          "summary": "A Agência de Desenvolvimento Agrícola de Marrocos apresentou um seminário sobre inclusão financeira agrícola. As discussões abordaram agricultura solidária, empreendedorismo rural, produtos locais, agregação de produtores, dados agrícolas e formas de melhorar o acesso dos pequenos agricultores a financiamento adequado."
+          "title": "Agência de Desenvolvimento Agrícola de Marrocos apresenta modelos de financiamento para pequenos produtores",
+          "summary": "A Agência de Desenvolvimento Agrícola de Marrocos relatou um seminário sobre inclusão financeira agrícola. As discussões abrangeram agricultura solidária, empreendedorismo rural, produtos locais, agregação, dados agrícolas e formas de melhorar o acesso dos pequenos agricultores a financiamento adequado."
         },
         "sw": {
-          "title": "Wakala ya Maendeleo ya Kilimo ya Morocco yaangazia mifumo ya ufadhili kwa wakulima wadogo na minyororo ya thamani ya kilimo na chakula",
-          "summary": "Wakala ya Maendeleo ya Kilimo ya Morocco iliwasilisha semina kuhusu ujumuishaji wa kifedha wa kilimo. Majadiliano yalihusu kilimo cha mshikamano, ujasiriamali wa vijijini, bidhaa za ndani, ukusanyaji wa wazalishaji, data za kilimo na njia za kuboresha upatikanaji wa ufadhili unaofaa kwa wakulima wadogo."
+          "title": "Wakala ya Maendeleo ya Kilimo Morocco yaonyesha mifumo ya ufadhili kwa wazalishaji wadogo",
+          "summary": "Wakala wa Maendeleo ya Kilimo wa Morocco uliripoti kuhusu semina ya ujumuishaji wa kifedha katika kilimo. Majadiliano yalihusu kilimo cha mshikamano, ujasiriamali wa vijijini, bidhaa za ndani, ukusanyaji wa mazao, data za kilimo na njia za kuboresha upatikanaji wa ufadhili unaofaa kwa wakulima wadogo."
         }
       }
     },
