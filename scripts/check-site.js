@@ -74,7 +74,7 @@ for (const code of calculatorCountries.map(c => String(c.code).toLowerCase())) {
 if (!read('src/sitemap.njk').includes('calculatorLocales')) throw new Error('Localized calculator pages are missing from sitemap.');
 
 const languageSwitcher = read('src/js/language-switcher.js');
-if (!languageSwitcher.includes('search|farmer-decision-centre|markets|opportunities|agricultural-services|privacy-policy|data-updates')) {
+if (!languageSwitcher.includes('search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|privacy-policy|data-updates')) {
   throw new Error('Shared pages must preserve the selected language on their single-URL routes.');
 }
 if (!languageSwitcher.includes('link.href = "/" + sectionPath + "/";')) {
