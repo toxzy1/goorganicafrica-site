@@ -61,7 +61,7 @@ language: en
     {% endfor %}
     {% for country in agriculturalNewsMerged.countries %}
       {% for r in country.articles %}
-        {% if (r.status == "official" or r.status == "published" or r.status == "verified") and r.lifecycle == "current" and r.url %}
+        {% if (r.status == "official" or r.status == "published" or r.status == "verified") and (not r.lifecycle or r.lifecycle == "current") and r.url %}
           <article data-type="News" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url }}"></article>
         {% endif %}
       {% endfor %}
