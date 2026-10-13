@@ -116,7 +116,7 @@ for (const [name, file] of [
   if (!workflowText.includes("peter-evans/create-pull-request@v7") || !workflowText.includes("draft: true") || !workflowText.includes("actions/checkout@v4") || !workflowText.includes("actions/setup-node@v4") || !workflowText.includes("npm ci") || /\bgit\s+push\b/.test(workflowText)) {
     throw new Error("Scheduled " + name + " discovery must use a draft review PR and must not push directly.");
   }
-  if ((workflowText.match(/^\\s*delete-branch:/gm) || []).length !== 1) {
+  if ((workflowText.match(/^\s*delete-branch:/gm) || []).length !== 1) {
     throw new Error("Scheduled " + name + " workflow must define delete-branch exactly once.");
   }
 }
