@@ -31,14 +31,16 @@
       "summary": "IFAD grant financing of up to USD 2 million for implementation supporting food systems transformation in the Central Sahel.",
       "source": "International Fund for Agricultural Development (IFAD)",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://www.ifad.org/en/call-for-proposals",
+      "verified": "2026-10-13",
+      "url": "https://www.ifad.org/en/w/calls-for-proposal/call-for-proposals-ifad-support-for-food-systems-transformation-in-the-central-sahel",
       "tags": [
         "Sahel",
         "food systems",
         "regional grant",
         "resilience"
-      ]
+      ],
+      "deadline": "2026-10-16",
+      "access": "Institutional implementing-partner call, not a direct farmer grant. Deadline 16 October 2026 at 23:59 GMT; check official eligibility documents."
     },
     {
       "code": "ZM",
@@ -74,8 +76,8 @@
       "summary": "African Development Bank approved a Malawi programme focused on climate-adapted agricultural productivity through improved water management.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-mw-aa0-042",
       "tags": [
         "Malawi",
         "water management",
@@ -95,8 +97,8 @@
       "summary": "AfDB-approved investment supporting Sierra Leone's rice agro-industrial special zone development.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-sl-aa0-026",
       "tags": [
         "Sierra Leone",
         "rice",
@@ -110,20 +112,22 @@
       "title": "AfDB Cashew Development Programme Phase II preparation",
       "category": "investment",
       "type": "Project preparation",
-      "status": "active",
+      "status": "review",
       "published": "2026-06-15",
       "end_date": "2026-12-31",
       "summary": "AfDB-approved preparation support for Zambia's Cashew Development Programme Phase II.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://new-mapafrica.afdb.org/en/sectors/A",
       "tags": [
         "Zambia",
         "cashew",
         "value chain",
         "investment"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
     },
     {
       "code": "ZW",
@@ -137,8 +141,8 @@
       "summary": "AfDB-approved project supporting agricultural climate resilience and vulnerability reduction in Zimbabwe.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/documents/zimbabwe-agricultural-climate-resilient-and-vulnerability-reduction-project-project-appraisal-report",
       "tags": [
         "Zimbabwe",
         "climate resilience",
@@ -158,8 +162,8 @@
       "summary": "AfDB-approved programme focused on strengthening agrifood systems resilience in Sudan.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-sd-aa0-010",
       "tags": [
         "Sudan",
         "food systems",
@@ -249,8 +253,8 @@
       "summary": "AfDB-approved technical support project for Nigeria's horticulture supply chain and smallholder farmers. This is project/investment intelligence, not a public grant application.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://mapafrica.afdb.org/en/projects/46002-P-NG-AA0-049",
       "tags": [
         "Nigeria",
         "horticulture",
@@ -270,8 +274,8 @@
       "summary": "AfDB-approved technical assistance supporting green-growth finance for Nigerian SMEs. This is investment/finance intelligence; eligibility and access depend on the implementing institution.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://mapafrica.afdb.org/en/",
+      "verified": "2026-10-13",
+      "url": "https://mapafrica.afdb.org/en/projects/46002-P-NG-HA0-016",
       "tags": [
         "Nigeria",
         "SMEs",
@@ -285,20 +289,22 @@
       "title": "AfDB Trade Finance Facility for SMEs and Other Businesses in Benin",
       "category": "finance",
       "type": "Trade finance facility",
-      "status": "active",
+      "status": "review",
       "published": "2026-07-17",
       "end_date": "2035-01-19",
       "summary": "AfDB-approved trade-finance facility supporting SMEs and businesses in Benin. This is finance-programme intelligence rather than a direct individual grant.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://mapafrica.afdb.org/en/",
       "tags": [
         "Benin",
         "trade finance",
         "SMEs",
         "agribusiness"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
     },
     {
       "code": "ET",
@@ -312,8 +318,8 @@
       "summary": "AfDB-approved programme linking distributed renewable energy modalities with agricultural development in Ethiopia.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://mapafrica.afdb.org/en/",
+      "verified": "2026-10-13",
+      "url": "https://mapafrica.afdb.org/en/projects/46002-P-ET-FF0-005",
       "tags": [
         "Ethiopia",
         "renewable energy",
@@ -327,20 +333,22 @@
       "title": "AfDB Regional Program for Rice Development in West Africa (REWARD) — G2",
       "category": "investment",
       "type": "Regional rice programme",
-      "status": "active",
+      "status": "review",
       "published": "2026-05-26",
       "end_date": "2028-01-19",
       "summary": "AfDB-approved regional rice-development programme supporting rice value-chain investment in West Africa.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://new-mapafrica.afdb.org/en/sectors/A",
       "tags": [
         "West Africa",
         "rice",
         "REWARD",
         "value chain"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
     },
     {
       "code": "MG",
@@ -348,20 +356,22 @@
       "title": "AfDB Lower Mangoky Irrigation Area Extension Project — Phase II",
       "category": "investment",
       "type": "Irrigation project",
-      "status": "active",
+      "status": "review",
       "published": "2026-03-11",
       "end_date": "2030-12-31",
       "summary": "AfDB-approved irrigation investment for the Lower Mangoky area, strengthening agricultural water infrastructure and productive capacity.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://new-mapafrica.afdb.org/en/sectors/A",
       "tags": [
         "Madagascar",
         "irrigation",
         "water",
         "agriculture"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
     },
     {
       "code": "AFRICA",
