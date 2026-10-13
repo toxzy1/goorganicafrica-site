@@ -30,7 +30,7 @@ pageLanguage: ar
 {% if translated and translated.title and translated.summary %}
 <h2>{{ translated.title }}</h2><p>{{ translated.summary }}</p>
 {% else %}
-<p class="translation-pending-note" data-translation-status="pending"><small>الترجمة غير متاحة أو لم تُراجع بعد؛ يُعرض العنوان والملخص المتاحان.</small></p>
+<p class="translation-pending-note" data-translation-status="pending"><small>الترجمة قيد المراجعة</small></p>
 <h2>{{ article.title }}</h2><p>{{ article.summary }}</p>
 {% endif %}
 <p><small>المصدر: {{ article.source }} · تم التحقق: {{ article.verified }}</small></p>
