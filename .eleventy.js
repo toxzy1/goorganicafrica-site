@@ -35,11 +35,11 @@ const isSpecificAgriculturalNewsUrl = value => {
 // Keep generic landing pages out of category-specific country resource listings.
 const isGenericAgriculturalResourceUrl = value => {
   try {
-    const pathname = new URL(value).pathname.replace(/\\/+$/, "") || "/";
+    const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
     return pathname === "/" ||
-      /(?:^|\\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\\/agriculture|sectors\\/A|news)$/i.test(pathname) ||
-      /^\\/en$/i.test(pathname) ||
-      /\\/newsdetails(?:\\/en)?$/i.test(pathname);
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
+      /^\/en$/i.test(pathname) ||
+      /\/newsdetails(?:\/en)?$/i.test(pathname);
   } catch {
     return true;
   }
