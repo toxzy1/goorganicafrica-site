@@ -47,10 +47,18 @@ const isGenericAgriculturalResourceUrl = value => {
 
 const shouldPublishAgriculturalResource = (record, category) => {
   if (!isPublishableAgriculturalRecord(record)) return false;
-  if (!isGenericAgriculturalResourceUrl(record.url || record.source_url)) return true;
-  // A broad government or institution homepage can be a valid general reference.
-  // It is not sufficient evidence for a named grant, project, market, or programme.
-  return ["general", "data", "farmer-support"].includes(String(category || record.category || "").toLowerCase());
+  const url = String(record.url || record.source_url || "").trim();
+  if (!isGenericAgriculturalResourceUrl(url)) return true;
+  // Only an institution's own homepage can remain as a broad general reference.
+  // Generic project/news/grant listings must not be presented as direct records.
+  let pathname;
+  try { pathname = new URL(url).pathname.replace(/\/+$/, "") || "/"; }
+  catch { return false; }
+  const isHomepage = pathname === "/" || /^\/en$/i.test(pathname);
+  const title = String(record.title || record.name || "");
+  const institutionalTitle = /\b(ministry|authority|department|agency|institute|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+  return isHomepage && institutionalTitle &&
+    ["general", "data", "farmer-support"].includes(String(category || record.category || "").toLowerCase());
 };
 
 const collectPublishableNews = read => {
