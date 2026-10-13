@@ -29,7 +29,8 @@
 (() => {
  const input=document.getElementById('opportunity-search'), select=document.getElementById('opportunity-status'), category=document.getElementById('opportunity-category'), empty=document.getElementById('opportunity-empty');
  const cards=[...document.querySelectorAll('.opportunity-card')];
+ function updateTitle(){document.title=window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('opportunities','title')+' | GoOrganicAfrica':'Agricultural Opportunities | GoOrganicAfrica';}
  function filter(){const q=input.value.toLowerCase().trim(), s=select.value, cat=category.value; let visible=0; cards.forEach(c=>{const status=(c.dataset.status||'').toLowerCase(); const lifecycle=(status==='expired'||status==='closed'||status==='archived')?'expired':'current'; const okS=s==='all'||lifecycle===s; const okC=cat==='all'||c.dataset.category===cat; const okQ=!q||c.dataset.search.toLowerCase().includes(q); c.hidden=!(okS&&okC&&okQ); if(!c.hidden)visible++;}); if(empty)empty.hidden=visible>0;}
- input.addEventListener('input',filter); select.addEventListener('change',filter); category.addEventListener('change',filter); document.addEventListener('goa:languagechange',filter); filter();
+ input.addEventListener('input',filter); select.addEventListener('change',filter); category.addEventListener('change',filter); document.addEventListener('goa:languagechange',()=>{filter();updateTitle();}); filter(); updateTitle();
 })();
 </script>
