@@ -678,10 +678,28 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
+      "lifecycle": "current",
       "translation_status": "in_review",
-      "review_reason": "Direct official FAO story verified. Complete and review the five-language content before publication."
+      "translations": {
+        "fr": {
+          "title": "La FAO et le centre égyptien de télédétection explorent une coopération pour renforcer la résilience climatique",
+          "summary": "La FAO et l’Autorité nationale égyptienne de télédétection et des sciences spatiales ont examiné une coopération sur les données géospatiales, la télédétection et les systèmes d’information pour soutenir la résilience climatique, la gestion durable des ressources naturelles et la planification agricole."
+        },
+        "ar": {
+          "title": "الفاو وهيئة الاستشعار عن بُعد المصرية تبحثان التعاون لتعزيز القدرة على التكيف مع المناخ",
+          "summary": "بحثت الفاو والهيئة القومية المصرية للاستشعار عن بعد وعلوم الفضاء التعاون في البيانات الجغرافية والاستشعار عن بعد ونظم المعلومات لدعم القدرة على التكيف مع المناخ والإدارة المستدامة للموارد الطبيعية والتخطيط الزراعي."
+        },
+        "pt": {
+          "title": "FAO e o centro egípcio de deteção remota exploram cooperação para reforçar a resiliência climática",
+          "summary": "A FAO e a Autoridade Nacional Egípcia de Deteção Remota e Ciências Espaciais analisaram a cooperação em dados geoespaciais, deteção remota e sistemas de informação para apoiar a resiliência climática, a gestão sustentável dos recursos naturais e o planeamento agrícola."
+        },
+        "sw": {
+          "title": "FAO na mamlaka ya Misri ya utambuzi wa mbali zachunguza ushirikiano wa kuimarisha ustahimilivu wa tabianchi",
+          "summary": "FAO na Mamlaka ya Kitaifa ya Misri ya Utambuzi wa Mbali na Sayansi za Anga zilijadili ushirikiano katika data za kijiografia, utambuzi wa mbali na mifumo ya taarifa ili kusaidia ustahimilivu wa tabianchi, usimamizi endelevu wa rasilimali asilia na mipango ya kilimo."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "DZ",
@@ -1374,9 +1392,27 @@
       "source_tier": 1,
       "published": "2026-08-07",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct World Bank press release checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La Banque mondiale finance le développement des chaînes de valeur de la volaille et de l’aquaculture en République du Congo",
+          "summary": "Le Groupe de la Banque mondiale a approuvé 60 millions de dollars pour renforcer les chaînes de valeur de la volaille et de l’aquaculture en République du Congo, améliorer l’accès des petits producteurs aux intrants, aux services et aux marchés, et soutenir la création d’emplois ainsi que la sécurité alimentaire."
+        },
+        "ar": {
+          "title": "البنك الدولي يمول تعزيز سلاسل قيمة الدواجن والاستزراع المائي في جمهورية الكونغو",
+          "summary": "وافق البنك الدولي على تمويل بقيمة 60 مليون دولار لتعزيز سلاسل قيمة الدواجن والاستزراع المائي في جمهورية الكونغو، وتحسين وصول صغار المنتجين إلى المدخلات والخدمات والأسواق، ودعم فرص العمل والأمن الغذائي."
+        },
+        "pt": {
+          "title": "Banco Mundial financia o reforço das cadeias de valor da avicultura e da aquicultura na República do Congo",
+          "summary": "O Grupo Banco Mundial aprovou 60 milhões de dólares para reforçar as cadeias de valor da avicultura e da aquicultura na República do Congo, melhorar o acesso dos pequenos produtores a insumos, serviços e mercados e apoiar a criação de emprego e a segurança alimentar."
+        },
+        "sw": {
+          "title": "Benki ya Dunia yafadhili kuimarisha minyororo ya thamani ya ufugaji wa kuku na viumbe vya majini katika Jamhuri ya Congo",
+          "summary": "Kundi la Benki ya Dunia liliidhinisha dola milioni 60 kuimarisha minyororo ya thamani ya ufugaji wa kuku na viumbe vya majini katika Jamhuri ya Congo, kuboresha upatikanaji wa pembejeo, huduma na masoko kwa wazalishaji wadogo, na kusaidia ajira na usalama wa chakula."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "CV",
@@ -1689,10 +1725,27 @@
       "source_tier": 1,
       "published": "2026-05-05",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
+      "lifecycle": "current",
       "coverage_scope": "regional",
-      "review_reason": "Direct FAO regional article checked; country relevance confirmed, awaiting editorial approval before publication."
+      "translations": {
+        "fr": {
+          "title": "Les pays d’Afrique centrale harmonisent la surveillance pour éliminer la peste des petits ruminants d’ici 2030",
+          "summary": "Une réunion régionale de la FAO à N’Djamena a convenu de renforcer la surveillance transfrontalière, les diagnostics de laboratoire, le partage des données et la coordination vétérinaire afin de progresser vers l’élimination de la peste des petits ruminants en Afrique centrale d’ici 2030."
+        },
+        "ar": {
+          "title": "دول وسط أفريقيا توحّد جهود المراقبة للقضاء على طاعون المجترات الصغيرة بحلول 2030",
+          "summary": "اتفقت اجتماعات إقليمية للفاو في نجامينا على تعزيز المراقبة عبر الحدود وتشخيص المختبرات وتبادل البيانات والتنسيق البيطري لدفع الجهود نحو القضاء على طاعون المجترات الصغيرة في وسط أفريقيا بحلول عام 2030."
+        },
+        "pt": {
+          "title": "Países da África Central harmonizam a vigilância para eliminar a peste dos pequenos ruminantes até 2030",
+          "summary": "Uma reunião regional da FAO em N’Djamena acordou reforçar a vigilância transfronteiriça, os diagnósticos laboratoriais, a partilha de dados e a coordenação veterinária para avançar rumo à eliminação da peste dos pequenos ruminantes na África Central até 2030."
+        },
+        "sw": {
+          "title": "Nchi za Afrika ya Kati ziratibu ufuatiliaji ili kutokomeza PPR kufikia 2030",
+          "summary": "Mkutano wa kikanda wa FAO mjini N’Djamena ulikubaliana kuimarisha ufuatiliaji wa kuvuka mipaka, uchunguzi wa maabara, ubadilishanaji wa data na uratibu wa mifugo ili kufikia kutokomeza ugonjwa wa PPR katika Afrika ya Kati ifikapo 2030."
+        }
+      }
     },
     {
       "country_code": "GM",
