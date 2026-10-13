@@ -32,6 +32,27 @@ const isSpecificAgriculturalNewsUrl = value => {
   }
 };
 
+// Keep generic landing pages out of category-specific country resource listings.
+const isGenericAgriculturalResourceUrl = value => {
+  try {
+    const pathname = new URL(value).pathname.replace(/\\/+$/, "") || "/";
+    return pathname === "/" ||
+      /(?:^|\\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\\/agriculture|sectors\\/A|news)$/i.test(pathname) ||
+      /^\\/en$/i.test(pathname) ||
+      /\\/newsdetails(?:\\/en)?$/i.test(pathname);
+  } catch {
+    return true;
+  }
+};
+
+const shouldPublishAgriculturalResource = (record, category) => {
+  if (!isPublishableAgriculturalRecord(record)) return false;
+  if (!isGenericAgriculturalResourceUrl(record.url || record.source_url)) return true;
+  // A broad government or institution homepage can be a valid general reference.
+  // It is not sufficient evidence for a named grant, project, market, or programme.
+  return ["general", "data", "farmer-support"].includes(String(category || record.category || "").toLowerCase());
+};
+
 const collectPublishableNews = read => {
   const primary = (read("agriculturalNews.json").countries || []).flatMap(country =>
     (country.articles || []).map(article => ({
@@ -316,11 +337,11 @@ module.exports = function (eleventyConfig) {
     const gapRecords = gapFiles.flatMap(name => { try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data", name), "utf8")).records || []; } catch (_) { return []; } });
     const allSupplementRecords = [...(supplement.records || []), ...gapRecords.map(r => ({ ...r, lifecycle: r.lifecycle || "needs_review" }))].filter(isPublishableAgriculturalRecord);
     const categoryAliases = { "weather-climate": "climate", "policy": "general" };
-    const normalisedSupplementRecords = allSupplementRecords.map(r => ({ ...r, category: categoryAliases[r.category] || r.category }));
+    const normalisedSupplementRecords = allSupplementRecords.map(r => ({ ...r, category: categoryAliases[r.category] || r.category })).filter(r => shouldPublishAgriculturalResource(r, r.category));
     const categories = [...new Set([...(primary.categories || []), ...normalisedSupplementRecords.map(r => r.category).filter(Boolean)])];
     const countries = (primary.countries || []).map(c => ({
       ...c,
-      records: Object.fromEntries(categories.map(cat => [cat, [...(c.records?.[cat] || [])].filter(isPublishableAgriculturalRecord)]))
+      records: Object.fromEntries(categories.map(cat => [cat, [...(c.records?.[cat] || [])].filter(r => shouldPublishAgriculturalResource(r, cat))]))
     }));
     const byCode = new Map(countries.map(c => [c.code, c]));
 
