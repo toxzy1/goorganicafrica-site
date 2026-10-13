@@ -533,7 +533,25 @@
           "source": "FAO",
           "published": "2026-10-01",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La FAO fait avancer l’initiative Seeds to Foods pour des systèmes agroalimentaires résilients",
+              "summary": "La FAO a présenté Seeds to Foods 2026 comme une plateforme visant à renforcer les systèmes semenciers et les résultats en matière de sécurité alimentaire en Afrique."
+            },
+            "ar": {
+              "title": "الفاو تدفع بمبادرة Seeds to Foods لتعزيز النظم الزراعية والغذائية القادرة على الصمود",
+              "summary": "قدمت الفاو مبادرة Seeds to Foods لعام 2026 بوصفها منصة لتعزيز نظم البذور وتحسين نتائج الأمن الغذائي في أنحاء أفريقيا."
+            },
+            "pt": {
+              "title": "FAO promove a iniciativa Seeds to Foods para sistemas agroalimentares resilientes",
+              "summary": "A FAO destacou o Seeds to Foods 2026 como uma plataforma para reforçar os sistemas de sementes e melhorar os resultados de segurança alimentar em África."
+            },
+            "sw": {
+              "title": "FAO yaendeleza mpango wa Seeds to Foods kwa mifumo ya kilimo na chakula inayostahimili mishtuko",
+              "summary": "FAO iliangazia Seeds to Foods 2026 kama jukwaa la kuimarisha mifumo ya mbegu na matokeo ya usalama wa chakula kote Afrika."
+            }
+          }
         },
         {
           "category": "crops",
@@ -563,7 +581,25 @@
           "review_after": "2026-11-06",
           "status": "review",
           "lifecycle": "needs_review",
-          "review_reason": "Duplicate article URL already listed for this country. Keep one canonical story record or provide a distinct direct article URL."
+          "review_reason": "Duplicate source URL in the same country directory; retain the canonical regional article and review this duplicate before publication.",
+          "translations": {
+            "fr": {
+              "title": "La FAO fait avancer l’initiative Seeds to Foods pour des systèmes agroalimentaires résilients",
+              "summary": "La FAO a présenté Seeds to Foods 2026 comme une plateforme visant à renforcer les systèmes semenciers et les résultats en matière de sécurité alimentaire en Afrique."
+            },
+            "ar": {
+              "title": "الفاو تدفع بمبادرة Seeds to Foods لتعزيز النظم الزراعية والغذائية القادرة على الصمود",
+              "summary": "قدمت الفاو مبادرة Seeds to Foods لعام 2026 بوصفها منصة لتعزيز نظم البذور وتحسين نتائج الأمن الغذائي في أنحاء أفريقيا."
+            },
+            "pt": {
+              "title": "FAO promove a iniciativa Seeds to Foods para sistemas agroalimentares resilientes",
+              "summary": "A FAO destacou o Seeds to Foods 2026 como uma plataforma para reforçar os sistemas de sementes e melhorar os resultados de segurança alimentar em África."
+            },
+            "sw": {
+              "title": "FAO yaendeleza mpango wa Seeds to Foods kwa mifumo ya kilimo na chakula inayostahimili mishtuko",
+              "summary": "FAO iliangazia Seeds to Foods 2026 kama jukwaa la kuimarisha mifumo ya mbegu na matokeo ya usalama wa chakula kote Afrika."
+            }
+          }
         },
         {
           "category": "research-innovation",
@@ -984,7 +1020,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Tanzanie participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك تنزانيا في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Tanzânia participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Tanzania inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         },
         {
           "category": "finance",
@@ -1114,7 +1168,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Zambie participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك زامبيا في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Zâmbia participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Zambia inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         },
         {
           "source": "FAO",
@@ -1314,7 +1386,25 @@
           "source": "FAO",
           "published": "2026-10-01",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La FAO renforce les capacités de l’Afrique de l’Est à préparer des projets de financement climatique",
+              "summary": "La FAO a réuni des experts de Djibouti, d’Érythrée, d’Éthiopie, du Kenya, du Rwanda, de Somalie, du Soudan du Sud et d’Ouganda afin d’élaborer des programmes de financement climatique prêts à l’investissement pour des systèmes agroalimentaires résilients."
+            },
+            "ar": {
+              "title": "الفاو تعزز قدرات شرق أفريقيا على إعداد برامج تمويل مناخي",
+              "summary": "جمعت الفاو خبراء من جيبوتي وإريتريا وإثيوبيا وكينيا ورواندا والصومال وجنوب السودان وأوغندا لتطوير برامج تمويل مناخي جاهزة للاستثمار من أجل نظم زراعية وغذائية قادرة على الصمود."
+            },
+            "pt": {
+              "title": "FAO reforça a capacidade da África Oriental para desenvolver projetos de financiamento climático",
+              "summary": "A FAO reuniu especialistas do Djibuti, Eritreia, Etiópia, Quénia, Ruanda, Somália, Sudão do Sul e Uganda para desenvolver programas de financiamento climático prontos para investimento e destinados a sistemas agroalimentares resilientes."
+            },
+            "sw": {
+              "title": "FAO yaimarisha uwezo wa Afrika Mashariki kuandaa miradi ya ufadhili wa tabianchi",
+              "summary": "FAO iliwaleta pamoja wataalamu kutoka Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, Sudan Kusini na Uganda ili kuandaa programu za ufadhili wa tabianchi zilizo tayari kwa uwekezaji kwa ajili ya mifumo ya kilimo na chakula inayostahimili mishtuko."
+            }
+          }
         },
         {
           "category": "research-innovation",
@@ -1627,7 +1717,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Angola participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك أنغولا في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Angola participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Angola inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         },
         {
           "source": "FAO",
@@ -1752,7 +1860,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Botswana participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك بوتسوانا في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Botsuana participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Botswana inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2961,7 +3087,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Malawi participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك ملاوي في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Malawi participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Malawi inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         },
         {
           "source": "FAO",
@@ -3299,7 +3443,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Mozambique participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك موزمبيق في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Moçambique participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Msumbiji inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         },
         {
           "source": "African Development Bank",
@@ -3381,7 +3543,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Namibie participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك ناميبيا في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Namíbia participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Namibia inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         },
         {
           "category": "weather-climate",
@@ -4220,7 +4400,25 @@
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
           "status": "official",
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "translations": {
+            "fr": {
+              "title": "Les pays du bassin du Zambèze font avancer un programme de résilience climatique de 130 millions de dollars",
+              "summary": "Zimbabwe participe au programme du Groupe de la Banque africaine de développement dans le bassin du Zambèze, qui fait progresser l’agriculture climato-intelligente, la gestion de l’eau, les moyens de subsistance résilients et la sécurité alimentaire dans les huit pays du bassin."
+            },
+            "ar": {
+              "title": "دول حوض الزامبيزي تدفع قدماً برنامجاً للقدرة على التكيف مع المناخ بقيمة 130 مليون دولار",
+              "summary": "تشارك زيمبابوي في برنامج بنك التنمية الأفريقي لحوض الزامبيزي، الذي يعزز الزراعة الذكية مناخياً وإدارة المياه وسبل العيش القادرة على الصمود والأمن الغذائي في دول الحوض الثماني."
+            },
+            "pt": {
+              "title": "Países da Bacia do Zambeze avançam programa de resiliência climática de 130 milhões de dólares",
+              "summary": "Zimbabué participa no programa do Banco Africano de Desenvolvimento para a Bacia do Zambeze, que promove a agricultura climaticamente inteligente, a gestão da água, meios de subsistência resilientes e segurança alimentar nos oito países da bacia."
+            },
+            "sw": {
+              "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
+              "summary": "Zimbabwe inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
+            }
+          }
         },
         {
           "source": "FAO",
