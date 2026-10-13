@@ -2423,7 +2423,7 @@
           "source_tier": 2,
           "published": "2026-10-08",
           "verified": "2026-10-13",
-          "status": "official",
+          "status": "review",
           "translations": {
             "fr": {
               "title": "Le ministère libyen de l’Agriculture discute d’une coopération technique avec la FAO",
@@ -2441,7 +2441,8 @@
               "title": "Wizara ya Kilimo ya Libya yazungumzia ushirikiano wa kiufundi na FAO",
               "summary": "Libya Observer iliripoti tarehe 8 Oktoba 2026 kuwa Wizara ya Kilimo na Rasilimali za Wanyama ya Libya ilijadili kuimarisha ushirikiano wa kiufundi na FAO na Shirika la Kiarabu la Maendeleo ya Kilimo, ikijumuisha kubadilishana utaalamu na msaada unaopendekezwa kwa miradi ya kilimo, mifugo na usalama wa chakula."
             }
-          }
+          },
+          "lifecycle": "needs_review"
         },
         {
           "category": "policy",
@@ -2453,7 +2454,7 @@
           "source_tier": 2,
           "published": "2026-05-03",
           "verified": "2026-10-13",
-          "status": "official",
+          "status": "review",
           "translations": {
             "fr": {
               "title": "La Libye annonce un plan de 100 jours pour réformer les services agricoles et d’élevage",
@@ -2471,7 +2472,8 @@
               "title": "Libya yatangaza mpango wa siku 100 wa kurekebisha huduma za kilimo na mifugo",
               "summary": "Libya Observer iliripoti kuwa Wizara ya Kilimo na Rasilimali za Wanyama ya Libya ilitangaza mpango wa siku 100 wa kuboresha sekta za kilimo na mifugo. Hatua zinajumuisha huduma za mifugo, data za wakulima na wafugaji, mabadiliko ya kidijitali, afya ya wanyama, ulinzi wa mazao, mbegu zinazostahimili hali ya hewa na mafunzo."
             }
-          }
+          },
+          "lifecycle": "needs_review"
         }
       ],
       "localizedNames": {
