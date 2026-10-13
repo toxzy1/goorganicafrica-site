@@ -68,6 +68,9 @@ const requiredConfigMarkers = [
 for (const marker of requiredConfigMarkers) {
   if (!config.includes(marker)) throw new Error("CMS control missing: " + marker);
 }
+if (!config.includes('options: ["current", "needs_review", "closed", "expired", "archived", "historical"]')) {
+  throw new Error("CMS lifecycle selectors must support closed, expired, archived and historical records.");
+}
 
 const reviewCollections = [
   ["agricultural_news_supplement", "src/_data/agriculturalNewsSupplement.json"],
