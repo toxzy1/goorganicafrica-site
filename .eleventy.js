@@ -24,7 +24,7 @@ const isSpecificAgriculturalNewsUrl = value => {
   try {
     const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
     return !(pathname === "/" ||
-      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) || /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname) ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
       /^\/en$/i.test(pathname) ||
       /\/newsdetails(?:\/en)?$/i.test(pathname));
   } catch {
@@ -37,7 +37,7 @@ const isGenericAgriculturalResourceUrl = value => {
   try {
     const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
     return pathname === "/" ||
-      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) || /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname) ||
       /^\/en$/i.test(pathname) ||
       /\/newsdetails(?:\/en)?$/i.test(pathname);
   } catch {
