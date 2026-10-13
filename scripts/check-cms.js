@@ -74,8 +74,9 @@ if (!config.includes('options: ["current", "needs_review", "closed", "expired", 
 if (!config.includes('name: "translations"') ||
     !config.includes('name: "localized"') ||
     !config.includes('name: "translation_status"') ||
-    !config.includes('options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false')) {
-  throw new Error("CMS must expose news translations, resource localizations and default new translations to human review.");
+    !config.includes('options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false') ||
+    !config.includes('options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false')) {
+  throw new Error("CMS must expose source languages, reviewed news/resource translations and human-review defaults.");
 }
 
 const reviewCollections = [
