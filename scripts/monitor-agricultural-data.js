@@ -27,9 +27,9 @@ news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agr
 const isSpecificNewsUrl=value=>{
  try{
   const parsed=new URL(String(value||""));
-  const pathname=parsed.pathname.replace(/\\/+$/,"")||"/";
-  if(/\\/hand-in-hand\\/investment-forum-2026\\//i.test(pathname))return false;
-  return !(pathname==="/"||/(?:^|\\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\\/agriculture|sectors\\/A|news|news-updates|actualites)$/i.test(pathname)||/^\\/en$/i.test(pathname)||/\\/newsdetails(?:\\/en)?$/i.test(pathname)||/\\/news\\/detail(?:\\/en)?$/i.test(pathname));
+  const pathname=parsed.pathname.replace(/\/+$/,"")||"/";
+  if(/\/hand-in-hand\/investment-forum-2026\//i.test(pathname))return false;
+  return !(pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname)||/^\/en$/i.test(pathname)||/\/newsdetails(?:\/en)?$/i.test(pathname)||/\/news\/detail(?:\/en)?$/i.test(pathname));
  }catch{return false;}
 };
 const isCurrentNewsRecord=r=>{
