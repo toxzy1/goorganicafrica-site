@@ -279,7 +279,8 @@ if (!freshnessMonitor.includes('publishableNews=news.filter(isCurrentNewsRecord)
     !freshnessMonitor.includes("country_specific_story_count") ||
     !freshnessMonitor.includes("regional_story_count") ||
     !freshnessMonitor.includes("under_four_country_specific_story_countries") ||
-    !freshnessMonitor.includes("review_candidates_by_country")) {
+    !freshnessMonitor.includes("review_candidates_by_country") ||
+    !freshnessMonitor.includes("country_review_priorities")) {
   throw new Error("Country news coverage must distinguish regional stories, report review candidates by country, and exclude unpublished, historical, expired, and generic-source records.");
 }
 
