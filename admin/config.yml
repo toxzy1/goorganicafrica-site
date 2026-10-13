@@ -305,8 +305,15 @@ collections:
                   - {label: "Summary", name: "summary", widget: "text"}
                   - {label: "Original Source URL", name: "url", widget: "string"}
                   - {label: "Source / Publisher", name: "source", widget: "string"}
+                  - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                  - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
                   - {label: "Published Date", name: "published", widget: "string"}
                   - {label: "Verified Date", name: "verified", widget: "string"}
+                  - {label: "Deadline / Expiry", name: "deadline", widget: "string", required: false}
+                  - {label: "Coverage Scope", name: "coverage_scope", widget: "select", options: ["country-specific", "regional"], required: false}
+                  - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], required: false}
+                  - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review"], required: false}
+                  - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                   - {label: "Status", name: "status", widget: "select", options: ["official", "official-feed", "review", "expired", "archived"], default: "review"}
   - name: "agricultural_resources"
     label: "🌍 Agricultural Resources — 54 Countries"
