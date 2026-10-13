@@ -417,4 +417,10 @@ if (genericPublicServices.length) {
     genericPublicServices.map(record => (record.title || "Untitled") + " -> " + record.url).join("; "));
 }
 
+const coverageAudit = read("scripts/audit-agriculture-coverage.js");
+if (!coverageAudit.includes('const requiredNewsFields = ["title", "summary", "source", "url", "category"]') ||
+    !coverageAudit.includes('if (!reviewOnly) requiredNewsFields.push("verified", "published")')) {
+  throw new Error("Review-only news candidates must not be falsely marked verified; published records must require verification and publication dates.");
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
