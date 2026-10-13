@@ -1772,7 +1772,38 @@
       "name": "Comoros",
       "slug": "comoros",
       "flag": "🇰🇲",
-      "articles": [],
+      "articles": [
+        {
+          "category": "policy",
+          "title": "Comoros presents updated national agricultural census results",
+          "summary": "The Government of the Union of the Comoros, with technical support from FAO and financing from the World Bank, presented results of the second General Agricultural Census in April 2026. The census covers farms, livestock, artisanal fisheries and producers’ living conditions to strengthen agricultural planning and food-security policy.",
+          "url": "https://www.fao.org/africa/news-stories/news-detail/national-presentation-of-the-results-of-the-second-general-agricultural-census-%28rga2%29/en",
+          "source": "FAO Regional Office for Africa and Government of the Union of the Comoros",
+          "source_id": "fao-comoros",
+          "source_tier": 1,
+          "published": "2026-04-02",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Les Comores présentent les résultats actualisés du recensement agricole national",
+              "summary": "Le gouvernement de l’Union des Comores, avec l’appui technique de la FAO et le financement de la Banque mondiale, a présenté en avril 2026 les résultats du deuxième Recensement général de l’agriculture. Il couvre les exploitations, l’élevage, la pêche artisanale et les conditions de vie des producteurs afin d’améliorer la planification agricole et les politiques de sécurité alimentaire."
+            },
+            "ar": {
+              "title": "جزر القمر تعرض النتائج المحدثة للتعداد الزراعي الوطني",
+              "summary": "عرضت حكومة اتحاد جزر القمر في أبريل 2026 نتائج التعداد العام الثاني للزراعة، بدعم فني من منظمة الأغذية والزراعة وتمويل من البنك الدولي. ويغطي التعداد المزارع والثروة الحيوانية والصيد الحرفي وظروف معيشة المنتجين لتعزيز التخطيط الزراعي وسياسات الأمن الغذائي."
+            },
+            "pt": {
+              "title": "Comores apresenta resultados atualizados do recenseamento agrícola nacional",
+              "summary": "O Governo da União das Comores, com apoio técnico da FAO e financiamento do Banco Mundial, apresentou em abril de 2026 os resultados do segundo Recenseamento Geral da Agricultura. O levantamento abrange explorações, pecuária, pesca artesanal e condições de vida dos produtores para reforçar o planeamento agrícola e as políticas de segurança alimentar."
+            },
+            "sw": {
+              "title": "Comoros yawasilisha matokeo yaliyosasishwa ya sensa ya kitaifa ya kilimo",
+              "summary": "Serikali ya Muungano wa Comoros, kwa msaada wa kiufundi wa FAO na ufadhili wa Benki ya Dunia, iliwasilisha matokeo ya Sensa ya Pili ya Jumla ya Kilimo mwezi Aprili 2026. Sensa inahusu mashamba, mifugo, uvuvi wa jadi na hali za maisha za wazalishaji ili kuboresha mipango ya kilimo na sera za usalama wa chakula."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Comores",
         "ar": "جزر القمر",
@@ -2351,7 +2382,38 @@
       "name": "Libya",
       "slug": "libya",
       "flag": "🇱🇾",
-      "articles": [],
+      "articles": [
+        {
+          "category": "policy",
+          "title": "Libya’s agriculture ministry discusses technical cooperation with FAO",
+          "summary": "The Libya Observer reported on 8 October 2026 that Libya’s Ministry of Agriculture and Animal Resources discussed strengthening technical cooperation with FAO and the Arab Organization for Agricultural Development, including expertise exchange and proposed support for agricultural, livestock and food-security projects.",
+          "url": "https://libyaobserver.ly/inbrief/agriculture-ministry-talks-cooperation-fao",
+          "source": "The Libya Observer, reporting a meeting by Libya’s Ministry of Agriculture and Animal Resources",
+          "source_id": "libya-observer",
+          "source_tier": 2,
+          "published": "2026-10-08",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le ministère libyen de l’Agriculture discute d’une coopération technique avec la FAO",
+              "summary": "Le Libya Observer a rapporté le 8 octobre 2026 que le ministère libyen de l’Agriculture et des Ressources animales avait discuté du renforcement de la coopération technique avec la FAO et l’Organisation arabe pour le développement agricole, notamment l’échange d’expertise et l’appui envisagé aux projets agricoles, d’élevage et de sécurité alimentaire."
+            },
+            "ar": {
+              "title": "وزارة الزراعة الليبية تبحث التعاون الفني مع منظمة الأغذية والزراعة",
+              "summary": "أفادت صحيفة ليبيا أوبزرفر في 8 أكتوبر 2026 بأن وزارة الزراعة والثروة الحيوانية الليبية ناقشت تعزيز التعاون الفني مع منظمة الأغذية والزراعة والمنظمة العربية للتنمية الزراعية، بما يشمل تبادل الخبرات ودعم المشاريع الزراعية والحيوانية والأمن الغذائي."
+            },
+            "pt": {
+              "title": "Ministério da Agricultura da Líbia discute cooperação técnica com a FAO",
+              "summary": "O Libya Observer noticiou em 8 de outubro de 2026 que o Ministério da Agricultura e dos Recursos Animais da Líbia discutiu o reforço da cooperação técnica com a FAO e a Organização Árabe para o Desenvolvimento Agrícola, incluindo intercâmbio de conhecimentos e apoio proposto a projetos agrícolas, pecuários e de segurança alimentar."
+            },
+            "sw": {
+              "title": "Wizara ya Kilimo ya Libya yazungumzia ushirikiano wa kiufundi na FAO",
+              "summary": "Libya Observer iliripoti tarehe 8 Oktoba 2026 kuwa Wizara ya Kilimo na Rasilimali za Wanyama ya Libya ilijadili kuimarisha ushirikiano wa kiufundi na FAO na Shirika la Kiarabu la Maendeleo ya Kilimo, ikijumuisha kubadilishana utaalamu na msaada unaopendekezwa kwa miradi ya kilimo, mifugo na usalama wa chakula."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Libye",
         "ar": "ليبيا",
@@ -2905,7 +2967,38 @@
       "name": "Republic of the Congo",
       "slug": "republic-of-the-congo",
       "flag": "🇨🇬",
-      "articles": [],
+      "articles": [
+        {
+          "category": "events",
+          "title": "Republic of the Congo publishes the 2026 National Agricultural Fair programme",
+          "summary": "The official Grande Foire Agricole du Congo programme outlined a national agricultural event in Brazzaville with departmental showcases, public discussions, practical training, agribusiness networking and sessions on mechanisation, irrigation, agro-processing and agricultural entrepreneurship. The published programme dates were 5–20 August 2026.",
+          "url": "https://gfac.agriculture.gouv.cg/index.php/programme-des-activites/",
+          "source": "Grande Foire Agricole du Congo, Ministry of Agriculture, Livestock and Fisheries",
+          "source_id": "gfac-congo",
+          "source_tier": 1,
+          "published": "2026-08-05",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La République du Congo publie le programme de la Grande Foire agricole nationale 2026",
+              "summary": "Le programme officiel de la Grande Foire agricole du Congo présentait un événement national à Brazzaville avec vitrines départementales, débats publics, formation pratique, rencontres d’affaires et sessions sur la mécanisation, l’irrigation, la transformation agroalimentaire et l’entrepreneuriat agricole. Les dates publiées étaient du 5 au 20 août 2026."
+            },
+            "ar": {
+              "title": "جمهورية الكونغو تنشر برنامج المعرض الزراعي الوطني لعام 2026",
+              "summary": "عرض البرنامج الرسمي للمعرض الزراعي الكبير في الكونغو فعالية وطنية في برازافيل تضمنت عروضاً من الإدارات المحلية ونقاشات عامة وتدريباً عملياً ولقاءات تجارية وجلسات حول الميكنة والري والتصنيع الزراعي وريادة الأعمال. وكانت المواعيد المنشورة من 5 إلى 20 أغسطس 2026."
+            },
+            "pt": {
+              "title": "República do Congo publica o programa da Feira Agrícola Nacional de 2026",
+              "summary": "O programa oficial da Grande Feira Agrícola do Congo apresentou um evento nacional em Brazzaville com exposições departamentais, debates públicos, formação prática, encontros empresariais e sessões sobre mecanização, irrigação, transformação agroalimentar e empreendedorismo agrícola. As datas publicadas foram de 5 a 20 de agosto de 2026."
+            },
+            "sw": {
+              "title": "Jamhuri ya Kongo yachapisha ratiba ya Maonyesho ya Kitaifa ya Kilimo ya 2026",
+              "summary": "Ratiba rasmi ya Maonyesho Makuu ya Kilimo ya Kongo ilieleza tukio la kitaifa mjini Brazzaville lenye maonesho ya maeneo, mijadala ya umma, mafunzo ya vitendo, mikutano ya biashara na vipindi kuhusu mitambo, umwagiliaji, uchakataji wa mazao na ujasiriamali wa kilimo. Tarehe zilizochapishwa zilikuwa 5–20 Agosti 2026."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "République du Congo",
         "ar": "جمهورية الكونغو",
@@ -3098,7 +3191,38 @@
       "name": "Seychelles",
       "slug": "seychelles",
       "flag": "🇸🇨",
-      "articles": [],
+      "articles": [
+        {
+          "category": "research-innovation",
+          "title": "International research explores a geographical indication for Seychelles honey",
+          "summary": "Seychelles’ Agriculture Department hosted a research mission assessing the potential for a Geographical Indication for local honey. The study engaged public agencies, standards and trade bodies, and beekeepers, and highlighted coordination, equipment, investment and technical training needs in the sector.",
+          "url": "https://mofbe.gov.sc/international-research-supports-the-future-of-seychelles-honey-2/",
+          "source": "Seychelles Ministry of Fisheries, Agriculture and Blue Economy",
+          "source_id": "seychelles-agriculture-ministry",
+          "source_tier": 1,
+          "published": "2026-07-29",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Une recherche internationale étudie une indication géographique pour le miel des Seychelles",
+              "summary": "Le département de l’Agriculture des Seychelles a accueilli une mission de recherche évaluant la possibilité d’une indication géographique pour le miel local. L’étude a mobilisé des organismes publics, des acteurs des normes et du commerce ainsi que des apiculteurs, et a relevé des besoins en coordination, équipement, investissement et formation technique."
+            },
+            "ar": {
+              "title": "بحث دولي يدرس إمكانية تسجيل العسل السيشيلي كمؤشر جغرافي",
+              "summary": "استضافت إدارة الزراعة في سيشل بعثة بحثية لتقييم إمكانية اعتماد مؤشر جغرافي للعسل المحلي. وشملت الدراسة جهات حكومية وهيئات المعايير والتجارة ومربي النحل، وحددت احتياجات تتعلق بالتنسيق والمعدات والاستثمار والتدريب الفني."
+            },
+            "pt": {
+              "title": "Investigação internacional estuda uma indicação geográfica para o mel das Seicheles",
+              "summary": "O Departamento de Agricultura das Seicheles recebeu uma missão de investigação que avaliou o potencial de uma indicação geográfica para o mel local. O estudo envolveu entidades públicas, organismos de normalização e comércio e apicultores, identificando necessidades de coordenação, equipamento, investimento e formação técnica."
+            },
+            "sw": {
+              "title": "Utafiti wa kimataifa wachunguza alama ya kijiografia kwa asali ya Shelisheli",
+              "summary": "Idara ya Kilimo ya Shelisheli ilipokea ujumbe wa utafiti uliotathmini uwezekano wa kuweka alama ya kijiografia kwa asali ya eneo hilo. Utafiti ulihusisha taasisi za umma, mashirika ya viwango na biashara pamoja na wafugaji nyuki, na kubainisha mahitaji ya uratibu, vifaa, uwekezaji na mafunzo ya kiufundi."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Seychelles",
         "ar": "سيشل",
