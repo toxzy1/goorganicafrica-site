@@ -248,6 +248,7 @@ const newsExpansion = JSON.parse(read("src/_data/agriculturalNewsExpansion.json"
 const opportunityData = JSON.parse(read("src/_data/agriculturalOpportunities.json"));
 const resourceBase = JSON.parse(read("src/_data/agriculturalResources.json"));
 const resourceSupplement = JSON.parse(read("src/_data/agriculturalResourcesSupplement.json"));
+const serviceData = JSON.parse(read("src/_data/agriculturalServices.json"));
 const resourceCandidates = [
   ...(resourceBase.countries || []).flatMap(country =>
     Object.entries(country.records || {}).flatMap(([category, records]) =>
@@ -350,5 +351,27 @@ const publicNewsRecords = [
 ].filter(publicNewsStatus);
 assertNoSameCountryUrlDuplicates(publicNewsRecords, "Public agricultural news");
 assertNoSameCountryUrlDuplicates(resourceCandidates.filter(publicResourceRecord), "Public agricultural resources");
+const publicServiceRecords = (serviceData.records || []).filter(record => {
+  const status = String(record.status || "").toLowerCase();
+  const lifecycle = String(record.lifecycle || "").toLowerCase();
+  return !["review", "needs_review", "draft", "rejected", "expired", "closed"].includes(status) &&
+    !["review", "needs_review", "draft", "rejected", "expired", "closed", "historical"].includes(lifecycle);
+});
+assertNoSameCountryUrlDuplicates(publicServiceRecords, "Public agricultural services");
+const genericPublicServices = publicServiceRecords.filter(record => {
+  const url = String(record.url || "");
+  if (!url) return false;
+  let parsed;
+  try { parsed = new URL(url); } catch (_) { return true; }
+  const pathname = parsed.pathname.replace(/\/+$/, "") || "/";
+  if (!genericSourcePath(pathname)) return false;
+  const title = String(record.title || record.provider || "");
+  const institutional = /\b(ministry|authority|department|agency|institute|centre|center|council|office|commission|bureau|government|university|directorate|board|service)\b/i.test(title);
+  return !(pathname === "/" && institutional);
+});
+if (genericPublicServices.length) {
+  throw new Error("Generic service/event URLs must remain in editorial review: " +
+    genericPublicServices.map(record => (record.title || "Untitled") + " -> " + record.url).join("; "));
+}
 
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
