@@ -1728,7 +1728,38 @@
       "name": "Chad",
       "slug": "chad",
       "flag": "🇹🇩",
-      "articles": [],
+      "articles": [
+        {
+          "category": "resilience",
+          "title": "Chad consults communities and displaced families on food-system resilience planning",
+          "summary": "The West Africa Food System Resilience Programme reported consultations in Chad’s Ouaddaï province to shape its stakeholder-engagement plan. Communities raised concerns about agricultural equipment, soil fertility, irrigation water, livelihoods and humanitarian needs in a climate-vulnerable area.",
+          "url": "https://fsrp.araa.org/en/news/chad-local-communities-and-internally-displaced-persons-ouaddai-region-consulted-development",
+          "source": "West Africa Food System Resilience Programme (FSRP/ARAA)",
+          "source_id": "fsrp-araa",
+          "source_tier": 1,
+          "published": "2026-05-27",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Tchad consulte les communautés et les familles déplacées pour planifier la résilience des systèmes alimentaires",
+              "summary": "Le Programme de résilience des systèmes alimentaires en Afrique de l’Ouest a mené des consultations dans la province tchadienne du Ouaddaï pour élaborer son plan d’engagement des parties prenantes. Les communautés ont signalé des besoins en matériel agricole, fertilité des sols, eau d’irrigation, moyens de subsistance et aide humanitaire dans une zone vulnérable au climat."
+            },
+            "ar": {
+              "title": "تشاد تستشير المجتمعات والأسر النازحة بشأن تخطيط قدرة النظم الغذائية على الصمود",
+              "summary": "أفاد برنامج صمود النظام الغذائي في غرب أفريقيا بإجراء مشاورات في إقليم وداي بتشاد لإعداد خطة إشراك أصحاب المصلحة. وأثارت المجتمعات احتياجات تتعلق بالمعدات الزراعية وخصوبة التربة ومياه الري وسبل العيش والمساعدات الإنسانية في منطقة معرضة للمخاطر المناخية."
+            },
+            "pt": {
+              "title": "Chade consulta comunidades e famílias deslocadas sobre o planeamento da resiliência dos sistemas alimentares",
+              "summary": "O Programa de Resiliência dos Sistemas Alimentares na África Ocidental realizou consultas na província de Ouaddaï, no Chade, para elaborar o seu plano de participação das partes interessadas. As comunidades destacaram necessidades de equipamento agrícola, fertilidade do solo, água para irrigação, meios de subsistência e ajuda humanitária numa zona vulnerável ao clima."
+            },
+            "sw": {
+              "title": "Chad yashauriana na jamii na familia zilizohamishwa kuhusu mipango ya ustahimilivu wa mifumo ya chakula",
+              "summary": "Mpango wa Ustahimilivu wa Mifumo ya Chakula Afrika Magharibi ulifanya mashauriano katika jimbo la Ouaddaï nchini Chad ili kuandaa mpango wa kushirikisha wadau. Jamii zilitaja mahitaji ya vifaa vya kilimo, rutuba ya udongo, maji ya umwagiliaji, riziki na msaada wa kibinadamu katika eneo lililo hatarini kwa mabadiliko ya hali ya hewa."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Tchad",
         "ar": "تشاد",
@@ -2148,7 +2179,38 @@
       "name": "Guinea",
       "slug": "guinea",
       "flag": "🇬🇳",
-      "articles": [],
+      "articles": [
+        {
+          "category": "services",
+          "title": "Guinea launches Agricultural Hotline 133 to support farmers nationwide",
+          "summary": "Guinea’s Ministry of Agriculture introduced the Agricultural Hotline 133 as an information and assistance service for farmers, producer organisations and rural entrepreneurs, covering farming campaigns, production practices, input availability and ministry programmes. The published service hours are Monday to Friday, 9:00–17:00, with a stated call cost of 60 GNF per minute.",
+          "url": "https://agriculture.gov.gn/numero-vert-agricole-133-un-nouveau-service-de-proximite-au-service-des-producteurs-guineens/",
+          "source": "Guinea Ministry of Agriculture",
+          "source_id": "guinea-agriculture-ministry",
+          "source_tier": 1,
+          "published": "2026-07-20",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La Guinée lance le numéro vert agricole 133 pour accompagner les agriculteurs",
+              "summary": "Le ministère guinéen de l’Agriculture a lancé le numéro vert agricole 133, un service d’information et d’assistance destiné aux agriculteurs, organisations paysannes et entrepreneurs ruraux. Il couvre les campagnes agricoles, les pratiques de production, la disponibilité des intrants et les programmes ministériels. Le service est annoncé du lundi au vendredi, de 9 h à 17 h, au coût indiqué de 60 GNF par minute."
+            },
+            "ar": {
+              "title": "غينيا تطلق الخط الزراعي 133 لدعم المزارعين في أنحاء البلاد",
+              "summary": "أطلقت وزارة الزراعة في غينيا الخط الزراعي 133 لتقديم المعلومات والمساعدة للمزارعين ومنظمات المنتجين ورواد الأعمال الريفيين، بما يشمل المواسم الزراعية وممارسات الإنتاج وتوافر المدخلات وبرامج الوزارة. وتُعلن ساعات الخدمة من الاثنين إلى الجمعة، من التاسعة صباحاً حتى الخامسة مساءً، بتكلفة معلنة قدرها 60 فرنكاً غينياً للدقيقة."
+            },
+            "pt": {
+              "title": "Guiné lança a Linha Agrícola 133 para apoiar agricultores em todo o país",
+              "summary": "O Ministério da Agricultura da Guiné lançou a Linha Agrícola 133, um serviço de informação e assistência para agricultores, organizações de produtores e empresários rurais, abrangendo campanhas agrícolas, práticas de produção, disponibilidade de insumos e programas ministeriais. O horário publicado é de segunda a sexta-feira, das 9h às 17h, com custo indicado de 60 GNF por minuto."
+            },
+            "sw": {
+              "title": "Guinea yazindua Simu ya Kilimo 133 kusaidia wakulima kote nchini",
+              "summary": "Wizara ya Kilimo ya Guinea ilianzisha Simu ya Kilimo 133 kama huduma ya taarifa na msaada kwa wakulima, mashirika ya wazalishaji na wajasiriamali wa vijijini, kuhusu misimu ya kilimo, mbinu za uzalishaji, upatikanaji wa pembejeo na programu za wizara. Saa zilizotangazwa ni Jumatatu hadi Ijumaa, saa 3 asubuhi hadi saa 11 jioni, kwa gharama iliyotajwa ya GNF 60 kwa dakika."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Guinée",
         "ar": "غينيا",
@@ -2185,7 +2247,38 @@
       "name": "Lesotho",
       "slug": "lesotho",
       "flag": "🇱🇸",
-      "articles": [],
+      "articles": [
+        {
+          "category": "machinery",
+          "title": "Lesotho launches the 2026/27 planting season with tractor and equipment support",
+          "summary": "The Government of Lesotho announced the start of the 2026/27 planting season with the handover of 121 tractors, including 100 small tractors for constituencies and 21 larger tractors for public institutions. It also reported financial support from Post Bank for 102 farmers, including women and young people.",
+          "url": "https://www.gov.ls/agriculture/kicking-off-the-basotho-planting-season-the-government-of-lesotho-handed-over-tractors-and-agricultural-equipment-to-farmers-in-constituencies-and-to-key-government-departments/",
+          "source": "Government of Lesotho, Department of Information",
+          "source_id": "lesotho-government",
+          "source_tier": 1,
+          "published": "2026-08-07",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Lesotho lance la campagne agricole 2026–2027 avec des tracteurs et du matériel",
+              "summary": "Le gouvernement du Lesotho a annoncé le lancement de la campagne agricole 2026–2027 avec la remise de 121 tracteurs, dont 100 petits tracteurs destinés aux circonscriptions et 21 plus grands pour des institutions publiques. Il a également indiqué que 102 agriculteurs, dont des femmes et des jeunes, avaient reçu un soutien financier de Post Bank."
+            },
+            "ar": {
+              "title": "ليسوتو تطلق موسم الزراعة 2026–2027 بدعم الجرارات والمعدات",
+              "summary": "أعلنت حكومة ليسوتو بدء موسم الزراعة 2026–2027 بتسليم 121 جراراً، منها 100 جرار صغير للدوائر الانتخابية و21 جراراً أكبر للمؤسسات العامة. كما أفادت بتقديم دعم مالي من بنك البريد إلى 102 مزارع، بينهم نساء وشباب."
+            },
+            "pt": {
+              "title": "Lesoto inicia a campanha agrícola de 2026/27 com apoio de tratores e equipamentos",
+              "summary": "O Governo do Lesoto anunciou o início da campanha agrícola de 2026/27 com a entrega de 121 tratores, incluindo 100 pequenos tratores para círculos eleitorais e 21 maiores para instituições públicas. Também informou que 102 agricultores, incluindo mulheres e jovens, receberam apoio financeiro do Post Bank."
+            },
+            "sw": {
+              "title": "Lesotho yazindua msimu wa upandaji wa 2026/27 kwa msaada wa matrekta na vifaa",
+              "summary": "Serikali ya Lesotho ilitangaza kuanza kwa msimu wa upandaji wa 2026/27 kwa kukabidhi matrekta 121, yakiwemo matrekta madogo 100 kwa maeneo ya uchaguzi na matrekta makubwa 21 kwa taasisi za umma. Pia iliripoti kuwa wakulima 102, wakiwemo wanawake na vijana, walipata msaada wa kifedha kutoka Post Bank."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Lesotho",
         "ar": "ليسوتو",
@@ -2466,7 +2559,38 @@
       "name": "Mauritania",
       "slug": "mauritania",
       "flag": "🇲🇷",
-      "articles": [],
+      "articles": [
+        {
+          "category": "policy",
+          "title": "Mauritania prepares the vegetable-growing campaign for the new agricultural season",
+          "summary": "Mauritania’s Prime Minister chaired a committee meeting on 14 September 2026 to prepare the vegetable-growing campaign for the new agricultural season, bringing together government and agricultural-sector stakeholders as part of the country’s food-sovereignty and food-security agenda.",
+          "url": "https://www.primature.gov.mr/index.php/ar/node/2220",
+          "source": "Office of the Prime Minister of Mauritania",
+          "source_id": "mauritania-primature",
+          "source_tier": 1,
+          "published": "2026-09-14",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La Mauritanie prépare la campagne maraîchère de la nouvelle saison agricole",
+              "summary": "Le Premier ministre mauritanien a présidé, le 14 septembre 2026, une réunion du comité chargé de préparer la campagne maraîchère de la nouvelle saison agricole. Des représentants du gouvernement et du secteur agricole y ont participé dans le cadre des objectifs de souveraineté et de sécurité alimentaires du pays."
+            },
+            "ar": {
+              "title": "موريتانيا تستعد لحملة زراعة الخضروات للموسم الزراعي الجديد",
+              "summary": "ترأس الوزير الأول الموريتاني في 14 سبتمبر 2026 اجتماع اللجنة المكلفة بالتحضير لحملة زراعة الخضروات للموسم الزراعي الجديد، بمشاركة جهات حكومية وفاعلين في القطاع الزراعي ضمن جهود تعزيز السيادة والأمن الغذائي."
+            },
+            "pt": {
+              "title": "Mauritânia prepara a campanha de horticultura para a nova época agrícola",
+              "summary": "O primeiro-ministro da Mauritânia presidiu, em 14 de setembro de 2026, a uma reunião da comissão responsável pela preparação da campanha de produção de hortícolas para a nova época agrícola, com a participação de representantes do governo e do setor agrícola no âmbito da agenda de soberania e segurança alimentar."
+            },
+            "sw": {
+              "title": "Mauritania yaandaa msimu wa kilimo cha mboga kwa msimu mpya wa kilimo",
+              "summary": "Waziri Mkuu wa Mauritania aliongoza mkutano wa kamati tarehe 14 Septemba 2026 wa kuandaa kampeni ya kilimo cha mboga kwa msimu mpya wa kilimo. Mkutano uliwakutanisha serikali na wadau wa sekta ya kilimo kama sehemu ya juhudi za usalama na kujitosheleza kwa chakula."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Mauritanie",
         "ar": "موريتانيا",
