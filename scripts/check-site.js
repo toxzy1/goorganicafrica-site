@@ -135,6 +135,24 @@ for (const code of ['en','fr','ar','pt','sw']) {
   }
 }
 
+// Keep all shared discovery-tool translation keys in sync across every supported language.
+const englishDiscoveryTranslations = JSON.parse(read('src/i18n/en.json'));
+for (const code of ['fr','ar','pt','sw']) {
+  const locale = JSON.parse(read(`src/i18n/${code}.json`));
+  for (const namespace of ['search','decisionCentre']) {
+    const expected = Object.keys(englishDiscoveryTranslations[namespace] || {}).sort();
+    const actual = Object.keys(locale[namespace] || {}).sort();
+    if (expected.join('|') !== actual.join('|')) {
+      throw new Error(`Discovery translation keys differ for ${code}/${namespace}; keep localized search and decision tools structurally complete.`);
+    }
+    for (const key of expected) {
+      if (!String(locale[namespace][key] || '').trim()) {
+        throw new Error(`Empty discovery translation: ${code}/${namespace}/${key}.`);
+      }
+    }
+  }
+}
+
 const intelligenceMerge = read('scripts/merge-agricultural-intelligence.js');
 if (!intelligenceMerge.includes("'agriculturalNewsExpansion.json'") ||
     !intelligenceMerge.includes("normalizeUrl(item.url) === candidateUrl") ||
