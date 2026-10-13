@@ -107,6 +107,20 @@ for (const code of ['en','fr','ar','pt','sw']) {
   }
 }
 
+const decisionCentreLabelKeys = [
+  'goal_market','goal_finance','goal_inputs','goal_machinery','goal_training','goal_climate','goal_all',
+  'section_markets','section_opportunities','section_resources','section_services','section_news'
+];
+if (!decisionUi.includes('sectionLabel(sec)') || !decisionUi.includes('decisionCentre.goal_{{g.id}}')) {
+  throw new Error('Farmer Decision Centre dynamic section headings and goal options must use translation keys.');
+}
+for (const code of ['en','fr','ar','pt','sw']) {
+  const decisionLabels = JSON.parse(read(`src/i18n/${code}.json`)).decisionCentre || {};
+  for (const key of decisionCentreLabelKeys) {
+    if (!String(decisionLabels[key] || '').trim()) throw new Error(`Decision Centre label ${key} is missing for ${code}.`);
+  }
+}
+
 const intelligenceMerge = read('scripts/merge-agricultural-intelligence.js');
 if (!intelligenceMerge.includes("'agriculturalNewsExpansion.json'") ||
     !intelligenceMerge.includes("normalizeUrl(item.url) === candidateUrl") ||
