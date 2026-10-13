@@ -121,6 +121,13 @@ for (const code of ['en','fr','ar','pt','sw']) {
   }
 }
 
+const globalSearchTemplate = read('src/search.njk');
+if (globalSearchTemplate.includes('r.is_current') ||
+    !globalSearchTemplate.includes('(not r.lifecycle or r.lifecycle == "current")') ||
+    !globalSearchTemplate.includes('(r.status == "open" or r.status == "active")')) {
+  throw new Error('Global Search must index open/current opportunities without depending on an absent is_current field, while excluding review-only records.');
+}
+
 const decisionCentreLabelKeys = [
   'goal_market','goal_finance','goal_inputs','goal_machinery','goal_training','goal_climate','goal_all',
   'section_markets','section_opportunities','section_resources','section_services','section_news'
