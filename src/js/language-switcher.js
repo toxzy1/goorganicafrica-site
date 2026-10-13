@@ -10,16 +10,15 @@
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
   function currentLanguage() {
-    // Calculator routes are the only shared URLs allowed to remember a
-    // selected language. All other pages are authoritative from their URL:
-    // unprefixed pages are English, while /fr/, /ar/, /pt/ and /sw/ pages
-    // are explicitly localized.
-    var path = window.location.pathname.replace(/\/+$/, "") || "/";
+    // Calculator and explicitly shared pages keep one URL across languages.
+    // Preserve the visitor's selector choice on these routes instead of
+    // resetting the interface to English because the URL has no language prefix.
+    var path = window.location.pathname.replace(/\\/+$/, "") || "/";
 
-    var calculatorLanguage = path.match(/^\/[a-z]{2}\/(fr|ar|pt|sw)\/farm-profit-calculator$/);
+    var calculatorLanguage = path.match(/^\\/[a-z]{2}\\/(fr|ar|pt|sw)\\/farm-profit-calculator$/);
     if (calculatorLanguage) return calculatorLanguage[1];
 
-    if (path === "/farm-profit-calculator") {
+    if (/^\\/(?:farm-profit-calculator|search|farmer-decision-centre|markets|opportunities|agricultural-services|privacy-policy|data-updates)$/.test(path)) {
       try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
       catch (_) { return document.documentElement.lang || "en"; }
     }
