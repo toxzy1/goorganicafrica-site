@@ -149,11 +149,11 @@ for (const [name, script] of [["news", newsSync], ["opportunities", opportunityS
 if (!['record.status == "open"', 'record.status == "active"', 'record.status == "closed"', 'record.status == "expired"', 'record.status == "archived"', 'record.lifecycle != "review"', 'record.lifecycle != "needs_review"', 'record.lifecycle != "draft"'].every(marker => opportunitiesTemplate.includes(marker))) {
   throw new Error("Opportunity directory must allow only recognized publication/archive statuses and hide review-state candidates.");
 }
-if (!['candidate.status == "official"', 'candidate.status == "published"', 'candidate.status == "verified"', 'candidate.lifecycle != "review"', 'candidate.lifecycle != "needs_review"', 'candidate.lifecycle != "draft"'].every(marker => newsCountryTemplate.includes(marker)) || !newsCountryTemplate.includes("publishedArticles")) {
-  throw new Error("Country news pages must allow only approved news statuses and hide review-state candidates.");
+if (!newsCountryTemplate.includes('candidate.lifecycle == "current"') || !newsCountryTemplate.includes("publishedArticles")) {
+  throw new Error("Country news pages must show only current verified stories.");
 }
-if (!['article.status == "official"', 'article.status == "published"', 'article.status == "verified"', 'article.lifecycle != "review"', 'article.lifecycle != "needs_review"', 'article.lifecycle != "draft"'].every(marker => newsIndexTemplate.includes(marker))) {
-  throw new Error("News index must allow only approved news statuses and hide review-state candidates.");
+if (!newsIndexTemplate.includes('article.lifecycle == "current"')) {
+  throw new Error("News index must exclude historical and expired stories from current listings.");
 }
 if (!opportunitiesTemplate.includes('record.lifecycle or record.status')) {
   throw new Error("Opportunity directory must fall back to the existing status field when lifecycle is absent.");
