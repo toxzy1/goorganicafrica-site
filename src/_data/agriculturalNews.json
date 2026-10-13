@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-13",
   "editorial_policy": "Publish only current, verifiable agricultural news from official or authoritative sources. Store the original source URL and verification date. Do not copy full articles.",
   "categories": [
     "general",
@@ -1261,20 +1261,9 @@
           "source": "FAO",
           "published": "2026-10-27",
           "verified": "2026-10-07",
-          "status": "official"
-        },
-        {
-          "category": "research-innovation",
-          "title": "FAO Africa Forum to focus on science and innovation for agrifood transformation",
-          "summary": "The 27–29 October 2026 Addis Ababa forum will examine crop, livestock, fisheries and aquaculture innovation, productivity, climate resilience, value chains and investment.",
-          "url": "https://www.fao.org/africa/events/events-detail/africa-forum-on-harnessing-science-and-innovation-for-agrifood-systems-transformation/en",
-          "source": "FAO / IAEA",
-          "source_id": "fao",
-          "source_tier": 1,
-          "published": "2026-10-27",
-          "verified": "2026-10-07",
-          "review_after": "2026-11-06",
-          "status": "official"
+          "status": "official",
+          "lifecycle": "needs_review",
+          "review_reason": "This URL is an upcoming event page, and the event date was entered as the publication date. The event is listed in the services/events directory; keep this news entry unpublished unless the original announcement date is verified."
         },
         {
           "category": "research-innovation",
