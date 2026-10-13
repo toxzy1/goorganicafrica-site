@@ -346,13 +346,19 @@ const assertNoSameCountryUrlDuplicates = (records, label) => {
     seen.set(key, true);
   }
 };
-const publicNewsRecords = [
-  ...(newsBase.countries || []).flatMap(country => (country.articles || []).map(record => ({...record, country_code: record.country_code || country.code, country: record.country || country.name}))),
-  ...(newsSupplement.records || []),
-  ...(newsExpansion.records || [])
-].filter(publicNewsStatus);
+// The build merge step has already folded approved news/resource supplements
+// into the base files, so audit the merged base once to avoid counting the
+// same supplement record twice in the checker.
+const publicNewsRecords = (newsBase.countries || []).flatMap(country =>
+  (country.articles || []).map(record => ({...record, country_code: record.country_code || country.code, country: record.country || country.name}))
+).filter(publicNewsStatus);
+const publicBaseResourceRecords = (resourceBase.countries || []).flatMap(country =>
+  Object.entries(country.records || {}).flatMap(([category, records]) =>
+    (records || []).map(record => ({...record, category: record.category || category, country_code: record.country_code || country.code, country: record.country || country.name}))
+  )
+);
 assertNoSameCountryUrlDuplicates(publicNewsRecords, "Public agricultural news");
-assertNoSameCountryUrlDuplicates(resourceCandidates.filter(publicResourceRecord), "Public agricultural resources");
+assertNoSameCountryUrlDuplicates(publicBaseResourceRecords.filter(publicResourceRecord), "Public agricultural resources");
 const publicServiceRecords = (serviceData.records || []).filter(record => {
   const status = String(record.status || "").toLowerCase();
   const lifecycle = String(record.lifecycle || "").toLowerCase();
