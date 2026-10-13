@@ -312,8 +312,8 @@ if (searchHtml) {
     const escapeAttr = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
     for (const match of sourceBlock.matchAll(/<article\\b([^>]*)>/gi)) {
       const attrs = match[1];
-      if (!/\\bdata-type=["']Resource["']/i.test(attrs)) continue;
-      const titleMatch = attrs.match(/\\bdata-title=["']([^"']*)["']/i);
+      if (!/\bdata-type=["']Resource["']/i.test(attrs)) continue;
+      const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
       const title = titleMatch ? titleMatch[1] : "";
       if (reviewTitles.has(title) || [...reviewTitles].some(t => escapeAttr(t) === title)) {
         failures.push("search/index.html: review-only resource leaked into public search: " + title);
