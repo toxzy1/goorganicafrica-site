@@ -142,11 +142,11 @@ for (const code of ['en','fr','ar','pt','sw']) {
   }
 }
 
-// Keep all shared discovery-tool translation keys in sync across every supported language.
+// Keep all shared discovery-tool and directory translation keys in sync across every supported language.
 const englishDiscoveryTranslations = JSON.parse(read('src/i18n/en.json'));
 for (const code of ['fr','ar','pt','sw']) {
   const locale = JSON.parse(read(`src/i18n/${code}.json`));
-  for (const namespace of ['search','decisionCentre']) {
+  for (const namespace of ['search','decisionCentre','markets','opportunities','services']) {
     const expected = Object.keys(englishDiscoveryTranslations[namespace] || {}).sort();
     const actual = Object.keys(locale[namespace] || {}).sort();
     if (expected.join('|') !== actual.join('|')) {
@@ -158,6 +158,19 @@ for (const code of ['fr','ar','pt','sw']) {
       }
     }
   }
+}
+
+const marketsTemplate = read('src/_includes/markets-directory.njk');
+const opportunitiesTemplate = read('src/_includes/opportunities-directory.njk');
+const servicesTemplate = read('src/_includes/agricultural-services-directory.njk');
+if (!marketsTemplate.includes('data-i18n="markets.title"') || !marketsTemplate.includes('data-i18n="markets.noResults"') || !marketsTemplate.includes("goa:languagechange")) {
+  throw new Error('Markets directory must translate its controls, empty state, and dynamic summary when the language changes.');
+}
+if (!opportunitiesTemplate.includes('data-i18n="opportunities.title"') || !opportunitiesTemplate.includes('data-i18n="opportunities.noResults"') || !opportunitiesTemplate.includes("goa:languagechange")) {
+  throw new Error('Opportunities directory must translate its controls and empty state when the language changes.');
+}
+if (!servicesTemplate.includes('data-i18n="services.title"') || !servicesTemplate.includes('data-i18n="services.noResults"') || !servicesTemplate.includes("goa:languagechange")) {
+  throw new Error('Agricultural services directory must translate its controls and empty state when the language changes.');
 }
 
 const intelligenceMerge = read('scripts/merge-agricultural-intelligence.js');
