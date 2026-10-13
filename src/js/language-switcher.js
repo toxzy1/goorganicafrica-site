@@ -133,11 +133,10 @@
     // Shared pages (such as the calculator) stay on the same URL.
     if (rest === "farm-profit-calculator") return "/farm-profit-calculator/";
 
-    // Keep the visible per-content language links as a fallback for older
-    // localized content that does not yet have an explicit target map.
-    var link = document.querySelector('.translation-links a[data-language="' + code + '"]');
-    if (link && link.getAttribute("href")) return link.getAttribute("href");
-
+    // Never navigate through generic per-content translation links here:
+    // on older pages they may point to a different article or section.
+    // Without an explicit target map or known section route, stay on this page
+    // and translate the interface in place rather than sending visitors elsewhere.
     return null;
   }
 
