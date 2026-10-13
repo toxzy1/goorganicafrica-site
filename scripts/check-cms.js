@@ -222,6 +222,12 @@ const eleventySource = read(".eleventy.js");
 if (!eleventySource.includes("const collectPublishableNews") || !eleventySource.includes("const collectPublishableResources") || !eleventySource.includes("articles: dedupeAgriculturalRecords(") || !eleventySource.includes("const incoming = [...(supplement.records || []), ...(expansion.records || [])]") || !eleventySource.includes('title: article.title || article.headline || ""') || !eleventySource.includes("isSpecificAgriculturalNewsUrl(article.url)") || !eleventySource.includes("const allSupplementRecords = [...(supplement.records || []), ...gapRecords.map") || !eleventySource.includes("const isGenericAgriculturalResourceUrl = value =>") || !eleventySource.includes("twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum") || !eleventySource.includes("shouldPublishAgriculturalResource(r, cat)") || !eleventySource.includes("filter(record => shouldPublishAgriculturalResource(record, record.category))")) {
   throw new Error("Public agricultural search, news and resource data must normalize eligible news, deduplicate sources and exclude generic or review-queue records.");
 }
+if (!eleventySource.includes("const normalizeAgriculturalUrl = value =>") ||
+    !eleventySource.includes('url.hash = ""') ||
+    !eleventySource.includes("const identity = rawUrl ? normalizeAgriculturalUrl(rawUrl)")) {
+  throw new Error("Public agricultural deduplication must normalize URL variants without rewriting the source links.");
+}
+
 if (eleventySource.includes('new Date("2026-10-08T00:00:00Z")') || !eleventySource.includes("new Date().toISOString().slice(0, 10)")) {
   throw new Error("Agricultural expiry, freshness and generated-date metadata must not be frozen to an old build date.");
 }
