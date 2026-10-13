@@ -254,6 +254,21 @@ for (const item of newsPages) {
   if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
 }
 
+// Language switching must not send shared discovery pages to guessed localized URLs.
+// Keep this contract checked in CI because a route can build successfully yet redirect visitors to the homepage or a 404.
+const switcherPath = path.join(source, "js", "language-switcher.js");
+if (!fs.existsSync(switcherPath)) {
+  failures.push("Language switcher source is missing.");
+} else {
+  const switcher = fs.readFileSync(switcherPath, "utf8");
+  for (const route of ["search", "farmer-decision-centre", "markets", "opportunities", "agricultural-services", "my-agriculture", "agricultural-intelligence"]) {
+    if (!switcher.includes(route)) failures.push("Language switcher: missing shared-route handling for " + route);
+  }
+  if (!switcher.includes('localStorage.getItem("goa_language")')) failures.push("Language switcher: shared-page language preference is not restored");
+  if (!switcher.includes('localStorage.setItem("goa_language"')) failures.push("Language switcher: selected language is not persisted");
+  if (!switcher.includes("return null;") || !switcher.includes("window.location.assign(targetUrl)")) failures.push("Language switcher: missing safe no-target navigation guard");
+}
+
 // Shared discovery pages must render usable source data, not just their shell.
 const searchHtml = read("search/index.html");
 if (searchHtml) {
@@ -366,6 +381,16 @@ function searchTargetExists(rawUrl) {
   });
 }
 
+const decisionUiPath = path.join(source, "_includes", "farmer-decision-centre-ui.njk");
+if (!fs.existsSync(decisionUiPath)) {
+  failures.push("Decision Centre source template is missing.");
+} else {
+  const decisionUi = fs.readFileSync(decisionUiPath, "utf8");
+  if (!decisionUi.includes("topicMatched=topicRows.length>0")) failures.push("Decision Centre: exact-topic matching status is missing");
+  if (!decisionUi.includes("rows=topicMatched?topicRows:rows")) failures.push("Decision Centre: country-level fallback is missing when exact topic records are unavailable");
+  if (!decisionUi.includes("Showing broader country-level records")) failures.push("Decision Centre: fallback is not explained to visitors");
+  if (!decisionUi.includes("goa:languagechange")) failures.push("Decision Centre: results are not refreshed after language changes");
+}
 const decisionHtml = read("farmer-decision-centre/index.html");
 if (decisionHtml) {
   for (const id of ["dc-country", "dc-topic", "dc-goal", "dc-build", "dc-output"]) {
