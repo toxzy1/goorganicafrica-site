@@ -2881,6 +2881,51 @@
       "coverage_scope": "country_specific",
       "source_language": "fr",
       "review_reason": "Direct official FAO article is in French. Review the English title/summary and confirm whether this data-governance training belongs in Agricultural News or Resources before approval."
+    },
+    {
+      "country_code": "SO",
+      "category": "irrigation",
+      "title": "Somali Government, UN and partners begin restoration of the Sabuun Barrage",
+      "summary": "FAO reports that restoration works have begun on the Sabuun Barrage under the Jowhar Offstream Storage Programme, aiming to improve irrigation access, water security and flood-and-drought resilience for farming communities along the Shabelle Basin.",
+      "url": "https://www.fao.org/somalia/news/details/somali-government--un-and-development-partners-welcome-groundbreaking-of-vital-sabuun-barrage-under-josp/en",
+      "source": "FAO in Somalia",
+      "source_tier": 1,
+      "published": "2026-09-10",
+      "discovered": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "coverage_scope": "country_specific",
+      "review_reason": "Direct official FAO country article located. Confirm this is distinct from other JOSP/Sabuun Barrage records and keep one canonical record per source article."
+    },
+    {
+      "country_code": "SO",
+      "category": "climate",
+      "title": "UK adds £2.5 million to RESTORE for Somali flood preparedness and resilient livelihoods",
+      "summary": "FAO reports additional UK funding for RESTORE to strengthen early warning, flood protection, temporary relocation and cash assistance, alongside longer-term water management and climate-adaptive farming in Somalia's Shabelle Basin.",
+      "url": "https://www.fao.org/somalia/news/details/uk-commits--2.5-million-to-restore-to-help-somali-commun-ities-prepare-for-el-ni%C3%B1o-flooding/en",
+      "source": "FAO in Somalia",
+      "source_tier": 1,
+      "published": "2026-09-30",
+      "discovered": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "coverage_scope": "country_specific",
+      "review_reason": "Direct official FAO country article located. Confirm the summary and distinguish the project funding announcement from other RESTORE/JOSP stories before approval."
+    },
+    {
+      "country_code": "SO",
+      "category": "irrigation",
+      "title": "FAO says restoration works are beginning on Somalia's Sabuun Barrage",
+      "summary": "FAO describes the first phase of Sabuun Barrage restoration under JOSP, a multi-partner investment intended to restore irrigation services, strengthen flood protection and improve food security and climate resilience across rural Somalia.",
+      "url": "https://www.fao.org/somalia/news/details/fao--restoration-works-to-begin-imminently-on-vital-somalia-josp-sabuun-barrage/en",
+      "source": "FAO in Somalia",
+      "source_tier": 1,
+      "published": "2026-09-02",
+      "discovered": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "coverage_scope": "country_specific",
+      "review_reason": "Direct official FAO country article located. It concerns the same Sabuun Barrage project as a later announcement; compare both records and publish only if the earlier milestone adds distinct value."
     }
   ]
 }
