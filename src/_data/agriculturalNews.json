@@ -1941,7 +1941,38 @@
       "name": "Egypt",
       "slug": "egypt",
       "flag": "🇪🇬",
-      "articles": [],
+      "articles": [
+        {
+          "category": "research-innovation",
+          "title": "Egypt trains 70 agricultural engineers in smart-farming systems",
+          "summary": "Egypt’s Ministry of Agriculture reported a specialised training programme for 70 agricultural engineers and extension staff on smart-farming systems, including modern irrigation, precision agriculture and climate forecasting to improve productivity and resource efficiency.",
+          "url": "https://agri.gov.eg/news/topic/19394",
+          "source": "Egypt Ministry of Agriculture and Land Reclamation",
+          "source_id": "egypt-agriculture-ministry",
+          "source_tier": 1,
+          "published": "2026-09-20",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "L’Égypte forme 70 ingénieurs agricoles aux systèmes d’agriculture intelligente",
+              "summary": "Le ministère égyptien de l’Agriculture a annoncé une formation spécialisée destinée à 70 ingénieurs agricoles et agents de vulgarisation sur les systèmes d’agriculture intelligente, notamment l’irrigation moderne, l’agriculture de précision et la prévision climatique afin d’améliorer la productivité et l’efficacité des ressources."
+            },
+            "ar": {
+              "title": "مصر تدرب 70 مهندساً زراعياً على نظم الزراعة الذكية",
+              "summary": "أعلنت وزارة الزراعة واستصلاح الأراضي المصرية عن برنامج تدريبي متخصص لـ70 مهندساً زراعياً وموظف إرشاد حول نظم الزراعة الذكية، بما يشمل الري الحديث والزراعة الدقيقة والتنبؤ المناخي لتحسين الإنتاجية وكفاءة استخدام الموارد."
+            },
+            "pt": {
+              "title": "Egito forma 70 engenheiros agrícolas em sistemas de agricultura inteligente",
+              "summary": "O Ministério da Agricultura do Egito anunciou uma formação especializada para 70 engenheiros agrícolas e técnicos de extensão sobre sistemas de agricultura inteligente, incluindo irrigação moderna, agricultura de precisão e previsão climática para melhorar a produtividade e a eficiência dos recursos."
+            },
+            "sw": {
+              "title": "Misri yafundisha wahandisi 70 wa kilimo kuhusu mifumo ya kilimo mahiri",
+              "summary": "Wizara ya Kilimo ya Misri ilitangaza mafunzo maalumu kwa wahandisi 70 wa kilimo na maafisa ugani kuhusu mifumo ya kilimo mahiri, ikijumuisha umwagiliaji wa kisasa, kilimo cha usahihi na utabiri wa hali ya hewa ili kuboresha uzalishaji na matumizi bora ya rasilimali."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Égypte",
         "ar": "مصر",
@@ -2044,7 +2075,38 @@
       "name": "Gabon",
       "slug": "gabon",
       "flag": "🇬🇦",
-      "articles": [],
+      "articles": [
+        {
+          "category": "livestock",
+          "title": "Gabon advances its poultry supply chain as part of food-sovereignty plans",
+          "summary": "Gabon’s agriculture ministry reported progress in its emergency operational plan for poultry, working with the national purchasing centre to strengthen domestic supply and reduce dependence on imported food products.",
+          "url": "https://agriculture.gouv.ga/filiere-avicole-le-ministere-et-la-centrale-dachat-du-gabon-franchissent-une-nouvelle-etape-vers-la-souverainete-alimentaire/",
+          "source": "Gabon Ministry of Agriculture, Livestock and Rural Development",
+          "source_id": "gabon-agriculture-ministry",
+          "source_tier": 1,
+          "published": "2026-08-07",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Gabon fait progresser la filière avicole dans le cadre de sa souveraineté alimentaire",
+              "summary": "Le ministère gabonais de l’Agriculture a fait état des progrès de son plan opérationnel d’urgence pour la filière avicole, en collaboration avec la Centrale d’achat nationale, afin de renforcer l’approvisionnement local et de réduire la dépendance aux importations alimentaires."
+            },
+            "ar": {
+              "title": "الغابون تطور سلسلة الدواجن ضمن خطط السيادة الغذائية",
+              "summary": "أعلنت وزارة الزراعة في الغابون عن إحراز تقدم في خطتها التشغيلية الطارئة لقطاع الدواجن، بالتعاون مع مركز الشراء الوطني لتعزيز الإمدادات المحلية وتقليل الاعتماد على المنتجات الغذائية المستوردة."
+            },
+            "pt": {
+              "title": "Gabão desenvolve a cadeia avícola no âmbito dos planos de soberania alimentar",
+              "summary": "O Ministério da Agricultura do Gabão informou sobre avanços no plano operacional de emergência para o setor avícola, em parceria com a central nacional de compras, para reforçar o abastecimento interno e reduzir a dependência de importações alimentares."
+            },
+            "sw": {
+              "title": "Gabon yaendeleza mnyororo wa kuku katika mipango ya kujitosheleza kwa chakula",
+              "summary": "Wizara ya Kilimo ya Gabon iliripoti maendeleo katika mpango wake wa dharura wa sekta ya kuku, kwa kushirikiana na kituo cha kitaifa cha ununuzi ili kuimarisha usambazaji wa ndani na kupunguza utegemezi wa vyakula vinavyoagizwa kutoka nje."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Gabon",
         "ar": "الغابون",
