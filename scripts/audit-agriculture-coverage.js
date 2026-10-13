@@ -51,6 +51,20 @@ function summarizeCounts(label, counts, min, countryNames) {
 const primary = flattenResources(readJson("src/_data/agriculturalResources.json"));
 const supplement = flattenResources(readJson("src/_data/agriculturalResourcesSupplement.json"));
 const resources = [...primary, ...supplement];
+const resourcePublishable = resources.filter((r) => {
+  const status = String(r.status || "official").toLowerCase();
+  const lifecycle = String(r.lifecycle || "").toLowerCase();
+  const held = ["review", "needs_review", "draft", "rejected", "expired", "closed", "archived", "historical"];
+  return nonempty(r.url) && !held.includes(status) && !held.includes(lifecycle);
+});
+const resourceTranslationCounts = Object.fromEntries(LANGS.map((lang) => [
+  lang,
+  resourcePublishable.filter((r) => r.localized && r.localized[lang] && nonempty(r.localized[lang].title) && nonempty(r.localized[lang].description)).length
+]));
+console.log("Resources with localized title+description: " + LANGS.map((lang) => lang + "=" + resourceTranslationCounts[lang] + "/" + resourcePublishable.length).join("  "));
+if (LANGS.some((lang) => resourceTranslationCounts[lang] < resourcePublishable.length)) {
+  warnings.push("Resources: some published records lack reviewed localized title/description; localized directories flag these cards as translation pending.");
+}
 const resourceCounts = Object.fromEntries([...EXPECTED_CODES].map((c) => [c, 0]));
 const resourceCategoryCounts = Object.fromEntries([...EXPECTED_CODES].map((c) => [c, new Set()]));
 const resourceUrls = new Map();
