@@ -2138,8 +2138,8 @@
       "source_tier": 1,
       "published": "2026-06-04",
       "verified": "2026-10-13",
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "translations": {
         "fr": {
           "title": "La FAO met en avant le renforcement des contrôles de sécurité sanitaire des aliments importés aux Comores",
@@ -2158,7 +2158,8 @@
           "summary": "FAO inaeleza jinsi wakaguzi wa usalama wa chakula nchini Comoro wanavyotumia taratibu zinazotegemea ushahidi zaidi kukagua chakula kinachoagizwa, ikiwemo bidhaa za kuku, na kuimarisha ulinzi katika taifa la visiwa linalotegemea sana uagizaji."
         }
       },
-      "coverage_scope": "country"
+      "coverage_scope": "country",
+      "review_reason": "Duplicate of the canonical Comoros record in agriculturalNews.json; retain the translated canonical card and keep this duplicate unpublished."
     },
     {
       "country_code": "ST",
