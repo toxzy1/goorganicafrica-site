@@ -102,8 +102,12 @@ if (!resourcesDirectoryTemplate.includes('translation-pending-note') ||
   throw new Error('Localized resource cards must clearly flag when their title and description are not fully translated.');
 }
 const globalSearch = read('src/search.njk');
-if (!globalSearch.includes('goa-global-search') || !globalSearch.includes("input.addEventListener('input',render)") || !globalSearch.includes('esc(x.url)')) {
-  throw new Error('Global search must provide live query handling and clickable result destinations.');
+if (!globalSearch.includes('goa-global-search') ||
+    !globalSearch.includes("input.addEventListener('input',render)") ||
+    !globalSearch.includes('esc(x.url)') ||
+    !globalSearch.includes('agriculturalResourcesAll.countries') ||
+    !globalSearch.includes('country.records[category]')) {
+  throw new Error('Global search must provide live query handling, clickable destinations, and correctly index nested agricultural resource records.');
 }
 const decisionPage = read('src/farmer-decision-centre.njk');
 const decisionUi = read('src/_includes/farmer-decision-centre-ui.njk');
