@@ -137,7 +137,25 @@
           "published": "2026-02-13",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La BAD approuve 200 millions de dollars pour stimuler la production agricole au Nigeria",
+              "summary": "Le financement soutient les intrants agricoles, les chaînes de valeur des cultures prioritaires, la vulgarisation, les outils numériques, l’agriculture climato-intelligente et la gestion des données agricoles dans le cadre de la deuxième phase du NAGS-AP."
+            },
+            "ar": {
+              "title": "البنك الأفريقي للتنمية يوافق على 200 مليون دولار لتعزيز الإنتاج الزراعي في نيجيريا",
+              "summary": "يدعم التمويل المدخلات الزراعية وسلاسل قيمة المحاصيل ذات الأولوية والإرشاد الزراعي والأدوات الرقمية والزراعة الذكية مناخياً وإدارة البيانات الزراعية ضمن المرحلة الثانية من برنامج NAGS-AP."
+            },
+            "pt": {
+              "title": "BAD aprova 200 milhões de dólares para impulsionar a produção agrícola na Nigéria",
+              "summary": "O financiamento apoia insumos agrícolas, cadeias de valor de culturas prioritárias, extensão rural, ferramentas digitais, agricultura climaticamente inteligente e gestão de dados agrícolas na segunda fase do NAGS-AP."
+            },
+            "sw": {
+              "title": "AfDB yaidhinisha dola milioni 200 kuimarisha uzalishaji wa kilimo nchini Nigeria",
+              "summary": "Ufadhili huu unaunga mkono pembejeo za kilimo, minyororo ya thamani ya mazao ya kipaumbele, huduma za ugani, zana za kidijitali, kilimo kinachozingatia tabianchi na usimamizi wa data za kilimo katika awamu ya pili ya NAGS-AP."
+            }
+          }
         },
         {
           "source": "FAO",
@@ -215,7 +233,25 @@
           "review_after": "2026-11-06",
           "status": "review",
           "lifecycle": "needs_review",
-          "review_reason": "Duplicate article URL already listed for this country. Keep one canonical story record or provide a distinct direct article URL."
+          "review_reason": "Duplicate source URL in the same country directory; retain the canonical record and review this duplicate before publication.",
+          "translations": {
+            "fr": {
+              "title": "La BAD approuve 200 millions de dollars pour stimuler la production agricole au Nigeria",
+              "summary": "Le financement soutient les intrants agricoles, les chaînes de valeur des cultures prioritaires, la vulgarisation, les outils numériques, l’agriculture climato-intelligente et la gestion des données agricoles dans le cadre de la deuxième phase du NAGS-AP."
+            },
+            "ar": {
+              "title": "البنك الأفريقي للتنمية يوافق على 200 مليون دولار لتعزيز الإنتاج الزراعي في نيجيريا",
+              "summary": "يدعم التمويل المدخلات الزراعية وسلاسل قيمة المحاصيل ذات الأولوية والإرشاد الزراعي والأدوات الرقمية والزراعة الذكية مناخياً وإدارة البيانات الزراعية ضمن المرحلة الثانية من برنامج NAGS-AP."
+            },
+            "pt": {
+              "title": "BAD aprova 200 milhões de dólares para impulsionar a produção agrícola na Nigéria",
+              "summary": "O financiamento apoia insumos agrícolas, cadeias de valor de culturas prioritárias, extensão rural, ferramentas digitais, agricultura climaticamente inteligente e gestão de dados agrícolas na segunda fase do NAGS-AP."
+            },
+            "sw": {
+              "title": "AfDB yaidhinisha dola milioni 200 kuimarisha uzalishaji wa kilimo nchini Nigeria",
+              "summary": "Ufadhili huu unaunga mkono pembejeo za kilimo, minyororo ya thamani ya mazao ya kipaumbele, huduma za ugani, zana za kidijitali, kilimo kinachozingatia tabianchi na usimamizi wa data za kilimo katika awamu ya pili ya NAGS-AP."
+            }
+          }
         },
         {
           "category": "research-innovation",
