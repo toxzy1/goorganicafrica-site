@@ -431,5 +431,9 @@ if (!coverageAudit.includes('const requiredNewsFields = ["title", "summary", "so
     !coverageAudit.includes('if (!reviewOnly) requiredNewsFields.push("verified", "published")')) {
   throw new Error("Review-only news candidates must not be falsely marked verified; published records must require verification and publication dates.");
 }
+if (!coverageAudit.includes("resourceTranslationCounts") ||
+    !coverageAudit.includes("Resources with localized title+description")) {
+  throw new Error("Agricultural quality audit must report localized title/description coverage for published resource records.");
+}
 
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
