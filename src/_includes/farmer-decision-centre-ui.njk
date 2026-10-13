@@ -19,7 +19,8 @@
 <p style="margin-top:22px;font-size:.9em;"><strong data-i18n="decisionCentre.important">Important:</strong> <span data-i18n="decisionCentre.disclaimer">This is an information and discovery guide, not financial, legal or professional agronomic advice. Market records without a current dated quotation are shown as source references, not as current prices.</span></p>
 <script>
 (function(){
-  const tr=(key)=>window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t("decisionCentre",key):({chooseCountry:"Please select a country first.",chooseTopic:"Now choose an enterprise/topic and click",noMatch:"No matching records were found for this exact combination yet. Try another enterprise/topic or choose the full brief."}[key]||key);\n  const data={{ agriculturalDecisionCentre.json | safe }};
+  const tr=(key)=>window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t("decisionCentre",key):({chooseCountry:"Please select a country first.",chooseTopic:"Now choose an enterprise/topic and click",noMatch:"No matching records were found for this exact combination yet. Try another enterprise/topic or choose the full brief."}[key]||key);
+  const data={{ agriculturalDecisionCentre.json | safe }};
   const goals={{ agriculturalDecisionCentre.goals | dump | safe }};
   const country=document.getElementById("dc-country"), topic=document.getElementById("dc-topic"), goal=document.getElementById("dc-goal"), out=document.getElementById("dc-output"), btn=document.getElementById("dc-build");
   const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -36,6 +37,8 @@
     out.innerHTML="<h2>"+esc(tr("briefHeading"))+esc(name)+(tt?" — "+esc(topic.options[topic.selectedIndex].text):"")+"</h2>"+(groups.length?groups.map(([sec,items])=>"<section style='margin:18px 0'><h3>"+esc(sec.replace(/s$/,"").replace(/-/g," "))+" <small>("+items.length+")</small></h3><div>"+items.map(r=>"<article class='card' style='margin:8px 0'><strong>"+esc(r.title)+"</strong><p>"+esc(r.text.slice(0,280))+(r.text.length>280?"…":"")+"</p><small>Verified/source date: "+esc(r.date||"Not stated")+" · Source tier "+esc(r.tier)+"</small>"+(r.url?"<br><a href='"+esc(r.url)+"' target='_blank' rel='noopener'>Open source</a>":"")+"</article>").join("")+"</div></section>").join(""):"<p>"+esc(tr("noMatch"))+"</p>");
   }
   btn.addEventListener("click",render);
-  country.addEventListener("change",()=>{out.innerHTML="<p>"+esc(tr("chooseTopic"))+" <strong>"+esc(tr("buildButton"))+"</strong>.</p>";});\n  document.addEventListener("goa:languagechange",()=>{if(!country.value){out.innerHTML="<p>"+esc(tr("initialPrompt"))+"</p>";}});
+  country.addEventListener("change",()=>{out.innerHTML="<p>"+esc(tr("chooseTopic"))+" <strong>"+esc(tr("buildButton"))+"</strong>.</p>";});
+  document.addEventListener("goa:languagechange",()=>{if(!country.value){out.innerHTML="<p>"+esc(tr("initialPrompt"))+"</p>";}});
+  document.addEventListener("goa:languagechange",()=>{if(!country.value){out.innerHTML="<p>"+esc(tr("initialPrompt"))+"</p>";}});
 })();
 </script>
