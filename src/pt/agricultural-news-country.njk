@@ -27,7 +27,7 @@ pageLanguage: pt
 {% for article in publishedCountryArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
 <article class="card" style="margin:16px 0;">
-{% if translated and translated.title and translated.summary %}
+{% if translated and translated.title and translated.summary and (not article.translation_status or article.translation_status == "translated") %}
 <h2>{{ translated.title }}</h2><p>{{ translated.summary }}</p>
 {% else %}
 <p class="translation-pending-note" data-translation-status="pending"><small>Tradução em revisão</small></p>
