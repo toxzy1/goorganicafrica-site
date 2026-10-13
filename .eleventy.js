@@ -360,11 +360,26 @@ module.exports = function (eleventyConfig) {
       ).map(({ country_code, ...article }) => article)
     }));
     const byCode = new Map(countries.map(c => [c.code, c]));
-    const incoming = [...(supplement.records || []), ...(expansion.records || [])].filter(isPublishableAgriculturalRecord);
+    const isSpecificNewsUrl = value => {
+      try {
+        const pathname = new URL(value).pathname.replace(/\\/+$/, "") || "/";
+        return !(pathname === "/" ||
+          /(?:^|\\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\\/agriculture|sectors\\/A|news)$/i.test(pathname) ||
+          /^\\/en$/i.test(pathname) ||
+          /\\/newsdetails(?:\\/en)?$/i.test(pathname));
+      } catch {
+        return false;
+      }
+    };
+    // Some approved supplement records use "headline" rather than "title".
+    // Normalize the schema, but keep generic listing pages out of public news.
+    const incoming = [...(supplement.records || []), ...(expansion.records || [])]
+      .map(article => ({ ...article, title: article.title || article.headline || "" }))
+      .filter(isPublishableAgriculturalRecord);
 
     for (const article of incoming) {
       const country = byCode.get(article.country_code);
-      if (!country || !article.title || !article.url) continue;
+      if (!country || !article.title || !article.url || !isSpecificNewsUrl(article.url)) continue;
       const duplicate = country.articles.some(existing =>
         existing.url === article.url ||
         (existing.title === article.title && existing.published === article.published)
