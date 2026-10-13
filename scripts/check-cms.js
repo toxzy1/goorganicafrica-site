@@ -19,6 +19,10 @@ const requiredFiles = [
   "config/ag-data-sources.json",
   "config/ag-data-policy.json",
   "src/_data/directoryListings.json",
+  "src/_data/agriculturalNewsSupplement.json",
+  "src/_data/agriculturalNewsExpansion.json",
+  "src/_data/agriculturalResourcesSupplement.json",
+  "src/_data/agriculturalOpportunities.json",
   "scripts/update-ag-data.py",
   ".github/workflows/ag-data-monitor.yml",
   "oauth-proxy/wrangler.toml",
@@ -47,6 +51,10 @@ const requiredConfigMarkers = [
   'name: "languages_and_translations"',
   'name: "language_runtime"',
   'name: "ag_data_pending"',
+  'name: "agricultural_news_supplement"',
+  'name: "agricultural_news_expansion"',
+  'name: "agricultural_resources_supplement"',
+  'name: "agricultural_opportunities"',
   'name: "directory_listings"',
   "Selar Checkout Link",
   "Search Terms / Synonyms",
@@ -59,6 +67,21 @@ const requiredConfigMarkers = [
 
 for (const marker of requiredConfigMarkers) {
   if (!config.includes(marker)) throw new Error("CMS control missing: " + marker);
+}
+
+const reviewCollections = [
+  ["agricultural_news_supplement", "src/_data/agriculturalNewsSupplement.json"],
+  ["agricultural_news_expansion", "src/_data/agriculturalNewsExpansion.json"],
+  ["agricultural_resources_supplement", "src/_data/agriculturalResourcesSupplement.json"],
+  ["agricultural_opportunities", "src/_data/agriculturalOpportunities.json"]
+];
+for (const [name, file] of reviewCollections) {
+  const start = config.indexOf(`name: "${name}"`);
+  const next = config.indexOf("\n  - name: ", start + 1);
+  const block = start >= 0 ? config.slice(start, next > start ? next : config.length) : "";
+  if (!block.includes(file) || !block.includes('default: "review"')) {
+    throw new Error("Agricultural review queue must be editable in CMS with review as the default status: " + name);
+  }
 }
 
 if (!config.includes("publish_mode: editorial_workflow")) {
