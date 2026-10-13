@@ -1,3 +1,4 @@
+// Rendered-site release audit; executed by the build workflow for review-candidate PRs.
 const fs = require("fs");
 const path = require("path");
 const site = path.join(__dirname, "..", "_site");
