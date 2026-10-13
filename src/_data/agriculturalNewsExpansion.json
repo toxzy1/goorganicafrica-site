@@ -737,6 +737,61 @@
       "lifecycle": "needs_review",
       "translation_status": "in_review",
       "review_reason": "Official country situation brief, not a conventional news article. Editorial review required to confirm placement and multilingual presentation."
+    },
+    {
+      "country_code": "NE",
+      "category": "general",
+      "title": "Niger ministry reports on the 2026 agropastoral campaign monitoring mission",
+      "summary": "The ministry’s October bulletin describes inspections of irrigation infrastructure, tomato production development, livestock services, feed-storage works and regional agricultural support during the 2026 campaign.",
+      "url": "https://agriculture.gouv.ne/?m=202610",
+      "source": "Ministry of Agriculture and Livestock, Niger",
+      "source_tier": 1,
+      "published": "2026-10-12",
+      "verified": "2026-10-13",
+      "status": "official",
+      "lifecycle": "needs_review",
+      "review_reason": "Official monthly archive located, but the direct article URL must be confirmed before publication."
+    },
+    {
+      "country_code": "NE",
+      "category": "livestock",
+      "title": "Niger ministry reports inspections of licensed private veterinary establishments",
+      "summary": "An October ministry bulletin describes a regional inspection mission checking veterinary-practice authorizations, medicine approval, storage conditions and cold-chain compliance in Zinder.",
+      "url": "https://agriculture.gouv.ne/?m=202610",
+      "source": "Ministry of Agriculture and Livestock, Niger",
+      "source_tier": 1,
+      "published": "2026-10-07",
+      "verified": "2026-10-13",
+      "status": "official",
+      "lifecycle": "needs_review",
+      "review_reason": "Official monthly archive located, but the direct article URL must be confirmed before publication."
+    },
+    {
+      "country_code": "GQ",
+      "category": "research-innovation",
+      "title": "Equatorial Guinea advances plans for an agro-food laboratory",
+      "summary": "The government press service reports that the prime minister is advancing implementation of an agro-food laboratory intended to support food quality and agricultural development.",
+      "url": "https://www.guineaecuatorialpress.com/index.php/categorias/Noticias",
+      "source": "Guinea Ecuatorial Press, Government of Equatorial Guinea",
+      "source_tier": 1,
+      "published": "2026-10-12",
+      "verified": "2026-10-13",
+      "status": "official",
+      "lifecycle": "needs_review",
+      "review_reason": "Official news listing located, but the direct article URL must be confirmed before publication."
+    },
+    {
+      "country_code": "CG",
+      "category": "general",
+      "title": "Grande Foire Agricole du Congo 2026 prepares agricultural exhibitions and sector meetings",
+      "summary": "The official fair website advertises agricultural exhibitions, producer and investor meetings, machinery and input displays, training and agribusiness networking ahead of the 2026 event.",
+      "url": "https://gfac.agriculture.gouv.cg/",
+      "source": "Grande Foire Agricole du Congo, official event site",
+      "source_tier": 2,
+      "verified": "2026-10-13",
+      "status": "official",
+      "lifecycle": "needs_review",
+      "review_reason": "Official event landing page located, but a dated direct news or event notice is required before publication."
     }
   ]
 }
