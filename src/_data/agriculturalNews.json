@@ -391,7 +391,7 @@
           "source": "FAO",
           "published": "2026-10-01",
           "verified": "2026-10-07",
-          "status": "official",
+          "status": "review",
           "translations": {
             "fr": {
               "title": "La FAO fait avancer l’initiative Seeds to Foods pour des systèmes agroalimentaires résilients",
@@ -410,7 +410,9 @@
               "summary": "FAO iliangazia Seeds to Foods 2026 kama jukwaa la kuimarisha mifumo ya mbegu na matokeo ya usalama wa chakula kote Afrika."
             }
           },
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "crops",
@@ -438,8 +440,10 @@
           "published": "2026-03-26",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
-          "coverage_scope": "regional"
+          "status": "review",
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         }
       ],
       "localizedNames": {
@@ -466,7 +470,7 @@
           "published": "2026-09-03",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -485,7 +489,9 @@
               "title": "IFAD na AgDevCo zaunga mkono biashara changa za kilimo nchini Kenya",
               "summary": "Mpango wa ufadhili mchanganyiko wa dola milioni 10 unalenga biashara za kilimo zinazoanza nchini Ethiopia, Kenya, Rwanda, Tanzania na Uganda, pamoja na minyororo ya thamani inayohusisha wakulima wadogo."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "grants-programmes",
@@ -585,7 +591,7 @@
           "source": "IFAD",
           "published": "2026-09-04",
           "verified": "2026-10-07",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -604,7 +610,9 @@
               "title": "IFAD na Equity Group wazindua mfumo wa ufadhili wa dola milioni 200 wa kukabiliana na tabianchi Afrika Mashariki",
               "summary": "Mfumo wa ufadhili mchanganyiko wa miaka 12 unalenga kuwafikia wazalishaji wadogo 260,000 na biashara 500 za vijijini nchini Kenya, Uganda, Tanzania na Rwanda."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "research-innovation",
@@ -642,8 +650,10 @@
           "published": "2026-03-26",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
-          "coverage_scope": "regional"
+          "status": "review",
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         }
       ],
       "localizedNames": {
@@ -682,7 +692,7 @@
           "published": "2026-09-03",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -701,7 +711,9 @@
               "title": "IFAD na AgDevCo zaunga mkono biashara changa za kilimo nchini Uganda",
               "summary": "Uganda ni miongoni mwa nchi za kwanza zinazolengwa na mpango wa ufadhili mchanganyiko wa dola milioni 10 unaosaidia biashara changa za kilimo na minyororo ya thamani ya uzalishaji, pembejeo, ukusanyaji na uchakataji."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "finance",
@@ -769,7 +781,7 @@
           "source": "IFAD",
           "published": "2026-09-04",
           "verified": "2026-10-07",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -788,7 +800,9 @@
               "title": "IFAD na Equity Group wazindua mfumo wa ufadhili wa dola milioni 200 wa kukabiliana na tabianchi Afrika Mashariki",
               "summary": "Uganda ni miongoni mwa nchi zinazoshiriki katika mfumo wa ufadhili mchanganyiko wa miaka 12 unaolenga kupanua ufadhili wa kukabiliana na tabianchi kwa wazalishaji wadogo na biashara za vijijini."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         }
       ],
       "localizedNames": {
@@ -815,7 +829,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -834,7 +848,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Tanzania inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "finance",
@@ -844,7 +860,7 @@
           "source": "IFAD",
           "published": "2026-09-04",
           "verified": "2026-10-07",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -863,7 +879,9 @@
               "title": "IFAD na Equity Group wazindua mfumo wa ufadhili wa dola milioni 200 wa kukabiliana na tabianchi Afrika Mashariki",
               "summary": "Mfumo huo utatoa ufadhili wa kukabiliana na tabianchi kwa wazalishaji wadogo na biashara za vijijini nchini Tanzania na nchi nyingine zinazoshiriki Afrika Mashariki."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "finance",
@@ -873,7 +891,7 @@
           "source": "IFAD",
           "published": "2026-09-03",
           "verified": "2026-10-07",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -892,7 +910,9 @@
               "title": "IFAD na AgDevCo zaunga mkono biashara changa za kilimo nchini Tanzania",
               "summary": "Mpango wa ufadhili mchanganyiko wa dola milioni 10 unaunga mkono biashara changa za kilimo na minyororo ya thamani inayohusisha wakulima wadogo, ikiwemo nchini Tanzania."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "research-innovation",
@@ -918,7 +938,7 @@
           "published": "2026-06-16",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -937,7 +957,9 @@
               "title": "Tanzania yaidhinisha mkakati na mpango wa uwekezaji wa kuendeleza sekta ya mbegu",
               "summary": "Serikali ya Tanzania iliidhinisha mwaka 2026 mkakati wa sekta ya mbegu na mpango wa uwekezaji hadi 2030, kwa msaada wa washirika wa CGIAR, unaojumuisha sera, uwekezaji, utafiti, uzalishaji, udhibiti na usambazaji wa mbegu."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "crops",
@@ -1081,7 +1103,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -1100,7 +1122,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Zambia inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "source": "FAO",
@@ -1187,8 +1211,10 @@
           "published": "2026-03-26",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
-          "coverage_scope": "regional"
+          "status": "review",
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         }
       ],
       "localizedNames": {
@@ -1227,7 +1253,7 @@
           "published": "2026-09-03",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -1246,7 +1272,9 @@
               "title": "IFAD na AgDevCo zaunga mkono biashara changa za kilimo nchini Rwanda",
               "summary": "Rwanda ni miongoni mwa nchi zinazolengwa na mpango wa ufadhili mchanganyiko wa dola milioni 10 unaosaidia biashara changa za kilimo na uwekezaji jumuishi wa kilimo na chakula."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "source": "FAO",
@@ -1288,7 +1316,7 @@
           "source": "IFAD",
           "published": "2026-09-04",
           "verified": "2026-10-07",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -1307,7 +1335,9 @@
               "title": "IFAD na Equity Group wazindua mfumo wa ufadhili wa dola milioni 200 wa kukabiliana na tabianchi Afrika Mashariki",
               "summary": "Rwanda ni miongoni mwa nchi zinazoshiriki katika mfumo wa ufadhili mchanganyiko unaolenga kusaidia wakulima wadogo na biashara za vijijini kukabiliana na tabianchi."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "finance",
@@ -1345,7 +1375,7 @@
           "source": "FAO",
           "published": "2026-10-01",
           "verified": "2026-10-07",
-          "status": "official",
+          "status": "review",
           "translations": {
             "fr": {
               "title": "La FAO renforce les capacités de l’Afrique de l’Est à préparer des projets de financement climatique",
@@ -1364,7 +1394,9 @@
               "summary": "FAO iliwaleta pamoja wataalamu kutoka Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, Sudan Kusini na Uganda ili kuandaa programu za ufadhili wa tabianchi zilizo tayari kwa uwekezaji kwa ajili ya mifumo ya kilimo na chakula inayostahimili mishtuko."
             }
           },
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "research-innovation",
@@ -1539,7 +1571,7 @@
           "published": "2026-09-03",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -1558,7 +1590,9 @@
               "title": "IFAD na AgDevCo zaunga mkono biashara changa za kilimo nchini Ethiopia",
               "summary": "Ethiopia ni miongoni mwa nchi za kwanza zinazolengwa na mpango wa ufadhili mchanganyiko wa dola milioni 10 unaosaidia biashara changa za kilimo na minyororo ya thamani inayohusisha wakulima wadogo."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "source": "FAO",
@@ -1615,8 +1649,10 @@
           "published": "2026-03-26",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
-          "coverage_scope": "regional"
+          "status": "review",
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         }
       ],
       "localizedNames": {
@@ -1843,7 +1879,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -1862,7 +1898,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Angola inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "source": "FAO",
@@ -2004,7 +2042,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -2023,7 +2061,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Botswana inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "policy",
@@ -3571,7 +3611,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -3590,7 +3630,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Malawi inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "source": "FAO",
@@ -3687,8 +3729,10 @@
           "published": "2026-03-26",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
-          "coverage_scope": "regional"
+          "status": "review",
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "weather-climate",
@@ -4012,7 +4056,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -4031,7 +4075,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Msumbiji inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "source": "African Development Bank",
@@ -4102,7 +4148,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -4121,7 +4167,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Namibia inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "livestock",
@@ -4481,8 +4529,10 @@
           "published": "2026-03-26",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
-          "coverage_scope": "regional"
+          "status": "review",
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         }
       ],
       "localizedNames": {
@@ -4857,7 +4907,7 @@
           "source_tier": 1,
           "published": "2026-10-02",
           "verified": "2026-10-13",
-          "status": "official",
+          "status": "review",
           "translations": {
             "fr": {
               "title": "Le Togo et le Burkina Faso renforcent les échanges transfrontaliers de manioc",
@@ -4876,7 +4926,9 @@
               "summary": "Wizara ya Kilimo ya Togo iliripoti mkutano kati ya wadau wa mnyororo wa muhogo wa Togo na shirika la kitaaluma la muhogo la Burkina Faso. Majadiliano yalihusu mahitaji yanayokadiriwa kuwa tani 80,000 za unga mzito wa muhogo, kiasi, ubora, uchakataji, bei na usafirishaji; hii ni fursa ya biashara inayoendelea, si mkataba wa ununuzi uliothibitishwa."
             }
           },
-          "coverage_scope": "regional"
+          "coverage_scope": "regional",
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "category": "markets",
@@ -5054,7 +5106,7 @@
           "published": "2026-09-23",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -5073,7 +5125,9 @@
               "title": "Nchi za Bonde la Zambezi zaendeleza mpango wa ustahimilivu wa tabianchi wa dola milioni 130",
               "summary": "Zimbabwe inashiriki katika mpango wa Benki ya Maendeleo ya Afrika wa Bonde la Zambezi, unaokuza kilimo kinachozingatia tabianchi, usimamizi wa maji, maisha yanayostahimili mishtuko na usalama wa chakula katika nchi zote nane za bonde."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         },
         {
           "source": "FAO",
@@ -5148,7 +5202,7 @@
           "published": "2026-06-16",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "coverage_scope": "regional",
           "translations": {
             "fr": {
@@ -5167,7 +5221,9 @@
               "title": "Zimbabwe yaendeleza ramani ya miaka mitano na mpango wa uwekezaji wa sekta ya mbegu",
               "summary": "Mkutano wa kilele na warsha ya ramani ya sekta ya mbegu ya Mei 2026 uliwakutanisha serikali, CGIAR na washirika wa sekta kuhusu mpango wa miaka mitano unaohusu ukuzaji wa aina, uzalishaji, uthibitishaji, masoko na upatikanaji wa mbegu kwa wakulima."
             }
-          }
+          },
+          "lifecycle": "needs_review",
+          "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
         }
       ],
       "localizedNames": {
