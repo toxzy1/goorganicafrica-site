@@ -401,6 +401,19 @@ if (!fs.existsSync(searchTemplatePath)) {
   }
 }
 
+// Search must normalize punctuation/hyphens before matching multi-word queries.
+const searchTemplatePath = path.join(source, "search.njk");
+if (!fs.existsSync(searchTemplatePath)) {
+  failures.push("Global Search source template is missing.");
+} else {
+  const searchTemplate = fs.readFileSync(searchTemplatePath, "utf8");
+  if (!searchTemplate.includes("const normalize=value=>String(value||'').toLowerCase()")) failures.push("Global Search: punctuation-normalized matching is missing");
+  if (!searchTemplate.includes("normalize(x.title+' '+x.summary+' '+x.keywords+' '+x.meta)")) failures.push("Global Search: title, summary, keywords and metadata are not combined for matching");
+  for (const field of ["localizedSectionUrl('agriculture-resources')", "localizedSectionUrl('agricultural-news')", "localizedSectionUrl('ebooks')", "localizedSectionUrl('blog')"]) {
+    if (!searchTemplate.includes(field)) failures.push("Global Search: connected card lacks localized destination: " + field);
+  }
+}
+
 const decisionUiPath = path.join(source, "_includes", "farmer-decision-centre-ui.njk");
 if (!fs.existsSync(decisionUiPath)) {
   failures.push("Decision Centre source template is missing.");
