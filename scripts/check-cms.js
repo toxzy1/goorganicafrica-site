@@ -246,6 +246,16 @@ const newsBase = JSON.parse(read("src/_data/agriculturalNews.json"));
 const newsSupplement = JSON.parse(read("src/_data/agriculturalNewsSupplement.json"));
 const newsExpansion = JSON.parse(read("src/_data/agriculturalNewsExpansion.json"));
 const opportunityData = JSON.parse(read("src/_data/agriculturalOpportunities.json"));
+const resourceBase = JSON.parse(read("src/_data/agriculturalResources.json"));
+const resourceSupplement = JSON.parse(read("src/_data/agriculturalResourcesSupplement.json"));
+const resourceCandidates = [
+  ...(resourceBase.countries || []).flatMap(country =>
+    Object.entries(country.records || {}).flatMap(([category, records]) =>
+      (records || []).map(record => ({...record, category: record.category || category, country_code: record.country_code || country.code, country: record.country || country.name}))
+    )
+  ),
+  ...(resourceSupplement.records || [])
+];
 const sourceCandidates = [
   ...(newsBase.countries || []).flatMap(country => (country.articles || []).map(record => ({...record, country: country.name}))),
   ...(newsSupplement.records || []),
@@ -279,13 +289,66 @@ const genericUnreviewed = sourceCandidates.filter(record => {
   const generic = genericSourcePath(pathname);
   const state = String(record.status || "").toLowerCase();
   const lifecycle = String(record.lifecycle || "").toLowerCase();
-  const heldForReview = ["review", "draft", "needs_review"].includes(state) ||
-    ["review", "draft", "needs_review"].includes(lifecycle);
+  const heldForReview = ["review", "draft", "needs_review", "rejected"].includes(state) ||
+    ["review", "draft", "needs_review", "rejected"].includes(lifecycle);
   return generic && !heldForReview;
 });
 if (genericUnreviewed.length) {
   throw new Error("Generic agricultural source URLs must remain in editorial review: " +
     genericUnreviewed.map(record => (record.title || record.headline || "Untitled") + " -> " + record.url).join("; "));
 }
+const genericResourceSourcePath = pathname => pathname === "/" ||
+  /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname) ||
+  /\/newsdetails(?:\/en)?$/i.test(pathname) ||
+  /\/news\/detail(?:\/en)?$/i.test(pathname) ||
+  /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname);
+const publicResourceRecord = record => {
+  const status = String(record.status || "").toLowerCase();
+  const lifecycle = String(record.lifecycle || "").toLowerCase();
+  return !["review", "needs_review", "draft", "rejected", "expired", "closed"].includes(status) &&
+    !["review", "needs_review", "draft", "rejected", "expired", "closed"].includes(lifecycle);
+};
+const genericPublicResources = resourceCandidates.filter(record => {
+  if (!publicResourceRecord(record)) return false;
+  const url = String(record.url || record.source_url || "");
+  if (!url) return false;
+  let parsed;
+  try { parsed = new URL(url); } catch (_) { return true; }
+  const pathname = parsed.pathname.replace(/\/+$/, "") || "/";
+  if (pathname === "/" && parsed.searchParams.has("page_id")) return false;
+  if (!genericResourceSourcePath(pathname)) return false;
+  const title = String(record.title || record.name || "");
+  const category = String(record.category || "").toLowerCase().replace("policy", "general").replace("weather-climate", "climate");
+  const institutional = /\b(ministry|authority|department|agency|institute|centre|center|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+  const portal = /\b(platform|portal|system|database|information system|advisory tool|digital service)\b/i.test(title);
+  const homepage = pathname === "/" || pathname === "/en";
+  const allowedHomepage = homepage && (
+    (institutional && ["general", "data", "farmer-support"].includes(category)) ||
+    (portal && ["general", "data", "farmer-support", "inputs", "markets"].includes(category))
+  );
+  return !allowedHomepage;
+});
+if (genericPublicResources.length) {
+  throw new Error("Generic resource landing pages must remain in editorial review: " +
+    genericPublicResources.map(record => (record.title || "Untitled") + " -> " + (record.url || record.source_url)).join("; "));
+}
+const assertNoSameCountryUrlDuplicates = (records, label) => {
+  const seen = new Map();
+  for (const record of records) {
+    const url = String(record.url || record.source_url || "").trim();
+    if (!url) continue;
+    const country = String(record.country_code || record.code || record.country || record.country_name || "unassigned").toUpperCase();
+    const key = country + "|" + url;
+    if (seen.has(key)) throw new Error(label + " contains duplicate public URLs for " + country + ": " + url);
+    seen.set(key, true);
+  }
+};
+const publicNewsRecords = [
+  ...(newsBase.countries || []).flatMap(country => (country.articles || []).map(record => ({...record, country_code: record.country_code || country.code, country: record.country || country.name}))),
+  ...(newsSupplement.records || []),
+  ...(newsExpansion.records || [])
+].filter(publicNewsStatus);
+assertNoSameCountryUrlDuplicates(publicNewsRecords, "Public agricultural news");
+assertNoSameCountryUrlDuplicates(resourceCandidates.filter(publicResourceRecord), "Public agricultural resources");
 
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
