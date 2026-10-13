@@ -48,8 +48,10 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official",
-      "coverage_scope": "regional"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an event page rather than a published news article; move it to Events/Opportunities or hold pending reclassification."
     },
     {
       "country_code": "KE",
@@ -61,8 +63,10 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official",
-      "coverage_scope": "regional"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an event page rather than a published news article; move it to Events/Opportunities or hold pending reclassification."
     },
     {
       "country_code": "UG",
@@ -74,8 +78,10 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official",
-      "coverage_scope": "regional"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an event page rather than a published news article; move it to Events/Opportunities or hold pending reclassification."
     },
     {
       "country_code": "ML",
@@ -320,8 +326,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official",
-      "coverage_scope": "regional"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "The source page dates to 2025, but the record was assigned a 2026 publication date; hold until the date and classification are corrected."
     },
     {
       "country_code": "BJ",
@@ -333,8 +341,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official",
-      "coverage_scope": "regional"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "The source page dates to 2025, but the record was assigned a 2026 publication date; hold until the date and classification are corrected."
     },
     {
       "country_code": "CM",
@@ -346,8 +356,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official",
-      "coverage_scope": "regional"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "The source page dates to 2025, but the record was assigned a 2026 publication date; hold until the date and classification are corrected."
     },
     {
       "country_code": "SN",
@@ -1296,7 +1308,9 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an FAO country emergency overview page, not a specific news article; move it to Resources or replace it with a direct story."
     },
     {
       "country_code": "ET",
