@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-13",
   "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
   "categories": [
     "finance",
@@ -107,9 +107,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -182,9 +184,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -320,9 +324,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [
@@ -391,9 +397,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Ghana 2026 — agrifood investment opportunities",
@@ -600,9 +608,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [
@@ -661,9 +671,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Kenya 2026 — agrifood investment opportunities",
@@ -869,9 +881,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -914,9 +928,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
@@ -1207,9 +1223,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -1263,9 +1281,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Zambia 2026 — agrifood investment opportunities",
@@ -1450,9 +1470,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [
@@ -1508,9 +1530,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
@@ -1714,9 +1738,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -1759,9 +1785,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
@@ -1918,9 +1946,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -1963,9 +1993,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Angola 2026 — agrifood investment opportunities",
@@ -2041,10 +2073,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural investment and policy",
             "access": "Official information; confirm programme eligibility and implementation status before applying.",
-            "investment_highlights": "Priority value chains include rice, soybean and poultry."
+            "investment_highlights": "Priority value chains include rice, soybean and poultry.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Benin agrifood investment opportunities",
@@ -2054,9 +2088,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2099,9 +2135,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -2467,9 +2505,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2512,9 +2552,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -2807,9 +2849,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2852,9 +2896,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -2954,9 +3000,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2999,9 +3047,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -3064,9 +3114,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -3109,9 +3161,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
@@ -3389,9 +3443,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -3434,9 +3490,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -3821,9 +3879,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -3866,9 +3926,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -3990,10 +4052,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural investment and policy",
             "access": "Official information; confirm programme eligibility and implementation status before applying.",
-            "investment_highlights": "Priority value chains include rice, maize and soybean; six special economic zones are planned."
+            "investment_highlights": "Priority value chains include rice, maize and soybean; six special economic zones are planned.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Madagascar agrifood investment opportunities",
@@ -4003,9 +4067,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -4048,9 +4114,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -4126,9 +4194,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -4171,9 +4241,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -4610,9 +4682,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -4680,9 +4754,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -5277,9 +5353,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -5333,9 +5411,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -5820,9 +5900,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [
@@ -5892,9 +5974,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Zimbabwe 2026 — agrifood investment opportunities",
