@@ -91,15 +91,17 @@ if (currentNewsTemplates.some(p => !read(p).includes('candidate.status == "offic
 
 const localizedNewsTemplates = ['src/fr/agricultural-news-country.njk','src/ar/agricultural-news-country.njk','src/pt/agricultural-news-country.njk','src/sw/agricultural-news-country.njk'];
 if (localizedNewsTemplates.some(p => !read(p).includes('class="translation-pending-note"') ||
-    !read(p).includes('translated and translated.title and translated.summary'))) {
-  throw new Error('Localized news pages must not silently present untranslated titles/summaries as if they were fully translated.');
+    !read(p).includes('translated and translated.title and translated.summary') ||
+    !read(p).includes('article.translation_status == "translated"'))) {
+  throw new Error('Localized news pages must show only reviewed translations and flag pending translations.');
 }
 
 const resourcesDirectoryTemplate = read('src/_includes/resources-directory.njk');
 if (!resourcesDirectoryTemplate.includes('translation-pending-note') ||
     !resourcesDirectoryTemplate.includes('translationPending') ||
-    !resourcesDirectoryTemplate.includes('record.localized[lang].title and record.localized[lang].description')) {
-  throw new Error('Localized resource cards must clearly flag when their title and description are not fully translated.');
+    !resourcesDirectoryTemplate.includes('record.localized[lang].title and record.localized[lang].description') ||
+    !resourcesDirectoryTemplate.includes('record.translation_status == "translated"')) {
+  throw new Error('Localized resource cards must show only reviewed translations and flag pending translations.');
 }
 const globalSearch = read('src/search.njk');
 if (!globalSearch.includes('goa-global-search') ||
