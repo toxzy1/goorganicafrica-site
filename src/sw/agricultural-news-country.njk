@@ -21,7 +21,7 @@ pageLanguage: sw
 <p class="lede">Maendeleo ya sasa na yaliyothibitishwa ya kilimo kwa nchi hii.</p>
 {% set publishedCountryArticles = [] %}
 {% for candidate in country.articles %}
-  {% if candidate.lifecycle == "current" %}{% set publishedCountryArticles = publishedCountryArticles.concat([candidate]) %}{% endif %}
+  {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and candidate.lifecycle == "current" %}{% set publishedCountryArticles = publishedCountryArticles.concat([candidate]) %}{% endif %}
 {% endfor %}
 {% if publishedCountryArticles.length %}
 {% for article in publishedCountryArticles %}
