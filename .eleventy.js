@@ -362,11 +362,11 @@ module.exports = function (eleventyConfig) {
     const byCode = new Map(countries.map(c => [c.code, c]));
     const isSpecificNewsUrl = value => {
       try {
-        const pathname = new URL(value).pathname.replace(/\\/+$/, "") || "/";
+        const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
         return !(pathname === "/" ||
-          /(?:^|\\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\\/agriculture|sectors\\/A|news)$/i.test(pathname) ||
-          /^\\/en$/i.test(pathname) ||
-          /\\/newsdetails(?:\\/en)?$/i.test(pathname));
+          /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
+          /^\/en$/i.test(pathname) ||
+          /\/newsdetails(?:\/en)?$/i.test(pathname));
       } catch {
         return false;
       }
