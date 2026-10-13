@@ -5145,22 +5145,7 @@
         "farmer-support": [],
         "research": [],
         "climate": [],
-        "data": [
-          {
-            "title": "FAO GIEWS Country Brief — Republic of the Congo",
-            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
-            "url": "https://cb.apps.fao.org/country.jsp?code=COG",
-            "source": "FAO Global Information and Early Warning System (GIEWS)",
-            "source_id": "fao-giews",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "review",
-            "type": "Agricultural data and food-security reference",
-            "access": "Public information",
-            "lifecycle": "needs_review",
-            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
-          }
-        ]
+        "data": []
       }
     },
     {
