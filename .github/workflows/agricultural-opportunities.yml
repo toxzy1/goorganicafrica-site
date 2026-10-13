@@ -25,6 +25,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update agricultural opportunity candidates"
           title: "💰 Agricultural opportunities — review required"
+          draft: true
+          delete-branch: true
           body: |
             Automated candidate discovery from configured authoritative sources.
 
