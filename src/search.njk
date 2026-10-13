@@ -61,13 +61,13 @@ language: en
     {% endfor %}
     {% for country in agriculturalNewsMerged.countries %}
       {% for r in country.articles %}
-        {% if (r.status == "official" or r.status == "published" or r.status == "verified") and r.lifecycle != "review" and r.lifecycle != "needs_review" and r.lifecycle != "draft" and r.url %}
+        {% if (r.status == "official" or r.status == "published" or r.status == "verified") and r.lifecycle == "current" and r.url %}
           <article data-type="News" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url }}"></article>
         {% endif %}
       {% endfor %}
     {% endfor %}
     {% for r in agriculturalOpportunities.records %}
-      {% if (r.status == "open" or r.status == "active") and r.lifecycle != "review" and r.lifecycle != "needs_review" and r.lifecycle != "draft" and (r.application_url or r.source_url or r.url) %}
+      {% if (r.status == "open" or r.status == "active") and r.is_current and (r.application_url or r.source_url or r.url) %}
         <article data-type="Opportunity" data-title="{{ r.title }}" data-summary="{{ r.summary or r.description or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.type or r.category or '' }} · {{ r.provider or r.source or '' }}" data-url="{{ r.application_url or r.source_url or r.url }}"></article>
       {% endif %}
     {% endfor %}
