@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs");
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalOpportunities.json"), "utf8"));
-    const now = new Date("2026-10-08T00:00:00Z");
+    const now = new Date();
     data.records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => {
       const deadline = record.deadline ? new Date(record.deadline + "T23:59:59Z") : null;
       const review = !isPublishableAgriculturalRecord(record);
@@ -113,7 +113,7 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs");
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalMarkets.json"), "utf8"));
-    const now = new Date("2026-10-08T00:00:00Z");
+    const now = new Date();
     const records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => {
       const observed = record.observed_date ? new Date(record.observed_date) : null;
       const ageDays = observed && !Number.isNaN(observed.getTime()) ? Math.floor((now - observed) / 86400000) : null;
@@ -195,7 +195,7 @@ module.exports = function (eleventyConfig) {
       total: Object.values(c.sections).reduce((a,b) => a + b, 0),
       topics: [...c.topics].sort()
     })).sort((a,b) => a.country.localeCompare(b.country));
-    return { version: 1, generated: "2026-10-08", records };
+    return { version: 1, generated: new Date().toISOString().slice(0, 10), records };
   });
 
   eleventyConfig.addGlobalData("agriculturalDecisionCentre", () => {
@@ -218,7 +218,7 @@ module.exports = function (eleventyConfig) {
     resources.forEach(r=>add("resources",r,r.country_code,r.country,r.title,[r.description,r.type,(r.tags||[]).join(" ")].join(" "),r.url,r.verified_date||r.verified,r.source_tier,r.status));
     const topics=["maize","rice","cassava","soybean","cocoa","coffee","cashew","tea","poultry","livestock","fish","vegetables","fruits","seeds","inputs","irrigation","mechanization","finance","climate","markets"];
     const goals=[["market","Find markets & price information",["markets"]],["finance","Find finance & opportunities",["opportunities","resources"]],["inputs","Find inputs & production resources",["resources","services"]],["machinery","Find machinery & services",["services","resources"]],["training","Find training & events",["services","resources"]],["climate","Check climate, resilience & current news",["news","resources","markets"]],["all","Show my full agricultural brief",["markets","opportunities","resources","services","news"]]].map(x=>({id:x[0],label:x[1],sections:x[2]}));
-    return {version:1,generated:"2026-10-08",countries:countries.map(c=>({code:c.code,name:c.name})),topics,goals,records,json:JSON.stringify(records)};
+    return {version:1,generated:new Date().toISOString().slice(0,10),countries:countries.map(c=>({code:c.code,name:c.name})),topics,goals,records,json:JSON.stringify(records)};
   });
 
   // Topic/value-chain connection layer: derive real cross-section links from published records.
@@ -275,7 +275,7 @@ module.exports = function (eleventyConfig) {
       }
       return { ...topic, total:matched.length, sections:bySection, countries:Object.values(countries).sort((a,b)=>a.country.localeCompare(b.country)) };
     }).filter(topic => topic.total > 0);
-    return { version:1, generated:"2026-10-08", topics:result };
+    return { version:1, generated:new Date().toISOString().slice(0,10), topics:result };
   });
 
   // Static passthroughs
@@ -371,7 +371,7 @@ module.exports = function (eleventyConfig) {
       });
     }
 
-    const now = new Date("2026-10-08T00:00:00Z");
+    const now = new Date();
     const historicalCutoff = new Date(now);
     historicalCutoff.setUTCDate(historicalCutoff.getUTCDate() - 180);
 
@@ -411,7 +411,7 @@ module.exports = function (eleventyConfig) {
       ...primary,
       countries,
       total: countries.reduce((sum, country) => sum + country.articles.length, 0),
-      last_updated: "2026-10-08"
+      last_updated: new Date().toISOString().slice(0, 10)
     };
   });
 
