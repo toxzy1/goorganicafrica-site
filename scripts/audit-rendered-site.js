@@ -448,8 +448,8 @@ for (const rel of ["agricultural-news.njk", "agricultural-news-country.njk", "se
   if (!fs.existsSync(p)) { failures.push("Agricultural News filter source is missing: " + rel); continue; }
   const template = fs.readFileSync(p, "utf8");
   if (!template.includes("not ") || !template.includes("lifecycle")) failures.push(rel + ": missing lifecycle compatibility handling");
-  if (rel === "agricultural-news.njk" && template.includes('article.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
-  if (rel === "agricultural-news-country.njk" && template.includes('candidate.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
+  if (rel === "agricultural-news.njk" && template.includes(') and article.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
+  if (rel === "agricultural-news-country.njk" && template.includes(') and candidate.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
   if (rel === "search.njk" && template.includes('r.lifecycle == "current" and r.url')) failures.push(rel + ": strict lifecycle filter hides legacy official news from search");
 }
 
