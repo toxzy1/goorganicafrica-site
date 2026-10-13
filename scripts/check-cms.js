@@ -73,8 +73,9 @@ if (!config.includes('options: ["current", "needs_review", "closed", "expired", 
 }
 if (!config.includes('name: "translations"') ||
     !config.includes('name: "localized"') ||
-    !config.includes('name: "translation_status"')) {
-  throw new Error("CMS must expose news translations, resource localizations and their review status for human approval.");
+    !config.includes('name: "translation_status"') ||
+    !config.includes('options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false')) {
+  throw new Error("CMS must expose news translations, resource localizations and default new translations to human review.");
 }
 
 const reviewCollections = [
