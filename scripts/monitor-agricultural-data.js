@@ -36,9 +36,25 @@ const newsCountryCoverage=newsCountryList.map(c=>{
 });
 const sourceUrlAudit=(records, resourceMode=false)=>{
  const sourceUrl=r=>String(r.url||r.source_url||r.application_url||"").trim();
- const counts=new Map();
- for(const r of records){const url=sourceUrl(r);if(!url)continue;counts.set(url,(counts.get(url)||0)+1);}
+ const counts=new Map(), recordsByUrl=new Map();
+ for(const r of records){
+  const url=sourceUrl(r);if(!url)continue;
+  counts.set(url,(counts.get(url)||0)+1);
+  if(!recordsByUrl.has(url))recordsByUrl.set(url,[]);
+  recordsByUrl.get(url).push(r);
+ }
  const duplicateGroups=[...counts.entries()].filter(([,count])=>count>1).sort((a,b)=>b[1]-a[1]);
+ const sameCountryGroups=[],crossCountryGroups=[];
+ for(const [url,group] of recordsByUrl){
+  if(group.length<2)continue;
+  const byCountry=new Map();
+  for(const record of group){
+   const country=String(record.country_code||record.code||record.country||record.country_name||"unassigned").toUpperCase();
+   byCountry.set(country,(byCountry.get(country)||0)+1);
+  }
+  if([...byCountry.values()].some(count=>count>1))sameCountryGroups.push({url,records:group.length,countries:[...byCountry.keys()]});
+  if(byCountry.size>1)crossCountryGroups.push({url,records:group.length,countries:[...byCountry.keys()]});
+ }
  const genericRecords=records.filter(r=>{
   const url=sourceUrl(r);
   if(!url)return false;
@@ -64,14 +80,23 @@ const sourceUrlAudit=(records, resourceMode=false)=>{
   unique_urls:counts.size,
   duplicate_url_groups:duplicateGroups.length,
   duplicate_url_records:duplicateGroups.reduce((sum,[,count])=>sum+count,0),
+  duplicate_url_same_country_groups:sameCountryGroups.length,
+  duplicate_url_same_country_examples:sameCountryGroups.slice(0,8),
+  duplicate_url_cross_country_groups:crossCountryGroups.length,
+  duplicate_url_cross_country_examples:crossCountryGroups.slice(0,8),
   duplicate_url_examples:duplicateGroups.slice(0,10).map(([url,count])=>({url,count})),
   generic_landing_page_records:genericRecords.length,
   generic_landing_page_examples:genericRecords.slice(0,10).map(r=>({title:r.title||"",url:sourceUrl(r)}))
  };
 };
+const publishableOpportunities=opp.filter(r=>!isResourceReviewRecord(r));
+const opportunityReviewQueue=opp.filter(isResourceReviewRecord);
+const newsReviewQueue=news.filter(r=>!["official","published","verified"].includes(String(r.status||"").toLowerCase())||isResourceReviewRecord(r));
 const sourceQuality={
- news:sourceUrlAudit(news),
- opportunities:sourceUrlAudit(opp),
+ news:sourceUrlAudit(publishableNews),
+ news_review_queue:sourceUrlAudit(newsReviewQueue),
+ opportunities:sourceUrlAudit(publishableOpportunities),
+ opportunity_review_queue:sourceUrlAudit(opportunityReviewQueue),
  resources:sourceUrlAudit(publicResourceRecords,true),
  resource_review_queue:sourceUrlAudit(resourceQueue,true),
  markets:sourceUrlAudit(markets),
