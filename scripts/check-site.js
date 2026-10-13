@@ -77,6 +77,9 @@ const languageSwitcher = read('src/js/language-switcher.js');
 if (!languageSwitcher.includes('search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|privacy-policy|data-updates')) {
   throw new Error('Shared pages must preserve the selected language on their single-URL routes.');
 }
+if (!languageSwitcher.includes('if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence)$/.test(rest))')) {
+  throw new Error('Language switching must keep shared discovery tools on their actual routes.');
+}
 if (!languageSwitcher.includes('link.href = "/" + sectionPath + "/";')) {
   throw new Error('Shared discovery navigation must not create missing language-prefixed routes.');
 }
