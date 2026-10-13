@@ -57,8 +57,10 @@ const shouldPublishAgriculturalResource = (record, category) => {
   const isHomepage = pathname === "/" || /^\/en$/i.test(pathname);
   const title = String(record.title || record.name || "");
   const institutionalTitle = /\b(ministry|authority|department|agency|institute|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+  const rawCategory = String(category || record.category || "").toLowerCase();
+  const normalizedCategory = ({ "weather-climate": "climate", policy: "general" })[rawCategory] || rawCategory;
   return isHomepage && institutionalTitle &&
-    ["general", "data", "farmer-support"].includes(String(category || record.category || "").toLowerCase());
+    ["general", "data", "farmer-support"].includes(normalizedCategory);
 };
 
 const collectPublishableNews = read => {
@@ -87,11 +89,12 @@ const collectPublishableNews = read => {
 
 const collectPublishableResources = read => {
   const primary = (read("agriculturalResources.json").countries || []).flatMap(country =>
-    Object.values(country.records || {}).flat().map(record => ({
+    Object.entries(country.records || {}).flatMap(([category, list]) => (list || []).map(record => ({
       ...record,
+      category: record.category || category,
       country_code: record.country_code || country.code,
       country: record.country || country.name || country.country
-    }))
+    })))
   );
   const supplement = read("agriculturalResourcesSupplement.json").records || [];
   const fs = require("fs");
@@ -106,7 +109,7 @@ const collectPublishableResources = read => {
         .map(record => ({ ...record, lifecycle: record.lifecycle || "needs_review" }));
     } catch (_) { return []; }
   });
-  return dedupeAgriculturalRecords([...primary, ...supplement, ...queued].filter(isPublishableAgriculturalRecord));
+  return dedupeAgriculturalRecords([...primary, ...supplement, ...queued].filter(record => shouldPublishAgriculturalResource(record, record.category)));
 };
 
 module.exports = function (eleventyConfig) {
