@@ -90,4 +90,18 @@ if (!decisionPage.includes('farmer-decision-centre-ui.njk') || !decisionUi.inclu
   throw new Error('Farmer Decision Centre must retain its interactive brief builder and source links.');
 }
 
+const searchPage = read('src/search.njk');
+if (!searchPage.includes('data-i18n="search.title"') || !searchPage.includes('goa:languagechange') || !searchPage.includes("tr('noResults')")) {
+  throw new Error('Global search must translate its interface and update dynamic messages when language changes.');
+}
+if (!decisionPage.includes('data-i18n="decisionCentre.title"') || !decisionUi.includes('data-i18n="decisionCentre.buildTitle"') || !decisionUi.includes('tr("noMatch")')) {
+  throw new Error('Farmer Decision Centre must translate its interface and dynamic empty states.');
+}
+for (const code of ['en','fr','ar','pt','sw']) {
+  const translations = JSON.parse(read(`src/i18n/${code}.json`));
+  if (!translations.search || !translations.decisionCentre || !translations.search.noResults || !translations.decisionCentre.briefHeading) {
+    throw new Error(`Search and Decision Centre translations are incomplete for ${code}.`);
+  }
+}
+
 console.log(`GoOrganicAfrica checks passed: ${activeCountries.length} active countries, ${aggregate.length} synchronized enterprises, dynamic data/admin controls, Selar support, AdSense controls, and agricultural data automation.`);
