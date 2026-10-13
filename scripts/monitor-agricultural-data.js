@@ -24,7 +24,26 @@ news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agr
 // Coverage must include the supplemental and expansion records too, otherwise
 // countries with stories outside the base file are incorrectly reported empty.
 // Count unique story URLs per country so duplicate records do not inflate coverage.
-const publishableNews=news.filter(r=>["official","published","verified"].includes(String(r.status||"").toLowerCase()) && !["review","needs_review","draft"].includes(String(r.lifecycle||"").toLowerCase()));
+const isSpecificNewsUrl=value=>{
+ try{
+  const parsed=new URL(String(value||""));
+  const pathname=parsed.pathname.replace(/\\/+$/,"")||"/";
+  if(/\\/hand-in-hand\\/investment-forum-2026\\//i.test(pathname))return false;
+  return !(pathname==="/"||/(?:^|\\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\\/agriculture|sectors\\/A|news|news-updates|actualites)$/i.test(pathname)||/^\\/en$/i.test(pathname)||/\\/newsdetails(?:\\/en)?$/i.test(pathname)||/\\/news\\/detail(?:\\/en)?$/i.test(pathname));
+ }catch{return false;}
+};
+const isCurrentNewsRecord=r=>{
+ const status=String(r.status||"").toLowerCase();
+ const lifecycle=String(r.lifecycle||"").toLowerCase();
+ if(!["official","published","verified"].includes(status)||["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle))return false;
+ if(["expired","closed","archived","historical"].includes(status))return false;
+ const deadline=r.deadline||r.expiry_date||r.closing_date||"";
+ if(deadline){const d=new Date(deadline);if(!Number.isNaN(d.getTime())&&d<today)return false;}
+ const published=r.published||r.date||"";
+ if(published){const d=new Date(published);if(!Number.isNaN(d.getTime())&&d<new Date(today.getTime()-180*86400000))return false;}
+ return Boolean((r.title||r.headline)&&isSpecificNewsUrl(r.url));
+};
+const publishableNews=news.filter(isCurrentNewsRecord);
 const newsCountryCoverage=newsCountryList.map(c=>{
  const code=String(c.code||"").toUpperCase();
  // Coverage counts only stories the public templates can display; review-queue
