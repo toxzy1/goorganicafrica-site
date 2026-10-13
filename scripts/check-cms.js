@@ -216,4 +216,9 @@ if (!freshnessMonitor.includes("missing_publication_date") || !freshnessMonitor.
   throw new Error("Agricultural freshness monitor must flag missing resource verification dates and news publication dates, including lifecycle review queues.");
 }
 
+if (!freshnessMonitor.includes('publishableNews=news.filter') ||
+    !freshnessMonitor.includes('["review","needs_review","draft"].includes(String(r.lifecycle||"").toLowerCase())')) {
+  throw new Error("Country news coverage must exclude unpublished review-queue candidates.");
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
