@@ -190,6 +190,38 @@ for (const item of resourcePages) {
   if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
 }
 
+// A resource URL may be shared across countries, but it should appear
+// only once within any one country's rendered resource directory.
+function normalizedSourceHref(value) {
+  try {
+    const u = new URL(String(value || "").replace(/&amp;/g, "&"), "https://goorganicafrica.example");
+    u.hash = "";
+    u.hostname = u.hostname.toLowerCase().replace(/^www\./, "");
+    if ((u.protocol === "https:" && u.port === "443") ||
+        (u.protocol === "http:" && u.port === "80")) u.port = "";
+    while (u.pathname.length > 1 && u.pathname.endsWith("/")) u.pathname = u.pathname.slice(0, -1);
+    return u.toString();
+  } catch (_) {
+    return String(value || "").split("#")[0].replace(/\/+$/, "").toLowerCase();
+  }
+}
+for (const item of resourcePages) {
+  const html = read(item.rel);
+  if (!html) continue;
+  for (const match of html.matchAll(/<details class=["']resource-country["'] data-country=["']([^"']+)["'][\s\S]*?<\/details>/gi)) {
+    const countryCode = match[1];
+    const countryBlock = match[0];
+    const seenSources = new Set();
+    for (const link of countryBlock.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)) {
+      const href = link[1];
+      if (!/^https?:\/\//i.test(href)) continue;
+      const key = normalizedSourceHref(href);
+      if (seenSources.has(key)) failures.push(item.rel + ": duplicate resource source URL for " + countryCode + ": " + href);
+      seenSources.add(key);
+    }
+  }
+}
+
 for (const item of newsPages) {
   const html = read(item.rel);
   if (!html) continue;
