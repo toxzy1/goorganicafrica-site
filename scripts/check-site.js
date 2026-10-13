@@ -83,6 +83,10 @@ if (!languageSwitcher.includes('if (/^(search|farmer-decision-centre|markets|opp
 if (!languageSwitcher.includes('link.href = "/" + sectionPath + "/";')) {
   throw new Error('Shared discovery navigation must not create missing language-prefixed routes.');
 }
+const currentNewsTemplates = ['src/agricultural-news-country.njk','src/fr/agricultural-news-country.njk','src/ar/agricultural-news-country.njk','src/pt/agricultural-news-country.njk','src/sw/agricultural-news-country.njk'];
+if (currentNewsTemplates.some(p => !read(p).includes('lifecycle == "current"')) || !read('src/agricultural-news.njk').includes('article.lifecycle == "current"')) {
+  throw new Error('Current agricultural news listings must exclude historical and expired stories in all languages.');
+}
 const globalSearch = read('src/search.njk');
 if (!globalSearch.includes('goa-global-search') || !globalSearch.includes("input.addEventListener('input',render)") || !globalSearch.includes('esc(x.url)')) {
   throw new Error('Global search must provide live query handling and clickable result destinations.');
