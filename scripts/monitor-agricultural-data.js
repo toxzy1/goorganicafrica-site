@@ -41,7 +41,7 @@ const sourceUrlAudit=(records)=>{
   try{
    const u=new URL(url);
    const pathname=u.pathname.replace(/\/+$/, "")||"/";
-   return pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname)||/^\/en$/.test(pathname);
+   return pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname)||/\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname)||/^\/en$/.test(pathname);
   }catch{return true;}
  });
  return {
