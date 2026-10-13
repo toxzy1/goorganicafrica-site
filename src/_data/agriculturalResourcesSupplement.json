@@ -3421,6 +3421,19 @@
       "status": "official",
       "type": "Agricultural and food-security data reference",
       "access": "Public data reference; country-level data coverage may vary."
+    },
+    {
+      "country_code": "CG",
+      "category": "data",
+      "title": "FAO GIEWS Country Brief — Republic of the Congo",
+      "description": "FAO's Global Information and Early Warning System country brief provides a reference on maize production prospects, cereal import requirements and food-security conditions for the Republic of the Congo.",
+      "url": "https://cb.apps.fao.org/country.jsp?code=COG",
+      "source": "FAO Global Information and Early Warning System (GIEWS)",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "Agricultural and food-security data reference",
+      "access": "Public data reference; check the publication's reference date before using it for current decisions."
     }
   ]
 }
