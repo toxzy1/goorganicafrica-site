@@ -1316,7 +1316,25 @@
       "verified": "2026-10-13",
       "status": "review",
       "lifecycle": "needs_review",
-      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication."
+      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication.",
+      "translations": {
+        "fr": {
+          "title": "Le Soudan du Sud fait avancer sa stratégie nationale de statistiques agricoles avec l’appui de la FAO",
+          "summary": "La FAO et le Bureau national des statistiques du Soudan du Sud ont achevé un atelier de diagnostic pour appuyer le Plan stratégique des statistiques agricoles et rurales 2026–2031. Cette initiative vise à améliorer les systèmes de données agricoles pour la planification, le suivi de la sécurité alimentaire et le développement rural."
+        },
+        "ar": {
+          "title": "جنوب السودان يطوّر استراتيجيته الوطنية للإحصاءات الزراعية بدعم من الفاو",
+          "summary": "اختتمت الفاو والمكتب الوطني للإحصاء في جنوب السودان ورشة تشخيصية لدعم الخطة الاستراتيجية للإحصاءات الزراعية والريفية 2026–2031، بهدف تحسين نظم البيانات الزراعية للتخطيط ورصد الأمن الغذائي والتنمية الريفية."
+        },
+        "pt": {
+          "title": "Sudão do Sul avança na estratégia nacional de estatísticas agrícolas com apoio da FAO",
+          "summary": "A FAO e o Gabinete Nacional de Estatística do Sudão do Sul concluíram um workshop de diagnóstico para apoiar o Plano Estratégico de Estatísticas Agrícolas e Rurais 2026–2031. O trabalho pretende melhorar os sistemas de dados agrícolas para o planeamento, a monitorização da segurança alimentar e o desenvolvimento rural."
+        },
+        "sw": {
+          "title": "Sudan Kusini yaendeleza mkakati wa kitaifa wa takwimu za kilimo kwa msaada wa FAO",
+          "summary": "FAO na Ofisi ya Taifa ya Takwimu ya Sudan Kusini zilihitimisha warsha ya uchunguzi kusaidia Mpango Mkakati wa Takwimu za Kilimo na Vijijini wa 2026–2031. Kazi hii inalenga kuboresha mifumo ya data za kilimo kwa ajili ya mipango, ufuatiliaji wa usalama wa chakula na maendeleo ya vijijini."
+        }
+      }
     },
     {
       "country_code": "DZ",
