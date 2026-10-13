@@ -102,7 +102,7 @@ if (!decisionPage.includes('data-i18n="decisionCentre.title"') || !decisionUi.in
 }
 for (const code of ['en','fr','ar','pt','sw']) {
   const translations = JSON.parse(read(`src/i18n/${code}.json`));
-  if (!translations.search || !translations.decisionCentre || !translations.search.noResults || !translations.decisionCentre.briefHeading) {
+  if (!translations.search || !translations.decisionCentre || !translations.search.noResults || !translations.decisionCentre.briefHeading || !translations.decisionCentre.goal_market || !translations.decisionCentre.topic_maize) {
     throw new Error(`Search and Decision Centre translations are incomplete for ${code}.`);
   }
 }
