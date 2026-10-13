@@ -35,11 +35,15 @@ const isSpecificAgriculturalNewsUrl = value => {
 // Keep generic landing pages out of category-specific country resource listings.
 const isGenericAgriculturalResourceUrl = value => {
   try {
-    const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
+    const parsed = new URL(value);
+    const pathname = parsed.pathname.replace(/\/+$/, "") || "/";
+    // These query-addressed CMS pages are direct records, not generic homepages.
+    if (pathname === "/" && parsed.searchParams.has("page_id")) return false;
     return pathname === "/" ||
-      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) || /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname) ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
       /^\/en$/i.test(pathname) ||
-      /\/newsdetails(?:\/en)?$/i.test(pathname);
+      /\/newsdetails(?:\/en)?$/i.test(pathname) ||
+      /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname);
   } catch {
     return true;
   }
@@ -56,11 +60,14 @@ const shouldPublishAgriculturalResource = (record, category) => {
   catch { return false; }
   const isHomepage = pathname === "/" || /^\/en$/i.test(pathname);
   const title = String(record.title || record.name || "");
-  const institutionalTitle = /\b(ministry|authority|department|agency|institute|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+  const institutionalTitle = /\b(ministry|authority|department|agency|institute|centre|center|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+  const portalTitle = /\b(platform|portal|system|database|information system|advisory tool|digital service)\b/i.test(title);
   const rawCategory = String(category || record.category || "").toLowerCase();
   const normalizedCategory = ({ "weather-climate": "climate", policy: "general" })[rawCategory] || rawCategory;
-  return isHomepage && institutionalTitle &&
-    ["general", "data", "farmer-support"].includes(normalizedCategory);
+  return (isHomepage && institutionalTitle &&
+    ["general", "data", "farmer-support"].includes(normalizedCategory)) ||
+    (isHomepage && portalTitle &&
+    ["general", "data", "farmer-support", "inputs", "markets"].includes(normalizedCategory));
 };
 
 const collectPublishableNews = read => {
