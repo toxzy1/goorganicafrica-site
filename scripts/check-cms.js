@@ -235,4 +235,39 @@ if (!freshnessMonitor.includes('publishableNews=news.filter') ||
   throw new Error("Country news coverage must exclude unpublished review-queue candidates.");
 }
 
+// Generic landing pages may be useful for research, but must never be presented
+// as verified individual news stories or opportunities until a direct source is found.
+const newsBase = JSON.parse(read("src/_data/agriculturalNews.json"));
+const newsSupplement = JSON.parse(read("src/_data/agriculturalNewsSupplement.json"));
+const newsExpansion = JSON.parse(read("src/_data/agriculturalNewsExpansion.json"));
+const opportunityData = JSON.parse(read("src/_data/agriculturalOpportunities.json"));
+const sourceCandidates = [
+  ...(newsBase.countries || []).flatMap(country => (country.articles || []).map(record => ({...record, country: country.name}))),
+  ...(newsSupplement.records || []),
+  ...(newsExpansion.records || []),
+  ...(opportunityData.records || [])
+];
+const genericSourcePath = pathname => pathname === "/" ||
+  /(?:^|\\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\\/agriculture|sectors\\/A|news)$/i.test(pathname) ||
+  pathname === "/en";
+const genericUnreviewed = sourceCandidates.filter(record => {
+  if (!record.url) return false;
+  let pathname;
+  try {
+    pathname = new URL(record.url).pathname.replace(/\\/+$/, "") || "/";
+  } catch (_) {
+    return true;
+  }
+  const generic = genericSourcePath(pathname);
+  const state = String(record.status || "").toLowerCase();
+  const lifecycle = String(record.lifecycle || "").toLowerCase();
+  const heldForReview = ["review", "draft", "needs_review"].includes(state) ||
+    ["review", "draft", "needs_review"].includes(lifecycle);
+  return generic && !heldForReview;
+});
+if (genericUnreviewed.length) {
+  throw new Error("Generic agricultural source URLs must remain in editorial review: " +
+    genericUnreviewed.map(record => (record.title || record.headline || "Untitled") + " -> " + record.url).join("; "));
+}
+
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
