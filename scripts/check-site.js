@@ -88,6 +88,12 @@ if (currentNewsTemplates.some(p => !read(p).includes('candidate.status == "offic
     !read('src/agricultural-news.njk').includes('article.lifecycle == "current"')) {
   throw new Error('Every localized country-news page must require an approved publication status AND current lifecycle; review-only records must remain hidden.');
 }
+
+const localizedNewsTemplates = ['src/fr/agricultural-news-country.njk','src/ar/agricultural-news-country.njk','src/pt/agricultural-news-country.njk','src/sw/agricultural-news-country.njk'];
+if (localizedNewsTemplates.some(p => !read(p).includes('class="translation-pending-note"') ||
+    !read(p).includes('translated and translated.title and translated.summary'))) {
+  throw new Error('Localized news pages must not silently present untranslated titles/summaries as if they were fully translated.');
+}
 const globalSearch = read('src/search.njk');
 if (!globalSearch.includes('goa-global-search') || !globalSearch.includes("input.addEventListener('input',render)") || !globalSearch.includes('esc(x.url)')) {
   throw new Error('Global search must provide live query handling and clickable result destinations.');
