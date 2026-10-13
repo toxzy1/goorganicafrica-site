@@ -5,7 +5,7 @@ const read=n=>JSON.parse(fs.readFileSync(path.join(dir,n),"utf8"));
 const today=new Date();
 const age=d=>{const x=new Date(d);return isNaN(x)?null:Math.floor((today-x)/86400000)};
 const resources=[];
-for(const c of read("agriculturalResources.json").countries||[]) for(const list of Object.values(c.records||{})) for(const r of list||[]) resources.push({...r,country_code:c.code});
+for(const c of read("agriculturalResources.json").countries||[]) for(const [category,list] of Object.entries(c.records||{})) for(const r of list||[]) resources.push({...r,category:r.category||category,country_code:c.code});
 const resources2=read("agriculturalResourcesSupplement.json").records||[];
 const resourceGapFiles=fs.readdirSync(dir).filter(name=>/^agriculturalResourcesGap(?:[A-Z]{2}|Batch)\.json$/.test(name)).sort();
 const resourceGapRecords=resourceGapFiles.flatMap(name=>read(name).records||[]);
@@ -34,7 +34,7 @@ const newsCountryCoverage=newsCountryList.map(c=>{
  const sources=new Set(countryRecords.map(r=>String(r.source||r.publisher||"").trim()).filter(Boolean));
  return {code:c.code,name:c.name,story_count:urls.size,source_count:sources.size};
 });
-const sourceUrlAudit=(records)=>{
+const sourceUrlAudit=(records, resourceMode=false)=>{
  const sourceUrl=r=>String(r.url||r.source_url||r.application_url||"").trim();
  const counts=new Map();
  for(const r of records){const url=sourceUrl(r);if(!url)continue;counts.set(url,(counts.get(url)||0)+1);}
@@ -45,7 +45,18 @@ const sourceUrlAudit=(records)=>{
   try{
    const u=new URL(url);
    const pathname=u.pathname.replace(/\/+$/, "")||"/";
-   return pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname)||/\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname)||/^\/en$/.test(pathname);
+   if(resourceMode && pathname==="/" && u.searchParams.has("page_id"))return false;
+   const generic=pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname)||/\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname)||/^\/en$/.test(pathname);
+   if(!generic)return false;
+   if(resourceMode && (pathname==="/"||/^\/en$/.test(pathname))){
+    const title=String(r.title||r.name||"");
+    const institutional=/\b(ministry|authority|department|agency|institute|centre|center|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+    const portal=/\b(platform|portal|system|database|information system|advisory tool|digital service)\b/i.test(title);
+    const cat=String(r.category||"").toLowerCase().replace("policy","general").replace("weather-climate","climate");
+    if(institutional && ["general","data","farmer-support"].includes(cat))return false;
+    if(portal && ["general","data","farmer-support","inputs","markets"].includes(cat))return false;
+   }
+   return true;
   }catch{return true;}
  });
  return {
@@ -61,8 +72,8 @@ const sourceUrlAudit=(records)=>{
 const sourceQuality={
  news:sourceUrlAudit(news),
  opportunities:sourceUrlAudit(opp),
- resources:sourceUrlAudit(publicResourceRecords),
- resource_review_queue:sourceUrlAudit(resourceQueue),
+ resources:sourceUrlAudit(publicResourceRecords,true),
+ resource_review_queue:sourceUrlAudit(resourceQueue,true),
  markets:sourceUrlAudit(markets),
  services:sourceUrlAudit(services)
 };
