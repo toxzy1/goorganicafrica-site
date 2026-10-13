@@ -1388,9 +1388,27 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct ministry article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "Le FIDA approuve 8,844 millions d’euros pour le programme d’agriculture résiliente PRO-AGUA au Cap-Vert",
+          "summary": "Le ministère cap-verdien de l’Agriculture et de l’Environnement indique que le FIDA a approuvé 8,844 millions d’euros pour PRO-AGUA, un programme destiné à améliorer l’accès durable et inclusif à l’eau pour une agriculture résiliente au climat sur les îles de Santo Antão, São Nicolau, Santiago et Fogo. L’accord de financement et la ratification nationale restaient à finaliser au moment de l’annonce."
+        },
+        "ar": {
+          "title": "الصندوق الدولي للتنمية الزراعية يوافق على 8.844 ملايين يورو لبرنامج PRO-AGUA للزراعة القادرة على الصمود في الرأس الأخضر",
+          "summary": "أفادت وزارة الزراعة والبيئة في الرأس الأخضر بأن الصندوق الدولي للتنمية الزراعية وافق على تمويل بقيمة 8.844 ملايين يورو لبرنامج PRO-AGUA، الهادف إلى تحسين الوصول المستدام والشامل إلى المياه للزراعة القادرة على الصمود أمام المناخ في جزر سانتو أنتاو وساو نيكولاو وسانتياغو وفوغو. وكان اتفاق التمويل وإجراءات التصديق الوطنية لا يزالان قيد الاستكمال عند الإعلان."
+        },
+        "pt": {
+          "title": "FIDA aprova 8,844 milhões de euros para o programa de agricultura resiliente PRO-AGUA em Cabo Verde",
+          "summary": "O Ministério da Agricultura e Ambiente de Cabo Verde informou que o FIDA aprovou 8,844 milhões de euros para o PRO-AGUA, um programa destinado a melhorar o acesso sustentável e inclusivo à água para uma agricultura resiliente ao clima nas ilhas de Santo Antão, São Nicolau, Santiago e Fogo. Na data do anúncio, o acordo de financiamento e as formalidades de ratificação nacional ainda precisavam de ser concluídos."
+        },
+        "sw": {
+          "title": "IFAD yaidhinisha euro milioni 8.844 kwa mpango wa kilimo kinachostahimili tabianchi wa PRO-AGUA nchini Cabo Verde",
+          "summary": "Wizara ya Kilimo na Mazingira ya Cabo Verde iliripoti kuwa IFAD iliidhinisha euro milioni 8.844 kwa PRO-AGUA, mpango wa kuboresha upatikanaji endelevu na jumuishi wa maji kwa kilimo kinachostahimili tabianchi katika visiwa vya Santo Antão, São Nicolau, Santiago na Fogo. Wakati wa tangazo, makubaliano ya ufadhili na taratibu za kitaifa za kuridhia bado zilikuwa zinakamilishwa."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "MU",
@@ -2229,9 +2247,27 @@
       "source_tier": 1,
       "published": "2026-09-01",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct World Bank analysis found; verify exact article title and summary, and ensure it is not already represented by another country record before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "Une analyse de la Banque mondiale estime à près de 30 millions de dollars par an le potentiel des chaînes de valeur agroalimentaires en Guinée-Bissau",
+          "summary": "La Banque mondiale estime que des améliorations de la productivité, du stockage, de la transformation, du transport et de l’accès aux marchés pourraient libérer près de 30 millions de dollars par an dans les chaînes de valeur du riz et de la noix de cajou en Guinée-Bissau."
+        },
+        "ar": {
+          "title": "تحليل للبنك الدولي يقدر إمكانات سلاسل القيمة الزراعية والغذائية في غينيا بيساو بنحو 30 مليون دولار سنوياً",
+          "summary": "يشير تحليل للبنك الدولي إلى أن تحسين الإنتاجية والتخزين والتصنيع والنقل والوصول إلى الأسواق قد يفتح فرصاً بقيمة تقارب 30 مليون دولار سنوياً عبر سلسلتي قيمة الأرز والكاجو في غينيا بيساو."
+        },
+        "pt": {
+          "title": "Análise do Banco Mundial identifica potencial anual de quase 30 milhões de dólares nas cadeias agroalimentares da Guiné-Bissau",
+          "summary": "Uma análise do Banco Mundial indica que melhorias na produtividade, armazenamento, processamento, transporte e acesso aos mercados podem desbloquear quase 30 milhões de dólares por ano nas cadeias de valor do arroz e da castanha de caju na Guiné-Bissau."
+        },
+        "sw": {
+          "title": "Uchambuzi wa Benki ya Dunia waonyesha uwezo wa dola milioni 30 kwa mwaka katika minyororo ya thamani ya kilimo na chakula Guinea-Bissau",
+          "summary": "Uchambuzi wa Benki ya Dunia unasema kuwa kuboresha uzalishaji, uhifadhi, uchakataji, usafirishaji na upatikanaji wa masoko kunaweza kufungua karibu dola milioni 30 kwa mwaka katika minyororo ya thamani ya mpunga na korosho nchini Guinea-Bissau."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "GW",
@@ -2243,9 +2279,27 @@
       "source_tier": 1,
       "published": "2026-06-24",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct World Bank press release found; verify that the agrifood summary is appropriately scoped and not duplicative before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La Banque mondiale analyse les voies d’une croissance du secteur privé portée par la productivité en Guinée-Bissau",
+          "summary": "La mise à jour économique 2026 du Groupe de la Banque mondiale indique qu’une bonne récolte de noix de cajou et des prix à la production favorables ont soutenu la croissance en 2025, tandis que l’accès au financement, la productivité, la concentration des exportations et les revenus ruraux restent des enjeux majeurs."
+        },
+        "ar": {
+          "title": "البنك الدولي يستعرض مسارات نمو القطاع الخاص القائم على الإنتاجية في غينيا بيساو",
+          "summary": "يشير التحديث الاقتصادي لعام 2026 لمجموعة البنك الدولي إلى أن محصول الكاجو الجيد وأسعار المنتجين دعما النمو في عام 2025، بينما لا يزال الوصول إلى التمويل والإنتاجية وتركيز الصادرات والدخل الريفي من التحديات الرئيسية."
+        },
+        "pt": {
+          "title": "Banco Mundial analisa caminhos para o crescimento do setor privado impulsionado pela produtividade na Guiné-Bissau",
+          "summary": "A atualização económica de 2026 do Grupo Banco Mundial indica que uma boa colheita de caju e preços favoráveis ao produtor apoiaram o crescimento em 2025, enquanto o acesso ao financiamento, a produtividade, a concentração das exportações e os rendimentos rurais continuam a ser desafios importantes."
+        },
+        "sw": {
+          "title": "Benki ya Dunia yaangazia njia za ukuaji wa sekta binafsi unaochochewa na uzalishaji nchini Guinea-Bissau",
+          "summary": "Taarifa ya uchumi ya 2026 ya Kundi la Benki ya Dunia inaeleza kuwa mavuno mazuri ya korosho na bei nzuri za mkulima ziliunga mkono ukuaji mwaka 2025, huku upatikanaji wa fedha, uzalishaji, utegemezi wa mauzo ya nje na mapato ya vijijini vikiendelea kuwa changamoto."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "CG",
