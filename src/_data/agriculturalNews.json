@@ -1022,6 +1022,39 @@
           "status": "review",
           "lifecycle": "needs_review",
           "review_reason": "Direct government article verified; verify operational export requirements and review translations before publication."
+        },
+        {
+          "category": "farm-finance",
+          "title": "President Ramaphosa calls for transformation and broader participation in South African agriculture",
+          "summary": "On 12 October 2026, the Presidency highlighted agriculture’s growth potential and called for stronger access to land, finance, skills, mentorship and training for emerging farmers. It cited the Land Bank-supported Redlands Dairy Farm as an example of how blended finance can support commercial farming and rural jobs.",
+          "url": "https://www.sanews.gov.za/south-africa/president-ramaphosa-calls-transformation-agricultural-sector",
+          "source": "South African Government News Agency (SAnews)",
+          "source_id": "sanews-za",
+          "source_tier": 1,
+          "published": "2026-10-12",
+          "verified": "2026-10-13",
+          "status": "review",
+          "lifecycle": "needs_review",
+          "coverage_scope": "country",
+          "review_reason": "Direct government news article found and date checked; keep in editorial review until source details and all four translations receive human approval.",
+          "translations": {
+            "fr": {
+              "title": "Le président Ramaphosa appelle à transformer l’agriculture sud-africaine et à élargir la participation",
+              "summary": "Le 12 octobre 2026, la Présidence a souligné le potentiel de croissance de l’agriculture et appelé à améliorer l’accès à la terre, au financement, aux compétences, au mentorat et à la formation pour les agriculteurs émergents. Elle a cité la ferme laitière Redlands, soutenue par la Land Bank, comme exemple du rôle du financement mixte dans l’agriculture commerciale et l’emploi rural."
+            },
+            "ar": {
+              "title": "الرئيس رامافوزا يدعو إلى تحويل الزراعة في جنوب أفريقيا وتوسيع المشاركة فيها",
+              "summary": "في 12 أكتوبر 2026، أكدت الرئاسة إمكانات نمو الزراعة ودعت إلى تحسين حصول المزارعين الناشئين على الأراضي والتمويل والمهارات والإرشاد والتدريب. واستشهدت بمزرعة ريدلاندز للألبان المدعومة من بنك الأراضي مثالاً على دور التمويل المختلط في دعم الزراعة التجارية وفرص العمل الريفية."
+            },
+            "pt": {
+              "title": "Presidente Ramaphosa apela à transformação da agricultura sul-africana e à participação mais ampla",
+              "summary": "Em 12 de outubro de 2026, a Presidência destacou o potencial de crescimento da agricultura e pediu melhor acesso à terra, financiamento, competências, mentoria e formação para agricultores emergentes. Citou a exploração leiteira Redlands, apoiada pelo Land Bank, como exemplo de como o financiamento combinado pode apoiar a agricultura comercial e o emprego rural."
+            },
+            "sw": {
+              "title": "Rais Ramaphosa ataka mageuzi ya kilimo cha Afrika Kusini na ushiriki mpana zaidi",
+              "summary": "Tarehe 12 Oktoba 2026, Ofisi ya Rais ilisisitiza uwezo wa ukuaji wa kilimo na kutaka wakulima wanaoibukia wapate ardhi, fedha, ujuzi, ushauri na mafunzo kwa urahisi zaidi. Ilitaja shamba la maziwa la Redlands linaloungwa mkono na Land Bank kama mfano wa jinsi ufadhili mchanganyiko unavyoweza kusaidia kilimo cha kibiashara na ajira vijijini."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -4638,6 +4671,39 @@
           "status": "review",
           "lifecycle": "needs_review",
           "review_reason": "Procurement/consultancy notice belongs in Opportunities, not Agricultural News; hold for editorial migration."
+        },
+        {
+          "category": "agricultural-institutions",
+          "title": "Somali Agricultural Regulatory and Inspection Services elects its inaugural board leadership",
+          "summary": "On 8 October 2026, Somalia’s Ministry of Agriculture and Irrigation reported that the Somali Agricultural Regulatory and Inspection Services (SARIS) held its first board meeting in Mogadishu and elected its chairperson and deputy chairperson, with government, farmer and agribusiness representatives present.",
+          "url": "https://moa.gov.so/press-release-saris-board-of-directors-holds-its-inaugural-meeting-at-the-ministry-of-agriculture-and-irrigationand-elects-its-chairperson-and-deputy-chairperson/",
+          "source": "Federal Ministry of Agriculture and Irrigation, Somalia (MoAI)",
+          "source_id": "moai-somalia",
+          "source_tier": 1,
+          "published": "2026-10-08",
+          "verified": "2026-10-13",
+          "status": "review",
+          "lifecycle": "needs_review",
+          "coverage_scope": "country",
+          "review_reason": "Direct official ministry press release found and date checked; keep in editorial review until source details and all four translations receive human approval.",
+          "translations": {
+            "fr": {
+              "title": "Les Services somaliens de réglementation et d’inspection agricoles élisent leur premier bureau",
+              "summary": "Le 8 octobre 2026, le ministère somalien de l’Agriculture et de l’Irrigation a indiqué que les Services somaliens de réglementation et d’inspection agricoles (SARIS) avaient tenu leur première réunion du conseil à Mogadiscio et élu leur président et vice-président, en présence de représentants du gouvernement, des agriculteurs et de l’agro-industrie."
+            },
+            "ar": {
+              "title": "الخدمات الصومالية لتنظيم الزراعة والتفتيش تنتخب أول قيادة لمجلس إدارتها",
+              "summary": "في 8 أكتوبر 2026، أفادت وزارة الزراعة والري الصومالية بأن الخدمات الصومالية لتنظيم الزراعة والتفتيش (SARIS) عقدت أول اجتماع لمجلس إدارتها في مقديشو وانتخبت الرئيس ونائبه، بحضور ممثلين عن الحكومة والمزارعين والأعمال الزراعية."
+            },
+            "pt": {
+              "title": "Serviços de Regulação e Inspeção Agrícola da Somália elegem a primeira liderança do conselho",
+              "summary": "Em 8 de outubro de 2026, o Ministério da Agricultura e Irrigação da Somália informou que os Serviços de Regulação e Inspeção Agrícola da Somália (SARIS) realizaram a primeira reunião do conselho em Mogadíscio e elegeram o presidente e o vice-presidente, com a presença de representantes do governo, agricultores e agronegócio."
+            },
+            "sw": {
+              "title": "Huduma za Udhibiti na Ukaguzi wa Kilimo za Somalia zachagua uongozi wa kwanza wa bodi",
+              "summary": "Tarehe 8 Oktoba 2026, Wizara ya Kilimo na Umwagiliaji ya Somalia iliripoti kuwa Huduma za Udhibiti na Ukaguzi wa Kilimo za Somalia (SARIS) zilifanya mkutano wa kwanza wa bodi mjini Mogadishu na kuchagua mwenyekiti na naibu mwenyekiti, huku wawakilishi wa serikali, wakulima na biashara za kilimo wakihudhuria."
+            }
+          }
         }
       ],
       "localizedNames": {
