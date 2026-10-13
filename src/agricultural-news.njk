@@ -15,11 +15,11 @@ pageSection: agricultural-news
 {% set latestArticles = [] %}
 {% for country in agriculturalNewsMerged.countries %}
   {% for article in country.articles %}
-    {% if (article.status == "official" or article.status == "published" or article.status == "verified") and (not article.lifecycle or article.lifecycle == "current") %}{% set latestArticles = latestArticles.concat([{
+    {% if (article.status == "official" or article.status == "published" or article.status == "verified") and (not article.lifecycle or article.lifecycle == "current") %}{% set _ = latestArticles.push({
       "country": country.name,
       "flag": country.flag,
       "article": article
-    }]) %}{% endif %}
+    }) %}{% endif %}
   {% endfor %}
 {% endfor %}
 {% set latestArticles = latestArticles | sort(attribute="article.published") | reverse %}
@@ -46,7 +46,7 @@ pageSection: agricultural-news
 <a class="card" href="/agricultural-news/{{ country.slug }}/" style="text-decoration:none;">
 <h2 style="font-size:1.15rem;">{{ country.flag }} {{ country.name }}</h2>
 {% set publishedCountryArticles = [] %}
-{% for article in country.articles %}{% if (article.status == "official" or article.status == "published" or article.status == "verified") and (not article.lifecycle or article.lifecycle == "current") %}{% set publishedCountryArticles = publishedCountryArticles.concat([article]) %}{% endif %}{% endfor %}
+{% for article in country.articles %}{% if (article.status == "official" or article.status == "published" or article.status == "verified") and (not article.lifecycle or article.lifecycle == "current") %}{% set _ = publishedCountryArticles.push(article) %}{% endif %}{% endfor %}
 <p>{{ publishedCountryArticles | length }} published stories · multiple authoritative sources where available</p>
 </a>
 {% endfor %}
