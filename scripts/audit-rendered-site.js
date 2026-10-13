@@ -260,6 +260,10 @@ if (searchHtml) {
   for (const id of ["goa-global-search", "goa-search-type", "goa-search-results"]) {
     if (!searchHtml.includes('id="' + id + '"')) failures.push("search/index.html: missing search UI element #" + id);
   }
+  // Keyword and slug indexing protects searches for terms absent from a card title.
+  if (!searchHtml.includes("data-keywords=")) failures.push("search/index.html: searchable records do not expose keyword metadata");
+  if (!searchHtml.includes("keywords:el.dataset.keywords")) failures.push("search/index.html: keyword metadata is not loaded into the search index");
+  if (!searchHtml.includes("x.keywords")) failures.push("search/index.html: query matching ignores keyword metadata");
   const sourceMatch = searchHtml.match(/<div id=["']goa-search-source["'] hidden>([\s\S]*?)<\/div>/i);
   if (!sourceMatch) {
     failures.push("search/index.html: embedded source index is missing");
