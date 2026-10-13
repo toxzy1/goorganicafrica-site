@@ -4261,6 +4261,39 @@
           "published": "2026-06-15",
           "verified": "2026-10-07",
           "status": "official"
+        },
+        {
+          "category": "inputs",
+          "title": "São Tomé and Príncipe distributes agricultural inputs to farmers in the central zone and Mé-Zóchi",
+          "summary": "On 14 April 2026, the Ministry of Agriculture, Fisheries and Rural Development reported that about 15 farmers and livestock keepers in the central zone and Mé-Zóchi received seeds, insecticides, urea, spraying machines and other inputs through the Mais Alimentos programme. The ministry said the support is intended to strengthen local production and food security.",
+          "url": "https://mapdr.gov.st/ler-noticia.php?id=129",
+          "source": "Ministry of Agriculture, Fisheries and Rural Development (MAPDR), São Tomé and Príncipe",
+          "source_id": "mapdr-stp",
+          "source_tier": 1,
+          "published": "2026-04-14",
+          "verified": "2026-10-13",
+          "status": "review",
+          "lifecycle": "needs_review",
+          "coverage_scope": "country",
+          "review_reason": "Direct official ministry article located; confirm current programme availability and review all translations before publication.",
+          "translations": {
+            "fr": {
+              "title": "São Tomé-et-Príncipe distribue des intrants agricoles aux producteurs de la zone centrale et de Mé-Zóchi",
+              "summary": "Le 14 avril 2026, le ministère de l’Agriculture, de la Pêche et du Développement rural a indiqué qu’environ 15 agriculteurs et éleveurs de la zone centrale et de Mé-Zóchi avaient reçu des semences, des insecticides, de l’urée, des pulvérisateurs et d’autres intrants dans le cadre du programme Mais Alimentos. Le ministère a présenté cette aide comme un moyen de renforcer la production locale et la sécurité alimentaire."
+            },
+            "ar": {
+              "title": "ساو تومي وبرينسيبي توزع مدخلات زراعية على المزارعين في المنطقة الوسطى ومي زوتشي",
+              "summary": "في 14 أبريل 2026، أفادت وزارة الزراعة ومصايد الأسماك والتنمية الريفية بأن نحو 15 مزارعاً ومربّي ماشية في المنطقة الوسطى ومي زوتشي تلقوا بذوراً ومبيدات حشرية ويوريا وآلات رش ومدخلات أخرى ضمن برنامج «مايس أليمينتوس». وقالت الوزارة إن الدعم يهدف إلى تعزيز الإنتاج المحلي والأمن الغذائي."
+            },
+            "pt": {
+              "title": "São Tomé e Príncipe distribui insumos agrícolas a produtores da zona centro e de Mé-Zóchi",
+              "summary": "Em 14 de abril de 2026, o Ministério da Agricultura, Pescas e Desenvolvimento Rural informou que cerca de 15 agricultores e criadores de animais da zona centro e de Mé-Zóchi receberam sementes, inseticidas, ureia, pulverizadores e outros insumos através do programa Mais Alimentos. O ministério afirmou que o apoio pretende reforçar a produção local e a segurança alimentar."
+            },
+            "sw": {
+              "title": "São Tomé na Príncipe yasambaza pembejeo za kilimo kwa wakulima wa eneo la kati na Mé-Zóchi",
+              "summary": "Tarehe 14 Aprili 2026, Wizara ya Kilimo, Uvuvi na Maendeleo ya Vijijini iliripoti kuwa takriban wakulima na wafugaji 15 katika eneo la kati na Mé-Zóchi walipokea mbegu, viuatilifu, urea, mashine za kunyunyizia na pembejeo nyingine kupitia mpango wa Mais Alimentos. Wizara ilisema msaada huo unalenga kuimarisha uzalishaji wa ndani na usalama wa chakula."
+            }
+          }
         }
       ],
       "localizedNames": {
