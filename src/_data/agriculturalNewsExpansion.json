@@ -1372,10 +1372,27 @@
       "source_tier": 1,
       "published": "2026-10-02",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "coverage_scope": "cross-border",
-      "review_reason": "Direct ministry article checked and its Burkina Faso relevance confirmed; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "coverage_scope": "regional",
+      "translations": {
+        "fr": {
+          "title": "Le Togo et le Burkina Faso renforcent les échanges transfrontaliers de manioc",
+          "summary": "Le ministère togolais de l’Agriculture rapporte une rencontre entre acteurs de la filière manioc du Togo et l’interprofession du manioc du Burkina Faso. Les discussions ont porté sur la demande estimée à 80 000 tonnes de pâte de manioc, les volumes, la qualité, la transformation, les prix et la livraison; il s’agit d’une piste commerciale en cours, pas d’un contrat d’achat confirmé."
+        },
+        "ar": {
+          "title": "توغو وبوركينا فاسو تعززان التجارة العابرة للحدود في الكسافا",
+          "summary": "أفادت وزارة الزراعة في توغو بعقد لقاء بين الجهات الفاعلة في سلسلة قيمة الكسافا في توغو والهيئة المهنية للكسافا في بوركينا فاسو. وناقش المشاركون طلباً محتملاً يقدر بنحو 80 ألف طن من معجون الكسافا، والكميات والجودة والتصنيع والأسعار والتسليم؛ وهذه فرصة تجارية قيد التطوير وليست عقد شراء مؤكداً."
+        },
+        "pt": {
+          "title": "Togo e Burkina Faso reforçam o comércio transfronteiriço de mandioca",
+          "summary": "O Ministério da Agricultura do Togo relatou uma reunião entre intervenientes da cadeia da mandioca togolesa e a organização interprofissional da mandioca do Burkina Faso. As conversações abordaram uma procura estimada de 80 mil toneladas de pasta de mandioca, volumes, qualidade, processamento, preços e entrega; trata-se de uma oportunidade comercial em desenvolvimento, não de um contrato de compra confirmado."
+        },
+        "sw": {
+          "title": "Togo na Burkina Faso zaimarisha biashara ya muhogo kuvuka mipaka",
+          "summary": "Wizara ya Kilimo ya Togo iliripoti mkutano kati ya wadau wa mnyororo wa muhogo wa Togo na shirika la kitaaluma la muhogo la Burkina Faso. Majadiliano yalihusu mahitaji yanayokadiriwa kuwa tani 80,000 za unga mzito wa muhogo, kiasi, ubora, uchakataji, bei na usafirishaji; hii ni fursa ya biashara inayoendelea, si mkataba wa ununuzi uliothibitishwa."
+        }
+      }
     },
     {
       "country_code": "SC",
@@ -1401,9 +1418,26 @@
       "source_tier": 1,
       "published": "2026-09-14",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO country-office article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "Ce que le Cameroun peut apporter à la coopération Sud-Sud en agriculture",
+          "summary": "La FAO décrit l’expérience du Cameroun en agroforesterie du cacao, en champs-écoles des producteurs, en production résiliente au climat et en outils agricoles numériques, montrant comment des pratiques développées localement peuvent être adaptées grâce aux échanges de connaissances Sud-Sud."
+        },
+        "ar": {
+          "title": "ما الذي يمكن أن يقدمه الكاميرون للتعاون جنوب-جنوب في الزراعة",
+          "summary": "تستعرض الفاو خبرة الكاميرون في الزراعة الحراجية للكاكاو ومدارس المزارعين الحقلية والإنتاج القادر على الصمود أمام المناخ والأدوات الزراعية الرقمية، موضحة كيف يمكن تكييف الممارسات المحلية من خلال تبادل المعرفة بين بلدان الجنوب."
+        },
+        "pt": {
+          "title": "O que os Camarões podem contribuir para a cooperação Sul-Sul na agricultura",
+          "summary": "A FAO descreve a experiência dos Camarões em agroflorestas de cacau, Escolas de Campo para Agricultores, produção resiliente ao clima e ferramentas agrícolas digitais, mostrando como práticas desenvolvidas localmente podem ser adaptadas através do intercâmbio de conhecimentos Sul-Sul."
+        },
+        "sw": {
+          "title": "Mchango wa Cameroon katika ushirikiano wa Kilimo wa Kusini-Kusini",
+          "summary": "FAO inaeleza uzoefu wa Cameroon katika kilimo-misitu cha kakao, Shule za Wakulima, uzalishaji unaostahimili tabianchi na zana za kidijitali za kilimo, ikionyesha jinsi mbinu zilizobuniwa ndani ya nchi zinavyoweza kubadilishwa kupitia ubadilishanaji wa maarifa kati ya nchi za Kusini."
+        }
+      }
     },
     {
       "country_code": "BI",
@@ -1415,9 +1449,26 @@
       "source_tier": 1,
       "published": "2026-05-15",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO project article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "Le Burundi lance un projet national d’évaluation des performances agroécologiques",
+          "summary": "La FAO, l’Union européenne et le ministère burundais de l’Agriculture ont lancé le projet national TAPE+ pour recueillir des données sur les systèmes agricoles et leurs performances agroécologiques. L’initiative doit éclairer les politiques agricoles et soutenir une production plus résiliente et durable sur le plan environnemental."
+        },
+        "ar": {
+          "title": "بوروندي تطلق مشروعاً وطنياً لتقييم أداء الزراعة الإيكولوجية",
+          "summary": "أطلقت الفاو والاتحاد الأوروبي ووزارة الزراعة في بوروندي المشروع الوطني TAPE+ لجمع الأدلة حول النظم الزراعية وأدائها الإيكولوجي. وتهدف المبادرة إلى دعم السياسات الزراعية وتعزيز إنتاج أكثر قدرة على الصمود واستدامة بيئياً."
+        },
+        "pt": {
+          "title": "Burundi lança projeto nacional de avaliação do desempenho agroecológico",
+          "summary": "A FAO, a União Europeia e o Ministério da Agricultura do Burundi lançaram o projeto nacional TAPE+ para recolher evidências sobre sistemas agrícolas e o seu desempenho agroecológico. A iniciativa pretende informar as políticas agrícolas e apoiar uma produção mais resiliente e ambientalmente sustentável."
+        },
+        "sw": {
+          "title": "Burundi yazindua mradi wa kitaifa wa kutathmini utendaji wa kilimo-ikolojia",
+          "summary": "FAO, Umoja wa Ulaya na Wizara ya Kilimo ya Burundi zilizindua mradi wa kitaifa wa TAPE+ kukusanya ushahidi kuhusu mifumo ya kilimo na utendaji wake wa kilimo-ikolojia. Mpango unalenga kusaidia sera za kilimo na uzalishaji endelevu unaostahimili changamoto za mazingira."
+        }
+      }
     },
     {
       "country_code": "EG",
@@ -1500,9 +1551,26 @@
       "source_tier": 1,
       "published": "2026-06-30",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La Banque mondiale souligne le rôle de l’agriculture dans la résilience économique du Burkina Faso",
+          "summary": "La mise à jour économique de juin 2026 de la Banque mondiale décrit une croissance résiliente au Burkina Faso et cite l’activité agricole, notamment les initiatives publiques agropastorales et halieutiques, parmi les facteurs de soutien à l’économie."
+        },
+        "ar": {
+          "title": "البنك الدولي يسلط الضوء على دور الزراعة في تعزيز المرونة الاقتصادية في بوركينا فاسو",
+          "summary": "توضح التحديثات الاقتصادية للبنك الدولي لشهر يونيو 2026 استمرار النمو في بوركينا فاسو، وتشير إلى النشاط الزراعي، بما في ذلك المبادرات الحكومية في الزراعة والرعي ومصايد الأسماك، بوصفه أحد عوامل دعم الاقتصاد."
+        },
+        "pt": {
+          "title": "Banco Mundial destaca o papel da agricultura na resiliência económica do Burkina Faso",
+          "summary": "A atualização económica do Banco Mundial de junho de 2026 descreve um crescimento resiliente no Burkina Faso e identifica a atividade agrícola, incluindo iniciativas públicas agropecuárias e das pescas, como um dos fatores de apoio à economia."
+        },
+        "sw": {
+          "title": "Benki ya Dunia yaangazia nafasi ya kilimo katika ustahimilivu wa uchumi wa Burkina Faso",
+          "summary": "Taarifa ya kiuchumi ya Benki ya Dunia ya Juni 2026 inaeleza ukuaji unaostahimili changamoto nchini Burkina Faso na kutaja shughuli za kilimo, ikiwemo mipango ya serikali ya kilimo, mifugo na uvuvi, kama mojawapo ya nguzo za uchumi."
+        }
+      }
     },
     {
       "country_code": "GM",
@@ -1602,9 +1670,26 @@
       "source_tier": 1,
       "published": "2026-05-04",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "L’Algérie lance l’Initiative de la FAO contre la pénurie d’eau pour une gestion durable de l’eau agricole",
+          "summary": "Un atelier technique de la FAO à Alger a lancé l’Initiative contre la pénurie d’eau en Algérie, réunissant les institutions de l’agriculture, des ressources en eau et de la recherche scientifique. Le programme identifie les priorités nationales en matière de résilience à la sécheresse et d’amélioration de l’approvisionnement en eau dans les environnements salins."
+        },
+        "ar": {
+          "title": "الجزائر تطلق مبادرة الفاو لمواجهة شح المياه من أجل إدارة مستدامة للمياه الزراعية",
+          "summary": "أطلقت ورشة فنية للفاو في الجزائر العاصمة مبادرة شح المياه في البلاد، بمشاركة مؤسسات الزراعة والموارد المائية والبحث العلمي. وتحدد المبادرة الأولويات الوطنية لتعزيز القدرة على مواجهة الجفاف وتحسين إمدادات المياه في البيئات المالحة."
+        },
+        "pt": {
+          "title": "Argélia lança a Iniciativa da FAO contra a escassez de água para uma gestão sustentável da água agrícola",
+          "summary": "Um workshop técnico da FAO em Argel lançou a Iniciativa contra a Escassez de Água na Argélia, reunindo instituições de agricultura, recursos hídricos e investigação científica. O programa identifica prioridades nacionais para a resiliência à seca e a melhoria do abastecimento de água em ambientes salinos."
+        },
+        "sw": {
+          "title": "Algeria yazindua Mpango wa FAO wa Kukabiliana na Uhaba wa Maji kwa usimamizi endelevu wa maji ya kilimo",
+          "summary": "Warsha ya kiufundi ya FAO mjini Algiers ilizindua Mpango wa Kukabiliana na Uhaba wa Maji nchini Algeria, ikiwaleta pamoja taasisi za kilimo, rasilimali za maji na utafiti wa kisayansi. Mpango unaainisha vipaumbele vya kitaifa vya kustahimili ukame na kuboresha upatikanaji wa maji katika mazingira yenye chumvi."
+        }
+      }
     },
     {
       "country_code": "TN",
@@ -1788,9 +1873,27 @@
       "source_tier": 1,
       "published": "2026-06-01",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official FAO story found; verify that its forestry/livelihood focus fits the Agricultural News category and confirm country assignment before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO en République centrafricaine soutient les produits forestiers non ligneux pour renforcer les moyens de subsistance ruraux",
+          "summary": "La FAO indique qu’elle a aidé 500 ménages à Berbérati, Gamboula et Bania avec des équipements de transformation et qu’elle a renforcé les capacités de plus de 180 femmes et jeunes à transformer et commercialiser des produits forestiers non ligneux comme sources de revenus durables."
+        },
+        "ar": {
+          "title": "الفاو في جمهورية أفريقيا الوسطى تدعم المنتجات الحرجية غير الخشبية لتعزيز سبل العيش الريفية",
+          "summary": "أفادت الفاو بأنها دعمت 500 أسرة في بيربيراتي وغامبولا وبانيا بمعدات للتصنيع، وعززت قدرات أكثر من 180 امرأة وشاباً على تصنيع المنتجات الحرجية غير الخشبية وتسويقها كمصادر مستدامة للدخل."
+        },
+        "pt": {
+          "title": "FAO na República Centro-Africana apoia produtos florestais não lenhosos para reforçar os meios de subsistência rurais",
+          "summary": "A FAO informa que apoiou 500 famílias em Berbérati, Gamboula e Bania com equipamento de processamento e reforçou as capacidades de mais de 180 mulheres e jovens para transformar e comercializar produtos florestais não lenhosos como fontes sustentáveis de rendimento."
+        },
+        "sw": {
+          "title": "FAO katika Jamhuri ya Afrika ya Kati yaunga mkono mazao ya misitu yasiyo mbao kwa ajili ya maisha ya vijijini",
+          "summary": "FAO inaripoti kuwa ilisaidia kaya 500 katika Berbérati, Gamboula na Bania kwa vifaa vya uchakataji na kujenga uwezo wa wanawake na vijana zaidi ya 180 kuchakata na kuuza mazao ya misitu yasiyo mbao kama vyanzo endelevu vya mapato."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "GW",
