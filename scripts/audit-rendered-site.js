@@ -198,6 +198,24 @@ for (const item of newsPages) {
   if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
 }
 
+// Shared discovery pages must render usable source data, not just their shell.
+const searchHtml = read("search/index.html");
+if (searchHtml) {
+  for (const id of ["goa-global-search", "goa-search-type", "goa-search-results"]) {
+    if (!searchHtml.includes('id="' + id + '"')) failures.push("search/index.html: missing search UI element #" + id);
+  }
+  const searchableRecords = (searchHtml.match(/<article\b[^>]*data-type=/gi) || []).length;
+  if (searchableRecords < 50) failures.push("search/index.html: expected at least 50 searchable source records, found " + searchableRecords);
+}
+const decisionHtml = read("farmer-decision-centre/index.html");
+if (decisionHtml) {
+  for (const id of ["dc-country", "dc-topic", "dc-goal", "dc-build", "dc-output"]) {
+    if (!decisionHtml.includes('id="' + id + '"')) failures.push("farmer-decision-centre/index.html: missing interactive element #" + id);
+  }
+  if (!decisionHtml.includes("const data=") || !decisionHtml.includes("Open source")) {
+    failures.push("farmer-decision-centre/index.html: source data or source-link action is missing");
+  }
+}
 const newsSourcePath = path.join(source, "_data", "agriculturalNews.json");
 if (fs.existsSync(newsSourcePath)) {
   const newsData = JSON.parse(fs.readFileSync(newsSourcePath, "utf8"));
