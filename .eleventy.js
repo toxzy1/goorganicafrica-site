@@ -22,11 +22,15 @@ const dedupeAgriculturalRecords = records => {
 
 const isSpecificAgriculturalNewsUrl = value => {
   try {
-    const pathname = new URL(value).pathname.replace(/\/+$/, "") || "/";
+    const parsed = new URL(value);
+    const pathname = parsed.pathname.replace(/\/+$/, "") || "/";
+    // Country investment profiles belong in Resources, not the Agricultural News feed.
+    if (/\/hand-in-hand\/investment-forum-2026\//i.test(pathname)) return false;
     return !(pathname === "/" ||
-      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites)$/i.test(pathname) ||
       /^\/en$/i.test(pathname) ||
-      /\/newsdetails(?:\/en)?$/i.test(pathname));
+      /\/newsdetails(?:\/en)?$/i.test(pathname) ||
+      /\/news\/detail(?:\/en)?$/i.test(pathname));
   } catch {
     return false;
   }
