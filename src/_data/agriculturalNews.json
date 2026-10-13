@@ -62,7 +62,25 @@
           "published": "2026-09-28",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le FIDA rejoint AgriConnect au Nigeria pour accélérer la transformation agricole",
+              "summary": "Le FIDA s’est associé au Nigeria, à la Banque mondiale et à d’autres partenaires autour d’un cadre national axé sur les organisations paysannes, les liens avec les marchés, le financement, les solutions numériques et la participation du secteur privé."
+            },
+            "ar": {
+              "title": "الصندوق الدولي للتنمية الزراعية ينضم إلى AgriConnect في نيجيريا لتسريع التحول الزراعي",
+              "summary": "انضم الصندوق إلى نيجيريا والبنك الدولي وشركاء آخرين ضمن إطار وطني يركز على منظمات المزارعين، والربط بالأسواق، والتمويل، والحلول الرقمية، ومشاركة القطاع الخاص."
+            },
+            "pt": {
+              "title": "FIDA junta-se ao AgriConnect na Nigéria para acelerar a transformação agrícola",
+              "summary": "O FIDA juntou-se à Nigéria, ao Banco Mundial e a outros parceiros numa estrutura nacional centrada nas organizações de agricultores, nas ligações aos mercados, no financiamento, nas soluções digitais e na participação do setor privado."
+            },
+            "sw": {
+              "title": "IFAD ijiunga na AgriConnect nchini Nigeria kuharakisha mabadiliko ya kilimo",
+              "summary": "IFAD imeungana na Nigeria, Benki ya Dunia na washirika wengine katika mfumo wa kitaifa unaolenga mashirika ya wakulima, uhusiano na masoko, ufadhili, suluhisho za kidijitali na ushiriki wa sekta binafsi."
+            }
+          }
         },
         {
           "category": "markets",
@@ -2540,7 +2558,25 @@
           "source": "FAO / IAEA",
           "published": "2026-10-05",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La FAO et l’AIEA lancent une évaluation Atoms4Food au Libéria",
+              "summary": "Une mission d’évaluation nationale examine comment les techniques nucléaires et les innovations associées peuvent contribuer à la sécurité sanitaire des aliments, à la nutrition et à la productivité agricole au Libéria."
+            },
+            "ar": {
+              "title": "الفاو والوكالة الدولية للطاقة الذرية تطلقان تقييماً لمبادرة Atoms4Food في ليبيريا",
+              "summary": "تبحث بعثة تقييم وطنية كيف يمكن للتقنيات النووية والابتكارات المرتبطة بها أن تسهم في سلامة الأغذية والتغذية وزيادة الإنتاجية الزراعية في ليبيريا."
+            },
+            "pt": {
+              "title": "FAO e AIEA lançam avaliação Atoms4Food na Libéria",
+              "summary": "Uma missão nacional de avaliação está a analisar como as técnicas nucleares e as inovações relacionadas podem contribuir para a segurança alimentar, a nutrição e a produtividade agrícola na Libéria."
+            },
+            "sw": {
+              "title": "FAO na IAEA waanzisha tathmini ya Atoms4Food nchini Liberia",
+              "summary": "Ujumbe wa tathmini ya kitaifa unachunguza jinsi mbinu za nyuklia na ubunifu unaohusiana unavyoweza kuchangia usalama wa chakula, lishe na kuongeza uzalishaji wa kilimo nchini Liberia."
+            }
+          }
         },
         {
           "category": "research-innovation",
@@ -2555,7 +2591,25 @@
           "review_after": "2026-11-06",
           "status": "review",
           "lifecycle": "needs_review",
-          "review_reason": "Duplicate article URL already listed for this country. Keep one canonical story record or provide a distinct direct article URL."
+          "review_reason": "Duplicate source URL in the same country directory; retain one canonical card and review this duplicate before publication.",
+          "translations": {
+            "fr": {
+              "title": "La FAO et l’AIEA lancent une évaluation Atoms4Food au Libéria",
+              "summary": "Une mission d’évaluation nationale examine comment les techniques nucléaires et les innovations associées peuvent contribuer à la sécurité sanitaire des aliments, à la nutrition et à la productivité agricole au Libéria."
+            },
+            "ar": {
+              "title": "الفاو والوكالة الدولية للطاقة الذرية تطلقان تقييماً لمبادرة Atoms4Food في ليبيريا",
+              "summary": "تبحث بعثة تقييم وطنية كيف يمكن للتقنيات النووية والابتكارات المرتبطة بها أن تسهم في سلامة الأغذية والتغذية وزيادة الإنتاجية الزراعية في ليبيريا."
+            },
+            "pt": {
+              "title": "FAO e AIEA lançam avaliação Atoms4Food na Libéria",
+              "summary": "Uma missão nacional de avaliação está a analisar como as técnicas nucleares e as inovações relacionadas podem contribuir para a segurança alimentar, a nutrição e a produtividade agrícola na Libéria."
+            },
+            "sw": {
+              "title": "FAO na IAEA waanzisha tathmini ya Atoms4Food nchini Liberia",
+              "summary": "Ujumbe wa tathmini ya kitaifa unachunguza jinsi mbinu za nyuklia na ubunifu unaohusiana unavyoweza kuchangia usalama wa chakula, lishe na kuongeza uzalishaji wa kilimo nchini Liberia."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -2833,7 +2887,25 @@
           "published": "2026-09-28",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Une étude de l’IITA souligne le potentiel de l’agriculture climato-intelligente pour les petits exploitants du Mali",
+              "summary": "Une étude de septembre 2026 menée par l’IITA et l’IER indique que les pratiques agricoles climato-intelligentes peuvent renforcer la sécurité alimentaire et améliorer la qualité de l’alimentation des petits exploitants confrontés aux risques climatiques et à l’insécurité."
+            },
+            "ar": {
+              "title": "دراسة للمعهد الدولي للزراعة الاستوائية تبرز إمكانات الزراعة الذكية مناخياً لصغار المزارعين في مالي",
+              "summary": "خلصت دراسة أجراها المعهد الدولي للزراعة الاستوائية ومعهد البحوث الاقتصادية والريفية في سبتمبر 2026 إلى أن ممارسات الزراعة الذكية مناخياً يمكن أن تعزز الأمن الغذائي وتحسن جودة النظام الغذائي لدى صغار المزارعين الذين يواجهون مخاطر المناخ وانعدام الأمن."
+            },
+            "pt": {
+              "title": "Estudo do IITA destaca o potencial da agricultura climaticamente inteligente para pequenos agricultores do Mali",
+              "summary": "Um estudo de setembro de 2026 do IITA e do IER concluiu que práticas agrícolas climaticamente inteligentes podem reforçar a segurança alimentar e melhorar a qualidade da dieta dos pequenos agricultores que enfrentam pressões climáticas e insegurança."
+            },
+            "sw": {
+              "title": "Utafiti wa IITA waonyesha uwezo wa kilimo kinachozingatia tabianchi kwa wakulima wadogo wa Mali",
+              "summary": "Utafiti wa Septemba 2026 uliofanywa na IITA na IER ulibaini kuwa mbinu za kilimo kinachozingatia tabianchi zinaweza kuimarisha usalama wa chakula na kuboresha ubora wa lishe kwa wakulima wadogo wanaokabiliwa na changamoto za hali ya hewa na ukosefu wa usalama."
+            }
+          }
         }
       ],
       "localizedNames": {
@@ -3760,7 +3832,25 @@
           "source": "African Development Bank",
           "published": "2026-09-22",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "La BAD et ses partenaires lancent BOOST pour soutenir la relance agricole au Soudan",
+              "summary": "BOOST vise 232 000 petits exploitants dans les États du Nil Bleu et de Sennar. Le programme associe des semences résilientes au climat, des technologies, des installations de stockage, de la transformation et des financements destinés notamment aux jeunes et aux femmes."
+            },
+            "ar": {
+              "title": "البنك الأفريقي للتنمية وشركاؤه يطلقون مبادرة BOOST لدعم التعافي الزراعي في السودان",
+              "summary": "تستهدف مبادرة BOOST نحو 232 ألف مزارع صغير في ولايتي النيل الأزرق وسنار، من خلال الجمع بين بذور مقاومة لتغير المناخ والتكنولوجيا والتخزين والتصنيع والتمويل للشباب والنساء."
+            },
+            "pt": {
+              "title": "BAD e parceiros lançam BOOST para apoiar a recuperação agrícola no Sudão",
+              "summary": "A iniciativa BOOST visa 232 mil pequenos agricultores nos estados do Nilo Azul e Sennar, combinando sementes resilientes ao clima, tecnologia, armazenamento, processamento e financiamento para jovens e mulheres."
+            },
+            "sw": {
+              "title": "AfDB na washirika wazindua BOOST kusaidia ufufuaji wa kilimo nchini Sudan",
+              "summary": "Mpango wa BOOST unalenga wakulima wadogo 232,000 katika majimbo ya Blue Nile na Sennar, ukiunganisha mbegu zinazostahimili mabadiliko ya tabianchi, teknolojia, uhifadhi, uchakataji na ufadhili kwa vijana na wanawake."
+            }
+          }
         },
         {
           "category": "research-innovation",
@@ -3988,7 +4078,25 @@
           "published": "2026-09-18",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Le Zimbabwe présente un portefeuille agroalimentaire de 1,65 milliard de dollars au Forum d’investissement Hand-in-Hand de la FAO",
+              "summary": "Le portefeuille Hand-in-Hand 2026 du Zimbabwe couvre le maïs, le soja, les myrtilles, les produits laitiers et le projet « Dam as an Economic Driver », pour des besoins d’investissement cumulés de 1,65 milliard de dollars américains."
+            },
+            "ar": {
+              "title": "زيمبابوي تعرض محفظة استثمارية زراعية وغذائية بقيمة 1.65 مليار دولار في منتدى الفاو للاستثمار Hand-in-Hand لعام 2026",
+              "summary": "تشمل محفظة زيمبابوي لعام 2026 الذرة وفول الصويا والتوت الأزرق ومنتجات الألبان ومبادرة «السد محركاً اقتصادياً»، بإجمالي احتياجات استثمارية يبلغ 1.65 مليار دولار أمريكي."
+            },
+            "pt": {
+              "title": "Zimbabué apresenta carteira agroalimentar de 1,65 mil milhões de dólares no Fórum de Investimento Hand-in-Hand da FAO",
+              "summary": "A carteira Hand-in-Hand de 2026 do Zimbabué inclui milho, soja, mirtilos, lacticínios e a iniciativa “Dam as an Economic Driver”, com necessidades de investimento total de 1,65 mil milhões de dólares norte-americanos."
+            },
+            "sw": {
+              "title": "Zimbabwe yawasilisha fursa za uwekezaji wa kilimo na chakula za dola bilioni 1.65 katika Jukwaa la Uwekezaji la FAO Hand-in-Hand",
+              "summary": "Kwingineko ya Zimbabwe ya Hand-in-Hand ya mwaka 2026 inajumuisha mahindi, soya, blueberries, maziwa na mpango wa “Dam as an Economic Driver”, ikiwa na mahitaji ya jumla ya uwekezaji ya dola za Marekani bilioni 1.65."
+            }
+          }
         },
         {
           "category": "policy",
