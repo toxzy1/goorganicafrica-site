@@ -245,8 +245,8 @@
       "url": "https://www.fao.org/africa/events/en/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-10-26",
       "end_date": "2026-10-30",
       "tags": [
@@ -254,7 +254,8 @@
         "training",
         "climate",
         "social protection"
-      ]
+      ],
+      "review_reason": "The source URL is the FAO events listing, not a direct event page. Replace with a verified event-specific URL before publication."
     },
     {
       "id": "AFRICA-WEST-MDT-2026",
@@ -280,8 +281,8 @@
       "url": "https://www.fao.org/africa/events/en/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-11-23",
       "end_date": "2026-11-27",
       "tags": [
@@ -290,7 +291,8 @@
         "water",
         "food security",
         "event"
-      ]
+      ],
+      "review_reason": "The source URL is the FAO events listing, not a direct event page. Replace with a verified event-specific URL before publication."
     },
     {
       "id": "NG-NCAM-2026",
