@@ -11,6 +11,7 @@ const resourceGapFiles=fs.readdirSync(dir).filter(name=>/^agriculturalResourcesG
 const resourceGapRecords=resourceGapFiles.flatMap(name=>read(name).records||[]);
 const allResourceRecords=resources.concat(resources2,resourceGapRecords);
 const markets=read("agriculturalMarkets.json").records||[];
+const services=read("agriculturalServices.json").records||[];
 const opp=read("agriculturalOpportunities.json").records||[];
 const news=[];
 const newsCountryList=read("agriculturalNews.json").countries||[];
@@ -30,13 +31,15 @@ const newsCountryCoverage=newsCountryList.map(c=>{
  return {code:c.code,name:c.name,story_count:urls.size,source_count:sources.size};
 });
 const sourceUrlAudit=(records)=>{
+ const sourceUrl=r=>String(r.url||r.source_url||r.application_url||"").trim();
  const counts=new Map();
- for(const r of records){if(!r.url)continue;const url=String(r.url).trim();counts.set(url,(counts.get(url)||0)+1);}
+ for(const r of records){const url=sourceUrl(r);if(!url)continue;counts.set(url,(counts.get(url)||0)+1);}
  const duplicateGroups=[...counts.entries()].filter(([,count])=>count>1).sort((a,b)=>b[1]-a[1]);
  const genericRecords=records.filter(r=>{
-  if(!r.url)return false;
+  const url=sourceUrl(r);
+  if(!url)return false;
   try{
-   const u=new URL(r.url);
+   const u=new URL(url);
    const pathname=u.pathname.replace(/\/+$/, "")||"/";
    return pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname)||/^\/en$/.test(pathname);
   }catch{return true;}
@@ -48,13 +51,15 @@ const sourceUrlAudit=(records)=>{
   duplicate_url_records:duplicateGroups.reduce((sum,[,count])=>sum+count,0),
   duplicate_url_examples:duplicateGroups.slice(0,10).map(([url,count])=>({url,count})),
   generic_landing_page_records:genericRecords.length,
-  generic_landing_page_examples:genericRecords.slice(0,10).map(r=>({title:r.title||"",url:r.url}))
+  generic_landing_page_examples:genericRecords.slice(0,10).map(r=>({title:r.title||"",url:sourceUrl(r)}))
  };
 };
 const sourceQuality={
  news:sourceUrlAudit(news),
  opportunities:sourceUrlAudit(opp),
- resources:sourceUrlAudit(allResourceRecords)
+ resources:sourceUrlAudit(allResourceRecords),
+ markets:sourceUrlAudit(markets),
+ services:sourceUrlAudit(services)
 };
 const report={
  generated_at:today.toISOString(),
