@@ -176,6 +176,11 @@ if (newsSync.includes(".slice(0, 20)")) {
 }
 
 
+const agriculturalDataWorkflow = read(".github/workflows/ag-data-monitor.yml");
+if (!agriculturalDataWorkflow.includes("peter-evans/create-pull-request@v7") || !agriculturalDataWorkflow.includes("draft: true") || agriculturalDataWorkflow.includes("git push")) {
+  throw new Error("Agricultural data candidates must go through a draft review PR and never push directly to the production branch.");
+}
+
 const freshnessMonitor = read("scripts/monitor-agricultural-data.js");
 if (!freshnessMonitor.includes("sourceUrlAudit") || !freshnessMonitor.includes("generic_landing_page_records") || !freshnessMonitor.includes("duplicate_url_groups") || !freshnessMonitor.includes("news-keywords\\/agriculture") || !freshnessMonitor.includes("news_country_coverage") || !freshnessMonitor.includes("zero_story_countries")) {
   throw new Error("Agricultural data monitor must flag duplicate source URLs and nested generic landing pages for editorial review.");
