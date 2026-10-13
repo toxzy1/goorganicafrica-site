@@ -3070,6 +3070,32 @@
       "status": "official",
       "type": "National agricultural programme framework",
       "access": "Programme information; not a direct grant or application."
+    },
+    {
+      "country_code": "EG",
+      "category": "data",
+      "title": "Egypt agricultural statistics bulletin — Ministry of Agriculture",
+      "description": "The Ministry of Agriculture's agricultural statistics library lists official crop, production and sector-statistics publications, including the 2025 agricultural statistics bulletin.",
+      "url": "https://www.agri.gov.eg/library/71",
+      "source": "Ministry of Agriculture and Land Reclamation, Egypt",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "Agricultural statistics and publications",
+      "access": "Public information; some files may require registration on the ministry portal."
+    },
+    {
+      "country_code": "MU",
+      "category": "finance",
+      "title": "Mauritius agricultural strategic plan 2024–2030",
+      "description": "The Ministry of Agro-Industry and Food Security's strategic plan outlines policy priorities, farmer support and access-to-credit considerations for agricultural development through 2030.",
+      "url": "https://agriculture.govmu.org/Documents/Strategic%20Plan%202024-2030/Strategic%20Plan%20-%2030.09.2024%20FINAL.pdf",
+      "source": "Ministry of Agro-Industry and Food Security, Mauritius",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "status": "official",
+      "type": "National agricultural strategy",
+      "access": "Policy reference; it does not itself guarantee funding or eligibility."
     }
   ]
 }
