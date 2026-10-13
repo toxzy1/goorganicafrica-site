@@ -397,6 +397,37 @@ module.exports = function (eleventyConfig) {
       if (!c.records[r.category].some(x => `${c.code}|${r.category}|${x.url}|${x.title}` === key)) c.records[r.category].push(r);
     }
 
+    // The public directory should show one card per country/source URL.
+    // Keep the most informative record when legacy categories repeat a link;
+    // the underlying source records remain intact for audit and editorial review.
+    const resourceCategoryPriority = ["grants", "finance", "machinery", "inputs", "markets", "insurance", "farmer-support", "research", "climate", "data", "general"];
+    let suppressedResourceDuplicates = 0;
+    for (const c of countries) {
+      const bestByUrl = new Map();
+      for (const cat of categories) for (const r of c.records[cat] || []) {
+        const key = normalizeAgriculturalUrl(r.url || r.source_url);
+        if (!key) continue;
+        const title = String(r.title || r.name || "");
+        const description = String(r.description || r.summary || "");
+        const priority = resourceCategoryPriority.indexOf(cat);
+        const score = title.length + Math.min(description.length, 300) / 6 +
+          (priority < 0 ? 0 : (resourceCategoryPriority.length - priority) * 3) +
+          (r.verified ? 5 : 0) + (r.source_tier ? Math.max(0, 5 - Number(r.source_tier)) : 0);
+        const existing = bestByUrl.get(key);
+        if (!existing || score > existing.score) bestByUrl.set(key, { record: r, score });
+      }
+      const retainedRecords = new Set([...bestByUrl.values()].map(item => item.record));
+      for (const cat of categories) {
+        const before = (c.records[cat] || []).length;
+        c.records[cat] = (c.records[cat] || []).filter(r => {
+          const key = normalizeAgriculturalUrl(r.url || r.source_url);
+          return !key || retainedRecords.has(r);
+        });
+        suppressedResourceDuplicates += before - c.records[cat].length;
+      }
+    }
+    console.log("Public resource directory suppressed " + suppressedResourceDuplicates + " same-country duplicate source cards.");
+
     const sharedByUrl = new Map();
     for (const c of countries) for (const cat of categories) for (const r of c.records[cat] || []) {
       if (!r.url) continue;
