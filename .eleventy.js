@@ -71,7 +71,7 @@ module.exports = function (eleventyConfig) {
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalOpportunities.json"), "utf8"));
     const now = new Date("2026-10-08T00:00:00Z");
-    data.records = (data.records || []).map(record => {
+    data.records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => {
       const deadline = record.deadline ? new Date(record.deadline + "T23:59:59Z") : null;
       const review = !isPublishableAgriculturalRecord(record);
       const expired = String(record.status || "").toLowerCase() === "expired" || (deadline && !Number.isNaN(deadline.getTime()) && deadline < now);
@@ -94,7 +94,7 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs");
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalServices.json"), "utf8"));
-    const records = (data.records || []).map(record => ({
+    const records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => ({
       ...record,
       is_current: String(record.lifecycle || "current") === "current",
       is_historical: String(record.lifecycle || "") === "historical"
@@ -114,7 +114,7 @@ module.exports = function (eleventyConfig) {
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalMarkets.json"), "utf8"));
     const now = new Date("2026-10-08T00:00:00Z");
-    const records = (data.records || []).map(record => {
+    const records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => {
       const observed = record.observed_date ? new Date(record.observed_date) : null;
       const ageDays = observed && !Number.isNaN(observed.getTime()) ? Math.floor((now - observed) / 86400000) : null;
       const freshness = ageDays === null ? "source_reference" : ageDays <= 31 ? "recent" : ageDays <= 180 ? "older" : "stale";
