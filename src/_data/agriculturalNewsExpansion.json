@@ -1336,6 +1336,34 @@
       "status": "review",
       "lifecycle": "needs_review",
       "review_reason": "Direct official feature story found; verify date, country/category assignment and whether the story remains useful before publication."
+    },
+    {
+      "country_code": "KM",
+      "category": "food-security",
+      "title": "FAO feature highlights stronger food-import controls in Comoros",
+      "summary": "FAO describes how food-safety inspectors in Comoros are using more evidence-driven procedures to assess imported food, including poultry products, and strengthen safeguards in a highly import-dependent island nation.",
+      "url": "https://www.fao.org/newsroom/story/the-inspector-at-the-border/en",
+      "source": "FAO Newsroom",
+      "source_tier": 1,
+      "published": "2026-06-04",
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Direct official feature story with explicit Comoros context; verify country/category assignment and summary before publication."
+    },
+    {
+      "country_code": "ST",
+      "category": "crops",
+      "title": "Six farms in São Tomé and Príncipe recognized as world heritage sites",
+      "summary": "The São Tomé and Príncipe government reports that six farms were selected as world heritage sites, highlighting agricultural landscapes and heritage linked to the country’s rural and farming history.",
+      "url": "https://stp.gov.st/noticeDetail?id=h8i7jpjh0pp2gk7o2o4yn6uf",
+      "source": "Government of São Tomé and Príncipe",
+      "source_tier": 1,
+      "published": "2026-07-26",
+      "verified": "2026-10-13",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Official government item found; verify whether the heritage designation has sufficient agricultural relevance for the Agricultural News category before publication."
     }
   ]
 }
