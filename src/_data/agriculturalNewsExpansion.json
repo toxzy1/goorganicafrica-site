@@ -375,7 +375,9 @@
       "source_tier": 1,
       "published": "2026-10-06",
       "verified": "2026-10-08",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic ministry news listing rather than a direct article; replace with a specific article URL."
     },
     {
       "country_code": "GM",
@@ -832,7 +834,9 @@
       "source_tier": 1,
       "published": "2026-09-30",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
     },
     {
       "country_code": "MG",
