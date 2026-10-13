@@ -255,6 +255,16 @@ const sourceCandidates = [
 const genericSourcePath = pathname => pathname === "/" ||
   /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news)$/i.test(pathname) ||
   pathname === "/en";
+const publicNewsStatus = record =>
+  ["official", "published", "verified"].includes(String(record.status || "").toLowerCase()) &&
+  !["review", "needs_review", "draft"].includes(String(record.lifecycle || "").toLowerCase());
+const incompletePublicNews = (newsBase.countries || []).flatMap(country => country.articles || [])
+  .filter(record => publicNewsStatus(record) &&
+    (!String(record.title || "").trim() || !String(record.summary || "").trim() || !String(record.published || "").trim()));
+if (incompletePublicNews.length) {
+  throw new Error("Public agricultural news must have a title, summary and publication date: " +
+    incompletePublicNews.map(record => record.url || record.title || "Untitled record").join("; "));
+}
 const genericUnreviewed = sourceCandidates.filter(record => {
   if (!record.url) return false;
   let pathname;
