@@ -12,7 +12,16 @@ for (const file of files) {
   }
 }
 
-for (const file of ['src/index.njk', 'src/_includes/partials/header.njk', 'src/_includes/partials/footer.njk', 'src/_includes/partials/language-switcher.njk']) {
+const uiFiles = [
+  'src/index.njk',
+  'src/_includes/partials/header.njk',
+  'src/_includes/partials/footer.njk',
+  ...fs.readdirSync('src/_includes/partials/language-selectors')
+    .filter(file => /\.njk$/i.test(file))
+    .map(file => path.join('src/_includes/partials/language-selectors', file))
+];
+for (const file of uiFiles) {
+  if (!fs.existsSync(file)) continue;
   const source = fs.readFileSync(file, 'utf8');
   for (const match of source.matchAll(/data-i18n(?:-[\w-]+)?=["']([^"']+)["']/g)) keys.add(match[1]);
 }
