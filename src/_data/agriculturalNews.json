@@ -1302,7 +1302,68 @@
       "name": "Algeria",
       "slug": "algeria",
       "flag": "🇩🇿",
-      "articles": [],
+      "articles": [
+        {
+          "category": "policy",
+          "title": "Algeria prepares the 2026–2027 agricultural season and cereal sowing campaign",
+          "summary": "Algeria’s Ministry of Agriculture reported a national planning meeting for the 2026–2027 season, covering ploughing and sowing, timely access to seed, fertiliser, machinery and finance, improved cereal output, agricultural insurance and support for farmers.",
+          "url": "https://madr.gov.dz/2026/09/29/%D8%A7%D9%84%D8%B3%D9%8A%D8%AF-%D8%B3%D9%8A%D8%AF-%D8%B9%D9%84%D9%8A-%D8%AE%D8%A7%D9%84%D8%AF%D9%8A-%D9%8A%D8%AA%D8%B1%D8%A3%D8%B3-%D9%84%D9%82%D8%A7%D8%A1%D9%8B-%D9%88%D8%B7%D9%86%D9%8A%D8%A7%D9%8B/",
+          "source": "Algeria Ministry of Agriculture, Rural Development and Fisheries",
+          "source_id": "algeria-madrp",
+          "source_tier": 1,
+          "published": "2026-09-29",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "L’Algérie prépare la campagne agricole 2026–2027 et les semis de céréales",
+              "summary": "Le ministère algérien de l’Agriculture a rendu compte d’une réunion nationale de préparation de la campagne 2026–2027 : labour et semis, accès en temps utile aux semences, engrais, machines et financements, amélioration de la production céréalière, assurance agricole et accompagnement des agriculteurs."
+            },
+            "ar": {
+              "title": "الجزائر تستعد للموسم الزراعي 2026–2027 وحملة زراعة الحبوب",
+              "summary": "أعلنت وزارة الفلاحة الجزائرية عن اجتماع وطني للتحضير لموسم 2026–2027، تناول الحرث والبذر وتوفير البذور والأسمدة والآلات والتمويل في الوقت المناسب، وتحسين إنتاج الحبوب والتأمين الفلاحي ومرافقة المزارعين."
+            },
+            "pt": {
+              "title": "Argélia prepara a campanha agrícola de 2026–2027 e a sementeira de cereais",
+              "summary": "O Ministério da Agricultura da Argélia informou sobre uma reunião nacional para preparar a campanha de 2026–2027, abordando lavoura e sementeira, acesso atempado a sementes, fertilizantes, máquinas e financiamento, melhoria da produção de cereais, seguro agrícola e apoio aos agricultores."
+            },
+            "sw": {
+              "title": "Algeria yaandaa msimu wa kilimo wa 2026–2027 na upandaji wa nafaka",
+              "summary": "Wizara ya Kilimo ya Algeria iliripoti mkutano wa kitaifa wa maandalizi ya msimu wa 2026–2027, ukijumuisha kulima na kupanda, upatikanaji wa mbegu, mbolea, mashine na fedha kwa wakati, kuongeza uzalishaji wa nafaka, bima ya kilimo na msaada kwa wakulima."
+            }
+          }
+        },
+        {
+          "category": "resilience",
+          "title": "Algeria distributes livestock and production support to farmers affected by wildfires",
+          "summary": "The agriculture ministry reported that compensation began in September 2026 for farmers and livestock keepers affected by wildfires, including livestock and feed distribution and plans to rehabilitate damaged farm infrastructure, irrigation networks, beehives and poultry facilities.",
+          "url": "https://madr.gov.dz/2026/09/09/%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD%D8%A9-%D8%AA%D8%B4%D8%B1%D8%B9-%D9%81%D9%8A-%D8%AA%D8%B9%D9%88%D9%8A%D8%B6-%D8%A7%D9%84%D9%85%D8%AA%D8%B6%D8%B1%D8%B1%D9%8A%D9%86/",
+          "source": "Algeria Ministry of Agriculture, Rural Development and Fisheries",
+          "source_id": "algeria-madrp",
+          "source_tier": 1,
+          "published": "2026-09-09",
+          "verified": "2026-10-13",
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "L’Algérie apporte du bétail et une aide à la production aux agriculteurs touchés par les incendies",
+              "summary": "Le ministère de l’Agriculture a indiqué que les indemnisations ont commencé en septembre 2026 pour les agriculteurs et éleveurs touchés par les incendies, notamment par la distribution de bétail et d’aliments ainsi que la remise en état des infrastructures agricoles, réseaux d’irrigation, ruchers et installations avicoles endommagés."
+            },
+            "ar": {
+              "title": "الجزائر توزع الماشية ومساعدات الإنتاج على المزارعين المتضررين من حرائق الغابات",
+              "summary": "أفادت وزارة الفلاحة ببدء التعويضات في سبتمبر 2026 للمزارعين ومربي الماشية المتضررين من الحرائق، بما يشمل توزيع الماشية والأعلاف وخطط إعادة تأهيل البنية التحتية الزراعية وشبكات الري وخلايا النحل ومرافق الدواجن المتضررة."
+            },
+            "pt": {
+              "title": "Argélia distribui gado e apoio à produção a agricultores afetados por incêndios",
+              "summary": "O Ministério da Agricultura informou que as compensações começaram em setembro de 2026 para agricultores e criadores afetados por incêndios, incluindo distribuição de gado e rações e planos para recuperar infraestruturas agrícolas, redes de irrigação, colmeias e instalações avícolas danificadas."
+            },
+            "sw": {
+              "title": "Algeria yasambaza mifugo na msaada wa uzalishaji kwa wakulima walioathiriwa na moto",
+              "summary": "Wizara ya Kilimo iliripoti kuwa fidia ilianza Septemba 2026 kwa wakulima na wafugaji walioathiriwa na moto, ikijumuisha usambazaji wa mifugo na chakula cha mifugo pamoja na mipango ya kurekebisha miundombinu ya mashamba, mitandao ya umwagiliaji, mizinga ya nyuki na mabanda ya kuku yaliyoharibika."
+            }
+          }
+        }
+      ],
       "localizedNames": {
         "fr": "Algérie",
         "ar": "الجزائر",
