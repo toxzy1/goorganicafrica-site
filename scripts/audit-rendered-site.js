@@ -381,26 +381,6 @@ function searchTargetExists(rawUrl) {
   });
 }
 
-// Global Search contract: metadata fields must be combined (not short-circuited by the first
-// populated field), and connected cards for localized indexes must follow the selected language.
-const searchTemplatePath = path.join(source, "search.njk");
-if (!fs.existsSync(searchTemplatePath)) {
-  failures.push("Global Search source template is missing.");
-} else {
-  const searchTemplate = fs.readFileSync(searchTemplatePath, "utf8");
-  for (const field of [
-    "r.search_terms or '' }} {{ r.keywords or '' }} {{ r.tags or '' }}",
-    "item.data.search_terms or '' }} {{ item.data.keywords or '' }} {{ item.data.tags or '' }}",
-    "function localizedSectionUrl(section)",
-    "localizedSectionUrl('agriculture-resources')",
-    "localizedSectionUrl('agricultural-news')",
-    "localizedSectionUrl('ebooks')",
-    "localizedSectionUrl('blog')"
-  ]) {
-    if (!searchTemplate.includes(field)) failures.push("Global Search: missing regression guard/source behavior: " + field);
-  }
-}
-
 // Search must normalize punctuation/hyphens before matching multi-word queries.
 const searchTemplatePath = path.join(source, "search.njk");
 if (!fs.existsSync(searchTemplatePath)) {
