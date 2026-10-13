@@ -900,10 +900,28 @@
       "source_tier": 1,
       "published": "2026-09-10",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
+      "lifecycle": "current",
       "translation_status": "in_review",
-      "review_reason": "Direct official FAO story verified. Review and prepare five-language content before publication."
+      "translations": {
+        "fr": {
+          "title": "Le Niger produit sa première récolte de semences de pomme de terre avec l’appui de la FAO",
+          "summary": "La FAO rapporte que le Niger a récolté 18,8 tonnes de semences certifiées de pomme de terre de génération G3 à partir de 550 kilogrammes initiaux de mini-tubercules. Ce résultat pilote vise à développer la production nationale de semences et à réduire la dépendance aux importations."
+        },
+        "ar": {
+          "title": "النيجر تنتج أول محصول من بذور البطاطا بدعم من الفاو",
+          "summary": "أفادت الفاو بأن النيجر حصدت 18.8 طناً من بذور البطاطا المعتمدة من الجيل الثالث G3 انطلاقاً من 550 كيلوغراماً من الدرنات الصغيرة. وتهدف هذه التجربة إلى بناء القدرة الوطنية على إنتاج البذور وتقليل الاعتماد على الواردات."
+        },
+        "pt": {
+          "title": "Níger produz a sua primeira colheita de sementes de batata com apoio da FAO",
+          "summary": "A FAO informa que o Níger colheu 18,8 toneladas de sementes certificadas de batata da geração G3 a partir de 550 quilogramas iniciais de minitubérculos. O resultado-piloto pretende desenvolver a produção nacional de sementes e reduzir a dependência das importações."
+        },
+        "sw": {
+          "title": "Niger yazalisha zao lake la kwanza la mbegu za viazi kwa msaada wa FAO",
+          "summary": "FAO inaripoti kuwa Niger ilivuna tani 18.8 za mbegu za viazi zilizoidhinishwa za kizazi cha G3 kutoka kilo 550 za awali za viazi vidogo. Matokeo haya ya majaribio yanalenga kujenga uwezo wa kitaifa wa uzalishaji wa mbegu na kupunguza utegemezi wa uagizaji."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "LY",
@@ -1524,9 +1542,27 @@
       "source_tier": 1,
       "published": "2026-09-01",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO source article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La Gambie et la FAO lancent deux projets pour développer l’agroentrepreneuriat des jeunes",
+          "summary": "Le ministère gambien de l’Agriculture et la FAO ont lancé deux initiatives pour renforcer les entreprises agricoles dirigées par des jeunes et des femmes, notamment par le coaching en investissement responsable, les compétences commerciales, l’accès aux marchés et les filières de fruits tropicaux. Agri-Accelerator 2.0 prévoit aussi des possibilités de subventions de contrepartie pour les entreprises les plus performantes."
+        },
+        "ar": {
+          "title": "غامبيا والفاو تطلقان مشروعين لتعزيز ريادة الأعمال الزراعية لدى الشباب",
+          "summary": "أطلقت وزارة الزراعة في غامبيا والفاو مبادرتين لتعزيز الأعمال الزراعية التي يقودها الشباب والنساء، بما في ذلك التدريب على الاستثمار المسؤول ومهارات الأعمال والوصول إلى الأسواق وسلاسل قيمة الفواكه الاستوائية. ومن المخطط أن يوفر Agri-Accelerator 2.0 فرصاً لمنح مطابقة للشركات ذات الأداء الأفضل."
+        },
+        "pt": {
+          "title": "Gâmbia e FAO lançam dois projetos para promover o agronegócio juvenil",
+          "summary": "O Ministério da Agricultura da Gâmbia e a FAO lançaram duas iniciativas para reforçar empresas agrícolas lideradas por jovens e mulheres, incluindo orientação sobre investimento responsável, competências empresariais, acesso aos mercados e cadeias de valor de frutas tropicais. O Agri-Accelerator 2.0 prevê oportunidades de subvenções de contrapartida para empresas com melhor desempenho."
+        },
+        "sw": {
+          "title": "Gambia na FAO wazindua miradi miwili kuendeleza biashara za kilimo za vijana",
+          "summary": "Wizara ya Kilimo ya Gambia na FAO zilizindua mipango miwili ya kuimarisha biashara za kilimo zinazoongozwa na vijana na wanawake, ikiwemo ushauri kuhusu uwekezaji wenye uwajibikaji, ujuzi wa biashara, upatikanaji wa masoko na minyororo ya thamani ya matunda ya kitropiki. Agri-Accelerator 2.0 inapanga fursa za ruzuku zinazolinganishwa kwa biashara zenye matokeo bora."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "LS",
@@ -1538,9 +1574,27 @@
       "source_tier": 1,
       "published": "2026-06-01",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO source article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO lance au Lesotho un projet maraîcher climato-intelligent dirigé par des jeunes",
+          "summary": "La FAO et le ministère du Développement agricole, de la Sécurité alimentaire et de la Nutrition du Lesotho ont lancé un projet de deux ans axé sur les jeunes afin de renforcer les chaînes de valeur des légumes frais grâce aux technologies climato-intelligentes, à un meilleur accès aux marchés et à des pratiques de production innovantes."
+        },
+        "ar": {
+          "title": "الفاو تطلق في ليسوتو مشروعاً للخضروات الذكية مناخياً بقيادة الشباب",
+          "summary": "أطلقت الفاو ووزارة التنمية الزراعية والأمن الغذائي والتغذية في ليسوتو مشروعاً لمدة عامين يركز على الشباب لتعزيز سلاسل قيمة الخضروات الطازجة باستخدام التقنيات الذكية مناخياً وتحسين الوصول إلى الأسواق وممارسات الإنتاج المبتكرة."
+        },
+        "pt": {
+          "title": "FAO lança no Lesoto um projeto de hortícolas climaticamente inteligentes liderado por jovens",
+          "summary": "A FAO e o Ministério do Desenvolvimento Agrícola, Segurança Alimentar e Nutrição do Lesoto lançaram um projeto de dois anos centrado nos jovens para reforçar as cadeias de valor dos vegetais frescos através de tecnologias climaticamente inteligentes, melhor acesso aos mercados e práticas de produção inovadoras."
+        },
+        "sw": {
+          "title": "FAO yazindua Lesotho mradi wa mboga unaozingatia tabianchi unaoongozwa na vijana",
+          "summary": "FAO na Wizara ya Maendeleo ya Kilimo, Usalama wa Chakula na Lishe ya Lesotho zilizindua mradi wa miaka miwili unaolenga vijana ili kuimarisha minyororo ya thamani ya mboga mbichi kwa kutumia teknolojia zinazozingatia tabianchi, kuboresha masoko na mbinu bunifu za uzalishaji."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "BF",
@@ -1611,9 +1665,27 @@
       "source_tier": 1,
       "published": "2026-06-18",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La première conférence agricole du Soudan du Sud mobilise investissements et partenariats pour transformer les systèmes agroalimentaires",
+          "summary": "La FAO indique que la première conférence nationale sur l’agriculture du Soudan du Sud a réuni le gouvernement, les partenaires du développement et le secteur privé afin de transformer les priorités d’investissement en dialogue politique et en échanges avec les investisseurs dans les cultures, l’élevage, la pêche et les technologies agricoles."
+        },
+        "ar": {
+          "title": "مؤتمر الزراعة الأول في جنوب السودان يحشد الاستثمارات والشراكات لتحويل النظم الزراعية والغذائية",
+          "summary": "أفادت الفاو بأن المؤتمر الوطني الأول للزراعة في جنوب السودان جمع الحكومة وشركاء التنمية والقطاع الخاص لتحويل أولويات الاستثمار إلى حوار سياساتي وتواصل مع المستثمرين في المحاصيل والثروة الحيوانية ومصايد الأسماك والتقنيات الزراعية."
+        },
+        "pt": {
+          "title": "Primeira Conferência Agrícola do Sudão do Sul mobiliza investimento e parcerias para transformar os sistemas agroalimentares",
+          "summary": "A FAO informou que a primeira conferência nacional de agricultura do Sudão do Sul reuniu o governo, parceiros de desenvolvimento e o setor privado para transformar prioridades de investimento em diálogo político e envolvimento de investidores nos setores das culturas, pecuária, pescas e tecnologia agrícola."
+        },
+        "sw": {
+          "title": "Mkutano wa kwanza wa Kilimo wa Sudan Kusini wahamasisha uwekezaji na ushirikiano kwa mabadiliko ya mifumo ya kilimo na chakula",
+          "summary": "FAO iliripoti kuwa mkutano wa kwanza wa kitaifa wa kilimo wa Sudan Kusini uliwakutanisha serikali, washirika wa maendeleo na sekta binafsi ili kubadilisha vipaumbele vya uwekezaji kuwa mazungumzo ya sera na ushirikiano na wawekezaji katika mazao, mifugo, uvuvi na teknolojia za kilimo."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "SS",
@@ -1625,9 +1697,27 @@
       "source_tier": 1,
       "published": "2026-05-26",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO issue brief checked; awaiting editorial approval before publication."
+      "status": "official",
+      "lifecycle": "current",
+      "translations": {
+        "fr": {
+          "title": "La FAO examine comment la gouvernance peut libérer le potentiel agroalimentaire du Soudan du Sud",
+          "summary": "Une note d’analyse de la FAO publiée en mai 2026 souligne que des institutions plus solides, des cadres politiques plus clairs et une coopération structurée entre secteurs public et privé peuvent attirer des investissements dans les chaînes de valeur agroalimentaires du Soudan du Sud et renforcer sa résilience à long terme."
+        },
+        "ar": {
+          "title": "الفاو تبحث كيف يمكن للحوكمة إطلاق الإمكانات الزراعية والغذائية في جنوب السودان",
+          "summary": "توضح ورقة تحليلية للفاو نُشرت في مايو 2026 أن المؤسسات الأقوى والأطر السياساتية الأكثر وضوحاً والتعاون المنظم بين القطاعين العام والخاص يمكن أن تجذب الاستثمارات إلى سلاسل القيمة الزراعية والغذائية في جنوب السودان وتعزز قدرته على الصمود على المدى الطويل."
+        },
+        "pt": {
+          "title": "FAO analisa como a governação pode desbloquear o potencial agroalimentar do Sudão do Sul",
+          "summary": "Uma nota analítica da FAO publicada em maio de 2026 destaca que instituições mais fortes, quadros políticos mais claros e cooperação estruturada entre os setores público e privado podem atrair investimento para as cadeias de valor agroalimentares do Sudão do Sul e reforçar a resiliência a longo prazo."
+        },
+        "sw": {
+          "title": "FAO yachunguza jinsi utawala bora unavyoweza kufungua uwezo wa kilimo na chakula wa Sudan Kusini",
+          "summary": "Dokezo la uchambuzi la FAO lililochapishwa Mei 2026 linasisitiza kuwa taasisi imara, mifumo wazi ya sera na ushirikiano uliopangwa kati ya sekta ya umma na binafsi vinaweza kuvutia uwekezaji katika minyororo ya thamani ya kilimo na chakula nchini Sudan Kusini na kuimarisha ustahimilivu wa muda mrefu."
+        }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "SS",
@@ -1639,9 +1729,8 @@
       "source_tier": 1,
       "published": "2026-05-12",
       "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct FAO article checked; awaiting editorial approval before publication.",
+      "status": "official",
+      "lifecycle": "current",
       "translations": {
         "fr": {
           "title": "Le Soudan du Sud fait avancer sa stratégie nationale de statistiques agricoles avec l’appui de la FAO",
@@ -1659,7 +1748,8 @@
           "title": "Sudan Kusini yaendeleza mkakati wa kitaifa wa takwimu za kilimo kwa msaada wa FAO",
           "summary": "FAO na Ofisi ya Taifa ya Takwimu ya Sudan Kusini zilihitimisha warsha ya uchunguzi kusaidia Mpango Mkakati wa Takwimu za Kilimo na Vijijini wa 2026–2031. Kazi hii inalenga kuboresha mifumo ya data za kilimo kwa ajili ya mipango, ufuatiliaji wa usalama wa chakula na maendeleo ya vijijini."
         }
-      }
+      },
+      "coverage_scope": "country"
     },
     {
       "country_code": "DZ",
