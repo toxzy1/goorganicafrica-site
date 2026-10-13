@@ -7,12 +7,32 @@ const isPublishableAgriculturalRecord = record => {
     !["review", "needs_review", "draft", "rejected"].includes(lifecycle);
 };
 
+// Normalize URL variants for duplicate comparison only. Keep the original
+// URL on the record so published source links are not rewritten.
+const normalizeAgriculturalUrl = value => {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  try {
+    const url = new URL(raw);
+    url.hash = "";
+    url.hostname = url.hostname.toLowerCase().replace(/^www\\./, "");
+    if ((url.protocol === "https:" && url.port === "443") ||
+        (url.protocol === "http:" && url.port === "80")) url.port = "";
+    while (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+      url.pathname = url.pathname.slice(0, -1);
+    }
+    return url.toString();
+  } catch (_) {
+    return raw.split("#")[0].replace(/\\/+$/, "").toLowerCase();
+  }
+};
+
 const dedupeAgriculturalRecords = records => {
   const seen = new Set();
   return records.filter(record => {
     const country = String(record.country_code || record.code || "").toUpperCase();
-    const url = String(record.url || record.source_url || record.application_url || "").trim();
-    const identity = url || String(record.title || "").trim().toLowerCase();
+    const rawUrl = String(record.url || record.source_url || record.application_url || "").trim();
+    const identity = rawUrl ? normalizeAgriculturalUrl(rawUrl) : String(record.title || "").trim().toLowerCase();
     const key = country + "|" + identity;
     if (!country || !identity || seen.has(key)) return false;
     seen.add(key);
