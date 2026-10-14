@@ -103,19 +103,26 @@ if (fs.existsSync(builtSearchPath)) {
   assert.ok(builtRecords.length >= 100, "built Global Search indexes at least 100 real records");
   const actual = setup("en", builtRecords);
   const realQueries = [
-    ["rabbit farming ebook", "eBook"],
-    ["farm loans", null],
-    ["organic farming", null],
-    ["agricultural machinery", null],
-    ["Nigeria", null]
+    ["rabbit farming ebook", null, false],
+    ["mushroom farming ebook", "eBook", true],
+    ["farm loans", null, true],
+    ["organic farming", null, true],
+    ["agricultural machinery", null, true],
+    ["Nigeria", null, true]
   ];
-  for (const [query, section] of realQueries) {
+  for (const [query, section, expectResults] of realQueries) {
     actual.input.value = query;
     actual.type.value = section || "";
     actual.input.listeners.input();
-    assert.doesNotMatch(actual.results.innerHTML, /goa-search-empty/, "real content query should find results: " + query);
-    assert.ok(Number.parseInt(actual.count.textContent, 10) > 0, "real content query should return a positive result count: " + query);
-    assert.match(actual.results.innerHTML, /href=["'][^"']+["']/, "real results must have clickable destinations: " + query);
+    const count = Number.parseInt(actual.count.textContent, 10);
+    if (expectResults) {
+      assert.doesNotMatch(actual.results.innerHTML, /goa-search-empty/, "real content query should find results: " + query);
+      assert.ok(count > 0, "real content query should return a positive result count: " + query);
+      assert.match(actual.results.innerHTML, /href=["'][^"']+["']/, "real results must have clickable destinations: " + query);
+    } else {
+      assert.equal(count, 0, "query without matching published content should not invent a result: " + query);
+      assert.match(actual.results.innerHTML, /No matching results found/, "missing content should show useful empty-state guidance: " + query);
+    }
   }
   console.log("Global Search built-content integration checks passed (" + realQueries.length + " realistic queries; " + builtRecords.length + " indexed records).");
 } else {
