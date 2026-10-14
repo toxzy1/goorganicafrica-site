@@ -58,7 +58,7 @@ async function scenario(pathname, initialLanguage, targets) {
     GOA_TRANSLATIONS: {en:{},fr:{},ar:{},pt:{},sw:{}}
   };
   class CustomEvent { constructor(type, init) { this.type=type; this.detail=init && init.detail; } }
-  const context = {window, document, localStorage: {
+  const context = {window, document, location, localStorage: {
     getItem(key) { return Object.prototype.hasOwnProperty.call(storage,key) ? storage[key] : null; },
     setItem(key,value) { storage[key]=String(value); }
   }, CustomEvent, URL, Promise, fetch: async () => ({ok:true,json:async()=>({})}), console};
