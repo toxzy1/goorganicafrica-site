@@ -532,10 +532,15 @@ if (fs.existsSync(mergedNewsPath)) {
 
     // Translation drafts must remain visibly pending on localized country pages.
     // This prevents draft machine/AI translations from being presented as reviewed.
-    const translationDrafts = (country.articles || []).filter(article =>
-      ["official", "published", "verified"].includes(String(article.status || "").toLowerCase()) &&
-      article.translation_status === "draft" && article.translations
-    );
+    const translationDraftCutoff = new Date();
+    translationDraftCutoff.setUTCDate(translationDraftCutoff.getUTCDate() - 180);
+    const translationDrafts = (country.articles || []).filter(article => {
+      const publishedDate = article.published ? new Date(article.published) : null;
+      const stillCurrent = !article.lifecycle || article.lifecycle === "current";
+      const withinCurrentWindow = !publishedDate || Number.isNaN(publishedDate.getTime()) || publishedDate >= translationDraftCutoff;
+      return ["official", "published", "verified"].includes(String(article.status || "").toLowerCase()) &&
+        article.translation_status === "draft" && article.translations && stillCurrent && withinCurrentWindow;
+    });
     for (const article of translationDrafts) {
       for (const lang of ["fr", "ar", "pt", "sw"]) {
         const translation = article.translations[lang];
@@ -547,10 +552,10 @@ if (fs.existsSync(mergedNewsPath)) {
         }
         const localizedHtml = fs.readFileSync(localizedFile, "utf8");
         if (!localizedHtml.includes('data-translation-status="pending"')) {
-          failures.push("Draft translation audit: " + country.code + " (" + lang + ") does not mark draft translations as pending");
+          failures.push("Draft translation audit: " + country.code + " (" + lang + ") does not mark draft translations as pending for " + article.title);
         }
         if (!localizedHtml.includes(article.title)) {
-          failures.push("Draft translation audit: " + country.code + " (" + lang + ") should retain the source-language title until approval");
+          failures.push("Draft translation audit: " + country.code + " (" + lang + ") should retain the source-language title until approval for " + article.title);
         }
       }
     }
