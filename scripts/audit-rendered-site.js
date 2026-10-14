@@ -506,11 +506,11 @@ if (fs.existsSync(mergedNewsPath)) {
     try {
       const url = new URL(value);
       url.hash = "";
-      url.hostname = url.hostname.toLowerCase().replace(/^www\\./, "");
-      url.pathname = url.pathname.replace(/\\/+$/, "") || "/";
+      url.hostname = url.hostname.toLowerCase().replace(/^www\./, "");
+      url.pathname = url.pathname.replace(/\/+$/, "") || "/";
       return url.toString();
     } catch (_) {
-      return value.replace(/\\/+$/, "").toLowerCase();
+      return value.replace(/\/+$/, "").toLowerCase();
     }
   };
   for (const country of (mergedNews.countries || [])) {
