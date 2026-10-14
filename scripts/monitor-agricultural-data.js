@@ -29,7 +29,8 @@ const isSpecificNewsUrl=value=>{
   const parsed=new URL(String(value||""));
   const pathname=parsed.pathname.replace(/\/+$/,"")||"/";
   // WordPress query permalinks such as /?lang=en&p=17528 are direct post pages, not generic homepages.
-  if(pathname==="/" && /^\\d+$/.test(parsed.searchParams.get("p")||""))return true;
+  const postId = parsed.searchParams.get("p") || "";
+  if(pathname==="/" && postId && Number.isInteger(Number(postId)) && Number(postId)>0)return true;
   if(/\/hand-in-hand\/investment-forum-2026\//i.test(pathname))return false;
   return !(pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname)||/^\/en$/i.test(pathname)||/\/newsdetails(?:\/en)?$/i.test(pathname)||/\/news\/detail(?:\/en)?$/i.test(pathname));
  }catch{return false;}
