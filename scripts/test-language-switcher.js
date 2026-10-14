@@ -72,7 +72,7 @@ async function scenario(pathname, initialLanguage, targets) {
   {
     const s = await scenario("/search/", "en");
     s.selector.value = "pt";
-    s.listeners.change();
+    s.listeners.change.call(s.selector);
     await Promise.resolve();
     assert.deepEqual(s.assigned, [], "shared search should not navigate away");
     assert.equal(s.location.pathname, "/search/");
@@ -82,7 +82,7 @@ async function scenario(pathname, initialLanguage, targets) {
   {
     const s = await scenario("/pt/blog/", "pt");
     s.selector.value = "fr";
-    s.listeners.change();
+    s.listeners.change.call(s.selector);
     assert.deepEqual(s.assigned, ["/fr/blog/"], "localized blog index should route to the same section");
   }
   {
@@ -94,13 +94,13 @@ async function scenario(pathname, initialLanguage, targets) {
       sw:"/sw/agricultural-news/guinea-bissau/"
     });
     s.selector.value = "fr";
-    s.listeners.change();
+    s.listeners.change.call(s.selector);
     assert.deepEqual(s.assigned, ["/fr/agricultural-news/guinea-bissau/"], "country article should use its explicit translation target");
   }
   {
     const s = await scenario("/blog/unmapped-article/", "en");
     s.selector.value = "sw";
-    s.listeners.change();
+    s.listeners.change.call(s.selector);
     await Promise.resolve();
     assert.deepEqual(s.assigned, [], "unmapped article should not guess a destination");
     assert.equal(s.html.lang, "sw");
@@ -108,7 +108,7 @@ async function scenario(pathname, initialLanguage, targets) {
   {
     const s = await scenario("/about/", "en");
     s.selector.value = "ar";
-    s.listeners.change();
+    s.listeners.change.call(s.selector);
     assert.deepEqual(s.assigned, ["/ar/about/"], "known static page should route to the same localized page");
   }
   console.log("Language-switcher interaction tests passed (5 scenarios).");
