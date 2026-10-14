@@ -494,6 +494,44 @@ if (emptyNewsPages.length) {
   failures.push("Rendered agricultural-news coverage: " + emptyNewsPages.length + " country-language pages have no current verified story cards.");
   emptyNewsPages.slice(0, 30).forEach(x => failures.push(x.lang + ":" + x.country + " (" + x.rel + ")"));
 }
+// Audit the final merged agricultural-news dataset after the build merge step.
+// This catches duplicate country URLs even when duplicates originated in different
+// source files or used slightly different titles.
+const mergedNewsPath = path.join(source, "_data", "agriculturalNews.json");
+if (fs.existsSync(mergedNewsPath)) {
+  const mergedNews = JSON.parse(fs.readFileSync(mergedNewsPath, "utf8"));
+  const normalizedNewsUrl = (raw) => {
+    const value = String(raw || "").trim();
+    if (!value) return "";
+    try {
+      const url = new URL(value);
+      url.hash = "";
+      url.hostname = url.hostname.toLowerCase().replace(/^www\\./, "");
+      url.pathname = url.pathname.replace(/\\/+$/, "") || "/";
+      return url.toString();
+    } catch (_) {
+      return value.replace(/\\/+$/, "").toLowerCase();
+    }
+  };
+  for (const country of (mergedNews.countries || [])) {
+    const seen = new Map();
+    for (const article of (country.articles || [])) {
+      const url = normalizedNewsUrl(article.url);
+      if (!url) continue;
+      if (seen.has(url)) {
+        failures.push("Agricultural News merged dataset: duplicate source URL for " + country.code + ": " + url + " (" + (seen.get(url) || "first record") + " / " + (article.title || "untitled") + ")");
+      } else {
+        seen.set(url, article.title || "untitled");
+      }
+    }
+    const published = (country.articles || []).filter(article =>
+      ["official", "published", "verified"].includes(String(article.status || "").toLowerCase()) &&
+      (!article.lifecycle || article.lifecycle === "current") && article.url && article.title && article.summary
+    );
+    if (!published.length) failures.push("Agricultural News merged dataset: no publishable sourced story for " + (country.name || country.code));
+  }
+}
+
 if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
