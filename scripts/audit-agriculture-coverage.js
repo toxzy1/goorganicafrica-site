@@ -32,12 +32,15 @@ function normalizeSourceUrl(value) {
   try {
     const url = new URL(raw);
     url.hash = "";
-    url.hostname = url.hostname.toLowerCase().replace(/^www\\./, "");
+    url.hostname = url.hostname.toLowerCase();
+    if (url.hostname.startsWith("www.")) url.hostname = url.hostname.slice(4);
     if ((url.protocol === "https:" && url.port === "443") || (url.protocol === "http:" && url.port === "80")) url.port = "";
     while (url.pathname.length > 1 && url.pathname.endsWith("/")) url.pathname = url.pathname.slice(0, -1);
     return url.toString();
   } catch (_) {
-    return raw.split("#")[0].replace(/\\/+$/, "").toLowerCase();
+    let clean = raw.split("#")[0].toLowerCase();
+    while (clean.endsWith("/")) clean = clean.slice(0, -1);
+    return clean;
   }
 }
 
