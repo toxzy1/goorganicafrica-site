@@ -3210,9 +3210,8 @@
           "source_tier": 1,
           "published": "2026-07-22",
           "verified": "2026-10-13",
-          "status": "review",
-          "lifecycle": "needs_review",
-          "review_reason": "Direct country-specific article from a government or national news source; keep in editorial review until link, date, local relevance and translations are approved.",
+          "status": "official",
+          "lifecycle": "current",
           "translations": {
             "fr": {
               "title": "AgroTour 2026 en Guinée : bilan de la campagne agricole sur le terrain",
@@ -3230,7 +3229,9 @@
               "title": "AgroTour 2026 nchini Guinea yatathmini mazao na miundombinu ya kilimo",
               "summary": "Wizara ya Kilimo ya Guinea ilikamilisha ziara ya kitaifa ya mashambani kutathmini msimu wa kilimo wa 2026–2027, ikijumuisha hali ya mazao, upatikanaji wa pembejeo, miundombinu ya umwagiliaji na changamoto zilizoripotiwa na wakulima katika maeneo makuu ya uzalishaji."
             }
-          }
+          },
+          "coverage_scope": "country",
+          "translation_status": "draft"
         },
         {
           "category": "crops",
