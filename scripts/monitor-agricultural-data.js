@@ -20,7 +20,7 @@ const opp=read("agriculturalOpportunities.json").records||[];
 const news=[];
 const newsCountryList=read("agriculturalNews.json").countries||[];
 for(const c of newsCountryList) for(const a of c.articles||[]) news.push({...a,country_code:c.code,country_name:c.name});
-news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]));
+news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]),...(read("agriculturalNewsEquatorialGuinea.json").records||[]));
 // Coverage must include the supplemental and expansion records too, otherwise
 // countries with stories outside the base file are incorrectly reported empty.
 // Count unique story URLs per country so duplicate records do not inflate coverage.
