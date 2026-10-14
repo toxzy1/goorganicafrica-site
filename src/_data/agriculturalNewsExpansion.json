@@ -1125,20 +1125,6 @@
       "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication."
     },
     {
-      "country_code": "NE",
-      "category": "livestock",
-      "title": "Niger ministry reports inspections of licensed private veterinary establishments",
-      "summary": "An October ministry bulletin describes a regional inspection mission checking veterinary-practice authorizations, medicine approval, storage conditions and cold-chain compliance in Zinder.",
-      "url": "https://agriculture.gouv.ne/?m=202610",
-      "source": "Ministry of Agriculture and Livestock, Niger",
-      "source_tier": 1,
-      "published": "2026-10-07",
-      "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication."
-    },
-    {
       "country_code": "GQ",
       "category": "research-innovation",
       "title": "Equatorial Guinea advances plans for an agro-food laboratory",
@@ -2350,20 +2336,6 @@
       "coverage_scope": "country"
     },
     {
-      "country_code": "KM",
-      "category": "research-innovation",
-      "title": "Comoros presents results of its second general agricultural census",
-      "summary": "The Union of the Comoros, through its Ministry of Agriculture, Fisheries and Handicrafts, presented results from the second general agricultural census, covering farms, livestock, artisanal fisheries and producer living conditions with technical support from FAO and financing from the World Bank.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/national-presentation-of-the-results-of-the-second-general-agricultural-census-%28rga2%29/en",
-      "source": "FAO Regional Office for Africa",
-      "source_tier": 1,
-      "published": "2026-04-02",
-      "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official article found and country explicitly identified; verify country assignment and summary before publication."
-    },
-    {
       "country_code": "MR",
       "category": "digital-agriculture",
       "title": "Mauritania and FAO advance digital transformation of agrifood systems",
@@ -2408,39 +2380,6 @@
         }
       },
       "coverage_scope": "country"
-    },
-    {
-      "country_code": "KM",
-      "category": "food-security",
-      "title": "FAO feature highlights stronger food-import controls in Comoros",
-      "summary": "FAO describes how food-safety inspectors in Comoros are using more evidence-driven procedures to assess imported food, including poultry products, and strengthen safeguards in a highly import-dependent island nation.",
-      "url": "https://www.fao.org/newsroom/story/the-inspector-at-the-border/en",
-      "source": "FAO Newsroom",
-      "source_tier": 1,
-      "published": "2026-06-04",
-      "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "translations": {
-        "fr": {
-          "title": "La FAO met en avant le renforcement des contrôles de sécurité sanitaire des aliments importés aux Comores",
-          "summary": "La FAO décrit comment les inspecteurs de sécurité sanitaire des aliments aux Comores utilisent des procédures davantage fondées sur les données pour contrôler les aliments importés, notamment les produits de volaille, et renforcer les garanties dans un pays insulaire fortement dépendant des importations."
-        },
-        "ar": {
-          "title": "الفاو تسلط الضوء على تعزيز الرقابة على سلامة الأغذية المستوردة في جزر القمر",
-          "summary": "توضح الفاو كيف يستخدم مفتشو سلامة الأغذية في جزر القمر إجراءات أكثر اعتماداً على الأدلة لفحص الأغذية المستوردة، بما فيها منتجات الدواجن، وتعزيز الضمانات في دولة جزرية تعتمد بشدة على الواردات."
-        },
-        "pt": {
-          "title": "FAO destaca o reforço do controlo de segurança dos alimentos importados nas Comores",
-          "summary": "A FAO descreve como os inspetores de segurança alimentar nas Comores utilizam procedimentos mais baseados em evidências para avaliar alimentos importados, incluindo produtos avícolas, e reforçar as salvaguardas num país insular muito dependente das importações."
-        },
-        "sw": {
-          "title": "FAO yaangazia kuimarishwa kwa udhibiti wa usalama wa chakula kinachoagizwa nchini Comoro",
-          "summary": "FAO inaeleza jinsi wakaguzi wa usalama wa chakula nchini Comoro wanavyotumia taratibu zinazotegemea ushahidi zaidi kukagua chakula kinachoagizwa, ikiwemo bidhaa za kuku, na kuimarisha ulinzi katika taifa la visiwa linalotegemea sana uagizaji."
-        }
-      },
-      "coverage_scope": "country",
-      "review_reason": "Duplicate of the canonical Comoros record in agriculturalNews.json; retain the translated canonical card and keep this duplicate unpublished."
     },
     {
       "country_code": "ST",
@@ -3175,21 +3114,6 @@
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
       "review_reason": "Direct official FAO article located. Confirm that the ministerial-meeting story is useful to farmers and distinguish it from any other Seychelles fisheries records before approval."
-    },
-    {
-      "country_code": "BF",
-      "category": "finance",
-      "title": "IFAD and Burkina Faso sign US$59.75 million financing agreement for climate-resilient agriculture",
-      "summary": "IFAD and Burkina Faso signed financing for the ORIAM-SA project, which will invest in sustainable agricultural and market infrastructure across three regions, strengthen food value chains and improve rural incomes and food and nutrition security during 2026–2031.",
-      "url": "https://www.ifad.org/en/w/news/ifad-and-burkina-faso-sign-a-us-59-million-financing-agreement-to-boost-climate-resilient-agriculture",
-      "source": "International Fund for Agricultural Development (IFAD)",
-      "source_tier": 1,
-      "published": "2026-05-08",
-      "discovered": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "coverage_scope": "country_specific",
-      "review_reason": "Direct official IFAD news article located. Confirm financing amounts, project title and date against the source, then check for existing ORIAM-SA coverage before approval."
     },
     {
       "country_code": "ST",
