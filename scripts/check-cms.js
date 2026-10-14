@@ -329,8 +329,8 @@ const genericSourcePath = pathname => pathname === "/" ||
 const genericNewsSourceUrl = raw => {
   try {
     const parsed = new URL(String(raw || ""));
-    if (parsed.pathname === "/" && /^\\d+$/.test(parsed.searchParams.get("p") || "")) return false;
-    return genericSourcePath(parsed.pathname.replace(/\\/+$/, "") || "/");
+    if (parsed.pathname === "/" && /^\d+$/.test(parsed.searchParams.get("p") || "")) return false;
+    return genericSourcePath(parsed.pathname.replace(/\/+$/, "") || "/");
   } catch (_) {
     return true;
   }
