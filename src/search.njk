@@ -153,7 +153,16 @@ language: en
     }
     count.textContent=matches.length+' '+tr(matches.length===1?'resultSingular':'resultPlural')+(matches.length>100?' ('+tr('showingFirst')+')':'');
     if(!shown.length){
-      results.innerHTML='<div class="goa-search-empty">'+esc(tr('noResults'))+'</div>';
+      const suggestions=[
+        ['eBook',tr('ebooks'),localizedSectionUrl('ebooks')],
+        ['Blog',tr('blog'),localizedSectionUrl('blog')],
+        ['Resource',tr('resources'),localizedSectionUrl('agriculture-resources')],
+        ['News',tr('news'),localizedSectionUrl('agricultural-news')]
+      ];
+      results.innerHTML='<div class="goa-search-empty">'+esc(tr('noResults'))+
+        '<nav aria-label="Suggested sections" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px;">'+
+        suggestions.map(item=>'<a href="'+item[2]+'" style="text-decoration:underline;">'+esc(item[1])+'</a>').join('')+
+        '</nav></div>';
       return;
     }
     results.innerHTML=shown.map(x=>'<article class="goa-search-card"><div class="goa-search-meta">'+esc(({Resource:tr('resources'),News:tr('news'),Opportunity:tr('opportunities'),Market:tr('markets'),Service:tr('services'),eBook:tr('ebooks'),Blog:tr('blog')})[x.type]||x.type)+' · '+esc(x.meta)+'</div><h2><a href="'+esc(x.url)+'">'+esc(x.title)+'</a></h2><p class="goa-search-summary">'+esc(x.summary).slice(0,320)+'</p></article>').join('');
