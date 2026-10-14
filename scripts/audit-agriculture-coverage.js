@@ -80,14 +80,28 @@ resources.forEach((r, i) => {
     if (!nonempty(r[field])) errors.push(`Resource ${i + 1} (${code}): missing ${field}`);
   }
   if (nonempty(r.url) && !/^https?:\/\//i.test(r.url)) errors.push(`Resource ${i + 1} (${code}): URL is not HTTP(S): ${r.url}`);
-  if (nonempty(r.url)) resourceUrls.set(r.url, (resourceUrls.get(r.url) || 0) + 1);
+  if (nonempty(r.url)) resourceUrls.set(r.url, [...(resourceUrls.get(r.url) || []), r]);
 });
 summarizeCounts("Resources (country-specific plus shared)", resourceCounts, 5);
 for (const [code, name] of EXPECTED) {
   if (resourceCategoryCounts[code].size < 3) warnings.push(`Resources: ${name} has only ${resourceCategoryCounts[code].size} populated categories`);
 }
-const duplicateResourceUrls = [...resourceUrls.entries()].filter(([,count]) => count > 1).length;
-if (duplicateResourceUrls) warnings.push(`Resources: ${duplicateResourceUrls} URLs are reused across records; verify shared-country applicability and avoid duplicate display where inappropriate.`);
+// Distinguish duplicate URLs in the full editorial inventory from repeated links
+// that actually appear in publishable records. Review-only records often retain
+// generic source pages while awaiting a direct project/article URL; they should
+// not inflate the public-facing duplicate warning.
+const duplicateResourceUrlGroups = [...resourceUrls.entries()].filter(([,records]) => records.length > 1);
+const publishableDuplicateGroups = duplicateResourceUrlGroups.filter(([,records]) => {
+  const publicRecords = records.filter((r) => resourcePublishable.includes(r));
+  return publicRecords.length > 1;
+});
+const crossCountryPublishableDuplicates = publishableDuplicateGroups.filter(([,records]) => {
+  const countryCodes = new Set(records.filter((r) => resourcePublishable.includes(r)).map((r) => String(r.country_code || "").toUpperCase()));
+  return countryCodes.size > 1;
+}).length;
+const reviewOnlyDuplicateGroups = duplicateResourceUrlGroups.filter(([,records]) => records.every((r) => !resourcePublishable.includes(r))).length;
+console.log(`Resource URL reuse: ${duplicateResourceUrlGroups.length} repeated URL groups in inventory; ${publishableDuplicateGroups.length} include multiple publishable records; ${crossCountryPublishableDuplicates} span multiple countries; ${reviewOnlyDuplicateGroups} are review-only.`);
+if (crossCountryPublishableDuplicates) warnings.push(`Resources: ${crossCountryPublishableDuplicates} URLs are shared by publishable records across countries; verify that each listing clearly explains the regional/multi-country applicability.`);
 
 const newsData = readJson("src/_data/agriculturalNews.json");
 const newsCountries = safeArray(newsData.countries);
