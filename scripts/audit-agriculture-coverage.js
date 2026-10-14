@@ -91,6 +91,11 @@ if (duplicateResourceUrls) warnings.push(`Resources: ${duplicateResourceUrls} UR
 
 const newsData = readJson("src/_data/agriculturalNews.json");
 const newsCountries = safeArray(newsData.countries);
+const newsSupplementalRecords = [
+  ...safeArray(readJson("src/_data/agriculturalNewsSupplement.json").records),
+  ...safeArray(readJson("src/_data/agriculturalNewsExpansion.json").records),
+  ...safeArray(readJson("src/_data/agriculturalNewsEquatorialGuinea.json").records)
+];
 const newsCodes = new Set(newsCountries.map((c) => String(c.code || "").toUpperCase()));
 for (const [code, name] of EXPECTED) if (!newsCodes.has(code)) errors.push(`Agricultural News: country record missing for ${name} (${code})`);
 for (const code of newsCodes) if (!EXPECTED_CODES.has(code)) errors.push(`Agricultural News: unexpected country code ${code}`);
@@ -100,7 +105,7 @@ const newsUrls = new Map();
 let newsTotal = 0;
 newsCountries.forEach((country) => {
   const code = String(country.code || "").toUpperCase();
-  for (const article of safeArray(country.articles)) {
+  for (const article of safeArray(country.articles).concat(newsSupplementalRecords.filter(r => String(r.country_code || "").toUpperCase() === code))) {
     newsTotal++;
     if (EXPECTED_CODES.has(code)) newsCounts[code]++;
     const reviewOnly = ["review", "needs_review", "draft"].includes(String(article.status || "").toLowerCase()) ||
