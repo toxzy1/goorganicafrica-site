@@ -108,7 +108,7 @@ newsCountries.forEach((country) => {
   const countryArticles = safeArray(country.articles).concat(newsSupplementalRecords.filter(r => String(r.country_code || "").toUpperCase() === code));
   const seenCountryNews = new Set();
   for (const article of countryArticles) {
-    const articleKey = String(article.url || "").trim().replace(/\\/+$/, "").toLowerCase() + "|" + String(article.title || article.headline || "").trim().toLowerCase();
+    const articleKey = String(article.url || "").trim().replace(/\/+$/, "").toLowerCase() + "|" + String(article.title || article.headline || "").trim().toLowerCase();
     if (articleKey !== "|" && seenCountryNews.has(articleKey)) continue;
     if (articleKey !== "|") seenCountryNews.add(articleKey);
     newsTotal++;
