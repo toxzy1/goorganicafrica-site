@@ -56,10 +56,10 @@ s.input.listeners.input();
 assert.match(s.results.innerHTML, /Rabbit Farming Handbook/, "all metadata fields should be searchable");
  s.input.value = "rabbit";
 s.input.listeners.input();
-assert.match(s.cards.innerHTML, /href="\\/fr\\/ebooks\\//, "eBook connected card should use the selected language");
-assert.match(s.cards.innerHTML, /href="\\/fr\\/blog\\//, "Blog connected card should use the selected language");
-assert.match(s.cards.innerHTML, /href="\\/fr\\/agriculture-resources\\//, "Resources connected card should use the selected language");
-assert.match(s.cards.innerHTML, /href="\\/fr\\/agricultural-news\\//, "Agricultural News connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\/fr\/ebooks\//, "eBook connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\/fr\/blog\//, "Blog connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\/fr\/agriculture-resources\//, "Resources connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\/fr\/agricultural-news\//, "Agricultural News connected card should use the selected language");
 
 for (const language of ["fr","ar","pt","sw"]) {
   const localized = setup(language);
