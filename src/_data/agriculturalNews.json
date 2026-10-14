@@ -4881,13 +4881,13 @@
       "articles": [
         {
           "category": "livestock",
-          "title": "FAO launches nationwide livestock vaccination campaign",
+          "title": "FAO launches nationwide livestock vaccination campaign in Sudan",
           "summary": "FAO reported a nationwide livestock vaccination campaign in Sudan aimed at protecting food security and rural livelihoods amid conflict.",
-          "url": "https://www.fao.org/emergencies/resources-repository/news/en",
-          "source": "FAO Emergencies and Resilience",
+          "url": "https://fao.sitefinity.cloud/newsroom/detail/sudan--fao-launches-nationwide-livestock-vaccination-campaign-to-protect-food-security-and-livelihoods-amid-conflict/en",
+          "source": "Food and Agriculture Organization of the United Nations (FAO)",
           "published": "2026-09-25",
-          "verified": "2026-10-05",
-          "status": "review",
+          "verified": "2026-10-14",
+          "status": "official",
           "translations": {
             "fr": {
               "title": "La FAO lance une campagne nationale de vaccination du bétail",
@@ -4906,8 +4906,9 @@
               "summary": "FAO imeripoti kampeni ya kitaifa ya chanjo kwa mifugo nchini Sudan inayolenga kulinda usalama wa chakula na maisha ya vijijini wakati wa mzozo."
             }
           },
-          "lifecycle": "needs_review",
-          "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication."
+          "source_id": "fao",
+          "source_tier": 1,
+          "translation_status": "draft"
         },
         {
           "category": "farmer-support",
