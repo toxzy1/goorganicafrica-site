@@ -183,8 +183,8 @@
     return languageLoads[code];
   }
 
-  function refresh() {
-    var code = setLanguage(currentLanguage());
+  function refresh(requestedLanguage) {
+    var code = setLanguage(requestedLanguage || currentLanguage());
     return loadLanguage(code).then(function () {
       apply(document.body, code);
 
@@ -246,7 +246,10 @@
           window.location.assign(targetUrl);
           return;
         }
-        refresh();
+        // When a page has no explicit translated destination, keep the requested
+        // language for the in-place UI refresh instead of re-deriving English
+        // from the unchanged URL and undoing the visitor's selection.
+        refresh(requested);
       });
     }
     refresh().then(function () { readyResolve(window.GOA_I18N); });
