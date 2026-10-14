@@ -95,7 +95,7 @@ const newsSupplementalRecords = [
   ...safeArray(readJson("src/_data/agriculturalNewsSupplement.json").records),
   ...safeArray(readJson("src/_data/agriculturalNewsExpansion.json").records),
   ...safeArray(readJson("src/_data/agriculturalNewsEquatorialGuinea.json").records)
-];
+].map(record => ({...record, title: record.title || record.headline || record.name || ""}));
 const newsCodes = new Set(newsCountries.map((c) => String(c.code || "").toUpperCase()));
 for (const [code, name] of EXPECTED) if (!newsCodes.has(code)) errors.push(`Agricultural News: country record missing for ${name} (${code})`);
 for (const code of newsCodes) if (!EXPECTED_CODES.has(code)) errors.push(`Agricultural News: unexpected country code ${code}`);
