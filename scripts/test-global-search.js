@@ -13,14 +13,15 @@ function element(dataset = {}) {
   return { dataset, value: "", textContent: "", innerHTML: "", style: {display:""}, listeners: {},
     addEventListener(name, fn) { this.listeners[name] = fn; } };
 }
-function setup(language = "en") {
+function setup(language = "en", suppliedRecords = null) {
   const input = element(), type = element(), results = element(), connections = element(), cards = element(), count = element();
-  const records = [
+  const fixtureRecords = [
     element({type:"eBook",title:"Rabbit Farming Handbook",summary:"Practical smallholder guide",keywords:"rabbit_farming rabbit farming ebook livestock",meta:"Livestock · eBook",url:"/ebooks/rabbit-farming-handbook/"}),
     element({type:"Blog",title:"Rabbit housing and feeding",summary:"Build clean, low-cost rabbit housing",keywords:"rabbit housing",meta:"Livestock · Blog · en",url:"/blog/rabbit-housing-feeding/"}),
     element({type:"Resource",title:"Rabbit feed resources",summary:"Official farmer support information",keywords:"rabbit fertilizer seed",meta:"Côte d’Ivoire · inputs",url:"/agriculture-resources/"}),
     element({type:"News",title:"Rabbit farming news",summary:"Agricultural update",keywords:"rabbit livestock",meta:"Nigeria · livestock",url:"https://example.org/news"})
   ];
+  const records = suppliedRecords || fixtureRecords;
   const listeners = {};
   const document = {
     documentElement:{lang:language},
@@ -80,4 +81,45 @@ s.type.listeners.change();
 assert.match(s.results.innerHTML, /Rabbit housing and feeding/, "Blog filter should return the matching blog");
 assert.doesNotMatch(s.results.innerHTML, /Rabbit Farming Handbook/, "Blog filter should exclude eBooks");
 
-console.log("Global Search interaction tests passed (4 scenarios).");
+
+/*
+ * Integration pass: run the same search script against the actual rendered
+ * build index, not only the small fixtures above. CI builds the site before
+ * running npm run check, so these are real content/query checks.
+ */
+const builtSearchPath = path.join(__dirname, "..", "_site", "search", "index.html");
+if (fs.existsSync(builtSearchPath)) {
+  const builtHtml = fs.readFileSync(builtSearchPath, "utf8");
+  const sourceBlock = builtHtml.match(/<div id=["']goa-search-source["'] hidden>([\s\S]*?)<\/div>/i);
+  assert.ok(sourceBlock, "built Global Search contains its embedded source index");
+  const builtRecords = [...sourceBlock[1].matchAll(/<article\b([^>]*)>/gi)].map((match) => {
+    const dataset = {};
+    for (const attr of match[1].matchAll(/\bdata-([\w-]+)=["']([^"']*)["']/gi)) {
+      const key = attr[1].replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
+      dataset[key] = attr[2].replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+    }
+    return element(dataset);
+  });
+  assert.ok(builtRecords.length >= 100, "built Global Search indexes at least 100 real records");
+  const actual = setup("en", builtRecords);
+  const realQueries = [
+    ["rabbit farming ebook", "eBook"],
+    ["farm loans", null],
+    ["organic farming", null],
+    ["agricultural machinery", null],
+    ["Nigeria", null]
+  ];
+  for (const [query, section] of realQueries) {
+    actual.input.value = query;
+    actual.type.value = section || "";
+    actual.input.listeners.input();
+    assert.doesNotMatch(actual.results.innerHTML, /goa-search-empty/, "real content query should find results: " + query);
+    assert.ok(Number.parseInt(actual.count.textContent, 10) > 0, "real content query should return a positive result count: " + query);
+    assert.match(actual.results.innerHTML, /href=["'][^"']+["']/, "real results must have clickable destinations: " + query);
+  }
+  console.log("Global Search built-content integration checks passed (" + realQueries.length + " realistic queries; " + builtRecords.length + " indexed records).");
+} else {
+  console.warn("Global Search built-content integration checks skipped: build output not found.");
+}
+
+console.log("Global Search interaction tests passed (fixture scenarios plus built-content checks when available).");
