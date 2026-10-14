@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-13",
+  "last_updated": "2026-10-14",
   "editorial_policy": "Reviewed expansion records from authoritative agricultural and food-system sources. Store original source URL, publication date and verification date. Do not copy full articles.",
   "records": [
     {
@@ -2282,10 +2282,26 @@
       "source": "FAO in Namibia",
       "source_tier": 1,
       "published": "2026-04-13",
-      "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "Direct official country story found; editorially confirm date, summary and country/category assignment before publication."
+      "verified": "2026-10-14",
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Une formation en aquaculture d’eau douce renforce les compétences en élevage de poissons et en formulation d’aliments en Namibie",
+          "summary": "Une formation soutenue par la FAO et le partenariat de coopération Sud-Sud entre la Chine et la Namibie a renforcé les compétences de techniciens en aquaculture et en formulation d’aliments pour poissons dans le nord de la Namibie."
+        },
+        "ar": {
+          "title": "تدريب في الاستزراع المائي بالمياه العذبة يعزز مهارات تربية الأسماك وتركيب الأعلاف في ناميبيا",
+          "summary": "عزز تدريب بدعم من منظمة الأغذية والزراعة وشراكة التعاون بين الصين وناميبيا مهارات الفنيين في الاستزراع المائي وتركيب أعلاف الأسماك في شمال ناميبيا."
+        },
+        "pt": {
+          "title": "Formação em aquicultura de água doce reforça competências de piscicultura e formulação de rações na Namíbia",
+          "summary": "Uma formação apoiada pela FAO e pela parceria de cooperação Sul-Sul entre a China e a Namíbia reforçou as competências de técnicos em aquicultura e formulação de rações para peixes no norte da Namíbia."
+        },
+        "sw": {
+          "title": "Mafunzo ya ufugaji wa samaki wa maji baridi yaimarisha ujuzi wa ufugaji na utengenezaji wa chakula cha samaki Namibia",
+          "summary": "Mafunzo yaliyoungwa mkono na FAO na ushirikiano wa China na Namibia yaliimarisha ujuzi wa mafundi katika ufugaji wa samaki wa maji baridi na utengenezaji wa chakula cha samaki kaskazini mwa Namibia."
+        }
+      }
     },
     {
       "country_code": "NA",
@@ -2833,7 +2849,7 @@
     },
     {
       "country_code": "LR",
-      "category": "plant-health",
+      "category": "research-innovation",
       "title": "FAO, IPPC and Liberia's Agriculture Ministry launch phytosanitary training in Ganta",
       "summary": "FAO, the International Plant Protection Convention Secretariat and Liberia's Ministry of Agriculture held a national training workshop to strengthen plant-health inspectors, quarantine officers and extension personnel in detecting and responding to destructive plant pests.",
       "url": "https://www.fao.org/liberia/news/detail/fao--ippc-and-agriculture-ministry-launched-phytosanitary-training-in-ganta/en",
@@ -2841,14 +2857,31 @@
       "source_tier": 1,
       "published": "2026-09-21",
       "discovered": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct official FAO country article located. Confirm category, translated summary and whether the training story is sufficiently distinct from existing plant-health coverage before approval."
+      "verified": "2026-10-14",
+      "translations": {
+        "fr": {
+          "title": "La FAO et le ministère libérien de l’Agriculture lancent une formation phytosanitaire à Ganta",
+          "summary": "La FAO, la Convention internationale pour la protection des végétaux et le ministère libérien de l’Agriculture ont organisé une formation nationale à Ganta pour renforcer la surveillance des ravageurs, le signalement numérique et la réaction rapide face aux organismes nuisibles menaçant les cultures et la sécurité alimentaire."
+        },
+        "ar": {
+          "title": "الفاو ووزارة الزراعة الليبيرية تطلقان تدريباً للصحة النباتية في غانتا",
+          "summary": "نظمت منظمة الأغذية والزراعة والاتفاقية الدولية لوقاية النباتات ووزارة الزراعة الليبيرية تدريباً وطنياً في غانتا لتعزيز رصد الآفات والإبلاغ الرقمي والاستجابة السريعة للآفات النباتية التي تهدد المحاصيل والأمن الغذائي."
+        },
+        "pt": {
+          "title": "FAO e Ministério da Agricultura da Libéria lançam formação fitossanitária em Ganta",
+          "summary": "A FAO, a Convenção Internacional para a Proteção dos Vegetais e o Ministério da Agricultura da Libéria realizaram formação nacional em Ganta para reforçar a vigilância de pragas, a comunicação digital e a resposta rápida a pragas que ameaçam as culturas e a segurança alimentar."
+        },
+        "sw": {
+          "title": "FAO na Wizara ya Kilimo ya Liberia zaanzisha mafunzo ya afya ya mimea Ganta",
+          "summary": "FAO, Mkataba wa Kimataifa wa Ulinzi wa Mimea na Wizara ya Kilimo ya Liberia ziliendesha mafunzo ya kitaifa Ganta ili kuimarisha ufuatiliaji wa wadudu waharibifu, utoaji wa taarifa kidijitali na hatua za haraka dhidi ya wadudu wanaotishia mazao na usalama wa chakula."
+        }
+      }
     },
     {
       "country_code": "DJ",
-      "category": "investment",
+      "category": "grants-programmes",
       "title": "Djibouti launches AgriConnect Compact to strengthen food security, private investment and jobs",
       "summary": "The Government of Djibouti and the World Bank Group launched a national roadmap prioritising livestock, horticulture and dates, with measures for producer organisations, finance, infrastructure, animal health and agribusiness investment.",
       "url": "https://www.worldbank.org/en/news/press-release/2026/09/14/djibouti-launches-agriconnect-compact-to-strengthen-food-security-boost-private-in",
@@ -2856,10 +2889,27 @@
       "source_tier": 1,
       "published": "2026-09-14",
       "discovered": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct World Bank press release checked. Confirm country assignment and distinguish this compact announcement from any existing AgriConnect coverage before approval."
+      "verified": "2026-10-14",
+      "translations": {
+        "fr": {
+          "title": "Djibouti lance le Compact AgriConnect pour renforcer la sécurité alimentaire, l’investissement privé et l’emploi",
+          "summary": "Le gouvernement de Djibouti et le Groupe de la Banque mondiale ont lancé une feuille de route nationale axée sur l’élevage, l’horticulture et les dattes afin de mobiliser des investissements, renforcer la production locale et créer des emplois."
+        },
+        "ar": {
+          "title": "جيبوتي تطلق اتفاق أجري كونكت لتعزيز الأمن الغذائي والاستثمار الخاص والوظائف",
+          "summary": "أطلقت حكومة جيبوتي ومجموعة البنك الدولي خارطة طريق وطنية تركز على الثروة الحيوانية والبستنة والتمور لحشد الاستثمارات وتعزيز الإنتاج المحلي وخلق فرص العمل."
+        },
+        "pt": {
+          "title": "Djibuti lança Compacto AgriConnect para reforçar a segurança alimentar, o investimento privado e o emprego",
+          "summary": "O Governo do Djibuti e o Grupo Banco Mundial lançaram um roteiro nacional centrado na pecuária, horticultura e tâmaras para mobilizar investimento, reforçar a produção local e criar empregos."
+        },
+        "sw": {
+          "title": "Djibouti yazindua Compact ya AgriConnect kuimarisha usalama wa chakula, uwekezaji binafsi na ajira",
+          "summary": "Serikali ya Djibouti na Kundi la Benki ya Dunia zimezindua ramani ya kitaifa inayolenga mifugo, kilimo cha bustani na tende ili kuvutia uwekezaji, kuimarisha uzalishaji wa ndani na kuunda ajira."
+        }
+      }
     },
     {
       "country_code": "MG",
@@ -2871,11 +2921,28 @@
       "source_tier": 1,
       "published": "2026-08-28",
       "discovered": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
+      "status": "official",
       "coverage_scope": "country_specific",
       "source_language": "fr",
-      "review_reason": "Direct official FAO article is in French. Review the English title/summary, category and country relevance before approval."
+      "verified": "2026-10-14",
+      "translations": {
+        "fr": {
+          "title": "La FAO et Madagascar lancent un projet pour renforcer le contrôle de la qualité des engrais",
+          "summary": "La FAO et le ministère de l’Agriculture et de la Souveraineté alimentaire de Madagascar ont lancé un projet de coopération technique de deux ans visant à élaborer une stratégie nationale sur les engrais, un cadre réglementaire, à former des inspecteurs et à renforcer les contrôles de qualité."
+        },
+        "ar": {
+          "title": "الفاو ومدغشقر تطلقان مشروعاً لتعزيز مراقبة جودة الأسمدة",
+          "summary": "أطلقت منظمة الأغذية والزراعة ووزارة الزراعة والسيادة الغذائية في مدغشقر مشروع تعاون فني لمدة عامين لوضع استراتيجية وطنية للأسمدة وإطار تنظيمي، وتدريب المفتشين وتعزيز فحوصات جودة الأسمدة."
+        },
+        "pt": {
+          "title": "FAO e Madagáscar lançam projeto para reforçar o controlo da qualidade dos fertilizantes",
+          "summary": "A FAO e o Ministério da Agricultura e Soberania Alimentar de Madagáscar lançaram um projeto de cooperação técnica de dois anos para desenvolver uma estratégia nacional de fertilizantes e um quadro regulamentar, formar inspetores e reforçar os controlos de qualidade."
+        },
+        "sw": {
+          "title": "FAO na Madagaska zaanzisha mradi wa kuimarisha udhibiti wa ubora wa mbolea",
+          "summary": "FAO na Wizara ya Kilimo na Ukuu wa Chakula ya Madagaska zimeanzisha mradi wa ushirikiano wa kiufundi wa miaka miwili wa kuandaa mkakati wa kitaifa wa mbolea na mfumo wa udhibiti, kutoa mafunzo kwa wakaguzi na kuimarisha ukaguzi wa ubora wa mbolea."
+        }
+      }
     },
     {
       "country_code": "MG",
@@ -3438,6 +3505,36 @@
         "sw": {
           "title": "Wazalishaji wa cherries wa Afrika Kusini wapata ufikiaji wa soko la China",
           "summary": "Idara ya Kilimo ya Afrika Kusini ilitangaza kusainiwa kwa itifaki ya afya ya mimea na usalama wa chakula inayofungua soko la China kwa cherries za Afrika Kusini. Kabla ya kusafirisha bidhaa, wauzaji nje wanapaswa kuthibitisha mahitaji ya sasa ya uingizaji, vyeti na taratibu kwa mamlaka husika."
+        }
+      }
+    },
+    {
+      "country_code": "MZ",
+      "category": "finance",
+      "title": "Mozambique advances climate investment planning for resilient agrifood systems",
+      "summary": "FAO and Mozambique’s agriculture authorities brought public and private stakeholders together to validate climate-investment priorities and launch a process for project ideas that could attract finance for more resilient agrifood value chains.",
+      "url": "https://www.fao.org/mozambique/news/details/mozambique-advances-climate-investment-planning-for-resilient-agrifood-systems/en",
+      "source": "FAO in Mozambique",
+      "source_tier": 1,
+      "published": "2026-10-01",
+      "verified": "2026-10-14",
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Le Mozambique fait avancer la planification des investissements climatiques pour des systèmes agroalimentaires résilients",
+          "summary": "La FAO et les autorités agricoles du Mozambique ont réuni des acteurs publics et privés pour valider les priorités d’investissement climatique et lancer un processus de propositions de projets susceptibles d’attirer des financements pour des chaînes de valeur agroalimentaires plus résilientes."
+        },
+        "ar": {
+          "title": "موزمبيق تتقدم في تخطيط الاستثمارات المناخية لتعزيز النظم الزراعية والغذائية",
+          "summary": "جمعت منظمة الأغذية والزراعة والسلطات الزراعية في موزمبيق جهات عامة وخاصة لاعتماد أولويات الاستثمار المناخي وإطلاق عملية لتقديم أفكار مشاريع يمكن أن تجذب التمويل لسلاسل قيمة زراعية وغذائية أكثر قدرة على الصمود."
+        },
+        "pt": {
+          "title": "Moçambique avança no planeamento de investimentos climáticos para sistemas agroalimentares resilientes",
+          "summary": "A FAO e as autoridades agrícolas de Moçambique reuniram intervenientes públicos e privados para validar prioridades de investimento climático e lançar um processo de propostas de projetos capazes de atrair financiamento para cadeias de valor agroalimentares mais resilientes."
+        },
+        "sw": {
+          "title": "Msumbiji yaendeleza mipango ya uwekezaji wa tabianchi kwa mifumo imara ya kilimo na chakula",
+          "summary": "FAO na mamlaka za kilimo za Msumbiji zilikutanisha wadau wa umma na binafsi ili kuthibitisha vipaumbele vya uwekezaji wa tabianchi na kuanzisha mchakato wa mawazo ya miradi inayoweza kuvutia ufadhili kwa minyororo ya thamani ya kilimo na chakula inayostahimili mishtuko."
         }
       }
     }
