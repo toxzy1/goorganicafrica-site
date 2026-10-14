@@ -133,6 +133,7 @@ for (const code of newsCodes) if (!EXPECTED_CODES.has(code)) errors.push(`Agricu
 const newsCounts = Object.fromEntries([...EXPECTED_CODES].map((c) => [c, 0]));
 const translationCounts = Object.fromEntries(LANGS.map((l) => [l, 0]));
 const newsUrls = new Map();
+const publishableNewsUrls = new Map();
 let newsTotal = 0;
 newsCountries.forEach((country) => {
   const code = String(country.code || "").toUpperCase();
@@ -155,7 +156,7 @@ newsCountries.forEach((country) => {
       if (!nonempty(article[field])) errors.push(`News ${newsTotal} (${code}): missing ${field}`);
     }
     if (nonempty(article.url) && !/^https?:\/\//i.test(article.url)) errors.push(`News ${newsTotal} (${code}): URL is not HTTP(S): ${article.url}`);
-    if (nonempty(article.url)) { const normalizedUrl = normalizeSourceUrl(article.url); newsUrls.set(normalizedUrl, (newsUrls.get(normalizedUrl) || 0) + 1); }
+    if (nonempty(article.url)) { const normalizedUrl = normalizeSourceUrl(article.url); newsUrls.set(normalizedUrl, (newsUrls.get(normalizedUrl) || 0) + 1); if (!reviewOnly) publishableNewsUrls.set(normalizedUrl, (publishableNewsUrls.get(normalizedUrl) || 0) + 1); }
     // Translation drafts are deliberately visible as pending on localized pages.
     // Count only approved translations in the coverage metric so draft text is not
     // reported as verified localization.
@@ -168,8 +169,12 @@ newsCountries.forEach((country) => {
   }
 });
 summarizeCounts("Agricultural News", newsCounts, 4);
-const duplicateNewsUrls = [...newsUrls.entries()].filter(([,count]) => count > 1).length;
-if (duplicateNewsUrls) warnings.push(`Agricultural News: ${duplicateNewsUrls} URLs are reused; check whether these are deliberate source/region records or accidental duplicates.`);
+const repeatedInventoryUrlGroups = [...newsUrls.entries()].filter(([,count]) => count > 1);
+const repeatedPublishableUrlGroups = [...publishableNewsUrls.entries()].filter(([,count]) => count > 1);
+const reviewOnlyDuplicateGroups = repeatedInventoryUrlGroups.filter(([url]) => !publishableNewsUrls.has(url)).length;
+const mixedStatusDuplicateGroups = repeatedInventoryUrlGroups.filter(([url]) => publishableNewsUrls.has(url) && !repeatedPublishableUrlGroups.some(([publishedUrl]) => publishedUrl === url)).length;
+if (repeatedPublishableUrlGroups.length) warnings.push(`Agricultural News: ${repeatedPublishableUrlGroups.length} normalized URLs are shared by multiple publishable records; verify each record is a distinct country/region listing rather than a duplicate.`);
+if (reviewOnlyDuplicateGroups || mixedStatusDuplicateGroups) console.log(`Agricultural News URL review: ${reviewOnlyDuplicateGroups} repeated URL groups are review-only; ${mixedStatusDuplicateGroups} groups mix publishable and review-queue records.`);
 
 const monitorReportPath = path.join(root, "reports", "agricultural-data-monitor.json");
 if (fs.existsSync(monitorReportPath)) {
