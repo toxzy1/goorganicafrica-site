@@ -72,7 +72,6 @@ if (fs.existsSync(builtDecisionPath)) {
   assert.ok(realRecord, "built Decision Centre has a real country/section/source combination");
   const actual = setup({
     countryValue:realRecord.country_code,
-    countryName:realRecord.country_code,
     topicValue:"qa-topic-that-cannot-match-any-record",
     goalValue:fullGoal.id,
     sourceData:realData,
