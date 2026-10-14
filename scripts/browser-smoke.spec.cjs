@@ -42,3 +42,14 @@ test("Nigeria agricultural-news page has content or a useful fallback, and langu
   await expect(page).toHaveURL(/\/sw\/agricultural-news\/nigeria\//, { timeout: 15000 });
   await expect(page.locator("html")).toHaveAttribute("lang", "sw");
 });
+
+test("country-news language selector reaches French, Arabic and Portuguese pages without falling back home", async ({ page }) => {
+  for (const language of ["fr", "ar", "pt"]) {
+    await page.goto(baseURL + "/agricultural-news/nigeria/", { waitUntil: "domcontentloaded" });
+    await page.locator("#site-language-select").selectOption(language);
+    await expect(page).toHaveURL(new RegExp("\\/" + language + "\\/agricultural-news\\/nigeria\\/"), { timeout: 15000 });
+    await expect(page.locator("html")).toHaveAttribute("lang", language);
+    await expect(page.locator("h1").first()).toBeVisible();
+    if (language === "ar") await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+  }
+});
