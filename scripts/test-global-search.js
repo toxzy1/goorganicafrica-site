@@ -74,6 +74,16 @@ for (const language of ["fr","ar","pt","sw"]) {
 s.input.value = "nothing-will-match-this";
 s.input.listeners.input();
 assert.match(s.results.innerHTML, /No matching results found/, "no-result state should explain what to try");
+for (const language of ["en","fr","ar","pt","sw"]) {
+  const empty = setup(language);
+  empty.input.value = "nothing-will-match-this";
+  empty.input.listeners.input();
+  const prefix = language === "en" ? "" : "/" + language;
+  for (const section of ["ebooks","blog","agriculture-resources","agricultural-news"]) {
+    assert.ok(empty.results.innerHTML.includes('href="' + prefix + "/" + section + '/"'),
+      language + " no-result state should offer a localized " + section + " destination");
+  }
+}
 
 s.input.value = "rabbit";
 s.type.value = "Blog";
