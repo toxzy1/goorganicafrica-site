@@ -18,7 +18,8 @@ function setup(language = "en") {
   const records = [
     element({type:"eBook",title:"Rabbit Farming Handbook",summary:"Practical smallholder guide",keywords:"rabbit_farming rabbit farming ebook livestock",meta:"Livestock · eBook",url:"/ebooks/rabbit-farming-handbook/"}),
     element({type:"Blog",title:"Rabbit housing and feeding",summary:"Build clean, low-cost rabbit housing",keywords:"rabbit housing",meta:"Livestock · Blog · en",url:"/blog/rabbit-housing-feeding/"}),
-    element({type:"Resource",title:"Côte d’Ivoire agricultural inputs",summary:"Official farmer support information",keywords:"fertilizer seed",meta:"Côte d’Ivoire · inputs",url:"/agriculture-resources/"})
+    element({type:"Resource",title:"Rabbit feed resources",summary:"Official farmer support information",keywords:"rabbit fertilizer seed",meta:"Côte d’Ivoire · inputs",url:"/agriculture-resources/"}),
+    element({type:"News",title:"Rabbit farming news",summary:"Agricultural update",keywords:"rabbit livestock",meta:"Nigeria · livestock",url:"https://example.org/news"})
   ];
   const listeners = {};
   const document = {
@@ -55,8 +56,19 @@ s.input.listeners.input();
 assert.match(s.results.innerHTML, /Rabbit Farming Handbook/, "all metadata fields should be searchable");
  s.input.value = "rabbit";
 s.input.listeners.input();
-assert.match(s.cards.innerHTML, /href="\/fr\/ebooks\//, "eBook connected card should use the selected language");
-assert.match(s.cards.innerHTML, /href="\/fr\/blog\//, "Blog connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\\/fr\\/ebooks\\//, "eBook connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\\/fr\\/blog\\//, "Blog connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\\/fr\\/agriculture-resources\\//, "Resources connected card should use the selected language");
+assert.match(s.cards.innerHTML, /href="\\/fr\\/agricultural-news\\//, "Agricultural News connected card should use the selected language");
+
+for (const language of ["fr","ar","pt","sw"]) {
+  const localized = setup(language);
+  localized.input.value = "rabbit";
+  localized.input.listeners.input();
+  for (const section of ["ebooks","blog","agriculture-resources","agricultural-news"]) {
+    assert.ok(localized.cards.innerHTML.includes(`href="/${language}/${section}/`), `${language} connected card should link to /${language}/${section}/`);
+  }
+}
 
 s.input.value = "nothing-will-match-this";
 s.input.listeners.input();
