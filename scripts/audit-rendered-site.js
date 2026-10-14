@@ -529,6 +529,31 @@ if (fs.existsSync(mergedNewsPath)) {
       (!article.lifecycle || article.lifecycle === "current") && article.url && article.title && article.summary
     );
     if (!published.length) failures.push("Agricultural News merged dataset: no publishable sourced story for " + (country.name || country.code));
+
+    // Translation drafts must remain visibly pending on localized country pages.
+    // This prevents draft machine/AI translations from being presented as reviewed.
+    const translationDrafts = (country.articles || []).filter(article =>
+      ["official", "published", "verified"].includes(String(article.status || "").toLowerCase()) &&
+      article.translation_status === "draft" && article.translations
+    );
+    for (const article of translationDrafts) {
+      for (const lang of ["fr", "ar", "pt", "sw"]) {
+        const translation = article.translations[lang];
+        if (!translation || !translation.title || !translation.summary) continue;
+        const localizedFile = path.join(site, lang, "agricultural-news", country.slug, "index.html");
+        if (!fs.existsSync(localizedFile)) {
+          failures.push("Draft translation audit: missing localized country page for " + country.code + " (" + lang + ")");
+          continue;
+        }
+        const localizedHtml = fs.readFileSync(localizedFile, "utf8");
+        if (!localizedHtml.includes('data-translation-status="pending"')) {
+          failures.push("Draft translation audit: " + country.code + " (" + lang + ") does not mark draft translations as pending");
+        }
+        if (!localizedHtml.includes(article.title)) {
+          failures.push("Draft translation audit: " + country.code + " (" + lang + ") should retain the source-language title until approval");
+        }
+      }
+    }
   }
 }
 
