@@ -53,6 +53,8 @@ s.input.value = "rabbit farming ebook";
 s.type.value = "";
 s.input.listeners.input();
 assert.match(s.results.innerHTML, /Rabbit Farming Handbook/, "all metadata fields should be searchable");
+ s.input.value = "rabbit";
+s.input.listeners.input();
 assert.match(s.cards.innerHTML, /href="\/fr\/ebooks\//, "eBook connected card should use the selected language");
 assert.match(s.cards.innerHTML, /href="\/fr\/blog\//, "Blog connected card should use the selected language");
 
