@@ -111,5 +111,45 @@ async function scenario(pathname, initialLanguage, targets) {
     s.listeners.change.call(s.selector);
     assert.deepEqual(s.assigned, ["/ar/about/"], "known static page should route to the same localized page");
   }
-  console.log("Language-switcher interaction tests passed (5 scenarios).");
+
+  // Check real rendered route availability before allowing a section redirect.
+  // If a translated page is absent, the selector must translate in place rather
+  // than sending the visitor to a guessed language-prefixed URL.
+  const siteRoot = path.join(__dirname, "..", "_site");
+  if (fs.existsSync(siteRoot)) {
+    const translatedSections = ["blog","ebooks","organic-farming","agricultural-news","agriculture-resources","agricultural-finance","agricultural-grants","farm-machinery"];
+    let routeChecks = 0;
+    for (const section of translatedSections) {
+      for (const language of ["fr","ar","pt","sw"]) {
+        const target = "/" + language + "/" + section + "/";
+        const targetFile = path.join(siteRoot, language, section, "index.html");
+        const s = await scenario("/" + section + "/", "en");
+        s.selector.value = language;
+        s.listeners.change.call(s.selector);
+        if (fs.existsSync(targetFile)) {
+          assert.deepEqual(s.assigned, [target], "existing localized section should route to " + target);
+        } else {
+          assert.deepEqual(s.assigned, [], "missing localized section must not redirect to guessed route " + target);
+          assert.equal(s.html.lang, language, "missing localized section should still apply the chosen language in place");
+        }
+        routeChecks++;
+      }
+    }
+    const sharedSections = ["search","farmer-decision-centre","markets","opportunities","agricultural-services","my-agriculture","agricultural-intelligence","privacy-policy","data-updates"];
+    for (const section of sharedSections) {
+      for (const language of ["en","fr","ar","pt","sw"]) {
+        const s = await scenario("/" + section + "/", "en");
+        s.selector.value = language;
+        s.listeners.change.call(s.selector);
+        await Promise.resolve();
+        assert.deepEqual(s.assigned, [], "shared route should never navigate to a guessed translation: " + section + " (" + language + ")");
+        assert.equal(s.html.lang, language, "shared route should apply the chosen language in place: " + section);
+        routeChecks++;
+      }
+    }
+    console.log("Language-switcher rendered-route matrix passed (" + routeChecks + " route/language checks).");
+  } else {
+    console.warn("Language-switcher rendered-route matrix skipped: build output not found.");
+  }
+  console.log("Language-switcher interaction tests passed (fixture scenarios plus rendered-route matrix when available).");
 })().catch(error => { console.error(error); process.exitCode = 1; });
