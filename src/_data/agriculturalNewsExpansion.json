@@ -4846,11 +4846,11 @@
       "source_tier": 1,
       "verified": "2026-10-14",
       "status": "official",
-      "lifecycle": "needs_review",
+      "lifecycle": "current",
       "coverage_scope": "country",
       "translation_status": "draft",
       "review_after": "2026-11-13",
-      "review_note": "The source page identifies the report period and states that analysis is based on information available as of 15 August 2026, but does not show an exact publication day. Confirm the publication date before publication.",
+      "review_note": "Publication date verified against the ReliefWeb record, which lists FEWS NET's report as published on 22 September 2026. The report analyzes August 2026–January 2027 conditions; recheck after the outlook period.",
       "translations": {
         "fr": {
           "title": "FEWS NET avertit que l’insécurité et les coûts de transport élevés continuent de limiter l’accès à la nourriture en République centrafricaine",
@@ -4868,7 +4868,8 @@
           "title": "FEWS NET yaonya kuwa ukosefu wa usalama na gharama kubwa za usafirishaji zinaendelea kuzuia upatikanaji wa chakula katika Jamhuri ya Afrika ya Kati",
           "summary": "Mtazamo wa FEWS NET wa Agosti 2026 hadi Januari 2027 unasema ukosefu wa usalama na kuhama kwa watu vinaendelea kuzuia upatikanaji wa mashamba, masoko na mapato katika maeneo kadhaa. Mavuno yanaweza kuboresha upatikanaji wa chakula katika baadhi ya maeneo kuanzia Oktoba, lakini uzalishaji ulio chini ya wastani katika maeneo yenye migogoro, bei kubwa za chakula na gharama za usafirishaji zinatarajiwa kuacha kaya nyingi katika hatari. Ukurasa hauonyeshi siku kamili ya kuchapishwa, kwa hiyo rekodi hii inabaki katika ukaguzi wa wahariri."
         }
-      }
+      },
+      "published": "2026-09-22"
     }
   ]
 }
