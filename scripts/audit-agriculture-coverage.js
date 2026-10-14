@@ -125,8 +125,13 @@ newsCountries.forEach((country) => {
     }
     if (nonempty(article.url) && !/^https?:\/\//i.test(article.url)) errors.push(`News ${newsTotal} (${code}): URL is not HTTP(S): ${article.url}`);
     if (nonempty(article.url)) newsUrls.set(article.url, (newsUrls.get(article.url) || 0) + 1);
+    // Translation drafts are deliberately visible as pending on localized pages.
+    // Count only approved translations in the coverage metric so draft text is not
+    // reported as verified localization.
+    const translationsReviewed = !article.translation_status || article.translation_status === "translated";
     for (const lang of LANGS) {
-      if (nonempty(article.translations && article.translations[lang] && article.translations[lang].title) &&
+      if (translationsReviewed &&
+          nonempty(article.translations && article.translations[lang] && article.translations[lang].title) &&
           nonempty(article.translations && article.translations[lang] && article.translations[lang].summary)) translationCounts[lang]++;
     }
   }
