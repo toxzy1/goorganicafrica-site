@@ -26,6 +26,20 @@ const errors = [];
 const warnings = [];
 const nonempty = (v) => v !== undefined && v !== null && String(v).trim() !== "";
 const safeArray = (v) => Array.isArray(v) ? v : [];
+function normalizeSourceUrl(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  try {
+    const url = new URL(raw);
+    url.hash = "";
+    url.hostname = url.hostname.toLowerCase().replace(/^www\\./, "");
+    if ((url.protocol === "https:" && url.port === "443") || (url.protocol === "http:" && url.port === "80")) url.port = "";
+    while (url.pathname.length > 1 && url.pathname.endsWith("/")) url.pathname = url.pathname.slice(0, -1);
+    return url.toString();
+  } catch (_) {
+    return raw.split("#")[0].replace(/\\/+$/, "").toLowerCase();
+  }
+}
 
 function flattenResources(data) {
   if (Array.isArray(data.records)) return data.records;
@@ -122,7 +136,7 @@ newsCountries.forEach((country) => {
   const countryArticles = safeArray(country.articles).concat(newsSupplementalRecords.filter(r => String(r.country_code || "").toUpperCase() === code));
   const seenCountryNews = new Set();
   for (const article of countryArticles) {
-    const articleKey = String(article.url || "").trim().replace(/\/+$/, "").toLowerCase() + "|" + String(article.title || article.headline || "").trim().toLowerCase();
+    const articleKey = normalizeSourceUrl(article.url) + "|" + String(article.title || article.headline || "").trim().toLowerCase();
     if (articleKey !== "|" && seenCountryNews.has(articleKey)) continue;
     if (articleKey !== "|") seenCountryNews.add(articleKey);
     newsTotal++;
@@ -138,7 +152,7 @@ newsCountries.forEach((country) => {
       if (!nonempty(article[field])) errors.push(`News ${newsTotal} (${code}): missing ${field}`);
     }
     if (nonempty(article.url) && !/^https?:\/\//i.test(article.url)) errors.push(`News ${newsTotal} (${code}): URL is not HTTP(S): ${article.url}`);
-    if (nonempty(article.url)) newsUrls.set(article.url, (newsUrls.get(article.url) || 0) + 1);
+    if (nonempty(article.url)) { const normalizedUrl = normalizeSourceUrl(article.url); newsUrls.set(normalizedUrl, (newsUrls.get(normalizedUrl) || 0) + 1); }
     // Translation drafts are deliberately visible as pending on localized pages.
     // Count only approved translations in the coverage metric so draft text is not
     // reported as verified localization.
