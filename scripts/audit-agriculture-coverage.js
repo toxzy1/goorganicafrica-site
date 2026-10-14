@@ -118,7 +118,9 @@ const crossCountryPublishableDuplicates = publishableDuplicateGroups.filter(([,r
 }).length;
 const reviewOnlyDuplicateGroups = duplicateResourceUrlGroups.filter(([,records]) => records.every((r) => !resourcePublishable.includes(r))).length;
 console.log(`Resource URL reuse: ${duplicateResourceUrlGroups.length} repeated URL groups in inventory; ${publishableDuplicateGroups.length} include multiple publishable records; ${crossCountryPublishableDuplicates} span multiple countries; ${reviewOnlyDuplicateGroups} are review-only.`);
-if (crossCountryPublishableDuplicates) warnings.push(`Resources: ${crossCountryPublishableDuplicates} URLs are shared by publishable records across countries; verify that each listing clearly explains the regional/multi-country applicability.`);
+const crossCountryPublishableGroups = publishableDuplicateGroups.filter(([,records]) => new Set(records.filter((r) => resourcePublishable.includes(r)).map((r) => String(r.country_code || "").toUpperCase())).size > 1);
+const crossCountryNeedsScopeNote = crossCountryPublishableGroups.filter(([,records]) => records.filter((r) => resourcePublishable.includes(r)).some((r) => !String(r.description || "").toLowerCase().includes("source note: this url is shared across multiple country listings"))).length;
+if (crossCountryNeedsScopeNote) warnings.push(`Resources: ${crossCountryNeedsScopeNote} cross-country URL groups still need explicit shared-source applicability notes.`);
 
 const newsData = readJson("src/_data/agriculturalNews.json");
 const newsCountries = safeArray(newsData.countries);
