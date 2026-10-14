@@ -171,10 +171,10 @@ newsCountries.forEach((country) => {
 summarizeCounts("Agricultural News", newsCounts, 4);
 const repeatedInventoryUrlGroups = [...newsUrls.entries()].filter(([,count]) => count > 1);
 const repeatedPublishableUrlGroups = [...publishableNewsUrls.entries()].filter(([,count]) => count > 1);
-const reviewOnlyDuplicateGroups = repeatedInventoryUrlGroups.filter(([url]) => !publishableNewsUrls.has(url)).length;
+const reviewOnlyNewsDuplicateGroups = repeatedInventoryUrlGroups.filter(([url]) => !publishableNewsUrls.has(url)).length;
 const mixedStatusDuplicateGroups = repeatedInventoryUrlGroups.filter(([url]) => publishableNewsUrls.has(url) && !repeatedPublishableUrlGroups.some(([publishedUrl]) => publishedUrl === url)).length;
 if (repeatedPublishableUrlGroups.length) warnings.push(`Agricultural News: ${repeatedPublishableUrlGroups.length} normalized URLs are shared by multiple publishable records; verify each record is a distinct country/region listing rather than a duplicate.`);
-if (reviewOnlyDuplicateGroups || mixedStatusDuplicateGroups) console.log(`Agricultural News URL review: ${reviewOnlyDuplicateGroups} repeated URL groups are review-only; ${mixedStatusDuplicateGroups} groups mix publishable and review-queue records.`);
+if (reviewOnlyNewsDuplicateGroups || mixedStatusDuplicateGroups) console.log(`Agricultural News URL review: ${reviewOnlyNewsDuplicateGroups} repeated URL groups are review-only; ${mixedStatusDuplicateGroups} groups mix publishable and review-queue records.`);
 
 const monitorReportPath = path.join(root, "reports", "agricultural-data-monitor.json");
 if (fs.existsSync(monitorReportPath)) {
