@@ -4593,6 +4593,41 @@
       "lifecycle": "current",
       "coverage_scope": "country",
       "translation_status": "draft"
+    },
+    {
+      "country_code": "BI",
+      "category": "crop-protection",
+      "title": "CABI reports successful biological control of mango mealybug in Burundi orchards",
+      "summary": "CABI reported in September 2026 that field monitoring in Burundi found parasitoids released against invasive mango mealybug establishing and helping suppress pest populations in farmers’ orchards. The work, carried out with Burundi plant-health specialists under PlantwisePlus, supports biological pest management; results varied by location, and farmers should follow local plant-health advice.",
+      "url": "https://blog.cabi.org/2026/09/03/beneficial-insects-control-mango-mealybug-burundi/",
+      "source": "CABI",
+      "source_id": "cabi",
+      "source_tier": 1,
+      "published": "2026-09-03",
+      "verified": "2026-10-14",
+      "status": "official",
+      "lifecycle": "current",
+      "coverage_scope": "country",
+      "translation_status": "draft",
+      "review_after": "2026-11-13",
+      "translations": {
+        "fr": {
+          "title": "CABI signale le succès de la lutte biologique contre la cochenille farineuse du manguier au Burundi",
+          "summary": "En septembre 2026, CABI a indiqué que le suivi de terrain au Burundi avait montré que des parasitoïdes libérés contre la cochenille farineuse invasive du manguier s’établissaient et contribuaient à réduire les populations du ravageur dans les vergers des agriculteurs. Mené avec des spécialistes burundais de la santé des plantes dans le cadre de PlantwisePlus, ce travail soutient la lutte biologique; les résultats varient selon les lieux et les agriculteurs doivent suivre les conseils phytosanitaires locaux."
+        },
+        "ar": {
+          "title": "CABI ترصد نجاح المكافحة الحيوية للبق الدقيقي الذي يصيب المانجو في بساتين بوروندي",
+          "summary": "أفادت CABI في سبتمبر 2026 بأن المتابعة الميدانية في بوروندي أظهرت استقرار الطفيليات التي أُطلقت لمكافحة البق الدقيقي الغازي الذي يصيب المانجو، ومساهمتها في الحد من أعداد الآفة في بساتين المزارعين. ونُفذ العمل مع اختصاصيي صحة النبات في بوروندي ضمن برنامج PlantwisePlus لدعم المكافحة الحيوية؛ وتختلف النتائج حسب الموقع، وينبغي للمزارعين اتباع الإرشادات المحلية لصحة النبات."
+        },
+        "pt": {
+          "title": "CABI relata sucesso do controlo biológico da cochonilha da mangueira em pomares do Burundi",
+          "summary": "Em setembro de 2026, a CABI informou que a monitorização de campo no Burundi mostrou que parasitoides libertados contra a cochonilha invasora da mangueira se estabeleceram e ajudaram a reduzir as populações da praga nos pomares dos agricultores. O trabalho, realizado com especialistas burundeses em saúde vegetal no âmbito do PlantwisePlus, apoia o controlo biológico; os resultados variaram conforme o local e os agricultores devem seguir as orientações fitossanitárias locais."
+        },
+        "sw": {
+          "title": "CABI yaripoti mafanikio ya udhibiti wa kibiolojia wa mdudu wa unga wa maembe katika bustani za Burundi",
+          "summary": "Mnamo Septemba 2026, CABI iliripoti kuwa ufuatiliaji wa mashambani nchini Burundi ulionyesha vimelea vilivyoachiliwa dhidi ya mdudu vamizi wa unga wa maembe vimejiimarisha na kusaidia kupunguza idadi ya wadudu hao katika bustani za wakulima. Kazi hiyo ilifanywa pamoja na wataalamu wa afya ya mimea wa Burundi kupitia PlantwisePlus ili kusaidia udhibiti wa kibiolojia; matokeo yalitofautiana kulingana na eneo, na wakulima wanapaswa kufuata ushauri wa afya ya mimea wa eneo lao."
+        }
+      }
     }
   ]
 }
