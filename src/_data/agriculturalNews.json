@@ -807,7 +807,7 @@
           "published": "2026-06-12",
           "verified": "2026-10-07",
           "review_after": "2026-11-06",
-          "status": "official",
+          "status": "review",
           "translations": {
             "fr": {
               "title": "La BAD approuve un programme de 140 millions de dollars pour l’irrigation et l’agro-industrialisation en Ouganda",
@@ -826,7 +826,9 @@
               "summary": "Benki ya Maendeleo ya Afrika imeidhinisha mpango wa kupanua umwagiliaji na uchakataji wa mazao ya kilimo ili kusaidia ajira, mapato ya vijijini na uzalishaji unaostahimili mabadiliko ya tabianchi."
             }
           },
-          "translation_status": "in_review"
+          "translation_status": "in_review",
+          "lifecycle": "needs_review",
+          "review_reason": "Likely duplicate of the direct AfDB press-release record for the same US$140 million Uganda irrigation and agro-industrialisation programme. Keep this listing out of publication pending editorial deduplication."
         },
         {
           "category": "finance",
