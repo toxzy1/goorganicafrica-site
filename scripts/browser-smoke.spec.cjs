@@ -69,7 +69,7 @@ test("country-news language selector reaches French, Arabic and Portuguese pages
 test("homepage and Portuguese calculator expose computed SEO metadata", async ({ page }) => {
   await page.goto(baseURL + "/", { waitUntil: "domcontentloaded" });
   const homepageSource = await page.content();
-  const homepageHead = homepageSource.match(/<head\\b[^>]*>([\\s\\S]*?)<\\/head>/i);
+  const homepageHead = homepageSource.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i);
   expect(homepageHead, "homepage should have a head element").not.toBeNull();
   expect(homepageHead[1]).not.toContain("{{");
   await expect(page.locator('meta[name="description"]')).toHaveAttribute(
@@ -81,7 +81,7 @@ test("homepage and Portuguese calculator expose computed SEO metadata", async ({
   await page.goto(baseURL + "/ng/pt/farm-profit-calculator/", { waitUntil: "domcontentloaded" });
   await expect(page).toHaveTitle("Calculadora gratuita de lucro agrícola — Nigeria | GoOrganicAfrica");
   const calculatorSource = await page.content();
-  const calculatorHead = calculatorSource.match(/<head\\b[^>]*>([\\s\\S]*?)<\\/head>/i);
+  const calculatorHead = calculatorSource.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i);
   expect(calculatorHead, "calculator page should have a head element").not.toBeNull();
   expect(calculatorHead[1]).not.toContain("{{");
 });
