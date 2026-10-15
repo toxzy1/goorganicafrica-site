@@ -3755,6 +3755,21 @@
           "lifecycle": "needs_review",
           "coverage_scope": "regional",
           "review_reason": "This URL is a World Bank Academy programme/training page rather than a dated news article. Hold from published news and assess for the Resources/Training directory; do not count as country-specific news."
+        },
+        {
+          "source": "African Development Bank",
+          "source_id": "afdb",
+          "source_tier": 1,
+          "verified": "2026-10-07",
+          "review_after": "2026-11-06",
+          "status": "official",
+          "category": "farmer-support",
+          "title": "IFAD TRADE programme continues agricultural diversification and entrepreneurship support in Malawi",
+          "summary": "IFAD's project portfolio lists a July 2026 supervision report for the Transforming Agriculture through Diversification and Entrepreneurship Programme, covering agricultural diversification, entrepreneurship and rural value chains in Malawi.",
+          "url": "https://www.ifad.org/en/w/projects/2000001600",
+          "published": "2026-07-31",
+          "country_code": "MW",
+          "country": "Malawi"
         }
       ],
       "localizedNames": {
@@ -3770,19 +3785,6 @@
       "slug": "mali",
       "flag": "🇲🇱",
       "articles": [
-        {
-          "source": "African Development Bank",
-          "source_id": "afdb",
-          "source_tier": 1,
-          "verified": "2026-10-07",
-          "review_after": "2026-11-06",
-          "status": "official",
-          "category": "farmer-support",
-          "title": "IFAD TRADE programme continues agricultural diversification and entrepreneurship support in Malawi",
-          "summary": "IFAD's project portfolio lists a July 2026 supervision report for the Transforming Agriculture through Diversification and Entrepreneurship Programme, covering agricultural diversification, entrepreneurship and rural value chains in Malawi.",
-          "url": "https://www.ifad.org/en/w/projects/2000001600",
-          "published": "2026-07-31"
-        },
         {
           "category": "finance",
           "title": "AfDB and Mali business leaders strengthen access to private-sector financing",
