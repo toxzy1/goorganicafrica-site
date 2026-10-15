@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "editorial_policy": "Reviewed expansion records from authoritative agricultural and food-system sources. Store original source URL, publication date and verification date. Do not copy full articles.",
   "records": [
     {
@@ -1180,20 +1180,6 @@
           "summary": "Katika maonesho ya kilimo na mifugo mjini Gitega, wazalishaji walitaja athari za tabianchi, upatikanaji mdogo wa mbolea na mbegu bora, changamoto za masoko, bei ndogo za shambani na upotevu wa mazao kutokana na uhifadhi duni."
         }
       }
-    },
-    {
-      "country_code": "ER",
-      "category": "climate",
-      "title": "FAO warns of below-average rainfall and crop risks in Eritrea",
-      "summary": "FAO’s September country brief reports that the 2026 Kiremti rainy season performed poorly, with rainfall 20–40 percent below average in several main crop-producing regions and risks to the upcoming harvest of wheat, barley, sorghum, maize, teff and pulses.",
-      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ERI",
-      "source": "FAO GIEWS",
-      "source_tier": 1,
-      "published": "2026-09-30",
-      "verified": "2026-10-13",
-      "status": "review",
-      "lifecycle": "needs_review",
-      "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources."
     },
     {
       "country_code": "MG",
@@ -4999,37 +4985,6 @@
       }
     },
     {
-      "country_code": "ER",
-      "category": "weather-climate",
-      "title": "FAO warns dry weather threatens Eritrea's 2026 main-season crop prospects",
-      "summary": "FAO's 30 September 2026 country brief reports rainfall 20–40 percent below average in several key growing regions and warns of possible crop production shortfalls for the main season harvest expected from November.",
-      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ERI",
-      "source": "FAO Global Information and Early Warning System (GIEWS)",
-      "source_tier": 1,
-      "published": "2026-09-30",
-      "verified": "2026-10-14",
-      "status": "official",
-      "translation_status": "pending_review",
-      "translations": {
-        "fr": {
-          "title": "La FAO avertit que le temps sec menace les perspectives des cultures de la principale campagne 2026 en Érythrée",
-          "summary": "Dans son bulletin du 30 septembre 2026, la FAO indique que les précipitations étaient inférieures de 20 à 40 % à la moyenne dans plusieurs régions agricoles clés et avertit de possibles pertes de production pour la récolte attendue à partir de novembre."
-        },
-        "ar": {
-          "title": "الفاو تحذر من أن الطقس الجاف يهدد آفاق محاصيل الموسم الرئيسي لعام 2026 في إريتريا",
-          "summary": "يشير موجز الفاو الصادر في 30 سبتمبر 2026 إلى أن الأمطار كانت أقل من المتوسط بنسبة 20 إلى 40 بالمئة في عدة مناطق زراعية رئيسية، ويحذر من احتمال انخفاض الإنتاج في حصاد الموسم المتوقع بدءاً من نوفمبر."
-        },
-        "pt": {
-          "title": "FAO alerta que o tempo seco ameaça as perspetivas das culturas da principal campanha de 2026 na Eritreia",
-          "summary": "O relatório da FAO de 30 de setembro de 2026 indica precipitação 20–40% abaixo da média em várias regiões agrícolas importantes e alerta para possíveis quebras de produção na colheita principal prevista a partir de novembro."
-        },
-        "sw": {
-          "title": "FAO yaonya kuwa hali ya ukavu inatishia matarajio ya mazao ya msimu mkuu wa 2026 nchini Eritrea",
-          "summary": "Taarifa ya FAO ya tarehe 30 Septemba 2026 inaonyesha mvua ilikuwa chini ya wastani kwa asilimia 20–40 katika maeneo kadhaa muhimu ya kilimo na kuonya kuhusu uwezekano wa kupungua kwa mavuno ya msimu mkuu yanayotarajiwa kuanzia Novemba."
-        }
-      }
-    },
-    {
       "country_code": "SN",
       "category": "weather-climate",
       "title": "FAO supports Senegal in turning agricultural adaptation priorities into climate-finance projects",
@@ -5057,6 +5012,166 @@
         "sw": {
           "title": "FAO yaunga mkono Senegal kubadilisha vipaumbele vya kukabiliana na mabadiliko ya tabianchi katika kilimo kuwa miradi inayoweza kufadhiliwa",
           "summary": "FAO na wizara za Senegal zilifanya kazi ya kuandaa miradi chini ya Mpango wa Kitaifa wa Kukabiliana na Mabadiliko ya Tabianchi katika Kilimo, na kubainisha mapendekezo ya kipaumbele ya usimamizi endelevu wa ardhi na maji pamoja na mbinu za kilimo zinazostahimili tabianchi."
+        }
+      }
+    },
+    {
+      "country_code": "CD",
+      "category": "crops",
+      "title": "DR Congo extends the 2026–2027 agricultural campaign’s RNA programme to all provinces",
+      "summary": "The Ministry of Agriculture says the national agricultural campaign is extending the RNA programme to all provinces for the 2026–2027 season. Farmers should consult provincial services for implementation details and locally available support.",
+      "url": "https://agriculture.gouv.cd/details.php?$n=MZOjyLyWTfrI6pJ2cggkeVM6/fXu5KGcAM4Zf39BHeGXTce9DtNnwbQoCkGyy0s8DAwwIMB%2BS4G0ndmBU3SxwZCfllulkW91FNikJEe3HGo%2BnWTyIEqMy//fPy/4RG8x&target=actualite",
+      "source": "DR Congo Ministry of Agriculture and Food Security (MINASA)",
+      "published": "2026-10-04",
+      "verified": "2026-10-15",
+      "source_tier": 1,
+      "status": "official",
+      "coverage_scope": "country_specific",
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "La RDC étend le programme RNA de la campagne agricole 2026–2027 à toutes les provinces",
+          "summary": "Le ministère de l’Agriculture indique que le programme RNA de la campagne agricole nationale est étendu à toutes les provinces pour la saison 2026–2027. Les agriculteurs doivent consulter les services provinciaux pour connaître les modalités de mise en œuvre et les appuis disponibles localement."
+        },
+        "ar": {
+          "title": "الكونغو الديمقراطية توسّع برنامج RNA ضمن الموسم الزراعي 2026–2027 ليشمل جميع المقاطعات",
+          "summary": "تقول وزارة الزراعة إن برنامج RNA ضمن الحملة الزراعية الوطنية يمتد إلى جميع المقاطعات لموسم 2026–2027. وينبغي للمزارعين مراجعة الخدمات الإقليمية لمعرفة تفاصيل التنفيذ والدعم المتاح محلياً."
+        },
+        "pt": {
+          "title": "RDC alarga o programa RNA da campanha agrícola 2026–2027 a todas as províncias",
+          "summary": "O Ministério da Agricultura afirma que o programa RNA da campanha agrícola nacional será alargado a todas as províncias na época 2026–2027. Os agricultores devem consultar os serviços provinciais para conhecer os detalhes da implementação e o apoio disponível localmente."
+        },
+        "sw": {
+          "title": "DR Congo yaeneza mpango wa RNA wa kampeni ya kilimo ya 2026–2027 katika majimbo yote",
+          "summary": "Wizara ya Kilimo inasema mpango wa RNA wa kampeni ya kitaifa ya kilimo unaenezwa katika majimbo yote kwa msimu wa 2026–2027. Wakulima wanapaswa kuwasiliana na huduma za majimbo ili kupata maelezo ya utekelezaji na msaada unaopatikana katika maeneo yao."
+        }
+      }
+    },
+    {
+      "country_code": "LR",
+      "category": "finance",
+      "title": "Liberia’s agriculture minister seeks US$69 million in 2027 budget to strengthen farmer support",
+      "summary": "Liberia’s agriculture minister is seeking US$69 million for the ministry’s 2027 budget, citing a shortage of agricultural technicians and the need to expand direct farmer support. The report describes a budget request, not funding already approved or paid to farmers.",
+      "url": "https://www.moa.gov.lr/media/press-releases/agriculture-minister-seeks-us69-million-2027-national-budget-strengthen-farmer",
+      "source": "Liberia Ministry of Agriculture",
+      "published": "2026-10-06",
+      "verified": "2026-10-15",
+      "source_tier": 1,
+      "status": "official",
+      "coverage_scope": "country_specific",
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Le ministre libérien de l’Agriculture demande 69 millions de dollars dans le budget 2027 pour renforcer l’appui aux agriculteurs",
+          "summary": "Le ministre libérien de l’Agriculture demande 69 millions de dollars pour le budget 2027 du ministère, évoquant le manque de techniciens agricoles et la nécessité d’élargir l’appui direct aux agriculteurs. Il s’agit d’une demande budgétaire, et non de fonds déjà approuvés ou versés."
+        },
+        "ar": {
+          "title": "وزير الزراعة في ليبيريا يطلب تخصيص 69 مليون دولار في ميزانية 2027 لدعم المزارعين",
+          "summary": "يطلب وزير الزراعة في ليبيريا 69 مليون دولار لميزانية الوزارة لعام 2027، مشيراً إلى نقص الفنيين الزراعيين والحاجة إلى توسيع الدعم المباشر للمزارعين. وهذا طلب للميزانية وليس تمويلاً تمت الموافقة عليه أو دفعه بالفعل."
+        },
+        "pt": {
+          "title": "Ministro da Agricultura da Libéria pede US$ 69 milhões no orçamento de 2027 para reforçar o apoio aos agricultores",
+          "summary": "O ministro da Agricultura da Libéria solicita US$ 69 milhões para o orçamento ministerial de 2027, citando a falta de técnicos agrícolas e a necessidade de ampliar o apoio direto aos agricultores. Trata-se de um pedido orçamental, não de fundos já aprovados ou pagos."
+        },
+        "sw": {
+          "title": "Waziri wa Kilimo wa Liberia aomba dola milioni 69 katika bajeti ya 2027 kuimarisha msaada kwa wakulima",
+          "summary": "Waziri wa Kilimo wa Liberia anaomba dola milioni 69 kwa bajeti ya wizara ya mwaka 2027, akitaja uhaba wa maafisa wa ugani na hitaji la kupanua msaada wa moja kwa moja kwa wakulima. Hii ni ombi la bajeti, si fedha ambazo tayari zimeidhinishwa au kulipwa."
+        }
+      }
+    },
+    {
+      "country_code": "MZ",
+      "category": "crops",
+      "title": "Mozambique farmer expands coffee production with support for seedlings",
+      "summary": "A smallholder farmer in Manica is growing coffee after receiving seedlings through the Beira Corridor Integrated Agricultural Development Programme. FAO reports 760 Vumba coffee plants already in production and 3,360 additional seedlings planted with programme support.",
+      "url": "https://www.fao.org/mozambique/news/details/ant%C3%B3nio-guarai-never-forgot-coffee/en",
+      "source": "FAO in Mozambique",
+      "published": "2026-10-01",
+      "verified": "2026-10-15",
+      "source_tier": 1,
+      "status": "official",
+      "coverage_scope": "country_specific",
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Un agriculteur mozambicain développe sa production de café grâce à un appui en plants",
+          "summary": "Un petit producteur de Manica cultive du café après avoir reçu des plants dans le cadre du Programme intégré de développement agricole du corridor de Beira. Selon la FAO, 760 caféiers Vumba sont déjà en production et 3 360 plants supplémentaires ont été mis en terre avec l’appui du programme."
+        },
+        "ar": {
+          "title": "مزارع موزمبيقي يوسّع إنتاج القهوة بدعم من شتلات زراعية",
+          "summary": "يزرع مزارع صغير في مانيكا القهوة بعد حصوله على شتلات ضمن برنامج التنمية الزراعية المتكاملة لممر بيرا. وتفيد الفاو بأن 760 شجرة قهوة من صنف فومبا دخلت الإنتاج، مع زراعة 3360 شتلة إضافية بدعم البرنامج."
+        },
+        "pt": {
+          "title": "Agricultor moçambicano expande a produção de café com apoio de mudas",
+          "summary": "Um pequeno agricultor de Manica está a cultivar café após receber mudas através do Programa Integrado de Desenvolvimento Agrícola do Corredor da Beira. Segundo a FAO, 760 cafeeiros Vumba já estão em produção e foram plantadas mais 3.360 mudas com apoio do programa."
+        },
+        "sw": {
+          "title": "Mkulima wa Msumbiji aongeza uzalishaji wa kahawa kwa msaada wa miche",
+          "summary": "Mkulima mdogo wa Manica analima kahawa baada ya kupata miche kupitia Mpango Jumuishi wa Maendeleo ya Kilimo wa Ukanda wa Beira. FAO inaripoti kuwa miti 760 ya kahawa ya Vumba tayari inazaa na miche mingine 3,360 imepandwa kwa msaada wa mpango huo."
+        }
+      }
+    },
+    {
+      "country_code": "SN",
+      "category": "crops",
+      "title": "Senegal receives first potato-seed consignments for the 2026–2027 horticultural campaign",
+      "summary": "Senegal’s agriculture ministry says the first containers of potato seed for the 2026–2027 horticultural campaign have been received. The ministry highlights quality and transparency controls and reports 16,686 tonnes of subsidized seed within a 7 billion FCFA mobilization; farmers should verify local distribution and eligibility with official services.",
+      "url": "https://agriculture.gouv.sn/campagne-horticole-2026-2027-les-premiers-conteneurs-de-semences-de-pomme-de-terre-receptionnes-la-transparence-et-la-qualite-au-coeur-de-laction-publique/",
+      "source": "Senegal Ministry of Agriculture, Food Sovereignty and Livestock (MASAE)",
+      "published": "2026-10-14",
+      "verified": "2026-10-15",
+      "source_tier": 1,
+      "status": "official",
+      "coverage_scope": "country_specific",
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Le Sénégal reçoit les premiers conteneurs de semences de pomme de terre pour la campagne horticole 2026–2027",
+          "summary": "Le ministère sénégalais de l’Agriculture indique que les premiers conteneurs de semences de pomme de terre pour la campagne horticole 2026–2027 ont été réceptionnés. Il met en avant les contrôles de qualité et de transparence et annonce 16 686 tonnes de semences subventionnées dans le cadre d’une mobilisation de 7 milliards de FCFA ; la distribution locale et l’éligibilité doivent être confirmées auprès des services officiels."
+        },
+        "ar": {
+          "title": "السنغال تستقبل أول شحنات بذور البطاطس للموسم البستاني 2026–2027",
+          "summary": "تقول وزارة الزراعة السنغالية إن أول حاويات بذور البطاطس لموسم 2026–2027 قد وصلت. وتؤكد الوزارة ضوابط الجودة والشفافية وتذكر 16,686 طناً من البذور المدعومة ضمن تعبئة 7 مليارات فرنك أفريقي؛ ويجب التحقق من التوزيع المحلي والأهلية لدى الجهات الرسمية."
+        },
+        "pt": {
+          "title": "Senegal recebe primeiros carregamentos de sementes de batata para a campanha hortícola 2026–2027",
+          "summary": "O Ministério da Agricultura do Senegal informa que chegaram os primeiros contentores de sementes de batata para a campanha hortícola de 2026–2027. O ministério destaca os controlos de qualidade e transparência e indica 16.686 toneladas de sementes subsidiadas num esforço de 7 mil milhões de FCFA; a distribuição local e a elegibilidade devem ser confirmadas junto dos serviços oficiais."
+        },
+        "sw": {
+          "title": "Senegal yapokea shehena za kwanza za mbegu za viazi kwa msimu wa bustani wa 2026–2027",
+          "summary": "Wizara ya Kilimo ya Senegal inasema makontena ya kwanza ya mbegu za viazi kwa msimu wa bustani wa 2026–2027 yamepokelewa. Wizara inasisitiza udhibiti wa ubora na uwazi na inaripoti tani 16,686 za mbegu zinazofadhiliwa ndani ya mpango wa FCFA bilioni 7; wakulima wanapaswa kuthibitisha usambazaji wa eneo na ustahiki kwa mamlaka rasmi."
+        }
+      }
+    },
+    {
+      "country_code": "SO",
+      "category": "general",
+      "title": "FAO warns El Niño could raise Somalia’s Deyr-season flood risk",
+      "summary": "FAO warns that a strengthening El Niño and a strong October–December 2026 wet-season forecast could raise flood risks in Somalia during the Deyr season. This is a risk forecast, not a certainty; farmers and pastoralists should follow current local weather and official early-warning advice.",
+      "url": "https://www.fao.org/somalia/news/details/strong-el-nino-weather-condition-raises-risk-of-severe-deyr-flooding-in-somalia-fao-warns/en",
+      "source": "FAO in Somalia",
+      "published": "2026-09-01",
+      "verified": "2026-10-15",
+      "source_tier": 1,
+      "status": "official",
+      "coverage_scope": "country_specific",
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "La FAO avertit qu’El Niño pourrait accroître le risque d’inondations pendant la saison Deyr en Somalie",
+          "summary": "La FAO avertit qu’un épisode El Niño en renforcement et des prévisions de fortes pluies d’octobre à décembre 2026 pourraient accroître le risque d’inondations en Somalie pendant la saison Deyr. Il s’agit d’un risque prévu, non d’une certitude ; les agriculteurs et éleveurs doivent suivre les alertes météorologiques et les conseils officiels locaux."
+        },
+        "ar": {
+          "title": "الفاو تحذر من احتمال زيادة مخاطر الفيضانات في موسم دير بالصومال بسبب إل نينيو",
+          "summary": "تحذر الفاو من أن اشتداد ظاهرة إل نينيو وتوقعات موسم أمطار قوي بين أكتوبر وديسمبر 2026 قد يزيدان خطر الفيضانات في الصومال خلال موسم دير. هذا توقع للمخاطر وليس أمراً مؤكداً؛ وينبغي للمزارعين والرعاة متابعة التحذيرات الجوية والإرشادات الرسمية المحلية."
+        },
+        "pt": {
+          "title": "FAO alerta que o El Niño pode aumentar o risco de cheias na estação Deyr na Somália",
+          "summary": "A FAO alerta que o fortalecimento do El Niño e a previsão de uma estação chuvosa intensa entre outubro e dezembro de 2026 podem aumentar o risco de cheias na Somália durante a estação Deyr. Trata-se de um risco previsto, não de uma certeza; agricultores e pastores devem acompanhar os avisos meteorológicos e as orientações oficiais locais."
+        },
+        "sw": {
+          "title": "FAO yaonya El Niño inaweza kuongeza hatari ya mafuriko wakati wa msimu wa Deyr nchini Somalia",
+          "summary": "FAO inaonya kuwa El Niño inayoongezeka na utabiri wa msimu wa mvua nyingi kati ya Oktoba na Desemba 2026 vinaweza kuongeza hatari ya mafuriko nchini Somalia wakati wa msimu wa Deyr. Hii ni hatari inayotabiriwa, si jambo la hakika; wakulima na wafugaji wanapaswa kufuatilia tahadhari za hali ya hewa na ushauri rasmi wa eneo."
         }
       }
     }
