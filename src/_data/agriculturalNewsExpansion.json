@@ -2809,7 +2809,27 @@
       "verified": "2026-10-13",
       "status": "review",
       "lifecycle": "needs_review",
-      "review_reason": "Official government item found; verify whether the heritage designation has sufficient agricultural relevance for the Agricultural News category before publication."
+      "review_reason": "Official government item found; verify whether the heritage designation has sufficient agricultural relevance for the Agricultural News category before publication.",
+      "translations": {
+        "fr": {
+          "title": "Six roças de São Tomé-et-Príncipe reconnues comme sites du patrimoine mondial",
+          "summary": "Le gouvernement de São Tomé-et-Príncipe indique que six roças ont été sélectionnées comme sites du patrimoine mondial, mettant en valeur les paysages agricoles et le patrimoine liés à l’histoire rurale et agricole du pays."
+        },
+        "ar": {
+          "title": "اختيار ست مزارع تاريخية في ساو تومي وبرينسيبي مواقعَ للتراث العالمي",
+          "summary": "تفيد حكومة ساو تومي وبرينسيبي باختيار ست مزارع تاريخية مواقعَ للتراث العالمي، في إبراز للمناظر الزراعية والتراث المرتبطين بتاريخ البلاد الريفي والزراعي."
+        },
+        "pt": {
+          "title": "Seis roças de São Tomé e Príncipe reconhecidas como sítios do património mundial",
+          "summary": "O governo de São Tomé e Príncipe informa que seis roças foram selecionadas como sítios do património mundial, destacando paisagens agrícolas e património ligados à história rural e agrícola do país."
+        },
+        "sw": {
+          "title": "Mashamba sita ya kihistoria ya São Tomé na Príncipe yatambuliwa kama maeneo ya urithi wa dunia",
+          "summary": "Serikali ya São Tomé na Príncipe inaripoti kuwa mashamba sita ya kihistoria yalichaguliwa kuwa maeneo ya urithi wa dunia, yakionyesha mandhari ya kilimo na urithi unaohusishwa na historia ya vijijini na kilimo nchini humo."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "ER",
@@ -3684,7 +3704,27 @@
       "status": "review",
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct official FAO article located. Confirm the legal title and whether the July regulations are now fully in force before approval."
+      "review_reason": "Direct official FAO article located. Confirm the legal title and whether the July regulations are now fully in force before approval.",
+      "translations": {
+        "fr": {
+          "title": "São Tomé-et-Príncipe adopte un nouveau règlement général sur les activités de pêche",
+          "summary": "Le Service du droit du développement de la FAO a soutenu la Direction des pêches et de l’aquaculture dans l’élaboration d’un nouveau règlement général sur les activités de pêche, publié en juillet 2026. Les règles alignent la gestion nationale des pêches sur l’approche écosystémique et complètent la stratégie du pays pour la pêche et l’aquaculture."
+        },
+        "ar": {
+          "title": "ساو تومي وبرينسيبي تعتمد لوائح عامة جديدة لأنشطة الصيد",
+          "summary": "قدمت دائرة قانون التنمية في الفاو الدعم لمديرية مصايد الأسماك والاستزراع المائي في إعداد لوائح عامة جديدة لأنشطة الصيد نُشرت في يوليو 2026. وتوائم القواعد إدارة المصايد الوطنية مع النهج القائم على النظم الإيكولوجية وتكمل استراتيجية البلاد للمصايد والاستزراع المائي."
+        },
+        "pt": {
+          "title": "São Tomé e Príncipe adota novo regulamento geral para as atividades de pesca",
+          "summary": "O Serviço de Direito do Desenvolvimento da FAO apoiou a Direção das Pescas e da Aquicultura na elaboração de um novo Regulamento Geral das Atividades de Pesca, publicado em julho de 2026. As regras alinham a gestão nacional das pescas com a abordagem ecossistémica e complementam a estratégia do país para as pescas e a aquicultura."
+        },
+        "sw": {
+          "title": "São Tomé na Príncipe yaidhinisha kanuni mpya za jumla za shughuli za uvuvi",
+          "summary": "Kitengo cha Sheria ya Maendeleo cha FAO kilisaidia Kurugenzi ya Uvuvi na Ufugaji wa Viumbe Majini kuandaa Kanuni mpya za Jumla za Shughuli za Uvuvi, zilizochapishwa Julai 2026. Kanuni hizo zinaoanisha usimamizi wa uvuvi wa kitaifa na mbinu inayozingatia mfumo ikolojia na kukamilisha mkakati wa nchi kuhusu uvuvi na ufugaji wa viumbe majini."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "EG",
@@ -6561,7 +6601,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "São Tomé-et-Príncipe lance un fonds de soutien à l’agriculture familiale avec GTI Bank",
+          "summary": "STP-Press rapporte que le gouvernement a lancé le Fonds de soutien à l’agriculture familiale et signé un accord avec GTI Bank pour appuyer ses opérations financières. Le fonds vise à promouvoir une agriculture familiale durable. Les agriculteurs doivent confirmer les critères d’admissibilité, les conditions et les modalités de demande auprès du ministère ou de la banque concernés avant de se fier à cette annonce."
+        },
+        "ar": {
+          "title": "ساو تومي وبرينسيبي تطلق صندوقاً لدعم الزراعة الأسرية بالتعاون مع بنك GTI",
+          "summary": "أفادت STP-Press بأن الحكومة أطلقت صندوق دعم الزراعة الأسرية ووقعت اتفاقاً مع بنك GTI لدعم عملياته المالية. ويهدف الصندوق إلى تعزيز الزراعة الأسرية المستدامة. وينبغي للمزارعين التأكد من شروط الأهلية والأحكام وإجراءات التقديم لدى الوزارة أو البنك المعني قبل الاعتماد على هذا الإعلان."
+        },
+        "pt": {
+          "title": "São Tomé e Príncipe lança fundo de apoio à agricultura familiar com o GTI Bank",
+          "summary": "A STP-Press noticia que o governo lançou o Fundo de Apoio à Agricultura Familiar e assinou um acordo com o GTI Bank para apoiar as suas operações financeiras. O fundo pretende promover a agricultura familiar sustentável. Antes de contar com o anúncio, os agricultores devem confirmar os critérios de elegibilidade, as condições e os procedimentos de candidatura junto do ministério ou banco responsável."
+        },
+        "sw": {
+          "title": "São Tomé na Príncipe yazindua mfuko wa kusaidia kilimo cha familia kwa ushirikiano na GTI Bank",
+          "summary": "STP-Press inaripoti kuwa serikali imezindua Mfuko wa Msaada kwa Kilimo cha Familia na kusaini makubaliano na GTI Bank kusaidia shughuli zake za kifedha. Mfuko unalenga kukuza kilimo endelevu cha familia. Wakulima wanapaswa kuthibitisha vigezo vya kustahiki, masharti na taratibu za maombi kwa wizara au benki husika kabla ya kutegemea tangazo hili."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "TG",
