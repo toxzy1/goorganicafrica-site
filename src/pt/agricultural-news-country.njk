@@ -21,7 +21,7 @@ pageLanguage: pt
 <p class="lede">Desenvolvimentos agrícolas atuais e verificados para este país.</p>
 {% set publishedCountryArticles = [] %}
 {% for candidate in country.articles %}
-  {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and candidate.lifecycle == "current" %}{% set publishedCountryArticles = publishedCountryArticles.concat([candidate]) %}{% endif %}
+  {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and (not candidate.lifecycle or candidate.lifecycle == "current") %}{% set _ = publishedCountryArticles.push(candidate) %}{% endif %}
 {% endfor %}
 {% if publishedCountryArticles.length %}
 {% for article in publishedCountryArticles %}
@@ -38,6 +38,6 @@ pageLanguage: pt
 </article>
 {% endfor %}
 {% else %}
-<div class="card"><h2>Notícias em verificação</h2><p>Ainda não foram publicadas notícias atuais verificadas para este país.</p><p>As notícias serão adicionadas somente após a verificação de uma fonte oficial ou confiável.</p></div>
+<div class="card news-empty-fallback"><h2>Notícias em verificação</h2><p>Ainda não foram publicadas notícias atuais verificadas para este país. As notícias serão adicionadas após a verificação de uma fonte oficial ou confiável.</p><p>Enquanto isso, consulte <a href="/pt/agriculture-resources/">recursos agrícolas</a>, <a href="/pt/opportunities/">oportunidades</a> ou <a href="/search/">pesquise informações agrícolas</a>.</p></div>
 {% endif %}
 </div></section>
