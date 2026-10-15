@@ -102,7 +102,7 @@ const resources = merge(
 );
 const news = merge(
   'agriculturalNews.json',
-  ['agriculturalNewsSupplement.json', 'agriculturalNewsExpansion.json'],
+  ['agriculturalNewsSupplement.json', 'agriculturalNewsExpansion.json', 'agriculturalNewsEquatorialGuinea.json'],
   'country_code',
   'articles',
   false

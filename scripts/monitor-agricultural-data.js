@@ -20,7 +20,7 @@ const opp=read("agriculturalOpportunities.json").records||[];
 const news=[];
 const newsCountryList=read("agriculturalNews.json").countries||[];
 for(const c of newsCountryList) for(const a of c.articles||[]) news.push({...a,country_code:c.code,country_name:c.name});
-news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]));
+news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]),...(read("agriculturalNewsEquatorialGuinea.json").records||[]));
 // Coverage must include the supplemental and expansion records too, otherwise
 // countries with stories outside the base file are incorrectly reported empty.
 // Count unique story URLs per country so duplicate records do not inflate coverage.
@@ -28,6 +28,9 @@ const isSpecificNewsUrl=value=>{
  try{
   const parsed=new URL(String(value||""));
   const pathname=parsed.pathname.replace(/\/+$/,"")||"/";
+  // WordPress query permalinks such as /?lang=en&p=17528 are direct post pages, not generic homepages.
+  const postId = parsed.searchParams.get("p") || "";
+  if(pathname==="/" && postId && Number.isInteger(Number(postId)) && Number(postId)>0)return true;
   if(/\/hand-in-hand\/investment-forum-2026\//i.test(pathname))return false;
   return !(pathname==="/"||/(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname)||/^\/en$/i.test(pathname)||/\/newsdetails(?:\/en)?$/i.test(pathname)||/\/news\/detail(?:\/en)?$/i.test(pathname));
  }catch{return false;}
@@ -182,7 +185,7 @@ const report={
  services:{total:publishableServices.length,stale:publishableServices.filter(r=>{const d=r.verified_date||r.verified;return !d||age(d)===null||age(d)>180;}).length,missing_verification_date:publishableServices.filter(r=>!(r.verified_date||r.verified)).length},
  service_review_queue:{total:serviceReviewQueue.length,missing_verification_date:serviceReviewQueue.filter(r=>!(r.verified_date||r.verified)).length},
  opportunities:{total:opp.length,review:opp.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length,needs_reverification:opp.filter(r=>["open","active"].includes(String(r.status).toLowerCase())&&(!r.verified||age(r.verified)===null||age(r.verified)>14)).length,missing_verification_date:opp.filter(r=>!(r.verified)).length,expired:opp.filter(r=>r.deadline&&age(r.deadline)!==null&&new Date(r.deadline)<today).length,invalid_deadline_date:opp.filter(r=>r.deadline&&age(r.deadline)===null).length},
- news:{total:news.length,stale:news.filter(r=>{const d=r.published||r.date;return !d||age(d)===null||age(d)>30;}).length,missing_publication_date:news.filter(r=>!(r.published||r.date)).length,future_publication_dates:news.filter(r=>{const d=r.published||r.date;return d&&age(d)!==null&&age(d)<0;}).map(r=>({country_code:r.country_code||r.code||"",title:r.title||"",published:r.published||r.date,url:r.url||"",lifecycle:r.lifecycle||""})),review:news.filter(r=>["review","draft","needs_review"].includes(String(r.status||"").toLowerCase())||String(r.lifecycle||"").toLowerCase()==="needs_review").length},
+ news:{total:news.length,stale:news.filter(r=>{const d=r.published||r.date;return !d||age(d)===null||age(d)>30;}).length,public_total:publishableNews.length,public_stale:publishableNews.filter(r=>{const d=r.published||r.date;return !d||age(d)===null||age(d)>30;}).length,review_queue_total:newsReviewQueue.length,review_queue_stale:newsReviewQueue.filter(r=>{const d=r.published||r.date;return !d||age(d)===null||age(d)>30;}).length,missing_publication_date:news.filter(r=>!(r.published||r.date)).length,future_publication_dates:news.filter(r=>{const d=r.published||r.date;return d&&age(d)!==null&&age(d)<0;}).map(r=>({country_code:r.country_code||r.code||"",title:r.title||"",published:r.published||r.date,url:r.url||"",lifecycle:r.lifecycle||""})),review:newsReviewQueue.length},
  news_country_coverage:{countries:newsCountryCoverage.length,zero_story_countries:newsCountryCoverage.filter(c=>c.story_count===0),single_story_countries:newsCountryCoverage.filter(c=>c.story_count===1),under_four_story_countries:newsCountryCoverage.filter(c=>c.story_count<4),under_four_country_specific_story_countries:newsCountryCoverage.filter(c=>c.country_specific_story_count<4),single_source_countries:newsCountryCoverage.filter(c=>c.source_count===1),under_three_sources_countries:newsCountryCoverage.filter(c=>c.source_count<3),under_three_country_specific_sources:newsCountryCoverage.filter(c=>c.country_specific_source_count<3),review_candidates:newsReviewQueue.length,review_candidates_by_country:newsReviewCandidatesByCountry,country_review_priorities:countryReviewPriorities,coverage_by_country:newsCountryCoverage},
  source_quality:sourceQuality,
  action:"Review flagged records in CMS before publication or replacement. Duplicate and generic-source findings are review flags only; this monitor never deletes or changes live records."
