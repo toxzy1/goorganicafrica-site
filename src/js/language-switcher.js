@@ -133,11 +133,10 @@
     // Shared pages (such as the calculator) stay on the same URL.
     if (rest === "farm-profit-calculator") return "/farm-profit-calculator/";
 
-    // Keep the visible per-content language links as a fallback for older
-    // localized content that does not yet have an explicit target map.
-    var link = document.querySelector('.translation-links a[data-language="' + code + '"]');
-    if (link && link.getAttribute("href")) return link.getAttribute("href");
-
+    // Never navigate through generic per-content translation links here:
+    // on older pages they may point to a different article or section.
+    // Without an explicit target map or known section route, stay on this page
+    // and translate the interface in place rather than sending visitors elsewhere.
     return null;
   }
 
@@ -184,8 +183,8 @@
     return languageLoads[code];
   }
 
-  function refresh() {
-    var code = setLanguage(currentLanguage());
+  function refresh(requestedLanguage) {
+    var code = setLanguage(requestedLanguage || currentLanguage());
     return loadLanguage(code).then(function () {
       apply(document.body, code);
 
@@ -234,14 +233,10 @@
         // Blog/eBook detail pages, Agricultural News country pages, and all
         // localized section indexes before falling back to generic sections.
         var targetUrl = localizedContentUrl(requested);
-        if (!targetUrl && section) {
-          var sectionPath = section === "calculator"
-            ? "farm-profit-calculator"
-            : (section === "resources" ? "agriculture-resources" : section);
-          targetUrl = requested === "en"
-            ? "/" + (section === "home" ? "" : sectionPath + "/")
-            : "/" + requested + "/" + (section === "home" ? "" : sectionPath + "/");
-        }
+        // Do not guess a language-prefixed URL when this page has no known
+        // destination. A guessed route can 404 or send visitors to the wrong
+        // section/homepage. Explicit maps and known section routes above are
+        // the only safe navigation targets; otherwise translate in place.
         setLanguage(requested);
         // Shared pages intentionally keep the same URL. Do not reload them,
         // because a reload restores the server's default <html lang="en">.
@@ -251,7 +246,10 @@
           window.location.assign(targetUrl);
           return;
         }
-        refresh();
+        // When a page has no explicit translated destination, keep the requested
+        // language for the in-place UI refresh instead of re-deriving English
+        // from the unchanged URL and undoing the visitor's selection.
+        refresh(requested);
       });
     }
     refresh().then(function () { readyResolve(window.GOA_I18N); });

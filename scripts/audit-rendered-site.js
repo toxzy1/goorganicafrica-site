@@ -1,3 +1,4 @@
+// Rendered-site release audit; executed by the build workflow for review-candidate PRs.
 const fs = require("fs");
 const path = require("path");
 const site = path.join(__dirname, "..", "_site");
@@ -122,6 +123,28 @@ for (const file of htmlFiles) {
   if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
     const selectors = (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
     if (selectors !== 1) failures.push(rel + ": expected exactly one site language selector, found " + selectors);
+    const selectorOptions = new Set();
+    for (const select of html.matchAll(/<select\b[^>]*class=["'][^"']*site-language-select[^"']*["'][^>]*>([\s\S]*?)<\/select>/gi)) {
+      for (const option of select[1].matchAll(/<option\b[^>]*value=["'](en|fr|ar|pt|sw)["']/gi)) selectorOptions.add(option[1]);
+    }
+    for (const lang of ["en", "fr", "ar", "pt", "sw"]) {
+      if (!selectorOptions.has(lang)) failures.push(rel + ": language selector is missing option " + lang);
+    }
+  }
+  // Every generated country-news page must link to the matching country slug
+  // in all five language trees. This catches accidental homepage fallbacks,
+  // guessed slugs, and language options that lead to nonexistent pages.
+  const countryNewsRoute = rel.match(/^(?:(fr|ar|pt|sw)\/)?agricultural-news\/([^/]+)\/index\.html$/);
+  if (countryNewsRoute) {
+    const slug = countryNewsRoute[2];
+    const targets = {};
+    for (const match of html.matchAll(/data-url-(en|fr|ar|pt|sw)=["']([^"']+)["']/gi)) targets[match[1]] = match[2];
+    for (const lang of ["en", "fr", "ar", "pt", "sw"]) {
+      const expected = "/" + (lang === "en" ? "" : lang + "/") + "agricultural-news/" + slug + "/";
+      if (targets[lang] !== expected) failures.push(rel + ": language target " + lang + " should be " + expected + ", found " + (targets[lang] || "(missing)"));
+      const targetFile = path.join(site, expected.replace(/^\//, ""), "index.html");
+      if (!fs.existsSync(targetFile)) failures.push(rel + ": language target does not render for " + lang + ": " + expected);
+    }
   }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
     failures.push(rel + ": legacy content-variant markup remains");
@@ -165,8 +188,8 @@ for (const [rel, prefix] of [
 // Step 7: verify Resources and Agricultural News are rendered in all five languages.
 const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
-const hasLang = (html, lang) => new RegExp('<html\\b[^>]*\\blang="' + lang + '"', "i").test(html);
-const hasRtl = (html) => new RegExp('<html\\b[^>]*\\bdir="rtl"', "i").test(html);
+const hasLang = (html, lang) => { const match = html.match(/<html\b[^>]*\blang=["\']([^"\']+)["\']/i); return !!match && match[1].split("-")[0].toLowerCase() === lang; };
+const hasRtl = (html) => /<html\b[^>]*\bdir=["\']rtl["\']/i.test(html);
 const resourcePages = enabledLanguages.map((lang) => ({
   lang,
   rel: languagePrefix(lang) + "agriculture-resources/index.html",
@@ -231,12 +254,31 @@ for (const item of newsPages) {
   if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
 }
 
+// Language switching must not send shared discovery pages to guessed localized URLs.
+// Keep this contract checked in CI because a route can build successfully yet redirect visitors to the homepage or a 404.
+const switcherPath = path.join(source, "js", "language-switcher.js");
+if (!fs.existsSync(switcherPath)) {
+  failures.push("Language switcher source is missing.");
+} else {
+  const switcher = fs.readFileSync(switcherPath, "utf8");
+  for (const route of ["search", "farmer-decision-centre", "markets", "opportunities", "agricultural-services", "my-agriculture", "agricultural-intelligence"]) {
+    if (!switcher.includes(route)) failures.push("Language switcher: missing shared-route handling for " + route);
+  }
+  if (!switcher.includes('localStorage.getItem("goa_language")')) failures.push("Language switcher: shared-page language preference is not restored");
+  if (!switcher.includes('localStorage.setItem("goa_language"')) failures.push("Language switcher: selected language is not persisted");
+  if (!switcher.includes("return null;") || !switcher.includes("window.location.assign(targetUrl)")) failures.push("Language switcher: missing safe no-target navigation guard");
+}
+
 // Shared discovery pages must render usable source data, not just their shell.
 const searchHtml = read("search/index.html");
 if (searchHtml) {
   for (const id of ["goa-global-search", "goa-search-type", "goa-search-results"]) {
     if (!searchHtml.includes('id="' + id + '"')) failures.push("search/index.html: missing search UI element #" + id);
   }
+  // Keyword and slug indexing protects searches for terms absent from a card title.
+  if (!searchHtml.includes("data-keywords=")) failures.push("search/index.html: searchable records do not expose keyword metadata");
+  if (!searchHtml.includes("keywords:el.dataset.keywords")) failures.push("search/index.html: keyword metadata is not loaded into the search index");
+  if (!searchHtml.includes("x.keywords")) failures.push("search/index.html: query matching ignores keyword metadata");
   const sourceMatch = searchHtml.match(/<div id=["']goa-search-source["'] hidden>([\s\S]*?)<\/div>/i);
   if (!sourceMatch) {
     failures.push("search/index.html: embedded source index is missing");
@@ -247,7 +289,120 @@ if (searchHtml) {
     for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
       if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("search/index.html: no searchable " + type + " records");
     }
+    const records = [...sourceBlock.matchAll(/<article\b([^>]*)>/gi)];
+    let unusable = 0;
+    for (const match of records) {
+      const attrs = match[1];
+      const urlMatch = attrs.match(/\bdata-url=["']([^"']*)["']/i);
+      const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
+      const title = titleMatch ? titleMatch[1].trim() : "";
+      const url = urlMatch ? urlMatch[1].trim() : "";
+      if (!title || !searchTargetExists(url)) {
+        unusable++;
+        failures.push("search/index.html: indexed " + ((attrs.match(/\bdata-type=["']([^"']*)["']/i) || [,"unknown"])[1]) +
+          " record has missing title or unusable destination: " + (title || "(untitled)") + " -> " + (url || "(no URL)"));
+      }
+    }
+    if (unusable) failures.push("search/index.html: " + unusable + " indexed records cannot lead visitors to a usable destination");
+
+    // Review-only resources must not be the only indexed version for a country/source.
+    // Some datasets intentionally contain a review duplicate alongside an official record;
+    // compare by country and URL so those legitimate published copies do not false-fail.
+    const resourceFiles = ["_data/agriculturalResources.json", "_data/agriculturalResourcesSupplement.json"];
+    const resourceRecords = [];
+    const flattenResourceRecords = data => {
+      if (Array.isArray(data.records)) return data.records;
+      return (data.countries || []).flatMap(country =>
+        Object.values(country.records || {}).flatMap(items =>
+          (Array.isArray(items) ? items : []).map(record => ({
+            ...record,
+            country_code: record.country_code || country.code
+          }))
+        )
+      );
+    };
+    for (const relData of resourceFiles) {
+      const filePath = path.join(source, relData);
+      if (!fs.existsSync(filePath)) continue;
+      const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+      resourceRecords.push(...flattenResourceRecords(data));
+    }
+    const sourceKey = record => String(record.country_code || "").toUpperCase() + "|" + normalizedSourceHref(record.url || record.source_url || "");
+    const isPublicResource = record => {
+      const status = String(record.status || "official").toLowerCase();
+      const lifecycle = String(record.lifecycle || "").toLowerCase();
+      return ["official","published","verified"].includes(status) && (!lifecycle || lifecycle === "current");
+    };
+    const publicKeys = new Set(resourceRecords.filter(isPublicResource).map(sourceKey));
+    const reviewKeys = new Set(resourceRecords.filter(record => {
+      const status = String(record.status || "official").toLowerCase();
+      const lifecycle = String(record.lifecycle || "").toLowerCase();
+      const reviewOnly = ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(status) ||
+        ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle);
+      return reviewOnly && record.title && !publicKeys.has(sourceKey(record));
+    }).map(sourceKey));
+    for (const match of sourceBlock.matchAll(/<article\b([^>]*)>/gi)) {
+      const attrs = match[1];
+      if (!/\bdata-type=["']Resource["']/i.test(attrs)) continue;
+      const codeMatch = attrs.match(/\bdata-country-code=["']([^"']*)["']/i);
+      const urlMatch = attrs.match(/\bdata-url=["']([^"']*)["']/i);
+      const key = String(codeMatch ? codeMatch[1] : "").toUpperCase() + "|" + normalizedSourceHref(urlMatch ? urlMatch[1] : "");
+      if (reviewKeys.has(key)) {
+        const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
+        failures.push("search/index.html: review-only resource leaked into public search: " + (titleMatch ? titleMatch[1] : "(untitled)") + " (" + key + ")");
+      }
+    }
   }
+}
+
+// Validate that search records are not merely counted: every indexed result must
+// have a usable destination, and internal destinations must exist in the rendered site.
+function searchTargetExists(rawUrl) {
+  const value = String(rawUrl || "").trim().replace(/&amp;/g, "&");
+  if (!value || /^(javascript:|data:|vbscript:)/i.test(value)) return false;
+  if (/^https?:\/\//i.test(value)) return true;
+  if (/^(mailto:|tel:)/i.test(value)) return true;
+  if (/^\/\//.test(value)) return true;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return false;
+  const pathname = value.split(/[?#]/)[0];
+  if (!pathname) return true;
+  const normalized = pathname.startsWith("/") ? pathname.slice(1) : pathname;
+  const candidates = [];
+  if (!normalized || normalized.endsWith("/")) candidates.push(path.join(site, normalized, "index.html"));
+  else {
+    candidates.push(path.join(site, normalized));
+    candidates.push(path.join(site, normalized, "index.html"));
+    if (!path.extname(normalized)) candidates.push(path.join(site, normalized, "index.html"));
+  }
+  return candidates.some(candidate => {
+    const resolved = path.resolve(candidate);
+    const withinSite = resolved.startsWith(path.resolve(site) + path.sep) || resolved === path.resolve(site + "/index.html");
+    return withinSite && fs.existsSync(resolved) && fs.statSync(resolved).isFile();
+  });
+}
+
+// Search must normalize punctuation/hyphens before matching multi-word queries.
+const searchTemplatePath = path.join(source, "search.njk");
+if (!fs.existsSync(searchTemplatePath)) {
+  failures.push("Global Search source template is missing.");
+} else {
+  const searchTemplate = fs.readFileSync(searchTemplatePath, "utf8");
+  if (!searchTemplate.includes("const normalize=value=>String(value||'').toLowerCase()")) failures.push("Global Search: punctuation-normalized matching is missing");
+  if (!searchTemplate.includes("normalize(x.title+' '+x.summary+' '+x.keywords+' '+x.meta)")) failures.push("Global Search: title, summary, keywords and metadata are not combined for matching");
+  for (const field of ["localizedSectionUrl('agriculture-resources')", "localizedSectionUrl('agricultural-news')", "localizedSectionUrl('ebooks')", "localizedSectionUrl('blog')"]) {
+    if (!searchTemplate.includes(field)) failures.push("Global Search: connected card lacks localized destination: " + field);
+  }
+}
+
+const decisionUiPath = path.join(source, "_includes", "farmer-decision-centre-ui.njk");
+if (!fs.existsSync(decisionUiPath)) {
+  failures.push("Decision Centre source template is missing.");
+} else {
+  const decisionUi = fs.readFileSync(decisionUiPath, "utf8");
+  if (!decisionUi.includes("topicMatched=topicRows.length>0")) failures.push("Decision Centre: exact-topic matching status is missing");
+  if (!decisionUi.includes("rows=topicMatched?topicRows:rows")) failures.push("Decision Centre: country-level fallback is missing when exact topic records are unavailable");
+  if (!decisionUi.includes("Showing broader country-level records")) failures.push("Decision Centre: fallback is not explained to visitors");
+  if (!decisionUi.includes("goa:languagechange")) failures.push("Decision Centre: results are not refreshed after language changes");
 }
 const decisionHtml = read("farmer-decision-centre/index.html");
 if (decisionHtml) {
@@ -266,6 +421,11 @@ if (decisionHtml) {
       if (decisionRecords.length < 100) failures.push("farmer-decision-centre/index.html: too few source records (" + decisionRecords.length + ")");
       if (decisionCountries.size < 40) failures.push("farmer-decision-centre/index.html: covers only " + decisionCountries.size + " country codes");
       if (decisionSources < 100) failures.push("farmer-decision-centre/index.html: too few linked source records (" + decisionSources + ")");
+      const unusableDecisionRecords = decisionRecords.filter(r => !String(r.title || "").trim() || !searchTargetExists(r.url));
+      if (unusableDecisionRecords.length) {
+        failures.push("farmer-decision-centre/index.html: " + unusableDecisionRecords.length + " records have a missing title or unusable destination");
+        unusableDecisionRecords.slice(0, 20).forEach(r => failures.push("Decision Centre source: " + (r.title || "(untitled)") + " -> " + (r.url || "(no URL)")));
+      }
       for (const section of ["markets", "opportunities", "resources", "services", "news"]) {
         if (!decisionSections.has(section)) failures.push("farmer-decision-centre/index.html: no records for " + section);
       }
@@ -274,6 +434,28 @@ if (decisionHtml) {
     }
   }
 }
+// News lifecycle is optional for legacy verified records. Missing lifecycle means
+// current unless explicitly marked otherwise; requiring lifecycle="current" hid most official stories.
+for (const rel of ["agricultural-news.njk", "agricultural-news-country.njk", "search.njk"]) {
+  const p = path.join(source, rel);
+  if (!fs.existsSync(p)) { failures.push("Agricultural News filter source is missing: " + rel); continue; }
+  const template = fs.readFileSync(p, "utf8");
+  if (!template.includes("not ") || !template.includes("lifecycle")) failures.push(rel + ": missing lifecycle compatibility handling");
+  if (rel === "agricultural-news.njk" && template.includes(') and article.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
+  if (rel === "agricultural-news-country.njk" && template.includes(') and candidate.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
+  if (rel === "search.njk" && template.includes('r.lifecycle == "current" and r.url')) failures.push(rel + ": strict lifecycle filter hides legacy official news from search");
+}
+
+// Keep fallback routes localized in source templates even when there are no approved stories.
+for (const [rel, lang] of [["agricultural-news-country.njk","en"],["fr/agricultural-news-country.njk","fr"],["ar/agricultural-news-country.njk","ar"],["pt/agricultural-news-country.njk","pt"],["sw/agricultural-news-country.njk","sw"]]) {
+  const p = path.join(source, rel);
+  if (!fs.existsSync(p)) { failures.push("Missing country-news template: " + rel); continue; }
+  const template = fs.readFileSync(p, "utf8");
+  if (!template.includes("news-empty-fallback") || !template.includes('href="/search/"')) failures.push(rel + ": empty state must offer a search route");
+  const prefix = lang === "en" ? "" : "/" + lang;
+  if (!template.includes('href="' + prefix + '/agriculture-resources/"') || !template.includes('href="' + prefix + '/opportunities/"')) failures.push(rel + ": empty state must link to localized resources and opportunities");
+}
+
 const newsSourcePath = path.join(source, "_data", "agriculturalNews.json");
 if (fs.existsSync(newsSourcePath)) {
   const newsData = JSON.parse(fs.readFileSync(newsSourcePath, "utf8"));
@@ -297,7 +479,12 @@ if (fs.existsSync(newsSourcePath)) {
         }
       }
       const storyCards = (html.match(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["']/gi) || []).length;
-      if (storyCards === 0) emptyNewsPages.push({ lang, country: country.name || country.code, rel });
+      if (storyCards === 0) {
+        // An empty story queue is acceptable only when the page explains the gap
+        // and gives visitors a working route into other agriculture content.
+        const fallbackIsUseful = html.includes("news-empty-fallback") && html.includes('href="/search/"');
+        if (!fallbackIsUseful) emptyNewsPages.push({ lang, country: country.name || country.code, rel });
+      }
 
     }
   }
@@ -307,6 +494,74 @@ if (emptyNewsPages.length) {
   failures.push("Rendered agricultural-news coverage: " + emptyNewsPages.length + " country-language pages have no current verified story cards.");
   emptyNewsPages.slice(0, 30).forEach(x => failures.push(x.lang + ":" + x.country + " (" + x.rel + ")"));
 }
+// Audit the final merged agricultural-news dataset after the build merge step.
+// This catches duplicate country URLs even when duplicates originated in different
+// source files or used slightly different titles.
+const mergedNewsPath = path.join(source, "_data", "agriculturalNews.json");
+if (fs.existsSync(mergedNewsPath)) {
+  const mergedNews = JSON.parse(fs.readFileSync(mergedNewsPath, "utf8"));
+  const normalizedNewsUrl = (raw) => {
+    const value = String(raw || "").trim();
+    if (!value) return "";
+    try {
+      const url = new URL(value);
+      url.hash = "";
+      url.hostname = url.hostname.toLowerCase().replace(/^www\./, "");
+      const decodedPath = decodeURIComponent(url.pathname).replace(/\/+$/, "") || "/";
+      return url.origin + decodedPath + url.search;
+    } catch (_) {
+      return value.replace(/\/+$/, "").toLowerCase();
+    }
+  };
+  for (const country of (mergedNews.countries || [])) {
+    const seen = new Map();
+    for (const article of (country.articles || [])) {
+      const url = normalizedNewsUrl(article.url);
+      if (!url) continue;
+      if (seen.has(url)) {
+        failures.push("Agricultural News merged dataset: duplicate source URL for " + country.code + ": " + url + " (" + (seen.get(url) || "first record") + " / " + (article.title || "untitled") + ")");
+      } else {
+        seen.set(url, article.title || "untitled");
+      }
+    }
+    const published = (country.articles || []).filter(article =>
+      ["official", "published", "verified"].includes(String(article.status || "").toLowerCase()) &&
+      (!article.lifecycle || article.lifecycle === "current") && article.url && article.title && article.summary
+    );
+    if (!published.length) failures.push("Agricultural News merged dataset: no publishable sourced story for " + (country.name || country.code));
+
+    // Translation drafts must remain visibly pending on localized country pages.
+    // This prevents draft machine/AI translations from being presented as reviewed.
+    const translationDraftCutoff = new Date();
+    translationDraftCutoff.setUTCDate(translationDraftCutoff.getUTCDate() - 180);
+    const translationDrafts = (country.articles || []).filter(article => {
+      const publishedDate = article.published ? new Date(article.published) : null;
+      const stillCurrent = !article.lifecycle || article.lifecycle === "current";
+      const withinCurrentWindow = !publishedDate || Number.isNaN(publishedDate.getTime()) || publishedDate >= translationDraftCutoff;
+      return ["official", "published", "verified"].includes(String(article.status || "").toLowerCase()) &&
+        article.translation_status === "draft" && article.translations && stillCurrent && withinCurrentWindow;
+    });
+    for (const article of translationDrafts) {
+      for (const lang of ["fr", "ar", "pt", "sw"]) {
+        const translation = article.translations[lang];
+        if (!translation || !translation.title || !translation.summary) continue;
+        const localizedFile = path.join(site, lang, "agricultural-news", country.slug, "index.html");
+        if (!fs.existsSync(localizedFile)) {
+          failures.push("Draft translation audit: missing localized country page for " + country.code + " (" + lang + ")");
+          continue;
+        }
+        const localizedHtml = fs.readFileSync(localizedFile, "utf8");
+        if (!localizedHtml.includes('data-translation-status="pending"')) {
+          failures.push("Draft translation audit: " + country.code + " (" + lang + ") does not mark draft translations as pending for " + article.title);
+        }
+        if (!localizedHtml.includes(article.title)) {
+          failures.push("Draft translation audit: " + country.code + " (" + lang + ") should retain the source-language title until approval for " + article.title);
+        }
+      }
+    }
+  }
+}
+
 if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
