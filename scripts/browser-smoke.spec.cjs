@@ -65,3 +65,23 @@ test("country-news language selector reaches French, Arabic and Portuguese pages
     if (language === "ar") await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   }
 });
+
+test("homepage and Portuguese calculator expose computed SEO metadata", async ({ page }) => {
+  await page.goto(baseURL + "/", { waitUntil: "domcontentloaded" });
+  const homepageSource = await page.content();
+  const homepageHead = homepageSource.match(/<head\\b[^>]*>([\\s\\S]*?)<\\/head>/i);
+  expect(homepageHead, "homepage should have a head element").not.toBeNull();
+  expect(homepageHead[1]).not.toContain("{{");
+  await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+    "content",
+    /across 17 farming enterprises in 54 African countries/
+  );
+  await expect(page.locator('body [data-i18n="home.directoryNote"]')).toHaveCount(0);
+
+  await page.goto(baseURL + "/ng/pt/farm-profit-calculator/", { waitUntil: "domcontentloaded" });
+  await expect(page).toHaveTitle("Calculadora gratuita de lucro agrícola — Nigeria | GoOrganicAfrica");
+  const calculatorSource = await page.content();
+  const calculatorHead = calculatorSource.match(/<head\\b[^>]*>([\\s\\S]*?)<\\/head>/i);
+  expect(calculatorHead, "calculator page should have a head element").not.toBeNull();
+  expect(calculatorHead[1]).not.toContain("{{");
+});
