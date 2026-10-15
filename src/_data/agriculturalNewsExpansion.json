@@ -1457,7 +1457,27 @@
       "source_tier": 1,
       "published": "2026-06-11",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La BAD publie le rapport d’achèvement du projet d’appui d’urgence à la production agricole aux Comores",
+          "summary": "Le rapport d’achèvement de la Banque africaine de développement examine un projet d’urgence destiné à renforcer la production alimentaire locale et la résilience, notamment la culture du maïs, de la pomme de terre et de la patate douce, ainsi que l’appui à l’aviculture et aux ménages vulnérables."
+        },
+        "ar": {
+          "title": "بنك التنمية الأفريقي ينشر تقرير إنجاز مشروع دعم الإنتاج الزراعي الطارئ في جزر القمر",
+          "summary": "يستعرض تقرير الإنجاز الصادر عن بنك التنمية الأفريقي مشروعاً طارئاً يهدف إلى تعزيز إنتاج الغذاء المحلي والقدرة على الصمود، بما في ذلك زراعة الذرة والبطاطا والبطاطا الحلوة ودعم تربية الدواجن والأسر الهشة."
+        },
+        "pt": {
+          "title": "BAD publica relatório de conclusão do apoio de emergência à produção agrícola nas Comores",
+          "summary": "O relatório de conclusão do Banco Africano de Desenvolvimento analisa um projeto de emergência destinado a reforçar a produção alimentar local e a resiliência, incluindo o cultivo de milho, batata e batata-doce, bem como apoio à avicultura e a agregados familiares vulneráveis."
+        },
+        "sw": {
+          "title": "Benki ya Maendeleo ya Afrika yachapisha ripoti ya kukamilika kwa msaada wa dharura wa uzalishaji wa kilimo nchini Komoro",
+          "summary": "Ripoti ya kukamilika ya Benki ya Maendeleo ya Afrika inapitia mradi wa dharura uliolenga kuimarisha uzalishaji wa chakula wa ndani na ustahimilivu, ikiwemo kilimo cha mahindi, viazi na viazi vitamu pamoja na msaada kwa ufugaji wa kuku na kaya zilizo hatarini."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "TD",
@@ -1469,7 +1489,27 @@
       "source_tier": 2,
       "published": "2026-09-14",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Le Tchad limite les exportations de céréales et exonère les importations de droits de douane face aux pénuries alimentaires",
+          "summary": "Après que la chaleur et la sécheresse ont endommagé les cultures, le gouvernement tchadien a annoncé des mesures d’urgence, dont l’interdiction d’exporter les céréales de base et l’exonération de droits de douane sur les céréales importées afin de contribuer à faire face aux pénuries alimentaires."
+        },
+        "ar": {
+          "title": "تشاد تقيّد صادرات الحبوب وتعفي وارداتها من الرسوم الجمركية وسط نقص الغذاء",
+          "summary": "أعلنت الحكومة التشادية إجراءات طارئة بعد أن أضرّت الحرارة والجفاف بالمحاصيل، شملت حظر تصدير الحبوب الأساسية والإعفاء من الرسوم الجمركية على الحبوب المستوردة للمساعدة في معالجة نقص الغذاء."
+        },
+        "pt": {
+          "title": "Chade restringe as exportações de cereais e isenta as importações de direitos aduaneiros perante a escassez alimentar",
+          "summary": "Depois de o calor e a seca terem danificado as culturas, o governo do Chade anunciou medidas de emergência, incluindo a proibição das exportações de cereais básicos e a isenção de direitos aduaneiros sobre cereais importados para ajudar a enfrentar a escassez alimentar."
+        },
+        "sw": {
+          "title": "Chad yapunguza usafirishaji wa nafaka nje na kuondoa ushuru wa uagizaji kutokana na uhaba wa chakula",
+          "summary": "Baada ya joto na ukame kuharibu mazao, serikali ya Chad ilitangaza hatua za dharura, zikiwemo kupiga marufuku usafirishaji wa nafaka kuu nje na kuondoa ushuru wa forodha kwa nafaka zinazoagizwa ili kusaidia kukabiliana na uhaba wa chakula."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "GA",
@@ -1549,8 +1589,27 @@
       "verified": "2026-10-13",
       "status": "review",
       "lifecycle": "needs_review",
-      "translation_status": "in_review",
-      "review_reason": "Official country situation brief, not a conventional news article. Editorial review required to confirm placement and multilingual presentation."
+      "translation_status": "pending_review",
+      "review_reason": "Official country situation brief, not a conventional news article. Editorial review required to confirm placement and multilingual presentation.",
+      "translations": {
+        "fr": {
+          "title": "Note pays de la FAO-SMIAR : perspectives céréalières et inflation alimentaire en Libye en 2026",
+          "summary": "La note pays de la FAO examine les effets météorologiques contrastés sur les perspectives de production de blé et d’orge en Libye en 2026, les besoins d’importation de céréales supérieurs à la moyenne pour 2026/2027 et la hausse de l’inflation alimentaire. Il s’agit d’une référence sur la situation du pays, et non d’une actualité de dernière minute."
+        },
+        "ar": {
+          "title": "موجز قطري من نظام المعلومات والإنذار المبكر العالمي للفاو: توقعات الحبوب والتضخم الغذائي في ليبيا لعام 2026",
+          "summary": "يستعرض الموجز القطري للفاو التأثيرات المتباينة للطقس على توقعات القمح والشعير في ليبيا لعام 2026، واحتياجات استيراد الحبوب الأعلى من المتوسط لموسم 2026/2027، وارتفاع تضخم أسعار الغذاء. وهو مرجع عن وضع البلاد وليس خبراً عاجلاً."
+        },
+        "pt": {
+          "title": "Nota de país do SMIAR da FAO: perspetivas de cereais e inflação alimentar na Líbia em 2026",
+          "summary": "A nota de país da FAO analisa os efeitos meteorológicos mistos nas perspetivas de trigo e cevada da Líbia em 2026, as necessidades de importação de cereais acima da média para 2026/2027 e o aumento da inflação alimentar. É uma referência sobre a situação do país, não uma notícia de última hora."
+        },
+        "sw": {
+          "title": "Muhtasari wa FAO GIEWS kuhusu Libya: matarajio ya nafaka ya 2026 na mfumuko wa bei ya chakula",
+          "summary": "Muhtasari wa nchi wa FAO unaangalia athari tofauti za hali ya hewa kwa matarajio ya ngano na shayiri nchini Libya mwaka 2026, mahitaji ya uagizaji wa nafaka yaliyo juu ya wastani kwa 2026/2027, na kupanda kwa mfumuko wa bei ya chakula. Huu ni rejea ya hali ya nchi, si habari ya dharura."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "NE",
@@ -1780,7 +1839,27 @@
       "published": "2026-04-20",
       "verified": "2026-10-13",
       "status": "official",
-      "coverage_scope": "country_specific"
+      "coverage_scope": "country_specific",
+      "translations": {
+        "fr": {
+          "title": "La FAO et le ministre libyen de l’Agriculture discutent de la coopération pour transformer les systèmes agroalimentaires",
+          "summary": "Le directeur général de la FAO, Qu Dongyu, a rencontré le ministre libyen de l’Agriculture et de l’Élevage pour discuter de la poursuite de la coopération et des priorités du cadre de programmation pays de la Libye en faveur de la transformation des systèmes agroalimentaires."
+        },
+        "ar": {
+          "title": "الفاو ووزير الزراعة الليبي يبحثان التعاون في التحول الزراعي والغذائي",
+          "summary": "التقى المدير العام للفاو، شو دونيو، وزير الزراعة والثروة الحيوانية الليبي لبحث استمرار التعاون والأولويات ضمن إطار البرمجة القطرية لليبيا من أجل تحويل النظم الزراعية والغذائية."
+        },
+        "pt": {
+          "title": "FAO e ministro da Agricultura da Líbia discutem cooperação para a transformação dos sistemas agroalimentares",
+          "summary": "O diretor-geral da FAO, Qu Dongyu, reuniu-se com o ministro da Agricultura e Pecuária da Líbia para discutir a continuidade da cooperação e as prioridades do quadro de programação nacional da Líbia para transformar os sistemas agroalimentares."
+        },
+        "sw": {
+          "title": "FAO na waziri wa kilimo wa Libya wajadili ushirikiano wa kubadilisha mifumo ya chakula na kilimo",
+          "summary": "Mkurugenzi Mkuu wa FAO, Qu Dongyu, alikutana na waziri wa kilimo na mifugo wa Libya kujadili kuendeleza ushirikiano na vipaumbele vya mfumo wa programu ya nchi wa Libya kwa ajili ya kubadilisha mifumo ya chakula na kilimo."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "NA",
@@ -3962,7 +4041,27 @@
       "status": "review",
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct official FAO article located. Confirm current relevance and distinguish emergency-response news from any existing Chad food-security records before approval."
+      "review_reason": "Direct official FAO article located. Confirm current relevance and distinguish emergency-response news from any existing Chad food-security records before approval.",
+      "translations": {
+        "fr": {
+          "title": "La FAO obtient 4 millions de dollars pour protéger la sécurité alimentaire et les moyens de subsistance ruraux au Tchad",
+          "summary": "Une contribution de 4 millions de dollars du Fonds humanitaire régional financera l’aide de la FAO à 12 200 ménages touchés par l’insécurité et les déplacements dans l’est et l’ouest du Tchad. L’aide comprend des transferts monétaires, des semences et outils agricoles, un soutien à la production maraîchère et des aliments pour le bétail."
+        },
+        "ar": {
+          "title": "الفاو تحصل على 4 ملايين دولار لحماية الأمن الغذائي وسبل العيش الريفية في تشاد",
+          "summary": "ستدعم مساهمة بقيمة 4 ملايين دولار من الصندوق الإنساني الإقليمي مساعدات الفاو لـ12,200 أسرة متضررة من انعدام الأمن والنزوح في شرق تشاد وغربها. وتشمل المساعدة تحويلات نقدية وبذوراً وأدوات زراعية ودعماً لإنتاج الخضروات وأعلافاً للماشية."
+        },
+        "pt": {
+          "title": "FAO obtém 4 milhões de dólares para proteger a segurança alimentar e os meios de subsistência rurais no Chade",
+          "summary": "Uma contribuição de 4 milhões de dólares do Fundo Humanitário Regional apoiará a assistência da FAO a 12 200 agregados familiares afetados pela insegurança e deslocação no leste e oeste do Chade. A ajuda inclui transferências monetárias, sementes e ferramentas agrícolas, apoio à produção hortícola e alimentação para o gado."
+        },
+        "sw": {
+          "title": "FAO yapata dola milioni 4 kulinda usalama wa chakula na maisha ya vijijini nchini Chad",
+          "summary": "Mchango wa dola milioni 4 kutoka Mfuko wa Kibinadamu wa Kikanda utaunga mkono msaada wa FAO kwa kaya 12,200 zilizoathiriwa na ukosefu wa usalama na kuhama makazi mashariki na magharibi mwa Chad. Msaada unajumuisha fedha taslimu, mbegu na zana za kilimo, msaada wa uzalishaji wa mboga na chakula cha mifugo."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "GA",
