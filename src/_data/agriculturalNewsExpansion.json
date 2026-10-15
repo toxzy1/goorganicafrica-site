@@ -1866,7 +1866,27 @@
       "source_tier": 1,
       "published": "2026-06-25",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Guinée-Bissau rejoint l’initiative de mentorat de la FAO pour des investissements agricoles responsables",
+          "summary": "La FAO soutient la création d’un réseau local de mentorat pour aider les entrepreneurs agricoles, notamment les jeunes et les femmes, à élaborer des projets durables et finançables et à améliorer leur accès à l’accompagnement au développement des entreprises."
+        },
+        "ar": {
+          "title": "غينيا بيساو تنضم إلى مبادرة الفاو للإرشاد بشأن الاستثمار الزراعي المسؤول",
+          "summary": "تدعم الفاو إنشاء منظومة محلية للإرشاد لمساعدة رواد الأعمال الزراعيين، ولا سيما الشباب والنساء، على تطوير مشاريع مستدامة قابلة للتمويل وتحسين حصولهم على دعم تطوير الأعمال."
+        },
+        "pt": {
+          "title": "Guiné-Bissau adere à iniciativa da FAO de mentoria para investimento agrícola responsável",
+          "summary": "A FAO apoia a criação de uma rede local de mentoria para ajudar empreendedores agrícolas, em especial jovens e mulheres, a desenvolver projetos sustentáveis e financiáveis e a melhorar o acesso a apoio ao desenvolvimento empresarial."
+        },
+        "sw": {
+          "title": "Guinea-Bissau yaungana na mpango wa FAO wa ushauri kwa uwekezaji wa kilimo unaowajibika",
+          "summary": "FAO inaunga mkono mfumo wa ushauri wa ndani ili kuwasaidia wajasiriamali wa kilimo, hasa vijana na wanawake, kuandaa miradi endelevu inayoweza kupata ufadhili na kuboresha upatikanaji wa msaada wa maendeleo ya biashara."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "LY",
@@ -7057,7 +7077,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "La foire agricole 2026 du Congo met en valeur l’élevage et l’essor de la production locale",
+          "summary": "Les Dépêches de Brazzaville rapporte que l’élevage occupait une place importante lors de la deuxième Grande Foire Agricole du Congo, avec des bovins, petits ruminants, porcs et volailles présentés par des entrepreneurs. L’événement a mis en lumière les possibilités et les défis liés à l’augmentation de la production nationale de viande et à la réduction de la dépendance aux importations."
+        },
+        "ar": {
+          "title": "المعرض الزراعي لعام 2026 في الكونغو يسلط الضوء على الثروة الحيوانية وتوسع الإنتاج المحلي",
+          "summary": "ذكرت صحيفة Les Dépêches de Brazzaville أن الثروة الحيوانية كانت محوراً رئيسياً في الدورة الثانية للمعرض الزراعي الكبير في الكونغو، حيث عرض رواد أعمال الأبقار والأغنام والماعز والخنازير والدواجن. وسلط الحدث الضوء على الفرص والتحديات المتعلقة بزيادة إنتاج اللحوم محلياً وتقليل الاعتماد على الواردات."
+        },
+        "pt": {
+          "title": "Feira agrícola de 2026 do Congo destaca a pecuária e a expansão da produção local",
+          "summary": "O jornal Les Dépêches de Brazzaville informa que a pecuária teve grande destaque na segunda Grande Feira Agrícola do Congo, com empresários a apresentar bovinos, pequenos ruminantes, suínos e aves. O evento evidenciou oportunidades e desafios para aumentar a produção nacional de carne e reduzir a dependência das importações."
+        },
+        "sw": {
+          "title": "Maonesho ya kilimo ya Congo ya 2026 yaangazia mifugo na kuongezeka kwa uzalishaji wa ndani",
+          "summary": "Gazeti Les Dépêches de Brazzaville linaripoti kuwa ufugaji ulikuwa sehemu muhimu ya Maonesho Makuu ya Kilimo ya Congo kwa mara ya pili, ambapo wafanyabiashara waliwasilisha ng’ombe, mbuzi na kondoo, nguruwe na kuku. Tukio hilo liliangazia fursa na changamoto za kuongeza uzalishaji wa nyama nchini na kupunguza utegemezi wa bidhaa zinazoagizwa."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "ST",
