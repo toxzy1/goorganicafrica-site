@@ -853,7 +853,8 @@
           "title": "Mauritania yaandaa kampeni ya kitaifa ya kusaidia uzalishaji wa mboga",
           "summary": "Kampuni ya Kitaifa ya Uchimbaji na Visima inaeleza kampeni ya kusaidia uzalishaji wa mboga kwa jamii zilizo karibu na maeneo yake, kama sehemu ya juhudi za maendeleo ya eneo na kuimarisha maisha."
         }
-      }
+      },
+      "coverage_scope": "country_specific"
     },
     {
       "country_code": "MA",
@@ -1003,7 +1004,8 @@
           "title": "Libya yafungua maonesho yake ya kimataifa ya maendeleo ya kilimo na mifugo",
           "summary": "Maonesho ya Tripoli yaliwakutanisha taasisi za sekta za kilimo na mifugo, kampuni za ndani na za kimataifa pamoja na wasambazaji wa vifaa na teknolojia, yakilenga kuendeleza uzalishaji wa mazao na mifugo na kulinda ardhi ya kilimo na malisho."
         }
-      }
+      },
+      "coverage_scope": "country_specific"
     },
     {
       "country_code": "KM",
@@ -1317,7 +1319,8 @@
       "source_tier": 1,
       "published": "2026-04-20",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "coverage_scope": "country_specific"
     },
     {
       "country_code": "NA",
@@ -1511,7 +1514,7 @@
       "published": "2026-09-10",
       "verified": "2026-10-13",
       "status": "official",
-      "coverage_scope": "national",
+      "coverage_scope": "country_specific",
       "translations": {
         "fr": {
           "title": "São Tomé-et-Príncipe fait avancer une stratégie nationale de durabilité « 100 % Bio »",
@@ -1561,7 +1564,7 @@
           "summary": "Kundi la Benki ya Dunia liliidhinisha dola milioni 60 kuimarisha minyororo ya thamani ya ufugaji wa kuku na viumbe vya majini katika Jamhuri ya Congo, kuboresha upatikanaji wa pembejeo, huduma na masoko kwa wazalishaji wadogo, na kusaidia ajira na usalama wa chakula."
         }
       },
-      "coverage_scope": "country"
+      "coverage_scope": "country_specific"
     },
     {
       "country_code": "CV",
@@ -2352,7 +2355,7 @@
           "summary": "Mradi wa pamoja wa FAO na ILO nchini Mauritania unaonyesha jinsi biashara za kilimo na chakula zinazoongozwa na vijana, kazi zenye staha na uwekezaji wa kilimo wenye uwajibikaji vinavyoweza kuimarisha mshikamano wa kijamii na ustahimilivu."
         }
       },
-      "coverage_scope": "country"
+      "coverage_scope": "country_specific"
     },
     {
       "country_code": "ST",
@@ -2507,7 +2510,7 @@
       "verified": "2026-10-13",
       "status": "official",
       "lifecycle": "current",
-      "coverage_scope": "country",
+      "coverage_scope": "country_specific",
       "translations": {
         "fr": {
           "title": "La FAO et la République du Congo discutent de la gestion durable des forêts et des moyens de subsistance ruraux",
@@ -3631,7 +3634,7 @@
           "summary": "Ripoti ya matokeo ya Benki ya Dunia inasema mradi uliofanyika kuanzia 2019 hadi 2024 uliwasaidia wakulima na washiriki 62,222 wa minyororo ya thamani, ukaongeza mavuno ya baadhi ya mazao kwa karibu asilimia 34, ukakusanya dola milioni 8.2 za uwekezaji binafsi na kusaidia miundombinu ya kufikia maeneo ya vijijini."
         }
       },
-      "coverage_scope": "country"
+      "coverage_scope": "country_specific"
     },
     {
       "country_code": "KM",
@@ -3664,7 +3667,7 @@
           "summary": "FAO inaripoti kuwa Komoro inajenga mfumo wa kitaifa wa mbegu unaostahimili changamoto kupitia mradi wa SEPAREF, ili kupunguza utegemezi wa mbegu zinazoagizwa kutoka nje na kuboresha upatikanaji wa mbegu zinazofaa hali ya hewa katika visiwa."
         }
       },
-      "coverage_scope": "country"
+      "coverage_scope": "country_specific"
     },
     {
       "country_code": "MU",
@@ -4130,7 +4133,7 @@
     },
     {
       "country_code": "DJ",
-      "coverage_scope": "country",
+      "coverage_scope": "country_specific",
       "category": "climate",
       "title": "Djibouti strengthens early-warning systems for climate resilience",
       "summary": "FAO reported that Djibouti is strengthening access to climate information and early-warning systems to help rural communities respond to erratic rainfall, heatwaves and flash floods that affect water, pasture, livestock and small-scale agriculture.",
