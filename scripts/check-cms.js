@@ -174,6 +174,18 @@ const opportunitySync = read("scripts/sync-agricultural-opportunities.js");
 const opportunitiesTemplate = read("src/_includes/opportunities-directory.njk");
 const newsCountryTemplate = read("src/agricultural-news-country.njk");
 const newsIndexTemplate = read("src/agricultural-news.njk");
+const localizedNewsTemplates = [
+  "src/fr/agricultural-news-country.njk",
+  "src/ar/agricultural-news-country.njk",
+  "src/pt/agricultural-news-country.njk",
+  "src/sw/agricultural-news-country.njk"
+].map(read);
+if (localizedNewsTemplates.some(template =>
+  !template.includes('article.translation_status == "translated"') ||
+  template.includes('not article.translation_status')
+)) {
+  throw new Error("Localized agricultural news must publish translations only after explicit human approval.");
+}
 for (const [name, script] of [["news", newsSync], ["opportunities", opportunitySync]]) {
   if (!script.includes('status: "review"') || !script.includes('lifecycle: "needs_review"')) {
     throw new Error("Agricultural " + name + " sync must mark new records as needs_review.");
