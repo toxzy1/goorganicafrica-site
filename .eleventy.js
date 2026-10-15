@@ -486,16 +486,23 @@ module.exports = function (eleventyConfig) {
         existing.url === article.url ||
         (existing.title === article.title && existing.published === article.published)
       );
-      if (!duplicate) country.articles.push({
-        category: article.category || "general",
-        title: article.title,
-        summary: article.summary || "",
-        url: article.url,
-        source: article.source || "",
-        published: article.published || "",
-        verified: article.verified || "",
-        status: article.status || "official"
-      });
+      if (!duplicate) {
+        // Preserve editorial workflow metadata and translations from incoming
+        // records. Dropping these fields made translation_status="draft" look
+        // approved on localized pages and hid coverage/source metadata.
+        const { country_code: _countryCode, code: _code, ...record } = article;
+        country.articles.push({
+          ...record,
+          category: record.category || "general",
+          title: record.title || "",
+          summary: record.summary || "",
+          url: record.url,
+          source: record.source || "",
+          published: record.published || "",
+          verified: record.verified || "",
+          status: record.status || "official"
+        });
+      }
     }
 
     const now = new Date();
