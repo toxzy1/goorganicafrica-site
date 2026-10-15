@@ -17,6 +17,29 @@ const failures = [];
 const emptyNewsPages = [];
 const htmlFiles = walk(site).filter(f => f.endsWith(".html"));
 
+// SEO metadata regression guard: Eleventy front matter must not leak Nunjucks
+// interpolation into rendered titles or meta content attributes.
+for (const file of htmlFiles) {
+  const html = fs.readFileSync(file, "utf8");
+  const rel = path.relative(site, file).split(path.sep).join("/");
+  const headMatch = html.match(/<head\\b[^>]*>([\\s\\S]*?)<\\/head>/i);
+  if (headMatch) {
+    const head = headMatch[1];
+    for (const match of head.matchAll(/<title\\b[^>]*>([\\s\\S]*?)<\\/title>/gi)) {
+      if (match[1].includes("{{")) failures.push(rel + ": raw Nunjucks interpolation found in <title>");
+    }
+    for (const metaMatch of head.matchAll(/<meta\\b[^>]*>/gi)) {
+      const contentMatch = metaMatch[0].match(/\\bcontent\\s*=\\s*(["'])([\\s\\S]*?)\\1/i);
+      if (contentMatch && contentMatch[2].includes("{{")) {
+        failures.push(rel + ": raw Nunjucks interpolation found in meta content");
+      }
+    }
+  }
+  if (html.includes('data-i18n="home.directoryNote"')) {
+    failures.push(rel + ": internal home.directoryNote editor note leaked into rendered HTML");
+  }
+}
+
 function read(rel) {
   const p = path.join(site, rel);
   if (!fs.existsSync(p)) { failures.push("Missing rendered page: " + rel); return ""; }
