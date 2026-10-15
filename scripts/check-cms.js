@@ -323,6 +323,18 @@ const genericSourcePath = pathname => pathname === "/" ||
   /\/news\/detail(?:\/en)?$/i.test(pathname) ||
   /\/hand-in-hand\/investment-forum-2026\//i.test(pathname) ||
   pathname === "/en";
+// Some official statistical institutes publish individual stories as WordPress-style
+// query URLs (for example ?p=17528). A numeric post ID is a direct article,
+// not a generic homepage merely because the pathname is '/'.
+const genericNewsSourceUrl = raw => {
+  try {
+    const parsed = new URL(String(raw || ""));
+    if (parsed.pathname === "/" && /^\d+$/.test(parsed.searchParams.get("p") || "")) return false;
+    return genericSourcePath(parsed.pathname.replace(/\/+$/, "") || "/");
+  } catch (_) {
+    return true;
+  }
+};
 const publicNewsStatus = record =>
   ["official", "published", "verified"].includes(String(record.status || "").toLowerCase()) &&
   !["review", "needs_review", "draft"].includes(String(record.lifecycle || "").toLowerCase());
@@ -335,13 +347,7 @@ if (incompletePublicNews.length) {
 }
 const genericUnreviewed = sourceCandidates.filter(record => {
   if (!record.url) return false;
-  let pathname;
-  try {
-    pathname = new URL(record.url).pathname.replace(/\/+$/, "") || "/";
-  } catch (_) {
-    return true;
-  }
-  const generic = genericSourcePath(pathname);
+  const generic = genericNewsSourceUrl(record.url);
   const state = String(record.status || "").toLowerCase();
   const lifecycle = String(record.lifecycle || "").toLowerCase();
   const heldForReview = ["review", "draft", "needs_review", "rejected"].includes(state) ||

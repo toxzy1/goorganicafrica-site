@@ -21,7 +21,7 @@ pageLanguage: sw
 <p class="lede">Maendeleo ya sasa na yaliyothibitishwa ya kilimo kwa nchi hii.</p>
 {% set publishedCountryArticles = [] %}
 {% for candidate in country.articles %}
-  {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and candidate.lifecycle == "current" %}{% set publishedCountryArticles = publishedCountryArticles.concat([candidate]) %}{% endif %}
+  {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and (not candidate.lifecycle or candidate.lifecycle == "current") %}{% set _ = publishedCountryArticles.push(candidate) %}{% endif %}
 {% endfor %}
 {% if publishedCountryArticles.length %}
 {% for article in publishedCountryArticles %}
@@ -38,6 +38,6 @@ pageLanguage: sw
 </article>
 {% endfor %}
 {% else %}
-<div class="card"><h2>Habari zinathibitishwa</h2><p>Bado hakuna habari za sasa zilizothibitishwa zilizochapishwa kwa nchi hii.</p><p>Habari zitaongezwa baada ya kuthibitishwa kutoka chanzo rasmi au kinachoaminika.</p></div>
+<div class="card news-empty-fallback"><h2>Habari zinathibitishwa</h2><p>Bado hakuna habari za sasa zilizothibitishwa zilizochapishwa kwa nchi hii. Habari zitaongezwa baada ya kuthibitishwa kutoka chanzo rasmi au kinachoaminika.</p><p>Kwa sasa, tembelea <a href="/sw/agriculture-resources/">rasilimali za kilimo</a>, <a href="/sw/opportunities/">fursa</a>, au <a href="/search/">tafuta taarifa za kilimo</a>.</p></div>
 {% endif %}
 </div></section>
