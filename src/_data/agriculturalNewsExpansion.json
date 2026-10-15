@@ -5697,6 +5697,39 @@
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
       "translation_status": "pending_review"
+    },
+    {
+      "country_code": "MZ",
+      "category": "food-security",
+      "title": "Mozambique food insecurity expected to worsen during the October 2026–March 2027 lean season",
+      "summary": "The IPC analysis estimates 1.19 million people in 46 districts faced Crisis-level or worse acute food insecurity in July–September 2026, with 1.84 million projected to face these conditions from October 2026 to March 2027. Flooding, cyclone damage, conflict-related displacement, high prices and El Niño-related climate risks are among the reported drivers.",
+      "url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165444/?iso3=MOZ",
+      "source": "Integrated Food Security Phase Classification (IPC)",
+      "source_tier": 1,
+      "published": "2026-09-09",
+      "verified": "2026-10-15",
+      "status": "official",
+      "coverage_scope": "country_specific",
+      "translation_status": "pending_review",
+      "editorial_note": "Use as a food-security and agricultural-livelihoods update; figures are estimates/projections from the IPC analysis and should retain their stated time periods.",
+      "translations": {
+        "fr": {
+          "title": "L’insécurité alimentaire au Mozambique devrait s’aggraver pendant la période de soudure d’octobre 2026 à mars 2027",
+          "summary": "L’analyse IPC estime que 1,19 million de personnes dans 46 districts ont connu une insécurité alimentaire aiguë de niveau Crise ou pire entre juillet et septembre 2026. Ce nombre pourrait atteindre 1,84 million d’octobre 2026 à mars 2027. Les inondations, les dégâts causés par le cyclone, les déplacements liés au conflit, les prix élevés et les risques climatiques associés à El Niño figurent parmi les facteurs signalés."
+        },
+        "ar": {
+          "title": "توقعات بتفاقم انعدام الأمن الغذائي في موزمبيق خلال موسم الشح من أكتوبر 2026 إلى مارس 2027",
+          "summary": "يقدّر تحليل التصنيف المرحلي المتكامل أن 1.19 مليون شخص في 46 مقاطعة واجهوا انعدام أمن غذائي حاداً بمستوى الأزمة أو أسوأ خلال يوليو–سبتمبر 2026، مع توقع ارتفاع العدد إلى 1.84 مليون بين أكتوبر 2026 ومارس 2027. وتشمل العوامل المذكورة الفيضانات وأضرار الإعصار والنزوح بسبب النزاع وارتفاع الأسعار والمخاطر المناخية المرتبطة بظاهرة النينيو."
+        },
+        "pt": {
+          "title": "A insegurança alimentar em Moçambique deverá agravar-se na época de escassez, de outubro de 2026 a março de 2027",
+          "summary": "A análise IPC estima que 1,19 milhões de pessoas em 46 distritos enfrentaram insegurança alimentar aguda de nível Crise ou pior entre julho e setembro de 2026, prevendo-se que o número aumente para 1,84 milhões entre outubro de 2026 e março de 2027. Entre os factores apontados estão inundações, danos causados por ciclones, deslocações devido ao conflito, preços elevados e riscos climáticos associados ao El Niño."
+        },
+        "sw": {
+          "title": "Uhaba wa chakula nchini Msumbiji unatarajiwa kuongezeka katika kipindi cha Oktoba 2026 hadi Machi 2027",
+          "summary": "Uchambuzi wa IPC unakadiria kuwa watu milioni 1.19 katika wilaya 46 walikabiliwa na uhaba mkubwa wa chakula wa kiwango cha Mgogoro au zaidi kati ya Julai na Septemba 2026; idadi hiyo inatarajiwa kufikia milioni 1.84 kuanzia Oktoba 2026 hadi Machi 2027. Sababu zilizotajwa ni pamoja na mafuriko, uharibifu wa kimbunga, kuhama kwa watu kutokana na migogoro, bei za juu na hatari za tabianchi zinazohusishwa na El Niño."
+        }
+      }
     }
   ]
 }
