@@ -4860,7 +4860,26 @@
           "source": "FAO",
           "published": "2026-09-04",
           "verified": "2026-10-07",
-          "status": "official"
+          "status": "official",
+          "translations": {
+            "fr": {
+              "title": "Les pays africains renforcent les outils pour améliorer les dépenses publiques agroalimentaires",
+              "summary": "La FAO a présenté de nouveaux travaux aidant les pays africains à utiliser des données probantes et des outils pour améliorer les dépenses publiques consacrées à l’agroalimentaire et la planification des investissements."
+            },
+            "ar": {
+              "title": "دول أفريقية تعزز الأدوات لتحسين الإنفاق العام على النظم الزراعية والغذائية",
+              "summary": "عرضت الفاو أعمالاً جديدة تساعد البلدان الأفريقية على استخدام الأدلة والأدوات لتحسين الإنفاق العام على الزراعة والغذاء وتخطيط الاستثمارات."
+            },
+            "pt": {
+              "title": "Países africanos reforçam ferramentas para melhorar a despesa pública agroalimentar",
+              "summary": "A FAO apresentou novos trabalhos que ajudam os países africanos a utilizar evidências e ferramentas para melhorar a despesa pública agroalimentar e o planeamento dos investimentos."
+            },
+            "sw": {
+              "title": "Nchi za Afrika zaimarisha zana za kuboresha matumizi ya umma katika kilimo na chakula",
+              "summary": "FAO iliripoti kazi mpya zinazosaidia nchi za Afrika kutumia ushahidi na zana kuboresha matumizi ya umma kwa sekta ya kilimo na chakula na kupanga uwekezaji."
+            }
+          },
+          "translation_status": "in_review"
         },
         {
           "category": "research-innovation",
