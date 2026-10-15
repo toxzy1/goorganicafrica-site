@@ -3620,7 +3620,27 @@
       "lifecycle": "needs_review",
       "coverage_scope": "regional",
       "source_language": "ar",
-      "review_reason": "Direct official FAO article in Arabic located. This is a joint Egypt–Iraq story; review whether to keep it as regional coverage or add a matching regional entry for Iraq."
+      "review_reason": "Direct official FAO article in Arabic located. This is a joint Egypt–Iraq story; review whether to keep it as regional coverage or add a matching regional entry for Iraq.",
+      "translations": {
+        "fr": {
+          "title": "L’Égypte et l’Irak renforcent leur coopération pour une production durable des palmiers-dattiers",
+          "summary": "La FAO, le Centre de recherche agricole égyptien et le bureau de la FAO en Irak ont lancé au Caire un programme de formation Sud-Sud sur la culture de tissus de palmier-dattier et la lutte intégrée contre les ravageurs, notamment la prévention et la gestion du charançon rouge du palmier."
+        },
+        "ar": {
+          "title": "مصر والعراق يعززان التعاون بشأن الإنتاج المستدام لنخيل التمر",
+          "summary": "أطلقت الفاو ومركز البحوث الزراعية في مصر ومكتب الفاو في العراق برنامج تدريب للتعاون بين بلدان الجنوب في القاهرة حول زراعة أنسجة نخيل التمر والإدارة المتكاملة للآفات، مع التركيز على الوقاية من سوسة النخيل الحمراء ومكافحتها."
+        },
+        "pt": {
+          "title": "Egito e Iraque reforçam a cooperação para a produção sustentável de tamareiras",
+          "summary": "A FAO, o Centro de Investigação Agrícola do Egito e o escritório da FAO no Iraque lançaram no Cairo um programa de formação Sul-Sul sobre cultura de tecidos de tamareira e gestão integrada de pragas, com foco na prevenção e no controlo do escaravelho-vermelho-das-palmeiras."
+        },
+        "sw": {
+          "title": "Misri na Iraq zaimarisha ushirikiano kuhusu uzalishaji endelevu wa mitende ya tende",
+          "summary": "FAO, Kituo cha Utafiti wa Kilimo cha Misri na ofisi ya FAO nchini Iraq zilizindua mjini Cairo programu ya mafunzo ya ushirikiano wa Kusini-Kusini kuhusu uzalishaji wa miche ya mitende ya tende kwa tishu na udhibiti jumuishi wa wadudu, ikilenga kuzuia na kudhibiti mdudu wa wekundu wa mitende."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "EG",
@@ -3636,7 +3656,27 @@
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
       "source_language": "ar",
-      "review_reason": "Direct official FAO article in Arabic located. Review the translated title/summary and confirm the project details before approval."
+      "review_reason": "Direct official FAO article in Arabic located. Review the translated title/summary and confirm the project details before approval.",
+      "translations": {
+        "fr": {
+          "title": "L’Égypte examine un projet d’irrigation moderne destiné à soutenir les petits agriculteurs de Haute-Égypte",
+          "summary": "La FAO, les ministères égyptiens de l’Eau et de l’Agriculture ainsi que des partenaires néerlandais ont examiné un projet de modernisation de l’irrigation de 12 millions d’euros à Qena. Il prévoit notamment le pompage à l’énergie solaire et l’irrigation goutte à goutte pour améliorer l’efficacité de l’eau, la productivité agricole et les revenus des petits exploitants."
+        },
+        "ar": {
+          "title": "مصر تستعرض مشروعاً حديثاً للري لدعم صغار المزارعين في صعيد مصر",
+          "summary": "استعرضت الفاو ووزارتا المياه والزراعة في مصر وشركاء هولنديون مشروعاً بقيمة 12 مليون يورو لتحديث الري في قنا. ويشمل المشروع الضخ بالطاقة الشمسية والري بالتنقيط لتحسين كفاءة استخدام المياه والإنتاجية الزراعية ودخل صغار المزارعين."
+        },
+        "pt": {
+          "title": "Egito analisa projeto de irrigação moderna para apoiar pequenos agricultores no Alto Egito",
+          "summary": "A FAO, os ministérios egípcios da Água e da Agricultura e parceiros neerlandeses analisaram um projeto de modernização da irrigação de 12 milhões de euros em Qena. O projeto inclui bombagem solar e rega gota a gota para melhorar a eficiência hídrica, a produtividade agrícola e os rendimentos dos pequenos agricultores."
+        },
+        "sw": {
+          "title": "Misri yapitia mradi wa umwagiliaji wa kisasa wa kusaidia wakulima wadogo Upper Egypt",
+          "summary": "FAO, wizara za maji na kilimo za Misri pamoja na washirika kutoka Uholanzi walipitia mradi wa kuboresha umwagiliaji wa euro milioni 12 huko Qena. Mradi unajumuisha pampu zinazotumia nishati ya jua na umwagiliaji wa matone ili kuboresha matumizi ya maji, uzalishaji wa mashamba na mapato ya wakulima wadogo."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "EG",
@@ -3652,7 +3692,27 @@
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
       "source_language": "ar",
-      "review_reason": "Direct official FAO article in Arabic located. It is close to the 180-day freshness boundary; confirm current relevance and review the English summary before approval."
+      "review_reason": "Direct official FAO article in Arabic located. It is close to the 180-day freshness boundary; confirm current relevance and review the English summary before approval.",
+      "translations": {
+        "fr": {
+          "title": "La FAO soutient de meilleures pratiques de récolte et d’après-récolte pour améliorer la qualité des dattes égyptiennes",
+          "summary": "La FAO et des institutions égyptiennes spécialisées en horticulture et en palmier-dattier ont formé 150 ingénieurs agricoles et responsables qualité aux périodes de récolte, à la manutention, à l’emballage, au stockage et à la sécurité alimentaire afin de réduire les pertes et d’accroître la valeur commerciale des dattes égyptiennes."
+        },
+        "ar": {
+          "title": "الفاو تدعم تحسين ممارسات الحصاد وما بعد الحصاد لرفع جودة التمور المصرية",
+          "summary": "درّبت الفاو ومؤسسات مصرية متخصصة في البستنة ونخيل التمر 150 مهندساً زراعياً ومسؤول جودة على توقيت الحصاد والمناولة والتعبئة والتخزين وسلامة الغذاء للحد من الفاقد وتحسين القيمة السوقية للتمور المصرية."
+        },
+        "pt": {
+          "title": "FAO apoia melhores práticas de colheita e pós-colheita para melhorar a qualidade das tâmaras egípcias",
+          "summary": "A FAO e instituições egípcias de horticultura e de palmeiras-das-tâmaras formaram 150 engenheiros agrícolas e profissionais de qualidade sobre o momento da colheita, manuseamento, embalagem, armazenamento e segurança alimentar, para reduzir perdas e aumentar o valor comercial das tâmaras egípcias."
+        },
+        "sw": {
+          "title": "FAO yaunga mkono mbinu bora za uvunaji na utunzaji baada ya mavuno ili kuboresha ubora wa tende za Misri",
+          "summary": "FAO na taasisi za Misri za kilimo cha bustani na mitende ya tende ziliwafunza wahandisi wa kilimo na maafisa wa ubora 150 kuhusu muda wa kuvuna, ushughulikiaji, ufungashaji, uhifadhi na usalama wa chakula ili kupunguza upotevu na kuongeza thamani ya soko ya tende za Misri."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "TN",
