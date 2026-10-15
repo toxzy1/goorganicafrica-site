@@ -1637,7 +1637,27 @@
       "verified": "2026-10-13",
       "status": "official",
       "lifecycle": "needs_review",
-      "review_reason": "Official news listing located, but the direct article URL must be confirmed before publication."
+      "review_reason": "Official news listing located, but the direct article URL must be confirmed before publication.",
+      "translations": {
+        "fr": {
+          "title": "La Guinée équatoriale fait avancer les projets de laboratoire agroalimentaire",
+          "summary": "Le service de presse du gouvernement indique que le Premier ministre fait avancer la mise en place d’un laboratoire agroalimentaire destiné à soutenir la qualité des aliments et le développement agricole."
+        },
+        "ar": {
+          "title": "غينيا الاستوائية تمضي قدماً في خطط إنشاء مختبر للأغذية الزراعية",
+          "summary": "أفادت الخدمة الصحفية الحكومية بأن رئيس الوزراء يدفع قدماً بتنفيذ مختبر للأغذية الزراعية يهدف إلى دعم جودة الأغذية والتنمية الزراعية."
+        },
+        "pt": {
+          "title": "Guiné Equatorial avança com planos para um laboratório agroalimentar",
+          "summary": "O serviço de imprensa do governo informa que o primeiro-ministro está a avançar com a implementação de um laboratório agroalimentar destinado a apoiar a qualidade dos alimentos e o desenvolvimento agrícola."
+        },
+        "sw": {
+          "title": "Guinea ya Ikweta yaendeleza mipango ya maabara ya kilimo na chakula",
+          "summary": "Huduma ya habari ya serikali inaripoti kuwa waziri mkuu anaendeleza utekelezaji wa maabara ya kilimo na chakula inayolenga kusaidia ubora wa chakula na maendeleo ya kilimo."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "CG",
@@ -2079,7 +2099,27 @@
       "source_tier": 2,
       "published": "2026-09-09",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Un programme UE-Centre du commerce international renforce le rôle des femmes dans l’élevage en Eswatini",
+          "summary": "Une initiative soutenue par l’Union européenne a indiqué avoir formé 133 éleveurs, dont 58 % de femmes. D’autres activités visent à renforcer les compétences des agriculteurs, des entreprises agroalimentaires et des agents de vulgarisation en gestion durable des pâturages."
+        },
+        "ar": {
+          "title": "برنامج للاتحاد الأوروبي ومركز التجارة الدولية يعزز دور النساء في قطاع الثروة الحيوانية في إسواتيني",
+          "summary": "أفادت مبادرة مدعومة من الاتحاد الأوروبي بأنها درّبت 133 من مربي الماشية، 58% منهم نساء. وتهدف أنشطة أوسع إلى تطوير مهارات المزارعين والشركات الزراعية والغذائية وموظفي الإرشاد في الإدارة المستدامة للمراعي."
+        },
+        "pt": {
+          "title": "Programa UE-Centro de Comércio Internacional reforça o papel das mulheres no setor pecuário de Essuatíni",
+          "summary": "Uma iniciativa apoiada pela União Europeia informou ter formado 133 criadores de gado, dos quais 58% eram mulheres. Outras atividades procuram desenvolver competências de agricultores, empresas agroalimentares e agentes de extensão na gestão sustentável de pastagens."
+        },
+        "sw": {
+          "title": "Mpango wa EU na Kituo cha Biashara cha Kimataifa waimarisha nafasi ya wanawake katika sekta ya mifugo Eswatini",
+          "summary": "Mpango unaoungwa mkono na Umoja wa Ulaya uliripoti kuwafunza wafugaji 133, ambapo asilimia 58 walikuwa wanawake. Shughuli nyingine zinalenga kuimarisha ujuzi wa wakulima, biashara za kilimo na chakula, na maafisa ugani katika usimamizi endelevu wa malisho."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "ST",
@@ -6983,7 +7023,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Le comité régional de l’Assaba examine la campagne agropastorale 2026 et la sécurité alimentaire en Mauritanie",
+          "summary": "L’agence de presse nationale de Mauritanie rapporte que le comité régional de sécurité alimentaire et nutritionnelle de l’Assaba a examiné les précipitations, les conditions agricoles et pastorales, la disponibilité et les prix des denrées sur les marchés, les vulnérabilités nutritionnelles et la réponse à la période de soudure. Il s’agit d’un bilan régional de suivi, et non d’une nouvelle annonce de subvention."
+        },
+        "ar": {
+          "title": "اللجنة الإقليمية في العصابة تراجع الموسم الزراعي والرعوي لعام 2026 والأمن الغذائي في موريتانيا",
+          "summary": "أفادت وكالة الأنباء الموريتانية بأن اللجنة الإقليمية للأمن الغذائي والتغذية في العصابة راجعت هطول الأمطار والظروف الزراعية والرعوية وتوافر الأغذية وأسعارها في الأسواق ومواطن الضعف التغذوي والاستجابة لفترة الشح. وهذا تحديث للرصد الإقليمي، وليس إعلاناً جديداً عن منحة."
+        },
+        "pt": {
+          "title": "Comité regional de Assaba analisa a campanha agropastoril de 2026 e a segurança alimentar na Mauritânia",
+          "summary": "A agência nacional de notícias da Mauritânia informa que o comité regional de segurança alimentar e nutricional de Assaba analisou as chuvas, as condições agrícolas e pastoris, a disponibilidade e os preços dos alimentos nos mercados, as vulnerabilidades nutricionais e a resposta ao período de escassez. Trata-se de uma atualização regional de monitorização, não de um novo anúncio de subsídio."
+        },
+        "sw": {
+          "title": "Kamati ya eneo la Assaba yapitia msimu wa kilimo na ufugaji wa 2026 na usalama wa chakula nchini Mauritania",
+          "summary": "Shirika la habari la kitaifa la Mauritania linaripoti kuwa kamati ya kikanda ya usalama wa chakula na lishe ya Assaba ilipitia mvua, hali ya kilimo na ufugaji, upatikanaji na bei za chakula sokoni, hatari za lishe na hatua za kukabiliana na kipindi cha upungufu wa chakula. Huu ni taarifa ya ufuatiliaji wa kikanda, si tangazo jipya la ruzuku."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "CG",
@@ -7047,7 +7106,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Le Togo présente l’aide en semences et en engrais prévue pour la campagne agricole 2026",
+          "summary": "Le gouvernement togolais indique que la campagne agricole 2026 prévoit de mettre à la disposition des producteurs 3 809 tonnes de semences de cultures vivrières et 85 000 tonnes d’engrais. Le programme cible notamment le maïs, le sorgho, le mil, le manioc, l’igname, la patate douce, le niébé et l’arachide. Les agriculteurs doivent vérifier auprès des services agricoles les modalités locales de distribution actuellement en vigueur."
+        },
+        "ar": {
+          "title": "توغو توضح الدعم المخطط للبذور والأسمدة خلال الموسم الزراعي لعام 2026",
+          "summary": "تقول الحكومة التوغولية إن الحملة الزراعية لعام 2026 تخطط لإتاحة 3,809 أطنان من بذور المحاصيل الغذائية و85,000 طن من الأسمدة للمنتجين. ويركز البرنامج على محاصيل أساسية تشمل الذرة والذرة الرفيعة والدخن والكسافا واليام والبطاطا الحلوة واللوبيا والفول السوداني. وينبغي للمزارعين التحقق من ترتيبات التوزيع المحلية الحالية لدى الخدمات الزراعية."
+        },
+        "pt": {
+          "title": "Togo apresenta o apoio previsto em sementes e fertilizantes para a campanha agrícola de 2026",
+          "summary": "O governo togolês afirma que a campanha agrícola de 2026 prevê disponibilizar aos produtores 3 809 toneladas de sementes de culturas alimentares e 85 000 toneladas de fertilizantes. O programa abrange culturas básicas como milho, sorgo, painço, mandioca, inhame, batata-doce, feijão-caupi e amendoim. Os agricultores devem confirmar com os serviços agrícolas as modalidades locais de distribuição em vigor."
+        },
+        "sw": {
+          "title": "Togo yaeleza msaada wa mbegu na mbolea kwa msimu wa kilimo wa 2026",
+          "summary": "Serikali ya Togo inasema msimu wa kilimo wa 2026 unapanga kuwapatia wazalishaji tani 3,809 za mbegu za mazao ya chakula na tani 85,000 za mbolea. Mpango unalenga mazao ya msingi kama mahindi, mtama, uwele, muhogo, viazi vikuu, viazi vitamu, kunde na karanga. Wakulima wanapaswa kuthibitisha mipango ya sasa ya usambazaji katika maeneo yao kupitia huduma za kilimo."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "MZ",
@@ -7130,7 +7208,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Les Seychelles renforcent la récupération et le recyclage des engins de pêche perdus",
+          "summary": "L’agence Seychelles News Agency rapporte qu’un projet régional financé par le Japon, auquel participent les Seychelles, Maurice, Madagascar et les Comores, est entré dans sa phase finale. Mis en œuvre avec l’appui de la FAO, le projet vise à récupérer et recycler les engins de pêche abandonnés ou perdus et à améliorer la gestion des équipements en fin de vie, afin de réduire la pollution marine et de soutenir une pêche durable."
+        },
+        "ar": {
+          "title": "سيشل تعزز استعادة معدات الصيد المفقودة وإعادة تدويرها",
+          "summary": "ذكرت وكالة أنباء سيشل أن مشروعاً إقليمياً ممولاً من اليابان، تشارك فيه سيشل وموريشيوس ومدغشقر وجزر القمر، دخل مرحلته النهائية. ويهدف المشروع، المنفذ بدعم من الفاو، إلى استعادة معدات الصيد المهجورة أو المفقودة وإعادة تدويرها وتحسين إدارة المعدات التي انتهى عمرها التشغيلي، للحد من التلوث البحري ودعم مصايد الأسماك المستدامة."
+        },
+        "pt": {
+          "title": "Seicheles reforça a recuperação e reciclagem de artes de pesca perdidas",
+          "summary": "A Seychelles News Agency informa que um projeto regional financiado pelo Japão, que envolve Seicheles, Maurícia, Madagáscar e Comores, entrou na sua fase final. Implementada com apoio da FAO, a iniciativa pretende recuperar e reciclar artes de pesca abandonadas ou perdidas e melhorar a gestão de equipamentos em fim de vida, reduzindo a poluição marinha e apoiando pescas sustentáveis."
+        },
+        "sw": {
+          "title": "Seychelles yaimarisha ukusanyaji na urejelezaji wa vifaa vya uvuvi vilivyopotea",
+          "summary": "Shirika la Habari la Seychelles linaripoti kuwa mradi wa kikanda unaofadhiliwa na Japani, unaohusisha Seychelles, Mauritius, Madagascar na Comoro, umeingia awamu yake ya mwisho. Ukitekelezwa kwa msaada wa FAO, mradi unalenga kukusanya na kurejeleza vifaa vya uvuvi vilivyoachwa au kupotea na kuboresha usimamizi wa vifaa vilivyomaliza matumizi, ili kupunguza uchafuzi wa bahari na kusaidia uvuvi endelevu."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "MZ",
