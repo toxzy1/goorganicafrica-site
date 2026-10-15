@@ -1,3 +1,4 @@
+// Rendered-site release audit; executed by the build workflow for review-candidate PRs.
 const fs = require("fs");
 const path = require("path");
 const site = path.join(__dirname, "..", "_site");
@@ -122,6 +123,28 @@ for (const file of htmlFiles) {
   if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
     const selectors = (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
     if (selectors !== 1) failures.push(rel + ": expected exactly one site language selector, found " + selectors);
+    const selectorOptions = new Set();
+    for (const select of html.matchAll(/<select\b[^>]*class=["'][^"']*site-language-select[^"']*["'][^>]*>([\s\S]*?)<\/select>/gi)) {
+      for (const option of select[1].matchAll(/<option\b[^>]*value=["'](en|fr|ar|pt|sw)["']/gi)) selectorOptions.add(option[1]);
+    }
+    for (const lang of ["en", "fr", "ar", "pt", "sw"]) {
+      if (!selectorOptions.has(lang)) failures.push(rel + ": language selector is missing option " + lang);
+    }
+  }
+  // Every generated country-news page must link to the matching country slug
+  // in all five language trees. This catches accidental homepage fallbacks,
+  // guessed slugs, and language options that lead to nonexistent pages.
+  const countryNewsRoute = rel.match(/^(?:(fr|ar|pt|sw)\/)?agricultural-news\/([^/]+)\/index\.html$/);
+  if (countryNewsRoute) {
+    const slug = countryNewsRoute[2];
+    const targets = {};
+    for (const match of html.matchAll(/data-url-(en|fr|ar|pt|sw)=["']([^"']+)["']/gi)) targets[match[1]] = match[2];
+    for (const lang of ["en", "fr", "ar", "pt", "sw"]) {
+      const expected = "/" + (lang === "en" ? "" : lang + "/") + "agricultural-news/" + slug + "/";
+      if (targets[lang] !== expected) failures.push(rel + ": language target " + lang + " should be " + expected + ", found " + (targets[lang] || "(missing)"));
+      const targetFile = path.join(site, expected.replace(/^\//, ""), "index.html");
+      if (!fs.existsSync(targetFile)) failures.push(rel + ": language target does not render for " + lang + ": " + expected);
+    }
   }
   if (/content-variant|data-content-group|data-content-language|data-content-slug/.test(html)) {
     failures.push(rel + ": legacy content-variant markup remains");
@@ -165,8 +188,8 @@ for (const [rel, prefix] of [
 // Step 7: verify Resources and Agricultural News are rendered in all five languages.
 const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
-const hasLang = (html, lang) => new RegExp('<html\\b[^>]*\\blang="' + lang + '"', "i").test(html);
-const hasRtl = (html) => new RegExp('<html\\b[^>]*\\bdir="rtl"', "i").test(html);
+const hasLang = (html, lang) => { const match = html.match(/<html\b[^>]*\blang=["\']([^"\']+)["\']/i); return !!match && match[1].split("-")[0].toLowerCase() === lang; };
+const hasRtl = (html) => /<html\b[^>]*\bdir=["\']rtl["\']/i.test(html);
 const resourcePages = enabledLanguages.map((lang) => ({
   lang,
   rel: languagePrefix(lang) + "agriculture-resources/index.html",
@@ -247,8 +270,50 @@ if (searchHtml) {
     for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
       if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("search/index.html: no searchable " + type + " records");
     }
+    const records = [...sourceBlock.matchAll(/<article\b([^>]*)>/gi)];
+    let unusable = 0;
+    for (const match of records) {
+      const attrs = match[1];
+      const urlMatch = attrs.match(/\bdata-url=["']([^"']*)["']/i);
+      const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
+      const title = titleMatch ? titleMatch[1].trim() : "";
+      const url = urlMatch ? urlMatch[1].trim() : "";
+      if (!title || !searchTargetExists(url)) {
+        unusable++;
+        failures.push("search/index.html: indexed " + ((attrs.match(/\bdata-type=["']([^"']*)["']/i) || [,"unknown"])[1]) +
+          " record has missing title or unusable destination: " + (title || "(untitled)") + " -> " + (url || "(no URL)"));
+      }
+    }
+    if (unusable) failures.push("search/index.html: " + unusable + " indexed records cannot lead visitors to a usable destination");
   }
 }
+
+// Validate that search records are not merely counted: every indexed result must
+// have a usable destination, and internal destinations must exist in the rendered site.
+function searchTargetExists(rawUrl) {
+  const value = String(rawUrl || "").trim().replace(/&amp;/g, "&");
+  if (!value || /^(javascript:|data:|vbscript:)/i.test(value)) return false;
+  if (/^https?:\/\//i.test(value)) return true;
+  if (/^(mailto:|tel:)/i.test(value)) return true;
+  if (/^\/\//.test(value)) return true;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return false;
+  const pathname = value.split(/[?#]/)[0];
+  if (!pathname) return true;
+  const normalized = pathname.startsWith("/") ? pathname.slice(1) : pathname;
+  const candidates = [];
+  if (!normalized || normalized.endsWith("/")) candidates.push(path.join(site, normalized, "index.html"));
+  else {
+    candidates.push(path.join(site, normalized));
+    candidates.push(path.join(site, normalized, "index.html"));
+    if (!path.extname(normalized)) candidates.push(path.join(site, normalized, "index.html"));
+  }
+  return candidates.some(candidate => {
+    const resolved = path.resolve(candidate);
+    const withinSite = resolved.startsWith(path.resolve(site) + path.sep) || resolved === path.resolve(site + "/index.html");
+    return withinSite && fs.existsSync(resolved) && fs.statSync(resolved).isFile();
+  });
+}
+
 const decisionHtml = read("farmer-decision-centre/index.html");
 if (decisionHtml) {
   for (const id of ["dc-country", "dc-topic", "dc-goal", "dc-build", "dc-output"]) {
@@ -266,6 +331,11 @@ if (decisionHtml) {
       if (decisionRecords.length < 100) failures.push("farmer-decision-centre/index.html: too few source records (" + decisionRecords.length + ")");
       if (decisionCountries.size < 40) failures.push("farmer-decision-centre/index.html: covers only " + decisionCountries.size + " country codes");
       if (decisionSources < 100) failures.push("farmer-decision-centre/index.html: too few linked source records (" + decisionSources + ")");
+      const unusableDecisionRecords = decisionRecords.filter(r => !String(r.title || "").trim() || !searchTargetExists(r.url));
+      if (unusableDecisionRecords.length) {
+        failures.push("farmer-decision-centre/index.html: " + unusableDecisionRecords.length + " records have a missing title or unusable destination");
+        unusableDecisionRecords.slice(0, 20).forEach(r => failures.push("Decision Centre source: " + (r.title || "(untitled)") + " -> " + (r.url || "(no URL)")));
+      }
       for (const section of ["markets", "opportunities", "resources", "services", "news"]) {
         if (!decisionSections.has(section)) failures.push("farmer-decision-centre/index.html: no records for " + section);
       }
