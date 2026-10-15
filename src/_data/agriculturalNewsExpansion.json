@@ -457,7 +457,27 @@
       "source_tier": 1,
       "published": "2026-03-30",
       "verified": "2026-10-08",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Guinée soutient la restauration des paysages dégradés grâce à la régénération naturelle assistée",
+          "summary": "La FAO a lancé une formation à Mamou pour promouvoir la régénération naturelle assistée, restaurer les terres dégradées et renforcer la résilience des communautés face au changement climatique."
+        },
+        "ar": {
+          "title": "غينيا تدعم استعادة الأراضي المتدهورة من خلال التجدد الطبيعي الموجّه",
+          "summary": "أطلقت الفاو تدريباً في مامو لتعزيز التجدد الطبيعي الموجّه واستعادة الأراضي المتدهورة وتقوية قدرة المجتمعات على الصمود أمام تغير المناخ."
+        },
+        "pt": {
+          "title": "Guiné apoia a recuperação de paisagens degradadas através da regeneração natural assistida",
+          "summary": "A FAO lançou uma formação em Mamou para promover a regeneração natural assistida, recuperar terras degradadas e reforçar a resiliência das comunidades às alterações climáticas."
+        },
+        "sw": {
+          "title": "Guinea yaunga mkono urejeshaji wa maeneo yaliyoharibika kupitia uotaji upya wa asili unaosaidiwa",
+          "summary": "FAO ilianzisha mafunzo mjini Mamou kukuza uotaji upya wa asili unaosaidiwa, kurejesha ardhi iliyoharibika na kuimarisha uwezo wa jamii kukabiliana na mabadiliko ya tabianchi."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "GN",
@@ -469,7 +489,27 @@
       "source_tier": 1,
       "published": "2025-12-29",
       "verified": "2026-10-08",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Guinée utilise l’énergie durable pour moderniser les infrastructures agricoles",
+          "summary": "La FAO a soutenu l’installation de systèmes photovoltaïques dans les centres semenciers de Kilissi et de Koba afin d’améliorer la résilience énergétique et de renforcer les infrastructures agricoles."
+        },
+        "ar": {
+          "title": "غينيا تستخدم الطاقة المستدامة لتحديث البنية التحتية الزراعية",
+          "summary": "دعمت الفاو أنظمة الطاقة الشمسية الكهروضوئية في مراكز البذور في كيليسي وكوبا لتحسين القدرة على مواجهة اضطرابات الطاقة وتعزيز البنية التحتية الزراعية."
+        },
+        "pt": {
+          "title": "Guiné utiliza energia sustentável para modernizar as infraestruturas agrícolas",
+          "summary": "A FAO apoiou sistemas fotovoltaicos nos centros de sementes de Kilissi e Koba para melhorar a resiliência energética e reforçar as infraestruturas agrícolas."
+        },
+        "sw": {
+          "title": "Guinea inatumia nishati endelevu kuboresha miundombinu ya kilimo",
+          "summary": "FAO iliunga mkono mifumo ya nishati ya jua katika vituo vya mbegu vya Kilissi na Koba ili kuboresha ustahimilivu wa nishati na kuimarisha miundombinu ya kilimo."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "LS",
@@ -3329,7 +3369,27 @@
       "status": "review",
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct FAO article located. Confirm Guinea country assignment and category; keep in review until checked against existing cattle and livestock-service records."
+      "review_reason": "Direct FAO article located. Confirm Guinea country assignment and category; keep in review until checked against existing cattle and livestock-service records.",
+      "translations": {
+        "fr": {
+          "title": "La Guinée utilise la technologie pour améliorer l’insémination artificielle des bovins",
+          "summary": "Grâce au Projet de développement de l’agriculture commerciale financé par la Banque mondiale en Guinée, la FAO a introduit l’échographie vétérinaire et une formation pratique pour les techniciens afin d’améliorer la gestion de la reproduction bovine dans six préfectures."
+        },
+        "ar": {
+          "title": "غينيا تستخدم التكنولوجيا لتحسين التلقيح الاصطناعي للأبقار",
+          "summary": "قدمت الفاو، عبر مشروع تنمية الزراعة التجارية الممول من البنك الدولي في غينيا، تقنية الموجات فوق الصوتية البيطرية وتدريباً عملياً للفنيين لتحسين إدارة تكاثر الأبقار في ست مقاطعات."
+        },
+        "pt": {
+          "title": "Guiné utiliza tecnologia para melhorar a inseminação artificial de bovinos",
+          "summary": "A FAO, através do Projeto de Desenvolvimento da Agricultura Comercial na Guiné, financiado pelo Banco Mundial, introduziu tecnologia de ultrassons veterinários e formação prática para técnicos, visando melhorar a gestão reprodutiva dos bovinos em seis prefeituras."
+        },
+        "sw": {
+          "title": "Guinea inatumia teknolojia kuboresha upandikizaji wa mbegu kwa ng'ombe",
+          "summary": "Kupitia Mradi wa Maendeleo ya Kilimo cha Kibiashara nchini Guinea unaofadhiliwa na Benki ya Dunia, FAO ilianzisha teknolojia ya ultrasound ya mifugo na mafunzo ya vitendo kwa mafundi ili kuboresha usimamizi wa uzazi wa ng'ombe katika wilaya sita."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "CV",
@@ -4657,7 +4717,26 @@
       "status": "official",
       "lifecycle": "current",
       "coverage_scope": "country",
-      "translation_status": "draft"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Le Premier ministre guinéen soutient l’étude d’un projet de production de riz hybride",
+          "summary": "Le Premier ministre guinéen a rencontré une délégation de YILONGHE Plantation et Développement Agricole Guinée, qui a présenté un système proposé de production de riz hybride fondé sur des études menées en Guinée depuis 2019. L’entreprise a indiqué que la phase de démonstration et de développement des semences nécessiterait environ 1 000 hectares. Le rapport décrit une proposition encouragée par le gouvernement, et non un financement confirmé ni une production déjà réalisée."
+        },
+        "ar": {
+          "title": "رئيس وزراء غينيا يؤيد دراسة مشروع لإنتاج الأرز الهجين",
+          "summary": "التقى رئيس وزراء غينيا وفداً من شركة YILONGHE Plantation وDéveloppement Agricole Guinée، التي عرضت نظاماً مقترحاً لإنتاج الأرز الهجين يستند إلى دراسات أُجريت في غينيا منذ عام 2019. وذكرت الشركة أن مرحلة العرض التجريبي وتطوير البذور ستحتاج إلى نحو 1,000 هكتار. ويصف التقرير مقترحاً حظي بتشجيع الحكومة، وليس تمويلاً مؤكداً أو إنتاجاً مكتملاً."
+        },
+        "pt": {
+          "title": "Primeiro-ministro da Guiné apoia a análise de um projeto de produção de arroz híbrido",
+          "summary": "O primeiro-ministro da Guiné reuniu-se com uma delegação da YILONGHE Plantation e da Développement Agricole Guinée, que apresentou uma proposta de produção de arroz híbrido baseada em estudos realizados no país desde 2019. A empresa afirmou que a fase de demonstração e desenvolvimento de sementes exigiria cerca de 1 000 hectares. O relatório descreve uma proposta incentivada pelo governo, não financiamento confirmado nem produção já concretizada."
+        },
+        "sw": {
+          "title": "Waziri mkuu wa Guinea aunga mkono kuchunguzwa kwa mradi wa uzalishaji wa mpunga chotara",
+          "summary": "Waziri mkuu wa Guinea alikutana na ujumbe wa YILONGHE Plantation na Développement Agricole Guinée, uliowasilisha mfumo unaopendekezwa wa uzalishaji wa mpunga chotara unaotegemea tafiti zilizofanywa nchini humo tangu 2019. Kampuni ilisema hatua ya maonesho na ukuzaji wa mbegu ingehitaji takriban hekta 1,000. Ripoti inaeleza pendekezo lililotiwa moyo na serikali, si ufadhili uliothibitishwa wala uzalishaji uliokamilika."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "MG",
