@@ -34,6 +34,18 @@ test("Decision Centre renders a country brief or an explicit fallback instead of
   await expect(page.locator("#dc-output")).toContainText(/Nigeria|exact matches|records|information/i);
 });
 
+test("country-language farm calculator loads and keeps the selected country when changing language", async ({ page }) => {
+  await page.goto(baseURL + "/ng/en/farm-profit-calculator/", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#calc-country-switcher")).toBeVisible({ timeout: 15000 });
+  await expect(page.locator("#calc-language-switcher")).toHaveValue("en");
+  await expect(page.locator("#calc-root .calc-option-card").first()).toBeVisible({ timeout: 15000 });
+  await page.locator("#calc-language-switcher").selectOption("pt");
+  await expect(page).toHaveURL(/\/ng\/pt\/farm-profit-calculator\//, { timeout: 15000 });
+  await expect(page.locator("html")).toHaveAttribute("lang", "pt");
+  await expect(page.locator("#calc-country-switcher")).toBeVisible();
+  await expect(page.locator("#calc-language-switcher")).toHaveValue("pt");
+});
+
 test("Nigeria agricultural-news page has content or a useful fallback, and language switch reaches Swahili route", async ({ page }) => {
   await page.goto(baseURL + "/agricultural-news/nigeria/", { waitUntil: "domcontentloaded" });
   await expect(page.locator("h1").first()).toBeVisible();
