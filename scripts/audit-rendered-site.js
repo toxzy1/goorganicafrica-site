@@ -586,6 +586,20 @@ if (fs.existsSync(mergedNewsPath)) {
   }
 }
 
+// Pin the two owner-requested SEO outputs so a fallback description cannot
+// silently pass merely because it contains no raw template delimiters.
+const homepageHtml = read("index.html");
+const homepageDescriptionTag = (homepageHtml.match(/<meta\b(?=[^>]*\bname=["']description["'])[^>]*>/i) || [])[0] || "";
+const homepageDescription = (homepageDescriptionTag.match(/\bcontent\s*=\s*(["'])([\s\S]*?)\1/i) || [])[2] || "";
+if (!/across 17 farming enterprises in 54 African countries/.test(homepageDescription)) {
+  failures.push("index.html: homepage meta description is not the computed enterprise/country description");
+}
+const portugueseCalculatorHtml = read("ng/pt/farm-profit-calculator/index.html");
+const portugueseCalculatorTitle = (portugueseCalculatorHtml.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || "";
+if (portugueseCalculatorTitle.trim() !== "Calculadora gratuita de lucro agrícola — Nigeria | GoOrganicAfrica") {
+  failures.push("ng/pt/farm-profit-calculator/index.html: unexpected rendered title: " + portugueseCalculatorTitle.trim());
+}
+
 if (failures.length) {
   console.error("Rendered-site audit failed:");
   failures.forEach(x => console.error(" - " + x));
