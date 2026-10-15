@@ -1533,7 +1533,27 @@
       "source_tier": 1,
       "published": "2026-09-03",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Madagascar promeut une agriculture résiliente et la souveraineté alimentaire au Forum africain des systèmes alimentaires 2026",
+          "summary": "Le ministère malgache de l’Agriculture a présenté ses priorités en matière de systèmes alimentaires résilients, d’adaptation climatique, d’infrastructures agricoles et de renforcement de la production nationale lors du Forum africain des systèmes alimentaires à Kigali."
+        },
+        "ar": {
+          "title": "مدغشقر تروّج للزراعة القادرة على الصمود والسيادة الغذائية في منتدى النظم الغذائية الأفريقي 2026",
+          "summary": "عرضت وزارة الزراعة في مدغشقر أولوياتها بشأن النظم الغذائية القادرة على الصمود والتكيف مع المناخ والبنية التحتية الزراعية وتعزيز الإنتاج المحلي خلال مشاركتها في منتدى النظم الغذائية الأفريقي في كيغالي."
+        },
+        "pt": {
+          "title": "Madagáscar promove agricultura resiliente e soberania alimentar no Fórum Africano dos Sistemas Alimentares de 2026",
+          "summary": "O Ministério da Agricultura de Madagáscar apresentou prioridades para sistemas alimentares resilientes, adaptação climática, infraestruturas agrícolas e reforço da produção nacional durante a participação no Fórum Africano dos Sistemas Alimentares, em Kigali."
+        },
+        "sw": {
+          "title": "Madagascar yaendeleza kilimo kinachostahimili changamoto na mamlaka ya chakula katika Jukwaa la Mifumo ya Chakula Afrika 2026",
+          "summary": "Wizara ya Kilimo ya Madagascar iliwasilisha vipaumbele vya mifumo ya chakula inayostahimili changamoto, kukabiliana na tabianchi, miundombinu ya kilimo na kuimarisha uzalishaji wa ndani iliposhiriki Jukwaa la Mifumo ya Chakula Afrika mjini Kigali."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "CM",
@@ -3213,7 +3233,27 @@
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
       "source_language": "fr",
-      "review_reason": "Direct official FAO article is in French. Review the English title/summary and confirm whether this data-governance training belongs in Agricultural News or Resources before approval."
+      "review_reason": "Direct official FAO article is in French. Review the English title/summary and confirm whether this data-governance training belongs in Agricultural News or Resources before approval.",
+      "translations": {
+        "fr": {
+          "title": "Madagascar renforce la gouvernance des données agricoles grâce à la plateforme régionale SADC AIMS",
+          "summary": "La FAO et le ministère malgache de l’Agriculture ont organisé une formation technique au Système de gestion de l’information agricole de la SADC afin d’améliorer la gestion des informations agricoles et la planification fondée sur des données probantes. L’activité s’inscrivait dans la deuxième phase du projet régional STOSAR."
+        },
+        "ar": {
+          "title": "مدغشقر تعزز حوكمة البيانات الزراعية عبر المنصة الإقليمية SADC AIMS",
+          "summary": "نظمت الفاو ووزارة الزراعة في مدغشقر تدريباً فنياً على نظام إدارة المعلومات الزراعية التابع لمجموعة تنمية الجنوب الأفريقي لتحسين إدارة المعلومات الزراعية والتخطيط المستند إلى الأدلة. وارتبط النشاط بالمرحلة الثانية من المشروع الإقليمي STOSAR."
+        },
+        "pt": {
+          "title": "Madagáscar reforça a governação dos dados agrícolas através da plataforma regional SADC AIMS",
+          "summary": "A FAO e o Ministério da Agricultura de Madagáscar realizaram formação técnica sobre o Sistema de Gestão de Informação Agrícola da SADC para melhorar a gestão da informação agrícola e o planeamento baseado em evidências. A atividade esteve ligada à segunda fase do projeto regional STOSAR."
+        },
+        "sw": {
+          "title": "Madagascar yaimarisha usimamizi wa data za kilimo kupitia jukwaa la kikanda la SADC AIMS",
+          "summary": "FAO na Wizara ya Kilimo ya Madagascar zilifanya mafunzo ya kiufundi kuhusu Mfumo wa Usimamizi wa Taarifa za Kilimo wa SADC ili kuboresha usimamizi wa taarifa za kilimo na mipango inayotegemea ushahidi. Shughuli hiyo ilihusishwa na awamu ya pili ya mradi wa kikanda wa STOSAR."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "SO",
@@ -4812,7 +4852,26 @@
       "status": "official",
       "lifecycle": "current",
       "coverage_scope": "country",
-      "translation_status": "draft"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Madagascar lance PAPRIZ 4 pour renforcer la productivité rizicole et les chaînes de valeur",
+          "summary": "Le ministère malgache de l’Agriculture et de la Souveraineté alimentaire a lancé la quatrième phase de PAPRIZ, un projet quinquennal soutenu par la JICA. Les activités prévues dans les régions d’Alaotra-Mangoro et de Boeny visent à améliorer la qualité du riz, les organisations de producteurs, les liens avec les marchés, l’irrigation, la formation et la participation des femmes. Le lancement marque le début de la mise en œuvre, et non des résultats déjà obtenus."
+        },
+        "ar": {
+          "title": "مدغشقر تطلق المرحلة الرابعة من PAPRIZ لتعزيز إنتاجية الأرز وسلاسل القيمة",
+          "summary": "أطلقت وزارة الزراعة والسيادة الغذائية في مدغشقر المرحلة الرابعة من مشروع PAPRIZ الممتد لخمس سنوات والمدعوم من الوكالة اليابانية للتعاون الدولي. وتهدف الأنشطة في منطقتي ألاوترا-مانغورو وبويني إلى تحسين جودة الأرز ومنظمات المنتجين والروابط بالأسواق والبنية التحتية للري والتدريب ومشاركة النساء. ويشير الإطلاق إلى بدء التنفيذ، وليس إلى تحقق النتائج بالفعل."
+        },
+        "pt": {
+          "title": "Madagáscar lança o PAPRIZ 4 para reforçar a produtividade do arroz e as cadeias de valor",
+          "summary": "O Ministério da Agricultura e Soberania Alimentar de Madagáscar lançou a quarta fase do PAPRIZ, um projeto de cinco anos apoiado pela JICA. As atividades em Alaotra-Mangoro e Boeny destinam-se a melhorar a qualidade do arroz, as organizações de produtores, as ligações aos mercados, as infraestruturas de irrigação, a formação e a participação das mulheres. O lançamento marca o início da implementação, não a conclusão dos resultados."
+        },
+        "sw": {
+          "title": "Madagascar yazindua PAPRIZ 4 kuimarisha uzalishaji wa mpunga na minyororo ya thamani",
+          "summary": "Wizara ya Kilimo na Ukuu wa Chakula ya Madagascar imezindua awamu ya nne ya PAPRIZ, mradi wa miaka mitano unaoungwa mkono na JICA. Shughuli katika maeneo ya Alaotra-Mangoro na Boeny zinalenga kuboresha ubora wa mpunga, mashirika ya wazalishaji, uhusiano wa masoko, miundombinu ya umwagiliaji, mafunzo na ushiriki wa wanawake. Uzinduzi unaashiria mwanzo wa utekelezaji, si matokeo yaliyokamilika."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "MG",
@@ -4828,7 +4887,26 @@
       "status": "official",
       "lifecycle": "current",
       "coverage_scope": "country",
-      "translation_status": "draft"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Madagascar examine les résultats du projet d’agriculture orientée vers le marché et les priorités 2026–2027",
+          "summary": "Le ministère de l’Agriculture et de la Souveraineté alimentaire a indiqué que la quatrième réunion de coordination conjointe du projet SHEP avait examiné les progrès depuis 2023 et défini les priorités pour 2026–2027. Selon le ministère, 191 techniciens nationaux et régionaux ont été formés et accompagnent 122 organisations de producteurs dans six régions ciblées; le suivi sur le terrain et la mesure de l’impact doivent se poursuivre."
+        },
+        "ar": {
+          "title": "مدغشقر تراجع نتائج مشروع الزراعة الموجهة للسوق وأولويات 2026–2027",
+          "summary": "ذكرت وزارة الزراعة والسيادة الغذائية أن الاجتماع التنسيقي المشترك الرابع لمشروع SHEP استعرض التقدم منذ عام 2023 وحدد أولويات 2026–2027. وقالت الوزارة إن 191 فنياً وطنياً وإقليمياً تلقوا التدريب ويقدمون الدعم إلى 122 منظمة للمنتجين في ست مناطق مستهدفة، مع التخطيط لمواصلة المتابعة الميدانية وقياس الأثر."
+        },
+        "pt": {
+          "title": "Madagáscar avalia os resultados do projeto de agricultura orientada para o mercado e as prioridades para 2026–2027",
+          "summary": "O Ministério da Agricultura e Soberania Alimentar informou que a quarta reunião conjunta de coordenação do projeto SHEP analisou os progressos desde 2023 e definiu prioridades para 2026–2027. Segundo o ministério, 191 técnicos nacionais e regionais receberam formação e apoiam 122 organizações de produtores em seis regiões-alvo; o acompanhamento no terreno e a avaliação do impacto ainda estão previstos."
+        },
+        "sw": {
+          "title": "Madagascar yapitia matokeo ya mradi wa kilimo kinachoelekezwa sokoni na vipaumbele vya 2026–2027",
+          "summary": "Wizara ya Kilimo na Ukuu wa Chakula ilisema kuwa mkutano wa nne wa pamoja wa uratibu wa mradi wa SHEP ulipitia maendeleo tangu 2023 na kuweka vipaumbele vya 2026–2027. Kwa mujibu wa wizara, mafundi 191 wa kitaifa na kikanda wamepata mafunzo na wanasaidia mashirika 122 ya wazalishaji katika maeneo sita lengwa; ufuatiliaji wa mashambani na upimaji wa athari bado umepangwa kuendelea."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "MG",
@@ -4844,7 +4922,26 @@
       "status": "official",
       "lifecycle": "current",
       "coverage_scope": "country",
-      "translation_status": "draft"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Madagascar présente la variété de riz Besalohy issue d’une collaboration entre chercheurs malgaches et japonais",
+          "summary": "Une cérémonie à Antananarivo a présenté Besalohy, une variété de riz développée conjointement par le centre de recherche malgache FOFIFA et le JIRCAS japonais. Le rapport indique que la variété a été obtenue grâce à une sélection assistée par marqueurs ADN et que les autorités souhaitent soutenir sa diffusion; les performances et l’adoption au niveau des exploitations doivent être évaluées séparément de l’annonce de sa présentation."
+        },
+        "ar": {
+          "title": "مدغشقر تكشف عن صنف الأرز بيسالوي المطوّر بالتعاون البحثي بين مدغشقر واليابان",
+          "summary": "قدّم حفل في أنتاناناريفو صنف الأرز بيسالوي، الذي طوّره مركز الأبحاث في مدغشقر FOFIFA بالتعاون مع مركز JIRCAS الياباني. ويذكر التقرير أن الصنف طُوّر باستخدام الانتخاب بمساعدة مؤشرات الحمض النووي، وأن السلطات تعتزم دعم نشره؛ وينبغي تقييم أدائه واعتماده لدى المزارعين بشكل منفصل عن إعلان تقديمه."
+        },
+        "pt": {
+          "title": "Madagáscar apresenta a variedade de arroz Besalohy desenvolvida em colaboração entre investigadores malgaxes e japoneses",
+          "summary": "Uma cerimónia em Antananarivo apresentou Besalohy, uma variedade de arroz desenvolvida conjuntamente pelo centro de investigação malgaxe FOFIFA e pelo JIRCAS do Japão. O relatório refere que a variedade foi desenvolvida através de seleção assistida por marcadores de ADN e que as autoridades pretendem apoiar a sua divulgação; o desempenho e a adoção pelos agricultores devem ser avaliados separadamente do anúncio de lançamento."
+        },
+        "sw": {
+          "title": "Madagascar yatangaza aina ya mpunga ya Besalohy iliyobuniwa kwa ushirikiano wa watafiti wa Madagascar na Japan",
+          "summary": "Sherehe mjini Antananarivo ilitambulisha Besalohy, aina ya mpunga iliyobuniwa kwa pamoja na kituo cha utafiti cha Madagascar FOFIFA na JIRCAS ya Japan. Ripoti inasema aina hiyo ilitengenezwa kwa uteuzi unaosaidiwa na alama za DNA na kwamba mamlaka zinakusudia kusaidia usambazaji wake; utendaji na matumizi yake kwa wakulima vinapaswa kutathminiwa kando na tangazo la uzinduzi."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "MW",
