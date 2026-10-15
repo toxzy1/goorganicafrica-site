@@ -784,7 +784,27 @@
       "source_tier": 1,
       "published": "2026-08-31",
       "verified": "2026-10-08",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Somalie met en avant les systèmes d’alerte précoce comme fondement de la résilience agricole",
+          "summary": "La FAO souligne l’expérience de la Somalie dans l’utilisation des évaluations de la sécurité alimentaire, des systèmes de données et des mécanismes d’alerte précoce pour renforcer une action de résilience menée en temps utile."
+        },
+        "ar": {
+          "title": "الصومال يبرز أنظمة الإنذار المبكر أساساً للصمود الزراعي",
+          "summary": "تسلط الفاو الضوء على تجربة الصومال في استخدام تقييمات الأمن الغذائي وأنظمة البيانات وآليات الإنذار المبكر لتعزيز إجراءات الصمود في الوقت المناسب."
+        },
+        "pt": {
+          "title": "Somália destaca os sistemas de alerta precoce como base da resiliência agrícola",
+          "summary": "A FAO destaca a experiência da Somália na utilização de avaliações de segurança alimentar, sistemas de dados e mecanismos de alerta precoce para reforçar ações de resiliência em tempo útil."
+        },
+        "sw": {
+          "title": "Somalia yaangazia mifumo ya tahadhari ya mapema kama msingi wa ustahimilivu wa kilimo",
+          "summary": "FAO inaangazia uzoefu wa Somalia katika kutumia tathmini za usalama wa chakula, mifumo ya data na taratibu za tahadhari ya mapema ili kuimarisha hatua za ustahimilivu kwa wakati."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "LR",
@@ -3328,7 +3348,27 @@
       "status": "review",
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct official FAO country article located. Confirm this is distinct from other JOSP/Sabuun Barrage records and keep one canonical record per source article."
+      "review_reason": "Direct official FAO country article located. Confirm this is distinct from other JOSP/Sabuun Barrage records and keep one canonical record per source article.",
+      "translations": {
+        "fr": {
+          "title": "Le gouvernement somalien, l’ONU et leurs partenaires lancent la restauration du barrage de Sabuun",
+          "summary": "La FAO indique que les travaux de restauration du barrage de Sabuun ont commencé dans le cadre du Programme de stockage hors cours d’eau de Jowhar (JOSP), afin d’améliorer l’accès à l’irrigation, la sécurité de l’eau et la résilience aux inondations et aux sécheresses des communautés agricoles du bassin de la Shabelle."
+        },
+        "ar": {
+          "title": "الحكومة الصومالية والأمم المتحدة وشركاؤهما يبدؤون ترميم حاجز سابون",
+          "summary": "تفيد الفاو ببدء أعمال ترميم حاجز سابون ضمن برنامج جوهر للتخزين خارج مجرى النهر (JOSP)، بهدف تحسين الوصول إلى مياه الري والأمن المائي وتعزيز قدرة المجتمعات الزراعية في حوض شبيلي على مواجهة الفيضانات والجفاف."
+        },
+        "pt": {
+          "title": "Governo da Somália, ONU e parceiros iniciam a restauração da barragem de Sabuun",
+          "summary": "A FAO informa que começaram as obras de restauração da barragem de Sabuun no âmbito do Programa de Armazenamento Fora do Leito de Jowhar (JOSP), com o objetivo de melhorar o acesso à irrigação, a segurança hídrica e a resiliência às cheias e secas das comunidades agrícolas da bacia do Shabelle."
+        },
+        "sw": {
+          "title": "Serikali ya Somalia, UN na washirika waanza kurejesha kizuizi cha maji cha Sabuun",
+          "summary": "FAO inaripoti kuwa kazi za kurejesha kizuizi cha maji cha Sabuun zimeanza chini ya Mpango wa Hifadhi ya Maji Nje ya Mkondo wa Jowhar (JOSP), kwa lengo la kuboresha upatikanaji wa umwagiliaji, usalama wa maji na ustahimilivu dhidi ya mafuriko na ukame kwa jamii za wakulima katika Bonde la Shabelle."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "SO",
@@ -3379,7 +3419,27 @@
       "status": "review",
       "lifecycle": "needs_review",
       "coverage_scope": "country_specific",
-      "review_reason": "Direct official FAO country article located. It concerns the same Sabuun Barrage project as a later announcement; compare both records and publish only if the earlier milestone adds distinct value."
+      "review_reason": "Potential duplicate of the later Sabuun Barrage restoration announcement; compare dates and reporting details before deciding whether both cards should be published.",
+      "translations": {
+        "fr": {
+          "title": "La FAO annonce le début imminent des travaux de restauration du barrage de Sabuun en Somalie",
+          "summary": "La FAO décrit la première phase de restauration du barrage de Sabuun dans le cadre du JOSP, un investissement multipartenaire destiné à rétablir les services d’irrigation, à renforcer la protection contre les inondations et à améliorer la sécurité alimentaire et la résilience climatique dans les zones rurales de Somalie."
+        },
+        "ar": {
+          "title": "الفاو تعلن بدء أعمال ترميم حاجز سابون في الصومال",
+          "summary": "تصف الفاو المرحلة الأولى من ترميم حاجز سابون ضمن برنامج JOSP، وهو استثمار متعدد الشركاء يهدف إلى استعادة خدمات الري وتعزيز الحماية من الفيضانات وتحسين الأمن الغذائي والصمود المناخي في المناطق الريفية بالصومال."
+        },
+        "pt": {
+          "title": "FAO anuncia o início das obras de restauração da barragem de Sabuun na Somália",
+          "summary": "A FAO descreve a primeira fase da restauração da barragem de Sabuun no âmbito do JOSP, um investimento de vários parceiros destinado a restabelecer os serviços de irrigação, reforçar a proteção contra cheias e melhorar a segurança alimentar e a resiliência climática nas zonas rurais da Somália."
+        },
+        "sw": {
+          "title": "FAO yasema kazi za kurejesha kizuizi cha maji cha Sabuun nchini Somalia zinaanza",
+          "summary": "FAO inaeleza awamu ya kwanza ya kurejesha kizuizi cha maji cha Sabuun chini ya JOSP, uwekezaji wa washirika wengi unaolenga kurejesha huduma za umwagiliaji, kuimarisha ulinzi dhidi ya mafuriko na kuboresha usalama wa chakula na ustahimilivu wa tabianchi vijijini Somalia."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "TG",
