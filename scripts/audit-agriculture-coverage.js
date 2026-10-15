@@ -162,7 +162,7 @@ newsCountries.forEach((country) => {
     // Translation drafts are deliberately visible as pending on localized pages.
     // Count only approved translations in the coverage metric so draft text is not
     // reported as verified localization.
-    const translationsReviewed = !article.translation_status || article.translation_status === "translated";
+    const translationsReviewed = article.translation_status === "translated";
     for (const lang of LANGS) {
       if (translationsReviewed &&
           nonempty(article.translations && article.translations[lang] && article.translations[lang].title) &&
