@@ -1784,7 +1784,27 @@
       "source_tier": 1,
       "published": "2026-09-10",
       "verified": "2026-10-13",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Le Niger produit sa première récolte de semences certifiées de pomme de terre avec l’appui de la FAO",
+          "summary": "Le Niger a produit 18,8 tonnes de semences certifiées de pomme de terre de génération G3 à partir de 550 kilogrammes de mini-tubercules initiaux, dans le cadre d’un projet pilote soutenu par la FAO et l’institut national de recherche agricole. L’initiative a également formé 204 producteurs aux pratiques culturales et à la certification des semences."
+        },
+        "ar": {
+          "title": "النيجر تنتج أول محصول معتمد من بذور البطاطا بدعم من الفاو",
+          "summary": "أنتجت النيجر 18.8 طناً من بذور البطاطا المعتمدة من الجيل الثالث (G3) انطلاقاً من 550 كيلوغراماً من الدرنات الصغيرة، ضمن مشروع تجريبي تدعمه الفاو والمعهد الوطني للبحوث الزراعية. كما درّبت المبادرة 204 منتجين على ممارسات الزراعة واعتماد البذور."
+        },
+        "pt": {
+          "title": "Níger produz a primeira colheita de sementes certificadas de batata com apoio da FAO",
+          "summary": "O Níger produziu 18,8 toneladas de sementes certificadas de batata da geração G3 a partir de 550 quilogramas de mini-tubérculos iniciais, num projeto-piloto apoiado pela FAO e pelo instituto nacional de investigação agrícola. A iniciativa também formou 204 produtores em práticas de cultivo e certificação de sementes."
+        },
+        "sw": {
+          "title": "Niger yazalisha zao lake la kwanza la mbegu za viazi zilizothibitishwa kwa msaada wa FAO",
+          "summary": "Niger ilizalisha tani 18.8 za mbegu za viazi za kizazi cha G3 zilizothibitishwa kutoka kilo 550 za viazi-mbegu vidogo vya mwanzo, kupitia mradi wa majaribio unaoungwa mkono na FAO na taasisi ya kitaifa ya utafiti wa kilimo. Mpango huo pia uliwafunza wazalishaji 204 kuhusu mbinu za kilimo na uthibitishaji wa mbegu."
+        }
+      },
+      "translation_status": "pending_review",
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "CF",
@@ -6895,7 +6915,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Djibouti examine les mesures de quarantaine et de protection des exportations de bétail au centre de Damerjog",
+          "summary": "Le ministre de l’Agriculture de Djibouti a visité le centre de quarantaine et d’exportation du bétail de Damerjog pour examiner les laboratoires vétérinaires, les contrôles sanitaires des animaux et les procédures applicables au bétail destiné à l’exportation. La visite a souligné l’importance d’inspections vétérinaires coordonnées pour protéger la santé animale et publique et soutenir le commerce régional du bétail."
+        },
+        "ar": {
+          "title": "جيبوتي تراجع إجراءات الحجر الصحي للماشية وضمانات التصدير في مركز داميرجوغ",
+          "summary": "زار وزير الزراعة في جيبوتي مركز داميرجوغ للحجر الصحي للماشية وتصديرها لمراجعة المختبرات البيطرية وضوابط صحة الحيوان والإجراءات الخاصة بالماشية المعدة للتصدير. وأكدت الزيارة دور التفتيش البيطري المنسق في حماية صحة الحيوان والصحة العامة ودعم تجارة الماشية الإقليمية."
+        },
+        "pt": {
+          "title": "Djibuti analisa as medidas de quarentena pecuária e as salvaguardas de exportação no centro de Damerjog",
+          "summary": "O ministro da Agricultura do Djibuti visitou o centro de quarentena e exportação de gado de Damerjog para analisar os laboratórios veterinários, os controlos de saúde animal e os procedimentos aplicáveis ao gado destinado à exportação. A visita destacou o papel da inspeção veterinária coordenada na proteção da saúde animal e pública e no apoio ao comércio regional de gado."
+        },
+        "sw": {
+          "title": "Djibouti yakagua karantini ya mifugo na hatua za kulinda mauzo ya nje katika kituo cha Damerjog",
+          "summary": "Waziri wa kilimo wa Djibouti alitembelea kituo cha karantini na mauzo ya nje ya mifugo cha Damerjog kukagua maabara za mifugo, udhibiti wa afya ya wanyama na taratibu za mifugo inayokusudiwa kuuzwa nje. Ziara hiyo ilisisitiza umuhimu wa ukaguzi wa mifugo ulioratibiwa ili kulinda afya ya wanyama na umma na kusaidia biashara ya mifugo ya kikanda."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "ER",
@@ -6910,7 +6949,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "L’Érythrée forme les agriculteurs aux méthodes de petites parcelles agricoles productives",
+          "summary": "Le ministère érythréen de l’Information indique que des agriculteurs de Tesseney ont suivi une formation pratique et théorique sur les petites parcelles agricoles productives. Les spécialistes ont mis en avant la conservation de l’eau et des sols, les engrais organiques, les semences améliorées et les possibilités de développer la production de fruits, de légumes, de volailles et de produits laitiers."
+        },
+        "ar": {
+          "title": "إريتريا تدرب المزارعين على أساليب استغلال قطع زراعية صغيرة ومنتجة",
+          "summary": "أفادت وزارة الإعلام الإريترية بأن مزارعين في تسني تلقوا تدريباً عملياً ونظرياً على أساليب استغلال قطع زراعية صغيرة ومنتجة. وشدد الخبراء الزراعيون على حفظ المياه والتربة، واستخدام الأسمدة العضوية والبذور المحسنة، وفرص توسيع إنتاج الفاكهة والخضروات والدواجن ومنتجات الألبان."
+        },
+        "pt": {
+          "title": "Eritreia forma agricultores em métodos para pequenas parcelas agrícolas produtivas",
+          "summary": "O Ministério da Informação da Eritreia informa que agricultores de Teseney receberam formação prática e teórica sobre pequenas parcelas agrícolas produtivas. Os especialistas destacaram a conservação da água e do solo, fertilizantes orgânicos, sementes melhoradas e oportunidades para expandir a produção de frutas, hortícolas, aves e produtos lácteos."
+        },
+        "sw": {
+          "title": "Eritrea yawafunza wakulima mbinu za mashamba madogo yenye tija",
+          "summary": "Wizara ya Habari ya Eritrea inaripoti kuwa wakulima wa Teseney walipata mafunzo ya vitendo na darasani kuhusu mashamba madogo yenye tija. Wataalamu wa kilimo walisisitiza uhifadhi wa maji na udongo, mbolea za kikaboni, mbegu zilizoboreshwa na fursa za kupanua uzalishaji wa matunda, mboga, kuku na bidhaa za maziwa."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "MR",
@@ -7004,7 +7062,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "Le Mozambique lance AgriConnect pour renforcer l’agro-industrie et les chaînes de valeur agricoles",
+          "summary": "Le ministère mozambicain de l’Agriculture, de l’Environnement et de la Pêche a annoncé AgriConnect pour soutenir l’agro-industrie, l’emploi des femmes et des jeunes et la sécurité alimentaire. Les filières prioritaires comprennent la banane, le sucre, le coton et la noix de cajou, ainsi que le riz, le maïs, les haricots et le tilapia, avec pour objectifs de réduire la dépendance aux importations et de créer des emplois ruraux."
+        },
+        "ar": {
+          "title": "موزمبيق تطلق AgriConnect لتعزيز الأعمال الزراعية وسلاسل القيمة الزراعية",
+          "summary": "أعلنت وزارة الزراعة والبيئة ومصايد الأسماك في موزمبيق عن مبادرة AgriConnect لدعم الأعمال الزراعية وتوفير فرص العمل للنساء والشباب وتعزيز الأمن الغذائي. وتشمل سلاسل القيمة ذات الأولوية الموز والسكر والقطن والكاجو، إلى جانب الأرز والذرة والفاصوليا والبلطي، بهدف تقليل الاعتماد على الواردات وخلق وظائف في المناطق الريفية."
+        },
+        "pt": {
+          "title": "Moçambique lança AgriConnect para reforçar o agronegócio e as cadeias de valor agrícolas",
+          "summary": "O Ministério da Agricultura, Ambiente e Pescas de Moçambique anunciou o AgriConnect para apoiar o agronegócio, o emprego de mulheres e jovens e a segurança alimentar. As cadeias de valor prioritárias incluem banana, açúcar, algodão e caju, além de arroz, milho, feijão e tilápia, com o objetivo de reduzir a dependência das importações e criar empregos rurais."
+        },
+        "sw": {
+          "title": "Msumbiji yazindua AgriConnect kuimarisha biashara ya kilimo na minyororo ya thamani ya kilimo",
+          "summary": "Wizara ya Kilimo, Mazingira na Uvuvi ya Msumbiji ilitangaza AgriConnect kusaidia biashara ya kilimo, ajira kwa wanawake na vijana, na usalama wa chakula. Minyororo ya thamani iliyopewa kipaumbele ni pamoja na ndizi, sukari, pamba na korosho, pamoja na mpunga, mahindi, maharagwe na tilapia, kwa lengo la kupunguza utegemezi wa bidhaa zinazoagizwa na kuunda ajira vijijini."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "NE",
@@ -7019,7 +7096,26 @@
       "status": "official",
       "coverage_scope": "country_specific",
       "verified": "2026-10-15",
-      "translation_status": "pending_review"
+      "translation_status": "pending_review",
+      "translations": {
+        "fr": {
+          "title": "La filière oignon de Tahoua réunit les producteurs et les acteurs du marché au Niger",
+          "summary": "L’agence de presse nationale du Niger rapporte qu’un atelier public-privé a réuni des acteurs de la filière oignon des huit régions afin de cerner les obstacles et les possibilités liés à l’accès aux semences et aux intrants, au financement, au stockage, aux marchés et à l’organisation des producteurs. L’initiative vise à améliorer la compétitivité, l’accès aux marchés et les revenus des producteurs d’oignons."
+        },
+        "ar": {
+          "title": "سلسلة قيمة البصل في تاهوا تجمع المنتجين والفاعلين في السوق بالنيجر",
+          "summary": "ذكرت وكالة الأنباء الوطنية في النيجر أن ورشة عمل بين القطاعين العام والخاص جمعت الجهات المعنية بسلسلة قيمة البصل من المناطق الثماني لتحديد العقبات والفرص المتعلقة بالبذور والمدخلات والتمويل والتخزين والأسواق وتنظيم المنتجين. وتهدف المبادرة إلى تحسين القدرة التنافسية والوصول إلى الأسواق ودخل مزارعي البصل."
+        },
+        "pt": {
+          "title": "Cadeia de valor da cebola em Tahoua reúne produtores e agentes do mercado no Níger",
+          "summary": "A agência nacional de notícias do Níger informa que uma oficina público-privada reuniu intervenientes da cadeia de valor da cebola das oito regiões para identificar obstáculos e oportunidades no acesso a sementes e insumos, financiamento, armazenamento, mercados e organização dos produtores. A iniciativa pretende melhorar a competitividade, o acesso aos mercados e o rendimento dos produtores de cebola."
+        },
+        "sw": {
+          "title": "Mnyororo wa thamani wa vitunguu Tahoua waunganisha wazalishaji na wadau wa soko nchini Niger",
+          "summary": "Shirika la habari la kitaifa la Niger linaripoti kuwa warsha ya sekta ya umma na binafsi iliwaleta pamoja wadau wa mnyororo wa thamani wa vitunguu kutoka maeneo yote manane ili kutambua vikwazo na fursa za upatikanaji wa mbegu na pembejeo, fedha, uhifadhi, masoko na mpangilio wa wazalishaji. Mpango huo unalenga kuboresha ushindani, upatikanaji wa masoko na mapato ya wakulima wa vitunguu."
+        }
+      },
+      "translation_review_note": "Machine-drafted translations; verify terminology, factual equivalence and readability before publication."
     },
     {
       "country_code": "SC",
