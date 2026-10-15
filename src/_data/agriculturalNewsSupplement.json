@@ -1394,8 +1394,26 @@
       "verified": "2026-10-07",
       "status": "official",
       "title": "FAO and partners review climate-adaptation results under SAGA 2 in Côte d’Ivoire",
-      "translation_status": "pending_review",
-      "source_id": "fao"
+      "translation_status": "in_review",
+      "source_id": "fao",
+      "translations": {
+        "fr": {
+          "title": "La FAO et ses partenaires examinent les résultats de l’adaptation climatique dans le cadre de SAGA 2 en Côte d’Ivoire",
+          "summary": "La FAO et ses partenaires ont examiné les résultats et les perspectives du programme SAGA 2 pour développer les approches d’adaptation climatique et renforcer les moyens de subsistance agricoles résilients en Côte d’Ivoire."
+        },
+        "ar": {
+          "title": "الفاو وشركاؤها يراجعون نتائج التكيف المناخي ضمن برنامج SAGA 2 في كوت ديفوار",
+          "summary": "راجعت الفاو وشركاؤها نتائج وآفاق برنامج SAGA 2 لتوسيع نطاق أساليب التكيف مع المناخ وتعزيز سبل العيش الزراعية القادرة على الصمود في كوت ديفوار."
+        },
+        "pt": {
+          "title": "FAO e parceiros analisam os resultados da adaptação climática no âmbito do SAGA 2 na Costa do Marfim",
+          "summary": "A FAO e os seus parceiros analisaram os resultados e as perspetivas do programa SAGA 2 para ampliar abordagens de adaptação climática e meios de subsistência agrícolas resilientes na Costa do Marfim."
+        },
+        "sw": {
+          "title": "FAO na washirika wake wapitia matokeo ya kukabiliana na tabianchi kupitia SAGA 2 Côte d’Ivoire",
+          "summary": "FAO na washirika wake walipitia matokeo na matarajio ya mpango wa SAGA 2 wa kupanua mbinu za kukabiliana na tabianchi na kuimarisha maisha ya kilimo yanayostahimili mishtuko nchini Côte d’Ivoire."
+        }
+      }
     },
     {
       "country_code": "ET",
@@ -1798,7 +1816,25 @@
       "verified": "2026-10-07",
       "status": "official",
       "title": "FAO country programme supports climate adaptation in Cabo Verde",
-      "translation_status": "pending_review"
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le programme de pays de la FAO soutient l’adaptation climatique au Cabo Verde",
+          "summary": "Le programme de pays de la FAO comprend un projet d’adaptation climatique pour 2025–2029 destiné à améliorer la sécurité alimentaire et les moyens de subsistance face aux pressions climatiques."
+        },
+        "ar": {
+          "title": "البرنامج القطري للفاو يدعم التكيف مع المناخ في الرأس الأخضر",
+          "summary": "يتضمن البرنامج القطري للفاو مشروعاً للتكيف مع المناخ للفترة 2025–2029 يهدف إلى تحسين الأمن الغذائي وسبل العيش في ظل الضغوط المناخية."
+        },
+        "pt": {
+          "title": "Programa nacional da FAO apoia a adaptação climática em Cabo Verde",
+          "summary": "O programa nacional da FAO inclui um projeto de adaptação climática para 2025–2029 destinado a melhorar a segurança alimentar e os meios de subsistência perante as pressões climáticas."
+        },
+        "sw": {
+          "title": "Mpango wa FAO nchini Cabo Verde waunga mkono kukabiliana na tabianchi",
+          "summary": "Mpango wa FAO nchini humo unajumuisha mradi wa kukabiliana na tabianchi wa 2025–2029 unaolenga kuboresha usalama wa chakula na maisha ya watu chini ya shinikizo la tabianchi."
+        }
+      }
     },
     {
       "country_code": "CV",
@@ -1826,7 +1862,25 @@
       "verified": "2026-10-08",
       "status": "official",
       "title": "Cabo Verde approves food and nutrition security strategy through 2035",
-      "translation_status": "pending_review"
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le Cabo Verde approuve une stratégie de sécurité alimentaire et nutritionnelle à l’horizon 2035",
+          "summary": "La FAO indique que le Cabo Verde a approuvé sa Stratégie nationale pour la sécurité alimentaire et nutritionnelle et les systèmes alimentaires durables à l’horizon 2035, en privilégiant une gouvernance territoriale et multisectorielle."
+        },
+        "ar": {
+          "title": "الرأس الأخضر يعتمد استراتيجية للأمن الغذائي والتغذوي حتى عام 2035",
+          "summary": "تفيد الفاو بأن الرأس الأخضر اعتمد استراتيجيته الوطنية للأمن الغذائي والتغذوي والنظم الغذائية المستدامة حتى عام 2035، مع التركيز على الحوكمة الإقليمية والمتعددة القطاعات."
+        },
+        "pt": {
+          "title": "Cabo Verde aprova estratégia de segurança alimentar e nutricional até 2035",
+          "summary": "A FAO informa que Cabo Verde aprovou a sua Estratégia Nacional de Segurança Alimentar e Nutricional e de Sistemas Alimentares Sustentáveis até 2035, com ênfase na governação territorial e multissetorial."
+        },
+        "sw": {
+          "title": "Cabo Verde yaidhinisha mkakati wa usalama wa chakula na lishe hadi 2035",
+          "summary": "FAO inaripoti kuwa Cabo Verde imeidhinisha Mkakati wake wa Kitaifa wa Usalama wa Chakula na Lishe na Mifumo Endelevu ya Chakula hadi 2035, ukisisitiza utawala wa maeneo na sekta nyingi."
+        }
+      }
     }
   ]
 }
