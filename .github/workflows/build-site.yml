@@ -46,7 +46,7 @@ jobs:
     if: github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks'
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     env:
       GOA_PREVIEW_URL: https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev
     steps:
@@ -64,18 +64,22 @@ jobs:
           npm install --no-save --package-lock=false @playwright/test
           npx playwright install --with-deps chromium
 
-      - name: Wait for the branch preview to respond
+      - name: Wait for the branch preview to deploy THIS commit
+        env:
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          for attempt in $(seq 1 36); do
-            if curl --connect-timeout 5 --max-time 15 --fail --silent --show-error "$GOA_PREVIEW_URL/" -o /dev/null; then
-              echo "Preview is responding."
-              sleep 60
+          for attempt in $(seq 1 60); do
+            body=$(curl --connect-timeout 5 --max-time 15 --silent --show-error "$GOA_PREVIEW_URL/build-info.json?cb=$(date +%s)" || true)
+            live=$(echo "$body" | grep -o '"commit":"[0-9a-f]*"' | cut -d'"' -f4)
+            if [ "$live" = "$EXPECTED_SHA" ]; then
+              echo "Preview is serving commit $EXPECTED_SHA."
+              sleep 5
               exit 0
             fi
-            echo "Preview not ready (attempt $attempt/36); retrying in 10 seconds."
-            sleep 10
+            echo "attempt $attempt/60: preview is on '${live:-unknown}', expected $EXPECTED_SHA; retrying in 15s"
+            sleep 15
           done
-          echo "Preview did not become reachable."
+          echo "::error::Preview never reached commit $EXPECTED_SHA (Cloudflare build slow, failed or blocked)."
           exit 1
 
       - name: Run real-browser visitor smoke tests
