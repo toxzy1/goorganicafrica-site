@@ -96,7 +96,12 @@ const resourcePublishable = publicCoverageResources.filter((r) => {
 });
 const resourceTranslationCounts = Object.fromEntries(LANGS.map((lang) => [
   lang,
-  resourcePublishable.filter((r) => r.localized && r.localized[lang] && nonempty(r.localized[lang].title) && nonempty(r.localized[lang].description)).length
+  resourcePublishable.filter((r) =>
+    r.translation_status === "translated" &&
+    r.localized && r.localized[lang] &&
+    nonempty(r.localized[lang].title) &&
+    nonempty(r.localized[lang].description)
+  ).length
 ]));
 console.log("Resources with localized title+description: " + LANGS.map((lang) => lang + "=" + resourceTranslationCounts[lang] + "/" + resourcePublishable.length).join("  "));
 if (LANGS.some((lang) => resourceTranslationCounts[lang] < resourcePublishable.length)) {
