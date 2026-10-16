@@ -465,3 +465,8 @@ if (!coverageAudit.includes("resourceTranslationCounts") ||
 }
 
 console.log("CMS end-to-end configuration and review-first publishing checks passed.");
+
+const mergeLayer = read("scripts/merge-agricultural-intelligence.js");
+if (!mergeLayer.includes("skippedForReview") || !mergeLayer.includes('"needs_review"')) {
+  throw new Error("Review candidate filter missing from agricultural merge layer.");
+}
