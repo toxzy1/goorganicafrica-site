@@ -2,6 +2,24 @@ const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.GOA_PREVIEW_URL || "https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev";
 
+test("mobile navigation can scroll to every page link on a short screen", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 640 });
+  await page.goto(baseURL + "/", { waitUntil: "domcontentloaded" });
+
+  const toggle = page.locator(".nav-toggle");
+  const links = page.locator(".nav-links");
+  await expect(toggle).toBeVisible();
+  await toggle.click();
+  await expect(links).toHaveClass(/open/);
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await expect(links).toHaveCSS("overflow-y", "auto");
+
+  const lastLink = links.locator("a").last();
+  await lastLink.scrollIntoViewIfNeeded();
+  await expect(lastLink).toBeInViewport();
+  expect(await links.evaluate((element) => element.scrollTop)).toBeGreaterThan(0);
+});
+
 test("Global Search returns useful live results and a helpful no-results state", async ({ page }) => {
   await page.goto(baseURL + "/search/", { waitUntil: "domcontentloaded" });
   const input = page.locator("#goa-global-search");
