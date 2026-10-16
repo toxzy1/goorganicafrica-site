@@ -8,6 +8,12 @@ on:
   pull_request:
     branches: [main, cms/review-first-agriculture-sync]
 
+# New commits supersede older preview checks; cancel stale runs so the
+# browser smoke job does not wait for a preview SHA that has already moved on.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
