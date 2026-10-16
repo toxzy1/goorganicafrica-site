@@ -68,7 +68,27 @@ function summarizeCounts(label, counts, min, countryNames) {
 const primary = flattenResources(readJson("src/_data/agriculturalResources.json"));
 const supplement = flattenResources(readJson("src/_data/agriculturalResourcesSupplement.json"));
 const resources = [...primary, ...supplement];
-const resourcePublishable = resources.filter((r) => {
+
+// The build merges supplement records into the base JSON before running this
+// audit. Count each country/source URL once for public coverage, matching the
+// Eleventy directory's same-country deduplication, while still validating and
+// reporting the complete editorial inventory below.
+function dedupePublicResourceView(records) {
+  const seen = new Set();
+  return records.filter((record) => {
+    const country = String(record.country_code || record.code || "").toUpperCase();
+    const url = normalizeSourceUrl(record.url || record.source_url || record.application_url);
+    const fallbackTitle = String(record.title || record.name || "").trim().toLowerCase().replace(/\\s+/g, " ");
+    const identity = url || fallbackTitle;
+    if (!country || !identity) return true;
+    const key = country + "|" + identity;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+const publicCoverageResources = dedupePublicResourceView(resources);
+const resourcePublishable = publicCoverageResources.filter((r) => {
   const status = String(r.status || "official").toLowerCase();
   const lifecycle = String(r.lifecycle || "").toLowerCase();
   const held = ["review", "needs_review", "draft", "rejected", "expired", "closed", "archived", "historical"];
@@ -91,15 +111,19 @@ resources.forEach((r, i) => {
     if (code !== "SADC" && code !== "AFRICA") errors.push(`Resource ${i + 1}: unexpected country code "${code}" (${r.title || "untitled"})`);
     return;
   }
-  resourceCounts[code]++;
-  if (nonempty(r.category)) resourceCategoryCounts[code].add(String(r.category).toLowerCase());
   for (const field of ["title", "description", "source", "url", "verified", "category"]) {
     if (!nonempty(r[field])) errors.push(`Resource ${i + 1} (${code}): missing ${field}`);
   }
   if (nonempty(r.url) && !/^https?:\/\//i.test(r.url)) errors.push(`Resource ${i + 1} (${code}): URL is not HTTP(S): ${r.url}`);
   if (nonempty(r.url)) resourceUrls.set(r.url, [...(resourceUrls.get(r.url) || []), r]);
 });
-summarizeCounts("Resources (country-specific plus shared)", resourceCounts, 5);
+publicCoverageResources.forEach((r) => {
+  const code = String(r.country_code || r.code || "").toUpperCase();
+  if (!EXPECTED_CODES.has(code)) return;
+  resourceCounts[code]++;
+  if (nonempty(r.category)) resourceCategoryCounts[code].add(String(r.category).toLowerCase());
+});
+summarizeCounts("Resources (country-specific plus shared, deduplicated by country/source URL)", resourceCounts, 5);
 for (const [code, name] of EXPECTED) {
   if (resourceCategoryCounts[code].size < 3) warnings.push(`Resources: ${name} has only ${resourceCategoryCounts[code].size} populated categories`);
 }
@@ -202,7 +226,7 @@ if (translationData.ar && translationData.ar.dir !== "rtl") errors.push("Arabic 
 
 console.log("GoOrganicAfrica agriculture coverage audit");
 console.log(`Country registry: ${countryRegistry.length} entries; expected ${EXPECTED.length} African countries.`);
-console.log(`Resources: ${primary.length} primary + ${supplement.length} supplemental = ${resources.length} records.`);
+console.log(`Resources: ${primary.length} primary + ${supplement.length} supplemental = ${resources.length} inventory records; ${publicCoverageResources.length} unique country/source records used for coverage.`);
 console.log(`Agricultural News: ${newsTotal} articles across ${newsCountries.length} country records.`);
 console.log("Resources by country: " + EXPECTED.map(([c,n]) => `${c}=${resourceCounts[c]}`).join("  "));
 console.log("News by country: " + EXPECTED.map(([c,n]) => `${c}=${newsCounts[c]}`).join("  "));
