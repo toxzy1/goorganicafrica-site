@@ -41,3 +41,46 @@ jobs:
 
       - name: Audit rendered pages for duplicate and mixed-language content
         run: npm run audit:rendered
+
+  browser-smoke:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GOA_PREVIEW_URL: https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install site and browser-test dependencies
+        run: |
+          npm install
+          npm install --no-save --package-lock=false @playwright/test
+          npx playwright install --with-deps chromium
+
+      - name: Wait for the branch preview to deploy THIS commit
+        env:
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          for attempt in $(seq 1 60); do
+            body=$(curl --connect-timeout 5 --max-time 15 --silent --show-error "$GOA_PREVIEW_URL/build-info.json?cb=$(date +%s)" || true)
+            live=$(echo "$body" | grep -o '"commit":"[0-9a-f]*"' | cut -d'"' -f4)
+            if [ "$live" = "$EXPECTED_SHA" ]; then
+              echo "Preview is serving commit $EXPECTED_SHA."
+              sleep 5
+              exit 0
+            fi
+            echo "attempt $attempt/60: preview is on '${live:-unknown}', expected $EXPECTED_SHA; retrying in 15s"
+            sleep 15
+          done
+          echo "::error::Preview never reached commit $EXPECTED_SHA (Cloudflare build slow, failed or blocked)."
+          exit 1
+
+      - name: Run real-browser visitor smoke tests
+        run: npx playwright test

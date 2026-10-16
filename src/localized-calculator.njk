@@ -1,12 +1,13 @@
 ---
 layout: layouts/calc-base.njk
-title: "{{ locale.language.pageTitle }} — {{ locale.country.name }}"
-description: "Farm profit calculator for {{ locale.country.name }} with local currency, regional settings, crops, livestock and agricultural reference data."
 pagination:
   data: calculatorLocales
   size: 1
   alias: locale
 permalink: "/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-profit-calculator/"
+eleventyComputed:
+  title: "{{ locale.language.pageTitle }} — {{ locale.country.name }}"
+  description: "Farm profit calculator for {{ locale.country.name }} with local currency, regional settings, crops, livestock and agricultural reference data."
 ---
 <div class="calc-page-heading">
   <div class="calc-page-heading-inner">
