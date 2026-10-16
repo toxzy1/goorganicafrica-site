@@ -78,7 +78,7 @@ function dedupePublicResourceView(records) {
   return records.filter((record) => {
     const country = String(record.country_code || record.code || "").toUpperCase();
     const url = normalizeSourceUrl(record.url || record.source_url || record.application_url);
-    const fallbackTitle = String(record.title || record.name || "").trim().toLowerCase().replace(/\\s+/g, " ");
+    const fallbackTitle = String(record.title || record.name || "").trim().toLowerCase().replace(/\s+/g, " ");
     const identity = url || fallbackTitle;
     if (!country || !identity) return true;
     const key = country + "|" + identity;
