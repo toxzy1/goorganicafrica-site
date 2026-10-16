@@ -43,12 +43,12 @@ jobs:
         run: npm run audit:rendered
 
   browser-smoke:
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks'
+    if: github.event_name == 'pull_request' && (github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks' || github.event.pull_request.head.ref == 'cms/review-first-agriculture-sync')
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
-      GOA_PREVIEW_URL: https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev
+      GOA_PREVIEW_URL: ${{ github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks' && 'https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev' || 'https://cms-review-first-agriculture.goorganicafrica-site.pages.dev' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
