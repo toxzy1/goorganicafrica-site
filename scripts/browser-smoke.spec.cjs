@@ -103,3 +103,77 @@ test("homepage and Portuguese calculator expose computed SEO metadata", async ({
   expect(calculatorHead, "calculator page should have a head element").not.toBeNull();
   expect(calculatorHead[1]).not.toContain("{{");
 });
+
+
+test("homepage intelligence section is translated in French, Arabic, Portuguese and Swahili", async ({ page }) => {
+  const cases = {
+    fr: {
+      eyebrow: "Intelligence agricole",
+      title: "Explorer GoOrganicAfrica",
+      cards: [
+        ["Recherche globale", "Recherchez dans nos connaissances agricoles et nos répertoires d’informations."],
+        ["Opportunités", "Trouvez des subventions, des financements, des programmes, des appels et des possibilités d’investissement."],
+        ["Marchés", "Consultez des informations de marché vérifiées, des observations de prix et des tendances."],
+        ["Services et machines", "Découvrez des machines, des fournisseurs, des formations, des événements et des services d’appui agricole."],
+        ["Ressources", "Consultez des ressources sur le financement, les subventions, la recherche, les intrants, les machines et l’accompagnement des agriculteurs."],
+        ["Actualités agricoles", "Suivez les évolutions agricoles vérifiées dans les pays africains."]
+      ],
+      free: "Gratuit"
+    },
+    ar: {
+      eyebrow: "الذكاء الزراعي",
+      title: "استكشف GoOrganicAfrica",
+      cards: [
+        ["البحث الشامل", "ابحث في معارفنا الزراعية وأدلة المعلومات."],
+        ["الفرص", "اعثر على المنح والتمويل والبرامج والدعوات وفرص الاستثمار."],
+        ["الأسواق", "استكشف معلومات السوق الموثوقة وملاحظات الأسعار واتجاهات السوق."],
+        ["الخدمات والآلات", "اكتشف الآلات والموردين والتدريب والفعاليات وخدمات دعم الزراعة."],
+        ["الموارد", "تصفح موارد التمويل والمنح والبحوث والمدخلات والآلات ودعم المزارعين."],
+        ["الأخبار الزراعية", "تابع التطورات الزراعية الموثوقة في البلدان الأفريقية."]
+      ],
+      free: "مجاني"
+    },
+    pt: {
+      eyebrow: "Inteligência agrícola",
+      title: "Explore a GoOrganicAfrica",
+      cards: [
+        ["Pesquisa global", "Pesquise no nosso conhecimento agrícola e nos diretórios de informação."],
+        ["Oportunidades", "Encontre subsídios, financiamento, programas, candidaturas e oportunidades de investimento."],
+        ["Mercados", "Explore informações de mercado verificadas, observações de preços e tendências."],
+        ["Serviços e maquinaria", "Descubra maquinaria, fornecedores, formação, eventos e serviços de apoio agrícola."],
+        ["Recursos", "Consulte recursos sobre financiamento, subsídios, investigação, insumos, maquinaria e apoio aos agricultores."],
+        ["Notícias agrícolas", "Acompanhe desenvolvimentos agrícolas verificados em países africanos."]
+      ],
+      free: "Grátis"
+    },
+    sw: {
+      eyebrow: "Akili za kilimo",
+      title: "Gundua GoOrganicAfrica",
+      cards: [
+        ["Utafutaji wa jumla", "Tafuta katika maarifa yetu ya kilimo na saraka za taarifa."],
+        ["Fursa", "Pata ruzuku, ufadhili, programu, matangazo ya maombi na fursa za uwekezaji."],
+        ["Masoko", "Chunguza taarifa za soko zilizothibitishwa, uchunguzi wa bei na mwenendo wa soko."],
+        ["Huduma na mashine", "Gundua mashine, wasambazaji, mafunzo, matukio na huduma za msaada wa kilimo."],
+        ["Rasilimali", "Vinjari rasilimali za fedha, ruzuku, utafiti, pembejeo, mashine na msaada kwa wakulima."],
+        ["Habari za kilimo", "Fuatilia maendeleo ya kilimo yaliyothibitishwa katika nchi za Afrika."]
+      ],
+      free: "Bure"
+    }
+  };
+
+  for (const [language, expected] of Object.entries(cases)) {
+    await page.goto(baseURL + "/" + language + "/", { waitUntil: "domcontentloaded" });
+    const section = page.locator('[data-i18n="home.intelligenceEyebrow"]').locator("xpath=ancestor::section[1]");
+    await expect(section.locator('[data-i18n="home.intelligenceEyebrow"]')).toHaveText(expected.eyebrow, { timeout: 15000 });
+    await expect(section.locator('[data-i18n="home.exploreTitle"]')).toHaveText(expected.title);
+    const cards = section.locator(".category-card");
+    await expect(cards).toHaveCount(6);
+    for (let index = 0; index < expected.cards.length; index++) {
+      await expect(cards.nth(index).locator("h3")).toHaveText(expected.cards[index][0]);
+      await expect(cards.nth(index).locator("p")).toHaveText(expected.cards[index][1]);
+    }
+    await expect(section).not.toContainText("Agricultural Intelligence");
+    await expect(section).not.toContainText("Global Search");
+    await expect(page.locator('[data-i18n="home.freeValue"]')).toHaveText(expected.free);
+  }
+});
