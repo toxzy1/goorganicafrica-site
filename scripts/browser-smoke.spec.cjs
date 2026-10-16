@@ -177,3 +177,21 @@ test("homepage intelligence section is translated in French, Arabic, Portuguese 
     await expect(page.locator('[data-i18n="home.freeValue"]')).toHaveText(expected.free);
   }
 });
+
+
+test("agricultural resources regional and verification sections follow the selected language", async ({ page }) => {
+  const cases = {
+    fr: ["Renseignements agricoles régionaux", "Les financements, programmes, marchés et services peuvent évoluer.", "Élevage"],
+    ar: ["المعلومات الزراعية الإقليمية", "قد تتغير برامج التمويل والأسواق والخدمات.", "الثروة الحيوانية"],
+    pt: ["Inteligência agrícola regional", "Os financiamentos, programas, mercados e serviços podem mudar.", "Pecuária"],
+    sw: ["Taarifa za Kilimo za Kikanda", "Fedha, programu, masoko na huduma zinaweza kubadilika.", "Mifugo"]
+  };
+  for (const [language, expected] of Object.entries(cases)) {
+    await page.goto(baseURL + "/" + language + "/agriculture-resources/", { waitUntil: "domcontentloaded" });
+    await expect(page.locator("h2").filter({ hasText: expected[0] })).toBeVisible();
+    await expect(page.locator("body")).toContainText(expected[1]);
+    await expect(page.locator("#resourceCategory option").filter({ hasText: expected[2] })).toHaveCount(1);
+    await expect(page.locator("body")).not.toContainText("Regional Agricultural Intelligence");
+    await expect(page.locator("body")).not.toContainText("Funding, programmes, markets and services can change.");
+  }
+});
