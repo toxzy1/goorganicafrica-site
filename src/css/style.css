@@ -218,7 +218,13 @@ p { margin: 0 0 1em; }
     transition: max-height 0.25s ease;
   }
   .nav-links.open {
-    max-height: 400px;
+    /* Keep every navigation destination reachable on short phone screens. */
+    max-height: calc(100vh - 120px);
+    max-height: calc(100dvh - 120px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
   .nav-links li {
     border-top: 1px solid var(--line);
