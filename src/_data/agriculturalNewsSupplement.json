@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-16",
   "records": [
     {
       "country_code": "BF",
@@ -1919,6 +1919,36 @@
           "summary": "FAO inaripoti kuwa Cabo Verde imeidhinisha Mkakati wake wa Kitaifa wa Usalama wa Chakula na Lishe na Mifumo Endelevu ya Chakula hadi 2035, ukisisitiza utawala wa maeneo na sekta nyingi."
         }
       }
+    },
+    {
+      "country_code": "RW",
+      "category": "crops",
+      "title": "Rwanda launches the 2027A agricultural season with higher maize-yield targets",
+      "summary": "Rwanda’s Prime Minister joined farmers and officials in Rulindo for the 2027A season launch, where a cooperative reported increasing maize yields from 2 to 6 tonnes per hectare and set an 8-tonne target.",
+      "url": "https://www.rab.gov.rw/rw/1-1/news-details?cHash=6597e754f4a3287fa9300f8cf88216a7&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=83457",
+      "source": "Rwanda Agriculture and Animal Resources Development Board (RAB)",
+      "source_tier": 1,
+      "published": "2026-10-10",
+      "discovered": "2026-10-16",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "translation_status": "in_review",
+      "review_reason": "Direct official RAB article; confirm the country-specific summary and date before editorial approval."
+    },
+    {
+      "country_code": "TG",
+      "category": "markets",
+      "title": "Togo and Burkina Faso strengthen commercial links for cassava products",
+      "summary": "Togo’s agriculture ministry reports that cassava-sector stakeholders met in Lomé to connect Togolese suppliers with an estimated 80,000-tonne demand for cassava paste in Burkina Faso and discuss volumes, quality, pricing and delivery.",
+      "url": "https://agriculture.gouv.tg/filiere-manioc-le-togo-et-le-burkina-faso-renforcent-leurs-liens-commerciaux/",
+      "source": "Ministry of Agriculture, Fisheries, Animal Resources and Food Sovereignty, Togo",
+      "source_tier": 1,
+      "published": "2026-10-02",
+      "discovered": "2026-10-16",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "translation_status": "in_review",
+      "review_reason": "Direct official ministry article; confirm the summary and country assignment before editorial approval."
     }
   ]
 }
