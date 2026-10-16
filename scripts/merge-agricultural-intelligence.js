@@ -34,6 +34,7 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
   const countries = new Map(base.countries.map(country => [country.code, country]));
   let added = 0;
   let skippedDuplicates = 0;
+  let skippedForReview = 0;
 
   for (const supplementName of supplementNames) {
     const extraPath = path.join(root, 'src', '_data', supplementName);
@@ -43,6 +44,17 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
     const extra = JSON.parse(fs.readFileSync(extraPath, 'utf8'));
 
     for (const record of extra.records || []) {
+      // Review-queue records must never flow into the public dataset during a
+      // build. Known review states are excluded; curated records without a
+      // status remain compatible with older datasets.
+      const status = String(record.status || "").trim().toLowerCase();
+      const lifecycle = String(record.lifecycle || "").trim().toLowerCase();
+      if (["review", "needs_review", "in_review", "draft", "pending"].includes(status) ||
+          ["review", "needs_review", "in_review", "draft", "pending"].includes(lifecycle)) {
+        skippedForReview++;
+        continue;
+      }
+
       // Some curated feed records use "headline" rather than "title". The
       // public templates render title, so normalize the field during merge.
       const candidate = String(record.title || "").trim()
@@ -87,7 +99,7 @@ function merge(baseName, supplementNames, countryField, listField, bucketed) {
 
   base.last_updated = today;
   fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\n');
-  console.log(baseName + ': added ' + added + ', skipped exact normalized duplicates ' + skippedDuplicates + '.');
+  console.log(baseName + ': added ' + added + ', skipped review candidates ' + skippedForReview + ', skipped exact normalized duplicates ' + skippedDuplicates + '.');
   return added;
 }
 
