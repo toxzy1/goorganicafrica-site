@@ -193,7 +193,7 @@
       if (homeTitle && (location.pathname === "/" || location.pathname === "")) document.title = homeTitle;
 
       var meta = document.querySelector('meta[name="description"]');
-      if (meta && homeDescription && (location.pathname === "/" || location.pathname === "")) {
+      if (meta && homeDescription && code !== "en" && (location.pathname === "/" || location.pathname === "")) {
         meta.setAttribute("content", homeDescription);
       }
 
