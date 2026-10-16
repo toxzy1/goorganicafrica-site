@@ -177,3 +177,22 @@ test("homepage intelligence section is translated in French, Arabic, Portuguese 
     await expect(page.locator('[data-i18n="home.freeValue"]')).toHaveText(expected.free);
   }
 });
+
+
+test("French agricultural resources page localizes regional section and avoids duplicate regional records", async ({ page }) => {
+  await page.goto(baseURL + "/fr/agriculture-resources/", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("html")).toHaveAttribute("lang", "fr");
+  await expect(page.locator("h2").filter({ hasText: "Intelligence agricole régionale" })).toHaveCount(1);
+  await expect(page.getByText("Initiatives et corridors agricoles communs à plusieurs pays africains.")).toBeVisible();
+  await expect(page.getByText("Les financements, programmes, marchés et services peuvent évoluer.", { exact: false })).toBeVisible();
+
+  const regional = page.locator("section").filter({ has: page.locator("h2", { hasText: "Intelligence agricole régionale" }) }).first();
+  const titles = await regional.locator("article > strong").allTextContents();
+  expect(titles.length).toBeGreaterThan(0);
+  expect(new Set(titles).size).toBe(titles.length);
+
+  await expect(page.locator("#resourceCategory option[value='livestock']")).toHaveText("Élevage");
+  await expect(page.locator("#resourceCountry option").filter({ hasText: "Algérie" })).toHaveCount(1);
+  await expect(page.locator("body")).not.toContainText("Regional Agricultural Intelligence");
+  await expect(page.locator("body")).not.toContainText("Funding, programmes, markets and services can change.");
+});
