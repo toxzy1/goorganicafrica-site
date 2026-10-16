@@ -1,31 +1,36 @@
 <section class="container" style="max-width:1100px;margin:0 auto;padding:24px 16px;">
   <header style="margin-bottom:24px">
-    <h1>Agricultural Opportunities</h1>
-    <p>Verified grants, funding calls, investment programmes and agricultural opportunities. Open opportunities are shown first; closed opportunities remain in the archive.</p>
-    <select id="opportunity-category" style="padding:10px;margin-right:8px"><option value="all">All types</option><option value="grants">Grants</option><option value="investment">Investment</option><option value="finance">Finance</option><option value="training">Training</option><option value="programme">Programmes</option><option value="competition">Competitions</option><option value="procurement">Procurement / EOIs</option><option value="research">Research</option></select>
-    <input id="opportunity-search" type="search" placeholder="Search opportunities..." aria-label="Search opportunities" style="width:100%;padding:12px;margin:12px 0">
-    <select id="opportunity-status" style="padding:10px"><option value="current">Open opportunities</option><option value="all">All opportunities</option><option value="expired">Expired / archived</option></select>
+    <h1 data-i18n="opportunities.title">Agricultural Opportunities</h1>
+    <p data-i18n="opportunities.intro">Verified grants, funding calls, investment programmes and agricultural opportunities. Open opportunities are shown first; closed opportunities remain in the archive.</p>
+    <select id="opportunity-category" style="padding:10px;margin-right:8px"><option value="all" data-i18n="opportunities.allTypes">All types</option><option value="grants" data-i18n="opportunities.grants">Grants</option><option value="investment" data-i18n="opportunities.investment">Investment</option><option value="finance" data-i18n="opportunities.finance">Finance</option><option value="training" data-i18n="opportunities.training">Training</option><option value="programme" data-i18n="opportunities.programmes">Programmes</option><option value="competition" data-i18n="opportunities.competitions">Competitions</option><option value="procurement" data-i18n="opportunities.procurement">Procurement / EOIs</option><option value="research" data-i18n="opportunities.research">Research</option></select>
+    <input id="opportunity-search" type="search" placeholder="Search opportunities..." aria-label="Search opportunities" data-i18n-placeholder="opportunities.searchPlaceholder" data-i18n-aria-label="opportunities.searchAria" style="width:100%;padding:12px;margin:12px 0">
+    <select id="opportunity-status" style="padding:10px"><option value="current" data-i18n="opportunities.openOpportunities">Open opportunities</option><option value="all" data-i18n="opportunities.allOpportunities">All opportunities</option><option value="expired" data-i18n="opportunities.expiredArchived">Expired / archived</option></select>
   </header>
+  <p id="opportunity-empty" data-i18n="opportunities.noResults" hidden>No matching opportunities. Try another search or status filter.</p>
   <div id="opportunity-list">
   {% for record in agriculturalOpportunities.records %}
-    <article class="opportunity-card" data-status="{{ record.lifecycle }}" data-category="{{ record.category }}" data-search="{{ record.title }} {{ record.country }} {{ record.category }} {{ record.type }} {{ record.eligibility }} {{ record.summary }} {{ (record.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+    {# Never render automated candidates until an editor approves them. #}
+    {% if (record.status == "open" or record.status == "active" or record.status == "closed" or record.status == "expired" or record.status == "archived") and record.lifecycle != "review" and record.lifecycle != "needs_review" and record.lifecycle != "draft" %}
+    <article class="opportunity-card" data-status="{{ record.lifecycle or record.status }}" data-deadline="{{ record.deadline or record.closing_date or record.expiry_date or '' }}" data-category="{{ record.category }}" data-search="{{ record.title }} {{ record.country }} {{ record.category }} {{ record.type }} {{ record.eligibility }} {{ record.summary }} {{ (record.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
       <div style="font-size:.9em">{{ record.country }} · {{ record.category }} · {{ record.type }}</div>
       <h2 style="margin:8px 0">{{ record.title }}</h2>
       <p>{{ record.summary }}</p>
-      <p><strong>Eligibility:</strong> {{ record.eligibility }}</p>
-      {% if record.deadline %}<p><strong>Deadline:</strong> {{ record.deadline }}</p>{% endif %}
-      <p><strong>Source:</strong> {{ record.source }} · Verified {{ record.verified }}</p>
-      {% if record.lifecycle == "expired" %}<p><strong>Status:</strong> Expired / archived</p>{% else %}<p><strong>Status:</strong> Open</p>{% endif %}
-      <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer">View official source</a>
+      <p><strong data-i18n="opportunities.eligibilityLabel">Eligibility:</strong> {{ record.eligibility }}</p>
+      {% if record.deadline %}<p><strong data-i18n="opportunities.deadlineLabel">Deadline:</strong> {{ record.deadline }}</p>{% endif %}
+      <p><strong data-i18n="opportunities.sourceLabel">Source:</strong> {{ record.source }} · <span data-i18n="opportunities.verifiedLabel">Verified</span> {{ record.verified }}</p>
+      {% if record.lifecycle == "expired" or record.status == "expired" or record.status == "closed" or record.status == "archived" %}<p><strong data-i18n="opportunities.statusLabel">Status:</strong> <span data-i18n="opportunities.expiredArchivedStatus">Expired / archived</span></p>{% else %}<p><strong data-i18n="opportunities.statusLabel">Status:</strong> {% if record.status == "open" or record.status == "active" %}<span data-i18n="opportunities.openStatus">{{ record.status or "Open" }}</span>{% else %}{{ record.status or "Open" }}{% endif %}</p>{% endif %}
+      <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer" data-i18n="opportunities.viewOfficialSource">View official source</a>
     </article>
+    {% endif %}
   {% endfor %}
   </div>
 </section>
 <script>
 (() => {
- const input=document.getElementById('opportunity-search'), select=document.getElementById('opportunity-status'), category=document.getElementById('opportunity-category');
+ const input=document.getElementById('opportunity-search'), select=document.getElementById('opportunity-status'), category=document.getElementById('opportunity-category'), empty=document.getElementById('opportunity-empty');
  const cards=[...document.querySelectorAll('.opportunity-card')];
- function filter(){const q=input.value.toLowerCase().trim(), s=select.value, cat=category.value; cards.forEach(c=>{const status=(c.dataset.status||'').toLowerCase(); const lifecycle=(status==='expired'||status==='closed'||status==='archived')?'expired':'current'; const okS=s==='all'||lifecycle===s; const okC=cat==='all'||c.dataset.category===cat; const okQ=!q||c.dataset.search.toLowerCase().includes(q); c.hidden=!(okS&&okC&&okQ);});}
- input.addEventListener('input',filter); select.addEventListener('change',filter); category.addEventListener('change',filter); filter();
+ function updateTitle(){document.title=window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('opportunities','title')+' | GoOrganicAfrica':'Agricultural Opportunities | GoOrganicAfrica';}
+ function filter(){const q=input.value.toLowerCase().trim(), s=select.value, cat=category.value; let visible=0; const today=new Date(); today.setHours(0,0,0,0); cards.forEach(c=>{const status=(c.dataset.status||'').toLowerCase(); let lifecycle=(status==='expired'||status==='closed'||status==='archived')?'expired':'current'; const deadline=(c.dataset.deadline||'').trim(); if(lifecycle==='current' && /^\d{4}-\d{2}-\d{2}$/.test(deadline)){const cutoff=new Date(deadline+'T00:00:00'); if(!Number.isNaN(cutoff.getTime())&&cutoff<today)lifecycle='expired';} const okS=s==='all'||lifecycle===s; const okC=cat==='all'||c.dataset.category===cat; const okQ=!q||(c.dataset.search||'').toLowerCase().includes(q); c.hidden=!(okS&&okC&&okQ); if(!c.hidden)visible++;}); if(empty)empty.hidden=visible>0;}
+ input.addEventListener('input',filter); select.addEventListener('change',filter); category.addEventListener('change',filter); document.addEventListener('goa:languagechange',()=>{filter();updateTitle();}); filter(); updateTitle();
 })();
 </script>

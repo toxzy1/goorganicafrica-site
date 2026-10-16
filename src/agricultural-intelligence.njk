@@ -6,19 +6,19 @@ permalink: /agricultural-intelligence/
 
 <div class="container" style="padding-top:2rem;padding-bottom:3rem;">
   <div class="section-head">
-    <span class="eyebrow">Connected Agriculture</span>
-    <h1>Agricultural Intelligence Hub</h1>
-    <p class="lede">Connect countries with agricultural resources, markets, opportunities, services and news so you can move from information to action.</p>
+    <span class="eyebrow" data-i18n="agriculturalIntelligence.eyebrow">Connected Agriculture</span>
+    <h1 data-i18n="agriculturalIntelligence.title">Agricultural Intelligence Hub</h1>
+    <p class="lede" data-i18n="agriculturalIntelligence.intro">Connect countries with agricultural resources, markets, opportunities, services and news so you can move from information to action.</p>
   </div>
   <div style="margin:1.25rem 0;">
-    <label for="ai-search"><strong>Search connected intelligence</strong></label>
-    <input id="ai-search" type="search" placeholder="Try Nigeria, maize, finance, irrigation, machinery..." aria-label="Search connected agricultural intelligence" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;margin-top:6px;">
-    <p style="margin:.5rem 0 0;">Search by country or topic, then open the matching section. For a full record-by-record search, use <a href="/search/">Global Agricultural Search</a>.</p>
+    <label for="ai-search"><strong data-i18n="agriculturalIntelligence.searchLabel">Search connected intelligence</strong></label>
+    <input id="ai-search" type="search" placeholder="Try Nigeria, maize, finance, irrigation, machinery..." aria-label="Search connected agricultural intelligence" data-i18n-placeholder="agriculturalIntelligence.searchPlaceholder" data-i18n-aria-label="agriculturalIntelligence.searchAria" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;margin-top:6px;">
+    <p style="margin:.5rem 0 0;"><span data-i18n="agriculturalIntelligence.searchHint">Search by country or topic, then open the matching section. For a full record-by-record search, use</span> <a href="/search/" data-i18n="agriculturalIntelligence.searchLink">Global Agricultural Search</a>.</p>
   </div>
   <div id="ai-results"></div>
   <div style="margin-top:2rem;">
-    <h2>Value-chain & topic connections</h2>
-    <p>These connections are generated only where the same topic appears in real indexed records. Select a topic to search across the connected sections.</p>
+    <h2 data-i18n="agriculturalIntelligence.connectionsTitle">Value-chain & topic connections</h2>
+    <p data-i18n="agriculturalIntelligence.connectionsIntro">These connections appear only where a topic is present in indexed records. Select a topic to search across connected sections.</p>
     <div id="ai-topics" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;"></div>
   </div>
 </div>
@@ -27,9 +27,11 @@ permalink: /agricultural-intelligence/
 (function(){
   const data = {{ agriculturalKnowledgeConnections.records | jsonify }};
   const topics = {{ agriculturalTopicConnections.topics | jsonify }};
-  const input = document.getElementById('ai-search'), out = document.getElementById('ai-results');
-  const labels = {resources:'Resources',markets:'Markets',opportunities:'Opportunities',services:'Services & Machinery',news:'Agricultural News'};
-  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  const input = document.getElementById('ai-search'), out = document.getElementById('ai-results'), topicOut = document.getElementById('ai-topics');
+  function t(key,vars,fallback){return window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('agriculturalIntelligence',key,vars):fallback;}
+  function topicLabel(key,fallback){return window.GOA_I18N&&window.GOA_I18N.t?(window.GOA_I18N.t('myAgriculture','topic_'+key)||fallback):fallback;}
+  function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  function sectionLabel(key){return t('section_'+key,{},key);}
   function render(){
     const q=input.value.trim().toLowerCase();
     const words=q.split(/\s+/).filter(Boolean);
@@ -39,13 +41,16 @@ permalink: /agricultural-intelligence/
       return words.every(w=>hay.includes(w));
     }).slice(0,54);
     out.innerHTML=rows.length ? rows.map(x=>{
-      const links=Object.entries(x.sections).map(([k,n])=>'<a href="/search/?q='+encodeURIComponent(x.country)+'" style="text-decoration:none;">'+esc(labels[k]||k)+' ('+n+')</a>').join(' · ');
-      return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+esc(x.country)+'</h2><p><strong>'+x.total+'</strong> connected intelligence records</p><p>'+links+'</p></article>';
-    }).join('') : '<p>No connected intelligence found. Try a country name or broader topic.</p>';
+      const links=Object.entries(x.sections).map(([k,n])=>'<a href="/search/?q='+encodeURIComponent(x.country)+'" style="text-decoration:none;">'+esc(sectionLabel(k))+' ('+n+')</a>').join(' · ');
+      return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+esc(x.country)+'</h2><p><strong>'+x.total+'</strong> '+esc(t('recordCount',{count:x.total},x.total+' connected intelligence records'))+'</p><p>'+links+'</p></article>';
+    }).join('') : '<p>'+esc(t('noResults',{},'No connected intelligence found. Try a country name or broader topic.'))+'</p>';
   }
-  const topicOut=document.getElementById('ai-topics');
-  const sectionLabels={markets:'Markets',opportunities:'Opportunities',resources:'Resources',services:'Services & Machinery',news:'Agricultural News'};
-  topicOut.innerHTML=topics.map(t=>'<a class="card" href="/search/?q='+encodeURIComponent(t.key)+'" style="text-decoration:none;padding:14px;"><strong>'+esc(t.label)+'</strong><br><span style="font-size:.85rem;">'+t.total+' connected records</span><br><span style="font-size:.8rem;">'+Object.entries(t.sections).map(([k,n])=>esc(sectionLabels[k]||k)+' '+n).join(' · ')+'</span></a>').join('');
-  input.addEventListener('input',render); render();
+  function renderTopics(){
+    topicOut.innerHTML=topics.map(item=>'<a class="card" href="/search/?q='+encodeURIComponent(item.key)+'" style="text-decoration:none;padding:14px;"><strong>'+esc(topicLabel(item.key,item.label))+'</strong><br><span style="font-size:.85rem;">'+esc(t('topicCount',{count:item.total},item.total+' connected records'))+'</span><br><span style="font-size:.8rem;">'+Object.entries(item.sections).map(([k,n])=>esc(sectionLabel(k))+' '+n).join(' · ')+'</span></a>').join('');
+  }
+  function updateTitle(){document.title=t('title',{},'Agricultural Intelligence Hub')+' | GoOrganicAfrica';}
+  input.addEventListener('input',render);
+  document.addEventListener('goa:languagechange',()=>{render();renderTopics();updateTitle();});
+  render();renderTopics();updateTitle();
 })();
 </script>

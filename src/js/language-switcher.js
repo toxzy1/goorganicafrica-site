@@ -10,16 +10,15 @@
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
   function currentLanguage() {
-    // Calculator routes are the only shared URLs allowed to remember a
-    // selected language. All other pages are authoritative from their URL:
-    // unprefixed pages are English, while /fr/, /ar/, /pt/ and /sw/ pages
-    // are explicitly localized.
+    // Calculator and explicitly shared pages keep one URL across languages.
+    // Preserve the visitor's selector choice on these routes instead of
+    // resetting the interface to English because the URL has no language prefix.
     var path = window.location.pathname.replace(/\/+$/, "") || "/";
 
     var calculatorLanguage = path.match(/^\/[a-z]{2}\/(fr|ar|pt|sw)\/farm-profit-calculator$/);
     if (calculatorLanguage) return calculatorLanguage[1];
 
-    if (path === "/farm-profit-calculator") {
+    if (/^\/(?:farm-profit-calculator|search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|privacy-policy|data-updates)$/.test(path)) {
       try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
       catch (_) { return document.documentElement.lang || "en"; }
     }
@@ -117,6 +116,13 @@
     if (rest === "agricultural-grants") return code === "en" ? "/agricultural-grants/" : "/" + code + "/agricultural-grants/";
     if (rest === "farm-machinery") return code === "en" ? "/farm-machinery/" : "/" + code + "/farm-machinery/";
 
+    // Search and discovery tools do not have separately generated localized
+    // route trees. Keep these tools on their real shared URL while translating
+    // their interface; never guess /fr/, /ar/, /pt/ or /sw/ routes that may 404.
+    if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence)$/.test(rest)) {
+      return "/" + rest + "/";
+    }
+
     // Static pages intentionally keep one shared URL; only their text changes.
     if (/^(about|contact)$/.test(rest)) return code === "en" ? "/" + rest + "/" : "/" + code + "/" + rest + "/";
     if (/^(privacy-policy|data-updates)$/.test(rest)) return "/" + rest + "/";
@@ -127,11 +133,10 @@
     // Shared pages (such as the calculator) stay on the same URL.
     if (rest === "farm-profit-calculator") return "/farm-profit-calculator/";
 
-    // Keep the visible per-content language links as a fallback for older
-    // localized content that does not yet have an explicit target map.
-    var link = document.querySelector('.translation-links a[data-language="' + code + '"]');
-    if (link && link.getAttribute("href")) return link.getAttribute("href");
-
+    // Never navigate through generic per-content translation links here:
+    // on older pages they may point to a different article or section.
+    // Without an explicit target map or known section route, stay on this page
+    // and translate the interface in place rather than sending visitors elsewhere.
     return null;
   }
 
@@ -139,13 +144,23 @@
     document.querySelectorAll("[data-localized-section]").forEach(function (link) {
       var section = link.getAttribute("data-localized-section");
       var sectionPath = section === "calculator" ? "farm-profit-calculator" : (section === "resources" ? "agriculture-resources" : section);
-      link.href = section === "home"
-        ? (code === "en" ? "/" : "/" + code + "/")
-        : (section === "calculator"
-          ? "/farm-profit-calculator/"
-          : ((section === "about" || section === "contact" || section === "privacy-policy" || section === "data-updates")
-            ? ((section === "about" || section === "contact") ? (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/") : "/" + sectionPath + "/")
-            : (code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/")));
+
+      // These pages intentionally use one URL and translate their interface
+      // in place. Do not manufacture language-prefixed links that 404.
+      if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|privacy-policy|data-updates)$/.test(section)) {
+        link.href = "/" + sectionPath + "/";
+        return;
+      }
+
+      if (section === "home") {
+        link.href = code === "en" ? "/" : "/" + code + "/";
+      } else if (section === "calculator") {
+        link.href = "/farm-profit-calculator/";
+      } else if (section === "about" || section === "contact") {
+        link.href = code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/";
+      } else {
+        link.href = code === "en" ? "/" + sectionPath + "/" : "/" + code + "/" + sectionPath + "/";
+      }
     });
   }
 
@@ -168,8 +183,8 @@
     return languageLoads[code];
   }
 
-  function refresh() {
-    var code = setLanguage(currentLanguage());
+  function refresh(requestedLanguage) {
+    var code = setLanguage(requestedLanguage || currentLanguage());
     return loadLanguage(code).then(function () {
       apply(document.body, code);
 
@@ -178,7 +193,7 @@
       if (homeTitle && (location.pathname === "/" || location.pathname === "")) document.title = homeTitle;
 
       var meta = document.querySelector('meta[name="description"]');
-      if (meta && homeDescription && (location.pathname === "/" || location.pathname === "")) {
+      if (meta && homeDescription && code !== "en" && (location.pathname === "/" || location.pathname === "")) {
         meta.setAttribute("content", homeDescription);
       }
 
@@ -218,14 +233,10 @@
         // Blog/eBook detail pages, Agricultural News country pages, and all
         // localized section indexes before falling back to generic sections.
         var targetUrl = localizedContentUrl(requested);
-        if (!targetUrl && section) {
-          var sectionPath = section === "calculator"
-            ? "farm-profit-calculator"
-            : (section === "resources" ? "agriculture-resources" : section);
-          targetUrl = requested === "en"
-            ? "/" + (section === "home" ? "" : sectionPath + "/")
-            : "/" + requested + "/" + (section === "home" ? "" : sectionPath + "/");
-        }
+        // Do not guess a language-prefixed URL when this page has no known
+        // destination. A guessed route can 404 or send visitors to the wrong
+        // section/homepage. Explicit maps and known section routes above are
+        // the only safe navigation targets; otherwise translate in place.
         setLanguage(requested);
         // Shared pages intentionally keep the same URL. Do not reload them,
         // because a reload restores the server's default <html lang="en">.
@@ -235,7 +246,10 @@
           window.location.assign(targetUrl);
           return;
         }
-        refresh();
+        // When a page has no explicit translated destination, keep the requested
+        // language for the in-place UI refresh instead of re-deriving English
+        // from the unchanged URL and undoing the visitor's selection.
+        refresh(requested);
       });
     }
     refresh().then(function () { readyResolve(window.GOA_I18N); });

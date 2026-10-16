@@ -1,10 +1,10 @@
 <section class="container" style="max-width:1100px;margin:0 auto;padding:24px 16px;">
 <header style="margin-bottom:24px">
-<h1>Agricultural Suppliers, Machinery, Training & Events</h1>
-<p>Verified agricultural services and programmes. Listings are sourced from official or institutional sources and are not endorsements.</p>
-<input id="services-search" type="search" placeholder="Search suppliers, machinery, training or events..." aria-label="Search agricultural services" style="width:100%;padding:12px;margin:12px 0">
-<select id="services-category" style="padding:10px"><option value="all">All categories</option>{% for c in agriculturalServices.categories %}<option value="{{ c }}">{{ c | replace("-", " ") | title }}</option>{% endfor %}</select>
-<select id="services-country" style="padding:10px;margin-left:8px"><option value="all">All countries</option>{% for c in agriculturalServices.countries %}<option value="{{ c }}">{{ c }}</option>{% endfor %}</select>
+<h1 data-i18n="services.title">Agricultural Suppliers, Machinery, Training & Events</h1>
+<p data-i18n="services.intro">Verified agricultural services and programmes. Listings are sourced from official or institutional sources and are not endorsements.</p>
+<input id="services-search" type="search" placeholder="Search suppliers, machinery, training or events..." aria-label="Search agricultural services" data-i18n-placeholder="services.searchPlaceholder" data-i18n-aria-label="services.searchAria" style="width:100%;padding:12px;margin:12px 0">
+<select id="services-category" style="padding:10px"><option value="all" data-i18n="services.allCategories">All categories</option>{% for c in agriculturalServices.categories %}<option value="{{ c }}">{{ c | replace("-", " ") | title }}</option>{% endfor %}</select>
+<select id="services-country" style="padding:10px;margin-left:8px"><option value="all" data-i18n="services.allCountries">All countries</option>{% for c in agriculturalServices.countries %}<option value="{{ c }}">{{ c }}</option>{% endfor %}</select>
 </header>
 <div id="services-list">
 {% for r in agriculturalServices.records %}
@@ -12,16 +12,17 @@
 <div style="font-size:.9em">{{ r.country }} · {{ r.category }} · {{ r.type }}</div>
 <h2 style="margin:8px 0">{{ r.title }}</h2>
 <p>{{ r.summary }}</p>
-<p><strong>Provider:</strong> {{ r.provider }}</p>
-<p><strong>Services:</strong> {{ (r.services or []) | join(", ") }}</p>
-<p><strong>Audience:</strong> {{ (r.audience or []) | join(", ") }}</p>
-<p><strong>Source:</strong> {{ r.source }} · Verified {{ r.verified }}</p>
-{% if r.lifecycle == "historical" %}<p><strong>Status:</strong> Historical</p>{% else %}<p><strong>Status:</strong> Current</p>{% endif %}
-<a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">View official source</a>
+<p><strong data-i18n="services.providerLabel">Provider:</strong> {{ r.provider }}</p>
+<p><strong data-i18n="services.servicesLabel">Services:</strong> {{ (r.services or []) | join(", ") }}</p>
+<p><strong data-i18n="services.audienceLabel">Audience:</strong> {{ (r.audience or []) | join(", ") }}</p>
+<p><strong data-i18n="services.sourceLabel">Source:</strong> {{ r.source }} · <span data-i18n="services.verifiedLabel">Verified</span> {{ r.verified }}</p>
+{% if r.lifecycle == "historical" %}<p><strong data-i18n="services.statusLabel">Status:</strong> <span data-i18n="services.historicalStatus">Historical</span></p>{% else %}<p><strong data-i18n="services.statusLabel">Status:</strong> <span data-i18n="services.currentStatus">Current</span></p>{% endif %}
+<a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" data-i18n="services.viewOfficialSource">View official source</a>
 </article>
 {% endfor %}
 </div>
+<p id="services-empty" data-i18n="services.noResults" hidden>No matching services. Try another search or filter.</p>
 </section>
 <script>
-(()=>{const i=document.getElementById('services-search'),c=document.getElementById('services-category'),co=document.getElementById('services-country'),cards=[...document.querySelectorAll('.service-card')];function f(){const q=i.value.toLowerCase().trim();cards.forEach(x=>{const okQ=!q||x.dataset.search.toLowerCase().includes(q),okC=c.value==='all'||x.dataset.category===c.value,okCo=co.value==='all'||x.dataset.country===co.value;x.hidden=!(okQ&&okC&&okCo)});}i.addEventListener('input',f);c.addEventListener('change',f);co.addEventListener('change',f);f();})();
+(()=>{const i=document.getElementById('services-search'),c=document.getElementById('services-category'),co=document.getElementById('services-country'),empty=document.getElementById('services-empty'),cards=[...document.querySelectorAll('.service-card')];function updateTitle(){document.title=window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('services','title')+' | GoOrganicAfrica':'Agricultural Suppliers, Machinery, Training & Events | GoOrganicAfrica';}function f(){const q=i.value.toLowerCase().trim();let visible=0;cards.forEach(x=>{const okQ=!q||x.dataset.search.toLowerCase().includes(q),okC=c.value==='all'||x.dataset.category===c.value,okCo=co.value==='all'||x.dataset.country===co.value;x.hidden=!(okQ&&okC&&okCo);if(!x.hidden)visible++;});if(empty)empty.hidden=visible>0;}i.addEventListener('input',f);c.addEventListener('change',f);co.addEventListener('change',f);document.addEventListener('goa:languagechange',()=>{f();updateTitle();});f();updateTitle();})();
 </script>

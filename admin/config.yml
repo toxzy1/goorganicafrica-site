@@ -300,13 +300,54 @@ collections:
                 widget: "list"
                 required: false
                 fields:
-                  - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "research-innovation", "grants-programmes"]}
+                  - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "research-innovation", "grants-programmes", "climate", "data", "events", "farmer-support", "fisheries", "food-safety", "food-security", "grants", "insurance", "machinery", "organic", "resilience", "seeds", "services"]}
                   - {label: "Headline", name: "title", widget: "string"}
                   - {label: "Summary", name: "summary", widget: "text"}
+                  - label: "Reviewed Translations"
+                    name: "translations"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - label: "French"
+                        name: "fr"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - {label: "Headline", name: "title", widget: "string", required: false}
+                          - {label: "Summary", name: "summary", widget: "text", required: false}
+                      - label: "Arabic"
+                        name: "ar"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - {label: "Headline", name: "title", widget: "string", required: false}
+                          - {label: "Summary", name: "summary", widget: "text", required: false}
+                      - label: "Portuguese"
+                        name: "pt"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - {label: "Headline", name: "title", widget: "string", required: false}
+                          - {label: "Summary", name: "summary", widget: "text", required: false}
+                      - label: "Swahili"
+                        name: "sw"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - {label: "Headline", name: "title", widget: "string", required: false}
+                          - {label: "Summary", name: "summary", widget: "text", required: false}
                   - {label: "Original Source URL", name: "url", widget: "string"}
+                  - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                   - {label: "Source / Publisher", name: "source", widget: "string"}
+                  - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                  - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
                   - {label: "Published Date", name: "published", widget: "string"}
                   - {label: "Verified Date", name: "verified", widget: "string"}
+                  - {label: "Deadline / Expiry", name: "deadline", widget: "string", required: false}
+                  - {label: "Coverage Scope", name: "coverage_scope", widget: "select", options: ["country-specific", "regional"], required: false}
+                  - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
+                  - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+                  - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                   - {label: "Status", name: "status", widget: "select", options: ["official", "official-feed", "review", "expired", "archived"], default: "review"}
   - name: "agricultural_resources"
     label: "🌍 Agricultural Resources — 54 Countries"
@@ -338,7 +379,42 @@ collections:
                     fields:
                       - {label: "Title", name: "title", widget: "string"}
                       - {label: "Description", name: "description", widget: "text"}
+                      - label: "Reviewed Localizations"
+                        name: "localized"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - label: "French"
+                            name: "fr"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Arabic"
+                            name: "ar"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Portuguese"
+                            name: "pt"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Swahili"
+                            name: "sw"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Type", name: "type", widget: "string", required: false}
                       - {label: "Amount / Value", name: "amount", widget: "string", required: false}
@@ -348,6 +424,12 @@ collections:
                       - {label: "Application URL", name: "application_url", widget: "string", required: false}
                       - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "Grants & Opportunities"
                     name: "grants"
@@ -356,7 +438,42 @@ collections:
                     fields:
                       - {label: "Title", name: "title", widget: "string"}
                       - {label: "Description", name: "description", widget: "text"}
+                      - label: "Reviewed Localizations"
+                        name: "localized"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - label: "French"
+                            name: "fr"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Arabic"
+                            name: "ar"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Portuguese"
+                            name: "pt"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Swahili"
+                            name: "sw"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Type", name: "type", widget: "string", required: false}
                       - {label: "Amount / Value", name: "amount", widget: "string", required: false}
@@ -366,6 +483,12 @@ collections:
                       - {label: "Application URL", name: "application_url", widget: "string", required: false}
                       - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "Machinery & Equipment"
                     name: "machinery"
@@ -374,7 +497,42 @@ collections:
                     fields:
                       - {label: "Title", name: "title", widget: "string"}
                       - {label: "Description", name: "description", widget: "text"}
+                      - label: "Reviewed Localizations"
+                        name: "localized"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - label: "French"
+                            name: "fr"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Arabic"
+                            name: "ar"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Portuguese"
+                            name: "pt"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Swahili"
+                            name: "sw"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Equipment Type", name: "type", widget: "string", required: false}
                       - {label: "Availability / Service Area", name: "availability", widget: "string", required: false}
@@ -382,6 +540,12 @@ collections:
                       - {label: "Application / Purchase URL", name: "application_url", widget: "string", required: false}
                       - {label: "Contact", name: "contact", widget: "string", required: false}
                       - {label: "Verified Date", name: "verified", widget: "string"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
                       - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
                   - label: "General Agricultural Resources"
                     name: "general"
@@ -390,10 +554,292 @@ collections:
                     fields:
                       - {label: "Title", name: "title", widget: "string"}
                       - {label: "Description", name: "description", widget: "text"}
+                      - label: "Reviewed Localizations"
+                        name: "localized"
+                        widget: "object"
+                        required: false
+                        fields:
+                          - label: "French"
+                            name: "fr"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Arabic"
+                            name: "ar"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Portuguese"
+                            name: "pt"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                          - label: "Swahili"
+                            name: "sw"
+                            widget: "object"
+                            required: false
+                            fields:
+                              - {label: "Headline", name: "title", widget: "string", required: false}
+                              - {label: "Description", name: "description", widget: "text", required: false}
+                      - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
                       - {label: "Official / Authoritative Source URL", name: "url", widget: "string"}
+                      - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
                       - {label: "Provider", name: "source", widget: "string"}
                       - {label: "Verified Date", name: "verified", widget: "string"}
-                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "official"}
+                      - {label: "Published Date", name: "published", widget: "string", required: false}
+                      - {label: "Source ID", name: "source_id", widget: "string", required: false}
+                      - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+                      - {label: "Access Notes", name: "access", widget: "text", required: false}
+                      - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+                      - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
+                      - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
+  - name: "agricultural_news_supplement"
+    label: "📰 Agricultural News — Supplemental Review Queue"
+    files:
+      - label: "Supplemental Country News"
+        name: "news_supplement"
+        file: "src/_data/agriculturalNewsSupplement.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Last Updated", name: "last_updated", widget: "string"}
+          - label: "Records"
+            name: "records"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Country Code", name: "country_code", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "grants-programmes", "research-innovation", "climate", "data", "events", "farmer-support", "fisheries", "food-safety", "food-security", "grants", "insurance", "machinery", "organic", "resilience", "seeds", "services"]}
+              - {label: "Headline", name: "title", widget: "string"}
+              - {label: "Legacy Headline", name: "headline", widget: "string", required: false}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - label: "Reviewed Translations"
+                name: "translations"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "French"
+                    name: "fr"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+                  - label: "Arabic"
+                    name: "ar"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+                  - label: "Portuguese"
+                    name: "pt"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+                  - label: "Swahili"
+                    name: "sw"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
+              - {label: "Direct Source URL", name: "url", widget: "string"}
+              - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
+              - {label: "Source / Publisher", name: "source", widget: "string"}
+              - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+              - {label: "Published Date", name: "published", widget: "string", required: false}
+              - {label: "Verified Date", name: "verified", widget: "string", required: false}
+              - {label: "Coverage Scope", name: "coverage_scope", widget: "select", options: ["country-specific", "regional"], required: false}
+              - {label: "Status", name: "status", widget: "select", options: ["official", "official-feed", "review", "expired", "archived"], default: "review"}
+              - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+              - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
+
+  - name: "agricultural_news_expansion"
+    label: "📰 Agricultural News — New Source Candidates"
+    files:
+      - label: "Expansion Records"
+        name: "news_expansion"
+        file: "src/_data/agriculturalNewsExpansion.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Last Updated", name: "last_updated", widget: "string"}
+          - {label: "Editorial Policy", name: "editorial_policy", widget: "text", required: false}
+          - label: "Records"
+            name: "records"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Country Code", name: "country_code", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["general", "crops", "livestock", "markets", "finance", "policy", "weather-climate", "machinery-technology", "grants-programmes", "research-innovation", "climate", "data", "events", "farmer-support", "fisheries", "food-safety", "food-security", "grants", "insurance", "machinery", "organic", "resilience", "seeds", "services"]}
+              - {label: "Headline", name: "title", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - label: "Reviewed Translations"
+                name: "translations"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "French"
+                    name: "fr"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+                  - label: "Arabic"
+                    name: "ar"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+                  - label: "Portuguese"
+                    name: "pt"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+                  - label: "Swahili"
+                    name: "sw"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Summary", name: "summary", widget: "text", required: false}
+              - {label: "Direct Source URL", name: "url", widget: "string"}
+              - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
+              - {label: "Source / Publisher", name: "source", widget: "string"}
+              - {label: "Source ID", name: "source_id", widget: "string", required: false}
+              - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+              - {label: "Published Date", name: "published", widget: "string", required: false}
+              - {label: "Verified Date", name: "verified", widget: "string", required: false}
+              - {label: "Deadline / Expiry", name: "deadline", widget: "string", required: false}
+              - {label: "Coverage Scope", name: "coverage_scope", widget: "select", options: ["country-specific", "regional"], required: false}
+              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
+              - {label: "Status", name: "status", widget: "select", options: ["official", "official-feed", "review", "expired", "archived"], default: "review"}
+              - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+              - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
+
+  - name: "agricultural_resources_supplement"
+    label: "🌍 Agricultural Resources — Supplemental Review Queue"
+    files:
+      - label: "Supplemental Resource Records"
+        name: "resource_supplement"
+        file: "src/_data/agriculturalResourcesSupplement.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Last Updated", name: "last_updated", widget: "string"}
+          - label: "Records"
+            name: "records"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Country Code", name: "country_code", widget: "string"}
+              - {label: "Country Name", name: "country", widget: "string", required: false}
+              - {label: "Category", name: "category", widget: "select", options: ["finance", "grants", "machinery", "general", "data", "inputs", "markets", "farmer-support", "climate", "policy", "research", "livestock", "fisheries", "insurance", "irrigation", "weather-climate"]}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Reviewed Localizations"
+                name: "localized"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "French"
+                    name: "fr"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Description", name: "description", widget: "text", required: false}
+                  - label: "Arabic"
+                    name: "ar"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Description", name: "description", widget: "text", required: false}
+                  - label: "Portuguese"
+                    name: "pt"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Description", name: "description", widget: "text", required: false}
+                  - label: "Swahili"
+                    name: "sw"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Headline", name: "title", widget: "string", required: false}
+                      - {label: "Description", name: "description", widget: "text", required: false}
+              - {label: "Translation Status", name: "translation_status", widget: "select", options: ["source", "translated", "needs_update", "in_review"], default: "in_review", required: false}
+              - {label: "Summary", name: "summary", widget: "text", required: false}
+              - {label: "Direct Source URL", name: "url", widget: "string"}
+              - {label: "Source Language", name: "source_language", widget: "select", options: ["en", "fr", "ar", "pt", "sw"], default: "en", required: false}
+              - {label: "Source / Provider", name: "source", widget: "string"}
+              - {label: "Source ID", name: "source_id", widget: "string", required: false}
+              - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+              - {label: "Type", name: "type", widget: "string", required: false}
+              - {label: "Published Date", name: "published", widget: "string", required: false}
+              - {label: "Verified Date", name: "verified", widget: "string", required: false}
+              - {label: "Access / Eligibility", name: "access", widget: "text", required: false}
+              - {label: "Status", name: "status", widget: "select", options: ["official", "review", "expired", "archived"], default: "review"}
+              - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+              - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
+
+  - name: "agricultural_opportunities"
+    label: "💰 Agricultural Grants & Opportunities — Review First"
+    files:
+      - label: "Opportunity Records"
+        name: "opportunity_records"
+        file: "src/_data/agriculturalOpportunities.json"
+        editor: {preview: false}
+        fields:
+          - {label: "Version", name: "version", widget: "number", value_type: "int"}
+          - {label: "Last Updated", name: "last_updated", widget: "string"}
+          - {label: "Editorial Policy", name: "editorial_policy", widget: "text", required: false}
+          - label: "Records"
+            name: "records"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Country Code", name: "code", widget: "string"}
+              - {label: "Country", name: "country", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["grants", "finance", "investment", "competition"]}
+              - {label: "Opportunity Type", name: "type", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - {label: "Eligibility", name: "eligibility", widget: "text"}
+              - {label: "Direct Official Source URL", name: "url", widget: "string"}
+              - {label: "Source / Publisher", name: "source", widget: "string"}
+              - {label: "Source Tier", name: "source_tier", widget: "number", value_type: "int", required: false}
+              - {label: "Published Date", name: "published", widget: "string", required: false}
+              - {label: "Deadline / End Date", name: "deadline", widget: "string", required: false}
+              - {label: "End Date", name: "end_date", widget: "string", required: false}
+              - {label: "Verified Date", name: "verified", widget: "string", required: false}
+              - {label: "Amount / Value", name: "amount", widget: "string", required: false}
+              - {label: "Access Notes", name: "access", widget: "text", required: false}
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                required: false
+                field: {label: "Tag", name: "tag", widget: "string"}
+              - {label: "Status", name: "status", widget: "select", options: ["open", "active", "review", "closed", "expired"], default: "review"}
+              - {label: "Lifecycle", name: "lifecycle", widget: "select", options: ["current", "needs_review", "closed", "expired", "archived", "historical"], required: false}
+              - {label: "Review Reason", name: "review_reason", widget: "text", required: false}
+
   - name: "content_sources"
     label: "🔎 Content Discovery Sources"
     files:

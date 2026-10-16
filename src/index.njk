@@ -1,8 +1,9 @@
 ---
 layout: layouts/base.njk
 title: "GoOrganicAfrica — Free Farm Profit Calculator & Organic Farming Guides for Africa"
-description: "Free farm profit calculator for Nigerian and African farmers. Calculate farming costs, revenue, profit and ROI across {{ site.calculator.enterpriseCount }} farming enterprises in {{ site.calculator.countryCount }} African countries. Expert organic farming guides on hydroponic fodder, mushroom farming, black soldier fly farming and cassava production."
 permalink: "/"
+eleventyComputed:
+  description: "Free farm profit calculator for Nigerian and African farmers. Calculate farming costs, revenue, profit and ROI across {{ site.calculator.enterpriseCount }} farming enterprises in {{ site.calculator.countryCount }} African countries. Expert organic farming guides on hydroponic fodder, mushroom farming, black soldier fly farming and cassava production."
 ---
 {% set pageLanguage = "en" %}
 {% include "home-content.njk" %}

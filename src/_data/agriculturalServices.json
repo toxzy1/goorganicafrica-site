@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-13",
   "editorial_policy": "Suppliers and services are listed only when a verifiable official, institutional or clearly attributable source is available. Listings are not endorsements. Commercial claims require independent verification.",
   "records": [
     {
@@ -206,8 +206,8 @@
       ],
       "summary": "Continental forum focused on how science, technology and innovation can drive productive, resilient, sustainable and inclusive agrifood systems.",
       "source": "FAO Regional Office for Africa",
-      "url": "https://www.fao.org/africa/events/en/",
-      "verified": "2026-10-08",
+      "url": "https://www.fao.org/africa/events/events-detail/africa-forum-on-harnessing-science-and-innovation-for-agrifood-systems-transformation/en",
+      "verified": "2026-10-13",
       "source_tier": 1,
       "status": "official",
       "lifecycle": "current",
@@ -245,8 +245,8 @@
       "url": "https://www.fao.org/africa/events/en/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-10-26",
       "end_date": "2026-10-30",
       "tags": [
@@ -254,7 +254,8 @@
         "training",
         "climate",
         "social protection"
-      ]
+      ],
+      "review_reason": "The source URL is the FAO events listing, not a direct event page. Replace with a verified event-specific URL before publication."
     },
     {
       "id": "AFRICA-WEST-MDT-2026",
@@ -280,8 +281,8 @@
       "url": "https://www.fao.org/africa/events/en/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-11-23",
       "end_date": "2026-11-27",
       "tags": [
@@ -290,7 +291,8 @@
         "water",
         "food security",
         "event"
-      ]
+      ],
+      "review_reason": "The source URL is the FAO events listing, not a direct event page. Replace with a verified event-specific URL before publication."
     },
     {
       "id": "NG-NCAM-2026",
@@ -463,15 +465,16 @@
       "url": "https://eagriculture.gov.ng/PrimaryProduction/AgricMachineries.aspx",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "tags": [
         "Nigeria",
         "tractor",
         "hire",
         "TOOAN",
         "mechanization"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "AFRICA-FAO-MECH-HIRE-2026",
@@ -616,8 +619,8 @@
       "url": "https://www.fao.org/africa/events/events-detail/africa-forum-on-harnessing-science-and-innovation-for-agrifood-systems-transformation/en",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-10-27",
       "end_date": "2026-10-29",
       "tags": [
@@ -627,7 +630,8 @@
         "innovation",
         "agrifood",
         "event"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "BW-CLIMATE-SOCIAL-2026",
@@ -653,8 +657,8 @@
       "url": "https://www.fao.org/africa/events/en/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-10-26",
       "end_date": "2026-10-30",
       "tags": [
@@ -663,7 +667,8 @@
         "climate",
         "training",
         "resilience"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "GN-MDT-18-2026",
@@ -689,8 +694,8 @@
       "url": "https://www.fao.org/africa/events/en/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-11-23",
       "end_date": "2026-11-27",
       "tags": [
@@ -700,7 +705,8 @@
         "water",
         "agriculture",
         "event"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "NG-NADF-NAMSP-VERIFIED-2026",
@@ -730,8 +736,8 @@
       "url": "https://nadf.gov.ng/nadf-graduates-first-250-agricultural-mechanisation-service-providers/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "tags": [
         "Nigeria",
         "NADF",
@@ -739,7 +745,8 @@
         "training",
         "tractor",
         "mechanics"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "AFRICA-FAO-MECH-MAINT-2026",
@@ -810,8 +817,8 @@
       "url": "https://elearning.fao.org/course/view.php?id=1383",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "tags": [
         "Africa",
         "FAO",
@@ -819,7 +826,8 @@
         "mechanization",
         "hire services",
         "training"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "ET-ESAE-PASAE-2026",
@@ -850,8 +858,8 @@
       "url": "https://www.moa.gov.et/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "start_date": "2026-10-05",
       "end_date": "2026-10-09",
       "tags": [
@@ -860,7 +868,8 @@
         "engineering",
         "mechanization",
         "digital agriculture"
-      ]
+      ],
+      "review_reason": "The linked URL is the ministry homepage, not a direct conference page. Replace with the official event URL before publication."
     },
     {
       "id": "NG-NAMSP-NATIONAL-DB-2026",
@@ -888,15 +897,16 @@
       "url": "https://nadf.gov.ng/nadf-graduates-first-250-agricultural-mechanisation-service-providers/",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "tags": [
         "Nigeria",
         "NADF",
         "service providers",
         "registry",
         "mechanization"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "AFRICA-FAO-MECH-EQUIPMENT-DB-2026",
@@ -1077,8 +1087,8 @@
       "url": "https://www.fao.org/sustainable-agricultural-mechanization",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "tags": [
         "Africa",
         "FAO",
@@ -1086,7 +1096,8 @@
         "supply chain",
         "spare parts",
         "maintenance"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "AFRICA-FAO-MECH-WOMEN-2026",
@@ -1114,15 +1125,16 @@
       "url": "https://www.fao.org/sustainable-agricultural-mechanization",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "tags": [
         "Africa",
         "FAO",
         "women farmers",
         "mechanization",
         "training"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     },
     {
       "id": "AFRICA-FAO-MECH-BUSINESS-2026",
@@ -1149,8 +1161,8 @@
       "url": "https://www.fao.org/sustainable-agricultural-mechanization",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official",
-      "lifecycle": "current",
+      "status": "review",
+      "lifecycle": "needs_review",
       "tags": [
         "Africa",
         "FAO",
@@ -1158,7 +1170,8 @@
         "market assessment",
         "hire services",
         "business"
-      ]
+      ],
+      "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     }
   ]
 }

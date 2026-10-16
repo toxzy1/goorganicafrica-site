@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-14",
   "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
   "categories": [
     "finance",
@@ -33,7 +33,8 @@
             "verified": "2026-10-07",
             "status": "official",
             "type": "Agricultural programme and finance",
-            "access": "Programme information; not a direct farmer application page"
+            "access": "Programme information; not a direct farmer application page",
+            "category": "finance"
           },
           {
             "title": "Nigeria AGROW — Sustainable Agricultural Value-Chains for Growth",
@@ -43,9 +44,11 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural value-chain finance and support",
-            "access": "Programme information; eligibility and implementation conditions apply"
+            "access": "Programme information; eligibility and implementation conditions apply",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "NADF Onlending Programme",
@@ -65,14 +68,16 @@
           {
             "title": "FAO Hand-in-Hand Nigeria 2026 — agrifood investment portfolio",
             "description": "FAO's 2026 Nigeria investment profile identifies a USD 3.2 billion total investment portfolio, including fisheries and aquaculture and beef-feedlot opportunities, with financial, beneficiary and sustainability indicators.",
-            "url": "https://fao.sitefinity.cloud/hand-in-hand/investment-forum-2026/nigeria-2026/en",
+            "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/nigeria-2026/en",
             "source": "FAO",
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Nigeria AgriConnect Compact — national agricultural transformation framework",
@@ -94,10 +99,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-02-13"
+            "published": "2026-02-13",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Nigeria agrifood investment opportunities",
@@ -107,9 +114,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -167,10 +176,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-02-13"
+            "published": "2026-02-13",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "markets": [
@@ -182,9 +193,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -209,9 +222,12 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "category": "research",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           },
           {
             "title": "IITA Capacity Development Office — African agrifood learning and innovation",
@@ -220,9 +236,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           },
           {
             "title": "IFAD AgTech and FinTech evidence-for-scale grant opportunity",
@@ -231,10 +249,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-04-21"
+            "published": "2026-04-21",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "TAAT-III — AfDB and IITA scale climate-resilient agricultural technologies",
@@ -310,7 +330,8 @@
             "status": "official",
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
-            "published": "2026-06-03"
+            "published": "2026-06-03",
+            "category": "finance"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Ghana agrifood investment opportunities",
@@ -320,9 +341,25 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
+          },
+          {
+            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
+            "description": "Regional initiative scaling agricultural innovations, climate-smart practices and climate information services in Ghana, connecting research institutions and farmers. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
+            "source": "World Bank / ICIPE",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-smart agriculture and innovation programme",
+            "access": "Official programme or sector information; implementation conditions apply.",
+            "published": "2026-03-26",
+            "category": "finance"
           }
         ],
         "grants": [
@@ -346,10 +383,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Regional agricultural programme",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-05-26"
+            "published": "2026-05-26",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -391,9 +430,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Ghana 2026 — agrifood investment opportunities",
@@ -403,23 +444,27 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           },
           {
             "title": "FAO Hand-in-Hand Ghana 2026 — investment portfolio and priority value chains",
             "description": "FAO's country investment profile presents a USD 1.2 billion agrifood investment opportunity, with 16% overall internal rate of return, USD 462.7 million NPV and 56,648 direct beneficiaries. Cases include cassava production, broiler processing, soybean production and processing, and rice processing.",
-            "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/ghana-2026/",
+            "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/ghana-2026/en",
             "metrics": "USD 1.2B total investment; 16% IRR; USD 462.7M NPV; 56,648 direct beneficiaries; more than 250,000 potential jobs.",
             "cases": "Cassava USD 309.2M; broiler processing USD 15.6M; soybean production USD 452.5M; soybean processing USD 247.3M; rice processing USD 145.8M.",
             "source": "FAO",
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "insurance": [],
@@ -443,9 +488,11 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural transformation programme",
-            "access": "Programme information"
+            "access": "Programme information",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "research": [
@@ -457,13 +504,15 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy, soil health and input-support programme",
-            "access": "Programme information; participation is through government and institutional partners."
+            "access": "Programme information; participation is through government and institutional partners.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping Ghana, Kenya, Malawi, Senegal, Tanzania and Zambia improve fertilizer-support design, soil health, agricultural productivity, digital registries, soil testing, research and extension.",
+            "description": "World Bank Group Academy programme helping Ghana, Kenya, Malawi, Senegal, Tanzania and Zambia improve fertilizer-support design, soil health, agricultural productivity, digital registries, soil testing, research and extension. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
             "source": "World Bank Group",
             "source_tier": 1,
@@ -479,9 +528,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           },
           {
             "title": "FAO Seeds to Foods 2026 initiative",
@@ -503,10 +554,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural innovation and value-chain resource",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-10-01"
+            "published": "2026-10-01",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "FAO agricultural heritage systems capacity programme for Africa",
@@ -516,23 +569,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-28"
-          },
-          {
-            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
-            "description": "Regional initiative scaling agricultural innovations, climate-smart practices and climate information services in Ghana, connecting research institutions and farmers.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-            "source": "World Bank / ICIPE",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate-smart agriculture and innovation programme",
-            "access": "Official programme or sector information; implementation conditions apply.",
-            "published": "2026-03-26"
+            "published": "2026-09-28",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "climate": [],
@@ -561,7 +603,7 @@
         "finance": [
           {
             "title": "IFAD-AgDevCo blended finance for early-stage agribusinesses",
-            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing.",
+            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
             "source": "IFAD / AgDevCo",
             "source_id": "ifad-agdevco",
@@ -572,7 +614,7 @@
           },
           {
             "title": "IFAD and Equity Group climate-adaptation finance mechanism for East African farmers",
-            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation.",
+            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-equity-group-kick-off-us-200-million-mechanism-to-make-climate-adaptation-finance-reach-east-africa-s-farmers",
             "source": "IFAD",
             "source_tier": 1,
@@ -588,9 +630,11 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
+            "access": "Official programme information; eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Kenya agrifood investment opportunities",
@@ -600,9 +644,25 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
+          },
+          {
+            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
+            "description": "Regional initiative scaling climate-smart solutions and climate information services in Kenya, linking agricultural research, innovation and farmer delivery. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
+            "source": "World Bank / ICIPE",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-smart agriculture and innovation programme",
+            "access": "Official programme or sector information; implementation conditions apply.",
+            "published": "2026-03-26",
+            "category": "finance"
           }
         ],
         "grants": [
@@ -612,14 +672,16 @@
             "url": "https://www.fao.org/kenya/news/newsdetails/nature-positive-food-systems-for-the-mt.-elgon-landscape--gef-7-folur-direct-beneficiary-grants-open-for-coffee--maize-and-ogiek-livelihoods/en",
             "source": "FAO Kenya / GEF-7 FOLUR / Government of Kenya",
             "verified": "2026-10-05",
-            "status": "official",
+            "status": "review",
             "type": "Grant",
             "amount": "",
             "eligibility": "Legally registered Kenyan smallholder forest and farm producer organizations, farmer cooperatives, community-based organizations and other eligible member-based organizations in the specified Mt. Elgon area.",
             "beneficiary": "Eligible producer organizations, cooperatives and community organizations",
             "deadline": "Applications open 1 October 2026 to 9 November 2026.",
             "application_url": "https://tally.so/r/q4yWK2",
-            "contact": "FAO Kenya — official call page"
+            "contact": "FAO Kenya — official call page",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "machinery": [],
@@ -661,9 +723,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Kenya 2026 — agrifood investment opportunities",
@@ -673,27 +737,31 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           },
           {
             "title": "FAO Hand-in-Hand Kenya 2026 — coffee value-chain investment portfolio",
             "description": "FAO's Kenya 2026 investment profile identifies a USD 50 million portfolio with a 22.49% internal rate of return, USD 31.78 million NPV and 1.53 million direct beneficiaries. The portfolio focuses on coffee wet and dry mills, honey coffee, the Nairobi Coffee Exchange and cascara tea.",
-            "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/kenya-2026/",
+            "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/kenya-2026/en",
             "metrics": "USD 50M total investment; 22.49% IRR; USD 31.78M NPV; 1.53M direct beneficiaries.",
             "cases": "Modernized wet mills USD 13.7M; Western dry mills USD 3.23M; honey coffee USD 4.64M; Nairobi Coffee Exchange system USD 2.2M; cascara tea USD 2.85M.",
             "source": "FAO",
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -724,10 +792,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-04-24"
+            "published": "2026-04-24",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -739,13 +809,15 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy, soil health and input-support programme",
-            "access": "Programme information; participation is through government and institutional partners."
+            "access": "Programme information; participation is through government and institutional partners.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
+            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
             "source": "World Bank Group",
             "source_tier": 1,
@@ -753,19 +825,6 @@
             "status": "official",
             "type": "Agricultural finance/research programme",
             "access": "Official programme information; eligibility and implementation conditions apply."
-          },
-          {
-            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
-            "description": "Regional initiative scaling climate-smart solutions and climate information services in Kenya, linking agricultural research, innovation and farmer delivery.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-            "source": "World Bank / ICIPE",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate-smart agriculture and innovation programme",
-            "access": "Official programme or sector information; implementation conditions apply.",
-            "published": "2026-03-26"
           }
         ],
         "climate": [],
@@ -794,7 +853,7 @@
         "finance": [
           {
             "title": "IFAD-AgDevCo blended finance for early-stage agribusinesses",
-            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing.",
+            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
             "source": "IFAD / AgDevCo",
             "source_id": "ifad-agdevco",
@@ -827,21 +886,23 @@
             "access": "Programme information"
           },
           {
-            "title": "FAO Hand-in-Hand Uganda 2026 — dairy, leather, animal feed and mechanization",
-            "description": "FAO's Uganda 2026 profile supports agro-industrialization through dairy and leather processing, animal-feed manufacture, maize processing and mechanization across four national zones.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Uganda",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/uganda-2026/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 967.51M total investment, 28% IRR and USD 260.86M NPV, with 4.65 million direct beneficiaries. Cases include USD 425.22M dairy processing, USD 184.29M animal feed, USD 70.66M leather processing and USD 11.28M mechanization centres."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 967.51M total investment, 28% IRR and USD 260.86M NPV, with 4.65 million direct beneficiaries. Cases include USD 425.22M dairy processing, USD 184.29M animal feed, USD 70.66M leather processing and USD 11.28M mechanization centres.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "IFAD and Equity Group climate-adaptation finance mechanism for East African farmers",
-            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation.",
+            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-equity-group-kick-off-us-200-million-mechanism-to-make-climate-adaptation-finance-reach-east-africa-s-farmers",
             "source": "IFAD",
             "source_tier": 1,
@@ -857,9 +918,11 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
+            "access": "Official programme information; eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Uganda agrifood investment opportunities",
@@ -869,9 +932,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -914,13 +979,15 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -941,9 +1008,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ],
         "climate": [],
@@ -978,13 +1047,15 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural finance programme",
-            "access": "Official IFAD approval record; beneficiary and implementation conditions apply."
+            "access": "Official IFAD approval record; beneficiary and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           },
           {
             "title": "IFAD and Equity Group climate-adaptation finance mechanism for East African farmers",
-            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation.",
+            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-equity-group-kick-off-us-200-million-mechanism-to-make-climate-adaptation-finance-reach-east-africa-s-farmers",
             "source": "IFAD",
             "source_tier": 1,
@@ -995,7 +1066,7 @@
           },
           {
             "title": "AgDevCo blended financing for Africa's next generation of agribusinesses",
-            "description": "IFAD and AgDevCo signed a USD 10 million loan agreement supporting early-stage agribusinesses, initially in Ethiopia, Kenya, Rwanda, Tanzania and Uganda.",
+            "description": "IFAD and AgDevCo signed a USD 10 million loan agreement supporting early-stage agribusinesses, initially in Ethiopia, Kenya, Rwanda, Tanzania and Uganda. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
             "source": "IFAD",
             "source_tier": 1,
@@ -1038,7 +1109,7 @@
         "inputs": [
           {
             "title": "Tanzania Seed Sector Development Strategy and Investment Plan 2026–2030",
-            "description": "Government-approved strategy and investment plan designed to strengthen Tanzania's seed sector through policy, research, finance, production, regulation and delivery systems.",
+            "description": "Government-approved strategy and investment plan designed to strengthen Tanzania's seed sector through policy, research, finance, production, regulation and delivery systems. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.cgiar.org/news-events/news/supporting-africas-next-generation-seed-sector-transformation",
             "source": "CGIAR / national agricultural partners",
             "source_id": "cgiar",
@@ -1062,13 +1133,15 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy, soil health and input-support programme",
-            "access": "Programme information; participation is through government and institutional partners."
+            "access": "Programme information; participation is through government and institutional partners.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
+            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
             "source": "World Bank Group",
             "source_tier": 1,
@@ -1084,15 +1157,17 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ],
         "climate": [
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Tanzania and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Tanzania and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -1170,10 +1245,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-07"
+            "published": "2026-09-07",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -1207,9 +1284,25 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
+          },
+          {
+            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
+            "description": "Regional initiative scaling climate-smart agricultural solutions and climate information services in Zambia, connecting research and farmer-focused delivery. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
+            "source": "World Bank / ICIPE",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-smart agriculture and innovation programme",
+            "access": "Official programme or sector information; implementation conditions apply.",
+            "published": "2026-03-26",
+            "category": "finance"
           }
         ],
         "grants": [],
@@ -1249,8 +1342,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "inputs": [],
@@ -1263,9 +1358,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Zambia 2026 — agrifood investment opportunities",
@@ -1275,9 +1372,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           },
           {
             "title": "FAO Hand-in-Hand Zambia 2026 — beef, soybean, honey and beans investment portfolio",
@@ -1289,9 +1388,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "AfDB Zambia Cashew Development Programme Phase II preparation",
@@ -1301,10 +1402,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural value-chain programme preparation",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-06-15"
+            "published": "2026-06-15",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "insurance": [],
@@ -1315,12 +1418,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Zambia Cashew Development Programme Phase II Preparation Project",
             "description": "AfDB-supported preparation work for the next phase of Zambia's cashew development programme, including feasibility and environmental studies.",
             "type": "Agricultural value-chain development project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "World Bank Repurposing Agricultural Support for Soil Health Impact Program",
@@ -1330,13 +1435,15 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy, soil health and input-support programme",
-            "access": "Programme information; participation is through government and institutional partners."
+            "access": "Programme information; participation is through government and institutional partners.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
+            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
             "source": "World Bank Group",
             "source_tier": 1,
@@ -1344,25 +1451,12 @@
             "status": "official",
             "type": "Agricultural finance/research programme",
             "access": "Official programme information; eligibility and implementation conditions apply."
-          },
-          {
-            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
-            "description": "Regional initiative scaling climate-smart agricultural solutions and climate information services in Zambia, connecting research and farmer-focused delivery.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-            "source": "World Bank / ICIPE",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate-smart agriculture and innovation programme",
-            "access": "Official programme or sector information; implementation conditions apply.",
-            "published": "2026-03-26"
           }
         ],
         "climate": [
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Zambia and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Zambia and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -1398,7 +1492,7 @@
         "finance": [
           {
             "title": "IFAD-AgDevCo blended finance for early-stage agribusinesses",
-            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing.",
+            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
             "source": "IFAD / AgDevCo",
             "source_id": "ifad-agdevco",
@@ -1408,21 +1502,23 @@
             "type": "Agribusiness blended finance"
           },
           {
-            "title": "FAO Hand-in-Hand Rwanda 2026 — tea, coffee, avocado, chili and small-livestock investment",
-            "description": "FAO's Rwanda 2026 profile supports the country's agrifood transformation through priority value chains including tea, coffee, Irish potato, avocado, chili, pig and poultry, with innovative finance and public-private partnerships.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Rwanda",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/rwa/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 414.8M investment sought, 22.04% IRR and USD 220.4M NPV, with 806,915 direct beneficiaries. The profile highlights USD 8.5M avocado investment and USD 64M chili investment."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 414.8M investment sought, 22.04% IRR and USD 220.4M NPV, with 806,915 direct beneficiaries. The profile highlights USD 8.5M avocado investment and USD 64M chili investment.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "IFAD and Equity Group climate-adaptation finance mechanism for East African farmers",
-            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation.",
+            "description": "Blended finance mechanism targeting 260,000 smallholder producers and 500 rural enterprises across Kenya, Uganda, Tanzania and Rwanda, combining concessional capital with commercial finance for climate adaptation. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-equity-group-kick-off-us-200-million-mechanism-to-make-climate-adaptation-finance-reach-east-africa-s-farmers",
             "source": "IFAD",
             "source_tier": 1,
@@ -1450,9 +1546,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [
@@ -1463,10 +1561,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-11-27"
+            "published": "2025-11-27",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -1508,13 +1608,15 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -1617,10 +1719,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-05-14"
+            "published": "2025-05-14",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -1650,7 +1754,7 @@
         "finance": [
           {
             "title": "IFAD-AgDevCo blended finance for early-stage agribusinesses",
-            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing.",
+            "description": "US$10 million initiative initially supporting early-stage agricultural enterprises in Ethiopia, Kenya, Rwanda, Tanzania and Uganda, including production, input supply, aggregation and processing. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.ifad.org/en/w/news/ifad-and-agdevco-sign-10-million-loan-agreement-to-mobilize-blended-financing-for-africa-s-next-generation-of-agribusinesses",
             "source": "IFAD / AgDevCo",
             "source_id": "ifad-agdevco",
@@ -1664,12 +1768,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Agri-MSMEs Development for Jobs (AMD4J)",
             "description": "AfDB agriculture project supporting agricultural micro, small and medium enterprises and job creation in Ethiopia.",
             "type": "Agricultural enterprise development project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB Agri-MSMEs Development for Jobs (AMD4J)",
@@ -1679,21 +1785,25 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
-            "title": "FAO Hand-in-Hand Ethiopia 2026 — mechanization, animal feed and ranching",
-            "description": "FAO's Ethiopia 2026 investment profile identifies four strategic agrifood cases: agricultural mechanization, animal-feed production, extensive rangeland management/ranching and grandparent-stock poultry farming.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Ethiopia",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/eth/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 744.6M total investment, 22.7% IRR and USD 312.7M NPV. The mechanization case is USD 350.8M and focuses on local manufacture of tractors, irrigation pumps and affordable farm machinery."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 744.6M total investment, 22.7% IRR and USD 312.7M NPV. The mechanization case is USD 350.8M and focuses on local manufacture of tractors, irrigation pumps and affordable farm machinery.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "AgDevCo blended financing for Africa's next generation of agribusinesses",
@@ -1702,9 +1812,11 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural finance/research programme",
-            "access": "Official programme information; eligibility and implementation conditions apply."
+            "access": "Official programme information; eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Ethiopia agrifood investment opportunities",
@@ -1714,9 +1826,25 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
+          },
+          {
+            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
+            "description": "Regional World Bank-supported initiative scaling climate-smart solutions and climate information services in Ethiopia, one of six participating countries, with expected benefits for more than 1.5 million farmers and food-system actors. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
+            "source": "World Bank / ICIPE",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-smart agriculture and innovation programme",
+            "access": "Official programme or sector information; implementation conditions apply.",
+            "published": "2026-03-26",
+            "category": "finance"
           }
         ],
         "grants": [],
@@ -1759,13 +1887,15 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -1789,19 +1919,6 @@
             "status": "official",
             "type": "Agricultural research / programme resource",
             "access": "Official information; programme eligibility and implementation conditions apply."
-          },
-          {
-            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
-            "description": "Regional World Bank-supported initiative scaling climate-smart solutions and climate information services in Ethiopia, one of six participating countries, with expected benefits for more than 1.5 million farmers and food-system actors.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-            "source": "World Bank / ICIPE",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate-smart agriculture and innovation programme",
-            "access": "Official programme or sector information; implementation conditions apply.",
-            "published": "2026-03-26"
           }
         ],
         "climate": [],
@@ -1905,10 +2022,12 @@
             "source": "World Bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
-            "published": "2026-06-24"
+            "published": "2026-06-24",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Angola agrifood investment opportunities",
@@ -1918,9 +2037,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -1963,9 +2084,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Angola 2026 — agrifood investment opportunities",
@@ -1975,9 +2098,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           }
         ],
         "insurance": [],
@@ -1990,16 +2115,18 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural value-chain programme",
-            "access": "Programme information"
+            "access": "Programme information",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "research": [],
         "climate": [
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Angola and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Angola and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -2041,10 +2168,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural investment and policy",
             "access": "Official information; confirm programme eligibility and implementation status before applying.",
-            "investment_highlights": "Priority value chains include rice, soybean and poultry."
+            "investment_highlights": "Priority value chains include rice, soybean and poultry.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Benin agrifood investment opportunities",
@@ -2054,9 +2183,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2099,9 +2230,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -2111,12 +2244,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "PROMAC — Aquaculture Promotion and Fisheries Value-Chain Competitiveness",
             "description": "AfDB project supporting aquaculture development and competitiveness of fisheries value chains in Benin.",
             "type": "Aquaculture and fisheries project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "Benin PROMAC — Sustainable Aquaculture and Fisheries Value Chains",
@@ -2149,10 +2284,12 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Rural entrepreneurship and agricultural support programme",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-06-04"
+            "published": "2026-06-04",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -2218,7 +2355,7 @@
         "climate": [
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Botswana and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Botswana and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -2272,10 +2409,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-09-21"
+            "published": "2026-09-21",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -2383,10 +2522,12 @@
             "source": "African Development Bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
-            "published": "2026-10-05"
+            "published": "2026-10-05",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "general": [
@@ -2447,17 +2588,19 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand Cabo Verde 2026 — fisheries fleet modernization and value-chain investment",
-            "description": "FAO's 2026 Cabo Verde investment profile seeks USD 20.23 million and identifies semi/industrial fleet modernization, artisanal fleet reconversion and integrated value-chain investment. The plan targets post-harvest loss reduction, cold chain, sustainable fishing, traceability and stronger market access.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Cabo Verde",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 20.23M investment sought; 20.33% overall IRR; 9,600 direct beneficiaries. Key cases include USD 5.8M semi/industrial fleet modernization, USD 12.3M artisanal fleet reconversion and a USD 2.15M integrated value-chain project."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 20.23M investment sought; 20.33% overall IRR; 9,600 direct beneficiaries. Key cases include USD 5.8M semi/industrial fleet modernization, USD 12.3M artisanal fleet reconversion and a USD 2.15M integrated value-chain project.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Cabo Verde agrifood investment opportunities",
@@ -2467,9 +2610,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2512,9 +2657,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -2526,9 +2673,11 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -2541,23 +2690,27 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Water and climate-resilient agriculture programme",
-            "access": "Official IFAD approval record; implementation conditions apply."
+            "access": "Official IFAD approval record; implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           }
         ],
         "data": [
           {
-            "title": "FAO GIEWS Country Brief — Cabo Verde",
-            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
+            "title": "FAO GIEWS country brief — Cabo Verde",
+            "description": "Official FAO Global Information and Early Warning System country brief for crop prospects, food security and market context. Check the source for the latest publication date.",
             "url": "https://cb.apps.fao.org/country.jsp?code=CPV",
-            "source": "FAO Global Information and Early Warning System (GIEWS)",
+            "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao-giews",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agricultural data and food-security reference",
-            "access": "Public information"
+            "type": "Country food-security and market information",
+            "access": "Public information",
+            "category": "data",
+            "lifecycle": "current"
           }
         ]
       }
@@ -2576,10 +2729,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-12-09"
+            "published": "2025-12-09",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "grants": [],
@@ -2639,10 +2794,12 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Climate-resilient agribusiness programme",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2025-12-09"
+            "published": "2025-12-09",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -2787,17 +2944,19 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand DRC 2026 — maize, aquaculture, poultry, cocoa and coffee investment portfolio",
-            "description": "FAO's 2026 Democratic Republic of the Congo profile presents five strategic agrifood investment cases around the Lobito and Green corridors, covering maize, poultry, aquaculture, cocoa and coffee to reduce food-import dependence and expand high-value processing and exports.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Democratic Republic of the Congo",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/democratic-republic-of-the-congo-2026/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "Portfolio of about USD 1.23B, with the profile reporting a projected IRR around 21% and roughly 60,000 direct producers plus 300,000 indirect beneficiaries. The maize case is USD 185.5M and the aquaculture case USD 152.9M."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "Portfolio of about USD 1.23B, with the profile reporting a projected IRR around 21% and roughly 60,000 direct producers plus 300,000 indirect beneficiaries. The maize case is USD 185.5M and the aquaculture case USD 152.9M.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Democratic Republic of the Congo agrifood investment opportunities",
@@ -2807,9 +2966,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2852,9 +3013,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -2864,12 +3027,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Agricultural Value-Chain Development Support Project (PADCV-PTA)",
             "description": "AfDB-supported project focused on agricultural value chains and transformation in the Democratic Republic of the Congo.",
             "type": "Agricultural value-chain project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB PADCV-PTA — Agricultural Value Chains Transformation Support Project",
@@ -2879,8 +3044,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "FAO DRC — support to communities affected by Ebola in Ituri and North Kivu",
@@ -2890,10 +3057,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-08"
+            "published": "2026-09-08",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -2954,9 +3123,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -2999,9 +3170,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -3032,17 +3205,19 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand Djibouti 2026 — market gardening and sustainable aquaculture",
-            "description": "FAO's Djibouti 2026 investment profile targets food security and resilience through high-value crop production, sustainable aquaculture and climate-smart agriculture, reducing dependence on imported food.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Djibouti",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/dji/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 110.8M total investment, 25.65% IRR and USD 287.76M NPV. The profile includes market gardening using shaded tunnels and acclimatised greenhouses across Djibouti's five regions."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 110.8M total investment, 25.65% IRR and USD 287.76M NPV. The profile includes market gardening using shaded tunnels and acclimatised greenhouses across Djibouti's five regions.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "Djibouti AgriConnect Compact — livestock, horticulture and date palms",
@@ -3064,9 +3239,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -3109,13 +3286,15 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -3136,8 +3315,10 @@
             "source_id": "ifad-agdevco",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural transformation programme"
+            "status": "review",
+            "type": "Agricultural transformation programme",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "research": [],
@@ -3267,10 +3448,12 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2025-12-29"
+            "published": "2025-12-29",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -3330,7 +3513,7 @@
         "markets": [
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -3369,17 +3552,19 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand Eswatini 2026 — seed multiplication, aquaculture, grain and food processing",
-            "description": "FAO's Eswatini 2026 investment profile identifies seed multiplication, aquaculture, climate-smart grain production and food processing as investment opportunities supporting local supply, value addition and import substitution.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Eswatini",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/swz/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 85.86M total investment, 16.82% IRR and USD 64.01M investment gap. Cases include USD 21.27M seed multiplication, USD 18.97M aquaculture, USD 17.20M grain production and USD 28.42M food processing."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 85.86M total investment, 16.82% IRR and USD 64.01M investment gap. Cases include USD 21.27M seed multiplication, USD 18.97M aquaculture, USD 17.20M grain production and USD 28.42M food processing.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Eswatini agrifood investment opportunities",
@@ -3389,9 +3574,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -3434,9 +3621,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -3567,10 +3756,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-09-16"
+            "published": "2026-09-16",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -3699,9 +3890,11 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Rural economic development project",
-            "access": "Official IFAD approval record; detailed implementation documents available through IFAD."
+            "access": "Official IFAD approval record; detailed implementation documents available through IFAD.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           },
           {
             "title": "P2-P2RS Guinea-Bissau — pastoral code and Sahel resilience programme",
@@ -3801,17 +3994,19 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand Liberia 2026 — rice, cassava, cocoa and maize opportunities",
-            "description": "FAO's Liberia 2026 investment profile identifies investment opportunities in rice, cassava, cocoa and maize, with emphasis on import substitution, processing, aggregation, finance and improved productivity.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Liberia",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/liberia-2026/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 370M total investment, 21.64% IRR and USD 175.5M NPV. The rice case is USD 243M, cocoa USD 70M and maize USD 25M."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 370M total investment, 21.64% IRR and USD 175.5M NPV. The rice case is USD 243M, cocoa USD 70M and maize USD 25M.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Liberia agrifood investment opportunities",
@@ -3821,9 +4016,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -3866,9 +4063,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -3881,9 +4080,11 @@
             "source": "FAO / IAEA",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Atoms4Food Liberia — food-security and agricultural assessment",
@@ -3990,10 +4191,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural investment and policy",
             "access": "Official information; confirm programme eligibility and implementation status before applying.",
-            "investment_highlights": "Priority value chains include rice, maize and soybean; six special economic zones are planned."
+            "investment_highlights": "Priority value chains include rice, maize and soybean; six special economic zones are planned.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Madagascar agrifood investment opportunities",
@@ -4003,9 +4206,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -4048,9 +4253,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -4063,10 +4270,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Emergency agricultural and livelihood support",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-05-08"
+            "published": "2026-05-08",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -4076,12 +4285,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Madagascar Lower Mangoky Irrigation Area Extension Project — Phase II",
             "description": "AfDB-supported irrigation expansion project designed to strengthen agricultural production and resilience in the Lower Mangoky area.",
             "type": "Irrigation and agricultural infrastructure project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB Lower Mangoky Irrigation Area Extension Project — Phase II",
@@ -4091,8 +4302,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -4126,9 +4339,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -4171,9 +4386,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -4183,12 +4400,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Enhancing Climate-Adapted Agricultural Productivity Through Improved Water Management (CAWMA)",
             "description": "AfDB-approved agriculture and rural-development project focused on climate-adapted productivity and improved water management in Malawi.",
             "type": "Agricultural development project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -4200,13 +4419,15 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy, soil health and input-support programme",
-            "access": "Programme information; participation is through government and institutional partners."
+            "access": "Programme information; participation is through government and institutional partners.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
+            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
             "source": "World Bank Group",
             "source_tier": 1,
@@ -4225,12 +4446,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Malawi and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Malawi and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -4275,6 +4498,20 @@
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
             "published": "2026-10-02"
+          },
+          {
+            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
+            "description": "Regional initiative scaling climate-smart agricultural solutions and climate information services in Mali, strengthening links between research and farmers. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
+            "source": "World Bank / ICIPE",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-smart agriculture and innovation programme",
+            "access": "Official programme or sector information; implementation conditions apply.",
+            "published": "2026-03-26",
+            "category": "finance"
           }
         ],
         "grants": [],
@@ -4324,21 +4561,7 @@
             "access": "Programme information; eligibility and implementation conditions apply."
           }
         ],
-        "research": [
-          {
-            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
-            "description": "Regional initiative scaling climate-smart agricultural solutions and climate information services in Mali, strengthening links between research and farmers.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-            "source": "World Bank / ICIPE",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate-smart agriculture and innovation programme",
-            "access": "Official programme or sector information; implementation conditions apply.",
-            "published": "2026-03-26"
-          }
-        ],
+        "research": [],
         "climate": [],
         "data": [
           {
@@ -4490,10 +4713,12 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / technical assistance",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-06-17"
+            "published": "2026-06-17",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "machinery": [],
@@ -4531,9 +4756,11 @@
             "source": "IFAD",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "inputs": [],
@@ -4547,12 +4774,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Technical Assistance for PAASIFEJ Environmental and Social Action Plan",
             "description": "AfDB technical assistance supporting environmental and social implementation within Morocco's agricultural development programme.",
             "type": "Agricultural technical assistance",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "AfDB PAASIFEJ Environmental and Social Action Plan — Technical Assistance",
@@ -4562,8 +4791,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -4590,17 +4821,19 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand Mozambique 2026 — certified seed, irrigation, processing and mechanization",
-            "description": "FAO's Mozambique 2026 profile presents four investment cases covering certified seed multiplication, private irrigation management, production and processing, and mechanization.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Mozambique",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/mozambique-2026/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 135.05M total investment, 27% IRR and USD 26.75M NPV. Cases include USD 8.69M certified seed multiplication, USD 89.79M private irrigation management, USD 29.12M production/processing and USD 7.46M mechanization."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 135.05M total investment, 27% IRR and USD 26.75M NPV. Cases include USD 8.69M certified seed multiplication, USD 89.79M private irrigation management, USD 29.12M production/processing and USD 7.46M mechanization.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Mozambique agrifood investment opportunities",
@@ -4610,9 +4843,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -4636,10 +4871,12 @@
             "source": "African Development Bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
-            "published": "2026-10-05"
+            "published": "2026-10-05",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "general": [
@@ -4680,9 +4917,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -4704,7 +4943,7 @@
         "climate": [
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Mozambique and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Mozambique and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -4776,7 +5015,7 @@
         "climate": [
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Namibia and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Namibia and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -4794,10 +5033,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Climate-risk and agricultural preparedness resource",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-09-07"
+            "published": "2026-09-07",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -4918,20 +5159,7 @@
         "farmer-support": [],
         "research": [],
         "climate": [],
-        "data": [
-          {
-            "title": "FAO GIEWS Country Brief — Republic of the Congo",
-            "description": "Country-level agricultural and food-security intelligence covering seasonal crop prospects, livestock, cereal production and trade, food prices and policy developments. This is a data reference, not a funding application.",
-            "url": "https://cb.apps.fao.org/country.jsp?code=COG",
-            "source": "FAO Global Information and Early Warning System (GIEWS)",
-            "source_id": "fao-giews",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural data and food-security reference",
-            "access": "Public information"
-          }
-        ]
+        "data": []
       }
     },
     {
@@ -5019,10 +5247,26 @@
             "source": "World Bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
-            "published": "2026-02-10"
+            "published": "2026-02-10",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
+          },
+          {
+            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
+            "description": "Regional initiative scaling climate-smart solutions and climate information services in Senegal, helping bridge research, innovation and farmer delivery. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
+            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
+            "source": "World Bank / ICIPE",
+            "source_id": "world-bank",
+            "source_tier": 1,
+            "verified": "2026-10-07",
+            "status": "official",
+            "type": "Climate-smart agriculture and innovation programme",
+            "access": "Official programme or sector information; implementation conditions apply.",
+            "published": "2026-03-26",
+            "category": "finance"
           }
         ],
         "grants": [],
@@ -5079,9 +5323,11 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural transformation programme",
-            "access": "Programme information"
+            "access": "Programme information",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Senegal Support to Food Sovereignty Project (SFSP)",
@@ -5091,9 +5337,11 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural development project",
-            "access": "Official IFAD approval record; detailed implementation documents available through IFAD."
+            "access": "Official IFAD approval record; detailed implementation documents available through IFAD.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           },
           {
             "title": "FAO Senegal — International Year of Women Farmers rural-enterprise support",
@@ -5103,10 +5351,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural resource",
             "access": "Official information; eligibility or implementation conditions may apply.",
-            "published": "2026-08-04"
+            "published": "2026-08-04",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [
@@ -5118,13 +5368,15 @@
             "source_id": "world-bank",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy, soil health and input-support programme",
-            "access": "Programme information; participation is through government and institutional partners."
+            "access": "Programme information; participation is through government and institutional partners.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           },
           {
             "title": "Repurposing Agricultural Support for Soil Health Impact Program",
-            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems.",
+            "description": "World Bank Group Academy programme helping six African countries improve fertilizer-support design, soil health, productivity and agricultural support systems. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://academy.worldbank.org/en/our-programs/by-theme/repurposing-agricultural-support-for-soil-health",
             "source": "World Bank Group",
             "source_tier": 1,
@@ -5144,19 +5396,6 @@
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
             "published": "2026-09-04"
-          },
-          {
-            "title": "AICCRA–FSRP4 — climate-smart agricultural innovation and climate information",
-            "description": "Regional initiative scaling climate-smart solutions and climate information services in Senegal, helping bridge research, innovation and farmer delivery.",
-            "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-            "source": "World Bank / ICIPE",
-            "source_id": "world-bank",
-            "source_tier": 1,
-            "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate-smart agriculture and innovation programme",
-            "access": "Official programme or sector information; implementation conditions apply.",
-            "published": "2026-03-26"
           }
         ],
         "climate": [
@@ -5168,10 +5407,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Regional climate and agrifood resource",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-09-21"
+            "published": "2026-09-21",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -5257,17 +5498,19 @@
       "records": {
         "finance": [
           {
-            "title": "FAO Hand-in-Hand Sierra Leone 2026 — rice, poultry/feed and agrifood value-chain investment",
-            "description": "FAO's Sierra Leone 2026 investment profile identifies investment opportunities in rice and other agrifood value chains, addressing mechanization, post-harvest processing, aggregation, finance and locally produced feed.",
+            "title": "FAO Hand-in-Hand 2026 investment profile — Sierra Leone",
+            "description": "Official FAO country investment profile for the 2026 Hand-in-Hand Initiative Investment Forum, presenting agrifood investment cases, value-chain priorities and expected development impacts. This is programme and investor information, not a direct farmer grant application.",
             "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/sierra-leone-2026/en",
             "source": "Food and Agriculture Organization of the United Nations (FAO)",
             "source_id": "fao",
             "source_tier": 1,
-            "verified": "2026-10-07",
+            "verified": "2026-10-13",
             "status": "official",
-            "type": "Agrifood investment opportunity",
-            "access": "Official investment profile; not a direct grant application.",
-            "investment_highlights": "USD 760M total investment, 26.7% IRR and USD 122M NPV, with 138,000 direct beneficiaries. The rice case is USD 191M and targets mechanization, mills, storage, aggregation and logistics."
+            "type": "National agrifood investment profile",
+            "access": "Investment profile and programme information; not a direct farmer grant application",
+            "investment_highlights": "USD 760M total investment, 26.7% IRR and USD 122M NPV, with 138,000 direct beneficiaries. The rice case is USD 191M and targets mechanization, mills, storage, aggregation and logistics.",
+            "category": "finance",
+            "lifecycle": "current"
           },
           {
             "title": "FAO Hand-in-Hand 2026 — Sierra Leone agrifood investment opportunities",
@@ -5277,9 +5520,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [],
@@ -5322,8 +5567,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
@@ -5333,9 +5580,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "insurance": [],
@@ -5345,12 +5594,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "url": "https://new-mapafrica.afdb.org/en/sectors/A",
             "title": "Sierra Leone Rice Agro-Industrial Special Zone Project — Phase I",
             "description": "AfDB agriculture project supporting rice-focused agro-industrial development and value-chain transformation in Sierra Leone.",
             "type": "Agricultural value-chain project",
-            "access": "Project information"
+            "access": "Project information",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "research": [],
@@ -5412,7 +5663,7 @@
         "markets": [
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -5448,8 +5699,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
         "data": [
@@ -5474,10 +5727,12 @@
             "source": "FAO",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural programme / opportunity",
             "access": "Official information; eligibility and current status must be confirmed at source.",
-            "published": "2026-08-31"
+            "published": "2026-08-31",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ]
       }
@@ -5535,7 +5790,7 @@
         "markets": [
           {
             "title": "Eastern Africa Hand-in-Hand Investment Forum 2026 — regional agrifood investment pipeline",
-            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture.",
+            "description": "FAO's Eastern Africa forum brought together Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan and Uganda around investment-ready opportunities and regional value chains including livestock, coffee, rice, irrigation, fisheries and aquaculture. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
             "source": "FAO Subregional Office for Eastern Africa",
             "source_id": "fao",
@@ -5558,9 +5813,11 @@
             "source_id": "ifad",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Climate-resilient agriculture and rural livelihoods project",
-            "access": "Programme information; implementation conditions apply."
+            "access": "Programme information; implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "data": [
@@ -5653,9 +5910,11 @@
             "source": "IITA / CGIAR",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural research / programme resource",
-            "access": "Official information; programme eligibility and implementation conditions apply."
+            "access": "Official information; programme eligibility and implementation conditions apply.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page only; replace with a direct resource or article URL before publication."
           }
         ],
         "climate": [
@@ -5667,8 +5926,10 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Climate resilience and food-systems programme"
+            "status": "review",
+            "type": "Climate resilience and food-systems programme",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "data": [
@@ -5820,9 +6081,11 @@
             "source_id": "fao-hand-in-hand",
             "source_tier": 1,
             "verified": "2026-10-08",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country."
+            "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
         "grants": [
@@ -5871,7 +6134,7 @@
         "inputs": [
           {
             "title": "Zimbabwe Seed Roadmap and Investment Plan 2026",
-            "description": "Five-year seed-sector roadmap covering maize, wheat, sorghum, finger millet, pearl millet, soybean and groundnut, with focus on regulation, variety development, production, certification, marketing and farmer access.",
+            "description": "Five-year seed-sector roadmap covering maize, wheat, sorghum, finger millet, pearl millet, soybean and groundnut, with focus on regulation, variety development, production, certification, marketing and farmer access. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.cgiar.org/news-events/news/supporting-africas-next-generation-seed-sector-transformation",
             "source": "CGIAR / national agricultural partners",
             "source_id": "cgiar",
@@ -5892,9 +6155,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunities",
-            "access": "Investment information; this is not a direct grant or farmer application."
+            "access": "Investment information; this is not a direct grant or farmer application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           },
           {
             "title": "FAO Hand-in-Hand Zimbabwe 2026 — agrifood investment opportunities",
@@ -5904,9 +6169,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic portal or forum overview only; replace with a direct programme or project page before publication."
           },
           {
             "title": "FAO Hand-in-Hand Zimbabwe 2026 — USD 1.65 billion agrifood investment portfolio",
@@ -5916,9 +6183,11 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agrifood investment opportunity",
-            "access": "Official investment information; not a direct grant application."
+            "access": "Official investment information; not a direct grant application.",
+            "lifecycle": "needs_review",
+            "review_reason": "This country already has another resource record pointing to the same source URL. Keep one canonical listing or provide a verified direct project/resource URL before publication."
           }
         ],
         "insurance": [],
@@ -5933,12 +6202,14 @@
             "source_id": "afdb",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
-            "type": "Agricultural development programme/project"
+            "status": "review",
+            "type": "Agricultural development programme/project",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           },
           {
             "title": "Zambezi Basin Resilience Programme — climate-smart agriculture and livelihoods",
-            "description": "AfDB-supported regional programme for Zimbabwe and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth.",
+            "description": "AfDB-supported regional programme for Zimbabwe and the other seven Zambezi Basin countries, focused on climate resilience, food security, water management, climate-smart agriculture, stronger value chains and opportunities for women and youth. Source note: this URL is shared across multiple country listings; check the country-specific programme details and local eligibility before applying.",
             "url": "https://www.afdb.org/en/news-and-events/press-releases/zambezi-basin-countries-agree-climate-resilience-priorities-130-million-program-96993",
             "source": "African Development Bank",
             "source_id": "afdb",
@@ -5972,10 +6243,12 @@
             "source_id": "fao",
             "source_tier": 1,
             "verified": "2026-10-07",
-            "status": "official",
+            "status": "review",
             "type": "Agricultural policy and implementation resource",
             "access": "Official information; eligibility and implementation conditions apply.",
-            "published": "2026-09-24"
+            "published": "2026-09-24",
+            "lifecycle": "needs_review",
+            "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ]
       }

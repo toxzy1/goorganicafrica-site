@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_FILE = path.join(process.cwd(), "src", "_data", "agriculturalOpportunities.json");
+const COUNTRIES_FILE = path.join(process.cwd(), "src", "_data", "calculatorCountries.json");
 const BASE_FEEDS = [
   { name: "World Bank agriculture finance", query: "site:worldbank.org agriculture funding grant finance", host: "worldbank.org", source: "World Bank" },
   { name: "African Development Bank agriculture opportunities", query: "site:afdb.org agriculture grant finance project", host: "afdb.org", source: "African Development Bank" },
@@ -55,26 +56,61 @@ function slugify(v) { return v.toLowerCase().normalize("NFKD").replace(/[\u0300-
 
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
+  const countryRegistry = JSON.parse(fs.readFileSync(COUNTRIES_FILE, "utf8"));
+  const countries = Array.isArray(countryRegistry.list) ? countryRegistry.list : [];
+  if (!countries.length) throw new Error("Country registry is missing or empty.");
   const today = new Date().toISOString().slice(0,10);
   const existing = new Set((data.records || []).map(r => r.url || r.title));
   let added = 0;
 
-  const FEEDS = buildFeeds(data.countries);
+  const FEEDS = buildFeeds(countries);
 
   for (const feed of FEEDS) {
-    const response = await fetch(feed.url, {headers: {"user-agent": "GoOrganicAfrica-OpportunityBot/1.0"}});
-    if (!response.ok) throw new Error(feed.name + ": HTTP " + response.status);
-    const xml = await response.text();
+    let xml;
+    try {
+      let response;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          response = await fetch(feed.url, { headers: { "user-agent": "GoOrganicAfrica-OpportunityBot/1.0" } });
+          if (response.ok) break;
+          if (response.status < 500 && response.status !== 429) break;
+        } catch (error) {
+          if (attempt === 3) throw error;
+        }
+        if (attempt < 3) await new Promise(resolve => setTimeout(resolve, attempt * 750));
+      }
+      if (!response || !response.ok) throw new Error("HTTP " + (response ? response.status : "network error"));
+      xml = await response.text();
+    } catch (error) {
+      console.warn("Skipping unavailable opportunity feed " + feed.name + ": " + error.message);
+      continue;
+    }
     const items = xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) || [];
 
     for (const item of items) {
       const title = field(item, "title");
       const summary = field(item, "description");
       let link = url(field(item, "link"));
-      const sourceLink = url(field(item, "source"));
-      if (link.includes("news.google.com") && sourceLink) link = sourceLink;
+      if (link) {
+        try {
+          const candidate = new URL(link);
+          if (candidate.hostname === "news.google.com" || candidate.hostname.endsWith(".news.google.com")) {
+            const resolved = await fetch(link, {
+              redirect: "follow",
+              headers: { "user-agent": "GoOrganicAfrica-OpportunityBot/1.0" }
+            });
+            if (resolved.url) link = resolved.url;
+          }
+        } catch (_) {
+          // Unresolvable discovery links are excluded by the host check below.
+        }
+      }
       const published = date(field(item, "pubDate") || field(item, "dc:date"));
-      if (!title || !link || !published || !link.includes(feed.host) || existing.has(link) || existing.has(title)) continue;
+      if (!title || !link || !published || existing.has(link) || existing.has(title)) continue;
+      let parsedLink;
+      try { parsedLink = new URL(link); } catch (_) { continue; }
+      const hostname = parsedLink.hostname.toLowerCase();
+      if (hostname !== feed.host && !hostname.endsWith("." + feed.host)) continue;
 
       const age = Math.floor((Date.now() - new Date(published + "T23:59:59Z").getTime()) / 86400000);
       if (age > 90) continue;
@@ -88,11 +124,12 @@ async function main() {
         description: summary.slice(0, 600),
         url: link,
         source: feed.source,
-        verified: today,
+        discovered: today,
         status: "review",
         lifecycle: "needs_review",
         source_tier: 1,
-        country_code: country.code,
+        code: country.code,
+        country: country.name,
         type: "Opportunity / resource candidate",
         amount: "",
         eligibility: "",

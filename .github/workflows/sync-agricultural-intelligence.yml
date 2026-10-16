@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: agricultural-intelligence-sync
@@ -43,14 +44,33 @@ jobs:
           npm run check:i18n
           npm run audit:resources
 
-      - name: Commit updated intelligence
-        run: |
-          git config user.name "GoOrganicAfrica Agriculture Bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet; then
-            echo "No agricultural data changes."
-            exit 0
-          fi
-          git add src/_data/agriculturalNews.json src/_data/agriculturalResources.json src/_data/agriculturalOpportunities.json reports/agricultural-data-monitor.json
-          git commit -m "Update agricultural intelligence data"
-          git push
+      # Automated discoveries must never commit straight to main. They stay in
+      # a draft PR until a person checks sources, relevance, dates and eligibility.
+      - name: Open or update review-only pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/agricultural-intelligence-review
+          delete-branch: true
+          draft: true
+          title: "Review agricultural intelligence updates"
+          commit-message: "Prepare agricultural intelligence candidates for review"
+          add-paths: |
+            src/_data/agriculturalNews.json
+            src/_data/agriculturalResources.json
+            src/_data/agriculturalOpportunities.json
+            reports/agricultural-data-monitor.json
+          body: |
+            ## Human review required
+
+            This draft PR contains automatically discovered agricultural news and opportunity candidates.
+            **Do not publish by merging until a reviewer has checked each item.**
+
+            Please verify:
+            - The link opens the original, relevant source.
+            - The country assignment and category are correct.
+            - Publication date, deadline, eligibility and amounts are accurate where applicable.
+            - The item is not expired, duplicated, or merely a generic landing page.
+            - The record remains marked for review until accepted.
+
+            Automated discovery is not fact-checking. Keep uncertain or unsupported candidates out of published content.

@@ -1,5 +1,150 @@
 const { DateTime } = require("luxon");
 
+const isPublishableAgriculturalRecord = record => {
+  const status = String(record?.status || "").toLowerCase();
+  const lifecycle = String(record?.lifecycle || "").toLowerCase();
+  return !["review", "needs_review", "draft", "rejected"].includes(status) &&
+    !["review", "needs_review", "draft", "rejected"].includes(lifecycle);
+};
+
+// Normalize URL variants for duplicate comparison only. Keep the original
+// URL on the record so published source links are not rewritten.
+const normalizeAgriculturalUrl = value => {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  try {
+    const url = new URL(raw);
+    url.hash = "";
+    url.hostname = url.hostname.toLowerCase().replace(/^www\./, "");
+    if ((url.protocol === "https:" && url.port === "443") ||
+        (url.protocol === "http:" && url.port === "80")) url.port = "";
+    while (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+      url.pathname = url.pathname.slice(0, -1);
+    }
+    return url.toString();
+  } catch (_) {
+    return raw.split("#")[0].replace(/\/+$/, "").toLowerCase();
+  }
+};
+
+const dedupeAgriculturalRecords = records => {
+  const seen = new Set();
+  return records.filter(record => {
+    const country = String(record.country_code || record.code || "").toUpperCase();
+    const rawUrl = String(record.url || record.source_url || record.application_url || "").trim();
+    const identity = rawUrl ? normalizeAgriculturalUrl(rawUrl) : String(record.title || "").trim().toLowerCase();
+    const key = country + "|" + identity;
+    if (!country || !identity || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+};
+
+const isSpecificAgriculturalNewsUrl = value => {
+  try {
+    const parsed = new URL(value);
+    const pathname = parsed.pathname.replace(/\/+$/, "") || "/";
+    // Country investment profiles belong in Resources, not the Agricultural News feed.
+    if (/\/hand-in-hand\/investment-forum-2026\//i.test(pathname)) return false;
+    return !(pathname === "/" ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname) ||
+      /^\/en$/i.test(pathname) ||
+      /\/newsdetails(?:\/en)?$/i.test(pathname) ||
+      /\/news\/detail(?:\/en)?$/i.test(pathname));
+  } catch {
+    return false;
+  }
+};
+
+// Keep generic landing pages out of category-specific country resource listings.
+const isGenericAgriculturalResourceUrl = value => {
+  try {
+    const parsed = new URL(value);
+    const pathname = parsed.pathname.replace(/\/+$/, "") || "/";
+    // These query-addressed CMS pages are direct records, not generic homepages.
+    if (pathname === "/" && parsed.searchParams.has("page_id")) return false;
+    return pathname === "/" ||
+      /(?:^|\/)(?:latest-news|news-detail|projects-list|call-for-proposals|news-keywords\/agriculture|sectors\/A|news|news-updates|actualites|capacity-development-office)(?:\/en)?$/i.test(pathname) || /\/newsdetails(?:\/en)?$/i.test(pathname) || /\/news\/detail(?:\/en)?$/i.test(pathname) ||
+      /^\/en$/i.test(pathname) ||
+      /\/newsdetails(?:\/en)?$/i.test(pathname) ||
+      /\/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum(?:\/en)?$/i.test(pathname) ||
+      /\/hand-in-hand\/investment-forum-2026\/en$/i.test(pathname) ||
+      /\/members\/lapse-of-time$/i.test(pathname);
+  } catch {
+    return true;
+  }
+};
+
+const shouldPublishAgriculturalResource = (record, category) => {
+  if (!isPublishableAgriculturalRecord(record)) return false;
+  const url = String(record.url || record.source_url || "").trim();
+  if (!isGenericAgriculturalResourceUrl(url)) return true;
+  // Only an institution's own homepage can remain as a broad general reference.
+  // Generic project/news/grant listings must not be presented as direct records.
+  let pathname;
+  try { pathname = new URL(url).pathname.replace(/\/+$/, "") || "/"; }
+  catch { return false; }
+  const isHomepage = pathname === "/" || /^\/en$/i.test(pathname);
+  const title = String(record.title || record.name || "");
+  const institutionalTitle = /\b(ministry|authority|department|agency|institute|centre|center|fund|council|office|commission|bureau|government|research center|research centre|university|directorate|board|service)\b/i.test(title);
+  const portalTitle = /\b(platform|portal|system|database|information system|advisory tool|digital service)\b/i.test(title);
+  const rawCategory = String(category || record.category || "").toLowerCase();
+  const normalizedCategory = ({ "weather-climate": "climate", policy: "general" })[rawCategory] || rawCategory;
+  return (isHomepage && institutionalTitle &&
+    ["general", "data", "farmer-support"].includes(normalizedCategory)) ||
+    (isHomepage && portalTitle &&
+    ["general", "data", "farmer-support", "inputs", "markets"].includes(normalizedCategory));
+};
+
+const collectPublishableNews = read => {
+  const primary = (read("agriculturalNews.json").countries || []).flatMap(country =>
+    (country.articles || []).map(article => ({
+      ...article,
+      country_code: article.country_code || country.code,
+      country: article.country || country.name || country.country
+    }))
+  );
+  const incoming = [
+    ...(read("agriculturalNewsSupplement.json").records || []),
+    ...(read("agriculturalNewsExpansion.json").records || [])
+  ].map(article => ({
+    ...article,
+    country_code: article.country_code || article.code,
+    country: article.country || article.country_name,
+    title: article.title || article.headline || ""
+  }));
+  return dedupeAgriculturalRecords(
+    [...primary, ...incoming]
+      .filter(isPublishableAgriculturalRecord)
+      .filter(article => article.title && isSpecificAgriculturalNewsUrl(article.url))
+  );
+};
+
+const collectPublishableResources = read => {
+  const primary = (read("agriculturalResources.json").countries || []).flatMap(country =>
+    Object.entries(country.records || {}).flatMap(([category, list]) => (list || []).map(record => ({
+      ...record,
+      category: record.category || category,
+      country_code: record.country_code || country.code,
+      country: record.country || country.name || country.country
+    })))
+  );
+  const supplement = read("agriculturalResourcesSupplement.json").records || [];
+  const fs = require("fs");
+  const path = require("path");
+  const dataDir = path.join(process.cwd(), "src/_data");
+  // Gap files are an editorial queue: they remain hidden until a reviewer
+  // explicitly approves them in a published registry.
+  const gapFiles = fs.readdirSync(dataDir).filter(name => /^agriculturalResourcesGap.*\.json$/.test(name));
+  const queued = gapFiles.flatMap(name => {
+    try {
+      return (JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8")).records || [])
+        .map(record => ({ ...record, lifecycle: record.lifecycle || "needs_review" }));
+    } catch (_) { return []; }
+  });
+  return dedupeAgriculturalRecords([...primary, ...supplement, ...queued].filter(record => shouldPublishAgriculturalResource(record, record.category)));
+};
+
 module.exports = function (eleventyConfig) {
 
   // Agricultural opportunities: unified current/expired lifecycle registry.
@@ -7,11 +152,12 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs");
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalOpportunities.json"), "utf8"));
-    const now = new Date("2026-10-08T00:00:00Z");
-    data.records = (data.records || []).map(record => {
+    const now = new Date();
+    data.records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => {
       const deadline = record.deadline ? new Date(record.deadline + "T23:59:59Z") : null;
+      const review = !isPublishableAgriculturalRecord(record);
       const expired = String(record.status || "").toLowerCase() === "expired" || (deadline && !Number.isNaN(deadline.getTime()) && deadline < now);
-      return { ...record, lifecycle: expired ? "expired" : "current", is_current: !expired, is_expired: expired };
+      return { ...record, lifecycle: review ? "needs_review" : (expired ? "expired" : "current"), is_current: !review && !expired, is_expired: !review && !!expired };
     });
     data.records.sort((a,b) => Number(b.is_current) - Number(a.is_current) || String(a.deadline || "9999").localeCompare(String(b.deadline || "9999")));
     data.market_signals = data.records.filter(r => r.market_signal === "strong_move" || r.market_signal === "notable_move").map(r => ({
@@ -30,7 +176,7 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs");
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalServices.json"), "utf8"));
-    const records = (data.records || []).map(record => ({
+    const records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => ({
       ...record,
       is_current: String(record.lifecycle || "current") === "current",
       is_historical: String(record.lifecycle || "") === "historical"
@@ -49,8 +195,8 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs");
     const path = require("path");
     const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalMarkets.json"), "utf8"));
-    const now = new Date("2026-10-08T00:00:00Z");
-    const records = (data.records || []).map(record => {
+    const now = new Date();
+    const records = (data.records || []).filter(isPublishableAgriculturalRecord).map(record => {
       const observed = record.observed_date ? new Date(record.observed_date) : null;
       const ageDays = observed && !Number.isNaN(observed.getTime()) ? Math.floor((now - observed) / 86400000) : null;
       const freshness = ageDays === null ? "source_reference" : ageDays <= 31 ? "recent" : ageDays <= 180 ? "older" : "stale";
@@ -103,12 +249,11 @@ module.exports = function (eleventyConfig) {
     const path = require("path");
     const dataDir = path.join(process.cwd(), "src/_data");
     const read = name => JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8"));
-    const opp = read("agriculturalOpportunities.json").records || [];
-    const markets = read("agriculturalMarkets.json").records || [];
-    const services = read("agriculturalServices.json").records || [];
-    const news = read("agriculturalNewsExpansion.json").records || [];
-    const resourcesPrimary = read("agriculturalResources.json").countries || [];
-    const resourcesSupplement = read("agriculturalResourcesSupplement.json").records || [];
+    const opp = (read("agriculturalOpportunities.json").records || []).filter(isPublishableAgriculturalRecord);
+    const markets = (read("agriculturalMarkets.json").records || []).filter(isPublishableAgriculturalRecord);
+    const services = (read("agriculturalServices.json").records || []).filter(isPublishableAgriculturalRecord);
+    const news = collectPublishableNews(read);
+    const resources = collectPublishableResources(read);
     const countries = new Map();
     const ensure = (code, name) => {
       if (!code) return null;
@@ -124,18 +269,15 @@ module.exports = function (eleventyConfig) {
     for (const r of markets) if (r.country_code && r.country_code !== "ALL") add(r.country_code, r.country, "markets", [r.commodity, r.market].join(" "));
     for (const r of services) add(r.country_code, r.country, "services", [r.title, r.summary, ...(r.tags || [])].join(" "));
     for (const r of news) add(r.country_code, r.country, "news", [r.title, r.summary, r.category].join(" "));
-    for (const country of resourcesPrimary) {
-      const text = Object.values(country.records || {}).flat().map(r => [r.title, r.description, r.type, ...(r.tags || [])].join(" ")).join(" ");
-      if (text) add(country.code, country.name || country.country, "resources", text);
-    }
-    for (const r of resourcesSupplement) add(r.country_code, r.country, "resources", [r.title, r.description, r.type, ...(r.tags || [])].join(" "));
+    for (const r of resources) add(r.country_code || r.code, r.country || r.country_name, "resources", [r.title, r.description, r.summary, r.type, ...(r.tags || [])].join(" "));
+    
     const records = [...countries.values()].map(c => ({
       code: c.code, country: c.country,
       sections: c.sections,
       total: Object.values(c.sections).reduce((a,b) => a + b, 0),
       topics: [...c.topics].sort()
     })).sort((a,b) => a.country.localeCompare(b.country));
-    return { version: 1, generated: "2026-10-08", records };
+    return { version: 1, generated: new Date().toISOString().slice(0, 10), records };
   });
 
   eleventyConfig.addGlobalData("agriculturalDecisionCentre", () => {
@@ -143,27 +285,22 @@ module.exports = function (eleventyConfig) {
     const read = n => JSON.parse(fs.readFileSync(path.join(dir,n), "utf8"));
     const countries = read("calculatorCountries.json").list || [];
     const markets = read("agriculturalMarkets.json").records || [];
-    const opportunities = read("agriculturalOpportunities.json").records || [];
-    const services = read("agriculturalServices.json").records || [];
-    const news = [];
-    const primaryNews = read("agriculturalNews.json").countries || [];
-    primaryNews.forEach(c => (c.articles||[]).forEach(a => news.push({...a,country_code:c.code,country:c.name})));
-    news.push(...(read("agriculturalNewsSupplement.json").records||[]),...(read("agriculturalNewsExpansion.json").records||[]));
-    const resources = [];
-    (read("agriculturalResources.json").countries||[]).forEach(c => Object.values(c.records||{}).flat().forEach(r=>resources.push({...r,country_code:c.code,country:c.name})));
-    resources.push(...(read("agriculturalResourcesSupplement.json").records||[]));
+    const opportunities = (read("agriculturalOpportunities.json").records || []).filter(isPublishableAgriculturalRecord);
+    const services = (read("agriculturalServices.json").records || []).filter(isPublishableAgriculturalRecord);
+    const news = collectPublishableNews(read);
+    const resources = collectPublishableResources(read);
     const records=[];
     const add=(section,r,code,country,title,text,url,date,tier,status)=>{
       if(code && title) records.push({section,country_code:code,country:country||code,title,text:String(text||""),url:url||"",date:date||"",tier:tier||5,status:status||"official"});
     };
-    markets.forEach(r=>add("markets",r,r.country_code,r.country,r.commodity||r.market||"Market information",[r.market,r.commodity,r.note].join(" "),r.source_url,r.observed_date||r.verified,r.source_tier,r.status));
+    markets.filter(isPublishableAgriculturalRecord).forEach(r=>add("markets",r,r.country_code,r.country,r.commodity||r.market||"Market information",[r.market,r.commodity,r.note].join(" "),r.source_url,r.observed_date||r.verified,r.source_tier,r.status));
     opportunities.forEach(r=>add("opportunities",r,r.country_code||r.code,r.country,r.title,[r.summary,r.type,r.category,r.target_audience,r.eligibility,(r.tags||[]).join(" ")].join(" "),r.application_url||r.source_url||r.url,r.verified||r.verified_date,r.source_tier,r.status));
-    services.forEach(r=>add("services",r,r.country_code,r.country,r.title,[r.summary,r.category,r.type,(r.services||[]).join(" "),(r.tags||[]).join(" ")].join(" "),r.url,r.verified,r.source_tier,r.status));
+    services.filter(isPublishableAgriculturalRecord).forEach(r=>add("services",r,r.country_code,r.country,r.title,[r.summary,r.category,r.type,(r.services||[]).join(" "),(r.tags||[]).join(" ")].join(" "),r.url,r.verified,r.source_tier,r.status));
     news.forEach(r=>add("news",r,r.country_code,r.country,r.title,[r.summary,r.category,r.source].join(" "),r.url,r.published,r.source_tier,r.status));
     resources.forEach(r=>add("resources",r,r.country_code,r.country,r.title,[r.description,r.type,(r.tags||[]).join(" ")].join(" "),r.url,r.verified_date||r.verified,r.source_tier,r.status));
     const topics=["maize","rice","cassava","soybean","cocoa","coffee","cashew","tea","poultry","livestock","fish","vegetables","fruits","seeds","inputs","irrigation","mechanization","finance","climate","markets"];
     const goals=[["market","Find markets & price information",["markets"]],["finance","Find finance & opportunities",["opportunities","resources"]],["inputs","Find inputs & production resources",["resources","services"]],["machinery","Find machinery & services",["services","resources"]],["training","Find training & events",["services","resources"]],["climate","Check climate, resilience & current news",["news","resources","markets"]],["all","Show my full agricultural brief",["markets","opportunities","resources","services","news"]]].map(x=>({id:x[0],label:x[1],sections:x[2]}));
-    return {version:1,generated:"2026-10-08",countries:countries.map(c=>({code:c.code,name:c.name})),topics,goals,records,json:JSON.stringify(records)};
+    return {version:1,generated:new Date().toISOString().slice(0,10),countries:countries.map(c=>({code:c.code,name:c.name})),topics,goals,records,json:JSON.stringify(records)};
   });
 
   // Topic/value-chain connection layer: derive real cross-section links from published records.
@@ -202,20 +339,13 @@ module.exports = function (eleventyConfig) {
     const opp = read("agriculturalOpportunities.json").records || [];
     const markets = read("agriculturalMarkets.json").records || [];
     const services = read("agriculturalServices.json").records || [];
-    const news = read("agriculturalNews.json");
-    const newsSupplement = read("agriculturalNewsSupplement.json").records || [];
-    const newsExpansion = read("agriculturalNewsExpansion.json").records || [];
-    const resources = read("agriculturalResources.json").countries || [];
-    const resourceSupplement = read("agriculturalResourcesSupplement.json").records || [];
-    const gapFiles = fs.readdirSync(dataDir).filter(name => /^agriculturalResourcesGap.*\.json$/.test(name));
-    const resourceGaps = gapFiles.flatMap(name => { try { return JSON.parse(fs.readFileSync(path.join(dataDir,name),"utf8")).records || []; } catch (_) { return []; } });
-    for (const r of opp) add("opportunities", r, [r.title,r.summary,r.description,r.type,r.category,...(r.tags||[]),...(r.sectors||[]),...(r.value_chains||[])].join(" "), r.country_code || r.code, r.country);
-    for (const r of markets) if (r.country_code !== "ALL") add("markets", r, [r.commodity,r.market,r.note,r.price_type].join(" "), r.country_code, r.country);
-    for (const r of services) add("services", r, [r.title,r.summary,r.type,r.category,r.provider,...(r.services||[]),...(r.tags||[])].join(" "), r.country_code, r.country);
-    for (const c of (news.countries || [])) for (const r of (c.articles || [])) add("news", r, [r.title,r.summary,r.category].join(" "), c.code, c.name || c.country);
-    for (const r of [...newsSupplement,...newsExpansion]) add("news", r, [r.title,r.summary,r.category].join(" "), r.country_code, r.country);
-    for (const c of resources) for (const list of Object.values(c.records || {})) for (const r of (list || [])) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), c.code, c.name || c.country);
-    for (const r of [...resourceSupplement,...resourceGaps]) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), r.country_code, r.country);
+    const news = collectPublishableNews(read);
+    const resources = collectPublishableResources(read);
+    for (const r of opp) if (isPublishableAgriculturalRecord(r)) add("opportunities", r, [r.title,r.summary,r.description,r.type,r.category,...(r.tags||[]),...(r.sectors||[]),...(r.value_chains||[])].join(" "), r.country_code || r.code, r.country);
+    for (const r of markets) if (r.country_code !== "ALL" && isPublishableAgriculturalRecord(r)) add("markets", r, [r.commodity,r.market,r.note,r.price_type].join(" "), r.country_code, r.country);
+    for (const r of services) if (isPublishableAgriculturalRecord(r)) add("services", r, [r.title,r.summary,r.type,r.category,r.provider,...(r.services||[]),...(r.tags||[])].join(" "), r.country_code, r.country);
+    for (const r of news) add("news", r, [r.title,r.summary,r.category].join(" "), r.country_code, r.country || r.country_name);
+    for (const r of resources) add("resources", r, [r.title,r.description,r.summary,r.type,...(r.tags||[])].join(" "), r.country_code || r.code, r.country || r.country_name);
     const result = topics.map(topic => {
       const matched = items.filter(item => topic.aliases.some(alias => item.text.includes(alias.toLowerCase())));
       const bySection = {};
@@ -227,7 +357,7 @@ module.exports = function (eleventyConfig) {
       }
       return { ...topic, total:matched.length, sections:bySection, countries:Object.values(countries).sort((a,b)=>a.country.localeCompare(b.country)) };
     }).filter(topic => topic.total > 0);
-    return { version:1, generated:"2026-10-08", topics:result };
+    return { version:1, generated:new Date().toISOString().slice(0,10), topics:result };
   });
 
   // Static passthroughs
@@ -249,13 +379,13 @@ module.exports = function (eleventyConfig) {
     const supplement = JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data/agriculturalResourcesSupplement.json"), "utf8"));
     const gapFiles = fs.readdirSync(path.join(process.cwd(), "src/_data")).filter(name => /^agriculturalResourcesGap.*\.json$/.test(name));
     const gapRecords = gapFiles.flatMap(name => { try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), "src/_data", name), "utf8")).records || []; } catch (_) { return []; } });
-    const allSupplementRecords = [...(supplement.records || []), ...gapRecords];
+    const allSupplementRecords = [...(supplement.records || []), ...gapRecords.map(r => ({ ...r, lifecycle: r.lifecycle || "needs_review" }))].filter(isPublishableAgriculturalRecord);
     const categoryAliases = { "weather-climate": "climate", "policy": "general" };
-    const normalisedSupplementRecords = allSupplementRecords.map(r => ({ ...r, category: categoryAliases[r.category] || r.category }));
+    const normalisedSupplementRecords = allSupplementRecords.map(r => ({ ...r, category: categoryAliases[r.category] || r.category })).filter(r => shouldPublishAgriculturalResource(r, r.category));
     const categories = [...new Set([...(primary.categories || []), ...normalisedSupplementRecords.map(r => r.category).filter(Boolean)])];
     const countries = (primary.countries || []).map(c => ({
       ...c,
-      records: Object.fromEntries(categories.map(cat => [cat, [...(c.records?.[cat] || [])]]))
+      records: Object.fromEntries(categories.map(cat => [cat, [...(c.records?.[cat] || [])].filter(r => shouldPublishAgriculturalResource(r, cat))]))
     }));
     const byCode = new Map(countries.map(c => [c.code, c]));
 
@@ -266,6 +396,37 @@ module.exports = function (eleventyConfig) {
       const key = `${r.country_code}|${r.category}|${r.url}|${r.title}`;
       if (!c.records[r.category].some(x => `${c.code}|${r.category}|${x.url}|${x.title}` === key)) c.records[r.category].push(r);
     }
+
+    // The public directory should show one card per country/source URL.
+    // Keep the most informative record when legacy categories repeat a link;
+    // the underlying source records remain intact for audit and editorial review.
+    const resourceCategoryPriority = ["grants", "finance", "machinery", "inputs", "markets", "insurance", "farmer-support", "research", "climate", "data", "general"];
+    let suppressedResourceDuplicates = 0;
+    for (const c of countries) {
+      const bestByUrl = new Map();
+      for (const cat of categories) for (const r of c.records[cat] || []) {
+        const key = normalizeAgriculturalUrl(r.url || r.source_url);
+        if (!key) continue;
+        const title = String(r.title || r.name || "");
+        const description = String(r.description || r.summary || "");
+        const priority = resourceCategoryPriority.indexOf(cat);
+        const score = title.length + Math.min(description.length, 300) / 6 +
+          (priority < 0 ? 0 : (resourceCategoryPriority.length - priority) * 3) +
+          (r.verified ? 5 : 0) + (r.source_tier ? Math.max(0, 5 - Number(r.source_tier)) : 0);
+        const existing = bestByUrl.get(key);
+        if (!existing || score > existing.score) bestByUrl.set(key, { record: r, score });
+      }
+      const retainedRecords = new Set([...bestByUrl.values()].map(item => item.record));
+      for (const cat of categories) {
+        const before = (c.records[cat] || []).length;
+        c.records[cat] = (c.records[cat] || []).filter(r => {
+          const key = normalizeAgriculturalUrl(r.url || r.source_url);
+          return !key || retainedRecords.has(r);
+        });
+        suppressedResourceDuplicates += before - c.records[cat].length;
+      }
+    }
+    console.log("Public resource directory suppressed " + suppressedResourceDuplicates + " same-country duplicate source cards.");
 
     const sharedByUrl = new Map();
     for (const c of countries) for (const cat of categories) for (const r of c.records[cat] || []) {
@@ -300,9 +461,23 @@ module.exports = function (eleventyConfig) {
     const primary = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNews.json"), "utf8"));
     const supplement = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsSupplement.json"), "utf8"));
     const expansion = JSON.parse(fs.readFileSync(path.join(dataDir, "agriculturalNewsExpansion.json"), "utf8"));
-    const countries = (primary.countries || []).map(c => ({ ...c, articles: [...(c.articles || [])] }));
+    const countries = (primary.countries || []).map(c => ({
+      ...c,
+      // The primary country feeds can contain repeated URLs under slightly
+      // different headlines. Keep one public card per country/source URL.
+      articles: dedupeAgriculturalRecords(
+        (c.articles || []).filter(article => isPublishableAgriculturalRecord(article) && article.title && isSpecificAgriculturalNewsUrl(article.url)).map(article => ({
+          ...article,
+          country_code: article.country_code || c.code
+        }))
+      ).map(({ country_code, ...article }) => article)
+    }));
     const byCode = new Map(countries.map(c => [c.code, c]));
-    const incoming = [...(supplement.records || []), ...(expansion.records || [])];
+    // Some approved supplement records use "headline" rather than "title".
+    // Normalize the schema, but keep generic listing pages out of public news.
+    const incoming = [...(supplement.records || []), ...(expansion.records || [])]
+      .map(article => ({ ...article, title: article.title || article.headline || "" }))
+      .filter(article => isPublishableAgriculturalRecord(article) && article.title && isSpecificAgriculturalNewsUrl(article.url));
 
     for (const article of incoming) {
       const country = byCode.get(article.country_code);
@@ -311,19 +486,26 @@ module.exports = function (eleventyConfig) {
         existing.url === article.url ||
         (existing.title === article.title && existing.published === article.published)
       );
-      if (!duplicate) country.articles.push({
-        category: article.category || "general",
-        title: article.title,
-        summary: article.summary || "",
-        url: article.url,
-        source: article.source || "",
-        published: article.published || "",
-        verified: article.verified || "",
-        status: article.status || "official"
-      });
+      if (!duplicate) {
+        // Preserve editorial workflow metadata and translations from incoming
+        // records. Dropping these fields made translation_status="draft" look
+        // approved on localized pages and hid coverage/source metadata.
+        const { country_code: _countryCode, code: _code, ...record } = article;
+        country.articles.push({
+          ...record,
+          category: record.category || "general",
+          title: record.title || "",
+          summary: record.summary || "",
+          url: record.url,
+          source: record.source || "",
+          published: record.published || "",
+          verified: record.verified || "",
+          status: record.status || "official"
+        });
+      }
     }
 
-    const now = new Date("2026-10-08T00:00:00Z");
+    const now = new Date();
     const historicalCutoff = new Date(now);
     historicalCutoff.setUTCDate(historicalCutoff.getUTCDate() - 180);
 
@@ -363,7 +545,7 @@ module.exports = function (eleventyConfig) {
       ...primary,
       countries,
       total: countries.reduce((sum, country) => sum + country.articles.length, 0),
-      last_updated: "2026-10-08"
+      last_updated: new Date().toISOString().slice(0, 10)
     };
   });
 

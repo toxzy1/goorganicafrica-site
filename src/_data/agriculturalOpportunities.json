@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-13",
   "editorial_policy": "Opportunities are sourced from authoritative organisations and classified by lifecycle. Expired or closed opportunities remain in the archive and are removed from active listings; they are never silently deleted.",
   "records": [
     {
@@ -31,14 +31,16 @@
       "summary": "IFAD grant financing of up to USD 2 million for implementation supporting food systems transformation in the Central Sahel.",
       "source": "International Fund for Agricultural Development (IFAD)",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://www.ifad.org/en/call-for-proposals",
+      "verified": "2026-10-13",
+      "url": "https://www.ifad.org/en/w/calls-for-proposal/call-for-proposals-ifad-support-for-food-systems-transformation-in-the-central-sahel",
       "tags": [
         "Sahel",
         "food systems",
         "regional grant",
         "resilience"
-      ]
+      ],
+      "deadline": "2026-10-16",
+      "access": "Institutional implementing-partner call, not a direct farmer grant. Deadline 16 October 2026 at 23:59 GMT; check official eligibility documents."
     },
     {
       "code": "ZM",
@@ -74,8 +76,8 @@
       "summary": "African Development Bank approved a Malawi programme focused on climate-adapted agricultural productivity through improved water management.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-mw-aa0-042",
       "tags": [
         "Malawi",
         "water management",
@@ -95,8 +97,8 @@
       "summary": "AfDB-approved investment supporting Sierra Leone's rice agro-industrial special zone development.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-sl-aa0-026",
       "tags": [
         "Sierra Leone",
         "rice",
@@ -110,20 +112,22 @@
       "title": "AfDB Cashew Development Programme Phase II preparation",
       "category": "investment",
       "type": "Project preparation",
-      "status": "active",
+      "status": "review",
       "published": "2026-06-15",
       "end_date": "2026-12-31",
       "summary": "AfDB-approved preparation support for Zambia's Cashew Development Programme Phase II.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://new-mapafrica.afdb.org/en/sectors/A",
       "tags": [
         "Zambia",
         "cashew",
         "value chain",
         "investment"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
     },
     {
       "code": "ZW",
@@ -137,8 +141,8 @@
       "summary": "AfDB-approved project supporting agricultural climate resilience and vulnerability reduction in Zimbabwe.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/documents/zimbabwe-agricultural-climate-resilient-and-vulnerability-reduction-project-project-appraisal-report",
       "tags": [
         "Zimbabwe",
         "climate resilience",
@@ -158,8 +162,8 @@
       "summary": "AfDB-approved programme focused on strengthening agrifood systems resilience in Sudan.",
       "source": "African Development Bank",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-sd-aa0-010",
       "tags": [
         "Sudan",
         "food systems",
@@ -173,13 +177,13 @@
       "title": "FARM-TRAC — family farming, regional markets and cross-border trade corridors",
       "category": "grants",
       "type": "Regional grant call",
-      "status": "open",
+      "status": "expired",
       "amount": "Up to US$3.5 million",
       "eligibility": "Eligible organisations meeting IFAD grant requirements and able to implement regional activities in the Sahel/West and Central Africa.",
       "summary": "Three-year IFAD grant supporting inclusive territorial development, family farming, jobs for women and youth, nutrition, climate-resilient technologies and cross-border agricultural trade.",
       "source": "International Fund for Agricultural Development (IFAD)",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://www.ifad.org/en/w/calls-for-proposal/call-for-proposals-grant-to-support-family-farming-regional-markets-and-cross-border-trade-corridors-farm-trac-in-the-sahel",
       "tags": [
         "Sahel",
@@ -188,7 +192,11 @@
         "regional markets",
         "women",
         "youth"
-      ]
+      ],
+      "lifecycle": "expired",
+      "published": "2019-08-13",
+      "deadline": "2019-09-23",
+      "review_reason": "The official IFAD call page states that the application deadline was extended to 23 September 2019. This is a historical call and must not appear as an open opportunity."
     },
     {
       "code": "AFRICA",
@@ -249,8 +257,8 @@
       "summary": "AfDB-approved technical support project for Nigeria's horticulture supply chain and smallholder farmers. This is project/investment intelligence, not a public grant application.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://mapafrica.afdb.org/en/projects/46002-P-NG-AA0-049",
       "tags": [
         "Nigeria",
         "horticulture",
@@ -270,8 +278,8 @@
       "summary": "AfDB-approved technical assistance supporting green-growth finance for Nigerian SMEs. This is investment/finance intelligence; eligibility and access depend on the implementing institution.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://mapafrica.afdb.org/en/",
+      "verified": "2026-10-13",
+      "url": "https://mapafrica.afdb.org/en/projects/46002-P-NG-HA0-016",
       "tags": [
         "Nigeria",
         "SMEs",
@@ -285,20 +293,22 @@
       "title": "AfDB Trade Finance Facility for SMEs and Other Businesses in Benin",
       "category": "finance",
       "type": "Trade finance facility",
-      "status": "active",
+      "status": "review",
       "published": "2026-07-17",
       "end_date": "2035-01-19",
       "summary": "AfDB-approved trade-finance facility supporting SMEs and businesses in Benin. This is finance-programme intelligence rather than a direct individual grant.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://mapafrica.afdb.org/en/",
       "tags": [
         "Benin",
         "trade finance",
         "SMEs",
         "agribusiness"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
     },
     {
       "code": "ET",
@@ -312,8 +322,8 @@
       "summary": "AfDB-approved programme linking distributed renewable energy modalities with agricultural development in Ethiopia.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://mapafrica.afdb.org/en/",
+      "verified": "2026-10-13",
+      "url": "https://mapafrica.afdb.org/en/projects/46002-P-ET-FF0-005",
       "tags": [
         "Ethiopia",
         "renewable energy",
@@ -327,20 +337,22 @@
       "title": "AfDB Regional Program for Rice Development in West Africa (REWARD) — G2",
       "category": "investment",
       "type": "Regional rice programme",
-      "status": "active",
+      "status": "review",
       "published": "2026-05-26",
       "end_date": "2028-01-19",
       "summary": "AfDB-approved regional rice-development programme supporting rice value-chain investment in West Africa.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-13",
       "url": "https://new-mapafrica.afdb.org/en/sectors/A",
       "tags": [
         "West Africa",
         "rice",
         "REWARD",
         "value chain"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
     },
     {
       "code": "MG",
@@ -348,20 +360,22 @@
       "title": "AfDB Lower Mangoky Irrigation Area Extension Project — Phase II",
       "category": "investment",
       "type": "Irrigation project",
-      "status": "active",
+      "status": "review",
       "published": "2026-03-11",
       "end_date": "2030-12-31",
       "summary": "AfDB-approved irrigation investment for the Lower Mangoky area, strengthening agricultural water infrastructure and productive capacity.",
       "source": "African Development Bank MapAfrica",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "url": "https://new-mapafrica.afdb.org/en/sectors/A",
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-mg-a00-013",
       "tags": [
         "Madagascar",
         "irrigation",
         "water",
         "agriculture"
-      ]
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Direct AfDB project page for P-MG-A00-013 found. Keep in review until the project phase, country assignment, current implementation status and end date are checked against the official record."
     },
     {
       "code": "AFRICA",
@@ -446,6 +460,117 @@
         "markets",
         "finance"
       ]
+    },
+    {
+      "code": "MU",
+      "country": "Mauritius",
+      "title": "Mauritius 2026–2027 fruit-protection financial assistance scheme",
+      "category": "grants",
+      "type": "Time-limited financial assistance scheme",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "published": "2026-10-01",
+      "deadline": "2026-11-06",
+      "eligibility": "Orchard owners and members of the public seeking fruit-protection nets, subject to the Ministry’s stated conditions. The communiqué describes a 50% subsidy for up to five backyard fruit trees or 60 trees in orchards; applicants should confirm eligibility and remaining availability with FAREI.",
+      "summary": "The Ministry announced a financial assistance scheme for fruit-protection nets valid from 1 October through 6 November 2026. This is a time-limited subsidy notice, not a general agricultural loan or an unrestricted grant.",
+      "source": "Mauritius Ministry of Agro-Industry, Food Security, Blue Economy and Fisheries",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "url": "https://agriculture.govmu.org/Communique/2026/October/Communique_amended.docx%2002.10.26.pdf",
+      "review_reason": "Direct ministry communiqué checked. Confirm the live application process and remaining allocation before approving this time-limited opportunity."
+    },
+    {
+      "code": "MA",
+      "country": "Morocco",
+      "title": "IFAD Integrated Rural Development Project in the Province of Khenifra",
+      "category": "investment",
+      "type": "Rural development project",
+      "status": "review",
+      "published": "2026-09-15",
+      "summary": "IFAD-approved rural development investment for Morocco's Khenifra province. The official project page lists a total project cost of US$87.96 million and IFAD financing of US$65.64 million; detailed eligibility and implementation information require editorial review.",
+      "source": "International Fund for Agricultural Development (IFAD)",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "url": "https://www.ifad.org/en/w/projects/2000004992",
+      "tags": [
+        "Morocco",
+        "Khenifra",
+        "rural development",
+        "agriculture",
+        "IFAD"
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Direct official IFAD project page found. Verify current implementation status, beneficiary eligibility and whether this is an active farmer-facing opportunity before publication."
+    },
+    {
+      "code": "CF",
+      "country": "Central African Republic",
+      "title": "IFAD Climate Resilient Agribusiness Promotion Programme",
+      "category": "investment",
+      "type": "Climate-resilient agribusiness programme",
+      "status": "review",
+      "published": "2025-12-09",
+      "summary": "IFAD's Climate Resilient Agribusiness Promotion Programme in the Central African Republic has a stated total project cost of US$40 million. Current participation routes and beneficiary eligibility must be confirmed from official project documents.",
+      "source": "International Fund for Agricultural Development (IFAD)",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "url": "https://www.ifad.org/en/w/projects/2000004962",
+      "tags": [
+        "Central African Republic",
+        "agribusiness",
+        "climate resilience",
+        "IFAD"
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Direct official IFAD project page found. Verify implementation status, available participation routes and eligibility before presenting it as an open opportunity."
+    },
+    {
+      "code": "CV",
+      "country": "Cabo Verde",
+      "title": "IFAD PRO-AGUA: Sustainable and Inclusive Access to Water for Resilient Agriculture",
+      "category": "investment",
+      "type": "Agricultural water and resilience programme",
+      "status": "review",
+      "published": "2026-09-10",
+      "summary": "IFAD's PRO-AGUA programme supports sustainable and inclusive access to water for resilient agriculture in Cabo Verde. The official project page lists total project cost of US$27.79 million; any farmer-facing application or benefit eligibility must be confirmed.",
+      "source": "International Fund for Agricultural Development (IFAD)",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "url": "https://www.ifad.org/en/w/projects/2000001812",
+      "tags": [
+        "Cabo Verde",
+        "PRO-AGUA",
+        "water",
+        "irrigation",
+        "climate resilience",
+        "IFAD"
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Direct official IFAD project page found. Verify implementation status and whether any farmer-facing benefits or applications are currently available before publication."
+    },
+    {
+      "code": "BJ",
+      "country": "Benin",
+      "title": "AfDB PROMAC: Sustainable Aquaculture and Fisheries Value-Chain Project",
+      "category": "investment",
+      "type": "Aquaculture and fisheries development project",
+      "status": "review",
+      "published": "2026-10-06",
+      "summary": "The African Development Bank's PROMAC project supports sustainable aquaculture, fisheries governance and stronger fisheries value chains in Benin. The project page includes recent implementation and procurement documents; current participation routes and beneficiary eligibility need confirmation.",
+      "source": "African Development Bank Group",
+      "source_tier": 1,
+      "verified": "2026-10-13",
+      "url": "https://www.afdb.org/en/projects-and-operations/p-bj-aaf-003",
+      "tags": [
+        "Benin",
+        "PROMAC",
+        "aquaculture",
+        "fisheries",
+        "value chains",
+        "AfDB"
+      ],
+      "lifecycle": "needs_review",
+      "review_reason": "Direct official project page found. Verify the current implementation phase, whether any farmer-facing benefits are available and which documents should be linked before publication."
     }
   ]
 }

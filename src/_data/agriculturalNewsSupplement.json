@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-16",
   "records": [
     {
       "country_code": "BF",
@@ -12,7 +12,26 @@
       "source_tier": 1,
       "published": "2026-03-10",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Banque mondiale approuve un projet de transformation agricole de 215,9 millions de dollars au Burkina Faso",
+          "summary": "Le projet soutient la productivité agricole, les chaînes de valeur, la transformation, l’accès aux marchés et l’investissement privé au Burkina Faso."
+        },
+        "ar": {
+          "title": "البنك الدولي يوافق على مشروع للتحول الزراعي في بوركينا فاسو بقيمة 215.9 مليون دولار",
+          "summary": "يدعم المشروع الإنتاجية الزراعية وسلاسل القيمة والتصنيع والوصول إلى الأسواق والاستثمار الخاص في بوركينا فاسو."
+        },
+        "pt": {
+          "title": "Banco Mundial aprova projeto de transformação agrícola de 215,9 milhões de dólares no Burkina Faso",
+          "summary": "O projeto apoia a produtividade agrícola, as cadeias de valor, o processamento, o acesso aos mercados e o investimento privado no Burkina Faso."
+        },
+        "sw": {
+          "title": "Benki ya Dunia yaidhinisha mradi wa mageuzi ya kilimo wa dola milioni 215.9 nchini Burkina Faso",
+          "summary": "Mradi unaunga mkono tija ya kilimo, minyororo ya thamani, uchakataji, upatikanaji wa masoko na uwekezaji binafsi nchini Burkina Faso."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "SL",
@@ -24,7 +43,26 @@
       "source_tier": 1,
       "published": "2026-06-18",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Banque mondiale approuve un programme SAVIG de 40 millions de dollars en Sierra Leone",
+          "summary": "Le programme SAVIG soutient l’intensification durable des chaînes de valeur agricoles, l’amélioration de la productivité, l’investissement privé et la création d’emplois."
+        },
+        "ar": {
+          "title": "البنك الدولي يوافق على برنامج SAVIG بقيمة 40 مليون دولار في سيراليون",
+          "summary": "يدعم برنامج SAVIG التكثيف المستدام لسلاسل القيمة الزراعية، وزيادة الإنتاجية، والاستثمار الخاص، وخلق فرص العمل."
+        },
+        "pt": {
+          "title": "Banco Mundial aprova programa SAVIG de 40 milhões de dólares na Serra Leoa",
+          "summary": "O programa SAVIG apoia a intensificação sustentável das cadeias de valor agrícolas, o aumento da produtividade, o investimento privado e a criação de emprego."
+        },
+        "sw": {
+          "title": "Benki ya Dunia yaidhinisha mpango wa SAVIG wa dola milioni 40 nchini Sierra Leone",
+          "summary": "Mpango wa SAVIG unaunga mkono kuongeza tija kwa njia endelevu katika minyororo ya thamani ya kilimo, uwekezaji binafsi na uundaji wa ajira."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "NG",
@@ -36,7 +74,26 @@
       "source_tier": 1,
       "published": "2026-04-09",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO met en avant le plan nigérian d’investissement agroalimentaire NASIP de 6 500 milliards de nairas",
+          "summary": "La FAO indique que l’analyse du programme MAFAP a contribué à orienter plus d’un tiers du plan d’investissement agroalimentaire 2026–2027 du Nigeria grâce à l’optimisation des dépenses publiques et des politiques fondée sur des données probantes."
+        },
+        "ar": {
+          "title": "الفاو تسلط الضوء على خطة نيجيريا للاستثمار الزراعي والغذائي NASIP بقيمة 6.5 تريليون نايرا",
+          "summary": "تفيد الفاو بأن تحليل برنامج MAFAP ساعد في توجيه أكثر من ثلث خطة الاستثمار الزراعي والغذائي لنيجيريا للفترة 2026–2027 من خلال تحسين الإنفاق العام والسياسات استناداً إلى الأدلة."
+        },
+        "pt": {
+          "title": "FAO destaca o plano nigeriano de investimento agroalimentar NASIP de 6,5 biliões de nairas",
+          "summary": "A FAO informa que a análise do programa MAFAP ajudou a orientar mais de um terço do plano de investimento agroalimentar da Nigéria para 2026–2027, através da otimização das despesas públicas e das políticas com base em evidências."
+        },
+        "sw": {
+          "title": "FAO yaangazia mpango wa uwekezaji wa kilimo na chakula wa Nigeria wa NASIP wa naira trilioni 6.5",
+          "summary": "FAO inaripoti kuwa uchambuzi wa mpango wa MAFAP ulisaidia kuelekeza zaidi ya theluthi moja ya mpango wa uwekezaji wa kilimo na chakula wa Nigeria wa 2026–2027 kupitia kuboresha matumizi ya umma na sera kwa kutumia ushahidi."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "ET",
@@ -48,7 +105,10 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an event page rather than a published news article; move it to Events/Opportunities or hold pending reclassification."
     },
     {
       "country_code": "KE",
@@ -60,7 +120,10 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an event page rather than a published news article; move it to Events/Opportunities or hold pending reclassification."
     },
     {
       "country_code": "UG",
@@ -72,7 +135,10 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an event page rather than a published news article; move it to Events/Opportunities or hold pending reclassification."
     },
     {
       "country_code": "ML",
@@ -84,7 +150,9 @@
       "source_tier": 1,
       "published": "2026-09-28",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "This IITA article covers the same September 2026 Mali climate-smart agriculture study already represented by the canonical IITA story in agriculturalNews.json; keep one public card unless an editor confirms distinct findings."
     },
     {
       "country_code": "RW",
@@ -96,7 +164,8 @@
       "source_tier": 1,
       "published": "2026-09-14",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "needs_review",
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -108,31 +177,26 @@
       "source_tier": 1,
       "published": "2026-05-28",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "AO",
-      "category": "finance",
-      "title": "Angola launches AgriConnect Compact for food security, jobs and agricultural growth",
-      "summary": "Angola's AgriConnect Compact brings government, private sector, financial institutions and farmer organizations together around agricultural value-chain investment and reform.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/06/24/angola-s-agriconnect-compact-targets-food-security-jobs-and-agricultural-growth",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-06-24",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ZW",
-      "category": "finance",
-      "title": "Zimbabwe takes US$1.65 billion agrifood investment portfolio to FAO forum",
-      "summary": "Zimbabwe will present investment cases covering maize, soyabean, blueberries, dairy and the Dam as an Economic driver at the 2026 Hand-in-Hand Investment Forum.",
-      "url": "https://www.fao.org/zimbabwe/news/detail/zimbabwe-takes-investment-opportunities-to-fao-s-hand-in-hand-investment-forum-2026/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-09-18",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La Banque mondiale approuve un projet de 500 millions de dollars pour l’accès aux marchés et la connectivité au Ghana",
+          "summary": "Le projet améliorera la connectivité routière rurale, renforcera les chaînes de valeur agricoles et aidera les agriculteurs à accéder plus efficacement à des marchés plus vastes."
+        },
+        "ar": {
+          "title": "البنك الدولي يوافق على مشروع بقيمة 500 مليون دولار لتحسين الوصول إلى الأسواق والربط في غانا",
+          "summary": "سيحسن المشروع الاتصال بالطرق الريفية، ويعزز سلاسل القيمة الزراعية، ويساعد المزارعين على الوصول إلى أسواق أوسع بكفاءة أكبر."
+        },
+        "pt": {
+          "title": "Banco Mundial aprova projeto de 500 milhões de dólares para acesso aos mercados e conectividade no Gana",
+          "summary": "O projeto melhorará a conectividade rodoviária rural, reforçará as cadeias de valor agrícolas e ajudará os agricultores a chegar a mercados maiores com mais eficiência."
+        },
+        "sw": {
+          "title": "Benki ya Dunia yaidhinisha mradi wa dola milioni 500 wa upatikanaji wa masoko na muunganisho Ghana",
+          "summary": "Mradi utaboresha miunganisho ya barabara za vijijini, kuimarisha minyororo ya thamani ya kilimo na kuwasaidia wakulima kufikia masoko makubwa kwa ufanisi zaidi."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GN",
@@ -144,19 +208,8 @@
       "source_tier": 1,
       "published": "2026-06-23",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "NG",
-      "category": "finance",
-      "title": "World Bank approves US$500 million Nigeria AGROW project",
-      "summary": "AGROW targets smallholder productivity and value chains including rice, maize, cassava and soybeans, with matching grants, market access, research, extension and digital advisory services.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/03/31/nigeria-world-bank-approves-project-to-expand-agricultural-value-chains-and-jobs",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-03-31",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "needs_review",
+      "translation_status": "in_review"
     },
     {
       "country_code": "SN",
@@ -168,7 +221,10 @@
       "source_tier": 1,
       "published": "2026-06-23",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "GM",
@@ -180,7 +236,10 @@
       "source_tier": 1,
       "published": "2026-06-23",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "GN",
@@ -192,91 +251,10 @@
       "source_tier": 1,
       "published": "2026-06-23",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ET",
-      "category": "weather-climate",
-      "title": "AICCRA–FSRP4 expands climate-smart agriculture innovation in Ethiopia",
-      "summary": "A new regional initiative is scaling climate-smart technologies and climate information services, with Ethiopia among the participating countries.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-03-26",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "GH",
-      "category": "weather-climate",
-      "title": "AICCRA–FSRP4 expands climate-smart agriculture innovation in Ghana",
-      "summary": "The initiative is designed to connect agricultural research with farmers by expanding climate-smart technologies and climate information services in Ghana.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-03-26",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "KE",
-      "category": "weather-climate",
-      "title": "AICCRA–FSRP4 expands climate-smart agriculture innovation in Kenya",
-      "summary": "Kenya is among the countries covered by the regional initiative scaling climate-smart agricultural innovations and climate information services.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-03-26",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ML",
-      "category": "weather-climate",
-      "title": "AICCRA–FSRP4 expands climate-smart agriculture innovation in Mali",
-      "summary": "The initiative includes Mali in efforts to bridge agricultural research and farmer adoption through climate-smart technologies and climate information services.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-03-26",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "SN",
-      "category": "weather-climate",
-      "title": "AICCRA–FSRP4 expands climate-smart agriculture innovation in Senegal",
-      "summary": "Senegal is included in a regional effort to scale climate-smart agricultural innovations and climate information services and connect research with farmers.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-03-26",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ZM",
-      "category": "weather-climate",
-      "title": "AICCRA–FSRP4 expands climate-smart agriculture innovation in Zambia",
-      "summary": "Zambia is included in the regional initiative scaling climate-smart agricultural technologies and climate information services for farmers and food-system actors.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/03/26/scaling-innovation-to-boost-food-systems-and-support-job-creation",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-03-26",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "SN",
-      "category": "finance",
-      "title": "Senegal AgriConnect Compact",
-      "summary": "Senegal's national AgriConnect Compact targets grains, horticulture and livestock while mobilizing public and private investment in agricultural infrastructure, services and value chains.",
-      "url": "https://www.worldbank.org/en/news/press-release/2026/02/10/senegal-launches-agriconnect-compact-to-transform-its-agriculture-sector",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-02-10",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "Regional or multi-country story: verify relevance and move to a regional news view, or replace with a direct country-specific story before publication."
     },
     {
       "country_code": "CI",
@@ -288,7 +266,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "The source page dates to 2025, but the record was assigned a 2026 publication date; hold until the date and classification are corrected."
     },
     {
       "country_code": "BJ",
@@ -300,7 +281,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "The source page dates to 2025, but the record was assigned a 2026 publication date; hold until the date and classification are corrected."
     },
     {
       "country_code": "CM",
@@ -312,31 +296,10 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "SN",
-      "category": "markets",
-      "title": "Senegal agricultural warehouse receipt and market infrastructure",
-      "summary": "Senegal strengthened its Warehouse Receipt System and approved 100 warehouses, alongside measures improving agricultural market access and climate-risk management.",
-      "url": "https://www.worldbank.org/en/results/2026/06/23/agricultural-transformation-improve-food-security-create-jobs-west-africa",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-10-07",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "GM",
-      "category": "grants-programmes",
-      "title": "The Gambia agricultural matching-grant programme",
-      "summary": "The Gambia's matching-grant programme has supported agribusinesses, farmers' organizations and SMEs while mobilizing private investment and creating jobs.",
-      "url": "https://www.worldbank.org/en/results/2026/06/23/agricultural-transformation-improve-food-security-create-jobs-west-africa",
-      "source": "World Bank",
-      "source_tier": 1,
-      "published": "2026-10-07",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "coverage_scope": "regional",
+      "lifecycle": "needs_review",
+      "review_reason": "The source page dates to 2025, but the record was assigned a 2026 publication date; hold until the date and classification are corrected."
     },
     {
       "country_code": "BJ",
@@ -348,79 +311,10 @@
       "source_tier": 1,
       "published": "2026-10-06",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CV",
-      "category": "finance",
-      "title": "Cabo Verde to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Cabo Verde is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CI",
-      "category": "finance",
-      "title": "Côte d'Ivoire to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Côte d'Ivoire is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CD",
-      "category": "finance",
-      "title": "Democratic Republic of the Congo to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Democratic Republic of the Congo is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "DJ",
-      "category": "finance",
-      "title": "Djibouti to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Djibouti is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "SZ",
-      "category": "finance",
-      "title": "Eswatini to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Eswatini is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "LR",
-      "category": "finance",
-      "title": "Liberia to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Liberia is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Duplicate article URL already listed for this country. Keep one canonical story record or provide a distinct direct article URL.",
+      "coverage_scope": "regional"
     },
     {
       "country_code": "MG",
@@ -432,55 +326,10 @@
       "source_tier": 1,
       "published": "2026-10-06",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "MW",
-      "category": "finance",
-      "title": "Malawi to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Malawi is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "MZ",
-      "category": "finance",
-      "title": "Mozambique to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Mozambique is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "RW",
-      "category": "finance",
-      "title": "Rwanda to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Rwanda is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ZM",
-      "category": "finance",
-      "title": "Zambia to present agrifood investment opportunities at FAO Hand-in-Hand Forum",
-      "summary": "FAO announced that Zambia is among the African countries presenting government-led agrifood investment opportunities at the 2026 Hand-in-Hand Investment Forum in Rome.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Duplicate article URL already listed for this country. Keep one canonical story record or provide a distinct direct article URL.",
+      "coverage_scope": "regional"
     },
     {
       "country_code": "ZM",
@@ -492,7 +341,27 @@
       "source_tier": 1,
       "published": "2026-05-08",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Zambia prepares agrifood investment priorities for the 2026 Hand-in-Hand Forum",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La Zambie prépare des priorités d’investissement agroalimentaire pour le forum Hand-in-Hand 2026",
+          "summary": "La FAO indique que la Zambie a affiné des priorités d’investissement bancables dans la viande bovine, les haricots communs, le soja et le miel avant le forum d’investissement Hand-in-Hand 2026."
+        },
+        "ar": {
+          "title": "زامبيا تحدد أولويات استثمار زراعي وغذائي قابلة للتمويل لمنتدى هاند إن هاند 2026",
+          "summary": "تفيد الفاو بأن زامبيا نقحت أولويات استثمار قابلة للتمويل في لحوم الأبقار والفاصوليا الشائعة وفول الصويا والعسل استعداداً لمنتدى الاستثمار هاند إن هاند لعام 2026."
+        },
+        "pt": {
+          "title": "Zâmbia prepara prioridades de investimento agroalimentar para o fórum Hand-in-Hand de 2026",
+          "summary": "A FAO informa que a Zâmbia aperfeiçoou prioridades de investimento financiáveis nos setores da carne bovina, feijão comum, soja e mel antes do Fórum de Investimento Hand-in-Hand de 2026."
+        },
+        "sw": {
+          "title": "Zambia yaandaa vipaumbele vya uwekezaji wa kilimo na chakula kwa kongamano la Hand-in-Hand la 2026",
+          "summary": "FAO inaripoti kuwa Zambia imeboresha vipaumbele vya uwekezaji vinavyoweza kufadhiliwa katika nyama ya ng'ombe, maharagwe, soya na asali kabla ya Jukwaa la Uwekezaji la Hand-in-Hand la 2026."
+        }
+      }
     },
     {
       "country_code": "ZM",
@@ -504,31 +373,11 @@
       "source_tier": 1,
       "published": "2026-09-22",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ZM",
-      "category": "markets",
-      "headline": "Kapenta Day 2026 strengthens partnerships and market opportunities in Zambia's kapenta value chain",
-      "summary": "FAO reports that fishers, processors, traders, cooperatives, finance institutions and other stakeholders met in Mpulungu to strengthen market opportunities for the kapenta value chain.",
-      "url": "https://www.fao.org/zambia/news/newsdetails/en",
-      "source": "FAO in Zambia",
-      "source_tier": 1,
-      "published": "2026-09-25",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "RW",
-      "category": "finance",
-      "headline": "Eastern Africa Hand-in-Hand Investment Forum convenes in Kigali",
-      "summary": "FAO's Eastern Africa forum in Kigali brought governments, investors, financial institutions, agribusinesses and partners together to showcase investment-ready agrifood opportunities and strengthen regional cooperation.",
-      "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
-      "source": "FAO Regional Office for Africa",
-      "source_tier": 1,
-      "published": "2026-08-25",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "FAO and Zambia launch initiative to strengthen sustainable agrifood systems",
+      "translation_status": "in_review"
     },
     {
       "country_code": "ZM",
@@ -540,7 +389,27 @@
       "source_tier": 1,
       "published": "2026-09-25",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Kapenta Day 2026 strengthens partnerships and market opportunities for Zambia’s kapenta value chain",
+      "translations": {
+        "fr": {
+          "title": "La Journée du kapenta 2026 renforce les partenariats et les débouchés pour la filière kapenta en Zambie",
+          "summary": "Plus de 100 pêcheurs, transformateurs, commerçants, coopératives, institutions financières et autres parties prenantes se sont réunis à Mpulungu pour renforcer les partenariats, l’accès aux marchés, la durabilité des pêches et la création de valeur."
+        },
+        "ar": {
+          "title": "يوم كابنتا 2026 يعزز الشراكات وفرص السوق لسلسلة قيمة سمك كابنتا في زامبيا",
+          "summary": "اجتمع أكثر من 100 من الصيادين والمصنّعين والتجار والتعاونيات والمؤسسات المالية وأصحاب المصلحة في مبولونغو لتعزيز الشراكات والوصول إلى الأسواق واستدامة مصايد الأسماك وإضافة القيمة."
+        },
+        "pt": {
+          "title": "Dia do Kapenta 2026 reforça parcerias e oportunidades de mercado para a cadeia de valor do kapenta na Zâmbia",
+          "summary": "Mais de 100 pescadores, processadores, comerciantes, cooperativas, instituições financeiras e outros intervenientes reuniram-se em Mpulungu para reforçar parcerias, acesso aos mercados, sustentabilidade das pescas e criação de valor."
+        },
+        "sw": {
+          "title": "Siku ya Kapenta 2026 yaimarisha ushirikiano na fursa za soko kwa mnyororo wa thamani wa kapenta nchini Zambia",
+          "summary": "Zaidi ya wavuvi, wachakataji, wafanyabiashara, vyama vya ushirika, taasisi za kifedha na wadau wengine 100 walikutana Mpulungu kuimarisha ushirikiano, upatikanaji wa masoko, uvuvi endelevu na uongezaji thamani."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "ZM",
@@ -552,7 +421,27 @@
       "source_tier": 1,
       "published": "2026-09-22",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Zambia and FAO launch initiative to catalyse sustainable food-systems transformation",
+      "translations": {
+        "fr": {
+          "title": "La Zambie et la FAO lancent une initiative pour accélérer la transformation durable des systèmes alimentaires",
+          "summary": "Une nouvelle initiative de deux ans met l’accent sur la sécurité alimentaire, la nutrition, la résilience, les moyens de subsistance durables, l’agriculture climato-intelligente, la sécurité sanitaire des aliments, le développement des marchés et la traçabilité du bétail."
+        },
+        "ar": {
+          "title": "زامبيا والفاو تطلقان مبادرة لدفع التحول المستدام للنظم الغذائية",
+          "summary": "تركز المبادرة الجديدة الممتدة لعامين على الأمن الغذائي والتغذية والقدرة على الصمود وسبل العيش المستدامة والزراعة الذكية مناخياً وسلامة الأغذية وتطوير الأسواق وإمكانية تتبع الماشية."
+        },
+        "pt": {
+          "title": "Zâmbia e FAO lançam iniciativa para impulsionar a transformação sustentável dos sistemas alimentares",
+          "summary": "A nova iniciativa de dois anos centra-se na segurança alimentar, nutrição, resiliência, meios de subsistência sustentáveis, agricultura climaticamente inteligente, segurança dos alimentos, desenvolvimento dos mercados e rastreabilidade do gado."
+        },
+        "sw": {
+          "title": "Zambia na FAO wazindua mpango wa kuharakisha mabadiliko endelevu ya mifumo ya chakula",
+          "summary": "Mpango mpya wa miaka miwili unalenga usalama wa chakula, lishe, ustahimilivu, maisha endelevu, kilimo kinachozingatia tabianchi, usalama wa chakula, maendeleo ya masoko na ufuatiliaji wa mifugo."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "ZM",
@@ -564,7 +453,27 @@
       "source_tier": 1,
       "published": "2026-09-13",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Zambia expands practical agricultural learning for vulnerable farmers through Farmer Field Schools",
+      "translations": {
+        "fr": {
+          "title": "La Zambie élargit l’apprentissage agricole pratique pour les agriculteurs vulnérables grâce aux champs-écoles",
+          "summary": "La FAO et ses partenaires gouvernementaux ont mis en place des activités de champs-écoles dans six districts, avec au moins 90 écoles prévues et une capacité d’accueil pouvant atteindre 2 700 agriculteurs, afin de renforcer les compétences pratiques et la résilience des ménages agricoles vulnérables."
+        },
+        "ar": {
+          "title": "زامبيا توسع التعلم الزراعي العملي للمزارعين الأكثر ضعفاً عبر مدارس المزارعين الحقلية",
+          "summary": "أنشأت الفاو وشركاؤها الحكوميون أنشطة لمدارس المزارعين الحقلية في ست مقاطعات، مع التخطيط لما لا يقل عن 90 مدرسة وقدرة تصل إلى 2700 مزارع، لتعزيز المهارات العملية وقدرة الأسر الزراعية الأكثر ضعفاً على الصمود."
+        },
+        "pt": {
+          "title": "Zâmbia amplia a aprendizagem agrícola prática para agricultores vulneráveis através das Escolas de Campo",
+          "summary": "A FAO e parceiros governamentais estabeleceram atividades de Escolas de Campo para Agricultores em seis distritos, com pelo menos 90 escolas previstas e capacidade para até 2.700 agricultores, reforçando competências práticas e a resiliência dos agregados familiares agrícolas vulneráveis."
+        },
+        "sw": {
+          "title": "Zambia yaongeza mafunzo ya vitendo ya kilimo kwa wakulima walio hatarini kupitia Shule za Wakulima",
+          "summary": "FAO na washirika wa serikali walianzisha shughuli za Shule za Wakulima katika wilaya sita, huku shule zisizopungua 90 zikipangwa na uwezo wa kufikia wakulima 2,700, ili kuimarisha ujuzi wa vitendo na ustahimilivu wa kaya za wakulima walio hatarini."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "ZM",
@@ -576,7 +485,27 @@
       "source_tier": 1,
       "published": "2026-07-20",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Zambia advances plant-health rules and digital agricultural information systems",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La Zambie fait progresser la réglementation phytosanitaire et les systèmes numériques d’information agricole",
+          "summary": "Des ateliers techniques soutenus par la FAO ont fait avancer la réglementation phytosanitaire et l’évaluation du Système intégré d’information sur la gestion agricole de la Zambie, en mettant l’accent sur des données fiables et la prise de décision numérique."
+        },
+        "ar": {
+          "title": "زامبيا تطور لوائح صحة النبات ونظم المعلومات الزراعية الرقمية",
+          "summary": "دفعت ورش تقنية بدعم من الفاو لوائح صحة النبات وتقييم نظام زامبيا المتكامل لمعلومات الإدارة الزراعية إلى الأمام، مع التركيز على موثوقية البيانات واتخاذ القرارات الرقمية."
+        },
+        "pt": {
+          "title": "Zâmbia avança nas regras fitossanitárias e nos sistemas digitais de informação agrícola",
+          "summary": "Oficinas técnicas apoiadas pela FAO promoveram avanços nas regras fitossanitárias e na avaliação do Sistema Integrado de Informação de Gestão Agrícola da Zâmbia, com ênfase em dados fiáveis e decisões digitais."
+        },
+        "sw": {
+          "title": "Zambia yapiga hatua katika kanuni za afya ya mimea na mifumo ya kidijitali ya taarifa za kilimo",
+          "summary": "Warsha za kiufundi zilizoungwa mkono na FAO ziliendeleza kanuni za afya ya mimea na tathmini ya Mfumo Jumuishi wa Taarifa za Usimamizi wa Kilimo wa Zambia, zikisisitiza data za kuaminika na maamuzi ya kidijitali."
+        }
+      }
     },
     {
       "country_code": "ZM",
@@ -588,19 +517,27 @@
       "source_tier": 1,
       "published": "2026-05-26",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ZM",
-      "category": "weather-climate",
-      "headline": "Zambia strengthens agricultural weather knowledge through extension officer training",
-      "summary": "FAO-supported training in Southern Zambia is helping extension officers turn weather and climate information into practical guidance for farmers.",
-      "url": "https://www.fao.org/zambia/news/newsdetails/en",
-      "source": "FAO in Zambia",
-      "source_tier": 1,
-      "published": "2026-06-23",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO opens second call for Zambia SIFAZ matching grants",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La FAO ouvre le deuxième appel à subventions de contrepartie du SIFAZ en Zambie",
+          "summary": "Le mécanisme de subventions de contrepartie SIFAZ soutient les agriculteurs, coopératives et entreprises agroalimentaires éligibles en mécanisation, intrants, commercialisation, regroupement des produits et entreprises vertes. L’appel 2026 proposait des subventions de 400 à 60 000 euros."
+        },
+        "ar": {
+          "title": "الفاو تفتح الجولة الثانية لمنح المطابقة ضمن مرفق SIFAZ في زامبيا",
+          "summary": "يدعم مرفق منح المطابقة SIFAZ المزارعين والتعاونيات والشركات الزراعية المؤهلة في الميكنة وشراء المدخلات والتسويق وتجميع السلع والمشاريع الخضراء. وقدم نداء 2026 منحاً تتراوح بين 400 و60 ألف يورو."
+        },
+        "pt": {
+          "title": "FAO abre segunda chamada de subvenções de contrapartida do SIFAZ na Zâmbia",
+          "summary": "O mecanismo de subvenções de contrapartida SIFAZ apoia agricultores, cooperativas e empresas agroalimentares elegíveis em mecanização, aquisição de insumos, comercialização, agregação de produtos e negócios verdes. A chamada de 2026 ofereceu subvenções entre 400 e 60 mil euros."
+        },
+        "sw": {
+          "title": "FAO yafungua awamu ya pili ya ruzuku linganishi za SIFAZ nchini Zambia",
+          "summary": "Mfuko wa ruzuku linganishi wa SIFAZ unasaidia wakulima, vyama vya ushirika na biashara za kilimo zinazostahiki katika mitambo, ununuzi wa pembejeo, masoko, ukusanyaji wa bidhaa na biashara za kijani. Wito wa 2026 ulitoa ruzuku ya euro 400 hadi 60,000."
+        }
+      }
     },
     {
       "country_code": "AO",
@@ -612,7 +549,11 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "Angola: community reservoirs and renewable-energy irrigation investment opportunities",
+      "translation_status": "in_review"
     },
     {
       "country_code": "MZ",
@@ -624,7 +565,11 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "Mozambique: irrigation, rice and agroprocessing investment opportunities",
+      "translation_status": "in_review"
     },
     {
       "country_code": "MW",
@@ -636,7 +581,11 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "Malawi: community reservoirs, irrigation and rice value-chain investment opportunities",
+      "translation_status": "in_review"
     },
     {
       "country_code": "ZM",
@@ -648,7 +597,11 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "Zambia: mechanization hire-service hubs and agricultural machinery access",
+      "translation_status": "in_review"
     },
     {
       "country_code": "ZW",
@@ -660,7 +613,11 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "Zimbabwe: mechanization services, wheat and soybean agroprocessing investment opportunities",
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -672,7 +629,26 @@
       "source_tier": 1,
       "published": "2026-10-06",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO transforme les données pédologiques du Ghana en conseils pratiques pour la gestion des exploitations",
+          "summary": "La FAO et l’Institut de recherche sur les sols du CSIR aident les agriculteurs de la région de l’Upper West à convertir les évaluations des sols en décisions pratiques de gestion durable dans le cadre de RECSOIL."
+        },
+        "ar": {
+          "title": "الفاو تحوّل بيانات التربة في غانا إلى إجراءات عملية لإدارة المزارع",
+          "summary": "تساعد الفاو ومعهد أبحاث التربة التابع لمجلس البحوث العلمية والصناعية المزارعين في إقليم أبر ويست على تحويل تقييمات التربة إلى قرارات عملية للإدارة المستدامة ضمن مبادرة RECSOIL."
+        },
+        "pt": {
+          "title": "FAO transforma dados sobre os solos do Gana em ações práticas de gestão agrícola",
+          "summary": "A FAO e o Instituto de Investigação dos Solos do CSIR estão a ajudar agricultores da Região do Alto Oeste a converter avaliações dos solos em decisões práticas de gestão sustentável no âmbito da iniciativa RECSOIL."
+        },
+        "sw": {
+          "title": "FAO yageuza data za udongo nchini Ghana kuwa hatua za vitendo za usimamizi wa mashamba",
+          "summary": "FAO na Taasisi ya Utafiti wa Udongo ya CSIR zinawasaidia wakulima katika Mkoa wa Upper West kubadilisha tathmini za udongo kuwa maamuzi ya vitendo ya usimamizi endelevu kupitia mpango wa RECSOIL."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -684,7 +660,26 @@
       "source_tier": 1,
       "published": "2026-08-21",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO forme des agents de vulgarisation pour des cultures de soja intelligentes face au climat dans le nord du Ghana",
+          "summary": "Cinquante agents de vulgarisation agricole ont été formés pour établir 100 parcelles de démonstration et accompagner environ 10 000 petits producteurs de soja dans six districts."
+        },
+        "ar": {
+          "title": "الفاو تدرب مرشدي الإرشاد الزراعي على مزارع فول الصويا الذكية مناخياً في شمال غانا",
+          "summary": "تلقى 50 من وكلاء الإرشاد الزراعي تدريباً لإنشاء 100 مزرعة إيضاحية ودعم نحو 10 آلاف من صغار مزارعي فول الصويا في ست مقاطعات."
+        },
+        "pt": {
+          "title": "FAO forma agentes de extensão para explorações de soja climaticamente inteligentes no norte do Gana",
+          "summary": "Cinquenta agentes de extensão agrícola receberam formação para criar 100 campos de demonstração e apoiar cerca de 10 mil pequenos produtores de soja em seis distritos."
+        },
+        "sw": {
+          "title": "FAO yawafunza maafisa ugani kuhusu mashamba ya soya yanayozingatia tabianchi kaskazini mwa Ghana",
+          "summary": "Maafisa ugani wa kilimo 50 walipata mafunzo ya kuanzisha mashamba 100 ya maonesho na kusaidia takriban wakulima wadogo 10,000 wa soya katika wilaya sita."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -696,7 +691,26 @@
       "source_tier": 1,
       "published": "2026-04-24",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO et l’Union européenne soutiennent le programme Feed Ghana avec 150 000 volailles",
+          "summary": "La FAO et l’Union européenne ont fourni des volailles, des aliments et une formation aux agriculteurs du nord du Ghana afin d’accroître la production locale et de réduire la dépendance aux importations."
+        },
+        "ar": {
+          "title": "الفاو والاتحاد الأوروبي يدعمان برنامج Feed Ghana بتوفير 150 ألف طائر دواجن",
+          "summary": "قدمت الفاو والاتحاد الأوروبي طيور دواجن وأعلافاً وتدريباً للمزارعين في شمال غانا ضمن جهود زيادة الإنتاج المحلي وتقليل الاعتماد على الواردات."
+        },
+        "pt": {
+          "title": "FAO e União Europeia apoiam o programa Feed Ghana com 150 mil aves",
+          "summary": "A FAO e a União Europeia forneceram aves, ração e formação a agricultores do norte do Gana para aumentar a produção local e reduzir a dependência das importações."
+        },
+        "sw": {
+          "title": "FAO na Umoja wa Ulaya zaunga mkono mpango wa Feed Ghana kwa kuku 150,000",
+          "summary": "FAO na Umoja wa Ulaya walitoa kuku, chakula cha kuku na mafunzo kwa wakulima kaskazini mwa Ghana ili kuongeza uzalishaji wa ndani na kupunguza utegemezi wa bidhaa zinazoagizwa."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -708,7 +722,26 @@
       "source_tier": 1,
       "published": "2026-04-28",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO et le Ghana renforcent la lutte durable contre la chenille légionnaire d’automne",
+          "summary": "L’appui de la FAO renforce la lutte intégrée contre les ravageurs, la formation des agriculteurs, les essais de démonstration et les capacités de lutte biologique contre la chenille légionnaire d’automne au Ghana."
+        },
+        "ar": {
+          "title": "الفاو وغانا تعززان الإدارة المستدامة لدودة الحشد الخريفية",
+          "summary": "يعزز دعم الفاو الإدارة المتكاملة للآفات وتدريب المزارعين والتجارب الإيضاحية والقدرات الخاصة بالمكافحة الحيوية لدودة الحشد الخريفية في غانا."
+        },
+        "pt": {
+          "title": "FAO e Gana reforçam a gestão sustentável da lagarta-do-cartucho",
+          "summary": "O apoio da FAO reforça a gestão integrada de pragas, a formação de agricultores, os ensaios demonstrativos e a capacidade de controlo biológico da lagarta-do-cartucho no Gana."
+        },
+        "sw": {
+          "title": "FAO na Ghana zaimarisha udhibiti endelevu wa funza jeshi vamizi",
+          "summary": "Msaada wa FAO unaimarisha udhibiti jumuishi wa wadudu, mafunzo kwa wakulima, majaribio ya maonesho na uwezo wa udhibiti wa kibayolojia wa funza jeshi vamizi nchini Ghana."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -720,7 +753,26 @@
       "source_tier": 1,
       "published": "2026-05-22",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO renforce les capacités des laboratoires des sols au Ghana grâce à la formation SoilFER",
+          "summary": "Trente-huit techniciens et experts de laboratoire ont été formés à des méthodes harmonisées d’analyse des sols afin de produire des données fiables pour une agriculture durable."
+        },
+        "ar": {
+          "title": "الفاو تعزز قدرات مختبرات التربة في غانا من خلال تدريب SoilFER",
+          "summary": "تلقى 38 فنياً وخبيراً مختبرياً تدريباً على أساليب موحدة لتحليل التربة بهدف تعزيز إنتاج بيانات موثوقة تدعم الزراعة المستدامة."
+        },
+        "pt": {
+          "title": "FAO reforça a capacidade dos laboratórios de solos do Gana através da formação SoilFER",
+          "summary": "Trinta e oito técnicos e especialistas de laboratório receberam formação em métodos harmonizados de análise do solo para gerar dados fiáveis destinados à agricultura sustentável."
+        },
+        "sw": {
+          "title": "FAO yaimarisha uwezo wa maabara za udongo Ghana kupitia mafunzo ya SoilFER",
+          "summary": "Mafundi na wataalamu 38 wa maabara walipata mafunzo kuhusu mbinu zilizolinganishwa za uchambuzi wa udongo ili kuboresha uzalishaji wa data za kuaminika kwa kilimo endelevu."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -732,7 +784,26 @@
       "source_tier": 1,
       "published": "2026-04-20",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "La FAO fait progresser l’observation de la Terre et les registres agricoles pour le suivi des cultures en Afrique",
+          "summary": "Une formation ESTELLA à Accra renforce les compétences en observation de la Terre, en registres d’agriculteurs et en validation des données sur les cultures pour améliorer l’alerte précoce et la gestion des risques climatiques."
+        },
+        "ar": {
+          "title": "الفاو تطور رصد الأرض وسجلات المزارعين لمراقبة المحاصيل في أفريقيا",
+          "summary": "يعزز تدريب ESTELLA في أكرا القدرات الفنية في رصد الأرض وسجلات المزارعين والتحقق من بيانات المحاصيل لدعم الإنذار المبكر وإدارة مخاطر المناخ."
+        },
+        "pt": {
+          "title": "FAO promove observação da Terra e registos de agricultores para monitorizar culturas em África",
+          "summary": "Uma formação ESTELLA em Acra reforça as competências em observação da Terra, registos de agricultores e validação de dados agrícolas para apoiar o alerta precoce e a gestão dos riscos climáticos."
+        },
+        "sw": {
+          "title": "FAO yaendeleza uangalizi wa Dunia na rejesta za wakulima kwa ufuatiliaji wa mazao Afrika",
+          "summary": "Mafunzo ya ESTELLA mjini Accra yanaimarisha ujuzi wa uangalizi wa Dunia, rejesta za wakulima na uthibitishaji wa data za mazao ili kusaidia tahadhari za mapema na usimamizi wa hatari za tabianchi."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -744,7 +815,26 @@
       "source_tier": 1,
       "published": "2026-04-01",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Le Ghana Cocoa Monitor lance un comité directeur pour renforcer la coordination de la filière cacao",
+          "summary": "Le Ghana Cocoa Monitor réunit les parties prenantes autour du partage des données, de la transparence, de la durabilité et d’actions fondées sur des données probantes dans la chaîne de valeur du cacao au Ghana."
+        },
+        "ar": {
+          "title": "مرصد الكاكاو في غانا يطلق لجنة توجيهية لتعزيز التنسيق في قطاع الكاكاو",
+          "summary": "يجمع مرصد الكاكاو في غانا أصحاب المصلحة حول تبادل البيانات والشفافية والاستدامة والعمل المستند إلى الأدلة في سلسلة قيمة الكاكاو في البلاد."
+        },
+        "pt": {
+          "title": "Ghana Cocoa Monitor cria comité diretor para reforçar a coordenação do setor do cacau",
+          "summary": "O Ghana Cocoa Monitor reúne as partes interessadas em torno da partilha de dados, transparência, sustentabilidade e ação baseada em evidências na cadeia de valor do cacau do Gana."
+        },
+        "sw": {
+          "title": "Ghana Cocoa Monitor yazindua kamati elekezi kuimarisha uratibu wa sekta ya kakao",
+          "summary": "Ghana Cocoa Monitor inawaleta wadau pamoja kuhusu kushiriki data, uwazi, uendelevu na hatua zinazotegemea ushahidi katika mnyororo wa thamani wa kakao nchini Ghana."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -756,7 +846,26 @@
       "source_tier": 1,
       "published": "2026-04-20",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Une stratégie régionale vise la maladie du swollen shoot du cacaoyer en Afrique de l’Ouest",
+          "summary": "Une stratégie régionale sur cinq ans met l’accent sur la réhabilitation des exploitations, la surveillance, la recherche et la collaboration afin de protéger la production de cacao et les moyens de subsistance ruraux."
+        },
+        "ar": {
+          "title": "استراتيجية إقليمية تستهدف مرض انتفاخ براعم الكاكاو في غرب أفريقيا",
+          "summary": "تركز استراتيجية إقليمية مدتها خمس سنوات على إعادة تأهيل المزارع والرصد والبحث والتعاون لحماية إنتاج الكاكاو وسبل العيش الريفية."
+        },
+        "pt": {
+          "title": "Estratégia regional visa a doença do swollen shoot do cacaueiro na África Ocidental",
+          "summary": "Uma estratégia regional de cinco anos dá prioridade à reabilitação das explorações, monitorização, investigação e colaboração para proteger a produção de cacau e os meios de subsistência rurais."
+        },
+        "sw": {
+          "title": "Mkakati wa kikanda unalenga ugonjwa wa swollen shoot ya kakao Afrika Magharibi",
+          "summary": "Mkakati wa kikanda wa miaka mitano unasisitiza ukarabati wa mashamba, ufuatiliaji, utafiti na ushirikiano ili kulinda uzalishaji wa kakao na maisha ya jamii za vijijini."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -768,7 +877,26 @@
       "source_tier": 1,
       "published": "2026-02-21",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Le Ghana fait avancer une feuille de route pour réduire l’usage des antimicrobiens en aviculture et en aquaculture",
+          "summary": "Les parties prenantes ont élaboré un projet de feuille de route nationale dans le cadre de RENOFARM pour améliorer la prévention des maladies, les services vétérinaires et l’utilisation responsable des antimicrobiens."
+        },
+        "ar": {
+          "title": "غانا تتقدم في إعداد خارطة طريق للحد من استخدام مضادات الميكروبات في الدواجن والاستزراع المائي",
+          "summary": "وضع أصحاب المصلحة مسودة خارطة طريق وطنية ضمن مبادرة RENOFARM لتحسين الوقاية من الأمراض والخدمات البيطرية والاستخدام المسؤول لمضادات الميكروبات."
+        },
+        "pt": {
+          "title": "Gana avança com roteiro para reduzir o uso de antimicrobianos na avicultura e aquicultura",
+          "summary": "As partes interessadas elaboraram um projeto de roteiro nacional no âmbito da RENOFARM para melhorar a prevenção de doenças, os serviços veterinários e o uso responsável de antimicrobianos."
+        },
+        "sw": {
+          "title": "Ghana yaendeleza ramani ya kupunguza matumizi ya dawa za kuua vijidudu katika ufugaji wa kuku na viumbe majini",
+          "summary": "Wadau waliandaa rasimu ya ramani ya kitaifa chini ya RENOFARM ili kuboresha kinga ya magonjwa, huduma za mifugo na matumizi yenye uwajibikaji ya dawa za kuua vijidudu."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "GH",
@@ -780,19 +908,26 @@
       "source_tier": 1,
       "published": "2026-02-23",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "KE",
-      "category": "grants-programmes",
-      "headline": "Kenya opens GEF-7 FOLUR direct beneficiary grants for coffee, maize and nature-based livelihoods",
-      "summary": "FAO opened a call for direct beneficiary grants under the GEF-7 FOLUR Mt. Elgon Project, supporting eligible local organizations in Western Kenya working on coffee, maize and nature-based livelihood enterprises.",
-      "url": "https://www.fao.org/kenya/news/newsdetails/nature-positive-food-systems-for-the-mt.-elgon-landscape--gef-7-folur-direct-beneficiary-grants-open-for-coffee--maize-and-ogiek-livelihoods/en",
-      "source": "FAO in Kenya",
-      "source_tier": 1,
-      "published": "2026-10-01",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "translations": {
+        "fr": {
+          "title": "Le Ghana forme 210 aviculteurs grâce aux champs-écoles sur la résistance aux antimicrobiens",
+          "summary": "Les participants aux champs-écoles ont renforcé les pratiques de biosécurité avicole et d’utilisation responsable des antimicrobiens dans le cadre d’un programme soutenu par la FAO."
+        },
+        "ar": {
+          "title": "غانا تدرب 210 من مربي الدواجن عبر مدارس المزارعين الحقلية بشأن مقاومة مضادات الميكروبات",
+          "summary": "عزز المشاركون في مدارس المزارعين الحقلية ممارسات الأمن الحيوي للدواجن والاستخدام المسؤول لمضادات الميكروبات ضمن برنامج تدعمه الفاو."
+        },
+        "pt": {
+          "title": "Gana forma 210 avicultores através de Escolas de Campo sobre resistência aos antimicrobianos",
+          "summary": "Os participantes das Escolas de Campo reforçaram as práticas de biossegurança avícola e o uso responsável de antimicrobianos num programa apoiado pela FAO."
+        },
+        "sw": {
+          "title": "Ghana yahitimu wafugaji 210 wa kuku kupitia Shule za Wakulima kuhusu usugu wa viuavijasumu",
+          "summary": "Washiriki wa Shule za Wakulima waliimarisha mbinu za usalama wa viumbe katika ufugaji wa kuku na matumizi yenye uwajibikaji ya viuavijasumu kupitia mpango unaoungwa mkono na FAO."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "KE",
@@ -804,7 +939,27 @@
       "source_tier": 1,
       "published": "2026-10-01",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Vihiga County receives drone to strengthen GIS mapping and evidence-based planning",
+      "translations": {
+        "fr": {
+          "title": "Le comté de Vihiga reçoit un drone pour renforcer la cartographie SIG et la planification fondée sur des données probantes",
+          "summary": "Un nouveau drone remis au comté de Vihiga dans le cadre du programme de gouvernance foncière numérique UE-FAO soutiendra la collecte de données spatiales, l’aménagement du territoire, la préparation aux catastrophes et la prise de décision fondée sur des données."
+        },
+        "ar": {
+          "title": "مقاطعة فيهيغا تتلقى طائرة مسيّرة لتعزيز رسم الخرائط الجغرافية والتخطيط القائم على الأدلة",
+          "summary": "ستدعم طائرة مسيّرة جديدة سُلّمت إلى مقاطعة فيهيغا ضمن برنامج الاتحاد الأوروبي والفاو للحوكمة الرقمية للأراضي جمع البيانات المكانية وتخطيط استخدام الأراضي والاستعداد للكوارث واتخاذ القرارات القائمة على الأدلة."
+        },
+        "pt": {
+          "title": "Condado de Vihiga recebe drone para reforçar o mapeamento SIG e o planeamento baseado em evidências",
+          "summary": "Um novo drone entregue ao condado de Vihiga no âmbito do Programa de Governação Digital da Terra UE-FAO apoiará a recolha de dados espaciais, o planeamento do uso do solo, a preparação para desastres e a tomada de decisões baseada em evidências."
+        },
+        "sw": {
+          "title": "Kaunti ya Vihiga yapokea ndege isiyo na rubani kuimarisha ramani za GIS na mipango inayotegemea ushahidi",
+          "summary": "Ndege mpya isiyo na rubani iliyokabidhiwa kaunti ya Vihiga chini ya Mpango wa Utawala wa Ardhi wa Kidijitali wa EU-FAO itasaidia ukusanyaji wa data za kijiografia, mipango ya matumizi ya ardhi, maandalizi ya majanga na maamuzi yanayotegemea ushahidi."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "KE",
@@ -816,7 +971,27 @@
       "source_tier": 1,
       "published": "2026-09-29",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Kenya launches soil partnership, laboratory network and Soil Doctors programme",
+      "translations": {
+        "fr": {
+          "title": "Le Kenya lance un partenariat sur les sols, un réseau de laboratoires et le programme Soil Doctors",
+          "summary": "Le Kenya a lancé trois initiatives nationales dans le cadre de SoilFER afin de renforcer les données sur les sols, les systèmes de laboratoire, les capacités techniques et l’accès des agriculteurs à des conseils pratiques de gestion des sols."
+        },
+        "ar": {
+          "title": "كينيا تطلق شراكة للتربة وشبكة مختبرات وبرنامج أطباء التربة",
+          "summary": "أطلقت كينيا ثلاث مبادرات وطنية ضمن برنامج SoilFER لتعزيز بيانات التربة وأنظمة المختبرات والقدرات الفنية وإتاحة الإرشادات العملية لإدارة التربة للمزارعين."
+        },
+        "pt": {
+          "title": "Quénia lança parceria de solos, rede de laboratórios e programa Soil Doctors",
+          "summary": "O Quénia lançou três iniciativas nacionais no âmbito do SoilFER para reforçar os dados sobre os solos, os sistemas laboratoriais, a capacidade técnica e o acesso dos agricultores a aconselhamento prático de gestão dos solos."
+        },
+        "sw": {
+          "title": "Kenya yazindua ushirikiano wa udongo, mtandao wa maabara na mpango wa Soil Doctors",
+          "summary": "Kenya ilizindua mipango mitatu ya kitaifa chini ya SoilFER ili kuimarisha data za udongo, mifumo ya maabara, uwezo wa kiufundi na upatikanaji wa ushauri wa vitendo wa usimamizi wa udongo kwa wakulima."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "KE",
@@ -828,7 +1003,27 @@
       "source_tier": 1,
       "published": "2026-09-21",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO and Kenya National Bureau of Statistics begin agricultural-data validation for 14 Lake Region counties",
+      "translations": {
+        "fr": {
+          "title": "La FAO et le Bureau national des statistiques du Kenya lancent la validation des données agricoles de 14 comtés de la région des Lacs",
+          "summary": "La FAO et le KNBS ont commencé à valider les données agricoles de 14 comtés du Lake Region Economic Block pour KIAMIS et les systèmes de données ouvertes des comtés, afin d’améliorer la fiabilité et la mise à jour régulière des informations agricoles."
+        },
+        "ar": {
+          "title": "الفاو ومكتب الإحصاء الوطني في كينيا يبدآن التحقق من البيانات الزراعية في 14 مقاطعة بمنطقة البحيرات",
+          "summary": "بدأت الفاو ومكتب الإحصاء الوطني الكيني التحقق من البيانات الزراعية في 14 مقاطعة ضمن الكتلة الاقتصادية لمنطقة البحيرات لصالح نظام KIAMIS وأنظمة البيانات المفتوحة للمقاطعات، بهدف تحسين موثوقية المعلومات الزراعية وتحديثها بانتظام."
+        },
+        "pt": {
+          "title": "FAO e o Gabinete Nacional de Estatística do Quénia iniciam a validação de dados agrícolas em 14 condados da Região dos Lagos",
+          "summary": "A FAO e o KNBS começaram a validar dados agrícolas de 14 condados do Bloco Económico da Região dos Lagos para o KIAMIS e os sistemas de dados abertos dos condados, com o objetivo de melhorar a fiabilidade e a atualização regular da informação agrícola."
+        },
+        "sw": {
+          "title": "FAO na Ofisi ya Taifa ya Takwimu ya Kenya waanza kuthibitisha data za kilimo katika kaunti 14 za eneo la Ziwa",
+          "summary": "FAO na KNBS zimeanza kuthibitisha data za kilimo kutoka kaunti 14 za Lake Region Economic Block kwa ajili ya KIAMIS na mifumo ya data wazi ya kaunti, ili kuboresha uaminifu na usasishaji wa mara kwa mara wa taarifa za kilimo."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "KE",
@@ -840,7 +1035,27 @@
       "source_tier": 1,
       "published": "2026-09-18",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO hands over digital equipment to strengthen Farmer Field Schools and climate-resilient agriculture in 14 Lake Region counties",
+      "translations": {
+        "fr": {
+          "title": "La FAO remet du matériel numérique pour renforcer les champs-écoles des producteurs et l’agriculture résiliente au climat dans 14 comtés de la région des Lacs",
+          "summary": "La FAO a remis du matériel numérique et des supports d’apprentissage aux responsables des comtés et aux animateurs des champs-écoles dans le cadre du programme TUNZA. L’équipement doit faciliter l’accès aux informations climatiques, aux données de production et à l’apprentissage pratique des agriculteurs."
+        },
+        "ar": {
+          "title": "الفاو تسلّم معدات رقمية لتعزيز مدارس المزارعين الحقلية والزراعة القادرة على التكيف مع المناخ في 14 مقاطعة بمنطقة البحيرات",
+          "summary": "سلمت الفاو معدات رقمية ومواد تعليمية لمسؤولي المقاطعات وميسري مدارس المزارعين الحقلية ضمن برنامج TUNZA. وستساعد المعدات على تحسين الوصول إلى معلومات المناخ وبيانات الإنتاج والتعلم العملي للمزارعين."
+        },
+        "pt": {
+          "title": "FAO entrega equipamento digital para reforçar as Escolas de Campo e a agricultura resiliente ao clima em 14 condados da Região dos Lagos",
+          "summary": "A FAO entregou equipamento digital e materiais de aprendizagem a pontos focais dos condados e facilitadores das Escolas de Campo para Agricultores no âmbito do programa TUNZA. O equipamento apoiará o acesso a informação climática, dados de produção e aprendizagem prática."
+        },
+        "sw": {
+          "title": "FAO yakabidhi vifaa vya kidijitali kuimarisha Shule za Wakulima na kilimo kinachostahimili tabianchi katika kaunti 14 za eneo la Ziwa",
+          "summary": "FAO ilikabidhi vifaa vya kidijitali na nyenzo za kujifunzia kwa waratibu wa kaunti na wawezeshaji wa Shule za Wakulima chini ya mpango wa TUNZA. Vifaa hivyo vitasaidia upatikanaji wa taarifa za tabianchi, data za uzalishaji na mafunzo ya vitendo kwa wakulima."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "KE",
@@ -852,7 +1067,27 @@
       "source_tier": 1,
       "published": "2026-09-15",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Kenya and Tanzania strengthen cross-border animal-health and livestock-trade cooperation",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le Kenya et la Tanzanie renforcent leur coopération transfrontalière en santé animale et commerce du bétail",
+          "summary": "Le Kenya et la Tanzanie ont convenu de renforcer la surveillance des maladies, le partage d’informations ainsi que les déplacements et le commerce sûrs du bétail dans le cadre du programme PLACE financé par l’Union européenne."
+        },
+        "ar": {
+          "title": "كينيا وتنزانيا تعززان التعاون عبر الحدود في صحة الحيوان وتجارة الماشية",
+          "summary": "اتفقت كينيا وتنزانيا على تعزيز مراقبة الأمراض وتبادل المعلومات وضمان حركة الماشية وتداولها بأمان في إطار برنامج PLACE الممول من الاتحاد الأوروبي."
+        },
+        "pt": {
+          "title": "Quénia e Tanzânia reforçam a cooperação transfronteiriça em saúde animal e comércio pecuário",
+          "summary": "O Quénia e a Tanzânia acordaram reforçar a vigilância de doenças, a partilha de informações e a circulação e o comércio seguros de gado no âmbito do programa PLACE financiado pela União Europeia."
+        },
+        "sw": {
+          "title": "Kenya na Tanzania zaimarisha ushirikiano wa kuvuka mipaka kuhusu afya ya wanyama na biashara ya mifugo",
+          "summary": "Kenya na Tanzania zimekubaliana kuimarisha ufuatiliaji wa magonjwa, kubadilishana taarifa na usafirishaji na biashara salama ya mifugo chini ya mpango wa PLACE unaofadhiliwa na Umoja wa Ulaya."
+        }
+      }
     },
     {
       "country_code": "KE",
@@ -864,7 +1099,27 @@
       "source_tier": 1,
       "published": "2026-08-19",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO strengthens climate advisory services for Kenyan farmers",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La FAO renforce les services de conseil climatique pour les agriculteurs kényans",
+          "summary": "Le projet TUNZA de la FAO a formé 56 formateurs issus de 14 comtés à interpréter les prévisions climatiques et à les traduire en conseils pratiques adaptés aux cultures et à l’élevage."
+        },
+        "ar": {
+          "title": "الفاو تعزز خدمات الإرشاد المناخي للمزارعين في كينيا",
+          "summary": "درب مشروع TUNZA التابع للفاو 56 مدرباً من 14 مقاطعة على تفسير التوقعات المناخية وتحويلها إلى نصائح عملية خاصة بالمحاصيل والثروة الحيوانية."
+        },
+        "pt": {
+          "title": "FAO reforça os serviços de aconselhamento climático para agricultores quenianos",
+          "summary": "O projeto TUNZA da FAO formou 56 formadores de 14 condados para interpretar previsões climáticas e transformá-las em aconselhamento prático específico para culturas e pecuária."
+        },
+        "sw": {
+          "title": "FAO yaimarisha huduma za ushauri wa tabianchi kwa wakulima wa Kenya",
+          "summary": "Mradi wa TUNZA wa FAO uliwafunza wakufunzi 56 kutoka kaunti 14 kutafsiri utabiri wa tabianchi na kuugeuza kuwa ushauri wa vitendo unaolenga mazao na mifugo."
+        }
+      }
     },
     {
       "country_code": "KE",
@@ -876,7 +1131,27 @@
       "source_tier": 1,
       "published": "2026-09-10",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Young climate champions: how 4K Clubs promote nutrition-sensitive climate-smart agriculture in Kajiado and Embu",
+      "translations": {
+        "fr": {
+          "title": "Jeunes champions du climat : comment les clubs 4K promeuvent une agriculture intelligente face au climat et sensible à la nutrition",
+          "summary": "Les clubs scolaires 4K des comtés de Kajiado et d’Embu montrent comment les jardins économes en eau, l’aviculture et les pratiques intelligentes face au climat peuvent améliorer la nutrition, l’apprentissage et la résilience des ménages."
+        },
+        "ar": {
+          "title": "أبطال المناخ الشباب: كيف تعزز نوادي 4K الزراعة الذكية مناخياً والمراعية للتغذية في كاجيادو وإمبو",
+          "summary": "توضح نوادي 4K المدرسية في مقاطعتي كاجيادو وإمبو كيف يمكن للحدائق الموفرة للمياه وتربية الدواجن والممارسات الذكية مناخياً تحسين التغذية والتعلم وقدرة الأسر على الصمود."
+        },
+        "pt": {
+          "title": "Jovens campeões do clima: como os clubes 4K promovem agricultura climaticamente inteligente e sensível à nutrição",
+          "summary": "Os clubes escolares 4K nos condados de Kajiado e Embu demonstram como hortas eficientes no uso da água, criação de aves e práticas climaticamente inteligentes podem melhorar a nutrição, a aprendizagem e a resiliência das famílias."
+        },
+        "sw": {
+          "title": "Vijana mabingwa wa tabianchi: jinsi klabu za 4K zinavyokuza kilimo mahiri kinachozingatia lishe",
+          "summary": "Klabu za shule za 4K katika kaunti za Kajiado na Embu zinaonyesha jinsi bustani zinazotumia maji kwa ufanisi, ufugaji wa kuku na mbinu zinazozingatia tabianchi zinavyoweza kuboresha lishe, elimu na ustahimilivu wa kaya."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "UG",
@@ -888,7 +1163,27 @@
       "source_tier": 1,
       "published": "2026-09-11",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Uganda launches landmark REDD+ results-based payment project",
+      "translations": {
+        "fr": {
+          "title": "L’Ouganda lance un projet majeur de paiements fondés sur les résultats REDD+",
+          "summary": "L’Ouganda a lancé un projet financé par le Fonds vert pour le climat qui réinvestira les paiements liés aux réductions d’émissions vérifiées dans la restauration des paysages, la gestion durable des terres, l’agroforesterie, les moyens de subsistance résilients et le renforcement des systèmes climatiques."
+        },
+        "ar": {
+          "title": "أوغندا تطلق مشروعاً رائداً للمدفوعات القائمة على النتائج ضمن REDD+",
+          "summary": "أطلقت أوغندا مشروعاً يموله صندوق المناخ الأخضر لإعادة استثمار المدفوعات المرتبطة بخفض الانبعاثات المتحقق منه في استعادة المناظر الطبيعية والإدارة المستدامة للأراضي والحراجة الزراعية وسبل العيش القادرة على الصمود وتعزيز النظم المناخية."
+        },
+        "pt": {
+          "title": "Uganda lança um projeto pioneiro de pagamentos baseados em resultados REDD+",
+          "summary": "O Uganda lançou um projeto financiado pelo Fundo Verde para o Clima que reinvestirá pagamentos por reduções de emissões verificadas na restauração de paisagens, gestão sustentável da terra, agroflorestas, meios de subsistência resilientes e reforço dos sistemas climáticos."
+        },
+        "sw": {
+          "title": "Uganda yazindua mradi wa kipekee wa malipo yanayotegemea matokeo wa REDD+",
+          "summary": "Uganda imezindua mradi unaofadhiliwa na Mfuko wa Kijani wa Tabianchi ambao utawekeza tena malipo ya upunguzaji wa hewa chafu uliothibitishwa katika urejeshaji wa mandhari, usimamizi endelevu wa ardhi, kilimo-misitu, maisha yanayostahimili mishtuko na kuimarisha mifumo ya tabianchi."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "UG",
@@ -900,7 +1195,27 @@
       "source_tier": 1,
       "published": "2026-09-10",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Uganda launches Green Roots Women’s Farm Labs to support women-led green enterprises",
+      "translations": {
+        "fr": {
+          "title": "L’Ouganda lance les laboratoires agricoles Green Roots pour soutenir les entreprises vertes dirigées par des femmes",
+          "summary": "La FAO et le ministère ougandais du Genre ont lancé une initiative de deux ans pour relier les microentreprises dirigées par des femmes aux financements, aux marchés, aux technologies et aux services de développement des entreprises."
+        },
+        "ar": {
+          "title": "أوغندا تطلق مختبرات Green Roots الزراعية لدعم المشاريع الخضراء التي تقودها النساء",
+          "summary": "أطلقت الفاو ووزارة النوع الاجتماعي الأوغندية مبادرة لمدة عامين لربط المشروعات متناهية الصغر التي تقودها النساء بالتمويل والأسواق والتكنولوجيا وخدمات تطوير الأعمال."
+        },
+        "pt": {
+          "title": "Uganda lança os laboratórios agrícolas Green Roots para apoiar empresas verdes lideradas por mulheres",
+          "summary": "A FAO e o Ministério do Género do Uganda lançaram uma iniciativa de dois anos para ligar microempresas lideradas por mulheres a financiamento, mercados, tecnologia e serviços de desenvolvimento empresarial."
+        },
+        "sw": {
+          "title": "Uganda yazindua maabara za mashamba za Green Roots kusaidia biashara za kijani zinazoongozwa na wanawake",
+          "summary": "FAO na Wizara ya Jinsia ya Uganda zilizindua mpango wa miaka miwili wa kuunganisha biashara ndogo zinazoongozwa na wanawake na ufadhili, masoko, teknolojia na huduma za maendeleo ya biashara."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "UG",
@@ -912,7 +1227,27 @@
       "source_tier": 1,
       "published": "2026-08-27",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "EU-funded FOSTER project supports food security and resilience in Karamoja",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le projet FOSTER financé par l’Union européenne renforce la sécurité alimentaire et la résilience au Karamoja",
+          "summary": "Le projet FOSTER de 5 millions d’euros a soutenu 16 000 ménages et plus de 80 000 personnes grâce aux champs-écoles, aux actifs productifs, aux subventions, aux liens avec les services financiers, aux informations climatiques et aux infrastructures hydrauliques."
+        },
+        "ar": {
+          "title": "مشروع FOSTER الممول من الاتحاد الأوروبي يعزز الأمن الغذائي والقدرة على الصمود في كاراموجا",
+          "summary": "دعم مشروع FOSTER البالغة قيمته 5 ملايين يورو 16 ألف أسرة وأكثر من 80 ألف شخص، من خلال مدارس المزارعين والأصول الإنتاجية والمنح والربط بالتمويل والمعلومات المناخية والبنية التحتية للمياه."
+        },
+        "pt": {
+          "title": "Projeto FOSTER financiado pela União Europeia reforça a segurança alimentar e a resiliência em Karamoja",
+          "summary": "O projeto FOSTER, de 5 milhões de euros, apoiou 16 mil agregados familiares e mais de 80 mil pessoas, combinando Escolas de Campo, ativos produtivos, subvenções, ligações a financiamento, informação climática e infraestruturas de água."
+        },
+        "sw": {
+          "title": "Mradi wa FOSTER unaofadhiliwa na Umoja wa Ulaya waimarisha usalama wa chakula na ustahimilivu Karamoja",
+          "summary": "Mradi wa FOSTER wa euro milioni 5 ulisaidia kaya 16,000 na zaidi ya watu 80,000 kupitia Shule za Wakulima, rasilimali za uzalishaji, ruzuku, uhusiano wa kifedha, taarifa za tabianchi na miundombinu ya maji."
+        }
+      }
     },
     {
       "country_code": "UG",
@@ -924,43 +1259,27 @@
       "source_tier": 1,
       "published": "2026-05-15",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "UG",
-      "category": "finance",
-      "headline": "Eastern Africa agrifood investment forum highlights Uganda opportunities",
-      "summary": "Uganda joined Eastern African countries at FAO's 2026 Hand-in-Hand forum in Kigali to showcase investment-ready agrifood opportunities and strengthen partnerships with investors and financial institutions.",
-      "url": "https://www.fao.org/africa/events/events-detail/hand-in-hand-investment-forum-for-eastern-africa/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-08-25",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "UG",
-      "category": "climate",
-      "headline": "Uganda strengthens climate resilience through sustainable land management and agroforestry investment",
-      "summary": "FAO's Uganda REDD+ results-based programme links climate finance with sustainable land management, agroforestry, restoration and resilient food systems.",
-      "url": "https://www.fao.org/uganda/news/detail/uganda-launches-landmark-redd--results-based-payment-project/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-09-11",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "NG",
-      "category": "finance",
-      "headline": "Nigeria's 2026 Hand-in-Hand portfolio totals US$3.2 billion across six agrifood value chains",
-      "summary": "FAO's Nigeria 2026 investment profile presents US$3.2 billion in investment cases covering tomato, cassava, maize, dairy, fisheries and aquaculture, and beef feedlots.",
-      "url": "https://fao.sitefinity.cloud/hand-in-hand/investment-forum-2026/nigeria-2026/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Uganda begins its first export of canned pineapple to China",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "L’Ouganda lance sa première exportation d’ananas en conserve vers la Chine",
+          "summary": "La première exportation commerciale d’ananas en conserve de l’Ouganda vers la Chine a relié plus de 1 500 petits producteurs à un marché de transformation et marqué un progrès pour l’agro-industrie et la valeur ajoutée."
+        },
+        "ar": {
+          "title": "أوغندا تبدأ أول تصدير تجاري للأناناس المعلب إلى الصين",
+          "summary": "ربط أول تصدير تجاري للأناناس المعلب من أوغندا إلى الصين أكثر من 1500 من صغار المزارعين بسوق للتصنيع، ومثل تقدماً في التصنيع الزراعي وإضافة القيمة."
+        },
+        "pt": {
+          "title": "Uganda inicia a primeira exportação de ananás em conserva para a China",
+          "summary": "A primeira exportação comercial de ananás em conserva do Uganda para a China ligou mais de 1.500 pequenos agricultores a um mercado de transformação e marcou um avanço no agroprocessamento e na agregação de valor."
+        },
+        "sw": {
+          "title": "Uganda yaanza kuuza nje nanasi la makopo kwenda China kwa mara ya kwanza",
+          "summary": "Uuzaji wa kwanza wa kibiashara wa nanasi la makopo kutoka Uganda kwenda China uliunganisha zaidi ya wakulima wadogo 1,500 na soko la uchakataji na kuashiria maendeleo katika uchakataji wa mazao na kuongeza thamani."
+        }
+      }
     },
     {
       "country_code": "NG",
@@ -972,7 +1291,27 @@
       "source_tier": 1,
       "published": "2026-07-14",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Nigeria aligns agrifood transformation with climate action",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le Nigeria rapproche la transformation agroalimentaire de l’action climatique",
+          "summary": "Le gouvernement, les agences des Nations Unies et leurs partenaires ont renouvelé leurs efforts pour aligner la transformation des systèmes alimentaires sur l’action climatique et la planification des investissements lors d’un atelier de haut niveau à Abuja."
+        },
+        "ar": {
+          "title": "نيجيريا توائم تحول النظم الزراعية والغذائية مع العمل المناخي",
+          "summary": "جددت الحكومة ووكالات الأمم المتحدة والشركاء جهودهم لمواءمة تحول النظم الغذائية مع العمل المناخي وتخطيط الاستثمارات خلال ورشة رفيعة المستوى في أبوجا."
+        },
+        "pt": {
+          "title": "Nigéria alinha a transformação agroalimentar com a ação climática",
+          "summary": "O governo, as agências das Nações Unidas e os parceiros renovaram os esforços para alinhar a transformação dos sistemas alimentares com a ação climática e o planeamento do investimento numa reunião de alto nível em Abuja."
+        },
+        "sw": {
+          "title": "Nigeria yaoanisha mabadiliko ya mifumo ya kilimo na chakula na hatua za tabianchi",
+          "summary": "Serikali, mashirika ya Umoja wa Mataifa na washirika wameongeza juhudi za kuoanisha mabadiliko ya mifumo ya chakula na hatua za tabianchi pamoja na mipango ya uwekezaji katika warsha ya ngazi ya juu mjini Abuja."
+        }
+      }
     },
     {
       "country_code": "NG",
@@ -984,19 +1323,11 @@
       "source_tier": 1,
       "published": "2026-07-06",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "NG",
-      "category": "data",
-      "headline": "Nigeria's NASIP 2026–2027 uses evidence to guide ₦6.5 trillion agrifood spending",
-      "summary": "FAO's MAFAP programme supported analysis that helped inform Nigeria's two-year National Agrifood Systems Investment Plan and improve allocation of agrifood public expenditure.",
-      "url": "https://www.fao.org/in-action/mafap/news-details/mafap-programme-welcomes-nigeria-s-6.5-trillion-smarter-agrifood-public-spending/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-04-09",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "FAO-supported agricultural inputs help vulnerable Nigerian households restore food production",
+      "translation_status": "in_review"
     },
     {
       "country_code": "NG",
@@ -1008,7 +1339,27 @@
       "source_tier": 1,
       "published": "2026-02-16",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO launches 2026–2028 emergency and resilience plan for Nigeria",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La FAO lance un plan d’urgence et de résilience 2026–2028 pour le Nigeria",
+          "summary": "La FAO a lancé un plan pluriannuel d’urgence et de résilience visant à protéger les moyens de subsistance, à rétablir la production alimentaire et à renforcer la résilience de 12,6 millions de personnes touchées par les crises au Nigeria."
+        },
+        "ar": {
+          "title": "الفاو تطلق خطة طوارئ وصمود لنيجيريا للفترة 2026–2028",
+          "summary": "أطلقت الفاو خطة متعددة السنوات للطوارئ والصمود تهدف إلى حماية سبل العيش واستعادة إنتاج الغذاء وتعزيز قدرة 12.6 مليون شخص متضرر من الأزمات في نيجيريا على الصمود."
+        },
+        "pt": {
+          "title": "FAO lança plano de emergência e resiliência 2026–2028 para a Nigéria",
+          "summary": "A FAO lançou um plano plurianual de emergência e resiliência para proteger meios de subsistência, recuperar a produção alimentar e reforçar a resiliência de 12,6 milhões de pessoas afetadas por crises na Nigéria."
+        },
+        "sw": {
+          "title": "FAO yazindua mpango wa dharura na ustahimilivu wa Nigeria wa 2026–2028",
+          "summary": "FAO imezindua mpango wa miaka mingi wa dharura na ustahimilivu unaolenga kulinda maisha na kipato, kurejesha uzalishaji wa chakula na kuimarisha ustahimilivu wa watu milioni 12.6 walioathiriwa na migogoro nchini Nigeria."
+        }
+      }
     },
     {
       "country_code": "CI",
@@ -1020,7 +1371,27 @@
       "source_tier": 1,
       "published": "2026-09-22",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Côte d’Ivoire prepares nine agrifood investment cases for 2026 investor forum",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La Côte d’Ivoire prépare neuf dossiers d’investissement agroalimentaire pour le forum des investisseurs de 2026",
+          "summary": "La Côte d’Ivoire prépare neuf dossiers d’investissement agroalimentaire dans le cadre de trois programmes intégrés de pôles agro-industriels, en vue de leur présentation aux investisseurs lors du forum Hand-in-Hand 2026."
+        },
+        "ar": {
+          "title": "كوت ديفوار تعد تسع فرص استثمارية زراعية وغذائية لمنتدى المستثمرين لعام 2026",
+          "summary": "تعد كوت ديفوار تسع فرص استثمارية زراعية وغذائية ضمن ثلاثة برامج متكاملة للأقطاب الزراعية الصناعية، لعرضها على المستثمرين خلال منتدى هاند إن هاند لعام 2026."
+        },
+        "pt": {
+          "title": "Costa do Marfim prepara nove oportunidades de investimento agroalimentar para o fórum de investidores de 2026",
+          "summary": "A Costa do Marfim está a preparar nove oportunidades de investimento agroalimentar no âmbito de três programas integrados de polos agroindustriais, para apresentação a investidores no fórum Hand-in-Hand de 2026."
+        },
+        "sw": {
+          "title": "Côte d’Ivoire yaandaa fursa tisa za uwekezaji wa kilimo na chakula kwa kongamano la wawekezaji la 2026",
+          "summary": "Côte d’Ivoire inaandaa fursa tisa za uwekezaji wa kilimo na chakula chini ya programu tatu jumuishi za maeneo ya viwanda vya kilimo, kwa ajili ya kuziwasilisha kwa wawekezaji katika kongamano la Hand-in-Hand la 2026."
+        }
+      }
     },
     {
       "country_code": "CI",
@@ -1032,19 +1403,11 @@
       "source_tier": 1,
       "published": "2026-09-22",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CI",
-      "category": "policy",
-      "headline": "Côte d'Ivoire sets new roadmap for next-generation agriculture",
-      "summary": "The Ministry of Agriculture outlined a leadership and modernization roadmap aimed at strengthening agricultural transformation, innovation and investment.",
-      "url": "https://www.agriculture.gouv.ci/actualites",
-      "source": "Ministry of Agriculture of Côte d'Ivoire",
-      "source_tier": 1,
-      "published": "2026-09-28",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "Côte d’Ivoire and FAO advance work on the National Agriculture Census",
+      "translation_status": "in_review"
     },
     {
       "country_code": "CI",
@@ -1052,23 +1415,32 @@
       "headline": "SAGA 2 strengthens climate adaptation and sustainable agriculture in Côte d'Ivoire",
       "summary": "FAO and partners reviewed SAGA 2 results and prospects for scaling climate adaptation approaches and resilient agricultural livelihoods in Côte d'Ivoire.",
       "url": "https://www.fao.org/in-action/saga/news-and-events/fr",
-      "source": "Ministry of Agriculture of Côte d'Ivoire",
+      "source": "Food and Agriculture Organization of the United Nations (FAO)",
       "source_tier": 1,
       "published": "2026-09-14",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CI",
-      "category": "markets",
-      "headline": "Côte d'Ivoire advances warehouse-receipt systems and agricultural market access",
-      "summary": "The Ministry of Agriculture highlighted efforts around warehouse receipts and market systems to strengthen transparency and financing across agricultural value chains.",
-      "url": "https://www.agriculture.gouv.ci/actualites",
-      "source": "Ministry of Agriculture of Côte d'Ivoire",
-      "source_tier": 1,
-      "published": "2026-09-30",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO and partners review climate-adaptation results under SAGA 2 in Côte d’Ivoire",
+      "translation_status": "in_review",
+      "source_id": "fao",
+      "translations": {
+        "fr": {
+          "title": "La FAO et ses partenaires examinent les résultats de l’adaptation climatique dans le cadre de SAGA 2 en Côte d’Ivoire",
+          "summary": "La FAO et ses partenaires ont examiné les résultats et les perspectives du programme SAGA 2 pour développer les approches d’adaptation climatique et renforcer les moyens de subsistance agricoles résilients en Côte d’Ivoire."
+        },
+        "ar": {
+          "title": "الفاو وشركاؤها يراجعون نتائج التكيف المناخي ضمن برنامج SAGA 2 في كوت ديفوار",
+          "summary": "راجعت الفاو وشركاؤها نتائج وآفاق برنامج SAGA 2 لتوسيع نطاق أساليب التكيف مع المناخ وتعزيز سبل العيش الزراعية القادرة على الصمود في كوت ديفوار."
+        },
+        "pt": {
+          "title": "FAO e parceiros analisam os resultados da adaptação climática no âmbito do SAGA 2 na Costa do Marfim",
+          "summary": "A FAO e os seus parceiros analisaram os resultados e as perspetivas do programa SAGA 2 para ampliar abordagens de adaptação climática e meios de subsistência agrícolas resilientes na Costa do Marfim."
+        },
+        "sw": {
+          "title": "FAO na washirika wake wapitia matokeo ya kukabiliana na tabianchi kupitia SAGA 2 Côte d’Ivoire",
+          "summary": "FAO na washirika wake walipitia matokeo na matarajio ya mpango wa SAGA 2 wa kupanua mbinu za kukabiliana na tabianchi na kuimarisha maisha ya kilimo yanayostahimili mishtuko nchini Côte d’Ivoire."
+        }
+      }
     },
     {
       "country_code": "ET",
@@ -1080,19 +1452,27 @@
       "source_tier": 1,
       "published": "2026-10-01",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "ET",
-      "category": "finance",
-      "headline": "Ethiopia prepares four investment-ready agrifood cases for 2026 Hand-in-Hand Forum",
-      "summary": "Ethiopia is presenting mechanization, animal feed, ranching and grandparent-stock poultry opportunities with a combined investment requirement of US$744.6 million.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/eth/en",
-      "source": "FAO Hand-in-Hand Initiative",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Ethiopia and Japan sign grant agreement to support rice-sector machinery",
+      "translations": {
+        "fr": {
+          "title": "L’Éthiopie et le Japon signent un accord de subvention pour soutenir la mécanisation de la filière rizicole",
+          "summary": "L’Éthiopie et le Japon ont signé un accord de subvention destiné à financer des moissonneuses-batteuses, des tracteurs, des rizeries et du matériel de préparation des terres pour la filière rizicole."
+        },
+        "ar": {
+          "title": "إثيوبيا واليابان توقّعان اتفاق منحة لدعم معدات قطاع الأرز",
+          "summary": "وقّعت إثيوبيا واليابان اتفاق منحة لتمويل حصادات آلية وجرارات ومطاحن أرز ومعدات لإعداد الأراضي لدعم قطاع الأرز."
+        },
+        "pt": {
+          "title": "Etiópia e Japão assinam acordo de subvenção para apoiar a mecanização do setor do arroz",
+          "summary": "A Etiópia e o Japão assinaram um acordo de subvenção para financiar ceifeiras-debulhadoras, tratores, moinhos de arroz e equipamento de preparação dos terrenos para o setor orizícola."
+        },
+        "sw": {
+          "title": "Ethiopia na Japani zasaini makubaliano ya ruzuku kusaidia vifaa vya sekta ya mpunga",
+          "summary": "Ethiopia na Japani zilisaini makubaliano ya ruzuku ya kufadhili mashine za kuvunia na kupura, matrekta, mashine za kusaga mpunga na vifaa vya kuandaa mashamba kwa ajili ya sekta ya mpunga."
+        }
+      },
+      "translation_status": "in_review"
     },
     {
       "country_code": "ET",
@@ -1104,7 +1484,11 @@
       "source_tier": 1,
       "published": "2026-10-07",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "This is an FAO country emergency overview page, not a specific news article; move it to Resources or replace it with a direct story.",
+      "title": "FAO outlines Ethiopia’s ongoing agricultural and livestock emergency needs",
+      "translation_status": "in_review"
     },
     {
       "country_code": "ET",
@@ -1116,7 +1500,27 @@
       "source_tier": 1,
       "published": "2026-03-27",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Ethiopia advances youth-led agrifood transformation",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "L’Éthiopie fait progresser une transformation agroalimentaire menée par les jeunes",
+          "summary": "La FAO et ses partenaires ont réuni de jeunes leaders, des décideurs et d’autres parties prenantes en Éthiopie afin de traduire le dialogue sur les systèmes agroalimentaires en actions nationales axées sur la résilience climatique et l’innovation inclusive."
+        },
+        "ar": {
+          "title": "إثيوبيا تدفع قدماً بتحول زراعي وغذائي يقوده الشباب",
+          "summary": "جمعت الفاو وشركاؤها قادة شباباً وصناع سياسات وأطرافاً معنية أخرى في إثيوبيا لتحويل الحوار حول النظم الزراعية والغذائية إلى إجراءات وطنية تركز على القدرة على التكيف مع المناخ والابتكار الشامل."
+        },
+        "pt": {
+          "title": "Etiópia promove a transformação agroalimentar liderada pelos jovens",
+          "summary": "A FAO e os seus parceiros reuniram jovens líderes, decisores políticos e outras partes interessadas na Etiópia para converter o diálogo sobre sistemas agroalimentares em ações nacionais centradas na resiliência climática e na inovação inclusiva."
+        },
+        "sw": {
+          "title": "Ethiopia yaendeleza mabadiliko ya kilimo na chakula yanayoongozwa na vijana",
+          "summary": "FAO na washirika wake waliwakutanisha viongozi vijana, watunga sera na wadau wengine nchini Ethiopia ili kubadilisha mazungumzo kuhusu mifumo ya kilimo na chakula kuwa hatua za kitaifa zinazolenga ustahimilivu wa tabianchi na uvumbuzi jumuishi."
+        }
+      }
     },
     {
       "country_code": "ET",
@@ -1128,43 +1532,27 @@
       "source_tier": 1,
       "published": "2026-03-02",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "SL",
-      "category": "finance",
-      "headline": "Sierra Leone prepares US$760 million agrifood investment portfolio for 2026 Hand-in-Hand Forum",
-      "summary": "FAO's 2026 investment profile presents four Sierra Leone opportunities in rice, cassava, poultry feed and palm oil, with total proposed investment of US$760 million.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/sierra-leone-2026/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "SL",
-      "category": "markets",
-      "headline": "Sierra Leone targets major rice import substitution through new investment case",
-      "summary": "The rice investment case targets mechanization, milling, storage, aggregation and financing, with an objective of reducing imports while raising yields and milling utilization.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/sierra-leone-2026/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "SL",
-      "category": "markets",
-      "headline": "Sierra Leone develops cassava processing and formal export opportunities",
-      "summary": "FAO's cassava case targets production clusters, processing for high-quality cassava flour and starch, logistics and financing to formalize regional trade.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/sierra-leone-2026/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Ethiopia aligns national priorities with agrifood transformation roadmap",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "L’Éthiopie aligne ses priorités nationales sur la feuille de route de transformation agroalimentaire",
+          "summary": "La FAO et le ministère éthiopien de l’Agriculture travaillent à aligner les actions de la feuille de route mondiale sur les priorités nationales en matière de sécurité alimentaire, de résilience climatique et de transformation agroalimentaire."
+        },
+        "ar": {
+          "title": "إثيوبيا توائم أولوياتها الوطنية مع خارطة طريق تحول النظم الزراعية والغذائية",
+          "summary": "تعمل الفاو ووزارة الزراعة الإثيوبية على مواءمة إجراءات خارطة الطريق العالمية مع الأولويات الوطنية للأمن الغذائي والقدرة على التكيف مع المناخ وتحول النظم الزراعية والغذائية."
+        },
+        "pt": {
+          "title": "Etiópia alinha prioridades nacionais com o roteiro de transformação agroalimentar",
+          "summary": "A FAO e o Ministério da Agricultura da Etiópia estão a alinhar as ações do roteiro global com as prioridades nacionais de segurança alimentar, resiliência climática e transformação agroalimentar."
+        },
+        "sw": {
+          "title": "Ethiopia yaoanisha vipaumbele vya kitaifa na ramani ya mabadiliko ya kilimo na chakula",
+          "summary": "FAO na Wizara ya Kilimo ya Ethiopia zinaoanisha hatua za ramani ya kimataifa na vipaumbele vya kitaifa vya usalama wa chakula, ustahimilivu wa tabianchi na mabadiliko ya mifumo ya kilimo na chakula."
+        }
+      }
     },
     {
       "country_code": "SL",
@@ -1176,7 +1564,27 @@
       "source_tier": 1,
       "published": "2026-04-20",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Sierra Leone publishes 2024 Annual Agricultural Survey microdata",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La Sierra Leone publie les microdonnées de l’Enquête annuelle agricole 2024",
+          "summary": "Les microdonnées de l’Enquête annuelle agricole 2024 sont désormais accessibles au public sur la plateforme nationale NADA, renforçant les données factuelles pour l’élaboration des politiques agricoles."
+        },
+        "ar": {
+          "title": "سيراليون تنشر البيانات الجزئية للمسح الزراعي السنوي لعام 2024",
+          "summary": "أصبحت البيانات الجزئية للمسح الزراعي السنوي لعام 2024 متاحة للجمهور عبر منصة NADA الوطنية، مما يعزز الأدلة المستخدمة في وضع السياسات الزراعية."
+        },
+        "pt": {
+          "title": "Serra Leoa publica microdados do Inquérito Agrícola Anual de 2024",
+          "summary": "Os microdados do Inquérito Agrícola Anual de 2024 estão agora disponíveis ao público na plataforma nacional NADA, reforçando a base de evidências para a elaboração de políticas agrícolas."
+        },
+        "sw": {
+          "title": "Sierra Leone yachapisha data ndogo za Utafiti wa Kilimo wa Mwaka 2024",
+          "summary": "Data ndogo za Utafiti wa Kilimo wa Mwaka 2024 sasa zinapatikana kwa umma kupitia jukwaa la kitaifa la NADA, na kuimarisha ushahidi wa kuandaa sera za kilimo."
+        }
+      }
     },
     {
       "country_code": "SL",
@@ -1188,7 +1596,27 @@
       "source_tier": 1,
       "published": "2025-11-11",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Sierra Leone agrifood investor summit connects financiers and domestic firms",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le sommet des investisseurs agroalimentaires de Sierra Leone réunit financiers et entreprises nationales",
+          "summary": "Plus de 25 investisseurs internationaux et régionaux et plus de 60 entreprises agroalimentaires nationales ont participé au sommet de 2025, couvrant notamment le riz, le manioc, le cacao, la noix de cajou, la volaille, les céréales fourragères, la foresterie et l’huile de palme."
+        },
+        "ar": {
+          "title": "قمة المستثمرين الزراعيين والغذائيين في سيراليون تجمع الممولين والشركات المحلية",
+          "summary": "شارك في قمة عام 2025 أكثر من 25 مستثمراً دولياً وإقليمياً وأكثر من 60 شركة زراعية وغذائية محلية، وشملت قطاعات الأرز والكسافا والكاكاو والكاجو والدواجن وحبوب الأعلاف والغابات وزيت النخيل."
+        },
+        "pt": {
+          "title": "Cimeira de investidores agroalimentares da Serra Leoa reúne financiadores e empresas nacionais",
+          "summary": "Mais de 25 investidores internacionais e regionais e mais de 60 empresas agroalimentares nacionais participaram na cimeira de 2025, abrangendo arroz, mandioca, cacau, caju, aves, cereais para alimentação animal, silvicultura e óleo de palma."
+        },
+        "sw": {
+          "title": "Mkutano wa wawekezaji wa kilimo na chakula Sierra Leone waunganisha wafadhili na kampuni za ndani",
+          "summary": "Zaidi ya wawekezaji 25 wa kimataifa na kikanda pamoja na zaidi ya kampuni 60 za ndani za kilimo na chakula walishiriki mkutano wa 2025, ukihusisha mchele, muhogo, kakao, korosho, kuku, nafaka za malisho, misitu na mafuta ya mawese."
+        }
+      }
     },
     {
       "country_code": "SL",
@@ -1200,7 +1628,27 @@
       "source_tier": 1,
       "published": "2025-02-20",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Sierra Leone agrifood stakeholders set actions for Feed Salone Pillar 3",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Les acteurs agroalimentaires de Sierra Leone définissent des actions pour le pilier 3 de Feed Salone",
+          "summary": "Le plan de mise en œuvre du pilier 3 de Feed Salone fixe des objectifs pour 2028 concernant la mouture du riz, la production d’œufs, la culture d’oignons, la transformation du manioc et la qualité et la production de noix de cajou."
+        },
+        "ar": {
+          "title": "أصحاب المصلحة في قطاع الزراعة والغذاء بسيراليون يحددون إجراءات للركيزة الثالثة من Feed Salone",
+          "summary": "تحدد خطة تنفيذ الركيزة الثالثة من Feed Salone أهدافاً لعام 2028 لطحن الأرز وإنتاج البيض وزراعة البصل ومعالجة الكسافا وتحسين جودة الكاجو وإنتاجه."
+        },
+        "pt": {
+          "title": "Partes interessadas agroalimentares da Serra Leoa definem ações para o Pilar 3 do Feed Salone",
+          "summary": "O plano de implementação do Pilar 3 do Feed Salone estabelece metas para 2028 relativas à moagem de arroz, produção de ovos, cultivo de cebola, processamento de mandioca e qualidade e produção de caju."
+        },
+        "sw": {
+          "title": "Wadau wa kilimo na chakula Sierra Leone waweka hatua za Nguzo ya 3 ya Feed Salone",
+          "summary": "Mpango wa utekelezaji wa Nguzo ya 3 ya Feed Salone unaweka malengo ya 2028 kuhusu kusaga mchele, uzalishaji wa mayai, kilimo cha vitunguu, uchakataji wa muhogo na ubora na uzalishaji wa korosho."
+        }
+      }
     },
     {
       "country_code": "SL",
@@ -1212,7 +1660,27 @@
       "source_tier": 1,
       "published": "2026-06-29",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Sierra Leone agriculture ministry meets African Development Bank executive director",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le ministère de l’Agriculture de Sierra Leone rencontre un directeur exécutif de la Banque africaine de développement",
+          "summary": "Le ministère de l’Agriculture a fait état de discussions avec la Banque africaine de développement sur la coopération et les investissements en cours dans le secteur agricole de Sierra Leone."
+        },
+        "ar": {
+          "title": "وزارة الزراعة في سيراليون تلتقي المدير التنفيذي للبنك الأفريقي للتنمية",
+          "summary": "أفادت وزارة الزراعة بإجراء مناقشات مع البنك الأفريقي للتنمية بشأن التعاون والاستثمارات الجارية في القطاع الزراعي في سيراليون."
+        },
+        "pt": {
+          "title": "Ministério da Agricultura da Serra Leoa reúne-se com diretor executivo do Banco Africano de Desenvolvimento",
+          "summary": "O Ministério da Agricultura informou ter mantido conversações com o Banco Africano de Desenvolvimento sobre cooperação e investimentos em curso no setor agrícola da Serra Leoa."
+        },
+        "sw": {
+          "title": "Wizara ya Kilimo ya Sierra Leone yakutana na mkurugenzi mtendaji wa Benki ya Maendeleo ya Afrika",
+          "summary": "Wizara ya Kilimo iliripoti mazungumzo na Benki ya Maendeleo ya Afrika kuhusu ushirikiano na uwekezaji unaoendelea katika sekta ya kilimo ya Sierra Leone."
+        }
+      }
     },
     {
       "country_code": "AO",
@@ -1224,7 +1692,11 @@
       "source_tier": 1,
       "published": "2026-10-06",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "Angola presents four agrifood investment cases worth a proposed US$1.17 billion",
+      "translation_status": "in_review"
     },
     {
       "country_code": "AO",
@@ -1236,7 +1708,27 @@
       "source_tier": 1,
       "published": "2026-02-11",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO supports investment planning for Angola’s avocado, citrus and palm-oil value chains",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "La FAO soutient la planification des investissements dans les chaînes de valeur de l’avocat, des agrumes et de l’huile de palme en Angola",
+          "summary": "La FAO et le gouvernement angolais utilisent des études de chaînes de valeur pour orienter les investissements durables, la transformation, la logistique et la préparation à l’exportation dans l’avocat, les agrumes et l’huile de palme."
+        },
+        "ar": {
+          "title": "الفاو تدعم تخطيط الاستثمار في سلاسل قيمة الأفوكادو والحمضيات وزيت النخيل في أنغولا",
+          "summary": "تستخدم الفاو والحكومة الأنغولية دراسات سلاسل القيمة لتوجيه الاستثمار المستدام والتصنيع والخدمات اللوجستية والاستعداد للتصدير في قطاعات الأفوكادو والحمضيات وزيت النخيل."
+        },
+        "pt": {
+          "title": "FAO apoia o planeamento de investimentos nas cadeias de valor do abacate, citrinos e óleo de palma em Angola",
+          "summary": "A FAO e o governo angolano utilizam estudos de cadeias de valor para orientar investimentos sustentáveis, processamento, logística e preparação para exportação nos setores do abacate, citrinos e óleo de palma."
+        },
+        "sw": {
+          "title": "FAO yaunga mkono mipango ya uwekezaji katika minyororo ya thamani ya parachichi, machungwa na mafuta ya mawese Angola",
+          "summary": "FAO na serikali ya Angola zinatumia tafiti za minyororo ya thamani kuelekeza uwekezaji endelevu, uchakataji, usafirishaji na maandalizi ya kuuza nje katika parachichi, machungwa na mafuta ya mawese."
+        }
+      }
     },
     {
       "country_code": "AO",
@@ -1248,55 +1740,11 @@
       "source_tier": 1,
       "published": "2026-10-05",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "AO",
-      "category": "data",
-      "headline": "Angola strengthens food-balance-sheet capacity for evidence-based policy",
-      "summary": "FAO and the Ministry of Agriculture and Forestry conducted Food Balance Sheet training and compilation work to strengthen agricultural and food-policy evidence.",
-      "url": "https://www.fao.org/angola/news/detail/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-06-05",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "AO",
-      "category": "climate",
-      "headline": "Angola builds community capacity for resilient agrifood systems",
-      "summary": "FAO and Angola's Ministry of Environment are strengthening the skills of farmers, technicians and community leaders in sustainable land, water and food-production practices.",
-      "url": "https://www.fao.org/angola/news/detail/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-05-22",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "AO",
-      "category": "research-innovation",
-      "headline": "Angola strengthens fruit-fly surveillance to protect horticultural trade",
-      "summary": "FAO highlighted surveillance and management of invasive fruit flies affecting mango, citrus and avocado production, with implications for livelihoods, food security and exports.",
-      "url": "https://www.fao.org/angola/news/detail/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-02-24",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "AO",
-      "category": "general",
-      "headline": "Angola advances agrifood investment and water security",
-      "summary": "Angola showcased agrifood transformation and water-security priorities during World Food Forum activities, reinforcing agriculture's role in economic diversification.",
-      "url": "https://www.fao.org/angola/news/detail/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-02-02",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+      "title": "World Food Day event in Angola highlights links between agriculture, research and nutrition",
+      "translation_status": "in_review"
     },
     {
       "country_code": "AO",
@@ -1308,19 +1756,9 @@
       "source_tier": 1,
       "published": "2026-08-13",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "BJ",
-      "category": "finance",
-      "headline": "Benin targets rice, poultry and soybean in 2026 agrifood investment agenda",
-      "summary": "FAO identifies rice, poultry and soybean among Benin's priority value chains for the 2026 Hand-in-Hand Investment Forum.",
-      "url": "https://www.fao.org/africa/news-stories/news-detail/twenty-african-countries-to-present-agrifood-investment-opportunities-at-the-2026-hand-in-hand-investment-forum/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "needs_review",
+      "title": "Angola and Brazil expand cooperation on agricultural investment and technology",
+      "translation_status": "in_review"
     },
     {
       "country_code": "BJ",
@@ -1332,7 +1770,27 @@
       "source_tier": 1,
       "published": "2025-04-04",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Benin launches support for its third-generation agricultural investment plan",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le Bénin lance un appui à son troisième plan d’investissement agricole",
+          "summary": "La FAO et le ministère béninois de l’Agriculture, de l’Élevage et de la Pêche ont lancé un appui à la mise en œuvre de la troisième génération du PNIASAN et à la planification des investissements prioritaires."
+        },
+        "ar": {
+          "title": "بنين تطلق دعماً لتنفيذ الجيل الثالث من خطتها للاستثمار الزراعي",
+          "summary": "أطلقت الفاو ووزارة الزراعة والثروة الحيوانية والصيد في بنين دعماً لتنفيذ الجيل الثالث من الخطة الوطنية للاستثمار الزراعي والأمن الغذائي والتغذوي وتخطيط الاستثمارات ذات الأولوية."
+        },
+        "pt": {
+          "title": "Benim lança apoio ao seu plano de investimento agrícola de terceira geração",
+          "summary": "A FAO e o Ministério da Agricultura, Pecuária e Pescas do Benim lançaram apoio à implementação da terceira geração do PNIASAN e ao planeamento de investimentos prioritários."
+        },
+        "sw": {
+          "title": "Benin yazindua msaada kwa mpango wake wa kizazi cha tatu wa uwekezaji wa kilimo",
+          "summary": "FAO na Wizara ya Kilimo, Mifugo na Uvuvi ya Benin zimeanzisha msaada wa kutekeleza kizazi cha tatu cha PNIASAN na kupanga uwekezaji wa kipaumbele."
+        }
+      }
     },
     {
       "country_code": "BJ",
@@ -1344,67 +1802,11 @@
       "source_tier": 1,
       "published": "2026-06-10",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "BJ",
-      "category": "markets",
-      "headline": "Benin cereal prices remain below year-earlier levels in early 2026",
-      "summary": "FAO reports stable local rice and maize prices from January to April 2026, with rice about 10 percent below year-earlier levels and maize 25–35 percent lower.",
-      "url": "https://cb.apps.fao.org/country.jsp?code=BEN&lang=fr",
-      "source": "FAO GIEWS",
-      "source_tier": 1,
-      "published": "2026-06-10",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "BJ",
-      "category": "weather-climate",
-      "headline": "Benin faces localized flood and insecurity risks alongside favorable crop conditions",
-      "summary": "FAO reports generally favorable rainfall prospects for much of Benin but warns of localized flooding and continued insecurity disrupting agricultural activity in northern departments.",
-      "url": "https://cb.apps.fao.org/country.jsp?code=BEN&lang=fr",
-      "source": "FAO GIEWS",
-      "source_tier": 1,
-      "published": "2026-06-10",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CV",
-      "category": "finance",
-      "headline": "Cabo Verde presents US$20.23 million blue-economy investment portfolio",
-      "summary": "FAO's 2026 investment profile identifies three bankable projects focused on fishing-fleet modernization, artisanal fleet reconversion and integrated fish value-chain development.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CV",
-      "category": "fisheries",
-      "headline": "Cabo Verde targets fish-loss reduction and export competitiveness through fleet modernization",
-      "summary": "The semi-industrial fleet proposal introduces refrigeration, solar freezing, efficient propulsion and digital traceability to reduce post-harvest losses and improve access to premium markets.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CV",
-      "category": "markets",
-      "headline": "Cabo Verde proposes integrated fish processing and digital market platform",
-      "summary": "The integrated project combines digital buyer connections, cold storage, processing, eco-tourism and conversion of fish waste into organic fertilizer and aquafeed.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-07",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources.",
+      "title": "FAO GIEWS reports on 2026 cereal planting progress in Benin",
+      "translation_status": "in_review"
     },
     {
       "country_code": "CV",
@@ -1416,7 +1818,27 @@
       "source_tier": 1,
       "published": "2025-07-25",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "Cabo Verde launches its sixth General Agricultural Census",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le Cabo Verde lance son sixième Recensement général de l’agriculture",
+          "summary": "Le gouvernement a lancé le sixième Recensement général de l’agriculture afin de recueillir des données actualisées sur les cultures, l’élevage, la foresterie, les organisations agricoles, la main-d’œuvre et les conditions de vie rurales."
+        },
+        "ar": {
+          "title": "الرأس الأخضر يطلق التعداد العام السادس للزراعة",
+          "summary": "أطلقت الحكومة التعداد العام السادس للزراعة لجمع بيانات محدثة عن المحاصيل والثروة الحيوانية والغابات والمنظمات الزراعية والعمالة وظروف المعيشة في المناطق الريفية."
+        },
+        "pt": {
+          "title": "Cabo Verde lança o sexto Recenseamento Geral da Agricultura",
+          "summary": "O governo lançou o sexto Recenseamento Geral da Agricultura para recolher dados atualizados sobre culturas, pecuária, florestas, organizações de agricultores, mão de obra e condições de vida rurais."
+        },
+        "sw": {
+          "title": "Cabo Verde yazindua Sensa ya Jumla ya Kilimo ya sita",
+          "summary": "Serikali imezindua Sensa ya Jumla ya Kilimo ya sita ili kukusanya data mpya kuhusu mazao, mifugo, misitu, mashirika ya wakulima, nguvu kazi na hali ya maisha vijijini."
+        }
+      }
     },
     {
       "country_code": "CV",
@@ -1428,7 +1850,27 @@
       "source_tier": 1,
       "published": "2026-01-19",
       "verified": "2026-10-07",
-      "status": "official"
+      "status": "official",
+      "title": "FAO country programme supports climate adaptation in Cabo Verde",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le programme de pays de la FAO soutient l’adaptation climatique au Cabo Verde",
+          "summary": "Le programme de pays de la FAO comprend un projet d’adaptation climatique pour 2025–2029 destiné à améliorer la sécurité alimentaire et les moyens de subsistance face aux pressions climatiques."
+        },
+        "ar": {
+          "title": "البرنامج القطري للفاو يدعم التكيف مع المناخ في الرأس الأخضر",
+          "summary": "يتضمن البرنامج القطري للفاو مشروعاً للتكيف مع المناخ للفترة 2025–2029 يهدف إلى تحسين الأمن الغذائي وسبل العيش في ظل الضغوط المناخية."
+        },
+        "pt": {
+          "title": "Programa nacional da FAO apoia a adaptação climática em Cabo Verde",
+          "summary": "O programa nacional da FAO inclui um projeto de adaptação climática para 2025–2029 destinado a melhorar a segurança alimentar e os meios de subsistência perante as pressões climáticas."
+        },
+        "sw": {
+          "title": "Mpango wa FAO nchini Cabo Verde waunga mkono kukabiliana na tabianchi",
+          "summary": "Mpango wa FAO nchini humo unajumuisha mradi wa kukabiliana na tabianchi wa 2025–2029 unaolenga kuboresha usalama wa chakula na maisha ya watu chini ya shinikizo la tabianchi."
+        }
+      }
     },
     {
       "country_code": "CV",
@@ -1440,43 +1882,11 @@
       "source_tier": 1,
       "published": "2026-01-19",
       "verified": "2026-10-07",
-      "status": "official"
-    },
-    {
-      "country_code": "CV",
-      "category": "finance",
-      "headline": "Cabo Verde presents US$20.23 million fisheries and value-chain investment plan",
-      "summary": "FAO's 2026 Hand-in-Hand profile presents three investment cases focused on fishing-fleet modernization, fleet reconversion and integrated fish value chains.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-08",
-      "status": "official"
-    },
-    {
-      "country_code": "CV",
-      "category": "machinery-technology",
-      "headline": "Cabo Verde targets safer, lower-loss fishing through fleet modernization",
-      "summary": "The semi-industrial fleet proposal combines vessel modernization, solar-powered freezing, improved storage, hybrid propulsion and digital traceability.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-08",
-      "status": "official"
-    },
-    {
-      "country_code": "CV",
-      "category": "markets",
-      "headline": "Cabo Verde's integrated fish project links fishers to buyers through digital markets",
-      "summary": "The investment case proposes a digital marketplace connecting fishers with canneries, hotels and export buyers while expanding cold storage and value-added processing.",
-      "url": "https://www.fao.org/hand-in-hand/investment-forum-2026/cpv/en",
-      "source": "FAO",
-      "source_tier": 1,
-      "published": "2026-10-06",
-      "verified": "2026-10-08",
-      "status": "official"
+      "status": "review",
+      "lifecycle": "needs_review",
+      "review_reason": "FAO GIEWS country brief is a monitoring resource, not a news article; hold for migration to Resources.",
+      "title": "FAO GIEWS reports on cereal production and food insecurity outlook in Cabo Verde",
+      "translation_status": "in_review"
     },
     {
       "country_code": "CV",
@@ -1488,19 +1898,127 @@
       "source_tier": 1,
       "published": "2026-06-25",
       "verified": "2026-10-08",
-      "status": "official"
+      "status": "official",
+      "title": "Cabo Verde approves food and nutrition security strategy through 2035",
+      "translation_status": "in_review",
+      "translations": {
+        "fr": {
+          "title": "Le Cabo Verde approuve une stratégie de sécurité alimentaire et nutritionnelle à l’horizon 2035",
+          "summary": "La FAO indique que le Cabo Verde a approuvé sa Stratégie nationale pour la sécurité alimentaire et nutritionnelle et les systèmes alimentaires durables à l’horizon 2035, en privilégiant une gouvernance territoriale et multisectorielle."
+        },
+        "ar": {
+          "title": "الرأس الأخضر يعتمد استراتيجية للأمن الغذائي والتغذوي حتى عام 2035",
+          "summary": "تفيد الفاو بأن الرأس الأخضر اعتمد استراتيجيته الوطنية للأمن الغذائي والتغذوي والنظم الغذائية المستدامة حتى عام 2035، مع التركيز على الحوكمة الإقليمية والمتعددة القطاعات."
+        },
+        "pt": {
+          "title": "Cabo Verde aprova estratégia de segurança alimentar e nutricional até 2035",
+          "summary": "A FAO informa que Cabo Verde aprovou a sua Estratégia Nacional de Segurança Alimentar e Nutricional e de Sistemas Alimentares Sustentáveis até 2035, com ênfase na governação territorial e multissetorial."
+        },
+        "sw": {
+          "title": "Cabo Verde yaidhinisha mkakati wa usalama wa chakula na lishe hadi 2035",
+          "summary": "FAO inaripoti kuwa Cabo Verde imeidhinisha Mkakati wake wa Kitaifa wa Usalama wa Chakula na Lishe na Mifumo Endelevu ya Chakula hadi 2035, ukisisitiza utawala wa maeneo na sekta nyingi."
+        }
+      }
     },
     {
-      "country_code": "CV",
-      "category": "weather-climate",
-      "headline": "Cabo Verde's 2025 maize harvest falls below average amid rainfall shocks",
-      "summary": "FAO GIEWS reports maize production around 1,100 tonnes in 2025, nearly 40 percent below the five-year average, after erratic and insufficient rainfall.",
-      "url": "https://cb.apps.fao.org/country.jsp?code=CPV",
-      "source": "FAO GIEWS",
+      "country_code": "RW",
+      "category": "crops",
+      "title": "Rwanda launches the 2027A agricultural season with higher maize-yield targets",
+      "summary": "Rwanda’s Prime Minister joined farmers and officials in Rulindo for the 2027A season launch, where a cooperative reported increasing maize yields from 2 to 6 tonnes per hectare and set an 8-tonne target.",
+      "url": "https://www.rab.gov.rw/rw/1-1/news-details?cHash=6597e754f4a3287fa9300f8cf88216a7&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=83457",
+      "source": "Rwanda Agriculture and Animal Resources Development Board (RAB)",
       "source_tier": 1,
-      "published": "2026-01-19",
-      "verified": "2026-10-08",
-      "status": "official"
+      "published": "2026-10-10",
+      "discovered": "2026-10-16",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "translation_status": "in_review",
+      "review_reason": "Direct official RAB article; confirm the country-specific summary and date before editorial approval."
+    },
+    {
+      "country_code": "ML",
+      "category": "crops",
+      "title": "Office du Niger reviews the 2026–2027 agricultural campaign and fertilizer supply",
+      "summary": "The Office du Niger reports that its management reviewed implementation of the 2026–2027 agricultural campaign, maintenance of production-zone infrastructure and fertilizer availability at an October 2026 follow-up meeting.",
+      "url": "https://gouvernement.ml/office-du-niger-la-direction-fait-le-point-de-la-campagne-agricole-2026-2027/",
+      "source": "Information Gouvernementale du Mali",
+      "source_tier": 1,
+      "published": "2026-10-05",
+      "discovered": "2026-10-16",
+      "status": "review",
+      "lifecycle": "needs_review",
+      "translation_status": "in_review",
+      "review_reason": "Direct official government article; confirm that the Office du Niger story is appropriately assigned to Mali's national agricultural-news feed before approval."
+    },
+    {
+      "country_code": "RW",
+      "category": "crops",
+      "title": "RAB and AATF review Rwanda agricultural biotechnology and biosecurity projects",
+      "summary": "Rwanda Agriculture and Animal Resources Development Board and the African Agricultural Technology Foundation held their annual review and planning meeting on 14–15 October to assess the Rwanda Agri-Biotech–CMP and BioCap projects, review implementation challenges and set priorities for the next year.",
+      "url": "https://www.rab.gov.rw/rw/1-1/news-details?cHash=1ee573375c6e715659c6e92e46a8f79d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=83582",
+      "source": "Rwanda Agriculture and Animal Resources Development Board (RAB)",
+      "source_tier": 1,
+      "published": "2026-10-15",
+      "verified": "2026-10-16",
+      "status": "official",
+      "translation_status": "in_review",
+      "translation_review_note": "English source verified against the official publisher on 2026-10-16; localized title/summary still require human review."
+    },
+    {
+      "country_code": "AO",
+      "category": "livestock",
+      "title": "Angola resumes local production of Newcastle disease vaccine",
+      "summary": "Angola’s Veterinary Research Institute resumed Newcastle disease vaccine production at the Ministry of Agriculture and Forestry laboratory in Huíla after rehabilitation and technical training. The ministry reported 435,020 doses produced in three batches and planned further production, subject to continued laboratory operations.",
+      "url": "https://minagrif.gov.ao/web/noticias/iiv-volta-a-produzir-vacinas-da-new-castle-made-in-angola",
+      "source": "Ministry of Agriculture and Forestry, Angola",
+      "source_tier": 1,
+      "published": "2026-09-15",
+      "verified": "2026-10-16",
+      "status": "official",
+      "translation_status": "in_review",
+      "translation_review_note": "English source verified against the official publisher on 2026-10-16; localized title/summary still require human review."
+    },
+    {
+      "country_code": "GN",
+      "category": "markets",
+      "title": "Guinea explores financing and modernization for agricultural processing and input supply",
+      "summary": "Guinea’s Ministry of Agriculture met with Agrosource in May 2026 to discuss modernization of SOGUIPAH’s second processing line, technical and financial options, and possible financing mechanisms to improve farmers’ access to NPK and urea. The ministry said a technical committee would assess feasibility; this was a proposal, not a confirmed funding offer.",
+      "url": "https://agriculture.gov.gn/rencontre-entre-le-ministere-de-lagriculture-et-le-groupe-agrosource-modernisation-financements-et-perspectives-concretes-pour-lagriculture-guineenne/",
+      "source": "Ministry of Agriculture, Guinea",
+      "source_tier": 1,
+      "published": "2026-05-07",
+      "verified": "2026-10-16",
+      "status": "official",
+      "translation_status": "in_review",
+      "translation_review_note": "English source verified against the official publisher on 2026-10-16; localized title/summary still require human review."
+    },
+    {
+      "country_code": "ML",
+      "category": "policy",
+      "title": "Office du Niger reviews land-tenure governance and agricultural investment agreements",
+      "summary": "Mali’s government reported that regional experts reviewed an external audit of land leases and agreements at Office du Niger in October 2026. The review examines implementation gaps and recommendations for improving transparency, land development and agricultural investment; the audit’s recommendations were still subject to approval.",
+      "url": "https://gouvernement.ml/gestion-du-foncier-a-loffice-du-niger-le-rapport-audit-externe-sur-les-baux-et-conventions-examine-par-les-experts-regionaux/",
+      "source": "Information Gouvernementale du Mali",
+      "source_tier": 1,
+      "published": "2026-10-13",
+      "verified": "2026-10-16",
+      "status": "official",
+      "translation_status": "in_review",
+      "translation_review_note": "English source verified against the official publisher on 2026-10-16; localized title/summary still require human review."
+    },
+    {
+      "country_code": "TG",
+      "category": "research",
+      "title": "Togo upgrades national food-safety laboratory equipment under the FSRP programme",
+      "summary": "Togo’s agriculture ministry reported that the West Africa Food System Resilience Programme supplied modern scientific equipment to the National Laboratory for Food Safety and Phytosanitary Quality (LaNSA). A World Bank delegation visited in September 2026 to review improved analytical capacity and the laboratory’s role in food-safety checks for agro-food value chains.",
+      "url": "https://agriculture.gouv.tg/le-fsrp-modernise-les-equipements-scientifiques-du-lansa-pour-renforcer-le-controle-qualite-des-aliments-au-togo/",
+      "source": "Ministry of Agriculture, Fisheries, Animal Resources and Food Sovereignty, Togo",
+      "source_tier": 1,
+      "published": "2026-09-09",
+      "verified": "2026-10-16",
+      "status": "official",
+      "translation_status": "in_review",
+      "translation_review_note": "English source verified against the official publisher on 2026-10-16; localized title/summary still require human review."
     }
   ]
 }

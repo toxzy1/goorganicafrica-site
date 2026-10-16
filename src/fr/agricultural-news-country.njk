@@ -19,16 +19,25 @@ pageLanguage: fr
 <p><a href="/fr/agricultural-news/">← Toutes les actualités agricoles</a></p>
 <h1>{{ country.flag }} Actualités agricoles — {{ displayCountryName }}</h1>
 <p class="lede">Développements agricoles actuels et vérifiés pour ce pays.</p>
-{% if country.articles and country.articles.length %}
-{% for article in country.articles %}
+{% set publishedCountryArticles = [] %}
+{% for candidate in country.articles %}
+  {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and (not candidate.lifecycle or candidate.lifecycle == "current") %}{% set _ = publishedCountryArticles.push(candidate) %}{% endif %}
+{% endfor %}
+{% if publishedCountryArticles.length %}
+{% for article in publishedCountryArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
 <article class="card" style="margin:16px 0;">
-<h2>{{ translated.title or article.title }}</h2><p>{{ translated.summary or article.summary }}</p>
+{% if translated and translated.title and translated.summary and article.translation_status == "translated" %}
+<h2>{{ translated.title }}</h2><p>{{ translated.summary }}</p>
+{% else %}
+<p class="translation-pending-note" data-translation-status="pending"><small>Traduction à vérifier</small></p>
+<h2>{{ article.title }}</h2><p>{{ article.summary }}</p>
+{% endif %}
 <p><small>Source: {{ article.source }} · Vérifié: {{ article.verified }}</small></p>
 <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">Lire la source originale →</a>
 </article>
 {% endfor %}
 {% else %}
-<div class="card"><h2>Actualités en cours de vérification</h2><p>Aucune actualité actuelle vérifiée n’a encore été publiée pour ce pays.</p><p>Les articles seront ajoutés après vérification d’une source officielle ou fiable.</p></div>
+<div class="card news-empty-fallback"><h2>Actualités en cours de vérification</h2><p>Aucune actualité actuelle vérifiée n’a encore été publiée pour ce pays. Les articles seront ajoutés après vérification d’une source officielle ou fiable.</p><p>En attendant, consultez les <a href="/fr/agriculture-resources/">ressources agricoles</a>, les <a href="/fr/opportunities/">opportunités</a> ou <a href="/search/">recherchez des informations agricoles</a>.</p></div>
 {% endif %}
 </div></section>

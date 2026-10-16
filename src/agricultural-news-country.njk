@@ -19,8 +19,12 @@ pageLanguage: en
 <p><a href="/agricultural-news/">← All Agricultural News</a></p>
 <h1>{{ country.flag }} Agricultural News — {{ displayCountryName }}</h1>
 <p class="lede">Current, verified agricultural developments for this country.</p>
-{% if country.articles and country.articles.length %}
-{% for article in country.articles %}
+{% set publishedArticles = [] %}
+{% for candidate in country.articles %}
+  {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and (not candidate.lifecycle or candidate.lifecycle == "current") %}{% set _ = publishedArticles.push(candidate) %}{% endif %}
+{% endfor %}
+{% if publishedArticles.length %}
+{% for article in publishedArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
 <article class="card" style="margin:16px 0;">
 <h2>{{ translated.title or article.title }}</h2><p>{{ translated.summary or article.summary }}</p>
@@ -29,6 +33,6 @@ pageLanguage: en
 </article>
 {% endfor %}
 {% else %}
-<div class="card"><h2>News is being verified</h2><p>No current verified stories have been published for this country yet.</p><p>We will add stories only after checking an official or authoritative source.</p></div>
+<div class="card news-empty-fallback"><h2>News is being verified</h2><p>No current verified stories have been published for this country yet. We publish only after checking an official or authoritative source.</p><p>In the meantime, explore <a href="/agriculture-resources/">agricultural resources</a>, <a href="/opportunities/">opportunities</a>, or <a href="/search/">search all farming information</a>.</p></div>
 {% endif %}
 </div></section>

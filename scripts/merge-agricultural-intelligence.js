@@ -4,30 +4,119 @@ const path = require('path');
 const root = path.join(__dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
 
-function merge(baseName, supplementName, countryField, listField, bucketed) {
-  const basePath = path.join(root, 'src', '_data', baseName);
-  const extraPath = path.join(root, 'src', '_data', supplementName);
-  const base = JSON.parse(fs.readFileSync(basePath, 'utf8'));
-  const extra = JSON.parse(fs.readFileSync(extraPath, 'utf8'));
-  const countries = new Map(base.countries.map(c => [c.code, c]));
-  for (const record of extra.records || []) {
-    const country = countries.get(record[countryField]);
-    if (!country) continue;
-    if (bucketed) {
-      country.records = country.records || {};
-      const bucket = record.category || 'general';
-      country.records[bucket] = country.records[bucket] || [];
-      if (!country.records[bucket].some(r => r.url === record.url || r.title === record.title)) country.records[bucket].push(record);
-    } else {
-      country[listField] = country[listField] || [];
-      if (!country[listField].some(r => r.url === record.url || r.title === record.title)) country[listField].push(record);
+// Normalize URLs for duplicate comparison only. Original source URLs remain
+// unchanged in the published records.
+function normalizeUrl(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  try {
+    const url = new URL(raw);
+    url.hash = '';
+    url.hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+    if ((url.protocol === 'https:' && url.port === '443') ||
+        (url.protocol === 'http:' && url.port === '80')) url.port = '';
+    while (url.pathname.length > 1 && url.pathname.endsWith('/')) {
+      url.pathname = url.pathname.slice(0, -1);
     }
+    return url.toString();
+  } catch (_) {
+    return raw.split('#')[0].replace(/\/+$/, '').toLowerCase();
   }
-  base.last_updated = today;
-  fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\n');
-  return extra.records ? extra.records.length : 0;
 }
 
-const resources = merge('agriculturalResources.json', 'agriculturalResourcesSupplement.json', 'country_code', 'records', true);
-const news = merge('agriculturalNews.json', 'agriculturalNewsSupplement.json', 'country_code', 'articles', false);
-console.log(`Agricultural intelligence merge: ${resources} resource records + ${news} news records.`);
+function normalizeTitle(value) {
+  return String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+function merge(baseName, supplementNames, countryField, listField, bucketed) {
+  const basePath = path.join(root, 'src', '_data', baseName);
+  const base = JSON.parse(fs.readFileSync(basePath, 'utf8'));
+  const countries = new Map(base.countries.map(country => [country.code, country]));
+  let added = 0;
+  let skippedDuplicates = 0;
+  let skippedForReview = 0;
+
+  for (const supplementName of supplementNames) {
+    const extraPath = path.join(root, 'src', '_data', supplementName);
+    if (!fs.existsSync(extraPath)) {
+      throw new Error('Agricultural intelligence source file is missing: ' + supplementName);
+    }
+    const extra = JSON.parse(fs.readFileSync(extraPath, 'utf8'));
+
+    for (const record of extra.records || []) {
+      // Review-queue records must never flow into the public dataset during a
+      // build. Known review states are excluded; curated records without a
+      // status remain compatible with older datasets.
+      const status = String(record.status || "").trim().toLowerCase();
+      const lifecycle = String(record.lifecycle || "").trim().toLowerCase();
+      if (["review", "needs_review", "in_review", "draft", "pending"].includes(status) ||
+          ["review", "needs_review", "in_review", "draft", "pending"].includes(lifecycle)) {
+        skippedForReview++;
+        continue;
+      }
+
+      // Some curated feed records use "headline" rather than "title". The
+      // public templates render title, so normalize the field during merge.
+      const candidate = String(record.title || "").trim()
+        ? record
+        : {...record, title: record.headline || record.name || ""};
+      const country = countries.get(candidate[countryField]);
+      if (!country) continue;
+
+      let existing;
+      if (bucketed) {
+        country.records = country.records || {};
+        existing = Object.values(country.records).flatMap(items => Array.isArray(items) ? items : []);
+      } else {
+        country[listField] = country[listField] || [];
+        existing = country[listField];
+      }
+
+      const candidateUrl = normalizeUrl(candidate.url);
+      const candidateTitle = normalizeTitle(candidate.title);
+      // Skip only a same-country record with both the same normalized URL
+      // and title. A shared regional/project page alone is not enough to
+      // declare two differently titled records duplicates.
+      const duplicate = candidateUrl && candidateTitle && existing.some(item =>
+        normalizeUrl(item.url) === candidateUrl &&
+        normalizeTitle(item.title || item.headline) === candidateTitle
+      );
+      if (duplicate) {
+        skippedDuplicates++;
+        continue;
+      }
+
+      if (bucketed) {
+        const category = candidate.category || 'general';
+        country.records[category] = country.records[category] || [];
+        country.records[category].push(candidate);
+      } else {
+        country[listField].push(candidate);
+      }
+      added++;
+    }
+  }
+
+  base.last_updated = today;
+  fs.writeFileSync(basePath, JSON.stringify(base, null, 2) + '\n');
+  console.log(baseName + ': added ' + added + ', skipped review candidates ' + skippedForReview + ', skipped exact normalized duplicates ' + skippedDuplicates + '.');
+  return added;
+}
+
+// Gap-file records are review candidates. Do not merge them into the public
+// base dataset automatically; Eleventy and the monitor keep them in review.
+const resources = merge(
+  'agriculturalResources.json',
+  ['agriculturalResourcesSupplement.json'],
+  'country_code',
+  'records',
+  true
+);
+const news = merge(
+  'agriculturalNews.json',
+  ['agriculturalNewsSupplement.json', 'agriculturalNewsExpansion.json', 'agriculturalNewsEquatorialGuinea.json'],
+  'country_code',
+  'articles',
+  false
+);
+console.log('Agricultural intelligence merge complete: ' + resources + ' resource records + ' + news + ' news records added.');
