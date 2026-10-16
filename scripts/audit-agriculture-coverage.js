@@ -117,7 +117,9 @@ resources.forEach((r, i) => {
   if (nonempty(r.url) && !/^https?:\/\//i.test(r.url)) errors.push(`Resource ${i + 1} (${code}): URL is not HTTP(S): ${r.url}`);
   if (nonempty(r.url)) resourceUrls.set(r.url, [...(resourceUrls.get(r.url) || []), r]);
 });
-publicCoverageResources.forEach((r) => {
+// Country/category coverage must describe what visitors can actually see;
+// held review candidates remain in the inventory but do not satisfy public coverage.
+resourcePublishable.forEach((r) => {
   const code = String(r.country_code || r.code || "").toUpperCase();
   if (!EXPECTED_CODES.has(code)) return;
   resourceCounts[code]++;
@@ -226,7 +228,7 @@ if (translationData.ar && translationData.ar.dir !== "rtl") errors.push("Arabic 
 
 console.log("GoOrganicAfrica agriculture coverage audit");
 console.log(`Country registry: ${countryRegistry.length} entries; expected ${EXPECTED.length} African countries.`);
-console.log(`Resources: ${primary.length} primary + ${supplement.length} supplemental = ${resources.length} inventory records; ${publicCoverageResources.length} unique country/source records used for coverage.`);
+console.log(`Resources: ${primary.length} primary + ${supplement.length} supplemental = ${resources.length} inventory records; ${publicCoverageResources.length} unique country/source records after deduplication, ${resourcePublishable.length} publishable records used for public coverage.`);
 console.log(`Agricultural News: ${newsTotal} articles across ${newsCountries.length} country records.`);
 console.log("Resources by country: " + EXPECTED.map(([c,n]) => `${c}=${resourceCounts[c]}`).join("  "));
 console.log("News by country: " + EXPECTED.map(([c,n]) => `${c}=${newsCounts[c]}`).join("  "));
