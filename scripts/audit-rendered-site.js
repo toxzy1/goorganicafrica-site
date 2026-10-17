@@ -233,8 +233,33 @@ for (const item of resourcePages) {
     if (!html.includes('id="' + id + '"')) failures.push(item.rel + ": missing resource search/filter element #" + id);
   }
   if (!html.includes(item.title)) failures.push(item.rel + ": expected localized resource heading is missing");
+  if (!html.includes('id="resourceEmpty"')) failures.push(item.rel + ": missing accessible no-results message");
+  if (!html.includes("Intl.DisplayNames")) failures.push(item.rel + ": country names are not localized for the selected language");
+  if (!html.includes("data-resource-country-name")) failures.push(item.rel + ": country headings lack localization hooks");
+  if (item.lang !== "en" && html.includes("<h2>Regional Agricultural Intelligence</h2>")) failures.push(item.rel + ": regional intelligence heading is not localized");
+  if (item.lang !== "en" && html.includes("Shared agricultural initiatives and corridors spanning multiple African countries.")) failures.push(item.rel + ": regional intelligence description is not localized");
+  if (item.lang !== "en" && html.includes("Funding, programmes, markets and services can change.")) failures.push(item.rel + ": current-resource explanation is not localized");
   const selectors = selectorCount(html);
   if (selectors !== 1) failures.push(item.rel + ": expected exactly one site language selector, found " + selectors);
+}
+
+// Regional intelligence is loaded from its JSON data file exactly once. A second
+// global-data registration used to deep-merge the same array and duplicate every card.
+const regionalSourcePath = path.join(source, "_data", "agriculturalRegionalIntelligence.json");
+if (fs.existsSync(regionalSourcePath)) {
+  const regionalSource = JSON.parse(fs.readFileSync(regionalSourcePath, "utf8"));
+  const expectedRegions = regionalSource.regions || [];
+  const expectedUrls = expectedRegions.map(region => normalizedSourceHref(region.url)).filter(Boolean);
+  if (new Set(expectedUrls).size !== expectedUrls.length) failures.push("Regional intelligence source data contains duplicate URLs.");
+  for (const item of resourcePages) {
+    const html = read(item.rel);
+    if (!html) continue;
+    const section = html.match(/<section id=["']regionalAgriculturalIntelligence["'][\\s\\S]*?<\\/section>/i);
+    if (!section) { failures.push(item.rel + ": regional agricultural intelligence section is missing"); continue; }
+    const renderedUrls = [...section[0].matchAll(/<a\\b[^>]*href=["']([^"']+)["']/gi)].map(match => normalizedSourceHref(match[1]));
+    if (renderedUrls.length !== expectedUrls.length) failures.push(item.rel + ": expected " + expectedUrls.length + " regional intelligence cards, found " + renderedUrls.length);
+    if (new Set(renderedUrls).size !== renderedUrls.length) failures.push(item.rel + ": duplicate regional intelligence cards are rendered");
+  }
 }
 
 // A resource URL may be shared across countries, but it should appear
