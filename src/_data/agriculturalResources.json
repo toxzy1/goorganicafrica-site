@@ -201,7 +201,22 @@
             "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
           }
         ],
-        "insurance": [],
+        "insurance": [
+          {
+            "title": "Nigeria — NAIC agricultural crop and livestock insurance guidance",
+            "description": "The Nigerian Agricultural Insurance Corporation (NAIC) provides agricultural insurance for crops, livestock and farm assets. Its official FAQ explains the normal cover process: visit the nearest NAIC office, complete a proposal form, undergo pre-insurance inspection, pay the applicable premium and receive policy documents.",
+            "url": "https://www.naic.gov.ng/faqs/",
+            "source": "Nigerian Agricultural Insurance Corporation (NAIC)",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural insurance and risk protection",
+            "eligibility": "Individual and corporate farmers may seek cover; available products, insured items and any premium subsidy depend on the policy, crop/livestock and applicable scheme.",
+            "access": "Contact NAIC before purchase to confirm current products, risks covered, premium subsidy eligibility, exclusions and claim requirements. The FAQ says prospective insured farmers should visit their nearest NAIC office and complete the proposal and inspection process.",
+            "contact": "info@naic.gov.ng · corporateaffairs@naic.gov.ng · +234 80 5095 2203",
+            "category": "insurance"
+          }
+        ],
         "farmer-support": [],
         "research": [
           {
@@ -3583,7 +3598,23 @@
           }
         ],
         "grants": [],
-        "machinery": [],
+        "machinery": [
+          {
+            "title": "Eswatini Government Subsidised Tractor Hire Services",
+            "description": "The National Maize Corporation's tractor-hire service provides subsidised mechanisation for farmers. The published programme states that government pays 30% of the tractor-hour cost and the farmer pays 70%; tractor capacity and local arrangements affect service availability.",
+            "url": "https://www.nmc.co.sz/tractor-hire-services/",
+            "source": "National Maize Corporation (NMC), Eswatini",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Subsidised tractor hire and mechanisation service",
+            "amount": "Government subsidy: 30% of the tractor-hour cost; farmer contribution: 70%.",
+            "eligibility": "Farmers using the NMC tractor-hire service, subject to local service availability.",
+            "access": "Pay through an Eswatini Bank branch and take the deposit slip to the nearest Rural Development Area (RDA). The NMC Tractor Pool Coordinator registers the farmer and issues a job card for the tractor driver. Confirm local availability and current rates before paying.",
+            "contact": "info@nmc.co.sz · +268 2518 7432",
+            "category": "machinery"
+          }
+        ],
         "general": [
           {
             "title": "FAO Eswatini country agriculture profile",
@@ -3612,7 +3643,25 @@
             }
           }
         ],
-        "inputs": [],
+        "inputs": [
+          {
+            "title": "Eswatini Government Input Subsidy Programme — National Maize Corporation",
+            "description": "The National Maize Corporation (NMC), which manages the Government Input Subsidy Programme with the Ministry of Agriculture, says eligible small-scale farmers can receive a 50% subsidy on input costs for up to one hectare. Supported crops are white maize, sugar beans and sorghum; the page lists package quantities and the registration process.",
+            "url": "https://www.nmc.co.sz/inputs-subsidy/",
+            "source": "National Maize Corporation (NMC), Eswatini, working with the Ministry of Agriculture",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Government agricultural input subsidy",
+            "amount": "50% of eligible input costs on up to one hectare, subject to programme rules.",
+            "eligibility": "Farmers with access to up to one hectare; eligible crops are white maize, sugar beans and sorghum. Soil-test results are required. Farmers earning more than E12,000 per month, farmers already benefiting from other government farming programmes, and more than one beneficiary per nuclear family are excluded under the published criteria.",
+            "beneficiary": "Small-scale farmers growing white maize, sugar beans or sorghum",
+            "deadline": "Annual farmer-contribution prices are usually announced around August; the page does not specify a current closing date.",
+            "access": "Obtain the application form from a Rural Development Area (RDA), Tinkhundla centre, NMC depot or extension officer. Confirm the current season's intake, approved agro-dealers and package availability with NMC.",
+            "contact": "info@nmc.co.sz · +268 2518 7432",
+            "category": "inputs"
+          }
+        ],
         "markets": [
           {
             "title": "FAO Hand-in-Hand Investment Forum 2026 — national agrifood investment opportunities",
@@ -3727,7 +3776,20 @@
       "slug": "gambia",
       "flag": "🇬🇲",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "The Gambia — GAMIRSALEP agricultural lending risk-sharing project",
+            "description": "The Central Projects Coordinating Unit (CPCU) under The Gambia's Ministry of Agriculture describes GAMIRSALEP as a project to establish a risk-sharing facility and strengthen institutions so agricultural value-chain actors can access lending from financial institutions. It covers regions across the country; the final beneficiaries are actors in agricultural value chains.",
+            "url": "https://www.cpcu.gm/about-gamirsalep",
+            "source": "Central Projects Coordinating Unit (CPCU), Ministry of Agriculture and Livestock, The Gambia",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural credit risk-sharing project",
+            "access": "This is not a direct grant or automatic loan. Ask participating banks or microfinance institutions whether the GAMIRSAL risk-sharing facility is operational for your value chain and what loan eligibility, collateral and documentation they require.",
+            "category": "finance"
+          }
+        ],
         "grants": [],
         "machinery": [],
         "general": [
@@ -4035,6 +4097,20 @@
             "access": "Official investment intelligence; not a direct grant or farmer application. Eligibility, financing structure and implementation arrangements vary by country.",
             "lifecycle": "needs_review",
             "review_reason": "Regional forum overview is not a direct country-specific project or investment profile. Replace with a verified country profile or clearly label the regional initiative before publication."
+          },
+          {
+            "title": "Liberia Agriculture Commercialization Fund (LACF) — matching-grant programme information",
+            "description": "The Liberia Ministry of Agriculture describes the LACF as a matching-grant fund supporting smallholder commercialisation and agribusiness linkages in targeted value chains, including rice, oil palm and horticulture. The official FAQ lists eligibility, target counties, proposal requirements and funding windows, but does not publish a current closing date.",
+            "url": "https://www.moa.gov.lr/general/liberia-agriculture-commercialization-fund-helpfaq",
+            "source": "Ministry of Agriculture, Liberia",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural finance and matching-grant programme information",
+            "eligibility": "The Ministry's FAQ describes applicants operating in Liberia and aged 18 or older, with concept notes/business plans that support priority value chains, climate-smart practices and jobs. Geographic coverage and criteria vary by fund window.",
+            "access": "This is programme information, not confirmation that a new application window is open. The separate 'Apply for Grant' link on the Ministry site returned a 404 during verification on 17 October 2026. Before preparing an application, contact project@lacf.moa.gov.lr or 0888400940 to confirm whether submissions are accepted and obtain the current application route.",
+            "contact": "project@lacf.moa.gov.lr · 0888400940",
+            "category": "finance"
           }
         ],
         "grants": [],
@@ -4772,7 +4848,21 @@
       "slug": "morocco",
       "flag": "🇲🇦",
       "records": {
-        "finance": [],
+        "finance": [
+          {
+            "title": "Morocco — How to apply for Agricultural Development Fund (FDA) support",
+            "description": "The Agricultural Development Agency (ADA) explains the procedure for state financial assistance under the Agricultural Development Fund (FDA). Applicants submit a prior-approval request with proof of their legal relationship to the land and a technical project dossier; after investment, they submit final invoices and commit to maintaining the investment in working order for at least five years.",
+            "url": "https://www.ada.gov.ma/fr/faq/comment-dois-je-proceder-pour-beneficier-des-aides-financieres-de-letat-pour-la-promotion-des-0",
+            "source": "Agricultural Development Agency (ADA), Morocco",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural investment subsidy application guidance",
+            "eligibility": "Agricultural investors seeking state aid under FDA; eligible investments, rates and ceilings depend on the current FDA manual and project type.",
+            "access": "Submit the prior-approval dossier through the relevant one-stop office at the Provincial Directorate of Agriculture (DPA) or Regional Office for Agricultural Development (ORMVA) before making the investment. After completion, submit invoices and the required maintenance commitment. Confirm the latest manual and local procedures with ADA/DPA/ORMVA.",
+            "category": "finance"
+          }
+        ],
         "grants": [
           {
             "title": "AfDB PAASIFEJ — environmental and social action plan technical assistance",
@@ -4790,7 +4880,22 @@
             "review_reason": "Generic landing page or news listing is not a direct country-specific resource. Replace with a verified direct source or retain only as an explicitly general institutional reference."
           }
         ],
-        "machinery": [],
+        "machinery": [
+          {
+            "title": "Morocco — Agricultural Development Fund incentives for equipment and irrigation",
+            "description": "ADA's official guidance lists FDA investment incentives for agricultural equipment, planting material and localized irrigation. Published rates vary by eligible investment and scheme: agricultural equipment may receive a capped 30–50% subsidy, plants may receive capped support of 60–80%, and localized-irrigation rates and ceilings depend on project type.",
+            "url": "https://chababagri.ada.gov.ma/fr/incitations-de-letat",
+            "source": "Agricultural Development Agency (ADA), Morocco",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural equipment and irrigation investment incentives",
+            "amount": "Published guidance lists 30–50% support for eligible equipment and 60–80% for planting material, with caps; irrigation rates and ceilings vary by project.",
+            "eligibility": "Farmers and agricultural investors applying under the FDA investment-support rules; eligible equipment, project type, ceilings and required approvals vary.",
+            "access": "Check the current FDA manual and obtain prior approval through the relevant DPA/ORMVA before investing. The ADA page was restricted to automated access during this check; if it does not open, request the current incentive manual from ADA or the local DPA/ORMVA.",
+            "category": "machinery"
+          }
+        ],
         "general": [
           {
             "title": "FAO Morocco country agriculture profile",
@@ -4834,7 +4939,22 @@
         ],
         "inputs": [],
         "markets": [],
-        "insurance": [],
+        "insurance": [
+          {
+            "title": "Morocco — MAMDA climate-risk insurance for cereals and legumes",
+            "description": "MAMDA/MCMA's agricultural insurance product covers specified cereals and legumes against six climate risks: drought, hail, frost, strong wind, sandstorm and excess water. The product page says the state premium subsidy can reach 90%, subject to policy terms and eligibility.",
+            "url": "https://www.mamda-mcma.ma/produits/multirisque-climatique-cereales-et-legumineuses",
+            "source": "Mutuelle Agricole Marocaine d'Assurances (MAMDA/MCMA), Morocco",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Crop insurance and climate-risk protection",
+            "amount": "The product page states that the state subsidy on the premium can reach 90%; the actual rate depends on the applicable scheme and policy terms.",
+            "eligibility": "Farmers growing covered cereals and legumes; eligible crops, regions, insured values and exclusions must be confirmed with MAMDA/MCMA.",
+            "access": "Contact MAMDA/MCMA for current premiums, the precise government-subsidy rate, insured risks, documentation and claim procedures. Do not assume all crops or all risks are covered.",
+            "category": "insurance"
+          }
+        ],
         "farmer-support": [],
         "research": [],
         "climate": [
