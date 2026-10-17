@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-17",
   "verification_policy": "Only publish live opportunities after checking an official or authoritative source; retain source URL and verification date for every record.",
   "categories": [
     "finance",
@@ -13,7 +13,8 @@
     "farmer-support",
     "research",
     "climate",
-    "data"
+    "data",
+    "livestock"
   ],
   "countries": [
     {
@@ -3688,7 +3689,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Gabon — Ministry of Agriculture, Livestock and Rural Development",
+            "description": "The official ministry portal provides agricultural policy and rural-development information, including ministry missions, official notices and sector updates. Use it to locate government services and verify any programme directly with the ministry; this listing is not a grant announcement.",
+            "url": "https://agriculture.gouv.ga/2-ministere/",
+            "source": "Ministry of Agriculture, Livestock and Rural Development, Gabon",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Government agricultural services and policy",
+            "access": "Check the ministry's latest notices and contact details before relying on a programme or funding claim.",
+            "category": "farmer-support"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -4157,7 +4171,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Libya — Agricultural Development Department",
+            "description": "The Ministry's Agricultural Development Department describes its role in implementing agricultural development projects and providing technical support for settlement and agricultural land-use projects. The page does not publish a direct farmer grant application.",
+            "url": "https://www.agriculture.gov.ly/2020/en/agricultural-development-department/",
+            "source": "Ministry of Agriculture, Livestock and Marine Resources, Libya",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural development and technical support",
+            "access": "Contact the department to confirm current project participation, location coverage and eligibility.",
+            "category": "farmer-support"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -4619,7 +4646,20 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Mauritania — Ministry of Agriculture agricultural extension services",
+            "description": "The official ministry provides a dedicated agricultural extension (vulgarisation) section alongside information about training, research and crop sectors. Use this source to find official extension information and ask the ministry about current training or field-support availability.",
+            "url": "https://www.agriculture.gov.mr/ar/Vulgarisation",
+            "source": "Ministry of Agriculture, Mauritania",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural extension and farmer knowledge",
+            "access": "The page is an official service reference; confirm local schedules and eligibility with the ministry.",
+            "category": "farmer-support"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -4646,7 +4686,21 @@
       "records": {
         "finance": [],
         "grants": [],
-        "machinery": [],
+        "machinery": [
+          {
+            "title": "Mauritius — Subsidy on Agricultural Mechanisation Scheme (SAMS)",
+            "description": "The Small Farmers Welfare Fund states that applications are open to registered farmers under the mechanisation scheme. Its official programme page links the application form and registered mechanisation-service providers; the scheme notice describes a subsidy of up to Rs 3,000 per arpent for eligible mechanisation services, capped at five arpents per planter per year and subject to available funds.",
+            "url": "https://sfwf.govmu.org/sfwf/?page_id=1650",
+            "source": "Small Farmers Welfare Fund (SFWF), Mauritius",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural mechanisation subsidy",
+            "eligibility": "Registered farmers; use a mechanisation service provider registered with SFWF. Annual area and other scheme conditions apply.",
+            "access": "The official page says applications are open, but farmers should confirm the latest terms, remaining allocation and submission process with SFWF.",
+            "category": "machinery"
+          }
+        ],
         "general": [
           {
             "title": "FAO Mauritius country agriculture profile",
@@ -4693,6 +4747,21 @@
             "status": "official",
             "type": "Agricultural data and food-security reference",
             "access": "Public information"
+          }
+        ],
+        "livestock": [
+          {
+            "title": "Mauritius — Livestock Feed Promotion Scheme (LFPS), 2026/27",
+            "description": "A Small Farmers Welfare Fund notice dated 17 July 2026 says eligible small breeders may apply for the 2026/27 scheme, with a subsidy of up to Rs 20 per kilogram of livestock feed. Eligibility includes SFWF breeder registration and farm/animal registration in the National Livestock Information System where applicable; species-specific herd limits apply.",
+            "url": "https://sfwf.govmu.org/sfwf/wp-content/uploads/2026/07/Livestock-Feed-Promotion-Scheme-21-July-2026.pdf",
+            "source": "Small Farmers Welfare Fund (SFWF), Mauritius",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Livestock feed subsidy",
+            "eligibility": "Eligible small breeders registered with SFWF; farm and animals must meet National Livestock Information System requirements where applicable. Species-specific animal limits apply.",
+            "access": "The notice identifies the 2026/27 application period as open when published; confirm current intake and documentation with SFWF before applying.",
+            "category": "livestock"
           }
         ]
       }

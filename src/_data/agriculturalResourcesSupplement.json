@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-17",
   "records": [
     {
       "country_code": "BF",
@@ -2912,17 +2912,15 @@
     {
       "country_code": "CG",
       "category": "finance",
-      "title": "Republic of the Congo — Fonds de soutien à l’agriculture",
-      "description": "The Ministry of Agriculture's public agricultural support fund finances agricultural, pastoral and fisheries production, marketing, storage, research, extension, training and value-chain development.",
+      "title": "Republic of the Congo — Agricultural Support Fund (Fonds de soutien à l’agriculture)",
+      "description": "The official Ministry page identifies the Fonds de Soutien à l’Agriculture as a public administrative institution responsible for financing crop, livestock and fisheries production, marketing and conservation, as well as research and development, extension, training and value-chain support.",
       "url": "https://agriculture.agriculture.gouv.cg/?page_id=4240",
       "source": "Ministère de l'Agriculture, de l'Élevage et de la Pêche — République du Congo",
       "source_tier": 1,
-      "verified": "2026-10-13",
-      "status": "review",
-      "type": "Agricultural support fund",
-      "access": "Official fund information; funding windows and eligibility should be confirmed with the ministry.",
-      "lifecycle": "needs_review",
-      "review_reason": "This URL is a generic news/landing page, not a direct resource. Replace it with a verified article or programme page."
+      "verified": "2026-10-17",
+      "status": "official",
+      "type": "Official agricultural finance fund",
+      "access": "This page confirms the fund's mandate but does not publish a current application window, funding amount or eligibility criteria. Contact the fund or ministry for current procedures before applying."
     },
     {
       "country_code": "GN",
@@ -3227,16 +3225,16 @@
     },
     {
       "country_code": "DZ",
-      "category": "data",
-      "title": "Algeria National Agricultural Information System",
-      "description": "The Ministry of Agriculture's National Agricultural Information System is an official digital entry point for agricultural information and services in Algeria.",
+      "category": "farmer-support",
+      "title": "Algeria — official farmer e-services and subsidy portal",
+      "description": "The Algerian Ministry of Agriculture's e-government portal provides an individual-farmer workspace for subsidy access, agricultural land records and professional certifications. Its administrative directory lists a Finance Application for Subsidy (FNDRA). This is a route to official services, not a guarantee of eligibility or approval.",
       "url": "https://nais.madr.gov.dz/en",
       "source": "Ministry of Agriculture, Rural Development and Fisheries, Algeria",
       "source_tier": 1,
-      "verified": "2026-10-13",
+      "verified": "2026-10-17",
       "status": "official",
-      "type": "Agricultural information system",
-      "access": "Official portal; check current service availability on the site."
+      "type": "Official farmer e-services and subsidy portal",
+      "access": "Check the linked farmer portal for current scheme terms, documents and eligibility before applying."
     },
     {
       "country_code": "TD",
@@ -3318,31 +3316,29 @@
     },
     {
       "country_code": "CG",
-      "category": "machinery",
-      "title": "Republic of the Congo — agricultural mechanisation services",
-      "description": "The Ministry of Agriculture's official page provides information on agricultural mechanisation within its ministry mission and services.",
+      "category": "farmer-support",
+      "title": "Republic of the Congo — Ministry of Agriculture, Livestock and Fisheries",
+      "description": "The official ministry describes responsibilities that include support for agricultural financing, gradual mechanisation, extension services and agro-pastoral small and medium enterprises. The page explains the ministry's remit; it is not a direct grant or equipment application.",
       "url": "https://agriculture.agriculture.gouv.cg/?page_id=2963",
       "source": "Ministère de l'Agriculture, de l'Élevage et de la Pêche — République du Congo",
       "source_tier": 1,
-      "verified": "2026-10-13",
-      "status": "review",
-      "type": "Agricultural mechanisation resource",
-      "access": "Official information; confirm equipment access and current programmes with the ministry.",
-      "lifecycle": "needs_review",
-      "review_reason": "This URL is a generic news/landing page, not a direct resource. Replace it with a verified article or programme page."
+      "verified": "2026-10-17",
+      "status": "official",
+      "type": "Government agricultural services and policy",
+      "access": "Contact the ministry for current farmer-support programmes, local services and application requirements."
     },
     {
       "country_code": "SC",
-      "category": "farmer-support",
-      "title": "Seychelles agricultural development fund and policy-planning services",
-      "description": "The Ministry of Fisheries, Agriculture and Blue Economy provides information through its policy, planning, research, monitoring and evaluation section.",
+      "category": "finance",
+      "title": "Seychelles — Agricultural Development Fund (ADF) financial assistance",
+      "description": "The Ministry's Policy Planning, Research, Monitoring and Evaluation section states that registered farms can receive financial assistance under the Agricultural Development Fund (ADF) scheme. The page does not specify current amounts, application deadlines or full eligibility rules.",
       "url": "https://mofbe.gov.sc/agriculture-department/policy-planning-research-monitoring-evaluation-section/",
       "source": "Ministry of Fisheries, Agriculture and Blue Economy, Seychelles",
       "source_tier": 1,
-      "verified": "2026-10-13",
+      "verified": "2026-10-17",
       "status": "official",
-      "type": "Agricultural policy and support resource",
-      "access": "Official department information; contact the ministry for current funding windows."
+      "type": "Agricultural financial assistance",
+      "access": "Registered farms are mentioned; contact the Ministry to confirm the current ADF application process, terms and available funding."
     },
     {
       "country_code": "ST",
