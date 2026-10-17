@@ -235,6 +235,12 @@ for (const item of resourcePages) {
   if (!html.includes(item.title)) failures.push(item.rel + ": expected localized resource heading is missing");
   if (!html.includes('id="resourceEmpty"')) failures.push(item.rel + ": missing accessible no-results message");
   if (!html.includes("Intl.DisplayNames")) failures.push(item.rel + ": country names are not localized for the selected language");
+  for (const field of ["type","access","eligibility","beneficiary","deadline","contact"]) {
+    if (!html.includes('data-resource-field="' + field + '"')) failures.push(item.rel + ": resource cards do not expose verified " + field + " details");
+  }
+  if (!html.includes('data-resource-application-link="true"')) failures.push(item.rel + ": direct application links are not surfaced from resource metadata");
+  const accessLabels = {en:"Access / how to use",fr:"Accès / mode d’utilisation",ar:"طريقة الاستفادة",pt:"Acesso / como utilizar",sw:"Namna ya kupata huduma"};
+  if (!html.includes(accessLabels[item.lang])) failures.push(item.rel + ": resource access notes are not localized");
   const countryBlocks = (html.match(/<details class=["']resource-country["']/gi) || []).length;
   if (countryBlocks !== 54) failures.push(item.rel + ": expected 54 country groups, found " + countryBlocks);
   const countryOptions = (html.match(/<option value=["'][A-Z]{2}["'][^>]*data-country-code=/gi) || []).length;

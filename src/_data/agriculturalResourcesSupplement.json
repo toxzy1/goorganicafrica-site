@@ -1804,9 +1804,11 @@
       "source": "FAO in Kenya",
       "source_tier": 1,
       "published": "2026-10-01",
-      "verified": "2026-10-07",
-      "status": "official",
-      "type": "Direct beneficiary grant programme"
+      "verified": "2026-10-17",
+      "status": "review",
+      "type": "Direct beneficiary grant programme",
+      "lifecycle": "needs_review",
+      "review_reason": "Duplicate source URL of the canonical published primary record, which contains the verified eligibility, deadline and direct application link. Keep this copy in review to prevent duplicate public cards."
     },
     {
       "country_code": "KE",
