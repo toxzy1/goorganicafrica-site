@@ -38,6 +38,27 @@ for (const code of required) {
   }
 }
 
+// Runtime language bundles are fetched by src/js/language-switcher.js. Keep
+// shared header/footer labels present there as well as in the Eleventy source
+// dictionary, otherwise non-English navigation silently falls back to English.
+const runtimeCommonKeys = [
+  'opportunities', 'markets', 'services', 'search',
+  'decisionCentre', 'myAgriculture', 'intelligenceHub'
+];
+for (const code of required) {
+  const bundlePath = path.join(__dirname, '..', 'src', 'i18n', `${code}.json`);
+  if (!fs.existsSync(bundlePath)) {
+    missing.push(`${code}: runtime language bundle missing`);
+    continue;
+  }
+  const bundle = JSON.parse(fs.readFileSync(bundlePath, 'utf8'));
+  for (const key of runtimeCommonKeys) {
+    if (typeof bundle.common?.[key] !== 'string' || !bundle.common[key].trim()) {
+      missing.push(`${code}: runtime common.${key}`);
+    }
+  }
+}
+
 if (translations.ar.dir !== 'rtl') missing.push('ar: expected rtl direction');
 
 const contentRoots = [path.join(__dirname, '..', 'src', 'blog', 'posts'), path.join(__dirname, '..', 'src', 'ebooks')];

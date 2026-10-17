@@ -177,3 +177,32 @@ test("homepage intelligence section is translated in French, Arabic, Portuguese 
     await expect(page.locator('[data-i18n="home.freeValue"]')).toHaveText(expected.free);
   }
 });
+
+
+test("localized homepage navigation labels and About destination remain in the selected language", async ({ page }) => {
+  const cases = {
+    fr: ["Opportunités", "Marchés", "Services", "Recherche", "Centre de décision", "Mon agriculture", "Pôle de veille agricole"],
+    ar: ["الفرص", "الأسواق", "الخدمات", "البحث", "مركز اتخاذ القرار", "زراعتي", "مركز المعلومات الزراعية"],
+    pt: ["Oportunidades", "Mercados", "Serviços", "Pesquisar", "Centro de decisão", "A minha agricultura", "Centro de inteligência agrícola"],
+    sw: ["Fursa", "Masoko", "Huduma", "Tafuta", "Kituo cha maamuzi", "Kilimo changu", "Kitovu cha taarifa za kilimo"]
+  };
+  const selectors = [
+    '[data-localized-section="opportunities"]',
+    '[data-localized-section="markets"]',
+    '[data-localized-section="agricultural-services"]',
+    '[data-localized-section="search"]',
+    '[data-localized-section="farmer-decision-centre"]',
+    '[data-localized-section="my-agriculture"]',
+    '[data-localized-section="agricultural-intelligence"]'
+  ];
+
+  for (const [language, labels] of Object.entries(cases)) {
+    await page.goto(baseURL + "/" + language + "/", { waitUntil: "domcontentloaded" });
+    await expect(page.locator("html")).toHaveAttribute("lang", language);
+    for (let i = 0; i < selectors.length; i++) {
+      await expect(page.locator(selectors[i]).first()).toHaveText(labels[i], { timeout: 15000 });
+    }
+    await expect(page.locator(".hero-actions a").first()).toHaveAttribute("href", "/farm-profit-calculator/");
+    await expect(page.locator('[data-i18n="home.readMore"]')).toHaveAttribute("href", "/" + language + "/about/");
+  }
+});
