@@ -34,5 +34,28 @@
 <div style="margin-top:32px;padding:20px;border:1px solid var(--line);border-radius:12px;"><h2>{{L.current}}</h2><p>{{L.currentText}}</p></div>
 </div></section>
 <script>
-(function(){const s=document.getElementById("resourceSearch"),c=document.getElementById("resourceCountry"),k=document.getElementById("resourceCategory"),n=document.getElementById("resourceCount"),g=[...document.querySelectorAll(".resource-country")];function f(){let q=(s.value||"").toLowerCase().trim(),cv=c.value,kv=k.value,v=0;g.forEach(x=>{let z=0;x.querySelectorAll(".resource-card").forEach(a=>{let show=(!cv||x.dataset.country===cv)&&(!kv||a.dataset.category===kv)&&(!q||a.dataset.search.includes(q));a.style.display=show?"block":"none";if(show){v++;z++;}});x.querySelectorAll(".resource-category-heading").forEach(h=>{h.style.display=[...x.querySelectorAll('.resource-card[data-category="'+h.dataset.category+'"]')].some(a=>a.style.display!=="none")?"block":"none"});x.style.display=z?"block":"none";if(q||cv||kv)x.open=!!z});n.textContent=v+" {{L.results}}"}[s,c,k].forEach(x=>x.addEventListener("input",f));[c,k].forEach(x=>x.addEventListener("change",f))})();
+(function(){
+  const s=document.getElementById("resourceSearch"),c=document.getElementById("resourceCountry"),k=document.getElementById("resourceCategory"),n=document.getElementById("resourceCount"),empty=document.getElementById("resourceEmpty"),g=[...document.querySelectorAll(".resource-country")],lang="{{lang}}";
+  const normalize=value=>String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9\u0600-\u06ff]+/g," ").trim();
+  try{
+    const names=new Intl.DisplayNames([lang],{type:"region"});
+    document.querySelectorAll("[data-resource-country-name]").forEach(el=>{const name=names.of(el.dataset.resourceCountryName);if(name&&name!==el.dataset.resourceCountryName)el.textContent=name;});
+    c.querySelectorAll("option[data-country-code]").forEach(opt=>{const name=names.of(opt.dataset.countryCode);opt.textContent=(opt.dataset.countryFlag||"")+" "+(name&&name!==opt.dataset.countryCode?name:opt.dataset.countryName);});
+  }catch(_){}
+  function f(){
+    const terms=normalize(s.value).split(/\s+/).filter(Boolean),cv=c.value,kv=k.value;let v=0;
+    g.forEach(x=>{
+      let z=0;
+      x.querySelectorAll(".resource-card").forEach(a=>{
+        const hay=normalize(a.dataset.search);
+        const show=(!cv||x.dataset.country===cv)&&(!kv||a.dataset.category===kv)&&terms.every(term=>hay.includes(term));
+        a.style.display=show?"block":"none";if(show){v++;z++;}
+      });
+      x.querySelectorAll(".resource-category-heading").forEach(h=>{h.style.display=[...x.querySelectorAll('.resource-card[data-category="'+h.dataset.category+'"]')].some(a=>a.style.display!=="none")?"block":"none";});
+      x.style.display=z?"block":"none";if(terms.length||cv||kv)x.open=!!z;
+    });
+    n.textContent=v+" {{L.results}}";empty.hidden=v!==0;
+  }
+  [s,c,k].forEach(x=>x.addEventListener("input",f));[c,k].forEach(x=>x.addEventListener("change",f));f();
+})();
 </script>
