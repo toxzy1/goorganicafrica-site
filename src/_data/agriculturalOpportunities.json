@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-13",
+  "last_updated": "2026-10-17",
   "editorial_policy": "Opportunities are sourced from authoritative organisations and classified by lifecycle. Expired or closed opportunities remain in the archive and are removed from active listings; they are never silently deleted.",
   "records": [
     {
@@ -17,7 +17,29 @@
       "source": "FAO Kenya / GEF-7 FOLUR",
       "source_tier": 1,
       "verified": "2026-10-08",
-      "url": "https://www.fao.org/kenya/news/newsdetails/nature-positive-food-systems-for-the-mt.-elgon-landscape--gef-7-folur-direct-beneficiary-grants-open-for-coffee--maize-and-ogiek-livelihoods/en"
+      "url": "https://www.fao.org/kenya/news/newsdetails/nature-positive-food-systems-for-the-mt.-elgon-landscape--gef-7-folur-direct-beneficiary-grants-open-for-coffee--maize-and-ogiek-livelihoods/en",
+      "localized": {
+        "fr": {
+          "title": "Subventions directes GEF-7 FOLUR du mont Elgon — café, maïs et moyens de subsistance fondés sur la nature",
+          "summary": "Soutien financier aux activités de subsistance viables et favorables à la nature, liées au café, au maïs, à la diversification et aux communautés autochtones du paysage du mont Elgon.",
+          "eligibility": "Organisations locales enregistrées opérant dans les sous-comtés ciblés de Bungoma et Trans Nzoia, notamment les coopératives agricoles, organisations de producteurs et organisations communautaires."
+        },
+        "ar": {
+          "title": "منح المستفيدين المباشرة لمبادرة GEF-7 FOLUR في جبل إلغون — القهوة والذرة وسبل العيش الصديقة للطبيعة",
+          "summary": "دعم مالي لمشروعات سبل العيش القابلة للاستمرار والصديقة للطبيعة المرتبطة بالقهوة والذرة والتنويع وسبل عيش المجتمعات الأصلية في منطقة جبل إلغون.",
+          "eligibility": "المنظمات المحلية المسجلة العاملة في المناطق المستهدفة المحددة في بونغو وترانس نزويا، بما في ذلك التعاونيات الزراعية ومنظمات المنتجين والمنظمات المجتمعية."
+        },
+        "pt": {
+          "title": "Subsídios diretos GEF-7 FOLUR do Monte Elgon — café, milho e meios de subsistência sustentáveis",
+          "summary": "Apoio financeiro a iniciativas viáveis de subsistência positivas para a natureza, ligadas ao café, milho, diversificação e meios de subsistência de comunidades indígenas na região do Monte Elgon.",
+          "eligibility": "Organizações locais registadas que operem nos subcondados-alvo indicados de Bungoma e Trans Nzoia, incluindo cooperativas de agricultores, organizações de produtores e organizações comunitárias."
+        },
+        "sw": {
+          "title": "Ruzuku za moja kwa moja za GEF-7 FOLUR katika Mlima Elgon — kahawa, mahindi na maisha endelevu",
+          "summary": "Msaada wa kifedha kwa shughuli endelevu za kujipatia kipato zinazohusiana na kahawa, mahindi, utofauti wa shughuli na maisha ya jamii za asili katika eneo la Mlima Elgon.",
+          "eligibility": "Mashirika ya eneo yaliyosajiliwa yanayofanya kazi katika maeneo lengwa yaliyotajwa ya Bungoma na Trans Nzoia, yakiwemo vyama vya ushirika vya wakulima, mashirika ya wazalishaji na mashirika ya kijamii."
+        }
+      }
     },
     {
       "code": "AFRICA",
@@ -25,7 +47,7 @@
       "title": "IFAD Support for Food Systems Transformation in the Central Sahel",
       "category": "grants",
       "type": "Call for Proposals",
-      "status": "open",
+      "status": "expired",
       "published": "2026-09-21",
       "eligibility": "Eligible institutions able to implement the requested regional food-systems transformation activities; applicants must follow the official IFAD call documentation.",
       "summary": "IFAD grant financing of up to USD 2 million for implementation supporting food systems transformation in the Central Sahel.",
@@ -40,7 +62,31 @@
         "resilience"
       ],
       "deadline": "2026-10-16",
-      "access": "Institutional implementing-partner call, not a direct farmer grant. Deadline 16 October 2026 at 23:59 GMT; check official eligibility documents."
+      "access": "Institutional implementing-partner call, not a direct farmer grant. Deadline 16 October 2026 at 23:59 GMT; check official eligibility documents.",
+      "localized": {
+        "fr": {
+          "title": "IFAD — appui à la transformation des systèmes alimentaires au Sahel central",
+          "summary": "Financement de subventions de l’IFAD pouvant atteindre 2 millions de dollars pour des activités contribuant à la transformation des systèmes alimentaires au Sahel central.",
+          "eligibility": "Seules les organisations répondant aux critères de l’appel officiel peuvent candidater. Consultez la source officielle pour les conditions complètes et la date limite."
+        },
+        "ar": {
+          "title": "الصندوق الدولي للتنمية الزراعية — دعم تحويل النظم الغذائية في وسط الساحل",
+          "summary": "تمويل منح من الصندوق الدولي للتنمية الزراعية يصل إلى مليوني دولار للأنشطة التي تدعم تحويل النظم الغذائية في منطقة الساحل الوسطى.",
+          "eligibility": "يقتصر التقديم على المنظمات التي تستوفي معايير الدعوة الرسمية. راجع المصدر الرسمي لمعرفة الشروط الكاملة والموعد النهائي."
+        },
+        "pt": {
+          "title": "FIDA — apoio à transformação dos sistemas alimentares no Sahel Central",
+          "summary": "Financiamento de subvenções do FIDA até 2 milhões de dólares para atividades que apoiem a transformação dos sistemas alimentares no Sahel Central.",
+          "eligibility": "Apenas organizações que cumpram os critérios do convite oficial podem candidatar-se. Consulte a fonte oficial para conhecer as condições completas e o prazo."
+        },
+        "sw": {
+          "title": "IFAD — kusaidia mabadiliko ya mifumo ya chakula Sahel ya Kati",
+          "summary": "Ufadhili wa ruzuku wa IFAD wa hadi dola milioni 2 kwa shughuli zinazosaidia kubadilisha mifumo ya chakula katika Sahel ya Kati.",
+          "eligibility": "Ni mashirika yanayotimiza vigezo vya mwito rasmi pekee yanayoweza kutuma maombi. Angalia chanzo rasmi kwa masharti kamili na tarehe ya mwisho."
+        }
+      },
+      "lifecycle": "expired",
+      "review_reason": "Deadline was 2026-10-16; as of 2026-10-17 this call is expired and must remain in the archive."
     },
     {
       "code": "ZM",
@@ -62,7 +108,29 @@
         "legumes",
         "mechanisation",
         "agribusiness"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Facilité de subventions de contrepartie SIFAZ — deuxième appel",
+          "summary": "Subventions de contrepartie destinées aux entreprises de mécanisation, à l’achat d’intrants et à la commercialisation, à l’agrégation des produits et aux services agricoles connexes.",
+          "eligibility": "Cet appel est clôturé. Cette fiche est conservée à titre d’archive historique ; elle ne constitue pas une possibilité de candidature actuelle."
+        },
+        "ar": {
+          "title": "مرفق المنح المطابقة SIFAZ — الدعوة الثانية",
+          "summary": "منح مطابقة لدعم مشروعات الميكنة الزراعية وشراء المدخلات والتسويق وتجميع المنتجات والخدمات الزراعية ذات الصلة.",
+          "eligibility": "انتهت هذه الدعوة. تُحفظ هذه البطاقة كمرجع تاريخي ولا تمثل فرصة تقديم طلبات حالية."
+        },
+        "pt": {
+          "title": "Mecanismo de subvenções de contrapartida SIFAZ — segunda chamada",
+          "summary": "Subvenções de contrapartida para empresas de mecanização, aquisição de insumos, comercialização, agregação de produtos e serviços agrícolas relacionados.",
+          "eligibility": "Esta chamada encerrou-se. O registo é mantido como arquivo histórico e não representa uma oportunidade de candidatura atual."
+        },
+        "sw": {
+          "title": "Mfuko wa ruzuku za uwiano wa SIFAZ — mwito wa pili",
+          "summary": "Ruzuku za uwiano kwa biashara za huduma za mashine za kilimo, ununuzi wa pembejeo, masoko, ukusanyaji wa mazao na huduma zinazohusiana na kilimo.",
+          "eligibility": "Mwito huu umefungwa. Rekodi hii imehifadhiwa kama kumbukumbu ya kihistoria na si fursa ya sasa ya kutuma maombi."
+        }
+      }
     },
     {
       "code": "MW",
@@ -83,7 +151,29 @@
         "water management",
         "climate resilience",
         "investment"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "BAD CAWMA — productivité agricole adaptée au climat et gestion de l’eau",
+          "summary": "Programme approuvé par la Banque africaine de développement au Malawi, axé sur l’amélioration de la productivité agricole adaptée au climat grâce à une meilleure gestion de l’eau.",
+          "eligibility": "Il s’agit d’un programme d’investissement en cours, pas nécessairement d’un appel ouvert aux candidatures. Vérifiez auprès de l’institution de mise en œuvre les avantages accessibles aux agriculteurs."
+        },
+        "ar": {
+          "title": "البنك الأفريقي للتنمية — CAWMA: الإنتاجية الزراعية المتكيفة مع المناخ وإدارة المياه",
+          "summary": "برنامج وافق عليه البنك الأفريقي للتنمية في ملاوي لتحسين الإنتاجية الزراعية المتكيفة مع المناخ من خلال إدارة أفضل للمياه.",
+          "eligibility": "هذا برنامج استثماري جارٍ وليس بالضرورة دعوة مفتوحة للتقديم. تحقق من المؤسسة المنفذة بشأن المنافع المتاحة للمزارعين."
+        },
+        "pt": {
+          "title": "BAD CAWMA — produtividade agrícola adaptada ao clima e gestão da água",
+          "summary": "Programa aprovado pelo Banco Africano de Desenvolvimento no Malawi, destinado a melhorar a produtividade agrícola adaptada ao clima através de uma melhor gestão da água.",
+          "eligibility": "Trata-se de um programa de investimento em curso, não necessariamente de uma chamada aberta a candidaturas. Confirme junto da entidade executora quais os benefícios disponíveis para agricultores."
+        },
+        "sw": {
+          "title": "AfDB CAWMA — uzalishaji wa kilimo unaokabiliana na tabianchi na usimamizi wa maji",
+          "summary": "Programu iliyoidhinishwa na Benki ya Maendeleo ya Afrika nchini Malawi inayolenga kuboresha uzalishaji wa kilimo unaokabiliana na tabianchi kupitia usimamizi bora wa maji.",
+          "eligibility": "Huu ni mpango wa uwekezaji unaoendelea, si lazima uwe mwito wa maombi ulio wazi. Thibitisha na taasisi inayotekeleza kuhusu manufaa yanayopatikana kwa wakulima."
+        }
+      }
     },
     {
       "code": "SL",
@@ -104,7 +194,29 @@
         "rice",
         "agroprocessing",
         "investment"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "BAD — projet de zone agro-industrielle spéciale pour le riz en Sierra Leone, phase I",
+          "summary": "Investissement approuvé par la Banque africaine de développement pour développer une zone agro-industrielle spéciale consacrée au riz en Sierra Leone.",
+          "eligibility": "Il s’agit d’un projet d’investissement, pas nécessairement d’un appel ouvert aux agriculteurs. Consultez la source officielle pour connaître les possibilités actuelles de participation."
+        },
+        "ar": {
+          "title": "البنك الأفريقي للتنمية — مشروع المنطقة الصناعية الزراعية الخاصة بالأرز في سيراليون، المرحلة الأولى",
+          "summary": "استثمار وافق عليه البنك الأفريقي للتنمية لدعم تطوير منطقة صناعية زراعية خاصة بالأرز في سيراليون.",
+          "eligibility": "هذا مشروع استثماري وليس بالضرورة دعوة مفتوحة للمزارعين. راجع المصدر الرسمي لمعرفة فرص المشاركة الحالية."
+        },
+        "pt": {
+          "title": "BAD — projeto da Zona Agroindustrial Especial do Arroz na Serra Leoa, fase I",
+          "summary": "Investimento aprovado pelo Banco Africano de Desenvolvimento para apoiar o desenvolvimento de uma zona agroindustrial especial dedicada ao arroz na Serra Leoa.",
+          "eligibility": "É um projeto de investimento, não necessariamente uma chamada aberta a agricultores. Consulte a fonte oficial para conhecer as possibilidades atuais de participação."
+        },
+        "sw": {
+          "title": "AfDB — Mradi wa Eneo Maalumu la Viwanda vya Mchele Sierra Leone, Awamu ya I",
+          "summary": "Uwekezaji ulioidhinishwa na Benki ya Maendeleo ya Afrika kusaidia kuendeleza eneo maalumu la viwanda vya mchele nchini Sierra Leone.",
+          "eligibility": "Huu ni mradi wa uwekezaji, si lazima uwe mwito wa maombi ulio wazi kwa wakulima. Angalia chanzo rasmi kwa nafasi za sasa za kushiriki."
+        }
+      }
     },
     {
       "code": "ZM",
@@ -148,7 +260,29 @@
         "climate resilience",
         "agriculture",
         "investment"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "BAD — projet de résilience climatique agricole et de réduction de la vulnérabilité au Zimbabwe",
+          "summary": "Projet approuvé par la Banque africaine de développement visant à renforcer la résilience climatique de l’agriculture et à réduire la vulnérabilité au Zimbabwe.",
+          "eligibility": "Projet en cours ; les conditions d’accès aux bénéfices pour les agriculteurs ne sont pas précisées dans ce résumé. Consultez la source officielle et l’organisme de mise en œuvre."
+        },
+        "ar": {
+          "title": "البنك الأفريقي للتنمية — مشروع تعزيز قدرة الزراعة على التكيف مع المناخ والحد من الهشاشة في زيمبابوي",
+          "summary": "مشروع وافق عليه البنك الأفريقي للتنمية لتعزيز قدرة الزراعة على الصمود أمام تغير المناخ والحد من الهشاشة في زيمبابوي.",
+          "eligibility": "المشروع جارٍ؛ ولا يحدد هذا الملخص شروط حصول المزارعين على المنافع. راجع المصدر الرسمي والجهة المنفذة."
+        },
+        "pt": {
+          "title": "BAD — projeto de resiliência climática agrícola e redução da vulnerabilidade no Zimbabué",
+          "summary": "Projeto aprovado pelo Banco Africano de Desenvolvimento para reforçar a resiliência climática da agricultura e reduzir a vulnerabilidade no Zimbabué.",
+          "eligibility": "Projeto em curso; este resumo não especifica os critérios de acesso dos agricultores aos benefícios. Consulte a fonte oficial e a entidade executora."
+        },
+        "sw": {
+          "title": "AfDB — Mradi wa ustahimilivu wa kilimo dhidi ya tabianchi na kupunguza hatari Zimbabwe",
+          "summary": "Mradi ulioidhinishwa na Benki ya Maendeleo ya Afrika wa kuimarisha ustahimilivu wa kilimo dhidi ya tabianchi na kupunguza hatari nchini Zimbabwe.",
+          "eligibility": "Mradi unaendelea; muhtasari huu hautaji vigezo vya wakulima kupata manufaa. Angalia chanzo rasmi na taasisi inayotekeleza."
+        }
+      }
     },
     {
       "code": "SD",
@@ -169,7 +303,29 @@
         "food systems",
         "resilience",
         "investment"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "BAD — renforcement de la résilience des systèmes agroalimentaires au Soudan",
+          "summary": "Programme approuvé par la Banque africaine de développement visant à renforcer la résilience des systèmes agroalimentaires au Soudan.",
+          "eligibility": "Programme en cours ; les modalités de participation des agriculteurs ne sont pas précisées ici. Vérifiez auprès de l’organisme de mise en œuvre."
+        },
+        "ar": {
+          "title": "البنك الأفريقي للتنمية — تعزيز صمود النظم الزراعية والغذائية في السودان",
+          "summary": "برنامج وافق عليه البنك الأفريقي للتنمية لتعزيز قدرة النظم الزراعية والغذائية على الصمود في السودان.",
+          "eligibility": "البرنامج جارٍ؛ ولا يوضح هذا الملخص طرق مشاركة المزارعين. تحقق من الجهة المنفذة."
+        },
+        "pt": {
+          "title": "BAD — reforço da resiliência dos sistemas agroalimentares no Sudão",
+          "summary": "Programa aprovado pelo Banco Africano de Desenvolvimento para reforçar a resiliência dos sistemas agroalimentares no Sudão.",
+          "eligibility": "Programa em curso; este resumo não especifica as formas de participação dos agricultores. Confirme junto da entidade executora."
+        },
+        "sw": {
+          "title": "AfDB — Kuimarisha ustahimilivu wa mifumo ya chakula na kilimo Sudan",
+          "summary": "Programu iliyoidhinishwa na Benki ya Maendeleo ya Afrika ya kuimarisha ustahimilivu wa mifumo ya chakula na kilimo nchini Sudan.",
+          "eligibility": "Programu inaendelea; muhtasari huu hauelezi jinsi wakulima wanavyoweza kushiriki. Thibitisha na taasisi inayotekeleza."
+        }
+      }
     },
     {
       "code": "AFRICA",
@@ -196,7 +352,29 @@
       "lifecycle": "expired",
       "published": "2019-08-13",
       "deadline": "2019-09-23",
-      "review_reason": "The official IFAD call page states that the application deadline was extended to 23 September 2019. This is a historical call and must not appear as an open opportunity."
+      "review_reason": "The official IFAD call page states that the application deadline was extended to 23 September 2019. This is a historical call and must not appear as an open opportunity.",
+      "localized": {
+        "fr": {
+          "title": "FARM-TRAC — agriculture familiale, marchés régionaux et corridors commerciaux transfrontaliers",
+          "summary": "Subvention de trois ans de l’IFAD soutenant le développement territorial inclusif, l’agriculture familiale, l’emploi des femmes et des jeunes, la nutrition, les technologies résilientes au climat et le commerce agricole transfrontalier.",
+          "eligibility": "Appel clôturé depuis septembre 2019. Cette fiche est conservée à titre d’archive historique et n’accepte plus de candidatures."
+        },
+        "ar": {
+          "title": "FARM-TRAC — الزراعة الأسرية والأسواق الإقليمية وممرات التجارة العابرة للحدود",
+          "summary": "منحة من الصندوق الدولي للتنمية الزراعية لمدة ثلاث سنوات لدعم التنمية الإقليمية الشاملة والزراعة الأسرية وفرص العمل للنساء والشباب والتغذية والتقنيات المتكيفة مع المناخ والتجارة الزراعية العابرة للحدود.",
+          "eligibility": "انتهت الدعوة في سبتمبر 2019. تُحفظ هذه البطاقة كمرجع تاريخي ولا تقبل طلبات جديدة."
+        },
+        "pt": {
+          "title": "FARM-TRAC — agricultura familiar, mercados regionais e corredores comerciais transfronteiriços",
+          "summary": "Subvenção de três anos do FIDA para apoiar o desenvolvimento territorial inclusivo, a agricultura familiar, o emprego de mulheres e jovens, a nutrição, tecnologias resilientes ao clima e o comércio agrícola transfronteiriço.",
+          "eligibility": "A chamada encerrou-se em setembro de 2019. Este registo é mantido como arquivo histórico e já não aceita candidaturas."
+        },
+        "sw": {
+          "title": "FARM-TRAC — kilimo cha familia, masoko ya kikanda na njia za biashara za mipakani",
+          "summary": "Ruzuku ya miaka mitatu ya IFAD inayounga mkono maendeleo jumuishi ya maeneo, kilimo cha familia, ajira kwa wanawake na vijana, lishe, teknolojia zinazostahimili tabianchi na biashara ya kilimo kuvuka mipaka.",
+          "eligibility": "Mwito ulifungwa Septemba 2019. Rekodi hii imehifadhiwa kama kumbukumbu ya kihistoria na haipokei maombi mapya."
+        }
+      }
     },
     {
       "code": "AFRICA",
@@ -217,7 +395,29 @@
         "investment readiness",
         "climate",
         "women"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Mécanisme catalytique de financement des PME agroalimentaires (ACFM)",
+          "summary": "Facilité de la Banque africaine de développement offrant des prêts concessionnels et une assistance technique sous forme de subventions aux PME agroalimentaires africaines, notamment pour la préparation des investissements et des projets.",
+          "eligibility": "Mécanisme destiné aux PME agroalimentaires et aux projets admissibles ; ce n’est pas une subvention automatique aux agriculteurs individuels. Vérifiez les critères auprès de la BAD."
+        },
+        "ar": {
+          "title": "آلية التمويل التحفيزي للمؤسسات الصغيرة والمتوسطة الزراعية والغذائية (ACFM)",
+          "summary": "آلية من البنك الأفريقي للتنمية تقدم قروضًا ميسرة ومساعدة فنية قائمة على المنح للمؤسسات الزراعية والغذائية الأفريقية، بما في ذلك إعداد الاستثمارات والمشروعات.",
+          "eligibility": "تستهدف الآلية المؤسسات الصغيرة والمتوسطة والمشروعات المؤهلة؛ وليست منحة تلقائية للمزارعين الأفراد. تحقق من المعايير والإجراءات لدى البنك الأفريقي للتنمية."
+        },
+        "pt": {
+          "title": "Mecanismo Catalítico de Financiamento para PME Agroalimentares (ACFM)",
+          "summary": "Mecanismo do Banco Africano de Desenvolvimento que oferece dívida concessional e assistência técnica baseada em subvenções a PME agroalimentares africanas, incluindo preparação de investimentos e projetos.",
+          "eligibility": "O mecanismo destina-se a PME agroalimentares e projetos elegíveis; não é uma subvenção automática para agricultores individuais. Confirme os critérios junto do BAD."
+        },
+        "sw": {
+          "title": "Mfumo wa Kuchochea Ufadhili kwa Biashara Ndogo za Mifumo ya Chakula (ACFM)",
+          "summary": "Mfumo wa Benki ya Maendeleo ya Afrika unaotoa mikopo yenye masharti nafuu na msaada wa kiufundi wa ruzuku kwa biashara ndogo za mifumo ya chakula Afrika, ikiwemo maandalizi ya uwekezaji na miradi.",
+          "eligibility": "Mfumo huu unalenga biashara ndogo na za kati za mifumo ya chakula na miradi inayostahili; si ruzuku ya moja kwa moja kwa kila mkulima. Thibitisha vigezo na taratibu kwa AfDB."
+        }
+      }
     },
     {
       "code": "NG",
@@ -243,7 +443,29 @@
         "wheat",
         "cassava",
         "livestock"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Nigeria AgriConnect — cadre de transformation de l’agriculture et de l’agro-industrie",
+          "summary": "Cadre nigérian associant le ministère fédéral de l’Agriculture, la Banque mondiale, l’IFAD et des partenaires pour renforcer les organisations de producteurs, les liens avec les marchés, le financement et les solutions numériques.",
+          "eligibility": "Cadre national de transformation, et non appel individuel à subventions. Les possibilités d’accès dépendent des programmes de mise en œuvre et des partenaires."
+        },
+        "ar": {
+          "title": "AgriConnect نيجيريا — إطار تحول الزراعة والأعمال الزراعية",
+          "summary": "إطار نيجيري يضم وزارة الزراعة الاتحادية والبنك الدولي والصندوق الدولي للتنمية الزراعية وشركاء لتعزيز منظمات المزارعين والروابط بالأسواق والتمويل والحلول الرقمية.",
+          "eligibility": "هذا إطار وطني للتحول وليس دعوة فردية للحصول على منحة. تعتمد فرص الاستفادة على البرامج التنفيذية والشركاء."
+        },
+        "pt": {
+          "title": "Nigeria AgriConnect — quadro de transformação da agricultura e do agronegócio",
+          "summary": "Quadro nigeriano que reúne o Ministério Federal da Agricultura, o Banco Mundial, o FIDA e parceiros para reforçar organizações de agricultores, ligações aos mercados, financiamento e soluções digitais.",
+          "eligibility": "É um quadro nacional de transformação, não uma chamada individual de subvenções. O acesso depende dos programas de implementação e dos parceiros."
+        },
+        "sw": {
+          "title": "Nigeria AgriConnect — mfumo wa mabadiliko ya kilimo na biashara ya kilimo",
+          "summary": "Mfumo wa Nigeria unaohusisha Wizara ya Kilimo ya Shirikisho, Benki ya Dunia, IFAD na washirika ili kuimarisha mashirika ya wakulima, uhusiano wa masoko, fedha na suluhisho za kidijitali.",
+          "eligibility": "Huu ni mfumo wa kitaifa wa mabadiliko, si mwito wa ruzuku kwa mtu binafsi. Upatikanaji hutegemea programu za utekelezaji na washirika."
+        }
+      }
     },
     {
       "code": "NG",
@@ -264,7 +486,29 @@
         "horticulture",
         "smallholders",
         "supply chain"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "BAD — appui technique à la chaîne de valeur horticole pour les petits exploitants au Nigeria",
+          "summary": "Projet d’assistance technique approuvé par la BAD pour soutenir la chaîne de valeur horticole au Nigeria et les petits producteurs.",
+          "eligibility": "Projet de soutien technique ; aucune candidature publique directe n’est indiquée dans cette fiche. Consultez la source officielle pour les mécanismes de participation."
+        },
+        "ar": {
+          "title": "البنك الأفريقي للتنمية — الدعم الفني لسلسلة قيمة البستنة لصغار المزارعين في نيجيريا",
+          "summary": "مشروع دعم فني وافق عليه البنك الأفريقي للتنمية لدعم سلسلة قيمة البستنة في نيجيريا وصغار المنتجين.",
+          "eligibility": "مشروع دعم فني؛ ولا تشير هذه البطاقة إلى تقديم طلبات عامة مباشرة. راجع المصدر الرسمي لمعرفة آليات المشاركة."
+        },
+        "pt": {
+          "title": "BAD — apoio técnico à cadeia de valor da horticultura para pequenos agricultores na Nigéria",
+          "summary": "Projeto de apoio técnico aprovado pelo BAD para apoiar a cadeia de valor da horticultura na Nigéria e os pequenos produtores.",
+          "eligibility": "Projeto de assistência técnica; esta ficha não indica candidaturas públicas diretas. Consulte a fonte oficial para conhecer os mecanismos de participação."
+        },
+        "sw": {
+          "title": "AfDB — Msaada wa kiufundi kwa mnyororo wa thamani wa bustani kwa wakulima wadogo Nigeria",
+          "summary": "Mradi wa msaada wa kiufundi ulioidhinishwa na AfDB kusaidia mnyororo wa thamani wa mazao ya bustani nchini Nigeria na wazalishaji wadogo.",
+          "eligibility": "Mradi wa msaada wa kiufundi; rekodi hii haionyeshi maombi ya moja kwa moja kwa umma. Angalia chanzo rasmi kwa njia za kushiriki."
+        }
+      }
     },
     {
       "code": "NG",
@@ -285,7 +529,29 @@
         "SMEs",
         "green growth",
         "finance"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "BAD et BOI — assistance technique pour le financement de la croissance verte des PME",
+          "summary": "Assistance technique approuvée par la BAD pour soutenir le financement de la croissance verte des PME nigérianes. L’accès dépend de l’institution de mise en œuvre.",
+          "eligibility": "Les critères et modalités dépendent de l’institution de mise en œuvre ; cette fiche n’est pas un appel public direct à subventions."
+        },
+        "ar": {
+          "title": "البنك الأفريقي للتنمية وبنك الصناعة — دعم فني لتمويل النمو الأخضر للمؤسسات الصغيرة والمتوسطة",
+          "summary": "مساعدة فنية وافق عليها البنك الأفريقي للتنمية لدعم تمويل النمو الأخضر للمؤسسات الصغيرة والمتوسطة في نيجيريا. يعتمد الوصول على المؤسسة المنفذة.",
+          "eligibility": "تعتمد المعايير والإجراءات على المؤسسة المنفذة؛ وهذه البطاقة ليست دعوة عامة مباشرة للحصول على منحة."
+        },
+        "pt": {
+          "title": "BAD e BOI — assistência técnica para financiamento do crescimento verde das PME",
+          "summary": "Assistência técnica aprovada pelo BAD para apoiar o financiamento do crescimento verde das PME nigerianas. O acesso depende da instituição executora.",
+          "eligibility": "Os critérios e procedimentos dependem da instituição executora; esta ficha não é uma chamada pública direta de subvenções."
+        },
+        "sw": {
+          "title": "AfDB na BOI — msaada wa kiufundi kwa fedha za ukuaji wa kijani kwa biashara ndogo",
+          "summary": "Msaada wa kiufundi ulioidhinishwa na AfDB kusaidia fedha za ukuaji wa kijani kwa biashara ndogo na za kati Nigeria. Upatikanaji hutegemea taasisi inayotekeleza.",
+          "eligibility": "Vigezo na taratibu hutegemea taasisi inayotekeleza; rekodi hii si mwito wa ruzuku wa moja kwa moja kwa umma."
+        }
+      }
     },
     {
       "code": "BJ",
@@ -329,7 +595,29 @@
         "renewable energy",
         "agriculture",
         "solar"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Programme BAD DREAM — énergies renouvelables décentralisées pour l’agriculture",
+          "summary": "Programme approuvé par la BAD qui relie les solutions d’énergie renouvelable décentralisée au développement agricole en Éthiopie.",
+          "eligibility": "Programme en cours ; aucune candidature publique directe n’est indiquée dans cette fiche. Consultez la source officielle pour connaître les modalités de participation."
+        },
+        "ar": {
+          "title": "برنامج DREAM للبنك الأفريقي للتنمية — الطاقة المتجددة الموزعة للزراعة",
+          "summary": "برنامج وافق عليه البنك الأفريقي للتنمية يربط حلول الطاقة المتجددة الموزعة بالتنمية الزراعية في إثيوبيا.",
+          "eligibility": "برنامج جارٍ؛ ولا تشير هذه البطاقة إلى تقديم طلبات عامة مباشرة. راجع المصدر الرسمي لمعرفة طرق المشاركة."
+        },
+        "pt": {
+          "title": "Programa DREAM do BAD — energias renováveis distribuídas para a agricultura",
+          "summary": "Programa aprovado pelo BAD que liga soluções de energia renovável distribuída ao desenvolvimento agrícola na Etiópia.",
+          "eligibility": "Programa em curso; esta ficha não indica candidaturas públicas diretas. Consulte a fonte oficial para conhecer as modalidades de participação."
+        },
+        "sw": {
+          "title": "Programu ya DREAM ya AfDB — nishati jadidifu iliyosambazwa kwa kilimo",
+          "summary": "Programu iliyoidhinishwa na AfDB inayounganisha suluhisho za nishati jadidifu iliyosambazwa na maendeleo ya kilimo nchini Ethiopia.",
+          "eligibility": "Programu inaendelea; rekodi hii haionyeshi maombi ya moja kwa moja kwa umma. Angalia chanzo rasmi kwa njia za kushiriki."
+        }
+      }
     },
     {
       "code": "GH",
@@ -396,7 +684,29 @@
         "SMEs",
         "blended finance",
         "women entrepreneurs"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Financement mixte IFAD–AgDevCo pour la nouvelle génération d’entreprises agroalimentaires africaines",
+          "summary": "Accord de prêt de 10 millions de dollars entre l’IFAD et AgDevCo visant à mobiliser des financements pour les entreprises agroalimentaires africaines en phase de démarrage, notamment celles détenues localement et dirigées par des femmes.",
+          "eligibility": "Mécanisme de financement destiné aux entreprises agroalimentaires admissibles, et non une subvention automatique aux agriculteurs individuels. Vérifiez les critères auprès d’AgDevCo et de l’IFAD."
+        },
+        "ar": {
+          "title": "تمويل مختلط من IFAD وAgDevCo للجيل الجديد من شركات الأغذية الزراعية في أفريقيا",
+          "summary": "اتفاق قرض بقيمة 10 ملايين دولار بين الصندوق الدولي للتنمية الزراعية وAgDevCo لتعبئة التمويل لشركات الأغذية الزراعية الأفريقية الناشئة، مع التركيز على الشركات المحلية والنساء القياديات.",
+          "eligibility": "آلية تمويل مخصصة لشركات الأغذية الزراعية المؤهلة وليست منحة تلقائية للمزارعين الأفراد. تحقق من المعايير لدى AgDevCo والصندوق الدولي للتنمية الزراعية."
+        },
+        "pt": {
+          "title": "Financiamento misto IFAD–AgDevCo para a nova geração de empresas agroalimentares africanas",
+          "summary": "Acordo de empréstimo de 10 milhões de dólares entre o FIDA e a AgDevCo para mobilizar financiamento para empresas agroalimentares africanas em fase inicial, com destaque para empresas de propriedade local e lideradas por mulheres.",
+          "eligibility": "Mecanismo de financiamento para empresas agroalimentares elegíveis, não uma subvenção automática para agricultores individuais. Confirme os critérios junto da AgDevCo e do FIDA."
+        },
+        "sw": {
+          "title": "Ufadhili mchanganyiko wa IFAD–AgDevCo kwa kizazi kipya cha biashara za mifumo ya chakula Afrika",
+          "summary": "Makubaliano ya mkopo wa dola milioni 10 kati ya IFAD na AgDevCo ya kuhamasisha fedha kwa biashara changa za mifumo ya chakula Afrika, hasa zinazomilikiwa nchini na kuongozwa na wanawake.",
+          "eligibility": "Mfumo wa ufadhili kwa biashara zinazostahili za mifumo ya chakula, si ruzuku ya moja kwa moja kwa wakulima binafsi. Thibitisha vigezo kwa AgDevCo na IFAD."
+        }
+      }
     },
     {
       "code": "KE",
@@ -418,7 +728,29 @@
         "Rwanda",
         "climate finance",
         "farmers"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Mécanisme IFAD–Equity Group de financement de l’adaptation climatique",
+          "summary": "Mécanisme de 200 millions de dollars visant à élargir le financement de l’adaptation climatique aux petits producteurs et aux entreprises rurales au Kenya, en Ouganda, en Tanzanie et au Rwanda.",
+          "eligibility": "Mécanisme de financement par l’intermédiaire d’Equity Group ; les conditions et produits disponibles dépendent du pays et de l’institution participante. Ce n’est pas une subvention directe garantie."
+        },
+        "ar": {
+          "title": "آلية تمويل التكيف المناخي بين IFAD ومجموعة Equity",
+          "summary": "آلية بقيمة 200 مليون دولار لتوسيع تمويل التكيف مع المناخ لصغار المنتجين والمشروعات الريفية في كينيا وأوغندا وتنزانيا ورواندا.",
+          "eligibility": "تُقدم الآلية من خلال مجموعة Equity؛ وتعتمد الشروط والمنتجات المتاحة على البلد والمؤسسة المشاركة. وليست منحة مباشرة مضمونة."
+        },
+        "pt": {
+          "title": "Mecanismo IFAD–Equity Group de financiamento da adaptação climática",
+          "summary": "Mecanismo de 200 milhões de dólares destinado a ampliar o financiamento da adaptação climática para pequenos produtores e empresas rurais no Quénia, Uganda, Tanzânia e Ruanda.",
+          "eligibility": "O mecanismo é disponibilizado através do Equity Group; as condições e produtos dependem do país e da instituição participante. Não é uma subvenção direta garantida."
+        },
+        "sw": {
+          "title": "Mfumo wa fedha za kukabiliana na tabianchi wa IFAD–Equity Group",
+          "summary": "Mfumo wa dola milioni 200 unaolenga kupanua fedha za kukabiliana na tabianchi kwa wazalishaji wadogo na biashara za vijijini Kenya, Uganda, Tanzania na Rwanda.",
+          "eligibility": "Mfumo hutolewa kupitia Equity Group; masharti na bidhaa hutegemea nchi na taasisi shiriki. Si ruzuku ya moja kwa moja iliyohakikishwa."
+        }
+      }
     },
     {
       "code": "RW",
@@ -438,7 +770,29 @@
         "farmer organisations",
         "finance",
         "agriculture"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Financement IFAD–Bank of Kigali pour les organisations paysannes",
+          "summary": "Accord de financement de 12 millions de dollars visant à élargir l’accès au financement des organisations paysannes au Rwanda.",
+          "eligibility": "Financement destiné aux organisations paysannes admissibles ; les conditions d’accès dépendent de la Bank of Kigali et des modalités du programme. Consultez la source officielle."
+        },
+        "ar": {
+          "title": "تمويل IFAD وبنك كيغالي لمنظمات المزارعين",
+          "summary": "اتفاق تمويل بقيمة 12 مليون دولار يهدف إلى توسيع وصول منظمات المزارعين في رواندا إلى التمويل.",
+          "eligibility": "التمويل مخصص لمنظمات المزارعين المؤهلة؛ وتعتمد شروط الوصول على بنك كيغالي وإجراءات البرنامج. راجع المصدر الرسمي."
+        },
+        "pt": {
+          "title": "Financiamento IFAD–Bank of Kigali para organizações de agricultores",
+          "summary": "Acordo de financiamento de 12 milhões de dólares destinado a ampliar o acesso ao financiamento para organizações de agricultores no Ruanda.",
+          "eligibility": "Financiamento para organizações de agricultores elegíveis; as condições dependem do Bank of Kigali e das regras do programa. Consulte a fonte oficial."
+        },
+        "sw": {
+          "title": "Ufadhili wa IFAD–Bank of Kigali kwa mashirika ya wakulima",
+          "summary": "Makubaliano ya ufadhili wa dola milioni 12 yanayolenga kupanua upatikanaji wa fedha kwa mashirika ya wakulima nchini Rwanda.",
+          "eligibility": "Ufadhili huu ni kwa mashirika ya wakulima yanayostahili; masharti hutegemea Bank of Kigali na taratibu za programu. Angalia chanzo rasmi."
+        }
+      }
     },
     {
       "code": "SO",
@@ -459,7 +813,29 @@
         "innovation",
         "markets",
         "finance"
-      ]
+      ],
+      "localized": {
+        "fr": {
+          "title": "Somalie — défi d’innovation pour l’accès des femmes aux marchés",
+          "summary": "L’IFAD et le gouvernement somalien ont soutenu des entreprises innovantes qui améliorent l’accès des femmes aux marchés agricoles, au financement et aux opportunités commerciales.",
+          "eligibility": "Défi clôturé et résultats annoncés. Cette fiche est archivée à titre d’information ; aucune candidature n’est actuellement ouverte."
+        },
+        "ar": {
+          "title": "الصومال — تحدي الابتكار لتعزيز وصول النساء إلى الأسواق",
+          "summary": "دعم الصندوق الدولي للتنمية الزراعية والحكومة الصومالية شركات مبتكرة لتحسين وصول النساء إلى الأسواق الزراعية والتمويل والفرص التجارية.",
+          "eligibility": "انتهى التحدي وأُعلنت النتائج. تُحفظ البطاقة للمعلومات والأرشيف؛ ولا يوجد تقديم مفتوح حاليًا."
+        },
+        "pt": {
+          "title": "Somália — desafio de inovação para o acesso das mulheres aos mercados",
+          "summary": "O FIDA e o Governo da Somália apoiaram empresas inovadoras que melhoram o acesso das mulheres aos mercados agrícolas, ao financiamento e a oportunidades de negócio.",
+          "eligibility": "O desafio terminou e os resultados foram anunciados. Este registo é arquivado para informação; não há candidaturas abertas atualmente."
+        },
+        "sw": {
+          "title": "Somalia — changamoto ya ubunifu kwa wanawake kufikia masoko",
+          "summary": "IFAD na Serikali ya Somalia ziliunga mkono biashara bunifu zinazoboresha upatikanaji wa wanawake katika masoko ya kilimo, fedha na fursa za biashara.",
+          "eligibility": "Changamoto imefungwa na matokeo yametangazwa. Rekodi hii imehifadhiwa kwa taarifa; hakuna maombi yaliyo wazi kwa sasa."
+        }
+      }
     },
     {
       "code": "MU",
