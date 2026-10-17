@@ -261,7 +261,7 @@ if (fs.existsSync(regionalSourcePath)) {
   for (const item of resourcePages) {
     const html = read(item.rel);
     if (!html) continue;
-    const section = html.match(/<section id=["']regionalAgriculturalIntelligence["'][\s\\S]*?<\/section>/i);
+    const section = html.match(/<section id=["']regionalAgriculturalIntelligence["'][\s\S]*?<\/section>/i);
     if (!section) { failures.push(item.rel + ": regional agricultural intelligence section is missing"); continue; }
     const renderedUrls = [...section[0].matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)].map(match => normalizedSourceHref(match[1]));
     if (renderedUrls.length !== expectedUrls.length) failures.push(item.rel + ": expected " + expectedUrls.length + " regional intelligence cards, found " + renderedUrls.length);
