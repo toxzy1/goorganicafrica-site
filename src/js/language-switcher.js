@@ -6,6 +6,8 @@
     : [];
   var dictionary = window.GOA_TRANSLATIONS || {};
   var languageLoads = {};
+  // Prevent a slower, earlier language request from overwriting a newer choice.
+  var refreshSequence = 0;
   var readyResolve;
   var ready = new Promise(function (resolve) { readyResolve = resolve; });
 
@@ -184,8 +186,11 @@
   }
 
   function refresh(requestedLanguage) {
+    var sequence = ++refreshSequence;
     var code = setLanguage(requestedLanguage || currentLanguage());
     return loadLanguage(code).then(function () {
+      // A later selector choice always wins, even if this request finishes last.
+      if (sequence !== refreshSequence) return currentLanguage();
       apply(document.body, code);
 
       var homeTitle = resolve(code, "home.pageTitle");
