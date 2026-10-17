@@ -235,6 +235,13 @@ for (const item of resourcePages) {
   if (!html.includes(item.title)) failures.push(item.rel + ": expected localized resource heading is missing");
   if (!html.includes('id="resourceEmpty"')) failures.push(item.rel + ": missing accessible no-results message");
   if (!html.includes("Intl.DisplayNames")) failures.push(item.rel + ": country names are not localized for the selected language");
+  const countryBlocks = (html.match(/<details class=["']resource-country["']/gi) || []).length;
+  if (countryBlocks !== 54) failures.push(item.rel + ": expected 54 country groups, found " + countryBlocks);
+  const countryOptions = (html.match(/<option value=["'][A-Z]{2}["'][^>]*data-country-code=/gi) || []).length;
+  if (countryOptions !== 54) failures.push(item.rel + ": expected 54 country filter options, found " + countryOptions);
+  const cardCount = (html.match(/<article class=["']resource-card["']/gi) || []).length;
+  const initialCount = (html.match(/id=["']resourceCount["']>(\\d+)/i) || [])[1];
+  if (initialCount && Number(initialCount) !== cardCount) failures.push(item.rel + ": resource counter does not match rendered country cards (" + initialCount + " vs " + cardCount + ")");
   if (!html.includes("data-resource-country-name")) failures.push(item.rel + ": country headings lack localization hooks");
   if (item.lang !== "en" && html.includes("<h2>Regional Agricultural Intelligence</h2>")) failures.push(item.rel + ": regional intelligence heading is not localized");
   if (item.lang !== "en" && html.includes("Shared agricultural initiatives and corridors spanning multiple African countries.")) failures.push(item.rel + ": regional intelligence description is not localized");
@@ -254,9 +261,9 @@ if (fs.existsSync(regionalSourcePath)) {
   for (const item of resourcePages) {
     const html = read(item.rel);
     if (!html) continue;
-    const section = html.match(/<section id=["']regionalAgriculturalIntelligence["'][\\s\\S]*?<\\/section>/i);
+    const section = html.match(/<section id=["']regionalAgriculturalIntelligence["'][\s\\S]*?<\/section>/i);
     if (!section) { failures.push(item.rel + ": regional agricultural intelligence section is missing"); continue; }
-    const renderedUrls = [...section[0].matchAll(/<a\\b[^>]*href=["']([^"']+)["']/gi)].map(match => normalizedSourceHref(match[1]));
+    const renderedUrls = [...section[0].matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)].map(match => normalizedSourceHref(match[1]));
     if (renderedUrls.length !== expectedUrls.length) failures.push(item.rel + ": expected " + expectedUrls.length + " regional intelligence cards, found " + renderedUrls.length);
     if (new Set(renderedUrls).size !== renderedUrls.length) failures.push(item.rel + ": duplicate regional intelligence cards are rendered");
   }
