@@ -40,7 +40,7 @@
 <div style="font-size:.82rem;opacity:.78;">{{L.source}}: {{record.source}} · {{L.verified}}: {{record.verified}}{% if record.status == "official" %} · <span>{{L.official}}</span>{% endif %}{% if record.shared_coverage and record.shared_coverage|length > 1 %} · <span>{{L.shared}}</span>{% endif %}</div><a href="{{record.url}}" target="_blank" rel="noopener noreferrer">{{L.open}}</a></article>{% endfor %}{% endif %}{% endfor %}
 </div></details>{% endfor %}
 </div>
-<section id="regionalAgriculturalIntelligence" style="margin-top:32px;padding:20px;border:1px solid var(--line);border-radius:12px;"><h2>{{L.regionalTitle}}</h2><p>{{L.regionalIntro}}</p>{% for region in agriculturalRegionalIntelligence.regions %}<article class="regional-resource-card" style="padding:15px;margin-top:12px;border:1px solid var(--line);border-radius:10px;"><strong>{{region.title}}</strong><p>{{region.description}}</p><div style="font-size:.82rem;opacity:.78;">{{region.countries|join(", ")}} · {{L.verified}}: {{region.verified}}</div><a href="{{region.url}}" target="_blank" rel="noopener noreferrer">{{L.open}}</a></article>{% endfor %}</section>
+<section id="regionalAgriculturalIntelligence" style="margin-top:32px;padding:20px;border:1px solid var(--line);border-radius:12px;"><h2>{{L.regionalTitle}}</h2><p>{{L.regionalIntro}}</p>{% for region in agriculturalRegionalIntelligence.regions %}{% set localizedRegion = region.localized[lang] if region.localized and region.localized[lang] else {} %}<article class="regional-resource-card" data-region-code="{{region.code}}" style="padding:15px;margin-top:12px;border:1px solid var(--line);border-radius:10px;"><strong>{{localizedRegion.title or region.title}}</strong><p>{{localizedRegion.description or region.description}}</p><div style="font-size:.82rem;opacity:.78;"><span class="regional-country-list" data-regional-countries="{{region.countries|join(',')}}">{{region.countries|join(", ")}}</span> · {{L.verified}}: {{region.verified}}</div><a href="{{region.url}}" target="_blank" rel="noopener noreferrer">{{L.open}}</a></article>{% endfor %}</section>
 <div style="margin-top:32px;padding:20px;border:1px solid var(--line);border-radius:12px;"><h2>{{L.current}}</h2><p>{{L.currentText}}</p></div>
 </div></section>
 <script>
@@ -50,6 +50,7 @@
   try{
     const names=new Intl.DisplayNames([lang],{type:"region"});
     document.querySelectorAll("[data-resource-country-name]").forEach(el=>{const name=names.of(el.dataset.resourceCountryName);if(name&&name!==el.dataset.resourceCountryName)el.textContent=name;});
+    document.querySelectorAll("[data-regional-countries]").forEach(el=>{el.textContent=el.dataset.regionalCountries.split(",").map(code=>names.of(code)||code).join(", ");});
     c.querySelectorAll("option[data-country-code]").forEach(opt=>{const name=names.of(opt.dataset.countryCode);opt.textContent=(opt.dataset.countryFlag||"")+" "+(name&&name!==opt.dataset.countryCode?name:opt.dataset.countryName);});
   }catch(_){}
   function f(){
