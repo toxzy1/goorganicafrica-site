@@ -1014,7 +1014,21 @@
             "access": "Regional investment information; not a direct grant application."
           }
         ],
-        "insurance": [],
+        "insurance": [
+          {
+            "title": "Uganda — Uganda Agriculture Insurance Scheme (UAIS) and premium-subsidy guidance",
+            "description": "Uganda's Insurance Regulatory Authority describes the public-private Uganda Agriculture Insurance Scheme, managed by the Agro Insurance Consortium, as covering crop, livestock, aquaculture and apiculture risks. The regulator reports that government premium support helps farmers access cover, while demand can exceed available subsidy; the current fiscal-year allocation and participating insurers should be checked before purchase.",
+            "url": "https://ira.go.ug/agriculture-insurance-a-key-tool-for-sustainable-farming-food-security/",
+            "source": "Insurance Regulatory Authority of Uganda (IRA)",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural insurance and premium-subsidy scheme",
+            "eligibility": "Farmers seeking crop, livestock, aquaculture or apiculture insurance; eligibility, premium subsidy and covered risks depend on the current policy and available programme allocation.",
+            "access": "Contact the Agro Insurance Consortium or a licensed participating insurer for current products, subsidy availability, premiums, exclusions and claim procedures. Do not assume subsidy funding is available for every applicant or season.",
+            "category": "insurance"
+          }
+        ],
         "farmer-support": [],
         "research": [
           {
@@ -1643,7 +1657,22 @@
             "access": "Regional investment information; not a direct grant application."
           }
         ],
-        "insurance": [],
+        "insurance": [
+          {
+            "title": "Rwanda — National Agriculture Insurance Scheme (NAIS / Tekana)",
+            "description": "Rwanda's Ministry of Agriculture and Animal Resources encourages crop and livestock farmers to enrol in the government-backed National Agriculture Insurance Scheme. The Ministry's published update states that the government subsidises 40% of the total agricultural insurance premium and lists participating private insurers; current terms should be reconfirmed before enrollment.",
+            "url": "https://www.minagri.gov.rw/updates/news-details/minagri-and-rab-spiu-encourage-farmers-to-embrace-the-national-agriculture-insurance-scheme-nais",
+            "source": "Ministry of Agriculture and Animal Resources (MINAGRI), Rwanda",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Government-backed crop and livestock insurance scheme",
+            "amount": "The Ministry's published update states a 40% government subsidy on the total agricultural insurance premium; confirm the current subsidy and policy terms before enrollment.",
+            "eligibility": "Crop and livestock farmers; covered crops, animals, providers and policy terms depend on the current scheme and insurer.",
+            "access": "Contact the Rwanda Agriculture and Animal Resources Development Board (RAB/SPIU) or a participating insurer to confirm enrollment, current premiums, covered risks, required documents and whether subsidy allocation is available in your district.",
+            "category": "insurance"
+          }
+        ],
         "farmer-support": [],
         "research": [
           {
@@ -5490,7 +5519,22 @@
         ],
         "inputs": [],
         "markets": [],
-        "insurance": [],
+        "insurance": [
+          {
+            "title": "Senegal — CNAAS agricultural crop, livestock and equipment insurance",
+            "description": "The Compagnie Nationale d'Assurance Agricole du Sénégal (CNAAS), a public-private agricultural insurer, lists index-based crop insurance, yield-loss crop insurance, agricultural equipment cover, livestock mortality and poultry mortality policies, as well as artisanal fishing insurance. Coverage and exclusions differ by product.",
+            "url": "https://cnaas.sn/insurance/",
+            "source": "Compagnie Nationale d'Assurance Agricole du Sénégal (CNAAS)",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Agricultural insurance products",
+            "eligibility": "Farmers, livestock keepers, owners of agricultural equipment and eligible artisanal fishing operators; the specific insured risks and eligibility vary by policy.",
+            "access": "Review the individual policy terms and contact CNAAS for current premiums, covered risks, exclusions, claim procedures and any available government support.",
+            "contact": "+221 33 869 78 00 · contact details on the official CNAAS website",
+            "category": "insurance"
+          }
+        ],
         "farmer-support": [
           {
             "title": "Northern and Central Agricultural Production Areas Connectivity Project",
