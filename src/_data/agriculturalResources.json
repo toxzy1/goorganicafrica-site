@@ -3779,6 +3779,18 @@
             "type": "Government agricultural services and policy",
             "access": "Check the ministry's latest notices and contact details before relying on a programme or funding claim.",
             "category": "farmer-support"
+          },
+          {
+            "title": "Gabon — Ministry of Agriculture official notices and subsidy-scam warnings",
+            "description": "The Ministry's official homepage publishes agricultural policy, service updates and notices. On 22 June 2026, the Ministry issued a warning about a fake agricultural subsidy campaign. Farmers should verify subsidy announcements through official ministry notices before paying fees or sharing personal information.",
+            "url": "https://agriculture.gouv.ga/",
+            "source": "Ministry of Agriculture, Livestock and Rural Development, Gabon",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Official ministry notices and fraud-prevention guidance",
+            "access": "Use the official Ministry notices to check whether a programme is genuine. Do not pay agents or share personal data based only on social-media messages; confirm any application route directly with the Ministry.",
+            "category": "farmer-support"
           }
         ],
         "research": [],
@@ -3927,7 +3939,21 @@
         "inputs": [],
         "markets": [],
         "insurance": [],
-        "farmer-support": [],
+        "farmer-support": [
+          {
+            "title": "Guinea — Ministry of Agriculture programmes, equipment notices and input support",
+            "description": "The official Ministry portal lists agricultural programmes and notices, including 2026 certified-seed distribution, subsidised-fertiliser activity, agricultural-equipment notices and links to public agricultural bodies, including the Fonds de Développement Agricole. It is an information gateway; eligibility and active application windows depend on each individual notice.",
+            "url": "https://agriculture.gov.gn/",
+            "source": "Ministry of Agriculture and Livestock, Guinea",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "Government agricultural programmes and farmer-support notices",
+            "access": "Check the latest Ministry communiqués and calls for applications. This homepage is not itself a grant application form; follow the specific official notice and confirm current requirements.",
+            "contact": "info@agriculture.gov.gn · +224 624 26 30 47",
+            "category": "farmer-support"
+          }
+        ],
         "research": [],
         "climate": [],
         "data": [
@@ -5920,6 +5946,18 @@
             "type": "Agricultural programme / resource",
             "access": "Official programme or project information; eligibility and implementation conditions apply.",
             "published": "2026-09-30"
+          },
+          {
+            "title": "Somalia — National Agricultural Extension Strategy and Action Plan 2026–2030",
+            "description": "The Federal Ministry of Agriculture and Irrigation's January 2026 strategy sets out a national framework for pluralistic, demand-driven agricultural extension and advisory services. It acknowledges input from farmer organisations, cooperatives, extension providers, NGOs, private-sector actors and academic institutions.",
+            "url": "https://moa.gov.so/wp-content/uploads/2026/01/Final-Somali-National-Agricultural-Extension-Strategy-Jan-2026.-1.pdf",
+            "source": "Federal Ministry of Agriculture and Irrigation, Somalia",
+            "source_tier": 1,
+            "verified": "2026-10-17",
+            "status": "official",
+            "type": "National agricultural extension strategy (2026–2030)",
+            "access": "Use this document as a national policy and service-planning reference, not as a grant or registration form. For farmer registration, seasonal advice or local extension support, contact the Ministry and the relevant state or district extension office.",
+            "category": "farmer-support"
           }
         ],
         "research": [],
