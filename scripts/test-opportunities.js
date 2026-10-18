@@ -10,6 +10,9 @@ assert.match(template, /record\.category == 'competition'[\s\S]*?competitions/, 
 assert.match(template, /record\.category == 'programme'[\s\S]*?programmes/, "programme category uses its translation key");
 assert.match(template, /function dedupeCards\(\)/, "duplicate opportunity cards are removed");
 assert.match(template, /recordLifecycle==='expired'/, "expired lifecycle metadata is respected even when status differs");
+assert.ok(template.includes('class="opportunity-source" data-source-original='), "source organization names retain a canonical value for localization");
+assert.ok(template.includes("Banque africaine de développement") && template.includes("البنك الأفريقي للتنمية") && template.includes("Banco Africano de Desenvolvimento") && template.includes("Benki ya Maendeleo ya Afrika"), "African Development Bank source name is localized in all four non-English languages");
+assert.ok(template.includes("Fonds international de développement agricole (FIDA)") && template.includes("Fundo Internacional de Desenvolvimento Agrícola (FIDA)"), "IFAD source name has localized full wording while preserving its acronym");
 const match = template.match(/<script>\s*([\s\S]*?)<\/script>/);
 assert.ok(match, "opportunity directory filter script exists");
 
