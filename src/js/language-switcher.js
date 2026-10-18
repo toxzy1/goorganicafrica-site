@@ -166,20 +166,41 @@
     });
   }
 
+  function mergeTranslations(base, additions) {
+    var merged = {};
+    Object.keys(base || {}).forEach(function (key) { merged[key] = base[key]; });
+    Object.keys(additions || {}).forEach(function (key) {
+      var current = base && base[key];
+      var incoming = additions[key];
+      if (current && incoming && typeof current === "object" && typeof incoming === "object" &&
+          !Array.isArray(current) && !Array.isArray(incoming)) {
+        merged[key] = mergeTranslations(current, incoming);
+      } else {
+        merged[key] = incoming;
+      }
+    });
+    return merged;
+  }
+
   function loadLanguage(code) {
-    if (dictionary[code]) return Promise.resolve(dictionary[code]);
+    // The inline English dictionary contains the site's static translations,
+    // but it can lag behind /i18n/en.json. Always load and merge the full
+    // English bundle so a missing key cannot leave Arabic text on screen.
+    if (dictionary[code] && code !== "en") return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261005", { cache: "default" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261018", { cache: "default" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
       })
       .then(function (translations) {
-        dictionary[code] = translations || {};
+        dictionary[code] = code === "en"
+          ? mergeTranslations(dictionary.en || {}, translations || {})
+          : (translations || {});
         return dictionary[code];
       })
       .catch(function () {
-        dictionary[code] = dictionary.en || {};
+        dictionary[code] = dictionary[code] || dictionary.en || {};
         return dictionary[code];
       });
     return languageLoads[code];
