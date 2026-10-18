@@ -27,6 +27,7 @@ const noDeadline=makeCard({status:"active",deadline:"",search:"ongoing farm gran
 const cards=[future,pastDeadline,closed,noDeadline];
 const listeners={};
 const document={
+  documentElement:{lang:"en"},
   querySelectorAll(selector){return selector===".opportunity-card"?cards:[];},
   getElementById(id){return ({"opportunity-search":input,"opportunity-status":select,"opportunity-category":category,"opportunity-empty":empty})[id]||null;},
   addEventListener(name,fn){listeners[name]=fn;}
