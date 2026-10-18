@@ -14,7 +14,7 @@ const match = template.match(/<script>\s*([\s\S]*?)<\/script>/);
 assert.ok(match, "opportunity directory filter script exists");
 
 function makeCard({status, deadline, category="grants", search="farm grant"}={}) {
-  return {dataset:{status, deadline, category, search}, hidden:false, querySelector(){return null;}, querySelectorAll(){return [];}, innerText:"", remove(){this.removed=true;}};
+  return {dataset:{status, deadline, category, search, originalSearch:search}, hidden:false, querySelector(){return null;}, querySelectorAll(){return [];}, innerText:"", remove(){this.removed=true;}};
 }
 function element(value="") {
   return {value, hidden:false, listeners:{}, addEventListener(name, fn){this.listeners[name]=fn;}};
