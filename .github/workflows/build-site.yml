@@ -49,12 +49,12 @@ jobs:
         run: npm run audit:rendered
 
   browser-smoke:
-    if: github.event_name == 'pull_request' && (github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks' || github.event.pull_request.head.ref == 'cms/review-first-agriculture-sync' || github.event.pull_request.head.ref == 'fix/mobile-navigation-scroll' || github.event.pull_request.head.ref == 'fix/homepage-language-coverage')
+    if: github.event_name == 'pull_request' && (github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks' || github.event.pull_request.head.ref == 'cms/review-first-agriculture-sync' || github.event.pull_request.head.ref == 'fix/mobile-navigation-scroll' || github.event.pull_request.head.ref == 'fix/homepage-language-coverage' || github.event.pull_request.head.ref == 'fix/restore-english-on-language-switch')
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
-      GOA_PREVIEW_URL: ${{ github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks' && 'https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'cms/review-first-agriculture-sync' && 'https://cms-review-first-agriculture.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/mobile-navigation-scroll' && 'https://fix-mobile-navigation-scroll.goorganicafrica-site.pages.dev' || 'https://fix-homepage-language-covera.goorganicafrica-site.pages.dev' }}
+      GOA_PREVIEW_URL: ${{ github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks' && 'https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'cms/review-first-agriculture-sync' && 'https://cms-review-first-agriculture.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/mobile-navigation-scroll' && 'https://fix-mobile-navigation-scroll.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/restore-english-on-language-switch' && 'https://fix-restore-english-on-langu.goorganicafrica-site.pages.dev' || 'https://fix-homepage-language-covera.goorganicafrica-site.pages.dev' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
