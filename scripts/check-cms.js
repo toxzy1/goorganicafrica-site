@@ -200,8 +200,8 @@ if (!newsCountryTemplate.includes('candidate.lifecycle == "current"') || !newsCo
 if (!newsIndexTemplate.includes('article.lifecycle == "current"')) {
   throw new Error("News index must exclude historical and expired stories from current listings.");
 }
-if (!opportunitiesTemplate.includes('record.lifecycle or record.status')) {
-  throw new Error("Opportunity directory must fall back to the existing status field when lifecycle is absent.");
+if (!opportunitiesTemplate.includes('data-status="{{ record.status }}"') || !opportunitiesTemplate.includes('data-lifecycle="{{ record.lifecycle or \'\' }}"')) {
+  throw new Error("Opportunity directory must preserve the source status and optional lifecycle as separate fields.");
 }
 if (!opportunitySync.includes("discovered: today") || !opportunitySync.includes("country: country.name") || !opportunitySync.includes("code: country.code")) {
   throw new Error("Opportunity candidates must use the existing country schema and must not claim to be verified before review.");
