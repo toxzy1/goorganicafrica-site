@@ -177,3 +177,20 @@ test("homepage intelligence section is translated in French, Arabic, Portuguese 
     await expect(page.locator('[data-i18n="home.freeValue"]')).toHaveText(expected.free);
   }
 });
+
+
+test("switching a shared page from Arabic back to English removes Arabic interface text", async ({ page }) => {
+  await page.goto(baseURL + "/opportunities/", { waitUntil: "domcontentloaded" });
+  await page.locator("#site-language-select").selectOption("ar");
+  await expect(page.locator("html")).toHaveAttribute("lang", "ar");
+  await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+
+  await page.locator("#site-language-select").selectOption("en");
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await expect(page.locator("#site-language-select")).toHaveValue("en");
+  await expect.poll(async () => page.evaluate(() => window.GOA_I18N.t("opportunities", "activeStatus")))
+    .toBe("Active programme (not necessarily an open application)");
+
+  const remainingArabic = await page.locator("#main").innerText();
+  expect(remainingArabic, "English Opportunities page should not retain Arabic script").not.toMatch(/[\u0600-\u06FF]/);
+});
