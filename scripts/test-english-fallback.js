@@ -15,7 +15,11 @@ const element = {
     "data-i18n": "page.missingKey",
     "data-i18n-placeholder": "page.missingPlaceholder",
     "data-i18n-title": "page.missingTitle",
-    "data-i18n-alt": "page.missingAlt"
+    "data-i18n-alt": "page.missingAlt",
+    "placeholder": "Search",
+    "title": "English title",
+    "alt": "English image",
+    "aria-label": "English label"
   },
   getAttribute(name) { return this.attributes[name] || null; },
   setAttribute(name, value) { this.attributes[name] = value; }
