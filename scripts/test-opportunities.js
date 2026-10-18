@@ -6,11 +6,15 @@ const vm = require("node:vm");
 
 const template = fs.readFileSync(path.join(__dirname, "..", "src", "_includes", "opportunities-directory.njk"), "utf8");
 assert.match(template, /data-deadline=/, "opportunity cards expose their deadline for lifecycle filtering");
+assert.match(template, /record\.category == 'competition'[\s\S]*?competitions/, "competition category uses the plural translation key");
+assert.match(template, /record\.category == 'programme'[\s\S]*?programmes/, "programme category uses its translation key");
+assert.match(template, /function dedupeCards\(\)/, "duplicate opportunity cards are removed");
+assert.match(template, /recordLifecycle==='expired'/, "expired lifecycle metadata is respected even when status differs");
 const match = template.match(/<script>\s*([\s\S]*?)<\/script>/);
 assert.ok(match, "opportunity directory filter script exists");
 
 function makeCard({status, deadline, category="grants", search="farm grant"}={}) {
-  return {dataset:{status, deadline, category, search}, hidden:false};
+  return {dataset:{status, deadline, category, search}, hidden:false, querySelector(){return null;}, remove(){this.removed=true;}};
 }
 function element(value="") {
   return {value, hidden:false, listeners:{}, addEventListener(name, fn){this.listeners[name]=fn;}};
