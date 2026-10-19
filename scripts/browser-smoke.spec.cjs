@@ -2,6 +2,28 @@ const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.GOA_PREVIEW_URL || "https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev";
 
+test("Markets commodity names localize in all supported languages", async ({ page }) => {
+  const expected = {
+    en: ["Agricultural products", "Basic food commodities", "Beans (Cowpea) - Nambale", "Beef", "Cassava - Fresh", "Dry Maize", "Livestock", "Livestock and fish", "Local agricultural commodities", "Maize", "Matooke", "Milk", "Red Irish potato", "Rice (Paddy)", "Soybean", "Wheat"],
+    fr: ["Produits agricoles", "Produits alimentaires de base", "Haricot (niébé)", "Bœuf", "Manioc", "Maïs", "Élevage", "Élevage et poisson", "Produits agricoles locaux", "Matooke (banane plantain verte)", "Lait", "Pomme de terre rouge irlandaise", "Riz (paddy)", "Soja", "Blé"],
+    ar: ["المنتجات الزراعية", "السلع الغذائية الأساسية", "الفاصوليا (اللوبيا)", "لحم البقر", "الكسافا", "الذرة", "الثروة الحيوانية", "الثروة الحيوانية والأسماك", "السلع الزراعية المحلية", "ماتوكي (موز أخضر للطبخ)", "الحليب", "البطاطس الأيرلندية الحمراء", "الأرز (أرز شَلبي)", "فول الصويا", "القمح"],
+    pt: ["Produtos agrícolas", "Produtos alimentares básicos", "Feijão (feijão-frade)", "Carne bovina", "Mandioca", "Milho", "Pecuária", "Pecuária e pescado", "Produtos agrícolas locais", "Matoke (banana-da-terra verde)", "Leite", "Batata irlandesa vermelha", "Arroz (em casca)", "Soja", "Trigo"],
+    sw: ["Mazao ya kilimo", "Bidhaa za msingi za chakula", "Maharagwe (kunde)", "Nyama ya ng'ombe", "Muhogo", "Mahindi", "Mifugo", "Mifugo na samaki", "Mazao ya kilimo ya eneo husika", "Matoke (ndizi za kupika)", "Maziwa", "Viazi vyekundu vya aina ya Irish", "Mpunga", "Maharagwe ya soya", "Ngano"]
+  };
+  await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#market-commodity")).toBeVisible({ timeout: 15000 });
+  for (const [language, labels] of Object.entries(expected)) {
+    if (language !== "en") {
+      await page.locator("#site-language-select").selectOption(language);
+      await expect(page.locator("html")).toHaveAttribute("lang", language);
+    }
+    const options = page.locator("#market-commodity");
+    for (const label of labels) {
+      await expect(options).toContainText(label);
+    }
+  }
+});
+
 test("mobile navigation can scroll to every page link on a short screen", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 640 });
   await page.goto(baseURL + "/", { waitUntil: "domcontentloaded" });
