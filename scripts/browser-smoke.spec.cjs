@@ -122,6 +122,26 @@ test("Markets dates and connecting labels follow the selected language", async (
   }
 });
 
+test("Markets indicator period month names follow the selected language", async ({ page }) => {
+  await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
+  const period = page.locator("[data-market-period]").first();
+  await expect(period).toBeVisible({ timeout: 15000 });
+  const original = (await period.getAttribute("data-market-period")) || "";
+  test.skip(!/^(January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4}$/i.test(original.trim()),
+    "No English month/year indicator period is available to verify on this fixture.");
+
+  const englishMonths = /\\b(January|February|March|April|May|June|July|August|September|October|November|December)\\b/i;
+  for (const language of ["fr", "ar", "pt", "sw"]) {
+    await page.locator("#site-language-select").selectOption(language);
+    await expect(page.locator("html")).toHaveAttribute("lang", language);
+    await expect(period).not.toContainText(englishMonths);
+  }
+
+  await page.locator("#site-language-select").selectOption("en");
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await expect(period).toHaveText(original);
+});
+
 test("mobile navigation can scroll to every page link on a short screen", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 640 });
   await page.goto(baseURL + "/", { waitUntil: "domcontentloaded" });

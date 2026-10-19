@@ -398,6 +398,30 @@
     }).format(date);
   }
 
+  function formatMarketPeriod(raw, locale) {
+    var value = String(raw || "").trim();
+    if (!value) return value;
+    var months = {
+      january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
+      july: 6, august: 7, september: 8, october: 9, november: 10, december: 11
+    };
+    var named = value.match(/^([A-Za-z]+)\\s+(\\d{4})$/);
+    var numeric = value.match(/^(\\d{4})-(\\d{2})$/);
+    var year, month;
+    if (named && Object.prototype.hasOwnProperty.call(months, named[1].toLowerCase())) {
+      month = months[named[1].toLowerCase()];
+      year = Number(named[2]);
+    } else if (numeric && Number(numeric[2]) >= 1 && Number(numeric[2]) <= 12) {
+      year = Number(numeric[1]);
+      month = Number(numeric[2]) - 1;
+    } else {
+      return value;
+    }
+    return new Intl.DateTimeFormat(locale, {
+      month: "long", year: "numeric", timeZone: "UTC"
+    }).format(new Date(Date.UTC(year, month, 1, 12)));
+  }
+
   function refreshMarketDates() {
     var lang = (document.documentElement.lang || "en").slice(0, 2);
     var locales = { en: "en-GB", fr: "fr-FR", ar: "ar", pt: "pt-PT", sw: "sw-TZ" };
@@ -406,6 +430,14 @@
       var original = el.getAttribute("data-market-date-original") || el.getAttribute("data-market-date") || el.textContent.trim();
       if (!el.hasAttribute("data-market-date-original")) el.setAttribute("data-market-date-original", original);
       el.textContent = formatMarketDate(original, locale);
+    });
+
+    // Indicator periods such as "August 2026" are dates too: localize the
+    // month name while preserving the original period for every language switch.
+    document.querySelectorAll("[data-market-period]").forEach(function (el) {
+      var original = el.getAttribute("data-market-period-original") || el.getAttribute("data-market-period") || el.textContent.trim();
+      if (!el.hasAttribute("data-market-period-original")) el.setAttribute("data-market-period-original", original);
+      el.textContent = lang === "en" ? original : formatMarketPeriod(original, locale);
     });
 
     // Localize dataset-driven freshness values and price-type options as well as
