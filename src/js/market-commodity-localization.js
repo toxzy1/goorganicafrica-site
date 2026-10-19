@@ -414,7 +414,13 @@
       tier: { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Daraja" },
       verified: { fr: "Vérifié", ar: "تم التحقق في", pt: "Verificado", sw: "Imethibitishwa" }
     };
-    document.querySelectorAll("[data-market-word]").forEach(function (el) {\n      var key = el.getAttribute("data-market-word");\n      var values = { tier: { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Daraja" }, verified: { fr: "Vérifié", ar: "تم التحقق", pt: "Verificado", sw: "Imethibitishwa" } };\n      var original = key === "tier" ? "Tier" : "Verified";\n      el.textContent = lang === "en" ? original : ((values[key] && values[key][lang]) || original);\n    });\n    document.querySelectorAll("[data-market-scope-label]").forEach(function (el) {
+    document.querySelectorAll("[data-market-word]").forEach(function (el) {
+      var key = el.getAttribute("data-market-word");
+      var values = { tier: { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Daraja" }, verified: { fr: "Vérifié", ar: "تم التحقق", pt: "Verificado", sw: "Imethibitishwa" } };
+      var original = key === "tier" ? "Tier" : "Verified";
+      el.textContent = lang === "en" ? original : ((values[key] && values[key][lang]) || original);
+    });
+    document.querySelectorAll("[data-market-scope-label]").forEach(function (el) {
       var scope = el.getAttribute("data-market-scope") || "";
       var tier = el.getAttribute("data-market-tier") || "";
       var date = el.getAttribute("data-market-verified") || "";
