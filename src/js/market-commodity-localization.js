@@ -234,6 +234,8 @@
     });
   }
 
+  var marketDateTextOriginals = new WeakMap();
+
   // The global page dictionary covers the main headings, but market records also
   // contain small dataset-driven labels and date strings. Localize those here.
   var marketUiTranslations = {
@@ -284,11 +286,12 @@
         if (!node.nodeValue || !node.nodeValue.trim()) return;
         var parent = node.parentElement;
         if (!parent || parent.closest("script,style,[data-i18n]")) return;
-        if (!parent.hasAttribute("data-market-date-text-original")) {
-          if (!/\\b\\d{4}-\\d{2}-\\d{2}\\b/.test(node.nodeValue)) return;
-          parent.setAttribute("data-market-date-text-original", node.nodeValue);
+        var original = marketDateTextOriginals.get(node);
+        if (!original) {
+          if (!/\b\d{4}-\d{2}-\d{2}\b/.test(node.nodeValue)) return;
+          original = node.nodeValue;
+          marketDateTextOriginals.set(node, original);
         }
-        var original = parent.getAttribute("data-market-date-text-original");
         var rendered = original.replace(/\b\d{4}-\d{2}-\d{2}\b/g, function (date) { return language === "en" ? date : localizedDate(date, language); });
         var freshnessWords = {
           "Recent": { fr: "Récent", ar: "حديث", pt: "Recente", sw: "Hivi karibuni" },
