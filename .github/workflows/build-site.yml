@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
-      GOA_PREVIEW_URL: ${{ github.event.pull_request.head.ref == 'qa/decision-centre-search-fallbacks' && 'https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'cms/review-first-agriculture-sync' && 'https://cms-review-first-agriculture.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/mobile-navigation-scroll' && 'https://fix-mobile-navigation-scroll.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/markets-commodity-localization' && 'https://fix-markets-commodity-locali.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/markets-date-and-label-localization' && 'https://fix-markets-date-and-label-loc.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/markets-copy-localization' && 'https://fix-markets-copy-localizatio.goorganicafrica-site.pages.dev' || github.event.pull_request.head.ref == 'fix/markets-date-localization' && 'https://fix-markets-date-localizatio.goorganicafrica-site.pages.dev' || 'https://fix-homepage-language-covera.goorganicafrica-site.pages.dev' }}
+      GOA_PREVIEW_URL: http://127.0.0.1:8080
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -70,22 +70,21 @@ jobs:
           npm install --no-save --package-lock=false @playwright/test
           npx playwright install --with-deps chromium
 
-      - name: Wait for the branch preview to deploy THIS commit
-        env:
-          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+      - name: Build site for local browser smoke tests
+        run: npm run build
+
+      - name: Start local site for real-browser tests
         run: |
-          for attempt in $(seq 1 60); do
-            body=$(curl --connect-timeout 5 --max-time 15 --silent --show-error "$GOA_PREVIEW_URL/build-info.json?cb=$(date +%s)" || true)
-            live=$(echo "$body" | grep -o '"commit":"[0-9a-f]*"' | cut -d'"' -f4)
-            if [ "$live" = "$EXPECTED_SHA" ]; then
-              echo "Preview is serving commit $EXPECTED_SHA."
-              sleep 5
+          (npx eleventy --serve --port=8080 > /tmp/goa-eleventy.log 2>&1 &)
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8080/markets/ > /dev/null; then
+              echo "Local Eleventy server is ready."
               exit 0
             fi
-            echo "attempt $attempt/60: preview is on '${live:-unknown}', expected $EXPECTED_SHA; retrying in 15s"
-            sleep 15
+            sleep 2
           done
-          echo "::error::Preview never reached commit $EXPECTED_SHA (Cloudflare build slow, failed or blocked)."
+          cat /tmp/goa-eleventy.log
+          echo "::error::Local Eleventy server did not become ready."
           exit 1
 
       - name: Run real-browser visitor smoke tests
