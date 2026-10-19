@@ -365,7 +365,7 @@
       var original = el.getAttribute("data-market-scope-original") || el.textContent;
       if (!el.hasAttribute("data-market-scope-original")) el.setAttribute("data-market-scope-original", original);
       var scope = { Regional: { fr: "Régionale", ar: "إقليمي", pt: "Regional", sw: "Kikanda" }, Continental: { fr: "Continentale", ar: "قاري", pt: "Continental", sw: "Bara" }, Domestic: { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" }, National: { fr: "National", ar: "وطني", pt: "Nacional", sw: "Kitaifa" } };
-      var value = original.replace(/Regional|Continental|Domestic/g, function (word) { return scope[word] && scope[word][lang] ? scope[word][lang] : word; });
+      var value = original.replace(/Regional|Continental|Domestic|National/g, function (word) { return scope[word] && scope[word][lang] ? scope[word][lang] : word; });
       value = value.replace(/Verified|Vérifié|تم التحقق في|Verificado|Imethibitishwa/g, ({ fr: "Vérifié", ar: "تم التحقق في", pt: "Verificado", sw: "Imethibitishwa" })[lang] || "Verified");
       el.textContent = value;
     });
