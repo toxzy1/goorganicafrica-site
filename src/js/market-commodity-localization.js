@@ -289,34 +289,22 @@
           parent.setAttribute("data-market-date-text-original", node.nodeValue);
         }
         var original = parent.getAttribute("data-market-date-text-original");
-        var rendered = original.replace(/\\b\\d{4}-\\d{2}-\\d{2}\\b/g, function (date) { return language === "en" ? date : localizedDate(date, language); });
+        var rendered = original.replace(/\b\d{4}-\d{2}-\d{2}\b/g, function (date) { return language === "en" ? date : localizedDate(date, language); });
+        var freshnessWords = {
+          "Recent": { fr: "Récent", ar: "حديث", pt: "Recente", sw: "Hivi karibuni" },
+          "Older": { fr: "Ancien", ar: "أقدم", pt: "Mais antigo", sw: "Ya zamani" },
+          "Stale": { fr: "Périmé", ar: "قديم", pt: "Desatualizado", sw: "Iliyopitwa na wakati" },
+          "Source reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
+          "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" }
+        };
+        if (language !== "en") Object.keys(freshnessWords).forEach(function (word) {
+          if (freshnessWords[word][language]) rendered = rendered.split(word).join(freshnessWords[word][language]);
+        });
         node.nodeValue = rendered;
       });
     });
 
-    var freshness = {
-      "Recent": { fr: "Récent", ar: "حديث", pt: "Recente", sw: "Hivi karibuni" },
-      "Older": { fr: "Ancien", ar: "أقدم", pt: "Mais antigo", sw: "Ya zamani" },
-      "Stale": { fr: "Périmé", ar: "قديم", pt: "Desasualizado", sw: "Iliyopitwa na wakati" },
-      "Source reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
-      "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" }
-    };
-    document.querySelectorAll(".market-card p").forEach(function (paragraph) {
-      var strong = paragraph.querySelector("strong[data-i18n='markets.freshnessLabel']");
-      if (!strong) return;
-      var original = paragraph.getAttribute("data-market-freshness-original");
-      if (!original) {
-        original = paragraph.textContent;
-        paragraph.setAttribute("data-market-freshness-original", original);
-      }
-      var text = original;
-      Object.keys(freshness).forEach(function (word) {
-        if (language !== "en" && freshness[word][language]) text = text.replace(word, freshness[word][language]);
-      });
-      paragraph.textContent = text;
-      var label = paragraph.querySelector("strong");
-      if (label) label.textContent = language === "en" ? "Freshness:" : (marketUiTranslations["markets.freshnessLabel"][language] || "Freshness:");
-    });
+
   }
 
   function refresh() {
