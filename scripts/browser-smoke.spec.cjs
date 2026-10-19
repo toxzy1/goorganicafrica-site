@@ -26,11 +26,11 @@ test("Markets commodity names localize in all supported languages", async ({ pag
 
 test("Markets page translates data labels and explanatory copy across languages", async ({ page }) => {
   const cases = {
-    en: { freshness: "Freshness:", sourceReference: "Source Reference", note: "Use the official market selector and observation period before quoting a price.", market: "National market coverage", dryMaize: "Dry Maize" },
-    fr: { freshness: "Actualité :", sourceReference: "Référence de source", note: "Utilisez le sélecteur officiel de marché et la période d’observation avant de citer un prix.", market: "Couverture nationale du marché", dryMaize: "Maïs sec" },
-    ar: { freshness: "حداثة البيانات:", sourceReference: "مرجع المصدر", note: "استخدم محدد السوق الرسمي وفترة الرصد قبل ذكر أي سعر.", market: "تغطية السوق الوطنية", dryMaize: "ذرة جافة" },
-    pt: { freshness: "Atualidade:", sourceReference: "Referência da fonte", note: "Utilize o seletor oficial de mercado e o período de observação antes de citar um preço.", market: "Cobertura nacional do mercado", dryMaize: "Milho seco" },
-    sw: { freshness: "Uhalisia wa muda:", sourceReference: "Rejea ya chanzo", note: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei.", market: "Ufunikaji wa soko la kitaifa", dryMaize: "Mahindi makavu" }
+    en: { freshness: "Freshness:", sourceReference: "Source Reference", note: "Use the official market selector and observation period before quoting a price.", secondNote: "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit.", regionalHeadline: "Coarse-grain prices elevated in Sudan, South Sudan and Somalia", market: "National market coverage", dryMaize: "Dry Maize" },
+    fr: { freshness: "Actualité :", sourceReference: "Référence de source", note: "Utilisez le sélecteur officiel de marché et la période d’observation avant de citer un prix.", secondNote: "Analyse hebdomadaire du marché publiée le 21 septembre 2026. Consultez la source pour connaître la variété du produit et l’unité indiquées.", regionalHeadline: "Les prix des céréales secondaires sont élevés au Soudan, au Soudan du Sud et en Somalie", market: "Couverture nationale du marché", dryMaize: "Maïs sec" },
+    ar: { freshness: "حداثة البيانات:", sourceReference: "مرجع المصدر", note: "استخدم محدد السوق الرسمي وفترة الرصد قبل ذكر أي سعر.", secondNote: "نُشر تحليل السوق الأسبوعي في 21 سبتمبر 2026. راجع المصدر لمعرفة صنف السلعة والوحدة المذكورين.", regionalHeadline: "ارتفاع أسعار الحبوب الخشنة في السودان وجنوب السودان والصومال", market: "تغطية السوق الوطنية", dryMaize: "ذرة جافة" },
+    pt: { freshness: "Atualidade:", sourceReference: "Referência da fonte", note: "Utilize o seletor oficial de mercado e o período de observação antes de citar um preço.", secondNote: "Análise semanal do mercado publicada em 21 de setembro de 2026. Consulte a fonte para confirmar a variedade do produto e a unidade indicadas.", regionalHeadline: "Os preços dos cereais secundários estão elevados no Sudão, Sudão do Sul e Somália", market: "Cobertura nacional do mercado", dryMaize: "Milho seco" },
+    sw: { freshness: "Uhalisia wa muda:", sourceReference: "Rejea ya chanzo", note: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei.", secondNote: "Uchambuzi wa soko wa kila wiki ulichapishwa tarehe 21 Septemba 2026. Tumia chanzo kuthibitisha aina ya bidhaa na kipimo kilichotajwa.", regionalHeadline: "Bei za nafaka zisizo laini zimepanda nchini Sudan, Sudan Kusini na Somalia", market: "Ufunikaji wa soko la kitaifa", dryMaize: "Mahindi makavu" }
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   for (const [language, expected] of Object.entries(cases)) {
@@ -45,6 +45,8 @@ test("Markets page translates data labels and explanatory copy across languages"
       .filter({ hasText: expected.sourceReference }).first();
     await expect(freshnessStatusRow).toContainText(expected.sourceReference);
     await expect(page.locator(".market-card").filter({ hasText: expected.note }).first()).toContainText(expected.note);
+    await expect(page.locator(".market-card").filter({ hasText: expected.secondNote }).first()).toContainText(expected.secondNote);
+    await expect(page.locator("body")).toContainText(expected.regionalHeadline);
     await expect(page.locator(".market-card h2").filter({ hasText: expected.dryMaize }).first()).toContainText(expected.dryMaize);
   }
 });
