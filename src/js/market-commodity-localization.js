@@ -217,7 +217,7 @@
         el.setAttribute("data-market-copy-original", original);
       }
       var translated = translatedCopy(original);
-      if (translated) el.textContent = translated;
+      el.textContent = translated || original;
     });
     document.querySelectorAll("#market-list .market-card > div").forEach(function (el) {
       var original = el.getAttribute("data-market-meta-original");
