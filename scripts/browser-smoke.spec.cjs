@@ -51,24 +51,40 @@ test("Markets page translates data labels and explanatory copy across languages"
 
 test("Markets dates and connecting labels follow the selected language", async ({ page }) => {
   const expected = {
-    en: "compared with",
-    fr: "comparé au",
-    ar: "مقارنةً بـ",
-    pt: "em comparação com",
-    sw: "ikilinganishwa na"
+    en: { compared: "compared with", locale: "en-GB", tier: "Tier", verified: "Verified" },
+    fr: { compared: "comparé au", locale: "fr-FR", tier: "Niveau", verified: "Vérifié" },
+    ar: { compared: "مقارنةً بـ", locale: "ar", tier: "المستوى", verified: "تم التحقق" },
+    pt: { compared: "em comparação com", locale: "pt-PT", tier: "Nível", verified: "Verificado" },
+    sw: { compared: "ikilinganishwa na", locale: "sw-TZ", tier: "Daraja", verified: "Imethibitishwa" }
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   const dates = page.locator("[data-market-date]");
   await expect(dates.first()).toBeVisible();
-  for (const [language, label] of Object.entries(expected)) {
+  for (const [language, labels] of Object.entries(expected)) {
     if (language !== "en") {
       await page.locator("#site-language-select").selectOption(language);
       await expect(page.locator("html")).toHaveAttribute("lang", language);
     }
     const compared = page.locator("[data-market-compared-label]");
-    if (await compared.count()) await expect(compared.first()).toHaveText(label);
-    const dateText = (await dates.first().textContent()).trim();
-    expect(dateText).not.toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    if (await compared.count()) await expect(compared.first()).toHaveText(labels.compared);
+
+    const firstDate = dates.first();
+    const expectedDate = await firstDate.evaluate((el, locale) => {
+      const raw = el.getAttribute("data-market-date") || "";
+      const match = raw.trim().match(/^(\\d{4})-(\\d{2})-(\\d{2})(?:$|T)/);
+      const date = match
+        ? new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12))
+        : new Date(raw);
+      return Number.isNaN(date.getTime()) ? raw : new Intl.DateTimeFormat(locale, {
+        day: "numeric", month: "short", year: "numeric", timeZone: "UTC"
+      }).format(date);
+    }, labels.locale);
+    await expect(firstDate).toHaveText(expectedDate);
+
+    const tier = page.locator('[data-market-word="tier"]').first();
+    if (await tier.count()) await expect(tier).toHaveText(labels.tier);
+    const verified = page.locator('[data-market-word="verified"]').first();
+    if (await verified.count()) await expect(verified).toHaveText(labels.verified);
   }
 });
 
