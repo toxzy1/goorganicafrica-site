@@ -383,7 +383,51 @@
     });
   }
 
+  function formatMarketDate(raw, locale) {
+    var match = String(raw || "").trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) return String(raw || "").trim();
+    var date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12));
+    return new Intl.DateTimeFormat(locale, { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(date);
+  }
+
+  function refreshMarketDates() {
+    var lang = (document.documentElement.lang || "en").slice(0, 2);
+    var locales = { en: "en-GB", fr: "fr-FR", ar: "ar", pt: "pt-PT", sw: "sw-TZ" };
+    var locale = locales[lang] || "en-GB";
+    document.querySelectorAll("[data-market-date]").forEach(function (el) {
+      var original = el.getAttribute("data-market-date-original") || el.getAttribute("data-market-date") || el.textContent.trim();
+      if (!el.hasAttribute("data-market-date-original")) el.setAttribute("data-market-date-original", original);
+      el.textContent = formatMarketDate(original, locale);
+    });
+    var compared = { fr: "comparé au", ar: "مقارنةً بـ", pt: "em comparação com", sw: "ikilinganishwa na" };
+    document.querySelectorAll("[data-market-compared-label]").forEach(function (el) {
+      var original = el.getAttribute("data-market-compared-label");
+      el.textContent = lang === "en" ? original : (compared[lang] || original);
+    });
+    var scopes = {
+      Regional: { fr: "Régionale", ar: "إقليمي", pt: "Regional", sw: "Kikanda" },
+      Continental: { fr: "Continentale", ar: "قاري", pt: "Continental", sw: "Bara" },
+      Domestic: { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" }
+    };
+    var words = {
+      source: { fr: "source", ar: "مصدر", pt: "fonte", sw: "chanzo" },
+      tier: { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Daraja" },
+      verified: { fr: "Vérifié", ar: "تم التحقق في", pt: "Verificado", sw: "Imethibitishwa" }
+    };
+    document.querySelectorAll("[data-market-word]").forEach(function (el) {\n      var key = el.getAttribute("data-market-word");\n      var values = { tier: { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Daraja" }, verified: { fr: "Vérifié", ar: "تم التحقق", pt: "Verificado", sw: "Imethibitishwa" } };\n      var original = key === "tier" ? "Tier" : "Verified";\n      el.textContent = lang === "en" ? original : ((values[key] && values[key][lang]) || original);\n    });\n    document.querySelectorAll("[data-market-scope-label]").forEach(function (el) {
+      var scope = el.getAttribute("data-market-scope") || "";
+      var tier = el.getAttribute("data-market-tier") || "";
+      var date = el.getAttribute("data-market-verified") || "";
+      var localizedScope = lang === "en" ? scope : ((scopes[scope] && scopes[scope][lang]) || scope);
+      var source = lang === "en" ? "source" : (words.source[lang] || "source");
+      var tierLabel = lang === "en" ? "Tier" : (words.tier[lang] || "Tier");
+      var verified = lang === "en" ? "Verified" : (words.verified[lang] || "Verified");
+      el.textContent = localizedScope + " " + source + " · " + tierLabel + " " + tier + " · " + verified + " " + formatMarketDate(date, locale);
+    });
+  }
+
   function refresh() {
+    refreshMarketDates();
     if (!window.GOA_I18N || !window.GOA_I18N.t) return;
 
     document.querySelectorAll("#market-commodity option").forEach(function (option) {
@@ -426,6 +470,16 @@
   }
 
   document.addEventListener("goa:languagechange", refresh);
+  if (typeof MutationObserver !== "undefined") {
+    var lastMarketLanguage = (document.documentElement.lang || "en").slice(0, 2);
+    new MutationObserver(function () {
+      var nextMarketLanguage = (document.documentElement.lang || "en").slice(0, 2);
+      if (nextMarketLanguage !== lastMarketLanguage) {
+        lastMarketLanguage = nextMarketLanguage;
+        refresh();
+      }
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
+  }
   if (window.GOA_I18N && window.GOA_I18N.ready && typeof window.GOA_I18N.ready.then === "function") {
     window.GOA_I18N.ready.then(refresh);
   } else {
