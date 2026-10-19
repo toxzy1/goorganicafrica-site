@@ -30,7 +30,7 @@ test("Markets page translates data labels and explanatory copy across languages"
     fr: { freshness: "Actualité :", sourceReference: "Référence de source", recent: "Récent", note: "Utilisez le sélecteur officiel de marché et la période d’observation avant de citer un prix.", market: "Couverture nationale du marché", dryMaize: "Maïs sec" },
     ar: { freshness: "حداثة البيانات:", sourceReference: "مرجع المصدر", recent: "حديث", note: "استخدم محدد السوق الرسمي وفترة الرصد قبل ذكر أي سعر.", market: "تغطية السوق الوطنية", dryMaize: "ذرة جافة" },
     pt: { freshness: "Atualidade:", sourceReference: "Referência da fonte", recent: "Recente", note: "Utilize o seletor oficial de mercado e o período de observação antes de citar um preço.", market: "Cobertura nacional do mercado", dryMaize: "Milho seco" },
-    sw: { freshness: "Uhalisia wa muda:", sourceReference: "Rejea ya chanzo", recent: "Hivi karibuni", note: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei.", market: "Ufunikaji wa soko la kitaifa", dryMaize: "Mahindi makavu" }
+    sw: { freshness: "Uhalisia wa muda:", sourceReference: "Rejea ya chanzo", recent: "Mpya", note: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei.", market: "Ufunikaji wa soko la kitaifa", dryMaize: "Mahindi makavu" }
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   for (const [language, expected] of Object.entries(cases)) {
