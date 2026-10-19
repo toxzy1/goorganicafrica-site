@@ -364,8 +364,8 @@
     document.querySelectorAll("#market-source-map small").forEach(function (el) {
       var original = el.getAttribute("data-market-scope-original") || el.textContent;
       if (!el.hasAttribute("data-market-scope-original")) el.setAttribute("data-market-scope-original", original);
-      var scope = { Regional: { fr: "Régionale", ar: "إقليمي", pt: "Regional", sw: "Kikanda" }, Continental: { fr: "Continentale", ar: "قاري", pt: "Continental", sw: "Bara" }, Domestic: { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" } };
-      var value = original.replace(/Regional|Continental|Domestic/g, function (word) { return scope[word] && scope[word][lang] ? scope[word][lang] : word; });
+      var scope = { Regional: { fr: "Régionale", ar: "إقليمي", pt: "Regional", sw: "Kikanda" }, Continental: { fr: "Continentale", ar: "قاري", pt: "Continental", sw: "Bara" }, Domestic: { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" }, National: { fr: "National", ar: "وطني", pt: "Nacional", sw: "Kitaifa" } };
+      var value = original.replace(/Regional|Continental|Domestic|National/g, function (word) { return scope[word] && scope[word][lang] ? scope[word][lang] : word; });
       value = value.replace(/Verified|Vérifié|تم التحقق في|Verificado|Imethibitishwa/g, ({ fr: "Vérifié", ar: "تم التحقق في", pt: "Verificado", sw: "Imethibitishwa" })[lang] || "Verified");
       el.textContent = value;
     });
@@ -384,10 +384,18 @@
   }
 
   function formatMarketDate(raw, locale) {
-    var match = String(raw || "").trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if (!match) return String(raw || "").trim();
-    var date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12));
-    return new Intl.DateTimeFormat(locale, { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(date);
+    var value = String(raw || "").trim();
+    if (!value) return value;
+    // Accept date-only values and ISO timestamps from source datasets. Keep the
+    // date at UTC noon to avoid a timezone shift into the previous/next day.
+    var match = value.match(/^(\d{4})-(\d{2})-(\d{2})(?:$|T)/);
+    var date = match
+      ? new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12))
+      : new Date(value);
+    if (Number.isNaN(date.getTime())) return value;
+    return new Intl.DateTimeFormat(locale, {
+      day: "numeric", month: "short", year: "numeric", timeZone: "UTC"
+    }).format(date);
   }
 
   function refreshMarketDates() {
@@ -407,7 +415,8 @@
     var scopes = {
       Regional: { fr: "Régionale", ar: "إقليمي", pt: "Regional", sw: "Kikanda" },
       Continental: { fr: "Continentale", ar: "قاري", pt: "Continental", sw: "Bara" },
-      Domestic: { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" }
+      Domestic: { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" },
+      National: { fr: "National", ar: "وطني", pt: "Nacional", sw: "Kitaifa" }
     };
     var words = {
       source: { fr: "source", ar: "مصدر", pt: "fonte", sw: "chanzo" },
