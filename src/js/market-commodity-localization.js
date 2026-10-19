@@ -74,10 +74,10 @@
     // "Beans - Nambale", "Beans — Canadian Wonder", "Dry Maize" and "Rice — IRRR".
     // Translate the food commodity name while retaining the market-specific suffix.
     var patterns = [
-      { regex: /^(dry\s+)?maize\b/i, key: "maize", replace: function (m, prefix, value) { return (prefix || "") + value; } },
+      { regex: /^(dry\s+)?maize\b/i, key: "maize", replace: function (m, prefix, value) { var lang = (document.documentElement.lang || "en").slice(0, 2); var dry = { fr: "Maïs sec ", ar: "ذرة جافة ", pt: "Milho seco ", sw: "Mahindi makavu " }; return prefix ? (dry[lang] || prefix) + value.slice(0, 0) : value; } },
       { regex: /^corn\b/i, key: "maize", replace: function (m, prefix, value) { return value + m.slice(4); } },
       { regex: /^beans?\b/i, key: "beans", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
-      { regex: /^cassava\b/i, key: "cassava", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
+      { regex: /^cassava\b/i, key: "cassava", replace: function (m, prefix, value) { var suffix = source.slice(m.length); var lang = (document.documentElement.lang || "en").slice(0, 2); if (/^\s*-\s*Fresh$/i.test(suffix)) suffix = ({ fr: " - Frais", ar: " - طازج", pt: " - Fresca", sw: " - Safi" })[lang] || suffix; return value + suffix; } },
       { regex: /^soybeans?\b/i, key: "soybean", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
       { regex: /^soya\s+beans?\b/i, key: "soybean", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
       { regex: /^rice\b/i, key: "rice", replace: function (m, prefix, value) { return value + source.slice(m.length); } }
