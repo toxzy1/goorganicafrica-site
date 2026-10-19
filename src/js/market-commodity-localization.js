@@ -206,7 +206,6 @@
       document.querySelectorAll("[data-market-copy-original]").forEach(function (el) {
         el.textContent = el.getAttribute("data-market-copy-original");
       });
-      return;
     }
     document.querySelectorAll(".market-card p, #market-indicators p, #market-source-map p, section article p, section li, #market-signals small").forEach(function (el) {
       if (el.querySelector("strong, a, span[data-i18n]")) return;
@@ -226,6 +225,7 @@
         el.setAttribute("data-market-meta-original", original);
       }
       var parts = original.split(" · ");
+      if (parts.length >= 3) parts[2] = translatedCommodity(parts[2]) || parts[2];
       if (parts.length >= 2) {
         parts[1] = ({
           "National market coverage": { fr: "Couverture nationale du marché", ar: "تغطية السوق الوطنية", pt: "Cobertura nacional do mercado", sw: "Ufunikaji wa soko la kitaifa" },
@@ -273,6 +273,7 @@
     });
 
     document.querySelectorAll(".market-card > div").forEach(function (line) {
+      if (!line.hasAttribute("data-market-meta-original")) line.setAttribute("data-market-meta-original", line.textContent);
       if (!line.hasAttribute("data-market-commodity-original")) {
         var parts = line.textContent.split(" · ");
         if (parts.length >= 3) line.setAttribute("data-market-commodity-original", parts.slice(2).join(" · ").trim());
