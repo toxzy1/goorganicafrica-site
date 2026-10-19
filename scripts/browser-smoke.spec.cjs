@@ -71,7 +71,7 @@ test("Markets dates and connecting labels follow the selected language", async (
     const firstDate = dates.first();
     const expectedDate = await firstDate.evaluate((el, locale) => {
       const raw = el.getAttribute("data-market-date") || "";
-      const match = raw.trim().match(/^(\\d{4})-(\\d{2})-(\\d{2})(?:$|T)/);
+      const match = raw.trim().match(/^(\d{4})-(\d{2})-(\d{2})(?:$|T)/);
       const date = match
         ? new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12))
         : new Date(raw);
