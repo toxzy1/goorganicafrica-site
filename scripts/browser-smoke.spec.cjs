@@ -2,6 +2,28 @@ const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.GOA_PREVIEW_URL || "https://qa-decision-centre-search-fa.goorganicafrica-site.pages.dev";
 
+test("Markets commodity names localize in all supported languages", async ({ page }) => {
+  const expected = {
+    en: ["Beans (Cowpea)", "Maize", "Rice (Paddy)"],
+    fr: ["Haricot (niébé)", "Maïs", "Riz (paddy)"],
+    ar: ["الفاصوليا (اللوبيا)", "الذرة", "الأرز (أرز شَلبي)"],
+    pt: ["Feijão (feijão-frade)", "Milho", "Arroz (em casca)"],
+    sw: ["Maharagwe (kunde)", "Mahindi", "Mpunga"]
+  };
+  await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#market-commodity option").first()).toBeVisible({ timeout: 15000 });
+  for (const [language, labels] of Object.entries(expected)) {
+    if (language !== "en") {
+      await page.locator("#site-language-select").selectOption(language);
+      await expect(page.locator("html")).toHaveAttribute("lang", language);
+    }
+    const options = page.locator("#market-commodity option");
+    for (const label of labels) {
+      await expect(options.filter({ hasText: label }).first()).toBeVisible();
+    }
+  }
+});
+
 test("mobile navigation can scroll to every page link on a short screen", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 640 });
   await page.goto(baseURL + "/", { waitUntil: "domcontentloaded" });
