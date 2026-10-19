@@ -254,7 +254,7 @@
   };
 
   function localizedDate(value, language) {
-    var match = String(value).match(/^(\\d{4})-(\\d{2})-(\\d{2})$/);
+    var match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})$/);
     if (!match) return value;
     var date = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12);
     var locales = { en: "en-GB", fr: "fr-FR", ar: "ar", pt: "pt-PT", sw: "sw" };
@@ -298,7 +298,15 @@
           "Older": { fr: "Ancien", ar: "أقدم", pt: "Mais antigo", sw: "Ya zamani" },
           "Stale": { fr: "Périmé", ar: "قديم", pt: "Desatualizado", sw: "Iliyopitwa na wakati" },
           "Source reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
-          "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" }
+          "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
+          "Verified": { fr: "Vérifié", ar: "تم التحقق", pt: "Verificado", sw: "Imethibitishwa" },
+          "Tier": { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Kiwango" },
+          "National": { fr: "National", ar: "وطني", pt: "Nacional", sw: "Kitaifa" },
+          "Regional": { fr: "Régional", ar: "إقليمي", pt: "Regional", sw: "Kikanda" },
+          "International": { fr: "International", ar: "دولي", pt: "Internacional", sw: "Kimataifa" },
+          "Continental": { fr: "Continental", ar: "قاري", pt: "Continental", sw: "Bara zima" },
+          "Local": { fr: "Local", ar: "محلي", pt: "Local", sw: "Eneo husika" },
+          "source": { fr: "source", ar: "مصدر", pt: "fonte", sw: "chanzo" }
         };
         if (language !== "en") Object.keys(freshnessWords).forEach(function (word) {
           if (freshnessWords[word][language]) rendered = rendered.split(word).join(freshnessWords[word][language]);
