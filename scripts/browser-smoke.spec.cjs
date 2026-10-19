@@ -63,11 +63,11 @@ test("Markets page translates data labels and explanatory copy across languages"
 
 test("Markets dates and connecting labels follow the selected language", async ({ page }) => {
   const expected = {
-    en: { compared: "compared with", locale: "en-GB", tier: "Tier", verified: "Verified" },
-    fr: { compared: "comparé au", locale: "fr-FR", tier: "Niveau", verified: "Vérifié" },
-    ar: { compared: "مقارنةً بـ", locale: "ar", tier: "المستوى", verified: "تم التحقق" },
-    pt: { compared: "em comparação com", locale: "pt-PT", tier: "Nível", verified: "Verificado" },
-    sw: { compared: "ikilinganishwa na", locale: "sw-TZ", tier: "Daraja", verified: "Imethibitishwa" }
+    en: { compared: "compared with", locale: "en-GB", tier: "Tier", verified: "Verified", international: "International" },
+    fr: { compared: "comparé au", locale: "fr-FR", tier: "Niveau", verified: "Vérifié", international: "International" },
+    ar: { compared: "مقارنةً بـ", locale: "ar", tier: "المستوى", verified: "تم التحقق", international: "دولي" },
+    pt: { compared: "em comparação com", locale: "pt-PT", tier: "Nível", verified: "Verificado", international: "Internacional" },
+    sw: { compared: "ikilinganishwa na", locale: "sw-TZ", tier: "Daraja", verified: "Imethibitishwa", international: "Kimataifa" }
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   const dates = page.locator("[data-market-date]");
@@ -92,6 +92,28 @@ test("Markets dates and connecting labels follow the selected language", async (
       }).format(date);
     }, labels.locale);
     await expect(firstDate).toHaveText(expectedDate);
+
+    const verifiedDate = page.locator(".market-card p")
+      .filter({ has: page.locator('strong[data-i18n="markets.verifiedLabel"]') })
+      .first().locator("[data-market-date]");
+    if (await verifiedDate.count()) {
+      const expectedVerifiedDate = await verifiedDate.evaluate((el, locale) => {
+        const raw = el.getAttribute("data-market-date") || "";
+        const match = raw.trim().match(/^(\\d{4})-(\\d{2})-(\\d{2})(?:$|T)/);
+        const date = match
+          ? new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12))
+          : new Date(raw);
+        return Number.isNaN(date.getTime()) ? raw : new Intl.DateTimeFormat(locale, {
+          day: "numeric", month: "short", year: "numeric", timeZone: "UTC"
+        }).format(date);
+      }, labels.locale);
+      await expect(verifiedDate).toHaveText(expectedVerifiedDate);
+    }
+
+    const internationalScope = page.locator('[data-market-scope-value="International"]');
+    if (await internationalScope.count()) {
+      await expect(internationalScope.first()).toHaveText(labels.international);
+    }
 
     const tier = page.locator('[data-market-word="tier"]').first();
     if (await tier.count()) await expect(tier).toHaveText(labels.tier);
