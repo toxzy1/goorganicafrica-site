@@ -427,8 +427,10 @@
   }
 
   function refresh() {
-    refreshMarketDates();
-    if (!window.GOA_I18N || !window.GOA_I18N.t) return;
+    if (!window.GOA_I18N || !window.GOA_I18N.t) {
+      refreshMarketDates();
+      return;
+    }
 
     document.querySelectorAll("#market-commodity option").forEach(function (option) {
       if (option.value === "all") return;
@@ -467,6 +469,8 @@
       label.textContent = parts.join(" · ");
     });
     refreshMarketCopy();
+    // Run dates last so copy/metadata localization cannot overwrite formatted dates.
+    refreshMarketDates();
   }
 
   document.addEventListener("goa:languagechange", refresh);
