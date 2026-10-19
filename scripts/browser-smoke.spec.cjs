@@ -41,6 +41,17 @@ test("Markets page translates data labels and explanatory copy across languages"
     await expect(page.locator(".market-card > div").first()).toContainText(expected.market);
     await expect(page.locator(".market-card p").filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') }).first()).toContainText(expected.freshness);
     await expect(page.locator("#market-freshness option[value='recent']")).toHaveText(expected.recent);
+    if (language !== "en") {
+      const freshnessRows = await page.locator(".market-card p")
+        .filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') }).allTextContents();
+      expect(freshnessRows.join(" ")).not.toMatch(/\bRecent\b|\bOlder\b|\bStale\b|\bSource Reference\b/);
+      const priceTypes = await page.locator("#market-price-type option").allTextContents();
+      for (const english of ["Farm-gate", "Farm gate", "Retail", "Wholesale", "Producer price", "Consumer price", "Market price", "Official benchmark"]) {
+        if (priceTypes.some((label) => label.trim().toLowerCase() === english.toLowerCase())) {
+          expect(priceTypes.map((label) => label.trim())).not.toContain(english);
+        }
+      }
+    }
     const freshnessStatusRow = page.locator(".market-card p")
       .filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') })
       .filter({ hasText: expected.sourceReference }).first();
