@@ -11,15 +11,15 @@ test("Markets commodity names localize in all supported languages", async ({ pag
     sw: ["Maharagwe (kunde)", "Mahindi", "Mpunga"]
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
-  await expect(page.locator("#market-commodity option").first()).toBeVisible({ timeout: 15000 });
+  await expect(page.locator("#market-commodity")).toBeVisible({ timeout: 15000 });
   for (const [language, labels] of Object.entries(expected)) {
     if (language !== "en") {
       await page.locator("#site-language-select").selectOption(language);
       await expect(page.locator("html")).toHaveAttribute("lang", language);
     }
-    const options = page.locator("#market-commodity option");
+    const options = page.locator("#market-commodity");
     for (const label of labels) {
-      await expect(options.filter({ hasText: label }).first()).toBeVisible();
+      await expect(options).toContainText(label);
     }
   }
 });
