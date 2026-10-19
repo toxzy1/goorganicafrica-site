@@ -239,10 +239,11 @@
       }
     });
     document.querySelectorAll(".market-card p").forEach(function (el) {
-      if (!el.querySelector('strong[data-i18n="markets.freshnessLabel"]')) return;
+      var label = el.querySelector('strong[data-i18n="markets.freshnessLabel"]');
+      if (!label) return;
       var original = el.getAttribute("data-market-freshness-original");
-      if (!original) {
-        original = el.innerHTML;
+      if (original === null) {
+        original = Array.from(el.childNodes).filter(function (node) { return node.nodeType === 3; }).map(function (node) { return node.textContent; }).join("").trim();
         el.setAttribute("data-market-freshness-original", original);
       }
       var words = {
@@ -256,7 +257,7 @@
         var translated = words[word][lang];
         if (translated) value = value.replace(new RegExp(word, "g"), translated);
       });
-      el.innerHTML = value;
+      el.innerHTML = label.outerHTML + (value ? " " + value : "");
     });
     document.querySelectorAll("#market-source-map small").forEach(function (el) {
       var original = el.getAttribute("data-market-scope-original") || el.textContent;
