@@ -186,6 +186,108 @@
       pt: "Surgiram aumentos sazonais do preço do milho, enquanto a abundância da oferta limitou a pressão ascendente",
       sw: "Ongezeko la msimu la bei ya mahindi lilitokea huku ugavi mwingi ukipunguza shinikizo la kupanda kwa bei"
     },
+    "Dataset covers 73 Nigerian markets and monthly observations through September 2026.": {
+      fr: "Le jeu de données couvre 73 marchés nigérians et des observations mensuelles jusqu’en septembre 2026.",
+      ar: "تغطي مجموعة البيانات 73 سوقاً نيجيرياً وملاحظات شهرية حتى سبتمبر 2026.",
+      pt: "O conjunto de dados abrange 73 mercados nigerianos e observações mensais até setembro de 2026.",
+      sw: "Seti ya data inajumuisha masoko 73 ya Nigeria na uchunguzi wa kila mwezi hadi Septemba 2026."
+    },
+    "August 2026 indicative local commodity prices are published by NEPC; use the source table for commodity, market, unit and exact quotation before displaying a price.": {
+      fr: "La NEPC publie des prix indicatifs locaux pour août 2026 ; consultez le tableau source pour le produit, le marché, l’unité et la cotation exacte avant d’afficher un prix.",
+      ar: "ينشر مجلس ترويج الصادرات النيجيري أسعاراً محلية استرشادية لشهر أغسطس 2026؛ راجع جدول المصدر لتحديد السلعة والسوق والوحدة والسعر الدقيق قبل عرض أي سعر.",
+      pt: "A NEPC publica preços locais indicativos para agosto de 2026; consulte a tabela de origem para confirmar produto, mercado, unidade e cotação exata antes de apresentar um preço.",
+      sw: "NEPC huchapisha bei elekezi za bidhaa za ndani za Agosti 2026; angalia jedwali la chanzo kwa bidhaa, soko, kipimo na bei kamili kabla ya kuonyesha bei."
+    },
+    "Provides selectable market, agricultural product and price-regime date filters; exact quotations are retrieved from the official interface.": {
+      fr: "Permet de sélectionner le marché, le produit agricole et les dates du régime de prix ; les cotations exactes sont obtenues dans l’interface officielle.",
+      ar: "يوفر خيارات لتحديد السوق والمنتج الزراعي وتواريخ نظام الأسعار؛ وتُستخرج الأسعار الدقيقة من الواجهة الرسمية.",
+      pt: "Permite selecionar o mercado, o produto agrícola e as datas do regime de preços; as cotações exatas são obtidas na interface oficial.",
+      sw: "Hutoa vichujio vya kuchagua soko, bidhaa ya kilimo na tarehe za mfumo wa bei; bei kamili hupatikana kupitia kiolesura rasmi."
+    },
+    "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit.": {
+      fr: "Analyse hebdomadaire du marché publiée le 21 septembre 2026. Consultez la source pour connaître la variété du produit et l’unité indiquées.",
+      ar: "نُشر تحليل السوق الأسبوعي في 21 سبتمبر 2026. راجع المصدر لمعرفة صنف السلعة والوحدة المذكورين.",
+      pt: "Análise semanal do mercado publicada em 21 de setembro de 2026. Consulte a fonte para confirmar a variedade do produto e a unidade indicadas.",
+      sw: "Uchambuzi wa soko wa kila wiki ulichapishwa tarehe 21 Septemba 2026. Tumia chanzo kuthibitisha aina ya bidhaa na kipimo kilichotajwa."
+    },
+    "Official weekly market analysis published 5 October 2026.": {
+      fr: "Analyse hebdomadaire officielle du marché publiée le 5 octobre 2026.",
+      ar: "نُشر تحليل السوق الأسبوعي الرسمي في 5 أكتوبر 2026.",
+      pt: "Análise semanal oficial do mercado publicada em 5 de outubro de 2026.",
+      sw: "Uchambuzi rasmi wa soko wa kila wiki ulichapishwa tarehe 5 Oktoba 2026."
+    },
+    "Official report says average livestock prices fell in the week ending 30 September 2026, attributed largely to increased livestock supply and lower demand.": {
+      fr: "Le rapport officiel indique que les prix moyens du bétail ont baissé pendant la semaine terminée le 30 septembre 2026, principalement en raison d’une offre accrue et d’une demande plus faible.",
+      ar: "يفيد التقرير الرسمي بانخفاض متوسط أسعار الماشية في الأسبوع المنتهي في 30 سبتمبر 2026، ويُعزى ذلك أساساً إلى زيادة المعروض وانخفاض الطلب.",
+      pt: "O relatório oficial indica que os preços médios do gado caíram na semana que terminou em 30 de setembro de 2026, sobretudo devido ao aumento da oferta e à menor procura.",
+      sw: "Ripoti rasmi inasema wastani wa bei za mifugo ulipungua katika wiki iliyoishia tarehe 30 Septemba 2026, hasa kutokana na ongezeko la ugavi na kupungua kwa mahitaji."
+    },
+    "Current NAMIS displayed market price; observation date recorded as retrieval date.": {
+      fr: "Prix de marché actuellement affiché par NAMIS ; la date d’observation correspond à la date de consultation.",
+      ar: "سعر السوق المعروض حالياً في NAMIS؛ سُجل تاريخ الرصد باعتباره تاريخ الاسترجاع.",
+      pt: "Preço de mercado atualmente apresentado pelo NAMIS; a data de observação corresponde à data de consulta.",
+      sw: "Bei ya soko inayoonyeshwa sasa na NAMIS; tarehe ya uchunguzi imewekwa kuwa tarehe ya kupata taarifa."
+    },
+    "Current NAMIS displayed market price; retrieval date recorded as observation date.": {
+      fr: "Prix de marché actuellement affiché par NAMIS ; la date de consultation est enregistrée comme date d’observation.",
+      ar: "سعر السوق المعروض حالياً في NAMIS؛ سُجل تاريخ الاسترجاع كتاريخ للرصد.",
+      pt: "Preço de mercado atualmente apresentado pelo NAMIS; a data de consulta foi registada como data de observação.",
+      sw: "Bei ya soko inayoonyeshwa sasa na NAMIS; tarehe ya kupata taarifa imerekodiwa kama tarehe ya uchunguzi."
+    },
+    "Current NAMIS displayed retail market price; observation date recorded as retrieval date.": {
+      fr: "Prix de détail actuellement affiché par NAMIS ; la date d’observation correspond à la date de consultation.",
+      ar: "سعر التجزئة المعروض حالياً في NAMIS؛ سُجل تاريخ الرصد باعتباره تاريخ الاسترجاع.",
+      pt: "Preço de retalho atualmente apresentado pelo NAMIS; a data de observação corresponde à data de consulta.",
+      sw: "Bei ya rejareja inayoonyeshwa sasa na NAMIS; tarehe ya uchunguzi imewekwa kuwa tarehe ya kupata taarifa."
+    },
+    "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement.": {
+      fr: "Prix de gros moyen national hebdomadaire. Le bulletin du 28 septembre au 2 octobre 2026 constitue l’observation actuelle ; la semaine précédente est conservée pour calculer l’évolution.",
+      ar: "متوسط سعر الجملة الوطني الأسبوعي. يُعد نشرة 28 سبتمبر إلى 2 أكتوبر 2026 الملاحظة الحالية؛ وتُحتفظ ببيانات الأسبوع السابق لحساب التغير.",
+      pt: "Preço médio grossista nacional semanal. O boletim de 28 de setembro a 2 de outubro de 2026 é a observação atual; a semana anterior é mantida para calcular a variação.",
+      sw: "Wastani wa kitaifa wa bei ya jumla ya kila wiki. Taarifa ya tarehe 28 Septemba–02 Oktoba 2026 ndiyo uchunguzi wa sasa; wiki iliyotangulia imehifadhiwa ili kukokotoa mabadiliko."
+    },
+    "Domestic food prices, price changes and anomalies; compare markets, commodities and seasons.": {
+      fr: "Prix alimentaires intérieurs, variations de prix et anomalies ; comparez les marchés, les produits et les saisons.",
+      ar: "أسعار الغذاء المحلية وتغيراتها وحالات الشذوذ؛ قارن بين الأسواق والسلع والمواسم.",
+      pt: "Preços internos dos alimentos, alterações de preços e anomalias; compare mercados, produtos e épocas.",
+      sw: "Bei za ndani za chakula, mabadiliko ya bei na hali zisizo za kawaida; linganisha masoko, bidhaa na misimu."
+    },
+    "Wheat, maize, rice and soybeans; international market developments and outlook.": {
+      fr: "Blé, maïs, riz et soja ; évolutions et perspectives des marchés internationaux.",
+      ar: "القمح والذرة والأرز وفول الصويا؛ تطورات الأسواق الدولية وتوقعاتها.",
+      pt: "Trigo, milho, arroz e soja; evolução e perspetivas dos mercados internacionais.",
+      sw: "Ngano, mahindi, mpunga na soya; maendeleo na mtazamo wa masoko ya kimataifa."
+    },
+    "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.": {
+      fr: "Système régional d’information agricole couvrant la production, les marchés, les prix et les données des agriculteurs dans les États membres de la CEDEAO ; à utiliser pour l’analyse régionale et la vérification croisée des sources nationales.",
+      ar: "نظام معلومات زراعية إقليمي يغطي الإنتاج والأسواق والأسعار وبيانات المزارعين في الدول الأعضاء في إيكواس؛ يُستخدم للتحليل الإقليمي ومقارنة المصادر الوطنية.",
+      pt: "Sistema regional de informação agrícola que abrange produção, mercados, preços e dados de agricultores nos Estados-membros da CEDEAO; utilizar para análise regional e verificação cruzada de fontes nacionais.",
+      sw: "Mfumo wa kikanda wa taarifa za kilimo unaojumuisha uzalishaji, masoko, bei na taarifa za wakulima katika nchi wanachama wa ECOWAS; utumike kwa taarifa za kikanda na kulinganisha vyanzo vya kitaifa."
+    },
+    "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.": {
+      fr: "Système régional d’information agricole avec des données des États membres, notamment des indicateurs de marché et de commerce, des statistiques agricoles et des informations sur la sécurité alimentaire.",
+      ar: "نظام معلومات زراعية إقليمي يضم بيانات الدول الأعضاء، بما فيها مؤشرات السوق والتجارة والإحصاءات الزراعية ومعلومات الأمن الغذائي.",
+      pt: "Sistema regional de informação agrícola com dados dos Estados-membros, incluindo indicadores de mercado e comércio, estatísticas agrícolas e informações de segurança alimentar.",
+      sw: "Mfumo wa kikanda wa taarifa za kilimo wenye data za nchi wanachama, ikiwemo viashiria vya soko na biashara, takwimu za kilimo na taarifa za usalama wa chakula."
+    },
+    "Internationally comparable domestic food-price monitoring and market intelligence; country coverage varies by commodity, market and reporting frequency.": {
+      fr: "Suivi comparable à l’échelle internationale des prix alimentaires intérieurs et informations de marché ; la couverture varie selon le produit, le marché et la fréquence des rapports.",
+      ar: "رصد لأسعار الغذاء المحلية ومعلومات السوق قابلة للمقارنة دولياً؛ وتختلف التغطية حسب السلعة والسوق وتواتر التقارير.",
+      pt: "Monitorização comparável internacionalmente dos preços internos dos alimentos e inteligência de mercado; a cobertura varia por produto, mercado e frequência de publicação.",
+      sw: "Ufuatiliaji wa bei za ndani za chakula unaoweza kulinganishwa kimataifa na taarifa za soko; ufunikaji hutofautiana kulingana na bidhaa, soko na marudio ya ripoti."
+    },
+    "Annual food inflation": {
+      fr: "Inflation annuelle des prix alimentaires",
+      ar: "التضخم السنوي لأسعار الغذاء",
+      pt: "Inflação anual dos preços dos alimentos",
+      sw: "Mfumuko wa bei wa chakula wa mwaka"
+    },
+    "Annual non-food inflation": {
+      fr: "Inflation annuelle hors alimentation",
+      ar: "التضخم السنوي لغير الغذاء",
+      pt: "Inflação anual não alimentar",
+      sw: "Mfumuko wa bei wa bidhaa zisizo za chakula wa mwaka"
+    },
     "Use regional signals as context, not as a substitute for a market-specific price.": {
       fr: "Utilisez les signaux régionaux comme contexte, et non comme substitut à un prix propre à un marché.",
       ar: "استخدم المؤشرات الإقليمية كسياق، لا بديلاً عن سعر خاص بسوق معين.",
