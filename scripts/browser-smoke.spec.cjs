@@ -44,7 +44,9 @@ test("Markets page translates data labels and explanatory copy across languages"
       .filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') })
       .filter({ hasText: expected.sourceReference }).first();
     await expect(freshnessStatusRow).toContainText(expected.sourceReference);
-    await expect(page.locator(".market-card").filter({ hasText: expected.note }).first()).toContainText(expected.note);\n    await expect(page.locator(".market-card").filter({ hasText: expected.secondNote }).first()).toContainText(expected.secondNote);\n    await expect(page.locator("body")).toContainText(expected.regionalHeadline);
+    await expect(page.locator(".market-card").filter({ hasText: expected.note }).first()).toContainText(expected.note);
+    await expect(page.locator(".market-card").filter({ hasText: expected.secondNote }).first()).toContainText(expected.secondNote);
+    await expect(page.locator("body")).toContainText(expected.regionalHeadline);
     await expect(page.locator(".market-card h2").filter({ hasText: expected.dryMaize }).first()).toContainText(expected.dryMaize);
   }
 });
