@@ -238,6 +238,26 @@
         el.textContent = parts.join(" · ");
       }
     });
+    document.querySelectorAll(".market-card p").forEach(function (el) {
+      if (!el.querySelector('strong[data-i18n="markets.freshnessLabel"]')) return;
+      var original = el.getAttribute("data-market-freshness-original");
+      if (!original) {
+        original = el.innerHTML;
+        el.setAttribute("data-market-freshness-original", original);
+      }
+      var words = {
+        Recent: { fr: "Récent", ar: "حديث", pt: "Recente", sw: "Mpya" },
+        Older: { fr: "Ancien", ar: "أقدم", pt: "Mais antigo", sw: "Ya zamani" },
+        Stale: { fr: "Périmé", ar: "قديم", pt: "Desatualizado", sw: "Iliyopitwa na wakati" },
+        "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" }
+      };
+      var value = original;
+      Object.keys(words).forEach(function (word) {
+        var translated = words[word][lang];
+        if (translated) value = value.replace(new RegExp(word, "g"), translated);
+      });
+      el.innerHTML = value;
+    });
     document.querySelectorAll("#market-source-map small").forEach(function (el) {
       var original = el.getAttribute("data-market-scope-original") || el.textContent;
       if (!el.hasAttribute("data-market-scope-original")) el.setAttribute("data-market-scope-original", original);
