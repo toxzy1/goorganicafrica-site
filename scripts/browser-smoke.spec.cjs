@@ -33,7 +33,10 @@ test("Markets commodity names localize in all supported languages", async ({ pag
     const firstObservedDate = page.locator(".market-card p").filter({ has: page.locator("[data-i18n='markets.observationLabel']") }).first();
     await expect(firstObservedDate).toBeVisible();
     if (language !== "en") {
-      await expect(firstObservedDate).not.toContainText(/\\b20\\d{2}-\\d{2}-\\d{2}\\b/);
+      await expect(firstObservedDate).not.toContainText(/\b20\d{2}-\d{2}-\d{2}\b/);
+      const sourceScope = page.locator("[data-market-scope-label]").first();
+      await expect(sourceScope).toBeVisible();
+      await expect(sourceScope).not.toContainText(/Tier|Verified/);
     }
   }
 });
