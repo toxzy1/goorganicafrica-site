@@ -24,6 +24,8 @@
     "soy-bean": "soybean",
     "soya-bean": "soybean",
     "soya-beans": "soybean",
+    soybeans: "soybean",
+    soya: "soybean",
     "bell-pepper": "bell-pepper",
     "sweet-pepper": "bell-pepper",
     "sweet-peppers": "bell-pepper",
@@ -54,12 +56,37 @@
   }
 
   function translatedCommodity(raw) {
-    var key = slug(raw);
+    var source = String(raw || "").trim();
+    var key = slug(source);
     key = aliases[key] || key;
-    if (!knownKeys[key] || !window.GOA_I18N || !window.GOA_I18N.t) return null;
-    var value = window.GOA_I18N.t("commodity", key);
-    if (!value || value === "undefined" || value === key) return null;
-    return value;
+    if (!window.GOA_I18N || !window.GOA_I18N.t) return null;
+
+    if (knownKeys[key]) {
+      var exact = window.GOA_I18N.t("commodity", key);
+      if (exact && exact !== "undefined" && exact !== key) return exact;
+    }
+
+    // Market datasets also contain cultivar and quality labels such as
+    // "Beans - Nambale", "Beans — Canadian Wonder", "Dry Maize" and "Rice — IRRR".
+    // Translate the food commodity name while retaining the market-specific suffix.
+    var patterns = [
+      { regex: /^(dry\\s+)?maize\\b/i, key: "maize", replace: function (m, prefix, value) { return (prefix || "") + value; } },
+      { regex: /^corn\\b/i, key: "maize", replace: function (m, prefix, value) { return value + m.slice(4); } },
+      { regex: /^beans?\\b/i, key: "beans", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
+      { regex: /^soybeans?\\b/i, key: "soybean", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
+      { regex: /^soya\\s+beans?\\b/i, key: "soybean", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
+      { regex: /^rice\\b/i, key: "rice", replace: function (m, prefix, value) { return value + source.slice(m.length); } }
+    ];
+
+    for (var i = 0; i < patterns.length; i++) {
+      var match = source.match(patterns[i].regex);
+      if (!match) continue;
+      var translated = window.GOA_I18N.t("commodity", patterns[i].key);
+      if (translated && translated !== "undefined" && translated !== patterns[i].key) {
+        return patterns[i].replace(match[0], match[1], translated);
+      }
+    }
+    return null;
   }
 
   function translateElement(element, original) {
