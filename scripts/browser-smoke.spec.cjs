@@ -4,7 +4,7 @@ const baseURL = process.env.GOA_PREVIEW_URL || "https://qa-decision-centre-searc
 
 test("Markets commodity names localize in all supported languages", async ({ page }) => {
   const expected = {
-    en: ["Beans (Cowpea)", "Maize", "Rice (Paddy)"],
+    en: ["Beans - Nambale", "Maize", "Rice (Paddy)"],
     fr: ["Haricot (niébé)", "Maïs", "Riz (paddy)"],
     ar: ["الفاصوليا (اللوبيا)", "الذرة", "الأرز (أرز شَلبي)"],
     pt: ["Feijão (feijão-frade)", "Milho", "Arroz (em casca)"],
