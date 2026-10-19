@@ -4,10 +4,13 @@
   // The Markets records keep their original commodity values for filtering and
   // source traceability. Only visible labels are translated.
   var knownKeys = {
-    beans: true, "bell-pepper": true, broiler: true, cassava: true,
+    "agricultural-products": true, "basic-food-commodities": true,
+    beans: true, beef: true, "bell-pepper": true, broiler: true, cassava: true,
     cattle: true, cucumber: true, fish: true, goat: true, habanero: true,
-    layer: true, maize: true, pepper: true, pig: true, rice: true,
-    soybean: true, tomato: true, watermelon: true
+    layer: true, "livestock-and-fish": true, livestock: true, maize: true,
+    matooke: true, milk: true, "local-agricultural-commodities": true,
+    pepper: true, pig: true, rice: true, "red-irish-potato": true,
+    soybean: true, tomato: true, watermelon: true, wheat: true
   };
 
   var aliases = {
@@ -37,6 +40,7 @@
     "habanero-pepper": "habanero",
     "tomatoes": "tomato",
     "water-melon": "watermelon",
+    "red-irish-potatoes": "red-irish-potato",
     "catfish": "fish",
     "fish-farming": "fish",
     "broiler-chicken": "broiler",
@@ -73,6 +77,7 @@
       { regex: /^(dry\s+)?maize\b/i, key: "maize", replace: function (m, prefix, value) { return (prefix || "") + value; } },
       { regex: /^corn\b/i, key: "maize", replace: function (m, prefix, value) { return value + m.slice(4); } },
       { regex: /^beans?\b/i, key: "beans", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
+      { regex: /^cassava\b/i, key: "cassava", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
       { regex: /^soybeans?\b/i, key: "soybean", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
       { regex: /^soya\s+beans?\b/i, key: "soybean", replace: function (m, prefix, value) { return value + source.slice(m.length); } },
       { regex: /^rice\b/i, key: "rice", replace: function (m, prefix, value) { return value + source.slice(m.length); } }
