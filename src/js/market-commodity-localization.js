@@ -407,6 +407,52 @@
       if (!el.hasAttribute("data-market-date-original")) el.setAttribute("data-market-date-original", original);
       el.textContent = formatMarketDate(original, locale);
     });
+
+    // Localize dataset-driven freshness values and price-type options as well as
+    // the translated interface labels. Keep original values for filtering.
+    var freshness = {
+      "Recent": { fr: "Récent", ar: "حديث", pt: "Recente", sw: "Hivi karibuni" },
+      "Older": { fr: "Ancien", ar: "أقدم", pt: "Mais antigo", sw: "Ya zamani" },
+      "Stale": { fr: "Périmé", ar: "قديم", pt: "Desatualizado", sw: "Iliyopitwa na wakati" },
+      "Source reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
+      "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" }
+    };
+    document.querySelectorAll(".market-card p").forEach(function (p) {
+      var label = p.querySelector('strong[data-i18n="markets.freshnessLabel"]');
+      if (!label) return;
+      var node = Array.prototype.slice.call(p.childNodes).find(function (child) {
+        return child.nodeType === 3 && child.nodeValue.trim();
+      });
+      if (!node) return;
+      if (!p.hasAttribute("data-market-freshness-original")) {
+        p.setAttribute("data-market-freshness-original", node.nodeValue);
+      }
+      var original = p.getAttribute("data-market-freshness-original");
+      var rendered = original;
+      Object.keys(freshness).forEach(function (word) {
+        var translated = lang === "en" ? word : ((freshness[word] && freshness[word][lang]) || word);
+        rendered = rendered.split(word).join(translated);
+      });
+      node.nodeValue = rendered;
+    });
+    var priceTypes = {
+      "Farm-gate": { fr: "Prix à la ferme", ar: "سعر باب المزرعة", pt: "Preço à saída da exploração", sw: "Bei ya shambani" },
+      "Farm gate": { fr: "Prix à la ferme", ar: "سعر باب المزرعة", pt: "Preço à saída da exploração", sw: "Bei ya shambani" },
+      "Retail": { fr: "Détail", ar: "التجزئة", pt: "Retalho", sw: "Rejareja" },
+      "Wholesale": { fr: "Gros", ar: "الجملة", pt: "Atacado", sw: "Jumla" },
+      "Producer price": { fr: "Prix producteur", ar: "سعر المنتج", pt: "Preço ao produtor", sw: "Bei ya mzalishaji" },
+      "Consumer price": { fr: "Prix à la consommation", ar: "سعر المستهلك", pt: "Preço ao consumidor", sw: "Bei ya mtumiaji" },
+      "Market price": { fr: "Prix du marché", ar: "سعر السوق", pt: "Preço de mercado", sw: "Bei ya soko" },
+      "Source reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
+      "Official benchmark": { fr: "Référence officielle", ar: "مؤشر رسمي مرجعي", pt: "Referência oficial", sw: "Kipimo rasmi cha marejeo" }
+    };
+    document.querySelectorAll("#market-price-type option").forEach(function (option) {
+      if (option.value === "all") return;
+      var original = option.getAttribute("data-market-price-type-original") || option.textContent.trim();
+      if (!option.hasAttribute("data-market-price-type-original")) option.setAttribute("data-market-price-type-original", original);
+      var match = Object.keys(priceTypes).find(function (key) { return key.toLowerCase() === original.toLowerCase(); });
+      option.textContent = lang === "en" ? original : (match && priceTypes[match][lang] ? priceTypes[match][lang] : original);
+    });
     var compared = { fr: "comparé au", ar: "مقارنةً بـ", pt: "em comparação com", sw: "ikilinganishwa na" };
     document.querySelectorAll("[data-market-compared-label]").forEach(function (el) {
       var original = el.getAttribute("data-market-compared-label");

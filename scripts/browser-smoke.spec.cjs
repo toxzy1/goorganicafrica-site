@@ -26,11 +26,11 @@ test("Markets commodity names localize in all supported languages", async ({ pag
 
 test("Markets page translates data labels and explanatory copy across languages", async ({ page }) => {
   const cases = {
-    en: { freshness: "Freshness:", sourceReference: "Source Reference", note: "Use the official market selector and observation period before quoting a price.", market: "National market coverage", dryMaize: "Dry Maize" },
-    fr: { freshness: "Actualité :", sourceReference: "Référence de source", note: "Utilisez le sélecteur officiel de marché et la période d’observation avant de citer un prix.", market: "Couverture nationale du marché", dryMaize: "Maïs sec" },
-    ar: { freshness: "حداثة البيانات:", sourceReference: "مرجع المصدر", note: "استخدم محدد السوق الرسمي وفترة الرصد قبل ذكر أي سعر.", market: "تغطية السوق الوطنية", dryMaize: "ذرة جافة" },
-    pt: { freshness: "Atualidade:", sourceReference: "Referência da fonte", note: "Utilize o seletor oficial de mercado e o período de observação antes de citar um preço.", market: "Cobertura nacional do mercado", dryMaize: "Milho seco" },
-    sw: { freshness: "Uhalisia wa muda:", sourceReference: "Rejea ya chanzo", note: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei.", market: "Ufunikaji wa soko la kitaifa", dryMaize: "Mahindi makavu" }
+    en: { freshness: "Freshness:", sourceReference: "Source Reference", recent: "Recent", note: "Use the official market selector and observation period before quoting a price.", market: "National market coverage", dryMaize: "Dry Maize" },
+    fr: { freshness: "Actualité :", sourceReference: "Référence de source", recent: "Récent", note: "Utilisez le sélecteur officiel de marché et la période d’observation avant de citer un prix.", market: "Couverture nationale du marché", dryMaize: "Maïs sec" },
+    ar: { freshness: "حداثة البيانات:", sourceReference: "مرجع المصدر", recent: "حديث", note: "استخدم محدد السوق الرسمي وفترة الرصد قبل ذكر أي سعر.", market: "تغطية السوق الوطنية", dryMaize: "ذرة جافة" },
+    pt: { freshness: "Atualidade:", sourceReference: "Referência da fonte", recent: "Recente", note: "Utilize o seletor oficial de mercado e o período de observação antes de citar um preço.", market: "Cobertura nacional do mercado", dryMaize: "Milho seco" },
+    sw: { freshness: "Uhalisia wa muda:", sourceReference: "Rejea ya chanzo", recent: "Mpya", note: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei.", market: "Ufunikaji wa soko la kitaifa", dryMaize: "Mahindi makavu" }
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   for (const [language, expected] of Object.entries(cases)) {
@@ -40,6 +40,18 @@ test("Markets page translates data labels and explanatory copy across languages"
     }
     await expect(page.locator(".market-card > div").first()).toContainText(expected.market);
     await expect(page.locator(".market-card p").filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') }).first()).toContainText(expected.freshness);
+    await expect(page.locator("#market-freshness option[value='recent']")).toHaveText(expected.recent);
+    if (language !== "en") {
+      const freshnessRows = await page.locator(".market-card p")
+        .filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') }).allTextContents();
+      expect(freshnessRows.join(" ")).not.toMatch(/\bRecent\b|\bOlder\b|\bStale\b|\bSource Reference\b/);
+      const priceTypes = await page.locator("#market-price-type option").allTextContents();
+      for (const english of ["Farm-gate", "Farm gate", "Retail", "Wholesale", "Producer price", "Consumer price", "Market price", "Official benchmark"]) {
+        if (priceTypes.some((label) => label.trim().toLowerCase() === english.toLowerCase())) {
+          expect(priceTypes.map((label) => label.trim())).not.toContain(english);
+        }
+      }
+    }
     const freshnessStatusRow = page.locator(".market-card p")
       .filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') })
       .filter({ hasText: expected.sourceReference }).first();
