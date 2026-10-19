@@ -234,6 +234,91 @@
     });
   }
 
+  // The global page dictionary covers the main headings, but market records also
+  // contain small dataset-driven labels and date strings. Localize those here.
+  var marketUiTranslations = {
+    "markets.priceLabel": { fr: "Prix :", ar: "السعر:", pt: "Preço:", sw: "Bei:" },
+    "markets.freshnessLabel": { fr: "Actualité :", ar: "حداثة البيانات:", pt: "Atualidade:", sw: "Usasishaji:" },
+    "markets.observationLabel": { fr: "Observation :", ar: "الرصد:", pt: "Observação:", sw: "Uchunguzi:" },
+    "markets.trendLabel": { fr: "Tendance :", ar: "الاتجاه:", pt: "Tendência:", sw: "Mwenendo:" },
+    "markets.previousLabel": { fr: "Précédent :", ar: "السابق:", pt: "Anterior:", sw: "Iliyotangulia:" },
+    "markets.sourceLabel": { fr: "Source :", ar: "المصدر:", pt: "Fonte:", sw: "Chanzo:" },
+    "markets.verifiedLabel": { fr: "Vérifié :", ar: "تم التحقق:", pt: "Verificado:", sw: "Imethibitishwa:" },
+    "markets.periodLabel": { fr: "Période :", ar: "الفترة:", pt: "Período:", sw: "Kipindi:" },
+    "markets.observedLabel": { fr: "Observé le", ar: "تاريخ الرصد", pt: "Observado em", sw: "Ilionekana tarehe" },
+    "markets.viewMarketSource": { fr: "Voir la source officielle du marché", ar: "عرض مصدر السوق الرسمي", pt: "Ver fonte oficial do mercado", sw: "Tazama chanzo rasmi cha soko" },
+    "markets.openOfficialSource": { fr: "Ouvrir la source officielle", ar: "فتح المصدر الرسمي", pt: "Abrir fonte oficial", sw: "Fungua chanzo rasmi" },
+    "markets.sourceReferencePrice": { fr: "Référence de source — aucun prix actuel affiché.", ar: "مرجع المصدر — لا يُعرض سعر حالي.", pt: "Referência da fonte — não é apresentado preço atual.", sw: "Rejea ya chanzo — hakuna bei ya sasa inayoonyeshwa." }
+  };
+
+  function localizedDate(value, language) {
+    var match = String(value).match(/^(\\d{4})-(\\d{2})-(\\d{2})$/);
+    if (!match) return value;
+    var date = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12);
+    var locales = { en: "en-GB", fr: "fr-FR", ar: "ar", pt: "pt-PT", sw: "sw" };
+    try {
+      return new Intl.DateTimeFormat(locales[language] || "en-GB", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }).format(date);
+    } catch (_) { return value; }
+  }
+
+  function refreshMarketLabelsAndDates() {
+    var language = (document.documentElement.lang || "en").slice(0, 2);
+    document.querySelectorAll("[data-i18n]").forEach(function (element) {
+      var key = element.getAttribute("data-i18n");
+      var translations = marketUiTranslations[key];
+      if (!translations) return;
+      var original = element.getAttribute("data-market-label-original");
+      if (!original) {
+        original = element.textContent;
+        element.setAttribute("data-market-label-original", original);
+      }
+      element.textContent = language === "en" ? original : (translations[language] || original);
+    });
+
+    var roots = document.querySelectorAll("#market-list, #market-signals, #market-source-map, #market-indicators, section article");
+    roots.forEach(function (root) {
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      var nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach(function (node) {
+        if (!node.nodeValue || !node.nodeValue.trim()) return;
+        var parent = node.parentElement;
+        if (!parent || parent.closest("script,style,[data-i18n]")) return;
+        if (!parent.hasAttribute("data-market-date-text-original")) {
+          if (!/\\b\\d{4}-\\d{2}-\\d{2}\\b/.test(node.nodeValue)) return;
+          parent.setAttribute("data-market-date-text-original", node.nodeValue);
+        }
+        var original = parent.getAttribute("data-market-date-text-original");
+        var rendered = original.replace(/\\b\\d{4}-\\d{2}-\\d{2}\\b/g, function (date) { return language === "en" ? date : localizedDate(date, language); });
+        node.nodeValue = rendered;
+      });
+    });
+
+    var freshness = {
+      "Recent": { fr: "Récent", ar: "حديث", pt: "Recente", sw: "Hivi karibuni" },
+      "Older": { fr: "Ancien", ar: "أقدم", pt: "Mais antigo", sw: "Ya zamani" },
+      "Stale": { fr: "Périmé", ar: "قديم", pt: "Desasualizado", sw: "Iliyopitwa na wakati" },
+      "Source reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
+      "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" }
+    };
+    document.querySelectorAll(".market-card p").forEach(function (paragraph) {
+      var strong = paragraph.querySelector("strong[data-i18n='markets.freshnessLabel']");
+      if (!strong) return;
+      var original = paragraph.getAttribute("data-market-freshness-original");
+      if (!original) {
+        original = paragraph.textContent;
+        paragraph.setAttribute("data-market-freshness-original", original);
+      }
+      var text = original;
+      Object.keys(freshness).forEach(function (word) {
+        if (language !== "en" && freshness[word][language]) text = text.replace(word, freshness[word][language]);
+      });
+      paragraph.textContent = text;
+      var label = paragraph.querySelector("strong");
+      if (label) label.textContent = language === "en" ? "Freshness:" : (marketUiTranslations["markets.freshnessLabel"][language] || "Freshness:");
+    });
+  }
+
   function refresh() {
     if (!window.GOA_I18N || !window.GOA_I18N.t) return;
 
@@ -273,6 +358,7 @@
       label.textContent = parts.join(" · ");
     });
     refreshMarketCopy();
+    refreshMarketLabelsAndDates();
   }
 
   document.addEventListener("goa:languagechange", refresh);
