@@ -69,6 +69,24 @@ test("Markets dates and connecting labels follow the selected language", async (
     if (await compared.count()) await expect(compared.first()).toHaveText(labels.compared);
 
     const firstDate = dates.first();
+    const verifiedDate = page.locator(".market-card p")
+      .filter({ has: page.locator('strong[data-i18n="markets.verifiedLabel"]') })
+      .first().locator("[data-market-date]");
+    await expect(verifiedDate).toHaveCount(1);
+    const verifiedRaw = await verifiedDate.getAttribute("data-market-date");
+    const verifiedExpected = await verifiedDate.evaluate((el, locale) => {
+      const raw = el.getAttribute("data-market-date") || "";
+      const match = raw.trim().match(/^(\\d{4})-(\\d{2})-(\\d{2})(?:$|T)/);
+      const date = match
+        ? new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12))
+        : new Date(raw);
+      return Number.isNaN(date.getTime()) ? raw : new Intl.DateTimeFormat(locale, {
+        day: "numeric", month: "short", year: "numeric", timeZone: "UTC"
+      }).format(date);
+    }, labels.locale);
+    expect(verifiedRaw).toBeTruthy();
+    await expect(verifiedDate).toHaveText(verifiedExpected);
+
     const expectedDate = await firstDate.evaluate((el, locale) => {
       const raw = el.getAttribute("data-market-date") || "";
       const match = raw.trim().match(/^(\d{4})-(\d{2})-(\d{2})(?:$|T)/);
