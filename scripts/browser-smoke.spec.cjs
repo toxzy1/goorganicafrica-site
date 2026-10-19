@@ -4,11 +4,11 @@ const baseURL = process.env.GOA_PREVIEW_URL || "https://qa-decision-centre-searc
 
 test("Markets commodity names localize in all supported languages", async ({ page }) => {
   const expected = {
-    en: ["Beans (Cowpea) - Nambale", "Maize", "Rice (Paddy)"],
-    fr: ["Haricot (niébé)", "Maïs", "Riz (paddy)"],
-    ar: ["الفاصوليا (اللوبيا)", "الذرة", "الأرز (أرز شَلبي)"],
-    pt: ["Feijão (feijão-frade)", "Milho", "Arroz (em casca)"],
-    sw: ["Maharagwe (kunde)", "Mahindi", "Mpunga"]
+    en: ["Agricultural products", "Basic food commodities", "Beans (Cowpea) - Nambale", "Beef", "Cassava - Fresh", "Dry Maize", "Livestock", "Livestock and fish", "Local agricultural commodities", "Maize", "Matooke", "Milk", "Red Irish potato", "Rice (Paddy)", "Soybean", "Wheat"],
+    fr: ["Produits agricoles", "Produits alimentaires de base", "Haricot (niébé)", "Bœuf", "Manioc", "Maïs", "Élevage", "Élevage et poisson", "Produits agricoles locaux", "Matooke (banane plantain verte)", "Lait", "Pomme de terre rouge irlandaise", "Riz (paddy)", "Soja", "Blé"],
+    ar: ["المنتجات الزراعية", "السلع الغذائية الأساسية", "الفاصوليا (اللوبيا)", "لحم البقر", "الكسافا", "الذرة", "الثروة الحيوانية", "الثروة الحيوانية والأسماك", "السلع الزراعية المحلية", "ماتوكي (موز أخضر للطبخ)", "الحليب", "البطاطس الأيرلندية الحمراء", "الأرز (أرز شَلبي)", "فول الصويا", "القمح"],
+    pt: ["Produtos agrícolas", "Produtos alimentares básicos", "Feijão (feijão-frade)", "Carne bovina", "Mandioca", "Milho", "Pecuária", "Pecuária e pescado", "Produtos agrícolas locais", "Matoke (banana-da-terra verde)", "Leite", "Batata irlandesa vermelha", "Arroz (em casca)", "Soja", "Trigo"],
+    sw: ["Mazao ya kilimo", "Bidhaa za msingi za chakula", "Maharagwe (kunde)", "Nyama ya ng'ombe", "Muhogo", "Mahindi", "Mifugo", "Mifugo na samaki", "Mazao ya kilimo ya eneo husika", "Matoke (ndizi za kupika)", "Maziwa", "Viazi vyekundu vya aina ya Irish", "Mpunga", "Maharagwe ya soya", "Ngano"]
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   await expect(page.locator("#market-commodity")).toBeVisible({ timeout: 15000 });
