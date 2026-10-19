@@ -104,6 +104,136 @@
     else element.textContent = source;
   }
 
+
+  // Translate recurring explanatory copy supplied by market datasets, while
+  // leaving official organization names, cultivar names and ISO dates intact.
+  var copyTranslations = {
+    "Use the official market selector and observation period before quoting a price.": {
+      fr: "Utilisez le sélecteur officiel de marché et la période d’observation avant de citer un prix.",
+      ar: "استخدم محدد السوق الرسمي وفترة الرصد قبل ذكر أي سعر.",
+      pt: "Utilize o seletor oficial de mercado e o período de observação antes de citar um preço.",
+      sw: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei."
+    },
+    "NAERLS interface includes livestock and fishery market information.": {
+      fr: "L’interface NAERLS comprend des informations sur les marchés du bétail et de la pêche.",
+      ar: "تتضمن واجهة NAERLS معلومات عن أسواق الماشية ومصايد الأسماك.",
+      pt: "A interface da NAERLS inclui informações sobre os mercados pecuários e das pescas.",
+      sw: "Kiolesura cha NAERLS kinajumuisha taarifa za masoko ya mifugo na uvuvi."
+    },
+    "AMIS monitors wheat, maize, rice and soybeans; use as international context, not as a local farm-gate quotation.": {
+      fr: "AMIS suit le blé, le maïs, le riz et le soja ; utilisez ces données comme contexte international, et non comme prix local à la ferme.",
+      ar: "يرصد AMIS القمح والذرة والأرز وفول الصويا؛ استخدمه للسياق الدولي وليس كسعر محلي عند باب المزرعة.",
+      pt: "O AMIS acompanha trigo, milho, arroz e soja; utilize-o como contexto internacional, não como cotação local à saída da exploração.",
+      sw: "AMIS hufuatilia ngano, mahindi, mpunga na soya; itumie kama muktadha wa kimataifa, si bei ya eneo la shamba."
+    },
+    "AMIS international benchmark context; local price requires a country, market, unit and observation date.": {
+      fr: "Référence internationale AMIS ; un prix local exige un pays, un marché, une unité et une date d’observation.",
+      ar: "مرجع دولي من AMIS؛ يتطلب السعر المحلي تحديد البلد والسوق والوحدة وتاريخ الرصد.",
+      pt: "Referência internacional do AMIS; o preço local exige país, mercado, unidade e data de observação.",
+      sw: "Muktadha wa kipimo cha kimataifa cha AMIS; bei ya eneo inahitaji nchi, soko, kipimo na tarehe ya uchunguzi."
+    },
+    "AMIS international benchmark context; FAO also publishes a monthly Rice Price Update.": {
+      fr: "Référence internationale AMIS ; la FAO publie également une mise à jour mensuelle des prix du riz.",
+      ar: "مرجع دولي من AMIS؛ وتنشر منظمة FAO أيضاً تحديثاً شهرياً لأسعار الأرز.",
+      pt: "Referência internacional do AMIS; a FAO também publica uma atualização mensal dos preços do arroz.",
+      sw: "Muktadha wa kimataifa wa AMIS; FAO pia huchapisha taarifa ya kila mwezi ya bei ya mpunga."
+    },
+    "Annual change in food prices; this is an inflation indicator, not a commodity quotation.": {
+      fr: "Variation annuelle des prix alimentaires ; il s’agit d’un indicateur d’inflation, et non d’un prix de produit.",
+      ar: "التغير السنوي في أسعار الغذاء؛ هذا مؤشر للتضخم وليس سعراً لسلعة.",
+      pt: "Variação anual dos preços dos alimentos; é um indicador de inflação, não uma cotação de produto.",
+      sw: "Mabadiliko ya kila mwaka ya bei za chakula; hiki ni kiashiria cha mfumuko wa bei, si bei ya bidhaa."
+    },
+    "Annual non-food inflation indicator; retained for market-cost context, not commodity pricing.": {
+      fr: "Indicateur annuel de l’inflation hors alimentation, conservé pour contextualiser les coûts du marché et non les prix des produits.",
+      ar: "مؤشر سنوي للتضخم غير الغذائي، يُحتفظ به لفهم تكاليف السوق وليس لتسعير السلع.",
+      pt: "Indicador anual da inflação não alimentar, mantido para contextualizar os custos do mercado e não os preços dos produtos.",
+      sw: "Kiashiria cha kila mwaka cha mfumuko wa bei usio wa chakula, kinachotumika kuelewa gharama za soko, si bei za bidhaa."
+    },
+    "Never present a source-reference record as a current quotation.": {
+      fr: "Ne présentez jamais une référence de source comme un prix actuel.",
+      ar: "لا تعرض سجل مرجع المصدر على أنه سعر حالي.",
+      pt: "Nunca apresente um registo de referência de fonte como uma cotação atual.",
+      sw: "Usiwasilishe rekodi ya rejea ya chanzo kama bei ya sasa."
+    },
+    "A current quotation requires market, commodity, price, currency, unit and observation date.": {
+      fr: "Un prix actuel nécessite le marché, le produit, le prix, la devise, l’unité et la date d’observation.",
+      ar: "يتطلب السعر الحالي تحديد السوق والسلعة والسعر والعملة والوحدة وتاريخ الرصد.",
+      pt: "Uma cotação atual exige mercado, produto, preço, moeda, unidade e data de observação.",
+      sw: "Bei ya sasa inahitaji soko, bidhaa, bei, sarafu, kipimo na tarehe ya uchunguzi."
+    },
+    "Keep historical and stale observations for trend analysis but label their freshness.": {
+      fr: "Conservez les observations historiques ou anciennes pour analyser les tendances, en indiquant leur ancienneté.",
+      ar: "احتفظ بالملاحظات التاريخية والقديمة لتحليل الاتجاهات مع توضيح حداثة البيانات.",
+      pt: "Mantenha observações históricas e desatualizadas para analisar tendências, identificando a sua atualidade.",
+      sw: "Hifadhi uchunguzi wa zamani kwa uchanganuzi wa mwenendo lakini onyesha muda wake."
+    },
+    "Use regional signals as context, not as a substitute for a market-specific price.": {
+      fr: "Utilisez les signaux régionaux comme contexte, et non comme substitut à un prix propre à un marché.",
+      ar: "استخدم المؤشرات الإقليمية كسياق، لا بديلاً عن سعر خاص بسوق معين.",
+      pt: "Utilize os sinais regionais como contexto, não como substituto de um preço específico de mercado.",
+      sw: "Tumia ishara za kikanda kama muktadha, si badala ya bei ya soko mahususi."
+    }
+  };
+
+  function translatedCopy(raw) {
+    var language = (document.documentElement.lang || "en").slice(0, 2);
+    var entry = copyTranslations[String(raw || "").trim()];
+    return entry && entry[language] ? entry[language] : null;
+  }
+
+  function refreshMarketCopy() {
+    var lang = (document.documentElement.lang || "en").slice(0, 2);
+    if (lang === "en") {
+      document.querySelectorAll("[data-market-copy-original]").forEach(function (el) {
+        el.textContent = el.getAttribute("data-market-copy-original");
+      });
+      return;
+    }
+    document.querySelectorAll(".market-card p, #market-indicators p, #market-source-map p, section article p, section li, #market-signals small").forEach(function (el) {
+      if (el.querySelector("strong, a, span[data-i18n]")) return;
+      var original = el.getAttribute("data-market-copy-original");
+      if (!original) {
+        original = el.textContent.trim();
+        if (!copyTranslations[original]) return;
+        el.setAttribute("data-market-copy-original", original);
+      }
+      var translated = translatedCopy(original);
+      if (translated) el.textContent = translated;
+    });
+    document.querySelectorAll("#market-list .market-card > div").forEach(function (el) {
+      var original = el.getAttribute("data-market-meta-original");
+      if (!original) {
+        original = el.textContent;
+        el.setAttribute("data-market-meta-original", original);
+      }
+      var parts = original.split(" · ");
+      if (parts.length >= 2) {
+        parts[1] = ({
+          "National market coverage": { fr: "Couverture nationale du marché", ar: "تغطية السوق الوطنية", pt: "Cobertura nacional do mercado", sw: "Ufunikaji wa soko la kitaifa" },
+          "Kenya weekly market analysis": { fr: "Analyse hebdomadaire du marché kényan", ar: "تحليل السوق الأسبوعي في كينيا", pt: "Análise semanal do mercado do Quénia", sw: "Uchambuzi wa soko la Kenya wa kila wiki" },
+          "73 monitored markets": { fr: "73 marchés suivis", ar: "73 سوقاً خاضعة للرصد", pt: "73 mercados monitorizados", sw: "Masoko 73 yanayofuatiliwa" },
+          "National / export-linked commodity reference": { fr: "Référence nationale des produits liée à l’exportation", ar: "مرجع وطني للسلع مرتبط بالتصدير", pt: "Referência nacional de produtos ligada à exportação", sw: "Rejea ya kitaifa ya bidhaa zinazohusiana na mauzo ya nje" },
+          "Africa / international": { fr: "Afrique / international", ar: "أفريقيا / دولي", pt: "África / internacional", sw: "Afrika / kimataifa" },
+          "International": { fr: "International", ar: "دولي", pt: "Internacional", sw: "Kimataifa" }
+        })[parts[1]]?.[lang] || parts[1];
+        el.textContent = parts.join(" · ");
+      }
+    });
+    document.querySelectorAll(".market-card h2").forEach(function (el) {
+      var original = el.getAttribute("data-market-commodity-original") || el.textContent.trim();
+      var suffixes = [
+        { re: /^Dry\s+/i, key: "dry", values: { fr: "Sec ", ar: "جاف ", pt: "Seco ", sw: "Kavu " } },
+        { re: /\s+-\s+Fresh$/i, key: "fresh", values: { fr: " - Frais", ar: " - طازج", pt: " - Fresca", sw: " - Safi" } }
+      ];
+      var value = el.textContent;
+      suffixes.forEach(function (item) {
+        if (item.re.test(original) && item.values[lang]) value = value.replace(item.re, function (m) { return item.values[lang]; });
+      });
+      if (value !== el.textContent) el.textContent = value;
+    });
+  }
+
   function refresh() {
     if (!window.GOA_I18N || !window.GOA_I18N.t) return;
 
@@ -142,6 +272,7 @@
       if (parts.length >= 2) parts.splice(1, parts.length - 1, translated);
       label.textContent = parts.join(" · ");
     });
+    refreshMarketCopy();
   }
 
   document.addEventListener("goa:languagechange", refresh);
