@@ -12,6 +12,13 @@ test("Markets commodity names localize in all supported languages", async ({ pag
   };
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   await expect(page.locator("#market-commodity")).toBeVisible({ timeout: 15000 });
+  const uiLabels = {
+    en: { verified: "Verified:", observation: "Observation:" },
+    fr: { verified: "Vérifié :", observation: "Observation :" },
+    ar: { verified: "تم التحقق:", observation: "الرصد:" },
+    pt: { verified: "Verificado:", observation: "Observação:" },
+    sw: { verified: "Imethibitishwa:", observation: "Uchunguzi:" }
+  };
   for (const [language, labels] of Object.entries(expected)) {
     if (language !== "en") {
       await page.locator("#site-language-select").selectOption(language);
@@ -20,6 +27,13 @@ test("Markets commodity names localize in all supported languages", async ({ pag
     const options = page.locator("#market-commodity");
     for (const label of labels) {
       await expect(options).toContainText(label);
+    }
+    await expect(page.locator("[data-i18n='markets.verifiedLabel']").first()).toHaveText(uiLabels[language].verified);
+    await expect(page.locator("[data-i18n='markets.observationLabel']").first()).toHaveText(uiLabels[language].observation);
+    const firstObservedDate = page.locator(".market-card p").filter({ has: page.locator("[data-i18n='markets.observationLabel']") }).first();
+    await expect(firstObservedDate).toBeVisible();
+    if (language !== "en") {
+      await expect(firstObservedDate).not.toContainText(/\\b20\\d{2}-\\d{2}-\\d{2}\\b/);
     }
   }
 });
