@@ -462,7 +462,8 @@
       Regional: { fr: "Régionale", ar: "إقليمي", pt: "Regional", sw: "Kikanda" },
       Continental: { fr: "Continentale", ar: "قاري", pt: "Continental", sw: "Bara" },
       Domestic: { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" },
-      National: { fr: "National", ar: "وطني", pt: "Nacional", sw: "Kitaifa" }
+      National: { fr: "National", ar: "وطني", pt: "Nacional", sw: "Kitaifa" },
+      International: { fr: "International", ar: "دولي", pt: "Internacional", sw: "Kimataifa" }
     };
     var words = {
       source: { fr: "source", ar: "مصدر", pt: "fonte", sw: "chanzo" },
@@ -474,6 +475,11 @@
       var values = { tier: { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Daraja" }, verified: { fr: "Vérifié", ar: "تم التحقق", pt: "Verificado", sw: "Imethibitishwa" } };
       var original = key === "tier" ? "Tier" : "Verified";
       el.textContent = lang === "en" ? original : ((values[key] && values[key][lang]) || original);
+    });
+    document.querySelectorAll("[data-market-scope-value]").forEach(function (el) {
+      var original = el.getAttribute("data-market-scope-value") || el.textContent.trim();
+      var localized = lang === "en" ? original : ((scopes[original] && scopes[original][lang]) || original);
+      el.textContent = localized;
     });
     document.querySelectorAll("[data-market-scope-label]").forEach(function (el) {
       var scope = el.getAttribute("data-market-scope") || "";
