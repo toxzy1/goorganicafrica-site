@@ -24,6 +24,31 @@ test("Markets commodity names localize in all supported languages", async ({ pag
   }
 });
 
+test("Markets page translates data labels and explanatory copy across languages", async ({ page }) => {
+  const cases = {
+    en: { freshness: "Freshness:", sourceReference: "Source Reference", note: "Use the official market selector and observation period before quoting a price.", market: "National market coverage", dryMaize: "Dry Maize" },
+    fr: { freshness: "Actualité :", sourceReference: "Référence de source", note: "Utilisez le sélecteur officiel de marché et la période d’observation avant de citer un prix.", market: "Couverture nationale du marché", dryMaize: "Maïs sec" },
+    ar: { freshness: "حداثة البيانات:", sourceReference: "مرجع المصدر", note: "استخدم محدد السوق الرسمي وفترة الرصد قبل ذكر أي سعر.", market: "تغطية السوق الوطنية", dryMaize: "ذرة جافة" },
+    pt: { freshness: "Atualidade:", sourceReference: "Referência da fonte", note: "Utilize o seletor oficial de mercado e o período de observação antes de citar um preço.", market: "Cobertura nacional do mercado", dryMaize: "Milho seco" },
+    sw: { freshness: "Uhalisia wa muda:", sourceReference: "Rejea ya chanzo", note: "Tumia kichaguzi rasmi cha soko na kipindi cha uchunguzi kabla ya kutaja bei.", market: "Ufunikaji wa soko la kitaifa", dryMaize: "Mahindi makavu" }
+  };
+  await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
+  for (const [language, expected] of Object.entries(cases)) {
+    if (language !== "en") {
+      await page.locator("#site-language-select").selectOption(language);
+      await expect(page.locator("html")).toHaveAttribute("lang", language);
+    }
+    await expect(page.locator(".market-card > div").first()).toContainText(expected.market);
+    await expect(page.locator(".market-card p").filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') }).first()).toContainText(expected.freshness);
+    const freshnessStatusRow = page.locator(".market-card p")
+      .filter({ has: page.locator('strong[data-i18n="markets.freshnessLabel"]') })
+      .filter({ hasText: expected.sourceReference }).first();
+    await expect(freshnessStatusRow).toContainText(expected.sourceReference);
+    await expect(page.locator(".market-card").filter({ hasText: expected.note }).first()).toContainText(expected.note);
+    await expect(page.locator(".market-card h2").filter({ hasText: expected.dryMaize }).first()).toContainText(expected.dryMaize);
+  }
+});
+
 test("mobile navigation can scroll to every page link on a short screen", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 640 });
   await page.goto(baseURL + "/", { waitUntil: "domcontentloaded" });
