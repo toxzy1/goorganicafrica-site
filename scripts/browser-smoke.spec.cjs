@@ -13,11 +13,11 @@ test("Markets commodity names localize in all supported languages", async ({ pag
   await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
   await expect(page.locator("#market-commodity")).toBeVisible({ timeout: 15000 });
   const uiLabels = {
-    en: { verified: "Verified:", observation: "Observation:" },
-    fr: { verified: "Vérifié :", observation: "Observation :" },
-    ar: { verified: "تم التحقق:", observation: "الرصد:" },
-    pt: { verified: "Verificado:", observation: "Observação:" },
-    sw: { verified: "Imethibitishwa:", observation: "Uchunguzi:" }
+    en: { verified: "Verified:", observation: "Observation:", comparedWith: "compared with" },
+    fr: { verified: "Vérifié :", observation: "Observation :", comparedWith: "comparé à" },
+    ar: { verified: "تم التحقق:", observation: "الرصد:", comparedWith: "مقارنةً بـ" },
+    pt: { verified: "Verificado:", observation: "Observação:", comparedWith: "em comparação com" },
+    sw: { verified: "Imethibitishwa:", observation: "Uchunguzi:", comparedWith: "ikilinganishwa na" }
   };
   for (const [language, labels] of Object.entries(expected)) {
     if (language !== "en") {
@@ -34,9 +34,12 @@ test("Markets commodity names localize in all supported languages", async ({ pag
     await expect(firstObservedDate).toBeVisible();
     if (language !== "en") {
       await expect(firstObservedDate).not.toContainText(/\b20\d{2}-\d{2}-\d{2}\b/);
-      const sourceScope = page.locator("[data-market-scope-label]").first();
+      const sourceScope = page.locator("[data-i18n='markets.sourceScopeLabel']").first();
       await expect(sourceScope).toBeVisible();
       await expect(sourceScope).not.toContainText(/Tier|Verified/);
+      await expect(sourceScope).not.toContainText(/\b20\d{2}-\d{2}-\d{2}\b/);
+      const signalDate = page.locator("#market-signals small").first();
+      if (await signalDate.count()) await expect(signalDate).toContainText(labels.comparedWith);
     }
   }
 });
