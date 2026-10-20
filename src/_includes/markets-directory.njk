@@ -54,3 +54,83 @@
 <script>
 (()=>{const q=document.getElementById('market-search'),c=document.getElementById('market-country'),m=document.getElementById('market-commodity'),fsh=document.getElementById('market-freshness'),pt=document.getElementById('market-price-type'),summary=document.getElementById('market-summary'),empty=document.getElementById('market-empty'),cards=[...document.querySelectorAll('.market-card')],sources=[...document.querySelectorAll('.market-source-card')];function t(key,vars,fallback){return window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('markets',key,vars):fallback;}function updateTitle(){document.title=t('title',{},'Agricultural Markets')+' | GoOrganicAfrica';}function f(){const s=q.value.toLowerCase().trim(),cc=c.value,cm=m.value,fr=fsh.value,typ=pt.value;let shown=0;cards.forEach(x=>{const ok=(cc==='all'||x.dataset.country===cc)&&(cm==='all'||x.dataset.commodity===cm)&&(fr==='all'||x.dataset.freshness===fr)&&(typ==='all'||x.dataset.priceType===typ)&&(!s||x.dataset.search.toLowerCase().includes(s));x.hidden=!ok;if(ok)shown++;});sources.forEach(x=>{x.hidden=!((cc==='all'||x.dataset.country===cc)&&(!s||x.dataset.search.toLowerCase().includes(s)));});const sourceCount=sources.filter(x=>!x.hidden).length;summary.textContent=t('matchingSummary',{shown:shown,sources:sourceCount},shown+' matching market records · '+sourceCount+' matching country source entries');if(empty)empty.hidden=shown>0;}q.addEventListener('input',f);c.addEventListener('change',f);m.addEventListener('change',f);fsh.addEventListener('change',f);pt.addEventListener('change',f);document.addEventListener('goa:languagechange',()=>{f();updateTitle();});f();updateTitle();})();
 </script>
+
+<script>
+/* Defensive cleanup for duplicate market output and invalid self-referencing source links. */
+(function () {
+  "use strict";
+  function dedupe(parent, selector, keyFor) {
+    if (!parent) return;
+    var seen = new Set();
+    parent.querySelectorAll(selector).forEach(function (node) {
+      var key = keyFor(node);
+      if (seen.has(key)) node.remove();
+      else seen.add(key);
+    });
+  }
+  function cleanMarketsOutput() {
+    var country = document.getElementById("market-country");
+    var commodity = document.getElementById("market-commodity");
+    var priceType = document.getElementById("market-price-type");
+    [country, commodity, priceType].forEach(function (select) {
+      dedupe(select, "option", function (option) { return option.value; });
+    });
+    dedupe(document.getElementById("market-list"), ".market-card", function (card) {
+      return [
+        card.dataset.country, card.dataset.commodity, card.dataset.priceType,
+        card.dataset.freshness, card.querySelector("h2") && card.querySelector("h2").textContent.trim(),
+        card.textContent.replace(/\s+/g, " ").trim(),
+        card.querySelector("a") && card.querySelector("a").getAttribute("href")
+      ].join("|");
+    });
+    dedupe(document.getElementById("market-source-map"), ".market-source-card", function (card) {
+      return [card.dataset.country, card.querySelector("a") && card.querySelector("a").getAttribute("href")].join("|");
+    });
+    dedupe(document.getElementById("market-signals"), "article", function (card) {
+      return card.textContent.replace(/\s+/g, " ").trim();
+    });
+    document.querySelectorAll("section article").forEach(function (card) {
+      var heading = card.querySelector("strong");
+      if (!heading) return;
+      var text = (heading.textContent + " " + card.textContent).replace(/\s+/g, " ").trim();
+      if (!/market indicators|international market benchmarks/i.test(card.parentElement && card.parentElement.textContent || "")) return;
+      var parent = card.parentElement;
+      if (!parent) return;
+      var prior = Array.prototype.slice.call(parent.querySelectorAll(":scope > article"));
+      var seen = new Set();
+      prior.forEach(function (item) {
+        var k = item.textContent.replace(/\s+/g, " ").trim() + "|" + (item.querySelector("a") && item.querySelector("a").getAttribute("href") || "");
+        if (seen.has(k)) item.remove(); else seen.add(k);
+      });
+    });
+    document.querySelectorAll("section ul").forEach(function (list) {
+      dedupe(list, "li", function (item) { return item.textContent.replace(/\s+/g, " ").trim(); });
+    });
+    document.querySelectorAll("#market-list a, #market-source-map a, section a").forEach(function (link) {
+      var raw = link.getAttribute("href") || "";
+      if (!raw) return;
+      try {
+        var target = new URL(raw, window.location.href);
+        var current = new URL(window.location.href);
+        var targetPath = target.pathname.replace(/\/+$/, "");
+        var currentPath = current.pathname.replace(/\/+$/, "");
+        if (target.origin !== current.origin || targetPath !== currentPath || !/markets/i.test(targetPath)) return;
+        var context = (link.closest("article") && link.closest("article").textContent || "").toLowerCase();
+        if (/tanzania ministry of agriculture/.test(context)) {
+          link.href = "https://www.kilimo.go.tz/publications/market-bulletin";
+          link.setAttribute("data-source-link-repaired", "true");
+          return;
+        }
+        var notice = document.createElement("span");
+        notice.setAttribute("data-i18n", "markets.sourceLinkUnavailable");
+        notice.textContent = "Source link unavailable — use the source registry to locate the original publication.";
+        link.replaceWith(notice);
+      } catch (_) {
+        link.removeAttribute("href");
+      }
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", cleanMarketsOutput);
+  else cleanMarketsOutput();
+}());
+</script>
