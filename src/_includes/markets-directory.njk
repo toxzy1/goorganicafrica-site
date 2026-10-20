@@ -114,7 +114,7 @@
         var current = new URL(window.location.href);
         var targetPath = target.pathname.replace(/\/+$/, "");
         var currentPath = current.pathname.replace(/\/+$/, "");
-        if (target.origin !== current.origin || targetPath !== currentPath || !/markets/i.test(targetPath)) return;
+        var isGoOrganicHost = /(^|\\.)goorganicafrica-site\\.pages\\.dev$/i.test(target.hostname) || target.origin === current.origin;\n        var isMarketsPath = /^\\/(?:en|fr|ar|pt|sw\\/)?markets$/i.test(targetPath) || /^\\/(?:en|fr|ar|pt|sw)\\/markets$/i.test(targetPath);\n        if (!isGoOrganicHost || !isMarketsPath) return;
         var context = (link.closest("article") && link.closest("article").textContent || "").toLowerCase();
         if (/tanzania ministry of agriculture/.test(context)) {
           link.href = "https://www.kilimo.go.tz/publications/market-bulletin";
