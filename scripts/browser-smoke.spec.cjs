@@ -197,7 +197,7 @@ test("country-news language selector reaches French, Arabic and Portuguese pages
   for (const language of ["fr", "ar", "pt"]) {
     await page.goto(baseURL + "/agricultural-news/nigeria/", { waitUntil: "domcontentloaded" });
     await page.locator("#site-language-select").selectOption(language);
-    await expect(page).toHaveURL(new RegExp("\\/" + language + "\\/agricultural-news\\/nigeria\\/"), { timeout: 15000 });
+    await expect(page).toHaveURL(new RegExp("\/" + language + "\/agricultural-news\/nigeria\/"), { timeout: 15000 });
     await expect(page.locator("html")).toHaveAttribute("lang", language);
     await expect(page.locator("h1").first()).toBeVisible();
     if (language === "ar") await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
@@ -309,7 +309,7 @@ test("Markets removes repeated filter options and duplicate cards", async ({ pag
   const cards = await page.locator(".market-card").evaluateAll((nodes) =>
     nodes.map((node) => [
       node.dataset.country, node.dataset.commodity, node.dataset.priceType,
-      node.dataset.freshness, node.textContent.replace(/\\s+/g, " ").trim(),
+      node.dataset.freshness, node.textContent.replace(/\s+/g, " ").trim(),
       node.querySelector("a")?.getAttribute("href") || ""
     ].join("|"))
   );
@@ -323,9 +323,9 @@ test("Markets source links do not point back to the Markets page", async ({ page
       const raw = node.getAttribute("href") || "";
       if (!raw) return false;
       const target = new URL(raw, window.location.href);
-      const isGoOrganicHost = /(^|\\.)goorganicafrica-site\\.pages\\.dev$/i.test(target.hostname) ||
+      const isGoOrganicHost = /(^|\.)goorganicafrica-site\.pages\.dev$/i.test(target.hostname) ||
         target.origin === window.location.origin;
-      return isGoOrganicHost && /^\\/(?:en\\/|fr\\/|ar\\/|pt\\/|sw\\/)?markets\\/?$/i.test(target.pathname);
+      return isGoOrganicHost && /^\/(?:en\/|fr\/|ar\/|pt\/|sw\/)?markets\/?$/i.test(target.pathname);
     }).map((node) => node.href)
   );
   expect(selfLinks, "market source links must lead to original sources, not back to this page").toEqual([]);
