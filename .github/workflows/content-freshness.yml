@@ -27,4 +27,6 @@ jobs:
           if ! gh issue list --state open --search "Content freshness audit in:title" --json number --jq 'length' | grep -q '^0$'; then
             exit 0
           fi
-          gh issue create             --title "Content freshness audit — review required"             --body-file freshness-report.json             --label "needs-review"
+          gh issue create \
+            --title "Content freshness audit — review required" \
+            --body-file freshness-report.json
