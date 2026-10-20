@@ -285,13 +285,18 @@
       nodes.forEach(function (node) {
         if (!node.nodeValue || !node.nodeValue.trim()) return;
         var parent = node.parentElement;
-        if (!parent || parent.closest("script,style,[data-i18n]")) return;
-        var original = marketDateTextOriginals.get(node);
+        if (!parent || parent.closest("script,style")) return;
+        var insideI18n = parent.closest("[data-i18n]");
+        // Translation dictionaries may re-render these nodes on each language
+        // change, so format their current date value rather than caching stale
+        // text from the first language. Cache source text only for other nodes.
+        var original = insideI18n ? node.nodeValue : marketDateTextOriginals.get(node);
         if (!original) {
           if (!/\b\d{4}-\d{2}-\d{2}\b/.test(node.nodeValue)) return;
           original = node.nodeValue;
-          marketDateTextOriginals.set(node, original);
+          if (!insideI18n) marketDateTextOriginals.set(node, original);
         }
+        if (!/\b\d{4}-\d{2}-\d{2}\b/.test(original) && !insideI18n) return;
         var rendered = original.replace(/\b\d{4}-\d{2}-\d{2}\b/g, function (date) { return language === "en" ? date : localizedDate(date, language); });
         var freshnessWords = {
           "Recent": { fr: "Récent", ar: "حديث", pt: "Recente", sw: "Hivi karibuni" },
@@ -300,6 +305,7 @@
           "Source reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
           "Source Reference": { fr: "Référence de source", ar: "مرجع المصدر", pt: "Referência da fonte", sw: "Rejea ya chanzo" },
           "Verified": { fr: "Vérifié", ar: "تم التحقق", pt: "Verificado", sw: "Imethibitishwa" },
+          "compared with": { fr: "comparé à", ar: "مقارنةً بـ", pt: "em comparação com", sw: "ikilinganishwa na" },
           "Tier": { fr: "Niveau", ar: "المستوى", pt: "Nível", sw: "Kiwango" },
           "National": { fr: "National", ar: "وطني", pt: "Nacional", sw: "Kitaifa" },
           "Regional": { fr: "Régional", ar: "إقليمي", pt: "Regional", sw: "Kikanda" },
