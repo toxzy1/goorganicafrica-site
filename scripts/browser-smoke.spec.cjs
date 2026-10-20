@@ -297,3 +297,36 @@ test("homepage intelligence section is translated in French, Arabic, Portuguese 
     await expect(page.locator('[data-i18n="home.freeValue"]')).toHaveText(expected.free);
   }
 });
+
+test("Markets removes repeated filter options and duplicate cards", async ({ page }) => {
+  await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#market-commodity")).toBeVisible({ timeout: 15000 });
+  await page.waitForTimeout(100);
+  for (const selector of ["#market-country option", "#market-commodity option", "#market-price-type option"]) {
+    const values = await page.locator(selector).evaluateAll((nodes) => nodes.map((node) => node.value));
+    expect(new Set(values).size, selector + " should not repeat option values").toBe(values.length);
+  }
+  const cards = await page.locator(".market-card").evaluateAll((nodes) =>
+    nodes.map((node) => [
+      node.dataset.country, node.dataset.commodity, node.dataset.priceType,
+      node.dataset.freshness, node.textContent.replace(/\\s+/g, " ").trim(),
+      node.querySelector("a")?.getAttribute("href") || ""
+    ].join("|"))
+  );
+  expect(new Set(cards).size, "identical market cards should be rendered only once").toBe(cards.length);
+});
+
+test("Markets source links do not point back to the Markets page", async ({ page }) => {
+  await page.goto(baseURL + "/markets/", { waitUntil: "domcontentloaded" });
+  const selfLinks = await page.locator("#market-list a, #market-source-map a, section a").evaluateAll((nodes) =>
+    nodes.filter((node) => {
+      const raw = node.getAttribute("href") || "";
+      if (!raw) return false;
+      const target = new URL(raw, window.location.href);
+      const isGoOrganicHost = /(^|\\.)goorganicafrica-site\\.pages\\.dev$/i.test(target.hostname) ||
+        target.origin === window.location.origin;
+      return isGoOrganicHost && /^\\/(?:en\\/|fr\\/|ar\\/|pt\\/|sw\\/)?markets\\/?$/i.test(target.pathname);
+    }).map((node) => node.href)
+  );
+  expect(selfLinks, "market source links must lead to original sources, not back to this page").toEqual([]);
+});
