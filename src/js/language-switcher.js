@@ -20,7 +20,7 @@
     var calculatorLanguage = path.match(/^\/[a-z]{2}\/(fr|ar|pt|sw)\/farm-profit-calculator$/);
     if (calculatorLanguage) return calculatorLanguage[1];
 
-    if (/^\/(?:farm-profit-calculator|search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|privacy-policy|data-updates)$/.test(path)) {
+    if (/^\/(?:farm-profit-calculator|search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|agriculture-resources|agricultural-news|about|contact|organic-farming|privacy-policy|data-updates)$/.test(path)) {
       try { return localStorage.getItem("goa_language") || document.documentElement.lang || "en"; }
       catch (_) { return document.documentElement.lang || "en"; }
     }
