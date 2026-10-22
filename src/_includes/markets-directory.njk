@@ -20,7 +20,7 @@
 <p id="market-empty" data-i18n="markets.noResults" hidden>No matching market records. Try another filter.</p>
 <div id="market-list">
 {% for r in agriculturalMarkets.records %}
-<article class="market-card" data-country="{{ r.country_code }}" data-commodity="{{ r.commodity }}" data-freshness="{{ r.freshness }}" data-price-type="{{ r.price_type }}" data-search="{{ r.country }} {{ r.market }} {{ r.commodity }} {{ r.source }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+<article class="market-card" data-market-record-key="{{ r.country_code }}|{{ r.commodity | lower }}|{{ r.market | lower }}|{{ r.observed_date }}|{{ r.price or 'source-reference' }}|{{ r.currency }}|{{ r.unit }}|{{ r.source_url }}" data-country="{{ r.country_code }}" data-commodity="{{ r.commodity }}" data-freshness="{{ r.freshness }}" data-price-type="{{ r.price_type }}" data-search="{{ r.country }} {{ r.market }} {{ r.commodity }} {{ r.source }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
 <div style="font-size:.9em">{{ r.country }} · {{ r.market }} · {{ r.commodity }}</div>
 <h2 style="margin:8px 0">{{ r.commodity }}</h2>
 {% if r.price %}<p><strong data-i18n="markets.priceLabel">Price:</strong> {{ r.price }} {{ r.currency }} / {{ r.unit }}</p>{% else %}<p><strong data-i18n="markets.priceLabel">Price:</strong> <span data-i18n="markets.sourceReferencePrice">Source reference — no current quotation is displayed.</span></p>{% endif %}
@@ -76,7 +76,7 @@
       dedupe(select, "option", function (option) { return option.value; });
     });
     dedupe(document.getElementById("market-list"), ".market-card", function (card) {
-      return [
+      return card.dataset.marketRecordKey || [
         card.dataset.country, card.dataset.commodity, card.dataset.priceType,
         card.dataset.freshness, card.querySelector("h2") && card.querySelector("h2").textContent.trim(),
         card.textContent.replace(/\s+/g, " ").trim(),
