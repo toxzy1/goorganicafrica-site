@@ -485,7 +485,7 @@
       var original = option.getAttribute("data-market-price-type-original") || option.textContent.trim();
       if (!option.hasAttribute("data-market-price-type-original")) option.setAttribute("data-market-price-type-original", original);
       var match = Object.keys(priceTypes).find(function (key) { return key.toLowerCase() === original.toLowerCase(); });
-      option.textContent = lang === "en" ? original : (match && priceTypes[match][lang] ? priceTypes[match][lang] : original);
+      option.textContent = lang === "en" ? original : (match && priceTypes[match][lang] ? priceTypes[match][lang] : translateDatasetValue(original));
     });
     var compared = { fr: "comparé au", ar: "مقارنةً بـ", pt: "em comparação com", sw: "ikilinganishwa na" };
     document.querySelectorAll("[data-market-compared-label]").forEach(function (el) {
