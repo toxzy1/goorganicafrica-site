@@ -527,6 +527,149 @@
     });
   }
 
+
+  // Exact translations for dataset labels that are not interface keys.
+  // Original values are retained in data attributes so language switching is reversible.
+  var datasetTranslations = {
+    "National market coverage": { fr: "Couverture nationale du marché", ar: "تغطية السوق الوطنية", pt: "Cobertura nacional do mercado", sw: "Ufunikaji wa soko la kitaifa" },
+    "73 monitored markets": { fr: "73 marchés suivis", ar: "73 سوقاً خاضعة للرصد", pt: "73 mercados monitorizados", sw: "Masoko 73 yanayofuatiliwa" },
+    "National / export-linked commodity reference": { fr: "Référence nationale des produits liée à l’exportation", ar: "مرجع وطني للسلع مرتبط بالتصدير", pt: "Referência nacional de produtos ligada à exportação", sw: "Rejea ya kitaifa ya bidhaa zinazohusiana na mauzo ya nje" },
+    "Kenya weekly market analysis": { fr: "Analyse hebdomadaire du marché kényan", ar: "تحليل السوق الأسبوعي في كينيا", pt: "Análise semanal do mercado do Quénia", sw: "Uchambuzi wa soko la Kenya wa kila wiki" },
+    "Pugu livestock market": { fr: "Marché aux bestiaux de Pugu", ar: "سوق بوغو للماشية", pt: "Mercado pecuário de Pugu", sw: "Soko la mifugo la Pugu" },
+    "NAMIS - Mbarara": { fr: "NAMIS - Mbarara", ar: "NAMIS - مبارارا", pt: "NAMIS - Mbarara", sw: "NAMIS - Mbarara" },
+    "market reference": { fr: "référence de marché", ar: "مرجع السوق", pt: "referência de mercado", sw: "rejea ya soko" },
+    "estimated monthly price": { fr: "prix mensuel estimé", ar: "سعر شهري تقديري", pt: "preço mensal estimado", sw: "bei ya mwezi inayokadiriwa" },
+    "indicative local commodity price": { fr: "prix indicatif local du produit", ar: "سعر إرشادي محلي للسلعة", pt: "preço indicativo local do produto", sw: "bei elekezi ya bidhaa ya eneo" },
+    "historical price series": { fr: "série historique des prix", ar: "سلسلة الأسعار التاريخية", pt: "série histórica de preços", sw: "mfululizo wa bei za kihistoria" },
+    "international market monitor": { fr: "suivi du marché international", ar: "رصد السوق الدولية", pt: "monitorização do mercado internacional", sw: "ufuatiliaji wa soko la kimataifa" },
+    "weekly market average": { fr: "moyenne hebdomadaire du marché", ar: "متوسط السوق الأسبوعي", pt: "média semanal do mercado", sw: "wastani wa soko wa kila wiki" },
+    "weekly livestock market signal": { fr: "indicateur hebdomadaire du marché du bétail", ar: "مؤشر أسبوعي لسوق الماشية", pt: "indicador semanal do mercado pecuário", sw: "kiashiria cha kila wiki cha soko la mifugo" },
+    "wholesale": { fr: "Gros", ar: "الجملة", pt: "Por grosso", sw: "Jumla" },
+    "retail": { fr: "Détail", ar: "التجزئة", pt: "Retalho", sw: "Rejareja" },
+    "Annual food inflation": { fr: "Inflation alimentaire annuelle", ar: "التضخم السنوي للغذاء", pt: "Inflação alimentar anual", sw: "Mfumuko wa bei ya chakula wa mwaka" },
+    "Annual non-food inflation": { fr: "Inflation annuelle hors alimentation", ar: "التضخم السنوي لغير الغذاء", pt: "Inflação anual não alimentar", sw: "Mfumuko wa bei usio wa chakula wa mwaka" },
+    "East Africa": { fr: "Afrique de l’Est", ar: "شرق أفريقيا", pt: "África Oriental", sw: "Afrika Mashariki" },
+    "West Africa": { fr: "Afrique de l’Ouest", ar: "غرب أفريقيا", pt: "África Ocidental", sw: "Afrika Magharibi" },
+    "Southern Africa": { fr: "Afrique australe", ar: "أفريقيا الجنوبية", pt: "África Austral", sw: "Afrika Kusini" },
+    "Domestic": { fr: "National", ar: "محلي", pt: "Nacional", sw: "Ndani ya nchi" },
+    "Regional": { fr: "Régional", ar: "إقليمي", pt: "Regional", sw: "Kikanda" },
+    "Continental": { fr: "Continental", ar: "قاري", pt: "Continental", sw: "Bara" },
+    "International": { fr: "International", ar: "دولي", pt: "Internacional", sw: "Kimataifa" },
+    "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.": {
+      fr: "Système régional d’information agricole couvrant la production, les marchés, les prix et les données des agriculteurs des États membres de la CEDEAO ; à utiliser pour l’analyse régionale et la vérification des sources nationales.",
+      ar: "نظام معلومات زراعية إقليمي يغطي الإنتاج والأسواق والأسعار وبيانات المزارعين في الدول الأعضاء في إيكواس؛ يُستخدم لتحليل الأسواق الإقليمية ومقارنة المصادر الوطنية.",
+      pt: "Sistema regional de informação agrícola que abrange produção, mercados, preços e dados dos agricultores dos Estados-Membros da CEDEAO; utilizar para análise regional e verificação cruzada de fontes nacionais.",
+      sw: "Mfumo wa kikanda wa taarifa za kilimo unaojumuisha uzalishaji, masoko, bei na taarifa za wakulima katika nchi wanachama wa ECOWAS; utumike kwa taarifa za kikanda na kulinganisha vyanzo vya kitaifa."
+    },
+    "Internationally comparable domestic food-price monitoring and market intelligence; country coverage varies by commodity, market and reporting frequency.": {
+      fr: "Suivi comparable à l’échelle internationale des prix alimentaires nationaux et informations sur les marchés ; la couverture varie selon le produit, le marché et la fréquence des rapports.",
+      ar: "رصد قابل للمقارنة دولياً لأسعار الغذاء المحلية ومعلومات السوق؛ تختلف التغطية حسب السلعة والسوق وتواتر التقارير.",
+      pt: "Monitorização comparável internacionalmente dos preços alimentares internos e informação de mercado; a cobertura varia conforme o produto, o mercado e a frequência dos relatórios.",
+      sw: "Ufuatiliaji wa bei za chakula za ndani unaoweza kulinganishwa kimataifa na taarifa za soko; ufunikaji hutegemea bidhaa, soko na mara ya kuripoti."
+    },
+    "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.": {
+      fr: "Système régional d’information agricole comprenant des données des États membres, notamment des indicateurs de marché et de commerce, des statistiques agricoles et des informations sur la sécurité alimentaire.",
+      ar: "نظام معلومات زراعية إقليمي يضم بيانات الدول الأعضاء، بما في ذلك مؤشرات السوق والتجارة والإحصاءات الزراعية ومعلومات الأمن الغذائي.",
+      pt: "Sistema regional de informação agrícola com dados dos Estados-Membros, incluindo indicadores de mercado e comércio, estatísticas agrícolas e informação sobre segurança alimentar.",
+      sw: "Mfumo wa kikanda wa taarifa za kilimo wenye data za nchi wanachama, ikiwemo viashiria vya soko na biashara, takwimu za kilimo na taarifa za usalama wa chakula."
+    },
+    "Domestic food prices, price changes and anomalies; compare markets, commodities and seasons.": {
+      fr: "Prix alimentaires nationaux, variations et anomalies ; comparer les marchés, les produits et les saisons.",
+      ar: "أسعار الغذاء المحلية وتغيراتها وحالاتها غير المعتادة؛ قارن الأسواق والسلع والمواسم.",
+      pt: "Preços alimentares internos, variações e anomalias; compare mercados, produtos e épocas.",
+      sw: "Bei za chakula za ndani, mabadiliko na hali zisizo za kawaida; linganisha masoko, bidhaa na misimu."
+    },
+    "Wheat, maize, rice and soybeans; international market developments and outlook.": {
+      fr: "Blé, maïs, riz et soja ; évolution et perspectives des marchés internationaux.",
+      ar: "القمح والذرة والأرز وفول الصويا؛ تطورات الأسواق الدولية وتوقعاتها.",
+      pt: "Trigo, milho, arroz e soja; evolução e perspetivas dos mercados internacionais.",
+      sw: "Ngano, mahindi, mpunga na soya; maendeleo na mtazamo wa masoko ya kimataifa."
+    },
+    "Never present a source-reference record as a current quotation.": {
+      fr: "Ne présentez jamais une référence de source comme un prix actuel.",
+      ar: "لا تعرض سجل مرجع المصدر على أنه سعر حالي.",
+      pt: "Nunca apresente um registo de referência de fonte como uma cotação atual.",
+      sw: "Usiwasilishe rekodi ya rejea ya chanzo kama bei ya sasa."
+    },
+    "A current quotation requires market, commodity, price, currency, unit and observation date.": {
+      fr: "Un prix actuel nécessite le marché, le produit, le prix, la devise, l’unité et la date d’observation.",
+      ar: "يتطلب السعر الحالي تحديد السوق والسلعة والسعر والعملة والوحدة وتاريخ الرصد.",
+      pt: "Uma cotação atual exige mercado, produto, preço, moeda, unidade e data de observação.",
+      sw: "Bei ya sasa inahitaji soko, bidhaa, bei, sarafu, kipimo na tarehe ya uchunguzi."
+    },
+    "Keep historical and stale observations for trend analysis but label their freshness.": {
+      fr: "Conservez les observations historiques ou anciennes pour analyser les tendances, en indiquant leur ancienneté.",
+      ar: "احتفظ بالملاحظات التاريخية والقديمة لتحليل الاتجاهات مع توضيح حداثة البيانات.",
+      pt: "Mantenha observações históricas e desatualizadas para analisar tendências, identificando a sua atualidade.",
+      sw: "Hifadhi uchunguzi wa zamani kwa uchanganuzi wa mwenendo lakini onyesha muda wake."
+    },
+    "Use regional signals as context, not as a substitute for a market-specific price.": {
+      fr: "Utilisez les signaux régionaux comme contexte, et non comme substitut à un prix propre à un marché.",
+      ar: "استخدم مؤشرات السوق الإقليمية كسياق، وليس بديلاً عن سعر خاص بسوق محدد.",
+      pt: "Utilize os sinais regionais como contexto, não como substituto de um preço específico de mercado.",
+      sw: "Tumia viashiria vya kikanda kama muktadha, si mbadala wa bei ya soko maalumu."
+    }
+  };
+
+  function translateDatasetValue(value) {
+    var source = String(value || "").trim();
+    var lang = (document.documentElement.lang || "en").slice(0, 2);
+    if (!source || lang === "en") return source;
+    var table = datasetTranslations[source];
+    return table && table[lang] ? table[lang] : source;
+  }
+
+  function refreshDatasetTranslations() {
+    var lang = (document.documentElement.lang || "en").slice(0, 2);
+    if (lang === "en") {
+      document.querySelectorAll("[data-market-dataset-original]").forEach(function (el) {
+        el.textContent = el.getAttribute("data-market-dataset-original");
+      });
+      return;
+    }
+    document.querySelectorAll("[data-market-price-type-original]").forEach(function (el) {
+      var original = el.getAttribute("data-market-price-type-original");
+      el.textContent = translateDatasetValue(original);
+    });
+    document.querySelectorAll(".market-card > div").forEach(function (el) {
+      var card = el.closest(".market-card");
+      var original = el.getAttribute("data-market-meta-original") || el.textContent;
+      if (!el.hasAttribute("data-market-meta-original")) el.setAttribute("data-market-meta-original", original);
+      var parts = original.split(" · ");
+      if (parts.length >= 3 && card) {
+        parts[0] = localizedCountry(card.getAttribute("data-country"), parts[0]);
+        parts[1] = translateDatasetValue(parts[1]);
+        parts[2] = translatedCommodity(parts[2]) || parts[2];
+        el.textContent = parts.join(" · ");
+      }
+    });
+    document.querySelectorAll("#market-indicators article > strong").forEach(function (el) {
+      var original = el.getAttribute("data-market-dataset-original") || el.textContent.trim();
+      if (!el.hasAttribute("data-market-dataset-original")) el.setAttribute("data-market-dataset-original", original);
+      var parts = original.split(" · ");
+      var article = el.closest("article");
+      if (parts.length >= 2) {
+        parts[0] = localizedCountry(article && article.getAttribute("data-country"), parts[0]);
+        parts[1] = translateDatasetValue(parts.slice(1).join(" · "));
+        el.textContent = parts.join(" · ");
+      }
+    });
+    document.querySelectorAll("#market-source-map .market-source-card > strong").forEach(function (el) {
+      var card = el.closest(".market-source-card");
+      var original = el.getAttribute("data-market-dataset-original") || el.textContent.trim();
+      if (!el.hasAttribute("data-market-dataset-original")) el.setAttribute("data-market-dataset-original", original);
+      el.textContent = localizedCountry(card && card.getAttribute("data-country"), original);
+    });
+    document.querySelectorAll("#market-regional-roundups > article > strong, #market-regional-roundups > article > p, #market-international-benchmarks article > p, #market-interpretation-rules li, #market-source-map .market-source-card > p, #market-indicators article > p").forEach(function (el) {
+      if (el.querySelector("a, span[data-i18n], strong, b")) return;
+      var original = el.getAttribute("data-market-dataset-original") || el.textContent.trim();
+      if (!el.hasAttribute("data-market-dataset-original")) el.setAttribute("data-market-dataset-original", original);
+      var translated = translateDatasetValue(original);
+      if (translated === original && typeof translatedCopy === "function") translated = translatedCopy(original) || original;
+      el.textContent = translated;
+    });
+  }
+
   function refresh() {
     if (!window.GOA_I18N || !window.GOA_I18N.t) {
       refreshMarketDates();
@@ -571,6 +714,7 @@
     });
     refreshMarketCopy();
     refreshCountryLabels();
+    refreshDatasetTranslations();
     // Run dates last so copy/metadata localization cannot overwrite formatted dates.
     refreshMarketDates();
   }
