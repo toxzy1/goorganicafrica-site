@@ -63,24 +63,35 @@
   function apply(root, code) {
     if (!root) return;
     root.querySelectorAll("[data-i18n]").forEach(function (element) {
+      if (!element.hasAttribute("data-i18n-default")) {
+        element.setAttribute("data-i18n-default", element.textContent || "");
+      }
       var value = resolve(code, element.getAttribute("data-i18n"));
-      if (value !== undefined) element.textContent = interpolate(value, varsFor(element));
+      if (value === undefined || value === null || value === "") value = element.getAttribute("data-i18n-default");
+      element.textContent = interpolate(value, varsFor(element));
     });
     root.querySelectorAll("[data-i18n-placeholder]").forEach(function (element) {
+      if (!element.hasAttribute("data-i18n-placeholder-default")) element.setAttribute("data-i18n-placeholder-default", element.placeholder || "");
       var value = resolve(code, element.getAttribute("data-i18n-placeholder"));
-      if (value !== undefined) element.placeholder = value;
+      element.placeholder = value === undefined || value === null || value === "" ? element.getAttribute("data-i18n-placeholder-default") : value;
     });
     root.querySelectorAll("[data-i18n-title]").forEach(function (element) {
+      if (!element.hasAttribute("data-i18n-title-default")) element.setAttribute("data-i18n-title-default", element.title || "");
       var value = resolve(code, element.getAttribute("data-i18n-title"));
-      if (value !== undefined) element.title = interpolate(value, varsFor(element));
+      if (value === undefined || value === null || value === "") value = element.getAttribute("data-i18n-title-default");
+      element.title = interpolate(value, varsFor(element));
     });
     root.querySelectorAll("[data-i18n-alt]").forEach(function (element) {
+      if (!element.hasAttribute("data-i18n-alt-default")) element.setAttribute("data-i18n-alt-default", element.alt || "");
       var value = resolve(code, element.getAttribute("data-i18n-alt"));
-      if (value !== undefined) element.alt = interpolate(value, varsFor(element));
+      if (value === undefined || value === null || value === "") value = element.getAttribute("data-i18n-alt-default");
+      element.alt = interpolate(value, varsFor(element));
     });
     root.querySelectorAll("[data-i18n-aria-label]").forEach(function (element) {
+      if (!element.hasAttribute("data-i18n-aria-label-default")) element.setAttribute("data-i18n-aria-label-default", element.getAttribute("aria-label") || "");
       var value = resolve(code, element.getAttribute("data-i18n-aria-label"));
-      if (value !== undefined) element.setAttribute("aria-label", value);
+      if (value === undefined || value === null || value === "") value = element.getAttribute("data-i18n-aria-label-default");
+      element.setAttribute("aria-label", value);
     });
   }
 
