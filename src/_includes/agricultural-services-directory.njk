@@ -8,7 +8,7 @@
 </header>
 <div id="services-list">
 {% for r in agriculturalServices.records %}
-<article class="service-card" data-record-key="{{ r.id }}" data-category="{{ r.category }}" data-country="{{ r.country_code }}" data-search="{{ r.title }} {{ r.provider }} {{ r.country }} {{ r.category }} {{ r.type }} {{ (r.services or []) | join(' ') }} {{ (r.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+<article class="service-card" data-record-key="{{ r.id }}" data-original-title="{{ r.title | lower | escape }}" data-record-status="{{ r.status }}" data-record-lifecycle="{{ r.lifecycle }}" data-verified="{{ r.verified }}" data-category="{{ r.category }}" data-country="{{ r.country_code }}" data-search="{{ r.title }} {{ r.provider }} {{ r.country }} {{ r.category }} {{ r.type }} {{ (r.services or []) | join(' ') }} {{ (r.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
 <div style="font-size:.9em"><span data-service-field="country">{{ r.country }}</span> · <span data-service-field="category">{{ r.category }}</span> · <span data-service-field="type">{{ r.type }}</span></div>
 <h2 style="margin:8px 0" data-service-field="title">{{ r.title }}</h2>
 <p data-service-field="summary">{{ r.summary }}</p>
@@ -26,6 +26,8 @@
 
 <script>
 (()=>{const i=document.getElementById('services-search'),c=document.getElementById('services-category'),co=document.getElementById('services-country'),empty=document.getElementById('services-empty'),cards=[...document.querySelectorAll('.service-card')];
+// Collapse exact duplicate titles, retaining the most trustworthy/current record. Distinct titles and URLs remain untouched.
+const duplicateGroups=new Map();cards.forEach(card=>{const key=(card.dataset.originalTitle||'').trim().replace(/\\s+/g,' ');if(!key)return;const list=duplicateGroups.get(key)||[];list.push(card);duplicateGroups.set(key,list);});duplicateGroups.forEach(group=>{if(group.length<2)return;const score=card=>{const status=card.dataset.recordStatus==='official'?4:card.dataset.recordStatus==='published'?3:card.dataset.recordStatus==='review'?1:0;const lifecycle=card.dataset.recordLifecycle==='current'?3:card.dataset.recordLifecycle==='historical'?2:card.dataset.recordLifecycle==='needs_review'?0:1;const date=Number((card.dataset.verified||'').replace(/-/g,''))||0;return status*1000000000000+lifecycle*100000000000+date;};group.sort((a,b)=>score(b)-score(a));group.slice(1).forEach(card=>{card.hidden=true;card.dataset.duplicateHidden='true';});});
 const localized={
 "NG-TRAIN-AGRI360-2026":{
 fr:{country:"Nigeria",category:"formation",type:"formation à la mécanisation",title:"Initiative de formation à la mécanisation AGRI360",summary:"Initiative de trois ans visant à former 5 000 femmes et jeunes aux compétences de conduite et d’entretien des machines, à l’agriculture numérique, à l’entrepreneuriat et à la gestion agroalimentaire.",services:"conduite des équipements, entretien des équipements, agriculture numérique, entrepreneuriat, gestion agroalimentaire",audience:"femmes, jeunes, personnes en formation à la mécanisation"},
