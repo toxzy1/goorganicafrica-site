@@ -8,7 +8,7 @@
 </header>
 <div id="services-list">
 {% for r in agriculturalServices.records %}
-<article class="service-card" data-record-key="{{ r.id }}" data-dedupe-key="{{ r.title | lower }}" data-category="{{ r.category }}" data-country="{{ r.country_code }}" data-search="{{ r.title }} {{ r.provider }} {{ r.country }} {{ r.category }} {{ r.type }} {{ (r.services or []) | join(' ') }} {{ (r.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+<article class="service-card" data-record-key="{{ r.id }}" data-category="{{ r.category }}" data-country="{{ r.country_code }}" data-search="{{ r.title }} {{ r.provider }} {{ r.country }} {{ r.category }} {{ r.type }} {{ (r.services or []) | join(' ') }} {{ (r.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
 <div style="font-size:.9em"><span data-service-field="country">{{ r.country }}</span> · <span data-service-field="category">{{ r.category }}</span> · <span data-service-field="type">{{ r.type }}</span></div>
 <h2 style="margin:8px 0" data-service-field="title">{{ r.title }}</h2>
 <p data-service-field="summary">{{ r.summary }}</p>
@@ -25,7 +25,7 @@
 </section>
 
 <script>
-(()=>{const i=document.getElementById('services-search'),c=document.getElementById('services-category'),co=document.getElementById('services-country'),empty=document.getElementById('services-empty');const allCards=[...document.querySelectorAll('.service-card')],seenTitles=new Set(),cards=allCards.filter(card=>{const key=(card.getAttribute('data-dedupe-key')||'').trim();if(key&&seenTitles.has(key)){card.remove();return false;}if(key)seenTitles.add(key);return true;});
+(()=>{const i=document.getElementById('services-search'),c=document.getElementById('services-category'),co=document.getElementById('services-country'),empty=document.getElementById('services-empty'),cards=[...document.querySelectorAll('.service-card')];
 const localized={
 "NG-TRAIN-AGRI360-2026":{
 fr:{country:"Nigeria",category:"formation",type:"formation à la mécanisation",title:"Initiative de formation à la mécanisation AGRI360",summary:"Initiative de trois ans visant à former 5 000 femmes et jeunes aux compétences de conduite et d’entretien des machines, à l’agriculture numérique, à l’entrepreneuriat et à la gestion agroalimentaire.",services:"conduite des équipements, entretien des équipements, agriculture numérique, entrepreneuriat, gestion agroalimentaire",audience:"femmes, jeunes, personnes en formation à la mécanisation"},
