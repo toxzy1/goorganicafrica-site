@@ -264,6 +264,18 @@
       pt: "Sistema regional de informação agrícola que abrange produção, mercados, preços e dados de agricultores nos Estados-membros da CEDEAO; utilizar para análise regional e verificação cruzada de fontes nacionais.",
       sw: "Mfumo wa kikanda wa taarifa za kilimo unaojumuisha uzalishaji, masoko, bei na taarifa za wakulima katika nchi wanachama wa ECOWAS; utumike kwa taarifa za kikanda na kulinganisha vyanzo vya kitaifa."
     },
+    "SADC Agricultural Information Management System (AIMS)": {
+      fr: "Système d’information agricole de la SADC (AIMS)",
+      ar: "نظام إدارة المعلومات الزراعية التابع لمجموعة تنمية الجنوب الأفريقي (AIMS)",
+      pt: "Sistema de Gestão de Informação Agrícola da SADC (AIMS)",
+      sw: "Mfumo wa Usimamizi wa Taarifa za Kilimo wa SADC (AIMS)"
+    },
+    "SADC Agricultural Information Management System": {
+      fr: "Système d’information agricole de la SADC",
+      ar: "نظام إدارة المعلومات الزراعية التابع لمجموعة تنمية الجنوب الأفريقي",
+      pt: "Sistema de Gestão de Informação Agrícola da SADC",
+      sw: "Mfumo wa Usimamizi wa Taarifa za Kilimo wa SADC"
+    },
     "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.": {
       fr: "Système régional d’information agricole avec des données des États membres, notamment des indicateurs de marché et de commerce, des statistiques agricoles et des informations sur la sécurité alimentaire.",
       ar: "نظام معلومات زراعية إقليمي يضم بيانات الدول الأعضاء، بما فيها مؤشرات السوق والتجارة والإحصاءات الزراعية ومعلومات الأمن الغذائي.",
@@ -658,7 +670,9 @@
       var card = el.closest(".market-source-card");
       var original = el.getAttribute("data-market-dataset-original") || el.textContent.trim();
       if (!el.hasAttribute("data-market-dataset-original")) el.setAttribute("data-market-dataset-original", original);
-      el.textContent = localizedCountry(card && card.getAttribute("data-country"), original);
+      var translated = translateDatasetValue(original);
+      if (translated === original && typeof translatedCopy === "function") translated = translatedCopy(original) || original;
+      el.textContent = translated;
     });
     document.querySelectorAll("#market-regional-roundups > article > strong, #market-regional-roundups > article > p, #market-international-benchmarks article > p, #market-interpretation-rules li, #market-source-map .market-source-card > p, #market-indicators article > p").forEach(function (el) {
       if (el.querySelector("a, span[data-i18n], strong, b")) return;
