@@ -90,7 +90,7 @@
     const actual = normalize(cardValue);
     const selected = normalize(selectedValue);
     return actual === selected || actual.startsWith(selected + " ") ||
-      actual.startsWith(selected + " ") || actual.startsWith(selected + " ");
+      actual.split(" ").indexOf(selected) !== -1;
   }
   function updateTitle() {
     document.title = t("title", {}, "Agricultural Markets") + " | GoOrganicAfrica";
