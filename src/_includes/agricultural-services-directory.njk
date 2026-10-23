@@ -8,13 +8,13 @@
 </header>
 <div id="services-list">
 {% for r in agriculturalServices.records %}
-<article class="service-card" data-category="{{ r.category }}" data-country="{{ r.country_code }}" data-search="{{ r.title }} {{ r.provider }} {{ r.country }} {{ r.category }} {{ r.type }} {{ (r.services or []) | join(' ') }} {{ (r.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
-<div style="font-size:.9em">{{ r.country }} · {{ r.category }} · {{ r.type }}</div>
-<h2 style="margin:8px 0">{{ r.title }}</h2>
-<p>{{ r.summary }}</p>
+<article class="service-card" data-service-id="{{ r.id }}" data-category="{{ r.category }}" data-country="{{ r.country_code }}" data-search="{{ r.title }} {{ r.provider }} {{ r.country }} {{ r.category }} {{ r.type }} {{ (r.services or []) | join(' ') }} {{ (r.tags or []) | join(' ') }}" style="border:1px solid #ddd;border-radius:10px;padding:18px;margin:12px 0">
+<div style="font-size:.9em"><span data-service-field="country">{{ r.country }}</span> · <span data-service-field="category">{{ r.category }}</span> · <span data-service-field="type">{{ r.type }}</span></div>
+<h2 style="margin:8px 0" data-service-field="title">{{ r.title }}</h2>
+<p data-service-field="summary">{{ r.summary }}</p>
 <p><strong data-i18n="services.providerLabel">Provider:</strong> {{ r.provider }}</p>
-<p><strong data-i18n="services.servicesLabel">Services:</strong> {{ (r.services or []) | join(", ") }}</p>
-<p><strong data-i18n="services.audienceLabel">Audience:</strong> {{ (r.audience or []) | join(", ") }}</p>
+<p><strong data-i18n="services.servicesLabel">Services:</strong> <span data-service-field="services">{{ (r.services or []) | join(", ") }}</span></p>
+<p><strong data-i18n="services.audienceLabel">Audience:</strong> <span data-service-field="audience">{{ (r.audience or []) | join(", ") }}</span></p>
 <p><strong data-i18n="services.sourceLabel">Source:</strong> {{ r.source }} · <span data-i18n="services.verifiedLabel">Verified</span> {{ r.verified }}</p>
 {% if r.lifecycle == "historical" %}<p><strong data-i18n="services.statusLabel">Status:</strong> <span data-i18n="services.historicalStatus">Historical</span></p>{% else %}<p><strong data-i18n="services.statusLabel">Status:</strong> <span data-i18n="services.currentStatus">Current</span></p>{% endif %}
 <a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" data-i18n="services.viewOfficialSource">View official source</a>
@@ -23,6 +23,18 @@
 </div>
 <p id="services-empty" data-i18n="services.noResults" hidden>No matching services. Try another search or filter.</p>
 </section>
+
 <script>
-(()=>{const i=document.getElementById('services-search'),c=document.getElementById('services-category'),co=document.getElementById('services-country'),empty=document.getElementById('services-empty'),cards=[...document.querySelectorAll('.service-card')];function updateTitle(){document.title=window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('services','title')+' | GoOrganicAfrica':'Agricultural Suppliers, Machinery, Training & Events | GoOrganicAfrica';}function f(){const q=i.value.toLowerCase().trim();let visible=0;cards.forEach(x=>{const okQ=!q||x.dataset.search.toLowerCase().includes(q),okC=c.value==='all'||x.dataset.category===c.value,okCo=co.value==='all'||x.dataset.country===co.value;x.hidden=!(okQ&&okC&&okCo);if(!x.hidden)visible++;});if(empty)empty.hidden=visible>0;}i.addEventListener('input',f);c.addEventListener('change',f);co.addEventListener('change',f);document.addEventListener('goa:languagechange',()=>{f();updateTitle();});f();updateTitle();})();
+(()=>{const i=document.getElementById('services-search'),c=document.getElementById('services-category'),co=document.getElementById('services-country'),empty=document.getElementById('services-empty'),cards=[...document.querySelectorAll('.service-card')];
+const localized={
+"NG-TRAIN-AGRI360-2026":{
+fr:{country:"Nigeria",category:"formation",type:"formation à la mécanisation",title:"Initiative de formation à la mécanisation AGRI360",summary:"Initiative de trois ans visant à former 5 000 femmes et jeunes aux compétences de conduite et d’entretien des machines, à l’agriculture numérique, à l’entrepreneuriat et à la gestion agroalimentaire.",services:"conduite des équipements, entretien des équipements, agriculture numérique, entrepreneuriat, gestion agroalimentaire",audience:"femmes, jeunes, personnes en formation à la mécanisation"},
+ar:{country:"نيجيريا",category:"التدريب",type:"تدريب على الميكنة الزراعية",title:"مبادرة AGRI360 للتدريب على الميكنة الزراعية",summary:"مبادرة تمتد ثلاث سنوات وتهدف إلى تدريب 5,000 امرأة وشاب على تشغيل الآلات وصيانتها والزراعة الرقمية وريادة الأعمال وإدارة الأعمال الزراعية.",services:"تشغيل المعدات، صيانة المعدات، الزراعة الرقمية، ريادة الأعمال، إدارة الأعمال الزراعية",audience:"النساء، الشباب، المتدربون على الميكنة الزراعية"},
+pt:{country:"Nigéria",category:"formação",type:"formação em mecanização",title:"Iniciativa de Formação em Mecanização AGRI360",summary:"Iniciativa de três anos que pretende capacitar 5.000 mulheres e jovens em operação e manutenção de máquinas, agricultura digital, empreendedorismo e gestão do agronegócio.",services:"operação de equipamentos, manutenção de equipamentos, agricultura digital, empreendedorismo, gestão do agronegócio",audience:"mulheres, jovens, formandos em mecanização"},
+sw:{country:"Nigeria",category:"mafunzo",type:"mafunzo ya mitambo ya kilimo",title:"Mpango wa Mafunzo ya Mitambo ya Kilimo wa AGRI360",summary:"Mpango wa miaka mitatu unaolenga kuwapa wanawake na vijana 5,000 ujuzi wa kuendesha na kutunza mashine, kilimo cha kidijitali, ujasiriamali na usimamizi wa biashara za kilimo.",services:"uendeshaji wa vifaa, matengenezo ya vifaa, kilimo cha kidijitali, ujasiriamali, usimamizi wa biashara za kilimo",audience:"wanawake, vijana, wanafunzi wa mafunzo ya mitambo ya kilimo"}
+}};
+function applyRecordTranslations(){const lang=(window.GOA_I18N&&window.GOA_I18N.lang&&window.GOA_I18N.lang())||document.documentElement.lang||"en";cards.forEach(card=>{const id=card.getAttribute('data-service-id'),translation=localized[id]&&localized[id][lang];if(!translation)return;Object.keys(translation).forEach(key=>{const el=card.querySelector('[data-service-field="'+key+'"]');if(el)el.textContent=translation[key];});});}
+function updateTitle(){document.title=window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('services','title')+' | GoOrganicAfrica':'Agricultural Suppliers, Machinery, Training & Events | GoOrganicAfrica';}
+function f(){const q=i.value.toLowerCase().trim();let visible=0;cards.forEach(x=>{const okQ=!q||x.dataset.search.toLowerCase().includes(q)||x.textContent.toLowerCase().includes(q),okC=c.value==='all'||x.dataset.category===c.value,okCo=co.value==='all'||x.dataset.country===co.value;x.hidden=!(okQ&&okC&&okCo);if(!x.hidden)visible++;});if(empty)empty.hidden=visible>0;}
+i.addEventListener('input',f);c.addEventListener('change',f);co.addEventListener('change',f);document.addEventListener('goa:languagechange',()=>{applyRecordTranslations();f();updateTitle();});applyRecordTranslations();f();updateTitle();})();
 </script>
