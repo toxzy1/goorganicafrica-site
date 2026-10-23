@@ -673,6 +673,7 @@
   function refresh() {
     if (!window.GOA_I18N || !window.GOA_I18N.t) {
       refreshMarketDates();
+      refreshDatasetTranslations();
       return;
     }
 
