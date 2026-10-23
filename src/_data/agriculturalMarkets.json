@@ -57,7 +57,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Use the official market selector and observation period before quoting a price."
+      "note": "Use the official market selector and observation period before quoting a price.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "NG",
@@ -73,7 +74,8 @@
       "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official"
+      "status": "official",
+      "freshness": "source_reference"
     },
     {
       "country_code": "NG",
@@ -89,7 +91,8 @@
       "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official"
+      "status": "official",
+      "freshness": "source_reference"
     },
     {
       "country_code": "NG",
@@ -105,7 +108,8 @@
       "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
       "verified": "2026-10-08",
       "source_tier": 1,
-      "status": "official"
+      "status": "official",
+      "freshness": "source_reference"
     },
     {
       "country_code": "NG",
@@ -122,7 +126,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "NAERLS interface includes livestock and fishery market information."
+      "note": "NAERLS interface includes livestock and fishery market information.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "NG",
@@ -139,7 +144,8 @@
       "verified": "2026-10-08",
       "source_tier": 2,
       "status": "reference",
-      "note": "Dataset covers 73 Nigerian markets and monthly observations through September 2026."
+      "note": "Dataset covers 73 Nigerian markets and monthly observations through September 2026.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "NG",
@@ -156,7 +162,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "August 2026 indicative local commodity prices are published by NEPC; use the source table for commodity, market, unit and exact quotation before displaying a price."
+      "note": "August 2026 indicative local commodity prices are published by NEPC; use the source table for commodity, market, unit and exact quotation before displaying a price.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "NG",
@@ -173,7 +180,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Provides selectable market, agricultural product and price-regime date filters; exact quotations are retrieved from the official interface."
+      "note": "Provides selectable market, agricultural product and price-regime date filters; exact quotations are retrieved from the official interface.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "ALL",
@@ -190,7 +198,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "AMIS monitors wheat, maize, rice and soybeans; use as international context, not as a local farm-gate quotation."
+      "note": "AMIS monitors wheat, maize, rice and soybeans; use as international context, not as a local farm-gate quotation.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "ALL",
@@ -207,7 +216,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "AMIS international benchmark context; local price requires a country, market, unit and observation date."
+      "note": "AMIS international benchmark context; local price requires a country, market, unit and observation date.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "ALL",
@@ -224,7 +234,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "AMIS international benchmark context; FAO also publishes a monthly Rice Price Update."
+      "note": "AMIS international benchmark context; FAO also publishes a monthly Rice Price Update.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "ALL",
@@ -241,7 +252,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "AMIS international benchmark context; local price requires a country, market, unit and observation date."
+      "note": "AMIS international benchmark context; local price requires a country, market, unit and observation date.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "KE",
@@ -258,7 +270,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit."
+      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit.",
+      "freshness": "older"
     },
     {
       "country_code": "KE",
@@ -275,7 +288,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit."
+      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit.",
+      "freshness": "older"
     },
     {
       "country_code": "KE",
@@ -292,7 +306,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit."
+      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit.",
+      "freshness": "older"
     },
     {
       "country_code": "KE",
@@ -309,7 +324,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit."
+      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit.",
+      "freshness": "older"
     },
     {
       "country_code": "KE",
@@ -326,7 +342,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit."
+      "note": "Weekly market analysis published 21 September 2026. Use the source for the stated commodity variety and unit.",
+      "freshness": "older"
     },
     {
       "country_code": "KE",
@@ -343,7 +360,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Official weekly market analysis published 5 October 2026."
+      "note": "Official weekly market analysis published 5 October 2026.",
+      "freshness": "recent"
     },
     {
       "country_code": "KE",
@@ -360,7 +378,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Official weekly market analysis published 5 October 2026."
+      "note": "Official weekly market analysis published 5 October 2026.",
+      "freshness": "recent"
     },
     {
       "country_code": "KE",
@@ -377,7 +396,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Official weekly market analysis published 5 October 2026."
+      "note": "Official weekly market analysis published 5 October 2026.",
+      "freshness": "recent"
     },
     {
       "country_code": "KE",
@@ -394,7 +414,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Official weekly market analysis published 5 October 2026."
+      "note": "Official weekly market analysis published 5 October 2026.",
+      "freshness": "recent"
     },
     {
       "country_code": "KE",
@@ -411,7 +432,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Official weekly market analysis published 5 October 2026."
+      "note": "Official weekly market analysis published 5 October 2026.",
+      "freshness": "recent"
     },
     {
       "country_code": "KE",
@@ -428,7 +450,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Official weekly market analysis published 5 October 2026."
+      "note": "Official weekly market analysis published 5 October 2026.",
+      "freshness": "recent"
     },
     {
       "country_code": "TZ",
@@ -445,7 +468,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Official report says average livestock prices fell in the week ending 30 September 2026, attributed largely to increased livestock supply and lower demand."
+      "note": "Official report says average livestock prices fell in the week ending 30 September 2026, attributed largely to increased livestock supply and lower demand.",
+      "freshness": "source_reference"
     },
     {
       "country_code": "UG",
@@ -462,7 +486,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date."
+      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date.",
+      "freshness": "recent"
     },
     {
       "country_code": "UG",
@@ -479,7 +504,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date."
+      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date.",
+      "freshness": "recent"
     },
     {
       "country_code": "UG",
@@ -496,7 +522,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date."
+      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date.",
+      "freshness": "recent"
     },
     {
       "country_code": "UG",
@@ -513,7 +540,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date."
+      "note": "Current NAMIS displayed market price; observation date recorded as retrieval date.",
+      "freshness": "recent"
     },
     {
       "country_code": "UG",
@@ -530,7 +558,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Current NAMIS displayed market price; retrieval date recorded as observation date."
+      "note": "Current NAMIS displayed market price; retrieval date recorded as observation date.",
+      "freshness": "recent"
     },
     {
       "country_code": "UG",
@@ -547,7 +576,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Current NAMIS displayed retail market price; observation date recorded as retrieval date."
+      "note": "Current NAMIS displayed retail market price; observation date recorded as retrieval date.",
+      "freshness": "recent"
     },
     {
       "country_code": "UG",
@@ -564,7 +594,8 @@
       "verified": "2026-10-08",
       "source_tier": 1,
       "status": "official",
-      "note": "Current NAMIS displayed retail market price; observation date recorded as retrieval date."
+      "note": "Current NAMIS displayed retail market price; observation date recorded as retrieval date.",
+      "freshness": "recent"
     }
   ],
   "sources": [
@@ -673,244 +704,6 @@
       "source": "FAO FPMA",
       "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
       "verified": "2026-10-08"
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Maize",
-      "price": 600,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-10-02",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Rice",
-      "price": 2100,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-10-02",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Beans",
-      "price": 2300,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-10-02",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Sorghum",
-      "price": 1500,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-10-02",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Bulrush millet",
-      "price": 2000,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-10-02",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Finger millet",
-      "price": 1600,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-10-02",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Round potato",
-      "price": 900,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-10-02",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Maize",
-      "price": 600,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-09-25",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Rice",
-      "price": 2200,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-09-25",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Beans",
-      "price": 2200,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-09-25",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Sorghum",
-      "price": 1400,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-09-25",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Bulrush millet",
-      "price": 1600,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-09-25",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Finger millet",
-      "price": 1800,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-09-25",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
-    },
-    {
-      "country_code": "TZ",
-      "country": "Tanzania",
-      "market": "National average",
-      "commodity": "Round potato",
-      "price": 1000,
-      "currency": "TZS",
-      "unit": "kg",
-      "price_type": "wholesale",
-      "observed_date": "2026-09-25",
-      "source": "Tanzania Ministry of Agriculture — Weekly Market Bulletin",
-      "source_url": "https://www.kilimo.go.tz/publications/market-bulletin",
-      "verified": "2026-10-08",
-      "source_tier": 1,
-      "status": "official",
-      "note": "National weekly average wholesale price. The 28 Sep–02 Oct 2026 bulletin is the current observation; the prior week is retained to calculate movement."
     }
   ],
   "country_source_map": [
