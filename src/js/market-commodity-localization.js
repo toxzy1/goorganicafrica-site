@@ -634,8 +634,38 @@
   function refreshDatasetTranslations() {
     var lang = (document.documentElement.lang || "en").slice(0, 2);
     if (lang === "en") {
+      // Restore English even if the first localization pass captured an already
+      // translated string (for example when a saved Arabic preference is applied
+      // before this script initializes).
+      function englishOriginal(value) {
+        var text = String(value || "").trim();
+        var keys = Object.keys(datasetTranslations);
+        for (var i = 0; i < keys.length; i++) {
+          var translations = datasetTranslations[keys[i]] || {};
+          if (Object.keys(translations).some(function (code) { return translations[code] === text; })) {
+            return keys[i];
+          }
+        }
+        var copyKeys = Object.keys(copyTranslations);
+        for (var j = 0; j < copyKeys.length; j++) {
+          var copy = copyTranslations[copyKeys[j]] || {};
+          if (Object.keys(copy).some(function (code) { return copy[code] === text; })) return copyKeys[j];
+        }
+        return text;
+      }
       document.querySelectorAll("[data-market-dataset-original]").forEach(function (el) {
-        el.textContent = el.getAttribute("data-market-dataset-original");
+        el.textContent = englishOriginal(el.getAttribute("data-market-dataset-original") || el.textContent);
+      });
+      document.querySelectorAll("#market-regional-roundups > article > strong, #market-regional-roundups > article > p, #market-international-benchmarks article > p, #market-interpretation-rules li, #market-source-map .market-source-card > p, #market-indicators article > p, #market-source-map .market-source-card > strong, #market-indicators article > strong").forEach(function (el) {
+        var original = el.getAttribute("data-market-dataset-original");
+        if (!original) {
+          original = englishOriginal(el.textContent);
+          el.setAttribute("data-market-dataset-original", original);
+        }
+        el.textContent = englishOriginal(original);
+      });
+      document.querySelectorAll("#market-commodity option[data-market-price-type-original]").forEach(function (el) {
+        el.textContent = el.getAttribute("data-market-price-type-original");
       });
       return;
     }
