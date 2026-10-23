@@ -52,7 +52,89 @@
 <section style="margin-top:28px"><h2 data-i18n="markets.internationalBenchmarksTitle">International market benchmarks</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">{% for r in agriculturalMarkets.market_intelligence.international %}<article style="border:1px solid #ddd;border-radius:10px;padding:16px"><strong>{{ r.provider }}</strong><p>{{ r.coverage }}</p><small><span data-market-scope-value="{{ r.scope | title }}">{{ r.scope | title }}</span> · <span data-market-word="tier">Tier</span> {{ r.source_tier }} · <span data-market-word="verified">Verified</span> <span data-market-date="{{ r.verified }}">{{ r.verified }}</span></small><p><a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" data-i18n="markets.openOfficialSource">Open official source</a></p></article>{% endfor %}</div><h3 data-i18n="markets.howInterpretedTitle">How market data is interpreted</h3><ul>{% for rule in agriculturalMarkets.market_intelligence.interpretation_rules %}<li>{{ rule }}</li>{% endfor %}</ul></section></section>
 <script src="/js/market-commodity-localization.js?v=20261019-market-date-labels-v2"></script>
 <script>
-(()=>{const q=document.getElementById('market-search'),c=document.getElementById('market-country'),m=document.getElementById('market-commodity'),fsh=document.getElementById('market-freshness'),pt=document.getElementById('market-price-type'),summary=document.getElementById('market-summary'),empty=document.getElementById('market-empty'),cards=[...document.querySelectorAll('.market-card')],sources=[...document.querySelectorAll('.market-source-card')];function t(key,vars,fallback){return window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('markets',key,vars):fallback;}function updateTitle(){document.title=t('title',{},'Agricultural Markets')+' | GoOrganicAfrica';}function f(){const s=q.value.toLowerCase().trim(),cc=c.value,cm=m.value,fr=fsh.value,typ=pt.value;let shown=0;cards.forEach(x=>{const ok=(cc==='all'||x.dataset.country===cc)&&(cm==='all'||x.dataset.commodity===cm)&&(fr==='all'||x.dataset.freshness===fr)&&(typ==='all'||x.dataset.priceType===typ)&&(!s||x.dataset.search.toLowerCase().includes(s));x.hidden=!ok;if(ok)shown++;});sources.forEach(x=>{x.hidden=!((cc==='all'||x.dataset.country===cc)&&(!s||x.dataset.search.toLowerCase().includes(s)));});const sourceCount=sources.filter(x=>!x.hidden).length;summary.textContent=t('matchingSummary',{shown:shown,sources:sourceCount},shown+' matching market records · '+sourceCount+' matching country source entries');if(empty)empty.hidden=shown>0;}q.addEventListener('input',f);c.addEventListener('change',f);m.addEventListener('change',f);fsh.addEventListener('change',f);pt.addEventListener('change',f);document.addEventListener('goa:languagechange',()=>{f();updateTitle();});f();updateTitle();})();
+(()=> {
+  "use strict";
+  const q = document.getElementById("market-search");
+  const c = document.getElementById("market-country");
+  const m = document.getElementById("market-commodity");
+  const fsh = document.getElementById("market-freshness");
+  const pt = document.getElementById("market-price-type");
+  const summary = document.getElementById("market-summary");
+  const empty = document.getElementById("market-empty");
+  const cards = Array.from(document.querySelectorAll(".market-card"));
+  const sources = Array.from(document.querySelectorAll(".market-source-card"));
+  if (!q || !c || !m || !fsh || !pt || !summary) return;
+
+  function t(key, vars, fallback) {
+    return window.GOA_I18N && window.GOA_I18N.t
+      ? window.GOA_I18N.t("markets", key, vars)
+      : fallback;
+  }
+  function normalize(value) {
+    return String(value || "").normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  }
+  function searchableText(node) {
+    return normalize([
+      node.dataset.search,
+      node.dataset.country,
+      node.dataset.commodity,
+      node.dataset.priceType,
+      node.dataset.freshness,
+      node.textContent
+    ].filter(Boolean).join(" "));
+  }
+  function commodityMatches(cardValue, selectedValue) {
+    if (selectedValue === "all") return true;
+    const actual = normalize(cardValue);
+    const selected = normalize(selectedValue);
+    return actual === selected || actual.startsWith(selected + " ") ||
+      actual.split(" ").indexOf(selected) !== -1;
+  }
+  function updateTitle() {
+    document.title = t("title", {}, "Agricultural Markets") + " | GoOrganicAfrica";
+  }
+  function filter() {
+    const query = normalize(q.value);
+    const country = c.value;
+    const commodity = m.value;
+    const freshness = fsh.value;
+    const priceType = pt.value;
+    let shown = 0;
+    cards.forEach(card => {
+      const matches = (!country || country === "all" || card.dataset.country === country) &&
+        commodityMatches(card.dataset.commodity, commodity) &&
+        (freshness === "all" || card.dataset.freshness === freshness) &&
+        (priceType === "all" || card.dataset.priceType === priceType) &&
+        (!query || searchableText(card).includes(query));
+      card.hidden = !matches;
+      if (matches) shown++;
+    });
+    let sourceCount = 0;
+    sources.forEach(card => {
+      const matches = (!country || country === "all" || card.dataset.country === country) &&
+        (!query || searchableText(card).includes(query));
+      card.hidden = !matches;
+      if (matches) sourceCount++;
+    });
+    summary.textContent = t(
+      "matchingSummary",
+      { shown: shown, sources: sourceCount },
+      shown + " matching market records · " + sourceCount + " matching country source entries"
+    );
+    if (empty) empty.hidden = shown > 0;
+  }
+  q.addEventListener("input", filter);
+  q.addEventListener("search", filter);
+  [c, m, fsh, pt].forEach(select => select.addEventListener("change", filter));
+  document.addEventListener("goa:languagechange", () => {
+    filter();
+    updateTitle();
+  });
+  filter();
+  updateTitle();
+})();
 </script>
 
 <script>
