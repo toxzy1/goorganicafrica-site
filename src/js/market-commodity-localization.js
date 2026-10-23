@@ -302,6 +302,40 @@
     return entry && entry[language] ? entry[language] : null;
   }
 
+  function localizedCountry(code, fallback) {
+    var lang = (document.documentElement.lang || "en").slice(0, 2);
+    if (lang === "en" || !code) return fallback || code;
+    try {
+      if (typeof Intl !== "undefined" && Intl.DisplayNames) {
+        var names = new Intl.DisplayNames([lang], { type: "region" });
+        var value = names.of(String(code).toUpperCase());
+        if (value && value !== String(code).toUpperCase()) return value;
+      }
+    } catch (_) {}
+    return fallback || code;
+  }
+
+  function refreshCountryLabels() {
+    var lang = (document.documentElement.lang || "en").slice(0, 2);
+    document.querySelectorAll("#market-country option").forEach(function (option) {
+      if (option.value === "all") return;
+      if (!option.hasAttribute("data-market-country-original")) {
+        option.setAttribute("data-market-country-original", option.textContent.trim());
+      }
+      option.textContent = localizedCountry(option.value, option.getAttribute("data-market-country-original"));
+    });
+    document.querySelectorAll("#market-list .market-card > div").forEach(function (line) {
+      var original = line.getAttribute("data-market-meta-original") || "";
+      if (!original) return;
+      var parts = original.split(" · ");
+      var card = line.closest(".market-card");
+      if (parts.length >= 3 && card) {
+        parts[0] = localizedCountry(card.getAttribute("data-country"), parts[0]);
+        line.textContent = parts.join(" · ");
+      }
+    });
+  }
+
   function refreshMarketCopy() {
     var lang = (document.documentElement.lang || "en").slice(0, 2);
     if (lang === "en") {
@@ -536,6 +570,7 @@
       label.textContent = parts.join(" · ");
     });
     refreshMarketCopy();
+    refreshCountryLabels();
     // Run dates last so copy/metadata localization cannot overwrite formatted dates.
     refreshMarketDates();
   }
