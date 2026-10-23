@@ -21,7 +21,7 @@
       <p><strong data-i18n="opportunities.sourceLabel">Source:</strong> <span class="opportunity-source" data-source-original="{{ record.source | escape }}">{{ record.source }}</span> · <span data-i18n="opportunities.verifiedLabel">Verified</span> {{ record.verified }}</p>
       {% set statusKey = "opportunities.openStatus" %}
       {% if record.status == "expired" or record.status == "closed" or record.status == "archived" or record.lifecycle == "expired" %}{% set statusKey = "opportunities.expiredArchivedStatus" %}{% elif record.status == "active" %}{% set statusKey = "opportunities.activeStatus" %}{% endif %}
-      <p><strong data-i18n="opportunities.statusLabel">Status:</strong> <span class="opportunity-status-text" data-i18n="{{ statusKey }}"></span></p>
+      <p><strong data-i18n="opportunities.statusLabel">Status:</strong> <span class="opportunity-status-text" data-i18n="{{ statusKey }}">{% if statusKey == "opportunities.activeStatus" %}Ongoing programme (not necessarily an open application){% elif statusKey == "opportunities.expiredArchivedStatus" %}Expired / archived{% else %}Open{% endif %}</span></p>
       <a href="{{ record.url }}" target="_blank" rel="noopener noreferrer" data-i18n="opportunities.viewOfficialSource">View official source</a>
     </article>
     {% endif %}
