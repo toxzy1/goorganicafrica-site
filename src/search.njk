@@ -139,13 +139,18 @@ html[dir="rtl"] .goa-search{text-align:start;}
     "Nigeria AgriConnect Compact — national agricultural transformation framework":{title:"اتفاق نيجيريا AgriConnect — إطار التحول الزراعي الوطني",summary:"أطلق الصندوق الدولي للتنمية الزراعية والبنك الدولي ووزارة الزراعة والأمن الغذائي في نيجيريا إطاراً وطنياً لتعزيز منظمات المزارعين والوصول إلى الأسواق والتمويل الميسر."},
     "Nigeria AGROW — Sustainable Agricultural Value-Chains for Growth":{title:"برنامج AGROW في نيجيريا — سلاسل قيمة زراعية مستدامة للنمو",summary:"يركز البرنامج المدعوم من البنك الدولي على زيادة إنتاجية صغار المزارعين وتطوير سلاسل القيمة والاستثمار في الأعمال الزراعية ومنح المطابقة القائمة على النتائج للمؤهلين."},
     "FAO Hand-in-Hand Nigeria 2026 — agrifood investment portfolio":{title:"منظمة الأغذية والزراعة — محفظة الاستثمار الزراعي والغذائي لنيجيريا لعام 2026",summary:"يحدد ملف الاستثمار النيجيري لعام 2026 محفظة استثمارية بقيمة 3.2 مليار دولار، تشمل مصايد الأسماك وتربية الأحياء المائية وفرص تسمين الأبقار، إلى جانب معلومات عن التمويل والأعمال الزراعية."},
+    "FAO Hand-in-Hand 2026 investment profile — Nigeria":{title:"منظمة الأغذية والزراعة — ملف الاستثمار لعام 2026 في نيجيريا",summary:"يعرض ملف الاستثمار النيجيري لعام 2026 فرص الاستثمار في الأغذية والزراعة، بما في ذلك سلاسل القيمة ذات الأولوية ومعلومات التمويل والتنمية الزراعية."},
     "IITA Nigeria — agricultural research and innovation":{title:"المعهد الدولي للزراعة الاستوائية في نيجيريا — البحوث والابتكار الزراعي",summary:"معلومات موثوقة عن الزراعة في نيجيريا من المعهد الدولي للزراعة الاستوائية، وتشمل المحاصيل ونظم البذور والزراعة الرقمية والزراعة الذكية مناخياً والمشروعات والابتكارات الموجهة للمزارعين."},
     "Federal Ministry of Agriculture and Food Security":{title:"وزارة الزراعة والأمن الغذائي الاتحادية",summary:"البوابة الرسمية لوزارة الزراعة النيجيرية، وتشمل البرامج والسياسات ومبادرات دعم المزارعين والمنشورات والإعلانات المتعلقة بالقطاع الزراعي."},
     "Nigeria — NAIC agricultural crop and livestock insurance guidance":{title:"نيجيريا — إرشادات التأمين الزراعي للمحاصيل والماشية من NAIC",summary:"تقدم المؤسسة النيجيرية للتأمين الزراعي إرشادات بشأن التأمين على المحاصيل والماشية وأصول المزرعة، بما في ذلك الإجراءات المعتادة للحصول على التغطية."}
   }};
   function localizePriority(x,language){
-    const translated=priorityTranslations[language]&&priorityTranslations[language][x.title];
-    return translated?{...x,...translated}:x;
+    const dictionary=priorityTranslations[language];
+    if(!dictionary)return x;
+    const normalizeTitle=value=>String(value||'').toLowerCase().replace(/[—–]/g,'-').replace(/[^\\w\\u00C0-\\u024F\\u0600-\\u06FF]+/g,' ').replace(/\\s+/g,' ').trim();
+    const exact=dictionary[x.title]||Object.entries(dictionary).find(([key])=>normalizeTitle(key)===normalizeTitle(x.title))?.[1];
+    if(exact)return {...x,...exact};
+    return x;
   }
   function localizeMarket(x,language){
     const dictionary=marketWords[language];
