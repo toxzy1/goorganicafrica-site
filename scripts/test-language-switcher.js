@@ -18,6 +18,7 @@ async function scenario(pathname, initialLanguage, targets) {
     addEventListener(name, fn) { listeners[name] = fn; },
     appendChild(option) { this.options.push(option); }
   };
+  const selectorElement = selector;
   const targetMap = targets ? {
     getAttribute(name) {
       const match = name.match(/^data-url-(en|fr|ar|pt|sw)$/);
@@ -37,7 +38,10 @@ async function scenario(pathname, initialLanguage, targets) {
     },
     createElement() { return { value: "", textContent: "" }; },
     querySelector() { return null; },
-    querySelectorAll() { return []; },
+    querySelectorAll(selector) {
+      if (selector === "#site-language-select") return [selectorElement];
+      return [];
+    },
     dispatchEvent() {}
   };
   const location = {
