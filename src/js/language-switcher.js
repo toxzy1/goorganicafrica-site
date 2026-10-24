@@ -5,6 +5,9 @@
     ? window.GOA_LANGUAGES.filter(function (item) { return item && item.code && item.enabled !== false; })
     : [];
   var dictionary = window.GOA_TRANSLATIONS || {};
+  Object.keys(dictionary).forEach(function (code) {
+    if (dictionary[code] && dictionary[code].translations) dictionary[code] = dictionary[code].translations;
+  });
   var languageLoads = {};
   // Prevent a slower, earlier language request from overwriting a newer choice.
   var refreshSequence = 0;
@@ -180,13 +183,13 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261005", { cache: "default" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261024b", { cache: "no-cache" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
       })
       .then(function (translations) {
-        dictionary[code] = translations || {};
+        dictionary[code] = translations && translations.translations ? translations.translations : (translations || {});
         return dictionary[code];
       })
       .catch(function () {
@@ -214,8 +217,7 @@
       }
 
       updateLocalizedNavigation(code);
-      var selector = document.getElementById("site-language-select");
-      if (selector) selector.value = code;
+      document.querySelectorAll("#site-language-select").forEach(function (selector) { selector.value = code; });
       document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } }));
       return code;
     });
@@ -233,16 +235,17 @@
   };
 
   document.addEventListener("DOMContentLoaded", function () {
-    var selector = document.getElementById("site-language-select");
-    if (selector) {
-      selector.innerHTML = "";
-      languages.forEach(function (item) {
-        var option = document.createElement("option");
-        option.value = item.code;
-        option.textContent = item.native;
-        selector.appendChild(option);
-      });
-      selector.addEventListener("change", function () {
+    var selectors = document.querySelectorAll("#site-language-select");
+    if (selectors.length) {
+      selectors.forEach(function (selector) {
+        selector.innerHTML = "";
+        languages.forEach(function (item) {
+          var option = document.createElement("option");
+          option.value = item.code;
+          option.textContent = item.native;
+          selector.appendChild(option);
+        });
+        selector.addEventListener("change", function () {
         var requested = this.value;
         var section = selector.getAttribute("data-goa-selector-section");
         // Always prefer the page's exact localized destination. This handles
@@ -266,6 +269,7 @@
         // language for the in-place UI refresh instead of re-deriving English
         // from the unchanged URL and undoing the visitor's selection.
         refresh(requested);
+        });
       });
     }
     refresh().then(function () { readyResolve(window.GOA_I18N); });
