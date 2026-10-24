@@ -92,7 +92,7 @@ permalink: /my-agriculture/
 
   function tr(key,vars){return window.GOA_I18N?window.GOA_I18N.t("myAgriculture",key,vars):key;}
   function refreshTopicLabels(){topicsEl.querySelectorAll("input").forEach(function(input){var label=input.parentElement;var value=tr("topic_"+input.value);if(label.lastChild)label.lastChild.textContent=" "+value;});}
-  document.addEventListener("goa:languagechange",function(){refreshTopicLabels();render();});\n  function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+  document.addEventListener("goa:languagechange",function(event){localizeSelectOptions((event.detail&&event.detail.language)||window.GOA_I18N.lang());refreshTopicLabels();render();});\n  function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
   function load(){
     try{
       const p=JSON.parse(localStorage.getItem(STORAGE)||"{}");
