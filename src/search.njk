@@ -126,7 +126,7 @@ html[dir="rtl"] .goa-search{text-align:start;}
   function getSearchLanguage(){
     // The URL is authoritative on localized pages; the global i18n helper can
     // briefly report its default language while page scripts initialize.
-    const pathMatch=location.pathname.match(/^\\/(fr|ar|pt|sw)(?:\\/|$)/i);
+    const pathMatch=location.pathname.match(/^\/(fr|ar|pt|sw)(?:\/|$)/i);
     if(pathMatch)return pathMatch[1].toLowerCase();
     const helperLanguage=window.GOA_I18N&&typeof window.GOA_I18N.lang==='function'?window.GOA_I18N.lang():'';
     const declaredLanguage=document.documentElement.lang||'';
