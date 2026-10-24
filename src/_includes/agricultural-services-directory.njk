@@ -1,5 +1,16 @@
-<section class="container agricultural-services-page" style="width:100%;max-width:1100px;min-width:0;box-sizing:border-box;margin:0 auto;padding:24px 16px;">
-<header style="margin-bottom:24px">
+<section class="container agricultural-services-page" style="display:block;width:100%;max-width:1100px;min-width:0;box-sizing:border-box;margin:0 auto;padding:24px 16px;overflow-wrap:anywhere;">
+<style>
+.agricultural-services-page,.agricultural-services-page *{box-sizing:border-box;min-width:0}
+.agricultural-services-page header{display:block;width:100%;max-width:100%}
+.agricultural-services-page #services-search{display:block;width:100%;max-width:100%;font:inherit;border:1px solid #888;border-radius:6px}
+.agricultural-services-page #services-category,.agricultural-services-page #services-country{display:inline-block;vertical-align:top;max-width:100%;width:calc(50% - 6px);min-height:44px;margin:0 0 8px;padding:10px;font:inherit;white-space:normal;border:1px solid #888;border-radius:6px;background:Canvas;color:CanvasText}
+.agricultural-services-page #services-country{margin-inline-start:8px;width:calc(50% - 6px)}
+.agricultural-services-page .service-card{width:100%;max-width:100%;overflow-wrap:anywhere;word-break:normal}
+.agricultural-services-page .service-card a{overflow-wrap:anywhere}
+.agricultural-services-page [dir="rtl"],html[dir="rtl"] .agricultural-services-page{text-align:right}
+@media(max-width:520px){.agricultural-services-page{padding:16px 12px!important}.agricultural-services-page #services-category,.agricultural-services-page #services-country{display:block;width:100%;margin:0 0 10px}.agricultural-services-page .service-card{padding:14px!important}}
+</style>
+<header style="display:block;width:100%;margin-bottom:24px">
 <h1 data-i18n="services.title">Agricultural Suppliers, Machinery, Training & Events</h1>
 <p data-i18n="services.intro">Verified agricultural services and programmes. Listings are sourced from official or institutional sources and are not endorsements.</p>
 <input id="services-search" type="search" placeholder="Search suppliers, machinery, training or events..." aria-label="Search agricultural services" data-i18n-placeholder="services.searchPlaceholder" data-i18n-aria-label="services.searchAria" style="width:100%;padding:12px;margin:12px 0">
