@@ -13,7 +13,7 @@ permalink: /agricultural-intelligence/
   <div style="margin:1.25rem 0;">
     <label for="ai-search"><strong data-i18n="agriculturalIntelligence.searchLabel">Search connected intelligence</strong></label>
     <input id="ai-search" type="search" placeholder="Try Nigeria, maize, finance, irrigation, machinery..." aria-label="Search connected agricultural intelligence" data-i18n-placeholder="agriculturalIntelligence.searchPlaceholder" data-i18n-aria-label="agriculturalIntelligence.searchAria" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;margin-top:6px;">
-    <p style="margin:.5rem 0 0;"><span data-i18n="agriculturalIntelligence.searchHint">Search by country or topic, then open the matching section. For a full record-by-record search, use</span> <a href="/search/" data-i18n="agriculturalIntelligence.searchLink">Global Agricultural Search</a>.</p>
+    <p style="margin:.5rem 0 0;"><span data-i18n="agriculturalIntelligence.searchHint">Search by country or topic, then open the matching section. For a full record-by-record search, use</span>.</p>
   </div>
   <div id="ai-results"></div>
   <div style="margin-top:2rem;">
@@ -41,12 +41,12 @@ permalink: /agricultural-intelligence/
       return words.every(w=>hay.includes(w));
     }).slice(0,54);
     out.innerHTML=rows.length ? rows.map(x=>{
-      const links=Object.entries(x.sections).map(([k,n])=>'<a href="/search/?q='+encodeURIComponent(x.country)+'" style="text-decoration:none;">'+esc(sectionLabel(k))+' ('+n+')</a>').join(' · ');
+      const links=Object.entries(x.sections).map(([k,n])=>esc(sectionLabel(k))+' ('+n+')').join(' · ');
       return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+esc(x.country)+'</h2><p><strong>'+x.total+'</strong> '+esc(t('recordCount',{count:x.total},x.total+' connected intelligence records'))+'</p><p>'+links+'</p></article>';
     }).join('') : '<p>'+esc(t('noResults',{},'No connected intelligence found. Try a country name or broader topic.'))+'</p>';
   }
   function renderTopics(){
-    topicOut.innerHTML=topics.map(item=>'<a class="card" href="/search/?q='+encodeURIComponent(item.key)+'" style="text-decoration:none;padding:14px;"><strong>'+esc(topicLabel(item.key,item.label))+'</strong><br><span style="font-size:.85rem;">'+esc(t('topicCount',{count:item.total},item.total+' connected records'))+'</span><br><span style="font-size:.8rem;">'+Object.entries(item.sections).map(([k,n])=>esc(sectionLabel(k))+' '+n).join(' · ')+'</span></a>').join('');
+    topicOut.innerHTML=topics.map(item=>'<div class="card" style="padding:14px;"><strong>'+esc(topicLabel(item.key,item.label))+'</strong><br><span style="font-size:.85rem;">'+esc(t('topicCount',{count:item.total},item.total+' connected records'))+'</span><br><span style="font-size:.8rem;">'+Object.entries(item.sections).map(([k,n])=>esc(sectionLabel(k))+' '+n).join(' · ')+'</span></div>').join('');
   }
   function updateTitle(){document.title=t('title',{},'Agricultural Intelligence Hub')+' | GoOrganicAfrica';}
   input.addEventListener('input',render);
