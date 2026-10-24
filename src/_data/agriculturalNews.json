@@ -161,7 +161,25 @@
           "summary": "FAO says 20 African countries will present agrifood investment opportunities at the 2026 forum. The article outlines participating countries, value-chain priorities and related regional initiatives; it is a regional update, not a country-specific grant notice.",
           "coverage_scope": "regional",
           "lifecycle": "needs_review",
-          "review_reason": "Regional investment-forum announcement is not a country-specific news article; keep it out of country news and review for migration to Opportunities or a regional page."
+          "review_reason": "Regional investment-forum announcement is not a country-specific news article; keep it out of country news and review for migration to Opportunities or a regional page.",
+          "translations": {
+            "fr": {
+              "title": "Vingt pays africains présenteront des possibilités d’investissement agroalimentaire au Forum Hand-in-Hand 2026",
+              "summary": "La FAO indique que 20 pays africains présenteront des possibilités d’investissement agroalimentaire lors du forum de 2026. Il s’agit d’une actualité régionale, et non d’une annonce de subvention propre à un pays."
+            },
+            "ar": {
+              "title": "عشرون دولة أفريقية ستعرض فرص الاستثمار في الأغذية الزراعية في منتدى هاند إن هاند 2026",
+              "summary": "تقول منظمة الأغذية والزراعة إن 20 دولة أفريقية ستعرض فرص الاستثمار في الأغذية الزراعية خلال منتدى 2026. هذا تحديث إقليمي وليس إعلان منحة خاصاً بدولة واحدة."
+            },
+            "pt": {
+              "title": "Vinte países africanos apresentarão oportunidades de investimento agroalimentar no Fórum Hand-in-Hand de 2026",
+              "summary": "A FAO informa que 20 países africanos apresentarão oportunidades de investimento agroalimentar no fórum de 2026. Trata-se de uma atualização regional, não de um anúncio de subvenção específico de um país."
+            },
+            "sw": {
+              "title": "Nchi 20 za Afrika zitawasilisha fursa za uwekezaji wa kilimo na chakula katika Jukwaa la Hand-in-Hand la 2026",
+              "summary": "FAO inasema nchi 20 za Afrika zitawasilisha fursa za uwekezaji katika jukwaa la 2026. Hii ni taarifa ya kikanda, si tangazo la ruzuku la nchi moja."
+            }
+          }
         },
         {
           "category": "finance",
@@ -188,7 +206,25 @@
           "verified": "2026-10-07",
           "status": "review",
           "lifecycle": "needs_review",
-          "review_reason": "Project landing page rather than a specific news article; hold for migration to Resources or replacement with a direct story."
+          "review_reason": "Project landing page rather than a specific news article; hold for migration to Resources or replacement with a direct story.",
+          "translations": {
+            "fr": {
+              "title": "TAAT III poursuit le déploiement des technologies agricoles résilientes au climat en Afrique",
+              "summary": "Le programme TAAT soutenu par la BAD et mis en œuvre avec l’IITA aide à diffuser des technologies agricoles éprouvées, à renforcer les systèmes semenciers et à développer des solutions résilientes au climat."
+            },
+            "ar": {
+              "title": "برنامج TAAT III يواصل توسيع التقنيات الزراعية القادرة على التكيف مع المناخ في أفريقيا",
+              "summary": "يدعم برنامج TAAT الممول من البنك الأفريقي للتنمية والمنفذ بالتعاون مع المعهد الدولي للزراعة الاستوائية نشر التقنيات الزراعية المجربة وتعزيز نظم البذور وحلول الإنتاج القادرة على التكيف مع المناخ."
+            },
+            "pt": {
+              "title": "TAAT III continua a ampliar tecnologias agrícolas resilientes ao clima em África",
+              "summary": "O programa TAAT, apoiado pelo BAD e implementado com o IITA, promove a expansão de tecnologias agrícolas comprovadas, sistemas de sementes e soluções de produção resilientes ao clima."
+            },
+            "sw": {
+              "title": "TAAT III yaendelea kupanua teknolojia za kilimo zinazostahimili tabianchi kote Afrika",
+              "summary": "Mpango wa TAAT unaoungwa mkono na AfDB na kutekelezwa pamoja na IITA unasaidia kupanua teknolojia za kilimo zilizothibitishwa, mifumo ya mbegu na suluhisho zinazostahimili tabianchi."
+            }
+          }
         },
         {
           "category": "research-innovation",
@@ -200,7 +236,25 @@
           "verified": "2026-10-07",
           "status": "review",
           "lifecycle": "needs_review",
-          "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication."
+          "review_reason": "Generic listing or institutional landing page; replace with the direct article URL before publication.",
+          "translations": {
+            "fr": {
+              "title": "Le FIDA lance un appel pour renforcer les données probantes sur le développement des AgTech et FinTech",
+              "summary": "Le FIDA a invité des propositions visant à produire des données probantes et des enseignements pour étendre les services AgTech et FinTech destinés aux petits exploitants ruraux."
+            },
+            "ar": {
+              "title": "الصندوق الدولي للتنمية الزراعية يفتح باب التقديم لتعزيز الأدلة على توسيع تقنيات الزراعة والتمويل الرقمي",
+              "summary": "دعا الصندوق إلى تقديم مقترحات لإنتاج أدلة ودروس تساعد على توسيع خدمات التكنولوجيا الزراعية والتكنولوجيا المالية لصغار المزارعين في المناطق الريفية."
+            },
+            "pt": {
+              "title": "FIDA abre candidaturas para reforçar evidências sobre a expansão de AgTech e FinTech",
+              "summary": "O FIDA convidou à apresentação de propostas para gerar evidências e lições que permitam ampliar serviços de tecnologia agrícola e financeira para pequenos agricultores rurais."
+            },
+            "sw": {
+              "title": "IFAD yafungua wito wa kuimarisha ushahidi wa kupanua AgTech na FinTech",
+              "summary": "IFAD imealika mapendekezo yatakayozalisha ushahidi na mafunzo ya kupanua huduma za teknolojia ya kilimo na teknolojia ya fedha kwa wakulima wadogo wa vijijini."
+            }
+          }
         },
         {
           "category": "research-innovation",
