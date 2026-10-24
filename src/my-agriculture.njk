@@ -8,25 +8,25 @@ permalink: /my-agriculture/
 
 <div class="container" style="padding-top:2rem;padding-bottom:3rem;">
   <div class="section-head">
-    <span class="eyebrow">Personalized Agricultural Intelligence</span>
-    <h1>My Agriculture Watchlist</h1>
-    <p class="lede">Choose your country and interests once. GoOrganicAfrica will use them to organize relevant markets, opportunities, news, resources, services and training from the existing verified intelligence system.</p>
+    <span class="eyebrow" data-i18n="myAgriculture.eyebrow">Personalized Agricultural Intelligence</span>
+    <h1 data-i18n="myAgriculture.title">My Agriculture Watchlist</h1>
+    <p class="lede" data-i18n="myAgriculture.intro">Choose your country and interests once. GoOrganicAfrica will use them to organize relevant markets, opportunities, news, resources, services and training from the existing verified intelligence system.</p>
   </div>
 
   <div class="card" style="padding:18px;margin:1.25rem 0;">
-    <h2 style="margin-top:0;">1. Set your watchlist</h2>
+    <h2 style="margin-top:0;" data-i18n="myAgriculture.setTitle">1. Set your watchlist</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
-      <label><strong>Country</strong><br>
+      <label><strong data-i18n="myAgriculture.countryLabel">Country</strong><br>
         <select id="watch-country" style="width:100%;padding:11px;margin-top:6px;border:1px solid var(--line);border-radius:8px;">
-          <option value="">All countries</option>
+          <option value="" data-i18n="myAgriculture.allCountries">All countries</option>
           {% for c in agriculturalDecisionCentre.countries | sort(attribute="name") %}
           <option value="{{ c.code }}">{{ c.name }}</option>
           {% endfor %}
         </select>
       </label>
-      <label><strong>Primary goal</strong><br>
+      <label><strong data-i18n="myAgriculture.primaryGoal">Primary goal</strong><br>
         <select id="watch-goal" style="width:100%;padding:11px;margin-top:6px;border:1px solid var(--line);border-radius:8px;">
-          <option value="all">Full agricultural brief</option>
+          <option value="all" data-i18n="myAgriculture.fullBrief">Full agricultural brief</option>
           {% for g in agriculturalDecisionCentre.goals %}
           {% if g.id != "all" %}<option value="{{ g.id }}">{{ g.label }}</option>{% endif %}
           {% endfor %}
@@ -34,13 +34,13 @@ permalink: /my-agriculture/
       </label>
     </div>
     <fieldset style="border:0;padding:0;margin:16px 0 0;">
-      <legend><strong>Topics I want to follow</strong></legend>
+      <legend><strong data-i18n="myAgriculture.topicsLegend">Topics I want to follow</strong></legend>
       <div id="watch-topics" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:8px;"></div>
     </fieldset>
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;">
-      <button id="watch-save" type="button">Save my watchlist</button>
-      <button id="watch-clear" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);">Clear</button>
-      <button id="watch-check" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);">Check for updates</button>
+      <button id="watch-save" type="button" data-i18n="myAgriculture.saveButton">Save my watchlist</button>
+      <button id="watch-clear" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);" data-i18n="myAgriculture.clearButton">Clear</button>
+      <button id="watch-check" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);" data-i18n="myAgriculture.checkButton">Check for updates</button>
     </div>
     <p id="watch-status" style="margin:.75rem 0 0;font-size:.9rem;"></p>
   </div>
@@ -49,14 +49,14 @@ permalink: /my-agriculture/
   <div id="watch-alerts" style="display:grid;gap:12px;margin:1.25rem 0;"></div>
 
   <div class="card" style="padding:18px;margin:1.25rem 0;">
-    <h2 style="margin-top:0;">How the watchlist works</h2>
+    <h2 style="margin-top:0;" data-i18n="myAgriculture.howTitle">How the watchlist works</h2>
     <ul>
-      <li>Your preferences are stored only in this browser using local storage.</li>
+      <li data-i18n="myAgriculture.how1">Your preferences are stored only in this browser using local storage.</li>
       <li>The watchlist uses records already present in GoOrganicAfrica's agricultural intelligence system; it does not invent prices, grants, deadlines or advisories.</li>
-      <li>Important items are ranked first: current opportunities, notable market movements, recent news, training/events and useful resources/services.</li>
-      <li>“Check for updates” compares the current site data with your last saved check. It does not send data to a paid alert provider.</li>
+      <li data-i18n="myAgriculture.priorityOrdering">Important items are ranked first: current opportunities, notable market movements, recent news, training/events and useful resources/services.</li>
+      <li data-i18n="myAgriculture.how3">“Check for updates” compares the current site data with your last saved check. It does not send data to a paid alert provider.</li>
     </ul>
-    <p><strong>Important:</strong> Market figures, programme eligibility and deadlines can change. Always open the original source before acting.</p>
+    <p><strong data-i18n="myAgriculture.important">Important:</strong> <span data-i18n="myAgriculture.disclaimer">Market figures, programme eligibility and deadlines can change. Always open the original source before acting.</span></p>
   </div>
 </div>
 
@@ -86,7 +86,7 @@ permalink: /my-agriculture/
   const CHECK="goa-my-agriculture-last-check-v1";
 
   topicsEl.innerHTML=topics.map(t=>{
-    const label=topicLabels[t]||t.replace(/-/g," ");
+    const label=(window.GOA_I18N&&window.GOA_I18N.t("myAgriculture","topic_"+t))||topicLabels[t]||t.replace(/-/g," ");
     return '<label style="display:flex;gap:7px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:8px;"><input type="checkbox" value="'+t+'"> '+label+'</label>';
   }).join("");
 
@@ -146,7 +146,7 @@ permalink: /my-agriculture/
       return {...r,score};
     }).sort((a,b)=>b.score-a.score);
   }
-  function sectionLabel(s){return ({markets:"Market intelligence",opportunities:"Opportunities",services:"Services & training",news:"Agricultural news",resources:"Resources"})[s]||s;}
+  function sectionLabel(s){return (window.GOA_I18N&&window.GOA_I18N.t("myAgriculture","section_"+s))||s;}
   function render(){
     const p=prefs(), rows=rank(relevant());
     const counts={};
