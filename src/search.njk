@@ -123,8 +123,18 @@ html[dir="rtl"] .goa-search{text-align:start;}
     url:el.dataset.url||''
   })).filter(x=>x.title&&x.url);
   function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  function getSearchLanguage(){
+    // The URL is authoritative on localized pages; the global i18n helper can
+    // briefly report its default language while page scripts initialize.
+    const pathMatch=location.pathname.match(/^\\/(fr|ar|pt|sw)(?:\\/|$)/i);
+    if(pathMatch)return pathMatch[1].toLowerCase();
+    const helperLanguage=window.GOA_I18N&&typeof window.GOA_I18N.lang==='function'?window.GOA_I18N.lang():'';
+    const declaredLanguage=document.documentElement.lang||'';
+    const language=String(helperLanguage||declaredLanguage||'en').toLowerCase().split('-')[0];
+    return ['en','fr','ar','pt','sw'].includes(language)?language:'en';
+  }
   function localizedSectionUrl(section){
-    const language=(window.GOA_I18N&&window.GOA_I18N.lang?window.GOA_I18N.lang():document.documentElement.lang||'en').split('-')[0];
+    const language=getSearchLanguage();
     return language==='en'?'/'+section+'/':'/'+language+'/'+section+'/';
   }
   const marketWords={
@@ -166,7 +176,7 @@ html[dir="rtl"] .goa-search{text-align:start;}
   function render(){
     const q=input.value.trim().toLowerCase();
     const t=type.value;
-    const language=(window.GOA_I18N&&window.GOA_I18N.lang?window.GOA_I18N.lang():document.documentElement.lang||'en').split('-')[0];
+    const language=getSearchLanguage();
     // Normalize punctuation and hyphenated slugs so "rabbit farming ebook" can
     // match metadata stored as "rabbit-farming" or "rabbit_farming".
     const normalize=value=>String(value||'').toLowerCase().replace(/[^\w\u00C0-\u024F\u0600-\u06FF]+/g,' ').trim().replace(/\s+/g,' ');
@@ -213,6 +223,15 @@ html[dir="rtl"] .goa-search{text-align:start;}
   input.addEventListener('input',render);
   type.addEventListener('change',render);
   document.addEventListener('goa:languagechange',render);
+  // Re-render if the site's language switcher updates the document language
+  // without emitting the custom event.
+  const languageObserver=new MutationObserver(()=>render());
+  languageObserver.observe(document.documentElement,{attributes:true,attributeFilter:['lang','dir']});
+  document.addEventListener('change',event=>{
+    if(event.target&&event.target.matches('[data-language-selector], #language-selector, .language-selector, select[name="language"]')){
+      setTimeout(render,0);
+    }
+  });
   render();
 })();
 </script>
