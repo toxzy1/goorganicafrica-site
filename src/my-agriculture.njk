@@ -20,7 +20,7 @@ permalink: /my-agriculture/
         <select id="watch-country" style="width:100%;padding:11px;margin-top:6px;border:1px solid var(--line);border-radius:8px;">
           <option value="" data-i18n="myAgriculture.allCountries">All countries</option>
           {% for c in agriculturalDecisionCentre.countries | sort(attribute="name") %}
-          <option value="{{ c.code }}">{{ c.name }}</option>
+          <option value="{{ c.code }}" data-country-name="{{ c.name | escape }}">{{ c.name }}</option>
           {% endfor %}
         </select>
       </label>
@@ -28,7 +28,7 @@ permalink: /my-agriculture/
         <select id="watch-goal" style="width:100%;padding:11px;margin-top:6px;border:1px solid var(--line);border-radius:8px;">
           <option value="all" data-i18n="myAgriculture.fullBrief">Full agricultural brief</option>
           {% for g in agriculturalDecisionCentre.goals %}
-          {% if g.id != "all" %}<option value="{{ g.id }}">{{ g.label }}</option>{% endif %}
+          {% if g.id != "all" %}<option value="{{ g.id }}" data-goal-id="{{ g.id }}">{{ g.label }}</option>{% endif %}
           {% endfor %}
         </select>
       </label>
@@ -178,8 +178,8 @@ permalink: /my-agriculture/
     const old=new Set(previous), added=current.filter(k=>!old.has(k));
     localStorage.setItem(CHECK,JSON.stringify({at:new Date().toISOString(),keys:current}));
     statusEl.textContent=added.length
-      ? added.length+" new matching item"+(added.length===1?"":"s")+" found since your last check."
-      : "No new matching items found since your last check.";
+      ? tr("newItemsFound",{count:added.length})
+      : tr("noNewItems");
     if(added.length && "Notification" in window && Notification.permission==="granted"){
       new Notification("GoOrganicAfrica watchlist", {body:added.length+" new agricultural intelligence item"+(added.length===1?"":"s")+" match your watchlist."});
     }
@@ -194,6 +194,6 @@ permalink: /my-agriculture/
   document.getElementById("watch-check").addEventListener("click",check);
   [countryEl,goalEl].forEach(el=>el.addEventListener("change",render));
   topicsEl.addEventListener("change",render);
-  load();render();
+  load();localizeSelectOptions(window.GOA_I18N ? window.GOA_I18N.lang() : "en");render();
 })();
 </script>
