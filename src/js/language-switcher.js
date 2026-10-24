@@ -256,8 +256,8 @@
         var section = selector.getAttribute("data-goa-selector-section");
         var targetUrl = localizedContentUrl(requested);
         setLanguage(requested);
-        var currentPath = window.location.pathname.replace(/\\/+$/, "") || "/";
-        var targetPath = targetUrl ? new URL(targetUrl, window.location.origin).pathname.replace(/\\/+$/, "") || "/" : null;
+        var currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+        var targetPath = targetUrl ? new URL(targetUrl, window.location.origin).pathname.replace(/\/+$/, "") || "/" : null;
         if (targetUrl && targetPath !== currentPath) {
           window.location.assign(targetUrl);
           return;
