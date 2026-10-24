@@ -1173,5 +1173,37 @@
       ],
       "review_reason": "This record shares its source URL with another entry for the same country or points only to a generic event listing. Keep one canonical listing or provide a direct service/event URL."
     }
+  ],
+  "categories": [
+    "events",
+    "machinery",
+    "suppliers",
+    "training"
+  ],
+  "countries": [
+    {
+      "code": "AFRICA",
+      "name": "Africa"
+    },
+    {
+      "code": "BW",
+      "name": "Botswana"
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia"
+    },
+    {
+      "code": "GN",
+      "name": "Guinea"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya"
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria"
+    }
   ]
 }
