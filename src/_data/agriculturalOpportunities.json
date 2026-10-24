@@ -239,7 +239,25 @@
         "investment"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed.",
+      "localized": {
+        "ar": {
+          "title": "المرحلة التحضيرية للمرحلة الثانية من برنامج تنمية الكاجو التابع لبنك التنمية الأفريقي",
+          "summary": "دعم التحضير لمشروع يهدف إلى تطوير سلسلة قيمة الكاجو وتحسين الإنتاج والتجهيز وفرص السوق للمزارعين والشركات الزراعية في زامبيا."
+        },
+        "fr": {
+          "title": "Préparation de la phase II du programme de développement de l’anacarde de la BAD",
+          "summary": "Préparation d’un projet visant à développer la chaîne de valeur de l’anacarde et à améliorer la production, la transformation et les débouchés pour les agriculteurs et entreprises agricoles en Zambie."
+        },
+        "pt": {
+          "title": "Preparação da Fase II do Programa de Desenvolvimento do Caju do BAD",
+          "summary": "Preparação de um projeto para desenvolver a cadeia de valor do caju e melhorar a produção, o processamento e as oportunidades de mercado para agricultores e empresas agrícolas na Zâmbia."
+        },
+        "sw": {
+          "title": "Maandalizi ya Awamu ya Pili ya Mpango wa Maendeleo ya Korosho wa AfDB",
+          "summary": "Maandalizi ya mradi wa kuendeleza mnyororo wa thamani wa korosho na kuboresha uzalishaji, uchakataji na fursa za soko kwa wakulima na biashara za kilimo nchini Zambia."
+        }
+      }
     },
     {
       "code": "ZW",
@@ -574,7 +592,25 @@
         "agribusiness"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed.",
+      "localized": {
+        "ar": {
+          "title": "تسهيل تمويل التجارة للشركات الصغيرة والمتوسطة وغيرها من الأعمال في بنين",
+          "summary": "آلية تمويل تجاري لدعم الشركات المؤهلة وتحسين قدرتها على الوصول إلى التمويل اللازم للتجارة والأعمال."
+        },
+        "fr": {
+          "title": "Facilité de financement du commerce de la BAD pour les PME et autres entreprises au Bénin",
+          "summary": "Mécanisme de financement du commerce destiné à soutenir les entreprises admissibles et à améliorer leur accès aux financements nécessaires aux échanges et aux activités commerciales."
+        },
+        "pt": {
+          "title": "Facilidade de Financiamento do Comércio do BAD para PME e outras empresas no Benim",
+          "summary": "Mecanismo de financiamento comercial destinado a apoiar empresas elegíveis e melhorar o acesso ao financiamento necessário ao comércio e às operações empresariais."
+        },
+        "sw": {
+          "title": "Kituo cha Fedha za Biashara cha AfDB kwa SME na biashara nyingine nchini Benin",
+          "summary": "Mfumo wa ufadhili wa biashara unaolenga kusaidia biashara zinazostahiki na kuboresha upatikanaji wa fedha kwa biashara na shughuli za kibiashara."
+        }
+      }
     },
     {
       "code": "ET",
@@ -640,7 +676,25 @@
         "value chain"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed."
+      "review_reason": "Source URL is a generic AfDB MapAfrica landing/sector page rather than the verified direct project page. Keep unpublished until the project-specific official URL and current status are confirmed.",
+      "localized": {
+        "ar": {
+          "title": "البرنامج الإقليمي لتطوير الأرز في غرب أفريقيا (REWARD) — المرحلة الثانية",
+          "summary": "برنامج إقليمي يهدف إلى دعم تطوير إنتاج الأرز وسلاسل قيمته في غرب أفريقيا."
+        },
+        "fr": {
+          "title": "Programme régional de développement du riz en Afrique de l’Ouest (REWARD) — phase 2",
+          "summary": "Programme régional visant à soutenir le développement de la production de riz et de ses chaînes de valeur en Afrique de l’Ouest."
+        },
+        "pt": {
+          "title": "Programa Regional de Desenvolvimento do Arroz na África Ocidental (REWARD) — Fase 2",
+          "summary": "Programa regional destinado a apoiar o desenvolvimento da produção de arroz e das suas cadeias de valor na África Ocidental."
+        },
+        "sw": {
+          "title": "Mpango wa Kikanda wa Kuendeleza Mpunga Afrika Magharibi (REWARD) — Awamu ya 2",
+          "summary": "Mpango wa kikanda unaolenga kusaidia maendeleo ya uzalishaji wa mpunga na minyororo yake ya thamani Afrika Magharibi."
+        }
+      }
     },
     {
       "code": "MG",
@@ -663,7 +717,25 @@
         "agriculture"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Direct AfDB project page for P-MG-A00-013 found. Keep in review until the project phase, country assignment, current implementation status and end date are checked against the official record."
+      "review_reason": "Direct AfDB project page for P-MG-A00-013 found. Keep in review until the project phase, country assignment, current implementation status and end date are checked against the official record.",
+      "localized": {
+        "ar": {
+          "title": "مشروع توسعة منطقة ري مانغوكي السفلى — المرحلة الثانية",
+          "summary": "مشروع لتوسيع البنية التحتية للري ودعم الإنتاج الزراعي في منطقة مانغوكي السفلى بمدغشقر."
+        },
+        "fr": {
+          "title": "Projet d’extension du périmètre irrigué du Bas-Mangoky — phase II",
+          "summary": "Projet visant à étendre les infrastructures d’irrigation et à soutenir la production agricole dans la région du Bas-Mangoky à Madagascar."
+        },
+        "pt": {
+          "title": "Projeto de Expansão da Área de Irrigação do Baixo Mangoky — Fase II",
+          "summary": "Projeto para expandir a infraestrutura de irrigação e apoiar a produção agrícola na região do Baixo Mangoky, em Madagáscar."
+        },
+        "sw": {
+          "title": "Mradi wa Kupanua Eneo la Umwagiliaji la Mangoky ya Chini — Awamu ya Pili",
+          "summary": "Mradi wa kupanua miundombinu ya umwagiliaji na kusaidia uzalishaji wa kilimo katika eneo la Mangoky ya Chini nchini Madagaska."
+        }
+      }
     },
     {
       "code": "AFRICA",
@@ -853,7 +925,25 @@
       "source_tier": 1,
       "verified": "2026-10-13",
       "url": "https://agriculture.govmu.org/Communique/2026/October/Communique_amended.docx%2002.10.26.pdf",
-      "review_reason": "Direct ministry communiqué checked. Confirm the live application process and remaining allocation before approving this time-limited opportunity."
+      "review_reason": "Direct ministry communiqué checked. Confirm the live application process and remaining allocation before approving this time-limited opportunity.",
+      "localized": {
+        "ar": {
+          "title": "برنامج المساعدة المالية لحماية الفاكهة في موريشيوس 2026–2027",
+          "summary": "مخطط مساعدة مالية محدد المدة لدعم تدابير حماية محاصيل الفاكهة في موريشيوس. تحقق من الأهلية والمواعيد النهائية لدى الجهة الرسمية."
+        },
+        "fr": {
+          "title": "Programme d’aide financière à la protection des fruits à Maurice 2026–2027",
+          "summary": "Dispositif d’aide financière à durée limitée pour soutenir les mesures de protection des cultures fruitières à Maurice. Vérifiez l’admissibilité et les dates limites auprès de l’organisme officiel."
+        },
+        "pt": {
+          "title": "Esquema de assistência financeira para proteção de frutas nas Maurícias 2026–2027",
+          "summary": "Programa de apoio financeiro por tempo limitado para medidas de proteção de culturas frutícolas nas Maurícias. Confirme a elegibilidade e os prazos junto da entidade oficial."
+        },
+        "sw": {
+          "title": "Mpango wa Msaada wa Kifedha wa Kulinda Matunda Mauritius 2026–2027",
+          "summary": "Mpango wa msaada wa kifedha wa muda maalum kwa hatua za kulinda mazao ya matunda nchini Mauritius. Thibitisha ustahiki na tarehe za mwisho kutoka kwa mamlaka rasmi."
+        }
+      }
     },
     {
       "code": "MA",
@@ -876,7 +966,25 @@
         "IFAD"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Direct official IFAD project page found. Verify current implementation status, beneficiary eligibility and whether this is an active farmer-facing opportunity before publication."
+      "review_reason": "Direct official IFAD project page found. Verify current implementation status, beneficiary eligibility and whether this is an active farmer-facing opportunity before publication.",
+      "localized": {
+        "ar": {
+          "title": "مشروع التنمية الريفية المتكاملة في إقليم خنيفرة",
+          "summary": "مشروع للتنمية الريفية المتكاملة في إقليم خنيفرة بالمغرب. راجع الجهة الرسمية للتحقق من نطاق المشروع وحالة الفرص المتاحة."
+        },
+        "fr": {
+          "title": "Projet de développement rural intégré dans la province de Khénifra",
+          "summary": "Projet de développement rural intégré dans la province de Khénifra au Maroc. Consultez l’organisme officiel pour confirmer sa portée et l’état des possibilités disponibles."
+        },
+        "pt": {
+          "title": "Projeto de Desenvolvimento Rural Integrado na Província de Khenifra",
+          "summary": "Projeto de desenvolvimento rural integrado na província de Khenifra, em Marrocos. Consulte a entidade oficial para confirmar o âmbito e a situação das oportunidades disponíveis."
+        },
+        "sw": {
+          "title": "Mradi Jumuishi wa Maendeleo ya Vijijini katika Mkoa wa Khenifra",
+          "summary": "Mradi wa maendeleo jumuishi ya vijijini katika mkoa wa Khenifra nchini Morocco. Wasiliana na mamlaka rasmi kuthibitisha wigo na hali ya fursa zilizopo."
+        }
+      }
     },
     {
       "code": "CF",
@@ -898,7 +1006,25 @@
         "IFAD"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Direct official IFAD project page found. Verify implementation status, available participation routes and eligibility before presenting it as an open opportunity."
+      "review_reason": "Direct official IFAD project page found. Verify implementation status, available participation routes and eligibility before presenting it as an open opportunity.",
+      "localized": {
+        "ar": {
+          "title": "برنامج تعزيز الأعمال الزراعية القادرة على التكيف مع المناخ",
+          "summary": "برنامج لتعزيز الأعمال الزراعية المرنة مناخياً في جمهورية أفريقيا الوسطى."
+        },
+        "fr": {
+          "title": "Programme de promotion des entreprises agricoles résilientes au climat",
+          "summary": "Programme visant à renforcer les entreprises agricoles résilientes au changement climatique en République centrafricaine."
+        },
+        "pt": {
+          "title": "Programa de Promoção de Agronegócios Resilientes ao Clima",
+          "summary": "Programa destinado a reforçar os agronegócios resilientes às alterações climáticas na República Centro-Africana."
+        },
+        "sw": {
+          "title": "Mpango wa Kukuza Biashara za Kilimo Zinazostahimili Mabadiliko ya Tabianchi",
+          "summary": "Mpango wa kuimarisha biashara za kilimo zinazostahimili mabadiliko ya tabianchi katika Jamhuri ya Afrika ya Kati."
+        }
+      }
     },
     {
       "code": "CV",
@@ -922,7 +1048,25 @@
         "IFAD"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Direct official IFAD project page found. Verify implementation status and whether any farmer-facing benefits or applications are currently available before publication."
+      "review_reason": "Direct official IFAD project page found. Verify implementation status and whether any farmer-facing benefits or applications are currently available before publication.",
+      "localized": {
+        "ar": {
+          "title": "PRO-AGUA: الوصول المستدام والشامل إلى المياه من أجل زراعة قادرة على الصمود",
+          "summary": "مبادرة لتعزيز الوصول المستدام والشامل إلى المياه ودعم قدرة الزراعة على الصمود في الرأس الأخضر."
+        },
+        "fr": {
+          "title": "PRO-AGUA : accès durable et inclusif à l’eau pour une agriculture résiliente",
+          "summary": "Initiative visant à améliorer l’accès durable et inclusif à l’eau et à renforcer la résilience agricole au Cabo Verde."
+        },
+        "pt": {
+          "title": "PRO-AGUA: Acesso Sustentável e Inclusivo à Água para uma Agricultura Resiliente",
+          "summary": "Iniciativa destinada a melhorar o acesso sustentável e inclusivo à água e a reforçar a resiliência agrícola em Cabo Verde."
+        },
+        "sw": {
+          "title": "PRO-AGUA: Upatikanaji Endelevu na Jumuishi wa Maji kwa Kilimo Imara",
+          "summary": "Mpango wa kuboresha upatikanaji endelevu na jumuishi wa maji na kuimarisha ustahimilivu wa kilimo nchini Cabo Verde."
+        }
+      }
     },
     {
       "code": "BJ",
@@ -946,7 +1090,25 @@
         "AfDB"
       ],
       "lifecycle": "needs_review",
-      "review_reason": "Direct official project page found. Verify the current implementation phase, whether any farmer-facing benefits are available and which documents should be linked before publication."
+      "review_reason": "Direct official project page found. Verify the current implementation phase, whether any farmer-facing benefits are available and which documents should be linked before publication.",
+      "localized": {
+        "ar": {
+          "title": "PROMAC: مشروع مستدام للاستزراع المائي وسلاسل قيمة مصايد الأسماك",
+          "summary": "مشروع لتطوير الاستزراع المائي ومصايد الأسماك وسلاسل القيمة المرتبطة بها في بنين."
+        },
+        "fr": {
+          "title": "PROMAC : projet durable d’aquaculture et de chaînes de valeur de la pêche",
+          "summary": "Projet visant à développer l’aquaculture, la pêche et les chaînes de valeur associées au Bénin."
+        },
+        "pt": {
+          "title": "PROMAC: Projeto Sustentável de Aquicultura e Cadeias de Valor da Pesca",
+          "summary": "Projeto destinado a desenvolver a aquicultura, a pesca e as respetivas cadeias de valor no Benim."
+        },
+        "sw": {
+          "title": "PROMAC: Mradi Endelevu wa Ufugaji wa Viumbe Majini na Minyororo ya Thamani ya Uvuvi",
+          "summary": "Mradi wa kuendeleza ufugaji wa viumbe majini, uvuvi na minyororo ya thamani inayohusiana nayo nchini Benin."
+        }
+      }
     }
   ]
 }
