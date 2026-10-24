@@ -52,7 +52,7 @@
 {% endfor %}
 </div>
 <section id="market-international-benchmarks" style="margin-top:28px"><h2 data-i18n="markets.internationalBenchmarksTitle">International market benchmarks</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">{% for r in agriculturalMarkets.market_intelligence.international %}<article style="border:1px solid #ddd;border-radius:10px;padding:16px"><strong>{{ r.provider }}</strong><p>{{ r.coverage }}</p><small><span data-market-scope-value="{{ r.scope | title }}">{{ r.scope | title }}</span> · <span data-market-word="tier">Tier</span> {{ r.source_tier }} · <span data-market-word="verified">Verified</span> <span data-market-date="{{ r.verified }}">{{ r.verified }}</span></small><p><a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" data-i18n="markets.openOfficialSource">Open official source</a></p></article>{% endfor %}</div><h3 data-i18n="markets.howInterpretedTitle">How market data is interpreted</h3><ul id="market-interpretation-rules">{% for rule in agriculturalMarkets.market_intelligence.interpretation_rules %}<li>{{ rule }}</li>{% endfor %}</ul></section></section>
-<script src="/js/market-commodity-localization.js?v=20261023-market-localization-v4"></script>
+<script src="/js/market-commodity-localization.js?v=20261024-market-localization-v5"></script>
 <script>
 (()=> {
   "use strict";
