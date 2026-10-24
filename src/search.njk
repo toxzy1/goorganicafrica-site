@@ -60,7 +60,7 @@ language: en
       {% for category in agriculturalResourcesAll.categories %}
         {% for r in country.records[category] %}
           {% if (r.status == "official" or r.status == "published" or r.status == "verified") and (not r.lifecycle or r.lifecycle == "current") and r.title %}
-            <article data-type="Resource" data-country-code="{{ country.code }}" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.tags or '' }} {{ r.slug or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ category }} · {{ r.source or '' }}" data-url="{{ r.url or r.source_url or '/agriculture-resources/' }}"></article>
+            <article data-type="Resource" data-country-code="{{ country.code }}" data-title="{{ r.title }}" data-summary="{{ r.description or r.summary or '' }}" data-title-fr="{{ r.localized.fr.title or '' }}" data-summary-fr="{{ r.localized.fr.summary or r.localized.fr.description or '' }}" data-title-ar="{{ r.localized.ar.title or '' }}" data-summary-ar="{{ r.localized.ar.summary or r.localized.ar.description or '' }}" data-title-pt="{{ r.localized.pt.title or '' }}" data-summary-pt="{{ r.localized.pt.summary or r.localized.pt.description or '' }}" data-title-sw="{{ r.localized.sw.title or '' }}" data-summary-sw="{{ r.localized.sw.summary or r.localized.sw.description or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.tags or '' }} {{ r.slug or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ category }} · {{ r.source or '' }}" data-url="{{ r.url or r.source_url or '/agriculture-resources/' }}"></article>
           {% endif %}
         {% endfor %}
       {% endfor %}
@@ -68,29 +68,29 @@ language: en
     {% for country in agriculturalNewsMerged.countries %}
       {% for r in country.articles %}
         {% if (r.status == "official" or r.status == "published" or r.status == "verified") and (not r.lifecycle or r.lifecycle == "current") and r.url %}
-          <article data-type="News" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url }}"></article>
+          <article data-type="News" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-title-fr="{{ r.localized.fr.title or '' }}" data-summary-fr="{{ r.localized.fr.summary or '' }}" data-title-ar="{{ r.localized.ar.title or '' }}" data-summary-ar="{{ r.localized.ar.summary or '' }}" data-title-pt="{{ r.localized.pt.title or '' }}" data-summary-pt="{{ r.localized.pt.summary or '' }}" data-title-sw="{{ r.localized.sw.title or '' }}" data-summary-sw="{{ r.localized.sw.summary or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }}" data-meta="{{ country.name or country.country or country.code }} · {{ r.category or '' }} · {{ r.source or '' }}" data-url="{{ r.url }}"></article>
         {% endif %}
       {% endfor %}
     {% endfor %}
     {% for r in agriculturalOpportunities.records %}
       {% if (r.status == "open" or r.status == "active") and (not r.lifecycle or r.lifecycle == "current") %}
-        <article data-type="Opportunity" data-title="{{ r.title }}" data-summary="{{ r.summary or r.description or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.tags or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.type or r.category or '' }} · {{ r.provider or r.source or '' }}" data-url="{{ r.application_url or r.source_url or r.url or '/opportunities/' }}"></article>
+        <article data-type="Opportunity" data-title="{{ r.title }}" data-summary="{{ r.summary or r.description or '' }}" data-title-fr="{{ r.localized.fr.title or '' }}" data-summary-fr="{{ r.localized.fr.summary or '' }}" data-title-ar="{{ r.localized.ar.title or '' }}" data-summary-ar="{{ r.localized.ar.summary or '' }}" data-title-pt="{{ r.localized.pt.title or '' }}" data-summary-pt="{{ r.localized.pt.summary or '' }}" data-title-sw="{{ r.localized.sw.title or '' }}" data-summary-sw="{{ r.localized.sw.summary or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.tags or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.type or r.category or '' }} · {{ r.provider or r.source or '' }}" data-url="{{ r.application_url or r.source_url or r.url or '/opportunities/' }}"></article>
       {% endif %}
     {% endfor %}
     {% for r in agriculturalMarkets.records %}
-      <article data-type="Market" data-title="{{ r.commodity or 'Market information' }}{% if r.market %} — {{ r.market }}{% endif %}" data-summary="{{ r.note or r.description or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.commodity or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.price_type or '' }}{% if r.observed_date %} · {{ r.observed_date }}{% endif %}" data-url="{{ r.source_url or r.url or '/markets/' }}"></article>
+      <article data-type="Market" data-title="{{ r.commodity or 'Market information' }}{% if r.market %} — {{ r.market }}{% endif %}" data-summary="{{ r.note or r.description or '' }}" data-title-fr="{{ r.localized.fr.title or '' }}" data-summary-fr="{{ r.localized.fr.summary or '' }}" data-title-ar="{{ r.localized.ar.title or '' }}" data-summary-ar="{{ r.localized.ar.summary or '' }}" data-title-pt="{{ r.localized.pt.title or '' }}" data-summary-pt="{{ r.localized.pt.summary or '' }}" data-title-sw="{{ r.localized.sw.title or '' }}" data-summary-sw="{{ r.localized.sw.summary or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.commodity or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.price_type or '' }}{% if r.observed_date %} · {{ r.observed_date }}{% endif %}" data-url="{{ r.source_url or r.url or '/markets/' }}"></article>
     {% endfor %}
     {% for r in agriculturalServices.records %}
-      <article data-type="Service" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.tags or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.provider or '' }}" data-url="{{ r.url or '/agricultural-services/' }}"></article>
+      <article data-type="Service" data-title="{{ r.title }}" data-summary="{{ r.summary or '' }}" data-title-fr="{{ r.localized.fr.title or '' }}" data-summary-fr="{{ r.localized.fr.summary or '' }}" data-title-ar="{{ r.localized.ar.title or '' }}" data-summary-ar="{{ r.localized.ar.summary or '' }}" data-title-pt="{{ r.localized.pt.title or '' }}" data-summary-pt="{{ r.localized.pt.summary or '' }}" data-title-sw="{{ r.localized.sw.title or '' }}" data-summary-sw="{{ r.localized.sw.summary or '' }}" data-keywords="{{ r.search_terms or '' }} {{ r.keywords or '' }} {{ r.tags or '' }}" data-meta="{{ r.country or r.country_code or '' }} · {{ r.category or '' }} · {{ r.provider or '' }}" data-url="{{ r.url or '/agricultural-services/' }}"></article>
     {% endfor %}
     {% for item in collections.ebooks %}
       {% if item.data.active !== false and (item.data.translation_status or 'published') !== 'in_review' %}
-        <article data-type="eBook" data-title="{{ item.data.title or item.data.name or '' }}" data-summary="{{ item.data.tagline or item.data.description or item.data.audience or '' }}" data-keywords="{{ item.data.search_terms or '' }} {{ item.data.keywords or '' }} {{ item.data.tags or '' }} {{ item.data.slug or item.fileSlug or '' }} {{ item.data.audience or '' }}" data-meta="{{ item.data.category or '' }} · eBook" data-url="{{ item.url }}"></article>
+        <article data-type="eBook" data-title="{{ item.data.title or item.data.name or '' }}" data-summary="{{ item.data.tagline or item.data.description or item.data.audience or '' }}" data-title-fr="{{ item.data.localized.fr.title or '' }}" data-summary-fr="{{ item.data.localized.fr.summary or item.data.localized.fr.description or '' }}" data-title-ar="{{ item.data.localized.ar.title or '' }}" data-summary-ar="{{ item.data.localized.ar.summary or item.data.localized.ar.description or '' }}" data-title-pt="{{ item.data.localized.pt.title or '' }}" data-summary-pt="{{ item.data.localized.pt.summary or item.data.localized.pt.description or '' }}" data-title-sw="{{ item.data.localized.sw.title or '' }}" data-summary-sw="{{ item.data.localized.sw.summary or item.data.localized.sw.description or '' }}" data-keywords="{{ item.data.search_terms or '' }} {{ item.data.keywords or '' }} {{ item.data.tags or '' }} {{ item.data.slug or item.fileSlug or '' }} {{ item.data.audience or '' }}" data-meta="{{ item.data.category or '' }} · eBook" data-url="{{ item.url }}"></article>
       {% endif %}
     {% endfor %}
     {% for item in collections.posts %}
       {% if item.data.active !== false and (item.data.translation_status or 'published') !== 'in_review' %}
-        <article data-type="Blog" data-title="{{ item.data.title or '' }}" data-summary="{{ item.data.description or item.data.excerpt or '' }}" data-keywords="{{ item.data.search_terms or '' }} {{ item.data.keywords or '' }} {{ item.data.tags or '' }} {{ item.data.slug or item.fileSlug or '' }}" data-meta="{{ item.data.category or '' }} · Blog · {{ item.data.language or 'en' }}" data-url="{{ item.url }}"></article>
+        <article data-type="Blog" data-title="{{ item.data.title or '' }}" data-summary="{{ item.data.description or item.data.excerpt or '' }}" data-title-fr="{{ item.data.localized.fr.title or '' }}" data-summary-fr="{{ item.data.localized.fr.summary or item.data.localized.fr.description or '' }}" data-title-ar="{{ item.data.localized.ar.title or '' }}" data-summary-ar="{{ item.data.localized.ar.summary or item.data.localized.ar.description or '' }}" data-title-pt="{{ item.data.localized.pt.title or '' }}" data-summary-pt="{{ item.data.localized.pt.summary or item.data.localized.pt.description or '' }}" data-title-sw="{{ item.data.localized.sw.title or '' }}" data-summary-sw="{{ item.data.localized.sw.summary or item.data.localized.sw.description or '' }}" data-keywords="{{ item.data.search_terms or '' }} {{ item.data.keywords or '' }} {{ item.data.tags or '' }} {{ item.data.slug or item.fileSlug or '' }}" data-meta="{{ item.data.category or '' }} · Blog · {{ item.data.language or 'en' }}" data-url="{{ item.url }}"></article>
       {% endif %}
     {% endfor %}
   </div>
@@ -112,6 +112,7 @@ language: en
     type:el.dataset.type||'',
     title:el.dataset.title||'',
     summary:el.dataset.summary||'',
+    localized:{fr:{title:el.dataset.titleFr||'',summary:el.dataset.summaryFr||''},ar:{title:el.dataset.titleAr||'',summary:el.dataset.summaryAr||''},pt:{title:el.dataset.titlePt||'',summary:el.dataset.summaryPt||''},sw:{title:el.dataset.titleSw||'',summary:el.dataset.summarySw||''}},
     keywords:el.dataset.keywords||'',
     meta:el.dataset.meta||'',
     url:el.dataset.url||''
@@ -124,6 +125,7 @@ language: en
   function render(){
     const q=input.value.trim().toLowerCase();
     const t=type.value;
+    const language=(window.GOA_I18N&&window.GOA_I18N.lang?window.GOA_I18N.lang():document.documentElement.lang||'en').split('-')[0];
     // Normalize punctuation and hyphenated slugs so "rabbit farming ebook" can
     // match metadata stored as "rabbit-farming" or "rabbit_farming".
     const normalize=value=>String(value||'').toLowerCase().replace(/[^\w\u00C0-\u024F\u0600-\u06FF]+/g,' ').trim().replace(/\s+/g,' ');
@@ -133,7 +135,7 @@ language: en
       const hay=normalize(x.title+' '+x.summary+' '+x.keywords+' '+x.meta);
       return !words.length||words.every(w=>{const variants=(topicAliases[w]||[w]).map(normalize);return variants.some(v=>hay.includes(v));});
     });
-    const shown=matches.slice(0,100);
+    const shown=matches.map(x=>{const translated=x.localized&&x.localized[language];return translated?{...x,title:translated.title||x.title,summary:translated.summary||x.summary}:x;}).slice(0,100);
     const sections=[
       ['Market',tr('markets'),'/markets/','compareMarkets'],
       ['Opportunity',tr('opportunities'),'/opportunities/','financePrograms'],
