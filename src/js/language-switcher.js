@@ -233,8 +233,17 @@
   };
 
   document.addEventListener("DOMContentLoaded", function () {
-    var selector = document.getElementById("site-language-select");
-    if (selector) {
+    // Some templates can render more than one language selector. Do not use
+    // getElementById here: it binds only the first matching control, leaving
+    // any additional visible selector inert.
+    var selectors = Array.prototype.slice.call(document.querySelectorAll(
+      '#site-language-select, [data-goa-language-selector] select'
+    ));
+    var uniqueSelectors = selectors.filter(function (selector, index) {
+      return selectors.indexOf(selector) === index;
+    });
+
+    uniqueSelectors.forEach(function (selector) {
       selector.innerHTML = "";
       languages.forEach(function (item) {
         var option = document.createElement("option");
@@ -245,29 +254,24 @@
       selector.addEventListener("change", function () {
         var requested = this.value;
         var section = selector.getAttribute("data-goa-selector-section");
-        // Always prefer the page's exact localized destination. This handles
-        // Blog/eBook detail pages, Agricultural News country pages, and all
-        // localized section indexes before falling back to generic sections.
         var targetUrl = localizedContentUrl(requested);
-        // Do not guess a language-prefixed URL when this page has no known
-        // destination. A guessed route can 404 or send visitors to the wrong
-        // section/homepage. Explicit maps and known section routes above are
-        // the only safe navigation targets; otherwise translate in place.
         setLanguage(requested);
-        // Shared pages intentionally keep the same URL. Do not reload them,
-        // because a reload restores the server's default <html lang="en">.
-        var currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
-        var targetPath = targetUrl ? new URL(targetUrl, window.location.origin).pathname.replace(/\/+$/, "") || "/" : null;
+        var currentPath = window.location.pathname.replace(/\\/+$/, "") || "/";
+        var targetPath = targetUrl ? new URL(targetUrl, window.location.origin).pathname.replace(/\\/+$/, "") || "/" : null;
         if (targetUrl && targetPath !== currentPath) {
           window.location.assign(targetUrl);
           return;
         }
-        // When a page has no explicit translated destination, keep the requested
-        // language for the in-place UI refresh instead of re-deriving English
-        // from the unchanged URL and undoing the visitor's selection.
-        refresh(requested);
+        refresh(requested).then(function (code) {
+          // Keep every visible selector in sync after an in-place language change.
+          uniqueSelectors.forEach(function (other) { other.value = code; });
+        });
       });
-    }
-    refresh().then(function () { readyResolve(window.GOA_I18N); });
+    });
+
+    refresh().then(function (code) {
+      uniqueSelectors.forEach(function (selector) { selector.value = code; });
+      readyResolve(window.GOA_I18N);
+    });
   });
 }());
