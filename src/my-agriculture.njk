@@ -90,7 +90,9 @@ permalink: /my-agriculture/
     return '<label style="display:flex;gap:7px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:8px;"><input type="checkbox" value="'+t+'"> '+label+'</label>';
   }).join("");
 
-  function tr(key,vars){return window.GOA_I18N?window.GOA_I18N.t("myAgriculture",key,vars):key;}\n  function refreshTopicLabels(){topicsEl.querySelectorAll("input").forEach(function(input){var label=input.parentElement;var value=tr("topic_"+input.value);if(label.lastChild)label.lastChild.textContent=" "+value;});}\n  document.addEventListener("goa:languagechange",function(){refreshTopicLabels();render();});\n  function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+  function tr(key,vars){return window.GOA_I18N?window.GOA_I18N.t("myAgriculture",key,vars):key;}
+  function refreshTopicLabels(){topicsEl.querySelectorAll("input").forEach(function(input){var label=input.parentElement;var value=tr("topic_"+input.value);if(label.lastChild)label.lastChild.textContent=" "+value;});}
+  document.addEventListener("goa:languagechange",function(){refreshTopicLabels();render();});\n  function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
   function load(){
     try{
       const p=JSON.parse(localStorage.getItem(STORAGE)||"{}");
