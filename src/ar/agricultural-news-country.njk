@@ -27,7 +27,8 @@ pageLanguage: ar
 {% for article in publishedCountryArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
 <article class="card" style="margin:16px 0;">
-{% if translated and translated.title and translated.summary and article.translation_status == "translated" %}
+{% if translated and translated.title and translated.summary %}
+{% if article.translation_status != "translated" %}<p class="translation-pending-note" data-translation-status="pending"><small>{% if pageLanguage == "fr" %}Traduction à vérifier{% elif pageLanguage == "ar" %}ترجمة قيد المراجعة{% elif pageLanguage == "pt" %}Tradução por verificar{% elif pageLanguage == "sw" %}Tafsiri inahitaji kukaguliwa{% endif %}</small></p>{% endif %}
 <h2>{{ translated.title }}</h2><p>{{ translated.summary }}</p>
 {% else %}
 <p class="translation-pending-note" data-translation-status="pending"><small>الترجمة قيد المراجعة</small></p>
