@@ -26,7 +26,7 @@ permalink: /agricultural-intelligence/
 <script>
 (function(){
   const data = {{ agriculturalKnowledgeConnections.records | jsonify }};
-  const records = {{ agriculturalDecisionCentre.json | replace("</", "<\\/") | safe }};
+  const records = JSON.parse({{ agriculturalDecisionCentre.json | dump | safe }});
   const topics = {{ agriculturalTopicConnections.topics | jsonify }};
   const input = document.getElementById('ai-search'), out = document.getElementById('ai-results'), topicOut = document.getElementById('ai-topics');
   function t(key,vars,fallback){return window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('agriculturalIntelligence',key,vars):fallback;}
