@@ -52,12 +52,12 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
-      "verified": "2026-10-08",
+      "source": "FoodPrices NG — Nigerian market price data",
+      "source_url": "https://foodpriceng.com/prices/",
+      "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "note": "Use the official market selector and observation period before quoting a price.",
+      "status": "reference",
+      "note": "Replacement for the broken NAERLS market-statistics service. FoodPrices NG publishes dated monthly food-price observations sourced from the World Food Programme and Humanitarian Data Exchange, with coverage limited to reported items and markets (currently 14 states, 68 markets and 27 items). This page may not contain this exact commodity or livestock product; confirm the item, market, unit and observation month before using any price. No price is asserted by this reference record.",
       "freshness": "source_reference"
     },
     {
@@ -70,12 +70,13 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
-      "verified": "2026-10-08",
+      "source": "FoodPrices NG — Nigerian market price data",
+      "source_url": "https://foodpriceng.com/prices/",
+      "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "freshness": "source_reference"
+      "status": "reference",
+      "freshness": "source_reference",
+      "note": "Replacement for the broken NAERLS market-statistics service. FoodPrices NG publishes dated monthly food-price observations sourced from the World Food Programme and Humanitarian Data Exchange, with coverage limited to reported items and markets (currently 14 states, 68 markets and 27 items). This page may not contain this exact commodity or livestock product; confirm the item, market, unit and observation month before using any price. No price is asserted by this reference record."
     },
     {
       "country_code": "NG",
@@ -87,12 +88,13 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
-      "verified": "2026-10-08",
+      "source": "FoodPrices NG — Nigerian market price data",
+      "source_url": "https://foodpriceng.com/prices/",
+      "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "freshness": "source_reference"
+      "status": "reference",
+      "freshness": "source_reference",
+      "note": "Replacement for the broken NAERLS market-statistics service. FoodPrices NG publishes dated monthly food-price observations sourced from the World Food Programme and Humanitarian Data Exchange, with coverage limited to reported items and markets (currently 14 states, 68 markets and 27 items). This page may not contain this exact commodity or livestock product; confirm the item, market, unit and observation month before using any price. No price is asserted by this reference record."
     },
     {
       "country_code": "NG",
@@ -104,12 +106,13 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
-      "verified": "2026-10-08",
+      "source": "FoodPrices NG — Nigerian market price data",
+      "source_url": "https://foodpriceng.com/prices/",
+      "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "freshness": "source_reference"
+      "status": "reference",
+      "freshness": "source_reference",
+      "note": "Replacement for the broken NAERLS market-statistics service. FoodPrices NG publishes dated monthly food-price observations sourced from the World Food Programme and Humanitarian Data Exchange, with coverage limited to reported items and markets (currently 14 states, 68 markets and 27 items). This page may not contain this exact commodity or livestock product; confirm the item, market, unit and observation month before using any price. No price is asserted by this reference record."
     },
     {
       "country_code": "NG",
@@ -121,12 +124,12 @@
       "unit": "market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
-      "verified": "2026-10-08",
+      "source": "FoodPrices NG — Nigerian market price data",
+      "source_url": "https://foodpriceng.com/prices/",
+      "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "note": "NAERLS interface includes livestock and fishery market information.",
+      "status": "reference",
+      "note": "Replacement for the broken NAERLS market-statistics service. FoodPrices NG publishes dated monthly food-price observations sourced from the World Food Programme and Humanitarian Data Exchange, with coverage limited to reported items and markets (currently 14 states, 68 markets and 27 items). This page may not contain this exact commodity or livestock product; confirm the item, market, unit and observation month before using any price. No price is asserted by this reference record.",
       "freshness": "source_reference"
     },
     {
@@ -175,12 +178,12 @@
       "unit": "market-specific",
       "price_type": "historical price series",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System — Price History",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/pricehistory",
-      "verified": "2026-10-08",
+      "source": "FoodPrices NG — Nigerian market price data",
+      "source_url": "https://foodpriceng.com/prices/",
+      "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "note": "Provides selectable market, agricultural product and price-regime date filters; exact quotations are retrieved from the official interface.",
+      "status": "reference",
+      "note": "Replacement for the broken NAERLS market-statistics service. FoodPrices NG publishes dated monthly food-price observations sourced from the World Food Programme and Humanitarian Data Exchange, with coverage limited to reported items and markets (currently 14 states, 68 markets and 27 items). This page may not contain this exact commodity or livestock product; confirm the item, market, unit and observation month before using any price. No price is asserted by this reference record.",
       "freshness": "source_reference"
     },
     {
@@ -602,12 +605,12 @@
     {
       "country_code": "NG",
       "scope": "national",
-      "provider": "National Agricultural Extension and Research Liaison Services (NAERLS)",
-      "coverage": "Market/product price information with selectable markets, agricultural products and price regimes",
-      "url": "https://kms.naerls.gov.ng/marketstatistics/indexproducts",
+      "provider": "FoodPrices NG — Nigerian market price data",
+      "coverage": "Dated monthly food-price observations sourced from the World Food Programme and Humanitarian Data Exchange; current site coverage is 14 states, 68 markets and 27 items. Coverage varies by item and market; not a complete national or live quotation service.",
+      "url": "https://foodpriceng.com/prices/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official"
+      "verified": "2026-10-25",
+      "status": "reference"
     },
     {
       "country_code": "NG",
