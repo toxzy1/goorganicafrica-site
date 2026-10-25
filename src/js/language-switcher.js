@@ -124,7 +124,7 @@
     if (rest === "ebooks") return code === "en" ? "/ebooks/" : "/" + code + "/ebooks/";
     if (rest === "organic-farming") return code === "en" ? "/organic-farming/" : "/" + code + "/organic-farming/";
     if (rest === "agricultural-news") return code === "en" ? "/agricultural-news/" : "/" + code + "/agricultural-news/";
-    if (rest === "agriculture-resources") return code === "en" ? "/agriculture-resources/" : "/" + code + "/agriculture-resources/";
+    if (rest === "agriculture-resources") return "/agriculture-resources/";
     if (rest === "agricultural-finance") return code === "en" ? "/agricultural-finance/" : "/" + code + "/agricultural-finance/";
     if (rest === "agricultural-grants") return code === "en" ? "/agricultural-grants/" : "/" + code + "/agricultural-grants/";
     if (rest === "farm-machinery") return code === "en" ? "/farm-machinery/" : "/" + code + "/farm-machinery/";
@@ -132,7 +132,7 @@
     // Search and discovery tools do not have separately generated localized
     // route trees. Keep these tools on their real shared URL while translating
     // their interface; never guess /fr/, /ar/, /pt/ or /sw/ routes that may 404.
-    if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence)$/.test(rest)) {
+    if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|agriculture-resources|agricultural-news)$/.test(rest)) {
       return "/" + rest + "/";
     }
 
@@ -160,7 +160,7 @@
 
       // These pages intentionally use one URL and translate their interface
       // in place. Do not manufacture language-prefixed links that 404.
-      if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|privacy-policy|data-updates)$/.test(section)) {
+      if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|agriculture-resources|agricultural-news|privacy-policy|data-updates)$/.test(section)) {
         link.href = "/" + sectionPath + "/";
         return;
       }
