@@ -47,11 +47,12 @@ pageLanguage: en
 {% for candidate in country.articles %}
   {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and (not candidate.lifecycle or candidate.lifecycle == "current") %}{% set _ = publishedArticles.push(candidate) %}{% endif %}
 {% endfor %}
-{% if publishedArticles.length %}
+{% set renderedArticles = [] %}
 {% for article in publishedArticles %}
 {% set activeLanguage = pageLanguage or language or "en" %}
 {% set translated = article.translations[activeLanguage] if article.translations else null %}
 {% if activeLanguage == "en" or (translated and translated.title and translated.summary) %}
+{% set _ = renderedArticles.push(article) %}
 <article class="card" style="margin:16px 0;">
 <h2>{{ translated.title if translated and translated.title else article.title }}</h2>
 <p>{{ translated.summary if translated and translated.summary else article.summary }}</p>
@@ -72,7 +73,7 @@ pageLanguage: en
 </article>
 {% endif %}
 {% endfor %}
-{% else %}
+{% if renderedArticles.length == 0 %}
 <div class="card news-empty-fallback">
 {% if pageLanguage == "ar" %}
 <h2>يجري التحقق من الأخبار</h2><p>لا توجد أخبار حالية موثقة منشورة بهذه اللغة لهذا البلد حتى الآن. ننشر الأخبار بعد التحقق من مصدر رسمي أو موثوق.</p><p>يمكنك استكشاف <a href="/ar/agriculture-resources/">الموارد الزراعية</a> أو <a href="/opportunities/">الفرص</a> أو <a href="/search/">البحث في معلومات الزراعة</a>.</p>
