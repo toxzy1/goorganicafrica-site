@@ -180,7 +180,7 @@
   function loadLanguage(code) {
     if (dictionary[code]) return Promise.resolve(dictionary[code]);
     if (languageLoads[code]) return languageLoads[code];
-    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261024c", { cache: "default" })
+    languageLoads[code] = fetch("/i18n/" + encodeURIComponent(code) + ".json?v=20261025a", { cache: "default" })
       .then(function (response) {
         if (!response.ok) throw new Error("Translation bundle unavailable");
         return response.json();
@@ -214,8 +214,9 @@
       }
 
       updateLocalizedNavigation(code);
-      var selector = document.getElementById("site-language-select");
-      if (selector) selector.value = code;
+      // Keep every rendered selector synchronized after a language change.
+      document.querySelectorAll('#site-language-select, [data-goa-language-selector] select')
+        .forEach(function (selector) { selector.value = code; });
       document.dispatchEvent(new CustomEvent("goa:languagechange", { detail: { language: code } }));
       return code;
     });
