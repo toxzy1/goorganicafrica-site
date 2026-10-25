@@ -23,22 +23,19 @@ pageLanguage: sw
 {% for candidate in country.articles %}
   {% if (candidate.status == "official" or candidate.status == "published" or candidate.status == "verified") and (not candidate.lifecycle or candidate.lifecycle == "current") %}{% set _ = publishedCountryArticles.push(candidate) %}{% endif %}
 {% endfor %}
-{% if publishedCountryArticles.length %}
+{% set renderedArticles = [] %}
 {% for article in publishedCountryArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
-<article class="card" style="margin:16px 0;">
 {% if translated and translated.title and translated.summary %}
-{% if article.translation_status != "translated" %}<p class="translation-pending-note" data-translation-status="pending"><small>{% if pageLanguage == "fr" %}Traduction à vérifier{% elif pageLanguage == "ar" %}ترجمة قيد المراجعة{% elif pageLanguage == "pt" %}Tradução por verificar{% elif pageLanguage == "sw" %}Tafsiri inahitaji kukaguliwa{% endif %}</small></p>{% endif %}
+{% set _ = renderedArticles.push(article) %}
+<article class="card" style="margin:16px 0;">
 <h2>{{ translated.title }}</h2><p>{{ translated.summary }}</p>
-{% else %}
-<p class="translation-pending-note" data-translation-status="pending"><small>Tafsiri inakaguliwa</small></p>
-<h2>{{ article.title }}</h2><p>{{ article.summary }}</p>
-{% endif %}
-<p><small>Chanzo: {{ article.source }} · Imethibitishwa: {{ article.verified }}</small></p>
-<a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">Soma chanzo cha awali →</a>
+<p><small>{% if pageLanguage == "ar" %}المصدر: {{ article.source }} · تم التحقق: {{ article.verified }}{% elif pageLanguage == "fr" %}Source : {{ article.source }} · Vérifié le : {{ article.verified }}{% elif pageLanguage == "pt" %}Fonte: {{ article.source }} · Verificado em: {{ article.verified }}{% else %}Chanzo: {{ article.source }} · Imethibitishwa: {{ article.verified }}{% endif %}</small></p>
+<a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{% if pageLanguage == "ar" %}قراءة المصدر الأصلي ←{% elif pageLanguage == "fr" %}Lire la source originale →{% elif pageLanguage == "pt" %}Ler a fonte original →{% else %}Soma chanzo asili →{% endif %}</a>
 </article>
+{% endif %}
 {% endfor %}
-{% else %}
+{% if renderedArticles.length == 0 %}
 <div class="card news-empty-fallback"><h2>Habari zinathibitishwa</h2><p>Bado hakuna habari za sasa zilizothibitishwa zilizochapishwa kwa nchi hii. Habari zitaongezwa baada ya kuthibitishwa kutoka chanzo rasmi au kinachoaminika.</p><p>Kwa sasa, tembelea <a href="/sw/agriculture-resources/">rasilimali za kilimo</a>, <a href="/sw/opportunities/">fursa</a>, au <a href="/search/">tafuta taarifa za kilimo</a>.</p></div>
 {% endif %}
 </div></section>
