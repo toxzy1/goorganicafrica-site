@@ -36,16 +36,16 @@ permalink: /agricultural-intelligence/
   function sectionUrl(key){return ({markets:'/markets/',opportunities:'/opportunities/',resources:'/agriculture-resources/',services:'/agricultural-services/',news:'/agricultural-news/'})[key]||'/agriculture-resources/';}
   function render(){
     const q=input.value.trim().toLowerCase();
-    const words=q.split(/\\s+/).filter(Boolean);
+    const words=q.split(/\s+/).filter(Boolean);
     const countryRows=data.filter(x=>{
       if(!words.length) return true;
-      const hay=(x.country+' '+x.code+' '+x.topics.join(' ')+' '+Object.keys(x.sections).join(' ')).toLowerCase();
-      return words.every(w=>hay.includes(w));
+      const hay=[x.country,x.code,(x.topics||[]).join(' '),Object.keys(x.sections||{}).join(' ')].join(' ').toLowerCase();
+      return words.some(w=>hay.includes(w));
     }).map(x=>({kind:'country',country:x.country,title:x.country,section:'',text:x.topics.join(', '),url:'',total:x.total,sections:x.sections}));
     const recordRows=records.filter(x=>{
       if(!words.length) return false;
       const hay=[x.title,x.country,x.country_code,x.section,x.text].join(' ').toLowerCase();
-      return words.every(w=>hay.includes(w));
+      return words.some(w=>hay.includes(w));
     }).map(x=>({kind:'record',country:x.country,title:x.title,section:x.section,text:x.text,url:x.url,total:0,sections:{}}));
     const rows=(q ? [...recordRows,...countryRows] : countryRows).slice(0,60);
     out.innerHTML=rows.length ? rows.map(x=>{
