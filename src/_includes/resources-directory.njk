@@ -63,11 +63,6 @@
   document.querySelectorAll("[data-regional-countries]").forEach(el=>{el.textContent=el.dataset.regionalCountries.split(",").map(code=>localizedCountryName(code,code)).join(", ");});
   c.querySelectorAll("option[data-country-code]").forEach(opt=>{opt.textContent=(opt.dataset.countryFlag||"")+" "+localizedCountryName(opt.dataset.countryCode,opt.dataset.countryName);});
 
-    document.querySelectorAll("[data-resource-country-name]").forEach(el=>{const name=names.of(el.dataset.resourceCountryName);if(name&&name!==el.dataset.resourceCountryName)el.textContent=name;});
-    document.querySelectorAll(".resource-card[data-resource-country-code]").forEach(card=>{const english=card.dataset.resourceCountryName,localized=names.of(card.dataset.resourceCountryCode);if(!english||!localized||localized===card.dataset.resourceCountryCode||localized===english)return;card.querySelectorAll("strong,p").forEach(el=>{if(el.classList.contains("translation-pending-note"))return;el.textContent=el.textContent.split(english).join(localized);});});
-    document.querySelectorAll("[data-regional-countries]").forEach(el=>{el.textContent=el.dataset.regionalCountries.split(",").map(code=>names.of(code)||code).join(", ");});
-    c.querySelectorAll("option[data-country-code]").forEach(opt=>{const name=names.of(opt.dataset.countryCode);opt.textContent=(opt.dataset.countryFlag||"")+" "+(name&&name!==opt.dataset.countryCode?name:opt.dataset.countryName);});
-  }catch(_){}
   function f(){
     const terms=normalize(s.value).split(/\s+/).filter(Boolean),cv=c.value,kv=k.value;let v=0;
     g.forEach(x=>{
