@@ -26,13 +26,18 @@ pageLanguage: fr
 {% set renderedArticles = [] %}
 {% for article in publishedCountryArticles %}
 {% set translated = article.translations[pageLanguage or language] if article.translations else null %}
-{% if translated and translated.title and translated.summary %}
+{% if article.translation_status == "translated" and translated and translated.title and translated.summary %}
 {% set _ = renderedArticles.push(article) %}
 <article class="card" style="margin:16px 0;">
 <h2>{{ translated.title }}</h2><p>{{ translated.summary }}</p>
 <p><small>{% if pageLanguage == "ar" %}المصدر: {{ article.source }} · تم التحقق: {{ article.verified }}{% elif pageLanguage == "fr" %}Source : {{ article.source }} · Vérifié le : {{ article.verified }}{% elif pageLanguage == "pt" %}Fonte: {{ article.source }} · Verificado em: {{ article.verified }}{% else %}Chanzo: {{ article.source }} · Imethibitishwa: {{ article.verified }}{% endif %}</small></p>
 <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{% if pageLanguage == "ar" %}قراءة المصدر الأصلي ←{% elif pageLanguage == "fr" %}Lire la source originale →{% elif pageLanguage == "pt" %}Ler a fonte original →{% else %}Soma chanzo asili →{% endif %}</a>
 </article>
+{% else %}
+{% if article.translation_status != "translated" %}
+{% set _ = renderedArticles.push(article) %}
+<article class="card" style="margin:16px 0;"><p class="translation-pending-note">La traduction de cet article est en cours de révision. Son contenu sera affiché une fois la traduction vérifiée.</p></article>
+{% endif %}
 {% endif %}
 {% endfor %}
 {% if renderedArticles.length == 0 %}
