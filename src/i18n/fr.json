@@ -32,7 +32,9 @@
     "search": "Recherche",
     "decisionCentre": "Centre de décision",
     "myAgriculture": "Mon agriculture",
-    "agriculturalIntelligence": "Intelligence agricole"
+    "agriculturalIntelligence": "Intelligence agricole",
+    "resourcesMoved": "Cette page a été déplacée vers",
+    "viewAgriculturalNews": "Actualités agricoles"
   },
   "calc": {
     "step": "Étape {current} sur {total}",
@@ -668,13 +670,13 @@
     "countryLabel": "Pays",
     "allCountries": "Tous les pays",
     "primaryGoal": "Objectif principal",
-        "goal_market": "Trouver des marchés et des informations sur les prix",
+    "goal_market": "Trouver des marchés et des informations sur les prix",
     "goal_finance": "Trouver des financements et des opportunités",
     "goal_inputs": "Trouver des intrants et des ressources de production",
     "goal_machinery": "Trouver des machines et des services",
     "goal_training": "Trouver des formations et des événements",
     "goal_climate": "Consulter le climat, la résilience et les actualités",
-"fullBrief": "Dossier agricole complet",
+    "fullBrief": "Dossier agricole complet",
     "topicsLegend": "Sujets à suivre",
     "saveButton": "Enregistrer ma veille",
     "clearButton": "Effacer",

@@ -32,7 +32,9 @@
     "search": "Tafuta",
     "decisionCentre": "Kituo cha Maamuzi",
     "myAgriculture": "Kilimo Changu",
-    "agriculturalIntelligence": "Taarifa za Kilimo"
+    "agriculturalIntelligence": "Taarifa za Kilimo",
+    "resourcesMoved": "Ukurasa huu umehamishiwa kwenye",
+    "viewAgriculturalNews": "Habari za Kilimo"
   },
   "calc": {
     "step": "Hatua ya {current} kati ya {total}",
@@ -668,13 +670,13 @@
     "countryLabel": "Nchi",
     "allCountries": "Nchi zote",
     "primaryGoal": "Lengo kuu",
-        "goal_market": "Tafuta masoko na taarifa za bei",
+    "goal_market": "Tafuta masoko na taarifa za bei",
     "goal_finance": "Tafuta ufadhili na fursa",
     "goal_inputs": "Tafuta pembejeo na rasilimali za uzalishaji",
     "goal_machinery": "Tafuta mashine na huduma",
     "goal_training": "Tafuta mafunzo na matukio",
     "goal_climate": "Angalia hali ya hewa, ustahimilivu na habari za sasa",
-"fullBrief": "Muhtasari kamili wa kilimo",
+    "fullBrief": "Muhtasari kamili wa kilimo",
     "topicsLegend": "Mada ninazotaka kufuatilia",
     "saveButton": "Hifadhi orodha yangu",
     "clearButton": "Futa",
