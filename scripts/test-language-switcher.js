@@ -18,6 +18,7 @@ async function scenario(pathname, initialLanguage, targets) {
     addEventListener(name, fn) { listeners[name] = fn; },
     appendChild(option) { this.options.push(option); }
   };
+  const selectorControl = selector;
   const targetMap = targets ? {
     getAttribute(name) {
       const match = name.match(/^data-url-(en|fr|ar|pt|sw)$/);
@@ -37,7 +38,9 @@ async function scenario(pathname, initialLanguage, targets) {
     },
     createElement() { return { value: "", textContent: "" }; },
     querySelector() { return null; },
-    querySelectorAll() { return []; },
+    querySelectorAll(selector) {
+      return selector === '#site-language-select, [data-goa-language-selector] select' ? [selectorControl] : [];
+    },
     dispatchEvent() {}
   };
   const location = {
@@ -70,12 +73,12 @@ async function scenario(pathname, initialLanguage, targets) {
 
 (async () => {
   {
-    const s = await scenario("/search/", "en");
+    const s = await scenario("/markets/", "en");
     s.selector.value = "pt";
     s.listeners.change.call(s.selector);
     await Promise.resolve();
-    assert.deepEqual(s.assigned, [], "shared search should not navigate away");
-    assert.equal(s.location.pathname, "/search/");
+    assert.deepEqual(s.assigned, [], "shared markets page should not navigate away");
+    assert.equal(s.location.pathname, "/markets/");
     assert.equal(s.html.lang, "pt");
     assert.equal(s.storage.goa_language, "pt");
   }
