@@ -183,16 +183,23 @@ permalink: /my-agriculture/
   function save(){
     const p=prefs();
     localStorage.setItem(STORAGE,JSON.stringify(p));
-    localStorage.setItem(CHECK,JSON.stringify({at:new Date().toISOString(),keys:relevant().map(r=>r.section+"|"+r.country_code+"|"+r.title+"|"+r.date)}));
     statusEl.textContent=tr("saved");
     render();
   }
   function check(){
-    let previous=[];
-    try{previous=JSON.parse(localStorage.getItem(CHECK)||"{}").keys||[];}catch(e){}
+    let snapshot=null;
+    try{snapshot=JSON.parse(localStorage.getItem(CHECK)||"null");}catch(e){}
     const current=relevant().map(r=>r.section+"|"+r.country_code+"|"+r.title+"|"+r.date);
-    const old=new Set(previous), added=current.filter(k=>!old.has(k));
-    localStorage.setItem(CHECK,JSON.stringify({at:new Date().toISOString(),keys:current}));
+    if(!snapshot || !Array.isArray(snapshot.keys)){
+      try{localStorage.setItem(CHECK,JSON.stringify({at:new Date().toISOString(),keys:current}));}catch(e){}
+      statusEl.textContent=tr("firstCheckSaved")!=="firstCheckSaved"
+        ? tr("firstCheckSaved")
+        : "First check saved. Check again after new site information is published to compare for updates.";
+      render();
+      return;
+    }
+    const old=new Set(snapshot.keys), added=current.filter(k=>!old.has(k));
+    try{localStorage.setItem(CHECK,JSON.stringify({at:new Date().toISOString(),keys:current}));}catch(e){}
     statusEl.textContent=added.length
       ? tr("newItemsFound",{count:added.length})
       : tr("noNewItems");
