@@ -138,14 +138,14 @@
       "currency": "NGN",
       "unit": "monthly market observation",
       "price_type": "estimated monthly price",
-      "observed_date": "2026-09-01",
+      "observed_date": "2026-10-01",
       "source": "World Bank Real Time Food Prices — Nigeria",
-      "source_url": "https://microdata.worldbank.org/catalog/4503/variable/NGA_2021_RTFP_MKT/V068",
-      "verified": "2026-10-08",
+      "source_url": "https://microdata.worldbank.org/index.php/catalog/4503",
+      "verified": "2026-10-25",
       "source_tier": 2,
       "status": "reference",
-      "note": "Dataset covers 73 Nigerian markets and monthly observations through September 2026.",
-      "freshness": "source_reference"
+      "note": "Official World Bank catalog for Nigeria monthly food-price estimates covering 73 markets. The dataset page lists commodity-level fields including cassava and identifies its latest data version; open the dataset and check the market, commodity and observation month before using a quotation.",
+      "freshness": "recent"
     },
     {
       "country_code": "NG",
@@ -156,14 +156,14 @@
       "currency": "NGN",
       "unit": "market quotation",
       "price_type": "indicative local commodity price",
-      "observed_date": "2026-08-01",
+      "observed_date": "2026-09-01",
       "source": "Nigerian Export Promotion Council (NEPC) — Indicative Market Prices",
       "source_url": "https://nepc.gov.ng/indicative-market-prices/",
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "source_tier": 1,
       "status": "official",
-      "note": "August 2026 indicative local commodity prices are published by NEPC; use the source table for commodity, market, unit and exact quotation before displaying a price.",
-      "freshness": "source_reference"
+      "note": "NEPC's indicative-price page currently lists the September 2026 local commodity price release. Open the dated source document and confirm commodity, state, unit and period before using a quotation.",
+      "freshness": "recent"
     },
     {
       "country_code": "NG",
