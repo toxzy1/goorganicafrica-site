@@ -13,7 +13,7 @@ permalink: /agricultural-intelligence/
   <div style="margin:1.25rem 0;">
     <label for="ai-search"><strong data-i18n="agriculturalIntelligence.searchLabel">Search connected intelligence</strong></label>
     <input id="ai-search" type="search" placeholder="Try Nigeria, maize, finance, irrigation, machinery..." aria-label="Search connected agricultural intelligence" data-i18n-placeholder="agriculturalIntelligence.searchPlaceholder" data-i18n-aria-label="agriculturalIntelligence.searchAria" style="width:100%;max-width:720px;padding:12px;border:1px solid var(--line);border-radius:10px;margin-top:6px;">
-    <p style="margin:.5rem 0 0;"><span data-i18n="agriculturalIntelligence.searchHint">Search by country or topic, then open the matching section. For a full record-by-record search, use</span>.</p>
+    <p style="margin:.5rem 0 0;"><span data-i18n="agriculturalIntelligence.searchHint">Search by country, topic, section or record title. Results link directly to the relevant source or directory.</span>.</p>
   </div>
   <div id="ai-results"></div>
   <div style="margin-top:2rem;">
@@ -26,6 +26,7 @@ permalink: /agricultural-intelligence/
 <script>
 (function(){
   const data = {{ agriculturalKnowledgeConnections.records | jsonify }};
+  const records = {{ agriculturalDecisionCentre.json | replace("</", "<\\/") | safe }};
   const topics = {{ agriculturalTopicConnections.topics | jsonify }};
   const input = document.getElementById('ai-search'), out = document.getElementById('ai-results'), topicOut = document.getElementById('ai-topics');
   function t(key,vars,fallback){return window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('agriculturalIntelligence',key,vars):fallback;}
