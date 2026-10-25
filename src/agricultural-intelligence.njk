@@ -23,11 +23,12 @@ permalink: /agricultural-intelligence/
   </div>
 </div>
 
+<script type="application/json" id="ai-country-data">{{ agriculturalKnowledgeConnections.records | jsonify | replace("</", "<\\/") | safe }}</script>
+<script type="application/json" id="ai-record-data">{{ agriculturalDecisionCentre.records | jsonify | replace("</", "<\\/") | safe }}</script>
+<script type="application/json" id="ai-topic-data">{{ agriculturalTopicConnections.topics | jsonify | replace("</", "<\\/") | safe }}</script>
 <script>
 (function(){
-  const data = {{ agriculturalKnowledgeConnections.records | jsonify | replace("</", "<\\/") | safe }};
-  const records = {{ agriculturalDecisionCentre.records | jsonify | replace("</", "<\\/") | safe }};
-  const topics = {{ agriculturalTopicConnections.topics | jsonify }};
+  let data, records, topics;
   const input = document.getElementById('ai-search'), out = document.getElementById('ai-results'), topicOut = document.getElementById('ai-topics');
   function t(key,vars,fallback){return window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('agriculturalIntelligence',key,vars):fallback;}
   function topicLabel(key,fallback){return window.GOA_I18N&&window.GOA_I18N.t?(window.GOA_I18N.t('myAgriculture','topic_'+key)||fallback):fallback;}
@@ -63,6 +64,15 @@ permalink: /agricultural-intelligence/
   }
   function updateTitle(){document.title=t('title',{},'Agricultural Intelligence Hub')+' | GoOrganicAfrica';}
   if (!input || !out || !topicOut) return;
+  try {
+    data = JSON.parse(document.getElementById('ai-country-data').textContent);
+    records = JSON.parse(document.getElementById('ai-record-data').textContent);
+    topics = JSON.parse(document.getElementById('ai-topic-data').textContent);
+  } catch (error) {
+    out.innerHTML = '<p role="status">Search data could not be read. Please reload this page and try again.</p>';
+    console.error('Agricultural Intelligence Hub data parsing failed:', error);
+    return;
+  }
   out.innerHTML = '<p role="status">Search is ready. Type a country or topic to see matching results.</p>';
   input.addEventListener('input',render);
   document.addEventListener('goa:languagechange',()=>{render();renderTopics();updateTitle();});
