@@ -62,8 +62,8 @@ permalink: /my-agriculture/
 
 <script>
 (function(){
-  const allRecords = {{ agriculturalDecisionCentre.json | safe }};
-  const topics = {{ agriculturalDecisionCentre.topics | jsonify }};
+  const allRecords = {{ agriculturalDecisionCentre.json | replace("</", "<\\/") | safe }};
+  const topics = {{ agriculturalDecisionCentre.topics | dump | safe }};
   const topicLabels = {
     maize:"Maize", rice:"Rice", cassava:"Cassava", soybean:"Soybean", cocoa:"Cocoa",
     coffee:"Coffee", cashew:"Cashew", tea:"Tea", poultry:"Poultry", livestock:"Livestock & Dairy",
