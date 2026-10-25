@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-25",
   "editorial_policy": "Market records are intelligence references, not guaranteed live quotations. Prices must carry a market, commodity, unit, currency, observation date and source. Official or recognized statistical sources are preferred; stale quotations are retained historically rather than presented as current.",
   "schemas": {
     "record": [
@@ -487,7 +487,7 @@
       "source_tier": 1,
       "status": "reference",
       "note": "The previous NAMIS source displayed a database SQL error, so its quotation has been withdrawn and is not presented as a verified current price. Use the FAO FPMA page for available country-level food-price analysis; coverage varies by commodity.",
-      "freshness": "unavailable"
+      "freshness": "stale"
     },
     {
       "country_code": "UG",
@@ -505,7 +505,7 @@
       "source_tier": 1,
       "status": "reference",
       "note": "The previous NAMIS source displayed a database SQL error, so its quotation has been withdrawn and is not presented as a verified current price. Use the FAO FPMA page for available country-level food-price analysis; coverage varies by commodity.",
-      "freshness": "unavailable"
+      "freshness": "stale"
     },
     {
       "country_code": "UG",
@@ -523,7 +523,7 @@
       "source_tier": 1,
       "status": "reference",
       "note": "The previous NAMIS source displayed a database SQL error, so its quotation has been withdrawn and is not presented as a verified current price. Use the FAO FPMA page for available country-level food-price analysis; coverage varies by commodity.",
-      "freshness": "unavailable"
+      "freshness": "stale"
     },
     {
       "country_code": "UG",
@@ -541,7 +541,7 @@
       "source_tier": 1,
       "status": "reference",
       "note": "The previous NAMIS source displayed a database SQL error, so its quotation has been withdrawn and is not presented as a verified current price. Use the FAO FPMA page for available country-level food-price analysis; coverage varies by commodity.",
-      "freshness": "unavailable"
+      "freshness": "stale"
     },
     {
       "country_code": "UG",
@@ -559,7 +559,7 @@
       "source_tier": 1,
       "status": "reference",
       "note": "The previous NAMIS source displayed a database SQL error, so its quotation has been withdrawn and is not presented as a verified current price. Use the FAO FPMA page for available country-level food-price analysis; coverage varies by commodity.",
-      "freshness": "unavailable"
+      "freshness": "stale"
     },
     {
       "country_code": "UG",
@@ -577,7 +577,7 @@
       "source_tier": 1,
       "status": "reference",
       "note": "The previous NAMIS source displayed a database SQL error, so its quotation has been withdrawn and is not presented as a verified current price. Use the FAO FPMA page for available country-level food-price analysis; coverage varies by commodity.",
-      "freshness": "unavailable"
+      "freshness": "stale"
     },
     {
       "country_code": "UG",
@@ -595,7 +595,7 @@
       "source_tier": 1,
       "status": "reference",
       "note": "The previous NAMIS source displayed a database SQL error, so its quotation has been withdrawn and is not presented as a verified current price. Use the FAO FPMA page for available country-level food-price analysis; coverage varies by commodity.",
-      "freshness": "unavailable"
+      "freshness": "stale"
     }
   ],
   "sources": [
@@ -673,10 +673,10 @@
       "country_code": "SADC",
       "scope": "regional",
       "provider": "SADC Agricultural Information Management System (AIMS)",
-      "coverage": "Multilingual regional agricultural information system using Member State data and secondary sources, with market/trade and food-security indicators.",
-      "url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application; requires JavaScript and country-level data availability may vary.",
+      "url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official"
     }
   ],
@@ -760,36 +760,36 @@
       "country": "Tanzania",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "ZA",
       "country": "South Africa",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "ZM",
       "country": "Zambia",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "RW",
@@ -844,12 +844,12 @@
       "country": "Angola",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "BJ",
@@ -868,12 +868,12 @@
       "country": "Botswana",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "BF",
@@ -940,24 +940,24 @@
       "country": "Comoros",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "CD",
       "country": "Democratic Republic of the Congo",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "CI",
@@ -1024,12 +1024,12 @@
       "country": "Eswatini",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "GA",
@@ -1084,12 +1084,12 @@
       "country": "Lesotho",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "LR",
@@ -1120,24 +1120,24 @@
       "country": "Madagascar",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "MW",
       "country": "Malawi",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "ML",
@@ -1168,12 +1168,12 @@
       "country": "Mauritius",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "MA",
@@ -1192,24 +1192,24 @@
       "country": "Mozambique",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "NA",
       "country": "Namibia",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "NE",
@@ -1264,12 +1264,12 @@
       "country": "Seychelles",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     },
     {
       "country_code": "SL",
@@ -1348,12 +1348,12 @@
       "country": "Zimbabwe",
       "primary_market_source": "SADC Agricultural Information Management System (AIMS)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system with Member State data, including market and trade indicators, agricultural statistics and food-security information.",
-      "source_url": "https://aims.sadc.int/agricultural-information-management-system",
+      "coverage": "Direct SADC AIMS application for regional agricultural information. The app requires JavaScript; available commodity and price data vary by country.",
+      "source_url": "https://aimsapp.sadc.int/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only when the app provides a dated commodity, market, unit and price; otherwise treat as a general information source."
     }
   ],
   "market_intelligence": {
