@@ -52,12 +52,12 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://naerls.gov.ng/",
+      "source": "National Food Price Platform — Nigeria",
+      "source_url": "https://app.foodprice.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
       "status": "reference",
-      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked.",
+      "note": "Replacement for the broken NAERLS market-search endpoint. The National Food Price Platform opens a market-price listing, but this record has no price of its own. Confirm the exact commodity, market, unit, observation date and source shown on the platform before using any quotation.",
       "freshness": "source_reference"
     },
     {
@@ -70,13 +70,13 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://naerls.gov.ng/",
+      "source": "National Food Price Platform — Nigeria",
+      "source_url": "https://app.foodprice.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
       "status": "reference",
       "freshness": "source_reference",
-      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked."
+      "note": "Replacement for the broken NAERLS market-search endpoint. The National Food Price Platform opens a market-price listing, but this record has no price of its own. Confirm the exact commodity, market, unit, observation date and source shown on the platform before using any quotation."
     },
     {
       "country_code": "NG",
@@ -88,13 +88,13 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://naerls.gov.ng/",
+      "source": "National Food Price Platform — Nigeria",
+      "source_url": "https://app.foodprice.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
       "status": "reference",
       "freshness": "source_reference",
-      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked."
+      "note": "Replacement for the broken NAERLS market-search endpoint. The National Food Price Platform opens a market-price listing, but this record has no price of its own. Confirm the exact commodity, market, unit, observation date and source shown on the platform before using any quotation."
     },
     {
       "country_code": "NG",
@@ -106,13 +106,13 @@
       "unit": "local market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://naerls.gov.ng/",
+      "source": "National Food Price Platform — Nigeria",
+      "source_url": "https://app.foodprice.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
       "status": "reference",
       "freshness": "source_reference",
-      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked."
+      "note": "Replacement for the broken NAERLS market-search endpoint. The National Food Price Platform opens a market-price listing, but this record has no price of its own. Confirm the exact commodity, market, unit, observation date and source shown on the platform before using any quotation."
     },
     {
       "country_code": "NG",
@@ -124,12 +124,12 @@
       "unit": "market unit",
       "price_type": "market reference",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://naerls.gov.ng/",
+      "source": "National Food Price Platform — Nigeria",
+      "source_url": "https://app.foodprice.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
       "status": "reference",
-      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked.",
+      "note": "Replacement for the broken NAERLS market-search endpoint. The National Food Price Platform opens a market-price listing, but this record has no price of its own. Confirm the exact commodity, market, unit, observation date and source shown on the platform before using any quotation.",
       "freshness": "source_reference"
     },
     {
@@ -178,12 +178,12 @@
       "unit": "market-specific",
       "price_type": "historical price series",
       "observed_date": "",
-      "source": "NAERLS National Food Price Monitoring and Market Information System — Price History",
-      "source_url": "https://naerls.gov.ng/",
+      "source": "National Food Price Platform — Nigeria",
+      "source_url": "https://app.foodprice.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
       "status": "reference",
-      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked.",
+      "note": "Replacement for the broken NAERLS market-search endpoint. The National Food Price Platform opens a market-price listing, but this record has no price of its own. Confirm the exact commodity, market, unit, observation date and source shown on the platform before using any quotation.",
       "freshness": "source_reference"
     },
     {
@@ -605,9 +605,9 @@
     {
       "country_code": "NG",
       "scope": "national",
-      "provider": "National Agricultural Extension and Research Liaison Services (NAERLS)",
-      "coverage": "Institutional contact/reference only. The NAERLS market-price interface exposed a Laravel application error during verification; do not use it as a functioning live-price link until repaired.",
-      "url": "https://naerls.gov.ng/",
+      "provider": "National Food Price Platform — Nigeria",
+      "coverage": "Public market-price listing for Nigerian food items. Coverage, market, units, observation dates and underlying source vary by record; inspect each listing before citing or using a price.",
+      "url": "https://app.foodprice.ng/",
       "source_tier": 1,
       "verified": "2026-10-25",
       "status": "reference"
