@@ -32,7 +32,9 @@
     "search": "Search",
     "decisionCentre": "Decision Centre",
     "myAgriculture": "My Agriculture",
-    "agriculturalIntelligence": "Intelligence Hub"
+    "agriculturalIntelligence": "Intelligence Hub",
+    "resourcesMoved": "This page has moved to",
+    "viewAgriculturalNews": "Agricultural News"
   },
   "calc": {
     "step": "Step {current} of {total}",
@@ -668,13 +670,13 @@
     "countryLabel": "Country",
     "allCountries": "All countries",
     "primaryGoal": "Primary goal",
-        "goal_market": "Find markets & price information",
+    "goal_market": "Find markets & price information",
     "goal_finance": "Find finance & opportunities",
     "goal_inputs": "Find inputs & production resources",
     "goal_machinery": "Find machinery & services",
     "goal_training": "Find training & events",
     "goal_climate": "Check climate, resilience & current news",
-"fullBrief": "Full agricultural brief",
+    "fullBrief": "Full agricultural brief",
     "topicsLegend": "Topics I want to follow",
     "saveButton": "Save my watchlist",
     "clearButton": "Clear",
