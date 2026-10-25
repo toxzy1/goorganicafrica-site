@@ -42,7 +42,7 @@ permalink: /my-agriculture/
       <button id="watch-clear" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);" data-i18n="myAgriculture.clearButton">Clear</button>
       <button id="watch-check" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);" data-i18n="myAgriculture.checkButton">Check for updates</button>
     </div>
-    <p id="watch-status" style="margin:.75rem 0 0;font-size:.9rem;"></p>
+    <p id="watch-status" role="status" aria-live="polite" style="display:block;min-height:1.5em;margin:.75rem 0 0;padding:10px 12px;font-size:1rem;font-weight:600;border:1px solid var(--line);border-radius:8px;background:var(--surface,transparent);"></p>
   </div>
 
   <div id="watch-summary" class="card" style="padding:18px;margin:1.25rem 0;"></div>
@@ -214,7 +214,14 @@ permalink: /my-agriculture/
     countryEl.value="";goalEl.value="all";topicsEl.querySelectorAll("input").forEach(x=>x.checked=false);
     statusEl.textContent=tr("cleared");render();
   });
-  document.getElementById("watch-check").addEventListener("click",check);
+  document.getElementById("watch-check").addEventListener("click",function(){
+    statusEl.textContent=tr("checkingUpdates")!=="checkingUpdates"?tr("checkingUpdates"):"Checking your saved watchlist against the agricultural records currently available on this page…";
+    try { check(); }
+    catch(error) {
+      statusEl.textContent="The update check could not finish. Please reload the page and try again. Details: "+(error&&error.message?error.message:"unknown error");
+      console.error("GoOrganicAfrica watchlist check failed:",error);
+    }
+  });
   [countryEl,goalEl].forEach(el=>el.addEventListener("change",render));
   topicsEl.addEventListener("change",render);
   load();localizeSelectOptions(window.GOA_I18N ? window.GOA_I18N.lang() : "en");render();
