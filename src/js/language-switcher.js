@@ -233,7 +233,7 @@
     ready: ready
   };
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function initializeLanguageSelectors() {
     // Some templates can render more than one language selector. Do not use
     // getElementById here: it binds only the first matching control, leaving
     // any additional visible selector inert.
@@ -274,5 +274,13 @@
       uniqueSelectors.forEach(function (selector) { selector.value = code; });
       readyResolve(window.GOA_I18N);
     });
-  });
+  }
+
+  // Bind selectors whether this script executes before or after DOMContentLoaded.
+  // A late-loaded script otherwise leaves the language control visible but inert.
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeLanguageSelectors, { once: true });
+  } else {
+    initializeLanguageSelectors();
+  }
 }());
