@@ -53,11 +53,11 @@
       "price_type": "market reference",
       "observed_date": "",
       "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexpricing",
+      "source_url": "https://naerls.gov.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "note": "Use the official price-search filters to select a state or zone, location, market, agricultural product and price regime before quoting a price.",
+      "status": "reference",
+      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked.",
       "freshness": "source_reference"
     },
     {
@@ -71,11 +71,12 @@
       "price_type": "market reference",
       "observed_date": "",
       "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexpricing",
+      "source_url": "https://naerls.gov.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "freshness": "source_reference"
+      "status": "reference",
+      "freshness": "source_reference",
+      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked."
     },
     {
       "country_code": "NG",
@@ -88,11 +89,12 @@
       "price_type": "market reference",
       "observed_date": "",
       "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexpricing",
+      "source_url": "https://naerls.gov.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "freshness": "source_reference"
+      "status": "reference",
+      "freshness": "source_reference",
+      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked."
     },
     {
       "country_code": "NG",
@@ -105,11 +107,12 @@
       "price_type": "market reference",
       "observed_date": "",
       "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexpricing",
+      "source_url": "https://naerls.gov.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "freshness": "source_reference"
+      "status": "reference",
+      "freshness": "source_reference",
+      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked."
     },
     {
       "country_code": "NG",
@@ -122,11 +125,11 @@
       "price_type": "market reference",
       "observed_date": "",
       "source": "NAERLS National Food Price Monitoring and Market Information System",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/indexpricing",
+      "source_url": "https://naerls.gov.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "note": "NAERLS interface includes livestock and fishery market information.",
+      "status": "reference",
+      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked.",
       "freshness": "source_reference"
     },
     {
@@ -176,11 +179,11 @@
       "price_type": "historical price series",
       "observed_date": "",
       "source": "NAERLS National Food Price Monitoring and Market Information System — Price History",
-      "source_url": "https://kms.naerls.gov.ng/marketstatistics/pricehistory",
+      "source_url": "https://naerls.gov.ng/",
       "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "note": "Provides selectable market, agricultural product and price-regime date filters; exact quotations are retrieved from the official interface.",
+      "status": "reference",
+      "note": "NAERLS market-price search was observed exposing a Laravel application error and internal configuration. This link is only to the institution's main website; do not treat it as a working price search or as a current commodity quotation until the service is repaired and checked.",
       "freshness": "source_reference"
     },
     {
@@ -603,11 +606,11 @@
       "country_code": "NG",
       "scope": "national",
       "provider": "National Agricultural Extension and Research Liaison Services (NAERLS)",
-      "coverage": "Market/product price information with selectable markets, agricultural products and price regimes",
-      "url": "https://kms.naerls.gov.ng/marketstatistics/indexpricing",
+      "coverage": "Institutional contact/reference only. The NAERLS market-price interface exposed a Laravel application error during verification; do not use it as a functioning live-price link until repaired.",
+      "url": "https://naerls.gov.ng/",
       "source_tier": 1,
       "verified": "2026-10-25",
-      "status": "official"
+      "status": "reference"
     },
     {
       "country_code": "NG",
