@@ -26,7 +26,7 @@ permalink: /my-agriculture/
       </label>
       <label><strong data-i18n="myAgriculture.primaryGoal">Primary goal</strong><br>
         <select id="watch-goal" style="width:100%;padding:11px;margin-top:6px;border:1px solid var(--line);border-radius:8px;">
-          <option value="all" data-i18n="myAgriculture.fullBrief">Full agricultural brief</option>
+          <option value="all" data-i18n="myAgriculture.fullBrief" data-goal-label="Full agricultural brief">Full agricultural brief</option>
           {% for g in agriculturalDecisionCentre.goals %}
           {% if g.id != "all" %}<option value="{{ g.id }}" data-goal-id="{{ g.id }}" data-goal-label="{{ g.label | escape }}">{{ g.label }}</option>{% endif %}
           {% endfor %}
@@ -118,9 +118,15 @@ permalink: /my-agriculture/
     });
     Array.prototype.forEach.call(goalEl.options,function(option){
       var id=option.getAttribute("data-goal-id");
-      if(!id){option.textContent=tr("fullBrief");return;}
-      var key="goal_"+id, translated=tr(key);
-      option.textContent=translated&&translated!==key?translated:(option.getAttribute("data-goal-label")||option.textContent);
+      if(!id){
+        var fullBrief=tr("fullBrief");
+        option.textContent=fullBrief&&fullBrief!=="undefined"&&fullBrief!=="null"&&fullBrief!=="fullBrief"
+          ? fullBrief
+          : (option.getAttribute("data-goal-label")||"Full agricultural brief");
+        return;
+      }
+      var key="goal_"+id, translated=tr(key), fallback=option.getAttribute("data-goal-label")||option.textContent;
+      option.textContent=translated&&translated!=="undefined"&&translated!=="null"&&translated!==key?translated:fallback;
     });
   }
   function refreshTopicLabels(){topicsEl.querySelectorAll("input").forEach(function(input){var label=input.parentElement;var key="topic_"+input.value;var value=tr(key);if(value&&value!==key&&label.lastChild)label.lastChild.textContent=" "+value;});}
