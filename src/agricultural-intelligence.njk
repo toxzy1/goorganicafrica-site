@@ -25,8 +25,8 @@ permalink: /agricultural-intelligence/
 
 <script>
 (function(){
-  const data = {{ agriculturalKnowledgeConnections.records | jsonify }};
-  const records = {{ agriculturalDecisionCentre.records | jsonify }};
+  const data = {{ agriculturalKnowledgeConnections.records | jsonify | replace("</", "<\\/") | safe }};
+  const records = {{ agriculturalDecisionCentre.records | jsonify | replace("</", "<\\/") | safe }};
   const topics = {{ agriculturalTopicConnections.topics | jsonify }};
   const input = document.getElementById('ai-search'), out = document.getElementById('ai-results'), topicOut = document.getElementById('ai-topics');
   function t(key,vars,fallback){return window.GOA_I18N&&window.GOA_I18N.t?window.GOA_I18N.t('agriculturalIntelligence',key,vars):fallback;}
@@ -62,6 +62,8 @@ permalink: /agricultural-intelligence/
     topicOut.innerHTML=topics.map(item=>'<div class="card" style="padding:14px;"><strong>'+esc(topicLabel(item.key,item.label))+'</strong><br><span style="font-size:.85rem;">'+esc(t('topicCount',{count:item.total},item.total+' connected records'))+'</span><br><span style="font-size:.8rem;">'+Object.entries(item.sections).map(([k,n])=>esc(sectionLabel(k))+' '+n).join(' · ')+'</span></div>').join('');
   }
   function updateTitle(){document.title=t('title',{},'Agricultural Intelligence Hub')+' | GoOrganicAfrica';}
+  if (!input || !out || !topicOut) return;
+  out.innerHTML = '<p role="status">Search is ready. Type a country or topic to see matching results.</p>';
   input.addEventListener('input',render);
   document.addEventListener('goa:languagechange',()=>{render();renderTopics();updateTitle();});
   try {
