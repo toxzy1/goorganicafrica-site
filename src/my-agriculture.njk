@@ -42,7 +42,7 @@ permalink: /my-agriculture/
       <button id="watch-clear" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);" data-i18n="myAgriculture.clearButton">Clear</button>
       <button id="watch-check" type="button" style="background:transparent;color:inherit;border:1px solid var(--line);" data-i18n="myAgriculture.checkButton">Check for updates</button>
     </div>
-    <p id="watch-status" role="status" aria-live="polite" style="display:block;min-height:1.5em;margin:.75rem 0 0;padding:10px 12px;font-size:1rem;font-weight:600;border:1px solid var(--line);border-radius:8px;background:var(--surface,transparent);"></p>
+    <p id="watch-status" role="status" aria-live="polite" style="display:block;min-height:1.5em;margin:.75rem 0 0;padding:10px 12px;font-size:1rem;font-weight:600;border:1px solid var(--line);border-radius:8px;background:var(--surface,transparent);">Watchlist script is loading. If this message remains, reload the page.</p>
   </div>
 
   <div id="watch-summary" class="card" style="padding:18px;margin:1.25rem 0;"></div>
@@ -84,6 +84,23 @@ permalink: /my-agriculture/
   const statusEl=document.getElementById("watch-status");
   const STORAGE="goa-my-agriculture-v1";
   const CHECK="goa-my-agriculture-last-check-v1";
+  // Bind the update button before rendering or localization can interrupt setup.
+  const checkButton=document.getElementById("watch-check");
+  if(checkButton){
+    checkButton.addEventListener("click",function(){
+      statusEl.textContent="Checking your saved watchlist…";
+      try {
+        if(typeof check!=="function") throw new Error("The update-check function did not initialize.");
+        check();
+      } catch(error) {
+        statusEl.textContent="Update check failed: "+(error&&error.message?error.message:"unknown error");
+        console.error("GoOrganicAfrica watchlist check failed:",error);
+      }
+    });
+    statusEl.textContent="Watchlist ready. Tap “Check for updates” to compare available records.";
+  } else {
+    statusEl.textContent="Update button could not be found on this page.";
+  }
 
   topicsEl.innerHTML=topics.map(t=>{
     const label=(window.GOA_I18N&&window.GOA_I18N.t("myAgriculture","topic_"+t))||topicLabels[t]||t.replace(/-/g," ");
@@ -213,14 +230,6 @@ permalink: /my-agriculture/
     localStorage.removeItem(STORAGE);localStorage.removeItem(CHECK);
     countryEl.value="";goalEl.value="all";topicsEl.querySelectorAll("input").forEach(x=>x.checked=false);
     statusEl.textContent=tr("cleared");render();
-  });
-  document.getElementById("watch-check").addEventListener("click",function(){
-    statusEl.textContent=tr("checkingUpdates")!=="checkingUpdates"?tr("checkingUpdates"):"Checking your saved watchlist against the agricultural records currently available on this page…";
-    try { check(); }
-    catch(error) {
-      statusEl.textContent="The update check could not finish. Please reload the page and try again. Details: "+(error&&error.message?error.message:"unknown error");
-      console.error("GoOrganicAfrica watchlist check failed:",error);
-    }
   });
   [countryEl,goalEl].forEach(el=>el.addEventListener("change",render));
   topicsEl.addEventListener("change",render);
