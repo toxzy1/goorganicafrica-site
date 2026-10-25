@@ -662,12 +662,12 @@
     {
       "country_code": "WEST-AFRICA",
       "scope": "regional",
-      "provider": "ECOWAS ECOAGRIS",
-      "coverage": "Integrated agricultural information system for ECOWAS, supporting production, market, price and farmer data and regional food-security/trade decisions.",
+      "provider": "ECOWAS ECOAGRIS (data portal unavailable during verification)",
+      "coverage": "The ECOTIS information page opens, but the linked ECOAGRIS data portal returned HTTP 502 during verification. Country cards temporarily use FAO FPMA as a fallback.",
       "url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official"
+      "verified": "2026-10-25",
+      "status": "reference"
     },
     {
       "country_code": "SADC",
@@ -683,53 +683,53 @@
   "regional_roundups": [
     {
       "region": "East Africa",
-      "published": "2026-09-14",
+      "published": "2026-10-13",
       "title": "Coarse-grain prices elevated in Sudan, South Sudan and Somalia",
       "source": "FAO FPMA",
       "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
-      "verified": "2026-10-08"
+      "verified": "2026-10-25"
     },
     {
       "region": "West Africa",
-      "published": "2026-09-14",
+      "published": "2026-10-13",
       "title": "Coarse-grain prices varied but remained lower year-on-year in monitored markets",
       "source": "FAO FPMA",
       "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
-      "verified": "2026-10-08"
+      "verified": "2026-10-25"
     },
     {
       "region": "Southern Africa",
-      "published": "2026-09-14",
+      "published": "2026-10-13",
       "title": "Seasonal maize price increases emerged while abundant supplies contained upward pressure",
       "source": "FAO FPMA",
       "url": "https://www.fao.org/giews/food-prices/regional-roundups/en/",
-      "verified": "2026-10-08"
+      "verified": "2026-10-25"
     }
   ],
   "country_source_map": [
     {
       "country_code": "NG",
       "country": "Nigeria",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "GH",
       "country": "Ghana",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "KE",
@@ -854,14 +854,14 @@
     {
       "country_code": "BJ",
       "country": "Benin",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "BW",
@@ -878,14 +878,14 @@
     {
       "country_code": "BF",
       "country": "Burkina Faso",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "BI",
@@ -902,14 +902,14 @@
     {
       "country_code": "CV",
       "country": "Cabo Verde",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "CF",
@@ -962,14 +962,14 @@
     {
       "country_code": "CI",
       "country": "Côte d'Ivoire",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "DJ",
@@ -1046,38 +1046,38 @@
     {
       "country_code": "GM",
       "country": "Gambia",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "GN",
       "country": "Guinea",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "GW",
       "country": "Guinea-Bissau",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "LS",
@@ -1094,14 +1094,14 @@
     {
       "country_code": "LR",
       "country": "Liberia",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "LY",
@@ -1142,26 +1142,26 @@
     {
       "country_code": "ML",
       "country": "Mali",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "MR",
       "country": "Mauritania",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "MU",
@@ -1214,14 +1214,14 @@
     {
       "country_code": "NE",
       "country": "Niger",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "CG",
@@ -1250,14 +1250,14 @@
     {
       "country_code": "SN",
       "country": "Senegal",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "SC",
@@ -1274,14 +1274,14 @@
     {
       "country_code": "SL",
       "country": "Sierra Leone",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "SO",
@@ -1322,14 +1322,14 @@
     {
       "country_code": "TG",
       "country": "Togo",
-      "primary_market_source": "ECOWAS ECOAGRIS",
+      "primary_market_source": "FAO FPMA (temporary fallback; ECOAGRIS portal unavailable)",
       "source_scope": "regional",
-      "coverage": "Regional agricultural information system covering production, market, price and farmer data across ECOWAS Member States; use for regional market intelligence and cross-checking national sources.",
-      "source_url": "https://ecotis.ecowas.int/ecotis/page2?langid=1&mid=4&pid=26",
+      "coverage": "Temporary fallback while the ECOAGRIS data portal is unavailable. FAO FPMA publishes dated food-price analysis for selected countries and commodities; it does not guarantee a local quote for every market or crop.",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "source_tier": 1,
-      "verified": "2026-10-08",
-      "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "verified": "2026-10-25",
+      "status": "reference",
+      "price_usage": "Use only if a dated commodity, market, unit and price are available in the source; otherwise treat as a reference, not a local quotation."
     },
     {
       "country_code": "TN",
@@ -1359,11 +1359,11 @@
   "market_intelligence": {
     "international": [
       {
-        "provider": "FAO Food Price Monitoring and Analysis (FPMA)",
+        "provider": "FAO Food Price Monitoring and Analysis (FPMA) Tool",
         "scope": "domestic",
-        "coverage": "Domestic food prices, price changes and anomalies; compare markets, commodities and seasons.",
-        "url": "https://www.fao.org/giews/food-prices/price-tool/en/",
-        "verified": "2026-10-08",
+        "coverage": "Direct FAO global tool for exploring domestic and international food prices across available markets and commodities.",
+        "url": "https://fpma.fao.org/giews/fpmat4/global/",
+        "verified": "2026-10-25",
         "source_tier": 1
       },
       {
