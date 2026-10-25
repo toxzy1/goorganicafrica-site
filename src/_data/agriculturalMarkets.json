@@ -465,14 +465,14 @@
       "currency": "TZS",
       "unit": "market-specific",
       "price_type": "weekly livestock market signal",
-      "observed_date": "2026-09-30",
+      "observed_date": "2026-10-22",
       "source": "Tanzania Meat Board — Pugu Livestock Market Information Report",
-      "source_url": "https://www.tmb.go.tz/news/pugu-livestock-market-information-report-for-week-ending-30-september-2026",
-      "verified": "2026-10-08",
+      "source_url": "https://www.tmb.go.tz/news/pugu-livestock-market-information-report-for-week-ending-22-october-2026",
+      "verified": "2026-10-25",
       "source_tier": 1,
       "status": "official",
-      "note": "Official report says average livestock prices fell in the week ending 30 September 2026, attributed largely to increased livestock supply and lower demand.",
-      "freshness": "source_reference"
+      "note": "Tanzania Meat Board report for the week ending 22 October 2026. Read the published report for the exact livestock class, market, unit and price; do not treat this general record as a specific quotation.",
+      "freshness": "recent"
     },
     {
       "country_code": "UG",
@@ -737,14 +737,14 @@
     {
       "country_code": "KE",
       "country": "Kenya",
-      "primary_market_source": "FAO Food Price Monitoring and Analysis (FPMA)",
-      "source_scope": "continental",
-      "coverage": "Internationally comparable domestic food-price monitoring and market intelligence; country coverage varies by commodity, market and reporting frequency.",
-      "source_url": "https://www.fao.org/giews/food-prices/en/",
+      "primary_market_source": "Warehouse Receipt System Council (WRSC) — Weekly Market Analysis",
+      "source_scope": "national",
+      "coverage": "Kenya's WRSC publishes dated weekly commodity-market analysis with commodity varieties, units and KSh prices. Use the dated report for the specific commodity and period; it is not a live quote for every Kenyan market.",
+      "source_url": "https://wrsc.go.ke/2026/10/19/weekly-market-analysis-2/",
       "source_tier": 1,
-      "verified": "2026-10-08",
+      "verified": "2026-10-25",
       "status": "official",
-      "price_usage": "Reference source; do not display a current price unless commodity, market, unit and observation date are available."
+      "price_usage": "Use only the dated commodity/variety, unit, price and report period shown in the WRSC report; do not present it as a live local quote."
     },
     {
       "country_code": "UG",
