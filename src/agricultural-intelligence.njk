@@ -33,18 +33,30 @@ permalink: /agricultural-intelligence/
   function topicLabel(key,fallback){return window.GOA_I18N&&window.GOA_I18N.t?(window.GOA_I18N.t('myAgriculture','topic_'+key)||fallback):fallback;}
   function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
   function sectionLabel(key){return t('section_'+key,{},key);}
+  function sectionUrl(key){return ({markets:'/markets/',opportunities:'/opportunities/',resources:'/agriculture-resources/',services:'/agricultural-services/',news:'/agricultural-news/'})[key]||'/agriculture-resources/';}
   function render(){
     const q=input.value.trim().toLowerCase();
-    const words=q.split(/\s+/).filter(Boolean);
-    const rows=data.filter(x=>{
+    const words=q.split(/\\s+/).filter(Boolean);
+    const countryRows=data.filter(x=>{
       if(!words.length) return true;
-      const hay=(x.country+' '+x.topics.join(' ')).toLowerCase();
+      const hay=(x.country+' '+x.code+' '+x.topics.join(' ')+' '+Object.keys(x.sections).join(' ')).toLowerCase();
       return words.every(w=>hay.includes(w));
-    }).slice(0,54);
+    }).map(x=>({kind:'country',country:x.country,title:x.country,section:'',text:x.topics.join(', '),url:'',total:x.total,sections:x.sections}));
+    const recordRows=records.filter(x=>{
+      if(!words.length) return false;
+      const hay=[x.title,x.country,x.country_code,x.section,x.text].join(' ').toLowerCase();
+      return words.every(w=>hay.includes(w));
+    }).map(x=>({kind:'record',country:x.country,title:x.title,section:x.section,text:x.text,url:x.url,total:0,sections:{}}));
+    const rows=(q ? [...recordRows,...countryRows] : countryRows).slice(0,60);
     out.innerHTML=rows.length ? rows.map(x=>{
-      const links=Object.entries(x.sections).map(([k,n])=>esc(sectionLabel(k))+' ('+n+')').join(' · ');
+      if(x.kind==='record'){
+        const destination=x.url||sectionUrl(x.section);
+        const title='<a href="'+esc(destination)+'"'+(x.url?' target="_blank" rel="noopener noreferrer"':'')+'>'+esc(x.title)+'</a>';
+        return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+title+'</h2><p>'+esc(x.country)+' · '+esc(sectionLabel(x.section))+'</p><p>'+esc(x.text)+'</p></article>';
+      }
+      const links=Object.entries(x.sections).map(([k,n])=>'<a href="'+sectionUrl(k)+'">'+esc(sectionLabel(k))+' ('+n+')</a>').join(' · ');
       return '<article class="card" style="margin:0 0 12px;padding:16px;"><h2 style="margin-top:0;">'+esc(x.country)+'</h2><p><strong>'+x.total+'</strong> '+esc(t('recordCount',{count:x.total},x.total+' connected intelligence records'))+'</p><p>'+links+'</p></article>';
-    }).join('') : '<p>'+esc(t('noResults',{},'No connected intelligence found. Try a country name or broader topic.'))+'</p>';
+    }).join('') : '<p>'+esc(t('noResults',{},'No connected intelligence found. Try a country name, topic, section or record title.'))+'</p>';
   }
   function renderTopics(){
     topicOut.innerHTML=topics.map(item=>'<div class="card" style="padding:14px;"><strong>'+esc(topicLabel(item.key,item.label))+'</strong><br><span style="font-size:.85rem;">'+esc(t('topicCount',{count:item.total},item.total+' connected records'))+'</span><br><span style="font-size:.8rem;">'+Object.entries(item.sections).map(([k,n])=>esc(sectionLabel(k))+' '+n).join(' · ')+'</span></div>').join('');
