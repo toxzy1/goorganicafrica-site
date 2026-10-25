@@ -465,14 +465,14 @@
       "currency": "TZS",
       "unit": "market-specific",
       "price_type": "weekly livestock market signal",
-      "observed_date": "2026-10-22",
-      "source": "Tanzania Meat Board — Pugu Livestock Market Information Report",
-      "source_url": "https://www.tmb.go.tz/news/pugu-livestock-market-information-report-for-week-ending-22-october-2026",
+      "observed_date": "",
+      "source": "Tanzania Meat Board — source unavailable; quotation withdrawn",
+      "source_url": "https://www.fao.org/giews/food-prices/en/",
       "verified": "2026-10-25",
       "source_tier": 1,
-      "status": "official",
-      "note": "Tanzania Meat Board report for the week ending 22 October 2026. Read the published report for the exact livestock class, market, unit and price; do not treat this general record as a specific quotation.",
-      "freshness": "recent"
+      "status": "reference",
+      "note": "The Tanzania Meat Board report links currently redirect to an unrelated education-agency website during verification. This livestock quotation is withdrawn and no current price is displayed. FAO FPMA is a general food-price reference only; it may not contain comparable Pugu livestock prices.",
+      "freshness": "stale"
     },
     {
       "country_code": "UG",
