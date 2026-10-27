@@ -105,7 +105,9 @@ const callbackPage = (status: string, token: string) => {
       '}' +
       'handoff();' +
     '}else{' +
-      'status.textContent=' + JSON.stringify(status === 'success' ? 'GitHub authorized this request, but no CMS window was detected. Leave this page open, return to the CMS, and try signing in again.' : 'Authentication failed. Return to the CMS and try again.') + ';' +
+      'status.textContent=' + JSON.stringify(status === 'success' ? 'GitHub sign-in complete. Returning the result to the CMS…' : 'GitHub sign-in failed. Returning to the CMS…') + ';' +
+      'var fallback=' + JSON.stringify('https://goorganicafrica-site.pages.dev/admin/#goa-oauth=') + '+' + 'encodeURIComponent(JSON.stringify({message:message}));' +
+      'window.location.replace(fallback);' +
     '}' +
     '</script></body></html>';
 
