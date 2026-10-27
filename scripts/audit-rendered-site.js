@@ -343,6 +343,29 @@ if (!fs.existsSync(decisionUiPath)) {
   if (!decisionUi.includes("Showing broader country-level records")) failures.push("Decision Centre: fallback is not explained to visitors");
   if (!decisionUi.includes("goa:languagechange")) failures.push("Decision Centre: results are not refreshed after language changes");
 }
+// Validate a URL target without requiring the retired global search page.
+function searchTargetExists(rawUrl) {
+  const value = String(rawUrl || "").trim().replace(/&amp;/g, "&");
+  if (!value || /^(javascript:|data:|vbscript:)/i.test(value)) return false;
+  if (/^https?:\\/\\//i.test(value)) return true;
+  if (/^(mailto:|tel:)/i.test(value) || /^\\/\\//.test(value)) return true;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return false;
+  const pathname = value.split(/[?#]/)[0];
+  const normalized = pathname.startsWith("/") ? pathname.slice(1) : pathname;
+  const candidates = [];
+  if (!normalized || normalized.endsWith("/")) candidates.push(path.join(site, normalized, "index.html"));
+  else {
+    candidates.push(path.join(site, normalized));
+    candidates.push(path.join(site, normalized, "index.html"));
+    if (!path.extname(normalized)) candidates.push(path.join(site, normalized, "index.html"));
+  }
+  return candidates.some(candidate => {
+    const resolved = path.resolve(candidate);
+    return (resolved.startsWith(path.resolve(site) + path.sep) || resolved === path.resolve(site + "/index.html")) &&
+      fs.existsSync(resolved) && fs.statSync(resolved).isFile();
+  });
+}
+
 const decisionHtml = read("farmer-decision-centre/index.html");
 if (decisionHtml) {
   for (const id of ["dc-country", "dc-topic", "dc-goal", "dc-build", "dc-output"]) {
@@ -375,14 +398,13 @@ if (decisionHtml) {
 }
 // News lifecycle is optional for legacy verified records. Missing lifecycle means
 // current unless explicitly marked otherwise; requiring lifecycle="current" hid most official stories.
-for (const rel of ["agricultural-news.njk", "agricultural-news-country.njk", "search.njk"]) {
+for (const rel of ["agricultural-news.njk", "agricultural-news-country.njk"]) {
   const p = path.join(source, rel);
   if (!fs.existsSync(p)) { failures.push("Agricultural News filter source is missing: " + rel); continue; }
   const template = fs.readFileSync(p, "utf8");
   if (!template.includes("not ") || !template.includes("lifecycle")) failures.push(rel + ": missing lifecycle compatibility handling");
   if (rel === "agricultural-news.njk" && template.includes(') and article.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
   if (rel === "agricultural-news-country.njk" && template.includes(') and candidate.lifecycle == "current"')) failures.push(rel + ": strict lifecycle filter hides legacy official news records");
-  if (rel === "search.njk" && template.includes('r.lifecycle == "current" and r.url')) failures.push(rel + ": strict lifecycle filter hides legacy official news from search");
 }
 
 // Keep fallback routes localized in source templates even when there are no approved stories.
