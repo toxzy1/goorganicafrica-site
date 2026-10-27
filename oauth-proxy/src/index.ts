@@ -87,7 +87,7 @@ const callbackPage = (status: string, token: string) => {
   const message = 'authorization:github:' + status + ':' + JSON.stringify({ token });
   const html = '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>GoOrganicAfrica CMS</title></head>' +
     '<body><script>' +
-    'if(window.opener){window.opener.postMessage(' + JSON.stringify(message) + ',"*");}' +
+    'if(window.opener){window.opener.postMessage(' + JSON.stringify(message) + ',"https://goorganicafrica-site.pages.dev");window.setTimeout(function(){window.close();},150);}' +
     'document.body.innerHTML=' + JSON.stringify(
       status === 'success'
         ? '<p>Authentication complete. You can close this window.</p>'
