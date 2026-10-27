@@ -85,14 +85,30 @@ const exchangeCode = async (env: Env, code: string, redirectUrl: string) => {
 
 const callbackPage = (status: string, token: string) => {
   const message = 'authorization:github:' + status + ':' + JSON.stringify({ token });
-  const html = '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>GoOrganicAfrica CMS</title></head>' +
-    '<body><script>' +
-    'if(window.opener){window.opener.postMessage(' + JSON.stringify(message) + ',"https://goorganicafrica-site.pages.dev");window.setTimeout(function(){window.close();},150);}' +
-    'document.body.innerHTML=' + JSON.stringify(
-      status === 'success'
-        ? '<p>Authentication complete. You can close this window.</p>'
-        : '<p>Authentication failed. You can close this window and try again.</p>'
-    ) + ';' +
+  const html = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GoOrganicAfrica CMS</title></head>' +
+    '<body><p id="status">Finishing GitHub sign-in…</p><script>' +
+    'var status=document.getElementById("status");' +
+    'if(window.opener && !window.opener.closed){' +
+      'var message=' + JSON.stringify(message) + ';' +
+      'var targetOrigin="https://goorganicafrica-site.pages.dev";' +
+      'var attempts=0;' +
+      'function handoff(){' +
+        'if(!window.opener || window.opener.closed || attempts>=6){' +
+          'status.textContent=' + JSON.stringify(status === 'success' ? 'GitHub sign-in finished, but the CMS window could not be notified. Return to the CMS and try signing in again.' : 'GitHub sign-in failed. Return to the CMS and try again.') + ';return;' +
+        '}' +
+        'try{window.opener.postMessage(message,targetOrigin);attempts++;}' +
+        'catch(error){status.textContent="Could not return to the CMS. Keep this window open and try again.";return;}' +
+        'if(attempts<6){window.setTimeout(handoff,250);}else{' +
+          'status.textContent=' + JSON.stringify(status === 'success' ? 'Sign-in response sent. Returning to the CMS…' : 'Sign-in failed. Return to the CMS and try again.') + ';' +
+          'window.setTimeout(function(){window.close();},500);' +
+        '}' +
+      '}' +
+      'handoff();' +
+    '}else{' +
+      'status.textContent=' + JSON.stringify(status === 'success' ? 'GitHub sign-in complete. Returning the result to the CMS…' : 'GitHub sign-in failed. Returning to the CMS…') + ';' +
+      'var fallback=' + JSON.stringify('https://goorganicafrica-site.pages.dev/admin/#goa-oauth=') + '+' + 'encodeURIComponent(JSON.stringify({message:message}));' +
+      'window.location.replace(fallback);' +
+    '}' +
     '</script></body></html>';
 
   return new Response(html, {
