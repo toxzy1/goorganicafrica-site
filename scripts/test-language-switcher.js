@@ -38,7 +38,11 @@ async function scenario(pathname, initialLanguage, targets) {
     },
     createElement() { return { value: "", textContent: "" }; },
     querySelector() { return null; },
-    querySelectorAll() { return []; },
+    querySelectorAll(selector) {
+      return selector === "#site-language-select, [data-goa-language-selector] select" || selector === "#site-language-select, [data-goa-language-selector] select" || selector.indexOf("#site-language-select") !== -1
+        ? [selector]
+        : [];
+    },
     dispatchEvent() {}
   };
   const location = {
