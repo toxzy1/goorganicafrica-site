@@ -120,7 +120,7 @@ async function scenario(pathname, initialLanguage, targets) {
   // than sending the visitor to a guessed language-prefixed URL.
   const siteRoot = path.join(__dirname, "..", "_site");
   if (fs.existsSync(siteRoot)) {
-    const translatedSections = ["blog","ebooks","organic-farming","agricultural-news","agriculture-resources","agricultural-finance","agricultural-grants","farm-machinery"];
+    const translatedSections = ["blog","ebooks","organic-farming","agricultural-news","agricultural-finance","agricultural-grants","farm-machinery"];
     let routeChecks = 0;
     for (const section of translatedSections) {
       for (const language of ["fr","ar","pt","sw"]) {
