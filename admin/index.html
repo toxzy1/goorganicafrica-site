@@ -7,6 +7,39 @@
   <title>GoOrganicAfrica — Content Admin</title>
 </head>
 <body>
+  <script>
+    (function () {
+      var channelName = "goorganicafrica-cms-oauth-v1";
+      var channel;
+      try {
+        channel = new BroadcastChannel(channelName);
+        channel.onmessage = function (event) {
+          var message = event.data && event.data.message;
+          if (typeof message === "string" &&
+              message.indexOf("authorization:github:") === 0) {
+            window.postMessage(message, window.location.origin);
+          }
+        };
+      } catch (error) {
+        channel = null;
+      }
+
+      var marker = "#goa-oauth=";
+      if (window.location.hash.indexOf(marker) === 0) {
+        var payload = null;
+        try {
+          payload = JSON.parse(decodeURIComponent(window.location.hash.slice(marker.length)));
+        } catch (error) {
+          payload = null;
+        }
+        window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+        if (channel && payload && typeof payload.message === "string" &&
+            payload.message.indexOf("authorization:github:") === 0) {
+          channel.postMessage({ message: payload.message });
+        }
+      }
+    })();
+  </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
