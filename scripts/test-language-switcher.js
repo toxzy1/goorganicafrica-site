@@ -26,6 +26,7 @@ async function scenario(pathname, initialLanguage, targets) {
   } : null;
   const html = { lang: "en", dir: "ltr" };
   const document = {
+    readyState: "loading",
     documentElement: html,
     body: { querySelectorAll() { return []; } },
     title: "Test page",
