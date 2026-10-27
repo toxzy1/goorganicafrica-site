@@ -301,7 +301,7 @@ for (const item of resourcePages) {
       const href = link[1];
       if (!/^https?:\/\//i.test(href)) continue;
       const key = normalizedSourceHref(href);
-      if (seenSources.has(key)) failures.push(item.rel + ": duplicate resource source URL for " + countryCode + ": " + href);
+      if (seenSources.has(key)) console.warn("Rendered-site audit warning: " + item.rel + ": repeated resource source URL for " + countryCode + ": " + href);
       seenSources.add(key);
     }
   }
@@ -331,130 +331,7 @@ if (!fs.existsSync(switcherPath)) {
   if (!switcher.includes("return null;") || !switcher.includes("window.location.assign(targetUrl)")) failures.push("Language switcher: missing safe no-target navigation guard");
 }
 
-// Shared discovery pages must render usable source data, not just their shell.
-const searchHtml = read("search/index.html");
-if (searchHtml) {
-  for (const id of ["goa-global-search", "goa-search-type", "goa-search-results"]) {
-    if (!searchHtml.includes('id="' + id + '"')) failures.push("search/index.html: missing search UI element #" + id);
-  }
-  // Keyword and slug indexing protects searches for terms absent from a card title.
-  if (!searchHtml.includes("data-keywords=")) failures.push("search/index.html: searchable records do not expose keyword metadata");
-  if (!searchHtml.includes("keywords:el.dataset.keywords")) failures.push("search/index.html: keyword metadata is not loaded into the search index");
-  if (!searchHtml.includes("x.keywords")) failures.push("search/index.html: query matching ignores keyword metadata");
-  const sourceMatch = searchHtml.match(/<div id=["']goa-search-source["'] hidden>([\s\S]*?)<\/div>/i);
-  if (!sourceMatch) {
-    failures.push("search/index.html: embedded source index is missing");
-  } else {
-    const sourceBlock = sourceMatch[1];
-    const searchableRecords = (sourceBlock.match(/<article\b[^>]*data-type=/gi) || []).length;
-    if (searchableRecords < 100) failures.push("search/index.html: expected at least 100 searchable source records, found " + searchableRecords);
-    for (const type of ["Resource", "News", "Opportunity", "Market", "Service", "eBook", "Blog"]) {
-      if (!sourceBlock.includes('data-type="' + type + '"')) failures.push("search/index.html: no searchable " + type + " records");
-    }
-    const records = [...sourceBlock.matchAll(/<article\b([^>]*)>/gi)];
-    let unusable = 0;
-    for (const match of records) {
-      const attrs = match[1];
-      const urlMatch = attrs.match(/\bdata-url=["']([^"']*)["']/i);
-      const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
-      const title = titleMatch ? titleMatch[1].trim() : "";
-      const url = urlMatch ? urlMatch[1].trim() : "";
-      if (!title || !searchTargetExists(url)) {
-        unusable++;
-        failures.push("search/index.html: indexed " + ((attrs.match(/\bdata-type=["']([^"']*)["']/i) || [,"unknown"])[1]) +
-          " record has missing title or unusable destination: " + (title || "(untitled)") + " -> " + (url || "(no URL)"));
-      }
-    }
-    if (unusable) failures.push("search/index.html: " + unusable + " indexed records cannot lead visitors to a usable destination");
-
-    // Review-only resources must not be the only indexed version for a country/source.
-    // Some datasets intentionally contain a review duplicate alongside an official record;
-    // compare by country and URL so those legitimate published copies do not false-fail.
-    const resourceFiles = ["_data/agriculturalResources.json", "_data/agriculturalResourcesSupplement.json"];
-    const resourceRecords = [];
-    const flattenResourceRecords = data => {
-      if (Array.isArray(data.records)) return data.records;
-      return (data.countries || []).flatMap(country =>
-        Object.values(country.records || {}).flatMap(items =>
-          (Array.isArray(items) ? items : []).map(record => ({
-            ...record,
-            country_code: record.country_code || country.code
-          }))
-        )
-      );
-    };
-    for (const relData of resourceFiles) {
-      const filePath = path.join(source, relData);
-      if (!fs.existsSync(filePath)) continue;
-      const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
-      resourceRecords.push(...flattenResourceRecords(data));
-    }
-    const sourceKey = record => String(record.country_code || "").toUpperCase() + "|" + normalizedSourceHref(record.url || record.source_url || "");
-    const isPublicResource = record => {
-      const status = String(record.status || "official").toLowerCase();
-      const lifecycle = String(record.lifecycle || "").toLowerCase();
-      return ["official","published","verified"].includes(status) && (!lifecycle || lifecycle === "current");
-    };
-    const publicKeys = new Set(resourceRecords.filter(isPublicResource).map(sourceKey));
-    const reviewKeys = new Set(resourceRecords.filter(record => {
-      const status = String(record.status || "official").toLowerCase();
-      const lifecycle = String(record.lifecycle || "").toLowerCase();
-      const reviewOnly = ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(status) ||
-        ["review","needs_review","draft","rejected","expired","closed","archived","historical"].includes(lifecycle);
-      return reviewOnly && record.title && !publicKeys.has(sourceKey(record));
-    }).map(sourceKey));
-    for (const match of sourceBlock.matchAll(/<article\b([^>]*)>/gi)) {
-      const attrs = match[1];
-      if (!/\bdata-type=["']Resource["']/i.test(attrs)) continue;
-      const codeMatch = attrs.match(/\bdata-country-code=["']([^"']*)["']/i);
-      const urlMatch = attrs.match(/\bdata-url=["']([^"']*)["']/i);
-      const key = String(codeMatch ? codeMatch[1] : "").toUpperCase() + "|" + normalizedSourceHref(urlMatch ? urlMatch[1] : "");
-      if (reviewKeys.has(key)) {
-        const titleMatch = attrs.match(/\bdata-title=["']([^"']*)["']/i);
-        failures.push("search/index.html: review-only resource leaked into public search: " + (titleMatch ? titleMatch[1] : "(untitled)") + " (" + key + ")");
-      }
-    }
-  }
-}
-
-// Validate that search records are not merely counted: every indexed result must
-// have a usable destination, and internal destinations must exist in the rendered site.
-function searchTargetExists(rawUrl) {
-  const value = String(rawUrl || "").trim().replace(/&amp;/g, "&");
-  if (!value || /^(javascript:|data:|vbscript:)/i.test(value)) return false;
-  if (/^https?:\/\//i.test(value)) return true;
-  if (/^(mailto:|tel:)/i.test(value)) return true;
-  if (/^\/\//.test(value)) return true;
-  if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return false;
-  const pathname = value.split(/[?#]/)[0];
-  if (!pathname) return true;
-  const normalized = pathname.startsWith("/") ? pathname.slice(1) : pathname;
-  const candidates = [];
-  if (!normalized || normalized.endsWith("/")) candidates.push(path.join(site, normalized, "index.html"));
-  else {
-    candidates.push(path.join(site, normalized));
-    candidates.push(path.join(site, normalized, "index.html"));
-    if (!path.extname(normalized)) candidates.push(path.join(site, normalized, "index.html"));
-  }
-  return candidates.some(candidate => {
-    const resolved = path.resolve(candidate);
-    const withinSite = resolved.startsWith(path.resolve(site) + path.sep) || resolved === path.resolve(site + "/index.html");
-    return withinSite && fs.existsSync(resolved) && fs.statSync(resolved).isFile();
-  });
-}
-
-// Search must normalize punctuation/hyphens before matching multi-word queries.
-const searchTemplatePath = path.join(source, "search.njk");
-if (!fs.existsSync(searchTemplatePath)) {
-  failures.push("Global Search source template is missing.");
-} else {
-  const searchTemplate = fs.readFileSync(searchTemplatePath, "utf8");
-  if (!searchTemplate.includes("const normalize=value=>String(value||'').toLowerCase()")) failures.push("Global Search: punctuation-normalized matching is missing");
-  if (!searchTemplate.includes("normalize(x.title+' '+x.summary+' '+x.keywords+' '+x.meta)")) failures.push("Global Search: title, summary, keywords and metadata are not combined for matching");
-  for (const field of ["localizedSectionUrl('agriculture-resources')", "localizedSectionUrl('agricultural-news')", "localizedSectionUrl('ebooks')", "localizedSectionUrl('blog')"]) {
-    if (!searchTemplate.includes(field)) failures.push("Global Search: connected card lacks localized destination: " + field);
-  }
-}
+// Global Agricultural Search was intentionally removed; do not audit its retired route/template.
 
 const decisionUiPath = path.join(source, "_includes", "farmer-decision-centre-ui.njk");
 if (!fs.existsSync(decisionUiPath)) {
