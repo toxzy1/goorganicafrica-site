@@ -275,8 +275,9 @@ if (fs.existsSync(regionalSourcePath)) {
   }
 }
 
-// A resource URL may be shared across countries, but it should appear
-// only once within any one country's rendered resource directory.
+// A source URL may be shown twice within one resource card (the visible URL
+// and the "open official source" action). Detect duplicate records, not the
+// two intentional links belonging to the same record.
 function normalizedSourceHref(value) {
   try {
     const u = new URL(String(value || "").replace(/&amp;/g, "&"), "https://goorganicafrica.example");
@@ -297,11 +298,13 @@ for (const item of resourcePages) {
     const countryCode = match[1];
     const countryBlock = match[0];
     const seenSources = new Set();
-    for (const link of countryBlock.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)) {
+    for (const card of countryBlock.matchAll(/<article class=["'][^"']*resource-card[^"']*["'][\s\S]*?<\/article>/gi)) {
+      const link = card[0].match(/<a\b[^>]*href=["']([^"']+)["']/i);
+      if (!link) continue;
       const href = link[1];
       if (!/^https?:\/\//i.test(href)) continue;
       const key = normalizedSourceHref(href);
-      if (seenSources.has(key)) failures.push(item.rel + ": duplicate resource source URL for " + countryCode + ": " + href);
+      if (seenSources.has(key)) failures.push(item.rel + ": duplicate resource records for " + countryCode + ": " + href);
       seenSources.add(key);
     }
   }
