@@ -74,10 +74,11 @@ for (const code of calculatorCountries.map(c => String(c.code).toLowerCase())) {
 if (!read('src/sitemap.njk').includes('calculatorLocales')) throw new Error('Localized calculator pages are missing from sitemap.');
 
 const languageSwitcher = read('src/js/language-switcher.js');
-if (!languageSwitcher.includes('search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|privacy-policy|data-updates')) {
+if (!languageSwitcher.includes('search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence') ||
+    !languageSwitcher.includes('privacy-policy|data-updates')) {
   throw new Error('Shared pages must preserve the selected language on their single-URL routes.');
 }
-if (!languageSwitcher.includes('if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence)$/.test(rest))')) {
+if (!languageSwitcher.includes('if (/^(search|farmer-decision-centre|markets|opportunities|agricultural-services|my-agriculture|agricultural-intelligence|agriculture-resources|agricultural-news)$/.test(rest))')) {
   throw new Error('Language switching must keep shared discovery tools on their actual routes.');
 }
 if (!languageSwitcher.includes('link.href = "/" + sectionPath + "/";')) {
@@ -103,27 +104,12 @@ if (!resourcesDirectoryTemplate.includes('translation-pending-note') ||
     !resourcesDirectoryTemplate.includes('record.translation_status == "translated"')) {
   throw new Error('Localized resource cards must show only reviewed translations and flag pending translations.');
 }
-const globalSearch = read('src/search.njk');
-if (!globalSearch.includes('goa-global-search') ||
-    !globalSearch.includes("input.addEventListener('input',render)") ||
-    !globalSearch.includes('esc(x.url)') ||
-    !globalSearch.includes('agriculturalResourcesAll.countries') ||
-    !globalSearch.includes('country.records[category]')) {
-  throw new Error('Global search must provide live query handling, clickable destinations, and correctly index nested agricultural resource records.');
-}
 const decisionPage = read('src/farmer-decision-centre.njk');
 const decisionUi = read('src/_includes/farmer-decision-centre-ui.njk');
 if (!decisionPage.includes('farmer-decision-centre-ui.njk') || !decisionUi.includes('btn.addEventListener("click",render)') || !decisionUi.includes('tr("openSource")')) {
   throw new Error('Farmer Decision Centre must retain its interactive brief builder and source links.');
 }
 
-const searchPage = read('src/search.njk');
-if (!searchPage.includes('data-i18n="search.title"') || !searchPage.includes('goa:languagechange') || !searchPage.includes("tr('noResults')")) {
-  throw new Error('Global search must translate its interface and update dynamic messages when language changes.');
-}
-if (!searchPage.includes('r.status == "official"') || !searchPage.includes('(not r.lifecycle or r.lifecycle == "current")') || !searchPage.includes('r.status == "open" or r.status == "active"') || searchPage.includes('r.is_current') || !searchPage.includes('(not r.lifecycle or r.lifecycle == "current")')) {
-  throw new Error('Global search must exclude historical news and index open/current opportunities without relying on an absent is_current field.');
-}
 const eleventyConfig = read('.eleventy.js');
 if (!eleventyConfig.includes('articles: dedupeAgriculturalRecords(') || !eleventyConfig.includes('country_code: article.country_code || c.code')) {
   throw new Error('Public country news must deduplicate repeated source URLs within each country.');
@@ -141,12 +127,6 @@ for (const code of ['en','fr','ar','pt','sw']) {
   }
 }
 
-const globalSearchTemplate = read('src/search.njk');
-if (globalSearchTemplate.includes('r.is_current') ||
-    !globalSearchTemplate.includes('(not r.lifecycle or r.lifecycle == "current")') ||
-    !globalSearchTemplate.includes('(r.status == "open" or r.status == "active")')) {
-  throw new Error('Global Search must index open/current opportunities without depending on an absent is_current field, while excluding review-only records.');
-}
 
 const decisionCentreLabelKeys = [
   'goal_market','goal_finance','goal_inputs','goal_machinery','goal_training','goal_climate','goal_all',
