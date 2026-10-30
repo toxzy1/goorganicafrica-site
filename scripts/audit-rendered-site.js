@@ -347,7 +347,7 @@ if (!fs.existsSync(decisionUiPath)) {
 function searchTargetExists(rawUrl) {
   const value = String(rawUrl || "").trim().replace(/&amp;/g, "&");
   if (!value || /^(javascript:|data:|vbscript:)/i.test(value)) return false;
-  if (/^https?:\\/\\//i.test(value)) return true;
+  if (/^https?:\/\//i.test(value)) return true;
   if (/^(mailto:|tel:)/i.test(value) || /^\\/\\//.test(value)) return true;
   if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return false;
   const pathname = value.split(/[?#]/)[0];
