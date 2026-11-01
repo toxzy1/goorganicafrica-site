@@ -1,0 +1,460 @@
+{
+  "country": "Eswatini",
+  "iso_alpha2": "SZ",
+  "iso_alpha3": "SWZ",
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Research-only evidence on national food-crop production, crop area/yield, livestock populations, 2026 maize and animal-health conditions, government smallholder programmes, and World Bank value-chain profitability estimates. Not a calculator profile and not authorization to activate Eswatini.",
+  "currency": {
+    "code": "SZL",
+    "name": "Swazi lilangeni / emalangeni",
+    "note": "The lilangeni is pegged at par with the South African rand. Government and World Bank cost figures are stated in emalangeni (E)."
+  },
+  "context": {
+    "agroecology": "Four broad agro-ecological zones (Highveld, Middleveld, Lowveld and Lubombo Plateau) with distinct rainfall, temperature, soil and livestock conditions. Maize and other rainfed food crops are vulnerable to rainfall timing, drought and heavy-rain/waterlogging. Commercial sugar, citrus, forestry and beef coexist with smallholder maize, legumes, vegetables and livestock production.",
+    "key_geographies": [
+      "Hhohho",
+      "Manzini",
+      "Shiselweni",
+      "Lubombo",
+      "Highveld",
+      "Middleveld",
+      "Lowveld"
+    ],
+    "caution": "Separate smallholder Swazi Nation Land (SNL) from commercial Title Deed Land (TDL) systems. The national crop survey, regional livestock records and World Bank value-chain gross-margin models have different samples and reference periods; they are not interchangeable."
+  },
+  "evidence": [
+    {
+      "topic": "2026 national maize harvest, livestock disease and food-security outlook",
+      "reference_date": "2026-08-25",
+      "source": "FAO GIEWS, Eswatini Country Brief",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SWZ",
+      "observations": [
+        {
+          "indicator": "Maize production",
+          "value": 70000,
+          "unit": "tonnes",
+          "reference_year": 2026,
+          "status": "FAO estimate",
+          "note": "Harvesting concluded in June 2026; approximately 6 percent below 2025."
+        },
+        {
+          "indicator": "Cattle vaccinated against foot-and-mouth disease",
+          "value": 454000,
+          "unit": "head",
+          "reference_date": "2026-07",
+          "note": "More than 80 percent of the national herd, according to FAO."
+        },
+        {
+          "indicator": "Population projected in IPC Phase 3 or above",
+          "value": 286000,
+          "unit": "people",
+          "reference_period": "2026-10 to 2027-03",
+          "share": 23,
+          "share_unit": "percent of analysed population",
+          "status": "projection"
+        }
+      ],
+      "observations_text": [
+        "FAO attributes the lower 2026 maize harvest to irregular rainfall, including heavy rainfall in January and around the March-April harvest period; waterlogging reduced yields despite increased planted area.",
+        "The 2025 foot-and-mouth disease outbreak disrupted livestock movement and exports, including exports to the European Union. A national vaccination campaign followed.",
+        "By late July 2026, the government had announced no active FMD cases, but formal WOAH recognition of FMD-free status was still pending.",
+        "FAO reported that maize import requirements for the 2026/27 marketing year were expected to exceed the previous five-year average.",
+        "FAO warned that El Niño could increase the risk of below-average rainfall during the 2026/27 cropping season."
+      ],
+      "caveat": "The 70,000-tonne 2026 maize figure is a FAO estimate, not a final audited post-harvest survey. The 286,000 IPC figure is a projection, not a measured current count. Vaccination coverage and absence of active cases do not themselves establish formal WOAH disease-free status."
+    },
+    {
+      "topic": "National agricultural pre-harvest assessment: food crop production and maize productivity",
+      "publication_date": "2024",
+      "reference_period": "2022/23 and 2023/24 cropping seasons",
+      "source": "Eswatini Ministry of Agriculture, National Agricultural Preharvest Assessment Report 2024",
+      "source_url": "https://agrinfosystems.gov.sz/assets/uploadsPre-Harvest_Crop%20Assessment%20Report.pdf",
+      "observations": [
+        {
+          "indicator": "Maize production",
+          "value": 74946.55,
+          "unit": "tonnes",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Maize production",
+          "value": 85201.6,
+          "unit": "tonnes",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Maize production change",
+          "value": -12.04,
+          "unit": "percent",
+          "reference_period": "2023/24 vs 2022/23"
+        },
+        {
+          "indicator": "Sweet potato production",
+          "value": 2276.46,
+          "unit": "tonnes",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Sweet potato production",
+          "value": 2929.25,
+          "unit": "tonnes",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Sorghum production",
+          "value": 55.43,
+          "unit": "tonnes",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Sorghum production",
+          "value": 98.87,
+          "unit": "tonnes",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Dry bean production",
+          "value": 377.98,
+          "unit": "tonnes",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Dry bean production",
+          "value": 398.57,
+          "unit": "tonnes",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Groundnut production",
+          "value": 147.19,
+          "unit": "tonnes",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Groundnut production",
+          "value": 401.26,
+          "unit": "tonnes",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Cowpea production",
+          "value": 53.49,
+          "unit": "tonnes",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Cowpea production",
+          "value": 35.43,
+          "unit": "tonnes",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Total production of six listed crops",
+          "value": 78063.95,
+          "unit": "tonnes",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Total production of six listed crops",
+          "value": 89383.92,
+          "unit": "tonnes",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Total production change",
+          "value": -12.58,
+          "unit": "percent",
+          "reference_period": "2023/24 vs 2022/23"
+        },
+        {
+          "indicator": "Maize planted area",
+          "value": 68081,
+          "unit": "hectares",
+          "reference_period": "2023/24"
+        },
+        {
+          "indicator": "Maize average yield",
+          "value": 1.1,
+          "unit": "tonnes per hectare",
+          "reference_period": "2023/24",
+          "note": "Assessment's reported value; the report also gives a long-term average of 1.5 t/ha and a 2021/22 high of 1.7 t/ha."
+        }
+      ],
+      "observations_text": [
+        "The report identifies high fertilizer and seed prices and availability constraints as contributors to an approximately 4 percent reduction in total cultivated area.",
+        "It reports intermittent February dry spells, high input and mechanization costs, and hailstorms as factors affecting crop performance.",
+        "The report's 2015-2024 maize series shows significant year-to-year fluctuation, including drought-related losses in 2015/16."
+      ],
+      "caveat": "These are ministry pre-harvest estimates for the specified seasons, not final production census results. The assessment's maize area and yield values should be reconciled with the plotted annual series and FAOSTAT before deriving a new yield. Small crop totals should not be assumed to represent all production if subsistence or informal output is incompletely captured."
+    },
+    {
+      "topic": "Livestock population and production context",
+      "reference_period": "2019-2023 population series; 2024 assessment",
+      "source": "Eswatini Ministry of Agriculture, National Agricultural Preharvest Assessment Report 2024",
+      "source_url": "https://agrinfosystems.gov.sz/assets/uploadsPre-Harvest_Crop%20Assessment%20Report.pdf",
+      "observations": [
+        {
+          "indicator": "Cattle population",
+          "value": 565475,
+          "unit": "head",
+          "reference_year": 2023
+        },
+        {
+          "indicator": "Goat population",
+          "value": 529102,
+          "unit": "head",
+          "reference_year": 2023
+        },
+        {
+          "indicator": "Sheep population",
+          "value": 18233,
+          "unit": "head",
+          "reference_year": 2023
+        },
+        {
+          "indicator": "Chicken population",
+          "value": 1998781,
+          "unit": "birds",
+          "reference_year": 2023
+        },
+        {
+          "indicator": "Domestic pork production",
+          "value": 1837,
+          "unit": "tonnes",
+          "reference_year": 2023,
+          "note": "Down from 1,972 tonnes in 2022."
+        },
+        {
+          "indicator": "Broiler production capacity",
+          "value": 500000,
+          "unit": "broilers per week",
+          "source_note": "Capacity stated in report, not necessarily realised weekly output."
+        }
+      ],
+      "observations_text": [
+        "The report states that cattle numbers increased by 0.97 percent from 2022 to 2023, with smaller increases also recorded for goats, chickens and sheep.",
+        "It attributes declining pork production partly to increasing feed prices and inconsistent production among smallholder farmers.",
+        "The report notes a domestic pork supply shortfall and imports to meet demand.",
+        "Cattle and goats in the Lowveld and Dry Middleveld had generally good body condition during the March-April 2024 assessment, while livestock in Highveld and Wet Middleveld were in fair condition."
+      ],
+      "caveat": "Livestock counts are the report's 2023 series, not a 2026 census. Broiler capacity is not actual production. Do not combine the 2023 cattle count with the 2026 vaccinated-animal count as though both had the same reference date."
+    },
+    {
+      "topic": "World Bank agriculture sector review: 2024 maize yield and value-chain gross margins",
+      "publication_date": "2025-06-20",
+      "source": "World Bank, Eswatini Agriculture Sector Review: Catalyzing Agri-Food System Transformation",
+      "source_url": "https://documents1.worldbank.org/curated/en/099062525124012924/pdf/P507872-a15768e4-a0d1-4b49-9da3-7525ede05d57.pdf",
+      "observations": [
+        {
+          "indicator": "Average maize yield",
+          "value": 1.2,
+          "unit": "tonnes per hectare",
+          "reference_year": 2024,
+          "note": "World Bank review; over 90 percent of maize is produced by smallholders."
+        },
+        {
+          "indicator": "Maize revenue estimate",
+          "value": 34800,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Maize total cost estimate",
+          "value": 28071,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Maize margin estimate",
+          "value": 6729,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Carrot gross revenue",
+          "value": 157500,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Carrot production cost",
+          "value": 75712,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Cabbage total cost",
+          "value": 65396,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Cabbage total revenue",
+          "value": 200000,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Cabbage margin",
+          "value": 134604,
+          "unit": "SZL per hectare",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Milk enterprise total revenue",
+          "value": 211532,
+          "unit": "SZL per 5 cows",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Milk enterprise total cost",
+          "value": 123243,
+          "unit": "SZL per 5 cows",
+          "reference_type": "modelled gross-margin estimate"
+        },
+        {
+          "indicator": "Milk enterprise margin",
+          "value": 88288,
+          "unit": "SZL per 5 cows",
+          "reference_type": "modelled gross-margin estimate"
+        }
+      ],
+      "observations_text": [
+        "The World Bank review identifies maize, beef, dairy and vegetables as important value chains, with commercial potential linked to domestic demand and regional market access.",
+        "Its maize cost model lists seed E2,675/ha, land preparation E5,300/ha, fertilizer E7,396/ha, irrigation E3,000/ha, chemicals E4,180/ha, transport E3,000/ha and labour E5,520/ha.",
+        "Its cabbage model lists seed E18,070/ha, land preparation E5,000/ha, fertilizer E8,646/ha, herbicide E900/ha, irrigation E3,100/ha, pesticides E1,940/ha, fungicides E1,170/ha, transport E20,900/ha, labour E5,200/ha and packaging sticker E470/ha.",
+        "The World Bank's dairy model for five cows includes feed, hay, breeding, veterinary drugs, dipping chemicals, pasture management, milking, labour, transport, electricity and water.",
+        "The review says high-value horticulture such as tomatoes, leafy greens and peppers offers potentially attractive margins but faces input, irrigation, market-access and service constraints."
+      ],
+      "caveat": "These are World Bank synthesis estimates based on Ministry of Agriculture gross-margin data and supporting value-chain analysis, not universal guaranteed farm returns or current quotations. The report notes reliance on multiple years of data, some dating back to 2018, limited public data access and only 19 key-informant interviews. Use as indicative benchmark scenarios only after local farm-level validation."
+    },
+    {
+      "topic": "Government maize programme and smallholder support",
+      "publication_date": "2026-02-27",
+      "reference_period": "Programme results over four seasons; 2024/25 actual; 2025/26 programme target/estimate",
+      "source": "Government of Eswatini, 2026 Budget Speech",
+      "source_url": "https://www.gov.sz/images/FinanceDocuments/2026BudgetSpeech.pdf",
+      "observations": [
+        {
+          "indicator": "Hamba Ubuye programme farmers supported",
+          "value": 402,
+          "unit": "farmers",
+          "reference_period": "four seasons cumulative"
+        },
+        {
+          "indicator": "Hamba Ubuye programme cultivated area",
+          "value": 3141,
+          "unit": "hectares",
+          "reference_period": "four seasons cumulative"
+        },
+        {
+          "indicator": "Hamba Ubuye programme maize production",
+          "value": 7634,
+          "unit": "tonnes",
+          "reference_period": "four seasons cumulative"
+        },
+        {
+          "indicator": "Programme maize delivered/produced",
+          "value": 3530,
+          "unit": "tonnes",
+          "reference_period": "2024/25 season",
+          "status": "government reported result"
+        },
+        {
+          "indicator": "2025/26 programme farmers",
+          "value": 248,
+          "unit": "farmers",
+          "status": "supported/qualified"
+        },
+        {
+          "indicator": "2025/26 programme area",
+          "value": 1861,
+          "unit": "hectares",
+          "status": "cultivated"
+        },
+        {
+          "indicator": "2025/26 programme maize production",
+          "value": 7444,
+          "unit": "tonnes",
+          "status": "government estimate"
+        },
+        {
+          "indicator": "2025/26 programme input support",
+          "value": 18000000,
+          "unit": "SZL",
+          "status": "over E18 million"
+        }
+      ],
+      "observations_text": [
+        "The 2026 Budget Speech states that 248 farmers qualified for 2025/26 support, including 192 men, 56 women and 21 youth.",
+        "Government also reported more than E22 million in loans provided by the Eswatini Agricultural Development Fund to qualifying agribusinesses.",
+        "The Smallholder Agricultural Productivity Enhancement and Marketing Project (SAPEMP) is an E851 million, eight-year multi-partner programme intended to support 19,600 households; this is a programme design target, not a completed beneficiary count.",
+        "The Mpakeni Dam component of the Mkhondvo Ngwavuma Water Augmentation Programme was reported at over 44 percent completion in the 2026 budget."
+      ],
+      "caveat": "Programme results and planned estimates are not representative national farm averages. The 2025/26 output of 7,444 tonnes is an estimate for supported farmers, not a final verified harvest result for all of Eswatini."
+    },
+    {
+      "topic": "Market price data and national price survey",
+      "publication_date": "2025-11",
+      "source": "Ministry of Agriculture national market assessment launch; Eswatini market price systems",
+      "source_url": "https://today.co.sz/2025/11/15/seeking-insights-for-food-sovereignty/",
+      "supporting_sources": [
+        "https://shelfpedia.com/en-sz/market-prices/",
+        "https://agrinfosystems.gov.sz/assets/uploadsPre-Harvest_Crop%20Assessment%20Report.pdf"
+      ],
+      "observations_text": [
+        "The Ministry of Agriculture launched a first national market assessment in November 2025 to collect information on prices, availability and movement of food and non-food commodities across communities, retail outlets, vendors, wholesalers and consumers.",
+        "The 2024 pre-harvest assessment includes food-price and commodity-price sections, but many reported indicators are consumer-market or international benchmark measures rather than producer quotations.",
+        "A secondary public dashboard based on WFP VAM food-price data via HDX reported August 2026 retail prices across four markets in three regions; examples included maize meal at E14/kg, potatoes at E90.8 per 10kg and sugar beans at E35/kg."
+      ],
+      "caveat": "The WFP-derived dashboard values are retail consumer prices and should not be used as farm-gate revenue. The national market-assessment launch announcement does not itself publish the survey results. Obtain the official dataset and classify each record by market, date, grade, unit, and retail/wholesale/farm-gate channel before use."
+    },
+    {
+      "topic": "Official statistical methodology and agriculture source systems",
+      "source": "IMF, Eswatini General Data Dissemination System / Data Quality Assessment Framework",
+      "source_url": "https://dsbb.imf.org/egdds/dqaf-base/country/SWZ/category/NAG00",
+      "observations_text": [
+        "The IMF metadata describes annual agricultural information collected by the Central Statistics Office and Ministry of Agriculture from cooperative unions, processing enterprises, annual agricultural surveys, individual tenure farms, livestock census reports, early warning reports and foreign trade statistics.",
+        "The statistical system distinguishes commercial Individual Tenure Farms from Swazi Nation Land, where subsistence farming is more common.",
+        "The IMF metadata notes that for minor crops with no specific price information, CPI prices may be used after deducting 15 percent for transport and retail margins; for some livestock categories, specific prices are not collected and CPI/South African price data are used for deflation."
+      ],
+      "caveat": "This is metadata describing statistical compilation methods, not a new crop or price observation. The use of imputed prices for minor crops means some national accounts-derived unit values must not be mistaken for observed farm-gate market quotations."
+    },
+    {
+      "topic": "World Bank value-chain structure and market opportunity",
+      "publication_date": "2025-06-20",
+      "source": "World Bank, Eswatini Agriculture Sector Review",
+      "source_url": "https://documents1.worldbank.org/curated/en/099062525124012924/pdf/P507872-a15768e4-a0d1-4b49-9da3-7525ede05d57.pdf",
+      "observations_text": [
+        "The review reports beef as 2.9 percent of GDP and 32 percent of agricultural GDP in 2018; domestic beef consumption was approximately 7,900 tonnes in 2023.",
+        "It reports more than 60,000 jobs across the beef value chain and identifies export and domestic market opportunities.",
+        "The review reports 2020 dairy consumption of approximately 88.4 million litres (liquid milk equivalent) and 2022 per-capita dairy consumption of about 90 litres annually.",
+        "The review reports export volumes of high-value baby vegetables at 184 tonnes, valued at US$3.1 million, with volumes increasing by 30 percent in recent years."
+      ],
+      "caveat": "These are historical sector context indicators with differing reference years, not current 2026 farm output or farm-gate price data."
+    }
+  ],
+  "data_quality_and_use": [
+    "The strongest official production dataset found is the Ministry of Agriculture's 2024 pre-harvest assessment, which provides six-crop output totals and a maize area/yield series.",
+    "FAO's August 2026 brief gives the latest national maize harvest estimate and current animal-health/food-security context.",
+    "The World Bank's 2025 review supplies useful indicative gross-margin models for maize, beef, vegetables and dairy, but expressly documents limitations in publicly accessible data and reliance on multi-year evidence.",
+    "National statistics distinguish commercial Title Deed Land from smallholder/subsistence Swazi Nation Land; their yields, input use, market access and cost structures should not be merged without stratification.",
+    "The 2026 maize production estimate, the 2023/24 ministry crop survey, the World Bank 2024 yield estimate and the programme-specific 2025/26 maize output refer to different periods and populations.",
+    "Retail market prices, imported commodity prices, wholesale prices and producer prices are distinct data classes. No current complete farm-gate price series has been validated in this review.",
+    "Foot-and-mouth disease and export restrictions affected livestock trade in 2025-2026; animal prices and market access should be date-stamped and linked to current disease-control status."
+  ],
+  "missing_data_before_calculator_use": [
+    "Obtain the final 2025/26 crop production and post-harvest survey with crop-by-crop harvested area, output and yield by region and farm system.",
+    "Obtain official 2026/27 input price schedules and actual farmer-paid prices for seed, fertilizer, chemicals, fuel, tractor hire, irrigation, electricity, labour, packaging and transport.",
+    "Obtain dated farm-gate prices by region, crop, grade and unit for maize, beans, groundnuts, vegetables, sugarcane, citrus and other selected commodities.",
+    "Obtain the full results and microdata/metadata from the Ministry's November 2025 national market assessment, separating producer, wholesale and retail observations.",
+    "Validate World Bank gross-margin assumptions against current farmer quotations, yield distributions, sales prices and crop calendars; distinguish smallholder SNL and commercial TDL farms.",
+    "Obtain crop-specific budgets and production cycles for tomato, cabbage, carrot, pepper, green beans and other commercially important horticultural crops.",
+    "Obtain current cattle, goat, poultry and pig farm-gate prices, feed costs, veterinary and vaccination costs, mortality, breeding, labour and transport budgets.",
+    "Confirm WOAH FMD status and any remaining export or movement restrictions before using beef/live-animal price assumptions.",
+    "Reconcile maize production estimates between the 2024 pre-harvest assessment, 2026 FAO brief, World Bank review and the government Hamba Ubuye programme; do not combine national and programme totals.",
+    "Obtain raw FAOSTAT crop and livestock observations and flags for independent cross-checking against national statistics."
+  ],
+  "recommendation": "Retain Eswatini as research-only. The evidence base includes ministry crop production and livestock series, FAO's 2026 maize and FMD assessment, a World Bank 2025 value-chain review with indicative per-hectare gross margins, and government programme results. The World Bank figures can inform carefully labelled benchmark scenarios, but current crop-specific farm-gate prices and farmer-paid input costs remain essential. Do not activate a calculator profile until the final 2025/26 production tables and local price/cost evidence are verified."
+}
