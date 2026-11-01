@@ -1,0 +1,432 @@
+{
+  "country": {
+    "name": "Sudan",
+    "iso2": "SD",
+    "iso3": "SDN",
+    "currency_code": "SDG",
+    "currency_name": "Sudanese pound"
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Country-specific agricultural evidence inventory for later validation; not a production calculator profile.",
+  "sections": [
+    {
+      "id": "national_cereal_production_2025",
+      "topic": "government-led crop and food supply assessment",
+      "source_name": "FAO GIEWS Sudan Country Brief, drawing on 2025 Crop and Food Supply Assessment Mission",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SDN&lang=en",
+      "companion_source_url": "https://www.fao.org/neareast/news/details/sudan--new-fao-assessment-warns-of-escalating-food-and-livelihood-crisis/en",
+      "reference_date": "GIEWS reference date 24 September 2026; FAO CFSAM announcement 26 April 2026",
+      "observations": [
+        {
+          "item": "National cereal production (sorghum, millet and wheat)",
+          "value": 5200000,
+          "unit": "tonnes",
+          "period": "2025 harvest",
+          "status": "government_led_CFSAM_estimate",
+          "finding": "About 22 percent below 2024 and 19 percent below the previous five-year average."
+        },
+        {
+          "item": "Sorghum production",
+          "status": "CFSAM_change_estimate",
+          "period": "2025 versus 2024",
+          "finding": "FAO reported sorghum production decreased by about 25 percent compared with 2024."
+        },
+        {
+          "item": "Millet production",
+          "status": "CFSAM_comparison",
+          "period": "2025 versus previous five-year average",
+          "finding": "FAO reported millet production remained 46 percent below the five-year average."
+        },
+        {
+          "item": "Wheat production",
+          "value": 433500,
+          "unit": "tonnes",
+          "period": "2025 harvest",
+          "status": "CFSAM_estimate",
+          "finding": "About 12 percent below the 2024 level."
+        }
+      ],
+      "caveats": [
+        "National aggregate output is not a crop-specific state-level yield or farm-level production figure.",
+        "Extract original CFSAM tables for crop area, harvested area, production, yield and state coverage before calculator use.",
+        "Retain separate production-year, marketing-year and harvest-season labels."
+      ]
+    },
+    {
+      "id": "2026_crop_season_outlook",
+      "topic": "2026 planting, rainfall and harvest outlook",
+      "source_name": "FAO GIEWS Sudan Country Brief",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SDN&lang=en",
+      "reference_date": "24 September 2026",
+      "observations": [
+        {
+          "item": "2026 cereal planting",
+          "period": "June–August 2026",
+          "status": "FAO_GIEWS_assessment",
+          "finding": "Planting of 2026 cereal crops for harvest from November 2026 was completed by mid-August."
+        },
+        {
+          "item": "Rainfall conditions",
+          "period": "June–September 2026",
+          "status": "FAO_GIEWS_assessment",
+          "finding": "Below-average cumulative rainfall over most cropping areas affected germination and crop establishment; significant deficits occurred in southeastern key cropping areas."
+        },
+        {
+          "item": "Sennar rainfall anomaly",
+          "value": 20,
+          "unit": "percent below long-term average",
+          "period": "2026 June–September season",
+          "status": "FAO_GIEWS_estimate",
+          "finding": "Seasonal rainfall in Sennar was about 20 percent below average."
+        },
+        {
+          "item": "Gedaref rainfall anomaly",
+          "value": 30,
+          "unit": "percent below long-term average",
+          "period": "2026 June–September season",
+          "status": "FAO_GIEWS_estimate",
+          "finding": "Seasonal rainfall in Gedaref was about 30 percent below average."
+        },
+        {
+          "item": "Agricultural Stress Index",
+          "value": "up to 55% in Sennar; up to 70% in Gedaref",
+          "period": "September 2026",
+          "status": "FAO_satellite_assessment",
+          "finding": "Severe drought conditions affected substantial shares of cropland in these two major sorghum-producing states."
+        }
+      ],
+      "caveats": [
+        "The 2026 harvest had not been completed at the reference date; do not treat the outlook as final production.",
+        "Sennar and Gedaref together normally account for about one quarter of national sorghum output, but this share is not a current-year crop forecast.",
+        "Rainfall, conflict and input access vary by state and district."
+      ]
+    },
+    {
+      "id": "crop_portfolio_and_production_systems",
+      "topic": "agroecological production systems and crop portfolio",
+      "source_name": "FAO Sudan at a glance",
+      "source_url": "https://www.fao.org/sudan/fao-sudan/sudan-at-a-glance/en",
+      "reference_date": "Accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Agricultural livelihood importance",
+          "value": 65,
+          "unit": "percent of population",
+          "status": "FAO_context_estimate",
+          "finding": "Agriculture provides food and income to nearly 65 percent of the population."
+        },
+        {
+          "item": "Irrigated production system",
+          "status": "FAO_system_description",
+          "finding": "Irrigated agriculture includes the Al Jazirah Scheme, described by FAO as covering approximately one million hectares."
+        },
+        {
+          "item": "Semi-mechanized rainfed system",
+          "status": "FAO_system_description",
+          "finding": "Semi-mechanized rainfed agriculture is concentrated in a belt of about 6.7 million hectares."
+        },
+        {
+          "item": "Traditional rainfed system",
+          "status": "FAO_system_description",
+          "finding": "Traditional rainfed agriculture spans about 9 million hectares and engages most farmers."
+        },
+        {
+          "item": "Priority crop groups",
+          "status": "FAO_crop_portfolio",
+          "finding": "Cereals include sorghum, millet and wheat; oilseeds include sesame, groundnuts and sunflower; other crops include cotton, sugarcane, pulses and horticultural crops."
+        }
+      ],
+      "caveats": [
+        "FAO's broad system areas describe national production context, not verified current cultivated or harvested area.",
+        "Crop selection must be tied to specific state, production system, water availability and season.",
+        "Conflict since April 2023 has disrupted irrigation infrastructure, field access, inputs and markets."
+      ]
+    },
+    {
+      "id": "independent_commodity_production_crosscheck",
+      "topic": "USDA FAS commodity production and harvested-area estimates",
+      "source_name": "USDA Foreign Agricultural Service, Production – Sudan",
+      "source_url": "https://fas-prod.azureedge.us/data/production/su",
+      "reference_date": "Marketing year 2025/2026 dataset accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Sorghum production",
+          "value": 3000000,
+          "unit": "metric tonnes",
+          "period": "MY 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "Compared with 3.3 million tonnes in MY 2024/2025."
+        },
+        {
+          "item": "Millet production",
+          "value": 750000,
+          "unit": "metric tonnes",
+          "period": "MY 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "Compared with 793,000 tonnes in MY 2024/2025."
+        },
+        {
+          "item": "Peanut oilseed production",
+          "value": 1000000,
+          "unit": "metric tonnes",
+          "period": "MY 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "Compared with 1.68 million tonnes in MY 2024/2025."
+        },
+        {
+          "item": "Sorghum harvested area",
+          "value": 6000000,
+          "unit": "hectares",
+          "period": "MY 2025/2026",
+          "status": "USDA_FAS_estimate"
+        },
+        {
+          "item": "Millet harvested area",
+          "value": 2500000,
+          "unit": "hectares",
+          "period": "MY 2025/2026",
+          "status": "USDA_FAS_estimate"
+        },
+        {
+          "item": "Wheat harvested area",
+          "value": 150000,
+          "unit": "hectares",
+          "period": "MY 2025/2026",
+          "status": "USDA_FAS_estimate"
+        }
+      ],
+      "caveats": [
+        "USDA marketing-year estimates are an independent secondary cross-check and differ in period and methodology from the government-led CFSAM calendar-year harvest assessment.",
+        "Do not combine these production and area values with CFSAM totals without reconciling crop definitions, season, geographic coverage and marketing-year basis.",
+        "The displayed yield series requires crop-specific selection and metadata review before use."
+      ]
+    },
+    {
+      "id": "market_price_monitoring_system",
+      "topic": "market price, availability and trader monitoring",
+      "source_name": "IFPRI Sudan Essential Commodities Prices and Availability Monitor",
+      "source_url": "https://sudan.ifpri.info/essential-commodities-prices-and-availability/",
+      "companion_source_url": "https://sudan.ifpri.info/5-price-and-availability-reports/",
+      "reference_date": "Dashboard accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Market coverage",
+          "value": 36,
+          "unit": "markets",
+          "status": "IFPRI_dashboard_metadata",
+          "finding": "Monitoring covers 18 states and 36 markets."
+        },
+        {
+          "item": "Collection frequency",
+          "status": "IFPRI_dashboard_metadata",
+          "finding": "Data are collected fortnightly and aggregated monthly."
+        },
+        {
+          "item": "Currency and units",
+          "status": "IFPRI_dashboard_metadata",
+          "finding": "Dashboard reports prices in SDG per standard unit; the commodity-specific unit must be retained."
+        },
+        {
+          "item": "Indicators",
+          "status": "IFPRI_dashboard_metadata",
+          "finding": "Monitoring covers prices, availability, quality and trader insights for food and agricultural commodities."
+        }
+      ],
+      "caveats": [
+        "The dashboard describes a market-monitoring system; actual dated observations must be exported for each target commodity and market.",
+        "Market prices are not automatically farmgate producer prices.",
+        "Record market, state, commodity grade, unit, date and price source for every extracted observation."
+      ]
+    },
+    {
+      "id": "recent_market_price_and_currency_context",
+      "topic": "2026 commodity price movements, input costs and exchange rates",
+      "source_name": "IFPRI Sudan Market Prices and Availability Reports",
+      "source_url": "https://sudan.ifpri.info/2026/08/04/essential-commodities-prices-availability-and-market-actors-perceptions-july-2026/",
+      "companion_source_url": "https://sudan.ifpri.info/2026/06/24/essential-commodities-prices-availability-and-market-actors-perceptions-may-2026/",
+      "reference_date": "July 2026 report published 4 August 2026; May 2026 report published 24 June 2026",
+      "observations": [
+        {
+          "item": "July 2026 market conditions",
+          "period": "July 2026",
+          "status": "IFPRI_market_monitor_assessment",
+          "finding": "Prices increased across most monitored food, livestock-product, agricultural-input, fuel and labour groups; availability generally declined, with pronounced regional disparities."
+        },
+        {
+          "item": "High-price and low-availability regions",
+          "status": "IFPRI_market_monitor_assessment",
+          "finding": "Darfur and Kordofan consistently recorded some of the highest food and fuel prices and lower commodity availability."
+        },
+        {
+          "item": "Exchange-rate and input-cost drivers",
+          "status": "IFPRI_trader_survey_assessment",
+          "finding": "Traders reported rising parallel-market exchange rates, increasing input and fuel costs, supply-chain challenges and declining market availability."
+        }
+      ],
+      "caveats": [
+        "The report summaries do not provide a complete farmgate price series or all commodity-level numeric values.",
+        "Retrieve the underlying monthly report tables and retain the source's official/parallel exchange-rate distinction.",
+        "Do not use a national market average as a substitute for a dated local producer price."
+      ]
+    },
+    {
+      "id": "wfp_market_monitor_and_exchange_rates",
+      "topic": "WFP monthly market prices and exchange-rate indicators",
+      "source_name": "WFP Logistics Cluster, Sudan Market Monitor – March 2026",
+      "source_url": "https://logcluster.org/sites/default/files/public/2026-03/market-monitor-sudan-report-march-2026.pdf",
+      "reference_date": "March 2026 publication; underlying February 2026 market observations",
+      "observations": [
+        {
+          "item": "Parallel-market exchange rate",
+          "value": 3550,
+          "unit": "SDG per USD",
+          "period": "February 2026",
+          "status": "WFP_market_monitor_reported"
+        },
+        {
+          "item": "Commercial-bank exchange rate",
+          "value": 2400,
+          "unit": "SDG per USD",
+          "period": "February 2026",
+          "status": "WFP_market_monitor_reported"
+        },
+        {
+          "item": "Groundnut price",
+          "value": 102417,
+          "unit": "SDG per kantar",
+          "period": "February 2026",
+          "status": "WFP_market_monitor_reported",
+          "finding": "Reported as 16.8 percent higher month-on-month and 103 percent higher year-on-year."
+        }
+      ],
+      "caveats": [
+        "These are dated market-monitor values, not current exchange rates or farmgate prices.",
+        "The kantar weight must be verified from the original report's commodity/unit definition before any per-kg conversion.",
+        "Official and parallel exchange rates must remain separate and be time-stamped."
+      ]
+    },
+    {
+      "id": "livestock_sector_context",
+      "topic": "livestock population and pastoral production context",
+      "source_name": "FAO Sudan at a glance and 2025 CFSAM announcement",
+      "source_url": "https://www.fao.org/sudan/fao-sudan/sudan-at-a-glance/en",
+      "companion_source_url": "https://www.fao.org/neareast/news/details/sudan--new-fao-assessment-warns-of-escalating-food-and-livelihood-crisis/en",
+      "reference_date": "FAO country overview accessed 2026-11-01; CFSAM report announced 26 April 2026",
+      "observations": [
+        {
+          "item": "Total livestock population",
+          "value": 115400000,
+          "unit": "head",
+          "status": "FAO_context_estimate",
+          "finding": "FAO overview estimates about 115.4 million head."
+        },
+        {
+          "item": "Sheep",
+          "value": 42900000,
+          "unit": "head",
+          "status": "FAO_context_estimate"
+        },
+        {
+          "item": "Goats",
+          "value": 33800000,
+          "unit": "head",
+          "status": "FAO_context_estimate"
+        },
+        {
+          "item": "Cattle",
+          "value": 33500000,
+          "unit": "head",
+          "status": "FAO_context_estimate"
+        },
+        {
+          "item": "Camels",
+          "value": 5100000,
+          "unit": "head",
+          "status": "FAO_context_estimate"
+        },
+        {
+          "item": "Veterinary service constraints",
+          "status": "CFSAM_assessment",
+          "finding": "Conflict damaged or looted veterinary infrastructure, suspended national vaccine production and reduced vaccination coverage."
+        }
+      ],
+      "caveats": [
+        "These are broad population estimates and do not provide current state-level herd inventories or productive performance.",
+        "Livestock budgets require species, breed, herd structure, mortality, feed, water, veterinary, mobility and market transaction data.",
+        "Do not use a national livestock headcount as a yield, productivity or farm-profit assumption."
+      ]
+    },
+    {
+      "id": "conflict_food_security_and_access",
+      "topic": "food security, conflict and agricultural operating risk",
+      "source_name": "FAO GIEWS Sudan Country Brief and FAO 2025 CFSAM announcement",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SDN&lang=en",
+      "companion_source_url": "https://www.fao.org/neareast/news/details/sudan--new-fao-assessment-warns-of-escalating-food-and-livelihood-crisis/en",
+      "reference_date": "FAO GIEWS 24 September 2026; CFSAM announcement 26 April 2026",
+      "observations": [
+        {
+          "item": "Population facing IPC Phase 3 or worse",
+          "value": 19500000,
+          "unit": "people",
+          "period": "February–May 2026",
+          "status": "IPC_projection_reported_by_FAO",
+          "finding": "Over 40 percent of the analysed population was projected to face Crisis or worse acute food insecurity."
+        },
+        {
+          "item": "Internally displaced people",
+          "value": 8600000,
+          "unit": "people",
+          "period": "end July 2026",
+          "status": "FAO_GIEWS_reported_estimate"
+        },
+        {
+          "item": "Famine-risk areas",
+          "value": 14,
+          "unit": "areas",
+          "period": "June–September 2026 lean season worst-case scenario",
+          "status": "FAO_GIEWS_risk_assessment"
+        }
+      ],
+      "caveats": [
+        "Conflict, displacement, field-access restrictions, damaged irrigation, input shortages, fuel prices and disrupted trade can make state-level averages unrepresentative.",
+        "Food-security indicators are not crop yield, production cost or farmgate-price observations.",
+        "Any future calculator recommendation must consider location-specific safety, access, rainfall and market connectivity."
+      ]
+    }
+  ],
+  "calculator_data_gaps": [
+    "Obtain the full government-led 2025 CFSAM tables and extract crop-specific planted area, harvested area, production and yield by state and season.",
+    "Reconcile CFSAM estimates with USDA FAS marketing-year series; preserve distinct time periods and methods.",
+    "Export IFPRI's underlying 36-market price and availability data for selected crops, livestock products, inputs and labour, preserving market, state, date, unit and grade.",
+    "Collect verified farmgate producer prices by crop, location, season and date; do not substitute market retail or wholesale prices.",
+    "Verify all local commodity units, including kantar, sacks and other market measures, before conversions.",
+    "Obtain current supplier quotations for seed, fertiliser, crop protection, machinery, fuel, irrigation, labour, land preparation, transport, storage and post-harvest handling.",
+    "Build separate enterprise budgets for irrigated schemes, semi-mechanized rainfed farms and traditional rainfed systems.",
+    "Validate state-level crop suitability, land access, water availability and security before assigning production assumptions.",
+    "Obtain current livestock purchase/sale prices, herd composition, feed, veterinary, vaccination, water and mobility costs.",
+    "Document SDG inflation and official/parallel exchange-rate observations with effective dates; never hard-code stale nominal values."
+  ],
+  "readiness_decision": {
+    "classification": "research_evidence_record_present",
+    "calculator_status": "directory_only_not_active",
+    "calculator_readiness": "not_ready_research_only",
+    "activation_blockers": [
+      "Crop-specific state-level area, production and yield data require extraction and reconciliation.",
+      "No validated current farmgate price series has been adopted.",
+      "No complete crop enterprise budgets or current input quotations.",
+      "Conflict, access and rainfall conditions vary materially across states.",
+      "Currency volatility and local commodity-unit definitions require dated treatment.",
+      "Livestock enterprise budgets require separate species- and production-system data."
+    ]
+  },
+  "safeguards": [
+    "Research-only evidence; not a live calculator dataset.",
+    "Do not activate Sudan or change calculator formulas based on this file.",
+    "Do not treat national cereal production estimates as crop-specific yields or farm-level output.",
+    "Do not substitute retail/wholesale market prices for farmgate producer prices.",
+    "Do not combine CFSAM calendar-year harvest estimates and USDA marketing-year estimates without reconciling period, scope and method.",
+    "Preserve local units and currency/exchange-rate type with each price observation.",
+    "Do not generalize conflict-affected or drought-affected observations into normal-year enterprise assumptions."
+  ]
+}
