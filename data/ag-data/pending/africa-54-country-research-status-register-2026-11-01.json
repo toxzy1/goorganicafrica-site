@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 40,
+    "countries_with_research_evidence_records": 41,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 4,
+    "countries_not_yet_researched_in_current_evidence_register": 3,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -380,9 +380,10 @@
     {
       "code": "SC",
       "name": "Seychelles",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/seychelles-country-profile-evidence-2026-11-01.json",
+      "review_status": "2024_Agriculture_Census_coverage_725_registered_farmers_CBS_2024_output_indicators_2025_egg_producer_and_retail_price_leads_2024_pig_output_and_pork_imports_WDI_2024_crop_index_recorded_detailed_crop_tables_current_farmgate_prices_and_enterprise_budgets_missing"
     },
     {
       "code": "SL",
