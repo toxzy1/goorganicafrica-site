@@ -2670,6 +2670,246 @@
         "keep irrigated southern commercial farms separate from rainfed northern/high-plateau systems and document crop season"
       ],
       "extraction_status": "Algeria now has current FAO 2025 crop estimates and a June 2026 cereal outlook, an official MADRP daily retail-price bulletin dated 29 October 2026, an official Ministry historical agriculture-statistics portal, and USDA independent wheat/barley area and output estimates. FAO estimates 2025 wheat at 3.0m MT, barley at 1.15m MT and oats at 86,000 MT; FAO's 2026 total-cereal forecast is 5m MT. The 29 October 2026 MADRP bulletin reports national retail prices, including potato DZD 91/kg, tomato DZD 129/kg, green pepper DZD 135/kg, hot pepper DZD 149/kg, broiler meat DZD 468/kg and eggs DZD 23 each; these are retail only, not farm-gate. Current crop-specific harvested area, local yields, producer prices and itemized enterprise budgets remain outstanding. No Algeria calculator values are admitted."
+    },
+    {
+      "country_code": "MA",
+      "country_name": "Morocco",
+      "evidence_status": "official_HCP_2025_crop_area_and_output_tables_extracted_2026_cereal_estimate_and_ONICL_reference_price_identified_regional_yield_and_farm_budget_extraction_pending",
+      "sources": [
+        {
+          "title": "Le Maroc en chiffres 2025 — Main agricultural products",
+          "publisher": "Haut-Commissariat au Plan (HCP), Morocco",
+          "url": "https://www.hcp.ma/file/246713/",
+          "publication_date": "2025",
+          "reference_period": "2023/24 and 2022/23 agricultural campaigns",
+          "status": "official_national_crop_area_and_production_tables",
+          "observations": [
+            {
+              "crop": "durum_wheat",
+              "production_mt": 695560,
+              "area_ha": 581800,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; area is not explicitly confirmed as harvested area; ratio must not be adopted as yield."
+            },
+            {
+              "crop": "soft_wheat",
+              "production_mt": 1746110,
+              "area_ha": 1176800,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; area is not explicitly confirmed as harvested area."
+            },
+            {
+              "crop": "barley",
+              "production_mt": 659230,
+              "area_ha": 693800,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; area is not explicitly confirmed as harvested area."
+            },
+            {
+              "crop": "oats",
+              "production_mt": 11010,
+              "area_ha": 16300,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; area is not explicitly confirmed as harvested area."
+            },
+            {
+              "crop": "maize",
+              "production_mt": 73230,
+              "area_ha": 101400,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; seasonal definitions and harvested-area denominator require confirmation."
+            },
+            {
+              "crop": "rice",
+              "production_mt": 6010,
+              "area_ha": 900,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; very small crop, definitions and harvested-area denominator require confirmation."
+            },
+            {
+              "crop": "chickpeas",
+              "production_mt": 51280,
+              "area_ha": 51500,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; not a direct Beans (Cowpea) profile."
+            },
+            {
+              "crop": "faba_beans",
+              "production_mt": 49330,
+              "area_ha": 72300,
+              "reference_period": "2023/24",
+              "status": "HCP/MADRM reported production and cultivated area; faba bean is not cowpea."
+            },
+            {
+              "crop": "winter_cereals_aggregate",
+              "production_mt": 3152370,
+              "area_ha": 2601700,
+              "reference_period": "2023/24",
+              "status": "Aggregate winter cereal output and cultivated area; do not use as an individual commodity."
+            }
+          ],
+          "quality_notes": [
+            "HCP table units are thousands of quintals for production and thousands of hectares for area; values above are converted to metric tonnes and hectares (1 quintal = 100 kg).",
+            "The table reports cultivated areas, not necessarily harvested areas. Do not derive accepted calculator yields from production/area ratios until the national statistical definitions are confirmed.",
+            "The 2023/24 season experienced a severe cereal decline: winter cereal output 3.152 million tonnes, down 43.1 percent from 2022/23.",
+            "Legume categories are specific: faba beans, chickpeas, peas and lentils. None should be re-labelled as cowpea."
+          ]
+        },
+        {
+          "title": "Le Maroc en chiffres 2026 — HCP publication catalogue",
+          "publisher": "HCP Morocco",
+          "url": "https://www.hcp.ma/downloads/",
+          "publication_date": "2026-10-27",
+          "status": "latest_annual_statistics_publication_listed",
+          "note": "HCP lists the 2026 Morocco-in-figures edition published 27 October 2026. Retrieve the full 2026 agriculture tables and compare with the 2025 edition; do not assume the PDF/Excel data are already extracted into this register."
+        },
+        {
+          "title": "2025/26 agricultural campaign — official cereal production update",
+          "publisher": "Government of Morocco / MAP, published on Maroc.ma",
+          "url": "https://maroc.ma/fr/actualites/agriculture-la-campagne-2025-2026-marque-un-rebond-significatif-de-la-production-et-des-ressources",
+          "publication_date": "2026-05-26",
+          "reference_period": "2025/26 agricultural campaign",
+          "status": "official_government_campaign_estimate_not_crop_specific_final_survey",
+          "observations": [
+            {
+              "crop": "total_cereals",
+              "production_mt": 9000000,
+              "reference_period": "2025/26",
+              "status": "Government/DEPF estimate of approximately 90 million quintals; aggregate cereal output, not crop-specific."
+            },
+            {
+              "indicator": "olive_production",
+              "production_mt": 2000000,
+              "reference_period": "2025/26",
+              "status": "Ministry estimate; outside current 17 commodity profiles."
+            },
+            {
+              "indicator": "citrus_production",
+              "production_mt": 1900000,
+              "reference_period": "2025/26",
+              "status": "Ministry estimate; outside current 17 commodity profiles."
+            },
+            {
+              "indicator": "date_production",
+              "production_mt": 160000,
+              "reference_period": "2025/26",
+              "status": "Ministry estimate; outside current 17 commodity profiles."
+            },
+            {
+              "indicator": "national_livestock_herd",
+              "value_head": 40000000,
+              "reference_period": "2026",
+              "status": "Approximate all-species national herd count cited in government update; species breakdown, census method and production structure not provided."
+            }
+          ],
+          "quality_notes": [
+            "Government update reports 90 million quintals, more than double the 43.1 million quintals in 2024/25; this is an aggregate campaign estimate.",
+            "The April 2026 ministerial announcement reported approximately 3.9 million hectares sown to cereals. Do not divide aggregate cereal output by this planted area to create a crop yield.",
+            "Improved national rainfall and reservoir conditions do not imply identical yield or irrigation conditions in all regions."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief — Morocco",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://cb.apps.fao.org/country.jsp?code=MAR&lang=es",
+          "reference_date": "2026-07-08",
+          "status": "independent_seasonal_cereal_and_food_market_cross_check",
+          "observations": [
+            {
+              "crop": "total_cereals",
+              "production_mt": 6300000,
+              "reference_period": "2026 forecast",
+              "status": "FAO forecast based on its own cereal balance and monitoring; differs from later government estimate of around 9m tonnes. Preserve the source/date/method difference; do not average these figures."
+            },
+            {
+              "crop": "wheat_import_requirement",
+              "production_mt": 5000000,
+              "reference_period": "2026/27 marketing year",
+              "status": "FAO forecast of import requirements, not domestic production."
+            }
+          ],
+          "quality_notes": [
+            "FAO's July 2026 brief forecast 6.3 million tonnes of cereals, while the Moroccan government in May 2026 reported an estimate of 9 million tonnes. This discrepancy is material and requires reconciliation of crop scope, estimates and reference dates before using either as a final total.",
+            "FAO reports the 2026 winter wheat/barley harvest started in May and was expected to finish by late July.",
+            "The FAO cereal balance estimate is not a farm-level yield or enterprise budget."
+          ]
+        },
+        {
+          "title": "Circulaire ONICL n°910 — Commercialisation des céréales de la production nationale 2025",
+          "publisher": "Office National Interprofessionnel des Céréales et des Légumineuses (ONICL), copy hosted by FNCL",
+          "url": "https://www.fncl.ma/wpfd_file/circulaire-n910-onicl-du-21-05-2025-commercialisation-des-cereales-de-la-production-nationale-2025/",
+          "publication_date": "2025-05-21",
+          "reference_period": "2025 domestic cereal marketing campaign",
+          "status": "official_campaign_reference_price_and_collection_conditions_secondary_host_copy",
+          "observations": [
+            {
+              "commodity": "nationally_produced_standard_cereal",
+              "price_mad_per_quintal": 280,
+              "reference_period": "2025 campaign",
+              "status": "Reference price cited in ONICL circular; applies under specified eligible collection/marketing conditions, not an unrestricted guaranteed farm-gate price."
+            },
+            {
+              "commodity": "standard_quality_cereal_transfer_price",
+              "price_mad_per_quintal": 258.8,
+              "reference_period": "2025 campaign",
+              "status": "Uniform transfer price stated in circular; transaction/marketing context, not a general farm retail price."
+            },
+            {
+              "indicator": "storage_premium",
+              "value_mad_per_quintal_per_fortnight": 2.5,
+              "reference_period": "eligible collection period 1 June-31 July 2025",
+              "status": "Campaign-specific storage premium subject to terms."
+            }
+          ],
+          "quality_notes": [
+            "The circular concerns national cereal marketing in 2025; eligible collection period and delivery conditions apply.",
+            "The reference price is not automatically the net price received by every farmer; grade, eligibility, collection timing, delivery and transport matter.",
+            "Obtain the original ONICL-hosted circular and the 2026/27 campaign circular before any current calculator use."
+          ]
+        },
+        {
+          "title": "Annuaire Statistique du Maroc — HCP agricultural tables",
+          "publisher": "HCP Morocco",
+          "url": "https://www.hcp.ma/downloads/",
+          "reference_period": "2021/22 to 2023/24",
+          "status": "official_excel_and_pdf_statistical_yearbook_download_route",
+          "note": "HCP publishes downloadable Excel and PDF statistical yearbooks, including crop areas, production, regional and provincial cereal tables. The 2025 edition's crop tables provide area and production series by crop and region/province; retrieve original spreadsheets for exact matched denominators and units."
+        },
+        {
+          "title": "Agricultural Statistics and ONCA advisory services",
+          "publisher": "Ministry of Agriculture / Office National du Conseil Agricole (ONCA)",
+          "url": "https://www.onca.gov.ma/",
+          "status": "official_advisory_and_extension_source",
+          "note": "Use ONCA regional and provincial services to locate crop technical itineraries, input recommendations and enterprise-cost evidence; recommendations are not equivalent to actual farmer-paid input prices or observed budgets."
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "tomato",
+        "hot_pepper",
+        "cucumber",
+        "watermelon",
+        "beans/cowpea",
+        "broilers",
+        "layers",
+        "cattle",
+        "goat",
+        "pig"
+      ],
+      "remaining_gaps": [
+        "download and extract the HCP 2026 Morocco-in-figures edition and original Excel yearbooks, especially crop area/output/yield tables by crop, region and province",
+        "reconcile the official 2025/26 cereal estimate of about 9.0m tonnes with FAO's July 2026 forecast of 6.3m tonnes; identify final crop-specific production totals and the exact campaign scope",
+        "obtain matched harvested area and production by crop and province for wheat, barley, maize, rice, tomato, pepper, cucumber, watermelon and pulses; distinguish cultivated/sown/harvested area",
+        "obtain crop-specific yields by rainfed/bour (pluvial), irrigated, and other production systems; preserve regional variation and drought/rainfall exposure",
+        "obtain current ONICL 2026/27 cereal marketing circular, grade-specific reference prices, collection terms and observed farm-gate prices",
+        "obtain dated farm-gate and wholesale prices for vegetables, pulses and horticulture by wholesale market/region; keep retail prices separate",
+        "obtain itemized farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation/energy, land rent, harvest, storage and transport costs by crop and production system",
+        "extract livestock census species breakdown and distinguish national herd stock from commercial production; obtain cattle/goat/pig/poultry feed, mortality, veterinary and sale-price budgets",
+        "do not map faba beans, chickpeas, peas, lentils or green beans to the calculator's Beans (Cowpea) profile without direct cowpea evidence",
+        "do not activate Morocco calculator profiles until crop-specific multi-season yields, dated local producer prices and complete enterprise budgets are reconciled"
+      ],
+      "extraction_status": "Morocco has useful official HCP crop area and production tables for 2023/24, including crop-specific winter cereals, spring cereals and pulses, plus a new HCP 2026 annual statistical publication listed on 27 October 2026. Government sources report an approximately 9.0m tonne total cereal estimate for 2025/26, while FAO's July 2026 brief forecast 6.3m tonnes; these totals are not directly reconciled and neither is a crop-specific yield. An ONICL 2025 circular copy gives a campaign reference price of MAD 280/quintal subject to collection terms; current campaign prices and realized producer prices are still needed. No Morocco calculator values are admitted."
     }
   ],
   "cross_country_sources": [
@@ -2690,6 +2930,7 @@
     }
   ],
   "next_steps": [
+    "For Morocco, extract the HCP 2026 Morocco-in-figures and original Excel yearbook tables by crop and province; reconcile the 2025/26 9.0m tonne government cereal estimate against FAO's 6.3m tonne forecast; obtain matching harvested area, 2026/27 ONICL terms, dated farm-gate prices and itemized enterprise costs before activation.",
     "For Algeria, obtain the 2024 Agricultural Census and current MADRP crop statistics by wilaya, extract matched crop-specific harvested area/output/yield by season, and obtain dated farm-gate prices plus itemized crop and livestock budgets; keep the October 2026 retail price bulletin separate from producer prices.",
     "For Egypt, extract the direct CAPMAS 2023/24 crop-area and plant-production XLSX by governorate and season; verify wheat, maize, paddy rice and tomato production against matched area and then obtain current farm-gate prices and itemized input budgets.",
     "For Egypt, obtain the CAPMAS 2023/24 crop area and plant production bulletin and Ministry Economic Affairs Sector tables, extract matched governorate crop area/output/yield by winter, summer and Nili season, and obtain current farm-gate prices and input budgets.",
