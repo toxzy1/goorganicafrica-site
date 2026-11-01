@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 42,
+    "countries_with_research_evidence_records": 43,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 2,
+    "countries_not_yet_researched_in_current_evidence_register": 1,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -404,9 +404,10 @@
     {
       "code": "SS",
       "name": "South Sudan",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/south-sudan-country-profile-evidence-2026-11-01.json",
+      "review_status": "2025_FAO_WFP_CFSAM_net_cereal_output_1_2131m_tonnes_2026_FAO_GIEWS_crop_risk_CLIMIS_market_catalogue_WFP_2025_Aweil_sorghum_price_and_FEWS_NET_SSP_volatility_recorded_crop_level_tables_farmgate_prices_and_regional_enterprise_budgets_pending"
     },
     {
       "code": "SD",
