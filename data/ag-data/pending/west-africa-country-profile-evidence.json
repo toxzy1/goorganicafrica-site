@@ -70,7 +70,7 @@
     {
       "country_code": "SL",
       "country_name": "Sierra Leone",
-      "evidence_status": "primary_national_survey_identified_pending_table_extraction_and_access_review",
+      "evidence_status": "published_aggregate_crop_observations_extracted_budget_data_incomplete",
       "survey": {
         "title": "Sierra Leone Annual Agricultural Survey 2024",
         "publisher": "Statistics Sierra Leone and Ministry of Agriculture and Food Security, with FAO technical support",
@@ -99,7 +99,7 @@
           "The public-use dataset version was updated to reflect changes in input-use and input-detail rosters after the post-harvest visit.",
           "The metadata states that a confidentiality declaration/access conditions apply to data files; review these conditions before any microdata use."
         ],
-        "extraction_status": "No numeric observations are admitted in this register yet. Extract published aggregate tables first and record sampling errors where supplied.",
+        "extraction_status": "Published Table 2.5 extracted into this evidence register as national point observations. These are not low/expected/high calculator ranges and are not yet admitted to calculator country_data.",
         "priority_commodities": [
           "rice",
           "cassava",
@@ -119,13 +119,171 @@
           "current farm-gate and market selling prices by location",
           "verified seed and planting-material prices",
           "current fertilizer and crop-protection costs",
+          "crop-specific low/expected/high yield ranges or a defensible method to derive them",
           "livestock purchase, feed, veterinary and mortality cost benchmarks",
-          "regional production-cost profiles"
+          "regional production-cost profiles",
+          "confirmation of the chilli pepper variety and broad-bean taxonomy before mapping to existing calculator commodities"
+        ],
+        "table_reference": "Table 2.5, planted area, harvested area, production and yield of crops cultivated by agricultural households, report page 24.",
+        "table_source_url": "https://www.statistics.sl/images/StatisticsSL/Documents/2024-SLAAS-Report_V4.pdf",
+        "observations": [
+          {
+            "crop": "rice",
+            "planted_area_ha": 616842,
+            "harvested_area_ha": 533463,
+            "production_mt": 1066012.9,
+            "observed_yield_mt_per_ha": 2,
+            "calculator_match": "rice",
+            "match_status": "direct_crop_match"
+          },
+          {
+            "crop": "maize",
+            "planted_area_ha": 112728,
+            "harvested_area_ha": 62726,
+            "production_mt": 110442.8,
+            "observed_yield_mt_per_ha": 1.8,
+            "calculator_match": "maize",
+            "match_status": "direct_crop_match"
+          },
+          {
+            "crop": "millets",
+            "planted_area_ha": 14773,
+            "harvested_area_ha": 9276,
+            "production_mt": 7444.5,
+            "observed_yield_mt_per_ha": 0.8,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "chilli pepper",
+            "planted_area_ha": 29121,
+            "harvested_area_ha": 27023,
+            "production_mt": 35477.8,
+            "observed_yield_mt_per_ha": 1.3,
+            "calculator_match": "hot_pepper",
+            "match_status": "candidate_only_variety_and_production_system_need_review"
+          },
+          {
+            "crop": "cucumber",
+            "planted_area_ha": 46477,
+            "harvested_area_ha": 42859,
+            "production_mt": 184938.7,
+            "observed_yield_mt_per_ha": 4.3,
+            "calculator_match": "cucumber",
+            "match_status": "direct_crop_match"
+          },
+          {
+            "crop": "broad beans",
+            "planted_area_ha": 28252,
+            "harvested_area_ha": 18060,
+            "production_mt": 14085.7,
+            "observed_yield_mt_per_ha": 0.8,
+            "calculator_match": null,
+            "match_status": "do_not_map_to_cowpea_without_taxonomic_confirmation"
+          },
+          {
+            "crop": "cassava",
+            "planted_area_ha": 262326,
+            "harvested_area_ha": 242380,
+            "production_mt": 2855435.8,
+            "observed_yield_mt_per_ha": 11.8,
+            "calculator_match": "cassava",
+            "match_status": "direct_crop_match"
+          },
+          {
+            "crop": "yams",
+            "planted_area_ha": 19771,
+            "harvested_area_ha": 12277,
+            "production_mt": 87620.1,
+            "observed_yield_mt_per_ha": 7.1,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "groundnut",
+            "planted_area_ha": 125530,
+            "harvested_area_ha": 81917,
+            "production_mt": 101388.6,
+            "observed_yield_mt_per_ha": 1.2,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "sesame",
+            "planted_area_ha": 35967,
+            "harvested_area_ha": 20278,
+            "production_mt": 7042.6,
+            "observed_yield_mt_per_ha": 0.3,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "soybean",
+            "planted_area_ha": 11184,
+            "harvested_area_ha": 6772,
+            "production_mt": 7485.4,
+            "observed_yield_mt_per_ha": 1.1,
+            "calculator_match": "soybean",
+            "match_status": "direct_crop_match"
+          },
+          {
+            "crop": "oil palm",
+            "planted_area_ha": 203246,
+            "harvested_area_ha": 175768,
+            "production_mt": 1508081,
+            "observed_yield_mt_per_ha": 8.6,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "cocoa",
+            "planted_area_ha": 198714,
+            "harvested_area_ha": 191283,
+            "production_mt": 93749.6,
+            "observed_yield_mt_per_ha": 0.5,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "coffee",
+            "planted_area_ha": 43165,
+            "harvested_area_ha": 40430,
+            "production_mt": 80574.7,
+            "observed_yield_mt_per_ha": 2,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "banana",
+            "planted_area_ha": 12041,
+            "harvested_area_ha": 8959,
+            "production_mt": 92218.8,
+            "observed_yield_mt_per_ha": 10.3,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          },
+          {
+            "crop": "kola",
+            "planted_area_ha": 19417,
+            "harvested_area_ha": 18876,
+            "production_mt": 4790.3,
+            "observed_yield_mt_per_ha": 0.3,
+            "calculator_match": null,
+            "match_status": "no_matching_commodity_profile"
+          }
+        ],
+        "observation_caveats": [
+          "These are national survey point estimates for the 2024 reference year, not low/expected/high production ranges.",
+          "The report covers national agricultural households; the country report notes coverage and sampling design details in its methodology and annex.",
+          "Do not treat crop production statistics as farm-gate prices or production-cost observations.",
+          "Check the report's detailed methodology and any indicator-specific sampling-error notes before using an observation as a forecast input."
         ]
       }
     }
   ],
   "next_steps": [
+    "Do not convert the Sierra Leone national point yields directly into low/expected/high calculator ranges; first obtain multi-year and/or regional evidence.",
+    "For Sierra Leone, cross-check the extracted national point observations with FAOSTAT and any available indicator-specific sampling errors before considering calculator use.",
     "Resolve the LISGIS August 2026 correction notice against the Liberia 2024 survey tables.",
     "Extract aggregate crop production, harvested area and yield observations for overlapping calculator commodities.",
     "Extract input-use and labour evidence separately; do not convert adoption rates into monetary costs.",
