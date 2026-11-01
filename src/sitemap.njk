@@ -51,7 +51,8 @@ eleventyExcludeFromCollections: true
   {% endif %}
   {% endfor %}
 
-  {% for section in ["data-updates", "about", "contact", "privacy-policy"] %}
+  <url><loc>{{ site.url }}/data-updates/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  {% for section in ["about", "contact", "privacy-policy"] %}
   <url><loc>{{ site.url }}/{{ section }}/</loc><changefreq>yearly</changefreq><priority>{% if section == "privacy-policy" %}0.3{% else %}0.5{% endif %}</priority></url>
   {% endfor %}
 </urlset>
