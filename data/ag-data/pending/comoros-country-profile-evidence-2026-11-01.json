@@ -1,0 +1,303 @@
+{
+  "country": "Comoros",
+  "iso_alpha2": "KM",
+  "iso_alpha3": "COM",
+  "currency": {
+    "code": "KMF",
+    "name": "Comorian franc",
+    "note": "Currency identification only; no current agricultural prices recorded in this evidence file."
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Country-level agricultural evidence, source inventory, data-quality notes and missing farm-budget inputs. This is not a calculator profile and does not authorize country activation.",
+  "geographic_coverage": {
+    "country": "Union of the Comoros",
+    "islands": [
+      "Ngazidja (Grande Comore)",
+      "Ndzuwani (Anjouan)",
+      "Mwali (Mohéli)"
+    ],
+    "census_campaign": "2023-2024",
+    "campaign_period": "December 2023 to November 2024 for crop production; livestock reference period May 2024 to April 2025"
+  },
+  "key_evidence": [
+    {
+      "topic": "Agricultural structure and land",
+      "reference_period": "RGA-2 agricultural census 2023-2024",
+      "values": [
+        {
+          "indicator": "Agricultural holdings enumerated",
+          "value": 73966,
+          "unit": "holdings"
+        },
+        {
+          "indicator": "Agricultural land",
+          "value": 89282,
+          "unit": "ha"
+        },
+        {
+          "indicator": "Cultivated land",
+          "value": 56576,
+          "unit": "ha"
+        },
+        {
+          "indicator": "Average holding size",
+          "value": 0.4,
+          "unit": "ha per holding"
+        },
+        {
+          "indicator": "Holdings operating less than 1 ha",
+          "value": 85,
+          "unit": "%"
+        },
+        {
+          "indicator": "Holdings primarily producing for own consumption",
+          "value": 77,
+          "unit": "%"
+        },
+        {
+          "indicator": "Holdings primarily oriented toward sales",
+          "value": 23,
+          "unit": "%"
+        }
+      ],
+      "source": "INSEED RGA-2 2025 results, based on the 2023-2024 agricultural census",
+      "source_url": "https://inseed-comores.org/publications/rga2-resultats-module-de-base-2025",
+      "caveat": "National structural indicators. The 0.40 ha average and high prevalence of small holdings mean national averages must not be treated as representative commercial farm sizes."
+    },
+    {
+      "topic": "Crop production",
+      "reference_period": "RGA-2 crop campaign 2023-2024",
+      "values": [
+        {
+          "crop": "Banana",
+          "production": 72809,
+          "unit": "tonnes",
+          "reported_rank": "largest food crop by production"
+        },
+        {
+          "crop": "Cassava",
+          "production": 59149,
+          "unit": "tonnes",
+          "reported_rank": "second largest food crop by production"
+        },
+        {
+          "crop": "Sweet potato",
+          "production": 11684,
+          "unit": "tonnes"
+        },
+        {
+          "crop": "Vanilla",
+          "production": 2442,
+          "unit": "tonnes",
+          "category": "cash/export crop"
+        },
+        {
+          "crop": "Clove",
+          "production": 2178,
+          "unit": "tonnes",
+          "category": "cash/export crop"
+        },
+        {
+          "crop": "Ylang-ylang",
+          "production": 355,
+          "unit": "tonnes",
+          "category": "cash/export crop"
+        }
+      ],
+      "source": "INSEED RGA-2 2025 results",
+      "source_url": "https://inseed-comores.org/publications/rga2-resultats-module-de-base-2025",
+      "caveat": "These are national campaign totals. The public results summary does not expose all crop-specific area denominators, island-level tables or the complete crop list; do not calculate farm yields by dividing these totals by an unrelated land-area figure."
+    },
+    {
+      "topic": "Selected crop yields",
+      "values": [
+        {
+          "crop": "Mango",
+          "yield": 17.1,
+          "unit": "tonnes/ha"
+        },
+        {
+          "crop": "Lettuce",
+          "yield": 8.5,
+          "unit": "tonnes/ha"
+        },
+        {
+          "crop": "Cucumber",
+          "yield": 8.3,
+          "unit": "tonnes/ha"
+        }
+      ],
+      "source": "INSEED RGA-2 2025 results",
+      "source_url": "https://inseed-comores.org/publications/rga2-resultats-module-de-base-2025",
+      "caveat": "Selected figures reported in the public summary only. Verify crop-specific denominator, island, production system and weighting in detailed census tables before use in farm budgets."
+    },
+    {
+      "topic": "Livestock",
+      "reference_period": "RGA-2 livestock reference period May 2024-April 2025",
+      "values": [
+        {
+          "indicator": "Holdings engaged in animal production",
+          "value": 49679,
+          "unit": "holdings"
+        },
+        {
+          "indicator": "Share of agricultural holdings with livestock",
+          "value": 67,
+          "unit": "%"
+        },
+        {
+          "animal": "Poultry",
+          "count": 270571,
+          "unit": "heads"
+        },
+        {
+          "animal": "Goats",
+          "count": 116674,
+          "unit": "heads"
+        },
+        {
+          "animal": "Cattle",
+          "count": 55835,
+          "unit": "heads"
+        }
+      ],
+      "source": "INSEED RGA-2 2025 results",
+      "source_url": "https://inseed-comores.org/publications/rga2-resultats-module-de-base-2025",
+      "caveat": "National stock counts only. No verified commercial broiler/layer split, liveweight, breed, productivity, feed conversion, mortality, farm-gate sale price or input-cost series recorded here."
+    },
+    {
+      "topic": "Agricultural practices",
+      "reference_period": "RGA-2 crop campaign 2023-2024",
+      "values": [
+        {
+          "indicator": "Cultivated land reported as fertilized",
+          "value": 20,
+          "unit": "%"
+        },
+        {
+          "indicator": "Fertilized area using organic fertilizer",
+          "value": 54,
+          "unit": "% of fertilized area"
+        },
+        {
+          "indicator": "Fertilized area using mineral fertilizer",
+          "value": 29,
+          "unit": "% of fertilized area"
+        },
+        {
+          "indicator": "Fertilized area using combined organic and mineral fertilizer",
+          "value": 17,
+          "unit": "% of fertilized area"
+        },
+        {
+          "indicator": "Crop producers using phytosanitary products",
+          "value": 10,
+          "unit": "%"
+        }
+      ],
+      "source": "INSEED RGA-2 2025 results",
+      "source_url": "https://inseed-comores.org/publications/rga2-resultats-module-de-base-2025",
+      "caveat": "The fertilizer percentages are shares of fertilized area, not shares of all cultivated land."
+    },
+    {
+      "topic": "Earlier agricultural productivity evidence",
+      "reference_period": "2021 household-level survey; FAO policy brief published 2023",
+      "source": "FAO Agricultural Development Economics Policy Brief No. 69, Agricultural yields and production in the Comoros",
+      "source_url": "https://www.fao.org/agrifood-economics/publications/detail/en/c/1674353/",
+      "values": [],
+      "caveat": "FAO reports that banana and cassava are the most important crops by production and yield, and that yields for many crops were low relative to international averages. This is an older 2021 survey and must not be substituted for the newer RGA-2 census results."
+    },
+    {
+      "topic": "FAO analytical report",
+      "reference_period": "Dataset collected in 2021; report published 2025",
+      "source": "FAO, Unveiling the agricultural landscape of the Comoros: An analysis of agricultural production and yields",
+      "source_url": "https://doi.org/10.4060/cd4545en",
+      "values": [],
+      "caveat": "Useful for interpreting crop production and yield distributions, but the underlying survey is from 2021. Use alongside, not instead of, the 2023-2024 RGA-2 census."
+    },
+    {
+      "topic": "Cereal yield macro indicator",
+      "reference_period": "2024",
+      "values": [
+        {
+          "indicator": "Cereal yield",
+          "value": 1718,
+          "unit": "kg/ha"
+        }
+      ],
+      "source": "World Bank indicator page citing FAOSTAT",
+      "source_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG?locations=KM",
+      "caveat": "Aggregate cereal-yield indicator, not a crop-specific yield or a farm-level observation. Do not use as a maize, rice or other individual crop yield."
+    }
+  ],
+  "data_quality_and_use": [
+    "The RGA-2 is the strongest current national structural source identified in this review. It was conducted by INSEED with FAO technical support and World Bank financing.",
+    "The RGA-2 public microdata catalogue records version 1.0, dated 15 April 2026, and describes the released files as cleaned, weighted and validated by the technical committee.",
+    "The census is a national campaign source; island-specific results and crop-level denominator tables must be checked before deriving regional yields or budgets.",
+    "Production totals, yields, retail prices, farm-gate prices and input costs are different measures and must remain separately labelled.",
+    "No current verified farm-gate commodity prices or detailed crop enterprise budgets were established from the sources reviewed."
+  ],
+  "sources": [
+    {
+      "publisher": "INSEED",
+      "title": "Deuxième Recensement Général de l'Agriculture — RGA-2 (2025): Résultats du module de base",
+      "url": "https://inseed-comores.org/publications/rga2-resultats-module-de-base-2025",
+      "source_type": "National agricultural census results",
+      "reference_period": "2023-2024 crop campaign; livestock May 2024-April 2025"
+    },
+    {
+      "publisher": "INSEED NADA",
+      "title": "Comoros — Deuxième Recensement Général de l'Agriculture (RGA-2 2025), version 1.0",
+      "url": "https://nada.inseed-comores.org/index.php/catalog/16",
+      "source_type": "Official microdata catalogue and metadata",
+      "publication_or_version_date": "2026-04-15"
+    },
+    {
+      "publisher": "FAO",
+      "title": "National Presentation of the Results of the Second General Agricultural Census (RGA2)",
+      "url": "https://www.fao.org/africa/news-stories/news-detail/national-presentation-of-the-results-of-the-second-general-agricultural-census-%28rga2%29/en",
+      "source_type": "Institutional confirmation of national presentation",
+      "publication_date": "2026-04-02"
+    },
+    {
+      "publisher": "FAO",
+      "title": "Agricultural yields and production in the Comoros",
+      "url": "https://www.fao.org/agrifood-economics/publications/detail/en/c/1674353/",
+      "source_type": "Policy brief based on 2021 survey data",
+      "publication_year": 2023
+    },
+    {
+      "publisher": "FAO",
+      "title": "Unveiling the agricultural landscape of the Comoros",
+      "url": "https://doi.org/10.4060/cd4545en",
+      "source_type": "Technical report based on 2021 survey data",
+      "publication_year": 2025
+    },
+    {
+      "publisher": "World Bank",
+      "title": "Cereal yield (kg per hectare), Comoros; source FAOSTAT",
+      "url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG?locations=KM",
+      "source_type": "Aggregate international indicator",
+      "reference_year": 2024
+    },
+    {
+      "publisher": "IFAD",
+      "title": "Comoros country page",
+      "url": "https://www.ifad.org/en/w/countries/comoros",
+      "source_type": "Agriculture and rural livelihoods context",
+      "caveat": "Contextual source only; not used as a source of crop budgets or commodity prices."
+    }
+  ],
+  "missing_data_before_calculator_use": [
+    "Current island- and district-specific farm-gate prices for target crops, with date, market, grade and unit.",
+    "Current retail market price series kept separate from producer prices.",
+    "Crop-specific harvested area and yield distributions for banana, cassava, sweet potato, rice, maize, vegetables, vanilla, clove and ylang-ylang, by island where possible.",
+    "Farmer-paid seed and planting-material costs, fertilizer and manure costs, crop-protection costs, labour rates and labour requirements.",
+    "Irrigation, water, energy, land preparation, tools, machinery hire, transport, packaging, storage and post-harvest costs.",
+    "Crop cycle length, planting density, harvest frequency, marketable share, losses and farm-gate grade differentials.",
+    "Livestock species/breed production systems, feed costs, veterinary costs, mortality, productivity and dated sale prices.",
+    "Independent validation of census table definitions, weights and crop-specific denominators before converting national observations into enterprise budgets."
+  ],
+  "recommendation": "Retain Comoros as research-only. The national census provides a substantial evidence base for agricultural structure, production and livestock, but the currently identified public evidence does not establish a complete, current farm-level cost and farm-gate price dataset. Do not activate a Comoros calculator profile or infer profitability until the missing budget inputs are sourced and validated."
+}
