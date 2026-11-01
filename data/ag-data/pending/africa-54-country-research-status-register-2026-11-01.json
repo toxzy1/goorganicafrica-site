@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 35,
+    "countries_with_research_evidence_records": 36,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 9,
+    "countries_not_yet_researched_in_current_evidence_register": 8,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -276,9 +276,10 @@
     {
       "code": "LY",
       "name": "Libya",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/libya-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_GIEWS_Jul_2026_cereal_outlook_WDI_FAOSTAT_2024_cereal_output_SESRIC_barley_series_World_Bank_41_market_RTFP_through_Oct_2026_official_2024_2025_market_price_dataset_IFAD_farm_structure_WFP_Fezzan_assessment_FAO_irrigation_study_and_MoA_census_preparation_recorded_farmgate_prices_and_enterprise_budgets_missing_barley_yield_metadata_needs_reconciliation"
     },
     {
       "code": "MG",
