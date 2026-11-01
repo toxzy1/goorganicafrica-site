@@ -16,7 +16,7 @@
     {
       "country_code": "LR",
       "country_name": "Liberia",
-      "evidence_status": "published_national_observations_extracted_on_hold_pending_august_2026_erratum_reconciliation",
+      "evidence_status": "corrected_LAAS_2024_report_confirmed_available_original_Table_10_and_cost_wage_table_numbering_and_yield_discrepancies_require_reextraction",
       "survey": {
         "title": "Liberia Annual Agriculture Survey 2024",
         "publisher": "Liberia Institute of Statistics and Geo-Information Services (LISGIS), with Ministry of Agriculture",
@@ -48,7 +48,7 @@
           "corrected_report_portal_url": "https://update.lisgis.gov.lr/surveys.php?survey_id=25"
         },
         "license_and_use": "The LISGIS open-data licence page lists the 2024 crop cultivation, crop loss, crop production/yield, inputs, labour and livestock/poultry aggregate datasets as CC BY 4.0. Confirm the licence for each selected table or download before redistribution.",
-        "extraction_status": "Table 10 and selected labour-cost tables have been transcribed as provisional observations from the published report. The March 10 2026 erratum identifies edits to the Executive Summary and Key Findings, not Tables 10, 35 or 38. However, the LISGIS portal also displays a general August 2026 revision notice with unclear scope. More importantly, the published Table 10 yield column does not reconcile arithmetically with harvested quantity divided by harvested area. Keep all Liberia values on hold pending source-table clarification and confirmation of the August notice scope.",
+        "extraction_status": "The original October/November 2025 PDF is confirmed to be the old report: LISGIS now explicitly labels a corrected version available. The March 10 2026 erratum text corrects the Executive Summary and Key Findings; the later LISGIS portal notice says the LAAS-2024 report itself has a corrected version but does not expose its direct PDF URL in the accessible page text. Original Table 10 values therefore remain on hold. In the original PDF, rice 201,074 Mt / 139,707 harvested ha = 1.439 Mt/ha, not the reported 2.0; cassava 14,591 / 20,192 = 0.723, not 1.0; maize 2,937 / 3,438 = 0.854, not 1.5. The report body also labels its other-cost table as Table 35 and crop-labour wage table as Table 38, while the table-of-contents index lists these as Tables 38 and 41 respectively. Re-extract all figures and table references from the corrected PDF before using any data.",
         "priority_commodities": [
           "rice",
           "cassava",
@@ -71,12 +71,16 @@
           "regional production-cost profiles and farm-system assumptions",
           "confirm crop taxonomy for beans and pepper before mapping to existing commodity profiles",
           "confirm whether the general August 2026 LISGIS revision notice affects LAAS-2024 Tables 10, 35 or 38",
-          "obtain LISGIS clarification on the Table 10 yield denominator and reconcile published yields against production and harvested area"
+          "obtain LISGIS clarification on the Table 10 yield denominator and reconcile published yields against production and harvested area",
+          "download the LISGIS corrected LAAS-2024 PDF from the corrected-report link and capture its exact URL and publication/revision date",
+          "re-extract corrected Table 10, other production cost table (body caption Table 35 in old report) and hired crop-labour wage table (body caption Table 38 in old report)",
+          "confirm whether the corrected report resolves the rice/cassava/maize yield denominator inconsistencies and whether any sample uncertainty flags changed"
         ],
         "table_references": [
-          "Table 10, planted area, harvested area, harvested quantity and yield, report page 37.",
-          "Table 35, other agricultural production costs, average daily payment and duration, report page 72.",
-          "Table 38, average daily hired-labour payment by gender and region, report page 77."
+          "Original report Table 10, planted area, harvested area, harvested quantity and yield, report page 37; all observations on hold pending extraction from corrected report.",
+          "Original report body labels the other agricultural production cost table as Table 35 (TOC index calls it Table 38), report page 72.",
+          "Original report body labels the daily hired crop-labour wage table as Table 38 (TOC index calls it Table 41), report page 77.",
+          "Do not rely on the TOC table numbering alone; confirm table captions and values in the corrected report."
         ],
         "provisional_observations_on_hold": [
           {
@@ -336,26 +340,30 @@
           "Arithmetic review found that the report's published yield values do not consistently reconcile with harvested quantity divided by harvested area (for example, rice: 201,074 Mt / 139,707 ha = about 1.439 Mt/ha, while the table reports 2.0 Mt/ha). Do not use the published yield column or the recalculated ratio until LISGIS confirms the correct yield denominator and resolves the August 2026 erratum.",
           "The March 10 2026 LISGIS erratum identifies changes to the Executive Summary and Key Findings, not the crop-yield or labour tables transcribed here.",
           "A separate August 2026 portal notice refers to selected corrected tables and indicators but does not identify the affected table numbers in the accessible notice; its relevance to LAAS-2024 remains to be confirmed.",
-          "An official corrected-report download is now identified on the LISGIS survey record. Re-extract Table 10 and the cost tables from that corrected report before treating earlier transcriptions as valid."
+          "An official corrected-report download is now identified on the LISGIS survey record. Re-extract Table 10 and the cost tables from that corrected report before treating earlier transcriptions as valid.",
+          "LISGIS's current survey record explicitly announces a corrected LAAS-2024 report; the older PDF previously used for transcription is labelled the old document on the portal. The corrected PDF must replace it as the source of record.",
+          "In the old report, rice, cassava and maize yield columns do not equal harvested quantity divided by harvested area. Recalculated ratios are diagnostics only and must not replace official yields.",
+          "The old report's body captions and table-of-contents numbering differ for other production costs and daily hired labour wages; re-identify by caption in the corrected PDF.",
+          "Do not include child labour wages or child labour cost assumptions in farm budgets."
         ],
         "additional_portal_revision_notice": {
           "date": "2026-08",
-          "description": "The LISGIS survey portal also displays a general notice that selected previously published survey tables and indicator values were corrected or revised.",
-          "verification_required": "The accessible notice does not identify the affected report tables. Confirm whether it applies to LAAS-2024 and whether Tables 10, 35 or 38 are affected before promoting observations.",
-          "portal_url": "https://update.lisgis.gov.lr/surveys.php?search=Annual+Agriculture"
+          "description": "LISGIS survey portal displays an August 2026 notice for correction of the Liberia 2024 Annual Agriculture Survey Final Report and explicitly states that a corrected version is available alongside the old document and erratum.",
+          "verification_required": "The direct corrected PDF and table-level changes were not retrievable from accessible portal text in this review; all values extracted from the old PDF remain on hold.",
+          "portal_url": "https://update.lisgis.gov.lr/surveys.php?survey_id=15"
         },
         "corrected_report_access": {
           "portal_url": "https://update.lisgis.gov.lr/surveys.php?survey_id=15",
-          "status": "official_corrected_report_available",
-          "note": "LISGIS's official survey record explicitly provides a corrected report, the old report and an erratum document. Future extraction must use the corrected report, not the earlier direct PDF URL. The March 10, 2026 erratum text itself specifies changes to pages 9 and 16; the corrected report still needs to be checked for the Table 10 yield denominator.",
-          "erratum_url": "https://www.lisgis.gov.lr/admin_area/surveys/pdf/erratum.pdf"
+          "portal_status": "LISGIS explicitly states that the previously published LAAS-2024 report has a corrected version and provides links labelled Corrected Report, Old Report and Erratum Document.",
+          "corrected_report_direct_pdf": "not_resolved_from_public_portal_in_this_review",
+          "verification": "The accessible public portal search result confirms the corrected report is available, but the direct corrected-PDF URL and its table contents could not be extracted in this review. Do not assume the earlier PDF values persist in the corrected report."
         }
       }
     },
     {
       "country_code": "SL",
       "country_name": "Sierra Leone",
-      "evidence_status": "2025_national_crop_cutting_survey_identified_partial_yield_evidence_market_price_source_identified",
+      "evidence_status": "2025_MAFS_official_crop_cutting_report_extracted_national_and_ecology_yields_but_national_rice_yield_output_area_ratio_and_district_text_inconsistencies_need_clarification",
       "survey": {
         "title": "Sierra Leone Annual Agricultural Survey 2024",
         "publisher": "Statistics Sierra Leone and Ministry of Agriculture and Food Security, with FAO technical support",
@@ -406,7 +414,11 @@
           "obtain livestock purchase, feed, veterinary, mortality and output-price benchmarks",
           "resolve the 2025 MAFS rice yield denominator discrepancy and reconcile the 2024 household-survey and 2025 crop-cutting methods",
           "derive low/expected/high values only from verified district/ecology distributions or multi-year observations",
-          "confirm the chilli pepper variety and broad-bean taxonomy before mapping the 2024 survey crops to existing calculator commodities"
+          "confirm the chilli pepper variety and broad-bean taxonomy before mapping the 2024 survey crops to existing calculator commodities",
+          "request MAFS/PEMSD technical clarification explaining how weighted national rice yield 2.37 Mt/ha relates to total paddy production 1,441,015 Mt and cultivated area 661,016 ha",
+          "verify the Port Loko and Kambia district production ranking against the source district table",
+          "obtain the underlying district/ecology yield distribution and confidence intervals before deriving rice scenarios",
+          "capture current dated Agrilinks district market prices and local-unit conversion records for the exact crops used in the calculator"
         ],
         "table_reference": "Table 2.5, planted area, harvested area, production and yield of crops cultivated by agricultural households, report page 24.",
         "table_source_url": "https://www.statistics.sl/images/StatisticsSL/Documents/2024-SLAAS-Report_V4.pdf",
@@ -589,8 +601,9 @@
               "district_yield_low_mt_per_ha": 1.53,
               "district_yield_high_mt_per_ha": 2.89,
               "calculator_match": "rice",
-              "validation": "published_national_yield_does_not_reconcile_to_reported_production_divided_by_cultivated_area; ratio is approximately 2.18 Mt/ha",
-              "status": "hold_pending_MAFS_clarification"
+              "validation": "official_report_reports_weighted_national_crop_cut_yield_2.37_mt_ha_but_aggregate_production_divided_by_cultivated_area_is_approximately_2.180_mt_ha; estimand_or_denominator_not_explained; hold_pending_MAFS_PEMSD_clarification",
+              "status": "hold_pending_explanation_of_weighted_yield_vs_aggregate_ratio",
+              "aggregate_ratio_mt_per_ha": 2.180000181538722
             },
             {
               "crop": "cassava",
@@ -637,9 +650,36 @@
             "The national rice yield of 2.37 Mt/ha does not reconcile with 1,441,015 Mt divided by 661,016 ha (approximately 2.18 Mt/ha). Ask MAFS to clarify the yield denominator or corrected area before calculator use.",
             "The report's district-level rice yields range from Moyamba at 1.53 Mt/ha to Kambia at 2.89 Mt/ha; these district observations should not automatically be treated as universal low/high scenarios.",
             "The 2025 crop-cutting survey and 2024 household survey use different measurement methods; do not average their results without methodological reconciliation.",
-            "Reported point yields are not complete farm budgets or low/expected/high forecast bands."
+            "Reported point yields are not complete farm budgets or low/expected/high forecast bands.",
+            "The official April 2026 report describes the survey as covering the 2025/26 cropping season and uses crop-cutting, GPS area measurement and weighting. It states that rice grains were sun-dried to 14% moisture before yield measurement.",
+            "The report's national production and area imply 1,441,015 / 661,016 = approximately 2.180 Mt/ha, while its reported national average crop-cut yield is 2.37 Mt/ha. These may be different weighted estimands or denominator definitions; the report does not explain the reconciliation in the accessible text. Keep the 2.37 observation on hold pending a technical note from MAFS/PEMSD.",
+            "The report's district narrative says Port Loko produced approximately 184,916 Mt and Kambia 210,375 Mt, while describing Port Loko as the leading district and Kambia as second; the stated values reverse that ranking. Verify the district table or corrected report before using district production rankings.",
+            "Other-crop yields (cassava 12.54, maize 2.80, groundnut 2.33, cocoa 1.5 Mt/ha) are survey point estimates. The report summary does not provide all matching national area denominators; they are not automatically low/expected/high ranges."
           ],
-          "extraction_status": "National yield and production figures transcribed from the published report. No values are promoted to calculator data pending source checks and current prices/costs."
+          "extraction_status": "Official MAFS report PDF inspected directly. Survey method: stratified crop-specific sampling, rice ecology frame, crop cuts from 25/50 m² plots, rice dried to 14% moisture, GPS area and weighted aggregation. Official national rice yield 2.37 Mt/ha, production 1,441,015 Mt and cultivated area 661,016 ha. Their aggregate ratio is 2.180 Mt/ha, which is not reconciled in report text; district narrative also appears to reverse Port Loko/Kambia production ranking. Keep rice national and district observations on hold pending technical clarification. Other crop point yields may remain evidence leads but are not scenario ranges or cost/price data.",
+          "district_observation_caveats": [
+            "Report narrative gives Port Loko rice production approximately 184,916 Mt and Kambia 210,375 Mt but says Port Loko is the leading district followed by Kambia. The stated figures contradict that ranking; verify against district table before quoting rankings."
+          ],
+          "system_observations": [
+            {
+              "crop": "rice/paddy",
+              "system": "Inland Valley Swamp",
+              "reported_yield_mt_per_ha": 2.97,
+              "status": "reported_ecology_specific_point_estimate; no low/expected/high band"
+            },
+            {
+              "crop": "rice/paddy",
+              "system": "Upland",
+              "reported_yield_mt_per_ha": 1.64,
+              "status": "reported_ecology_specific_point_estimate; no low/expected/high band"
+            },
+            {
+              "crop": "rice/paddy",
+              "system": "National aggregate ratio",
+              "reported_yield_mt_per_ha": 2.180000181538722,
+              "status": "calculated production divided by cultivated area; diagnostic only; not a replacement for the report's weighted crop-cut yield"
+            }
+          ]
         }
       ],
       "market_price_sources": [
@@ -659,7 +699,7 @@
           "units": "Local market units (bags, cups, pans, ties, etc.) with conversions to price per kilogram or litre",
           "access": "Online platform after registration; USSD access for Orange numbers via *2474#.",
           "status": "high_priority_price_source_access_requires_registration",
-          "notes": "Potential source for district-specific price observations. Obtain current data and confirm the platform's terms, dates, market names, varieties and conversion factors before use."
+          "notes": "Potential source for district-specific price observations. Obtain current data and confirm the platform's terms, dates, market names, varieties and conversion factors before use. The live platform description confirms daily bulk and retail prices for 20+ produce items and district average price lookup, but no dated price observations were downloaded in this review; do not populate calculator selling prices from descriptive website copy alone."
         }
       ],
       "input_price_sources": [
