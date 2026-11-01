@@ -348,7 +348,7 @@
     {
       "country_code": "SL",
       "country_name": "Sierra Leone",
-      "evidence_status": "published_aggregate_crop_observations_extracted_budget_data_incomplete",
+      "evidence_status": "2025_national_crop_cutting_survey_identified_partial_yield_evidence_market_price_source_identified",
       "survey": {
         "title": "Sierra Leone Annual Agricultural Survey 2024",
         "publisher": "Statistics Sierra Leone and Ministry of Agriculture and Food Security, with FAO technical support",
@@ -394,13 +394,12 @@
           "fish"
         ],
         "remaining_gaps": [
-          "current farm-gate and market selling prices by location",
-          "verified seed and planting-material prices",
-          "current fertilizer and crop-protection costs",
-          "crop-specific low/expected/high yield ranges or a defensible method to derive them",
-          "livestock purchase, feed, veterinary and mortality cost benchmarks",
-          "regional production-cost profiles",
-          "confirmation of the chilli pepper variety and broad-bean taxonomy before mapping to existing calculator commodities"
+          "obtain district-level Agrilinks price observations for calculator crops and confirm the date, variety, market and unit conversions",
+          "obtain dated supplier quotations for certified seed, fertilizer, agrochemicals and planting materials from NaFRA-listed suppliers",
+          "obtain livestock purchase, feed, veterinary, mortality and output-price benchmarks",
+          "resolve the 2025 MAFS rice yield denominator discrepancy and reconcile the 2024 household-survey and 2025 crop-cutting methods",
+          "derive low/expected/high values only from verified district/ecology distributions or multi-year observations",
+          "confirm the chilli pepper variety and broad-bean taxonomy before mapping the 2024 survey crops to existing calculator commodities"
         ],
         "table_reference": "Table 2.5, planted area, harvested area, production and yield of crops cultivated by agricultural households, report page 24.",
         "table_source_url": "https://www.statistics.sl/images/StatisticsSL/Documents/2024-SLAAS-Report_V4.pdf",
@@ -556,10 +555,126 @@
           "Do not treat crop production statistics as farm-gate prices or production-cost observations.",
           "Check the report's detailed methodology and any indicator-specific sampling-error notes before using an observation as a forecast input."
         ]
-      }
+      },
+      "additional_surveys": [
+        {
+          "title": "2025 Sierra Leone National Crop Production Survey Report",
+          "publisher": "Ministry of Agriculture and Food Security (MAFS), Planning, Evaluation, Monitoring and Statistics Division (PEMSD)",
+          "reference_season": "2025/26",
+          "report_date": "2026-04",
+          "publication_page_url": "https://maf.gov.sl/2026/06/30/2025-sierra-leone-crop-production-survey/",
+          "report_pdf_url": "https://maf.gov.sl/wp-content/uploads/2026/06/2025-Sierra-Leone-Crop-Production-Survey-2.pdf",
+          "coverage": "All 15 districts",
+          "method": "Crop-cutting yield measurements combined with GPS-measured cultivated area; stratified sampling by district and rice ecology. The report describes a 95% confidence level and 5% margin of error for the sampling design.",
+          "methodology_notes": [
+            "Rice uses a district- and ecology-specific sampling frame and a target sample of approximately 6,300 rice-producing households.",
+            "Other major crops use the 2023 agricultural household listing frame and district-stratified sampling.",
+            "Onion observations were collected through targeted phone surveys of major private producers.",
+            "The report covers rice, cassava, maize, cocoa, sweet potato, groundnut and onion."
+          ],
+          "reported_observations_on_hold": [
+            {
+              "crop": "rice/paddy",
+              "production_mt": 1441015,
+              "cultivated_area_ha": 661016,
+              "reported_national_yield_mt_per_ha": 2.37,
+              "reported_2024_yield_mt_per_ha": 2.18,
+              "district_yield_low_mt_per_ha": 1.53,
+              "district_yield_high_mt_per_ha": 2.89,
+              "calculator_match": "rice",
+              "validation": "published_national_yield_does_not_reconcile_to_reported_production_divided_by_cultivated_area; ratio is approximately 2.18 Mt/ha",
+              "status": "hold_pending_MAFS_clarification"
+            },
+            {
+              "crop": "cassava",
+              "production_mt": 1654516,
+              "reported_national_yield_mt_per_ha": 12.54,
+              "calculator_match": "cassava",
+              "status": "provisional_point_observation_area_not_reported_in_summary"
+            },
+            {
+              "crop": "groundnut",
+              "production_mt": 95873,
+              "reported_national_yield_mt_per_ha": 2.33,
+              "calculator_match": null,
+              "status": "provisional_point_observation_no_existing_groundnut_commodity_profile"
+            },
+            {
+              "crop": "maize",
+              "production_mt": 91666,
+              "reported_national_yield_mt_per_ha": 2.8,
+              "calculator_match": "maize",
+              "status": "provisional_point_observation_area_not_reported_in_summary"
+            },
+            {
+              "crop": "cocoa",
+              "production_mt": 19642,
+              "reported_national_yield_mt_per_ha": 1.5,
+              "calculator_match": null,
+              "status": "provisional_point_observation_no_existing_cocoa_commodity_profile"
+            }
+          ],
+          "production_system_observations_on_hold": [
+            {
+              "crop": "rice/paddy",
+              "system": "Inland Valley Swamp",
+              "reported_yield_mt_per_ha": 2.97
+            },
+            {
+              "crop": "rice/paddy",
+              "system": "Upland",
+              "reported_yield_mt_per_ha": 1.64
+            }
+          ],
+          "quality_notes": [
+            "The national rice yield of 2.37 Mt/ha does not reconcile with 1,441,015 Mt divided by 661,016 ha (approximately 2.18 Mt/ha). Ask MAFS to clarify the yield denominator or corrected area before calculator use.",
+            "The report's district-level rice yields range from Moyamba at 1.53 Mt/ha to Kambia at 2.89 Mt/ha; these district observations should not automatically be treated as universal low/high scenarios.",
+            "The 2025 crop-cutting survey and 2024 household survey use different measurement methods; do not average their results without methodological reconciliation.",
+            "Reported point yields are not complete farm budgets or low/expected/high forecast bands."
+          ],
+          "extraction_status": "National yield and production figures transcribed from the published report. No values are promoted to calculator data pending source checks and current prices/costs."
+        }
+      ],
+      "market_price_sources": [
+        {
+          "title": "Agrilinks Sierra Leone market information platform",
+          "publisher": "Agrilinks",
+          "url": "https://agrilinks.sl/",
+          "services_url": "https://agrilinks.sl/services",
+          "coverage": "Regional markets across Sierra Leone; district-level averages",
+          "data_types": [
+            "daily bulk prices",
+            "daily retail prices",
+            "produce offers",
+            "seed prices"
+          ],
+          "products_covered": "More than 20 produce items",
+          "units": "Local market units (bags, cups, pans, ties, etc.) with conversions to price per kilogram or litre",
+          "access": "Online platform after registration; USSD access for Orange numbers via *2474#.",
+          "status": "high_priority_price_source_access_requires_registration",
+          "notes": "Potential source for district-specific price observations. Obtain current data and confirm the platform's terms, dates, market names, varieties and conversion factors before use."
+        }
+      ],
+      "input_price_sources": [
+        {
+          "title": "National Fertilizer and Regulatory Agency (NaFRA) data and agro-dealer directory",
+          "publisher": "National Fertilizer and Regulatory Agency, Sierra Leone",
+          "url": "https://nafra.gov.sl/data/",
+          "data_types": [
+            "fertilizer importers",
+            "national agro-input distributors",
+            "district agro-dealers",
+            "seed and input suppliers"
+          ],
+          "status": "supplier_discovery_only_not_a_price_series",
+          "notes": "Use to identify suppliers and request dated quotations for fertilizer, seeds and crop protection products. The directory itself does not provide verified current retail prices."
+        }
+      ]
     }
   ],
   "next_steps": [
+    "For Sierra Leone selling prices, seek district-level Agrilinks daily bulk and retail observations after access/registration; use NaFRA's dealer directory to obtain dated input quotations.",
+    "For Sierra Leone, use the April 2026 MAFS 2025/26 crop-cutting report as the newest crop-yield evidence, but hold the rice national yield pending clarification of its denominator.",
     "For Liberia, resolve the August 2026 LISGIS erratum against Table 10, Table 35 and Table 38 before releasing any transcribed observations from hold.",
     "Do not convert the Sierra Leone national point yields directly into low/expected/high calculator ranges; first obtain multi-year and/or regional evidence.",
     "For Sierra Leone, cross-check the extracted national point observations with FAOSTAT and any available indicator-specific sampling errors before considering calculator use.",
