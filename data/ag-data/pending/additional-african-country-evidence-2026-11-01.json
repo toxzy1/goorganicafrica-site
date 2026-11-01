@@ -1821,6 +1821,227 @@
         "do not publish country-specific calculator profiles until matched crop area/production definitions, regional yields, prices and enterprise budgets have been independently checked"
       ],
       "extraction_status": "Mozambique now has an official 2020–2024 crop production series, an integrated probability-sample agricultural survey for the 2022/23 campaign, final 2023/24 agricultural census results, and a current official market-price collection system. The 2024 yearbook supplies crop output totals but matching harvested area and crop-specific yield tables still need extraction. The 2023 IAI excludes nine insecure Cabo Delgado districts, and rice/bean taxonomy requires care. Recent provincial ICM quotations are available through a secondary transcription but are not farm-gate prices. No Mozambique calculator values are activated."
+    },
+    {
+      "country_code": "BW",
+      "country_name": "Botswana",
+      "evidence_status": "official_2024_2025_cereal_area_and_total_output_sources_identified_crop_specific_yields_and_discrepant_cereal_totals_need_reconciliation",
+      "sources": [
+        {
+          "title": "Agriculture statistics portal",
+          "publisher": "Statistics Botswana",
+          "url": "https://www.statsbots.org.bw/agriculture",
+          "status": "official_annual_agricultural_survey_and_census_data_portal",
+          "note": "Statistics Botswana states that agricultural statistics are compiled from annual agricultural surveys and decennial censuses. Traditional/subsistence sector tables cover area planted, area harvested, crop production by type, livestock population and production, crop/livestock sales, labour, water, machinery and farm enterprises. Commercial-sector coverage includes pulses, vegetables, fruits and dairy cattle. The portal exposes historical 2017 and 2019 traditional-sector summaries and links to annual survey publications."
+        },
+        {
+          "title": "Ministry predicts cereal deficit",
+          "publisher": "Botswana Daily News / Ministry of Lands and Agriculture statement",
+          "url": "https://dailynews.gov.bw/news-detail/88871",
+          "publication_date": "2025-10-30",
+          "reference_period": "2024/25 ploughing season",
+          "status": "government_ministry_statement_national_cereal_total_and_crop_area_breakdown_not_full_crop_yield_table",
+          "observations": [
+            {
+              "indicator": "total cereal production",
+              "production_mt": 137876.84,
+              "reference_season": "2024/25",
+              "status": "Ministry spokesperson figure reported by BOPA; cereal aggregate, not crop-specific."
+            },
+            {
+              "indicator": "national cereal demand",
+              "value_mt": 300000,
+              "reference_season": "2024/25",
+              "status": "Ministry figure; source says local production met 36.9% of demand."
+            },
+            {
+              "crop": "maize",
+              "area_planted_ha": 74139.87,
+              "reference_season": "2024/25",
+              "status": "Ministry-reported planted area, about 40% of total area; not harvested area or yield."
+            },
+            {
+              "crop": "sorghum",
+              "area_planted_ha": 39568.28,
+              "reference_season": "2024/25",
+              "status": "Ministry-reported planted area; not harvested area or yield."
+            },
+            {
+              "indicator": "total area planted",
+              "value_ha": 185892.36,
+              "reference_season": "2024/25",
+              "status": "Ministry-reported all-crop area; not harvested area."
+            },
+            {
+              "indicator": "farmers",
+              "value": 45779,
+              "reference_season": "2024/25",
+              "status": "All categories: commercial, emerging and subsistence; source reports contribution shares of 77.58%, 0.84% and 21.58% respectively."
+            },
+            {
+              "indicator": "Pandamatenga share of cereal production",
+              "share_percent": 81.2,
+              "reference_season": "2024/25",
+              "status": "Ministry spokesperson says commercial Pandamatenga farms contributed 81.2% of cereal output; important concentration caveat."
+            }
+          ],
+          "quality_notes": [
+            "The article reports a 137,876.84 MT cereal total, while an official government press release dated 12 August 2025 reports 117,228.42 MT cereal production for the same 2024/25 season. These figures conflict and must be reconciled against the underlying Ministry crop assessment before using either.",
+            "The source gives planted area for maize and sorghum, not harvested area. Do not divide aggregate cereal production by these crop areas to create yields.",
+            "Pandamatenga commercial farms contributed 81.2% of the reported total, so a single national average would obscure the commercial/subsistence production-system split.",
+            "The reported cereal deficit and imports mean local producer prices should be distinguished from imported grain and retail prices."
+          ]
+        },
+        {
+          "title": "Government declares 2024/2025 non-drought year",
+          "publisher": "Government of Botswana press release, reported by Daily News / BOPA",
+          "url": "https://dailynews.gov.bw/news-detail/88078",
+          "publication_date": "2025-08-12",
+          "reference_period": "2024/25 rainfall and crop season",
+          "status": "official_government_release_with_conflicting_aggregate_cereal_total",
+          "observations": [
+            {
+              "indicator": "total cereal production",
+              "production_mt": 117228.42,
+              "reference_season": "2024/25",
+              "status": "Government release figure; conflicts with the Ministry spokesperson's 137,876.84 MT reported 30 October 2025. Retain as discrepancy, not accepted estimate."
+            },
+            {
+              "indicator": "national cereal demand",
+              "value_mt": 300000,
+              "reference_season": "2024/25",
+              "status": "Government-reported demand; release says production met 39% of demand."
+            }
+          ],
+          "note": "The season was declared non-drought, but heavy February rainfall caused localized flooding, waterlogging, nutrient leaching and increased pest/weed pressure. Seasonal aggregate only."
+        },
+        {
+          "title": "Livestock holdings, population and indicators, 2017–2019 traditional sector",
+          "publisher": "Statistics Botswana",
+          "url": "https://www.statsbots.org.bw/agriculture",
+          "reference_period": "2017 and 2019",
+          "status": "official_historical_livestock_and_demographic_series",
+          "observations": [
+            {
+              "species": "cattle",
+              "population": 934732,
+              "reference_year": 2019,
+              "status": "Traditional-sector population; excludes commercial sector, not a current national total."
+            },
+            {
+              "species": "goat",
+              "population": 1228744,
+              "reference_year": 2019,
+              "status": "Traditional-sector population; excludes commercial sector."
+            },
+            {
+              "species": "sheep",
+              "population": 242911,
+              "reference_year": 2019,
+              "status": "Traditional-sector population; excludes commercial sector."
+            },
+            {
+              "species": "cattle",
+              "offtake_rate_percent": 7,
+              "death_rate_percent": 10.9,
+              "birth_rate_percent": 56.5,
+              "reference_year": 2019,
+              "status": "Traditional-sector rates reported by Statistics Botswana."
+            },
+            {
+              "species": "goat",
+              "offtake_rate_percent": 6.6,
+              "death_rate_percent": 18.9,
+              "birth_rate_percent": 39.2,
+              "reference_year": 2019,
+              "status": "Traditional-sector rates reported by Statistics Botswana."
+            }
+          ],
+          "note": "These values are historical traditional-sector observations, not 2026 national herd counts or commercial production budgets. Statistics Botswana lists an Agricultural Census Stats Brief 2025—Livestock; extract that publication before using current herd estimates."
+        },
+        {
+          "title": "Botswana Agricultural Marketing Board (BAMB) Market Information",
+          "publisher": "Botswana Agricultural Marketing Board",
+          "url": "https://bamb.co.bw/market-information",
+          "status": "official_producer_and_contract_price_information_portal",
+          "note": "BAMB states that it provides local rain-fed produce market information and price projections ahead of planting, including grain market demand and price opportunities. The page links current producer and contract price files. Download the official file and preserve crop, grade, contract period, bag weight and Pula/tonne units before entering any price."
+        },
+        {
+          "title": "BAMB Producer/Market Prices for Schedule Produce, January 2026",
+          "publisher": "The Farmers' Platform Magazine, reporting BAMB price schedule",
+          "url": "https://www.farmersplatform.co.bw/market-data/history/9",
+          "reference_date": "2026-01",
+          "status": "secondary_reproduction_of_BAMB_grade_specific_producer_market_prices",
+          "observations": [
+            {
+              "commodity": "white maize",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 3470.13,
+              "reference_period": "January 2026",
+              "market_level": "BAMB producer/market schedule",
+              "status": "Secondary reproduction; verify against official BAMB file and contractual eligibility."
+            },
+            {
+              "commodity": "sorghum",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 4000,
+              "reference_period": "January 2026",
+              "market_level": "BAMB producer/market schedule",
+              "status": "Secondary reproduction; verify against official BAMB file."
+            },
+            {
+              "commodity": "cowpea (Tswana)",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 11000,
+              "reference_period": "January 2026",
+              "market_level": "BAMB producer/market schedule",
+              "status": "Secondary reproduction; exact grade and contract terms must be checked."
+            },
+            {
+              "commodity": "cowpea (black-eye)",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 12500,
+              "reference_period": "January 2026",
+              "market_level": "BAMB producer/market schedule",
+              "status": "Secondary reproduction; exact grade and contract terms must be checked."
+            }
+          ],
+          "note": "Do not generalize these scheduled prices to all farmers or all grades. Obtain current official BAMB price files and contract terms."
+        },
+        {
+          "title": "Botswana Agricultural Sectors",
+          "publisher": "United States Department of Commerce, International Trade Administration",
+          "url": "https://www.trade.gov/country-commercial-guides/botswana-agricultural-sectors",
+          "publication_date": "2025-12-08",
+          "status": "secondary_sector_context_and_production_system_description",
+          "note": "Describes sorghum, maize, millet and pulses as major crops; commercial crop farming is concentrated around Pandamatenga and Barolong Farms. Notes that Botswana imports much of its food and that BAMB supports grain marketing. Use as context, not as the source of national yield or farm-cost assumptions."
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "sorghum",
+        "millet",
+        "beans/cowpea",
+        "tomato",
+        "watermelon",
+        "broilers",
+        "layers",
+        "goat",
+        "cattle"
+      ],
+      "remaining_gaps": [
+        "download and extract the 2025 Agricultural Census Stats Brief—Livestock and the latest annual agricultural survey report",
+        "obtain crop-specific harvested area, production and yield tables for the 2024/25 season by district and sector",
+        "reconcile the 117,228.42 MT and 137,876.84 MT 2024/25 cereal totals against the Ministry's original crop assessment and identify whether their coverage differs",
+        "separate Pandamatenga commercial irrigated/large-scale production from traditional rain-fed smallholder systems",
+        "extract current official BAMB producer and contract price files, preserving grade, crop, period, delivery conditions and eligible producer class",
+        "obtain current district-level retail/wholesale and farm-gate prices for horticulture, livestock and poultry",
+        "obtain farmer-paid seed, fertilizer, pesticide, labour, mechanization, water, fuel, transport and land-preparation costs for rain-fed and commercial systems",
+        "obtain current cattle, goat, sheep and poultry purchase prices, liveweight/sale prices, feed, veterinary, mortality and offtake data",
+        "keep historical 2017/2019 traditional-sector livestock counts separate from current census counts and commercial herd data",
+        "do not activate calculator profiles until crop-specific yield distributions, dated prices and complete enterprise budgets are checked"
+      ],
+      "extraction_status": "Botswana has an official annual agricultural statistics programme and a strong BAMB producer-price information channel. Ministry reporting provides 2024/25 total cereal output and maize/sorghum planted areas, but two official government publications report conflicting cereal totals (117,228.42 versus 137,876.84 MT). Crop-specific harvested area/yields and current cost budgets remain unextracted. Historical livestock data are sector-specific and dated. No Botswana calculator values are activated."
     }
   ],
   "cross_country_sources": [
@@ -1841,6 +2062,7 @@
     }
   ],
   "next_steps": [
+    "For Botswana, extract the 2025 Agricultural Census livestock brief and latest annual crop survey tables; reconcile the conflicting 2024/25 cereal totals, obtain crop-specific harvested area/yield by district and sector, and verify BAMB grade-specific producer prices and farm budgets.",
     "For Mozambique, extract the 2025 INE basic agriculture indicators PDF and the 2023/24 CAP final Excel tables; reconcile district crop production with matching cultivated/harvested areas, keep rice systems and cowpea/other beans separate, and obtain original SIMA/ICM producer prices plus itemized farm budgets before activation.",
     "For Malawi, extract 2025 NACA small-area tables and 2024/25–2025/26 APES crop area/yield series; reconcile cowpea and beans definitions, then obtain dated FPMA market prices and input/labour budgets.",
     "For Guinea-Bissau, obtain the 2025 agricultural-household listing final report and the 2026/27 integrated agricultural survey outputs; reconcile rice statistics against imports and cashew land-use changes before accepting yields.",
