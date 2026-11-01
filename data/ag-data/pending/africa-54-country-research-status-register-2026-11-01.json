@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 41,
+    "countries_with_research_evidence_records": 42,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 3,
+    "countries_not_yet_researched_in_current_evidence_register": 2,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -396,9 +396,10 @@
     {
       "code": "SO",
       "name": "Somalia",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/somalia-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_March_2026_2025_cereal_output_and_Deyr_crop_failure_MoAI_2024_Gu_estimates_FSNAU_district_season_dataset_methodology_MoAI_2025_farmgate_report_with_unit_currency_anomalies_FSNAU_36_market_weekly_prices_World_Bank_45_market_RTFP_to_Oct_2026_and_livestock_drought_context_recorded_validated_yields_prices_and_enterprise_budgets_pending"
     },
     {
       "code": "SS",
