@@ -731,23 +731,291 @@
           "note": "Use to discover domestic market price series and confirm the market, commodity, currency, unit and observation date before calculator use."
         }
       ]
+    },
+    {
+      "country_code": "BJ",
+      "country_name": "Benin",
+      "evidence_status": "official_statistics_sources_identified_selected_2023_2024_observations_pending_table_level_extraction",
+      "survey": {
+        "title": "Campagne agricole 2023-2024 — résultats définitifs; Direction de la Statistique Agricole and INStaD",
+        "publisher": "Ministère de l'Agriculture, de l'Elevage et de la Pêche (DSA); Institut National de la Statistique et de la Démographie (INStaD)",
+        "reference_season": "2023/2024",
+        "source_urls": [
+          "https://dsa.agriculture.gouv.bj/",
+          "https://instad.bj/statistiques/statistiques-agricoles/577-campagne-agricole-2023-2024",
+          "https://instad.bj/statistiques/statistiques-economiques/124-les-statistiques-agricoles"
+        ],
+        "methodology": "INStaD identifies DPP/MAP data as the source for annual sown area and production series, with yield calculated as production divided by area. Obtain and review the linked final campaign PDF and underlying crop tables before transcribing crop-specific yields.",
+        "source_observations": [
+          {
+            "indicator": "total cereal production",
+            "value_mt": 2737481,
+            "reference_season": "2023/2024",
+            "source": "INStaD final campaign summary",
+            "status": "national_aggregate_not_commodity_specific"
+          },
+          {
+            "indicator": "maize production",
+            "value_mt": 2059254,
+            "reference_period": "2023",
+            "source": "DSA official portal headline indicator",
+            "status": "portal headline; confirm exact campaign and final table before use"
+          },
+          {
+            "indicator": "rice production",
+            "value_mt": 492626,
+            "reference_period": "2023/2024",
+            "source": "DSA official portal headline indicator",
+            "status": "portal headline; conflicts with a separate PACOFIDE rice value and requires reconciliation"
+          },
+          {
+            "indicator": "cassava production",
+            "value_mt": 4449430,
+            "reference_period": "2023/2024",
+            "source": "DSA official portal headline indicator",
+            "status": "portal headline; confirm exact final table"
+          },
+          {
+            "indicator": "soybean production",
+            "value_mt": 520929,
+            "reference_period": "2023/2024",
+            "source": "DSA official portal headline indicator",
+            "status": "portal headline; confirm exact final table"
+          }
+        ],
+        "cross_check_sources": [
+          {
+            "title": "PACOFIDE Benin rice value-chain page",
+            "url": "https://pacofide.agriculture.gouv.bj/produit/15",
+            "reported_2023_production_mt": 600000,
+            "reported_2023_area_ha": 140000,
+            "reported_yield_mt_per_ha": 4.1,
+            "status": "hold_for_reconciliation",
+            "note": "The reported production divided by reported area is approximately 4.29 Mt/ha, not 4.1; its 600,000 t value also differs from DSA's 2023/24 portal headline. Confirm paddy definition, season and source table."
+          }
+        ],
+        "priority_commodities": [
+          "maize",
+          "rice",
+          "cassava",
+          "soybean",
+          "beans",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig"
+        ],
+        "price_sources": [
+          {
+            "title": "UEMOA SIAR agricultural markets",
+            "url": "https://siar.uemoa.int/marches-agricoles.php?secteur=agr",
+            "status": "official_regional_market_information_source_requires_observation_extraction",
+            "note": "The interface lists producer and consumer price indicators for maize, rice, cowpea, groundnut, cassava and other crops. Extract dated market/country observations and verify units before use."
+          }
+        ],
+        "remaining_gaps": [
+          "download and transcribe the final 2023/24 crop production and area tables by crop and department",
+          "resolve DSA versus PACOFIDE rice production and yield differences",
+          "extract dated producer and consumer prices by market and unit from SIAR",
+          "obtain dated seed, fertilizer, crop-protection, labour, machinery and land-preparation quotations",
+          "obtain livestock purchase, feed, veterinary, mortality and output-price budgets",
+          "derive regional low/expected/high values from distributions or multiple seasons, not national point estimates"
+        ],
+        "extraction_status": "Official statistical portals and crop-level candidate observations identified. No country-specific calculator data activated; headline indicators and inconsistent rice values remain provisional until source-table reconciliation."
+      }
+    },
+    {
+      "country_code": "TG",
+      "country_name": "Togo",
+      "evidence_status": "official_agricultural_statistics_and_market_information_portal_identified_dynamic_data_extraction_pending",
+      "survey": {
+        "title": "Système d'information agricole du Togo — Statagritogo / DSID",
+        "publisher": "Direction des Statistiques Agricoles, de l'Informatique et de la Documentation (DSID), Ministère de l'Agriculture",
+        "source_urls": [
+          "https://agriculture.gouv.tg/statistiques-agricoles/",
+          "https://statagritogo.tg/stat/index.html",
+          "https://statagritogo.tg/"
+        ],
+        "reference_period": "Dashboard and datasets include historical agricultural and rural surveys; exact observation period must be recorded per downloaded series.",
+        "data_domains": [
+          "agricultural and rural surveys",
+          "crop production, area and yield",
+          "agricultural prices (mercuriales)",
+          "general agricultural indicators"
+        ],
+        "source_observations": [
+          {
+            "crop": "maize",
+            "production_mt": 1045452.19,
+            "reference_year": 2023,
+            "source": "UEMOA SIAR country indicator",
+            "status": "secondary official-regional portal observation; verify against DSID source table and matching area"
+          },
+          {
+            "crop": "rice",
+            "production_mt": 183066.35,
+            "reference_year": 2023,
+            "source": "UEMOA SIAR country indicator",
+            "status": "secondary official-regional portal observation; verify paddy/milled definition and matching area"
+          },
+          {
+            "crop": "soybean",
+            "production_mt": 263595.62,
+            "reference_year": 2023,
+            "source": "UEMOA SIAR country indicator",
+            "status": "secondary official-regional portal observation; verify against DSID source table and matching area"
+          },
+          {
+            "crop": "sorghum",
+            "production_mt": 298569.44,
+            "reference_year": 2023,
+            "source": "UEMOA SIAR country indicator",
+            "status": "secondary official-regional portal observation; verify against DSID source table and matching area"
+          }
+        ],
+        "market_price_source": {
+          "title": "Statagritogo Mercuriales — Prix des produits agricoles",
+          "url": "https://statagritogo.tg/stat/index.html",
+          "publisher": "DSID / Ministry of Agriculture",
+          "status": "priority_official_price_source_data_extraction_pending",
+          "note": "The official dashboard explicitly provides agricultural product prices. Record market, commodity, product grade, date, currency, unit and whether the quote is producer, wholesale or retail."
+        },
+        "priority_commodities": [
+          "maize",
+          "rice",
+          "soybean",
+          "cassava",
+          "beans",
+          "hot_pepper",
+          "tomato",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig"
+        ],
+        "remaining_gaps": [
+          "download DSID survey tables and confirm 2023 production observations against national series",
+          "extract harvested area and calculate yield only where the denominator and crop definition match",
+          "test and extract current Statagritogo mercuriales observations",
+          "obtain crop-specific seed, fertilizer, crop-protection and labour cost tables",
+          "obtain livestock production and budget evidence",
+          "verify region/administrative divisions and seasonal production systems"
+        ],
+        "extraction_status": "Official ministry-linked agricultural statistics and price dashboard identified. SIAR 2023 production values are recorded only as cross-check leads, not verified country profile values."
+      }
+    },
+    {
+      "country_code": "SN",
+      "country_name": "Senegal",
+      "evidence_status": "official_national_annual_agricultural_survey_2023_2024_identified_extraction_and_cost_table_review_pending",
+      "survey": {
+        "title": "Enquête Agricole Annuelle (EAA) 2023-2024",
+        "publisher": "Direction de l'Analyse, de la Prévision et des Statistiques Agricoles (DAPSA), Ministère de l'Agriculture, de la Souveraineté Alimentaire et de l'Élevage",
+        "reference_season": "2023/2024",
+        "report_page_url": "https://dapsa.gouv.sn/node/131",
+        "statistical_tables_url": "https://dapsa.gouv.sn/content/tableaux-statistiques",
+        "survey_method_url": "https://dapsa.gouv.sn/content/enqu%C3%AAte-agricole-annuelle-eaa",
+        "coverage": "All 14 regions and 45 departments; annual sample survey of family-type agricultural holdings.",
+        "data_domains": [
+          "crop production",
+          "sown area and yields",
+          "plot characteristics and geolocation",
+          "inputs and cultivation operations",
+          "agricultural labour",
+          "horticulture",
+          "livestock through rotating modules"
+        ],
+        "source_observations": [
+          {
+            "crop": "groundnut",
+            "production_mt": 1670000,
+            "area_ha": 1200000,
+            "reference_season": "2023/2024",
+            "source": "MASAE official campaign summary",
+            "status": "rounded national summary; ratio approximately 1.39 Mt/ha is not a reported yield and must not be treated as one"
+          },
+          {
+            "crop": "rice",
+            "production_mt": 1400000,
+            "reference_season": "2023/2024",
+            "source": "MASAE official campaign summary",
+            "status": "rounded national summary; verify paddy/milled basis and harvested area"
+          },
+          {
+            "crop": "rice/paddy",
+            "production_system": "irrigated",
+            "yield_mt_per_ha": 5.5,
+            "reference_year": 2023,
+            "source": "DAPSA policy note, April 2024",
+            "status": "point estimate for irrigated system; not national average or range"
+          },
+          {
+            "crop": "rice/paddy",
+            "production_system": "rainfed",
+            "yield_mt_per_ha": 3.4,
+            "reference_year": 2023,
+            "source": "DAPSA policy note, April 2024",
+            "status": "point estimate for rainfed system; not national average or range"
+          }
+        ],
+        "additional_sources": [
+          {
+            "title": "DAPSA EAA 2022-2023 report",
+            "url": "https://dapsa.gouv.sn/content/rapporteaa-20222023",
+            "status": "official_prior_season_survey",
+            "note": "Includes crop production, horticulture, livestock and agricultural equipment context; use for multi-season comparison only after aligning definitions."
+          },
+          {
+            "title": "DAPSA rice production policy note",
+            "url": "https://www.dapsa.gouv.sn/sites/default/files/publications/NOTE%20POLITIQUE%20%20Production%20du%20riz%20au%20S%C3%A9n%C3%A9gal%20%20D%C3%A9terminants%20et%20Perspectives%20DAPSA.pdf",
+            "reference_date": "2024-04",
+            "status": "official_production_system_yield_cross_check"
+          }
+        ],
+        "price_sources": [
+          {
+            "title": "FAO Food Price Monitoring and Analysis Tool",
+            "url": "https://www.fao.org/giews/food-prices/price-tool/en/",
+            "status": "price_series_discovery_source",
+            "note": "Confirm Senegal market, commodity grade, currency, unit and observation date. Seek DAPSA/ANSD producer-price series and dated local supplier quotations for farm budgets."
+          }
+        ],
+        "priority_commodities": [
+          "rice",
+          "maize",
+          "beans",
+          "watermelon",
+          "tomato",
+          "hot_pepper",
+          "cassava",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig"
+        ],
+        "remaining_gaps": [
+          "download and extract the complete 2023/24 EAA tables by crop, region and department",
+          "obtain crop-specific production area and yield distributions, not only rounded campaign summaries",
+          "extract producer/farm-gate prices and retail prices with market and date metadata",
+          "extract input, labour, machinery, irrigation, land and transport costs by production system",
+          "extract livestock module observations and budget inputs",
+          "align irrigated and rainfed rice separately and build low/expected/high values only from supported regional or multi-year distributions"
+        ],
+        "extraction_status": "The current official 2023/24 annual survey report and statistical tables are identified. Public campaign summary provides rounded groundnut and rice production, and DAPSA provides distinct irrigated/rainfed rice yield point estimates for 2023. These are research leads only; no calculator values activated."
+      }
     }
   ],
   "next_steps": [
-    "Add Guinea as the next country evidence package; use USDA FAS 2025/26 commodity estimates only as a cross-check until national statistics and current local prices/costs are sourced.",
-    "For Liberia, re-extract all candidate figures from the official corrected LAAS-2024 report available through the LISGIS survey record; do not rely on the old direct PDF copy.",
-    "For Sierra Leone selling prices, seek district-level Agrilinks daily bulk and retail observations after access/registration; use NaFRA's dealer directory to obtain dated input quotations.",
-    "For Sierra Leone, use the April 2026 MAFS 2025/26 crop-cutting report as the newest crop-yield evidence, but hold the rice national yield pending clarification of its denominator.",
-    "For Liberia, resolve the August 2026 LISGIS erratum against Table 10, Table 35 and Table 38 before releasing any transcribed observations from hold.",
-    "Do not convert the Sierra Leone national point yields directly into low/expected/high calculator ranges; first obtain multi-year and/or regional evidence.",
-    "For Sierra Leone, cross-check the extracted national point observations with FAOSTAT and any available indicator-specific sampling errors before considering calculator use.",
-    "Resolve the LISGIS August 2026 correction notice against the Liberia 2024 survey tables.",
-    "Extract aggregate crop production, harvested area and yield observations for overlapping calculator commodities.",
-    "Extract input-use and labour evidence separately; do not convert adoption rates into monetary costs.",
-    "Extract Sierra Leone aggregate survey tables and retain published sampling-error indicators.",
-    "Cross-check national observations against FAOSTAT country crop-production, area and yield series.",
-    "Research current market prices, input prices and regional cost sources independently for each country.",
-    "Prepare country profiles only after source, unit, date, geographic coverage and uncertainty checks are complete.",
-    "Run the existing calculator validation and regression tests before any proposal to activate either country."
+    "For Benin, download the final 2023/24 campaign tables from INStaD/DSA and reconcile the rice production/area/yield differences against PACOFIDE before using any value.",
+    "For Togo, extract DSID survey data and current Mercuriales price observations from Statagritogo; cross-check 2023 production leads against the original DSID series.",
+    "For Senegal, extract DAPSA EAA 2023/24 tables by crop and region, then separately extract producer prices, input costs, labour and livestock budgets.",
+    "For Liberia, re-extract observations from the corrected LISGIS LAAS-2024 report and reconcile the August 2026 revision notice and Table 10 yield denominator.",
+    "For Sierra Leone, obtain dated Agrilinks district prices and supplier quotations; resolve the 2025 crop-cutting rice-yield denominator with MAFS.",
+    "For Guinea, identify national agricultural statistics and local market/input-cost sources to validate the USDA FAS cross-check.",
+    "Do not activate any new country profile until crop yield, market price, input costs, regions, units, reference dates and uncertainty have been reviewed.",
+    "Do not change the calculator formula or existing ten country profiles."
   ]
 }
