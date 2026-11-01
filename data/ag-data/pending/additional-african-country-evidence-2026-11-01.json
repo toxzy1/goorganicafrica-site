@@ -2674,7 +2674,7 @@
     {
       "country_code": "MA",
       "country_name": "Morocco",
-      "evidence_status": "official_HCP_2026_crop_area_and_2024_25_output_tables_extracted_livestock_census_series_added_2025_26_cereal_estimate_vs_FAO_forecast_unreconciled_farm_budget_pending",
+      "evidence_status": "official_HCP_2026_crop_and_livestock_statistics_extracted_2026_ONICL_soft_wheat_reference_price_and_Casablanca_wholesale_price_leads_added_fertilizer_cost_pressure_documented_current_farm_gate_prices_and_itemized_budgets_pending",
       "sources": [
         {
           "title": "Le Maroc en chiffres 2026 — HCP, agricultural tables (pages 48–52)",
@@ -3012,6 +3012,173 @@
           "url": "https://www.onca.gov.ma/",
           "status": "official_advisory_and_extension_source",
           "note": "Use ONCA regional and provincial services to locate crop technical itineraries, input recommendations and enterprise-cost evidence; recommendations are not equivalent to actual farmer-paid input prices or observed budgets."
+        },
+        {
+          "title": "2026 national cereal marketing campaign — ONICL programme launch",
+          "publisher": "Médias24 reporting ONICL's 15 May 2026 campaign announcement",
+          "url": "https://medias24.com/2026/05/15/campagne-cerealiere-2026-90-millions-de-quintaux-attendus-15-millions-vises-en-stockage-1678737/",
+          "publication_date": "2026-05-15",
+          "reference_period": "2026 domestic cereal marketing campaign",
+          "status": "reported_ONICL_reference_price_and_storage_incentives_secondary_report_original_circular_still_required",
+          "observations": [
+            {
+              "commodity": "soft_wheat",
+              "reference_price_mad_per_quintal": 280,
+              "reference_period": "2026 campaign",
+              "status": "Reported as ONICL reference price for domestic soft wheat; campaign-specific and not proof of the net price received by every farmer."
+            },
+            {
+              "indicator": "national_cereal_production_forecast",
+              "value_mt": 9000000,
+              "reference_period": "2026 campaign",
+              "status": "Reported national forecast; aggregate cereals, not crop-specific final harvest result."
+            },
+            {
+              "indicator": "short_term_storage_premium",
+              "value_mad_per_quintal_per_15_days": 2.5,
+              "reference_period": "1 June-31 July 2026",
+              "status": "Storage incentive paid under programme conditions; not a farm-gate crop price."
+            },
+            {
+              "indicator": "long_term_storage_premium",
+              "value_mad_per_quintal_per_15_days": 3,
+              "reference_period": "2026 campaign",
+              "status": "Storage incentive for eligible stockers under programme conditions; not a farm-gate crop price."
+            }
+          ],
+          "quality_notes": [
+            "ONICL's campaign programme was announced 15 May 2026. The reported 280 MAD/quintal reference applies to soft wheat; do not extend it to durum wheat, barley, maize or rice.",
+            "Storage premiums accrue under specified storage conditions and are not automatically farmer receipts.",
+            "Obtain the original ONICL 2026 circular and its full eligibility, grade, delivery and transport terms before calculator use."
+          ]
+        },
+        {
+          "title": "Casablanca wholesale market price observations, 10 September 2026",
+          "publisher": "Consonews reporting wholesale-market observations",
+          "url": "https://consonews.ma/news/food-boissons/marche-de-gros-de-casablanca-carottes-oignons-pommes-de-terre-et-plusieurs-fruits-augmentent?amp=1",
+          "publication_date": "2026-09-10",
+          "reference_period": "weekly wholesale market observations, Casablanca",
+          "status": "dated_wholesale_market_prices_not_farm_gate_prices",
+          "observations": [
+            {
+              "commodity": "tomato",
+              "minimum_mad_per_kg": 2,
+              "maximum_mad_per_kg": 4.5,
+              "status": "Wholesale market range reported for Casablanca; grade, transaction weighting and farmer netback not established."
+            },
+            {
+              "commodity": "cucumber",
+              "minimum_mad_per_kg": 2.5,
+              "maximum_mad_per_kg": 4.5,
+              "status": "Wholesale market range reported for Casablanca; not farm-gate."
+            },
+            {
+              "commodity": "watermelon",
+              "minimum_mad_per_kg": 1.5,
+              "maximum_mad_per_kg": 3,
+              "status": "Wholesale market range reported for Casablanca; not farm-gate."
+            },
+            {
+              "commodity": "bell_pepper_or_hot_pepper",
+              "status": "No compatible pepper quotation extracted; do not substitute another vegetable price."
+            }
+          ],
+          "quality_notes": [
+            "These are one week's wholesale prices in Casablanca, not national averages or producer prices.",
+            "Do not use wholesale quotations as the farmer's selling price without documented marketing, packing, transport, commission and loss deductions.",
+            "Additional dated observations across seasons and wholesale markets are required."
+          ]
+        },
+        {
+          "title": "Imported fertilizer price surge and farmer production-cost reporting",
+          "publisher": "Médias24",
+          "url": "https://medias24.com/2026/05/08/agriculture-imported-fertilizers-surge-40-60-squeezing-farmers-margins-1673181",
+          "publication_date": "2026-05-08",
+          "reference_period": "February-May 2026",
+          "status": "market_context_not_itemized_farmer_purchase_quotes",
+          "observations": [
+            {
+              "indicator": "imported_fertilizer_price_change",
+              "change_percent": "40-60",
+              "period": "since February 2026",
+              "status": "Reported imported fertilizer price increase; not a product-specific local retail quotation or farm invoice."
+            },
+            {
+              "indicator": "average_imported_fertilizer_price_change",
+              "change_percent": 49,
+              "period": "since February 2026",
+              "status": "Reported average increase across imported fertilizers; not a usable per-tonne budget price."
+            },
+            {
+              "indicator": "nitrogen_fertilizer_price_change",
+              "change_percent": 50,
+              "period": "since February 2026",
+              "status": "Reported market increase; absolute grade-specific price required."
+            },
+            {
+              "indicator": "potash_fertilizer_price_change",
+              "change_percent": 57,
+              "period": "since February 2026",
+              "status": "Reported market increase; absolute grade-specific price required."
+            }
+          ],
+          "quality_notes": [
+            "Reported percentage increases indicate cost pressure but cannot be converted into MAD/ha without actual product grades, baseline prices, application rates and farmer invoices.",
+            "Obtain regional distributor quotations and actual farm purchase records for urea, DAP/MAP, NPK blends, potash and crop protection products."
+          ]
+        },
+        {
+          "title": "Moroccan farmers report rising diesel, machinery hire, labour and feed costs",
+          "publisher": "Al-Monitor reporting farmers and agricultural-sector representatives",
+          "url": "https://www.al-monitor.com/originals/2026/05/morocco-farmers-saw-hope-rain-mideast-war-inflates-production-costs",
+          "publication_date": "2026-05-21",
+          "reference_period": "May 2026 farmer interviews",
+          "status": "farmer_interview_cost_context_not_national_cost_series",
+          "observations": [
+            {
+              "indicator": "diesel_cost_per_ha_for_tractor_operations",
+              "value_mad_per_ha": 1800,
+              "reference_period": "May 2026 farmer interview",
+              "status": "One farmer's reported diesel spending, compared with a usual MAD 1,200/ha; not a national average or standardized operation budget."
+            },
+            {
+              "indicator": "diesel_cost_per_ha_comparator",
+              "value_mad_per_ha": 1200,
+              "reference_period": "farmer's usual spending before reported increase",
+              "status": "Individual farmer's stated comparator; not a national benchmark."
+            },
+            {
+              "indicator": "grain_feed_sack_price",
+              "minimum_mad_per_sack": 110,
+              "maximum_mad_per_sack": 120,
+              "reference_period": "May 2026 farmer interview",
+              "status": "Individual livestock breeder report; sack weight, feed formulation and location are not stated."
+            },
+            {
+              "indicator": "grain_feed_sack_price_comparator",
+              "value_mad_per_sack": 90,
+              "reference_period": "farmer's earlier purchase price",
+              "status": "Individual interview comparator; sack weight and feed formulation not stated."
+            }
+          ],
+          "quality_notes": [
+            "Interview observations demonstrate cost volatility but do not provide a representative national price series.",
+            "Machinery rental and labour were reported as rising, but no comparable unit prices were supplied.",
+            "Do not insert these individual observations into national calculator budgets."
+          ]
+        },
+        {
+          "title": "HCP producer price index open-data catalogue",
+          "publisher": "Haut-Commissariat au Plan (HCP), Morocco",
+          "url": "https://www.data.gov.ma/data/fr/dataset/data_i3670",
+          "status": "official_producer_price_index_dataset_historical_series_inactive",
+          "coverage": "2011-2020",
+          "units": "index, base 100 in 2010",
+          "quality_notes": [
+            "The dataset is a producer-price index, not actual MAD/kg farm-gate quotations.",
+            "The catalogue marks the dataset inactive and its time coverage ends in 2020, so it cannot establish current 2026 farm-gate prices.",
+            "Useful only as historical price-index context; current crop-specific price series must be sourced separately."
+          ]
         }
       ],
       "priority_commodities": [
@@ -3029,17 +3196,19 @@
         "pig"
       ],
       "remaining_gaps": [
-        "confirm whether the 2024/25 HCP cultivated-area values can be reconciled with harvested area by crop and production system; do not use cultivated-area ratios as yields",
-        "extract the detailed HCP/Ministry 2024/25 crop area and production tables by region/province, including horticultural crops relevant to tomato, pepper, cucumber and watermelon",
-        "reconcile the government's 2025/26 estimate of about 9.0m tonnes with FAO's July 2026 forecast of 6.3m tonnes using the final Ministry crop-specific harvest results, exact crop scope and estimate dates; do not average the two",
-        "obtain current ONICL 2026/27 cereal marketing circular, grade-specific producer prices, collection terms and observed farm-gate prices",
-        "obtain dated farm-gate and wholesale prices for vegetables and pulses by wholesale market/region; keep retail prices separate",
-        "obtain itemized farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation/energy, land rent, harvest, storage and transport costs by crop and production system",
-        "use HCP's 2025 herd and controlled-slaughter series only as national context; obtain species-specific farm-level purchase, feed, mortality, veterinary and sale-price budgets",
+        "obtain the original ONICL 2026 cereal marketing circular, confirm the 280 MAD/quintal soft-wheat reference price eligibility, grades, deductions, transport and farmer net receipts; obtain the 2026/27 terms if issued",
+        "obtain crop-specific farm-gate prices from farmers/cooperatives/official marketing channels by region, grade, date and unit; keep Casablanca wholesale quotations separate",
+        "collect repeated wholesale price observations across Casablanca and other regional markets and calculate documented farmer netbacks only where transport, packing, commissions and losses are known",
+        "obtain current distributor and farmer invoice prices for fertilizer grades (urea, DAP/MAP, NPK, potash), certified seed, crop protection, diesel, irrigation energy and machinery hire by region",
+        "obtain itemized enterprise budgets by crop and production system, including application rates, labour days, machinery hours, irrigation, land rent, harvest, packaging, storage and transport",
+        "treat May 2026 fertilizer inflation reports and individual farmer diesel/feed interviews as cost-pressure context only; they are not representative unit costs",
+        "obtain multi-season crop-specific yields using compatible harvested-area denominators, including regional and irrigated/rainfed distinctions",
+        "reconcile the government's 2025/26 aggregate 9.0m tonne cereal estimate with FAO's 6.3m tonne July forecast using final crop-specific harvest results and exact scope; do not average them",
+        "use HCP's 2025 herd and slaughter series as national context only; obtain species-specific farm-level purchase, feed, mortality, veterinary and sale-price budgets",
         "do not map faba beans, chickpeas, peas, lentils or green beans to the calculator's Beans (Cowpea) profile without direct cowpea evidence",
         "do not activate Morocco calculator profiles until crop-specific multi-season yields, dated local producer prices and complete enterprise budgets are reconciled"
       ],
-      "extraction_status": "Morocco has useful official HCP crop area and production tables for 2023/24, including crop-specific winter cereals, spring cereals and pulses, plus a new HCP 2026 annual statistical publication listed on 27 October 2026. Government sources report an approximately 9.0m tonne total cereal estimate for 2025/26, while FAO's July 2026 brief forecast 6.3m tonnes; these totals are not directly reconciled and neither is a crop-specific yield. An ONICL 2025 circular copy gives a campaign reference price of MAD 280/quintal subject to collection terms; current campaign prices and realized producer prices are still needed. No Morocco calculator values are admitted."
+      "extraction_status": "Morocco's HCP 2026 crop and livestock tables are recorded. Additional 2026 market research identifies ONICL's reported soft-wheat reference price of MAD 280/quintal under the 2026 domestic cereal marketing programme, Casablanca wholesale quotations for tomato/cucumber/watermelon on 10 September 2026, reported imported-fertilizer price increases of 40-60% since February, and individual farmer interview examples for diesel and feed costs. These are carefully classified: ONICL terms are conditional cereal marketing references, wholesale prices are not farm-gate prices, fertilizer percentages lack absolute grade-specific quotations, and interview costs are not representative budgets. Current crop-specific farm-gate prices, actual input invoices and itemized farm enterprise budgets remain unavailable; no Morocco calculator values are admitted."
     },
     {
       "country_code": "TN",
