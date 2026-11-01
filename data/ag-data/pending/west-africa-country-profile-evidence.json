@@ -33,7 +33,7 @@
           "livestock and poultry",
           "farm income and productivity"
         ],
-        "report_url": "https://lisgis.gov.lr/admin_area/surveys/pdf/202512223466300ILP_Report_12-17-2025_cleaned_final.pdf",
+        "report_url": "https://update.lisgis.gov.lr/surveys.php?survey_id=15",
         "microdata_catalog_url": "https://microdata.lisgislr.org/index.php/catalog/43",
         "open_data_license_url": "https://lisgis.gov.lr/open-data-license",
         "catalogue_url": "https://liberia.opendataforafrica.org/data#topic=Agriculture",
@@ -335,13 +335,20 @@
           "Daily labour and other service-payment averages cannot be converted into per-hectare budgets without activity duration, worker counts and farm-system assumptions.",
           "Arithmetic review found that the report's published yield values do not consistently reconcile with harvested quantity divided by harvested area (for example, rice: 201,074 Mt / 139,707 ha = about 1.439 Mt/ha, while the table reports 2.0 Mt/ha). Do not use the published yield column or the recalculated ratio until LISGIS confirms the correct yield denominator and resolves the August 2026 erratum.",
           "The March 10 2026 LISGIS erratum identifies changes to the Executive Summary and Key Findings, not the crop-yield or labour tables transcribed here.",
-          "A separate August 2026 portal notice refers to selected corrected tables and indicators but does not identify the affected table numbers in the accessible notice; its relevance to LAAS-2024 remains to be confirmed."
+          "A separate August 2026 portal notice refers to selected corrected tables and indicators but does not identify the affected table numbers in the accessible notice; its relevance to LAAS-2024 remains to be confirmed.",
+          "An official corrected-report download is now identified on the LISGIS survey record. Re-extract Table 10 and the cost tables from that corrected report before treating earlier transcriptions as valid."
         ],
         "additional_portal_revision_notice": {
           "date": "2026-08",
           "description": "The LISGIS survey portal also displays a general notice that selected previously published survey tables and indicator values were corrected or revised.",
           "verification_required": "The accessible notice does not identify the affected report tables. Confirm whether it applies to LAAS-2024 and whether Tables 10, 35 or 38 are affected before promoting observations.",
           "portal_url": "https://update.lisgis.gov.lr/surveys.php?search=Annual+Agriculture"
+        },
+        "corrected_report_access": {
+          "portal_url": "https://update.lisgis.gov.lr/surveys.php?survey_id=15",
+          "status": "official_corrected_report_available",
+          "note": "LISGIS's official survey record explicitly provides a corrected report, the old report and an erratum document. Future extraction must use the corrected report, not the earlier direct PDF URL. The March 10, 2026 erratum text itself specifies changes to pages 9 and 16; the corrected report still needs to be checked for the Table 10 yield denominator.",
+          "erratum_url": "https://www.lisgis.gov.lr/admin_area/surveys/pdf/erratum.pdf"
         }
       }
     },
@@ -670,9 +677,65 @@
           "notes": "Use to identify suppliers and request dated quotations for fertilizer, seeds and crop protection products. The directory itself does not provide verified current retail prices."
         }
       ]
+    },
+    {
+      "country_code": "GN",
+      "country_name": "Guinea",
+      "evidence_status": "external_official_estimates_source_identified_country_level_national_validation_pending",
+      "survey": {
+        "title": "USDA Foreign Agricultural Service Production, Supply and Distribution country profile — Guinea",
+        "publisher": "United States Department of Agriculture, Foreign Agricultural Service",
+        "reference_period": "Marketing year 2025/2026",
+        "source_url": "https://fas-prod.azureedge.us/data/production/gu",
+        "data_types": [
+          "annual commodity production",
+          "harvested area",
+          "crop yield",
+          "ten-year historical averages"
+        ],
+        "observed_commodities": [
+          "rice",
+          "maize/corn",
+          "peanut/groundnut",
+          "millet",
+          "sorghum",
+          "palm oil",
+          "coffee"
+        ],
+        "priority_calculator_matches": [
+          "rice",
+          "maize"
+        ],
+        "extraction_status": "Source identified and current 2025/2026 country-level estimates visible. No numeric observations admitted to calculator data until commodity selector, units, marketing-year definitions and national-statistics cross-check are documented.",
+        "quality_notes": [
+          "USDA FAS is a useful independent cross-check, not Guinea's national statistical authority.",
+          "Do not map peanut to the existing beans/cowpea profile.",
+          "Do not use a cereal aggregate yield as a rice or maize yield.",
+          "Confirm each commodity's selected yield series and unit before extracting values."
+        ],
+        "remaining_gaps": [
+          "Guinea national agricultural statistics for crop area, production and yield",
+          "district or prefecture-level production differences",
+          "current farm-gate and market selling prices by market",
+          "certified seed and input prices",
+          "farm labour, land preparation, transport and irrigation cost benchmarks",
+          "livestock production and budget sources for broilers, layers, goats, cattle and pigs"
+        ]
+      },
+      "price_sources": [
+        {
+          "title": "FAO Food Price Monitoring and Analysis Tool",
+          "publisher": "Food and Agriculture Organization of the United Nations",
+          "url": "https://www.fao.org/giews/food-prices/price-tool/en/",
+          "status": "regional_or_national_market_price_discovery_source",
+          "note": "Use to discover domestic market price series and confirm the market, commodity, currency, unit and observation date before calculator use."
+        }
+      ]
     }
   ],
   "next_steps": [
+    "Add Guinea as the next country evidence package; use USDA FAS 2025/26 commodity estimates only as a cross-check until national statistics and current local prices/costs are sourced.",
+    "For Liberia, re-extract all candidate figures from the official corrected LAAS-2024 report available through the LISGIS survey record; do not rely on the old direct PDF copy.",
     "For Sierra Leone selling prices, seek district-level Agrilinks daily bulk and retail observations after access/registration; use NaFRA's dealer directory to obtain dated input quotations.",
     "For Sierra Leone, use the April 2026 MAFS 2025/26 crop-cutting report as the newest crop-yield evidence, but hold the rice national yield pending clarification of its denominator.",
     "For Liberia, resolve the August 2026 LISGIS erratum against Table 10, Table 35 and Table 38 before releasing any transcribed observations from hold.",
