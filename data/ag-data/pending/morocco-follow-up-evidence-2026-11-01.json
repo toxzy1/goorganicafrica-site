@@ -1,0 +1,82 @@
+{
+  "title": "Morocco follow-up agricultural evidence — October 2026",
+  "country_code": "MA",
+  "country_name": "Morocco",
+  "status": "research_only_not_published_to_calculator",
+  "added_on": "2026-11-01",
+  "sources": [
+    {
+      "title": "Tomates : la chaleur perturbe la production et complique les exportations marocaines",
+      "publisher": "Médias24 reporting FIFEL",
+      "url": "https://medias24.com/2026/10/08/tomates-la-chaleur-perturbe-la-production-et-complique-les-exportations-marocaines-1775041",
+      "publication_date": "2026-10-08",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "cost_of_production_mad_per_kg_lower_bound": 7,
+          "status": "FIFEL-reported potential cost exceeding MAD 7/kg for some producers; not a national average or itemized budget."
+        },
+        {
+          "commodity": "tomato",
+          "yield_mt_per_ha_range": [
+            60,
+            70
+          ],
+          "status": "Sector-reported yields for some producers under heat stress; not a representative national yield distribution."
+        },
+        {
+          "commodity": "tomato",
+          "yield_mt_per_ha_good_conditions_range": [
+            120,
+            150
+          ],
+          "status": "Sector-reported comparison under good conditions; production system and region require specification."
+        },
+        {
+          "commodity": "tomato",
+          "wholesale_price_casablanca_mad_per_kg_range": [
+            2.5,
+            6.5
+          ],
+          "status": "Wholesale prices cited in the report; not farm-gate prices."
+        }
+      ],
+      "quality_notes": [
+        "FIFEL attributes the pressure partly to prolonged September heat above 35°C in the Agadir production zone.",
+        "Do not compare the cost figure with wholesale prices without matched grade, date, production basin and documented marketing deductions.",
+        "Request itemized budgets from Agadir/Souss producer organizations, separating open-field and protected production."
+      ]
+    },
+    {
+      "title": "Agriculture : les coûts freinent le lancement des labours",
+      "publisher": "LeBrief reporting farmer testimony relayed by Assabah",
+      "url": "https://www.lebrief.ma/agriculture-les-couts-freinent-le-lancement-des-labours-100171466/",
+      "publication_date": "2026-10-28",
+      "observations": [
+        {
+          "indicator": "cereal_seed_purchase_price",
+          "value_mad_per_kg": 5,
+          "status": "Individual farmer testimony; crop, variety, certification and location are unspecified."
+        },
+        {
+          "indicator": "cereal_sale_price",
+          "maximum_mad_per_kg": 2,
+          "status": "Individual farmer testimony; crop, grade, buyer and transaction terms are unspecified."
+        }
+      ],
+      "quality_notes": [
+        "These figures are not official price observations or representative national farm-gate series.",
+        "Do not use them in calculator budgets without crop-, grade-, region- and date-specific corroboration."
+      ]
+    }
+  ],
+  "remaining_gaps": [
+    "Obtain FIFEL or producer-organization itemized 2026/27 tomato budgets from Agadir/Souss and other regions, including variety, production system, water/energy, fertilizer, crop protection, labour, harvest, packing and sales channel.",
+    "Verify the reported tomato cost above MAD 7/kg against farm records and define the production system to which it applies.",
+    "Corroborate October 2026 cereal seed and sale-price testimony with dated invoices and farmer receipts.",
+    "Obtain matched producer and wholesale tomato prices by grade, region and date to calculate netbacks.",
+    "Obtain the original ONICL 2026 circular and any 2026/27 update, including grade, eligibility, delivery, deductions and transport terms.",
+    "Obtain multi-season crop-specific harvested-area yields and actual farmer-paid input prices before calculator activation."
+  ],
+  "conclusion": "Morocco remains research-only. These new sector and farmer observations are evidence leads, not calculator-ready national assumptions. No calculator data or existing country profiles have been changed."
+}
