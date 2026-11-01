@@ -1,0 +1,496 @@
+{
+  "title": "Additional African country agricultural evidence leads",
+  "version": 1,
+  "status": "research_only_not_published_to_calculator",
+  "created_at": "2026-11-01",
+  "purpose": "Extend the GoOrganicAfrica country evidence programme beyond the first nine West African profiles. These are source leads and carefully qualified national observations, not activated calculator data.",
+  "publication_rules": [
+    "Do not activate a country or commodity profile from aggregate cereal production alone.",
+    "Require crop-specific harvested area and production with compatible definitions before accepting a yield.",
+    "Keep farm-gate, wholesale and retail prices separate; record market, date, grade, unit and currency.",
+    "Do not infer farm input budgets from national price indices or food retail prices.",
+    "Do not convert broad cereal aggregates into maize, rice or other individual commodity values.",
+    "Do not change calculator formulas or existing ten active country profiles."
+  ],
+  "countries": [
+    {
+      "country_code": "GM",
+      "country_name": "The Gambia",
+      "evidence_status": "FAO_2026_country_brief_and_historical_crop_data_leads_identified",
+      "sources": [
+        {
+          "title": "FAO GIEWS Country Brief: The Gambia",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://cb.apps.fao.org/country.jsp?code=GMB",
+          "reference_date": "2026-09-22",
+          "coverage": "National cereal outlook and monitored retail market trends",
+          "observations": [
+            {
+              "indicator": "aggregate cereal production",
+              "value_mt": 135000,
+              "reference_year": 2025,
+              "status": "FAO brief reports official estimate; aggregate only, not a commodity yield or farm budget"
+            },
+            {
+              "indicator": "retail imported rice prices",
+              "change_percent": "-10 to -15",
+              "period": "April to July 2026",
+              "status": "price movement only; obtain absolute dated market prices and distinguish imported rice from locally produced paddy"
+            }
+          ]
+        },
+        {
+          "title": "Gambia Data Book crop data documentation",
+          "publisher": "FEWS NET Data Exchange",
+          "url": "https://devhelp.fews.net/fde/v1/gambia-country-book",
+          "status": "historical_data_source_and_methodology_warning",
+          "note": "The documented Ministry of Agriculture crop series available through this route runs from 1988 to 2012, reports area sown rather than harvested area, and calculates yield as production divided by area sown. No more recent public-facing crop table was identified through this source."
+        },
+        {
+          "title": "FAOSTAT crop production, yield and harvested area dataset",
+          "publisher": "FAO",
+          "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+          "coverage": "1961-2024",
+          "status": "cross-country crop series; underlying values may include national statistics and estimates"
+        }
+      ],
+      "priority_commodities": [
+        "rice",
+        "maize",
+        "beans/cowpea",
+        "cassava",
+        "watermelon",
+        "tomato",
+        "hot_pepper",
+        "broilers",
+        "layers",
+        "goat",
+        "cattle"
+      ],
+      "remaining_gaps": [
+        "obtain latest Ministry of Agriculture crop survey tables by crop and administrative area",
+        "verify harvested area, not only area sown, and identify crop definitions",
+        "extract local producer and wholesale prices for locally produced rice, maize, groundnut and cowpea",
+        "obtain current seed, fertilizer, crop protection, machinery, irrigation, labour and transport costs",
+        "obtain livestock purchase, feed, veterinary, mortality and output-price budgets",
+        "confirm regional administrative options and production-system differences"
+      ],
+      "extraction_status": "The 2025 aggregate cereal estimate and 2026 imported-rice price movement are useful context only. Historical crop data are too old and use area-sown denominators; no country-specific calculator values admitted."
+    },
+    {
+      "country_code": "MR",
+      "country_name": "Mauritania",
+      "evidence_status": "official_agriculture_and_livestock_statistics_sources_identified_partial_rice_and_regional_evidence_on_hold",
+      "sources": [
+        {
+          "title": "Agriculture et politique agricole en Mauritanie",
+          "publisher": "Direction générale du Trésor, France",
+          "url": "https://www.tresor.economie.gouv.fr/Articles/2026/01/14/mauritanie-agriculture-et-politique-agricole",
+          "publication_date": "2026-01-14",
+          "observations": [
+            {
+              "crop": "rice/paddy",
+              "production_mt": 481854,
+              "area_ha": 97444,
+              "reference_year": 2024,
+              "calculated_ratio_mt_per_ha": 4.945,
+              "status": "secondary government trade-agency summary citing FAO; calculated ratio is arithmetic only, not a validated official yield. Confirm paddy/milled definition, season and matching area."
+            },
+            {
+              "indicator": "total cereal production",
+              "value_mt": 589000,
+              "reference_year": 2024,
+              "status": "FAO estimate cited by the source; aggregate only"
+            }
+          ]
+        },
+        {
+          "title": "Trarza en chiffres 2025",
+          "publisher": "ANSADE / regional statistics",
+          "url": "https://admin.ansade.mr/wp-content/uploads/2026/01/Trarza-en-Chiffres-2025-2.pdf",
+          "reference_period": "2019/20 to 2023/24",
+          "observations": [
+            {
+              "crop": "rice",
+              "reference_season": "2023/24",
+              "production_mt": 427186,
+              "status": "table extraction lead; verify source table and geography before use"
+            },
+            {
+              "indicator": "cultivated irrigated area",
+              "value_ha": 80488,
+              "reference_season": "2023/24",
+              "status": "regional total; not necessarily rice-only"
+            },
+            {
+              "indicator": "rice area",
+              "value_ha": 41113,
+              "reference_season": "2023/24",
+              "status": "PDF text extraction is table-layout ambiguous; verify visually against original page before calculating a yield"
+            }
+          ],
+          "note": "The Trarza statistical yearbook is valuable because it reports agriculture by season and cultivation type. Its extracted table text is not sufficiently clear to treat the rice-area field as verified without page-image review."
+        },
+        {
+          "title": "ANSADE economic statistics",
+          "publisher": "Agence Nationale de la Statistique et de l'Analyse Démographique et Économique",
+          "url": "https://ansade.mr/statistics/economic",
+          "status": "official_sector_data_portal",
+          "note": "Portal identifies agriculture production, cultivated areas and yields, livestock and herd statistics, and price evolution as statistical domains."
+        },
+        {
+          "title": "General Livestock Census report",
+          "publisher": "ANSADE",
+          "url": "https://admin.ansade.mr/tome-2-rapport-principal-des-resultats-du-recensement-general-de-lelevage-rge/",
+          "status": "official_livestock_source_for_future_profile_work"
+        },
+        {
+          "title": "Mauritania official statistics portal",
+          "publisher": "ANSADE",
+          "url": "https://portail.ansade.mr/accueil",
+          "status": "official_data_portal"
+        }
+      ],
+      "priority_commodities": [
+        "rice",
+        "maize",
+        "beans/cowpea",
+        "tomato",
+        "hot_pepper",
+        "watermelon",
+        "cattle",
+        "goat",
+        "broilers",
+        "layers"
+      ],
+      "remaining_gaps": [
+        "download the national annual agricultural household/farm survey (EMEA) tables and verify crop production, area and yields",
+        "visually inspect the Trarza yearbook tables before transcribing rice area and production-system figures",
+        "extract producer prices, wholesale/retail prices and local market dates from official market sources",
+        "obtain input, labour, irrigation, pumping, machinery and transport costs by irrigated and rainfed system",
+        "obtain livestock purchase, feed, veterinary and output-price data from the livestock census and market sources",
+        "separate irrigated rice from rainfed crops and do not use a national blended assumption where systems differ"
+      ],
+      "extraction_status": "Mauritania has stronger official statistical infrastructure than initially apparent, including annual agricultural surveys and a general livestock census. A 2024 rice production/area pair and a Trarza regional yearbook are leads only; no calculator data activated pending source-table verification."
+    },
+    {
+      "country_code": "GW",
+      "country_name": "Guinea-Bissau",
+      "evidence_status": "FAO_2025_cereal_outlook_and_regional_crop_context_identified_national_crop_tables_pending",
+      "sources": [
+        {
+          "title": "FAO GIEWS Country Brief: Guinea-Bissau",
+          "publisher": "FAO",
+          "url": "https://cb.apps.fao.org/country.jsp?code=GNB",
+          "reference_date": "2026-02-06",
+          "observations": [
+            {
+              "indicator": "2025 cereal production outlook",
+              "status": "FAO reports above-average cereal production; no crop-specific numeric values transcribed in this register"
+            },
+            {
+              "indicator": "rice price movement",
+              "reference_month": "2025-11",
+              "status": "FAO reports rice prices lower year-on-year; absolute prices, market and product form still need extraction"
+            }
+          ],
+          "regional_context": "Oio, Cacheu and Biombo are identified as major domestic cereal-producing regions. The 2025 rainy season began with below-average and erratically distributed rainfall in June, followed by improved conditions from July to October."
+        },
+        {
+          "title": "FAOSTAT crop production, yield and harvested area dataset",
+          "publisher": "FAO",
+          "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+          "coverage": "1961-2024",
+          "status": "national annual cross-check; inspect source and estimation flags"
+        },
+        {
+          "title": "FAO GIEWS country brief archive and methodology",
+          "publisher": "FAO",
+          "url": "https://www.fao.org/giews/countrybrief/",
+          "status": "monitoring_source_for_harvests_and_food_prices"
+        }
+      ],
+      "priority_commodities": [
+        "rice",
+        "maize",
+        "beans/cowpea",
+        "cassava",
+        "cashew (not currently a calculator commodity)",
+        "goat",
+        "cattle",
+        "broilers",
+        "layers"
+      ],
+      "remaining_gaps": [
+        "identify the national agricultural census or annual crop survey and obtain region-level crop area, production and yield tables",
+        "confirm paddy versus milled rice definitions and local rice production systems",
+        "obtain farm-gate rice, maize and cowpea prices with market, date, grade and unit",
+        "obtain seed, fertilizer, crop protection, labour, mechanization and transport cost schedules",
+        "obtain livestock and poultry farm-budget data",
+        "confirm administrative region and sector coverage for the calculator"
+      ],
+      "extraction_status": "FAO provides recent seasonal and market context, but accessible brief text does not supply the full crop-specific budgets needed. No calculator values admitted."
+    },
+    {
+      "country_code": "TD",
+      "country_name": "Chad",
+      "evidence_status": "FAO_2026_brief_and_2024_cereal_aggregate_identified_crop_specific_regional_tables_pending",
+      "sources": [
+        {
+          "title": "FAO GIEWS Country Brief: Chad",
+          "publisher": "FAO",
+          "url": "https://cb.apps.fao.org/country.jsp?code=TCD&lang=en",
+          "reference_date": "2026-09-07",
+          "observations": [
+            {
+              "indicator": "aggregate cereal production",
+              "value_mt": 3000000,
+              "reference_year": 2025,
+              "status": "FAO reports official estimate around 3 million tonnes; aggregate only"
+            },
+            {
+              "indicator": "coarse-grain prices",
+              "reference_period": "May-July 2026",
+              "status": "FAO reports millet and sorghum retail prices rose seasonally in monitored markets, while coarse-grain prices remained below year-earlier levels; obtain absolute commodity-market series"
+            }
+          ],
+          "regional_context": "Production varies between the Sahelian and Sudanian zones. The 2026 brief reports rainfall irregularity, localized crop establishment problems and insecurity-related disruption in parts of Lac Province and the Sudanian zone."
+        },
+        {
+          "title": "Chad in Figures",
+          "publisher": "SESRIC statistical country profile",
+          "url": "https://www.sesric.org/cif.php?c_code=13",
+          "observations": [
+            {
+              "indicator": "cereal harvested area",
+              "value_ha": 3276392,
+              "reference_year": 2024,
+              "status": "secondary statistical portal value; verify against FAOSTAT and national crop tables"
+            },
+            {
+              "indicator": "cereal production",
+              "value_mt": 2709156,
+              "reference_year": 2024,
+              "status": "aggregate only; do not assign to individual crops"
+            },
+            {
+              "indicator": "cereal yield",
+              "value_hg_per_ha": 826.9,
+              "reference_year": 2024,
+              "status": "aggregate cereal yield, equivalent to about 0.827 t/ha; not a maize or rice yield"
+            }
+          ]
+        },
+        {
+          "title": "FAO crop production, yield and harvested area dataset",
+          "publisher": "FAO",
+          "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+          "coverage": "1961-2024",
+          "status": "preferred source for crop-specific national cross-checks, subject to source flags"
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "beans/cowpea",
+        "tomato",
+        "hot_pepper",
+        "watermelon",
+        "cattle",
+        "goat",
+        "broilers",
+        "layers"
+      ],
+      "remaining_gaps": [
+        "obtain official crop-specific production and harvested-area tables by agro-ecological zone and province",
+        "distinguish Sahelian and Sudanian production calendars and crop systems",
+        "extract dated producer and wholesale prices for maize, rice, cowpea and vegetables",
+        "obtain seed, fertilizer, crop protection, irrigation, labour, mechanization and transport costs",
+        "obtain livestock purchase, feed, veterinary and output-price budgets",
+        "account for regional access and security constraints when assessing whether national averages are representative"
+      ],
+      "extraction_status": "The national cereal aggregate and aggregate cereal yield are useful context only. They cannot be used as commodity-specific calculator yields. No calculator values admitted."
+    },
+    {
+      "country_code": "ML",
+      "country_name": "Mali",
+      "evidence_status": "FAO_2026_country_brief_and_2024_crop_series_cross_check_identified",
+      "sources": [
+        {
+          "title": "FAO GIEWS Country Brief: Mali",
+          "publisher": "FAO",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MLI&lang=en",
+          "reference_date": "2026-08-27",
+          "observations": [
+            {
+              "indicator": "aggregate cereal production",
+              "value_mt": 11600000,
+              "reference_year": 2025,
+              "status": "official aggregate estimate cited by FAO; about 15 percent above five-year average, not crop-specific"
+            },
+            {
+              "indicator": "urea price change",
+              "change_percent": 19,
+              "period": "February to March 2026",
+              "status": "national input price movement; obtain absolute prices and regional quotations before budgeting"
+            },
+            {
+              "indicator": "NPK price change",
+              "change_percent": 16,
+              "period": "February to March 2026",
+              "status": "national input price movement; obtain absolute prices and regional quotations before budgeting"
+            },
+            {
+              "indicator": "DAP price change",
+              "change_percent": 8,
+              "period": "February to March 2026",
+              "status": "national input price movement; obtain absolute prices and regional quotations before budgeting"
+            }
+          ],
+          "market_note": "FAO reports that July 2026 wholesale prices for locally produced coarse grains were 10-30 percent below year-earlier levels in monitored markets overall, but conflict-affected Gao and Tombouctou had significantly higher prices than other regions."
+        },
+        {
+          "title": "Mali agricultural production 2024 (FAOSTAT-sourced table)",
+          "publisher": "APEDA Agri Exchange, citing FAO",
+          "url": "https://agriexchange.apeda.gov.in/Reports/Marketreport/InternationalProduction?countryMenuId=O&ctryid=MPOQV&menuid=Production+of+Fresh+Produce+++++++",
+          "reference_year": 2024,
+          "observations": [
+            {
+              "crop": "maize",
+              "production_thousand_mt": 3952.76,
+              "status": "secondary FAO-sourced production cross-check; matching area/yield and FAOSTAT source flag still required"
+            },
+            {
+              "crop": "rice/paddy",
+              "production_thousand_mt": 2756.34,
+              "status": "secondary FAO-sourced production cross-check; confirm paddy definition and matching harvested area"
+            },
+            {
+              "crop": "watermelon",
+              "production_thousand_mt": 488.12,
+              "status": "secondary FAO-sourced production cross-check; verify national source and harvested area"
+            }
+          ]
+        },
+        {
+          "title": "Mali agricultural data dashboard",
+          "publisher": "Agdatahub Mali / meteorological service",
+          "url": "https://agdata.malimeteo.ml/",
+          "status": "dashboard_lead",
+          "note": "Interactive dashboard exposes crop, area, production and yield selectors; determine the source, years, administrative level and estimation method before using values."
+        },
+        {
+          "title": "FAOSTAT crop production, yield and harvested area dataset",
+          "publisher": "FAO",
+          "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+          "coverage": "1961-2024",
+          "status": "primary international statistical cross-check with source lineage metadata"
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "beans/cowpea",
+        "tomato",
+        "watermelon",
+        "broilers",
+        "layers",
+        "goat",
+        "cattle",
+        "pig"
+      ],
+      "remaining_gaps": [
+        "extract official CPS/Ministry crop tables by region, crop and production system",
+        "match FAOSTAT 2024 crop production to harvested area and source flags",
+        "extract absolute dated market prices from national market information systems and FAO FPMA",
+        "obtain absolute regional fertilizer, seed, crop protection, labour, machinery and transport costs",
+        "obtain livestock and poultry budget inputs and output prices",
+        "account for conflict-related market and field-access differences, particularly Gao, Tombouctou, Kidal and Ménaka"
+      ],
+      "extraction_status": "Mali has recent FAO monitoring, crop-production cross-check leads and an interactive crop dashboard. Aggregate cereal totals and secondary crop figures are not sufficient to activate the 17 calculator commodity profiles."
+    },
+    {
+      "country_code": "CF",
+      "country_name": "Central African Republic",
+      "evidence_status": "FAO_2026_seasonal_and_market_context_identified_national_crop_tables_pending",
+      "sources": [
+        {
+          "title": "FAO GIEWS Country Brief: Central African Republic",
+          "publisher": "FAO",
+          "url": "https://cb.apps.fao.org/country.jsp?code=CAF",
+          "reference_date": "2026-07-15",
+          "observations": [
+            {
+              "indicator": "2026 maize season",
+              "status": "FAO reports planting completed in central and southern areas by April, with harvest expected from mid-August; flood risk was noted for Basse-Kotto, Mbomou and Ouaka"
+            },
+            {
+              "indicator": "2026 millet and sorghum season",
+              "status": "FAO reports planting completed in northern areas in early July"
+            },
+            {
+              "indicator": "imported rice prices",
+              "reference_period": "May 2026",
+              "status": "FAO reports prices above year-earlier values; obtain local market-level absolute observations"
+            }
+          ],
+          "risk_context": "Conflict and displacement continue to constrain agricultural production and market access. A single national average could mask substantial differences between prefectures and accessible/inaccessible areas."
+        },
+        {
+          "title": "FAOSTAT crop production, yield and harvested area dataset",
+          "publisher": "FAO",
+          "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+          "coverage": "1961-2024",
+          "status": "national crop series cross-check; inspect estimation flags"
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "cassava",
+        "beans/cowpea",
+        "tomato",
+        "hot_pepper",
+        "goat",
+        "cattle",
+        "broilers",
+        "layers"
+      ],
+      "remaining_gaps": [
+        "obtain Ministry of Agriculture and FAO crop assessment tables by prefecture and production system",
+        "extract crop-specific harvested area, production and yield with uncertainty notes",
+        "obtain local producer/wholesale prices for maize, cassava, rice and vegetables",
+        "obtain input, labour, transport and livestock budget observations",
+        "map regional access and security constraints to avoid treating inaccessible areas as representative"
+      ],
+      "extraction_status": "FAO seasonal and market context is available, but it does not provide enough crop-specific budget evidence. No calculator values admitted."
+    }
+  ],
+  "cross_country_sources": [
+    {
+      "title": "FAOSTAT crop production, yield and harvested area",
+      "publisher": "FAO",
+      "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+      "coverage": "1961-2024",
+      "units": "harvested area hectares; production tonnes; yield hectograms per hectare",
+      "licence": "CC BY 4.0",
+      "quality_note": "FAO metadata says source data can originate from official national statistics, surveys, administrative records and estimates based on expert observations. Preserve source lineage and flags; do not treat every value as a direct national survey observation."
+    },
+    {
+      "title": "FAO GIEWS Country Briefs",
+      "publisher": "FAO",
+      "url": "https://www.fao.org/giews/countrybrief/",
+      "quality_note": "Useful for current seasonal conditions, aggregate cereal balances, monitored food prices and policy developments. Country briefs do not replace crop-specific national production and farm-budget tables."
+    }
+  ],
+  "next_steps": [
+    "For Mauritania, visually inspect the Trarza yearbook PDF pages containing rice area and production, then obtain national EMEA annual survey tables and livestock census data.",
+    "For Mali, extract CPS/Ministry regional crop tables and reconcile the FAOSTAT 2024 maize, paddy rice and watermelon series against matching harvested area.",
+    "For The Gambia, locate the newest Ministry of Agriculture crop survey; do not use the 1988-2012 area-sown series as current harvested-area yields.",
+    "For Guinea-Bissau, identify the national agricultural census/survey tables and extract region-level rice and coarse-grain production.",
+    "For Chad, obtain crop-specific provincial estimates and market/input prices by Sahelian and Sudanian production systems.",
+    "For Central African Republic, prioritize prefecture-level crop assessment and accessible market evidence, explicitly recording conflict and displacement constraints.",
+    "For all six countries, collect dated producer prices, input quotations, labour and livestock budgets before creating calculator profiles.",
+    "Keep all six countries research-only until their crop-specific evidence is reconciled and independently reviewed."
+  ]
+}
