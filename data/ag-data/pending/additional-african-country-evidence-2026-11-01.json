@@ -2910,6 +2910,183 @@
         "do not activate Morocco calculator profiles until crop-specific multi-season yields, dated local producer prices and complete enterprise budgets are reconciled"
       ],
       "extraction_status": "Morocco has useful official HCP crop area and production tables for 2023/24, including crop-specific winter cereals, spring cereals and pulses, plus a new HCP 2026 annual statistical publication listed on 27 October 2026. Government sources report an approximately 9.0m tonne total cereal estimate for 2025/26, while FAO's July 2026 brief forecast 6.3m tonnes; these totals are not directly reconciled and neither is a crop-specific yield. An ONICL 2025 circular copy gives a campaign reference price of MAD 280/quintal subject to collection terms; current campaign prices and realized producer prices are still needed. No Morocco calculator values are admitted."
+    },
+    {
+      "country_code": "TN",
+      "country_name": "Tunisia",
+      "evidence_status": "official_2026_2027_cereal_producer_price_schedule_and_recent_cereal_estimates_added_crop_budget_evidence_pending",
+      "sources": [
+        {
+          "title": "Arrêté conjoint du 24 juillet 2026 fixant les prix et modalités des céréales pour la campagne 2026-2027",
+          "publisher": "Journal Officiel de la République Tunisienne (JORT), n°75",
+          "url": "https://www.jort.tn/view/journal-officiel/fr/2026/075/arrete-conjoint-2026-07-24-fixant-prix-modalites-paiement-stockage-retrocession-cereales/",
+          "publication_date": "2026-07-24",
+          "reference_period": "2026 cereal harvest / 2026-2027 marketing campaign",
+          "observations": [
+            {
+              "commodity": "durum_wheat",
+              "price_tnd_per_quintal": 100,
+              "reference_period": "2026 harvest",
+              "status": "Official base producer and collector purchase price for sound, fair and marketable grain; quality criteria, taxes and delivery terms apply."
+            },
+            {
+              "commodity": "common_wheat",
+              "price_tnd_per_quintal": 80,
+              "reference_period": "2026 harvest",
+              "status": "Official base producer and collector purchase price for sound, fair and marketable grain; quality criteria, taxes and delivery terms apply."
+            },
+            {
+              "commodity": "barley_and_triticale",
+              "intervention_price_tnd_per_quintal": 65,
+              "reference_period": "2026 harvest",
+              "status": "Intervention price applied by collecting and storage bodies to producer deliveries; barley and triticale otherwise freely marketed."
+            },
+            {
+              "commodity": "durum_wheat",
+              "early_delivery_premium_tnd_per_quintal": 40,
+              "reference_period": "deliveries through 2026-08-31",
+              "status": "Exceptional premium subject to campaign conditions; do not add automatically to the base price for every producer."
+            },
+            {
+              "commodity": "common_wheat",
+              "early_delivery_premium_tnd_per_quintal": 30,
+              "reference_period": "deliveries through 2026-08-31",
+              "status": "Exceptional premium subject to campaign conditions; do not add automatically to the base price for every producer."
+            },
+            {
+              "commodity": "barley_and_triticale",
+              "early_delivery_premium_tnd_per_quintal": 25,
+              "reference_period": "deliveries through 2026-07-15",
+              "status": "Exceptional premium subject to campaign conditions; do not add automatically to the base price for every producer."
+            }
+          ],
+          "quality_notes": [
+            "The base prices are official producer/collector procurement prices, not unrestricted spot-market quotations.",
+            "The decree specifies quality grading, deductions, delivery deadlines and separate storage/marketing margins. Preserve these conditions in any later price conversion.",
+            "The official French transcription states that the Arabic original is legally authoritative."
+          ]
+        },
+        {
+          "title": "Office des Céréales — Evolution des prix des céréales",
+          "publisher": "Office des Céréales, Tunisia",
+          "url": "https://www.oc.com.tn/fr/prix-de-cereale/",
+          "status": "official_historical_producer_price_series",
+          "note": "The Office des Céréales publishes annual base producer prices, exceptional early-delivery premiums and local cereal purchase prices in dinars per quintal. The page currently exposes a 2023 table in the retrieved view; extract the full historical series and reconcile it against each year's JORT decree."
+        },
+        {
+          "title": "ONAGRI open-data catalogue — agricultural input and service prices",
+          "publisher": "Observatoire National de l'Agriculture (ONAGRI), Tunisia",
+          "url": "https://catalog.data.gov.tn/producteurs-de-donnees/onagri-dept?organization=onagri-dept",
+          "publication_date": "2026-04-23",
+          "status": "official_downloadable_input_price_dataset_lead",
+          "note": "Catalogue lists an XLSX dataset titled Prix des intrants et des services agricoles, dated 23 April 2026. Download and extract product, unit, region/market, observation date and tax/subsidy treatment before using any input costs."
+        },
+        {
+          "title": "FAO GIEWS Country Brief — Tunisia",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://www.fao.org/giews/countrybrief/country/TUN/pdf/TUN.pdf",
+          "reference_date": "2026-02-18",
+          "observations": [
+            {
+              "commodity": "wheat",
+              "production_mt": 1250000,
+              "reference_period": "2025 estimate",
+              "status": "FAO estimate; crop-specific national production estimate, not a farm-level yield or budget."
+            },
+            {
+              "commodity": "barley",
+              "production_mt": 380000,
+              "reference_period": "2025 estimate",
+              "status": "FAO estimate; crop-specific national production estimate, not a farm-level yield or budget."
+            },
+            {
+              "commodity": "total_cereals",
+              "production_mt": 1663000,
+              "reference_period": "2025 estimate",
+              "status": "FAO aggregate estimate; do not map to an individual calculator commodity."
+            }
+          ],
+          "quality_notes": [
+            "FAO reports 2025 total cereal production at about 1.663 million tonnes, 12.2 percent above 2024; wheat and barley estimates are shown separately.",
+            "These national totals do not provide the matching harvested area, regional distribution or enterprise costs needed for calculator assumptions."
+          ]
+        },
+        {
+          "title": "Grain and Feed Annual — Tunisia, 2025/26",
+          "publisher": "USDA Foreign Agricultural Service, Tunis",
+          "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Grain+and+Feed+Annual_Tunis_Tunisia_TS2025-0005",
+          "reference_period": "MY 2025/26 forecast; includes MY 2024/25 official observations",
+          "status": "independent_cross_check_with_harvested_area_detail",
+          "observations": [
+            {
+              "commodity": "wheat",
+              "production_mt": 1350000,
+              "reference_period": "MY 2025/26 forecast",
+              "status": "USDA/FAS forecast; not a final official harvest result."
+            },
+            {
+              "commodity": "barley",
+              "production_mt": 500000,
+              "reference_period": "MY 2025/26 forecast",
+              "status": "USDA/FAS forecast; not a final official harvest result."
+            },
+            {
+              "commodity": "wheat",
+              "seeded_area_ha": 581000,
+              "reference_period": "MY 2025/26",
+              "status": "USDA/FAS report citing Ministry of Agriculture; seeded area, not harvested area."
+            },
+            {
+              "commodity": "wheat",
+              "durum_seeded_area_ha": 549000,
+              "reference_period": "MY 2025/26",
+              "status": "USDA/FAS report citing Ministry of Agriculture; seeded area, not harvested area."
+            },
+            {
+              "commodity": "wheat",
+              "common_seeded_area_ha": 32000,
+              "reference_period": "MY 2025/26",
+              "status": "USDA/FAS report citing Ministry of Agriculture; seeded area, not harvested area."
+            },
+            {
+              "commodity": "barley",
+              "seeded_area_ha": 412000,
+              "reference_period": "MY 2025/26",
+              "status": "USDA/FAS report citing Ministry of Agriculture; seeded area, not harvested area."
+            }
+          ],
+          "quality_notes": [
+            "The report distinguishes seeded from harvested area and notes harvested wheat area is lower than seeded area.",
+            "Forecast values must not be combined with actual harvested-area observations to calculate yields.",
+            "USDA/FAS identifies the Ministry of Agriculture, annual surveys, the National Remote Sensing Center and Field Crop Institute as contributors to national cereal estimates."
+          ]
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "tomato",
+        "hot_pepper",
+        "cucumber",
+        "watermelon",
+        "beans/cowpea",
+        "broilers",
+        "layers",
+        "cattle",
+        "goat",
+        "sheep"
+      ],
+      "remaining_gaps": [
+        "download the ONAGRI XLSX dataset on agricultural input and service prices and extract dated, unit-specific observations by product and region",
+        "obtain the Ministry of Agriculture's matched crop-specific harvested area, production and yield tables by governorate and season for wheat, barley, maize, rice, tomato, pepper, cucumber, watermelon and pulses",
+        "reconcile FAO's 2025 wheat and barley estimates with the USDA/FAS MY 2025/26 forecast and the final Tunisian harvest results; preserve crop-year and marketing-year distinctions",
+        "obtain official producer and wholesale price series for vegetables, pulses, rice, maize and livestock; keep farm-gate, collector, wholesale and retail prices separate",
+        "extract itemized farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, energy, land rent, harvest and transport costs by governorate and production system",
+        "obtain current livestock census, poultry production and species-specific enterprise budgets including feed, mortality, veterinary costs and sale prices",
+        "distinguish irrigated from rainfed cereal and horticultural production, and obtain at least three comparable seasons before deriving low, expected and high yield assumptions",
+        "do not activate Tunisia calculator data from national cereal totals or official cereal procurement prices alone"
+      ],
+      "extraction_status": "Tunisia now has a directly accessible official JORT 2026/27 cereal procurement schedule: base prices of TND 100/quintal for durum wheat and TND 80/quintal for common wheat, plus a TND 65/quintal intervention price for barley and triticale, with conditional early-delivery premiums. FAO's February 2026 brief estimates 2025 wheat at 1.25m tonnes and barley at 380,000 tonnes; USDA/FAS forecasts higher MY 2025/26 production (1.35m tonnes wheat and 500,000 tonnes barley) and reports seeded area, not a matching final harvested-area denominator. ONAGRI lists a downloadable April 2026 input/service-price XLSX, which remains to be extracted. No Tunisia calculator values are admitted."
     }
   ],
   "cross_country_sources": [
@@ -2930,6 +3107,7 @@
     }
   ],
   "next_steps": [
+    "For Tunisia, extract ONAGRI's April 2026 agricultural input/service-price XLSX; obtain matched Ministry crop harvested-area and production tables by governorate; reconcile FAO 2025 estimates with USDA/FAS MY 2025/26 forecasts and final national harvest results; then collect dated producer prices and itemized farm budgets before activation.",
     "For Morocco, extract the HCP 2026 Morocco-in-figures and original Excel yearbook tables by crop and province; reconcile the 2025/26 9.0m tonne government cereal estimate against FAO's 6.3m tonne forecast; obtain matching harvested area, 2026/27 ONICL terms, dated farm-gate prices and itemized enterprise costs before activation.",
     "For Algeria, obtain the 2024 Agricultural Census and current MADRP crop statistics by wilaya, extract matched crop-specific harvested area/output/yield by season, and obtain dated farm-gate prices plus itemized crop and livestock budgets; keep the October 2026 retail price bulletin separate from producer prices.",
     "For Egypt, extract the direct CAPMAS 2023/24 crop-area and plant-production XLSX by governorate and season; verify wheat, maize, paddy rice and tomato production against matched area and then obtain current farm-gate prices and itemized input budgets.",
