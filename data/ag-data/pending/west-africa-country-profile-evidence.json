@@ -1,0 +1,138 @@
+{
+  "title": "West Africa country profile evidence register",
+  "version": 1,
+  "status": "research_only_not_published_to_calculator",
+  "created_at": "2026-11-01",
+  "purpose": "Track authoritative country-level agricultural survey sources before any values are admitted into GoOrganicAfrica calculator profiles.",
+  "publication_rules": [
+    "Do not add a country to the active calculator dataset until its required commodity fields have been reviewed and validated.",
+    "Do not treat a country survey yield as a selling price or a complete farm budget.",
+    "Record commodity, production system, unit, geography, reference year, publication date, source URL, sampling uncertainty and any revision notice for every extracted value.",
+    "Use published aggregate tables unless the source explicitly authorizes the intended use of microdata.",
+    "Do not invent missing values. Leave unsupported fields for farmer entry or retain the clearly labelled Africa benchmark.",
+    "Do not change the calculator formula or the existing ten country profiles as part of this research package."
+  ],
+  "countries": [
+    {
+      "country_code": "LR",
+      "country_name": "Liberia",
+      "evidence_status": "primary_national_survey_identified_pending_revision_check_and_table_extraction",
+      "survey": {
+        "title": "Liberia Annual Agriculture Survey 2024",
+        "publisher": "Liberia Institute of Statistics and Geo-Information Services (LISGIS), with Ministry of Agriculture",
+        "reference_year": 2024,
+        "report_published": "2025-12-22",
+        "survey_period": "2024-08-30 to 2025-01-05 (regional collection waves)",
+        "coverage": "National and regional estimates; agricultural households",
+        "topics": [
+          "crop cultivation and harvested area",
+          "crop production and yield",
+          "crop losses",
+          "farm inputs",
+          "agricultural labour",
+          "livestock and poultry",
+          "farm income and productivity"
+        ],
+        "report_url": "https://lisgis.gov.lr/admin_area/surveys/pdf/202512223466300ILP_Report_12-17-2025_cleaned_final.pdf",
+        "microdata_catalog_url": "https://microdata.lisgislr.org/index.php/catalog/43",
+        "open_data_license_url": "https://lisgis.gov.lr/open-data-license",
+        "catalogue_url": "https://liberia.opendataforafrica.org/data#topic=Agriculture",
+        "known_revision_notice": {
+          "date": "2026-08",
+          "description": "LISGIS published an official notice stating that selected previously published survey tables and indicator values were corrected or revised.",
+          "verification_required": "Identify the affected tables and use the corrected release before extracting or publishing any affected figures.",
+          "notice_url": "https://update.lisgis.gov.lr/surveys.php?search=Annual+Agriculture"
+        },
+        "license_and_use": "The LISGIS open-data licence page lists the 2024 crop cultivation, crop loss, crop production/yield, inputs, labour and livestock/poultry aggregate datasets as CC BY 4.0. Confirm the licence for each selected table or download before redistribution.",
+        "extraction_status": "No numeric observations are admitted in this register yet. Previously surfaced yield snippets must be rechecked against the corrected source tables.",
+        "priority_commodities": [
+          "rice",
+          "cassava",
+          "maize",
+          "cucumber",
+          "hot_pepper",
+          "beans",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig"
+        ],
+        "remaining_gaps": [
+          "current farm-gate and market selling prices by location",
+          "verified seed and planting-material prices",
+          "current fertilizer and crop-protection costs",
+          "livestock purchase, feed, veterinary and mortality cost benchmarks",
+          "commodity-specific low/expected/high ranges and regional differentiation"
+        ]
+      }
+    },
+    {
+      "country_code": "SL",
+      "country_name": "Sierra Leone",
+      "evidence_status": "primary_national_survey_identified_pending_table_extraction_and_access_review",
+      "survey": {
+        "title": "Sierra Leone Annual Agricultural Survey 2024",
+        "publisher": "Statistics Sierra Leone and Ministry of Agriculture and Food Security, with FAO technical support",
+        "reference_year": 2024,
+        "public_use_dataset_version": "Version 2.3, April 2026",
+        "catalogue_last_modified": "2026-08-28",
+        "coverage": "National coverage except Western Urban district",
+        "topics": [
+          "crop production and yields",
+          "livestock",
+          "aquaculture and fisheries",
+          "forestry",
+          "input use",
+          "labour",
+          "land use",
+          "irrigation and energy",
+          "rice cultivation methods",
+          "production methods and environment"
+        ],
+        "national_catalogue_url": "https://microdata.statistics.sl/index.php/catalog/AG/?page=1&ps=15&repo=AG",
+        "world_bank_metadata_url": "https://microdata.worldbank.org/catalog/8596",
+        "fao_programme_url": "https://www.fao.org/in-action/agrisurvey/access-to-data/sierra-leone/en",
+        "report_url": "https://www.statistics.sl/images/StatisticsSL/Documents/2024-SLAAS-Report_V4.pdf",
+        "quality_notes": [
+          "The metadata reports sampling-error estimates for selected indicators.",
+          "The public-use dataset version was updated to reflect changes in input-use and input-detail rosters after the post-harvest visit.",
+          "The metadata states that a confidentiality declaration/access conditions apply to data files; review these conditions before any microdata use."
+        ],
+        "extraction_status": "No numeric observations are admitted in this register yet. Extract published aggregate tables first and record sampling errors where supplied.",
+        "priority_commodities": [
+          "rice",
+          "cassava",
+          "maize",
+          "beans",
+          "soybean",
+          "groundnut",
+          "hot_pepper",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig",
+          "fish"
+        ],
+        "remaining_gaps": [
+          "current farm-gate and market selling prices by location",
+          "verified seed and planting-material prices",
+          "current fertilizer and crop-protection costs",
+          "livestock purchase, feed, veterinary and mortality cost benchmarks",
+          "regional production-cost profiles"
+        ]
+      }
+    }
+  ],
+  "next_steps": [
+    "Resolve the LISGIS August 2026 correction notice against the Liberia 2024 survey tables.",
+    "Extract aggregate crop production, harvested area and yield observations for overlapping calculator commodities.",
+    "Extract input-use and labour evidence separately; do not convert adoption rates into monetary costs.",
+    "Extract Sierra Leone aggregate survey tables and retain published sampling-error indicators.",
+    "Cross-check national observations against FAOSTAT country crop-production, area and yield series.",
+    "Research current market prices, input prices and regional cost sources independently for each country.",
+    "Prepare country profiles only after source, unit, date, geographic coverage and uncertainty checks are complete.",
+    "Run the existing calculator validation and regression tests before any proposal to activate either country."
+  ]
+}
