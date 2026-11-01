@@ -16,7 +16,7 @@
     {
       "country_code": "GM",
       "country_name": "The Gambia",
-      "evidence_status": "FAO_2026_country_brief_and_historical_crop_data_leads_identified",
+      "evidence_status": "WTO_2025_ministry_source_crop_area_and_output_tables_extracted_yield_denominator_pending_2025_NASC_data_collection",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: The Gambia",
@@ -52,6 +52,121 @@
           "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
           "coverage": "1961-2024",
           "status": "cross-country crop series; underlying values may include national statistics and estimates"
+        },
+        {
+          "title": "Trade Policy Review: The Gambia, WT/TPR/G/482",
+          "publisher": "Government of The Gambia, World Trade Organization",
+          "url": "https://www.wto.org/english/news_e/news_docs/G482_e.pdf",
+          "publication_date": "2025-12-17",
+          "data_source_within_report": "Planning Services Unit, Department of Agriculture",
+          "reference_period": "Crop area and production series 2019-2024; cropping season 2024/2025",
+          "observations": [
+            {
+              "crop": "rice/paddy",
+              "area_cultivated_ha": 49811,
+              "production_mt": 52548,
+              "reference_year": 2024,
+              "arithmetic_production_per_cultivated_ha_mt": 1.055,
+              "status": "Official reported area and production; ratio is arithmetic only and must not be treated as harvested-area yield. Report does not establish matching harvested area."
+            },
+            {
+              "crop": "maize",
+              "area_cultivated_ha": 27688,
+              "production_mt": 25817,
+              "reference_year": 2024,
+              "arithmetic_production_per_cultivated_ha_mt": 0.932,
+              "status": "Official reported area and production; ratio is arithmetic only and must not be treated as harvested-area yield."
+            },
+            {
+              "crop": "groundnut",
+              "area_cultivated_ha": 51463,
+              "production_mt": 52642,
+              "reference_year": 2024,
+              "arithmetic_production_per_cultivated_ha_mt": 1.023,
+              "status": "Official reported area and production; ratio is arithmetic only and must not be treated as harvested-area yield. Groundnut is not one of the current 17 calculator profiles."
+            },
+            {
+              "crop": "cowpea",
+              "area_cultivated_ha": 3608,
+              "production_mt": 2881,
+              "reference_year": 2024,
+              "arithmetic_production_per_cultivated_ha_mt": 0.798,
+              "status": "Official reported area and production; direct crop identity candidate for Beans (Cowpea), but area denominator and varietal definitions require confirmation."
+            },
+            {
+              "crop": "rice/paddy",
+              "area_cultivated_ha": 49811,
+              "reference_year": 2024,
+              "status": "Upland rice 38,883 ha and swamp rice 10,928 ha in 2024; separate systems must be preserved."
+            },
+            {
+              "crop": "maize",
+              "production_mt": 25817,
+              "reference_year": 2024,
+              "status": "Official national production output table."
+            },
+            {
+              "crop": "total cereals",
+              "production_mt": 124372,
+              "reference_year": 2024,
+              "status": "Official aggregate cereal production; do not map to any individual crop."
+            },
+            {
+              "crop": "cowpea",
+              "production_mt": 2881,
+              "reference_year": 2024,
+              "status": "Official national output table."
+            }
+          ],
+          "quality_notes": [
+            "The report's cultivated-area table and agricultural output table are attributed to the Planning Services Unit, Department of Agriculture.",
+            "The report gives cultivated area, not a confirmed harvested-area denominator. The FEWS NET Gambia Data Book also warns that historical Ministry series report area sown and compute yield using area sown, with no harvested-area observations. Therefore all production/area ratios above are screening calculations only.",
+            "The report's 2024/2025 cropping-season narrative gives rice area 49,811 ha and total cultivated area 179,663 ha, while the historical series labels annual columns 2019-2024. Keep exact cropping-year definitions pending confirmation from the Department of Agriculture.",
+            "The 2024 rice area is split between upland 38,883 ha and swamp 10,928 ha. These production systems should not be blended without system-specific yield evidence.",
+            "2024/25 groundnut production declined about 10 percent, with flooding affecting Central River Region North, Central River Region South and Upper River Region."
+          ]
+        },
+        {
+          "title": "National Agricultural Sample Census / Extended National Agricultural Survey (E-NASS) 2025",
+          "publisher": "FAO AGRISurvey, Government of The Gambia, Ministry of Agriculture and Gambia Bureau of Statistics",
+          "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/gambia/en",
+          "reference_period": "2025 census/survey; implementation and data collection began in 2025",
+          "status": "priority_current_national_survey_source",
+          "note": "FAO reports that E-NASS 2025 household and community-level data collection began in September 2025. The wider 50x2030 programme plans three annual National Agricultural Survey rounds from 2026, including crop-cutting methods and rotating modules. Request the final E-NASS report, datasets and crop-cutting results when released; do not assume the data are already published."
+        },
+        {
+          "title": "FAO GIEWS Country Brief: The Gambia",
+          "publisher": "FAO",
+          "url": "https://cb.apps.fao.org/country.jsp?code=GMB",
+          "reference_date": "2026-09-22",
+          "observations": [
+            {
+              "indicator": "aggregate cereal production",
+              "value_mt": 135000,
+              "reference_year": 2025,
+              "status": "FAO estimate of national aggregate cereal output, about 20 percent above the five-year average; not crop-specific."
+            },
+            {
+              "indicator": "imported rice retail price",
+              "change_percent": "-10 to -15",
+              "period": "April-July 2026",
+              "status": "Price movement in monitored markets only; imported rice is not a farm-gate price for locally grown paddy."
+            },
+            {
+              "indicator": "locally produced maize and millet retail prices",
+              "change_percent": 0,
+              "period": "July 2026 year-on-year",
+              "status": "FAO reports broadly stable prices; absolute market quotes still required."
+            }
+          ],
+          "note": "The 2026 brief reports government maintenance of subsidized fertilizer prices at the previous year's level and distribution of free organic fertilizer and rice/maize seeds. Obtain actual district-level farmer purchase prices and subsidy eligibility before costing."
+        },
+        {
+          "title": "Gambia crop survey yield-plot questionnaire",
+          "publisher": "Ministry of Agriculture, Gambia; instrument archived by FAO",
+          "url": "https://www.fao.org/fileadmin/templates/ess/ess_test_folder/World_Census_Agriculture/WCA_2020/WCA_2020_new_doc/GAM_QUE_ENG_2020.pdf",
+          "status": "methodology_evidence_for_crop_cutting",
+          "note": "The agricultural census yield-plot questionnaire records crop-cut weights and post-drying weights and identifies rice, maize, millet, sorghum, groundnut and other crops. It demonstrates crop-cutting methodology but is a survey instrument, not a result dataset."
         }
       ],
       "priority_commodities": [
@@ -68,14 +183,15 @@
         "cattle"
       ],
       "remaining_gaps": [
-        "obtain latest Ministry of Agriculture crop survey tables by crop and administrative area",
-        "verify harvested area, not only area sown, and identify crop definitions",
-        "extract local producer and wholesale prices for locally produced rice, maize, groundnut and cowpea",
-        "obtain current seed, fertilizer, crop protection, machinery, irrigation, labour and transport costs",
-        "obtain livestock purchase, feed, veterinary, mortality and output-price budgets",
-        "confirm regional administrative options and production-system differences"
+        "obtain the final E-NASS 2025 / National Agricultural Sample Census report, microdata and crop-cutting estimates",
+        "confirm whether the WTO report's 2019-2024 cultivated-area and production columns align to the same agricultural season and whether areas are sown, cultivated or harvested",
+        "obtain crop-specific harvested area and crop-cut yield distributions, separately for upland and swamp rice",
+        "extract dated absolute producer/farm-gate prices and separate them from retail prices and imported-rice prices",
+        "verify the 2025 government groundnut floor price and subsidy purchase rules from NFSPMC for the exact season",
+        "obtain current farmer-paid seed, fertilizer, pesticide, labour, machinery, irrigation and transport costs by region",
+        "obtain livestock and poultry census and farm-budget data"
       ],
-      "extraction_status": "The 2025 aggregate cereal estimate and 2026 imported-rice price movement are useful context only. Historical crop data are too old and use area-sown denominators; no country-specific calculator values admitted."
+      "extraction_status": "The WTO 2025 trade policy review provides a useful 2019-2024 crop cultivated-area and production series sourced to the Department of Agriculture, including rice, maize, cowpea and groundnut. Ratios of production to cultivated area are not accepted as yields because harvested area and exact crop-year alignment are unresolved. FAO confirms the 2025 E-NASS/National Agricultural Sample Census data collection and future crop-cutting survey programme; obtain its released outputs before activating data. No calculator values admitted."
     },
     {
       "country_code": "MR",
@@ -539,6 +655,7 @@
     }
   ],
   "next_steps": [
+    "For The Gambia, request the final E-NASS 2025 crop-cutting outputs and clarify the WTO report's crop-year/area definitions; keep rice upland and swamp systems separate, and obtain dated producer prices and farm input costs.",
     "For Mauritania, validate the autumn 2025 and 2024 rice campaign series against the original Ministry statistical bulletin, keep the seasonal figures separate from annual totals, then collect regional rice input/pumping costs and farm-gate prices.",
     "For Mauritania, visually inspect the Trarza yearbook PDF pages containing rice area and production, then obtain national EMEA annual survey tables and livestock census data.",
     "For Mali, extract CPS/Ministry regional crop tables and reconcile the FAOSTAT 2024 maize, paddy rice and watermelon series against matching harvested area.",
