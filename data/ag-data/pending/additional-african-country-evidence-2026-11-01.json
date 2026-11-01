@@ -899,6 +899,132 @@
         "seek the Ministry/FAO annual crop assessment and prefecture-level crop-cutting or household survey outputs, including coverage and conflict-related exclusions"
       ],
       "extraction_status": "FAO GIEWS provides 2026 seasonal, flood and access context. A secondary portal reproduces 2024 FAOSTAT-sourced crop and livestock production values, including cassava, maize and rice, but these have not been checked against the underlying FAOSTAT item records, source flags or matching harvested areas. No calculator yields, farm-gate prices or production budgets are admitted."
+    },
+    {
+      "country_code": "MW",
+      "country_name": "Malawi",
+      "evidence_status": "official_APES_crop_production_series_and_2025_agriculture_census_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "survey": {
+        "title": "Agricultural Production Estimates Survey (APES); National Census of Agriculture 2025",
+        "publisher": "Ministry of Agriculture; National Statistical Office of Malawi",
+        "reference_periods": [
+          "2022/23 APES final round",
+          "2023/24 APES third-round estimates",
+          "2025 National Census of Agriculture"
+        ],
+        "source_urls": [
+          "https://www.nsomalawi.mw/news/national-census-of-agriculturenaca-2025",
+          "https://cms.nsomalawi.mw/api/download/230/Statistical_Year_Book_2023.pdf",
+          "https://finance.gov.mw/documents/uploads/2024-03/Annual%20Economic%20Report%202024.pdf",
+          "https://fews.net/southern-africa/malawi/food-security-outlook/october-2024",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=MWI",
+          "https://fpma.fao.org/"
+        ],
+        "coverage": "2025 NACA provides national, regional, Agricultural Development Division, district, urban and rural estimates; its published household report covers 29,648 smallholder farming households. APES provides annual crop production estimates.",
+        "source_observations": [
+          {
+            "crop": "maize",
+            "production_mt": 3509837,
+            "reference_year": "2022/23",
+            "source": "Ministry of Agriculture APES third-round estimates, reproduced in Malawi Annual Economic Report 2024",
+            "status": "national production estimate; obtain matching harvested area and yield distribution"
+          },
+          {
+            "crop": "rice",
+            "production_mt": 124344,
+            "reference_year": "2022/23",
+            "source": "Ministry of Agriculture APES third-round estimates, reproduced in Malawi Annual Economic Report 2024",
+            "status": "national production estimate; verify paddy basis and matching harvested area"
+          },
+          {
+            "crop": "beans",
+            "production_mt": 235089,
+            "reference_year": "2022/23",
+            "source": "Ministry of Agriculture APES third-round estimates, reproduced in Malawi Annual Economic Report 2024",
+            "status": "broad beans category; confirm species before mapping to Beans (Cowpea)"
+          },
+          {
+            "crop": "cowpea",
+            "production_mt": 56691,
+            "reference_year": "2022/23",
+            "source": "Ministry of Agriculture APES third-round estimates, reproduced in Malawi Annual Economic Report 2024",
+            "status": "species match candidate for Beans (Cowpea); obtain harvested area and regional yield distribution"
+          },
+          {
+            "crop": "soybean",
+            "production_mt": 235487,
+            "reference_year": "2022/23",
+            "source": "Ministry of Agriculture APES third-round estimates, reproduced in Malawi Annual Economic Report 2024",
+            "status": "production point; obtain matched area and cost data"
+          },
+          {
+            "crop": "maize",
+            "production_mt": 2712578,
+            "reference_year": "2023/24",
+            "source": "Ministry of Agriculture APES third-round estimate, reproduced by FEWS NET",
+            "status": "national estimate; down 22.7% from 2022/23; obtain district area/yield tables"
+          },
+          {
+            "crop": "rice",
+            "production_mt": 126981,
+            "reference_year": "2023/24",
+            "source": "Ministry of Agriculture APES third-round estimate, reproduced by FEWS NET",
+            "status": "national estimate; verify paddy/milled definition and matched area"
+          },
+          {
+            "crop": "groundnut",
+            "production_mt": 277591,
+            "reference_year": "2023/24",
+            "source": "Ministry of Agriculture APES third-round estimate, reproduced by FEWS NET",
+            "status": "no current groundnut calculator profile"
+          },
+          {
+            "crop": "maize",
+            "production_mt": 2859949,
+            "reference_year": "2024/25",
+            "source": "APES final estimate as reproduced by AgFin Atlas with FEWS NET/IPC references",
+            "status": "secondary compilation; verify against primary Ministry APES release before use"
+          }
+        ],
+        "quality_notes": [
+          "The 2025 NACA is a sample-based agricultural census and provides small-area structural estimates; it should not be confused with annual crop-cutting or APES production estimates.",
+          "The 2023/24 APES third-round table reports national production, not a complete crop-specific yield or cost profile.",
+          "Malawi's 2023 Annual Economic Report reproduces Ministry APES 2022/23 production estimates, including district Agricultural Development Division maize production.",
+          "The 2023/24 maize production estimate of 2,712,578 MT is 22.7% below the 2022/23 final estimate of 3,509,837 MT; this is a meaningful seasonal shift, not a stable yield benchmark.",
+          "FAO GIEWS reports substantial maize retail price increases during 2025; extract date-stamped market observations from FPMA rather than copying a national narrative as a calculator selling price.",
+          "Beans and cowpeas are separate APES categories. Only cowpea should be considered for the Beans (Cowpea) profile after checking the survey definition.",
+          "Do not treat national production totals as yields or as farm budgets."
+        ],
+        "market_price_source": {
+          "title": "FAO Food Price Monitoring and Analysis Tool",
+          "url": "https://fpma.fao.org/",
+          "status": "date_stamped_price_series_source_identified_extraction_pending",
+          "note": "Extract Malawi market observations by commodity, market, date, product form, grade, currency and unit. MAFECO describes the government National Agriculture Management Information System (NAMIS) market module, but indicates public online access is expected rather than confirming a currently available public series."
+        },
+        "priority_commodities": [
+          "maize",
+          "rice",
+          "beans",
+          "soybean",
+          "cassava",
+          "tomato",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig"
+        ],
+        "remaining_gaps": [
+          "download and extract 2025 NACA report tables for crop area, production systems, irrigation, labour, machinery and livestock by district and ADD",
+          "obtain 2024/25 and 2025/26 APES final crop-specific area, production and yield tables from the Ministry",
+          "extract multi-year district maize, rice, cowpea and soybean yield distributions and sampling uncertainty",
+          "obtain dated farm-gate and market prices for each supported crop, with market, grade, unit and currency",
+          "obtain seed, fertilizer, crop protection, labour, land preparation, irrigation, transport and mechanization cost schedules",
+          "obtain livestock purchase, feed, veterinary, mortality and output-price benchmarks",
+          "confirm species definitions for beans, cowpea and soybean varieties before mapping to calculator profiles"
+        ],
+        "extraction_status": "Official NSO 2025 National Census of Agriculture release, Ministry APES production series and FAO market-price monitoring sources identified. Production observations are research leads only; no country-specific calculator values are activated because matched area/yield distributions, dated farm-gate prices and farm-budget costs remain incomplete."
+      }
     }
   ],
   "cross_country_sources": [
@@ -919,6 +1045,7 @@
     }
   ],
   "next_steps": [
+    "For Malawi, extract 2025 NACA small-area tables and 2024/25–2025/26 APES crop area/yield series; reconcile cowpea and beans definitions, then obtain dated FPMA market prices and input/labour budgets.",
     "For Guinea-Bissau, obtain the 2025 agricultural-household listing final report and the 2026/27 integrated agricultural survey outputs; reconcile rice statistics against imports and cashew land-use changes before accepting yields.",
     "For Chad, export the INSEED-linked Agriculture archive for 2010-2023 and inspect provincial crop/area series, season definitions and historical survey coverage before selecting any crop values.",
     "For Central African Republic, retrieve the underlying 2024 FAOSTAT crop and livestock item records with source flags and matching harvested areas; then seek prefecture-level assessment and price evidence.",
