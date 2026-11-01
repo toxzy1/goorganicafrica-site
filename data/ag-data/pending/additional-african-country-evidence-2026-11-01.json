@@ -1025,6 +1025,228 @@
         ],
         "extraction_status": "Official NSO 2025 National Census of Agriculture release, Ministry APES production series and FAO market-price monitoring sources identified. Production observations are research leads only; no country-specific calculator values are activated because matched area/yield distributions, dated farm-gate prices and farm-budget costs remain incomplete."
       }
+    },
+    {
+      "country_code": "ZW",
+      "country_name": "Zimbabwe",
+      "evidence_status": "official_2024_25_post_harvest_survey_and_2026_market_price_evidence_added_area_yield_and_farm_budget_reconciliation_pending",
+      "survey": {
+        "title": "2024/25 Post-Harvest Survey; Crops, Livestock and Fisheries Assessments",
+        "publisher": "Zimbabwe National Statistics Agency (ZIMSTAT) and Ministry of Lands, Agriculture, Fisheries, Water and Rural Development",
+        "report_url": "https://www.zimstat.co.zw/wp-content/uploads/production/agriculture/2024_25_POST_HARVEST_SURVEY_REPORT_141025.pdf",
+        "reference_period": "2024/25 agricultural season; fieldwork 28 August to 5 September 2025",
+        "methodology": {
+          "selected_households": 58000,
+          "rural_provinces": 8,
+          "response_rate_percent": 93.2,
+          "design": "Follow-up survey of households in rural wards, with sector-specific systematic random sampling; large-scale commercial farms and irrigation schemes were enumerated. Face-to-face CAPI interviews.",
+          "reported_fields": [
+            "area harvested",
+            "total crop harvested",
+            "quantity consumed",
+            "quantity sold",
+            "other uses",
+            "seed used",
+            "cattle status"
+          ],
+          "quality_note": "The report states that area harvested was collected, but the extracted published tables reviewed here primarily report production totals and provincial/sector breakdowns; a crop-specific harvested-area table and weighted yield distributions still need to be obtained."
+        },
+        "observations": [
+          {
+            "crop": "maize",
+            "production_mt": 1819819,
+            "reference_season": "2024/25",
+            "status": "Official post-harvest estimate of actual crop produced; do not infer yield from planted-area figures."
+          },
+          {
+            "crop": "sorghum",
+            "production_mt": 288344,
+            "reference_season": "2024/25",
+            "status": "Official post-harvest production estimate."
+          },
+          {
+            "crop": "pearl millet",
+            "production_mt": 111399,
+            "reference_season": "2024/25",
+            "status": "Official post-harvest production estimate."
+          },
+          {
+            "crop": "finger millet",
+            "production_mt": 23376,
+            "reference_season": "2024/25",
+            "status": "Official post-harvest production estimate."
+          },
+          {
+            "crop": "cowpea",
+            "production_mt": 22078,
+            "reference_season": "2024/25",
+            "status": "Direct crop identity candidate for Beans (Cowpea); matched harvested area and variety definitions required."
+          },
+          {
+            "crop": "soybean",
+            "production_mt": 57750,
+            "reference_season": "2024/25",
+            "status": "Official total in Table 3.2 and Table 3.8; Table 3.7 appears to contain an inconsistent national total of 7,750 MT. Flag for ZIMSTAT clarification; do not silently choose the conflicting figure."
+          },
+          {
+            "crop": "sugar beans",
+            "production_mt": 30640,
+            "reference_season": "2024/25",
+            "status": "Separate crop category; do not map to Beans (Cowpea)."
+          },
+          {
+            "crop": "maize",
+            "quantity_sold_mt": 398899,
+            "quantity_in_stock_mt": 1064510,
+            "reference_season": "2024/25",
+            "status": "Post-harvest utilization; quantity sold and stocks are not farm-gate price observations."
+          },
+          {
+            "crop": "maize",
+            "production_mt": 2350000,
+            "reference_season": "2025/26",
+            "status": "CLAFA-2 estimate reported by FEWS NET in June 2026; assessment estimate, not final post-harvest result."
+          }
+        ],
+        "quality_notes": [
+          "The PHS reports 2,242,937 MT total cereals, comprising maize, sorghum, pearl millet and finger millet.",
+          "The survey reports provincial production totals and sector breakdowns, but production totals alone are not yields or profitability budgets.",
+          "Table 3.7's national soybean value (7,750 MT) conflicts with Table 3.2 (57,750 MT) and Table 3.8 (57,750 MT). Treat as a source-table inconsistency pending official clarification.",
+          "The 2024/25 PHS is a post-harvest survey and should be preferred to the earlier 2025 CLAFA forecast when describing actual 2024/25 production.",
+          "Zimbabwe's production varies strongly by agro-ecological zone; surplus-producing northern areas and drier southern/western deficit areas must not be collapsed into a single farm budget."
+        ]
+      },
+      "sources": [
+        {
+          "title": "2024/25 Post-Harvest Survey Report",
+          "publisher": "ZIMSTAT and Ministry of Lands, Agriculture, Fisheries, Water and Rural Development",
+          "url": "https://www.zimstat.co.zw/wp-content/uploads/production/agriculture/2024_25_POST_HARVEST_SURVEY_REPORT_141025.pdf",
+          "publication_date": "2025-09",
+          "status": "primary_official_post_harvest_survey",
+          "note": "Contains crop production totals, provincial and farm-sector production breakdowns, seed-use information, cattle ownership and condition, survey methodology and response rates."
+        },
+        {
+          "title": "Agriculture Statistics",
+          "publisher": "ZIMSTAT",
+          "url": "https://zimstat.co.zw/agriculture-statistics/",
+          "status": "official_data_index",
+          "note": "Lists the 2024/25 Post-Harvest Survey, 2025 first- and second-round Crops, Livestock and Fisheries reports, 2025 Food Balance Sheet and 2026 quarterly milk and meat reports."
+        },
+        {
+          "title": "2026 First Round Crops, Livestock and Fisheries Assessment (CLAFA-1)",
+          "publisher": "ZIMSTAT and Ministry of Agriculture",
+          "url": "https://www.agric.gov.zw/wordpress/wp-content/uploads/2026/03/2026-CLAFA-1-REPORT.pdf",
+          "reference_period": "2025/26 summer season",
+          "status": "official_current_season_area_and_livestock_assessment",
+          "note": "Reports 2025/26 planted maize area of 1,898,528 ha, compared with 1,822,904 ha in 2024/25; this is planted area, not harvested area or yield."
+        },
+        {
+          "title": "FEWS NET Zimbabwe Food Security Outlook, June 2026",
+          "publisher": "FEWS NET",
+          "url": "https://fews.net/southern-africa/zimbabwe/food-security-outlook/june-2026",
+          "publication_date": "2026-06",
+          "status": "secondary_current_season_assessment_crosscheck",
+          "note": "Reports the 2026 CLAFA-2 maize production estimate of 2.35 million MT and small-grain estimate around 390,000 MT; these are assessment estimates, not final harvest results."
+        },
+        {
+          "title": "FEWS NET Zimbabwe Food Security Outlook Update, August 2026",
+          "publisher": "FEWS NET",
+          "url": "https://fews.net/southern-africa/zimbabwe/food-security-outlook-update/august-2026",
+          "publication_date": "2026-08",
+          "status": "dated_market_price_and_market_access_evidence",
+          "observations": [
+            {
+              "commodity": "maize",
+              "price_usd_per_mt": 365,
+              "market": "Grain Marketing Board producer procurement",
+              "reference_date": "2026-08",
+              "status": "FEWS NET reports GMB buying price; confirm current GMB circular before calculator use."
+            },
+            {
+              "commodity": "maize",
+              "price_usd_per_kg_range": [
+                0.29,
+                0.34
+              ],
+              "market": "open-market retail in surplus-producing areas",
+              "reference_period": "August 2026",
+              "status": "Retail price range; not farm-gate price."
+            },
+            {
+              "commodity": "maize",
+              "price_usd_per_kg_range": [
+                0.46,
+                0.57
+              ],
+              "market": "open-market retail in deficit-producing areas",
+              "reference_period": "August 2026",
+              "status": "Retail price range; reflects local supply/transport constraints; not a national farm-gate price."
+            }
+          ],
+          "note": "FEWS NET reports local differences between surplus and deficit markets and high transport constraints; preserve market type and geography."
+        },
+        {
+          "title": "2026/27 GMB incentive producer prices",
+          "publisher": "Grain Marketing Board figures reported by The Herald",
+          "url": "https://www.heraldonline.co.zw/government-approves-grain-producer-prices/",
+          "publication_date": "2026-09-11",
+          "reference_period": "2026/27 marketing season",
+          "status": "official_GMB_price_announcement_reported_by_national_press",
+          "observations": [
+            {
+              "commodity": "maize and traditional grains",
+              "price_usd_per_mt": 432,
+              "status": "2026/27 incentive planning price; forward-season policy price, not observed 2024/25 realized price."
+            },
+            {
+              "commodity": "soybean",
+              "price_usd_per_mt": 660.95,
+              "status": "2026/27 incentive planning price; not an observed transaction price."
+            },
+            {
+              "commodity": "winter wheat",
+              "price_usd_per_mt": 531.93,
+              "status": "2026/27 producer floor price."
+            },
+            {
+              "commodity": "sunflower",
+              "price_usd_per_mt": 826.19,
+              "status": "2026/27 incentive planning price."
+            }
+          ]
+        },
+        {
+          "title": "Producer Price Index - Agriculture",
+          "publisher": "ZIMSTAT",
+          "url": "https://zimstat.co.zw/producer-price-index-agriculture/",
+          "status": "official_monthly_price_index_data_portal",
+          "note": "Lists monthly PPI-A reports and datasets in USD, ZWG and weighted series through 2026. Index movements are not absolute commodity prices; retrieve underlying datasets and product-level series where available."
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "beans/cowpea",
+        "soybean",
+        "tomato",
+        "watermelon",
+        "broilers",
+        "layers",
+        "goat",
+        "cattle",
+        "pig"
+      ],
+      "remaining_gaps": [
+        "obtain the detailed 2024/25 PHS crop-specific harvested-area tables and calculate yields only where crop, season and harvested-area definitions match",
+        "ask ZIMSTAT to clarify the soybean national total discrepancy between Table 3.7 (7,750 MT) and Tables 3.2/3.8 (57,750 MT)",
+        "obtain district/province yield distributions and separate irrigated winter production from rainfed summer production",
+        "retrieve monthly ZIMSTAT agricultural PPI datasets and extract commodity-level observations, preserving USD/ZWG/weighted series and base periods",
+        "obtain dated farm-gate prices for horticulture crops and livestock, not just cereal marketing-board prices",
+        "obtain seed, fertilizer, pesticide, labour, land preparation, irrigation, mechanization, electricity/diesel and transport costs by agro-ecological zone",
+        "obtain livestock purchase, feed, veterinary, mortality, liveweight and output-price data from ZIMSTAT quarterly milk/meat reports and livestock survey modules",
+        "verify 2025/26 and 2026/27 final post-harvest results when published; keep CLAFA estimates separate from final PHS observations"
+      ],
+      "extraction_status": "Zimbabwe has a strong official post-harvest survey and current market/producer-price leads. It provides national crop output and provincial/sector splits, but crop-specific harvested-area and weighted yield distributions still need extraction. A soybean total discrepancy requires clarification. No country-specific calculator yields or cost budgets are admitted."
     }
   ],
   "cross_country_sources": [
@@ -1059,6 +1281,7 @@
     "For Chad, obtain crop-specific provincial estimates and market/input prices by Sahelian and Sudanian production systems.",
     "For Central African Republic, prioritize prefecture-level crop assessment and accessible market evidence, explicitly recording conflict and displacement constraints.",
     "For all six countries, collect dated producer prices, input quotations, labour and livestock budgets before creating calculator profiles.",
-    "Keep all six countries research-only until their crop-specific evidence is reconciled and independently reviewed."
+    "Keep all six countries research-only until their crop-specific evidence is reconciled and independently reviewed.",
+    "For Zimbabwe, obtain crop-specific harvested area and weighted yield tables from the 2024/25 Post-Harvest Survey, resolve the soybean production total discrepancy, and extract commodity-level ZIMSTAT PPI datasets and farm-budget costs."
   ]
 }
