@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 29,
+    "countries_with_research_evidence_records": 30,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 15,
+    "countries_not_yet_researched_in_current_evidence_register": 14,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -188,9 +188,10 @@
     {
       "code": "DJ",
       "name": "Djibouti",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/djibouti-country-profile-evidence-2026-11-01.json",
+      "review_status": "World_Bank_2026_AgriConnect_USDA_FAS_Oct_2026_IPC_2026_FEWS_NET_weekly_market_price_dataset_FAO_GIEWS_and_ministry_indicators_recorded_current_farmgate_prices_and_enterprise_budgets_missing"
     },
     {
       "code": "EG",
