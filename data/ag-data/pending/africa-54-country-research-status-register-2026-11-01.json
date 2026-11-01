@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 38,
+    "countries_with_research_evidence_records": 39,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 6,
+    "countries_not_yet_researched_in_current_evidence_register": 5,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -356,9 +356,10 @@
     {
       "code": "CG",
       "name": "Republic of the Congo",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/republic-of-the-congo-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_GIEWS_June_2026_cassava_main_crop_maize_outlook_and_410000t_cereal_import_forecast_INS_2024_preliminary_census_and_2023_crop_survey_catalogue_FAOSTAT_2024_secondary_crop_series_INS_Feb_2026_city_consumer_price_indices_and_Soko_market_price_platform_leads_recorded_farmgate_prices_and_enterprise_budgets_missing"
     },
     {
       "code": "ST",
