@@ -1494,6 +1494,333 @@
         "keep 2025 mahangu floor price specific to Grade 1 and the 2025 marketing season; obtain any later season price notice before updating it"
       ],
       "extraction_status": "Namibia's NAB 2025 white maize report provides system-specific forecast yields (10 t/ha irrigated and 3.85 t/ha rainfed), expected tonnage and planted area, but uses subjective producer yield estimates rather than a crop-cut survey. NAB's signed 2025 mahangu notice gives a grade-specific farm-gate/collection-centre floor price of N$6.91/kg. FAO's August 2026 brief estimates 155,000 MT aggregate cereal production and notes improved livestock conditions, but communal cereal output remains below average and Zambezi suffered pest/flood losses. No Namibia calculator values are activated pending actual crop data and full cost budgets."
+    },
+    {
+      "country_code": "MZ",
+      "country_name": "Mozambique",
+      "evidence_status": "official_2024_crop_production_series_and_2023_integrated_agricultural_survey_and_2023_2024_agricultural_census_identified_crop_area_yield_and_budget_extraction_pending",
+      "sources": [
+        {
+          "title": "Statistical Yearbook 2024 — basic food crop and cash crop production tables",
+          "publisher": "Instituto Nacional de Estatística (INE), Mozambique; source tables attributed to Ministry of Agriculture and Rural Development",
+          "url": "https://ine.gov.mz/documents/20119/366649/ANUARIO%20ESTAT%C3%8DSTICO_%202024.pdf/b138faa5-ff0f-839c-6bd8-0c234c1b7a9b?download=true&t=1760443453700&version=1.0",
+          "reference_period": "2020–2024",
+          "status": "official_national_production_series_area_and_yield_tables_not_yet_extracted",
+          "observations": [
+            {
+              "crop": "maize",
+              "production_mt": 2318945,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.3; production total only, not a yield or enterprise budget."
+            },
+            {
+              "crop": "rice",
+              "production_mt": 169311,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.3; national rice output, paddy/milled definition must be confirmed before matching to a calculator commodity."
+            },
+            {
+              "crop": "sorghum",
+              "production_mt": 145192,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.3; production only."
+            },
+            {
+              "crop": "millet",
+              "production_mt": 17615,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.3; production only."
+            },
+            {
+              "crop": "peanut",
+              "production_mt": 242449,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.3; not interchangeable with cowpea/Beans (Cowpea) profile."
+            },
+            {
+              "crop": "cassava",
+              "production_mt": 8522790,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.3; production only."
+            },
+            {
+              "crop": "beans",
+              "production_mt": 628708,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.3; aggregate beans category, species composition not stated; do not map directly to cowpea."
+            },
+            {
+              "crop": "soybean",
+              "production_mt": 20957,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.4 is sunflower; soybean value not confirmed in this table and must not be inferred."
+            },
+            {
+              "crop": "raw cotton",
+              "production_mt": 24000,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.4; not a current calculator commodity."
+            },
+            {
+              "crop": "cashew nut",
+              "production_mt": 142250,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.4; cash crop context, not one of the current calculator profiles."
+            },
+            {
+              "crop": "sugar cane",
+              "production_mt": 1787640,
+              "reference_year": 2024,
+              "status": "INE yearbook table 3.1.4; not a current calculator commodity."
+            }
+          ],
+          "quality_notes": [
+            "The yearbook gives annual production totals for 2020–2024. Crop-specific harvested area, yield, regional distribution and seasonal definitions must be extracted from matching tables before any calculator value is accepted.",
+            "The 2024 rice series is reported as rice; confirm whether it is paddy or milled rice before using it.",
+            "The aggregate beans figure cannot be treated as cowpea because Mozambique reports several distinct bean types, including feijão nhemba (cowpea), feijão manteiga and feijão bóer.",
+            "The yearbook's 2024 banana value appears sharply lower than prior years; administrative-data definition or reporting break needs checking before use."
+          ]
+        },
+        {
+          "title": "Integrated Agricultural Survey 2023 (IAI 2023)",
+          "publisher": "Ministry of Agriculture and Rural Development (MADER), Directorate of Planning and Policies; Mozambique National Statistics Institute (INE)",
+          "url": "https://mozdata.ine.gov.mz/index.php/catalog/115",
+          "publication_date": "2025-07-01",
+          "reference_period": "2022/23 agricultural campaign",
+          "status": "official_probability_sample_survey_district_level_metadata_and_report_available",
+          "observations": [
+            {
+              "indicator": "agricultural holdings",
+              "value": 4500000,
+              "reference_year": 2023,
+              "status": "Approximate total reported in official survey summary; includes small, medium and large holdings."
+            },
+            {
+              "indicator": "smallholder holdings",
+              "value": 4383460,
+              "reference_year": 2023,
+              "status": "98.3% of approximately 4.5 million holdings, per MADER summary."
+            },
+            {
+              "indicator": "medium holdings",
+              "value": 74706,
+              "reference_year": 2023,
+              "status": "1.6% of holdings, per MADER summary."
+            },
+            {
+              "indicator": "large holdings",
+              "value": 1131,
+              "reference_year": 2023,
+              "status": "0.03% of holdings, per MADER summary."
+            },
+            {
+              "indicator": "cultivated area",
+              "value_ha": 6900000,
+              "reference_year": 2023,
+              "status": "Approximate cultivated area on small and medium holdings in MADER summary; not crop-specific harvested area."
+            },
+            {
+              "indicator": "holdings using chemical fertilizer",
+              "share_percent": 9.1,
+              "reference_year": 2023,
+              "status": "Survey summary share; not an input price or application rate."
+            },
+            {
+              "indicator": "holdings using irrigation",
+              "share_percent": 7.7,
+              "reference_year": 2023,
+              "status": "Survey summary share; not crop-specific irrigated area."
+            }
+          ],
+          "quality_notes": [
+            "The IAI 2023 was a probability-based agricultural survey designed to provide provincial, district and local evidence; it reports crop area using subjective measurement and respondent declarations, so this is not equivalent to crop-cutting measurement.",
+            "Survey coverage included 145 predominantly rural districts. Nine Cabo Delgado districts were excluded due to insecurity: Palma, Mueda, Nangade, Mocímboa da Praia, Muidumbe, Macomia, Meluco, Quissanga and Ibo.",
+            "The metadata labels the survey as IAI 2023 but the catalogue's geographic/campaign description refers to the 2022/23 agricultural campaign. Preserve the campaign period, not just the survey title.",
+            "The official catalogue indicates provincial, district and local collection and lists the integrated survey report and documentation. Obtain the report's crop-specific tables and inspect the denominator and production-system definitions before calculating yields."
+          ]
+        },
+        {
+          "title": "Final Results of the III Agricultural and Livestock Census (CAP 2023/2024)",
+          "publisher": "Instituto Nacional de Estatística (INE), in partnership with Ministry of Agriculture, Environment and Fisheries (MAAP)",
+          "url": "https://www.ine.gov.mz/web/guest/b/divulgacao-dos-resultados-finais-do-iii-censo-agro-pecuario-cap-2023-2024-?_com_liferay_blogs_web_portlet_BlogsPortlet_cur=4&_com_liferay_blogs_web_portlet_BlogsPortlet_delta=4&_com_liferay_blogs_web_portlet_BlogsPortlet_mvcRenderCommandName=%2Fblogs%2Fview&assetEntryId=433373&p_p_id=com_liferay_blogs_web_portlet_BlogsPortlet&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal&p_r_p_resetCur=false",
+          "reference_period": "2023/2024",
+          "status": "official_final_census_results_announced_report_and_excel_tables_linked",
+          "observations": [
+            {
+              "indicator": "agricultural holdings",
+              "value": 5200000,
+              "reference_year": "2023/2024",
+              "status": "Approximate total from final census results announcement; 99.9% are small and medium holdings."
+            },
+            {
+              "indicator": "total cultivated area",
+              "value_ha": 6500000,
+              "reference_year": "2023/2024",
+              "status": "More than 6.5 million hectares reported in census announcement; national aggregate, not crop-specific harvested area."
+            },
+            {
+              "indicator": "cattle herd",
+              "value": 2400000,
+              "reference_year": "2023/2024",
+              "status": "Approximate census count."
+            },
+            {
+              "indicator": "goat herd",
+              "value": 4200000,
+              "reference_year": "2023/2024",
+              "status": "Approximate census count."
+            },
+            {
+              "indicator": "local chicken flock",
+              "value": 16000000,
+              "reference_year": "2023/2024",
+              "status": "Approximate census count; not commercial broiler or layer enterprise data."
+            },
+            {
+              "indicator": "holdings headed by women",
+              "share_percent": 38,
+              "reference_year": "2023/2024",
+              "status": "Census announcement statistic; not a farm productivity indicator."
+            }
+          ],
+          "note": "INE's announcement links the full report and final Excel tables. The crop-specific district tables and livestock species/production details have not yet been extracted; the headline counts are contextual only."
+        },
+        {
+          "title": "Basic Indicators of Agriculture and Food 2025",
+          "publisher": "Instituto Nacional de Estatística (INE), Mozambique",
+          "url": "https://www.ine.gov.mz/web/guest/d/indicadores-basicos-de-agricultura-e-alimentacao-2025",
+          "publication_date": "2026-08-31",
+          "status": "official_current_publication_pdf_not_yet_extracted",
+          "note": "INE published the 2025 agriculture and food indicators on 31 August 2026. Obtain and extract the linked PDF to update the 2020–2024 production series, livestock, input-use and food-security context."
+        },
+        {
+          "title": "Agricultural Market Information System (SIMA)",
+          "publisher": "Ministry of Agriculture, Environment and Fisheries (MAAP), Mozambique",
+          "url": "https://www.agricultura.gov.mz/sima/",
+          "status": "official_weekly_multi_market_price_collection_methodology",
+          "note": "SIMA states it has collected prices since 1991 and monitors maize, rice, groundnuts, beans, horticulture and animal products weekly at producer, wholesale and retail levels, including transport costs and wholesale availability. Its public bulletin archive on the ministry page is currently mainly older editions; obtain current weekly Quente-Quente bulletins or a direct data extract before transcribing prices."
+        },
+        {
+          "title": "ICM provincial reference quotations, reported 6 October 2026",
+          "publisher": "Revista Terra, reproducing Instituto de Cereais de Moçambique (ICM) reference-price tables",
+          "url": "https://revistaterraonline.com/cotacoes-icm-por-provincia/",
+          "reference_date": "2026-10-06",
+          "status": "secondary_transcription_of_official_market_reference_prices_not_farm_gate_quotes",
+          "observations": [
+            {
+              "commodity": "maize",
+              "price_mzn_per_kg": 14.36,
+              "geography": "Zambézia",
+              "reference_period": "28 September–2 October 2026",
+              "market_level": "provincial reference market average",
+              "status": "Secondary transcription of ICM table; verify against original ICM bulletin and identify exact market/grade before use."
+            },
+            {
+              "commodity": "maize",
+              "price_mzn_per_kg": 19.32,
+              "geography": "Nampula",
+              "reference_period": "28 September–2 October 2026",
+              "market_level": "provincial reference market average",
+              "status": "Secondary transcription of ICM table; not a farm-gate price."
+            },
+            {
+              "commodity": "maize",
+              "price_mzn_per_kg": 22.08,
+              "geography": "Sofala",
+              "reference_period": "28 September–2 October 2026",
+              "market_level": "provincial reference market average",
+              "status": "Secondary transcription of ICM table; not a farm-gate price."
+            },
+            {
+              "commodity": "cowpea (feijão nhemba)",
+              "price_mzn_per_kg": 28.17,
+              "geography": "Zambézia",
+              "reference_period": "28 September–2 October 2026",
+              "market_level": "provincial reference market average",
+              "status": "Secondary transcription; verify source bulletin, grade and market level."
+            },
+            {
+              "commodity": "cowpea (feijão nhemba)",
+              "price_mzn_per_kg": 29.9,
+              "geography": "Nampula",
+              "reference_period": "28 September–2 October 2026",
+              "market_level": "provincial reference market average",
+              "status": "Secondary transcription; verify source bulletin, grade and market level."
+            }
+          ],
+          "quality_notes": [
+            "The secondary page explicitly says values reproduce ICM provincial average-price tables and that collection periods differ by province.",
+            "The Maputo period heading contains a date inconsistency and is not transcribed here.",
+            "These market reference quotations must not be relabelled as producer/farm-gate prices or used as current live prices without confirming the original ICM source."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Mozambique",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MOZ&lang=en",
+          "reference_date": "2025-10-06",
+          "status": "seasonal_outlook_and_aggregate_cereal_balance_context",
+          "observations": [
+            {
+              "crop": "maize",
+              "production_mt": 2590000,
+              "reference_year": 2025,
+              "status": "FAO estimate in the October 2025 brief; not a crop-cutting result."
+            },
+            {
+              "crop": "rice/paddy",
+              "production_mt": 285000,
+              "reference_year": 2025,
+              "status": "FAO estimate in the October 2025 brief; keep paddy definition distinct."
+            },
+            {
+              "crop": "sorghum",
+              "production_mt": 147000,
+              "reference_year": 2025,
+              "status": "FAO estimate; national aggregate crop output, not yield."
+            },
+            {
+              "indicator": "total cereal production",
+              "production_mt": 3048000,
+              "reference_year": 2025,
+              "status": "FAO estimate; aggregate cereals, do not distribute among individual crops."
+            }
+          ],
+          "quality_notes": [
+            "The brief discusses cyclone/flood and rainfall risks and insecurity in Cabo Delgado; local production shocks should be kept geographically specific.",
+            "FAO's 2025 estimate is not directly comparable with INE's 2024 official yearbook actual/administrative series without checking the reference season and estimation method."
+          ]
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "cassava",
+        "beans/cowpea",
+        "soybean",
+        "tomato",
+        "hot_pepper",
+        "watermelon",
+        "broilers",
+        "layers",
+        "goat",
+        "cattle",
+        "pig"
+      ],
+      "remaining_gaps": [
+        "download and extract the INE 2025 Basic Indicators of Agriculture and Food PDF",
+        "extract crop-specific cultivated and harvested area, production and yield tables from the 2023 IAI report and the final CAP 2023/2024 Excel tables at provincial and district level",
+        "check the 2023 IAI nine-district Cabo Delgado exclusion and ensure the national survey totals do not imply full coverage of inaccessible districts",
+        "separate rice paddy from milled rice and distinguish rainfed lowland, irrigated and upland systems where source tables allow",
+        "separate feijão nhemba (cowpea), feijão manteiga, feijão bóer and other beans; do not use aggregate beans output for the Beans (Cowpea) calculator profile",
+        "obtain original current SIMA/ICM weekly bulletins and extract dated producer/farm-gate prices separately from wholesale and retail prices",
+        "obtain current dated prices for tomato, pepper, cucumber, watermelon and other horticultural calculator commodities by province and market",
+        "obtain farmer-paid seed, fertilizer, pesticide, labour, machinery, irrigation, pumping, land preparation, transport and post-harvest costs by province and production system",
+        "obtain livestock production, liveweight, sale price, feed, veterinary, mortality and housing cost data; distinguish local chickens from commercial broilers and layers",
+        "resolve unusual or inconsistent annual administrative production values against the IAI and CAP survey outputs before using them as yield assumptions",
+        "do not publish country-specific calculator profiles until matched crop area/production definitions, regional yields, prices and enterprise budgets have been independently checked"
+      ],
+      "extraction_status": "Mozambique now has an official 2020–2024 crop production series, an integrated probability-sample agricultural survey for the 2022/23 campaign, final 2023/24 agricultural census results, and a current official market-price collection system. The 2024 yearbook supplies crop output totals but matching harvested area and crop-specific yield tables still need extraction. The 2023 IAI excludes nine insecure Cabo Delgado districts, and rice/bean taxonomy requires care. Recent provincial ICM quotations are available through a secondary transcription but are not farm-gate prices. No Mozambique calculator values are activated."
     }
   ],
   "cross_country_sources": [
@@ -1514,6 +1841,7 @@
     }
   ],
   "next_steps": [
+    "For Mozambique, extract the 2025 INE basic agriculture indicators PDF and the 2023/24 CAP final Excel tables; reconcile district crop production with matching cultivated/harvested areas, keep rice systems and cowpea/other beans separate, and obtain original SIMA/ICM producer prices plus itemized farm budgets before activation.",
     "For Malawi, extract 2025 NACA small-area tables and 2024/25–2025/26 APES crop area/yield series; reconcile cowpea and beans definitions, then obtain dated FPMA market prices and input/labour budgets.",
     "For Guinea-Bissau, obtain the 2025 agricultural-household listing final report and the 2026/27 integrated agricultural survey outputs; reconcile rice statistics against imports and cashew land-use changes before accepting yields.",
     "For Chad, export the INSEED-linked Agriculture archive for 2010-2023 and inspect provincial crop/area series, season definitions and historical survey coverage before selecting any crop values.",
