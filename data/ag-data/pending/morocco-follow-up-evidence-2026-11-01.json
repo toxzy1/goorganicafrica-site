@@ -295,6 +295,121 @@
         "The paper reports grain yields from 4 to 50 quintals/ha across farms; retain the range and context rather than using its upper bound as a default yield.",
         "The study is useful for a wheat enterprise budget structure and local production coefficients, but current seed, fertilizer, labour, machinery and irrigation tariffs still require dated invoices or official price schedules."
       ]
+    },
+    {
+      "title": "Campagne agricole 2026/2027 : optimisme mesuré dans le monde rural, les fellahs espèrent une année pluvieuse",
+      "publisher": "Finances News Hebdo",
+      "url": "https://fnh.ma/articles/campagne-agricole-2026-2027-optimisme-monde-rural-pluies",
+      "publication_date": "2026-10-02",
+      "reference_period": "Morocco 2026/27 cereal campaign input market at season start",
+      "status": "season_start_market_indications_not_verified_farmer_invoices",
+      "observations": [
+        {
+          "commodity": "bread_wheat_seed",
+          "indicative_price_mad_per_quintal": 400,
+          "status": "Reported average market price at 2026/27 season start; variety, certification class, subsidy and delivery location are unspecified."
+        },
+        {
+          "commodity": "barley_seed",
+          "indicative_price_mad_per_quintal": 400,
+          "status": "Reported average market price at 2026/27 season start; verify seed class and supplier invoice."
+        },
+        {
+          "commodity": "durum_wheat_seed",
+          "indicative_price_mad_per_quintal_range": [
+            400,
+            450
+          ],
+          "status": "Reported market price range at 2026/27 season start; not a national official price schedule."
+        },
+        {
+          "indicator": "certified_seed_mobilization_target_quintals",
+          "value": 1000000,
+          "status": "Government expected to mobilize more than one million quintals of certified seed; availability and price vary by variety and region."
+        },
+        {
+          "indicator": "phosphate_fertilizer_market_supply_tonnes",
+          "lower_bound": 600000,
+          "status": "Article reports more than 600,000 tonnes of phosphate fertilizers entering the market; supply context, not a per-hectare application or farm price."
+        }
+      ],
+      "quality_notes": [
+        "Prices are reported market indications in a trade publication, not verified farmer invoices or a government farm-input price list.",
+        "Do not apply the same price to certified and ordinary seed, all varieties, or all regions without supplier quotations.",
+        "Certified seed availability was reported as uneven for some varieties and regions.",
+        "Use as a dated 2026/27 seed-market cross-check only; seek supplier invoices and any applicable subsidy schedule before setting calculator defaults."
+      ]
+    },
+    {
+      "title": "Morocco’s wheat seed system and its impact on the realization of genetic progress",
+      "publisher": "Food Security (Springer); authors affiliated with INRA, SONACOS, Mohammed V University and ICARDA",
+      "url": "https://doi.org/10.1007/s12571-026-01688-z",
+      "publication_date": "2026-10",
+      "reference_period": "Review of Morocco's wheat seed system and farm-level realization of genetic gains",
+      "status": "peer_reviewed_seed_system_review_context_not_crop_budget",
+      "observations": [
+        {
+          "commodity": "wheat",
+          "breeding_program_yield_gain_kg_per_ha_per_year": 59,
+          "status": "Review reports breeding-program yield gains of approximately 59 kg/ha/year."
+        },
+        {
+          "commodity": "wheat",
+          "farm_field_realization_of_genetic_gain_percent": 31,
+          "status": "Review estimates about 31% of breeding gains are realized in farmers' fields; not an individual farm yield forecast."
+        },
+        {
+          "indicator": "wheat_varietal_turnover_rate_per_year",
+          "value": 0.045,
+          "status": "Review estimate of slow varietal turnover."
+        },
+        {
+          "indicator": "wheat_seed_replacement_rate_percent",
+          "value": 35,
+          "status": "Review estimates seed replacement at approximately 35%."
+        },
+        {
+          "indicator": "wheat_varietal_adoption_lag_years",
+          "range": [
+            10,
+            12
+          ],
+          "status": "Review reports a 10–12 year adoption lag."
+        }
+      ],
+      "quality_notes": [
+        "Peer-reviewed systems review, not a farm-level production budget or price survey.",
+        "Useful context for identifying variety, seed class, seed age and extension access when recording yield assumptions.",
+        "Do not apply breeding gain directly to farmer yield estimates; the review says only a portion is realized in farmers' fields.",
+        "Figures are from the indexed abstract; verify against full text when obtained."
+      ]
+    },
+    {
+      "title": "FAO GIEWS Country Brief: Morocco",
+      "publisher": "FAO Global Information and Early Warning System",
+      "url": "https://cb.apps.fao.org/country.jsp?code=MAR&lang=en",
+      "publication_date": "2026-07-08",
+      "reference_period": "2026 cereal harvest and 2026/27 wheat marketing year",
+      "status": "official_international_cereal_balance_forecast_not_farm_budget",
+      "observations": [
+        {
+          "commodity": "cereals",
+          "production_forecast_mt": 6300000,
+          "campaign": "2026",
+          "status": "FAO forecast for overall cereal production, about 16% above the five-year average."
+        },
+        {
+          "commodity": "wheat",
+          "import_requirement_forecast_mt": 5000000,
+          "marketing_year": "2026/27",
+          "status": "FAO forecast of wheat import requirements, about 15% below the five-year average."
+        }
+      ],
+      "quality_notes": [
+        "FAO's 6.3 million tonne forecast differs from the Moroccan government/industry 9 million tonne cereal estimate reported elsewhere for the 2025/26 campaign; retain source dates, definitions and methods rather than averaging.",
+        "National cereal balance forecasts cannot substitute for crop-specific farm yields, input costs or producer prices.",
+        "Use for national production and trade context only, not calculator enterprise revenue."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -307,7 +422,9 @@
     "Obtain the full numeric tables or underlying survey from the approximately 20-farm INRA Agadir/Souss-Massa greenhouse tomato study; its landing page confirms farm-level budget methodology but does not expose itemized values.",
     "Obtain 2026/27 producer invoices and farm accounts from multiple Souss-Massa greenhouse and open-field tomato systems; distinguish seasonal operating cost from depreciation, packing, freight and export compliance.",
     "Obtain producer settlement slips showing actual net soft-wheat receipts under the 2026 ONICL scheme after grade adjustments, negotiated bonuses/deductions, transport and intermediary charges.",
-    "For Saïss wheat, obtain current 2026/27 invoices and farmer accounts to update the 2021/22 survey coefficients and programme-budget unit costs; separately validate irrigated and rainfed production systems."
+    "For Saïss wheat, obtain current 2026/27 invoices and farmer accounts to update the 2021/22 survey coefficients and programme-budget unit costs; separately validate irrigated and rainfed production systems.",
+    "Obtain the 2026/27 official SONACOS certified-seed price list and subsidy circular by variety, class and region; cross-check reported MAD 400/quintal bread-wheat/barley and MAD 400–450/quintal durum-wheat market indications against invoices.",
+    "Obtain the full text of the 2026 wheat seed-system review and local varietal performance data to connect seed replacement and varietal choice with farm-level yields without assuming national genetic-gain figures apply uniformly."
   ],
-  "conclusion": "Morocco remains research-only. The evidence base now includes a 50-farmer Saïss wheat survey (production practices and 2021/22 yields) plus partial itemized costs from a supplemental-irrigation programme budget; historical Souss-Massa greenhouse tomato producer interviews; an INRA-affiliated tomato farm-survey methodology; October 2026 sector-reported tomato cost/yield stress; and the 2026 soft-wheat campaign reference terms. The wheat cost lines are useful historical regional benchmarks, not current national costs. No crop has a complete, current, nationally representative budget and no calculator data are activated."
+  "conclusion": "Morocco remains research-only. New evidence adds 2026/27 season-start seed market indications (about MAD 400/quintal for bread wheat and barley and MAD 400–450/quintal for durum wheat, pending invoice verification), a peer-reviewed 2026 review of weak realization of wheat genetic gains at farm level, and FAO's July 2026 cereal production and wheat-import forecasts. These complement the 50-farmer Saïss wheat survey and historical Souss tomato producer evidence. They do not yet form a current, complete, nationally representative enterprise budget; no calculator data are activated."
 }
