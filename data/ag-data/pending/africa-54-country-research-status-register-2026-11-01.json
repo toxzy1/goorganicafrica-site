@@ -1,0 +1,428 @@
+{
+  "title": "GoOrganicAfrica 54-country agricultural research status register",
+  "version": 1,
+  "created_at": "2026-11-01",
+  "status": "audit_register_research_only_not_a_calculator_data_file",
+  "purpose": "Single deduplicated index of all countries in the canonical calculator country registry, separating research-only evidence files from existing active calculator profiles and countries with no research evidence file in the current programme.",
+  "counting_rules": [
+    "Count unique ISO alpha-2 country codes, not files; Morocco follow-up evidence is a second file for the same country.",
+    "A research_evidence_record_present entry means a country-specific research evidence file exists; it does not mean the country is validated or calculator-ready.",
+    "Existing active calculator profiles are listed separately and require their own source, date and formula-scope audit; this register does not certify them as current.",
+    "Countries marked not_yet_researched have no country-specific pending evidence file in this research programme.",
+    "Do not activate any country or alter calculator formulas based on this register."
+  ],
+  "summary": {
+    "total_registry_countries": 54,
+    "countries_with_research_evidence_records": 27,
+    "existing_active_calculator_profiles_without_these_research_files": 10,
+    "countries_not_yet_researched_in_current_evidence_register": 17,
+    "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
+  },
+  "countries": [
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "classification": "existing_calculator_profile_requires_separate_source_freshness_audit",
+      "calculator_status": "active",
+      "evidence_file": null
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_2025_cereal_estimates_and_2026_market_retail_bulletins_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_ICAPP_2023_2024_and_2024_2025_sample_survey_results_and_MINAGRIF_2024_2025_crop_area_bulletin_identified_reference_prices_2025_2026_available_detailed_tables_and_farm_budgets_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "official_statistics_sources_identified_selected_2023_2024_observations_pending_table_level_extraction",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_2024_2025_cereal_area_and_total_output_sources_identified_crop_specific_yields_and_discrepant_cereal_totals_need_reconciliation",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "official_cereal_and_market_sources_identified_crop_level_series_extraction_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/burundi-country-profile-evidence-2026-11-01.json",
+      "review_status": "research_only_record_added",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/cabo-verde-country-profile-evidence-2026-11-01.json",
+      "review_status": "research_only_record_added",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "FAO_2026_seasonal_context_and_secondary_FAOSTAT_2024_crop_series_lead_identified_prefecture_budget_evidence_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "FAO_2026_outlook_and_FEWS_NET_2010_2023_crop_archive_methodology_identified_current_crop_specific_extract_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "official_2024_crop_statistics_identified_yield_and_price_table_extraction_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_CAPMAS_2024_crop_and_livestock_statistics_and_2025_crop_area_bulletin_identified_crop_specific_yields_and_cost_series_extraction_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "WTO_2025_ministry_source_crop_area_and_output_tables_extracted_yield_denominator_pending_2025_NASC_data_collection",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "external_official_estimates_source_identified_country_level_national_validation_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "2025_FAO_50x2030_agricultural_household_listing_completed_survey_programme_underway_historical_rice_series_quality_concerns",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "corrected_LAAS_2024_report_confirmed_available_original_Table_10_and_cost_wage_table_numbering_and_yield_discrepancies_require_reextraction",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_APES_crop_production_series_and_2025_agriculture_census_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "FAO_catalogued_EAC_2023_2024_sample_survey_and_USDA_rice_price_production_crosschecks_identified",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_ministry_reported_autumn_2025_rice_production_area_and_yield_added_full_budget_evidence_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/morocco-follow-up-evidence-2026-11-01.json",
+      "review_status": "research_only_record_added",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_2024_crop_production_series_and_2023_integrated_agricultural_survey_and_2023_2024_agricultural_census_identified_crop_area_yield_and_budget_extraction_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_NAB_2025_white_maize_production_forecast_with_irrigated_and_rainfed_yields_and_2025_mahangu_floor_price_added_2026_cereal_outlook_identified_agricultural_census_data_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "official_statistics_yearbook_and_regional_crop_series_identified_table_level_verification_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "CG",
+      "name": "Republic of the Congo",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "official_national_annual_agricultural_survey_2023_2024_identified_extraction_and_cost_table_review_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "2025_MAFS_official_crop_cutting_report_extracted_national_and_ecology_yields_but_national_rice_yield_output_area_ratio_and_district_text_inconsistencies_need_clarification",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "classification": "not_yet_researched_in_current_evidence_register",
+      "calculator_status": "directory_only_not_active",
+      "evidence_file": null
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "review_status": "official_agricultural_statistics_and_market_information_portal_identified_dynamic_data_extraction_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_2026_2027_cereal_producer_price_schedule_and_recent_cereal_estimates_added_crop_budget_evidence_pending",
+      "calculator_status": "directory_only_not_active"
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "classification": "research_evidence_record_present",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "review_status": "official_2024_25_post_harvest_survey_and_2026_market_price_evidence_added_area_yield_and_farm_budget_reconciliation_pending",
+      "calculator_status": "directory_only_not_active"
+    }
+  ]
+}
