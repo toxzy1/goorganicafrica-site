@@ -80,7 +80,9 @@
             "harvested_area_ha": 139707,
             "production_mt": 201074,
             "reported_yield_mt_per_ha": 2,
-            "calculator_match": "rice"
+            "calculator_match": "rice",
+            "recalculated_mt_per_ha_from_harvested_area": 1.439,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "cassava",
@@ -89,7 +91,9 @@
             "production_mt": 14591,
             "reported_yield_mt_per_ha": 1,
             "calculator_match": "cassava",
-            "caution": "The report says only 28.3% of cassava households harvested during the survey period; yield is timing-specific and may understate annual output."
+            "caution": "The report says only 28.3% of cassava households harvested during the survey period; yield is timing-specific and may understate annual output.",
+            "recalculated_mt_per_ha_from_harvested_area": 0.723,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "maize",
@@ -97,7 +101,9 @@
             "harvested_area_ha": 3438,
             "production_mt": 2937,
             "reported_yield_mt_per_ha": 1.5,
-            "calculator_match": "maize"
+            "calculator_match": "maize",
+            "recalculated_mt_per_ha_from_harvested_area": 0.854,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "beans",
@@ -106,7 +112,9 @@
             "production_mt": 208,
             "reported_yield_mt_per_ha": 0.8,
             "calculator_match": null,
-            "caution": "Crop type is reported as beans; do not assume this is cowpea without confirming the species."
+            "caution": "Crop type is reported as beans; do not assume this is cowpea without confirming the species.",
+            "recalculated_mt_per_ha_from_harvested_area": 0.48,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "cucumber",
@@ -114,7 +122,9 @@
             "harvested_area_ha": 1053,
             "production_mt": 1638,
             "reported_yield_mt_per_ha": 2.7,
-            "calculator_match": "cucumber"
+            "calculator_match": "cucumber",
+            "recalculated_mt_per_ha_from_harvested_area": 1.556,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "pepper",
@@ -123,7 +133,9 @@
             "production_mt": 1731,
             "reported_yield_mt_per_ha": 0.4,
             "calculator_match": "hot_pepper",
-            "caution": "Pepper type is not specified as Habanero or another particular variety; planted area has CV 46.44%, so treat the observation as low confidence."
+            "caution": "Pepper type is not specified as Habanero or another particular variety; planted area has CV 46.44%, so treat the observation as low confidence.",
+            "recalculated_mt_per_ha_from_harvested_area": 0.339,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "sweet potatoes",
@@ -132,7 +144,9 @@
             "production_mt": 383,
             "reported_yield_mt_per_ha": 0.5,
             "calculator_match": null,
-            "caution": "Harvested area and production are flagged with high sampling uncertainty in the report."
+            "caution": "Harvested area and production are flagged with high sampling uncertainty in the report.",
+            "recalculated_mt_per_ha_from_harvested_area": 0.511,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "plantain",
@@ -140,7 +154,9 @@
             "harvested_area_ha": 3145,
             "production_mt": 3388,
             "reported_yield_mt_per_ha": 2.1,
-            "calculator_match": null
+            "calculator_match": null,
+            "recalculated_mt_per_ha_from_harvested_area": 1.077,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "bitterballs",
@@ -148,7 +164,9 @@
             "harvested_area_ha": 3918,
             "production_mt": 1248,
             "reported_yield_mt_per_ha": 0.5,
-            "calculator_match": null
+            "calculator_match": null,
+            "recalculated_mt_per_ha_from_harvested_area": 0.319,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "eggplant",
@@ -157,7 +175,9 @@
             "production_mt": 411,
             "reported_yield_mt_per_ha": 1.1,
             "calculator_match": null,
-            "caution": "Harvested area and production are flagged with high sampling uncertainty in the report."
+            "caution": "Harvested area and production are flagged with high sampling uncertainty in the report.",
+            "recalculated_mt_per_ha_from_harvested_area": 0.958,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "okra",
@@ -166,7 +186,9 @@
             "production_mt": 1385,
             "reported_yield_mt_per_ha": 0.6,
             "calculator_match": null,
-            "caution": "Production is flagged with high sampling uncertainty in the report."
+            "caution": "Production is flagged with high sampling uncertainty in the report.",
+            "recalculated_mt_per_ha_from_harvested_area": 0.469,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "sugar cane",
@@ -174,7 +196,9 @@
             "harvested_area_ha": 8089,
             "production_mt": 15708,
             "reported_yield_mt_per_ha": 2.7,
-            "calculator_match": null
+            "calculator_match": null,
+            "recalculated_mt_per_ha_from_harvested_area": 1.942,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "palm oil",
@@ -182,7 +206,9 @@
             "harvested_area_ha": 10260,
             "production_mt": 8017,
             "reported_yield_mt_per_ha": 1.5,
-            "calculator_match": null
+            "calculator_match": null,
+            "recalculated_mt_per_ha_from_harvested_area": 0.781,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "cocoa",
@@ -190,7 +216,9 @@
             "harvested_area_ha": 33457,
             "production_mt": 2013,
             "reported_yield_mt_per_ha": 0.1,
-            "calculator_match": null
+            "calculator_match": null,
+            "recalculated_mt_per_ha_from_harvested_area": 0.06,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "rubber",
@@ -199,7 +227,9 @@
             "production_mt": 14004,
             "reported_yield_mt_per_ha": 0.6,
             "calculator_match": null,
-            "caution": "Planted and harvested area are flagged with high sampling uncertainty in the report."
+            "caution": "Planted and harvested area are flagged with high sampling uncertainty in the report.",
+            "recalculated_mt_per_ha_from_harvested_area": 0.225,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           },
           {
             "crop": "coffee",
@@ -207,7 +237,9 @@
             "harvested_area_ha": 3677,
             "production_mt": 426,
             "reported_yield_mt_per_ha": 0.2,
-            "calculator_match": null
+            "calculator_match": null,
+            "recalculated_mt_per_ha_from_harvested_area": 0.116,
+            "yield_validation": "reported_yield_does_not_reconcile_to_production_divided_by_harvested_area"
           }
         ],
         "provisional_labour_costs_on_hold": {
@@ -216,47 +248,41 @@
           "national_average_daily_hired_crop_labour": {
             "men": 380.1,
             "women": 327.6,
-            "children": 247.4
+            "children": null
           },
           "regional_daily_wage_by_gender": [
             {
               "region": "Southeastern A",
               "men": 464.8,
-              "women": 441.3,
-              "children": 280.2
+              "women": 441.3
             },
             {
               "region": "Southeastern B",
               "men": 476.4,
-              "women": 451.6,
-              "children": null
+              "women": 451.6
             },
             {
               "region": "North Central",
               "men": 322.6,
-              "women": 290.1,
-              "children": 234.1
+              "women": 290.1
             },
             {
               "region": "North Western",
               "men": 450.4,
-              "women": 394.1,
-              "children": null
+              "women": 394.1
             },
             {
               "region": "Montserrado",
               "men": 543.5,
-              "women": 496,
-              "children": null
+              "women": 496
             },
             {
               "region": "South Central",
               "men": 366,
-              "women": 351.2,
-              "children": null
+              "women": 351.2
             }
           ],
-          "note": "These are reported daily wage observations, not per-hectare labour budgets. Dashes in the source table are withheld values, represented as null. All values remain on hold pending LISGIS erratum reconciliation."
+          "note": "These are reported daily wage observations, not per-hectare labour budgets. Dashes in the source table are withheld values, represented as null. All values remain on hold pending LISGIS erratum reconciliation. Child labour amounts are intentionally not carried into calculator costing assumptions."
         },
         "other_production_cost_observations_on_hold": [
           {
@@ -301,7 +327,8 @@
           "The report flags pepper planted area, rubber planted/harvested area, sweet-potato harvested area/production, eggplant harvested area/production and okra production as high-uncertainty indicators (CV > 33% or SE > 17.5%).",
           "Cassava yield is timing-specific: only 28.3% of cassava households reported harvesting during the survey reference period, and the report warns that annual output may be understated.",
           "A single national yield observation is not a low/expected/high calculator range.",
-          "Daily labour and other service-payment averages cannot be converted into per-hectare budgets without activity duration, worker counts and farm-system assumptions."
+          "Daily labour and other service-payment averages cannot be converted into per-hectare budgets without activity duration, worker counts and farm-system assumptions.",
+          "Arithmetic review found that the report's published yield values do not consistently reconcile with harvested quantity divided by harvested area (for example, rice: 201,074 Mt / 139,707 ha = about 1.439 Mt/ha, while the table reports 2.0 Mt/ha). Do not use the published yield column or the recalculated ratio until LISGIS confirms the correct yield denominator and resolves the August 2026 erratum."
         ]
       }
     },
