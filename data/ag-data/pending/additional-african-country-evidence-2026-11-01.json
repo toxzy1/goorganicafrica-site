@@ -2042,6 +2042,237 @@
         "do not activate calculator profiles until crop-specific yield distributions, dated prices and complete enterprise budgets are checked"
       ],
       "extraction_status": "Botswana has an official annual agricultural statistics programme and a strong BAMB producer-price information channel. Ministry reporting provides 2024/25 total cereal output and maize/sorghum planted areas, but two official government publications report conflicting cereal totals (117,228.42 versus 137,876.84 MT). Crop-specific harvested area/yields and current cost budgets remain unextracted. Historical livestock data are sector-specific and dated. No Botswana calculator values are activated."
+    },
+    {
+      "country_code": "AO",
+      "country_name": "Angola",
+      "evidence_status": "official_ICAPP_2023_2024_and_2024_2025_sample_survey_results_and_MINAGRIF_2024_2025_crop_area_bulletin_identified_reference_prices_2025_2026_available_detailed_tables_and_farm_budgets_pending",
+      "sources": [
+        {
+          "title": "Principais Resultados do Inquérito Contínuo Agro-Pecuário e Pescas (ICAPP) 2024/2025",
+          "publisher": "Instituto Nacional de Estatística (INE), Angola",
+          "url": "https://ine.gov.ao/publicacoes/detalhes/NTM0NzU%3D",
+          "publication_date": "2026-05",
+          "reference_period": "2024/2025 agricultural campaign",
+          "status": "official_sample_survey_summary_and_downloadable_excel_tables",
+          "methodology": "ICAPP is a sample survey of household, small, medium and large agricultural holdings. The official summary says it covers plots/holdings, crops, sown and harvested area by crop, crop production by province, agricultural practices, labour, livestock, fisheries and honey. The production estimate combines the 2019/20 RAPP holding distribution by crop with productivity coefficients obtained from ICAPP; this estimation method must be preserved when interpreting totals.",
+          "observations": [
+            {
+              "indicator": "crop-specific sown area",
+              "reference_period": "2024/2025",
+              "status": "Official bulletin states tables cover sown area by crop; numerical crop tables need extraction from linked Excel."
+            },
+            {
+              "indicator": "crop-specific harvested area",
+              "reference_period": "2024/2025",
+              "status": "Official bulletin states tables cover harvested area by crop; numerical crop tables need extraction from linked Excel."
+            },
+            {
+              "indicator": "crop production by province",
+              "reference_period": "2024/2025",
+              "status": "Official bulletin states provincial crop production is included; province-level numerical tables need extraction."
+            },
+            {
+              "indicator": "farm economic information",
+              "reference_period": "2024/2025",
+              "status": "Survey includes economic information on agricultural holdings; detailed cost and revenue variables need extraction and unit validation."
+            },
+            {
+              "indicator": "livestock production",
+              "reference_period": "2024/2025",
+              "status": "Official bulletin includes livestock production; species and output tables need extraction."
+            }
+          ],
+          "quality_notes": [
+            "This is the strongest current source identified for Angola: an official continuous agricultural sample survey with crop sown/harvested areas and provincial production.",
+            "The methodology uses RAPP 2019/20 crop distribution combined with ICAPP productivity coefficients. Do not describe every production total as a direct census count or crop-cut estimate.",
+            "The source page links an Excel publication; obtain the spreadsheet and inspect table definitions, sampling weights, crop-season definitions, province coverage and missing values before calculating yields.",
+            "The published 2024/25 results are distinct from the older MINAGRIF first-semester campaign monitoring bulletin."
+          ]
+        },
+        {
+          "title": "Perfil Agro-Pecuário e Pescas em Angola ICAPP 2024/2025",
+          "publisher": "Instituto Nacional de Estatística (INE), Angola",
+          "url": "https://ine.gov.ao/publicacoes/detalhes/NTM0Nzg%3D",
+          "publication_date": "2026-05",
+          "reference_period": "2024/2025",
+          "status": "official_sector_profile_downloadable",
+          "note": "Official national profile based on ICAPP 2024/25 covering agriculture, livestock, fisheries and apiculture. The INE page says production estimates combine the distribution of holdings by crop from RAPP 2019/20 with productivity coefficients from ICAPP. Extract its detailed tables and methodology before use."
+        },
+        {
+          "title": "Perfil Agro-Pecuário e Pescas em Angola ICAPP 2023/2024",
+          "publisher": "Instituto Nacional de Estatística (INE), Angola",
+          "url": "https://ine.gov.ao/publicacoes/detalhes/NTM0Nzc%3D",
+          "publication_date": "2026-05",
+          "reference_period": "2023/2024",
+          "status": "official_previous_campaign_comparison_source",
+          "note": "Previous campaign profile released alongside the 2024/25 profile. Use as a second season for trend and variability only after aligning crop definitions, sampling methods and estimation methodology."
+        },
+        {
+          "title": "Boletim de Indicadores da Produção Agro-Pecuária e Florestal — 1º Semestre 2025",
+          "publisher": "MINAGRIF, Angola; publication hosted by INE",
+          "url": "https://ine.gov.ao/publicacoes/detalhes/NTA0MjE%3D",
+          "publication_date": "2025-06",
+          "reference_period": "First agricultural season 2024/2025, September–March",
+          "status": "official_campaign_monitoring_bulletin_aggregate_and_crop_tables",
+          "observations": [
+            {
+              "indicator": "total area sown",
+              "value_ha": 2697300,
+              "reference_period": "2024/2025 first season",
+              "status": "Official bulletin: five crop chains (cereals, roots/tubers, legumes/oilseeds, fruits and horticulture); aggregate area."
+            },
+            {
+              "indicator": "total area harvested",
+              "value_ha": 2289881,
+              "reference_period": "2024/2025 first season",
+              "status": "Official bulletin: 91.0% of reported sown area; aggregate across five crop chains."
+            },
+            {
+              "indicator": "area sown by family holdings",
+              "share_percent": 91.1,
+              "reference_period": "2024/2025 first season",
+              "status": "Official bulletin; family farms dominate sown area."
+            },
+            {
+              "indicator": "area not harvested",
+              "value_ha": 407419,
+              "reference_period": "2024/2025 first season",
+              "status": "Official bulletin reports 15.1% of sown area not harvested; important loss/abandonment context."
+            }
+          ],
+          "quality_notes": [
+            "These are first-season aggregate values, not full-year national crop totals and not crop-specific yields.",
+            "The bulletin's area and production tables are arranged by crop chains and may need separate treatment for horticultural crops.",
+            "Do not use the aggregate 91% harvest ratio as a crop-specific yield or harvest-loss rate."
+          ]
+        },
+        {
+          "title": "Joint Executive Decree No. 16/25 — Reference Prices of Eligible National Products for Agricultural Campaign 2025/2026",
+          "publisher": "Angolan Ministries of Finance, Agriculture and Forests, and Industry and Commerce; legal text hosted by AngoLEX",
+          "url": "https://angolex.com/paginas/decreto-executivo-conjunto/precos-de-referencia-dos-produtos-nacionais-elegiveis-para-campanha-agricola-2025a2026a-16a-25a.html",
+          "publication_date": "2025-11-06",
+          "reference_period": "2025/2026 agricultural campaign",
+          "status": "official_grade_unspecified_national_reference_prices_legal_schedule",
+          "observations": [
+            {
+              "commodity": "paddy rice",
+              "price_aoa_per_mt": 300000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Legal schedule reference price, not necessarily realized farm-gate transaction price."
+            },
+            {
+              "commodity": "maize (white or yellow)",
+              "price_aoa_per_mt": 280000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Legal schedule reference price."
+            },
+            {
+              "commodity": "massango (pearl millet)",
+              "price_aoa_per_mt": 200000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Legal schedule reference price; distinguish millet species and local crop identity."
+            },
+            {
+              "commodity": "massambala (sorghum)",
+              "price_aoa_per_mt": 200000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Legal schedule reference price."
+            },
+            {
+              "commodity": "feijão manteiga",
+              "price_aoa_per_mt": 650000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Butter bean price; not cowpea."
+            },
+            {
+              "commodity": "feijão preto",
+              "price_aoa_per_mt": 700000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Black bean price; not cowpea."
+            },
+            {
+              "commodity": "feijão raiado",
+              "price_aoa_per_mt": 600000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Striped bean price; crop identity must be retained."
+            },
+            {
+              "commodity": "soybean",
+              "price_aoa_per_mt": 320000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Legal schedule reference price."
+            },
+            {
+              "commodity": "groundnut",
+              "price_aoa_per_mt": 600000,
+              "market_level": "national campaign reference price",
+              "reference_period": "2025/2026",
+              "status": "Legal schedule reference price; not a current calculator commodity."
+            }
+          ],
+          "quality_notes": [
+            "The decree states these reference prices apply to eligible national products in the 2025/26 campaign and are intended to guide procurement and remuneration.",
+            "The legal text says where a transaction price is below the market price, the market price prevails. Therefore the schedule must not be assumed to be a guaranteed minimum farm-gate payment.",
+            "These are campaign reference prices, not retail prices, and not automatically valid for later campaigns."
+          ]
+        },
+        {
+          "title": "Agricultural Statistics Yearbook 2024 (MINAGRIF)",
+          "publisher": "Ministry of Agriculture and Forests, Angola; publication hosted by INE",
+          "url": "https://ine.gov.ao/publicacoes/detalhes/NDY0MDE%3D",
+          "publication_date": "2024-09",
+          "reference_period": "2022/2023 and 2023/2024 agricultural campaigns",
+          "status": "official_crop_area_harvested_area_production_livestock_and_trade_yearbook",
+          "note": "INE publication description says the yearbook includes sown area, harvested area, plant production by crop chains and crops, animal production, forestry and international trade, based on Ministry campaign result reports for 2022/23 and 2023/24. Extract matched crop area and production series and align with ICAPP before adopting."
+        },
+        {
+          "title": "Daily agricultural market price dashboard — Preço do Dia",
+          "publisher": "Preço do Dia, Angola",
+          "url": "https://dodia.ao/",
+          "reference_date": "2026-10-31",
+          "status": "market_price_discovery_only_provenance_and_market_level_not_sufficiently_documented",
+          "note": "A public dashboard showed daily prices for 19 food items at Mercado Central, including maize, rice, beans, soybean, tomato and watermelon, but the publisher, sampling method and whether values are wholesale or retail were not sufficiently established. Do not use as a calculator price until provenance and market level are verified."
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "cassava",
+        "beans/cowpea",
+        "soybean",
+        "tomato",
+        "hot_pepper",
+        "watermelon",
+        "broilers",
+        "layers",
+        "goat",
+        "cattle",
+        "pig"
+      ],
+      "remaining_gaps": [
+        "download the ICAPP 2024/2025 linked Excel tables and extract crop-specific sown area, harvested area and production by province",
+        "extract the ICAPP 2023/2024 comparable tables to establish multi-season variability and reconcile crop definitions",
+        "inspect ICAPP sampling weights, estimated production methodology and crop-specific productivity coefficients; do not treat modelled totals as direct crop-cut measurements",
+        "extract MINAGRIF 2024 Statistical Yearbook 2022/23 and 2023/24 tables and reconcile them with ICAPP for the same crop/season",
+        "obtain itemized farm economics from ICAPP: seed, fertilizer, pesticide, labour, machinery, land preparation, irrigation, energy, transport and post-harvest costs by province and family/enterprise farm type",
+        "obtain dated provincial producer prices and distinguish farm-gate from wholesale, retail and government campaign reference prices",
+        "obtain crop-specific cost and yield evidence for tomato, hot pepper, cucumber and watermelon; do not infer horticultural yields from aggregate horticulture production",
+        "separate family farms and enterprise holdings and preserve provincial and agroecological variation",
+        "obtain species-specific livestock herd, offtake, mortality, feed, veterinary, liveweight and sale-price data from ICAPP and official livestock sources",
+        "do not map feijão manteiga, feijão preto or feijão raiado to Beans (Cowpea); obtain direct cowpea/feijão-frade evidence",
+        "verify whether current 2026/27 reference prices have been issued before using 2025/26 legal schedule values",
+        "do not activate calculator profiles until crop-specific yields, prices and complete enterprise budgets are independently checked"
+      ],
+      "extraction_status": "Angola has unusually useful current official evidence: INE published ICAPP 2023/24 and 2024/25 survey profiles in May 2026, with crop sown/harvested area, provincial production, agricultural practices, farm economic information and livestock. MINAGRIF's first-season 2024/25 bulletin reports 2,697,300 ha sown and 2,289,881 ha harvested across five crop chains. A legal 2025/26 reference-price schedule lists paddy rice, maize, massango, massambala, several distinct beans, soybean and groundnut. The detailed Excel tables and full farm budgets still require extraction; the reference-price schedule is not a realized farm-gate series. No Angola calculator values are activated."
     }
   ],
   "cross_country_sources": [
@@ -2062,6 +2293,7 @@
     }
   ],
   "next_steps": [
+    "For Angola, extract the linked ICAPP 2024/25 and 2023/24 Excel tables and MINAGRIF 2024 yearbook, compare crop-specific harvested area and production by province, extract survey farm-economics variables, and verify the 2025/26 legal reference prices against actual provincial farm-gate transactions before activation.",
     "For Botswana, extract the 2025 Agricultural Census livestock brief and latest annual crop survey tables; reconcile the conflicting 2024/25 cereal totals, obtain crop-specific harvested area/yield by district and sector, and verify BAMB grade-specific producer prices and farm budgets.",
     "For Mozambique, extract the 2025 INE basic agriculture indicators PDF and the 2023/24 CAP final Excel tables; reconcile district crop production with matching cultivated/harvested areas, keep rice systems and cowpea/other beans separate, and obtain original SIMA/ICM producer prices plus itemized farm budgets before activation.",
     "For Malawi, extract 2025 NACA small-area tables and 2024/25–2025/26 APES crop area/yield series; reconcile cowpea and beans definitions, then obtain dated FPMA market prices and input/labour budgets.",
