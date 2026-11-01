@@ -410,6 +410,120 @@
         "National cereal balance forecasts cannot substitute for crop-specific farm yields, input costs or producer prices.",
         "Use for national production and trade context only, not calculator enterprise revenue."
       ]
+    },
+    {
+      "title": "Morocco eyes expansion of cereal planting as water reserves more than double",
+      "publisher": "Hespress English, citing Ministry of Equipment and Water",
+      "url": "https://en.hespress.com/147130-morocco-eyes-expansion-of-cereal-planting-as-water-reserves-more-than-double.html",
+      "publication_date": "2026-10-11",
+      "reference_period": "Reservoir situation as of 2026-10-01; outlook for 2026/27 agricultural campaign",
+      "status": "official_water_reserve_snapshot_and_professional_area_expectations_not_crop_budget",
+      "observations": [
+        {
+          "indicator": "national_dam_filling_rate_percent",
+          "value": 65.51,
+          "as_of": "2026-10-01",
+          "status": "Reported from Ministry of Equipment and Water figures."
+        },
+        {
+          "indicator": "national_dam_water_storage_billion_m3",
+          "value": 11.15,
+          "as_of": "2026-10-01",
+          "status": "Reported reservoir storage; not all water is allocated or accessible to farms."
+        },
+        {
+          "indicator": "national_dam_filling_rate_percent_previous_year",
+          "value": 32.68,
+          "as_of": "2025-10-01",
+          "status": "Same-date previous-year comparison reported in article."
+        },
+        {
+          "indicator": "national_dam_water_storage_billion_m3_previous_year",
+          "value": 5.45,
+          "as_of": "2025-10-01",
+          "status": "Approximate same-date previous-year comparison."
+        },
+        {
+          "indicator": "cereals_and_legumes_expected_sown_area_million_ha",
+          "value": 5,
+          "comparison": "more than",
+          "campaign": "2026/27",
+          "status": "Agricultural-professional expectation, not a finalized official planted-area statistic."
+        },
+        {
+          "indicator": "previous_campaign_cereals_and_legumes_sown_area_million_ha",
+          "value": 3.9,
+          "campaign": "2025/26",
+          "status": "Reported prior-season area."
+        }
+      ],
+      "quality_notes": [
+        "Reservoir levels are national aggregates and do not show water allocation, basin-level access, irrigation tariffs or farm-level availability.",
+        "The projected 2026/27 planted area above five million hectares is a professional expectation, not a verified final area.",
+        "Use this source for seasonal risk and water-context notes, not crop yield or revenue assumptions.",
+        "Do not infer that all farmers have improved irrigation access merely because national dam storage increased."
+      ]
+    },
+    {
+      "title": "Control of agricultural inputs",
+      "publisher": "Office National de Sécurité Sanitaire des Produits Alimentaires (ONSSA), Morocco",
+      "url": "https://www.onssa.gov.ma/intrants-agricoles-ia/control-of-agricultural-inputs/?lang=en",
+      "publication_date": "Undated official guidance; accessed 2026-11-01",
+      "reference_period": "National control framework for seeds, fertilizers, pesticides and irrigation water",
+      "status": "official_regulatory_source_quality_assurance_not_prices",
+      "observations": [
+        {
+          "indicator": "agricultural_input_control_scope",
+          "items": [
+            "seeds",
+            "fertilizers",
+            "pesticides"
+          ],
+          "status": "ONSSA describes monitoring of production, packaging, distribution and imports, including quality and labelling checks."
+        },
+        {
+          "indicator": "input_quality_control_crop_year_window",
+          "start_month": "September",
+          "end_month": "May",
+          "status": "ONSSA says the renewed control plan covers each crop year."
+        },
+        {
+          "indicator": "irrigation_water_quality_control",
+          "status": "ONSSA describes inspection and sampling under irrigation-water quality rules, including distinctions between natural water and treated wastewater."
+        }
+      ],
+      "quality_notes": [
+        "This is an official regulatory framework, not a list of approved products, supplier invoices or price quotations.",
+        "Calculator evidence should identify input product, formulation, registration or conformity status, supplier, unit, invoice date and price.",
+        "For irrigation assumptions, water source and quality compliance are separate from water quantity, availability and delivery cost."
+      ]
+    },
+    {
+      "title": "Budget économique exploratoire 2027 : perspectives économiques pour les années 2026 et 2027",
+      "publisher": "Haut-Commissariat au Plan (HCP), Morocco",
+      "url": "https://www.hcp.ma/Budget-economique-exploratoire-2027-Perspectives-economiques-pour-les-annees-2026-et-2027-Juillet-2026_a4338.html",
+      "publication_date": "2026-07-20",
+      "reference_period": "Macroeconomic outlook for 2026 and 2027",
+      "status": "official_macro_forecast_agricultural_sector_context_not_enterprise_budget",
+      "observations": [
+        {
+          "indicator": "national_economic_growth_forecast_percent",
+          "value": 4.8,
+          "year": 2026,
+          "status": "HCP forecast supported in part by a strong agricultural rebound."
+        },
+        {
+          "indicator": "national_economic_growth_forecast_percent",
+          "value": 3,
+          "year": 2027,
+          "status": "HCP forecast under an assumption of an average cereal campaign."
+        }
+      ],
+      "quality_notes": [
+        "Macroeconomic growth forecasts are not agricultural production or farm profitability forecasts.",
+        "The 2027 forecast explicitly assumes an average cereal campaign; do not use it as a crop-yield coefficient.",
+        "Use only as national context for season planning."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -424,7 +538,9 @@
     "Obtain producer settlement slips showing actual net soft-wheat receipts under the 2026 ONICL scheme after grade adjustments, negotiated bonuses/deductions, transport and intermediary charges.",
     "For Saïss wheat, obtain current 2026/27 invoices and farmer accounts to update the 2021/22 survey coefficients and programme-budget unit costs; separately validate irrigated and rainfed production systems.",
     "Obtain the 2026/27 official SONACOS certified-seed price list and subsidy circular by variety, class and region; cross-check reported MAD 400/quintal bread-wheat/barley and MAD 400–450/quintal durum-wheat market indications against invoices.",
-    "Obtain the full text of the 2026 wheat seed-system review and local varietal performance data to connect seed replacement and varietal choice with farm-level yields without assuming national genetic-gain figures apply uniformly."
+    "Obtain the full text of the 2026 wheat seed-system review and local varietal performance data to connect seed replacement and varietal choice with farm-level yields without assuming national genetic-gain figures apply uniformly.",
+    "For the 2026/27 campaign, obtain basin-level irrigation allocations and farm tariffs; national dam storage cannot be translated into farm water availability or irrigation cost.",
+    "For seed, fertilizer and pesticide records, capture registered product/formulation and conformity evidence alongside dated supplier invoices; ONSSA's control framework confirms that input quality and labelling matter independently of price."
   ],
-  "conclusion": "Morocco remains research-only. New evidence adds 2026/27 season-start seed market indications (about MAD 400/quintal for bread wheat and barley and MAD 400–450/quintal for durum wheat, pending invoice verification), a peer-reviewed 2026 review of weak realization of wheat genetic gains at farm level, and FAO's July 2026 cereal production and wheat-import forecasts. These complement the 50-farmer Saïss wheat survey and historical Souss tomato producer evidence. They do not yet form a current, complete, nationally representative enterprise budget; no calculator data are activated."
+  "conclusion": "Morocco remains research-only. The evidence register now includes a new October 2026 reservoir snapshot and 2026/27 planting outlook, ONSSA's official agricultural-input and irrigation-water quality-control framework, and HCP's July 2026 macroeconomic outlook. These improve seasonal-risk and input-quality documentation but do not provide current farm-level water tariffs, verified input invoices, crop yields or complete enterprise budgets. No calculator data are activated."
 }
