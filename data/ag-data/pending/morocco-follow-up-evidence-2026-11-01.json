@@ -193,6 +193,108 @@
         "Bonuses and deductions may be negotiated; obtain the original ONICL circular and actual producer settlement receipts to calculate net farmer prices.",
         "Storage premiums are conditional support to eligible storage organizations, not a farmer crop price or guaranteed revenue."
       ]
+    },
+    {
+      "title": "Feasibility study of a supplemental irrigation program to secure wheat production for food sovereignty in the Saïss plain (Morocco)",
+      "publisher": "Moroccan Journal of Agricultural Sciences, Vol. 7 No. 1; researchers from the National School of Agriculture in Meknes",
+      "url": "https://techagro.org/index.php/MJAS/article/view/1155",
+      "publication_date": "2026-03-11",
+      "reference_period": "Wheat production conditions in the 2021/2022 campaign; farmer survey in Meknes prefecture and El Hajeb province",
+      "status": "peer_reviewed_regional_farmer_survey_with_partial_itemized_cost_evidence_historical",
+      "observations": [
+        {
+          "commodity": "soft_wheat_and_durum_wheat",
+          "farm_sample_size": 50,
+          "locations": [
+            "Meknes prefecture",
+            "El Hajeb province"
+          ],
+          "sampling_frame_farmers": 215,
+          "status": "Random sample of 50 cereal farmers involved in the Saïss plain preservation project; production data refer to 2021/22."
+        },
+        {
+          "commodity": "wheat",
+          "seed_rate_quintals_per_ha": 2.1,
+          "status": "Average seed rate reported by surveyed cereal farmers."
+        },
+        {
+          "commodity": "wheat",
+          "basal_fertilizer_use_share_percent": 88,
+          "basal_fertilizer_quantity_quintals_per_ha": 2,
+          "status": "88% used compound basal fertilizer; mean quantity reported."
+        },
+        {
+          "commodity": "wheat",
+          "nitrogen_fertilizer_use_share_percent": 58,
+          "nitrogen_fertilizer_quantity_quintals_per_ha": 1.2,
+          "status": "58% used nitrogen fertilizer, mainly ammonium nitrate; mean quantity reported."
+        },
+        {
+          "commodity": "wheat",
+          "herbicide_use_share_percent": 94,
+          "herbicide_quantity_l_per_ha": 0.92,
+          "status": "Survey-reported practice and average quantity."
+        },
+        {
+          "commodity": "wheat",
+          "fungicide_use_share_percent": 90,
+          "fungicide_quantity_l_per_ha": 0.68,
+          "status": "Survey-reported disease-control practice and average quantity."
+        },
+        {
+          "commodity": "wheat",
+          "grain_yield_quintals_per_ha_range": [
+            4,
+            50
+          ],
+          "status": "Wide farm-to-farm range reported; not a national average and production conditions vary."
+        },
+        {
+          "indicator": "farm_labour_daily_wage_mad_range",
+          "value_mad_per_day_range": [
+            80,
+            120
+          ],
+          "status": "Daily wages varied by task in the survey region."
+        },
+        {
+          "commodity": "wheat",
+          "seed_cost_mad_per_ha": 826,
+          "status": "Average cost in the study's supplemental-irrigation programme working-capital budget; not a current 2026/27 input quote."
+        },
+        {
+          "commodity": "wheat",
+          "basal_fertilizer_cost_mad_per_ha": 691,
+          "status": "Average cost in the programme budget; historical and programme-specific."
+        },
+        {
+          "commodity": "wheat",
+          "mechanization_cost_mad_per_ha": 1196,
+          "status": "Soil preparation through harvest, as budgeted for the supplemental-irrigation programme."
+        },
+        {
+          "commodity": "wheat",
+          "labour_cost_mad_per_ha": 352,
+          "status": "Programme budget estimate from soil preparation through harvest."
+        },
+        {
+          "commodity": "wheat",
+          "pivot_energy_cost_mad_per_ha": 1830,
+          "status": "Energy cost for operating irrigation pivots in the programme budget."
+        },
+        {
+          "commodity": "wheat",
+          "pivot_maintenance_repair_cost_mad_per_ha": 660,
+          "status": "Pivot maintenance and repair in the programme budget."
+        }
+      ],
+      "quality_notes": [
+        "This is a recent peer-reviewed publication, but the farm production survey refers to the 2021/22 season; do not describe the unit costs as current 2026 prices.",
+        "The 50-farmer survey covers two provinces in the Saïss plain and should not be generalized to all Morocco.",
+        "The itemized costs are presented in the paper's working-capital budget for a supplemental-irrigation programme, not necessarily audited average farmer expenditure.",
+        "The paper reports grain yields from 4 to 50 quintals/ha across farms; retain the range and context rather than using its upper bound as a default yield.",
+        "The study is useful for a wheat enterprise budget structure and local production coefficients, but current seed, fertilizer, labour, machinery and irrigation tariffs still require dated invoices or official price schedules."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -204,7 +306,8 @@
     "Obtain multi-season crop-specific harvested-area yields and actual farmer-paid input prices before calculator activation.",
     "Obtain the full numeric tables or underlying survey from the approximately 20-farm INRA Agadir/Souss-Massa greenhouse tomato study; its landing page confirms farm-level budget methodology but does not expose itemized values.",
     "Obtain 2026/27 producer invoices and farm accounts from multiple Souss-Massa greenhouse and open-field tomato systems; distinguish seasonal operating cost from depreciation, packing, freight and export compliance.",
-    "Obtain producer settlement slips showing actual net soft-wheat receipts under the 2026 ONICL scheme after grade adjustments, negotiated bonuses/deductions, transport and intermediary charges."
+    "Obtain producer settlement slips showing actual net soft-wheat receipts under the 2026 ONICL scheme after grade adjustments, negotiated bonuses/deductions, transport and intermediary charges.",
+    "For Saïss wheat, obtain current 2026/27 invoices and farmer accounts to update the 2021/22 survey coefficients and programme-budget unit costs; separately validate irrigated and rainfed production systems."
   ],
-  "conclusion": "Morocco remains research-only. The evidence base now includes historical direct producer cost interviews for Souss-Massa greenhouse tomatoes (MAD 500,000-600,000/ha per campaign in the 2024 period, excluding depreciation, packing and freight), an INRA-affiliated academic survey describing market-price budgets from approximately 20 farms but with numeric budget tables unavailable on the landing page, October 2026 sector-reported cost/yield stress, and the 2026 soft-wheat campaign reference price of MAD 280/quintal with important delivery and intermediary conditions. None is a complete, current, nationally representative crop budget. No calculator data are activated."
+  "conclusion": "Morocco remains research-only. The evidence base now includes a 50-farmer Saïss wheat survey (production practices and 2021/22 yields) plus partial itemized costs from a supplemental-irrigation programme budget; historical Souss-Massa greenhouse tomato producer interviews; an INRA-affiliated tomato farm-survey methodology; October 2026 sector-reported tomato cost/yield stress; and the 2026 soft-wheat campaign reference terms. The wheat cost lines are useful historical regional benchmarks, not current national costs. No crop has a complete, current, nationally representative budget and no calculator data are activated."
 }
