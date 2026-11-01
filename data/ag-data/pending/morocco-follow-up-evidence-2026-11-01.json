@@ -68,6 +68,131 @@
         "These figures are not official price observations or representative national farm-gate series.",
         "Do not use them in calculator budgets without crop-, grade-, region- and date-specific corroboration."
       ]
+    },
+    {
+      "title": "ENQUÊTE. Dans le Souss, la tomate sous forte pression",
+      "publisher": "Médias24",
+      "url": "https://medias24.com/2025/01/14/dans-le-souss-la-tomate-sous-forte-pression",
+      "publication_date": "2025-01-14",
+      "reference_period": "Souss-Massa greenhouse tomato campaign; producer interviews reported in December 2024",
+      "status": "producer_interview_cost_evidence_historical_and_scope_limited",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "production_cost_mad_per_ha_range": [
+            500000,
+            600000
+          ],
+          "unit": "MAD/ha/campaign",
+          "status": "Two producer-exporters reported campaign costs for greenhouse tomato; excludes greenhouse structure depreciation, packing and freight."
+        },
+        {
+          "commodity": "tomato",
+          "production_cost_mad_per_kg_range": [
+            6,
+            7
+          ],
+          "status": "Same two producers' reported cost range; time-specific to December 2024 and their export-oriented greenhouse systems."
+        },
+        {
+          "indicator": "seasonal_farm_labour_wage",
+          "value_mad_per_day_range": [
+            80,
+            85
+          ],
+          "workday_hours": 10,
+          "status": "Reported worker pay in the interviewed Souss farms; not a national or current wage benchmark."
+        },
+        {
+          "commodity": "tomato",
+          "water_requirement_tonnes_per_ha": 30000,
+          "status": "A producer's reported water requirement; confirm measurement and production system before using in budgets."
+        },
+        {
+          "indicator": "desalinated_irrigation_water_cost_mad_per_m3",
+          "lower_bound": 6,
+          "status": "Reported cost in the Souss desalination-irrigation context; verify current tariff and actual farm delivery charges."
+        }
+      ],
+      "quality_notes": [
+        "The figures are direct producer interviews but the article does not publish a representative sample or complete itemized enterprise accounts.",
+        "The reported MAD 500,000-600,000/ha is campaign operating cost and explicitly excludes depreciation, packing and freight; do not compare it directly with a full-cost figure.",
+        "Use as a historical plausibility check and a list of cost headings to request from producers, not as a 2026/27 calculator default."
+      ]
+    },
+    {
+      "title": "Analyse économique de la compétitivité de la filière tomate dans la région du Souss-Massa (Maroc)",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires; authors affiliated with INRA Agadir",
+      "url": "https://www.agrimaroc.org/index.php/Actes_IAVH2/article/view/769",
+      "publication_date": "Publication date not clearly exposed on article page",
+      "reference_period": "Study based on survey data from approximately 20 Souss-Massa greenhouse tomato farms; historical study",
+      "status": "academic_farm_survey_budget_methodology_sample_20_full_numeric_budget_table_not_accessible_on_landing_page",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "production_system": "greenhouse_Souss_Massa",
+          "farm_sample_size_approx": 20,
+          "status": "Authors report farm-level market-price budgets assembled from a sample of approximately twenty farms."
+        },
+        {
+          "indicator": "tomato_policy_analysis_domestic_resource_cost_coefficient",
+          "value": 0.325,
+          "status": "Study's policy-analysis-matrix result; an economic competitiveness indicator, not a farm profit margin or yield."
+        },
+        {
+          "indicator": "tomato_nominal_protection_coefficient_output",
+          "value": 0.97,
+          "status": "Historical policy-analysis indicator, not a producer sale price."
+        },
+        {
+          "indicator": "tomato_nominal_protection_coefficient_tradable_inputs",
+          "value": 1.077,
+          "status": "Historical policy-analysis indicator, not an input price quote."
+        }
+      ],
+      "quality_notes": [
+        "The study states that its farm-level budget covers costs and receipts at market prices for an approximately 20-farm sample.",
+        "The landing page does not expose the underlying numeric budget table or individual cost lines, so no numeric cost or revenue values are extracted here.",
+        "The study reports historical context and must not be treated as a current 2026/27 budget.",
+        "Request the full article or underlying survey tables from the authors/INRA Agadir to recover itemized cost and output data."
+      ]
+    },
+    {
+      "title": "Prix référentiel, primes de stockage, transports… Tout savoir sur la campagne céréalière 2026",
+      "publisher": "Aujourd'hui le Maroc, reporting the 2026 ministry circular",
+      "url": "https://aujourdhui.ma/actualite/prix-referentiel-primes-de-stockage-transports-tout-savoir-sur-la-campagne-cerealiere-2026",
+      "publication_date": "2026-05-19",
+      "reference_period": "2026 national soft-wheat harvest marketing campaign; storage measures extend into January 2027",
+      "status": "campaign_specific_reference_price_and_storage_incentives_not_universal_farmgate_price",
+      "observations": [
+        {
+          "commodity": "soft_wheat",
+          "reference_purchase_price_mad_per_quintal": 280,
+          "quality": "standard",
+          "status": "Target reference purchase price stated to include all charges, taxes and margins associated with purchase from producers and delivery to industrial mill; may be subject to negotiated bonuses or deductions."
+        },
+        {
+          "indicator": "soft_wheat_collection_premium_window",
+          "start_date": "2026-06-01",
+          "end_date": "2026-07-31",
+          "status": "Campaign collection incentive period; actual application may be adjusted."
+        },
+        {
+          "indicator": "soft_wheat_storage_premium_mad_per_quintal_per_fortnight",
+          "value": 2.5,
+          "status": "Paid to eligible storage organizations for qualifying stocks; not an additional direct farmer payment."
+        },
+        {
+          "indicator": "soft_wheat_strategic_storage_premium_mad_per_quintal_per_fortnight",
+          "value": 3,
+          "status": "For qualifying stocks held by storage organizations from 2026-08-01 through 2027-01-31, subject to caps and conditions; not direct farmer revenue."
+        }
+      ],
+      "quality_notes": [
+        "The MAD 280/quintal figure is a reference target for standard-quality soft wheat delivered to industrial mills, inclusive of intermediary charges/margins; it is not automatically the net amount received by each farmer.",
+        "Bonuses and deductions may be negotiated; obtain the original ONICL circular and actual producer settlement receipts to calculate net farmer prices.",
+        "Storage premiums are conditional support to eligible storage organizations, not a farmer crop price or guaranteed revenue."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -76,7 +201,10 @@
     "Corroborate October 2026 cereal seed and sale-price testimony with dated invoices and farmer receipts.",
     "Obtain matched producer and wholesale tomato prices by grade, region and date to calculate netbacks.",
     "Obtain the original ONICL 2026 circular and any 2026/27 update, including grade, eligibility, delivery, deductions and transport terms.",
-    "Obtain multi-season crop-specific harvested-area yields and actual farmer-paid input prices before calculator activation."
+    "Obtain multi-season crop-specific harvested-area yields and actual farmer-paid input prices before calculator activation.",
+    "Obtain the full numeric tables or underlying survey from the approximately 20-farm INRA Agadir/Souss-Massa greenhouse tomato study; its landing page confirms farm-level budget methodology but does not expose itemized values.",
+    "Obtain 2026/27 producer invoices and farm accounts from multiple Souss-Massa greenhouse and open-field tomato systems; distinguish seasonal operating cost from depreciation, packing, freight and export compliance.",
+    "Obtain producer settlement slips showing actual net soft-wheat receipts under the 2026 ONICL scheme after grade adjustments, negotiated bonuses/deductions, transport and intermediary charges."
   ],
-  "conclusion": "Morocco remains research-only. These new sector and farmer observations are evidence leads, not calculator-ready national assumptions. No calculator data or existing country profiles have been changed."
+  "conclusion": "Morocco remains research-only. The evidence base now includes historical direct producer cost interviews for Souss-Massa greenhouse tomatoes (MAD 500,000-600,000/ha per campaign in the 2024 period, excluding depreciation, packing and freight), an INRA-affiliated academic survey describing market-price budgets from approximately 20 farms but with numeric budget tables unavailable on the landing page, October 2026 sector-reported cost/yield stress, and the 2026 soft-wheat campaign reference price of MAD 280/quintal with important delivery and intermediary conditions. None is a complete, current, nationally representative crop budget. No calculator data are activated."
 }
