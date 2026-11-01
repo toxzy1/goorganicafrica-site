@@ -1,0 +1,491 @@
+{
+  "country": {
+    "name": "Libya",
+    "iso2": "LY",
+    "iso3": "LBY",
+    "currency": "LYD",
+    "currency_name": "Libyan dinar"
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Country evidence register entry. This record documents sourced agricultural context and identifies data suitable for later validation; it is not an enterprise budget, price feed, or calculator profile.",
+  "calculator_readiness": "not_ready_research_only",
+  "evidence": [
+    {
+      "id": "LY-01",
+      "topic": "2026 cereal production outlook and import requirement",
+      "source": "FAO GIEWS Libya Country Brief",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=LBY",
+      "reference_date": "2026-07-16",
+      "values": [
+        {
+          "indicator": "total_cereal_production_forecast",
+          "value": 150000,
+          "unit": "tonnes",
+          "period": "2026",
+          "status": "forecast",
+          "note": "FAO forecast; about 20 percent below the five-year average."
+        },
+        {
+          "indicator": "cereal_import_requirement",
+          "value": 3300000,
+          "unit": "tonnes",
+          "period": "2026/27 marketing year (July/June)",
+          "status": "forecast",
+          "note": "About 7 percent above average; includes cereals, not a domestic farm output measure."
+        },
+        {
+          "indicator": "wheat_import_requirement",
+          "value": 1500000,
+          "unit": "tonnes",
+          "period": "2026/27 marketing year",
+          "status": "forecast",
+          "note": "More than 40 percent of total cereal imports; about 12 percent above average."
+        },
+        {
+          "indicator": "food_inflation_yoy",
+          "value": 18,
+          "unit": "percent",
+          "period": "May 2026",
+          "status": "reported_estimate",
+          "note": "FAO reports approximately 18 percent year-on-year food inflation."
+        },
+        {
+          "indicator": "libyan_dinar_depreciation_yoy",
+          "value": 15,
+          "unit": "percent",
+          "period": "May 2026 comparison",
+          "status": "reported_estimate",
+          "note": "FAO reports the dinar weakened by about 15 percent year-on-year; this is a macroeconomic context indicator, not an input-price conversion."
+        }
+      ],
+      "caveats": [
+        "2026 crop production is a forecast, not final post-harvest statistics.",
+        "FAO notes delayed planting after dry weather in October-November 2025 and below-average precipitation in eastern producing areas, particularly Al Jabal Al Akhdar.",
+        "Do not use national cereal balance/import figures as farm-level yield, revenue, or profitability inputs."
+      ]
+    },
+    {
+      "id": "LY-02",
+      "topic": "2024 cereal and barley statistics",
+      "source": "World Bank World Development Indicators (FAOSTAT-sourced cereal production) and SESRIC Libya in Figures",
+      "source_url": "https://data.worldbank.org/indicator/AG.PRD.CREL.MT?locations=LY",
+      "secondary_source_url": "https://cesr.sesric.org/cif.php?c_code=26",
+      "reference_date": "2024 observations, accessed 2026-11-01",
+      "values": [
+        {
+          "indicator": "cereal_production",
+          "value": 164800,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic",
+          "note": "World Bank WDI identifies FAO as source and reports 164,800 tonnes."
+        },
+        {
+          "indicator": "cereal_area_harvested",
+          "value": 249794,
+          "unit": "hectares",
+          "period": "2024",
+          "status": "reported_statistic",
+          "note": "SESRIC country profile, drawing on international agricultural statistics."
+        },
+        {
+          "indicator": "cereal_yield",
+          "value": 659.7,
+          "unit": "hg_per_ha",
+          "period": "2024",
+          "status": "reported_statistic",
+          "note": "Equivalent to approximately 0.6597 tonnes per hectare; retain source unit for traceability."
+        },
+        {
+          "indicator": "barley_area_harvested",
+          "value": 126698,
+          "unit": "hectares",
+          "period": "2024",
+          "status": "reported_statistic"
+        },
+        {
+          "indicator": "barley_production",
+          "value": 65000,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic"
+        },
+        {
+          "indicator": "barley_yield",
+          "value": 513,
+          "unit": "hg_per_ha",
+          "period": "2024",
+          "status": "reported_statistic",
+          "note": "Equivalent to approximately 0.0513 tonnes per hectare as displayed by SESRIC; unusually low relative to the reported barley production/area ratio and therefore requires validation before use."
+        }
+      ],
+      "caveats": [
+        "The cereal aggregate production value is supported by the World Bank WDI page citing FAO; area and yield are taken from SESRIC and should be cross-checked against the underlying FAOSTAT download.",
+        "The barley yield displayed by SESRIC appears inconsistent with the ratio of 65,000 tonnes divided by 126,698 hectares. Do not silently correct it; flag for source-level reconciliation.",
+        "These are national statistical series, not farm-specific performance benchmarks."
+      ]
+    },
+    {
+      "id": "LY-03",
+      "topic": "2024 crop mix and livestock production",
+      "source": "Natlas country agriculture data compilation citing FAOSTAT 2024",
+      "source_url": "https://natlas.org/country/libya/agriculture-and-food",
+      "reference_date": "2024 observations, accessed 2026-11-01",
+      "values": [
+        {
+          "indicator": "potato_production",
+          "value": 369147,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "watermelon_production",
+          "value": 233010,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "tomato_production",
+          "value": 226332,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "date_production",
+          "value": 187039,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "olive_production",
+          "value": 128893,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "wheat_production",
+          "value": 90000,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "barley_production",
+          "value": 65000,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "cattle_inventory",
+          "value": 208931,
+          "unit": "head",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "sheep_inventory",
+          "value": 7490000,
+          "unit": "head",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "goat_inventory",
+          "value": 2730000,
+          "unit": "head",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        },
+        {
+          "indicator": "chicken_inventory",
+          "value": 38030000,
+          "unit": "head",
+          "period": "2024",
+          "status": "reported_statistic_secondary_compilation"
+        }
+      ],
+      "caveats": [
+        "This is a secondary compilation, not the primary FAOSTAT interface. Figures are discovery leads and must be checked against the exact FAOSTAT item/element/year before operational use.",
+        "Livestock inventory and annual production of meat, milk, or eggs are different measures; do not treat them as interchangeable.",
+        "These aggregate production values do not establish district-specific yields, farm-gate prices, or net margins."
+      ]
+    },
+    {
+      "id": "LY-04",
+      "topic": "Monthly food price estimates by product and market",
+      "source": "World Bank Microdata Library, Real-Time Food Prices, Libya version 2026-10-05",
+      "source_url": "https://microdata.worldbank.org/catalog/6168",
+      "doi": "https://doi.org/10.48529/2ZH0-JF55",
+      "reference_date": "2026-10-05",
+      "values": [
+        {
+          "indicator": "market_coverage",
+          "value": 41,
+          "unit": "markets",
+          "period": "2017-01-01 to 2026-10-01",
+          "status": "dataset_metadata"
+        },
+        {
+          "indicator": "price_product_coverage",
+          "value": 23,
+          "unit": "listed product/price series including duplicates and index/exchange series",
+          "period": "dataset_version_2026-10-05",
+          "status": "dataset_metadata",
+          "note": "Includes beans, bread, chickpeas, chili, eggs, chicken, lamb, milk, oil, onions, pasta, potatoes, rice, tomatoes, wheat flour and other food items."
+        }
+      ],
+      "geography": [
+        "West",
+        "East",
+        "South",
+        "Western Region (Tripoli)",
+        "Western Region",
+        "Market Average"
+      ],
+      "methodology": "World Bank DECDG Real-Time Prices combines direct price measurements from WFP, FAO and selected national statistical offices with machine-learning imputation for missing observations. The dataset includes modeled Open/High/Low/Close estimates and may adjust outliers.",
+      "caveats": [
+        "These are consumer/market food price estimates, not farm-gate producer prices.",
+        "The series include imputed/modelled observations; use the dataset's coverage and imputation diagnostics and distinguish observed from estimated values.",
+        "The price data are useful for market context and retail/food inflation analysis but must not be used as crop selling prices or farm revenue without independent farm-gate validation.",
+        "No individual LYD price values have been transcribed into this register because the downloadable microdata were not extracted in this research pass."
+      ]
+    },
+    {
+      "id": "LY-05",
+      "topic": "Official local market staple-price dataset",
+      "source": "Libya Trade Network, Libyan Ministry of Economy and Trade open-data platform",
+      "source_url": "https://opendata.gia.gov.ly/dashboard/dashboard/dataset/2024-2025",
+      "reference_date": "Dataset created 2026-09-29; updated 2026-09-29",
+      "values": [
+        {
+          "indicator": "dataset_period",
+          "value": "2024-2025",
+          "unit": "calendar years",
+          "status": "dataset_metadata"
+        },
+        {
+          "indicator": "price_fields",
+          "value": "annual highs, lows, averages and percentage change",
+          "unit": "dataset description",
+          "status": "dataset_metadata"
+        },
+        {
+          "indicator": "commodity_scope",
+          "value": "food, meat, poultry, eggs, vegetables, fruits, grains and animal feed",
+          "unit": "commodity groups",
+          "status": "dataset_metadata"
+        }
+      ],
+      "caveats": [
+        "The source describes local market prices, not necessarily farm-gate producer prices.",
+        "The XLSX resource is published, but its contents were not extracted in this pass; no numerical price claims are made.",
+        "Before calculator use, inspect commodity definitions, unit, market location, date, tax/transport treatment and whether prices are wholesale or retail."
+      ]
+    },
+    {
+      "id": "LY-06",
+      "topic": "Farm structure, crop geography and livestock systems",
+      "source": "IFAD, The State of Libya: Country Strategy Note 2023-2024",
+      "source_url": "https://www.ifad.org/documents/48415603/49455873/Libya%2BCSN%2B2023-2024%2B.pdf/cb0c2a95-72c0-92d0-0c65-853f9d3acf71?t=1728301616674",
+      "reference_date": "2022-12-15",
+      "values": [
+        {
+          "indicator": "rural_households_engaged_in_agriculture",
+          "value": 20,
+          "unit": "percent",
+          "period": "report reference context",
+          "status": "reported_estimate",
+          "note": "IFAD reports approximately 20 percent of rural households engaged in agriculture."
+        },
+        {
+          "indicator": "agricultural_households_with_less_than_1ha",
+          "value": 47,
+          "unit": "percent",
+          "period": "report reference context",
+          "status": "reported_estimate"
+        },
+        {
+          "indicator": "agricultural_households_with_1_to_10ha",
+          "value": 45,
+          "unit": "percent",
+          "period": "report reference context",
+          "status": "reported_estimate"
+        },
+        {
+          "indicator": "annual_crops_area",
+          "value": 1720000,
+          "unit": "hectares",
+          "period": "Aquastat 2016 estimate cited by IFAD",
+          "status": "historical_estimate"
+        },
+        {
+          "indicator": "permanent_crops_area",
+          "value": 340000,
+          "unit": "hectares",
+          "period": "Aquastat 2016 estimate cited by IFAD",
+          "status": "historical_estimate"
+        },
+        {
+          "indicator": "permanent_pastures_area",
+          "value": 13300000,
+          "unit": "hectares",
+          "period": "Aquastat 2016 estimate cited by IFAD",
+          "status": "historical_estimate"
+        }
+      ],
+      "crop_and_region_notes": [
+        "Tomatoes, peppers, onions and leafy greens are commonly grown.",
+        "Olives and pulses are important in Al Jabal Al Gharbi; citrus in Derna; dates in Al Jufra.",
+        "Barley and fodder are notable in Fezzan in association with livestock systems.",
+        "Sheep are the most common small ruminant, followed by goats; many livestock-keeping households own fewer than ten small ruminants.",
+        "Poultry keeping is noted in Wadi Ashshati and Sebha; larger-scale production is more common in coastal areas such as Benghazi."
+      ],
+      "caveats": [
+        "The country strategy is dated 2022 and contains historical or secondary estimates; it is not a current agricultural census.",
+        "IFAD explicitly notes the lack of detailed, reliable and recent agricultural-sector data in the background study.",
+        "Area estimates cited from Aquastat are for 2016 and must not be presented as current land-use statistics."
+      ]
+    },
+    {
+      "id": "LY-07",
+      "topic": "Smallholder agricultural assessment in Fezzan",
+      "source": "Ministry of Agriculture and Livestock, World Food Programme and Tatweer Research, Fezzan Agricultural Assessment executive summary",
+      "source_url": "https://www.wfp.org/publications/2023-executive-summary-fezzan-agricultural-assessment",
+      "reference_date": "2023-11-03",
+      "values": [
+        {
+          "indicator": "assessment_coverage",
+          "value": "Fezzan region, including productive-unit and farmer profiles",
+          "unit": "assessment scope",
+          "status": "study_metadata"
+        },
+        {
+          "indicator": "previous_smallholder_assessment_gap",
+          "value": "first assessment of smallholder farmers since 2006",
+          "unit": "study description",
+          "status": "reported_context"
+        }
+      ],
+      "caveats": [
+        "The WFP publication page confirms the assessment and its institutional authorship; detailed numeric tables from the full report have not been extracted in this pass.",
+        "Regional Fezzan findings must not be generalized to all Libya without a national sampling frame."
+      ]
+    },
+    {
+      "id": "LY-08",
+      "topic": "Water productivity and irrigation infrastructure",
+      "source": "FAO, Integrated methodological framework and assessment of water management infrastructure, crop and water productivity in Libya",
+      "source_url": "https://www.fao.org/platforms/water-scarcity/Knowledge/knowledge-products/detail/integrated-methodological-framework-and-assessment-of-water-management-infrastructure--crop-and-water-productivity-in-libya/en",
+      "reference_date": "2025-08-04",
+      "values": [
+        {
+          "indicator": "field_surveys",
+          "value": 750,
+          "unit": "plus surveys",
+          "period": "study",
+          "status": "reported_study_method",
+          "note": "FAO describes satellite imagery and more than 750 field surveys."
+        }
+      ],
+      "caveats": [
+        "The study identified critical damage to irrigation infrastructure and recommends repairs, system upgrades, monitoring and training.",
+        "The landing page does not provide crop-by-crop irrigation costs or water productivity numeric tables; these must be extracted from the linked full report before modelling."
+      ]
+    },
+    {
+      "id": "LY-09",
+      "topic": "Agricultural statistical system and census preparation",
+      "source": "Libya Ministry of Agriculture and Livestock, agricultural census programme update",
+      "source_url": "https://www.agriculture.gov.ly/2020/5234",
+      "reference_date": "2026-01-23",
+      "values": [
+        {
+          "indicator": "global_agricultural_census_programme",
+          "value": "WCA 2030 preparatory training completed; full agricultural census preparation underway",
+          "unit": "programme status",
+          "status": "official_ministry_statement"
+        }
+      ],
+      "caveats": [
+        "The Ministry describes capacity-building and preparation for a comprehensive agricultural census, not publication of completed census results.",
+        "This supports the assessment that a current, complete national farm census dataset was not located in this research pass."
+      ]
+    }
+  ],
+  "data_quality_assessment": {
+    "strengths": [
+      "Current FAO GIEWS 2026 cereal outlook and import balance.",
+      "A World Bank 41-market monthly food-price dataset updated through 2026-10-01.",
+      "An official Libya Trade Network local market price dataset for 2024-2025.",
+      "FAOSTAT-sourced national crop and livestock leads for 2024.",
+      "IFAD regional farm-structure context, WFP/Ministry smallholder assessment, and FAO irrigation-infrastructure research."
+    ],
+    "material_gaps": [
+      "No verified current farm-gate producer price series extracted.",
+      "No validated crop-specific enterprise budgets for seed, fertilizer, crop protection, labour, irrigation energy, machinery, land rent, packaging and transport.",
+      "Official 2024-2025 local market-price workbook contents have not been extracted or classified by wholesale/retail level.",
+      "World Bank Real-Time Food Price estimates are consumer-market series with imputation and are not farm-gate prices.",
+      "The 2024 crop and livestock totals need direct FAOSTAT item/element verification; barley yield metadata has an apparent internal inconsistency.",
+      "No completed current agricultural census tables were located; the Ministry reported census preparation in January 2026.",
+      "Irrigation-water costs and groundwater sustainability vary by region and are not represented by a single national cost."
+    ],
+    "readiness_decision": "not_ready_research_only",
+    "conditions_before_calculator_activation": [
+      "Extract and independently validate FAOSTAT crop area, production and yield series by item and year.",
+      "Download and inspect the official 2024-2025 local market-price workbook; classify each commodity price as farm-gate, wholesale or retail and retain location, date and unit.",
+      "Extract the World Bank monthly price microdata only for market context, retaining observed/imputed flags and market coverage.",
+      "Obtain current region-specific farm-gate prices and supplier quotations for inputs.",
+      "Build crop-specific enterprise budgets with explicit irrigation, fuel/electricity, labour and logistics assumptions.",
+      "Validate all units, currency, exchange-rate basis and reference dates with local agricultural institutions or extension partners."
+    ]
+  },
+  "sources": [
+    {
+      "name": "FAO GIEWS Libya Country Brief, 16 July 2026",
+      "url": "https://cb.apps.fao.org/country.jsp?code=LBY"
+    },
+    {
+      "name": "World Bank WDI cereal production, FAOSTAT source, 2024",
+      "url": "https://data.worldbank.org/indicator/AG.PRD.CREL.MT?locations=LY"
+    },
+    {
+      "name": "SESRIC Libya in Figures, agriculture indicators",
+      "url": "https://cesr.sesric.org/cif.php?c_code=26"
+    },
+    {
+      "name": "World Bank Microdata Library, Libya Real-Time Food Prices, version 2026-10-05",
+      "url": "https://microdata.worldbank.org/catalog/6168"
+    },
+    {
+      "name": "Libya Trade Network, local staple prices 2024-2025",
+      "url": "https://opendata.gia.gov.ly/dashboard/dashboard/dataset/2024-2025"
+    },
+    {
+      "name": "IFAD, Libya Country Strategy Note 2023-2024",
+      "url": "https://www.ifad.org/documents/48415603/49455873/Libya%2BCSN%2B2023-2024%2B.pdf/cb0c2a95-72c0-92d0-0c65-853f9d3acf71?t=1728301616674"
+    },
+    {
+      "name": "WFP, Fezzan Agricultural Assessment executive summary, 3 November 2023",
+      "url": "https://www.wfp.org/publications/2023-executive-summary-fezzan-agricultural-assessment"
+    },
+    {
+      "name": "FAO, Libya irrigation and water productivity assessment, 4 August 2025",
+      "url": "https://www.fao.org/platforms/water-scarcity/Knowledge/knowledge-products/detail/integrated-methodological-framework-and-assessment-of-water-management-infrastructure--crop-and-water-productivity-in-libya/en"
+    },
+    {
+      "name": "Libya Ministry of Agriculture and Livestock, agricultural census programme update, 23 January 2026",
+      "url": "https://www.agriculture.gov.ly/2020/5234"
+    },
+    {
+      "name": "Natlas FAOSTAT-derived Libya crop and livestock compilation, 2024",
+      "url": "https://natlas.org/country/libya/agriculture-and-food"
+    }
+  ]
+}
