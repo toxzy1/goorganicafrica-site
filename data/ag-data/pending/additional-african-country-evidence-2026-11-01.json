@@ -2273,6 +2273,78 @@
         "do not activate calculator profiles until crop-specific yields, prices and complete enterprise budgets are independently checked"
       ],
       "extraction_status": "Angola has unusually useful current official evidence: INE published ICAPP 2023/24 and 2024/25 survey profiles in May 2026, with crop sown/harvested area, provincial production, agricultural practices, farm economic information and livestock. MINAGRIF's first-season 2024/25 bulletin reports 2,697,300 ha sown and 2,289,881 ha harvested across five crop chains. A legal 2025/26 reference-price schedule lists paddy rice, maize, massango, massambala, several distinct beans, soybean and groundnut. The detailed Excel tables and full farm budgets still require extraction; the reference-price schedule is not a realized farm-gate series. No Angola calculator values are activated."
+    },
+    {
+      "country_code": "EG",
+      "country_name": "Egypt",
+      "evidence_status": "official_CAPMAS_2024_crop_and_livestock_statistics_and_2025_crop_area_bulletin_identified_crop_specific_yields_and_cost_series_extraction_pending",
+      "sources": [
+        {
+          "title": "Annual Bulletin of Statistical Crop Area and Plant Production 2023/2024",
+          "publisher": "Central Agency for Public Mobilization and Statistics (CAPMAS), Egypt",
+          "url": "https://www.capmas.gov.eg/",
+          "reference_period": "2023/2024 agricultural year",
+          "status": "official_annual_crop_area_and_production_bulletin_publication_catalogue",
+          "note": "CAPMAS annual statistical bulletin series covers crop areas and plant production. Obtain the 2023/24 bulletin PDF/XLS and extract matched crop-specific area, production, yield and governorate tables; do not use national output totals without checking crop definitions and crop-year boundaries."
+        },
+        {
+          "title": "Agricultural Statistics Bulletin 2023",
+          "publisher": "Ministry of Agriculture and Land Reclamation, Economic Affairs Sector, Egypt",
+          "url": "https://www.agri.gov.eg/",
+          "reference_period": "2022/2023",
+          "status": "official_annual_agricultural_statistics_source",
+          "note": "The Ministry's Economic Affairs Sector publishes annual agricultural statistics, including crop area, production, livestock, poultry and fishery indicators. Exact bulletin table extraction and the crop-year definitions remain outstanding."
+        },
+        {
+          "title": "Egypt agriculture and food security country data",
+          "publisher": "FAO GIEWS",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=EGY&lang=en",
+          "status": "seasonal_crop_and_market_context",
+          "note": "Use FAO GIEWS for current seasonal conditions, wheat/rice/maize outlook and food-market context as an independent cross-check; do not substitute aggregate cereal balance estimates for national crop survey data."
+        },
+        {
+          "title": "Agricultural price statistics and market information",
+          "publisher": "Ministry of Supply and Internal Trade / CAPMAS",
+          "url": "https://www.capmas.gov.eg/",
+          "status": "official_price_data_discovery_required",
+          "note": "CAPMAS publishes price indices and commodity price statistics, while ministry procurement prices for strategic crops may be campaign-specific. Obtain dated producer/farm-gate quotations by governorate and keep government procurement prices separate from private-market prices and retail prices."
+        },
+        {
+          "title": "Agricultural Census 2010 and subsequent agricultural statistics",
+          "publisher": "CAPMAS, Egypt",
+          "url": "https://www.capmas.gov.eg/",
+          "reference_period": "2010 census baseline and annual updates",
+          "status": "structural_baseline_not_current_farm_budget",
+          "note": "The 2010 Agricultural Census is a structural baseline, not a substitute for current annual area, yield, farm cost and livestock data. Verify newer census or agricultural holding survey outputs before using structural counts."
+        }
+      ],
+      "priority_commodities": [
+        "rice",
+        "maize",
+        "tomato",
+        "hot_pepper",
+        "cucumber",
+        "watermelon",
+        "beans/cowpea",
+        "soybean",
+        "broilers",
+        "layers",
+        "cattle",
+        "goat",
+        "pig"
+      ],
+      "remaining_gaps": [
+        "retrieve the exact CAPMAS 2023/24 Statistical Bulletin of Crop Area and Plant Production and extract crop-by-governorate harvested area, output and yield",
+        "retrieve the Ministry of Agriculture Economic Affairs Sector 2023 agricultural statistics bulletin and compare the matched series",
+        "confirm whether rice statistics refer to paddy or milled rice and distinguish summer, winter and Nili seasons",
+        "separate old-land, new-land, reclaimed desert, irrigated and rainfed production systems where the data support it",
+        "obtain current governorate-level producer prices for paddy rice, maize, tomato, pepper, cucumber, watermelon and pulses; distinguish government procurement from private farm-gate prices",
+        "obtain farmer-paid costs for seed, fertilizer, crop protection, labour, machinery, irrigation water, energy, land rent and transport by crop and production system",
+        "obtain current cattle, buffalo, sheep, goat, broiler and layer enterprise costs and liveweight/egg/milk output prices",
+        "obtain and document the current agricultural census or holding survey frame and update the 2010 structural baseline",
+        "do not activate calculator profiles until crop-specific multi-season yields, local prices and complete enterprise budgets are independently verified"
+      ],
+      "extraction_status": "Egypt is a high-priority candidate because CAPMAS and the Ministry of Agriculture maintain annual crop-area and production statistics, with governorate detail and multiple crop seasons. The present register records authoritative publication routes and the required disaggregation, but no numerical crop yield or farm budget has been admitted in this pass. The exact annual bulletin files and current governorate-level farm-gate prices must be extracted before activation."
     }
   ],
   "cross_country_sources": [
@@ -2293,6 +2365,7 @@
     }
   ],
   "next_steps": [
+    "For Egypt, obtain the CAPMAS 2023/24 crop area and plant production bulletin and Ministry Economic Affairs Sector tables, extract matched governorate crop area/output/yield by winter, summer and Nili season, and obtain current farm-gate prices and input budgets.",
     "For Angola, extract the linked ICAPP 2024/25 and 2023/24 Excel tables and MINAGRIF 2024 yearbook, compare crop-specific harvested area and production by province, extract survey farm-economics variables, and verify the 2025/26 legal reference prices against actual provincial farm-gate transactions before activation.",
     "For Botswana, extract the 2025 Agricultural Census livestock brief and latest annual crop survey tables; reconcile the conflicting 2024/25 cereal totals, obtain crop-specific harvested area/yield by district and sector, and verify BAMB grade-specific producer prices and farm budgets.",
     "For Mozambique, extract the 2025 INE basic agriculture indicators PDF and the 2023/24 CAP final Excel tables; reconcile district crop production with matching cultivated/harvested areas, keep rice systems and cowpea/other beans separate, and obtain original SIMA/ICM producer prices plus itemized farm budgets before activation.",
