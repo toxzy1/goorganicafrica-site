@@ -25,6 +25,23 @@ for (const file of htmlFiles) {
   const headMatch = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i);
   if (headMatch) {
     const head = headMatch[1];
+    // Public rendered pages need a useful title, description and one absolute
+    // canonical URL. The retired services redirect and admin are excluded.
+    const isLegacyRedirect = rel === "agricultural-services/index.html";
+    if (!/^admin\//.test(rel) && !isLegacyRedirect) {
+      const titles = [...head.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)];
+      if (titles.length !== 1 || !titles[0][1].replace(/<[^>]+>/g, "").trim()) {
+        failures.push(rel + ": missing or duplicate SEO title");
+      }
+      const descriptions = [...head.matchAll(/<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/gi)];
+      if (descriptions.length !== 1 || !descriptions[0][1].trim()) {
+        failures.push(rel + ": missing or duplicate meta description");
+      }
+      const canonicals = [...head.matchAll(/<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/gi)];
+      if (canonicals.length !== 1 || !/^https?:\/\//i.test(canonicals[0]?.[1] || "")) {
+        failures.push(rel + ": missing, duplicate or non-absolute canonical URL");
+      }
+    }
     for (const match of head.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)) {
       if (match[1].includes("{{")) failures.push(rel + ": raw Nunjucks interpolation found in <title>");
     }
@@ -142,9 +159,11 @@ for (const file of htmlFiles) {
     if ((html.match(/<main\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <main>");
     if (!["markets/index.html","opportunities/index.html","agricultural-services/index.html"].includes(rel) && (html.match(/<header\b/gi) || []).length !== 1) failures.push(rel + ": expected exactly one <header>");
   }
-  // The site-wide selector is a shared layout contract. Catch missing or
-  // duplicated selectors on every visitor-facing page, not only directory pages.
-  if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel)) {
+  // The legacy Agricultural Services URL is intentionally a noindex redirect
+  // to Agricultural Resources; it is not a visitor-facing page and does not
+  // need the shared language selector. All indexable pages must have one.
+  const isLegacyRedirect = rel === "agricultural-services/index.html";
+  if (!/farm-profit-calculator/.test(rel) && !/^admin\//.test(rel) && !isLegacyRedirect) {
     const selectors = (html.match(/class="[^"]*site-language-select[^"]*"/gi) || []).length;
     if (selectors !== 1) failures.push(rel + ": expected exactly one site language selector, found " + selectors);
     const selectorOptions = new Set();
@@ -227,8 +246,8 @@ function normalizedSourceHref(value) {
 
 const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
-const hasLang = (html, lang) => { const match = html.match(/<html\\b[^>]*\\blang=["\\']([^"\\']+)["\\']/i); return !!match && match[1].split("-")[0].toLowerCase() === lang; };
-const hasRtl = (html) => /<html\\b[^>]*\\bdir=["\\']rtl["\\']/i.test(html);
+const hasLang = (html, lang) => { const match = html.match(/<html\b[^>]*\blang=["']([^"']+)["']/i); return !!match && match[1].split("-")[0].toLowerCase() === lang; };
+const hasRtl = (html) => /<html\b[^>]*\bdir=["']rtl["']/i.test(html);
 const newsPages = enabledLanguages.map((lang) => ({ lang, rel: languagePrefix(lang) + "agricultural-news/index.html" }));
 
 for (const item of newsPages) {

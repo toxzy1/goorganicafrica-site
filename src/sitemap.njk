@@ -4,42 +4,46 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>{{ site.url }}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  {# One homepage per enabled language; English is emitted only once. #}
   {% for lang in siteLanguages.languages %}
   {% if lang.enabled !== false %}
-  <url><loc>{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}</loc><changefreq>weekly</changefreq><priority>{% if lang.code == "en" %}1.0{% else %}0.9{% endif %}</priority></url>
   {% endif %}
   {% endfor %}
 
   <url><loc>{{ site.url }}/farm-profit-calculator/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-
   {% for locale in calculatorLocales %}
   <url><loc>{{ site.url }}/{{ locale.countryCode | lower }}/{{ locale.languageCode }}/farm-profit-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   {% endfor %}
 
-  <url><loc>{{ site.url }}/organic-farming/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/fr/organic-farming/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/ar/organic-farming/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/pt/organic-farming/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/sw/organic-farming/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  {# Public section indexes that have real rendered routes. #}
+  {% for section in ["organic-farming", "ebooks", "blog", "agricultural-news", "agricultural-finance", "agricultural-grants", "farm-machinery"] %}
+    {% for lang in siteLanguages.languages %}
+      {% if lang.enabled !== false %}
+  <url><loc>{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}{{ section }}/</loc><changefreq>{% if section == "blog" or section == "agricultural-news" %}weekly{% else %}monthly{% endif %}</changefreq><priority>0.8</priority></url>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
 
-  <url><loc>{{ site.url }}/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/fr/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/ar/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/pt/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/sw/ebooks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  {% for section in ["markets", "opportunities", "agricultural-intelligence", "farmer-decision-centre", "my-agriculture"] %}
+  <url><loc>{{ site.url }}/{{ section }}/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  {% endfor %}
 
+  {# Include every generated country-news page in each enabled language. #}
+  {% for country in agriculturalNewsMerged.countries %}
+    {% for lang in siteLanguages.languages %}
+      {% if lang.enabled !== false %}
+  <url><loc>{{ site.url }}/{% if lang.code != "en" %}{{ lang.code }}/{% endif %}agricultural-news/{{ country.slug }}/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {# Publishable eBook and blog detail pages only; review drafts stay out. #}
   {% for ebook in collections.ebooks %}
   {% if ebook.data.active != false and (ebook.data.translation_status or "published") != "in_review" %}
   <url><loc>{{ site.url }}{{ ebook.url }}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   {% endif %}
   {% endfor %}
-
-  <url><loc>{{ site.url }}/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/fr/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/ar/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/pt/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>{{ site.url }}/sw/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
   {% for post in collections.posts %}
   {% if post.data.active != false and (post.data.translation_status or "published") != "in_review" %}
@@ -48,7 +52,7 @@ eleventyExcludeFromCollections: true
   {% endfor %}
 
   <url><loc>{{ site.url }}/data-updates/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>{{ site.url }}/about/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>{{ site.url }}/contact/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>{{ site.url }}/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  {% for section in ["about", "contact", "privacy-policy"] %}
+  <url><loc>{{ site.url }}/{{ section }}/</loc><changefreq>yearly</changefreq><priority>{% if section == "privacy-policy" %}0.3{% else %}0.5{% endif %}</priority></url>
+  {% endfor %}
 </urlset>
