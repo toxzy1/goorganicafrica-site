@@ -2741,10 +2741,10 @@
             },
             {
               "crop": "chickpeas",
-              "area_ha": 0,
+              "area_ha": 60700,
               "production_mt": 81650,
               "reference_period": "2024/25",
-              "status": "Area table reports the legume category and separate crop values; do not map chickpeas to cowpea. Exact chickpea area should be transcribed from original table before use."
+              "status": "HCP area table reports cultivated area; not the same crop as cowpea and not accepted as cowpea data."
             },
             {
               "indicator": "winter_cereal_production",
