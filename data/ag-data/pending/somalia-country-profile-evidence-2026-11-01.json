@@ -1,0 +1,406 @@
+{
+  "country": {
+    "name": "Somalia",
+    "iso2": "SO",
+    "iso3": "SOM",
+    "currency": "SOS",
+    "currency_name": "Somali shilling",
+    "currency_notes": "USD is also widely used in commercial transactions; Somaliland uses the Somaliland shilling in its own markets. Preserve the currency and territory context of every price observation."
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "calculator_readiness": "not_ready_research_only",
+  "purpose": "Country evidence inventory for later crop- and livelihood-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
+  "evidence_sections": [
+    {
+      "id": "national_crop_production",
+      "topic": "seasonal cereal output and drought exposure",
+      "source_name": "FAO GIEWS Somalia Country Brief, reference date 11 March 2026",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SOM&lang=en",
+      "reference_date": "11 March 2026",
+      "observations": [
+        {
+          "item": "2025 Deyr maize and sorghum production",
+          "value": 15600,
+          "unit": "tonnes",
+          "period": "2025 secondary Deyr season, harvested January 2026",
+          "status": "FAO_estimate",
+          "finding": "Estimated lowest output on historical record, about 75% below the already-low average of the previous five years."
+        },
+        {
+          "item": "2025 aggregate cereal production",
+          "value": 147700,
+          "unit": "tonnes",
+          "period": "calendar year 2025",
+          "status": "FAO_estimate",
+          "finding": "About 4% above the five-year average, because the major 2025 Gu harvest was well above average despite the very poor Deyr harvest."
+        },
+        {
+          "item": "Deyr season contribution",
+          "value": 40,
+          "unit": "percent of annual cereal output approximately",
+          "period": "typical seasonal pattern",
+          "status": "FAO_context_estimate",
+          "finding": "The secondary Deyr harvest in central and southern regions typically accounts for about 40% of annual cereal output."
+        },
+        {
+          "item": "2025 Gu crop performance",
+          "status": "FAO_seasonal_assessment",
+          "finding": "Major Gu crops harvested in July 2025 in central and southern regions were well above average after abundant and well-distributed rainfall."
+        }
+      ],
+      "caveats": [
+        "The aggregate annual cereal total masks major seasonal and geographic differences; it must not be treated as a stable farm yield.",
+        "The 2025 Deyr figure is an estimate for maize and sorghum, not an annual crop-specific national series.",
+        "The brief reports drought, conflict and water/pasture constraints that can sharply change yields and livestock productivity."
+      ]
+    },
+    {
+      "id": "ministry_crop_production_records",
+      "topic": "government seasonal crop estimates",
+      "source_name": "Somalia Ministry of Agriculture and Irrigation, National Food Security Updates",
+      "source_url": "https://moa.gov.so/national-food-security-updates/",
+      "reference_date": "2024 Gu season figures reported on ministry page; accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Southern Somalia 2024 Gu cereal production",
+          "value": 64400,
+          "unit": "tonnes",
+          "period": "2024 Gu season",
+          "status": "ministry_estimate",
+          "finding": "Includes 14,100 tonnes of off-season production in late September/October 2024; reported 45% below the 2019–2023 long-term average."
+        },
+        {
+          "item": "Northwest Somalia 2024 Gu cereal harvest",
+          "value": 12500,
+          "unit": "tonnes",
+          "period": "2024 Gu season",
+          "status": "ministry_estimate",
+          "finding": "Reported 62% below the 2010–2023 average, attributed to poor and erratic rainfall, dry spells and pests."
+        }
+      ],
+      "caveats": [
+        "The ministry page gives regional aggregate cereal figures; it does not provide crop-specific area and yield in the page summary.",
+        "Southern and northwest geographic coverage should be retained as reported and not conflated with a single countrywide Gu total."
+      ]
+    },
+    {
+      "id": "agroecological_zones_and_crop_calendar",
+      "topic": "crop systems and production geography",
+      "source_name": "Food Security and Nutrition Analysis Unit (FSNAU), Agriculture methodology",
+      "source_url": "https://fsnau.org/analytical-approach/methodology/agriculture",
+      "reference_date": "methodology page accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Main cereal seasons",
+          "status": "institutional_methodology",
+          "finding": "Gu crop season is generally April to June; Deyr crop season is generally October to December."
+        },
+        {
+          "item": "Northwest production zone",
+          "status": "institutional_methodology",
+          "finding": "Parts of Awdal and Woqooyi Galbeed produce rainfed maize and sorghum, alongside livestock herding."
+        },
+        {
+          "item": "Coastal cowpea belt",
+          "status": "institutional_methodology",
+          "finding": "A coastal cowpea belt is identified in central and southern Somalia."
+        },
+        {
+          "item": "Shabelle and Juba river valleys",
+          "status": "institutional_methodology",
+          "finding": "Rainfed and irrigated maize are produced in the riverine valleys, with sesame as a cash crop."
+        },
+        {
+          "item": "Bay and Bakool sorghum belt",
+          "status": "institutional_methodology",
+          "finding": "Rainfed sorghum production is integrated with livestock production."
+        },
+        {
+          "item": "Domestic cereal contribution",
+          "value": 50,
+          "unit": "percent of cereal requirements approximately",
+          "status": "FSNAU_context_estimate",
+          "finding": "FSNAU states domestic production meets roughly half of population cereal requirements."
+        }
+      ],
+      "caveats": [
+        "These are broad livelihood and agroecological zones, not a complete current crop suitability map.",
+        "Riverine irrigation access, rainfall, insecurity and seasonal conditions vary within each zone."
+      ]
+    },
+    {
+      "id": "crop_area_yield_and_historical_survey_method",
+      "topic": "district-level crop production dataset availability",
+      "source_name": "FSNAU agriculture data methodology",
+      "source_url": "https://fsnau.org/analytical-approach/methodology/agriculture",
+      "reference_date": "accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Seasonal crop survey coverage",
+          "status": "dataset_methodology",
+          "finding": "FSNAU states it conducts seasonal crop production surveys from 1995 to current, covering crop-producing districts."
+        },
+        {
+          "item": "Available measures",
+          "status": "dataset_methodology",
+          "finding": "The district estimates include cereal type, planted area in hectares and production in metric tonnes; yield can be derived as production divided by area when compatible denominators are supplied."
+        },
+        {
+          "item": "Agricultural wage and cereal price monitoring",
+          "status": "dataset_methodology",
+          "finding": "Cereal market prices and agricultural wage rates are collected weekly in 36 major markets."
+        }
+      ],
+      "caveats": [
+        "The methodology page establishes dataset availability, not the actual latest district-level values. Download the relevant Gu/Deyr datasets and validate their coverage and metadata before creating calculator parameters.",
+        "Do not derive yield where planted area and harvested area definitions differ or where the same crop has multiple seasons."
+      ]
+    },
+    {
+      "id": "farmgate_price_observations",
+      "topic": "officially published farmgate price trend report",
+      "source_name": "Somalia Ministry of Agriculture and Irrigation, Report on Agriculture in Somalia, March 2025",
+      "source_url": "https://moa.gov.so/wp-content/uploads/2025/04/Report-on-Agriculture-in-Somalia-March-2025-1.pdf",
+      "reference_date": "price trend period 31 January–27 February 2025",
+      "observations": [
+        {
+          "item": "Mango farmgate price",
+          "value": "6,500 to 7,000",
+          "unit": "SOS as printed in report; unit/quantity basis requires verification",
+          "period": "31 Jan–27 Feb 2025",
+          "status": "ministry_reported_farmgate_price_trend"
+        },
+        {
+          "item": "Banana farmgate price",
+          "value": "1,456,000 to 828,000",
+          "unit": "SOS as printed in report; unit/quantity basis requires verification",
+          "period": "31 Jan–27 Feb 2025",
+          "status": "ministry_reported_farmgate_price_trend"
+        },
+        {
+          "item": "Watermelon farmgate price",
+          "value": "52,000 to 4,200,000",
+          "unit": "SOS as printed in report; unit/quantity basis requires verification",
+          "period": "31 Jan–27 Feb 2025",
+          "status": "ministry_reported_farmgate_price_trend"
+        },
+        {
+          "item": "White onion farmgate price",
+          "value": "1,118,000 to 1,015,000",
+          "unit": "SOS as printed in report; unit/quantity basis requires verification",
+          "period": "31 Jan–27 Feb 2025",
+          "status": "ministry_reported_farmgate_price_trend"
+        },
+        {
+          "item": "Sesame farmgate price",
+          "value": "2,080,000 to 3,360,000",
+          "unit": "SOS as printed in report; unit/quantity basis requires verification",
+          "period": "31 Jan–27 Feb 2025",
+          "status": "ministry_reported_farmgate_price_trend"
+        },
+        {
+          "item": "Mango retail price",
+          "value": "USD 0.25 to 0.50",
+          "unit": "USD; retail unit not fully specified in extracted summary",
+          "period": "February 2025",
+          "status": "ministry_reported_retail_price_trend"
+        },
+        {
+          "item": "Banana retail price",
+          "value": "USD 1.00",
+          "unit": "USD; retail unit not fully specified in extracted summary",
+          "period": "February 2025",
+          "status": "ministry_reported_retail_price"
+        },
+        {
+          "item": "Watermelon retail price",
+          "value": "USD 2.00 to 1.50",
+          "unit": "USD; retail unit not fully specified in extracted summary",
+          "period": "February 2025",
+          "status": "ministry_reported_retail_price_trend"
+        },
+        {
+          "item": "White onion retail price",
+          "value": "USD 1.50",
+          "unit": "USD; retail unit not fully specified in extracted summary",
+          "period": "February 2025",
+          "status": "ministry_reported_retail_price"
+        },
+        {
+          "item": "Sesame retail price",
+          "value": "USD 2.00",
+          "unit": "USD; retail unit not fully specified in extracted summary",
+          "period": "February 2025",
+          "status": "ministry_reported_retail_price"
+        }
+      ],
+      "caveats": [
+        "Several SOS farmgate values appear exceptionally large and may reflect the unit, quantity basis or currency notation in the report; do not normalize, convert or use them until the original table headers, market, quantity and exchange-rate basis are checked.",
+        "The report separates farmgate SOS and retail USD observations; these must remain separate.",
+        "The retail units are not sufficiently explicit in the accessible summary to use as per-kg prices."
+      ]
+    },
+    {
+      "id": "market_price_monitoring_system",
+      "topic": "weekly market price data and coverage",
+      "source_name": "FSNAU Market Price Monitoring System methodology",
+      "source_url": "https://fsnau.org/analytical-approach/methodology/markets",
+      "reference_date": "accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Market coverage",
+          "value": 36,
+          "unit": "markets",
+          "status": "FSNAU_monitoring_coverage"
+        },
+        {
+          "item": "Commodity coverage",
+          "value": 24,
+          "unit": "commodities",
+          "status": "FSNAU_monitoring_coverage",
+          "finding": "Weekly price monitoring covers cereals, other foods, livestock, energy and labour."
+        },
+        {
+          "item": "Historical data period",
+          "value": "1997–current",
+          "status": "FSNAU_dataset_availability",
+          "finding": "FSNAU reports market price data and exchange-rate series available from 1997 to current, including Somali and Somaliland shillings."
+        },
+        {
+          "item": "Market price types",
+          "status": "FSNAU_dataset_methodology",
+          "finding": "Monthly Market Data Updates include retail prices per kg and wholesale prices per 50 kg bag for sorghum, maize and rice."
+        }
+      ],
+      "caveats": [
+        "Market retail and wholesale prices are not farmgate prices; they are useful for market context and cross-checking only.",
+        "Territorial currency differences, market location, product grade and price unit must be preserved."
+      ]
+    },
+    {
+      "id": "world_bank_real_time_food_prices",
+      "topic": "subnational food price estimates",
+      "source_name": "World Bank Microdata Library, Monthly food price estimates by product and market, version 2026-10-05",
+      "source_url": "https://microdata.worldbank.org//catalog/4504",
+      "reference_date": "dataset version 5 October 2026; coverage 1 January 2007–1 October 2026",
+      "observations": [
+        {
+          "item": "Market coverage",
+          "value": 45,
+          "unit": "markets/selected subnational areas",
+          "status": "World_Bank_dataset_metadata"
+        },
+        {
+          "item": "Product coverage",
+          "status": "World_Bank_dataset_metadata",
+          "finding": "Selected estimates include camel and goat livestock, maize, milk, oil, rice, sorghum, wheat and wheat flour."
+        },
+        {
+          "item": "Method",
+          "status": "World_Bank_dataset_methodology",
+          "finding": "Weekly updated estimates combine direct price measurements with machine-learning imputation of missing observations, using WFP, FAO and selected national statistical sources."
+        }
+      ],
+      "caveats": [
+        "The dataset includes modelled estimates and is intended to illuminate local food price movements where direct measurement is incomplete.",
+        "These are food market prices, not a verified producer farmgate price series; identify the raw-source flag and product unit before use.",
+        "The latest dataset end date in this catalogue version is 1 October 2026, not a live quote."
+      ]
+    },
+    {
+      "id": "livestock_and_pastoral_economy",
+      "topic": "livestock production, drought and household income",
+      "source_name": "FAO GIEWS Somalia Country Brief and FSNAU livelihoods methodology",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SOM&lang=en",
+      "companion_source_url": "https://fsnau.org/analytical-approach/methodology/markets",
+      "reference_date": "FAO brief 11 March 2026; FSNAU methodology accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "2025–26 livestock stress",
+          "status": "FAO_assessment",
+          "finding": "Failed 2025 Deyr rains caused pasture and water shortages in central and northern pastoral areas; animal body condition deteriorated and livestock deaths from starvation and disease increased during the January–March 2026 Jilaal dry season."
+        },
+        {
+          "item": "Milk production",
+          "status": "FAO_assessment",
+          "finding": "FAO reports milk production at very low levels during the early 2026 drought period, reducing household food and income."
+        },
+        {
+          "item": "Pastoral income dependence",
+          "status": "FSNAU_context_estimate",
+          "finding": "FSNAU reports pastoralists rely on local and export livestock sales and livestock products for 40–80% of cash income."
+        }
+      ],
+      "caveats": [
+        "Livestock enterprise budgets require species, breed, herd structure, mortality, feed/water access, veterinary, migration and market data.",
+        "A drought-period assessment must not be generalized into a normal-year production assumption."
+      ]
+    },
+    {
+      "id": "macroeconomic_and_trade_context",
+      "topic": "agricultural and livestock contribution to the wider economy",
+      "source_name": "IMF Somalia Third Review under the Extended Credit Facility",
+      "source_url": "https://www.elibrary.imf.org/view/journals/002/2025/191/article-A001-en.xml",
+      "reference_date": "2025 report",
+      "observations": [
+        {
+          "item": "Real GDP growth",
+          "value": 4,
+          "unit": "percent",
+          "period": "2024",
+          "status": "IMF_estimate",
+          "finding": "IMF estimated 2024 growth at 4%, supported by robust agricultural and livestock output after ample 2023Q4 and 2024Q1 rainfall."
+        },
+        {
+          "item": "Inflation",
+          "value": 5.6,
+          "unit": "percent year-on-year",
+          "period": "December 2024",
+          "status": "IMF_reported_indicator"
+        },
+        {
+          "item": "Livestock exports",
+          "status": "IMF_trade_context",
+          "finding": "Strong livestock exports in response to regional demand contributed to the 2024 current-account context."
+        }
+      ],
+      "caveats": [
+        "Macroeconomic growth and export context do not provide crop-specific farmgate prices, yields or production costs.",
+        "The IMF figures are historical macro indicators, not current calculator input prices."
+      ]
+    }
+  ],
+  "calculator_data_gaps": [
+    "Extract FSNAU seasonal Gu and Deyr district crop production datasets, including crop-specific area, production and yield, and retain season, district, survey method and year.",
+    "Reconcile and validate the Ministry of Agriculture February 2025 farmgate price table: clarify unit/quantity basis, SOS notation, market locations and the unusually large figures before using any values.",
+    "Download weekly FSNAU market price and wage data for the selected crops and target markets; keep wholesale and retail series separate from farmgate series.",
+    "Extract World Bank 45-market monthly estimates and preserve direct-observation versus machine-learning-imputed status, product units and subnational geography.",
+    "Collect current producer prices for maize, sorghum, sesame, cowpea, banana, mango, watermelon, onion and other regionally relevant crops.",
+    "Obtain current input quotations for seed, fertiliser, pesticides, irrigation fuel/pumping, labour, land preparation, transport and post-harvest handling by region and season.",
+    "Build distinct irrigated riverine, rainfed cereal, cowpea and sesame enterprise budgets; do not apply one national yield or cost profile across agroecological zones.",
+    "For livestock models, collect species-specific purchase prices, herd composition, feed/water, veterinary costs, mortality, milk yield, liveweight and export-market transaction data.",
+    "Clarify the geographic and currency treatment of Somalia, Somaliland and other administered territories; do not combine SOS, Somaliland shillings and USD without explicit conversion dates and sources."
+  ],
+  "readiness_decision": {
+    "classification": "research_evidence_record_present",
+    "calculator_status": "directory_only_not_active",
+    "calculator_readiness": "not_ready_research_only",
+    "activation_blockers": [
+      "Current district-season crop area, production and yield series have not yet been extracted and validated",
+      "Ministry farmgate price observations have unresolved unit and currency-scale anomalies",
+      "No complete region-specific crop enterprise budgets or current input quotations",
+      "Market datasets largely describe wholesale/retail or modelled food prices rather than farmgate prices",
+      "Livestock systems require separate species- and livelihood-specific budgets",
+      "Territorial currency and market coverage need explicit handling"
+    ]
+  },
+  "safeguards": [
+    "Research-only evidence; not a live calculator dataset.",
+    "Do not activate Somalia or change calculator formulas based on this file.",
+    "Do not treat FAO seasonal aggregate cereal output as crop yield or farm-level production.",
+    "Do not substitute wholesale/retail market prices, imputed food-price estimates or export values for farmgate producer prices.",
+    "Do not normalize suspicious SOS figures until their original quantity and currency basis is verified.",
+    "Keep Somalia and Somaliland market/currency observations explicitly labelled by geography."
+  ]
+}
