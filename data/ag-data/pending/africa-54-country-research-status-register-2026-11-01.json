@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 37,
+    "countries_with_research_evidence_records": 38,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 7,
+    "countries_not_yet_researched_in_current_evidence_register": 6,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -316,9 +316,10 @@
     {
       "code": "MU",
       "name": "Mauritius",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/mauritius-country-profile-evidence-2026-11-01.json",
+      "review_status": "Statistics_Mauritius_2025_crop_specific_area_production_yields_open_field_and_protected_systems_2026_H1_production_Q2_2026_producer_price_index_FAO_catalogued_2024_agriculture_census_metadata_and_trade_food_import_context_recorded_absolute_current_farmgate_prices_and_enterprise_budgets_pending"
     },
     {
       "code": "MA",
