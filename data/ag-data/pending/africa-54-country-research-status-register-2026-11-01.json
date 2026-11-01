@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 33,
+    "countries_with_research_evidence_records": 34,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 11,
+    "countries_not_yet_researched_in_current_evidence_register": 10,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -228,9 +228,10 @@
     {
       "code": "GA",
       "name": "Gabon",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/gabon-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_June_2026_cereal_balance_RGA_2019_and_EPVA_2022_2023_sources_World_Bank_2025_crop_supply_and_farm_structure_and_2026_poultry_support_recorded_original_RGA_EPVA_tables_current_farmgate_prices_and_enterprise_budgets_pending"
     },
     {
       "code": "GM",
