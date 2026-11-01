@@ -1,0 +1,230 @@
+{
+  "country": "Djibouti",
+  "iso_alpha2": "DJ",
+  "iso_alpha3": "DJI",
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Research-only evidence on agricultural structure, strategic value chains, market dependence, seasonal and food-security risks, and source availability. Not a farm-profit calculator profile and not authorization to activate Djibouti.",
+  "currency": {
+    "code": "DJF",
+    "name": "Djiboutian franc",
+    "note": "Currency identification only. No dated, verified crop farm-gate prices or farm input quotations have been entered in this evidence file."
+  },
+  "context": {
+    "agroecology": "Arid to hyper-arid environment with severe water scarcity, limited arable land, variable rainfall and soil salinity constraints. Production is concentrated in irrigated horticulture and arboriculture along watercourses and in selected protected/controlled environments; pastoral livestock is a major rural livelihood.",
+    "key_geographies": [
+      "Djibouti City and surrounding horticultural supply areas",
+      "Dikhil",
+      "Tadjourah",
+      "Obock",
+      "Ali Sabieh",
+      "Arta"
+    ],
+    "caution": "Do not apply national averages uniformly across regions. Water access, irrigation energy, salinity, market distance, security and livestock mobility are material determinants of enterprise costs and yields."
+  },
+  "evidence": [
+    {
+      "topic": "Recent national agricultural policy and value-chain priorities",
+      "reference_date": "2026-10-22",
+      "source": "World Bank Group, AgriConnect and Djibouti: Creating jobs and boosting food security in a resource-constrained region",
+      "source_url": "https://blogs.worldbank.org/en/arabvoices/agriconnect-and-djibouti--creating-jobs-and-boosting-food-securi",
+      "observations": [
+        "The World Bank reports that Djibouti imports about 90 percent of its food.",
+        "Agriculture contributes approximately 4 to 5 percent of GDP, while water and arable land scarcity, low and erratic rainfall, climate shocks, limited finance and weak market connections constrain producers.",
+        "Livestock accounts for approximately three-quarters of agricultural GDP, according to the article.",
+        "The Port of Djibouti livestock terminal handled more than 1.2 million animals in 2024 while operating at less than 20 percent of capacity.",
+        "The terminal throughput is a trade/transit statistic and must not be represented as the number of animals raised domestically.",
+        "Local horticultural production meets approximately 10 percent of demand; vegetable imports exceeded USD 35 million in 2021.",
+        "The article cites tomato yields up to 300 tonnes/ha under greenhouse cover and 40 tonnes/ha in open fields as production potential/illustrative benchmarks, not measured national average yields.",
+        "Djibouti produces about 110 tonnes of dates annually and imports roughly 2,300 tonnes; the plan aims for 5,850 tonnes after 2030."
+      ],
+      "caveat": "Strategic-sector and market-context figures in a World Bank policy article, not a national agricultural census or farm survey. The tomato figures are illustrative attainable-yield examples and must not be used as guaranteed calculator yields. Livestock terminal throughput includes transit animals."
+    },
+    {
+      "topic": "Official ministry programme indicator",
+      "reference_date": "2026-08-29",
+      "source": "Ministry of Agriculture, Water, Fisheries, Livestock and Marine Resources, official website statistics dashboard",
+      "source_url": "https://www.maepe-rh.dj/",
+      "observations": [
+        {
+          "indicator": "Producers supported by the FAR Project",
+          "value": 500,
+          "unit": "producers",
+          "reference_year": 2026,
+          "source_note": "Official ministry dashboard attributes this indicator to projectfar.org and states it was observed on 2026-08-29."
+        },
+        {
+          "indicator": "Households benefiting from PROGRES",
+          "value": 11075,
+          "unit": "households",
+          "reference_year": 2017,
+          "source_note": "Historical programme figure; not a current count."
+        },
+        {
+          "indicator": "Women poultry farmers supported under DRSLP",
+          "value": 135,
+          "unit": "women",
+          "reference_period": "2015-2017",
+          "source_note": "Historical programme achievement; not a current national poultry-farmer count."
+        },
+        {
+          "indicator": "People benefiting from PRAREV",
+          "value": 107000,
+          "unit": "people",
+          "reference_year": 2020,
+          "source_note": "Historical fisheries programme beneficiary figure; not an agricultural production indicator."
+        }
+      ],
+      "caveat": "The ministry site exposed dashboard snippets but its statistics detail page was not machine-readable during this review. These are programme reach indicators, not national producer census totals or production measures."
+    },
+    {
+      "topic": "Recent food and agricultural market structure",
+      "reference_date": "2026-10-20",
+      "source": "USDA Foreign Agricultural Service, GAIN report DJ2026-0001, Djibouti Food and Agricultural Market Snapshot",
+      "source_url": "https://fas-prod.azureedge.us/data/gain/2026/10/djibouti-djibouti-food-and-agricultural-market-snapshot",
+      "observations": [
+        "USDA FAS reports that nearly 90 percent of Djibouti's food supply is imported because of the arid climate, limited arable land and constrained domestic agricultural production.",
+        "The report identifies demand from supermarkets, hotels, restaurants, institutional buyers, military facilities and expatriate communities.",
+        "Port, free-zone and regional transport infrastructure support food distribution, cargo consolidation and re-export opportunities."
+      ],
+      "caveat": "The landing page summary provides market structure and trade context, not domestic producer prices, production costs or farm-level gross margins. The attached full report should be reviewed for any additional product-specific import and market details before commercial use."
+    },
+    {
+      "topic": "2026 acute food insecurity and pastoral livelihood risk",
+      "reference_period": "May-June 2026 observed classification; July-December 2026 projection",
+      "publication_date": "2026-07-17",
+      "source": "Integrated Food Security Phase Classification (IPC), Djibouti: Acute Food Insecurity Situation May-June 2026 and Projection for July-December 2026",
+      "source_url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165256/",
+      "observations": [
+        {
+          "indicator": "Population in IPC Phase 3 or above, July-December 2026",
+          "value": 256000,
+          "unit": "people",
+          "share": 25,
+          "share_unit": "% of population",
+          "status": "projection"
+        },
+        {
+          "indicator": "Population in IPC Phase 4, July-December 2026",
+          "value": 30000,
+          "unit": "people",
+          "status": "projection"
+        },
+        {
+          "indicator": "Population in IPC Phase 3 or above, May-June 2026",
+          "value": 166000,
+          "unit": "people",
+          "share": 16,
+          "share_unit": "% of analysed population",
+          "status": "classification"
+        },
+        {
+          "indicator": "Population in IPC Phase 4, May-June 2026",
+          "value": 17000,
+          "unit": "people",
+          "status": "classification"
+        }
+      ],
+      "observations_text": [
+        "IPC identifies price shocks linked to import dependence, low purchasing power and strong El Niño conditions as drivers of worsening food insecurity.",
+        "Rural Tadjourah and rural Obock deteriorated to IPC Phase 4 in the July-December projection.",
+        "IPC recommends protecting agropastoral livelihoods through animal health, feed and water support, prioritising Obock, Dikhil and Tadjourah."
+      ],
+      "caveat": "These are food-security classifications and projections, not agricultural production or farm profitability statistics. Keep observed classifications and projected populations explicitly distinguished."
+    },
+    {
+      "topic": "Weekly staple-food market price dataset",
+      "source": "FEWS NET, Djibouti Weekly Staple Food Price Data",
+      "source_url": "https://fews.net/djibouti-weekly-fews-net-staple-food-price-data",
+      "observations": [
+        "FEWS NET states that weekly Djibouti staple-food price data have been collected since 2004.",
+        "The page provides downloadable XLSX, CSV and JSON formats."
+      ],
+      "caveat": "This is a useful time-series source for staple-food market/consumer prices, but the landing page alone does not establish the current latest observation, market coverage, commodity unit or farm-gate status. The dataset must be downloaded and its metadata and individual observations checked before any prices are quoted. Retail/market prices must not be relabelled as farm-gate prices."
+    },
+    {
+      "topic": "FAO seasonal and pastoral monitoring",
+      "reference_date": "2025-07-09",
+      "source": "FAO GIEWS Country Brief on Djibouti",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=DJI&lang=FR",
+      "observations": [
+        "FAO reported that the March-May 2025 diraac/sougum rainy season performed poorly in inland pastoral areas of Dikhil, Obock and Tadjourah, with cumulative rainfall estimated at about 50 percent below average.",
+        "FAO noted reduced rangeland regeneration, pasture and water availability, with negative effects on livestock body condition.",
+        "Between October 2024 and May 2025, the national average wheat-flour price rose about 10 percent; the May 2025 price was about 7 percent below the year-earlier level.",
+        "The national average rice price declined about 8 percent between August 2024 and May 2025; in May 2025 it was about 5 percent below the year-earlier level."
+      ],
+      "caveat": "Historical 2025 seasonal and consumer-price observations. These percentage changes are not absolute price levels, do not identify producer prices and must not be presented as current 2026 quotations."
+    },
+    {
+      "topic": "Agricultural production constraints and fertilizer context",
+      "publication_date": "2024-08-12",
+      "source": "French Treasury Directorate General, L'accès aux engrais à Djibouti",
+      "source_url": "https://www.tresor.economie.gouv.fr/Pays/DJ/l-acces-aux-engrais-a-djibouti-un-levier-mineur-de-la-lutte-contre-l-insecurite-alimentaire-a-djibouti-en-l-absence-de-potentiel-agricole",
+      "observations": [
+        {
+          "indicator": "Vegetable production",
+          "value": 9896,
+          "unit": "tonnes",
+          "reference_period": "2019/2020",
+          "source_note": "Attributed by the Treasury note to Djibouti's national statistics institute."
+        },
+        {
+          "indicator": "Arable land",
+          "value": 4.3,
+          "unit": "% of national territory",
+          "source_note": "Historical structural estimate quoted in the 2024 note."
+        },
+        {
+          "indicator": "Annual rainfall",
+          "value": 13,
+          "unit": "cm",
+          "source_note": "Approximate national context figure in the note; spatial and interannual variation is substantial."
+        },
+        {
+          "indicator": "Fertilizer use",
+          "value": 17,
+          "unit": "kg/ha/year",
+          "source_note": "Historical estimate attributed to World Bank 2021 in the 2024 note."
+        }
+      ],
+      "observations_text": [
+        "The note describes horticulture and arboriculture along watercourses as important forms of crop production.",
+        "It identifies water access and irrigation, rather than fertilizer availability alone, as critical constraints.",
+        "It describes limited farmer organisation, extension, finance, marketing services and cold-storage infrastructure as additional constraints.",
+        "It warns that large fertilizer import values passing through Djibouti largely reflect re-export to Ethiopia, not domestic fertilizer consumption."
+      ],
+      "caveat": "These are historical 2019/2020 and earlier estimates quoted in an April 2024 policy note, not current 2026 production statistics. The USD 579.3 million fertilizer imports in 2022 were largely re-export flows and must not be used as a measure of Djiboutian farm input use."
+    },
+    {
+      "topic": "National agricultural statistical data source",
+      "source": "FAOSTAT, Crops and livestock products dataset catalogue",
+      "source_url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+      "observations": [
+        "FAOSTAT provides annual country-level series for crop production, harvested area and yield, with coverage stated through 2024 in the dataset metadata.",
+        "FAO metadata notes that country data may originate from official statistics, surveys, administrative records or estimates based on expert observations."
+      ],
+      "caveat": "A country/crop extraction for Djibouti, including metadata and flags, is still required. Do not treat all FAOSTAT values as direct survey observations without checking their source flags and estimation status."
+    }
+  ],
+  "data_quality_and_use": [
+    "Djibouti's agricultural economy is structurally constrained by water scarcity, aridity, limited arable land and high dependence on imported food.",
+    "Livestock is a major rural livelihood and value chain, but livestock transit at the port must not be confused with domestic herd size or local animal production.",
+    "Horticulture, protected cultivation, water-efficient irrigation and dates are identified as strategic domestic value chains; their commercial viability depends heavily on water, energy, infrastructure, market access and buyer relationships.",
+    "The World Bank's greenhouse and open-field tomato yield figures are illustrative production potential, not verified national averages or guaranteed outcomes.",
+    "FEWS NET offers a long-running weekly staple price dataset, but prices must be downloaded and classified by market, date, commodity, unit and retail/wholesale/farm-gate status before use.",
+    "The current sources do not establish complete, current farm-gate price series or enterprise budgets for Djibouti.",
+    "The latest IPC projections show material food-security and pastoral risks in 2026; these should inform risk context but are not a substitute for agronomic data."
+  ],
+  "missing_data_before_calculator_use": [
+    "A verified, current agricultural census or national farm survey with producer counts, farm sizes, irrigation area, crop areas and livestock populations by region.",
+    "FAOSTAT country-level extraction for the major crops and livestock commodities through 2024, with source flags and methodological notes.",
+    "District/market-specific dated producer prices for tomatoes, onions, other vegetables, dates, milk, meat, live animals and fodder, with grade, unit and explicit farm-gate/wholesale/retail classification.",
+    "Download and inspect FEWS NET weekly staple-price CSV/XLSX/JSON to extract current market observations, commodities, locations, units and dates.",
+    "Current farmer-paid costs for water, pumping, electricity/fuel, greenhouse structures and repairs, seed/seedlings, fertilizer, crop protection, labour, land preparation, packaging, cooling, storage and transport.",
+    "Crop-specific yields and crop cycles under open-field, greenhouse and other protected production systems, separated by location, water source, salinity, season and management level.",
+    "Livestock herd and flock inventories by species and production system; animal purchase/sale prices; feed, water, veterinary, labour, transport and mortality costs; and reproductive/productivity parameters.",
+    "Validation of dates production, horticulture market-share estimates and livestock value-chain indicators against underlying ministry or statistical publications.",
+    "Buyer contracts, farm-gate price deductions, quality grades, post-harvest losses, marketable yields and realistic financing costs for the selected value chains."
+  ],
+  "recommendation": "Retain Djibouti as research-only. The strongest current evidence supports a livestock-led rural economy, a limited but strategically important irrigated/protected horticulture sector, date production potential, high import dependence and significant 2026 pastoral/food-security risks. Do not activate a calculator profile or use illustrative tomato yields as expected farm performance until current crop-level yields, local farm-gate prices and full water/energy/input/labour budgets are verified."
+}
