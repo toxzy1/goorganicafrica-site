@@ -2406,6 +2406,270 @@
         "do not activate calculator profiles until crop-specific multi-season yields, local prices and complete enterprise budgets are independently verified"
       ],
       "extraction_status": "Egypt now has a verified CAPMAS catalogue entry for the December 2024 crop-area and plant-production bulletin, a direct CAPMAS 2023/24 XLSX download URL, and official Ministry agricultural statistics bulletin routes. CAPMAS metadata confirms governorate-level winter, summer and Nili crop area/productivity/production indicators. Secondary 2024 output figures for wheat, maize, paddy rice and tomato are recorded only as cross-check leads; no calculator yield or farm budget is admitted until the primary spreadsheet is extracted and area/season definitions are reconciled."
+    },
+    {
+      "country_code": "DZ",
+      "country_name": "Algeria",
+      "evidence_status": "official_2025_cereal_estimates_and_2026_market_retail_bulletins_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "sources": [
+        {
+          "title": "FAO GIEWS Country Brief: Algeria",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=DZA&lang=ar",
+          "reference_date": "2026-06-30",
+          "observations": [
+            {
+              "crop": "total cereals",
+              "production_mt": 5000000,
+              "reference_year": 2026,
+              "status": "FAO forecast, approximately 30 percent above average; aggregate cereal total only, not a crop-specific yield or calculator input."
+            },
+            {
+              "indicator": "annual food inflation",
+              "value_percent": 2.2,
+              "reference_period": "2026-04",
+              "status": "FAO reports national annual food inflation; not a farm-gate price or input-cost measure."
+            }
+          ],
+          "quality_notes": [
+            "FAO reports 2026 winter cereal harvest began in mid-June and was expected to finish by mid-August; this is a forecast/outlook, not a final national crop survey.",
+            "FAO reports rainfall recovery after December 2025 supported crops, with especially favourable conditions in northeastern producing provinces; do not apply a single national yield assumption across rainfed and irrigated systems.",
+            "The 5 million tonne figure is total cereals and must not be split into wheat, barley, oats or maize without crop-specific source tables."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Algeria — 2025 cereal production table",
+          "publisher": "FAO GIEWS",
+          "url": "https://cb.apps.fao.org/country/DZA/pdf/DZA.pdf",
+          "reference_date": "2026-01-29",
+          "reference_period": "2020-2025",
+          "observations": [
+            {
+              "crop": "wheat",
+              "production_mt": 3000000,
+              "reference_year": 2025,
+              "status": "FAO estimate; crop-specific output, but no matching harvested-area denominator in this brief."
+            },
+            {
+              "crop": "barley",
+              "production_mt": 1150000,
+              "reference_year": 2025,
+              "status": "FAO estimate; crop-specific output, but no matching harvested-area denominator in this brief."
+            },
+            {
+              "crop": "oats",
+              "production_mt": 86000,
+              "reference_year": 2025,
+              "status": "FAO estimate; crop-specific output, but no matching harvested-area denominator in this brief."
+            },
+            {
+              "crop": "total cereals",
+              "production_mt": 4248000,
+              "reference_year": 2025,
+              "status": "FAO estimate; aggregate total must not be mapped to a single calculator crop."
+            }
+          ],
+          "quality_notes": [
+            "FAO table reports 2025 wheat 3.0m MT, barley 1.15m MT and oats 86,000 MT; 2024 values are 3.0m, 1.0m and 105,000 MT respectively.",
+            "These are national production estimates, not matched crop-cut yield observations. Obtain harvested area and province-level data before deriving yields."
+          ]
+        },
+        {
+          "title": "Algeria Ministry of Agriculture — Agricultural Statistics",
+          "publisher": "Ministry of Agriculture and Rural Development (MADRP)",
+          "url": "https://madr.gov.dz/الإحصائيات-الفلاحية/",
+          "status": "official_statistics_portal_historical_series_and_downloads",
+          "observations": [
+            {
+              "indicator": "cereal area",
+              "value_ha": 3385560,
+              "reference_period": "2010-2017 annual average",
+              "status": "Historical ministry series; not current area."
+            },
+            {
+              "indicator": "cereal production",
+              "value_mt": 4120000,
+              "reference_period": "2010-2017 annual average",
+              "status": "Historical ministry series; not current production."
+            },
+            {
+              "indicator": "livestock_population",
+              "value_head": 33600000,
+              "reference_period": "2010-2017 annual average",
+              "status": "Historical all-species total; not current herd estimate."
+            }
+          ],
+          "quality_notes": [
+            "The Ministry page describes historical averages for 2000-2009 and 2010-2017 and links downloadable statistical material; these values are too old for current calculator budgets.",
+            "The page reports cereal area and output, horticulture and livestock, but accessible text does not provide a current 2024/25 crop-specific series.",
+            "The ONS agricultural production dashboard currently returns a database query error, so it is not treated as an accessible numeric source."
+          ]
+        },
+        {
+          "title": "Mercuriale des prix des produits agricoles de large consommation — 29 October 2026",
+          "publisher": "Ministry of Agriculture, Rural Development and Fisheries (MADRP)",
+          "url": "https://madr.gov.dz/wp-content/uploads/2026/10/prix_29_Oct_2026_MADRP.pdf",
+          "reference_date": "2026-10-29",
+          "status": "official_national_average_retail_price_bulletin_not_farm_gate",
+          "observations": [
+            {
+              "commodity": "potato",
+              "price_dzd_per_kg": 91,
+              "minimum_dzd_per_kg": 86,
+              "maximum_dzd_per_kg": 96,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "National average observed in retail markets; not a producer price."
+            },
+            {
+              "commodity": "tomato",
+              "price_dzd_per_kg": 129,
+              "minimum_dzd_per_kg": 113,
+              "maximum_dzd_per_kg": 144,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "National average observed in retail markets; not a producer price."
+            },
+            {
+              "commodity": "green_pepper",
+              "price_dzd_per_kg": 135,
+              "minimum_dzd_per_kg": 122,
+              "maximum_dzd_per_kg": 147,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "National average observed in retail markets; not a producer price."
+            },
+            {
+              "commodity": "hot_pepper",
+              "price_dzd_per_kg": 149,
+              "minimum_dzd_per_kg": 134,
+              "maximum_dzd_per_kg": 163,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "National average observed in retail markets; not a producer price."
+            },
+            {
+              "commodity": "green_beans",
+              "price_dzd_per_kg": 215,
+              "minimum_dzd_per_kg": 194,
+              "maximum_dzd_per_kg": 236,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "Fresh green bean retail price; not dry cowpea and must not be mapped to Beans (Cowpea)."
+            },
+            {
+              "commodity": "dates",
+              "price_dzd_per_kg": 457,
+              "minimum_dzd_per_kg": 335,
+              "maximum_dzd_per_kg": 579,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "National retail average; dates are outside current 17 calculator commodity profiles."
+            },
+            {
+              "commodity": "broiler_chicken",
+              "price_dzd_per_kg": 468,
+              "minimum_dzd_per_kg": 454,
+              "maximum_dzd_per_kg": 481,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "Retail carcass/meat price, not live bird farm-gate sale price."
+            },
+            {
+              "commodity": "eggs",
+              "price_dzd_per_unit": 23,
+              "minimum_dzd_per_unit": 21,
+              "maximum_dzd_per_unit": 24,
+              "market_level": "retail",
+              "reference_date": "2026-10-29",
+              "status": "Retail egg price, not farm-gate price."
+            }
+          ],
+          "quality_notes": [
+            "Bulletin explicitly labels these as national average prices observed in retail markets and reports DA/kg (eggs per unit).",
+            "Do not use retail values as farm-gate selling prices; obtain wholesale/producer price series and specify grade, market, season and collection point.",
+            "The dated bulletin demonstrates an ongoing official market-price reporting route, useful for price monitoring but not sufficient for enterprise gross-margin calculations."
+          ]
+        },
+        {
+          "title": "Mercuriale des prix — MADRP daily agricultural price bulletin portal",
+          "publisher": "MADRP",
+          "url": "https://madr.gov.dz/mercuriale-des-prix/",
+          "status": "official_daily_retail_price_bulletin_archive",
+          "note": "The portal links dated daily price PDFs. Capture date, national/regional scope, commodity, grade and market level for each extract; current published series are retail observations, not farm-gate prices."
+        },
+        {
+          "title": "Grain and Feed Update — Algeria (AG2025-0001)",
+          "publisher": "USDA Foreign Agricultural Service, Algiers",
+          "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Grain+and+Feed+Update_Algiers_Algeria_AG2025-0001.pdf",
+          "status": "independent_crop_area_and_production_cross_check",
+          "reference_period": "2024/25 and 2025/26 marketing years",
+          "observations": [
+            {
+              "crop": "wheat",
+              "production_mt": 3000000,
+              "reference_period": "2024/25 MY",
+              "status": "USDA Post estimate; not official national survey result."
+            },
+            {
+              "crop": "barley",
+              "production_mt": 1200000,
+              "reference_period": "2024/25 MY",
+              "status": "USDA Post estimate; not official national survey result."
+            },
+            {
+              "crop": "wheat",
+              "area_ha": 2000000,
+              "reference_period": "2025/26 MY",
+              "status": "USDA planted-area estimate just over 2 million ha; not confirmed harvested area."
+            },
+            {
+              "crop": "barley",
+              "area_ha": 1000000,
+              "reference_period": "2025/26 MY",
+              "status": "USDA planted-area estimate around 1 million ha; not confirmed harvested area."
+            }
+          ],
+          "quality_notes": [
+            "USDA states Algeria's Ministry had not released detailed production figures for 2023/24 or 2024/25 at the time of its report; USDA estimates should remain independently attributed and not be labelled official Ministry figures.",
+            "USDA notes the 2024/25 crop-year estimate is based on crop conditions, satellite imagery and reports, and that the agricultural census conducted June-August 2024 was awaited.",
+            "USDA estimates planted area, while the calculator requires matching harvested area for yield; do not calculate yield from planted area."
+          ]
+        },
+        {
+          "title": "Algeria crop data documentation",
+          "publisher": "FEWS NET Data Exchange",
+          "url": "https://help.fews.net/fde/v3/algeria-country-book",
+          "status": "methodology_and_historical_data_coverage",
+          "note": "Documentation identifies Ministry of Agriculture crop statistics as the national source and describes Admin-1/wilaya reporting for 2001-2019. It defines the crop year October-September, winter cereals October-July, and summer crops January-August; potato is grown in three seasons. These seasonal definitions must be preserved when matching area and output."
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "tomato",
+        "hot_pepper",
+        "cucumber",
+        "watermelon",
+        "beans/cowpea",
+        "broilers",
+        "layers",
+        "cattle",
+        "goat",
+        "pig"
+      ],
+      "remaining_gaps": [
+        "obtain the 2024 Agricultural Census final report and tables, including sampling/coverage, crop-specific sown and harvested area, production, farm types and province-level estimates",
+        "extract current Ministry statistical downloads and identify the latest crop-year data for crop area, harvested area, production and yields by wilaya",
+        "obtain matched 2024/25 and 2025/26 wheat/barley crop area and output with clear crop-year and harvested-area definitions; keep FAO and USDA estimates separately attributed",
+        "obtain official maize, rice, tomato, pepper, cucumber, watermelon, pulse and cassava area/output series; do not infer from aggregate cereal or horticulture totals",
+        "obtain province-level farm-gate prices and separate them from MADRP national retail prices, wholesale prices and state-regulated procurement prices",
+        "obtain current seed, fertilizer, pesticide, labour, machinery, irrigation, energy, land rent and transport costs by wilaya and production system",
+        "obtain current species-specific cattle, goat, pig, broiler and layer herd/enterprise budgets, mortality, feed, veterinary and farm-gate output prices",
+        "verify the scope and final results of the 2024 Agricultural Census; do not rely on historical 2010-2017 ministry averages as current benchmarks",
+        "keep irrigated southern commercial farms separate from rainfed northern/high-plateau systems and document crop season"
+      ],
+      "extraction_status": "Algeria now has current FAO 2025 crop estimates and a June 2026 cereal outlook, an official MADRP daily retail-price bulletin dated 29 October 2026, an official Ministry historical agriculture-statistics portal, and USDA independent wheat/barley area and output estimates. FAO estimates 2025 wheat at 3.0m MT, barley at 1.15m MT and oats at 86,000 MT; FAO's 2026 total-cereal forecast is 5m MT. The 29 October 2026 MADRP bulletin reports national retail prices, including potato DZD 91/kg, tomato DZD 129/kg, green pepper DZD 135/kg, hot pepper DZD 149/kg, broiler meat DZD 468/kg and eggs DZD 23 each; these are retail only, not farm-gate. Current crop-specific harvested area, local yields, producer prices and itemized enterprise budgets remain outstanding. No Algeria calculator values are admitted."
     }
   ],
   "cross_country_sources": [
@@ -2426,6 +2690,7 @@
     }
   ],
   "next_steps": [
+    "For Algeria, obtain the 2024 Agricultural Census and current MADRP crop statistics by wilaya, extract matched crop-specific harvested area/output/yield by season, and obtain dated farm-gate prices plus itemized crop and livestock budgets; keep the October 2026 retail price bulletin separate from producer prices.",
     "For Egypt, extract the direct CAPMAS 2023/24 crop-area and plant-production XLSX by governorate and season; verify wheat, maize, paddy rice and tomato production against matched area and then obtain current farm-gate prices and itemized input budgets.",
     "For Egypt, obtain the CAPMAS 2023/24 crop area and plant production bulletin and Ministry Economic Affairs Sector tables, extract matched governorate crop area/output/yield by winter, summer and Nili season, and obtain current farm-gate prices and input budgets.",
     "For Angola, extract the linked ICAPP 2024/25 and 2023/24 Excel tables and MINAGRIF 2024 yearbook, compare crop-specific harvested area and production by province, extract survey farm-economics variables, and verify the 2025/26 legal reference prices against actual provincial farm-gate transactions before activation.",
