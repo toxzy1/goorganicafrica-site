@@ -1,0 +1,383 @@
+{
+  "country": {
+    "name": "Madagascar",
+    "iso2": "MG",
+    "iso3": "MDG",
+    "currency": "MGA",
+    "currency_name": "Malagasy ariary"
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Country evidence register entry. This file records sourced agricultural production, market and policy context and identifies data gaps. It is not a farm enterprise budget, verified farm-gate price feed or calculator profile.",
+  "calculator_readiness": "not_ready_research_only",
+  "evidence": [
+    {
+      "id": "MG-01",
+      "topic": "2026 paddy and maize outlook; 2027 climate risk",
+      "source": "FAO GIEWS Madagascar Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MDG",
+      "reference_date": "2026-09-23",
+      "values": [
+        {
+          "indicator": "2026 paddy production",
+          "value": null,
+          "unit": "tonnes",
+          "period": "2026",
+          "status": "provisional_estimate_without_published_volume",
+          "note": "FAO reports a year-on-year recovery from 2025 but production remains below the five-year average; national official figures were pending at publication."
+        },
+        {
+          "indicator": "2026 paddy harvested area",
+          "value": null,
+          "unit": "hectares",
+          "period": "2026",
+          "status": "qualitative_assessment",
+          "note": "Harvested area recovered to near-average; yields remained below average. No national numeric area or yield supplied in the brief."
+        },
+        {
+          "indicator": "2026 maize production",
+          "value": null,
+          "unit": "tonnes",
+          "period": "2026",
+          "status": "provisional_estimate_below_average",
+          "note": "FAO attributes the below-average estimate to reduced yields after rainfall deficits in the south."
+        }
+      ],
+      "methodology": "FAO GIEWS country monitoring and crop balance analysis.",
+      "caveats": [
+        "Do not turn qualitative outlook statements into numeric calculator yields.",
+        "2026 figures are provisional and differ by region; cyclone flooding affected some areas.",
+        "El Niño creates downside risk for 2027 planting and crop establishment."
+      ]
+    },
+    {
+      "id": "MG-02",
+      "topic": "Historical national crop production series",
+      "source": "World Trade Organization, Trade Policy Review: Madagascar, Table 4.1",
+      "source_url": "https://www.wto.org/english/tratop_e/tpr_e/s466_e.pdf",
+      "reference_date": "2025-01-08",
+      "values": [
+        {
+          "indicator": "Paddy rice production",
+          "value": 5320000,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "official_value_reported_by_authorities",
+          "note": "WTO table notes that 2023 information was provided by the authorities."
+        },
+        {
+          "indicator": "Maize production",
+          "value": 268062,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "reported_value",
+          "note": "National total; harvested area and corresponding crop yield not supplied in this table."
+        },
+        {
+          "indicator": "Beans production",
+          "value": 91158,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "reported_value",
+          "note": "National total; do not infer a yield without matching harvested area."
+        },
+        {
+          "indicator": "Cassava production",
+          "value": 2515542,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "reported_value",
+          "note": "National total."
+        },
+        {
+          "indicator": "Potatoes production",
+          "value": 268293,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "reported_value",
+          "note": "National total."
+        },
+        {
+          "indicator": "Sweet potatoes production",
+          "value": 1301244,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "reported_value",
+          "note": "National total."
+        },
+        {
+          "indicator": "Shelled groundnuts production",
+          "value": null,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "not_available",
+          "note": "Table marks 2023 as unavailable; preceding annual values are 58,110t (2017), 58,290t (2018), 58,500t (2019), 58,733t (2020), 58,988t (2021), 59,271t (2022)."
+        },
+        {
+          "indicator": "Cocoa production",
+          "value": 12916,
+          "unit": "tonnes",
+          "period": "2022",
+          "status": "reported_value",
+          "note": "2023 unavailable in the table."
+        },
+        {
+          "indicator": "Coffee production",
+          "value": 63527,
+          "unit": "tonnes",
+          "period": "2022",
+          "status": "reported_value",
+          "note": "2023 unavailable in the table."
+        },
+        {
+          "indicator": "Cloves production",
+          "value": 35394,
+          "unit": "tonnes",
+          "period": "2022",
+          "status": "reported_value",
+          "note": "2023 unavailable in the table."
+        }
+      ],
+      "methodology": "Transcribed national production observations from WTO Secretariat Table 4.1; no yield calculated because matching harvested-area denominators are not supplied in the same table.",
+      "caveats": [
+        "Production totals are not per-hectare yields or marketable output per farm.",
+        "Some commodity series end in 2022; missing 2023 values are explicitly retained as null.",
+        "Rice figure is paddy, not milled rice."
+      ]
+    },
+    {
+      "id": "MG-03",
+      "topic": "Agriculture sector structure, rural farm size and marketed output",
+      "source": "World Trade Organization, Trade Policy Review: Madagascar",
+      "source_url": "https://www.wto.org/english/tratop_e/tpr_e/s466_e.pdf",
+      "reference_date": "2025-01-08",
+      "values": [
+        {
+          "indicator": "Potentially arable land",
+          "value": 3500000,
+          "unit": "hectares",
+          "period": "report reference",
+          "status": "reported_estimate",
+          "note": "WTO report states 3.5 million hectares potentially arable out of 58 million hectares total land area."
+        },
+        {
+          "indicator": "Cultivated land",
+          "value": 2000000,
+          "unit": "hectares",
+          "period": "report reference",
+          "status": "approximate_reported_estimate",
+          "note": "WTO report says just over 2 million hectares cultivated."
+        },
+        {
+          "indicator": "Number of farmers",
+          "value": 2500000,
+          "unit": "farmers",
+          "period": "report reference",
+          "status": "reported_estimate",
+          "note": "National estimate in WTO report."
+        },
+        {
+          "indicator": "Share of gross agricultural production marketed",
+          "value": 40,
+          "unit": "percent",
+          "period": "report reference",
+          "status": "reported_estimate",
+          "note": "WTO report indicates only 40 percent of gross agricultural production is marketed."
+        }
+      ],
+      "methodology": "Secondary synthesis quoted by WTO Secretariat.",
+      "caveats": [
+        "These are national structural estimates, not farm-level production parameters.",
+        "Average holding size should not be inferred by dividing rounded estimates without source microdata."
+      ]
+    },
+    {
+      "id": "MG-04",
+      "topic": "Agricultural prices and farm-gate data limitations",
+      "source": "World Bank, Madagascar Agriculture Public Expenditure Review (AgPER)",
+      "source_url": "https://documents1.worldbank.org/curated/en/099145312092519386/pdf/IDU-52843189-d4fd-4fb0-9c66-6910b75319c9.pdf",
+      "reference_date": "2025-03",
+      "values": [
+        {
+          "indicator": "Latest price data available for many commodities in the study",
+          "value": 2014,
+          "unit": "year",
+          "period": "AgPER analysis",
+          "status": "reported_data_limitation",
+          "note": "The report says the most recent price data available to analysts dates back to 2014 for many commodities; rice data were available through 2019."
+        },
+        {
+          "indicator": "Annual average milled rice production",
+          "value": 2400000,
+          "unit": "tonnes",
+          "period": "2013-2019",
+          "status": "reported_average",
+          "note": "Compared with average consumption of 2.7 million tonnes."
+        },
+        {
+          "indicator": "Annual average rice imports",
+          "value": 374000,
+          "unit": "tonnes",
+          "period": "2013-2019",
+          "status": "reported_average",
+          "note": "Import volume, not domestic farm production."
+        },
+        {
+          "indicator": "Rice producer price discount to reference price",
+          "value": 19,
+          "unit": "percent",
+          "period": "2009-2019 average",
+          "status": "reported_analysis",
+          "note": "AgPER reports farmers sold rice on average 19 percent below the reference price over the analysed period."
+        }
+      ],
+      "methodology": "World Bank/FAO MAFAP-style price incentive analysis using rural observatory, customs and FAOSTAT sources; access costs and margins were partly estimated.",
+      "caveats": [
+        "This source explicitly warns that recent farm-gate and wholesale price data are scarce.",
+        "Do not use historical price incentive percentages as current prices or calculator margins.",
+        "Transport and other access costs were incomplete and likely underestimated."
+      ]
+    },
+    {
+      "id": "MG-05",
+      "topic": "Recent market price dataset coverage",
+      "source": "World Bank Real Time Food Prices, Madagascar",
+      "source_url": "https://microdata.worldbank.org/catalog/8240",
+      "reference_date": "2026-10-05",
+      "values": [
+        {
+          "indicator": "Markets covered",
+          "value": 481,
+          "unit": "markets",
+          "period": "2007-01-01 to 2026-10-01",
+          "status": "dataset_metadata",
+          "note": "Monthly food price estimates by product and market; version 2026-10-05."
+        },
+        {
+          "indicator": "Dataset latest reference date",
+          "value": "2026-10-01",
+          "unit": "date",
+          "period": "dataset metadata",
+          "status": "dataset_metadata",
+          "note": "Estimates are built from direct price measurements and machine-learning estimates of missing data using sources including WFP, FAO and national statistical offices."
+        }
+      ],
+      "methodology": "World Bank Real Time Prices dataset metadata; product/market-level series must be downloaded and individually screened before use.",
+      "caveats": [
+        "These are market food-price estimates and must not be treated as farm-gate producer prices.",
+        "Some observations are machine-learning estimates rather than direct market measurements.",
+        "Check product form, quality, unit, market, currency and date before comparison."
+      ]
+    },
+    {
+      "id": "MG-06",
+      "topic": "Agricultural productivity, inputs and public investment constraints",
+      "source": "World Bank, Madagascar Agriculture Public Expenditure Review (AgPER)",
+      "source_url": "https://documents1.worldbank.org/curated/en/099145312092519386/pdf/IDU-52843189-d4fd-4fb0-9c66-6910b75319c9.pdf",
+      "reference_date": "2025-03",
+      "values": [
+        {
+          "indicator": "Chemical fertilizer imports",
+          "value": 48000,
+          "unit": "tonnes",
+          "period": "2021",
+          "status": "reported_value",
+          "note": "Report gives 58,000 tonnes in 2019 and 2020, falling to 48,000 tonnes in 2021."
+        },
+        {
+          "indicator": "NPK share of mineral fertilizer use/imports",
+          "value": 53.6,
+          "unit": "percent",
+          "period": "2019-2021 average",
+          "status": "reported_average",
+          "note": "Nitrogen-based fertilizers represented a further 26 percent on average."
+        },
+        {
+          "indicator": "Average annual fertilizer distribution",
+          "value": 1360,
+          "unit": "tonnes",
+          "period": "2013-2022 average",
+          "status": "reported_average",
+          "note": "Government distribution through support programmes."
+        },
+        {
+          "indicator": "Average annual fertilizer distribution expenditure",
+          "value": 700000,
+          "unit": "USD",
+          "period": "2013-2022 average",
+          "status": "reported_approximate_average",
+          "note": "Report estimates approximately USD 700,000 per year."
+        }
+      ],
+      "methodology": "Historical national fertilizer import and public distribution figures compiled in the World Bank AgPER.",
+      "caveats": [
+        "These are national import/distribution totals, not current retail quotations or crop-specific application rates.",
+        "The report describes low certified seed and fertilizer use relative to targets and persistent irrigation maintenance constraints.",
+        "Current input prices and farm-level application costs are not provided."
+      ]
+    },
+    {
+      "id": "MG-07",
+      "topic": "Current agricultural livelihoods and yield context",
+      "source": "International Fund for Agricultural Development (IFAD), Madagascar country page",
+      "source_url": "https://www.ifad.org/en/w/countries/madagascar",
+      "reference_date": "accessed 2026-11-01",
+      "values": [
+        {
+          "indicator": "Average rice yield",
+          "value": "2.3-2.4",
+          "unit": "tonnes per hectare",
+          "period": "IFAD country context; reference period not explicitly stated on page",
+          "status": "reported_range",
+          "note": "IFAD describes average yields as well below global standards; treat as broad contextual range, not a current district-level yield."
+        },
+        {
+          "indicator": "Agriculture, livestock, fisheries and forestry share of GDP",
+          "value": 30,
+          "unit": "percent (nearly)",
+          "period": "country context",
+          "status": "reported_approximate",
+          "note": "Combined sectors."
+        },
+        {
+          "indicator": "Share of labour force employed by agriculture, livestock, fisheries and forestry",
+          "value": 70,
+          "unit": "percent (over)",
+          "period": "country context",
+          "status": "reported_approximate",
+          "note": "Combined sectors."
+        }
+      ],
+      "methodology": "IFAD country context summary.",
+      "caveats": [
+        "Rice yield range is not crop-cutting evidence for a named region or production system.",
+        "Use only as a reasonableness check until matched with official harvested-area and production series."
+      ]
+    }
+  ],
+  "data_quality": {
+    "overall": "medium_for_historical_national_production_and_context_low_for_calculator_inputs",
+    "strengths": [
+      "WTO country review provides a national multi-crop production series through 2023 for several major crops.",
+      "FAO GIEWS provides a current 2026 crop outlook and identifies regional weather risks.",
+      "World Bank RTFP dataset has broad market coverage and recent metadata.",
+      "World Bank AgPER documents the scarcity and limitations of historical farm-gate and wholesale price observations."
+    ],
+    "limitations": [
+      "No validated current district-level farm-gate prices were extracted.",
+      "No current crop-specific enterprise budgets with input quantities, labour days, irrigation, transport and other costs were identified.",
+      "Matching crop harvested-area denominators were not obtained for the WTO 2023 production observations; yields must not be invented.",
+      "Livestock inventory and animal-product price series need further official extraction.",
+      "Market price estimates include imputed observations and are not equivalent to producer prices."
+    ]
+  },
+  "missing_before_calculator_activation": [
+    "Official crop area and yield tables with geography, production system and reference year for priority crops.",
+    "Current farm-gate prices by crop, quality, unit, district/market and observation date.",
+    "Current local quotations for seed, fertilizer, crop protection, labour, land preparation, irrigation, energy and transport.",
+    "Crop-specific enterprise budgets or validated agronomic input recommendations for at least the priority commodities.",
+    "Livestock production and sale-price evidence if livestock enterprises are to be supported.",
+    "Currency and unit validation against the existing calculator data schema and regression testing."
+  ],
+  "activation_recommendation": "Do not activate Madagascar from this evidence record alone. It is suitable for the research register and for prioritising subsequent data extraction; it is not yet a validated calculator profile."
+}
