@@ -125,7 +125,10 @@ for (const code of ['en','fr','ar','pt','sw']) {
   if (!translations.search || !translations.decisionCentre || !translations.search.noResults || !translations.decisionCentre.briefHeading || !translations.decisionCentre.goal_market || !translations.decisionCentre.topic_maize) {
     throw new Error(`Search and Decision Centre translations are incomplete for ${code}.`);
   }
-  if (!translations.calc || !String(translations.calc.benchmarkWarning || '').trim()) {
+}
+const calculatorTranslations = JSON.parse(read('src/_data/siteTranslations.json'));
+for (const code of ['en','fr','ar','pt','sw']) {
+  if (!String(calculatorTranslations[code]?.translations?.calc?.benchmarkWarning || '').trim()) {
     throw new Error(`Calculator benchmark warning translation is missing for ${code}.`);
   }
 }
