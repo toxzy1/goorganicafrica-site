@@ -38,13 +38,17 @@
         "open_data_license_url": "https://lisgis.gov.lr/open-data-license",
         "catalogue_url": "https://liberia.opendataforafrica.org/data#topic=Agriculture",
         "known_revision_notice": {
-          "date": "2026-08",
-          "description": "LISGIS published an official notice stating that selected previously published survey tables and indicator values were corrected or revised.",
-          "verification_required": "Identify the affected tables and use the corrected release before extracting or publishing any affected figures.",
-          "notice_url": "https://update.lisgis.gov.lr/surveys.php?search=Annual+Agriculture"
+          "date": "2026-03-10",
+          "description": "The official LISGIS erratum for the Liberia Annual Agriculture Survey 2024 corrects wording on page 9 (fertilizer-use and uncertified-seed proportions) and page 16 (characteristics of holdings and land). The erratum does not list Table 10, Table 35 or Table 38 among the corrected sections.",
+          "affected_sections": [
+            "Executive Summary, page 9",
+            "Key Findings, page 16"
+          ],
+          "erratum_url": "https://www.lisgis.gov.lr/admin_area/surveys/pdf/erratum.pdf",
+          "corrected_report_portal_url": "https://update.lisgis.gov.lr/surveys.php?survey_id=25"
         },
         "license_and_use": "The LISGIS open-data licence page lists the 2024 crop cultivation, crop loss, crop production/yield, inputs, labour and livestock/poultry aggregate datasets as CC BY 4.0. Confirm the licence for each selected table or download before redistribution.",
-        "extraction_status": "Table 10 and selected labour-cost tables have been transcribed as provisional observations from the published report. All Liberia numeric observations remain on hold because LISGIS issued an August 2026 correction notice and the affected tables have not yet been identified.",
+        "extraction_status": "Table 10 and selected labour-cost tables have been transcribed as provisional observations from the published report. The March 10 2026 erratum identifies edits to the Executive Summary and Key Findings, not Tables 10, 35 or 38. However, the LISGIS portal also displays a general August 2026 revision notice with unclear scope. More importantly, the published Table 10 yield column does not reconcile arithmetically with harvested quantity divided by harvested area. Keep all Liberia values on hold pending source-table clarification and confirmation of the August notice scope.",
         "priority_commodities": [
           "rice",
           "cassava",
@@ -59,14 +63,15 @@
           "pig"
         ],
         "remaining_gaps": [
-          "resolve August 2026 LISGIS erratum and identify affected tables",
           "current farm-gate and market selling prices by location",
           "verified seed and planting-material prices",
           "current fertilizer and crop-protection costs",
           "crop-specific low/expected/high yield ranges or a defensible multi-year method",
           "livestock purchase, feed, veterinary, mortality and output-price benchmarks",
           "regional production-cost profiles and farm-system assumptions",
-          "confirm crop taxonomy for beans and pepper before mapping to existing commodity profiles"
+          "confirm crop taxonomy for beans and pepper before mapping to existing commodity profiles",
+          "confirm whether the general August 2026 LISGIS revision notice affects LAAS-2024 Tables 10, 35 or 38",
+          "obtain LISGIS clarification on the Table 10 yield denominator and reconcile published yields against production and harvested area"
         ],
         "table_references": [
           "Table 10, planted area, harvested area, harvested quantity and yield, report page 37.",
@@ -328,8 +333,16 @@
           "Cassava yield is timing-specific: only 28.3% of cassava households reported harvesting during the survey reference period, and the report warns that annual output may be understated.",
           "A single national yield observation is not a low/expected/high calculator range.",
           "Daily labour and other service-payment averages cannot be converted into per-hectare budgets without activity duration, worker counts and farm-system assumptions.",
-          "Arithmetic review found that the report's published yield values do not consistently reconcile with harvested quantity divided by harvested area (for example, rice: 201,074 Mt / 139,707 ha = about 1.439 Mt/ha, while the table reports 2.0 Mt/ha). Do not use the published yield column or the recalculated ratio until LISGIS confirms the correct yield denominator and resolves the August 2026 erratum."
-        ]
+          "Arithmetic review found that the report's published yield values do not consistently reconcile with harvested quantity divided by harvested area (for example, rice: 201,074 Mt / 139,707 ha = about 1.439 Mt/ha, while the table reports 2.0 Mt/ha). Do not use the published yield column or the recalculated ratio until LISGIS confirms the correct yield denominator and resolves the August 2026 erratum.",
+          "The March 10 2026 LISGIS erratum identifies changes to the Executive Summary and Key Findings, not the crop-yield or labour tables transcribed here.",
+          "A separate August 2026 portal notice refers to selected corrected tables and indicators but does not identify the affected table numbers in the accessible notice; its relevance to LAAS-2024 remains to be confirmed."
+        ],
+        "additional_portal_revision_notice": {
+          "date": "2026-08",
+          "description": "The LISGIS survey portal also displays a general notice that selected previously published survey tables and indicator values were corrected or revised.",
+          "verification_required": "The accessible notice does not identify the affected report tables. Confirm whether it applies to LAAS-2024 and whether Tables 10, 35 or 38 are affected before promoting observations.",
+          "portal_url": "https://update.lisgis.gov.lr/surveys.php?search=Annual+Agriculture"
+        }
       }
     },
     {
