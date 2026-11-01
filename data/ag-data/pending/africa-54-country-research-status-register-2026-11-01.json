@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 30,
+    "countries_with_research_evidence_records": 31,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 14,
+    "countries_not_yet_researched_in_current_evidence_register": 13,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -204,9 +204,10 @@
     {
       "code": "GQ",
       "name": "Equatorial Guinea",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/equatorial-guinea-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_GIEWS_July_2026_2024_FAOSTAT_crop_totals_INEGE_2026_yearbook_and_cocoa_growth_IMF_productivity_context_and_IFAD_project_pipeline_recorded_land_area_discrepancy_and_farmgate_prices_enterprise_budgets_missing"
     },
     {
       "code": "ER",
