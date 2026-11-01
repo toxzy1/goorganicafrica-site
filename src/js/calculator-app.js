@@ -847,6 +847,17 @@
       "</p>";
     root.appendChild(summary);
 
+    // Clearly disclose when the selected country is using an Africa-wide benchmark.
+    // This is presentation-only; it does not change any calculator inputs or formulas.
+    var resultData = getCommodityCountryData(state.commodity, state.country);
+    if (resultData && resultData.data_quality === "benchmark") {
+      var benchmarkWarning = document.createElement("div");
+      benchmarkWarning.className = "calc-reference-box";
+      benchmarkWarning.style.borderLeft = "4px solid var(--soil)";
+      benchmarkWarning.textContent = T("calc", "benchmarkWarning");
+      root.appendChild(benchmarkWarning);
+    }
+
     // --- HERO PROFIT ---
     var isLoss = result.profit < 0;
     var hero = document.createElement("div");
