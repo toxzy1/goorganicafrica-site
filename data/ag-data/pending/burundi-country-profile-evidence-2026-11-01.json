@@ -1,0 +1,166 @@
+{
+  "title": "Burundi agricultural country profile evidence",
+  "version": 1,
+  "status": "research_only_not_published_to_calculator",
+  "created_at": "2026-11-01",
+  "country_code": "BI",
+  "country_name": "Burundi",
+  "purpose": "Country 26 in the 54-country evidence programme. Record official agricultural census sources, crop-production observations, dated market-price leads and unresolved farm-budget inputs. This is not an activated calculator profile.",
+  "sources": [
+    {
+      "title": "RGPHAE 2024 Agricultural Module Reports",
+      "publisher": "Institut National de la Statistique du Burundi (INSBU)",
+      "url": "https://insbudemo.insbu.bi/rapportModulesAgricoles",
+      "reference_period": "2024 general population, housing, agriculture and livestock census",
+      "available_material": [
+        "Volume III: Statistical Tables of the Basic Agricultural Module",
+        "Volume IV: Analysis of the Basic Agricultural Module",
+        "Volume I and II: Community module statistical tables and analysis",
+        "2025 volumes covering modern agro-pastoral holdings and producer organisations"
+      ],
+      "status": "priority_primary_national_source_download_and_extract_tables",
+      "note": "INSBU identifies this collection as the official statistical reference for Burundi's agricultural sector. The public page is JavaScript-rendered; obtain the linked PDF volumes and extract crop-specific harvested/planted area, production, yield definitions, regions, farm structure, input use and livestock observations directly from the tables before accepting values."
+    },
+    {
+      "title": "GIEWS Country Brief: The Republic of Burundi",
+      "publisher": "FAO Global Information and Early Warning System",
+      "url": "https://www.fao.org/giews/countrybrief/country/BDI/pdf_archive/BDI_Archive.pdf",
+      "reference_date": "2024-11-11",
+      "observations": [
+        {
+          "crop": "maize",
+          "production_thousand_mt": 280,
+          "reference_year": 2024,
+          "status": "FAO estimate; cereal table reports 2019-2023 average 274 thousand tonnes, 2023 280 thousand tonnes and 2024 forecast 280 thousand tonnes. Forecast is not a final census observation."
+        },
+        {
+          "crop": "rice/paddy",
+          "production_thousand_mt": 136,
+          "reference_year": 2024,
+          "status": "FAO estimate; cereal table reports 2019-2023 average 146 thousand tonnes, 2023 125 thousand tonnes and 2024 forecast 136 thousand tonnes. Paddy basis; not milled rice."
+        },
+        {
+          "crop": "sorghum",
+          "production_thousand_mt": 25,
+          "reference_year": 2024,
+          "status": "FAO estimate; cereal table reports 2019-2023 average 22 thousand tonnes, 2023 25 thousand tonnes and 2024 forecast 25 thousand tonnes."
+        },
+        {
+          "indicator": "aggregate cereal production",
+          "value_thousand_mt": 460,
+          "reference_year": 2024,
+          "status": "FAO forecast; aggregate only, not a crop-specific yield or calculator input."
+        }
+      ],
+      "quality_notes": [
+        "The report gives production estimates but not matching crop-specific harvested area in the cited table; do not calculate or infer yield from these production values.",
+        "Burundi has three crop seasons: A, B and C; season C is concentrated in marshlands and irrigated areas. Preserve season and production-system distinctions.",
+        "FAO notes localized flood losses and below-average bean production in 2024, so a single national crop average may conceal substantial seasonal and regional variation."
+      ]
+    },
+    {
+      "title": "PNISAN Food Prices",
+      "publisher": "Burundi National Food and Nutrition Security Information Platform; price observations attributed to World Food Programme",
+      "url": "https://pnisan.bi/prix-des-denrees?langue=en&periode=tout",
+      "reference_period": "Monthly market observations; latest published month shown as July 2026",
+      "observations": [
+        {
+          "commodity": "white maize",
+          "price": 1450,
+          "currency": "BIF",
+          "unit": "kg",
+          "price_type": "retail",
+          "reference_month": "2026-07",
+          "market_coverage": "29 markets",
+          "status": "National median retail price; middle-half market range 1300-1700 BIF/kg, full observed market range 1000-2500 BIF/kg. July value is marked provisional."
+        },
+        {
+          "commodity": "yellow beans",
+          "price": 2867,
+          "currency": "BIF",
+          "unit": "kg",
+          "price_type": "retail",
+          "reference_month": "2026-07",
+          "market_coverage": "29 markets",
+          "status": "National median retail price; not a farm-gate producer price."
+        },
+        {
+          "commodity": "cassava flour",
+          "price": 1567,
+          "currency": "BIF",
+          "unit": "kg",
+          "price_type": "retail",
+          "reference_month": "2026-07",
+          "market_coverage": "29 markets",
+          "status": "Processed product retail price; not fresh cassava root farm-gate value."
+        }
+      ],
+      "quality_notes": [
+        "PNISAN/WFP publishes monthly retail prices and validated observations; these must not be substituted for farm-gate output prices.",
+        "Separate maize grain from maize flour, yellow beans from other bean grades, and cassava flour from fresh cassava roots.",
+        "The platform provides downloadable price data; extract district/market-level observations and dates before using market-level estimates."
+      ]
+    },
+    {
+      "title": "Burundi Key Message Update: September 2026-January 2027",
+      "publisher": "FEWS NET",
+      "url": "https://fews.net/east-africa/burundi",
+      "reference_period": "September 2026 to January 2027",
+      "observations": [
+        {
+          "indicator": "staple food price movement",
+          "status": "FEWS NET reports most staple prices were relatively stable from August 2025 to August 2026, but 10-50 percent above five-year averages; bean prices increased around 10 percent year-on-year."
+        },
+        {
+          "indicator": "agricultural input constraints",
+          "status": "Fertilizer shortages, reduced seed stocks, higher labour and transport costs, foreign-currency constraints and fuel shortages are reported as factors affecting production and market access."
+        },
+        {
+          "indicator": "season A outlook",
+          "status": "Below-average production risk is reported for the upcoming Season A due to delayed rainfall onset, fertilizer shortages and reduced planting intentions."
+        }
+      ],
+      "quality_notes": [
+        "FEWS NET is a food-security analysis source, not a national farm-budget survey.",
+        "Use these findings as contextual risk flags and seek dated local input quotations and official crop survey data."
+      ]
+    },
+    {
+      "title": "FAO GIEWS Burundi country brief archive",
+      "publisher": "FAO",
+      "url": "https://www.fao.org/giews/countrybrief/country/BDI/pdf_archive/BDI_Archive.pdf",
+      "status": "historical_seasonal_and_market_context",
+      "note": "The November 2024 brief documents three production seasons and regional variation in maize retail prices. Use it for historical context only, not as a current price series."
+    }
+  ],
+  "priority_commodities": [
+    "maize",
+    "rice",
+    "beans",
+    "cassava",
+    "tomato",
+    "hot_pepper",
+    "broilers",
+    "layers",
+    "goat",
+    "cattle",
+    "pig"
+  ],
+  "remaining_gaps": [
+    "Download and extract INSBU RGPHAE 2024 Volume III basic agricultural statistical tables and Volume IV analysis; capture crop-specific area, production, yield definitions and province/commune breakdowns.",
+    "Extract the 2025 modern agro-pastoral holdings census tables for enterprise-level production and cost evidence where available.",
+    "Obtain matching harvested area and crop-specific yield observations for maize, paddy rice, beans, cassava and priority horticultural crops; keep Seasons A, B and C separate.",
+    "Extract dated producer/farm-gate prices by province, market, grade, product form and unit; keep these separate from PNISAN/WFP retail prices.",
+    "Obtain current farmer-paid prices for improved seed, fertilizer, crop protection, labour, mechanization, irrigation, land preparation and transport, including subsidy eligibility and actual farmer contribution.",
+    "Obtain livestock and poultry purchase prices, feed costs, veterinary costs, mortality, cycle length and output prices from official census tables and local supplier records.",
+    "Check currency denomination and any redenomination or exchange-rate reporting conventions in source tables before data entry."
+  ],
+  "extraction_status": "Burundi's official INSBU 2024 agricultural census modules are identified as the primary national source, but table-level crop extraction is still pending. FAO's November 2024 brief provides crop-specific production forecasts (maize 280 thousand tonnes, paddy rice 136 thousand tonnes and sorghum 25 thousand tonnes) but not matching harvested area, so no yields are calculated. PNISAN/WFP provides dated July 2026 retail medians for white maize, yellow beans and cassava flour; these are explicitly not farm-gate prices. FEWS NET's September 2026-January 2027 update flags fertilizer shortages and elevated input/transport costs. No calculator values are admitted.",
+  "publication_decision": "Do not activate Burundi in the farm-profit calculator until official crop area/yield tables, regional structure, dated farm-gate prices and farmer-paid input/labour costs have been extracted and reviewed.",
+  "next_steps": [
+    "Download INSBU RGPHAE 2024 Volume III and IV and extract the crop tables with source page numbers and definitions.",
+    "Obtain district/province-level farm-gate prices and current input quotations; do not use retail prices as producer prices.",
+    "Build season-specific evidence for A, B and C before considering low/expected/high calculator values.",
+    "Keep the evidence research-only; do not modify calculator formulas or existing ten active country profiles."
+  ]
+}
