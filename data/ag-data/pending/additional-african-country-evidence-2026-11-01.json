@@ -485,7 +485,7 @@
     {
       "country_code": "ML",
       "country_name": "Mali",
-      "evidence_status": "FAO_2026_country_brief_and_2024_crop_series_cross_check_identified",
+      "evidence_status": "FAO_catalogued_EAC_2023_2024_sample_survey_and_USDA_rice_price_production_crosschecks_identified",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: Mali",
@@ -556,6 +556,149 @@
           "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
           "coverage": "1961-2024",
           "status": "primary international statistical cross-check with source lineage metadata"
+        },
+        {
+          "title": "Agricultural Survey 2023-2024 (Enquête Agricole de Conjoncture, EAC)",
+          "publisher": "Planning and Statistics Unit of the Rural Development Sector (CPS/SDR), Ministry of Rural Development; catalogue hosted by FAO",
+          "url": "https://microdata.fao.org/index.php/catalog/3011",
+          "reference_period": "2023-2024",
+          "status": "priority_national_sample_survey_source_with_public_anonymised_microdata_catalogue",
+          "survey_design_and_scope": {
+            "coverage": "All regions except Kidal due to security constraints; Bamako district has limited agricultural activity.",
+            "unit_of_analysis": [
+              "family farms",
+              "household farm members",
+              "land plots",
+              "crops",
+              "livestock and poultry"
+            ],
+            "collection_rounds": [
+              "2023-06-15 to 2023-08-02",
+              "2023-12-14 to 2024-03-31"
+            ],
+            "sample_coverage_first_stage_pct": 86,
+            "sample_coverage_holdings_pct": 79.4,
+            "second_round_response_rate_pct": 58.3,
+            "methods": [
+              "GPS plot-area measurement",
+              "crop-cut yield measurement",
+              "weighed crop samples",
+              "input-use interviews",
+              "family and hired labour modules",
+              "livestock and poultry modules",
+              "production and commercialization module"
+            ],
+            "instruments": [
+              "QEAP1",
+              "QEAP2",
+              "Q5RDT yield measurement questionnaire"
+            ]
+          },
+          "quality_notes": [
+            "The FAO catalogue describes EAC as Mali's main annual agricultural statistics instrument, conducted by CPS/SDR with national coverage except Kidal in this round.",
+            "The survey experienced delays and incomplete sample coverage due to security and funding challenges. Coverage and weighting must be checked for each statistic before use.",
+            "The public microdata are anonymised and subject to confidentiality and use restrictions. Use published aggregates or authorized anonymised outputs; do not redistribute respondent-level records.",
+            "The yield measurement questionnaire uses objective crop cutting and plot measurements, making this a stronger basis for yield distributions than aggregate production totals."
+          ]
+        },
+        {
+          "title": "Rice Supplementary Annual Update for West Africa",
+          "publisher": "USDA Foreign Agricultural Service",
+          "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=2025+Rice+Supplementary+Annual+Update+for+West+Africa_Dakar_Senegal_SG2025-0011",
+          "publication_date": "2025",
+          "reference_period": "Marketing years 2024/25 and 2025/26",
+          "observations": [
+            {
+              "crop": "rice",
+              "production_mt": 1790000,
+              "production_basis": "milled rice",
+              "area_harvested_ha": 790000,
+              "reference_marketing_year": "2024/25",
+              "status": "USDA FAS estimate; forecast/estimate rather than a final national crop survey result; area and production correspond to marketing year."
+            },
+            {
+              "crop": "rice",
+              "production_mt": 1930000,
+              "production_basis": "milled rice",
+              "area_harvested_ha": 850000,
+              "reference_marketing_year": "2025/26",
+              "status": "USDA FAS forecast; do not treat as observed result."
+            },
+            {
+              "crop": "rice",
+              "farm_gate_price_fcfa_per_kg": 400,
+              "reference_date": "2025-03",
+              "status": "official-source price cited by USDA FAS for local rice; farm-gate price, not retail."
+            },
+            {
+              "crop": "rice",
+              "farm_gate_price_fcfa_per_kg": 380,
+              "reference_date": "2024-03",
+              "status": "official-source comparison price cited by USDA FAS."
+            },
+            {
+              "crop": "rice",
+              "retail_price_fcfa_per_kg": 550,
+              "reference_date": "2025-03",
+              "status": "consumer price; keep separate from producer price."
+            },
+            {
+              "crop": "maize",
+              "retail_price_fcfa_per_kg": 280,
+              "reference_date": "2025-03",
+              "status": "consumer retail price; not a farm-gate price."
+            },
+            {
+              "crop": "sorghum",
+              "retail_price_fcfa_per_kg": 310,
+              "reference_date": "2025-03",
+              "status": "consumer retail price; not a farm-gate price."
+            },
+            {
+              "crop": "millet",
+              "retail_price_fcfa_per_kg": 360,
+              "reference_date": "2025-03",
+              "status": "consumer retail price; not a farm-gate price."
+            }
+          ],
+          "quality_notes": [
+            "The rice figures are milled-rice marketing-year estimates/forecasts, while national crop survey data may report paddy. Do not compare or combine without conversion factors and crop-year alignment.",
+            "The March 2025 local rice farm-gate price is useful as a dated historical reference only; obtain current regional quotes before use.",
+            "USDA FAS reports conflict-related access restrictions and abandoned areas in parts of Gao, Mopti, Koulikoro, Sikasso and Ségou, so national estimates can conceal local variation."
+          ]
+        },
+        {
+          "title": "16th National Agricultural Executive Committee results for 2025 campaign",
+          "publisher": "Government of Mali",
+          "url": "https://gouvernement.ml/16eme-session-du-comite-executif-national-de-lagriculture-cena-les-resultats-de-la-campagne-2025-et-la-programmation-de-2026-examines-par-le-gouvernement/",
+          "reference_period": "2025 agricultural campaign; government review published 2026",
+          "observations": [
+            {
+              "indicator": "aggregate cereal production",
+              "value_mt": 11452540,
+              "reference_year": 2025,
+              "status": "Government-reported final campaign aggregate; not crop-specific."
+            },
+            {
+              "indicator": "controlled meat production",
+              "value_mt": 157775,
+              "reference_year": 2025,
+              "status": "Government-reported controlled meat volume; not a livestock farm-budget indicator."
+            },
+            {
+              "indicator": "collected milk",
+              "value_mt": 17238,
+              "reference_year": 2025,
+              "status": "Government-reported collected milk volume; not a farm-gate milk price or per-animal productivity figure."
+            },
+            {
+              "indicator": "fish production",
+              "value_mt": 122671,
+              "reference_year": 2025,
+              "status": "Government-reported national fish production; not part of the current 17 calculator profiles."
+            }
+          ],
+          "note": "The 2025 aggregate cereal production reported by the Government is 11,452,540 tonnes, compared with FAO's rounded estimate of 11.6 million tonnes. These are consistent at a broad level but should not be used as crop-specific data."
         }
       ],
       "priority_commodities": [
@@ -571,14 +714,16 @@
         "pig"
       ],
       "remaining_gaps": [
-        "extract official CPS/Ministry crop tables by region, crop and production system",
-        "match FAOSTAT 2024 crop production to harvested area and source flags",
-        "extract absolute dated market prices from national market information systems and FAO FPMA",
-        "obtain absolute regional fertilizer, seed, crop protection, labour, machinery and transport costs",
-        "obtain livestock and poultry budget inputs and output prices",
-        "account for conflict-related market and field-access differences, particularly Gao, Tombouctou, Kidal and Ménaka"
+        "download and inspect the published EAC 2023-2024 aggregate tables and codebook; identify the exact weighted crop-cut yield variables and region-level distributions",
+        "confirm whether the public microdata catalogue allows the intended analysis and use only authorized anonymised data or official aggregates",
+        "obtain EAC 2024-2025 or 2025-2026 results when released and compare consistent crop definitions",
+        "extract crop-specific maize, paddy rice, cowpea and vegetable harvested area and yields by region and production system",
+        "obtain current dated farm-gate prices for maize, rice, cowpea and vegetables; separate producer, wholesale and retail markets",
+        "obtain current absolute seed, fertilizer, pesticide, labour, mechanization, irrigation and transport costs by region",
+        "obtain livestock purchase, feed, veterinary, mortality, liveweight and output-price observations from EAC and DNPIA sources",
+        "record Kidal coverage exclusion and regional insecurity-related missingness in any national estimate"
       ],
-      "extraction_status": "Mali has recent FAO monitoring, crop-production cross-check leads and an interactive crop dashboard. Aggregate cereal totals and secondary crop figures are not sufficient to activate the 17 calculator commodity profiles."
+      "extraction_status": "A strong national survey source has now been identified: Mali's EAC 2023-2024 includes crop-cut yield measurement, GPS plot measurement, input use, labour, livestock and commercialization. It excludes Kidal and has incomplete sample coverage, so weights and coverage need careful review. USDA FAS supplies dated rice farm-gate and retail price cross-checks, but its milled-rice marketing-year figures must not be mixed with paddy survey data. No calculator values activated."
     },
     {
       "country_code": "CF",
@@ -655,6 +800,7 @@
     }
   ],
   "next_steps": [
+    "For Mali, obtain the EAC 2023-2024 public aggregate tables and codebook, extract weighted crop-cut yield distributions and cost modules, preserve the Kidal exclusion, and refresh dated farm-gate prices.",
     "For The Gambia, request the final E-NASS 2025 crop-cutting outputs and clarify the WTO report's crop-year/area definitions; keep rice upland and swamp systems separate, and obtain dated producer prices and farm input costs.",
     "For Mauritania, validate the autumn 2025 and 2024 rice campaign series against the original Ministry statistical bulletin, keep the seasonal figures separate from annual totals, then collect regional rice input/pumping costs and farm-gate prices.",
     "For Mauritania, visually inspect the Trarza yearbook PDF pages containing rice area and production, then obtain national EMEA annual survey tables and livestock census data.",
