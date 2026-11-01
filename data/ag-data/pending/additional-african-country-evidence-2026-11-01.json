@@ -347,7 +347,7 @@
     {
       "country_code": "GW",
       "country_name": "Guinea-Bissau",
-      "evidence_status": "FAO_2025_cereal_outlook_and_regional_crop_context_identified_national_crop_tables_pending",
+      "evidence_status": "2025_FAO_50x2030_agricultural_household_listing_completed_survey_programme_underway_historical_rice_series_quality_concerns",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: Guinea-Bissau",
@@ -379,6 +379,47 @@
           "publisher": "FAO",
           "url": "https://www.fao.org/giews/countrybrief/",
           "status": "monitoring_source_for_harvests_and_food_prices"
+        },
+        {
+          "title": "Listing of Agricultural Households 2025",
+          "publisher": "General Directorate of Agricultural Planning, Ministry of Agriculture and Rural Development; FAO/World Bank microdata catalogue",
+          "url": "https://datacatalog.ihsn.org/catalog/14249",
+          "reference_period": "2025-08 to 2025-11",
+          "status": "completed_national_agricultural_household_listing_and_sampling_frame_not_crop_production_survey_results",
+          "survey_design_and_scope": {
+            "coverage": "Rural areas; nationally and regionally representative listing frame. All sampled census districts were covered.",
+            "unit_of_analysis": [
+              "agricultural households",
+              "dwellings"
+            ],
+            "topics": [
+              "family farming",
+              "crops",
+              "livestock"
+            ],
+            "method": "Face-to-face computer-assisted interviews; field and digital supervision; weekly error detection and correction.",
+            "purpose": "Identify and enumerate agricultural households and establish an updated sampling frame for the integrated annual agricultural survey programme."
+          },
+          "quality_notes": [
+            "This is a listing operation and sample-frame exercise, not a crop-cutting yield survey. Do not interpret it as publishing crop production or yield values.",
+            "Microdata are subject to confidentiality and non-redistribution restrictions; use authorized access and publish only aggregated results."
+          ]
+        },
+        {
+          "title": "Selected Issues: Guinea-Bissau",
+          "publisher": "International Monetary Fund",
+          "url": "https://www.imf.org/-/media/files/publications/cr/2025/english/1gnbea2025002-print-pdf.pdf",
+          "publication_date": "2025-06-13",
+          "status": "official_data_quality_warning_and_rice_statistics_reconciliation_lead",
+          "note": "IMF staff report notes that official rice area and production series imply a broadly constant yield around 1.5 t/ha but are difficult to reconcile with the sharp rise in rice imports and rapid expansion of cashew plantations. The report cautions that official agricultural statistics are not systematically produced and may have severe quality issues. Do not treat the reported rice series as validated farm yield without independent reconciliation."
+        },
+        {
+          "title": "Guinea-Bissau Economic Update, Spring 2025",
+          "publisher": "World Bank",
+          "url": "https://documents1.worldbank.org/curated/en/099060525185042700/pdf/P507238-8180ac89-cbea-4130-907f-3c6c0cb675f6.pdf",
+          "publication_date": "2025-06",
+          "status": "cashew_sector_market_context",
+          "note": "World Bank reports cashew exports declined from 191,400 tonnes in 2023 to 167,500 tonnes in 2024, reflecting lower production, weaker demand and port/logistics constraints. Export volume is not equivalent to national farm production or a farm-gate price."
         }
       ],
       "priority_commodities": [
@@ -393,6 +434,7 @@
         "layers"
       ],
       "remaining_gaps": [
+        "obtain the 2025 Listing of Agricultural Households final report and confirm whether the planned 2026/27 integrated agricultural survey has produced crop-cutting, production, area, labour and farm-income outputs",
         "identify the national agricultural census or annual crop survey and obtain region-level crop area, production and yield tables",
         "confirm paddy versus milled rice definitions and local rice production systems",
         "obtain farm-gate rice, maize and cowpea prices with market, date, grade and unit",
@@ -400,12 +442,12 @@
         "obtain livestock and poultry farm-budget data",
         "confirm administrative region and sector coverage for the calculator"
       ],
-      "extraction_status": "FAO provides recent seasonal and market context, but accessible brief text does not supply the full crop-specific budgets needed. No calculator values admitted."
+      "extraction_status": "FAO/50x2030 records a completed 2025 rural agricultural-household listing that creates a new nationally and regionally representative sampling frame; it is not a crop-production survey. FAO GIEWS estimates 2025 aggregate cereal production at about 351,000 tonnes, but no crop-specific yields are admitted. IMF staff explicitly warn that official rice statistics are difficult to reconcile with imports and cashew-area expansion and may have severe quality problems. Treat the rice series as unverified until reconciled against new survey results and independent evidence."
     },
     {
       "country_code": "TD",
       "country_name": "Chad",
-      "evidence_status": "FAO_2026_brief_and_2024_cereal_aggregate_identified_crop_specific_regional_tables_pending",
+      "evidence_status": "FAO_2026_outlook_and_FEWS_NET_2010_2023_crop_archive_methodology_identified_current_crop_specific_extract_pending",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: Chad",
@@ -458,6 +500,27 @@
           "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
           "coverage": "1961-2024",
           "status": "preferred source for crop-specific national cross-checks, subject to source flags"
+        },
+        {
+          "title": "Chad Country Book: crop estimate data sources and methodology",
+          "publisher": "FEWS NET Data Exchange",
+          "url": "https://help.fews.net/fde/v3/chad-tchad-country-book",
+          "status": "crop_statistics_archive_and_methodology_documentation",
+          "coverage": "Historical crop statistics archive 2010-2023; province-level reporting described.",
+          "note": "FEWS NET identifies an INSEED-linked Open Data Portal with an Agriculture catalogue from which the 2010-2023 crop-statistics archive can be exported. Historical sources include annual joint crop-assessment missions involving the Government of Chad, FAO, WFP, CILSS, European Commission and FEWS NET. A 2017 methodology report describes a two-stage sample survey across 18 of 23 administrative regions covering the agricultural part of the country, with village and farm sampling and estimates intended to be valid at sub-prefectural and regional levels.",
+          "quality_notes": [
+            "The available country-book documentation says the crop series do not consistently identify production systems such as rainfed and irrigated.",
+            "The 2017 survey coverage of 18/23 regions must not be assumed to represent all current years or all provinces.",
+            "Crop-year is generally the Gregorian year in which the crop is planted; a two-year label may include cool off-season harvests into the following year.",
+            "Extract the underlying provincial crop data and metadata before using any values."
+          ]
+        },
+        {
+          "title": "Chad National Data Archive (ANAD)",
+          "publisher": "Institut National de la Statistique, des Études Économiques et Démographiques (INSEED)",
+          "url": "https://anad.inseed.td/index.php/home",
+          "status": "official_national_microdata_catalogue",
+          "note": "The catalogue lists national household and demographic studies but the currently visible study list does not itself establish a recent agricultural production survey. Search the linked Open Data Portal and agriculture data catalogue separately."
         }
       ],
       "priority_commodities": [
@@ -473,14 +536,16 @@
         "layers"
       ],
       "remaining_gaps": [
+        "export the INSEED-linked Open Data Portal Agriculture catalogue for 2010-2023 and preserve its crop, province, season and source metadata",
         "obtain official crop-specific production and harvested-area tables by agro-ecological zone and province",
         "distinguish Sahelian and Sudanian production calendars and crop systems",
         "extract dated producer and wholesale prices for maize, rice, cowpea and vegetables",
         "obtain seed, fertilizer, crop protection, irrigation, labour, mechanization and transport costs",
         "obtain livestock purchase, feed, veterinary and output-price budgets",
-        "account for regional access and security constraints when assessing whether national averages are representative"
+        "account for regional access and security constraints when assessing whether national averages are representative",
+        "locate the most recent joint Government/FAO/WFP/CILSS/FEWS NET crop assessment report and verify whether a 2024-2026 provincial series has been published"
       ],
-      "extraction_status": "The national cereal aggregate and aggregate cereal yield are useful context only. They cannot be used as commodity-specific calculator yields. No calculator values admitted."
+      "extraction_status": "FAO GIEWS reports 2025 aggregate cereal output around 3 million tonnes and uncertain 2026 crop prospects, but these are not commodity-specific. FEWS NET documents an INSEED-linked Agriculture archive for 2010-2023 and a historical joint crop-assessment methodology with provincial reporting and sample survey design; the underlying crop records have not yet been extracted. Keep Sahelian and Sudanian systems distinct and admit no calculator values."
     },
     {
       "country_code": "ML",
@@ -728,7 +793,7 @@
     {
       "country_code": "CF",
       "country_name": "Central African Republic",
-      "evidence_status": "FAO_2026_seasonal_and_market_context_identified_national_crop_tables_pending",
+      "evidence_status": "FAO_2026_seasonal_context_and_secondary_FAOSTAT_2024_crop_series_lead_identified_prefecture_budget_evidence_pending",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: Central African Republic",
@@ -758,6 +823,58 @@
           "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
           "coverage": "1961-2024",
           "status": "national crop series cross-check; inspect estimation flags"
+        },
+        {
+          "title": "Central African Republic agriculture and food statistics, 2024 crop series",
+          "publisher": "Natlas, secondary compilation of FAOSTAT and World Bank indicators",
+          "url": "https://natlas.org/country/central-african-republic/agriculture-and-food",
+          "reference_year": 2024,
+          "status": "secondary_FAOSTAT_sourced_crop_and_livestock_lead_not_primary_national_survey",
+          "observations": [
+            {
+              "crop": "cassava",
+              "production_mt": 1210000,
+              "status": "secondary FAOSTAT-sourced value; confirm FAOSTAT item, source flag and national estimate status"
+            },
+            {
+              "crop": "groundnuts",
+              "production_mt": 550000,
+              "status": "secondary FAOSTAT-sourced value; not one of the current 17 calculator commodity profiles"
+            },
+            {
+              "crop": "maize",
+              "production_mt": 200000,
+              "status": "secondary FAOSTAT-sourced value; matching harvested area and source flag required"
+            },
+            {
+              "crop": "rice",
+              "production_mt": 52868,
+              "status": "secondary FAOSTAT-sourced value; paddy/milled basis and matching harvested area required"
+            },
+            {
+              "crop": "goat meat",
+              "production_mt": 21739,
+              "status": "secondary FAOSTAT-sourced livestock product series; not a liveweight farm-gate price or production budget"
+            },
+            {
+              "crop": "pig meat",
+              "production_mt": 21218,
+              "status": "secondary FAOSTAT-sourced livestock product series; not a farm budget"
+            }
+          ],
+          "quality_notes": [
+            "These are secondary portal transcriptions, not a national crop survey or direct ministry release.",
+            "Do not derive yield without matching harvested area, crop definition and source flags from FAOSTAT.",
+            "National crop totals do not establish farm profitability, regional suitability or current local prices."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Central African Republic, February 2026",
+          "publisher": "FAO",
+          "url": "https://www.fao.org/giews/countrybrief/country/CAF/pdf/CAF.pdf",
+          "reference_date": "2026-02-13",
+          "status": "seasonal_context_crosscheck",
+          "note": "FAO reported 2025 northern millet and sorghum harvests near average, central/southern maize harvests benefiting from generally adequate rainfall, and localized flooding in August-September 2025 affecting yields in Basse-Kotto, Mbomou and Ouaka. Use this as seasonal context, not a numeric yield dataset."
         }
       ],
       "priority_commodities": [
@@ -773,13 +890,15 @@
         "layers"
       ],
       "remaining_gaps": [
+        "retrieve FAOSTAT 2024 item-level production, harvested area, yield and source flags for maize, paddy rice, cassava, tomato and livestock, then reconcile the secondary Natlas transcription",
         "obtain Ministry of Agriculture and FAO crop assessment tables by prefecture and production system",
         "extract crop-specific harvested area, production and yield with uncertainty notes",
         "obtain local producer/wholesale prices for maize, cassava, rice and vegetables",
         "obtain input, labour, transport and livestock budget observations",
-        "map regional access and security constraints to avoid treating inaccessible areas as representative"
+        "map regional access and security constraints to avoid treating inaccessible areas as representative",
+        "seek the Ministry/FAO annual crop assessment and prefecture-level crop-cutting or household survey outputs, including coverage and conflict-related exclusions"
       ],
-      "extraction_status": "FAO seasonal and market context is available, but it does not provide enough crop-specific budget evidence. No calculator values admitted."
+      "extraction_status": "FAO GIEWS provides 2026 seasonal, flood and access context. A secondary portal reproduces 2024 FAOSTAT-sourced crop and livestock production values, including cassava, maize and rice, but these have not been checked against the underlying FAOSTAT item records, source flags or matching harvested areas. No calculator yields, farm-gate prices or production budgets are admitted."
     }
   ],
   "cross_country_sources": [
@@ -800,6 +919,9 @@
     }
   ],
   "next_steps": [
+    "For Guinea-Bissau, obtain the 2025 agricultural-household listing final report and the 2026/27 integrated agricultural survey outputs; reconcile rice statistics against imports and cashew land-use changes before accepting yields.",
+    "For Chad, export the INSEED-linked Agriculture archive for 2010-2023 and inspect provincial crop/area series, season definitions and historical survey coverage before selecting any crop values.",
+    "For Central African Republic, retrieve the underlying 2024 FAOSTAT crop and livestock item records with source flags and matching harvested areas; then seek prefecture-level assessment and price evidence.",
     "For Mali, obtain the EAC 2023-2024 public aggregate tables and codebook, extract weighted crop-cut yield distributions and cost modules, preserve the Kidal exclusion, and refresh dated farm-gate prices.",
     "For The Gambia, request the final E-NASS 2025 crop-cutting outputs and clarify the WTO report's crop-year/area definitions; keep rice upland and swamp systems separate, and obtain dated producer prices and farm input costs.",
     "For Mauritania, validate the autumn 2025 and 2024 rice campaign series against the original Ministry statistical bulletin, keep the seasonal figures separate from annual totals, then collect regional rice input/pumping costs and farm-gate prices.",
