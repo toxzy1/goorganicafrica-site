@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 36,
+    "countries_with_research_evidence_records": 37,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 8,
+    "countries_not_yet_researched_in_current_evidence_register": 7,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -284,9 +284,10 @@
     {
       "code": "MG",
       "name": "Madagascar",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/madagascar-country-profile-evidence-2026-11-01.json",
+      "review_status": "WTO_2025_review_2023_paddy_maize_beans_cassava_potato_sweet_potato_and_2022_cash_crop_output_FAO_GIEWS_Sept_2026_crop_outlook_World_Bank_2025_AgPER_price_and_input_gaps_RTFP_481_market_dataset_recorded_current_farmgate_prices_and_crop_enterprise_budgets_missing"
     },
     {
       "code": "MW",
