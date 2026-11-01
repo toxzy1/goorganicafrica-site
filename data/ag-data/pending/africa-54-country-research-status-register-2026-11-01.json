@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 39,
+    "countries_with_research_evidence_records": 40,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 5,
+    "countries_not_yet_researched_in_current_evidence_register": 4,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -364,9 +364,10 @@
     {
       "code": "ST",
       "name": "São Tomé and Príncipe",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/sao-tome-and-principe-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_country_overview_cocoa_and_food_crop_priorities_INE_portal_and_September_2026_CPI_secondary_FAOSTAT_2024_cassava_and_coffee_series_government_cocoa_output_claim_conflicts_with_4kt_2024_25_secondary_estimate_IMF_food_price_transmission_and_EU_2024_agrifood_trade_recorded_farmgate_prices_and_enterprise_budgets_missing"
     },
     {
       "code": "SN",
