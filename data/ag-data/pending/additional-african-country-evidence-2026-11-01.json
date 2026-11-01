@@ -80,7 +80,7 @@
     {
       "country_code": "MR",
       "country_name": "Mauritania",
-      "evidence_status": "official_agriculture_and_livestock_statistics_sources_identified_partial_rice_and_regional_evidence_on_hold",
+      "evidence_status": "official_ministry_reported_autumn_2025_rice_production_area_and_yield_added_full_budget_evidence_pending",
       "sources": [
         {
           "title": "Agriculture et politique agricole en Mauritanie",
@@ -149,6 +149,58 @@
           "publisher": "ANSADE",
           "url": "https://portail.ansade.mr/accueil",
           "status": "official_data_portal"
+        },
+        {
+          "title": "Autumn 2025 rice campaign results, Ministry of Agriculture data reported by MADAR",
+          "publisher": "MADAR, reporting Ministry of Agriculture and Food Sovereignty statistics",
+          "url": "https://fr.madar.mr/actualites/augmentation-de-la-production-de-la-campagne-agricole-dautomne-2025-de-27-par-rapport-a-la-saison-precedente/",
+          "publication_date": "2026-01-28",
+          "reference_period": "Autumn 2025 campaign, with autumn 2024 comparison",
+          "observations": [
+            {
+              "crop": "rice/paddy",
+              "production_mt": 229353,
+              "area_ha": 48800,
+              "reported_yield_mt_per_ha": 4.7,
+              "reference_season": "autumn 2025",
+              "status": "Ministry figures as reported by MADAR; production divided by area is approximately 4.70 t/ha, internally consistent after rounding. Seasonal campaign figure, not annual national production."
+            },
+            {
+              "crop": "rice/paddy",
+              "production_mt": 180299,
+              "area_ha": 44864,
+              "reported_yield_mt_per_ha": 4.02,
+              "reference_season": "autumn 2024",
+              "status": "Ministry figures as reported by MADAR; production divided by area is approximately 4.02 t/ha, internally consistent after rounding. Seasonal campaign figure."
+            },
+            {
+              "crop": "rice/paddy",
+              "production_mt": 206005,
+              "reference_season": "autumn 2025",
+              "geography": "Trarza",
+              "status": "regional production figure reported by source; Trarza leads national autumn campaign"
+            },
+            {
+              "crop": "rice/paddy",
+              "production_mt": 13217,
+              "reference_season": "autumn 2025",
+              "geography": "Gorgol",
+              "status": "regional production figure reported by source"
+            },
+            {
+              "crop": "rice/paddy",
+              "production_mt": 10131,
+              "reference_season": "autumn 2025",
+              "geography": "Brakna",
+              "status": "regional production figure reported by source"
+            }
+          ],
+          "quality_notes": [
+            "This is a seasonal campaign series. Do not combine it with the broader 2024/25 campaign total of 481,854 tonnes on 97,444 hectares reported by the Mauritanian Information Agency; that broader campaign has a different time and crop-season scope.",
+            "The 2025 autumn yield is internally consistent with production divided by area: 229,353 / 48,800 = approximately 4.70 t/ha.",
+            "The 2024 autumn yield is internally consistent with production divided by area: 180,299 / 44,864 = approximately 4.02 t/ha.",
+            "The figures are not yet a calculator yield range. More seasons, regional variation, input costs, irrigation/pumping costs and farm-gate prices are required."
+          ]
         }
       ],
       "priority_commodities": [
@@ -169,9 +221,12 @@
         "extract producer prices, wholesale/retail prices and local market dates from official market sources",
         "obtain input, labour, irrigation, pumping, machinery and transport costs by irrigated and rainfed system",
         "obtain livestock purchase, feed, veterinary and output-price data from the livestock census and market sources",
-        "separate irrigated rice from rainfed crops and do not use a national blended assumption where systems differ"
+        "separate irrigated rice from rainfed crops and do not use a national blended assumption where systems differ",
+        "obtain the original Ministry campaign bulletin or statistical table underlying MADAR's 28 January 2026 report and confirm the seasonal definitions",
+        "obtain at least three comparable autumn seasons and region-level yield distributions before deriving low/expected/high rice assumptions",
+        "separate autumn, rainy-season, hot off-season and annual rice totals; do not combine overlapping crop calendars"
       ],
-      "extraction_status": "Mauritania has stronger official statistical infrastructure than initially apparent, including annual agricultural surveys and a general livestock census. A 2024 rice production/area pair and a Trarza regional yearbook are leads only; no calculator data activated pending source-table verification."
+      "extraction_status": "Mauritania now has a stronger seasonal rice evidence lead: Ministry-reported autumn 2025 and autumn 2024 production, area and yield are internally consistent. These are seasonal observations and not yet sufficient for a full calculator profile; farm-gate prices, input/pumping costs, labour, regional ranges and other commodity budgets remain missing."
     },
     {
       "country_code": "GW",
@@ -484,6 +539,7 @@
     }
   ],
   "next_steps": [
+    "For Mauritania, validate the autumn 2025 and 2024 rice campaign series against the original Ministry statistical bulletin, keep the seasonal figures separate from annual totals, then collect regional rice input/pumping costs and farm-gate prices.",
     "For Mauritania, visually inspect the Trarza yearbook PDF pages containing rice area and production, then obtain national EMEA annual survey tables and livestock census data.",
     "For Mali, extract CPS/Ministry regional crop tables and reconcile the FAOSTAT 2024 maize, paddy rice and watermelon series against matching harvested area.",
     "For The Gambia, locate the newest Ministry of Agriculture crop survey; do not use the 1988-2012 area-sown series as current harvested-area yields.",
