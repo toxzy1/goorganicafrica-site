@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 28,
+    "countries_with_research_evidence_records": 29,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 16,
+    "countries_not_yet_researched_in_current_evidence_register": 15,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -172,9 +172,10 @@
     {
       "code": "CD",
       "name": "Democratic Republic of the Congo",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/democratic-republic-of-congo-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_2026_seasonal_outlook_FAOSTAT_2024_aggregate_cereal_yield_USDA_2024_25_and_2025_26_marketing_year_estimates_and_AgA_2024_maize_forecast_recorded_province_level_prices_and_farm_budgets_missing"
     },
     {
       "code": "CI",
