@@ -565,6 +565,114 @@
         "The feed-sack comparison is unusable as a unit price until sack weight and formulation are identified.",
         "The article attributes cost pressure to fuel and fertilizer-market disruption; do not treat its May 2026 values as current November 2026 quotations."
       ]
+    },
+    {
+      "title": "Official Gazette No. 7492 — rules and supported prices for certified cereal and food/forage legume seeds, 2025/26",
+      "publisher": "Secrétariat Général du Gouvernement du Royaume du Maroc (Official Gazette)",
+      "url": "https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7492_Ar.pdf",
+      "publication_date": "2026-03-19",
+      "reference_period": "2025/26 agricultural season; R2 certified seed purchase and maximum supported retail prices",
+      "status": "primary_government_legal_schedule_historical_season_specific_certified_seed_prices_and_subsidy",
+      "observations": [
+        {
+          "commodity": "bread_wheat_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 380,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed; applies to the 2025/26 season, not automatically 2026/27."
+        },
+        {
+          "commodity": "durum_wheat_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 500,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "barley_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 380,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "oat_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 610,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "faba_bean_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 800,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "lentil_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 1150,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "chickpea_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 1150,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "bread_wheat_seed",
+          "seed_class": "R2",
+          "breeder_purchase_price_mad_per_quintal": 400,
+          "reference_season": "2025/26",
+          "status": "Official price used for calculating financial support paid to seed multipliers; not a farmer purchase price."
+        },
+        {
+          "commodity": "durum_wheat_seed",
+          "seed_class": "R2",
+          "breeder_purchase_price_mad_per_quintal": 500,
+          "reference_season": "2025/26",
+          "status": "Official price used for calculating financial support paid to seed multipliers; not a farmer purchase price."
+        },
+        {
+          "commodity": "barley_seed",
+          "seed_class": "R2",
+          "breeder_purchase_price_mad_per_quintal": 430,
+          "reference_season": "2025/26",
+          "status": "Official price used for calculating financial support paid to seed multipliers; not a farmer purchase price."
+        },
+        {
+          "indicator": "certified_seed_support",
+          "commodity": "bread_wheat_seed",
+          "subsidy_mad_per_quintal": 255,
+          "reference_season": "2025/26",
+          "status": "Official support rate for certified seed; subsidy must not be subtracted from or added to farmer price without confirming beneficiary and transaction mechanism."
+        },
+        {
+          "indicator": "certified_seed_support",
+          "commodity": "durum_wheat_seed",
+          "subsidy_mad_per_quintal": 235,
+          "reference_season": "2025/26",
+          "status": "Official support rate for certified seed."
+        },
+        {
+          "indicator": "certified_seed_support",
+          "commodity": "barley_seed",
+          "subsidy_mad_per_quintal": 285,
+          "reference_season": "2025/26",
+          "status": "Official support rate for certified seed."
+        }
+      ],
+      "quality_notes": [
+        "This is a primary legal source in Morocco's Official Gazette, dated 19 March 2026, and is stronger than unsourced or anonymous market-price testimony for the 2025/26 season.",
+        "The R2 maximum supported retail prices are season-specific and apply to certified seed; they must not be represented as ordinary seed prices or current 2026/27 quotations.",
+        "The same decree separately lists prices used to calculate support to seed multipliers; these are not the farmer's purchase prices.",
+        "The 2026/27 market indications already recorded from Finances News Hebdo are different in date and source type; keep them separate and investigate differences by seed class, variety, subsidy and region rather than averaging them.",
+        "No farmer invoice, actual point-of-sale receipt, or 2026/27 official retail schedule is provided by this source."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -583,7 +691,9 @@
     "For the 2026/27 campaign, obtain basin-level irrigation allocations and farm tariffs; national dam storage cannot be translated into farm water availability or irrigation cost.",
     "For seed, fertilizer and pesticide records, capture registered product/formulation and conformity evidence alongside dated supplier invoices; ONSSA's control framework confirms that input quality and labelling matter independently of price.",
     "For Marchouch and other cereal/lentil zones, obtain 2026/27 diesel invoices or pump receipts, litres consumed by operation and hectare, and dated tractor/harvester hire quotations; the May 2026 interview provides only one farmer's MAD 1,200-to-1,800/ha tractor-diesel comparison and an unquantified machinery-rental increase.",
-    "For livestock-feed costs, obtain supplier invoices that state sack weight, feed formulation, location and date; the May 2026 reported MAD 90-to-110–120 per sack comparison lacks the unit details needed for a per-kg calculator input."
+    "For livestock-feed costs, obtain supplier invoices that state sack weight, feed formulation, location and date; the May 2026 reported MAD 90-to-110–120 per sack comparison lacks the unit details needed for a per-kg calculator input.",
+    "Obtain the 2026/27 Official Gazette decree or Ministry/SONACOS schedule for certified R2 seed retail prices and support rates; the newly recorded Official Gazette No. 7492 is a 2025/26 schedule and must not be carried forward automatically.",
+    "Reconcile the 2025/26 Official Gazette R2 maximum supported retail prices (soft wheat MAD 380/q, durum wheat MAD 500/q, barley MAD 380/q) with 2026/27 trade-publication market indications (approximately MAD 400/q soft wheat/barley and MAD 400–450/q durum) using certified class, variety, subsidy treatment, region and actual sales receipts."
   ],
-  "conclusion": "Morocco remains research-only. The evidence register now contains 13 source records, including May 2026 farmer testimony on tractor-diesel and machinery-hire cost pressures. These are useful as dated stress indicators only: the diesel figure is one farmer's tractor-operation spending, machinery hire has no absolute rate, and feed sack weights/formulations are unspecified. Existing seasonal, regulatory and crop-survey evidence still does not provide a complete, current, representative farm budget or verified current input invoices. No calculator data are activated."
+  "conclusion": "Morocco remains research-only. The evidence register now contains 14 source records, including Morocco's Official Gazette No. 7492 (19 March 2026), a primary legal schedule of 2025/26 certified R2 seed prices and seed-support rates. The official schedule is valuable historical evidence, but it is not a 2026/27 price list and cannot be applied to ordinary seed. The 2026/27 market indications remain separate pending invoices and an updated official schedule. No calculator data are activated."
 }
