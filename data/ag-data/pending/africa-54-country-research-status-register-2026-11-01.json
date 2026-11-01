@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 31,
+    "countries_with_research_evidence_records": 32,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 13,
+    "countries_not_yet_researched_in_current_evidence_register": 12,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -212,9 +212,10 @@
     {
       "code": "ER",
       "name": "Eritrea",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/eritrea-country-profile-evidence-2026-11-01.json",
+      "review_status": "Ministry_2024_national_crop_area_and_horticulture_outputs_peer_reviewed_2015_2024_Dighe_Gala_Nefhi_irrigation_and_Asmara_wholesale_price_index_UN_2025_programme_results_and_FAO_Sept_2026_drought_risk_recorded_crop_specific_yields_farmgate_prices_and_enterprise_budgets_missing"
     },
     {
       "code": "SZ",
