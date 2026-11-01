@@ -1,0 +1,84 @@
+{
+  "title": "GoOrganicAfrica 44-country agricultural research evidence structural audit",
+  "audit_date": "2026-11-01",
+  "scope": "Structural audit of the country research register and referenced JSON evidence files; not a scientific revalidation of every source observation or a calculator-readiness certification.",
+  "result": "country_coverage_complete_structural_audit_passed_with_quality_gaps_and_ci_localization_failure",
+  "coverage": {
+    "canonical_registry_countries": 54,
+    "existing_active_calculator_profiles_listed_separately": 10,
+    "unique_research_evidence_country_codes": 44,
+    "countries_not_yet_researched": 0,
+    "unique_referenced_json_file_paths": 22,
+    "grouped_country_register_files": 2,
+    "country_records_in_grouped_files": 25,
+    "individual_country_files_including_morocco_follow_up": 20,
+    "individual_unique_country_records": 19,
+    "morocco_follow_up_duplicate_files_excluded_from_unique_country_count": 1
+  },
+  "structural_checks": [
+    {
+      "check": "Master register fetched and parsed as JSON",
+      "result": "pass"
+    },
+    {
+      "check": "Register summary totals reconcile to 54 countries (10 active profiles plus 44 research records)",
+      "result": "pass"
+    },
+    {
+      "check": "No country remains marked not yet researched",
+      "result": "pass"
+    },
+    {
+      "check": "All 22 unique evidence-file paths fetched and parsed as valid JSON",
+      "result": "pass"
+    },
+    {
+      "check": "Grouped evidence files contain 25 unique country records (16 additional-country records and 9 West African records)",
+      "result": "pass"
+    },
+    {
+      "check": "Individual evidence files contain 19 unique country records plus one Morocco follow-up duplicate",
+      "result": "pass"
+    },
+    {
+      "check": "All research records consistently use one schema and identical evidence depth",
+      "result": "not_passed_legacy_schema_variation"
+    }
+  ],
+  "quality_findings": [
+    "Evidence depth is uneven. Several earlier country records primarily identify official surveys, datasets, source leads and outstanding extraction tasks rather than validated crop-level tables and complete enterprise budgets.",
+    "Some countries share grouped evidence files; the country register must continue to be used as the authoritative mapping from ISO code to evidence record.",
+    "Older individual files use different field names and layouts. A future schema-normalization pass is recommended, but should preserve original observations and provenance.",
+    "The existence of a research evidence record does not establish calculator readiness.",
+    "All 44 research-only countries remain directory-only/not active; no formulas or active calculator profiles were changed."
+  ],
+  "calculator_readiness": {
+    "status": "not_certified",
+    "reason": "Country evidence coverage is complete, but current farmgate prices, crop-specific area/production/yield series, regional input quotations and validated crop enterprise budgets remain incomplete for multiple countries.",
+    "next_required_work": "Country-by-country source extraction, discrepancy resolution, dated farmgate price collection, regional crop budgets, schema mapping, translations and calculator tests."
+  },
+  "latest_ci_observation": {
+    "workflow": "Build and Validate Site",
+    "run_number": 2378,
+    "conclusion": "failure",
+    "successful_steps": [
+      "Validate agricultural source-quality monitor",
+      "Build site",
+      "Run site architecture checks",
+      "Validate UI localization keys and translated content artifacts"
+    ],
+    "failing_step": "Audit rendered pages for duplicate and mixed-language content",
+    "failure_summary": "The generated agricultural-news country pages contain incorrect html lang attributes across language variants; Arabic country pages also fail the dir=rtl requirement. The browser-smoke job was skipped.",
+    "scope_note": "This is a rendered-site localization validation failure and does not indicate JSON parse failure in the country evidence files."
+  },
+  "release_safeguards": [
+    "Do not merge or deploy without explicit user approval.",
+    "Do not activate any of the 44 research-only countries based on evidence-file presence.",
+    "Do not change existing calculator formulas or the 10 active country profiles during this evidence audit.",
+    "Treat the 10 existing active profiles as requiring a separate source-freshness and calculation audit."
+  ],
+  "references": {
+    "master_register": "data/ag-data/pending/africa-54-country-research-status-register-2026-11-01.json",
+    "latest_pr": "https://github.com/toxzy1/goorganicafrica-site/pull/112"
+  }
+}
