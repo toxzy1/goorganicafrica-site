@@ -13,9 +13,9 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 34,
+    "countries_with_research_evidence_records": 35,
     "existing_active_calculator_profiles_without_these_research_files": 10,
-    "countries_not_yet_researched_in_current_evidence_register": 10,
+    "countries_not_yet_researched_in_current_evidence_register": 9,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
   "countries": [
@@ -260,9 +260,10 @@
     {
       "code": "LS",
       "name": "Lesotho",
-      "classification": "not_yet_researched_in_current_evidence_register",
+      "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": null
+      "evidence_file": "data/ag-data/pending/lesotho-country-profile-evidence-2026-11-01.json",
+      "review_status": "FAO_Aug_2026_provisional_cereal_balance_and_import_requirements_BoS_2022_23_crop_area_output_yield_and_input_expenditure_Livestock_2022_23_inventory_LVAC_2025_crop_assessment_IFAD_wool_mohair_value_chain_recorded_latest_2025_26_final_crop_tables_current_farmgate_prices_and_crop_enterprise_budgets_pending"
     },
     {
       "code": "LR",
