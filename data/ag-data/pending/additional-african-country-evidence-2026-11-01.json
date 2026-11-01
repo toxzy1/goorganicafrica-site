@@ -2280,6 +2280,14 @@
       "evidence_status": "official_CAPMAS_2024_crop_and_livestock_statistics_and_2025_crop_area_bulletin_identified_crop_specific_yields_and_cost_series_extraction_pending",
       "sources": [
         {
+          "title": "Crop Areas and Plant Production 2023/24 — CAPMAS Excel dataset",
+          "publisher": "Central Agency for Public Mobilization and Statistics (CAPMAS), Egypt",
+          "url": "https://www.capmas.gov.eg:8080/Publication/Data/bd1454bf-e4e7-478a-9913-fbfd1b5a133b.xlsx",
+          "reference_period": "2023/2024",
+          "status": "direct_CAPMAS_XLSX_download_link_identified",
+          "note": "Direct CAPMAS spreadsheet URL surfaced in a source register checked 9 October 2026. It is the primary file to extract for crop-by-governorate planted/cropped area and production. Download and inspect the workbook before transcribing yields."
+        },
+        {
           "title": "Annual Bulletin of Statistical Crop Area and Plant Production 2023/2024",
           "publisher": "Central Agency for Public Mobilization and Statistics (CAPMAS), Egypt",
           "url": "https://www.capmas.gov.eg/",
@@ -2316,6 +2324,59 @@
           "reference_period": "2010 census baseline and annual updates",
           "status": "structural_baseline_not_current_farm_budget",
           "note": "The 2010 Agricultural Census is a structural baseline, not a substitute for current annual area, yield, farm cost and livestock data. Verify newer census or agricultural holding survey outputs before using structural counts."
+        },
+        {
+          "title": "CAPMAS Crop Areas and Plant Production bulletin, December 2024 edition",
+          "publisher": "CAPMAS, Egypt",
+          "url": "https://old.capmas.gov.eg/Pages/Publications.aspx?YearID=23541&page_id=5104",
+          "publication_date": "2024-12",
+          "reference_period": "2023/2024",
+          "status": "official_annual_publication_governorate_level_catalogue",
+          "note": "CAPMAS catalogue describes winter, summer and Nili crop area, productivity and production indicators, including annual cropped/planted area, wheat area and production. The catalogue reports governorate-level data. The exact 2023/24 spreadsheet has been identified separately."
+        },
+        {
+          "title": "Egypt crop production series, 2023–2024 (CAPMAS/FAOSTAT source compilation)",
+          "publisher": "AgFin Atlas, secondary data compilation",
+          "url": "https://agrifinatlas.com/egypt/statistics/",
+          "reference_period": "2023 and 2024",
+          "status": "secondary_transcription_for_cross_check_only_not_calculator_source",
+          "observations": [
+            {
+              "crop": "wheat",
+              "production_mt": 9436585,
+              "reference_year": 2024,
+              "status": "Secondary compilation attributes the 2024 value to CAPMAS; verify against the primary CAPMAS workbook."
+            },
+            {
+              "crop": "maize_white_and_yellow",
+              "production_mt": 6528062,
+              "reference_year": 2024,
+              "status": "Secondary compilation; verify primary workbook and crop definition."
+            },
+            {
+              "crop": "rice_paddy",
+              "production_mt": 5017083,
+              "reference_year": 2024,
+              "status": "Secondary compilation; paddy definition; verify primary workbook."
+            },
+            {
+              "crop": "tomato",
+              "production_mt": 6970851,
+              "reference_year": 2024,
+              "status": "Secondary compilation; verify primary CAPMAS workbook and harvested-area denominator."
+            },
+            {
+              "crop": "watermelon",
+              "production_mt": null,
+              "reference_year": 2024,
+              "status": "Not separately extracted in the accessible summary; obtain primary tables."
+            }
+          ],
+          "quality_notes": [
+            "The secondary page labels CAPMAS as the source but is not the primary statistical publication.",
+            "Do not derive crop yield from production totals without matched harvested area and crop-season alignment.",
+            "Egypt has three crop seasons (winter, summer, Nili); annual cropped area can count the same physical land more than once and must not be confused with cultivated land area."
+          ]
         }
       ],
       "priority_commodities": [
@@ -2334,7 +2395,7 @@
         "pig"
       ],
       "remaining_gaps": [
-        "retrieve the exact CAPMAS 2023/24 Statistical Bulletin of Crop Area and Plant Production and extract crop-by-governorate harvested area, output and yield",
+        "download and extract the direct CAPMAS 2023/24 Crop Areas and Plant Production XLSX (bd1454bf-e4e7-478a-9913-fbfd1b5a133b) and match crop-specific area, output and yield by governorate and winter/summer/Nili season",
         "retrieve the Ministry of Agriculture Economic Affairs Sector 2023 agricultural statistics bulletin and compare the matched series",
         "confirm whether rice statistics refer to paddy or milled rice and distinguish summer, winter and Nili seasons",
         "separate old-land, new-land, reclaimed desert, irrigated and rainfed production systems where the data support it",
@@ -2344,7 +2405,7 @@
         "obtain and document the current agricultural census or holding survey frame and update the 2010 structural baseline",
         "do not activate calculator profiles until crop-specific multi-season yields, local prices and complete enterprise budgets are independently verified"
       ],
-      "extraction_status": "Egypt is a high-priority candidate because CAPMAS and the Ministry of Agriculture maintain annual crop-area and production statistics, with governorate detail and multiple crop seasons. The present register records authoritative publication routes and the required disaggregation, but no numerical crop yield or farm budget has been admitted in this pass. The exact annual bulletin files and current governorate-level farm-gate prices must be extracted before activation."
+      "extraction_status": "Egypt now has a verified CAPMAS catalogue entry for the December 2024 crop-area and plant-production bulletin, a direct CAPMAS 2023/24 XLSX download URL, and official Ministry agricultural statistics bulletin routes. CAPMAS metadata confirms governorate-level winter, summer and Nili crop area/productivity/production indicators. Secondary 2024 output figures for wheat, maize, paddy rice and tomato are recorded only as cross-check leads; no calculator yield or farm budget is admitted until the primary spreadsheet is extracted and area/season definitions are reconciled."
     }
   ],
   "cross_country_sources": [
@@ -2365,6 +2426,7 @@
     }
   ],
   "next_steps": [
+    "For Egypt, extract the direct CAPMAS 2023/24 crop-area and plant-production XLSX by governorate and season; verify wheat, maize, paddy rice and tomato production against matched area and then obtain current farm-gate prices and itemized input budgets.",
     "For Egypt, obtain the CAPMAS 2023/24 crop area and plant production bulletin and Ministry Economic Affairs Sector tables, extract matched governorate crop area/output/yield by winter, summer and Nili season, and obtain current farm-gate prices and input budgets.",
     "For Angola, extract the linked ICAPP 2024/25 and 2023/24 Excel tables and MINAGRIF 2024 yearbook, compare crop-specific harvested area and production by province, extract survey farm-economics variables, and verify the 2025/26 legal reference prices against actual provincial farm-gate transactions before activation.",
     "For Botswana, extract the 2025 Agricultural Census livestock brief and latest annual crop survey tables; reconcile the conflicting 2024/25 cereal totals, obtain crop-specific harvested area/yield by district and sector, and verify BAMB grade-specific producer prices and farm budgets.",
