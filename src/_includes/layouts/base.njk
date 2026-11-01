@@ -83,6 +83,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ meta_title or title or site.meta_title or site.name }}">
   <meta name="twitter:description" content="{{ meta_description or description or site.meta_description or site.seo.default_meta_description or site.description }}">
+  {% if ogImage %}<meta name="twitter:image" content="{{ site.url }}{{ ogImage }}">{% endif %}
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/style.css?v=20260929">
