@@ -1006,9 +1006,229 @@
         ],
         "extraction_status": "The current official 2023/24 annual survey report and statistical tables are identified. Public campaign summary provides rounded groundnut and rice production, and DAPSA provides distinct irrigated/rainfed rice yield point estimates for 2023. These are research leads only; no calculator values activated."
       }
+    },
+    {
+      "country_code": "CI",
+      "country_name": "Côte d'Ivoire",
+      "evidence_status": "official_2024_crop_statistics_identified_yield_and_price_table_extraction_pending",
+      "survey": {
+        "title": "Agriculture vivrière and industrial/export agriculture statistical series",
+        "publisher": "Portail d'Informations et de Promotion de l'Économie de Côte d'Ivoire; source series attributed to MEMINADERPV/DSDI and sector bodies",
+        "source_urls": [
+          "https://www.economie-ivoirienne.ci/activites-sectorielles/agriculture-vivriere.html",
+          "https://www.economie-ivoirienne.ci/en/activites-sectorielles/subsistence-agriculture.html",
+          "https://www.economie-ivoirienne.ci/en/activites-sectorielles/industrial-and-export-agriculture.html",
+          "https://www.anstat.ci/publication-details/a7fa0d70825315d810db93964704a56091d3519d3528994b86a59643957451ec416d97d4acaae93f320cb54683a031ce4e6ebbb4879b45673cffcdfd1230b9a8YdWGQQprm5U5silKP26XWNeeIp53vIMaB1xdjkIEH8axatnNVoyf1tosx7lERkNd"
+        ],
+        "reference_period": "Annual crop production series through 2024; exact source-table metadata to be recorded per indicator.",
+        "source_observations": [
+          {
+            "crop": "rice/paddy",
+            "production_mt": 2381100,
+            "reference_year": 2024,
+            "source": "official economy portal, MEMINADERPV/DSDI series",
+            "status": "production point; obtain matching harvested area and regional distribution"
+          },
+          {
+            "crop": "maize",
+            "production_mt": 1701400,
+            "reference_year": 2024,
+            "source": "official economy portal, MEMINADERPV/DSDI series",
+            "status": "production point; obtain matching harvested area and regional distribution"
+          },
+          {
+            "crop": "millet",
+            "production_mt": 60200,
+            "reference_year": 2024,
+            "source": "official economy portal, MEMINADERPV/DSDI series",
+            "status": "production point; no matching calculator commodity"
+          },
+          {
+            "crop": "sorghum",
+            "production_mt": 66500,
+            "reference_year": 2024,
+            "source": "official economy portal, MEMINADERPV/DSDI series",
+            "status": "production point; no matching calculator commodity"
+          },
+          {
+            "crop": "rice/paddy",
+            "yield_mt_per_ha": 3.32,
+            "reference_year": 2024,
+            "source": "official economy portal",
+            "status": "reported mean yield; confirm underlying area/production calculation and whether it is national average"
+          },
+          {
+            "crop": "cocoa beans",
+            "production_mt": 1822400,
+            "reference_year": 2023,
+            "source": "ANSTAT 2023 Economic Statistics Yearbook",
+            "status": "export crop cross-check; not one of current calculator commodity profiles"
+          }
+        ],
+        "quality_notes": [
+          "The official portal's 2023 historical series has a suspiciously low 2019 paddy value (188.4 thousand tonnes) compared with adjacent years; do not silently interpolate or use that point without checking source table.",
+          "The 2024 rice yield of 3.32 t/ha is reported by the portal; match it to the same crop definition, season and area series before calculator use.",
+          "Cocoa, cashew and cotton observations do not map to the current 17 calculator commodity profiles."
+        ],
+        "priority_commodities": [
+          "rice",
+          "maize",
+          "cassava",
+          "tomato",
+          "hot_pepper",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig"
+        ],
+        "price_sources": [
+          {
+            "title": "UEMOA SIAR agricultural markets",
+            "url": "https://siar.uemoa.int/marches-agricoles.php?secteur=agr",
+            "status": "market_price_series_discovery_source",
+            "note": "Extract date-stamped producer and consumer prices by market, commodity, grade, currency and unit."
+          }
+        ],
+        "remaining_gaps": [
+          "extract complete crop-level area, production and yield series by region and production season",
+          "validate the 2024 rice yield and historical 2019 rice production anomaly",
+          "obtain farm-gate prices and market series by region",
+          "obtain seed, fertilizer, crop protection, labour, mechanization, irrigation and transport costs",
+          "obtain livestock production and farm-budget observations"
+        ],
+        "extraction_status": "Official annual production series through 2024 and ANSTAT 2023 yearbook identified. Values are national point observations only; no complete calculator budgets or regional low/expected/high ranges have been established."
+      }
+    },
+    {
+      "country_code": "BF",
+      "country_name": "Burkina Faso",
+      "evidence_status": "official_cereal_and_market_sources_identified_crop_level_series_extraction_pending",
+      "survey": {
+        "title": "FAO GIEWS Burkina Faso country brief and national agricultural statistics",
+        "publisher": "FAO Global Information and Early Warning System; national agriculture ministry and SIMA",
+        "source_urls": [
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=BF",
+          "https://sima-bf.net/"
+        ],
+        "reference_period": "FAO country brief reference date 2025-06-19; cereal production estimate for 2024.",
+        "source_observations": [
+          {
+            "indicator": "total cereal production",
+            "value_mt": 6100000,
+            "reference_year": 2024,
+            "source": "FAO GIEWS citing official national estimate",
+            "status": "national aggregate only; cannot be assigned to maize/rice or any individual commodity"
+          }
+        ],
+        "market_price_source": {
+          "title": "Système d'Information sur les Marchés Agricoles (SIMA)",
+          "url": "https://sima-bf.net/",
+          "publisher": "Burkina Faso agricultural market information system",
+          "status": "priority_price_source_requires_dated_market_extraction",
+          "note": "FAO GIEWS reports monitored wholesale millet and sorghum prices; extract SIMA observations with market, date, grade, currency and unit."
+        },
+        "quality_notes": [
+          "The 2024 aggregate cereal estimate is not a crop-specific yield or farm budget.",
+          "FAO reports conflict-related access disruptions and localized crop production shortfalls in several regions; a single national average may conceal material regional variation.",
+          "Prices of millet and sorghum were reported above year-earlier levels in May 2025; this is context, not a current calculator price."
+        ],
+        "priority_commodities": [
+          "maize",
+          "rice",
+          "beans",
+          "cassava",
+          "broilers",
+          "layers",
+          "goat",
+          "cattle",
+          "pig"
+        ],
+        "remaining_gaps": [
+          "obtain official crop-specific 2024 production, harvested area and yield tables",
+          "obtain region-level crop estimates and account for inaccessible production zones",
+          "extract current SIMA producer/wholesale prices for calculator commodities",
+          "obtain current seed, fertilizer, pesticide, labour, mechanization and transport prices",
+          "obtain livestock purchase, feed, veterinary and output-price budgets"
+        ],
+        "extraction_status": "Official FAO GIEWS country brief and SIMA market portal identified. Only an aggregate 2024 cereal estimate is currently recorded; no crop-specific values are admitted."
+      }
+    },
+    {
+      "country_code": "NE",
+      "country_name": "Niger",
+      "evidence_status": "official_statistics_yearbook_and_regional_crop_series_identified_table_level_verification_pending",
+      "survey": {
+        "title": "Annuaire Statistique 2020-2024, édition 2025; national agricultural statistics",
+        "publisher": "Institut National de la Statistique du Niger (INS); Direction des Statistiques / Ministère de l'Agriculture",
+        "source_urls": [
+          "https://www.stat-niger.org/?page_id=1555",
+          "https://siar.uemoa.int/marches-agricoles.php?secteur=agr"
+        ],
+        "reference_period": "2020-2024 yearbook; selected regional crop production leads for 2023 from DS/MAG/EL as reproduced in a UNCTAD Cropwatch presentation.",
+        "source_observations": [
+          {
+            "crop": "millet",
+            "reference_year": 2023,
+            "source": "DS/MAG/EL regional production figures reproduced in UNCTAD Cropwatch Niger 2024 presentation",
+            "status": "national/regional tables need extraction and reconciliation; do not use slide transcription as calculator data"
+          },
+          {
+            "crop": "sorghum",
+            "reference_year": 2023,
+            "source": "DS/MAG/EL regional production figures reproduced in UNCTAD Cropwatch Niger 2024 presentation",
+            "status": "national/regional tables need extraction and reconciliation"
+          },
+          {
+            "crop": "cowpea",
+            "reference_year": 2023,
+            "source": "DS/MAG/EL regional production figures reproduced in UNCTAD Cropwatch Niger 2024 presentation",
+            "status": "crop identity is promising for beans/cowpea profile but verify taxonomy and harvested area"
+          },
+          {
+            "crop": "groundnut",
+            "reference_year": 2023,
+            "source": "DS/MAG/EL regional production figures reproduced in UNCTAD Cropwatch Niger 2024 presentation",
+            "status": "no matching groundnut calculator profile"
+          }
+        ],
+        "market_price_source": {
+          "title": "UEMOA SIAR agricultural markets",
+          "url": "https://siar.uemoa.int/marches-agricoles.php?secteur=agr",
+          "status": "regional_market_price_source_requires_country_market_extraction",
+          "note": "Extract Niger producer and consumer prices for cowpea, maize, rice and other supported crops; preserve date, market, unit and product form."
+        },
+        "quality_notes": [
+          "The INS 2025 statistical yearbook is the primary target for national time series and should be preferred over slide-deck transcriptions.",
+          "UEMOA SIAR has a Niger country series, but published production observations need matching area and crop definition before calculating yield.",
+          "Millet and sorghum are not among the current 17 commodity profiles; do not map them to maize or rice.",
+          "Cowpea is a direct candidate for the Beans (Cowpea) profile, but verify variety/production-system definitions."
+        ],
+        "priority_commodities": [
+          "beans",
+          "rice",
+          "maize",
+          "broilers",
+          "goat",
+          "cattle",
+          "layers",
+          "pig"
+        ],
+        "remaining_gaps": [
+          "download and extract crop area, production and yield tables from INS Annuaire 2020-2024 edition 2025",
+          "reconcile DS/MAG/EL 2023 regional crop series with INS and FAOSTAT",
+          "extract Niger market price observations with dates and units",
+          "obtain crop input and labour cost schedules by region and production system",
+          "obtain livestock prices, feed and veterinary costs, mortality and output benchmarks"
+        ],
+        "extraction_status": "INS national yearbook and UEMOA market interface identified. Crop production figures reproduced in a secondary presentation remain leads only pending extraction from the official statistical yearbook."
+      }
     }
   ],
   "next_steps": [
+    "Extract Côte d'Ivoire 2024 cereal area/yield tables and validate the reported 3.32 t/ha paddy yield; investigate the 2019 rice production anomaly before building the profile.",
+    "Extract Burkina Faso crop-specific national and regional production/area/yield tables; use SIMA for dated market-price observations and account for conflict-related regional access constraints.",
+    "Extract Niger's 2020-2024 INS yearbook crop tables, then reconcile 2023 millet, sorghum, cowpea and groundnut regional series with DS/MAG/EL and UEMOA SIAR.",
     "For Benin, download the final 2023/24 campaign tables from INStaD/DSA and reconcile the rice production/area/yield differences against PACOFIDE before using any value.",
     "For Togo, extract DSID survey data and current Mercuriales price observations from Statagritogo; cross-check 2023 production leads against the original DSID series.",
     "For Senegal, extract DAPSA EAA 2023/24 tables by crop and region, then separately extract producer prices, input costs, labour and livestock budgets.",
