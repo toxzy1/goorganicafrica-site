@@ -524,6 +524,47 @@
         "The 2027 forecast explicitly assumes an average cereal campaign; do not use it as a crop-yield coefficient.",
         "Use only as national context for season planning."
       ]
+    },
+    {
+      "title": "Morocco farmers saw hope in rain, but Mideast war inflates production costs",
+      "publisher": "Al-Monitor, reporting farmer and agricultural-sector interviews",
+      "url": "https://www.al-monitor.com/originals/2026/05/morocco-farmers-saw-hope-rain-mideast-war-inflates-production-costs",
+      "publication_date": "2026-05-21",
+      "reference_period": "Farmer-reported operating-cost pressures during the 2025/26 season",
+      "status": "dated_farmer_testimony_cost_stress_not_representative_national_price_series",
+      "observations": [
+        {
+          "commodity": "lentils_and_field_crops",
+          "indicator": "tractor_diesel_cost_mad_per_ha",
+          "previous_value": 1200,
+          "reported_current_value": 1800,
+          "unit": "MAD/ha",
+          "status": "One Marchouch-region farmer's reported diesel spending for tractor operations; farm, operation count, date range and fuel quantity are not itemized."
+        },
+        {
+          "indicator": "agricultural_machinery_hire_cost",
+          "reported_change": "doubled",
+          "status": "Another farmer reported harvesting-machine rental costs had doubled; no original or new absolute price, machine type, area or service specification was supplied."
+        },
+        {
+          "commodity": "livestock_feed",
+          "indicator": "grain_feed_sack_price_mad",
+          "previous_value": 90,
+          "reported_current_range": [
+            110,
+            120
+          ],
+          "unit": "MAD per sack",
+          "status": "One livestock breeder's testimony; sack weight, feed formulation, location and transaction date are not specified, so this cannot be converted to MAD/kg or used as a standard feed cost."
+        }
+      ],
+      "quality_notes": [
+        "These are attributed interviews, not a statistically representative survey or official price series.",
+        "The diesel comparison is useful as a dated cost-pressure signal, but it does not establish a universal diesel cost per hectare; record litres, machinery hours, operations and invoice date for calculator use.",
+        "The machinery-hire statement lacks an absolute rate and machine/service definition; request dated local quotations.",
+        "The feed-sack comparison is unusable as a unit price until sack weight and formulation are identified.",
+        "The article attributes cost pressure to fuel and fertilizer-market disruption; do not treat its May 2026 values as current November 2026 quotations."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -540,7 +581,9 @@
     "Obtain the 2026/27 official SONACOS certified-seed price list and subsidy circular by variety, class and region; cross-check reported MAD 400/quintal bread-wheat/barley and MAD 400–450/quintal durum-wheat market indications against invoices.",
     "Obtain the full text of the 2026 wheat seed-system review and local varietal performance data to connect seed replacement and varietal choice with farm-level yields without assuming national genetic-gain figures apply uniformly.",
     "For the 2026/27 campaign, obtain basin-level irrigation allocations and farm tariffs; national dam storage cannot be translated into farm water availability or irrigation cost.",
-    "For seed, fertilizer and pesticide records, capture registered product/formulation and conformity evidence alongside dated supplier invoices; ONSSA's control framework confirms that input quality and labelling matter independently of price."
+    "For seed, fertilizer and pesticide records, capture registered product/formulation and conformity evidence alongside dated supplier invoices; ONSSA's control framework confirms that input quality and labelling matter independently of price.",
+    "For Marchouch and other cereal/lentil zones, obtain 2026/27 diesel invoices or pump receipts, litres consumed by operation and hectare, and dated tractor/harvester hire quotations; the May 2026 interview provides only one farmer's MAD 1,200-to-1,800/ha tractor-diesel comparison and an unquantified machinery-rental increase.",
+    "For livestock-feed costs, obtain supplier invoices that state sack weight, feed formulation, location and date; the May 2026 reported MAD 90-to-110–120 per sack comparison lacks the unit details needed for a per-kg calculator input."
   ],
-  "conclusion": "Morocco remains research-only. The evidence register now includes a new October 2026 reservoir snapshot and 2026/27 planting outlook, ONSSA's official agricultural-input and irrigation-water quality-control framework, and HCP's July 2026 macroeconomic outlook. These improve seasonal-risk and input-quality documentation but do not provide current farm-level water tariffs, verified input invoices, crop yields or complete enterprise budgets. No calculator data are activated."
+  "conclusion": "Morocco remains research-only. The evidence register now contains 13 source records, including May 2026 farmer testimony on tractor-diesel and machinery-hire cost pressures. These are useful as dated stress indicators only: the diesel figure is one farmer's tractor-operation spending, machinery hire has no absolute rate, and feed sack weights/formulations are unspecified. Existing seasonal, regulatory and crop-survey evidence still does not provide a complete, current, representative farm budget or verified current input invoices. No calculator data are activated."
 }
