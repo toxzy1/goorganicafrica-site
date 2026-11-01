@@ -16,7 +16,7 @@
     {
       "country_code": "LR",
       "country_name": "Liberia",
-      "evidence_status": "primary_national_survey_identified_pending_revision_check_and_table_extraction",
+      "evidence_status": "published_national_observations_extracted_on_hold_pending_august_2026_erratum_reconciliation",
       "survey": {
         "title": "Liberia Annual Agriculture Survey 2024",
         "publisher": "Liberia Institute of Statistics and Geo-Information Services (LISGIS), with Ministry of Agriculture",
@@ -44,7 +44,7 @@
           "notice_url": "https://update.lisgis.gov.lr/surveys.php?search=Annual+Agriculture"
         },
         "license_and_use": "The LISGIS open-data licence page lists the 2024 crop cultivation, crop loss, crop production/yield, inputs, labour and livestock/poultry aggregate datasets as CC BY 4.0. Confirm the licence for each selected table or download before redistribution.",
-        "extraction_status": "No numeric observations are admitted in this register yet. Previously surfaced yield snippets must be rechecked against the corrected source tables.",
+        "extraction_status": "Table 10 and selected labour-cost tables have been transcribed as provisional observations from the published report. All Liberia numeric observations remain on hold because LISGIS issued an August 2026 correction notice and the affected tables have not yet been identified.",
         "priority_commodities": [
           "rice",
           "cassava",
@@ -59,11 +59,249 @@
           "pig"
         ],
         "remaining_gaps": [
+          "resolve August 2026 LISGIS erratum and identify affected tables",
           "current farm-gate and market selling prices by location",
           "verified seed and planting-material prices",
           "current fertilizer and crop-protection costs",
-          "livestock purchase, feed, veterinary and mortality cost benchmarks",
-          "commodity-specific low/expected/high ranges and regional differentiation"
+          "crop-specific low/expected/high yield ranges or a defensible multi-year method",
+          "livestock purchase, feed, veterinary, mortality and output-price benchmarks",
+          "regional production-cost profiles and farm-system assumptions",
+          "confirm crop taxonomy for beans and pepper before mapping to existing commodity profiles"
+        ],
+        "table_references": [
+          "Table 10, planted area, harvested area, harvested quantity and yield, report page 37.",
+          "Table 35, other agricultural production costs, average daily payment and duration, report page 72.",
+          "Table 38, average daily hired-labour payment by gender and region, report page 77."
+        ],
+        "provisional_observations_on_hold": [
+          {
+            "crop": "rice/paddy",
+            "planted_area_ha": 186907,
+            "harvested_area_ha": 139707,
+            "production_mt": 201074,
+            "reported_yield_mt_per_ha": 2,
+            "calculator_match": "rice"
+          },
+          {
+            "crop": "cassava",
+            "planted_area_ha": 87430,
+            "harvested_area_ha": 20192,
+            "production_mt": 14591,
+            "reported_yield_mt_per_ha": 1,
+            "calculator_match": "cassava",
+            "caution": "The report says only 28.3% of cassava households harvested during the survey period; yield is timing-specific and may understate annual output."
+          },
+          {
+            "crop": "maize",
+            "planted_area_ha": 4635,
+            "harvested_area_ha": 3438,
+            "production_mt": 2937,
+            "reported_yield_mt_per_ha": 1.5,
+            "calculator_match": "maize"
+          },
+          {
+            "crop": "beans",
+            "planted_area_ha": 1367,
+            "harvested_area_ha": 433,
+            "production_mt": 208,
+            "reported_yield_mt_per_ha": 0.8,
+            "calculator_match": null,
+            "caution": "Crop type is reported as beans; do not assume this is cowpea without confirming the species."
+          },
+          {
+            "crop": "cucumber",
+            "planted_area_ha": 1452,
+            "harvested_area_ha": 1053,
+            "production_mt": 1638,
+            "reported_yield_mt_per_ha": 2.7,
+            "calculator_match": "cucumber"
+          },
+          {
+            "crop": "pepper",
+            "planted_area_ha": 19660,
+            "harvested_area_ha": 5104,
+            "production_mt": 1731,
+            "reported_yield_mt_per_ha": 0.4,
+            "calculator_match": "hot_pepper",
+            "caution": "Pepper type is not specified as Habanero or another particular variety; planted area has CV 46.44%, so treat the observation as low confidence."
+          },
+          {
+            "crop": "sweet potatoes",
+            "planted_area_ha": 2031,
+            "harvested_area_ha": 749,
+            "production_mt": 383,
+            "reported_yield_mt_per_ha": 0.5,
+            "calculator_match": null,
+            "caution": "Harvested area and production are flagged with high sampling uncertainty in the report."
+          },
+          {
+            "crop": "plantain",
+            "planted_area_ha": 10930,
+            "harvested_area_ha": 3145,
+            "production_mt": 3388,
+            "reported_yield_mt_per_ha": 2.1,
+            "calculator_match": null
+          },
+          {
+            "crop": "bitterballs",
+            "planted_area_ha": 6998,
+            "harvested_area_ha": 3918,
+            "production_mt": 1248,
+            "reported_yield_mt_per_ha": 0.5,
+            "calculator_match": null
+          },
+          {
+            "crop": "eggplant",
+            "planted_area_ha": 807,
+            "harvested_area_ha": 429,
+            "production_mt": 411,
+            "reported_yield_mt_per_ha": 1.1,
+            "calculator_match": null,
+            "caution": "Harvested area and production are flagged with high sampling uncertainty in the report."
+          },
+          {
+            "crop": "okra",
+            "planted_area_ha": 4323,
+            "harvested_area_ha": 2956,
+            "production_mt": 1385,
+            "reported_yield_mt_per_ha": 0.6,
+            "calculator_match": null,
+            "caution": "Production is flagged with high sampling uncertainty in the report."
+          },
+          {
+            "crop": "sugar cane",
+            "planted_area_ha": 11941,
+            "harvested_area_ha": 8089,
+            "production_mt": 15708,
+            "reported_yield_mt_per_ha": 2.7,
+            "calculator_match": null
+          },
+          {
+            "crop": "palm oil",
+            "planted_area_ha": 28502,
+            "harvested_area_ha": 10260,
+            "production_mt": 8017,
+            "reported_yield_mt_per_ha": 1.5,
+            "calculator_match": null
+          },
+          {
+            "crop": "cocoa",
+            "planted_area_ha": 76171,
+            "harvested_area_ha": 33457,
+            "production_mt": 2013,
+            "reported_yield_mt_per_ha": 0.1,
+            "calculator_match": null
+          },
+          {
+            "crop": "rubber",
+            "planted_area_ha": 91125,
+            "harvested_area_ha": 62306,
+            "production_mt": 14004,
+            "reported_yield_mt_per_ha": 0.6,
+            "calculator_match": null,
+            "caution": "Planted and harvested area are flagged with high sampling uncertainty in the report."
+          },
+          {
+            "crop": "coffee",
+            "planted_area_ha": 6119,
+            "harvested_area_ha": 3677,
+            "production_mt": 426,
+            "reported_yield_mt_per_ha": 0.2,
+            "calculator_match": null
+          }
+        ],
+        "provisional_labour_costs_on_hold": {
+          "currency": "LRD",
+          "reference_year": 2024,
+          "national_average_daily_hired_crop_labour": {
+            "men": 380.1,
+            "women": 327.6,
+            "children": 247.4
+          },
+          "regional_daily_wage_by_gender": [
+            {
+              "region": "Southeastern A",
+              "men": 464.8,
+              "women": 441.3,
+              "children": 280.2
+            },
+            {
+              "region": "Southeastern B",
+              "men": 476.4,
+              "women": 451.6,
+              "children": null
+            },
+            {
+              "region": "North Central",
+              "men": 322.6,
+              "women": 290.1,
+              "children": 234.1
+            },
+            {
+              "region": "North Western",
+              "men": 450.4,
+              "women": 394.1,
+              "children": null
+            },
+            {
+              "region": "Montserrado",
+              "men": 543.5,
+              "women": 496,
+              "children": null
+            },
+            {
+              "region": "South Central",
+              "men": 366,
+              "women": 351.2,
+              "children": null
+            }
+          ],
+          "note": "These are reported daily wage observations, not per-hectare labour budgets. Dashes in the source table are withheld values, represented as null. All values remain on hold pending LISGIS erratum reconciliation."
+        },
+        "other_production_cost_observations_on_hold": [
+          {
+            "item": "post-harvest labour",
+            "households_paying_pct": 1.7,
+            "average_daily_payment_lrd": 243.6,
+            "average_days_paid": 99.3
+          },
+          {
+            "item": "agricultural transport",
+            "households_paying_pct": 10.1,
+            "average_daily_payment_lrd": 206.7,
+            "average_days_paid": 136.5
+          },
+          {
+            "item": "fuel and lubricants",
+            "households_paying_pct": 0.7,
+            "average_daily_payment_lrd": 105.7,
+            "average_days_paid": 112.9
+          },
+          {
+            "item": "electricity for agricultural activities",
+            "households_paying_pct": 0.1,
+            "average_daily_payment_lrd": 61.3,
+            "average_days_paid": 156
+          },
+          {
+            "item": "contractual agricultural services",
+            "households_paying_pct": 2.6,
+            "average_daily_payment_lrd": 162,
+            "average_days_paid": 168.1
+          },
+          {
+            "item": "hired workers for routine tasks",
+            "households_paying_pct": 22.8,
+            "average_daily_payment_lrd": 454.7,
+            "average_days_paid": 152.2
+          }
+        ],
+        "observation_caveats": [
+          "All numeric values transcribed from the published October 2025 report are provisional and on hold pending identification of tables affected by the August 2026 LISGIS correction notice.",
+          "The report flags pepper planted area, rubber planted/harvested area, sweet-potato harvested area/production, eggplant harvested area/production and okra production as high-uncertainty indicators (CV > 33% or SE > 17.5%).",
+          "Cassava yield is timing-specific: only 28.3% of cassava households reported harvesting during the survey reference period, and the report warns that annual output may be understated.",
+          "A single national yield observation is not a low/expected/high calculator range.",
+          "Daily labour and other service-payment averages cannot be converted into per-hectare budgets without activity duration, worker counts and farm-system assumptions."
         ]
       }
     },
@@ -282,6 +520,7 @@
     }
   ],
   "next_steps": [
+    "For Liberia, resolve the August 2026 LISGIS erratum against Table 10, Table 35 and Table 38 before releasing any transcribed observations from hold.",
     "Do not convert the Sierra Leone national point yields directly into low/expected/high calculator ranges; first obtain multi-year and/or regional evidence.",
     "For Sierra Leone, cross-check the extracted national point observations with FAOSTAT and any available indicator-specific sampling errors before considering calculator use.",
     "Resolve the LISGIS August 2026 correction notice against the Liberia 2024 survey tables.",
