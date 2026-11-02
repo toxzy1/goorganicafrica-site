@@ -1,0 +1,64 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — Batch 21: Djibouti",
+  "country": {
+    "name": "Djibouti",
+    "iso_alpha2": "DJ",
+    "iso_alpha3": "DJI"
+  },
+  "review_date": "2026-11-02",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "verified_regions": [
+      "Ali Sabieh",
+      "Dikhil",
+      "Tadjourah",
+      "Obock",
+      "Arta"
+    ],
+    "separate_city_status": "Djibouti City has a distinct statutory status and is not a sixth decentralised region.",
+    "selector_added": true,
+    "source": "https://www.egouv.dj/page/regions"
+  },
+  "key_findings": [
+    "Official government material confirms five decentralised regional collectivities and a separately governed Djibouti City.",
+    "The Ministry of Agriculture identifies livestock as a predominant rural activity, with approximately 90 percent nomadic; this is a livelihood-system context, not a quantified domestic herd dataset.",
+    "Dikhil is identified by the government as a region with market-gardening activity.",
+    "A historical 2019/2020 vegetable production aggregate of 9,896 tonnes is cited by a 2024 French Treasury note; it is not crop-specific and has no matching area/yield breakdown in the evidence reviewed.",
+    "FAOSTAT crop and livestock annual series are available as a dataset route through 2024, but Djibouti observations, source flags and estimation status still require extraction.",
+    "FEWS NET provides downloadable weekly staple-food market-price data, but the actual records must be inspected and cannot be assumed to be farmgate prices.",
+    "Current crop-specific regional yields, farmgate prices, seed/input prices, irrigation and energy costs, labour and machinery rates, and enterprise budgets remain unverified."
+  ],
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_historical_aggregate_vegetable_output_and_FAOSTAT_series_catalogued_crop_level_area_yield_extraction_pending",
+    "dated_local_farmgate_prices_and_units": "blocked_FEWS_NET_staple_market_dataset_not_yet_extracted_and_no_verified_farmgate_series",
+    "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_seedling_price_schedule",
+    "fertilizer_and_soil_amendment_costs": "partial_historical_fertilizer_use_indicator_only_no_current_product_prices_or_application_costs",
+    "crop_protection_costs": "blocked_no_current_crop_protection_product_prices_or_application_budgets",
+    "irrigation_water_and_energy_costs": "partial_irrigation_constraint_and_equipped_area_context_identified_but_local_water_pumping_energy_tariffs_and_crop_costs_unverified",
+    "labour_rates_and_operations": "blocked_no_current_region_and_operation_specific_wage_or_labour_days_schedule",
+    "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_or_land_preparation_cost_schedule",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_system_enterprise_budget_or_gross_margin",
+    "currency_and_exchange_rate_method": "partial_DJF_currency_identified_local_currency_method_not_yet_documented_in_calculator",
+    "source_provenance_and_observation_date": "partial_official_geography_and_multiple_dated_secondary_official_sources_recorded_FAOSTAT_and_FEWS_NET_observation_extraction_pending",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_crop_cost_price_yield_dataset_to_map_or_country_test_cases"
+  },
+  "sources": [
+    "https://www.egouv.dj/page/regions",
+    "https://maepe-rh.dj/",
+    "https://instad.dj/",
+    "https://www.fao.org/giews/countrybrief/country.jsp?code=DJI",
+    "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+    "https://fews.net/djibouti-weekly-fews-net-staple-food-price-data",
+    "https://www.ministere-finances.dj/statistiques/AS/Statis/Annuaire/notep.htm",
+    "https://futures.issafrica.org/geographic/countries/djibouti/",
+    "https://fas-prod.azureedge.us/data/gain/2026/10/djibouti-djibouti-food-and-agricultural-market-snapshot"
+  ],
+  "safeguards": [
+    "Djibouti remains not_active.",
+    "No active country profile or calculator formula was changed.",
+    "No missing yield, price or cost was imputed.",
+    "No merge or production deployment was performed."
+  ],
+  "next_step": "Extract and validate FAOSTAT crop/livestock observations and FEWS NET weekly price records; obtain current region-specific farmgate prices and farmer-paid input/water/energy/labour costs before constructing enterprise budgets."
+}
