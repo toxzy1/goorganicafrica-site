@@ -6,7 +6,7 @@
     "currency": "XAF",
     "currency_name": "Central African CFA franc"
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-02",
   "status": "research_only_not_published_to_calculator",
   "calculator_readiness": "not_ready_research_only",
   "purpose": "Country evidence inventory to support a later, separately validated agricultural enterprise-budget and calculator profile. This file is not calculator input and must not activate the country.",
@@ -392,6 +392,78 @@
       "caveats": [
         "Macroeconomic inflation is not a substitute for agricultural input price inflation or farmgate commodity prices."
       ]
+    },
+    {
+      "id": "ins_agriculture_catalogue_review_2026_11_02",
+      "topic": "official INS agricultural report catalogue and extraction priorities",
+      "source_name": "Institut National de la Statistique du Congo (INS-Congo), Recensement Général de l'Agriculture catalogue",
+      "source_url": "https://www.onmc.fr/recensement-agriculture.html",
+      "publication_or_reference_date": "Catalogue accessed 2026-11-02; reports listed for reference years 2020–2024",
+      "observations": [
+        {
+          "item": "RGA-Congo 2024 preliminary results",
+          "reference_year": 2024,
+          "status": "official_report_listed_table_extraction_not_yet_completed"
+        },
+        {
+          "item": "RGA cultivated areas and production",
+          "reference_year": 2023,
+          "status": "official_report_listed_table_extraction_not_yet_completed"
+        },
+        {
+          "item": "Agricultural holdings report",
+          "reference_year": 2022,
+          "status": "official_report_listed_table_extraction_not_yet_completed"
+        },
+        {
+          "item": "Food crop agriculture census",
+          "reference_year": 2021,
+          "status": "official_report_listed_table_extraction_not_yet_completed"
+        },
+        {
+          "item": "Agricultural atlas",
+          "reference_year": 2020,
+          "status": "official_report_listed_table_extraction_not_yet_completed"
+        },
+        {
+          "item": "INS catalogue coverage",
+          "finding": "The official statistics portal explicitly lists these reports as downloadable national agricultural statistics and directs further data requests to INS-Congo.",
+          "status": "catalogue_verified"
+        }
+      ],
+      "caveats": [
+        "A catalogue entry confirms a report exists, not the numerical contents of its tables.",
+        "The 2024 results are explicitly preliminary and must remain labelled preliminary until final tables or revisions are found.",
+        "The 2023 cultivated-area and production report is a high-priority source for matching area and production before calculating yields."
+      ]
+    },
+    {
+      "id": "administrative_geography_conflict_2026_11_02",
+      "topic": "administrative geography and regional calculator mapping",
+      "source_name": "ASARECA country profile and conflicting newer secondary administrative-division report",
+      "source_url": "https://www.asareca.org/republic-of-the-congo/about/",
+      "companion_source_url": "https://en.wikipedia.org/wiki/Departments_of_the_Republic_of_the_Congo",
+      "publication_or_reference_date": "Sources accessed 2026-11-02",
+      "observations": [
+        {
+          "item": "ASARECA administrative description",
+          "value": 12,
+          "unit": "departments",
+          "status": "published_reference_but_may_be_outdated"
+        },
+        {
+          "item": "Newer secondary report",
+          "value": 15,
+          "unit": "departments",
+          "status": "secondary_claim_of_2024_reorganisation_not_yet_confirmed_against_primary_legal_text"
+        }
+      ],
+      "caveats": [
+        "The available sources conflict: ASARECA describes 12 departments, while a newer secondary account says 15 departments were created by laws published in October 2024.",
+        "The INS agricultural catalogue page reviewed does not itself provide a current administrative code list or boundary crosswalk.",
+        "Do not add a Republic of the Congo region selector until the legal instrument, official department names/codes and effective date are verified from a primary government source.",
+        "Do not map historical agricultural observations to the alleged new departments without a documented boundary crosswalk."
+      ]
     }
   ],
   "calculator_data_gaps": [
@@ -401,7 +473,9 @@
     "Obtain current seed/planting-material, fertiliser, crop-protection, labour, land preparation, irrigation, energy, packaging and transport quotations.",
     "Build crop-specific enterprise budgets with explicit input quantities, labour days, cycle length, yields, losses, by-products and sensitivity ranges.",
     "Identify regional production zones and realistic crop calendars, particularly for cassava, plantain, maize, rice and horticultural crops.",
-    "Confirm livestock, poultry, aquaculture and fisheries unit economics separately; do not infer enterprise costs from national production totals."
+    "Confirm livestock, poultry, aquaculture and fisheries unit economics separately; do not infer enterprise costs from national production totals.",
+    "Resolve the reported 2024 administrative reorganisation using primary legal texts and an official INS/Ministry department nomenclature before adding any regional selector.",
+    "Download and extract the INS 2024 preliminary results and 2023 cultivated-area/production report; retain preliminary status and reconcile overlapping years."
   ],
   "readiness_decision": {
     "classification": "research_evidence_record_present",
@@ -411,7 +485,8 @@
       "No validated crop-specific current farmgate price series",
       "No validated crop-specific input quotations or enterprise budgets",
       "Official INS report tables not yet fully extracted and reconciled",
-      "Secondary FAOSTAT transcription requires original-source verification"
+      "Secondary FAOSTAT transcription requires original-source verification",
+      "Current administrative department list and historical-to-current geographic crosswalk not verified from primary legal sources"
     ]
   },
   "safeguards": [
