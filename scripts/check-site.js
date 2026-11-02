@@ -126,7 +126,16 @@ for (const code of ['en','fr','ar','pt','sw']) {
     throw new Error(`Search and Decision Centre translations are incomplete for ${code}.`);
   }
 }
-
+const calculatorTranslations = JSON.parse(read('src/_data/siteTranslations.json'));
+for (const code of ['en','fr','ar','pt','sw']) {
+  if (!String(calculatorTranslations[code]?.translations?.calc?.benchmarkWarning || '').trim()) {
+    throw new Error(`Calculator benchmark warning translation is missing for ${code}.`);
+  }
+}
+const calculatorApp = read('src/js/calculator-app.js');
+if (!calculatorApp.includes('resultData.data_quality === "benchmark"') || !calculatorApp.includes('T("calc", "benchmarkWarning")')) {
+  throw new Error('Calculator results must disclose when Africa-wide benchmark data is used.');
+}
 
 const decisionCentreLabelKeys = [
   'goal_market','goal_finance','goal_inputs','goal_machinery','goal_training','goal_climate','goal_all',

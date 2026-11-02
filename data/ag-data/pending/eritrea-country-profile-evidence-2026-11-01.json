@@ -1,0 +1,323 @@
+{
+  "country": "Eritrea",
+  "iso_alpha2": "ER",
+  "iso_alpha3": "ERI",
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Research-only record of national ministry-reported crop activity, horticultural production, regional irrigation and wholesale price evidence, current seasonal risk and development programme indicators. Not a farm-profit calculator profile and not authorization to activate Eritrea.",
+  "currency": {
+    "code": "ERN",
+    "name": "Eritrean nakfa",
+    "note": "The horticulture study reports Asmara wholesale prices in ERN per kilogram. No verified current farm-gate prices or farm input quotations are included."
+  },
+  "context": {
+    "agroecology": "Semi-arid to arid highlands and lowlands with strong spatial differences in rainfall and irrigation access. Main-season rainfed cereal production is concentrated in central and western Anseba, Debub, Maekel and Gash Barka; Gash Barka is identified by FAO as the main crop-producing region. Irrigated horticulture is important in selected areas.",
+    "key_geographies": [
+      "Gash Barka",
+      "Anseba",
+      "Debub",
+      "Maekel",
+      "Northern Red Sea",
+      "Southern Red Sea",
+      "Dighe sub-zoba",
+      "Gala Nefhi sub-zoba"
+    ],
+    "caution": "Rainfed cereal performance is highly exposed to seasonal rainfall variability. Horticulture production and price observations in the research paper cover two sub-zobas and the Asmara wholesale market; they are not national averages or farm-gate quotations."
+  },
+  "evidence": [
+    {
+      "topic": "2026 main-season crop risk",
+      "reference_date": "2026-09-30",
+      "source": "FAO Global Information and Early Warning System (GIEWS), Eritrea Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ERI",
+      "observations": [
+        {
+          "indicator": "Rainfall deficit in June-September 2026",
+          "value_min": 20,
+          "value_max": 40,
+          "unit": "percent below average",
+          "regions": [
+            "Anseba",
+            "Debub",
+            "Maekel",
+            "Gash Barka"
+          ],
+          "status": "FAO reported observation"
+        },
+        {
+          "indicator": "Main-season crops affected",
+          "value": null,
+          "unit": "crop groups",
+          "crop_groups": [
+            "wheat",
+            "barley",
+            "sorghum",
+            "maize",
+            "teff",
+            "pulses"
+          ],
+          "harvest_period": "from November 2026"
+        }
+      ],
+      "observations_text": [
+        "Planting of the 2026 main-season crops was completed in July in central and western Anseba, Debub, Maekel and Gash Barka.",
+        "FAO reports poor Kiremti rainy-season performance associated with the ongoing El Niño event and says remote-sensing vegetation indicators show significant effects in several cropping areas, including Gash Barka.",
+        "FAO expects significant crop production shortfalls; this is a forecast/risk assessment, not a final 2026 harvest result."
+      ],
+      "caveat": "Do not enter forecast shortfalls as measured production losses. Update after harvest and official post-harvest reporting."
+    },
+    {
+      "topic": "Ministry-reported 2024 crop and horticulture achievements",
+      "publication_date": "2025-02-07",
+      "reference_period": "2024",
+      "source": "Eritrea Ministry of Agriculture report published by the Ministry of Information, Ministry of Agriculture: 2024-Major Achievements",
+      "source_url": "https://shabait.com/amp/2025/02/07/ministry-of-agriculture-2024-major-achievements/",
+      "observations": [
+        {
+          "indicator": "Area cultivated with cereals",
+          "value": 414000,
+          "unit": "hectares",
+          "reference_year": 2024
+        },
+        {
+          "indicator": "Change in cereal harvest",
+          "value": 138,
+          "unit": "percent increase year-on-year",
+          "reference_year": 2024,
+          "source_note": "The ministry report attributes the increase to satisfactory summer showers and coordinated farmer/extension efforts; no national cereal tonnage is given in this summary."
+        },
+        {
+          "indicator": "Area under oil crops",
+          "value": 60000,
+          "unit": "hectares",
+          "reference_year": 2024
+        },
+        {
+          "indicator": "Area under pulses",
+          "value": 38000,
+          "unit": "hectares",
+          "reference_year": 2024
+        },
+        {
+          "indicator": "Fruit production",
+          "value": 67000,
+          "unit": "tonnes",
+          "reference_year": 2024,
+          "source_note": "Ministry-reported total; area reported as 4,800 ha."
+        },
+        {
+          "indicator": "Vegetable production",
+          "value": 182000,
+          "unit": "tonnes",
+          "reference_year": 2024,
+          "source_note": "Ministry-reported total; area reported as 14,000 ha."
+        },
+        {
+          "indicator": "Area under fruit production",
+          "value": 4800,
+          "unit": "hectares",
+          "reference_year": 2024
+        },
+        {
+          "indicator": "Area under vegetable production",
+          "value": 14000,
+          "unit": "hectares",
+          "reference_year": 2024
+        },
+        {
+          "indicator": "Beekeepers",
+          "value": 11800,
+          "unit": "people",
+          "reference_year": 2024,
+          "source_note": "Approximate number in the honey subsector, not honey output."
+        },
+        {
+          "indicator": "Livestock vaccinated",
+          "value": 1000000,
+          "unit": "animals",
+          "reference_year": 2024,
+          "source_note": "More than one million animals; vaccination programme coverage, not national herd size."
+        },
+        {
+          "indicator": "Land treated with soil and water conservation measures",
+          "value": 53000,
+          "unit": "hectares",
+          "reference_year": 2024,
+          "source_note": "Combined on-farm and off-farm area across six regions."
+        }
+      ],
+      "observations_text": [
+        "Cereal crops listed include sorghum, pearl millet, teff, wheat, finger millet, barley and maize.",
+        "The ministry describes milk and egg production as subsectors requiring further improvement.",
+        "The ministry reports that 24 micro-dams were constructed during 2024 and around 22 were under construction at the time of reporting."
+      ],
+      "caveat": "These are ministry-reported administrative/annual-assessment figures reproduced by the Ministry of Information, not a published census microdata table. The 138 percent figure is a reported year-on-year change, but the summary does not provide the underlying cereal tonnage or detailed crop-by-crop area/yield breakdown. Verify the full Ministry of Agriculture statistical tables before using them as model inputs."
+    },
+    {
+      "topic": "Small and Productive Farm Plot programme",
+      "reference_period": "First implementation round reported in 2024",
+      "source": "Eritrea Ministry of Agriculture report published by the Ministry of Information, Ministry of Agriculture: 2024-Major Achievements",
+      "source_url": "https://shabait.com/amp/2025/02/07/ministry-of-agriculture-2024-major-achievements/",
+      "observations": [
+        {
+          "indicator": "Rural households participating in pilot",
+          "value": 12000,
+          "unit": "households",
+          "reference_period": "2024 first round",
+          "source_note": "More than 12,000 households across four summer-rainfall regions."
+        },
+        {
+          "indicator": "Typical integrated plot size",
+          "value": 1000,
+          "unit": "square metres",
+          "source_note": "Programme design average plot size."
+        },
+        {
+          "indicator": "Reported individual farmer cereal harvest",
+          "value": 10,
+          "unit": "quintals",
+          "source_note": "The ministry says some farmers harvested around 10 quintals, mainly wheat, from their small plot."
+        }
+      ],
+      "observations_text": [
+        "The programme integrates cereals, pulses, oilseeds and vegetables, including sweet potato, using row planting, compost, improved seed and supplementary water where needed."
+      ],
+      "caveat": "The 10-quintal figure is an example of some participating farmers, not a measured programme average or guaranteed yield. The programme plot size is a design parameter, not a national average farm size."
+    },
+    {
+      "topic": "Regional irrigated horticulture, production and wholesale price evidence",
+      "publication_date": "2025-09-30",
+      "reference_period": "Production and irrigated-area study 2015-2024; wholesale price index 2015-2025",
+      "source": "Haile, Ramoelo, Dougill et al., Land Use/Land Cover (LULC) Change and Irrigated Area Monitoring in Eritrea: Insights into Horticultural Production and Sustainability, Remote Sensing in Earth Systems Sciences",
+      "source_url": "https://link.springer.com/article/10.1007/s41976-025-00247-y",
+      "observations": [
+        {
+          "indicator": "Irrigated area change in Dighe",
+          "value": 115.5,
+          "unit": "percent increase",
+          "reference_period": "2015-2024",
+          "source_note": "Satellite classification study."
+        },
+        {
+          "indicator": "Irrigated area change in Gala Nefhi",
+          "value": 65.6,
+          "unit": "percent increase",
+          "reference_period": "2015-2024",
+          "source_note": "Satellite classification study."
+        },
+        {
+          "indicator": "Dighe horticultural output",
+          "value": 41000,
+          "unit": "tonnes",
+          "reference_year": 2024,
+          "source_note": "Total vegetables and fruits reported by study from Ministry of Agriculture data; output peaked at 48,174.5 tonnes in 2016 and 46,814.5 tonnes in 2019."
+        },
+        {
+          "indicator": "Gala Nefhi horticultural output",
+          "value": 8090,
+          "unit": "tonnes",
+          "reference_year": 2024,
+          "source_note": "Study reports output rising from 4,282.8 tonnes in 2015; text highlights particularly strong vegetable growth."
+        },
+        {
+          "indicator": "Rainfall coefficient of variation, Dighe",
+          "value": 28.1,
+          "unit": "percent",
+          "reference_period": "2015-2024"
+        },
+        {
+          "indicator": "Rainfall coefficient of variation, Gala Nefhi",
+          "value": 22.7,
+          "unit": "percent",
+          "reference_period": "2015-2024"
+        }
+      ],
+      "observations_text": [
+        "The study's five-crop horticultural price index covers tomato, onion, potato, cabbage and banana.",
+        "Mean annual prices in Eritrean nakfa per kilogram were sourced from the Ministry of Agriculture Strategic Information Division using Asmara wholesale-market records; the index is a simple unweighted average with 2015=100.",
+        "The price index declined after 2015, reached its lowest point between 2019 and 2021, then recovered modestly.",
+        "The study reports that irrigated area expansion did not translate consistently into higher output in Dighe, while Gala Nefhi showed more synchronized irrigation and horticultural production growth.",
+        "The study's rainfall-production correlations were weak and statistically non-significant in both Dighe and Gala Nefhi."
+      ],
+      "caveat": "The production series covers only Dighe and Gala Nefhi and combines fruit and vegetable output; it is not national crop-specific yield data. The Asmara observations are wholesale-market prices, not farm-gate prices. The accessible article text provides the index trend and methodology but not a complete machine-readable annual crop-by-crop price table. Satellite-derived irrigated-area change is a remote-sensing estimate, not a farm census."
+    },
+    {
+      "topic": "2025 agricultural programme outcomes and extension support",
+      "publication_date": "2026-04",
+      "reference_period": "2025",
+      "source": "United Nations Eritrea, Annual Results Report 2025",
+      "source_url": "https://eritrea.un.org/sites/default/files/2026-04/2025%20Eritrea%20ARR%20%28webFINAL%29_0.pdf",
+      "observations": [
+        {
+          "indicator": "Farmers supported with improved productivity and reduced losses",
+          "value": 11000,
+          "unit": "farmers",
+          "reference_year": 2025,
+          "source_note": "More than 11,000 farmers; UN-supported programme result, not a national farmer census."
+        },
+        {
+          "indicator": "Households benefiting from improved agricultural practices",
+          "value": 1600,
+          "unit": "households",
+          "reference_year": 2025,
+          "source_note": "Report presents farmers and households as separate programme reach indicators."
+        },
+        {
+          "indicator": "Extension workers formally trained",
+          "value": 1242,
+          "unit": "workers",
+          "reference_year": 2025
+        },
+        {
+          "indicator": "Coastal households adopting seaweed and sea-cucumber aquaculture",
+          "value": 500,
+          "unit": "households",
+          "reference_year": 2025
+        },
+        {
+          "indicator": "Coastal households reporting improved market/processing/storage access",
+          "value": 63,
+          "unit": "percent",
+          "reference_year": 2025
+        }
+      ],
+      "observations_text": [
+        "The UN report attributes farmer productivity and loss reductions to certified planting materials, improved pest control and agronomic techniques.",
+        "The report describes two years of value-chain analysis for banana, potato and anchovy, followed by investor engagement and investment interest in potato seed improvement, irrigation and anchovy value-chain development.",
+        "The report states that Eritrea's agricultural research institute and national plant and animal health laboratory now operate on solar power."
+      ],
+      "caveat": "These are programme-reported reach and outcome indicators, not a national agricultural survey or independent causal impact evaluation. Do not treat expressions of investment interest as committed finance or completed investment."
+    },
+    {
+      "topic": "Previous-year seasonal outlook comparator",
+      "reference_date": "2025-09-03",
+      "source": "FAO GIEWS, Eritrea Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ERI&lang=en",
+      "observations_text": [
+        "FAO reported favourable prospects for the 2025 main-season crops after early July rainfall deficits were offset by improved rainfall in August and an expectation of above-average rainfall for the remainder of the Kiremti season."
+      ],
+      "caveat": "This is a seasonal outlook, not a final harvest result. It should not be compared directly with the September 2026 drought warning as though they were measured crop outcomes."
+    }
+  ],
+  "data_quality_and_use": [
+    "The Ministry of Agriculture's 2024 report provides unusually useful national area and horticulture-output figures, but the accessible summary does not include crop-by-crop cereal tonnage, yield denominators or farm budgets.",
+    "The 2024 cereal harvest increase of 138 percent is a ministry-reported annual change; the baseline and absolute production volume need the underlying statistical tables.",
+    "The 2025 peer-reviewed remote-sensing study adds regional horticulture production trends and a documented wholesale price-index methodology for five crops, but its geographic scope is only Dighe and Gala Nefhi.",
+    "Asmara wholesale-market prices in ERN/kg are not producer prices. They must not be inserted as farm-gate revenue without verified farm-to-wholesale margins, grading, transport and marketing deductions.",
+    "FAO's September 2026 rainfall assessment indicates significant current-season production risk, particularly in Gash Barka and other main-season cropping regions.",
+    "UN programme reach figures are not national farmer counts or a representative farm survey.",
+    "No full crop-specific enterprise budgets, input cost schedules, labour costs or current producer price series have been verified."
+  ],
+  "missing_data_before_calculator_use": [
+    "Obtain the Ministry of Agriculture's full 2024 statistical/annual assessment tables with crop-specific harvested area, production, yield, region, season and data collection method.",
+    "Obtain the 2025/2026 crop season final production and area results, including an assessment of the September 2026 rainfall deficit and harvest losses.",
+    "Extract the full Ministry of Agriculture Strategic Information Division annual Asmara wholesale price observations for tomato, onion, potato, cabbage and banana, with units, grades, dates and any missing-value notes.",
+    "Obtain comparable farm-gate prices by producing region and season, with farm-to-wholesale transport, handling, commissions, grading and loss deductions.",
+    "Obtain input prices for certified seed, planting material, fertilizer, compost, crop protection, labour, land preparation, irrigation equipment, pumping energy, water, packaging and transport.",
+    "Obtain representative crop enterprise budgets and crop calendars by region and irrigated/rainfed system, including marketable yield, crop cycles, labour and post-harvest losses.",
+    "Validate the Ministry's 2024 cereal, oilseed, pulse, fruit and vegetable statistics against National Statistics Office publications and FAOSTAT country rows.",
+    "Obtain livestock population, milk, egg, honey and meat production series and current animal/feed/veterinary prices before adding livestock enterprises.",
+    "Obtain project monitoring data and sampling methodology for farmer support programmes before using reported productivity gains as representative yield or income changes."
+  ],
+  "recommendation": "Retain Eritrea as research-only. The evidence base is stronger than a simple international-database profile: it includes Ministry-reported 2024 national production and area figures, a peer-reviewed 2015-2024 regional horticulture/irrigation study with Asmara wholesale price methodology, UN programme outcomes and a current FAO September 2026 drought warning. However, no crop-level national yield series, current farm-gate prices or full enterprise budgets are yet verified. Do not activate Eritrea or calculate expected farm profit until the underlying Ministry tables, crop-specific price series and farm input budgets are extracted and reconciled."
+}

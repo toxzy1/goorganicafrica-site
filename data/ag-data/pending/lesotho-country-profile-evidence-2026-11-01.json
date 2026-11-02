@@ -1,0 +1,505 @@
+{
+  "country": "Lesotho",
+  "iso_alpha2": "LS",
+  "iso_alpha3": "LSO",
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Research-only national evidence on crop production, crop area and derived yields, livestock populations, input expenditure, wool/mohair value chains, 2025/26-2026 seasonal conditions and cereal import requirements. This is not a calculator profile and does not authorize activation.",
+  "currency": {
+    "code": "LSL",
+    "name": "Lesotho loti (maloti plural)",
+    "note": "The loti is pegged at par with the South African rand. Wool/mohair auction indicators reported in South African rand are export-market benchmarks, not farm-gate prices in Lesotho."
+  },
+  "context": {
+    "agroecology": "High-altitude, mountainous country with four main agricultural zones: Lowlands, Foothills, Mountains and Senqu River Valley. Summer/main-season crops include maize, sorghum, beans and peas; winter crops include wheat and peas. The Mountains and Foothills are important for sheep, goats, wool and mohair; crop potential varies substantially by altitude, rainfall and district.",
+    "key_geographies": [
+      "Butha-Buthe",
+      "Leribe",
+      "Berea",
+      "Maseru",
+      "Mafeteng",
+      "Mohale's Hoek",
+      "Quthing",
+      "Qacha's Nek",
+      "Mokhotlong",
+      "Thaba-Tseka"
+    ],
+    "caution": "Agricultural year runs 1 August to 31 July. Distinguish summer and winter crop seasons and four agro-ecological zones. The 2022/23 crop survey is rural household survey data; separate commercial-farm and livestock census sources exist. Imported South African cereal prices, wholesale auction indicators and individual-farmer fibre prices are not interchangeable."
+  },
+  "evidence": [
+    {
+      "topic": "2026 cereal production outlook, imports, food prices and food insecurity",
+      "reference_date": "2026-08-24",
+      "source": "FAO GIEWS, Lesotho Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=LS",
+      "observations": [
+        {
+          "indicator": "Combined maize, sorghum and wheat production",
+          "value": 42000,
+          "unit": "tonnes",
+          "reference_year": 2026,
+          "status": "provisional FAO estimate"
+        },
+        {
+          "indicator": "Maize import requirements",
+          "value": 130000,
+          "unit": "tonnes",
+          "reference_period": "2026/27 marketing year (April-March)",
+          "status": "FAO estimate"
+        },
+        {
+          "indicator": "Food inflation",
+          "value": 2,
+          "unit": "percent, just under",
+          "reference_period": "June 2026 year-on-year",
+          "status": "FAO summary of national CPI"
+        },
+        {
+          "indicator": "Bread and cereals CPI subindex",
+          "value": -6,
+          "unit": "percent year-on-year",
+          "reference_period": "June 2026",
+          "status": "FAO summary"
+        },
+        {
+          "indicator": "Meat prices",
+          "value": 8,
+          "unit": "percent year-on-year increase",
+          "reference_period": "June 2026",
+          "status": "FAO summary"
+        },
+        {
+          "indicator": "Population in IPC Phase 3 or above",
+          "value": 234000,
+          "unit": "people",
+          "reference_period": "August 2026 current analysis",
+          "status": "IPC estimate"
+        },
+        {
+          "indicator": "Population projected in IPC Phase 3 or above",
+          "value": 311000,
+          "unit": "people",
+          "reference_period": "October 2026-March 2027",
+          "status": "IPC projection"
+        }
+      ],
+      "observations_text": [
+        "FAO reports 2026 cereal output likely about half the previous five-year average, mainly due to reduced maize area and yields after heavy rainfall and waterlogging in November 2025 and February/April 2026.",
+        "The impact in Berea was particularly severe; maize yields were assessed at roughly half of the previous year's level. Sorghum also fell markedly, while winter wheat was forecast around average.",
+        "Lesotho is structurally dependent on cereal imports, mainly from South Africa. Cereal prices fell in 2026 despite the poor local harvest because of regional wholesale market dynamics.",
+        "FAO warns forecast El Niño conditions may delay rains and reduce rainfall in the 2026/27 season."
+      ],
+      "caveat": "The 42,000-tonne output is provisional, not a final post-harvest total. The 130,000-tonne maize requirement is an import estimate, not domestic production. CPI movements and South African wholesale prices are not farm-gate commodity prices. IPC counts are food-security estimates/projections, not agricultural census data."
+    },
+    {
+      "topic": "Official crop area and production survey: five major summer crops",
+      "publication_date": "2024",
+      "reference_period": "2022/2023 agricultural year",
+      "source": "Lesotho Bureau of Statistics, Statistical Report No. 39 of 2024, 2022/2023 Agricultural Production Survey - Crops",
+      "source_url": "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Agriculture/2022_2023_Agricultural_Production_Survey_Crops.pdf",
+      "observations": [
+        {
+          "indicator": "Maize area planted",
+          "value": 159206,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Maize area harvested",
+          "value": 149271,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Maize production",
+          "value": 126994,
+          "unit": "tonnes",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Maize yield",
+          "value": 0.851,
+          "unit": "tonnes per harvested hectare",
+          "reference_period": "2022/23 summer",
+          "status": "calculated as production divided by harvested area"
+        },
+        {
+          "indicator": "Sorghum area planted",
+          "value": 20066,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Sorghum area harvested",
+          "value": 16965,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Sorghum production",
+          "value": 9088,
+          "unit": "tonnes",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Sorghum yield",
+          "value": 0.536,
+          "unit": "tonnes per harvested hectare",
+          "reference_period": "2022/23 summer",
+          "status": "calculated"
+        },
+        {
+          "indicator": "Wheat area planted",
+          "value": 12018,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Wheat area harvested",
+          "value": 10639,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Wheat production",
+          "value": 6251,
+          "unit": "tonnes",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Wheat yield",
+          "value": 0.588,
+          "unit": "tonnes per harvested hectare",
+          "reference_period": "2022/23 summer",
+          "status": "calculated"
+        },
+        {
+          "indicator": "Beans area harvested",
+          "value": 19827,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Beans production",
+          "value": 5251,
+          "unit": "tonnes",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Beans yield",
+          "value": 0.265,
+          "unit": "tonnes per harvested hectare",
+          "reference_period": "2022/23 summer",
+          "status": "calculated"
+        },
+        {
+          "indicator": "Peas area harvested",
+          "value": 953,
+          "unit": "hectares",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Peas production",
+          "value": 357,
+          "unit": "tonnes",
+          "reference_period": "2022/23 summer"
+        },
+        {
+          "indicator": "Peas yield",
+          "value": 0.375,
+          "unit": "tonnes per harvested hectare",
+          "reference_period": "2022/23 summer",
+          "status": "calculated"
+        }
+      ],
+      "observations_text": [
+        "Maize production increased 71.6 percent from 72,096 tonnes in 2021/22 to 126,994 tonnes in 2022/23; Berea produced 53,420 tonnes, the largest district total.",
+        "Sorghum production was 9,088 tonnes and wheat 6,251 tonnes; beans were 5,251 tonnes and peas 357 tonnes.",
+        "The survey defines yield as production divided by area harvested and reports crop results by district. It uses face-to-face interviews and a sample design; its figures should not be mistaken for a current 2026 census."
+      ],
+      "caveat": "Yield values above are arithmetic calculations from the same survey's national output and harvested area, rounded to three decimals. They are not quoted yield estimates and are not 2026 values. The survey's crop coverage is five major crops; horticulture, roots/tubers and other crops need separate sources."
+    },
+    {
+      "topic": "National crop production inputs and expenditure",
+      "publication_date": "2024",
+      "reference_period": "2022/2023 agricultural year",
+      "source": "Lesotho Bureau of Statistics, 2022/2023 Agricultural Production Survey - Crops",
+      "source_url": "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Agriculture/2022_2023_Agricultural_Production_Survey_Crops.pdf",
+      "observations": [
+        {
+          "indicator": "Total expenditure on inorganic fertilizer",
+          "value": 20953504,
+          "unit": "LSL",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Area receiving inorganic fertilizer",
+          "value": 50750,
+          "unit": "hectares",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Total expenditure on organic fertilizers",
+          "value": 2904298,
+          "unit": "LSL",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Area receiving organic fertilizer",
+          "value": 44040,
+          "unit": "hectares",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Total expenditure on seeds",
+          "value": 31036859,
+          "unit": "LSL",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Total pesticide expenditure",
+          "value": 2626041,
+          "unit": "LSL",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Area treated with pesticides",
+          "value": 11127,
+          "unit": "hectares",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Ploughing expenditure",
+          "value": 51839201,
+          "unit": "LSL",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Weeding expenditure",
+          "value": 24597452.14,
+          "unit": "LSL",
+          "reference_period": "2022/23"
+        },
+        {
+          "indicator": "Harvesting expenditure",
+          "value": 24281083,
+          "unit": "LSL",
+          "reference_period": "2022/23"
+        }
+      ],
+      "observations_text": [
+        "The survey reports fertilizer expenditure by type, quantity and treated area; 2:7:3 (30) and 3:2:1 (35) were among the most-used inorganic fertilizers.",
+        "Cattle manure was the most used organic fertilizer, reported at 14,492 tonnes applied to 29,868 hectares. The report also records ash, horse, pig, sheep/goat and poultry manure and EM (Mokelikeli).",
+        "The survey records seed expenditure for local, improved, hybrid and GM categories; local seed had the highest quantity while hybrid seed had the highest expenditure.",
+        "National operations expenditure is reported in aggregate, not as crop-specific per-hectare enterprise budgets."
+      ],
+      "caveat": "These are historical national survey expenditure totals, not current retail quotations or crop-specific costs per hectare. Dividing national expenditure by area across mixed crops and operations would not produce a reliable crop budget. Some winter-season input/operation data are limited because few sampled farmers cultivated winter crops."
+    },
+    {
+      "topic": "Livestock inventory: cattle, sheep, goats and chickens",
+      "publication_date": "2024",
+      "reference_period": "2022/2023 agricultural year",
+      "source": "Lesotho Bureau of Statistics, Statistical Report No. 35 of 2024, Livestock Statistics Report 2022/2023",
+      "source_url": "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Agriculture/2022_23_Livestock_Report.pdf",
+      "observations": [
+        {
+          "indicator": "Cattle population",
+          "value": 670022,
+          "unit": "head",
+          "reference_period": "end of 2022/23 agricultural year"
+        },
+        {
+          "indicator": "Sheep population",
+          "value": 1965660,
+          "unit": "head",
+          "reference_period": "end of 2022/23 agricultural year"
+        },
+        {
+          "indicator": "Goat population",
+          "value": 189842,
+          "unit": "head",
+          "reference_period": "end of 2022/23 agricultural year"
+        },
+        {
+          "indicator": "Indigenous chickens",
+          "value": 610012,
+          "unit": "birds",
+          "reference_period": "end of 2022/23 agricultural year"
+        },
+        {
+          "indicator": "Improved chickens",
+          "value": 14740,
+          "unit": "birds",
+          "reference_period": "end of 2022/23 agricultural year"
+        }
+      ],
+      "observations_text": [
+        "The official report provides livestock populations by district, age and sex, mortality and stock change for cattle, sheep, goats and pigs, plus chicken distribution by improved and indigenous type.",
+        "The 2022/23 report records 670,022 cattle, 1,965,660 sheep and 189,842 goats. Mokhotlong held the largest sheep population at 448,774.",
+        "The chicken inventory reports substantially more indigenous than improved chickens."
+      ],
+      "caveat": "These are 2022/23 inventory observations, not 2026 herd counts. Do not infer current meat, milk, egg, wool or mohair output from animal populations alone. Use livestock products reports and current market/production data for enterprise modelling."
+    },
+    {
+      "topic": "Wool and mohair value chain and current market signals",
+      "publication_date": "2026-10-11",
+      "reference_period": "2026/27 wool sales and 2026 winter mohair season",
+      "source": "IFAD Wool and Mohair Value Chain Competitiveness Project; Lesotho Tribune market reports referencing Cape Wools and House of Fibre auction results",
+      "source_urls": [
+        "https://www.ifad.org/en/w/projects/2000003942",
+        "https://lesothotribune.co.ls/wool-and-mohair-market/"
+      ],
+      "observations": [
+        {
+          "indicator": "Rural Basotho families supported by wool and mohair project",
+          "value": 45000,
+          "unit": "families",
+          "status": "IFAD project coverage"
+        },
+        {
+          "indicator": "Wool and mohair share of agricultural exports",
+          "value": 66,
+          "unit": "percent, almost",
+          "status": "IFAD sector description"
+        },
+        {
+          "indicator": "Cape Wools all-merino indicator",
+          "value": 246,
+          "unit": "ZAR per kg clean",
+          "reference_date": "2026-09-30",
+          "status": "reported auction indicator, not Lesotho farm-gate"
+        },
+        {
+          "indicator": "House of Fibre mohair average indicator",
+          "value": 377,
+          "unit": "ZAR per kg",
+          "reference_period": "2026 winter season, reported 2026-10-11",
+          "status": "auction indicator, not Lesotho farm-gate"
+        }
+      ],
+      "observations_text": [
+        "IFAD's Wool and Mohair Value Chain Competitiveness Project has a total cost of US$72.77 million, with US$32 million IFAD financing, and aims to strengthen climate and economic resilience for approximately 45,000 wool and mohair farmers.",
+        "IFAD describes wool and mohair as almost two thirds of Lesotho's agricultural exports.",
+        "The October 2026 market report gives South African auction indicators: all-merino R246/kg clean and mohair average R377/kg. Lesotho fibre is marketed through South African auction channels; deductions, testing, transport, brokerage and grading affect the amount ultimately received by farmers."
+      ],
+      "caveat": "Auction indicators are South African market prices and not directly equivalent to farm-gate payments in Lesotho. IFAD beneficiary coverage and sector export share are programme/sector descriptions, not annual production or farmer income values. Use official auction catalogues and individual settlement statements before creating farm-gate price series."
+    },
+    {
+      "topic": "2025 crop forecast and vulnerability assessment",
+      "publication_date": "2025",
+      "reference_period": "2024/25 agricultural year",
+      "source": "Lesotho Vulnerability Assessment Committee, Annual Vulnerability Assessment Report 2025",
+      "source_url": "https://lvac.gov.ls/media/reports/LVAC__2025_Assessment_Report_v1_1.pdf",
+      "observations": [
+        {
+          "indicator": "Maize production",
+          "value": 45780,
+          "unit": "tonnes",
+          "reference_period": "2024/25 forecast valid to end October 2025"
+        },
+        {
+          "indicator": "Maize production",
+          "value": 56472,
+          "unit": "tonnes",
+          "reference_period": "2023/24 actual"
+        },
+        {
+          "indicator": "Sorghum production",
+          "value": 3616,
+          "unit": "tonnes",
+          "reference_period": "2024/25 estimate"
+        },
+        {
+          "indicator": "Sorghum production",
+          "value": 6300,
+          "unit": "tonnes",
+          "reference_period": "2023/24 actual"
+        },
+        {
+          "indicator": "Wheat production",
+          "value": 4874,
+          "unit": "tonnes",
+          "reference_period": "2024/25 estimate"
+        },
+        {
+          "indicator": "Wheat production",
+          "value": 4183,
+          "unit": "tonnes",
+          "reference_period": "2023/24 actual"
+        }
+      ],
+      "observations_text": [
+        "The LVAC assessment reports maize output forecast at 45,780 tonnes for 2024/25 versus 56,472 tonnes actual in 2023/24, a 19 percent decline; sorghum fell 43 percent and wheat was estimated to rise 17 percent.",
+        "It reports 2024/25 maize area planted at 109,655 hectares, 2.6 percent above 106,825 hectares in 2023/24, while yield and production were expected to fall.",
+        "Reported hazards include hail, heavy rain, dry spells, heat, pests including armyworm, livestock disease and high food prices."
+      ],
+      "caveat": "The report distinguishes forecast from actual values and notes its 2025 crop estimates were valid to end October 2025. These must not be presented as final 2024/25 figures without the final Bureau of Statistics survey."
+    }
+  ],
+  "data_gaps": [
+    "Extract and reconcile the latest 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26 published by the Bureau of Statistics, including final district crop area, harvest, yield and national balance data.",
+    "Extract full 2023/24 Livestock Report and Livestock Products 2023/24 tables, including current cattle, sheep, goats, pigs, poultry, milk, meat, eggs, wool and mohair production.",
+    "Obtain dated district-level farm-gate prices for maize, wheat, sorghum, beans, peas, potatoes, vegetables, wool, mohair, livestock and livestock products.",
+    "Obtain current per-hectare enterprise budgets by crop and agro-ecological zone; the 2022/23 survey reports aggregate expenditures but not sufficiently disaggregated current budgets.",
+    "Reconcile 2026 FAO provisional cereal output (42,000 tonnes combined) with the final Bureau of Statistics 2025/26 survey and cereal balance when published.",
+    "Obtain current livestock disease surveillance, vaccination and movement data following the 2026 FMD outbreak context.",
+    "Verify fibre producer settlement prices after grading, testing, commission, levies, transport and export clearance; auction indicators alone are not farm-gate prices."
+  ],
+  "data_quality": {
+    "overall": "good_for_historical_official_crop_and_livestock_baselines_moderate_for_current_sector_context_low_to_moderate_for_calculator_inputs",
+    "strengths": [
+      "Official Bureau of Statistics crop survey with crop areas, harvested areas, production, district breakdown and national input expenditure",
+      "Official livestock inventory by species, district, age and sex",
+      "Recent FAO GIEWS 2026 cereal balance and seasonal assessment",
+      "LVAC 2025 crop and household vulnerability assessment",
+      "IFAD current wool and mohair value-chain project documentation"
+    ],
+    "limitations": [
+      "Core detailed crop and livestock inventory datasets are 2022/23 and therefore historical",
+      "2026 crop estimate remains provisional pending final official data",
+      "Aggregate national input expenditure cannot be substituted for crop-specific per-hectare costs",
+      "Auction fibre indicators are not Lesotho farm-gate settlement prices",
+      "Current crop-specific and district-level farm-gate price observations remain incomplete"
+    ]
+  },
+  "calculator_readiness": {
+    "status": "not_ready_research_only",
+    "blockers": [
+      "Need final 2025/26 crop area, production and yield tables and cross-check against provisional FAO balance",
+      "Need current crop and livestock farm-gate prices by district and verification date",
+      "Need crop-specific enterprise budgets and current input quotations in LSL",
+      "Need current livestock product output and fibre producer settlement data"
+    ],
+    "recommendation": "Keep Lesotho directory-only and inactive. Use the official 2022/23 crop and livestock survey as historical reference data only. Do not populate live calculator assumptions from 2026 import requirements, CPI changes, national input expenditure totals or South African wool/mohair auction indicators. Reassess after the latest Bureau of Statistics crop, cereal balance, livestock and livestock-products reports are extracted and farm-gate prices and budgets are validated."
+  },
+  "sources": [
+    {
+      "name": "FAO GIEWS Lesotho Country Brief, reference date 24 August 2026",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=LS"
+    },
+    {
+      "name": "Lesotho Bureau of Statistics, 2022/23 Agricultural Production Survey - Crops, Statistical Report 39 of 2024",
+      "url": "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Agriculture/2022_2023_Agricultural_Production_Survey_Crops.pdf"
+    },
+    {
+      "name": "Lesotho Bureau of Statistics, Livestock Statistics Report 2022/2023, Statistical Report 35 of 2024",
+      "url": "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Agriculture/2022_23_Livestock_Report.pdf"
+    },
+    {
+      "name": "Lesotho Vulnerability Assessment Committee, Annual Vulnerability Assessment Report 2025",
+      "url": "https://lvac.gov.ls/media/reports/LVAC__2025_Assessment_Report_v1_1.pdf"
+    },
+    {
+      "name": "IFAD, Wool and Mohair Value Chain Competitiveness Project",
+      "url": "https://www.ifad.org/en/w/projects/2000003942"
+    },
+    {
+      "name": "Lesotho Bureau of Statistics publications catalogue",
+      "url": "https://www.bos.gov.ls/Publications.htm"
+    },
+    {
+      "name": "FEWS NET Lesotho Data Book, updated 15 September 2025",
+      "url": "https://help.fews.net/fde/v3/lesotho-country-book"
+    }
+  ]
+}

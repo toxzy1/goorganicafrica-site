@@ -1,0 +1,326 @@
+{
+  "country": "Gabon",
+  "iso_alpha2": "GA",
+  "iso_alpha3": "GAB",
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Research-only national evidence; not a calculator profile and not authorization to activate Gabon.",
+  "currency": {
+    "code": "XAF",
+    "name": "Central African CFA franc",
+    "note": "No validated current farm-gate price series or crop enterprise cost schedule was found."
+  },
+  "context": {
+    "agroecology": "Humid equatorial forest and savannah zones. Family farms produce cassava, plantain, taro, yam and vegetables; peri-urban horticulture and industrial palm oil/rubber are distinct systems. Flooding, rainfall variability, heat and water stress affect production.",
+    "key_geographies": [
+      "Estuaire",
+      "Haut-Ogooué",
+      "Moyen-Ogooué",
+      "Ngounié",
+      "Nyanga",
+      "Ogooué-Ivindo",
+      "Ogooué-Lolo",
+      "Ogooué-Maritime",
+      "Woleu-Ntem"
+    ],
+    "caution": "Do not mix family smallholder, peri-urban and industrial plantation data. Do not treat cereal imports, retail prices or industrial output as farm-gate evidence."
+  },
+  "evidence": [
+    {
+      "topic": "2026 cereal balance and seasonal crop conditions",
+      "reference_date": "2026-06-04",
+      "source": "FAO GIEWS Gabon Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GAB",
+      "observations": [
+        {
+          "indicator": "Cereal import share of total cereal utilization",
+          "value": 90,
+          "unit": "percent",
+          "reference_year": 2026,
+          "status": "FAO estimate"
+        },
+        {
+          "indicator": "Total cereal import requirements",
+          "value": 255000,
+          "unit": "tonnes",
+          "reference_year": 2026,
+          "status": "FAO forecast"
+        },
+        {
+          "indicator": "Wheat import requirements",
+          "value": 170000,
+          "unit": "tonnes",
+          "reference_year": 2026,
+          "status": "FAO forecast"
+        },
+        {
+          "indicator": "Rice import requirements",
+          "value": 70000,
+          "unit": "tonnes",
+          "reference_year": 2026,
+          "status": "FAO forecast"
+        }
+      ],
+      "observations_text": [
+        "Cassava and plantains are the main food crops; only small quantities of maize are produced.",
+        "Cassava sowing typically occurs January-March; maize planting follows through May, with a four-to-five-month crop cycle.",
+        "Above-average rainfall in the first half of 2026 caused flooding and soil oversaturation and likely affected the secondary maize crop, planted by March for June-July harvest."
+      ],
+      "caveat": "FAO balance-sheet forecasts as at 4 June 2026, not final customs data or measured harvest results. The 90 percent figure applies to cereals, not all food."
+    },
+    {
+      "topic": "Agricultural census and crop/livestock survey availability",
+      "publication_date": "2025-07-09",
+      "reference_period": "RGA launched 2019; EPVA survey 2022-2023",
+      "source": "Gabon Ministry of Agriculture and INSTAT Gabon",
+      "source_urls": [
+        "https://agriculture.gouv.ga/rapports-du-recensement-general-de-lagriculture-rga/",
+        "https://new.instatgabon.org/fr/enquete-de-productions-vegetale-et-animale/epva-2022-2023"
+      ],
+      "observations": [
+        {
+          "indicator": "EPVA agricultural households located in urban areas",
+          "value": 54.85,
+          "unit": "percent",
+          "reference_period": "2022-2023"
+        },
+        {
+          "indicator": "EPVA agricultural households located in rural areas",
+          "value": 45.15,
+          "unit": "percent",
+          "reference_period": "2022-2023"
+        }
+      ],
+      "observations_text": [
+        "The nationwide General Agricultural Census was launched in 2019 with World Bank financial and FAO technical support; eight volumes are listed, including statistical tables and definitive module results.",
+        "INSTAT describes EPVA 2022-2023 as a specialised follow-up survey of crop, livestock and farmer-development indicators, with technical, statistical-table and complementary-module volumes.",
+        "The EPVA summary reports 54.85 percent of agricultural households in urban areas and 45.15 percent in rural areas, especially in Estuaire and Nyanga."
+      ],
+      "caveat": "Original RGA/EPVA statistical tables were identified but not extracted here. Household location shares are not production or land shares. Obtain the original tables before using crop totals, yields, herd sizes or provincial breakdowns."
+    },
+    {
+      "topic": "Crop production scale, supply gaps and smallholder structure",
+      "publication_date": "2025-11",
+      "reference_period": "Historical/recent-decade synthesis in report",
+      "source": "World Bank Group, Gabon Country Climate and Development Report, November 2025",
+      "source_url": "https://documents1.worldbank.org/curated/en/099103125110541735/pdf/P500763-2d78cc24-cd8b-4e07-997d-6e1b7ad3c93f.pdf",
+      "observations": [
+        {
+          "indicator": "Estimated local crop production",
+          "value": 800000,
+          "unit": "tonnes per year",
+          "status": "approximate sector estimate"
+        },
+        {
+          "indicator": "Cassava production",
+          "value": 230000,
+          "unit": "tonnes per year",
+          "status": "approximate historical/recent estimate"
+        },
+        {
+          "indicator": "Plantain production",
+          "value": 175000,
+          "unit": "tonnes per year",
+          "status": "approximate historical/recent estimate"
+        },
+        {
+          "indicator": "Cassava domestic supply gap",
+          "value": 130000,
+          "unit": "tonnes per year",
+          "status": "approximate estimate"
+        },
+        {
+          "indicator": "Plantain domestic supply gap",
+          "value": 85000,
+          "unit": "tonnes per year",
+          "status": "approximate estimate"
+        },
+        {
+          "indicator": "Family farms",
+          "value": 70000,
+          "unit": "farms",
+          "status": "approximate estimate"
+        },
+        {
+          "indicator": "Typical family farm size",
+          "value": "1-2",
+          "unit": "hectares"
+        }
+      ],
+      "observations_text": [
+        "The report estimates local crop production at about 800,000 tonnes, over 90 percent consisting of bananas, roots and tubers.",
+        "Cassava and plantain production is described as stagnating around 230,000 and 175,000 tonnes per year, leaving estimated annual supply gaps of 130,000 and 85,000 tonnes.",
+        "Family farms of about 1-2 hectares are described as the backbone of food production; peri-urban horticulture and industrial palm oil/rubber are separate systems."
+      ],
+      "caveat": "Approximate sector synthesis, not a harmonised current-year survey. Do not derive yields using unrelated area data; RGA/EPVA tables should supersede these estimates."
+    },
+    {
+      "topic": "Food import dependence and sector constraints",
+      "publication_date": "2025-11",
+      "reference_period": "Import expenditure 2022; other indicators cited in 2025 report",
+      "source": "World Bank Group, Gabon Country Climate and Development Report",
+      "source_url": "https://documents1.worldbank.org/curated/en/099103125110541735/pdf/P500763-2d78cc24-cd8b-4e07-997d-6e1b7ad3c93f.pdf",
+      "observations": [
+        {
+          "indicator": "Food import expenditure",
+          "value": 450000000000,
+          "unit": "XAF",
+          "reference_year": 2022
+        },
+        {
+          "indicator": "Food imports as share of nutritional needs",
+          "value": 60,
+          "unit": "percent",
+          "status": "approximate estimate"
+        },
+        {
+          "indicator": "Agriculture share of public expenditure",
+          "value": 0.7,
+          "unit": "percent"
+        },
+        {
+          "indicator": "Agricultural research funding",
+          "value": 0.16,
+          "unit": "percent of GDP"
+        },
+        {
+          "indicator": "Farmers with access to good agricultural advisory services",
+          "value": 10,
+          "unit": "percent"
+        },
+        {
+          "indicator": "Average fertilizer use",
+          "value": 8.79,
+          "unit": "kg per hectare of arable land"
+        }
+      ],
+      "caveat": "The XAF 450 billion amount is historical 2022 expenditure, not a current commodity price. The 60 percent nutritional-needs figure is distinct from FAO's 90 percent cereal-utilization share. Fertilizer use is contextual, not a crop recommendation."
+    },
+    {
+      "topic": "2026 government poultry-sector support and priority value chains",
+      "publication_date": "2026-09-11",
+      "source": "Agence Gabonaise de Presse, ministerial agriculture review",
+      "source_url": "https://agpgabon.ga/gabon-agriculture-pacome-kossy-dresse-le-bilan/",
+      "observations": [
+        {
+          "indicator": "Poultry farmers receiving support",
+          "value": 150,
+          "unit": "farmers",
+          "reference_year": 2026,
+          "status": "government-reported support"
+        },
+        {
+          "indicator": "Priority value chains in announced Technical Plan for Food Systems",
+          "value": 12,
+          "unit": "value chains",
+          "reference_year": 2026,
+          "status": "announced programme scope"
+        }
+      ],
+      "observations_text": [
+        "The minister reported support to 150 broiler producers through chicks, veterinary products and BCEG financing.",
+        "The announced plan targets 12 value chains including cassava, pork, cattle, rice, plantain, chilli, tomato, pineapple and sweet banana."
+      ],
+      "caveat": "The 150 figure describes supported producers, not national poultry-farm numbers or verified output. No unit costs, feed conversion, sale prices or gross margins are supplied."
+    },
+    {
+      "topic": "Climate, livestock and fisheries context",
+      "publication_date": "2025-11",
+      "reference_period": "Historical context and 2041-2050 modelled scenarios",
+      "source": "World Bank Group, Gabon Country Climate and Development Report",
+      "source_url": "https://documents1.worldbank.org/curated/en/099103125110541735/pdf/P500763-2d78cc24-cd8b-4e07-997d-6e1b7ad3c93f.pdf",
+      "observations": [
+        {
+          "indicator": "Agricultural employment",
+          "value": 16,
+          "unit": "percent of working population",
+          "reference_year": 2021
+        },
+        {
+          "indicator": "Arable land",
+          "value": 1000000,
+          "unit": "hectares",
+          "status": "approximate estimate"
+        },
+        {
+          "indicator": "Annual fish production",
+          "value": 30000,
+          "unit": "tonnes",
+          "status": "approximate estimate"
+        },
+        {
+          "indicator": "Estimated sustainable fish-catch potential",
+          "value": 230000,
+          "unit": "tonnes per year",
+          "status": "potential, not realised catch"
+        }
+      ],
+      "observations_text": [
+        "The report identifies rainfall variability, flooding, erosion, heat stress and changing water availability as risks to rainfed crop production and food distribution.",
+        "Fisheries are described as artisanal and industrial, with aquaculture a small share; fish potential is not the same as realised catch."
+      ],
+      "caveat": "Climate scenarios are projections, not observed losses or farm-level forecasts. Fish potential is not a quota or current production target."
+    }
+  ],
+  "data_gaps": [
+    "Extract crop-specific production, area, yield and provincial tables from RGA/EPVA for cassava, plantain, maize, rice, yam, taro, groundnut, vegetables and oil palm.",
+    "Extract livestock herd populations, poultry output, pig production and veterinary data from EPVA and current Ministry sources.",
+    "Obtain current dated farm-gate prices by crop and province; keep separate from wholesale, retail and import prices.",
+    "Obtain current XAF enterprise budgets and input quotations for seed/planting material, fertilizer, crop protection, labour, mechanisation, irrigation, packaging, transport, storage and land.",
+    "Verify final 2026 harvest and cereal import data after the June FAO forecast.",
+    "Reconcile national RGA/EPVA, FAOSTAT and World Bank series before deriving yields or trends."
+  ],
+  "data_quality": {
+    "overall": "moderate_for_sector_context_low_for_calculator_inputs",
+    "strengths": [
+      "FAO GIEWS 2026 cereal balance and seasonal assessment",
+      "Official Ministry RGA documentation and listed volumes",
+      "INSTAT EPVA 2022-2023 survey summary",
+      "World Bank 2025 sector and climate synthesis",
+      "2026 national press agency report of government poultry support"
+    ],
+    "limitations": [
+      "RGA/EPVA statistical tables not extracted in this record",
+      "Crop production and supply gaps are approximate historical synthesis figures",
+      "No validated current farm-gate price series or crop-specific farm budget found",
+      "Retail/import prices cannot substitute for farm-gate prices",
+      "2026 FAO cereal balance and rainfall effects are forecasts/assessments, not final annual statistics"
+    ]
+  },
+  "calculator_readiness": {
+    "status": "not_ready_research_only",
+    "blockers": [
+      "No extracted validated crop-level RGA/EPVA area-production-yield panel",
+      "No current provincial farm-gate prices with source and verification date",
+      "No current crop-specific enterprise budgets and input quotations",
+      "No reconciled livestock series for enterprise modelling"
+    ],
+    "recommendation": "Keep Gabon directory-only and inactive. Do not calculate farm profit from national supply gaps, cereal import requirements, retail prices or approximate historical sector estimates. Reassess after RGA/EPVA tables, current farm-gate prices and locally validated budgets are extracted."
+  },
+  "sources": [
+    {
+      "name": "FAO GIEWS Gabon Country Brief, 4 June 2026",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GAB"
+    },
+    {
+      "name": "Gabon Ministry of Agriculture, RGA report volumes, 9 July 2025",
+      "url": "https://agriculture.gouv.ga/rapports-du-recensement-general-de-lagriculture-rga/"
+    },
+    {
+      "name": "INSTAT Gabon, EPVA 2022-2023",
+      "url": "https://new.instatgabon.org/fr/enquete-de-productions-vegetale-et-animale/epva-2022-2023"
+    },
+    {
+      "name": "World Bank Group, Gabon Country Climate and Development Report, November 2025",
+      "url": "https://documents1.worldbank.org/curated/en/099103125110541735/pdf/P500763-2d78cc24-cd8b-4e07-997d-6e1b7ad3c93f.pdf"
+    },
+    {
+      "name": "Agence Gabonaise de Presse, ministerial agriculture review, 11 September 2026",
+      "url": "https://agpgabon.ga/gabon-agriculture-pacome-kossy-dresse-le-bilan/"
+    },
+    {
+      "name": "US Department of Commerce, Gabon Agriculture guide",
+      "url": "https://www.trade.gov/country-commercial-guides/gabon-agriculture"
+    }
+  ]
+}

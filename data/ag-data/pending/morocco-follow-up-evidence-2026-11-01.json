@@ -1,0 +1,699 @@
+{
+  "title": "Morocco follow-up agricultural evidence — October 2026",
+  "country_code": "MA",
+  "country_name": "Morocco",
+  "status": "research_only_not_published_to_calculator",
+  "added_on": "2026-11-01",
+  "sources": [
+    {
+      "title": "Tomates : la chaleur perturbe la production et complique les exportations marocaines",
+      "publisher": "Médias24 reporting FIFEL",
+      "url": "https://medias24.com/2026/10/08/tomates-la-chaleur-perturbe-la-production-et-complique-les-exportations-marocaines-1775041",
+      "publication_date": "2026-10-08",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "cost_of_production_mad_per_kg_lower_bound": 7,
+          "status": "FIFEL-reported potential cost exceeding MAD 7/kg for some producers; not a national average or itemized budget."
+        },
+        {
+          "commodity": "tomato",
+          "yield_mt_per_ha_range": [
+            60,
+            70
+          ],
+          "status": "Sector-reported yields for some producers under heat stress; not a representative national yield distribution."
+        },
+        {
+          "commodity": "tomato",
+          "yield_mt_per_ha_good_conditions_range": [
+            120,
+            150
+          ],
+          "status": "Sector-reported comparison under good conditions; production system and region require specification."
+        },
+        {
+          "commodity": "tomato",
+          "wholesale_price_casablanca_mad_per_kg_range": [
+            2.5,
+            6.5
+          ],
+          "status": "Wholesale prices cited in the report; not farm-gate prices."
+        }
+      ],
+      "quality_notes": [
+        "FIFEL attributes the pressure partly to prolonged September heat above 35°C in the Agadir production zone.",
+        "Do not compare the cost figure with wholesale prices without matched grade, date, production basin and documented marketing deductions.",
+        "Request itemized budgets from Agadir/Souss producer organizations, separating open-field and protected production."
+      ]
+    },
+    {
+      "title": "Agriculture : les coûts freinent le lancement des labours",
+      "publisher": "LeBrief reporting farmer testimony relayed by Assabah",
+      "url": "https://www.lebrief.ma/agriculture-les-couts-freinent-le-lancement-des-labours-100171466/",
+      "publication_date": "2026-10-28",
+      "observations": [
+        {
+          "indicator": "cereal_seed_purchase_price",
+          "value_mad_per_kg": 5,
+          "status": "Individual farmer testimony; crop, variety, certification and location are unspecified."
+        },
+        {
+          "indicator": "cereal_sale_price",
+          "maximum_mad_per_kg": 2,
+          "status": "Individual farmer testimony; crop, grade, buyer and transaction terms are unspecified."
+        }
+      ],
+      "quality_notes": [
+        "These figures are not official price observations or representative national farm-gate series.",
+        "Do not use them in calculator budgets without crop-, grade-, region- and date-specific corroboration."
+      ]
+    },
+    {
+      "title": "ENQUÊTE. Dans le Souss, la tomate sous forte pression",
+      "publisher": "Médias24",
+      "url": "https://medias24.com/2025/01/14/dans-le-souss-la-tomate-sous-forte-pression",
+      "publication_date": "2025-01-14",
+      "reference_period": "Souss-Massa greenhouse tomato campaign; producer interviews reported in December 2024",
+      "status": "producer_interview_cost_evidence_historical_and_scope_limited",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "production_cost_mad_per_ha_range": [
+            500000,
+            600000
+          ],
+          "unit": "MAD/ha/campaign",
+          "status": "Two producer-exporters reported campaign costs for greenhouse tomato; excludes greenhouse structure depreciation, packing and freight."
+        },
+        {
+          "commodity": "tomato",
+          "production_cost_mad_per_kg_range": [
+            6,
+            7
+          ],
+          "status": "Same two producers' reported cost range; time-specific to December 2024 and their export-oriented greenhouse systems."
+        },
+        {
+          "indicator": "seasonal_farm_labour_wage",
+          "value_mad_per_day_range": [
+            80,
+            85
+          ],
+          "workday_hours": 10,
+          "status": "Reported worker pay in the interviewed Souss farms; not a national or current wage benchmark."
+        },
+        {
+          "commodity": "tomato",
+          "water_requirement_tonnes_per_ha": 30000,
+          "status": "A producer's reported water requirement; confirm measurement and production system before using in budgets."
+        },
+        {
+          "indicator": "desalinated_irrigation_water_cost_mad_per_m3",
+          "lower_bound": 6,
+          "status": "Reported cost in the Souss desalination-irrigation context; verify current tariff and actual farm delivery charges."
+        }
+      ],
+      "quality_notes": [
+        "The figures are direct producer interviews but the article does not publish a representative sample or complete itemized enterprise accounts.",
+        "The reported MAD 500,000-600,000/ha is campaign operating cost and explicitly excludes depreciation, packing and freight; do not compare it directly with a full-cost figure.",
+        "Use as a historical plausibility check and a list of cost headings to request from producers, not as a 2026/27 calculator default."
+      ]
+    },
+    {
+      "title": "Analyse économique de la compétitivité de la filière tomate dans la région du Souss-Massa (Maroc)",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires; authors affiliated with INRA Agadir",
+      "url": "https://www.agrimaroc.org/index.php/Actes_IAVH2/article/view/769",
+      "publication_date": "Publication date not clearly exposed on article page",
+      "reference_period": "Study based on survey data from approximately 20 Souss-Massa greenhouse tomato farms; historical study",
+      "status": "academic_farm_survey_budget_methodology_sample_20_full_numeric_budget_table_not_accessible_on_landing_page",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "production_system": "greenhouse_Souss_Massa",
+          "farm_sample_size_approx": 20,
+          "status": "Authors report farm-level market-price budgets assembled from a sample of approximately twenty farms."
+        },
+        {
+          "indicator": "tomato_policy_analysis_domestic_resource_cost_coefficient",
+          "value": 0.325,
+          "status": "Study's policy-analysis-matrix result; an economic competitiveness indicator, not a farm profit margin or yield."
+        },
+        {
+          "indicator": "tomato_nominal_protection_coefficient_output",
+          "value": 0.97,
+          "status": "Historical policy-analysis indicator, not a producer sale price."
+        },
+        {
+          "indicator": "tomato_nominal_protection_coefficient_tradable_inputs",
+          "value": 1.077,
+          "status": "Historical policy-analysis indicator, not an input price quote."
+        }
+      ],
+      "quality_notes": [
+        "The study states that its farm-level budget covers costs and receipts at market prices for an approximately 20-farm sample.",
+        "The landing page does not expose the underlying numeric budget table or individual cost lines, so no numeric cost or revenue values are extracted here.",
+        "The study reports historical context and must not be treated as a current 2026/27 budget.",
+        "Request the full article or underlying survey tables from the authors/INRA Agadir to recover itemized cost and output data."
+      ]
+    },
+    {
+      "title": "Prix référentiel, primes de stockage, transports… Tout savoir sur la campagne céréalière 2026",
+      "publisher": "Aujourd'hui le Maroc, reporting the 2026 ministry circular",
+      "url": "https://aujourdhui.ma/actualite/prix-referentiel-primes-de-stockage-transports-tout-savoir-sur-la-campagne-cerealiere-2026",
+      "publication_date": "2026-05-19",
+      "reference_period": "2026 national soft-wheat harvest marketing campaign; storage measures extend into January 2027",
+      "status": "campaign_specific_reference_price_and_storage_incentives_not_universal_farmgate_price",
+      "observations": [
+        {
+          "commodity": "soft_wheat",
+          "reference_purchase_price_mad_per_quintal": 280,
+          "quality": "standard",
+          "status": "Target reference purchase price stated to include all charges, taxes and margins associated with purchase from producers and delivery to industrial mill; may be subject to negotiated bonuses or deductions."
+        },
+        {
+          "indicator": "soft_wheat_collection_premium_window",
+          "start_date": "2026-06-01",
+          "end_date": "2026-07-31",
+          "status": "Campaign collection incentive period; actual application may be adjusted."
+        },
+        {
+          "indicator": "soft_wheat_storage_premium_mad_per_quintal_per_fortnight",
+          "value": 2.5,
+          "status": "Paid to eligible storage organizations for qualifying stocks; not an additional direct farmer payment."
+        },
+        {
+          "indicator": "soft_wheat_strategic_storage_premium_mad_per_quintal_per_fortnight",
+          "value": 3,
+          "status": "For qualifying stocks held by storage organizations from 2026-08-01 through 2027-01-31, subject to caps and conditions; not direct farmer revenue."
+        }
+      ],
+      "quality_notes": [
+        "The MAD 280/quintal figure is a reference target for standard-quality soft wheat delivered to industrial mills, inclusive of intermediary charges/margins; it is not automatically the net amount received by each farmer.",
+        "Bonuses and deductions may be negotiated; obtain the original ONICL circular and actual producer settlement receipts to calculate net farmer prices.",
+        "Storage premiums are conditional support to eligible storage organizations, not a farmer crop price or guaranteed revenue."
+      ]
+    },
+    {
+      "title": "Feasibility study of a supplemental irrigation program to secure wheat production for food sovereignty in the Saïss plain (Morocco)",
+      "publisher": "Moroccan Journal of Agricultural Sciences, Vol. 7 No. 1; researchers from the National School of Agriculture in Meknes",
+      "url": "https://techagro.org/index.php/MJAS/article/view/1155",
+      "publication_date": "2026-03-11",
+      "reference_period": "Wheat production conditions in the 2021/2022 campaign; farmer survey in Meknes prefecture and El Hajeb province",
+      "status": "peer_reviewed_regional_farmer_survey_with_partial_itemized_cost_evidence_historical",
+      "observations": [
+        {
+          "commodity": "soft_wheat_and_durum_wheat",
+          "farm_sample_size": 50,
+          "locations": [
+            "Meknes prefecture",
+            "El Hajeb province"
+          ],
+          "sampling_frame_farmers": 215,
+          "status": "Random sample of 50 cereal farmers involved in the Saïss plain preservation project; production data refer to 2021/22."
+        },
+        {
+          "commodity": "wheat",
+          "seed_rate_quintals_per_ha": 2.1,
+          "status": "Average seed rate reported by surveyed cereal farmers."
+        },
+        {
+          "commodity": "wheat",
+          "basal_fertilizer_use_share_percent": 88,
+          "basal_fertilizer_quantity_quintals_per_ha": 2,
+          "status": "88% used compound basal fertilizer; mean quantity reported."
+        },
+        {
+          "commodity": "wheat",
+          "nitrogen_fertilizer_use_share_percent": 58,
+          "nitrogen_fertilizer_quantity_quintals_per_ha": 1.2,
+          "status": "58% used nitrogen fertilizer, mainly ammonium nitrate; mean quantity reported."
+        },
+        {
+          "commodity": "wheat",
+          "herbicide_use_share_percent": 94,
+          "herbicide_quantity_l_per_ha": 0.92,
+          "status": "Survey-reported practice and average quantity."
+        },
+        {
+          "commodity": "wheat",
+          "fungicide_use_share_percent": 90,
+          "fungicide_quantity_l_per_ha": 0.68,
+          "status": "Survey-reported disease-control practice and average quantity."
+        },
+        {
+          "commodity": "wheat",
+          "grain_yield_quintals_per_ha_range": [
+            4,
+            50
+          ],
+          "status": "Wide farm-to-farm range reported; not a national average and production conditions vary."
+        },
+        {
+          "indicator": "farm_labour_daily_wage_mad_range",
+          "value_mad_per_day_range": [
+            80,
+            120
+          ],
+          "status": "Daily wages varied by task in the survey region."
+        },
+        {
+          "commodity": "wheat",
+          "seed_cost_mad_per_ha": 826,
+          "status": "Average cost in the study's supplemental-irrigation programme working-capital budget; not a current 2026/27 input quote."
+        },
+        {
+          "commodity": "wheat",
+          "basal_fertilizer_cost_mad_per_ha": 691,
+          "status": "Average cost in the programme budget; historical and programme-specific."
+        },
+        {
+          "commodity": "wheat",
+          "mechanization_cost_mad_per_ha": 1196,
+          "status": "Soil preparation through harvest, as budgeted for the supplemental-irrigation programme."
+        },
+        {
+          "commodity": "wheat",
+          "labour_cost_mad_per_ha": 352,
+          "status": "Programme budget estimate from soil preparation through harvest."
+        },
+        {
+          "commodity": "wheat",
+          "pivot_energy_cost_mad_per_ha": 1830,
+          "status": "Energy cost for operating irrigation pivots in the programme budget."
+        },
+        {
+          "commodity": "wheat",
+          "pivot_maintenance_repair_cost_mad_per_ha": 660,
+          "status": "Pivot maintenance and repair in the programme budget."
+        }
+      ],
+      "quality_notes": [
+        "This is a recent peer-reviewed publication, but the farm production survey refers to the 2021/22 season; do not describe the unit costs as current 2026 prices.",
+        "The 50-farmer survey covers two provinces in the Saïss plain and should not be generalized to all Morocco.",
+        "The itemized costs are presented in the paper's working-capital budget for a supplemental-irrigation programme, not necessarily audited average farmer expenditure.",
+        "The paper reports grain yields from 4 to 50 quintals/ha across farms; retain the range and context rather than using its upper bound as a default yield.",
+        "The study is useful for a wheat enterprise budget structure and local production coefficients, but current seed, fertilizer, labour, machinery and irrigation tariffs still require dated invoices or official price schedules."
+      ]
+    },
+    {
+      "title": "Campagne agricole 2026/2027 : optimisme mesuré dans le monde rural, les fellahs espèrent une année pluvieuse",
+      "publisher": "Finances News Hebdo",
+      "url": "https://fnh.ma/articles/campagne-agricole-2026-2027-optimisme-monde-rural-pluies",
+      "publication_date": "2026-10-02",
+      "reference_period": "Morocco 2026/27 cereal campaign input market at season start",
+      "status": "season_start_market_indications_not_verified_farmer_invoices",
+      "observations": [
+        {
+          "commodity": "bread_wheat_seed",
+          "indicative_price_mad_per_quintal": 400,
+          "status": "Reported average market price at 2026/27 season start; variety, certification class, subsidy and delivery location are unspecified."
+        },
+        {
+          "commodity": "barley_seed",
+          "indicative_price_mad_per_quintal": 400,
+          "status": "Reported average market price at 2026/27 season start; verify seed class and supplier invoice."
+        },
+        {
+          "commodity": "durum_wheat_seed",
+          "indicative_price_mad_per_quintal_range": [
+            400,
+            450
+          ],
+          "status": "Reported market price range at 2026/27 season start; not a national official price schedule."
+        },
+        {
+          "indicator": "certified_seed_mobilization_target_quintals",
+          "value": 1000000,
+          "status": "Government expected to mobilize more than one million quintals of certified seed; availability and price vary by variety and region."
+        },
+        {
+          "indicator": "phosphate_fertilizer_market_supply_tonnes",
+          "lower_bound": 600000,
+          "status": "Article reports more than 600,000 tonnes of phosphate fertilizers entering the market; supply context, not a per-hectare application or farm price."
+        }
+      ],
+      "quality_notes": [
+        "Prices are reported market indications in a trade publication, not verified farmer invoices or a government farm-input price list.",
+        "Do not apply the same price to certified and ordinary seed, all varieties, or all regions without supplier quotations.",
+        "Certified seed availability was reported as uneven for some varieties and regions.",
+        "Use as a dated 2026/27 seed-market cross-check only; seek supplier invoices and any applicable subsidy schedule before setting calculator defaults."
+      ]
+    },
+    {
+      "title": "Morocco’s wheat seed system and its impact on the realization of genetic progress",
+      "publisher": "Food Security (Springer); authors affiliated with INRA, SONACOS, Mohammed V University and ICARDA",
+      "url": "https://doi.org/10.1007/s12571-026-01688-z",
+      "publication_date": "2026-10",
+      "reference_period": "Review of Morocco's wheat seed system and farm-level realization of genetic gains",
+      "status": "peer_reviewed_seed_system_review_context_not_crop_budget",
+      "observations": [
+        {
+          "commodity": "wheat",
+          "breeding_program_yield_gain_kg_per_ha_per_year": 59,
+          "status": "Review reports breeding-program yield gains of approximately 59 kg/ha/year."
+        },
+        {
+          "commodity": "wheat",
+          "farm_field_realization_of_genetic_gain_percent": 31,
+          "status": "Review estimates about 31% of breeding gains are realized in farmers' fields; not an individual farm yield forecast."
+        },
+        {
+          "indicator": "wheat_varietal_turnover_rate_per_year",
+          "value": 0.045,
+          "status": "Review estimate of slow varietal turnover."
+        },
+        {
+          "indicator": "wheat_seed_replacement_rate_percent",
+          "value": 35,
+          "status": "Review estimates seed replacement at approximately 35%."
+        },
+        {
+          "indicator": "wheat_varietal_adoption_lag_years",
+          "range": [
+            10,
+            12
+          ],
+          "status": "Review reports a 10–12 year adoption lag."
+        }
+      ],
+      "quality_notes": [
+        "Peer-reviewed systems review, not a farm-level production budget or price survey.",
+        "Useful context for identifying variety, seed class, seed age and extension access when recording yield assumptions.",
+        "Do not apply breeding gain directly to farmer yield estimates; the review says only a portion is realized in farmers' fields.",
+        "Figures are from the indexed abstract; verify against full text when obtained."
+      ]
+    },
+    {
+      "title": "FAO GIEWS Country Brief: Morocco",
+      "publisher": "FAO Global Information and Early Warning System",
+      "url": "https://cb.apps.fao.org/country.jsp?code=MAR&lang=en",
+      "publication_date": "2026-07-08",
+      "reference_period": "2026 cereal harvest and 2026/27 wheat marketing year",
+      "status": "official_international_cereal_balance_forecast_not_farm_budget",
+      "observations": [
+        {
+          "commodity": "cereals",
+          "production_forecast_mt": 6300000,
+          "campaign": "2026",
+          "status": "FAO forecast for overall cereal production, about 16% above the five-year average."
+        },
+        {
+          "commodity": "wheat",
+          "import_requirement_forecast_mt": 5000000,
+          "marketing_year": "2026/27",
+          "status": "FAO forecast of wheat import requirements, about 15% below the five-year average."
+        }
+      ],
+      "quality_notes": [
+        "FAO's 6.3 million tonne forecast differs from the Moroccan government/industry 9 million tonne cereal estimate reported elsewhere for the 2025/26 campaign; retain source dates, definitions and methods rather than averaging.",
+        "National cereal balance forecasts cannot substitute for crop-specific farm yields, input costs or producer prices.",
+        "Use for national production and trade context only, not calculator enterprise revenue."
+      ]
+    },
+    {
+      "title": "Morocco eyes expansion of cereal planting as water reserves more than double",
+      "publisher": "Hespress English, citing Ministry of Equipment and Water",
+      "url": "https://en.hespress.com/147130-morocco-eyes-expansion-of-cereal-planting-as-water-reserves-more-than-double.html",
+      "publication_date": "2026-10-11",
+      "reference_period": "Reservoir situation as of 2026-10-01; outlook for 2026/27 agricultural campaign",
+      "status": "official_water_reserve_snapshot_and_professional_area_expectations_not_crop_budget",
+      "observations": [
+        {
+          "indicator": "national_dam_filling_rate_percent",
+          "value": 65.51,
+          "as_of": "2026-10-01",
+          "status": "Reported from Ministry of Equipment and Water figures."
+        },
+        {
+          "indicator": "national_dam_water_storage_billion_m3",
+          "value": 11.15,
+          "as_of": "2026-10-01",
+          "status": "Reported reservoir storage; not all water is allocated or accessible to farms."
+        },
+        {
+          "indicator": "national_dam_filling_rate_percent_previous_year",
+          "value": 32.68,
+          "as_of": "2025-10-01",
+          "status": "Same-date previous-year comparison reported in article."
+        },
+        {
+          "indicator": "national_dam_water_storage_billion_m3_previous_year",
+          "value": 5.45,
+          "as_of": "2025-10-01",
+          "status": "Approximate same-date previous-year comparison."
+        },
+        {
+          "indicator": "cereals_and_legumes_expected_sown_area_million_ha",
+          "value": 5,
+          "comparison": "more than",
+          "campaign": "2026/27",
+          "status": "Agricultural-professional expectation, not a finalized official planted-area statistic."
+        },
+        {
+          "indicator": "previous_campaign_cereals_and_legumes_sown_area_million_ha",
+          "value": 3.9,
+          "campaign": "2025/26",
+          "status": "Reported prior-season area."
+        }
+      ],
+      "quality_notes": [
+        "Reservoir levels are national aggregates and do not show water allocation, basin-level access, irrigation tariffs or farm-level availability.",
+        "The projected 2026/27 planted area above five million hectares is a professional expectation, not a verified final area.",
+        "Use this source for seasonal risk and water-context notes, not crop yield or revenue assumptions.",
+        "Do not infer that all farmers have improved irrigation access merely because national dam storage increased."
+      ]
+    },
+    {
+      "title": "Control of agricultural inputs",
+      "publisher": "Office National de Sécurité Sanitaire des Produits Alimentaires (ONSSA), Morocco",
+      "url": "https://www.onssa.gov.ma/intrants-agricoles-ia/control-of-agricultural-inputs/?lang=en",
+      "publication_date": "Undated official guidance; accessed 2026-11-01",
+      "reference_period": "National control framework for seeds, fertilizers, pesticides and irrigation water",
+      "status": "official_regulatory_source_quality_assurance_not_prices",
+      "observations": [
+        {
+          "indicator": "agricultural_input_control_scope",
+          "items": [
+            "seeds",
+            "fertilizers",
+            "pesticides"
+          ],
+          "status": "ONSSA describes monitoring of production, packaging, distribution and imports, including quality and labelling checks."
+        },
+        {
+          "indicator": "input_quality_control_crop_year_window",
+          "start_month": "September",
+          "end_month": "May",
+          "status": "ONSSA says the renewed control plan covers each crop year."
+        },
+        {
+          "indicator": "irrigation_water_quality_control",
+          "status": "ONSSA describes inspection and sampling under irrigation-water quality rules, including distinctions between natural water and treated wastewater."
+        }
+      ],
+      "quality_notes": [
+        "This is an official regulatory framework, not a list of approved products, supplier invoices or price quotations.",
+        "Calculator evidence should identify input product, formulation, registration or conformity status, supplier, unit, invoice date and price.",
+        "For irrigation assumptions, water source and quality compliance are separate from water quantity, availability and delivery cost."
+      ]
+    },
+    {
+      "title": "Budget économique exploratoire 2027 : perspectives économiques pour les années 2026 et 2027",
+      "publisher": "Haut-Commissariat au Plan (HCP), Morocco",
+      "url": "https://www.hcp.ma/Budget-economique-exploratoire-2027-Perspectives-economiques-pour-les-annees-2026-et-2027-Juillet-2026_a4338.html",
+      "publication_date": "2026-07-20",
+      "reference_period": "Macroeconomic outlook for 2026 and 2027",
+      "status": "official_macro_forecast_agricultural_sector_context_not_enterprise_budget",
+      "observations": [
+        {
+          "indicator": "national_economic_growth_forecast_percent",
+          "value": 4.8,
+          "year": 2026,
+          "status": "HCP forecast supported in part by a strong agricultural rebound."
+        },
+        {
+          "indicator": "national_economic_growth_forecast_percent",
+          "value": 3,
+          "year": 2027,
+          "status": "HCP forecast under an assumption of an average cereal campaign."
+        }
+      ],
+      "quality_notes": [
+        "Macroeconomic growth forecasts are not agricultural production or farm profitability forecasts.",
+        "The 2027 forecast explicitly assumes an average cereal campaign; do not use it as a crop-yield coefficient.",
+        "Use only as national context for season planning."
+      ]
+    },
+    {
+      "title": "Morocco farmers saw hope in rain, but Mideast war inflates production costs",
+      "publisher": "Al-Monitor, reporting farmer and agricultural-sector interviews",
+      "url": "https://www.al-monitor.com/originals/2026/05/morocco-farmers-saw-hope-rain-mideast-war-inflates-production-costs",
+      "publication_date": "2026-05-21",
+      "reference_period": "Farmer-reported operating-cost pressures during the 2025/26 season",
+      "status": "dated_farmer_testimony_cost_stress_not_representative_national_price_series",
+      "observations": [
+        {
+          "commodity": "lentils_and_field_crops",
+          "indicator": "tractor_diesel_cost_mad_per_ha",
+          "previous_value": 1200,
+          "reported_current_value": 1800,
+          "unit": "MAD/ha",
+          "status": "One Marchouch-region farmer's reported diesel spending for tractor operations; farm, operation count, date range and fuel quantity are not itemized."
+        },
+        {
+          "indicator": "agricultural_machinery_hire_cost",
+          "reported_change": "doubled",
+          "status": "Another farmer reported harvesting-machine rental costs had doubled; no original or new absolute price, machine type, area or service specification was supplied."
+        },
+        {
+          "commodity": "livestock_feed",
+          "indicator": "grain_feed_sack_price_mad",
+          "previous_value": 90,
+          "reported_current_range": [
+            110,
+            120
+          ],
+          "unit": "MAD per sack",
+          "status": "One livestock breeder's testimony; sack weight, feed formulation, location and transaction date are not specified, so this cannot be converted to MAD/kg or used as a standard feed cost."
+        }
+      ],
+      "quality_notes": [
+        "These are attributed interviews, not a statistically representative survey or official price series.",
+        "The diesel comparison is useful as a dated cost-pressure signal, but it does not establish a universal diesel cost per hectare; record litres, machinery hours, operations and invoice date for calculator use.",
+        "The machinery-hire statement lacks an absolute rate and machine/service definition; request dated local quotations.",
+        "The feed-sack comparison is unusable as a unit price until sack weight and formulation are identified.",
+        "The article attributes cost pressure to fuel and fertilizer-market disruption; do not treat its May 2026 values as current November 2026 quotations."
+      ]
+    },
+    {
+      "title": "Official Gazette No. 7492 — rules and supported prices for certified cereal and food/forage legume seeds, 2025/26",
+      "publisher": "Secrétariat Général du Gouvernement du Royaume du Maroc (Official Gazette)",
+      "url": "https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7492_Ar.pdf",
+      "publication_date": "2026-03-19",
+      "reference_period": "2025/26 agricultural season; R2 certified seed purchase and maximum supported retail prices",
+      "status": "primary_government_legal_schedule_historical_season_specific_certified_seed_prices_and_subsidy",
+      "observations": [
+        {
+          "commodity": "bread_wheat_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 380,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed; applies to the 2025/26 season, not automatically 2026/27."
+        },
+        {
+          "commodity": "durum_wheat_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 500,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "barley_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 380,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "oat_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 610,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "faba_bean_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 800,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "lentil_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 1150,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "chickpea_seed",
+          "seed_class": "R2",
+          "maximum_supported_retail_price_mad_per_quintal": 1150,
+          "reference_season": "2025/26",
+          "status": "Official Gazette maximum supported retail price for certified R2 seed."
+        },
+        {
+          "commodity": "bread_wheat_seed",
+          "seed_class": "R2",
+          "breeder_purchase_price_mad_per_quintal": 400,
+          "reference_season": "2025/26",
+          "status": "Official price used for calculating financial support paid to seed multipliers; not a farmer purchase price."
+        },
+        {
+          "commodity": "durum_wheat_seed",
+          "seed_class": "R2",
+          "breeder_purchase_price_mad_per_quintal": 500,
+          "reference_season": "2025/26",
+          "status": "Official price used for calculating financial support paid to seed multipliers; not a farmer purchase price."
+        },
+        {
+          "commodity": "barley_seed",
+          "seed_class": "R2",
+          "breeder_purchase_price_mad_per_quintal": 430,
+          "reference_season": "2025/26",
+          "status": "Official price used for calculating financial support paid to seed multipliers; not a farmer purchase price."
+        },
+        {
+          "indicator": "certified_seed_support",
+          "commodity": "bread_wheat_seed",
+          "subsidy_mad_per_quintal": 255,
+          "reference_season": "2025/26",
+          "status": "Official support rate for certified seed; subsidy must not be subtracted from or added to farmer price without confirming beneficiary and transaction mechanism."
+        },
+        {
+          "indicator": "certified_seed_support",
+          "commodity": "durum_wheat_seed",
+          "subsidy_mad_per_quintal": 235,
+          "reference_season": "2025/26",
+          "status": "Official support rate for certified seed."
+        },
+        {
+          "indicator": "certified_seed_support",
+          "commodity": "barley_seed",
+          "subsidy_mad_per_quintal": 285,
+          "reference_season": "2025/26",
+          "status": "Official support rate for certified seed."
+        }
+      ],
+      "quality_notes": [
+        "This is a primary legal source in Morocco's Official Gazette, dated 19 March 2026, and is stronger than unsourced or anonymous market-price testimony for the 2025/26 season.",
+        "The R2 maximum supported retail prices are season-specific and apply to certified seed; they must not be represented as ordinary seed prices or current 2026/27 quotations.",
+        "The same decree separately lists prices used to calculate support to seed multipliers; these are not the farmer's purchase prices.",
+        "The 2026/27 market indications already recorded from Finances News Hebdo are different in date and source type; keep them separate and investigate differences by seed class, variety, subsidy and region rather than averaging them.",
+        "No farmer invoice, actual point-of-sale receipt, or 2026/27 official retail schedule is provided by this source."
+      ]
+    }
+  ],
+  "remaining_gaps": [
+    "Obtain FIFEL or producer-organization itemized 2026/27 tomato budgets from Agadir/Souss and other regions, including variety, production system, water/energy, fertilizer, crop protection, labour, harvest, packing and sales channel.",
+    "Verify the reported tomato cost above MAD 7/kg against farm records and define the production system to which it applies.",
+    "Corroborate October 2026 cereal seed and sale-price testimony with dated invoices and farmer receipts.",
+    "Obtain matched producer and wholesale tomato prices by grade, region and date to calculate netbacks.",
+    "Obtain the original ONICL 2026 circular and any 2026/27 update, including grade, eligibility, delivery, deductions and transport terms.",
+    "Obtain multi-season crop-specific harvested-area yields and actual farmer-paid input prices before calculator activation.",
+    "Obtain the full numeric tables or underlying survey from the approximately 20-farm INRA Agadir/Souss-Massa greenhouse tomato study; its landing page confirms farm-level budget methodology but does not expose itemized values.",
+    "Obtain 2026/27 producer invoices and farm accounts from multiple Souss-Massa greenhouse and open-field tomato systems; distinguish seasonal operating cost from depreciation, packing, freight and export compliance.",
+    "Obtain producer settlement slips showing actual net soft-wheat receipts under the 2026 ONICL scheme after grade adjustments, negotiated bonuses/deductions, transport and intermediary charges.",
+    "For Saïss wheat, obtain current 2026/27 invoices and farmer accounts to update the 2021/22 survey coefficients and programme-budget unit costs; separately validate irrigated and rainfed production systems.",
+    "Obtain the 2026/27 official SONACOS certified-seed price list and subsidy circular by variety, class and region; cross-check reported MAD 400/quintal bread-wheat/barley and MAD 400–450/quintal durum-wheat market indications against invoices.",
+    "Obtain the full text of the 2026 wheat seed-system review and local varietal performance data to connect seed replacement and varietal choice with farm-level yields without assuming national genetic-gain figures apply uniformly.",
+    "For the 2026/27 campaign, obtain basin-level irrigation allocations and farm tariffs; national dam storage cannot be translated into farm water availability or irrigation cost.",
+    "For seed, fertilizer and pesticide records, capture registered product/formulation and conformity evidence alongside dated supplier invoices; ONSSA's control framework confirms that input quality and labelling matter independently of price.",
+    "For Marchouch and other cereal/lentil zones, obtain 2026/27 diesel invoices or pump receipts, litres consumed by operation and hectare, and dated tractor/harvester hire quotations; the May 2026 interview provides only one farmer's MAD 1,200-to-1,800/ha tractor-diesel comparison and an unquantified machinery-rental increase.",
+    "For livestock-feed costs, obtain supplier invoices that state sack weight, feed formulation, location and date; the May 2026 reported MAD 90-to-110–120 per sack comparison lacks the unit details needed for a per-kg calculator input.",
+    "Obtain the 2026/27 Official Gazette decree or Ministry/SONACOS schedule for certified R2 seed retail prices and support rates; the newly recorded Official Gazette No. 7492 is a 2025/26 schedule and must not be carried forward automatically.",
+    "Reconcile the 2025/26 Official Gazette R2 maximum supported retail prices (soft wheat MAD 380/q, durum wheat MAD 500/q, barley MAD 380/q) with 2026/27 trade-publication market indications (approximately MAD 400/q soft wheat/barley and MAD 400–450/q durum) using certified class, variety, subsidy treatment, region and actual sales receipts."
+  ],
+  "conclusion": "Morocco remains research-only. The evidence register now contains 14 source records, including Morocco's Official Gazette No. 7492 (19 March 2026), a primary legal schedule of 2025/26 certified R2 seed prices and seed-support rates. The official schedule is valuable historical evidence, but it is not a 2026/27 price list and cannot be applied to ordinary seed. The 2026/27 market indications remain separate pending invoices and an updated official schedule. No calculator data are activated."
+}

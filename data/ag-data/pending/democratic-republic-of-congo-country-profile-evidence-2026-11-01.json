@@ -1,0 +1,194 @@
+{
+  "country": "Democratic Republic of the Congo",
+  "iso_alpha2": "CD",
+  "iso_alpha3": "COD",
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Country-level agricultural production, cereal-yield and food-security evidence. This file is not a calculator profile and does not authorize country activation.",
+  "currency": {
+    "code": "CDF",
+    "name": "Congolese franc",
+    "note": "Currency identification only. No verified dated farm-gate prices or enterprise input quotations are recorded in this file."
+  },
+  "geographic_coverage": {
+    "country": "Democratic Republic of the Congo",
+    "note": "National aggregates conceal major differences between provinces, agroecological zones, crop seasons, transport corridors and conflict-affected areas. Any eventual farm budget must be localized."
+  },
+  "evidence": [
+    {
+      "topic": "FAO 2026 crop-season and food-security outlook",
+      "reference_date": "2026-06-24",
+      "source": "FAO GIEWS Country Brief: Democratic Republic of the Congo",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=COD&lang=es",
+      "observations": [
+        "Planting of the 2026 second-season maize crop was completed in January in northern and central regions and by the end of March in southern provinces.",
+        "Planting of the 2026 main maize season began in June in northern areas and was expected to begin in July in central regions.",
+        "FAO reports that conflict escalation in eastern provinces since late January 2025 has displaced people and restricted access to fields, disrupting agricultural activity.",
+        "The area planted to the 2026 main-season maize crop was estimated below the five-year average.",
+        "FAO reports maize and imported-rice prices remained elevated since January 2025, with tight market supply and high transport costs cited as contributing factors.",
+        "FAO estimated more than 26.5 million people severely acutely food insecure in 2026."
+      ],
+      "caveat": "This is a food-security and seasonal outlook, not a completed national crop census, crop-cut yield series, or farm budget. The FAO brief page was returned in Spanish in the search result; verify the language/version and exact wording when citing in a public data interface."
+    },
+    {
+      "topic": "FAOSTAT-derived cereal yield",
+      "reference_period": "2024",
+      "values": [
+        {
+          "indicator": "Cereal yield",
+          "value": 872,
+          "unit": "kg/ha"
+        }
+      ],
+      "source": "World Bank indicator AG.YLD.CREL.KG, sourced from FAOSTAT",
+      "source_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG?locations=CD",
+      "caveat": "Aggregate cereal yield across cereals, not maize-, rice-, millet- or sorghum-specific yield. Do not use as a crop-specific enterprise yield."
+    },
+    {
+      "topic": "USDA FAS production estimates",
+      "marketing_years": [
+        "2024/2025",
+        "2025/2026"
+      ],
+      "source": "USDA Foreign Agricultural Service, Production: Congo, Democratic Republic of the",
+      "source_url": "https://fas-prod.azureedge.us/data/production/cg",
+      "observations": [
+        {
+          "commodity": "Corn",
+          "marketing_year": "2024/2025",
+          "production": 2390000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        },
+        {
+          "commodity": "Corn",
+          "marketing_year": "2025/2026",
+          "production": 2250000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        },
+        {
+          "commodity": "Rice",
+          "marketing_year": "2024/2025",
+          "production": 1220000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        },
+        {
+          "commodity": "Rice",
+          "marketing_year": "2025/2026",
+          "production": 1200000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        },
+        {
+          "commodity": "Peanut oilseed",
+          "marketing_year": "2024/2025",
+          "production": 508000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        },
+        {
+          "commodity": "Peanut oilseed",
+          "marketing_year": "2025/2026",
+          "production": 480000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        },
+        {
+          "commodity": "Palm oil",
+          "marketing_year": "2024/2025",
+          "production": 300000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        },
+        {
+          "commodity": "Palm oil",
+          "marketing_year": "2025/2026",
+          "production": 300000,
+          "unit": "metric tonnes",
+          "status": "USDA estimate"
+        }
+      ],
+      "caveat": "These are USDA FAS estimates and marketing-year observations, not DRC national census measurements or verified final harvest totals. Do not mix marketing-year totals with calendar-year FAOSTAT values without reconciling definitions."
+    },
+    {
+      "topic": "USDA FAS corn yield and harvested area",
+      "reference_period": "2024/2025 and 2025/2026 marketing years",
+      "source": "USDA Foreign Agricultural Service production dashboard",
+      "source_url": "https://fas-prod.azureedge.us/data/production/cg",
+      "observations": [
+        {
+          "commodity": "Corn",
+          "marketing_year": "2024/2025",
+          "yield": 1.4925,
+          "unit": "metric tonnes/ha"
+        },
+        {
+          "commodity": "Corn",
+          "marketing_year": "2025/2026",
+          "yield": 1.4063,
+          "unit": "metric tonnes/ha"
+        },
+        {
+          "commodity": "Corn",
+          "marketing_year": "2025/2026",
+          "harvested_area": 1600000,
+          "unit": "ha"
+        },
+        {
+          "commodity": "Rice",
+          "marketing_year": "2025/2026",
+          "harvested_area": 1700000,
+          "unit": "ha"
+        }
+      ],
+      "caveat": "Secondary international estimates. Check underlying USDA PS&D definitions and revisions before using. Rice yield was not extracted from this dashboard in the current review."
+    },
+    {
+      "topic": "Independent maize forecast",
+      "reference_period": "2024",
+      "source": "AKADEMIYA2063 Africa Agriculture Watch, Crop Production Forecasts Brief Series No. 137: DRC maize",
+      "source_url": "https://akademiya2063.org/publications/AAgWa%20Crop%20Production%20Forecasts/AAgWa%20Crop%20Production%20Forecasts%20Series%20No.%20137_DRC%20-%20Maize.pdf",
+      "observations": [
+        {
+          "commodity": "Maize",
+          "year": 2024,
+          "production_forecast": 2195722,
+          "unit": "metric tonnes",
+          "change_from_2023": -6,
+          "change_unit": "%"
+        }
+      ],
+      "caveat": "Model-generated forecast based on remotely sensed geophysical data, not an official final production result. It differs from the USDA marketing-year series in scope and timing; do not average the estimates."
+    },
+    {
+      "topic": "Historical FAO food-security context",
+      "reference_date": "2024-06-06",
+      "source": "FAO GIEWS DRC Country Brief archive",
+      "source_url": "https://www.fao.org/giews/countrybrief/country/COD/pdf_archive/COD_Archive.pdf",
+      "observations": [
+        "FAO described 2024 cereal production as affected by conflict, displacement, plant disease and rainfall impacts.",
+        "FAO reported that prices of beans, corn flour and rice in April 2024 were on average 50 percent higher than one year earlier and above the five-year average."
+      ],
+      "caveat": "Historical price movement only; no absolute price level, district, quality grade or farm-gate price is provided in this summary. Do not treat this 2024 observation as a current 2026 price."
+    }
+  ],
+  "data_quality_and_use": [
+    "DRC agricultural production is highly heterogeneous by province, season, transport access and security conditions; national averages are not a safe basis for farm-level profitability.",
+    "The current sources include FAO seasonal/food-security reporting, FAOSTAT-derived aggregate cereal yield, USDA marketing-year estimates and a model-based maize forecast. They are different evidence types and must remain separately labelled.",
+    "The current source set does not provide a verified, complete crop-specific national dataset with consistent area, production, yield and method across the major crops.",
+    "Conflict-related displacement and restricted field access can affect both agricultural production and the representativeness/recency of field observations.",
+    "No verified, dated province-level farm-gate prices, input costs or crop enterprise budgets were established in this review."
+  ],
+  "missing_data_before_calculator_use": [
+    "Current province- and market-specific producer prices for maize, cassava, rice, beans, groundnuts, plantain/banana and horticultural crops, with date, grade, unit and price type.",
+    "Current input prices for seed, planting material, fertilizer, manure, crop protection, labour, land preparation, irrigation, fuel, machinery hire and transport.",
+    "Consistent crop-specific harvested area, production and yield series by province and season, with official methodology and revision history.",
+    "Crop calendars, planting density, crop duration, harvest frequency, marketable share, post-harvest losses and realistic farm-level yield distributions.",
+    "Province-specific logistics and security constraints affecting access to inputs, fields and markets.",
+    "Livestock production systems, breeds, herd/flock productivity, feed and veterinary costs, mortality and dated producer sale prices.",
+    "Validation of USDA and model-based estimates against DRC national statistical publications and any available agricultural survey or census tables."
+  ],
+  "recommendation": "Retain DRC as research-only. Current evidence is useful for national context and broad crop production cross-checks, but source types, periods and geographic coverage are not sufficiently harmonized for a farm-profit calculator. Do not activate a country profile or derive farm profitability until official province-level crop data, dated farm-gate prices and input budgets are obtained and reconciled."
+}

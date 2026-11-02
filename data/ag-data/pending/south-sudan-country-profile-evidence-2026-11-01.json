@@ -1,0 +1,276 @@
+{
+  "country": {
+    "name": "South Sudan",
+    "iso2": "SS",
+    "iso3": "SSD",
+    "currency_code": "SSP",
+    "currency_name": "South Sudanese pound"
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Country-specific agricultural evidence inventory for later validation; not a production calculator profile.",
+  "sections": [
+    {
+      "id": "national_cereal_production",
+      "topic": "national cereal production assessment",
+      "source_name": "FAO/WFP Crop and Food Security Assessment Mission 2025; Ministry of Agriculture and Food Security release",
+      "source_url": "https://www.fao.org/markets-and-trade/do-not-touch/all-widgets/2025-fao-wfp-crop-and-food-security-assessment-mission-%28cfsam%29-to-the-republic-of-south-sudan---19-march-2026/en",
+      "companion_source_url": "https://mafs.gov.ss/mafs-and-un-partners-release-cfsam-report-showing-improved-agricultural-production-amid-persistent-food-insecurity/",
+      "reference_date": "Report published 19 March 2026; Ministry launch 31 March 2026",
+      "observations": [
+        {
+          "item": "Net cereal production in traditional smallholder sector",
+          "value": 1213100,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "FAO_WFP_CFSAM_estimate",
+          "finding": "Estimated 8 percent above 2024 output and 27 percent above the previous five-year average."
+        }
+      ],
+      "caveats": [
+        "This is an aggregate cereal production estimate, not crop-specific production, area or yield.",
+        "Do not divide national output by a generic land-area estimate to create yields.",
+        "Extract the full CFSAM tables by crop, state and season before setting crop-level calculator parameters."
+      ]
+    },
+    {
+      "id": "2026_crop_season_and_climate_outlook",
+      "topic": "current crop season, rainfall and production risks",
+      "source_name": "FAO GIEWS South Sudan Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=SSD",
+      "reference_date": "Reference date 7 September 2026",
+      "observations": [
+        {
+          "item": "2026 first-season maize and sorghum harvest in southern agricultural areas",
+          "period": "2026, harvest completed August",
+          "status": "FAO_GIEWS_assessment",
+          "finding": "Below-average rainfall and prolonged dry spells affected crop establishment and development; output was expected below average."
+        },
+        {
+          "item": "Northern and central short-cycle cereal harvest",
+          "period": "2026, expected through October",
+          "status": "FAO_GIEWS_assessment",
+          "finding": "Short-cycle sorghum and maize harvesting had started; long-cycle sorghum was expected to be gathered November 2026 to January 2027."
+        },
+        {
+          "item": "Second-season crop outlook in southern areas",
+          "period": "late 2026/early 2027 harvest",
+          "status": "FAO_GIEWS_forecast",
+          "finding": "Forecast above-average October–December rainfall could support second-season crops and yields, subject to actual weather and security conditions."
+        }
+      ],
+      "caveats": [
+        "The 2026 outlook is provisional and must not be treated as final harvest data.",
+        "South Sudan has distinct bimodal southern and unimodal central/northern crop calendars; a single national season assumption is inappropriate.",
+        "Conflict and insecurity disrupted agricultural activities in some areas."
+      ]
+    },
+    {
+      "id": "crop_mix_and_production_systems",
+      "topic": "crop portfolio and agricultural production geography",
+      "source_name": "FAO/WFP CFSAM 2025; CLIMIS South Sudan market and livelihood information",
+      "source_url": "https://climis-southsudan.org/markets",
+      "companion_source_url": "https://www.fao.org/markets-and-trade/do-not-touch/all-widgets/2025-fao-wfp-crop-and-food-security-assessment-mission-%28cfsam%29-to-the-republic-of-south-sudan---19-march-2026/en",
+      "reference_date": "CLIMIS accessed 2026-11-01; CFSAM published March 2026",
+      "observations": [
+        {
+          "item": "Major cereal crops",
+          "status": "source_identified",
+          "finding": "Maize and sorghum are central cereal crops; millet and other cereals also appear in the national statistical and market-data sources."
+        },
+        {
+          "item": "Other candidate crops",
+          "status": "market_monitoring_evidence",
+          "finding": "CLIMIS price-monitoring catalogue includes groundnuts, cowpea, sesame, dried cassava, Irish potatoes and pulses; presence in the market list is a candidate crop lead, not proof of national production scale."
+        },
+        {
+          "item": "Seasonal production systems",
+          "status": "FAO_GIEWS_assessment",
+          "finding": "Southern areas include first- and second-season crop cycles, while central and northern areas rely more heavily on a main rainy season and short-/long-cycle sorghum and maize."
+        }
+      ],
+      "caveats": [
+        "The crop list is a research shortlist, not a validated 17-crop national calculator profile.",
+        "Validate each crop's producing states, area, harvested area, season and yield against the detailed CFSAM and national survey tables.",
+        "Do not infer farm profitability from the presence of a commodity in a market-price database."
+      ]
+    },
+    {
+      "id": "market_price_monitoring",
+      "topic": "market price series and commodity coverage",
+      "source_name": "CLIMIS South Sudan market information system, supported by MAFS, WFP and partners",
+      "source_url": "https://climis-southsudan.org/markets",
+      "weekly_source_url": "https://www.climis-southsudan.org/markets/weekly_data",
+      "reference_date": "Market dashboard accessed 2026-11-01; selectable historical series 2009–2026",
+      "observations": [
+        {
+          "item": "Monitoring coverage",
+          "status": "dashboard_metadata",
+          "finding": "The dashboard identifies MAFS, WFP, Concern Worldwide, FEWS NET and other partners as market-price data contributors; it provides state, county, commodity and period filters."
+        },
+        {
+          "item": "Commodity and input coverage",
+          "status": "dashboard_metadata",
+          "finding": "Weekly catalogue includes red and white sorghum, white maize, maize and sorghum flour, rice, groundnuts, sesame, cowpea, beans, livestock, milk, fuel, farm casual labour and mechanized/oxen traction hiring."
+        },
+        {
+          "item": "Unit examples",
+          "status": "dashboard_metadata",
+          "finding": "The catalogue distinguishes grain prices from 50 kg or 90 kg shawal/bag observations for selected cereals; units must be preserved exactly as displayed."
+        }
+      ],
+      "caveats": [
+        "Dashboard metadata establishes availability, not the current observed price value. Export actual dated state/county/commodity observations before using them.",
+        "Most displayed observations are market prices; retail/wholesale prices must not be labelled farmgate producer prices.",
+        "Record commodity grade, market, unit, date, currency and source agency for every extracted row."
+      ]
+    },
+    {
+      "id": "dated_price_observations",
+      "topic": "dated cereal market price observations",
+      "source_name": "WFP Eastern and Southern Africa Office Market and Trade Update, 2025 Q1",
+      "source_url": "https://wfp.tind.io/nanna/record/130725/files/ELR%203612.2025%20Vol.1.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+      "reference_date": "March 2025 observation, published in 2025 Q1 update",
+      "observations": [
+        {
+          "item": "Red sorghum retail price in Aweil market",
+          "value": 12000,
+          "unit": "SSP per 3.5 kg malwa",
+          "period": "March 2025",
+          "status": "WFP_market_price_observation",
+          "finding": "Reported as more than 150 percent higher than the same period a year earlier."
+        }
+      ],
+      "caveats": [
+        "This is a dated retail market observation, not a current 2026 quote and not a farmgate price.",
+        "The malwa unit is 3.5 kg; do not convert to per-kg without preserving the original unit and checking the market series definition.",
+        "The report describes substantial regional price variation and macroeconomic/transport constraints."
+      ]
+    },
+    {
+      "id": "2026_food_price_and_currency_conditions",
+      "topic": "recent market inflation, price volatility and exchange-rate conditions",
+      "source_name": "FAO GIEWS FPMA price warning; FEWS NET South Sudan August 2026 outlook update",
+      "source_url": "https://www.fao.org/giews/food-prices/price-warnings/detail/en/c/1760659/",
+      "companion_source_url": "https://fews.net/east-africa/south-sudan/food-security-outlook-update/august-2026",
+      "reference_date": "FAO warning 13 October 2026, covering September prices; FEWS NET August 2026",
+      "observations": [
+        {
+          "item": "Juba sorghum prices",
+          "period": "September 2026",
+          "status": "FAO_FPMA_assessment",
+          "finding": "Retail prices remained firm at record levels."
+        },
+        {
+          "item": "Juba maize prices",
+          "period": "June–September 2026",
+          "status": "FAO_FPMA_assessment",
+          "finding": "After reaching record highs in June, maize prices declined for a third consecutive month, falling 2 percent in September as first-season harvest supplies increased."
+        },
+        {
+          "item": "South Sudanese pound purchasing value",
+          "value": 18,
+          "unit": "percent loss",
+          "period": "July–August 2026, official market",
+          "status": "FEWS_NET_reported_currency_change",
+          "finding": "FEWS NET reported an 18 percent loss in SSP purchasing value over the period; it also reported a 23–24 percent year-on-year loss in official and parallel markets."
+        },
+        {
+          "item": "Red sorghum retail prices",
+          "period": "June–July 2026",
+          "status": "FEWS_NET_market_price_change",
+          "finding": "Prices increased 5–20 percent from June across major markets in the August 2026 update."
+        }
+      ],
+      "caveats": [
+        "Extreme inflation and exchange-rate instability make undated or unconverted nominal prices unsuitable for a stable calculator input.",
+        "Keep official and parallel exchange-rate series separate and record the source/date for any conversion.",
+        "A national average must not conceal market-level price dispersion or disrupted trade routes."
+      ]
+    },
+    {
+      "id": "food_security_conflict_and_access",
+      "topic": "food security and operating environment",
+      "source_name": "FAO GIEWS South Sudan Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=SSD",
+      "reference_date": "Reference date 7 September 2026",
+      "observations": [
+        {
+          "item": "Population facing IPC Phase 3 or worse",
+          "value": 7800000,
+          "unit": "people",
+          "period": "April–July 2026 lean season",
+          "status": "IPC_estimate_reported_by_FAO",
+          "finding": "About 55 percent of the population was estimated to face Crisis or worse acute food insecurity."
+        },
+        {
+          "item": "Population facing IPC Phase 5 Catastrophe",
+          "value": 73000,
+          "unit": "people",
+          "period": "2026 lean season",
+          "status": "IPC_estimate_reported_by_FAO",
+          "finding": "FAO reported approximately 73,000 people in Catastrophe, including 24,000 in Upper Nile and 49,000 in Jonglei."
+        }
+      ],
+      "caveats": [
+        "Conflict, displacement, flooding history, drought, fuel costs and disrupted trade affect access to land, labour, inputs and markets.",
+        "Food-security statistics are not crop-yield or profitability indicators.",
+        "Security and access conditions must be evaluated at state/county level before recommending a production enterprise."
+      ]
+    },
+    {
+      "id": "national_statistics_and_data_quality",
+      "topic": "national agricultural statistics and validation requirements",
+      "source_name": "South Sudan National Bureau of Statistics agriculture statistics and survey portal",
+      "source_url": "https://beta.nbs.gov.ss/agriculture/",
+      "companion_source_url": "https://beta.nbs.gov.ss/agriculture_cencus/",
+      "reference_date": "Portal accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Agricultural statistics portal",
+          "status": "official_portal_identified",
+          "finding": "The NBS portal advertises crop production, livestock, fisheries, agricultural employment and agricultural survey resources, including an Agricultural Survey Report 2024."
+        }
+      ],
+      "caveats": [
+        "The portal's summary indicators and crop tables require verification against original NBS publications, metadata and the FAO/WFP CFSAM before they are treated as validated national statistics.",
+        "No crop-specific yield or cost series has been adopted from the portal summary in this evidence record.",
+        "Obtain original survey tables and document sample design, coverage, crop definitions, planted versus harvested area and missing-data treatment."
+      ]
+    }
+  ],
+  "calculator_data_gaps": [
+    "Obtain the complete FAO/WFP CFSAM 2025 tables and extract crop-specific area, production and yield by state, county and season.",
+    "Verify NBS Agricultural Survey Report 2024 and underlying survey tables against CFSAM estimates; resolve differences in coverage, crop definitions and totals.",
+    "Export dated CLIMIS market observations for priority crops and livestock by state/county; preserve retail, wholesale, bag and small local-unit measures.",
+    "Collect verified producer/farmgate prices by crop, market, grade, season and date; do not substitute retail sorghum or maize prices.",
+    "Collect current seed, fertiliser, crop-protection, land preparation, labour, traction, irrigation, fuel, transport, storage and post-harvest input quotations by production zone.",
+    "Build separate budgets for southern bimodal maize/sorghum systems and central/northern cereal systems; do not apply one national yield or cost assumption.",
+    "Validate crop presence and production scale for groundnut, sesame, cowpea, cassava, millet and other candidate crops before adding them to a calculator crop list.",
+    "Document SSP inflation and official/parallel exchange-rate series with effective dates; never hard-code a stale nominal price.",
+    "Assess conflict, displacement, road access, flooding and drought risks by location before assigning representative enterprise assumptions.",
+    "Develop livestock budgets separately using species, breed, herd composition, feed, water, veterinary costs, mortality, liveweight, milk yield and market transaction data."
+  ],
+  "readiness_decision": {
+    "classification": "research_evidence_record_present",
+    "calculator_status": "directory_only_not_active",
+    "calculator_readiness": "not_ready_research_only",
+    "activation_blockers": [
+      "Crop-specific state/county/season area, production and yield tables have not been extracted and reconciled.",
+      "No verified current farmgate producer-price series has been adopted.",
+      "No complete regional crop enterprise budgets or current input quotations.",
+      "Nominal SSP prices and exchange rates are highly volatile and require dated treatment.",
+      "Market access, conflict and climate conditions vary materially by state and county.",
+      "NBS portal summary data require validation against original statistical reports and CFSAM."
+    ]
+  },
+  "safeguards": [
+    "Research-only evidence; not a live calculator dataset.",
+    "Do not activate South Sudan or change calculator formulas based on this file.",
+    "Do not treat aggregate national cereal production as a crop-specific yield or farm-level production figure.",
+    "Do not substitute retail or wholesale market prices for farmgate producer prices.",
+    "Preserve local market units such as malwa and shawal alongside any verified conversions.",
+    "Keep official and parallel exchange-rate observations distinct and dated.",
+    "Do not generalize 2026 drought, conflict or food-security conditions into normal-year enterprise assumptions."
+  ]
+}

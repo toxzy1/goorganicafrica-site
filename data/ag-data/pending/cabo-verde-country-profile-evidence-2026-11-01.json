@@ -1,0 +1,255 @@
+{
+  "title": "Cabo Verde agricultural country profile evidence",
+  "version": 1,
+  "status": "research_only_not_published_to_calculator",
+  "created_at": "2026-11-01",
+  "country_code": "CV",
+  "country_name": "Cabo Verde",
+  "programme_position": 27,
+  "purpose": "Record official agricultural survey and statistics sources, crop and livestock observations, dated retail-market evidence and unresolved farm-budget inputs. This is a research evidence file only and is not an activated calculator profile.",
+  "sources": [
+    {
+      "title": "Estatísticas Agrícolas — Ministry of Agriculture and Environment",
+      "publisher": "Ministério de Agricultura e Ambiente (MAA), Cabo Verde",
+      "url": "https://maa.gov.cv/index.php/agricultura-e-pecuaria/agricultura/estatistica-agricola",
+      "status": "official_data_portal_but_numeric_tables_not_yet_published_on_landing_page",
+      "note": "The ministry states that its agricultural statistics directorate collects, produces, organizes and disseminates agricultural data. The page currently says statistical data will be made available soon; it is a source lead, not a numerical dataset."
+    },
+    {
+      "title": "Anuário Estatístico de Cabo Verde 2022",
+      "publisher": "Instituto Nacional de Estatística (INE), Cabo Verde, with Ministry of Agriculture and Environment contributions",
+      "url": "https://ine.cv/wp-content/uploads/2025/01/aecv-2022-versao-final.pdf",
+      "publication_date": "2024-12",
+      "reference_period": "2018-2022; rainfed campaign observations for 2021/22 and 2022/23",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "production_mt": 10082,
+          "reference_year": 2022,
+          "status": "MAA statistical estimate reported in INE yearbook Table 8.1; not a crop-cut survey yield."
+        },
+        {
+          "commodity": "sweet_pepper",
+          "production_mt": 1803,
+          "reference_year": 2022,
+          "status": "MAA statistical estimate reported in INE yearbook Table 8.1; do not map automatically to hot pepper."
+        },
+        {
+          "commodity": "watermelon",
+          "production_mt": 1109,
+          "reference_year": 2022,
+          "status": "MAA statistical estimate reported in INE yearbook Table 8.1."
+        },
+        {
+          "commodity": "cassava",
+          "production_mt": 2802,
+          "reference_year": 2022,
+          "status": "MAA statistical estimate reported in INE yearbook Table 8.2; no matching harvested area or yield in this table."
+        },
+        {
+          "commodity": "sweet_potato",
+          "production_mt": 2444,
+          "reference_year": 2022,
+          "status": "MAA statistical estimate reported in INE yearbook Table 8.2."
+        },
+        {
+          "commodity": "common_potato",
+          "production_mt": 4031,
+          "reference_year": 2022,
+          "status": "MAA statistical estimate reported in INE yearbook Table 8.2."
+        },
+        {
+          "commodity": "maize",
+          "production_mt": 4640,
+          "reference_season": "2022/23",
+          "status": "Preliminary joint assessment of rainfed campaign output reported in Table 8.4; not an area-based yield."
+        },
+        {
+          "commodity": "beans_unspecified",
+          "production_mt": 3492,
+          "reference_season": "2022/23",
+          "status": "Preliminary joint assessment; bean species are not specified, so do not map to a particular calculator bean profile."
+        },
+        {
+          "commodity": "maize",
+          "production_mt": 222,
+          "reference_season": "2021/22",
+          "status": "Preliminary joint assessment of rainfed campaign output; campaign year runs May to April."
+        },
+        {
+          "commodity": "beans_unspecified",
+          "production_mt": 682,
+          "reference_season": "2021/22",
+          "status": "Preliminary joint assessment; species unspecified."
+        }
+      ],
+      "livestock_observations": [
+        {
+          "species": "cattle",
+          "head_count": 29649,
+          "reference_year": 2022,
+          "status": "MAA estimated livestock stock, INE yearbook Table 8.5; not a current farm-level census or price."
+        },
+        {
+          "species": "goats",
+          "head_count": 139218,
+          "reference_year": 2022,
+          "status": "MAA estimated livestock stock, INE yearbook Table 8.5."
+        },
+        {
+          "species": "pigs",
+          "head_count": 71617,
+          "reference_year": 2022,
+          "status": "MAA estimated livestock stock, INE yearbook Table 8.5."
+        },
+        {
+          "species": "traditional_poultry",
+          "head_count": 256121,
+          "reference_year": 2022,
+          "status": "MAA estimated traditional poultry stock, INE yearbook Table 8.5; not a commercial broiler or layer flock count."
+        }
+      ],
+      "quality_notes": [
+        "The yearbook says MAA estimates horticultural production using information about quantities of seeds sold during the year. These figures must not be presented as measured harvested quantities or used to calculate yields without matching area and methodology.",
+        "The 2022/23 rainfed campaign runs from May to April of the following year. Do not treat it as a calendar-year observation.",
+        "The yearbook contains national production totals but the cited crop tables do not provide compatible harvested-area denominators, crop-cut yields, or farm-level yield distributions.",
+        "The yearbook's prose gives a total meat production figure in tonnes, while Table 8.6 is explicitly labelled in kilograms and the species values sum to approximately 3.93 million kg. Preserve the table's stated kg unit and flag the prose unit as an apparent reporting error.",
+        "Traditional poultry counts must not be treated as commercial broiler or layer production data."
+      ]
+    },
+    {
+      "title": "GIEWS Country Brief — The Republic of Cabo Verde",
+      "publisher": "FAO Global Information and Early Warning System",
+      "url": "https://cb.apps.fao.org/country/CPV/pdf_archive/CPV_Archive.pdf",
+      "observations": [
+        {
+          "commodity": "maize",
+          "production_mt": 3600,
+          "reference_year": 2024,
+          "reference_date": "2025-09-19",
+          "status": "FAO reports the official estimate at about 3,600 tonnes, nearly 80 percent above the low five-year average; still an estimate, with no matching harvested-area denominator in the brief."
+        },
+        {
+          "commodity": "maize",
+          "production_mt": 1100,
+          "reference_year": 2025,
+          "reference_date": "2026-01-19",
+          "status": "Preliminary estimate, nearly 40 percent below the already low five-year average; do not treat as a final census result."
+        }
+      ],
+      "quality_notes": [
+        "FAO's November 2024 forecast for 2024 maize was 1,444 tonnes; later briefs revised the estimate to about 3,600 tonnes. Preserve the forecast/estimate chronology and do not combine them as separate final observations.",
+        "FAO attributes the 2025 decline to erratic and below-average rainfall, drought during crop development, reduced planted area, high labour costs and abandonment of some agricultural activity.",
+        "FAO reports locally produced maize retail prices rose by up to 5 percent between October and December 2025; this is a price movement, not an absolute price or a farm-gate quotation."
+      ]
+    },
+    {
+      "title": "VI Recenseamento Geral da Agricultura (RGA 2025)",
+      "publisher": "Government of Cabo Verde, Ministry of Agriculture and Environment, and INE",
+      "urls": [
+        "https://www.governo.cv/lancado-o-vi-recenseamento-geral-da-agricultura-em-cabo-verde/",
+        "https://boe.incv.cv/Bulletins/View/87088",
+        "https://maa.gov.cv/index.php/min-a-a/408-vi-rga-2025-candidatura-para-recrutar-agentes-de-terreno"
+      ],
+      "status": "priority_current_national_census_results_not_yet_located",
+      "note": "The government launched the sixth general agricultural census in July 2025. The official resolution provides for implementation during 2025 and 2026. A later ministry recruitment notice sought enumerators available January-March 2026. As of this research date, the final national tables or downloadable census dataset have not been located; request the latest RGA results and preserve the differing implementation notices."
+    },
+    {
+      "title": "FAO Agricultural Integrated Survey Programme (AGRISurvey) — Cabo Verde",
+      "publisher": "FAO, in collaboration with INE and MAA",
+      "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/cabo-verde/en",
+      "status": "ongoing_survey_system_development",
+      "note": "FAO reports support for annual agricultural surveys, with a 2024 farm income, labour and productivity module and a 2025 production methods and environment module. The holding-listing operation was completed in the first half of 2024. FAO notes that Cabo Verde did not previously have regular agricultural surveys and that the programme is establishing an annual system."
+    },
+    {
+      "title": "Observatório do Mercado",
+      "publisher": "Ministério de Agricultura e Ambiente, Cabo Verde",
+      "url": "https://maa.gov.cv/index.php/seguranca-alimentar/observatorio-do-mercado",
+      "status": "official_market_monitoring_source_no_numeric_series_exposed_on_landing_page",
+      "note": "The ministry says the observatory monitors stocks and price evolution for maize, rice, wheat, wheat flour, beans, oil, sugar and milk nationally and internationally. The accessible page describes the service but does not expose a dated numerical price series."
+    },
+    {
+      "title": "Praia market price observation",
+      "publisher": "Inforpress, Cabo Verde news agency",
+      "url": "https://www.inforpress.cv/pt/verduras-e-legumes-com-preco-mais-baixo-nos-mercados-da-cidade-da-praia",
+      "reference_date": "2025-03-27",
+      "geography": "Praia city market, Santiago island",
+      "observations": [
+        {
+          "commodity": "tomato",
+          "price": 50,
+          "currency": "CVE",
+          "unit": "kg",
+          "price_type": "retail",
+          "status": "Single market visit observation; not a national median or farm-gate price."
+        },
+        {
+          "commodity": "onion",
+          "price": 120,
+          "currency": "CVE",
+          "unit": "kg",
+          "price_type": "retail",
+          "status": "Single market visit observation."
+        },
+        {
+          "commodity": "carrot",
+          "price": 120,
+          "currency": "CVE",
+          "unit": "kg",
+          "price_type": "retail",
+          "status": "Single market visit observation."
+        },
+        {
+          "commodity": "cucumber",
+          "price": 300,
+          "currency": "CVE",
+          "unit": "kg",
+          "price_type": "retail",
+          "status": "Single market visit observation."
+        },
+        {
+          "commodity": "sweet_pepper",
+          "price": 280,
+          "currency": "CVE",
+          "unit": "kg",
+          "price_type": "retail",
+          "status": "Single market visit observation; not hot pepper."
+        },
+        {
+          "commodity": "cassava",
+          "price": 220,
+          "currency": "CVE",
+          "unit": "kg",
+          "price_type": "retail",
+          "status": "Single market visit observation."
+        }
+      ],
+      "quality_notes": [
+        "The source also reports retail prices for potatoes, sweet potatoes, beetroot, zucchini, cabbage, kale and green banana.",
+        "These observations are from a single Praia market visit in March 2025 and must not be treated as current 2026 prices, national averages, or producer prices."
+      ]
+    }
+  ],
+  "remaining_gaps": [
+    "Obtain the final VI RGA 2025/2026 report and data tables, including island/municipality crop area, harvested area, production, crop-cut yields, farm size, irrigation, livestock and production systems.",
+    "Confirm whether RGA data collection and publication followed the original October-November 2025 schedule or the later January-March 2026 enumerator recruitment schedule.",
+    "Obtain updated annual agricultural survey data from the FAO/INE/MAA AGRISurvey programme and check whether 2024 and 2025 module results are publicly released.",
+    "Reconcile the large difference between FAO's 2025 maize estimate of about 1,100 tonnes and the FAOSTAT-derived third-party display of 5 tonnes for 2024; retrieve the underlying FAOSTAT official observation, source flag, revision date and series metadata before use.",
+    "Obtain dated, island- and municipality-level producer/farm-gate prices for the calculator's commodity profiles; keep retail and imported-food prices separate.",
+    "Obtain current farmer-paid prices for seed, fertilizer, crop protection, labour, irrigation water, pumping energy, machinery, packaging and transport by island and production system.",
+    "Obtain crop-specific low/expected/high yield distributions for rainfed maize/beans and irrigated horticulture, with compatible harvested area and reference seasons.",
+    "Obtain livestock purchase prices, feed costs, veterinary costs, mortality rates and farm-gate output prices for commercial broilers, layers, goats and cattle."
+  ],
+  "extraction_status": "Official national sources and tables have been identified and selected observations transcribed with their limitations. The 2022 yearbook provides production estimates and livestock stock counts, but its horticultural figures are derived from seed-sales information and it does not provide compatible crop harvested-area denominators in the cited tables. FAO supplies a recent maize production estimate and price movement context. The 2025/2026 agricultural census and annual survey results are priority follow-ups. No complete farm budgets or validated calculator yields/prices are available from this evidence set.",
+  "publication_decision": {
+    "calculator_activation": false,
+    "reason": "Do not activate Cabo Verde from aggregate or seed-sales-based production estimates, a single-city retail snapshot, or incomplete census evidence.",
+    "protected_scope": "No existing country profile, commodity profile, calculator formula, calculation or production deployment is changed by this research entry."
+  },
+  "next_steps": [
+    "Request the latest VI RGA report and the 2024/2025 AGRISurvey module tables from INE and MAA.",
+    "Extract island-level harvested area, production, crop-cut yields and input-use tables when released.",
+    "Collect dated farm-gate prices and itemized farmer-paid costs for the 17 calculator commodity profiles.",
+    "Keep the country in research-only status until evidence is reconciled and independently reviewed."
+  ]
+}

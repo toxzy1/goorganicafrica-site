@@ -1,0 +1,312 @@
+{
+  "country": {
+    "name": "São Tomé and Príncipe",
+    "iso2": "ST",
+    "iso3": "STP",
+    "currency": "STN",
+    "currency_name": "São Tomé and Príncipe dobra",
+    "peg": "The dobra has been pegged to the euro at 24.5 STN per EUR since 2010; confirm current central-bank rate before any conversion."
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "calculator_readiness": "not_ready_research_only",
+  "purpose": "Country evidence inventory for later crop-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
+  "evidence_sections": [
+    {
+      "id": "national_agriculture_context",
+      "topic": "agricultural structure and priority crops",
+      "source_name": "FAO São Tomé and Príncipe country overview",
+      "source_url": "https://www.fao.org/sao-tome-and-principe/fao-em-sao-tome-and-principe/sao-tome-and-principe-em-resumo/pt/",
+      "reference_date": "accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Agricultural employment",
+          "finding": "FAO country overview states agriculture employs more than 65% of the population.",
+          "status": "reported_estimate",
+          "unit": "percent"
+        },
+        {
+          "item": "Cocoa exports",
+          "finding": "FAO overview describes cocoa as dominant and contributing about 90% of exports.",
+          "status": "reported_estimate",
+          "unit": "share of total exports"
+        },
+        {
+          "item": "Priority food crops",
+          "finding": "Cassava, maize and banana are highlighted as priority food production crops.",
+          "status": "qualitative_policy_context"
+        },
+        {
+          "item": "Livestock",
+          "finding": "FAO overview reports an older estimate that livestock contributes 14% of agricultural production and 3% of GDP; the underlying household estimate dates to 2002.",
+          "status": "historical_estimate"
+        }
+      ],
+      "caveats": [
+        "The 65% employment and 90% export shares are broad sector context, not farm-level productivity or income measures.",
+        "The livestock contribution estimate is dated and should not be used as a current indicator."
+      ]
+    },
+    {
+      "id": "official_statistics_capacity",
+      "topic": "national statistical system and data access",
+      "source_name": "Instituto Nacional de Estatística (INE) São Tomé e Príncipe",
+      "source_url": "https://www.ine.st/",
+      "reference_date": "accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "National statistical portal",
+          "finding": "INE provides thematic statistics including external trade, consumer price index, economy and national data/SDG portals.",
+          "status": "official_portal_confirmed"
+        },
+        {
+          "item": "CPI inflation",
+          "value": 5.5,
+          "unit": "percent accumulated",
+          "period": "September 2026",
+          "status": "official_headline_indicator"
+        },
+        {
+          "item": "2024 population census",
+          "finding": "INE portal reports provisional population from the 2024 population and housing census.",
+          "status": "official_provisional_statistic"
+        }
+      ],
+      "caveats": [
+        "The accessible portal page confirms statistical topics and headline indicators, but crop-by-crop production, area and farmgate price tables were not extracted in this review.",
+        "CPI inflation is not a crop price or agricultural input cost series."
+      ]
+    },
+    {
+      "id": "faostat_secondary_crop_series",
+      "topic": "selected crop production observations",
+      "source_name": "FAOSTAT data as displayed by secondary country-series pages",
+      "source_url": "https://terra-cultiva.com/en/country/sao-tome-and-principe/cassava/",
+      "companion_source_url": "https://invokely.ai/en/coffee-production/sao-tome-and-principe",
+      "reference_date": "FAOSTAT series through 2024; pages retrieved 2026-11-01",
+      "observations": [
+        {
+          "item": "Cassava production",
+          "year": 2024,
+          "value": 1400,
+          "unit": "tonnes approximately",
+          "status": "secondary_transcription_of_FAOSTAT"
+        },
+        {
+          "item": "Cassava yield",
+          "year": 2024,
+          "value": 5500,
+          "unit": "kg/ha approximately",
+          "status": "secondary_transcription_of_FAOSTAT"
+        },
+        {
+          "item": "Cassava harvested area",
+          "year": 2024,
+          "value": 260,
+          "unit": "ha approximately",
+          "status": "secondary_transcription_of_FAOSTAT"
+        },
+        {
+          "item": "Coffee production",
+          "year": 2024,
+          "value": 7,
+          "unit": "tonnes",
+          "status": "secondary_transcription_of_FAOSTAT_estimated"
+        },
+        {
+          "item": "Coffee production",
+          "year": 2023,
+          "value": 7,
+          "unit": "tonnes",
+          "status": "secondary_transcription_of_FAOSTAT_estimated"
+        }
+      ],
+      "caveats": [
+        "These are secondary displays of FAOSTAT observations, not direct extracts from the official FAOSTAT bulk dataset; verify original series, item codes, flags and units before calculator use.",
+        "The displayed cassava values are rounded; do not treat approximate rounded figures as exact national statistics.",
+        "Coffee output is extremely small in the secondary series and flagged as estimated."
+      ]
+    },
+    {
+      "id": "cocoa_output_and_export_value_chain",
+      "topic": "cocoa and other export crops",
+      "source_name": "Commo Atlas country commodity page, citing USDA PSD, FAOSTAT and trade data",
+      "source_url": "https://commoatlas.com/countries/STP/",
+      "reference_date": "data page crawled 2026-10-30; cocoa marketing year 2024/25",
+      "observations": [
+        {
+          "item": "Cocoa production",
+          "year": "2024/25",
+          "value": 4000,
+          "unit": "tonnes",
+          "status": "secondary_aggregation_of_USDA_PSD_and_FAOSTAT"
+        },
+        {
+          "item": "Cocoa export value",
+          "year": 2024,
+          "value": 21000000,
+          "unit": "USD",
+          "status": "secondary_trade_data"
+        },
+        {
+          "item": "Palm oil export value",
+          "year": 2024,
+          "value": 6800000,
+          "unit": "USD",
+          "status": "secondary_trade_data"
+        }
+      ],
+      "caveats": [
+        "The 4,000 tonne cocoa production figure differs materially from a government country portal claim of 15,000 tonnes/year and from FAO's description of cocoa's export dominance. These numbers may differ by scope, year, cocoa beans versus processed products, or source methodology; reconcile against FAOSTAT, USDA PSD and national customs/producer data.",
+        "Export values are not farmgate prices and cannot be used as XAF/STN/kg or STN/kg producer prices."
+      ]
+    },
+    {
+      "id": "government_sector_and_currency_context",
+      "topic": "official government sector overview and exchange-rate reference",
+      "source_name": "Government of São Tomé and Príncipe country information portal",
+      "source_url": "https://stp.gov.st/sobre_pais",
+      "reference_date": "portal accessed 2026-11-01; exchange-rate reference dated March 2025",
+      "observations": [
+        {
+          "item": "Currency",
+          "finding": "Official currency is the dobra (STN). Government page reports a fixed rate of 24.5 STN per EUR, with reference rates updated March 2025.",
+          "status": "official_government_statement"
+        },
+        {
+          "item": "Agricultural export crops",
+          "finding": "Government portal highlights cocoa and coffee, and mentions vanilla as artisanal production.",
+          "status": "qualitative_sector_statement"
+        },
+        {
+          "item": "Cocoa output claim",
+          "value": 15000,
+          "unit": "tonnes/year",
+          "status": "government_portal_claim_not_reconciled"
+        }
+      ],
+      "caveats": [
+        "The government's 15,000 tonnes/year cocoa claim conflicts with the 4,000 tonnes 2024/25 secondary production series. Do not use either as a calculator parameter until scope and source data are reconciled.",
+        "The displayed exchange-rate date is March 2025; obtain a current central-bank rate for any live conversion."
+      ]
+    },
+    {
+      "id": "cocoa_value_chain_investment_research",
+      "topic": "producer decision-making and farm cost constraints",
+      "source_name": "University of Évora repository, 2026 master's thesis on cocoa price fluctuations and producer investment decisions",
+      "source_url": "https://dspace.uevora.pt/rdpc/handle/10174/42721",
+      "reference_date": "10 September 2026",
+      "observations": [
+        {
+          "item": "Study method",
+          "finding": "Mixed-method study using historical cocoa production and price data for 1999–2023 and semi-structured interviews with six local cocoa producers.",
+          "status": "academic_research"
+        },
+        {
+          "item": "Input spending response",
+          "finding": "The study abstract reports that producers increase spending on labour and crop-protection products during high-price periods and reduce expenditure/rely on family labour during low-price periods.",
+          "status": "qualitative_interview_finding"
+        },
+        {
+          "item": "Constraints",
+          "finding": "The abstract identifies limited access to agricultural credit, lack of continuous technical assistance and weak institutional monitoring as constraints.",
+          "status": "qualitative_interview_finding"
+        }
+      ],
+      "caveats": [
+        "The interview sample is six producers and is not a nationally representative enterprise budget.",
+        "The thesis abstract does not provide a complete current unit-cost schedule or validated farmgate price series."
+      ]
+    },
+    {
+      "id": "food_import_and_inflation_context",
+      "topic": "food import dependence and price transmission",
+      "source_name": "World Food Programme country page and IMF Selected Issues 2025",
+      "source_url": "https://www.wfp.org/countries/sao-tome-and-principe",
+      "companion_source_url": "https://www.elibrary.imf.org/openurl?artnum=A001&genre=articlel&issn=1934-7685&issue=229&volume=2025",
+      "reference_date": "WFP page accessed 2026-11-01; IMF report published 8 August 2025",
+      "observations": [
+        {
+          "item": "Import dependence",
+          "finding": "WFP identifies geographic isolation, a small domestic market and dependence on imports as structural vulnerabilities.",
+          "status": "qualitative_context"
+        },
+        {
+          "item": "Inflation episode",
+          "value": 25.2,
+          "unit": "percent",
+          "period": "2023",
+          "status": "reported_inflation_rate"
+        },
+        {
+          "item": "Food weight in CPI basket",
+          "value": 70,
+          "unit": "percent",
+          "status": "IMF_reported_share"
+        },
+        {
+          "item": "Local food in CPI basket",
+          "finding": "IMF reports nearly half of food items in the CPI basket are locally produced; imported food price movements also affect domestic inflation.",
+          "status": "IMF_analysis"
+        }
+      ],
+      "caveats": [
+        "Import dependence and CPI composition help explain market conditions but do not provide crop-specific producer prices.",
+        "The 2023 inflation rate is historical and should not be substituted for 2026 inflation."
+      ]
+    },
+    {
+      "id": "agri_food_trade",
+      "topic": "agri-food imports and exports",
+      "source_name": "European Commission, Agri-food trade with São Tomé and Príncipe",
+      "source_url": "https://agriculture.ec.europa.eu/system/files/2023-05/agrifood-sao-tome-and-principe_en.pdf",
+      "reference_date": "2020–2024 trade series",
+      "observations": [
+        {
+          "item": "EU agri-food imports from São Tomé and Príncipe",
+          "year": 2024,
+          "value": 25,
+          "unit": "million EUR",
+          "status": "official_trade_statistics"
+        },
+        {
+          "item": "Change in EU agri-food imports from STP",
+          "period": "2023–2024",
+          "value": 60.3,
+          "unit": "percent",
+          "status": "official_trade_statistics"
+        }
+      ],
+      "caveats": [
+        "These are bilateral EU trade values, not total national agricultural exports, producer prices or farm revenues."
+      ]
+    }
+  ],
+  "calculator_data_gaps": [
+    "Obtain official INE/MADR crop production and harvested-area tables by island, district, crop and production year, preferably from agricultural census or crop surveys.",
+    "Verify FAOSTAT 2024 crop output and yield values directly against original dataset downloads and retain observation flags.",
+    "Resolve the cocoa production discrepancy between the government portal's 15,000 tonnes/year and the secondary 2024/25 estimate of 4,000 tonnes.",
+    "Collect dated farmgate cocoa prices in STN/kg by quality, fermentation/drying status, cooperative and island; distinguish export FOB prices and world cocoa benchmarks.",
+    "Collect current producer prices for cassava, banana, maize, plantain, vegetables, coffee and other candidate crops by location, unit and season.",
+    "Obtain input quotations for planting material, fertiliser, crop protection, labour, land preparation, transport, drying/fermentation, packaging and irrigation.",
+    "Construct crop-specific enterprise budgets and yields for smallholder systems; separately model cocoa perennial establishment and mature-year production.",
+    "Confirm current exchange rate and any island-specific logistics costs before converting imported inputs or export values."
+  ],
+  "readiness_decision": {
+    "classification": "research_evidence_record_present",
+    "calculator_status": "directory_only_not_active",
+    "calculator_readiness": "not_ready_research_only",
+    "activation_blockers": [
+      "No validated current farmgate crop price series",
+      "No complete crop-specific input quotations or enterprise budgets",
+      "National crop area and production tables not yet extracted",
+      "Cocoa production figures conflict and require source reconciliation"
+    ]
+  },
+  "safeguards": [
+    "Research-only evidence; not a live calculator dataset.",
+    "Do not activate São Tomé and Príncipe or change calculator formulas based on this file.",
+    "Do not substitute world cocoa benchmark prices, export unit values, consumer prices or national CPI for producer farmgate prices.",
+    "Do not treat the secondary FAOSTAT presentation as the primary data source."
+  ]
+}

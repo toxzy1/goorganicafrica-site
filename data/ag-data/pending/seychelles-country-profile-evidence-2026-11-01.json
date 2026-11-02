@@ -1,0 +1,360 @@
+{
+  "country": {
+    "name": "Seychelles",
+    "iso2": "SC",
+    "iso3": "SYC",
+    "currency": "SCR",
+    "currency_name": "Seychellois rupee"
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "calculator_readiness": "not_ready_research_only",
+  "purpose": "Country evidence inventory for later crop-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
+  "evidence_sections": [
+    {
+      "id": "national_agriculture_context",
+      "topic": "sector structure, land constraints and priority products",
+      "source_name": "Seychelles Ministry of Fisheries, Agriculture and Blue Economy; Republic of Seychelles Voluntary National Review 2025; Seychelles Trade Portal",
+      "source_url": "https://mofbe.gov.sc/agriculture-department/",
+      "companion_source_urls": [
+        "https://www.finance.gov.sc/wp-content/uploads/2025/10/VNR_SEYCHELLES_2025-1.pdf",
+        "https://www.tradeportal.sc/agricultural/"
+      ],
+      "reference_date": "VNR first published June 2025; ministry and trade portal accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Cultivated land",
+          "value": 400,
+          "unit": "hectares",
+          "status": "official_reported_estimate",
+          "finding": "The 2025 Voluntary National Review reports about 400 hectares dedicated to cultivation."
+        },
+        {
+          "item": "Agriculture GDP share",
+          "value": 1.6,
+          "unit": "percent",
+          "status": "official_reported_estimate",
+          "finding": "VNR reports agriculture contributes approximately 1.6% of GDP; the trade portal separately states about 2.5%, so definitions/reference periods require reconciliation."
+        },
+        {
+          "item": "Priority crop products",
+          "status": "qualitative_policy_context",
+          "finding": "Government sources identify sweet potato, cassava, breadfruit, banana, cinnamon and tea; the trade portal also lists poultry and tuna."
+        },
+        {
+          "item": "Livestock products",
+          "status": "qualitative_policy_context",
+          "finding": "Poultry and pork are identified as domestic livestock value chains."
+        },
+        {
+          "item": "Production constraints",
+          "status": "official_qualitative_context",
+          "finding": "The ministry identifies limited arable land, high production costs, reliance on imported inputs, climate vulnerability and exposure to external shocks."
+        }
+      ],
+      "caveats": [
+        "The 400-hectare figure is a national overview, not a crop-specific harvested-area denominator.",
+        "GDP-share figures differ between government sources (1.6% in VNR versus about 2.5% on the trade portal); do not combine without checking definitions and reference years.",
+        "Priority lists do not establish crop suitability, yield or profitability by island."
+      ]
+    },
+    {
+      "id": "agricultural_census_and_statistics",
+      "topic": "farm structure and official statistical capacity",
+      "source_name": "Central Bank of Seychelles Annual Report 2024 reporting on the Agriculture Department census; National Bureau of Statistics Seychelles",
+      "source_url": "https://www.nationalassembly.sc/sites/default/files/2025-04/CBS%20AR2024.pdf",
+      "companion_source_url": "https://www.nbs.gov.sc/statistics/consumer-price-indices",
+      "reference_date": "Central Bank annual report submitted 31 March 2025; NBS portal accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Agriculture census",
+          "value": 725,
+          "unit": "registered farmers covered",
+          "period": "18 November–13 December 2024",
+          "status": "official_census_coverage",
+          "finding": "The Agriculture Department conducted a census covering 725 registered farmers on Mahé, Praslin, La Digue and the Inner Islands, supported by the SANOI regional project and NBS."
+        },
+        {
+          "item": "Census purpose",
+          "status": "official_methodology_context",
+          "finding": "The census aimed to update farm-holding structure, characteristics and types of farming activity for planning and monitoring."
+        },
+        {
+          "item": "NBS CPI",
+          "status": "official_statistical_series",
+          "finding": "NBS compiles monthly consumer price indices. CPI measures consumer price movements, not actual price levels or farmgate prices."
+        }
+      ],
+      "caveats": [
+        "The annual report confirms census coverage and purpose but does not provide the detailed crop-by-crop census tables in the cited passage.",
+        "A census of 725 registered farmers may not represent every household or informal producer; check the census frame and final report before using it as national coverage.",
+        "CPI is not a substitute for farmgate producer prices."
+      ]
+    },
+    {
+      "id": "livestock_production_and_trade",
+      "topic": "pig, pork import and poultry sector indicators",
+      "source_name": "Seychelles Nation interview/report on livestock production challenges, citing sector production and import statistics",
+      "source_url": "https://www.nation.sc/www/articles/26498/livestock-production-in-seychelles-current-challenges-and-future-vision",
+      "reference_date": "20 June 2025",
+      "observations": [
+        {
+          "item": "Pig production",
+          "value": 431,
+          "unit": "tonnes",
+          "period": "2015",
+          "status": "reported_historical_output"
+        },
+        {
+          "item": "Pig production",
+          "value": 701,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "reported_output"
+        },
+        {
+          "item": "Pig production",
+          "value": 676,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_output"
+        },
+        {
+          "item": "Pork imports",
+          "value": 907,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "reported_trade_volume"
+        },
+        {
+          "item": "Pork imports",
+          "value": 908,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_trade_volume"
+        },
+        {
+          "item": "Pork imports",
+          "value": 826,
+          "unit": "tonnes average",
+          "period": "2020–2022",
+          "status": "reported_historical_average"
+        },
+        {
+          "item": "Poultry production constraint",
+          "status": "reported_sector_assessment",
+          "finding": "The report describes high animal-feed costs, removal of feed subsidy and at least six farms ceasing operations over the preceding two years; remaining farms were reported as operating below capacity."
+        },
+        {
+          "item": "Marketing channel",
+          "status": "qualitative_value_chain_finding",
+          "finding": "Pig farmers were reported to rely heavily on butchers, limiting margins and market access."
+        }
+      ],
+      "caveats": [
+        "The news report is a secondary publication and should be cross-checked against Agriculture Department and customs tables.",
+        "Pig output and pork imports are different measures and must not be conflated; import volume is not a domestic producer price.",
+        "No farm-level feed conversion, mortality, carcass yield or complete production cost schedule is provided."
+      ]
+    },
+    {
+      "id": "egg_producer_and_retail_prices",
+      "topic": "egg supply, producer selling prices and retail prices",
+      "source_name": "Seychelles Nation report on 2025 agricultural milestones",
+      "source_url": "https://www.nation.sc/articles/28806/seeds-of-progress-seychelles-agricultural-milestones-2025",
+      "reference_date": "31 December 2025",
+      "observations": [
+        {
+          "item": "Egg sales price large-scale farms",
+          "value": "3.50–3.90",
+          "unit": "SCR per egg",
+          "period": "reported 2025",
+          "status": "reported_producer_price_range"
+        },
+        {
+          "item": "Egg sales price small-scale farmers",
+          "value": "4.00–4.50",
+          "unit": "SCR per egg",
+          "period": "reported 2025",
+          "status": "reported_producer_price_range"
+        },
+        {
+          "item": "Egg retail price",
+          "value": "5.00–7.00",
+          "unit": "SCR per egg",
+          "period": "reported 2025",
+          "status": "reported_retail_price_range"
+        },
+        {
+          "item": "Egg retail tray price",
+          "value": "140–150",
+          "unit": "SCR per tray",
+          "period": "reported 2025",
+          "status": "reported_retail_price_range"
+        },
+        {
+          "item": "Daily egg production",
+          "value": 95000,
+          "unit": "eggs/day",
+          "period": "reported 2025",
+          "status": "reported_output"
+        },
+        {
+          "item": "Daily egg demand",
+          "value": 110000,
+          "unit": "eggs/day",
+          "period": "reported 2025",
+          "status": "reported_demand_estimate"
+        }
+      ],
+      "caveats": [
+        "These are dated press-reported prices, not a current 2026 quotation or a verified official monthly time series.",
+        "Producer prices and retail prices are deliberately separated; only the producer ranges are potential farmgate/first-sale leads, subject to confirmation of transaction point and grading.",
+        "Tray pack size is not specified in the report; do not convert tray prices to per-egg values without confirmation."
+      ]
+    },
+    {
+      "id": "egg_price_change_follow_up",
+      "topic": "subsequent egg market price movement",
+      "source_name": "Seychelles Nation, Egg prices slide as supply rebounds",
+      "source_url": "https://www.nation.sc/articles/29137/egg-prices-slide-as-supply-rebounds",
+      "reference_date": "26 January 2026",
+      "observations": [
+        {
+          "item": "Locally produced eggs",
+          "value": 105,
+          "unit": "SCR per tray",
+          "period": "January 2026",
+          "status": "reported_market_price_floor",
+          "finding": "The article reports local eggs had fallen to as low as SCR 105 per tray after reaching as high as SCR 7 per egg in December."
+        }
+      ],
+      "caveats": [
+        "This is a market report, not a national average or verified farmgate series; the tray count and farm/retail point are not specified in the summary.",
+        "The price movement demonstrates volatility and should not be used as a fixed calculator price."
+      ]
+    },
+    {
+      "id": "crop_production_index",
+      "topic": "aggregate crop production trend",
+      "source_name": "World Bank World Development Indicators series as displayed by IndexBox",
+      "source_url": "https://app.indexbox.io/indicators/symbol/crop-production-seychelles/",
+      "reference_date": "WDI data through 2024; display updated 14 October 2026",
+      "observations": [
+        {
+          "item": "Crop production index",
+          "value": 107.88,
+          "unit": "index (2014–2016 = 100)",
+          "period": "2024",
+          "status": "secondary_display_of_world_bank_series"
+        },
+        {
+          "item": "Crop production index",
+          "value": 108.22,
+          "unit": "index (2014–2016 = 100)",
+          "period": "2023",
+          "status": "secondary_display_of_world_bank_series"
+        },
+        {
+          "item": "Year-on-year change",
+          "value": -0.3,
+          "unit": "percent",
+          "period": "2024 versus 2023",
+          "status": "secondary_calculation_as_displayed"
+        }
+      ],
+      "caveats": [
+        "This is an aggregate index, not tonnes, yield, harvested area or a crop-specific observation.",
+        "The source is a secondary display of World Bank WDI series AG.PRD.CROP.XD_SC; verify directly in WDI before operational use."
+      ]
+    },
+    {
+      "id": "prices_and_price_series_limitations",
+      "topic": "producer price and consumer price source availability",
+      "source_name": "FAOSTAT Agricultural Producer Prices metadata; National Bureau of Statistics Seychelles CPI and PPI descriptions",
+      "source_url": "https://data.fao.org/catalog/dataset/47c17894-8ca1-4bd0-ba4d-6078e919e9b1",
+      "companion_source_urls": [
+        "https://www.nbs.gov.sc/statistics/consumer-price-indices",
+        "https://www.nbs.gov.sc/statistics/ppi-ipi"
+      ],
+      "reference_date": "FAOSTAT dataset revision 4 December 2025; NBS pages accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "FAOSTAT producer price coverage",
+          "status": "dataset_metadata",
+          "finding": "FAOSTAT producer prices represent prices received by farmers at the farmgate or first point of sale, with annual series from 1991 and monthly series from January 2010 for covered countries and products."
+        },
+        {
+          "item": "NBS CPI limitation",
+          "status": "official_methodology",
+          "finding": "CPI tracks changes in consumer prices, not actual price levels."
+        },
+        {
+          "item": "NBS PPI limitation",
+          "status": "official_methodology",
+          "finding": "NBS manufacturing PPI is limited to manufacturing, electricity and water supply; it is not a farm producer-price index."
+        }
+      ],
+      "caveats": [
+        "A metadata description does not prove that every Seychelles crop has a non-missing, current FAOSTAT producer price observation.",
+        "The NBS PPI page explicitly does not describe an agricultural producer price series.",
+        "Extract the actual country/product/year records and flags before treating any value as a usable farmgate price."
+      ]
+    },
+    {
+      "id": "fisheries_and_aquaculture_context",
+      "topic": "fisheries and emerging aquaculture context",
+      "source_name": "Seychelles Ministry of Fisheries, Agriculture and Blue Economy and Seychelles Nation sector coverage",
+      "source_url": "https://mofbe.gov.sc/agriculture-department/",
+      "companion_source_urls": [
+        "https://www.nation.sc/articles/29137/egg-prices-slide-as-supply-rebounds"
+      ],
+      "reference_date": "accessed 2026-11-01",
+      "observations": [
+        {
+          "item": "Blue economy context",
+          "status": "official_sector_context",
+          "finding": "Agriculture policy and administration sit within a ministry whose mandate also includes fisheries and the blue economy."
+        },
+        {
+          "item": "Aquaculture",
+          "status": "qualitative_emerging_sector_context",
+          "finding": "Recent national coverage references seaweed and aquaculture development; separate fisheries/aquaculture enterprise models would need species-specific biological and licensing data."
+        }
+      ],
+      "caveats": [
+        "Marine capture fisheries, aquaculture and crop/livestock enterprises require separate production models and should not be combined into a crop-profit calculator profile without distinct data structures.",
+        "No species-level production costs, farmgate prices, stocking rates or harvest-cycle evidence has been established in this review."
+      ]
+    }
+  ],
+  "calculator_data_gaps": [
+    "Obtain and extract the detailed 2024 Agriculture Census tables: farm counts, land area, crop areas, crop output, livestock inventories and island/district breakdowns.",
+    "Verify the current cultivated-land estimate and reconcile the agriculture GDP share reported as 1.6% in the 2025 VNR versus about 2.5% on the trade portal.",
+    "Download and validate original FAOSTAT crop production, harvested-area, yield and producer-price series for Seychelles, including item codes, years, units and observation flags.",
+    "Collect current farmgate/first-sale prices by crop, grade, island, unit and season; distinguish producer prices from retail, wholesale and import prices.",
+    "Obtain current feed prices, feed formulations, veterinary costs, chicks/piglet costs, mortality, labour, energy and housing costs for poultry and pig enterprise budgets.",
+    "Obtain seed/planting material, fertiliser, crop-protection, irrigation, labour, transport and packaging quotations for sweet potato, cassava, banana, breadfruit, cinnamon, tea and vegetables.",
+    "Confirm egg tray pack size, sales channel and current 2026 producer versus retail prices before converting any press-reported values to calculator inputs.",
+    "Develop island-specific budgets reflecting land scarcity, imported input exposure, freight and water/irrigation costs.",
+    "For aquaculture/fisheries, gather separate species-specific production, licensing, feed, equipment, harvest and first-sale price evidence."
+  ],
+  "readiness_decision": {
+    "classification": "research_evidence_record_present",
+    "calculator_status": "directory_only_not_active",
+    "calculator_readiness": "not_ready_research_only",
+    "activation_blockers": [
+      "Detailed 2024 agricultural census crop tables and island-level production data not yet extracted",
+      "No validated current crop-specific farmgate price series",
+      "Only limited dated producer price leads for eggs; current price and transaction details require confirmation",
+      "No complete crop or livestock enterprise budgets and current input quotations",
+      "Conflicting official/portal agriculture GDP-share estimates need reconciliation"
+    ]
+  },
+  "safeguards": [
+    "Research-only evidence; not a live calculator dataset.",
+    "Do not activate Seychelles or change calculator formulas based on this file.",
+    "Do not substitute retail egg prices, consumer CPI, manufacturing PPI, import values or aggregate production indices for crop-specific farmgate prices.",
+    "Keep crop, livestock and fisheries/aquaculture enterprise models distinct."
+  ]
+}

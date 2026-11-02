@@ -1,0 +1,262 @@
+{
+  "country": "Equatorial Guinea",
+  "iso_alpha2": "GQ",
+  "iso_alpha3": "GNQ",
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "scope": "Research-only record of national crop production estimates, agricultural structure, cocoa-sector signals, food-import dependence, macroeconomic and source-quality context. This is not a farm-profit calculator profile and does not authorize country activation.",
+  "currency": {
+    "code": "XAF",
+    "name": "Central African CFA franc",
+    "note": "Currency identification only. No verified, dated farm-gate crop prices or farm input quotations have been added."
+  },
+  "context": {
+    "agroecology": "Humid equatorial environment with mainland and island production zones. The FAO identifies cassava, sweet potatoes, plantains, groundnuts and bananas among staple crops, with cocoa a leading cash crop. Country-level figures should not be assumed to represent all provinces or Bioko and Río Muni equally.",
+    "key_geographies": [
+      "Bioko Island",
+      "Litoral Province",
+      "Centro Sur Province",
+      "Wele-Nzas Province",
+      "Kie-Ntem Province",
+      "Annobón"
+    ],
+    "caution": "The available public sources provide useful national production and policy context but not a complete, reconciled crop-area/yield dataset or commercial farm budgets. Distinguish FAOSTAT estimates from national survey/administrative observations, and distinguish imported consumer-market food from local producer prices."
+  },
+  "evidence": [
+    {
+      "topic": "Latest FAO country brief: crop output and 2026 outlook",
+      "reference_date": "2026-07-22",
+      "source": "FAO Global Information and Early Warning System (GIEWS), Equatorial Guinea Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GNQ&lang=fr",
+      "observations": [
+        {
+          "indicator": "Sweet potato production",
+          "value": 102000,
+          "unit": "tonnes",
+          "reference_year": 2024,
+          "source_note": "FAO reports this as the latest available FAOSTAT estimate in its July 2026 brief."
+        },
+        {
+          "indicator": "Cassava production",
+          "value": 77000,
+          "unit": "tonnes",
+          "reference_year": 2024,
+          "source_note": "FAO reports this as the latest available FAOSTAT estimate in its July 2026 brief."
+        },
+        {
+          "indicator": "Plantain production",
+          "value": 41000,
+          "unit": "tonnes",
+          "reference_year": 2024,
+          "source_note": "FAO reports this as the latest available FAOSTAT estimate in its July 2026 brief."
+        },
+        {
+          "indicator": "Staple crop area under cultivation",
+          "value": 20000,
+          "unit": "hectares",
+          "reference_year": 2026,
+          "source_note": "Approximate area stated in the country brief; includes cassava, sweet potatoes, plantains, groundnuts and bananas."
+        },
+        {
+          "indicator": "Cash crop area",
+          "value": 9000,
+          "unit": "hectares",
+          "reference_year": 2026,
+          "source_note": "Approximate area stated in the country brief; predominantly cocoa."
+        },
+        {
+          "indicator": "Arable land",
+          "value": 850000,
+          "unit": "hectares",
+          "reference_year": 2026,
+          "source_note": "Approximate FAO country-brief estimate, stated as about 30 percent of national territory."
+        }
+      ],
+      "observations_text": [
+        "FAO states that weather conditions during the 2026 growing season had generally been favourable and forecasts sweet potato, cassava and plantain production near average levels in 2026.",
+        "The reported 2024 crop quantities are production totals, not yields; harvested area by crop is required before deriving tonnes per hectare."
+      ],
+      "caveat": "The 850,000-hectare arable-land figure and the approximate 20,000-hectare staple plus 9,000-hectare cash-crop cultivated areas are distinct concepts and should not be added or treated as a complete land-use balance. FAO's June 2025 country brief gave materially different land-use figures (about 280,000 ha agricultural land, with 180,000 ha used for staple crops). This discrepancy requires reconciliation against the underlying FAOSTAT series and national land-use definitions before operational use."
+    },
+    {
+      "topic": "National statistical source and 2024/2025 cocoa-sector signal",
+      "publication_date": "2026-09-25",
+      "reference_period": "Statistical data updated through December 2025; cocoa growth relates to the 2024/2025 agricultural season",
+      "source": "INEGE, Statistical Yearbook of Equatorial Guinea 2026 and official presentation summary",
+      "source_url": "https://inege.org/?lang=en&p=17926",
+      "supporting_source_url": "https://inege.org/?etn=statistical-yearbook-of-equatorial-guinea-2026&lang=en",
+      "observations": [
+        {
+          "indicator": "Cocoa production growth",
+          "value": 2.5,
+          "unit": "percent",
+          "reference_period": "2024/2025 agricultural season",
+          "source_note": "INEGE's public presentation summary reports growth; it does not state the absolute tonnage in the accessible summary."
+        },
+        {
+          "indicator": "Statistical yearbook coverage",
+          "value": 5,
+          "unit": "years of time-series coverage",
+          "reference_year": 2026,
+          "source_note": "INEGE describes the yearbook as providing time series for the last five years and selected regional/provincial/district disaggregation."
+        }
+      ],
+      "observations_text": [
+        "INEGE states the ninth edition combines primary data from censuses and surveys with secondary data from ministry and departmental administrative records, and includes agriculture and prices.",
+        "INEGE explicitly notes continuing difficulties with availability, timeliness and acquisition of some source information."
+      ],
+      "caveat": "The public announcement is a summary, not the underlying agricultural tables. Obtain and inspect the complete yearbook before transcribing absolute crop volumes, area, yields, prices or regional figures. The reported 2.5 percent cocoa growth must not be converted into tonnes without a verified base quantity."
+    },
+    {
+      "topic": "Historical FAO crop production cross-check",
+      "reference_date": "2025-06-11",
+      "source": "FAO GIEWS, Equatorial Guinea Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country/GNQ/pdf/GNQ.pdf",
+      "observations": [
+        {
+          "indicator": "Sweet potato production",
+          "value": 101000,
+          "unit": "tonnes",
+          "reference_year": 2023,
+          "source_note": "Latest FAOSTAT data available to the June 2025 brief."
+        },
+        {
+          "indicator": "Cassava production",
+          "value": 75000,
+          "unit": "tonnes",
+          "reference_year": 2023,
+          "source_note": "Latest FAOSTAT data available to the June 2025 brief."
+        },
+        {
+          "indicator": "Plantain production",
+          "value": 42000,
+          "unit": "tonnes",
+          "reference_year": 2023,
+          "source_note": "Latest FAOSTAT data available to the June 2025 brief."
+        },
+        {
+          "indicator": "Agricultural land",
+          "value": 280000,
+          "unit": "hectares",
+          "reference_year": 2025,
+          "source_note": "Approximate figure stated in the June 2025 FAO brief."
+        },
+        {
+          "indicator": "Staple crop area",
+          "value": 180000,
+          "unit": "hectares",
+          "reference_year": 2025,
+          "source_note": "Approximate area stated in the June 2025 brief; remainder described as permanent/cash crops."
+        }
+      ],
+      "caveat": "These are historical figures retained to show the previous FAO snapshot and the change in reported estimates/definitions. They should not be averaged with the July 2026 brief. The 2023-to-2024 crop series suggests broadly similar production levels, but the underlying FAOSTAT observations, flags and area denominators must be extracted for a formal trend calculation."
+    },
+    {
+      "topic": "Agricultural productivity comparison and input policy",
+      "publication_date": "2024-01-01",
+      "source": "International Monetary Fund, Republic of Equatorial Guinea: Selected Issues / Country Report No. 24/25",
+      "source_url": "https://www.imf.org/_next/data/QUjzBoI7IlSWld0ujG2VL/en/-/media/files/publications/cr/2024/english/1gnqea2024001.pdf.json",
+      "observations_text": [
+        "The IMF reports that FAO 2021 yield data for cassava, plantains and bananas were as much as three to four times higher in neighbouring Cameroon than in Equatorial Guinea; it also identifies similar productivity gaps for cocoa and palm oil.",
+        "The IMF identifies agriculture and fisheries as potential employment and diversification sectors and points to improved seed varieties and fertilizer use as potential productivity measures."
+      ],
+      "caveat": "This is a comparative productivity finding based on 2021 FAO data, not a current national yield table. The accessible source summary does not supply the exact crop-by-crop yields, units or harvested-area denominators. Do not use the Cameroon comparison as a yield target or as a calculator input."
+    },
+    {
+      "topic": "Food import dependence and macroeconomic context",
+      "reference_date": "2026-07-22",
+      "source": "FAO GIEWS, Equatorial Guinea Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GNQ&lang=fr",
+      "observations": [
+        {
+          "indicator": "Domestic food needs covered by commercial imports",
+          "value": 80,
+          "unit": "percent",
+          "reference_year": 2026,
+          "source_note": "Approximate FAO estimate."
+        },
+        {
+          "indicator": "Wheat imports forecast",
+          "value": 16000,
+          "unit": "tonnes",
+          "reference_year": 2026,
+          "source_note": "Near-average forecast."
+        },
+        {
+          "indicator": "Rice imports forecast",
+          "value": 12000,
+          "unit": "tonnes",
+          "reference_year": 2026,
+          "source_note": "Near-average forecast."
+        },
+        {
+          "indicator": "Average inflation rate",
+          "value": 2.8,
+          "unit": "percent",
+          "reference_year": 2025,
+          "source_note": "IMF estimate quoted by FAO."
+        },
+        {
+          "indicator": "Average inflation rate",
+          "value": 3.2,
+          "unit": "percent",
+          "reference_year": 2026,
+          "source_note": "IMF estimate quoted by FAO; forecast/estimate in the country brief."
+        }
+      ],
+      "caveat": "Import volumes and food import dependence describe national food supply and trade, not local farm-gate demand or producer prices. Wheat and rice import forecasts must not be treated as domestic production."
+    },
+    {
+      "topic": "World Bank economic and diversification context",
+      "publication_date": "2025",
+      "source": "World Bank, Equatorial Guinea Economic Update 2025: Managing Equatorial Guinea's Wealth for Sustainable Growth and Development",
+      "source_url": "https://www.worldbank.org/en/country/equatorialguinea/publication/equatorial-guinea-economic-update-2025-managing-equatorial-guinea-wealth-for-sustainable-growth-and-development",
+      "observations_text": [
+        "The World Bank describes the need to diversify the economy and identifies an integrated approach involving land-use planning, sustainable agriculture, clean energy and ecotourism.",
+        "The update reports that food-price pressures and limited employment opportunities have contributed to poverty and weak living standards."
+      ],
+      "caveat": "This is macroeconomic and policy context, not a crop production dataset, producer-price source or farm enterprise budget."
+    },
+    {
+      "topic": "Agricultural development programme pipeline",
+      "source": "International Fund for Agricultural Development (IFAD), Equatorial Guinea country page",
+      "source_url": "https://www.ifad.org/en/w/countries/equatorial-guinea",
+      "observations_text": [
+        "IFAD lists a Climate Resilient Agrifood Value Chains Development Project with a stated cost of US$42.66 million and identifies earlier agricultural development and crop-diversification projects.",
+        "IFAD lists a 2025-2027 Country Strategy Note."
+      ],
+      "caveat": "Programme budgets and project listings are not proof of disbursement, farm-level reach, crop output or realised producer benefits. Project documents and monitoring results should be checked before recording beneficiary counts or production impacts."
+    },
+    {
+      "topic": "FAOSTAT crop and livestock dataset",
+      "source": "FAOSTAT, Crops and livestock products dataset",
+      "source_url": "https://www.fao.org/faostat/en/#data/QCL",
+      "observations_text": [
+        "FAOSTAT is the primary international dataset identified by FAO GIEWS for the 2023 and 2024 national crop production estimates cited above.",
+        "Country-level extraction is still required for crop-specific harvested area, production, yield, livestock inventories and products, including observation flags and estimation status."
+      ],
+      "caveat": "No raw FAOSTAT country export has yet been attached to this record. Until extracted, retain FAO GIEWS-reported aggregates as secondary transcriptions and do not present them as independently revalidated raw FAOSTAT rows."
+    }
+  ],
+  "data_quality_and_use": [
+    "The strongest recent crop evidence is FAO's July 2026 publication of 2024 FAOSTAT production estimates for sweet potatoes, cassava and plantains.",
+    "INEGE's September 2026 Statistical Yearbook is the priority national source for crop, price and regional tables; the public announcement confirms scope and cocoa growth but does not expose detailed tables in its accessible text.",
+    "FAO's June 2025 and July 2026 briefs report materially different agricultural/arable land and staple-crop area figures. Preserve both with dates and definitions and resolve the discrepancy before using land or yield calculations.",
+    "The 2024/2025 cocoa growth figure is a percentage change only; no absolute output or farmgate price is supplied in the public INEGE summary.",
+    "The IMF's 2021 comparative yield finding signals productivity constraints but does not supply usable current crop-level yield values in the accessible extract.",
+    "Food import dependence is high; import volumes and consumer food inflation are not substitutes for local producer price series.",
+    "No verified current farm-gate prices, input prices, labour costs, crop-specific enterprise budgets or regional market margins have been established in this review."
+  ],
+  "missing_data_before_calculator_use": [
+    "Download and extract the agriculture and price tables from the complete INEGE Statistical Yearbook 2026, including table titles, units, reference years, methodology, source department and any province/district breakdown.",
+    "Reconcile FAO's 2025 and 2026 agricultural land and staple-crop area estimates against INEGE/FAOSTAT definitions and raw data.",
+    "Extract FAOSTAT 2024 country rows for cassava, sweet potatoes, plantains, bananas, groundnuts, cocoa, palm products and other priority crops, including harvested area, production, yield, flags and notes.",
+    "Obtain crop-specific farm-gate prices by province/market, date, grade and unit, especially cassava, plantain, sweet potato, banana, cocoa and groundnut; distinguish farm-gate, wholesale and retail prices.",
+    "Obtain current input quotations for seed/planting material, fertilizer, crop protection, hired labour, land preparation, tools/equipment, irrigation, transport, packaging and storage.",
+    "Obtain representative farm budgets and crop calendars by agroecological zone and production system, with marketable yield, crop losses, labour requirements and financing costs.",
+    "Obtain current cocoa procurement prices, quality/grade deductions, producer organisation and buyer-channel information, and season-specific costs.",
+    "Obtain livestock and fisheries census/production statistics, animal prices, feed and veterinary costs, and value-chain margins if those enterprises are to be included.",
+    "Validate IFAD project implementation and monitoring data before using programme targets or planned investment as evidence of realised production or farmer income."
+  ],
+  "recommendation": "Retain Equatorial Guinea as research-only. The current evidence establishes meaningful production of cassava, sweet potatoes and plantains, a cocoa value chain, substantial food-import dependence and a recent national statistical publication. However, the publicly accessible figures do not yet provide a reconciled area/yield series, verified current farm-gate prices or full enterprise costs. Do not activate a calculator profile or calculate expected farm profit until INEGE tables, raw FAOSTAT rows, local producer prices and farm budgets are extracted and checked."
+}

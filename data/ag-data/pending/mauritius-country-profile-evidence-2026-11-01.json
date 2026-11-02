@@ -1,0 +1,552 @@
+{
+  "country": {
+    "name": "Mauritius",
+    "iso2": "MU",
+    "iso3": "MUS",
+    "currency": "MUR",
+    "currency_name": "Mauritian rupee"
+  },
+  "record_date": "2026-11-01",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Country evidence register entry. Records official agricultural production, crop yields, producer-price index, census metadata and sector context. This is not a farm enterprise budget or calculator-ready profile.",
+  "calculator_readiness": "not_ready_research_only",
+  "evidence": [
+    {
+      "id": "MU-01",
+      "topic": "Official 2025 crop area, production and yield observations",
+      "source": "Statistics Mauritius, Economic and Social Indicators Issue 1914: Agricultural and Fish Production, Year 2025",
+      "source_url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2026/EI1914/Agri_Fish_Yr25_180326.pdf",
+      "reference_date": "2026-03-18",
+      "values": [
+        {
+          "indicator": "Sugar cane harvested area",
+          "value": 33805,
+          "unit": "hectares",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "2024 revised area was 34,759ha."
+        },
+        {
+          "indicator": "Sugar cane production",
+          "value": 2321704,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "2024 revised production was 2,195,802t."
+        },
+        {
+          "indicator": "Sugar cane yield",
+          "value": 68.68,
+          "unit": "tonnes per hectare",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "National mean; Statistics Mauritius reports 63.17t/ha in 2024."
+        },
+        {
+          "indicator": "Sugar production",
+          "value": 220305,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Processed sugar output; not sugar-cane farm-gate production."
+        },
+        {
+          "indicator": "Tea green-leaf area",
+          "value": 623,
+          "unit": "hectares",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area under cultivation, not harvested area."
+        },
+        {
+          "indicator": "Tea green-leaf production",
+          "value": 5317,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Manufactured tea output was 1,033t."
+        },
+        {
+          "indicator": "Open-field food crop harvested area",
+          "value": 9991.1,
+          "unit": "hectares",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "FAREI data adjusted by Statistics Mauritius for selected backyard crops."
+        },
+        {
+          "indicator": "Open-field food crop production",
+          "value": 175122.2,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Includes multiple crop groups; use crop-specific rows below rather than this aggregate for a single crop model."
+        },
+        {
+          "indicator": "Total food crop area including covered cultures",
+          "value": 10114.1,
+          "unit": "hectares",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Open fields plus under-covered cultures."
+        },
+        {
+          "indicator": "Total food crop production including covered cultures",
+          "value": 189372.1,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Open fields plus under-covered cultures."
+        }
+      ],
+      "methodology": "Transcribed from Statistics Mauritius Tables 1, 3.1, 5.1 and 5.3. Official 2025 values are provisional; 2024 values are revised.",
+      "caveats": [
+        "2025 crop values are provisional and may be revised.",
+        "Sugar cane yields vary sharply by producer category; do not apply the national average to every farm.",
+        "Food-crop aggregates are not a crop-specific enterprise yield."
+      ]
+    },
+    {
+      "id": "MU-02",
+      "topic": "2025 crop-specific open-field yields and production",
+      "source": "Statistics Mauritius, Agricultural and Fish Production Year 2025, Table 5.1",
+      "source_url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2026/EI1914/Agri_Fish_Yr25_180326.pdf",
+      "reference_date": "2026-03-18",
+      "values": [
+        {
+          "indicator": "Potato production",
+          "value": 15040.7,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 682.6ha; reported yield 22.0t/ha."
+        },
+        {
+          "indicator": "Maize production",
+          "value": 1588.5,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 127.3ha; reported yield 12.5t/ha."
+        },
+        {
+          "indicator": "Groundnut production",
+          "value": 364.8,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 151.9ha; reported yield 2.4t/ha."
+        },
+        {
+          "indicator": "Onion production",
+          "value": 5845.6,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 265.4ha; reported yield 22.0t/ha."
+        },
+        {
+          "indicator": "Ginger production",
+          "value": 2293.1,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 117.2ha; reported yield 19.6t/ha."
+        },
+        {
+          "indicator": "Garlic production",
+          "value": 47.6,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 6.2ha; reported yield 7.7t/ha."
+        },
+        {
+          "indicator": "Chilli production",
+          "value": 3102.5,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 415.9ha; reported yield 7.5t/ha."
+        },
+        {
+          "indicator": "Tomato production",
+          "value": 11993.1,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 514.3ha; reported yield 23.3t/ha."
+        },
+        {
+          "indicator": "Beans and peas production",
+          "value": 2514.9,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 279.0ha; reported yield 9.0t/ha."
+        },
+        {
+          "indicator": "Cabbage production",
+          "value": 16677.7,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 443.7ha; reported yield 37.6t/ha."
+        },
+        {
+          "indicator": "Brinjal production",
+          "value": 7114.1,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 492.1ha; reported yield 14.5t/ha."
+        },
+        {
+          "indicator": "Cucumber production",
+          "value": 8596.3,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Cucumber is a component of the wider creepers group; area 436.6ha and yield 19.7t/ha."
+        },
+        {
+          "indicator": "Lettuce production",
+          "value": 6256.4,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 242.4ha; reported yield 25.8t/ha."
+        },
+        {
+          "indicator": "Banana production",
+          "value": 13342.4,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 815.3ha; reported yield 16.4t/ha."
+        },
+        {
+          "indicator": "Pineapple production",
+          "value": 6025.7,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 291.2ha; reported yield 20.7t/ha."
+        }
+      ],
+      "methodology": "Crop-level area, production and yield copied from Statistics Mauritius/FAREI national tables. Covered-culture figures are reported separately and must not be mixed with open-field yields.",
+      "caveats": [
+        "The official report identifies 2025 as provisional.",
+        "Some crop group labels aggregate multiple species; cucumber is included under creepers.",
+        "National averages do not substitute for region, variety, season and production-system-specific farm data."
+      ]
+    },
+    {
+      "id": "MU-03",
+      "topic": "Covered-culture and protected-cropping yields",
+      "source": "Statistics Mauritius, Agricultural and Fish Production Year 2025, Table 5.2",
+      "source_url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2026/EI1914/Agri_Fish_Yr25_180326.pdf",
+      "reference_date": "2026-03-18",
+      "values": [
+        {
+          "indicator": "Protected tomato yield",
+          "value": 163.7,
+          "unit": "tonnes per hectare",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 61.7ha; production 10,089.9t. Hybrid tomato."
+        },
+        {
+          "indicator": "Protected cucumber yield",
+          "value": 135.7,
+          "unit": "tonnes per hectare",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 14.5ha; production 1,968.5t; cucumber is within creepers."
+        },
+        {
+          "indicator": "Protected sweet pepper yield",
+          "value": 89.8,
+          "unit": "tonnes per hectare",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 12.0ha; production 1,074.1t."
+        },
+        {
+          "indicator": "Protected brinjal yield",
+          "value": 69.7,
+          "unit": "tonnes per hectare",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 2.0ha; production 142.2t."
+        },
+        {
+          "indicator": "Protected lettuce yield",
+          "value": 29.1,
+          "unit": "tonnes per hectare",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 25.9ha; production 753.3t."
+        },
+        {
+          "indicator": "Total covered-culture food crop production",
+          "value": 14249.9,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official",
+          "note": "Area 123.0ha; mean yield 115.8t/ha across diverse crops."
+        }
+      ],
+      "methodology": "Official covered-culture crop tables; Statistics Mauritius defines covered cultures as hydroponic and non-hydroponic.",
+      "caveats": [
+        "These high yields apply to protected systems and cannot be applied to open-field production.",
+        "Small area denominators make some yields sensitive to crop mix and survey coverage.",
+        "No corresponding crop-specific protected-system budgets or capital depreciation data are included."
+      ]
+    },
+    {
+      "id": "MU-04",
+      "topic": "2026 first-half production update",
+      "source": "Statistics Mauritius, Agricultural and Fish Production January-June 2026",
+      "source_url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/Agriculture/Agri_Fish_Jan-Jun26.aspx",
+      "reference_date": "2026-09-23",
+      "values": [
+        {
+          "indicator": "Sugar cane harvested area",
+          "value": 548,
+          "unit": "hectares",
+          "period": "January-June 2026",
+          "status": "official_partial_year",
+          "note": "Sugar cane production was 43,228t over this period; 2025 comparable area was 284ha and production 23,399t."
+        },
+        {
+          "indicator": "Food crop open-field production",
+          "value": 74768.8,
+          "unit": "tonnes",
+          "period": "January-June 2026",
+          "status": "official_partial_year",
+          "note": "Harvested area 4,344.9ha; production was 10.0% higher than first-half 2025."
+        },
+        {
+          "indicator": "Food crop covered-culture production",
+          "value": 8144.8,
+          "unit": "tonnes",
+          "period": "January-June 2026",
+          "status": "official_partial_year",
+          "note": "Harvested area 63.6ha; production was 32.5% higher than first-half 2025."
+        },
+        {
+          "indicator": "Total food crop production",
+          "value": 82913.6,
+          "unit": "tonnes",
+          "period": "January-June 2026",
+          "status": "official_partial_year",
+          "note": "Open field plus covered cultures; 11.8% above first-half 2025."
+        },
+        {
+          "indicator": "Poultry meat production",
+          "value": 25900,
+          "unit": "tonnes",
+          "period": "January-June 2026",
+          "status": "official_partial_year",
+          "note": "7.2% below first-half 2025."
+        },
+        {
+          "indicator": "Beef from live cattle",
+          "value": 1074,
+          "unit": "tonnes",
+          "period": "January-June 2026",
+          "status": "official_partial_year",
+          "note": "Includes imported and local slaughter; local beef rose from 7t to 33t."
+        },
+        {
+          "indicator": "Fish production",
+          "value": 16624,
+          "unit": "tonnes",
+          "period": "January-June 2026",
+          "status": "official_partial_year",
+          "note": "11.3% below first-half 2025."
+        }
+      ],
+      "methodology": "Statistics Mauritius six-month production report; values are partial-year totals, not annual estimates.",
+      "caveats": [
+        "Do not annualise six-month production mechanically.",
+        "Beef includes imported cattle slaughter; it is not a measure of domestic herd output.",
+        "2026 sugar estimate by Mauritius Chamber of Agriculture is 225,000t sugar, an industry estimate rather than realised output."
+      ]
+    },
+    {
+      "id": "MU-05",
+      "topic": "Producer Price Index - Agriculture, second quarter 2026",
+      "source": "Statistics Mauritius, Producer Price Index - Agriculture Q2 2026",
+      "source_url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/PPIA/PPIA_2Qtr26.aspx",
+      "reference_date": "2026-08-19",
+      "values": [
+        {
+          "indicator": "Overall PPI-A index",
+          "value": 94,
+          "unit": "index (2025=100)",
+          "period": "June 2026",
+          "status": "official_index",
+          "note": "March 2026 index was 96.2; monthly index decreased 2.3% to June."
+        },
+        {
+          "indicator": "Other crop products PPI-A",
+          "value": 87.1,
+          "unit": "index (2025=100)",
+          "period": "June 2026",
+          "status": "official_index",
+          "note": "Down 8.1% from March 2026."
+        },
+        {
+          "indicator": "Fresh vegetable producer price index change",
+          "value": -8.9,
+          "unit": "percent",
+          "period": "March-June 2026",
+          "status": "official_index_change",
+          "note": "Subgroup change over the quarter; carrot index decreased 54.6%, creepers 12.9%."
+        },
+        {
+          "indicator": "Animals and animal products PPI-A",
+          "value": 102.3,
+          "unit": "index (2025=100)",
+          "period": "June 2026",
+          "status": "official_index",
+          "note": "Up 2.3% from March; poultry +1.9%, eggs +6.0%, cattle +6.0%, milk +8.6%."
+        },
+        {
+          "indicator": "Sugar cane price index",
+          "value": 90.5,
+          "unit": "index (2025=100)",
+          "period": "January-June 2026",
+          "status": "official_index",
+          "note": "Based on final sugar price for crop year 2025-26; 12.3% below crop year 2024-25."
+        }
+      ],
+      "methodology": "National Producer Price Index for Agriculture, base period January-December 2025=100; weights reference year 2023.",
+      "caveats": [
+        "An index is not an absolute MUR/kg or MUR/tonne price.",
+        "The index is useful for trends and deflation, not as a stand-alone selling price input.",
+        "Current product-level price quotations and farm-gate unit values remain necessary for gross margin calculations."
+      ]
+    },
+    {
+      "id": "MU-06",
+      "topic": "Agricultural Census 2024 metadata and survey scope",
+      "source": "FAO Microdata Catalogue, Mauritius Census of Agriculture 2024; producer Statistics Mauritius",
+      "source_url": "https://microdata.fao.org/index.php/catalog/3145",
+      "reference_date": "2026-10-23",
+      "values": [
+        {
+          "indicator": "Census reference date for livestock headcounts",
+          "value": "2024-06-30",
+          "unit": "date",
+          "period": "2024 census",
+          "status": "metadata"
+        },
+        {
+          "indicator": "Household farms in Phase II sample",
+          "value": 10200,
+          "unit": "holdings",
+          "period": "2024 census",
+          "status": "sample_size",
+          "note": "8,200 Mauritius Island and 2,000 Rodrigues; about 42% of the estimated population of household farms."
+        },
+        {
+          "indicator": "Private households in Phase III sample",
+          "value": 8700,
+          "unit": "households (approximate)",
+          "period": "2024 census",
+          "status": "sample_size",
+          "note": "Sample represented about 3% of households on Mauritius Island and 22% on Rodrigues."
+        }
+      ],
+      "methodology": "FAO catalogue metadata for the national 2024 census. Scope includes crop and livestock activity, labour, land tenure, crop production, farming type, mechanisation, livestock, marketing practices, agricultural loans and constraints.",
+      "caveats": [
+        "The FAO catalogue page documents the census and metadata; it is not itself the full microdata results table.",
+        "Need to extract official final census tables/microdata before using farm-size, labour, livestock and marketing variables in the calculator.",
+        "The survey used complete enumeration for non-household holdings and sample enumeration for household farms and private households."
+      ]
+    },
+    {
+      "id": "MU-07",
+      "topic": "Food import dependence and national agricultural structure",
+      "source": "U.S. International Trade Administration, Mauritius Country Commercial Guide: Agricultural Sectors; IFAD Mauritius country context",
+      "source_url": "https://www.trade.gov/country-commercial-guides/mauritius-agricultural-sectors",
+      "reference_date": "2026-02-18",
+      "values": [
+        {
+          "indicator": "Agricultural imports",
+          "value": 1600000000,
+          "unit": "USD",
+          "period": "2024",
+          "status": "reported_value",
+          "note": "Trade.gov reports USD1.6bn, approximately 24.4% of total Mauritian imports."
+        },
+        {
+          "indicator": "Food self-sufficiency ratio",
+          "value": 25,
+          "unit": "percent (approximately)",
+          "period": "Trade.gov 2026 guide",
+          "status": "reported_estimate",
+          "note": "Broad food self-sufficiency estimate; not a crop-specific production ratio."
+        },
+        {
+          "indicator": "Wheat imports",
+          "value": 154111,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_value",
+          "note": "Unmilled and other wheat; import volume, not domestic production."
+        },
+        {
+          "indicator": "Corn imports for animal feed",
+          "value": 114151,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "reported_value",
+          "note": "Imported maize used in feed supply chain."
+        },
+        {
+          "indicator": "Food import dependence",
+          "value": 77,
+          "unit": "percent",
+          "period": "IFAD country context accessed 2026-11-01",
+          "status": "reported_estimate",
+          "note": "IFAD reports Mauritius imports 77% of food requirements; figures differ by source and definition."
+        }
+      ],
+      "methodology": "Trade.gov guide and IFAD country context; trade and food-system context only.",
+      "caveats": [
+        "The 25% self-sufficiency and 77% food-import dependence statements are broad estimates from different sources and may use different definitions; do not combine them as exact complements.",
+        "Import volumes and trade values must not be treated as domestic farm output or farm-gate prices."
+      ]
+    }
+  ],
+  "data_quality": {
+    "overall": "high_for_recent_national_crop_area_production_and_yield; medium_for_producer_price_trends; incomplete_for_enterprise_budget_inputs",
+    "strengths": [
+      "Statistics Mauritius publishes 2025 crop-level area, production and yields, including open-field and protected systems.",
+      "2026 first-half production and Q2 producer price index updates provide recent context.",
+      "2024 Agriculture Census has broad coverage and documented sampling methodology.",
+      "National currency and official statistics sources are identifiable."
+    ],
+    "limitations": [
+      "No current crop-specific MUR/kg farm-gate price table or dated district-level producer quotations were extracted.",
+      "No complete current crop enterprise budgets with seed, fertiliser, crop protection, labour, irrigation, energy, land preparation, packaging and transport costs were identified.",
+      "Protected and open-field yields differ substantially and must remain separate model profiles.",
+      "Sugar-cane producer revenue depends on cane/sugar pricing and producer category; a simple commodity price proxy would be misleading.",
+      "Some livestock slaughter statistics include imported animals and cannot be interpreted as domestic production alone."
+    ]
+  },
+  "missing_before_calculator_activation": [
+    "Extract 2024 Agriculture Census final national and district tables for holding counts, crop area, livestock inventory, labour, marketing channels and mechanisation.",
+    "Obtain current dated farm-gate prices by crop, grade, location and unit; link them to the official PPI-A only as a trend cross-check.",
+    "Collect crop-specific input quotations in MUR for seed/planting material, fertiliser, crop protection, labour, land preparation, irrigation, energy, packaging and transport.",
+    "Build separate open-field and protected-culture enterprise budgets, especially for tomato, cucumber and sweet pepper.",
+    "For sugar cane, document producer category, cane pricing formula, harvesting/transport deductions, ratoon cycle and applicable support/subsidy arrangements.",
+    "Validate livestock farm-gate sale prices and distinguish domestic production from imported animals slaughtered locally.",
+    "Map all units, seasons, crop names and currency to the existing calculator schema and run regression and UI tests."
+  ],
+  "activation_recommendation": "Do not activate Mauritius in the calculator from this evidence record alone. Mauritius has unusually strong recent official crop yield and producer-price-index evidence, but it still needs absolute current farm-gate prices, farm-level input quotations, enterprise budgets and census table extraction. Use separate open-field and covered-culture profiles."
+}
