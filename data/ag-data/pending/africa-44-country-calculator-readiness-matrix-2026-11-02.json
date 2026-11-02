@@ -247,8 +247,8 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "source_provenance_and_observation_date": "official_2025_reorganisation_verified_17_current_regions_added",
+        "calculator_mapping_and_test_cases": "region_lookup_added_country_profile_and_tests_pending"
       },
       "blockers": [
         "Extract country-specific commodity observations from the cited primary sources.",
@@ -257,7 +257,7 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "next_step": "Extract official crop survey data by the current 17 regions; map historical data across the July 2025 boundary changes; obtain dated regional farmgate prices and full production costs.",
       "batch_01_review": {
         "review_date": "2026-11-02",
         "country_name": "Burkina Faso",
@@ -272,6 +272,17 @@
           "Obtain current market-level and farmgate prices; do not reuse May 2025 wholesale movements as current prices.",
           "Obtain regional input and labour quotations; conflict/access differences require regional segmentation.",
           "Build crop budgets with explicit season and region."
+        ]
+      },
+      "batch_05_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "Official Ministry and Presidency sources confirm July 2025 reorganisation from 13 to 17 regions and from 45 to 47 provinces. Added the 17 current region names to src/_data/calculator/regions.json. The reorganisation splits former East, Boucle du Mouhoun and Sahel regions, so historical regional crop observations need a documented geographic crosswalk before use.",
+        "source": "https://www.matd.gov.bf/accueil/actualites/details?cHash=d09a0eaf5af155adaac351d9d7eef8bf&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=763",
+        "blockers": [
+          "Extract official 2024/25 crop area, production and yield by the current 17 regions.",
+          "Create and validate old-to-new region crosswalk for historical agricultural series.",
+          "Obtain dated regional farmgate prices and input costs.",
+          "Build regional enterprise budgets and calculator tests."
         ]
       }
     },
