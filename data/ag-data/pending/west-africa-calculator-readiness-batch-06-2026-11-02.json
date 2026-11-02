@@ -1,0 +1,105 @@
+{
+  "title": "GoOrganicAfrica readiness batch 06 - Côte d’Ivoire and Togo administrative geography",
+  "review_date": "2026-11-02",
+  "scope": "Regional lookup verification only; no country is certified calculator-ready.",
+  "countries": [
+    {
+      "code": "CI",
+      "name": "Côte d’Ivoire",
+      "administrative_geography": {
+        "level": "region",
+        "count": 31,
+        "names": [
+          "Agnéby-Tiassa",
+          "Bafing",
+          "Bagoué",
+          "Bélier",
+          "Béré",
+          "Bounkani",
+          "Cavally",
+          "Folon",
+          "Gbêkê",
+          "Gôh",
+          "Grands-Ponts",
+          "Guémon",
+          "Hambol",
+          "Haut-Sassandra",
+          "Indénié-Djuablin",
+          "Iffou",
+          "Kabadougou",
+          "La Mé",
+          "Lôh-Djiboua",
+          "Marahoué",
+          "Moronou",
+          "Nawa",
+          "N'Zi",
+          "Poro",
+          "San-Pédro",
+          "Sud-Comoé",
+          "Tchologo",
+          "Tonkpi",
+          "Worodougou",
+          "Yamoussoukro",
+          "Zanzan"
+        ],
+        "additional_note": "The country also has two autonomous districts. This lookup uses the 31-region administrative layer and does not substitute the autonomous districts for regions.",
+        "sources": [
+          "https://dgat.interieur.gouv.ci/creation-de-circonscriptions-administratives/",
+          "https://www.fiscalitelocale.dgi.gouv.ci/regions.php",
+          "https://www.presidence.ci/en/our-heritage/"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "2024 national crop output values previously identified; matching regional crop area and yield extraction pending",
+        "farmgate_prices": "only a crop- and season-specific cocoa producer-price lead recorded; current dated prices for other crops pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "regional crop budgets pending",
+        "currency": "XOF; confirm source-specific price units and effective dates",
+        "tests": "regional crop calculation and localization tests pending"
+      },
+      "safeguards": [
+        "Do not treat national production totals as regional yields.",
+        "Do not generalize the cocoa producer price to other crops or seasons.",
+        "Do not mix the two autonomous districts into the 31-region lookup.",
+        "Do not activate until crop data, dated prices, input costs, budgets and tests are validated."
+      ]
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "administrative_geography": {
+        "level": "administrative_region",
+        "count": 5,
+        "names": [
+          "Maritime",
+          "Plateaux",
+          "Centrale",
+          "Kara",
+          "Savanes"
+        ],
+        "special_unit_note": "Grand Lomé is a special territorial unit and is not included as a sixth administrative region.",
+        "sources": [
+          "https://urbanisme.gouv.tg/amenagement-du-territoire-le-snat-vulgarise-dans-les-cinq-regions-administratives-et-le-grand-lome/",
+          "https://www.republiquetogolaise.tg/gestion-publique/2901-11552-decentralisation-un-guide-national-pour-harmoniser-les-plans-de-developpement-regionaux",
+          "https://digitallibrary.un.org/record/4061291/files/HRI_CORE_TGO_2024-EN.pdf"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "aggregate cereal production context only; crop-level regional tables pending",
+        "farmgate_prices": "dated regional farmgate prices and units pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "regional crop budgets pending",
+        "currency": "XOF; validate all price units and dates",
+        "tests": "regional crop calculation and localization tests pending"
+      },
+      "safeguards": [
+        "Do not use national cereal totals as crop yields.",
+        "Do not treat the Savanes labour-cost signal as a national wage schedule.",
+        "Do not activate until crop data, dated prices, input costs, budgets and tests are validated."
+      ]
+    }
+  ],
+  "summary": "Two additional regional lookup lists have been verified and recorded. Neither country is activated or certified calculator-ready."
+}
