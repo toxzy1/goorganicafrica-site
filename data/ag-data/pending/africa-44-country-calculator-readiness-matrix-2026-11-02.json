@@ -1360,7 +1360,32 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_17_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "INE's official country page confirms seven districts (Água Grande, Cantagalo, Caué, Lembá, Lobata, Mé-Zóchi and Pagué) and states that Príncipe has autonomous-region status. INE's 2017 statistical yearbook provides historical national agricultural production for 2013-2017: banana and tomato output, export-crop output and livestock series. A May 2026 report quoting INE states phase 2 of the 2025 General Agricultural Census was underway; no final new crop tables were found in this review.",
+        "sources": [
+          "https://www.ine.st/index.php/o-pais/sobre-o-pais",
+          "https://www.ine.st/phocadownload/userupload/Documentos/STPemNumeros/STPemNumeros%20%202017.pdf",
+          "https://www.glebatv.st/todas-noticias/ine-inicia-fase-2-do-recenseamento-geral-da-agricultura-2025-em-sao-tome-e-principe",
+          "https://stp.gov.st/sobre_pais"
+        ],
+        "progress": [
+          "Seven district names confirmed from INE; Príncipe's autonomous status separately recorded.",
+          "Seven district entries added to research-only region lookup registry.",
+          "Historical 2013-2017 banana, tomato, coffee, cocoa/chocolate and livestock series transcribed from INE yearbook.",
+          "2025 agricultural census phase 2 reported underway in May 2026.",
+          "Currency identified as STN; government page reports 24.5 STN/EUR peg, last updated March 2025."
+        ],
+        "blockers": [
+          "Extract final 2025 agricultural census crop and district tables when released.",
+          "Obtain crop area to accompany production and calculate defensible yields.",
+          "Obtain current district farmgate prices and farmer-facing input costs.",
+          "Validate source definitions and currency conversion date.",
+          "Build crop-specific regional budgets, calculator mapping and test cases."
+        ],
+        "regional_lookup": "Seven districts added to regions.json for research lookup only; not activated."
+      }
     },
     {
       "code": "SN",
