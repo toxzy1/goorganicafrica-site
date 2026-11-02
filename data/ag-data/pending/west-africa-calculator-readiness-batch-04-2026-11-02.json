@@ -78,9 +78,10 @@
         {
           "commodity": "soybean",
           "reference_period": "2023 campaign / 2023-2024 report",
-          "production_tonnes": 520929,
+          "production_tonnes": null,
           "yield_kg_per_ha": 1004,
-          "geography": "national"
+          "geography": "national",
+          "note": "Conflicting values in the same official report: summary table reports 421,886 tonnes for 2023 and 520,929 for 2022, while narrative and detailed Table 5 report 520,929 tonnes for 2023 and 421,886 for 2022. Withheld from numeric use pending source-owner clarification."
         },
         {
           "commodity": "tomato",
@@ -115,19 +116,21 @@
         "The report's production statistics are based on DSA's Agricultural Statistical Survey and departmental agriculture directorates; it records 10,245 holdings across 683 agricultural enumeration zones.",
         "Selected crop yield values are available for maize, yam, cassava, cowpea/beans, groundnut, soybean, tomato, chilli pepper, okra and onion.",
         "The report is national-level in the extracted tables; regional crop values, dated farmgate prices and complete input/enterprise budgets were not extracted.",
-        "The report contains some internal inconsistencies in narrative/table reference labels and typographic values; retain the stated source year and validate source table/page before production use."
+        "The report contains some internal inconsistencies in narrative/table reference labels and typographic values; retain the stated source year and validate source table/page before production use.",
+        "Soybean production is internally inconsistent: the summary table reverses the values shown in the narrative and detailed Table 5; no soybean figure is certified until reconciled."
       ],
       "blockers": [
         "Extract regional crop area, production and yield from ESA 2024 / RNA tables and reconcile against the national campaign report.",
         "Resolve discrepancies and verify chart/table readings against page images before calculator mapping.",
         "Obtain dated farmgate prices and farmer-facing seed, fertilizer, crop protection, irrigation, labour and machinery costs by region.",
-        "Build region-specific enterprise budgets and tests; current national observations alone do not support regional profit estimates."
+        "Build region-specific enterprise budgets and tests; current national observations alone do not support regional profit estimates.",
+        "Resolve the soybean production value discrepancy between the report's summary table and narrative/detailed Table 5 before using the figure."
       ]
     },
     {
       "code": "SN",
       "name": "Senegal",
-      "status": "official_public_interactive_2024_2025_tables_confirmed_extraction_pending",
+      "status": "official_public_interactive_2024_2025_tables_linked_portal_access_blocked_extraction_pending",
       "sources": [
         {
           "title": "FAO AGRISurvey Senegal - access to data",
@@ -143,15 +146,22 @@
           "title": "Senegal EAA 2024-2025 related materials",
           "url": "https://anads.ansd.sn/index.php/catalog/351/related-materials",
           "findings": "Official questionnaires, enumerator manual and local-to-standard conversion workbook ZIP are listed. The EAA 2024-2025 analysis report is listed without a download URL."
+        },
+        {
+          "title": "Senegal EAA 2024-2025 interactive tables - FAO linked Open Data for Africa portal",
+          "url": "https://senegal.opendataforafrica.org/gallery?tag=DAPSA",
+          "findings": "The official FAO page's interactive-table link resolves to this DAPSA-tagged portal gallery, but direct retrieval returned HTTP 403 during this review; no numeric table values could be extracted."
         }
       ],
       "verified_facts": [
         "Public interactive statistical tables for EAA 2024-2025 are linked from FAO's official Senegal access-to-data page.",
         "The survey metadata confirms region remains in the anonymised file; department is replaced by agroecological zone.",
         "The survey covers the 14 regions and 45 departments; public table extraction and unit conversion are still pending.",
-        "Do not infer that the presence of an interactive-table link means all required price and input cost tables have been extracted."
+        "Do not infer that the presence of an interactive-table link means all required price and input cost tables have been extracted.",
+        "Direct access to the DAPSA-tagged Senegal Open Data for Africa gallery returned HTTP 403 in this retrieval attempt; link presence is confirmed but table contents were not accessible for extraction."
       ],
       "blockers": [
+        "Resolve access to the public DAPSA Open Data for Africa gallery (HTTP 403) or obtain published aggregate tables through an alternate official download route.",
         "Open and extract the public EAA 2024-2025 interactive tables by region, crop, season, area, production and yield.",
         "Obtain and apply the official local measurement conversion workbooks before comparing yield or price units.",
         "Extract permitted aggregate input, labour and cost tables; do not download or redistribute restricted confidential microdata.",
