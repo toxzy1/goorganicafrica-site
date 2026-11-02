@@ -1,0 +1,61 @@
+{
+  "title": "GoOrganicAfrica Comoros calculator readiness review — Batch 20",
+  "batch": 20,
+  "country": "Comoros",
+  "country_code": "KM",
+  "review_date": "2026-11-02",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "selector_level": "autonomous island",
+    "islands": [
+      "Ngazidja (Grande Comore)",
+      "Ndzuwani (Anjouan)",
+      "Mwali (Mohéli)"
+    ],
+    "source": "https://justice.gouv.km/texte/loi-n11-006-au-du-02-mai-2011-portant-organisation-territoriale-de-lunion-des-comores/",
+    "note": "Three autonomous islands are used as top-level selector. INSEED microdata supports island, prefecture, commune and village aggregation; lower levels are not mixed into the selector."
+  },
+  "evidence_findings": [
+    "INSEED published RGA-2 results for the 2023/2024 crop campaign and May 2024-April 2025 livestock reference period; the census was conducted with FAO technical support and World Bank financing.",
+    "The RGA-2 listed 73,818 family holdings across 964 enumeration areas, separately enumerated 148 modern/institutional holdings and sampled 11,454 family holdings for detailed survey.",
+    "National agricultural structure: 89,282 ha agricultural land, 56,576 ha cultivated, average holding 0.40 ha, and 85% of holdings under 1 ha.",
+    "Land by island: Ngazidja 44,561 ha, Ndzuwani 37,191 ha, Mwali 7,531 ha.",
+    "National crop totals include banana 72,809 t, cassava 59,149 t, sweet potato 11,684 t, vanilla 2,442 t, clove 2,178 t and ylang-ylang 355 t.",
+    "Selected yields reported in the public summary: mango 17.1 t/ha, lettuce 8.5 t/ha and cucumber 8.3 t/ha. Denominator, island and production-system detail still require validation from the full tables.",
+    "Only 20% of cultivated land was fertilised; among fertilised land, 54% used organic fertiliser, 29% mineral fertiliser and 17% combined. 10% of crop producers used phytosanitary products. These are adoption indicators, not unit costs.",
+    "Livestock data include 49,679 livestock holdings, 270,571 poultry, 116,674 goats and 55,835 cattle.",
+    "INSEED NADA's RGA-2 version 1.0 metadata states that files were cleaned, weighted and validated by the technical committee; microdata access is subject to application and confidentiality conditions.",
+    "RGA-2 supports island, prefecture, commune and village geography; the top-level selector uses the three autonomous islands."
+  ],
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial — strong 2023/24 national crop totals and selected yields; detailed weighted island/crop/season tables still to extract",
+    "dated_local_farmgate_prices_and_units": "blocked — no validated dated island-level farmgate series",
+    "seed_and_planting_material_costs": "blocked — adoption/production data do not provide current farmer-paid prices",
+    "fertilizer_and_soil_amendment_costs": "partial — fertiliser adoption shares available, but quantities and unit costs not validated",
+    "crop_protection_costs": "partial — phytosanitary adoption share available, but products, quantities and paid prices missing",
+    "irrigation_water_and_energy_costs": "blocked — no island-specific farm-level costs",
+    "labour_rates_and_operations": "partial — census labour structure documented; operation-specific wage rates and costs not extracted",
+    "machinery_and_land_preparation_costs": "blocked — no current farmer-paid cost schedule",
+    "regional_enterprise_budget_and_gross_margin": "blocked — no island-specific complete budgets",
+    "currency_and_exchange_rate_method": "partial — KMF identified; calculator conversion and rounding still to validate",
+    "source_provenance_and_observation_date": "partial — official INSEED RGA-2 sources and reference periods recorded; detailed tables outstanding",
+    "calculator_mapping_and_test_cases": "blocked — no validated mapping or country tests"
+  },
+  "blockers": [
+    "Obtain authorised access to the RGA-2 microdata or complete official weighted island/prefecture crop tables; extract crop, season, harvested area, production and yield with final survey weights.",
+    "Reconcile crop-specific denominators and mixed/intercropped production, units and campaign reference periods before calculating yield distributions.",
+    "Obtain dated island-level farmgate prices and units for priority commodities; do not substitute retail prices or export values.",
+    "Obtain farmer-paid seed, planting-material, organic/mineral fertiliser, crop-protection, labour, irrigation, water, energy, machinery, packaging and transport costs by island.",
+    "Build representative island-specific enterprise budgets and gross margins that reflect small and fragmented holdings and subsistence versus sale orientation.",
+    "Validate KMF currency handling, calculator commodity mapping and country-specific test cases."
+  ],
+  "safeguards": [
+    "Comoros remains research-only and not active.",
+    "Do not modify the 10 active country profiles or calculator formulas.",
+    "Do not treat national production totals or selected yield indicators as farm budgets or island-level values.",
+    "Do not treat input adoption shares as input costs.",
+    "Respect INSEED microdata access and confidentiality conditions.",
+    "No merge or production deployment."
+  ],
+  "next_step": "Request or access the authorised RGA-2 microdata and extract weighted crop area, production, yields, sales and labour by island/prefecture; in parallel collect dated farmgate prices and farmer-paid input quotations."
+}
