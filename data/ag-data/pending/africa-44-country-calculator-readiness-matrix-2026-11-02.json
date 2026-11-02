@@ -744,7 +744,17 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_07_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "The Guinea government portal lists the pre-existing administrative regions (including the special zone of Conakry). A decree dated 20 August 2026 created two additional administrative regions, Beyla and Siguiri. The regional lookup therefore records the eight previously listed regional areas plus the two newly created regions. Implementation details and updated prefecture-to-region boundaries should be confirmed against the subsequent regulatory instrument before regional crop data are mapped.",
+        "sources": [
+          "https://gouvernement.gov.gn/presentation/",
+          "https://guineelex.com/decrets-arretes/decret-d-2026-0259-prg-sgg",
+          "https://agpguinee.com/guinee-voici-les-onze-nouvelles-prefectures-creees-decret/"
+        ],
+        "regional_lookup": "10 region entries added to src/_data/calculator/regions.json; Beyla and Siguiri are newly created in August 2026. Lookup only, not activated."
+      }
     },
     {
       "code": "GW",
@@ -773,7 +783,17 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_07_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "The Guinea-Bissau government profile and UK Government toponymic factfile confirm eight first-order regions and a separate Autonomous Sector of Bissau. The lookup includes only the eight regions; the autonomous sector is deliberately not mixed into the region array.",
+        "sources": [
+          "https://bissaugov.com/guine-bissau",
+          "https://assets.publishing.service.gov.uk/media/65f31c5efa1851001a011765/Guinea-Bissau_toponymic_factfile.pdf",
+          "https://unfccc.int/sites/default/files/resource/GNB_NC4_English_FINAL_16112025_JLT.pdf"
+        ],
+        "regional_lookup": "8 regions added to src/_data/calculator/regions.json; Autonomous Sector of Bissau excluded from the region list. Lookup only, not activated."
+      }
     },
     {
       "code": "LS",
