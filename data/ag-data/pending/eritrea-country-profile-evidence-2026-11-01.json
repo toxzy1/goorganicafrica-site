@@ -2,7 +2,7 @@
   "country": "Eritrea",
   "iso_alpha2": "ER",
   "iso_alpha3": "ERI",
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-02",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only record of national ministry-reported crop activity, horticultural production, regional irrigation and wholesale price evidence, current seasonal risk and development programme indicators. Not a farm-profit calculator profile and not authorization to activate Eritrea.",
   "currency": {
@@ -319,5 +319,20 @@
     "Obtain livestock population, milk, egg, honey and meat production series and current animal/feed/veterinary prices before adding livestock enterprises.",
     "Obtain project monitoring data and sampling methodology for farmer support programmes before using reported productivity gains as representative yield or income changes."
   ],
-  "recommendation": "Retain Eritrea as research-only. The evidence base is stronger than a simple international-database profile: it includes Ministry-reported 2024 national production and area figures, a peer-reviewed 2015-2024 regional horticulture/irrigation study with Asmara wholesale price methodology, UN programme outcomes and a current FAO September 2026 drought warning. However, no crop-level national yield series, current farm-gate prices or full enterprise budgets are yet verified. Do not activate Eritrea or calculate expected farm profit until the underlying Ministry tables, crop-specific price series and farm input budgets are extracted and reconciled."
+  "recommendation": "Retain Eritrea as research-only. The evidence base is stronger than a simple international-database profile: it includes Ministry-reported 2024 national production and area figures, a peer-reviewed 2015-2024 regional horticulture/irrigation study with Asmara wholesale price methodology, UN programme outcomes and a current FAO September 2026 drought warning. However, no crop-level national yield series, current farm-gate prices or full enterprise budgets are yet verified. Do not activate Eritrea or calculate expected farm profit until the underlying Ministry tables, crop-specific price series and farm input budgets are extracted and reconciled.",
+  "administrative_geography": {
+    "reference_date": "2026-11-02",
+    "source": "Proclamation No. 86/1996 for the Establishment of Regional Administrations, reproduced in FAOLEX; corroborated by Netherlands government country-of-origin report and WHO Eritrea country cooperation document.",
+    "source_url": "https://faolex.fao.org/docs/pdf/eri236766.pdf",
+    "regions": [
+      "Maekel",
+      "Debub",
+      "Gash Barka",
+      "Anseba",
+      "Semenawi Keyih Bahri",
+      "Debubawi Keyih Bahri"
+    ],
+    "note": "Eritrea's first-level administrative units are six zobas (regions). The cited legal source also describes lower sub-zoba and village/area administration levels; do not mix these lower units into the first-level selector."
+  },
+  "audit_update": "Batch 22 audit: verified six zoba regions and added them to the calculator region lookup. The matrix now distinguishes historical national area/output and combined regional horticulture evidence from crop-specific yield, wholesale from farmgate prices, and seasonal forecasts from final harvest data. Eritrea remains research-only; no active calculator profile or formula was changed."
 }
