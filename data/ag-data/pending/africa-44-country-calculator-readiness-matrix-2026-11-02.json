@@ -197,7 +197,8 @@
           "Obtain dated regional farmgate prices, input costs, labour, irrigation and machinery costs.",
           "Construct regional budgets and calculator tests.",
           "Resolve the conflicting soybean production values in the official report before numeric use."
-        ]
+        ],
+        "regional_lookup": "12 official departments added to src/_data/calculator/regions.json on the readiness branch; lookup only, not activated."
       }
     },
     {
@@ -1264,7 +1265,8 @@
           "Obtain dated regional farmgate prices and input/labour costs.",
           "Use aggregate outputs only; respect DAPSA microdata confidentiality and authorisation rules.",
           "Build regional enterprise budgets and calculator tests."
-        ]
+        ],
+        "regional_lookup": "14 official regions added to src/_data/calculator/regions.json on the readiness branch; lookup only, not activated."
       }
     },
     {
