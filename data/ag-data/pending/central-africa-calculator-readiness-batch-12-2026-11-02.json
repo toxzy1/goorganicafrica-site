@@ -1,0 +1,97 @@
+{
+  "title": "GoOrganicAfrica Chad calculator-readiness review",
+  "batch": 12,
+  "review_date": "2026-11-02",
+  "country": {
+    "code": "TD",
+    "name": "Chad",
+    "calculator_status": "not_active"
+  },
+  "administrative_geography": {
+    "level": "province",
+    "count": 23,
+    "provinces": [
+      "Barh el Gazel",
+      "Batha",
+      "Borkou",
+      "Chari-Baguirmi",
+      "Ennedi Est",
+      "Ennedi Ouest",
+      "Guéra",
+      "Hadjer-Lamis",
+      "Kanem",
+      "Lac",
+      "Logone Occidental",
+      "Logone Oriental",
+      "Mandoul",
+      "Mayo-Kebbi Est",
+      "Mayo-Kebbi Ouest",
+      "Moyen-Chari",
+      "N'Djamena",
+      "Ouaddaï",
+      "Salamat",
+      "Sila",
+      "Tandjilé",
+      "Tibesti",
+      "Wadi Fira"
+    ],
+    "lower_levels": {
+      "departments": 70,
+      "sub_prefectures": 348
+    },
+    "note": "Province selector only. Lower levels are deliberately excluded. Crosswalk legacy names and boundaries before assigning historical crop records."
+  },
+  "agricultural_evidence": [
+    {
+      "source": "FAO GIEWS",
+      "reference_date": "2026-09-07",
+      "observation": "2025 aggregate cereal production estimated at about 3 million tonnes, approximately 10% above the previous five-year average.",
+      "use_limit": "National aggregate context only; not crop-specific or province-specific yields.",
+      "url": "https://cb.apps.fao.org/country.jsp?code=TCD"
+    },
+    {
+      "source": "FAO GIEWS",
+      "reference_date": "2026-09-07",
+      "observation": "2026 cereal crop prospects uncertain after irregular rainfall, dry spells and poor vegetation conditions in several provinces.",
+      "use_limit": "Outlook/risk context, not a final 2026 harvest result.",
+      "url": "https://cb.apps.fao.org/country.jsp?code=TCD"
+    },
+    {
+      "source": "SESRIC Chad in Figures",
+      "reference_year": 2024,
+      "observation": {
+        "cereal_harvested_area_ha": 3276392,
+        "cereal_production_tonnes": 2709156,
+        "cereal_yield_kg_per_ha": 826.9
+      },
+      "use_limit": "National cereal aggregate; retain as a cross-source check, not a crop-by-province input.",
+      "url": "https://www.sesric.org/cif.php?c_code=13"
+    }
+  ],
+  "data_access_route": {
+    "institution": "INSEED",
+    "description": "FEWS NET identifies an INSEED-linked online data portal with a crop-statistics archive covering 2010–2023.",
+    "url": "https://devhelp.fews.net/fde/v1/chad-tchad-country-book",
+    "status": "archive identified; detailed tables not extracted in this batch"
+  },
+  "readiness": {
+    "criteria_passed": 0,
+    "criteria_certified": 0,
+    "outstanding": [
+      "crop-specific province/season area-production-yield extraction",
+      "dated provincial farmgate prices",
+      "seed and input costs",
+      "irrigation and energy costs",
+      "labour and machinery costs",
+      "regional enterprise budgets",
+      "currency validation",
+      "calculator mappings and test cases"
+    ]
+  },
+  "safeguards": [
+    "No active calculator profile or formula changed.",
+    "No prices, yields or input costs invented.",
+    "No national aggregate copied into province-level values.",
+    "Chad remains research-only and not calculator-ready."
+  ]
+}
