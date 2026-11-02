@@ -743,7 +743,33 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_15_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "Verified the nine first-level provinces using the Gabon Ministry of Interior territorial-organisation page, which separately reports 48 departments, 52 communes, 26 districts and 164 cantons. The Ministry of Agriculture's RGA report page confirms the national agricultural census and lists its report volumes. FAO GIEWS' 4 June 2026 brief reports cassava and plantain as the main food crops, small maize production, a 2026 cereal import requirement forecast of 255,000 tonnes and above-average first-half rainfall that may have affected the secondary maize crop. Existing research evidence includes RGA/EPVA survey leads and World Bank sector context, but the crop/province tables and current enterprise costs remain unextracted.",
+        "sources": [
+          "https://interieur.gouv.ga/decoupage-territorial/",
+          "https://agriculture.gouv.ga/rapports-du-recensement-general-de-lagriculture-rga/",
+          "https://new.instatgabon.org/fr/enquete-de-productions-vegetale-et-animale/epva-2022-2023",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=GAB&lang=fr",
+          "https://www.beac.int/pays/gabon/"
+        ],
+        "progress": [
+          "Nine first-level provinces confirmed from the official Ministry of Interior.",
+          "Nine province names added to the research-only region lookup registry.",
+          "48 departments, 52 communes, 26 districts and 164 cantons recorded as distinct lower-level administrative units.",
+          "RGA and EPVA official statistical report sources reconfirmed; numerical tables still require extraction.",
+          "Currency identified as XAF; current crop farmgate prices and enterprise input costs remain unvalidated."
+        ],
+        "blockers": [
+          "Extract province-level crop area, production and yield tables from the RGA volumes and EPVA 2022-2023.",
+          "Reconcile crop and livestock definitions, survey periods and units across RGA, EPVA and FAOSTAT.",
+          "Obtain dated provincial farmgate prices by crop and farmer-facing input quotations.",
+          "Construct regionally appropriate enterprise budgets including labour, mechanisation, irrigation, packaging, transport and storage.",
+          "Add calculator mapping and tests only after source-backed values and provincial scope are validated."
+        ],
+        "regional_lookup": "9 provinces added to src/_data/calculator/regions.json on the readiness branch; research lookup only, country remains inactive."
+      }
     },
     {
       "code": "GM",
