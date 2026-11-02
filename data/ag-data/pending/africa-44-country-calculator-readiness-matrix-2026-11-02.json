@@ -684,27 +684,53 @@
       "existing_research_note": "Ministry_2024_national_crop_area_and_horticulture_outputs_peer_reviewed_2015_2024_Dighe_Gala_Nefhi_irrigation_and_Asmara_wholesale_price_index_UN_2025_programme_results_and_FAO_Sept_2026_drought_risk_recorded_crop_specific_yields_farmgate_prices_and_enterprise_budgets_missing",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial_ministry_2024_national_area_and_aggregate_horticulture_output_plus_two_subzoba_combined_fruit_vegetable_series_crop_specific_regional_yields_missing",
+        "dated_local_farmgate_prices_and_units": "blocked_asmara_wholesale_price_index_methodology_identified_but_no_verified_region_crop_farmgate_observations",
+        "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_planting_material_price_schedule",
+        "fertilizer_and_soil_amendment_costs": "blocked_no_current_product_prices_application_rates_or_farm_budget_costs",
+        "crop_protection_costs": "blocked_no_current_crop_protection_prices_or_application_budgets",
+        "irrigation_water_and_energy_costs": "partial_irrigated_area_study_and_water_pricing_research_identified_but_current_region_tariffs_pumping_energy_and_crop_costs_missing",
+        "labour_rates_and_operations": "blocked_no_current_region_crop_operation_wage_and_labour_days_schedule",
+        "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_and_land_preparation_cost_schedule",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_crop_specific_regional_enterprise_budgets_or_gross_margins",
+        "currency_and_exchange_rate_method": "partial_ERN_currency_identified_but_calculator_conversion_rounding_and_any_exchange_method_not_documented",
+        "source_provenance_and_observation_date": "partial_ministry_2024_figures_peer_reviewed_2025_study_UN_2025_report_and_FAO_2026_seasonal_brief_recorded",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_crop_level_price_and_cost_dataset_or_test_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Obtain and reconcile the full Ministry of Agriculture 2024 statistical tables and final 2025/2026 crop results, including crop-specific area, output, yield, region and season.",
+        "Extract the full Asmara wholesale price series and preserve its wholesale classification; obtain separate dated farmgate prices by producing region, commodity, grade and unit.",
+        "Obtain current farmer-paid seed, fertilizer, compost, crop-protection, labour, machinery, irrigation water, pumping energy, packaging and transport costs.",
+        "Build representative budgets separately for rainfed cereal, irrigated horticulture and livestock enterprises, with crop calendars and marketable yields.",
+        "Reconcile Ministry administrative figures with National Statistics Office publications and FAOSTAT observations and source flags.",
+        "Map only validated values to the calculator schema and add independent test cases; keep all existing active country profiles and formulas unchanged."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract the complete Ministry 2024 crop tables and the underlying Asmara wholesale price series; seek regional farmgate quotations and current input/water/energy/labour budgets before calculating gross margins.",
+      "batch_22_review": {
+        "review_date": "2026-11-02",
+        "country_name": "Eritrea",
+        "administrative_regions": [
+          "Maekel",
+          "Debub",
+          "Gash Barka",
+          "Anseba",
+          "Semenawi Keyih Bahri",
+          "Debubawi Keyih Bahri"
+        ],
+        "administrative_source": "Proclamation No. 86/1996 establishing six regional administrations (Zobas); corroborated by country-of-origin and WHO sources.",
+        "key_evidence": "Ministry annual assessment published 7 February 2025 reports 2024 cereal cultivated area 414,000 ha, cereal harvest increase 138% year-on-year, oil crops 60,000 ha, pulses 38,000 ha, fruit output 67,000 tonnes from 4,800 ha and vegetable output 182,000 tonnes from 14,000 ha. A peer-reviewed 2025 study reports combined horticultural output in Dighe and Gala Nefhi and documents Asmara wholesale-price index methodology, not farmgate prices. FAO GIEWS on 30 September 2026 reports June-September rainfall 20-40% below average in Anseba, Debub, Maekel and Gash Barka, with expected crop shortfalls; this is a forecast/risk assessment, not final harvest data.",
+        "sources": [
+          "https://faolex.fao.org/docs/pdf/eri236766.pdf",
+          "https://www.government.nl/binaries/government/documenten/reports/2023/12/31/general-country-of-origin-information-report-on-eritrea-december-2023/General%2Bcountry%2Bof%2Borigin%2Binformation%2Breport%2Bon%2BEritrea%2BDecember%2B2023.pdf",
+          "https://shabait.com/2025/02/07/ministry-of-agriculture-2024-major-achievements/",
+          "https://link.springer.com/article/10.1007/s41976-025-00247-y",
+          "https://cb.apps.fao.org/country.jsp?code=ERI",
+          "https://www.ifad.org/en/w/countries/eritrea",
+          "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+          "https://data.fao.org/catalog/dataset/47c17894-8ca1-4bd0-ba4d-6078e919e9b1"
+        ],
+        "decision": "Keep Eritrea research-only and not_active. National aggregate outputs, programme examples, Asmara wholesale prices and forecast crop losses must not be treated as crop-specific farmgate yields/prices or farm budgets."
+      }
     },
     {
       "code": "SZ",
