@@ -348,7 +348,7 @@
       "code": "CF",
       "name": "Central African Republic",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "FAO_2026_seasonal_context_and_secondary_FAOSTAT_2024_crop_series_lead_identified_prefecture_budget_evidence_pending",
+      "existing_research_note": "FAO_GIEWS_2026_seasonal_crop_risk_and_FAOSTAT_2024_secondary_crop_series_FEWS_NET_Sep_2026_market_maize_prices_identified_prefecture_lookup_added_crop_specific_area_yield_and_costs_pending",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
@@ -361,8 +361,8 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "source_provenance_and_observation_date": "administrative_prefecture_and_2026_seasonal_context_sources_reviewed_2026_11_02_crop_and_cost_observation_provenance_pending",
+        "calculator_mapping_and_test_cases": "20_prefecture_lookup_added_mapping_and_tests_pending"
       },
       "blockers": [
         "Extract country-specific commodity observations from the cited primary sources.",
@@ -371,7 +371,37 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract official ICASEES/Ministry crop tables by prefecture, crop and season; reconcile FAOSTAT national totals and FAO seasonal reports; collect dated farmgate prices separately from FEWS NET market prices; obtain input quotations and regional enterprise budgets before mapping or tests.",
+      "batch_13_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "The prefecture selector contains 20 entries: 18 administrative prefectures, two economic prefectures and Bangui as the capital prefecture/commune in the commonly used 20-unit list. Do not confuse this with ICASEES's seven broad statistical/administrative regions published in its 2025 provisional census tables. Before joining historical crop records, confirm the current official prefecture coding and boundaries.",
+        "agricultural_evidence": [
+          "FAO GIEWS reference date 15 July 2026: 2026 maize planting was completed in central/southern areas under near-average planted area; harvest expected from mid-August. Northern millet/sorghum planting completed in early July; harvest expected from October. Conflict and displacement continue to restrict access to fields and inputs.",
+          "FEWS NET September 2026 update: August maize market prices were reported at 514 FCFA/kg in Birao and 257 FCFA/kg in Bangui. These are market prices, not farmgate quotations, and should not be inserted as farmgate values.",
+          "Secondary FAOSTAT/World Bank-derived series reports 2024 cereal production of 282,868 tonnes and yield of 788 kg/ha. This is a national cereal aggregate and must not be treated as crop-specific or prefecture-specific evidence."
+        ],
+        "sources": [
+          "https://www.icasees.org/index.php?q=statistiques&r=indicateurs",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=CF",
+          "https://fews.net/west-africa/central-african-republic/key-message-update/september-2026",
+          "https://data.worldbank.org/indicator/AG.PRD.CREL.MT?locations=A9",
+          "https://en.wikipedia.org/wiki/Subdivisions_of_the_Central_African_Republic"
+        ],
+        "regional_lookup": "20 prefecture-level entries added to src/_data/calculator/regions.json as lookup only. Two economic prefectures are included in the 20-unit list; Bangui is a special capital unit. Validate the official administrative code crosswalk before data joins.",
+        "blockers": [
+          "Obtain primary ICASEES/Ministry crop tables by prefecture, crop, season, area and production; derive yield only when area and production share matching definitions and years.",
+          "Reconcile the 20 prefecture list with ICASEES's seven broad regions and current boundary/coding instruments.",
+          "Obtain dated farmgate prices by commodity, grade, market and unit. Keep FEWS NET market prices labelled as market observations, not farmgate.",
+          "Obtain current seed, fertilizer, crop protection, irrigation/energy, labour and machinery costs.",
+          "Build regional enterprise budgets and mapping tests; account for security/access differences and do not use national cereal averages as local defaults."
+        ],
+        "safeguards": [
+          "No active calculator profile or formula changed.",
+          "No national cereal aggregate promoted to prefecture yield.",
+          "No market price relabelled as farmgate price.",
+          "Central African Republic remains research-only and not calculator-ready."
+        ]
+      }
     },
     {
       "code": "TD",
