@@ -22,7 +22,7 @@
   },
   "key_findings": [
     "Official government material confirms five decentralised regional collectivities and a separately governed Djibouti City.",
-    "The Ministry of Agriculture identifies livestock as a predominant rural activity, with approximately 90 percent nomadic; this is a livelihood-system context, not a quantified domestic herd dataset.",
+    "The Ministry of Agriculture identifies livestock as a predominant rural activity, with approximately 90 percent nomadic; this is context, not a quantified domestic herd dataset.",
     "Dikhil is identified by the government as a region with market-gardening activity.",
     "A historical 2019/2020 vegetable production aggregate of 9,896 tonnes is cited by a 2024 French Treasury note; it is not crop-specific and has no matching area/yield breakdown in the evidence reviewed.",
     "FAOSTAT crop and livestock annual series are available as a dataset route through 2024, but Djibouti observations, source flags and estimation status still require extraction.",
@@ -35,12 +35,12 @@
     "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_seedling_price_schedule",
     "fertilizer_and_soil_amendment_costs": "partial_historical_fertilizer_use_indicator_only_no_current_product_prices_or_application_costs",
     "crop_protection_costs": "blocked_no_current_crop_protection_product_prices_or_application_budgets",
-    "irrigation_water_and_energy_costs": "partial_irrigation_constraint_and_equipped_area_context_identified_but_local_water_pumping_energy_tariffs_and_crop_costs_unverified",
+    "irrigation_water_and_energy_costs": "partial_irrigation_context_identified_but_local_water_pumping_energy_tariffs_and_crop_costs_unverified",
     "labour_rates_and_operations": "blocked_no_current_region_and_operation_specific_wage_or_labour_days_schedule",
     "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_or_land_preparation_cost_schedule",
     "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_system_enterprise_budget_or_gross_margin",
     "currency_and_exchange_rate_method": "partial_DJF_currency_identified_local_currency_method_not_yet_documented_in_calculator",
-    "source_provenance_and_observation_date": "partial_official_geography_and_multiple_dated_secondary_official_sources_recorded_FAOSTAT_and_FEWS_NET_observation_extraction_pending",
+    "source_provenance_and_observation_date": "partial_official_geography_and_multiple_dated_sources_recorded_FAOSTAT_and_FEWS_NET_observation_extraction_pending",
     "calculator_mapping_and_test_cases": "blocked_no_validated_crop_cost_price_yield_dataset_to_map_or_country_test_cases"
   },
   "sources": [
@@ -60,5 +60,5 @@
     "No missing yield, price or cost was imputed.",
     "No merge or production deployment was performed."
   ],
-  "next_step": "Extract and validate FAOSTAT crop/livestock observations and FEWS NET weekly price records; obtain current region-specific farmgate prices and farmer-paid input/water/energy/labour costs before constructing enterprise budgets."
+  "next_step": "Extract and validate FAOSTAT crop/livestock observations and FEWS NET weekly price records; obtain current region-specific farmgate prices and farmer-paid input, water, energy and labour costs before constructing enterprise budgets."
 }
