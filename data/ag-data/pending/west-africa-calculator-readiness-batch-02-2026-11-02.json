@@ -1,0 +1,115 @@
+{
+  "title": "GoOrganicAfrica calculator readiness evidence batch 02",
+  "review_date": "2026-11-02",
+  "scope": "Follow-up source and variable-dictionary audit for Benin and Senegal. This batch records verified source structure and access limitations; it does not claim that raw microdata values have been extracted or that either country is calculator-ready.",
+  "countries": [
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "status": "metadata_and_variable_dictionary_verified_microdata_values_not_yet_extracted",
+      "survey": "EAA 2024-2025 / SEN_2024_2025_EAA_v01_M_v01_A_ESS",
+      "source_inventory": [
+        {
+          "file": "PARCELLE_P1_ano",
+          "cases": 15809,
+          "variables": 285,
+          "fields": [
+            "household ID",
+            "parcel ID",
+            "survey weight",
+            "region",
+            "agroecological zone",
+            "declared parcel area (ha)",
+            "principal crop"
+          ]
+        },
+        {
+          "file": "prodpluv_ano",
+          "cases": 10580,
+          "variables": 147,
+          "fields": [
+            "household ID",
+            "crop",
+            "survey weight",
+            "region",
+            "agroecological zone",
+            "harvested quantity",
+            "quantity sold",
+            "sale unit",
+            "average unit sale price",
+            "seed quantity and purchased seed price fields"
+          ]
+        },
+        {
+          "file": "base_intrant_ano",
+          "cases": 5191,
+          "variables": 15,
+          "fields": [
+            "input type",
+            "region",
+            "agroecological zone",
+            "quantity used",
+            "unit",
+            "quantity purchased",
+            "total amount paid",
+            "unit price paid"
+          ]
+        },
+        {
+          "file": "maindeouevrembauche_ano",
+          "cases": 1309,
+          "variables": 12,
+          "fields": [
+            "worker category",
+            "region",
+            "agroecological zone",
+            "number hired",
+            "days worked",
+            "hours per day",
+            "payment method",
+            "amount paid per person"
+          ]
+        }
+      ],
+      "interpretation": "Strong, directly relevant survey schema for crop output, parcel area, household crop sales, input prices and hired labour. Values still require authorised data access, weighted extraction, unit harmonisation and quality checks. Microdata not downloaded in this review.",
+      "sources": [
+        "https://microdata.fao.org/index.php/catalog/3089",
+        "https://microdata.fao.org/index.php/catalog/3089/data-dictionary/F3?file_name=PARCELLE_P1_ano",
+        "https://microdata.fao.org/index.php/catalog/3089/data-dictionary/F20?file_name=prodpluv_ano",
+        "https://microdata.fao.org/index.php/catalog/3089/data-dictionary/F6?file_name=base_intrant_ano",
+        "https://microdata.fao.org/index.php/catalog/3089/data-dictionary/F14?file_name=maindeouevrembauche_ano"
+      ],
+      "access_note": "The public catalogue and dictionaries are readable. The Get Microdata workflow/login is present; direct data-file access was not confirmed. Respect DAPSA confidentiality and access conditions."
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "status": "official_dataset_and_interactive_tables_identified_direct_portal_access_blocked",
+      "survey": "Enquête Statistique Agricole (ESA) 2024",
+      "source_inventory": [
+        {
+          "source": "FAO AGRISurvey Benin access-to-data page",
+          "finding": "Identifies ESA 2024 interactive statistical tables and links to Benin Open Data for Africa portal."
+        },
+        {
+          "source": "FAO ESA 2024 release notice",
+          "finding": "Confirms dataset release on 11 June 2026 and states that data include crop areas, production, yields, agricultural input use and harvest/post-harvest losses."
+        }
+      ],
+      "interpretation": "Primary survey exists and is directly relevant, but the linked Open Data for Africa portal returned HTTP 403 in this review. No crop-level numerical observations have been extracted; do not upgrade yield or input cost readiness based on the announcement alone.",
+      "sources": [
+        "https://www.fao.org/in-action/agrisurvey/access-to-data/benin/en",
+        "https://www.fao.org/in-action/agrisurvey/news/news-detail/benin-marks-a-milestone-with-its-first-agricultural-data-release-under-50x2030/en",
+        "https://benin.opendataforafrica.org/swdihif/jeux-de-donn%C3%A9es-et-m%C3%A9tadonn%C3%A9es"
+      ],
+      "access_note": "FAO landing page is accessible. The interactive data portal link returned 403 to the current inspection route; alternate export/API or DSA-provided tables must be obtained."
+    }
+  ],
+  "safeguards": [
+    "Do not treat a variable dictionary as extracted observations.",
+    "Do not redistribute confidential survey microdata.",
+    "Do not convert household unit sale price to national farmgate price without validating unit, crop, season and geography.",
+    "Do not activate either country or alter active calculator profiles/formulas."
+  ],
+  "next_batch": "Secure authorised Senegal data access and extract weighted regional indicators; obtain Benin ESA 2024 tables through a working export or official DSA channel."
+}
