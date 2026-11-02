@@ -1,0 +1,86 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator data completion — batch 01",
+  "review_date": "2026-11-02",
+  "countries": [
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "source_notes": "Benin ESA 2024 dataset was released 11 June 2026; survey includes crop area, production, yields and input-use indicators, but not yet a complete set of enterprise cost budgets. DSA reports 2023/24 output indicators for maize, rice, cassava and soybean. Official 2025 cereal output estimate is about 2.9 million tonnes; aggregate only, not a crop-specific calculator yield.",
+      "sources": [
+        "https://www.fao.org/in-action/agrisurvey/news/news-detail/benin-marks-a-milestone-with-its-first-agricultural-data-release-under-50x2030/en",
+        "https://dsa.agriculture.gouv.bj/",
+        "https://cb.apps.fao.org/country.jsp?code=BEN&lang=fr"
+      ],
+      "blockers": [
+        "Download and extract ESA 2024 crop-by-crop tables with area, output, yield, region and season.",
+        "Obtain dated farmgate prices by crop and department.",
+        "Obtain actual seed, fertilizer, crop protection, labour and machinery prices; ESA input-use indicators alone do not establish current unit costs.",
+        "Build and validate crop enterprise budgets."
+      ]
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "source_notes": "FAO reported official 2024 aggregate cereal production of 6.1 million tonnes, about 20% above the previous five-year average; localized production deficits and access constraints were noted in conflict-affected regions. FAO/50x2030 announced release of the 2024/25 Permanent Agricultural Survey and RGA phase-II horticulture/arboriculture modules on 15 October 2026. FAO GIEWS recorded May 2025 millet and sorghum wholesale price movements, which are historical wholesale observations, not current farmgate prices.",
+      "sources": [
+        "https://www.fao.org/in-action/agrisurvey/news/news-detail/burkina-faso-releases-new-survey-and-census-data-under-the-50x2030-initiative/en",
+        "https://www.fao.org/giews/countrybrief/country.jsp?code=BF"
+      ],
+      "blockers": [
+        "Extract EPA 2024/25 crop tables by crop, region, area and yield.",
+        "Extract RGA horticulture/tree crop modules where relevant.",
+        "Obtain current market-level and farmgate prices; do not reuse May 2025 wholesale movements as current prices.",
+        "Obtain regional input and labour quotations; conflict/access differences require regional segmentation.",
+        "Build crop budgets with explicit season and region."
+      ]
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire",
+      "source_notes": "Official government crop series gives 2024 output (thousand tonnes) for yams 7,660.9; cassava 8,485.7; plantain 2,465.2; sweet potato 63.1; taro 91.2. These are production totals only; matching area data is needed to calculate yields. Government reporting states the 2025/26 cocoa producer price is 2,800 FCFA/kg; keep this crop- and season-specific and do not generalize it to other commodities.",
+      "sources": [
+        "https://www.economie-ivoirienne.ci/activites-sectorielles/agriculture-vivriere.html",
+        "https://www.bilan.gouv.ci/actualite/19348"
+      ],
+      "blockers": [
+        "Extract matching crop-area series and calculate/check yields by crop.",
+        "Verify the cocoa producer-price effective dates, grade/quality conditions and payment basis before using.",
+        "Collect farmgate prices for other priority crops and current input quotations.",
+        "Build crop-specific budgets and regional assumptions."
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "source_notes": "Senegal released EAA 2024/25 data in June 2026. The annual survey covers all 14 regions and 45 departments. The 2024/25 Income, Labour and Productivity module captures input use and associated costs, alongside horticulture, livestock and fisheries/aquaculture. This is a strong source for building budgets, but the crop-level tables and microdata still need extraction and review.",
+      "sources": [
+        "https://www.fao.org/in-action/agrisurvey/news/news-detail/senegal-advances-agricultural-statistics-with-release-of-eaa-2024-25-data/en",
+        "https://agriculture.gouv.sn/"
+      ],
+      "blockers": [
+        "Download DAPSA data portal tables and ANADS microdata catalogue records.",
+        "Extract crop-season-area-production-yield by region/department.",
+        "Extract input and labour cost variables and inspect units/coverage.",
+        "Collect dated farmgate prices and machinery/irrigation costs where not covered.",
+        "Build regionally representative enterprise budgets."
+      ]
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "source_notes": "FAO GIEWS reports 2025 aggregate cereal production of nearly 1.7 million tonnes, about 15% above the previous five-year average. In 2026, agricultural labour costs in conflict-affected Savanes reportedly rose 10–20% versus the previous season; this is a regional labour-cost signal, not a national wage schedule. The 2026 Togo yearbook provides sector context, but detailed crop-level budget tables still need extraction.",
+      "sources": [
+        "https://cb.apps.fao.org/country.jsp?code=TGO",
+        "https://embed-rech-01.dialog.cm/ldmev/docs/yearbook_togo_2026"
+      ],
+      "blockers": [
+        "Extract crop-level area, production and yield tables from the national statistical portal/yearbook.",
+        "Obtain current market and farmgate price series with market/date/unit.",
+        "Verify regional labour costs, especially Savanes, with dated source and operation basis.",
+        "Obtain current input, machinery and irrigation costs and construct crop budgets."
+      ]
+    }
+  ],
+  "interpretation": "This batch identifies official source material and specific extraction tasks. None of these five countries is certified calculator-ready. Production totals are not yields unless corresponding crop area and season definitions are available. Wholesale/consumer prices are not farmgate prices. Aggregate national production is not a substitute for enterprise budgets.",
+  "next_batch": "Extract the released Benin ESA 2024 and Senegal EAA 2024/25 tables first; these provide the clearest structured route to crop and input-cost observations. Then obtain Burkina EPA 2024/25 tables and continue with the remaining country register."
+}
