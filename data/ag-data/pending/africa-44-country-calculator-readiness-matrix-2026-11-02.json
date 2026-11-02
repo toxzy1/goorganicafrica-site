@@ -1009,7 +1009,7 @@
       "existing_research_note": "official_ministry_reported_autumn_2025_rice_production_area_and_yield_added_full_budget_evidence_pending",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_2025_autumn_rice_national_and_three_wilaya_observations_reported_primary_ministry_table_verification_and_other_crop_tables_pending",
         "dated_local_farmgate_prices_and_units": "not_yet_audited",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
@@ -1019,8 +1019,8 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "source_provenance_and_observation_date": "DGAT_15_wilaya_geography_verified_and_2025_rice_ministry_figures_reported_2026_01_28_primary_table_verification_pending",
+        "calculator_mapping_and_test_cases": "15_wilaya_lookup_added_mapping_and_tests_pending"
       },
       "blockers": [
         "Extract country-specific commodity observations from the cited primary sources.",
@@ -1029,7 +1029,19 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Verify the Ministry of Agriculture original 2025 autumn rice tables; extract crop-by-wilaya and season data, then obtain dated wilaya farmgate prices and input quotations before building budgets.",
+      "batch_11_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "The Interior Ministry DGAT portal reports 15 administrative wilayas and 63 moughataas. A separate decentralisation framework describes 13 elected local-government regions; this is a different unit, so the calculator lookup uses 15 administrative wilayas. A 28 January 2026 publication reproducing Ministry of Agriculture figures reports 2025 autumn rice output of 229353 tonnes, area 48800 ha and yield 4.70 t/ha, with regional figures only for Trarza, Gorgol and Brakna. Treat these as reported ministry figures pending the original ministry table.",
+        "sources": [
+          "https://dgat.interieur.gov.mr/",
+          "https://ansade.mr/databases/wilaya",
+          "https://fr.madar.mr/actualites/augmentation-de-la-production-de-la-campagne-agricole-dautomne-2025-de-27-par-rapport-a-la-saison-precedente/",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=MR",
+          "https://akademiya2063.org/publications/AAgWa%20Crop%20Production%20Forecasts/AAgWa%20Crop%20Production%20Forecasts%20Series%20No.%20118%20Mauritania%20-%20Rice.pdf"
+        ],
+        "regional_lookup": "15 administrative wilayas added to src/_data/calculator/regions.json; lookup only, country remains inactive."
+      }
     },
     {
       "code": "MU",
