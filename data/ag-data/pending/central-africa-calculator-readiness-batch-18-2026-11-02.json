@@ -1,0 +1,86 @@
+{
+  "title": "GoOrganicAfrica Equatorial Guinea calculator readiness review — Batch 18",
+  "batch": 18,
+  "country": "Equatorial Guinea",
+  "country_code": "GQ",
+  "review_date": "2026-11-02",
+  "status": "research_only_not_calculator_ready",
+  "sources": [
+    {
+      "name": "INEGE Statistical Yearbook of Equatorial Guinea 2026",
+      "url": "https://inege.org/?etn=statistical-yearbook-of-equatorial-guinea-2026&lang=en",
+      "publication_date": "2026-09-25",
+      "use": "Official yearbook source inventory; data updated through December 2025; selected disaggregation by region/province/district."
+    },
+    {
+      "name": "INEGE 2026 yearbook release",
+      "url": "https://inege.org/?lang=en&p=17926",
+      "publication_date": "2026-09-25",
+      "use": "Official release summary reports 2.5% cocoa production growth in 2024/2025."
+    },
+    {
+      "name": "UK Permanent Committee on Geographical Names, Equatorial Guinea Toponymic Factfile",
+      "url": "https://www.ecoi.net/en/file/local/2136414/Equatorial_Guinea_Toponymic_Factfile.pdf",
+      "publication_date": "2026",
+      "use": "Official 2026 toponymic factfile confirms two regions and eight first-order provinces."
+    },
+    {
+      "name": "FAOSTAT Crops and livestock products",
+      "url": "https://www.fao.org/faostat/en/#data/QCL",
+      "use": "Primary international dataset identified for crop-level extraction; raw country export still required."
+    }
+  ],
+  "administrative_geography": {
+    "regions": [
+      "Región Continental",
+      "Región Insular"
+    ],
+    "first_order_provinces": [
+      "Annobón",
+      "Bioko Norte",
+      "Bioko Sur",
+      "Centro Sur",
+      "Djibloho",
+      "Kié-Ntem",
+      "Litoral",
+      "Wele-Nzas"
+    ],
+    "selector_added": true,
+    "selector_level": "province",
+    "note": "Do not mix districts into the province selector."
+  },
+  "evidence_findings": [
+    "INEGE's 2026 Statistical Yearbook was released on 25 September 2026 and contains data updated through December 2025.",
+    "The yearbook covers agriculture, prices and wages and states that selected indicators are disaggregated by region, province and district; numeric crop tables were not extracted in this batch.",
+    "INEGE reports cocoa production growth of 2.5% in 2024/2025. This is a growth rate only and must not be treated as an absolute production quantity, yield or farmgate price.",
+    "The official 2026 toponymic factfile confirms two regions and eight first-order provinces."
+  ],
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial — current official yearbook identified, numeric crop tables not extracted",
+    "dated_local_farmgate_prices_and_units": "blocked — no validated dated farmgate series",
+    "seed_and_planting_material_costs": "blocked — no provincial quotations",
+    "fertilizer_and_soil_amendment_costs": "blocked — no provincial quotations",
+    "crop_protection_costs": "blocked — no provincial quotations",
+    "irrigation_water_and_energy_costs": "blocked — no provincial cost schedule",
+    "labour_rates_and_operations": "blocked — no validated farm-operation wage schedule",
+    "machinery_and_land_preparation_costs": "blocked — no provincial quotations",
+    "regional_enterprise_budget_and_gross_margin": "blocked — no complete regional enterprise budgets",
+    "currency_and_exchange_rate_method": "partial — XAF identified, calculator conversion/rounding method not validated",
+    "source_provenance_and_observation_date": "partial — official source dates recorded; underlying crop observations still need extraction",
+    "calculator_mapping_and_test_cases": "blocked — no validated data mapping or country test cases"
+  },
+  "blockers": [
+    "Extract and validate crop-specific area, production and yield tables from the 2026 INEGE yearbook and raw FAOSTAT; record year, season, unit, geography and observation status.",
+    "Obtain dated local farmgate prices for priority crops; do not substitute consumer-market or wholesale prices.",
+    "Obtain farmer-facing seed, fertilizer, crop-protection, irrigation, labour, machinery and land-preparation quotations by relevant province.",
+    "Build and validate regional enterprise budgets and gross margins using documented local operations and costs.",
+    "Define the XAF currency and exchange-rate method, map validated values to the existing calculator schema, and add test cases."
+  ],
+  "safeguards": [
+    "No activation of GQ calculator profile.",
+    "No changes to the 10 existing active country profiles or calculator formulas.",
+    "No invented crop yields, prices, input costs or enterprise budgets.",
+    "No merge or production deployment."
+  ],
+  "next_step": "Extract the agriculture tables from the 2026 INEGE yearbook and the raw FAOSTAT export, then source dated farmgate prices and provincial input-cost evidence."
+}
