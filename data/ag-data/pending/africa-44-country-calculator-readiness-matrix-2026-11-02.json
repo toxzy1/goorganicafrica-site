@@ -577,30 +577,64 @@
       "code": "DJ",
       "name": "Djibouti",
       "evidence_file": "data/ag-data/pending/djibouti-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "World_Bank_2026_AgriConnect_USDA_FAS_Oct_2026_IPC_2026_FEWS_NET_weekly_market_price_dataset_FAO_GIEWS_and_ministry_indicators_recorded_current_farmgate_prices_and_enterprise_budgets_missing",
+      "existing_research_note": "official_five_region_geography_verified_2026_ministry_and_INSD_sources_identified_historical_2019_2020_vegetable_output_and_FAOSTAT_catalogue_available_but_current_crop_yields_farmgate_prices_input_costs_and_enterprise_budgets_missing",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial_historical_aggregate_vegetable_output_and_FAOSTAT_series_catalogued_crop_level_area_yield_extraction_pending",
+        "dated_local_farmgate_prices_and_units": "blocked_FEWS_NET_staple_market_dataset_not_yet_extracted_and_no_verified_farmgate_series",
+        "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_seedling_price_schedule",
+        "fertilizer_and_soil_amendment_costs": "partial_historical_fertilizer_use_indicator_only_no_current_product_prices_or_application_costs",
+        "crop_protection_costs": "blocked_no_current_crop_protection_product_prices_or_application_budgets",
+        "irrigation_water_and_energy_costs": "partial_irrigation_constraint_and_equipped_area_context_identified_but_local_water_pumping_energy_tariffs_and_crop_costs_unverified",
+        "labour_rates_and_operations": "blocked_no_current_region_and_operation_specific_wage_or_labour_days_schedule",
+        "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_or_land_preparation_cost_schedule",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_system_enterprise_budget_or_gross_margin",
+        "currency_and_exchange_rate_method": "partial_DJF_currency_identified_local_currency_method_not_yet_documented_in_calculator",
+        "source_provenance_and_observation_date": "partial_official_geography_and_multiple_dated_secondary_official_sources_recorded_FAOSTAT_and_FEWS_NET_observation_extraction_pending",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_crop_cost_price_yield_dataset_to_map_or_country_test_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract Djibouti crop and livestock series from FAOSTAT through 2024, preserving source flags, units, estimation status and commodity definitions.",
+        "Obtain current region- and crop-specific area, production, harvested area and yield observations; the historical 2019/2020 vegetable aggregate is not sufficient.",
+        "Download and inspect FEWS NET weekly staple-price files; classify every observation by market, date, commodity, unit and retail/wholesale/farm-gate basis. Obtain actual producer prices separately.",
+        "Obtain farmer-paid seed, fertilizer, crop-protection, irrigation water, pumping energy, labour, machinery, packaging, cooling and transport costs.",
+        "Build distinct budgets for irrigated open-field horticulture, protected cultivation and relevant livestock systems; validate water and salinity assumptions by location.",
+        "Document DJF handling, map only validated data to the calculator schema and add independently checked test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract and validate FAOSTAT crop/livestock observations and FEWS NET price records; seek Ministry/INSD regional farm survey and input-cost tables before preparing any enterprise budget.",
+      "batch_21_review": {
+        "review_date": "2026-11-02",
+        "country_name": "Djibouti",
+        "region_selector": "Five official decentralised regions: Ali Sabieh, Dikhil, Tadjourah, Obock and Arta. Djibouti City has a separate statutory status and is not counted as a sixth region.",
+        "evidence_summary": "The existing evidence file records World Bank AgriConnect (Oct 2026), USDA FAS market snapshot (20 Oct 2026), IPC 2026, FEWS NET weekly staple-price dataset, FAO GIEWS (9 Jul 2025), a French Treasury agricultural-sector note (12 Aug 2024), ministry programme indicators and the FAOSTAT crop/livestock dataset catalogue. Historical vegetable output of 9,896 tonnes is cited for 2019/2020; it is an aggregate and does not provide crop-level area or yield. A historical fertilizer-use estimate is not a current price or cost. Ministry sources describe livestock as a predominant rural activity, with about 90% nomadic, while horticulture is important in Dikhil. Current crop-level regional observations, farmgate prices and enterprise budgets remain unverified.",
+        "sources": [
+          "https://www.egouv.dj/page/regions",
+          "https://maepe-rh.dj/",
+          "https://instad.dj/",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=DJI",
+          "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876",
+          "https://fews.net/djibouti-weekly-fews-net-staple-food-price-data",
+          "https://www.ministere-finances.dj/statistiques/AS/Statis/Annuaire/notep.htm",
+          "https://futures.issafrica.org/geographic/countries/djibouti/",
+          "https://fas-prod.azureedge.us/data/gain/2026/10/djibouti-djibouti-food-and-agricultural-market-snapshot"
+        ],
+        "criterion_findings": {
+          "crop_area_production_yield_by_commodity_and_season": "partial: historical national vegetable aggregate and FAOSTAT catalogue identified; no current crop-by-region series extracted.",
+          "dated_local_farmgate_prices_and_units": "blocked: FEWS NET has a downloadable weekly staple market-price series, but it has not been extracted and is not automatically farmgate data.",
+          "seed_and_planting_material_costs": "blocked: no current farmer-paid seed or seedling prices verified.",
+          "fertilizer_and_soil_amendment_costs": "partial: historical use estimate only; no current prices or application budgets.",
+          "crop_protection_costs": "blocked: no current crop protection prices or application budgets verified.",
+          "irrigation_water_and_energy_costs": "partial: water scarcity and irrigation context documented; current water/pumping/electricity costs unverified.",
+          "labour_rates_and_operations": "blocked: no current operation-specific regional wage schedule verified.",
+          "machinery_and_land_preparation_costs": "blocked: no current hire-rate schedule verified.",
+          "regional_enterprise_budget_and_gross_margin": "blocked: no complete validated regional enterprise budget located.",
+          "currency_and_exchange_rate_method": "partial: DJF identified; calculator conversion/rounding treatment not documented.",
+          "source_provenance_and_observation_date": "partial: several dated sources recorded; direct extraction of key datasets and flags remains pending.",
+          "calculator_mapping_and_test_cases": "blocked: no validated data package to map or test."
+        },
+        "administrative_note": "The government source lists five decentralised regional collectivities. Djibouti City is governed under a distinct statutory status and has three communes; it is intentionally excluded from the five-region agricultural selector.",
+        "decision": "Keep DJ research-only and not_active. Do not use illustrative greenhouse/open-field tomato potential yields, port livestock transit throughput, consumer prices or aggregate national output as calculator inputs."
+      }
     },
     {
       "code": "EG",
