@@ -176,5 +176,64 @@
     "The 10 active calculator profiles and calculator formulas remain untouched.",
     "Neither Benin nor Senegal is certified calculator-ready."
   ],
-  "next_batch": "Extract regional tables from Benin ESA 2024 and Senegal EAA 2024-2025 public interactive tables; obtain unit conversion tables; then continue with country-by-country regional price and input-cost validation."
+  "next_batch": "Extract regional tables from Benin ESA 2024 and Senegal EAA 2024-2025 public interactive tables; obtain unit conversion tables; then continue with country-by-country regional price and input-cost validation.",
+  "regional_lookup_integration": {
+    "status": "two_country_region_lists_added_to_calculator_region_registry_on_readiness_branch_only",
+    "file": "src/_data/calculator/regions.json",
+    "countries": [
+      {
+        "code": "BJ",
+        "level": "department",
+        "count": 12,
+        "names": [
+          "Alibori",
+          "Atacora",
+          "Atlantique",
+          "Borgou",
+          "Collines",
+          "Couffo",
+          "Donga",
+          "Littoral",
+          "Mono",
+          "Ouémé",
+          "Plateau",
+          "Zou"
+        ],
+        "sources": [
+          "https://sig-ssrd.gouv.bj/inscription/getdepartement",
+          "https://benin.bj/en"
+        ]
+      },
+      {
+        "code": "SN",
+        "level": "region",
+        "count": 14,
+        "names": [
+          "Dakar",
+          "Diourbel",
+          "Fatick",
+          "Kaffrine",
+          "Kaolack",
+          "Kédougou",
+          "Kolda",
+          "Louga",
+          "Matam",
+          "Saint-Louis",
+          "Sédhiou",
+          "Tambacounda",
+          "Thiès",
+          "Ziguinchor"
+        ],
+        "sources": [
+          "https://www.vie-publique.sn/collectivites-territoriales/regions",
+          "https://www.archives.sn/docs/elections/decret-2021-689-ressort-territorial-chef-lieu-regions-departements-arrondissements-senegal"
+        ]
+      }
+    ],
+    "safeguards": [
+      "Region lists are lookup geography only; no country activation, crop price, yield, cost or profit values are implied.",
+      "Benin's first-level divisions are departments; Senegal's are regions. Preserve the official administrative level names.",
+      "Changes remain on data/44-country-calculator-readiness and are not merged or deployed."
+    ]
+  }
 }
