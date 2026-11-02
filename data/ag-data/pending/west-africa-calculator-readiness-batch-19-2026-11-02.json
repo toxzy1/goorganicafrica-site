@@ -1,0 +1,75 @@
+{
+  "title": "GoOrganicAfrica Cabo Verde calculator readiness review — Batch 19",
+  "batch": 19,
+  "country": "Cabo Verde",
+  "country_code": "CV",
+  "review_date": "2026-11-02",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "selector_level": "municipality (concelho)",
+    "count": 22,
+    "municipalities": [
+      "Boa Vista",
+      "Brava",
+      "Maio",
+      "Mosteiros",
+      "Paul",
+      "Porto Novo",
+      "Praia",
+      "Ribeira Brava",
+      "Ribeira Grande",
+      "Ribeira Grande de Santiago",
+      "Sal",
+      "Santa Catarina",
+      "Santa Catarina do Fogo",
+      "Santa Cruz",
+      "São Domingos",
+      "São Filipe",
+      "São Lourenço dos Órgãos",
+      "São Miguel",
+      "São Salvador do Mundo",
+      "São Vicente",
+      "Tarrafal",
+      "Tarrafal de São Nicolau"
+    ],
+    "source": "https://webgis10.ine.cv/arcgisinecv/rest/services/INECV_GEODATA/RGPH2021_INDICADORES_GERAIS_POPULACAO_CONCELHO/MapServer/3",
+    "note": "Official INE GIS service identifies the CONCELHOS feature layer and Concelho field."
+  },
+  "evidence_findings": [
+    "FAO GIEWS country brief reference date 19 January 2026 gives a preliminary 2025 maize production estimate of about 1,100 tonnes, nearly 40% below the already low previous five-year average. The brief provides no matching harvested-area denominator.",
+    "FAO reports local maize retail prices rose by up to 5% from October to December 2025. This is a retail price movement, not an absolute price or farmgate observation.",
+    "Resolution 88/2025 establishes the VI General Agricultural Census for 2025–2026; final numeric tables were not located during this review.",
+    "FAO AGRISurvey identifies a 2024 farm income, labour and productivity module and a 2025 production methods and environment module; their tabulations/microdata still require retrieval and review.",
+    "Resolution 106/2026 approves a greenhouse support programme with 75% subsidy and a CVE 900,000 per-farmer ceiling. This is policy support, not a market price or actual farm cost.",
+    "The INE official GIS service confirms a municipality-level CONCELHOS layer; 22 municipalities are listed for regional selection."
+  ],
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial — historic 2022 estimates and preliminary 2025 maize production; no matched area/yield or final census tables",
+    "dated_local_farmgate_prices_and_units": "blocked — retail price movement only; no dated farmgate price levels",
+    "seed_and_planting_material_costs": "blocked — no current farmer-paid quotations",
+    "fertilizer_and_soil_amendment_costs": "blocked — no current farmer-paid quotations",
+    "crop_protection_costs": "blocked — no current farmer-paid quotations",
+    "irrigation_water_and_energy_costs": "blocked — no municipality-specific tariffs or farm costs",
+    "labour_rates_and_operations": "partial — FAO ILP survey module identified; numeric wage/operation data not extracted",
+    "machinery_and_land_preparation_costs": "blocked — no farmer-paid quotations",
+    "regional_enterprise_budget_and_gross_margin": "blocked — no complete municipality-level enterprise budgets",
+    "currency_and_exchange_rate_method": "partial — CVE currency known; calculator conversion and rounding not validated",
+    "source_provenance_and_observation_date": "partial — official source dates and preliminary status recorded; primary census tables outstanding",
+    "calculator_mapping_and_test_cases": "blocked — no validated calculator mapping or country tests"
+  },
+  "blockers": [
+    "Extract final VI RGA 2025/2026 municipality-level crop/season area, production and yield tables, including methods, units and observation dates.",
+    "Obtain publicly released or authorised 2024 ILP and 2025 PME survey tables for farm income, labour, productivity, production methods and input use.",
+    "Resolve the preliminary 2025 maize estimate against final national observations and raw FAOSTAT series; do not derive yield without matching harvested area.",
+    "Obtain dated municipality/island-level farmgate prices for calculator commodities; retail prices and percentage movements are not producer prices.",
+    "Obtain current farmer-paid seed, fertilizer, crop-protection, labour, irrigation water, pumping energy, machinery, packaging and inter-island transport costs.",
+    "Build separate, documented enterprise budgets for rainfed and irrigated systems, then map validated values and add calculator tests."
+  ],
+  "safeguards": [
+    "CV remains research-only and not active.",
+    "Do not modify the 10 active profiles or calculator formulas.",
+    "Do not treat retail prices, subsidy ceilings or national production totals as farmgate prices, input costs or crop yields.",
+    "No merge or production deployment."
+  ],
+  "next_step": "Request the final VI RGA 2025/2026 results and AGRISurvey tables from INE/MAA, then extract municipality-level crop, input-use and labour observations before building farm budgets."
+}
