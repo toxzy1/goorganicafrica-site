@@ -1,0 +1,27 @@
+{
+  "title": "Sierra Leone administrative geography review",
+  "country_code": "SL",
+  "country_name": "Sierra Leone",
+  "review_date": "2026-11-02",
+  "status": "research_only_not_calculator_ready",
+  "first_level_regions": ["Eastern", "Northern", "North Western", "Southern", "Western Area"],
+  "geography_note": "The five broad administrative regions are used for the region lookup. The Electoral Commission's electoral geography splits Western Area into Western Rural and Western Urban; these electoral units are not mixed into the broad administrative region list. The reported 2026 gazetting of Bandajuma and Kpanguima creates district-level changes, not new first-level regions. Boundary crosswalks remain necessary.",
+  "sources": [
+    "https://molhcp.gov.sl/",
+    "https://ons.gov.sl/wp-content/uploads/2024/08/FINAL_NSPS_REVISED_VERSION_2024-3-2.pdf",
+    "https://ec.gov.sl/regions-2/",
+    "https://www.sierraleonemonitor.com/government-creates-new-districts-councils/"
+  ],
+  "lookup_change": "Five broad administrative regions added to src/_data/calculator/regions.json on data/44-country-calculator-readiness. Lookup only; not activated.",
+  "readiness_gaps": [
+    "Reconcile the 2025 MAFS crop-cutting ecology and district observations, including the national rice output-to-area ratio.",
+    "Verify the 2026 Gazette text and authoritative boundaries for Bandajuma and Kpanguima before district-level crosswalks.",
+    "Obtain dated regional farmgate prices and current seed, fertilizer, crop protection, irrigation, labour and machinery costs.",
+    "Build region-specific enterprise budgets, currency handling, calculator mapping and tests."
+  ],
+  "safeguards": [
+    "No invented values.",
+    "No active calculator profile or formula changed.",
+    "Country remains inactive until all readiness criteria pass."
+  ]
+}
