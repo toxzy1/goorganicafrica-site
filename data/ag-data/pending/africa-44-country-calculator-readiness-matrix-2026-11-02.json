@@ -377,7 +377,7 @@
       "code": "TD",
       "name": "Chad",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "FAO_2026_outlook_and_FEWS_NET_2010_2023_crop_archive_methodology_identified_current_crop_specific_extract_pending",
+      "existing_research_note": "FAO_GIEWS_2025_cereal_output_about_3m_tonnes_and_2026_uncertain_crop_outlook_SESRIC_2024_cereal_area_production_yield_aggregate_FEWS_NET_INSEED_2010_2023_crop_archive_identified_province_lookup_added_crop_specific_cost_extraction_pending",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
@@ -390,8 +390,8 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "source_provenance_and_observation_date": "administrative_geography_and_national_context_sources_reviewed_2026_11_02_crop_and_cost_observation_provenance_pending",
+        "calculator_mapping_and_test_cases": "23_province_lookup_added_mapping_and_tests_pending"
       },
       "blockers": [
         "Extract country-specific commodity observations from the cited primary sources.",
@@ -400,7 +400,34 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract INSEED crop archive by crop/year/province; reconcile official crop survey tables with FAO and SESRIC aggregates; obtain dated provincial farmgate prices, input quotations and operation costs; then construct and test regional enterprise budgets.",
+      "batch_12_review": {
+        "review_date": "2026-11-02",
+        "administrative_geography": "23 province-level entries added as a regional selector only. The dataset lists 23 provinces and distinguishes 70 departments and 348 sub-prefectures; do not mix lower administrative levels into the province selector.",
+        "source_notes": [
+          "The Presidency of Chad describes the country as having 23 administrative regions/provinces. A current administrative-divisions dataset lists 23 provinces, 70 departments and 348 sub-prefectures. Older and alternative spellings/names require a formal crosswalk before linking historical crop observations.",
+          "FEWS NET identifies the INSEED-linked Chad Data Portal as the operational source for crop statistics archive covering 2010–2023; detailed crop/province values still need extraction.",
+          "FAO GIEWS (reference date 7 September 2026) estimates 2025 aggregate cereal production at about 3 million tonnes, around 10% above the previous five-year average. It reports uncertain 2026 crop prospects following irregular rainfall, dry spells and poor vegetation in several provinces.",
+          "SESRIC reports 2024 national cereal harvested area of 3,276,392 ha, production of 2,709,156 tonnes and yield of 826.90 kg/ha. This is an aggregate cross-source indicator, not a crop-by-province yield table and not a farmgate price."
+        ],
+        "sources": [
+          "https://presidencetchad.org/tchad/geographie/",
+          "https://openadmindata.org/td/",
+          "https://github.com/open-admin-data/chad-administrative-divisions",
+          "https://devhelp.fews.net/fde/v1/chad-tchad-country-book",
+          "https://cb.apps.fao.org/country.jsp?code=TCD",
+          "https://www.sesric.org/cif.php?c_code=13",
+          "https://chadembassy.in/provinces-to-explore/"
+        ],
+        "regional_lookup": "23 province names added to src/_data/calculator/regions.json as lookup only; Chad remains not_active.",
+        "blockers": [
+          "Extract and validate crop-specific area, production and yield by province and season from the INSEED-linked 2010–2023 archive and official survey tables.",
+          "Crosswalk legacy province/region names and boundaries to the current 23-province structure; resolve Sila/Dar Sila naming and spelling variants before spatial joins.",
+          "Obtain dated provincial farmgate prices with commodity, market, grade, unit and observation date.",
+          "Obtain farmer-facing seed, fertilizer, crop-protection, irrigation/energy, labour and machinery costs.",
+          "Build regional enterprise budgets and calculator mappings with test cases; do not use national cereal averages as province-level defaults."
+        ]
+      }
     },
     {
       "code": "KM",
