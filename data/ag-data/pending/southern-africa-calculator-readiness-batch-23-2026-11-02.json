@@ -1,0 +1,65 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — Batch 23: Eswatini",
+  "country": {
+    "name": "Eswatini",
+    "iso_alpha2": "SZ",
+    "iso_alpha3": "SWZ"
+  },
+  "review_date": "2026-11-02",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "verified_regions": [
+      "Hhohho",
+      "Manzini",
+      "Shiselweni",
+      "Lubombo"
+    ],
+    "first_level_unit": "Administrative region",
+    "lower_levels": "Tinkhundla centres and chiefdoms are lower levels and are excluded from the first-level selector.",
+    "source": "https://www.gov.sz/index.php/departments-sp-1832997396/regional-administration",
+    "selector_added": true
+  },
+  "key_findings": [
+    "The Government of Eswatini confirms four first-level administrative regions: Hhohho, Manzini, Shiselweni and Lubombo. The region lookup now contains these four names; lower-level Tinkhundla and chiefdoms are not mixed into the selector.",
+    "The Ministry of Agriculture's 2024 National Agricultural Preharvest Assessment reports 2023/24 production estimates for six listed food crops: maize 74,946.55 tonnes, sweet potato 2,276.46 tonnes, sorghum 55.43 tonnes, beans 377.98 tonnes, groundnuts 147.19 tonnes and cowpeas 53.49 tonnes. It reports maize planted area of 68,081 ha and average yield of 1.10 t/ha. The crop totals are national and the assessment is pre-harvest; full region-by-crop harvested-area and yield tables remain necessary.",
+    "FAO GIEWS, reference date 25 August 2026, estimates 2026 maize production at about 70,000 tonnes, approximately 6 percent below 2025. It attributes reduced output to irregular and heavy rainfall, including waterlogging, despite increased planted area. This is a current estimate, not a final audited crop survey.",
+    "The World Bank's 20 June 2025 Agriculture Sector Review contains modelled gross-margin and per-hectare cost components for maize, carrot and cabbage, plus dairy enterprise benchmarks. These can inform a validation exercise but are historical/modelled estimates, not current local quotations or guaranteed returns.",
+    "The IMF statistical metadata describes annual agricultural production and price compilation and distinguishes commercial Individual Tenure Farms from Swazi Nation Land. It also warns that some minor-crop price values are imputed from CPI after margin adjustments; such values must not be treated as observed farmgate prices.",
+    "A WFP-derived public market dashboard reports retail food prices for August 2026 across four markets in three regions. Retail prices are not farmgate prices and are not suitable as calculator crop revenue assumptions.",
+    "Eswatini's lilangeni (SZL) is pegged at par with the South African rand (ZAR), but calculator rounding and historical conversion conventions still need to be documented."
+  ],
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_2023_24_ministry_six_crop_output_and_maize_area_yield_plus_FAO_2026_maize_estimate_recorded_other_crop_area_and_region_level_series_missing",
+    "dated_local_farmgate_prices_and_units": "blocked_WFP_derived_market_dashboard_is_retail_and_no_current_verified_crop_region_farmgate_series",
+    "seed_and_planting_material_costs": "blocked_World_Bank_historical_maize_seed_model_cost_is_not_a_current_farmer_paid_quotation_or_regional_schedule",
+    "fertilizer_and_soil_amendment_costs": "partial_World_Bank_modelled_maize_and_cabbage_cost_components_and_ministry_input_affordability_context_available_current_product_prices_and_application_rates_missing",
+    "crop_protection_costs": "partial_World_Bank_modelled_chemical_cost_components_available_current_product_prices_and_crop_specific_application_budgets_missing",
+    "irrigation_water_and_energy_costs": "partial_World_Bank_modelled_maize_irrigation_cost_available_current_region_tariffs_pumping_energy_and_water_charges_missing",
+    "labour_rates_and_operations": "partial_World_Bank_modelled_maize_and_cabbage_labour_costs_available_current_wage_rates_and_operation_days_missing",
+    "machinery_and_land_preparation_costs": "partial_World_Bank_modelled land_preparation_costs_available_current_machine_hire_tariffs_and_region_specific_rates_missing",
+    "regional_enterprise_budget_and_gross_margin": "partial_World_Bank_maize_vegetable_and_dairy_modelled_benchmarks_available_not_validated_as_current_region_specific_enterprise_budgets",
+    "currency_and_exchange_rate_method": "partial_SZL_lilangeni_identified_and_pegged_at_par_to_ZAR_but_calculator_rounding_and_historical_conversion_method_not_specified",
+    "source_provenance_and_observation_date": "partial_ministry_2024_preharvest_report_FAO_2026_GIEWS_World_Bank_2025_review_and_government_geography_sources_recorded",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_region_crop_price_cost_dataset_or_calculator_test_cases"
+  },
+  "sources": [
+    "https://www.gov.sz/index.php/departments-sp-1832997396/regional-administration",
+    "https://gov.sz/index.php/history",
+    "https://agrinfosystems.gov.sz/assets/uploadsPre-Harvest_Crop%20Assessment%20Report.pdf",
+    "https://cb.apps.fao.org/country.jsp?code=SWZ",
+    "https://documents1.worldbank.org/curated/en/099062525124012924/pdf/P507872-a15768e4-a0d1-4b49-9da3-7525ede05d57.pdf",
+    "https://dsbb.imf.org/egdds/dqaf-base/country/SWZ/category/NAG00",
+    "https://shelfpedia.com/en-sz/market-prices/",
+    "https://www.gov.sz/images/FinanceDocuments/2026BudgetSpeech.pdf"
+  ],
+  "safeguards": [
+    "Eswatini remains not_active.",
+    "No existing active country profile or calculator formula was changed.",
+    "The four official first-level regions were added only to the separate region lookup.",
+    "National crop totals and modelled gross-margin estimates were not converted into region-specific calculator inputs.",
+    "Retail and wholesale market prices were not relabelled as farmgate prices.",
+    "No merge or production deployment was performed."
+  ],
+  "next_step": "Obtain the final 2025/26 crop production tables with four-region breakdowns, current dated farmgate prices, farmer-paid input quotations and validated region-specific enterprise budgets before calculator mapping or test cases."
+}
