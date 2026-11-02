@@ -1,0 +1,92 @@
+{
+  "title": "GoOrganicAfrica readiness batch 09 - Liberia and The Gambia administrative geography",
+  "review_date": "2026-11-02",
+  "scope": "Current first-level administrative geography verification only. No country is certified calculator-ready.",
+  "countries": [
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "administrative_geography": {
+        "level": "county",
+        "count": 15,
+        "names": [
+          "Bomi",
+          "Bong",
+          "Gbarpolu",
+          "Grand Bassa",
+          "Grand Cape Mount",
+          "Grand Gedeh",
+          "Grand Kru",
+          "Lofa",
+          "Margibi",
+          "Maryland",
+          "Montserrado",
+          "Nimba",
+          "River Gee",
+          "Rivercess",
+          "Sinoe"
+        ],
+        "sources": [
+          "https://www.mlg.gov.lr/general/overview-liberia",
+          "https://governancecommission.org/pg_img/Local%20Government%20Act%20%28LGA%29.pdf",
+          "https://rimap.unhcr.org/legal-context/101",
+          "https://www.moa.gov.lr/sites/default/files/documents/Liberia-SADFONS-ESMF-FINAL%20Version-d__c2020.pdf"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "LAAS 2024 tables require careful re-extraction; area/yield denominators and numbering discrepancies remain",
+        "farmgate_prices": "dated county-level farmgate prices and units pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "county-appropriate crop budgets pending",
+        "currency": "LRD; confirm all source price units, currency and dates",
+        "tests": "county/crop mapping, calculation, currency and localization tests pending"
+      },
+      "safeguards": [
+        "Do not confuse county-level lookup with district/clan geography.",
+        "Do not use LAAS table values until internal numbering and yield-denominator discrepancies are reconciled.",
+        "Do not activate until crop data, dated prices, input costs, budgets and tests are validated."
+      ]
+    },
+    {
+      "code": "GM",
+      "name": "The Gambia",
+      "administrative_geography": {
+        "level": "administrative_region",
+        "count": 5,
+        "names": [
+          "West Coast",
+          "Lower River",
+          "North Bank",
+          "Central River",
+          "Upper River"
+        ],
+        "separate_units": [
+          "Banjul City Council",
+          "Kanifing Municipal Council"
+        ],
+        "sources": [
+          "https://gambiaembassy.eu/state-government/",
+          "https://www.thegef.org/sites/default/files/documents/Gambia_NPFD_Final_0.pdf",
+          "https://www.gbosdata.org/downloads-file/7-census-2013-directory-of-settlement",
+          "https://www.thefactbook.org/gambia/administrative-divisions"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "2025 NASC collection and crop-area/output denominator verification pending",
+        "farmgate_prices": "dated regional farmgate prices and units pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "regional crop budgets pending",
+        "currency": "GMD; confirm source price denomination, unit and date",
+        "tests": "region/crop mapping, calculation, currency and localization tests pending"
+      },
+      "safeguards": [
+        "Banjul City Council and Kanifing Municipal Council are not included as regions.",
+        "Do not treat historical MacCarthy Island or Western Region names as separate current regions.",
+        "Do not activate until crop data, dated prices, input costs, budgets and tests are validated."
+      ]
+    }
+  ],
+  "summary": "Liberia's 15 counties and The Gambia's five administrative regions are recorded. The Gambia's Banjul and Kanifing local-government areas are kept distinct from the five regions."
+}
