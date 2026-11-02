@@ -464,30 +464,31 @@
       "code": "KM",
       "name": "Comoros",
       "evidence_file": "data/ag-data/pending/comoros-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "INSEED_RGA2_2023_2024_national_census_results_and_validated_microdata_metadata_added_crop_totals_and_selected_yields_recorded_farmgate_prices_and_enterprise_budget_inputs_still_missing",
+      "existing_research_note": "INSEED_RGA2_2023_2024_final_weighted_validated_microdata_v1_April_2026_and_public_report; 73818_family_holdings_listed_11454_sampled_148_modern_holdings; national_crop_totals_and_selected_yields; input_adoption_and_livestock_structure; 3_autonomous_islands_as_top_level_regions; microdata_access_controlled_and_farmgate_prices_input_unit_costs_enterprise_budgets_not_validated",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial",
         "dated_local_farmgate_prices_and_units": "not_yet_audited",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
         "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
+        "labour_rates_and_operations": "partial",
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
+        "currency_and_exchange_rate_method": "partial",
+        "source_provenance_and_observation_date": "partial",
         "calculator_mapping_and_test_cases": "not_yet_audited"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Obtain authorised access to the RGA-2 microdata or complete official weighted island/prefecture crop tables; extract crop, season, harvested area, production and yield with final survey weights.",
+        "Reconcile crop-specific denominators and mixed/intercropped production, units and campaign reference periods before calculating yield distributions.",
+        "Obtain dated island-level farmgate prices and units for priority commodities; do not substitute retail prices or export values.",
+        "Obtain farmer-paid seed, planting-material, organic/mineral fertiliser, crop-protection, labour, irrigation, water, energy, machinery, packaging and transport costs by island.",
+        "Build representative island-specific enterprise budgets and gross margins that reflect small and fragmented holdings and subsistence versus sale orientation.",
+        "Validate KMF currency handling, calculator commodity mapping and country-specific test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Request or access the authorised RGA-2 microdata and extract weighted crop area, production, yields, sales and labour by island/prefecture; in parallel collect dated farmgate prices and farmer-paid input quotations."
     },
     {
       "code": "CD",
