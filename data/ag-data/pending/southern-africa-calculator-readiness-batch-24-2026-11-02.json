@@ -1,0 +1,76 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — Batch 24: Lesotho",
+  "country": {
+    "name": "Lesotho",
+    "iso_alpha2": "LS",
+    "iso_alpha3": "LSO"
+  },
+  "review_date": "2026-11-02",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "verified_regions": [
+      "Butha-Buthe",
+      "Leribe",
+      "Berea",
+      "Maseru",
+      "Mafeteng",
+      "Mohale's Hoek",
+      "Quthing",
+      "Qacha's Nek",
+      "Mokhotlong",
+      "Thaba-Tseka"
+    ],
+    "first_level_unit": "Administrative district",
+    "lower_levels": "Constituencies and community councils are lower levels. Four agro-ecological zones (Lowlands, Foothills, Mountains, Senqu River Valley) are separate analytical zones.",
+    "sources": [
+      "https://www.gov.ls/wp-content/uploads/2022/03/Third-National-Communication.pdf",
+      "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Demography/2021_LDS_Vol_IIIA_Population_Dynamics_Analytical_Report.pdf",
+      "https://www.homeaffairs.gov.ls/passports/"
+    ],
+    "selector_added": true
+  },
+  "key_findings": [
+    "Lesotho's ten first-level administrative districts are confirmed by Government and Bureau of Statistics sources. The region lookup now contains these ten districts.",
+    "The official 2022/23 Agricultural Production Survey provides district-level crop statistics for five major crops. National maize production was 126,994 tonnes from 149,271 harvested hectares (derived yield 0.851 t/ha); sorghum 9,088 tonnes from 16,965 ha (0.536 t/ha); wheat 6,251 tonnes from 10,639 ha (0.588 t/ha); beans 5,251 tonnes from 19,827 ha (0.265 t/ha); peas 357 tonnes from 953 ha (0.375 t/ha). These are historical 2022/23 observations, not current 2026 assumptions.",
+    "The same 2022/23 survey records national expenditure on inorganic fertilizer, organic fertilizer, seeds, pesticides, ploughing, weeding and harvesting. These are national mixed-crop expenditure totals, not current crop-specific per-hectare budgets.",
+    "FEWS NET's September 2026 update reports the Bureau of Statistics estimate that 2026 maize production was 30% below the previous year and 55% below the five-year average. Harvests were below average in the Mountains, Senqu River Valley and Southern Lowlands, and average elsewhere.",
+    "The September 2026 FEWS NET update reports the Government's 2026/27 Input Support Programme subsidy rates as 70% for seed and 80% for fertilizer. These are programme rates, not verified farmer co-payments or universal prices; eligibility, product mix, quantities and district availability remain to be checked.",
+    "WFP-derived August 2026 retail prices cover six food products across ten district markets. Maize meal, flour and packaged beans are consumer prices and cannot be used as raw-crop farmgate prices.",
+    "Lesotho's agricultural year runs from 1 August to 31 July, with summer/main and winter/off-season crops. Four agro-ecological zones must not be confused with the ten administrative districts."
+  ],
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_official_2022_23_five_crop_district_area_harvested_area_production_and_derived_yield_plus_2026_national_maize_estimate_no_complete_final_2025_26_district_crop_tables",
+    "dated_local_farmgate_prices_and_units": "blocked_wfp_august_2026_data_are_retail_food_prices_and_no_verified_current_district_raw_crop_farmgate_series",
+    "seed_and_planting_material_costs": "partial_2022_23_survey_national_seed_expenditure_and_2026_27_seed_subsidy_rate_reported_current_farmer_copayments_product_prices_and_eligibility_unverified",
+    "fertilizer_and_soil_amendment_costs": "partial_2022_23_national_organic_and_inorganic_fertilizer_expenditure_and_2026_27_fertilizer_subsidy_reported_current_product_prices_application_rates_and_farmer_copayments_unverified",
+    "crop_protection_costs": "partial_2022_23_national_pesticide_expenditure_and_treated_area_reported_current_product_prices_and_crop_specific_application_budgets_missing",
+    "irrigation_water_and_energy_costs": "blocked_no_current_district_crop_water_irrigation_and_energy_cost_schedule",
+    "labour_rates_and_operations": "partial_2022_23_national_ploughing_weeding_harvesting_expenditure_available_current_wage_rates_and_crop_operation_days_missing",
+    "machinery_and_land_preparation_costs": "partial_2022_23_national_ploughing_expenditure_available_current_district_machine_hire_rates_and_crop_specific_costs_missing",
+    "regional_enterprise_budget_and_gross_margin": "partial_historical_national_input_totals_and_district_crop_output_exist_but_current_crop_by_district_budgets_and_gross_margins_not_validated",
+    "currency_and_exchange_rate_method": "partial_LSL_loti_and_ZAR_par_peg_recorded_calculator_rounding_and_conversion_method_not_documented",
+    "source_provenance_and_observation_date": "partial_official_BOS_2022_23_survey_FAO_August_2026_FEWS_NET_September_2026_and_WFP_august_2026_retail_market_series_recorded",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_current_district_crop_price_cost_dataset_or_calculator_test_cases"
+  },
+  "sources": [
+    "https://www.gov.ls/wp-content/uploads/2022/03/Third-National-Communication.pdf",
+    "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Demography/2021_LDS_Vol_IIIA_Population_Dynamics_Analytical_Report.pdf",
+    "https://www.homeaffairs.gov.ls/passports/",
+    "https://fews.net/southern-africa/lesotho",
+    "https://www.fao.org/giews/countrybrief/country.jsp?code=LS",
+    "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Agriculture/2022_2023_Agricultural_Production_Survey_Crops.pdf",
+    "https://shelfpedia.com/en-ls/market-prices/",
+    "https://help.fews.net/fde/v3/lesotho-country-book"
+  ],
+  "safeguards": [
+    "Lesotho remains not_active.",
+    "No existing active country profile or calculator formula was changed.",
+    "The ten official administrative districts were added only to the separate region lookup.",
+    "Historical 2022/23 crop observations were not represented as current 2026 yields.",
+    "2026/27 subsidy percentages were not converted into farmer-paid prices.",
+    "Retail WFP market prices were not relabelled as farmgate prices.",
+    "No merge or production deployment was performed."
+  ],
+  "next_step": "Extract and reconcile the complete 2025/26 crop forecasting report by district and crop; verify actual farmer co-payments under the 2026/27 input support programme; obtain dated district farmgate prices and crop-specific input/enterprise budgets."
+}
