@@ -2,7 +2,7 @@
   "country": "Gabon",
   "iso_alpha2": "GA",
   "iso_alpha3": "GAB",
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-02",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only national evidence; not a calculator profile and not authorization to activate Gabon.",
   "currency": {
@@ -260,6 +260,57 @@
         "Fisheries are described as artisanal and industrial, with aquaculture a small share; fish potential is not the same as realised catch."
       ],
       "caveat": "Climate scenarios are projections, not observed losses or farm-level forecasts. Fish potential is not a quota or current production target."
+    },
+    {
+      "topic": "official administrative geography for regional lookup",
+      "publication_date": "2018-01-06",
+      "reference_date": "DGAT source data May 2016; ministry page published January 2018",
+      "source": "Gabon Ministry of Interior, Territorial Organisation",
+      "source_url": "https://interieur.gouv.ga/decoupage-territorial/",
+      "observations": [
+        {
+          "indicator": "First-level administrative provinces",
+          "value": 9,
+          "unit": "provinces",
+          "status": "official_ministry"
+        },
+        {
+          "indicator": "Departments",
+          "value": 48,
+          "unit": "departments",
+          "status": "official_ministry"
+        },
+        {
+          "indicator": "Communes",
+          "value": 52,
+          "unit": "communes",
+          "status": "official_ministry"
+        },
+        {
+          "indicator": "Districts",
+          "value": 26,
+          "unit": "districts",
+          "status": "official_ministry"
+        },
+        {
+          "indicator": "Cantons",
+          "value": 164,
+          "unit": "cantons",
+          "status": "official_ministry"
+        }
+      ],
+      "province_names": [
+        "Estuaire",
+        "Haut-Ogooué",
+        "Moyen-Ogooué",
+        "Ngounié",
+        "Nyanga",
+        "Ogooué-Ivindo",
+        "Ogooué-Lolo",
+        "Ogooué-Maritime",
+        "Woleu-Ntem"
+      ],
+      "caveat": "The ministry source confirms the nine-province first-level structure and its lower administrative hierarchy. The underlying DGAT counts are dated May 2016; check for subsequent legal amendments before relying on department-level boundaries. The province list is suitable for a first-level selector."
     }
   ],
   "data_gaps": [
@@ -268,7 +319,10 @@
     "Obtain current dated farm-gate prices by crop and province; keep separate from wholesale, retail and import prices.",
     "Obtain current XAF enterprise budgets and input quotations for seed/planting material, fertilizer, crop protection, labour, mechanisation, irrigation, packaging, transport, storage and land.",
     "Verify final 2026 harvest and cereal import data after the June FAO forecast.",
-    "Reconcile national RGA/EPVA, FAOSTAT and World Bank series before deriving yields or trends."
+    "Reconcile national RGA/EPVA, FAOSTAT and World Bank series before deriving yields or trends.",
+    "Download and extract the eight RGA volumes listed by the Ministry; prioritise crop and province tables, definitions, reference periods and units.",
+    "Extract EPVA 2022-2023 statistical tables by crop, livestock type and province; reconcile with RGA and FAOSTAT before deriving yields.",
+    "Validate whether any administrative boundary changes occurred after the Ministry's 2016 DGAT structure before using department-level crosswalks."
   ],
   "data_quality": {
     "overall": "moderate_for_sector_context_low_for_calculator_inputs",
@@ -284,7 +338,8 @@
       "Crop production and supply gaps are approximate historical synthesis figures",
       "No validated current farm-gate price series or crop-specific farm budget found",
       "Retail/import prices cannot substitute for farm-gate prices",
-      "2026 FAO cereal balance and rainfall effects are forecasts/assessments, not final annual statistics"
+      "2026 FAO cereal balance and rainfall effects are forecasts/assessments, not final annual statistics",
+      "The Ministry's official territorial page confirms nine provinces and 48 departments, but the underlying DGAT counts are dated May 2016; current lower-level boundaries should be rechecked."
     ]
   },
   "calculator_readiness": {
