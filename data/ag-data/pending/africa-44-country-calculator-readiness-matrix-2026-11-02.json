@@ -1,0 +1,1348 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator data readiness matrix",
+  "version": 1,
+  "created_at": "2026-11-02",
+  "status": "baseline_gap_register_not_calculator_data",
+  "scope": "Tracks evidence-to-calculator completion for the 44 countries outside the 10 existing active profiles. This is a work queue, not a certification of data quality or a source of values for calculations.",
+  "safeguards": [
+    "Do not modify the 10 active country profiles or calculator formulas in this workstream.",
+    "Do not activate a country until all required commodity-level values have provenance, dates, units, regional scope and validation.",
+    "Never fill missing prices, yields or costs with invented values.",
+    "Keep national statistics, market prices, farmgate prices and modelled estimates clearly distinguished."
+  ],
+  "summary": {
+    "registry_countries": 54,
+    "existing_active_profiles": 10,
+    "research_only_countries": 44,
+    "not_yet_researched": 0,
+    "readiness_certified": 0
+  },
+  "readiness_criteria": [
+    {
+      "key": "crop_area_production_yield_by_commodity_and_season",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "dated_local_farmgate_prices_and_units",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "seed_and_planting_material_costs",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "fertilizer_and_soil_amendment_costs",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "crop_protection_costs",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "irrigation_water_and_energy_costs",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "labour_rates_and_operations",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "machinery_and_land_preparation_costs",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "regional_enterprise_budget_and_gross_margin",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "currency_and_exchange_rate_method",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "source_provenance_and_observation_date",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    },
+    {
+      "key": "calculator_mapping_and_test_cases",
+      "pass_condition": "A source-backed, dated, unit-consistent observation or an explicit documented reason why it is unavailable; commodity and regional applicability must be stated."
+    }
+  ],
+  "countries": [
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_2025_cereal_estimates_and_2026_market_retail_bulletins_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_ICAPP_2023_2024_and_2024_2025_sample_survey_results_and_MINAGRIF_2024_2025_crop_area_bulletin_identified_reference_prices_2025_2026_available_detailed_tables_and_farm_budgets_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "official_statistics_sources_identified_selected_2023_2024_observations_pending_table_level_extraction",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_2024_2025_cereal_area_and_total_output_sources_identified_crop_specific_yields_and_discrepant_cereal_totals_need_reconciliation",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "official_cereal_and_market_sources_identified_crop_level_series_extraction_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "evidence_file": "data/ag-data/pending/burundi-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "research_only_record_added",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "evidence_file": "data/ag-data/pending/cabo-verde-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "research_only_record_added",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_2026_seasonal_context_and_secondary_FAOSTAT_2024_crop_series_lead_identified_prefecture_budget_evidence_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_2026_outlook_and_FEWS_NET_2010_2023_crop_archive_methodology_identified_current_crop_specific_extract_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "evidence_file": "data/ag-data/pending/comoros-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "INSEED_RGA2_2023_2024_national_census_results_and_validated_microdata_metadata_added_crop_totals_and_selected_yields_recorded_farmgate_prices_and_enterprise_budget_inputs_still_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "evidence_file": "data/ag-data/pending/democratic-republic-of-congo-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_2026_seasonal_outlook_FAOSTAT_2024_aggregate_cereal_yield_USDA_2024_25_and_2025_26_marketing_year_estimates_and_AgA_2024_maize_forecast_recorded_province_level_prices_and_farm_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "official_2024_crop_statistics_identified_yield_and_price_table_extraction_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "evidence_file": "data/ag-data/pending/djibouti-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "World_Bank_2026_AgriConnect_USDA_FAS_Oct_2026_IPC_2026_FEWS_NET_weekly_market_price_dataset_FAO_GIEWS_and_ministry_indicators_recorded_current_farmgate_prices_and_enterprise_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_CAPMAS_2024_crop_and_livestock_statistics_and_2025_crop_area_bulletin_identified_crop_specific_yields_and_cost_series_extraction_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "evidence_file": "data/ag-data/pending/equatorial-guinea-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_GIEWS_July_2026_2024_FAOSTAT_crop_totals_INEGE_2026_yearbook_and_cocoa_growth_IMF_productivity_context_and_IFAD_project_pipeline_recorded_land_area_discrepancy_and_farmgate_prices_enterprise_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "evidence_file": "data/ag-data/pending/eritrea-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "Ministry_2024_national_crop_area_and_horticulture_outputs_peer_reviewed_2015_2024_Dighe_Gala_Nefhi_irrigation_and_Asmara_wholesale_price_index_UN_2025_programme_results_and_FAO_Sept_2026_drought_risk_recorded_crop_specific_yields_farmgate_prices_and_enterprise_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "evidence_file": "data/ag-data/pending/eswatini-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "MoA_2024_preharvest_six_crop_output_maize_area_yield_and_livestock_series_FAO_Aug_2026_maize_and_FMD_update_World_Bank_2025_value_chain_gross_margin_models_and_2026_government_programme_indicators_recorded_final_2025_26_crop_tables_current_farmgate_prices_and_farmer_input_quotations_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "evidence_file": "data/ag-data/pending/gabon-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_June_2026_cereal_balance_RGA_2019_and_EPVA_2022_2023_sources_World_Bank_2025_crop_supply_and_farm_structure_and_2026_poultry_support_recorded_original_RGA_EPVA_tables_current_farmgate_prices_and_enterprise_budgets_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "WTO_2025_ministry_source_crop_area_and_output_tables_extracted_yield_denominator_pending_2025_NASC_data_collection",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "external_official_estimates_source_identified_country_level_national_validation_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "2025_FAO_50x2030_agricultural_household_listing_completed_survey_programme_underway_historical_rice_series_quality_concerns",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "evidence_file": "data/ag-data/pending/lesotho-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_Aug_2026_provisional_cereal_balance_and_import_requirements_BoS_2022_23_crop_area_output_yield_and_input_expenditure_Livestock_2022_23_inventory_LVAC_2025_crop_assessment_IFAD_wool_mohair_value_chain_recorded_latest_2025_26_final_crop_tables_current_farmgate_prices_and_crop_enterprise_budgets_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "corrected_LAAS_2024_report_confirmed_available_original_Table_10_and_cost_wage_table_numbering_and_yield_discrepancies_require_reextraction",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "evidence_file": "data/ag-data/pending/libya-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_GIEWS_Jul_2026_cereal_outlook_WDI_FAOSTAT_2024_cereal_output_SESRIC_barley_series_World_Bank_41_market_RTFP_through_Oct_2026_official_2024_2025_market_price_dataset_IFAD_farm_structure_WFP_Fezzan_assessment_FAO_irrigation_study_and_MoA_census_preparation_recorded_farmgate_prices_and_enterprise_budgets_missing_barley_yield_metadata_needs_reconciliation",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "evidence_file": "data/ag-data/pending/madagascar-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "WTO_2025_review_2023_paddy_maize_beans_cassava_potato_sweet_potato_and_2022_cash_crop_output_FAO_GIEWS_Sept_2026_crop_outlook_World_Bank_2025_AgPER_price_and_input_gaps_RTFP_481_market_dataset_recorded_current_farmgate_prices_and_crop_enterprise_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_APES_crop_production_series_and_2025_agriculture_census_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_catalogued_EAC_2023_2024_sample_survey_and_USDA_rice_price_production_crosschecks_identified",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_ministry_reported_autumn_2025_rice_production_area_and_yield_added_full_budget_evidence_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "evidence_file": "data/ag-data/pending/mauritius-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "Statistics_Mauritius_2025_crop_specific_area_production_yields_open_field_and_protected_systems_2026_H1_production_Q2_2026_producer_price_index_FAO_catalogued_2024_agriculture_census_metadata_and_trade_food_import_context_recorded_absolute_current_farmgate_prices_and_enterprise_budgets_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "evidence_file": "data/ag-data/pending/morocco-follow-up-evidence-2026-11-01.json",
+      "existing_research_note": "research_only_record_added",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_2024_crop_production_series_and_2023_integrated_agricultural_survey_and_2023_2024_agricultural_census_identified_crop_area_yield_and_budget_extraction_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_NAB_2025_white_maize_production_forecast_with_irrigated_and_rainfed_yields_and_2025_mahangu_floor_price_added_2026_cereal_outlook_identified_agricultural_census_data_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "official_statistics_yearbook_and_regional_crop_series_identified_table_level_verification_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "CG",
+      "name": "Republic of the Congo",
+      "evidence_file": "data/ag-data/pending/republic-of-the-congo-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_GIEWS_June_2026_cassava_main_crop_maize_outlook_and_410000t_cereal_import_forecast_INS_2024_preliminary_census_and_2023_crop_survey_catalogue_FAOSTAT_2024_secondary_crop_series_INS_Feb_2026_city_consumer_price_indices_and_Soko_market_price_platform_leads_recorded_farmgate_prices_and_enterprise_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "evidence_file": "data/ag-data/pending/sao-tome-and-principe-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_country_overview_cocoa_and_food_crop_priorities_INE_portal_and_September_2026_CPI_secondary_FAOSTAT_2024_cassava_and_coffee_series_government_cocoa_output_claim_conflicts_with_4kt_2024_25_secondary_estimate_IMF_food_price_transmission_and_EU_2024_agrifood_trade_recorded_farmgate_prices_and_enterprise_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "official_national_annual_agricultural_survey_2023_2024_identified_extraction_and_cost_table_review_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "evidence_file": "data/ag-data/pending/seychelles-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "2024_Agriculture_Census_coverage_725_registered_farmers_CBS_2024_output_indicators_2025_egg_producer_and_retail_price_leads_2024_pig_output_and_pork_imports_WDI_2024_crop_index_recorded_detailed_crop_tables_current_farmgate_prices_and_enterprise_budgets_missing",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "2025_MAFS_official_crop_cutting_report_extracted_national_and_ecology_yields_but_national_rice_yield_output_area_ratio_and_district_text_inconsistencies_need_clarification",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "evidence_file": "data/ag-data/pending/somalia-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "FAO_March_2026_2025_cereal_output_and_Deyr_crop_failure_MoAI_2024_Gu_estimates_FSNAU_district_season_dataset_methodology_MoAI_2025_farmgate_report_with_unit_currency_anomalies_FSNAU_36_market_weekly_prices_World_Bank_45_market_RTFP_to_Oct_2026_and_livestock_drought_context_recorded_validated_yields_prices_and_enterprise_budgets_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "evidence_file": "data/ag-data/pending/south-sudan-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "2025_FAO_WFP_CFSAM_net_cereal_output_1_2131m_tonnes_2026_FAO_GIEWS_crop_risk_CLIMIS_market_catalogue_WFP_2025_Aweil_sorghum_price_and_FEWS_NET_SSP_volatility_recorded_crop_level_tables_farmgate_prices_and_regional_enterprise_budgets_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "evidence_file": "data/ag-data/pending/sudan-country-profile-evidence-2026-11-01.json",
+      "existing_research_note": "2025_CFSAM_5_2m_tonnes_2026_FAO_GIEWS_drought_risk_USDA_FAS_crop_area_production_IFPRI_36_market_monitor_WFP_SDG_exchange_rate_and_groundnut_price_evidence_recorded_state_level_yields_farmgate_prices_and_enterprise_budgets_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
+      "existing_research_note": "official_agricultural_statistics_and_market_information_portal_identified_dynamic_data_extraction_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_2026_2027_cereal_producer_price_schedule_and_recent_cereal_estimates_added_crop_budget_evidence_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+      "existing_research_note": "official_2024_25_post_harvest_survey_and_2026_market_price_evidence_added_area_yield_and_farm_budget_reconciliation_pending",
+      "calculator_status": "not_active",
+      "criterion_status": {
+        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "seed_and_planting_material_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_protection_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "labour_rates_and_operations": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+        "currency_and_exchange_rate_method": "not_yet_audited",
+        "source_provenance_and_observation_date": "not_yet_audited",
+        "calculator_mapping_and_test_cases": "not_yet_audited"
+      },
+      "blockers": [
+        "Extract country-specific commodity observations from the cited primary sources.",
+        "Resolve inconsistent definitions, units, seasons and reporting years.",
+        "Obtain dated farmgate prices and farmer-facing input quotations.",
+        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
+        "Map only validated values to the existing calculator schema and add test cases."
+      ],
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+    }
+  ]
+}
