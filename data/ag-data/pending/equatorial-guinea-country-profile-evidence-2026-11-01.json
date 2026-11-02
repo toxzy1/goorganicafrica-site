@@ -2,7 +2,7 @@
   "country": "Equatorial Guinea",
   "iso_alpha2": "GQ",
   "iso_alpha3": "GNQ",
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-02",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only record of national crop production estimates, agricultural structure, cocoa-sector signals, food-import dependence, macroeconomic and source-quality context. This is not a farm-profit calculator profile and does not authorize country activation.",
   "currency": {
@@ -20,7 +20,26 @@
       "Kie-Ntem Province",
       "Annobón"
     ],
-    "caution": "The available public sources provide useful national production and policy context but not a complete, reconciled crop-area/yield dataset or commercial farm budgets. Distinguish FAOSTAT estimates from national survey/administrative observations, and distinguish imported consumer-market food from local producer prices."
+    "caution": "The available public sources provide useful national production and policy context but not a complete, reconciled crop-area/yield dataset or commercial farm budgets. Distinguish FAOSTAT estimates from national survey/administrative observations, and distinguish imported consumer-market food from local producer prices.",
+    "administrative_geography": {
+      "regions": [
+        "Región Continental",
+        "Región Insular"
+      ],
+      "provinces": [
+        "Annobón",
+        "Bioko Norte",
+        "Bioko Sur",
+        "Centro Sur",
+        "Djibloho",
+        "Kié-Ntem",
+        "Litoral",
+        "Wele-Nzas"
+      ],
+      "selector_level": "Province (first-order administrative level)",
+      "source": "https://www.ecoi.net/en/file/local/2136414/Equatorial_Guinea_Toponymic_Factfile.pdf",
+      "source_note": "The 2026 UK Permanent Committee on Geographical Names official Toponymic Factfile identifies two regions and eight first-order provinces. The 2026 INEGE yearbook confirms that selected statistics are disaggregated by region, province and district. Districts must not be mixed into the province selector."
+    }
   },
   "evidence": [
     {
@@ -236,6 +255,20 @@
         "Country-level extraction is still required for crop-specific harvested area, production, yield, livestock inventories and products, including observation flags and estimation status."
       ],
       "caveat": "No raw FAOSTAT country export has yet been attached to this record. Until extracted, retain FAO GIEWS-reported aggregates as secondary transcriptions and do not present them as independently revalidated raw FAOSTAT rows."
+    },
+    {
+      "topic": "INEGE Statistical Yearbook 2026 and current administrative geography",
+      "publication_date": "2026-09-25",
+      "source": "INEGE, Statistical Yearbook of Equatorial Guinea 2026; UK Permanent Committee on Geographical Names, Equatorial Guinea Toponymic Factfile (2026)",
+      "source_url": "https://inege.org/?etn=statistical-yearbook-of-equatorial-guinea-2026&lang=en",
+      "supporting_source_url": "https://www.ecoi.net/en/file/local/2136414/Equatorial_Guinea_Toponymic_Factfile.pdf",
+      "observations_text": [
+        "INEGE released the 2026 Statistical Yearbook on 25 September 2026; the publication compiles official statistics updated through December 2025 and covers agriculture, prices, wages, and other sectors.",
+        "INEGE states that selected yearbook statistics are disaggregated by region, province and district, but the crop tables and numeric observations still need to be extracted and checked.",
+        "INEGE's release summary reports cocoa production grew 2.5% in the 2024/2025 agricultural season; this is a growth rate, not a production tonnage, crop yield or farmgate price.",
+        "The 2026 official toponymic factfile identifies two regions (Continental and Insular) and eight first-order provinces: Annobón, Bioko Norte, Bioko Sur, Centro Sur, Djibloho, Kié-Ntem, Litoral and Wele-Nzas."
+      ],
+      "caveat": "The yearbook landing page and release summary do not themselves provide extracted crop-area, production, yield, farmgate price or farm-input tables. Do not convert the cocoa growth rate into an absolute output value or use it as a producer price. Province list is suitable for a first-level selector; province-specific crop data and boundary crosswalks remain unverified."
     }
   ],
   "data_quality_and_use": [
@@ -245,7 +278,8 @@
     "The 2024/2025 cocoa growth figure is a percentage change only; no absolute output or farmgate price is supplied in the public INEGE summary.",
     "The IMF's 2021 comparative yield finding signals productivity constraints but does not supply usable current crop-level yield values in the accessible extract.",
     "Food import dependence is high; import volumes and consumer food inflation are not substitutes for local producer price series.",
-    "No verified current farm-gate prices, input prices, labour costs, crop-specific enterprise budgets or regional market margins have been established in this review."
+    "No verified current farm-gate prices, input prices, labour costs, crop-specific enterprise budgets or regional market margins have been established in this review.",
+    "The 2026 INEGE yearbook is a current official source inventory, but no crop-level numeric tables have yet been extracted from it. Its reported 2.5% cocoa production growth for 2024/2025 is not a crop tonnage, yield or farmgate price."
   ],
   "missing_data_before_calculator_use": [
     "Download and extract the agriculture and price tables from the complete INEGE Statistical Yearbook 2026, including table titles, units, reference years, methodology, source department and any province/district breakdown.",
@@ -256,7 +290,8 @@
     "Obtain representative farm budgets and crop calendars by agroecological zone and production system, with marketable yield, crop losses, labour requirements and financing costs.",
     "Obtain current cocoa procurement prices, quality/grade deductions, producer organisation and buyer-channel information, and season-specific costs.",
     "Obtain livestock and fisheries census/production statistics, animal prices, feed and veterinary costs, and value-chain margins if those enterprises are to be included.",
-    "Validate IFAD project implementation and monitoring data before using programme targets or planned investment as evidence of realised production or farmer income."
+    "Validate IFAD project implementation and monitoring data before using programme targets or planned investment as evidence of realised production or farmer income.",
+    "Extract and validate the agriculture tables in the 2026 INEGE yearbook, including commodity, area, production, yield, year/season, geography, units and source agency; reconcile with FAOSTAT."
   ],
-  "recommendation": "Retain Equatorial Guinea as research-only. The current evidence establishes meaningful production of cassava, sweet potatoes and plantains, a cocoa value chain, substantial food-import dependence and a recent national statistical publication. However, the publicly accessible figures do not yet provide a reconciled area/yield series, verified current farm-gate prices or full enterprise costs. Do not activate a calculator profile or calculate expected farm profit until INEGE tables, raw FAOSTAT rows, local producer prices and farm budgets are extracted and checked."
+  "recommendation": "Keep Equatorial Guinea research-only. Add the verified eight-province first-level selector for future regional data entry, but do not activate a calculator profile until crop-level tables, dated farmgate prices, input quotations, labour/machinery/irrigation costs, regional enterprise budgets, currency handling, schema mapping and test cases are validated."
 }
