@@ -1,0 +1,170 @@
+{
+  "title": "GoOrganicAfrica calculator readiness evidence batch 04",
+  "review_date": "2026-11-02",
+  "scope": "Successful indexed retrieval and table-level extraction from Benin's official 2023-2024 agricultural campaign report, plus confirmation of Senegal's public EAA 2024-2025 interactive statistical tables. National historical production/yield evidence is recorded as research evidence only; no regional enterprise budgets or current input/farmgate prices are certified.",
+  "countries": [
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "status": "official_campaign_pdf_retrieved_and_national_crop_tables_extracted_regional_budget_data_pending",
+      "sources": [
+        {
+          "title": "INStaD / DSA - Les chiffres définitifs de la campagne agricole 2023-2024",
+          "url": "https://www.instad.bj/images/docs/insae-statistiques/agricoles/production-agricole/Evolution_de_la_production_agricole_2023/R%C3%A9sultat_d%C3%A9finitif%20de%20la%20campagne_VERSION_FINALE.pdf",
+          "findings": "Official DSA campaign report dated March 2024. Search-indexed PDF text was successfully retrieved and table/paragraph values were extracted. Crop statistics derive from the Agricultural Statistical Survey conducted by DSA with departmental agriculture directorates; report states 10,245 agricultural holdings across 683 agricultural enumeration zones."
+        },
+        {
+          "title": "INStaD agricultural statistics catalogue",
+          "url": "https://instad.bj/statistiques/statistiques-agricoles/577-campagne-agricole-2023-2024",
+          "findings": "Catalogue page lists the definitive 2023-2024 report and related agricultural statistics."
+        }
+      ],
+      "extracted_national_observations": [
+        {
+          "commodity": "maize",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 2059254,
+          "yield_kg_per_ha": 992,
+          "geography": "national",
+          "note": "Report states maize yield was the lowest since 2018; do not treat as a regional yield."
+        },
+        {
+          "commodity": "rice",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 492626,
+          "geography": "national",
+          "note": "Production only in this extracted record; selected graph values require careful chart transcription."
+        },
+        {
+          "commodity": "sorghum",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 150465,
+          "geography": "national"
+        },
+        {
+          "commodity": "millet",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 34229,
+          "geography": "national"
+        },
+        {
+          "commodity": "yam",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 3321089,
+          "yield_kg_per_ha": 10788,
+          "geography": "national"
+        },
+        {
+          "commodity": "cassava",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 4449430,
+          "yield_kg_per_ha": 13479,
+          "geography": "national"
+        },
+        {
+          "commodity": "cowpea_beans",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 122744,
+          "yield_kg_per_ha": 714,
+          "geography": "national"
+        },
+        {
+          "commodity": "groundnut",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 178954,
+          "yield_kg_per_ha": 737,
+          "geography": "national"
+        },
+        {
+          "commodity": "soybean",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 520929,
+          "yield_kg_per_ha": 1004,
+          "geography": "national"
+        },
+        {
+          "commodity": "tomato",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 279466,
+          "yield_kg_per_ha": 8858,
+          "geography": "national"
+        },
+        {
+          "commodity": "chilli_pepper",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 134120,
+          "yield_kg_per_ha": 3379,
+          "geography": "national"
+        },
+        {
+          "commodity": "okra",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 101003,
+          "yield_kg_per_ha": 8565,
+          "geography": "national"
+        },
+        {
+          "commodity": "onion",
+          "reference_period": "2023 campaign / 2023-2024 report",
+          "production_tonnes": 94906,
+          "yield_kg_per_ha": 11316,
+          "geography": "national"
+        }
+      ],
+      "verified_facts": [
+        "The report's production statistics are based on DSA's Agricultural Statistical Survey and departmental agriculture directorates; it records 10,245 holdings across 683 agricultural enumeration zones.",
+        "Selected crop yield values are available for maize, yam, cassava, cowpea/beans, groundnut, soybean, tomato, chilli pepper, okra and onion.",
+        "The report is national-level in the extracted tables; regional crop values, dated farmgate prices and complete input/enterprise budgets were not extracted.",
+        "The report contains some internal inconsistencies in narrative/table reference labels and typographic values; retain the stated source year and validate source table/page before production use."
+      ],
+      "blockers": [
+        "Extract regional crop area, production and yield from ESA 2024 / RNA tables and reconcile against the national campaign report.",
+        "Resolve discrepancies and verify chart/table readings against page images before calculator mapping.",
+        "Obtain dated farmgate prices and farmer-facing seed, fertilizer, crop protection, irrigation, labour and machinery costs by region.",
+        "Build region-specific enterprise budgets and tests; current national observations alone do not support regional profit estimates."
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "status": "official_public_interactive_2024_2025_tables_confirmed_extraction_pending",
+      "sources": [
+        {
+          "title": "FAO AGRISurvey Senegal - access to data",
+          "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/senegal-2/en",
+          "findings": "Official FAO access page links the EAA 2024-2025 interactive statistical tables, historical 2018-2023 thematic tables and dashboard, and the ANADS survey catalogue."
+        },
+        {
+          "title": "Senegal EAA 2024-2025 ANADS catalogue",
+          "url": "https://anads.ansd.sn/index.php/catalog/351",
+          "findings": "Official survey metadata confirms coverage across all regions and 45 departments. In the anonymised data, region remains available while department is replaced by agroecological zone. The 2024-2025 survey includes production, area, yield, inputs, labour and ILP topics."
+        },
+        {
+          "title": "Senegal EAA 2024-2025 related materials",
+          "url": "https://anads.ansd.sn/index.php/catalog/351/related-materials",
+          "findings": "Official questionnaires, enumerator manual and local-to-standard conversion workbook ZIP are listed. The EAA 2024-2025 analysis report is listed without a download URL."
+        }
+      ],
+      "verified_facts": [
+        "Public interactive statistical tables for EAA 2024-2025 are linked from FAO's official Senegal access-to-data page.",
+        "The survey metadata confirms region remains in the anonymised file; department is replaced by agroecological zone.",
+        "The survey covers the 14 regions and 45 departments; public table extraction and unit conversion are still pending.",
+        "Do not infer that the presence of an interactive-table link means all required price and input cost tables have been extracted."
+      ],
+      "blockers": [
+        "Open and extract the public EAA 2024-2025 interactive tables by region, crop, season, area, production and yield.",
+        "Obtain and apply the official local measurement conversion workbooks before comparing yield or price units.",
+        "Extract permitted aggregate input, labour and cost tables; do not download or redistribute restricted confidential microdata.",
+        "Obtain dated regional farmgate prices and complete enterprise budgets, then add calculator mapping and tests."
+      ]
+    }
+  ],
+  "safeguards": [
+    "No confidential microdata was downloaded, stored or redistributed.",
+    "No missing crop, price or cost value was invented.",
+    "National historical statistics are not presented as regional values or current market prices.",
+    "The 10 active calculator profiles and calculator formulas remain untouched.",
+    "Neither Benin nor Senegal is certified calculator-ready."
+  ],
+  "next_batch": "Extract regional tables from Benin ESA 2024 and Senegal EAA 2024-2025 public interactive tables; obtain unit conversion tables; then continue with country-by-country regional price and input-cost validation."
+}
