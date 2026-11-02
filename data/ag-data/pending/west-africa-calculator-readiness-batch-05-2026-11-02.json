@@ -1,0 +1,61 @@
+{
+  "title": "GoOrganicAfrica readiness batch 05 - Burkina Faso administrative geography",
+  "review_date": "2026-11-02",
+  "country": {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "status": "current_first_level_regions_added_to_lookup_official_crop_and_cost_data_pending"
+  },
+  "administrative_geography": {
+    "level": "region",
+    "count": 17,
+    "names": [
+      "Bankui",
+      "Djôrô",
+      "Goulmou",
+      "Guiriko",
+      "Kadiogo",
+      "Kuilsé",
+      "Liptako",
+      "Nando",
+      "Nakambé",
+      "Nazinon",
+      "Oubri",
+      "Sirba",
+      "Soum",
+      "Sourou",
+      "Tannounyan",
+      "Tapoa",
+      "Yaadga"
+    ],
+    "effective_reorganisation": "July 2025; the prior 13-region structure was replaced by 17 regions and 47 provinces.",
+    "source": "https://www.matd.gov.bf/accueil/actualites/details?cHash=d09a0eaf5af155adaac351d9f7eef8bf&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=763",
+    "corroborating_source": "https://www.presidencedufaso.bf/conseil-des-ministres-du-2-juillet-2025/",
+    "secondary_official_toponymic_reference": "https://assets.publishing.service.gov.uk/media/6a19aa3059fb7a60f827f52c/Burkina_Faso_Toponymic_Factfile.pdf",
+    "source_findings": [
+      "The Ministry of Territorial Administration and Mobility states the country was reorganised from 13 to 17 regions and 45 to 47 provinces.",
+      "The 17 current region names are listed in the Presidency's July 2, 2025 Council of Ministers report.",
+      "The government described a six-month transition period; October 2026 reporting confirms governors of the four new regions were appointed in October 2026."
+    ],
+    "lookup_file": "src/_data/calculator/regions.json",
+    "lookup_only": true
+  },
+  "calculator_readiness": {
+    "active": false,
+    "crop_area_production_yield": "official 2024/25 survey and crop-level regional extraction pending",
+    "farmgate_prices": "dated regional farmgate prices and units pending",
+    "inputs_and_operations": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+    "enterprise_budgets": "region- and crop-specific budgets pending",
+    "currency": "XOF already recorded in country registry; validate price units and conversion method",
+    "tests": "country-region-crop calculation and localization tests pending"
+  },
+  "safeguards": [
+    "Do not use the obsolete 13-region list in new calculator entries.",
+    "Do not treat national cereal output as regional crop yields.",
+    "Do not use wholesale prices as farmgate prices.",
+    "Do not activate the country until regional crop data, price/cost inputs and calculator tests are validated.",
+    "No existing active country profile or calculator formula was modified.",
+    "No merge or production deployment."
+  ],
+  "next_step": "Extract official 2024/25 crop survey tables by the new 17-region geography, resolve crosswalks where survey data use the pre-reorganisation 13-region geography, then obtain dated regional farmgate prices and production costs."
+}
