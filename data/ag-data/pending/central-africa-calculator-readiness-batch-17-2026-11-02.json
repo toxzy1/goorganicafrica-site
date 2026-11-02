@@ -1,0 +1,142 @@
+{
+  "title": "GoOrganicAfrica São Tomé and Príncipe calculator readiness review",
+  "batch": 17,
+  "review_date": "2026-11-02",
+  "country": {
+    "name": "São Tomé and Príncipe",
+    "iso2": "ST",
+    "iso3": "STP",
+    "currency": "STN"
+  },
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "level": "district",
+    "count": 7,
+    "names": [
+      "Água Grande",
+      "Cantagalo",
+      "Caué",
+      "Lembá",
+      "Lobata",
+      "Mé-Zóchi",
+      "Pagué"
+    ],
+    "autonomous_region": "Príncipe",
+    "source": "https://www.ine.st/index.php/o-pais/sobre-o-pais",
+    "note": "INE lists seven districts and separately identifies Príncipe as an autonomous region; Pagué remains the district name in the seven-unit list."
+  },
+  "historical_agricultural_observations": {
+    "source": "https://www.ine.st/phocadownload/userupload/Documentos/STPemNumeros/STPemNumeros%20%202017.pdf",
+    "reference_period": "2013-2017",
+    "national_series": [
+      {
+        "crop": "banana",
+        "unit": "tonnes",
+        "values": [
+          41119.5,
+          43174.6,
+          43249.1,
+          42878.9,
+          45348.6
+        ]
+      },
+      {
+        "crop": "tomato",
+        "unit": "tonnes",
+        "values": [
+          1230.4,
+          1291.9,
+          1201.7,
+          1021.5,
+          1225.8
+        ]
+      },
+      {
+        "crop": "coffee",
+        "unit": "tonnes",
+        "values": [
+          3.9,
+          12,
+          4.4,
+          1.2,
+          5.9
+        ]
+      },
+      {
+        "crop": "chocolate (source table label)",
+        "unit": "tonnes",
+        "values": [
+          5.9,
+          6.4,
+          6.3,
+          5.1,
+          5
+        ]
+      }
+    ],
+    "livestock_series": [
+      {
+        "indicator": "cattle herd",
+        "unit": "head",
+        "values": [
+          1158,
+          1262,
+          1349,
+          1362,
+          1363
+        ]
+      },
+      {
+        "indicator": "pig herd",
+        "unit": "head",
+        "values": [
+          28230,
+          29350,
+          31105,
+          35319,
+          35320
+        ]
+      },
+      {
+        "indicator": "poultry meat",
+        "unit": "tonnes",
+        "values": [
+          385,
+          435,
+          485,
+          594,
+          595.2
+        ]
+      }
+    ],
+    "caveats": [
+      "Historical national totals only; no crop area or district breakdown in the summary table.",
+      "Do not derive yields from output totals alone.",
+      "Source labels cocoa-related output as chocolate; verify commodity definition before use."
+    ]
+  },
+  "census_update": {
+    "source": "https://www.glebatv.st/todas-noticias/ine-inicia-fase-2-do-recenseamento-geral-da-agricultura-2025-em-sao-tome-e-principe",
+    "reported_date": "2026-05-14",
+    "status": "phase 2 of 2025 agricultural census underway; final tables not yet found"
+  },
+  "currency_context": {
+    "code": "STN",
+    "peg": "24.5 STN per EUR",
+    "source": "https://stp.gov.st/sobre_pais",
+    "last_rate_update": "2025-03",
+    "caveat": "Confirm current Central Bank rate before conversion."
+  },
+  "blockers": [
+    "Final 2025 agricultural census crop/district tables unavailable in reviewed sources.",
+    "No current district farmgate price series validated.",
+    "No current farmer-facing input quotations or enterprise budgets.",
+    "Crop area, yields, calculator mapping and test cases remain incomplete."
+  ],
+  "safeguards": [
+    "Research-only lookup; not an active calculator profile.",
+    "No changes to existing active profiles or formulas.",
+    "No fabricated current prices, yields or costs.",
+    "No merge or deployment."
+  ]
+}
