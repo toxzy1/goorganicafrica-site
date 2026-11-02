@@ -21,7 +21,18 @@
       "Middleveld",
       "Lowveld"
     ],
-    "caution": "Separate smallholder Swazi Nation Land (SNL) from commercial Title Deed Land (TDL) systems. The national crop survey, regional livestock records and World Bank value-chain gross-margin models have different samples and reference periods; they are not interchangeable."
+    "caution": "Separate smallholder Swazi Nation Land (SNL) from commercial Title Deed Land (TDL) systems. The national crop survey, regional livestock records and World Bank value-chain gross-margin models have different samples and reference periods; they are not interchangeable.",
+    "administrative_geography": {
+      "first_level_units": [
+        "Hhohho",
+        "Manzini",
+        "Shiselweni",
+        "Lubombo"
+      ],
+      "source": "Government of Eswatini, Regional Administration",
+      "source_url": "https://www.gov.sz/index.php/departments-sp-1832997396/regional-administration",
+      "note": "The Government identifies four current administrative regions. Tinkhundla centres and chiefdoms are lower administrative/community units and are not mixed into the first-level country selector."
+    }
   },
   "evidence": [
     {
@@ -433,6 +444,23 @@
         "The review reports export volumes of high-value baby vegetables at 184 tonnes, valued at US$3.1 million, with volumes increasing by 30 percent in recent years."
       ],
       "caveat": "These are historical sector context indicators with differing reference years, not current 2026 farm output or farm-gate price data."
+    },
+    {
+      "topic": "Administrative geography for calculator region selection",
+      "reference_date": "2026-11-02",
+      "source": "Government of Eswatini, Regional Administration; Constitution of Eswatini summary",
+      "source_url": "https://www.gov.sz/index.php/departments-sp-1832997396/regional-administration",
+      "supporting_sources": [
+        "https://gov.sz/index.php/history",
+        "https://www.gov.sz/index.php/tinkhundla-centres",
+        "https://www.elections.org.sz/2023/"
+      ],
+      "observations_text": [
+        "The Government confirms four current administrative regions: Hhohho, Manzini, Shiselweni and Lubombo.",
+        "The Government's Regional Administration page describes 59 Tinkhundla centres distributed across the four regions; the Tinkhundla layer is a lower level and should not be mixed into the first-level region selector.",
+        "Government web pages show differing Tinkhundla counts (some pages cite 59, while an older Tinkhundla page cites 55); the first-level four-region structure is consistent across official sources."
+      ],
+      "caveat": "Only the four first-level regions are added to the calculator lookup. Do not treat Tinkhundla or chiefdom counts as crop-data geography until current official boundaries and codes are obtained."
     }
   ],
   "data_quality_and_use": [
@@ -442,7 +470,8 @@
     "National statistics distinguish commercial Title Deed Land from smallholder/subsistence Swazi Nation Land; their yields, input use, market access and cost structures should not be merged without stratification.",
     "The 2026 maize production estimate, the 2023/24 ministry crop survey, the World Bank 2024 yield estimate and the programme-specific 2025/26 maize output refer to different periods and populations.",
     "Retail market prices, imported commodity prices, wholesale prices and producer prices are distinct data classes. No current complete farm-gate price series has been validated in this review.",
-    "Foot-and-mouth disease and export restrictions affected livestock trade in 2025-2026; animal prices and market access should be date-stamped and linked to current disease-control status."
+    "Foot-and-mouth disease and export restrictions affected livestock trade in 2025-2026; animal prices and market access should be date-stamped and linked to current disease-control status.",
+    "The official Government of Eswatini Regional Administration page confirms four first-level regions: Hhohho, Manzini, Shiselweni and Lubombo. The calculator selector uses these regions only; lower-level Tinkhundla and chiefdom units are excluded pending verified crop-data crosswalks."
   ],
   "missing_data_before_calculator_use": [
     "Obtain the final 2025/26 crop production and post-harvest survey with crop-by-crop harvested area, output and yield by region and farm system.",
@@ -454,7 +483,8 @@
     "Obtain current cattle, goat, poultry and pig farm-gate prices, feed costs, veterinary and vaccination costs, mortality, breeding, labour and transport budgets.",
     "Confirm WOAH FMD status and any remaining export or movement restrictions before using beef/live-animal price assumptions.",
     "Reconcile maize production estimates between the 2024 pre-harvest assessment, 2026 FAO brief, World Bank review and the government Hamba Ubuye programme; do not combine national and programme totals.",
-    "Obtain raw FAOSTAT crop and livestock observations and flags for independent cross-checking against national statistics."
+    "Obtain raw FAOSTAT crop and livestock observations and flags for independent cross-checking against national statistics.",
+    "Obtain region-coded crop area, production and yield observations for the four administrative regions, with a consistent crosswalk between agricultural survey geography and current regional boundaries."
   ],
-  "recommendation": "Retain Eswatini as research-only. The evidence base includes ministry crop production and livestock series, FAO's 2026 maize and FMD assessment, a World Bank 2025 value-chain review with indicative per-hectare gross margins, and government programme results. The World Bank figures can inform carefully labelled benchmark scenarios, but current crop-specific farm-gate prices and farmer-paid input costs remain essential. Do not activate a calculator profile until the final 2025/26 production tables and local price/cost evidence are verified."
+  "recommendation": "Retain Eswatini as research-only. The four first-level administrative regions are now represented in the region lookup. Ministry crop evidence and World Bank modelled enterprise benchmarks are useful for further validation, but crop-specific regional yields, current dated farmgate prices and farmer-paid input costs remain incomplete. Do not activate a calculator profile until the missing regional observations, current cost schedules and test cases are verified."
 }
