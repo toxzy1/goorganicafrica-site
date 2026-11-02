@@ -967,7 +967,18 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_08_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "Mali's territorial reorganisation is operational. The Government reported 19 regions and the District of Bamako, with new administrative units operational and governors, prefects and sub-prefects appointed. The 19-region list is recorded separately from the Bamako district. Region names are cross-checked against the 2025 administrative division reference; spelling is normalized to French diacritics where appropriate.",
+        "sources": [
+          "https://gouvernement.ml/category/actions-du-gouvernement/",
+          "https://gouvernement.ml/5eme-cohorte-de-a-lecole-de-la-citoyennete-le-general-de-brigade-issa-ousmane-coulibaly-fait-le-point-sur-les-reformes-territoriales-et-de-la-decentralisation-dans-notre-pays/",
+          "https://www.worldfactbook.co/edition.php?country=mali&year=2025",
+          "https://www.ortm.ml/index.php/decoupage-administratif-et-territorial-la-nouvelle-carte-administrative-du-mali-operationnelle"
+        ],
+        "regional_lookup": "19 administrative regions added to src/_data/calculator/regions.json. District of Bamako is separate and excluded from the 19-region list; lookup only, not activated."
+      }
     },
     {
       "code": "MR",
@@ -1141,7 +1152,18 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_08_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "Niger's current official presidential country profile continues to identify eight regions: Agadez, Diffa, Dosso, Maradi, Niamey, Tahoua, Tillabéri and Zinder. The Ministry's May 12, 2026 presentation of a 19-region reorganisation is explicitly described as a project/proposal. It is not used to replace the current eight-region lookup. Proposed names are retained as a watch item pending legal enactment and implementation.",
+        "sources": [
+          "https://presidence.ne/pages/decouvrir-niger",
+          "https://anp.ne/projet-de-redecoupage-administratif-du-niger-le-pays-passe-de-8-a-19-regions/",
+          "https://www.actuniger.com/politique/21982-niger-la-nouvelle-carte-administrative-envisagee-par-le-gouvernement-suscite-deja-des-polemiques",
+          "https://ecowap.ecowas.int/media/ecowap/naip/files/Niger_English.pdf"
+        ],
+        "regional_lookup": "8 current administrative regions retained/added in src/_data/calculator/regions.json. The proposed 19-region plan is not applied to the selector until enacted and implemented; lookup only, not activated."
+      }
     },
     {
       "code": "CG",
