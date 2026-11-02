@@ -1,0 +1,91 @@
+{
+  "title": "GoOrganicAfrica Central African Republic calculator-readiness review",
+  "batch": 13,
+  "review_date": "2026-11-02",
+  "country": {
+    "code": "CF",
+    "name": "Central African Republic",
+    "calculator_status": "not_active"
+  },
+  "administrative_geography": {
+    "level": "prefecture",
+    "count": 20,
+    "units": [
+      "Bamingui-Bangoran",
+      "Bangui",
+      "Basse-Kotto",
+      "Haute-Kotto",
+      "Haut-Mbomou",
+      "Kémo",
+      "Lobaye",
+      "Lim-Pendé",
+      "Mambéré",
+      "Mambéré-Kadéï",
+      "Mbomou",
+      "Nana-Grébizi",
+      "Nana-Mambéré",
+      "Ombella-M'Poko",
+      "Ouaka",
+      "Ouham",
+      "Ouham-Fafa",
+      "Ouham-Pendé",
+      "Sangha-Mbaéré",
+      "Vakaga"
+    ],
+    "special_note": "The 20-unit list comprises 18 administrative prefectures, two economic prefectures and Bangui as the capital prefecture/commune in commonly used administrative listings. ICASEES also publishes seven broad regions; do not mix those regional groupings with prefecture selectors.",
+    "boundary_validation": "Official coding/boundary crosswalk still required before historical crop-data joins."
+  },
+  "evidence": [
+    {
+      "source": "FAO GIEWS",
+      "reference_date": "2026-07-15",
+      "finding": "2026 maize planting completed in central/southern areas under near-average planted area; northern millet/sorghum planting completed in early July. Harvest timing and access remain affected by weather and insecurity.",
+      "limit": "Seasonal outlook, not final crop yield or production observations.",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=CF"
+    },
+    {
+      "source": "FEWS NET",
+      "publication": "September 2026",
+      "finding": "August 2026 maize market price 514 FCFA/kg in Birao and 257 FCFA/kg in Bangui.",
+      "limit": "Market price observations, not verified farmgate prices; market/location/date must remain attached.",
+      "url": "https://fews.net/west-africa/central-african-republic/key-message-update/september-2026"
+    },
+    {
+      "source": "World Bank indicator sourced to FAOSTAT",
+      "year": 2024,
+      "finding": {
+        "cereal_production_tonnes": 282868,
+        "cereal_yield_kg_per_ha": 788
+      },
+      "limit": "National cereal aggregate only, not crop-specific or prefecture-specific.",
+      "url": "https://data.worldbank.org/indicator/AG.PRD.CREL.MT?locations=A9"
+    },
+    {
+      "source": "ICASEES",
+      "publication": "2025 provisional RGPH-4 indicators",
+      "finding": "Published population data for seven broad administrative/statistical regions.",
+      "limit": "Useful geography context; not a crop production dataset.",
+      "url": "https://www.icasees.org/index.php?q=statistiques&r=indicateurs"
+    }
+  ],
+  "readiness": {
+    "criteria_certified": 0,
+    "calculator_status": "not_active",
+    "outstanding": [
+      "prefecture/crop/season area-production-yield tables",
+      "official prefecture codes and boundary crosswalk",
+      "dated farmgate prices",
+      "seed and input costs",
+      "irrigation and energy costs",
+      "labour and machinery rates",
+      "regional enterprise budgets",
+      "currency handling and calculator tests"
+    ]
+  },
+  "safeguards": [
+    "No active profile or formula changed.",
+    "No invented crop values, prices or costs.",
+    "Market observations remain distinct from farmgate prices.",
+    "No activation or deployment."
+  ]
+}
