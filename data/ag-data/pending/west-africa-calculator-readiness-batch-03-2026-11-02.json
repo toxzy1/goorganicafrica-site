@@ -1,0 +1,74 @@
+{
+  "title": "GoOrganicAfrica calculator readiness evidence batch 03",
+  "review_date": "2026-11-02",
+  "scope": "Additional official catalogue and access-policy checks for Benin and Senegal. This batch adds source discovery and data governance facts only; no new numeric calculator inputs are certified.",
+  "countries": [
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "status": "additional_official_statistics_route_identified_download_temporarily_unavailable",
+      "sources": [
+        {
+          "title": "INStaD Statistiques Agricoles",
+          "url": "https://www.instad.bj/statistiques/statistiques-agricoles",
+          "findings": "Official page lists the definitive 2023-2024 campaign results PDF (912.77 KB), 2023 macro agricultural indicators, and 2022 National Agricultural Census volumes including the main tables volume (37.49 MB) and main results volume (22.96 MB)."
+        },
+        {
+          "title": "FAO AGRISurvey Benin access-to-data",
+          "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/benin/en",
+          "findings": "Links ESA 2024 interactive statistical tables and notes an October 2026 survey brief for agricultural season 2024/25."
+        },
+        {
+          "title": "FAO ESA 2024 release",
+          "url": "https://www.fao.org/in-action/agrisurvey/news/news-detail/benin-marks-a-milestone-with-its-first-agricultural-data-release-under-50x2030/en",
+          "findings": "Confirms ESA 2024 has crop area, production, yield, agricultural input use and harvest/post-harvest loss information."
+        }
+      ],
+      "verified_facts": [
+        "INStaD says annual area and production series are sourced from the Ministry's Directorate of Programming and Forecasting.",
+        "INStaD states yield is calculated as production divided by area, with conversion to the stated unit.",
+        "The INStaD 2023/24 report link returned HTTP 503 in this retrieval attempt; no crop-level values extracted.",
+        "The ESA 2024 Open Data for Africa link returned HTTP 403; no ESA 2024 table values extracted."
+      ],
+      "blockers": [
+        "Retrieve INStaD campaign report and census tables using a working official download endpoint.",
+        "Extract crop area, production and yields by crop and region; reconcile survey/campaign definitions.",
+        "Obtain dated producer/farmgate prices and current input/labour cost evidence separately."
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "status": "official_catalogue_related_materials_and_microdata_access_policy_verified",
+      "sources": [
+        {
+          "title": "ANADS EAA 2024-2025 catalogue",
+          "url": "https://anads.ansd.sn/index.php/catalog/351",
+          "findings": "Official national record, survey identity SEN-DAPSA-EAA2024-2025-v1, reference period 2024-2025, DAPSA producer and 2026 anonymised version."
+        },
+        {
+          "title": "ANADS related materials",
+          "url": "https://anads.ansd.sn/index.php/catalog/351/related-materials",
+          "findings": "Phase 1 and Phase 2 questionnaires, enumerator manual, and local-to-standard unit conversion workbooks for arboriculture, horticulture and rainfed crops are listed."
+        }
+      ],
+      "governance": [
+        "Survey covers all 45 departments, but anonymised microdata replaces department with agroecological zone while retaining region.",
+        "Microdata is confidential; use is restricted to aggregated statistical outputs.",
+        "Microdata may not be copied or transmitted to other persons or organisations without prior written DAPSA authorisation.",
+        "Local measurement conversion workbooks should be used before yield or price comparisons."
+      ],
+      "blockers": [
+        "Use public aggregate tables where available, or request DAPSA-authorised access before using microdata.",
+        "Do not publish department-level claims from anonymised agroecological-zone data.",
+        "Extract actual weighted aggregates and validate units, season, crop identity and sample quality."
+      ]
+    }
+  ],
+  "safeguards": [
+    "No raw confidential microdata was downloaded, stored or redistributed.",
+    "No crop values were invented or certified from a source announcement alone.",
+    "Neither country is calculator-ready; existing ten active profiles and calculator formulas remain untouched."
+  ],
+  "next_batch": "Obtain the INStaD Benin campaign/census files via an alternate official route; for Senegal, extract public aggregate tables and apply official conversion tables, or seek written DAPSA authorisation for microdata."
+}
