@@ -1,0 +1,76 @@
+{
+  "title": "GoOrganicAfrica Gabon calculator readiness review",
+  "batch": 15,
+  "review_date": "2026-11-02",
+  "country": {
+    "name": "Gabon",
+    "iso2": "GA",
+    "iso3": "GAB",
+    "currency": "XAF"
+  },
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "source": "Gabon Ministry of Interior, Territorial Organisation",
+    "source_url": "https://interieur.gouv.ga/decoupage-territorial/",
+    "first_level_unit": "province",
+    "first_level_count": 9,
+    "provinces": [
+      "Estuaire",
+      "Haut-Ogooué",
+      "Moyen-Ogooué",
+      "Ngounié",
+      "Nyanga",
+      "Ogooué-Ivindo",
+      "Ogooué-Lolo",
+      "Ogooué-Maritime",
+      "Woleu-Ntem"
+    ],
+    "lower_level_counts": {
+      "departments": 48,
+      "communes": 52,
+      "districts": 26,
+      "cantons": 164
+    },
+    "caveat": "Ministry page published 2018 and reports DGAT counts dated May 2016. Do not mix lower-level units into the province selector; verify later legal changes before department-level spatial joins."
+  },
+  "agricultural_evidence": {
+    "rga_source": "https://agriculture.gouv.ga/rapports-du-recensement-general-de-lagriculture-rga/",
+    "epva_source": "https://new.instatgabon.org/fr/enquete-de-productions-vegetale-et-animale/epva-2022-2023",
+    "finding": "Official Ministry page confirms RGA launched in 2019 and lists the census report volumes. INSTAT lists EPVA 2022-2023 survey reports. Existing evidence records approximate national sector estimates and household-location shares, but original crop/province tables have not yet been extracted.",
+    "extraction_status": "report_catalogue_and_survey_sources_verified_numeric_crop_tables_pending"
+  },
+  "seasonal_context": {
+    "source": "https://www.fao.org/giews/countrybrief/country.jsp?code=GAB&lang=fr",
+    "reference_date": "2026-06-04",
+    "findings": [
+      "Cassava and plantains are the main food crops; only small quantities of maize are produced.",
+      "FAO forecast 2026 cereal import requirements at 255,000 tonnes, including 170,000 tonnes of wheat and 70,000 tonnes of rice.",
+      "Above-average rainfall in the first half of 2026 caused flooding and soil oversaturation and may have affected the secondary maize crop."
+    ],
+    "caveat": "Cereal import requirements are forecasts, not domestic crop production or farmgate price data; rainfall impact is an assessment, not a measured final yield."
+  },
+  "readiness": {
+    "calculator_status": "not_active",
+    "readiness_certified": false,
+    "blockers": [
+      "Extract crop and province tables from RGA and EPVA reports.",
+      "Reconcile reference periods, crop definitions and units with other national/international series.",
+      "Obtain current dated province-level farmgate prices.",
+      "Obtain current farmer-facing seed, fertilizer, crop protection, labour, machinery and irrigation costs.",
+      "Build province-appropriate enterprise budgets, currency handling, mappings and tests."
+    ]
+  },
+  "sources": [
+    "https://interieur.gouv.ga/decoupage-territorial/",
+    "https://agriculture.gouv.ga/rapports-du-recensement-general-de-lagriculture-rga/",
+    "https://new.instatgabon.org/fr/enquete-de-productions-vegetale-et-animale/epva-2022-2023",
+    "https://www.fao.org/giews/countrybrief/country.jsp?code=GAB&lang=fr",
+    "https://www.beac.int/pays/gabon/"
+  ],
+  "safeguards": [
+    "Research-only lookup; not an active calculator profile.",
+    "No existing active country profile or calculator formula changed.",
+    "No prices, yields or production costs invented.",
+    "No merge or deployment performed."
+  ]
+}
