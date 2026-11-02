@@ -7,7 +7,7 @@
     "currency_name": "São Tomé and Príncipe dobra",
     "peg": "The dobra has been pegged to the euro at 24.5 STN per EUR since 2010; confirm current central-bank rate before any conversion."
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-02",
   "status": "research_only_not_published_to_calculator",
   "calculator_readiness": "not_ready_research_only",
   "purpose": "Country evidence inventory for later crop-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
@@ -308,5 +308,205 @@
     "Do not activate São Tomé and Príncipe or change calculator formulas based on this file.",
     "Do not substitute world cocoa benchmark prices, export unit values, consumer prices or national CPI for producer farmgate prices.",
     "Do not treat the secondary FAOSTAT presentation as the primary data source."
+  ],
+  "evidence": [
+    {
+      "topic": "INE 2017 statistical yearbook: agricultural production and livestock series",
+      "publication_date": "2018",
+      "reference_period": "2013-2017",
+      "source": "Instituto Nacional de Estatística, São Tomé e Príncipe em Números 2017",
+      "source_url": "https://www.ine.st/phocadownload/userupload/Documentos/STPemNumeros/STPemNumeros%20%202017.pdf",
+      "observations": [
+        {
+          "indicator": "Banana production",
+          "values": [
+            41119.5,
+            43174.6,
+            43249.1,
+            42878.9,
+            45348.6
+          ],
+          "unit": "tonnes",
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017
+          ]
+        },
+        {
+          "indicator": "Tomato production",
+          "values": [
+            1230.4,
+            1291.9,
+            1201.7,
+            1021.5,
+            1225.8
+          ],
+          "unit": "tonnes",
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017
+          ]
+        },
+        {
+          "indicator": "Coffee export-crop output",
+          "values": [
+            3.9,
+            12,
+            4.4,
+            1.2,
+            5.9
+          ],
+          "unit": "tonnes",
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017
+          ]
+        },
+        {
+          "indicator": "Cocoa/chocolate export-crop output",
+          "values": [
+            5.9,
+            6.4,
+            6.3,
+            5.1,
+            5
+          ],
+          "unit": "tonnes",
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017
+          ]
+        },
+        {
+          "indicator": "Cattle herd",
+          "values": [
+            1158,
+            1262,
+            1349,
+            1362,
+            1363
+          ],
+          "unit": "head",
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017
+          ]
+        },
+        {
+          "indicator": "Pig herd",
+          "values": [
+            28230,
+            29350,
+            31105,
+            35319,
+            35320
+          ],
+          "unit": "head",
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017
+          ]
+        },
+        {
+          "indicator": "Poultry meat production",
+          "values": [
+            385,
+            435,
+            485,
+            594,
+            595.2
+          ],
+          "unit": "tonnes",
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017
+          ]
+        }
+      ],
+      "caveats": [
+        "These are historical national series published in a 2017 yearbook, not current 2026 observations.",
+        "The agricultural summary does not supply crop area, so no yield can be calculated.",
+        "The table heading and source attribute the series to MADR/INE; confirm units and definitions against underlying ministry records before calculator mapping.",
+        "The cocoa entry is labelled chocolate in the source table and must not be silently relabelled as raw cocoa beans."
+      ]
+    },
+    {
+      "topic": "Administrative geography, current census activity and currency context",
+      "source_urls": [
+        "https://www.ine.st/index.php/o-pais/sobre-o-pais",
+        "https://www.glebatv.st/todas-noticias/ine-inicia-fase-2-do-recenseamento-geral-da-agricultura-2025-em-sao-tome-e-principe",
+        "https://stp.gov.st/sobre_pais"
+      ],
+      "observations": [
+        {
+          "indicator": "Administrative districts",
+          "value": 7,
+          "unit": "districts",
+          "names": [
+            "Água Grande",
+            "Cantagalo",
+            "Caué",
+            "Lembá",
+            "Lobata",
+            "Mé-Zóchi",
+            "Pagué"
+          ],
+          "status": "INE official description"
+        },
+        {
+          "indicator": "Autonomous status",
+          "value": "Príncipe",
+          "status": "official INE description"
+        },
+        {
+          "indicator": "General Agricultural Census 2025",
+          "value": "phase 2 underway as of 14 May 2026",
+          "status": "media report quoting INE official"
+        },
+        {
+          "indicator": "Currency",
+          "value": "STN",
+          "status": "Government of São Tomé and Príncipe"
+        },
+        {
+          "indicator": "Fixed peg",
+          "value": 24.5,
+          "unit": "STN per EUR",
+          "status": "Government page reports Central Bank rate updated March 2025"
+        }
+      ],
+      "caveats": [
+        "INE describes seven districts and separately states that Príncipe has autonomous-region status; Pagué remains the district entry in the seven-district list.",
+        "The second phase of the 2025 agricultural census was reported as underway in May 2026; no final crop tables were found in this review.",
+        "The dobra peg is reported by the government page with a March 2025 update date; obtain current Banco Central confirmation before using a live conversion rate."
+      ]
+    }
+  ],
+  "missing_data_before_calculator_use": [
+    "Obtain the final 2025 General Agricultural Census tables, including crop area, production, yield, season and district.",
+    "Obtain current district-level farmgate prices, planting-material costs, fertilizer, crop protection, labour, machinery, irrigation and energy costs.",
+    "Build current crop-specific enterprise budgets and calculator tests.",
+    "Verify historical agricultural table definitions and units against MADR source records before use."
   ]
 }
