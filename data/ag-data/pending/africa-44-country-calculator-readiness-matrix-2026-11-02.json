@@ -319,10 +319,10 @@
       "code": "CV",
       "name": "Cabo Verde",
       "evidence_file": "data/ag-data/pending/cabo-verde-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "research_only_record_added",
+      "existing_research_note": "INE_2022_yearbook_historical_production_and_livestock_stock_estimates; FAO_GIEWS_2026-01-19_preliminary_2025_maize_estimate_1100t_and_retail_price_change_only; VI_RGA_2025_2026_legal_mandate_confirmed_final_results_not_located; FAO_AGRISurvey_2024_ILP_and_2025_PME_cycles; official_INE_GIS_22_municipality_selector; 2026_greenhouse_subsidy_is_not_cost_data",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial",
         "dated_local_farmgate_prices_and_units": "not_yet_audited",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
@@ -331,18 +331,19 @@
         "labour_rates_and_operations": "not_yet_audited",
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
+        "currency_and_exchange_rate_method": "partial",
+        "source_provenance_and_observation_date": "partial",
         "calculator_mapping_and_test_cases": "not_yet_audited"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract final VI RGA 2025/2026 municipality-level crop/season area, production and yield tables, including methods, units and observation dates.",
+        "Obtain publicly released or authorised 2024 ILP and 2025 PME survey tables for farm income, labour, productivity, production methods and input use.",
+        "Resolve the preliminary 2025 maize estimate against final national observations and raw FAOSTAT series; do not derive yield without matching harvested area.",
+        "Obtain dated municipality/island-level farmgate prices for calculator commodities; retail prices and percentage movements are not producer prices.",
+        "Obtain current farmer-paid seed, fertilizer, crop-protection, labour, irrigation water, pumping energy, machinery, packaging and inter-island transport costs.",
+        "Build separate, documented enterprise budgets for rainfed and irrigated systems, then map validated values and add calculator tests."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Request the final VI RGA 2025/2026 results and AGRISurvey tables from INE/MAA, then extract municipality-level crop, input-use and labour observations before building farm budgets."
     },
     {
       "code": "CF",
