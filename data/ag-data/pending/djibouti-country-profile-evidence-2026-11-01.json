@@ -2,7 +2,7 @@
   "country": "Djibouti",
   "iso_alpha2": "DJ",
   "iso_alpha3": "DJI",
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-02",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only evidence on agricultural structure, strategic value chains, market dependence, seasonal and food-security risks, and source availability. Not a farm-profit calculator profile and not authorization to activate Djibouti.",
   "currency": {
@@ -226,5 +226,19 @@
     "Validation of dates production, horticulture market-share estimates and livestock value-chain indicators against underlying ministry or statistical publications.",
     "Buyer contracts, farm-gate price deductions, quality grades, post-harvest losses, marketable yields and realistic financing costs for the selected value chains."
   ],
-  "recommendation": "Retain Djibouti as research-only. The strongest current evidence supports a livestock-led rural economy, a limited but strategically important irrigated/protected horticulture sector, date production potential, high import dependence and significant 2026 pastoral/food-security risks. Do not activate a calculator profile or use illustrative tomato yields as expected farm performance until current crop-level yields, local farm-gate prices and full water/energy/input/labour budgets are verified."
+  "recommendation": "Retain Djibouti as research-only. The strongest current evidence supports a livestock-led rural economy, a limited but strategically important irrigated/protected horticulture sector, date production potential, high import dependence and significant 2026 pastoral/food-security risks. Do not activate a calculator profile or use illustrative tomato yields as expected farm performance until current crop-level yields, local farm-gate prices and full water/energy/input/labour budgets are verified.",
+  "administrative_geography": {
+    "source": "Government of Djibouti, Regions",
+    "source_url": "https://www.egouv.dj/page/regions",
+    "verified_regions": [
+      "Ali Sabieh",
+      "Dikhil",
+      "Tadjourah",
+      "Obock",
+      "Arta"
+    ],
+    "separate_city_status": "Djibouti City has a special statutory status and is administered separately; it is not a sixth decentralised region.",
+    "calculator_selector_note": "Use the five regional collectivities as the first-level selector. Keep Djibouti City distinct rather than mixing its three communes into the regional list."
+  },
+  "audit_update": "Batch 21: official five-region administrative geography verified and added to the calculator region lookup. No calculator values or active profiles were changed."
 }
