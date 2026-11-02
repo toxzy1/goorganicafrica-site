@@ -1,0 +1,91 @@
+{
+  "title": "GoOrganicAfrica readiness batch 07 - Guinea and Guinea-Bissau administrative geography",
+  "review_date": "2026-11-02",
+  "scope": "Current first-level regional lookup verification only. No country is certified calculator-ready.",
+  "countries": [
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "administrative_geography": {
+        "level": "administrative_region",
+        "count": 10,
+        "names": [
+          "Conakry",
+          "Kindia",
+          "Boké",
+          "Mamou",
+          "Labé",
+          "Faranah",
+          "Kankan",
+          "Nzérékoré",
+          "Beyla",
+          "Siguiri"
+        ],
+        "new_regions": [
+          "Beyla",
+          "Siguiri"
+        ],
+        "effective_creation_date": "2026-08-20",
+        "note": "The government presentation predates the creation of Beyla and Siguiri. Their creation is confirmed by the August 2026 decree; confirm the implementing instrument and prefecture boundary assignments before regional crop mapping.",
+        "sources": [
+          "https://gouvernement.gov.gn/presentation/",
+          "https://guineelex.com/decrets-arretes/decret-d-2026-0259-prg-sgg",
+          "https://agpguinee.com/guinee-voici-les-onze-nouvelles-prefectures-creees-decret/"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "regional crop tables and revised prefecture crosswalk pending",
+        "farmgate_prices": "dated regional farmgate prices and units pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "regional crop budgets pending",
+        "currency": "GNF; confirm price denomination and any redenomination or conversion treatment in source tables",
+        "tests": "region/prefecture/crop mapping and localization tests pending"
+      },
+      "safeguards": [
+        "Do not use pre-August 2026 region boundaries as if they were current.",
+        "Do not infer prefecture-to-new-region assignments without the implementing instrument.",
+        "Do not activate until crop data, prices, costs, budgets and tests are validated."
+      ]
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "administrative_geography": {
+        "level": "first_order_administrative_region",
+        "count": 8,
+        "names": [
+          "Bafatá",
+          "Biombo",
+          "Bolama-Bijagós",
+          "Cacheu",
+          "Gabú",
+          "Oio",
+          "Quínara",
+          "Tombali"
+        ],
+        "special_unit_note": "The Autonomous Sector of Bissau is a separate first-order unit, not one of the eight regions, and is excluded from this region-only list.",
+        "sources": [
+          "https://bissaugov.com/guine-bissau",
+          "https://assets.publishing.service.gov.uk/media/65f31c5efa1851001a011765/Guinea-Bissau_toponymic_factfile.pdf",
+          "https://unfccc.int/sites/default/files/resource/GNB_NC4_English_FINAL_16112025_JLT.pdf"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "regional crop data and survey extraction pending",
+        "farmgate_prices": "dated regional farmgate prices and units pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "regional crop budgets pending",
+        "currency": "XOF; confirm local market price units and source dates",
+        "tests": "regional crop calculation and localization tests pending"
+      },
+      "safeguards": [
+        "Do not include the Autonomous Sector of Bissau as a region.",
+        "Do not treat historical rice series as current validated yields without source and unit checks.",
+        "Do not activate until crop data, prices, costs, budgets and tests are validated."
+      ]
+    }
+  ],
+  "summary": "Two additional regional lookup lists have been added. Guinea's two newly created regions are explicitly flagged for implementation crosswalk verification; Guinea-Bissau's autonomous capital sector is kept separate from the eight regions."
+}
