@@ -7,7 +7,7 @@
     "name": "Comorian franc",
     "note": "Currency identification only; no current agricultural prices recorded in this evidence file."
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-02",
   "status": "research_only_not_published_to_calculator",
   "scope": "Country-level agricultural evidence, source inventory, data-quality notes and missing farm-budget inputs. This is not a calculator profile and does not authorize country activation.",
   "geographic_coverage": {
@@ -229,6 +229,130 @@
       "source": "World Bank indicator page citing FAOSTAT",
       "source_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG?locations=KM",
       "caveat": "Aggregate cereal-yield indicator, not a crop-specific yield or a farm-level observation. Do not use as a maize, rice or other individual crop yield."
+    },
+    {
+      "topic": "RGA-2 census coverage, methodology and microdata access",
+      "reference_period": "Crop campaign December 2023-November 2024; livestock May 2024-April 2025",
+      "values": [
+        {
+          "indicator": "Family agricultural holdings listed",
+          "value": 73818,
+          "unit": "holdings"
+        },
+        {
+          "indicator": "Modern/institutional agricultural holdings enumerated separately",
+          "value": 148,
+          "unit": "holdings"
+        },
+        {
+          "indicator": "Family holdings sampled for detailed survey",
+          "value": 11454,
+          "unit": "holdings"
+        },
+        {
+          "indicator": "Enumeration areas covered",
+          "value": 964,
+          "unit": "areas"
+        },
+        {
+          "indicator": "Agricultural labour force",
+          "value": 138723,
+          "unit": "people"
+        },
+        {
+          "indicator": "Agricultural land on Ngazidja",
+          "value": 44561,
+          "unit": "ha"
+        },
+        {
+          "indicator": "Agricultural land on Ndzuwani",
+          "value": 37191,
+          "unit": "ha"
+        },
+        {
+          "indicator": "Agricultural land on Mwali",
+          "value": 7531,
+          "unit": "ha"
+        },
+        {
+          "indicator": "Cultivated land",
+          "value": 56576,
+          "unit": "ha"
+        },
+        {
+          "indicator": "Share of cultivated land fertilised",
+          "value": 20,
+          "unit": "%"
+        },
+        {
+          "indicator": "Fertilised land receiving organic fertiliser",
+          "value": 54,
+          "unit": "% of fertilised land"
+        },
+        {
+          "indicator": "Fertilised land receiving mineral fertiliser",
+          "value": 29,
+          "unit": "% of fertilised land"
+        },
+        {
+          "indicator": "Fertilised land receiving combined organic/mineral fertiliser",
+          "value": 17,
+          "unit": "% of fertilised land"
+        },
+        {
+          "indicator": "Crop producers using phytosanitary products",
+          "value": 10,
+          "unit": "%"
+        },
+        {
+          "indicator": "Livestock holdings",
+          "value": 49679,
+          "unit": "holdings"
+        },
+        {
+          "indicator": "Poultry stock",
+          "value": 270571,
+          "unit": "head"
+        },
+        {
+          "indicator": "Goat stock",
+          "value": 116674,
+          "unit": "head"
+        },
+        {
+          "indicator": "Cattle stock",
+          "value": 55835,
+          "unit": "head"
+        }
+      ],
+      "source": "INSEED RGA-2 2025 results and INSEED NADA metadata",
+      "source_url": "https://inseed-comores.org/publications/rga2-resultats-module-de-base-2025",
+      "supporting_source_url": "https://www.nada.inseed-comores.org/index.php/catalog/16",
+      "caveat": "The RGA-2 detailed household survey is a sample survey with weights; national totals must be taken from the official weighted tables, not obtained by summing unweighted microdata cases. The public results summary provides national crop totals and selected yields, not all crop-by-island enterprise budgets. Input adoption shares are not quantities or expenditure costs."
+    },
+    {
+      "topic": "Microdata variables and geographic analysis levels",
+      "reference_period": "RGA-2 version 1.0, released April 2026",
+      "values": [
+        {
+          "indicator": "Crop production data dictionary",
+          "value": "Section F, production and final use of agricultural products; 52,585 cases and 20 variables",
+          "unit": "metadata description"
+        },
+        {
+          "indicator": "Crop production geography fields",
+          "value": "Island and prefecture identifiers; crop name and production unit are documented",
+          "unit": "metadata fields"
+        },
+        {
+          "indicator": "Geographic aggregation levels",
+          "value": "Island, prefecture, commune, village/locality",
+          "unit": "metadata levels"
+        }
+      ],
+      "source": "INSEED NADA, COM-INSEED-RGA2-2025-v1.0",
+      "source_url": "https://www.nada.inseed-comores.org/index.php/catalog/16/data-dictionary/F15",
+      "caveat": "The public catalogue documents the variables and data structure. Access to anonymised microdata is subject to an online request, research-purpose declaration and confidentiality commitments. Metadata are not themselves extracted numeric microdata observations."
     }
   ],
   "data_quality_and_use": [
@@ -236,7 +360,12 @@
     "The RGA-2 public microdata catalogue records version 1.0, dated 15 April 2026, and describes the released files as cleaned, weighted and validated by the technical committee.",
     "The census is a national campaign source; island-specific results and crop-level denominator tables must be checked before deriving regional yields or budgets.",
     "Production totals, yields, retail prices, farm-gate prices and input costs are different measures and must remain separately labelled.",
-    "No current verified farm-gate commodity prices or detailed crop enterprise budgets were established from the sources reviewed."
+    "No current verified farm-gate commodity prices or detailed crop enterprise budgets were established from the sources reviewed.",
+    "RGA-2 version 1.0 is documented by INSEED as cleaned, weighted and validated by the technical committee; use final survey weights for population totals and avoid treating raw sample counts as population estimates.",
+    "The RGA-2 sampled 11,454 family holdings after listing 73,818 family holdings across 964 enumeration areas, and separately enumerated 148 modern/institutional holdings. This sampling design matters when deriving national or island estimates.",
+    "The public report's national crop totals and selected yields are useful evidence, but a complete island/crop/season table with matching harvested-area denominators is still needed for calculator-grade yield distributions.",
+    "Input adoption shares (fertiliser and phytosanitary use) do not supply the farmer's paid unit prices, quantities, rates or per-hectare costs.",
+    "The anonymised microdata are available through a controlled INSEED NADA application process for research use and cannot be treated as an unrestricted public download."
   ],
   "sources": [
     {
@@ -287,6 +416,21 @@
       "url": "https://www.ifad.org/en/w/countries/comoros",
       "source_type": "Agriculture and rural livelihoods context",
       "caveat": "Contextual source only; not used as a source of crop budgets or commodity prices."
+    },
+    {
+      "publisher": "Ministère de la Justice, des Affaires islamiques et de la Fonction publique, Union des Comores",
+      "title": "Loi n°11-006/AU du 02 mai 2011 portant organisation territoriale de l’Union des Comores",
+      "url": "https://justice.gouv.km/texte/loi-n11-006-au-du-02-mai-2011-portant-organisation-territoriale-de-lunion-des-comores/",
+      "source_type": "Official territorial organisation law",
+      "note": "Primary legal source for the territorial organisation framework. For calculator selection, retain the three autonomous islands as top-level geography; prefectures and communes are lower levels."
+    },
+    {
+      "publisher": "INSEED NADA",
+      "title": "RGA-2 2025 metadata and data dictionary — crop production Section F",
+      "url": "https://www.nada.inseed-comores.org/index.php/catalog/16/data-dictionary/F15",
+      "publication_or_version_date": "2026-04-15",
+      "source_type": "Official data dictionary",
+      "note": "Documents production file variables including island, prefecture, crop name and production unit. Microdata access is regulated; no unapproved microdata were downloaded or processed in this batch."
     }
   ],
   "missing_data_before_calculator_use": [
@@ -297,7 +441,22 @@
     "Irrigation, water, energy, land preparation, tools, machinery hire, transport, packaging, storage and post-harvest costs.",
     "Crop cycle length, planting density, harvest frequency, marketable share, losses and farm-gate grade differentials.",
     "Livestock species/breed production systems, feed costs, veterinary costs, mortality, productivity and dated sale prices.",
-    "Independent validation of census table definitions, weights and crop-specific denominators before converting national observations into enterprise budgets."
+    "Independent validation of census table definitions, weights and crop-specific denominators before converting national observations into enterprise budgets.",
+    "Obtain INSEED-authorised access to RGA-2 anonymised microdata or published weighted tables, then extract crop-specific harvested area, production, yield and season by island and prefecture using final weights.",
+    "Extract crop sales/use and any recorded prices or production-use variables from RGA-2, verifying whether price fields exist and whether they represent farmgate transactions rather than imputed or community prices.",
+    "Collect dated farmer-paid seed, planting-material, fertiliser, crop-protection, labour, irrigation, energy, machinery, packaging and transport prices by island and production system.",
+    "Build island-specific enterprise budgets and yield distributions; account for small fragmented holdings and mixed subsistence/market orientation."
   ],
-  "recommendation": "Retain Comoros as research-only. The national census provides a substantial evidence base for agricultural structure, production and livestock, but the currently identified public evidence does not establish a complete, current farm-level cost and farm-gate price dataset. Do not activate a Comoros calculator profile or infer profitability until the missing budget inputs are sourced and validated."
+  "recommendation": "Retain Comoros as research-only. RGA-2 is a substantial and current structural dataset, with national production totals, selected yields and a documented weighted microdata framework. Do not activate until detailed island/crop/season tables are extracted under INSEED access rules and farmgate prices, itemised input costs, labour operations and enterprise budgets are validated.",
+  "administrative_geography": {
+    "selector_level": "Autonomous island (first-order territorial unit)",
+    "islands": [
+      "Ngazidja (Grande Comore)",
+      "Ndzuwani (Anjouan)",
+      "Mwali (Mohéli)"
+    ],
+    "source": "https://justice.gouv.km/texte/loi-n11-006-au-du-02-mai-2011-portant-organisation-territoriale-de-lunion-des-comores/",
+    "supporting_source": "https://www.nada.inseed-comores.org/index.php/catalog/16",
+    "note": "Use the three autonomous islands as the calculator's top-level region choices. INSEED RGA-2 metadata also carries island, prefecture, commune and village/locality geography. The 16 prefectures and 54 communes are lower administrative/analysis levels and should not be mixed into the island-level selector."
+  }
 }
