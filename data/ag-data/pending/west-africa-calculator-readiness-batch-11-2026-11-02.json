@@ -1,0 +1,72 @@
+{
+  "title": "Mauritania administrative geography and agricultural evidence review",
+  "country_code": "MR",
+  "country_name": "Mauritania",
+  "review_date": "2026-11-02",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "first_level_unit": "Wilaya (administrative region)",
+    "count": 15,
+    "regions": [
+      "Adrar",
+      "Assaba",
+      "Brakna",
+      "Dakhlet Nouadhibou",
+      "Gorgol",
+      "Guidimaka",
+      "Hodh Ech Chargui",
+      "Hodh El Gharbi",
+      "Inchiri",
+      "Nouakchott Nord",
+      "Nouakchott Ouest",
+      "Nouakchott Sud",
+      "Tagant",
+      "Tiris Zemmour",
+      "Trarza"
+    ],
+    "note": "DGAT (Ministry of Interior) reports 15 administrative wilayas and 63 moughataas. Do not confuse these with the 13 elected regional local-government entities described in older decentralisation material. The calculator lookup uses the 15 administrative wilayas."
+  },
+  "agricultural_evidence": {
+    "autumn_2025_rice": {
+      "source": "https://fr.madar.mr/actualites/augmentation-de-la-production-de-la-campagne-agricole-dautomne-2025-de-27-par-rapport-a-la-saison-precedente/",
+      "publication_date": "2026-01-28",
+      "reported_national_production_tonnes": 229353,
+      "reported_area_hectares": 48800,
+      "reported_yield_tonnes_per_hectare": 4.7,
+      "reported_region_production_tonnes": {
+        "Trarza": 206005,
+        "Gorgol": 13217,
+        "Brakna": 10131
+      },
+      "reported_region_area_hectares": {
+        "Trarza": 43668,
+        "Gorgol": 2599,
+        "Brakna": 2533
+      },
+      "caveat": "News report reproduces Ministry of Agriculture figures; verify against original ministry tables before calculator use. Regional coverage is only three of 15 wilayas; do not spread national yield to all regions."
+    },
+    "current_context": {
+      "source": "https://www.fao.org/giews/countrybrief/country.jsp?code=MR",
+      "reference_date": "2026-10-28",
+      "note": "FAO GIEWS reports the 2026 coarse-grain harvest underway and irrigated rice harvest expected in November-December 2026; current risk context is not a final yield dataset or farmgate price series."
+    },
+    "rice_2024_context": {
+      "source": "https://akademiya2063.org/publications/AAgWa%20Crop%20Production%20Forecasts/AAgWa%20Crop%20Production%20Forecasts%20Series%20No.%20118%20Mauritania%20-%20Rice.pdf",
+      "note": "AAgWa 2024 district-level rice forecast tables provide prior-year cross-checks for selected departments; forecast values must remain distinct from final observations."
+    }
+  },
+  "lookup_change": "15 administrative wilayas added to src/_data/calculator/regions.json; lookup only, not activated.",
+  "readiness_gaps": [
+    "Verify original Ministry of Agriculture 2025 autumn campaign tables and rice units/definitions.",
+    "Extract crop area, production and yield by crop, season and wilaya.",
+    "Obtain dated farmgate prices by crop, wilaya, market and unit; retail prices are not farmgate prices.",
+    "Obtain current seed, fertilizer, crop protection, irrigation/energy, labour and machinery costs.",
+    "Build wilaya-specific enterprise budgets distinguishing irrigated, rainfed, flood-recession and off-season systems.",
+    "Validate MRU currency handling, provenance, calculator mapping and tests."
+  ],
+  "safeguards": [
+    "No missing prices or costs invented.",
+    "No active country profile or formula changed.",
+    "Country remains inactive pending all readiness criteria."
+  ]
+}
