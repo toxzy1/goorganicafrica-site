@@ -24,7 +24,28 @@
       "Mokhotlong",
       "Thaba-Tseka"
     ],
-    "caution": "Agricultural year runs 1 August to 31 July. Distinguish summer and winter crop seasons and four agro-ecological zones. The 2022/23 crop survey is rural household survey data; separate commercial-farm and livestock census sources exist. Imported South African cereal prices, wholesale auction indicators and individual-farmer fibre prices are not interchangeable."
+    "caution": "Agricultural year runs 1 August to 31 July. Distinguish summer and winter crop seasons and four agro-ecological zones. The 2022/23 crop survey is rural household survey data; separate commercial-farm and livestock census sources exist. Imported South African cereal prices, wholesale auction indicators and individual-farmer fibre prices are not interchangeable.",
+    "administrative_geography": {
+      "first_level_units": [
+        "Butha-Buthe",
+        "Leribe",
+        "Berea",
+        "Maseru",
+        "Mafeteng",
+        "Mohale's Hoek",
+        "Quthing",
+        "Qacha's Nek",
+        "Mokhotlong",
+        "Thaba-Tseka"
+      ],
+      "first_level_unit": "Administrative district",
+      "lower_levels": "Constituencies and community councils are lower administrative levels; keep them separate from the first-level district selector.",
+      "sources": [
+        "https://www.gov.ls/wp-content/uploads/2022/03/Third-National-Communication.pdf",
+        "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Demography/2021_LDS_Vol_IIIA_Population_Dynamics_Analytical_Report.pdf",
+        "https://www.homeaffairs.gov.ls/passports/"
+      ]
+    }
   },
   "evidence": [
     {
@@ -434,6 +455,47 @@
         "Reported hazards include hail, heavy rain, dry spells, heat, pests including armyworm, livestock disease and high food prices."
       ],
       "caveat": "The report distinguishes forecast from actual values and notes its 2025 crop estimates were valid to end October 2025. These must not be presented as final 2024/25 figures without the final Bureau of Statistics survey."
+    },
+    {
+      "topic": "Official first-level administrative geography for calculator region selector",
+      "reference_date": "2026-11-02",
+      "source": "Government of Lesotho national communication; Lesotho Bureau of Statistics 2021 Demographic Survey; Ministry of Home Affairs district office directory",
+      "source_urls": [
+        "https://www.gov.ls/wp-content/uploads/2022/03/Third-National-Communication.pdf",
+        "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Demography/2021_LDS_Vol_IIIA_Population_Dynamics_Analytical_Report.pdf",
+        "https://www.homeaffairs.gov.ls/passports/"
+      ],
+      "observations_text": [
+        "Lesotho is divided into ten first-level administrative districts: Butha-Buthe, Leribe, Berea, Maseru, Mafeteng, Mohale's Hoek, Quthing, Qacha's Nek, Mokhotlong and Thaba-Tseka.",
+        "The administrative hierarchy continues through constituencies and community councils. These lower units are not mixed into the first-level district selector.",
+        "The Bureau of Statistics crop survey reports crop area, production and selected input expenditure by district, making the district level the appropriate first-level geographic key for future crop data crosswalks."
+      ],
+      "caveat": "Use official district codes and boundary crosswalks before joining older crop survey records to future digital boundaries. Do not treat the four agro-ecological zones (Lowlands, Foothills, Mountains and Senqu River Valley) as administrative districts."
+    },
+    {
+      "topic": "2026/27 seasonal update and subsidised agricultural input programme",
+      "reference_date": "2026-09",
+      "source": "FEWS NET Lesotho Key Message Update, September 2026 - January 2027",
+      "source_url": "https://fews.net/southern-africa/lesotho",
+      "observations_text": [
+        "FEWS NET reports that the 2026 maize harvest is complete countrywide; Bureau of Statistics estimates national production 30 percent below the previous year and 55 percent below the five-year average, with below-average harvests in the Mountains, Senqu River Valley and Southern Lowlands and average harvests elsewhere.",
+        "FEWS NET reports land preparation progressing after a late start in several zones. It says the 2026/27 Government Input Support Programme subsidises seed prices by 70 percent and fertilizer prices by 80 percent.",
+        "The subsidy percentages describe programme support, not a universal retail price or proof that every farmer receives the subsidy. Eligibility, product list, quantities, co-payment and district-level availability must be verified before using net input prices in a farm budget.",
+        "FEWS NET expects the 2026/27 rainy season to start late and below average under forecast El Niño conditions, while input support and available seed/fertilizer are expected to support average planted area."
+      ],
+      "caveat": "These are September 2026 seasonal and programme assessments. The crop production estimate is not a full district-by-crop data table. Subsidy rates are not farmer-paid price quotations."
+    },
+    {
+      "topic": "WFP-derived market food prices, retail not farmgate",
+      "reference_date": "2026-08",
+      "source": "World Food Programme VAM market price observations via Humanitarian Data Exchange, displayed by Shelfpedia",
+      "source_url": "https://shelfpedia.com/en-ls/market-prices/",
+      "observations_text": [
+        "The public dashboard reports August 2026 retail prices for six food items across ten markets, one market in each of the ten districts.",
+        "Reported national medians include maize meal 12.5 kg at LSL 102, wheat flour 12.5 kg at LSL 137 and sugar-red beans 500 g at LSL 23.4.",
+        "These are retail food prices and packaged processed product units, not producer prices for raw crops; they must not be used as farmgate crop revenue assumptions."
+      ],
+      "caveat": "Use only as a retail food-price context indicator. Do not map maize meal to raw maize or treat consumer-market prices as producer receipts."
     }
   ],
   "data_gaps": [
@@ -443,7 +505,10 @@
     "Obtain current per-hectare enterprise budgets by crop and agro-ecological zone; the 2022/23 survey reports aggregate expenditures but not sufficiently disaggregated current budgets.",
     "Reconcile 2026 FAO provisional cereal output (42,000 tonnes combined) with the final Bureau of Statistics 2025/26 survey and cereal balance when published.",
     "Obtain current livestock disease surveillance, vaccination and movement data following the 2026 FMD outbreak context.",
-    "Verify fibre producer settlement prices after grading, testing, commission, levies, transport and export clearance; auction indicators alone are not farm-gate prices."
+    "Verify fibre producer settlement prices after grading, testing, commission, levies, transport and export clearance; auction indicators alone are not farm-gate prices.",
+    "Extract the complete September 2026 FEWS NET Key Message Update and the underlying Bureau of Statistics 2025/26 district-by-crop crop forecast tables; reconcile provisional August FAO figures against the final national crop estimate.",
+    "Verify the 2026/27 Input Support Programme eligibility, seed/fertilizer product lists, farmer co-payments, subsidy limits, district distribution and stock availability before using any subsidised input cost.",
+    "Obtain current district-level producer/farmgate prices for raw crops and livestock products; do not use WFP retail food prices as farmgate prices."
   ],
   "data_quality": {
     "overall": "good_for_historical_official_crop_and_livestock_baselines_moderate_for_current_sector_context_low_to_moderate_for_calculator_inputs",
@@ -465,12 +530,13 @@
   "calculator_readiness": {
     "status": "not_ready_research_only",
     "blockers": [
-      "Need final 2025/26 crop area, production and yield tables and cross-check against provisional FAO balance",
-      "Need current crop and livestock farm-gate prices by district and verification date",
-      "Need crop-specific enterprise budgets and current input quotations in LSL",
-      "Need current livestock product output and fibre producer settlement data"
+      "Need the full 2025/26 crop area, harvested area, production and yield tables by crop and district, including final estimates and summer/winter season distinction.",
+      "Need current district- and commodity-specific farmgate prices with units, grades, collection dates and producer/market level.",
+      "Need current farmer-paid seed, fertilizer, crop-protection, irrigation, labour, machinery, transport and packaging costs, including eligibility and co-payment rules for 2026/27 input subsidies.",
+      "Need crop-specific enterprise budgets by district and agro-ecological zone, with smallholder and commercial farm systems distinguished.",
+      "Need current livestock and livestock-product output, disease and fibre settlement data."
     ],
-    "recommendation": "Keep Lesotho directory-only and inactive. Use the official 2022/23 crop and livestock survey as historical reference data only. Do not populate live calculator assumptions from 2026 import requirements, CPI changes, national input expenditure totals or South African wool/mohair auction indicators. Reassess after the latest Bureau of Statistics crop, cereal balance, livestock and livestock-products reports are extracted and farm-gate prices and budgets are validated."
+    "recommendation": "Keep Lesotho research-only and inactive. The ten-district lookup is now present. The official 2022/23 crop survey provides historical district crop output, area and national input expenditure; FEWS NET's September 2026 update provides a current national crop estimate and input subsidy context. These do not yet supply a complete current district-by-crop dataset, current farmgate prices or farmer-paid enterprise costs. Do not activate until these are extracted and validated."
   },
   "sources": [
     {
