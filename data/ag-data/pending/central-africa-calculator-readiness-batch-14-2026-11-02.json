@@ -1,0 +1,64 @@
+{
+  "title": "GoOrganicAfrica Republic of the Congo calculator readiness review",
+  "batch": 14,
+  "review_date": "2026-11-02",
+  "country": {
+    "name": "Republic of the Congo",
+    "iso2": "CG",
+    "iso3": "COG",
+    "currency": "XAF"
+  },
+  "status": "research_only_not_calculator_ready",
+  "review": {
+    "official_statistics_catalogue": {
+      "source": "https://www.onmc.fr/recensement-agriculture.html",
+      "findings": [
+        "INS-Congo catalogue lists RGA-Congo 2024 preliminary results.",
+        "INS-Congo catalogue lists the 2023 cultivated-area and production report.",
+        "Catalogue also lists the 2022 agricultural holdings report, 2021 food-crop census and 2020 agricultural atlas."
+      ],
+      "interpretation": "Source inventory verified; numerical tables not yet extracted or independently reconciled."
+    },
+    "seasonal_context": {
+      "source": "https://cb.apps.fao.org/country.jsp?code=COG&lang=fr",
+      "reference_date": "2026-06-23",
+      "findings": [
+        "Cassava is identified as the main food crop and is cultivated throughout the year in northern and southern regions according to rainy seasons.",
+        "FAO describes 2026 maize conditions as generally favourable and the main-season output as near average, but does not provide a numeric yield.",
+        "FAO forecasts 410,000 tonnes of cereal imports for 2026, including 260,000 tonnes of wheat and 100,000 tonnes of rice; cereal imports are estimated at about 90 percent of cereal utilization."
+      ],
+      "caveat": "Import forecasts and qualitative crop outlooks are not farmgate prices, crop yields or domestic production values."
+    },
+    "geography": {
+      "findings": [
+        "ASARECA describes 12 departments.",
+        "A newer secondary source reports 15 departments following laws published in October 2024."
+      ],
+      "status": "unresolved_primary_legal_verification_required",
+      "decision": "Do not add a regional selector or map historical crop observations until official department names, codes, legal effective date and boundary crosswalk are verified."
+    }
+  },
+  "readiness": {
+    "calculator_status": "not_active",
+    "readiness_certified": false,
+    "blockers": [
+      "INS 2024 preliminary and 2023 crop tables require numeric extraction and reconciliation.",
+      "Administrative geography is inconsistent across available sources.",
+      "No validated current crop-specific farmgate price series.",
+      "No validated farmer-facing input quotations or regional enterprise budgets.",
+      "Calculator mapping and test cases remain pending."
+    ]
+  },
+  "sources": [
+    "https://www.onmc.fr/recensement-agriculture.html",
+    "https://cb.apps.fao.org/country.jsp?code=COG&lang=fr",
+    "https://www.asareca.org/republic-of-the-congo/about/",
+    "https://en.wikipedia.org/wiki/Departments_of_the_Republic_of_the_Congo"
+  ],
+  "safeguards": [
+    "Research evidence only; not calculator input.",
+    "No existing active country profile or calculator formula changed.",
+    "No unverified administrative units added to the region registry.",
+    "No merge or deployment performed."
+  ]
+}
