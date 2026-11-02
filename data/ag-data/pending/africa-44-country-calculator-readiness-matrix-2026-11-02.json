@@ -189,13 +189,14 @@
       "batch_04_review": {
         "review_date": "2026-11-02",
         "country_name": "Benin",
-        "source_notes": "Successfully retrieved searchable text from the official DSA definitive 2023-2024 campaign report. Extracted national production and selected yield observations for maize, rice, sorghum, millet, yam, cassava, cowpea/beans, groundnut, soybean, tomato, chilli pepper, okra and onion. Report states the crop statistics came from DSA's Agricultural Statistical Survey across 10,245 holdings and 683 agricultural enumeration zones. These are national historical values, not region-level budgets.",
+        "source_notes": "Successfully retrieved searchable text from the official DSA definitive 2023-2024 campaign report. Extracted national production and selected yield observations for maize, rice, sorghum, millet, yam, cassava, cowpea/beans, groundnut, soybean, tomato, chilli pepper, okra and onion. Report states the crop statistics came from DSA's Agricultural Statistical Survey across 10,245 holdings and 683 agricultural enumeration zones. These are national historical values, not region-level budgets. The report's summary table conflicts with its narrative and detailed Table 5 on soybean output (421,886 vs 520,929 tonnes); the soybean figure is withheld pending reconciliation.",
         "source": "https://www.instad.bj/images/docs/insae-statistiques/agricoles/production-agricole/Evolution_de_la_production_agricole_2023/R%C3%A9sultat_d%C3%A9finitif%20de%20la%20campagne_VERSION_FINALE.pdf",
         "blockers": [
           "Extract regional ESA 2024 / RNA tables and reconcile the national report.",
           "Validate chart readings and any internal source table inconsistencies before use.",
           "Obtain dated regional farmgate prices, input costs, labour, irrigation and machinery costs.",
-          "Construct regional budgets and calculator tests."
+          "Construct regional budgets and calculator tests.",
+          "Resolve the conflicting soybean production values in the official report before numeric use."
         ]
       }
     },
@@ -1185,7 +1186,7 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Extract public EAA 2024-2025 regional tables and official unit-conversion workbooks; then validate regional prices, costs and budgets.",
+      "next_step": "Resolve access to the public EAA 2024-2025 interactive tables (FAO-linked portal currently returns HTTP 403), obtain official unit-conversion workbooks, then extract regional aggregates and validate prices/costs.",
       "batch_01_review": {
         "review_date": "2026-11-02",
         "country_name": "Senegal",
@@ -1251,13 +1252,14 @@
       "batch_04_review": {
         "review_date": "2026-11-02",
         "country_name": "Senegal",
-        "source_notes": "FAO's official Senegal access-to-data page links the EAA 2024-2025 interactive statistical tables. ANADS metadata confirms all regions are covered and region remains in anonymised data while department is replaced by agroecological zone. No numerical aggregate tables were extracted in this batch.",
+        "source_notes": "FAO's official Senegal access-to-data page links the EAA 2024-2025 interactive statistical tables. ANADS metadata confirms all regions are covered and region remains in anonymised data while department is replaced by agroecological zone. No numerical aggregate tables were extracted in this batch. The FAO-linked DAPSA Open Data for Africa gallery resolves to https://senegal.opendataforafrica.org/gallery?tag=DAPSA but returned HTTP 403 in this retrieval attempt; table values were not extracted.",
         "sources": [
           "https://www.fao.org/in-action/agrisurvey/access-to-data/senegal-2/en",
           "https://anads.ansd.sn/index.php/catalog/351",
           "https://anads.ansd.sn/index.php/catalog/351/related-materials"
         ],
         "blockers": [
+          "Resolve the public DAPSA portal's HTTP 403 or obtain aggregate tables through an alternate official route.",
           "Extract public regional tables and apply official local-unit conversion workbooks.",
           "Obtain dated regional farmgate prices and input/labour costs.",
           "Use aggregate outputs only; respect DAPSA microdata confidentiality and authorisation rules.",
