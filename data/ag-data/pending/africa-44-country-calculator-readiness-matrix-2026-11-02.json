@@ -715,7 +715,18 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_09_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "The Gambia has five administrative regions plus separate Banjul City Council and Kanifing Municipal Council. The regional lookup contains only West Coast, Lower River, North Bank, Central River and Upper River. Banjul and Kanifing are separate city/municipal local-government areas and are not misrepresented as regions. Some sources use older names such as Western Region or MacCarthy Island; current regional naming is used here.",
+        "sources": [
+          "https://gambiaembassy.eu/state-government/",
+          "https://www.thegef.org/sites/default/files/documents/Gambia_NPFD_Final_0.pdf",
+          "https://www.gbosdata.org/downloads-file/7-census-2013-directory-of-settlement",
+          "https://www.thefactbook.org/gambia/administrative-divisions"
+        ],
+        "regional_lookup": "5 administrative regions added to src/_data/calculator/regions.json; Banjul City Council and Kanifing Municipal Council are separate units and excluded from the five-region list; lookup only, not activated."
+      }
     },
     {
       "code": "GN",
@@ -851,7 +862,18 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "batch_09_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "Liberia's Ministry of Local Government states that the country is divided into 15 counties administered by superintendents; the Local Government Act confirms 15 counties as the country's political subdivisions. The county names are cross-checked against the UNHCR legal-context county list and the Government of Liberia agricultural safeguards assessment. Districts and clans are lower administrative levels and are not included in this county-level lookup.",
+        "sources": [
+          "https://www.mlg.gov.lr/general/overview-liberia",
+          "https://governancecommission.org/pg_img/Local%20Government%20Act%20%28LGA%29.pdf",
+          "https://rimap.unhcr.org/legal-context/101",
+          "https://www.moa.gov.lr/sites/default/files/documents/Liberia-SADFONS-ESMF-FINAL%20Version-d__c2020.pdf"
+        ],
+        "regional_lookup": "15 counties added to src/_data/calculator/regions.json; lookup only, not activated."
+      }
     },
     {
       "code": "LY",
