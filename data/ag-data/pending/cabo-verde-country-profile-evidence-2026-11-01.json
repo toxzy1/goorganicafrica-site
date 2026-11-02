@@ -228,6 +228,54 @@
         "The source also reports retail prices for potatoes, sweet potatoes, beetroot, zucchini, cabbage, kale and green banana.",
         "These observations are from a single Praia market visit in March 2025 and must not be treated as current 2026 prices, national averages, or producer prices."
       ]
+    },
+    {
+      "title": "VI Recenseamento Geral da Agricultura — Resolution 88/2025",
+      "publisher": "Conselho de Ministros, Cabo Verde",
+      "url": "https://boe.incv.cv/Bulletins/View?id=87088",
+      "publication_date": "2025-08-29",
+      "status": "official_legal_mandate_for_2025_2026_census",
+      "note": "The resolution establishes the VI General Agricultural Census for implementation across the national territory during 2025 and 2026. It confirms the 2015 RGA as the last completed census at the time of the resolution. Final 2025/2026 numeric results were not located in this review."
+    },
+    {
+      "title": "2026 Programme of Incentives for Protected Cultivation — Agricultural Greenhouses",
+      "publisher": "Boletim Oficial, Resolution 106/2026",
+      "url": "https://boe.incv.cv/Bulletins/View/113560",
+      "publication_date": "2026-09-18",
+      "status": "official_agricultural_support_programme_not_cost_observations",
+      "note": "The programme provides a 75% subsidy for eligible greenhouse materials and installation, subject to a maximum subsidy of CVE 900,000 per farmer. This is a public support ceiling, not a market quotation, actual farmer cost, unit greenhouse cost or general input-price observation. It may be used only as policy context until actual invoices/quotations are collected."
+    },
+    {
+      "title": "FAO GIEWS Cabo Verde Country Brief",
+      "publisher": "FAO Global Information and Early Warning System",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=CPV&lang=en",
+      "reference_date": "2026-01-19",
+      "status": "recent_preliminary_crop_estimate_and_retail_price_trend",
+      "observations": [
+        {
+          "commodity": "maize",
+          "production_mt": 1100,
+          "reference_year": 2025,
+          "estimate_status": "preliminary",
+          "unit": "tonnes",
+          "note": "FAO estimated 2025 production at about 1,100 tonnes, nearly 40% below the already low previous five-year average; no matching harvested-area denominator is supplied in the brief."
+        },
+        {
+          "commodity": "locally_produced_maize",
+          "price_change_percent_max": 5,
+          "period": "2025-10 to 2025-12",
+          "price_type": "retail_change_not_price_level",
+          "note": "FAO reported retail prices rose by up to 5%; this is not a price per kg or farmgate price."
+        }
+      ],
+      "note": "Poor and erratic 2025 rainfall, drought in October and reduced planted area affected crop performance; keep the estimate preliminary and distinct from final census observations."
+    },
+    {
+      "title": "FAO AGRISurvey — Cabo Verde annual agricultural survey programme",
+      "publisher": "FAO with INE and MAA",
+      "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/cabo-verde/en",
+      "status": "ongoing",
+      "note": "FAO reports 2024 rotating module on farm income, labour and productivity (ILP), 2025 module on production methods and environment (PME), and completion of the agricultural holdings listing in the first half of 2024. Public microdata or full tabulations still need to be checked; programme description alone is not extracted observations."
     }
   ],
   "remaining_gaps": [
@@ -238,18 +286,55 @@
     "Obtain dated, island- and municipality-level producer/farm-gate prices for the calculator's commodity profiles; keep retail and imported-food prices separate.",
     "Obtain current farmer-paid prices for seed, fertilizer, crop protection, labour, irrigation water, pumping energy, machinery, packaging and transport by island and production system.",
     "Obtain crop-specific low/expected/high yield distributions for rainfed maize/beans and irrigated horticulture, with compatible harvested area and reference seasons.",
-    "Obtain livestock purchase prices, feed costs, veterinary costs, mortality rates and farm-gate output prices for commercial broilers, layers, goats and cattle."
+    "Obtain livestock purchase prices, feed costs, veterinary costs, mortality rates and farm-gate output prices for commercial broilers, layers, goats and cattle.",
+    "Obtain and extract final VI RGA 2025/2026 results, including municipality-level crop/season area, production, yields, irrigation, labour and input-use tables; do not assume the census results are published merely because the census period has elapsed.",
+    "Retrieve the 2024 ILP and 2025 PME AGRISurvey tabulations or microdata access terms, and document confidentiality and geographic anonymisation restrictions.",
+    "Resolve the 2025 maize estimate chronology against final RGA/MAA records and raw FAOSTAT observations with source flags and revisions.",
+    "Obtain current municipality/island-specific farmgate prices, farmer-paid input quotations, wage rates, water and energy charges, machinery and transport costs.",
+    "Build separate rainfed maize/beans and irrigated horticulture enterprise budgets, accounting for water scarcity and inter-island transport costs."
   ],
-  "extraction_status": "Official national sources and tables have been identified and selected observations transcribed with their limitations. The 2022 yearbook provides production estimates and livestock stock counts, but its horticultural figures are derived from seed-sales information and it does not provide compatible crop harvested-area denominators in the cited tables. FAO supplies a recent maize production estimate and price movement context. The 2025/2026 agricultural census and annual survey results are priority follow-ups. No complete farm budgets or validated calculator yields/prices are available from this evidence set.",
+  "extraction_status": "Official national sources and tables have been identified and selected observations transcribed with their limitations. The 2022 yearbook provides production estimates and livestock stock counts, but its horticultural figures are derived from seed-sales information and it does not provide compatible crop harvested-area denominators in the cited tables. FAO supplies a recent maize production estimate and price movement context. The 2025/2026 agricultural census and annual survey results are priority follow-ups. No complete farm budgets or validated calculator yields/prices are available from this evidence set. Batch 19 adds the FAO January 2026 preliminary 2025 maize estimate (about 1,100 tonnes), the legal 2025–2026 census mandate, an official 2026 greenhouse subsidy programme and a verified municipality selector reference. No final census dataset, numeric farmgate price series or itemized farm-input cost series has been extracted.",
   "publication_decision": {
     "calculator_activation": false,
-    "reason": "Do not activate Cabo Verde from aggregate or seed-sales-based production estimates, a single-city retail snapshot, or incomplete census evidence.",
+    "reason": "Do not activate Cabo Verde from aggregate or seed-sales-based production estimates, a single-city retail snapshot, or incomplete census evidence. The 2025 maize estimate is preliminary and lacks a compatible area denominator; the VI RGA 2025/2026 final results were not located. The 2026 greenhouse subsidy is a support ceiling, not a cost quotation.",
     "protected_scope": "No existing country profile, commodity profile, calculator formula, calculation or production deployment is changed by this research entry."
   },
   "next_steps": [
     "Request the latest VI RGA report and the 2024/2025 AGRISurvey module tables from INE and MAA.",
     "Extract island-level harvested area, production, crop-cut yields and input-use tables when released.",
     "Collect dated farm-gate prices and itemized farmer-paid costs for the 17 calculator commodity profiles.",
-    "Keep the country in research-only status until evidence is reconciled and independently reviewed."
-  ]
+    "Keep the country in research-only status until evidence is reconciled and independently reviewed.",
+    "Obtain final RGA 2025/2026 municipality-level crop and input tables from INE/MAA before calculator data mapping."
+  ],
+  "updated_at": "2026-11-02",
+  "administrative_geography": {
+    "selector_level": "Municipality (concelho), first-order local administrative unit",
+    "count": 22,
+    "municipalities": [
+      "Boa Vista",
+      "Brava",
+      "Maio",
+      "Mosteiros",
+      "Paul",
+      "Porto Novo",
+      "Praia",
+      "Ribeira Brava",
+      "Ribeira Grande",
+      "Ribeira Grande de Santiago",
+      "Sal",
+      "Santa Catarina",
+      "Santa Catarina do Fogo",
+      "Santa Cruz",
+      "São Domingos",
+      "São Filipe",
+      "São Lourenço dos Órgãos",
+      "São Miguel",
+      "São Salvador do Mundo",
+      "São Vicente",
+      "Tarrafal",
+      "Tarrafal de São Nicolau"
+    ],
+    "source": "https://webgis10.ine.cv/arcgisinecv/rest/services/INECV_GEODATA/RGPH2021_INDICADORES_GERAIS_POPULACAO_CONCELHO/MapServer/3",
+    "source_note": "INE's official 2021 Population and Housing Census GIS service provides a CONCELHOS feature layer with the Concelho field. The municipality names listed here follow the 22-municipality national structure. Municipalities are used as the regional selector; islands are not substituted for municipalities."
+  }
 }
