@@ -1,0 +1,101 @@
+{
+  "title": "GoOrganicAfrica readiness batch 08 - Mali and Niger administrative geography",
+  "review_date": "2026-11-02",
+  "scope": "Current first-level administrative geography verification only. No country is certified calculator-ready.",
+  "countries": [
+    {
+      "code": "ML",
+      "name": "Mali",
+      "administrative_geography": {
+        "level": "administrative_region",
+        "count": 19,
+        "names": [
+          "Kayes",
+          "Nioro",
+          "Kita",
+          "Koulikoro",
+          "Nara",
+          "Sikasso",
+          "Bougouni",
+          "Koutiala",
+          "Ségou",
+          "San",
+          "Mopti",
+          "Bandiagara",
+          "Douentza",
+          "Tombouctou",
+          "Taoudénit",
+          "Gao",
+          "Ménaka",
+          "Kidal",
+          "Dioïla"
+        ],
+        "separate_unit": "District of Bamako",
+        "sources": [
+          "https://gouvernement.ml/category/actions-du-gouvernement/",
+          "https://gouvernement.ml/5eme-cohorte-de-a-lecole-de-la-citoyennete-le-general-de-brigade-issa-ousmane-coulibaly-fait-le-point-sur-les-reformes-territoriales-et-de-la-decentralisation-dans-notre-pays/",
+          "https://www.worldfactbook.co/edition.php?country=mali&year=2025",
+          "https://www.ortm.ml/index.php/decoupage-administratif-et-territorial-la-nouvelle-carte-administrative-du-mali-operationnelle"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "crop-by-region and season tables pending extraction and validation",
+        "farmgate_prices": "dated regional farmgate prices and units pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "regional crop budgets pending",
+        "currency": "XOF; validate source unit, observation date and any local market basis",
+        "tests": "region/crop mapping, currency, calculation and localization tests pending"
+      },
+      "safeguards": [
+        "District of Bamako is not a region and is excluded from the 19-region list.",
+        "Do not use national production or historical price context as regional calculator inputs.",
+        "Do not activate until crop data, dated prices, input costs, budgets and tests are validated."
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "administrative_geography": {
+        "level": "current_administrative_region",
+        "count": 8,
+        "names": [
+          "Agadez",
+          "Diffa",
+          "Dosso",
+          "Maradi",
+          "Niamey",
+          "Tahoua",
+          "Tillabéri",
+          "Zinder"
+        ],
+        "proposed_reorganisation": {
+          "proposed_count": 19,
+          "status": "project/proposal reported 2026-05-12; not treated as enacted/implemented in this lookup",
+          "source": "https://anp.ne/projet-de-redecoupage-administratif-du-niger-le-pays-passe-de-8-a-19-regions/"
+        },
+        "sources": [
+          "https://presidence.ne/pages/decouvrir-niger",
+          "https://anp.ne/projet-de-redecoupage-administratif-du-niger-le-pays-passe-de-8-a-19-regions/",
+          "https://www.actuniger.com/politique/21982-niger-la-nouvelle-carte-administrative-envisagee-par-le-gouvernement-suscite-deja-des-polemiques",
+          "https://ecowap.ecowas.int/media/ecowap/naip/files/Niger_English.pdf"
+        ]
+      },
+      "calculator_readiness": {
+        "active": false,
+        "crop_area_production_yield": "crop-by-region and season tables pending extraction and validation",
+        "farmgate_prices": "dated regional farmgate prices and units pending",
+        "input_costs": "seed, fertilizer, crop protection, irrigation, labour and machinery costs pending",
+        "enterprise_budgets": "regional crop budgets pending",
+        "currency": "XOF; validate source unit, observation date and market basis",
+        "tests": "region/crop mapping, currency, calculation and localization tests pending"
+      },
+      "safeguards": [
+        "Keep the current eight-region structure until the proposed reform is legally implemented.",
+        "Do not treat the proposed 19 regions as current selectors.",
+        "Do not activate until crop data, dated prices, input costs, budgets and tests are validated."
+      ]
+    }
+  ],
+  "summary": "Mali's 19 operational regions and Niger's current eight regions have been recorded. Niger's proposed 19-region plan is explicitly flagged as pending enactment/implementation."
+}
