@@ -502,6 +502,16 @@
           "Collect farmgate prices for other priority crops and current input quotations.",
           "Build crop-specific budgets and regional assumptions."
         ]
+      },
+      "batch_06_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "Added 31 administrative regions to the research-branch regional lookup. Côte d’Ivoire’s Direction Générale de l’Administration du Territoire reports 31 regions, 111 departments and two autonomous districts; the official DGI Fiscalité Locale regional directory lists the region names. The country has a separate two-district autonomous layer; this lookup deliberately uses regions, not districts. The 2024 crop output figures previously noted remain national production totals, not regional yields.",
+        "sources": [
+          "https://dgat.interieur.gouv.ci/creation-de-circonscriptions-administratives/",
+          "https://www.fiscalitelocale.dgi.gouv.ci/regions.php",
+          "https://www.presidence.ci/en/our-heritage/"
+        ],
+        "regional_lookup": "31 regions added to src/_data/calculator/regions.json on the readiness branch; lookup only, not activated."
       }
     },
     {
@@ -1467,6 +1477,16 @@
           "Verify regional labour costs, especially Savanes, with dated source and operation basis.",
           "Obtain current input, machinery and irrigation costs and construct crop budgets."
         ]
+      },
+      "batch_06_review": {
+        "review_date": "2026-11-02",
+        "source_notes": "Added the five administrative regions from official Togolese government material. The Ministry of Territorial Planning identifies the five regional capitals as Dapaong, Kara, Sokodé, Atakpamé and Tsévié; the UN 2024 core document explicitly names the regions from south to north as Maritime, Plateaux, Centrale, Kara and Savanes. Greater Lomé is a special territorial unit, not a sixth administrative region, so it is not mixed into this region list.",
+        "sources": [
+          "https://urbanisme.gouv.tg/amenagement-du-territoire-le-snat-vulgarise-dans-les-cinq-regions-administratives-et-le-grand-lome/",
+          "https://www.republiquetogolaise.tg/gestion-publique/2901-11552-decentralisation-un-guide-national-pour-harmoniser-les-plans-de-developpement-regionaux",
+          "https://digitallibrary.un.org/record/4061291/files/HRI_CORE_TGO_2024-EN.pdf"
+        ],
+        "regional_lookup": "5 administrative regions added to src/_data/calculator/regions.json on the readiness branch; lookup only, not activated."
       }
     },
     {
