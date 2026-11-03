@@ -1032,7 +1032,7 @@
     {
       "country_code": "CF",
       "country_name": "Central African Republic",
-      "evidence_status": "FAO_2026_seasonal_context_and_secondary_FAOSTAT_2024_crop_series_lead_identified_prefecture_budget_evidence_pending",
+      "evidence_status": "FAO_2026_brief_and_World_Bank_41_market_monthly_price_dataset_added; ICASEES_20_prefecture_map_and_7_region_crosscheck; crop_specific_yield_and_enterprise_costs_pending",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: Central African Republic",
@@ -1114,6 +1114,145 @@
           "reference_date": "2026-02-13",
           "status": "seasonal_context_crosscheck",
           "note": "FAO reported 2025 northern millet and sorghum harvests near average, central/southern maize harvests benefiting from generally adequate rainfall, and localized flooding in August-September 2025 affecting yields in Basse-Kotto, Mbomou and Ouaka. Use this as seasonal context, not a numeric yield dataset."
+        },
+        {
+          "title": "FAO GIEWS Central African Republic Country Brief",
+          "publisher": "FAO",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=CF",
+          "reference_date": "2026-07-15",
+          "status": "official_2026_seasonal_context_and_market_trend",
+          "observations": [
+            {
+              "indicator": "2026 maize crop",
+              "reference_period": "2026",
+              "status": "planting completed in central/southern areas by April under near-average planted area; harvest expected from mid-August; forecast average-to-above-average Aug-Sep rainfall raises flood risk in Basse-Kotto, Mbomou and Ouaka."
+            },
+            {
+              "indicator": "2026 millet and sorghum",
+              "reference_period": "2026",
+              "status": "northern planting completed in early July under favourable conditions; harvest expected from October."
+            },
+            {
+              "indicator": "locally produced maize retail prices",
+              "reference_period": "May 2026",
+              "status": "FAO reports year-on-year declines of up to 8 percent; this is a retail market trend, not a farm-gate quote."
+            },
+            {
+              "indicator": "imported rice retail prices",
+              "reference_period": "May 2026",
+              "status": "FAO reports prices about 13 percent above year-earlier values."
+            },
+            {
+              "indicator": "food insecurity",
+              "reference_period": "April-August 2026",
+              "status": "IPC analysis estimates about 2 million people in IPC Phase 3 or above; access and conflict risks remain relevant to regional agricultural representativeness."
+            }
+          ],
+          "quality_notes": [
+            "Seasonal outlook is not a crop yield or enterprise budget.",
+            "Do not use retail price changes as absolute farm-gate prices.",
+            "Flood and conflict risks vary by prefecture; avoid national uniform assumptions."
+          ]
+        },
+        {
+          "title": "World Bank Real Time Food Prices — Central African Republic",
+          "publisher": "World Bank Development Data Group / FCV Data Platform",
+          "url": "https://microdata.worldbank.org/index.php/catalog/4488/",
+          "reference_period": "2007-01-01 to 2026-10-01",
+          "version_date": "2026-10-05",
+          "status": "open_monthly_market_price_dataset_41_markets_selected_admin2",
+          "observations": [
+            {
+              "indicator": "market coverage",
+              "value": 41,
+              "unit": "markets",
+              "status": "monthly market price estimates"
+            },
+            {
+              "indicator": "products",
+              "items": [
+                "cassava",
+                "groundnuts",
+                "maize",
+                "beef",
+                "oil",
+                "rice",
+                "sesame",
+                "sorghum"
+              ],
+              "status": "product scope confirmed in catalogue metadata"
+            },
+            {
+              "indicator": "geographic coverage",
+              "items": [
+                "Nana-Mambéré",
+                "Ouaka",
+                "Mbomou",
+                "Bangui",
+                "Ouham",
+                "Sangha-Mbaéré",
+                "Ombella M'Poko",
+                "Mambéré-Kadéï",
+                "Vakaga",
+                "Ouham-Pendé",
+                "Lobaye",
+                "Haute-Kotto",
+                "Kémo",
+                "Nana-Grébizi",
+                "Bamingui-Bangoran",
+                "Haut-Mbomou",
+                "market average"
+              ],
+              "status": "selected Admin 2/subnational areas; not full prefecture coverage"
+            }
+          ],
+          "quality_notes": [
+            "Dataset includes direct observations and machine-learning estimates, updated and revised over time.",
+            "WFP and FAO are among the underlying source organisations; retain source/method flags when extracting values.",
+            "Market prices are not automatically producer/farm-gate prices; classify retail/wholesale/market series before calculator use.",
+            "Do not treat selected Admin 2 coverage as complete coverage of all 20 prefecture lookup entries."
+          ]
+        },
+        {
+          "title": "ICASEES interactive prefecture map",
+          "publisher": "Institut Centrafricain des Statistiques et des Etudes Economiques et Sociales (ICASEES)",
+          "url": "https://icasees.org/carte-interactive",
+          "reference_period": "current administrative display",
+          "status": "official_statistical_institute_prefecture_map",
+          "note": "ICASEES provides an interactive map of the country's 20 prefectures and regional boundaries; use this as the official spatial verification point when constructing joins."
+        },
+        {
+          "title": "Central African Republic territorial regions reference",
+          "publisher": "Centrafrique Pratique (independent secondary portal)",
+          "url": "https://www.centrafriquepratique.com/regions-en",
+          "reference_period": "2024 administrative structure",
+          "status": "secondary_geographic_crosscheck",
+          "observations": [
+            {
+              "indicator": "regions",
+              "value": 7,
+              "names": [
+                "Plateaux",
+                "Équateur",
+                "Yadé",
+                "Kagas",
+                "Fertit",
+                "Haut-Oubangui",
+                "Bas-Oubangui"
+              ]
+            },
+            {
+              "indicator": "prefectures",
+              "value": 20
+            },
+            {
+              "indicator": "subprefectures",
+              "value": 85
+            }
+          ],
+          "quality_notes": [
+            "Secondary portal; cross-check region names and boundaries against ICASEES and the relevant decree before treating this as an official geography table."
+          ]
         }
       ],
       "priority_commodities": [
@@ -1129,15 +1268,14 @@
         "layers"
       ],
       "remaining_gaps": [
-        "retrieve FAOSTAT 2024 item-level production, harvested area, yield and source flags for maize, paddy rice, cassava, tomato and livestock, then reconcile the secondary Natlas transcription",
-        "obtain Ministry of Agriculture and FAO crop assessment tables by prefecture and production system",
-        "extract crop-specific harvested area, production and yield with uncertainty notes",
-        "obtain local producer/wholesale prices for maize, cassava, rice and vegetables",
-        "obtain input, labour, transport and livestock budget observations",
-        "map regional access and security constraints to avoid treating inaccessible areas as representative",
-        "seek the Ministry/FAO annual crop assessment and prefecture-level crop-cutting or household survey outputs, including coverage and conflict-related exclusions"
+        "Retrieve FAOSTAT item-level 2024 harvested area, production, yield and source/estimation flags for each calculator crop and reconcile the secondary Natlas transcription.",
+        "Obtain ICASEES or Ministry crop survey/assessment tables by prefecture, crop, season and production system; confirm whether each table covers the full 20-prefecture structure.",
+        "Extract World Bank RTFP monthly market prices by product and selected Admin 2, preserving source, method, price type, date, unit and revision metadata; do not relabel market prices as farmgate.",
+        "Obtain dated producer/farmgate prices and farmer-facing seed, fertiliser, crop protection, labour, machinery, irrigation, energy, transport and livestock input/output costs.",
+        "Map selected World Bank Admin 2 market locations to official ICASEES prefecture boundaries; do not infer complete prefecture coverage.",
+        "Build regional enterprise budgets and tests that explicitly account for conflict, displacement, access and flood exposure."
       ],
-      "extraction_status": "FAO GIEWS provides 2026 seasonal, flood and access context. A secondary portal reproduces 2024 FAOSTAT-sourced crop and livestock production values, including cassava, maize and rice, but these have not been checked against the underlying FAOSTAT item records, source flags or matching harvested areas. No calculator yields, farm-gate prices or production budgets are admitted."
+      "extraction_status": "Batch 42 adds the 15 July 2026 FAO GIEWS brief and the World Bank open Real Time Food Prices catalogue, which covers 41 markets through 2026-10-01, with selected Admin 2 coverage and product estimates for cassava, groundnuts, maize, beef, oil, rice, sesame and sorghum. Added ICASEES official 20-prefecture map and secondary seven-region cross-check. No market price is admitted as a farm-gate value; no new crop yields or budgets are activated."
     },
     {
       "country_code": "MW",
