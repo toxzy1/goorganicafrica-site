@@ -478,20 +478,20 @@
       "code": "KM",
       "name": "Comoros",
       "evidence_file": "data/ag-data/pending/comoros-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "INSEED_RGA2_2023_2024_final_weighted_validated_microdata_v1_April_2026_and_public_report; 73818_family_holdings_listed_11454_sampled_148_modern_holdings; national_crop_totals_and_selected_yields; input_adoption_and_livestock_structure; 3_autonomous_islands_as_top_level_regions; microdata_access_controlled_and_farmgate_prices_input_unit_costs_enterprise_budgets_not_validated",
+      "existing_research_note": "Batch 43 2026-11-03: INSEED RGA-2 2025 outputs and selected yields rechecked; 73,966 holdings, 89,282 ha agricultural land, 56,576 ha cultivated, island land distribution, livestock and input-adoption indicators; INSEED NADA weighted microdata route confirmed; World Bank October 2026 RTFP catalogue excludes Comoros. Farmgate prices, input unit costs and island enterprise budgets remain missing.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial",
-        "dated_local_farmgate_prices_and_units": "blocked",
-        "seed_and_planting_material_costs": "blocked",
-        "fertilizer_and_soil_amendment_costs": "partial",
-        "crop_protection_costs": "partial",
-        "irrigation_water_and_energy_costs": "blocked",
-        "labour_rates_and_operations": "partial",
-        "machinery_and_land_preparation_costs": "blocked",
-        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "crop_area_production_yield_by_commodity_and_season": "partial_RGA2_national_crop_totals_and_selected_mango_lettuce_cucumber_yields_published_island_crop_area_and_weighted_yield_tables_not_extracted",
+        "dated_local_farmgate_prices_and_units": "blocked_no_current_verified_Comoros_producer_price_series_World_Bank_Oct_2026_RTFP_37_country_catalogue_excludes_Comoros",
+        "seed_and_planting_material_costs": "partial_seed_access_constraint_reported_by_census_no_dated_unit_prices",
+        "fertilizer_and_soil_amendment_costs": "partial_RGA2_adoption_shares_only_no_unit_prices_or_application_rates",
+        "crop_protection_costs": "partial_10_percent_producer_use_reported_no_product_prices_or_application_costs",
+        "irrigation_water_and_energy_costs": "blocked_no_island_crop_specific_water_energy_cost_schedule",
+        "labour_rates_and_operations": "partial_138723_agricultural_workers_reported_no_crop_operation_or_paid_labour_schedule",
+        "machinery_and_land_preparation_costs": "partial_equipment_insufficiency_reported_no_hire_rates_or_per_hectare_costs",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_island_crop_enterprise_budgets",
         "currency_and_exchange_rate_method": "partial",
-        "source_provenance_and_observation_date": "partial",
+        "source_provenance_and_observation_date": "pass_INSEED_RGA2_2025_FAO_2025_and_INSEED_NADA_2026_metadata_linked",
         "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
@@ -500,9 +500,13 @@
         "Obtain dated island-level farmgate prices and units for priority commodities; do not substitute retail prices or export values.",
         "Obtain farmer-paid seed, planting-material, organic/mineral fertiliser, crop-protection, labour, irrigation, water, energy, machinery, packaging and transport costs by island.",
         "Build representative island-specific enterprise budgets and gross margins that reflect small and fragmented holdings and subsistence versus sale orientation.",
-        "Validate KMF currency handling, calculator commodity mapping and country-specific test cases."
+        "Validate KMF currency handling, calculator commodity mapping and country-specific test cases.",
+        "World Bank October 2026 RTFP global catalogue lists 37 countries and excludes Comoros; a Comoros-specific market-price series must be found.",
+        "INSEED RGA-2 microdata access is controlled; public metadata does not provide the full numeric island/prefecture crop tables.",
+        "Current producer prices, itemised farmer-paid input costs, paid labour, water/energy and machinery hire rates remain missing.",
+        "No island-specific enterprise budgets or calculator test cases."
       ],
-      "next_step": "Request or access the authorised RGA-2 microdata and extract weighted crop area, production, yields, sales and labour by island/prefecture; in parallel collect dated farmgate prices and farmer-paid input quotations."
+      "next_step": "Obtain authorised INSEED RGA-2 weighted tables or microdata; extract island/prefecture/crop/season production and harvested area; locate Comoros producer prices and farmer-paid input quotations; build smallholder island budgets and tests."
     },
     {
       "code": "CD",
