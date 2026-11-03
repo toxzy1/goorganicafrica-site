@@ -719,7 +719,7 @@
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_ministry_2024_national_area_and_aggregate_horticulture_output_plus_two_subzoba_combined_fruit_vegetable_series_crop_specific_regional_yields_missing",
-        "dated_local_farmgate_prices_and_units": "blocked_asmara_wholesale_price_index_methodology_identified_but_no_verified_region_crop_farmgate_observations",
+        "dated_local_farmgate_prices_and_units": "blocked; supplemental Oct/Sept 2026 retail/wholesale market estimates found for tomato, potato, onion and maize, but they are not farmgate prices and lack producing-region/grade detail",
         "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_planting_material_price_schedule",
         "fertilizer_and_soil_amendment_costs": "blocked_no_current_product_prices_application_rates_or_farm_budget_costs",
         "crop_protection_costs": "blocked_no_current_crop_protection_prices_or_application_budgets",
@@ -727,19 +727,19 @@
         "labour_rates_and_operations": "blocked_no_current_region_crop_operation_wage_and_labour_days_schedule",
         "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_and_land_preparation_cost_schedule",
         "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_crop_specific_regional_enterprise_budgets_or_gross_margins",
-        "currency_and_exchange_rate_method": "partial_ERN_currency_identified_but_calculator_conversion_rounding_and_any_exchange_method_not_documented",
-        "source_provenance_and_observation_date": "partial_ministry_2024_figures_peer_reviewed_2025_study_UN_2025_report_and_FAO_2026_seasonal_brief_recorded",
+        "currency_and_exchange_rate_method": "partial; official peg ERN 15/USD corroborated by BTI 2026 and 2025 Factbook values, but access/parallel-market caveat and calculator-specific conversion/rounding tests remain",
+        "source_provenance_and_observation_date": "partial; added dated Selina Wamucii market cross-checks for 4 commodities and corroborated official ERN peg; these are not substitutes for farmgate/input data",
         "calculator_mapping_and_test_cases": "blocked_no_validated_crop_level_price_and_cost_dataset_or_test_cases"
       },
       "blockers": [
         "Obtain and reconcile the full Ministry of Agriculture 2024 statistical tables and final 2025/2026 crop results, including crop-specific area, output, yield, region and season.",
-        "Extract the full Asmara wholesale price series and preserve its wholesale classification; obtain separate dated farmgate prices by producing region, commodity, grade and unit.",
         "Obtain current farmer-paid seed, fertilizer, compost, crop-protection, labour, machinery, irrigation water, pumping energy, packaging and transport costs.",
         "Build representative budgets separately for rainfed cereal, irrigated horticulture and livestock enterprises, with crop calendars and marketable yields.",
         "Reconcile Ministry administrative figures with National Statistics Office publications and FAOSTAT observations and source flags.",
-        "Map only validated values to the calculator schema and add independent test cases; keep all existing active country profiles and formulas unchanged."
+        "Map only validated values to the calculator schema and add independent test cases; keep all existing active country profiles and formulas unchanged.",
+        "Obtain verified producer/farmgate quotations by region, commodity, grade and unit; use 2026 Asmara/Mitsiwa retail/wholesale estimates only as external plausibility checks, not calculator farmgate inputs."
       ],
-      "next_step": "Extract the complete Ministry 2024 crop tables and the underlying Asmara wholesale price series; seek regional farmgate quotations and current input/water/energy/labour budgets before calculating gross margins.",
+      "next_step": "Obtain official Ministry/FPMA market observations or documented producer quotations for tomato, potato, onion and maize, plus current seed/fertilizer/crop-protection/labour/irrigation costs; then build crop-specific budgets for the six zobas.",
       "batch_22_review": {
         "review_date": "2026-11-02",
         "country_name": "Eritrea",
