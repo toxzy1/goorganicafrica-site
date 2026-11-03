@@ -1118,27 +1118,67 @@
       "existing_research_note": "WTO_2025_review_2023_paddy_maize_beans_cassava_potato_sweet_potato_and_2022_cash_crop_output_FAO_GIEWS_Sept_2026_crop_outlook_World_Bank_2025_AgPER_price_and_input_gaps_RTFP_481_market_dataset_recorded_current_farmgate_prices_and_crop_enterprise_budgets_missing",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial_WTO_2025_review_reports_2023_national_paddy_maize_beans_cassava_potato_sweet_potato_totals_and_2022_cocoa_coffee_cloves_totals_FAO_2026_outlook_is_qualitative_matching_region_crop_harvested_area_and_yield_series_missing",
+        "dated_local_farmgate_prices_and_units": "blocked_World_Bank_RTFP_481_market_dataset_is_market_level_and_contains_imputed_estimates_not_verified_farmgate_producer_prices",
+        "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_planting_material_quotations_by_region_and_crop",
+        "fertilizer_and_soil_amendment_costs": "partial_World_Bank_2025_AgPER_records_historical_2019_2021_import_and_2013_2022_public_distribution_totals_current_product_prices_application_rates_and_farmer_costs_missing",
+        "crop_protection_costs": "blocked_no_current_crop_specific_product_prices_application_rates_or_farmer_paid_costs",
+        "irrigation_water_and_energy_costs": "partial_WTO_and_World_Bank_context_identifies_irrigation_constraints_but_current_region_tariffs_pumping_energy_and_crop_water_costs_missing",
+        "labour_rates_and_operations": "blocked_no_current_region_crop_operation_wage_rates_or_labour_days_schedule",
+        "machinery_and_land_preparation_costs": "blocked_no_current_region_machine_hire_land_preparation_and_mechanisation_cost_schedule",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets_or_gross_margins",
+        "currency_and_exchange_rate_method": "partial_MGA_malagasy_ariary_confirmed_but_calculator_rounding_and_exchange_rate_conversion_method_not_documented",
+        "source_provenance_and_observation_date": "partial_WTO_2025_FAO_GIEWS_2026_World_Bank_2025_AgPER_RTFP_metadata_and_government_administrative_geography_sources_recorded",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_region_crop_price_cost_dataset_or_test_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract matched crop-specific harvested area, production and yield observations with geography, season and reference year; national output totals alone do not establish regional yields.",
+        "Download and screen the World Bank Real Time Food Prices Madagascar dataset by market, commodity form, unit, date and observation method; do not treat its imputed market estimates as farmgate prices.",
+        "Obtain dated producer/farmgate prices and farmer-paid quotations for seed, fertilizer, crop protection, labour, land preparation, irrigation, energy and transport.",
+        "Build and validate region-specific enterprise budgets for priority crops and livestock; historical national expenditure/import totals are not farm budgets.",
+        "Map validated observations to the existing calculator schema and add MGA currency, region and crop regression tests."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract district/region crop tables and current market observations; obtain primary producer prices and farmer input quotations; build region-specific budgets before calculator activation.",
+      "administrative_geography_status": "verified_23_regions_119_districts_region_selector_added",
+      "batch_25_review": {
+        "review_date": "2026-11-03",
+        "country_name": "Madagascar",
+        "batch": 25,
+        "administrative_geography": "The Government of Madagascar's Torolalana portal confirms 23 first-level regions and 119 districts. The region lookup now contains all 23 regions. Districts are second-level units; communes and fokontany are lower levels. The six provinces are a separate higher-level layer and are not mixed into the region selector.",
+        "crop_and_market_evidence": "The existing country evidence file records WTO Secretariat 2023 national production totals for paddy rice, maize, beans, cassava, potatoes and sweet potatoes, plus 2022 cocoa, coffee and cloves totals; FAO GIEWS September 2026 qualitative crop outlook; World Bank 2025 Agriculture Public Expenditure Review documenting historical price/input-data gaps; and World Bank Real Time Food Prices metadata covering 481 Madagascar markets through 1 October 2026.",
+        "data_quality": "Historical national production and current qualitative crop context are useful for research prioritisation. They do not provide a complete region-by-crop yield series, verified current farmgate price feed or current farm enterprise budgets.",
+        "sources": [
+          "https://torolalana.gov.mg/fr/services/regions-et-districts/",
+          "https://salb.un.org/en/data/mdg",
+          "https://madagascar.un.org/sites/default/files/2025-10/1%20Madagascar%20Country%20Brief.pdf",
+          "https://www.wto.org/english/tratop_e/tpr_e/s466_e.pdf",
+          "https://cb.apps.fao.org/country.jsp?code=MDG",
+          "https://documents1.worldbank.org/curated/en/099145312092519386/pdf/IDU-52843189-d4fd-4fb0-9c66-6910b75319c9.pdf",
+          "https://microdata.worldbank.org/catalog/8240"
+        ],
+        "criterion_status": {
+          "crop_area_production_yield_by_commodity_and_season": "partial_WTO_2025_review_reports_2023_national_paddy_maize_beans_cassava_potato_sweet_potato_totals_and_2022_cocoa_coffee_cloves_totals_FAO_2026_outlook_is_qualitative_matching_region_crop_harvested_area_and_yield_series_missing",
+          "dated_local_farmgate_prices_and_units": "blocked_World_Bank_RTFP_481_market_dataset_is_market_level_and_contains_imputed_estimates_not_verified_farmgate_producer_prices",
+          "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_planting_material_quotations_by_region_and_crop",
+          "fertilizer_and_soil_amendment_costs": "partial_World_Bank_2025_AgPER_records_historical_2019_2021_import_and_2013_2022_public_distribution_totals_current_product_prices_application_rates_and_farmer_costs_missing",
+          "crop_protection_costs": "blocked_no_current_crop_specific_product_prices_application_rates_or_farmer_paid_costs",
+          "irrigation_water_and_energy_costs": "partial_WTO_and_World_Bank_context_identifies_irrigation_constraints_but_current_region_tariffs_pumping_energy_and_crop_water_costs_missing",
+          "labour_rates_and_operations": "blocked_no_current_region_crop_operation_wage_rates_or_labour_days_schedule",
+          "machinery_and_land_preparation_costs": "blocked_no_current_region_machine_hire_land_preparation_and_mechanisation_cost_schedule",
+          "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets_or_gross_margins",
+          "currency_and_exchange_rate_method": "partial_MGA_malagasy_ariary_confirmed_but_calculator_rounding_and_exchange_rate_conversion_method_not_documented",
+          "source_provenance_and_observation_date": "partial_WTO_2025_FAO_GIEWS_2026_World_Bank_2025_AgPER_RTFP_metadata_and_government_administrative_geography_sources_recorded",
+          "calculator_mapping_and_test_cases": "blocked_no_validated_region_crop_price_cost_dataset_or_test_cases"
+        },
+        "safeguards": [
+          "Madagascar remains not_active and directory_only in the country registry.",
+          "The 23-region selector is added to the separate region lookup only; no existing active country profile or calculator formula was changed.",
+          "The 119-district administrative count is recorded but district-level crop data are not fabricated.",
+          "National crop production totals are not converted into regional yields or farm-level output assumptions.",
+          "Market price estimates and historical price analysis are not relabelled as current farmgate prices.",
+          "No calculator activation, merge to main or production deployment was performed."
+        ]
+      }
     },
     {
       "code": "MW",
