@@ -1,0 +1,66 @@
+{
+  "title": "Burundi calculator readiness research — Batch 39",
+  "batch": 39,
+  "country_code": "BI",
+  "country_name": "Burundi",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "findings": [
+    {
+      "topic": "Crop production",
+      "detail": "FAO estimates 2025 aggregate cereal production at 789,000 tonnes, 5% below the previous five-year average. Seasons A, B and C had different outcomes; 2025B was below average, while 2025A and C were above average."
+    },
+    {
+      "topic": "2026 season outlook",
+      "detail": "FAO reports below-average 2026A production risk from insufficient and poorly distributed rainfall, including substantial maize and bean crop losses in several lowland areas."
+    },
+    {
+      "topic": "Prices",
+      "detail": "PNISAN/WFP July 2026 national retail medians: white maize 1,450 BIF/kg, yellow beans 2,867 BIF/kg, cassava flour 1,567 BIF/kg. These are retail prices, not farm-gate producer prices."
+    },
+    {
+      "topic": "Administrative geography",
+      "detail": "Since 2025 Burundi has five provinces and 42 communes: Buhumuza, Bujumbura, Burunga, Butanyerera and Gitega. Historical agriculture indicators remain on the old 18-province geography."
+    },
+    {
+      "topic": "Enterprise budgets",
+      "detail": "Current farmer-paid input costs, labour, machinery, irrigation and region-specific gross-margin budgets remain unverified."
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield": "partial_aggregate_and_season_context_only",
+    "farmgate_prices": "blocked_retail_only",
+    "input_costs": "partial_or_unavailable",
+    "regional_enterprise_budgets": "blocked",
+    "geography": "5_provinces_42_communes_added_crosswalk_pending",
+    "calculator_active": false
+  },
+  "sources": [
+    {
+      "title": "FAO GIEWS Burundi Country Brief, 5 February 2026",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=BDI&lang=en"
+    },
+    {
+      "title": "PNISAN Burundi territories",
+      "url": "https://pnisan.bi/territoires"
+    },
+    {
+      "title": "PNISAN food and nutrition security dashboard",
+      "url": "https://pnisan.bi/?langue=en"
+    },
+    {
+      "title": "INSBU RGPHAE 2024 agricultural module reports",
+      "url": "https://insbudemo.insbu.bi/rapportModulesAgricoles"
+    },
+    {
+      "title": "Assemblée Nationale territorial reform",
+      "url": "https://assemblee.bi/?p=30190"
+    }
+  ],
+  "safeguards": [
+    "No Burundi calculator values activated.",
+    "No WFP retail prices substituted for farm-gate prices.",
+    "Historical province observations not remapped without an official crosswalk.",
+    "Existing ten active country profiles unchanged."
+  ]
+}
