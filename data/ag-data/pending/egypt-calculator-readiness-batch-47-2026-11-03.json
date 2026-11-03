@@ -1,0 +1,85 @@
+{
+  "title": "Egypt calculator readiness — Batch 47",
+  "batch": 47,
+  "country_code": "EG",
+  "country_name": "Egypt",
+  "review_date": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_published_to_calculator",
+  "calculator_status": "directory_only_not_active",
+  "purpose": "Audit primary crop statistics, administrative regions, producer-price sources and farm-budget gaps before any calculator activation.",
+  "confirmed_findings": [
+    {
+      "source": "CAPMAS Crop Areas and Plant Production bulletin, December 2024",
+      "url": "https://old.capmas.gov.eg/Pages/Publications.aspx?YearID=23541&page_id=5104",
+      "reference_period": "2023/2024",
+      "finding": "17.0 million feddans cropped area and 10.1 million feddans planted area; publication metadata identifies winter, summer and Nili seasons and governorate-level reporting.",
+      "qualification": "Cropped area and planted area are distinct; these totals are not crop-specific yields."
+    },
+    {
+      "source": "MALR crop composition database",
+      "url": "https://www.agri.gov.eg/databases/80",
+      "finding": "Official database interface provides year, land category and governorate selectors and planted/cropped area fields by winter, summer and Nili season.",
+      "qualification": "No data rows were visible in accessible page text during this review; no numeric observations transcribed."
+    },
+    {
+      "source": "MALR historical farm prices",
+      "url": "https://www.agri.gov.eg/databases/81",
+      "finding": "Official interface distinguishes farm prices in EGP/tonne from traded prices in EGP/kg and filters by season, crop and year.",
+      "qualification": "No dated observation rows were extracted; not yet usable as a calculator price."
+    },
+    {
+      "source": "MALR daily crop prices",
+      "url": "https://agri.gov.eg/databases/83",
+      "finding": "Daily database reports Obour wholesale and representative national retail min/max/average prices.",
+      "qualification": "Wholesale and retail only; not producer/farm-gate prices."
+    },
+    {
+      "source": "Egypt State Information Service",
+      "url": "https://sis.gov.eg/en/egypt/basic-information/",
+      "finding": "Egypt has 27 governorates grouped into seven broad regions.",
+      "qualification": "Use governorates as primary regional selection units; seven regions are only a higher-level grouping."
+    },
+    {
+      "source": "MALR annual reports",
+      "url": "https://moa.gov.eg/publications?type=Annual+Reports",
+      "reference_period": "2024",
+      "finding": "Official publication page lists national 2024 livestock and poultry statistics reports.",
+      "qualification": "Regional enterprise costs and producer prices not extracted."
+    }
+  ],
+  "secondary_crosscheck_only": [
+    {
+      "source": "AgFin Atlas Egypt statistics",
+      "url": "https://agrifinatlas.com/egypt/statistics/",
+      "reference_period": "2024",
+      "status": "secondary_transcription_not_admitted",
+      "note": "Previously captured wheat, maize, paddy-rice and tomato production values remain cross-check leads only; no yield admitted without matched area and season from primary data."
+    }
+  ],
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_sources_identified_data_rows_pending",
+    "dated_local_farmgate_prices_and_units": "partial_source_interface_identified_values_pending",
+    "seed_and_planting_material_costs": "not_yet_audited",
+    "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+    "crop_protection_costs": "not_yet_audited",
+    "irrigation_water_and_energy_costs": "not_yet_audited",
+    "labour_rates_and_operations": "not_yet_audited",
+    "machinery_and_land_preparation_costs": "not_yet_audited",
+    "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+    "currency_and_exchange_rate_method": "partial_currency_confirmed_EGP_but_conversion_policy_not_audited",
+    "source_provenance_and_observation_date": "partial_primary_source_routes_confirmed",
+    "calculator_mapping_and_test_cases": "blocked_until_regional_yields_prices_and_costs_validated"
+  },
+  "blockers": [
+    "download and extract the CAPMAS 2023/24 workbook and/or MALR crop-composition database by crop, governorate and winter/summer/Nili season; reconcile planted, cropped and harvested area definitions",
+    "verify crop-specific multi-season yields for the calculator's 17 commodities; do not use national production-only totals or secondary transcriptions as yields",
+    "extract dated MALR farm-gate price records by crop, season and year, retaining EGP/tonne and distinguishing traded EGP/kg observations",
+    "obtain current farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation-water, energy, land-rent and transport costs by governorate and production system",
+    "download and extract 2024 livestock and poultry reports and obtain region-specific enterprise costs and output prices",
+    "document governorate-to-seven-region mapping only as a grouping layer; preserve governorate and old-land/new-land/reclaimed production distinctions where supported",
+    "build crop-specific regional enterprise budgets, currency handling and calculator test cases before activation"
+  ],
+  "decision": "Do not activate Egypt. The official source infrastructure is promising, but actual regional crop observations, current farm-gate prices and full enterprise costs have not been extracted or validated. No calculator formulas or active country data changed.",
+  "next_step": "Extract the CAPMAS/MALR crop and price database records, then build governorate-level budgets for each supported commodity and season."
+}
