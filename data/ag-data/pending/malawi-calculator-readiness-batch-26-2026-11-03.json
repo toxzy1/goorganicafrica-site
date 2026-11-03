@@ -1,0 +1,266 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — Batch 26: Malawi",
+  "country": {
+    "name": "Malawi",
+    "iso_alpha2": "MW",
+    "iso_alpha3": "MWI",
+    "currency": "MWK",
+    "currency_name": "Malawian kwacha"
+  },
+  "review_date": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_reviewed_not_calculator_ready",
+  "administrative_geography": {
+    "first_level_unit": "Region",
+    "regions": [
+      "Northern Region",
+      "Central Region",
+      "Southern Region"
+    ],
+    "region_count": 3,
+    "second_level_unit": "District",
+    "standard_district_council_count": 28,
+    "districts_by_region": {
+      "Northern Region": [
+        "Chitipa",
+        "Karonga",
+        "Likoma",
+        "Mzimba",
+        "Nkhata Bay",
+        "Rumphi"
+      ],
+      "Central Region": [
+        "Dedza",
+        "Dowa",
+        "Kasungu",
+        "Lilongwe",
+        "Mchinji",
+        "Nkhotakota",
+        "Ntcheu",
+        "Ntchisi",
+        "Salima"
+      ],
+      "Southern Region": [
+        "Balaka",
+        "Blantyre",
+        "Chikwawa",
+        "Chiradzulu",
+        "Machinga",
+        "Mangochi",
+        "Mulanje",
+        "Mwanza",
+        "Nsanje",
+        "Thyolo",
+        "Phalombe",
+        "Zomba",
+        "Neno"
+      ]
+    },
+    "boundary_count_note": "The standard 28-district council listing is used. Newer NSO/OCHA Common Operational Dataset boundary data also includes four city-district units (Blantyre City, Lilongwe City, Mzuzu City and Zomba City), making 32 level-2 boundary units if counted separately. The calculator region selector uses the three regions only.",
+    "selector_added": true,
+    "selector_file": "src/_data/calculator/regions.json",
+    "sources": [
+      "https://ndatarepo.must.ac.mw/layers/malawi-district-boundaries/",
+      "https://www.malawiembassyisrael.com/about-malawi/government",
+      "https://www.resakss.org/sites/default/files/Malawi%20MLGRD%202013%20Guidebook%20on%20the%20Local%20Government%20System%20in%20Malawi.pdf"
+    ]
+  },
+  "crop_production_2024_25_national_mt": [
+    {
+      "crop": "maize",
+      "production": 2859948,
+      "change_percent": 5.4
+    },
+    {
+      "crop": "rice",
+      "production": 147039,
+      "change_percent": 15.8
+    },
+    {
+      "crop": "millet",
+      "production": 48724,
+      "change_percent": 45
+    },
+    {
+      "crop": "sorghum",
+      "production": 113815,
+      "change_percent": 39.8
+    },
+    {
+      "crop": "groundnuts",
+      "production": 328163,
+      "change_percent": 18.2
+    },
+    {
+      "crop": "cotton",
+      "production": 16369,
+      "change_percent": 166.3
+    },
+    {
+      "crop": "sesame",
+      "production": 14284,
+      "change_percent": 29.5
+    },
+    {
+      "crop": "sunflower",
+      "production": 14983,
+      "change_percent": 15.7
+    },
+    {
+      "crop": "wheat",
+      "production": 522,
+      "change_percent": 43.4
+    },
+    {
+      "crop": "beans",
+      "production": 197086,
+      "change_percent": 1.5
+    },
+    {
+      "crop": "pigeon_peas",
+      "production": 477925,
+      "change_percent": 14.7
+    },
+    {
+      "crop": "cowpeas",
+      "production": 60659,
+      "change_percent": 35.1
+    },
+    {
+      "crop": "cassava",
+      "production": 6395722,
+      "change_percent": 7.6
+    },
+    {
+      "crop": "sweet_potatoes",
+      "production": 7978050,
+      "change_percent": 14.6
+    },
+    {
+      "crop": "potatoes",
+      "production": 1461756,
+      "change_percent": 4.1
+    },
+    {
+      "crop": "tomatoes",
+      "production": 746839,
+      "change_percent": 6.4
+    }
+  ],
+  "maize_production_by_add_2024_25_mt": [
+    {
+      "add": "Karonga",
+      "production": 163797,
+      "change_percent": -20.7
+    },
+    {
+      "add": "Mzuzu",
+      "production": 335138,
+      "change_percent": -4.1
+    },
+    {
+      "add": "Kasungu",
+      "production": 884852,
+      "change_percent": 4.3
+    },
+    {
+      "add": "Lilongwe",
+      "production": 699535,
+      "change_percent": 13.8
+    },
+    {
+      "add": "Salima",
+      "production": 113471,
+      "change_percent": 5.5
+    },
+    {
+      "add": "Machinga",
+      "production": 386128,
+      "change_percent": 32.9
+    },
+    {
+      "add": "Blantyre",
+      "production": 149187,
+      "change_percent": -27.9
+    },
+    {
+      "add": "Shire Valley",
+      "production": 127840,
+      "change_percent": 44.9
+    }
+  ],
+  "livestock_population_2024_25": [
+    {
+      "species": "cattle",
+      "head": 2331687,
+      "change_percent": 2.8
+    },
+    {
+      "species": "goats",
+      "head": 14818891,
+      "change_percent": 5.2
+    },
+    {
+      "species": "sheep",
+      "head": 487265,
+      "change_percent": 5.9
+    },
+    {
+      "species": "pigs",
+      "head": 13581236,
+      "change_percent": 8.9
+    },
+    {
+      "species": "chickens",
+      "head": 217106872,
+      "change_percent": -2.5
+    }
+  ],
+  "market_price_evidence": {
+    "current_series": "IFPRI Malawi Monthly Maize Market Reports and FAO FPMA provide market-level retail-price observations; extraction by market, date, grade, product form and unit remains pending.",
+    "historical_2024_25_farmgate_policy_floors_mwk_per_kg": {
+      "maize": 1050,
+      "paddy_rice": 1200,
+      "finger_millet": 1200,
+      "soybean": 1200,
+      "pure_beans": 2500
+    },
+    "warning": "Historical policy floors and retail observations must not be used as current 2026 farmgate prices."
+  },
+  "readiness": {
+    "2025_NACA": "Published by NSO; report covers 29,648 smallholder households and estimates at national, regional, ADD, district, urban and rural levels. Detailed extraction and precision review pending.",
+    "crop_data": "Official APES 2024/25 national crop totals and ADD maize production extracted; regional/district crop area and yield tables pending.",
+    "costs": "Current seed, fertilizer, crop protection, labour, machinery, irrigation, energy and transport cost schedules not yet validated.",
+    "enterprise_budgets": "Not yet validated.",
+    "calculator_status": "not_active"
+  },
+  "blockers": [
+    "Extract 2025 NACA crop area/yield and production system tables by district and ADD; assess sample precision.",
+    "Obtain 2025/26 APES final crop production, area and yield tables where published.",
+    "Extract dated market prices and obtain current farmgate prices for each calculator crop.",
+    "Obtain farmer-paid seed, fertilizer, crop protection, labour, mechanization, land preparation, irrigation, energy and transport costs.",
+    "Build and test regional enterprise budgets and MWK calculator test cases.",
+    "Confirm crop taxonomy, especially beans, cowpeas, pigeon peas and rice product form."
+  ],
+  "sources": [
+    "https://www.finance.gov.mw/documents/uploads/2026-03/Doc%202_2026%20Annual%20Economic%20Report.pdf",
+    "https://www.nsomalawi.mw/news/national-census-of-agriculturenaca-2025",
+    "https://ndatarepo.must.ac.mw/layers/malawi-district-boundaries/",
+    "https://www.malawiembassyisrael.com/about-malawi/government",
+    "https://www.resakss.org/sites/default/files/Malawi%20MLGRD%202013%20Guidebook%20on%20the%20Local%20Government%20System%20in%20Malawi.pdf",
+    "https://massp.ifpri.info/publications/maize-market-reports/",
+    "https://manaonline.gov.mw/index.php?Itemid=371&id=9437%3Agovernment-sets-minimum-farm-gate-prices-for-2024-25-season&option=com_k2&view=item",
+    "https://www.fao.org/giews/countrybrief/country.jsp?code=MWI",
+    "https://fpma.fao.org/"
+  ],
+  "safeguards": [
+    "Malawi remains not_active and directory_only in the calculator registry.",
+    "The three regions are added to the region lookup without changing existing country region records.",
+    "The 28-district council convention is stated explicitly; four city-district units in newer boundary data are not conflated with it.",
+    "National crop production is not converted into regional yield or farm-level output assumptions.",
+    "ADD-level maize production is not relabelled as district production or regional yield.",
+    "Historical farmgate floor prices and retail market prices are not presented as current 2026 farmgate quotations.",
+    "No activation, merge to main or production deployment was performed."
+  ],
+  "next_step": "Extract detailed 2025 NACA small-area tables and current APES observations; assemble dated farmgate prices and farmer-paid costs; build region-specific enterprise budgets before activation."
+}
