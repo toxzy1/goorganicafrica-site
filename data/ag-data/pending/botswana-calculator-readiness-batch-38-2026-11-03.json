@@ -4,7 +4,7 @@
   "country_code": "BW",
   "country_name": "Botswana",
   "reviewed_on": "2026-11-03",
-  "status": "research_only_not_published_to_calculator",
+  "status": "mixed_source_operational_maize_localized_benchmark_fallback_for_other_16",
   "findings": [
     {
       "topic": "2024/25 cereal output discrepancy",
@@ -39,7 +39,17 @@
     "livestock": "preliminary_census_counts_only",
     "geography": "31_local_authority_labels_added_crosswalk_pending",
     "calculator_mapping_and_tests": "blocked",
-    "calculator_active": false
+    "calculator_active": true,
+    "calculator_mode": "mixed_source",
+    "maize": {
+      "yield_tonnes_per_ha": 0.6,
+      "yield_reference_year": 2024,
+      "white_maize_grade_3_price_bwp_per_kg": 1.519,
+      "white_maize_grade_1_price_bwp_per_kg": 3.1,
+      "price_reference_period": "2026-07/2026-08",
+      "production_costs": "Africa benchmark proxy; not Botswana-specific"
+    },
+    "other_commodities": "16 profiles enabled with explicit Africa benchmark fallback; local data extraction remains pending"
   },
   "sources": [
     {
@@ -75,6 +85,7 @@
     "No calculator formulas changed.",
     "No numeric Botswana crop yield, price, cost or margin activated.",
     "Existing ten active country profiles left unchanged.",
-    "Botswana remains directory-only."
+    "Botswana remains directory-only.",
+    "Botswana enabled in mixed-source calculator mode; only maize yield and producer price are country-specific, while maize costs and the other 16 commodity profiles use clearly labelled benchmark values."
   ]
 }
