@@ -1471,30 +1471,30 @@
       "code": "NA",
       "name": "Namibia",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_NAB_2025_white_maize_production_forecast_with_irrigated_and_rainfed_yields_and_2025_mahangu_floor_price_added_2026_cereal_outlook_identified_agricultural_census_data_pending",
+      "existing_research_note": "NAB 2024/25 zone-level marketed grain volumes and selected yields plus FAO 2026 national cereal outlook added; 14 administrative regions confirmed; region crosswalk and farm budgets pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial",
+        "dated_local_farmgate_prices_and_units": "partial",
+        "seed_and_planting_material_costs": "unavailable",
+        "fertilizer_and_soil_amendment_costs": "unavailable",
+        "crop_protection_costs": "unavailable",
+        "irrigation_water_and_energy_costs": "unavailable",
+        "labour_rates_and_operations": "unavailable",
+        "machinery_and_land_preparation_costs": "unavailable",
+        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "currency_and_exchange_rate_method": "pass",
+        "source_provenance_and_observation_date": "pass",
+        "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "NAB marketed tonnage and selected zone-level yields do not provide complete crop-by-region harvested-area and final-production tables.",
+        "Six agronomic production zones are distinct from the 14 administrative regions; a verified crosswalk is required.",
+        "Current dated producer prices and farmer-paid input quotations are incomplete.",
+        "No representative region- and production-system-specific enterprise budgets exist for the calculator commodities.",
+        "No Namibia calculator mapping or regression test cases have been implemented."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract NSA 2026 quarterly and Census of Agriculture outputs, verify NAB zone-level observations and crosswalk, and collect dated producer prices and farmer-paid input costs before calculator mapping."
     },
     {
       "code": "NE",
