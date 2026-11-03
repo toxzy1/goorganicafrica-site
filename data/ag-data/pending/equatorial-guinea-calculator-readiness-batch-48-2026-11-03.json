@@ -1,0 +1,89 @@
+{
+  "title": "Equatorial Guinea calculator readiness — Batch 48",
+  "batch": 48,
+  "country_code": "GQ",
+  "country_name": "Equatorial Guinea",
+  "review_date": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_published_to_calculator",
+  "calculator_status": "directory_only_not_active",
+  "purpose": "Advance source verification for crop output, regional agricultural statistics and farm-gate price evidence; do not publish estimates without underlying rows.",
+  "confirmed_findings": [
+    {
+      "source": "INEGE Statistical Yearbook of Equatorial Guinea 2026",
+      "url": "https://inege.org/?etn=statistical-yearbook-of-equatorial-guinea-2026&lang=en",
+      "publication_date": "2026-09-25",
+      "reference_period": "Statistics updated through December 2025",
+      "finding": "Official five-year statistical compilation covers agriculture, prices, income and wages; selected sectors have regional/provincial/district disaggregation.",
+      "qualification": "Accessible landing page describes coverage but does not expose crop table values in its text; download and extract full electronic yearbook."
+    },
+    {
+      "source": "Government of Equatorial Guinea official press office",
+      "url": "https://www.guineaecuatorialpress.com/noticias/la_nueva_edicion_del_anuario_estadistico_sistematiza_la_informacion_de_los_principales_sectores_del_pais",
+      "publication_date": "2026-09-25",
+      "finding": "Official yearbook launch report identifies the First General Agricultural Census as a forthcoming statistical operation.",
+      "qualification": "No census results or completion date are provided; this is a future data opportunity, not current production evidence."
+    },
+    {
+      "source": "FAOSTAT Agricultural Producer Prices dataset",
+      "url": "https://data.fao.org/catalog/dataset/47c17894-8ca1-4bd0-ba4d-6078e919e9b1",
+      "reference_date": "metadata revised 2025-12-04",
+      "finding": "Dataset metadata defines producer prices as farm-gate/first-sale prices, annual series 1991–2025 and monthly series from 2010, with price units including local currency per tonne.",
+      "qualification": "Equatorial Guinea commodity rows have not been extracted; no country price value admitted."
+    },
+    {
+      "source": "FAO GIEWS Equatorial Guinea Country Brief",
+      "url": "https://cb.apps.fao.org/country.jsp?code=GNQ",
+      "reference_date": "2026-07-22",
+      "finding": "FAO reports 2024 production estimates of 102,000 tonnes sweet potato, 77,000 tonnes cassava and 41,000 tonnes plantain, plus approx 20,000 ha staple crops and 9,000 ha cash crops.",
+      "qualification": "Production aggregates only; no matched harvested area or crop-specific province yield in this batch. Land-use definitions conflict with prior FAO brief and remain unresolved."
+    },
+    {
+      "source": "World Bank Trading Agricultural Commodities in CEMAC",
+      "url": "https://documents.worldbank.org/curated/en/233071535650013216/pdf/127883-REPORT-CEMAC-Agriculture.pdf",
+      "reference_period": "2018",
+      "finding": "Historical cross-border market-chain price formation for tomato, plantain and maize along Cameroon–Equatorial Guinea trade routes.",
+      "qualification": "Historical border/urban prices are not current Equatorial Guinea farm-gate prices; excluded from calculator inputs."
+    }
+  ],
+  "pending_extraction": [
+    "INEGE 2026 yearbook electronic PDF/annexes: agriculture, producer/market prices, wages, province/district tables.",
+    "FAOSTAT QCL country rows: crop area harvested, production, yield, flags and notes.",
+    "FAOSTAT producer prices country/product rows: local currency, unit, latest observation year/month, flags and missing series.",
+    "Primary government gazette/ministry validation of any 2026/27 cocoa price schedule and grade/payment rules.",
+    "Current province-level farmer input quotations and crop/livestock enterprise budgets."
+  ],
+  "regional_structure": {
+    "regions": [
+      "Región Continental",
+      "Región Insular"
+    ],
+    "provinces": [
+      "Annobón",
+      "Bioko Norte",
+      "Bioko Sur",
+      "Centro Sur",
+      "Djibloho",
+      "Kié-Ntem",
+      "Litoral",
+      "Wele-Nzas"
+    ],
+    "status": "geography retained from prior 2026 official toponymic evidence; no provincial crop yields yet validated"
+  },
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_official_sources_confirmed_rows_not_extracted",
+    "dated_local_farmgate_prices_and_units": "partial_FAOSTAT_route_confirmed_country_rows_not_extracted",
+    "seed_and_planting_material_costs": "not_yet_audited",
+    "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+    "crop_protection_costs": "not_yet_audited",
+    "irrigation_water_and_energy_costs": "not_yet_audited",
+    "labour_rates_and_operations": "not_yet_audited",
+    "machinery_and_land_preparation_costs": "not_yet_audited",
+    "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
+    "currency_and_exchange_rate_method": "partial_XAF_identified_conversion_and_pricing_policy_not_audited",
+    "source_provenance_and_observation_date": "partial_INEGE_2026_and_FAOSTAT_metadata_confirmed",
+    "calculator_mapping_and_test_cases": "blocked_until_local_yields_prices_and_costs_validated"
+  },
+  "decision": "Do not activate Equatorial Guinea. Current FAO output totals and the INEGE cocoa growth signal do not provide crop-specific regional yields or budgets. No guessed values, old 2018 trade prices or national aggregates have been admitted as calculator inputs.",
+  "next_step": "Extract full INEGE yearbook agriculture and price tables and raw FAOSTAT crop/producer-price country rows; then validate dated provincial producer prices and farm input budgets."
+}
