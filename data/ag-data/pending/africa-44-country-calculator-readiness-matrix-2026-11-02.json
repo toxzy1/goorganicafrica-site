@@ -774,26 +774,26 @@
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_national_2023_24_crop_estimates_and_2026_maize_estimate_only_regional_crop_yields_and_final_2025_26_tables_missing",
-        "dated_local_farmgate_prices_and_units": "blocked_no_verified_current_crop_region_farmgate_series",
-        "seed_and_planting_material_costs": "partial_NMC_subsidy_quantities_not_current_market_prices_or_full_costs",
-        "fertilizer_and_soil_amendment_costs": "partial_subsidy_quantities_and_historical_modelled_costs_not_current_farmer_paid_prices",
+        "dated_local_farmgate_prices_and_units": "partial_secondary_report_of_NMC_maize_procurement_price_SZL_5175_per_tonne_effective_April_2026_requires_primary_confirmation_and_grade_terms;other_crop_region_farmgate_series_missing",
+        "seed_and_planting_material_costs": "partial_2026_27_subsidized_package_farmer_contributions_recorded_for_maize_beans_sorghum_not_itemized_seed_prices_or_commercial_costs",
+        "fertilizer_and_soil_amendment_costs": "partial_2026_27_subsidized_package_contributions_and_NMC_quantities_recorded_not_itemized_fertilizer_prices_or_farmer_paid_commercial_costs",
         "crop_protection_costs": "partial_modelled_benchmark_only_current_product_prices_and_application_budgets_missing",
         "irrigation_water_and_energy_costs": "partial_modelled_benchmark_only_current_region_tariffs_and_pumping_costs_missing",
         "labour_rates_and_operations": "partial_historical_modelled_benchmarks_only_current_wage_and_operation_schedules_missing",
-        "machinery_and_land_preparation_costs": "partial_historical_modelled_benchmarks_only_current_regional_hire_rates_missing",
+        "machinery_and_land_preparation_costs": "partial_2026_27_subsidized_tractor_hire_rate_SZL_607_per_hour_farmer_contribution_SZL_400_reported;private_regional_hire_and_land_preparation_costs_missing",
         "regional_enterprise_budget_and_gross_margin": "blocked_modelled_benchmarks_not_validated_regional_farmer_budgets",
         "currency_and_exchange_rate_method": "partial_SZL_and_ZAR_parity_known_calculator_rounding_tests_pending",
-        "source_provenance_and_observation_date": "partial_FAO_2026_MoA_2024_NMC_programme_and_World_Bank_2025_sources_recorded",
+        "source_provenance_and_observation_date": "partial_FAO_2026_MoA_2024_NMC_official_programme_pages_and_dated_2026_27_secondary_reports_recorded",
         "calculator_mapping_and_test_cases": "blocked_no_validated_region_crop_price_cost_dataset_or_regression_tests"
       },
       "blockers": [
         "Obtain final 2025/26 crop tables by region, crop and production system; reconcile with the FAO 2026 maize estimate.",
-        "Extract dated farmgate prices by crop, grade, unit and region; keep wholesale and retail observations separate.",
-        "Obtain current farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation, energy, packaging and transport costs.",
+        "Confirm the reported SZL 5,175/tonne NMC maize buying price and grade/deduction terms from a primary NMC season schedule; obtain farmgate prices for other crops and regions.",
+        "Obtain itemized current farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation, energy, packaging and transport costs; separate subsidy co-payments from full commercial prices.",
         "Validate World Bank modelled budgets against current SNL and TDL farm systems and regional agro-ecological conditions.",
         "Build region-specific budgets and calculator regression tests before mapping any values."
       ],
-      "next_step": "Obtain final 2025/26 crop tables and dated regional farmgate price and farmer-paid input quotations; validate representative SNL and TDL budgets before calculator mapping.",
+      "next_step": "Confirm the reported 2026 NMC maize procurement schedule from the primary NMC source; obtain the 2025/26 regional crop assessment and current region-level farmer quotations, then validate SNL and TDL enterprise budgets before calculator mapping.",
       "batch_23_review": {
         "review_date": "2026-11-02",
         "country_name": "Eswatini",
@@ -831,6 +831,11 @@
           "Retail and wholesale market prices were not relabelled as farmgate prices.",
           "No merge or production deployment was performed."
         ]
+      },
+      "batch_50_review": {
+        "review_date": "2026-11-03",
+        "findings": "Added dated 2026/27 subsidy package co-payments for maize, beans and sorghum, subsidised tractor-hire programme rate and a secondary-reported NMC maize procurement price lead. These improve cost/price evidence but do not complete crop-region farmgate series or itemized budgets.",
+        "status": "research_only_not_calculator_ready"
       }
     },
     {
