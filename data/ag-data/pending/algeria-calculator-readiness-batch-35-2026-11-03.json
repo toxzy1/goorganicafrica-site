@@ -1,0 +1,225 @@
+{
+  "title": "GoOrganicAfrica Algeria calculator readiness research — Batch 35",
+  "batch": 35,
+  "country_code": "DZ",
+  "country_name": "Algeria",
+  "completed_on": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_update_only_not_calculator_ready",
+  "executive_summary": "Updated Algeria's evidence record with 2024 RGA census progress, FAO 2025 cereal estimates and 2026 outlook, MADRP retail-price bulletin, ITGC 2024/25 cost-sheet methodology, and the 69-wilaya legal reorganisation. Added 69 wilayas to the region lookup. Final census tables, numerical ITGC cost sheets, farmgate prices and validated regional budgets remain outstanding.",
+  "geography": {
+    "wilaya_count": 69,
+    "commune_count": 1541,
+    "regions": [
+      "Adrar",
+      "Chlef",
+      "Laghouat",
+      "Oum El Bouaghi",
+      "Batna",
+      "Béjaïa",
+      "Biskra",
+      "Béchar",
+      "Blida",
+      "Bouira",
+      "Tamanrasset",
+      "Tébessa",
+      "Tlemcen",
+      "Tiaret",
+      "Tizi Ouzou",
+      "Alger",
+      "Djelfa",
+      "Jijel",
+      "Sétif",
+      "Saïda",
+      "Skikda",
+      "Sidi Bel Abbès",
+      "Annaba",
+      "Guelma",
+      "Constantine",
+      "Médéa",
+      "Mostaganem",
+      "M'Sila",
+      "Mascara",
+      "Ouargla",
+      "Oran",
+      "El Bayadh",
+      "Illizi",
+      "Bordj Bou Arréridj",
+      "Boumerdès",
+      "El Tarf",
+      "Tindouf",
+      "Tissemsilt",
+      "El Oued",
+      "Khenchela",
+      "Souk Ahras",
+      "Tipaza",
+      "Mila",
+      "Aïn Defla",
+      "Naâma",
+      "Aïn Témouchent",
+      "Ghardaïa",
+      "Relizane",
+      "Timimoun",
+      "Bordj Badji Mokhtar",
+      "Ouled Djellal",
+      "Béni Abbès",
+      "In Salah",
+      "In Guezzam",
+      "Touggourt",
+      "Djanet",
+      "El M'Ghair",
+      "El Meniaa",
+      "Aflou",
+      "Barika",
+      "El Kantara",
+      "Bir El Ater",
+      "El Aricha",
+      "Ksar Chellala",
+      "Aïn Oussara",
+      "Messaad",
+      "Ksar El Boukhari",
+      "Bou Saâda",
+      "El Abiodh Sidi Cheikh"
+    ],
+    "legal_source": "Law No. 26-06, Official Journal No. 25, 5 April 2026",
+    "transition": "Parent wilayas continue to administer new wilayas during installation; transfer deadline is 31 December 2026. Interior Ministry reported installations for several newly promoted wilayas in late September 2026."
+  },
+  "census": {
+    "title": "General Agricultural Census 2024",
+    "publisher": "MADRP",
+    "interim_progress": {
+      "holdings_enumerated": 1118000,
+      "completion_percent": 93,
+      "as_of": "2024-07-14"
+    },
+    "caveat": "Interim fieldwork progress, not final census total; final crop and regional tables not extracted."
+  },
+  "crop_evidence": {
+    "reference_year": 2025,
+    "source": "FAO GIEWS, 29 January 2026",
+    "production_mt": {
+      "wheat": 3000000,
+      "barley": 1150000,
+      "oats": 86000,
+      "total_cereals": 4248000
+    },
+    "caveat": "National crop-specific production estimates; no matching harvested-area denominators in this brief, so no yield calculated."
+  },
+  "outlook_2026": {
+    "source": "FAO GIEWS, 30 June 2026",
+    "total_cereal_forecast_mt": 5000000,
+    "comparison": "nearly 30 percent above average",
+    "caveat": "Forecast, not final output; aggregate not split into individual crops."
+  },
+  "price_evidence": {
+    "source": "MADRP daily bulletin 29 October 2026",
+    "market_level": "national retail",
+    "prices_dzd": {
+      "potato_per_kg": 91,
+      "tomato_per_kg": 129,
+      "green_pepper_per_kg": 135,
+      "hot_pepper_per_kg": 149,
+      "green_beans_per_kg": 215,
+      "dates_per_kg": 457,
+      "broiler_meat_per_kg": 468,
+      "eggs_per_unit": 23
+    },
+    "caveat": "All are retail observations, not farmgate prices; green beans are not dry cowpea and broiler meat is not live-bird price."
+  },
+  "cost_evidence": {
+    "source": "ITGC valued technical sheets 2024/25",
+    "crops": [
+      "durum wheat",
+      "soft wheat",
+      "barley",
+      "oats",
+      "triticale",
+      "lentil",
+      "chickpea",
+      "forage crops",
+      "rapeseed"
+    ],
+    "scope": "Per-hectare technical itineraries and costs; separate machinery rented from machinery owned; schedules updated when input prices change.",
+    "caveat": "Numerical schedule extraction pending; these are technical reference budgets, not automatically observed farmer expenses."
+  },
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "blocked",
+    "seed_and_planting_material_costs": "partial_numeric_extraction_pending",
+    "fertilizer_and_soil_amendment_costs": "partial_numeric_extraction_pending",
+    "crop_protection_costs": "partial_numeric_extraction_pending",
+    "irrigation_water_and_energy_costs": "not_audited",
+    "labour_rates_and_operations": "partial_final_RGA_tables_pending",
+    "machinery_and_land_preparation_costs": "partial_ITGC_cost_sheets_identified",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_exchange_rate_method": "partial",
+    "source_provenance_and_observation_date": "pass_for_identified_sources",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "safeguards": [
+    "Algeria remains directory-only and inactive.",
+    "Do not convert national production totals into yields without matching harvested area.",
+    "Do not use the 2026 aggregate cereal forecast as crop-specific production.",
+    "Do not use national retail prices as farmgate prices.",
+    "Keep ITGC technical reference costs distinct from observed farmer expenses.",
+    "Use 69 wilayas under the 2026 law; preserve the transition note through 31 December 2026.",
+    "No active calculator profiles or formulas changed."
+  ],
+  "sources": [
+    {
+      "title": "MADRP General Agricultural Census 2024",
+      "url": "https://madr.gov.dz/rga-ar/",
+      "publisher": "MADRP",
+      "use": "Census scope and interim enumeration progress."
+    },
+    {
+      "title": "FAO GIEWS Algeria Country Brief",
+      "url": "https://cb.apps.fao.org/country/DZA/pdf/DZA.pdf",
+      "publisher": "FAO",
+      "publication_date": "2026-01-29",
+      "use": "2025 crop-specific cereal estimates."
+    },
+    {
+      "title": "FAO GIEWS Algeria Country Brief",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=DZA",
+      "publisher": "FAO",
+      "publication_date": "2026-06-30",
+      "use": "2026 aggregate cereal forecast and weather context."
+    },
+    {
+      "title": "MADRP daily agricultural retail price bulletin",
+      "url": "https://madr.gov.dz/mercuriale-des-prix/",
+      "publisher": "MADRP",
+      "publication_date": "2026-10-29",
+      "use": "Daily national retail observations, not farmgate."
+    },
+    {
+      "title": "ITGC valued technical sheets for major crops 2024/25",
+      "url": "https://www.itgc.dz/?p=10599",
+      "publisher": "ITGC",
+      "use": "Per-hectare crop cost schedules by crop and machinery ownership/rental."
+    },
+    {
+      "title": "Official Journal No. 25 — Law No. 26-06",
+      "url": "https://www.joradp.dz/FTP/jo-francais/2026/F2026025.pdf",
+      "publisher": "Government of Algeria",
+      "publication_date": "2026-04-05",
+      "use": "69 wilayas and 1,541 communes; new boundaries and transition provisions."
+    },
+    {
+      "title": "Installation of newly created wilayas",
+      "url": "https://interieur.gov.dz/2026/10/04/ceremonie-dinstallation-de-nouveaux-walis/",
+      "publisher": "Ministry of Interior",
+      "publication_date": "2026-10-04",
+      "use": "Operational implementation status in late September 2026."
+    }
+  ],
+  "remaining_work": [
+    "Extract final RGA 2024 regional crop, livestock and labour tables.",
+    "Extract ITGC numeric crop budgets by production zone and equipment ownership/rental.",
+    "Collect current producer prices and farmer-paid costs by wilaya.",
+    "Validate production systems, irrigation, water/energy and transport costs.",
+    "Map regional crop profiles and 17 commodity test cases; do not activate until validated."
+  ],
+  "next_batch": "Batch 36: inspect the batch log and select the next unreviewed directory-only country; do not duplicate earlier reviews."
+}
