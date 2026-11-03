@@ -4751,6 +4751,220 @@
         "do not activate Tunisia calculator data from national cereal totals or official cereal procurement prices alone"
       ],
       "extraction_status": "Tunisia now has a directly accessible official JORT 2026/27 cereal procurement schedule: base prices of TND 100/quintal for durum wheat and TND 80/quintal for common wheat, plus a TND 65/quintal intervention price for barley and triticale, with conditional early-delivery premiums. FAO's February 2026 brief estimates 2025 wheat at 1.25m tonnes and barley at 380,000 tonnes; USDA/FAS forecasts higher MY 2025/26 production (1.35m tonnes wheat and 500,000 tonnes barley) and reports seeded area, not a matching final harvested-area denominator. ONAGRI lists a downloadable April 2026 input/service-price XLSX, which remains to be extracted. No Tunisia calculator values are admitted."
+    },
+    {
+      "country_code": "BJ",
+      "country_name": "Benin",
+      "evidence_status": "Batch_37_2026_11_03_ESA_2024_first_50x2030_data_release_confirmed_2026_06_11_INStaD_2023_24_final_cereal_output_and_FAO_2025_aggregate_outlook_12_department_lookup_added_crop_level_dataset_extraction_prices_and_budgets_pending",
+      "sources": [
+        {
+          "title": "Benin marks a milestone with its first agricultural data release under 50x2030",
+          "publisher": "FAO AGRISurvey / Government of Benin / DSA / INStaD",
+          "url": "https://www.fao.org/in-action/agrisurvey/news/news-detail/benin-marks-a-milestone-with-its-first-agricultural-data-release-under-50x2030/en",
+          "publication_date": "2026-06-11",
+          "reference_period": "Enquête Statistique Agricole (ESA) 2024",
+          "status": "official_first_50x2030_dataset_release",
+          "observations": [
+            {
+              "indicator": "survey_subjects",
+              "value": [
+                "crop area",
+                "production",
+                "yields",
+                "agricultural inputs",
+                "harvest and post-harvest losses",
+                "infrastructure"
+              ],
+              "reference_period": "ESA 2024",
+              "status": "FAO release confirms these variables are included; exact crop tables and units still require download and extraction."
+            },
+            {
+              "indicator": "next_survey_rounds",
+              "value": "ESA 2025 results under preparation; ESA 2026 planned",
+              "reference_date": "2026-06-11",
+              "status": "programme update, not yet published numerical data."
+            }
+          ],
+          "quality_notes": [
+            "ESA 2024 is the strongest new source lead: first data release under 50x2030, led by DSA with INStaD and FAO support.",
+            "The release confirms crop area, production and yield, input use and losses; this batch does not yet extract microdata or table-level values.",
+            "ESA 2024 is the core production/loss survey; income, labour/productivity, production methods/environment and machinery/assets are planned in later modules, so do not assume complete enterprise budgets are available."
+          ]
+        },
+        {
+          "title": "Campagne agricole 2023-2024 — résultats définitifs",
+          "publisher": "INStaD / Ministry of Agriculture, Livestock and Fisheries, Benin",
+          "url": "https://www.instad.bj/statistiques/statistiques-agricoles/577-campagne-agricole-2023-2024",
+          "publication_date": "2024-04-15 (page date; downloadable final tables shown as available in 2026)",
+          "reference_period": "2023/2024 agricultural campaign",
+          "status": "official_final_campaign_statistics_summary_and_downloadable_tables",
+          "observations": [
+            {
+              "indicator": "aggregate_cereal_production",
+              "value": 2737481,
+              "unit": "tonnes",
+              "reference_period": "2023/2024",
+              "status": "Official final aggregate across cereals; not a maize or rice output figure."
+            },
+            {
+              "indicator": "five_year_average_cereal_production",
+              "value": 2219312,
+              "unit": "tonnes",
+              "reference_period": "previous_five_years",
+              "status": "Official comparison average."
+            },
+            {
+              "indicator": "previous_reported_cereal_production",
+              "value": 2297373,
+              "unit": "tonnes",
+              "reference_year": 2022,
+              "status": "Official comparison figure; confirm the exact campaign/year convention in the PDF before trend modelling."
+            },
+            {
+              "indicator": "yield_direction",
+              "value": "overall decline across cereal crops",
+              "reference_period": "2023/2024",
+              "status": "INStaD narrative says higher cereal output reflected area expansion while yields generally fell."
+            }
+          ],
+          "quality_notes": [
+            "The INStaD page links a final campaign results PDF and other crop-chain publications; numerical crop-by-crop tables must be extracted from the PDF before use.",
+            "The aggregate cereal total cannot be distributed among maize, rice, sorghum or millet without crop-specific table values.",
+            "The page explains that annual crop yield is production divided by area sown; preserve the denominator and do not label it harvested-area yield."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief — Benin",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://cb.apps.fao.org/country.jsp?code=BEN&lang=en",
+          "reference_date": "2026-06-10",
+          "reference_period": "2025 cereal production and 2026 planting outlook",
+          "status": "official_country_brief_aggregate_outlook_and_price_context",
+          "observations": [
+            {
+              "indicator": "aggregate_cereal_production",
+              "value": 2900000,
+              "unit": "tonnes_approximately",
+              "reference_year": 2025,
+              "status": "FAO reports 2025 output estimated at about 2.9 million tonnes, around 20 percent above the previous five-year average; aggregate only."
+            },
+            {
+              "indicator": "cereal_price_movement",
+              "value": "below year-earlier values",
+              "reference_date": "2026-04",
+              "status": "FAO narrative only; obtain commodity, market, grade, unit and absolute price series before using."
+            },
+            {
+              "indicator": "2026_planting",
+              "value": "main-season maize planting completed in southern and central bimodal areas by April; rice sowing concluded in May; northern coarse grains and rice planting began in May/June",
+              "reference_period": "2026 main season",
+              "status": "seasonal progress, not harvested output."
+            },
+            {
+              "indicator": "localized_production_risk",
+              "value": "civil insecurity disrupting activities in Alibori and Atacora",
+              "reference_period": "2026",
+              "status": "FAO identifies localized production risk; retain regional distinction."
+            }
+          ],
+          "quality_notes": [
+            "2025 2.9 million tonnes is aggregate cereals and an estimate, not a crop-specific yield.",
+            "April 2026 price direction is not an absolute farmgate price; do not use as a calculator selling price."
+          ]
+        },
+        {
+          "title": "Statistiques agricoles — INStaD",
+          "publisher": "Institut National de la Statistique et de la Démographie (INStaD)",
+          "url": "https://www.instad.bj/statistiques/statistiques-agricoles",
+          "reference_date": "2026-11-03",
+          "status": "official_archive_and_data_catalogue",
+          "observations": [
+            {
+              "indicator": "annual_crop_data_method",
+              "value": "annual sown area and production by crop; reported yield is production divided by area sown",
+              "status": "INStaD metadata description."
+            },
+            {
+              "indicator": "available_publication_files",
+              "value": [
+                "Résultat définitif de la campagne",
+                "ESA 2024 Volume 2 principaux résultats du module de base",
+                "ESA 2024 Volume 3 principaux tableaux du module de base",
+                "ESA 2024 Volume 4 synthèse des principaux résultats",
+                "Indicateurs synthétiques sur l’agriculture béninoise"
+              ],
+              "status": "Catalogue lists downloadable PDF files; the large tables have not been parsed in this batch."
+            }
+          ]
+        },
+        {
+          "title": "Benin administrative geography",
+          "publisher": "IGN-Bénin",
+          "url": "https://ign.bj/webmap/village.php",
+          "reference_date": "2026-06-09",
+          "status": "official_geospatial_administrative_database",
+          "observations": [
+            {
+              "indicator": "departments",
+              "value": 12,
+              "unit": "departments",
+              "status": "Official IGN spatial database description."
+            },
+            {
+              "indicator": "communes",
+              "value": 77,
+              "unit": "communes",
+              "status": "Official IGN spatial database description."
+            },
+            {
+              "indicator": "arrondissements",
+              "value": 546,
+              "unit": "arrondissements",
+              "status": "Official IGN spatial database description."
+            },
+            {
+              "indicator": "villages_and_urban_neighbourhoods",
+              "value": 5295,
+              "unit": "units",
+              "status": "Official IGN spatial database description."
+            }
+          ]
+        }
+      ],
+      "priority_commodities": [
+        "maize",
+        "rice",
+        "cassava",
+        "yam",
+        "sorghum",
+        "millet",
+        "soybean",
+        "cowpea",
+        "tomato",
+        "pepper",
+        "pineapple",
+        "cashew",
+        "cotton",
+        "poultry",
+        "goat",
+        "cattle"
+      ],
+      "remaining_gaps": [
+        "Download and extract ESA 2024 Volume 2, Volume 3 and Volume 4; capture crop-specific sown area, harvested area where reported, production, yield denominator, province/department disaggregation, sampling weights and missing values.",
+        "Extract the final 2023/24 campaign results PDF and reconcile crop-by-crop figures against ESA 2024; do not mix annual crop-year series with survey reference periods.",
+        "Acquire the Benin Data Portal ESA 2024 datasets and metadata, and record access/licensing and whether microdata are public or controlled.",
+        "Obtain absolute, dated, market-specific producer/farmgate prices by commodity, grade, unit and department; FAO's below-year-earlier price direction is not a usable selling price.",
+        "Extract input use from ESA 2024 and obtain dated farmer purchase prices for seed, fertilizer, crop protection, machinery, labour, irrigation, energy and transport.",
+        "ESA 2024 initial release focuses on production, inputs and losses; later annual rounds/modules for income, labour/productivity, production methods/environment and machinery/assets are still needed for full budgets.",
+        "Build department-specific enterprise budgets and calculator test cases for the current 17 commodity profiles before activation; preserve area-sown yield definitions where that is the published denominator.",
+        "Account for FAO's 2026 security-related production risk in Alibori and Atacora; do not assume uniform national yields."
+      ],
+      "extraction_status": "Benin has a major new data milestone: FAO confirmed the first ESA 2024 release under 50x2030 on 11 June 2026, covering crop areas, production, yields, input use and harvest/post-harvest losses. INStaD publishes final 2023/24 aggregate cereal production of 2,737,481 tonnes and links detailed final tables. FAO's June 2026 brief estimates 2025 aggregate cereal output at about 2.9 million tonnes and reports April 2026 cereal prices below year-earlier levels. The detailed ESA/campaign tables, absolute farmgate prices, farmer input costs and enterprise budgets remain to be extracted. No Benin calculator values are activated.",
+      "quality_notes": [
+        "Do not map cotton, cashew or pineapple directly into the current 17 calculator profiles unless the commodity schema explicitly supports them.",
+        "Benin's annual crop statistics define yield as production divided by area sown; keep this distinct from yield per harvested hectare.",
+        "The 12-department geographic lookup is not evidence that department-specific calculator budgets are complete."
+      ]
     }
   ],
   "cross_country_sources": [
