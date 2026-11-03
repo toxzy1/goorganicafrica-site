@@ -134,7 +134,7 @@
       "as_of": "2026-04",
       "yield_low": 0.4,
       "yield_expected": 0.7,
-      "yield_high": 1.0,
+      "yield_high": 1,
       "yield_unit": "tonnes",
       "price_low": 1500,
       "price_expected": 2300,
@@ -197,7 +197,7 @@
       "source": "Production cost benchmarks: FAO crop production costs Africa (2024-2026); GeraFarm Africa 2026; converted using mid-2026 exchange rates",
       "as_of": "2026-03",
       "yield_low": 0.7,
-      "yield_expected": 1.0,
+      "yield_expected": 1,
       "yield_high": 1.6,
       "yield_unit": "tonnes",
       "price_low": 10,
@@ -230,7 +230,7 @@
       "as_of": "2026-03",
       "yield_low": 0.4,
       "yield_expected": 0.7,
-      "yield_high": 1.0,
+      "yield_high": 1,
       "yield_unit": "tonnes",
       "price_low": 7,
       "price_expected": 12,
@@ -326,12 +326,16 @@
       "as_of": "2026-03",
       "yield_low": 0.4,
       "yield_expected": 0.6,
-      "yield_high": 1.0,
+      "yield_high": 1,
       "yield_unit": "tonnes",
       "price_low": 35,
       "price_expected": 65,
       "price_high": 110,
       "price_unit": "per kg"
+    },
+    {
+      "country_code": "BW",
+      "data_quality": "benchmark"
     }
   ],
   "active": true
