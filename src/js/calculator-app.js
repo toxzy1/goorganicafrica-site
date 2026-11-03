@@ -150,7 +150,10 @@
     if (exact) {
       var copy = Object.assign({}, exact);
       delete copy.country_code;
-      return copy;
+      // Fill only missing fields from the Africa benchmark. Exact country observations
+      // always take precedence; the separate source labels keep proxy costs transparent.
+      var benchmark = benchmarkCommodityData(commodity, countryCode);
+      return benchmark ? Object.assign({}, benchmark, copy) : copy;
     }
     return benchmarkCommodityData(commodity, countryCode);
   }
@@ -489,7 +492,7 @@
       stepHeader(root, T("calc", "step", {current: 6, total: 8}), T("calc","expectedSurvival"));
       var box = document.createElement("div");
       box.className = "calc-reference-box";
-      box.innerHTML = T("calc", "referenceSurvival", {commodity: state.commodity.name, rate: cd.survival_rate, source: cd.source});
+      box.innerHTML = T("calc", "referenceSurvival", {commodity: state.commodity.name, rate: cd.survival_rate, source: cd.yield_source || cd.source});
       root.appendChild(box);
 
       var field = document.createElement("div");
@@ -518,7 +521,7 @@
     var refBox = document.createElement("div");
     refBox.className = "calc-reference-box";
     if (isRecurring) {
-      refBox.innerHTML = T("calc", "referenceOutput", {low: cd.output_low, high: cd.output_high, unit: T("units","eggsPerBirdYear"), expected: cd.output_expected, source: cd.source, date: cd.as_of});
+      refBox.innerHTML = T("calc", "referenceOutput", {low: cd.output_low, high: cd.output_high, unit: T("units","eggsPerBirdYear"), expected: cd.output_expected, source: cd.price_source || cd.source, date: cd.as_of});
     } else {
       refBox.innerHTML = T("calc", "referenceYield", {low: cd.yield_low, high: cd.yield_high, unit: cd.yield_unit, expected: cd.yield_expected, source: cd.source, date: cd.as_of});
     }
@@ -658,14 +661,14 @@
         quantity: state.quantity,
         unit: unitInfo.abbr,
         total: fmtMoney(scaledTotal, currency),
-        source: cd.source,
+        source: cd.cost_source || cd.source,
         date: cd.as_of
       });
     } else {
       refBox.innerHTML = T("calc", "referenceTotalCost", {
         unit: localizedDataUnit(isCrop ? "hectare" : state.commodity.unit_label),
         cost: fmtMoney(cd.cost_per_unit, currency),
-        source: cd.source,
+        source: cd.cost_source || cd.source,
         date: cd.as_of
       });
     }
