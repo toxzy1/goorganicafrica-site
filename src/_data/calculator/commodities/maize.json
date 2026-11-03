@@ -424,7 +424,10 @@
       "price_source": "Botswana Agricultural Marketing Board schedule reproduced by The Farmers' Platform, July/August 2026: white maize Grade 3 P1,519/tonne and Grade 1 P3,100/tonne. Grade and delivery conditions apply.",
       "source": "Botswana-specific maize yield (FAOSTAT 2024) and BAMB-reproduced white-maize producer schedule (July/August 2026); costs remain Africa benchmark proxy, not local costs.",
       "as_of": "2026-08",
-      "data_quality": "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy"
+      "data_quality": "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy",
+      "yield_as_of": "2024",
+      "price_as_of": "2026-08",
+      "cost_as_of": "2026-10"
     }
   ],
   "active": true
