@@ -1,0 +1,30 @@
+{
+  "country": "Gabon",
+  "iso_alpha2": "GA",
+  "review_date": "2026-11-03",
+  "batch": 50,
+  "source": "INSTAT Gabon, RGA 2022–2023, EPVA Volume 2, Tables 119–121",
+  "source_url": "https://instatgabon.org/uploads/folder_1/RGA/Enque%CC%82te%20de%20Production%20Ve%CC%81ge%CC%81tale%20et%20Animale%20%28EPVA%29/Rapport%20tableaux%20statistiques%20EPVA_Volume%202.pdf",
+  "findings": {
+    "cassava_national": {
+      "area_ha": 4438,
+      "yield_t_ha": 4.06,
+      "production_t": 18035
+    },
+    "plantain_national": {
+      "area_ha": 1360,
+      "yield_t_ha": 3.97,
+      "production_t": 5395
+    },
+    "province_count": 9,
+    "other_tables": "Province-level labour type/days/hours, seed acquisition/quality, fertilizer and phytosanitary use, livestock and equipment-use indicators are present, but not current monetary prices."
+  },
+  "provincial_crop_data": "See gabon-calculator-readiness-batch-50-2026-11-03.json and gabon-batch-50-plantain-table-correction-2026-11-03.json.",
+  "limitations": [
+    "Survey observations are historical and not a current-season crop forecast.",
+    "No current provincial farmgate prices by crop, grade and unit have been validated.",
+    "No complete farmer-paid input, labour, irrigation, machinery, transport or storage budgets are available.",
+    "Plantain province values in the correction file supersede the incomplete plantain rows in the initial batch JSON."
+  ],
+  "decision": "Research-only; do not activate Gabon in the calculator."
+}
