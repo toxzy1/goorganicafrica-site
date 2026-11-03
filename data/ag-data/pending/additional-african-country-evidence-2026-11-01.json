@@ -3052,7 +3052,7 @@
     {
       "country_code": "AO",
       "country_name": "Angola",
-      "evidence_status": "official_ICAPP_2023_2024_and_2024_2025_sample_survey_results_and_MINAGRIF_2024_2025_crop_area_bulletin_identified_reference_prices_2025_2026_available_detailed_tables_and_farm_budgets_pending",
+      "evidence_status": "Batch_36_2026_11_03_ICAPP_2024_25_scope_confirmed_2026_state_of_nation_agriculture_livestock_seed_fertilizer_and_irrigation_indicators_added_21_province_lookup_added_detailed_crop_tables_and_costs_still_pending",
       "sources": [
         {
           "title": "Principais Resultados do Inquérito Contínuo Agro-Pecuário e Pescas (ICAPP) 2024/2025",
@@ -3247,6 +3247,147 @@
           "reference_date": "2026-10-31",
           "status": "market_price_discovery_only_provenance_and_market_level_not_sufficiently_documented",
           "note": "A public dashboard showed daily prices for 19 food items at Mercado Central, including maize, rice, beans, soybean, tomato and watermelon, but the publisher, sampling method and whether values are wholesale or retail were not sufficiently established. Do not use as a calculator price until provenance and market level are verified."
+        },
+        {
+          "title": "Estado da Nação 2026 — Presidential address",
+          "publisher": "Government of Angola / CIPRA",
+          "url": "https://governo.gov.ao/noticias/3216/governo/estado-da-nacao-2026/integra-da-mensagem-do-presidente-da-republica",
+          "publication_date": "2026-10-15",
+          "reference_period": "Agricultural sector indicators reported for 2023–2026",
+          "status": "official_government_aggregate_sector_indicators_not_crop_specific_budget_data",
+          "observations": [
+            {
+              "indicator": "family agricultural holdings",
+              "value": 3323242,
+              "unit": "holdings",
+              "reference_date": "2026-10-15",
+              "status": "Government-reported national count; not province-level or crop-specific."
+            },
+            {
+              "indicator": "commercial agricultural holdings",
+              "value": 5858,
+              "unit": "holdings",
+              "reference_date": "2026-10-15",
+              "status": "Government-reported national count; only 125 reported as effectively in production. Do not assume all holdings are active."
+            },
+            {
+              "indicator": "meat production",
+              "value": 1032849,
+              "unit": "tonnes",
+              "period": "2023–2025",
+              "status": "Aggregate meat production across species; unsuitable as a species-specific livestock yield."
+            },
+            {
+              "indicator": "egg production",
+              "value": 7729031088,
+              "unit": "eggs",
+              "period": "2023–2025",
+              "status": "National aggregate output; no laying-hen population, regional split or farmgate price in this statement."
+            },
+            {
+              "indicator": "employment in agriculture_livestock_forestry_fisheries",
+              "value": 50.7,
+              "unit": "percent of employed population",
+              "reference_date": "2026-10-15",
+              "status": "Broad sector employment share; not an agricultural wage rate."
+            },
+            {
+              "indicator": "national agricultural production",
+              "value": 30.4,
+              "unit": "million tonnes",
+              "period": "2024/2025",
+              "status": "Government aggregate across crops; not a commodity yield or directly usable calculator input."
+            }
+          ]
+        },
+        {
+          "title": "Agriculture-family input availability and irrigation programme indicators",
+          "publisher": "Government of Angola / CIPRA",
+          "url": "https://governo.gov.ao/noticias/3231/governo/agricultura-familiar/disponibilidade-de-fertilizantes-aumentou-mais-de-13-vezes-em-quatro-anos",
+          "publication_date": "2026-10-17",
+          "reference_period": "2022–2026",
+          "status": "official_national_supply_and_project_capacity_context_not_farmer_unit_costs",
+          "observations": [
+            {
+              "indicator": "fertilizer availability for family agriculture",
+              "value": 173604,
+              "unit": "tonnes",
+              "reference_year": 2026,
+              "status": "National availability, not a price, allocation per farm or delivered province-level quantity."
+            },
+            {
+              "indicator": "certified seed availability",
+              "value": 6930,
+              "unit": "tonnes",
+              "reference_year": 2025,
+              "status": "National availability, not crop-specific farmer purchase price or distribution."
+            },
+            {
+              "indicator": "fertilizer availability baseline",
+              "value": 13000,
+              "unit": "tonnes",
+              "reference_year": 2022,
+              "status": "Government-reported national availability."
+            },
+            {
+              "indicator": "certified seed availability baseline",
+              "value": 2850,
+              "unit": "tonnes",
+              "reference_year": 2023,
+              "status": "Government-reported national availability."
+            },
+            {
+              "indicator": "Cacála and Coreia irrigation project area",
+              "value": 626,
+              "unit": "hectares",
+              "reference_date": "2026-10-15",
+              "status": "Combined project area; not evidence of irrigation access or water/energy cost for typical farms."
+            },
+            {
+              "indicator": "Quizenga irrigated area",
+              "value": 2000,
+              "unit": "hectares",
+              "reference_date": "2026-10-15",
+              "status": "Project capacity supporting 78 small and medium producers; not representative national coverage."
+            },
+            {
+              "indicator": "Luinga planned irrigated area",
+              "value": 10000,
+              "unit": "hectares",
+              "reference_date": "2026-10-15",
+              "status": "More than 10,000 ha planned; project implementation reported at 93 percent, not yet a general farm cost series."
+            }
+          ]
+        },
+        {
+          "title": "Angola official provinces and administrative units",
+          "publisher": "Government of Angola",
+          "url": "https://governo.gov.ao/angola/provincias",
+          "reference_date": "2026-11-03",
+          "status": "official_current_first_order_administrative_lookup",
+          "observations": [
+            {
+              "indicator": "first_order_administrative_units",
+              "value": 21,
+              "unit": "provinces",
+              "reference_date": "2026-11-03",
+              "status": "Government portal lists 21 provinces, including Icolo e Bengo, Cuando, Cubango and Moxico Leste."
+            },
+            {
+              "indicator": "second_order_administrative_units",
+              "value": 326,
+              "unit": "municipalities",
+              "reference_date": "2026-11-03",
+              "status": "Government portal count; province lookup only is added in this batch."
+            },
+            {
+              "indicator": "third_order_administrative_units",
+              "value": 378,
+              "unit": "communes",
+              "reference_date": "2026-11-03",
+              "status": "Government portal count; commune-level selector not yet added."
+            }
+          ]
         }
       ],
       "priority_commodities": [
@@ -3276,9 +3417,20 @@
         "obtain species-specific livestock herd, offtake, mortality, feed, veterinary, liveweight and sale-price data from ICAPP and official livestock sources",
         "do not map feijão manteiga, feijão preto or feijão raiado to Beans (Cowpea); obtain direct cowpea/feijão-frade evidence",
         "verify whether current 2026/27 reference prices have been issued before using 2025/26 legal schedule values",
-        "do not activate calculator profiles until crop-specific yields, prices and complete enterprise budgets are independently checked"
+        "do not activate calculator profiles until crop-specific yields, prices and complete enterprise budgets are independently checked",
+        "Extract the linked ICAPP 2024/25 Excel and 2023/24 profile tables; record crop-specific sown and harvested area, production by province, weights, estimation method and missingness.",
+        "Reconcile ICAPP's survey geography with the current 21 provinces, especially the 2025 split of Cuando Cubango, Moxico and Luanda into Cuando/Cubango, Moxico/Moxico Leste and Luanda/Icolo e Bengo.",
+        "Extract item-level farm economics and determine whether seed, fertilizer, crop protection, labour, machinery, irrigation, energy, transport and post-harvest costs are observed at provincial level.",
+        "Obtain dated, grade-specific producer transaction prices by province; the 2025/26 national reference-price decree is not a guaranteed realized farmgate price.",
+        "Obtain crop-specific yields and prices for the current 17 calculator commodity profiles; do not use national crop aggregate, meat or egg totals as unit yields.",
+        "Verify distribution, accessibility and farmer purchase prices for the 2026 fertilizer availability and 2025 certified seed availability."
       ],
-      "extraction_status": "Angola has unusually useful current official evidence: INE published ICAPP 2023/24 and 2024/25 survey profiles in May 2026, with crop sown/harvested area, provincial production, agricultural practices, farm economic information and livestock. MINAGRIF's first-season 2024/25 bulletin reports 2,697,300 ha sown and 2,289,881 ha harvested across five crop chains. A legal 2025/26 reference-price schedule lists paddy rice, maize, massango, massambala, several distinct beans, soybean and groundnut. The detailed Excel tables and full farm budgets still require extraction; the reference-price schedule is not a realized farm-gate series. No Angola calculator values are activated."
+      "extraction_status": "Angola has unusually useful current official evidence: INE published ICAPP 2023/24 and 2024/25 survey profiles in May 2026, with crop sown/harvested area, provincial production, agricultural practices, farm economic information and livestock. MINAGRIF's first-season 2024/25 bulletin reports 2,697,300 ha sown and 2,289,881 ha harvested across five crop chains. A legal 2025/26 reference-price schedule lists paddy rice, maize, massango, massambala, several distinct beans, soybean and groundnut. The detailed Excel tables and full farm budgets still require extraction; the reference-price schedule is not a realized farm-gate series. No Angola calculator values are activated.",
+      "quality_notes": [
+        "Batch 36 adds the 15 October 2026 State of the Nation indicators: 3,323,242 family holdings, 5,858 commercial holdings (125 effectively producing), 1,032,849 tonnes of meat and 7,729,031,088 eggs over 2023–2025. These are national aggregates and cannot be converted to province/crop enterprise yields.",
+        "Government's 17 October 2026 release reports 173,604 tonnes of fertilizer availability for family agriculture in 2026 and 6,930 tonnes of certified seed availability in 2025. Availability is not a farmer-facing unit price or proof of local distribution.",
+        "The Government's current province portal lists 21 provinces, 326 municipalities and 378 communes. The 21-province selector is added for geographic lookup only; ICAPP survey data may require reconciliation across the 18-province pre-reform statistical geography and the 21-province current geography."
+      ]
     },
     {
       "country_code": "EG",
