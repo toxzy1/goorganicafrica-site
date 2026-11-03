@@ -1,0 +1,76 @@
+{
+  "title": "Gabon Batch 50 correction — complete plantain provincial table",
+  "country": "Gabon",
+  "review_date": "2026-11-03",
+  "corrects_file": "data/ag-data/pending/gabon-calculator-readiness-batch-50-2026-11-03.json",
+  "source": "INSTAT Gabon EPVA 2022–2023, Volume 2, Tables 119 and 121",
+  "source_url": "https://instatgabon.org/uploads/folder_1/RGA/Enque%CC%82te%20de%20Production%20Ve%CC%81ge%CC%81tale%20et%20Animale%20%28EPVA%29/Rapport%20tableaux%20statistiques%20EPVA_Volume%202.pdf",
+  "plantain_province_rows": [
+    [
+      "Estuaire",
+      565,
+      4.81,
+      2718
+    ],
+    [
+      "Haut-Ogooué",
+      87,
+      3.31,
+      289
+    ],
+    [
+      "Moyen-Ogooué",
+      185,
+      3.31,
+      613
+    ],
+    [
+      "Ngounié",
+      84,
+      5.05,
+      425
+    ],
+    [
+      "Nyanga",
+      92,
+      3.82,
+      352
+    ],
+    [
+      "Ogooué-Ivindo",
+      19,
+      2.02,
+      39
+    ],
+    [
+      "Ogooué-Lolo",
+      60,
+      4.66,
+      281
+    ],
+    [
+      "Ogooué-Maritime",
+      141,
+      3.83,
+      541
+    ],
+    [
+      "Woleu-Ntem",
+      174,
+      4.89,
+      849
+    ]
+  ],
+  "column_order": [
+    "province",
+    "area_ha",
+    "yield_t_ha",
+    "production_t"
+  ],
+  "national_total": {
+    "area_ha": 1360,
+    "yield_t_ha": 3.97,
+    "production_t": 5395
+  },
+  "note": "This complete Table 121 transcription supersedes the incomplete plantain rows in the original Batch 50 JSON. The first file omitted the area and production entries for Ogooué-Ivindo, Ogooué-Lolo, Ogooué-Maritime and Woleu-Ntem; their source values are supplied here. Do not use the incomplete plantain rows from the original batch."
+}
