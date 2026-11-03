@@ -1,0 +1,84 @@
+{
+  "title": "Burkina Faso calculator readiness research — Batch 41",
+  "batch": 41,
+  "country_code": "BF",
+  "country_name": "Burkina Faso",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "findings": [
+    {
+      "topic": "New agricultural survey",
+      "detail": "INSD/DGESS EPA 2024/25 catalogue record BFA-MARAH-DGESS-EPA-2024-2025-v01, version 2.1, confirms crop-by-province production estimates, 5,304 households across 884 villages, 95% confidence and ±10% margin of error. Survey covers rainfed and off-season production, inputs, equipment, livestock and sales receipts."
+    },
+    {
+      "topic": "Microdata access and geography",
+      "detail": "The underlying microdata are restricted to approved named research-team members. The survey is representative for 43 provinces and excludes Soum and Loroum; it predates the July 2025 reform to 17 regions and 47 provinces."
+    },
+    {
+      "topic": "Official campaign outcome",
+      "detail": "Government's provisional 2025/26 campaign statement reports 7,142,484 tonnes of cereals, 1,246,132 tonnes of other food crops, 1,353,298 tonnes of cash crops excluding cotton, and 10,147,741 tonnes of dry-matter fodder. These are national aggregate totals, not regional crop yields."
+    },
+    {
+      "topic": "Prices",
+      "detail": "SIMAgri exposes market-specific listings for cereals, cowpea, groundnut, soybean and other products, but the dynamic page does not expose reliable observation timestamps and transaction-level distinctions in the captured view. It is a lead for extraction, not a verified farm-gate series."
+    },
+    {
+      "topic": "Input prices",
+      "detail": "Government's June 2026 cotton campaign announcement sets cotton-specific fertiliser on-credit sale prices at CFA 17,500 per 50 kg bag. This is not a general fertiliser price for all farmers or crops and is not used as a general cost."
+    },
+    {
+      "topic": "2025/26 campaign risk",
+      "detail": "Government reported fall-armyworm infestation on 20,568 of 47,213 hectares prospected, with 17,724 hectares treated. Keep crop-protection risk and localised pressure visible; do not convert this into a national yield loss."
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield": "strong_source_verified_EPA_crop_by_province_data_but_restricted_extract_pending",
+    "farmgate_prices": "partial_dynamic_market_prices_not_yet_timestamped_or_transaction_classified",
+    "input_costs": "partial_EPA_modules_and_cotton_specific_fertilizer_price_only",
+    "regional_enterprise_budgets": "blocked",
+    "geography": "17_regions_47_provinces_current; 43_province_survey_crosswalk_pending",
+    "calculator_active": false
+  },
+  "sources": [
+    {
+      "title": "INSD/DGESS EPA 2024/25 microdata catalogue",
+      "url": "https://microdata.insd.bf/index.php/catalog/86"
+    },
+    {
+      "title": "FAO AGRISurvey Burkina Faso data page",
+      "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/burkina-faso/en"
+    },
+    {
+      "title": "FAO announcement of 2024/25 EPA and RGA module release, 15 October 2026",
+      "url": "https://www.fao.org/in-action/agrisurvey/news/news-detail/burkina-faso-releases-new-survey-and-census-data-under-the-50x2030-initiative/en"
+    },
+    {
+      "title": "Government provisional 2025/26 campaign results, 18 December 2025",
+      "url": "https://gouvernement.gov.bf/actualites/conseil-des-ministres-du-17-decembre-2025-au-titre-du-ministere-de-lagriculture-des-ressources-animales-et-halieutiques/"
+    },
+    {
+      "title": "Presidency announcement of July 2025 territorial reform",
+      "url": "https://www.presidencedufaso.bf/conseil-des-ministres-du-2-juillet-2025/"
+    },
+    {
+      "title": "Government 17-region, 47-province, 350-department map, 16 September 2026",
+      "url": "https://gouvernement.gov.bf/actualites/carte-du-burkina-faso-17-regions-47-provinces-et-350-departements/"
+    },
+    {
+      "title": "SIMAgri Burkina Faso market portal",
+      "url": "https://bf.simagri.net/accueilV2"
+    },
+    {
+      "title": "Government 2026/27 cotton campaign fertiliser and producer-price decision, 25 June 2026",
+      "url": "https://gouvernement.gov.bf/conseil-des-ministres/conseil-des-ministres-du-25-juin-2026/"
+    }
+  ],
+  "safeguards": [
+    "No restricted microdata accessed or redistributed.",
+    "National aggregate crop totals are not converted into crop-specific or regional yields.",
+    "Historical 43-province survey data are not silently remapped to the current 47 provinces.",
+    "Dynamic market listings are not treated as dated farm-gate prices.",
+    "Cotton fertiliser support pricing is not generalized to other crops or farmers.",
+    "No Burkina Faso calculator values activated; existing active-country profiles unchanged."
+  ]
+}
