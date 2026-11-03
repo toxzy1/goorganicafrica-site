@@ -2020,7 +2020,7 @@
     {
       "country_code": "MZ",
       "country_name": "Mozambique",
-      "evidence_status": "official_2024_crop_production_series_and_2023_integrated_agricultural_survey_and_2023_2024_agricultural_census_identified_crop_area_yield_and_budget_extraction_pending",
+      "evidence_status": "official_2024_ine_crop_output_series_2025_26_campaign_plan_and_2025_ine_indicators_publication_identified_provincial_yield_and_farm_budget_extraction_pending",
       "sources": [
         {
           "title": "Statistical Yearbook 2024 — basic food crop and cash crop production tables",
@@ -2312,6 +2312,101 @@
             "The brief discusses cyclone/flood and rainfall risks and insecurity in Cabo Delgado; local production shocks should be kept geographically specific.",
             "FAO's 2025 estimate is not directly comparable with INE's 2024 official yearbook actual/administrative series without checking the reference season and estimation method."
           ]
+        },
+        {
+          "title": "Agricultural sector outlook for the 2025/26 campaign",
+          "publisher": "Ministry of Agriculture, Environment and Fisheries (MAAP)",
+          "url": "https://www.agricultura.gov.mz/sector-agrario-mantem-perspectivas-de-boa-producao-na-campanha-2025-26/",
+          "publication_date": "2026-01-09",
+          "reference_period": "2025/26 agricultural campaign; monitoring update as of 2026-01-08",
+          "observations": [
+            {
+              "indicator": "planned_sown_area",
+              "value_ha": 7800000,
+              "reference_period": "2025/26",
+              "status": "Campaign plan, not achieved harvested area."
+            },
+            {
+              "indicator": "planned_cereal_production",
+              "value_mt": 3400000,
+              "reference_period": "2025/26",
+              "status": "Campaign forecast, not final production."
+            },
+            {
+              "indicator": "planned_legume_production",
+              "value_mt": 930000,
+              "reference_period": "2025/26",
+              "status": "Campaign forecast, not final production."
+            },
+            {
+              "indicator": "planned_roots_and_tubers_production",
+              "value_mt": 10200000,
+              "reference_period": "2025/26",
+              "status": "Campaign forecast, not final production."
+            },
+            {
+              "indicator": "planned_oilseed_production",
+              "value_mt": 400000,
+              "reference_period": "2025/26",
+              "status": "Campaign forecast, not final production."
+            },
+            {
+              "indicator": "planned_horticulture_production",
+              "value_mt": 2100000,
+              "reference_period": "2025/26",
+              "status": "Campaign forecast, not final production."
+            },
+            {
+              "indicator": "flood_affected_area",
+              "value_ha": 92000,
+              "reference_date": "2026-01-08",
+              "status": "Reported across Sofala, Tete, Manica, Gaza, Maputo Province, Zambézia, Nampula and Inhambane; approximately 1.8% of sown area."
+            },
+            {
+              "indicator": "flood_affected_producer_families",
+              "value": 57000,
+              "reference_date": "2026-01-08",
+              "status": "Approximate families affected across listed provinces."
+            },
+            {
+              "indicator": "most_affected_province_sown_area",
+              "province": "Sofala",
+              "value_ha": 211000,
+              "status": "Reported as area sown; more than 54,000 ha inundated."
+            },
+            {
+              "indicator": "aquaculture_affected_fish_farms",
+              "value": 180,
+              "province": "Sofala",
+              "status": "Reported affected fish ponds; not crop data."
+            },
+            {
+              "indicator": "livestock_affected_animals",
+              "value": 143000,
+              "reference_date": "2026-01-08",
+              "status": "Reported aggregate across cattle, goats, pigs and poultry; not a species-specific loss table."
+            }
+          ],
+          "quality_notes": [
+            "These are government campaign plans and a January monitoring snapshot, not end-of-season crop production or yields.",
+            "Flood impacts are geographically specified and should not be applied as a uniform national yield deduction.",
+            "No farm-gate prices or input cost schedules are supplied."
+          ]
+        },
+        {
+          "title": "Basic Indicators of Agriculture and Food 2025",
+          "publisher": "Instituto Nacional de Estatística (INE), Mozambique",
+          "url": "https://www.ine.gov.mz/web/guest/d/indicadores-basicos-de-agricultura-e-alimentacao-2025",
+          "publication_date": "2026-08-31",
+          "status": "official_current_publication_pdf_identified_extraction_pending",
+          "note": "INE's 2025 edition was published on 31 August 2026. The PDF is available from the official publication page; its crop, area, livestock and price tables still need extraction and cross-checking against the 2024 Statistical Yearbook and CAP/IAI source tables."
+        },
+        {
+          "title": "Mozambique provincial cereal price dashboard",
+          "publisher": "Instituto de Cereais de Moçambique (ICM)",
+          "url": "https://icm.gov.mz/",
+          "status": "official_provincial_reference_price_portal",
+          "note": "The ICM portal offers national reference prices by province for cereals including Niassa, Cabo Delgado, Nampula, Zambézia, Tete, Sofala, Manica, Inhambane, Gaza and Maputo. Values must be downloaded with date, market, grade, unit and transaction level; do not assume these are farm-gate prices."
         }
       ],
       "priority_commodities": [
@@ -2330,19 +2425,19 @@
         "pig"
       ],
       "remaining_gaps": [
-        "download and extract the INE 2025 Basic Indicators of Agriculture and Food PDF",
-        "extract crop-specific cultivated and harvested area, production and yield tables from the 2023 IAI report and the final CAP 2023/2024 Excel tables at provincial and district level",
-        "check the 2023 IAI nine-district Cabo Delgado exclusion and ensure the national survey totals do not imply full coverage of inaccessible districts",
-        "separate rice paddy from milled rice and distinguish rainfed lowland, irrigated and upland systems where source tables allow",
-        "separate feijão nhemba (cowpea), feijão manteiga, feijão bóer and other beans; do not use aggregate beans output for the Beans (Cowpea) calculator profile",
-        "obtain original current SIMA/ICM weekly bulletins and extract dated producer/farm-gate prices separately from wholesale and retail prices",
-        "obtain current dated prices for tomato, pepper, cucumber, watermelon and other horticultural calculator commodities by province and market",
-        "obtain farmer-paid seed, fertilizer, pesticide, labour, machinery, irrigation, pumping, land preparation, transport and post-harvest costs by province and production system",
-        "obtain livestock production, liveweight, sale price, feed, veterinary, mortality and housing cost data; distinguish local chickens from commercial broilers and layers",
-        "resolve unusual or inconsistent annual administrative production values against the IAI and CAP survey outputs before using them as yield assumptions",
-        "do not publish country-specific calculator profiles until matched crop area/production definitions, regional yields, prices and enterprise budgets have been independently checked"
+        "Download and extract the INE 2025 Basic Indicators of Agriculture and Food PDF; reconcile it with the 2024 Statistical Yearbook production series.",
+        "Extract crop-specific cultivated and harvested area, production and yield tables from the 2023 IAI report and final CAP 2023/2024 Excel tables at provincial and district level.",
+        "Check the IAI 2023 exclusion of nine insecure Cabo Delgado districts; document coverage gaps and do not imply full provincial survey coverage.",
+        "Separate paddy rice from milled rice and distinguish rainfed lowland, irrigated and upland systems.",
+        "Separate feijão nhemba (cowpea), feijão manteiga, feijão bóer and other beans; do not use aggregate beans output for the Beans (Cowpea) calculator profile.",
+        "Obtain original dated SIMA weekly Quente-Quente bulletins and ICM provincial cereal quotations; preserve producer, wholesale and retail transaction levels separately.",
+        "Obtain dated producer prices for horticultural commodities by province, grade and unit.",
+        "Obtain farmer-paid seed, fertilizer, pesticide, labour, machinery, irrigation, pumping, land preparation, transport and post-harvest costs by province and production system.",
+        "Obtain species-specific livestock output, liveweight, sale price, feed, veterinary, mortality and housing cost data; distinguish local chickens from commercial broilers and layers.",
+        "Resolve unusual annual administrative production values against IAI and CAP survey outputs before using them as yield assumptions.",
+        "Do not activate country-specific calculator profiles until matched crop area/production definitions, regional yields, prices and enterprise budgets have been independently checked."
       ],
-      "extraction_status": "Mozambique now has an official 2020–2024 crop production series, an integrated probability-sample agricultural survey for the 2022/23 campaign, final 2023/24 agricultural census results, and a current official market-price collection system. The 2024 yearbook supplies crop output totals but matching harvested area and crop-specific yield tables still need extraction. The 2023 IAI excludes nine insecure Cabo Delgado districts, and rice/bean taxonomy requires care. Recent provincial ICM quotations are available through a secondary transcription but are not farm-gate prices. No Mozambique calculator values are activated."
+      "extraction_status": "Batch 31 adds the MAAP January 2026 2025/26 campaign plan and flood monitoring snapshot, the official INE 2025 agriculture-indicators publication record, and the ICM provincial reference-price portal. The 2024 INE production totals remain national output-only. No crop-by-province yield series, current farmer net receipts or itemized regional enterprise budgets have been admitted to calculator defaults; Mozambique remains inactive."
     },
     {
       "country_code": "BW",
