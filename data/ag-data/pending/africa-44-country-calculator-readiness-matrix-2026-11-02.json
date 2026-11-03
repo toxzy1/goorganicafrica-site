@@ -102,30 +102,31 @@
       "code": "AO",
       "name": "Angola",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_ICAPP_2023_2024_and_2024_2025_sample_survey_results_and_MINAGRIF_2024_2025_crop_area_bulletin_identified_reference_prices_2025_2026_available_detailed_tables_and_farm_budgets_pending",
+      "existing_research_note": "Batch 36: official ICAPP 2024/25 scope and 2026 State of the Nation plus fertilizer/seed/irrigation indicators reviewed; 21-province lookup added; crop tables, farmgate prices and budgets remain incomplete.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial",
+        "dated_local_farmgate_prices_and_units": "partial",
+        "seed_and_planting_material_costs": "partial",
+        "fertilizer_and_soil_amendment_costs": "partial",
         "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "partial",
+        "labour_rates_and_operations": "partial",
         "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "currency_and_exchange_rate_method": "pass",
+        "source_provenance_and_observation_date": "pass",
+        "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract ICAPP 2024/25 and 2023/24 downloadable tables; crop-by-province harvested area and output not yet extracted.",
+        "Reconcile the survey's historical province boundaries with the current 21-province administration.",
+        "No validated province-level farmgate price series or complete input unit-price schedules have been extracted.",
+        "National seed/fertilizer availability and irrigation project hectares are not farmer-level input costs.",
+        "No complete region-specific enterprise budgets or calculator test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "regional_lookup": "21 current provinces added to src/_data/calculator/regions.json; municipality and commune selectors not yet added."
     },
     {
       "code": "BJ",
