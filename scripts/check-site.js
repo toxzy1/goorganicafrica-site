@@ -8,6 +8,8 @@ if (!countries.length || countries.some(c => !c.code || !c.name || c.available =
 const activeCountries = countries.filter(c => c.available !== false);
 const calculatorCountries = activeCountries.filter(c => c.directory_only !== true);
 if (!activeCountries.length) throw new Error('No active calculator countries.');
+if (!calculatorCountries.some(c => c.code === 'BW')) throw new Error('Botswana mixed-source calculator activation is missing.');
+if (!read('src/_data/calculator.js').includes('c.available !== false && c.directory_only !== true')) throw new Error('Directory-only countries must remain unavailable in the calculator.');
 
 const regionsSource = json('src/_data/calculator/regions.json');
 const regionRecords = Array.isArray(regionsSource.regions) ? regionsSource.regions : Object.entries(regionsSource).map(([country_code, regions]) => ({country_code, regions}));
@@ -133,8 +135,8 @@ for (const code of ['en','fr','ar','pt','sw']) {
   }
 }
 const calculatorApp = read('src/js/calculator-app.js');
-if (!calculatorApp.includes('resultData.data_quality === "benchmark"') || !calculatorApp.includes('T("calc", "benchmarkWarning")')) {
-  throw new Error('Calculator results must disclose when Africa-wide benchmark data is used.');
+if (!calculatorApp.includes('resultData.data_quality === "benchmark"') || !calculatorApp.includes('resultData.data_quality === "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy"') || !calculatorApp.includes('T("calc", "benchmarkWarning")') || !calculatorApp.includes("cd.cost_source || cd.source")) {
+  throw new Error('Calculator results must disclose Africa-wide benchmark data, including mixed-source country profiles.');
 }
 
 const decisionCentreLabelKeys = [
