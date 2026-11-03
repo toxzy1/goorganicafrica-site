@@ -903,7 +903,7 @@
     {
       "country_code": "MW",
       "country_name": "Malawi",
-      "evidence_status": "official_APES_crop_production_series_and_2025_agriculture_census_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "evidence_status": "Batch_26_reviewed_2026-11-03_official_2024-25_APES_production_and_ADD_maize_data_extracted_2025_NACA_small_area_data_identified_regions_added_cost_and_current_farmgate_gaps_remain",
       "survey": {
         "title": "Agricultural Production Estimates Survey (APES); National Census of Agriculture 2025",
         "publisher": "Ministry of Agriculture; National Statistical Office of Malawi",
@@ -984,6 +984,134 @@
             "reference_year": "2024/25",
             "source": "APES final estimate as reproduced by AgFin Atlas with FEWS NET/IPC references",
             "status": "secondary compilation; verify against primary Ministry APES release before use"
+          },
+          {
+            "crop": "maize",
+            "production_mt": 2859948,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 5.4
+          },
+          {
+            "crop": "rice",
+            "production_mt": 147039,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 15.8
+          },
+          {
+            "crop": "millet",
+            "production_mt": 48724,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 45
+          },
+          {
+            "crop": "sorghum",
+            "production_mt": 113815,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 39.8
+          },
+          {
+            "crop": "groundnut",
+            "production_mt": 328163,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 18.2
+          },
+          {
+            "crop": "cotton",
+            "production_mt": 16369,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 166.3
+          },
+          {
+            "crop": "sesame",
+            "production_mt": 14284,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 29.5
+          },
+          {
+            "crop": "sunflower",
+            "production_mt": 14983,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 15.7
+          },
+          {
+            "crop": "wheat",
+            "production_mt": 522,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 43.4
+          },
+          {
+            "crop": "beans",
+            "production_mt": 197086,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 1.5
+          },
+          {
+            "crop": "pigeon_peas",
+            "production_mt": 477925,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 14.7
+          },
+          {
+            "crop": "cowpea",
+            "production_mt": 60659,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 35.1
+          },
+          {
+            "crop": "cassava",
+            "production_mt": 6395722,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 7.6
+          },
+          {
+            "crop": "sweet_potato",
+            "production_mt": 7978050,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 14.6
+          },
+          {
+            "crop": "potato",
+            "production_mt": 1461756,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 4.1
+          },
+          {
+            "crop": "tomato",
+            "production_mt": 746839,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
+            "status": "national estimate; matched regional harvested area and yield observations still required",
+            "change_percent": 6.4
           }
         ],
         "quality_notes": [
@@ -993,13 +1121,29 @@
           "The 2023/24 maize production estimate of 2,712,578 MT is 22.7% below the 2022/23 final estimate of 3,509,837 MT; this is a meaningful seasonal shift, not a stable yield benchmark.",
           "FAO GIEWS reports substantial maize retail price increases during 2025; extract date-stamped market observations from FPMA rather than copying a national narrative as a calculator selling price.",
           "Beans and cowpeas are separate APES categories. Only cowpea should be considered for the Beans (Cowpea) profile after checking the survey definition.",
-          "Do not treat national production totals as yields or as farm budgets."
+          "Do not treat national production totals as yields or as farm budgets.",
+          "The 2026 Malawi Annual Economic Report provides Ministry of Agriculture APES third-round 2024/25 crop totals, ADD-level maize production, horticultural crop production and livestock populations. These are not a complete crop-specific district yield and cost profile.",
+          "Table 3.1 reports 2024/25 groundnuts at 328,163 MT (+18.2%), beans at 197,086 MT, pigeon peas at 477,925 MT and cowpeas at 60,659 MT. Use the table values, not contradictory narrative wording.",
+          "The 2025 National Census of Agriculture covers 29,648 smallholder households and provides national, regional, ADD, district, urban and rural estimates; detailed tables and sampling precision must be assessed before calculator use.",
+          "Malawi has three regions and the standard 28-district council listing. Newer NSO/OCHA boundary data also includes four city-district units; keep the counting conventions distinct.",
+          "IFPRI monthly maize reports provide retail market prices. Historical government farmgate floor prices are not current 2026 producer prices."
         ],
         "market_price_source": {
-          "title": "FAO Food Price Monitoring and Analysis Tool",
-          "url": "https://fpma.fao.org/",
-          "status": "date_stamped_price_series_source_identified_extraction_pending",
-          "note": "Extract Malawi market observations by commodity, market, date, product form, grade, currency and unit. MAFECO describes the government National Agriculture Management Information System (NAMIS) market module, but indicates public online access is expected rather than confirming a currently available public series."
+          "title": "IFPRI Malawi Monthly Maize Market Reports and FAO FPMA",
+          "urls": [
+            "https://massp.ifpri.info/publications/maize-market-reports/",
+            "https://fpma.fao.org/"
+          ],
+          "status": "retail_market_price_series_published_extraction_by_market_date_unit_and_product_form_required",
+          "note": "IFPRI reports are retail-market prices, not farmgate producer prices. The 2024/25 government minimum farmgate prices are historical policy references only.",
+          "historical_policy_floor_2024_25": {
+            "maize_mwk_per_kg": 1050,
+            "paddy_rice_mwk_per_kg": 1200,
+            "finger_millet_mwk_per_kg": 1200,
+            "soybean_mwk_per_kg": 1200,
+            "pure_beans_mwk_per_kg": 2500,
+            "source": "https://manaonline.gov.mw/index.php?Itemid=371&id=9437%3Agovernment-sets-minimum-farm-gate-prices-for-2024-25-season&option=com_k2&view=item"
+          }
         },
         "priority_commodities": [
           "maize",
@@ -1015,15 +1159,154 @@
           "pig"
         ],
         "remaining_gaps": [
-          "download and extract 2025 NACA report tables for crop area, production systems, irrigation, labour, machinery and livestock by district and ADD",
-          "obtain 2024/25 and 2025/26 APES final crop-specific area, production and yield tables from the Ministry",
-          "extract multi-year district maize, rice, cowpea and soybean yield distributions and sampling uncertainty",
-          "obtain dated farm-gate and market prices for each supported crop, with market, grade, unit and currency",
-          "obtain seed, fertilizer, crop protection, labour, land preparation, irrigation, transport and mechanization cost schedules",
-          "obtain livestock purchase, feed, veterinary, mortality and output-price benchmarks",
-          "confirm species definitions for beans, cowpea and soybean varieties before mapping to calculator profiles"
+          "Extract 2025 NACA crop area, production and yield tables by region, ADD and district; record sampling errors and reference period.",
+          "Obtain final 2025/26 APES crop-specific area, production and yield tables where published.",
+          "Extract IFPRI/FAO price observations by market, date, commodity form, grade, currency and unit; distinguish retail, wholesale and farmgate.",
+          "Obtain dated current farmgate producer prices for supported crops.",
+          "Obtain farmer-paid seed, fertilizer, crop protection, labour, machinery, land preparation, irrigation, energy and transport costs.",
+          "Build and validate regional crop/livestock enterprise budgets and gross margins.",
+          "Confirm crop taxonomy, including beans versus cowpea versus pigeon pea and paddy versus milled rice.",
+          "Map only validated observations into the calculator schema and add Malawi-specific regression cases."
         ],
-        "extraction_status": "Official NSO 2025 National Census of Agriculture release, Ministry APES production series and FAO market-price monitoring sources identified. Production observations are research leads only; no country-specific calculator values are activated because matched area/yield distributions, dated farm-gate prices and farm-budget costs remain incomplete."
+        "extraction_status": "Batch 26 review completed for administrative geography, official 2024/25 APES production, ADD maize output, horticulture, livestock, 2025 NACA small-area data availability and market-price sources. Calculator activation remains blocked by incomplete regional crop yield distributions, current farmgate prices and farmer-level enterprise costs.",
+        "livestock_observations_2024_25": [
+          {
+            "species": "cattle",
+            "population": 2331687,
+            "unit": "head",
+            "change_percent": 2.8
+          },
+          {
+            "species": "goats",
+            "population": 14818891,
+            "unit": "head",
+            "change_percent": 5.2
+          },
+          {
+            "species": "sheep",
+            "population": 487265,
+            "unit": "head",
+            "change_percent": 5.9
+          },
+          {
+            "species": "pigs",
+            "population": 13581236,
+            "unit": "head",
+            "change_percent": 8.9
+          },
+          {
+            "species": "chickens",
+            "population": 217106872,
+            "unit": "head",
+            "change_percent": -2.5
+          }
+        ],
+        "regional_maize_production_2024_25": [
+          {
+            "add": "Karonga",
+            "production_mt": 163797,
+            "previous_year_mt": 206574,
+            "change_percent": -20.7
+          },
+          {
+            "add": "Mzuzu",
+            "production_mt": 335138,
+            "previous_year_mt": 349497,
+            "change_percent": -4.1
+          },
+          {
+            "add": "Kasungu",
+            "production_mt": 884852,
+            "previous_year_mt": 848452,
+            "change_percent": 4.3
+          },
+          {
+            "add": "Lilongwe",
+            "production_mt": 699535,
+            "previous_year_mt": 614827,
+            "change_percent": 13.8
+          },
+          {
+            "add": "Salima",
+            "production_mt": 113471,
+            "previous_year_mt": 107510,
+            "change_percent": 5.5
+          },
+          {
+            "add": "Machinga",
+            "production_mt": 386128,
+            "previous_year_mt": 290580,
+            "change_percent": 32.9
+          },
+          {
+            "add": "Blantyre",
+            "production_mt": 149187,
+            "previous_year_mt": 206938,
+            "change_percent": -27.9
+          },
+          {
+            "add": "Shire Valley",
+            "production_mt": 127840,
+            "previous_year_mt": 88200,
+            "change_percent": 44.9
+          }
+        ]
+      },
+      "administrative_geography": {
+        "first_level_unit": "Region",
+        "regions": [
+          "Northern Region",
+          "Central Region",
+          "Southern Region"
+        ],
+        "region_count": 3,
+        "second_level_unit": "District",
+        "district_count": 28,
+        "districts_by_region": {
+          "Northern Region": [
+            "Chitipa",
+            "Karonga",
+            "Likoma",
+            "Mzimba",
+            "Nkhata Bay",
+            "Rumphi"
+          ],
+          "Central Region": [
+            "Dedza",
+            "Dowa",
+            "Kasungu",
+            "Lilongwe",
+            "Mchinji",
+            "Nkhotakota",
+            "Ntcheu",
+            "Ntchisi",
+            "Salima"
+          ],
+          "Southern Region": [
+            "Balaka",
+            "Blantyre",
+            "Chikwawa",
+            "Chiradzulu",
+            "Machinga",
+            "Mangochi",
+            "Mulanje",
+            "Mwanza",
+            "Nsanje",
+            "Thyolo",
+            "Phalombe",
+            "Zomba",
+            "Neno"
+          ]
+        },
+        "district_boundary_note": "The standard district-council listing contains 28 districts (6 Northern, 9 Central, 13 Southern). Newer NSO/OCHA Common Operational Dataset boundary data also represents four city districts (Blantyre City, Lilongwe City, Mzuzu City and Zomba City), yielding 32 level-2 boundary units when counted separately. Keep these counting conventions distinct.",
+        "tertiary_units": "Traditional Authority areas and villages",
+        "region_selector_added": true,
+        "selector_file": "src/_data/calculator/regions.json",
+        "sources": [
+          "https://ndatarepo.must.ac.mw/layers/malawi-district-boundaries/",
+          "https://www.malawiembassyisrael.com/about-malawi/government",
+          "https://www.resakss.org/sites/default/files/Malawi%20MLGRD%202013%20Guidebook%20on%20the%20Local%20Government%20System%20in%20Malawi.pdf"
+        ]
       }
     },
     {
