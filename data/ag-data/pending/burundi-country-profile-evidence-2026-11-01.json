@@ -131,6 +131,114 @@
       "url": "https://www.fao.org/giews/countrybrief/country/BDI/pdf_archive/BDI_Archive.pdf",
       "status": "historical_seasonal_and_market_context",
       "note": "The November 2024 brief documents three production seasons and regional variation in maize retail prices. Use it for historical context only, not as a current price series."
+    },
+    {
+      "title": "FAO GIEWS Country Brief on Burundi",
+      "publisher": "FAO Global Information and Early Warning System",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=BDI&lang=en",
+      "reference_date": "2026-02-05",
+      "status": "2025_final_estimate_and_2026A_crop_outlook",
+      "observations": [
+        {
+          "indicator": "aggregate_cereal_production",
+          "production_mt": 789000,
+          "reference_year": 2025,
+          "status": "FAO estimate; 5 percent below preceding five-year average, mainly due to poor 2025B season."
+        },
+        {
+          "season": "2025A",
+          "share_of_annual_output_percent": 35,
+          "status": "Harvested Dec 2024-Jan 2025; above-average production estimate."
+        },
+        {
+          "season": "2025B",
+          "share_of_annual_output_percent": 50,
+          "status": "Main harvest concluded July 2025; below-average due to erratic rainfall and poor crop development."
+        },
+        {
+          "season": "2025C",
+          "share_of_annual_output_percent": 15,
+          "status": "Marshland/irrigated season harvested September 2025; above-average estimate."
+        },
+        {
+          "season": "2026A",
+          "status": "Below-average production forecast due to insufficient and poorly distributed rains; FAO reports significant maize and bean losses in Eastern Lowlands, Northern Lowlands and Imbo Plains."
+        }
+      ],
+      "quality_notes": [
+        "789,000 tonnes is an aggregate cereal estimate, not a crop-specific yield or enterprise budget.",
+        "Keep A, B and C seasons separate; season C has a distinct marshland/irrigated production system.",
+        "Do not extrapolate the seasonal loss report into province-specific yield numbers without matching crop area and production tables."
+      ]
+    },
+    {
+      "title": "PNISAN/WFP national median food prices, July 2026",
+      "publisher": "Burundi National Food and Nutrition Security Information Platform; source WFP, 29 markets",
+      "url": "https://pnisan.bi/?langue=en",
+      "reference_period": "2026-07",
+      "status": "validated_monthly_retail_price_observations_not_farmgate",
+      "observations": [
+        {
+          "commodity": "white maize grain",
+          "price_bif_per_kg": 1450,
+          "markets": 29,
+          "price_type": "retail_median"
+        },
+        {
+          "commodity": "yellow beans",
+          "price_bif_per_kg": 2867,
+          "markets": 29,
+          "price_type": "retail_median"
+        },
+        {
+          "commodity": "cassava flour",
+          "price_bif_per_kg": 1567,
+          "markets": 29,
+          "price_type": "retail_median"
+        }
+      ],
+      "quality_notes": [
+        "These are retail market medians, not producer/farm-gate prices.",
+        "Cassava flour is a processed product and must not be treated as fresh cassava root price.",
+        "PNISAN states that only validated WFP market observations are published."
+      ]
+    },
+    {
+      "title": "Burundi territorial reform and current province list",
+      "publisher": "PNISAN national food and nutrition security information platform",
+      "url": "https://pnisan.bi/territoires",
+      "reference_period": "2025 administrative division; July 2026 boundary source",
+      "status": "official_current_geographic_lookup_5_provinces_42_communes",
+      "observations": [
+        {
+          "indicator": "current_provinces",
+          "value": 5,
+          "names": [
+            "Buhumuza",
+            "Bujumbura",
+            "Burunga",
+            "Butanyerera",
+            "Gitega"
+          ]
+        },
+        {
+          "indicator": "current_communes",
+          "value": 42
+        }
+      ],
+      "quality_notes": [
+        "Five-province, 42-commune structure applies from 2025 under the 16 March 2023 organic law.",
+        "Historical crop indicators remain attached to the former 18 provinces; PNISAN explicitly says the new five provinces do not yet have equivalent provincial agricultural indicator disaggregation.",
+        "Do not aggregate old province crop series into new provinces without an official geographic crosswalk."
+      ]
+    },
+    {
+      "title": "Burundi territorial reorganisation law and official parliamentary explanation",
+      "publisher": "Assemblée Nationale du Burundi",
+      "url": "https://assemblee.bi/?p=30190",
+      "publication_date": "2023-01-02",
+      "status": "official_legislative_explanation_of_new_territorial_structure",
+      "note": "Parliamentary explanation documents the transition from 18 provinces to five, communes from 119 to 42, zones from 399 to 450 and collines/quartiers from 2,911 to 3,041."
     }
   ],
   "priority_commodities": [
@@ -147,20 +255,22 @@
     "pig"
   ],
   "remaining_gaps": [
+    "extract 2024 census agriculture module tables with crop area and production by former 18-province geography, then obtain an authoritative crosswalk to the 2025 five-province/42-commune structure",
     "Download and extract INSBU RGPHAE 2024 Volume III basic agricultural statistical tables and Volume IV analysis; capture crop-specific area, production, yield definitions and province/commune breakdowns.",
     "Extract the 2025 modern agro-pastoral holdings census tables for enterprise-level production and cost evidence where available.",
     "Obtain matching harvested area and crop-specific yield observations for maize, paddy rice, beans, cassava and priority horticultural crops; keep Seasons A, B and C separate.",
     "Extract dated producer/farm-gate prices by province, market, grade, product form and unit; keep these separate from PNISAN/WFP retail prices.",
     "Obtain current farmer-paid prices for improved seed, fertilizer, crop protection, labour, mechanization, irrigation, land preparation and transport, including subsidy eligibility and actual farmer contribution.",
     "Obtain livestock and poultry purchase prices, feed costs, veterinary costs, mortality, cycle length and output prices from official census tables and local supplier records.",
-    "Check currency denomination and any redenomination or exchange-rate reporting conventions in source tables before data entry."
+    "obtain current producer/farm-gate prices; PNISAN/WFP July 2026 values are retail medians and cannot be used as farm-gate prices"
   ],
-  "extraction_status": "Burundi's official INSBU 2024 agricultural census modules are identified as the primary national source, but table-level crop extraction is still pending. FAO's November 2024 brief provides crop-specific production forecasts (maize 280 thousand tonnes, paddy rice 136 thousand tonnes and sorghum 25 thousand tonnes) but not matching harvested area, so no yields are calculated. PNISAN/WFP provides dated July 2026 retail medians for white maize, yellow beans and cassava flour; these are explicitly not farm-gate prices. FEWS NET's September 2026-January 2027 update flags fertilizer shortages and elevated input/transport costs. No calculator values are admitted.",
+  "extraction_status": "Batch 39 adds FAO's 2025 aggregate cereal estimate (789,000 tonnes) and season-specific context (2025A, B and C), the 2026A below-average outlook, validated July 2026 PNISAN/WFP retail medians for white maize, yellow beans and cassava flour, and the current 5-province/42-commune geography. Historical agricultural indicators remain tied to the former 18 provinces; no official crop indicator crosswalk to the new five provinces is yet published. Retail prices are not admitted as farm-gate prices. INSBU 2024 agricultural census tables and current farmer-paid input costs remain to be extracted. No calculator values are activated.",
   "publication_decision": "Do not activate Burundi in the farm-profit calculator until official crop area/yield tables, regional structure, dated farm-gate prices and farmer-paid input/labour costs have been extracted and reviewed.",
   "next_steps": [
-    "Download INSBU RGPHAE 2024 Volume III and IV and extract the crop tables with source page numbers and definitions.",
-    "Obtain district/province-level farm-gate prices and current input quotations; do not use retail prices as producer prices.",
-    "Build season-specific evidence for A, B and C before considering low/expected/high calculator values.",
-    "Keep the evidence research-only; do not modify calculator formulas or existing ten active country profiles."
+    "Download INSBU RGPHAE 2024 Volume III and IV and extract crop-specific area, production, yields, input use and livestock tables, preserving old province and season identifiers.",
+    "Map historical 18-province records to the five 2025 provinces only through an official commune/zone/collines crosswalk.",
+    "Extract PNISAN/WFP market-level retail prices by market and month but keep them separate from producer prices.",
+    "Obtain current producer prices and farmer-paid seed, fertiliser, crop protection, labour, machinery, irrigation and transport quotations.",
+    "Keep the evidence research-only until regional crop yields, dated farm-gate prices and enterprise budgets are validated."
   ]
 }
