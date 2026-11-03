@@ -686,11 +686,11 @@
       "code": "GQ",
       "name": "Equatorial Guinea",
       "evidence_file": "data/ag-data/pending/equatorial-guinea-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "INEGE_2026_yearbook_officially_released_25_Sep_2026_data_through_Dec_2025_and_covers_agriculture_prices_and_wages_selected_regional_disaggregation; cocoa_production_growth_2.5pct_2024_25_not_absolute_output; official_2026_toponymic_factfile_confirms_two_regions_and_eight_first_order_provinces; numeric_crop_tables_prices_and_farm_budgets_still_not_extracted",
+      "existing_research_note": "Batch 48 confirms INEGE 2026 yearbook coverage of agriculture/prices/wages with selected regional/provincial disaggregation; official government says First General Agricultural Census is forthcoming; FAOSTAT producer-price dataset metadata provides farm-gate price route, but country/product rows and farm budgets remain unextracted.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_official_yearbook_and_FAOSTAT_routes_confirmed_numeric_country_crop_rows_not_extracted",
+        "dated_local_farmgate_prices_and_units": "partial_FAOSTAT_producer_price_dataset_route_confirmed_equatorial_guinea_observations_not_extracted",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
@@ -699,17 +699,17 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "partial",
-        "source_provenance_and_observation_date": "partial",
+        "source_provenance_and_observation_date": "partial_INEGE_2026_yearbook_and_official_census_pipeline_confirmed",
         "calculator_mapping_and_test_cases": "not_yet_audited"
       },
       "blockers": [
-        "Extract and validate crop-specific area, production and yield tables from the 2026 INEGE yearbook and raw FAOSTAT; record year, season, unit, geography and observation status.",
-        "Obtain dated local farmgate prices for priority crops; do not substitute consumer-market or wholesale prices.",
-        "Obtain farmer-facing seed, fertilizer, crop-protection, irrigation, labour, machinery and land-preparation quotations by relevant province.",
-        "Build and validate regional enterprise budgets and gross margins using documented local operations and costs.",
-        "Define the XAF currency and exchange-rate method, map validated values to the existing calculator schema, and add test cases."
+        "Extract agriculture tables from INEGE 2026 yearbook and FAOSTAT country data, including crop-specific area, output, yield, units, year, flags and geography.",
+        "Extract FAOSTAT producer-price observations for Equatorial Guinea and validate local dated farm-gate prices and quality grades.",
+        "Obtain farmer-facing input, labour, machinery, irrigation, transport and storage costs by province and production system.",
+        "Build regional enterprise budgets and gross margins for each supported commodity; distinguish Bioko/island and mainland production systems.",
+        "Map validated observations to the existing calculator schema, currency method and automated test cases."
       ],
-      "next_step": "Extract the agriculture tables from the 2026 INEGE yearbook and the raw FAOSTAT export, then source dated farmgate prices and provincial input-cost evidence."
+      "next_step": "Retrieve the electronic INEGE 2026 yearbook and extract agriculture/price tables; in parallel extract FAOSTAT Equatorial Guinea crop production and producer-price rows with flags and units."
     },
     {
       "code": "ER",
