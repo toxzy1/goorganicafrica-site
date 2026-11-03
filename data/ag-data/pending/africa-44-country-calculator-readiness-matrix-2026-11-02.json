@@ -296,30 +296,31 @@
       "code": "BI",
       "name": "Burundi",
       "evidence_file": "data/ag-data/pending/burundi-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "research_only_record_added",
+      "existing_research_note": "FAO_2025_cereal_estimate_789000_MT_and_2026A_below_average_outlook_added_Jul_2026_WFP_retail_prices_and_2025_five_province_42_commune_geography_added",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2025_aggregate_cereal_estimate_and_season_context_crop_specific_area_yield_tables_pending",
+        "dated_local_farmgate_prices_and_units": "partial_Jul_2026_PNISAN_WFP_retail_medians_only_farmgate_prices_pending",
+        "seed_and_planting_material_costs": "partial_subsidy_distribution_context_no_current_farmer_paid_quotation",
+        "fertilizer_and_soil_amendment_costs": "partial_2024_subsidy_prices_historical_not_current",
         "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "partial_season_C_marshland_irrigation_context_no_cost_schedule",
         "labour_rates_and_operations": "not_yet_audited",
         "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "regional_enterprise_budget_and_gross_margin": "blocked_missing_current_crop_yields_farmgate_prices_and_costs",
+        "currency_and_exchange_rate_method": "partial_BIF_units_identified_currency_method_requires_current_review",
+        "source_provenance_and_observation_date": "partial_FAO_2026_PNISAN_WFP_Jul_2026_and_official_territorial_reform_sources_recorded",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_enterprise_profiles_or_regional_test_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract crop-specific area, production and yield by season from INSBU 2024 census volumes; FAO's 789,000 MT is an aggregate only.",
+        "Keep seasons A, B and C separate and distinguish marshland/irrigated season C from rain-fed systems.",
+        "Obtain dated farm-gate producer prices; PNISAN/WFP retail medians are not producer prices.",
+        "Obtain current farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, transport and land preparation costs.",
+        "Build a reliable geographic crosswalk from historical 18 provinces to the 2025 five-province/42-commune structure.",
+        "Build region- and season-specific enterprise budgets and test cases before calculator activation."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract INSBU 2024 Volume III/IV crop tables and establish the former-18-to-current-5 province crosswalk."
     },
     {
       "code": "CV",
