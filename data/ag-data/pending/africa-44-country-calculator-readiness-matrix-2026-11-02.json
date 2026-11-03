@@ -1187,27 +1187,60 @@
       "existing_research_note": "official_APES_crop_production_series_and_2025_agriculture_census_identified_crop_area_yield_and_farm_budget_extraction_pending",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial_official_APES_2024_25_national_crop_totals_and_ADD_maize_totals_extracted_2025_NACA_small_area_tables_available_for_follow_up_area_yield_and_uncertainty_extraction_pending",
+        "dated_local_farmgate_prices_and_units": "partial_IFPRI_and_FAO_market_price_sources_identified_and_2024_25_historical_minimum_farmgate_policy_floors_recorded_current_crop_specific_farmgate_observations_not_extracted",
+        "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_cost_schedule_by_crop_and_region",
+        "fertilizer_and_soil_amendment_costs": "partial_FISP_and_policy_context_identified_current_farmer_paid_product_prices_application_rates_and_delivery_costs_missing",
+        "crop_protection_costs": "blocked_no_current_crop_specific_pesticide_herbicide_fungicide_prices_and_application_costs",
+        "irrigation_water_and_energy_costs": "partial_2025_NACA_collects_irrigation_information_but_current_region_scheme_water_tariffs_pumping_energy_and_crop_costs_not_extracted",
+        "labour_rates_and_operations": "partial_2025_NACA_collects_labour_input_data_but_operation_level_wage_rates_and_labour_days_not_extracted",
+        "machinery_and_land_preparation_costs": "partial_2025_NACA_collects_farm_machinery_data_but_current_hire_rates_and_crop_operation_costs_not_extracted",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets",
+        "currency_and_exchange_rate_method": "partial_MWK_Malawian_kwacha_identified_but_calculator_rounding_and_FX_method_not_tested",
+        "source_provenance_and_observation_date": "partial_official_2026_Annual_Economic_Report_2025_NACA_IFPRI_FAO_FPMA_and_administrative_boundary_sources_recorded",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_regional_crop_cost_price_budgets_or_MWK_test_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract 2025 NACA small-area crop area, yield, labour, irrigation, machinery and livestock tables and document precision.",
+        "Obtain current farmgate prices by crop, district/market, date, grade, unit and buying channel; retail maize series and 2024/25 floor prices are not substitutes.",
+        "Obtain current farmer-paid input and operation costs by region and crop.",
+        "Build region-specific crop/livestock budgets and calculate gross margins using validated local units.",
+        "Add MWK currency formatting and calculator regression tests before activation."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract 2025 NACA small-area tables and 2025/26 APES crop data; assemble current farmgate prices and farmer-paid input costs; build regional enterprise budgets.",
+      "administrative_geography_status": "3_regions_28_district_council_units_verified_region_selector_added_2025_NACA_has_small_area_district_ADD_and_regional_estimates",
+      "batch_26_review": {
+        "review_date": "2026-11-03",
+        "batch": 26,
+        "country_name": "Malawi",
+        "administrative_geography": "Three administrative regions (Northern, Central, Southern) and the standard 28-district council listing. The region selector has been added. Newer NSO/OCHA boundary distribution also represents four city-district units; retain the distinction rather than silently changing the count to 32.",
+        "key_crop_evidence": "Official Ministry of Agriculture APES third-round estimates reproduced in Malawi Annual Economic Report 2026 include 2024/25 national production and ADD-level maize totals. Horticultural crop output and livestock populations are also reported.",
+        "small_area_data": "NSO's 2025 National Census of Agriculture provides national, regional, ADD, district, urban and rural estimates from 29,648 smallholder households; detailed extraction and precision review remain pending.",
+        "market_evidence": "IFPRI Malawi publishes monthly maize market reports with market-level retail prices. FAO FPMA is an additional market-price source. Government 2024/25 minimum farmgate prices are historical policy reference points only.",
+        "criterion_status": {
+          "crop_area_production_yield_by_commodity_and_season": "partial_official_APES_2024_25_national_crop_totals_and_ADD_maize_totals_extracted_2025_NACA_small_area_tables_available_for_follow_up_area_yield_and_uncertainty_extraction_pending",
+          "dated_local_farmgate_prices_and_units": "partial_IFPRI_and_FAO_market_price_sources_identified_and_2024_25_historical_minimum_farmgate_policy_floors_recorded_current_crop_specific_farmgate_observations_not_extracted",
+          "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_cost_schedule_by_crop_and_region",
+          "fertilizer_and_soil_amendment_costs": "partial_FISP_and_policy_context_identified_current_farmer_paid_product_prices_application_rates_and_delivery_costs_missing",
+          "crop_protection_costs": "blocked_no_current_crop_specific_pesticide_herbicide_fungicide_prices_and_application_costs",
+          "irrigation_water_and_energy_costs": "partial_2025_NACA_collects_irrigation_information_but_current_region_scheme_water_tariffs_pumping_energy_and_crop_costs_not_extracted",
+          "labour_rates_and_operations": "partial_2025_NACA_collects_labour_input_data_but_operation_level_wage_rates_and_labour_days_not_extracted",
+          "machinery_and_land_preparation_costs": "partial_2025_NACA_collects_farm_machinery_data_but_current_hire_rates_and_crop_operation_costs_not_extracted",
+          "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets",
+          "currency_and_exchange_rate_method": "partial_MWK_Malawian_kwacha_identified_but_calculator_rounding_and_FX_method_not_tested",
+          "source_provenance_and_observation_date": "partial_official_2026_Annual_Economic_Report_2025_NACA_IFPRI_FAO_FPMA_and_administrative_boundary_sources_recorded",
+          "calculator_mapping_and_test_cases": "blocked_no_validated_regional_crop_cost_price_budgets_or_MWK_test_cases"
+        },
+        "safeguards": [
+          "Malawi remains not_active and directory_only in the calculator registry.",
+          "The three regions are added to the region lookup without changing existing country region records.",
+          "The 28-district council convention is stated explicitly; four city-district units in newer boundary data are not conflated with it.",
+          "National crop production is not converted into regional yield or farm-level output assumptions.",
+          "ADD-level maize production is not relabelled as district production or regional yield.",
+          "Historical farmgate floor prices and retail market prices are not presented as current 2026 farmgate quotations.",
+          "No activation, merge to main or production deployment was performed."
+        ]
+      }
     },
     {
       "code": "ML",
