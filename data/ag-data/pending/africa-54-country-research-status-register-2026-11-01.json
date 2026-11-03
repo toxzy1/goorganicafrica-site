@@ -1,7 +1,7 @@
 {
   "title": "GoOrganicAfrica 54-country agricultural research status register",
   "version": 1,
-  "created_at": "2026-11-01",
+  "created_at": "2026-11-03",
   "status": "audit_register_research_only_not_a_calculator_data_file",
   "purpose": "Single deduplicated index of all countries in the canonical calculator country registry, separating research-only evidence files from existing active calculator profiles and countries with no research evidence file in the current programme.",
   "counting_rules": [
@@ -345,7 +345,7 @@
       "name": "Namibia",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "NAB 2024/25 zone-level marketed grain volumes and selected yields plus FAO 2026 outlook added; 14 administrative regions confirmed; farm budgets pending",
+      "review_status": "Batch 32: 2026 NAB Grade 1 mahangu farm-gate floor price and standardized rain-fed cost schedule added; 14 administrative regions remain available in selector; multi-crop regional budgets and final crop outputs pending",
       "calculator_status": "directory_only_not_active"
     },
     {
