@@ -853,7 +853,7 @@
     // Clearly disclose when the selected country is using an Africa-wide benchmark.
     // This is presentation-only; it does not change any calculator inputs or formulas.
     var resultData = getCommodityCountryData(state.commodity, state.country);
-    if (resultData && resultData.data_quality === "benchmark") {
+    if (resultData && (resultData.data_quality === "benchmark" || resultData.data_quality === "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy" || (resultData.cost_source && resultData.cost_source.indexOf("Africa benchmark estimate") >= 0))) {
       var benchmarkWarning = document.createElement("div");
       benchmarkWarning.className = "calc-reference-box";
       benchmarkWarning.style.borderLeft = "4px solid var(--soil)";
