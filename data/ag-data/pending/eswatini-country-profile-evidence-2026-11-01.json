@@ -461,6 +461,69 @@
         "Government web pages show differing Tinkhundla counts (some pages cite 59, while an older Tinkhundla page cites 55); the first-level four-region structure is consistent across official sources."
       ],
       "caveat": "Only the four first-level regions are added to the calculator lookup. Do not treat Tinkhundla or chiefdom counts as crop-data geography until current official boundaries and codes are obtained."
+    },
+    {
+      "topic": "Batch 49 follow-up: 2026 maize estimate, input subsidy quantities and current readiness gaps",
+      "review_date": "2026-11-03",
+      "source": "FAO GIEWS Eswatini Country Brief",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SWZ",
+      "reference_date": "2026-08-25",
+      "observations": [
+        {
+          "indicator": "2026 maize production",
+          "value": 70000,
+          "unit": "tonnes",
+          "status": "FAO estimate",
+          "note": "Harvest concluded June 2026; approximately 6 percent below 2025."
+        },
+        {
+          "indicator": "cattle vaccinated against foot-and-mouth disease",
+          "value": 454000,
+          "unit": "head",
+          "reference_date": "2026-07",
+          "note": "More than 80 percent of the national herd."
+        },
+        {
+          "indicator": "population projected in IPC Phase 3 or above",
+          "value": 286000,
+          "unit": "people",
+          "reference_period": "2026-10 to 2027-03",
+          "status": "projection"
+        }
+      ],
+      "observations_text": [
+        "FAO attributes the lower 2026 maize harvest to irregular rainfall and waterlogging despite increased planted area.",
+        "FAO reports maize import requirements for 2026/27 above the previous five-year average.",
+        "The 2026/27 crop outlook carries El Niño-related below-average rainfall risk."
+      ],
+      "caveat": "The maize figure is a national estimate, not a region-by-crop yield table. Vaccination and IPC figures are not farm enterprise inputs."
+    },
+    {
+      "topic": "National Maize Corporation input subsidy quantities",
+      "review_date": "2026-11-03",
+      "source": "National Maize Corporation input subsidy programme",
+      "source_url": "https://raryvw.waterford.sz/inputs-subsidy/",
+      "observations": [
+        {
+          "crop": "maize",
+          "fertilizer": "6 x 50kg",
+          "LAN": "4 x 50kg",
+          "seed": "25kg"
+        },
+        {
+          "crop": "sugar beans",
+          "fertilizer": "3 x 50kg",
+          "LAN": "2 x 50kg",
+          "seed": "70kg"
+        },
+        {
+          "crop": "sorghum",
+          "fertilizer": "2 x 50kg",
+          "LAN": "2 x 50kg",
+          "seed": "10kg"
+        }
+      ],
+      "caveat": "These are programme quantities for eligible smallholders, not market prices, universal application recommendations or full farmer-paid costs."
     }
   ],
   "data_quality_and_use": [
@@ -486,5 +549,17 @@
     "Obtain raw FAOSTAT crop and livestock observations and flags for independent cross-checking against national statistics.",
     "Obtain region-coded crop area, production and yield observations for the four administrative regions, with a consistent crosswalk between agricultural survey geography and current regional boundaries."
   ],
-  "recommendation": "Retain Eswatini as research-only. The four first-level administrative regions are now represented in the region lookup. Ministry crop evidence and World Bank modelled enterprise benchmarks are useful for further validation, but crop-specific regional yields, current dated farmgate prices and farmer-paid input costs remain incomplete. Do not activate a calculator profile until the missing regional observations, current cost schedules and test cases are verified."
+  "recommendation": "Retain Eswatini as research-only. The four first-level administrative regions are now represented in the region lookup. Ministry crop evidence and World Bank modelled enterprise benchmarks are useful for further validation, but crop-specific regional yields, current dated farmgate prices and farmer-paid input costs remain incomplete. Do not activate a calculator profile until the missing regional observations, current cost schedules and test cases are verified.",
+  "batch_49_review": {
+    "review_date": "2026-11-03",
+    "country_name": "Eswatini",
+    "source_notes": "FAO GIEWS 25 August 2026 estimates the 2026 maize harvest at about 70,000 tonnes, approximately 6 percent below 2025, with rainfall irregularity and waterlogging cited. National Maize Corporation input-subsidy schedules specify fertilizer, LAN and seed quantities for maize, sugar beans and sorghum, but publish quantities rather than current prices. Existing Ministry 2023/24 crop estimates and World Bank 2025 modelled gross-margin benchmarks remain useful context only; no current region-specific farmgate price and farmer-paid cost schedule was verified.",
+    "sources": [
+      "https://cb.apps.fao.org/country.jsp?code=SWZ",
+      "https://raryvw.waterford.sz/inputs-subsidy/",
+      "https://agrinfosystems.gov.sz/assets/uploadsPre-Harvest_Crop%20Assessment%20Report.pdf",
+      "https://documents1.worldbank.org/curated/en/099062525124012924/pdf/P507872-a15768e4-a0d1-4b49-9da3-7525ede05d57.pdf"
+    ],
+    "decision": "Keep Eswatini research-only and not calculator-ready. No calculator profile or formula changes."
+  }
 }
