@@ -1,0 +1,80 @@
+{
+  "title": "Botswana calculator readiness research — Batch 38",
+  "batch": 38,
+  "country_code": "BW",
+  "country_name": "Botswana",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "findings": [
+    {
+      "topic": "2024/25 cereal output discrepancy",
+      "detail": "Two government-reported totals conflict: 117,228.42 MT in the 12 Aug 2025 government release and 137,876.84 MT in the 30 Oct 2025 Ministry spokesperson report. Neither is selected as the accepted value."
+    },
+    {
+      "topic": "Crop area and yield",
+      "detail": "The later Ministry report gives planted area for maize (74,139.87 ha) and sorghum (39,568.28 ha), but no matching harvested area and crop-specific production table. No yield is calculated."
+    },
+    {
+      "topic": "Livestock",
+      "detail": "Preliminary 2025 census figures report 1,638,543 cattle, 1,271,407 goats and 323,279 sheep. BOPA reports the results are preliminary and subject to revision."
+    },
+    {
+      "topic": "Geography",
+      "detail": "Government portal lists 31 local authority councils. These are added as selector lookup labels, not asserted to be the same as the 28 administrative districts or 29 agricultural census districts. A crosswalk is still required."
+    },
+    {
+      "topic": "Prices",
+      "detail": "BAMB official producer/contract price portal identified; the current primary price file and full grade/eligibility terms have not yet been extracted. Secondary January 2026 figures remain unverified and are not admitted as calculator prices."
+    },
+    {
+      "topic": "Enterprise budgets",
+      "detail": "No validated regional crop or livestock gross-margin budget; farmer-paid input, labour, water, machinery and transport costs remain outstanding."
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield": "partial",
+    "farmgate_prices": "partial_source_portal_only",
+    "input_costs": "not_audited",
+    "regional_enterprise_budgets": "blocked",
+    "livestock": "preliminary_census_counts_only",
+    "geography": "31_local_authority_labels_added_crosswalk_pending",
+    "calculator_mapping_and_tests": "blocked",
+    "calculator_active": false
+  },
+  "sources": [
+    {
+      "title": "Agricultural Census Stats Brief 2025—Livestock Sector",
+      "url": "https://www.statsbots.org.bw/agricultural-census-stats-brief-2025-livestock"
+    },
+    {
+      "title": "Smallstock surge offset cattle decline",
+      "url": "https://dailynews.gov.bw/news-detail/93205"
+    },
+    {
+      "title": "Government of Botswana local authorities and councils",
+      "url": "https://gov.bw/ministries/ministry-local-government-and-traditional-affairs"
+    },
+    {
+      "title": "Ministry predicts cereal deficit",
+      "url": "https://dailynews.gov.bw/news-detail/88871"
+    },
+    {
+      "title": "Government declares 2024/2025 non-drought year",
+      "url": "https://dailynews.gov.bw/news-detail/88078"
+    },
+    {
+      "title": "Statistics Botswana agriculture portal",
+      "url": "https://www.statsbots.org.bw/agriculture"
+    },
+    {
+      "title": "BAMB Market Information",
+      "url": "https://bamb.co.bw/market-information"
+    }
+  ],
+  "safeguards": [
+    "No calculator formulas changed.",
+    "No numeric Botswana crop yield, price, cost or margin activated.",
+    "Existing ten active country profiles left unchanged.",
+    "Botswana remains directory-only."
+  ]
+}
