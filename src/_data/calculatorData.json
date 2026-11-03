@@ -334,6 +334,10 @@
           "price_expected": 65,
           "price_high": 110,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -868,6 +872,10 @@
           "price_expected": 60,
           "price_high": 120,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -1177,6 +1185,10 @@
           "price_low": 250,
           "price_high": 500,
           "price_unit": "per bird (live, ~2kg)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -1555,6 +1567,10 @@
           "price_expected": 20,
           "price_high": 40,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -1864,6 +1880,10 @@
           "price_low": 16000,
           "price_high": 40000,
           "price_unit": "per head (fattened)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -2398,6 +2418,10 @@
           "price_expected": 30,
           "price_high": 60,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -2703,6 +2727,10 @@
           "price_low": 120,
           "price_high": 280,
           "price_unit": "per kg (farm-gate, ~1kg fish)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -3012,6 +3040,10 @@
           "price_low": 3000,
           "price_high": 8000,
           "price_unit": "per mature goat"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -3586,6 +3618,10 @@
           "price_expected": 100,
           "price_high": 200,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -3926,6 +3962,10 @@
           "price_low": 8,
           "price_high": 18,
           "price_unit": "per egg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -4340,6 +4380,26 @@
           "price_expected": 109,
           "price_high": 160,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "cost_source": "Africa benchmark estimate — costs are a planning proxy derived from the ten established calculator countries; not Botswana supplier quotations or a verified Botswana enterprise budget.",
+          "yield_low": 0.6,
+          "yield_expected": 0.6,
+          "yield_high": 0.6,
+          "yield_unit": "tonnes",
+          "yield_source": "FAOSTAT 2024 maize yield: 600 kg/ha (0.6 tonnes/ha), reproduced by Africa API from FAOSTAT; national annual harvested-area yield, not a district-specific forecast.",
+          "price_low": 1.519,
+          "price_expected": 3.1,
+          "price_high": 3.1,
+          "price_unit": "per kg",
+          "price_source": "Botswana Agricultural Marketing Board schedule reproduced by The Farmers' Platform, July/August 2026: white maize Grade 3 P1,519/tonne and Grade 1 P3,100/tonne. Grade and delivery conditions apply.",
+          "source": "Botswana-specific maize yield (FAOSTAT 2024) and BAMB-reproduced white-maize producer schedule (July/August 2026); costs remain Africa benchmark proxy, not local costs.",
+          "as_of": "2026-08",
+          "data_quality": "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy",
+          "yield_as_of": "2024",
+          "price_as_of": "2026-08",
+          "cost_as_of": "2026-10"
         }
       ],
       "active": true
@@ -4794,6 +4854,10 @@
           "price_expected": 50,
           "price_high": 100,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -5103,6 +5167,10 @@
           "price_low": 6000,
           "price_high": 15000,
           "price_unit": "per pig (live, ~80kg)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -5517,6 +5585,10 @@
           "price_expected": 80,
           "price_high": 130,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -5931,6 +6003,10 @@
           "price_expected": 55,
           "price_high": 90,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -6437,6 +6513,10 @@
           "price_expected": 35,
           "price_high": 80,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
@@ -6811,6 +6891,10 @@
           "price_expected": 20,
           "price_high": 40,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark"
         }
       ],
       "active": true
