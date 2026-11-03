@@ -524,6 +524,82 @@
         }
       ],
       "caveat": "These are programme quantities for eligible smallholders, not market prices, universal application recommendations or full farmer-paid costs."
+    },
+    {
+      "topic": "Batch 50 follow-up: 2026/27 input subsidy farmer contributions and 2025/26 maize procurement price lead",
+      "review_date": "2026-11-03",
+      "sources": [
+        {
+          "title": "E65 million subsidy opens planting season as El Niño threatens grain farmers",
+          "publisher": "Agribusiness Media",
+          "publication_date": "2026-08-18",
+          "url": "https://agribusinessmedia.com/2026/08/18/e65-million-subsidy-opens/",
+          "observations": [
+            {
+              "indicator": "farmer contribution for one-hectare maize input package",
+              "value": 6700,
+              "unit": "SZL per hectare package",
+              "reference_season": "2026/27",
+              "status": "reported programme contribution; not an itemized input price"
+            },
+            {
+              "indicator": "farmer contribution for one-hectare beans input package",
+              "value": 6700,
+              "unit": "SZL per hectare package",
+              "reference_season": "2026/27",
+              "status": "reported programme contribution; not an itemized input price"
+            },
+            {
+              "indicator": "farmer contribution for one-hectare sorghum input package",
+              "value": 3576,
+              "unit": "SZL per hectare package",
+              "reference_season": "2026/27",
+              "status": "reported programme contribution; not an itemized input price"
+            },
+            {
+              "indicator": "farmer contribution for half-hectare maize or beans package",
+              "value": 3350,
+              "unit": "SZL per half-hectare package",
+              "reference_season": "2026/27",
+              "status": "reported programme contribution"
+            }
+          ],
+          "note": "Government reportedly maintains a 50% subsidy. These are eligible programme package contributions, not full commercial farmer costs and not disaggregated seed/fertilizer/chemical prices."
+        },
+        {
+          "title": "Major relief as NMC cuts maize prices",
+          "publisher": "Times of Eswatini",
+          "publication_date": "2026-02-20",
+          "url": "https://times.co.sz/31014/news/major-relief-as-nmc-cuts-maize-prices/",
+          "observations": [
+            {
+              "indicator": "NMC maize buying price",
+              "value": 5175,
+              "unit": "SZL per tonne",
+              "effective_date": "2026-04",
+              "status": "reported NMC buyer procurement price; not a national multi-market farmgate series"
+            }
+          ],
+          "note": "Secondary report states the NMC price was reduced from E7,081 to E5,175 per tonne effective April 2026. Treat as a procurement-price lead requiring confirmation against the NMC's primary season schedule and applicable grade/quality deductions."
+        },
+        {
+          "title": "E 11.5M to shield farmers from tractor hike costs",
+          "publisher": "Independent News Eswatini",
+          "publication_date": "2026-08",
+          "url": "https://independentnews.co.sz/47510/business/agriculture/e-11-5m-to-shield-farmers-from-tractor-hike-costs/",
+          "observations": [
+            {
+              "indicator": "subsidised tractor hire hourly rate",
+              "value": 607,
+              "unit": "SZL per hour",
+              "reference_season": "2026/27",
+              "status": "reported programme rate; farmer contribution stated as SZL 400/hour"
+            }
+          ],
+          "note": "The reported rate is a subsidised tractor-hire programme price, not a general private machinery hire rate."
+        }
+      ],
+      "caveat": "These observations improve cost/price evidence but do not provide a complete region-, crop-, grade- and farm-system-specific farm budget. The NMC procurement figure is secondary reporting and must be confirmed from NMC primary documentation before production use."
     }
   ],
   "data_quality_and_use": [
@@ -561,5 +637,17 @@
       "https://documents1.worldbank.org/curated/en/099062525124012924/pdf/P507872-a15768e4-a0d1-4b49-9da3-7525ede05d57.pdf"
     ],
     "decision": "Keep Eswatini research-only and not calculator-ready. No calculator profile or formula changes."
+  },
+  "batch_50_review": {
+    "review_date": "2026-11-03",
+    "country_name": "Eswatini",
+    "source_notes": "Added the 2026/27 government input-subsidy farmer contributions (SZL 6,700/ha maize, SZL 6,700/ha beans, SZL 3,576/ha sorghum; half-hectare maize/beans SZL 3,350) and reported subsidised tractor hire rate (SZL 607/hour, farmer contribution SZL 400/hour). Also recorded a secondary report of the NMC maize procurement price at SZL 5,175/tonne effective April 2026. The subsidy contributions are package-level co-payments, not itemized commercial input prices; the NMC price is a buyer procurement lead, not a complete farmgate series.",
+    "sources": [
+      "https://agribusinessmedia.com/2026/08/18/e65-million-subsidy-opens/",
+      "https://independentnews.co.sz/47510/business/agriculture/e-11-5m-to-shield-farmers-from-tractor-hike-costs/",
+      "https://times.co.sz/31014/news/major-relief-as-nmc-cuts-maize-prices/",
+      "https://www.nmc.co.sz/inputs-subsidy/"
+    ],
+    "decision": "Keep Eswatini research-only. Use programme package contributions only as labelled subsidy scenarios; confirm NMC procurement price with primary NMC documentation and obtain regional crop yields, farmgate price series and full itemized costs before calculator mapping."
   }
 }
