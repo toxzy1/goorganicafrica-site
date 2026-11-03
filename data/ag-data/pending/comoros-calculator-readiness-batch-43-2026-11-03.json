@@ -1,0 +1,109 @@
+{
+  "title": "GoOrganicAfrica Comoros calculator-readiness review — Batch 43",
+  "batch": 43,
+  "country_code": "KM",
+  "country_name": "Comoros",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "geography": {
+    "selector_level": "autonomous island",
+    "islands": [
+      "Ngazidja (Grande Comore)",
+      "Ndzuwani (Anjouan)",
+      "Mwali (Mohéli)"
+    ],
+    "source": "https://justice.gouv.km/texte/loi-n11-006-au-du-02-mai-2011-portant-organisation-territoriale-de-lunion-des-comores/",
+    "note": "Keep the three islands as top-level calculator regions. RGA-2 metadata supports lower geography including prefecture and commune, but detailed crop estimates and budgets must be validated before adding those selectors."
+  },
+  "findings": [
+    {
+      "topic": "Current national agricultural census",
+      "detail": "INSEED RGA-2 2025 results, based on the 2023/24 crop campaign, report 73,966 agricultural holdings, 89,282 ha of agricultural land and 56,576 ha cultivated. Average holding size is 0.40 ha and 85% of holdings operate less than 1 ha.",
+      "interpretation": "This is strong current structural evidence, but the small and fragmented holdings mean commercial-scale enterprise assumptions cannot be applied indiscriminately.",
+      "source": "INSEED",
+      "url": "https://www.inseed-comores.org/publications/rga2-resultats-module-de-base-2025"
+    },
+    {
+      "topic": "Island-level land distribution",
+      "detail": "RGA-2 reports agricultural land of 44,561 ha on Ngazidja, 37,191 ha on Ndzuwani and 7,531 ha on Mwali. Mohéli has the highest share of holdings oriented toward sales at 32%, compared with 23% nationally.",
+      "interpretation": "Island segmentation is supported for land structure and market orientation; it is not yet sufficient to assign island-specific crop yields or costs.",
+      "source": "INSEED",
+      "url": "https://www.inseed-comores.org/publications/rga2-resultats-module-de-base-2025"
+    },
+    {
+      "topic": "Crop output and selected yields",
+      "detail": "RGA-2 reports national output of banana 72,809 t, cassava 59,149 t, sweet potato 11,684 t, vanilla 2,442 t, clove 2,178 t and ylang-ylang 355 t. Selected yields reported are mango 17.1 t/ha, lettuce 8.5 t/ha and cucumber 8.3 t/ha.",
+      "interpretation": "National campaign totals are not per-hectare yields. The three selected yield values require denominator, island, season and weighting checks against the detailed census tables before calculator use.",
+      "source": "INSEED",
+      "url": "https://www.inseed-comores.org/publications/rga2-resultats-module-de-base-2025"
+    },
+    {
+      "topic": "Livestock structure",
+      "detail": "RGA-2 reports 49,679 livestock holdings, 270,571 poultry, 116,674 goats and 55,835 cattle.",
+      "interpretation": "National stock counts do not distinguish commercial broilers from layers or provide feed conversion, mortality, veterinary expenditure, sale prices or farm budgets.",
+      "source": "INSEED",
+      "url": "https://www.inseed-comores.org/publications/rga2-resultats-module-de-base-2025"
+    },
+    {
+      "topic": "Input-use constraints",
+      "detail": "Only 20% of cultivated land was reported as fertilized; within fertilized land, 54% used organic fertilizer, 29% mineral fertilizer and 17% a combination. Ten percent of crop producers reported phytosanitary product use. Census results also identify insufficient equipment (40%) and scarcity of improved seeds (38%) as reported constraints.",
+      "interpretation": "These are adoption and constraint indicators, not input quantities, application rates or prices. They cannot be converted into per-hectare costs.",
+      "source": "INSEED",
+      "url": "https://www.inseed-comores.org/publications/rga2-resultats-module-de-base-2025"
+    },
+    {
+      "topic": "Microdata access and regional extraction",
+      "detail": "INSEED NADA catalogue version 1.0 documents crop production Section F with island and prefecture identifiers, crop name and production unit. The data dictionary records a cleaned, weighted and validated dataset; access to anonymised microdata is controlled by application and research-purpose commitments.",
+      "interpretation": "The public metadata establishes a credible extraction route but is not itself numeric microdata. Request access or obtain the published weighted island/prefecture tables; do not infer values from raw sample counts.",
+      "source": "INSEED NADA",
+      "url": "https://www.nada.inseed-comores.org/index.php/catalog/16/data-dictionary/F15"
+    },
+    {
+      "topic": "Current comparable market-price coverage",
+      "detail": "The World Bank Real Time Food Prices global catalogue version 2026-10-05 lists 37 countries and 3,181 markets, but Comoros is not among the listed country economies.",
+      "interpretation": "Do not claim that the World Bank October 2026 RTFP dataset supplies Comoros market prices. A Comoros-specific WFP/FAO/Ministry/market series remains to be located and validated.",
+      "source": "World Bank Microdata Library",
+      "url": "https://microdata.worldbank.org/catalog/4483"
+    },
+    {
+      "topic": "Historical FAO analytical evidence",
+      "detail": "FAO's 2025 Comoros technical report analyses a 2021 household survey and provides historical production/yield context.",
+      "interpretation": "Use as a methodological and historical cross-check only; the 2023/24 RGA-2 is the newer structural source.",
+      "source": "FAO",
+      "url": "https://www.fao.org/agrifood-economics/publications/detail/en/c/1735358/"
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_national_campaign_totals_and_three_selected_yields_published_island_crop_area_and_weighted_yield_tables_not_extracted",
+    "dated_local_farmgate_prices_and_units": "blocked_no_current_verified_comoros_producer_price_series_located_world_bank_october_2026_RTFP_37_country_catalogue_excludes_comoros",
+    "seed_and_planting_material_costs": "blocked_census_reports_seed_access_constraint_but_no_dated_unit_prices",
+    "fertilizer_and_soil_amendment_costs": "partial_adoption_shares_only_no_unit_prices_application_rates_or_farmer_paid_costs",
+    "crop_protection_costs": "partial_10_percent_producer_use_only_no_product_price_or_application_cost",
+    "irrigation_water_and_energy_costs": "blocked_no_island_crop_specific_water_energy_cost_schedule",
+    "labour_rates_and_operations": "partial_138723_agricultural_workers_reported_no_crop_operation_or_paid_labour_schedule",
+    "machinery_and_land_preparation_costs": "partial_40_percent_report_equipment_insufficiency_no_hire_rates_or_per_hectare_costs",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_island_crop enterprise budgets",
+    "currency_and_exchange_rate_method": "partial_KMF_currency_identified_no_priced_calculator_data_or_rounding_test",
+    "source_provenance_and_observation_date": "pass_for_INSEED_RGA2_2025_FAO_2025_and_INSEED_NADA_2026_metadata",
+    "calculator_mapping_and_test_cases": "blocked_no validated island crop budget inputs or regression cases"
+  },
+  "outstanding": [
+    "Obtain INSEED-authorised RGA-2 microdata access or published weighted tables.",
+    "Extract island/prefecture/crop/season area, production, harvested area and yield with survey weights and definitions.",
+    "Find dated local producer/farmgate prices by island, crop, grade, unit and market; do not substitute retail prices.",
+    "Obtain farmer-paid seed, fertilizer, organic amendment and crop-protection prices and application rates.",
+    "Collect labour, irrigation, water, energy, machinery hire, land preparation, packaging, storage and transport costs.",
+    "Build separate smallholder enterprise budgets reflecting the 0.40 ha average holding and island market orientation.",
+    "Validate livestock species and production systems, especially broiler/layer distinction, feed, mortality, veterinary and output prices.",
+    "Map the evidence to the current 17 calculator commodities only where crop identity and production system match; do not force banana, vanilla, clove or ylang-ylang into unrelated profiles."
+  ],
+  "safeguards": [
+    "No national crop total converted into a yield without a matching harvested-area denominator.",
+    "No controlled microdata assumed to be publicly downloaded or accessed.",
+    "No retail or imported-food price reclassified as a farmgate price.",
+    "No input-use percentage converted into a per-hectare input budget.",
+    "No national average applied to every island without evidence.",
+    "No calculator profile or formula activated or changed."
+  ],
+  "conclusion": "Comoros has a substantially improved and current census evidence base, including selected yields, island-level land structure and documented microdata fields. However, farmgate prices, farmer-paid input costs and island-specific enterprise budgets are not yet validated. Retain research-only status."
+}
