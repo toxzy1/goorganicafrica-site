@@ -6,7 +6,7 @@
     "currency": "MGA",
     "currency_name": "Malagasy ariary"
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-03",
   "status": "research_only_not_published_to_calculator",
   "purpose": "Country evidence register entry. This file records sourced agricultural production, market and policy context and identifies data gaps. It is not a farm enterprise budget, verified farm-gate price feed or calculator profile.",
   "calculator_readiness": "not_ready_research_only",
@@ -379,5 +379,48 @@
     "Livestock production and sale-price evidence if livestock enterprises are to be supported.",
     "Currency and unit validation against the existing calculator data schema and regression testing."
   ],
-  "activation_recommendation": "Do not activate Madagascar from this evidence record alone. It is suitable for the research register and for prioritising subsequent data extraction; it is not yet a validated calculator profile."
+  "activation_recommendation": "Do not activate Madagascar from this evidence record alone. It is suitable for the research register and for prioritising subsequent data extraction; it is not yet a validated calculator profile.",
+  "administrative_geography": {
+    "first_level_unit": "Region",
+    "verified_region_count": 23,
+    "verified_regions": [
+      "Alaotra-Mangoro",
+      "Amoron'i Mania",
+      "Analamanga",
+      "Analanjirofo",
+      "Androy",
+      "Anosy",
+      "Atsimo-Andrefana",
+      "Atsimo-Atsinanana",
+      "Atsinanana",
+      "Betsiboka",
+      "Boeny",
+      "Bongolava",
+      "DIANA",
+      "Fitovinany",
+      "Haute Matsiatra",
+      "Ihorombe",
+      "Itasy",
+      "Melaky",
+      "Menabe",
+      "Sava",
+      "Sofia",
+      "Vatovavy",
+      "Vakinankaratra"
+    ],
+    "second_level_unit": "District",
+    "verified_district_count": 119,
+    "district_names_and_region_assignments": "The Government of Madagascar's Torolalana public-service portal publishes the complete 119-district table grouped under the 23 regions. The source table is the authority for district-level mapping; district labels are not duplicated into the calculator's first-level region selector.",
+    "lower_level_units": "Communes and fokontany are below district level; provinces are a separate higher-level territorial layer and must not be mixed into the region selector.",
+    "province_count": 6,
+    "commune_count": 1695,
+    "selector_added_to": "src/_data/calculator/regions.json",
+    "selector_status": "region_lookup_added_country_remains_not_active",
+    "sources": [
+      "https://torolalana.gov.mg/fr/services/regions-et-districts/",
+      "https://salb.un.org/en/data/mdg",
+      "https://madagascar.un.org/sites/default/files/2025-10/1%20Madagascar%20Country%20Brief.pdf"
+    ]
+  },
+  "administrative_geography_caveat": "The 23-region structure is supported by the government service portal and UN country brief. SALB/UN provides validated administrative boundary datasets with temporal validity 2023-06-29 to 2024-10-17. Do not infer crop yields or farm budgets from administrative geography."
 }
