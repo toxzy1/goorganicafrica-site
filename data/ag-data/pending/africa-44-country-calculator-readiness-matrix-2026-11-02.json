@@ -606,20 +606,20 @@
       "code": "DJ",
       "name": "Djibouti",
       "evidence_file": "data/ag-data/pending/djibouti-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "official_five_region_geography_verified_2026_ministry_and_INSD_sources_identified_historical_2019_2020_vegetable_output_and_FAOSTAT_catalogue_available_but_current_crop_yields_farmgate_prices_input_costs_and_enterprise_budgets_missing",
+      "existing_research_note": "Batch 46 2026-11-03: INSTAD 2023 aggregate crop production/area/holding series through 2019/20; USDA FAS 2026-10-20 nearly 90% import-dependence context; FEWS NET weekly price-data download and API price-type filters verified; FAOSTAT 2024 cereal-yield aggregate surfaced but not commodity-specific; secondary WFP/HDX market records through 2025-12-15 are retail/wholesale. Regional crop yields, current producer prices and farmer-paid budgets remain missing.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_historical_aggregate_vegetable_output_and_FAOSTAT_series_catalogued_crop_level_area_yield_extraction_pending",
-        "dated_local_farmgate_prices_and_units": "blocked_FEWS_NET_staple_market_dataset_not_yet_extracted_and_no_verified_farmgate_series",
+        "crop_area_production_yield_by_commodity_and_season": "partial_INSTAD_2015_16_to_2019_20_national_aggregate_production_area_and_holdings_FAO_2024_cereal_yield_aggregate_only_crop_specific_regional_series_not_extracted",
+        "dated_local_farmgate_prices_and_units": "partial_FEWS_NET_weekly_price_download_and_API_route_verified_but_latest_observations_not_extracted_secondary_WFP_HDX_data_to_2025_12_15_retail_wholesale_only",
         "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_seedling_price_schedule",
-        "fertilizer_and_soil_amendment_costs": "partial_historical_fertilizer_use_indicator_only_no_current_product_prices_or_application_costs",
+        "fertilizer_and_soil_amendment_costs": "partial_historical_17kg_ha_fertilizer_use_indicator_only_current_product_prices_and_crop_application_costs_missing",
         "crop_protection_costs": "blocked_no_current_crop_protection_product_prices_or_application_budgets",
-        "irrigation_water_and_energy_costs": "partial_irrigation_context_identified_but_local_water_pumping_energy_tariffs_and_crop_costs_unverified",
+        "irrigation_water_and_energy_costs": "partial_irrigation_and_diesel_pumping_cost_constraints_documented_historical_context_only_current_local_tariffs_and_crop_budgets_missing",
         "labour_rates_and_operations": "blocked_no_current_region_and_operation_specific_wage_or_labour_days_schedule",
         "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_or_land_preparation_cost_schedule",
         "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_system_enterprise_budget_or_gross_margin",
         "currency_and_exchange_rate_method": "partial_DJF_currency_identified_local_currency_method_not_yet_documented_in_calculator",
-        "source_provenance_and_observation_date": "partial_official_geography_and_multiple_dated_sources_recorded_FAOSTAT_and_FEWS_NET_observation_extraction_pending",
+        "source_provenance_and_observation_date": "improved_INSTAD_2023_USDA_FAS_2026_10_20_FEWS_NET_API_FAO_GIEWS_2025_and_official_geography_sources_linked",
         "calculator_mapping_and_test_cases": "blocked_no_validated_crop_cost_price_yield_dataset_to_map_or_country_test_cases"
       },
       "blockers": [
@@ -628,9 +628,14 @@
         "Download and inspect FEWS NET weekly staple-price files; classify observations by market, date, commodity, unit and retail/wholesale/farm-gate basis.",
         "Obtain farmer-paid seed, fertilizer, crop-protection, irrigation water, pumping energy, labour, machinery, packaging, cooling and transport costs.",
         "Build distinct budgets for irrigated open-field horticulture, protected cultivation and relevant livestock systems.",
-        "Document DJF handling, map only validated data to the calculator schema and add independently checked test cases."
+        "Document DJF handling, map only validated data to the calculator schema and add independently checked test cases.",
+        "INSTAD production/area series is aggregate and historical through 2019/20, not current crop-specific regional data.",
+        "FEWS NET dataset is identified but latest Djibouti observations have not been downloaded and checked; price types must be separated.",
+        "Secondary WFP/HDX dataset ends 2025-12-15 and displayed examples are retail/wholesale, not current producer prices.",
+        "No current farmer-paid seed, fertilizer, crop protection, water, energy, labour or machinery schedules.",
+        "No regional crop enterprise budgets or calculator test cases."
       ],
-      "next_step": "Extract and validate FAOSTAT crop/livestock observations and FEWS NET price records; seek Ministry/INSD regional farm survey and input-cost tables before preparing any enterprise budget.",
+      "next_step": "Extract FAOSTAT crop/livestock series with source flags and download FEWS NET weekly data/API records; separate Producer from Retail/Wholesale and obtain current region-specific farmer-paid input, irrigation, energy and labour costs.",
       "batch_21_review": {
         "review_date": "2026-11-02",
         "country_name": "Djibouti",
