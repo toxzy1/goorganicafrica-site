@@ -1,0 +1,98 @@
+{
+  "title": "GoOrganicAfrica Democratic Republic of the Congo calculator-readiness review — Batch 44",
+  "batch": 44,
+  "country_code": "CD",
+  "country_name": "Democratic Republic of the Congo",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "administrative_geography": {
+    "selector_level": "province",
+    "count": 26,
+    "note": "The Ministry of Interior confirms 26 provinces including Kinshasa, which has special status. Province names and boundaries should be aligned to official legal references and geospatial boundary files before building lower-level selectors.",
+    "source": "https://interieur.gouv.cd/ministere/territoires"
+  },
+  "findings": [
+    {
+      "topic": "2026 crop-season outlook and regional disruption",
+      "detail": "FAO GIEWS brief dated 24 June 2026 reports that planting of the 2026 second-season maize crop was completed in January in northern and central regions and by end-March in southern provinces. Main-season maize planting began in June in northern areas and was expected to begin in July in central areas. The planted area for the 2026 main season was estimated below the five-year average.",
+      "limitation": "Seasonal outlook, not final harvest data or province-level yield observations. Conflict, displacement and restricted field access have disrupted production in eastern provinces; expected below-average rainfall also creates crop-development risk.",
+      "source": "FAO GIEWS",
+      "url": "https://cb.apps.fao.org/country.jsp?code=COD&lang=fr",
+      "reference_date": "2026-06-24"
+    },
+    {
+      "topic": "Market-price coverage",
+      "detail": "World Bank Real Time Food Prices catalogue version 2026-10-05 covers 215 markets in the DRC, with monthly estimates from 2007-01-01 through 2026-10-01. Data are compiled from public sources including WFP and FAO, combining direct price measurements with machine-learning estimates for missing observations.",
+      "limitation": "Market prices are not automatically farmgate prices. Retain market, commodity, date, currency, coverage, confidence and spatial-interpolation fields. Check the market file for commodity availability and geographic coverage before using any observation.",
+      "source": "World Bank Microdata Library",
+      "url": "https://microdata.worldbank.org/catalog/4490",
+      "reference_version": "2026-10-05"
+    },
+    {
+      "topic": "Current price pressure and market access",
+      "detail": "FAO reports locally produced maize and imported rice prices remained elevated from January 2025 into 2026, with tight supply and high transport costs associated with conflict and reduced imports. Daily labour earnings have not kept pace with food prices in affected markets.",
+      "limitation": "Directional price and purchasing-power context only; do not infer absolute farmgate prices or a national price level.",
+      "source": "FAO GIEWS",
+      "url": "https://cb.apps.fao.org/country.jsp?code=COD&lang=fr",
+      "reference_date": "2026-06-24"
+    },
+    {
+      "topic": "Production estimates and statistical comparability",
+      "detail": "The existing research record contains USDA FAS estimates for corn and rice for 2024/25 and 2025/26 marketing years, plus a 2024 modelled maize forecast from AAgWa. FAOSTAT/World Bank aggregate cereal yield for 2024 is 872 kg/ha.",
+      "limitation": "These sources have different time bases, definitions and methods. The cereal-yield figure is not a crop-specific yield; USDA marketing-year estimates are not national census results; the AAgWa forecast is modelled. Do not average or combine them without matching area, crop-year and source definitions.",
+      "sources": [
+        "https://fas-prod.azureedge.us/data/production/cg",
+        "https://data.worldbank.org/indicator/AG.YLD.CREL.KG?locations=CD",
+        "https://akademiya2063.org/publications/AAgWa%20Crop%20Production%20Forecasts/AAgWa%20Crop%20Production%20Forecasts%20Series%20No.%20137_DRC%20-%20Maize.pdf"
+      ]
+    },
+    {
+      "topic": "Administrative geography",
+      "detail": "The Ministry of Interior confirms 26 provinces including Kinshasa. The province level is the defensible initial calculator selector; lower levels include territories/cities and then sectors, chiefdoms and communes, but require a validated crop-data crosswalk.",
+      "limitation": "Administrative names alone do not provide regional crop-yield or price coverage.",
+      "source": "Ministry of Interior, DRC",
+      "url": "https://interieur.gouv.cd/ministere/territoires"
+    },
+    {
+      "topic": "Agricultural production monitoring",
+      "detail": "The European Commission ASAP DRC country dashboard provides crop-cover statistics, agricultural-production hotspots, crop calendars and a subnational share-of-cereal-production view, with 13 administrative units flagged for crop-related warning in the displayed assessment.",
+      "limitation": "Dashboard indicators and hotspot warnings are monitoring products, not a substitute for official crop-specific province-level area, production and yield tables. Export and source metadata must be inspected before numerical use.",
+      "source": "European Commission ASAP",
+      "url": "https://agricultural-production-hotspots.ec.europa.eu/country.php?cntry=118"
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_USDA_FAS_marketing_year_estimates_and_AAgWa_modelled_maize_forecast_available_but_matching_official_province_crop_area_production_yield_series_not_extracted",
+    "dated_local_farmgate_prices_and_units": "partial_World_Bank_RTFP_215_markets_through_2026_10_01_market_estimates_not_farmgate_SIM_or_producer_price_records_need_extraction",
+    "seed_and_planting_material_costs": "blocked_no_dated_province_crop_specific_farmer_paid_seed_prices_extracted",
+    "fertilizer_and_soil_amendment_costs": "blocked_no_current_farmer_paid_unit_price_and_application_rate_schedule_extracted",
+    "crop_protection_costs": "blocked_no_province_crop_specific_product_and_application_cost_schedule_extracted",
+    "irrigation_water_and_energy_costs": "blocked_no_regional_farm_paid_water_energy_cost_schedule_extracted",
+    "labour_rates_and_operations": "partial_FAO_reports_wage_and_food_price_pressure_but_no_crop_operation_labour_budget_extracted",
+    "machinery_and_land_preparation_costs": "blocked_no_regional_machinery_hire_or_land_preparation_cost_schedule_extracted",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_province_crop_enterprise_budgets",
+    "currency_and_exchange_rate_method": "partial_CDF_currency_known_but_current_exchange_rate_method_price_normalisation_and_rounding_tests_pending",
+    "source_provenance_and_observation_date": "improved_FAO_2026_06_24_World_Bank_2026_10_05_Ministry_of_Interior_and_ASAP_sources_linked",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_regional_enterprise_inputs_or_regression_test_cases"
+  },
+  "outstanding": [
+    "Extract the October 2026 World Bank market CSV for all 215 DRC markets and catalogue the commodity, date, currency, price type, data coverage, confidence and interpolation fields.",
+    "Keep market and retail estimates separate from farmgate/producer prices; obtain official SIM or producer-level price records where available.",
+    "Extract crop-specific harvested area, production and yield from DRC Ministry/INS and FAOSTAT sources, retaining source flags and calendar/marketing-year definitions.",
+    "Cross-check USDA FAS corn and rice marketing-year estimates against national statistics; do not combine with AAgWa modelled forecasts.",
+    "Export ASAP subnational crop-production shares and monitoring metadata as a screening layer, not a replacement for official crop statistics.",
+    "Build and validate the 26-province lookup, including Kinshasa special status and current boundary crosswalk.",
+    "Obtain dated farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, energy and transport costs by province and production system.",
+    "Account for security, displacement and transport constraints in eastern provinces and avoid treating national averages as representative.",
+    "Build crop-specific regional enterprise budgets and test cases for the current 17 commodity profiles only where the production system and crop identity match."
+  ],
+  "safeguards": [
+    "No aggregate cereal yield used as maize or rice yield.",
+    "No modelled forecast averaged with USDA or FAOSTAT estimates.",
+    "No World Bank market-price estimate relabelled as a farmgate price.",
+    "No national average assumed representative of conflict-affected eastern provinces or remote transport corridors.",
+    "No province selector treated as evidence of province-specific crop data.",
+    "No calculator profile or formula activated or changed."
+  ],
+  "conclusion": "The DRC has a materially improved market-price evidence base with 215 markets through October 2026 and a verified 26-province administrative framework. Crop production estimates remain mixed-method and not yet reconciled to province-level harvested area; farmgate prices, farmer-paid input costs and regional enterprise budgets remain incomplete. Retain research-only status."
+}
