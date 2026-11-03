@@ -1,0 +1,179 @@
+{
+  "title": "Niger calculator readiness research — Batch 33",
+  "batch": 33,
+  "country_code": "NE",
+  "country_name": "Niger",
+  "completed_on": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_update_only_not_calculator_ready",
+  "executive_summary": "Extracted official INS/DS-MAGEL 2024 national crop production, sown-area and selected yield series, herd inventory context, and current eight-region administrative structure. SIMA weekly regional market and fertilizer exports are identified, but exact producer-price classifications and farmer-paid costs remain to be verified. Niger remains directory-only.",
+  "administrative_geography": {
+    "unit": "administrative regions",
+    "count": 8,
+    "regions": [
+      "Agadez",
+      "Diffa",
+      "Dosso",
+      "Maradi",
+      "Niamey",
+      "Tahoua",
+      "Tillabéri",
+      "Zinder"
+    ],
+    "source": "INS Tableau de Bord Social 2025, law No. 2011-22; the proposed 19-region reorganisation is not applied pending legal implementation."
+  },
+  "national_crop_observations_2024": [
+    {
+      "crop": "millet",
+      "production_tonnes": 3836000,
+      "sown_area_hectares": 6804500,
+      "yield_kg_per_ha": 564,
+      "source_table": "INS TBS 2025 Tables 36, 41, Graphique 47",
+      "source_unit": "production and area reported in thousand tonnes/thousand hectares; yield in kg/ha",
+      "scope": "national aggregate; do not use as region-specific calculator yield"
+    },
+    {
+      "crop": "sorghum",
+      "production_tonnes": 1907400,
+      "sown_area_hectares": 3428700,
+      "yield_kg_per_ha": 556,
+      "source_table": "INS TBS 2025 Tables 36, 41, Graphique 47",
+      "scope": "national aggregate; do not use as region-specific calculator yield"
+    },
+    {
+      "crop": "paddy_rice",
+      "production_tonnes": 71000,
+      "sown_area_hectares": 33100,
+      "yield_kg_per_ha": 2148,
+      "source_table": "INS TBS 2025 Tables 36, 41, Graphique 47",
+      "scope": "paddy basis; do not treat as milled rice"
+    },
+    {
+      "crop": "maize",
+      "production_tonnes": 12400,
+      "sown_area_hectares": 20400,
+      "yield_kg_per_ha": 610,
+      "source_table": "INS TBS 2025 Tables 36, 41, Graphique 47",
+      "scope": "national aggregate"
+    },
+    {
+      "crop": "cowpea",
+      "production_tonnes": null,
+      "sown_area_hectares": 5573400,
+      "yield_kg_per_ha": 496,
+      "source_table": "INS TBS 2025 Table 45 and Graphique 47",
+      "scope": "national aggregate; production value not directly tabled in extracted series; separate 5-year mean is 2,412,787.4 t, not a 2024 observation"
+    },
+    {
+      "crop": "onion",
+      "production_tonnes": 2251100,
+      "sown_area_hectares": 65600,
+      "yield_kg_per_ha": null,
+      "source_table": "INS TBS 2025 Table 38 and Table 43",
+      "scope": "2024 statistical-year series; separate RECA 2024/25 campaign observation is 2,163,211 t on 62,500 ha; do not combine periods"
+    }
+  ],
+  "livestock_inventory_2024": {
+    "cattle_heads": 20300000,
+    "goats_heads": 22000000,
+    "sheep_heads": 15600000,
+    "camels_heads": 1900000,
+    "source": "INS TBS 2025 executive key indicators; herd inventory, not saleable production or output"
+  },
+  "market_evidence": {
+    "SIMA": "Weekly prices by market, region and product; regional means; CSV/Excel export; fertilizer series. Do not treat as farm-gate until the price level, date, grade, market and unit are explicitly verified.",
+    "June_2026_market_yoy_changes": {
+      "millet": -13,
+      "sorghum": -18,
+      "maize": -25,
+      "local_rice": -16,
+      "imported_rice": -12
+    },
+    "onion_2024_25_campaign": {
+      "production_tonnes": 2163211,
+      "area_hectares": 62500,
+      "source": "RECA report published March 2026; separate from INS 2024 annual statistical series."
+    }
+  },
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "partial",
+    "seed_and_planting_material_costs": "unavailable",
+    "fertilizer_and_soil_amendment_costs": "partial",
+    "crop_protection_costs": "unavailable",
+    "irrigation_water_and_energy_costs": "unavailable",
+    "labour_rates_and_operations": "unavailable",
+    "machinery_and_land_preparation_costs": "unavailable",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_exchange_rate_method": "pass",
+    "source_provenance_and_observation_date": "pass",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "safeguards": [
+    "Niger remains directory-only and inactive.",
+    "National yields are not assigned to regions.",
+    "The five-year mean cowpea production is not labelled as 2024 output.",
+    "The two onion reporting periods remain distinct.",
+    "SIMA market/sack prices are not converted to per-kg or called farm-gate without verified sack weights and price-level metadata.",
+    "No original active country profile has been changed."
+  ],
+  "sources": [
+    {
+      "title": "INS Niger — Tableau de Bord Social, édition 2025",
+      "publisher": "Institut National de la Statistique du Niger; agriculture tables sourced to DS/MAGEL",
+      "publication_date": "2025-08",
+      "url": "https://stat-niger.org/wp-content/uploads/tbs/tbs_2025.pdf",
+      "reference_period": "2020–2024",
+      "use": "National crop production, sown area, selected crop yields and livestock inventory context. Tables 36–46 and Graphique 47; national series, not regional enterprise budgets."
+    },
+    {
+      "title": "FAO GIEWS Country Brief — Niger",
+      "publisher": "FAO",
+      "publication_date": "2026-08-28",
+      "url": "https://cb.apps.fao.org/country.jsp?code=NER",
+      "reference_period": "2025 final/estimated cereal output and 2026 cropping-season monitoring",
+      "use": "2025 aggregate cereal production estimate; 2026 planting/weather/security and wholesale price context."
+    },
+    {
+      "title": "SIMA Niger Open Data / Downloads",
+      "publisher": "Système d’Information sur les Marchés Agricoles (SIMA)",
+      "publication_date": "accessed 2026-11-03",
+      "url": "https://simaniger.net/ressources/open-data",
+      "reference_period": "weekly market series and downloadable historical data",
+      "use": "Weekly market prices by market, region and product; fertilizer prices and regional averages can be exported. Market price series are not automatically farm-gate prices; unit/market/grade must be retained."
+    },
+    {
+      "title": "RECA-Niger — Bulletin SIMA June 2026",
+      "publisher": "Réseau National des Chambres d’Agriculture du Niger",
+      "publication_date": "2026-07",
+      "url": "https://reca-niger.org/spip.php?article2126=&debut_ar=24",
+      "reference_period": "June 2026",
+      "use": "Market context: compared with June 2025, prices lower for millet (-13%), sorghum (-18%), maize (-25%), local rice (-16%) and imported rice (-12%); not producer prices."
+    },
+    {
+      "title": "RECA-Niger — Prix de gros oignon Niamey (2023–2025)",
+      "publisher": "Réseau National des Chambres d’Agriculture du Niger",
+      "publication_date": "2026-03",
+      "url": "https://reca-niger.org/spip.php?article2116=&debut_ar=6",
+      "reference_period": "campaign 2024/25 and historical wholesale prices at Niamey Djémadjé",
+      "use": "2024/25 onion output 2,163,211 t and area 62,500 ha; reports cold dry-season production October–February and Agadez rainy-season production; these are not farm-gate prices."
+    },
+    {
+      "title": "Niger official administrative divisions (INS 2025 TBS)",
+      "publisher": "Institut National de la Statistique du Niger",
+      "publication_date": "2025-08",
+      "url": "https://stat-niger.org/wp-content/uploads/tbs/tbs_2025.pdf",
+      "reference_period": "law No. 2011-22; current 8 regions, 63 departments and 266 communes",
+      "use": "Confirms eight administrative regions; current selector retained."
+    }
+  ],
+  "remaining_work": [
+    "Extract and validate regional crop output, harvested area and yield for the 17 supported calculator commodities; national averages are insufficient.",
+    "Download SIMA weekly and regional CSV/Excel series and identify true producer/farm-gate observations, product grade, sack weights and units.",
+    "Extract SIMA fertilizer series with exact product, bag size, market, date and unit; obtain seed, crop-protection, irrigation/energy, labour and machinery quotations.",
+    "Build regional budgets by irrigated/rainfed production system and include onion, cowpea, rice and supported crops only where commodity mapping is correct.",
+    "Obtain livestock offtake, liveweight/auction prices, feed, veterinary, mortality and enterprise cost data.",
+    "Map validated evidence to calculator schema and add country/regional test cases; no activation until tests pass."
+  ],
+  "next_batch": "34 — Nigeria? (already active; sequence should move to next unreviewed country: São Tomé and Príncipe? Verify registry ordering before next batch)"
+}
