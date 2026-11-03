@@ -1319,11 +1319,11 @@
       "code": "MR",
       "name": "Mauritania",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_ministry_reported_autumn_2025_rice_production_area_and_yield_added_full_budget_evidence_pending",
+      "existing_research_note": "official_2025_26_ministry_aggregate_production_and_FAO_2026_seasonal_market_context_added_existing_2025_autumn_rice_series_preserved_full_regional_enterprise_budget_and_farmgate_input_price_evidence_pending",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_2025_autumn_rice_national_and_three_wilaya_observations_reported_primary_ministry_table_verification_and_other_crop_tables_pending",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_ministry_2025_26_headline_totals_and_Trarza_prepared_area_added_crop_by_wilaya_harvested_area_and_consistent_seasonal_denominators_pending",
+        "dated_local_farmgate_prices_and_units": "not_yet_audited_World_Bank_market_panel_is_modelled_retail_or_market_price_proxy_not_verified_farmgate",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
@@ -1332,17 +1332,17 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "DGAT_15_wilaya_geography_verified_and_2025_rice_ministry_figures_reported_2026_01_28_primary_table_verification_pending",
-        "calculator_mapping_and_test_cases": "15_wilaya_lookup_added_mapping_and_tests_pending"
+        "source_provenance_and_observation_date": "DGAT_15_wilayas_63_moughataas_verified_Ministry_2025_26_aggregate_and_FAO_GIEWS_2026_10_28_context_added_primary_tables_and_market_microdata_extraction_pending",
+        "calculator_mapping_and_test_cases": "15_wilaya_lookup_already_present_mapping_and_regression_tests_pending"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "National Ministry headline totals are not a substitute for crop-by-wilaya harvested-area and production tables; confirm definitions and resolve internal inconsistencies.",
+        "Extract and audit market-price microdata; distinguish observed/modelled and retail/wholesale/farmgate prices.",
+        "Obtain dated farmer-facing input and labour quotations by wilaya and production system.",
+        "Build separate enterprise budgets for irrigated rice, rainfed cereals, horticulture, oasis crops and livestock.",
+        "Map only validated values to the existing calculator schema and add country-specific regression tests."
       ],
-      "next_step": "Verify the Ministry of Agriculture original 2025 autumn rice tables; extract crop-by-wilaya and season data, then obtain dated wilaya farmgate prices and input quotations before building budgets.",
+      "next_step": "Extract original Ministry 2025-26 crop tables and World Bank market-price microdata; then obtain wilaya farmgate and input quotations and build separate regional enterprise budgets.",
       "batch_11_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Interior Ministry DGAT portal reports 15 administrative wilayas and 63 moughataas. A separate decentralisation framework describes 13 elected local-government regions; this is a different unit, so the calculator lookup uses 15 administrative wilayas. A 28 January 2026 publication reproducing Ministry of Agriculture figures reports 2025 autumn rice output of 229353 tonnes, area 48800 ha and yield 4.70 t/ha, with regional figures only for Trarza, Gorgol and Brakna. Treat these as reported ministry figures pending the original ministry table.",
@@ -1354,6 +1354,16 @@
           "https://akademiya2063.org/publications/AAgWa%20Crop%20Production%20Forecasts/AAgWa%20Crop%20Production%20Forecasts%20Series%20No.%20118%20Mauritania%20-%20Rice.pdf"
         ],
         "regional_lookup": "15 administrative wilayas added to src/_data/calculator/regions.json; lookup only, country remains inactive."
+      },
+      "batch_28_follow_up": {
+        "review_date": "2026-11-03",
+        "note": "Mauritania already had a Batch 11 review and its 15-wilaya lookup. This Batch 28 follow-up extends that existing evidence; it does not duplicate the region list or activate the country.",
+        "sources": [
+          "https://agriculture.gov.mr/fr/node/721",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=MR",
+          "https://dgat.interieur.gov.mr/",
+          "https://microdata.worldbank.org/catalog/6170"
+        ]
       }
     },
     {
