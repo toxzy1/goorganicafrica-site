@@ -1,0 +1,74 @@
+{
+  "title": "Mauritius calculator-readiness review — Batch 29",
+  "batch": 29,
+  "country_code": "MU",
+  "country_name": "Mauritius",
+  "review_date": "2026-11-03",
+  "status": "research_updated_not_calculator_ready",
+  "regional_lookup": {
+    "entries": 10,
+    "items": [
+      "Black River",
+      "Flacq",
+      "Grand Port",
+      "Moka",
+      "Pamplemousses",
+      "Plaines Wilhems",
+      "Port Louis",
+      "Rivière du Rempart",
+      "Savanne",
+      "Rodrigues"
+    ],
+    "note": "Nine geographic districts on the main island plus Rodrigues as an autonomous island. Mauritius census notes the nine districts are geographic units rather than administrative entities; Rodrigues is autonomous."
+  },
+  "new_evidence": [
+    "2025 provisional official sugarcane: 2,321,704 tonnes from 33,805 ha, mean yield 68.68 t/ha.",
+    "2025 food crops: open field 175,122.2 t from 9,991.1 ha; covered culture 14,249.9 t from 123 ha. These systems must remain separate.",
+    "2025 poultry meat 57,000 t; pork 695 t; beef 2,199 t of which 2,175 t from imported cattle and 24 t local.",
+    "Jan-Jun 2026 open-field food crop production 74,768.8 t; covered-culture 8,144.8 t; poultry 25,900 t. Partial-year only.",
+    "2024 Census: 24,145 agricultural holdings excluding sugarcane/tea-only holdings; 19,246 Mauritius Island and 4,899 Rodrigues; livestock and land summaries recorded.",
+    "Q2 2026 PPI-A index recorded; not absolute farmgate prices. FAREI APMIS current market price portal identified, but raw current prices not extracted."
+  ],
+  "calculator_status": "not_active",
+  "blockers": [
+    "District/MCA/DCA crop-specific yields",
+    "Dated absolute farmgate prices",
+    "Farmer-paid input and labour costs",
+    "Enterprise budgets for open-field/protected/sugarcane/livestock systems",
+    "Calculator mapping and tests"
+  ],
+  "safeguards": [
+    "2025 official crop figures are provisional",
+    "Do not annualise Jan-Jun 2026 figures",
+    "Do not treat PPI-A indices or retail/wholesale prices as absolute farmgate prices",
+    "Imported animal slaughter must not be labelled local livestock production",
+    "Keep original ten active countries unchanged"
+  ],
+  "sources": [
+    {
+      "title": "Statistics Mauritius — Agricultural and Fish Production Year 2025",
+      "url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2026/EI1914/Agri_Fish_Yr25_180326.pdf"
+    },
+    {
+      "title": "Statistics Mauritius — January-June 2026 production",
+      "url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/Agriculture/Agri_Fish_Jan-Jun26.aspx"
+    },
+    {
+      "title": "Statistics Mauritius — Producer Price Index Agriculture Q2 2026",
+      "url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/PPIA/PPIA_2Qtr26.aspx"
+    },
+    {
+      "title": "Statistics Mauritius — 2024 Census of Agriculture",
+      "url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/CA_2024.aspx"
+    },
+    {
+      "title": "FAREI — APMIS",
+      "url": "https://www.farei.mu/apmis/"
+    },
+    {
+      "title": "Mauritius administrative districts and Rodrigues",
+      "url": "https://assets.publishing.service.gov.uk/media/68aee3232f18566482155890/Mauritius_Toponymic_Factfile.pdf"
+    }
+  ],
+  "validation": "JSON parse and active-country invariants to be checked after writes; no activation, merge or deployment."
+}
