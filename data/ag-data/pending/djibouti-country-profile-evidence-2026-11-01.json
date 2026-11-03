@@ -2,7 +2,7 @@
   "country": "Djibouti",
   "iso_alpha2": "DJ",
   "iso_alpha3": "DJI",
-  "record_date": "2026-11-02",
+  "record_date": "2026-11-03",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only evidence on agricultural structure, strategic value chains, market dependence, seasonal and food-security risks, and source availability. Not a farm-profit calculator profile and not authorization to activate Djibouti.",
   "currency": {
@@ -204,6 +204,87 @@
         "FAO metadata notes that country data may originate from official statistics, surveys, administrative records or estimates based on expert observations."
       ],
       "caveat": "A country/crop extraction for Djibouti, including metadata and flags, is still required. Do not treat all FAOSTAT values as direct survey observations without checking their source flags and estimation status."
+    },
+    {
+      "topic": "USDA FAS October 2026 market snapshot",
+      "reference_date": "2026-10-20",
+      "source": "USDA Foreign Agricultural Service, GAIN DJ2026-0001",
+      "source_url": "https://fas-prod.azureedge.us/data/gain/2026/10/djibouti-djibouti-food-and-agricultural-market-snapshot",
+      "observations": [
+        "Nearly 90 percent of food supply imported; domestic production constrained by aridity and limited arable land.",
+        "Retail, hotel, restaurant and institutional demand plus port/free-zone distribution are market opportunities."
+      ],
+      "caveat": "Trade/market context only; no farmgate price or farm cost data."
+    },
+    {
+      "topic": "INSTAD Statistical Yearbook 2023 aggregate crop production series",
+      "reference_date": "2023 yearbook; agricultural campaign observations 2015/16 to 2019/20",
+      "source": "INSTAD, Annuaire Statistique 2023, Table 3.1.1, source stated as Direction de l'Agriculture et des Forêts",
+      "source_url": "https://www.ministere-finances.dj/statistiques/AS/Statis/Annuaire/notep.htm",
+      "observations": [
+        {
+          "campaign": "2015/2016",
+          "production_t": 8344,
+          "cultivated_area_ha": 1396,
+          "holdings": 1888
+        },
+        {
+          "campaign": "2016/2017",
+          "production_t": 8964,
+          "cultivated_area_ha": 1441,
+          "holdings": 1953
+        },
+        {
+          "campaign": "2017/2018",
+          "production_t": 9412,
+          "cultivated_area_ha": 1543,
+          "holdings": 1982
+        },
+        {
+          "campaign": "2018/2019",
+          "production_t": 9694,
+          "cultivated_area_ha": 1548,
+          "holdings": 1992
+        },
+        {
+          "campaign": "2019/2020",
+          "production_t": 9896,
+          "cultivated_area_ha": 1620,
+          "holdings": 2081
+        }
+      ],
+      "caveat": "National aggregate only, not crop-specific production/yield. Historical series; primary table source attributed to Direction de l'Agriculture et des Forêts. Government statistics note documents major agricultural-statistics system limitations."
+    },
+    {
+      "topic": "FEWS NET weekly price data and API",
+      "reference_date": "2026-11-03",
+      "source": "FEWS NET Djibouti Weekly Staple Food Price Data and FEWS NET API documentation",
+      "source_url": "https://fews.net/djibouti-weekly-fews-net-staple-food-price-data",
+      "observations": [
+        "Weekly Djibouti staple price series collected since 2004; XLSX, CSV and JSON downloads offered.",
+        "API supports country_code and date filters; price_type distinguishes Producer, Retail, Wholesale and other price types."
+      ],
+      "caveat": "Download and observation extraction not completed; no current price values or latest date certified."
+    },
+    {
+      "topic": "Secondary harmonised WFP/HDX historical price coverage",
+      "reference_date": "2026-04-06 processing date; underlying observations to 2025-12-15",
+      "source": "electricsheepafrica/africa-wfp-food-prices-for-djibouti",
+      "source_url": "https://huggingface.co/datasets/electricsheepafrica/africa-wfp-food-prices-for-djibouti/viewer/default/train",
+      "observations": [
+        "Dataset viewer reports 5.73k rows, six admin1/admin2 market groupings, 34 commodities, DJF currency and retail/wholesale price types; observation dates span 2005-01-15 to 2025-12-15."
+      ],
+      "caveat": "Secondary processed dataset; latest displayed date is not current November 2026. Do not call retail/wholesale records farmgate prices."
+    },
+    {
+      "topic": "FAO cereal yield indicator",
+      "reference_date": "2024",
+      "source": "FAO cereal-yield indicator surfaced through World Bank/secondary data displays",
+      "source_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG?locations=DJ",
+      "observations": [
+        "2024 cereal yield reported as 2,041 kg/ha."
+      ],
+      "caveat": "Aggregate dry-grain cereal indicator; not a maize, rice, sorghum or millet-specific yield. Extract FAOSTAT crop-item data and flags before use."
     }
   ],
   "data_quality_and_use": [
@@ -213,7 +294,11 @@
     "The World Bank's greenhouse and open-field tomato yield figures are illustrative production potential, not verified national averages or guaranteed outcomes.",
     "FEWS NET offers a long-running weekly staple price dataset, but prices must be downloaded and classified by market, date, commodity, unit and retail/wholesale/farm-gate status before use.",
     "The current sources do not establish complete, current farm-gate price series or enterprise budgets for Djibouti.",
-    "The latest IPC projections show material food-security and pastoral risks in 2026; these should inform risk context but are not a substitute for agronomic data."
+    "The latest IPC projections show material food-security and pastoral risks in 2026; these should inform risk context but are not a substitute for agronomic data.",
+    "Batch 46: INSTAD Statistical Yearbook 2023 national agricultural aggregate series gives 9,896 tonnes, 1,620 cultivated hectares and 2,081 holdings for 2019/20; this is not crop-specific or current.",
+    "Batch 46: FEWS NET weekly price page and API schema verified; latest Djibouti price observations have not yet been extracted. Producer, retail and wholesale types must remain distinct.",
+    "Batch 46: USDA FAS 2026-10-20 market snapshot confirms nearly 90% food import dependence; trade figures are not farmgate price evidence.",
+    "Batch 46: secondary WFP/HDX harmonised price viewer shows historical DJF retail/wholesale records through 2025-12-15, not a current November 2026 producer-price feed."
   ],
   "missing_data_before_calculator_use": [
     "A verified, current agricultural census or national farm survey with producer counts, farm sizes, irrigation area, crop areas and livestock populations by region.",
@@ -224,9 +309,12 @@
     "Crop-specific yields and crop cycles under open-field, greenhouse and other protected production systems, separated by location, water source, salinity, season and management level.",
     "Livestock herd and flock inventories by species and production system; animal purchase/sale prices; feed, water, veterinary, labour, transport and mortality costs; and reproductive/productivity parameters.",
     "Validation of dates production, horticulture market-share estimates and livestock value-chain indicators against underlying ministry or statistical publications.",
-    "Buyer contracts, farm-gate price deductions, quality grades, post-harvest losses, marketable yields and realistic financing costs for the selected value chains."
+    "Buyer contracts, farm-gate price deductions, quality grades, post-harvest losses, marketable yields and realistic financing costs for the selected value chains.",
+    "Download and inspect FEWS NET Djibouti weekly CSV/XLSX/JSON or API records and verify current producer price series separately from retail/wholesale prices.",
+    "Extract FAOSTAT commodity-level crop and livestock records with source flags; 2024 aggregate cereal yield is not a commodity-specific yield.",
+    "Verify INSTAD 2019/20 aggregate production and cultivated-area figures against the primary yearbook table and obtain current crop-specific regional data."
   ],
-  "recommendation": "Retain Djibouti as research-only. The strongest current evidence supports a livestock-led rural economy, a limited but strategically important irrigated/protected horticulture sector, date production potential, high import dependence and significant 2026 pastoral/food-security risks. Do not activate a calculator profile or use illustrative tomato yields as expected farm performance until current crop-level yields, local farm-gate prices and full water/energy/input/labour budgets are verified.",
+  "recommendation": "Retain Djibouti as research-only. Batch 46 adds the INSTAD 2015/16–2019/20 national aggregate production/area/holding series, USDA FAS October 2026 import-market context, FAOSTAT aggregate cereal-yield indicator, FEWS NET weekly price-data/API route and secondary historical WFP/HDX market coverage. Crop-specific regional yields, current producer prices and farmer-paid costs remain unverified; do not activate.",
   "administrative_geography": {
     "source": "Government of Djibouti, Regions",
     "source_url": "https://www.egouv.dj/page/regions",
@@ -240,5 +328,5 @@
     "separate_city_status": "Djibouti City has a special statutory status and is administered separately; it is not a sixth decentralised region.",
     "calculator_selector_note": "Use the five regional collectivities as the first-level selector. Keep Djibouti City distinct rather than mixing its three communes into the regional list."
   },
-  "audit_update": "Batch 21: official five-region administrative geography verified and added to the calculator region lookup. No calculator values or active profiles were changed."
+  "audit_update": "Batch 21 geography review and Batch 46 evidence refresh: five decentralised regions confirmed with Djibouti City separately administered; historical aggregate crop series and current market context added; no calculator values changed."
 }
