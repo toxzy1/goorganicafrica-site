@@ -334,5 +334,88 @@
     ],
     "note": "Eritrea's first-level administrative units are six zobas (regions). The cited legal source also describes lower sub-zoba and village/area administration levels; do not mix these lower units into the first-level selector."
   },
-  "audit_update": "Batch 22 audit: verified six zoba regions and added them to the calculator region lookup. The matrix now distinguishes historical national area/output and combined regional horticulture evidence from crop-specific yield, wholesale from farmgate prices, and seasonal forecasts from final harvest data. Eritrea remains research-only; no active calculator profile or formula was changed."
+  "audit_update": "Batch 22 audit: verified six zoba regions and added them to the calculator region lookup. The matrix now distinguishes historical national area/output and combined regional horticulture evidence from crop-specific yield, wholesale from farmgate prices, and seasonal forecasts from final harvest data. Eritrea remains research-only; no active calculator profile or formula was changed.",
+  "supplemental_market_crosschecks_2026_11_03": {
+    "status": "reference_only_not_calculator_farmgate_data",
+    "notes": [
+      "Selina Wamucii's October/September/November 2026 country price pages provide estimated retail and wholesale ranges around Asmara and Mitsiwa for selected commodities. They are market-level estimates, not verified producer/farmgate quotations, and do not identify producing region, grade, season or transaction date beyond the page's month label.",
+      "Do not map these figures into recommended farmgate price fields. Retain only as plausibility checks pending official market series or direct producer quotations."
+    ],
+    "observations": [
+      {
+        "commodity": "tomato",
+        "reference_month": "2026-10",
+        "retail_ern_per_kg": {
+          "low": 7.14,
+          "high": 35.71
+        },
+        "wholesale_usd_per_kg": {
+          "low": 0.33,
+          "high": 1.67
+        },
+        "market_locations": [
+          "Asmara",
+          "Mitsiwa"
+        ],
+        "source_url": "https://www.selinawamucii.com/insights/prices/eritrea/tomatoes/"
+      },
+      {
+        "commodity": "potato",
+        "reference_month": "2026-10",
+        "retail_ern_per_kg": {
+          "low": 10.95,
+          "high": 18.35
+        },
+        "wholesale_usd_per_kg": {
+          "low": 0.51,
+          "high": 0.86
+        },
+        "market_locations": [
+          "Asmara",
+          "Mitsiwa"
+        ],
+        "source_url": "https://www.selinawamucii.com/insights/prices/eritrea/potatoes/"
+      },
+      {
+        "commodity": "onion",
+        "reference_month": "2026-10",
+        "retail_ern_per_kg": {
+          "low": 10.19,
+          "high": 33.49
+        },
+        "wholesale_usd_per_kg": {
+          "low": 0.48,
+          "high": 1.56
+        },
+        "market_locations": [
+          "Asmara",
+          "Mitsiwa"
+        ],
+        "source_url": "https://www.selinawamucii.com/insights/prices/eritrea/onions/"
+      },
+      {
+        "commodity": "maize",
+        "reference_month": "2026-09",
+        "retail_ern_per_kg": {
+          "low": 4.74,
+          "high": 9.62
+        },
+        "wholesale_usd_per_kg": {
+          "low": 0.22,
+          "high": 0.45
+        },
+        "market_locations": [
+          "Asmara",
+          "Mitsiwa"
+        ],
+        "source_url": "https://www.selinawamucii.com/insights/prices/eritrea/maize/"
+      }
+    ]
+  },
+  "currency_exchange_note_2026_11_03": {
+    "official_peg_ern_per_usd": 15,
+    "source_url": "https://bti-project.org/en/reports/country-report/ERI",
+    "corroborating_source_url": "https://iarpa.org/international/factbook/eritrea/",
+    "caveat": "The official peg is not proof of accessible foreign exchange or a market-clearing conversion rate. Preserve ERN as the calculator's domestic currency; do not use this peg to imply that wholesale USD estimates can be converted into actual farmgate quotations."
+  }
 }
