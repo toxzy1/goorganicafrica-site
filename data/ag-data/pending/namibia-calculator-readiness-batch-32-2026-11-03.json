@@ -1,0 +1,59 @@
+{
+  "title": "Namibia calculator readiness research — Batch 32",
+  "batch": 32,
+  "country_code": "NA",
+  "country_name": "Namibia",
+  "completed_on": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "calculator_status": "not_active",
+  "executive_summary": "Reviewed Namibia's NAB 2024/25 annual report and FAO's 28 August 2026 outlook; added distinction between six agronomic production zones and 14 administrative regions. Crop-specific final outputs, region crosswalk, farmer-paid input costs, enterprise budgets and calculator tests remain incomplete.",
+  "sources": [
+    {
+      "publisher": "Namibian Agronomic Board",
+      "date": "2026-02",
+      "url": "https://www.nab.com.na/wp-content/uploads/2026/02/WEB-ANNUAL-REPORT.pdf",
+      "use": "2024/25 marketed grain volumes by six zones, selected zone-level yields, annual floor-price averages."
+    },
+    {
+      "publisher": "FAO GIEWS",
+      "date": "2026-08-28",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=NAM&lang=en",
+      "use": "2026 aggregate cereal estimate 155,000 tonnes; commercial share nearly 80%; communal cereal output below average; improved livestock body conditions; Zambezi locust/flood losses."
+    },
+    {
+      "publisher": "Namibia Ministry of Urban and Rural Development",
+      "date": "accessed 2026-11-03",
+      "url": "https://murd.gov.na/en/sub-national-governments",
+      "use": "Official list of 14 regional councils."
+    }
+  ],
+  "administrative_regions": [
+    "Erongo",
+    "Hardap",
+    "Karas",
+    "Kavango East",
+    "Kavango West",
+    "Khomas",
+    "Kunene",
+    "Ohangwena",
+    "Omaheke",
+    "Omusati",
+    "Oshana",
+    "Oshikoto",
+    "Otjozondjupa",
+    "Zambezi"
+  ],
+  "safeguards": [
+    "NAB agronomic zones are not administrative regions.",
+    "Marketed grain volumes are not total production or yield.",
+    "Annual floor-price averages are not dated farm-gate transaction prices.",
+    "FAO aggregate cereal production is not apportioned among individual crops.",
+    "Namibia remains directory-only; original 10 active countries are not changed."
+  ],
+  "remaining_work": [
+    "Extract NSA 2026 agriculture bulletin tables and final 2025/26 census outputs.",
+    "Verify NAB zone-level yield observations and map agronomic zones to administrative regions.",
+    "Obtain current dated producer prices and farmer-paid input costs by region and production system.",
+    "Build representative irrigated and rainfed budgets and calculator test cases."
+  ]
+}
