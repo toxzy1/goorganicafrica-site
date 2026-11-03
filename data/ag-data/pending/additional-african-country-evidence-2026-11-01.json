@@ -1773,7 +1773,7 @@
     {
       "country_code": "NA",
       "country_name": "Namibia",
-      "evidence_status": "official_NAB_2024_25_zone_marketing_and_yield_data_plus_2026_FAO_cereal_outlook_added_14_administrative_regions_verified_enterprise_costs_and_final_crop_outputs_pending",
+      "evidence_status": "official_NAB_2026_mahangu_grade1_farmgate_floor_price_and_standardized_rainfed_cost_schedule_added_2026_FAO_outlook_and_14_regions_verified_but_crop_region_yield_matrix_and_multi_enterprise_budgets_pending",
       "sources": [
         {
           "title": "White Maize Production Forecast Report, Harvesting/Marketing Season 2025",
@@ -2320,6 +2320,66 @@
             "Commercial and communal production systems differ.",
             "Distinguish producer prices from import parity and retail prices."
           ]
+        },
+        {
+          "title": "Pearl Millet (Mahangu) Grain Floor Price for 2026 Marketing Season",
+          "publisher": "Namibian Agronomic Board",
+          "url": "https://www.nab.com.na/wp-content/uploads/2026/06/Mahangu-floor-price-2026-notice-singed.pdf",
+          "publication_date": "2026-06-05",
+          "reference_period": "2026 marketing season, commencing 1 June 2026",
+          "status": "official_grade_specific_farmgate_floor_price_and_itemized_rainfed_cost_schedule",
+          "observations": [
+            {
+              "commodity": "pearl millet/mahangu",
+              "price_nad_per_kg": 7.87407,
+              "price_nad_per_mt": 7874.07,
+              "market_level": "farm gate/collection centre",
+              "grade": "Grade 1",
+              "reference_year": 2026,
+              "status": "Official minimum price paid by millers; producer levy N$115.96/tonne and producer transport share N$292.65/tonne already deducted; no further transport deduction permitted."
+            },
+            {
+              "commodity": "pearl millet/mahangu",
+              "price_nad_per_kg": 8.16672,
+              "price_nad_per_mt": 8166.72,
+              "market_level": "mill door",
+              "grade": "Grade 1",
+              "reference_year": 2026,
+              "status": "Official minimum mill-door price; producer levy already deducted."
+            },
+            {
+              "commodity": "pearl millet/mahangu",
+              "cost_nad_per_ha": 8917.07,
+              "production_system": "rain-fed communal farmer benchmark",
+              "reference_year": 2026,
+              "status": "NAB annexure total production cost per hectare including communal farmer interest; agreed yield basis 1 tonne/ha. Standardized benchmark, not a representative farm-specific budget."
+            },
+            {
+              "commodity": "pearl millet/mahangu",
+              "input_costs_nad_per_ha": {
+                "seed": 116.4,
+                "fertilizer": 2595.21,
+                "equipment_diesel_maintenance_depreciation": 1068.98,
+                "labour": 4331.04,
+                "transport_to_mill_or_silo": 585.3,
+                "communal_farmer_interest": 220.14
+              },
+              "reference_year": 2026,
+              "status": "Items transcribed from NAB annexure; labour subtotal and aggregate figures should be reconciled against the original annexure before calculator use."
+            },
+            {
+              "commodity": "pearl millet/mahangu",
+              "commercial_production_cost_nad_per_tonne": 8282.68,
+              "reference_year": 2026,
+              "status": "NAB commercial production-cost basis for 2025/26 planting season used in the levy/floor-price calculation; not interchangeable with communal rain-fed per-hectare cost."
+            }
+          ],
+          "quality_notes": [
+            "The 2026 price is specific to Grade 1 mahangu grain and the 2026 marketing season; it is not a general price for all grains or all grades.",
+            "Farm-gate/collection-centre price already deducts the producer levy and producer transport share; no further transport deduction is allowed under the notice.",
+            "The annexure's cost schedule is a standardized rain-fed mahangu benchmark, not a complete regional farm budget. Its itemized cost arithmetic requires a careful table reconciliation before use.",
+            "The agreed yield basis in the floor-price annexure is 1 tonne per hectare; do not generalize it as a measured national or regional yield."
+          ]
         }
       ],
       "priority_commodities": [
@@ -2335,15 +2395,16 @@
         "pig"
       ],
       "remaining_gaps": [
-        "Extract NSA 2026 agriculture bulletin numerical tables and final 2025/26 Census of Agriculture results.",
+        "Extract NSA 2026 quarterly agriculture bulletin numerical tables and final 2025/26 Census of Agriculture results.",
         "Obtain final 2026 crop-specific production and harvested area for maize, pearl millet, sorghum and wheat, separating commercial and communal systems.",
-        "Verify the NAB zone-level yield table and unusually low Zambezi observation against original data.",
-        "Build a documented crosswalk between six NAB agronomic zones and 14 administrative regions.",
-        "Obtain current dated grade-specific producer prices and farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, energy, water and transport costs by region.",
-        "Obtain regional livestock liveweight, sale-price, feed, veterinary and mortality data.",
-        "Build representative irrigated and rainfed enterprise budgets before calculator integration."
+        "Verify NAB zone-level yield observations, especially the unusually low Zambezi value, against original tables and source sample definitions.",
+        "Build and document a defensible crosswalk between six NAB agronomic production zones and the 14 administrative regions; do not equate the geographies.",
+        "Obtain current dated grade-specific producer prices for white maize, wheat, horticulture and livestock, distinguishing farm-gate from mill-door, auction, wholesale and retail prices.",
+        "Use the 2026 mahangu notice as a single-crop cost benchmark only; obtain current farmer-paid input quotations and regional cost schedules for the other calculator commodities.",
+        "Obtain regional livestock liveweight, sale-price, feed, veterinary, mortality and representative enterprise budget data.",
+        "Build, map and test Namibia calculator profiles only after crop, price and cost evidence passes."
       ],
-      "extraction_status": "NAB's 2024/25 annual report adds six-zone marketed grain volumes, selected zone-level yield observations and annual floor-price averages. These agronomic zones are not administrative regions. FAO's August 2026 brief estimates 155,000 MT aggregate cereal production; communal output remains below average and Zambezi had localized pest/flood losses. No complete regional crop budgets or current farmer-paid cost schedules are available; no calculator values are activated."
+      "extraction_status": "Batch 32 adds the NAB 5 June 2026 Grade 1 mahangu floor-price notice: N$7,874.07/tonne (N$7.87407/kg) farm-gate/collection-centre and N$8,166.72/tonne mill-door. The annexure includes a standardized rain-fed mahangu production-cost schedule and 1 t/ha agreed price-calculation yield basis; this is not a measured national yield or multi-crop budget. FAO GIEWS (28 Aug 2026) estimates 155,000 t aggregate cereal output, nearly 40% above the previous five-year average, with commercial-sector share near 80%; communal cereal output remains below average and Zambezi suffered locust/flood losses. No Namibia calculator values are activated."
     },
     {
       "country_code": "MZ",
