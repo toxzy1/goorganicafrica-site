@@ -1,0 +1,107 @@
+{
+  "title": "Mozambique calculator readiness research — Batch 31",
+  "batch": 31,
+  "country_code": "MZ",
+  "country_name": "Mozambique",
+  "completed_on": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "calculator_status": "not_active",
+  "executive_summary": "Added official MAAP 2025/26 campaign plan and flood monitoring snapshot, recorded INE's 2025 agriculture-indicators publication, and added Mozambique's 11 provincial-level selector entries. Existing 2024 crop production totals remain national output-only. Mozambique is not calculator-ready because matched crop-by-province harvested area/yield, verified producer-level prices, farmer-paid input costs and enterprise budgets are incomplete.",
+  "sources": [
+    {
+      "publisher": "MAAP",
+      "date": "2026-01-09",
+      "url": "https://www.agricultura.gov.mz/sector-agrario-mantem-perspectivas-de-boa-producao-na-campanha-2025-26/",
+      "use": "2025/26 campaign plans: 7.8m ha planned, 3.4m tonnes cereals, 0.93m tonnes legumes, 10.2m tonnes roots/tubers, 0.4m tonnes oilseeds and 2.1m tonnes horticulture; January flood snapshot."
+    },
+    {
+      "publisher": "INE Mozambique",
+      "date": "2026-08-31",
+      "url": "https://www.ine.gov.mz/web/guest/d/indicadores-basicos-de-agricultura-e-alimentacao-2025",
+      "use": "Official 2025 agriculture and food indicators publication identified; PDF extraction still required."
+    },
+    {
+      "publisher": "INE Mozambique",
+      "date": "2025",
+      "url": "https://ine.gov.mz/documents/20119/366649/ANUARIO%20ESTAT%C3%8DSTICO_%202024.pdf/b138faa5-ff0f-839c-6bd8-0c234c1b7a9b?download=true&t=1760443453700&version=1.0",
+      "use": "2020–2024 national crop production totals; no crop-by-province yield admitted."
+    },
+    {
+      "publisher": "MAAP / SIMA",
+      "date": "accessed 2026-11-03",
+      "url": "https://www.agricultura.gov.mz/sima/",
+      "use": "Weekly producer, wholesale and retail price collection methodology; actual recent bulletins/data extract still required."
+    },
+    {
+      "publisher": "Instituto de Cereais de Moçambique",
+      "date": "accessed 2026-11-03",
+      "url": "https://icm.gov.mz/",
+      "use": "Provincial cereal reference-price portal; exact market and transaction levels must be verified."
+    },
+    {
+      "publisher": "INE / MAAP",
+      "date": "2023/24",
+      "url": "https://www.ine.gov.mz/web/guest/b/divulgacao-dos-resultados-finais-do-iii-censo-agro-pecuario-cap-2023-2024-?_com_liferay_blogs_web_portlet_BlogsPortlet_cur=4&_com_liferay_blogs_web_portlet_BlogsPortlet_delta=4&_com_liferay_blogs_web_portlet_BlogsPortlet_mvcRenderCommandName=%2Fblogs%2Fview&assetEntryId=433373&p_p_id=com_liferay_blogs_web_portlet_BlogsPortlet&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal&p_r_p_resetCur=false",
+      "use": "Final Agricultural and Livestock Census announcement; headline holdings/area/herd only pending full Excel extraction."
+    }
+  ],
+  "provincial_coverage": {
+    "count": 11,
+    "provinces": [
+      "Cabo Delgado",
+      "Gaza",
+      "Inhambane",
+      "Manica",
+      "Maputo City",
+      "Maputo Province",
+      "Nampula",
+      "Niassa",
+      "Sofala",
+      "Tete",
+      "Zambézia"
+    ],
+    "selector_updated": true,
+    "note": "Includes Maputo City separately from Maputo Province; district-level mapping remains a separate validation task."
+  },
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "partial",
+    "seed_and_planting_material_costs": "unavailable",
+    "fertilizer_and_soil_amendment_costs": "unavailable",
+    "crop_protection_costs": "unavailable",
+    "irrigation_water_and_energy_costs": "partial",
+    "labour_rates_and_operations": "unavailable",
+    "machinery_and_land_preparation_costs": "unavailable",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_exchange_rate_method": "pass",
+    "source_provenance_and_observation_date": "pass",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "safeguards": [
+    "Campaign plans are not represented as final actual production.",
+    "Flood impacts are retained by affected province, not applied as a uniform national yield penalty.",
+    "National production totals are not converted into yields without matching crop-specific harvested area.",
+    "ICM/SIMA market prices are not labelled farm-gate without transaction-level confirmation.",
+    "Aggregate beans and local chicken statistics are not mapped to cowpea or commercial poultry enterprise profiles.",
+    "Original 10 active calculator countries remain unchanged; Mozambique stays directory-only."
+  ],
+  "remaining_work": [
+    "Download and extract the INE 2025 Basic Indicators of Agriculture and Food PDF; reconcile it with the 2024 Statistical Yearbook production series.",
+    "Extract crop-specific cultivated and harvested area, production and yield tables from the 2023 IAI report and final CAP 2023/2024 Excel tables at provincial and district level.",
+    "Check the IAI 2023 exclusion of nine insecure Cabo Delgado districts; document coverage gaps and do not imply full provincial survey coverage.",
+    "Separate paddy rice from milled rice and distinguish rainfed lowland, irrigated and upland systems.",
+    "Separate feijão nhemba (cowpea), feijão manteiga, feijão bóer and other beans; do not use aggregate beans output for the Beans (Cowpea) calculator profile.",
+    "Obtain original dated SIMA weekly Quente-Quente bulletins and ICM provincial cereal quotations; preserve producer, wholesale and retail transaction levels separately.",
+    "Obtain dated producer prices for horticultural commodities by province, grade and unit.",
+    "Obtain farmer-paid seed, fertilizer, pesticide, labour, machinery, irrigation, pumping, land preparation, transport and post-harvest costs by province and production system.",
+    "Obtain species-specific livestock output, liveweight, sale price, feed, veterinary, mortality and housing cost data; distinguish local chickens from commercial broilers and layers.",
+    "Resolve unusual annual administrative production values against IAI and CAP survey outputs before using them as yield assumptions.",
+    "Do not activate country-specific calculator profiles until matched crop area/production definitions, regional yields, prices and enterprise budgets have been independently checked."
+  ],
+  "commit_shas": {
+    "evidence": "6c03867f00b16472ff915e8523dc58d93385ed6f",
+    "matrix": "83b87b62f3da23d018f276d93e38c2a49650a74d",
+    "register": "375a71c94e527435ca7bfb0429cb87b9f82af99a",
+    "regions": "c6e4d8b90f865b9f7368f4562a0037000fa001e2"
+  }
+}
