@@ -512,20 +512,20 @@
       "code": "CD",
       "name": "Democratic Republic of the Congo",
       "evidence_file": "data/ag-data/pending/democratic-republic-of-congo-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "FAO_2026_seasonal_outlook_FAOSTAT_2024_aggregate_cereal_yield_USDA_2024_25_and_2025_26_marketing_year_estimates_and_AgA_2024_maize_forecast_recorded_province_level_prices_and_farm_budgets_missing",
+      "existing_research_note": "Batch 44 2026-11-03: FAO GIEWS 2026 season and conflict/price context; World Bank RTFP 215 markets through 2026-10-01; Ministry of Interior confirms 26 provinces; EU ASAP subnational crop monitoring added; USDA FAS estimates and AAgWa model forecast require source/year reconciliation. Province crop yields, farmgate prices and budgets remain incomplete.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_USDA_FAS_marketing_year_estimates_and_AAgWa_modelled_maize_forecast_official_province_crop_area_production_yield_series_not_extracted_or_reconciled",
+        "dated_local_farmgate_prices_and_units": "partial_World_Bank_RTFP_215_markets_to_2026_10_01_market_estimates_not_farmgate_producer_price_records_pending",
+        "seed_and_planting_material_costs": "blocked_no_dated_province_crop_specific_farmer_paid_seed_prices",
+        "fertilizer_and_soil_amendment_costs": "blocked_no_current_farmer_paid_unit_price_and_application_rate_schedule",
         "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "blocked_no_regional_farm_paid_water_energy_cost_schedule",
+        "labour_rates_and_operations": "partial_FAO_reports_wage_and_food_price_pressure_but_no_crop_operation_labour_budget",
         "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_province_crop_enterprise_budgets",
+        "currency_and_exchange_rate_method": "partial_CDF_currency_known_current_exchange_rate_method_price_normalisation_and_rounding_tests_pending",
+        "source_provenance_and_observation_date": "improved_FAO_2026_06_24_World_Bank_2026_10_05_Ministry_of_Interior_and_EU_ASAP_sources_linked",
         "calculator_mapping_and_test_cases": "not_yet_audited"
       },
       "blockers": [
@@ -533,9 +533,13 @@
         "Resolve inconsistent definitions, units, seasons and reporting years.",
         "Obtain dated farmgate prices and farmer-facing input quotations.",
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Map only validated values to the existing calculator schema and add test cases.",
+        "World Bank RTFP estimates combine observed and machine-learning-estimated market prices and are not automatically farmgate prices.",
+        "Official crop-specific province-level area, production and yield tables have not been extracted and reconciled to USDA marketing-year estimates.",
+        "No dated province-level farmgate price, input-cost, labour, irrigation, machinery or transport schedules.",
+        "No regional enterprise budgets or calculator regression cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract the October 2026 World Bank 215-market CSV, then reconcile FAOSTAT/INS crop-specific area-production-yield with USDA FAS marketing-year estimates and obtain dated producer prices and farmer-paid input quotations by province."
     },
     {
       "code": "CI",
