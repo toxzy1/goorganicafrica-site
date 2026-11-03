@@ -1,0 +1,138 @@
+{
+  "title": "GoOrganicAfrica Senegal calculator readiness research — Batch 34",
+  "batch": 34,
+  "country_code": "SN",
+  "country_name": "Senegal",
+  "completed_on": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_update_only_not_calculator_ready",
+  "executive_summary": "Added a 2025 SODAGRI campaign table extraction for selected crops in five intervention regions and refreshed the EAA 2024/25 data-access and 2026/27 marketing-policy findings. Senegal remains directory-only; national survey extraction, farmgate prices, input-cost distributions and enterprise budgets are not yet complete.",
+  "geography": {
+    "administrative_regions": 14,
+    "regions": [
+      "Dakar",
+      "Diourbel",
+      "Fatick",
+      "Kaffrine",
+      "Kaolack",
+      "Kédougou",
+      "Kolda",
+      "Louga",
+      "Matam",
+      "Saint-Louis",
+      "Sédhiou",
+      "Tambacounda",
+      "Thiès",
+      "Ziguinchor"
+    ],
+    "source": "Existing official Senegal region selector; EAA 2024/25 covers all 14 regions and 45 departments. Anonymised microdata retains region but replaces department with agroecological zone."
+  },
+  "extracted_campaign_2025": {
+    "scope": "SODAGRI intervention area only: Kolda, Sédhiou, Ziguinchor, Tambacounda and Kédougou",
+    "units": "area ha; production t; ratio t/ha calculated as production divided by area",
+    "totals": {
+      "rice": {
+        "area_ha": 179912.31,
+        "production_t": 567435.58,
+        "calculated_ratio_t_ha": 3.154
+      },
+      "maize": {
+        "area_ha": 18880.29,
+        "production_t": 47810.68,
+        "calculated_ratio_t_ha": 2.532
+      },
+      "fonio": {
+        "area_ha": 1259.06,
+        "production_t": 709.12,
+        "calculated_ratio_t_ha": 0.563
+      },
+      "sesame": {
+        "area_ha": 462.5,
+        "production_t": 322.19,
+        "calculated_ratio_t_ha": 0.697
+      },
+      "vegetables": {
+        "area_ha": 338.42,
+        "production_t": 2654.49,
+        "calculated_ratio_t_ha": 7.843
+      },
+      "banana": {
+        "area_ha": 2596,
+        "production_t": 108378,
+        "calculated_ratio_t_ha": 41.747
+      }
+    },
+    "caveat": "These are five-region SODAGRI intervention totals, not national totals. Ratios are calculated from the published table and not necessarily survey yield observations or comparable production systems."
+  },
+  "market_and_policy": {
+    "date": "2026-10-22",
+    "finding": "2026/27 peanut producer price was not yet fixed in the cited official decision; a committee was assigned to recommend an annual price. Cotton marketing opens 15 November 2026; peanut collection opens late November.",
+    "non_price_support": "Government decision includes 50 FCFA/kg support to rice mills; it is not a farmgate price paid to growers."
+  },
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "blocked",
+    "seed_and_planting_material_costs": "partial_fields_confirmed_values_not_extracted",
+    "fertilizer_and_soil_amendment_costs": "partial_fields_confirmed_values_not_extracted",
+    "crop_protection_costs": "partial_fields_confirmed_values_not_extracted",
+    "irrigation_water_and_energy_costs": "unavailable",
+    "labour_rates_and_operations": "partial_fields_confirmed_values_not_extracted",
+    "machinery_and_land_preparation_costs": "unavailable",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_exchange_rate_method": "partial",
+    "source_provenance_and_observation_date": "partial",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "safeguards": [
+    "Senegal remains directory-only and inactive.",
+    "Do not extrapolate SODAGRI five-region totals to all 14 regions.",
+    "Do not call calculated production/area ratios official survey yields.",
+    "Do not use rice-mill support as a farmgate price.",
+    "Do not enter a 2026/27 peanut producer price before official publication.",
+    "Respect DAPSA microdata confidentiality and authorisation requirements.",
+    "No active calculator profiles or formulas changed."
+  ],
+  "sources": [
+    {
+      "title": "SODAGRI — Statistiques Agricoles 2025",
+      "publisher": "SODAGRI",
+      "url": "https://sodagri.sn/statistiques",
+      "use": "Regional crop area and production table for five SODAGRI intervention regions."
+    },
+    {
+      "title": "Senegal EAA 2024-2025 catalogue",
+      "publisher": "ANADS/ANSD and DAPSA",
+      "url": "https://anads.ansd.sn/index.php/catalog/351",
+      "use": "Survey metadata, coverage of 14 regions and 45 departments, production, input and labour themes; microdata access and confidentiality conditions."
+    },
+    {
+      "title": "FAO — Senegal advances agricultural statistics with release of EAA 2024-25 data",
+      "publisher": "FAO",
+      "publication_date": "2026-06-19",
+      "url": "https://www.fao.org/in-action/agrisurvey/news/news-detail/senegal-advances-agricultural-statistics-with-release-of-eaa-2024-25-data/en",
+      "use": "Confirms 2024/25 ILP module includes input use/costs, labour, horticulture, livestock and fisheries."
+    },
+    {
+      "title": "Government of Senegal — Commercialisation campaign 2026-2027",
+      "publisher": "Primature",
+      "publication_date": "2026-10-22",
+      "url": "https://www.primature.sn/publications/actualites/campagne-de-commercialisation-des-produits-agricoles-2026-2027",
+      "use": "Current official marketing arrangements; peanut producer price not yet fixed; dates and support measures."
+    },
+    {
+      "title": "Government of Senegal — Agricultural production campaign 2025",
+      "publisher": "Primature",
+      "publication_date": "2025-04-15",
+      "url": "https://www.primature.sn/publications/actualites/conseil-interministeriel-sur-la-campagne-de-production-agricole-2025",
+      "use": "Context on input supply, seed availability, mechanisation, irrigation and commodity value-chain constraints."
+    }
+  ],
+  "remaining_work": [
+    "Extract the EAA 2024/25 public aggregate regional tables and align survey weights, units and local measurement conversions.",
+    "Obtain farmgate prices by crop, grade, market, date and region; update the 2026/27 groundnut price only when formally published.",
+    "Extract farmer-paid seed, fertilizer, crop-protection and labour costs from authorised aggregate data.",
+    "Obtain machinery, irrigation, energy, land, transport and livestock enterprise cost data.",
+    "Build regional enterprise budgets by production system, map the 17 supported commodities and create regression test cases."
+  ],
+  "next_batch": "Batch 35: inspect the batch log and choose the next unreviewed directory-only country; do not duplicate prior country reviews."
+}
