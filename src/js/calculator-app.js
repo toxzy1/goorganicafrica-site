@@ -523,7 +523,7 @@
     if (isRecurring) {
       refBox.innerHTML = T("calc", "referenceOutput", {low: cd.output_low, high: cd.output_high, unit: T("units","eggsPerBirdYear"), expected: cd.output_expected, source: cd.price_source || cd.source, date: cd.as_of});
     } else {
-      refBox.innerHTML = T("calc", "referenceYield", {low: cd.yield_low, high: cd.yield_high, unit: cd.yield_unit, expected: cd.yield_expected, source: cd.source, date: cd.as_of});
+      refBox.innerHTML = T("calc", "referenceYield", {low: cd.yield_low, high: cd.yield_high, unit: cd.yield_unit, expected: cd.yield_expected, source: cd.yield_source || cd.source, date: cd.yield_as_of || cd.as_of});
     }
     root.appendChild(refBox);
 
@@ -586,7 +586,7 @@
     if (mode === "crop") {
       priceLabel = T("calc", "sellingPriceUnit", {currency: currency, unit: localizedUnit("perKg", "per kg")});
       defaultPrice = cd.price_expected;
-      refBox.innerHTML = T("calc", "referencePriceRange", {low: fmtMoney(cd.price_low, currency), high: fmtMoney(cd.price_high, currency), unit: cd.price_unit, source: cd.source, date: cd.as_of});
+      refBox.innerHTML = T("calc", "referencePriceRange", {low: fmtMoney(cd.price_low, currency), high: fmtMoney(cd.price_high, currency), unit: cd.price_unit, source: cd.price_source || cd.source, date: cd.price_as_of || cd.as_of});
     } else if (mode === "livestock_unit") {
       priceLabel = T("calc", "sellingPriceUnit", {currency: currency, unit: cd.price_unit});
       defaultPrice = cd.price_per_unit;
@@ -662,7 +662,7 @@
         unit: unitInfo.abbr,
         total: fmtMoney(scaledTotal, currency),
         source: cd.cost_source || cd.source,
-        date: cd.as_of
+        date: cd.cost_as_of || cd.as_of
       });
     } else {
       refBox.innerHTML = T("calc", "referenceTotalCost", {
