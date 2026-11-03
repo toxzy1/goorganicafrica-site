@@ -208,30 +208,32 @@
       "code": "BW",
       "name": "Botswana",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_2024_2025_cereal_area_and_total_output_sources_identified_crop_specific_yields_and_discrepant_cereal_totals_need_reconciliation",
+      "existing_research_note": "official_2025_preliminary_livestock_census_and_31_local_authority_lookup_added_2024_25_cereal_total_conflict_unresolved_crop_specific_yields_farmgate_prices_and_enterprise_costs_pending",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_official_planted_area_and_aggregate_output_only_crop_specific_harvested_area_yields_and_total_discrepancy_unresolved",
+        "dated_local_farmgate_prices_and_units": "partial_official_BAMB_price_portal_identified_but_current_grade_and_contract_price_file_not_extracted_or_verified",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
         "irrigation_water_and_energy_costs": "not_yet_audited",
         "labour_rates_and_operations": "not_yet_audited",
         "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "regional_enterprise_budget_and_gross_margin": "blocked_missing_crop_yield_price_and_cost_bundle",
+        "currency_and_exchange_rate_method": "partial_BWP_currency_identified_no_calculator_exchange_rate_or_cost_series_approved",
+        "source_provenance_and_observation_date": "partial_official_census_and_government_sources_recorded_preliminary_and_conflicting_data_flagged",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_crop_enterprise_parameters"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Reconcile the official 2024/25 cereal totals of 117,228.42 MT and 137,876.84 MT using the original Ministry crop assessment and scope definitions.",
+        "Extract crop-specific harvested area and production/yield by season, district and production system; planted area and national cereal totals are insufficient.",
+        "Download the current official BAMB producer/contract price files and capture grade, period, unit, delivery terms and producer eligibility.",
+        "Obtain farmer-paid seed, fertilizer, crop protection, labour, machinery, water/energy, transport and land-preparation costs.",
+        "Obtain final 2025 Agricultural Census livestock tables and livestock enterprise prices/costs; preliminary population counts alone do not support livestock budgets.",
+        "Harmonise council, administrative district and agricultural census district geography before treating regional budgets as comparable.",
+        "Do not map values into the calculator or activate Botswana until validated regional enterprise budgets and test cases pass."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Reconcile the cereal totals and extract the official BAMB price file; then obtain the final census district tables and farmer-facing cost schedules."
     },
     {
       "code": "BF",
