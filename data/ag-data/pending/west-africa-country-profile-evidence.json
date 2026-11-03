@@ -1187,7 +1187,7 @@
     {
       "country_code": "CI",
       "country_name": "Côte d'Ivoire",
-      "evidence_status": "official_2024_crop_statistics_identified_yield_and_price_table_extraction_pending",
+      "evidence_status": "Batch_45_2026_11_03_EAA_2024_25_report_extracted_regional_crop_outputs_and_input_application_quantities_added_UEMOA_SIAR_producer_price_route_confirmed_matched_harvested_area_yields_prices_and_farm_budgets_pending",
       "survey": {
         "title": "Agriculture vivrière and industrial/export agriculture statistical series",
         "publisher": "Portail d'Informations et de Promotion de l'Économie de Côte d'Ivoire; source series attributed to MEMINADERPV/DSDI and sector bodies",
@@ -1265,6 +1265,18 @@
             "url": "https://siar.uemoa.int/marches-agricoles.php?secteur=agr",
             "status": "market_price_series_discovery_source",
             "note": "Extract date-stamped producer and consumer prices by market, commodity, grade, currency and unit."
+          },
+          {
+            "title": "UEMOA SIAR — Regional Agricultural Information System",
+            "url": "https://siar.uemoa.int/marches-agricoles.php?secteur=agr",
+            "status": "producer_price_indicators_and_consumer_price_indicators_listed_2010_to_2026_country_selector_includes_Cote_dIvoire_actual_dated_values_not_yet_exported",
+            "note": "Producer-price indicators are available for maize, local rice, millet, sorghum, cowpea, groundnut, yam, sweet potato and cassava. Export country/month/grade/unit records before use."
+          },
+          {
+            "title": "OCPV-derived weekly market price listings",
+            "url": "https://www.pamdagro.ci/index.php/ird-ci",
+            "status": "2026_week_09_market_price_lead_not_current_november_price",
+            "note": "Listings show selected market-level prices for Abidjan, San-Pédro, Bouaké, Yamoussoukro and Korhogo. Keep consumer/market price separate from producer price."
           }
         ],
         "remaining_gaps": [
@@ -1272,9 +1284,266 @@
           "validate the 2024 rice yield and historical 2019 rice production anomaly",
           "obtain farm-gate prices and market series by region",
           "obtain seed, fertilizer, crop protection, labour, mechanization, irrigation and transport costs",
-          "obtain livestock production and farm-budget observations"
+          "obtain livestock production and farm-budget observations",
+          "Extract EAA regional crop production and matching harvested area tables; survey household-only scope must be kept separate from DSDI enterprise-inclusive production.",
+          "Export UEMOA SIAR 2026 producer-price observations for Côte d'Ivoire and validate actual dates, market, crop, grade and units.",
+          "Use EAA fertilizer/pesticide quantities only as application-rate evidence; farmer-paid product prices and full costs remain missing."
         ],
-        "extraction_status": "Official annual production series through 2024 and ANSTAT 2023 yearbook identified. Values are national point observations only; no complete calculator budgets or regional low/expected/high ranges have been established."
+        "extraction_status": "Official annual production series through 2024 and ANSTAT 2023 yearbook identified. Values are national point observations only; no complete calculator budgets or regional low/expected/high ranges have been established.",
+        "latest_annual_survey": {
+          "title": "Rapport d'analyse des résultats de l'Enquête Agricole Annuelle 2024-2025",
+          "publisher": "Ministry of Agriculture / ANStat / PHAS / FAO 50x2030",
+          "url": "https://agriculture.gouv.ci/uploads/publications/177556586029.pdf",
+          "publication_date": "2026-01",
+          "public_release_date": "2026-04-29",
+          "reference_period": "2024 crop campaign / 2024-2025 survey",
+          "population_scope": "Agricultural households; crop-production data exclude agricultural enterprises; highly urbanised District of Abidjan excluded from survey field",
+          "observations": [
+            {
+              "crop": "maize",
+              "production_mt": 1829263,
+              "reference_year": 2024,
+              "source_table": "Table 32",
+              "status": "national household crop output; matched harvested area required"
+            },
+            {
+              "crop": "rice/paddy",
+              "production_mt": 1813627,
+              "reference_year": 2024,
+              "source_table": "Table 32",
+              "breakdown_mt": {
+                "irrigated": 80355,
+                "lowland_rainfed": 1162864,
+                "upland_rainfed": 570408
+              },
+              "status": "keep production systems separate; matched harvested area required"
+            },
+            {
+              "crop": "cassava",
+              "production_mt": 7392519,
+              "reference_year": 2024,
+              "source_table": "Table 32"
+            },
+            {
+              "crop": "beans",
+              "production_mt": 57060,
+              "reference_year": 2024,
+              "source_table": "Table 32"
+            },
+            {
+              "crop": "soybean",
+              "production_mt": 9631,
+              "reference_year": 2024,
+              "source_table": "Table 32"
+            },
+            {
+              "crop": "sweet_potato",
+              "production_mt": 94690,
+              "reference_year": 2024,
+              "source_table": "Table 32"
+            },
+            {
+              "crop": "plantain",
+              "production_mt": 2270901,
+              "reference_year": 2024,
+              "source_table": "Table 32"
+            },
+            {
+              "crop": "tomato",
+              "production_mt": 478007,
+              "reference_year": 2024,
+              "source_table": "Table 34"
+            },
+            {
+              "crop": "piment",
+              "production_mt": 142119,
+              "reference_year": 2024,
+              "source_table": "Table 34",
+              "status": "cultivar identity must be checked before mapping to hot pepper"
+            },
+            {
+              "crop": "cucumber",
+              "production_mt": 43028,
+              "reference_year": 2024,
+              "source_table": "Table 34"
+            }
+          ],
+          "regional_production_examples": [
+            {
+              "crop": "maize",
+              "regions": [
+                {
+                  "name": "Poro",
+                  "production_mt": 345400
+                },
+                {
+                  "name": "San-Pédro",
+                  "production_mt": 315012
+                },
+                {
+                  "name": "Bagoué",
+                  "production_mt": 279001
+                }
+              ]
+            },
+            {
+              "crop": "rice/paddy",
+              "regions": [
+                {
+                  "name": "Poro",
+                  "production_mt": 303684
+                },
+                {
+                  "name": "Béré",
+                  "production_mt": 243861
+                },
+                {
+                  "name": "Cavally",
+                  "production_mt": 127326
+                }
+              ]
+            },
+            {
+              "crop": "tomato",
+              "regions": [
+                {
+                  "name": "Lôh-Djiboua",
+                  "production_mt": 317166
+                },
+                {
+                  "name": "Gontougo",
+                  "production_mt": 60459
+                },
+                {
+                  "name": "Gbêkê",
+                  "production_mt": 32910
+                }
+              ]
+            },
+            {
+              "crop": "piment",
+              "regions": [
+                {
+                  "name": "Agnéby-Tiassa",
+                  "production_mt": 57701
+                },
+                {
+                  "name": "Nawa",
+                  "production_mt": 17301
+                },
+                {
+                  "name": "Hambol",
+                  "production_mt": 5793
+                }
+              ]
+            }
+          ],
+          "input_application_quantities_per_ha": {
+            "organic_fertilizer": {
+              "maize": {
+                "solid_kg": 100.1,
+                "liquid_l": 3.4
+              },
+              "cassava": {
+                "solid_kg": 46.1,
+                "liquid_l": 4.2
+              },
+              "piment": {
+                "solid_kg": 16.4,
+                "liquid_l": 0.2
+              },
+              "tomato": {
+                "solid_kg": 49.6,
+                "liquid_l": 10.7
+              },
+              "rice_irrigated": {
+                "solid_kg": 96.4,
+                "liquid_l": null
+              },
+              "rice_lowland_rainfed": {
+                "solid_kg": 52.7,
+                "liquid_l": 4.6
+              },
+              "rice_upland_rainfed": {
+                "solid_kg": 73.3,
+                "liquid_l": 4.1
+              },
+              "beans": {
+                "solid_kg": 33.2,
+                "liquid_l": null
+              }
+            },
+            "mineral_fertilizer": {
+              "maize": {
+                "solid_kg": 86.4,
+                "liquid_l": 3.6
+              },
+              "cassava": {
+                "solid_kg": 40.6,
+                "liquid_l": 4.4
+              },
+              "piment": {
+                "solid_kg": 9.9,
+                "liquid_l": 0.5
+              },
+              "tomato": {
+                "solid_kg": 136.4,
+                "liquid_l": 8.7
+              },
+              "rice_irrigated": {
+                "solid_kg": 89.4,
+                "liquid_l": null
+              },
+              "rice_lowland_rainfed": {
+                "solid_kg": 65.3,
+                "liquid_l": 4.7
+              },
+              "rice_upland_rainfed": {
+                "solid_kg": 67.8,
+                "liquid_l": 4.5
+              },
+              "beans": {
+                "solid_kg": 26.7,
+                "liquid_l": 9.8
+              }
+            },
+            "pesticides": {
+              "maize": {
+                "solid_kg": 4,
+                "liquid_l": 3.9
+              },
+              "cassava": {
+                "solid_kg": 3.9,
+                "liquid_l": 3.7
+              },
+              "piment": {
+                "solid_kg": 0.3,
+                "liquid_l": 1
+              },
+              "tomato": {
+                "solid_kg": 11,
+                "liquid_l": 2.7
+              },
+              "rice_irrigated": {
+                "solid_kg": null,
+                "liquid_l": 4.2
+              },
+              "rice_lowland_rainfed": {
+                "solid_kg": 4.8,
+                "liquid_l": 4.8
+              },
+              "rice_upland_rainfed": {
+                "solid_kg": 4.5,
+                "liquid_l": 4.1
+              },
+              "beans": {
+                "solid_kg": 18.1,
+                "liquid_l": 4.1
+              }
+            }
+          },
+          "input_data_caveat": "Application rates are survey averages, not farmer-paid costs. Suppressed low-sample entries and true-zero/rounded-zero values must retain their original flags; do not interpret null as zero."
+        }
       }
     },
     {
