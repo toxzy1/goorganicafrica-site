@@ -3416,7 +3416,7 @@
     {
       "country_code": "DZ",
       "country_name": "Algeria",
-      "evidence_status": "official_2025_cereal_estimates_and_2026_market_retail_bulletins_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "evidence_status": "2024_general_agricultural_census_operation_verified; 2025_FAO_crop_estimates_and_2026_outlook_updated; daily_MADRP_retail_prices_and_ITGC_2024_25_crop_cost_sheets_identified; 69_wilaya_legal_reorganisation_added; regional_yields_and_farmgate_cost_values_still_pending",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: Algeria",
@@ -3648,6 +3648,202 @@
           "url": "https://help.fews.net/fde/v3/algeria-country-book",
           "status": "methodology_and_historical_data_coverage",
           "note": "Documentation identifies Ministry of Agriculture crop statistics as the national source and describes Admin-1/wilaya reporting for 2001-2019. It defines the crop year October-September, winter cereals October-July, and summer crops January-August; potato is grown in three seasons. These seasonal definitions must be preserved when matching area and output."
+        },
+        {
+          "title": "2024 General Agricultural Census (RGA 2024) — MADRP",
+          "publisher": "Ministry of Agriculture and Rural Development (MADRP)",
+          "url": "https://madr.gov.dz/rga-ar/",
+          "reference_period": "2024",
+          "status": "official_national_census_operation_and_scope",
+          "observations": [
+            {
+              "indicator": "agricultural holdings enumerated",
+              "value": 1118000,
+              "reference_date": "2024-07-14",
+              "coverage_progress_percent": 93,
+              "status": "interim fieldwork progress figure, not final census total or completed coverage"
+            }
+          ],
+          "quality_notes": [
+            "The Ministry describes RGA 2024 as the third general agricultural census after 1973 and 2001.",
+            "The census is intended to cover agricultural holdings nationwide and provide updated information on farm structure, production systems and agricultural labour.",
+            "Do not use the 1,118,000 enumerated holdings as the final count: this was an interim progress figure at 93% completion on 14 July 2024. Final crop/holding tables were not extracted in this review."
+          ]
+        },
+        {
+          "title": "Official Journal No. 25 — Law No. 26-06 on Algeria's territorial organisation",
+          "publisher": "Journal Officiel de la République Algérienne Démocratique et Populaire",
+          "publication_date": "2026-04-05",
+          "url": "https://www.joradp.dz/FTP/jo-francais/2026/F2026025.pdf",
+          "status": "primary_legal_source",
+          "observations": [
+            {
+              "indicator": "number_of_wilayas",
+              "value": 69,
+              "reference_date": "2026-04-05",
+              "status": "law establishes 69 wilayas and 1,541 communes; 11 new wilayas and their commune boundaries are set out in the law."
+            },
+            {
+              "indicator": "administrative_transition_deadline",
+              "value": "2026-12-31",
+              "status": "parent wilayas continue to manage new wilayas during installation; transfer of powers and obligations must be completed by this date."
+            }
+          ],
+          "quality_notes": [
+            "Use 69 wilayas in the geographic selector, not the former 58-wilaya list.",
+            "The law's annexed commune groupings define the boundaries of the 11 new wilayas; a full commune-level mapping should be kept for future district-level calculator coverage.",
+            "The transition deadline is 31 December 2026; local administrative handover is progressive."
+          ]
+        },
+        {
+          "title": "Installation of newly created wilayas — Ministry of Interior",
+          "publisher": "Ministry of Interior, Local Authorities and Transport",
+          "publication_date": "2026-10-04",
+          "url": "https://interieur.gov.dz/2026/10/04/ceremonie-dinstallation-de-nouveaux-walis/",
+          "status": "official_implementation_update",
+          "observations": [
+            {
+              "indicator": "new_wilaya_walis_installed",
+              "value": [
+                "El Aricha",
+                "El Abiodh Sidi Cheikh",
+                "Ksar Chellala",
+                "Ksar El Boukhari",
+                "Aïn Oussara",
+                "Bir El Ater"
+              ],
+              "reference_date": "2026-09-27/29",
+              "status": "official report lists appointments/installation for these newly promoted wilayas; not evidence that all 11 transitions are complete."
+            }
+          ],
+          "quality_notes": [
+            "The Ministry describes installation as progressive and notes the new wilayas will receive additional resources and budgets.",
+            "Keep legal geography distinct from the operational handover status during 2026."
+          ]
+        },
+        {
+          "title": "ITGC — Valued technical sheets for major crops, 2024/2025",
+          "publisher": "Institut Technique des Grandes Cultures (ITGC)",
+          "url": "https://www.itgc.dz/?p=10599",
+          "reference_period": "2024/2025",
+          "status": "official_crop_enterprise_cost_methodology_and_schedules_available_values_not_extracted",
+          "observations": [
+            {
+              "indicator": "costed_crop_groups",
+              "value": [
+                "durum wheat",
+                "soft wheat",
+                "barley",
+                "oats",
+                "triticale",
+                "lentil",
+                "chickpea",
+                "forage crops",
+                "rapeseed"
+              ],
+              "status": "official technical sheets for per-hectare production costs; schedules distinguish hired/rented machinery from owned machinery; numeric sheets not extracted into this batch."
+            }
+          ],
+          "quality_notes": [
+            "ITGC states the schedules are updated when input prices change and are based on recommended technical itineraries and current input prices.",
+            "These are model technical budgets, not necessarily observed farmer expenses; label them as technical reference budgets and preserve production-zone and machinery ownership assumptions.",
+            "The 2023/24 ITGC sheets explicitly state that cost sheets vary by production zone and whether machinery is owned or rented; 2024/25 sheets also distinguish machinery rented versus owned."
+          ]
+        },
+        {
+          "title": "MADRP daily agricultural retail price bulletin — 29 October 2026",
+          "publisher": "MADRP",
+          "url": "https://madr.gov.dz/wp-content/uploads/2026/10/prix_29_Oct_2026_MADRP.pdf",
+          "reference_date": "2026-10-29",
+          "status": "official_national_average_retail_prices_not_farmgate",
+          "observations": [
+            {
+              "commodity": "potato",
+              "price_dzd_per_kg": 91,
+              "minimum_dzd_per_kg": 86,
+              "maximum_dzd_per_kg": 96,
+              "market_level": "retail"
+            },
+            {
+              "commodity": "tomato",
+              "price_dzd_per_kg": 129,
+              "minimum_dzd_per_kg": 113,
+              "maximum_dzd_per_kg": 144,
+              "market_level": "retail"
+            },
+            {
+              "commodity": "green_pepper",
+              "price_dzd_per_kg": 135,
+              "minimum_dzd_per_kg": 122,
+              "maximum_dzd_per_kg": 147,
+              "market_level": "retail"
+            },
+            {
+              "commodity": "hot_pepper",
+              "price_dzd_per_kg": 149,
+              "minimum_dzd_per_kg": 134,
+              "maximum_dzd_per_kg": 163,
+              "market_level": "retail"
+            },
+            {
+              "commodity": "green_beans",
+              "price_dzd_per_kg": 215,
+              "minimum_dzd_per_kg": 194,
+              "maximum_dzd_per_kg": 236,
+              "market_level": "retail"
+            },
+            {
+              "commodity": "dates",
+              "price_dzd_per_kg": 457,
+              "minimum_dzd_per_kg": 335,
+              "maximum_dzd_per_kg": 579,
+              "market_level": "retail"
+            },
+            {
+              "commodity": "broiler_chicken_meat",
+              "price_dzd_per_kg": 468,
+              "minimum_dzd_per_kg": 454,
+              "maximum_dzd_per_kg": 481,
+              "market_level": "retail"
+            },
+            {
+              "commodity": "eggs",
+              "price_dzd_per_unit": 23,
+              "minimum_dzd_per_unit": 21,
+              "maximum_dzd_per_unit": 24,
+              "market_level": "retail"
+            }
+          ],
+          "quality_notes": [
+            "These are national average retail prices observed in markets, not producer/farmgate prices.",
+            "Fresh green beans are not dry cowpea; broiler carcass meat is not a live bird sale price; egg retail price is not farmgate egg price.",
+            "Do not use these retail observations as calculator selling-price inputs."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Algeria Country Brief",
+          "publisher": "FAO",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=DZA",
+          "reference_date": "2026-06-30",
+          "status": "official_international_crop_outlook",
+          "observations": [
+            {
+              "crop": "total cereals",
+              "production_mt": 5000000,
+              "reference_year": 2026,
+              "status": "FAO forecast; nearly 30 percent above average, not final output."
+            },
+            {
+              "indicator": "food_price_inflation",
+              "value_percent": 2.2,
+              "reference_period": "2026-04",
+              "status": "national annual food inflation; not a farmgate price."
+            }
+          ],
+          "quality_notes": [
+            "FAO attributes improved prospects to rainfall recovery and especially favourable conditions in northeast producing provinces including Constantine and Skikda.",
+            "FAO reports cereal import requirement forecast of 14.5 million tonnes for 2026/27; this is trade context, not domestic crop production."
+          ]
         }
       ],
       "priority_commodities": [
@@ -3675,7 +3871,18 @@
         "verify the scope and final results of the 2024 Agricultural Census; do not rely on historical 2010-2017 ministry averages as current benchmarks",
         "keep irrigated southern commercial farms separate from rainfed northern/high-plateau systems and document crop season"
       ],
-      "extraction_status": "Algeria now has current FAO 2025 crop estimates and a June 2026 cereal outlook, an official MADRP daily retail-price bulletin dated 29 October 2026, an official Ministry historical agriculture-statistics portal, and USDA independent wheat/barley area and output estimates. FAO estimates 2025 wheat at 3.0m MT, barley at 1.15m MT and oats at 86,000 MT; FAO's 2026 total-cereal forecast is 5m MT. The 29 October 2026 MADRP bulletin reports national retail prices, including potato DZD 91/kg, tomato DZD 129/kg, green pepper DZD 135/kg, hot pepper DZD 149/kg, broiler meat DZD 468/kg and eggs DZD 23 each; these are retail only, not farm-gate. Current crop-specific harvested area, local yields, producer prices and itemized enterprise budgets remain outstanding. No Algeria calculator values are admitted."
+      "extraction_status": "Algeria now has current FAO 2025 crop estimates and a June 2026 cereal outlook, an official MADRP daily retail-price bulletin dated 29 October 2026, an official Ministry historical agriculture-statistics portal, and USDA independent wheat/barley area and output estimates. FAO estimates 2025 wheat at 3.0m MT, barley at 1.15m MT and oats at 86,000 MT; FAO's 2026 total-cereal forecast is 5m MT. The 29 October 2026 MADRP bulletin reports national retail prices, including potato DZD 91/kg, tomato DZD 129/kg, green pepper DZD 135/kg, hot pepper DZD 149/kg, broiler meat DZD 468/kg and eggs DZD 23 each; these are retail only, not farm-gate. Current crop-specific harvested area, local yields, producer prices and itemized enterprise budgets remain outstanding. No Algeria calculator values are admitted.",
+      "batch_35_review": {
+        "review_date": "2026-11-03",
+        "findings": [
+          "MADRP confirms the 2024 General Agricultural Census is a national structural census; its public page reports 1,118,000 holdings enumerated and 93% completion as of 14 July 2024, an interim progress figure rather than final total.",
+          "FAO GIEWS estimates 2025 wheat output at 3.0m tonnes, barley 1.15m tonnes and oats 86,000 tonnes; FAO's June 2026 outlook forecasts total cereals at about 5m tonnes, not a crop-specific yield.",
+          "MADRP's 29 October 2026 bulletin provides national retail prices for vegetables, dates, broiler meat and eggs; these are not farmgate prices.",
+          "ITGC publishes valued 2024/25 per-hectare technical cost sheets for cereals, pulses, forage and rapeseed, distinguishing machinery rental from ownership; numeric schedule extraction and regional assumptions remain pending.",
+          "Law No. 26-06 establishes 69 wilayas and 1,541 communes; parent wilayas continue transition management until no later than 31 December 2026. The Interior Ministry reported installation of several new wilaya governors in late September 2026."
+        ],
+        "status": "research_only_not_calculator_ready"
+      }
     },
     {
       "country_code": "MA",
