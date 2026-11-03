@@ -156,7 +156,12 @@
       "slug": "botswana",
       "default_language": "en",
       "source_profile": "bw-ag-data",
-      "directory_only": true
+      "data_mode": "mixed_source",
+      "localized_commodities": [
+        "maize"
+      ],
+      "benchmark_fallback_commodities": 16,
+      "data_quality_note": "Maize has a Botswana-specific 2024 yield and July/August 2026 producer schedule reference; its cost is an Africa benchmark proxy. The other 16 commodities use clearly labelled Africa benchmark estimates pending local validation."
     },
     {
       "code": "BF",
