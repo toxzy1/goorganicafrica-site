@@ -1,0 +1,99 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — Batch 25: Madagascar",
+  "country": {
+    "name": "Madagascar",
+    "iso_alpha2": "MG",
+    "iso_alpha3": "MDG",
+    "currency": "MGA",
+    "currency_name": "Malagasy ariary"
+  },
+  "review_date": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "first_level_unit": "Region",
+    "verified_regions": [
+      "Alaotra-Mangoro",
+      "Amoron'i Mania",
+      "Analamanga",
+      "Analanjirofo",
+      "Androy",
+      "Anosy",
+      "Atsimo-Andrefana",
+      "Atsimo-Atsinanana",
+      "Atsinanana",
+      "Betsiboka",
+      "Boeny",
+      "Bongolava",
+      "DIANA",
+      "Fitovinany",
+      "Haute Matsiatra",
+      "Ihorombe",
+      "Itasy",
+      "Melaky",
+      "Menabe",
+      "Sava",
+      "Sofia",
+      "Vatovavy",
+      "Vakinankaratra"
+    ],
+    "region_count": 23,
+    "second_level_unit": "District",
+    "district_count": 119,
+    "lower_level_units": "Communes and fokontany; six provinces are a separate higher-level layer.",
+    "selector_added": true,
+    "selector_file": "src/_data/calculator/regions.json",
+    "sources": [
+      "https://torolalana.gov.mg/fr/services/regions-et-districts/",
+      "https://salb.un.org/en/data/mdg",
+      "https://madagascar.un.org/sites/default/files/2025-10/1%20Madagascar%20Country%20Brief.pdf"
+    ]
+  },
+  "key_findings": [
+    "The Government of Madagascar's Torolalana public-service portal states that the country has 23 regions and 119 districts and publishes the district-to-region table. The 23 first-level region names have been added to the calculator region lookup.",
+    "The UN Madagascar country brief confirms 23 administrative regions. The UN Second Administrative Level Boundaries (SALB) service lists validated Madagascar administrative boundary datasets, including a current dataset temporally valid from 29 June 2023 to 17 October 2024.",
+    "The WTO Secretariat's 2025 Trade Policy Review reports 2023 national production totals of 5,320,000 tonnes paddy rice, 268,062 tonnes maize, 91,158 tonnes beans, 2,515,542 tonnes cassava, 268,293 tonnes potatoes and 1,301,244 tonnes sweet potatoes. It reports 2022 totals for cocoa, coffee and cloves. These are national totals, not regional yields or farm enterprise outputs.",
+    "FAO GIEWS' 23 September 2026 country brief describes a provisional recovery in 2026 paddy output from 2025 but still below the five-year average, and below-average maize production associated with rainfall deficits in southern areas. The brief does not provide final national crop tonnage or region-by-crop yield values.",
+    "The World Bank's 2025 Agriculture Public Expenditure Review documents substantial gaps in recent farm-gate and wholesale price data and provides historical input/public expenditure context. These figures cannot be treated as current farmer-paid prices or input quotations.",
+    "The World Bank Real Time Food Prices catalogue metadata lists 481 Madagascar markets and a latest reference date of 1 October 2026. Its market-level series includes imputed estimates and is not a verified farmgate producer-price feed."
+  ],
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_WTO_2025_review_reports_2023_national_paddy_maize_beans_cassava_potato_sweet_potato_totals_and_2022_cocoa_coffee_cloves_totals_FAO_2026_outlook_is_qualitative_matching_region_crop_harvested_area_and_yield_series_missing",
+    "dated_local_farmgate_prices_and_units": "blocked_World_Bank_RTFP_481_market_dataset_is_market_level_and_contains_imputed_estimates_not_verified_farmgate_producer_prices",
+    "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_or_planting_material_quotations_by_region_and_crop",
+    "fertilizer_and_soil_amendment_costs": "partial_World_Bank_2025_AgPER_records_historical_2019_2021_import_and_2013_2022_public_distribution_totals_current_product_prices_application_rates_and_farmer_costs_missing",
+    "crop_protection_costs": "blocked_no_current_crop_specific_product_prices_application_rates_or_farmer_paid_costs",
+    "irrigation_water_and_energy_costs": "partial_WTO_and_World_Bank_context_identifies_irrigation_constraints_but_current_region_tariffs_pumping_energy_and_crop_water_costs_missing",
+    "labour_rates_and_operations": "blocked_no_current_region_crop_operation_wage_rates_or_labour_days_schedule",
+    "machinery_and_land_preparation_costs": "blocked_no_current_region_machine_hire_land_preparation_and_mechanisation_cost_schedule",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets_or_gross_margins",
+    "currency_and_exchange_rate_method": "partial_MGA_malagasy_ariary_confirmed_but_calculator_rounding_and_exchange_rate_conversion_method_not_documented",
+    "source_provenance_and_observation_date": "partial_WTO_2025_FAO_GIEWS_2026_World_Bank_2025_AgPER_RTFP_metadata_and_government_administrative_geography_sources_recorded",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_region_crop_price_cost_dataset_or_test_cases"
+  },
+  "blockers": [
+    "Extract matched crop-specific harvested area, production and yield observations with geography, season and reference year; national output totals alone do not establish regional yields.",
+    "Download and screen the World Bank Real Time Food Prices Madagascar dataset by market, commodity form, unit, date and observation method; do not treat its imputed market estimates as farmgate prices.",
+    "Obtain dated producer/farmgate prices and farmer-paid quotations for seed, fertilizer, crop protection, labour, land preparation, irrigation, energy and transport.",
+    "Build and validate region-specific enterprise budgets for priority crops and livestock; historical national expenditure/import totals are not farm budgets.",
+    "Map validated observations to the existing calculator schema and add MGA currency, region and crop regression tests."
+  ],
+  "sources": [
+    "https://torolalana.gov.mg/fr/services/regions-et-districts/",
+    "https://salb.un.org/en/data/mdg",
+    "https://madagascar.un.org/sites/default/files/2025-10/1%20Madagascar%20Country%20Brief.pdf",
+    "https://www.wto.org/english/tratop_e/tpr_e/s466_e.pdf",
+    "https://cb.apps.fao.org/country.jsp?code=MDG",
+    "https://documents1.worldbank.org/curated/en/099145312092519386/pdf/IDU-52843189-d4fd-4fb0-9c66-6910b75319c9.pdf",
+    "https://microdata.worldbank.org/catalog/8240"
+  ],
+  "safeguards": [
+    "Madagascar remains not_active and directory_only in the country registry.",
+    "The 23-region selector is added to the separate region lookup only; no existing active country profile or calculator formula was changed.",
+    "The 119-district administrative count is recorded but district-level crop data are not fabricated.",
+    "National crop production totals are not converted into regional yields or farm-level output assumptions.",
+    "Market price estimates and historical price analysis are not relabelled as current farmgate prices.",
+    "No calculator activation, merge to main or production deployment was performed."
+  ],
+  "next_step": "Extract official crop area, production and yield tables by region/district and crop; screen dated market series; obtain primary farmgate prices and farmer-paid input quotations; validate regional crop enterprise budgets before calculator mapping or activation."
+}
