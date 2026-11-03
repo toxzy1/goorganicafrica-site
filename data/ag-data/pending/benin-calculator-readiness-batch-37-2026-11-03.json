@@ -1,0 +1,79 @@
+{
+  "title": "Benin calculator readiness research — Batch 37",
+  "batch": 37,
+  "country_code": "BJ",
+  "country_name": "Benin",
+  "review_date": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "calculator_status": "directory_only_not_active",
+  "scope": "Research evidence and 12-department geographic lookup only. No calculator formulas or active country profiles changed.",
+  "findings": [
+    {
+      "topic": "ESA 2024 first 50x2030 data release",
+      "detail": "FAO confirms Benin released ESA 2024 data on 11 June 2026. The survey includes crop areas, production, yields, input use and harvest/post-harvest losses. Detailed tables and datasets still need extraction.",
+      "source": "https://www.fao.org/in-action/agrisurvey/news/news-detail/benin-marks-a-milestone-with-its-first-agricultural-data-release-under-50x2030/en"
+    },
+    {
+      "topic": "Final 2023/24 campaign",
+      "detail": "INStaD reports 2,737,481 tonnes aggregate cereal production, versus a five-year average of 2,219,312 tonnes. It says output growth reflected area expansion while cereal yields generally declined. This is aggregate cereals, not commodity-specific yield.",
+      "source": "https://www.instad.bj/statistiques/statistiques-agricoles/577-campagne-agricole-2023-2024"
+    },
+    {
+      "topic": "2025 aggregate outlook",
+      "detail": "FAO's 10 June 2026 brief estimates 2025 aggregate cereal production at about 2.9 million tonnes, about 20% above the previous five-year average. April 2026 cereal prices were below year-earlier levels, but no absolute farmgate values were added.",
+      "source": "https://cb.apps.fao.org/country.jsp?code=BEN&lang=en"
+    },
+    {
+      "topic": "Administrative geography",
+      "detail": "IGN-Bénin identifies 12 departments, 77 communes, 546 arrondissements and 5,295 villages/neighbourhoods. The first-level 12 departments are now in the calculator region lookup.",
+      "source": "https://ign.bj/webmap/village.php"
+    }
+  ],
+  "geography": {
+    "department_count": 12,
+    "departments": [
+      "Alibori",
+      "Atacora",
+      "Atlantique",
+      "Borgou",
+      "Collines",
+      "Couffo",
+      "Donga",
+      "Littoral",
+      "Mono",
+      "Ouémé",
+      "Plateau",
+      "Zou"
+    ],
+    "commune_count": 77,
+    "arrondissement_count": 546,
+    "village_neighbourhood_count": 5295
+  },
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "blocked",
+    "seed_and_planting_material_costs": "partial",
+    "fertilizer_and_soil_amendment_costs": "partial",
+    "crop_protection_costs": "partial",
+    "irrigation_water_and_energy_costs": "not_yet_audited",
+    "labour_rates_and_operations": "not_yet_audited",
+    "machinery_and_land_preparation_costs": "not_yet_audited",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_exchange_rate_method": "pass",
+    "source_provenance_and_observation_date": "pass",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "blockers": [
+    "ESA 2024 detailed tables and metadata not extracted; current evidence confirms scope but not usable crop/department rows.",
+    "No absolute dated farmgate price series with grade, unit and market level has been validated.",
+    "Input-use coverage is confirmed but farmer purchase prices and full operating cost schedules are missing.",
+    "No department-specific enterprise budgets or calculator regression cases.",
+    "Current crop statistics use area sown as the yield denominator; preserve this definition and reconcile with harvested area where available."
+  ],
+  "next_steps": [
+    "Extract ESA 2024 downloadable datasets and metadata.",
+    "Extract crop-specific campaign tables and reconcile area-sown yield definitions.",
+    "Obtain dated farmgate prices and farmer input quotations.",
+    "Build department-level enterprise budgets and calculator test cases before activation."
+  ]
+}
