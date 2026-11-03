@@ -1,0 +1,67 @@
+{
+  "title": "Central African Republic calculator readiness research — Batch 42",
+  "batch": 42,
+  "country_code": "CF",
+  "country_name": "Central African Republic",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "findings": [
+    {
+      "topic": "2026 crop season",
+      "detail": "FAO's 15 July 2026 brief reports central/southern 2026 maize planting completed under near-average planted area, with harvest expected from mid-August; northern millet/sorghum planting completed in early July. Flood risk was highlighted for Basse-Kotto, Mbomou and Ouaka."
+    },
+    {
+      "topic": "Market price data",
+      "detail": "World Bank RTFP catalogue provides an open monthly market-price dataset for 41 markets, 2007-01 through 2026-10, version 2026-10-05. Products include cassava, groundnuts, maize, beef, oil, rice, sesame and sorghum; geographic coverage is selected Admin 2 areas, not all prefectures."
+    },
+    {
+      "topic": "Price classification",
+      "detail": "World Bank dataset combines direct price observations with machine-learning estimates and identifies WFP/FAO as source organisations. Preserve method and source flags; these are market prices and are not automatically farm-gate prices."
+    },
+    {
+      "topic": "Administrative geography",
+      "detail": "ICASEES provides an official interactive map of 20 prefectures. A secondary cross-check describes seven regions: Plateaux, Équateur, Yadé, Kagas, Fertit, Haut-Oubangui and Bas-Oubangui, with 85 sub-prefectures."
+    },
+    {
+      "topic": "Crop data",
+      "detail": "Secondary FAOSTAT-sourced 2024 values for cassava, maize, rice and livestock remain leads only; retrieve matching FAOSTAT item-level harvested area, production, yield and source flags before activation."
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield": "partial_secondary_2024_values_need_primary_FAOSTAT_verification",
+    "farmgate_prices": "partial_open_market_price_series_not_farmgate",
+    "input_costs": "blocked",
+    "regional_enterprise_budgets": "blocked",
+    "geography": "20_prefecture_lookup_present_ICASEES_map_and_7_region_crosscheck_added",
+    "calculator_active": false
+  },
+  "sources": [
+    {
+      "title": "FAO GIEWS Central African Republic brief, 15 July 2026",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=CF"
+    },
+    {
+      "title": "World Bank RTFP Central African Republic, 41 markets, version 5 October 2026",
+      "url": "https://microdata.worldbank.org/index.php/catalog/4488/"
+    },
+    {
+      "title": "ICASEES interactive prefecture map",
+      "url": "https://icasees.org/carte-interactive"
+    },
+    {
+      "title": "Central African Republic regions and prefectures reference",
+      "url": "https://www.centrafriquepratique.com/regions-en"
+    },
+    {
+      "title": "FAOSTAT data catalogue",
+      "url": "https://data.fao.org/catalog/iso/d24a448b-3b62-4c09-8c1d-4a39bb599876"
+    }
+  ],
+  "safeguards": [
+    "No WFP/FAO market price reclassified as farmgate.",
+    "No machine-learning estimate used without preserving source/method flags.",
+    "No secondary FAOSTAT production total converted into yield without matched harvested area.",
+    "Selected Admin 2 price coverage not assumed to cover all prefectures.",
+    "No calculator values activated."
+  ]
+}
