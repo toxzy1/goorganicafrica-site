@@ -1,0 +1,159 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — Batch 27: Mali",
+  "country": {
+    "name": "Mali",
+    "iso_alpha2": "ML",
+    "iso_alpha3": "MLI",
+    "currency": "XOF",
+    "currency_name": "West African CFA franc"
+  },
+  "review_date": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_reviewed_not_calculator_ready",
+  "administrative_geography": {
+    "first_level_unit": "Region",
+    "regions": [
+      "Kayes",
+      "Nioro",
+      "Kita",
+      "Koulikoro",
+      "Nara",
+      "Sikasso",
+      "Bougouni",
+      "Koutiala",
+      "Ségou",
+      "San",
+      "Mopti",
+      "Bandiagara",
+      "Douentza",
+      "Tombouctou",
+      "Taoudénit",
+      "Gao",
+      "Ménaka",
+      "Kidal",
+      "Dioïla"
+    ],
+    "region_count": 19,
+    "separate_first_level_unit": "District of Bamako",
+    "other_levels": {
+      "cercles": 159,
+      "arrondissements": 474,
+      "communes": 815,
+      "villages_fractions_quarters": 12641
+    },
+    "selector_status": "existing 19-region entry verified and retained; Bamako remains separate",
+    "selector_file": "src/_data/calculator/regions.json",
+    "sources": [
+      "https://mdrpi.gouv.ml/reorganisation-administrative-et-territoriale-remise-de-la-nouvelle-carte-administrative-du-mali-celles-des-19-regions-et-celle-du-district-de-bamako-au-chef-de-letat/",
+      "https://www.ortm.ml/decoupage-administratif-et-territorial-la-nouvelle-carte-administrative-du-mali-operationnelle",
+      "https://salb.un.org/en/data/mli"
+    ]
+  },
+  "official_2025_campaign_results": {
+    "cereal_production_mt": 11452540,
+    "cotton_seed_production_mt": 433700,
+    "controlled_meat_mt": 157775,
+    "collected_milk_mt": 17238,
+    "fish_mt": 122671,
+    "note": "Government-reported national campaign totals. Cereal aggregate is not crop-specific; controlled meat and collected milk are not farm-level livestock productivity or price metrics.",
+    "source": "https://gouvernement.ml/16eme-session-du-comite-executif-national-de-lagriculture-cena-les-resultats-de-la-campagne-2025-et-la-programmation-de-2026-examines-par-le-gouvernement/"
+  },
+  "programme_targets_2026": {
+    "cereal_production_mt": 11916750,
+    "cotton_seed_mt": 598500,
+    "planned_fertilizer_supply_mt": 1519030,
+    "cotton_fertilizer_allocation_mt": 284495,
+    "planned_fattening_feed_mt": 26425.22,
+    "planned_poultry_feed_mt": 14617.96,
+    "note": "Programme targets, not observed production or confirmed delivered inputs.",
+    "source": "https://gouvernement.ml/16eme-session-du-comite-executif-national-de-lagriculture-cena-les-resultats-de-la-campagne-2025-et-la-programmation-de-2026-examines-par-le-gouvernement/"
+  },
+  "campaign_policy_prices_2026_27": {
+    "first_grade_seed_cotton_xof_per_kg": 300,
+    "mineral_fertilizer_xof_per_50kg_bag": 15000,
+    "organic_fertilizer_xof_per_50kg_bag": 3000,
+    "note": "Campaign policy/support prices reported from the June 2026 Supreme Council of Agriculture session. Verify grade, formulation, farmer eligibility, availability, delivery and actual farmer-paid price before use in a budget.",
+    "source": "https://ortm.ml/16eme-session-du-conseil-superieur-de-lagriculture"
+  },
+  "market_and_input_context": {
+    "FAO_reference_date": "2026-08-27",
+    "FAO_2025_cereal_estimate_mt": 11600000,
+    "FAO_july_2026_wholesale_coarse_grain_trend": "Prices in monitored markets were generally 10–30 percent below year-earlier levels; Gao and Tombouctou conflict-affected markets remained significantly higher than other regions.",
+    "fertilizer_price_change_feb_to_mar_2026_percent": {
+      "urea": 19,
+      "NPK": 16,
+      "DAP": 8
+    },
+    "historical_rice_farmgate_price": {
+      "value": 400,
+      "currency": "XOF",
+      "unit": "FCFA/kg",
+      "reference_date": "2025-03",
+      "source": "USDA FAS rice supplementary annual update for West Africa"
+    },
+    "historical_rice_retail_price": {
+      "value": 550,
+      "currency": "XOF",
+      "unit": "FCFA/kg",
+      "reference_date": "2025-03",
+      "source": "USDA FAS rice supplementary annual update for West Africa"
+    },
+    "note": "FAO price movements do not provide absolute regional input costs. March 2025 rice prices are historical. Retail and wholesale prices must not be used as producer prices.",
+    "sources": [
+      "https://www.fao.org/giews/countrybrief/country.jsp?code=MLI&lang=en",
+      "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=2025+Rice+Supplementary+Annual+Update+for+West+Africa_Dakar_Senegal_SG2025-0011"
+    ]
+  },
+  "survey_readiness": {
+    "title": "Agricultural Survey 2023–2024 (Enquête Agricole de Conjoncture, EAC)",
+    "publisher": "CPS/SDR, Ministry of Rural Development; catalogue hosted by FAO",
+    "modules": [
+      "GPS plot area measurement",
+      "crop-cut yield measurement",
+      "weighed crop samples",
+      "input use",
+      "family and hired labour",
+      "livestock and poultry",
+      "production and commercialization"
+    ],
+    "coverage": "All regions except Kidal in this round; Bamako district has limited agricultural activity.",
+    "limitations": [
+      "First-stage sample coverage 86 percent; holdings coverage 79.4 percent; second-round response rate 58.3 percent.",
+      "Survey delays and security/funding constraints affect coverage; weights and precision must be reviewed.",
+      "Public microdata are anonymised and subject to confidentiality and use restrictions."
+    ],
+    "source": "https://microdata.fao.org/index.php/catalog/3011"
+  },
+  "readiness": {
+    "crop_data": "Partial: official 2025 national campaign cereal/cotton totals and EAC survey source identified; crop-specific region yield distributions not extracted.",
+    "prices": "Partial: FAO wholesale price trends, USDA historical rice farmgate/retail prices, and campaign-specific cotton price found; current regional crop farmgate matrix missing.",
+    "inputs": "Partial: 2026/27 policy fertilizer support prices and FAO price-change trends found; absolute farmer-paid product costs and crop application rates missing.",
+    "enterprise_budgets": "Not validated.",
+    "currency": "XOF identified; calculator formatting and regression tests pending.",
+    "calculator_status": "not_active"
+  },
+  "blockers": [
+    "Extract and quality-check the EAC 2023–2024 crop-cut yield, plot area, input use, labour and livestock tables; document survey weights, sample coverage and Kidal exclusion.",
+    "Obtain current crop-specific farmgate prices by region and market; the 2025 rice farmgate price is historical and the 2026 cotton price applies to a specified campaign grade.",
+    "Verify the 2026/27 fertilizer support price, product formulation, eligibility, allocation and farmer-paid delivery costs.",
+    "Obtain current seed, crop protection, labour, machinery, irrigation, energy and transport costs by region and production system.",
+    "Build validated regional crop/livestock enterprise budgets and XOF regression tests before calculator activation."
+  ],
+  "sources": [
+    "https://gouvernement.ml/16eme-session-du-comite-executif-national-de-lagriculture-cena-les-resultats-de-la-campagne-2025-et-la-programmation-de-2026-examines-par-le-gouvernement/",
+    "https://www.fao.org/giews/countrybrief/country.jsp?code=MLI&lang=en",
+    "https://microdata.fao.org/index.php/catalog/3011",
+    "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=2025+Rice+Supplementary+Annual+Update+for+West+Africa_Dakar_Senegal_SG2025-0011",
+    "https://ortm.ml/16eme-session-du-conseil-superieur-de-lagriculture",
+    "https://salb.un.org/en/data/mli"
+  ],
+  "safeguards": [
+    "Mali remains not_active and directory_only in the country registry.",
+    "The existing 19-region lookup is retained; Bamako remains a separate district, not a 20th region.",
+    "Government 2025 cereal aggregate is not split into crop or region estimates.",
+    "EAC sample exclusions and coverage limitations are recorded; no unsupported national extrapolation is made.",
+    "Historical rice farmgate price and campaign-specific cotton/fertilizer policy prices are not treated as current universal crop/input prices.",
+    "No calculator activation, merge to main or production deployment was performed."
+  ],
+  "next_step": "Extract the EAC 2023–2024 regional crop-cut yield and input/labour tables; obtain current farmgate prices and farmer-paid cost schedules; build regional enterprise budgets before activation."
+}
