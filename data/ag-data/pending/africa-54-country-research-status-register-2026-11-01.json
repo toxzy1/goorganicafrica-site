@@ -134,8 +134,10 @@
       "name": "Burkina Faso",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "review_status": "official_cereal_and_market_sources_identified_crop_level_series_extraction_pending",
-      "calculator_status": "directory_only_not_active"
+      "review_status": "EPA_2024_25_INSD_DGESS_catalogue_verified_5304_households_884_villages_43_province_estimates_95pct_confidence_plus_minus_10pct_microdata_restricted; July_2025_reorganisation_17_regions_47_provinces_crosswalk_pending; SIMAgri market price portal identified but dated transaction-level producer prices not yet validated",
+      "calculator_status": "directory_only_not_active",
+      "last_reviewed": "2026-11-03",
+      "administrative_geography_status": "17_regions_47_provinces_from_July_2025_EPA_2024_25_uses_pre_reform_43_provinces_and_excludes_Soum_Loroum_crosswalk_pending"
     },
     {
       "code": "BI",
