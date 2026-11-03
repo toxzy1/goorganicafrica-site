@@ -1,7 +1,7 @@
 {
   "title": "GoOrganicAfrica 44-country calculator data readiness matrix",
   "version": 1,
-  "created_at": "2026-11-02",
+  "created_at": "2026-11-03",
   "status": "baseline_gap_register_not_calculator_data",
   "scope": "Tracks evidence-to-calculator completion for the 44 countries outside the 10 existing active profiles. This is a work queue, not a certification of data quality or a source of values for calculations.",
   "safeguards": [
@@ -1471,17 +1471,17 @@
       "code": "NA",
       "name": "Namibia",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "NAB 2024/25 zone-level marketed grain volumes and selected yields plus FAO 2026 national cereal outlook added; 14 administrative regions confirmed; region crosswalk and farm budgets pending.",
+      "existing_research_note": "NAB 2024/25 zone-level marketed grain volumes and selected yields plus FAO 2026 outlook; 14 administrative regions confirmed. Batch 32 adds 2026 Grade 1 mahangu farm-gate floor price and a standardized rain-fed mahangu cost schedule; multi-crop regional enterprise budgets remain incomplete.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial",
         "dated_local_farmgate_prices_and_units": "partial",
-        "seed_and_planting_material_costs": "unavailable",
-        "fertilizer_and_soil_amendment_costs": "unavailable",
+        "seed_and_planting_material_costs": "partial",
+        "fertilizer_and_soil_amendment_costs": "partial",
         "crop_protection_costs": "unavailable",
         "irrigation_water_and_energy_costs": "unavailable",
-        "labour_rates_and_operations": "unavailable",
-        "machinery_and_land_preparation_costs": "unavailable",
+        "labour_rates_and_operations": "partial",
+        "machinery_and_land_preparation_costs": "partial",
         "regional_enterprise_budget_and_gross_margin": "blocked",
         "currency_and_exchange_rate_method": "pass",
         "source_provenance_and_observation_date": "pass",
@@ -1490,11 +1490,12 @@
       "blockers": [
         "NAB marketed tonnage and selected zone-level yields do not provide complete crop-by-region harvested-area and final-production tables.",
         "Six agronomic production zones are distinct from the 14 administrative regions; a verified crosswalk is required.",
-        "Current dated producer prices and farmer-paid input quotations are incomplete.",
+        "A 2026 Grade 1 mahangu farm-gate floor price is verified, but current dated producer prices for the other calculator crops and livestock remain incomplete.",
+        "The 2026 mahangu notice provides a standardized rain-fed cost schedule for one crop only; current regional costs for crop protection, irrigation, other crops and livestock remain missing.",
         "No representative region- and production-system-specific enterprise budgets exist for the calculator commodities.",
         "No Namibia calculator mapping or regression test cases have been implemented."
       ],
-      "next_step": "Extract NSA 2026 quarterly and Census of Agriculture outputs, verify NAB zone-level observations and crosswalk, and collect dated producer prices and farmer-paid input costs before calculator mapping."
+      "next_step": "Extract NSA 2026 quarterly and Census of Agriculture outputs, reconcile the 2026 mahangu cost annexure, verify NAB zone-level observations and crosswalk, and collect dated producer prices and farmer-paid costs for the remaining commodities before calculator mapping."
     },
     {
       "code": "NE",
