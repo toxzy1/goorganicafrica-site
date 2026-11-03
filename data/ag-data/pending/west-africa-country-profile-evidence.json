@@ -949,7 +949,7 @@
     {
       "country_code": "SN",
       "country_name": "Senegal",
-      "evidence_status": "official_national_annual_agricultural_survey_2023_2024_identified_extraction_and_cost_table_review_pending",
+      "evidence_status": "official_EAA_2024_2025_catalogue_confirmed_and_SODAGRI_2025_regional_campaign_table_extracted; calculator_budget_extraction_pending",
       "survey": {
         "title": "Enquête Agricole Annuelle (EAA) 2023-2024",
         "publisher": "Direction de l'Analyse, de la Prévision et des Statistiques Agricoles (DAPSA), Ministère de l'Agriculture, de la Souveraineté Alimentaire et de l'Élevage",
@@ -1045,6 +1045,143 @@
           "align irrigated and rainfed rice separately and build low/expected/high values only from supported regional or multi-year distributions"
         ],
         "extraction_status": "The current official 2023/24 annual survey report and statistical tables are identified. Public campaign summary provides rounded groundnut and rice production, and DAPSA provides distinct irrigated/rainfed rice yield point estimates for 2023. These are research leads only; no calculator values activated."
+      },
+      "batch_05_review": {
+        "review_date": "2026-11-03",
+        "review_status": "new_regional_campaign_observations_extracted_for_five_southern_and_southeastern_regions; national_EAA_microdata_not_accessed",
+        "sources": [
+          "https://sodagri.sn/statistiques",
+          "https://anads.ansd.sn/index.php/catalog/351",
+          "https://www.primature.sn/publications/actualites/campagne-de-commercialisation-des-produits-agricoles-2026-2027",
+          "https://www.primature.sn/publications/actualites/conseil-interministeriel-sur-la-campagne-de-production-agricole-2025"
+        ],
+        "regional_campaign_2025": {
+          "publisher": "Société de Développement Agricole et Industriel du Sénégal (SODAGRI)",
+          "scope": "SODAGRI intervention area only: Kolda, Sédhiou, Ziguinchor, Tambacounda and Kédougou; not a national regional series",
+          "observation_period": "2025 agricultural campaign (as labelled by SODAGRI)",
+          "units": "area hectares; production tonnes; calculated ratios tonnes per hectare",
+          "observations": [
+            {
+              "region": "Kolda",
+              "rice_area_ha": 102362.2,
+              "rice_production_t": 327398.58,
+              "rice_ratio_t_ha": 3.198,
+              "maize_area_ha": 15202,
+              "maize_production_t": 39869.4,
+              "maize_ratio_t_ha": 2.623,
+              "vegetable_area_ha": 262.62,
+              "vegetable_production_t": 2654.49,
+              "vegetable_ratio_t_ha": 10.109,
+              "banana_area_ha": 1625,
+              "banana_production_t": 66625,
+              "banana_ratio_t_ha": 41
+            },
+            {
+              "region": "Sédhiou",
+              "rice_area_ha": 51944.11,
+              "rice_production_t": 165502,
+              "rice_ratio_t_ha": 3.186,
+              "maize_area_ha": 1453.29,
+              "maize_production_t": 3030.03,
+              "maize_ratio_t_ha": 2.085,
+              "fonio_area_ha": 399.06,
+              "fonio_production_t": 316.59,
+              "fonio_ratio_t_ha": 0.793,
+              "sesame_area_ha": 125,
+              "sesame_production_t": 93.75,
+              "sesame_ratio_t_ha": 0.75
+            },
+            {
+              "region": "Ziguinchor",
+              "rice_area_ha": 19573,
+              "rice_production_t": 58420,
+              "rice_ratio_t_ha": 2.985,
+              "vegetable_area_ha": 41.8,
+              "vegetable_production_t": null,
+              "banana_area_ha": null,
+              "banana_production_t": null
+            },
+            {
+              "region": "Tambacounda",
+              "rice_area_ha": 4943,
+              "rice_production_t": 12440,
+              "rice_ratio_t_ha": 2.516,
+              "maize_area_ha": 889,
+              "maize_production_t": 1901.25,
+              "maize_ratio_t_ha": 2.139,
+              "fonio_area_ha": 300,
+              "fonio_production_t": 120,
+              "fonio_ratio_t_ha": 0.4,
+              "sesame_area_ha": 287.5,
+              "sesame_production_t": 208.44,
+              "sesame_ratio_t_ha": 0.725,
+              "banana_area_ha": 971,
+              "banana_production_t": 41753,
+              "banana_ratio_t_ha": 43
+            },
+            {
+              "region": "Kédougou",
+              "rice_area_ha": 1090,
+              "rice_production_t": 3675,
+              "rice_ratio_t_ha": 3.372,
+              "maize_area_ha": 1336,
+              "maize_production_t": 3010,
+              "maize_ratio_t_ha": 2.253,
+              "fonio_area_ha": 560,
+              "fonio_production_t": 272.53,
+              "fonio_ratio_t_ha": 0.487,
+              "sesame_area_ha": 50,
+              "sesame_production_t": 20,
+              "sesame_ratio_t_ha": 0.4
+            }
+          ],
+          "total": {
+            "rice_area_ha": 179912.31,
+            "rice_production_t": 567435.58,
+            "rice_ratio_t_ha": 3.154,
+            "maize_area_ha": 18880.29,
+            "maize_production_t": 47810.68,
+            "maize_ratio_t_ha": 2.532,
+            "fonio_area_ha": 1259.06,
+            "fonio_production_t": 709.12,
+            "fonio_ratio_t_ha": 0.563,
+            "sesame_area_ha": 462.5,
+            "sesame_production_t": 322.19,
+            "sesame_ratio_t_ha": 0.697,
+            "vegetable_area_ha": 338.42,
+            "vegetable_production_t": 2654.49,
+            "vegetable_ratio_t_ha": 7.843,
+            "banana_area_ha": 2596,
+            "banana_production_t": 108378,
+            "banana_ratio_t_ha": 41.747
+          }
+        },
+        "commercialisation_2026_2027": {
+          "source_date": "2026-10-22",
+          "peanut_marketing_campaign_open": "late November 2026",
+          "peanut_producer_price": "not yet set in the official council decision; a committee is to recommend an annual price and a producer safeguard threshold",
+          "cotton_campaign_open": "2026-11-15",
+          "other_details": [
+            "SONACOS financing and collection-point readiness remain work items",
+            "rice local-market support includes a planned 50 FCFA/kg payment to rice mills, not a producer farmgate price",
+            "the government states 44 billion FCFA in outstanding input-supplier arrears; this is not a farmer input price"
+          ]
+        },
+        "interpretation_and_limits": [
+          "SODAGRI figures cover only its five intervention regions; do not extrapolate to the other nine regions or label the totals national.",
+          "Ratios shown are arithmetic production/area ratios calculated from the published table; they are not necessarily survey yields and do not distinguish irrigated/rainfed systems.",
+          "SODAGRI's table uses a 2025 campaign heading; retain that period and source rather than combining with EAA 2024/25 survey estimates.",
+          "The 2026/27 government decision does not publish a peanut producer price; do not substitute a previous campaign floor price.",
+          "The 50 FCFA/kg rice support is payable to rice mills and must not be used as a producer price.",
+          "The EAA 2024/25 catalogue confirms relevant crop, input, labour and costs variables but anonymised microdata is subject to DAPSA confidentiality and access conditions; use aggregate public outputs or obtain authorisation."
+        ],
+        "blockers": [
+          "Obtain and reconcile the full EAA 2024/25 published regional tables, preserving survey season, weights, crop definitions and local-unit conversions.",
+          "Extend crop/area/yield coverage beyond SODAGRI's five intervention regions and distinguish irrigated, rainfed and horticultural systems.",
+          "Obtain published, dated farmgate prices by crop and region; the 2026/27 peanut price was not yet set in the cited council decision.",
+          "Extract farmer-paid seed, fertilizer, crop-protection, labour and other cost distributions from authorised aggregate EAA outputs.",
+          "Obtain machinery, irrigation, energy, land, transport and livestock enterprise costs; build regional budgets and calculator tests."
+        ]
       }
     },
     {
