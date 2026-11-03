@@ -75,8 +75,8 @@
       "output_low": 220,
       "output_expected": 270,
       "output_high": 320,
-      "price_low": 1.0,
-      "price_high": 2.0,
+      "price_low": 1,
+      "price_high": 2,
       "price_unit": "per egg"
     },
     {
@@ -334,6 +334,10 @@
       "price_low": 8,
       "price_high": 18,
       "price_unit": "per egg"
+    },
+    {
+      "country_code": "BW",
+      "data_quality": "benchmark"
     }
   ],
   "active": true
