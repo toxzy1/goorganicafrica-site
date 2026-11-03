@@ -72,30 +72,31 @@
       "code": "DZ",
       "name": "Algeria",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_2025_cereal_estimates_and_2026_market_retail_bulletins_identified_crop_area_yield_and_farm_budget_extraction_pending",
+      "existing_research_note": "2024 RGA interim census progress verified; FAO 2025 crop-specific cereal estimates and June 2026 5m-tonne cereal outlook; MADRP 29-Oct-2026 retail price bulletin; ITGC 2024/25 per-hectare technical cost sheets identified; 69-wilaya legal reorganisation verified. Regional crop-area/yield extraction and numerical budget sheets remain pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_national_wheat_barley_oats_production_estimates_and_2026_total_cereal_forecast; matched_admin1_harvested_area_and_crop_yields_pending",
+        "dated_local_farmgate_prices_and_units": "blocked_MADRP_daily_bulletin_is_national_retail_not_farmgate; producer_price_series_not_extracted",
+        "seed_and_planting_material_costs": "partial_ITGC_2024_25_technical_cost_sheets_include_input_costs_but_numeric_schedule_extraction_pending",
+        "fertilizer_and_soil_amendment_costs": "partial_ITGC_2024_25_technical_cost_sheets_include_input_costs_but_product_and_rate_values_pending_extraction",
+        "crop_protection_costs": "partial_ITGC_technical_itineraries_identified_product_level_cost_values_pending",
+        "irrigation_water_and_energy_costs": "not_yet_audited; distinguish pivot/irrigated southern farms from rainfed northern/high-plateau systems",
+        "labour_rates_and_operations": "RGA_2024_structural_census_scope_includes_agricultural_labour; final labour tables_not_extracted",
+        "machinery_and_land_preparation_costs": "partial_ITGC_sheets_distinguish_owned_vs_rented_machinery; numeric and regional schedules_pending",
+        "regional_enterprise_budget_and_gross_margin": "blocked_ITGC_reference_cost_sheets_need_extraction_and_matching_crop_revenue_and_producer_prices",
+        "currency_and_exchange_rate_method": "DZD_currency_known_calculator_locale_and_rounding_tests_pending",
+        "source_provenance_and_observation_date": "pass_for_FAO_2025_2026_sources_MADRP_2026_10_29_bulletin_ITGC_2024_25_and_2026_04_05_law",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_Algeria_mapping_or_wilaya_regression_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Obtain final RGA 2024 public tables and extract crop production, sown/harvested area, holdings, labour and livestock by wilaya.",
+        "Match FAO/Ministry crop output to harvested area and crop-year definitions; keep 2025 FAO estimates distinct from 2026 forecast.",
+        "Extract ITGC 2024/25 numerical crop cost sheets by crop, production zone and machinery ownership/rental; distinguish modelled technical costs from observed farm costs.",
+        "Obtain current producer/farmgate prices by wilaya, commodity, grade and date; do not substitute MADRP retail bulletin values.",
+        "Audit water, energy, irrigation, labour, machinery, land and transport expenses, including southern irrigated versus northern rainfed production systems.",
+        "Update region lookup to 69 legally defined wilayas and preserve the 2026 transition note; build validated regional enterprise budgets and calculator tests."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract the final RGA 2024 tables and ITGC 2024/25 numeric cost sheets; match each crop to region-specific harvested area, output, farmgate prices and production system before calculator mapping."
     },
     {
       "code": "AO",
