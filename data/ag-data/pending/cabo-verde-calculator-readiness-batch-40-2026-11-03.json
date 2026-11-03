@@ -1,0 +1,66 @@
+{
+  "title": "Cabo Verde calculator readiness research — Batch 40",
+  "batch": 40,
+  "country_code": "CV",
+  "country_name": "Cabo Verde",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "findings": [
+    {
+      "topic": "2025 maize output",
+      "detail": "FAO's January 2026 country brief estimates 2025 maize output at about 1,100 tonnes, nearly 40% below the already low previous five-year average. The estimate is preliminary and lacks a matching harvested-area denominator, so no yield is calculated."
+    },
+    {
+      "topic": "2025/26 support programme",
+      "detail": "Government announced CVE 44.5 million to strengthen the rainfed campaign through subsidized seeds, planting materials and technical assistance. This is a national programme budget, not a farmer unit cost or per-hectare budget."
+    },
+    {
+      "topic": "Agricultural census",
+      "detail": "Resolution 88/2025 mandates the VI General Agricultural Census during 2025–2026 across family and non-family agricultural holdings. Final numeric tables remain pending."
+    },
+    {
+      "topic": "Geography",
+      "detail": "The existing 22-municipality lookup remains in place; no municipality-level crop yield series has been verified."
+    },
+    {
+      "topic": "Prices and costs",
+      "detail": "The Ministry market observatory is identified but the accessible page does not expose current dated farm-gate price values. Farmer-paid input, labour, irrigation, machinery and transport costs remain unavailable."
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield": "partial_preliminary_maize_output_only",
+    "farmgate_prices": "blocked",
+    "input_costs": "partial_programme_support_only",
+    "regional_enterprise_budgets": "blocked",
+    "geography": "22_municipality_lookup_retained",
+    "calculator_active": false
+  },
+  "sources": [
+    {
+      "title": "FAO GIEWS Cabo Verde Country Brief, 19 January 2026",
+      "url": "https://cb.apps.fao.org/country.jsp?code=CPV"
+    },
+    {
+      "title": "Government 2025/26 rainfed campaign investment",
+      "url": "https://www.governo.cv/governo-investe-445-milhoes-de-escudos-para-reforcar-a-campanha-agricola-de-sequeiro-2025-2026/"
+    },
+    {
+      "title": "Resolution 88/2025, VI General Agricultural Census",
+      "url": "https://boe.incv.cv/Bulletins/View?id=87088"
+    },
+    {
+      "title": "FAO AGRISurvey Cabo Verde",
+      "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/cabo-verde/en"
+    },
+    {
+      "title": "Ministry market observatory",
+      "url": "https://maa.gov.cv/index.php/seguranca-alimentar/observatorio-do-mercado"
+    }
+  ],
+  "safeguards": [
+    "CVE 44.5 million programme investment not used as a farm cost.",
+    "Preliminary maize production not converted into yield without harvested area.",
+    "Retail observations and price movements not treated as farm-gate prices.",
+    "No calculator values activated."
+  ]
+}
