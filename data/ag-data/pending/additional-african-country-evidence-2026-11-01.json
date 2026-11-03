@@ -1773,7 +1773,7 @@
     {
       "country_code": "NA",
       "country_name": "Namibia",
-      "evidence_status": "official_NAB_2024_25_zone_marketing_and_yield_data_plus_2026_FAO_cereal_outlook_added_14_administrative_regions_verified_enterprise_costs_and_crop_specific_final_2026_outputs_pending",
+      "evidence_status": "official_NAB_2024_25_zone_marketing_and_yield_data_plus_2026_FAO_cereal_outlook_added_14_administrative_regions_verified_enterprise_costs_and_final_crop_outputs_pending",
       "sources": [
         {
           "title": "White Maize Production Forecast Report, Harvesting/Marketing Season 2025",
@@ -2172,6 +2172,154 @@
             "Commercial and communal production systems diverge; no single national yield/cost assumption should be used.",
             "Namibia imports about two-thirds of cereal consumption requirements on average; domestic producer prices must be distinguished from import parity and retail prices."
           ]
+        },
+        {
+          "title": "Namibian Agronomic Board Annual Report 2024/2025",
+          "publisher": "Namibian Agronomic Board",
+          "url": "https://www.nab.com.na/wp-content/uploads/2026/02/WEB-ANNUAL-REPORT.pdf",
+          "publication_date": "2026-02",
+          "reference_period": "2024/2025 financial and marketing year",
+          "status": "official_zone_level_marketed_grain_volumes_selected_yields_and_floor_price_averages",
+          "observations": [
+            {
+              "indicator": "locally purchased controlled grains",
+              "value_mt": 36208,
+              "reference_period": "2024/2025",
+              "status": "Marketed purchases from farmers; not total farm production."
+            },
+            {
+              "crop": "white maize",
+              "production_mt": 10074,
+              "geography": "Karst",
+              "reference_period": "2024/2025",
+              "status": "Marketed volume, not total production or yield."
+            },
+            {
+              "crop": "white maize",
+              "production_mt": 9392,
+              "geography": "Kavango",
+              "reference_period": "2024/2025",
+              "status": "Marketed volume, not total production or yield."
+            },
+            {
+              "crop": "white maize",
+              "production_mt": 6749,
+              "geography": "Central",
+              "reference_period": "2024/2025",
+              "status": "Marketed volume, not total production or yield."
+            },
+            {
+              "crop": "white maize",
+              "production_mt": 3399,
+              "geography": "North Central",
+              "reference_period": "2024/2025",
+              "status": "Marketed volume, not total production or yield."
+            },
+            {
+              "crop": "white maize",
+              "production_mt": 2297,
+              "geography": "South",
+              "reference_period": "2024/2025",
+              "status": "Marketed volume, not total production or yield."
+            },
+            {
+              "crop": "white maize",
+              "production_mt": 78,
+              "geography": "Zambezi",
+              "reference_period": "2024/2025",
+              "status": "Marketed volume, not total production or yield."
+            },
+            {
+              "crop": "white maize",
+              "yield_mt_per_ha": 10,
+              "geography": "North Central and Karst",
+              "production_system": "irrigated",
+              "reference_period": "2024/2025",
+              "status": "NAB report identifies highest average irrigation yield."
+            },
+            {
+              "crop": "white maize",
+              "yield_mt_per_ha": 0.04,
+              "geography": "Zambezi",
+              "production_system": "irrigated",
+              "reference_period": "2024/2025",
+              "status": "NAB report identifies lowest average; verify source graphic before use."
+            },
+            {
+              "crop": "wheat",
+              "yield_mt_per_ha": 6,
+              "geography": "Central and Karst",
+              "reference_period": "2024/2025",
+              "status": "NAB report identifies highest average yield."
+            },
+            {
+              "crop": "white maize",
+              "price_nad_per_mt": 7725,
+              "market_level": "annual domestic floor price average",
+              "reference_period": "2024/2025",
+              "status": "Not a dated individual farm-gate transaction quote."
+            },
+            {
+              "crop": "wheat",
+              "price_nad_per_mt": 7453,
+              "market_level": "annual domestic floor price average",
+              "reference_period": "2024/2025",
+              "status": "Not a dated individual farm-gate transaction quote."
+            },
+            {
+              "crop": "pearl millet",
+              "price_nad_per_mt": 7212,
+              "market_level": "annual domestic floor price average",
+              "reference_period": "2024/2025",
+              "status": "Not a dated individual farm-gate transaction quote."
+            }
+          ],
+          "quality_notes": [
+            "The six NAB agronomic zones are not the 14 administrative regions.",
+            "Marketed purchases are not total production or harvested area.",
+            "Nearly all white maize marketed in 2024/25 was irrigated; only 78 tonnes was marketed from rainfed production."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Namibia",
+          "publisher": "FAO",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=NAM&lang=en",
+          "reference_date": "2026-08-28",
+          "status": "current_national_cereal_and_livestock_outlook",
+          "observations": [
+            {
+              "indicator": "aggregate cereal production",
+              "production_mt": 155000,
+              "reference_year": 2026,
+              "status": "FAO estimate; nearly 40% above previous five-year average and more than twice 2025; aggregate only."
+            },
+            {
+              "indicator": "commercial sector share of cereal output",
+              "share_percent": 80,
+              "reference_year": 2026,
+              "status": "FAO estimate."
+            },
+            {
+              "indicator": "communal cereal production",
+              "reference_year": 2026,
+              "status": "Below average despite rising just over 20% year-on-year."
+            },
+            {
+              "indicator": "livestock body condition",
+              "reference_year": 2026,
+              "status": "Pasture and water improved; good to very good in northeast, central, eastern and southern areas; fair to good in north-central."
+            },
+            {
+              "indicator": "Zambezi crop shock",
+              "reference_year": 2026,
+              "status": "Red locust and flooding damaged crops, especially maize; localized regional shock."
+            }
+          ],
+          "quality_notes": [
+            "Do not allocate aggregate cereal production among individual crops.",
+            "Commercial and communal production systems differ.",
+            "Distinguish producer prices from import parity and retail prices."
+          ]
         }
       ],
       "priority_commodities": [
@@ -2187,17 +2335,15 @@
         "pig"
       ],
       "remaining_gaps": [
-        "Extract the NSA Agriculture and Fishing Indicators Q1 2026 bulletin numerical tables and subsequent 2026 quarterly bulletins.",
-        "Obtain final 2025/26 Census of Agriculture crop, livestock, area and production tables by administrative region and constituency; confirm enumeration coverage and release status.",
-        "Obtain final actual 2026 crop-specific production and harvested area for maize, pearl millet, sorghum and wheat; separate commercial and communal systems.",
-        "Obtain the full underlying NAB 2024/25 zone-level yield table and verify production-system labels and the unusually low Zambezi figure against original graphics/source data.",
-        "Build a documented crosswalk between six NAB agronomic production zones and 14 administrative regions; do not assume one-to-one mapping.",
-        "Obtain current 2026 grade-specific producer/farmgate prices for maize, wheat, mahangu, horticulture and livestock, with transaction date, collection point/market, unit and deductions.",
-        "Obtain farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, pumping energy, water, transport and post-harvest cost schedules by region and production system.",
-        "Obtain regional livestock liveweight, purchase/sale price, feed, veterinary, mortality and production data by species and commercial/communal system.",
-        "Build and validate representative irrigated and rainfed enterprise budgets before calculator integration."
+        "Extract NSA 2026 agriculture bulletin numerical tables and final 2025/26 Census of Agriculture results.",
+        "Obtain final 2026 crop-specific production and harvested area for maize, pearl millet, sorghum and wheat, separating commercial and communal systems.",
+        "Verify the NAB zone-level yield table and unusually low Zambezi observation against original data.",
+        "Build a documented crosswalk between six NAB agronomic zones and 14 administrative regions.",
+        "Obtain current dated grade-specific producer prices and farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, energy, water and transport costs by region.",
+        "Obtain regional livestock liveweight, sale-price, feed, veterinary and mortality data.",
+        "Build representative irrigated and rainfed enterprise budgets before calculator integration."
       ],
-      "extraction_status": "The 2024/25 NAB annual report adds marketed volumes by six agronomic production zones, selected zone-specific grain yield observations, and annual domestic grain floor-price averages. These agronomic zones are not the 14 administrative regions. FAO GIEWS' 28 August 2026 brief estimates 155,000 MT aggregate cereal production and improved livestock conditions but communal cereal output remains below average and Zambezi suffered localized pest/flood losses. NAB's 2025 white-maize forecast and Grade 1 mahangu farmgate floor-price notice remain distinct forecast/season-specific evidence. No complete crop enterprise budgets or current region-specific cost schedules are available; no calculator values are activated."
+      "extraction_status": "NAB's 2024/25 annual report adds six-zone marketed grain volumes, selected zone-level yield observations and annual floor-price averages. These agronomic zones are not administrative regions. FAO's August 2026 brief estimates 155,000 MT aggregate cereal production; communal output remains below average and Zambezi had localized pest/flood losses. No complete regional crop budgets or current farmer-paid cost schedules are available; no calculator values are activated."
     },
     {
       "country_code": "MZ",
