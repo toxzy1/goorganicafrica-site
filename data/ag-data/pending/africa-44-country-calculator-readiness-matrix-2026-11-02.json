@@ -1648,30 +1648,30 @@
       "code": "SN",
       "name": "Senegal",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "official_national_annual_agricultural_survey_2023_2024_identified_extraction_and_cost_table_review_pending",
+      "existing_research_note": "Official EAA 2024/25 catalogue and 2025 SODAGRI regional campaign table identified; partial crop-area-production observations extracted for five SODAGRI intervention regions only; full national EAA tables, farmgate prices, input costs and calculator tests remain outstanding.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "public_EAA_2024_2025_regional_tables_linked_extraction_pending",
-        "dated_local_farmgate_prices_and_units": "household_crop_sales_unit_price_fields_verified_values_and_units_extraction_pending",
-        "seed_and_planting_material_costs": "survey_seed_quantity_and_unit_price_fields_verified_extraction_pending",
-        "fertilizer_and_soil_amendment_costs": "survey_input_type_quantity_unit_and_unit_price_fields_verified_extraction_pending",
-        "crop_protection_costs": "survey_input_cost_file_verified_product_level_extraction_pending",
+        "crop_area_production_yield_by_commodity_and_season": "partial_SODAGRI_2025_area_production_extracted_for_selected_crops_in_five_intervention_regions; national_EAA_2024_2025_aggregate_extraction_pending",
+        "dated_local_farmgate_prices_and_units": "blocked_no_verified_current_crop_specific_farmgate_price_table; 2026_27_groundnut_price_not_yet_set_in_22_October_decision",
+        "seed_and_planting_material_costs": "survey_fields_confirmed_in_EAA_catalogue_but_aggregate_values_not_extracted",
+        "fertilizer_and_soil_amendment_costs": "survey_fields_confirmed_in_EAA_catalogue_but_aggregate_values_not_extracted",
+        "crop_protection_costs": "survey_fields_confirmed_in_EAA_catalogue_but_aggregate_values_not_extracted",
         "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "paid_hired_labour_person_days_hours_and_payment_fields_verified_extraction_pending",
+        "labour_rates_and_operations": "EAA_2024_2025_ILP_module_confirmed_but_aggregate_values_not_extracted",
         "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "official_ANADS_EAA_2024_2025_metadata_and_FAO_public_table_link_verified",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "regional_enterprise_budget_and_gross_margin": "blocked_incomplete_regional_cost_and_price_inputs",
+        "currency_and_exchange_rate_method": "XOF_currency_known_calculator_rounding_and_locale_tests_pending",
+        "source_provenance_and_observation_date": "pass_for_SODAGRI_2025_table_and_official_2026_10_22_marketing_decision; EAA_data_governance_conditions_recorded",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_Senegal_mapping_or_regional_test_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract and validate complete EAA 2024/25 public aggregate tables, regional/seasonal crop production, harvested area and yield.",
+        "SODAGRI 2025 values cover five intervention regions only and must not be extrapolated nationally.",
+        "Obtain dated crop-specific farmgate prices; the 2026/27 groundnut producer price is still pending formal recommendation in the 22 October decision.",
+        "Extract authorised aggregate seed, fertilizer, crop-protection and labour cost observations; obtain irrigation, energy, machinery and transport costs.",
+        "Build enterprise budgets by region and production system; map validated values and create currency, crop and region regression tests."
       ],
-      "next_step": "Resolve access to the public EAA 2024-2025 interactive tables (FAO-linked portal currently returns HTTP 403), obtain official unit-conversion workbooks, then extract regional aggregates and validate prices/costs.",
+      "next_step": "Extract official EAA 2024/25 public aggregate tables and join to the SODAGRI 2025 regional campaign evidence; then validate dated farmgate prices and farmer-paid costs before constructing regional enterprise budgets.",
       "batch_01_review": {
         "review_date": "2026-11-02",
         "country_name": "Senegal",
@@ -1751,6 +1751,11 @@
           "Build regional enterprise budgets and calculator tests."
         ],
         "regional_lookup": "14 official regions added to src/_data/calculator/regions.json on the readiness branch; lookup only, not activated."
+      },
+      "batch_05_review": {
+        "review_date": "2026-11-03",
+        "findings": "SODAGRI 2025 campaign table provides crop area and production for rice, maize, fonio, sesame, vegetables and banana across five intervention regions. Calculated production/area ratios are recorded as source-derived arithmetic, not independently published yield observations. Government 2026/27 marketing decision leaves groundnut producer price pending.",
+        "status": "research_only_not_calculator_ready"
       }
     },
     {
