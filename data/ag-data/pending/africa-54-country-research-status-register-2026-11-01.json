@@ -123,8 +123,10 @@
       "name": "Botswana",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "official_2024_2025_cereal_area_and_total_output_sources_identified_crop_specific_yields_and_discrepant_cereal_totals_need_reconciliation",
-      "calculator_status": "directory_only_not_active"
+      "review_status": "official_2025_preliminary_livestock_census_and_31_local_authority_lookup_added_2024_25_cereal_total_conflict_unresolved_crop_specific_yields_farmgate_prices_and_enterprise_costs_pending",
+      "calculator_status": "directory_only_not_active",
+      "last_reviewed": "2026-11-03",
+      "administrative_geography_status": "31_official_local_authority_councils_added_as_lookup_labels_not_equivalent_to_28_administrative_or_29_census_districts_crosswalk_pending"
     },
     {
       "code": "BF",
