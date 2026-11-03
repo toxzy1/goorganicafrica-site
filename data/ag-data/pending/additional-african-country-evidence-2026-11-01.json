@@ -2831,7 +2831,7 @@
     {
       "country_code": "BW",
       "country_name": "Botswana",
-      "evidence_status": "official_2024_2025_cereal_area_and_total_output_sources_identified_crop_specific_yields_and_discrepant_cereal_totals_need_reconciliation",
+      "evidence_status": "official_2025_preliminary_livestock_census_and_31_local_authority_lookup_added_2024_25_cereal_total_conflict_unresolved_crop_specific_yields_farmgate_prices_and_enterprise_costs_pending",
       "sources": [
         {
           "title": "Agriculture statistics portal",
@@ -3021,6 +3021,77 @@
           "publication_date": "2025-12-08",
           "status": "secondary_sector_context_and_production_system_description",
           "note": "Describes sorghum, maize, millet and pulses as major crops; commercial crop farming is concentrated around Pandamatenga and Barolong Farms. Notes that Botswana imports much of its food and that BAMB supports grain marketing. Use as context, not as the source of national yield or farm-cost assumptions."
+        },
+        {
+          "title": "Agricultural Census Stats Brief 2025—Livestock Sector",
+          "publisher": "Statistics Botswana",
+          "url": "https://www.statsbots.org.bw/agricultural-census-stats-brief-2025-livestock",
+          "release_date": "2026-09-09",
+          "reference_period": "2025 Agricultural Census; preliminary findings reported September 2026",
+          "status": "official_preliminary_census_release_livestock_national_counts_and_selected_district_patterns",
+          "observations": [
+            {
+              "species": "cattle",
+              "population": 1638543,
+              "reference_year": 2025,
+              "status": "Preliminary national census count reported by BOPA; subject to revision before final report."
+            },
+            {
+              "species": "goat",
+              "population": 1271407,
+              "reference_year": 2025,
+              "status": "Preliminary national census count reported by BOPA; subject to revision."
+            },
+            {
+              "species": "sheep",
+              "population": 323279,
+              "reference_year": 2025,
+              "status": "Preliminary national census count reported by BOPA; subject to revision."
+            },
+            {
+              "species": "cattle",
+              "population": 134395,
+              "geography": "Letlhakeng",
+              "reference_year": 2025,
+              "status": "District count reported in preliminary findings; use only as an observed count, not an enterprise yield or stocking recommendation."
+            },
+            {
+              "species": "goat",
+              "population": 122124,
+              "geography": "Kweneng",
+              "reference_year": 2025,
+              "status": "District count reported in preliminary findings."
+            },
+            {
+              "species": "sheep",
+              "population": 31318,
+              "geography": "Kweneng",
+              "reference_year": 2025,
+              "status": "District count reported in preliminary findings."
+            }
+          ],
+          "quality_notes": [
+            "Statistics Botswana's publication page labels the September 2026 livestock brief as a 2025 Agricultural Census output.",
+            "BOPA reports the findings as preliminary and subject to revision before the full report expected in December 2026.",
+            "The census reference period is reported as October 2024 to September 2025; preserve this period rather than labelling the figures as a point-in-time 2026 herd count.",
+            "Livestock population counts do not provide purchase prices, sale weights, offtake budgets, feed costs, veterinary costs, mortality-adjusted gross margins or breed-level performance."
+          ]
+        },
+        {
+          "title": "Local authorities and district/town councils",
+          "publisher": "Government of Botswana, Ministry of Local Government and Traditional Affairs",
+          "url": "https://gov.bw/ministries/ministry-local-government-and-traditional-affairs",
+          "status": "official_list_of_31_local_authority_councils_for_geographic_lookup",
+          "note": "The government page lists 31 councils. These include district councils, city/town councils and other local authority areas; they are not interchangeable with agricultural census districts or first-order administrative districts. The calculator region selector therefore uses these as local-authority lookup labels pending a harmonised official agricultural district crosswalk."
+        },
+        {
+          "title": "Agricultural Census 2025 collection notice",
+          "publisher": "Statistics Botswana",
+          "url": "https://dailynews.gov.bw/common_up/dailynews/dailynews_pdf/10-02-2025_07-44-03_1739166243_dailynews_pdf.pdf",
+          "publication_date": "2025-02-10",
+          "reference_period": "February to December 2025",
+          "status": "official_census_scope_and_collection_timetable",
+          "note": "The notice says the census covered traditional and commercial agricultural holdings and aimed to establish a baseline at national and agricultural district levels."
         }
       ],
       "priority_commodities": [
@@ -3036,7 +3107,7 @@
         "cattle"
       ],
       "remaining_gaps": [
-        "download and extract the 2025 Agricultural Census Stats Brief—Livestock and the latest annual agricultural survey report",
+        "obtain the final 2025 Agricultural Census report and district-level tables when published; the September 2026 livestock brief and BOPA figures are preliminary",
         "obtain crop-specific harvested area, production and yield tables for the 2024/25 season by district and sector",
         "reconcile the 117,228.42 MT and 137,876.84 MT 2024/25 cereal totals against the Ministry's original crop assessment and identify whether their coverage differs",
         "separate Pandamatenga commercial irrigated/large-scale production from traditional rain-fed smallholder systems",
@@ -3045,9 +3116,10 @@
         "obtain farmer-paid seed, fertilizer, pesticide, labour, mechanization, water, fuel, transport and land-preparation costs for rain-fed and commercial systems",
         "obtain current cattle, goat, sheep and poultry purchase prices, liveweight/sale prices, feed, veterinary, mortality and offtake data",
         "keep historical 2017/2019 traditional-sector livestock counts separate from current census counts and commercial herd data",
-        "do not activate calculator profiles until crop-specific yield distributions, dated prices and complete enterprise budgets are checked"
+        "do not activate calculator profiles until crop-specific yield distributions, dated prices and complete enterprise budgets are checked",
+        "build and verify a crosswalk between the 31 local-authority council labels, the 28 administrative districts reported after decentralisation, and the 29 agricultural census districts covered in the preliminary census reporting"
       ],
-      "extraction_status": "Botswana has an official annual agricultural statistics programme and a strong BAMB producer-price information channel. Ministry reporting provides 2024/25 total cereal output and maize/sorghum planted areas, but two official government publications report conflicting cereal totals (117,228.42 versus 137,876.84 MT). Crop-specific harvested area/yields and current cost budgets remain unextracted. Historical livestock data are sector-specific and dated. No Botswana calculator values are activated."
+      "extraction_status": "Batch 38 adds preliminary 2025 census livestock counts, selected district concentrations and an official 31-council local-authority list. The census figures are preliminary and must be replaced or confirmed by the final report. The 2024/25 cereal aggregate discrepancy remains unresolved (117,228.42 versus 137,876.84 MT); crop-specific harvested area/yields, official price-file extraction, farmer-paid input costs and enterprise budgets remain incomplete. No calculator values are activated."
     },
     {
       "country_code": "AO",
