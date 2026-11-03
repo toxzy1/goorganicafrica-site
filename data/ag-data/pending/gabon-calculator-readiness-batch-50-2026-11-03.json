@@ -1,0 +1,223 @@
+{
+  "title": "Gabon calculator readiness — Batch 50",
+  "country": "Gabon",
+  "iso_alpha2": "GA",
+  "iso_alpha3": "GAB",
+  "review_date": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "calculator_status": "directory_only_not_active",
+  "scope": "Official INSTAT EPVA statistical tables were extracted for cassava and plantain by province. This is a research evidence addition, not authorization to activate Gabon or change calculator formulas.",
+  "source": {
+    "name": "INSTAT Gabon, Recensement Général de l’Agriculture 2022–2023, Enquête de Productions Végétale et Animale, Volume 2 — Tableaux statistiques",
+    "url": "https://instatgabon.org/uploads/folder_1/RGA/Enque%CC%82te%20de%20Production%20Ve%CC%81ge%CC%81tale%20et%20Animale%20%28EPVA%29/Rapport%20tableaux%20statistiques%20EPVA_Volume%202.pdf",
+    "tables": [
+      "Tableau 119: average yield (t/ha) by province for cassava and plantain",
+      "Tableau 120: cassava area, yield and production by province",
+      "Tableau 121: plantain area, yield and production by province"
+    ],
+    "source_note": "The PDF is Volume 2, statistical tables. The EPVA page states the survey supplements the RGA enumeration and is intended to measure agricultural production and agripastoral activity."
+  },
+  "regional_observations": [
+    {
+      "province": "Estuaire",
+      "cassava": {
+        "area_ha": 456,
+        "yield_t_ha": 2.95,
+        "production_t": 1347
+      },
+      "plantain": {
+        "area_ha": 565,
+        "yield_t_ha": 4.81,
+        "production_t": 2718
+      }
+    },
+    {
+      "province": "Haut-Ogooué",
+      "cassava": {
+        "area_ha": 1533,
+        "yield_t_ha": 4.48,
+        "production_t": 6861
+      },
+      "plantain": {
+        "area_ha": 87,
+        "yield_t_ha": 3.31,
+        "production_t": 289
+      }
+    },
+    {
+      "province": "Moyen-Ogooué",
+      "cassava": {
+        "area_ha": 149,
+        "yield_t_ha": 3.79,
+        "production_t": 563
+      },
+      "plantain": {
+        "area_ha": 185,
+        "yield_t_ha": 3.31,
+        "production_t": 613
+      }
+    },
+    {
+      "province": "Ngounié",
+      "cassava": {
+        "area_ha": 405,
+        "yield_t_ha": 6.92,
+        "production_t": 2805
+      },
+      "plantain": {
+        "area_ha": 84,
+        "yield_t_ha": 5.05,
+        "production_t": 425
+      }
+    },
+    {
+      "province": "Nyanga",
+      "cassava": {
+        "area_ha": 143,
+        "yield_t_ha": 6.68,
+        "production_t": 958
+      },
+      "plantain": {
+        "area_ha": 92,
+        "yield_t_ha": 3.82,
+        "production_t": 352
+      }
+    },
+    {
+      "province": "Ogooué-Ivindo",
+      "cassava": {
+        "area_ha": 512,
+        "yield_t_ha": 2.85,
+        "production_t": 1461
+      },
+      "plantain": {
+        "area_ha": 0,
+        "yield_t_ha": 2.02,
+        "production_t": 0,
+        "note": "The source table reports 2.02 t/ha but the area and production table shows no plantain production value for this province; do not infer a positive production volume."
+      }
+    },
+    {
+      "province": "Ogooué-Lolo",
+      "cassava": {
+        "area_ha": 260,
+        "yield_t_ha": 4.37,
+        "production_t": 1138
+      },
+      "plantain": {
+        "area_ha": 0,
+        "yield_t_ha": 4.66,
+        "production_t": 0,
+        "note": "The source table reports 4.66 t/ha but the area and production table shows no plantain production value for this province; do not infer a positive production volume."
+      }
+    },
+    {
+      "province": "Ogooué-Maritime",
+      "cassava": {
+        "area_ha": 248,
+        "yield_t_ha": 1.17,
+        "production_t": 291
+      },
+      "plantain": {
+        "area_ha": 0,
+        "yield_t_ha": 3.83,
+        "production_t": 0,
+        "note": "The source table reports 3.83 t/ha but the area and production table shows no plantain production value for this province; do not infer a positive production volume."
+      }
+    },
+    {
+      "province": "Woleu-Ntem",
+      "cassava": {
+        "area_ha": 581,
+        "yield_t_ha": 3.36,
+        "production_t": 1950
+      },
+      "plantain": {
+        "area_ha": 0,
+        "yield_t_ha": 4.89,
+        "production_t": 0,
+        "note": "The source table reports 4.89 t/ha but the area and production table shows no plantain production value for this province; do not infer a positive production volume."
+      }
+    }
+  ],
+  "national_totals": {
+    "cassava": {
+      "area_ha": 4438,
+      "yield_t_ha": 4.06,
+      "production_t": 18035
+    },
+    "plantain": {
+      "area_ha": 1094,
+      "yield_t_ha": 3.97,
+      "production_t": 4778
+    },
+    "caveat": "Totals are transcribed from EPVA Tables 120 and 121. Province rows and totals should be checked against the original PDF before production use; some table 119 yield entries appear even where table 121 shows no area/production."
+  },
+  "additional_data_coverage": {
+    "provinces": [
+      "Estuaire",
+      "Haut-Ogooué",
+      "Moyen-Ogooué",
+      "Ngounié",
+      "Nyanga",
+      "Ogooué-Ivindo",
+      "Ogooué-Lolo",
+      "Ogooué-Maritime",
+      "Woleu-Ntem"
+    ],
+    "other_epva_tables": "The volume also contains province-level tables on farm labour types and days/hours worked, crop and parcel practices, seed acquisition and quality, fertilizer and crop-protection use, livestock populations and equipment. These are structural/use indicators, not current unit prices or monetary enterprise budgets."
+  },
+  "current_context": [
+    {
+      "source": "FAO GIEWS Gabon Country Brief",
+      "url": "https://cb.apps.fao.org/country.jsp?code=GAB&lang=en",
+      "reference_date": "2026-06-04",
+      "findings": [
+        "Cassava and plantain are the main food crops; maize production is small.",
+        "Above-average rainfall and flooding in the first half of 2026 may have affected the secondary maize crop.",
+        "2026 cereal import requirements forecast at 255,000 tonnes; cereals account for about 90 percent of utilization."
+      ]
+    },
+    {
+      "source": "Gabonese Press Agency citing DGEPF sector note",
+      "url": "https://agpgabon.ga/gabon-agriculture-de-rente-une-production-en-net-repli-au-quatrieme-trimestre-2025/",
+      "publication_date": "2026-04-29",
+      "findings": [
+        "Cash-crop production index fell 12.4 percent in Q4 2025; palm bunch harvest fell 26.4 percent in the quarter.",
+        "Full-year 2025 cash-crop production increased 1.1 percent.",
+        "Wet rubber production increased 21.4 percent in Q4 2025."
+      ]
+    },
+    {
+      "source": "Gabonese Press Agency citing DGEPF sector note",
+      "url": "https://agpgabon.ga/gabon-fort-rebond-de-lagriculture-de-rente-au-deuxieme-trimestre-2026/",
+      "publication_date": "2026-10-12",
+      "findings": [
+        "Cash-crop activity increased 42.2 percent quarter-on-quarter in Q2 2026, with palm bunch harvest up 82.2 percent from Q1.",
+        "This is an industrial cash-crop index, not smallholder food-crop yield or farmgate price data."
+      ]
+    }
+  ],
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_EPVA_2022_23_province_level_cassava_and_plantain_area_yield_production_extracted_other_15_commodities_and_final_current_season_tables_pending",
+    "dated_local_farmgate_prices_and_units": "blocked_no_verified_current_province_crop_farmgate_series",
+    "seed_and_planting_material_costs": "partial_EPVA_seed_use_and_acquisition_indicators_only_no_current_unit_prices",
+    "fertilizer_and_soil_amendment_costs": "partial_EPVA_fertilizer_use_indicators_only_no_current_product_prices_or_application_costs",
+    "crop_protection_costs": "partial_EPVA_phytosanitary_use_indicators_only_no_current_product_prices_or_budgets",
+    "irrigation_water_and_energy_costs": "not_yet_audited",
+    "labour_rates_and_operations": "partial_EPVA_labour_types_and_days_hours_tables_available_but_no_current_provincial_wage_rates",
+    "machinery_and_land_preparation_costs": "partial_EPVA_equipment_use_tables_available_but_no_current_machine_hire_or_land_preparation_tariffs",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_verified_province_crop_farmgate_prices_or_complete_costed_budgets",
+    "currency_and_exchange_rate_method": "partial_XAF_CFA_franc_currency_known_calculator_locale_and_rounding_tests_pending",
+    "source_provenance_and_observation_date": "partial_official_INSTAT_EPVA_2022_23_and_FAO_2026_and_DGEPF_sector_updates_recorded",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_price_cost_dataset_or_regression_tests"
+  },
+  "blockers": [
+    "Transcribe and validate the complete EPVA crop and livestock tables, including source-period and sampling metadata; resolve table 119 versus Tables 120–121 plantain province inconsistencies.",
+    "Extract province-level crop data for other supported commodities where EPVA provides observations; do not extrapolate cassava/plantain yields to other crops.",
+    "Obtain dated province-level farmgate prices by commodity, grade, unit and market level.",
+    "Obtain current farmer-paid seed, fertilizer, crop-protection, irrigation, energy, labour, machinery, transport, packaging and storage costs.",
+    "Construct province-specific enterprise budgets and test cases before mapping any data into the calculator."
+  ],
+  "decision": "Gabon remains research-only. EPVA now provides a meaningful province-level cassava and plantain evidence base, but the missing farmgate prices and operating costs prevent calculator activation."
+}
