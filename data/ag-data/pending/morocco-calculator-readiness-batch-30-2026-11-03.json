@@ -1,0 +1,95 @@
+{
+  "title": "Morocco calculator readiness research — Batch 30",
+  "batch": 30,
+  "country_code": "MA",
+  "country_name": "Morocco",
+  "completed_on": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "calculator_status": "not_active",
+  "executive_summary": "Added official HCP historical commodity production and 2025/26 government campaign evidence. Morocco now has its 12 administrative regions represented in the region selector, but remains research-only because regional crop coefficients, net farm-gate prices, current input costs and complete enterprise budgets are not yet available.",
+  "sources": [
+    {
+      "publisher": "Royaume du Maroc / Maroc.ma (MAP)",
+      "date": "2026-04-21",
+      "url": "https://maroc.ma/fr/actualites/campagne-agricole-2025-2026-la-recolte-cerealiere-prevue-pres-de-90-mqx",
+      "use": "2025/26 cereal forecast of 90 million quintals and 3.9 million hectares sown; campaign outlook only."
+    },
+    {
+      "publisher": "LeBrief, reporting Minister of Agriculture",
+      "date": "2026-06-16",
+      "url": "https://www.lebrief.ma/campagne-cerealiere-bons-rendements-57-quintaux-par-hectare-100156254/",
+      "use": "Preliminary regional cereal yield range 15–57 quintals/ha; not crop- or region-disaggregated."
+    },
+    {
+      "publisher": "HCP Morocco",
+      "date": "2025",
+      "url": "https://www.hcp.ma/file/246713/",
+      "use": "Official 2023/24 national commodity production table."
+    },
+    {
+      "publisher": "ONSSA",
+      "date": "accessed 2026-11-03",
+      "url": "https://www.onssa.gov.ma/intrants-agricoles-ia/control-of-agricultural-inputs/?lang=en",
+      "use": "Regulatory input quality and irrigation-water controls, not prices."
+    },
+    {
+      "publisher": "FAO GIEWS",
+      "date": "2026-07-08",
+      "url": "https://cb.apps.fao.org/country.jsp?code=MAR&lang=en",
+      "use": "Independent 2026 cereal forecast and food security context; differs in estimate/definition from government campaign forecast."
+    }
+  ],
+  "regional_coverage": {
+    "count": 12,
+    "regions": [
+      "Tanger-Tétouan-Al Hoceïma",
+      "Oriental",
+      "Fès-Meknès",
+      "Rabat-Salé-Kénitra",
+      "Béni Mellal-Khénifra",
+      "Casablanca-Settat",
+      "Marrakech-Safi",
+      "Drâa-Tafilalet",
+      "Souss-Massa",
+      "Guelmim-Oued Noun",
+      "Laâyoune-Sakia El Hamra",
+      "Dakhla-Oued Ed-Dahab"
+    ],
+    "selector_updated": true
+  },
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "blocked",
+    "seed_and_planting_material_costs": "partial",
+    "fertilizer_and_soil_amendment_costs": "blocked",
+    "crop_protection_costs": "unavailable",
+    "irrigation_water_and_energy_costs": "partial",
+    "labour_rates_and_operations": "partial",
+    "machinery_and_land_preparation_costs": "partial",
+    "regional_enterprise_budget_and_gross_margin": "partial",
+    "currency_and_exchange_rate_method": "pass",
+    "source_provenance_and_observation_date": "pass",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "safeguards": [
+    "No national cereal production forecast was converted into crop yield per hectare.",
+    "No wholesale price or wheat reference purchase target was treated as a net farmer farm-gate price.",
+    "No old or sample-specific input costs were represented as current national defaults.",
+    "Original 10 active calculator country profiles were not changed.",
+    "Morocco remains directory-only and is not active in the calculator."
+  ],
+  "remaining_work": [
+    "Acquire crop-by-region area, harvested area and yield tables by crop and season.",
+    "Collect dated producer settlement prices by region, grade and unit.",
+    "Collect current seed, fertilizer, pesticide, labour, machinery and irrigation invoices/official schedules.",
+    "Build representative rainfed and irrigated budgets for priority commodities.",
+    "Map validated observations into calculator data and add deterministic tests."
+  ],
+  "commit_shas": {
+    "evidence": "78b58974b22a35121c716b4c35ba8e72285054c0",
+    "matrix": "3d7ad782a1fff610b7de4851cd6802e2f46f23d1",
+    "register": "8c1401adf85100012dd0ecbcb998759dff0be80b",
+    "regions": "ea3a8f9e7df76639be08add49ff2e029972d47bc"
+  },
+  "validation_pending": "JSON parse and registry invariants to be checked after report commit."
+}
