@@ -1249,27 +1249,27 @@
       "existing_research_note": "FAO_catalogued_EAC_2023_2024_sample_survey_and_USDA_rice_price_production_crosschecks_identified",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_catalogued_EAC_2023_24_has_crop_cut_yields_GPS_plot_area_and_input_modules_but_Kidal_excluded_and_sample_coverage_incomplete_2025_campaign_cereal_and_cotton_aggregates_verified_crop_specific_regional_yield_extraction_pending",
+        "dated_local_farmgate_prices_and_units": "partial_USDA_FAS_reports_2025_03_local_rice_farmgate_price_400_XOF_per_kg_2026_27_seed_cotton_policy_price_300_XOF_per_kg_announced_current_crop_specific_regional_quotes_incomplete",
+        "seed_and_planting_material_costs": "blocked_no_current_region_crop_seed_price_and_delivery_schedule",
+        "fertilizer_and_soil_amendment_costs": "partial_2026_27_policy_support_price_announced_15000_XOF_per_50kg_mineral_and_3000_XOF_per_50kg_organic_but_formulation_eligibility_and_farmer_paid_delivery_cost_not_verified_FAO_reports_urea_NPK_DAP_prices_rose_Feb_to_Mar_2026",
+        "crop_protection_costs": "blocked_no_current_crop_specific_pesticide_herbicide_fungicide_prices_and_application_costs",
+        "irrigation_water_and_energy_costs": "partial_government_2026_programme_prioritises_water_control_and_hydro_agricultural_development_but_region_scheme_tariffs_pumping_and_crop_water_costs_missing",
+        "labour_rates_and_operations": "partial_EAC_survey_contains_family_and_hired_labour_modules_but_weighted_operation_level_rates_and_labour_days_not_extracted",
+        "machinery_and_land_preparation_costs": "partial_government_2026_programme_prioritises_mechanisation_but_current_machine_hire_and_operation_cost_schedules_missing",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets",
+        "currency_and_exchange_rate_method": "partial_XOF_West_African_CFA_franc_identified_but_calculator_currency_rounding_and_test_method_not_verified",
+        "source_provenance_and_observation_date": "partial_Government_2025_campaign_results_FAO_GIEWS_2026_EAC_2023_24_USDA_FAS_2025_and_2026_27_campaign_policy_announcements_recorded",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_regional_crop_yield_price_and_cost_dataset_or_XOF_test_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract and quality-check the EAC 2023-2024 crop-cut yield, plot area, input use, labour and livestock tables; document survey weights, sample coverage and Kidal exclusion.",
+        "Obtain current crop-specific farmgate prices by region and market; the 2025 rice farmgate price is historical and the 2026 cotton price applies to a specified campaign grade.",
+        "Verify the 2026/27 fertilizer support price, product formulation, eligibility, allocation and farmer-paid delivery costs.",
+        "Obtain current seed, crop protection, labour, machinery, irrigation, energy and transport costs by region and production system.",
+        "Build validated regional crop/livestock enterprise budgets and XOF regression tests before calculator activation."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "next_step": "Extract the EAC 2023-2024 small-area and crop-cut yield tables; verify 2026/27 policy input prices and obtain current regional farmgate prices and enterprise costs.",
       "batch_08_review": {
         "review_date": "2026-11-02",
         "source_notes": "Mali's territorial reorganisation is operational. The Government reported 19 regions and the District of Bamako, with new administrative units operational and governors, prefects and sub-prefects appointed. The 19-region list is recorded separately from the Bamako district. Region names are cross-checked against the 2025 administrative division reference; spelling is normalized to French diacritics where appropriate.",
@@ -1280,6 +1280,39 @@
           "https://www.ortm.ml/index.php/decoupage-administratif-et-territorial-la-nouvelle-carte-administrative-du-mali-operationnelle"
         ],
         "regional_lookup": "19 administrative regions added to src/_data/calculator/regions.json. District of Bamako is separate and excluded from the 19-region list; lookup only, not activated."
+      },
+      "administrative_geography_status": "19_regions_and_separate_Bamako_district_verified_existing_region_lookup_retained",
+      "batch_27_review": {
+        "review_date": "2026-11-03",
+        "batch": 27,
+        "country_name": "Mali",
+        "administrative_geography": "19 administrative regions plus the separate District of Bamako; 159 cercles, 474 arrondissements and 815 communes reported in the 2024 operational territorial reorganisation. Existing 19-region selector entry is retained.",
+        "official_2025_campaign": "Government reports 11,452,540 tonnes of cereals and 433,700 tonnes of cotton seed in the 2025 campaign; these national totals are not crop-specific regional yields.",
+        "input_policy": "2026/27 campaign announcements report 300 XOF/kg first-grade seed cotton, 15,000 XOF per 50 kg mineral fertiliser bag and 3,000 XOF per 50 kg organic fertiliser bag. Treat as campaign support/policy prices pending eligibility and farmer-paid cost validation.",
+        "survey_quality": "EAC 2023-2024 includes crop-cut yield measurement, GPS plot area, inputs, labour and livestock but excludes Kidal and has incomplete sample coverage; survey weights and precision must be assessed.",
+        "market_evidence": "FAO GIEWS reports wholesale coarse-grain trends through July 2026; USDA FAS reports a March 2025 local rice farmgate price of 400 XOF/kg. Neither alone supplies a current regional farmgate price matrix.",
+        "criterion_status": {
+          "crop_area_production_yield_by_commodity_and_season": "partial_FAO_catalogued_EAC_2023_24_has_crop_cut_yields_GPS_plot_area_and_input_modules_but_Kidal_excluded_and_sample_coverage_incomplete_2025_campaign_cereal_and_cotton_aggregates_verified_crop_specific_regional_yield_extraction_pending",
+          "dated_local_farmgate_prices_and_units": "partial_USDA_FAS_reports_2025_03_local_rice_farmgate_price_400_XOF_per_kg_2026_27_seed_cotton_policy_price_300_XOF_per_kg_announced_current_crop_specific_regional_quotes_incomplete",
+          "seed_and_planting_material_costs": "blocked_no_current_region_crop_seed_price_and_delivery_schedule",
+          "fertilizer_and_soil_amendment_costs": "partial_2026_27_policy_support_price_announced_15000_XOF_per_50kg_mineral_and_3000_XOF_per_50kg_organic_but_formulation_eligibility_and_farmer_paid_delivery_cost_not_verified_FAO_reports_urea_NPK_DAP_prices_rose_Feb_to_Mar_2026",
+          "crop_protection_costs": "blocked_no_current_crop_specific_pesticide_herbicide_fungicide_prices_and_application_costs",
+          "irrigation_water_and_energy_costs": "partial_government_2026_programme_prioritises_water_control_and_hydro_agricultural_development_but_region_scheme_tariffs_pumping_and_crop_water_costs_missing",
+          "labour_rates_and_operations": "partial_EAC_survey_contains_family_and_hired_labour_modules_but_weighted_operation_level_rates_and_labour_days_not_extracted",
+          "machinery_and_land_preparation_costs": "partial_government_2026_programme_prioritises_mechanisation_but_current_machine_hire_and_operation_cost_schedules_missing",
+          "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets",
+          "currency_and_exchange_rate_method": "partial_XOF_West_African_CFA_franc_identified_but_calculator_currency_rounding_and_test_method_not_verified",
+          "source_provenance_and_observation_date": "partial_Government_2025_campaign_results_FAO_GIEWS_2026_EAC_2023_24_USDA_FAS_2025_and_2026_27_campaign_policy_announcements_recorded",
+          "calculator_mapping_and_test_cases": "blocked_no_validated_regional_crop_yield_price_and_cost_dataset_or_XOF_test_cases"
+        },
+        "safeguards": [
+          "Mali remains not_active and directory_only in the country registry.",
+          "The existing 19-region lookup is retained; Bamako remains a separate district, not a 20th region.",
+          "Government 2025 cereal aggregate is not split into crop or region estimates.",
+          "EAC sample exclusions and coverage limitations are recorded; no unsupported national extrapolation is made.",
+          "Historical rice farmgate price and campaign-specific cotton/fertilizer policy prices are not treated as current universal crop/input prices.",
+          "No calculator activation, merge to main or production deployment was performed."
+        ]
       }
     },
     {
