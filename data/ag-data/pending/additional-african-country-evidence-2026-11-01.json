@@ -2831,7 +2831,7 @@
     {
       "country_code": "BW",
       "country_name": "Botswana",
-      "evidence_status": "official_2025_preliminary_livestock_census_and_31_local_authority_lookup_added_2024_25_cereal_total_conflict_unresolved_crop_specific_yields_farmgate_prices_and_enterprise_costs_pending",
+      "evidence_status": "mixed_source_calculator_mode_enabled_maize_2024_faostat_yield_and_2026_bamb_reproduced_price_added_costs_benchmark_only_other_commodities_benchmark_cereal_total_discrepancy_and_district_budgets_pending",
       "sources": [
         {
           "title": "Agriculture statistics portal",
@@ -3092,6 +3092,164 @@
           "reference_period": "February to December 2025",
           "status": "official_census_scope_and_collection_timetable",
           "note": "The notice says the census covered traditional and commercial agricultural holdings and aimed to establish a baseline at national and agricultural district levels."
+        },
+        {
+          "title": "Botswana maize yield, 2024 (FAOSTAT)",
+          "publisher": "FAOSTAT; reproduced by Africa API",
+          "url": "https://africa-api.com/data/botswana/maize-yield",
+          "reference_year": 2024,
+          "status": "crop_specific_national_yield_series_reproducing_FAOSTAT",
+          "observations": [
+            {
+              "crop": "maize",
+              "yield_kg_per_ha": 600,
+              "yield_tonnes_per_ha": 0.6,
+              "reference_year": 2024,
+              "status": "National annual yield per harvested hectare; not district-specific and not a forecast."
+            }
+          ],
+          "quality_notes": [
+            "The source identifies FAOSTAT as the underlying dataset and gives 2024 maize yield of 600 kg/ha.",
+            "Use as a single observed point, not a low/expected/high range; the calculator currently repeats the point across the scenario range to avoid inventing a range."
+          ]
+        },
+        {
+          "title": "BAMB Producer/Market Prices for Schedule Produce, July/August 2026",
+          "publisher": "The Farmers' Platform Magazine, reproducing Botswana Agricultural Marketing Board schedule",
+          "url": "https://www.farmersplatform.co.bw/market-data",
+          "reference_period": "2026-07/2026-08",
+          "status": "dated_secondary_reproduction_of_BAMB_grade_specific_schedule",
+          "observations": [
+            {
+              "commodity": "white maize",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 3100,
+              "price_bwp_per_kg": 3.1,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            },
+            {
+              "commodity": "white maize",
+              "grade": "Grade 2",
+              "price_bwp_per_mt": 2170,
+              "price_bwp_per_kg": 2.17,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            },
+            {
+              "commodity": "white maize",
+              "grade": "Grade 3",
+              "price_bwp_per_mt": 1519,
+              "price_bwp_per_kg": 1.519,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            },
+            {
+              "commodity": "sorghum",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 3850,
+              "price_bwp_per_kg": 3.85,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            },
+            {
+              "commodity": "millet",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 5114.25,
+              "price_bwp_per_kg": 5.11425,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            },
+            {
+              "commodity": "groundnuts",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 14000,
+              "price_bwp_per_kg": 14,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            },
+            {
+              "commodity": "Tswana cowpeas",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 11000,
+              "price_bwp_per_kg": 11,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            },
+            {
+              "commodity": "black-eye cowpeas",
+              "grade": "Grade 1",
+              "price_bwp_per_mt": 13500,
+              "price_bwp_per_kg": 13.5,
+              "status": "BAMB producer/market schedule reproduction; grade-specific."
+            }
+          ],
+          "quality_notes": [
+            "BAMB's own public price page explains the distinction between producer prices and contract prices, but its current download links point to old files; these 2026 values are reproduced by a secondary publication, not downloaded directly from a current BAMB file.",
+            "These are grade-specific schedule prices, not universal farmgate prices; eligibility, moisture, delivery and contract terms apply.",
+            "The calculator currently localises maize only. Other crops retain Africa benchmark prices until crop-specific yields and costs are validated."
+          ]
+        },
+        {
+          "title": "Lemang Dijo one-hectare support package, 2026/27 cropping season",
+          "publisher": "Ministry of Lands and Agriculture, Botswana programme website",
+          "url": "https://lemangdijo.com/",
+          "reference_period": "2026/27",
+          "status": "government_programme_support_values_not_full_production_costs",
+          "observations": [
+            {
+              "item": "crop inputs",
+              "value_bwp_per_ha": 3095,
+              "breakdown": [
+                {
+                  "item": "seed",
+                  "value_bwp": 580
+                },
+                {
+                  "item": "harrowing",
+                  "value_bwp": 495
+                },
+                {
+                  "item": "ploughing",
+                  "value_bwp": 1045
+                },
+                {
+                  "item": "planting",
+                  "value_bwp": 495
+                },
+                {
+                  "item": "pesticides_or_herbicides",
+                  "value_bwp": 480
+                }
+              ],
+              "status": "Programme e-voucher value for eligible micro-scale farmers, not a general market quote."
+            },
+            {
+              "item": "fertiliser",
+              "value_bwp_per_ha": 3600,
+              "status": "Up to this amount after compulsory soil test; not a standard farmer-paid cost."
+            },
+            {
+              "item": "soil_test_voucher",
+              "value_bwp": 500,
+              "status": "Separate voucher; not part of e-voucher total."
+            },
+            {
+              "item": "e_voucher_total_with_soil_test",
+              "value_bwp_per_ha": 6695,
+              "status": "Support value, not total enterprise production cost."
+            },
+            {
+              "item": "minimum_grain_target",
+              "value_tonnes_per_ha": 1,
+              "status": "Programme target for supported farmer; not measured average yield."
+            }
+          ],
+          "quality_notes": [
+            "Eligibility is restricted to micro-scale farmers meeting programme registration and other conditions; support is capped at one hectare.",
+            "Chobe has a special fertiliser arrangement for the 2026/27 season.",
+            "The programme values cannot be substituted for full farm production costs or used to infer gross margin."
+          ]
+        },
+        {
+          "title": "BAMB official producer and contract price information",
+          "publisher": "Botswana Agricultural Marketing Board",
+          "url": "https://www.bamb.co.bw/bamb-prices",
+          "status": "official_price_policy_and_price_download_portal",
+          "note": "BAMB distinguishes producer prices (market-linked, using SAFEX as a benchmark) from contract prices (minimum guaranteed for participating contract farmers). The current linked PDFs retrieved during this review were dated June 2022 for producer prices and 2021 for contract prices; therefore the newer July/August 2026 schedule above is retained as a secondary reproduction pending current primary-file confirmation."
         }
       ],
       "priority_commodities": [
@@ -3107,19 +3265,20 @@
         "cattle"
       ],
       "remaining_gaps": [
+        "obtain a current BAMB primary producer/contract price file; the live portal download links still resolve to older 2021/2022 PDFs, while July/August 2026 schedule values are available only as a secondary reproduction",
         "obtain the final 2025 Agricultural Census report and district-level tables when published; the September 2026 livestock brief and BOPA figures are preliminary",
         "obtain crop-specific harvested area, production and yield tables for the 2024/25 season by district and sector",
         "reconcile the 117,228.42 MT and 137,876.84 MT 2024/25 cereal totals against the Ministry's original crop assessment and identify whether their coverage differs",
         "separate Pandamatenga commercial irrigated/large-scale production from traditional rain-fed smallholder systems",
-        "extract current official BAMB producer and contract price files, preserving grade, crop, period, delivery conditions and eligible producer class",
         "obtain current district-level retail/wholesale and farm-gate prices for horticulture, livestock and poultry",
         "obtain farmer-paid seed, fertilizer, pesticide, labour, mechanization, water, fuel, transport and land-preparation costs for rain-fed and commercial systems",
         "obtain current cattle, goat, sheep and poultry purchase prices, liveweight/sale prices, feed, veterinary, mortality and offtake data",
         "keep historical 2017/2019 traditional-sector livestock counts separate from current census counts and commercial herd data",
         "do not activate calculator profiles until crop-specific yield distributions, dated prices and complete enterprise budgets are checked",
-        "build and verify a crosswalk between the 31 local-authority council labels, the 28 administrative districts reported after decentralisation, and the 29 agricultural census districts covered in the preliminary census reporting"
+        "build and verify a crosswalk between the 31 local-authority council labels, the 28 administrative districts reported after decentralisation, and the 29 agricultural census districts covered in the preliminary census reporting",
+        "obtain matching current farmer-paid cost quotes and crop-specific yield distributions for all 17 calculator commodities; current localized maize cost remains an Africa benchmark proxy"
       ],
-      "extraction_status": "Batch 38 adds preliminary 2025 census livestock counts, selected district concentrations and an official 31-council local-authority list. The census figures are preliminary and must be replaced or confirmed by the final report. The 2024/25 cereal aggregate discrepancy remains unresolved (117,228.42 versus 137,876.84 MT); crop-specific harvested area/yields, official price-file extraction, farmer-paid input costs and enterprise budgets remain incomplete. No calculator values are activated."
+      "extraction_status": "Botswana now has a mixed-source calculator record for maize: 2024 FAOSTAT-reproduced yield (0.6 t/ha), July/August 2026 BAMB-reproduced white-maize grade prices (P1.519–P3.10/kg) and a clearly labelled Africa benchmark cost proxy. The calculator now labels yield, price and cost sources and dates separately, and fills only missing fields from the benchmark. The 2026/27 Lemang Dijo support schedule (P3,095 crop inputs plus up to P3,600 fertiliser after soil test; P6,695 total support) is recorded as a programme subsidy, not total production cost. Other 16 commodities remain benchmark-based; current primary BAMB price files, district yield distributions and complete farmer-paid costs remain outstanding. The 2024/25 national cereal total conflict remains unresolved. Botswana is usable in mixed-source planning mode but is not certified as fully locally data-ready."
     },
     {
       "country_code": "AO",
