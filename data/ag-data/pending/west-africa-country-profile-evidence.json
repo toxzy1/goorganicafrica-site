@@ -1280,35 +1280,59 @@
     {
       "country_code": "BF",
       "country_name": "Burkina Faso",
-      "evidence_status": "official_cereal_and_market_sources_identified_crop_level_series_extraction_pending",
+      "evidence_status": "EPA_2024_25_catalogue_and_scope_verified_restricted_microdata_extraction_pending",
       "survey": {
-        "title": "FAO GIEWS Burkina Faso country brief and national agricultural statistics",
-        "publisher": "FAO Global Information and Early Warning System; national agriculture ministry and SIMA",
+        "title": "FAO AGRISurvey and INSD/DGESS Permanent Agricultural Survey 2024/25",
+        "publisher": "INSD Burkina Faso; DGESS/MARAH; FAO 50x2030 technical support",
         "source_urls": [
-          "https://www.fao.org/giews/countrybrief/country.jsp?code=BF",
-          "https://sima-bf.net/"
+          "https://www.fao.org/in-action/agrisurvey/access-to-data/burkina-faso/en",
+          "https://microdata.insd.bf/index.php/catalog/86",
+          "https://www.fao.org/in-action/agrisurvey/news/news-detail/burkina-faso-releases-new-survey-and-census-data-under-the-50x2030-initiative/en"
         ],
-        "reference_period": "FAO country brief reference date 2025-06-19; cereal production estimate for 2024.",
+        "reference_period": "EPA field collection July-December 2024; 2024/25 agricultural campaign; dataset v2.1 dated 2026-03-30; public release announced 2026-10-15",
         "source_observations": [
           {
             "indicator": "total cereal production",
             "value_mt": 6100000,
             "reference_year": 2024,
             "source": "FAO GIEWS citing official national estimate",
-            "status": "national aggregate only; cannot be assigned to maize/rice or any individual commodity"
+            "status": "national aggregate only; do not split into crop values or regional yields"
+          },
+          {
+            "indicator": "EPA survey design",
+            "value": "5,304 agricultural households in 884 villages",
+            "reference_period": "2024/25",
+            "source": "INSD/DGESS microdata catalogue",
+            "status": "national sample; estimates by crop and province at 95% confidence and ±10% margin of error"
+          },
+          {
+            "indicator": "EPA crop scope",
+            "value": "rainfed and off-season crops; agricultural production, area, yield, input use, access to services, equipment, livestock ownership and sales receipts",
+            "reference_period": "2024/25",
+            "source": "INSD/DGESS microdata catalogue",
+            "status": "thematic scope verified; exact tables and values require lawful microdata access or published aggregate tabulations"
+          },
+          {
+            "indicator": "geographic coverage",
+            "value": "43 provinces",
+            "reference_period": "2024/25 survey geography",
+            "source": "INSD/DGESS microdata catalogue",
+            "status": "Soum and Loroum excluded; survey predates July 2025 reorganisation into 47 provinces"
           }
         ],
         "market_price_source": {
-          "title": "Système d'Information sur les Marchés Agricoles (SIMA)",
-          "url": "https://sima-bf.net/",
-          "publisher": "Burkina Faso agricultural market information system",
-          "status": "priority_price_source_requires_dated_market_extraction",
-          "note": "FAO GIEWS reports monitored wholesale millet and sorghum prices; extract SIMA observations with market, date, grade, currency and unit."
+          "title": "SIMAgri Burkina Faso / APROSSA market price portal",
+          "url": "https://bf.simagri.net/accueilV2",
+          "publisher": "APROSSA / Afrique Verte",
+          "status": "market_listings_visible_but_observation_date_and_transaction_level_require_validation",
+          "note": "Portal displays market-specific prices and product grades/units for maize, millet, sorghum, cowpea, rice, soybean, groundnut and other products across markets including Tenkodogo, Toma, Nouna, Sidéradougou, Ouahigouya, Sankariare and Kaya. Do not infer farm-gate prices or assign current observation dates from the dynamic page."
         },
         "quality_notes": [
-          "The 2024 aggregate cereal estimate is not a crop-specific yield or farm budget.",
-          "FAO reports conflict-related access disruptions and localized crop production shortfalls in several regions; a single national average may conceal material regional variation.",
-          "Prices of millet and sorghum were reported above year-earlier levels in May 2025; this is context, not a current calculator price."
+          "EPA 2024/25 metadata confirms crop-by-province production estimates and extensive input, livestock, equipment and sales modules; no individual values are inserted until the permitted tables or microdata are obtained.",
+          "The EPA survey geography is pre-July 2025 and excludes the former Soum and Loroum; do not silently map its province identifiers to the current 47 provinces.",
+          "The July 2025 administrative reform changed 13 regions/45 provinces to 17 regions/47 provinces. A verified historical-to-current geographic crosswalk is required.",
+          "The 2024 national aggregate cereal production estimate of 6.1 million tonnes is not crop-specific and cannot be used as maize, rice, millet or sorghum yield.",
+          "Market listing values without an observation date and transaction type are indicative market intelligence only, not approved calculator farm-gate prices."
         ],
         "priority_commodities": [
           "maize",
@@ -1322,13 +1346,25 @@
           "pig"
         ],
         "remaining_gaps": [
-          "obtain official crop-specific 2024 production, harvested area and yield tables",
-          "obtain region-level crop estimates and account for inaccessible production zones",
-          "extract current SIMA producer/wholesale prices for calculator commodities",
-          "obtain current seed, fertilizer, pesticide, labour, mechanization and transport prices",
-          "obtain livestock purchase, feed, veterinary and output-price budgets"
+          "Obtain permitted EPA 2024/25 aggregate tables or approved microdata extracts for commodity-specific production, area, yield and input variables by province.",
+          "Obtain a documented crosswalk from the EPA's pre-July-2025 province geography (43 observed provinces; Soum and Loroum excluded) to the current 47 provinces and 17 regions.",
+          "Obtain dated SIMA/SIMAgri market price extracts with product grade, market, date, price side and transaction level; separate producer, wholesale and retail prices.",
+          "Obtain current seed, fertiliser, crop protection, labour, mechanisation, irrigation, energy and transport costs by production system.",
+          "Build crop-specific regional enterprise budgets; account for rainfed/off-season and irrigated systems, and conflict-related access gaps."
         ],
-        "extraction_status": "Official FAO GIEWS country brief and SIMA market portal identified. Only an aggregate 2024 cereal estimate is currently recorded; no crop-specific values are admitted."
+        "extraction_status": "Batch 41: upgraded evidence to the INSD/DGESS EPA 2024/25 catalogue (5,304 households, 884 villages, crop-by-province estimates at 95% confidence/±10%, input/equipment/livestock/sales modules; microdata v2.1 is restricted). Added FAO October 2026 release confirmation, current 17-region/47-province geography, SIMAgri market portal as a price extraction lead, and strict crosswalk/data-access blockers. No unverified crop yields, prices or costs activated.",
+        "microdata_access": {
+          "catalogue_id": "BFA-MARAH-DGESS-EPA-2024-2025-v01",
+          "version": "v2.1 cleaned and anonymised scientific-use data",
+          "version_date": "2026-03-30",
+          "data_collection": "2024-07 to 2024-12",
+          "sample_households": 5304,
+          "sample_villages": 884,
+          "estimate_precision": "95% confidence; ±10% margin of error",
+          "geography": "43 provinces; Soum and Loroum excluded",
+          "access_status": "restricted_application_to_DGESS_MARAH",
+          "restrictions_note": "Microdata access is limited to approved named research-team members; no raw microdata redistributed or treated as open-access."
+        }
       }
     },
     {
