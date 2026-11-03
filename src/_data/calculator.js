@@ -9,7 +9,7 @@ const countries = (managedCountries.list || []).map((c) => ({
   currency_code: c.currency || c.currency_code,
   currency_symbol: c.symbol || c.currency_symbol,
   flag: c.flag || '',
-  active: c.available !== false,
+  active: c.available !== false && c.directory_only !== true,
   default_language: c.default_language || 'en',
   source_profile: c.source_profile || `${String(c.code).toLowerCase()}-ag-data`
 }));
