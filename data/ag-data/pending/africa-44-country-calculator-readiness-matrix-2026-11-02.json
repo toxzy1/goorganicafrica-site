@@ -3,18 +3,20 @@
   "version": 1,
   "created_at": "2026-11-03",
   "status": "baseline_gap_register_not_calculator_data",
-  "scope": "Tracks evidence-to-calculator completion for the 44 countries outside the 10 existing active profiles. This is a work queue, not a certification of data quality or a source of values for calculations.",
+  "scope": "Tracks evidence-to-calculator completion for the 43 research-only countries outside the 11 calculator-enabled profiles. The 44-country evidence register includes Botswana, which is now enabled in mixed-source operational mode but is not fully locally data-ready. This is a work queue, not a certification of data quality.",
   "safeguards": [
-    "Do not modify the 10 active country profiles or calculator formulas in this workstream.",
-    "Do not activate a country until all required commodity-level values have provenance, dates, units, regional scope and validation.",
+    "Do not modify the 10 original active country profiles or calculator formulas in this workstream.",
+    "Botswana is calculator-enabled in mixed-source mode; do not describe its 17 commodity profiles as fully locally validated.",
+    "Do not activate any other country until required commodity-level values have provenance, dates, units, regional scope and validation.",
     "Never fill missing prices, yields or costs with invented values.",
     "Keep national statistics, market prices, farmgate prices and modelled estimates clearly distinguished."
   ],
   "summary": {
     "registry_countries": 54,
-    "existing_active_profiles": 10,
-    "research_only_countries": 44,
-    "not_yet_researched": 0,
+    "calculator_enabled_profiles": 11,
+    "research_only_countries": 43,
+    "research_evidence_records_including_mixed_source_Botswana": 44,
+    "mixed_source_operational_profiles_not_fully_local": 1,
     "readiness_certified": 0
   },
   "readiness_criteria": [
