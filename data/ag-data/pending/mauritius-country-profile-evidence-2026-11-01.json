@@ -521,22 +521,277 @@
         "The 25% self-sufficiency and 77% food-import dependence statements are broad estimates from different sources and may use different definitions; do not combine them as exact complements.",
         "Import volumes and trade values must not be treated as domestic farm output or farm-gate prices."
       ]
+    },
+    {
+      "id": "MU-08",
+      "topic": "2025 crop-specific and livestock production verification plus 2026 first-half update",
+      "source": "Statistics Mauritius, Agricultural and Fish Production Year 2025; Agricultural and Fish Production January-June 2026",
+      "source_url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2026/EI1914/Agri_Fish_Yr25_180326.pdf",
+      "additional_source_url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/Agriculture/Agri_Fish_Jan-Jun26.aspx",
+      "reference_date": "2026-09-23",
+      "values": [
+        {
+          "indicator": "sugar_cane_area_harvested",
+          "value": 33805,
+          "unit": "ha",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "sugar_cane_production",
+          "value": 2321704,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "sugar_cane_yield",
+          "value": 68.68,
+          "unit": "tonnes_per_ha",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "open_field_food_crop_area",
+          "value": 9991.1,
+          "unit": "ha",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "open_field_food_crop_production",
+          "value": 175122.2,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "covered_culture_food_crop_area",
+          "value": 123,
+          "unit": "ha",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "covered_culture_food_crop_production",
+          "value": 14249.9,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "poultry_meat_production",
+          "value": 57000,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "provisional_official"
+        },
+        {
+          "indicator": "local_beef_production",
+          "value": 24,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "official_central_abattoir_local_animals_only"
+        },
+        {
+          "indicator": "imported_cattle_beef_production",
+          "value": 2175,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "official_central_abattoir_imported_animals"
+        },
+        {
+          "indicator": "pork_production",
+          "value": 695,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "official_central_abattoir"
+        },
+        {
+          "indicator": "first_half_open_field_food_crop_production",
+          "value": 74768.8,
+          "unit": "tonnes",
+          "period": "Jan-Jun 2026",
+          "status": "official_partial_year"
+        },
+        {
+          "indicator": "first_half_covered_culture_food_crop_production",
+          "value": 8144.8,
+          "unit": "tonnes",
+          "period": "Jan-Jun 2026",
+          "status": "official_partial_year"
+        },
+        {
+          "indicator": "first_half_poultry_production",
+          "value": 25900,
+          "unit": "tonnes",
+          "period": "Jan-Jun 2026",
+          "status": "official_partial_year"
+        }
+      ],
+      "caveats": [
+        "2025 national crop totals are provisional.",
+        "Statistics Mauritius notes food-crop data supplied by FAREI and adjusted for selected backyard production.",
+        "Livestock slaughter totals include imported animals; in 2025, imported cattle accounted for 2,175t of beef and local beef for 24t.",
+        "January-June 2026 values are partial-year observations and must not be mechanically annualised."
+      ]
+    },
+    {
+      "id": "MU-09",
+      "topic": "2024 Agriculture Census final summary and spatial coverage",
+      "source": "Statistics Mauritius, Census of Agriculture 2024",
+      "source_url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/CA_2024.aspx",
+      "reference_date": "2025-08",
+      "values": [
+        {
+          "indicator": "agricultural_holdings_excluding_sugarcane_and_tea_only",
+          "value": 24145,
+          "unit": "holdings",
+          "period": "2024",
+          "status": "official_estimate",
+          "breakdown": {
+            "Mauritius_island": 19246,
+            "Rodrigues": 4899
+          }
+        },
+        {
+          "indicator": "holding_area",
+          "value": 62880,
+          "unit": "ha",
+          "period": "July 2023-June 2024",
+          "geography": "Mauritius island",
+          "status": "official_estimate"
+        },
+        {
+          "indicator": "holding_area",
+          "value": 1359,
+          "unit": "ha",
+          "period": "July 2023-June 2024",
+          "geography": "Rodrigues",
+          "status": "official_estimate"
+        },
+        {
+          "indicator": "vegetable_and_cereal_harvested_area",
+          "value": 9300,
+          "unit": "ha",
+          "period": "July 2023-June 2024",
+          "geography": "Mauritius island",
+          "status": "official_rounded_estimate"
+        },
+        {
+          "indicator": "vegetable_and_cereal_harvested_area",
+          "value": 730,
+          "unit": "ha",
+          "period": "July 2023-June 2024",
+          "geography": "Rodrigues",
+          "status": "official_rounded_estimate"
+        },
+        {
+          "indicator": "fruit_and_nut_planted_area",
+          "value": 1974,
+          "unit": "ha",
+          "period": "July 2023-June 2024",
+          "geography": "Mauritius island",
+          "status": "official_estimate"
+        },
+        {
+          "indicator": "fruit_and_nut_planted_area",
+          "value": 110,
+          "unit": "ha",
+          "period": "July 2023-June 2024",
+          "geography": "Rodrigues",
+          "status": "official_estimate"
+        }
+      ],
+      "livestock_headcount_30_june_2024": {
+        "Mauritius_island_thousand_head": {
+          "cattle": 5,
+          "goats": 28,
+          "sheep": 6,
+          "pigs": 25,
+          "deer": 29,
+          "broiler_poultry": 4966,
+          "layer_poultry": 526,
+          "local_poultry": 13,
+          "ducks": 377
+        },
+        "Rodrigues_thousand_head": {
+          "cattle": 9,
+          "goats": 15,
+          "sheep": 11,
+          "pigs": 17,
+          "broiler_poultry": 91,
+          "layer_poultry": 28,
+          "local_poultry": 122,
+          "ducks": 11
+        }
+      },
+      "caveats": [
+        "Census holdings count excludes sugarcane- and tea-only holdings.",
+        "The official summary's district data should be extracted from detailed tables before building subnational budgets.",
+        "Headcounts are in thousands as displayed in the official summary."
+      ]
+    },
+    {
+      "id": "MU-10",
+      "topic": "Producer price index and official market information system",
+      "source": "Statistics Mauritius Producer Price Index Agriculture Q2 2026; FAREI Agricultural Production and Market Information System",
+      "source_url": "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/PPIA/PPIA_2Qtr26.aspx",
+      "additional_source_url": "https://www.farei.mu/apmis/",
+      "reference_date": "2026-08-19",
+      "values": [
+        {
+          "indicator": "overall_agriculture_producer_price_index",
+          "value": 94,
+          "unit": "index_2025_100",
+          "period": "June 2026",
+          "status": "official_index"
+        },
+        {
+          "indicator": "other_crop_products_producer_price_index",
+          "value": 87.1,
+          "unit": "index_2025_100",
+          "period": "June 2026",
+          "status": "official_index"
+        },
+        {
+          "indicator": "animals_and_animal_products_producer_price_index",
+          "value": 102.3,
+          "unit": "index_2025_100",
+          "period": "June 2026",
+          "status": "official_index"
+        },
+        {
+          "indicator": "fresh_vegetable_price_change",
+          "value": -8.9,
+          "unit": "percent",
+          "period": "March-June 2026",
+          "status": "official_index_change"
+        }
+      ],
+      "notes": [
+        "PPI-A is an index, not an absolute MUR/kg farmgate price.",
+        "FAREI APMIS is a government-supported portal advertising crop production/area and current retail/wholesale price access; extract and archive dated observations with units and market definitions before using.",
+        "APMIS front page was accessible, but the underlying live price table was not extracted in this batch."
+      ]
     }
   ],
   "data_quality": {
-    "overall": "high_for_recent_national_crop_area_production_and_yield; medium_for_producer_price_trends; incomplete_for_enterprise_budget_inputs",
+    "overall": "high_for_national_2025_crop_specific_area_production_yields_and_2024_census_summary; medium_for_producer_price_trends; incomplete_for_absolute_current_farmgate_prices_and_enterprise_budget_inputs",
     "strengths": [
       "Statistics Mauritius publishes 2025 crop-level area, production and yields, including open-field and protected systems.",
       "2026 first-half production and Q2 producer price index updates provide recent context.",
       "2024 Agriculture Census has broad coverage and documented sampling methodology.",
-      "National currency and official statistics sources are identifiable."
+      "National currency and official statistics sources are identifiable.",
+      "Batch 29 cross-checked 2025 livestock slaughter totals and 2026 first-half production; official 2024 Census summary provides island-level holdings, land and livestock estimates."
     ],
     "limitations": [
       "No current crop-specific MUR/kg farm-gate price table or dated district-level producer quotations were extracted.",
       "No complete current crop enterprise budgets with seed, fertiliser, crop protection, labour, irrigation, energy, land preparation, packaging and transport costs were identified.",
       "Protected and open-field yields differ substantially and must remain separate model profiles.",
       "Sugar-cane producer revenue depends on cane/sugar pricing and producer category; a simple commodity price proxy would be misleading.",
-      "Some livestock slaughter statistics include imported animals and cannot be interpreted as domestic production alone."
+      "Some livestock slaughter statistics include imported animals and cannot be interpreted as domestic production alone.",
+      "District/municipal-area crop-level production and yields are not yet mapped; national values cannot be presented as district-level results."
     ]
   },
   "missing_before_calculator_activation": [
@@ -546,7 +801,11 @@
     "Build separate open-field and protected-culture enterprise budgets, especially for tomato, cucumber and sweet pepper.",
     "For sugar cane, document producer category, cane pricing formula, harvesting/transport deductions, ratoon cycle and applicable support/subsidy arrangements.",
     "Validate livestock farm-gate sale prices and distinguish domestic production from imported animals slaughtered locally.",
-    "Map all units, seasons, crop names and currency to the existing calculator schema and run regression and UI tests."
+    "Map all units, seasons, crop names and currency to the existing calculator schema and run regression and UI tests.",
+    "Extract detailed 2024 Census tables by district, Municipal Council Area, District Council Area, Municipal Ward/Village Council Area where published.",
+    "Retrieve current APMIS crop-specific price series and archive market, grade, date, unit, wholesale/retail and producer/farmgate classification.",
+    "Obtain dated MUR farm input prices and farmer-paid labour, machinery, irrigation, energy, packaging and transport costs.",
+    "Create distinct open-field, protected-culture, sugarcane and livestock enterprise budgets with regional/ island differences."
   ],
-  "activation_recommendation": "Do not activate Mauritius in the calculator from this evidence record alone. Mauritius has unusually strong recent official crop yield and producer-price-index evidence, but it still needs absolute current farm-gate prices, farm-level input quotations, enterprise budgets and census table extraction. Use separate open-field and covered-culture profiles."
+  "activation_recommendation": "Keep Mauritius inactive until absolute dated farmgate prices, farmer-paid input quotations and tested enterprise budgets are available. Official 2025 national yields and 2024 island-level census evidence are strong enough for research and preliminary model design, but not for complete regional profit estimates."
 }
