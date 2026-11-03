@@ -657,11 +657,11 @@
       "code": "EG",
       "name": "Egypt",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_CAPMAS_2024_crop_and_livestock_statistics_and_2025_crop_area_bulletin_identified_crop_specific_yields_and_cost_series_extraction_pending",
+      "existing_research_note": "Batch 47 confirmed CAPMAS 2023/24 governorate-level crop bulletin metadata and MALR crop-composition and farm-gate price database interfaces; detailed observations and regional enterprise budgets still require extraction.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_official_sources_identified_but_crop_level_governorate_rows_and_yield_definitions_not_extracted",
+        "dated_local_farmgate_prices_and_units": "partial_official_MALR_farm_price_database_identified_EGP_per_tonne_but_dated_observations_not_extracted",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
@@ -670,17 +670,17 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
+        "source_provenance_and_observation_date": "partial_CAPMAS_and_MALR_primary_source_routes_confirmed",
         "calculator_mapping_and_test_cases": "not_yet_audited"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract crop-by-governorate and season observations from CAPMAS 2023/24 and/or the MALR crop-composition database; reconcile cropped, planted and harvested area.",
+        "Extract dated farm-gate prices from the MALR historical farm-price database; keep wholesale and retail observations separate.",
+        "Obtain current farmer-paid input, irrigation, energy, labour, machinery, land and transport costs.",
+        "Build regionally appropriate crop and livestock enterprise budgets and gross margins.",
+        "Map only validated values to the existing calculator schema and add country/commodity/region test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract CAPMAS and MALR database rows for the 17 calculator commodities by governorate and crop season, then obtain current farm-input cost schedules and build regional enterprise budgets."
     },
     {
       "code": "GQ",
