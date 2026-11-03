@@ -1,0 +1,94 @@
+{
+  "title": "Angola calculator readiness research — Batch 36",
+  "batch": 36,
+  "country_code": "AO",
+  "country_name": "Angola",
+  "review_date": "2026-11-03",
+  "branch": "data/44-country-calculator-readiness",
+  "calculator_status": "directory_only_not_active",
+  "scope": "Research evidence and geographic selector only. No calculator formula or active country profile changed.",
+  "findings": [
+    {
+      "topic": "Current official survey",
+      "detail": "INE's ICAPP 2024/2025 results were published in May 2026. The official publication description confirms sample-survey coverage of sown and harvested area by crop, provincial crop production, farm economic information, labour, livestock, fisheries and honey. The downloadable Excel tables have not yet been extracted.",
+      "source": "https://ine.gov.ao/publicacoes/detalhes/NTM0NzU%3D"
+    },
+    {
+      "topic": "2026 national sector indicators",
+      "detail": "Government's 15 October 2026 State of the Nation reports 3,323,242 family holdings, 5,858 commercial holdings (125 effectively producing), 1,032,849 tonnes of meat and 7,729,031,088 eggs for 2023–2025. National aggregates are not province/crop yield or unit economics.",
+      "source": "https://governo.gov.ao/noticias/3216/governo/estado-da-nacao-2026/integra-da-mensagem-do-presidente-da-republica"
+    },
+    {
+      "topic": "Seed and fertilizer availability",
+      "detail": "Government reports 173,604 tonnes of fertilizer availability for family agriculture in 2026 and 6,930 tonnes of certified seed availability in 2025. These are national supply indicators, not farmer purchase prices or province allocations.",
+      "source": "https://governo.gov.ao/noticias/3231/governo/agricultura-familiar/disponibilidade-de-fertilizantes-aumentou-mais-de-13-vezes-em-quatro-anos"
+    },
+    {
+      "topic": "Administrative lookup",
+      "detail": "Government portal lists 21 provinces, 326 municipalities and 378 communes. Added all 21 current provinces to the region selector lookup; no municipality/commune lookup added.",
+      "source": "https://governo.gov.ao/angola/provincias"
+    }
+  ],
+  "geography": {
+    "province_count": 21,
+    "provinces": [
+      "Bengo",
+      "Benguela",
+      "Bié",
+      "Cabinda",
+      "Cuando",
+      "Cubango",
+      "Cuanza Norte",
+      "Cuanza Sul",
+      "Cunene",
+      "Huambo",
+      "Huíla",
+      "Icolo e Bengo",
+      "Luanda",
+      "Lunda Norte",
+      "Lunda Sul",
+      "Malanje",
+      "Moxico",
+      "Moxico Leste",
+      "Namibe",
+      "Uíge",
+      "Zaire"
+    ],
+    "municipality_count": 326,
+    "commune_count": 378,
+    "geography_warning": "Reconcile ICAPP survey geography with current boundaries after 2025 administrative reorganisation."
+  },
+  "criteria": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "partial",
+    "seed_and_planting_material_costs": "partial",
+    "fertilizer_and_soil_amendment_costs": "partial",
+    "crop_protection_costs": "not_yet_audited",
+    "irrigation_water_and_energy_costs": "partial",
+    "labour_rates_and_operations": "partial",
+    "machinery_and_land_preparation_costs": "not_yet_audited",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_exchange_rate_method": "pass",
+    "source_provenance_and_observation_date": "pass",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "blockers": [
+    "Extract ICAPP 2024/25 and 2023/24 downloadable tables; crop-by-province harvested area and output not yet extracted.",
+    "Reconcile the survey's historical province boundaries with the current 21-province administration.",
+    "No validated province-level farmgate price series or complete input unit-price schedules have been extracted.",
+    "National seed/fertilizer availability and irrigation project hectares are not farmer-level input costs.",
+    "No complete region-specific enterprise budgets or calculator test cases."
+  ],
+  "validation": {
+    "json_parse": "pending post-commit re-fetch",
+    "original_active_ten_unchanged": true,
+    "calculator_formula_changes": 0,
+    "activation": false
+  },
+  "next_steps": [
+    "Download and extract ICAPP 2024/25 and 2023/24 tables.",
+    "Reconcile old/new provincial boundaries and retain source geography.",
+    "Obtain dated farmgate and farmer-facing input prices.",
+    "Build province-specific budgets and tests before any activation."
+  ]
+}
