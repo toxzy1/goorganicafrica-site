@@ -276,6 +276,52 @@
       "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/cabo-verde/en",
       "status": "ongoing",
       "note": "FAO reports 2024 rotating module on farm income, labour and productivity (ILP), 2025 module on production methods and environment (PME), and completion of the agricultural holdings listing in the first half of 2024. Public microdata or full tabulations still need to be checked; programme description alone is not extracted observations."
+    },
+    {
+      "title": "Government investment in the 2025/2026 rainfed agricultural campaign",
+      "publisher": "Government of Cabo Verde, Ministry of Agriculture and Environment",
+      "url": "https://www.governo.cv/governo-investe-445-milhoes-de-escudos-para-reforcar-a-campanha-agricola-de-sequeiro-2025-2026/",
+      "publication_date": "2025-07-09",
+      "reference_period": "2025/26 rainfed campaign",
+      "status": "official_national_programme_budget_and_subsidized_input_support_not_unit_costs",
+      "observations": [
+        {
+          "indicator": "national_programme_investment",
+          "value_cve": 44500000,
+          "currency": "CVE",
+          "status": "Government announced total investment of CVE 44.5 million for strengthening the 2025/26 rainfed campaign."
+        },
+        {
+          "item": "subsidized seed distribution",
+          "status": "Government programme planned subsidized seeds and planting materials."
+        },
+        {
+          "item": "vegetative planting materials",
+          "items": [
+            "sweet potato cuttings",
+            "cassava cuttings"
+          ],
+          "status": "Programme supply items; no farmer unit price or quantity schedule exposed in the announcement."
+        },
+        {
+          "item": "technical assistance",
+          "status": "Programme planned extension support in all municipalities and pest control support, including trained applicators and biological phytosanitary products."
+        }
+      ],
+      "quality_notes": [
+        "CVE 44.5 million is a national programme budget, not a per-hectare production cost or a farmer-paid price.",
+        "The announcement does not provide unit prices, beneficiary allocations, quantities, crop-specific seed rates or out-of-pocket farmer contributions.",
+        "Do not use this programme total in the profit calculator as a cost input."
+      ]
+    },
+    {
+      "title": "VI General Agricultural Census legal mandate and scope",
+      "publisher": "Boletim Oficial, Government of Cabo Verde, Resolution 88/2025",
+      "url": "https://boe.incv.cv/Bulletins/View?id=87088",
+      "publication_date": "2025-08-29",
+      "reference_period": "2025-2026",
+      "status": "official_legal_census_mandate",
+      "note": "The resolution mandates the sixth General Agricultural Census across Cabo Verde during 2025 and 2026, covering all family and non-family agricultural and agro-pastoral holdings. The previous completed census was in 2015. This establishes the census scope but is not a numeric dataset."
     }
   ],
   "remaining_gaps": [
@@ -293,7 +339,7 @@
     "Obtain current municipality/island-specific farmgate prices, farmer-paid input quotations, wage rates, water and energy charges, machinery and transport costs.",
     "Build separate rainfed maize/beans and irrigated horticulture enterprise budgets, accounting for water scarcity and inter-island transport costs."
   ],
-  "extraction_status": "Official national sources and tables have been identified and selected observations transcribed with their limitations. The 2022 yearbook provides production estimates and livestock stock counts, but its horticultural figures are derived from seed-sales information and it does not provide compatible crop harvested-area denominators in the cited tables. FAO supplies a recent maize production estimate and price movement context. The 2025/2026 agricultural census and annual survey results are priority follow-ups. No complete farm budgets or validated calculator yields/prices are available from this evidence set. Batch 19 adds the FAO January 2026 preliminary 2025 maize estimate (about 1,100 tonnes), the legal 2025–2026 census mandate, an official 2026 greenhouse subsidy programme and a verified municipality selector reference. No final census dataset, numeric farmgate price series or itemized farm-input cost series has been extracted.",
+  "extraction_status": "Batch 40 adds the Government's 2025/26 rainfed campaign support programme: CVE 44.5 million national investment for subsidized seeds, vegetative planting materials and technical assistance. This is programme-level funding, not a unit cost or farmer-paid input quotation. The VI RGA 2025/2026 legal mandate remains active, but final census tables and municipality-level crop yields have not been located. FAO's January 2026 estimate of about 1,100 tonnes maize production in 2025 remains preliminary and lacks matching harvested-area data. Retail price movements are not farm-gate prices. Cabo Verde remains directory-only.",
   "publication_decision": {
     "calculator_activation": false,
     "reason": "Do not activate Cabo Verde from aggregate or seed-sales-based production estimates, a single-city retail snapshot, or incomplete census evidence. The 2025 maize estimate is preliminary and lacks a compatible area denominator; the VI RGA 2025/2026 final results were not located. The 2026 greenhouse subsidy is a support ceiling, not a cost quotation.",
@@ -306,7 +352,7 @@
     "Keep the country in research-only status until evidence is reconciled and independently reviewed.",
     "Obtain final RGA 2025/2026 municipality-level crop and input tables from INE/MAA before calculator data mapping."
   ],
-  "updated_at": "2026-11-02",
+  "updated_at": "2026-11-03",
   "administrative_geography": {
     "selector_level": "Municipality (concelho), first-order local administrative unit",
     "count": 22,
