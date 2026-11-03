@@ -132,28 +132,28 @@
       "code": "BJ",
       "name": "Benin",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "official_statistics_sources_identified_selected_2023_2024_observations_pending_table_level_extraction",
+      "existing_research_note": "Batch 37: FAO confirms first ESA 2024 release under 50x2030 (crop area, production, yield, input use and losses); INStaD final 2023/24 aggregate cereals 2,737,481 t; FAO 2025 aggregate cereals ~2.9m t; 12 departments added to lookup. Detailed tables, absolute farmgate prices and enterprise budgets pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_national_crop_output_and_selected_yields_extracted_regional_tables_pending",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "input_use_data_available_cost_extraction_pending",
-        "fertilizer_and_soil_amendment_costs": "input_use_data_available_cost_extraction_pending",
-        "crop_protection_costs": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial",
+        "dated_local_farmgate_prices_and_units": "blocked",
+        "seed_and_planting_material_costs": "partial",
+        "fertilizer_and_soil_amendment_costs": "partial",
+        "crop_protection_costs": "partial",
         "irrigation_water_and_energy_costs": "not_yet_audited",
         "labour_rates_and_operations": "not_yet_audited",
         "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "official_DSA_2023_2024_campaign_PDF_retrieved_and_selected_values_transcribed",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "currency_and_exchange_rate_method": "pass",
+        "source_provenance_and_observation_date": "pass",
+        "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "ESA 2024 detailed tables and metadata not extracted; current evidence confirms scope but not usable crop/department rows.",
+        "No absolute dated farmgate price series with grade, unit and market level has been validated.",
+        "Input-use coverage is confirmed but farmer purchase prices and full operating cost schedules are missing.",
+        "No department-specific enterprise budgets or calculator regression cases.",
+        "Current crop statistics use area sown as the yield denominator; preserve this definition and reconcile with harvested area where available."
       ],
       "next_step": "Extract regional crop area, production and yield from ESA 2024 and RNA tables; reconcile the national campaign report; then obtain current region-level prices and costs before mapping.",
       "batch_01_review": {
@@ -201,7 +201,8 @@
           "Resolve the conflicting soybean production values in the official report before numeric use."
         ],
         "regional_lookup": "12 official departments added to src/_data/calculator/regions.json on the readiness branch; lookup only, not activated."
-      }
+      },
+      "regional_lookup": "12 official departments added to src/_data/calculator/regions.json; 77 communes/546 arrondissements not yet added."
     },
     {
       "code": "BW",
