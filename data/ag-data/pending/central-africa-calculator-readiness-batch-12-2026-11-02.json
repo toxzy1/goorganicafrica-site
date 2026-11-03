@@ -1,7 +1,7 @@
 {
   "title": "GoOrganicAfrica Chad calculator-readiness review",
   "batch": 12,
-  "review_date": "2026-11-02",
+  "review_date": "2026-11-03",
   "country": {
     "code": "TD",
     "name": "Chad",
@@ -66,6 +66,20 @@
       },
       "use_limit": "National cereal aggregate; retain as a cross-source check, not a crop-by-province input.",
       "url": "https://www.sesric.org/cif.php?c_code=13"
+    },
+    {
+      "source": "World Bank Microdata Library",
+      "reference_date": "2026-10-05",
+      "observation": "73-market monthly price estimates available through 2026-10-01, including maize, millet, sorghum, rice and other food products.",
+      "use_limit": "Market estimates; not farmgate by default and may include machine-learning estimates. Validate each record's market, date, currency, confidence and interpolation flags.",
+      "url": "https://microdata.worldbank.org/catalog/4489"
+    },
+    {
+      "source": "FEWS NET Chad Country Book",
+      "reference_date": "2025-10-14",
+      "observation": "Documents a historical INSEED-linked crop-statistics archive for 2010-2023 and province-level reporting methodology.",
+      "use_limit": "Underlying tables remain to be exported and extracted; historical survey coverage and production systems must be checked before comparison.",
+      "url": "https://help.fews.net/fde/v3/chad-tchad-country-book"
     }
   ],
   "data_access_route": {
@@ -85,13 +99,161 @@
       "labour and machinery costs",
       "regional enterprise budgets",
       "currency validation",
-      "calculator mappings and test cases"
+      "calculator mappings and test cases",
+      "extract and reconcile World Bank 73-market price observations; do not relabel retail/market estimates as farmgate",
+      "export INSEED-linked 2010-2023 crop archive and extract crop/province/season metadata",
+      "resolve 70-department OCHA COD-AB versus 115-department administrative-profile discrepancy before lower-level selector work",
+      "extract current SIMPA/SIM Livestock producer and market-price records where available"
     ]
   },
   "safeguards": [
     "No active calculator profile or formula changed.",
     "No prices, yields or input costs invented.",
     "No national aggregate copied into province-level values.",
-    "Chad remains research-only and not calculator-ready."
-  ]
+    "Chad remains research-only and not calculator-ready.",
+    "World Bank modelled market estimates are not treated as observed farmgate prices.",
+    "Programme targets and project-area outcomes are not converted into national crop yields or generic input budgets.",
+    "Province selector retained; lower administrative levels remain blocked pending crosswalk."
+  ],
+  "evidence_refresh": {
+    "refreshed_at": "2026-11-03",
+    "summary": "Refreshed FAO 2026 outlook, World Bank market-price series, provincial geography and active agricultural programme evidence. Research-only; no calculator inputs certified.",
+    "new_findings": [
+      {
+        "source": "FAO GIEWS Country Brief: Chad",
+        "url": "https://cb.apps.fao.org/country.jsp?code=TCD&lang=en",
+        "reference_date": "2026-09-07",
+        "observations": [
+          {
+            "indicator": "aggregate cereal production",
+            "value_mt_approx": 3000000,
+            "reference_year": 2025,
+            "comparison": "approximately 10 percent above the previous five-year average",
+            "limitation": "National cereal aggregate only; not crop-specific or province-specific yield."
+          },
+          {
+            "indicator": "2026 cereal crop outlook",
+            "status": "uncertain",
+            "limitation": "Irregular onset of rains, dry spells, poor crop establishment in some areas and insecurity-related disruption; not a final harvest estimate."
+          },
+          {
+            "indicator": "market price trend",
+            "period": "May-July 2026",
+            "observation": "Local sorghum and millet retail prices stable or increased by up to 15 and 20 percent respectively; local maize trends mixed.",
+            "limitation": "Trend information only; not absolute farmgate prices."
+          }
+        ]
+      },
+      {
+        "source": "World Bank Microdata Library — Monthly food price estimates by product and market",
+        "url": "https://microdata.worldbank.org/catalog/4489",
+        "reference_version": "2026-10-05",
+        "data_period_end": "2026-10-01",
+        "coverage": "73 markets; monthly estimates from 2007-01-01 through 2026-10-01",
+        "market_file": "TCD_RTFP_mkt_2007_2026-10-05.csv",
+        "products": [
+          "cassava",
+          "dates",
+          "fish",
+          "garlic",
+          "goat",
+          "sheep",
+          "maize",
+          "millet",
+          "groundnut oil",
+          "okra",
+          "onions",
+          "potatoes",
+          "rice",
+          "sorghum",
+          "tomatoes"
+        ],
+        "limitation": "Market-level food-price estimates assembled from public sources and machine-learning estimates for missing observations; price type is not farmgate by default. Inspect currency, market, date, data_coverage, index_confidence_score and spatially_interpolated fields before use."
+      },
+      {
+        "source": "FEWS NET Chad Country Book",
+        "url": "https://help.fews.net/fde/v3/chad-tchad-country-book",
+        "reference_date": "2025-10-14",
+        "observations": [
+          "Confirms 23 province-level administrative units and identifies INSEED-linked crop-statistics archive methodology.",
+          "Historical 2010-2023 crop archive is a source lead; underlying crop records still require export and extraction.",
+          "Main and winter off-season agricultural seasons are distinguished; major crops include sorghum, millet, berbéré and cotton."
+        ],
+        "limitation": "Historical archive and methodology do not establish current province-by-crop yields or farm budgets."
+      },
+      {
+        "source": "OCHA / HDX Chad Subnational Administrative Boundaries",
+        "url": "https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b",
+        "reference_date": "2025-02-12",
+        "observations": [
+          "COD-AB dataset identifies 23 provinces and 70 departments."
+        ],
+        "limitation": "A separate administrative profile reports 115 departments and 420 communes under the 2021 reform. Keep the province selector as the stable level and do not publish lower-level selectors until the boundary crosswalk and dataset versions are reconciled."
+      },
+      {
+        "source": "IFAD ILSA Chad",
+        "url": "https://www.ifad.org/en/w/publications/ilsa-chad-enhancing-soil-health-and-productivity-through-agroecological-approaches-and-youth-entrepreneurship",
+        "observations": [
+          "Targets 3,000 smallholder farmers, with 60 percent youth and 40 percent women, and expected reach of 50,000 people.",
+          "Activities include 20 agroecology field schools, 10 bioinput production units, 60 demonstration plots and five rural business hubs across Mayo-Kebbi Est, Mandoul, Chari Baguirmi and N'Djamena."
+        ],
+        "limitation": "Programme scope and beneficiary targets are not measured yields, input prices or enterprise budgets."
+      },
+      {
+        "source": "IFAD RePER",
+        "url": "https://www.ifad.org/en/w/projects/2000001060",
+        "observations": [
+          "Estimated 146,000 beneficiary households; project supports water infrastructure, rural roads, family farming and agropastoral value chains, mainly in Batha, Chari Baguirmi, Guéra, Hadjer-Lamis and Salamat."
+        ],
+        "limitation": "Project target is not proof of realized output or farm profitability."
+      },
+      {
+        "source": "IFAD PARSAT",
+        "url": "https://www.ifad.org/en/w/projects/1100001691",
+        "observations": [
+          "Approximately 35,000 households / 175,000 direct beneficiaries; intervention includes four departments in Guéra and departments of Fitri (Batha) and Dababa (Hadjer-Lamis)."
+        ],
+        "limitation": "Project design and target-group characteristics are not a substitute for current crop budgets."
+      },
+      {
+        "source": "World Bank PROLAC feature, 22 July 2026",
+        "url": "https://www.worldbank.org/en/news/feature/2026/07/22/beyond-hardship-how-prolac-is-restoring-hope-jobs-and-resilience-around-lake-chad",
+        "observations": [
+          "More than 2,400 hectares of polders rehabilitated in Chad; solar irrigation reportedly reduced water costs by 90%; Mamdi cultivated land rose from 39 percent to full capacity and annual harvest value from USD 3.5 million to USD 8 million."
+        ],
+        "limitation": "Project-area results only; not nationally representative crop yield or standard input-cost assumptions."
+      },
+      {
+        "source": "AfDB PADIR-CVA",
+        "url": "https://www.afdb.org/en/documents/chad-project-support-rural-infrastructure-development-and-promotion-agricultural-value-chains-padir-cva",
+        "observations": [
+          "Project appraisal and supporting environmental documents identify a pilot 240-hectare rice perimeter at Eré and irrigation / rural infrastructure investment."
+        ],
+        "limitation": "Planned project area and appraisal evidence are not observed commercial farm budgets or national yield estimates."
+      }
+    ],
+    "readiness_reassessment": {
+      "criteria_passed": 0,
+      "criteria_certified": 0,
+      "status": "research_only_not_calculator_ready",
+      "newly_improved": [
+        "market-price source freshness and market coverage",
+        "current FAO seasonal context",
+        "programme evidence",
+        "province-level boundary provenance"
+      ],
+      "still_missing": [
+        "crop-specific provincial harvested area, production and yield observations by season",
+        "absolute dated producer/farmgate prices by crop, grade, unit and province",
+        "seed and planting-material prices",
+        "fertilizer, crop protection and soil amendment prices and application rates",
+        "irrigation, water and energy costs by production system",
+        "labour, machinery, land preparation and transport costs",
+        "regional enterprise budgets for the 17 calculator commodity profiles",
+        "livestock purchase, feed, veterinary and output-price budgets",
+        "reconciled administrative crosswalk for departments and communes",
+        "currency, calculator mapping and regression test cases"
+      ]
+    }
+  }
 }
