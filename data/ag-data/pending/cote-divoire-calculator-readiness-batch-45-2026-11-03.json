@@ -1,0 +1,117 @@
+{
+  "title": "GoOrganicAfrica Côte d'Ivoire calculator-readiness review — Batch 45",
+  "batch": 45,
+  "country_code": "CI",
+  "country_name": "Côte d'Ivoire",
+  "reviewed_on": "2026-11-03",
+  "status": "research_only_not_published_to_calculator",
+  "administrative_geography": {
+    "selector_level": "region",
+    "regions": 31,
+    "departments": 108,
+    "sub_prefectures": 509,
+    "autonomous_districts": 2,
+    "source": "https://dgat.interieur.gouv.ci/creation-de-circonscriptions-administratives/",
+    "note": "Use the 31 administrative regions as the initial selector. The 2024/25 EAA excludes the highly urbanised District of Abidjan from its agricultural survey field; do not treat that survey's geographic coverage as a full all-region crop sample."
+  },
+  "findings": [
+    {
+      "topic": "New official annual agricultural survey",
+      "detail": "The 2024/25 Annual Agricultural Survey (EAA/MC-REEA), published in January/April 2026 by the Ministry of Agriculture and ANStat with World Bank PHAS and FAO/50x2030 support, provides updated household agricultural data. It covers the whole national territory where agricultural activity is practised, but excludes the highly urbanised District of Abidjan. Crop production estimates are based on agricultural households and exclude agricultural enterprises.",
+      "source": "Ministry of Agriculture / ANStat",
+      "url": "https://agriculture.gouv.ci/uploads/publications/177556586029.pdf",
+      "release_url": "https://www.anstat.ci/publication-details/f59fefa136c80f33f3b6060186accf81bb31fc5556401b0023f38dfe238e2495451750dc8003584a0555f8a1b450396eee78a911017a80f14d6df29688a4b7a3IZtn0OYuPX7-u3wk5_wSwr2PWnMLNBJFGYcta43UATvlxIeDsiH14qd0rTMZ5c2N",
+      "reference_period": "2024 crop campaign / 2024-2025 survey",
+      "observations": {
+        "agricultural_households": 1734942,
+        "households_practising_crop_production": 1574970,
+        "households_practising_livestock": 1037634,
+        "average_parcel_area_ha": 3.4,
+        "average_fields_per_household": 1.6,
+        "average_plots_per_household": 2.2
+      },
+      "limitation": "Household crop production only; the report notes that differences from DSDI estimates may arise because DSDI production estimates include both households and agricultural enterprises."
+    },
+    {
+      "topic": "2024 food-crop production",
+      "detail": "Official MC-REEA 2024 totals include maize 1,829,263 t; paddy rice 1,813,627 t across irrigated, lowland rainfed and upland rainfed systems; cassava 7,392,519 t; beans 57,060 t; soybean 9,631 t; sweet potato 94,690 t and plantain 2,270,901 t.",
+      "regional_examples": "Maize production is concentrated in Poro (345,400 t), San-Pédro (315,012 t) and Bagoué (279,001 t). Paddy rice is concentrated in Poro (303,684 t), Béré (243,861 t) and Cavally (127,326 t).",
+      "source": "Ministry of Agriculture / ANStat, EAA 2024-2025 report, Table 32",
+      "url": "https://agriculture.gouv.ci/uploads/publications/177556586029.pdf",
+      "limitation": "National and selected regional production totals; the report's summary does not provide matched crop-specific harvested area denominators for all regions. Do not calculate yields from production alone."
+    },
+    {
+      "topic": "2024 market-garden production",
+      "detail": "Official totals include tomato 478,007 t, pepper (piment) 142,119 t, cucumber 43,028 t, aubergine 219,269 t, okra 106,272 t, carrot 77,808 t and cabbage 40,173 t.",
+      "regional_examples": "Tomato production is led by Lôh-Djiboua (317,166 t); piment is concentrated in Agnéby-Tiassa (57,701 t), Nawa (17,301 t) and Hambol (5,793 t).",
+      "source": "Ministry of Agriculture / ANStat, EAA 2024-2025 report, Table 34",
+      "url": "https://agriculture.gouv.ci/uploads/publications/177556586029.pdf",
+      "limitation": "Piment is the survey's crop label and should not automatically be equated to every hot-pepper cultivar or bell pepper. Production totals do not provide matching harvested-area yields."
+    },
+    {
+      "topic": "Observed input application quantities",
+      "detail": "The EAA report publishes crop-specific average application quantities per hectare for organic fertilizer, mineral fertilizer and pesticides. Examples include maize: organic solid 100.1 kg/ha and liquid 3.4 L/ha; mineral solid 86.4 kg/ha and liquid 3.6 L/ha; pesticide solid 4.0 kg/ha and liquid 3.9 L/ha. Tomato: organic 49.6 kg/ha and 10.7 L/ha; mineral 136.4 kg/ha and 8.7 L/ha; pesticide 11.0 kg/ha and 2.7 L/ha. Rice systems are reported separately.",
+      "source": "Ministry of Agriculture / ANStat, EAA 2024-2025 report, Tables 24, 27 and 30",
+      "url": "https://agriculture.gouv.ci/uploads/publications/177556586029.pdf",
+      "limitation": "These are observed average application quantities, not unit prices or costs. Some entries are suppressed for insufficient sample size; preserve [s] and true-zero/rounded-zero [w] flags. They must not be converted into expenditure without farmer-paid price evidence."
+    },
+    {
+      "topic": "Livestock structure",
+      "detail": "The report records household-held poultry 33,669,761 heads, sheep 1,313,606, goats 1,207,881, cattle/bovids 932,614 and pigs 483,383. Poultry counts are not separated into commercial broilers and layers in the national headline table.",
+      "regional_examples": "Poultry numbers are high in Indénié-Djuablin, Haut-Sassandra, Tonkpi, Sud-Comoé, San-Pédro and Gbêkê; bovids are concentrated in Poro and Kabadougou.",
+      "source": "Ministry of Agriculture / ANStat, EAA 2024-2025 report, Table 39",
+      "url": "https://agriculture.gouv.ci/uploads/publications/177556586029.pdf",
+      "limitation": "Livestock inventories are not production budgets. Broiler/layer splits, flock cycles, feed conversion, mortality, veterinary costs and dated sale prices remain to be extracted."
+    },
+    {
+      "topic": "Producer and market price data route",
+      "detail": "UEMOA SIAR provides a 2010-2026 selector and explicit producer-price indicators for maize, local rice, millet, sorghum, cowpea, groundnut, yam, sweet potato and cassava, alongside consumer-price indicators. Côte d'Ivoire is a selectable member country.",
+      "source": "UEMOA SIAR",
+      "url": "https://siar.uemoa.int/marches-agricoles.php?secteur=agr",
+      "limitation": "The interactive table's actual dated Côte d'Ivoire observations have not yet been exported and checked for market, grade, unit, month and producer-versus-consumer classification."
+    },
+    {
+      "topic": "Additional market-price leads",
+      "detail": "OCPV-derived market listings surfaced 2026 week-09 retail prices for maize-linked food items, rice, cassava, tomato and piment across Abidjan, San-Pédro, Bouaké, Yamoussoukro and Korhogo. An EcoAgriConnect page also lists regulated bord-champ floor prices for cocoa and cashew, but its public transaction panel reported no approved transactions in the displayed recent periods.",
+      "sources": [
+        "https://www.pamdagro.ci/index.php/ird-ci",
+        "https://www.pamdagro.ci/index.php/ey-ci",
+        "https://ecoagriconnect.com/marche"
+      ],
+      "limitation": "Week-09 market prices are historical, not current November 2026 quotes; distinguish retail/market values from farmgate. Cocoa and cashew price floors do not map to the current 17 calculator commodities."
+    }
+  ],
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_official_2024_national_and_selected_regional_crop_production_extracted_but_complete_region_crop_harvested_area_and_yield_tables_not_yet_matched",
+    "dated_local_farmgate_prices_and_units": "partial_UEMOA_SIAR_has_producer_price_indicators_for_selected_crops_but_dated_Cote_dIvoire_records_not_exported_or_validated",
+    "seed_and_planting_material_costs": "partial_crop_specific_input_use_evidence_identified_but_seed_unit_prices_and_costs_not_extracted",
+    "fertilizer_and_soil_amendment_costs": "partial_observed_crop_specific_application_quantities_per_ha_available_unit_prices_and_total_costs_missing",
+    "crop_protection_costs": "partial_observed_crop_specific_pesticide_application_quantities_per_ha_available_unit_prices_and_total_costs_missing",
+    "irrigation_water_and_energy_costs": "partial_report_has_regional_irrigation_infrastructure_indicators_but_no_farm_paid_water_energy_budget",
+    "labour_rates_and_operations": "partial_agricultural_household_and_labour_context_available_crop_operation_paid_labour_costs_not_extracted",
+    "machinery_and_land_preparation_costs": "blocked_no_region_crop_specific_hire_or_land_preparation_cost_schedule_extracted",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets",
+    "currency_and_exchange_rate_method": "pass_XOF_WAEMU_CFA_franc_identified_calculator_price_and_rounding_tests_pending",
+    "source_provenance_and_observation_date": "improved_official_EAA_2024_2025_published_2026_UEMOA_SIAR_and_OCPV_price_sources_identified",
+    "calculator_mapping_and_test_cases": "blocked_crop_level_area_yield_price_and_full_cost_inputs_not_yet_reconciled"
+  },
+  "outstanding": [
+    "Extract the EAA 2024-2025 full regional crop production table and match each crop to the same region's harvested area before calculating yield.",
+    "Preserve separate rice production systems: irrigated, lowland rainfed and upland rainfed.",
+    "Export UEMOA SIAR monthly 2026 producer-price records for Côte d'Ivoire and record crop, market, grade, unit, currency and observation date.",
+    "Obtain current farmgate prices for tomato, cucumber, hot pepper, bell pepper, watermelon, soybean, beans and livestock commodities where SIAR coverage is absent.",
+    "Convert the EAA fertilizer and pesticide application quantities into cost schedules only after obtaining dated farmer-paid product prices, product formulations and regional application practices.",
+    "Obtain seed, labour, irrigation, water, energy, land preparation, machinery hire, packaging, storage and transport costs.",
+    "Reconcile household-only EAA crop output with DSDI series that include agricultural enterprises.",
+    "Build region-specific enterprise budgets and regression tests; do not activate from national output totals alone."
+  ],
+  "safeguards": [
+    "EAA 2024 household crop output and DSDI estimates including enterprises remain separate statistical populations.",
+    "No production total converted into yield without matched harvested area.",
+    "Input application quantities are not converted into costs without dated farmer-paid unit prices.",
+    "Piment is not automatically mapped to bell pepper or all hot-pepper cultivars.",
+    "Week-09 2026 OCPV market values are not represented as current November 2026 prices.",
+    "No calculator profile or formula activated or changed."
+  ],
+  "conclusion": "Côte d'Ivoire has a strong new official 2024/25 household agricultural survey, crop production totals, regional production examples, crop-specific input application quantities and a UEMOA producer-price data route. The key remaining work is extracting matched regional harvested area and yields, exporting dated SIAR producer prices and obtaining farmer-paid input/labour/machinery/irrigation costs. Retain research-only status."
+}
