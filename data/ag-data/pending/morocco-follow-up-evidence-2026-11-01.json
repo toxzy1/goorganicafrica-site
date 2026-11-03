@@ -1,9 +1,9 @@
 {
-  "title": "Morocco follow-up agricultural evidence — October 2026",
+  "title": "Morocco agricultural evidence register — updated through November 2026",
   "country_code": "MA",
   "country_name": "Morocco",
   "status": "research_only_not_published_to_calculator",
-  "added_on": "2026-11-01",
+  "added_on": "2026-11-03",
   "sources": [
     {
       "title": "Tomates : la chaleur perturbe la production et complique les exportations marocaines",
@@ -673,6 +673,163 @@
         "The 2026/27 market indications already recorded from Finances News Hebdo are different in date and source type; keep them separate and investigate differences by seed class, variety, subsidy and region rather than averaging them.",
         "No farmer invoice, actual point-of-sale receipt, or 2026/27 official retail schedule is provided by this source."
       ]
+    },
+    {
+      "title": "Campagne agricole 2025-2026 : la récolte céréalière prévue à près de 90 Mqx",
+      "publisher": "Royaume du Maroc — Maroc.ma (MAP)",
+      "url": "https://maroc.ma/fr/actualites/campagne-agricole-2025-2026-la-recolte-cerealiere-prevue-pres-de-90-mqx",
+      "publication_date": "2026-04-21",
+      "observations": [
+        {
+          "indicator": "national_cereal_production_forecast_quintals",
+          "value": 90000000,
+          "campaign": "2025/26",
+          "status": "Government announcement forecast; national total, not crop-specific regional yield."
+        },
+        {
+          "indicator": "national_cereal_sown_area_ha",
+          "value": 3900000,
+          "campaign": "2025/26",
+          "status": "Government announcement; sown area, not harvested area."
+        },
+        {
+          "indicator": "agricultural_water_context",
+          "dam_storage_billion_m3": 13,
+          "dam_filling_rate_percent": 75.7,
+          "as_of": "2026-04-21",
+          "status": "National reservoir aggregate; not farm-level allocation or irrigation entitlement."
+        }
+      ],
+      "quality_notes": [
+        "Use as a campaign-level national cereal outlook; the 90 million quintal figure is a forecast announced in April, not an audited final crop return.",
+        "Do not derive crop yields by dividing the national production total by all cereal sown area because crop mix, harvested area and crop-specific area are not supplied.",
+        "The reservoir aggregate cannot be converted into a farm irrigation volume or water cost."
+      ]
+    },
+    {
+      "title": "Campagne céréalière : de bons rendements atteignant 57 quintaux par hectare",
+      "publisher": "LeBrief, reporting the Minister of Agriculture's statement to the House of Councillors",
+      "url": "https://www.lebrief.ma/campagne-cerealiere-bons-rendements-57-quintaux-par-hectare-100156254/",
+      "publication_date": "2026-06-16",
+      "observations": [
+        {
+          "commodity": "cereals",
+          "regional_yield_quintals_per_ha_range": [
+            15,
+            57
+          ],
+          "campaign": "2025/26",
+          "status": "Minister-reported preliminary harvest-operation yield range across regions; individual crop and region-specific values not itemized."
+        },
+        {
+          "indicator": "regional_cereal_collection_concentration_percent",
+          "value": 84,
+          "regions": [
+            "Casablanca-Settat",
+            "Fès-Meknès",
+            "Marrakech-Safi"
+          ],
+          "as_of": "2026-06-15",
+          "status": "Share of volumes collected in these three regions, not their share of national production."
+        },
+        {
+          "commodity": "soft_wheat",
+          "national_production_forecast_quintals": 44000000,
+          "campaign": "2025/26",
+          "status": "Minister-reported forecast."
+        },
+        {
+          "commodity": "durum_wheat",
+          "national_production_forecast_quintals": 21000000,
+          "campaign": "2025/26",
+          "status": "Minister-reported forecast."
+        },
+        {
+          "commodity": "barley",
+          "national_production_forecast_quintals": 25000000,
+          "campaign": "2025/26",
+          "status": "Minister-reported forecast."
+        },
+        {
+          "indicator": "certified_cereal_seed_mobilized_quintals",
+          "value": 734000,
+          "campaign": "2025/26",
+          "status": "Reported subsidized supply volume; not a farmer retail price."
+        },
+        {
+          "indicator": "fertilizer_supply_tonnes",
+          "value": 500000,
+          "campaign": "2025/26",
+          "status": "Reported national market supply; not a unit price or farm application rate."
+        }
+      ],
+      "quality_notes": [
+        "The 15–57 q/ha range is a preliminary national regional spread and is not disaggregated by crop, region, rainfed/irrigated system or farm type.",
+        "The three regions account for 84% of collected volumes at the reported date; collection volumes depend on storage and marketing flows and must not be treated as a production share.",
+        "Use only as a broad plausibility bound pending official crop-by-region final tables."
+      ]
+    },
+    {
+      "title": "Morocco in Figures 2025",
+      "publisher": "Haut-Commissariat au Plan (HCP)",
+      "url": "https://www.hcp.ma/file/246713/",
+      "publication_date": "2025",
+      "reference_period": "2023/24 agricultural production",
+      "observations": [
+        {
+          "commodity": "winter_cereals",
+          "production_thousand_quintals": 31523.7,
+          "season": "2023/24",
+          "status": "Official HCP table sourced to Ministry of Agriculture; national aggregate."
+        },
+        {
+          "commodity": "durum_wheat",
+          "production_thousand_quintals": 6955.6,
+          "season": "2023/24",
+          "status": "Official HCP table; national production."
+        },
+        {
+          "commodity": "soft_wheat",
+          "production_thousand_quintals": 17461.1,
+          "season": "2023/24",
+          "status": "Official HCP table; national production."
+        },
+        {
+          "commodity": "barley",
+          "production_thousand_quintals": 6592.3,
+          "season": "2023/24",
+          "status": "Official HCP table; national production."
+        },
+        {
+          "commodity": "spring_cereals",
+          "production_thousand_quintals": 812.5,
+          "season": "2023/24",
+          "status": "Official HCP table; national production."
+        },
+        {
+          "commodity": "legumes",
+          "production_thousand_quintals": 1252,
+          "season": "2023/24",
+          "status": "Official HCP table; national aggregate."
+        },
+        {
+          "commodity": "oilseeds",
+          "production_thousand_quintals": 735.1,
+          "season": "2023/24",
+          "status": "Official HCP table; national aggregate."
+        },
+        {
+          "commodity": "sugar_crops",
+          "production_thousand_quintals": 15149.7,
+          "season": "2023/24",
+          "status": "Official HCP table; national aggregate."
+        }
+      ],
+      "quality_notes": [
+        "The HCP publication provides national production quantities but this table does not provide matching crop area or regional yield for each commodity.",
+        "The 2023/24 values are historical context and must not be blended with 2025/26 campaign forecasts.",
+        "Production totals alone are not enough to calculate farm revenue or profit."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -695,5 +852,13 @@
     "Obtain the 2026/27 Official Gazette decree or Ministry/SONACOS schedule for certified R2 seed retail prices and support rates; the newly recorded Official Gazette No. 7492 is a 2025/26 schedule and must not be carried forward automatically.",
     "Reconcile the 2025/26 Official Gazette R2 maximum supported retail prices (soft wheat MAD 380/q, durum wheat MAD 500/q, barley MAD 380/q) with 2026/27 trade-publication market indications (approximately MAD 400/q soft wheat/barley and MAD 400–450/q durum) using certified class, variety, subsidy treatment, region and actual sales receipts."
   ],
-  "conclusion": "Morocco remains research-only. The evidence register now contains 14 source records, including Morocco's Official Gazette No. 7492 (19 March 2026), a primary legal schedule of 2025/26 certified R2 seed prices and seed-support rates. The official schedule is valuable historical evidence, but it is not a 2026/27 price list and cannot be applied to ordinary seed. The 2026/27 market indications remain separate pending invoices and an updated official schedule. No calculator data are activated."
+  "conclusion": "Morocco remains research-only. The evidence register now contains 14 source records, including Morocco's Official Gazette No. 7492 (19 March 2026), a primary legal schedule of 2025/26 certified R2 seed prices and seed-support rates. The official schedule is valuable historical evidence, but it is not a 2026/27 price list and cannot be applied to ordinary seed. The 2026/27 market indications remain separate pending invoices and an updated official schedule. No calculator data are activated.",
+  "research_status": "research_only_not_published_to_calculator",
+  "quality_summary": {
+    "national_production": "Improved: official HCP historical commodity totals and 2025/26 national cereal campaign estimates are now captured with season and source definitions.",
+    "regional_data": "Partial: the ministry-reported 2025/26 cereal yield spread (15–57 q/ha) and concentration in three regions are recorded, but crop-by-region yields/areas remain unavailable.",
+    "prices": "Incomplete: 2026 soft-wheat reference purchase price and 2025/26 certified-seed supported retail ceilings are already recorded in the earlier evidence file; neither substitutes for net farmer receipts or current input invoices.",
+    "costs": "Incomplete: older Saïss survey and producer interviews provide contextual budget headings and historical values, not a complete current regional enterprise budget.",
+    "readiness": "Morocco remains not calculator-ready; no values have been promoted into production defaults."
+  }
 }
