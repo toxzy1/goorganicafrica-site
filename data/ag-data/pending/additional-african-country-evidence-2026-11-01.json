@@ -196,7 +196,7 @@
     {
       "country_code": "MR",
       "country_name": "Mauritania",
-      "evidence_status": "official_ministry_reported_autumn_2025_rice_production_area_and_yield_added_full_budget_evidence_pending",
+      "evidence_status": "official_2025_26_ministry_aggregate_production_and_FAO_2026_seasonal_market_context_added_existing_2025_autumn_rice_series_preserved_full_regional_enterprise_budget_and_farmgate_input_price_evidence_pending",
       "sources": [
         {
           "title": "Agriculture et politique agricole en Mauritanie",
@@ -317,6 +317,120 @@
             "The 2024 autumn yield is internally consistent with production divided by area: 180,299 / 44,864 = approximately 4.02 t/ha.",
             "The figures are not yet a calculator yield range. More seasons, regional variation, input costs, irrigation/pumping costs and farm-gate prices are required."
           ]
+        },
+        {
+          "title": "Trarza development pole and national agricultural production update",
+          "publisher": "Ministry of Agriculture and Food Sovereignty, Mauritania",
+          "url": "https://agriculture.gov.mr/fr/node/721",
+          "publication_date": "2026 (page publication date not exposed in extracted text)",
+          "observations": [
+            {
+              "indicator": "national agricultural production",
+              "value_mt": 985000,
+              "reference_period": "2025-2026",
+              "status": "minister-reported aggregate; scope and commodity composition not supplied in article"
+            },
+            {
+              "indicator": "national cereal production",
+              "value_mt": 700000,
+              "reference_period": "2025-2026",
+              "status": "minister-reported rounded aggregate; source contains an internal baseline inconsistency (339,000 and 389,000 tonnes cited for 2019), so retain as approximate headline only"
+            },
+            {
+              "crop": "rice/paddy",
+              "production_mt": 556000,
+              "reference_period": "2025-2026",
+              "status": "minister-reported national aggregate; annual/seasonal definitions and paddy-versus-milled basis require confirmation"
+            },
+            {
+              "indicator": "cultivated area",
+              "value_ha": 104000,
+              "reference_period": "2025-2026",
+              "status": "minister-reported total; article also gives an internally inconsistent percentage increase relative to 83,000 ha"
+            },
+            {
+              "indicator": "fruit_and_vegetable_production",
+              "production_mt": 255000,
+              "reference_period": "2025-2026",
+              "status": "minister-reported aggregate; commodity composition and area not supplied"
+            },
+            {
+              "indicator": "Trarza_Emergence_development_pole",
+              "area_ha": 800000,
+              "status": "planned development-zone envelope across Tekane, Rosso, Keur Macène, Mederdra and R'Kiz; not all cultivated land"
+            },
+            {
+              "crop": "rice",
+              "area_ha": 53000,
+              "geography": "Trarza development pole",
+              "status": "minister-reported area prepared for rice; distinguish from actual annual harvested area"
+            },
+            {
+              "crop": "vegetables",
+              "area_ha": 10000,
+              "geography": "Trarza development pole",
+              "status": "minister-reported horticulture allocation"
+            },
+            {
+              "indicator": "livestock_herd",
+              "value": 3400000,
+              "unit": "head",
+              "geography": "Trarza development pole",
+              "status": "minister-reported estimate, described as 11 percent of national herd; species composition not supplied"
+            }
+          ],
+          "quality_notes": [
+            "National headline totals are not crop-by-crop enterprise budgets.",
+            "Do not calculate a rice yield from the 556,000-tonne national figure without a matching harvested-area denominator and confirmation of paddy/milled basis.",
+            "The Trarza 53,000 ha figure is a prepared/allocated area in a development pole and must not be substituted for actual harvested rice area."
+          ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Mauritania",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MR",
+          "reference_date": "2026-10-28",
+          "observations": [
+            {
+              "indicator": "2026_coarse_grain_harvest",
+              "status": "harvesting underway; expected completion December 2026; irrigated rice harvest expected November-December"
+            },
+            {
+              "indicator": "rainfall_and_crop_conditions",
+              "status": "uneven rainfall and early dryness; generally favourable vegetation by end-September, but localized shortfalls expected in Gorgol"
+            },
+            {
+              "indicator": "retail_wheat_flour_prices",
+              "status": "May-August 2026 stable or up to 5 percent higher; August prices near to 25 percent above year-earlier levels across monitored markets"
+            },
+            {
+              "indicator": "retail_imported_rice_prices",
+              "status": "broadly stable in May-August 2026 and generally in line with year-earlier levels in August"
+            },
+            {
+              "indicator": "rangeland_and_water",
+              "status": "below-average rangeland in parts of Brakna, Gorgol and Hodh El Gharbi; low water levels at most monitored livestock watering points"
+            }
+          ],
+          "status": "market and seasonal risk context; retail trends are not farm-gate prices or farm input costs"
+        },
+        {
+          "title": "Monthly food price estimates by product and market — Mauritania",
+          "publisher": "World Bank Microdata Library / Development Economics Data Group",
+          "url": "https://microdata.worldbank.org/catalog/6170",
+          "dataset_id": "MRT_2021_RTFP_v02_M",
+          "observations": [
+            {
+              "indicator": "market_price_panel",
+              "coverage": "34 markets in the opened catalogue version; 2007-01-01 to 2026-04-01; version 2026-04-27",
+              "status": "market-level modelled price estimates; page/index versions show different market counts and endpoints, so verify downloadable metadata before extraction"
+            },
+            {
+              "indicator": "price_methodology",
+              "status": "series combines direct observations and machine-learning estimates; missing entries may be predicted from related markets/items and exchange rates; not equivalent to farm-gate transaction prices"
+            }
+          ],
+          "status": "useful dated market-price research source; do not treat as verified farm-gate prices"
         }
       ],
       "priority_commodities": [
@@ -332,17 +446,18 @@
         "layers"
       ],
       "remaining_gaps": [
-        "download the national annual agricultural household/farm survey (EMEA) tables and verify crop production, area and yields",
-        "visually inspect the Trarza yearbook tables before transcribing rice area and production-system figures",
-        "extract producer prices, wholesale/retail prices and local market dates from official market sources",
-        "obtain input, labour, irrigation, pumping, machinery and transport costs by irrigated and rainfed system",
-        "obtain livestock purchase, feed, veterinary and output-price data from the livestock census and market sources",
-        "separate irrigated rice from rainfed crops and do not use a national blended assumption where systems differ",
-        "obtain the original Ministry campaign bulletin or statistical table underlying MADAR's 28 January 2026 report and confirm the seasonal definitions",
-        "obtain at least three comparable autumn seasons and region-level yield distributions before deriving low/expected/high rice assumptions",
-        "separate autumn, rainy-season, hot off-season and annual rice totals; do not combine overlapping crop calendars"
+        "Obtain the original Ministry of Agriculture 2025-26 production tables and confirm annual, campaign and paddy/milled definitions.",
+        "Extract crop-by-wilaya harvested area, production and yield for rice, sorghum, millet, maize, cowpea, vegetables and dates.",
+        "Reconcile the 2025-26 national rice headline with autumn and other seasonal campaign totals without double-counting.",
+        "Download and inspect the World Bank market-price microdata; preserve market, commodity, date, unit, price statistic and modelled-versus-observed status, and do not relabel retail prices as farmgate.",
+        "Obtain dated farmgate prices by wilaya and commodity, with grade and unit.",
+        "Obtain farmer-paid seed, fertiliser, crop-protection, labour, machinery, irrigation, pumping energy, land preparation and transport costs by production system.",
+        "Build separate irrigated rice, rainfed cereal, horticulture, oasis/date and livestock enterprise budgets with regional low/expected/high distributions.",
+        "Extract species-specific livestock herd, purchase, feed, veterinary and output price data from the General Livestock Census and dated market sources.",
+        "Verify wilaya-to-moughataa hierarchy and calculator mapping; existing 15-wilaya lookup remains a regional selector only.",
+        "Add calculator schema mapping and regression tests only after all required data are validated."
       ],
-      "extraction_status": "Mauritania now has a stronger seasonal rice evidence lead: Ministry-reported autumn 2025 and autumn 2024 production, area and yield are internally consistent. These are seasonal observations and not yet sufficient for a full calculator profile; farm-gate prices, input/pumping costs, labour, regional ranges and other commodity budgets remain missing."
+      "extraction_status": "Existing Batch 11 research preserved. New Ministry of Agriculture 2025-26 national headline production and Trarza development-pole figures added with denominator/scope caveats; FAO GIEWS 28 October 2026 seasonal and market context added; World Bank 34-market modelled price panel documented with version discrepancy. Mauritania remains research-only and not calculator-ready."
     },
     {
       "country_code": "GW",
