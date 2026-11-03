@@ -7,14 +7,18 @@
   "counting_rules": [
     "Count unique ISO alpha-2 country codes, not files; Morocco follow-up evidence is a second file for the same country.",
     "A research_evidence_record_present entry means a country-specific research evidence file exists; it does not mean the country is validated or calculator-ready.",
-    "Existing active calculator profiles are listed separately and require their own source, date and formula-scope audit; this register does not certify them as current.",
+    "Ten original active calculator profiles are listed separately; Botswana is an additional mixed-source operational profile and is also included in the 44 evidence records.",
+    "Botswana is calculator-enabled but not fully locally data-ready; the other 43 evidence-record countries remain research-only.",
     "Countries marked not_yet_researched have no country-specific pending evidence file in this research programme.",
-    "Do not activate any country or alter calculator formulas based on this register."
+    "Do not activate any additional country or alter calculator formulas based on this register."
   ],
   "summary": {
     "total_registry_countries": 54,
-    "countries_with_research_evidence_records": 44,
-    "existing_active_calculator_profiles_without_these_research_files": 10,
+    "calculator_enabled_profiles": 11,
+    "original_active_profiles_without_new_research_files": 10,
+    "mixed_source_operational_profile_with_research_file": 1,
+    "unique_research_evidence_country_codes": 44,
+    "research_only_countries": 43,
     "countries_not_yet_researched_in_current_evidence_register": 0,
     "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
   },
