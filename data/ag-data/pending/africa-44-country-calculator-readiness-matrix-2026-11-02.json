@@ -1441,30 +1441,31 @@
       "code": "MZ",
       "name": "Mozambique",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_2024_crop_production_series_and_2023_integrated_agricultural_survey_and_2023_2024_agricultural_census_identified_crop_area_yield_and_budget_extraction_pending",
+      "existing_research_note": "batch_31_maap_2025_26_campaign_snapshot_and_ine_2025_publication_identified",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial",
+        "dated_local_farmgate_prices_and_units": "partial",
+        "seed_and_planting_material_costs": "unavailable",
+        "fertilizer_and_soil_amendment_costs": "unavailable",
+        "crop_protection_costs": "unavailable",
+        "irrigation_water_and_energy_costs": "partial",
+        "labour_rates_and_operations": "unavailable",
+        "machinery_and_land_preparation_costs": "unavailable",
+        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "currency_and_exchange_rate_method": "pass",
+        "source_provenance_and_observation_date": "pass",
+        "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "INE 2024 production series contains national crop output but matched provincial harvested area and yield tables have not been extracted.",
+        "MAAP 2025/26 campaign values are plans/forecasts and January flood monitoring, not final season results.",
+        "Current SIMA/ICM prices are available through official collection systems, but dated downloadable observations have not been verified by commodity, province, grade, unit and transaction level.",
+        "Farmer-paid seed, fertilizer, crop protection, labour, machinery and irrigation-energy quotations remain incomplete.",
+        "Regional enterprise budgets are missing; rice production systems, bean species and commercial versus local poultry must remain separate.",
+        "Country-specific calculator mapping and deterministic regression tests have not been implemented."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract INE 2025 publication and CAP 2023/24 district Excel tables; reconcile crop-specific provincial production with matching harvested area; obtain original SIMA/ICM producer-level prices and itemized farm budgets before creating calculator tests."
     },
     {
       "code": "NA",
