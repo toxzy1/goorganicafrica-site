@@ -3804,7 +3804,7 @@
     {
       "country_code": "EG",
       "country_name": "Egypt",
-      "evidence_status": "official_CAPMAS_2024_crop_and_livestock_statistics_and_2025_crop_area_bulletin_identified_crop_specific_yields_and_cost_series_extraction_pending",
+      "evidence_status": "official_CAPMAS_2023_24_governorate_crop_bulletin_and_MALR_farmgate_price_database_identified_extraction_and_enterprise_costs_pending",
       "sources": [
         {
           "title": "Crop Areas and Plant Production 2023/24 — CAPMAS Excel dataset",
@@ -3904,6 +3904,82 @@
             "Do not derive crop yield from production totals without matched harvested area and crop-season alignment.",
             "Egypt has three crop seasons (winter, summer, Nili); annual cropped area can count the same physical land more than once and must not be confused with cultivated land area."
           ]
+        },
+        {
+          "title": "CAPMAS annual bulletin: Crop Areas and Plant Production, December 2024",
+          "publisher": "Central Agency for Public Mobilization and Statistics (CAPMAS)",
+          "url": "https://old.capmas.gov.eg/Pages/Publications.aspx?YearID=23541&page_id=5104",
+          "publication_date": "2024-12",
+          "reference_period": "2023/2024",
+          "coverage": "Winter, summer and Nili crop area, productivity and production; governorate-level publication catalogue",
+          "status": "official_primary_catalogue_confirmed",
+          "observations": [
+            {
+              "indicator": "total_cropped_area",
+              "value_million_feddans": 17,
+              "reference_period": "2023/2024",
+              "status": "reported in CAPMAS release; annual cropped area may count multiple crop cycles on the same physical land"
+            },
+            {
+              "indicator": "total_planted_area",
+              "value_million_feddans": 10.1,
+              "reference_period": "2023/2024",
+              "status": "reported in CAPMAS release; distinct from cropped area"
+            }
+          ],
+          "quality_notes": [
+            "CAPMAS release reports 17.0 million feddans cropped area versus 10.1 million feddans planted area for 2023/24; do not interchange these denominators.",
+            "CAPMAS catalogue identifies governorate-level data and winter/summer/Nili season indicators; detailed crop-by-governorate table extraction remains outstanding."
+          ]
+        },
+        {
+          "title": "Agricultural crop composition database",
+          "publisher": "Ministry of Agriculture and Land Reclamation, Economic Affairs Sector",
+          "url": "https://www.agri.gov.eg/databases/80",
+          "status": "official_database_interface_confirmed_data_rows_not_extracted",
+          "coverage": "Year range, land category and governorate selectors; planted area and cropped area by winter, summer and Nili seasons",
+          "note": "Page currently exposes the table schema but returned no data rows in the accessible page text. It is a priority route for governorate/season extraction; no values admitted."
+        },
+        {
+          "title": "Historical farm-gate prices database",
+          "publisher": "Ministry of Agriculture and Land Reclamation, Economic Affairs Sector",
+          "url": "https://www.agri.gov.eg/databases/81",
+          "status": "official_database_interface_confirmed_data_rows_not_extracted",
+          "coverage": "Season, crop and year filters; farm prices in EGP/tonne and traded prices in EGP/kg",
+          "note": "The database distinguishes farm prices from traded prices, but accessible page text returned no observations. Obtain dated crop/season entries and retain separate units and market levels."
+        },
+        {
+          "title": "Daily crop prices database",
+          "publisher": "Ministry of Agriculture and Land Reclamation, Economic Affairs Sector",
+          "url": "https://agri.gov.eg/databases/83",
+          "status": "official_database_interface_confirmed_wholesale_and_retail_only",
+          "coverage": "Daily wholesale prices at Obour Market and retail prices from a representative national sample; min/max/average",
+          "note": "This is market context, not farm-gate revenue. Never use its wholesale or retail prices as producer prices."
+        },
+        {
+          "title": "Annual reports: livestock and poultry statistics 2024",
+          "publisher": "Ministry of Agriculture and Land Reclamation",
+          "url": "https://moa.gov.eg/publications?type=Annual+Reports",
+          "publication_date": "page checked 2026-11-03",
+          "reference_period": "2024",
+          "status": "official_report_links_listed_download_and_table_extraction_pending",
+          "coverage": "National livestock and poultry statistical reports, alongside 2024 agricultural trade and food balance publications",
+          "note": "The official publication page lists 2024 livestock and poultry statistics reports. These are national statistics; regional enterprise costs and farm output prices remain unverified."
+        },
+        {
+          "title": "Egypt administrative divisions",
+          "publisher": "State Information Service, Government of Egypt",
+          "url": "https://sis.gov.eg/en/egypt/basic-information/",
+          "status": "official_administrative_reference",
+          "observations": [
+            {
+              "indicator": "governorates",
+              "value": 27,
+              "unit": "governorates",
+              "status": "official government page also describes seven broad regions containing the governorates"
+            }
+          ],
+          "note": "Use the 27 governorates as the administrative selection layer. The seven broad regions are a separate grouping and should not replace governorate-level records."
         }
       ],
       "priority_commodities": [
@@ -3922,17 +3998,15 @@
         "pig"
       ],
       "remaining_gaps": [
-        "download and extract the direct CAPMAS 2023/24 Crop Areas and Plant Production XLSX (bd1454bf-e4e7-478a-9913-fbfd1b5a133b) and match crop-specific area, output and yield by governorate and winter/summer/Nili season",
-        "retrieve the Ministry of Agriculture Economic Affairs Sector 2023 agricultural statistics bulletin and compare the matched series",
-        "confirm whether rice statistics refer to paddy or milled rice and distinguish summer, winter and Nili seasons",
-        "separate old-land, new-land, reclaimed desert, irrigated and rainfed production systems where the data support it",
-        "obtain current governorate-level producer prices for paddy rice, maize, tomato, pepper, cucumber, watermelon and pulses; distinguish government procurement from private farm-gate prices",
-        "obtain farmer-paid costs for seed, fertilizer, crop protection, labour, machinery, irrigation water, energy, land rent and transport by crop and production system",
-        "obtain current cattle, buffalo, sheep, goat, broiler and layer enterprise costs and liveweight/egg/milk output prices",
-        "obtain and document the current agricultural census or holding survey frame and update the 2010 structural baseline",
-        "do not activate calculator profiles until crop-specific multi-season yields, local prices and complete enterprise budgets are independently verified"
+        "download and extract the CAPMAS 2023/24 workbook and/or MALR crop-composition database by crop, governorate and winter/summer/Nili season; reconcile planted, cropped and harvested area definitions",
+        "verify crop-specific multi-season yields for the calculator's 17 commodities; do not use national production-only totals or secondary transcriptions as yields",
+        "extract dated MALR farm-gate price records by crop, season and year, retaining EGP/tonne and distinguishing traded EGP/kg observations",
+        "obtain current farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation-water, energy, land-rent and transport costs by governorate and production system",
+        "download and extract 2024 livestock and poultry reports and obtain region-specific enterprise costs and output prices",
+        "document governorate-to-seven-region mapping only as a grouping layer; preserve governorate and old-land/new-land/reclaimed production distinctions where supported",
+        "build crop-specific regional enterprise budgets, currency handling and calculator test cases before activation"
       ],
-      "extraction_status": "Egypt now has a verified CAPMAS catalogue entry for the December 2024 crop-area and plant-production bulletin, a direct CAPMAS 2023/24 XLSX download URL, and official Ministry agricultural statistics bulletin routes. CAPMAS metadata confirms governorate-level winter, summer and Nili crop area/productivity/production indicators. Secondary 2024 output figures for wheat, maize, paddy rice and tomato are recorded only as cross-check leads; no calculator yield or farm budget is admitted until the primary spreadsheet is extracted and area/season definitions are reconciled."
+      "extraction_status": "Batch 47 confirms primary statistical and price-data interfaces: CAPMAS 2023/24 bulletin metadata reports 17.0 million feddans cropped area and 10.1 million feddans planted area and identifies governorate-level winter, summer and Nili indicators; MALR exposes a crop-composition database and a historical farm-gate price database (EGP/tonne) as well as separate daily wholesale/retail data. Accessible pages exposed schema but not downloadable observation rows in this review. No regional crop yield, farm-gate quote or farm budget is admitted; Egypt remains directory-only."
     },
     {
       "country_code": "DZ",
