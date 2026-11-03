@@ -1,0 +1,62 @@
+{
+  "title": "Mauritania calculator-readiness follow-up — Batch 28",
+  "batch": 28,
+  "country_code": "MR",
+  "country_name": "Mauritania",
+  "review_date": "2026-11-03",
+  "prior_work": "A Batch 11 review already exists. The 15 administrative wilayas were already present in the regional lookup; no duplicate regions were added.",
+  "status": "research_updated_not_calculator_ready",
+  "new_evidence": [
+    "Ministry of Agriculture 2025-26 headline: 985,000 tonnes total agricultural production, about 700,000 tonnes cereals and 556,000 tonnes rice; definitions and underlying tables still require verification.",
+    "Trarza development pole: 800,000 ha development envelope, 53,000 ha prepared for rice and 10,000 ha for vegetables; these are not automatically actual harvested areas.",
+    "FAO GIEWS 28 October 2026: 2026 coarse-grain harvest underway; rice harvest expected November-December; localized Gorgol shortfall risk and below-average rangeland/water in some areas.",
+    "World Bank monthly price panel: opened catalogue metadata describes 34 markets through April 2026 and modelled market prices; not farmgate evidence. Search index surfaced a later version with different coverage, requiring metadata reconciliation."
+  ],
+  "existing_evidence_preserved": [
+    "2024/25 rice 481,854 tonnes on 97,444 ha (secondary government trade-agency summary citing FAO)",
+    "Autumn 2025 rice 229,353 tonnes on 48,800 ha (Ministry figures reported by MADAR), with Trarza 206,005 t, Gorgol 13,217 t and Brakna 10,131 t; seasonal scope retained"
+  ],
+  "administration": {
+    "wilayas": 15,
+    "moughataas": 63,
+    "lookup_status": "already_present_no_change"
+  },
+  "currency": {
+    "code": "MRU",
+    "name": "Mauritanian ouguiya"
+  },
+  "calculator_status": "not_active",
+  "blockers": [
+    "Original Ministry crop tables and crop-by-wilaya data",
+    "Verified farmgate prices",
+    "Farmer-paid input/labour/irrigation costs",
+    "Regional enterprise budgets for multiple production systems",
+    "Livestock species-specific costs and output prices",
+    "Calculator mapping and tests"
+  ],
+  "safeguards": [
+    "Do not combine annual and seasonal rice totals",
+    "Do not treat prepared development-pole hectares as harvested area",
+    "Do not treat modelled retail market prices as farmgate prices",
+    "Do not change the original ten active countries"
+  ],
+  "sources": [
+    {
+      "title": "Mauritania Ministry of Agriculture — Trarza development pole and national production update",
+      "url": "https://agriculture.gov.mr/fr/node/721"
+    },
+    {
+      "title": "FAO GIEWS Mauritania, reference date 28 October 2026",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MR"
+    },
+    {
+      "title": "Mauritania DGAT administrative geography",
+      "url": "https://dgat.interieur.gov.mr/"
+    },
+    {
+      "title": "World Bank Mauritania monthly food price estimates",
+      "url": "https://microdata.worldbank.org/catalog/6170"
+    }
+  ],
+  "validation": "JSON parsing and country/active-country invariants to be checked after writes; no activation, merge or deployment authorized."
+}
