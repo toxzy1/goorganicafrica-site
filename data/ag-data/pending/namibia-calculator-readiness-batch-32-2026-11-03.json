@@ -5,8 +5,8 @@
   "country_name": "Namibia",
   "completed_on": "2026-11-03",
   "branch": "data/44-country-calculator-readiness",
-  "calculator_status": "not_active",
-  "executive_summary": "Reviewed Namibia's NAB 2024/25 annual report and FAO's 28 August 2026 outlook; added distinction between six agronomic production zones and 14 administrative regions. Crop-specific final outputs, region crosswalk, farmer-paid input costs, enterprise budgets and calculator tests remain incomplete.",
+  "calculator_status": "not_active_directory_only",
+  "executive_summary": "Batch 32 added the NAB 5 June 2026 Grade 1 mahangu floor-price notice and its standardized rain-fed cost annexure. The farm-gate/collection-centre floor price is N$7.87407/kg; the mill-door price is N$8.16672/kg. The annexure is a mahangu-specific benchmark, not a multi-crop or region-specific budget. FAO's 28 August 2026 outlook estimates aggregate cereal output at 155,000 tonnes; no crop-level allocation is inferred.",
   "sources": [
     {
       "publisher": "Namibian Agronomic Board",
@@ -25,12 +25,18 @@
       "date": "accessed 2026-11-03",
       "url": "https://murd.gov.na/en/sub-national-governments",
       "use": "Official list of 14 regional councils."
+    },
+    {
+      "publisher": "Namibian Agronomic Board",
+      "date": "2026-06-05",
+      "url": "https://www.nab.com.na/wp-content/uploads/2026/06/Mahangu-floor-price-2026-notice-singed.pdf",
+      "use": "2026 Grade 1 mahangu farm-gate and mill-door floor prices plus itemized standardized rain-fed production-cost annexure."
     }
   ],
   "administrative_regions": [
     "Erongo",
     "Hardap",
-    "Karas",
+    "//Kharas",
     "Kavango East",
     "Kavango West",
     "Khomas",
@@ -48,12 +54,29 @@
     "Marketed grain volumes are not total production or yield.",
     "Annual floor-price averages are not dated farm-gate transaction prices.",
     "FAO aggregate cereal production is not apportioned among individual crops.",
-    "Namibia remains directory-only; original 10 active countries are not changed."
+    "Namibia remains directory-only; original 10 active countries are not changed.",
+    "2026 Grade 1 mahangu floor prices apply only to the 2026 marketing season; the farm-gate/collection-centre price already deducts producer levy and producer transport share.",
+    "The NAB rain-fed mahangu cost annexure is not a representative multi-region budget and must not be generalized to other crops."
   ],
   "remaining_work": [
-    "Extract NSA 2026 agriculture bulletin tables and final 2025/26 census outputs.",
-    "Verify NAB zone-level yield observations and map agronomic zones to administrative regions.",
-    "Obtain current dated producer prices and farmer-paid input costs by region and production system.",
-    "Build representative irrigated and rainfed budgets and calculator test cases."
-  ]
+    "Extract NSA 2026 agriculture bulletin tables and final 2025/26 Census of Agriculture outputs.",
+    "Verify NAB zone-level yield observations, especially the unusually low Zambezi value, and build a documented zone-to-region crosswalk.",
+    "Obtain current dated producer prices and farmer-paid input costs by region and production system for all calculator commodities.",
+    "Reconcile the 2026 mahangu annexure's itemized costs before any calculator use.",
+    "Build representative irrigated and rain-fed budgets and calculator test cases."
+  ],
+  "readiness_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial",
+    "dated_local_farmgate_prices_and_units": "partial",
+    "seed_and_planting_material_costs": "partial",
+    "fertilizer_and_soil_amendment_costs": "partial",
+    "crop_protection_costs": "unavailable",
+    "irrigation_water_and_energy_costs": "unavailable",
+    "labour_rates_and_operations": "partial",
+    "machinery_and_land_preparation_costs": "partial",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_exchange_rate_method": "pass",
+    "source_provenance_and_observation_date": "pass",
+    "calculator_mapping_and_test_cases": "blocked"
+  }
 }
