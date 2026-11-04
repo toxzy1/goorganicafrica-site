@@ -6,7 +6,7 @@
     "currency_code": "SSP",
     "currency_name": "South Sudanese pound"
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "purpose": "Country-specific agricultural evidence inventory for later validation; not a production calculator profile.",
   "sections": [
@@ -237,18 +237,84 @@
         "No crop-specific yield or cost series has been adopted from the portal summary in this evidence record.",
         "Obtain original survey tables and document sample design, coverage, crop definitions, planted versus harvested area and missing-data treatment."
       ]
+    },
+    {
+      "id": "november_2026_seasonal_market_and_data_refresh",
+      "topic": "latest 2026 harvest outlook, cereal prices, macroeconomic conditions and price-data coverage",
+      "source_name": "FAO GIEWS South Sudan Country Brief; FAO FPMA East Africa price roundup; FEWS NET September 2026–January 2027 Key Message Update; World Bank Real-Time Food Prices dataset",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=SSD",
+      "companion_source_url": "https://www.fao.org/giews/food-prices/regional-roundups/detail/en/c/1760498/",
+      "additional_source_urls": [
+        "https://fews.net/east-africa/south-sudan",
+        "https://microdata.worldbank.org/catalog/4505/data-api",
+        "https://www.fao.org/markets-and-trade/do-not-touch/all-widgets/2025-fao-wfp-crop-and-food-security-assessment-mission-%28cfsam%29-to-the-republic-of-south-sudan---19-march-2026/en"
+      ],
+      "reference_date": "FAO GIEWS reference 7 September 2026; FAO FPMA roundup published 14 September 2026; FEWS NET September 2026–January 2027 update; World Bank dataset version 5 October 2026",
+      "observations": [
+        {
+          "item": "Southern first-season maize and sorghum harvest",
+          "period": "2026, completed August",
+          "status": "FAO_GIEWS_assessment",
+          "finding": "Below-average rainfall and prolonged dry spells affected establishment and crop development; cereal output was expected below average. This is a provisional seasonal assessment, not final production data."
+        },
+        {
+          "item": "Central and northern cereal harvest calendar",
+          "period": "2026, short-cycle harvest through October; long-cycle sorghum November 2026–January 2027",
+          "status": "FAO_GIEWS_assessment",
+          "finding": "Short-cycle sorghum and maize harvesting had started; long-cycle sorghum was expected later. Do not combine these crop calendars with the southern bimodal calendar."
+        },
+        {
+          "item": "Juba sorghum and maize prices",
+          "period": "March–August 2026",
+          "status": "FAO_GIEWS_market_assessment",
+          "finding": "Sorghum prices remained at record levels through June. Maize rose about 20 percent from March to June, then declined between June and August as southern first-season harvest supplies reached markets. FAO's regional roundup separately reports an 11 percent August monthly maize decline; retain the source-specific series rather than forcing the percentages into one calculation."
+        },
+        {
+          "item": "Juba diesel prices",
+          "period": "February–August 2026",
+          "status": "FAO_GIEWS_market_assessment",
+          "finding": "Diesel prices more than doubled, increasing irrigation, mechanisation and transport cost risk; this is a fuel-market indicator, not a farm input quotation."
+        },
+        {
+          "item": "Acute food insecurity and harvest outlook",
+          "period": "September 2026–January 2027",
+          "status": "FEWS_NET_outlook",
+          "finding": "FEWS NET reports widespread Emergency outcomes and continued risk of extreme outcomes in conflict-affected counties; it expects below-average harvests in many areas. These conditions require county-level access screening, not a national yield haircut."
+        },
+        {
+          "item": "Currency depreciation",
+          "period": "September 2026 year-on-year",
+          "status": "FEWS_NET_reported_change",
+          "finding": "FEWS NET reports the SSP depreciated by 23–24 percent year-on-year on official and parallel markets. Keep the two exchange-rate series separate and dated."
+        },
+        {
+          "item": "World Bank market-price dataset coverage",
+          "period": "2007-01-01 to 2026-10-01; version 2026-10-05",
+          "status": "dataset_metadata_verified",
+          "value": 42,
+          "unit": "markets; 757040 observations",
+          "finding": "The Real-Time Food Prices dataset provides modeled monthly market-price estimates for 42 South Sudan markets. It is a broad market-price research source, not a direct farmgate producer-price series; inspect observation/model flags before use."
+        }
+      ],
+      "caveats": [
+        "FAO seasonal forecasts and FEWS NET outlooks are not final harvest statistics or farm budgets.",
+        "Retail/market price movements cannot be substituted for farmgate prices.",
+        "The World Bank RTFP dataset includes modeled estimates; distinguish observed from modeled records and retain market, product, date, unit and estimation status.",
+        "Diesel price changes are contextual evidence only; obtain dated local quotations for irrigation, tractor hire and transport.",
+        "Conflict, access and market functionality vary by county and can invalidate otherwise plausible national averages."
+      ]
     }
   ],
   "calculator_data_gaps": [
-    "Obtain the complete FAO/WFP CFSAM 2025 tables and extract crop-specific area, production and yield by state, county and season.",
-    "Verify NBS Agricultural Survey Report 2024 and underlying survey tables against CFSAM estimates; resolve differences in coverage, crop definitions and totals.",
-    "Export dated CLIMIS market observations for priority crops and livestock by state/county; preserve retail, wholesale, bag and small local-unit measures.",
-    "Collect verified producer/farmgate prices by crop, market, grade, season and date; do not substitute retail sorghum or maize prices.",
-    "Collect current seed, fertiliser, crop-protection, land preparation, labour, traction, irrigation, fuel, transport, storage and post-harvest input quotations by production zone.",
-    "Build separate budgets for southern bimodal maize/sorghum systems and central/northern cereal systems; do not apply one national yield or cost assumption.",
-    "Validate crop presence and production scale for groundnut, sesame, cowpea, cassava, millet and other candidate crops before adding them to a calculator crop list.",
-    "Document SSP inflation and official/parallel exchange-rate series with effective dates; never hard-code a stale nominal price.",
-    "Assess conflict, displacement, road access, flooding and drought risks by location before assigning representative enterprise assumptions.",
+    "Obtain and extract the full FAO/WFP CFSAM 2025 crop/state/season tables for area, production and yield; reconcile with the original NBS survey publications.",
+    "Verify the NBS Agricultural Survey Report 2024 and underlying survey tables; do not adopt the beta portal's summary numbers until primary tables and methodology are confirmed.",
+    "Export dated CLIMIS and/or World Bank market observations by market, commodity and unit; flag modeled estimates and preserve original local units.",
+    "Obtain verified farmgate producer prices by crop, location, grade, date and season; current evidence is primarily market/retail price monitoring.",
+    "Collect dated farmer-facing quotations for seed, fertiliser, crop protection, labour, mechanisation/oxen traction, irrigation, fuel, transport and post-harvest costs.",
+    "Build separate enterprise budgets for southern bimodal and central/northern cereal systems, with state/county-level access and climate qualification.",
+    "Validate the producing locations and production scale of groundnut, sesame, cowpea, cassava, millet and other candidate crops before adding calculator profiles.",
+    "Document official and parallel SSP/USD rates separately with effective dates; never hard-code stale nominal prices.",
+    "Screen conflict, displacement, road access, drought and flood exposure at county level before assigning regional enterprise assumptions.",
     "Develop livestock budgets separately using species, breed, herd composition, feed, water, veterinary costs, mortality, liveweight, milk yield and market transaction data."
   ],
   "readiness_decision": {
@@ -256,12 +322,13 @@
     "calculator_status": "directory_only_not_active",
     "calculator_readiness": "not_ready_research_only",
     "activation_blockers": [
-      "Crop-specific state/county/season area, production and yield tables have not been extracted and reconciled.",
+      "Crop-specific state/county/season area, production and yield tables remain unextracted and unreconciled.",
       "No verified current farmgate producer-price series has been adopted.",
       "No complete regional crop enterprise budgets or current input quotations.",
-      "Nominal SSP prices and exchange rates are highly volatile and require dated treatment.",
+      "Nominal SSP prices and exchange rates are highly volatile and require dated, market-specific treatment.",
       "Market access, conflict and climate conditions vary materially by state and county.",
-      "NBS portal summary data require validation against original statistical reports and CFSAM."
+      "NBS portal summary data require validation against original statistical reports and CFSAM.",
+      "The World Bank RTFP series is market-price/modelled data and cannot stand in for farmgate prices."
     ]
   },
   "safeguards": [
@@ -271,6 +338,8 @@
     "Do not substitute retail or wholesale market prices for farmgate producer prices.",
     "Preserve local market units such as malwa and shawal alongside any verified conversions.",
     "Keep official and parallel exchange-rate observations distinct and dated.",
-    "Do not generalize 2026 drought, conflict or food-security conditions into normal-year enterprise assumptions."
+    "Do not generalize 2026 drought, conflict or food-security conditions into normal-year enterprise assumptions.",
+    "The October 2026 World Bank RTFP release is market-price data with modeled estimates; retain model/observation flags and never relabel it farmgate.",
+    "Do not treat the 2026 harvest outlook as final crop production or use it as a normal-year yield assumption."
   ]
 }
