@@ -7,7 +7,7 @@
     "currency_name": "São Tomé and Príncipe dobra",
     "peg": "The dobra has been pegged to the euro at 24.5 STN per EUR since 2010; confirm current central-bank rate before any conversion."
   },
-  "record_date": "2026-11-02",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "calculator_readiness": "not_ready_research_only",
   "purpose": "Country evidence inventory for later crop-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
@@ -280,6 +280,134 @@
       "caveats": [
         "These are bilateral EU trade values, not total national agricultural exports, producer prices or farm revenues."
       ]
+    },
+    {
+      "id": "third_general_agricultural_census_headline_results_2026_09",
+      "topic": "newly presented 2025/26 agricultural census results and national structural indicators",
+      "source_name": "Rádio Somos Todos Primos (RSTP), reporting the Ministry of Agriculture presentation of the Third General Agricultural Census; cross-check: Téla Nón",
+      "source_url": "https://rstp.st/2026/09/04/terceiro-recenseamento-geral-agricola-aponta-necessidade-de-maior-investimento-do-setor-em-stp/",
+      "companion_source_url": "https://www.telanon.info/economia/2026/09/06/54194/trinta-anos-depois-recenseamento-expoe-fragilidades-e-potencial-da-agricultura/",
+      "publication_or_reference_date": "2026-09-04 and 2026-09-06; accessed 2026-11-04",
+      "observations": [
+        {
+          "item": "Land designated for agriculture",
+          "value": 38020,
+          "unit": "hectares",
+          "status": "census_headline_reported_by_secondary_press",
+          "geographic_scope": "national",
+          "caveat": "Not stated to be current harvested area, cultivated area, or crop-specific area; do not calculate yields from this figure."
+        },
+        {
+          "item": "People working in agriculture",
+          "value": 20084,
+          "unit": "people",
+          "status": "census_headline_reported_by_secondary_press",
+          "geographic_scope": "national",
+          "components": [
+            {
+              "item": "Men",
+              "value": 55,
+              "unit": "percent"
+            },
+            {
+              "item": "Women",
+              "value": 45,
+              "unit": "percent"
+            }
+          ]
+        },
+        {
+          "item": "Rural population with agriculture as principal occupation",
+          "value": 88.4,
+          "unit": "percent",
+          "status": "census_headline_reported_by_secondary_press",
+          "caveat": "Denominator and operational definition are not fully specified in the article; do not equate with share of national population or agricultural workforce."
+        },
+        {
+          "item": "Cattle stock",
+          "value": 1033,
+          "unit": "head",
+          "status": "census_headline_reported_by_secondary_press",
+          "geographic_scope": "national"
+        },
+        {
+          "item": "Poultry stock",
+          "value": 556000,
+          "unit": "birds_approximate",
+          "status": "census_headline_reported_by_secondary_press",
+          "geographic_scope": "national"
+        },
+        {
+          "item": "Pig stock",
+          "value": 42000,
+          "unit": "head_approximate",
+          "status": "census_headline_reported_by_secondary_press",
+          "geographic_scope": "national"
+        },
+        {
+          "item": "National food production coverage",
+          "value": 60,
+          "unit": "percent_of_food_needs_approximate",
+          "status": "census_coordinator_statement_reported_by_press",
+          "caveat": "Broad food availability statement; not a crop yield or self-sufficiency ratio for each commodity."
+        },
+        {
+          "item": "Agricultural census coverage",
+          "finding": "The coordinator stated that the census report contains production by crop, area by crop, livestock numbers, rural conditions and production-support infrastructure. The public articles reviewed report headline indicators but do not reproduce the crop-by-crop tables.",
+          "status": "official_census_results_described_by_coordinator"
+        }
+      ],
+      "caveats": [
+        "The census results were presented by the Ministry of Agriculture on 4 September 2026; the numerical values in this evidence record are transcribed from press coverage of that presentation, not from the complete primary census tables.",
+        "The 38,020 hectares are described as land designated for agriculture, not as harvested area; they cannot be used as the denominator for crop yields.",
+        "Livestock stock counts are not annual offtake, meat production, egg output, or enterprise productivity.",
+        "The census coordinator identified poor rural road access as a constraint on moving produce to markets; this supports including transport and market-access costs in future budgets but does not quantify them.",
+        "Obtain the full census report and metadata, then extract crop x district x area x production tables and verify definitions, reference period, weights and survey design."
+      ]
+    },
+    {
+      "id": "cocoa_export_unit_value_2026_05_not_farmgate",
+      "topic": "cocoa export unit value as trade-price cross-check only",
+      "source_name": "UN Comtrade export unit value as presented by Selina Wamucii",
+      "source_url": "https://www.selinawamucii.com/insights/prices/sao-tome-and-principe/cocoa-beans/",
+      "publication_or_reference_date": "Price period May 2026; page accessed 2026-11-04",
+      "observations": [
+        {
+          "item": "Cocoa beans export unit value",
+          "value": 2.84,
+          "unit": "USD/kg",
+          "local_currency_value": 64.37,
+          "local_currency": "STN/kg",
+          "period": "May 2026",
+          "status": "secondary_display_of_UN_Comtrade_export_unit_value"
+        },
+        {
+          "item": "Cocoa beans exports",
+          "value": 3545,
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "secondary_display_of_UN_Comtrade_trade_data"
+        },
+        {
+          "item": "Cocoa beans export value",
+          "value": 10050764,
+          "unit": "USD",
+          "period": "2023",
+          "status": "secondary_display_of_UN_Comtrade_trade_data"
+        },
+        {
+          "item": "Cocoa beans production",
+          "value": 4000,
+          "unit": "tonnes",
+          "period": "2024",
+          "status": "secondary_display_claimed_as_FAOSTAT"
+        }
+      ],
+      "caveats": [
+        "The 64.37 STN/kg figure is an export unit value, not a farmgate producer price; it includes export-chain composition and must not be used as a farm revenue assumption.",
+        "The displayed 2024 production and harvested-area/yield figures on the secondary page are internally inconsistent: 4,000 tonnes divided by 43,874 hectares is about 0.091 tonnes/ha, not the displayed 0.01 tonnes/ha. Verify the original FAOSTAT item, area and yield series before use.",
+        "The 4,000-tonne 2024 estimate conflicts with the government portal's earlier 15,000-tonne/year cocoa claim; preserve both as conflicting claims until primary data resolves scope and period."
+      ]
     }
   ],
   "calculator_data_gaps": [
@@ -290,7 +418,10 @@
     "Collect current producer prices for cassava, banana, maize, plantain, vegetables, coffee and other candidate crops by location, unit and season.",
     "Obtain input quotations for planting material, fertiliser, crop protection, labour, land preparation, transport, drying/fermentation, packaging and irrigation.",
     "Construct crop-specific enterprise budgets and yields for smallholder systems; separately model cocoa perennial establishment and mature-year production.",
-    "Confirm current exchange rate and any island-specific logistics costs before converting imported inputs or export values."
+    "Confirm current exchange rate and any island-specific logistics costs before converting imported inputs or export values.",
+    "Obtain the full Third General Agricultural Census report presented on 4 September 2026; transcribe crop-by-district cultivated/harvested area, production and yields with metadata and definitions.",
+    "Verify reported census headline totals (38,020 ha, 20,084 agricultural workers, 1,033 cattle, approximately 556,000 poultry and 42,000 pigs) against the primary report; do not treat land designated for agriculture as harvested area.",
+    "Reconcile cocoa output and area/yield inconsistencies against original FAOSTAT and national census tables; export unit values remain non-farmgate."
   ],
   "readiness_decision": {
     "classification": "research_evidence_record_present",
@@ -300,7 +431,8 @@
       "No validated current farmgate crop price series",
       "No complete crop-specific input quotations or enterprise budgets",
       "National crop area and production tables not yet extracted",
-      "Cocoa production figures conflict and require source reconciliation"
+      "Cocoa production figures conflict and require source reconciliation",
+      "Third General Agricultural Census headline results are now reported publicly, but full crop-by-district tables and primary report metadata have not yet been extracted."
     ]
   },
   "safeguards": [
