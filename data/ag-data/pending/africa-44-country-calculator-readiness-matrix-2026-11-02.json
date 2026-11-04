@@ -1536,20 +1536,20 @@
       "code": "MR",
       "name": "Mauritania",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_2025_26_ministry_aggregate_production_and_FAO_2026_seasonal_market_context_added_existing_2025_autumn_rice_series_preserved_full_regional_enterprise_budget_and_farmgate_input_price_evidence_pending",
+      "existing_research_note": "2026-11-04 follow-up: AMI Ministry interview adds 2024-25 traditional cereal/rice/vegetable production and area aggregates plus seed/mechanization programme outputs; AMI 2025 rice agreement records MRU14,000/t raw rice and MRU28,000/t white rice (campaign agreement, not current universal farmgate); AfDB 2023-24 monitoring reports system-specific irrigated rice 5.6 t/ha, floodplain sorghum 0.57 and maize 0.60; World Bank latest RTFP catalogue metadata 37 markets through Oct 2026, observed/imputed market prices not farmgate.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_ministry_2025_26_headline_totals_and_Trarza_prepared_area_added_crop_by_wilaya_harvested_area_and_consistent_seasonal_denominators_pending",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited_World_Bank_market_panel_is_modelled_retail_or_market_price_proxy_not_verified_farmgate",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_AMI_2024_25_national_crop_aggregates_added_and_AfDB_2023_24_system_indicators_irrigated_rice_5_6_floodplain_sorghum_0_57_maize_0_60_t_ha_added_but_crop_by_wilaya_harvested_area_and_seasonal_denominator_validation_pending",
+        "dated_local_farmgate_prices_and_units": "partial_AMI_2025_raw_rice_agreement_price_MRU14000_per_tonne_and_white_rice_MRU28000_per_tonne_recorded_as_campaign_agreement_not_current_universal_farmgate_World_Bank_RTFP_market_panel_updated_to_2026_10_but_includes_imputed_market_prices",
+        "seed_and_planting_material_costs": "partial_AMI_reports_500_tonnes_traditional_seed_and_1700kg_vegetable_seed_distributed_2024_25_but_no_farmer_copayment_or_unit_price",
+        "fertilizer_and_soil_amendment_costs": "partial_FAO_GIEWS_and_government_programmes_confirm_input_support_and_subsidies_but_no_current_farmer_paid_product_formulation_and_wilaya_price_schedule",
         "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
+        "irrigation_water_and_energy_costs": "partial_AMI_reports_irrigation_infrastructure_works_and_AfDB_managed_floodplain_area_but_no_farm_water_tariff_pumping_energy_or_scheme_operation_costs",
         "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
+        "machinery_and_land_preparation_costs": "partial_AMI_reports_88_tractors_and_1500_ploughs_acquired_for_2025_26_but_no_farmer_hire_rate_or_operation_cost_schedule",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "DGAT_15_wilayas_63_moughataas_verified_Ministry_2025_26_aggregate_and_FAO_GIEWS_2026_10_28_context_added_primary_tables_and_market_microdata_extraction_pending",
+        "source_provenance_and_observation_date": "pass_AMI_2025_08_03_Ministry_planning_statistics_interview_AMI_2025_07_17_rice_agreement_AfDB_2023_24_monitoring_FAO_GIEWS_2026_10_28_and_World_Bank_RTFP_version_2026_10_05_catalogue_recorded",
         "calculator_mapping_and_test_cases": "15_wilaya_lookup_already_present_mapping_and_regression_tests_pending"
       },
       "blockers": [
@@ -1557,9 +1557,14 @@
         "Extract and audit market-price microdata; distinguish observed/modelled and retail/wholesale/farmgate prices.",
         "Obtain dated farmer-facing input and labour quotations by wilaya and production system.",
         "Build separate enterprise budgets for irrigated rice, rainfed cereals, horticulture, oasis crops and livestock.",
-        "Map only validated values to the existing calculator schema and add country-specific regression tests."
+        "Map only validated values to the existing calculator schema and add country-specific regression tests.",
+        "Extract the original Ministry crop tables by wilaya and separate summer irrigated rice, autumn rainfed cereals and winter horticulture; national aggregates cannot supply crop-by-region calculator yields.",
+        "Validate the 2025 raw-rice agreement price MRU14,000/t against actual producer receipts, quality/contract terms and the 2026 season; exclude the MRU28,000/t white-rice price from paddy farmgate calculations.",
+        "Treat AfDB programme yields (irrigated rice 5.6 t/ha; floodplain sorghum 0.57 and maize 0.60 t/ha) as system-specific reference indicators, not national yield distributions.",
+        "Download and inspect the World Bank 2026-10-05 market-price release; distinguish direct observations from imputed estimates and consumer/market prices from producer transactions.",
+        "Obtain farmer-paid seed, fertilizer, crop protection, labour, machinery hire, irrigation, pumping energy and transport costs by wilaya and production system."
       ],
-      "next_step": "Extract original Ministry 2025-26 crop tables and World Bank market-price microdata; then obtain wilaya farmgate and input quotations and build separate regional enterprise budgets.",
+      "next_step": "Obtain and extract Ministry 2024-25 and 2025-26 crop-by-wilaya tables and the latest World Bank market-price microdata; verify the rice agreement against producer receipts, then assemble wilaya-level input and operating cost schedules.",
       "batch_11_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Interior Ministry DGAT portal reports 15 administrative wilayas and 63 moughataas. A separate decentralisation framework describes 13 elected local-government regions; this is a different unit, so the calculator lookup uses 15 administrative wilayas. A 28 January 2026 publication reproducing Ministry of Agriculture figures reports 2025 autumn rice output of 229353 tonnes, area 48800 ha and yield 4.70 t/ha, with regional figures only for Trarza, Gorgol and Brakna. Treat these as reported ministry figures pending the original ministry table.",
@@ -1580,6 +1585,23 @@
           "https://www.fao.org/giews/countrybrief/country.jsp?code=MR",
           "https://dgat.interieur.gov.mr/",
           "https://microdata.worldbank.org/catalog/6170"
+        ]
+      },
+      "batch_29_review": {
+        "review_date": "2026-11-04",
+        "country_name": "Mauritania",
+        "ministry_campaign": "AMI interview with Ministry Director of Planning/Statistics (3 August 2025) reports 2024-25 traditional cereals 135,417 t on 277,424 ha, rice 481,854 t on 97,444 ha and vegetables 134,025 t on 8,935 ha. These are national campaign aggregates; traditional cereals and vegetables are multi-crop groups and cannot be used as individual crop yields. Ministry reports three distinct annual campaigns: summer irrigated rice, autumn rainfed cereals and winter horticulture.",
+        "rice_price_agreement": "AMI (17 July 2025) reports a Ministry/Federation agreement setting raw rice at MRU14,000/t (MRU14/kg) and white rice at MRU28,000/t (MRU28/kg). Treat as a 2025 campaign negotiated price, not current 2026 universal farmgate transaction; raw paddy and milled white rice remain distinct.",
+        "yield_indicators": "AfDB 2023-2028 Country Strategy mid-term review reports irrigated rice 5.6 t/ha (on-track programme indicator), floodplain sorghum 0.57 t/ha (achieved), floodplain maize 0.60 t/ha (achieved), and 6,300 ha effectively managed floodplain. These are system-specific programme monitoring indicators, not national weighted crop yield distributions.",
+        "market_prices": "World Bank RTFP latest search metadata is Version 2026-10-05, 37 markets through 1 October 2026. It blends direct WFP/FAO/NSO observations with machine-learning estimates and imputes missing entries; most listed rice prices are imported consumer rice. Keep separate from farmgate paddy.",
+        "input_support": "AMI reports 500 tonnes of traditional seed and 1,700 kg vegetable seed distributed; 88 tractors and 1,500 ploughs acquired for 2025-26. These are programme distribution/equipment counts, not farmer unit prices or hire rates.",
+        "safeguards": [
+          "Mauritania remains not_active; 15-wilaya lookup remains a selector only.",
+          "Do not turn national multi-crop aggregates into crop yields.",
+          "Do not treat raw-rice agreement or white-rice price as a current universal farmgate quote.",
+          "AfDB programme yield indicators do not substitute for region-specific crop-cut data.",
+          "World Bank market estimates are not farmgate transactions and include imputed observations.",
+          "No activation, merge to main or deployment."
         ]
       }
     },
