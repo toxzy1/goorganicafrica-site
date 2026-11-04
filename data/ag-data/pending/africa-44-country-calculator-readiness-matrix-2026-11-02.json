@@ -845,8 +845,8 @@
       "existing_research_note": "Batch 50: official INSTAT EPVA 2022–23 Volume 2 Tables 119–121 extracted province-level cassava and plantain area/yield/production across all 9 provinces; correction and evidence supplement files preserve full plantain rows; FAO June 2026 maize/cereal context and DGEPF cash-crop index volatility reviewed; current farmgate prices and costed budgets still missing.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_EPVA_2022_23_province_level_cassava_and_plantain_area_yield_production_extracted_other_15_commodities_and_current_season_tables_pending",
-        "dated_local_farmgate_prices_and_units": "blocked_no_verified_current_province_crop_farmgate_series",
+        "crop_area_production_yield_by_commodity_and_season": "partial_EPVA_2022_23_cassava_and_plantain_transcriptions_exist_but_province_rows_do_not_reconcile_to_national_totals; original_PDF_reconciliation_required; other_15_commodities_pending",
+        "dated_local_farmgate_prices_and_units": "blocked_INSTAT_Jul_2026_IHPC_and_Sep_2026_agricultural_fair_prices_are_consumer_retail_event_prices_not_producer_farmgate",
         "seed_and_planting_material_costs": "partial_EPVA_seed_use_acquisition_indicators_only_no_current_unit_prices",
         "fertilizer_and_soil_amendment_costs": "partial_EPVA_fertilizer_use_indicators_only_no_current_product_prices_or_application_costs",
         "crop_protection_costs": "partial_EPVA_phytosanitary_use_indicators_only_no_current_product_prices_or_budgets",
@@ -855,7 +855,7 @@
         "machinery_and_land_preparation_costs": "partial_EPVA_equipment_use_tables_available_but_no_current_machine_hire_or_land_preparation_tariffs",
         "regional_enterprise_budget_and_gross_margin": "blocked_no_verified_province_crop_farmgate_prices_or_complete_costed_budgets",
         "currency_and_exchange_rate_method": "partial_XAF_currency_known_calculator_locale_and_rounding_tests_pending",
-        "source_provenance_and_observation_date": "partial_official_INSTAT_EPVA_2022_23_FAO_2026_and_DGEPF_sector_updates_recorded",
+        "source_provenance_and_observation_date": "partial_official_INSTAT_EPVA_2022_23_tables_and_INSTAT_IHPC_Jul_2026_and_AGP_Sep_2026_retail_context_recorded; EPVA_table_arithmetic_validation_pending",
         "calculator_mapping_and_test_cases": "blocked_no_validated_price_cost_dataset_or_regression_tests"
       },
       "blockers": [
@@ -863,9 +863,12 @@
         "Extract province-level observations for other supported commodities; do not extrapolate cassava/plantain yields.",
         "Obtain dated provincial farmgate prices by commodity, grade and unit.",
         "Obtain current farmer-paid input, labour, irrigation, machinery, transport, packaging and storage costs.",
-        "Construct regional enterprise budgets and calculator regression tests before activation."
+        "Construct regional enterprise budgets and calculator regression tests before activation.",
+        "Reconcile EPVA cassava and plantain province-row sums against national totals and the original Volume 2 PDF before using those numeric values.",
+        "Do not use INSTAT IHPC July 2026 or September 2026 agricultural-fair prices as farmgate prices; obtain dated producer quotations by province, commodity, grade and unit.",
+        "Obtain farmer-paid input, labour, irrigation, machinery, transport, packaging and storage costs and complete province-specific enterprise budgets."
       ],
-      "next_step": "Use the EPVA province-level cassava and plantain observations as a verified historical baseline, then obtain dated province-level farmgate prices and current farmer-paid costs; extract remaining crop tables and test only after validation.",
+      "next_step": "Recheck the original EPVA Volume 2 Tables 119-121 to resolve province/national arithmetic differences; retain July 2026 IHPC and September 2026 fair prices only as consumer-market context, then source producer prices and current farm costs.",
       "batch_15_review": {
         "review_date": "2026-11-02",
         "source_notes": "Verified the nine first-level provinces using the Gabon Ministry of Interior territorial-organisation page, which separately reports 48 departments, 52 communes, 26 districts and 164 cantons. The Ministry of Agriculture's RGA report page confirms the national agricultural census and lists its report volumes. FAO GIEWS' 4 June 2026 brief reports cassava and plantain as the main food crops, small maize production, a 2026 cereal import requirement forecast of 255,000 tonnes and above-average first-half rainfall that may have affected the secondary maize crop. Existing research evidence includes RGA/EPVA survey leads and World Bank sector context, but the crop/province tables and current enterprise costs remain unextracted.",
@@ -891,6 +894,19 @@
           "Add calculator mapping and tests only after source-backed values and provincial scope are validated."
         ],
         "regional_lookup": "9 provinces added to src/_data/calculator/regions.json on the readiness branch; research lookup only, country remains inactive."
+      },
+      "batch_51_review": {
+        "review_date": "2026-11-04",
+        "source_notes": "Added INSTAT Gabon IHPC July 2026 consumer price observations for fresh tomato and onion across Libreville, Port-Gentil, other urban areas and rural areas; added AGP report of 5 September 2026 agricultural-fair sale prices for cassava tuber, taro, onion and pork. These are consumer/event sale prices, not producer farmgate prices. Audited Batch 50 EPVA transcription arithmetic: plantain provincial rows total 1,407 ha and 6,107 t versus stated national total 1,360 ha and 5,395 t; cassava provincial rows total 4,287 ha and 17,374 t versus stated national total 4,438 ha and 18,035 t. Numeric EPVA data is therefore held pending source-PDF reconciliation.",
+        "sources": [
+          "https://ihpc.instatgabon.org/bulletin.html",
+          "https://agpgabon.ga/gabon-marche-agricole-a-des-tarifs-des-produits-du-terroir-attractifs-pour-lutter-contre-la-vie-chere/",
+          "https://instatgabon.org/uploads/folder_1/RGA/Enque%CC%82te%20de%20Production%20Ve%CC%81ge%CC%81tale%20et%20Animale%20%28EPVA%29/Rapport%20tableaux%20statistiques%20EPVA_Volume%202.pdf"
+        ],
+        "decisions": [
+          "Do not substitute retail/event prices for farmgate prices.",
+          "Do not activate Gabon until the EPVA transcription discrepancies are resolved and producer prices plus current operating costs are validated."
+        ]
       }
     },
     {
