@@ -3116,7 +3116,7 @@
     {
       "country_code": "MZ",
       "country_name": "Mozambique",
-      "evidence_status": "official_2024_ine_crop_output_series_2025_26_campaign_plan_and_2025_ine_indicators_publication_identified_provincial_yield_and_farm_budget_extraction_pending",
+      "evidence_status": "official_CAP_2023_24_report_extracted_provincial_productivity_for_selected_crops; prices_and_farm_budget_still_incomplete",
       "sources": [
         {
           "title": "Statistical Yearbook 2024 — basic food crop and cash crop production tables",
@@ -3503,6 +3503,141 @@
           "url": "https://icm.gov.mz/",
           "status": "official_provincial_reference_price_portal",
           "note": "The ICM portal offers national reference prices by province for cereals including Niassa, Cabo Delgado, Nampula, Zambézia, Tete, Sofala, Manica, Inhambane, Gaza and Maputo. Values must be downloaded with date, market, grade, unit and transaction level; do not assume these are farm-gate prices."
+        },
+        {
+          "title": "Relatório do CAP 2023/2024",
+          "publisher": "Instituto Nacional de Estatística (INE), Mozambique, with MAAP",
+          "publication_date": "2026-03",
+          "url": "https://www.ine.gov.mz/documents/20119/412210/Relatorio%20CAP%202023_2024%20.pdf/6aa642fa-54b5-86c4-3aac-6bf9f7d90a8e?download=true&t=1779266900764&version=1.0",
+          "reference_period": "2023/2024 agricultural campaign",
+          "status": "official_final_census_report_extracted_crop_productivity_by_province",
+          "observations": [
+            {
+              "indicator": "maize_productivity",
+              "unit": "kg/ha",
+              "values_by_province": {
+                "Niassa": 1398,
+                "Cabo Delgado": 1285,
+                "Nampula": 1172,
+                "Zambezia": 1085,
+                "Tete": 1151,
+                "Manica": 928,
+                "Sofala": 618,
+                "Inhambane": 482,
+                "Gaza": 348,
+                "Maputo": 944,
+                "Cidade de Maputo": 495
+              },
+              "national": 1065,
+              "table": "4.23",
+              "note": "Average productivity for small and medium agricultural holdings; survey/census estimate, not commercial enterprise yield."
+            },
+            {
+              "indicator": "paddy_rice_productivity",
+              "unit": "kg/ha",
+              "values_by_province": {
+                "Niassa": 651,
+                "Cabo Delgado": 699,
+                "Nampula": 612,
+                "Zambezia": 482,
+                "Tete": 1660,
+                "Manica": 775,
+                "Sofala": 538,
+                "Inhambane": 427,
+                "Gaza": 902,
+                "Maputo": 1178,
+                "Cidade de Maputo": 3087
+              },
+              "national": 550,
+              "table": "4.23",
+              "note": "Reported as rice; confirm paddy/milled basis before calculator mapping. Maputo City estimate likely small denominator; do not treat as typical."
+            },
+            {
+              "indicator": "cowpea_feijao_nhemba_productivity",
+              "unit": "kg/ha",
+              "values_by_province": {
+                "Niassa": 691,
+                "Cabo Delgado": 541,
+                "Nampula": 466,
+                "Zambezia": 441,
+                "Tete": 357,
+                "Manica": 304,
+                "Sofala": 219,
+                "Inhambane": 323,
+                "Gaza": 255,
+                "Maputo": 368,
+                "Cidade de Maputo": 101
+              },
+              "national": 414,
+              "table": "4.23",
+              "note": "Specific cowpea category; not aggregate beans."
+            },
+            {
+              "indicator": "soybean_productivity",
+              "unit": "kg/ha",
+              "values_by_province": {
+                "Niassa": 1130,
+                "Cabo Delgado": 1130,
+                "Nampula": 807,
+                "Zambezia": 1593,
+                "Tete": 1122,
+                "Manica": 839,
+                "Sofala": 0,
+                "Inhambane": 0,
+                "Gaza": 0,
+                "Maputo": 0,
+                "Cidade de Maputo": 0
+              },
+              "national": 1263,
+              "table": "4.23",
+              "note": "Zero entries indicate no reported production/estimate in the table, not necessarily agronomic impossibility."
+            },
+            {
+              "indicator": "cassava_productivity",
+              "unit": "kg/ha",
+              "values_by_province": {
+                "Niassa": 10669,
+                "Cabo Delgado": 18822,
+                "Nampula": 14580,
+                "Zambezia": 8992,
+                "Tete": 10171,
+                "Manica": 8359,
+                "Sofala": 7143,
+                "Inhambane": 7830,
+                "Gaza": 6184,
+                "Maputo": 13144,
+                "Cidade de Maputo": 3626
+              },
+              "national": 12229,
+              "table": "4.23",
+              "note": "Table extraction includes provincial values; confirm row alignment in source PDF before calculator import."
+            },
+            {
+              "indicator": "national_sector_context",
+              "value": "5.2 million holdings; 6.2 million ha cultivated; 11 million tonnes total production",
+              "reference_period": "2023/24",
+              "note": "Executive summary rounded totals; differs from 6.5m ha headline in separate census announcement, retain source-specific definitions."
+            },
+            {
+              "indicator": "technology_adoption",
+              "values": {
+                "irrigation_share_small_medium_holdings_percent": 6.2,
+                "fertilizer_use_percent": 9.3,
+                "pesticide_use_percent": 7.2,
+                "herbicide_use_percent": 2.5,
+                "tractor_ploughing_percent": 1.7
+              },
+              "reference_period": "2023/24",
+              "note": "Adoption shares, not input rates, unit prices or budgets."
+            }
+          ],
+          "quality_notes": [
+            "The report explicitly contains provincial crop productivity (kg/ha), production volumes by province and crop areas, materially improving the evidence base beyond national totals.",
+            "CAP results are for small and medium holdings unless otherwise stated; do not apply these averages to intensive commercial farms or greenhouse production.",
+            "The report is an official census/survey estimate. Inspect sampling errors, crop definitions and table notes before importing. Zero or anomalous province estimates must not be treated as universal crop failure.",
+            "Beans are separated by type, including Feijão Nhemba (cowpea), Feijão Manteiga, Feijão Boer and others; only the specific cowpea row maps to a cowpea calculator profile.",
+            "The report's summary gives approximately 6.2 million ha cultivated, while the public announcement headline says more than 6.5 million ha; retain the distinction pending reconciliation."
+          ]
         }
       ],
       "priority_commodities": [
@@ -3521,8 +3656,8 @@
         "pig"
       ],
       "remaining_gaps": [
+        "Cross-check CAP report provincial productivity values against the linked district Excel tables, sampling errors and table row alignment; extend extraction to remaining calculator commodities and district-level area/production.",
         "Download and extract the INE 2025 Basic Indicators of Agriculture and Food PDF; reconcile it with the 2024 Statistical Yearbook production series.",
-        "Extract crop-specific cultivated and harvested area, production and yield tables from the 2023 IAI report and final CAP 2023/2024 Excel tables at provincial and district level.",
         "Check the IAI 2023 exclusion of nine insecure Cabo Delgado districts; document coverage gaps and do not imply full provincial survey coverage.",
         "Separate paddy rice from milled rice and distinguish rainfed lowland, irrigated and upland systems.",
         "Separate feijão nhemba (cowpea), feijão manteiga, feijão bóer and other beans; do not use aggregate beans output for the Beans (Cowpea) calculator profile.",
@@ -3533,7 +3668,7 @@
         "Resolve unusual annual administrative production values against IAI and CAP survey outputs before using them as yield assumptions.",
         "Do not activate country-specific calculator profiles until matched crop area/production definitions, regional yields, prices and enterprise budgets have been independently checked."
       ],
-      "extraction_status": "Batch 31 adds the MAAP January 2026 2025/26 campaign plan and flood monitoring snapshot, the official INE 2025 agriculture-indicators publication record, and the ICM provincial reference-price portal. The 2024 INE production totals remain national output-only. No crop-by-province yield series, current farmer net receipts or itemized regional enterprise budgets have been admitted to calculator defaults; Mozambique remains inactive."
+      "extraction_status": "CAP 2023/24 official report (March 2026) now extracted for provincial productivity of maize, rice, cowpea, soybean and cassava, plus provincial production/area tables identified. These are small/medium holding survey estimates, not commercial enterprise yields. No prices or cost budgets have been admitted; Mozambique remains inactive."
     },
     {
       "country_code": "BW",
