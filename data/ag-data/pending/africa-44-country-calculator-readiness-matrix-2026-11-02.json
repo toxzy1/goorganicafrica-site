@@ -1430,21 +1430,21 @@
     {
       "code": "ML",
       "name": "Mali",
-      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "FAO_catalogued_EAC_2023_2024_sample_survey_and_USDA_rice_price_production_crosschecks_identified",
+      "evidence_file": "data/ag-data/pending/mali-country-profile-evidence-2026-11-04.json",
+      "existing_research_note": "2026-11-04 refresh: FAO EAC 2023-24 public release and IHSN questionnaire metadata rechecked; 2025 government cereal/cotton campaign totals and FAO 11.6m-tonne estimate kept distinct; 2026/27 government input support prices and DGMP regional Mercuriale catalogue recorded; no regional crop-cut extraction or current crop-specific farmgate matrix yet.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_catalogued_EAC_2023_24_has_crop_cut_yields_GPS_plot_area_and_input_modules_but_Kidal_excluded_and_sample_coverage_incomplete_2025_campaign_cereal_and_cotton_aggregates_verified_crop_specific_regional_yield_extraction_pending",
-        "dated_local_farmgate_prices_and_units": "partial_USDA_FAS_reports_2025_03_local_rice_farmgate_price_400_XOF_per_kg_2026_27_seed_cotton_policy_price_300_XOF_per_kg_announced_current_crop_specific_regional_quotes_incomplete",
-        "seed_and_planting_material_costs": "blocked_no_current_region_crop_seed_price_and_delivery_schedule",
-        "fertilizer_and_soil_amendment_costs": "partial_2026_27_policy_support_price_announced_15000_XOF_per_50kg_mineral_and_3000_XOF_per_50kg_organic_but_formulation_eligibility_and_farmer_paid_delivery_cost_not_verified_FAO_reports_urea_NPK_DAP_prices_rose_Feb_to_Mar_2026",
+        "crop_area_production_yield_by_commodity_and_season": "partial_EAC_2023_24_crop_cut_and_GPS_plot_area_modules_confirmed_national_aggregates_added_numeric_crop_cut_tables_weights_precision_and_regional_yield_extraction_pending_Kidal_excluded",
+        "dated_local_farmgate_prices_and_units": "partial_DGMP_2026_regional_price_bulletin_catalogue_identified_but_item_values_not_extracted_and_procurement_context_unclear_2025_rice_price_historical_current_crop_grade_market_farmgate_quotes_missing",
+        "seed_and_planting_material_costs": "partial_2026_campaign_hybrid_maize_seed_support_price_1500_XOF_per_kg_announced_variety_eligibility_distribution_and_other_crop_seed_costs_missing",
+        "fertilizer_and_soil_amendment_costs": "partial_2026_campaign_subsidized_mineral_15000_XOF_per_50kg_and_organic_3000_XOF_per_50kg_announced_formulation_eligibility_allocation_delivery_and_open_market_costs_unverified",
         "crop_protection_costs": "blocked_no_current_crop_specific_pesticide_herbicide_fungicide_prices_and_application_costs",
         "irrigation_water_and_energy_costs": "partial_government_2026_programme_prioritises_water_control_and_hydro_agricultural_development_but_region_scheme_tariffs_pumping_and_crop_water_costs_missing",
         "labour_rates_and_operations": "partial_EAC_survey_contains_family_and_hired_labour_modules_but_weighted_operation_level_rates_and_labour_days_not_extracted",
         "machinery_and_land_preparation_costs": "partial_government_2026_programme_prioritises_mechanisation_but_current_machine_hire_and_operation_cost_schedules_missing",
         "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_crop_enterprise_budgets",
         "currency_and_exchange_rate_method": "partial_XOF_West_African_CFA_franc_identified_but_calculator_currency_rounding_and_test_method_not_verified",
-        "source_provenance_and_observation_date": "partial_Government_2025_campaign_results_FAO_GIEWS_2026_EAC_2023_24_USDA_FAS_2025_and_2026_27_campaign_policy_announcements_recorded",
+        "source_provenance_and_observation_date": "partial_FAO_EAC_2023_24_release_IHSN_metadata_GIEWS_2026_Government_2025_campaign_and_2026_input_policy_DGMP_2026_bulletin_catalogue_World_Bank_market_panel_and_FEWS_NET_2026_recorded",
         "calculator_mapping_and_test_cases": "blocked_no_validated_regional_crop_yield_price_and_cost_dataset_or_XOF_test_cases"
       },
       "blockers": [
@@ -1454,7 +1454,7 @@
         "Obtain current seed, crop protection, labour, machinery, irrigation, energy and transport costs by region and production system.",
         "Build validated regional crop/livestock enterprise budgets and XOF regression tests before calculator activation."
       ],
-      "next_step": "Extract the EAC 2023-2024 small-area and crop-cut yield tables; verify 2026/27 policy input prices and obtain current regional farmgate prices and enterprise costs.",
+      "next_step": "Download and extract EAC crop-cut and GPS plot data with survey weights/precision by region; extract 2026 DGMP regional bulletins and verify producer-level farmgate prices and actual input costs.",
       "batch_08_review": {
         "review_date": "2026-11-02",
         "source_notes": "Mali's territorial reorganisation is operational. The Government reported 19 regions and the District of Bamako, with new administrative units operational and governors, prefects and sub-prefects appointed. The 19-region list is recorded separately from the Bamako district. Region names are cross-checked against the 2025 administrative division reference; spelling is normalized to French diacritics where appropriate.",
@@ -1497,6 +1497,22 @@
           "EAC sample exclusions and coverage limitations are recorded; no unsupported national extrapolation is made.",
           "Historical rice farmgate price and campaign-specific cotton/fertilizer policy prices are not treated as current universal crop/input prices.",
           "No calculator activation, merge to main or production deployment was performed."
+        ]
+      },
+      "batch_28_review": {
+        "review_date": "2026-11-04",
+        "country_name": "Mali",
+        "new_evidence": "FAO AGRISurvey confirms EAC 2023-24 public data release on 11 March 2026: about 7.45m ha cultivated and 8.84m tonnes cereals as national aggregates. IHSN catalogue confirms crop-cut yield, GPS plot area, input, labour, commercialization and livestock modules; Kidal excluded for security reasons.",
+        "campaign_crosscheck": "Government reports 2025 cereal production 11,452,540 tonnes and seed cotton 433,700 tonnes. FAO GIEWS estimates 2025 cereal output at about 11.6m tonnes. These are kept as separate source estimates pending reconciliation.",
+        "input_policy": "Government 2026 campaign support prices: mineral fertilizer XOF 15,000/50kg; organic fertilizer XOF 3,000/50kg; hybrid maize seed XOF 1,500/kg; first-grade seed cotton purchase price XOF 300/kg. Eligibility, formulation, allocation and delivery costs require verification.",
+        "market_sources": "DGMP 2026 Mercuriale catalogue lists Bamako and regional bulletins; item-level prices not extracted and procurement/reference values must not be assumed farmgate. World Bank panel covers 136 markets through Aug 2026 but is primarily market price estimates, not farmgate transactions.",
+        "data_quality": "FAO GIEWS reports urea/NPK/DAP price changes of 19/16/8 percent Feb-Mar 2026; FEWS NET reports 19/18/8 percent. NPK difference is retained as a source discrepancy.",
+        "safeguards": [
+          "Mali remains not_active and directory_only; no calculator values enabled.",
+          "Do not extrapolate to Kidal; assess sample weights, regional sample sizes and precision before using EAC microdata.",
+          "Do not split national cereal totals into individual crop or regional yields.",
+          "Do not use retail, wholesale or procurement prices as farmgate prices.",
+          "No merge to main or production deployment."
         ]
       }
     },
