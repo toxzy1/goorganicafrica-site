@@ -6,7 +6,7 @@
     "currency": "MGA",
     "currency_name": "Malagasy ariary"
   },
-  "record_date": "2026-11-03",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "purpose": "Country evidence register entry. This file records sourced agricultural production, market and policy context and identifies data gaps. It is not a farm enterprise budget, verified farm-gate price feed or calculator profile.",
   "calculator_readiness": "not_ready_research_only",
@@ -353,6 +353,104 @@
         "Rice yield range is not crop-cutting evidence for a named region or production system.",
         "Use only as a reasonableness check until matched with official harvested-area and production series."
       ]
+    },
+    {
+      "id": "MG-08",
+      "topic": "Updated 2026 paddy production outlook and rice market-price movement",
+      "source": "FAO GIEWS Madagascar Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MDG",
+      "reference_date": "2026-09-23",
+      "values": [
+        {
+          "indicator": "2026 paddy production direction",
+          "value": "year-on-year increase but below five-year average",
+          "unit": "qualitative assessment",
+          "period": "2026",
+          "status": "provisional_outlook",
+          "note": "FAO says the main-season crop was largely harvested by May; official national figures were still pending. Better harvested area in northern and some central regions offset below-average yields; eastern and western planting was delayed and southern rainfall was deficient."
+        },
+        {
+          "indicator": "local rice price change",
+          "value": "up to -25",
+          "unit": "percent",
+          "period": "January to July 2026",
+          "status": "reported_market_price_change",
+          "note": "Prices of locally produced rice varieties declined by up to 25 percent nationally; this is a market-price movement, not an absolute producer price."
+        },
+        {
+          "indicator": "imported rice price change",
+          "value": "less than -10",
+          "unit": "percent",
+          "period": "January to July 2026",
+          "status": "reported_market_price_change",
+          "note": "Imported rice prices decreased by less than 10 percent on average; keep separate from local paddy prices."
+        },
+        {
+          "indicator": "2026 maize production direction",
+          "value": "below average",
+          "unit": "qualitative assessment",
+          "period": "2026",
+          "status": "provisional_outlook",
+          "note": "FAO attributes the below-average outlook to reduced yields following rainfall shortages in the south."
+        }
+      ],
+      "methodology": "FAO GIEWS crop monitoring and Food Price Monitoring and Analysis context.",
+      "caveats": [
+        "The brief provides qualitative national outlook and percentage price movements, not numeric crop yields or absolute prices.",
+        "Rice consumer/market prices are not farmgate paddy prices; do not use percentage changes as revenue inputs.",
+        "The 2026 production statements remain provisional pending official final statistics."
+      ]
+    },
+    {
+      "id": "MG-09",
+      "topic": "Government initiative to coordinate paddy purchase prices",
+      "source": "Madagascar Ministry of Agriculture and Food Sovereignty (MiASA)",
+      "source_url": "https://www.miasa.gov.mg/fixation-du-prix-du-paddy-une-collaboration-strategique-entre-le-miasa-le-mincc-et-la-spm-pour-valoriser-le-travail-des-agriculteurs/",
+      "reference_date": "2026-04-08",
+      "values": [
+        {
+          "indicator": "paddy price coordination initiative",
+          "value": "inter-ministerial and State Procurement of Madagascar collaboration announced",
+          "unit": "policy action",
+          "period": "2026",
+          "status": "official_policy_announcement",
+          "note": "The ministry describes coordination intended to balance producer interests and consumer affordability; the page does not publish an absolute paddy price, regional schedule, grade, unit or actual transaction observations."
+        },
+        {
+          "indicator": "government 2026 paddy production expectation",
+          "value": 5000000,
+          "unit": "tonnes",
+          "period": "2026 campaign expectation",
+          "status": "government_projection_not_final_statistic",
+          "note": "The ministry page states production was expected to reach 5 million tonnes, compared with 4.7 million tonnes in the preceding year. Keep this distinct from FAO's September 2026 provisional assessment, which says production increased year-on-year but remained below the five-year average and does not publish a numeric total."
+        }
+      ],
+      "caveats": [
+        "A price-setting/coordination announcement is not itself a published farmgate price series.",
+        "The government production expectation is a projection, not a verified final crop result; it should not be averaged with other estimates without reconciling definitions and reference periods.",
+        "Obtain actual SPM procurement price schedules and transaction terms, including paddy grade, moisture, collection point, transport and date, before considering calculator use."
+      ]
+    },
+    {
+      "id": "MG-10",
+      "topic": "PAPRIZ III beneficiary rice-yield result",
+      "source": "Madagascar Ministry of Agriculture and Food Sovereignty, PAPRIZ III programme update",
+      "source_url": "https://www.miasa.gov.mg/papriz-iii-un-levier-majeur-pour-lautosuffisance-rizicole-a-madagascar/",
+      "reference_date": "2025-07-22",
+      "values": [
+        {
+          "indicator": "average yield among supported PAPRIZ producers",
+          "value": 5,
+          "unit": "tonnes per hectare",
+          "period": "programme-reported result as of 2025",
+          "status": "programme_beneficiary_result",
+          "note": "The ministry reports an average 5 t/ha among producers supported by the PAPRIZ technical package. This is a programme beneficiary result, not a national or region-wide baseline."
+        }
+      ],
+      "caveats": [
+        "The ministry page does not provide sample size, region-specific breakdown, crop-cutting protocol or distribution of yields in the summary.",
+        "Use only as a programme-specific reference point until the underlying evaluation and beneficiary coverage are extracted; do not generalize to all Malagasy rice farms."
+      ]
     }
   ],
   "data_quality": {
@@ -361,14 +459,18 @@
       "WTO country review provides a national multi-crop production series through 2023 for several major crops.",
       "FAO GIEWS provides a current 2026 crop outlook and identifies regional weather risks.",
       "World Bank RTFP dataset has broad market coverage and recent metadata.",
-      "World Bank AgPER documents the scarcity and limitations of historical farm-gate and wholesale price observations."
+      "World Bank AgPER documents the scarcity and limitations of historical farm-gate and wholesale price observations.",
+      "FAO GIEWS 2026-09-23 update provides current direction for paddy and maize production and percentage rice-price movements; the Ministry's 2026 paddy-price coordination initiative and PAPRIZ III beneficiary yield result are documented with explicit scope caveats."
     ],
     "limitations": [
       "No validated current district-level farm-gate prices were extracted.",
       "No current crop-specific enterprise budgets with input quantities, labour days, irrigation, transport and other costs were identified.",
       "Matching crop harvested-area denominators were not obtained for the WTO 2023 production observations; yields must not be invented.",
       "Livestock inventory and animal-product price series need further official extraction.",
-      "Market price estimates include imputed observations and are not equivalent to producer prices."
+      "Market price estimates include imputed observations and are not equivalent to producer prices.",
+      "The Ministry's April 2026 paddy-price coordination page does not publish a numeric producer price schedule; an announced price-setting process cannot fill the farmgate-price gap.",
+      "The Ministry's 5 t/ha PAPRIZ III yield is limited to supported programme producers and lacks a published sample/region breakdown in the summary; it is not a national yield assumption.",
+      "The Ministry's 2026 5-million-tonne paddy expectation and FAO's September qualitative below-five-year-average outlook use different source framing; final official 2026 production statistics and definitions must be reconciled."
     ]
   },
   "missing_before_calculator_activation": [
