@@ -1132,7 +1132,7 @@
       "code": "LS",
       "name": "Lesotho",
       "evidence_file": "data/ag-data/pending/lesotho-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "FAO_Aug_2026_provisional_cereal_balance_and_import_requirements_BoS_2022_23_crop_area_output_yield_and_input_expenditure_Livestock_2022_23_inventory_LVAC_2025_crop_assessment_IFAD_wool_mohair_value_chain_recorded_latest_2025_26_final_crop_tables_current_farmgate_prices_and_crop_enterprise_budgets_pending",
+      "existing_research_note": "BOS catalogue now lists 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26; tables not yet extracted. FAO Aug-2026 provisional combined maize/sorghum/wheat output 42,000 t; FEWS NET Sep-2026 reports 2026 maize -30% y/y and -55% vs 5-year average. Government e-service lists 70% seed/pesticide and 80% fertilizer subsidy; farmer copayments and product schedule unverified. Current district farmgate prices and enterprise budgets remain missing.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_official_2022_23_five_crop_district_area_harvested_area_production_and_derived_yield_plus_2026_national_maize_estimate_no_complete_final_2025_26_district_crop_tables",
@@ -1155,7 +1155,7 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "next_step": "Extract the newly listed 2025/26 crop forecast and cereal balance reports by district and crop; reconcile FAO/FEWS NET estimates; obtain official 2026/27 input product schedule and farmer copayments; obtain dated district farmgate prices and crop-specific budgets.",
       "batch_24_review": {
         "review_date": "2026-11-02",
         "country_name": "Lesotho",
