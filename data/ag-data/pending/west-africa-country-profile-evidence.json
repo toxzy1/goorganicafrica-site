@@ -1135,7 +1135,7 @@
     {
       "country_code": "TG",
       "country_name": "Togo",
-      "evidence_status": "official_agricultural_statistics_and_market_information_portal_identified_dynamic_data_extraction_pending",
+      "evidence_status": "official_DS​​ID_agricultural_statistics_and_market_price_portal_identified_with_2026_FAO_FEWS_NET_and_DNCF_reference_cost_evidence; crop_level_and_farmgate_validation_pending",
       "survey": {
         "title": "Système d'information agricole du Togo — Statagritogo / DSID",
         "publisher": "Direction des Statistiques Agricoles, de l'Informatique et de la Documentation (DSID), Ministère de l'Agriculture",
@@ -1211,6 +1211,187 @@
           "verify region/administrative divisions and seasonal production systems"
         ],
         "extraction_status": "Official ministry-linked agricultural statistics and price dashboard identified. SIAR 2023 production values are recorded only as cross-check leads, not verified country profile values."
+      },
+      "november_2026_review": {
+        "review_date": "2026-11-04",
+        "status": "evidence_refreshed_research_only_not_calculator_ready",
+        "official_agricultural_statistics": {
+          "source": "Togo Ministry of Agriculture statistical portal and DSID Statagritogo",
+          "urls": [
+            "https://agriculture.gouv.tg/statistiques-agricoles/",
+            "https://statagritogo.tg/stat/index.html"
+          ],
+          "finding": "The ministry links to Statagritogo, whose dashboard exposes agricultural/rural surveys, agricultural product price mercuriales and general indicators. This confirms a national data system and priority extraction route, but dashboard existence alone does not validate any specific downloaded observation.",
+          "methodology_crosscheck": "FEWS NET country data documentation says annual crop assessments are generally at prefecture level; planted area is GPS-measured, yields are obtained from weighed crop-cut sample plots, and estimates are extrapolated by prefecture. The documented national crop-statistics series do not separate small main-season and off-season bimodal maize in the annual reporting.",
+          "source_url": "https://help.fews.net/fde/v3/togo-country-book"
+        },
+        "production_and_seasonal_evidence": [
+          {
+            "crop": "maize",
+            "production": 1045452.19,
+            "unit": "tonnes",
+            "period": "2023",
+            "source": "UEMOA SIAR indicator already recorded in prior Togo evidence",
+            "status": "secondary regional indicator; verify against DSID primary tables and matching harvested area"
+          },
+          {
+            "crop": "rice",
+            "production": 183066.35,
+            "unit": "tonnes",
+            "period": "2023",
+            "source": "UEMOA SIAR indicator already recorded in prior Togo evidence",
+            "status": "secondary regional indicator; verify paddy versus milled definition and matching harvested area"
+          },
+          {
+            "crop": "soybean",
+            "production": 263595.62,
+            "unit": "tonnes",
+            "period": "2023",
+            "source": "UEMOA SIAR indicator already recorded in prior Togo evidence",
+            "status": "secondary regional indicator; verify against DSID primary tables and matching harvested area"
+          },
+          {
+            "crop": "sorghum",
+            "production": 298569.44,
+            "unit": "tonnes",
+            "period": "2023",
+            "source": "UEMOA SIAR indicator already recorded in prior Togo evidence",
+            "status": "secondary regional indicator; verify against DSID primary tables and matching harvested area"
+          },
+          {
+            "crop": "aggregate cereals",
+            "production": 1700000,
+            "unit": "tonnes approximately",
+            "period": "2025",
+            "source": "FAO GIEWS country brief, reference 28 August 2026",
+            "status": "official aggregate estimate, approximately 15 percent above the previous five-year average; not crop-specific"
+          },
+          {
+            "crop": "maize",
+            "price": 155,
+            "unit": "FCFA/kg",
+            "period": "September 2026",
+            "market": "national average as reported by FEWS NET",
+            "status": "market price; not verified farmgate price",
+            "finding": "FEWS NET reports maize averaging 155 FCFA/kg, 54 percent below September 2025 and 44 percent below the five-year average. Low prices improve consumer access but reduce producer sales income."
+          }
+        ],
+        "seasonal_and_regional_context": {
+          "source": "FAO GIEWS Togo Country Brief, reference 28 August 2026",
+          "url": "https://cb.apps.fao.org/country.jsp?code=TGO",
+          "findings": [
+            "Southern and central areas have bimodal rainfall; the 2026 main-season maize harvest was underway in August/September and millet, sorghum and rice harvests were expected in the last quarter.",
+            "Northern areas have a unimodal rainy season; early-season dryness in parts of Kara and Savanes delayed planting and caused replanting, with pockets of below-average vegetation in northern Kara in early August.",
+            "FAO expected below-average August–October rainfall in central/southern areas and near- to above-average rainfall with localized flood risk in northern areas.",
+            "Savanes agricultural labour costs reportedly rose 10–20 percent against the previous season; this is a regional percentage-change signal, not a national wage schedule."
+          ]
+        },
+        "dated_market_observations_on_hold": [
+          {
+            "source": "FEWS NET Togo Key Message Update, September 2026",
+            "url": "https://fews.net/west-africa/togo/key-message-update/september-2026",
+            "observation": "Average maize market price 155 FCFA/kg in September 2026; 54 percent below year-earlier and 44 percent below five-year average.",
+            "use": "Market price context only; verify market coverage and producer-versus-retail status before calculator revenue use."
+          },
+          {
+            "source": "Agridigitale market reports, 23 June and 27 July 2026",
+            "urls": [
+              "https://www.agridigitale.net/article/sokode-kara-mango-et-lome-consulter-les-prix-des-denrees",
+              "https://agridigitale.com/article/consulter-les-prix-des-cereales-sur-les-marches"
+            ],
+            "observation": "Market quotations are expressed in local bowls and sacks for maize, sorghum, millet, soybean, beans, groundnut and other crops across Sokodé, Kara, Mango/Dapaong, Notsè and Lomé.",
+            "use": "Not used as standardized price inputs because bowl/sack weights, grade and transaction level are not stated consistently."
+          }
+        ],
+        "official_cost_reference_schedule": {
+          "source": "Togo National Directorate of Financial Control (DNCF), official reference price directory, August 2026 edition, version v2026.08.26 revision 149, updated 20 October 2026",
+          "url": "https://site.dncf-togo.org/mercuriale?category=travaux-et-materiels-agricoles-et-d-irrigation",
+          "observations": [
+            {
+              "item": "Land stumping/clearing",
+              "reference": 350000,
+              "unit": "FCFA per ha",
+              "lower": 315000,
+              "upper": 385000,
+              "reference_item_no": "3445"
+            },
+            {
+              "item": "Ploughing",
+              "reference": 35000,
+              "unit": "FCFA per ha",
+              "lower": 31500,
+              "upper": 38500,
+              "reference_item_no": "3446"
+            },
+            {
+              "item": "Pulverising/harrowing",
+              "reference": 20000,
+              "unit": "FCFA per ha",
+              "lower": 18000,
+              "upper": 22000,
+              "reference_item_no": "3447"
+            },
+            {
+              "item": "Drip irrigation kit",
+              "reference": 3603380,
+              "unit": "FCFA per 1 ha kit",
+              "lower": 3243042,
+              "upper": 3963718,
+              "reference_item_no": "3497"
+            },
+            {
+              "item": "PVC sprinkler irrigation kit",
+              "reference": 3721975,
+              "unit": "FCFA per 1 ha kit",
+              "lower": 3349778,
+              "upper": 4094173,
+              "reference_item_no": "3498"
+            },
+            {
+              "item": "PVC sprinkler irrigation kit",
+              "reference": 17914820,
+              "unit": "FCFA per 5 ha kit",
+              "lower": 16123338,
+              "upper": 19706302,
+              "reference_item_no": "3499"
+            }
+          ],
+          "caveat": "These are government reference prices for public procurement/financial control, not automatically the amount a farmer pays or a local contractor charges. Use as cost benchmarks only after verifying scope, tax, availability and local quote."
+        },
+        "regional_administration": {
+          "source_urls": [
+            "https://urbanisme.gouv.tg/amenagement-du-territoire-le-snat-vulgarise-dans-les-cinq-regions-administratives-et-le-grand-lome/",
+            "https://digitallibrary.un.org/record/4061291/files/HRI_CORE_TGO_2024-EN.pdf"
+          ],
+          "regions": [
+            "Maritime",
+            "Plateaux",
+            "Centrale",
+            "Kara",
+            "Savanes"
+          ],
+          "note": "Five administrative regions; Greater Lomé is a special territorial unit, not a sixth region."
+        },
+        "gaps": [
+          "Download and reconcile the latest DSID crop survey tables by prefecture, crop, planted/harvested area, production and yield; distinguish main and second-season maize.",
+          "Extract current Statagritogo mercuriales with date, market, commodity, grade, unit and transaction level.",
+          "Verify whether the FEWS NET September 2026 maize figure is retail/market price and identify the market coverage before use.",
+          "Standardize Agridigitale local bowl and sack quotations using verified weights and product grade; keep out of calculator until then.",
+          "Obtain current farmer-facing seed, fertilizer, soil amendment, crop protection, labour, irrigation, fuel, machinery and transport quotations by region.",
+          "Use DNCF 2026 reference prices only as procurement benchmarks; validate actual service costs and input availability.",
+          "Build regional crop budgets for southern/central bimodal systems and northern unimodal systems, with explicit security and climate scenarios.",
+          "Verify livestock purchase/sale, feed, veterinary and production cost series separately.",
+          "Map validated values to calculator units/currency and add local regression tests for FCFA and regional selector behaviour."
+        ],
+        "readiness_decision": "not_ready_research_only",
+        "safeguards": [
+          "Do not treat 2025 aggregate cereal production as crop-specific yield.",
+          "Do not treat September 2026 market maize price as farmgate producer price.",
+          "Do not convert bowls or sacks into kilograms without documented weights.",
+          "Do not apply one season calendar or yield profile to all five regions.",
+          "Do not treat DNCF public procurement reference rates as actual farmer transaction prices without local verification.",
+          "Do not activate Togo in the calculator until crop data, current farmgate prices, input costs, regional enterprise budgets and test cases are validated."
+        ]
       }
     },
     {
