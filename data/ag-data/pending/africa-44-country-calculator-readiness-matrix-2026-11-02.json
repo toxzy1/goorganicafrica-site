@@ -1833,7 +1833,7 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "next_step": "Extract the INS 2024 preliminary and 2023 crop tables; inspect downloadable World Bank price observations and Soko historical market records; obtain verified farmgate prices, input quotations and enterprise budgets before any activation.",
       "batch_14_review": {
         "review_date": "2026-11-02",
         "source_notes": "Reviewed the INS-Congo agricultural census catalogue. It lists the 2024 preliminary agricultural census results, 2023 cultivated-area and production report, 2022 agricultural holdings report, 2021 food-crop census and 2020 agricultural atlas. These are confirmed source leads, but numerical tables have not yet been extracted. Administrative geography remains unresolved: ASARECA describes 12 departments, while a newer secondary source reports 15 following an October 2024 reorganisation. No region selector was added because primary legal confirmation and a historical boundary crosswalk are still required.",
@@ -1855,6 +1855,27 @@
           "Construct regional enterprise budgets and mapping tests after geography and source tables are validated."
         ],
         "regional_lookup": "Not added; administrative geography requires primary-source reconciliation."
+      },
+      "batch_15_review": {
+        "review_date": "2026-11-04",
+        "source_notes": "Added World Bank RTFP metadata version 2026-10-05: 13 markets, 2011-01-01 to 2026-10-01, selected Admin 2 coverage and limited listed commodities (beans, cassava flour, oil and rice); dataset combines direct WFP/FAO/selected NSO data with model estimates for missing observations. Added Soko public sample validated 2026-04-27: cassava Brazzaville XAF320/kg, tomato Pointe-Noire XAF850/kg, plantain Dolisie XAF410/kg; platform claims 22 markets and 27 products, with weekly stall surveys. These are market-stall prices, not farmgate prices.",
+        "sources": [
+          "https://microdata.worldbank.org/catalog/4491",
+          "https://soko.yelessa.cg/en",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=COG&lang=en"
+        ],
+        "progress": [
+          "World Bank market-price dataset metadata refreshed through 2026-10-01; limited commodity and geographic scope documented.",
+          "Three dated Soko public market-price samples recorded with commodity, city, XAF/kg and 2026-04-27 date.",
+          "Market price evidence remains contextual only; no farmgate series or farmer input quotations validated."
+        ],
+        "blockers": [
+          "INS 2024 preliminary and 2023 crop tables still require numerical extraction and reconciliation.",
+          "Farmgate prices and input costs remain unverified.",
+          "No complete enterprise budgets or region-specific calculator tests.",
+          "Administrative geography still requires primary legal confirmation and a boundary crosswalk."
+        ],
+        "regional_lookup": "Not added; current department list and historical crosswalk remain unverified from primary legal sources."
       }
     },
     {
@@ -2295,7 +2316,7 @@
     }
   ],
   "next_country": {
-    "code": "NE",
-    "name": "Niger"
+    "code": "ST",
+    "name": "São Tomé and Príncipe"
   }
 }
