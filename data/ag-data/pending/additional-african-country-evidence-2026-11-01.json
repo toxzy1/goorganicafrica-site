@@ -2480,7 +2480,7 @@
     {
       "country_code": "NA",
       "country_name": "Namibia",
-      "evidence_status": "official_NAB_2026_mahangu_grade1_farmgate_floor_price_and_standardized_rainfed_cost_schedule_added_2026_FAO_outlook_and_14_regions_verified_but_crop_region_yield_matrix_and_multi_enterprise_budgets_pending",
+      "evidence_status": "official_2026_NSA_Q2_bulletin_publication_and_NAB_horticulture_2026_archive_identified; secondary_Q2_summary_recorded_pending_primary_PDF_extraction; 2026_mahangu_floor_price_and_cost_schedule_available; regional_enterprise_budgets_incomplete",
       "sources": [
         {
           "title": "White Maize Production Forecast Report, Harvesting/Marketing Season 2025",
@@ -3087,6 +3087,106 @@
             "The annexure's cost schedule is a standardized rain-fed mahangu benchmark, not a complete regional farm budget. Its itemized cost arithmetic requires a careful table reconciliation before use.",
             "The agreed yield basis in the floor-price annexure is 1 tonne per hectare; do not generalize it as a measured national or regional yield."
           ]
+        },
+        {
+          "title": "Agriculture and Fishing Indicators Statistical Bulletin – 2nd Quarter 2026",
+          "publisher": "Namibia Statistics Agency (NSA)",
+          "url": "https://nsa.org.na/document/agriculture-and-fishing-indicators-statistical-bulletin-2nd-quarter-2026/",
+          "publication_date": "2026 (official NSA document page; exact release date not exposed)",
+          "reference_period": "April–June 2026",
+          "status": "official_quarterly_bulletin_publication_verified_pdf_numeric_tables_not_yet_extracted",
+          "observations": [
+            {
+              "indicator": "controlled_agronomy_production",
+              "value_mt": 52515,
+              "reference_period": "Q2 2026",
+              "status": "Secondary press transcription attributed to NSA bulletin; includes white maize, pearl millet and wheat combined. Not crop-specific and not a yield."
+            },
+            {
+              "indicator": "controlled_agronomy_production_comparator",
+              "value_mt": 35765,
+              "reference_period": "Q2 2025",
+              "status": "Secondary press transcription attributed to NSA bulletin; combined controlled crops."
+            },
+            {
+              "indicator": "controlled_agronomy_import_bill",
+              "value_nad_million": 674.8,
+              "reference_period": "Q2 2026",
+              "status": "Secondary press transcription; import bill, not a farmer input-cost series."
+            },
+            {
+              "indicator": "controlled_agronomy_import_bill_comparator",
+              "value_nad_million": 422.1,
+              "reference_period": "Q2 2025",
+              "status": "Secondary press transcription."
+            }
+          ],
+          "quality_notes": [
+            "The NSA official publication page confirms a Q2 2026 agriculture and fishing PDF, but its embedded preview did not expose numerical tables in this extraction pass.",
+            "The 52,515-tonne figure is transcribed from a secondary report quoting the NSA bulletin; do not treat it as independently verified crop-specific production.",
+            "Obtain and inspect the original NSA PDF before calculator use; quarterly controlled-agronomy totals combine white maize, pearl millet and wheat."
+          ]
+        },
+        {
+          "title": "NAB Horticulture Commodity Price Monitoring Reports – 2026 archive",
+          "publisher": "Namibian Agronomic Board (NAB)",
+          "url": "https://www.nab.com.na/horticulture/commodity-prices/",
+          "reference_period": "2026 monthly price-monitoring reports; January–September listed, June absent in the visible archive",
+          "status": "official_monthly_horticulture_price_reports_available_extraction_pending",
+          "observations": [
+            {
+              "indicator": "monthly_price_report_archive",
+              "months_listed": [
+                "January 2026",
+                "February 2026",
+                "March 2026",
+                "April 2026",
+                "May 2026",
+                "July 2026",
+                "August 2026",
+                "September 2026"
+              ],
+              "status": "Official NAB archive lists downloadable monthly reports; actual commodity prices, market locations, grades and units have not yet been transcribed."
+            }
+          ],
+          "quality_notes": [
+            "These are horticulture market monitoring reports, not necessarily farm-gate prices; transaction level must be checked in each PDF.",
+            "Extract tomato and other relevant commodity observations with month, market, grade, pack/unit and price type before considering them for calculator revenue assumptions."
+          ]
+        },
+        {
+          "title": "NAB Grain Prices and Market Intelligence Reports",
+          "publisher": "Namibian Agronomic Board",
+          "url": "https://www.nab.com.na/agronomy/commodity-prices/grain-prices/",
+          "reference_period": "Public archive reviewed 4 November 2026",
+          "status": "official_grain_price_archive_reviewed_with_coverage_gaps",
+          "observations": [
+            {
+              "indicator": "white_maize_price_archive",
+              "latest_visible": "1–14 May 2025",
+              "status": "No 2026 white-maize floor-price bulletin visible in the public archive page reviewed."
+            },
+            {
+              "indicator": "wheat_price_archive",
+              "latest_visible": "1–14 November 2024",
+              "status": "No current 2026 wheat price bulletin visible in the public archive page reviewed."
+            },
+            {
+              "indicator": "mahangu_price_archive",
+              "latest_visible": "2026 marketing season",
+              "status": "2026 official notice available; already recorded separately."
+            },
+            {
+              "indicator": "market_intelligence_reports",
+              "latest_visible": "Sorghum Issue 1 of 2026; Grain Seeds for Sowing Issue 2 of 2025; Rice Issue 1 of 2025; Soybeans Issue 4 of 2022",
+              "status": "Official reports listed; report-level data extraction remains pending."
+            }
+          ],
+          "quality_notes": [
+            "The NAB grain page is an official archive but not a complete current transaction feed.",
+            "A missing 2026 bulletin on the visible page is not evidence that no market transactions occurred.",
+            "Floor prices, market intelligence and horticultural market monitoring are distinct source types and must not be conflated."
+          ]
         }
       ],
       "priority_commodities": [
@@ -3102,16 +3202,18 @@
         "pig"
       ],
       "remaining_gaps": [
-        "Extract NSA 2026 quarterly agriculture bulletin numerical tables and final 2025/26 Census of Agriculture results.",
+        "Download and extract the official NSA Q2 2026 PDF and verify all quarterly controlled-crop values against its tables; secondary transcription is provisional.",
         "Obtain final 2026 crop-specific production and harvested area for maize, pearl millet, sorghum and wheat, separating commercial and communal systems.",
         "Verify NAB zone-level yield observations, especially the unusually low Zambezi value, against original tables and source sample definitions.",
         "Build and document a defensible crosswalk between six NAB agronomic production zones and the 14 administrative regions; do not equate the geographies.",
         "Obtain current dated grade-specific producer prices for white maize, wheat, horticulture and livestock, distinguishing farm-gate from mill-door, auction, wholesale and retail prices.",
         "Use the 2026 mahangu notice as a single-crop cost benchmark only; obtain current farmer-paid input quotations and regional cost schedules for the other calculator commodities.",
         "Obtain regional livestock liveweight, sale-price, feed, veterinary, mortality and representative enterprise budget data.",
-        "Build, map and test Namibia calculator profiles only after crop, price and cost evidence passes."
+        "Build, map and test Namibia calculator profiles only after crop, price and cost evidence passes.",
+        "Extract the NAB 2026 monthly horticulture price-monitoring PDFs (especially tomato and relevant vegetable crops) and classify market level, grade, pack size and units; do not assume farm-gate.",
+        "Review NAB 2026 sorghum and 2025 grain-seed market intelligence reports for crop-specific market and seed evidence."
       ],
-      "extraction_status": "Batch 32 adds the NAB 5 June 2026 Grade 1 mahangu floor-price notice: N$7,874.07/tonne (N$7.87407/kg) farm-gate/collection-centre and N$8,166.72/tonne mill-door. The annexure includes a standardized rain-fed mahangu production-cost schedule and 1 t/ha agreed price-calculation yield basis; this is not a measured national yield or multi-crop budget. FAO GIEWS (28 Aug 2026) estimates 155,000 t aggregate cereal output, nearly 40% above the previous five-year average, with commercial-sector share near 80%; communal cereal output remains below average and Zambezi suffered locust/flood losses. No Namibia calculator values are activated."
+      "extraction_status": "Batch 33 adds the official NSA Q2 2026 bulletin publication record (PDF tables not yet extractable from preview), provisional secondary transcription of the combined 52,515 t controlled-agronomy quarterly output, and NAB's 2026 horticulture monthly price-report archive and grain price archive coverage review. These do not supply crop-specific yields or farm budgets; Namibia remains inactive."
     },
     {
       "country_code": "MZ",
