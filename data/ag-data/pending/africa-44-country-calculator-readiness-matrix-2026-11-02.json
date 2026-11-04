@@ -1667,7 +1667,7 @@
       "existing_research_note": "batch_30_official_campaign_and_hcp_evidence_added",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial",
+        "crop_area_production_yield_by_commodity_and_season": "partial_May_2026_government_campaign_estimates_and_July_2026_FAO_cereal_forecast_added_but_material_national_total_discrepancy_and_crop_by_region_harvested_area_yield_tables_pending",
         "dated_local_farmgate_prices_and_units": "blocked",
         "seed_and_planting_material_costs": "partial",
         "fertilizer_and_soil_amendment_costs": "blocked",
@@ -1677,7 +1677,7 @@
         "machinery_and_land_preparation_costs": "partial",
         "regional_enterprise_budget_and_gross_margin": "partial",
         "currency_and_exchange_rate_method": "pass",
-        "source_provenance_and_observation_date": "pass",
+        "source_provenance_and_observation_date": "expanded_with_Morocco_May_2026_government_portal_and_FAO_GIEWS_2026_07_08_forecast; retain_forecast_definitions_separately",
         "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
@@ -1685,9 +1685,19 @@
         "No current, dated net farm-gate price series by commodity, region, grade and transaction unit has been verified; the recorded wheat reference purchase price is a campaign target with intermediary charges and deductions.",
         "Current region-specific seed, fertilizer, crop-protection, irrigation-energy, labour and machinery quotations or invoices are incomplete.",
         "Existing wheat cost studies and producer interviews are historical or sample-specific; they do not yet form representative regional enterprise budgets.",
-        "Calculator schema mapping and country-specific regression/test cases have not been implemented or validated."
+        "Calculator schema mapping and country-specific regression/test cases have not been implemented or validated.",
+        "May 2026 government estimate of 90 million quintals cereals differs materially from FAO July 2026 forecast of 6.3 million tonnes; final Ministry crop returns and definition reconciliation are required.",
+        "May campaign estimates for olives, citrus, dates and livestock are not final regional production tables."
       ],
-      "next_step": "Obtain crop-by-region area and yield tables, current producer settlement prices and dated farmer input invoices; then construct at least one fully documented regional enterprise budget and calculator test before considering activation."
+      "next_step": "Obtain final Ministry 2025/26 crop-by-region harvest returns and reconcile government/FAO cereal totals; then collect dated net producer settlement receipts and 2026/27 input invoices for a regional enterprise budget.",
+      "batch_31_review": {
+        "review_date": "2026-11-04",
+        "note": "Added May 2026 Morocco government campaign estimates for cereals, olives, citrus, dates, livestock and reservoir context, plus FAO GIEWS 8 July 2026 cereal production/import forecast. Material difference between government 90m quintals and FAO 6.3m tonnes retained without averaging. Morocco remains inactive.",
+        "sources": [
+          "https://maroc.ma/fr/actualites/agriculture-la-campagne-2025-2026-marque-un-rebond-significatif-de-la-production-et-des-ressources",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=MAR"
+        ]
+      }
     },
     {
       "code": "MZ",
