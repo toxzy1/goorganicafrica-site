@@ -2,7 +2,7 @@
   "country": "Eritrea",
   "iso_alpha2": "ER",
   "iso_alpha3": "ERI",
-  "record_date": "2026-11-02",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only record of national ministry-reported crop activity, horticultural production, regional irrigation and wholesale price evidence, current seasonal risk and development programme indicators. Not a farm-profit calculator profile and not authorization to activate Eritrea.",
   "currency": {
@@ -297,6 +297,96 @@
         "FAO reported favourable prospects for the 2025 main-season crops after early July rainfall deficits were offset by improved rainfall in August and an expectation of above-average rainfall for the remainder of the Kiremti season."
       ],
       "caveat": "This is a seasonal outlook, not a final harvest result. It should not be compared directly with the September 2026 drought warning as though they were measured crop outcomes."
+    },
+    {
+      "topic": "November 2026 refresh — 2026 main-season drought and harvest risk",
+      "reference_date": "2026-09-30",
+      "source": "FAO GIEWS Eritrea Country Brief",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=ERI",
+      "observations": [
+        {
+          "indicator": "June-September 2026 cumulative rainfall",
+          "value_min": 20,
+          "value_max": 40,
+          "unit": "percent below average",
+          "regions": [
+            "Anseba",
+            "Debub",
+            "Maekel",
+            "Gash Barka"
+          ],
+          "status": "FAO reported observation; regional rainfall deficit."
+        },
+        {
+          "indicator": "2026 main-season crops planted",
+          "value": "wheat, barley, sorghum, maize, teff and pulses",
+          "reference_period": "Planting completed July 2026; harvest from November 2026",
+          "regions": [
+            "central and western Anseba",
+            "Debub",
+            "Maekel",
+            "Gash Barka"
+          ],
+          "status": "FAO crop-calendar and planting report."
+        },
+        {
+          "indicator": "Expected production impact",
+          "value": "significant crop production shortfalls expected",
+          "regions": [
+            "Gash Barka and other affected cropping areas"
+          ],
+          "status": "FAO forecast based on rainfall and vegetation-health observations; not final harvest results."
+        }
+      ],
+      "observations_text": [
+        "The 2026 Kiremti rainy season (normally late June to September) performed poorly in association with the ongoing El Niño event.",
+        "FAO identifies Gash Barka as Eritrea's main crop-producing region and reports vegetation-condition impacts there.",
+        "The November 2026 harvest should be followed by Ministry post-harvest and crop assessment results before any yield assumptions are revised."
+      ],
+      "caveat": "This is a dated seasonal risk assessment, not a final production result. Do not convert the 20–40 percent rainfall deficit into an equivalent yield loss or apply one national yield haircut."
+    },
+    {
+      "topic": "October 2026 regional crop-condition cross-check",
+      "reference_date": "2026-10-01",
+      "source": "GEOGLAM Crop Monitor for Early Warning, report No. 120",
+      "source_url": "https://www.cropmonitor.org/crop-monitor-for-early-warning-202610",
+      "observations": [
+        {
+          "indicator": "Eritrea crop development stage",
+          "value": "vegetative to reproductive",
+          "reference_date": "2026-09-28",
+          "status": "Satellite-supported regional crop-monitor assessment."
+        },
+        {
+          "indicator": "Crop condition",
+          "value": "delayed and below-average rains continue to impact cropping activities",
+          "regions": [
+            "central Eritrea",
+            "western Eritrea"
+          ],
+          "status": "Regional cross-check; not a measured yield or harvest result."
+        }
+      ],
+      "caveat": "GEOGLAM provides crop-condition monitoring, not commodity-specific farm yields or farm budgets. Use it to flag seasonal risk and target follow-up field data."
+    },
+    {
+      "topic": "FAO Agricultural Stress Index System data availability",
+      "reference_date": "2026-10-30",
+      "source": "FAO Agricultural Stress Index System (ASIS)",
+      "source_url": "https://asis.apps.fao.org/",
+      "observations": [
+        {
+          "indicator": "ASIS update frequency",
+          "value": "three times per month",
+          "status": "FAO system metadata; country and zonal indicators are satellite-derived agricultural stress indicators."
+        },
+        {
+          "indicator": "latest archive update",
+          "value": "Dekad 3 October 2026",
+          "status": "Portal update date; Eritrea-specific zonal series still need extraction."
+        }
+      ],
+      "caveat": "ASIS is a monitoring dataset for agricultural water stress, not a source of observed crop production, yields, farmgate prices or input costs."
     }
   ],
   "data_quality_and_use": [
@@ -306,20 +396,22 @@
     "Asmara wholesale-market prices in ERN/kg are not producer prices. They must not be inserted as farm-gate revenue without verified farm-to-wholesale margins, grading, transport and marketing deductions.",
     "FAO's September 2026 rainfall assessment indicates significant current-season production risk, particularly in Gash Barka and other main-season cropping regions.",
     "UN programme reach figures are not national farmer counts or a representative farm survey.",
-    "No full crop-specific enterprise budgets, input cost schedules, labour costs or current producer price series have been verified."
+    "No full crop-specific enterprise budgets, input cost schedules, labour costs or current producer price series have been verified.",
+    "The 30 September 2026 FAO GIEWS assessment and 1 October 2026 GEOGLAM monitor both indicate poor 2026 main-season crop conditions; neither supplies final harvest quantities or crop-specific yield losses.",
+    "Harvest is expected from November 2026. Do not translate the 20–40 percent rainfall deficit into a proportional yield reduction; wait for crop-cut/post-harvest results by zoba and commodity.",
+    "FAO ASIS portal updates three times monthly and had an October 2026 archive update; its Eritrea zonal stress series should be extracted as a risk indicator, not as crop output."
   ],
   "missing_data_before_calculator_use": [
-    "Obtain the Ministry of Agriculture's full 2024 statistical/annual assessment tables with crop-specific harvested area, production, yield, region, season and data collection method.",
-    "Obtain the 2025/2026 crop season final production and area results, including an assessment of the September 2026 rainfall deficit and harvest losses.",
-    "Extract the full Ministry of Agriculture Strategic Information Division annual Asmara wholesale price observations for tomato, onion, potato, cabbage and banana, with units, grades, dates and any missing-value notes.",
-    "Obtain comparable farm-gate prices by producing region and season, with farm-to-wholesale transport, handling, commissions, grading and loss deductions.",
-    "Obtain input prices for certified seed, planting material, fertilizer, compost, crop protection, labour, land preparation, irrigation equipment, pumping energy, water, packaging and transport.",
-    "Obtain representative crop enterprise budgets and crop calendars by region and irrigated/rainfed system, including marketable yield, crop cycles, labour and post-harvest losses.",
-    "Validate the Ministry's 2024 cereal, oilseed, pulse, fruit and vegetable statistics against National Statistics Office publications and FAOSTAT country rows.",
-    "Obtain livestock population, milk, egg, honey and meat production series and current animal/feed/veterinary prices before adding livestock enterprises.",
-    "Obtain project monitoring data and sampling methodology for farmer support programmes before using reported productivity gains as representative yield or income changes."
+    "Obtain the Ministry of Agriculture's complete 2024 and 2025/26 crop statistics by crop, zoba, sub-zoba and season, including harvested area, production and yield definitions.",
+    "Obtain final 2026 main-season harvest results after November 2026, separately for wheat, barley, sorghum, maize, teff and pulses; compare to pre-season estimates without assuming proportional rainfall-yield response.",
+    "Extract the Eritrea-specific FAO ASIS dekadal/zonal series and retain it as seasonal risk metadata, not as a substitute for crop-cut yield observations.",
+    "Obtain current farmgate producer prices by zoba, commodity, grade, unit and date; retain Asmara wholesale and retail prices as separate market levels.",
+    "Obtain farmer-paid seed, fertilizer, compost, crop-protection, labour, machinery, irrigation water, pumping energy, packaging and transport costs by production system.",
+    "Build separate enterprise budgets for rainfed cereals, irrigated horticulture and livestock; the two-sub-zoba horticulture study is not a national representative sample.",
+    "Verify the official ERN exchange-rate treatment, legal access and conversion policy relevant to farmers; add currency, rounding and test cases only after methodology is documented.",
+    "Map six zobas and their sub-zobas, match the 17 supported calculator commodities, and add regression tests only when source-backed regional data exist."
   ],
-  "recommendation": "Retain Eritrea as research-only. The evidence base is stronger than a simple international-database profile: it includes Ministry-reported 2024 national production and area figures, a peer-reviewed 2015-2024 regional horticulture/irrigation study with Asmara wholesale price methodology, UN programme outcomes and a current FAO September 2026 drought warning. However, no crop-level national yield series, current farm-gate prices or full enterprise budgets are yet verified. Do not activate Eritrea or calculate expected farm profit until the underlying Ministry tables, crop-specific price series and farm input budgets are extracted and reconciled.",
+  "recommendation": "Keep Eritrea research-only and not_active. The November 2026 refresh strengthens current-season risk monitoring but does not supply final crop results, current farmgate prices or farm budgets. Wait for the November 2026 harvest assessment and obtain regional input/labour costs before any activation.",
   "administrative_geography": {
     "reference_date": "2026-11-02",
     "source": "Proclamation No. 86/1996 for the Establishment of Regional Administrations, reproduced in FAOLEX; corroborated by Netherlands government country-of-origin report and WHO Eritrea country cooperation document.",
