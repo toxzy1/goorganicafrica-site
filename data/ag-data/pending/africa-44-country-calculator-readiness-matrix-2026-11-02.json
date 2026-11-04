@@ -1037,11 +1037,11 @@
       "code": "GW",
       "name": "Guinea-Bissau",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "2025_FAO_50x2030_agricultural_household_listing_completed_survey_programme_underway_historical_rice_series_quality_concerns",
+      "existing_research_note": "2026-11-04 refresh: FAO microdata metadata confirms the 2025 rural agricultural-household listing is regionally representative across eight regions and 323 sampled census districts, but it is a sampling frame, not a crop-production survey. FAO GIEWS estimates 2025 aggregate cereal output at 351,000 MT and identifies Oio, Cacheu and Biombo as major producing regions. World Bank RTFP catalogue provides 45-market monthly estimates through 2026-10-01, combining direct and ML-imputed observations; these are market estimates, not farmgate prices. IMF warning on official rice series remains.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2025_household_listing_is_sampling_frame_only_FAO_GIEWS_351kt_aggregate_cereals_no_crop_specific_regional_yields;_2026_27_integrated_survey_results_pending",
+        "dated_local_farmgate_prices_and_units": "partial_World_Bank_RTFP_45_market_monthly_estimates_to_2026_10_01_are_direct_plus_ML_imputed_market_prices_not_farmgate;_local_producer_price_series_missing",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
@@ -1050,17 +1050,20 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
+        "source_provenance_and_observation_date": "partial_FAO_2025_listing_metadata_FAO_GIEWS_2026_02_06_and_World_Bank_RTFP_version_2026_10_05_catalogue_verified;_numeric_CSV_rows_not_yet_extracted",
         "calculator_mapping_and_test_cases": "not_yet_audited"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Obtain published aggregate outputs from the 2026/27 integrated agricultural survey; the 2025 household listing is only a sampling-frame exercise.",
+        "Extract crop-specific area, production, yield and losses by region/sector and season; reconcile FAOSTAT and IMF rice-statistics quality warning.",
+        "Download and audit World Bank RTFP CSV; separate direct from ML-imputed estimates and retain product, market, month, unit and price type. Do not treat this dataset as farmgate.",
+        "Obtain local producer/paddy prices and farmgate prices for maize, beans/cowpea and other supported crops; imported-rice retail prices are not producer prices.",
+        "Obtain regional seed, fertilizer, crop-protection, labour, land preparation, machinery, irrigation, energy, transport and storage costs.",
+        "Build complete crop and livestock enterprise budgets for all profiles intended for activation; cashew/groundnut do not substitute for current calculator commodities.",
+        "Confirm eight-region and sector crosswalk; keep Autonomous Sector of Bissau separate from the eight regions.",
+        "Add XOF currency, region, commodity mapping and gross-margin regression tests after validated enterprise budgets exist."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "next_step": "Audit the World Bank RTFP CSV and obtain the 2026/27 integrated agricultural survey's published crop tables, then build region-specific farmgate revenue and cost budgets before activation.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea-Bissau government profile and UK Government toponymic factfile confirm eight first-order regions and a separate Autonomous Sector of Bissau. The lookup includes only the eight regions; the autonomous sector is deliberately not mixed into the region array.",
@@ -1070,6 +1073,27 @@
           "https://unfccc.int/sites/default/files/resource/GNB_NC4_English_FINAL_16112025_JLT.pdf"
         ],
         "regional_lookup": "8 regions added to src/_data/calculator/regions.json; Autonomous Sector of Bissau excluded from the region list. Lookup only, not activated."
+      },
+      "batch_08_review": {
+        "review_date": "2026-11-04",
+        "source_notes": "FAO microdata catalogue metadata for the 2025 agricultural household listing was updated 14 September 2026. The listing covered rural areas, is nationally and regionally representative, and stratified the sample across eight regions; 323 sampled census districts are recorded across the regions. It is a household listing/sampling frame, not a crop-production survey. FAO GIEWS Country Brief (6 February 2026) estimates 2025 aggregate cereal production at about 351,000 MT (18% above the previous five-year average), with Oio, Cacheu and Biombo as major cereal-producing regions; imported rice retail prices in November 2025 were 10% below year-earlier levels. The World Bank RTFP catalogue provides monthly food-price estimates for 45 markets from 2007-01-01 through 2026-10-01, version 2026-10-05, combining direct price observations with machine-learning imputations. This is market-price context, not validated farmgate data. The IMF warning on the official rice series remains unresolved.",
+        "sources": [
+          "https://microdata.fao.org/index.php/catalog/3131",
+          "https://www.fao.org/in-action/agrisurvey/access-to-data/guinea-bissau/en",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=GNB",
+          "https://microdata.worldbank.org/catalog/4493",
+          "https://www.imf.org/-/media/files/publications/cr/2025/english/1gnbea2025002-print-pdf.pdf"
+        ],
+        "blockers": [
+          "Obtain published aggregate outputs from the 2026/27 integrated agricultural survey; the 2025 household listing is only a sampling-frame exercise.",
+          "Extract crop-specific area, production, yield and losses by region/sector and season; reconcile FAOSTAT and IMF rice-statistics quality warning.",
+          "Download and audit World Bank RTFP CSV; separate direct from ML-imputed estimates and retain product, market, month, unit and price type. Do not treat this dataset as farmgate.",
+          "Obtain local producer/paddy prices and farmgate prices for maize, beans/cowpea and other supported crops; imported-rice retail prices are not producer prices.",
+          "Obtain regional seed, fertilizer, crop-protection, labour, land preparation, machinery, irrigation, energy, transport and storage costs.",
+          "Build complete crop and livestock enterprise budgets for all profiles intended for activation; cashew/groundnut do not substitute for current calculator commodities.",
+          "Confirm eight-region and sector crosswalk; keep Autonomous Sector of Bissau separate from the eight regions.",
+          "Add XOF currency, region, commodity mapping and gross-margin regression tests after validated enterprise budgets exist."
+        ]
       }
     },
     {
