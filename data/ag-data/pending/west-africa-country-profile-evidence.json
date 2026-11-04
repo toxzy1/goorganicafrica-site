@@ -16,7 +16,7 @@
     {
       "country_code": "LR",
       "country_name": "Liberia",
-      "evidence_status": "corrected_LAAS_2024_report_confirmed_available_original_Table_10_and_cost_wage_table_numbering_and_yield_discrepancies_require_reextraction",
+      "evidence_status": "LISGIS_2024_annual_agriculture_survey_final_report_released_2025-12-22_corrected_report_portal_and_erratum_need_table_reextraction_yield_and_cost_validation_pending",
       "survey": {
         "title": "Liberia Annual Agriculture Survey 2024",
         "publisher": "Liberia Institute of Statistics and Geo-Information Services (LISGIS), with Ministry of Agriculture",
@@ -357,8 +357,27 @@
           "portal_status": "LISGIS explicitly states that the previously published LAAS-2024 report has a corrected version and provides links labelled Corrected Report, Old Report and Erratum Document.",
           "corrected_report_direct_pdf": "not_resolved_from_public_portal_in_this_review",
           "verification": "The accessible public portal search result confirms the corrected report is available, but the direct corrected-PDF URL and its table contents could not be extracted in this review. Do not assume the earlier PDF values persist in the corrected report."
+        },
+        "latest_source_check": {
+          "checked_date": "2026-11-04",
+          "official_lisgis_census_reports_page": "https://lisgis.gov.lr/census/reports",
+          "lisgis_release": "Annual Agriculture Survey Final Report 2024; latest release shown as 22 December 2025",
+          "fao_agrisurvey_page": "https://www.fao.org/in-action/agrisurvey/access-to-data/liberia/en",
+          "fao_catalogue_confirms": [
+            "Liberia Annual Agricultural Survey 2024",
+            "Liberia Agriculture Census 2022/23 provisional household and non-household results",
+            "2022/23 final household report"
+          ],
+          "interpretation": "Confirms a current official statistical evidence base exists, but does not resolve the known yield denominator inconsistencies or establish current county-level farmgate prices and enterprise budgets. Do not activate from report availability alone."
         }
-      }
+      },
+      "remaining_gaps": [
+        "Reconfirm the exact corrected 2024 Annual Agriculture Survey PDF and revision date from LISGIS; preserve the erratum and corrected-version distinction.",
+        "Extract 2024 crop area, harvested area, production and yield tables by county; resolve every denominator inconsistency against LISGIS definitions and sampling errors.",
+        "Extract 2024 input, machinery, hired labour and farm-cost tables with the report's actual table captions, units and reference periods.",
+        "Obtain dated county-level farmgate prices and farmer-paid input quotations; the survey alone does not supply a complete current price series.",
+        "Use the 2022/23 Agriculture Census final household and non-household reports as a separate structural benchmark, not as 2024/2026 prices or yields."
+      ]
     },
     {
       "country_code": "SL",
