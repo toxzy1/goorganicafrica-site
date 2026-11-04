@@ -2,7 +2,7 @@
   "country": "Lesotho",
   "iso_alpha2": "LS",
   "iso_alpha3": "LSO",
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only national evidence on crop production, crop area and derived yields, livestock populations, input expenditure, wool/mohair value chains, 2025/26-2026 seasonal conditions and cereal import requirements. This is not a calculator profile and does not authorize activation.",
   "currency": {
@@ -496,10 +496,87 @@
         "These are retail food prices and packaged processed product units, not producer prices for raw crops; they must not be used as farmgate crop revenue assumptions."
       ],
       "caveat": "Use only as a retail food-price context indicator. Do not map maize meal to raw maize or treat consumer-market prices as producer receipts."
+    },
+    {
+      "topic": "Newly listed 2025/26 official crop forecast and cereal balance reports; 2026/27 input subsidy clarification",
+      "reference_date": "2026-11-04",
+      "source": "Lesotho Bureau of Statistics publications catalogue; FAO GIEWS 24-Aug-2026; FEWS NET September 2026; Government of Lesotho input-support service",
+      "source_urls": [
+        "https://www.bos.gov.ls/Publications.htm",
+        "https://www.fao.org/giews/countrybrief/country.jsp?code=LS",
+        "https://fews.net/southern-africa/lesotho/key-message-update/september-2026",
+        "https://www.gov.ls/eservice/availability-and-accessibility-of-good-quality-agricultural-inputs-seeds-pesticides-and-fertilizer/"
+      ],
+      "observations": [
+        {
+          "indicator": "2025/26 Crop Forecasting Report listing",
+          "value": "listed",
+          "unit": "official publication catalogue entry",
+          "reference_date": "2026-11-04",
+          "status": "report identified; district/crop tables not yet extracted"
+        },
+        {
+          "indicator": "Availability and Utilization of Cereals 2025/26 listing",
+          "value": "listed",
+          "unit": "official publication catalogue entry",
+          "reference_date": "2026-11-04",
+          "status": "report identified; cereal balance tables not yet extracted"
+        },
+        {
+          "indicator": "Combined maize, sorghum and wheat production",
+          "value": 42000,
+          "unit": "tonnes",
+          "reference_period": "2026",
+          "status": "FAO provisional estimate; not a substitute for final Bureau of Statistics tables"
+        },
+        {
+          "indicator": "Maize production change",
+          "value": -30,
+          "unit": "percent versus previous year",
+          "reference_period": "2026",
+          "status": "Bureau of Statistics estimate reported by FEWS NET; national estimate, no district-by-crop table in this source"
+        },
+        {
+          "indicator": "Maize production change",
+          "value": -55,
+          "unit": "percent versus five-year average",
+          "reference_period": "2026",
+          "status": "Bureau of Statistics estimate reported by FEWS NET"
+        },
+        {
+          "indicator": "Seed subsidy",
+          "value": 70,
+          "unit": "percent",
+          "reference_period": "2026/27 Input Support Programme",
+          "status": "Government of Lesotho e-service and FEWS NET; eligibility and farmer copayment still need verification"
+        },
+        {
+          "indicator": "Pesticide subsidy",
+          "value": 70,
+          "unit": "percent",
+          "reference_period": "2026/27 Input Support Programme",
+          "status": "Government of Lesotho e-service; verify product eligibility and farmer copayment"
+        },
+        {
+          "indicator": "Fertilizer subsidy",
+          "value": 80,
+          "unit": "percent",
+          "reference_period": "2026/27 Input Support Programme",
+          "status": "Government of Lesotho e-service and FEWS NET; product list and farmer copayment still need verification"
+        }
+      ],
+      "observations_text": [
+        "The Bureau of Statistics publications catalogue now lists a 2025/26 Crop Forecasting Report and an Availability and Utilization of Cereals 2025/26 report. Their existence is verified, but the underlying district-by-crop tables and cereal balance have not yet been extracted; do not infer values from the catalogue listing.",
+        "FAO GIEWS' 24 August 2026 brief provisionally estimated combined maize, sorghum and wheat output at 42,000 tonnes, about half the previous five-year average. This is a provisional national aggregate, not a commodity-level district dataset.",
+        "FEWS NET's September 2026 update reports the Bureau of Statistics estimate that 2026 maize production was 30 percent below the previous year and 55 percent below the five-year average, with geographic variation across the four livelihood/agroecological zones.",
+        "The Government of Lesotho e-service specifies 70 percent subsidy for seeds and pesticides and 80 percent for fertilizer. FEWS NET independently reports 70 percent seed and 80 percent fertilizer. A September 2026 newspaper report instead describes 70 percent herbicides and 80 percent manure; retain this discrepancy and use the government service's published categories pending direct ministry schedule verification.",
+        "Subsidy percentages are not farmer-paid input prices. Eligibility, product specifications, quantities, limits, stock, extension-officer recommendation and actual copayment receipts remain required for enterprise budgets."
+      ],
+      "caveat": "Report listings do not prove their tables have been extracted or validated. The FAO combined cereal estimate is provisional. Subsidy percentages must not be converted into prices without product-level base prices and farmer copayments. National estimates and livelihood zones must not be misrepresented as district crop observations."
     }
   ],
   "data_gaps": [
-    "Extract and reconcile the latest 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26 published by the Bureau of Statistics, including final district crop area, harvest, yield and national balance data.",
+    "Extract and reconcile the now-identified 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26 from the Bureau of Statistics catalogue; capture district-by-crop area, production, yield, season, final/provisional status and national balance tables.",
     "Extract full 2023/24 Livestock Report and Livestock Products 2023/24 tables, including current cattle, sheep, goats, pigs, poultry, milk, meat, eggs, wool and mohair production.",
     "Obtain dated district-level farm-gate prices for maize, wheat, sorghum, beans, peas, potatoes, vegetables, wool, mohair, livestock and livestock products.",
     "Obtain current per-hectare enterprise budgets by crop and agro-ecological zone; the 2022/23 survey reports aggregate expenditures but not sufficiently disaggregated current budgets.",
@@ -508,7 +585,8 @@
     "Verify fibre producer settlement prices after grading, testing, commission, levies, transport and export clearance; auction indicators alone are not farm-gate prices.",
     "Extract the complete September 2026 FEWS NET Key Message Update and the underlying Bureau of Statistics 2025/26 district-by-crop crop forecast tables; reconcile provisional August FAO figures against the final national crop estimate.",
     "Verify the 2026/27 Input Support Programme eligibility, seed/fertilizer product lists, farmer co-payments, subsidy limits, district distribution and stock availability before using any subsidised input cost.",
-    "Obtain current district-level producer/farmgate prices for raw crops and livestock products; do not use WFP retail food prices as farmgate prices."
+    "Obtain current district-level producer/farmgate prices for raw crops and livestock products; do not use WFP retail food prices as farmgate prices.",
+    "Resolve the published 2026/27 subsidy category discrepancy across secondary reporting; use the Government of Lesotho e-service categories (seeds and pesticides 70%, fertilizer 80%) provisionally, and obtain the Ministry's product-specific schedule and actual farmer copayment receipts."
   ],
   "data_quality": {
     "overall": "good_for_historical_official_crop_and_livestock_baselines_moderate_for_current_sector_context_low_to_moderate_for_calculator_inputs",
@@ -530,13 +608,13 @@
   "calculator_readiness": {
     "status": "not_ready_research_only",
     "blockers": [
-      "Need the full 2025/26 crop area, harvested area, production and yield tables by crop and district, including final estimates and summer/winter season distinction.",
-      "Need current district- and commodity-specific farmgate prices with units, grades, collection dates and producer/market level.",
-      "Need current farmer-paid seed, fertilizer, crop-protection, irrigation, labour, machinery, transport and packaging costs, including eligibility and co-payment rules for 2026/27 input subsidies.",
-      "Need crop-specific enterprise budgets by district and agro-ecological zone, with smallholder and commercial farm systems distinguished.",
-      "Need current livestock and livestock-product output, disease and fibre settlement data."
+      "Extract and reconcile the now-identified 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26 from the Bureau of Statistics catalogue; capture district-by-crop area, production, yield, season, final/provisional status and national balance tables.",
+      "Extract full 2023/24 Livestock Report and Livestock Products 2023/24 tables, including current cattle, sheep, goats, pigs, poultry, milk, meat, eggs, wool and mohair production.",
+      "Obtain dated district-level farm-gate prices for maize, wheat, sorghum, beans, peas, potatoes, vegetables, wool, mohair, livestock and livestock products.",
+      "Obtain current per-hectare enterprise budgets by crop and agro-ecological zone; the 2022/23 survey reports aggregate expenditures but not sufficiently disaggregated current budgets.",
+      "Reconcile 2026 FAO provisional cereal output (42,000 tonnes combined) with the final Bureau of Statistics 2025/26 survey and cereal balance when published."
     ],
-    "recommendation": "Keep Lesotho research-only and inactive. The ten-district lookup is now present. The official 2022/23 crop survey provides historical district crop output, area and national input expenditure; FEWS NET's September 2026 update provides a current national crop estimate and input subsidy context. These do not yet supply a complete current district-by-crop dataset, current farmgate prices or farmer-paid enterprise costs. Do not activate until these are extracted and validated."
+    "recommendation": "Keep Lesotho research-only and inactive. The official Bureau of Statistics catalogue now lists the 2025/26 Crop Forecasting Report and 2025/26 cereal availability/utilization report, but their detailed tables still need extraction and reconciliation. FAO and FEWS NET provide current national production context; official input subsidy percentages are known but do not establish farmer-paid prices. Current district farmgate prices and crop-specific enterprise costs remain missing. Do not activate until district/commodity data, prices, costs and calculator tests are validated."
   },
   "sources": [
     {
