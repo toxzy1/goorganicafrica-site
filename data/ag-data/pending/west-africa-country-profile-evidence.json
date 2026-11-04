@@ -916,6 +916,24 @@
           "source": "EmergenceGN report on official campaign launch at Koba",
           "source_url": "https://emergencegn.net/faire-de-la-campagne-agricole-2026-2027-un-levier-de-croissance-autorites/",
           "status": "reported_controlled_price_not_crop_specific_application_cost"
+        },
+        {
+          "input": "fertilizer supply-chain credit and farmer training programme",
+          "announced_financing_usd": 2200000,
+          "supplier_credit_guarantee_usd": 1500000,
+          "technical_assistance_grant_usd": 700000,
+          "planned_fertilizer_volume_mt": 16200,
+          "expected_farmer_reach": 45000,
+          "value_chain_focus": [
+            "rice",
+            "maize",
+            "fonio",
+            "horticulture"
+          ],
+          "announcement_date": "2026-10-19",
+          "source": "African Development Bank Group / Africa Fertiliser Financing Mechanism",
+          "source_url": "https://www.afdb.org/en/news-and-events/press-releases/guinea-african-development-bank-group-approves-98129",
+          "status": "announced_three_year_supply_chain_financing_not_a_retail_or_farmgate_price_and_not_proof_of_delivered_fertilizer; exclude from unit-cost calculations"
         }
       ],
       "remaining_gaps": [
@@ -927,7 +945,8 @@
         "Obtain regional hired-labour, land preparation, machinery, irrigation, water/energy, transport and land-rent costs.",
         "Build crop-specific and livestock-specific budgets for the matching profiles; no cost schedule currently supports all 17 existing commodity profiles.",
         "Confirm implementation and prefecture-to-region assignments for the August 2026 Beyla and Siguiri administrative changes before historical data aggregation.",
-        "Create GNF currency, regional selector, enterprise mapping and gross-margin regression tests only after validated regional budgets are available."
+        "Create GNF currency, regional selector, enterprise mapping and gross-margin regression tests only after validated regional budgets are available.",
+        "Track the AfDB/AFFM FOSTER three-year fertilizer value-chain programme as an access/supply intervention only; verify actual regional dealer availability, farmer credit terms and delivered input prices before using any cost value."
       ],
       "regional_administration_note": "The readiness matrix records 10 regional entries including newly created Beyla and Siguiri (August 2026); their legal implementation and updated prefecture-to-region assignments must be confirmed before assigning historical observations.",
       "annual_survey_2025_2026": {
@@ -952,7 +971,7 @@
         ],
         "next_action": "Obtain the complete ANASA 2025-2026 EAAI report and annexes directly from ANASA/INS or the national open-data portal; extract crop-by-prefecture area, output, yield, season and livestock tables with metadata."
       },
-      "next_step": "Request the full ANASA 2025-2026 EAAI report and annexes, extract its prefecture-level crop/livestock tables, then reconcile with USDA FAS; in parallel obtain 2026 dated SIM market bulletins and regional input/labour quotations. Do not activate Guinea until at least one complete regional enterprise budget per enabled commodity and the required test cases pass."
+      "next_step": "Request the full ANASA 2025-2026 EAAI report and annexes, extract its prefecture-level crop/livestock tables, then reconcile with USDA FAS; obtain 2026 dated SIM market bulletins and regional input/labour quotations. Track the October 2026 AfDB/AFFM FOSTER announcement as a supply-chain intervention, not as a fertilizer price. Do not activate Guinea until regional enterprise budgets and test cases pass."
     },
     {
       "country_code": "BJ",
