@@ -5827,7 +5827,7 @@
     {
       "country_code": "TN",
       "country_name": "Tunisia",
-      "evidence_status": "official_2026_2027_cereal_producer_price_schedule_and_recent_cereal_estimates_added_crop_budget_evidence_pending",
+      "evidence_status": "november_2026_review_added_2026_cereal_producer_prices_seed_price_schedule_ONAGRI_input_dataset_lead_FAO_harvest_update_regional_crop_context_and_first_agricultural_census_launch; crop_specific_governorate_yields_and_enterprise_costs_still_incomplete",
       "sources": [
         {
           "title": "Arrêté conjoint du 24 juillet 2026 fixant les prix et modalités des céréales pour la campagne 2026-2027",
@@ -5973,6 +5973,190 @@
             "Forecast values must not be combined with actual harvested-area observations to calculate yields.",
             "USDA/FAS identifies the Ministry of Agriculture, annual surveys, the National Remote Sensing Center and Field Crop Institute as contributors to national cereal estimates."
           ]
+        },
+        {
+          "title": "FAO GIEWS Country Brief — Tunisia, 26 August 2026",
+          "publisher": "FAO Global Information and Early Warning System",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=TN",
+          "reference_date": "2026-08-26",
+          "observations": [
+            {
+              "indicator": "total_cereal_production",
+              "value_mt": 1800000,
+              "reference_year": 2026,
+              "status": "FAO estimate; nearly 20 percent above five-year average. Aggregate only, not an individual commodity yield."
+            },
+            {
+              "indicator": "wheat_import_requirements",
+              "value_mt": 1800000,
+              "reference_period": "MY 2026/27",
+              "status": "FAO forecast; around 8 percent below five-year average."
+            },
+            {
+              "indicator": "food_inflation",
+              "value_percent": 6.6,
+              "reference_date": "2026-07",
+              "status": "National annual food inflation; not a farm input price index."
+            }
+          ],
+          "quality_notes": [
+            "Harvest completed by June 2026; rainfall recovery from December 2025 supported northern cereal zones including Beja, Jendouba, Le Kef and Siliana.",
+            "Do not treat aggregate cereal output as a crop-specific yield or regional budget."
+          ]
+        },
+        {
+          "title": "Prix des intrants et des services agricoles — ONAGRI open-data catalogue",
+          "publisher": "Observatoire National de l'Agriculture (ONAGRI), Ministry of Agriculture",
+          "url": "https://catalog.data.gov.tn/fr/dataset/459c2931-8bfb-4f46-8258-a1d41da2db27",
+          "publication_date": "2026-11-03",
+          "status": "official_downloadable_input_and_service_price_dataset_confirmed_not_yet_extracted",
+          "observations": [
+            {
+              "indicator": "dataset_resources",
+              "value": "XLSX price file and XLSX other agricultural services file",
+              "status": "Catalogue resources confirmed; product rows, units, geography, observation dates and price values still need extraction."
+            },
+            {
+              "indicator": "dataset_topics",
+              "value": "seeds, plants, fertilizers, pesticides, mechanization, tools and animals",
+              "status": "Catalogue metadata only; not a validated cost schedule."
+            }
+          ],
+          "quality_notes": [
+            "The catalogue reports resource metadata updated 3 November 2026, but the underlying data's last update is shown as unknown. Do not describe it as a confirmed November price observation."
+          ]
+        },
+        {
+          "title": "Agricultural input price dataset resource — ONAGRI",
+          "publisher": "ONAGRI via Tunisia Open Data CKAN",
+          "url": "https://catalog.data.gov.tn/dataset/prix-des-principaux-intrants-des-produits-agricoles/resource/0f8939f3-edc6-4f5c-a5ca-adb5289dc92a",
+          "status": "XLSX_resource_confirmed_download_and_row_extraction_pending",
+          "note": "The resource is XLSX under the national open-data licence; metadata last modified 24 October 2026, but underlying data update is unknown."
+        },
+        {
+          "title": "Prix des engrais — ONAGRI open-data catalogue",
+          "publisher": "ONAGRI via Tunisia Open Data CKAN",
+          "url": "https://catalog.data.gov.tn/fr/dataset/engrais/resource/f8c5e3dd-3b00-4c77-82cd-39e985194ce4",
+          "status": "official_fertilizer_price_XLSX_lead_not_extracted",
+          "note": "Separate fertilizer-price XLSX resource; metadata updated 13 June 2026. Obtain actual product, unit, date, subsidy and region fields before costing."
+        },
+        {
+          "title": "Seed prices for the 2026/2027 cereal season",
+          "publisher": "La Presse de Tunisie reporting Ministry of Agriculture announcement",
+          "url": "https://www.lapresse.tn/2026/08/17/culture-cerealiere-le-ministere-de-lagriculture-fixe-les-prix-des-semences-pour-la-saison-2026-2027/",
+          "publication_date": "2026-08-17",
+          "reference_period": "2026/2027 sowing season",
+          "observations": [
+            {
+              "commodity": "selected durum wheat seed",
+              "price_tnd_per_quintal": 170,
+              "status": "Reported official ministry schedule; verify primary ministry circular and delivery conditions before calculator use."
+            },
+            {
+              "commodity": "selected common wheat seed",
+              "price_tnd_per_quintal": 140,
+              "status": "Reported official ministry schedule; verify primary ministry circular and delivery conditions before calculator use."
+            },
+            {
+              "commodity": "selected barley and triticale seed",
+              "price_tnd_per_quintal": 130,
+              "status": "Reported official ministry schedule; verify primary ministry circular and delivery conditions before calculator use."
+            },
+            {
+              "commodity": "ordinary certified barley seed",
+              "price_tnd_per_quintal": 115,
+              "status": "Reported official ministry schedule; verify primary ministry circular and delivery conditions before calculator use."
+            }
+          ],
+          "quality_notes": [
+            "Prices relate to cereal seed, not seed rates per hectare or all 17 calculator commodities.",
+            "A reported 3 percent plant-variety-rights surcharge applies to selected seed categories under specified commercial contracts; do not add universally."
+          ]
+        },
+        {
+          "title": "Tunisia first general digital agricultural census launched",
+          "publisher": "Tunis Afrique Presse (TAP)",
+          "url": "https://www.tap.info.tn/en/Portal-Top-News-EN/20748967-tunisia-s-1st",
+          "publication_date": "2026-10-30",
+          "reference_period": "2026/2027 census; nationwide field collection starts November 2026",
+          "status": "official_census_launch_confirmed_data_not_yet_available",
+          "note": "Census is intended to build national and regional data on holdings, location, activities, resources and production characteristics. It is a future data source, not published results."
+        },
+        {
+          "title": "FAO Tunisia drought vulnerability and agricultural geography profile",
+          "publisher": "FAO",
+          "url": "https://www.fao.org/in-action/drought-portal/preparedness/vulnerability-and-impact-assessment/national-case-studies/tunisia/en",
+          "status": "regional_production_system_context",
+          "observations": [
+            {
+              "indicator": "share_of_national_cereal_production_from_north",
+              "value_percent": 85,
+              "status": "FAO country profile; regional context, not current crop-by-governorate observations."
+            },
+            {
+              "indicator": "olive_area_share_central_region",
+              "value_percent": 65,
+              "status": "FAO country profile; more than 18 percent of olive-growing area in south and less than 17 percent in north."
+            },
+            {
+              "indicator": "agricultural_share_of_water_allocation",
+              "value_percent": 77,
+              "status": "FAO country profile; highlights water-cost and irrigation relevance."
+            }
+          ],
+          "quality_notes": [
+            "North cereal systems, central/southern olive systems and irrigated oasis/horticultural systems should not be pooled into a single national budget."
+          ]
+        },
+        {
+          "title": "Tunisia crop statistics methodology and geography",
+          "publisher": "FEWS NET Data Exchange Help Center",
+          "url": "https://help.fews.net/fde/v3/tunisia-country-book",
+          "status": "methodology_and_governorate_data_source_note",
+          "note": "Underlying crop statistics originate from Ministry of Agriculture; governorate reports are published separately on Agridata, with differing schedules, formats and content. Crop year runs October–September; one-year notation usually refers to harvest year. Area and production commonly reported in hectares and quintals. Production systems are rarely distinguished in governorate reports."
+        },
+        {
+          "title": "Grain and Feed Annual — Tunisia, MY 2026/27",
+          "publisher": "USDA Foreign Agricultural Service, Tunis",
+          "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Grain+and+Feed+Annual_Tunis_Tunisia_TS2026-0004.pdf",
+          "reference_period": "MY 2026/27 forecast",
+          "status": "independent_current_cereal_area_and_production_cross_check",
+          "observations": [
+            {
+              "commodity": "wheat",
+              "seeded_area_ha": 582000,
+              "reference_period": "MY 2026/27",
+              "status": "Forecast seeded area; 533,000 ha durum and 49,000 ha common wheat."
+            },
+            {
+              "commodity": "barley",
+              "seeded_area_ha": 409000,
+              "reference_period": "MY 2026/27",
+              "status": "Forecast seeded area."
+            },
+            {
+              "indicator": "irrigated_wheat_and_barley_area",
+              "value_ha": 87000,
+              "reference_period": "MY 2026/27",
+              "status": "USDA report says irrigated areas increased from 80,000 to 87,000 ha."
+            },
+            {
+              "commodity": "wheat",
+              "production_mt": 1200000,
+              "reference_period": "MY 2025/26",
+              "status": "USDA/FAS forecast in report; not final official harvest."
+            },
+            {
+              "commodity": "barley",
+              "production_mt": 570000,
+              "reference_period": "MY 2025/26",
+              "status": "USDA/FAS forecast in report; not final official harvest."
+            }
+          ],
+          "quality_notes": [
+            "Preserve seeded versus harvested area and marketing-year definitions; no yield calculated from mismatched denominators.",
+            "USDA notes ministry estimates draw on annual surveys, National Remote Sensing Center and Field Crop Institute."
+          ]
         }
       ],
       "priority_commodities": [
@@ -5990,16 +6174,16 @@
         "sheep"
       ],
       "remaining_gaps": [
-        "download the ONAGRI XLSX dataset on agricultural input and service prices and extract dated, unit-specific observations by product and region",
-        "obtain the Ministry of Agriculture's matched crop-specific harvested area, production and yield tables by governorate and season for wheat, barley, maize, rice, tomato, pepper, cucumber, watermelon and pulses",
-        "reconcile FAO's 2025 wheat and barley estimates with the USDA/FAS MY 2025/26 forecast and the final Tunisian harvest results; preserve crop-year and marketing-year distinctions",
-        "obtain official producer and wholesale price series for vegetables, pulses, rice, maize and livestock; keep farm-gate, collector, wholesale and retail prices separate",
-        "extract itemized farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, energy, land rent, harvest and transport costs by governorate and production system",
-        "obtain current livestock census, poultry production and species-specific enterprise budgets including feed, mortality, veterinary costs and sale prices",
-        "distinguish irrigated from rainfed cereal and horticultural production, and obtain at least three comparable seasons before deriving low, expected and high yield assumptions",
-        "do not activate Tunisia calculator data from national cereal totals or official cereal procurement prices alone"
+        "Download and inspect the ONAGRI input/service XLSX and separate fertilizer XLSX; capture actual product, grade, package, unit, date, governorate/market, tax and subsidy fields. Catalogue metadata update dates do not establish observation dates.",
+        "Extract INGC cereal-by-type and cereal-by-governorate XLSX tables, then reconcile crop-year definitions, seeded/harvested area and production by governorate.",
+        "Obtain governorate-specific data for maize, rice, tomato, hot pepper, cucumber, watermelon, pulses and livestock; cereal datasets do not cover all 17 calculator profiles.",
+        "Obtain dated producer/farmgate prices for non-cereal crops and livestock. Do not substitute retail prices, export unit values or government procurement prices for other commodities.",
+        "Verify the reported 2026/27 seed schedule against the Ministry primary circular and obtain farmer-facing prices for non-cereal seed/planting material.",
+        "Extract actual farmer-paid fertilizer, crop-protection, labour, machinery, irrigation, pumping energy, land rent, harvest and transport costs by governorate and production system.",
+        "Use the first general digital agricultural census only after results are released; field collection begins November 2026 and no census results are yet available.",
+        "Build governorate-level enterprise budgets and tests with rainfed/irrigated distinctions; no complete regional gross margins exist yet."
       ],
-      "extraction_status": "Tunisia now has a directly accessible official JORT 2026/27 cereal procurement schedule: base prices of TND 100/quintal for durum wheat and TND 80/quintal for common wheat, plus a TND 65/quintal intervention price for barley and triticale, with conditional early-delivery premiums. FAO's February 2026 brief estimates 2025 wheat at 1.25m tonnes and barley at 380,000 tonnes; USDA/FAS forecasts higher MY 2025/26 production (1.35m tonnes wheat and 500,000 tonnes barley) and reports seeded area, not a matching final harvested-area denominator. ONAGRI lists a downloadable April 2026 input/service-price XLSX, which remains to be extracted. No Tunisia calculator values are admitted."
+      "extraction_status": "November 2026 refresh adds FAO's 26-Aug-2026 cereal estimate (1.8m tonnes aggregate, nearly 20% above five-year average), ONAGRI downloadable input/service and fertilizer XLSX data leads, an 17-Aug-2026 reported cereal seed price schedule, 30-Oct-2026 launch of the first digital agricultural census, FAO regional cereal/olive/water context, FEWS NET crop-year methodology and USDA MY 2026/27 cereal area/production forecasts. The JORT 24-Jul-2026 decree remains the authoritative 2026 base procurement schedule (TND 100/quintal durum wheat, TND 80/quintal common wheat, TND 65/quintal intervention price barley/triticale); conditional early-delivery bonuses must not be applied universally. Dataset XLSX values and governorate crop tables have not yet been extracted; no Tunisia calculator values admitted."
     },
     {
       "country_code": "BJ",
