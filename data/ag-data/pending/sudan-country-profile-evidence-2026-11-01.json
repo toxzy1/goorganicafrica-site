@@ -6,7 +6,7 @@
     "currency_code": "SDG",
     "currency_name": "Sudanese pound"
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "purpose": "Country-specific agricultural evidence inventory for later validation; not a production calculator profile.",
   "sections": [
@@ -393,29 +393,150 @@
         "Food-security indicators are not crop yield, production cost or farmgate-price observations.",
         "Any future calculator recommendation must consider location-specific safety, access, rainfall and market connectivity."
       ]
+    },
+    {
+      "id": "november_2026_harvest_market_and_production_crosscheck",
+      "topic": "2026 rainfall and harvest risk, 2025 cereal baseline, USDA crop series and market monitoring",
+      "source_name": "FAO GIEWS Sudan Country Brief; USDA Foreign Agricultural Service Production – Sudan; IFPRI Sudan Essential Commodities Prices and Availability Monitor; FEWS NET Sudan September 2026–January 2027 update",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=SDN",
+      "companion_source_url": "https://fas-prod.azureedge.us/data/production/su",
+      "additional_source_urls": [
+        "https://sudan.ifpri.info/essential-commodities-prices-and-availability/",
+        "https://sudan.ifpri.info/5-price-and-availability-reports/",
+        "https://fews.net/east-africa/sudan"
+      ],
+      "reference_date": "FAO GIEWS 24 September 2026; USDA MY 2025/26 dataset accessed 4 November 2026; IFPRI August 2026 report; FEWS NET September 2026–January 2027 update",
+      "observations": [
+        {
+          "item": "National cereal production (sorghum, millet and wheat)",
+          "value": 5200000,
+          "unit": "tonnes",
+          "period": "calendar year 2025",
+          "status": "FAO_CFSAM_estimate_reported_by_GIEWS",
+          "finding": "About 22 percent below 2024 and 19 percent below the previous five-year average. Aggregate total only; do not derive crop-specific yield or farm margins from it."
+        },
+        {
+          "item": "2026 rainfall in Sennar",
+          "value": 20,
+          "unit": "percent below long-term average",
+          "period": "June–September 2026",
+          "status": "FAO_GIEWS_rainfall_assessment",
+          "finding": "Rainfall deficit in a key sorghum-producing state; FAO Agricultural Stress Index indicated severe drought conditions over up to 55 percent of cropland."
+        },
+        {
+          "item": "2026 rainfall in Gedaref",
+          "value": 30,
+          "unit": "percent below long-term average",
+          "period": "June–September 2026",
+          "status": "FAO_GIEWS_rainfall_assessment",
+          "finding": "Rainfall deficit in a key sorghum-producing state; FAO Agricultural Stress Index indicated severe drought conditions over up to 70 percent of cropland."
+        },
+        {
+          "item": "Sorghum production",
+          "value": 3000000,
+          "unit": "metric tonnes",
+          "period": "marketing year 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "USDA series lists 2024/25 production at 3.3 million tonnes and 2025/26 at 3.0 million tonnes, down 9 percent; marketing-year estimate, not directly interchangeable with FAO calendar-year CFSAM."
+        },
+        {
+          "item": "Sorghum harvested area",
+          "value": 6000000,
+          "unit": "hectares",
+          "period": "marketing year 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "USDA production page reports 6 million hectares. Retain source method and marketing-year definition; do not assume state-level distribution."
+        },
+        {
+          "item": "Millet production",
+          "value": 750000,
+          "unit": "metric tonnes",
+          "period": "marketing year 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "USDA series lists 2024/25 production at 793,000 tonnes and 2025/26 at 750,000 tonnes, down 5 percent."
+        },
+        {
+          "item": "Millet harvested area",
+          "value": 2500000,
+          "unit": "hectares",
+          "period": "marketing year 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "USDA production page reports 2.5 million hectares; no state-level allocation adopted."
+        },
+        {
+          "item": "Groundnut oilseed production",
+          "value": 1000000,
+          "unit": "metric tonnes",
+          "period": "marketing year 2025/2026",
+          "status": "USDA_FAS_estimate",
+          "finding": "USDA lists oilseed peanut output at 1.0 million tonnes, down 41 percent from 1.68 million tonnes in 2024/25. This is oilseed commodity output, not a farmgate price or enterprise yield."
+        },
+        {
+          "item": "Sorghum prices",
+          "period": "January–August 2026",
+          "status": "FAO_GIEWS_price_assessment",
+          "finding": "Domestic sorghum prices more than doubled on average in most monitored markets between January and August; August prices were more than twice their already elevated year-earlier levels."
+        },
+        {
+          "item": "Millet prices",
+          "value": 77,
+          "unit": "percent increase",
+          "period": "January–August 2026",
+          "status": "FAO_GIEWS_price_assessment",
+          "finding": "Domestic millet prices increased on average by 77 percent over the period; August prices were 68 percent higher year-on-year."
+        },
+        {
+          "item": "Diesel fuel prices",
+          "period": "March–August 2026",
+          "status": "FAO_GIEWS_price_assessment",
+          "finding": "National average diesel prices almost doubled and were more than twice the year-earlier level, increasing mechanisation, irrigation and transport cost risks."
+        },
+        {
+          "item": "IFPRI market monitoring coverage",
+          "value": 36,
+          "unit": "markets across 18 states",
+          "period": "fortnightly collection; monthly aggregation",
+          "status": "IFPRI_dashboard_metadata",
+          "finding": "Dashboard covers prices, availability, quality and trader insights, with commodity groups including cereals, vegetables, animal products, seeds, fertilisers, fuel and exchange rates. Dashboard metadata is not itself a dated transaction observation."
+        },
+        {
+          "item": "Regional harvest and pastoral risk",
+          "period": "September 2026–January 2027 outlook",
+          "status": "FEWS_NET_assessment",
+          "finding": "FEWS NET reports below- to severely below-average harvests across much of Greater Darfur and Greater Kordofan, with deteriorating pasture and water access, livestock distress sales and deaths in parts of North and West Darfur."
+        }
+      ],
+      "caveats": [
+        "FAO calendar-year CFSAM totals and USDA marketing-year estimates use different periods and methodologies; retain them as separate series.",
+        "USDA crop production and harvested area are national estimates, not state-level yields or farm budgets. Verify selected commodity yield panels and definitions before using ratios.",
+        "FAO 2026 rainfall and crop stress assessments are seasonal risk evidence, not final harvest statistics.",
+        "IFPRI dashboard metadata confirms market monitoring coverage, but exported observations are still needed for exact market, date, commodity, unit and price values.",
+        "Market prices are not farmgate producer prices. Obtain producer-level evidence before setting calculator revenue assumptions.",
+        "Conflict and market access vary by state; no national average can represent inaccessible or severely disrupted production zones."
+      ]
     }
   ],
   "calculator_data_gaps": [
-    "Obtain the full government-led 2025 CFSAM tables and extract crop-specific planted area, harvested area, production and yield by state and season.",
-    "Reconcile CFSAM estimates with USDA FAS marketing-year series; preserve distinct time periods and methods.",
-    "Export IFPRI's underlying 36-market price and availability data for selected crops, livestock products, inputs and labour, preserving market, state, date, unit and grade.",
-    "Collect verified farmgate producer prices by crop, location, season and date; do not substitute market retail or wholesale prices.",
-    "Verify all local commodity units, including kantar, sacks and other market measures, before conversions.",
-    "Obtain current supplier quotations for seed, fertiliser, crop protection, machinery, fuel, irrigation, labour, land preparation, transport, storage and post-harvest handling.",
+    "Obtain and extract the complete 2025 CFSAM tables by crop, state, planted/harvested area, production, yield and season.",
+    "Reconcile FAO calendar-year CFSAM totals with USDA marketing-year series; preserve methods, definitions and reporting periods.",
+    "Obtain state-level crop area and yield series for sorghum, millet, wheat, groundnut, sesame, cotton and other candidate crops.",
+    "Export dated IFPRI SPAMS observations from all accessible states/markets, preserving product, grade, SDG unit, date and market; distinguish market prices from farmgate producer prices.",
+    "Collect verified current farmgate producer prices by crop, state, season, quality and date.",
+    "Obtain current farmer-facing seed, fertiliser, crop-protection, labour, land preparation, machinery, irrigation, fuel, transport, storage and post-harvest quotations.",
     "Build separate enterprise budgets for irrigated schemes, semi-mechanized rainfed farms and traditional rainfed systems.",
-    "Validate state-level crop suitability, land access, water availability and security before assigning production assumptions.",
-    "Obtain current livestock purchase/sale prices, herd composition, feed, veterinary, vaccination, water and mobility costs.",
-    "Document SDG inflation and official/parallel exchange-rate observations with effective dates; never hard-code stale nominal values."
+    "Validate land access, water availability, rainfall and security at state/locality level before assigning production assumptions.",
+    "Obtain livestock purchase/sale prices, herd composition, feed, veterinary, vaccination, water, mortality and mobility costs by production system.",
+    "Document official and parallel SDG exchange-rate series with effective dates; never hard-code stale nominal prices."
   ],
   "readiness_decision": {
     "classification": "research_evidence_record_present",
     "calculator_status": "directory_only_not_active",
     "calculator_readiness": "not_ready_research_only",
     "activation_blockers": [
-      "Crop-specific state-level area, production and yield data require extraction and reconciliation.",
-      "No validated current farmgate price series has been adopted.",
-      "No complete crop enterprise budgets or current input quotations.",
-      "Conflict, access and rainfall conditions vary materially across states.",
+      "Crop-specific state-level area, production and yield tables require extraction and reconciliation across FAO CFSAM and USDA series.",
+      "No validated current farmgate producer-price series has been adopted; IFPRI/FAO market monitoring cannot automatically substitute.",
+      "No complete crop enterprise budgets or current farmer-facing input quotations.",
+      "Conflict, access, drought and rainfall conditions vary materially across states and localities.",
       "Currency volatility and local commodity-unit definitions require dated treatment.",
       "Livestock enterprise budgets require separate species- and production-system data."
     ]
@@ -427,6 +548,10 @@
     "Do not substitute retail/wholesale market prices for farmgate producer prices.",
     "Do not combine CFSAM calendar-year harvest estimates and USDA marketing-year estimates without reconciling period, scope and method.",
     "Preserve local units and currency/exchange-rate type with each price observation.",
-    "Do not generalize conflict-affected or drought-affected observations into normal-year enterprise assumptions."
+    "Do not generalize conflict-affected or drought-affected observations into normal-year enterprise assumptions.",
+    "Keep FAO calendar-year 2025 CFSAM cereal production separate from USDA marketing-year 2025/26 commodity estimates.",
+    "Do not infer representative crop yields by dividing national output by national harvested area without confirming matching crop definitions, period and methodology.",
+    "Do not use IFPRI dashboard metadata as a substitute for exported, dated market observations or farmgate producer prices.",
+    "Do not apply one national rainfall, conflict or access adjustment across Sudan."
   ]
 }
