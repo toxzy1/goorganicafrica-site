@@ -919,11 +919,11 @@
         "crop_area_production_yield_by_commodity_and_season": "partial_WTO_ministry_national_2019_2024_area_output_and_2024_25_area_plus_2025_output_estimates_available_region_crop_yields_and_2026_final_harvest_missing",
         "dated_local_farmgate_prices_and_units": "partial_groundnut_2025_26_official_producer_floor_price_only_other_crop_province_grade_price_series_missing",
         "seed_and_planting_material_costs": "partial_2026_seed_distribution_quantities_reported_current_farmer_paid_seed_prices_missing",
-        "fertilizer_and_soil_amendment_costs": "partial_2026_subsidized_price_GMD1100_per_bag_and_free_organic_support_reported_grade_bag_weight_and_full_costs_to_verify",
+        "fertilizer_and_soil_amendment_costs": "partial_2026_official_GMD1100_per_bag_subsidy; North_Bank_Aug_2026_NPK_15_15_15_shortage_reported_near_GMD2000_per_50kg; local_market_not_national_tariff; confirm_product_and_season",
         "crop_protection_costs": "not_yet_audited",
         "irrigation_water_and_energy_costs": "not_yet_audited",
         "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "partial_2026_government_tractor_ploughing_rate_GMD4500_5000_per_ha_no_full_region_or_private_hire_schedule",
+        "machinery_and_land_preparation_costs": "partial_Oct_2026_government_ploughing_GMD4500_5000_per_ha_includes_fuel_lubricants_operator_maintenance_depreciation; private_GMD7000_9000_per_ha_reported; access_and_regional_coverage_incomplete",
         "regional_enterprise_budget_and_gross_margin": "blocked_no_complete_province_crop_price_and_cost_budgets",
         "currency_and_exchange_rate_method": "partial_GMD_dalasi_identified_exchange_and_rounding_tests_pending",
         "source_provenance_and_observation_date": "partial_WTO_2025_FAO_2026_GIEWS_Ministry_announcements_and_2026_National_Assembly_reporting_recorded",
@@ -935,9 +935,12 @@
         "Obtain dated farmgate prices by crop, grade, quality, region and unit; retain the GMD 38,000/tonne groundnut floor price as specific to the 2025/26 trade season.",
         "Confirm fertilizer product grade and bag weight and obtain actual farmer purchase prices for seed, fertilizer, crop protection and other inputs.",
         "Expand government ploughing rates into complete regional machinery, labour, irrigation, energy, packaging, transport and storage budgets.",
-        "Build validated regional enterprise budgets and regression tests before calculator mapping."
+        "Build validated regional enterprise budgets and regression tests before calculator mapping.",
+        "Obtain the official 2026/27 groundnut producer price when announced; do not roll forward the 2025/26 GMD 38,000/t price.",
+        "Resolve fertilizer access and actual farmer-paid prices by region and product: official subsidy GMD 1,100/bag coexists with a reported North Bank NPK shortage price near GMD 2,000/50kg.",
+        "Obtain region-level crop-cutting yields and complete farmer-paid enterprise budgets; government ploughing service tariff alone is insufficient."
       ],
-      "next_step": "Obtain completed NASC/2026 survey tables with region-level crop-cutting yields, reconcile 2025 cereal totals and build dated provincial farmgate and input-cost schedules.",
+      "next_step": "Obtain completed 2025 NASC/2026 survey region-level crop-cutting yields, reconcile cereal totals, capture the 2026/27 groundnut floor price when announced, and collect region-specific farmer-paid input, labour and enterprise budgets.",
       "batch_09_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Gambia has five administrative regions plus separate Banjul City Council and Kanifing Municipal Council. The regional lookup contains only West Coast, Lower River, North Bank, Central River and Upper River. Banjul and Kanifing are separate city/municipal local-government areas and are not misrepresented as regions. Some sources use older names such as Western Region or MacCarthy Island; current regional naming is used here.",
@@ -948,6 +951,19 @@
           "https://www.thefactbook.org/gambia/administrative-divisions"
         ],
         "regional_lookup": "5 administrative regions added to src/_data/calculator/regions.json; Banjul City Council and Kanifing Municipal Council are separate units and excluded from the five-region list; lookup only, not activated."
+      },
+      "review_2026_11_04": {
+        "source_notes": "Cross-checked the October 2026 ministerial statements and August 2026 regional fertilizer market reporting. Government ploughing rate GMD 4,500–5,000/ha includes fuel, lubricants, operator, maintenance and depreciation; private operators reportedly charged GMD 7,000–9,000/ha. North Bank farmers reported NPK 15:15:15 shortages and local price near GMD 2,000 per 50kg bag versus the official GMD 1,100 subsidy price; urea remained near GMD 1,100. These are separate government tariff and local shortage-market observations, not a uniform national input price.",
+        "sources": [
+          "https://www.voicegambia.com/payment-delays-slow-delivery-of-180-tractors-says-agriculture-minister/?noamp=mobile",
+          "https://www.voicegambia.com/npk-fertilizer-shortage-drives-prices-up-in-north-bank-region/",
+          "https://cb.apps.fao.org/country.jsp?code=GMB"
+        ],
+        "decisions": [
+          "Do not treat the subsidized fertilizer price as universal market availability or use the North Bank shortage price as a national price.",
+          "Do not carry the 2025/26 groundnut floor price into the 2026/27 season without a new official announcement.",
+          "Keep Gambia research-only until region-specific crop-cutting yields, producer prices and complete costs are available."
+        ]
       }
     },
     {
