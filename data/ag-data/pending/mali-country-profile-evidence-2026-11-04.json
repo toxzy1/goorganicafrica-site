@@ -251,6 +251,137 @@
           "status": "NPK change differs from FAO's 16 percent; preserve source-specific readings pending reconciliation."
         }
       ]
+    },
+    {
+      "title": "Rapport Synthétique de l'Enquête Agricole de Conjoncture (EAC) 2023-2024",
+      "publisher": "CPS/SDR, National Data Archive of Mali (INSTAT)",
+      "url": "https://microdata.instat.ml/index.php/catalog/123/related-materials",
+      "reference_period": "EAC 2023-2024",
+      "observations": [
+        {
+          "indicator": "official_report_availability",
+          "value": "3.56 MB PDF report available from the official INSTAT Mali NADA catalogue (download id 969)",
+          "status": "Report contents explicitly include cultivated area by crop, yields, agricultural inputs, seed/fertilizer/equipment, livestock and fisheries. Numerical tables still need extraction."
+        },
+        {
+          "indicator": "report_sections",
+          "value": [
+            "cereal area and production",
+            "legume production",
+            "oilseed production",
+            "cereal, legume and oilseed yields",
+            "input use",
+            "livestock holdings and production",
+            "poultry",
+            "fisheries"
+          ],
+          "status": "Table of contents verified on official catalogue page; crop-by-region values not transcribed."
+        },
+        {
+          "indicator": "survey_institutional_method",
+          "value": "CPS/SDR implementation with DNA, DNPIA, fisheries directorate and regional technical services; INSTAT technical support; harmonised CILSS methodology",
+          "status": "Official report description; use report and sampling documentation for weights and coverage."
+        }
+      ],
+      "notes": "The official catalogue provides the full 2023-24 synthetic report and XLSX questionnaires, including a dedicated yield-square questionnaire. The PDF download endpoint returned an unsupported binary content type in the web reader, so values have not been transcribed from it."
+    },
+    {
+      "title": "Comptes Économiques de l'Agriculture (CEA), note d'analyse 2021-2025",
+      "publisher": "INSTAT Mali / Ministry of Economy and Finance",
+      "url": "https://instat-mali.org/laravel-filemanager/files/shares/pub/note-analyse-comptes-economiques-agriculture2021-2025_pub.pdf",
+      "publication_date": "2026-09-07",
+      "reference_period": "2021-2025",
+      "observations": [
+        {
+          "crop": "maize",
+          "indicator": "value_of_production",
+          "value": 593744.8,
+          "unit": "million_XOF",
+          "reference_year": 2025,
+          "status": "National economic-account aggregate value, not physical production, price/kg or per-hectare revenue."
+        },
+        {
+          "crop": "paddy_rice",
+          "indicator": "value_of_production",
+          "value": 492475.5,
+          "unit": "million_XOF",
+          "reference_year": 2025,
+          "status": "National economic-account aggregate value, not physical production, price/kg or per-hectare revenue."
+        },
+        {
+          "crop": "other_cereals",
+          "indicator": "value_of_production",
+          "value": 557562,
+          "unit": "million_XOF",
+          "reference_year": 2025,
+          "status": "Aggregate includes wheat, millet, sorghum and fonio; not crop-specific."
+        },
+        {
+          "crop": "paddy_rice",
+          "indicator": "producer_price_reference",
+          "value": 286000,
+          "unit": "XOF_per_tonne",
+          "reference_year": 2022,
+          "status": "Historical producer price cited for 2022 only; not current 2026 farmgate price."
+        },
+        {
+          "crop": "groundnut",
+          "indicator": "producer_price_reference",
+          "value": 387000,
+          "unit": "XOF_per_tonne",
+          "reference_year": 2023,
+          "status": "Historical producer price cited for 2023 only; not current 2026 farmgate price."
+        },
+        {
+          "crop": "sesame",
+          "indicator": "producer_price_reference",
+          "value": 750000,
+          "unit": "XOF_per_tonne",
+          "reference_year": 2025,
+          "status": "2025 producer price reference cited in the report; needs market/grade/transaction validation before calculator use."
+        },
+        {
+          "crop": "maize",
+          "indicator": "intermediate_consumption",
+          "value": 173244,
+          "unit": "million_XOF",
+          "reference_year": 2025,
+          "status": "National aggregate intermediate consumption; not a per-hectare budget or unit input price."
+        },
+        {
+          "crop": "maize",
+          "indicator": "intermediate_consumption",
+          "value": 194566,
+          "unit": "million_XOF",
+          "reference_year": 2024,
+          "status": "National aggregate intermediate consumption; not a per-hectare budget or unit input price."
+        },
+        {
+          "indicator": "ploughing_cost_reference",
+          "value": {
+            "from": 25000,
+            "to": 30000
+          },
+          "unit": "XOF_unspecified_unit",
+          "period": "from 2023",
+          "status": "Report mentions ploughing charges changing from XOF 25,000 to 30,000; unit/basis and regional applicability are not stated clearly, so not admitted as a calculator cost."
+        },
+        {
+          "indicator": "fertilizer_price_reference",
+          "value": {
+            "2021": 17200,
+            "2023": 32600
+          },
+          "unit": "XOF_unspecified_unit",
+          "status": "CEA narrative says fertilizer prices moved from XOF 17,200 in 2021 to 32,600 in 2023; package size/product basis is not specified in the extracted passage, so not admitted as unit price."
+        },
+        {
+          "indicator": "input_cost_methodology",
+          "value": "Intermediate consumption estimated from input quantities and prices, primarily using expert opinion and technical coefficients because direct data on input use and costs were limited.",
+          "status": "Important methodological limitation: CEA aggregates are context only and cannot replace farm-level crop budgets."
+        }
+      ],
+      "notes": "CEA reports production value, intermediate consumption and gross value added at national product/sector level. The report explicitly warns that some input consumption estimates rely on expert opinion and technical coefficients due limited direct data; do not treat these national aggregates as enterprise budgets."
     }
   ],
   "priority_commodities": [
@@ -278,7 +409,10 @@
     "Extract DGMP 2026 regional Mercuriale PDFs and classify each price as procurement/reference, wholesale, retail or farmgate.",
     "Obtain current dated farmgate transactions by crop, grade, market and region; historical rice quotes and wholesale panels are not substitutes.",
     "Verify 2026 input subsidy eligibility, formulation, allocation, delivery point and farmer-paid costs; obtain commercial seed, crop protection, labour, machinery, irrigation, energy and transport prices.",
-    "Build regional crop and livestock enterprise budgets, including irrigated Office du Niger rice versus rainfed systems, and validate XOF tests."
+    "Build regional crop and livestock enterprise budgets, including irrigated Office du Niger rice versus rainfed systems, and validate XOF tests.",
+    "Extract the official EAC 2023-24 synthetic report (PDF) and yield-square questionnaire; transcribe crop-specific planted/harvested area, production and yield by region and assess sampling/precision.",
+    "Use CEA 2021-2025 only as national economic context; its production values and intermediate-consumption aggregates are not per-hectare budgets, and some input costs rely on expert coefficients.",
+    "Validate the CEA's historical producer-price references (paddy rice 2022, groundnut 2023, sesame 2025) against current 2026 regional farmgate transactions before use."
   ],
-  "extraction_status": "New evidence reviewed on 2026-11-04. EAC survey metadata and FAO public release confirm crop-cut, GPS area, input and labour modules but numeric regional extraction and precision assessment remain pending. Government 2025 cereal total and FAO estimate are retained separately. 2026 government fertilizer/seed/cotton policy prices are recorded with eligibility and delivery caveats. Regional Mercuriale and World Bank market-price panel are leads, not validated farmgate prices. Mali remains inactive."
+  "extraction_status": "2026-11-04 follow-up: official CPS/SDR 2023-24 EAC report catalogue and table-of-contents verified; 3.56MB synthetic report and dedicated yield-square questionnaire identified, numerical crop tables not yet extracted. New INSTAT CEA 2021-2025 report extracted for national production values, selected historical producer-price references and aggregate intermediate-consumption context. CEA unit costs are not sufficiently disaggregated for calculator use and its input-consumption methodology partly relies on expert coefficients. Mali remains inactive."
 }
