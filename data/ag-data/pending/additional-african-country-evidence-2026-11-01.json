@@ -1499,14 +1499,16 @@
     {
       "country_code": "MW",
       "country_name": "Malawi",
-      "evidence_status": "Batch_26_reviewed_2026-11-03_official_2024-25_APES_production_and_ADD_maize_data_extracted_2025_NACA_small_area_data_identified_regions_added_cost_and_current_farmgate_gaps_remain",
+      "evidence_status": "2026-11-04_official_NACA_2025_small_area_report_verified_2026_Annual_Economic_Report_APES_2024_25_and_ADD_maize_horticulture_livestock_tables_extracted_2025_26_minimum_farmgate_price_schedule_added_data_quality_conflicts_flagged_full_enterprise_budgets_still_missing",
       "survey": {
         "title": "Agricultural Production Estimates Survey (APES); National Census of Agriculture 2025",
         "publisher": "Ministry of Agriculture; National Statistical Office of Malawi",
         "reference_periods": [
           "2022/23 APES final round",
           "2023/24 APES third-round estimates",
-          "2025 National Census of Agriculture"
+          "2025 National Census of Agriculture",
+          "2024/25 APES third-round estimates reproduced in Malawi Annual Economic Report 2026",
+          "2025/26 minimum farmgate price schedule announced 2026-04-14"
         ],
         "source_urls": [
           "https://www.nsomalawi.mw/news/national-census-of-agriculturenaca-2025",
@@ -1514,7 +1516,11 @@
           "https://finance.gov.mw/documents/uploads/2024-03/Annual%20Economic%20Report%202024.pdf",
           "https://fews.net/southern-africa/malawi/food-security-outlook/october-2024",
           "https://www.fao.org/giews/countrybrief/country.jsp?code=MWI",
-          "https://fpma.fao.org/"
+          "https://fpma.fao.org/",
+          "https://www.finance.gov.mw/documents/uploads/2026-03/Doc%202_2026%20Annual%20Economic%20Report.pdf",
+          "https://www.yonecofm.com/index.php/2026/04/14/government-sets-minimum-farm-gate-prices-for-2025-26-season/",
+          "https://agrifinatlas.com/malawi/statistics/",
+          "https://massp.ifpri.info/files/2025/06/IFPRI-Malawi_Maize-Market-Report_May_2025.pdf"
         ],
         "coverage": "2025 NACA provides national, regional, Agricultural Development Division, district, urban and rural estimates; its published household report covers 29,648 smallholder farming households. APES provides annual crop production estimates.",
         "source_observations": [
@@ -1708,6 +1714,78 @@
             "source": "Malawi Annual Economic Report 2026, Tables 3.1 and 3.3; Ministry of Agriculture APES third-round estimates",
             "status": "national estimate; matched regional harvested area and yield observations still required",
             "change_percent": 6.4
+          },
+          {
+            "crop": "maize",
+            "production_mt": 2859948,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Ministry of Agriculture APES third-round estimate",
+            "status": "national estimate; matched harvested area and yield still required",
+            "change_percent": 5.4
+          },
+          {
+            "crop": "rice_paddy",
+            "production_mt": 147039,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Ministry of Agriculture APES third-round estimate",
+            "status": "national estimate; paddy/milled definition and matching harvested area must be confirmed",
+            "change_percent": 15.8
+          },
+          {
+            "crop": "sorghum",
+            "production_mt": 113815,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Ministry of Agriculture APES third-round estimate",
+            "status": "national estimate; matched harvested area and yield still required",
+            "change_percent": 39.8
+          },
+          {
+            "crop": "millet",
+            "production_mt": 48724,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Ministry of Agriculture APES third-round estimate",
+            "status": "national estimate; matched harvested area and yield still required",
+            "change_percent": 45
+          },
+          {
+            "crop": "cassava",
+            "production_mt": 6395722,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Table 3.3",
+            "status": "national horticultural output; matched area and regional yield not reported in this table",
+            "change_percent": 7.6
+          },
+          {
+            "crop": "tomato",
+            "production_mt": 746839,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Table 3.3",
+            "status": "national horticultural output; matched area and regional yield not reported in this table",
+            "change_percent": 6.4
+          },
+          {
+            "crop": "beans",
+            "production_mt": 197086,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Table 3.1",
+            "status": "national total; report's narrative text gives a conflicting 194,175 MT and -17.4%; table/narrative discrepancy must be resolved before use",
+            "change_percent": 1.5
+          },
+          {
+            "crop": "groundnuts",
+            "production_mt": 328163,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Table 3.1",
+            "status": "national total; report narrative text gives conflicting 277,591 MT and -40.7%; not a current calculator commodity profile",
+            "change_percent": 18.2
+          },
+          {
+            "crop": "cowpea",
+            "production_mt": 60659,
+            "reference_year": "2024/25",
+            "source": "Malawi Annual Economic Report 2026, Table 3.1",
+            "status": "national output; candidate mapping to Beans (Cowpea) only after crop definition confirmation",
+            "change_percent": 35.1
           }
         ],
         "quality_notes": [
@@ -1722,7 +1800,10 @@
           "Table 3.1 reports 2024/25 groundnuts at 328,163 MT (+18.2%), beans at 197,086 MT, pigeon peas at 477,925 MT and cowpeas at 60,659 MT. Use the table values, not contradictory narrative wording.",
           "The 2025 National Census of Agriculture covers 29,648 smallholder households and provides national, regional, ADD, district, urban and rural estimates; detailed tables and sampling precision must be assessed before calculator use.",
           "Malawi has three regions and the standard 28-district council listing. Newer NSO/OCHA boundary data also includes four city-district units; keep the counting conventions distinct.",
-          "IFPRI monthly maize reports provide retail market prices. Historical government farmgate floor prices are not current 2026 producer prices."
+          "IFPRI monthly maize reports provide retail market prices. Historical government farmgate floor prices are not current 2026 producer prices.",
+          "Malawi Annual Economic Report 2026 Table 3.1 and its narrative are internally inconsistent for some legumes/oilseeds: the table reports 2024/25 groundnuts 328,163 MT (+18.2%) and beans 197,086 MT (+1.5%), while the narrative says groundnuts fell from 468,045 to 277,591 MT (-40.7%) and beans fell from 235,089 to 194,175 MT (-17.4%). Preserve both readings and do not select one until the Ministry/APES source table is checked.",
+          "The report's ADD maize table is headed 2023/24 in its title but the surrounding text and table values describe 2024/25 versus 2023/24. Its reported ADD values sum to the national 2024/25 total, but the printed national percent-change cell (-22.7%) conflicts with the +5.4% national comparison elsewhere; treat the percent cell as a likely table error and verify the original Ministry APES table.",
+          "The 2025 NACA report is now published and available for download from NSO; its stated small-area estimates cover national, region, ADD, district, urban and rural levels, and household themes include irrigation, farm machinery, labour, livestock and aquaculture. Detailed table extraction and precision assessment remain necessary."
         ],
         "market_price_source": {
           "title": "IFPRI Malawi Monthly Maize Market Reports and FAO FPMA",
@@ -1730,7 +1811,7 @@
             "https://massp.ifpri.info/publications/maize-market-reports/",
             "https://fpma.fao.org/"
           ],
-          "status": "retail_market_price_series_published_extraction_by_market_date_unit_and_product_form_required",
+          "status": "2025_26_minimum_farmgate_policy_schedule_now_available_but_is_a_floor_not_an_observed_transaction_price; IFPRI_series_are_retail_market_prices",
           "note": "IFPRI reports are retail-market prices, not farmgate producer prices. The 2024/25 government minimum farmgate prices are historical policy references only.",
           "historical_policy_floor_2024_25": {
             "maize_mwk_per_kg": 1050,
@@ -1739,6 +1820,97 @@
             "soybean_mwk_per_kg": 1200,
             "pure_beans_mwk_per_kg": 2500,
             "source": "https://manaonline.gov.mw/index.php?Itemid=371&id=9437%3Agovernment-sets-minimum-farm-gate-prices-for-2024-25-season&option=com_k2&view=item"
+          },
+          "minimum_farmgate_prices_2025_26": {
+            "reference_date": "2026-04-14",
+            "currency": "MWK",
+            "unit": "per kg unless specified",
+            "source": "Ministry of Agriculture press statement reported by Yoneco FM and corroborated by Malawi24 and Umunthu FM",
+            "prices": [
+              {
+                "commodity": "maize",
+                "price": 900
+              },
+              {
+                "commodity": "rice_paddy",
+                "price": 1500
+              },
+              {
+                "commodity": "sorghum",
+                "price": 1100
+              },
+              {
+                "commodity": "soybean",
+                "price": 1700
+              },
+              {
+                "commodity": "finger_millet",
+                "price": 1400
+              },
+              {
+                "commodity": "pure_beans",
+                "price": 3400
+              },
+              {
+                "commodity": "mixed_beans",
+                "price": 2500
+              },
+              {
+                "commodity": "white_haricot_beans",
+                "price": 3000
+              },
+              {
+                "commodity": "cowpea",
+                "price": 1600
+              },
+              {
+                "commodity": "pigeon_pea",
+                "price": 1500
+              },
+              {
+                "commodity": "shelled_groundnut",
+                "price": 3500
+              },
+              {
+                "commodity": "unshelled_groundnut",
+                "price": 2000
+              },
+              {
+                "commodity": "paprika",
+                "price": 3800
+              },
+              {
+                "commodity": "chilli",
+                "price": 7000
+              },
+              {
+                "commodity": "cassava_wet",
+                "price": 1000
+              }
+            ],
+            "caveat": "These are government minimum farmgate policy prices for the 2025/26 season, not observed market transactions, not guaranteed prices for every grade/market, and not current 2026/27 prices. Confirm effective period, quality/grade, enforcement and buyer availability before using as a price scenario."
+          },
+          "fertilizer_price_lead": {
+            "source": "AgFin Atlas calculation using WFP VAM/HDX market observations",
+            "reference_date": "2026-09",
+            "prices_mwk_per_50kg_bag": {
+              "urea": 201719,
+              "NPK": 203247
+            },
+            "coverage_note": "Mean retail prices across WFP-monitored markets; 73 markets for each product in September 2026 according to the secondary compilation.",
+            "status": "secondary_market_average_not_farmer_specific_quote; obtain WFP source rows and local dealer quotations before costing."
+          },
+          "IFPRI_May_2025_retail_context": {
+            "source": "IFPRI Malawi Maize Market Report, May 2025",
+            "source_url": "https://massp.ifpri.info/files/2025/06/IFPRI-Malawi_Maize-Market-Report_May_2025.pdf",
+            "reference_date": "2025-05",
+            "observations": {
+              "national_maize_retail_average_mwk_per_kg": 928,
+              "southern_region_last_week_mwk_per_kg": 992,
+              "central_region_last_week_mwk_per_kg": 901,
+              "northern_region_last_week_mwk_per_kg": 825
+            },
+            "status": "retail_prices_not_farmgate; historical 2025 only"
           }
         },
         "priority_commodities": [
@@ -1755,16 +1927,16 @@
           "pig"
         ],
         "remaining_gaps": [
-          "Extract 2025 NACA crop area, production and yield tables by region, ADD and district; record sampling errors and reference period.",
-          "Obtain final 2025/26 APES crop-specific area, production and yield tables where published.",
-          "Extract IFPRI/FAO price observations by market, date, commodity form, grade, currency and unit; distinguish retail, wholesale and farmgate.",
-          "Obtain dated current farmgate producer prices for supported crops.",
-          "Obtain farmer-paid seed, fertilizer, crop protection, labour, machinery, land preparation, irrigation, energy and transport costs.",
-          "Build and validate regional crop/livestock enterprise budgets and gross margins.",
-          "Confirm crop taxonomy, including beans versus cowpea versus pigeon pea and paddy versus milled rice.",
-          "Map only validated observations into the calculator schema and add Malawi-specific regression cases."
+          "Download and extract the 2025 NACA report and key findings tables, preserving regional, ADD and district dimensions, sample sizes, standard errors and definitions; the published microdata access route is also identified.",
+          "Obtain 2025/26 and latest APES crop area, harvested area, production and yield distributions by ADD/district for the 17 calculator enterprises; do not infer yields from national totals.",
+          "Resolve the Malawi Annual Economic Report 2026 APES table/narrative contradictions for beans, groundnuts and the ADD maize percent-change cell against the original Ministry APES release.",
+          "Obtain observed producer/farmgate transactions by crop, grade, market, date and unit; use the 2025/26 government minimum prices only as policy-floor scenarios, not observed prices.",
+          "Obtain current farmer-paid seed, fertilizer, crop protection, labour, machinery, land preparation, irrigation, energy, packaging and transport quotations by region and enterprise; retail fertilizer averages are not farm-specific costs.",
+          "Build validated enterprise budgets for crop and livestock profiles, with season, production system, yields, by-products, mortality and marketing costs.",
+          "Confirm bean species and variety mapping: common beans, cowpea and pigeon pea are separate APES groups and should not be collapsed into one Beans profile without explicit profile taxonomy.",
+          "Add MWK currency formatting, unit conversions, regional test cases and regression tests before calculator activation."
         ],
-        "extraction_status": "Batch 26 review completed for administrative geography, official 2024/25 APES production, ADD maize output, horticulture, livestock, 2025 NACA small-area data availability and market-price sources. Calculator activation remains blocked by incomplete regional crop yield distributions, current farmgate prices and farmer-level enterprise costs.",
+        "extraction_status": "2026-11-04 evidence refresh completed: verified NSO publication of the 2025 NACA small-area report and microdata access; extracted 2024/25 APES national crop production, ADD-level maize, horticulture and livestock from the official Malawi Annual Economic Report 2026; documented the 2025/26 minimum farmgate policy price schedule and 2026 fertilizer-price lead. The report contains internal table/narrative inconsistencies which are explicitly flagged. Malawi remains inactive pending NACA detailed table extraction, matched crop area/yield, observed producer prices and enterprise budgets.",
         "livestock_observations_2024_25": [
           {
             "species": "cattle",
