@@ -7,7 +7,7 @@
     "currency_name": "Somali shilling",
     "currency_notes": "USD is also widely used in commercial transactions; Somaliland uses the Somaliland shilling in its own markets. Preserve the currency and territory context of every price observation."
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "calculator_readiness": "not_ready_research_only",
   "purpose": "Country evidence inventory for later crop- and livelihood-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
@@ -369,30 +369,89 @@
         "Macroeconomic growth and export context do not provide crop-specific farmgate prices, yields or production costs.",
         "The IMF figures are historical macro indicators, not current calculator input prices."
       ]
+    },
+    {
+      "id": "november_2026_seasonal_and_market_refresh",
+      "topic": "2026 Gu season production outlook, drought impacts, market-price monitoring and 2026 market bulletin evidence",
+      "source_name": "FAO GIEWS Somalia Country Brief; FEWS NET Somalia Food Security Outlook Update; FSNAU agriculture methodology; M-TACAB Suuq Bulletin",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=SOM",
+      "companion_source_urls": [
+        "https://fews.net/east-africa/somalia/food-security-outlook-update/august-2026",
+        "https://fsnau.org/analytical-approach/methodology/agriculture",
+        "https://mtacab.so/news/"
+      ],
+      "reference_date": "FAO GIEWS brief 15 September 2026; FEWS NET August 2026 update; M-TACAB bulletin issue 04 published 4 October 2026; reviewed 4 November 2026",
+      "observations": [
+        {
+          "item": "2026 Gu season crop status",
+          "period": "April–July 2026 main Gu season",
+          "status": "FAO_seasonal_assessment_no_final_country_total",
+          "finding": "FAO reports below-average and erratically distributed April–June rainfall, crop wilting and stunting, and severe drought affecting 25–70% of cropland in mid-June in Lower/Middle Shabelle and the Bay sorghum belt. Improved late Gu and July Xagaa rains supported partial recovery in some areas. Aggregate 2026 Gu and off-season cereal production remained uncertain pending FSNAU production estimates as of 15 September 2026."
+        },
+        {
+          "item": "2026 Gu production geography",
+          "period": "2026 Gu harvest",
+          "status": "FEWS_NET_post_harvest_assessment",
+          "finding": "FEWS NET's August 2026 update describes mixed outcomes: better performance in some southeastern riverine and agropastoral areas, below-average production in pump-irrigated Hiiraan and Gedo and parts of Bay, Gedo and Lower Juba, and exceptionally poor harvests in parts of Bakool, Gedo and Hiiraan. This is a livelihood-zone assessment, not a full numeric crop-yield table."
+        },
+        {
+          "item": "2026 cereal price movements",
+          "period": "January–July 2026",
+          "status": "FAO_market_price_trend_not_farmgate",
+          "finding": "FAO reports sorghum prices in Baidoa and maize prices in Qorioley rose between January and June 2026 by about 25% and 70%, respectively, then fell in July after the Gu harvest by about 10% and 30%. July prices remained around twice year-earlier levels. In Mogadishu, sorghum and maize rose 15–20% January–June, then eased 5–10% in July while remaining 25–45% above year-earlier levels. These are cereal market-price movements, not producer farmgate quotations."
+        },
+        {
+          "item": "2026 fuel and irrigation exposure",
+          "period": "January–July 2026",
+          "status": "FAO_market_and_production_context",
+          "finding": "FAO reports Mogadishu diesel prices increased 65% from January to April 2026, then declined around 25% by July but remained approximately 25% above the prior year. The September brief identifies high pump-irrigation fuel costs and low river levels as constraints on off-season production."
+        },
+        {
+          "item": "FSNAU district-season data and wage series",
+          "status": "official_monitoring_methodology",
+          "finding": "FSNAU describes district crop production estimates for Gu and Deyr seasons from 1995 to current, including crop production, area and yield by district, and weekly cereal prices and agricultural wage rates in 36 markets. The methodology confirms the data series exist; the current underlying numeric datasets still need to be downloaded and checked."
+        },
+        {
+          "item": "M-TACAB Suuq Bulletin",
+          "period": "Issue 04, covering 12–25 September 2026",
+          "status": "market_data_release_lead",
+          "finding": "The M-TACAB newsroom lists a 4 October 2026 bulletin with 672 daily price observations across Afgooye, Baidoa and Bakaaro. Earlier issues also report daily observations. The newsroom page was reachable in search results but its PDF download could not be inspected in this review, so no specific price values are copied into the evidence record."
+        }
+      ],
+      "caveats": [
+        "FAO's 15 September 2026 brief explicitly says aggregate 2026 Gu and off-season production estimates were still pending; do not invent or extrapolate a final national crop total.",
+        "FEWS NET livelihood-zone qualitative findings do not substitute for district crop-area, production and yield tables.",
+        "FAO market-price changes and M-TACAB market bulletins are market evidence; do not label them farmgate prices unless transaction point is explicitly established.",
+        "M-TACAB issue 04 has 672 records according to its newsroom description, but values were not independently inspected; keep as a data acquisition lead only.",
+        "Pump-irrigation costs and fuel volatility vary by location, river level and season; obtain dated supplier and farmer quotations."
+      ]
     }
   ],
   "calculator_data_gaps": [
     "Extract FSNAU seasonal Gu and Deyr district crop production datasets, including crop-specific area, production and yield, and retain season, district, survey method and year.",
-    "Reconcile and validate the Ministry of Agriculture February 2025 farmgate price table: clarify unit/quantity basis, SOS notation, market locations and the unusually large figures before using any values.",
-    "Download weekly FSNAU market price and wage data for the selected crops and target markets; keep wholesale and retail series separate from farmgate series.",
+    "Obtain and inspect M-TACAB Suuq Bulletin issue 04 (12–25 September 2026; 672 observations) and subsequent bulletins; record actual product, market, date, unit, currency, grade and wholesale/retail/producer transaction type. Do not assume market observations are farmgate.",
+    "Reconcile and validate the Ministry of Agriculture March 2025 farmgate price table: clarify unit/quantity basis, SOS notation, market locations and unusually large figures before using any values.",
+    "Download weekly FSNAU market price and wage data for selected crops and target markets; keep wholesale and retail series separate from farmgate series.",
     "Extract World Bank 45-market monthly estimates and preserve direct-observation versus machine-learning-imputed status, product units and subnational geography.",
     "Collect current producer prices for maize, sorghum, sesame, cowpea, banana, mango, watermelon, onion and other regionally relevant crops.",
     "Obtain current input quotations for seed, fertiliser, pesticides, irrigation fuel/pumping, labour, land preparation, transport and post-harvest handling by region and season.",
     "Build distinct irrigated riverine, rainfed cereal, cowpea and sesame enterprise budgets; do not apply one national yield or cost profile across agroecological zones.",
     "For livestock models, collect species-specific purchase prices, herd composition, feed/water, veterinary costs, mortality, milk yield, liveweight and export-market transaction data.",
-    "Clarify the geographic and currency treatment of Somalia, Somaliland and other administered territories; do not combine SOS, Somaliland shillings and USD without explicit conversion dates and sources."
+    "Clarify the geographic and currency treatment of Somalia, Somaliland and other administered territories; do not combine SOS, Somaliland shillings and USD without explicit conversion dates and sources.",
+    "Use FAO's 15 September 2026 seasonal brief as a drought/market context update only; it states that 2026 Gu and off-season aggregate cereal estimates remain uncertain pending FSNAU release."
   ],
   "readiness_decision": {
     "classification": "research_evidence_record_present",
     "calculator_status": "directory_only_not_active",
     "calculator_readiness": "not_ready_research_only",
     "activation_blockers": [
-      "Current district-season crop area, production and yield series have not yet been extracted and validated",
-      "Ministry farmgate price observations have unresolved unit and currency-scale anomalies",
-      "No complete region-specific crop enterprise budgets or current input quotations",
-      "Market datasets largely describe wholesale/retail or modelled food prices rather than farmgate prices",
-      "Livestock systems require separate species- and livelihood-specific budgets",
-      "Territorial currency and market coverage need explicit handling"
+      "Current district-season crop area, production and yield series have not yet been extracted and validated; FAO's September 2026 brief says aggregate 2026 Gu/off-season production estimates were pending.",
+      "Ministry March 2025 farmgate price observations have unresolved unit and currency-scale anomalies.",
+      "New M-TACAB September 2026 market bulletin identified but its actual price records not inspected; market observations need transaction-point classification.",
+      "No complete region-specific crop enterprise budgets or current input quotations, including pump-irrigation fuel and labour.",
+      "Market datasets largely describe wholesale/retail or modelled food prices rather than verified farmgate prices.",
+      "Livestock systems require separate species- and livelihood-specific budgets.",
+      "Territorial currency and market coverage need explicit handling."
     ]
   },
   "safeguards": [
