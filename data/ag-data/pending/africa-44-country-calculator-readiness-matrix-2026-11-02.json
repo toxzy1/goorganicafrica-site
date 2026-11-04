@@ -2147,30 +2147,46 @@
       "code": "SO",
       "name": "Somalia",
       "evidence_file": "data/ag-data/pending/somalia-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "FAO_March_2026_2025_cereal_output_and_Deyr_crop_failure_MoAI_2024_Gu_estimates_FSNAU_district_season_dataset_methodology_MoAI_2025_farmgate_report_with_unit_currency_anomalies_FSNAU_36_market_weekly_prices_World_Bank_45_market_RTFP_to_Oct_2026_and_livestock_drought_context_recorded_validated_yields_prices_and_enterprise_budgets_pending",
+      "existing_research_note": "FAO GIEWS 15 Sep 2026 describes mixed 2026 Gu crop performance and says aggregate Gu/off-season cereal estimates remain uncertain pending FSNAU release; FEWS NET Aug 2026 documents livelihood-zone variation and drought; FSNAU confirms district-season crop area/production/yield data and weekly wages/prices for 36 markets exist but numeric datasets not extracted; M-TACAB Issue 04 (4 Oct 2026) reports 672 daily price observations from Afgooye, Baidoa and Bakaaro, but PDF values not inspected; Ministry March 2025 farmgate SOS figures retain unresolved unit/currency anomalies.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial",
+        "dated_local_farmgate_prices_and_units": "partial",
+        "seed_and_planting_material_costs": "blocked",
+        "fertilizer_and_soil_amendment_costs": "blocked",
+        "crop_protection_costs": "blocked",
+        "irrigation_water_and_energy_costs": "partial",
+        "labour_rates_and_operations": "partial",
+        "machinery_and_land_preparation_costs": "blocked",
+        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "currency_and_exchange_rate_method": "partial",
+        "source_provenance_and_observation_date": "partial",
+        "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract FSNAU Gu/Deyr district crop-area, production and yield tables and weekly market price/wage datasets; retain season, market, units and methodology.",
+        "Inspect M-TACAB Issue 04 and subsequent bulletins for actual observations; classify transaction point and do not treat retail/wholesale as farmgate.",
+        "Resolve Ministry March 2025 farmgate price unit and currency notation anomalies before using any listed SOS values.",
+        "Obtain dated seed, fertilizer, pesticide, pump-fuel, irrigation, labour, machinery, transport and post-harvest costs by region and production system.",
+        "Build separate budgets for irrigated riverine maize/sesame, rainfed maize/sorghum, coastal cowpea and relevant livestock systems.",
+        "Document Somalia/Somaliland market geography and SOS/Somaliland shilling/USD conversion dates and sources.",
+        "Complete commodity mapping and calculator test cases only after validated price, yield and cost inputs are available."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Acquire and extract FSNAU district-season production and weekly market/wage datasets, inspect M-TACAB September 2026 price bulletin, and resolve the Ministry farmgate price units before constructing regional budgets.",
+      "batch_12_review": {
+        "review_date": "2026-11-04",
+        "review_status": "evidence_refresh_saved_not_ready",
+        "sources": [
+          "https://cb.apps.fao.org/country.jsp?code=SOM",
+          "https://fews.net/east-africa/somalia/food-security-outlook-update/august-2026",
+          "https://fsnau.org/analytical-approach/methodology/agriculture",
+          "https://mtacab.so/news/",
+          "https://moa.gov.so/wp-content/uploads/2025/04/Report-on-Agriculture-in-Somalia-March-2025-1.pdf"
+        ],
+        "key_findings": "FAO September 2026 Gu crop performance mixed and final output pending; FEWS NET identifies livelihood-zone variation; FSNAU confirms district-season crop/wage/price data infrastructure; M-TACAB issue 04 advertises 672 daily market observations across Afgooye, Baidoa and Bakaaro but values not inspected; 2025 ministry farmgate price anomalies remain unresolved.",
+        "calculator_status": "not_active",
+        "activation_decision": "blocked_pending_numeric_datasets_price_units_input_costs_budgets_and_tests"
+      }
     },
     {
       "code": "SS",
@@ -2344,7 +2360,7 @@
     }
   ],
   "next_country": {
-    "code": "SO",
-    "name": "Somalia"
+    "code": "SS",
+    "name": "South Sudan"
   }
 }
