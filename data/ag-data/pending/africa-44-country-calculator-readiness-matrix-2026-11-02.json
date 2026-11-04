@@ -1752,14 +1752,17 @@
         "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "NAB marketed tonnage and selected zone-level yields do not provide complete crop-by-region harvested-area and final-production tables.",
-        "Six agronomic production zones are distinct from the 14 administrative regions; a verified crosswalk is required.",
-        "A 2026 Grade 1 mahangu farm-gate floor price is verified, but current dated producer prices for the other calculator crops and livestock remain incomplete.",
-        "The 2026 mahangu notice provides a standardized rain-fed cost schedule for one crop only; current regional costs for crop protection, irrigation, other crops and livestock remain missing.",
-        "No representative region- and production-system-specific enterprise budgets exist for the calculator commodities.",
-        "No Namibia calculator mapping or regression test cases have been implemented."
+        "NSA Q2 2026 bulletin is now identified, but the official PDF tables have not been extracted; the 52,515 t combined controlled-agronomy figure is only a provisional secondary transcription and cannot be split into crop yields.",
+        "NAB's 2026 horticulture monthly price reports are available in the official archive, but commodity/market/grade/unit observations still need extraction and transaction-level classification.",
+        "Six NAB agronomic zones are distinct from the 14 administrative regions; a verified crosswalk and complete crop-by-region harvested-area and final-production tables are still missing.",
+        "Current dated producer prices for white maize, wheat, horticulture and livestock remain incomplete; annual floor-price averages and market monitoring are not equivalent to farm-gate transaction receipts.",
+        "The 2026 mahangu notice provides a standardized rain-fed cost schedule for one crop only; farmer-paid regional costs for other crops and livestock remain missing.",
+        "No representative region- and production-system-specific enterprise budgets exist for the calculator commodities, and Namibia calculator mapping/regression tests have not been implemented."
       ],
-      "next_step": "Extract NSA 2026 quarterly and Census of Agriculture outputs, reconcile the 2026 mahangu cost annexure, verify NAB zone-level observations and crosswalk, and collect dated producer prices and farmer-paid costs for the remaining commodities before calculator mapping."
+      "next_step": "Extract NSA Q2 2026 PDF tables; transcribe NAB monthly 2026 horticulture prices and classify market level; verify the 2026 mahangu cost annexure; crosswalk NAB production zones to administrative regions; then collect remaining crop and livestock budgets before mapping/tests.",
+      "reviews": [
+        "batch_33_NSA_Q2_2026_and_NAB_price_archive_review"
+      ]
     },
     {
       "code": "NE",
@@ -2292,7 +2295,7 @@
     }
   ],
   "next_country": {
-    "code": "NA",
-    "name": "Namibia"
+    "code": "NE",
+    "name": "Niger"
   }
 }
