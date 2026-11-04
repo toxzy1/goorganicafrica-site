@@ -970,30 +970,32 @@
       "code": "GN",
       "name": "Guinea",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "external_official_estimates_source_identified_country_level_national_validation_pending",
+      "existing_research_note": "USDA FAS MY 2025/26 national estimates extracted for rice, corn, groundnut, millet and sorghum; ANASA SIM official market-information service confirmed; 2026/27 campaign reports GNF 300,000/50 kg fertilizer and GNF 15,000/L herbicide; Sep 12 2026 Conakry market averages located but not farmgate. Regional crop tables and enterprise budgets pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
+        "crop_area_production_yield_by_commodity_and_season": "partial_USDA_FAS_MY_2025_26_national_rice_and_corn_estimates_extracted;_ANASA_regional_survey_tables_pending",
+        "dated_local_farmgate_prices_and_units": "blocked_ANASA_SIM_portal_confirmed_but_dated_producer_price_bulletins_not_extracted;_Conakry_secondary_market_prices_on_hold",
         "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
+        "fertilizer_and_soil_amendment_costs": "partial_2026_27_reported_controlled_NPK_urea_price_GNF_300000_per_50kg_requires_regional_verification",
+        "crop_protection_costs": "partial_2026_27_reported_herbicide_price_GNF_15000_per_litre_not_crop_application_cost",
         "irrigation_water_and_energy_costs": "not_yet_audited",
         "labour_rates_and_operations": "not_yet_audited",
         "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_regional_crop_or_livestock_enterprise_budgets",
+        "currency_and_exchange_rate_method": "partial_GNF_currency_known_local_rounding_and_format_tests_pending",
+        "source_provenance_and_observation_date": "partial_USDA_FAS_MY_2025_26_ANASA_SIM_2026_27_campaign_and_Sep_2026_secondary_market_observations_recorded",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_Guinea_enterprise_mapping_or_GNF_regression_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract ANASA/Ministry crop-by-region and prefecture annual survey tables and reconcile crop-year, area denominator and output against USDA FAS MY 2025/26 national estimates.",
+        "Extract dated ANASA SIM market bulletins with commodity, grade, market, unit and price level; do not substitute Conakry wholesale/retail averages for farmgate prices.",
+        "Verify reported 2026/27 fertilizer and herbicide administered prices with regional dealer evidence; obtain seed, pesticide and application-rate costs.",
+        "Obtain regional labour, land preparation, machinery, irrigation, water/energy, transport and land costs.",
+        "Construct crop-specific and livestock-specific enterprise budgets for the 17 supported calculator profiles; no national production total can substitute for a budget.",
+        "Confirm implementation and prefecture assignments for the August 2026 Beyla and Siguiri administrative-region changes.",
+        "Add GNF currency, regional selector and gross-margin regression tests after validated data mapping."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "next_step": "Retrieve and extract ANASA SIM dated market bulletins and national agricultural survey regional tables; verify campaign input prices by region, then build at least one complete regional crop enterprise budget before activating any Guinea profile.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea government portal lists the pre-existing administrative regions (including the special zone of Conakry). A decree dated 20 August 2026 created two additional administrative regions, Beyla and Siguiri. The regional lookup therefore records the eight previously listed regional areas plus the two newly created regions. Implementation details and updated prefecture-to-region boundaries should be confirmed against the subsequent regulatory instrument before regional crop data are mapped.",
@@ -1003,6 +1005,27 @@
           "https://agpguinee.com/guinee-voici-les-onze-nouvelles-prefectures-creees-decret/"
         ],
         "regional_lookup": "10 region entries added to src/_data/calculator/regions.json; Beyla and Siguiri are newly created in August 2026. Lookup only, not activated."
+      },
+      "batch_08_review": {
+        "review_date": "2026-11-04",
+        "source_notes": "USDA FAS Guinea MY 2025/26 profile provides national estimates: rice 2.48m MT on 2.5m ha (calculated 0.992 MT/ha from rounded values), corn 760,000 MT on 650,000 ha (displayed yield 1.1692 MT/ha), groundnut 1.0m MT, millet 220,000 MT and sorghum 65,000 MT. ANASA official SIM portal confirms regular price collection across rural aggregation, wholesale and retail markets, but dated bulletins were not extracted. A secondary Conakry market barometer dated 12 Sep 2026 reports local rice GNF 410,000/50kg, maize GNF 325,000/50kg, onion GNF 230,000/25kg and potato GNF 285,000/25kg; these are market averages, not verified farmgate prices. 2026/27 campaign reporting states fertilizer GNF 300,000/50kg and herbicide GNF 15,000/L; verify availability and regional application before use. No regional enterprise budgets or complete 17-profile data.",
+        "sources": [
+          "https://fas-prod.azureedge.us/data/production/gu",
+          "https://anasa.gov.gn/2021/sim-guinee/",
+          "https://lepaysan.info/",
+          "https://emergencegn.net/faire-de-la-campagne-agricole-2026-2027-un-levier-de-croissance-autorites/",
+          "https://agriculture.gov.gn/",
+          "https://www.fao.org/in-action/agrisurvey/access-to-data/guinea/en"
+        ],
+        "blockers": [
+          "Extract ANASA/Ministry crop-by-region and prefecture annual survey tables and reconcile crop-year, area denominator and output against USDA FAS MY 2025/26 national estimates.",
+          "Extract dated ANASA SIM market bulletins with commodity, grade, market, unit and price level; do not substitute Conakry wholesale/retail averages for farmgate prices.",
+          "Verify reported 2026/27 fertilizer and herbicide administered prices with regional dealer evidence; obtain seed, pesticide and application-rate costs.",
+          "Obtain regional labour, land preparation, machinery, irrigation, water/energy, transport and land costs.",
+          "Construct crop-specific and livestock-specific enterprise budgets for the 17 supported calculator profiles; no national production total can substitute for a budget.",
+          "Confirm implementation and prefecture assignments for the August 2026 Beyla and Siguiri administrative-region changes.",
+          "Add GNF currency, regional selector and gross-margin regression tests after validated data mapping."
+        ]
       }
     },
     {
