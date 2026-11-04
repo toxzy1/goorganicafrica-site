@@ -196,7 +196,7 @@
     {
       "country_code": "MR",
       "country_name": "Mauritania",
-      "evidence_status": "official_2025_26_ministry_aggregate_production_and_FAO_2026_seasonal_market_context_added_existing_2025_autumn_rice_series_preserved_full_regional_enterprise_budget_and_farmgate_input_price_evidence_pending",
+      "evidence_status": "official_2024_25_ministry_crop_aggregates_2025_rice_agreement_prices_afdb_system_specific_yield_indicators_and_2026_10_world_bank_market_panel_added_regional_crop_tables_and_complete_enterprise_costs_pending",
       "sources": [
         {
           "title": "Agriculture et politique agricole en Mauritanie",
@@ -431,6 +431,180 @@
             }
           ],
           "status": "useful dated market-price research source; do not treat as verified farm-gate prices"
+        },
+        {
+          "title": "Ministry of Agriculture: 2024-2025 campaign results and 2025-2026 input support measures",
+          "publisher": "Agence Mauritanienne d'Information (AMI), interview with Ministry Director of Planning, Statistics, Cooperation, Monitoring and Evaluation",
+          "url": "https://ami.mr/fr/archives/276742",
+          "publication_date": "2025-08-03",
+          "reference_period": "2024-2025 campaign; preparations for 2025-2026",
+          "observations": [
+            {
+              "crop": "traditional_cereals_aggregate",
+              "production_mt": 135417,
+              "area_ha": 277424,
+              "reference_period": "2024-2025",
+              "status": "Ministry-reported aggregate across traditional rainfed cereals; not a single-crop yield and crop-specific area/output split is absent."
+            },
+            {
+              "crop": "rice",
+              "production_mt": 481854,
+              "area_ha": 97444,
+              "reference_period": "2024-2025",
+              "status": "Ministry-reported rice output and area; calculated quotient about 4.95 t/ha is only a national arithmetic ratio until paddy/milled and crop-season denominator definitions are confirmed."
+            },
+            {
+              "crop": "vegetables_aggregate",
+              "production_mt": 134025,
+              "area_ha": 8935,
+              "reference_period": "2024-2025",
+              "status": "Ministry-reported aggregate; crop mix and harvested-area definition are not supplied."
+            },
+            {
+              "indicator": "seed_distribution",
+              "value": 500,
+              "unit": "tonnes_traditional_seed",
+              "reference_period": "July 2024-June 2025",
+              "status": "Government distribution volume; not farmer purchase price or per-hectare rate."
+            },
+            {
+              "indicator": "vegetable_seed_distribution",
+              "value": 1700,
+              "unit": "kg",
+              "reference_period": "July 2024-June 2025",
+              "status": "Government distribution volume; crop mix and farmer copayment not stated."
+            },
+            {
+              "indicator": "mechanization_support",
+              "value": {
+                "tractors": 88,
+                "ploughs": 1500
+              },
+              "reference_period": "2025-2026 campaign preparation",
+              "status": "Government equipment acquisition; not farmer hire rates or unit operating costs."
+            },
+            {
+              "indicator": "irrigation_infrastructure",
+              "value": {
+                "irrigation_channels_maintained_or_deepened_km": 281,
+                "irrigated_land_developed_ha": 3000
+              },
+              "reference_period": "six-year programme reported August 2025",
+              "status": "Infrastructure outputs; not farm water tariffs, pumping energy or actual harvested area."
+            }
+          ],
+          "notes": "Official government information agency interview with the Ministry's planning/statistics director. The source also confirms three distinct campaigns: summer irrigated rice, autumn rainfed traditional cereals, and winter horticulture. Keep their crop calendars and output totals separate."
+        },
+        {
+          "title": "Signing of an Agreement to reduce the Price of Mauritanian Rice",
+          "publisher": "Agence Mauritanienne d'Information (AMI), reporting Ministry of Agriculture and National Federation of Agriculture agreement",
+          "url": "https://ami.mr/en/archives/25497",
+          "publication_date": "2025-07-17",
+          "reference_period": "2025 rice campaign price agreement",
+          "observations": [
+            {
+              "crop": "raw_rice_paddy",
+              "value": 14000,
+              "unit": "MRU_per_tonne",
+              "calculated_value": 14,
+              "calculated_unit": "MRU_per_kg",
+              "status": "Agreement price set for raw rice; treat as a 2025 campaign negotiated/support price, not a current 2026 observed farmgate transaction or a universal price."
+            },
+            {
+              "crop": "white_rice_milled",
+              "value": 28000,
+              "unit": "MRU_per_tonne",
+              "calculated_value": 28,
+              "calculated_unit": "MRU_per_kg",
+              "status": "Agreement price for white rice; downstream processed product price, not paddy farmgate price."
+            },
+            {
+              "crop": "irrigated_rice",
+              "area_ha": 52000,
+              "yield_mt_per_ha": 6,
+              "reference_period": "campaign discussed July 2025",
+              "status": "Minister-reported irrigated-sector area and production rate; season and geographic coverage require clarification before treating as a national yield."
+            }
+          ],
+          "notes": "Official AMI reports a negotiated agreement between the Ministry and agricultural federation. The reported paddy/raw rice and milled white rice prices must remain separate; no universal or current farmer transaction price is implied."
+        },
+        {
+          "title": "Mauritania Country Strategy Paper 2023-2028 Mid-Term Review",
+          "publisher": "African Development Bank Group",
+          "url": "https://www.afdb.org/sites/default/files/documents/projects-and-operations/mauritania_csp_2023-2028_mid-term_review_publication_en.pdf",
+          "publication_date": "2026",
+          "reference_period": "2023-2024 agricultural season / programme monitoring",
+          "observations": [
+            {
+              "crop": "rice",
+              "production_system": "irrigated",
+              "yield_mt_per_ha": 5.6,
+              "reference_period": "2023-2024 monitoring indicator",
+              "status": "AfDB results framework reports 5.6 t/ha as on track; programme/sector indicator, not a national probability-weighted yield distribution."
+            },
+            {
+              "crop": "sorghum",
+              "production_system": "floodplain",
+              "yield_mt_per_ha": 0.57,
+              "reference_period": "2023-2024 monitoring indicator",
+              "status": "AfDB reports 0.57 t/ha as achieved for floodplain crop yield; programme indicator, not national all-system yield."
+            },
+            {
+              "crop": "maize",
+              "production_system": "floodplain",
+              "yield_mt_per_ha": 0.6,
+              "reference_period": "2023-2024 monitoring indicator",
+              "status": "AfDB reports 0.60 t/ha as achieved for floodplain crop yield; programme indicator, not national all-system yield."
+            },
+            {
+              "indicator": "managed_floodplain_area",
+              "value": 6300,
+              "unit": "ha",
+              "reference_period": "end-2024",
+              "status": "AfDB reports effectively managed floodplain areas; infrastructure/management area, not crop-specific harvested area."
+            }
+          ],
+          "notes": "AfDB monitoring framework distinguishes irrigated rice from floodplain sorghum and maize. These yields are useful system-specific reference points but cannot substitute for crop-cut observations and regional distributions."
+        },
+        {
+          "title": "Mauritania — Monthly food price estimates by product and market, Version 2026-10-05",
+          "publisher": "World Bank Development Economics Data Group / Real Time Food Prices",
+          "url": "https://microdata.worldbank.org/catalog/6170",
+          "publication_date": "2026-10-05",
+          "reference_period": "2007-01 to 2026-10; catalogue metadata version 2026-10-05",
+          "observations": [
+            {
+              "indicator": "market_price_panel",
+              "value": "37 markets",
+              "unit": "markets",
+              "reference_period": "through 2026-10-01",
+              "status": "Current catalogue search result reports 37 markets and version 2026-10-05; an older cached catalogue view shows 34 markets through 2026-04. Use newest version metadata, verify downloaded files before analysis."
+            },
+            {
+              "indicator": "price_methodology",
+              "value": "Direct observations combined with machine-learning estimates; missing entries predicted from related markets/items and exchange rates.",
+              "status": "Market-level estimated food prices, mainly consumer/market prices; not farmgate producer transactions. Open/high/low/close modelled price statistics."
+            },
+            {
+              "indicator": "geographic_coverage",
+              "value": [
+                "Hodh Ech Chargui",
+                "Hodh El Gharbi",
+                "Brakna",
+                "Adrar",
+                "Assaba",
+                "Guidimakha",
+                "Gorgol",
+                "Trarza",
+                "Tagant",
+                "Dakhlet-Nouadhibou",
+                "Nouakchott",
+                "Tiris-Zemmour"
+              ],
+              "status": "Selected subnational Admin-2 markets; not all wilayas or every commodity."
+            }
+          ],
+          "notes": "Use as a market-price reference panel only. The dataset product list includes rice (imported), sorghum, wheat, wheat flour and animal products; it does not establish local rice paddy producer prices."
         }
       ],
       "priority_commodities": [
@@ -455,9 +629,13 @@
         "Build separate irrigated rice, rainfed cereal, horticulture, oasis/date and livestock enterprise budgets with regional low/expected/high distributions.",
         "Extract species-specific livestock herd, purchase, feed, veterinary and output price data from the General Livestock Census and dated market sources.",
         "Verify wilaya-to-moughataa hierarchy and calculator mapping; existing 15-wilaya lookup remains a regional selector only.",
-        "Add calculator schema mapping and regression tests only after all required data are validated."
+        "Add calculator schema mapping and regression tests only after all required data are validated.",
+        "Extract official Ministry crop tables by wilaya and separate the three annual campaigns (summer irrigated rice, autumn rainfed cereals, winter horticulture); do not convert traditional cereal aggregate into individual crop yields.",
+        "Validate the 2025 raw-rice agreement price of MRU 14,000/tonne against producer receipts, contract conditions, quality grades and the 2026 season; keep MRU 28,000/tonne white-rice price out of paddy farmgate calculations.",
+        "Treat AfDB 2023-24 rice 5.6 t/ha irrigated, sorghum 0.57 t/ha floodplain and maize 0.60 t/ha floodplain as programme/system indicators, not national yield distributions.",
+        "Download the latest World Bank RTFP 2026-10-05 release and distinguish observed versus imputed prices, imported retail rice versus local paddy and other consumer market prices."
       ],
-      "extraction_status": "Existing Batch 11 research preserved. New Ministry of Agriculture 2025-26 national headline production and Trarza development-pole figures added with denominator/scope caveats; FAO GIEWS 28 October 2026 seasonal and market context added; World Bank 34-market modelled price panel documented with version discrepancy. Mauritania remains research-only and not calculator-ready."
+      "extraction_status": "2026-11-04 follow-up: AMI Ministry interview adds official 2024-25 output/area aggregates for traditional cereals, rice and vegetables, plus seed distribution and mechanisation/infrastructure outputs. AMI 2025 agreement sets raw rice at MRU 14,000/t and white rice at MRU 28,000/t; classified as campaign agreement price, not a current universal farmgate observation. AfDB mid-term review reports 2023-24 programme/system yield indicators: irrigated rice 5.6 t/ha, floodplain sorghum 0.57 t/ha, floodplain maize 0.60 t/ha. World Bank latest search metadata indicates 37 markets through Oct 2026; modelled/observed market-price panel, not farmgate. Mauritania remains inactive; regional enterprise budgets and complete farmer-paid input costs remain unavailable."
     },
     {
       "country_code": "GW",
