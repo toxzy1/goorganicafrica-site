@@ -1169,7 +1169,7 @@
     {
       "country_code": "SN",
       "country_name": "Senegal",
-      "evidence_status": "official_EAA_2024_2025_catalogue_confirmed_and_SODAGRI_2025_regional_campaign_table_extracted; calculator_budget_extraction_pending",
+      "evidence_status": "official_EAA_2024_2025_anonymised_microdata_catalogue_release_verified; national_2024_25_campaign_aggregate_crosscheck_added; SODAGRI_2025_five_region_table_retained; crop_weighted_estimates_and_calculator_budget_extraction_pending",
       "survey": {
         "title": "Enquête Agricole Annuelle (EAA) 2023-2024",
         "publisher": "Direction de l'Analyse, de la Prévision et des Statistiques Agricoles (DAPSA), Ministère de l'Agriculture, de la Souveraineté Alimentaire et de l'Élevage",
@@ -1401,6 +1401,94 @@
           "Obtain published, dated farmgate prices by crop and region; the 2026/27 peanut price was not yet set in the cited council decision.",
           "Extract farmer-paid seed, fertilizer, crop-protection, labour and other cost distributions from authorised aggregate EAA outputs.",
           "Obtain machinery, irrigation, energy, land, transport and livestock enterprise costs; build regional budgets and calculator tests."
+        ]
+      },
+      "batch_06_review": {
+        "review_date": "2026-11-04",
+        "review_status": "EAA_2024_2025_official_catalogue_and_microdata_release_metadata_verified; national_campaign_aggregate_crosscheck_added; crop_cost_and_price_microdata_not_extracted",
+        "sources": [
+          "https://anads.ansd.sn/index.php/catalog/351",
+          "https://www.fao.org/in-action/agrisurvey/news/news-detail/senegal-advances-agricultural-statistics-with-release-of-eaa-2024-25-data/en",
+          "https://www.dapsa.gouv.sn/content/statistiques-et-publications",
+          "https://sodagri.sn/statistiques",
+          "https://www.vie-publique.sn/documents/10591/bulletin-mensuel-des-statistiques-economiques-et-financieres-janvier-2026-ansd"
+        ],
+        "eaa_2024_2025": {
+          "catalogue_id": "SEN-DAPSA-EAA2024-2025-v1",
+          "producer": "DAPSA, Ministry of Agriculture, Food Sovereignty and Livestock; ANSD participated; FAO technical assistance through 50x2030",
+          "survey_period": "July 2024 to June 2025",
+          "anonymised_microdata_version_date": "2026-06-09",
+          "coverage": "All 14 regions and 45 departments in the survey; anonymised microdata retains region but replaces department with agroecological zone",
+          "modules": [
+            "crop production and plot/parcel area",
+            "inputs and production costs",
+            "agricultural labour and income",
+            "horticulture",
+            "livestock",
+            "fisheries and aquaculture",
+            "agroforestry"
+          ],
+          "ilp_module": "2024/25 includes Income, Labour and Productivity module and variables relevant to SDG 2.3.1 and 2.3.2",
+          "data_access": "Catalogue metadata and documentation are publicly visible. Microdata use is subject to DAPSA conditions; no restricted microdata downloaded or redistributed in this review.",
+          "key_caveats": [
+            "Catalogue metadata confirms survey scope and variables, not national estimates.",
+            "The anonymised file does not preserve department identifiers; regional and agroecological-zone outputs must not be mislabelled as department-level.",
+            "The variable dictionary indicates relevant fields for production, plot area, inputs, sales and labour, but weighted estimates and unit conversions still need to be computed from authorised data or public aggregate tables."
+          ]
+        },
+        "national_campaign_crosscheck": {
+          "source": "ANSD January 2026 Monthly Economic and Financial Statistics Bulletin, as catalogued by Vie-Publique",
+          "reference_period": "2024/2025 agricultural campaign; January 2026 publication",
+          "observations": [
+            {
+              "indicator": "Total cereal production",
+              "value": 2310018,
+              "unit": "tonnes",
+              "status": "reported_campaign_aggregate",
+              "year": "2024/2025"
+            },
+            {
+              "indicator": "Groundnut for oil production",
+              "value": 795585,
+              "unit": "tonnes",
+              "status": "reported_campaign_aggregate",
+              "year": "2024/2025",
+              "caveat": "Do not conflate with all groundnut categories unless report definition confirms."
+            },
+            {
+              "indicator": "Total cereal production change",
+              "value": -24.4,
+              "unit": "percent",
+              "status": "reported_year_on_year_change",
+              "comparison": "2023/2024"
+            }
+          ],
+          "caveats": [
+            "This bulletin summary is an aggregate campaign cross-check, not a regional crop-area/yield table.",
+            "The 2024/25 cereal aggregate is not directly interchangeable with the EAA microdata estimates until definitions, crop scope, weights and revisions are reconciled.",
+            "Do not derive crop yields without matching harvested-area observations for the same crop, campaign and production system."
+          ]
+        },
+        "price_and_cost_status": {
+          "current_groundnut_price_2026_27": "The 22 October 2026 interministerial decision did not set the 2026/27 groundnut producer price; it said a committee would recommend the annual price and producer safeguard threshold.",
+          "historical_price_context": "The 2024/25 groundnut minimum farmgate price of 305 XOF/kg is a historical policy floor and must not be reused as a current 2026/27 price.",
+          "rice_support": "The announced 50 XOF/kg rice support is payable to rice mills, not a paddy producer farmgate price.",
+          "input_costs": "EAA catalogue confirms input quantity, unit and amount-paid/unit-price variables, but no weighted, validated crop-specific input-cost distributions were extracted.",
+          "labour_costs": "EAA catalogue confirms hired-worker counts, days, hours and payment fields; no weighted operation-specific labour rates extracted."
+        },
+        "interpretation_and_limits": [
+          "The EAA 2024/25 is a major new source and its anonymised dataset version is dated 9 June 2026; however, the dataset was not downloaded or statistically processed here.",
+          "Do not describe metadata or a variable dictionary as extracted crop production or enterprise-budget results.",
+          "SODAGRI 2025 data remain restricted to its five intervention regions and cannot stand in for the whole country.",
+          "ANSD's 2,310,018-tonne cereal total and SODAGRI regional campaign values are different scopes and sources; preserve them separately."
+        ],
+        "blockers": [
+          "Obtain the authorised EAA 2024/25 anonymised data through ANADS/DAPSA access conditions or use official public aggregate tables.",
+          "Compute survey-weighted crop production, harvested area, yield and crop-sales prices; preserve region and agroecological-zone geography and local-unit conversions.",
+          "Extract weighted input and labour cost distributions from the authorised EAA ILP and input modules.",
+          "Reconcile the ANSD 2024/25 national cereal and groundnut campaign aggregates with EAA and SODAGRI scope and definitions.",
+          "Obtain 2026/27 crop-specific farmgate prices; the groundnut price was still pending in the 22 October 2026 decision.",
+          "Obtain machinery, irrigation, energy, transport and livestock enterprise costs, then build regional enterprise budgets and regression tests."
         ]
       }
     },
