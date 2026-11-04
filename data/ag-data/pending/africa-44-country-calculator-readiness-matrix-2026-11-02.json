@@ -1054,7 +1054,7 @@
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2025_household_listing_is_sampling_frame_only_FAO_GIEWS_351kt_aggregate_cereals_no_crop_specific_regional_yields;_2026_27_integrated_survey_results_pending",
-        "dated_local_farmgate_prices_and_units": "partial_World_Bank_RTFP_45_market_monthly_estimates_to_2026_10_01_are_direct_plus_ML_imputed_market_prices_not_farmgate;_local_producer_price_series_missing",
+        "dated_local_farmgate_prices_and_units": "partial_2026_official_cashew_producer_reference_XOF_410_per_kg_and_separate_Bissau_intermediary_price_XOF_478_per_kg_verified;_cashew_not_in_17_supported_profiles;_farmgate_prices_for_supported_profiles_still_missing;_RTFP_is_market_estimate_not_farmgate",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
@@ -1063,7 +1063,7 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "partial_FAO_2025_listing_metadata_FAO_GIEWS_2026_02_06_and_World_Bank_RTFP_version_2026_10_05_catalogue_verified;_numeric_CSV_rows_not_yet_extracted",
+        "source_provenance_and_observation_date": "partial_FAO_2025_listing_FAO_GIEWS_2025_cereal_estimate_World_Bank_RTFP_to_2026_10_01_IMF_2026_cashew_price_crosscheck_and_2026_cashew_campaign_reporting",
         "calculator_mapping_and_test_cases": "not_yet_audited"
       },
       "blockers": [
@@ -1074,9 +1074,12 @@
         "Obtain regional seed, fertilizer, crop-protection, labour, land preparation, machinery, irrigation, energy, transport and storage costs.",
         "Build complete crop and livestock enterprise budgets for all profiles intended for activation; cashew/groundnut do not substitute for current calculator commodities.",
         "Confirm eight-region and sector crosswalk; keep Autonomous Sector of Bissau separate from the eight regions.",
-        "Add XOF currency, region, commodity mapping and gross-margin regression tests after validated enterprise budgets exist."
+        "Add XOF currency, region, commodity mapping and gross-margin regression tests after validated enterprise budgets exist.",
+        "The official XOF 410/kg 2026 cashew producer reference and XOF 478/kg Bissau intermediary price do not validate any of the existing 17 calculator profiles because cashew is not currently supported; do not relabel cashew as beans.",
+        "Reconcile the later reported XOF 425/kg cashew buying price with the official XOF 410/kg reference by observation date, market, quality and transaction stage.",
+        "Incorporate rice post-harvest losses (reported up to 30%) and logistics share (about 42% of retail price) only after obtaining local, region-specific cost and loss parameters; do not apply national value-chain averages as farm budgets."
       ],
-      "next_step": "Audit the World Bank RTFP CSV and obtain the 2026/27 integrated agricultural survey's published crop tables, then build region-specific farmgate revenue and cost budgets before activation.",
+      "next_step": "Audit World Bank RTFP raw CSV and obtain 2026/27 integrated survey crop tables; collect regional producer prices for supported commodities and full regional input/labour/machinery/irrigation/transport budgets. Keep the 2026 cashew price as a separate non-profile reference. No activation until budgets and tests pass.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea-Bissau government profile and UK Government toponymic factfile confirm eight first-order regions and a separate Autonomous Sector of Bissau. The lookup includes only the eight regions; the autonomous sector is deliberately not mixed into the region array.",
@@ -1106,6 +1109,22 @@
           "Build complete crop and livestock enterprise budgets for all profiles intended for activation; cashew/groundnut do not substitute for current calculator commodities.",
           "Confirm eight-region and sector crosswalk; keep Autonomous Sector of Bissau separate from the eight regions.",
           "Add XOF currency, region, commodity mapping and gross-margin regression tests after validated enterprise budgets exist."
+        ]
+      },
+      "batch_09_review": {
+        "review_date": "2026-11-04",
+        "source_notes": "Added the 2026 cashew campaign price evidence: Lusa reporting of the Council of Ministers decision sets raw cashew producer reference at XOF 410/kg and Bissau intermediary purchase at XOF 478/kg; IMF 2026 staff report independently reports the government-set producer price at XOF 410/kg. A later DW interview reports a national buying price of XOF 425/kg, retained as a distinct reported market observation, not averaged with the reference. Cashew is not one of the 17 current calculator profiles, so none of these prices are mapped into calculator commodity data. World Bank Data Blog (1 Sep 2026) reports cashew yields below 0.4 t/ha, cashew post-harvest losses up to 25%, logistics about 34% of export price; for rice, post-harvest losses up to 30%, farmers receiving around one-third of retail price and logistics about 42% of retail price. These are value-chain context, not local enterprise budgets.",
+        "sources": [
+          "https://www.plataformamedia.com/en/2026/03/11/guinea-bissau-transitional-government-cashew-price-2026-campaign/",
+          "https://www.elibrary.imf.org/view/journals/002/2026/140/article-A001-en.xml",
+          "https://amp.dw.com/pt-002/guin%C3%A9-bissau-produ%C3%A7%C3%A3o-da-castanha-de-caju-%C3%A9-muito-fraca/a-77247380",
+          "https://blogs.worldbank.org/en/opendata/from-farm-to-market--the-data-behind-guinea-bissau-s-us-30-milli"
+        ],
+        "blockers": [
+          "Obtain the 2026/27 integrated agricultural survey's published crop area, output and yield tables by region and production system.",
+          "Extract direct versus imputed World Bank RTFP values, then find primary producer prices for rice, maize, beans/cowpea and cassava.",
+          "Collect regional costs for seed, fertilizer, crop protection, labour, land preparation, machinery, irrigation, energy, storage and transport.",
+          "Build and test regional enterprise budgets; keep cashew out of the current 17-profile calculator mapping."
         ]
       }
     },
