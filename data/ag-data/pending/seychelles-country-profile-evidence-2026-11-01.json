@@ -6,7 +6,7 @@
     "currency": "SCR",
     "currency_name": "Seychellois rupee"
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "calculator_readiness": "not_ready_research_only",
   "purpose": "Country evidence inventory for later crop-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
@@ -326,14 +326,69 @@
         "Marine capture fisheries, aquaculture and crop/livestock enterprises require separate production models and should not be combined into a crop-profit calculator profile without distinct data structures.",
         "No species-level production costs, farmgate prices, stocking rates or harvest-cycle evidence has been established in this review."
       ]
+    },
+    {
+      "id": "november_2026_statistical_and_livestock_policy_refresh",
+      "topic": "latest official statistical releases, livestock production trend, current support measures and data availability",
+      "source_name": "Ministry of Fisheries, Agriculture and Blue Economy; National Bureau of Statistics; Central Bank of Seychelles; Seychelles News Agency",
+      "source_url": "https://mofbe.gov.sc/seychelles-strengthens-capacity-in-food-balance-sheet-compilation-with-fao-support/",
+      "companion_source_urls": [
+        "https://www.nbs.gov.sc/statistics/production",
+        "https://www.nbs.gov.sc/downloads/51-data-series",
+        "https://www.nbs.gov.sc/about/publication-programme",
+        "https://www.cbs.sc/Downloads/publications/Annual%20Report%202025.pdf",
+        "https://www.seychellesnewsagency.com/public/articles/22249/news-alert"
+      ],
+      "reference_date": "Official ministry update 4 November 2026; NBS publication programme and time-series archive checked 4 November 2026; CBS 2025 annual report; livestock support announcement 5 August 2026",
+      "observations": [
+        {
+          "item": "Food Balance Sheet compilation",
+          "period": "2023–2025 national food balance sheets",
+          "status": "official_capacity_building_in_progress",
+          "finding": "FAO-supported two-week compilation workshop began 19 October 2026 and the Ministry reported on 4 November 2026 that national experts are strengthening compilation and validation of Seychelles Food Balance Sheets for 2023, 2024 and 2025, subject to data availability. This is a statistical-capacity milestone, not a released commodity production dataset or farm budget."
+        },
+        {
+          "item": "NBS production statistics archive",
+          "period": "2025 Q4, 2026 Q1 and 2026 Q2 releases",
+          "status": "official_data_series_available_for_extraction",
+          "finding": "NBS Production Statistics page links latest indicators; the NBS Data Series downloads page lists a Production Statistics time-series Excel file created 31 August 2026. The 2026 publication programme marks Q4 2025, Q1 2026 and Q2 2026 production-statistics releases as released. The relevant workbook still requires extraction and identification of agricultural variables, units and coverage."
+        },
+        {
+          "item": "Agriculture sector output",
+          "period": "January–September 2025 versus January–September 2024",
+          "status": "official_aggregate_trend_not_enterprise_data",
+          "finding": "Central Bank of Seychelles Annual Report 2025 estimates agricultural-sector output declined 10% in 2025. Over January–September, egg production declined 18%, while slaughtered cattle rose 41%, broiler chickens rose 10%, culled pigs fell 0.3%, and animal-feed volume fell 3.8%. These are year-on-year sector indicators, not farm yields, prices or per-unit costs."
+        },
+        {
+          "item": "Livestock recovery subsidy",
+          "period": "announced 5 August 2026; review every six months",
+          "status": "official_policy_support_not_market_cost",
+          "finding": "Government announced an initial SCR20 million livestock support package, including reimbursement of up to 30% of eligible animal-feed costs for registered livestock farmers. Poultry slaughter support is SCR5 toward a SCR7 fee per bird; pig slaughter support is SCR400 toward a SCR500 fee. The ministry reported 158 registered livestock farmers and only 7 active broiler farms among 27 registered broiler farmers. Feed represents about 60–67% of livestock production costs. These are policy terms and sector context, not observed feed prices or a full enterprise budget."
+        },
+        {
+          "item": "Domestic supply shares",
+          "status": "officials_quoted_in_government_news_agency",
+          "finding": "The August 2026 report quotes the minister that local production supplies about 10% of poultry and 12% of pork consumed domestically. Treat these as reported supply shares, not yield or profitability indicators."
+        }
+      ],
+      "caveats": [
+        "The November 2026 Food Balance Sheet work is still a compilation/validation exercise; do not treat it as a released national table.",
+        "NBS Production Statistics workbook is identified but crop/livestock series have not yet been extracted from the workbook; do not invent values.",
+        "Annual sector output changes and slaughter/egg changes are not farm-level production quantities or per-hectare yields.",
+        "Feed subsidy eligibility and slaughter-fee support reduce eligible farmer expenses but do not establish the unsubsidised feed price, farmer's actual net cost, or complete cost per bird/pig.",
+        "Current farmgate prices, crop input quotations, labour rates and island-level enterprise budgets remain unavailable in the reviewed sources."
+      ]
     }
   ],
   "calculator_data_gaps": [
-    "Obtain and extract the detailed 2024 Agriculture Census tables: farm counts, land area, crop areas, crop output, livestock inventories and island/district breakdowns.",
-    "Verify the current cultivated-land estimate and reconcile the agriculture GDP share reported as 1.6% in the 2025 VNR versus about 2.5% on the trade portal.",
+    "Extract the detailed 2024 Agriculture Census tables: farm counts, land area, crop areas, crop output, livestock inventories and island/district breakdowns.",
+    "Download and extract the NBS Production Statistics time-series workbook (latest listed 31 August 2026) and identify agriculture-related series, definitions, units, reference periods and revisions.",
+    "Obtain the detailed 2023–2025 national Food Balance Sheet tables after the FAO-supported compilation and validation work is published; distinguish production, imports, exports, stocks, losses and food use.",
+    "Verify the current cultivated-land estimate and reconcile the agriculture GDP-share estimates reported as 1.6% in the 2025 VNR versus about 2.5% on the trade portal.",
     "Download and validate original FAOSTAT crop production, harvested-area, yield and producer-price series for Seychelles, including item codes, years, units and observation flags.",
     "Collect current farmgate/first-sale prices by crop, grade, island, unit and season; distinguish producer prices from retail, wholesale and import prices.",
-    "Obtain current feed prices, feed formulations, veterinary costs, chicks/piglet costs, mortality, labour, energy and housing costs for poultry and pig enterprise budgets.",
+    "Obtain actual feed supplier quotations and confirm the 2026 subsidy eligibility, claim process, payment timing and farmer net-of-subsidy feed cost.",
+    "Obtain current feed formulations, veterinary costs, chicks/piglet costs, mortality, carcass yield, labour, energy and housing costs for poultry and pig enterprise budgets.",
     "Obtain seed/planting material, fertiliser, crop-protection, irrigation, labour, transport and packaging quotations for sweet potato, cassava, banana, breadfruit, cinnamon, tea and vegetables.",
     "Confirm egg tray pack size, sales channel and current 2026 producer versus retail prices before converting any press-reported values to calculator inputs.",
     "Develop island-specific budgets reflecting land scarcity, imported input exposure, freight and water/irrigation costs.",
@@ -345,8 +400,11 @@
     "calculator_readiness": "not_ready_research_only",
     "activation_blockers": [
       "Detailed 2024 agricultural census crop tables and island-level production data not yet extracted",
+      "NBS Production Statistics workbook located but agricultural series not yet extracted and validated",
+      "2023–2025 Food Balance Sheets are under compilation/validation and are not yet established as published observations",
       "No validated current crop-specific farmgate price series",
-      "Only limited dated producer price leads for eggs; current price and transaction details require confirmation",
+      "Only limited dated producer-price leads for eggs; current price and transaction details require confirmation",
+      "Livestock feed and slaughter subsidies announced in August 2026, but actual supplier prices and farmer net costs remain unverified",
       "No complete crop or livestock enterprise budgets and current input quotations",
       "Conflicting official/portal agriculture GDP-share estimates need reconciliation"
     ]
