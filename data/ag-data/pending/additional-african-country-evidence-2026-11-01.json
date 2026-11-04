@@ -462,7 +462,7 @@
     {
       "country_code": "GW",
       "country_name": "Guinea-Bissau",
-      "evidence_status": "2025_FAO_50x2030_agricultural_household_listing_completed_survey_programme_underway_historical_rice_series_quality_concerns",
+      "evidence_status": "2026_11_04_FAO_2025_household_listing_metadata_verified_FAO_2025_cereal_estimate_351kt_and_World_Bank_RTFP_45_market_series_through_2026_10_identified_but_RTFP_is_modelled_market_price_not_farmgate_crop_specific_regional_production_and_costed_budgets_pending",
       "sources": [
         {
           "title": "FAO GIEWS Country Brief: Guinea-Bissau",
@@ -549,15 +549,134 @@
         "layers"
       ],
       "remaining_gaps": [
-        "obtain the 2025 Listing of Agricultural Households final report and confirm whether the planned 2026/27 integrated agricultural survey has produced crop-cutting, production, area, labour and farm-income outputs",
-        "identify the national agricultural census or annual crop survey and obtain region-level crop area, production and yield tables",
-        "confirm paddy versus milled rice definitions and local rice production systems",
-        "obtain farm-gate rice, maize and cowpea prices with market, date, grade and unit",
-        "obtain seed, fertilizer, crop protection, labour, mechanization and transport cost schedules",
-        "obtain livestock and poultry farm-budget data",
-        "confirm administrative region and sector coverage for the calculator"
+        "Obtain published aggregate outputs from the 2026/27 integrated agricultural survey when released; the 2025 household listing is only a sampling-frame exercise.",
+        "Extract crop-specific area, production, yield and losses by region/sector and season; reconcile the FAOSTAT series and the IMF rice-statistics warning.",
+        "Download the World Bank RTFP CSV and inspect commodity-market-month records, distinguishing observed from imputed values, currency, unit, market, and price date; use for market context only unless a defensible farmgate adjustment is independently supported.",
+        "Obtain local producer/paddy prices and farmgate prices for maize, beans/cowpea and other supported crops; do not use imported-rice retail prices as producer prices.",
+        "Obtain seed, fertilizer, crop-protection, labour, land preparation, machinery, irrigation, energy, transport and storage costs by region and production system.",
+        "Build complete crop and livestock enterprise budgets for the 17 calculator profiles; cashew and groundnut do not substitute for existing bean/soybean profiles.",
+        "Confirm the regional and sector mapping; retain the Autonomous Sector of Bissau separately from the eight regions.",
+        "Add XOF currency, region, crop mapping and gross-margin regression tests only after local enterprise budgets are validated."
       ],
-      "extraction_status": "FAO/50x2030 records a completed 2025 rural agricultural-household listing that creates a new nationally and regionally representative sampling frame; it is not a crop-production survey. FAO GIEWS estimates 2025 aggregate cereal production at about 351,000 tonnes, but no crop-specific yields are admitted. IMF staff explicitly warn that official rice statistics are difficult to reconcile with imports and cashew-area expansion and may have severe quality problems. Treat the rice series as unverified until reconciled against new survey results and independent evidence."
+      "extraction_status": "2025 agricultural household listing metadata confirms a regionally representative rural sampling frame across eight regions but is not a crop-production survey; FAO GIEWS estimates 2025 aggregate cereals at about 351,000 tonnes; World Bank RTFP provides monthly estimates for 45 markets through 2026-10-01, combining direct observations and machine-learning imputations. No RTFP price has been admitted as farmgate data. IMF rice-series quality warning remains in force.",
+      "survey_updates_2026_11_04": {
+        "agricultural_household_listing": {
+          "title": "Listing of agricultural households 2025",
+          "producer": "Direção Geral da Planificação Agrária (DGPA), Ministry of Agriculture and Rural Development, Guinea-Bissau",
+          "technical_support": "FAO / 50x2030",
+          "fieldwork": "2025-08 to 2025-11",
+          "geographic_coverage": "Rural areas; nationally and regionally representative; region and sector (second administrative level)",
+          "sampling": "Stratified by region; all sampled census districts covered",
+          "region_sampled_census_districts": {
+            "Tombali": 34,
+            "Quinara": 29,
+            "Oio": 38,
+            "Biombo": 48,
+            "Bolama": 33,
+            "Bafatá": 41,
+            "Gabú": 32,
+            "Cacheu": 64
+          },
+          "source_url": "https://microdata.fao.org/index.php/catalog/3131",
+          "metadata_created": "2026-08-31",
+          "metadata_last_modified": "2026-09-14",
+          "status": "household_listing_and_sampling_frame_not_crop_production_or_yield_survey",
+          "quality_notes": [
+            "The operation updates the agricultural-household sampling frame; it does not itself provide validated crop-cutting yields or regional crop production totals.",
+            "Microdata access is restricted to approved research/statistical purposes and cannot be redistributed; use only published aggregated results in this commercial calculator.",
+            "The listing covers rural areas and is regionally representative, not necessarily all urban agricultural activity."
+          ]
+        },
+        "annual_survey_programme": {
+          "title": "FAO AGRISurvey / 50x2030 Guinea-Bissau programme",
+          "source_url": "https://www.fao.org/in-action/agrisurvey/access-to-data/guinea-bissau/en",
+          "status": "ongoing",
+          "planned_cycles": [
+            "2026/2027",
+            "2027/2028",
+            "2028"
+          ],
+          "rotating_modules": [
+            "income, labour and productivity",
+            "machinery, equipment and assets",
+            "production methods and environment"
+          ],
+          "interpretation": "A planned annual agricultural survey programme; do not treat planned cycles as already published crop data."
+        },
+        "food_production_and_prices": {
+          "title": "FAO GIEWS Country Brief, Guinea-Bissau",
+          "reference_date": "2026-02-06",
+          "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GNB",
+          "observations": [
+            {
+              "indicator": "aggregate cereal production",
+              "period": "2025",
+              "value": 351000,
+              "unit": "metric tonnes",
+              "status": "FAO estimate_about_18_percent_above_previous_five_year_average_not_crop_specific"
+            },
+            {
+              "indicator": "rice retail price",
+              "period": "2025-11",
+              "value": null,
+              "unit": "not extracted",
+              "status": "FAO reports imported rice retail prices 10 percent below year-earlier level; absolute prices and market series still need extraction"
+            }
+          ],
+          "regional_context": "Oio, Cacheu and Biombo identified by FAO as the main domestic cereal-producing regions; improved rainfall from July through October 2025 supported yields after a poor/erratic June onset.",
+          "quality_notes": [
+            "Aggregate cereal production cannot be split into rice/maize/millet/sorghum without crop-specific source tables.",
+            "Retail prices of imported rice do not represent local paddy farmgate prices."
+          ]
+        },
+        "world_bank_realtime_food_prices": {
+          "title": "Monthly food price estimates by product and market",
+          "publisher": "World Bank Development Economics Data Group (Real Time Food Prices)",
+          "reference_id": "GNB_2021_RTFP_v02_M",
+          "dataset_version": "2026-10-05",
+          "reference_period": "2007-01-01 to 2026-10-01",
+          "market_count": 45,
+          "geographic_coverage": [
+            "Bafata",
+            "Tombali",
+            "Cacheu",
+            "Sector Autonomo De Bissau",
+            "Biombo",
+            "Oio",
+            "Gabu",
+            "Bolama",
+            "Quinara",
+            "Market Average"
+          ],
+          "products_include": [
+            "rice",
+            "maize",
+            "beans",
+            "cassava",
+            "groundnuts",
+            "beef",
+            "local chicken",
+            "millet",
+            "sorghum",
+            "tomatoes",
+            "onions"
+          ],
+          "source_url": "https://microdata.worldbank.org/catalog/4493",
+          "source_data_sources": [
+            "World Food Programme",
+            "Food and Agriculture Organization"
+          ],
+          "methodology": "Weekly-updated monthly market-price estimates combining direct price measurements with machine-learning estimates for missing observations; missing values may be imputed using other markets, related products and exchange rates.",
+          "status": "subnational_market_price_estimates_not_verified_farmgate_prices_or_direct_observations_for_every_market_month",
+          "quality_notes": [
+            "The dataset is valuable for regional market-price coverage but includes modelled/imputed observations; preserve estimate/observation status and uncertainty.",
+            "It is not a producer-price dataset and must not be passed into the farmgate revenue calculation without a separately documented farmgate/marketing-margin adjustment.",
+            "The dataset's market coverage is selected Admin-2 locations, not a complete census of every market or every administrative sector.",
+            "Download and inspect the actual CSV before transcribing numeric prices; the catalogue metadata alone does not supply individual price values."
+          ]
+        }
+      },
+      "next_step": "Download and audit the World Bank RTFP Guinea-Bissau CSV for its observed/imputed flags and monthly market values, then obtain the complete published aggregates from the 2026/27 integrated agricultural survey and regional producer/input-cost data. Keep Guinea-Bissau inactive until region-specific enterprise budgets and tests are complete."
     },
     {
       "country_code": "TD",
