@@ -535,6 +535,65 @@
           "publication_date": "2025-06",
           "status": "cashew_sector_market_context",
           "note": "World Bank reports cashew exports declined from 191,400 tonnes in 2023 to 167,500 tonnes in 2024, reflecting lower production, weaker demand and port/logistics constraints. Export volume is not equivalent to national farm production or a farm-gate price."
+        },
+        {
+          "title": "2026 cashew marketing campaign producer reference price",
+          "publisher": "Guinea-Bissau Council of Ministers; reported by Lusa via Platforma Media",
+          "url": "https://www.plataformamedia.com/en/2026/03/11/guinea-bissau-transitional-government-cashew-price-2026-campaign/",
+          "reference_date": "2026-03-10",
+          "observations": [
+            {
+              "indicator": "raw cashew nut producer reference price",
+              "value": 410,
+              "unit": "XOF/kg",
+              "period": "2026 campaign",
+              "status": "officially_set_producer_level_reference_price;_cashew_not_one_of_the_17_existing_calculator_profiles"
+            },
+            {
+              "indicator": "Bissau intermediary purchase price",
+              "value": 478,
+              "unit": "XOF/kg",
+              "period": "2026 campaign",
+              "status": "buyer/intermediary price in Bissau; not farmgate"
+            }
+          ]
+        },
+        {
+          "title": "IMF Guinea-Bissau 2026 review: producer price and cashew trade",
+          "publisher": "International Monetary Fund",
+          "url": "https://www.elibrary.imf.org/view/journals/002/2026/140/article-A001-en.xml",
+          "reference_date": "2026",
+          "observations": [
+            {
+              "indicator": "cashew producer price",
+              "value": 410,
+              "unit": "XOF/kg",
+              "period": "2026 campaign",
+              "status": "IMF reports government-set producer price; cross-check of official reference price"
+            },
+            {
+              "indicator": "cashew export contract price",
+              "value": 1236,
+              "unit": "USD/tonne",
+              "period": "2025 average",
+              "status": "export price not farmgate"
+            }
+          ]
+        },
+        {
+          "title": "DW reporting on Guinea-Bissau 2026 cashew campaign",
+          "publisher": "Deutsche Welle",
+          "url": "https://amp.dw.com/pt-002/guin%C3%A9-bissau-produ%C3%A7%C3%A3o-da-castanha-de-caju-%C3%A9-muito-fraca/a-77247380",
+          "reference_date": "2026 campaign",
+          "observations": [
+            {
+              "indicator": "reported national cashew purchase price",
+              "value": 425,
+              "unit": "XOF/kg",
+              "period": "2026 campaign report",
+              "status": "reported current buying price from Director-General of Internal Trade; differs from official 410 XOF/kg reference and requires date/market and quality context before modelling"
+            }
+          ]
         }
       ],
       "priority_commodities": [
@@ -556,9 +615,12 @@
         "Obtain seed, fertilizer, crop-protection, labour, land preparation, machinery, irrigation, energy, transport and storage costs by region and production system.",
         "Build complete crop and livestock enterprise budgets for the 17 calculator profiles; cashew and groundnut do not substitute for existing bean/soybean profiles.",
         "Confirm the regional and sector mapping; retain the Autonomous Sector of Bissau separately from the eight regions.",
-        "Add XOF currency, region, crop mapping and gross-margin regression tests only after local enterprise budgets are validated."
+        "Add XOF currency, region, crop mapping and gross-margin regression tests only after local enterprise budgets are validated.",
+        "Cashew is economically important and now has a verified 2026 official producer reference price of XOF 410/kg, but cashew is not one of the calculator's existing 17 commodity profiles; do not map it to beans or another crop.",
+        "The reported XOF 425/kg current buying price in a DW interview is distinct from the official XOF 410/kg reference price; retain both with their source and price-level labels and do not average them.",
+        "World Bank analysis indicates rice and cashew margins are materially affected by logistics, storage and post-harvest losses; obtain region-specific costs and avoid treating gross market price as farm net revenue."
       ],
-      "extraction_status": "2025 agricultural household listing metadata confirms a regionally representative rural sampling frame across eight regions but is not a crop-production survey; FAO GIEWS estimates 2025 aggregate cereals at about 351,000 tonnes; World Bank RTFP provides monthly estimates for 45 markets through 2026-10-01, combining direct observations and machine-learning imputations. No RTFP price has been admitted as farmgate data. IMF rice-series quality warning remains in force.",
+      "extraction_status": "2025 agricultural household listing metadata confirms a regionally representative rural sampling frame across eight regions but is not a crop-production survey; FAO GIEWS estimates 2025 aggregate cereals at about 351,000 tonnes; World Bank RTFP provides monthly estimates for 45 markets through 2026-10-01, combining direct observations and machine-learning imputations. No RTFP price has been admitted as farmgate data. IMF rice-series quality warning remains in force. 2026-11-04 update: 2026 cashew campaign official producer reference price XOF 410/kg and Bissau intermediary price XOF 478/kg verified from Lusa reporting; IMF corroborates the official producer price. DW later reports XOF 425/kg as current national buying price, retained separately as a reported market observation. Cashew is not among the 17 supported calculator commodities. World Bank analysis quantifies severe post-harvest/logistics constraints for rice and cashew; these are explicit budget gaps, not assumed costs.",
       "survey_updates_2026_11_04": {
         "agricultural_household_listing": {
           "title": "Listing of agricultural households 2025",
@@ -676,7 +738,45 @@
           ]
         }
       },
-      "next_step": "Download and audit the World Bank RTFP Guinea-Bissau CSV for its observed/imputed flags and monthly market values, then obtain the complete published aggregates from the 2026/27 integrated agricultural survey and regional producer/input-cost data. Keep Guinea-Bissau inactive until region-specific enterprise budgets and tests are complete."
+      "next_step": "Audit the World Bank RTFP CSV with observed/imputed flags; obtain 2026/27 integrated survey crop tables and regional producer prices for the existing 17 commodity matches, plus input/labour/logistics costs. Keep cashew price evidence separate because cashew is not a supported calculator profile. Build regional budgets before activation.",
+      "campaign_2026_review": {
+        "review_date": "2026-11-04",
+        "official_cashew_price": {
+          "producer_reference_price": 410,
+          "unit": "XOF/kg",
+          "date_set": "2026-03-10",
+          "campaign": "2026",
+          "buyer_price_bissau": 478,
+          "buyer_price_unit": "XOF/kg",
+          "source": "Lusa report reproduced by Platforma Media",
+          "source_url": "https://www.plataformamedia.com/en/2026/03/11/guinea-bissau-transitional-government-cashew-price-2026-campaign/",
+          "quality_note": "The XOF 410/kg is the official producer reference; XOF 478/kg is the intermediary purchase price in Bissau. Cashew is not in the current 17 calculator profiles."
+        },
+        "later_reported_market_price": {
+          "price": 425,
+          "unit": "XOF/kg",
+          "source": "DW interview with Director-General of Internal Trade",
+          "source_url": "https://amp.dw.com/pt-002/guin%C3%A9-bissau-produ%C3%A7%C3%A3o-da-castanha-de-caju-%C3%A9-muito-fraca/a-77247380",
+          "status": "reported current national buying price; keep separate from official 410 reference; date/market/quality details require validation"
+        },
+        "imf_cross_check": {
+          "source": "IMF 2026 staff report",
+          "source_url": "https://www.elibrary.imf.org/view/journals/002/2026/140/article-A001-en.xml",
+          "note": "Reports the producer price at the government-set XOF 410/kg for the 2026 campaign; export contract price is a separate trade-level observation."
+        },
+        "world_bank_value_chain_findings": {
+          "source": "World Bank Data Blog, 2026-09-01",
+          "source_url": "https://blogs.worldbank.org/en/opendata/from-farm-to-market--the-data-behind-guinea-bissau-s-us-30-milli",
+          "cashew_yield_context": "below 0.4 t/ha",
+          "cashew_postharvest_loss": "up to 25%",
+          "cashew_logistics_share_of_export_price": "about 34%",
+          "rice_postharvest_loss": "up to 30%",
+          "rice_farmer_share_of_retail_price": "around one-third",
+          "rice_logistics_share_of_retail_price": "about 42%",
+          "status": "value_chain context; not regional enterprise budgets or farmgate price inputs"
+        },
+        "readiness_interpretation": "Improves price provenance for cashew only and quantifies rice/cashew marketing constraints. Does not close price coverage for rice, maize, beans/cowpea, cassava or livestock; no production-cost budget or activation authorization."
+      }
     },
     {
       "country_code": "TD",
