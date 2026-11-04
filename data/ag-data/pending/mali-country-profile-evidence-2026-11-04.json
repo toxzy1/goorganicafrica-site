@@ -1,0 +1,284 @@
+{
+  "country_code": "ML",
+  "country_name": "Mali",
+  "evidence_date": "2026-11-04",
+  "evidence_status": "research_only_EAC_and_campaign_sources_verified_cost_and_regional_yield_extraction_pending",
+  "sources": [
+    {
+      "title": "Mali releases 2023–24 agricultural data under the 50x2030 Initiative",
+      "publisher": "FAO AGRISurvey / Government of Mali / INSTAT / CPS-SDR",
+      "url": "https://www.fao.org/in-action/agrisurvey/news/news-detail/mali-releases-2023-24-agricultural-data-under-the-50x2030-initiative/en",
+      "publication_date": "2026-03-11",
+      "reference_period": "EAC 2023-2024",
+      "observations": [
+        {
+          "indicator": "cultivated_area",
+          "value": 7450000,
+          "unit": "ha_approximately",
+          "status": "National survey headline; not crop-specific harvested area."
+        },
+        {
+          "indicator": "cereal_production",
+          "value": 8840000,
+          "unit": "tonnes",
+          "status": "National aggregate only; do not allocate to individual crops."
+        },
+        {
+          "indicator": "sole_cropping_share",
+          "value": 90,
+          "unit": "percent",
+          "status": "Remaining 10 percent intercropped."
+        }
+      ],
+      "notes": "The first public EAC data release includes crop area, production, crop-cut yields and farming practice indicators."
+    },
+    {
+      "title": "Agricultural Survey 2023-2024 (EAC) metadata",
+      "publisher": "CPS/SDR; IHSN Data Catalog",
+      "url": "https://datacatalog.ihsn.org/catalog/14126",
+      "reference_period": "2023-2024",
+      "observations": [
+        {
+          "indicator": "survey_coverage",
+          "value": "All regions except Kidal; Bamako treatment requires confirmation in the report/codebook.",
+          "status": "Kidal excluded due to security concerns."
+        },
+        {
+          "indicator": "available_modules",
+          "value": [
+            "GPS plot area",
+            "crop types and cultivated area",
+            "fertilizer and pesticide use",
+            "crop-cut yield measurement",
+            "family and hired labour",
+            "production and commercialization",
+            "livestock and poultry",
+            "equipment and materials"
+          ],
+          "status": "Catalogue confirms questionnaire modules; numeric extraction, weighting and precision checks pending."
+        }
+      ],
+      "notes": "Sample survey of family farms and plots; no unweighted extrapolation."
+    },
+    {
+      "title": "FAO GIEWS Country Brief — Mali",
+      "publisher": "FAO",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MLI&lang=en",
+      "reference_date": "2026-08-27",
+      "observations": [
+        {
+          "indicator": "aggregate_cereal_production",
+          "value": 11600000,
+          "unit": "tonnes_approximately",
+          "reference_year": 2025,
+          "status": "FAO estimate, about 15 percent above five-year average; national aggregate only."
+        },
+        {
+          "indicator": "fertilizer_price_change",
+          "value": {
+            "urea": 19,
+            "NPK": 16,
+            "DAP": 8
+          },
+          "unit": "percent",
+          "period": "February-March 2026",
+          "status": "Price changes, not absolute farmer costs."
+        },
+        {
+          "indicator": "wholesale_grain_price_trend",
+          "value": "Mixed maize and sorghum; millet generally stable with declines up to 15 percent in some markets",
+          "period": "April-July 2026",
+          "status": "Wholesale trends, not farmgate prices."
+        },
+        {
+          "indicator": "fertilizer_stock_coverage",
+          "value": 22,
+          "unit": "percent_of_national_requirement",
+          "reference_date": "2026",
+          "status": "Availability indicator, not a cost."
+        }
+      ],
+      "notes": "Conflict, rainfall and input access create localized production risks."
+    },
+    {
+      "title": "Government of Mali: 2025 agricultural campaign results",
+      "publisher": "Government of Mali",
+      "url": "https://gouvernement.ml/conseil-elargi-du-secteur-agricole-le-plan-triennal-de-campagne-agricole-consolide-harmonise-et-valide/",
+      "reference_period": "2025 campaign",
+      "observations": [
+        {
+          "indicator": "cereal_production",
+          "value": 11452540,
+          "unit": "tonnes",
+          "status": "Government-reported campaign total; aggregate cereals."
+        },
+        {
+          "indicator": "seed_cotton_production",
+          "value": 433700,
+          "unit": "tonnes",
+          "status": "Government-reported campaign total."
+        },
+        {
+          "indicator": "controlled_meat",
+          "value": 157775,
+          "unit": "tonnes",
+          "status": "Government-reported total."
+        },
+        {
+          "indicator": "collected_milk",
+          "value": 17238,
+          "unit": "tonnes",
+          "status": "Government-reported total."
+        },
+        {
+          "indicator": "fish_production",
+          "value": 122671,
+          "unit": "tonnes",
+          "status": "Government-reported total."
+        }
+      ],
+      "notes": "FAO's 2025 cereal estimate of about 11.6m tonnes differs from the government-reported 11.45254m tonnes; retain both pending reconciliation."
+    },
+    {
+      "title": "2026-2027 campaign launch and subsidized input prices",
+      "publisher": "Government of Mali",
+      "url": "https://gouvernement.ml/campagne-agricole-2026-2027-le-ministre-de-lagriculture-a-officiellement-lance-les-travaux-agricoles-visant-une-production-nationale-de-11-920-000-tonnes-de-cereales/",
+      "publication_date": "2026-06-26",
+      "reference_period": "2026 campaign",
+      "observations": [
+        {
+          "indicator": "mineral_fertilizer_subsidized_price",
+          "value": 15000,
+          "unit": "XOF_per_50kg_bag",
+          "status": "Campaign support price; formulation, eligibility, allocation and delivery cost need validation."
+        },
+        {
+          "indicator": "organic_fertilizer_subsidized_price",
+          "value": 3000,
+          "unit": "XOF_per_50kg_bag",
+          "status": "Campaign support price; product and delivery details pending."
+        },
+        {
+          "indicator": "hybrid_maize_seed_price",
+          "value": 1500,
+          "unit": "XOF_per_kg",
+          "status": "Campaign support price; variety and distribution terms pending."
+        },
+        {
+          "indicator": "first_grade_seed_cotton_price",
+          "value": 300,
+          "unit": "XOF_per_kg",
+          "status": "Policy price for first-grade seed cotton only; not a general farmgate price."
+        },
+        {
+          "indicator": "OVALIS_biostimulant_price",
+          "value": 17500,
+          "unit": "XOF_per_kg",
+          "status": "Specific product price, not a general input-cost proxy."
+        }
+      ]
+    },
+    {
+      "title": "Mercuriale des prix: Bamako et les capitales régionales 2026",
+      "publisher": "Ministry of Economy and Finance / DGMP",
+      "url": "https://www.dgmp.gouv.ml/node/660",
+      "publication_date": "2026-02-25",
+      "observations": [
+        {
+          "indicator": "regional_bulletin_coverage",
+          "value": [
+            "Bamako",
+            "Badiangara",
+            "Bougouni",
+            "Dioila",
+            "Douentza",
+            "Gao",
+            "Kayes",
+            "Kidal",
+            "Kita",
+            "Koulikoro",
+            "Koutiala",
+            "Menaka",
+            "Mopti",
+            "Nara",
+            "Nioro",
+            "San",
+            "Ségou",
+            "Sikasso",
+            "Taoudeni",
+            "Tombouctou"
+          ],
+          "status": "Catalogue links regional PDFs; item-level prices not extracted."
+        }
+      ],
+      "notes": "Procurement/reference prices must not be assumed to be farmgate producer prices."
+    },
+    {
+      "title": "World Bank Monthly food price estimates by product and market",
+      "publisher": "World Bank DECDG",
+      "url": "https://microdata.worldbank.org/catalog/4499",
+      "reference_period": "2007-01 to 2026-08; 136 markets; version 2026-08-24",
+      "observations": [
+        {
+          "indicator": "market_price_panel",
+          "value": "Monthly estimates by product and market",
+          "status": "Compiled from WFP, FAO, selected national statistics and machine-learning estimates; primarily market prices, not farmgate producer prices."
+        }
+      ]
+    },
+    {
+      "title": "Mali Food Security Outlook Update April-September 2026",
+      "publisher": "FEWS NET",
+      "url": "https://fews.net/west-africa/mali/food-security-outlook-update/april-2026",
+      "publication_date": "2026-04",
+      "observations": [
+        {
+          "indicator": "mineral_fertilizer_stock",
+          "value": 146366,
+          "unit": "tonnes",
+          "reference_date": "2026-03-31",
+          "status": "FEWS NET reports 22 percent of estimated national requirements."
+        },
+        {
+          "indicator": "fertilizer_price_change",
+          "value": {
+            "urea": 19,
+            "NPK": 18,
+            "DAP": 8
+          },
+          "unit": "percent",
+          "period": "February-March 2026",
+          "status": "NPK change differs from FAO's 16 percent; preserve source-specific readings pending reconciliation."
+        }
+      ]
+    }
+  ],
+  "priority_commodities": [
+    "maize",
+    "rice",
+    "sorghum",
+    "millet",
+    "cassava",
+    "cowpea/beans",
+    "groundnut",
+    "cotton",
+    "tomato",
+    "pepper",
+    "onion",
+    "watermelon",
+    "poultry",
+    "goat",
+    "cattle",
+    "fish"
+  ],
+  "blockers": [
+    "Extract EAC 2023-2024 report tables, microdata and codebook; inspect crop-cut yields, GPS plot areas, weights, strata, standard errors and regional sample sizes; preserve Kidal exclusion and verify Bamako coverage.",
+    "Extract crop-specific regional sown/harvested area, production and yield distributions; do not infer individual crop yields from national cereal aggregates.",
+    "Reconcile Government 2025 cereal total 11,452,540 tonnes with FAO estimate about 11.6m tonnes.",
+    "Extract DGMP 2026 regional Mercuriale PDFs and classify each price as procurement/reference, wholesale, retail or farmgate.",
+    "Obtain current dated farmgate transactions by crop, grade, market and region; historical rice quotes and wholesale panels are not substitutes.",
+    "Verify 2026 input subsidy eligibility, formulation, allocation, delivery point and farmer-paid costs; obtain commercial seed, crop protection, labour, machinery, irrigation, energy and transport prices.",
+    "Build regional crop and livestock enterprise budgets, including irrigated Office du Niger rice versus rainfed systems, and validate XOF tests."
+  ],
+  "extraction_status": "New evidence reviewed on 2026-11-04. EAC survey metadata and FAO public release confirm crop-cut, GPS area, input and labour modules but numeric regional extraction and precision assessment remain pending. Government 2025 cereal total and FAO estimate are retained separately. 2026 government fertilizer/seed/cotton policy prices are recorded with eligibility and delivery caveats. Regional Mercuriale and World Bank market-price panel are leads, not validated farmgate prices. Mali remains inactive."
+}
