@@ -2088,30 +2088,32 @@
       "code": "SL",
       "name": "Sierra Leone",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "2025_MAFS_official_crop_cutting_report_extracted_national_and_ecology_yields_but_national_rice_yield_output_area_ratio_and_district_text_inconsistencies_need_clarification",
+      "existing_research_note": "2024 Stats SL/MAFS Annual Agricultural Survey Table 2.5 includes national planted/harvested area, production and yields; 2025/26 MAFS crop-cutting survey includes crop/ecology/district estimates but national rice 2.37 t/ha conflicts with production/area ratio ~2.18 and district Port Loko/Kambia narrative reverses stated production values; Agrilinks daily bulk/retail district prices available after registration but dated observations not extracted; NaFRA agro-dealer/importer directory is supplier discovery only, not a price series; district-code crosswalk and full enterprise budgets remain pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "official_administrative_geography_reviewed_2026_11_02_crop_and_cost_evidence_pending",
-        "calculator_mapping_and_test_cases": "five_region_lookup_added_mapping_and_tests_pending"
+        "crop_area_production_yield_by_commodity_and_season": "partial",
+        "dated_local_farmgate_prices_and_units": "partial",
+        "seed_and_planting_material_costs": "partial",
+        "fertilizer_and_soil_amendment_costs": "partial",
+        "crop_protection_costs": "blocked",
+        "irrigation_water_and_energy_costs": "blocked",
+        "labour_rates_and_operations": "blocked",
+        "machinery_and_land_preparation_costs": "blocked",
+        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "currency_and_exchange_rate_method": "partial",
+        "source_provenance_and_observation_date": "partial",
+        "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Obtain MAFS/PEMSD technical clarification for 2025/26 rice yield denominator and Port Loko/Kambia district production ranking before using those values.",
+        "Extract validated district and rice-ecology distributions and confidence intervals; do not turn point estimates into low/expected/high scenarios without evidence.",
+        "Download dated Agrilinks prices by market/district, crop, variety, bulk/retail channel, local unit and metric conversion; confirm whether any quote is farmgate or market-level.",
+        "Obtain dated seed, fertilizer, crop-protection and planting-material quotations from suppliers, including package size and delivery district.",
+        "Collect labour, land preparation, irrigation, machinery, energy, transport and post-harvest costs and construct region/ecology-specific enterprise budgets.",
+        "Verify 2026 district boundary changes and document crosswalks to historical survey district codes.",
+        "Complete commodity mapping, currency checks and calculator test cases only after the above evidence is reconciled."
       ],
-      "next_step": "Resolve the 2026 district boundary changes and reconcile 2025 crop-cutting ecology/district observations; obtain dated regional farmgate prices and input costs, then build and test regional enterprise budgets.",
+      "next_step": "Request MAFS/PEMSD clarification on the 2025/26 rice inconsistencies; extract dated Agrilinks market observations and obtain NaFRA supplier quotations, then build and test regional enterprise budgets.",
       "batch_10_review": {
         "review_date": "2026-11-02",
         "source_notes": "Five broad administrative regions confirmed from government/statistical sources and added as a lookup. The Electoral Commission's six electoral regions split Western Area into Western Rural and Western Urban; those electoral units are not mixed into the five broad administrative regions. A 30 September 2026 report says the 16 September 2026 Extraordinary Gazette created Bandajuma and Kpanguima districts; these are district-level changes and require a verified crop-data crosswalk.",
@@ -2122,6 +2124,23 @@
           "https://www.sierraleonemonitor.com/government-creates-new-districts-councils/"
         ],
         "regional_lookup": "5 broad administrative regions added to src/_data/calculator/regions.json; lookup only, country remains inactive."
+      },
+      "batch_11_review": {
+        "review_date": "2026-11-04",
+        "review_status": "evidence_refresh_saved_not_ready",
+        "sources": [
+          "https://maf.gov.sl/2026/06/30/2025-sierra-leone-crop-production-survey/",
+          "https://www.statistics.sl/images/StatisticsSL/Documents/2024-SLAAS-Report_V4.pdf",
+          "https://agrilinks.sl/services",
+          "https://agrilinks.sl/about",
+          "https://nafra.gov.sl/data/",
+          "https://nafra.gov.sl/agro-dealers/",
+          "https://www.statistics.sl/index.php",
+          "https://microdata.statistics.sl/index.php/catalog/16/variable/F9/V235?name=DISTRICT"
+        ],
+        "key_findings": "2024 official crop tables confirmed; 2025/26 crop-cut method and unresolved rice/district inconsistencies recorded; Agrilinks daily market price access path confirmed but no dated observations downloaded; NaFRA supplier discovery confirmed but no current prices; public-use microdata access conditions require respect.",
+        "calculator_status": "not_active",
+        "activation_decision": "blocked_pending_price_input_budget_and_test_validation"
       }
     },
     {
@@ -2325,7 +2344,7 @@
     }
   ],
   "next_country": {
-    "code": "ST",
-    "name": "São Tomé and Príncipe"
+    "code": "SO",
+    "name": "Somalia"
   }
 }
