@@ -6,7 +6,7 @@
     "currency": "MUR",
     "currency_name": "Mauritian rupee"
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "purpose": "Country evidence register entry. Records official agricultural production, crop yields, producer-price index, census metadata and sector context. This is not a farm enterprise budget or calculator-ready profile.",
   "calculator_readiness": "not_ready_research_only",
@@ -773,6 +773,112 @@
         "PPI-A is an index, not an absolute MUR/kg farmgate price.",
         "FAREI APMIS is a government-supported portal advertising crop production/area and current retail/wholesale price access; extract and archive dated observations with units and market definitions before using.",
         "APMIS front page was accessible, but the underlying live price table was not extracted in this batch."
+      ]
+    },
+    {
+      "id": "MU-11",
+      "topic": "September 2026 revised 2025 crop tables and detailed January-June 2026 crop output",
+      "source": "Statistics Mauritius, Agricultural and Fish Production January-June 2026, Table 5.1 (revised calendar-year 2025 data and provisional January-June 2026 data)",
+      "source_url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2026/EI1954/Agri_Fish_Prod_Jan-Jun26_230926.pdf",
+      "reference_date": "2026-09-23",
+      "values": [
+        {
+          "indicator": "Potato open-field area and production",
+          "area_ha": 727.4,
+          "production_t": 15858.4,
+          "period": "calendar 2025 revised",
+          "status": "official_revised",
+          "note": "The January-June 2026 harvest was only 1.7ha and 15.7t; likely seasonal timing matters, so do not interpret the partial-year figure as a full-year collapse."
+        },
+        {
+          "indicator": "Maize open-field area and production",
+          "area_ha": 125.8,
+          "production_t": 1568,
+          "period": "calendar 2025 revised",
+          "status": "official_revised"
+        },
+        {
+          "indicator": "Groundnut open-field area and production",
+          "area_ha": 152,
+          "production_t": 365.6,
+          "period": "calendar 2025 revised",
+          "status": "official_revised",
+          "note": "Groundnut is not one of the current 17 calculator commodities."
+        },
+        {
+          "indicator": "Tomato open-field area and production",
+          "area_ha": 514.3,
+          "production_t": 11995.6,
+          "period": "calendar 2025 revised",
+          "status": "official_revised"
+        },
+        {
+          "indicator": "Beans and peas open-field area and production",
+          "area_ha": 276.7,
+          "production_t": 2485.9,
+          "period": "calendar 2025 revised",
+          "status": "official_revised",
+          "note": "Combined beans-and-peas group; cannot directly isolate dry beans without crop definition detail."
+        },
+        {
+          "indicator": "Cucumber open-field area and production",
+          "area_ha": 436.6,
+          "production_t": 8597.8,
+          "period": "calendar 2025 revised",
+          "status": "official_revised",
+          "note": "Cucumber is a component of the wider creepers group."
+        },
+        {
+          "indicator": "Chillies open-field area and production",
+          "area_ha": 415.9,
+          "production_t": 3107.4,
+          "period": "calendar 2025 revised",
+          "status": "official_revised",
+          "note": "Aggregate chilli group; varieties and market grades are not separated."
+        },
+        {
+          "indicator": "Maize open-field area and production",
+          "area_ha": 74.5,
+          "production_t": 968.5,
+          "period": "January-June 2026 provisional",
+          "status": "official_partial_year"
+        },
+        {
+          "indicator": "Tomato open-field area and production",
+          "area_ha": 213.7,
+          "production_t": 4906.5,
+          "period": "January-June 2026 provisional",
+          "status": "official_partial_year"
+        },
+        {
+          "indicator": "Cucumber open-field area and production",
+          "area_ha": 229,
+          "production_t": 4775.1,
+          "period": "January-June 2026 provisional",
+          "status": "official_partial_year"
+        },
+        {
+          "indicator": "Beans and peas open-field area and production",
+          "area_ha": 137.2,
+          "production_t": 1310.5,
+          "period": "January-June 2026 provisional",
+          "status": "official_partial_year"
+        },
+        {
+          "indicator": "Chillies open-field area and production",
+          "area_ha": 211.3,
+          "production_t": 1783.1,
+          "period": "January-June 2026 provisional",
+          "status": "official_partial_year"
+        }
+      ],
+      "methodology": "Transcribed from Statistics Mauritius Table 5.1. The September 2026 issue labels calendar-year 2025 values revised and January-June 2026 values provisional. The 2026 figures are half-year observations and are not annual estimates.",
+      "caveats": [
+        "This September 2026 release revises some 2025 crop values previously transcribed from the March 2026 annual issue; use the later revised figures for current reference while retaining prior observations as historical audit trail.",
+        "The 2026 figures cover January-June only and must not be annualised mechanically.",
+        "Open-field figures must not be combined with covered-culture output.",
+        "Crop group definitions remain broader than some GoOrganicAfrica calculator commodities; in particular beans and peas, chillies and creepers require mapping review.",
+        "National crop data do not provide the required district or island-level enterprise yield distributions."
       ]
     }
   ],
