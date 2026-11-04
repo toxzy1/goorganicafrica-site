@@ -2258,7 +2258,7 @@
     {
       "country_code": "ZW",
       "country_name": "Zimbabwe",
-      "evidence_status": "official_2024_25_post_harvest_survey_and_2026_market_price_evidence_added_area_yield_and_farm_budget_reconciliation_pending",
+      "evidence_status": "november_2026_review_added_2026_27_GMB_producer_price_schedule_ZIMSTAT_September_2026_agricultural_PPI_portal_current_El_Nino_and_input_distribution_updates; crop_harvest_area_yields_and_farm_budget_costs_pending",
       "survey": {
         "title": "2024/25 Post-Harvest Survey; Crops, Livestock and Fisheries Assessments",
         "publisher": "Zimbabwe National Statistics Agency (ZIMSTAT) and Ministry of Lands, Agriculture, Fisheries, Water and Rural Development",
@@ -2450,6 +2450,258 @@
           "url": "https://zimstat.co.zw/producer-price-index-agriculture/",
           "status": "official_monthly_price_index_data_portal",
           "note": "Lists monthly PPI-A reports and datasets in USD, ZWG and weighted series through 2026. Index movements are not absolute commodity prices; retrieve underlying datasets and product-level series where available."
+        },
+        {
+          "title": "Producer Price Index — Agriculture, September 2026",
+          "publisher": "Zimbabwe National Statistics Agency (ZIMSTAT)",
+          "url": "https://zimstat.co.zw/producer-price-index-agriculture/",
+          "reference_date": "2026-09",
+          "status": "official_monthly_producer_price_index_and_downloadable_dataset_portal",
+          "observations": [
+            {
+              "indicator": "agricultural_producer_price_index",
+              "reference_period": "September 2026",
+              "currency_series": [
+                "USD",
+                "ZWG",
+                "weighted"
+              ],
+              "status": "Official monthly publication and datasets listed. Exact index values and commodity-level dataset rows have not yet been extracted."
+            }
+          ],
+          "quality_notes": [
+            "The PPI measures changes in prices received by agricultural producers. An index is not an absolute farmgate price in USD/kg or USD/tonne; retrieve product-level series and base-period metadata before calculator use."
+          ]
+        },
+        {
+          "title": "Government approves 2026/27 grain producer incentive prices",
+          "publisher": "Grain Marketing Board announcement reported by The Herald",
+          "url": "https://www.heraldonline.co.zw/government-approves-grain-producer-prices/",
+          "publication_date": "2026-09-11",
+          "reference_period": "2026/27 marketing season",
+          "status": "GMB_producer_price_policy_announcement_reported_by_national_press",
+          "observations": [
+            {
+              "commodity": "winter_wheat",
+              "price_usd_per_mt": 531.93,
+              "status": "Producer floor price for 2026/27; forward marketing policy price, not a realized transaction sample."
+            },
+            {
+              "commodity": "maize_and_traditional_grains",
+              "price_usd_per_mt": 432,
+              "status": "Incentive planning price; distinguish maize and individual traditional grain actual grades/terms before mapping."
+            },
+            {
+              "commodity": "soybean",
+              "price_usd_per_mt": 660.95,
+              "status": "Incentive planning price, not observed realized farmgate transaction."
+            },
+            {
+              "commodity": "sunflower",
+              "price_usd_per_mt": 826.19,
+              "status": "Incentive planning price, not observed realized farmgate transaction."
+            }
+          ],
+          "quality_notes": [
+            "These are producer-facing policy/planning prices for the upcoming 2026/27 season; do not substitute for 2024/25 actual realized prices or open-market quotations."
+          ]
+        },
+        {
+          "title": "Zimbabwe Food Security Outlook Update, September 2026–January 2027",
+          "publisher": "FEWS NET",
+          "url": "https://fews.net/southern-africa/zimbabwe/key-message-update/september-2026",
+          "publication_date": "2026-09",
+          "status": "recent_climate_market_and_livestock_risk_evidence",
+          "observations": [
+            {
+              "indicator": "rainfall_outlook",
+              "value": "below-average and erratic onset forecast under likely El Niño",
+              "reference_period": "2026/27 rainy season",
+              "status": "seasonal forecast; not a measured crop yield."
+            },
+            {
+              "indicator": "winter_wheat_planted_area_ha",
+              "value": 130300,
+              "reference_period": "2026 winter season",
+              "status": "ADAS figure cited by FEWS NET; planted area, not harvested area."
+            },
+            {
+              "indicator": "cattle_at_risk",
+              "value": 2230000,
+              "reference_period": "2026/27 lean season",
+              "status": "Ministry estimate cited by FEWS NET; livestock drought-risk indicator, not herd loss or a cost."
+            },
+            {
+              "indicator": "maize_price_spread",
+              "value": "retail maize prices in deficit markets about twice surplus-market prices",
+              "reference_date": "2026-08",
+              "status": "Market-level retail contrast; not farmgate prices."
+            }
+          ],
+          "quality_notes": [
+            "Deficit-producing areas include parts of Matabeleland North/South, Masvingo, Manicaland and Midlands; do not apply one national price/yield assumption.",
+            "The report warns of rising fertilizer and fuel costs and limited input procurement ahead of planting."
+          ]
+        },
+        {
+          "title": "2026/27 Summer Plan and drought mitigation update",
+          "publisher": "Government of Zimbabwe post-Cabinet briefing reported by The Herald",
+          "url": "https://www.heraldonline.co.zw/govt-to-leverage-on-strategic-grain-reserve-irrigation-to-mitigate-effects-of-el-nino/",
+          "publication_date": "2026-10-21",
+          "reference_period": "2026/27 summer agricultural season",
+          "status": "official_policy_plan_and_national_production_planning_context",
+          "observations": [
+            {
+              "indicator": "projected_total_cereal_production_mt",
+              "value": 1607198,
+              "reference_period": "2026/27",
+              "status": "Government plan projection, not a crop assessment or realized harvest."
+            },
+            {
+              "indicator": "projected_total_cereal_requirement_mt",
+              "value": 2270386,
+              "reference_period": "2026/27",
+              "status": "Government planning estimate; not farm demand for any enterprise."
+            },
+            {
+              "indicator": "pfumvudza_intwasa_plots_established",
+              "value": 7603250,
+              "reference_period": "2026/27",
+              "status": "47.52% of 16m target at date of briefing; programme coverage, not hectares harvested."
+            }
+          ],
+          "quality_notes": [
+            "Government anticipates strong El Niño and geopolitical pressure on fuel/fertilizer supply; use scenario risk rather than assuming normal yields or prices."
+          ]
+        },
+        {
+          "title": "Summer cropping input distribution update",
+          "publisher": "Ministry of Agriculture statements reported by The Herald",
+          "url": "https://www.heraldonline.co.zw/government-steps-up-summer-cropping-inputs-distribution/",
+          "publication_date": "2026-11-03",
+          "reference_period": "2026/27 summer season",
+          "status": "current_input_availability_and_subsidy_distribution_not_unit_costs",
+          "observations": [
+            {
+              "indicator": "maize_seed_and_top_dressing_fertilizer_distribution",
+              "value": "reported nearly complete",
+              "reference_date": "2026-11-03",
+              "status": "Government distribution progress; not the price farmers pay."
+            },
+            {
+              "indicator": "basal_fertilizer_distribution",
+              "value": "just under 30 percent",
+              "reference_date": "2026-11-03",
+              "status": "Distribution progress, not price or unit cost."
+            },
+            {
+              "indicator": "sorghum_seed_distribution",
+              "value": "about 25 percent",
+              "reference_date": "2026-11-03",
+              "status": "Distribution progress, not price or unit cost."
+            },
+            {
+              "indicator": "cattle_population_at_risk",
+              "value": 2299000,
+              "reference_period": "2026/27",
+              "status": "Minister's estimate based on 2024 cattle count; distinct from FEWS NET September estimate."
+            }
+          ],
+          "quality_notes": [
+            "Subsidy programme distribution cannot be converted into farmer input cost without beneficiary eligibility, package quantity, co-payment and delivery terms."
+          ]
+        },
+        {
+          "title": "Presidential Inputs Programme / ADAS distribution update",
+          "publisher": "Agricultural Development Advisory Services (ADAS) figures reported by The Herald",
+          "url": "https://www.zimbabwesituation.com/news/presidential-inputs-deliveries-gather-momentum/",
+          "publication_date": "2026-10-26",
+          "reference_period": "2026/27 summer season, ADAS report dated 23-Oct-2026",
+          "status": "input_distribution_by_province_and_commodity_not_market_prices",
+          "observations": [
+            {
+              "indicator": "maize_seed_delivered_mt",
+              "value": 3198,
+              "status": "107% of 3,000 MT target; delivery not retail price."
+            },
+            {
+              "indicator": "top_dressing_fertilizer_delivered_mt",
+              "value": 30194,
+              "status": "50% of 60,000 MT target."
+            },
+            {
+              "indicator": "compound_D_fertilizer_delivered_mt",
+              "value": 13264,
+              "status": "22% of target."
+            },
+            {
+              "indicator": "liquid_lime_units_delivered",
+              "value": 180874,
+              "status": "Units delivered; package weight and farmer cost not specified."
+            },
+            {
+              "indicator": "maize_seed_deliveries_Mashonaland_Central_mt",
+              "value": 842,
+              "status": "Provincial delivery against 452 MT target; distribution metric only."
+            }
+          ],
+          "quality_notes": [
+            "Provincial input delivery is useful for supply/access analysis but cannot stand in for farmer purchase prices or application rates."
+          ]
+        },
+        {
+          "title": "AMA Agro-Input Monitor Issue 6",
+          "publisher": "Agricultural Marketing Authority, Zimbabwe",
+          "url": "https://www.ama.co.zw/",
+          "publication_date": "2025-06",
+          "status": "historical_district_agrodealer_input_price_lead_not_2026_27_current_prices",
+          "observations": [
+            {
+              "commodity": "ammonium_nitrate_fertilizer",
+              "package_kg": 50,
+              "price_usd_range": [
+                32.5,
+                40
+              ],
+              "reference_period": "June 2025",
+              "geographies": [
+                "Mutare",
+                "Gokwe"
+              ],
+              "status": "Reported agro-dealer price range; historical lead only, must refresh for 2026/27."
+            },
+            {
+              "commodity": "SC719_maize_seed",
+              "package_kg": 25,
+              "price_usd_range": [
+                101,
+                149
+              ],
+              "reference_period": "June 2025",
+              "geographies": [
+                "Bulawayo",
+                "Harare"
+              ],
+              "status": "Reported agro-dealer price range; historical lead only, cultivar-specific and not current."
+            },
+            {
+              "commodity": "Compound_C_fertilizer",
+              "package_kg": 50,
+              "price_usd_range": [
+                35,
+                52.5
+              ],
+              "reference_period": "June 2025",
+              "geographies": [
+                "Harare",
+                "Marondera"
+              ],
+              "status": "Reported agro-dealer price range; historical lead only."
+            }
+          ],
+          "quality_notes": [
+            "Secondary reporting summarizes AMA Agro-Input Monitor Issue 6. Retrieve the original AMA bulletin and obtain 2026/27 quotes; these 2025 prices are not calculator-ready."
+          ]
         }
       ],
       "priority_commodities": [
@@ -2466,16 +2718,18 @@
         "pig"
       ],
       "remaining_gaps": [
-        "obtain the detailed 2024/25 PHS crop-specific harvested-area tables and calculate yields only where crop, season and harvested-area definitions match",
-        "ask ZIMSTAT to clarify the soybean national total discrepancy between Table 3.7 (7,750 MT) and Tables 3.2/3.8 (57,750 MT)",
-        "obtain district/province yield distributions and separate irrigated winter production from rainfed summer production",
-        "retrieve monthly ZIMSTAT agricultural PPI datasets and extract commodity-level observations, preserving USD/ZWG/weighted series and base periods",
-        "obtain dated farm-gate prices for horticulture crops and livestock, not just cereal marketing-board prices",
-        "obtain seed, fertilizer, pesticide, labour, land preparation, irrigation, mechanization, electricity/diesel and transport costs by agro-ecological zone",
-        "obtain livestock purchase, feed, veterinary, mortality, liveweight and output-price data from ZIMSTAT quarterly milk/meat reports and livestock survey modules",
-        "verify 2025/26 and 2026/27 final post-harvest results when published; keep CLAFA estimates separate from final PHS observations"
+        "Extract the 2024/25 PHS crop-specific harvested-area tables and provincial/sector crop yields; keep planted area and crop production totals separate.",
+        "Resolve the official PHS soybean discrepancy: 57,750 MT in Tables 3.2/3.8 versus 7,750 MT in Table 3.7 before admitting soybean output.",
+        "Download ZIMSTAT September 2026 USD, ZWG and weighted PPI-A datasets; extract commodity rows, base periods and weights. Do not use index values as absolute farmgate prices.",
+        "Obtain actual dated farmgate prices for horticulture, pulses, rice and livestock; distinguish GMB procurement and policy planning prices from private market transactions.",
+        "Refresh AMA agro-dealer input monitor with 2026/27 product-specific seed, fertilizer, pesticide, feed and veterinary prices by district; 2025 quotes are historical only.",
+        "Record subsidy eligibility, co-payments and actual quantities received for Pfumvudza/Intwasa; distribution tonnage is not farmer cost.",
+        "Obtain labour rates, land preparation, machinery hire, irrigation water, pumping energy, diesel and transport costs by province and agro-ecological zone.",
+        "Separate rainfed summer crops, irrigated winter wheat, horticulture and livestock budgets; account for the forecast El Niño and drought exposure in southern/western zones.",
+        "Obtain full livestock and poultry enterprise budgets including purchase/liveweight price, feed, veterinary inputs, mortality, labour and water.",
+        "Map province/district selectors and calculator tests only after source-backed yield, farmgate revenue and cost inputs are complete."
       ],
-      "extraction_status": "Zimbabwe has a strong official post-harvest survey and current market/producer-price leads. It provides national crop output and provincial/sector splits, but crop-specific harvested-area and weighted yield distributions still need extraction. A soybean total discrepancy requires clarification. No country-specific calculator yields or cost budgets are admitted."
+      "extraction_status": "November 2026 refresh adds ZIMSTAT's September 2026 monthly agricultural PPI data portal (USD, ZWG and weighted series; dataset rows not yet extracted), GMB's reported 2026/27 incentive prices (winter wheat USD531.93/MT, maize/traditional grains USD432/MT, soybean USD660.95/MT, sunflower USD826.19/MT), FEWS NET's Sep 2026-Jan 2027 El Niño/market/livestock risk update, Government's Oct 21 2026 2026/27 cereal plan projection (1.607m tonnes against 2.270m tonnes requirement), and Nov 3 input-distribution update. Government input distribution is not a farmer price. AMA agro-input price examples from June 2025 are retained only as historical district price leads and must be refreshed. No new calculator values admitted."
     },
     {
       "country_code": "NA",
