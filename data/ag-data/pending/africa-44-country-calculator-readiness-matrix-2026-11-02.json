@@ -976,7 +976,7 @@
         "crop_area_production_yield_by_commodity_and_season": "partial_ANASA_2025_26_survey_release_confirmed_but_prefecture_tables_not_extracted_USDA_FAS_national_estimates_crosscheck_only",
         "dated_local_farmgate_prices_and_units": "blocked_official_SIM_service_confirmed_but_public_bulletin_list_reviewed_shows_2024_series_not_current_2026_farmgate_observations;_Conakry_secondary_market_prices_on_hold",
         "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "partial_2026_27_reported_controlled_NPK_urea_price_GNF_300000_per_50kg_requires_regional_verification",
+        "fertilizer_and_soil_amendment_costs": "partial_2026_27_reported_controlled_NPK_urea_price_GNF_300000_per_50kg_requires_regional_verification;_AfDB_AFFM_Oct_2026_FOSTER_credit_guarantee_targets_16200t_supply_chain_but_is_not_a_unit_price_or_delivered_cost",
         "crop_protection_costs": "partial_2026_27_reported_herbicide_price_GNF_15000_per_litre_not_crop_application_cost",
         "irrigation_water_and_energy_costs": "not_yet_audited",
         "labour_rates_and_operations": "not_yet_audited",
@@ -995,9 +995,10 @@
         "Obtain regional labour, land preparation, machinery, irrigation, water/energy, transport and land-rent costs.",
         "Build regional budgets for the matching crop and livestock profiles; national production totals cannot substitute for enterprise budgets.",
         "Confirm implementation and prefecture assignments for the August 2026 Beyla and Siguiri administrative changes.",
-        "Add GNF currency, regional selector, commodity mapping and gross-margin regression tests after validated budgets are mapped."
+        "Add GNF currency, regional selector, commodity mapping and gross-margin regression tests after validated budgets are mapped.",
+        "Track AfDB/AFFM FOSTER three-year fertilizer financing (announced 19 Oct 2026; planned 16,200 tonnes and 45,000 farmers) as supply-chain access context only; verify regional dealer prices, credit terms and actual deliveries before calculating fertilizer cost."
       ],
-      "next_step": "Secure and extract the ANASA 2025-2026 EAAI report and annexes, obtain current dated SIM price bulletins, and collect regional farm input/labour quotations; then build and test regional enterprise budgets before any activation.",
+      "next_step": "Obtain full ANASA EAAI report/annexes and current dated SIM bulletins; collect regional input/labour quotations and enterprise budgets. Track AfDB/AFFM FOSTER as a supply-chain intervention, not a price observation.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea government portal lists the pre-existing administrative regions (including the special zone of Conakry). A decree dated 20 August 2026 created two additional administrative regions, Beyla and Siguiri. The regional lookup therefore records the eight previously listed regional areas plus the two newly created regions. Implementation details and updated prefecture-to-region boundaries should be confirmed against the subsequent regulatory instrument before regional crop data are mapped.",
@@ -1030,6 +1031,18 @@
           "Build regional budgets for the matching crop and livestock profiles; national production totals cannot substitute for enterprise budgets.",
           "Confirm implementation and prefecture assignments for the August 2026 Beyla and Siguiri administrative changes.",
           "Add GNF currency, regional selector, commodity mapping and gross-margin regression tests after validated budgets are mapped."
+        ]
+      },
+      "batch_09_review": {
+        "review_date": "2026-11-04",
+        "source_notes": "Added the African Development Bank/Africa Fertiliser Financing Mechanism announcement of 19 October 2026: a US$1.5m guarantee plus US$700,000 technical-assistance grant under a three-year FOSTER project; supplier credit is expected to support 16,200 tonnes of fertilizer and reach 45,000 smallholders, with value-chain focus on rice, maize, fonio and horticulture. This improves evidence on planned input access and distribution but supplies no farmer purchase price, regional delivered price, application rate, credit cost or confirmation of deliveries. It is not entered as a calculator cost. Existing blockers remain: ANASA EAAI prefecture tables, current SIM prices, regional costs and budgets.",
+        "sources": [
+          "https://www.afdb.org/en/news-and-events/press-releases/guinea-african-development-bank-group-approves-98129"
+        ],
+        "blockers": [
+          "Verify project implementation, participating distributors, actual fertilizer delivery by prefecture and season, farmer credit terms and product-level unit prices.",
+          "Obtain ANASA EAAI regional tables and dated SIM price bulletins.",
+          "Build and validate region-specific enterprise budgets and GNF regression cases before activation."
         ]
       }
     },
