@@ -428,16 +428,14 @@
           "fish"
         ],
         "remaining_gaps": [
-          "obtain district-level Agrilinks price observations for calculator crops and confirm the date, variety, market and unit conversions",
-          "obtain dated supplier quotations for certified seed, fertilizer, agrochemicals and planting materials from NaFRA-listed suppliers",
-          "obtain livestock purchase, feed, veterinary, mortality and output-price benchmarks",
-          "resolve the 2025 MAFS rice yield denominator discrepancy and reconcile the 2024 household-survey and 2025 crop-cutting methods",
-          "derive low/expected/high values only from verified district/ecology distributions or multi-year observations",
-          "confirm the chilli pepper variety and broad-bean taxonomy before mapping the 2024 survey crops to existing calculator commodities",
-          "request MAFS/PEMSD technical clarification explaining how weighted national rice yield 2.37 Mt/ha relates to total paddy production 1,441,015 Mt and cultivated area 661,016 ha",
-          "verify the Port Loko and Kambia district production ranking against the source district table",
-          "obtain the underlying district/ecology yield distribution and confidence intervals before deriving rice scenarios",
-          "capture current dated Agrilinks district market prices and local-unit conversion records for the exact crops used in the calculator"
+          "Obtain MAFS/PEMSD written clarification of the 2025/26 national rice yield denominator and corrected district production ranking/table.",
+          "Extract district and rice-ecology distributions with confidence intervals from the 2025 crop-cutting report before defining any low/expected/high scenarios.",
+          "Download dated Agrilinks observations for calculator crops; retain market, district, date, variety, bulk/retail channel, local unit and metric conversion factor.",
+          "Request dated quotations from NaFRA-listed suppliers for certified seed, fertilizer, crop protection products and planting materials, with package size and delivery district.",
+          "Obtain labour, land preparation, irrigation, machinery, energy, transport, packaging and post-harvest cost schedules by region and production system.",
+          "Build complete district/ecology enterprise budgets for rice, cassava, maize, cucumber, soybean and other direct commodity matches before calculator mapping.",
+          "Verify 2026 district boundary changes and create a documented crosswalk to the historical 2024 and 2025 survey district codes.",
+          "Confirm chilli pepper variety/production system and broad-bean taxonomy before mapping to the calculator's hot pepper or bean profiles."
         ],
         "table_reference": "Table 2.5, planted area, harvested area, production and yield of crops cultivated by agricultural households, report page 24.",
         "table_source_url": "https://www.statistics.sl/images/StatisticsSL/Documents/2024-SLAAS-Report_V4.pdf",
@@ -735,7 +733,56 @@
           "status": "supplier_discovery_only_not_a_price_series",
           "notes": "Use to identify suppliers and request dated quotations for fertilizer, seeds and crop protection products. The directory itself does not provide verified current retail prices."
         }
-      ]
+      ],
+      "review_refresh_2026_11_04": {
+        "review_date": "2026-11-04",
+        "review_status": "evidence_review_refreshed_not_calculator_ready",
+        "findings": [
+          {
+            "id": "2024_slaas_table_2_5_rechecked",
+            "source": "Statistics Sierra Leone, Sierra Leone Annual Agricultural Survey Report 2024",
+            "url": "https://www.statistics.sl/images/StatisticsSL/Documents/2024-SLAAS-Report_V4.pdf",
+            "source_ref_year": 2024,
+            "finding": "The official 2024 survey report confirms crop-level planted area, harvested area, production and yield in Table 2.5, and also contains regional rice-plot and rice-variety tables. The 2024 report's rice plot table totals 780,146 cultivated rice plots; this is a plot count, not hectares. The crop table observations already recorded in the survey section are national point estimates, not scenarios.",
+            "caveat": "Do not confuse number of rice plots with crop area in hectares. Preserve the survey's reference year, crop definitions and sampling-error notes."
+          },
+          {
+            "id": "2025_crop_survey_method_and_conflicts",
+            "source": "MAFS/PEMSD, 2025 Sierra Leone Crop Production Survey",
+            "url": "https://maf.gov.sl/2026/06/30/2025-sierra-leone-crop-production-survey/",
+            "report_pdf": "https://maf.gov.sl/wp-content/uploads/2026/06/2025-Sierra-Leone-Crop-Production-Survey-2.pdf",
+            "reference_season": "2025/26",
+            "finding": "The official report uses crop-cutting, GPS-measured cultivated area, district and rice-ecology stratification, and reports 95% confidence/5% margin design. Reported rice crop-cut yield is 2.37 t/ha, but 1,441,015 t divided by 661,016 ha gives approximately 2.18 t/ha. The report's district narrative also states Port Loko 184,916 t and Kambia 210,375 t while describing Port Loko as the leading district; this is internally contradictory.",
+            "decision": "Keep the 2.37 t/ha national weighted yield and district production ranking on hold pending MAFS/PEMSD clarification. Retain the aggregate ratio only as a diagnostic, not a replacement yield.",
+            "other_crop_leads": "Cassava 12.54 t/ha, maize 2.80 t/ha, groundnut 2.33 t/ha and cocoa 1.50 t/ha are reported point estimates; they are not low/expected/high ranges and lack a complete cost/price budget."
+          },
+          {
+            "id": "agrilinks_market_price_access_checked",
+            "source": "Agrilinks Sierra Leone Services",
+            "url": "https://agrilinks.sl/services",
+            "companion_url": "https://agrilinks.sl/about",
+            "finding": "Agrilinks describes daily enumerator-collected bulk and retail prices for more than 20 produce items, district-average price lookup, local units and metric conversions. Access is via online registration or Orange USSD *2474#. No dated crop-price observations were downloaded or independently verified during this review.",
+            "decision": "High-priority path for obtaining dated market prices, but not yet a farmgate price dataset. Bulk/retail prices must be labelled by market, transaction point, crop/variety, date and local-unit conversion."
+          },
+          {
+            "id": "nafRA_supplier_directory_checked",
+            "source": "National Fertilizer and Regulatory Agency (NaFRA)",
+            "url": "https://nafra.gov.sl/data/",
+            "companion_url": "https://nafra.gov.sl/agro-dealers/",
+            "finding": "NaFRA's public data pages identify fertilizer importers, distributors and agro-dealers and provide supplier-discovery leads. They do not publish a verified current retail-price series or farmer input quotations.",
+            "decision": "Use the directory to request dated supplier quotations; do not infer input costs from supplier names or product categories."
+          },
+          {
+            "id": "official_statistical_and_microdata_catalogue_checked",
+            "source": "Statistics Sierra Leone",
+            "url": "https://www.statistics.sl/index.php",
+            "companion_url": "https://microdata.statistics.sl/index.php/catalog/16/variable/F9/V235?name=DISTRICT",
+            "finding": "Stats SL's portal lists the 2025 and 2024 annual agricultural survey reports. The 2024 survey catalogue includes district-coded microdata and indicates that the public-use dataset was updated 28 August 2026. Access conditions and confidentiality declarations must be respected; individual microdata cases are not population summary statistics.",
+            "decision": "Use published aggregate tables or authorized, documented analysis; do not treat microdata variable case counts as national prevalence."
+          }
+        ],
+        "audit_decision": "Sierra Leone has useful official national crop observations for 2024 and crop-cutting estimates for 2025/26, but unresolved rice denominator and district narrative inconsistencies prevent use of the 2025 rice yield/rankings. Agrilinks offers a route to daily market prices, but no dated observations were extracted. NaFRA is a supplier directory, not an input price list. The country remains inactive pending validated prices, input quotations, budgets and calculator tests."
+      }
     },
     {
       "country_code": "GN",
