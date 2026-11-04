@@ -1612,7 +1612,7 @@
       "existing_research_note": "Statistics_Mauritius_2025_crop_specific_area_production_yields_and_2026_H1_production_Q2_2026_PPI_A_2024_Census_island_level_holdings_and_livestock_data_and_APMIS_market_price_portal_recorded_absolute_current_farmgate_prices_and_costed_enterprise_budgets_pending",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_national_2025_crop_specific_area_production_yields_and_2024_island_census_totals_verified_district_and_MCA_DCA_crop_breakdowns_pending",
+        "crop_area_production_yield_by_commodity_and_season": "partial_September_2026_Statistics_Mauritius_release_revises_2025_open_field_crop_tables_and_adds_2026_H1_crop_specific_area_production; district_island_and_enterprise_system_breakdowns_pending",
         "dated_local_farmgate_prices_and_units": "partial_official_PPI_A_index_and_APMIS_price_portal_identified_absolute_dated_farmgate_values_not_extracted",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
@@ -1622,7 +1622,7 @@
         "machinery_and_land_preparation_costs": "not_yet_audited",
         "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
         "currency_and_exchange_rate_method": "MUR_official_currency_confirmed_exchange_rate_method_not_required_for_MUR_domestic_inputs_but_imported_input_costs_need_dated_MUR_conversion",
-        "source_provenance_and_observation_date": "official_2025_statistics_2026_03_18_2026_H1_statistics_2026_09_23_Q2_PPI_2026_08_19_and_2024_census_summary_2025_08",
+        "source_provenance_and_observation_date": "official_2025_revised_and_2026_H1_provisional_crop_tables_2026_09_23_plus_Q2_2026_PPI_A_and_APMIS_portal_identified",
         "calculator_mapping_and_test_cases": "10_island_district_selector_entries_added_mapping_and_regression_tests_pending"
       },
       "blockers": [
@@ -1631,9 +1631,12 @@
         "Obtain farmer-paid seed, fertiliser, crop protection, labour, machinery, irrigation, energy, packaging and transport costs.",
         "Build distinct open-field, covered-culture, sugarcane and livestock enterprise budgets.",
         "Separate local livestock production from imported animals slaughtered in Mauritius.",
-        "Map validated data to the calculator schema and add country-specific test cases."
+        "Map validated data to the calculator schema and add country-specific test cases.",
+        "Reconcile September 2026 revised 2025 crop tables against earlier March 2026 provisional transcriptions and use the later revised series.",
+        "Extract absolute dated crop-specific APMIS producer/farmgate prices; do not substitute the PPI-A index or retail/wholesale quotations.",
+        "Obtain farmer-paid input, labour, machinery, irrigation, energy, packaging and transport costs and construct separate enterprise budgets."
       ],
-      "next_step": "Extract crop-specific and livestock tables by district/municipal area; obtain current APMIS price records and farmer-facing input quotations; then build and test separate enterprise budgets.",
+      "next_step": "Extract district/Municipal Council Area crop tables and 2024 Census detail; retrieve dated APMIS producer-level prices and current input quotations; then cost and test open-field, protected-culture, sugarcane and livestock enterprises.",
       "batch_29_review": {
         "review_date": "2026-11-03",
         "note": "Batch 29 added verified official 2025 and 2026 partial-year production context, 2024 census summary, PPI-A and APMIS source. Ten geographic selector entries are recorded; districts are geographic/statistical units and Rodrigues is autonomous.",
@@ -1644,6 +1647,16 @@
           "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/CA_2024.aspx",
           "https://www.farei.mu/apmis/",
           "https://statsmauritius.govmu.org/Documents/Census_and_Surveys/Census2022/HPC_AR_Vol4_Atlas_Yr22-041225.pdf"
+        ]
+      },
+      "batch_30_review": {
+        "review_date": "2026-11-04",
+        "note": "Added Statistics Mauritius September 2026 release: revised 2025 open-field crop area/production rows and provisional January-June 2026 crop-specific area/production for maize, tomato, cucumber, beans/peas and chillies. Mauritius remains inactive; national crop tables and price indices do not complete local enterprise budgets.",
+        "sources": [
+          "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2026/EI1954/Agri_Fish_Prod_Jan-Jun26_230926.pdf",
+          "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/Agriculture/Agri_Fish_Prod_Jan-Jun26.aspx",
+          "https://statsmauritius.govmu.org/Pages/Statistics/ESI/Agriculture/PPIA/PPIA_2Qtr26.aspx",
+          "https://www.farei.mu/apmis/"
         ]
       }
     },
