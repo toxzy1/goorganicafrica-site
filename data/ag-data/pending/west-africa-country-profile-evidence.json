@@ -721,7 +721,7 @@
     {
       "country_code": "GN",
       "country_name": "Guinea",
-      "evidence_status": "expanded_USDA_2025_26_crop_estimates_ANASA_market_information_and_2026_27_input_campaign_identified_regional_validation_and_enterprise_costs_pending",
+      "evidence_status": "2025_26_ANASA_integrated_annual_survey_results_release_confirmed_but_tables_not_extracted_USDA_national_cross_checks_SIM_publication_audit_and_regional_enterprise_costs_pending",
       "survey": {
         "title": "USDA Foreign Agricultural Service Production, Supply and Distribution country profile — Guinea",
         "publisher": "United States Department of Agriculture, Foreign Agricultural Service",
@@ -829,7 +829,15 @@
         "url": "https://anasa.gov.gn/2021/sim-guinee/",
         "status": "official_market_information_service_confirmed",
         "description": "ANASA states it regularly collects agricultural prices and, in some cases, quantities from rural aggregation, wholesale and retail markets and disseminates them to farmers and other users.",
-        "extraction_status": "Portal existence and purpose verified; dated downloadable commodity-market observations still need extraction and verification of market, grade, unit, price level and date."
+        "extraction_status": "Portal existence and purpose verified; dated downloadable commodity-market observations still need extraction and verification of market, grade, unit, price level and date.",
+        "current_publication_audit": {
+          "checked_on": "2026-11-04",
+          "official_publications_page": "https://anasa.gov.gn/2021/sim-guinee/",
+          "visible_bulletin_periods": "The accessible publications list showed weekly bulletins from July to October 2024, not a current 2026 downloadable price series.",
+          "historical_coverage_note": "ANASA's SIM relaunch description documents a design covering 71 agricultural markets across 33 prefectures and Conakry, but also reports historical collection gaps, missing livestock-market collection, non-operational fish landing and border-post modules, and no daily collection.",
+          "source_url": "https://anasa.gov.gn/2021/ateliers-de-relance-du-sim-guinee-systeme-dinformations-sur-le-marches/",
+          "interpretation": "SIM is a valid official price-discovery channel, but portal existence and historical coverage are not evidence of a current complete producer-price series. Confirm each bulletin's market, product, grade, unit, date and price level before calculator use."
+        }
       },
       "provisional_market_observations_on_hold": [
         {
@@ -911,15 +919,40 @@
         }
       ],
       "remaining_gaps": [
-        "Obtain ANASA/Ministry annual agricultural survey tables for crop area, production, yields and losses by region/prefecture and season; reconcile them with USDA FAS national estimates.",
-        "Download dated ANASA SIM price bulletins and extract crop, market, grade, unit, observation date and wholesale/retail/producer price level; do not use Conakry market averages as farmgate prices.",
+        "Obtain the complete ANASA 2025-2026 EAAI report and annexes; extract crop area, production, yield, losses and livestock by prefecture, region and season with definitions and units.",
+        "Reconcile ANASA survey totals and crop-year definitions against USDA FAS MY 2025/26 estimates; keep source series separate where definitions differ.",
+        "Download dated ANASA SIM bulletins; the public list reviewed exposed 2024 weekly bulletins, not a current 2026 producer-price series. Extract market, grade, unit, date and price level.",
+        "Do not use Conakry market averages as farmgate prices; obtain producer/aggregation-market observations or explicitly model and label marketing margins.",
         "Verify 2026/27 NPK/urea and herbicide administered prices at regional distribution points, and obtain seed prices and crop-protection schedules.",
         "Obtain regional hired-labour, land preparation, machinery, irrigation, water/energy, transport and land-rent costs.",
-        "Build budgets for the matching crops and livestock enterprises; no cost schedule currently supports all 17 existing commodity profiles.",
-        "Confirm 2026 administrative boundaries and prefecture-to-region mapping before regional data aggregation.",
-        "Create regression tests for GNF currency formatting, regional selection, crop profiles and gross-margin calculations only after local budgets are validated."
+        "Build crop-specific and livestock-specific budgets for the matching profiles; no cost schedule currently supports all 17 existing commodity profiles.",
+        "Confirm implementation and prefecture-to-region assignments for the August 2026 Beyla and Siguiri administrative changes before historical data aggregation.",
+        "Create GNF currency, regional selector, enterprise mapping and gross-margin regression tests only after validated regional budgets are available."
       ],
-      "regional_administration_note": "The readiness matrix records 10 regional entries including newly created Beyla and Siguiri (August 2026); their legal implementation and updated prefecture-to-region assignments must be confirmed before assigning historical observations."
+      "regional_administration_note": "The readiness matrix records 10 regional entries including newly created Beyla and Siguiri (August 2026); their legal implementation and updated prefecture-to-region assignments must be confirmed before assigning historical observations.",
+      "annual_survey_2025_2026": {
+        "title": "Enquête Agricole Annuelle Intégrée 2025-2026",
+        "publisher": "Agence Nationale des Statistiques Agricoles et Alimentaires (ANASA), with INS validation and FAO technical support",
+        "results_presentation_date": "2026-07-09",
+        "coverage": "33 prefectures",
+        "fieldwork_duration": "six months",
+        "enumerators_reported": 230,
+        "agricultural_households_identified": 1172574,
+        "agricultural_households_sampled": 15294,
+        "individuals_in_households_reported": 8344182,
+        "sampling_frame": "Recensement National de l’Agriculture et de l’Élevage (RNAE) 2020-2022",
+        "source_url": "https://guineenews.org/2026/07/09/guinee-lanasa-presente-les-resultats-de-lenquete-agricole-annuelle-integree-2025-2026-un-outil-strategique-pour-le-programme-simandou-2040/",
+        "source_status": "publication_and_scope_confirmed_secondary_report_of_official_ANASA_results_presentation",
+        "extraction_status": "survey results presentation confirmed; underlying downloadable report and machine-readable regional crop tables not located in the public source reviewed",
+        "quality_notes": [
+          "The 15,294 households are the reported sample; do not treat them as the national number of farms.",
+          "The report is based on the RNAE 2020-2022 sampling frame and was validated by INS, according to the publication report.",
+          "The public article confirms detailed survey results were presented but does not reproduce commodity-by-prefecture tables or their units.",
+          "Do not replace the missing tables with regional allocations inferred from USDA national estimates."
+        ],
+        "next_action": "Obtain the complete ANASA 2025-2026 EAAI report and annexes directly from ANASA/INS or the national open-data portal; extract crop-by-prefecture area, output, yield, season and livestock tables with metadata."
+      },
+      "next_step": "Request the full ANASA 2025-2026 EAAI report and annexes, extract its prefecture-level crop/livestock tables, then reconcile with USDA FAS; in parallel obtain 2026 dated SIM market bulletins and regional input/labour quotations. Do not activate Guinea until at least one complete regional enterprise budget per enabled commodity and the required test cases pass."
     },
     {
       "country_code": "BJ",
