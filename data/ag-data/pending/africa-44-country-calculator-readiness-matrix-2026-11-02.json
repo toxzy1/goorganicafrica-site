@@ -1202,7 +1202,7 @@
       "code": "LR",
       "name": "Liberia",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "corrected_LAAS_2024_report_confirmed_available_original_Table_10_and_cost_wage_table_numbering_and_yield_discrepancies_require_reextraction",
+      "existing_research_note": "LISGIS official census reports page and FAO AGRISurvey catalogue checked 2026-11-04: 2024 Annual Agriculture Survey final report released 2025-12-22; 2022/23 Agriculture Census final household report and provisional non-household results also listed. Corrected LAAS-2024 PDF/table extraction still required; original yield denominators remain on hold. County-level farmgate prices and farmer-paid input/enterprise budgets missing.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
@@ -1225,7 +1225,7 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes.",
+      "next_step": "Obtain the exact corrected LAAS-2024 PDF from LISGIS; re-extract and reconcile crop table denominators, county-level output and uncertainty flags; extract cost and wage tables using body captions; then obtain dated county farmgate prices and input quotations before any calculator mapping.",
       "batch_09_review": {
         "review_date": "2026-11-02",
         "source_notes": "Liberia's Ministry of Local Government states that the country is divided into 15 counties administered by superintendents; the Local Government Act confirms 15 counties as the country's political subdivisions. The county names are cross-checked against the UNHCR legal-context county list and the Government of Liberia agricultural safeguards assessment. Districts and clans are lower administrative levels and are not included in this county-level lookup.",
@@ -1236,6 +1236,30 @@
           "https://www.moa.gov.lr/sites/default/files/documents/Liberia-SADFONS-ESMF-FINAL%20Version-d__c2020.pdf"
         ],
         "regional_lookup": "15 counties added to src/_data/calculator/regions.json; lookup only, not activated."
+      },
+      "liberia_source_review": {
+        "review_date": "2026-11-04",
+        "source_checks": [
+          {
+            "publisher": "LISGIS",
+            "source": "Census Reports",
+            "url": "https://lisgis.gov.lr/census/reports",
+            "finding": "Lists the Annual Agriculture Survey Final Report 2024 and gives its release date as 22 December 2025; also lists Agriculture Census 2024 final household and community reports."
+          },
+          {
+            "publisher": "FAO",
+            "source": "Liberia AGRISurvey data access",
+            "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/liberia/en",
+            "finding": "Confirms 2024 annual survey and 2022/23 Agriculture Census reports and interactive statistical tables are available."
+          },
+          {
+            "publisher": "FAO GIEWS",
+            "source": "Liberia Country Brief, reference date 9 January 2026",
+            "url": "https://cb.apps.fao.org/country.jsp?code=LBR",
+            "finding": "2025 paddy production preliminary forecast around 322,000 tonnes, about 7% above the previous five-year average; aggregate national estimate, not county yields or farm budgets."
+          }
+        ],
+        "safeguard": "Do not activate Liberia from report availability or aggregate paddy production. Corrected crop table validation, farmgate prices, input costs, and regional enterprise budgets remain required."
       }
     },
     {
