@@ -3,7 +3,7 @@
   "country_code": "MA",
   "country_name": "Morocco",
   "status": "research_only_not_published_to_calculator",
-  "added_on": "2026-11-03",
+  "added_on": "2026-11-04",
   "sources": [
     {
       "title": "Tomates : la chaleur perturbe la production et complique les exportations marocaines",
@@ -830,6 +830,92 @@
         "The 2023/24 values are historical context and must not be blended with 2025/26 campaign forecasts.",
         "Production totals alone are not enough to calculate farm revenue or profit."
       ]
+    },
+    {
+      "title": "Agriculture: 2025-2026 campaign shows a significant rebound in production and water resources",
+      "publisher": "Royaume du Maroc — Maroc.ma, reporting DEPF and Ministry estimates",
+      "url": "https://maroc.ma/fr/actualites/agriculture-la-campagne-2025-2026-marque-un-rebond-significatif-de-la-production-et-des-ressources",
+      "publication_date": "2026-05-26",
+      "reference_period": "2025/26 campaign",
+      "status": "government_campaign_estimates_not_crop_region_enterprise_data",
+      "observations": [
+        {
+          "indicator": "national_cereal_production_estimate",
+          "value": 90000000,
+          "unit": "quintals",
+          "status": "National campaign estimate; not final crop-by-region return"
+        },
+        {
+          "indicator": "olive_production_estimate",
+          "value": 2000000,
+          "unit": "tonnes",
+          "status": "Ministry estimate"
+        },
+        {
+          "indicator": "citrus_production_estimate",
+          "value": 1900000,
+          "unit": "tonnes",
+          "status": "National estimate"
+        },
+        {
+          "indicator": "date_production_estimate",
+          "value": 160000,
+          "unit": "tonnes",
+          "status": "National estimate"
+        },
+        {
+          "indicator": "national_livestock_herd_estimate",
+          "value": 40000000,
+          "unit": "heads",
+          "status": "Aggregate estimate; not species/region output"
+        },
+        {
+          "indicator": "dam_filling_rate",
+          "value": 76,
+          "unit": "percent",
+          "as_of": "2026-05-18",
+          "status": "National water context, not farm allocation"
+        }
+      ],
+      "quality_notes": [
+        "These are national estimates, not crop-specific regional yields or farmgate receipts.",
+        "The 90-million-quintal cereal estimate differs from FAO's July 2026 6.3-million-tonne forecast; preserve both without averaging pending final returns."
+      ]
+    },
+    {
+      "title": "FAO GIEWS Country Brief: Morocco — July 2026",
+      "publisher": "FAO GIEWS",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MAR",
+      "publication_date": "2026-07-08",
+      "reference_period": "2026 cereal harvest and 2026/27 marketing year",
+      "status": "international_agency_forecast_not_farm_budget",
+      "observations": [
+        {
+          "indicator": "total_cereal_production_forecast",
+          "value": 6300000,
+          "unit": "tonnes",
+          "campaign": "2026",
+          "status": "FAO forecast; 16 percent above five-year average"
+        },
+        {
+          "indicator": "wheat_import_requirement_forecast",
+          "value": 5000000,
+          "unit": "tonnes",
+          "marketing_year": "2026/27",
+          "status": "FAO forecast"
+        },
+        {
+          "indicator": "temporary_wheat_import_duty",
+          "value": 135,
+          "unit": "percent",
+          "period": "2026-06-01 to 2026-07-31",
+          "status": "Temporary trade measure"
+        }
+      ],
+      "quality_notes": [
+        "FAO's 6.3 million tonnes differs materially from the Moroccan government's 90 million quintals estimate reported in May; timing, definitions and coverage require reconciliation.",
+        "These forecasts are not farmgate prices, yields by region or farm budgets."
+      ]
     }
   ],
   "remaining_gaps": [
@@ -850,13 +936,16 @@
     "For Marchouch and other cereal/lentil zones, obtain 2026/27 diesel invoices or pump receipts, litres consumed by operation and hectare, and dated tractor/harvester hire quotations; the May 2026 interview provides only one farmer's MAD 1,200-to-1,800/ha tractor-diesel comparison and an unquantified machinery-rental increase.",
     "For livestock-feed costs, obtain supplier invoices that state sack weight, feed formulation, location and date; the May 2026 reported MAD 90-to-110–120 per sack comparison lacks the unit details needed for a per-kg calculator input.",
     "Obtain the 2026/27 Official Gazette decree or Ministry/SONACOS schedule for certified R2 seed retail prices and support rates; the newly recorded Official Gazette No. 7492 is a 2025/26 schedule and must not be carried forward automatically.",
-    "Reconcile the 2025/26 Official Gazette R2 maximum supported retail prices (soft wheat MAD 380/q, durum wheat MAD 500/q, barley MAD 380/q) with 2026/27 trade-publication market indications (approximately MAD 400/q soft wheat/barley and MAD 400–450/q durum) using certified class, variety, subsidy treatment, region and actual sales receipts."
+    "Reconcile the 2025/26 Official Gazette R2 maximum supported retail prices (soft wheat MAD 380/q, durum wheat MAD 500/q, barley MAD 380/q) with 2026/27 trade-publication market indications (approximately MAD 400/q soft wheat/barley and MAD 400–450/q durum) using certified class, variety, subsidy treatment, region and actual sales receipts.",
+    "Obtain final 2025/26 Ministry cereal harvest returns with crop-specific harvested area, production and yield by region; reconcile the May government 90-million-quintal estimate with FAO's July 6.3-million-tonne forecast.",
+    "Obtain official final 2025/26 olive, citrus, date and livestock data by production basin and species; current campaign figures are estimates.",
+    "Obtain region-, crop-, grade- and date-specific producer settlement slips, plus 2026/27 farmer invoices for seed, fertilizer, crop protection, irrigation, labour and machinery."
   ],
-  "conclusion": "Morocco remains research-only. The evidence register now contains 14 source records, including Morocco's Official Gazette No. 7492 (19 March 2026), a primary legal schedule of 2025/26 certified R2 seed prices and seed-support rates. The official schedule is valuable historical evidence, but it is not a 2026/27 price list and cannot be applied to ordinary seed. The 2026/27 market indications remain separate pending invoices and an updated official schedule. No calculator data are activated.",
+  "conclusion": "Morocco remains research-only. This review adds the government portal's May 2026 campaign estimates and FAO GIEWS July 2026 cereal balance. Their national cereal estimates differ materially and are retained separately pending final harvest returns. No calculator values are activated.",
   "research_status": "research_only_not_published_to_calculator",
   "quality_summary": {
-    "national_production": "Improved: official HCP historical commodity totals and 2025/26 national cereal campaign estimates are now captured with season and source definitions.",
-    "regional_data": "Partial: the ministry-reported 2025/26 cereal yield spread (15–57 q/ha) and concentration in three regions are recorded, but crop-by-region yields/areas remain unavailable.",
+    "national_production": "Updated with May 2026 government campaign estimates and July 2026 FAO forecast; cereal total discrepancy retained pending final returns.",
+    "regional_data": "Partial: broad cereal regional yield range only; crop-by-region area/yield tables remain missing.",
     "prices": "Incomplete: 2026 soft-wheat reference purchase price and 2025/26 certified-seed supported retail ceilings are already recorded in the earlier evidence file; neither substitutes for net farmer receipts or current input invoices.",
     "costs": "Incomplete: older Saïss survey and producer interviews provide contextual budget headings and historical values, not a complete current regional enterprise budget.",
     "readiness": "Morocco remains not calculator-ready; no values have been promoted into production defaults."
