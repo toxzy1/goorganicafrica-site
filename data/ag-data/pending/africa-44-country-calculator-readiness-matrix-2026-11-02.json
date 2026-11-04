@@ -1720,14 +1720,16 @@
         "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "INE 2024 production series contains national crop output but matched provincial harvested area and yield tables have not been extracted.",
-        "MAAP 2025/26 campaign values are plans/forecasts and January flood monitoring, not final season results.",
-        "Current SIMA/ICM prices are available through official collection systems, but dated downloadable observations have not been verified by commodity, province, grade, unit and transaction level.",
-        "Farmer-paid seed, fertilizer, crop protection, labour, machinery and irrigation-energy quotations remain incomplete.",
-        "Regional enterprise budgets are missing; rice production systems, bean species and commercial versus local poultry must remain separate.",
-        "Country-specific calculator mapping and deterministic regression tests have not been implemented."
+        "CAP 2023/24 now provides official provincial productivity for selected crops (maize, rice, cowpea, soybean and cassava), but full crop-by-district area/production/yield extraction and cross-check against final Excel tables remains incomplete.",
+        "CAP values describe small and medium holdings and cannot be applied to intensive commercial or protected-cropping enterprises without separate budgets.",
+        "Current SIMA/ICM prices still require original dated bulletins with commodity, province, grade, unit and transaction level; market references must not be relabelled as farmgate prices.",
+        "Farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation-energy and transport costs remain incomplete.",
+        "Regional enterprise budgets and deterministic calculator mapping/regression tests are not yet implemented."
       ],
-      "next_step": "Extract INE 2025 publication and CAP 2023/24 district Excel tables; reconcile crop-specific provincial production with matching harvested area; obtain original SIMA/ICM producer-level prices and itemized farm budgets before creating calculator tests."
+      "next_step": "Cross-check CAP provincial productivity against the final district Excel tables and sampling errors; extend crop extraction to all relevant commodities; obtain dated producer-level prices and itemized provincial input budgets before calculator mapping.",
+      "reviews": [
+        "batch_32_CAP_2023_24_provincial_productivity_extraction"
+      ]
     },
     {
       "code": "NA",
@@ -2288,5 +2290,9 @@
       ],
       "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
     }
-  ]
+  ],
+  "next_country": {
+    "code": "NA",
+    "name": "Namibia"
+  }
 }
