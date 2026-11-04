@@ -721,7 +721,7 @@
     {
       "country_code": "GN",
       "country_name": "Guinea",
-      "evidence_status": "external_official_estimates_source_identified_country_level_national_validation_pending",
+      "evidence_status": "expanded_USDA_2025_26_crop_estimates_ANASA_market_information_and_2026_27_input_campaign_identified_regional_validation_and_enterprise_costs_pending",
       "survey": {
         "title": "USDA Foreign Agricultural Service Production, Supply and Distribution country profile — Guinea",
         "publisher": "United States Department of Agriculture, Foreign Agricultural Service",
@@ -746,12 +746,13 @@
           "rice",
           "maize"
         ],
-        "extraction_status": "Source identified and current 2025/2026 country-level estimates visible. No numeric observations admitted to calculator data until commodity selector, units, marketing-year definitions and national-statistics cross-check are documented.",
+        "extraction_status": "USDA FAS 2025/26 values transcribed as independent national estimates for rice, maize/corn, groundnut, millet and sorghum; ANASA official SIM market-information portal verified; no values admitted to calculator data because regional validation, producer-price status, and full enterprise budgets remain incomplete.",
         "quality_notes": [
-          "USDA FAS is a useful independent cross-check, not Guinea's national statistical authority.",
-          "Do not map peanut to the existing beans/cowpea profile.",
-          "Do not use a cereal aggregate yield as a rice or maize yield.",
-          "Confirm each commodity's selected yield series and unit before extracting values."
+          "USDA FAS is an independent national estimate source, not Guinea's national statistical authority; retain as cross-check, not a replacement for ANASA/Ministry survey tables.",
+          "Rice yield is a simple production/harvested-area calculation from the displayed rounded USDA values (0.992 t/ha), not a separately reported national survey yield.",
+          "USDA corn yield 1.1692 t/ha is displayed for MY 2025/26; do not mix with a different calendar-year or crop-season series.",
+          "Groundnut, millet and sorghum do not map directly to the existing 17 commodity profiles; do not relabel them as beans.",
+          "No regional allocation can be inferred from national totals."
         ],
         "remaining_gaps": [
           "Guinea national agricultural statistics for crop area, production and yield",
@@ -760,6 +761,57 @@
           "certified seed and input prices",
           "farm labour, land preparation, transport and irrigation cost benchmarks",
           "livestock production and budget sources for broilers, layers, goats, cattle and pigs"
+        ],
+        "national_observations_2025_2026": [
+          {
+            "commodity": "rice",
+            "production_mt": 2480000,
+            "harvested_area_ha": 2500000,
+            "yield_mt_per_ha": 0.992,
+            "reference_period": "MY 2025/2026",
+            "source": "USDA FAS Production — Guinea",
+            "source_url": "https://fas-prod.azureedge.us/data/production/gu",
+            "source_unit": "metric tonnes; hectares; metric tonnes per hectare",
+            "status": "independent_national_estimate_not_national_survey_observation"
+          },
+          {
+            "commodity": "maize/corn",
+            "production_mt": 760000,
+            "harvested_area_ha": 650000,
+            "yield_mt_per_ha": 1.1692,
+            "reference_period": "MY 2025/2026",
+            "source": "USDA FAS Production — Guinea",
+            "source_url": "https://fas-prod.azureedge.us/data/production/gu",
+            "source_unit": "metric tonnes; hectares; metric tonnes per hectare",
+            "status": "independent_national_estimate_not_national_survey_observation"
+          },
+          {
+            "commodity": "groundnut/peanut",
+            "production_mt": 1000000,
+            "reference_period": "MY 2025/2026",
+            "source": "USDA FAS Production — Guinea",
+            "source_url": "https://fas-prod.azureedge.us/data/production/gu",
+            "source_unit": "metric tonnes",
+            "status": "independent_national_estimate_not_existing_beans_profile"
+          },
+          {
+            "commodity": "millet",
+            "production_mt": 220000,
+            "reference_period": "MY 2025/2026",
+            "source": "USDA FAS Production — Guinea",
+            "source_url": "https://fas-prod.azureedge.us/data/production/gu",
+            "source_unit": "metric tonnes",
+            "status": "independent_national_estimate_no_direct_existing_commodity_profile"
+          },
+          {
+            "commodity": "sorghum",
+            "production_mt": 65000,
+            "reference_period": "MY 2025/2026",
+            "source": "USDA FAS Production — Guinea",
+            "source_url": "https://fas-prod.azureedge.us/data/production/gu",
+            "source_unit": "metric tonnes",
+            "status": "independent_national_estimate_no_direct_existing_commodity_profile"
+          }
         ]
       },
       "price_sources": [
@@ -770,7 +822,104 @@
           "status": "regional_or_national_market_price_discovery_source",
           "note": "Use to discover domestic market price series and confirm the market, commodity, currency, unit and observation date before calculator use."
         }
-      ]
+      ],
+      "market_information": {
+        "title": "Système d’Information sur les Marchés (SIM)",
+        "publisher": "Agence Nationale des Statistiques Agricoles et Alimentaires (ANASA)",
+        "url": "https://anasa.gov.gn/2021/sim-guinee/",
+        "status": "official_market_information_service_confirmed",
+        "description": "ANASA states it regularly collects agricultural prices and, in some cases, quantities from rural aggregation, wholesale and retail markets and disseminates them to farmers and other users.",
+        "extraction_status": "Portal existence and purpose verified; dated downloadable commodity-market observations still need extraction and verification of market, grade, unit, price level and date."
+      },
+      "provisional_market_observations_on_hold": [
+        {
+          "commodity": "local_rice",
+          "market": "Conakry",
+          "price": 410000,
+          "unit": "GNF per 50 kg sack",
+          "normalized_price": 8200,
+          "normalized_unit": "GNF/kg",
+          "observation_date": "2026-09-12",
+          "source": "Le Paysan weekly market barometer",
+          "source_url": "https://lepaysan.info/",
+          "price_level": "market_average_not_verified_farmgate",
+          "status": "on_hold_until_primary_SIM_cross_check"
+        },
+        {
+          "commodity": "maize",
+          "market": "Conakry",
+          "price": 325000,
+          "unit": "GNF per 50 kg sack",
+          "normalized_price": 6500,
+          "normalized_unit": "GNF/kg",
+          "observation_date": "2026-09-12",
+          "source": "Le Paysan weekly market barometer",
+          "source_url": "https://lepaysan.info/",
+          "price_level": "market_average_not_verified_farmgate",
+          "status": "on_hold_until_primary_SIM_cross_check"
+        },
+        {
+          "commodity": "onion",
+          "market": "Conakry",
+          "price": 230000,
+          "unit": "GNF per 25 kg sack",
+          "normalized_price": 9200,
+          "normalized_unit": "GNF/kg",
+          "observation_date": "2026-09-12",
+          "source": "Le Paysan weekly market barometer",
+          "source_url": "https://lepaysan.info/",
+          "price_level": "market_average_not_verified_farmgate",
+          "status": "on_hold_not_an_existing_direct_calculator_match"
+        },
+        {
+          "commodity": "potato",
+          "market": "Conakry",
+          "price": 285000,
+          "unit": "GNF per 25 kg sack",
+          "normalized_price": 11400,
+          "normalized_unit": "GNF/kg",
+          "observation_date": "2026-09-12",
+          "source": "Le Paysan weekly market barometer",
+          "source_url": "https://lepaysan.info/",
+          "price_level": "market_average_not_an_existing_direct_calculator_match"
+        }
+      ],
+      "input_cost_observations_on_hold": [
+        {
+          "input": "NPK/urea fertilizer",
+          "price": 300000,
+          "currency": "GNF",
+          "unit": "50 kg bag",
+          "normalized_price": 6000,
+          "normalized_unit": "GNF/kg",
+          "campaign": "2026/2027",
+          "announcement_date": "2026-04-09",
+          "source": "EmergenceGN report on official campaign launch at Koba",
+          "source_url": "https://emergencegn.net/faire-de-la-campagne-agricole-2026-2027-un-levier-de-croissance-autorites/",
+          "status": "reported_government_controlled_campaign_price_requires_confirmation_at_dealer_and_region"
+        },
+        {
+          "input": "herbicide",
+          "price": 15000,
+          "currency": "GNF",
+          "unit": "litre",
+          "campaign": "2026/2027",
+          "announcement_date": "2026-04-09",
+          "source": "EmergenceGN report on official campaign launch at Koba",
+          "source_url": "https://emergencegn.net/faire-de-la-campagne-agricole-2026-2027-un-levier-de-croissance-autorites/",
+          "status": "reported_controlled_price_not_crop_specific_application_cost"
+        }
+      ],
+      "remaining_gaps": [
+        "Obtain ANASA/Ministry annual agricultural survey tables for crop area, production, yields and losses by region/prefecture and season; reconcile them with USDA FAS national estimates.",
+        "Download dated ANASA SIM price bulletins and extract crop, market, grade, unit, observation date and wholesale/retail/producer price level; do not use Conakry market averages as farmgate prices.",
+        "Verify 2026/27 NPK/urea and herbicide administered prices at regional distribution points, and obtain seed prices and crop-protection schedules.",
+        "Obtain regional hired-labour, land preparation, machinery, irrigation, water/energy, transport and land-rent costs.",
+        "Build budgets for the matching crops and livestock enterprises; no cost schedule currently supports all 17 existing commodity profiles.",
+        "Confirm 2026 administrative boundaries and prefecture-to-region mapping before regional data aggregation.",
+        "Create regression tests for GNF currency formatting, regional selection, crop profiles and gross-margin calculations only after local budgets are validated."
+      ],
+      "regional_administration_note": "The readiness matrix records 10 regional entries including newly created Beyla and Siguiri (August 2026); their legal implementation and updated prefecture-to-region assignments must be confirmed before assigning historical observations."
     },
     {
       "country_code": "BJ",
