@@ -6,7 +6,7 @@
     "currency": "XAF",
     "currency_name": "Central African CFA franc"
   },
-  "record_date": "2026-11-02",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "calculator_readiness": "not_ready_research_only",
   "purpose": "Country evidence inventory to support a later, separately validated agricultural enterprise-budget and calculator profile. This file is not calculator input and must not activate the country.",
@@ -463,6 +463,101 @@
         "The INS agricultural catalogue page reviewed does not itself provide a current administrative code list or boundary crosswalk.",
         "Do not add a Republic of the Congo region selector until the legal instrument, official department names/codes and effective date are verified from a primary government source.",
         "Do not map historical agricultural observations to the alleged new departments without a documented boundary crosswalk."
+      ]
+    },
+    {
+      "id": "world_bank_realtime_food_prices_refresh_2026_11_04",
+      "topic": "subnational monthly food-price estimates and coverage",
+      "source_name": "World Bank Microdata Library, Congo Rep. Monthly food price estimates by product and market, version 2026-10-05",
+      "source_url": "https://microdata.worldbank.org/catalog/4491",
+      "publication_or_reference_date": "Version 2026-10-05; page last modified 2026-10-08; accessed 2026-11-04",
+      "observations": [
+        {
+          "item": "Dataset coverage",
+          "value": 13,
+          "unit": "markets",
+          "status": "metadata_verified"
+        },
+        {
+          "item": "Observation period",
+          "start": "2011-01-01",
+          "end": "2026-10-01",
+          "status": "metadata_verified"
+        },
+        {
+          "item": "Geographic coverage",
+          "finding": "Likouala, Brazzaville, Pointe-Noire, Pool, Bouenza, Cuvette, Lekoumou and Market Average; selected subnational Admin 2 coverage.",
+          "status": "metadata_verified"
+        },
+        {
+          "item": "Available commodity scope",
+          "finding": "Metadata lists beans, cassava flour, oil and rice for country-level estimates; not all products are present.",
+          "status": "metadata_verified"
+        },
+        {
+          "item": "Estimation method",
+          "finding": "Weekly-updated series combine direct WFP/FAO/selected national-statistics-office price observations with machine-learning estimates for missing entries; historical and current estimates can be revised.",
+          "status": "methodology_verified"
+        }
+      ],
+      "caveats": [
+        "These are market/food-price estimates, not verified farmgate receipts or producer prices.",
+        "Some observations are model-imputed; preserve observed-versus-imputed status and do not treat all estimates as direct market measurements.",
+        "Commodity coverage is limited; the metadata lists beans, cassava flour, oil and rice, not the full calculator commodity catalogue.",
+        "Use for market-price context and cross-checking only until downloadable records, units, market labels and observation provenance are inspected."
+      ]
+    },
+    {
+      "id": "soko_market_price_sample_refresh_2026_11_04",
+      "topic": "dated market-price sample and local price-platform coverage",
+      "source_name": "Soko by Yelessa, Republic of Congo market intelligence platform",
+      "source_url": "https://soko.yelessa.cg/en",
+      "publication_or_reference_date": "Public sample bulletin validated 2026-04-27; accessed 2026-11-04",
+      "observations": [
+        {
+          "item": "Cassava, Brazzaville",
+          "value": 320,
+          "unit": "XAF/kg",
+          "period": "2026-04-27",
+          "status": "platform_published_market_price_sample"
+        },
+        {
+          "item": "Tomato, Pointe-Noire",
+          "value": 850,
+          "unit": "XAF/kg",
+          "period": "2026-04-27",
+          "status": "platform_published_market_price_sample"
+        },
+        {
+          "item": "Plantain banana, Dolisie",
+          "value": 410,
+          "unit": "XAF/kg",
+          "period": "2026-04-27",
+          "status": "platform_published_market_price_sample"
+        },
+        {
+          "item": "Markets covered",
+          "value": 22,
+          "unit": "markets",
+          "status": "platform_claim"
+        },
+        {
+          "item": "Products listed",
+          "value": 27,
+          "unit": "products",
+          "status": "platform_claim"
+        },
+        {
+          "item": "Collection method",
+          "finding": "Platform describes weekly on-site stall surveys, recording prices, units, stocks and quality, with a second-agent verification step.",
+          "status": "provider_methodology_claim"
+        }
+      ],
+      "caveats": [
+        "The sample bulletin is dated 27 April 2026 and is not a November 2026 price quote.",
+        "The prices are market-stall observations, not confirmed farmgate prices; do not use as direct farm revenue assumptions.",
+        "Full prices and 90-day history require an account; the public sample is insufficient to build a complete crop-by-region series.",
+        "Platform coverage and verification process are provider claims and should be checked against downloadable records and independent field observations."
       ]
     }
   ],
