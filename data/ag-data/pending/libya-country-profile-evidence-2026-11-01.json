@@ -6,7 +6,7 @@
     "currency": "LYD",
     "currency_name": "Libyan dinar"
   },
-  "record_date": "2026-11-01",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "purpose": "Country evidence register entry. This record documents sourced agricultural context and identifies data suitable for later validation; it is not an enterprise budget, price feed, or calculator profile.",
   "calculator_readiness": "not_ready_research_only",
@@ -417,6 +417,116 @@
         "The Ministry describes capacity-building and preparation for a comprehensive agricultural census, not publication of completed census results.",
         "This supports the assessment that a current, complete national farm census dataset was not located in this research pass."
       ]
+    },
+    {
+      "id": "LY-10",
+      "topic": "Daily local consumer-market prices by product and commodity group",
+      "source": "Local Price Index, Libya Trade Network (Libyan Ministry of Economy and Trade)",
+      "source_url": "https://lpi.ltnet.gov.ly/",
+      "reference_date": "2026-11-03",
+      "values": [
+        {
+          "indicator": "tomato_price",
+          "value": 10,
+          "unit": "LYD/kg",
+          "period": "2026-11-03",
+          "status": "reported_retail_price",
+          "market_level": "retail",
+          "note": "First-grade local-market tomato; not a farmgate producer price."
+        },
+        {
+          "indicator": "cucumber_price",
+          "value": 8,
+          "unit": "LYD/kg",
+          "period": "2026-11-03",
+          "status": "reported_retail_price",
+          "market_level": "retail",
+          "note": "Local-market cucumber; not a farmgate producer price."
+        },
+        {
+          "indicator": "green_hot_pepper_price",
+          "value": 7,
+          "unit": "LYD/kg",
+          "period": "2026-11-03",
+          "status": "reported_retail_price",
+          "market_level": "retail",
+          "note": "First-grade local-market green hot pepper; variety equivalence to calculator Habanero/pepper profiles is not established."
+        },
+        {
+          "indicator": "sweet_pepper_price",
+          "value": 12,
+          "unit": "LYD/kg",
+          "period": "2026-11-03",
+          "status": "reported_retail_price",
+          "market_level": "retail",
+          "note": "First-grade local-market sweet pepper; not a farmgate producer price."
+        },
+        {
+          "indicator": "red_pepper_price",
+          "value": 10,
+          "unit": "LYD/kg",
+          "period": "2026-11-03",
+          "status": "reported_retail_price",
+          "market_level": "retail",
+          "note": "First-grade local-market red pepper; type/grade mapping needs confirmation."
+        },
+        {
+          "indicator": "local_chicken_meat_price",
+          "value": 17.5,
+          "unit": "LYD/kg",
+          "period": "2026-11-03",
+          "status": "reported_retail_price",
+          "market_level": "retail",
+          "note": "Locally produced chicken meat, retail market; not a live-bird farmgate price."
+        },
+        {
+          "indicator": "ordinary_eggs_price",
+          "value": 24,
+          "unit": "LYD/30 eggs",
+          "period": "2026-11-03",
+          "status": "reported_retail_price",
+          "market_level": "retail",
+          "note": "Ordinary eggs, retail market; not a producer-gate price."
+        }
+      ],
+      "caveats": [
+        "The index is an official local consumer-market price bulletin, not a farmgate producer-price series.",
+        "The displayed bulletin includes product-specific units, but this pass did not establish a consistent district-level market identifier for every item.",
+        "Do not use these values as crop or livestock revenue prices in the calculator.",
+        "These observations can support retail-market context and later price-spread analysis only after producer prices are independently sourced."
+      ]
+    },
+    {
+      "id": "LY-11",
+      "topic": "Official 2024-2025 local market-price workbook",
+      "source": "Libya Trade Network, Libyan Ministry of Economy and Trade open-data platform",
+      "source_url": "https://opendata.gia.gov.ly/dashboard/dataset/2024-2025",
+      "reference_date": "Dataset updated 2026-09-29",
+      "values": [
+        {
+          "indicator": "dataset_period",
+          "value": "2024-2025",
+          "unit": "calendar years",
+          "status": "dataset_metadata"
+        },
+        {
+          "indicator": "price_statistics",
+          "value": "annual minimum, maximum and average prices plus percentage change",
+          "unit": "dataset description",
+          "status": "dataset_metadata"
+        },
+        {
+          "indicator": "commodity_groups",
+          "value": "food, meat, poultry, eggs, vegetables, fruits, grains and animal feed",
+          "unit": "groups",
+          "status": "dataset_metadata"
+        }
+      ],
+      "caveats": [
+        "The downloadable XLSX is listed by the official platform but its numeric rows have not yet been extracted in this research pass.",
+        "The platform describes local-market prices; wholesale/retail status, market geography, commodity grades and transport/tax treatment must be checked in the workbook.",
+        "Do not classify the workbook as farmgate evidence without explicit producer-market metadata."
+      ]
     }
   ],
   "data_quality_assessment": {
@@ -425,7 +535,8 @@
       "A World Bank 41-market monthly food-price dataset updated through 2026-10-01.",
       "An official Libya Trade Network local market price dataset for 2024-2025.",
       "FAOSTAT-sourced national crop and livestock leads for 2024.",
-      "IFAD regional farm-structure context, WFP/Ministry smallholder assessment, and FAO irrigation-infrastructure research."
+      "IFAD regional farm-structure context, WFP/Ministry smallholder assessment, and FAO irrigation-infrastructure research.",
+      "Official Local Price Index bulletin dated 2026-11-03 provides item-level retail observations for vegetables, poultry and eggs with units; these are explicitly excluded from farmgate revenue inputs."
     ],
     "material_gaps": [
       "No verified current farm-gate producer price series extracted.",
@@ -434,7 +545,9 @@
       "World Bank Real-Time Food Price estimates are consumer-market series with imputation and are not farm-gate prices.",
       "The 2024 crop and livestock totals need direct FAOSTAT item/element verification; barley yield metadata has an apparent internal inconsistency.",
       "No completed current agricultural census tables were located; the Ministry reported census preparation in January 2026.",
-      "Irrigation-water costs and groundwater sustainability vary by region and are not represented by a single national cost."
+      "Irrigation-water costs and groundwater sustainability vary by region and are not represented by a single national cost.",
+      "A current official daily retail bulletin is now documented, but it does not close the farmgate-price gap; producer prices by commodity, market, grade and date are still missing.",
+      "The official 2024-2025 local market-price XLSX is identified at its corrected dataset URL, but its rows and market-level classifications still need extraction."
     ],
     "readiness_decision": "not_ready_research_only",
     "conditions_before_calculator_activation": [
