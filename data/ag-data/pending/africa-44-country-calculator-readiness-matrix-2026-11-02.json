@@ -2375,30 +2375,57 @@
       "code": "ZW",
       "name": "Zimbabwe",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "official_2024_25_post_harvest_survey_and_2026_market_price_evidence_added_area_yield_and_farm_budget_reconciliation_pending",
+      "existing_research_note": "November 2026 refresh: ZIMSTAT September 2026 agricultural PPI portal lists USD, ZWG and weighted datasets; GMB 2026/27 reported producer incentive prices (wheat USD531.93/MT, maize/traditional grains USD432/MT, soybean USD660.95/MT, sunflower USD826.19/MT); FEWS NET Sep 2026-Jan 2027 El Niño/market/livestock risk; Government 21-Oct 2026 cereal plan projection 1.607m MT vs 2.270m MT requirement; 3-Nov input distribution progress. AMA June 2025 agro-input prices retained as historical only. PPI data rows, PHS harvested-area tables, and current farmer-paid input costs remain unextracted.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "not_yet_audited",
-        "dated_local_farmgate_prices_and_units": "not_yet_audited",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "not_yet_audited",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "not_yet_audited",
-        "currency_and_exchange_rate_method": "not_yet_audited",
-        "source_provenance_and_observation_date": "not_yet_audited",
-        "calculator_mapping_and_test_cases": "not_yet_audited"
+        "crop_area_production_yield_by_commodity_and_season": "partial_2024_25_official_post_harvest_crop_output_and_provincial_sector_splits; matched_crop_specific_harvested_area_and_weighted_yields_pending; soybean_output_conflict_requires_ZIMSTAT_clarification",
+        "dated_local_farmgate_prices_and_units": "partial_2026_27_GMB_policy_incentive_prices_for_selected_grains_oilseeds; ZIMSTAT_PPI_A_September_2026_dataset_available_but_product_level_rows_not_extracted; horticulture_livestock_transaction_prices_missing",
+        "seed_and_planting_material_costs": "partial_2025_AMA_agrodealer_seed_quotes_historical_only; 2026_27_input_distribution_progress_reported_but_farmer_paid_prices_and_subsidy_terms_missing",
+        "fertilizer_and_soil_amendment_costs": "partial_2025_AMA_fertilizer_quotes_historical_only_and_2026_27_distribution_progress; current_2026_27_product_unit_prices_and_farmer_copayments_missing",
+        "crop_protection_costs": "blocked_no_current_dated_district_product_level_pesticide_cost_schedule_extracted",
+        "irrigation_water_and_energy_costs": "partial_government_and_FEWS_NET_water_and_drought_context; farmer_paid_irrigation_tariffs_pumping_energy_and_crop_specific_costs_missing",
+        "labour_rates_and_operations": "blocked_no_dated_provincial_farm_labour_and_operation_rate_schedule_extracted",
+        "machinery_and_land_preparation_costs": "blocked_no_current_district_machinery_hire_land_preparation_and_transport_cost_schedule_extracted",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_complete_province_and_agroecological_zone_enterprise_budgets; rainfed_irrigated_horticulture_and_livestock_systems_need_separate_costs",
+        "currency_and_exchange_rate_method": "partial_USD_and_ZWG_PPI_series_available; calculator_currency_rules_and_exchange_rate_date_policy_not_validated",
+        "source_provenance_and_observation_date": "pass_for_2024_25_ZIMSTAT_PHS_2026_09_PPI_2026_09_11_GMB_price_announcement_2026_09_FEWS_NET_and_2026_10_21_2026_11_03_policy_updates; underlying_PPI_rows_not_extracted",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_province_enterprise_mapping_or_calculator_regression_cases"
       },
       "blockers": [
-        "Extract country-specific commodity observations from the cited primary sources.",
-        "Resolve inconsistent definitions, units, seasons and reporting years.",
-        "Obtain dated farmgate prices and farmer-facing input quotations.",
-        "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
-        "Map only validated values to the existing calculator schema and add test cases."
+        "Extract crop-specific harvested area and province/sector yields from the 2024/25 Post-Harvest Survey; do not derive yields from planted area.",
+        "Resolve soybean output inconsistency in the official report (57,750 MT in Tables 3.2/3.8 versus 7,750 MT in Table 3.7).",
+        "Download and extract September 2026 ZIMSTAT agricultural PPI USD, ZWG and weighted datasets; distinguish price indices from absolute commodity prices.",
+        "Obtain dated farmgate prices for horticulture, pulses, rice and livestock; GMB incentive prices are policy planning prices, not proof of private transactions.",
+        "Refresh district-level 2026/27 AMA agro-input monitor prices for seed, fertilizer, pesticides, feed and veterinary products; 2025 quotes are not current.",
+        "Obtain farmer-paid costs for labour, land preparation, machinery, irrigation, pumping energy, diesel, transport and crop protection by province.",
+        "Separate rainfed summer crops, irrigated winter wheat, horticulture and livestock budgets; incorporate El Niño risk without inventing yield scenarios.",
+        "Build and test validated province/zone-specific enterprise budgets before enabling Zimbabwe."
       ],
-      "next_step": "Inspect the linked evidence file, extract source-backed observations, and update each criterion with pass, partial, unavailable or blocked plus source/date/unit notes."
+      "next_step": "Extract the ZIMSTAT September 2026 PPI-A datasets and the PHS crop-specific harvested-area/provincial tables; resolve the soybean discrepancy, then refresh AMA district input quotes and collect non-cereal farmgate prices and full production costs.",
+      "november_2026_review": {
+        "review_date": "2026-11-04",
+        "country_name": "Zimbabwe",
+        "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
+        "evidence_commit": "74930e51779387af376e9a876fb58b440d071cc2",
+        "source_notes": "ZIMSTAT's PPI-A portal lists September 2026 USD, ZWG and weighted datasets; values/rows remain to be extracted and an index is not an absolute farmgate price. GMB 2026/27 announced producer incentive prices reported 11-Sep-2026: winter wheat USD531.93/MT, maize/traditional grains USD432/MT, soybean USD660.95/MT, sunflower USD826.19/MT. FEWS NET September 2026 update warns of likely El Niño-related below-average rainfall, higher input costs, localized livestock and market stress; winter wheat planted area 130,300 ha is an ADAS planted-area figure, not harvested area. Government's 21-Oct-2026 plan projects 1.607m MT cereals against 2.270m MT requirement; planning projection, not actual production. 3-Nov input distribution update reports maize seed/top-dressing fertilizer distribution nearly complete, basal fertilizer just under 30%, sorghum seed about 25%; these are programme distribution metrics, not farmer-paid prices. AMA input price examples from June 2025 are retained as historical leads only. Official PHS soybean table conflict remains unresolved.",
+        "sources": [
+          "https://www.zimstat.co.zw/wp-content/uploads/production/agriculture/2024_25_POST_HARVEST_SURVEY_REPORT_141025.pdf",
+          "https://zimstat.co.zw/producer-price-index-agriculture/",
+          "https://www.heraldonline.co.zw/government-approves-grain-producer-prices/",
+          "https://fews.net/southern-africa/zimbabwe/key-message-update/september-2026",
+          "https://www.heraldonline.co.zw/govt-to-leverage-on-strategic-grain-reserve-irrigation-to-mitigate-effects-of-el-nino/",
+          "https://www.heraldonline.co.zw/government-steps-up-summer-cropping-inputs-distribution/",
+          "https://www.zimbabwesituation.com/news/presidential-inputs-deliveries-gather-momentum/",
+          "https://m.businessdaily.co.zw/index-id-national-zk-50872.html"
+        ],
+        "blockers": [
+          "Extract ZIMSTAT PPI-A underlying datasets and official PHS harvested-area/provincial tables.",
+          "Clarify soybean output conflict in PHS.",
+          "Refresh current district-level input prices and collect farmgate prices and farmer-paid cost schedules.",
+          "Build regional enterprise budgets and calculator test cases; Zimbabwe remains inactive."
+        ],
+        "decision": "Research refresh saved; Zimbabwe remains inactive and is not calculator-ready."
+      }
     }
   ],
   "next_country": {
