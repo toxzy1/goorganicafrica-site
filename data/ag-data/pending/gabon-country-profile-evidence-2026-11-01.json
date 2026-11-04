@@ -2,7 +2,7 @@
   "country": "Gabon",
   "iso_alpha2": "GA",
   "iso_alpha3": "GAB",
-  "record_date": "2026-11-02",
+  "record_date": "2026-11-04",
   "status": "research_only_not_published_to_calculator",
   "scope": "Research-only national evidence; not a calculator profile and not authorization to activate Gabon.",
   "currency": {
@@ -322,7 +322,9 @@
     "Reconcile national RGA/EPVA, FAOSTAT and World Bank series before deriving yields or trends.",
     "Download and extract the eight RGA volumes listed by the Ministry; prioritise crop and province tables, definitions, reference periods and units.",
     "Extract EPVA 2022-2023 statistical tables by crop, livestock type and province; reconcile with RGA and FAOSTAT before deriving yields.",
-    "Validate whether any administrative boundary changes occurred after the Ministry's 2016 DGAT structure before using department-level crosswalks."
+    "Validate whether any administrative boundary changes occurred after the Ministry's 2016 DGAT structure before using department-level crosswalks.",
+    "Reconcile the cassava and plantain province-row sums against EPVA national totals and the underlying Volume 2 PDF; the current Batch 50 transcriptions do not arithmetically reconcile.",
+    "Obtain current producer/farmgate prices; July 2026 INSTAT IHPC prices and September 2026 fair prices are consumer-facing market observations only."
   ],
   "data_quality": {
     "overall": "moderate_for_sector_context_low_for_calculator_inputs",
@@ -340,7 +342,9 @@
       "Retail/import prices cannot substitute for farm-gate prices",
       "2026 FAO cereal balance and rainfall effects are forecasts/assessments, not final annual statistics",
       "The Ministry's official territorial page confirms nine provinces and 48 departments, but the underlying DGAT counts are dated May 2016; current lower-level boundaries should be rechecked."
-    ]
+    ],
+    "plantain_table_reconciliation": "HOLD: the Batch 50 correction file's nine province rows sum to 1,407 ha and 6,107 t, while its stated national total is 1,360 ha and 5,395 t. The original Batch 50 file also contains conflicting totals (1,094 ha and 4,778 t). Do not use plantain province or national totals in calculator mapping until the original INSTAT EPVA Volume 2 Tables 119-121 are rechecked and reconciled.",
+    "cassava_table_reconciliation": "HOLD: the nine province rows in the Batch 50 file sum to 4,287 ha and 17,374 t, compared with its stated national total of 4,438 ha and 18,035 t. Recheck original INSTAT tables and transcription before using numeric yields or production in calculator mapping."
   },
   "calculator_readiness": {
     "status": "not_ready_research_only",
@@ -348,7 +352,9 @@
       "No extracted validated crop-level RGA/EPVA area-production-yield panel",
       "No current provincial farm-gate prices with source and verification date",
       "No current crop-specific enterprise budgets and input quotations",
-      "No reconciled livestock series for enterprise modelling"
+      "No reconciled livestock series for enterprise modelling",
+      "EPVA cassava and plantain transcriptions have province-to-national arithmetic discrepancies and must be reconciled against the original PDF before numeric calculator use.",
+      "Available July 2026 IHPC and September 2026 fair prices are consumer/event retail prices, not producer farmgate prices."
     ],
     "recommendation": "Keep Gabon directory-only and inactive. Do not calculate farm profit from national supply gaps, cereal import requirements, retail prices or approximate historical sector estimates. Reassess after RGA/EPVA tables, current farm-gate prices and locally validated budgets are extracted."
   },
@@ -377,5 +383,61 @@
       "name": "US Department of Commerce, Gabon Agriculture guide",
       "url": "https://www.trade.gov/country-commercial-guides/gabon-agriculture"
     }
-  ]
+  ],
+  "market_price_context": {
+    "reference_period": "July 2026 INSTAT IHPC observations; 5 September 2026 AGP agricultural fair",
+    "source_type": "consumer_market_retail_and_event_sale_prices_not_farmgate",
+    "instat_source": "INSTAT Gabon, IHPC July 2026 bulletin, published 17 August 2026",
+    "instat_url": "https://ihpc.instatgabon.org/bulletin.html",
+    "unit": "XAF/kg",
+    "observations": [
+      {
+        "commodity": "fresh tomato",
+        "period": "2026-07",
+        "Libreville": 1353,
+        "Port_Gentil": 1683,
+        "other_urban": 2027,
+        "rural": 1748,
+        "level": "consumer_price"
+      },
+      {
+        "commodity": "fresh onion",
+        "period": "2026-07",
+        "Libreville": 1687,
+        "Port_Gentil": 1506,
+        "other_urban": 2787,
+        "rural": 4011,
+        "level": "consumer_price"
+      }
+    ],
+    "event_source": "Agence Gabonaise de Presse, 5 September 2026 agricultural fair at Nzeng-Ayong, Libreville",
+    "event_url": "https://agpgabon.ga/gabon-marche-agricole-a-des-tarifs-des-produits-du-terroir-attractifs-pour-lutter-contre-la-vie-chere/",
+    "event_observations": [
+      {
+        "commodity": "cassava tuber",
+        "price": 300,
+        "unit": "XAF/kg",
+        "level": "direct-sale consumer/event price"
+      },
+      {
+        "commodity": "taro",
+        "price": 500,
+        "unit": "XAF/kg",
+        "level": "direct-sale consumer/event price"
+      },
+      {
+        "commodity": "onion",
+        "price": 1000,
+        "unit": "XAF/kg",
+        "level": "direct-sale consumer/event price"
+      },
+      {
+        "commodity": "pork",
+        "price": 1500,
+        "unit": "XAF/kg",
+        "level": "event retail price"
+      }
+    ],
+    "caveat": "These sources provide consumer-facing retail/event prices and geographic price context only. They must not be mapped into the calculator's producer/farmgate price fields or treated as province-wide producer quotations."
+  }
 }
