@@ -404,8 +404,10 @@
       "name": "Niger",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "review_status": "Batch 33: INS 2025 national 2024 crop output/area/yield series and livestock inventory extracted; SIMA weekly regional price and fertilizer data exports identified; regional enterprise budget and farmgate validation pending",
-      "calculator_status": "directory_only_not_active"
+      "review_status": "2026-11-05_follow_up_SIMA_September_2026_validated_national_consumer_price_series_and_October_week42_bulletin_coverage_reviewed_regional_market_price_exports_available_but_producer_price_level_and_units_not_validated_regional_crop_yields_and_enterprise_budgets_pending",
+      "calculator_status": "directory_only_not_active",
+      "follow_up_evidence_file": "data/ag-data/pending/niger-follow-up-evidence-2026-11-05.json",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "CG",
