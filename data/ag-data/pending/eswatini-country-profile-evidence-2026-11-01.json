@@ -662,7 +662,11 @@
       "https://ehis.co.sz/",
       "https://times.co.sz/32328/business/harnessing-data-to-transform-agriculture-unpacking-ehis/",
       "https://agribusinessmedia.com/2026/05/08/ehis-to-link-farmers-directly-with-retailers-as-namboard-targets-market-chaos/",
-      "https://agribusinessmedia.com/2026/08/18/e65-million-subsidy-opens/"
+      "https://agribusinessmedia.com/2026/08/18/e65-million-subsidy-opens/",
+      "https://agrinfosystems.gov.sz/Prices_encabeni.php",
+      "https://agrinfosystems.gov.sz/Prices_manzini.php",
+      "https://agrinfosystems.gov.sz/Prices_mahlanya.php",
+      "https://agrinfosystems.gov.sz/Prices_mbabane.php"
     ],
     "documents_found": [
       {
@@ -715,6 +719,36 @@
       "Obtain crop-by-region harvested area and output for the four administrative regions and reconcile with the Ministry 2024 assessment and FAO 2026 maize estimate.",
       "Only after extraction, map supported crops to the existing 17 calculator enterprises and build regional regression cases; keep Eswatini research-only meanwhile."
     ],
-    "decision": "Keep Eswatini research-only. A high-value official data source has been located, but the linked workbooks have not yet been extracted, current farm-gate prices are not validated, and complete regional enterprise budgets and test cases remain outstanding. No calculator profile or formula changes."
+    "decision": "Keep Eswatini research-only. A high-value official data source has been located, but the linked workbooks have not yet been extracted, current farm-gate prices are not validated, and complete regional enterprise budgets and test cases remain outstanding. No calculator profile or formula changes.",
+    "market_page_audit": {
+      "review_date": "2026-11-05",
+      "sources": [
+        {
+          "market": "Encabeni Floor Market",
+          "url": "https://agrinfosystems.gov.sz/Prices_encabeni.php",
+          "latest_listed_observation": "2024-05-24",
+          "status": "no_2025_or_2026_market_file_visible_on_public_page"
+        },
+        {
+          "market": "Manzini Market",
+          "url": "https://agrinfosystems.gov.sz/Prices_manzini.php",
+          "latest_legitimate_market_file": "2024-05-24",
+          "status": "page_contains_unrelated_or_suspicious_uploaded_files_dated_2026-08; excluded from agricultural evidence"
+        },
+        {
+          "market": "Mahlanya Market",
+          "url": "https://agrinfosystems.gov.sz/Prices_mahlanya.php",
+          "latest_listed_observation": "2024-05-24",
+          "status": "no_2025_or_2026_market_file_visible_on_public_page"
+        },
+        {
+          "market": "Mbabane Market",
+          "url": "https://agrinfosystems.gov.sz/Prices_mbabane.php",
+          "latest_listed_observation": "2024-05-24",
+          "status": "no_2025_or_2026_market_file_visible_on_public_page"
+        }
+      ],
+      "conclusion": "Although the central AIIS document register lists a 2025 weekly market-price workbook, the individual public market pages currently expose files only through May 2024. The 2025 workbook therefore requires inspection and date/channel verification before it can be treated as current local price evidence. The Manzini public page includes unrelated uploaded files (PHP, shell, VBS and test artifacts dated August 2026); these are excluded and not treated as agricultural records."
+    }
   }
 }
