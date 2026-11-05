@@ -343,7 +343,7 @@
       "price_as_of": "2026-08",
       "source": "Botswana-specific BAMB cowpea producer/market price schedule (July/August 2026); yield and production cost remain Africa benchmark estimates, not Botswana farm measurements or enterprise budgets.",
       "as_of": "2026-08",
-      "cost_source": "Africa benchmark estimate; not a Botswana-specific farmer-paid input or enterprise budget.",
+      "cost_source": "Africa benchmark estimate; not a Botswana-specific farmer-paid input or enterprise budget. Botswana 2026/27 Lemang Dijo voucher values are recorded separately as subsidy evidence only.",
       "cost_as_of": "2026-10",
       "data_quality": "country_specific_price_and_yield_with_benchmark_cost",
       "price_source_url": "https://www.farmersplatform.co.bw/market-data",
@@ -354,7 +354,13 @@
       "yield_unit": "tonnes",
       "yield_source": "Botswana-specific evidence: national cowpea yield reported around 139 kg/ha by Statistics Botswana (2013); peer-reviewed Botswana field-evaluation paper reports national average around 300 kg/ha and trial genotype yields ranging 318–866 kg/ha. The high scenario is an observed trial-genotype ceiling, not a national commercial average.",
       "yield_source_url": "https://academicjournals.org/journal/AJAR/article-full-text/41CE99A64882",
-      "yield_reference_url": "https://www.statsbots.org.bw/agriculture"
+      "yield_reference_url": "https://www.statsbots.org.bw/agriculture",
+      "seed_rate_kg_per_ha": 10,
+      "seed_rate_source": "Seed Co Botswana rain-fed crop guidance: cowpeas 10 kg/ha. This is a recommended sowing rate, not a seed price.",
+      "seed_rate_source_url": "https://seedcogroup.com/bw/fieldcrops/media/faqs/",
+      "cost_reference": "Botswana's 2026/27 Lemang Dijo one-hectare voucher lists programme support values for seeds (P580), harrowing (P495), ploughing (P1,045), planting (P495), pesticides/herbicides (P480), and fertiliser support up to P3,600 after soil testing. These are subsidy/voucher values, not a complete farmer-paid cowpea enterprise budget; they are not substituted for the calculator's disclosed benchmark cost.",
+      "cost_reference_as_of": "2026/27",
+      "cost_reference_url": "https://lemangdijo.com/"
     },
     {
       "country_code": "GQ",
