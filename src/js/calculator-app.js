@@ -118,6 +118,7 @@
       yield_unit: usable.find(function(r){return r.yield_unit;})?.yield_unit,
       price_low: moneyMedian("price_low"),
       price_expected: moneyMedian("price_expected"),
+      price_per_unit: moneyMedian("price_per_unit"),
       price_high: moneyMedian("price_high"),
       price_unit: usable.find(function(r){return r.price_unit;})?.price_unit,
       output_low: median(usable.map(function(r){return r.output_low;})),
