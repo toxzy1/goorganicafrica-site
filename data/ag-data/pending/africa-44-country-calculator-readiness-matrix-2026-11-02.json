@@ -700,19 +700,14 @@
         "regional_enterprise_budget_and_gross_margin": "blocked_no_regional_crop_yield_farmgate_price_and_itemized_cost_bundle",
         "currency_and_exchange_rate_method": "partial_XAF_currency_confirmed; calculator rounding_and_locale tests pending",
         "source_provenance_and_observation_date": "improved_INEGE_2026_PDF_tables_and_2026_government_policy_sources_extracted; conflicting series and reference periods explicitly flagged",
-        "calculator_mapping_and_test_cases": "17_of_17_commodity_profiles_have_GQ_benchmark_fallback_rows_and_aggregate_sync; automated_site_build_and_live_browser_tests_pending; benchmark-only not local validation"
+        "calculator_mapping_and_test_cases": "17_of_17_commodity_profiles_have_GQ_benchmark_rows_and_aggregate_sync; static benchmark calculation check passed for crop yields/prices, livestock survival/price_per_unit and layer output; automated full build/browser test pending"
       },
       "blockers": [
-        "Reconcile the INEGE 2026 crop-output table with FAOSTAT/GIEWS 2024 estimates; confirm units, source coverage, scope and whether the INEGE series is partial.",
-        "Obtain exact crop harvested-area values; the INEGE table prints threshold expressions such as >5,000 ha, not exact areas.",
-        "Extract raw FAOSTAT GNQ crop area, production, yield and flags for 2020–2024 across the 17 calculator commodities.",
-        "Extract FAOSTAT GNQ producer-price rows by commodity, unit, year and observation flag; validate against INPAGE purchase records.",
-        "Obtain the final 2026/27 cocoa, coffee and coconut minimum-price decree with grade and unit amounts; the March report only describes a draft.",
-        "Obtain farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation, transport and post-harvest quotations; Oct 2026 input procurement negotiations are not farmer price lists.",
-        "Build region-specific enterprise budgets only after yields, first-sale prices and local costs are supported.",
-        "Current active calculator values are Africa-wide benchmark estimates only; all 17 profiles still need Equatorial Guinea-specific yields, prices and production costs before country-specific certification."
+        "All 17 current GQ profiles use transparent Africa-wide benchmark estimates, not verified Equatorial Guinea farm-gate prices, yields or budgets.",
+        "Reconcile INEGE and FAOSTAT production series and obtain region-level yield and harvested-area data.",
+        "Obtain current producer-price schedule and local input/labour/machinery/irrigation quotations before country-specific certification."
       ],
-      "next_step": "Run project build and calculator smoke tests for all 17 GQ enterprises; then replace benchmark inputs with validated FAOSTAT, INPAGE and regional enterprise-budget observations."
+      "next_step": "Run full project build and browser smoke tests for GQ English/French/Arabic/Portuguese/Swahili pages and all 17 enterprise profiles; then replace benchmark inputs with validated local data."
     },
     {
       "code": "ER",
