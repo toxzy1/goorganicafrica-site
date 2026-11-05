@@ -1,0 +1,265 @@
+{
+  "country": "Republic of the Congo",
+  "iso2": "CG",
+  "iso3": "COG",
+  "batch": 58,
+  "review_date": "2026-11-05",
+  "status": "research_refreshed_not_calculator_ready_not_active",
+  "purpose": "Research refresh for the 44 additional-country calculator programme. Not calculator input and must not activate this country.",
+  "currency": {
+    "code": "XAF",
+    "name": "Central African CFA franc",
+    "note": "Use XAF for display and accounting; validate unit conversions, rounding and any regional price reporting before implementation."
+  },
+  "primary_agricultural_statistics": {
+    "publisher": "Institut National de la Statistique du Congo (INS-Congo)",
+    "production_survey_2024": {
+      "title": "Enquête sur les productions végétales 2024",
+      "status": "listed_as_downloadable_document_on_INS_portal_under_Enquêtes_de_Productions",
+      "url": "https://site-ins-congo.vercel.app/enquete-productions.html",
+      "limitation": "The portal catalogue confirms the report exists, but the underlying PDF tables were not extracted in this pass. Do not claim its crop tables have been validated."
+    },
+    "agriculture_census_2024": {
+      "title": "RGA-Congo 2024 - Résultats préliminaires",
+      "status": "listed_on_INS_agricultural_census_catalogue",
+      "url": "https://www.onmc.fr/recensement-agriculture.html",
+      "limitation": "Preliminary census report listing only; detailed tables and methods remain to be extracted."
+    },
+    "related_documents": [
+      {
+        "year": 2023,
+        "title": "RGA - Superficies cultivées et productions 2023",
+        "status": "listed_not_extracted"
+      },
+      {
+        "year": 2022,
+        "title": "RGA - Rapport sur les exploitations agricoles 2022",
+        "status": "listed_not_extracted"
+      },
+      {
+        "year": 2021,
+        "title": "Recensement de l'agriculture vivrière 2021",
+        "status": "listed_not_extracted"
+      },
+      {
+        "year": 2020,
+        "title": "Atlas agricole du Congo 2020",
+        "status": "listed_not_extracted"
+      },
+      {
+        "year": 2023,
+        "title": "Statistiques des productions animales au Congo 2023",
+        "status": "listed_not_extracted"
+      },
+      {
+        "year": 2024,
+        "title": "Indicateurs agricoles du Congo 2024",
+        "status": "listed_not_extracted"
+      }
+    ],
+    "official_contact": "contact@ins-congo.cg",
+    "caveat": "A publication catalogue is evidence that a source exists, not evidence that its numerical tables have been retrieved or quality-checked."
+  },
+  "crop_production_and_seasonality": {
+    "FAO_GIEWS_reference_date": "2026-06-23",
+    "main_food_crop": "Cassava, cultivated through the year in northern and southern areas with seasonal timing depending on rainfall.",
+    "maize_2026": "Main season harvest completed January 2026 and assessed near average; secondary crop planted through March for July harvest under generally favourable moisture conditions. These are qualitative outlook statements, not yield observations.",
+    "cereal_import_forecast_2026": {
+      "total_t": 410000,
+      "wheat_t": 260000,
+      "rice_t": 100000,
+      "import_share_of_cereal_utilization_pct": 90,
+      "classification": "forecast_or_approximate_balance_estimate_not_domestic_production"
+    },
+    "source": "https://cb.apps.fao.org/country.jsp?code=COG",
+    "historical_national_crop_series_secondary": {
+      "year": 2024,
+      "cassava_t": 1710000,
+      "maize_t": 13000,
+      "rice_t": 1000,
+      "cocoa_t": 15000,
+      "coffee_t": 3180,
+      "source": "https://africa-api.com/data/republic-of-the-congo/cassava",
+      "status": "secondary_FAOSTAT_transcription_requires_primary_FAOSTAT_validation"
+    },
+    "independent_secondary_summary": {
+      "year": 2024,
+      "cassava_t": 1700000,
+      "maize_t": 13000,
+      "rice_paddy_t": 1000,
+      "potato_t": 7114,
+      "sugarcane_t": 677152,
+      "plantain_t": 86254,
+      "cocoa_t": 15000,
+      "palm_oil_t": 27616,
+      "source": "https://geoscope.ch/en/development/food/republic-of-the-congo",
+      "status": "FAOSTAT-sourced_secondary_summary_not_primary_table_extraction"
+    },
+    "quality": "National crop output series provide a cross-check only. No verified department-level area, production and yield table was extracted. Do not use the 2026 cereal import forecast or qualitative near-average maize statement as farm yield or profit inputs."
+  },
+  "market_price_evidence": {
+    "Soko_platform": {
+      "url": "https://soko.yelessa.cg/prix-marches",
+      "public_English_page": "https://soko.yelessa.cg/en",
+      "provider_claims": {
+        "weekly_on_site_price_collection": true,
+        "markets_claimed": "22+ markets on English public page; French landing page names seven Brazzaville/Pointe-Noire markets",
+        "products_claimed": "27+ listed products",
+        "market_locations": [
+          "Brazzaville",
+          "Pointe-Noire",
+          "Dolisie",
+          "Oyo",
+          "Owando",
+          "Ouesso",
+          "Mossendjo",
+          "Nkayi"
+        ],
+        "commodities": [
+          "cassava",
+          "yam",
+          "sweet potato",
+          "taro",
+          "tomato",
+          "onion",
+          "chilli",
+          "aubergine",
+          "plantain",
+          "okra",
+          "fish",
+          "beef",
+          "chicken",
+          "palm oil",
+          "rice",
+          "maize"
+        ]
+      },
+      "public_sample_bulletin": {
+        "date": "2026-04-27",
+        "examples": [
+          {
+            "market": "Brazzaville",
+            "commodity": "Cassava",
+            "price": 320,
+            "currency": "XAF",
+            "unit": "kg"
+          },
+          {
+            "market": "Pointe-Noire",
+            "commodity": "Tomato",
+            "price": 850,
+            "currency": "XAF",
+            "unit": "kg"
+          },
+          {
+            "market": "Dolisie",
+            "commodity": "Plantain banana",
+            "price": 410,
+            "currency": "XAF",
+            "unit": "kg"
+          }
+        ]
+      },
+      "access_limit": "The platform says full prices and 90-day history require a Soko account. Public sample values are dated market-side observations, not verified farmgate producer prices. Provider's coverage and verification claims require independent checks of sample count, grade, transaction level, units and collection methodology."
+    },
+    "WFP_secondary_market_snapshot": {
+      "source": "ShelfPedia presentation of WFP market price data",
+      "url": "https://shelfpedia.com/fr-cg/prix-sur-les-marches/",
+      "latest_month": "2026-04",
+      "markets": 3,
+      "products": 5,
+      "reported_median_prices": [
+        {
+          "commodity": "Cassava flour",
+          "price": 569,
+          "currency": "XAF",
+          "unit": "kg"
+        },
+        {
+          "commodity": "Ordinary mixed rice",
+          "price": 660,
+          "currency": "XAF",
+          "unit": "kg"
+        },
+        {
+          "commodity": "White beans",
+          "price": 1365,
+          "currency": "XAF",
+          "unit": "kg"
+        },
+        {
+          "commodity": "Vegetable oil",
+          "price": 1061,
+          "currency": "XAF",
+          "unit": "litre"
+        },
+        {
+          "commodity": "Salt",
+          "price": 385,
+          "currency": "XAF",
+          "unit": "kg"
+        }
+      ],
+      "limitation": "Secondary presentation of retail market prices for three markets; not a current producer price series and not suitable for crop-revenue assumptions."
+    },
+    "INS_consumer_price_indices": {
+      "source": "INS-Congo consumer price statistics",
+      "url": "https://www.ins-congo.cg/stat-prix.html",
+      "period": "February 2026",
+      "values": {
+        "Brazzaville": 119.7,
+        "Dolisie": 124.4,
+        "Ouesso": 122.6,
+        "Owando": 127.4,
+        "Pointe-Noire": 121.3
+      },
+      "unit": "IHPC index points, base 100=2018",
+      "limitation": "Broad consumer price indices, not commodity prices; cannot be converted to XAF/kg without item-level price observations and base prices."
+    }
+  },
+  "input_cost_and_enterprise_budget_evidence": {
+    "seed_and_planting_material": "No verified current farmer-paid price schedule by crop, variety, department and unit extracted.",
+    "fertilizer_and_soil_amendments": "No verified current product prices, application rates or per-hectare costs extracted.",
+    "crop_protection": "No validated pesticide/herbicide product and operation cost schedule extracted.",
+    "labour": "No current department-level agricultural wage schedule or crop-operation labour coefficients validated.",
+    "machinery_and_land_preparation": "No current machinery hire or land-preparation rates validated.",
+    "irrigation_water_energy": "No crop/department-level irrigation, pumping, water or energy cost series extracted.",
+    "transport_postharvest_packaging": "No verified farm-to-market, handling, packaging, storage or post-harvest cost schedule extracted.",
+    "enterprise_budgets": "No complete crop-by-department enterprise budgets with gross margin or net profit validated."
+  },
+  "readiness": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_national_secondary_crop_series_and_FAO_outlook_only_INS_2024_production_survey_and_RGA_2024_reports_listed_but_tables_not_extracted",
+    "dated_local_farmgate_prices_and_units": "blocked_Soko_and_WFP_retail_or_market_side_price_leads_not_verified_farmgate",
+    "seed_and_planting_material_costs": "blocked",
+    "fertilizer_and_soil_amendment_costs": "blocked",
+    "crop_protection_costs": "blocked",
+    "irrigation_water_and_energy_costs": "blocked",
+    "labour_rates_and_operations": "blocked",
+    "machinery_and_land_preparation_costs": "blocked",
+    "regional_enterprise_budget_and_gross_margin": "blocked",
+    "currency_and_rounding": "partial_XAF_confirmed_regression_tests_pending",
+    "source_provenance_and_observation_date": "partial_INS_FAO_and_market_platform_sources_documented",
+    "calculator_mapping_and_test_cases": "blocked"
+  },
+  "blockers": [
+    "Download and extract the INS-Congo 2024 plant-production survey and 2024 preliminary agricultural census; record methodology, coverage, department, crop, season, area, output, yield and uncertainty.",
+    "Extract and cross-check primary FAOSTAT crop item/element/year observations against INS tables; preserve differences rather than blending series.",
+    "Obtain Soko sample export or institutional data access; validate actual market list, date, grade, unit, number of observations and whether each value is retail, wholesale or farmgate.",
+    "Acquire producer/farmgate prices by crop, department, season, grade and unit; do not use consumer price indices or retail prices as farm revenue.",
+    "Collect current farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation/energy, transport and post-harvest costs.",
+    "Construct regionally grounded enterprise budgets for the target 17 commodities and create XAF unit, area, yield and profit regression tests."
+  ],
+  "decision": "Republic of the Congo is not calculator-ready. Research refresh only; no activation, merge or deployment.",
+  "next_step": "Extract INS-Congo's 2024 plant-production survey and preliminary agricultural census, then obtain a verifiable Soko market-price sample and separate farmgate producer quotations before building regional budgets.",
+  "sources": [
+    "https://site-ins-congo.vercel.app/enquete-productions.html",
+    "https://www.onmc.fr/recensement-agriculture.html",
+    "https://cb.apps.fao.org/country.jsp?code=COG",
+    "https://soko.yelessa.cg/prix-marches",
+    "https://soko.yelessa.cg/en",
+    "https://shelfpedia.com/fr-cg/prix-sur-les-marches/",
+    "https://www.ins-congo.cg/stat-prix.html",
+    "https://africa-api.com/data/republic-of-the-congo/cassava",
+    "https://geoscope.ch/en/development/food/republic-of-the-congo"
+  ]
+}
