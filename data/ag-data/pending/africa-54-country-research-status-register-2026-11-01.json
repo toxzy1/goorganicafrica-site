@@ -231,10 +231,10 @@
     {
       "code": "GQ",
       "name": "Equatorial Guinea",
-      "classification": "research_evidence_record_present",
-      "calculator_status": "directory_only_not_active",
+      "classification": "calculator_active_benchmark_only",
+      "calculator_status": "active_benchmark_only_not_locally_validated",
       "evidence_file": "data/ag-data/pending/equatorial-guinea-country-profile-evidence-2026-11-01.json",
-      "review_status": "INEGE_2026_full_PDF_extracted_crop_table_and_cocoa_campaign_series; official_2026_27_minimum_price_draft_and_2026_input_procurement_policy_reviewed; FAOSTAT_vs_INEGE_output_conflicts_and_table_area_thresholds_flagged; current_farmgate_prices_and_enterprise_budgets_still_missing",
+      "review_status": "Equatorial_Guinea_enabled_in_existing_calculator_using_disclosed_Africa_wide_benchmark_fallback_for_all_17_enterprises; eight_provinces_registered; no_GQ_specific_yield_price_or_farm_budget_claimed; local_validation_and_build_browser_tests_pending",
       "follow_up_evidence_file": "data/ag-data/pending/equatorial-guinea-follow-up-evidence-2026-11-05.json",
       "last_reviewed": "2026-11-05"
     },
