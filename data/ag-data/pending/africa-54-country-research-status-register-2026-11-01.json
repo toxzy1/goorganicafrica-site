@@ -14,13 +14,14 @@
   ],
   "summary": {
     "total_registry_countries": 54,
-    "calculator_enabled_profiles": 11,
+    "calculator_enabled_profiles": 12,
     "original_active_profiles_without_new_research_files": 10,
     "mixed_source_operational_profile_with_research_file": 1,
     "unique_research_evidence_country_codes": 44,
-    "research_only_countries": 43,
+    "research_only_countries": 42,
     "countries_not_yet_researched_in_current_evidence_register": 0,
-    "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1
+    "morocco_duplicate_follow_up_files_excluded_from_unique_country_count": 1,
+    "benchmark_only_operational_profiles_with_research_file": 1
   },
   "countries": [
     {
@@ -234,7 +235,7 @@
       "classification": "calculator_active_benchmark_only",
       "calculator_status": "active_benchmark_only_not_locally_validated",
       "evidence_file": "data/ag-data/pending/equatorial-guinea-country-profile-evidence-2026-11-01.json",
-      "review_status": "Equatorial_Guinea_enabled_in_existing_calculator_using_disclosed_Africa_wide_benchmark_fallback_for_all_17_enterprises; 8_provinces_registered; static_benchmark_calculation_check_passed_for_all_17; local_validation_and_full_build_browser_tests_pending",
+      "review_status": "2026_11_05_INEGE_2026_crop_table_extracted_but_area_thresholds_and_FAOSTAT_conflicts_unresolved; FAOSTAT_price_dataset_audit_found_macro_deflator_rows_not_commodity_farmgate_prices; 17_profiles_benchmark_mapped_static_check_passed_full_build_browser_tests_pending",
       "follow_up_evidence_file": "data/ag-data/pending/equatorial-guinea-follow-up-evidence-2026-11-05.json",
       "last_reviewed": "2026-11-05"
     },
@@ -244,7 +245,9 @@
       "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
       "evidence_file": "data/ag-data/pending/eritrea-country-profile-evidence-2026-11-01.json",
-      "review_status": "Ministry_2024_national_crop_area_and_horticulture_outputs_peer_reviewed_2015_2024_Dighe_Gala_Nefhi_irrigation_and_Asmara_wholesale_price_index_UN_2025_programme_results_and_FAO_Sept_2026_drought_risk_recorded_crop_specific_yields_farmgate_prices_and_enterprise_budgets_missing"
+      "review_status": "2026_11_05_FAO_2026_09_30_drought_warning_20_to_40pct_below_average_rainfall_in_main_regions_added; Ministry_2024_area_and_horticulture_unit_discrepancies_identified; crop_specific_yields_farmgate_prices_and_enterprise_budgets_missing",
+      "follow_up_evidence_file": "data/ag-data/pending/eritrea-follow-up-evidence-2026-11-05.json",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "SZ",
