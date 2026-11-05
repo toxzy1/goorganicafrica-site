@@ -1993,11 +1993,11 @@
       "code": "CG",
       "name": "Republic of the Congo",
       "evidence_file": "data/ag-data/pending/republic-of-the-congo-calculator-readiness-batch-58-2026-11-05.json",
-      "existing_research_note": "Batch 58: INS-Congo lists 2024 plant-production survey and preliminary 2024 agricultural census, but tables not extracted. FAO GIEWS June 2026 identifies cassava as main food crop and gives qualitative maize outlook; 2026 cereal imports forecast 410,000 t. Soko claims weekly prices across 22+ markets/27+ products, with public sample prices dated 2026-04-27; WFP-derived snapshot has 3 markets/5 retail products for Apr 2026. These are market/retail leads, not farmgate. Current inputs, labour and enterprise budgets missing.",
+      "existing_research_note": "2026-11-05 follow-up: FAO GIEWS June 2026 cassava/maize outlook and 410,000 t cereal-import forecast documented; INS price bulletin catalogue through Aug 2026 and Commerce dashboard (42 collection points/126 products) identified; Soko weekly-market platform and Apr 27 sample rechecked. Crop tables, producer prices, input costs and department budgets remain unvalidated.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_national_secondary_crop_series_INS_2024_survey_and_RGA_2024_listed_tables_not_extracted",
-        "dated_local_farmgate_prices_and_units": "blocked_Soko_and_WFP_retail_market_leads_not_verified_farmgate",
+        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2026_qualitative_outlook_and_secondary_national_series; INS_2024_plant_production_and_RGA_tables_not_extracted",
+        "dated_local_farmgate_prices_and_units": "blocked_INS_consumer_price_indices_and_Soko_market_sample_not_verified_farmgate; Commerce item_level_export_not_extracted",
         "seed_and_planting_material_costs": "blocked_current_farmer_paid_prices_missing",
         "fertilizer_and_soil_amendment_costs": "blocked_current_prices_and_application_rates_missing",
         "crop_protection_costs": "blocked",
@@ -2006,17 +2006,18 @@
         "machinery_and_land_preparation_costs": "blocked",
         "regional_enterprise_budget_and_gross_margin": "blocked",
         "currency_and_exchange_rate_method": "partial_XAF_confirmed_rounding_and_regression_tests_pending",
-        "source_provenance_and_observation_date": "partial_INS_FAO_Soko_and_WFP_market_sources_refreshed_2026_11_05",
+        "source_provenance_and_observation_date": "improved_FAO_GIEWS_2026_06_23_INS_price_catalogue_through_2026_08_Commerce_dashboard_and_Soko_sample_2026_04_27_documented",
         "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract INS-Congo 2024 plant-production survey and preliminary agricultural census tables.",
-        "Validate primary FAOSTAT crop area/output/yield series against INS.",
-        "Obtain Soko sample with price level, grade, units, market and dates; separate retail/wholesale/farmgate.",
-        "Obtain dated farmgate producer prices and current input, labour, machinery, irrigation, transport and post-harvest costs.",
-        "Build regional enterprise budgets and XAF regression tests."
+        "Extract numerical crop/area/production tables from INS 2024 plant-production survey and preliminary agricultural census.",
+        "Validate primary FAOSTAT crop item/element/year observations against INS tables; preserve differences.",
+        "Obtain official item-level price exports and verify market, date, grade, unit and retail/wholesale/farmgate level.",
+        "Collect current farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation/energy, transport and post-harvest costs.",
+        "Resolve current department names and historical boundary crosswalk from primary legal sources.",
+        "Construct department-specific enterprise budgets and XAF regression tests for the target commodity profiles."
       ],
-      "next_step": "Extract INS 2024 crop survey and RGA tables, then validate Soko price sample and collect farmgate and input quotations before regional budget construction.",
+      "next_step": "Extract INS 2024 crop tables and official item-level price exports; verify producer price level and obtain farmer-paid input quotations before regional budget construction.",
       "batch_14_review": {
         "review_date": "2026-11-02",
         "source_notes": "Reviewed the INS-Congo agricultural census catalogue. It lists the 2024 preliminary agricultural census results, 2023 cultivated-area and production report, 2022 agricultural holdings report, 2021 food-crop census and 2020 agricultural atlas. These are confirmed source leads, but numerical tables have not yet been extracted. Administrative geography remains unresolved: ASARECA describes 12 departments, while a newer secondary source reports 15 following an October 2024 reorganisation. No region selector was added because primary legal confirmation and a historical boundary crosswalk are still required.",
