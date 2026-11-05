@@ -312,5 +312,51 @@
         "date": "2026-10-30"
       }
     ]
+  },
+  "secondary_wholesale_market_price_leads": {
+    "source": "Selina Wamucii Equatorial Guinea commodity price pages; October 2026 monthly references where shown",
+    "source_type": "secondary estimated wholesale/retail market-price references; not producer-price observations",
+    "observations": [
+      {
+        "commodity": "cassava",
+        "period": "October 2026",
+        "wholesale_usd_per_kg": {
+          "low": 0.69,
+          "high": 0.69
+        },
+        "retail_xaf_per_kg": {
+          "low": 613.06,
+          "high": 613.06
+        },
+        "url": "https://www.selinawamucii.com/insights/prices/equatorial-guinea/cassava/"
+      },
+      {
+        "commodity": "rice",
+        "period": "October 2026",
+        "wholesale_usd_per_kg": {
+          "low": 1.09,
+          "high": 1.91
+        },
+        "retail_xaf_per_kg": {
+          "low": 975.2,
+          "high": 1706.6
+        },
+        "url": "https://www.selinawamucii.com/insights/prices/equatorial-guinea/rice/"
+      },
+      {
+        "commodity": "maize",
+        "period": "September 2026",
+        "wholesale_usd_per_kg": {
+          "low": 1.38,
+          "high": 2.77
+        },
+        "retail_xaf_per_kg": {
+          "low": 1234.88,
+          "high": 2469.75
+        },
+        "url": "https://www.selinawamucii.com/insights/prices/equatorial-guinea/maize/"
+      }
+    ],
+    "qualification": "These are estimated wholesale/retail market-price references, not confirmed farm-gate transactions. Do not insert directly as producer prices or use as the farmer's realized selling price without local market-channel and quality validation. They are retained as price-discovery leads."
   }
 }
