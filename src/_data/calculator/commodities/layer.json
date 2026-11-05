@@ -337,7 +337,13 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "feed_reference_usd_per_tonne": 322,
+      "feed_reference_product": "Compound layer feed",
+      "feed_reference_as_of": "2026-09",
+      "feed_reference_source": "US Grains & Bioproducts Council Africa Feed Price report; Botswana September 2026 country entry",
+      "feed_reference_source_url": "https://www.africafeedprice.com/feed-price",
+      "feed_reference_note": "National reference price for compound layer feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost."
     },
     {
       "country_code": "GQ",
