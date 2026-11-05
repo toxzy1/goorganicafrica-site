@@ -714,18 +714,18 @@
       "code": "ER",
       "name": "Eritrea",
       "evidence_file": "data/ag-data/pending/eritrea-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "Ministry 2024 national crop area and horticulture outputs; peer-reviewed 2015–2024 Dighe/Gala/Nefhi irrigation and Asmara wholesale price index; UN 2025 programme results; FAO 30-Sep-2026 drought warning (20–40% below-average Kiremti rainfall in main producing regions); Ministry 2024 area and horticulture unit/scope discrepancies identified. Crop-specific yields, farmgate prices and enterprise budgets remain missing.",
+      "existing_research_note": "Ministry 2024 national crop area and horticulture outputs; peer-reviewed 2015–2024 Dighe/Gala/Nefhi irrigation and Asmara wholesale price index; UN 2025 programme results; FAO 30-Sep-2026 drought warning (20–40% below-average Kiremti rainfall in main producing regions); Ministry 2024 area and horticulture unit/scope discrepancies identified. Crop-specific yields, farmgate prices and enterprise budgets remain missing. 5-Nov-2026 follow-up added UN UPR government-reported ordinary-farm yield ranges for sorghum, pearl millet, wheat and barley; programme potato yields for Shambko/Ghindae/Afambo; national arable/rainfed/irrigable land context; and AKADEMIYA2063 modelled 2024 subregional millet production forecasts. These add partial yield evidence but do not resolve crop-year, sampling, harvested-area or farmgate-price gaps.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_official_aggregate_area_and_output_reports_conflicted_on_area_scope_and_fruit_vegetable_units; crop_specific_region_observations_pending",
-        "dated_local_farmgate_prices_and_units": "blocked_no_validated_dated_farmgate_price_rows; Asmara_wholesale_price_index_not_farmgate",
+        "crop_area_production_yield_by_commodity_and_season": "partial_official_reported_ordinary_farm_yield_ranges_for_sorghum_pearl_millet_wheat_barley_and_programme_potato_yields_in_named_subregions; no crop-year_sample_size_or full region-by-crop harvested-area crosswalk; 2024 millet subregional output is modelled forecast without area/yield",
+        "dated_local_farmgate_prices_and_units": "blocked_no_validated_farmgate_rows; 2026 maize secondary wholesale/retail estimates and 2015-2025 Asmara wholesale index are discovery/context only",
         "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_price_schedule; Ministry_research_variety_release_is_not_a_price",
         "fertilizer_and_soil_amendment_costs": "partial_IFAD_input_access_and_high_cost_context_only; farmer_paid_unit_prices_and_rates_missing",
         "crop_protection_costs": "blocked_no_current_pesticide_prices_or_crop_application_budgets",
         "irrigation_water_and_energy_costs": "partial_irrigation_system_context_available; regional_water_fuel_energy_cost_schedules_missing",
         "labour_rates_and_operations": "blocked_no_current_zoba_crop_operation_wages_or_labour_days",
         "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_land_preparation_and_transport_cost_schedule",
-        "regional_enterprise_budget_and_gross_margin": "blocked_no_crop_region_specific_budget; FAO_2026_drought_risk_requires_season_specific_assumptions",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no verified farmgate revenue or farmer-paid full input/labour/irrigation cost schedule; partial yield indicators are not a budget",
         "currency_and_exchange_rate_method": "partial_ERN_currency_and_official_peg_context_recorded; access_and_calculator_conversion_rounding_methodology_and_tests_pending",
         "source_provenance_and_observation_date": "pass_for_Ministry_2024_report_2025_publication_Springer_2025_FAO_GIEWS_2026_09_30_GEOGLAM_2026_10_01_and_ASIS_2026_10_archive; producer_cost_data_missing",
         "calculator_mapping_and_test_cases": "blocked_no_validated_crop_level_prices_costs_or_regional_enterprise_test_cases"
@@ -740,9 +740,11 @@
         "Document official ERN exchange-rate treatment and calculator conversion/rounding tests.",
         "Map six zobas and sub-zobas and add 17-commodity regression tests only after the underlying price, yield and cost data are validated.",
         "Resolve Ministry 2024 crop-area wording and fruit/vegetable output unit discrepancies; do not map ambiguous aggregates to calculator yields.",
-        "FAO GIEWS on 30 September 2026 reports Kiremti rainfall 20–40% below average in the main producing regions and significant expected production shortfalls; obtain current crop/region evidence before using 2026 yields."
+        "FAO GIEWS on 30 September 2026 reports Kiremti rainfall 20–40% below average in the main producing regions and significant expected production shortfalls; obtain current crop/region evidence before using 2026 yields.",
+        "The UN UPR government report supplies indicative ordinary-farm cereal yield ranges and programme potato yields, but crop-year, sample size and regional representativeness are unspecified; obtain underlying Ministry/NARI tables before assigning defaults.",
+        "AKADEMIYA2063 2024 millet subregional figures are AI/remote-sensing production forecasts without harvested area; use only as cross-check leads, not observed production or yields."
       ],
-      "next_step": "Extract the Ministry's underlying 2024 crop statistics by region and commodity, reconcile the reported land-area and horticulture-unit discrepancies, then obtain dated farmgate prices and farmer-paid input/labour/irrigation costs.",
+      "next_step": "Obtain Ministry/NARI source tables behind the official cereal yield statements and lowland potato programme results; reconcile the subregional millet forecast with measured output and harvested area, then pursue dated producer/farmgate prices and farmer-paid cost schedules.",
       "batch_22_review": {
         "review_date": "2026-11-02",
         "country_name": "Eritrea",
@@ -789,7 +791,19 @@
         ],
         "decision": "Research refresh saved; Eritrea remains inactive and is not calculator-ready."
       },
-      "follow_up_evidence_file": "data/ag-data/pending/eritrea-follow-up-evidence-2026-11-05.json"
+      "follow_up_evidence_file": "data/ag-data/pending/eritrea-follow-up-evidence-2026-11-05.json",
+      "november_2026_follow_up_review": {
+        "review_date": "2026-11-05",
+        "evidence_file": "data/ag-data/pending/eritrea-follow-up-evidence-2026-11-05.json",
+        "source_notes": "UN Human Rights Council UPR national report A/HRC/WG.6/46/ERI/1 (23-Feb-2024) reports ordinary-farm yield improvements over the preceding five-year period: sorghum 8→16 q/ha, pearl millet 6→12 q/ha, wheat 12→20–25 q/ha, barley 8→16 q/ha; it also reports programme potato yields of 267 q/ha at Shambko, 74 q/ha at Ghindae and 170 q/ha at Afambo. The same report gives national arable/rainfed/irrigable land context and micro-dam capacity. AKADEMIYA2063 AAgWa Brief 219 (Nov-2024) gives AI-modelled 2024 millet production forecasts at subregional level, including Omhajer, Shemboko, Mansura, Teseneye and Afabet. Neither source supplies a complete current crop-by-region dataset with harvested area, and neither provides farmgate prices or enterprise budgets. FAO GIEWS 30-Sep-2026 drought risk remains material.",
+        "sources": [
+          "https://upr-info.org/sites/default/files/country-document/2026-01/A_HRC_WG.6_46_ERI_1_E.pdf",
+          "https://akademiya2063.org/publications/AAgWa%20Crop%20Production%20Forecasts/AAgWa%20Crop%20Production%20Forecasts%20Series%20No.%20219_Eritrea%20-%20Millet.pdf",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=ERI",
+          "https://shabait.com/2025/02/07/ministry-of-agriculture-2024-major-achievements/"
+        ],
+        "decision": "Remain inactive; yield evidence is now partial but not sufficiently crop-year/region validated, and farmgate prices plus complete enterprise costs remain missing."
+      }
     },
     {
       "code": "SZ",
