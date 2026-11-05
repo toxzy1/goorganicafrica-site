@@ -1948,7 +1948,7 @@
       "code": "NE",
       "name": "Niger",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "Batch 33 extracted INS 2025 national crop production, sown-area and yield tables for 2024; extracted 2024 livestock herd inventory; confirmed eight current administrative regions; identified SIMA weekly regional/market price and fertilizer exports. Regional crop matrices, producer prices, input costs and budgets remain incomplete.",
+      "existing_research_note": "INS 2025 national crop production, sown-area and selected yields for 2024 plus livestock inventory; eight current administrative regions confirmed. 2026-11-05 follow-up adds SIMA September 2026 validated national consumer prices (millet 253, sorghum 234, maize 221, imported rice 519, niébé 394 FCFA/kg), October 2026 week-42 bulletin coverage and public regional market-series export structure. These are consumer/market prices, not verified farmgate prices; regional enterprise budgets remain incomplete.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial",
@@ -1965,15 +1965,14 @@
         "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Official national crop output, sown area and selected yields are extracted for 2024, but region-by-crop area/yield and seasonal production matrices remain incomplete.",
-        "Cowpea 2024 production is not directly tabled in the extracted INS series; the five-year mean must not be used as the 2024 value.",
-        "INS annual onion series (2024) and RECA campaign 2024/25 values differ in reference period and must remain separate.",
-        "SIMA weekly regional/market price and fertilizer exports are available, but producer/farm-gate classification, sack weights, grades and exact units need extraction.",
-        "No current seed, crop-protection, irrigation/energy, labour and machinery cost quotations by region and production system have been validated.",
+        "INS 2024 crop production and sown-area series are national; region-by-crop harvested area, output and yields for supported calculator commodities remain incomplete.",
+        "SIMA September 2026 national prices are explicitly consumer averages; weekly and regional price rows require product grade, unit, sack weight and market-level classification before any producer price can be selected.",
+        "Bulk SIMA exports and API access may require direct request/partner authorization; producer/farmgate price rows have not been verified.",
+        "Current seed, crop protection, irrigation/energy, labour, machinery and livestock feed/veterinary costs by region and production system remain incomplete.",
         "No representative region- and production-system-specific enterprise budgets exist for the calculator commodities.",
-        "No Niger calculator mapping or regression test cases have been implemented."
+        "Niger calculator mapping and regression test cases have not been implemented."
       ],
-      "next_step": "Extract regional 2024/25 crop tables and SIMA market/fertilizer CSVs with market-level metadata; distinguish producer from wholesale prices; obtain current input and labour quotations and construct representative enterprise budgets before calculator mapping.",
+      "next_step": "Request SIMA filtered CSV/Excel or authorized data extract with price-level and unit metadata; extract region-by-crop INS/DS-MAGEL tables; verify farmgate prices and input quotations; then construct representative enterprise budgets before calculator mapping.",
       "batch_08_review": {
         "review_date": "2026-11-02",
         "source_notes": "Niger's current official presidential country profile continues to identify eight regions: Agadez, Diffa, Dosso, Maradi, Niamey, Tahoua, Tillabéri and Zinder. The Ministry's May 12, 2026 presentation of a 19-region reorganisation is explicitly described as a project/proposal. It is not used to replace the current eight-region lookup. Proposed names are retained as a watch item pending legal enactment and implementation.",
@@ -1984,7 +1983,11 @@
           "https://ecowap.ecowas.int/media/ecowap/naip/files/Niger_English.pdf"
         ],
         "regional_lookup": "8 current administrative regions retained/added in src/_data/calculator/regions.json. The proposed 19-region plan is not applied to the selector until enacted and implemented; lookup only, not activated."
-      }
+      },
+      "follow_up_evidence_file": "data/ag-data/pending/niger-follow-up-evidence-2026-11-05.json",
+      "reviews": [
+        "2026-11-05_SIMA_September_2026_national_consumer_price_dashboard_and_week42_bulletins_reviewed_regional_export_structure_confirmed; no producer_price_import_or_calculator_activation"
+      ]
     },
     {
       "code": "CG",
