@@ -492,21 +492,20 @@
       "name": "Zimbabwe",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "official_2024_25_post_harvest_survey_and_2026_market_price_evidence_added_area_yield_and_farm_budget_reconciliation_pending",
-      "calculator_status": "directory_only_not_active"
+      "review_status": "2026-11-05_review_completed; regional_yield_area_price_and_cost_reconciliation_pending",
+      "calculator_status": "directory_only_not_active",
+      "review_date": "2026-11-05"
     }
   ],
   "updated_at": "2026-11-05",
   "review_sequence_progress": {
     "review_scope": "44_additional_country_review_sequence",
-    "reviewed_in_current_sequence": 43,
+    "reviewed_in_current_sequence": 44,
     "total_in_current_sequence": 44,
-    "remaining": 1,
-    "last_completed_country": "Tunisia",
-    "next_country": "Zimbabwe",
-    "remaining_countries": [
-      "Zimbabwe"
-    ],
-    "note": "Review-sequence count only; readiness-certified additional countries remain zero."
+    "remaining": 0,
+    "last_completed_country": "Zimbabwe",
+    "next_country": null,
+    "remaining_countries": [],
+    "note": "The 44-country evidence-review sequence is complete. This is review progress only; readiness-certified additional countries remain zero."
   }
 }
