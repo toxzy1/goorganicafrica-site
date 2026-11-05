@@ -191,7 +191,177 @@
         "obtain current farmer-paid seed, fertilizer, pesticide, labour, machinery, irrigation and transport costs by region",
         "obtain livestock and poultry census and farm-budget data"
       ],
-      "extraction_status": "The WTO 2025 trade policy review provides a useful 2019-2024 crop cultivated-area and production series sourced to the Department of Agriculture, including rice, maize, cowpea and groundnut. Ratios of production to cultivated area are not accepted as yields because harvested area and exact crop-year alignment are unresolved. FAO confirms the 2025 E-NASS/National Agricultural Sample Census data collection and future crop-cutting survey programme; obtain its released outputs before activating data. No calculator values admitted."
+      "extraction_status": "The WTO 2025 trade policy review provides a useful 2019-2024 crop cultivated-area and production series sourced to the Department of Agriculture, including rice, maize, cowpea and groundnut. Ratios of production to cultivated area are not accepted as yields because harvested area and exact crop-year alignment are unresolved. FAO confirms the 2025 E-NASS/National Agricultural Sample Census data collection and future crop-cutting survey programme; obtain its released outputs before activating data. No calculator values admitted.",
+      "follow_up_2026_11_05": {
+        "review_date": "2026-11-05",
+        "status": "research_only_not_published_to_calculator",
+        "findings": [
+          {
+            "topic": "2025 cereal output and 2026 crop outlook",
+            "source": "FAO GIEWS, 22 September 2026",
+            "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GMB",
+            "observations": [
+              {
+                "indicator": "aggregate cereal production",
+                "value": 135000,
+                "unit": "tonnes",
+                "year": 2025,
+                "status": "national aggregate estimate, not crop-specific"
+              },
+              {
+                "indicator": "2026 planting",
+                "status": "coarse grains and rice planting completed by July; early rainfall deficits delayed planting in some areas, followed by improved conditions"
+              },
+              {
+                "indicator": "2026 fertilizer subsidy",
+                "status": "government maintained previous-year subsidized prices; free organic fertilizer and rice/maize seed support announced"
+              }
+            ]
+          },
+          {
+            "topic": "Groundnut floor price",
+            "source": "The Point, 1 December 2025, citing Ministry announcement",
+            "url": "https://thepoint.gm/africa/gambia/headlines/gambia-senegal-maintain-last-year-groundnut-prices",
+            "observations": [
+              {
+                "commodity": "groundnut",
+                "value": 38000,
+                "unit": "GMD/tonne",
+                "season": "2025/26",
+                "status": "announced producer floor price; not a current 2026/27 price and not one of the calculator's 17 commodities"
+              }
+            ]
+          },
+          {
+            "topic": "2026 farmer input support",
+            "source": "The Point, 24 June 2026, reporting Agriculture Minister briefing",
+            "url": "https://thepoint.gm/africa/gambia/headlines/govt-maintains-fertiliser-price-at-d1100-subsidizes-d1-6b-for-2026-farming-season",
+            "observations": [
+              {
+                "input": "chemical fertilizer",
+                "value": 1100,
+                "unit": "GMD per 50kg bag",
+                "season": "2026 rainy season",
+                "status": "subsidized farmer price; transport/access costs may differ"
+              },
+              {
+                "input": "organic fertilizer",
+                "value": 10000,
+                "unit": "tonnes",
+                "status": "government-procured free distribution quantity; farmer-level allocation unknown"
+              },
+              {
+                "input": "rice seed",
+                "value": 461000,
+                "unit": "kg",
+                "status": "announced distribution quantity"
+              },
+              {
+                "input": "groundnut seed",
+                "value": 56,
+                "unit": "tonnes",
+                "status": "announced distribution quantity"
+              },
+              {
+                "input": "maize seed",
+                "value": 260000,
+                "unit": "tonnes as reported",
+                "status": "unit appears implausible; exclude pending official clarification"
+              }
+            ]
+          },
+          {
+            "topic": "2024 crop statistics",
+            "source": "Government of The Gambia WTO Trade Policy Review WT/TPR/G/482, Department of Agriculture Planning Services Unit tables",
+            "url": "https://www.wto.org/english/news_e/news_docs/G482_e.pdf",
+            "observations": [
+              {
+                "crop": "rice/paddy",
+                "area_ha": 49811,
+                "production_t": 52548,
+                "year": 2024,
+                "ratio_t_per_cultivated_ha": 1.055,
+                "status": "cultivated area, not confirmed harvested area; ratio is not accepted as validated yield"
+              },
+              {
+                "crop": "maize",
+                "area_ha": 27688,
+                "production_t": 25817,
+                "year": 2024,
+                "ratio_t_per_cultivated_ha": 0.932,
+                "status": "cultivated area, not confirmed harvested area"
+              },
+              {
+                "crop": "cowpea",
+                "area_ha": 3608,
+                "production_t": 2881,
+                "year": 2024,
+                "ratio_t_per_cultivated_ha": 0.798,
+                "status": "possible beans/cowpea mapping; denominator and crop definition need validation"
+              },
+              {
+                "crop": "groundnut",
+                "area_ha": 51463,
+                "production_t": 52642,
+                "year": 2024,
+                "status": "not one of current calculator's 17 commodities"
+              }
+            ],
+            "notes": [
+              "Rice area split: upland 38,883 ha and swamp 10,928 ha; preserve separate systems.",
+              "Report has a 3-tonne inconsistency: narrative gives 180,364 tonnes total 2024/25 output, while table gives 180,361 tonnes.",
+              "Groundnut output fell about 10% in 2024/25; flooding affected Central River Region North, Central River Region South and Upper River Region."
+            ]
+          },
+          {
+            "topic": "Monthly food prices",
+            "source": "World Bank Microdata Library RTFP dataset version 2026-10-05",
+            "url": "https://microdata.worldbank.org/catalog/4492/",
+            "observations": [
+              {
+                "indicator": "market coverage",
+                "value": 28,
+                "unit": "markets",
+                "period": "2007-01 to 2026-10"
+              },
+              {
+                "indicator": "price type",
+                "status": "estimated monthly market/food prices; not direct farmgate quotations"
+              }
+            ]
+          },
+          {
+            "topic": "Administrative units",
+            "source": "FEWS NET Gambia Data Book, August 2025",
+            "url": "https://help.fews.net/fde/v3/gambia-country-book",
+            "observations": [
+              {
+                "indicator": "Admin 1",
+                "value": "five regions and one city"
+              },
+              {
+                "indicator": "Admin 2",
+                "value": "Local Government Areas"
+              },
+              {
+                "indicator": "Admin 3",
+                "value": 43,
+                "unit": "districts"
+              }
+            ]
+          }
+        ],
+        "outstanding": [
+          "Obtain E-NASS 2025 final report, microdata and crop-cutting yield results; FAO confirms data collection began in September 2025: https://www.fao.org/in-action/agrisurvey/access-to-data/gambia/en",
+          "Obtain harvested-area and crop-cut yield distributions by LGA, separately for upland and swamp rice.",
+          "Obtain 2026/27 groundnut floor price and validate the next marketing season's NFSPMC rules.",
+          "Download and inspect the 28-market RTFP CSV; classify each value by date, market, unit and price level.",
+          "Obtain dated farmgate prices for the 17 calculator commodities and farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation and transport costs.",
+          "Obtain livestock/poultry census and enterprise budget data.",
+          "Resolve the WTO report's 180,364 versus 180,361 tonne total discrepancy."
+        ],
+        "decision": "Keep The Gambia research-only and inactive. No commodity values or formulas changed. The 2025/26 groundnut floor price is outside the existing 17 enterprise profiles."
+      }
     },
     {
       "country_code": "MR",
