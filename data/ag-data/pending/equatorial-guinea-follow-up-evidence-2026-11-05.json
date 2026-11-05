@@ -5,7 +5,7 @@
   "iso3": "GNQ",
   "review_date": "2026-11-05",
   "branch": "data/44-country-calculator-readiness",
-  "status": "research_only_not_published_to_calculator",
+  "status": "calculator_active_benchmark_only_not_locally_validated",
   "purpose": "Add directly extracted official INEGE 2026 yearbook tables and current government agricultural-policy evidence. Preserve unit, period and source conflicts; do not activate calculator records from aggregate or ambiguous data.",
   "new_primary_findings": {
     "inege_2026_yearbook": {
@@ -22,20 +22,90 @@
         "source_attribution": "MAGBPMA",
         "unit": "kg",
         "observations": [
-          {"crop": "Cacao", "2024_kg": 510227, "2025_kg": 673440, "area_text": ">50,000 ha"},
-          {"crop": "Coffee", "2024_kg": 1500, "2025_kg": 3744, "area_text": ">40 ha"},
-          {"crop": "Coconut", "2024_kg": 39600, "2025_kg": 1172, "area_text": ">200 ha"},
-          {"crop": "Cassava", "2024_kg": 171485, "2025_kg": 13748, "area_text": ">5,000 ha"},
-          {"crop": "Rice", "2024_kg": 295, "2025_kg": null, "area_text": ">5 ha"},
-          {"crop": "Groundnut", "2024_kg": 10500, "2025_kg": 22260, "area_text": ">500 ha"},
-          {"crop": "Plantain", "2024_kg": 9054, "2025_kg": 23535, "area_text": ">200 ha"},
-          {"crop": "Cucumber", "2024_kg": 13500, "2025_kg": 28620, "area_text": ">2 ha"},
-          {"crop": "Tomato", "2024_kg": 21250, "2025_kg": 45050, "area_text": ">0.5 ha"},
-          {"crop": "Maize", "2024_kg": 652, "2025_kg": 1382, "area_text": ">0.1 ha"},
-          {"crop": "Sweet potato", "2024_kg": 2390, "2025_kg": 5067, "area_text": ">0.5 ha"},
-          {"crop": "Yam", "2024_kg": 11710, "2025_kg": 24825, "area_text": ">0.2 ha"},
-          {"crop": "Watermelon", "2024_kg": 613, "2025_kg": 1300, "area_text": ">1 ha"},
-          {"crop": "Bell pepper / pimiento", "2024_kg": 3375, "2025_kg": 7155, "area_text": ">1 ha"}
+          {
+            "crop": "Cacao",
+            "2024_kg": 510227,
+            "2025_kg": 673440,
+            "area_text": ">50,000 ha"
+          },
+          {
+            "crop": "Coffee",
+            "2024_kg": 1500,
+            "2025_kg": 3744,
+            "area_text": ">40 ha"
+          },
+          {
+            "crop": "Coconut",
+            "2024_kg": 39600,
+            "2025_kg": 1172,
+            "area_text": ">200 ha"
+          },
+          {
+            "crop": "Cassava",
+            "2024_kg": 171485,
+            "2025_kg": 13748,
+            "area_text": ">5,000 ha"
+          },
+          {
+            "crop": "Rice",
+            "2024_kg": 295,
+            "2025_kg": null,
+            "area_text": ">5 ha"
+          },
+          {
+            "crop": "Groundnut",
+            "2024_kg": 10500,
+            "2025_kg": 22260,
+            "area_text": ">500 ha"
+          },
+          {
+            "crop": "Plantain",
+            "2024_kg": 9054,
+            "2025_kg": 23535,
+            "area_text": ">200 ha"
+          },
+          {
+            "crop": "Cucumber",
+            "2024_kg": 13500,
+            "2025_kg": 28620,
+            "area_text": ">2 ha"
+          },
+          {
+            "crop": "Tomato",
+            "2024_kg": 21250,
+            "2025_kg": 45050,
+            "area_text": ">0.5 ha"
+          },
+          {
+            "crop": "Maize",
+            "2024_kg": 652,
+            "2025_kg": 1382,
+            "area_text": ">0.1 ha"
+          },
+          {
+            "crop": "Sweet potato",
+            "2024_kg": 2390,
+            "2025_kg": 5067,
+            "area_text": ">0.5 ha"
+          },
+          {
+            "crop": "Yam",
+            "2024_kg": 11710,
+            "2025_kg": 24825,
+            "area_text": ">0.2 ha"
+          },
+          {
+            "crop": "Watermelon",
+            "2024_kg": 613,
+            "2025_kg": 1300,
+            "area_text": ">1 ha"
+          },
+          {
+            "crop": "Bell pepper / pimiento",
+            "2024_kg": 3375,
+            "2025_kg": 7155,
+            "area_text": ">1 ha"
+          }
         ],
         "qualification": "The area column is printed as threshold expressions (for example, >5,000 ha), not exact harvested-area observations. These values cannot be used to calculate point yields. The table has an internal numbering discrepancy: the table of contents calls the crop table Table 237, while the body labels it Table 235."
       },
@@ -45,12 +115,42 @@
         "unit": "metric tonnes",
         "source_attribution": "Cámara de Comercio, Agrícola y Forestal de Bioko",
         "observations": [
-          {"season": "2019/2020", "grade_i_t": 254.8, "grade_ii_t": 283.9, "total_t": 538.7},
-          {"season": "2020/2021", "grade_i_t": 297.1, "grade_ii_t": 332.4, "total_t": 629.5},
-          {"season": "2021/2022", "grade_i_t": 252.0, "grade_ii_t": 593.8, "total_t": 845.8},
-          {"season": "2022/2023", "grade_i_t": 228.0, "grade_ii_t": 232.0, "total_t": 460.0},
-          {"season": "2023/2024", "grade_i_t": 270.0, "grade_ii_t": 281.0, "total_t": 551.0},
-          {"season": "2024/2025", "grade_i_t": 306.9, "grade_ii_t": 257.9, "total_t": 564.8}
+          {
+            "season": "2019/2020",
+            "grade_i_t": 254.8,
+            "grade_ii_t": 283.9,
+            "total_t": 538.7
+          },
+          {
+            "season": "2020/2021",
+            "grade_i_t": 297.1,
+            "grade_ii_t": 332.4,
+            "total_t": 629.5
+          },
+          {
+            "season": "2021/2022",
+            "grade_i_t": 252,
+            "grade_ii_t": 593.8,
+            "total_t": 845.8
+          },
+          {
+            "season": "2022/2023",
+            "grade_i_t": 228,
+            "grade_ii_t": 232,
+            "total_t": 460
+          },
+          {
+            "season": "2023/2024",
+            "grade_i_t": 270,
+            "grade_ii_t": 281,
+            "total_t": 551
+          },
+          {
+            "season": "2024/2025",
+            "grade_i_t": 306.9,
+            "grade_ii_t": 257.9,
+            "total_t": 564.8
+          }
         ],
         "qualification": "This is a separate cocoa campaign series. Do not merge it with the calendar-year crop table without confirming definitions and period coverage."
       },
@@ -113,8 +213,8 @@
     "input_prices": "government_procurement_negotiation_lead_only_no_final_unit_prices",
     "labour_costs": "statutory_monthly_minimum_wage_reference_only",
     "enterprise_budgets": "not_available",
-    "calculator_mapping_and_test_cases": "not_ready",
-    "decision": "Equatorial Guinea remains research-only and must not be activated."
+    "calculator_mapping_and_test_cases": "17 of 17 commodity profiles mapped to disclosed Africa-wide benchmark fallback; static required-field test passed; full build/browser test pending",
+    "decision": "calculator_active_benchmark_only_not_locally_validated; not country-specific certified"
   },
   "next_actions": [
     "Extract raw FAOSTAT GNQ crop area, production, yield and observation flags for 2020–2024 for the 17 calculator commodities.",
@@ -132,5 +232,16 @@
     "https://www.guineaecuatorialpress.com/index.php/noticias/ingresos_no_petroleros_justicia_educacion_y_agricultura_marcan_la_agenda_del_primer_consejo_interministerial_del_a%C3%B1o",
     "https://www.guineaecuatorialpress.com/noticias/camara_de_los_diputados_comparecencias_de_los_miembros_del_gobierno_para_el_analisis_de_los_presupuestos_generales_del_estado",
     "https://app.indexbox.io/indicators/symbol/fertilizer-use-equatorial-guinea/"
-  ]
+  ],
+  "implementation_update": {
+    "date": "2026-11-05",
+    "branch": "data/44-country-calculator-readiness",
+    "country_registry": "GQ activated with XAF/FCFA, 8 provinces, data_mode benchmark_only, benchmark_fallback_commodities 17",
+    "commodity_profiles": "GQ benchmark marker added to all 17 individual commodity JSON files and mirrored in calculatorData.json aggregate",
+    "redirects": "Legacy /gq/farm-profit-calculator/ redirects to /gq/en/farm-profit-calculator/",
+    "calculator_engine": "Added price_per_unit median conversion to Africa benchmark fallback so livestock-unit and layer enterprises receive a usable benchmark sale price",
+    "automated_guard": "scripts/check-site.js now checks benchmark-only country coverage across every commodity file and requires livestock price_per_unit fallback",
+    "static_test": "17/17 enterprise profiles passed required benchmark-field checks using the same median/currency conversion rules as calculator-app.js",
+    "limitation": "All GQ figures remain Africa-wide benchmark estimates; no GQ-specific farm-gate prices, yields or enterprise budgets are represented as verified. Full npm build and browser smoke tests have not yet been run."
+  }
 }
