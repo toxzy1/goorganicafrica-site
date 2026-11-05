@@ -187,6 +187,15 @@
       "url": "https://app.indexbox.io/indicators/symbol/fertilizer-use-equatorial-guinea/",
       "observation": "4.77 kg of fertilizer nutrients per hectare of arable land in 2024, reported as 61% lower than 2023",
       "qualification": "National fertilizer-use intensity only; not a product price, crop-specific application rate or farmer cost. Verify directly against WDI before production use."
+    },
+    "faostat_price_dataset_audit": {
+      "source": "FAOSTAT Food Prices country dataset for Equatorial Guinea, repackaged from HDX; Hugging Face dataset card inspected 2026-11-05",
+      "url": "https://huggingface.co/datasets/electricsheepafrica/africa-faostat-food-prices-for-equatorial-guinea",
+      "original_hdx_url": "https://data.humdata.org/dataset/faostat-food-prices-for-equatorial-guinea",
+      "reported_scope": "438 rows; Equatorial Guinea country-level aggregates; temporal coverage 1970–2024; fields include item, element, unit, value and flag",
+      "observed_item_codes": "The dataset card's listed item-code range is 22024–22028 and its displayed item examples are GDP deflator, gross fixed capital formation deflator and value-added deflator; displayed elements are deflator values in standard local currency or USD at 2015 prices.",
+      "decision": "This surfaced country dataset is not yet evidence of commodity-specific producer prices for any of the 17 calculator enterprises. Do not map its displayed deflator/index values to farmgate selling prices. Obtain the actual FAOSTAT Producer Prices annual domain rows for area GNQ and the required item codes, preserving units and flags.",
+      "data_quality": "secondary mirror of FAO/HDX data; not independently validated by the repackager"
     }
   },
   "reconciliation_flags": [
@@ -217,6 +226,7 @@
     "decision": "calculator_active_benchmark_only_not_locally_validated; not country-specific certified"
   },
   "next_actions": [
+    "Inspect the actual FAOSTAT Producer Prices annual bulk dataset (updated 9 October 2026) for GNQ area code 61 and commodity item codes matching the 17 calculator enterprises; the separate HDX Food Prices country dataset surfaced in the audit displays macro deflator items, not validated commodity farmgate prices.",
     "Extract raw FAOSTAT GNQ crop area, production, yield and observation flags for 2020–2024 for the 17 calculator commodities.",
     "Extract raw FAOSTAT producer-price rows for GNQ by product, unit, year and flag; preserve missing values and price definitions.",
     "Obtain the final 2026/2027 cocoa, coffee and coconut minimum-price decree and its grade/unit schedule, not just the draft announcement.",
