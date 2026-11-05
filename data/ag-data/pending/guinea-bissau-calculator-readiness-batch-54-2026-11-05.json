@@ -1,0 +1,134 @@
+{
+  "title": "Guinea-Bissau calculator-readiness review — Batch 54",
+  "batch": 54,
+  "country_code": "GW",
+  "country_name": "Guinea-Bissau",
+  "review_date": "2026-11-05",
+  "status": "research_updated_not_calculator_ready",
+  "scope": "Evidence refresh only. No calculator activation, formula change, merge or deployment.",
+  "new_evidence": [
+    {
+      "topic": "2025 agricultural household listing",
+      "source": "FAO 50x2030 / DGPA Ministry of Agriculture and Rural Development / INE",
+      "publication_date": "2026-09-23",
+      "reference_period": "2025",
+      "observations": {
+        "estimated_agricultural_households": 122000,
+        "share_of_agricultural_households_practising_rainfed_crop_production_and_livestock": "more than 90%",
+        "share_of_agricultural_households_growing_cashew": "87%",
+        "coverage": "national agricultural household listing and sampling frame"
+      },
+      "caveat": "This is a household listing and sampling frame, not a full crop production census or crop-by-region yield survey. The 122,000 figure is an estimate. The crop and livestock activity indicators are household prevalence, not hectares, tonnes or yields.",
+      "source_url": "https://www.fao.org/in-action/agrisurvey/news/news-detail/guinea-bissau-releases-first-agricultural-household-listing-data-since-2009/en",
+      "microdata_url": "https://microdata.fao.org/index.php/catalog/3131"
+    },
+    {
+      "topic": "2025 cereal production and regional production context",
+      "source": "FAO GIEWS Country Brief on Guinea-Bissau",
+      "reference_date": "2026-02-06",
+      "reference_period": "2025 harvest",
+      "observations": {
+        "aggregate_cereal_production": 351000,
+        "unit": "tonnes",
+        "change_vs_five_year_average": "approximately 18% above average",
+        "harvest_completion": {
+          "coarse_grains": "October 2025",
+          "rice": "January 2026"
+        },
+        "main_cereal_producing_regions": [
+          "Oio",
+          "Cacheu",
+          "Biombo"
+        ]
+      },
+      "caveat": "The 351,000-tonne figure is an aggregate cereal estimate, not a crop-specific or region-specific yield table. The regional description identifies major producing regions but does not quantify each region's production. Keep rice and coarse-grain crop-year timing distinct.",
+      "source_url": "https://cb.apps.fao.org/country.jsp?code=GNB"
+    },
+    {
+      "topic": "Market prices and producer-price monitoring",
+      "source": "World Bank Real Time Food Prices dataset and WFP market monitoring system",
+      "observations": {
+        "world_bank_markets": 45,
+        "world_bank_geographic_coverage": [
+          "Bafatá",
+          "Tombali",
+          "Cacheu",
+          "Sector Autónomo de Bissau",
+          "Biombo",
+          "Oio",
+          "Gabú",
+          "Bolama",
+          "Quinara",
+          "Market Average"
+        ],
+        "world_bank_data_period": "2007-01-01 to 2026-10-01",
+        "world_bank_version_date": "2026-10-05",
+        "wfp_market_monitoring_markets": 44,
+        "wfp_monitoring_frequency": "weekly",
+        "wfp_cashew_monitoring": "weekly farm-gate cashew nut price updates during the marketing campaign"
+      },
+      "caveat": "World Bank RTFP combines direct price observations with machine-learning estimates for missing data; retain its modelled/observed status and confidence metadata. The listed staple-food prices are not automatically farm-gate prices. WFP describes a direct weekly farm-gate cashew monitoring route, but the current dated cashew series still needs extraction and unit/grade validation.",
+      "world_bank_catalogue_url": "https://microdata.worldbank.org/catalog/4493",
+      "wfp_market_monitor_url": "https://dataviz.vam.wfp.org/GuineaBissau/economic/how-it-works"
+    },
+    {
+      "topic": "National statistical system and currency context",
+      "source": "Instituto Nacional de Estatística (INE) Guinea-Bissau",
+      "observations": {
+        "currency": "XOF",
+        "2024_agriculture_share_of_GDP": "18.4%",
+        "latest_visible_CPI_period_on_indicator_page": "June 2026"
+      },
+      "caveat": "The INE indicator page labels some headline indicators as demo data. Use it for navigation/context only until the underlying official statistical tables are opened and verified. Agriculture's GDP share is not a crop yield, farm price or production cost.",
+      "source_url": "https://ine.gw/indicadores/"
+    }
+  ],
+  "regional_lookup": {
+    "regions": [
+      "Bafatá",
+      "Biombo",
+      "Bissau",
+      "Bolama",
+      "Cacheu",
+      "Gabú",
+      "Oio",
+      "Quinara",
+      "Tombali"
+    ],
+    "status": "nine first-level regions confirmed by World Bank market dataset geographic coverage; Bissau is the autonomous sector",
+    "note": "Market dataset coverage does not establish crop production estimates for every region. Verify the current official administrative geography and spelling before wiring selectors."
+  },
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_2025_household_listing_and_351000t_aggregate_cereal_estimate_recorded_crop_specific_region_area_and_yield_tables_missing",
+    "dated_local_farmgate_prices_and_units": "partial_WFP_weekly_farmgate_cashew_monitoring_route_identified_current_series_not_extracted_RTFP_is_mixed_observed_and_modelled_market_price_data",
+    "seed_and_planting_material_costs": "blocked_farmer_paid_unit_costs_not_extracted",
+    "fertilizer_and_soil_amendment_costs": "blocked_product_and_application_costs_not_extracted",
+    "crop_protection_costs": "blocked_crop_specific_costs_not_extracted",
+    "irrigation_water_and_energy_costs": "blocked_rainfed_and_irrigated_system_costs_not_extracted",
+    "labour_rates_and_operations": "blocked_regional_crop_operation_wages_not_extracted",
+    "machinery_and_land_preparation_costs": "blocked_hire_and_operation_rates_not_extracted",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no validated crop- and region-specific enterprise budgets",
+    "currency_and_exchange_rate_method": "XOF_identified_locale_rounding_and_WAEMU_currency_handling_tests_pending",
+    "source_provenance_and_observation_date": "partial_FAO_2025_listing_FAO_2025_cereal_estimate_and_World_Bank_2026_10_RTFP_metadata_recorded",
+    "calculator_mapping_and_test_cases": "blocked_no Guinea-Bissau profile mapping or regression tests"
+  },
+  "blockers": [
+    "Obtain crop-specific tables from the 2025 listing and the first full agricultural survey cycle (2026/2027); do not treat the listing as a crop census.",
+    "Extract region-by-crop harvested area, production, yield, production system and season from official DGPA/INE/FAO tables.",
+    "Obtain the current weekly WFP farm-gate cashew price series with date, region/market, grade, unit and currency; do not substitute imported rice retail prices.",
+    "Extract observed prices separately from World Bank machine-learning estimates and retain confidence and spatial interpolation flags.",
+    "Obtain farmer-paid seed, fertilizer, crop protection, irrigation, labour, machinery and land-preparation costs.",
+    "Prepare cashew-specific and food-crop regional enterprise budgets, then map only validated data to the 17 calculator commodities and add test cases."
+  ],
+  "safeguards": [
+    "Do not treat the 2025 agricultural household listing as a crop production census.",
+    "Do not convert household crop prevalence into production or yield.",
+    "Do not assign the national 351,000-tonne cereal estimate to Oio, Cacheu or Biombo without source-backed regional figures.",
+    "Do not treat modelled World Bank prices as direct observations or farm-gate prices.",
+    "Do not use imported rice retail prices as producer prices.",
+    "Do not invent production costs or enterprise budgets.",
+    "Keep Guinea-Bissau research-only and preserve the original ten active country profiles."
+  ],
+  "next_step": "Extract the WFP weekly farm-gate cashew series and official regional crop tables; then proceed to Lesotho if Guinea-Bissau's full cost and crop tables remain unavailable.",
+  "validation": "Research note only; no calculator activation, merge or deployment."
+}
