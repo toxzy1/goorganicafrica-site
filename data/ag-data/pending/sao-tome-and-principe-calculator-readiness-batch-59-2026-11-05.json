@@ -1,0 +1,101 @@
+{
+  "title": "São Tomé and Príncipe calculator readiness evidence — Batch 59",
+  "batch": 59,
+  "review_date": "2026-11-05",
+  "country": {
+    "name": "São Tomé and Príncipe",
+    "iso2": "ST",
+    "iso3": "STP",
+    "currency": "STN (new dobra)",
+    "calculator_status": "not_active"
+  },
+  "review_status": "evidence_refreshed_not_ready",
+  "scope_note": "This is an evidence refresh, not a readiness certification or calculator data file. National and secondary indicators must not be mistaken for district yields, farmgate prices or farmer-paid costs.",
+  "findings": {
+    "production": "Secondary FAOSTAT-derived 2024 national totals: maize 796 t; cassava 1,434 t; bananas 5,374 t; cocoa beans 4,000 t; palm oil 4,870 t; coffee 7 t. These require direct FAOSTAT/INE table verification and matching harvested area before yield calculation.",
+    "cocoa": "FAO says cocoa dominates exports. The EC value-chain study gives historical 2017 production and plantation area and explains conventional/certified cooperative channels. Do not use historical 2017 figures as current productivity or budgets.",
+    "geography": "INE confirms 7 districts; Pagué is the sole district on Príncipe, an autonomous region. Island/district lookup is known, but crop-specific production-zone mapping is not validated.",
+    "seasonality": "INE describes a long wet season roughly September-June and a drier Gravana June-September; local terrain creates microclimatic variation. Do not infer uniform planting calendars or yields across districts.",
+    "market_prices": "July 2026 tomato quote STN120-130/kg is a consumer/market price reported in a news interview, not a farmgate observation. May 2026 cocoa export unit value STN64.37/kg is customs value, not producer price. They are context only and must not feed calculator revenue.",
+    "census": "The 2025 General Agricultural Census is listed in FAO's WCA catalogue. INE phase-2 reporting in May 2026 describes a complementary survey to establish actual production. A complete public crop-by-district final table was not verified in this review.",
+    "inputs": "No current farmer-paid, dated and district-specific price schedule was verified for seed/planting material, fertilizer, crop protection, labour, machinery, irrigation/water/energy, transport or post-harvest processing.",
+    "currency": "Use STN new dobra; verify current central-bank rate policy and local price-unit conventions before any foreign-currency conversion. Do not confuse older STD denomination with STN."
+  },
+  "sources": [
+    {
+      "name": "FAO country overview",
+      "url": "https://www.fao.org/sao-tome-e-principe/fao-em-sao-tome-e-principe/sao-tome-e-principe-em-resumo/en/",
+      "finding": "Agriculture employs more than 65% of the population per FAO's country overview; cocoa dominates exports (FAO overview describes about 90% of exports). Small domestic market and limited diversification are structural constraints."
+    },
+    {
+      "name": "INE country profile and administrative geography",
+      "url": "https://ine.st/index.php/o-pais/sobre-o-pais",
+      "finding": "INE confirms seven districts: Água Grande, Cantagalo, Caué, Lembá, Lobata, Mé-Zóchi and Pagué; Pagué is on Príncipe, which has autonomous-region status. Two main islands, volcanic terrain and nine-month wet season (September-June) plus Gravana (June-September)."
+    },
+    {
+      "name": "FAO WCA round 2020 catalogue",
+      "url": "https://www.fao.org/world-census-agriculture/wca-round/wca-round-2020/",
+      "finding": "FAO catalogue identifies São Tomé and Príncipe's 2025 agricultural census and lists questionnaires, but no final report/tables in the catalogue view reviewed."
+    },
+    {
+      "name": "INE phase 2 census reporting",
+      "url": "https://www.glebatv.st/todas-noticias/ine-inicia-fase-2-do-recenseamento-geral-da-agricultura-2025-em-sao-tome-e-principe",
+      "finding": "14 May 2026 report quotes INE census leadership saying phase 2 is a complementary survey to determine actual national production after identifying active agricultural operators. This indicates detailed production collection was still underway at that point."
+    },
+    {
+      "name": "FAOSTAT-derived crop production summary",
+      "url": "https://geoscope.ch/en/development/food/sao-tome-and-principe",
+      "finding": "Secondary FAOSTAT-based summary lists 2024 production: maize 796 t, cassava 1,434 t, bananas 5,374 t, cocoa beans 4,000 t, palm oil 4,870 t and coffee 7 t. These are national totals only; area, district yields and source-table validation not extracted."
+    },
+    {
+      "name": "Cocoa value-chain analysis (European Commission)",
+      "url": "https://knowledge4policy.ec.europa.eu/sites/default/files/VCA4D%2018%20-Sa%CC%83o%20Tome%CC%81%20e%20Pri%CC%81ncipe%20Cocoa%20ENG-1.pdf",
+      "finding": "2017 baseline: cocoa plantations about 25,000 ha; 2,488 t conventional and 1,065 t certified cocoa. Report identifies production zones on São Tomé, small-producer/cooperative channels and post-harvest fermentation/drying. Historical, not current yield/cost schedule."
+    },
+    {
+      "name": "WFP country strategic plan 2024-2028",
+      "url": "https://executiveboard.wfp.org/document_download/WFP-0000151719",
+      "finding": "WFP describes export-crop orientation, cocoa-led exports, small domestic market, infrastructure and cold-storage constraints; structural context only."
+    },
+    {
+      "name": "Tomato market price report",
+      "url": "https://glebatv.st/todas-noticias/feira-da-independencia-revela-desafios-e-oportunidades-para-a-producao-agricola-de-sao-tome-e-principe",
+      "finding": "12 July 2026 consumer interview reports tomatoes at STN 120-130/kg at market/consumer level; farmer-platform representative attributes price pressure to reduced production and climate conditions. Not a farmgate quote and not a representative market series."
+    },
+    {
+      "name": "Cocoa export unit value",
+      "url": "https://www.selinawamucii.com/pt/percep%C3%A7%C3%B5es/pre%C3%A7os/sao-tome-e-principe/graos-de-cacau/",
+      "finding": "Secondary page reports May 2026 UN Comtrade export unit value 64.37 STN/kg. Customs/export unit value, not farmgate; not usable as producer revenue."
+    },
+    {
+      "name": "Trade/FAOSTAT crop context",
+      "url": "https://www.trade.gov/country-commercial-guides/sao-tome-and-principe-agricultural-sectors-and-agribuiness",
+      "finding": "US trade guide (2022) describes cocoa, palm oil, chocolate, pepper, coconut oil and coffee as agricultural export activities and identifies horticulture/fruit value-chain potential; dated context only."
+    }
+  ],
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_secondary_FAOSTAT_2024_national_output_only_area_and_district_yields_missing",
+    "dated_local_farmgate_prices_and_units": "blocked_market_tomato_quote_and_cocoa_export_unit_value_are_not_farmgate",
+    "seed_and_planting_material_costs": "blocked_no_current_district_farmer_paid_quotes",
+    "fertilizer_and_soil_amendment_costs": "blocked_no_current_district_farmer_paid_quotes",
+    "crop_protection_costs": "blocked_no_current_product_rate_and_cost_schedule",
+    "irrigation_water_and_energy_costs": "blocked_no_farmer_paid_cost_schedule; climate/seasonality_context_only",
+    "labour_rates_and_operations": "blocked_census_worker_count_not_wage_or_operation_rates",
+    "machinery_and_land_preparation_costs": "blocked_no_current_hire_and_land_preparation_rates",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_crop_district_farmgate_revenue_and_cost_budget",
+    "currency_and_exchange_rate_method": "partial_STN_identified_new_dobra_conversion_and_locale_tests_pending",
+    "source_provenance_and_observation_date": "partial_sources_include_INE_FAO_2026_census_and_July_2026_market_reporting_plus_secondary_FAOSTAT_summary",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_crop_district_yield_price_cost_bundle_or_regression_cases"
+  },
+  "blockers": [
+    "Obtain and extract the complete 2025 General Agricultural Census phase-2 report and crop-by-district tables; reconcile any 2026 headline totals to the primary report.",
+    "Download direct FAOSTAT crop area and production series for STP; reconcile national output and crop-year definitions with INE before deriving yields.",
+    "Obtain dated producer/farmgate prices by crop, grade, transaction level, district/island and unit; exclude consumer tomato prices and cocoa customs unit values from farm revenue.",
+    "Obtain current farmer-paid seed, fertilizer, crop protection, labour, machinery, land preparation, irrigation, water, energy, transport, drying and fermentation costs.",
+    "Construct separate cocoa establishment and mature-orchard budgets, including cooperative/certification and post-harvest pathways; build annual food-crop budgets for maize, cassava, banana and horticulture.",
+    "Validate island/district crop calendars and production systems; do not assign national yields uniformly to seven districts.",
+    "Confirm current BCSTP currency and exchange-rate conventions, then build STN regression tests."
+  ],
+  "decision": "Keep São Tomé and Príncipe inactive. Evidence refresh improves source discovery and national context but does not meet the farmgate-price, input-cost, regional-budget or test-case requirements.",
+  "next_step": "Extract the final census tables and direct FAOSTAT area/output series; then collect district farmgate prices and farmer-paid input quotations before constructing enterprise budgets."
+}
