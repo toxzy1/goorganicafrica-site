@@ -2329,30 +2329,29 @@
       "code": "TG",
       "name": "Togo",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "DSID_Statagritogo_official_survey_and_agricultural_price_portal_confirmed;_FAO_2025_cereals_about_1_7m_tonnes;_2026_regional_crop_calendar_and_Savanes_labour_increase;_FEWS_NET_Sep_2026_maize_market_price_155_FCFA_per_kg;_DNCF_Aug_2026_reference_prices_for_clearing_ploughing_harrowing_and_irrigation;_farmgate_and_regional_budgets_pending",
+      "existing_research_note": "November 5 refresh: INSEED national and regional 2024 yearbooks listed (download 403); FEWS NET 2026/27 cereal forecast 1,955,893 tonnes and September maize market price 155 FCFA/kg; DNCF August 2026 clearing, ploughing and pulverising procurement benchmarks. Crop-prefecture tables, verified farmgate prices and regional enterprise budgets remain pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial",
-        "dated_local_farmgate_prices_and_units": "blocked",
+        "crop_area_production_yield_by_commodity_and_season": "partial_2023_SIAR_crop_totals_and_2025_FAO_national_cereal_aggregate_plus_2026_27_FEWS_NET_forecast; INSEED_2024_yearbooks_listed_but_unavailable_403; crop_prefecture_area_yield_tables_not_extracted",
+        "dated_local_farmgate_prices_and_units": "blocked_FEWS_NET_Sep_2026_maize_155_FCFA_per_kg_and_DNCF_catalogue_values_are_market_or_procurement_reference_not_verified_farmgate_prices",
         "seed_and_planting_material_costs": "partial",
         "fertilizer_and_soil_amendment_costs": "blocked",
         "crop_protection_costs": "blocked",
         "irrigation_water_and_energy_costs": "partial",
         "labour_rates_and_operations": "partial",
-        "machinery_and_land_preparation_costs": "partial",
+        "machinery_and_land_preparation_costs": "partial_DNCF_Aug_2026_reference_clearing_350000_ploughing_35000_pulverising_20000_FCFA_per_ha; public_procurement_benchmarks_not_farmer_transaction_costs",
         "regional_enterprise_budget_and_gross_margin": "blocked",
         "currency_and_exchange_rate_method": "partial",
         "source_provenance_and_observation_date": "partial",
         "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract latest DSID crop survey tables by prefecture, crop, planted/harvested area, production and yield; distinguish bimodal seasons.",
-        "Extract Statagritogo dated market-price observations and verify producer/wholesale/retail level, units and grades.",
-        "Obtain current farmer-facing seed, fertiliser, crop-protection, labour, irrigation, machinery, fuel and transport quotations; DNCF reference prices are procurement benchmarks only.",
-        "Build regional enterprise budgets for southern/central bimodal and northern unimodal systems.",
-        "Validate livestock budgets and crop-specific calculator mapping/test cases."
+        "Download INSEED 2024 national and regional statistical yearbooks; extract crop-by-prefecture area, production and yield.",
+        "Extract Statagritogo crop survey and dated price series with market, grade, unit and transaction level.",
+        "Obtain verified current farmgate prices and farmer-paid input, labour, irrigation, machinery, fuel and transport costs.",
+        "Build regional enterprise budgets for southern/central bimodal and northern unimodal systems; account for Savanes access/security constraints."
       ],
-      "next_step": "Download DSID survey and Statagritogo price series, resolve local bowl/sack weights and transaction level, then obtain region-specific input quotations and enterprise budgets; keep Togo inactive until validation passes.",
+      "next_step": "Extract crop-by-prefecture INSEED/DSID tables and Statagritogo price records; obtain verified farmer-paid costs and build regional enterprise budgets before enabling Togo.",
       "batch_01_review": {
         "review_date": "2026-11-02",
         "country_name": "Togo",
@@ -2379,15 +2378,14 @@
         "regional_lookup": "5 administrative regions added to src/_data/calculator/regions.json on the readiness branch; lookup only, not activated."
       },
       "november_2026_review": {
-        "date": "2026-11-04",
-        "outcome": "evidence_refreshed_not_ready_not_active",
-        "new_evidence": [
-          "FAO GIEWS 2025 cereal aggregate and 2026 seasonal assessment",
-          "FEWS NET September 2026 maize market price and low-producer-price warning",
-          "DNCF August 2026 official reference costs for land clearing, ploughing, pulverising and irrigation kits",
-          "DSID official agricultural statistics and mercuriales portal verified"
-        ],
-        "certification": "not_certified"
+        "review_date": "2026-11-05",
+        "decision": "evidence_refreshed_not_ready_not_active",
+        "sources": [
+          "https://inseed.tg/annuaires/",
+          "https://fews.net/west-africa/togo/key-message-update/september-2026",
+          "https://cb.apps.fao.org/country.jsp?code=TGO",
+          "https://dncf-togo.org/mercuriale?category=travaux-et-materiels-agricoles-et-d-irrigation"
+        ]
       }
     },
     {
@@ -2506,8 +2504,12 @@
     }
   ],
   "next_country": {
-    "code": "SS",
-    "name": "South Sudan"
+    "code": "TN",
+    "name": "Tunisia"
   },
-  "updated_at": "2026-11-05"
+  "updated_at": "2026-11-05",
+  "last_completed_country": {
+    "code": "TG",
+    "name": "Togo"
+  }
 }
