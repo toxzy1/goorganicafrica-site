@@ -6098,7 +6098,10 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark"
+          "data_quality": "benchmark",
+          "seed_rate_kg_per_ha": "25–50",
+          "seed_rate_source": "Seed Co Botswana recommends 25–50 kg/ha for rain-fed soybean; actual rate should follow variety, seed size, row spacing and agronomist guidance.",
+          "seed_rate_source_url": "https://seedcogroup.com/bw/fieldcrops/media/faqs/"
         },
         {
           "country_code": "GQ",
