@@ -335,7 +335,17 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "price_low": 7.7,
+      "price_expected": 10.4125,
+      "price_high": 13.5,
+      "price_unit": "per kg",
+      "price_source": "Botswana Agricultural Marketing Board scheduled-produce producer/market price schedule, July/August 2026, reproduced by The Farmers' Platform. Range: Tswana cowpeas Grade 2 BWP 7.70/kg to Black-eye cowpeas Grade 1 BWP 13.50/kg; intermediate observations include Tswana Grade 1 BWP 11.00/kg and Black-eye Grade 2 BWP 9.45/kg.",
+      "price_as_of": "2026-08",
+      "source": "Botswana-specific BAMB cowpea producer/market price schedule (July/August 2026); yield and production cost remain Africa benchmark estimates, not Botswana farm measurements or enterprise budgets.",
+      "as_of": "2026-08",
+      "cost_source": "Africa benchmark estimate; not a Botswana-specific farmer-paid input or enterprise budget.",
+      "cost_as_of": "2026-10",
+      "data_quality": "partial_country_specific_producer_price_with_benchmark_yield_and_cost"
     },
     {
       "country_code": "GQ",
