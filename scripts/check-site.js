@@ -138,6 +138,16 @@ const calculatorApp = read('src/js/calculator-app.js');
 if (!calculatorApp.includes('resultData.data_quality === "benchmark"') || !calculatorApp.includes('resultData.data_quality === "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy"') || !calculatorApp.includes('T("calc", "benchmarkWarning")') || !calculatorApp.includes("cd.cost_source || cd.source")) {
   throw new Error('Calculator results must disclose Africa-wide benchmark data, including mixed-source country profiles.');
 }
+if (!calculatorApp.includes('price_per_unit: moneyMedian("price_per_unit")')) {
+  throw new Error('Benchmark fallback must calculate per-animal/per-output prices for livestock enterprises.');
+}
+for (const country of calculatorCountries.filter(c => c.data_mode === "benchmark_only")) {
+  for (const f of files) {
+    const profile = json('src/_data/calculator/commodities/' + f);
+    const row = (profile.country_data || []).find(x => x.country_code === country.code);
+    if (!row || row.data_quality !== "benchmark") throw new Error(`Benchmark-only country ${country.code} lacks a disclosed fallback in ${f}.`);
+  }
+}
 
 const decisionCentreLabelKeys = [
   'goal_market','goal_finance','goal_inputs','goal_machinery','goal_training','goal_climate','goal_all',
