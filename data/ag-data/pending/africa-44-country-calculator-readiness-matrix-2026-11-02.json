@@ -993,7 +993,7 @@
       "code": "GN",
       "name": "Guinea",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "existing_research_note": "2026-11-04 refresh: ANASA 2025-2026 integrated annual agricultural survey results presentation verified (33 prefectures; 230 investigators; 15,294 sampled agricultural households; INS validation reported), but the underlying regional tables are not yet extracted. USDA FAS MY 2025/26 national estimates remain independent cross-checks. ANASA SIM page exposes historical 2024 bulletins; its relaunch note documents historical collection gaps. No verified 2026 producer-price series or regional enterprise budgets.",
+      "existing_research_note": "Batch 53 (2026-11-05): ANASA EAAI 2025/26 scope confirmed across 33 prefectures with 15,294 sampled households; FAO 50x2030 programme and livestock-only public microdata entry reviewed; ANASA SIM portal confirms market price collection but visible bulletins found are 2024; USDA MY 2025/26 national estimates cross-checked. Prefecture crop tables, current farmgate prices and costed budgets pending.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_ANASA_2025_26_survey_release_confirmed_but_prefecture_tables_not_extracted_USDA_FAS_national_estimates_crosscheck_only",
@@ -1021,7 +1021,7 @@
         "Add GNF currency, regional selector, commodity mapping and gross-margin regression tests after validated budgets are mapped.",
         "Track AfDB/AFFM FOSTER three-year fertilizer financing (announced 19 Oct 2026; planned 16,200 tonnes and 45,000 farmers) as supply-chain access context only; verify regional dealer prices, credit terms and actual deliveries before calculating fertilizer cost."
       ],
-      "next_step": "Obtain full ANASA EAAI report/annexes and current dated SIM bulletins; collect regional input/labour quotations and enterprise budgets. Track AfDB/AFFM FOSTER as a supply-chain intervention, not a price observation.",
+      "next_step": "Obtain full ANASA EAAI 2025/26 crop tables and current dated SIM price series; extract crop-by-prefecture area, production and yield and verify farmer-paid costs before calculator mapping.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea government portal lists the pre-existing administrative regions (including the special zone of Conakry). A decree dated 20 August 2026 created two additional administrative regions, Beyla and Siguiri. The regional lookup therefore records the eight previously listed regional areas plus the two newly created regions. Implementation details and updated prefecture-to-region boundaries should be confirmed against the subsequent regulatory instrument before regional crop data are mapped.",
@@ -1073,7 +1073,7 @@
       "code": "GW",
       "name": "Guinea-Bissau",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "2026-11-04 refresh: FAO microdata metadata confirms the 2025 rural agricultural-household listing is regionally representative across eight regions and 323 sampled census districts, but it is a sampling frame, not a crop-production survey. FAO GIEWS estimates 2025 aggregate cereal output at 351,000 MT and identifies Oio, Cacheu and Biombo as major producing regions. World Bank RTFP catalogue provides 45-market monthly estimates through 2026-10-01, combining direct and ML-imputed observations; these are market estimates, not farmgate prices. IMF warning on official rice series remains.",
+      "existing_research_note": "Batch 54 (2026-11-05): FAO 2025 agricultural household listing released 2026-09-23 identifies about 122,000 households; over 90% practice rainfed crops and livestock, 87% grow cashew. FAO 2025 cereal output estimated 351,000 tonnes, about 18% above five-year average. WFP weekly farmgate cashew monitoring route and World Bank RTFP 45-market estimates through 2026-10 reviewed. Regional crop tables and full costs pending.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2025_household_listing_is_sampling_frame_only_FAO_GIEWS_351kt_aggregate_cereals_no_crop_specific_regional_yields;_2026_27_integrated_survey_results_pending",
@@ -1102,7 +1102,7 @@
         "Reconcile the later reported XOF 425/kg cashew buying price with the official XOF 410/kg reference by observation date, market, quality and transaction stage.",
         "Incorporate rice post-harvest losses (reported up to 30%) and logistics share (about 42% of retail price) only after obtaining local, region-specific cost and loss parameters; do not apply national value-chain averages as farm budgets."
       ],
-      "next_step": "Audit World Bank RTFP raw CSV and obtain 2026/27 integrated survey crop tables; collect regional producer prices for supported commodities and full regional input/labour/machinery/irrigation/transport budgets. Keep the 2026 cashew price as a separate non-profile reference. No activation until budgets and tests pass.",
+      "next_step": "Extract WFP weekly farmgate cashew price series and official DGPA/INE crop tables; separate observed prices from World Bank modelled estimates.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea-Bissau government profile and UK Government toponymic factfile confirm eight first-order regions and a separate Autonomous Sector of Bissau. The lookup includes only the eight regions; the autonomous sector is deliberately not mixed into the region array.",
@@ -1155,7 +1155,7 @@
       "code": "LS",
       "name": "Lesotho",
       "evidence_file": "data/ag-data/pending/lesotho-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "BOS catalogue now lists 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26; tables not yet extracted. FAO Aug-2026 provisional combined maize/sorghum/wheat output 42,000 t; FEWS NET Sep-2026 reports 2026 maize -30% y/y and -55% vs 5-year average. Government e-service lists 70% seed/pesticide and 80% fertilizer subsidy; farmer copayments and product schedule unverified. Current district farmgate prices and enterprise budgets remain missing.",
+      "existing_research_note": "Batch 55 (2026-11-05): BoS catalogue confirms 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26; FAO Aug 2026 provisional aggregate 42,000 tonnes maize/sorghum/wheat and FEWS NET Sep 2026 district harvest pattern plus 70% seed/80% fertilizer subsidy evidence recorded. Final crop tables, current farmgate prices and enterprise budgets pending.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_official_2022_23_five_crop_district_area_harvested_area_production_and_derived_yield_plus_2026_national_maize_estimate_no_complete_final_2025_26_district_crop_tables",
@@ -1178,7 +1178,7 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Extract the newly listed 2025/26 crop forecast and cereal balance reports by district and crop; reconcile FAO/FEWS NET estimates; obtain official 2026/27 input product schedule and farmer copayments; obtain dated district farmgate prices and crop-specific budgets.",
+      "next_step": "Extract BoS 2025/26 final crop and cereal balance tables, reconcile with FAO/FEWS NET, then obtain district-level producer prices and farmer-paid input/labour costs.",
       "batch_24_review": {
         "review_date": "2026-11-02",
         "country_name": "Lesotho",
@@ -2454,5 +2454,6 @@
   "next_country": {
     "code": "SS",
     "name": "South Sudan"
-  }
+  },
+  "updated_at": "2026-11-05"
 }
