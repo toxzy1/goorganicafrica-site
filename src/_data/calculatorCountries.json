@@ -161,7 +161,16 @@
         "maize"
       ],
       "benchmark_fallback_commodities": 16,
-      "data_quality_note": "Maize has a Botswana-specific 2024 yield and July/August 2026 producer schedule reference; its cost is an Africa benchmark proxy. The other 16 commodities use clearly labelled Africa benchmark estimates pending local validation."
+      "data_quality_note": "Botswana-specific maize yield and BAMB producer schedule remain available; the beans/cowpea profile now also uses a Botswana-specific BAMB producer/market price schedule (July/August 2026). Maize costs and beans/cowpea yield and costs remain Africa benchmark proxies. The other 15 commodity profiles remain benchmark estimates pending local validation.",
+      "localized_data_components": {
+        "maize": [
+          "yield",
+          "producer_price"
+        ],
+        "beans": [
+          "producer_price"
+        ]
+      }
     },
     {
       "code": "BF",
