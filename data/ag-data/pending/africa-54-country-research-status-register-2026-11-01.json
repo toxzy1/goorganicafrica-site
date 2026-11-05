@@ -336,9 +336,11 @@
       "name": "Malawi",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "Batch_26_2026_11_03_official_2024_25_APES_crop_totals_ADD_maize_horticulture_livestock_and_2025_NACA_small_area_data_sources_reviewed_3_regions_added_current_farmgate_and_enterprise_costs_pending",
+      "review_status": "2026-11-05_follow_up_IHS6_2024_25_microdata_route_verified_plot_crop_input_sales_modules_and_2025_NACA_small_area_labour_machinery_irrigation_coverage_confirmed_2025_26_minimum_farmgate_policy_prices_and_IFPRI_Sep_2026_retail_context_added_APES_groundnut_bean_cowpea_narrative_table_conflicts_flagged_microdata_extraction_and_regional_enterprise_budgets_pending_not_ready",
       "calculator_status": "directory_only_not_active",
-      "administrative_geography_status": "3_regions_28_district_council_units_region_selector_added"
+      "administrative_geography_status": "3_regions_28_district_council_units_region_selector_added",
+      "follow_up_evidence_file": "data/ag-data/pending/malawi-follow-up-evidence-2026-11-05.json",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "ML",
