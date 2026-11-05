@@ -1,0 +1,136 @@
+{
+  "title": "Equatorial Guinea follow-up evidence — 5 November 2026",
+  "country_code": "GQ",
+  "country_name": "Equatorial Guinea",
+  "iso3": "GNQ",
+  "review_date": "2026-11-05",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Add directly extracted official INEGE 2026 yearbook tables and current government agricultural-policy evidence. Preserve unit, period and source conflicts; do not activate calculator records from aggregate or ambiguous data.",
+  "new_primary_findings": {
+    "inege_2026_yearbook": {
+      "source": "INEGE, Anuario Estadístico de Guinea Ecuatorial 2026",
+      "publication_date": "2026-09-25",
+      "pdf_url": "https://inege.org/wp-content/uploads/2026/08/AEGE-2026-Final.pdf",
+      "coverage": "Official statistical yearbook with data updated through December 2025; introduction identifies the 2015 First General Agriculture Census among source inputs and notes revisions/discrepancies between editions.",
+      "crop_table": {
+        "printed_table_number_in_body": 235,
+        "table_of_contents_number": 237,
+        "printed_page": 267,
+        "pdf_page_index": 296,
+        "title": "Producción agrícola por tipo de cultivo (Kg). G.E. 2025",
+        "source_attribution": "MAGBPMA",
+        "unit": "kg",
+        "observations": [
+          {"crop": "Cacao", "2024_kg": 510227, "2025_kg": 673440, "area_text": ">50,000 ha"},
+          {"crop": "Coffee", "2024_kg": 1500, "2025_kg": 3744, "area_text": ">40 ha"},
+          {"crop": "Coconut", "2024_kg": 39600, "2025_kg": 1172, "area_text": ">200 ha"},
+          {"crop": "Cassava", "2024_kg": 171485, "2025_kg": 13748, "area_text": ">5,000 ha"},
+          {"crop": "Rice", "2024_kg": 295, "2025_kg": null, "area_text": ">5 ha"},
+          {"crop": "Groundnut", "2024_kg": 10500, "2025_kg": 22260, "area_text": ">500 ha"},
+          {"crop": "Plantain", "2024_kg": 9054, "2025_kg": 23535, "area_text": ">200 ha"},
+          {"crop": "Cucumber", "2024_kg": 13500, "2025_kg": 28620, "area_text": ">2 ha"},
+          {"crop": "Tomato", "2024_kg": 21250, "2025_kg": 45050, "area_text": ">0.5 ha"},
+          {"crop": "Maize", "2024_kg": 652, "2025_kg": 1382, "area_text": ">0.1 ha"},
+          {"crop": "Sweet potato", "2024_kg": 2390, "2025_kg": 5067, "area_text": ">0.5 ha"},
+          {"crop": "Yam", "2024_kg": 11710, "2025_kg": 24825, "area_text": ">0.2 ha"},
+          {"crop": "Watermelon", "2024_kg": 613, "2025_kg": 1300, "area_text": ">1 ha"},
+          {"crop": "Bell pepper / pimiento", "2024_kg": 3375, "2025_kg": 7155, "area_text": ">1 ha"}
+        ],
+        "qualification": "The area column is printed as threshold expressions (for example, >5,000 ha), not exact harvested-area observations. These values cannot be used to calculate point yields. The table has an internal numbering discrepancy: the table of contents calls the crop table Table 237, while the body labels it Table 235."
+      },
+      "cocoa_quality_table": {
+        "printed_table_number_in_body": 234,
+        "printed_page": 266,
+        "unit": "metric tonnes",
+        "source_attribution": "Cámara de Comercio, Agrícola y Forestal de Bioko",
+        "observations": [
+          {"season": "2019/2020", "grade_i_t": 254.8, "grade_ii_t": 283.9, "total_t": 538.7},
+          {"season": "2020/2021", "grade_i_t": 297.1, "grade_ii_t": 332.4, "total_t": 629.5},
+          {"season": "2021/2022", "grade_i_t": 252.0, "grade_ii_t": 593.8, "total_t": 845.8},
+          {"season": "2022/2023", "grade_i_t": 228.0, "grade_ii_t": 232.0, "total_t": 460.0},
+          {"season": "2023/2024", "grade_i_t": 270.0, "grade_ii_t": 281.0, "total_t": 551.0},
+          {"season": "2024/2025", "grade_i_t": 306.9, "grade_ii_t": 257.9, "total_t": 564.8}
+        ],
+        "qualification": "This is a separate cocoa campaign series. Do not merge it with the calendar-year crop table without confirming definitions and period coverage."
+      },
+      "labour_reference": {
+        "source": "INEGE 2026 yearbook, labour section, citing Decree 30/2016 extending Decree 121/2011",
+        "reference_value": 117304,
+        "currency": "XAF",
+        "period": "per month",
+        "qualification": "Statutory interprofessional minimum wage reference. It is not an observed agricultural daily wage or a farm-operation labour rate; do not convert directly into crop labour cost."
+      }
+    },
+    "current_government_policy": [
+      {
+        "source": "Equatorial Guinea Government Press Office, 30 October 2026",
+        "url": "https://www.guineaecuatorialpress.com/index.php/noticias/el_gobierno_concede_seis_meses_para_impulsar_la_transformacion_del_cacao_y_autoriza_la_compra_de_insumos_agricolas",
+        "finding": "Government reviewed procurement offers from Anoney Service and Getranscao for quicklime and copper sulphate; Vice-President negotiated up to a 10% reduction from initial supplier offers. Government intends to arrange shipping directly to control freight costs and gave Agriculture Ministry six months to advance a domestic cocoa-processing factory.",
+        "qualification": "This is a government procurement negotiation, not a published farmer retail price list or proof of the final farmer-paid input price. No unit prices were published in the report."
+      },
+      {
+        "source": "Equatorial Guinea Government Press Office, 18 March 2026",
+        "url": "https://www.guineaecuatorialpress.com/index.php/noticias/ingresos_no_petroleros_justicia_educacion_y_agricultura_marcan_la_agenda_del_primer_consejo_interministerial_del_a%C3%B1o",
+        "finding": "The 2026–2027 agricultural campaign draft decree includes proposed minimum prices for cocoa, coffee and coconut.",
+        "qualification": "The public report does not state the price amounts and describes an anteproyecto/draft. Do not treat it as a final published price schedule."
+      },
+      {
+        "source": "Equatorial Guinea Government Press Office, 29 September 2026",
+        "url": "https://www.guineaecuatorialpress.com/noticias/camara_de_los_diputados_comparecencias_de_los_miembros_del_gobierno_para_el_analisis_de_los_presupuestos_generales_del_estado",
+        "finding": "INPAGE reported paying 539 cocoa producers in the Insular Region in 2025 and purchasing 8,200 kg of cocoa and 4,300 kg of coffee from Continental Region producers. It also supported coconut transport, distributed agricultural inputs, and identified 170 cocoa/coffee plots in the Continental Region. Projects included Bioko rural cadastre update (XAF 100 million), cocoa/coffee nurseries (XAF 100 million), and agricultural extension service reactivation (XAF 300 million).",
+        "qualification": "These are administrative procurement and programme facts. They do not disclose transaction prices, unit input prices or representative farm budgets."
+      }
+    ],
+    "fertilizer_context": {
+      "source": "World Bank World Development Indicators, series AG.CON.FERT.ZS_GQ, via secondary display",
+      "url": "https://app.indexbox.io/indicators/symbol/fertilizer-use-equatorial-guinea/",
+      "observation": "4.77 kg of fertilizer nutrients per hectare of arable land in 2024, reported as 61% lower than 2023",
+      "qualification": "National fertilizer-use intensity only; not a product price, crop-specific application rate or farmer cost. Verify directly against WDI before production use."
+    }
+  },
+  "reconciliation_flags": [
+    {
+      "issue": "FAOSTAT versus INEGE crop production",
+      "detail": "FAO GIEWS reports FAOSTAT 2024 production around 77,000 tonnes cassava, 102,000 tonnes sweet potatoes and 41,000 tonnes plantains. INEGE's 2026 yearbook crop table reports 2024 cassava 171,485 kg, sweet potato 2,390 kg and plantain 9,054 kg. These are not comparable at face value and differ by orders of magnitude.",
+      "decision": "Do not select or combine either series until source coverage, units, administrative scope and reporting definitions are clarified."
+    },
+    {
+      "issue": "Cocoa calendar-year versus campaign totals",
+      "detail": "INEGE crop table reports 673,440 kg cocoa for calendar year 2025, while its separate 2024/2025 cocoa campaign table reports 564.8 tonnes.",
+      "decision": "Retain as separate series pending confirmation of reference periods, collection coverage and whether one is provisional or partial."
+    },
+    {
+      "issue": "Cultivated-area values",
+      "detail": "INEGE crop table prints minimum/threshold area values using greater-than signs, not exact crop harvested areas.",
+      "decision": "Do not calculate yields from these threshold values."
+    }
+  ],
+  "readiness_update": {
+    "national_production_evidence": "improved_official_crop_table_extracted_but_conflicts_unresolved",
+    "regional_crop_yields": "not_verified",
+    "farmgate_prices": "not_verified_current_amounts",
+    "input_prices": "government_procurement_negotiation_lead_only_no_final_unit_prices",
+    "labour_costs": "statutory_monthly_minimum_wage_reference_only",
+    "enterprise_budgets": "not_available",
+    "calculator_mapping_and_test_cases": "not_ready",
+    "decision": "Equatorial Guinea remains research-only and must not be activated."
+  },
+  "next_actions": [
+    "Extract raw FAOSTAT GNQ crop area, production, yield and observation flags for 2020–2024 for the 17 calculator commodities.",
+    "Extract raw FAOSTAT producer-price rows for GNQ by product, unit, year and flag; preserve missing values and price definitions.",
+    "Obtain the final 2026/2027 cocoa, coffee and coconut minimum-price decree and its grade/unit schedule, not just the draft announcement.",
+    "Request or locate INPAGE farmer-facing price lists and 2025/2026 input procurement award schedules for quicklime, copper sulphate, seed, fertilizer and freight.",
+    "Obtain the underlying INEGE/MAGBPMA crop table metadata and confirm the scope of the very small crop totals before deriving yields.",
+    "Do not create country_data values or activate GQ until prices, yields, costs and regional applicability are supported."
+  ],
+  "sources": [
+    "https://inege.org/wp-content/uploads/2026/08/AEGE-2026-Final.pdf",
+    "https://cb.apps.fao.org/country.jsp?code=GNQ",
+    "https://data.fao.org/catalog/dataset/47c17894-8ca1-4bd0-ba4d-6078e919e9b1",
+    "https://www.guineaecuatorialpress.com/index.php/noticias/el_gobierno_concede_seis_meses_para_impulsar_la_transformacion_del_cacao_y_autoriza_la_compra_de_insumos_agricolas",
+    "https://www.guineaecuatorialpress.com/index.php/noticias/ingresos_no_petroleros_justicia_educacion_y_agricultura_marcan_la_agenda_del_primer_consejo_interministerial_del_a%C3%B1o",
+    "https://www.guineaecuatorialpress.com/noticias/camara_de_los_diputados_comparecencias_de_los_miembros_del_gobierno_para_el_analisis_de_los_presupuestos_generales_del_estado",
+    "https://app.indexbox.io/indicators/symbol/fertilizer-use-equatorial-guinea/"
+  ]
+}
