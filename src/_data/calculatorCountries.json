@@ -293,7 +293,10 @@
       "slug": "equatorial-guinea",
       "default_language": "en",
       "source_profile": "gq-ag-data",
-      "directory_only": true
+      "directory_only": false,
+      "data_mode": "benchmark_only",
+      "benchmark_fallback_commodities": 17,
+      "data_quality_note": "All 17 enterprises use the calculator's transparent Africa-wide benchmark fallback derived from the ten established country profiles. These are planning estimates, not verified Equatorial Guinea prices, yields or farm budgets. Country-specific values will replace the benchmark as local evidence is validated."
     },
     {
       "code": "ER",
