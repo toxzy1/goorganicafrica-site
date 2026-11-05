@@ -130,5 +130,93 @@
     "Keep Guinea-Bissau research-only and preserve the original ten active country profiles."
   ],
   "next_step": "Extract the WFP weekly farm-gate cashew series and official regional crop tables; then proceed to Lesotho if Guinea-Bissau's full cost and crop tables remain unavailable.",
-  "validation": "Research note only; no calculator activation, merge or deployment."
+  "validation": "Research note only; no calculator activation, merge or deployment.",
+  "follow_up_2026_11_05": {
+    "review_date": "2026-11-05",
+    "status": "research_updated_not_calculator_ready",
+    "new_evidence": [
+      {
+        "topic": "2026 raw cashew nut farmgate floor price",
+        "source": "International Consultative Cashew Council (CICC), 2026 campaign price notice",
+        "url": "https://ciccashew.org/jnec-ci-2026-le-cicc-trace-la-voie-pour-transformer-la-volatilite-des-prix-en-levier-de-croissance-durable-2/",
+        "observations": [
+          {
+            "commodity": "raw cashew nuts",
+            "value": 410,
+            "unit": "XOF/kg",
+            "reference_period": "2026 marketing campaign",
+            "price_type": "farmgate floor/reference price",
+            "status": "2026 floor price announced for Guinea-Bissau"
+          }
+        ],
+        "caveat": "Cashew is not among the existing 17 calculator enterprises. This price is useful for the country's cashew sector evidence, not as a substitute for prices of maize, rice, cassava or livestock."
+      },
+      {
+        "topic": "2025 cashew export volumes and producer prices",
+        "source": "IMF, Guinea-Bissau Ninth and Tenth Reviews under the Extended Credit Facility, 2026",
+        "url": "https://www.elibrary.imf.org/view/journals/002/2026/083/article-A001-en.xml",
+        "observations": [
+          {
+            "indicator": "cashew export volume",
+            "value": 211400,
+            "unit": "tonnes",
+            "reference_year": 2025,
+            "status": "IMF estimate; up from 167,500 tonnes in 2024"
+          },
+          {
+            "indicator": "cashew producer price",
+            "value": 500,
+            "unit": "XOF/kg",
+            "reference_year": 2025,
+            "status": "IMF estimate of average producer price; comparable to historically high 2024 level"
+          },
+          {
+            "indicator": "cashew export price",
+            "value": 1230,
+            "unit": "USD/tonne",
+            "reference_year": 2025,
+            "status": "IMF estimate; export price, not farmgate price"
+          }
+        ],
+        "caveat": "Export volume and export price are not farm yield or farmgate price. The producer price is a national-level IMF estimate; it is not a regional distribution or individual farm transaction series."
+      },
+      {
+        "topic": "2026 cashew campaign market reports",
+        "source": "African Cashew Alliance / N'Kalô market bulletin, Week 13-14, 23 March-3 April 2026",
+        "url": "https://africancashewalliance.com/sites/default/files/splits/africashewsplits_week_13-14_market_report_2026_aca.pdf",
+        "observations": [
+          {
+            "commodity": "raw cashew nuts",
+            "value": 410,
+            "unit": "XOF/kg",
+            "reference_period": "2026 campaign pre-season announcement",
+            "status": "reported announced farmgate reference price; campaign had not yet commenced at bulletin date"
+          },
+          {
+            "indicator": "production forecast",
+            "value": 270000,
+            "unit": "tonnes",
+            "reference_period": "2026",
+            "status": "early stakeholder forecast, not final harvest result"
+          }
+        ],
+        "caveat": "The bulletin explicitly noted the season had not yet started; forecast and reference price should not be represented as completed transactions or final output."
+      },
+      {
+        "topic": "WFP weekly cashew monitoring and World Bank food price dataset",
+        "source": "WFP DataViz Guinea-Bissau and World Bank RTFP 2026-10 dataset",
+        "urls": [
+          "https://dataviz.vam.wfp.org/GuineaBissau/economic/how-it-works",
+          "https://microdata.worldbank.org/catalog/4493"
+        ],
+        "findings": [
+          "WFP describes weekly updates of farmgate cashew prices during the marketing campaign, alongside weekly food price monitoring across 44 markets.",
+          "World Bank RTFP version 2026-10-05 covers 45 markets and dates 2007-01-01 to 2026-10-01, with selected Admin-2 areas.",
+          "RTFP combines direct price measurements with machine-learning estimates for missing observations; observed and estimated values must be kept distinct."
+        ],
+        "caveat": "A functioning monitoring system and dataset metadata do not establish that the latest cashew series has been extracted or validated. Obtain the dated WFP series by region/market, quality and unit."
+      }
+    ],
+    "decision": "Keep Guinea-Bissau research-only. New 2026 cashew reference price and IMF producer-price/export evidence strengthen cashew-sector coverage, but cashew is outside the current 17 calculator commodities. Crop-specific regional yields and full budgets for the supported enterprises remain missing. No calculator values or formulas changed."
+  }
 }
