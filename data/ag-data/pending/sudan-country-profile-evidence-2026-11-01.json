@@ -6,8 +6,8 @@
     "currency_code": "SDG",
     "currency_name": "Sudanese pound"
   },
-  "record_date": "2026-11-04",
-  "status": "research_only_not_published_to_calculator",
+  "record_date": "2026-11-05",
+  "status": "research_evidence_only_not_calculator_data",
   "purpose": "Country-specific agricultural evidence inventory for later validation; not a production calculator profile.",
   "sections": [
     {
@@ -528,19 +528,7 @@
     "Obtain livestock purchase/sale prices, herd composition, feed, veterinary, vaccination, water, mortality and mobility costs by production system.",
     "Document official and parallel SDG exchange-rate series with effective dates; never hard-code stale nominal prices."
   ],
-  "readiness_decision": {
-    "classification": "research_evidence_record_present",
-    "calculator_status": "directory_only_not_active",
-    "calculator_readiness": "not_ready_research_only",
-    "activation_blockers": [
-      "Crop-specific state-level area, production and yield tables require extraction and reconciliation across FAO CFSAM and USDA series.",
-      "No validated current farmgate producer-price series has been adopted; IFPRI/FAO market monitoring cannot automatically substitute.",
-      "No complete crop enterprise budgets or current farmer-facing input quotations.",
-      "Conflict, access, drought and rainfall conditions vary materially across states and localities.",
-      "Currency volatility and local commodity-unit definitions require dated treatment.",
-      "Livestock enterprise budgets require separate species- and production-system data."
-    ]
-  },
+  "readiness_decision": "not_calculator_ready",
   "safeguards": [
     "Research-only evidence; not a live calculator dataset.",
     "Do not activate Sudan or change calculator formulas based on this file.",
@@ -553,5 +541,77 @@
     "Do not infer representative crop yields by dividing national output by national harvested area without confirming matching crop definitions, period and methodology.",
     "Do not use IFPRI dashboard metadata as a substitute for exported, dated market observations or farmgate producer prices.",
     "Do not apply one national rainfall, conflict or access adjustment across Sudan."
-  ]
+  ],
+  "november_2026_review": {
+    "review_date": "2026-11-05",
+    "outcome": "evidence_refreshed_not_ready_not_active",
+    "sources": [
+      "https://www.fao.org/giews/countrybrief/country.jsp?code=SDN",
+      "https://openknowledge.fao.org/server/api/core/bitstreams/96c0924c-c465-4711-af3b-9c0da28ad24b/content",
+      "https://www.fao.org/neareast/news/details/sudan--new-fao-assessment-warns-of-escalating-food-and-livelihood-crisis/en",
+      "https://logcluster.org/system/files/2026-09/market-monitor-sudan-report-september-2026.pdf",
+      "https://sudan.ifpri.info/essential-commodities-prices-and-availability/",
+      "https://sudan.ifpri.info/5-price-and-availability-reports/",
+      "https://www.fao.org/giews/food-prices/price-warnings/detail/en/c/1760658/",
+      "https://fews.net/east-africa/sudan/food-security-outlook-update/august-2026",
+      "https://fas-prod.azureedge.us/data/production/su"
+    ],
+    "production_evidence": {
+      "national_2025_cereal_production_tonnes": 5200000,
+      "comparison_2024_percent": -22,
+      "comparison_five_year_average_percent": -19,
+      "sorghum_2025_26_production_thousand_tonnes": 4045.94,
+      "millet_2025_26_production_thousand_tonnes": 767.75,
+      "wheat_2025_26_forecast_thousand_tonnes": 433.5,
+      "sorghum_2025_26_area_harvested_thousand_ha": 6842.68,
+      "sorghum_2025_26_yield_t_ha": 0.59,
+      "millet_2025_26_area_harvested_thousand_ha": 2238.65,
+      "millet_2025_26_yield_t_ha": 0.343,
+      "wheat_2025_26_area_harvested_thousand_ha": 164.85,
+      "wheat_2025_26_yield_t_ha": 2.63,
+      "production_systems": [
+        "irrigated",
+        "semi_mechanized_rainfed",
+        "traditional_rainfed"
+      ],
+      "notes": [
+        "CFSAM state/scheme/sector tables report crop-specific cereal yield and production; do not collapse production systems into one yield.",
+        "Illustrative 2025/26 sorghum yield: Gedaref semi-mechanized 0.43 t/ha, traditional rainfed 0.43 t/ha; irrigated Aj Jazirah 2.68 t/ha. Different state/system records are not interchangeable.",
+        "National CFSAM crop-year and USDA marketing-year series differ in scope and timing; reconcile before using together."
+      ]
+    },
+    "market_evidence": {
+      "wfp_august_2026_national_sorghum_market_price_sdg_per_kg": 2465,
+      "wfp_august_2026_casual_labour_sdg_per_day": 17238,
+      "wfp_august_2026_exchange_rate_sdg_per_usd_parallel": 6150,
+      "wfp_august_2026_exchange_rate_sdg_per_usd_commercial_banks": 5500,
+      "note": "WFP market-monitor price is a market observation, not validated farmgate producer price. Exchange rates are dated and channel-specific; do not use as current or universal conversion."
+    },
+    "input_cost_evidence_gedaref_2025": {
+      "urea_50kg_bag_sdg": 135000,
+      "dap_50kg_bag_sdg": 128000,
+      "sorghum_seed_per_tonne_sdg": 3000000,
+      "millet_seed_per_tonne_sdg": 4000000,
+      "sesame_seed_per_tonne_sdg": 4600000,
+      "average_daily_labour_sdg": 15000,
+      "note": "Historical Gedaref reference prices from the CFSAM 2025 season; not national or current November 2026 quotes."
+    },
+    "seasonal_risk_2026": {
+      "harvest_window": "from November 2026",
+      "sennar_rainfall_deficit_percent": 20,
+      "gedaref_rainfall_deficit_percent": 30,
+      "severe_drought_share_cropland_sennar_percent": 55,
+      "severe_drought_share_cropland_gedaref_percent": 70,
+      "note": "FAO September 2026 brief; 2026 harvest outcome still pending at review date."
+    },
+    "blockers": [
+      "Obtain dated, commodity-specific farmgate producer prices by state/market, grade, unit and sale point; retail/market monitoring prices are not farmgate.",
+      "Extract and reconcile state-level CFSAM and USDA crop area, production and yield by crop, year and production system; do not mix crop-year and marketing-year series.",
+      "Refresh farmer-paid seed prices and seeding rates by crop/variety/state; 2025 Gedaref prices are reference-only.",
+      "Obtain current state-level fertilizer, crop-protection, labour, machinery, irrigation, water, fuel, transport, harvest and post-harvest cost schedules.",
+      "Build distinct enterprise budgets for irrigated, semi-mechanized rainfed and traditional rainfed systems and test each regional crop profile.",
+      "Account for conflict-related access constraints, 2026 rainfall deficits, currency instability and the November 2026 harvest uncertainty."
+    ],
+    "decision": "not_calculator_ready_not_active"
+  }
 }
