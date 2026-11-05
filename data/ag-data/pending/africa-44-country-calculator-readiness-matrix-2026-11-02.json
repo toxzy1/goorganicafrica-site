@@ -2392,20 +2392,20 @@
       "code": "TN",
       "name": "Tunisia",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "November 2026 refresh: FAO 26-Aug-2026 estimates 2026 aggregate cereals at 1.8m tonnes (~20% above five-year average); JORT 24-Jul-2026 official 2026 cereal producer base prices (durum TND100/quintal, common TND80, barley/triticale intervention TND65); ONAGRI input/service and fertilizer XLSX resources confirmed but values not extracted; reported 2026/27 selected cereal seed prices; first digital agricultural census launched 30-Oct-2026 with collection from November; FAO regional cereal/olive/water context and USDA MY2026/27 forecasts added. No crop-level budgets or all-17-commodity regional values yet.",
+      "existing_research_note": "November 5 refresh: Office des Céréales 2025 collection by crop and governorate added (collection only, not production/yield); ONAGRI input/service XLSX catalogue updated 4-Nov-2026; ONH governorate extra-virgin olive-oil producer-price XLS resource updated 27-Aug-2026; INS agricultural minimum wage series through Feb-2026. FAO 2026 national cereal estimate 1.8m tonnes and JORT 2026 producer base prices retained. Underlying input/olive XLS rows, harvested-area matching, non-cereal farmgate prices and full enterprise budgets remain incomplete.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2026_national_aggregate_cereals_1.8m_t_and_USDA_MY2026_27_seeded_area_forecasts; INGC_governorate_XLSX_crop_tables_and_matched_harvested_area_yields_not_extracted",
-        "dated_local_farmgate_prices_and_units": "partial_JORT_2026_official_producer_base_prices_for_durum_and_common_wheat_and_barley_triticale_intervention_price; other_commodity_governorate_farmgate_series_missing",
-        "seed_and_planting_material_costs": "partial_reported_2026_27_selected_cereal_seed_prices; verify_primary_circular_and_extract_non_cereal_seed_costs",
-        "fertilizer_and_soil_amendment_costs": "partial_ONAGRI_fertilizer_XLSX_resource_confirmed_but_product_unit_date_region_and_price_rows_not_extracted",
-        "crop_protection_costs": "partial_ONAGRI_input_service_XLSX_includes_pesticide_category_but_numeric_observations_not_extracted",
+        "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2026_national_aggregate_cereals_and_USDA_seeded_area_forecasts; Office_des_Cereales_2025_governorate_collection_by_crop_added_but_collection_is_not_production_or_harvested_area; matched_governorate_harvested_area_and_yield_pending",
+        "dated_local_farmgate_prices_and_units": "partial_JORT_2026_official_cereal_producer_base_prices; ONH_governorate_extra_virgin_olive_oil_producer_price_XLS_resource_confirmed_not_extracted; other_commodity_farmgate_series_missing",
+        "seed_and_planting_material_costs": "partial_reported_2026_27_cereal_seed_schedule_needs_primary_circular_verification; ONAGRI_seed_XLS_resource_confirmed_not_extracted; non_cereal_seed_costs_missing",
+        "fertilizer_and_soil_amendment_costs": "partial_ONAGRI_input_and_separate_fertilizer_XLSX_resources_confirmed_but_product_unit_date_region_price_and_subsidy_rows_not_extracted",
+        "crop_protection_costs": "partial_ONAGRI_input_XLSX_contains_pesticide_category_but_numeric_product_rows_not_extracted",
         "irrigation_water_and_energy_costs": "partial_FAO_regional_water_context_and_USDA_87k_ha_irrigated_wheat_barley_area; farmer_paid_water_pumping_energy_tariffs_and_costs_missing",
-        "labour_rates_and_operations": "blocked_no_dated_governorate_farmer_paid_labour_rates_or_operation_costs_extracted",
-        "machinery_and_land_preparation_costs": "partial_ONAGRI_services_XLSX_and_mechanisation_category_confirmed; itemized regional hire rates not extracted",
-        "regional_enterprise_budget_and_gross_margin": "blocked_no_complete_governorate_crop_or_livestock_enterprise_budgets; rainfed_irrigated_and_olive_systems_need_separate_costs",
+        "labour_rates_and_operations": "partial_INS_published_minimum_agricultural_wage_series_through_Feb_2026; actual_governorate_crop_operation_harvest_and_piece_rate_wages_missing",
+        "machinery_and_land_preparation_costs": "partial_ONAGRI_services_XLSX_resource_confirmed_but_itemized_governorate_hire_rates_not_extracted",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_complete_governorate_crop_or_livestock_enterprise_budgets; rainfed_irrigated_olive_and_horticultural_systems_need_separate_costs",
         "currency_and_exchange_rate_method": "partial_TND_currency_confirmed; calculator_locale_rounding_and_currency_regression_tests_pending",
-        "source_provenance_and_observation_date": "pass_for_JORT_2026_07_24_FAO_2026_08_26_ONAGRI_catalogue_2026_11_03_USDA_MY2026_27_and_TAP_2026_10_30; XLSX_observation_dates_still_unknown",
+        "source_provenance_and_observation_date": "pass_for_FAO_2026_08_26_JORT_2026_07_24_Office_des_Cereales_2025_ONAGRI_catalogue_2026_11_04_ONH_catalogue_2026_08_27_INS_2026_08_10; underlying_XLS_observation_dates_still_unknown",
         "calculator_mapping_and_test_cases": "blocked_no_validated_Tunisia_region_mapping_or_enterprise_regression_cases"
       },
       "blockers": [
@@ -2416,34 +2416,25 @@
         "Obtain farmer-paid fertilizer, pesticide, labour, machinery, irrigation, pumping energy, land, harvest and transport costs by governorate.",
         "Build regional enterprise budgets for rainfed northern cereals, irrigated horticulture, central/southern olive systems and relevant livestock systems.",
         "The first digital agricultural census fieldwork starts in November 2026; its results are not yet available and cannot be used as current data.",
-        "Map only supported commodity and governorate values to the calculator and create test cases for all enabled regional profiles."
+        "Map only supported commodity and governorate values to the calculator and create test cases for all enabled regional profiles.",
+        "Office des Céréales governorate figures are collection volumes, not total production or yield; obtain matching harvested area and production.",
+        "Extract ONAGRI input/service and fertilizer XLSX rows and ONH olive producer-price XLS values, including underlying observation dates, units and governorate coverage.",
+        "INS minimum agricultural wage is a statutory floor, not actual crop-operation or seasonal labour cost."
       ],
-      "next_step": "Extract the official INGC cereal-by-type and cereal-by-governorate workbooks and the ONAGRI input/service and fertilizer XLSX files; record dates, units and regions, then match crop output to harvested area and obtain non-cereal farmgate prices before enterprise-budget construction.",
+      "next_step": "Extract INGC governorate crop tables, ONAGRI input/service and fertilizer XLSX files, and ONH olive producer-price XLS; validate actual dates and units, then assemble regional enterprise budgets and test cases.",
       "november_2026_review": {
-        "review_date": "2026-11-04",
-        "country_name": "Tunisia",
-        "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-        "evidence_commit": "037b9add256299b7eaa2afddcc66d6f8afe00720",
-        "source_notes": "FAO 26-Aug-2026 estimates total cereal production at 1.8m tonnes, nearly 20% above the five-year average. JORT 24-Jul-2026 gives 2026 producer base prices of TND100/quintal for durum wheat and TND80/quintal for common wheat, and a TND65/quintal intervention price for barley/triticale; conditional delivery premiums are separate. ONAGRI's official open-data catalogue lists XLSX resources for input/service prices and fertilizers, but underlying rows and observation dates have not yet been extracted. A reported 2026/27 cereal seed schedule gives selected durum TND170/quintal, selected common TND140, selected barley/triticale TND130 and ordinary certified barley TND115; verify the primary circular. Tunisia launched its first general digital agricultural census on 30-Oct-2026, with nationwide field collection beginning in November; no results are yet available. FAO indicates 85% of cereal production is in the north and over 65% of olive-growing area is central; FEWS NET describes governorate reporting fragmentation and October-September crop-year convention. USDA MY2026/27 seeded-area estimates remain forecasts, not harvested-area observations.",
+        "review_date": "2026-11-05",
         "sources": [
-          "https://www.fao.org/giews/countrybrief/country.jsp?code=TN",
-          "https://www.jort.tn/view/journal-officiel/fr/2026/075/arrete-conjoint-2026-07-24-fixant-prix-modalites-paiement-stockage-retrocession-cereales/",
-          "https://catalog.data.gov.tn/fr/dataset/459c2931-8bfb-4f46-8258-a1d41da2db27",
-          "https://catalog.data.gov.tn/dataset/prix-des-principaux-intrants-des-produits-agricoles/resource/0f8939f3-edc6-4f5c-a5ca-adb5289dc92a",
-          "https://catalog.data.gov.tn/fr/dataset/engrais/resource/f8c5e3dd-3b00-4c77-82cd-39e985194ce4",
-          "https://www.lapresse.tn/2026/08/17/culture-cerealiere-le-ministere-de-lagriculture-fixe-les-prix-des-semences-pour-la-saison-2026-2027/",
-          "https://www.tap.info.tn/en/Portal-Top-News-EN/20748967-tunisia-s-1st",
-          "https://www.fao.org/in-action/drought-portal/preparedness/vulnerability-and-impact-assessment/national-case-studies/tunisia/en",
-          "https://help.fews.net/fde/v3/tunisia-country-book",
-          "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Grain+and+Feed+Annual_Tunis_Tunisia_TS2026-0004.pdf"
+          "FAO GIEWS 2026-08-26",
+          "JORT 2026-07-24",
+          "Office des Céréales 2025 collection by crop and governorate",
+          "ONAGRI input/service dataset metadata 2026-11-04",
+          "ONH olive producer-price XLS resource metadata 2026-08-27",
+          "INS agricultural wage series updated 2026-08-10"
         ],
-        "blockers": [
-          "Download and extract official ONAGRI input/service and fertilizer XLSX rows with dates, units and regions.",
-          "Extract INGC governorate crop tables and validate crop-specific harvested-area yields.",
-          "Obtain current dated farmgate prices and farmer-paid costs for all target commodity groups.",
-          "Develop regional enterprise budgets and calculator test cases; do not enable Tunisia yet."
-        ],
-        "decision": "Research refresh saved; Tunisia remains inactive and is not calculator-ready."
+        "decision": "not_calculator_ready_not_active",
+        "progress": "43_of_44_country_evidence_reviews_complete; Zimbabwe remains",
+        "readiness_certified_additional_countries": 0
       }
     },
     {
@@ -2504,12 +2495,12 @@
     }
   ],
   "next_country": {
-    "code": "TN",
-    "name": "Tunisia"
+    "code": "ZW",
+    "name": "Zimbabwe"
   },
   "updated_at": "2026-11-05",
   "last_completed_country": {
-    "code": "TG",
-    "name": "Togo"
+    "code": "TN",
+    "name": "Tunisia"
   }
 }
