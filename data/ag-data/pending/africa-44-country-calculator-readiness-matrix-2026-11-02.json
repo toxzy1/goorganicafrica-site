@@ -2494,7 +2494,130 @@
             "https://zimstat.co.zw/producer-price-index-agriculture/",
             "https://ama.co.zw/agro-input-monitors/"
           ],
-          "decision": "No new readiness criterion passes. Zimbabwe remains inactive."
+          "decision": "Expanded the official production and seed-use evidence. This improves provincial crop mix and production baselines but does not pass yield, area, cost, or farm-budget criteria. Zimbabwe remains inactive.",
+          "survey_table_extraction": {
+            "survey_quality": "2024/25 PHS covered eight rural provinces, selected 58,000 farming households across 1,562 rural wards, and achieved a 93.2% response rate. It collected area harvested and total crop harvested at questionnaire level, but published result tables reviewed do not expose matched crop-area/yield cross-tabs.",
+            "province_cereal_production_mt": {
+              "Manicaland": {
+                "maize": 264869,
+                "sorghum": 24291,
+                "pearl_millet": 20321,
+                "finger_millet": 3115
+              },
+              "Mashonaland Central": {
+                "maize": 283692,
+                "sorghum": 40442,
+                "pearl_millet": 2733,
+                "finger_millet": 283
+              },
+              "Mashonaland East": {
+                "maize": 340653,
+                "sorghum": 17721,
+                "pearl_millet": 3767,
+                "finger_millet": 4563
+              },
+              "Mashonaland West": {
+                "maize": 393058,
+                "sorghum": 47724,
+                "pearl_millet": 386,
+                "finger_millet": 329
+              },
+              "Matabeleland North": {
+                "maize": 47105,
+                "sorghum": 24973,
+                "pearl_millet": 19924,
+                "finger_millet": 1416
+              },
+              "Matabeleland South": {
+                "maize": 58518,
+                "sorghum": 15007,
+                "pearl_millet": 8904,
+                "finger_millet": 129
+              },
+              "Midlands": {
+                "maize": 266114,
+                "sorghum": 44180,
+                "pearl_millet": 7521,
+                "finger_millet": 2767
+              },
+              "Masvingo": {
+                "maize": 165809,
+                "sorghum": 74005,
+                "pearl_millet": 47843,
+                "finger_millet": 10774
+              }
+            },
+            "oilseed_production_mt": {
+              "Manicaland": {
+                "groundnuts": 21540,
+                "sunflower": 4544,
+                "soybean": 85
+              },
+              "Mashonaland Central": {
+                "groundnuts": 10998,
+                "sunflower": 5581,
+                "soybean": 15752
+              },
+              "Mashonaland East": {
+                "groundnuts": 21734,
+                "sunflower": 4804,
+                "soybean": 5927
+              },
+              "Mashonaland West": {
+                "groundnuts": 6676,
+                "sunflower": 7137,
+                "soybean": 24426
+              },
+              "Matabeleland North": {
+                "groundnuts": 992,
+                "sunflower": 1334,
+                "soybean": 1
+              },
+              "Matabeleland South": {
+                "groundnuts": 2774,
+                "sunflower": 1335,
+                "soybean": 0
+              },
+              "Midlands": {
+                "groundnuts": 14637,
+                "sunflower": 10495,
+                "soybean": 11491
+              },
+              "Masvingo": {
+                "groundnuts": 16456,
+                "sunflower": 3600,
+                "soybean": 68
+              }
+            },
+            "soybean_table_conflict": "Table 3.7 provincial soybean rows sum to 57,750 MT while its printed national row says 7,750 MT. Table 3.8 sector total is 57,750 MT. The evidence strongly indicates a national-row typographical error, but keep official clarification pending rather than silently overwriting the published value.",
+            "seed_use_mt": {
+              "maize": {
+                "purchased": 24427,
+                "own_produce": 358,
+                "other_sources": 5368,
+                "total": 31154
+              },
+              "sorghum": {
+                "purchased": 1710,
+                "own_produce": 121,
+                "other_sources": 1103,
+                "total": 2935
+              },
+              "pearl_millet": {
+                "purchased": 601,
+                "own_produce": 59,
+                "other_sources": 280,
+                "total": 940
+              },
+              "finger_millet": {
+                "purchased": 171,
+                "own_produce": 15,
+                "other_sources": 46,
+                "total": 231
+              }
+            },
+            "calculator_use": "Use provincial production quantities as calibration/context and crop-mix evidence only. Do not derive yields, hectare budgets, or expected farm output from these quantities without the matched harvested-area microdata/cross-tabulations. Cereal seed-use tonnage is not a seed rate per hectare."
+          }
         }
       }
     }
