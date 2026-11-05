@@ -68,13 +68,14 @@
       "publisher": "Libya Trade Network, Ministry of Economy and Trade",
       "url": "https://opendata.gia.gov.ly/dashboard/dashboard/dataset/2024-2025",
       "scope": "Annual high, low, average and change statistics for food, meat, poultry, eggs, vegetables, fruits, grains and animal feed.",
-      "caveat": "XLSX exists but has not been extracted here; local market price level and geographic coverage must be checked."
+      "caveat": "XLSX exists but has not been extracted here; local market price level and geographic coverage must be checked.",
+      "download_status": "Official XLSX resource metadata verified (18.1 KB; updated 2026-09-29) but direct download endpoint failed in this review; no spreadsheet values extracted."
     },
     "local_price_index": {
       "publisher": "Libya Trade Network",
       "url": "https://lpi.ltnet.gov.ly/",
-      "bulletin_date": "2026-11-04",
-      "bulletin_number": 935,
+      "bulletin_date": "2026-11-05",
+      "bulletin_number": 936,
       "examples": [
         {
           "item": "local cucumber",
@@ -84,12 +85,17 @@
         {
           "item": "local first-grade tomato",
           "unit": "LYD/kg",
-          "retail_price": 12
+          "retail_price": 11
         },
         {
           "item": "local first-grade potato",
           "unit": "LYD/kg",
           "retail_price": 8
+        },
+        {
+          "item": "local first-grade hot green pepper",
+          "unit": "LYD/kg",
+          "retail_price": 7
         },
         {
           "item": "local first-grade sweet pepper",
@@ -143,7 +149,7 @@
     "Build crop-specific regional enterprise budgets and LYD calculator test cases, including exchange-rate and rounding rules."
   ],
   "decision": "Libya is not calculator-ready. Research refresh only; no activation, merge or deployment.",
-  "next_step": "Extract the official Trade Network 2024-2025 XLSX and primary FAOSTAT crop series, then seek current farmgate producer prices and farmer-facing input quotations before enterprise-budget construction.",
+  "next_step": "Retry official 2024-2025 Trade Network XLSX retrieval or obtain direct file; reconcile primary FAOSTAT crop rows; obtain farmgate producer prices and farmer-paid input quotations before budgets.",
   "sources": [
     "https://cb.apps.fao.org/country.jsp?code=LBY",
     "https://microdata.worldbank.org/catalog/6168",
@@ -153,5 +159,91 @@
     "https://natlas.org/country/libya/agriculture-and-food",
     "https://www.ifad.org/documents/48415603/49455873/Libya%2BCSN%2B2023-2024%2B.pdf/cb0c2a95-72c0-92d0-0c65-853f9d3acf71?t=1728301616674",
     "https://journal.su.edu.ly/index.php/bayan/en/article/view/2205"
-  ]
+  ],
+  "follow_up_2026_11_05": {
+    "review_date": "2026-11-05",
+    "findings": {
+      "fao_giews_2026": {
+        "reference_date": "2026-07-16",
+        "cereal_production_forecast_t": 150000,
+        "variance_from_five_year_average_pct": -20,
+        "cereal_import_requirement_2026_27_t": 3300000,
+        "wheat_import_requirement_2026_27_t": 1500000,
+        "weather": "Dry Oct-Nov 2025 delayed winter planting; eastern rainfall remained significantly below average, especially Al Jabal Al Akhdar. 2026 wheat/barley harvest started May and expected to finish late July.",
+        "interpretation": "National forecast and food-security context; not local farm yields or enterprise budgets.",
+        "source": "https://cb.apps.fao.org/country.jsp?code=LBY"
+      },
+      "local_price_index": {
+        "publisher": "Libya Trade Network",
+        "bulletin_number": 936,
+        "bulletin_date": "2026-11-05",
+        "url": "https://lpi.ltnet.gov.ly/",
+        "price_level": "retail/local market bulletin; not farmgate",
+        "observations": [
+          {
+            "item": "local cucumber",
+            "unit": "LYD/kg",
+            "price": 7
+          },
+          {
+            "item": "local first-grade tomato",
+            "unit": "LYD/kg",
+            "price": 11
+          },
+          {
+            "item": "local first-grade potato",
+            "unit": "LYD/kg",
+            "price": 8
+          },
+          {
+            "item": "local first-grade hot green pepper",
+            "unit": "LYD/kg",
+            "price": 7
+          },
+          {
+            "item": "local first-grade sweet pepper",
+            "unit": "LYD/kg",
+            "price": 12
+          },
+          {
+            "item": "laying-hen feed",
+            "unit": "LYD/quintal",
+            "price": 310
+          },
+          {
+            "item": "dairy-cattle feed",
+            "unit": "LYD/quintal",
+            "price": 350
+          }
+        ],
+        "caveat": "Preserve local product labels, grade, brand and retail level. Do not map retail values to farmgate prices or feed prices to complete livestock ration costs."
+      },
+      "official_annual_price_dataset": {
+        "publisher": "Libya Trade Network, Ministry of Economy and Trade",
+        "period": "2024-2025",
+        "dataset_url": "https://opendata.gia.gov.ly/dashboard/dashboard/dataset/2024-2025",
+        "resource_id": "c950c252-5c44-488c-98e8-f11ea8b6e9a9",
+        "format": "XLSX",
+        "metadata_updated": "2026-09-29",
+        "file_size_kb": 18.1,
+        "download_status": "resource metadata verified; direct XLSX retrieval failed in this review because download endpoint returned unsupported content type",
+        "scope": "Annual high, low, average and change statistics for food, meat, poultry, eggs, vegetables, fruits, grains, animal feed and construction materials.",
+        "interpretation": "Not extracted; no spreadsheet values transcribed or used."
+      },
+      "world_bank_rtfp": {
+        "markets": 41,
+        "period": "2017-01-01 to 2026-10-01",
+        "version": "2026-10-05",
+        "url": "https://microdata.worldbank.org/catalog/6168",
+        "method": "Direct WFP/FAO/selected NSO observations plus machine-learning estimates and modeled ranges; check coverage/confidence and spatial interpolation flags.",
+        "interpretation": "Market food-price estimates, not farmgate producer prices."
+      },
+      "production_quality": {
+        "national_2024": "SESRIC reports barley 65,000 t from 126,698 ha but gives yield as 513 hg/ha; this does not reconcile with output divided by area. Keep original source value flagged and require primary FAOSTAT/Libyan source reconciliation.",
+        "source": "https://cesr.sesric.org/cif.php?c_code=26"
+      }
+    },
+    "decision": "Libya remains directory-only/research-only. New official retail observations are recorded as market context only; no farmgate price, crop yield, input cost or enterprise budget was promoted into calculator data. No activation, formulas, routes or deployment changed.",
+    "next_step": "Retry extraction of the official 2024-2025 XLSX from its CKAN resource endpoint or obtain a direct file from Libya Trade Network; reconcile primary FAOSTAT crop rows; obtain farmgate producer prices and farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation and energy costs."
+  }
 }
