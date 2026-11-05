@@ -832,7 +832,7 @@
         "Validate World Bank modelled budgets against current SNL and TDL farm systems and regional agro-ecological conditions.",
         "Build region-specific budgets and calculator regression tests before mapping any values."
       ],
-      "next_step": "Confirm the reported 2026 NMC maize procurement schedule from the primary NMC source; obtain the 2025/26 regional crop assessment and current region-level farmer quotations, then validate SNL and TDL enterprise budgets before calculator mapping.",
+      "next_step": "Retrieve and extract 2025 AIIS market-price and gross-margin workbooks; inspect EHIS data access; validate farmgate versus wholesale/retail channels, dated regional crop yields and farmer-paid costs before calculator mapping.",
       "batch_23_review": {
         "review_date": "2026-11-02",
         "country_name": "Eswatini",
@@ -875,7 +875,9 @@
         "review_date": "2026-11-03",
         "findings": "Added dated 2026/27 subsidy package co-payments for maize, beans and sorghum, subsidised tractor-hire programme rate and a secondary-reported NMC maize procurement price lead. These improve cost/price evidence but do not complete crop-region farmgate series or itemized budgets.",
         "status": "research_only_not_calculator_ready"
-      }
+      },
+      "review_status": "2026_11_05_AIIS_public_register_lists_2025_weekly_market_price_and_2025_field_crop_livestock_vegetable_gross_margin_workbooks; individual_market_pages_latest_legitimate_files_only_to_2024_05; spreadsheet_extraction_failed_in_review_environment; EHIS_current_price_and_input_data_route_identified_but_underlying_records_not_accessed; keep_research_only",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "GA",
