@@ -1,0 +1,302 @@
+{
+  "title": "Namibia follow-up agricultural evidence",
+  "country": "Namibia",
+  "iso_alpha2": "NA",
+  "review_date": "2026-11-05",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Add extracted NSA Q4 2025 crop, horticulture and livestock auction tables; reconcile the NAB 2024/25 annual report; and qualify provisional Q2 2026 data. No calculator values are activated.",
+  "findings": [
+    {
+      "topic": "NSA Agriculture and Fishing Indicators Statistical Bulletin Q4 2025",
+      "source": "Namibia Statistics Agency, Q4 2025 bulletin, Tables 3, 6, 7 and 8",
+      "url": "https://nsa.org.na/wp-content/uploads/2026/04/Agriculture-and-Fishing-Indicators-Statistical-Bulletin-Fourth-Quarter-2025-23-March-2026.pdf",
+      "publication_date": "2026-03",
+      "reference_period": "October-December 2025",
+      "observations": [
+        {
+          "indicator": "controlled agronomy production",
+          "commodity": "wheat",
+          "value": 21058,
+          "unit": "tonnes",
+          "period": "Q4 2025",
+          "status": "Official quarterly output, not annual production or yield."
+        },
+        {
+          "indicator": "controlled agronomy production",
+          "commodity": "white maize",
+          "value": 1059,
+          "unit": "tonnes",
+          "period": "Q4 2025",
+          "status": "Official quarterly output, not annual production or yield."
+        },
+        {
+          "indicator": "controlled agronomy production",
+          "commodity": "pearl millet",
+          "value": 526,
+          "unit": "tonnes",
+          "period": "Q4 2025",
+          "status": "Official quarterly output, not annual production or yield."
+        },
+        {
+          "indicator": "controlled agronomy production total",
+          "value": 22643,
+          "unit": "tonnes",
+          "period": "Q4 2025",
+          "status": "Sum of the three NSA crop rows."
+        },
+        {
+          "indicator": "livestock auction count",
+          "commodity": "cattle",
+          "value": 59498,
+          "unit": "head",
+          "period": "Q4 2025",
+          "status": "Auction throughput, not national livestock output."
+        },
+        {
+          "indicator": "livestock auction count",
+          "commodity": "goats",
+          "value": 33850,
+          "unit": "head",
+          "period": "Q4 2025",
+          "status": "Auction throughput, not national livestock output."
+        },
+        {
+          "indicator": "livestock auction count",
+          "commodity": "sheep",
+          "value": 21641,
+          "unit": "head",
+          "period": "Q4 2025",
+          "status": "Auction throughput, not national livestock output."
+        },
+        {
+          "indicator": "average weighted auction price",
+          "commodity": "cattle",
+          "value": 37.54,
+          "unit": "NAD/kg",
+          "period": "Q4 2025",
+          "status": "Auction-market average, not direct farmgate price; weight basis and animal class need further detail."
+        },
+        {
+          "indicator": "average weighted auction price",
+          "commodity": "goats",
+          "value": 44.5,
+          "unit": "NAD/kg",
+          "period": "Q4 2025",
+          "status": "Auction-market average, not direct farmgate price; weight basis and animal class need further detail."
+        },
+        {
+          "indicator": "average weighted auction price",
+          "commodity": "sheep",
+          "value": 42.46,
+          "unit": "NAD/kg",
+          "period": "Q4 2025",
+          "status": "Auction-market average, not direct farmgate price; weight basis and animal class need further detail."
+        },
+        {
+          "indicator": "local horticulture purchases",
+          "status": "NSA says local purchase data were unavailable at release; trade values are not farmgate prices."
+        }
+      ],
+      "quality_notes": [
+        "NSA controlled agronomy covers pearl millet, white maize and wheat; quarterly production does not provide harvested area or yield.",
+        "NSA quarterly statistics use secondary and administrative sources and may be revised for up to three years."
+      ]
+    },
+    {
+      "topic": "NAB Annual Report 2024/2025",
+      "source": "Namibian Agronomic Board Annual Report 2024/2025, pages 31-45",
+      "url": "https://www.nab.com.na/wp-content/uploads/2026/02/WEB-ANNUAL-REPORT.pdf",
+      "reference_period": "2024/2025 financial and marketing year",
+      "observations": [
+        {
+          "indicator": "local controlled grain purchases",
+          "value": 36208,
+          "unit": "tonnes",
+          "status": "Purchased from farmers; marketed volume, not total national production."
+        },
+        {
+          "indicator": "local white maize purchases",
+          "value": 31990,
+          "unit": "tonnes",
+          "status": "Processor and silo purchases."
+        },
+        {
+          "indicator": "local wheat purchases",
+          "value": 3557,
+          "unit": "tonnes",
+          "status": "Processor and silo purchases."
+        },
+        {
+          "indicator": "local pearl millet purchases",
+          "value": 661,
+          "unit": "tonnes",
+          "status": "Processor and silo purchases."
+        },
+        {
+          "indicator": "white maize production system",
+          "status": "Summer crop under irrigation and rainfed systems; rainfed was about 1 percent of marketed local production in 2024/25."
+        },
+        {
+          "indicator": "wheat production system",
+          "status": "Winter crop produced solely under irrigation."
+        },
+        {
+          "indicator": "pearl millet production system",
+          "status": "Produced under rainfed conditions."
+        },
+        {
+          "indicator": "white maize irrigation yield",
+          "value": 10,
+          "unit": "tonnes/ha",
+          "geography": "North Central and Karst zones",
+          "status": "NAB reports highest average yield; not a national assumption."
+        },
+        {
+          "indicator": "white maize irrigation yield",
+          "value": 0.04,
+          "unit": "tonnes/ha",
+          "geography": "Zambezi zone",
+          "status": "NAB reports lowest average; unusually low and must be checked against chart, sample and denominator."
+        },
+        {
+          "indicator": "wheat yield",
+          "value": 6,
+          "unit": "tonnes/ha",
+          "geography": "Central and Karst zones",
+          "status": "NAB reports highest average; sample and production-zone details still needed."
+        },
+        {
+          "indicator": "average domestic floor price",
+          "commodity": "white maize",
+          "value": 7725,
+          "unit": "NAD/tonne",
+          "status": "2024/25 annual average floor price, not a dated transaction."
+        },
+        {
+          "indicator": "average domestic floor price",
+          "commodity": "wheat",
+          "value": 7453,
+          "unit": "NAD/tonne",
+          "status": "2024/25 annual average floor price, not a dated transaction."
+        },
+        {
+          "indicator": "average domestic floor price",
+          "commodity": "pearl millet",
+          "value": 7212,
+          "unit": "NAD/tonne",
+          "status": "2024/25 annual average floor price; distinct from 2026 Grade 1 notice."
+        },
+        {
+          "indicator": "local horticulture purchase value",
+          "commodity": "tomatoes",
+          "value": 30959717,
+          "unit": "NAD",
+          "status": "NAB local purchase value, not unit price."
+        },
+        {
+          "indicator": "local horticulture purchase volume",
+          "commodity": "round tomatoes",
+          "value": 2298,
+          "unit": "tonnes",
+          "status": "Local purchases, not total farm production."
+        },
+        {
+          "indicator": "local horticulture purchase volume",
+          "commodity": "watermelons",
+          "value": 1248,
+          "unit": "tonnes",
+          "status": "Local purchases, not total farm production."
+        },
+        {
+          "indicator": "local horticulture purchase volume",
+          "commodity": "English cucumber",
+          "value": 553,
+          "unit": "tonnes",
+          "status": "Local purchases, not total farm production."
+        }
+      ],
+      "quality_notes": [
+        "The six NAB agronomic zones are not the 14 administrative regions in the calculator selector; no one-to-one mapping is justified.",
+        "NAB purchases are marketed volumes, not total production, harvested area or yield.",
+        "White maize and wheat floor prices use import-parity principles; pearl millet floor price is cost-based. These are not spot farmgate transaction receipts.",
+        "The 0.04 tonnes/ha Zambezi value is an outlier requiring validation before use."
+      ]
+    },
+    {
+      "topic": "2026 Q2 controlled-agronomy output, provisional secondary transcription",
+      "source": "Windhoek Observer report quoting the NSA Q2 2026 bulletin",
+      "url": "https://observer24.com.na/agronomy-imports-rise-to-n674-8m-as-fish-exports-reach-n4-6bn/",
+      "reference_period": "April-June 2026",
+      "observations": [
+        {
+          "indicator": "combined controlled agronomy production",
+          "value": 52515,
+          "unit": "tonnes",
+          "status": "Secondary report attributes this total to NSA; crop breakdown not verified from primary PDF."
+        },
+        {
+          "indicator": "combined controlled agronomy comparator",
+          "value": 35765,
+          "unit": "tonnes",
+          "period": "Q2 2025",
+          "status": "Combined total only."
+        },
+        {
+          "indicator": "controlled agronomy import bill",
+          "value": 674.8,
+          "unit": "NAD million",
+          "status": "Trade/import bill, not farmer input costs."
+        }
+      ],
+      "quality_notes": [
+        "The primary NSA Q2 2026 PDF crop table was not extracted in this review.",
+        "A secondary transcription assigns the full 52,515 tonnes to white maize, while the NSA headline describes combined controlled crops. Do not use the crop allocation until the primary table is checked."
+      ]
+    },
+    {
+      "topic": "2026 Grade 1 mahangu floor price and cost schedule reaffirmed",
+      "source": "Namibian Agronomic Board Mahangu Floor Price 2026 Notice",
+      "url": "https://www.nab.com.na/wp-content/uploads/2026/06/Mahangu-floor-price-2026-notice-singed.pdf",
+      "publication_date": "2026-06-05",
+      "observations": [
+        {
+          "commodity": "pearl millet/mahangu",
+          "value": 7.87407,
+          "unit": "NAD/kg",
+          "market_level": "farm gate/collection centre",
+          "grade": "Grade 1",
+          "status": "Official minimum price; levy and producer transport share already deducted."
+        },
+        {
+          "commodity": "pearl millet/mahangu",
+          "value": 8917.07,
+          "unit": "NAD/ha",
+          "market_level": "standardized rainfed communal farmer cost benchmark",
+          "status": "Single-crop benchmark, not a representative regional farm budget."
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "calculator_status": "not_active",
+    "reason": "Crop and livestock context is improved, but complete regional harvested-area/yield series, direct farmgate prices, verified input quotations and representative enterprise budgets remain missing. The 2026 Q2 crop allocation is unresolved.",
+    "test_url_available": false,
+    "no_calculator_values_imported": true
+  },
+  "next_actions": [
+    "Extract the primary NSA Q2 2026 crop table and reconcile the 52,515-tonne aggregate with secondary crop allocations.",
+    "Extract NAB 2026 monthly horticulture price reports and classify market, date, grade, unit and transaction level.",
+    "Obtain current dated producer prices for white maize, wheat, tomatoes, watermelon and livestock; keep auction prices separate.",
+    "Verify the NAB 0.04 tonnes/ha Zambezi maize yield and its denominator/sample.",
+    "Crosswalk NAB production zones to the 14 administrative regions only where defensible.",
+    "Collect farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, transport, feed and veterinary costs.",
+    "Validate enterprise budgets and all 17 commodity mappings before activation."
+  ],
+  "safeguards": [
+    "Do not alter the original 10 working country profiles or calculator formulas.",
+    "Do not equate marketed purchases with total production or harvested area.",
+    "Do not treat auction prices, import-parity floor prices or retail/wholesale references as farmgate transactions.",
+    "Do not use the 2026 Q2 combined total as a crop-specific value.",
+    "Do not activate Namibia or publish a calculator test URL until mapping, build and regression tests pass."
+  ]
+}
