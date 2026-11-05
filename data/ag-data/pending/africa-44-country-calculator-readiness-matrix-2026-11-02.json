@@ -1668,7 +1668,7 @@
       "code": "MR",
       "name": "Mauritania",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "2026-11-04 follow-up: AMI Ministry interview adds 2024-25 traditional cereal/rice/vegetable production and area aggregates plus seed/mechanization programme outputs; AMI 2025 rice agreement records MRU14,000/t raw rice and MRU28,000/t white rice (campaign agreement, not current universal farmgate); AfDB 2023-24 monitoring reports system-specific irrigated rice 5.6 t/ha, floodplain sorghum 0.57 and maize 0.60; World Bank latest RTFP catalogue metadata 37 markets through Oct 2026, observed/imputed market prices not farmgate.",
+      "existing_research_note": "2026-11-04 follow-up: AMI Ministry interview adds 2024-25 traditional cereal/rice/vegetable production and area aggregates plus seed/mechanization programme outputs; AMI 2025 rice agreement records MRU14,000/t raw rice and MRU28,000/t white rice (campaign agreement, not current universal farmgate); AfDB 2023-24 monitoring reports system-specific irrigated rice 5.6 t/ha, floodplain sorghum 0.57 and maize 0.60; World Bank latest RTFP catalogue metadata 37 markets through Oct 2026, observed/imputed market prices not farmgate. 2026-11-05 follow-up adds ANSADE exhaustive 2024 livestock census scope/results routes, government 2025-26 seed/equipment support quantities, May 2026 retail rice ceiling (old ouguiya; not farmgate), FAO 28 Oct 2026 seasonal/rangeland risks and World Bank RTFP version cross-check; numeric tables and cost budgets remain pending.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_AMI_2024_25_national_crop_aggregates_added_and_AfDB_2023_24_system_indicators_irrigated_rice_5_6_floodplain_sorghum_0_57_maize_0_60_t_ha_added_but_crop_by_wilaya_harvested_area_and_seasonal_denominator_validation_pending",
@@ -1696,7 +1696,7 @@
         "Download and inspect the World Bank 2026-10-05 market-price release; distinguish direct observations from imputed estimates and consumer/market prices from producer transactions.",
         "Obtain farmer-paid seed, fertilizer, crop protection, labour, machinery hire, irrigation, pumping energy and transport costs by wilaya and production system."
       ],
-      "next_step": "Obtain and extract Ministry 2024-25 and 2025-26 crop-by-wilaya tables and the latest World Bank market-price microdata; verify the rice agreement against producer receipts, then assemble wilaya-level input and operating cost schedules.",
+      "next_step": "Extract ANSADE livestock census results by species/wilaya and Ministry crop tables by wilaya; then verify producer receipts and farmer-paid operating costs before building enterprise budgets.",
       "batch_11_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Interior Ministry DGAT portal reports 15 administrative wilayas and 63 moughataas. A separate decentralisation framework describes 13 elected local-government regions; this is a different unit, so the calculator lookup uses 15 administrative wilayas. A 28 January 2026 publication reproducing Ministry of Agriculture figures reports 2025 autumn rice output of 229353 tonnes, area 48800 ha and yield 4.70 t/ha, with regional figures only for Trarza, Gorgol and Brakna. Treat these as reported ministry figures pending the original ministry table.",
@@ -1734,6 +1734,25 @@
           "AfDB programme yield indicators do not substitute for region-specific crop-cut data.",
           "World Bank market estimates are not farmgate transactions and include imputed observations.",
           "No activation, merge to main or deployment."
+        ]
+      },
+      "follow_up_2026_11_05": {
+        "review_date": "2026-11-05",
+        "source_file": "data/ag-data/pending/mauritania-follow-up-evidence-2026-11-05.json",
+        "note": "ANSADE 2024 General Livestock Census national coverage and full scope confirmed; published result volumes and wilaya leaflets identified, but numerical species/region tables not yet extracted. Government 2025-26 input support quantities and May 2026 retail rice price ceiling added with strict separation from farmer costs and paddy farmgate receipts. FAO 28 Oct 2026 crop/rangeland conditions reviewed. World Bank RTFP 2026-10-05 version cross-checked; preserve observed/imputed flags.",
+        "calculator_status": "not_active",
+        "updates": [
+          "ANSADE RGE 2024 is an exhaustive national livestock census covering camelids, cattle, sheep, goats, poultry, equines and asses; its metadata includes animal counts, milk production, employment, receipts/expenses and market sellers. Numerical tables still need extraction.",
+          "Government programme statement reports 553 t traditional cereal seed, 1,500 ploughs, 60 solar pumps, 70 mechanical pump sets, 7,500 kg ordinary vegetable seed, 420 kg hybrid seed and 800 t potato seed. These are programme quantities, not farmer unit prices or costs.",
+          "AMI 15 May 2026 rice price ceiling is 290 old ouguiyas/kg for high-quality Mauritanian rice; it is retail, not paddy farmgate. Keep denomination explicit.",
+          "FAO GIEWS 28 Oct 2026 reports ongoing coarse-grain harvest, irrigated rice harvest expected Nov-Dec, localized Gorgol shortfalls and rangeland/water stress in parts of Brakna, Gorgol and Hodh El Gharbi.",
+          "World Bank RTFP version 2026-10-05 retained as market-price context only; observed and modelled/imputed prices must remain distinct."
+        ],
+        "blockers": [
+          "Extract species-by-wilaya census results and livestock receipts/expenses from ANSADE published volumes and microdata documentation.",
+          "Extract crop-by-wilaya harvested area, output and yields from Ministry tables, preserving seasonal systems.",
+          "Obtain dated farmer producer receipts and itemized farmer-paid input, labour, irrigation, energy, machinery and transport costs.",
+          "Construct and test regional enterprise budgets before calculator mapping."
         ]
       }
     },
