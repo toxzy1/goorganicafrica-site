@@ -2617,6 +2617,22 @@
               }
             },
             "calculator_use": "Use provincial production quantities as calibration/context and crop-mix evidence only. Do not derive yields, hectare budgets, or expected farm output from these quantities without the matched harvested-area microdata/cross-tabulations. Cereal seed-use tonnage is not a seed rate per hectare."
+          },
+          "market_and_cost_check": {
+            "zmx_market_ticker_observed": "ZMX official homepage displays USD/kg ticker values: yellow maize 0.347; white sorghum 0.30; wheat 0.46; sunflower 0.43; sugar beans 1.25; soyabean 0.60; rice 1.80; red sorghum 0.30; rapoko 0.33; pearl millet 0.33; maize 0.37; groundnuts 1.30; cow peas 0.32; cottonseed 0.30; soyameal 0.52.",
+            "zmx_ticker_quality": "Official exchange homepage identifies a market-price ticker and says its market-data service includes prices, bids/offers, volumes and values. However, the page does not expose a timestamp, trade date, location/grade basis, traded volume or transaction-level record for each ticker value. Record as indicative exchange reference only; do not use as verified dated farmgate realization in calculator.",
+            "auction_history": "Public ZMX auction-results archive inspected during this check lists historical results from 2023/24 and does not provide current 2026/27 dated auction results in the accessible archive.",
+            "farmgate_decision": "ZMX ticker is a useful lead and market reference, but cannot pass the dated local farmgate price criterion until time-stamped commodity/grade/volume/market data and producer netback basis are obtained.",
+            "input_cost_decision": "AMA's public Agro Input Monitor page currently lists 2025, 2024 and 2023 sections, with 2025 Jan/Apr reports. No 2026 district-level input price monitor was found in this check. Government's 3-Nov-2026 input distribution progress is programme coverage, not unit prices or farmer co-payments.",
+            "climate_and_systems": "Government reports farmers in Natural Regions III, IV and V are being encouraged toward drought-tolerant traditional grains; livestock drought-mitigation centres are being developed, especially in Matabeleland. These support separate agroecological and livestock risk profiles, but do not supply enterprise cost budgets.",
+            "sources": [
+              "https://zmx.co.zw/",
+              "https://zmx.co.zw/auction-results/",
+              "https://ama.co.zw/agro-input-monitors/",
+              "https://www.heraldonline.co.zw/government-steps-up-summer-cropping-inputs-distribution/",
+              "https://fews.net/southern-africa/zimbabwe/key-message-update/september-2026"
+            ],
+            "decision": "No new calculator readiness criteria pass. The ZMX ticker is an indicative market reference only; current dated district input prices and full farmer-paid cost schedules remain unavailable. Zimbabwe remains inactive."
           }
         }
       }
