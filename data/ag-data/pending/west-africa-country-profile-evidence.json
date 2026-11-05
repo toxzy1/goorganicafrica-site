@@ -377,7 +377,78 @@
         "Extract 2024 input, machinery, hired labour and farm-cost tables with the report's actual table captions, units and reference periods.",
         "Obtain dated county-level farmgate prices and farmer-paid input quotations; the survey alone does not supply a complete current price series.",
         "Use the 2022/23 Agriculture Census final household and non-household reports as a separate structural benchmark, not as 2024/2026 prices or yields."
-      ]
+      ],
+      "follow_up_2026_11_05": {
+        "review_date": "2026-11-05",
+        "source_review": "Re-opened the original LISGIS LAAS-2024 final PDF and rechecked the crop table, input-use summary, other-cost table and hired crop-labour wage table. The PDF is the October 2025 version; LISGIS has separately advertised a corrected report, but the corrected PDF URL/content could not be retrieved in this review. No old-report values were promoted to calculator data.",
+        "crop_table_findings": {
+          "source_table": "Table 10, report page 37; table caption lists planted area, harvested area, harvested quantity and yield",
+          "selected_rows": [
+            {
+              "crop": "rice/paddy",
+              "planted_area_ha": 186907,
+              "harvested_area_ha": 139707,
+              "production_mt": 201074,
+              "reported_yield_mt_ha": 2,
+              "arithmetic_yield_mt_ha": 1.439
+            },
+            {
+              "crop": "cassava",
+              "planted_area_ha": 87430,
+              "harvested_area_ha": 20192,
+              "production_mt": 14591,
+              "reported_yield_mt_ha": 1,
+              "arithmetic_yield_mt_ha": 0.723
+            },
+            {
+              "crop": "maize",
+              "planted_area_ha": 4635,
+              "harvested_area_ha": 3438,
+              "production_mt": 2937,
+              "reported_yield_mt_ha": 1.5,
+              "arithmetic_yield_mt_ha": 0.854
+            },
+            {
+              "crop": "cucumber",
+              "planted_area_ha": 1452,
+              "harvested_area_ha": 1053,
+              "production_mt": 1638,
+              "reported_yield_mt_ha": 2.7,
+              "arithmetic_yield_mt_ha": 1.556
+            }
+          ],
+          "interpretation": "Published yield column does not reconcile to the published harvested quantity divided by harvested area for these sampled rows. The report itself warns that cassava harvest coverage is incomplete and its yield is timing-specific. Do not substitute arithmetic recalculations as official yields; all Table 10 crop values remain provisional pending corrected report or LISGIS clarification."
+        },
+        "input_and_cost_findings": {
+          "input_use": "Report summary states 79% traditional tillage, less than 1% mechanized practice, 7% inorganic fertilizer use, 17% organic manure use, and 1.6% irrigation coverage. These are prevalence indicators, not unit prices or per-hectare application schedules.",
+          "hired_crop_labour": "Original report body Table 38 gives 2024 daily hired crop-labour averages in LRD: national men 380.1, women 327.6; regional men/women: Southeastern A 464.8/441.3, Southeastern B 476.4/451.6, North Central 322.6/290.1, North Western 450.4/394.1, Montserrado 543.5/496.0, South Central 366.0/351.2. Historical regional wage observations only; not crop-specific labour days per hectare or full enterprise budgets.",
+          "other_costs": "Original report body Table 35 reports daily service payments: transport LRD206.7 (10.1% of holdings), routine hired labour LRD454.7 (22.8%), contractual services LRD162 (2.6%), post-harvest labour LRD243.6 (1.7%), fuel/lubricants LRD105.7 (0.7%), electricity LRD61.3 (0.1%). These are conditional daily expenditure summaries, not per-hectare costs. TOC table numbering differs from body captions."
+        },
+        "market_price_findings": "World Bank RTFP metadata lists Liberia monthly food-price estimates for 27 markets from 2007-01 to 2026-10, dataset version 2026-10-05. These are market food-price estimates and cannot be treated as farmgate producer prices without source/market-level validation. Current county farmgate prices and farmer-facing seed/fertilizer/crop-protection quotations remain missing.",
+        "sources": [
+          {
+            "publisher": "LISGIS",
+            "title": "Liberia 2024 Annual Agriculture Survey Final Report (original October 2025 PDF)",
+            "url": "https://www.lisgis.gov.lr/admin_area/surveys/pdf/202512223466300ILP_Report_12-17-2025_cleaned_final.pdf",
+            "accessed": "2026-11-05"
+          },
+          {
+            "publisher": "LISGIS",
+            "title": "Census Reports / corrected report listing",
+            "url": "https://lisgis.gov.lr/census/reports",
+            "accessed": "2026-11-05"
+          },
+          {
+            "publisher": "World Bank",
+            "title": "Liberia monthly food price estimates by product and market, 27 markets, through 2026-10",
+            "url": "https://microdata.worldbank.org/index.php/catalog/4498/data-api",
+            "accessed": "2026-11-05"
+          }
+        ],
+        "corrected_report_status": "LISGIS listing confirms a corrected LAAS-2024 report exists, but the updated portal endpoint did not return the direct corrected PDF during this review. The accessible original PDF still contains the numerical and table-numbering discrepancies noted above.",
+        "decision": "Liberia remains research-only. No calculator values, formula, country activation or region mapping changed.",
+        "next_step": "Retrieve the corrected LISGIS LAAS-2024 PDF and compare Table 10, input/cost tables and table captions; obtain current county-level producer prices and farmer-paid input quotes; then build crop-specific regional budgets."
+      }
     },
     {
       "country_code": "SL",
