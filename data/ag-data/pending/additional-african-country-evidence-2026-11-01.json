@@ -6081,7 +6081,7 @@
     {
       "country_code": "TN",
       "country_name": "Tunisia",
-      "evidence_status": "november_2026_review_added_2026_cereal_producer_prices_seed_price_schedule_ONAGRI_input_dataset_lead_FAO_harvest_update_regional_crop_context_and_first_agricultural_census_launch; crop_specific_governorate_yields_and_enterprise_costs_still_incomplete",
+      "evidence_status": "november_2026_refresh_expanded_2025_official_cereal_collection_by_governorate_ONAGRI_input_service_XLSX_ONH_olive_producer_price_XLSX_and_INS_agricultural_wage_series; underlying_cost_rows_and_regional_enterprise_budgets_not_extracted",
       "sources": [
         {
           "title": "Arrêté conjoint du 24 juillet 2026 fixant les prix et modalités des céréales pour la campagne 2026-2027",
@@ -6411,6 +6411,117 @@
             "Preserve seeded versus harvested area and marketing-year definitions; no yield calculated from mismatched denominators.",
             "USDA notes ministry estimates draw on annual surveys, National Remote Sensing Center and Field Crop Institute."
           ]
+        },
+        {
+          "title": "Office des Céréales — 2025 cereal collection by commodity",
+          "publisher": "Office des Céréales, Tunisia",
+          "url": "https://www.oc.com.tn/fr/evolution-de-collecte-des-cereales-de-tous-les-produits/",
+          "reference_period": "2025 harvest",
+          "publication_date": "retrieved 2026-11-05",
+          "observations": [
+            {
+              "commodity": "durum_wheat",
+              "quantity_quintals": 8319791,
+              "status": "National quantity collected by official collection system; not total production."
+            },
+            {
+              "commodity": "common_wheat",
+              "quantity_quintals": 648985,
+              "status": "National quantity collected; not total production."
+            },
+            {
+              "commodity": "barley",
+              "quantity_quintals": 2939121,
+              "status": "National quantity collected; not total production."
+            },
+            {
+              "commodity": "triticale",
+              "quantity_quintals": 43382,
+              "status": "National quantity collected; not total production."
+            },
+            {
+              "indicator": "total_cereal_collection",
+              "quantity_quintals": 11951279,
+              "status": "Official collection total; 1,195,127.9 metric tonnes after unit conversion, not comparable directly to FAO total production."
+            }
+          ]
+        },
+        {
+          "title": "Office des Céréales — 2025 cereal collection by governorate",
+          "publisher": "Office des Céréales, Tunisia",
+          "url": "https://www.oc.com.tn/fr/evolution-de-collecte-des-cereales-par-repartition/",
+          "reference_period": "2025 harvest",
+          "publication_date": "retrieved 2026-11-05",
+          "observations": [
+            {
+              "governorate": "Béja",
+              "total_quintals": 2856232,
+              "status": "Official collected quantity across durum wheat, common wheat, barley and triticale."
+            },
+            {
+              "governorate": "Bizerte",
+              "total_quintals": 1831087,
+              "status": "Official collected quantity across listed cereals."
+            },
+            {
+              "governorate": "Siliana",
+              "total_quintals": 1582328,
+              "status": "Official collected quantity across listed cereals."
+            },
+            {
+              "governorate": "Le Kef",
+              "total_quintals": 1391549,
+              "status": "Official collected quantity across listed cereals."
+            },
+            {
+              "governorate": "Jendouba",
+              "total_quintals": 1293235,
+              "status": "Official collected quantity across listed cereals."
+            }
+          ],
+          "quality_notes": [
+            "Collection is not total production, harvested area or yield; collection coverage varies by crop and region. Do not calculate yield from these quantities."
+          ]
+        },
+        {
+          "title": "ONAGRI agricultural input and service prices dataset",
+          "publisher": "Observatoire National de l'Agriculture (ONAGRI)",
+          "url": "https://catalog.data.gov.tn/fr/dataset/459c2931-8bfb-4f46-8258-a1d41da2db27",
+          "publication_date": "catalogue resources last modified 2026-11-04",
+          "status": "official_XLSX_resources_confirmed_not_yet_extracted",
+          "note": "Resources include an input-price XLSX and other agricultural services XLSX; topics include seeds, plants, fertilizers, pesticides, mechanization, tools and animals. Catalogue modification date does not prove underlying price observation date."
+        },
+        {
+          "title": "ONH average producer prices for extra virgin olive oil by governorate",
+          "publisher": "Office National de l'Huile (ONH)",
+          "url": "https://catalog.data.gov.tn/fr/dataset/prix-moyens-a-la-production-de-l-huile-d-olive-extra-vierge",
+          "publication_date": "resource metadata updated 2026-08-27",
+          "status": "official_governorate_producer_price_XLS_resource_not_yet_extracted",
+          "note": "Potential direct olive-oil producer-price series by governorate. Must inspect the XLS for actual observation dates, unit, quality/grade and whether the recorded price is paid by mills to producers."
+        },
+        {
+          "title": "INS guaranteed minimum agricultural wage",
+          "publisher": "Institut National de la Statistique (INS), Tunisia",
+          "url": "https://www.ins.tn/ar/statistiques/98",
+          "publication_date": "updated 2026-08-10",
+          "reference_period": "monthly observations through February 2026",
+          "observations": [
+            {
+              "indicator": "guaranteed_minimum_agricultural_daily_wage",
+              "value_tnd_per_day": 20.32,
+              "reference_period": "June 2025 to February 2026",
+              "status": "Monthly published minimum agricultural wage; legal floor, not necessarily actual governorate-specific hired labour rates."
+            },
+            {
+              "indicator": "guaranteed_minimum_agricultural_daily_wage",
+              "value_tnd_per_day": 21.336,
+              "reference_period": "2026 annual series",
+              "status": "INS annual 2026 value; confirm effective date and whether this is the applicable current statutory minimum before use."
+            }
+          ],
+          "quality_notes": [
+            "Use the dated monthly series rather than assuming the annual row applies throughout 2026. Actual harvest, skilled and piece-rate wages may differ."
+          ]
         }
       ],
       "priority_commodities": [
@@ -6435,9 +6546,34 @@
         "Verify the reported 2026/27 seed schedule against the Ministry primary circular and obtain farmer-facing prices for non-cereal seed/planting material.",
         "Extract actual farmer-paid fertilizer, crop-protection, labour, machinery, irrigation, pumping energy, land rent, harvest and transport costs by governorate and production system.",
         "Use the first general digital agricultural census only after results are released; field collection begins November 2026 and no census results are yet available.",
-        "Build governorate-level enterprise budgets and tests with rainfed/irrigated distinctions; no complete regional gross margins exist yet."
+        "Build governorate-level enterprise budgets and tests with rainfed/irrigated distinctions; no complete regional gross margins exist yet.",
+        "Extract the Office des Céréales 2025 governorate collection tables only as collection coverage indicators; obtain matching harvested area and production before deriving yield.",
+        "Download and inspect the ONH olive-oil producer-price XLSX by governorate; validate grade, unit and observation date.",
+        "Extract the INS monthly minimum agricultural wage series and distinguish statutory minimum from actual seasonal and piece-rate wages.",
+        "Complete ONAGRI input/service and fertilizer XLSX row extraction, with dates, units, locations and subsidy/tax treatment."
       ],
-      "extraction_status": "November 2026 refresh adds FAO's 26-Aug-2026 cereal estimate (1.8m tonnes aggregate, nearly 20% above five-year average), ONAGRI downloadable input/service and fertilizer XLSX data leads, an 17-Aug-2026 reported cereal seed price schedule, 30-Oct-2026 launch of the first digital agricultural census, FAO regional cereal/olive/water context, FEWS NET crop-year methodology and USDA MY 2026/27 cereal area/production forecasts. The JORT 24-Jul-2026 decree remains the authoritative 2026 base procurement schedule (TND 100/quintal durum wheat, TND 80/quintal common wheat, TND 65/quintal intervention price barley/triticale); conditional early-delivery bonuses must not be applied universally. Dataset XLSX values and governorate crop tables have not yet been extracted; no Tunisia calculator values admitted."
+      "extraction_status": "November 2026 refresh adds FAO's 26-Aug-2026 cereal estimate (1.8m tonnes aggregate, nearly 20% above five-year average), ONAGRI downloadable input/service and fertilizer XLSX data leads, an 17-Aug-2026 reported cereal seed price schedule, 30-Oct-2026 launch of the first digital agricultural census, FAO regional cereal/olive/water context, FEWS NET crop-year methodology and USDA MY 2026/27 cereal area/production forecasts. The JORT 24-Jul-2026 decree remains the authoritative 2026 base procurement schedule (TND 100/quintal durum wheat, TND 80/quintal common wheat, TND 65/quintal intervention price barley/triticale); conditional early-delivery bonuses must not be applied universally. Dataset XLSX values and governorate crop tables have not yet been extracted; no Tunisia calculator values admitted.",
+      "november_2026_review": {
+        "review_date": "2026-11-05",
+        "source_notes": "New review confirms Office des Céréales 2025 collection by commodity and governorate (national collection 11,951,279 quintals; Béja 2,856,232 q, Bizerte 1,831,087 q, Siliana 1,582,328 q, Le Kef 1,391,549 q and Jendouba 1,293,235 q). These are collection quantities, not total production or yields. ONAGRI's official input/service price dataset metadata was updated 4-Nov-2026 and includes XLSX price and services resources; underlying observation dates and values remain unextracted. ONH lists a governorate-level extra-virgin olive-oil producer-price XLS resource updated 27-Aug-2026; values not extracted. INS publishes monthly guaranteed agricultural wage data through Feb-2026 (TND20.320/day June 2025-February 2026) and an annual 2026 value of TND21.336/day; statutory minimum is not a substitute for actual local harvest wages. FAO 26-Aug-2026 aggregate cereal estimate and JORT 24-Jul-2026 producer base prices remain key national anchors.",
+        "sources": [
+          "https://www.oc.com.tn/fr/evolution-de-collecte-des-cereales-de-tous-les-produits/",
+          "https://www.oc.com.tn/fr/evolution-de-collecte-des-cereales-par-repartition/",
+          "https://catalog.data.gov.tn/fr/dataset/459c2931-8bfb-4f46-8258-a1d41da2db27",
+          "https://catalog.data.gov.tn/fr/dataset/prix-moyens-a-la-production-de-l-huile-d-olive-extra-vierge",
+          "https://www.ins.tn/ar/statistiques/98",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=TN",
+          "https://www.jort.tn/view/journal-officiel/fr/2026/075/arrete-conjoint-2026-07-24-fixant-prix-modalites-paiement-stockage-retrocession-cereales/"
+        ],
+        "blockers": [
+          "Underlying ONAGRI input/service and fertilizer XLSX rows and dates are not yet extracted.",
+          "ONH governorate olive producer-price XLS values and observation dates are not extracted.",
+          "INS statutory wage is not an actual local crop-operation wage schedule.",
+          "2025 Office des Céréales quantities are collected grain, not total production or yield; crop-specific harvested area and regional production still needed.",
+          "No full regional enterprise budgets across the 17 calculator commodities; non-cereal farmgate prices, input costs, water/energy, machinery, transport and livestock cost schedules remain incomplete."
+        ],
+        "decision": "Research refresh saved; Tunisia remains inactive and is not calculator-ready."
+      }
     },
     {
       "country_code": "BJ",
