@@ -2494,7 +2494,7 @@
             "https://zimstat.co.zw/producer-price-index-agriculture/",
             "https://ama.co.zw/agro-input-monitors/"
           ],
-          "decision": "Expanded the official production and seed-use evidence. This improves provincial crop mix and production baselines but does not pass yield, area, cost, or farm-budget criteria. Zimbabwe remains inactive.",
+          "decision": "Dated matched ZMX exchange transactions for soybean, maize and wheat and a dated ZERA diesel benchmark have been added. These improve market and energy reference evidence but do not establish producer netbacks, agricultural tariffs, input costs, regional yields or complete enterprise budgets. Zimbabwe remains inactive.",
           "survey_table_extraction": {
             "survey_quality": "2024/25 PHS covered eight rural provinces, selected 58,000 farming households across 1,562 rural wards, and achieved a 93.2% response rate. It collected area harvested and total crop harvested at questionnaire level, but published result tables reviewed do not expose matched crop-area/yield cross-tabs.",
             "province_cereal_production_mt": {
@@ -2633,6 +2633,102 @@
               "https://fews.net/southern-africa/zimbabwe/key-message-update/september-2026"
             ],
             "decision": "No new calculator readiness criteria pass. The ZMX ticker is an indicative market reference only; current dated district input prices and full farmer-paid cost schedules remain unavailable. Zimbabwe remains inactive."
+          },
+          "market_price_followup_2026_11_05": {
+            "source": "Zimbabwe Mercantile Exchange Automatic Trading System (ATS), Market Watch and Recent Orders",
+            "latest_matched_exchange_transactions": [
+              {
+                "commodity": "soybean",
+                "grade_contract": "SOYABEAN/A/HRE/USD",
+                "trade_date": "2026-11-04",
+                "matched_quantity_kg": 336528,
+                "price_usd_per_kg": 0.5432,
+                "derived_price_usd_per_tonne": 543.2,
+                "matched": true
+              },
+              {
+                "commodity": "soybean",
+                "grade_contract": "SOYABEAN/A/HRE/USD",
+                "trade_date": "2026-10-29",
+                "matched_quantity_kg": 91659,
+                "price_usd_per_kg": 0.5488,
+                "derived_price_usd_per_tonne": 548.8,
+                "matched": true
+              },
+              {
+                "commodity": "soybean",
+                "grade_contract": "SOYABEAN/A/HRE/USD",
+                "trade_date": "2026-10-29",
+                "matched_quantity_kg": 54995,
+                "price_usd_per_kg": 0.5488,
+                "derived_price_usd_per_tonne": 548.8,
+                "matched": true
+              },
+              {
+                "commodity": "maize",
+                "grade_contract": "MAIZE/A/HRE/USD",
+                "trade_date": "2026-10-29",
+                "matched_quantity_kg": 70020,
+                "price_usd_per_kg": 0.3722,
+                "derived_price_usd_per_tonne": 372.2,
+                "matched": true
+              },
+              {
+                "commodity": "maize",
+                "grade_contract": "MAIZE/A/HRE/USD",
+                "trade_date": "2026-10-27",
+                "matched_quantity_kg": 115445,
+                "price_usd_per_kg": 0.3486,
+                "derived_price_usd_per_tonne": 348.6,
+                "matched": true
+              },
+              {
+                "commodity": "maize",
+                "grade_contract": "MAIZE/A/HRE/USD",
+                "trade_date": "2026-10-23",
+                "matched_quantity_kg": 115440,
+                "price_usd_per_kg": 0.3486,
+                "derived_price_usd_per_tonne": 348.6,
+                "matched": true
+              },
+              {
+                "commodity": "wheat",
+                "grade_contract": "WHEAT/PR/HRE/USD",
+                "trade_date": "2026-10-19",
+                "matched_quantity_kg": 31640,
+                "price_usd_per_kg": 0.4879,
+                "derived_price_usd_per_tonne": 487.9,
+                "matched": true
+              },
+              {
+                "commodity": "wheat",
+                "grade_contract": "WHEAT/PR/HRE/USD",
+                "trade_date": "2026-10-19",
+                "matched_quantity_kg": 29940,
+                "price_usd_per_kg": 0.4879,
+                "derived_price_usd_per_tonne": 487.9,
+                "matched": true
+              }
+            ],
+            "interpretation": "These are matched exchange orders with dates, quantities, prices and contract codes, substantially stronger than the undated homepage ticker. They are wholesale/exchange market benchmarks, not verified farmgate netbacks. Contract suffix HRE appears to identify the Harare market contract; verify exchange contract specifications, grade, delivery, commissions, storage and transport before converting to producer netback.",
+            "energy_reference": {
+              "source": "Zimbabwe Energy Regulatory Authority homepage",
+              "as_of": "2026-10-09",
+              "diesel_usd_per_litre": 2.04,
+              "diesel_zwg_per_litre": 54.55,
+              "petrol_usd_per_litre": 2.05,
+              "electricity_usd_per_first_50_units": 4.24,
+              "electricity_zwg_per_first_50_units": 109.04,
+              "application_note": "Diesel is a dated national retail energy benchmark, not a district-specific farm bulk price. The electricity figure is described as first 50 units and is not validated as an agricultural irrigation tariff; do not use it for pumping cost without the applicable agricultural tariff schedule."
+            },
+            "remaining_gaps": [
+              "ZMX matched records currently establish exchange price evidence for soybean, maize and wheat, but broader commodity coverage and consistent weekly time series must be extracted from dated bulletins/ATS.",
+              "Obtain exchange contract specifications, grade/delivery basis, commissions and logistics to estimate producer netback by province.",
+              "Find 2026/27 AMA or supplier-level dated input prices for seed, fertilizer, pesticides, feed and veterinary products.",
+              "Obtain agricultural electricity tariff and district-level irrigation/pumping costs; fuel benchmarks alone do not provide operation costs.",
+              "Harvested-area and weighted-yield tables, soybean discrepancy clarification, labour, machinery, land-preparation and transport budgets remain outstanding."
+            ],
+            "readiness_effect": "Partial progress on dated exchange transaction-price evidence for three commodities only. This does not satisfy broad farmgate-price or full cost-budget criteria. Zimbabwe remains inactive."
           }
         }
       }
