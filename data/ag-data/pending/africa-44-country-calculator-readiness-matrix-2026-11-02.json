@@ -2481,7 +2481,21 @@
           "regional labour, machinery, irrigation, energy, transport and postharvest budgets",
           "region-enterprise mapping and calculator regression tests"
         ],
-        "decision": "Keep Zimbabwe inactive; do not certify until complete regional enterprise budgets and test cases pass."
+        "decision": "Keep Zimbabwe inactive; do not certify until complete regional enterprise budgets and test cases pass.",
+        "follow_up_2026_11_05": {
+          "official_publication_check": "ZIMSTAT confirms its 2024/25 Post-Harvest Survey collected area harvested, crop harvested, quantities sold/consumed/other uses. The published tables reviewed provide crop production totals and province/sector output splits, but not matched crop-specific harvested-area/yield tables. The survey report is therefore insufficient by itself for regional yield calibration.",
+          "published_province_output": "Table 3.5 provides province-level maize, sorghum, pearl millet and finger millet production. Table 3.7 provides province-level groundnut, sunflower and soybean production. Production quantities alone cannot be converted into yield without matched harvested area.",
+          "soybean_conflict": "Table 3.2 national soybean output is 57,750 MT; Table 3.7 prints 7,750 MT as national total while the eight provincial entries sum to 57,750 MT. Preserve discrepancy flag; no silent correction.",
+          "ppi_dataset_locator": "ZIMSTAT's September 2026 PPI-A page links three official XLSX datasets: PPIA_ZWG_09_2026.xlsx, PPIA_USD_09_2026.xlsx and PPIA_Weighted_09_2026.xlsx. The download endpoint returned an unsupported application/octet-stream response in the available retrieval path, so product-level rows have not yet been extracted. These are producer price index datasets, not automatically transaction-level farmgate prices.",
+          "ama_input_monitor": "AMA's public Agro Input Monitors page currently lists 2025 and earlier reports; no 2026 district input-monitor publication was located in this check. 2025 quotes remain historical and cannot be used as current 2026/27 costs.",
+          "sources": [
+            "https://zimstat.co.zw/agriculture-statistics/",
+            "https://www.zimstat.co.zw/wp-content/uploads/production/agriculture/2024_25_POST_HARVEST_SURVEY_REPORT_141025.pdf",
+            "https://zimstat.co.zw/producer-price-index-agriculture/",
+            "https://ama.co.zw/agro-input-monitors/"
+          ],
+          "decision": "No new readiness criterion passes. Zimbabwe remains inactive."
+        }
       }
     }
   ],
