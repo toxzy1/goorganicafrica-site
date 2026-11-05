@@ -1,0 +1,101 @@
+{
+  "title": "Eritrea follow-up evidence — 5 November 2026",
+  "country_code": "ER",
+  "country_name": "Eritrea",
+  "iso3": "ERI",
+  "review_date": "2026-11-05",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_calculator_ready",
+  "purpose": "Record current 2026 crop-season risk and reconcile official Ministry of Agriculture output reporting before any calculator mapping.",
+  "findings": {
+    "fao_giews_2026_09_30": {
+      "source": "FAO GIEWS Country Brief, reference date 30 September 2026",
+      "url": "https://cb.apps.fao.org/country.jsp?code=ERI",
+      "findings": [
+        "2026 main-season planting of wheat, barley, sorghum, maize, teff and pulses was completed in July in central and western Anseba, Debub, Maekel and Gash Barka.",
+        "June–September 2026 Kiremti rainfall in those regions was 20–40 percent below average.",
+        "FAO reports significant vegetation stress, including Gash Barka, the country's main crop-producing region, and expects significant crop production shortfalls."
+      ],
+      "decision": "Treat 2026 production as a weather-risk season; do not use historical national cereal averages as current 2026 yield assumptions or project current yields without crop/region observations."
+    },
+    "ministry_2024_reporting": {
+      "source": "Eritrea Ministry of Information / Ministry of Agriculture annual activity assessment, 1 February 2025",
+      "url": "https://shabait.com/2025/02/01/ministry-of-agriculture-holds-annual-activity-assessment-meeting/",
+      "findings": [
+        "The report states that more than 414,000 hectares of land were cultivated in 2024, including over 38,000 hectares of various crops and around 60,000 hectares of oilseed crops; cereals reportedly increased 138 percent year-on-year.",
+        "The related Ministry technical summary dated 7 February 2025 states that 414,000 hectares were cultivated with cereals, over half sorghum, followed by pearl millet, teff, wheat, finger millet, barley and maize; it separately reports 60,000 hectares of oil crops and 38,000 hectares of pulses.",
+        "The 7 February report states 67,000 tonnes of fruits and 182,000 tonnes of vegetables harvested from 4,800 and 14,000 hectares respectively; the 1 February report instead displays 67 tonnes and 182 tonnes, creating a 1,000-fold unit discrepancy.",
+        "The 2024 report records more than one million livestock vaccinations, not livestock inventory or enterprise output."
+      ],
+      "qualification": "The Ministry's two contemporaneous public reports are not fully consistent in land-use wording and fruit/vegetable units. Do not use the 414,000-ha figure as a definitive crop-specific area or the horticulture totals as validated calculator yields until original tables and definitions are obtained."
+    },
+    "ministry_2025_campaign_update": {
+      "source": "Eritrea Ministry of Information / Ministry of Agriculture, 25 August 2025",
+      "url": "https://shabait.com/2025/08/25/eritrea-ministry-of-agriculture-champions-progress-and-innovation/",
+      "findings": [
+        "By the first week of August 2025, more than 384,000 hectares had been ploughed and planted; this was a season-progress snapshot and was expected to increase.",
+        "More than 40,800 hectares were planted using Azmera rainfall and spate irrigation.",
+        "Vegetables were reported on approximately 10,870 hectares and fruits on more than 5,000 hectares, with estimated output reported as 145 tonnes of vegetables and 63 tonnes of fruits."
+      ],
+      "qualification": "The area is a mid-season progress figure, not final harvested area; production estimates require clarification of coverage and units."
+    },
+    "world_bank_indicators": {
+      "source": "World Bank WDI, secondary indicator display",
+      "cereal_yield": {
+        "series": "AG.YLD.CREL.KG_ER",
+        "year": 2024,
+        "value": 638,
+        "unit": "kg/ha",
+        "url": "https://app.indexbox.io/indicators/symbol/cereal-yield-eritrea/",
+        "qualification": "National cereal aggregate only; not a crop-specific yield or regional enterprise assumption."
+      },
+      "arable_land": {
+        "year": 2024,
+        "value": 690000,
+        "unit": "ha",
+        "url": "https://data.worldbank.org/indicator/AG.LND.ARBL.HA?locations=ER",
+        "qualification": "National arable land, not crop harvested area."
+      },
+      "fertilizer_use": {
+        "year": 2023,
+        "value": 1.9,
+        "unit": "kg nutrients/ha arable land",
+        "url": "https://datastats.org/en/countries/er/agriculture",
+        "qualification": "National fertilizer nutrient intensity, not product prices or farm application rates."
+      }
+    },
+    "inputs_and_markets": {
+      "source": "IFAD Eritrea agro-inputs brief, 2025",
+      "url": "https://knowledge-for-policy.ec.europa.eu/publication/eritrea-innovative-agro-inputs-enhance-sustainable-agricultural-practices_en",
+      "finding": "IFAD describes higher fertilizer and fuel costs, reduced input use, and interventions to improve local seed production and access to inputs.",
+      "qualification": "No validated unit prices, crop-specific application costs or farmgate prices extracted."
+    }
+  },
+  "readiness_update": {
+    "national_crop_area_and_output": "partial_official_aggregate_reports_with_internal_unit_and_scope_conflicts",
+    "crop_specific_regional_yields": "not_verified",
+    "current_2026_crop_outlook": "material_drought_risk_reported_by_FAO_for_main_producing_regions",
+    "farmgate_prices": "not_verified",
+    "seed_fertilizer_crop_protection_costs": "programme_and_supply_context_only_no_unit_costs",
+    "labour_machinery_irrigation_budgets": "not_verified",
+    "enterprise_budgets": "not_available",
+    "calculator_mapping_and_test_cases": "not_started",
+    "decision": "remain_directory_only_not_active"
+  },
+  "next_actions": [
+    "Obtain the underlying Ministry of Agriculture 2024 regional crop statistics and resolve the 414,000-ha land-use classification discrepancy.",
+    "Verify whether the fruit and vegetable outputs in the February 2025 Ministry reports are tonnes or thousand tonnes.",
+    "Extract crop- and region-specific 2024 production and harvested area for sorghum, millet, teff, wheat, barley, maize, pulses, vegetables and supported livestock.",
+    "Locate dated farmgate prices by crop, market, grade and unit; do not substitute Asmara wholesale or retail prices.",
+    "Obtain farmer-paid seed, fertilizer, crop protection, fuel, labour, machinery and irrigation rates by region.",
+    "Account for FAO's September 2026 drought warning when selecting a season or yield baseline."
+  ],
+  "sources": [
+    "https://cb.apps.fao.org/country.jsp?code=ERI",
+    "https://shabait.com/2025/02/01/ministry-of-agriculture-holds-annual-activity-assessment-meeting/",
+    "https://shabait.com/2025/02/07/ministry-of-agriculture-2024-major-achievements/",
+    "https://shabait.com/2025/08/25/eritrea-ministry-of-agriculture-champions-progress-and-innovation/",
+    "https://knowledge-for-policy.ec.europa.eu/publication/eritrea-innovative-agro-inputs-enhance-sustainable-agricultural-practices_en",
+    "https://data.worldbank.org/indicator/AG.LND.ARBL.HA?locations=ER"
+  ]
+}
