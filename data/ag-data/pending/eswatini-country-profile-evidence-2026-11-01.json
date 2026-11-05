@@ -649,5 +649,72 @@
       "https://www.nmc.co.sz/inputs-subsidy/"
     ],
     "decision": "Keep Eswatini research-only. Use programme package contributions only as labelled subsidy scenarios; confirm NMC procurement price with primary NMC documentation and obtain regional crop yields, farmgate price series and full itemized costs before calculator mapping."
+  },
+  "batch_51_review": {
+    "review_date": "2026-11-05",
+    "country_name": "Eswatini",
+    "source_notes": "New official Ministry Agricultural Integrated Information System (AIIS) document register located at https://agrinfosystems.gov.sz/Gross.php. It lists a 2025 weekly market-price workbook, 2025 field-crop gross-margin workbook, 2025 livestock gross-margin workbook, 2025 baby-vegetable gross-margin workbook, 2025 conventional-vegetable gross-margin workbook, and 2025 fruit-tree cost/profit workbook. The page also exposes separate market-price pages for Encabeni Floor Market, Manzini Market, Mahlanya Market and Mbabane Market. Direct workbook retrieval was attempted but failed in this review environment (spreadsheet content-type/timeout errors); therefore no numeric rows have been transcribed and no price is classified as farm-gate yet. AIIS describes itself as a national agriculture information and database system intended to collect and disseminate production, trade and market information. Separately, NAMBoard's EHIS portal is a farmer/production registry and market-information route: sources describe crop, farm-size/location, irrigation, expected yield/harvest and market information, including local buying prices, weekly selling prices and input costs. These portals are promising primary-data routes, but the underlying records still need extraction and validation.",
+    "sources": [
+      "https://agrinfosystems.gov.sz/Gross.php",
+      "https://agrinfosystems.gov.sz/assets/production/index.php",
+      "https://agrinfosystems.gov.sz/about.php",
+      "https://www.nmc.co.sz/inputs-subsidy/",
+      "https://ehis.co.sz/",
+      "https://times.co.sz/32328/business/harnessing-data-to-transform-agriculture-unpacking-ehis/",
+      "https://agribusinessmedia.com/2026/05/08/ehis-to-link-farmers-directly-with-retailers-as-namboard-targets-market-chaos/",
+      "https://agribusinessmedia.com/2026/08/18/e65-million-subsidy-opens/"
+    ],
+    "documents_found": [
+      {
+        "title": "2025 WEEKLY MARKET PRICES (1) new.xlsx",
+        "url": "https://agrinfosystems.gov.sz/assets/uploads2025%20WEEKLY%20MARKET%20PRICES%20%281%29%20new.xlsx",
+        "status": "listed_on_official_register_download_attempt_timed_out"
+      },
+      {
+        "title": "Gross Margins_Field Crops (2025).xlsx",
+        "url": "https://agrinfosystems.gov.sz/assets/uploadsGross%20Margins_Field%20Crops%20%282025%29.xlsx",
+        "status": "listed_on_official_register_download_attempt_returned_unsupported_spreadsheet_content_type"
+      },
+      {
+        "title": "Gross Margin for Livestock (2025).xlsx",
+        "url": "https://agrinfosystems.gov.sz/assets/uploadsGross%20Margin%20for%20Livestock%20%282025%29.xlsx",
+        "status": "listed_on_official_register_download_attempt_gateway_error"
+      },
+      {
+        "title": "2025 Baby Veg Gross Margins.xlsx",
+        "url": "https://agrinfosystems.gov.sz/assets/uploads2025%20Baby%20Veg%20Gross%20Margins.xlsx",
+        "status": "listed_on_official_register_download_attempt_returned_unsupported_spreadsheet_content_type"
+      },
+      {
+        "title": "2025_Convetional Vegetables consolidated draft.xlsx",
+        "url": "https://agrinfosystems.gov.sz/assets/uploads2025_Convetional%20Vegetables%20consolidated%20draft.xlsx",
+        "status": "listed_on_official_register_download_not_yet_successful"
+      },
+      {
+        "title": "New_fruit_tree_cost_and_profit 2025.xlsx",
+        "url": "https://agrinfosystems.gov.sz/assets/uploadsNew_fruit_tree_cost_and_profit%202025.xlsx",
+        "status": "listed_on_official_register_download_not_yet_successful"
+      }
+    ],
+    "new_findings": [
+      "The Ministry AIIS menu exposes market-price views for Encabeni Floor Market, Manzini Market, Mahlanya Market and Mbabane Market; these must be inspected for observation date, commodity, grade, unit and market level.",
+      "The AIIS About page states that the system is intended to capture, analyze and disseminate agricultural information and connect geographically linked demand with production and supply.",
+      "NMC's current input-subsidy page confirms 50 percent subsidy for eligible smallholders up to one hectare, limited to white maize, sugar beans and sorghum, and publishes package quantities: maize fertilizer 6 x 50kg, LAN 4 x 50kg, seed 25kg; beans 3 x 50kg, LAN 2 x 50kg, seed 70kg; sorghum 2 x 50kg fertilizer, LAN 2 x 50kg, seed 10kg. The page does not publish the current farmer-contribution amounts, which remain sourced from secondary reporting.",
+      "EHIS is described as collecting farmer profiles, crop types, production activities, expected yields and harvesting periods; reporting says it offers local buying prices, weekly selling prices and input-cost information. Access to actual exportable observations and definitions remains unverified."
+    ],
+    "caveats": [
+      "A public document register is evidence that source files are listed, not evidence that the workbook contents have been successfully extracted or validated.",
+      "The 2025 weekly price workbook may contain market or buyer quotations; do not classify its records as farm-gate until each market channel and price basis is read from the workbook.",
+      "The World Bank modelled enterprise margins and Ministry gross-margin spreadsheets may use different years, production systems and assumptions; do not merge without comparing line-item definitions and reference periods.",
+      "NMC subsidy package quantities and reported co-payments are programme terms, not universal commercial input costs."
+    ],
+    "next_steps": [
+      "Retrieve and extract the 2025 weekly market-price workbook and the four market-price views; tag each row as farm-gate, buyer, wholesale or retail and retain market/date/grade/unit.",
+      "Extract the 2025 field-crop, conventional-vegetable, baby-vegetable, livestock and fruit-tree gross-margin workbooks, preserving the original production cycles, input quantities, unit prices, labour and transport assumptions.",
+      "Compare 2025 workbook assumptions with the 2025 World Bank agriculture-sector review and the 2026/27 subsidy schedule; do not treat older modelled margins as 2026 realised farm returns.",
+      "Obtain crop-by-region harvested area and output for the four administrative regions and reconcile with the Ministry 2024 assessment and FAO 2026 maize estimate.",
+      "Only after extraction, map supported crops to the existing 17 calculator enterprises and build regional regression cases; keep Eswatini research-only meanwhile."
+    ],
+    "decision": "Keep Eswatini research-only. A high-value official data source has been located, but the linked workbooks have not yet been extracted, current farm-gate prices are not validated, and complete regional enterprise budgets and test cases remain outstanding. No calculator profile or formula changes."
   }
 }
