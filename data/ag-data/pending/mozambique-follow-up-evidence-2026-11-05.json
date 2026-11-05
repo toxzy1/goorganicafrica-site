@@ -1,0 +1,242 @@
+{
+  "title": "Mozambique follow-up agricultural evidence",
+  "country": "Mozambique",
+  "iso_alpha2": "MZ",
+  "review_date": "2026-11-05",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Extend existing CAP 2023/24 evidence with INE producer-price and livestock tables, current provincial market reference quotations, and the newly identified CAP district-table archive. No calculator data are activated by this follow-up.",
+  "findings": [
+    {
+      "topic": "INE Statistical Yearbook 2024 — average producer prices and livestock inventory",
+      "source": "Instituto Nacional de Estatística (INE), Statistical Yearbook 2024, tables 3.1.6, 3.2.1 and 3.2.2; underlying agricultural price source is MADER/SIMA",
+      "url": "https://www.ine.gov.mz/documents/20119/366649/ANUARIO%20ESTAT%C3%8DSTICO_%202024.pdf/b138faa5-ff0f-839c-6bd8-0c234c1b7a9b?download=true&t=1760443453700&version=1.0",
+      "reference_period": "2020–2024",
+      "observations": [
+        {
+          "table": "3.1.6",
+          "indicator": "national average producer price, national rice",
+          "year": 2024,
+          "value": 50.1,
+          "unit": "not visible in extracted table; verify original page note before use",
+          "currency": "MZN",
+          "status": "Official national producer-price series sourced to SIMA; not yet imported because unit and price basis must be confirmed."
+        },
+        {
+          "table": "3.1.6",
+          "indicator": "national average producer price, cowpea (Feijão Nhemba)",
+          "year": 2024,
+          "value": 32.1,
+          "unit": "not visible in extracted table; verify original page note before use",
+          "currency": "MZN",
+          "status": "Official national producer-price series; exact unit and aggregation method must be verified before calculator use."
+        },
+        {
+          "table": "3.1.6",
+          "indicator": "national average producer price, national white maize",
+          "year": 2024,
+          "value": 20.1,
+          "unit": "not visible in extracted table; verify original page note before use",
+          "currency": "MZN",
+          "status": "Official national producer-price series; exact unit and aggregation method must be verified before calculator use."
+        },
+        {
+          "table": "3.1.6",
+          "indicator": "national average producer price, butter beans (Feijão Manteiga)",
+          "year": 2024,
+          "value": 70.2,
+          "unit": "not visible in extracted table; verify original page note before use",
+          "currency": "MZN",
+          "status": "Distinct bean species; do not map to cowpea profile."
+        },
+        {
+          "table": "3.1.6",
+          "indicator": "national average producer price, Boer beans (Feijão Boer)",
+          "year": 2024,
+          "value": 30,
+          "unit": "not visible in extracted table; verify original page note before use",
+          "currency": "MZN",
+          "status": "Distinct bean species; do not map to cowpea profile."
+        },
+        {
+          "table": "3.2.1",
+          "indicator": "cattle inventory",
+          "year": 2024,
+          "value": 2467082,
+          "unit": "head",
+          "status": "National administrative livestock count; not commercial beef-cattle output or farm budget."
+        },
+        {
+          "table": "3.2.1",
+          "indicator": "goat inventory",
+          "year": 2024,
+          "value": 4669773,
+          "unit": "head",
+          "status": "National administrative livestock count; not herd productivity or farm budget."
+        },
+        {
+          "table": "3.2.1",
+          "indicator": "chicken inventory",
+          "year": 2024,
+          "value": 22236048,
+          "unit": "birds",
+          "status": "National count; does not separate commercial broilers, layers and local chicken enterprise performance."
+        },
+        {
+          "table": "3.2.1",
+          "indicator": "pig inventory",
+          "year": 2024,
+          "value": 1161931,
+          "unit": "head",
+          "status": "National administrative count; no unit cost or output budget."
+        },
+        {
+          "table": "3.2.1",
+          "indicator": "sheep inventory",
+          "year": 2024,
+          "value": 239206,
+          "unit": "head",
+          "status": "Series shows large discontinuities between 2020–2024; requires source-definition and enumeration reconciliation before trend use."
+        }
+      ],
+      "quality_notes": [
+        "Table 3.1.6 explicitly labels the values average producer prices and attributes them to MADER/SIMA. The extracted HTML table does not expose the unit; do not assume MZN/kg until the original PDF page confirms it.",
+        "The national price series is not provincial and cannot alone represent province-specific farmgate receipts or seasonal grades.",
+        "Feijão Nhemba is cowpea; Feijão Manteiga and Feijão Boer are separate beans and must not be merged into the cowpea profile.",
+        "Livestock inventories are population context, not production, liveweight, sale prices, feed costs or gross margins.",
+        "The sheep series changes sharply from 1,101,488 in 2022 to 225,495 in 2023 and 239,206 in 2024; retain a data-quality flag."
+      ]
+    },
+    {
+      "topic": "INE final district CAP 2023/24 tables — download route confirmed",
+      "source": "INE National Statistics School, CAP 2023/2024 document library",
+      "url": "https://www.ine.gov.mz/web/guest/d/quadros-distritais-cap-2023_2024-1-",
+      "publication_date": "2026-07-02",
+      "observations": [
+        "INE lists an approved ZIP archive named 'Quadros Distritais CAP 2023_2024 (1)'.",
+        "This provides the priority route for checking provincial CAP productivity extraction against district-level crop tables and identifying district coverage and denominators.",
+        "The archive itself has not yet been downloaded and extracted in this review."
+      ],
+      "status": "official_district_data_archive_confirmed; numerical extraction pending"
+    },
+    {
+      "topic": "ICM provincial reference quotations, 6 October 2026",
+      "source": "Revista Terra reproducing Instituto de Cereais de Moçambique (ICM) provincial reference tables",
+      "url": "https://revistaterraonline.com/cotacoes-icm-por-provincia/",
+      "reference_period": "28 September–2 October 2026; consultation date 6 October 2026",
+      "unit": "MZN/kg",
+      "observations": [
+        {
+          "commodity": "maize",
+          "province": "Niassa",
+          "value": 15.61,
+          "status": "Provincial reference market average; not a confirmed producer transaction."
+        },
+        {
+          "commodity": "maize",
+          "province": "Nampula",
+          "value": 19.32,
+          "status": "Provincial reference market average; not a confirmed producer transaction."
+        },
+        {
+          "commodity": "maize",
+          "province": "Zambezia",
+          "value": 14.36,
+          "status": "Provincial reference market average; not a confirmed producer transaction."
+        },
+        {
+          "commodity": "maize",
+          "province": "Sofala",
+          "value": 22.08,
+          "status": "Provincial reference market average; not a confirmed producer transaction."
+        },
+        {
+          "commodity": "rice",
+          "province": "Nampula",
+          "value": 22,
+          "status": "Rice reference price; product processing basis and grade require confirmation."
+        },
+        {
+          "commodity": "rice",
+          "province": "Zambezia",
+          "value": 24.47,
+          "status": "Rice reference price; product processing basis and grade require confirmation."
+        },
+        {
+          "commodity": "rice",
+          "province": "Sofala",
+          "value": 40,
+          "status": "Rice reference price; product processing basis and grade require confirmation."
+        },
+        {
+          "commodity": "paddy rice",
+          "province": "Inhambane",
+          "value": 41,
+          "status": "Explicitly listed as arroz em casca; market reference quotation, not proven farmgate receipt."
+        },
+        {
+          "commodity": "cowpea (Feijão Nhemba)",
+          "province": "Zambezia",
+          "value": 28.17,
+          "status": "Secondary transcription; check original ICM bulletin, market and grade."
+        },
+        {
+          "commodity": "cowpea (Feijão Nhemba)",
+          "province": "Nampula",
+          "value": 29.9,
+          "status": "Secondary transcription; check original ICM bulletin, market and grade."
+        }
+      ],
+      "quality_notes": [
+        "These are provincial reference market averages transcribed by a secondary publication from ICM tables; they are not automatically farmgate prices.",
+        "The ICM table distinguishes rice from paddy rice; retain the exact product label and do not mix processed rice with paddy.",
+        "Maize in Inhambane and Maputo is identified as white maize; product grade differences matter.",
+        "The source's province collection periods can vary; do not treat the table as a single synchronous nationwide quotation."
+      ]
+    },
+    {
+      "topic": "Official SIMA data collection method and public access limitation",
+      "source": "Ministry of Agriculture, Environment and Fisheries (MAAP), Agricultural Market Information System",
+      "url": "https://www.agricultura.gov.mz/sima/",
+      "observations": [
+        "SIMA states it has collected agricultural prices since 1991 and conducts weekly collection at producer, wholesale and retail levels.",
+        "Covered products include maize, rice, groundnuts, beans, horticulture and animal products; SIMA also records transport costs and wholesale availability.",
+        "Weekly Quente-Quente bulletins are the intended publication channel, but the public archive surfaced on the ministry page is largely older editions (including 2023), so current weekly producer-level data were not publicly extractable through this route."
+      ],
+      "status": "official_producer_price_data_system_confirmed; current downloadable observations still required"
+    },
+    {
+      "topic": "INE Basic Indicators of Agriculture and Food 2025",
+      "source": "INE Mozambique",
+      "url": "https://www.ine.gov.mz/web/guest/d/indicadores-basicos-de-agricultura-e-alimentacao-2025",
+      "publication_date": "2026-08-31",
+      "observations": [
+        "The 2025 publication and PDF download are confirmed on the official INE page.",
+        "The PDF did not yield readable table content in this review; no numerical values from it are admitted."
+      ],
+      "status": "latest_official_publication_identified; PDF extraction pending"
+    }
+  ],
+  "decision": {
+    "calculator_status": "not_active",
+    "reason": "The newly extracted national producer-price series lacks a confirmed unit in the accessible table text and is not provincial; current ICM quotations are market references rather than confirmed farmgate transactions. District CAP tables and 2025 indicators still need extraction, and farmer-paid input, labour, irrigation, machinery and enterprise budgets remain missing.",
+    "test_url_available": false,
+    "no_calculator_values_imported": true
+  },
+  "next_actions": [
+    "Inspect original Statistical Yearbook PDF page 66 to confirm producer-price unit and footnotes, then extract all crop rows and assess whether national values are appropriate for screening only.",
+    "Download and extract the official CAP district ZIP; cross-check provincial crop productivity and table 4.23 against district crop area, production, denominators and sampling/coverage notes.",
+    "Extract INE Basic Indicators of Agriculture and Food 2025 tables and reconcile with CAP and yearbook definitions.",
+    "Obtain current SIMA weekly Quente-Quente producer-level bulletins or an authorized raw data extract; preserve province, market, date, grade, unit and transaction level.",
+    "Verify ICM provincial market references against the original ICM bulletin and retain separate market/producer/wholesale/retail classifications.",
+    "Obtain farmer-paid seed, fertilizer, pesticide, labour, machinery hire, irrigation/pumping energy, transport and post-harvest costs by province and production system.",
+    "Build separate commercial enterprise budgets and validate all 17 calculator commodity mappings before activation."
+  ],
+  "safeguards": [
+    "Do not alter original 10 active profiles or calculator formulas.",
+    "Do not equate smallholder CAP averages with commercial enterprise yields.",
+    "Do not treat market reference quotations as farmgate transactions.",
+    "Do not merge distinct bean species into the cowpea profile.",
+    "Do not infer units missing from source tables.",
+    "Do not activate Mozambique or publish a calculator test URL until data and regression tests pass."
+  ]
+}
