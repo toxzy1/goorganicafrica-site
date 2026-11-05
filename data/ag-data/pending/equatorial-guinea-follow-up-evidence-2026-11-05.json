@@ -243,5 +243,74 @@
     "automated_guard": "scripts/check-site.js now checks benchmark-only country coverage across every commodity file and requires livestock price_per_unit fallback",
     "static_test": "17/17 enterprise profiles passed required benchmark-field checks using the same median/currency conversion rules as calculator-app.js",
     "limitation": "All GQ figures remain Africa-wide benchmark estimates; no GQ-specific farm-gate prices, yields or enterprise budgets are represented as verified. Full npm build and browser smoke tests have not yet been run."
+  },
+  "official_2026_2027_agricultural_campaign_decree": {
+    "decree_number": "101/2026",
+    "signed_date": "2026-06-30",
+    "government_announcement_date": "2026-09-01",
+    "official_government_notice": "https://www.guineaecuatorialpress.com/categorias/Presidencia?page=5",
+    "presidential_office_pdf_attachment_page": "https://www.lavicepress.org/post/el-ejecutivo-lanza-la-campa%C3%B1a-agricola-2026-2027-y-fija-los-precios-minimos-del-cacao-cafe-y-coco-e",
+    "independent_detail_cross_check": "https://imperio-ge.com/usuario/articulo.php?id_publicacion=679",
+    "campaign": "2026/2027",
+    "minimum_internal_marketing_prices": {
+      "cocoa_dried_in_dryer_XAF_per_kg": {
+        "grade_1": 1550,
+        "grade_2": 1250,
+        "grade_3": 450
+      },
+      "cocoa_sun_dried_XAF_per_kg": {
+        "well_dried": 1000,
+        "semi_dried": 800
+      },
+      "cocoa_merma_standard_box_XAF_per_box": 12500,
+      "coffee_XAF_per_kg": {
+        "clean": 550,
+        "below_standard": 350,
+        "husk": 300
+      },
+      "coconut_XAF_per_unit": {
+        "peeled": 100,
+        "unpeeled": 50
+      }
+    },
+    "regulated_or_subsidized_input_schedule_reported": {
+      "copper_sulphate_50kg_sack_XAF": 15000,
+      "copper_sulphate_25kg_sack_XAF": {
+        "reported_values": [
+          8000,
+          8500
+        ],
+        "status": "conflicting_secondary_transcriptions; verify against decree PDF before using"
+      },
+      "quicklime_200kg_drum_XAF": 15000
+    },
+    "qualifications": [
+      "These products (cocoa, coffee, coconut) are not among the current 17 calculator enterprises, so their producer prices must not be assigned to maize, cassava, rice or other unrelated profiles.",
+      "The schedule is a government-set campaign price schedule, not a collection of observed farm transactions.",
+      "The government reported on 30 October 2026 that it was negotiating up to a 10% reduction in its procurement offers for quicklime and copper sulphate; that is a state procurement negotiation and does not establish a new farmer retail price.",
+      "The copper sulphate 25 kg price is inconsistent across secondary transcriptions (XAF 8,000 versus XAF 8,500); keep it unresolved until the decree attachment is directly inspected."
+    ],
+    "sources": [
+      {
+        "name": "Equatorial Guinea Government Press Office, decree announcement listing",
+        "url": "https://www.guineaecuatorialpress.com/categorias/Presidencia?page=5",
+        "date": "2026-09-01"
+      },
+      {
+        "name": "LaVicepress, presidential decree PDF attachment",
+        "url": "https://www.lavicepress.org/post/el-ejecutivo-lanza-la-campa%C3%B1a-agricola-2026-2027-y-fija-los-precios-minimos-del-cacao-cafe-y-coco-e",
+        "date": "2026-09-02"
+      },
+      {
+        "name": "Imperio GE, detailed transcription of Decree 101/2026",
+        "url": "https://imperio-ge.com/usuario/articulo.php?id_publicacion=679",
+        "date": "2026-09-02"
+      },
+      {
+        "name": "Government Press Office, input procurement negotiations",
+        "url": "https://www.guineaecuatorialpress.com/index.php/noticias/el_gobierno_concede_seis_meses_para_impulsar_la_transformacion_del_cacao_y_autoriza_la_compra_de_insumos_agricolas",
+        "date": "2026-10-30"
+      }
+    ]
   }
 }
