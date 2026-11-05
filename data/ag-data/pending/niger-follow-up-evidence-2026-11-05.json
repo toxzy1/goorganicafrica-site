@@ -1,0 +1,207 @@
+{
+  "title": "Niger follow-up agricultural evidence",
+  "country": "Niger",
+  "iso_alpha2": "NE",
+  "review_date": "2026-11-05",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Extend the INS 2024 national crop series and prior SIMA evidence with current official SIMA monthly consumer-market prices, regional market-price data availability, weekly bulletin coverage and 2026 seasonal context. No calculator data activated.",
+  "findings": [
+    {
+      "topic": "SIMA validated national monthly consumer prices, September 2026",
+      "source": "Système d’Information sur les Marchés Agricoles du Niger (SIMA), national monthly validated price dashboard and September 2026 market bulletin",
+      "url": "https://www.simaniger.net/?page_id=1508",
+      "reference_period": "September 2026",
+      "observations": [
+        {
+          "commodity": "millet",
+          "value": 253,
+          "unit": "FCFA/kg",
+          "market_level": "consumer market price, national monthly average",
+          "period": "September 2026",
+          "status": "Official SIMA validated monthly average; not a producer/farmgate price."
+        },
+        {
+          "commodity": "sorghum",
+          "value": 234,
+          "unit": "FCFA/kg",
+          "market_level": "consumer market price, national monthly average",
+          "period": "September 2026",
+          "status": "Official SIMA validated monthly average; not a producer/farmgate price."
+        },
+        {
+          "commodity": "maize",
+          "value": 221,
+          "unit": "FCFA/kg",
+          "market_level": "consumer market price, national monthly average",
+          "period": "September 2026",
+          "status": "Official SIMA validated monthly average; not a producer/farmgate price; product form/grade should be confirmed before comparison."
+        },
+        {
+          "commodity": "imported rice",
+          "value": 519,
+          "unit": "FCFA/kg",
+          "market_level": "consumer market price, national monthly average",
+          "period": "September 2026",
+          "status": "Imported processed rice; must not be used as paddy rice producer price."
+        },
+        {
+          "commodity": "cowpea/niébé",
+          "value": 394,
+          "unit": "FCFA/kg",
+          "market_level": "consumer market price, national monthly average",
+          "period": "September 2026",
+          "status": "Consumer price benchmark; not farmgate."
+        }
+      ],
+      "quality_notes": [
+        "SIMA explicitly labels these as validated national monthly averages for consumers, not producer prices.",
+        "September bulletin reports year-on-year niébé +14%, maize -8%, imported rice -6%; September prices remained below five-year averages for maize, sorghum and niébé.",
+        "Use these values only as consumer-market context or a reasonableness check, never as calculator farmgate revenue assumptions."
+      ]
+    },
+    {
+      "topic": "SIMA weekly and regional market data structure and export constraints",
+      "source": "SIMA Niger Open Data / Agricultural Product Prices / Regional Average Prices",
+      "urls": [
+        "https://simaniger.net/ressources/open-data",
+        "https://www.simaniger.net/prix-produits",
+        "https://mail.simaniger.net/statistiques/prix-moyen-regional"
+      ],
+      "reference_period": "2026 public portal reviewed 2026-11-05",
+      "observations": [
+        {
+          "indicator": "weekly market price data",
+          "coverage": "market, region, product and date filters; CSV/Excel export controls are shown",
+          "status": "SIMA public page exposes a detailed table and filtered export workflow; source does not classify every listed price as producer/farmgate."
+        },
+        {
+          "indicator": "regional mean price series",
+          "coverage": "regional aggregation by product and month, with CSV/Excel export",
+          "status": "Public regional means are available; table is market-price aggregation, not automatically producer price."
+        },
+        {
+          "indicator": "public data rows",
+          "value": 18085,
+          "unit": "rows",
+          "status": "Price-products page displayed 18,085 rows across 724 pages at time of review."
+        },
+        {
+          "indicator": "regional averages",
+          "value": 2446,
+          "unit": "aggregated observations",
+          "status": "Regional average page displayed 2,446 observations across 189 pages at time of review."
+        },
+        {
+          "indicator": "bulk export access",
+          "status": "SIMA says filtered CSV/Excel exports are available on page; detailed export series and API access may require contacting SIMA for partnership or authorized access."
+        }
+      ],
+      "quality_notes": [
+        "The portal includes product names, market, region, month and numeric price; the product page preview does not expose a reliable unit/grade for every row.",
+        "Do not convert sack quotations to FCFA/kg without a confirmed commodity-specific sack weight.",
+        "Do not infer farmgate level from a market-level observation; seek an explicit producer price category or direct SIMA confirmation."
+      ]
+    },
+    {
+      "topic": "Latest available weekly market bulletins and seasonal context",
+      "source": "SIMA Niger homepage and RECA Niger joint monthly market bulletin",
+      "urls": [
+        "https://www.simaniger.net/?page_id=1508",
+        "https://reca-niger.org/spip.php?article2136=&debut_ar=30"
+      ],
+      "observations": [
+        {
+          "indicator": "latest weekly cereal bulletin displayed",
+          "value": "No. 872, week 42",
+          "period": "14–20 October 2026",
+          "publication_date": "2026-10-22",
+          "status": "SIMA reports relative stability; maize average increased 1% during the week."
+        },
+        {
+          "indicator": "latest weekly fruit and vegetable bulletin displayed",
+          "value": "No. 719, week 42",
+          "period": "14–20 October 2026",
+          "publication_date": "2026-10-22",
+          "status": "SIMA reports differentiated movements; tomato fresh price decreased 5% and squash 4% in the week."
+        },
+        {
+          "indicator": "monthly joint market bulletin",
+          "value": "2026-09",
+          "publication_date": "2026-10-22",
+          "status": "Reports September market trends, regional differences and food-basket access; not farmgate transaction series."
+        },
+        {
+          "indicator": "July 2026 consumer-price movement",
+          "commodity": "maize",
+          "value": 230,
+          "unit": "FCFA/kg",
+          "status": "ANP report quoting SIMA national monthly consumer average for July; not producer price."
+        },
+        {
+          "indicator": "July 2026 consumer-price movement",
+          "commodity": "cowpea/niébé",
+          "value": 425,
+          "unit": "FCFA/kg",
+          "status": "ANP report quoting SIMA national monthly consumer average for July; distinct from September value."
+        }
+      ],
+      "quality_notes": [
+        "Weekly price movements and retail/consumer market averages are useful for market context but do not establish the price a farmer receives.",
+        "The October week 42 bulletin is the latest bulletin identified on the SIMA dashboard during this review."
+      ]
+    },
+    {
+      "topic": "FAO 2026 cropping-season and cereal outlook",
+      "source": "FAO GIEWS Country Brief, Niger",
+      "url": "https://cb.apps.fao.org/country.jsp?code=NER",
+      "reference_date": "2026-08-28",
+      "observations": [
+        {
+          "indicator": "aggregate cereal production",
+          "value": 5300000,
+          "unit": "tonnes",
+          "period": "2025",
+          "status": "FAO cites official estimate, close to the previous five-year average; aggregate cereals, not crop-specific."
+        },
+        {
+          "indicator": "2026 planting",
+          "status": "Maize, millet and rice planting completed in July; sorghum planting completed in early August."
+        },
+        {
+          "indicator": "regional crop establishment stress",
+          "status": "Early-season dryness affected establishment in parts of Tillabéri, Tahoua and Zinder; some replanting required."
+        },
+        {
+          "indicator": "security-related production risk",
+          "status": "Insecurity continues to constrain field access particularly in Tillabéri and Diffa; localized production shortfalls possible."
+        }
+      ],
+      "quality_notes": [
+        "The 5.3 million tonne value is aggregate cereal output for 2025 and must not be allocated to individual crops.",
+        "Regional climate and security conditions vary; national average assumptions may conceal localized production risk."
+      ]
+    }
+  ],
+  "decision": {
+    "calculator_status": "not_active",
+    "reason": "This follow-up improves dated consumer-market and regional market intelligence, but does not confirm producer/farmgate prices, sack weights and grades for all products. The existing INS crop series remains national rather than region-by-crop, and current seed, crop-protection, irrigation, labour, machinery and livestock enterprise costs are incomplete.",
+    "test_url_available": false,
+    "no_calculator_values_imported": true
+  },
+  "next_actions": [
+    "Request or obtain SIMA's filtered export with explicit price level, market, date, grade, product form, unit and sack weights; identify actual producer-level observations separately from consumer/wholesale prices.",
+    "Extract the eight-region crop output, harvested area and yield matrices for the supported calculator commodities and reconcile with INS national totals.",
+    "Extract SIMA fertilizer price rows with exact product, bag size, region, market and date; obtain seed, crop-protection, irrigation/energy, labour and machinery costs.",
+    "Build regional enterprise budgets by production system, including cowpea, rice, maize, onion and livestock only where commodity definitions match calculator profiles.",
+    "Obtain livestock offtake, liveweight or auction prices, feed, veterinary, mortality and production-cost evidence.",
+    "Map verified evidence into the existing calculator schema and add Niger test cases only after data and regression tests pass."
+  ],
+  "safeguards": [
+    "Do not alter the original 10 working country profiles or calculator formulas.",
+    "Do not use SIMA consumer prices as farmgate revenue values.",
+    "Do not convert sack prices without verified sack weights.",
+    "Do not use national millet or sorghum series as substitutes for maize or rice profiles.",
+    "Do not treat livestock inventory as annual output or saleable offtake.",
+    "Do not activate Niger or publish a calculator test URL until mapping, build and regression tests pass."
+  ]
+}
