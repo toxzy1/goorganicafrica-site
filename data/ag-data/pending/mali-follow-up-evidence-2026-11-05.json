@@ -1,0 +1,101 @@
+{
+  "country_code": "ML",
+  "country_name": "Mali",
+  "review_date": "2026-11-05",
+  "status": "research_only_not_published_to_calculator",
+  "continuation_of": "Batch 27 review recorded 2026-11-03; this is a follow-up evidence refresh, not a new country count.",
+  "findings": [
+    {
+      "topic": "EAC 2023-2024 report and measurement methodology",
+      "source": "INSTAT Mali National Data Archive, EAC 2023-2024 related materials",
+      "url": "https://microdata.instat.ml/index.php/catalog/123/related-materials",
+      "observations": [
+        "Official CPS/SDR report is available as a 3.56 MB PDF (catalogue download identifier 969); the catalogue contents page lists crop area, crop yields, input use, cereal area/output, legumes, oilseeds, livestock, poultry and fisheries chapters.",
+        "The EAC includes cultivated area by crop, yields, fertilizer/pesticide use, farm equipment, livestock and commercialization. A separate yield-plot questionnaire (Q5RDT) is listed.",
+        "The report itself could not be downloaded through the current retrieval route during this review; therefore no new crop-specific table values are transcribed or accepted."
+      ],
+      "status": "primary_national_report_identified_and_contents_verified; numeric_tables_not_extracted"
+    },
+    {
+      "topic": "EAC 2023-2024 public microdata metadata and survey design",
+      "source": "IHSN Survey Catalog, Agricultural Survey 2023-2024",
+      "url": "https://catalog.ihsn.org/catalog/14126/study-description",
+      "observations": [
+        "The public release is anonymised version 2.1 and includes over 8,000 agricultural holdings, selected through a two-stage stratified design with 740 enumeration areas and regions as strata.",
+        "Coverage excludes Kidal for security reasons; Bamako District is also excluded because agricultural activity is limited.",
+        "The catalogue reports first-stage EA coverage of 86%, holding coverage of 79.4%, and second-round coverage of 58.3%; weights are distinct for Passage 1 and Passage 2.",
+        "Modules include plots and crop areas, fertilizer/pesticide inputs, labour, commercialization, livestock, poultry, equipment, and measured yield plots. GPS plot measurement and weighed crop-cut harvests were used.",
+        "The catalogue states that microdata are anonymised but subject to CPS/SDR confidentiality and use conditions: publish only aggregated results, do not redistribute respondent-level records, and submit derived reports to CPS/SDR."
+      ],
+      "status": "strong_primary_survey_metadata_verified; weighting_nonresponse_and_Kidal_exclusion_must_be_respected"
+    },
+    {
+      "topic": "2026 public procurement price reference bulletins",
+      "source": "Mali Ministry of Economy and Finance / DGMP, Mercuriale des prix: Bamako and regional capitals 2026",
+      "url": "https://www.dgmp.gouv.ml/mercurialedesprix",
+      "bulletin_index_url": "https://www.dgmp.gouv.ml/node/660",
+      "publication_date": "2026-02-25",
+      "observations": [
+        "The ministry catalogue lists a 2026 bulletin for Bamako and separate regional bulletins for Badiangara, Bougouni, Dioila, Douentza, Gao, Kayes, Kidal, Kita, Koulikoro, Koutiala, Menaka, Mopti, Nara, Nioro, San, Ségou, Sikasso, Taoudenit and Tombouctou.",
+        "A directly retrievable 2026 Tombouctou PDF confirms that the tables are public procurement/retail reference prices with minimum, mean and maximum TTC prices, not farm-gate producer prices.",
+        "This collection is useful as a regional cost-reference lead for selected purchased goods/services only after relevant agricultural items are identified; it must not be used as a farmer's actual input bill without product, quality, tax and delivery matching."
+      ],
+      "status": "official_regional_reference_collection_confirmed; agricultural_item_extraction_pending; not_farmgate"
+    },
+    {
+      "topic": "2026 regional retail food price microdata",
+      "source": "World Bank Microdata Library, Mali Monthly food price estimates by product and market",
+      "url": "https://microdata.worldbank.org/catalog/4499/data-dictionary/MLI_2021_RTFP_MKT?file_name=MLI_RTFP_mkt_2007_2026-09-29.csv",
+      "observations": [
+        "Latest catalogue version reviewed is 2026-10-05, with monthly estimates through 2026-10-01, 136 Mali markets, 32,606 pooled cases and 95 variables.",
+        "Fields include administrative region, market name, price date, currency, data coverage, confidence score, spatial interpolation flag and commodity series for beans, maize, millet, rice and sorghum.",
+        "The dataset is market-level estimated food prices, not direct farm-gate quotations; retain confidence/coverage/interpolation flags and separate retail/market prices from producer prices."
+      ],
+      "status": "high_value_market_price_dataset_identified; extraction_and_flag_filtering_pending; not_farmgate"
+    },
+    {
+      "topic": "2026 wholesale cereal price context",
+      "source": "FAO FPMA regional roundup, 13 October 2026",
+      "url": "https://www.fao.org/giews/food-prices/regional-roundups/detail/es/c/1760661/",
+      "observations": [
+        "In Mali, wholesale millet and sorghum prices in September 2026 were generally up to 25% below year-earlier levels, supported by carryover stocks after the above-average 2025 harvest.",
+        "Conflict-affected Gao and Tombouctou continued to record substantially higher prices than other monitored markets because of disrupted trade and depleted household stocks."
+      ],
+      "status": "wholesale_market_context_only; no absolute farmgate prices"
+    },
+    {
+      "topic": "2025 campaign output and 2026 support-price policy cross-check",
+      "source": "Government of Mali CENA report, 3 April 2026; ORTM CSA report, 9 June 2026",
+      "urls": [
+        "https://gouvernement.ml/16eme-session-du-comite-executif-national-de-lagriculture-cena-les-resultats-de-la-campagne-2025-et-la-programmation-de-2026-examines-par-le-gouvernement/",
+        "https://www.ortm.ml/index.php/16eme-session-du-conseil-superieur-de-lagriculture"
+      ],
+      "observations": [
+        "Government reported 2025 aggregate cereal output of 11,452,540 tonnes; this is a national aggregate, not a crop-specific yield.",
+        "For the 2026/27 campaign, ORTM reports first-grade seed cotton at FCFA 300/kg, mineral fertilizer at FCFA 15,000 per 50 kg bag and organic fertilizer at FCFA 3,000 per 50 kg bag.",
+        "These are campaign policy/support prices. Fertilizer formulation, eligibility, distribution, timing and last-mile farmer cost must be checked before budgeting."
+      ],
+      "status": "official_campaign_and_policy_context; not_complete_enterprise_budget"
+    }
+  ],
+  "remaining_gaps": [
+    "Download and extract the CPS/SDR EAC 2023-2024 report tables and authorized anonymised microdata aggregates; apply the correct passage-specific survey weights and report confidence/precision.",
+    "Keep Kidal excluded from EAC-based regional estimates unless an independent, valid Kidal source is obtained; distinguish Bamako District from the 19 regions.",
+    "Extract relevant agricultural products and services from the 2026 DGMP regional procurement bulletins, but classify them only as public procurement reference prices unless matched farmer transaction evidence exists.",
+    "Extract the World Bank RTFP market/commodity CSV by market and month, preserve coverage/confidence/interpolation fields, and label all results as estimated market prices rather than farm-gate prices.",
+    "Obtain dated crop-specific producer prices by region, grade and product form; the March 2025 rice farm-gate price in the earlier USDA report is historical only.",
+    "Build regional budgets for seed, fertilizer, crop protection, labour, machinery, irrigation, energy, transport and livestock feed, using observed farmer-paid costs.",
+    "Validate the current 17 commodity mappings, production systems, XOF currency handling and regional test cases before activation."
+  ],
+  "calculator_decision": "No activation. Mali remains research-only. The new evidence strengthens the survey and regional price-source plan, but no crop-specific values were extracted from the EAC tables, no current crop-specific farm-gate price set was validated, and no complete regional enterprise budgets exist.",
+  "citations": [
+    "https://microdata.instat.ml/index.php/catalog/123/related-materials",
+    "https://catalog.ihsn.org/catalog/14126/study-description",
+    "https://www.dgmp.gouv.ml/mercurialedesprix",
+    "https://www.dgmp.gouv.ml/node/660",
+    "https://microdata.worldbank.org/catalog/4499/data-dictionary/MLI_2021_RTFP_MKT?file_name=MLI_RTFP_mkt_2007_2026-09-29.csv",
+    "https://www.fao.org/giews/food-prices/regional-roundups/detail/es/c/1760661/",
+    "https://gouvernement.ml/16eme-session-du-comite-executif-national-de-lagriculture-cena-les-resultats-de-la-campagne-2025-et-la-programmation-de-2026-examines-par-le-gouvernement/",
+    "https://www.ortm.ml/index.php/16eme-session-du-conseil-superieur-de-lagriculture"
+  ]
+}
