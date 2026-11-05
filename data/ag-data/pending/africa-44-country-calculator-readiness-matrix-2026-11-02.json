@@ -1039,7 +1039,7 @@
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_ANASA_2025_26_survey_release_confirmed_but_prefecture_tables_not_extracted_USDA_FAS_national_estimates_crosscheck_only",
-        "dated_local_farmgate_prices_and_units": "blocked_official_SIM_service_confirmed_but_public_bulletin_list_reviewed_shows_2024_series_not_current_2026_farmgate_observations;_Conakry_secondary_market_prices_on_hold",
+        "dated_local_farmgate_prices_and_units": "blocked_ANASA_SIM_visible_weekly_bulletins_only_Jul-Oct_2024; SIMPRIX_2026_observed_price_ceiling_portal_is_consumer_market_not_farmgate; current_producer_prices_not_validated",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "partial_2026_27_reported_controlled_NPK_urea_price_GNF_300000_per_50kg_requires_regional_verification;_AfDB_AFFM_Oct_2026_FOSTER_credit_guarantee_targets_16200t_supply_chain_but_is_not_a_unit_price_or_delivered_cost",
         "crop_protection_costs": "partial_2026_27_reported_herbicide_price_GNF_15000_per_litre_not_crop_application_cost",
@@ -1061,9 +1061,10 @@
         "Build regional budgets for the matching crop and livestock profiles; national production totals cannot substitute for enterprise budgets.",
         "Confirm implementation and prefecture assignments for the August 2026 Beyla and Siguiri administrative changes.",
         "Add GNF currency, regional selector, commodity mapping and gross-margin regression tests after validated budgets are mapped.",
-        "Track AfDB/AFFM FOSTER three-year fertilizer financing (announced 19 Oct 2026; planned 16,200 tonnes and 45,000 farmers) as supply-chain access context only; verify regional dealer prices, credit terms and actual deliveries before calculating fertilizer cost."
+        "Track AfDB/AFFM FOSTER three-year fertilizer financing (announced 19 Oct 2026; planned 16,200 tonnes and 45,000 farmers) as supply-chain access context only; verify regional dealer prices, credit terms and actual deliveries before calculating fertilizer cost.",
+        "SIMPRIX DNCIC portal exposes regional consumer price ceilings, not producer prices; do not map its imported rice/chicken or other ceiling prices into calculator revenue."
       ],
-      "next_step": "Obtain full ANASA EAAI 2025/26 crop tables and current dated SIM price series; extract crop-by-prefecture area, production and yield and verify farmer-paid costs before calculator mapping.",
+      "next_step": "Obtain full EAAI crop and livestock datasets by prefecture, verify current ANASA SIM collection output and distinguish producer/wholesale/retail prices, then build costed local budgets.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea government portal lists the pre-existing administrative regions (including the special zone of Conakry). A decree dated 20 August 2026 created two additional administrative regions, Beyla and Siguiri. The regional lookup therefore records the eight previously listed regional areas plus the two newly created regions. Implementation details and updated prefecture-to-region boundaries should be confirmed against the subsequent regulatory instrument before regional crop data are mapped.",
@@ -1109,6 +1110,24 @@
           "Obtain ANASA EAAI regional tables and dated SIM price bulletins.",
           "Build and validate region-specific enterprise budgets and GNF regression cases before activation."
         ]
+      },
+      "last_reviewed": "2026-11-05",
+      "review_2026_11_05": {
+        "source_notes": "Official SIMPRIX DNCIC portal identified and inspected. It exposes maximum consumer prices with regional and prefecture navigation; visible Conakry/Kaloum list includes imported rice, vegetable oil, onions, imported chicken, sugar, flour and milk. These are consumer price ceilings, not farmgate prices. ANASA SIM public weekly bulletins visible in current portal listing run July-October 2024; official relaunch documentation describes 71 agricultural markets across 33 prefectures but also historic operational limitations. FAO public microdata catalogue currently lists the 2025 livestock thematic module, not the full crop-by-prefecture EAAI dataset.",
+        "sources": [
+          "https://simprix.gov.gn/dc840bc188e7964f6a2da5e7d6d4e3ea",
+          "https://simprix.gov.gn/9e7d6b59065b43a81686e55819520ba0",
+          "https://anasa.gov.gn/2021/sim-guinee/",
+          "https://anasa.gov.gn/2021/ateliers-de-relance-du-sim-guinee-systeme-dinformations-sur-le-marches/",
+          "https://www.fao.org/in-action/agrisurvey/access-to-data/guinea/en"
+        ],
+        "decisions": [
+          "Do not use SIMPRIX consumer price ceilings as farmgate revenue inputs.",
+          "Do not treat imported rice and imported poultry prices as local paddy or broiler producer prices.",
+          "Do not claim current ANASA weekly producer price data are public when the visible bulletin list is from 2024.",
+          "Keep Guinea inactive until crop-cutting yields, current producer prices and full farmer-paid budgets are obtained."
+        ],
+        "next_step": "Obtain full EAAI crop and livestock datasets by prefecture, verify current ANASA SIM collection output and distinguish producer/wholesale/retail prices, then build costed local budgets."
       }
     },
     {
