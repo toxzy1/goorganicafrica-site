@@ -1587,7 +1587,7 @@
         "Do not convert CEA national product values or intermediate-consumption aggregates into per-hectare revenue/costs; CEA notes that input costs partly rely on expert opinions and technical coefficients.",
         "Validate historical producer-price references (paddy rice 2022, groundnut 2023, sesame 2025) against current dated regional farmgate transactions."
       ],
-      "next_step": "Extract the EAC 2023-24 report tables and yield-square data by region, then extract DGMP 2026 regional price bulletins and build a dated farmgate/market classification. Keep CEA aggregate costs as context only.",
+      "next_step": "Extract EAC 2023-2024 crop/yield/input/labour tables with correct weights and precision; extract relevant agricultural items from 2026 regional DGMP bulletins as procurement reference only; filter World Bank RTFP market estimates with confidence flags; obtain current crop-specific farmgate prices and itemized regional farmer budgets before building XOF test cases.",
       "batch_08_review": {
         "review_date": "2026-11-02",
         "source_notes": "Mali's territorial reorganisation is operational. The Government reported 19 regions and the District of Bamako, with new administrative units operational and governors, prefects and sub-prefects appointed. The 19-region list is recorded separately from the Bamako district. Region names are cross-checked against the 2025 administrative division reference; spelling is normalized to French diacritics where appropriate.",
@@ -1660,7 +1660,9 @@
           "Historical producer-price references are not current farmgate observations.",
           "No invented yields, prices or costs; no merge or deployment."
         ]
-      }
+      },
+      "follow_up_evidence_file": "data/ag-data/pending/mali-follow-up-evidence-2026-11-05.json",
+      "follow_up_2026_11_05": "EAC report contents verified but numeric tables not extracted; public microdata survey design, passage-specific weights, coverage and confidentiality restrictions documented; 2026 DGMP regional price-bulletin collection identified but procurement reference prices are not farmgate; World Bank RTFP 136-market dataset through 2026-10 identified with confidence/coverage/interpolation fields. No readiness criterion upgraded and no calculator activation."
     },
     {
       "code": "MR",
