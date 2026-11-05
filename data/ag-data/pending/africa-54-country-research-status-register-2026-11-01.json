@@ -347,9 +347,11 @@
       "name": "Mali",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "Batch_27_2026_11_03_official_2025_campaign_results_2026_27_cotton_and_fertilizer_policy_prices_EAC_2023_24_survey_limits_and_FAO_wholesale_price_trends_reviewed",
+      "review_status": "2026-11-05 follow-up: EAC report contents and survey metadata verified; 2026 regional DGMP price bulletin collection identified; World Bank RTFP 136-market dataset through 2026-10 identified; remains research-only because numeric crop tables, current farmgate prices and complete regional budgets are not validated.",
       "calculator_status": "directory_only_not_active",
-      "administrative_geography_status": "19_regions_and_separate_Bamako_district_verified_existing_region_lookup_retained"
+      "administrative_geography_status": "19_regions_and_separate_Bamako_district_verified_existing_region_lookup_retained",
+      "follow_up_evidence_file": "data/ag-data/pending/mali-follow-up-evidence-2026-11-05.json",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "MR",
