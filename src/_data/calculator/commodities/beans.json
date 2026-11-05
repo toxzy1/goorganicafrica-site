@@ -345,7 +345,9 @@
       "as_of": "2026-08",
       "cost_source": "Africa benchmark estimate; not a Botswana-specific farmer-paid input or enterprise budget.",
       "cost_as_of": "2026-10",
-      "data_quality": "partial_country_specific_producer_price_with_benchmark_yield_and_cost"
+      "data_quality": "partial_country_specific_producer_price_with_benchmark_yield_and_cost",
+      "price_source_url": "https://www.farmersplatform.co.bw/market-data",
+      "price_primary_source_url": "https://www.bamb.co.bw/bamb-prices"
     },
     {
       "country_code": "GQ",
