@@ -432,7 +432,13 @@
       "price_source_url": "https://www.bamb.co.bw/bamb-prices",
       "price_secondary_source_url": "https://www.farmersplatform.co.bw/market-data",
       "cost_source_url": "https://www.statsbots.org.bw/agriculture",
-      "cost_note": "No verified Botswana maize enterprise budget or current input-cost schedule was found in the reviewed sources. Keep the existing Africa benchmark proxy clearly disclosed; do not present it as Botswana-specific."
+      "cost_note": "No verified Botswana maize enterprise budget or current input-cost schedule was found in the reviewed sources. Keep the existing Africa benchmark proxy clearly disclosed; do not present it as Botswana-specific.",
+      "seed_rate_kg_per_ha": 10,
+      "seed_rate_source": "Seed Co Botswana rain-fed crop guidance: maize 10 kg/ha. This is a recommended sowing rate, not a seed price.",
+      "seed_rate_source_url": "https://seedcogroup.com/bw/fieldcrops/media/faqs/",
+      "cost_reference": "Botswana's 2026/27 Lemang Dijo one-hectare voucher lists programme support values for seeds (P580), harrowing (P495), ploughing (P1,045), planting (P495), pesticides/herbicides (P480), and fertiliser support up to P3,600 after soil testing. These are subsidy/voucher values, not a complete farmer-paid maize enterprise budget; they are not substituted for the calculator's disclosed benchmark cost.",
+      "cost_reference_as_of": "2026/27",
+      "cost_reference_url": "https://lemangdijo.com/"
     },
     {
       "country_code": "GQ",
