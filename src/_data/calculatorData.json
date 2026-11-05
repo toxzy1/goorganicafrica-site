@@ -7009,7 +7009,12 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark"
+          "data_quality": "benchmark",
+          "historical_market_price_reference_bwp_per_kg": 1.23,
+          "historical_market_price_reference_as_of": "2019",
+          "historical_market_price_reference_source": "Statistics Botswana, Annual Agricultural Survey Report 2019, Traditional Sector, Table 7.12E: national total watermelon sales revenue divided by quantity sold",
+          "historical_market_price_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/ANNUAL%20AGRICULTURAL%20SURVEY%20REPORT%202019%20TRADITIONAL%20SECTOR.pdf",
+          "historical_market_price_reference_note": "Historical traditional-sector average only; not a current producer quotation and not used as the calculator selling-price assumption. Current price and full cost evidence remain unverified."
         },
         {
           "country_code": "GQ",
