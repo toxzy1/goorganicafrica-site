@@ -1288,32 +1288,31 @@
     {
       "code": "LY",
       "name": "Libya",
-      "evidence_file": "data/ag-data/pending/libya-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "FAO GIEWS Jul 2026 cereal outlook; WDI/FAOSTAT 2024 cereal data; SESRIC barley series with yield inconsistency; World Bank 41-market RTFP through Oct 2026; official 2024-2025 local market-price workbook identified; official Libya Trade Network Local Price Index 2026-11-03 retail prices extracted for selected vegetables, poultry and eggs; IFAD farm structure, WFP Fezzan assessment, FAO irrigation study and MoA census preparation recorded. Retail prices are not farmgate prices; producer prices and enterprise budgets remain missing.",
+      "evidence_file": "data/ag-data/pending/libya-calculator-readiness-batch-57-2026-11-05.json",
+      "existing_research_note": "Batch 57 refresh: FAO GIEWS 2026 cereal outlook; World Bank 41-market RTFP through 2026-10-01; official Libya Trade Network 2024-2025 local-market workbook and 2026-11-04 retail bulletin; national 2024 cereal statistics and secondary FAOSTAT crop mix; qualitative regional crop context. Retail/market prices are not farmgate; current farmer-paid inputs, labour, machinery and enterprise budgets missing. Barley yield metadata discrepancy remains unresolved.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_national_2024_cereal_and_selected_crop_statistics_identified; crop-specific regional harvested-area/yield extraction and barley metadata reconciliation pending",
-        "dated_local_farmgate_prices_and_units": "blocked_official_2026-11-03_local_price_index_and_2024-2025_market_workbook_are_consumer_local_market_prices_or_unclassified; no_validated_farmgate_series",
-        "seed_and_planting_material_costs": "not_yet_audited",
-        "fertilizer_and_soil_amendment_costs": "not_yet_audited",
-        "crop_protection_costs": "not_yet_audited",
-        "irrigation_water_and_energy_costs": "partial_FAO_irrigation_infrastructure_study_identified_but_crop_region_unit_costs_not_extracted",
-        "labour_rates_and_operations": "not_yet_audited",
-        "machinery_and_land_preparation_costs": "not_yet_audited",
-        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_region_and_commodity_enterprise_budgets",
-        "currency_and_exchange_rate_method": "partial_LYD_currency_confirmed_but_current_input_price_conversion_and_regional_rounding_tests_pending",
-        "source_provenance_and_observation_date": "partial_FAO_GIEWS_2026-07-16_WDI_2024_Libya_Trade_Network_retail_bulletin_2026-11-03_and_official_2024-2025_workbook_metadata_recorded",
-        "calculator_mapping_and_test_cases": "blocked_no_validated_Libya_regional_enterprise_inputs_or_regression_cases"
+        "crop_area_production_yield_by_commodity_and_season": "partial_national_2024_cereal_and_secondary_crop_output_identified_regional_yields_missing_barley_yield_inconsistency_open",
+        "dated_local_farmgate_prices_and_units": "blocked_official_retail_and_market_price_sources_identified_but_no_validated_farmgate_series",
+        "seed_and_planting_material_costs": "blocked_current_farmer_paid_prices_missing",
+        "fertilizer_and_soil_amendment_costs": "blocked_current_prices_and_application_rates_missing",
+        "crop_protection_costs": "blocked",
+        "irrigation_water_and_energy_costs": "partial_context_only_unit_costs_missing",
+        "labour_rates_and_operations": "blocked_current_region_operation_wage_schedule_missing",
+        "machinery_and_land_preparation_costs": "blocked",
+        "regional_enterprise_budget_and_gross_margin": "blocked",
+        "currency_and_exchange_rate_method": "partial_LYD_confirmed_exchange_rate_volatility_and_tests_pending",
+        "source_provenance_and_observation_date": "partial_FAO_WB_and_official_LTN_sources_refreshed_2026_11_05",
+        "calculator_mapping_and_test_cases": "blocked"
       },
       "blockers": [
-        "Extract and independently validate FAOSTAT crop area, production and yield by item, element and year; reconcile the SESRIC barley yield inconsistency against production divided by harvested area.",
-        "Download and inspect the official 2024-2025 Libya Trade Network XLSX; identify market geography, commodity grade, unit, reference period and whether each price is retail or wholesale.",
-        "Obtain dated farmgate producer prices by commodity, region, grade and unit; do not substitute the 2026-11-03 Local Price Index retail values.",
-        "Obtain farmer-facing seed, fertilizer, crop-protection, labour, machinery, land, irrigation-energy, packaging and transport prices.",
-        "Extract FAO irrigation study and WFP/Ministry Fezzan assessment tables where accessible; keep Fezzan evidence geographically bounded.",
-        "Build regionally appropriate enterprise budgets and regression cases; map only supported values to the calculator."
+        "Reconcile barley yield against primary FAOSTAT item/element/year.",
+        "Extract official 2024-2025 Libya Trade Network XLSX with commodity/unit/date/geography/price-level metadata.",
+        "Obtain dated farmgate producer prices; do not substitute retail/market prices.",
+        "Obtain current farmer-paid seed, fertilizer, crop-protection, labour, machinery, fuel, water, energy and transport costs.",
+        "Validate regional crop mapping and build region-specific enterprise budgets and LYD regression tests."
       ],
-      "next_step": "Extract the official 2024-2025 local market-price workbook and primary FAOSTAT crop series; separately locate dated farmgate producer prices and farmer-facing input quotations before constructing regional enterprise budgets."
+      "next_step": "Extract the official Trade Network XLSX and primary FAOSTAT crop series; then seek dated farmgate producer prices and farmer-facing input quotations before enterprise-budget construction."
     },
     {
       "code": "MG",
