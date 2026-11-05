@@ -68,12 +68,42 @@
       "source": "USDA Foreign Agricultural Service production dashboard for Guinea",
       "reference_period": "MY 2025/2026",
       "observations": [
-        {"commodity": "groundnut", "production": 1000000, "unit": "metric tonnes", "source_class": "USDA estimate"},
-        {"commodity": "rice", "production": 2480000, "unit": "metric tonnes", "source_class": "USDA estimate"},
-        {"commodity": "maize", "production": 760000, "unit": "metric tonnes", "source_class": "USDA estimate"},
-        {"commodity": "millet", "production": 220000, "unit": "metric tonnes", "source_class": "USDA estimate"},
-        {"commodity": "sorghum", "production": 65000, "unit": "metric tonnes", "source_class": "USDA estimate"},
-        {"commodity": "coffee", "production": 75000, "unit": "60 kg bags", "source_class": "USDA estimate"}
+        {
+          "commodity": "groundnut",
+          "production": 1000000,
+          "unit": "metric tonnes",
+          "source_class": "USDA estimate"
+        },
+        {
+          "commodity": "rice",
+          "production": 2480000,
+          "unit": "metric tonnes",
+          "source_class": "USDA estimate"
+        },
+        {
+          "commodity": "maize",
+          "production": 760000,
+          "unit": "metric tonnes",
+          "source_class": "USDA estimate"
+        },
+        {
+          "commodity": "millet",
+          "production": 220000,
+          "unit": "metric tonnes",
+          "source_class": "USDA estimate"
+        },
+        {
+          "commodity": "sorghum",
+          "production": 65000,
+          "unit": "metric tonnes",
+          "source_class": "USDA estimate"
+        },
+        {
+          "commodity": "coffee",
+          "production": 75000,
+          "unit": "60 kg bags",
+          "source_class": "USDA estimate"
+        }
       ],
       "caveat": "These are national estimates, not ANASA prefecture observations. Do not map them to regions or treat them as official measured farm yields. The USDA dashboard also displays national harvested-area and yield series for selected commodities; each crop's values and marketing-year definitions require extraction and reconciliation before use.",
       "source_url": "https://fas-prod.azureedge.us/data/production/gu"
@@ -120,5 +150,115 @@
     "Keep Guinea research-only and preserve the original ten active country profiles."
   ],
   "next_step": "Obtain and extract ANASA EAAI 2025-2026 crop tables and current SIM data; if these remain inaccessible, document the access limitation and move to Guinea-Bissau without certifying Guinea.",
-  "validation": "Research note only; JSON structure to be parsed after commit. No calculator activation, merge or deployment."
+  "validation": "Research note only; JSON structure to be parsed after commit. No calculator activation, merge or deployment.",
+  "follow_up_2026_11_05": {
+    "review_date": "2026-11-05",
+    "status": "research_updated_not_calculator_ready",
+    "new_findings": [
+      {
+        "topic": "Official SIMPRIX price-cap portal",
+        "source": "Guinea National Directorate of Domestic Trade and Competition (DNCIC), official SIMPRIX portal",
+        "urls": [
+          "https://simprix.gov.gn/dc840bc188e7964f6a2da5e7d6d4e3ea",
+          "https://simprix.gov.gn/9e7d6b59065b43a81686e55819520ba0"
+        ],
+        "observed_date": "2026-11-05",
+        "scope": "National portal describes real-time maximum prices for essential consumer goods; regional navigation lists Conakry, Boké, Kindia, Labé, Faranah, Nzérékoré, Mamou and Kankan, with prefecture-level navigation.",
+        "visible_prices_conakry_gnf": [
+          {
+            "product": "Imported rice 5% broken",
+            "quantity": 50,
+            "unit": "kg",
+            "price": 280000
+          },
+          {
+            "product": "Imported rice 25% broken",
+            "quantity": 50,
+            "unit": "kg",
+            "price": 260000
+          },
+          {
+            "product": "Vegetable oil",
+            "quantity": 20,
+            "unit": "litre",
+            "price": 305000
+          },
+          {
+            "product": "Onions",
+            "quantity": 25,
+            "unit": "kg",
+            "price": 270000
+          },
+          {
+            "product": "Imported whole chicken",
+            "quantity": 10,
+            "unit": "kg",
+            "price": 310000
+          },
+          {
+            "product": "Imported chicken thighs",
+            "quantity": 10,
+            "unit": "kg",
+            "price": 220000
+          },
+          {
+            "product": "Sugar",
+            "quantity": 50,
+            "unit": "kg",
+            "price": 350000
+          },
+          {
+            "product": "Flour",
+            "quantity": 50,
+            "unit": "kg",
+            "price": 360000
+          },
+          {
+            "product": "Powdered milk",
+            "quantity": 25,
+            "unit": "kg",
+            "price": 980000
+          }
+        ],
+        "caveats": [
+          "These are maximum consumer-market prices, not farmgate or producer prices.",
+          "Imported rice and imported chicken must not be used as local paddy or broiler selling prices.",
+          "The portal does not expose an observation/update timestamp for each listed price in the retrieved page; record only that values were visible on 2026-11-05, not that the price schedule was issued on that date.",
+          "The visible Conakry/Kaloum list may not represent all prefectures; regional pages must be checked individually before regional comparison."
+        ]
+      },
+      {
+        "topic": "ANASA SIM system status and market coverage",
+        "source": "ANASA SIM-Guinée official page",
+        "url": "https://anasa.gov.gn/2021/sim-guinee/",
+        "findings": [
+          "ANASA describes regular collection of prices and, for selected products, quantities at rural collection, wholesale and retail markets.",
+          "The public bulletin list retrieved on 2026-11-05 shows weekly bulletins from July through October 2024; it does not establish current 2026 producer price coverage."
+        ],
+        "caveat": "Classify each market type separately. The old public bulletins do not supply current dated farmgate observations."
+      },
+      {
+        "topic": "ANASA SIM coverage and operational limitations",
+        "source": "ANASA, SIM-Guinée relaunch workshop page",
+        "url": "https://anasa.gov.gn/2021/ateliers-de-relance-du-sim-guinee-systeme-dinformations-sur-le-marches/",
+        "findings": [
+          "The page describes a historical design covering 100 collection points: 71 agricultural markets across 33 prefectures and Conakry, plus livestock markets and other collection points.",
+          "The page also reports operational limitations at the time, including incomplete agricultural-market coverage, absent livestock-market collection and inactive fisheries and border-post modules."
+        ],
+        "caveat": "This is system-design and historical implementation evidence, not proof all 100 points are currently reporting."
+      },
+      {
+        "topic": "2025-2026 EAAI survey availability",
+        "source": "FAO 50x2030 AGRISurvey Guinea page",
+        "url": "https://www.fao.org/in-action/agrisurvey/access-to-data/guinea/en",
+        "findings": [
+          "FAO page lists the 2025 livestock thematic module as the published key finding/report, interactive tables and microdata files.",
+          "FAO reports data-quality support workshops for the 2025-2026 annual integrated survey in February 2026; the general EAAI report presentation was reported on 9 July 2026.",
+          "The public microdata catalogue entry found is specifically the livestock thematic module, not the full crop-by-prefecture EAAI dataset."
+        ],
+        "caveat": "Do not claim that a downloadable crop table exists based only on the general survey presentation or survey programme."
+      }
+    ],
+    "decision": "Keep Guinea research-only. SIMPRIX provides a new official, region-navigable consumer price-ceiling source, but the visible prices are not producer prices. The ANASA SIM portal's public weekly bulletins remain historical through October 2024 in the retrieved listing. No calculator values or formulas changed."
+  }
 }
