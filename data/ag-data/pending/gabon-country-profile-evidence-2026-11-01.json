@@ -439,5 +439,49 @@
       }
     ],
     "caveat": "These sources provide consumer-facing retail/event prices and geographic price context only. They must not be mapped into the calculator's producer/farmgate price fields or treated as province-wide producer quotations."
+  },
+  "epva_primary_table_audit_2026_11_05": {
+    "review_date": "2026-11-05",
+    "source": "INSTAT Gabon, RGA 2022-2023 EPVA, Volume 2 statistical tables, Tables 119-121",
+    "source_url": "https://instatgabon.org/uploads/folder_1/RGA/Enque%CC%82te%20de%20Production%20Ve%CC%81ge%CC%81tale%20et%20Animale%20%28EPVA%29/Rapport%20tableaux%20statistiques%20EPVA_Volume%202.pdf",
+    "source_lines": "PDF text extraction lines 6132-6195",
+    "confirmed_findings": [
+      "Table 119 gives provincial mean yields for cassava from 1.17 to 6.92 t/ha and plantain from 2.02 to 5.05 t/ha; national rows are 4.06 t/ha and 3.97 t/ha respectively.",
+      "Table 120 prints nine provincial cassava area/output rows and a national total of 4,438 ha and 18,035 tonnes.",
+      "Table 121 prints nine provincial plantain area/output rows and a national total of 1,360 ha and 5,395 tonnes."
+    ],
+    "arithmetic_audit": {
+      "cassava": {
+        "sum_of_printed_provincial_area_ha": 4287,
+        "printed_national_area_ha": 4438,
+        "difference_ha": 151,
+        "sum_of_printed_provincial_production_t": 17374,
+        "printed_national_production_t": 18035,
+        "difference_t": 661,
+        "decision": "HOLD: source's provincial rows do not sum to its national total; use neither provincial aggregate nor derived yield in calculator mapping until INSTAT clarifies."
+      },
+      "plantain": {
+        "sum_of_printed_provincial_area_ha": 1407,
+        "printed_national_area_ha": 1360,
+        "difference_ha": 47,
+        "sum_of_printed_provincial_production_t": 6107,
+        "printed_national_production_t": 5395,
+        "difference_t": 712,
+        "decision": "HOLD: source's provincial rows do not sum to its national total; use neither provincial aggregate nor derived yield in calculator mapping until INSTAT clarifies."
+      }
+    },
+    "interpretation": "This confirms the arithmetic discrepancy is present in the published primary EPVA PDF itself, not merely a transcription error in the earlier follow-up file. Table 119's independently printed provincial yield values should be retained as source-reported observations with the caveat that Tables 120-121 do not reconcile; they should not be silently recalculated from the inconsistent area/output totals.",
+    "additional_source_discovery": {
+      "rga_2023_page": "https://new.instatgabon.org/fr/recensement-general-de-l-agriculture/rga-2023",
+      "rga_2023_scope": "INSTAT's current RGA 2023 page lists eight volumes: technical report, statistical tables, basic module, community module, modern/semi-modern farms, agricultural professional organisations, gender and cartographic report.",
+      "priority": "Extract RGA 2023 Volume II and relevant module tables as a newer census source, compare definitions and coverage with EPVA 2022-2023, and do not combine the two until reconciled."
+    },
+    "next_steps": [
+      "Seek INSTAT clarification or errata for the EPVA Tables 120-121 national-versus-province totals.",
+      "Extract RGA 2023 Volume II crop area, production, yield, province and farm-system tables; compare against EPVA rather than substituting blindly.",
+      "Extract RGA 2023 livestock and input-use tables and determine whether they support the existing 17 calculator enterprise profiles.",
+      "Obtain current provincial farmgate prices and full itemized costs; existing consumer/event prices and FAO cereal balances remain unsuitable as calculator price/cost inputs."
+    ],
+    "decision": "Gabon remains research-only and inactive. The primary-source audit has isolated a confirmed publication-level data inconsistency and a newer RGA 2023 eight-volume dataset to prioritize. No calculator profile or formulas changed."
   }
 }
