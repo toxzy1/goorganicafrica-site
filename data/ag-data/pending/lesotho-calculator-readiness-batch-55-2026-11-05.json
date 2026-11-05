@@ -120,5 +120,141 @@
     "Keep Lesotho research-only and preserve the original ten active country profiles."
   ],
   "next_step": "Extract the official 2025/26 crop forecasting and cereal balance reports, then source current producer prices and input costs before any calculator mapping.",
-  "validation": "Research note only; no calculator activation, merge or deployment."
+  "validation": "Research note only; no calculator activation, merge or deployment.",
+  "follow_up_2026_11_05": {
+    "review_date": "2026-11-05",
+    "status": "research_updated_not_calculator_ready",
+    "new_evidence": [
+      {
+        "topic": "Latest 2026 maize harvest and district pattern",
+        "source": "FEWS NET Lesotho Key Message Update, September 2026-January 2027",
+        "url": "https://fews.net/southern-africa/lesotho",
+        "observations": [
+          {
+            "commodity": "maize",
+            "value": 30,
+            "unit": "percent below 2025 production",
+            "reference_year": 2026,
+            "status": "Bureau of Statistics estimate summarized by FEWS NET"
+          },
+          {
+            "commodity": "maize",
+            "value": 55,
+            "unit": "percent below five-year average",
+            "reference_year": 2026,
+            "status": "Bureau of Statistics estimate summarized by FEWS NET"
+          },
+          {
+            "indicator": "district harvest pattern",
+            "status": "below-average in Mountains, Senqu River Valley and Southern Lowlands; average elsewhere"
+          },
+          {
+            "indicator": "harvest",
+            "status": "2026 maize harvest complete countrywide"
+          },
+          {
+            "indicator": "2026/27 input subsidy",
+            "status": "government programme subsidizes seed by 70% and fertilizer by 80%; farmer-paid unit prices and quantities still not published in this source"
+          }
+        ],
+        "caveat": "The 30% and 55% comparisons apply specifically to maize, not all cereals. FEWS NET gives district/zone patterns but not the underlying numerical crop table. Do not derive district yields from qualitative categories."
+      },
+      {
+        "topic": "August 2026 crop estimate and supply outlook",
+        "source": "FAO GIEWS Lesotho Country Brief, 24 August 2026",
+        "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=LS",
+        "observations": [
+          {
+            "indicator": "maize+sorghum+wheat production",
+            "value": 42000,
+            "unit": "tonnes",
+            "reference_year": 2026,
+            "status": "provisional aggregate estimate, about half the previous five-year average; not crop-specific"
+          },
+          {
+            "indicator": "maize import requirement",
+            "value": 130000,
+            "unit": "tonnes",
+            "reference_period": "2026/27 marketing year April-March",
+            "status": "FAO estimate"
+          },
+          {
+            "indicator": "food inflation",
+            "value": "just under 2%",
+            "reference_period": "June 2026 year-on-year",
+            "status": "consumer food inflation, not farmgate price"
+          }
+        ],
+        "caveat": "The 42,000-tonne aggregate is provisional and should not be apportioned among maize, sorghum and wheat. Final crop-specific Bureau of Statistics report still needs extraction."
+      },
+      {
+        "topic": "2026 regional fuel and consumer food-price pressures",
+        "source": "FEWS NET Lesotho Food Security Outlook Update, August 2026-January 2027",
+        "url": "https://fews.net/southern-africa/lesotho/food-security-outlook-update/august-2026",
+        "observations": [
+          {
+            "indicator": "diesel 50 price change",
+            "value": 12,
+            "unit": "percent increase",
+            "period": "July 2026 versus June 2026",
+            "status": "fuel-price change, affects transport and farm operating costs"
+          },
+          {
+            "indicator": "illuminating paraffin price change",
+            "value": 14,
+            "unit": "percent increase",
+            "period": "July 2026 versus June 2026",
+            "status": "fuel-price change"
+          },
+          {
+            "indicator": "maize meal price",
+            "value": 15,
+            "unit": "percent lower year-on-year",
+            "period": "July 2026",
+            "status": "consumer staple price, not producer maize price"
+          },
+          {
+            "indicator": "Qacha's Nek staple food prices",
+            "value": 16,
+            "unit": "percent above average",
+            "period": "July 2026",
+            "status": "consumer price context, attributed partly to transport costs"
+          },
+          {
+            "indicator": "Leribe staple food prices",
+            "status": "below average; surplus-producing area context"
+          }
+        ],
+        "caveat": "Fuel and food retail prices inform context only; they do not replace farm-level diesel, transport or farmgate commodity quotes."
+      },
+      {
+        "topic": "Current publication catalogue and crop-data access",
+        "source": "Lesotho Bureau of Statistics publications catalogue",
+        "url": "https://www.bos.gov.ls/Publications.htm",
+        "observations": [
+          {
+            "document": "2025/26 Crop Forecasting Report",
+            "status": "listed on official catalogue; numerical contents not extracted in this review"
+          },
+          {
+            "document": "Availability and Utilization of Cereals 2025/26",
+            "status": "listed on official catalogue; numerical contents not extracted in this review"
+          },
+          {
+            "document": "CPI Report August 2026",
+            "status": "listed as latest CPI publication"
+          }
+        ],
+        "caveat": "A listed report is not evidence that its tables have been extracted and validated. Do not claim that crop figures are already incorporated."
+      }
+    ],
+    "decisions": [
+      "Update the 2026 maize harvest description from general provisional cereal aggregate to the later FEWS NET/BoS estimate: 30% below 2025 and 55% below the five-year average, with the specified district/zone pattern.",
+      "Keep the FAO 42,000-tonne maize+sorghum+wheat aggregate as a separate provisional estimate; do not infer crop-specific tonnes from it.",
+      "Treat the 70% seed and 80% fertilizer subsidies as programme percentages, not unit prices or guaranteed access for every farm.",
+      "Keep staple food prices and fuel-price changes separate from producer prices and itemized farm input costs."
+    ],
+    "next_step": "Download and extract the official 2025/26 Crop Forecasting Report and cereal balance, including district and ecological-zone tables; obtain current producer prices and actual subsidized input costs by crop and district.",
+    "decision": "Keep Lesotho research-only. No calculator profile or formula changes."
+  }
 }
