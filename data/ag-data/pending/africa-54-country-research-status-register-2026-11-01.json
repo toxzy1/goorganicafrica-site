@@ -420,8 +420,10 @@
       "name": "Seychelles",
       "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": "data/ag-data/pending/seychelles-country-profile-evidence-2026-11-01.json",
-      "review_status": "2024_Agriculture_Census_coverage_725_registered_farmers_CBS_2024_output_indicators_2025_egg_producer_and_retail_price_leads_2024_pig_output_and_pork_imports_WDI_2024_crop_index_recorded_detailed_crop_tables_current_farmgate_prices_and_enterprise_budgets_missing"
+      "evidence_file": "data/ag-data/pending/seychelles-calculator-readiness-batch-60-2026-11-05.json",
+      "review_status": "Batch_60_2026_11_05_2024_agriculture_census_725_registered_farmers_four_island_coverage_CBS_2024_and_2025_sector_output_NBS_2026_production_and_PPI_downloads_login_gated_2026_feed_subsidy_and_2025_egg_first_sale_price_lead_recorded_current_crop_prices_input_costs_and_island_budgets_missing",
+      "last_reviewed": "2026-11-05",
+      "administrative_geography_status": "2024_census_coverage_Mahe_Praslin_La_Digue_and_Inner_Islands_confirmed_crop_by_island_yield_crosswalk_not_validated"
     },
     {
       "code": "SL",
