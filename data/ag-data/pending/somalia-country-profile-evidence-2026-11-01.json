@@ -7,7 +7,7 @@
     "currency_name": "Somali shilling",
     "currency_notes": "USD is also widely used in commercial transactions; Somaliland uses the Somaliland shilling in its own markets. Preserve the currency and territory context of every price observation."
   },
-  "record_date": "2026-11-04",
+  "record_date": "2026-11-05",
   "status": "research_only_not_published_to_calculator",
   "calculator_readiness": "not_ready_research_only",
   "purpose": "Country evidence inventory for later crop- and livelihood-specific enterprise budgets. Not a calculator input file and not authority to activate the country.",
@@ -425,6 +425,159 @@
         "M-TACAB issue 04 has 672 records according to its newsroom description, but values were not independently inspected; keep as a data acquisition lead only.",
         "Pump-irrigation costs and fuel volatility vary by location, river level and season; obtain dated supplier and farmer quotations."
       ]
+    },
+    {
+      "id": "november_2026_national_production_seed_and_market_refresh",
+      "topic": "regional crop output, seed market pricing, 2026 retail price observations and updated market-data coverage",
+      "source_name": "Somalia National Transformation Plan 2025–2029; Ministry of Agriculture and Irrigation/TASAI Somalia Seed Market Analysis and Somalia Country Report 2025; World Bank RTFP; WFP monthly market prices via HDX",
+      "reference_date": "2023 crop production table published in NTP 2025–2029; seed prices refer to 2024 planting season; market datasets updated Aug–Oct 2026; reviewed 2026-11-05",
+      "observations": [
+        {
+          "item": "2023 regional sorghum production",
+          "value": {
+            "South": 160978,
+            "North_West": 23960,
+            "North_East": 480,
+            "Central": 21266
+          },
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "national_plan_reported",
+          "finding": "Regional totals are presented as South, Northwest, Northeast and Central. Preserve the source's regional grouping and do not map these labels to administrative regions without a crosswalk."
+        },
+        {
+          "item": "2023 regional maize production",
+          "value": {
+            "South": 120522,
+            "North_West": 4040,
+            "North_East": 0,
+            "Central": 32294
+          },
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "national_plan_reported",
+          "finding": "The national planning report gives production by broad region; zero in the table should be treated as a reported estimate, not proof that no individual farms produced maize."
+        },
+        {
+          "item": "2023 regional sesame production",
+          "value": {
+            "South": 43424,
+            "North_West": 0,
+            "North_East": 0,
+            "Central": 11807
+          },
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "national_plan_reported",
+          "finding": "Sesame production is concentrated in South and Central in the published table."
+        },
+        {
+          "item": "2023 regional cowpea production",
+          "value": {
+            "South": 22666,
+            "North_West": 0,
+            "North_East": 6610,
+            "Central": 6666
+          },
+          "unit": "tonnes",
+          "period": "2023",
+          "status": "national_plan_reported",
+          "finding": "Cowpea has a different regional pattern from maize and sorghum; regional commodity defaults must not be uniform."
+        },
+        {
+          "item": "Seed-sector survey sample",
+          "value": {
+            "farmers": 504,
+            "seed_producers": 21,
+            "agro_dealers": 26,
+            "institutions": 12
+          },
+          "unit": "survey respondents",
+          "period": "September 2025 study",
+          "status": "MoAI_validated_seed_market_analysis",
+          "finding": "Ministry seed-market study covered Southwest, Hirshabelle, Jubaland and Mogadishu; its sample is valuable for seed-system evidence but not a national farm census."
+        },
+        {
+          "item": "Average seed and grain prices",
+          "value": {
+            "maize_hybrid_seed_usd_kg": 3,
+            "maize_opv_seed_usd_kg": 1.47,
+            "maize_grain_usd_kg": 0.71,
+            "sorghum_seed_usd_kg": 1.34,
+            "sorghum_grain_usd_kg": 0.67,
+            "sesame_seed_usd_kg": 1.77,
+            "sesame_grain_usd_kg": 1.55,
+            "cowpea_seed_usd_kg": 2.25,
+            "cowpea_grain_usd_kg": 1.24
+          },
+          "unit": "USD per kg",
+          "period": "2024 planting season",
+          "status": "TASAI_seed_company_and_ministry_price_survey",
+          "finding": "Seed prices are retail agro-dealer/company-level planting-season prices; grain prices are comparison market prices. They are not seed rates, per-hectare input budgets or farmgate output prices."
+        },
+        {
+          "item": "Formal seed-sector scale",
+          "value": 18,
+          "unit": "active seed companies",
+          "period": "2025 country study",
+          "status": "TASAI_country_report",
+          "finding": "Eighteen active companies producing certified seed for major crops were reported; informal/uncertified seed sales remain material and regulatory coverage is incomplete."
+        },
+        {
+          "item": "WFP market price coverage",
+          "value": {
+            "markets": 47,
+            "commodities": 20,
+            "observations": 32335
+          },
+          "unit": "markets, commodities and observations",
+          "period": "monthly data through August 2026; imported 21 October 2026",
+          "status": "WFP_HDX_monthly_market_price_dataset",
+          "finding": "Published market prices are monthly retail observations and distinguish Somali shilling (SOS) and Somaliland shilling (SLS). The August 2026 snapshot is not a current live quote and is not farmgate."
+        },
+        {
+          "item": "World Bank RTFP market coverage",
+          "value": 45,
+          "unit": "markets",
+          "period": "monthly estimates 2007-01-01 through 2026-10-01; version 2026-10-05",
+          "status": "World_Bank_dataset_metadata",
+          "finding": "The catalogue describes 10,948 cases and 116 variables, including market geography, currency, dates, direct and modelled price estimates. Preserve confidence and interpolation flags; these are food-market price estimates, not verified producer prices."
+        }
+      ],
+      "caveats": [
+        "National Transformation Plan regional production table is for 2023 and does not provide planted/harvested area, crop-specific yield or district detail in the accessible extract.",
+        "The broad South, Northwest, Northeast and Central groupings require a documented crosswalk before populating the calculator's region selector.",
+        "TASAI seed prices are historical 2024 USD/kg observations. They are not 2026 quotations and do not replace seed-rate, delivery, variety and farmer-paid cost data.",
+        "WFP and World Bank price datasets are market-level retail/food-price estimates, not farmgate prices; SOS and SLS are not interchangeable.",
+        "Somalia's 2026 crop outcomes remain highly seasonal and spatially variable; 2025/26 drought evidence prevents using one national average yield as a safe default."
+      ]
+    },
+    {
+      "id": "2026_november_readiness_assessment",
+      "topic": "current calculator readiness and outstanding evidence requirements",
+      "source_name": "GoOrganicAfrica country evidence review",
+      "reference_date": "2026-11-05",
+      "observations": [
+        {
+          "item": "Readiness decision",
+          "status": "not_ready_research_only",
+          "finding": "Evidence is stronger for crop mix, 2023 broad-region production, 2024 seed prices and 2026 retail market monitoring. It remains insufficient for validated crop-by-district yields, current farmgate prices and complete enterprise budgets."
+        },
+        {
+          "item": "Regional production systems",
+          "status": "partially_documented",
+          "finding": "At minimum, retain irrigated Shabelle/Juba riverine maize and sesame; rainfed maize/sorghum; Bay-Bakool sorghum-livestock; coastal cowpea; and northwest rainfed maize/sorghum as separate production systems where local data permit."
+        },
+        {
+          "item": "Currency treatment",
+          "status": "partially_documented",
+          "finding": "Maintain SOS for Somalia observations, SLS for Somaliland observations, and USD only where explicitly quoted. Record territory, date and conversion source; do not merge price series."
+        }
+      ],
+      "caveats": [
+        "No calculator activation, formula change, or deployment is authorized by this evidence refresh.",
+        "The 2023 crop production table, 2024 seed prices and 2026 market observations represent different periods and transaction levels; they must not be blended into a single current price/yield assumption."
+      ]
     }
   ],
   "calculator_data_gaps": [
@@ -438,7 +591,12 @@
     "Build distinct irrigated riverine, rainfed cereal, cowpea and sesame enterprise budgets; do not apply one national yield or cost profile across agroecological zones.",
     "For livestock models, collect species-specific purchase prices, herd composition, feed/water, veterinary costs, mortality, milk yield, liveweight and export-market transaction data.",
     "Clarify the geographic and currency treatment of Somalia, Somaliland and other administered territories; do not combine SOS, Somaliland shillings and USD without explicit conversion dates and sources.",
-    "Use FAO's 15 September 2026 seasonal brief as a drought/market context update only; it states that 2026 Gu and off-season aggregate cereal estimates remain uncertain pending FSNAU release."
+    "Use FAO's 15 September 2026 seasonal brief as a drought/market context update only; it states that 2026 Gu and off-season aggregate cereal estimates remain uncertain pending FSNAU release.",
+    "Extract FSNAU crop data portal records by district, season, crop and year, including planted/harvested area where available; reconcile them with the 2023 national-plan broad-region totals.",
+    "Obtain current 2026 farmgate/producer transaction prices by crop, district, grade, unit and date; WFP/World Bank retail and modelled market estimates cannot substitute.",
+    "Obtain 2026 seed quotations and local delivery costs; retain the 2024 TASAI USD/kg values as historical benchmarks only and add seeding rates by crop/variety.",
+    "Obtain farmer-paid fertilizer, crop protection, irrigation/pump fuel, water, labour, land preparation, machinery, transport and post-harvest costs by production system.",
+    "Build tested regional enterprise budgets using separate irrigated riverine, rainfed cereal, cowpea and sesame systems, then add relevant livestock budgets."
   ],
   "readiness_decision": {
     "classification": "research_evidence_record_present",
@@ -451,7 +609,10 @@
       "No complete region-specific crop enterprise budgets or current input quotations, including pump-irrigation fuel and labour.",
       "Market datasets largely describe wholesale/retail or modelled food prices rather than verified farmgate prices.",
       "Livestock systems require separate species- and livelihood-specific budgets.",
-      "Territorial currency and market coverage need explicit handling."
+      "Territorial currency and market coverage need explicit handling.",
+      "The 2023 national-plan crop table is broad-region production only; district crop areas and yields remain to be extracted and reconciled.",
+      "TASAI seed prices are 2024 planting-season USD/kg benchmarks, not 2026 complete input-cost schedules.",
+      "August 2026 WFP prices and October 2026 World Bank estimates are market/retail data, not verified farmgate prices."
     ]
   },
   "safeguards": [
@@ -461,5 +622,37 @@
     "Do not substitute wholesale/retail market prices, imputed food-price estimates or export values for farmgate producer prices.",
     "Do not normalize suspicious SOS figures until their original quantity and currency basis is verified.",
     "Keep Somalia and Somaliland market/currency observations explicitly labelled by geography."
+  ],
+  "sources": [
+    {
+      "name": "Somalia National Transformation Plan 2025–2029",
+      "url": "https://mop.gov.so/wp-content/uploads/2025/pdf/NTP%20Report%202025-2029%20All.pdf",
+      "finding": "2023 crop production by broad region: sorghum South 160,978 t, Northwest 23,960 t, Northeast 480 t, Central 21,266 t; maize 120,522 / 4,040 / 0 / 32,294 t; sesame 43,424 / 0 / 0 / 11,807 t; cowpea 22,666 / 0 / 6,610 / 6,666 t respectively."
+    },
+    {
+      "name": "Somalia Seed Market Analysis Report, Ministry of Agriculture and Irrigation",
+      "url": "https://moa.gov.so/seed-market-analysisreport/",
+      "finding": "Study commissioned September 2025; sample of 504 farmers, 21 seed producers, 26 agro-dealers and 12 institutions across Southwest, Hirshabelle, Jubaland and Mogadishu."
+    },
+    {
+      "name": "Somalia Country Report 2025, The African Seed Access Index (TASAI)",
+      "url": "https://moa.gov.so/somalia-country-report-2025-the-african-seed-access-index/",
+      "finding": "Reports 18 active seed companies; 2024 planting-season average seed/grain prices USD/kg: hybrid maize seed 3.00, OPV maize seed 1.47, maize grain 0.71, sorghum seed 1.34, sorghum grain 0.67, sesame seed 1.77, sesame grain 1.55, cowpea seed 2.25 and cowpea grain 1.24."
+    },
+    {
+      "name": "WFP market prices via Somali Price Index / HDX",
+      "url": "https://www.somalipriceindex.com/insights/wfp",
+      "finding": "WFP monthly market prices through August 2026, 47 markets, 20 commodities and 32,335 observations since January 2017; prices labelled SOS or SLS and explicitly retail."
+    },
+    {
+      "name": "World Bank Monthly food price estimates by product and market",
+      "url": "https://microdata.worldbank.org/index.php/catalog/4504/data-dictionary/SOM_2021_RTFP_MKT",
+      "finding": "Version 2026-10-05, 45 markets, data through 1 October 2026, 10,948 cases and 116 variables; includes direct and modelled price estimates, market geography and currency."
+    },
+    {
+      "name": "FSNAU crop data portal",
+      "url": "https://crops.fsnau.org/",
+      "finding": "Crop production dataset fields include zone, region, district, year, crop, livelihood system, season and production in metric tonnes; numerical district-season extraction remains required."
+    }
   ]
 }
