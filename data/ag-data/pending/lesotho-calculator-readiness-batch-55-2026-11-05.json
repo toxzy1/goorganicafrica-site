@@ -1,0 +1,124 @@
+{
+  "title": "Lesotho calculator-readiness review — Batch 55",
+  "batch": 55,
+  "country_code": "LS",
+  "country_name": "Lesotho",
+  "review_date": "2026-11-05",
+  "status": "research_updated_not_calculator_ready",
+  "scope": "Evidence refresh only. No calculator activation, formula change, merge or deployment.",
+  "new_evidence": [
+    {
+      "topic": "Official 2025/26 crop publications",
+      "source": "Lesotho Bureau of Statistics, Agriculture and Food Security Statistics publications catalogue",
+      "observations": {
+        "available_publications": [
+          "2025/26 Crop Forecasting Report",
+          "Availability and Utilization of Cereals 2025/26",
+          "2022/23 Agricultural Production Survey - Crops",
+          "Livestock Report 2023/24",
+          "Livestock Products 2023/24"
+        ]
+      },
+      "caveat": "The official publication catalogue confirms that these reports are available, but the numeric crop tables were not extracted in this review. Do not mark the figures as integrated into calculator data until the reports are downloaded and checked.",
+      "source_url": "https://www.bos.gov.ls/Publications.htm"
+    },
+    {
+      "topic": "2026 cereal production outlook",
+      "source": "FAO GIEWS Lesotho Country Brief",
+      "reference_date": "2026-08-24",
+      "reference_period": "2026 main season",
+      "observations": {
+        "provisional_maize_sorghum_wheat_production": 42000,
+        "unit": "tonnes",
+        "status": "provisional aggregate estimate",
+        "comparison": "below average; approximately half the previous five-year average",
+        "key_district_impact": "Berea maize yields assessed at roughly half the previous year's level",
+        "harvest": "2026 main-season cereal harvest concluded in June; final production data expected in October 2026"
+      },
+      "caveat": "The 42,000-tonne figure is an aggregate for maize, sorghum and wheat, not a crop-specific yield table. It is provisional in the August brief. Obtain the final October 2026 Bureau of Statistics tables before replacing it.",
+      "source_url": "https://www.fao.org/giews/countrybrief/country.jsp?code=LSO"
+    },
+    {
+      "topic": "2026 harvest district and seasonal context",
+      "source": "FEWS NET Lesotho Key Message Update, September 2026-January 2027",
+      "observations": {
+        "maize_harvest": "complete countrywide",
+        "district_pattern": "below-average harvest in Mountains, Senqu River Valley and Southern Lowlands; average harvest elsewhere",
+        "cause": "heavy rains in April and May caused waterlogging and delayed harvesting in Senqu River Valley and Foothills",
+        "2026_27_input_support": {
+          "seed_subsidy": "70%",
+          "fertilizer_subsidy": "80%"
+        }
+      },
+      "caveat": "FEWS NET summarizes Bureau of Statistics estimates and programme conditions. Subsidy percentages do not provide the actual farmer-paid unit prices or application rates. Regional categories in this report must be mapped carefully to the ten administrative districts and four ecological zones.",
+      "source_url": "https://fews.net/southern-africa/lesotho"
+    },
+    {
+      "topic": "Agricultural production survey design and reporting geography",
+      "source": "Lesotho 2022/23 Agricultural Production Survey — Crops; FEWS NET Lesotho Data Book",
+      "observations": {
+        "administrative_districts": 10,
+        "ecological_zones": [
+          "Lowlands",
+          "Foothills",
+          "Mountain",
+          "Senqu River Valley"
+        ],
+        "survey_topics": [
+          "field ownership",
+          "ploughed, planted, weeded and harvested area",
+          "crop production and yield",
+          "inputs applied",
+          "summer and winter production costs"
+        ],
+        "survey_year_definition": "1 August to 31 July",
+        "reporting_unit": "district (Admin 1), with production system/ecological-zone breakdowns introduced from 2019"
+      },
+      "caveat": "2022/23 is not current enough to stand alone as a 2026 input-cost or price source. Preserve the August-July agricultural-year definition and keep summer and winter crops separate.",
+      "source_url": "https://www.bos.gov.ls/New%20Folder/Copy%20of%20Agriculture/2022_2023_Agricultural_Production_Survey_Crops.pdf",
+      "methodology_context_url": "https://help.fews.net/fde/v3/lesotho-country-book"
+    }
+  ],
+  "regional_lookup": {
+    "administrative_districts": 10,
+    "ecological_zones": 4,
+    "status": "existing district and ecological-zone geography documented; current district-by-crop tables still need extraction"
+  },
+  "currency": {
+    "code": "LSL",
+    "name": "Lesotho loti",
+    "note": "The loti is pegged one-to-one with the South African rand; calculator currency and price-source handling must still be explicitly tested."
+  },
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_official_2025_26_reports_available_and_FAO_provisional_42000t_aggregate_recorded_final_crop_specific_district_tables_not_extracted",
+    "dated_local_farmgate_prices_and_units": "blocked_current_crop_specific_producer_prices_not_extracted",
+    "seed_and_planting_material_costs": "partial_2026_27_subsidy_rate_known_farmer_paid_unit_prices_and_crop_rates_missing",
+    "fertilizer_and_soil_amendment_costs": "partial_80pct_subsidy_reported_actual_product_prices_and_application_rates_missing",
+    "crop_protection_costs": "blocked_current_crop_specific_costs_not_extracted",
+    "irrigation_water_and_energy_costs": "blocked_system_specific_costs_not_extracted",
+    "labour_rates_and_operations": "blocked_current_district_crop_operation_wages_not_extracted",
+    "machinery_and_land_preparation_costs": "partial_government_machinery_support_context_known_current_hire_rates_missing",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no validated district/ecological-zone enterprise budgets",
+    "currency_and_exchange_rate_method": "LSL_identified_rand_peg_and_currency_locale_tests_pending",
+    "source_provenance_and_observation_date": "partial_BoS_publication_catalogue_FAO_Aug_2026_and_FEWS_NET_Sep_2026_sources_recorded",
+    "calculator_mapping_and_test_cases": "blocked_no Lesotho profile mapping or regression tests"
+  },
+  "blockers": [
+    "Download and extract the full 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26, including crop-specific area, output, yield and district tables.",
+    "Reconcile final 2025/26 BoS figures against the provisional August 2026 FAO estimate and FEWS NET's later summary.",
+    "Extract current district-level producer/farmgate prices with date, commodity, grade and unit; do not substitute CPI or South African wholesale prices.",
+    "Extract 2026/27 farmer-paid seed and fertilizer prices after subsidy, plus crop-protection costs and application rates.",
+    "Obtain district-level labour, machinery hire, land preparation, irrigation and energy costs.",
+    "Build separate summer/winter and ecological-zone budgets, then map validated values to the 17 calculator commodities and add regression tests."
+  ],
+  "safeguards": [
+    "Do not treat the provisional 42,000-tonne aggregate as a crop-specific yield or final result.",
+    "Do not confuse the ten administrative districts with the four ecological zones.",
+    "Do not treat subsidy percentages as input prices.",
+    "Do not substitute CPI, retail or South African wholesale prices for local farm-gate prices.",
+    "Do not combine summer and winter seasons or misapply the August-July agricultural year.",
+    "Keep Lesotho research-only and preserve the original ten active country profiles."
+  ],
+  "next_step": "Extract the official 2025/26 crop forecasting and cereal balance reports, then source current producer prices and input costs before any calculator mapping.",
+  "validation": "Research note only; no calculator activation, merge or deployment."
+}
