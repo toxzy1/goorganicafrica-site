@@ -1238,7 +1238,7 @@
       "existing_research_note": "Batch 55 (2026-11-05): BoS catalogue confirms 2025/26 Crop Forecasting Report and Availability and Utilization of Cereals 2025/26; FAO Aug 2026 provisional aggregate 42,000 tonnes maize/sorghum/wheat and FEWS NET Sep 2026 district harvest pattern plus 70% seed/80% fertilizer subsidy evidence recorded. Final crop tables, current farmgate prices and enterprise budgets pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_official_2022_23_five_crop_district_area_harvested_area_production_and_derived_yield_plus_2026_national_maize_estimate_no_complete_final_2025_26_district_crop_tables",
+        "crop_area_production_yield_by_commodity_and_season": "partial_2026_BoS_maize_production_change_and_district_pattern_summarized_by_FEWS_NET; FAO_42000t_aggregate_maize_sorghum_wheat_provisional; 2025_26_BoS_report_listed_but_district_crop_area_yield_tables_not_extracted",
         "dated_local_farmgate_prices_and_units": "blocked_wfp_august_2026_data_are_retail_food_prices_and_no_verified_current_district_raw_crop_farmgate_series",
         "seed_and_planting_material_costs": "partial_2022_23_survey_national_seed_expenditure_and_2026_27_seed_subsidy_rate_reported_current_farmer_copayments_product_prices_and_eligibility_unverified",
         "fertilizer_and_soil_amendment_costs": "partial_2022_23_national_organic_and_inorganic_fertilizer_expenditure_and_2026_27_fertilizer_subsidy_reported_current_product_prices_application_rates_and_farmer_copayments_unverified",
@@ -1258,7 +1258,7 @@
         "Build regionally appropriate enterprise budgets; do not infer costs from national output totals.",
         "Map only validated values to the existing calculator schema and add test cases."
       ],
-      "next_step": "Extract BoS 2025/26 final crop and cereal balance tables, reconcile with FAO/FEWS NET, then obtain district-level producer prices and farmer-paid input/labour costs.",
+      "next_step": "Extract 2025/26 Crop Forecasting Report and cereal balance tables, then source current producer prices and farmer-paid input costs by district and ecological zone.",
       "batch_24_review": {
         "review_date": "2026-11-02",
         "country_name": "Lesotho",
@@ -1299,6 +1299,23 @@
           "No merge or production deployment was performed."
         ],
         "next_step": "Extract and reconcile the complete 2025/26 crop forecasting report by district and crop; verify actual farmer co-payments under the 2026/27 input support programme; obtain dated district farmgate prices and crop-specific input/enterprise budgets."
+      },
+      "last_reviewed": "2026-11-05",
+      "review_2026_11_05": {
+        "source_notes": "FEWS NET September 2026 update reports the 2026 maize harvest complete and summarizes BoS estimate: national maize production 30% below 2025 and 55% below five-year average; below-average in Mountains, Senqu River Valley and Southern Lowlands, average elsewhere. FAO Aug 2026 42,000t remains a provisional aggregate for maize+sorghum+wheat and 130,000t maize import requirement for 2026/27. FEWS NET Aug update records July 2026 diesel 50 +12%, paraffin +14%, maize meal -15% y/y, Qacha's Nek staple prices +16% above average; consumer/fuel context only. BoS catalogue lists 2025/26 crop forecast and cereal balance reports but tables remain unextracted.",
+        "sources": [
+          "https://fews.net/southern-africa/lesotho",
+          "https://fews.net/southern-africa/lesotho/food-security-outlook-update/august-2026",
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=LS",
+          "https://www.bos.gov.ls/Publications.htm"
+        ],
+        "decisions": [
+          "Keep 2026 maize production decline separate from the 42,000t provisional aggregate cereal estimate.",
+          "Do not treat the 70% seed and 80% fertilizer subsidy rates as unit prices or farm costs.",
+          "Do not map consumer staple or fuel price changes into farmgate revenue or per-hectare input budgets.",
+          "Keep Lesotho inactive pending extracted district/ecological-zone crop tables, producer prices and complete budgets."
+        ],
+        "next_step": "Extract 2025/26 Crop Forecasting Report and cereal balance tables, then source current producer prices and farmer-paid input costs by district and ecological zone."
       }
     },
     {
