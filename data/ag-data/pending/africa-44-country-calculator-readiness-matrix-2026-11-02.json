@@ -1488,7 +1488,7 @@
       "code": "MW",
       "name": "Malawi",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "NSO 2025 NACA report published with 29,648 smallholder households and small-area estimates; Malawi Annual Economic Report 2026 reproduces 2024/25 APES national crop totals, ADD-level maize output, horticulture and livestock; 2025/26 minimum farmgate policy prices announced Apr 2026; WFP-based Sep 2026 fertilizer retail-price lead found. Internal APES table/narrative discrepancies flagged. Current observed producer prices, region-specific yields and enterprise budgets remain missing.",
+      "existing_research_note": "NSO 2025 NACA report published with 29,648 smallholder households and small-area estimates; Malawi Annual Economic Report 2026 reproduces 2024/25 APES national crop totals, ADD-level maize output, horticulture and livestock; 2025/26 minimum farmgate policy prices announced Apr 2026; WFP-based Sep 2026 fertilizer retail-price lead found. Internal APES table/narrative discrepancies flagged. Current observed producer prices, region-specific yields and enterprise budgets remain missing. Follow-up 2026-11-05: IHS6 2024-25 microdata catalogue and World Bank access route verified; agriculture modules cover plot area, crop production, inputs/expenditures, sales/storage, labour and livestock, but reported completed seasons are 2022/23 or 2023/24 depending on interview timing. NACA 2025 report metadata confirms small-area estimates and coverage of irrigation, machinery and labour. IFPRI Sep 2026 maize report is retail-only context. APES groundnut, beans and cowpea narrative/table totals conflict and require Ministry reconciliation.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_2025_NACA_small_area_report_published_and_2024_25_APES_national_output_plus_ADD_maize_tables_extracted; detailed_NACA_area_yield_tables_and_sampling_precision_not_yet_extracted; APES_internal_inconsistencies_need_source_reconciliation",
@@ -1513,7 +1513,7 @@
         "Build region-specific crop/livestock enterprise budgets with yields, input quantities, by-products, mortality and marketing costs; verify bean/cowpea/pigeon-pea taxonomy.",
         "Implement MWK currency and unit tests, then run country and enterprise regression cases before activation."
       ],
-      "next_step": "Extract the NSO 2025 NACA crop and livestock tables by region, ADD and district; reconcile APES table discrepancies; obtain actual producer transactions and farmer input quotations, then build the first validated Malawi enterprise budgets.",
+      "next_step": "Retrieve and inspect IHS6 2024-25 agriculture microdata and codebook; extract NACA 2025 crop, irrigation, machinery and labour tables; reconcile APES groundnut/bean/cowpea narrative-table conflicts; obtain current observed farmgate prices and farmer-paid input quotations; then build and regression-test weighted regional enterprise budgets.",
       "administrative_geography_status": "3_regions_28_district_council_units_verified_region_selector_added_2025_NACA_has_small_area_district_ADD_and_regional_estimates",
       "batch_26_review": {
         "review_date": "2026-11-03",
@@ -1546,6 +1546,15 @@
           "Historical farmgate floor prices and retail market prices are not presented as current 2026 farmgate quotations.",
           "No activation, merge to main or production deployment was performed."
         ]
+      },
+      "follow_up_evidence_file": "data/ag-data/pending/malawi-follow-up-evidence-2026-11-05.json",
+      "follow_up_2026_11_05": {
+        "status": "evidence_route_improved_not_ready",
+        "microdata_route": "IHS6 2024-25 catalogue and external World Bank Microdata Library study verified; no raw data or codebook extraction yet.",
+        "reference_period_caution": "IHS6 completed rainy seasons are 2022/23 or 2023/24 and dry seasons 2023 or 2024, depending on interview timing; not a 2024/25 crop-year yield source.",
+        "new_price_evidence": "2025/26 minimum farmgate policy schedule for multiple crops; IFPRI September 2026 maize retail-price report. Neither is a verified realized 2026 producer-price series.",
+        "official_APES_conflicts": "Annual Economic Report 2026 narrative and Table 3.1 conflict on 2024/25 groundnut, bean and cowpea output. Preserve both published values pending Ministry clarification.",
+        "readiness_effect": "No criterion upgraded to pass; Malawi remains directory_only_not_active."
       }
     },
     {
