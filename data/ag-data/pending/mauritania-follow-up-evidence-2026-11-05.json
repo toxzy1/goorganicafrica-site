@@ -1,0 +1,131 @@
+{
+  "title": "Mauritania follow-up agricultural evidence",
+  "country": "Mauritania",
+  "iso_alpha2": "MR",
+  "review_date": "2026-11-05",
+  "status": "research_only_not_published_to_calculator",
+  "purpose": "Extend the existing Mauritania evidence without changing its 15-wilaya selector, existing calculator engine, or country activation status.",
+  "findings": [
+    {
+      "topic": "2024 General Livestock Census: newly confirmed national census and microdata route",
+      "source": "ANSADE, Recensement Général de l'Elevage (2024), metadata updated 2025-04-08",
+      "url": "https://archivage.ansade.mr/index.php/catalog/6",
+      "observations": [
+        "This is Mauritania's first General Livestock Census and covers the whole national territory.",
+        "The census is an exhaustive enumeration, not a sample survey, and covers camelids, cattle, sheep, goats, poultry, equines and asses.",
+        "Collection ran 2024-07-03 to 2024-09-30; the reference period is 2023-07-03 to 2024-07-02.",
+        "The metadata confirms livestock characteristics and counts, owner profiles, employment, milk production, water points, and livestock receipts and expenses.",
+        "Units differ by production system: farms for ruminant and poultry farms, households for urban/rural household keepers, and herds for internal/cross-border transhumance.",
+        "Market sellers were also observed at permanent livestock markets; the census approach combines respondent declarations with direct herd observation."
+      ],
+      "status": "high_value_official_source_confirmed; published result tables and anonymized microdata still need extraction before any animal enterprise budget is admitted"
+    },
+    {
+      "topic": "Published livestock census results volumes",
+      "source": "ANSADE, Tome 1 and Tome 2 General Livestock Census results",
+      "urls": [
+        "https://admin.ansade.mr/tome-2-rapport-principal-des-resultats-du-recensement-general-de-lelevage-rge/",
+        "https://ansade.mr/wp-content/uploads/2025/12/Tome-1-Principaux-resultats-du-Recensement-General-de-lElevage-RGE.pdf",
+        "https://ansade.mr/wp-content/uploads/2025/12/Tome-2-Rapport-general-RGE.pdf"
+      ],
+      "observations": [
+        "ANSADE has published the principal results report and key-results volume, as well as wilaya-level leaflets for Trarza, Hodh El Gharbi, Hodh Ech Chargui, Guidimakha, Gorgol, Brakna and other regions.",
+        "The accessible catalogue confirms receipts and expenses are topics in the underlying census, but no species-specific numerical table was transcribed in this review."
+      ],
+      "status": "published_outputs_identified; table extraction and species/region cross-check remain pending"
+    },
+    {
+      "topic": "2025-2026 government agricultural input support and price-control context",
+      "source": "Government of Mauritania, Prime Minister's 2025-2026 government activity and outlook statement, carried by Ministry of Energy and Petroleum",
+      "url": "https://www.energies.gov.mr/fr/node/2661",
+      "observations": [
+        "The government reports distribution of 553 tonnes of traditional cereal seeds and 1,500 ploughs to producers during the preceding year.",
+        "For vegetable production, the statement reports 60 solar pumps with accessories, 70 mechanical pump sets, 7,500 kg of ordinary vegetable seeds, 420 kg of hybrid seeds, and 800 tonnes of potato seed.",
+        "These are national programme quantities, not per-hectare application rates, retail prices, farmer copayments, or hire rates.",
+        "The government reports that the Mauritanian rice consumer price was capped at 290 old ouguiyas per kg under the 8 January 2026 agreement; this is a retail ceiling for consumers, not a paddy farmgate quotation."
+      ],
+      "status": "official_programme_supply_evidence; do not convert quantities into farmer costs without distribution, eligibility and copayment records"
+    },
+    {
+      "topic": "May 2026 revision of basic-food price ceilings",
+      "source": "Agence Mauritanienne d'Information (AMI), 15 May 2026",
+      "url": "https://www.ami.mr/archives/259763",
+      "observations": [
+        {
+          "item": "Mauritanian rice, high quality",
+          "value": 290,
+          "unit": "old ouguiya per kg",
+          "effective_date": "2026-05-15",
+          "status": "national retail price ceiling under agreement; not producer price"
+        },
+        {
+          "item": "sugar",
+          "value": 260,
+          "unit": "old ouguiya per kg",
+          "effective_date": "2026-05-15",
+          "status": "retail ceiling; not farm input or producer price"
+        },
+        {
+          "item": "wheat",
+          "value": 140,
+          "unit": "old ouguiya per kg",
+          "effective_date": "2026-05-15",
+          "status": "retail ceiling; not farm input or producer price"
+        },
+        {
+          "item": "cooking oil",
+          "value": 655,
+          "unit": "old ouguiya per litre",
+          "effective_date": "2026-05-15",
+          "status": "retail ceiling; not farm input or producer price"
+        }
+      ],
+      "status": "useful consumer-market context only; retain the source's old-ouguiya denomination and never map these values into paddy farmgate or farm input costs"
+    },
+    {
+      "topic": "2026 current crop conditions and seasonal calendar",
+      "source": "FAO GIEWS Country Brief: Mauritania, reference date 28 October 2026",
+      "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MR",
+      "observations": [
+        "2026 coarse-grain harvest is underway and expected to finish in December; irrigated rice harvest is expected in November and December.",
+        "Rainfall was uneven, with early-season dryness and replanting in some areas; localized shortfalls are expected in parts of Gorgol.",
+        "Below-average rangeland and low water levels at monitored livestock watering points in parts of Brakna, Gorgol and Hodh El Gharbi raise dry-season livestock risks.",
+        "The brief's imported rice and wheat-flour price trends are consumer-market observations, not local paddy farmgate prices."
+      ],
+      "status": "current seasonal risk context; not a yield table or enterprise budget"
+    },
+    {
+      "topic": "World Bank Real Time Food Prices catalogue version cross-check",
+      "source": "World Bank Microdata Library, Mauritania RTFP, catalogue version 2026-10-05",
+      "url": "https://microdata.worldbank.org/catalog/6170",
+      "observations": [
+        "The 2026-10-05 catalogue version is the latest version confirmed in this review; an older cached catalogue view still displays 34 markets and an April 2026 endpoint.",
+        "The current version reports 37 markets and data through 2026-10-01 in the previously recorded metadata.",
+        "The series combines direct observations with machine-learning estimates and imputes missing values using related markets/items and exchange rates.",
+        "Listed products include imported rice, sorghum, wheat and animal products; this is not a verified producer-price panel."
+      ],
+      "status": "market-price context only; download the exact version and preserve observed/imputed flags, product identity, market, date and price statistic"
+    }
+  ],
+  "calculator_decision": {
+    "status": "not_active",
+    "reason": "The new livestock census and government support evidence improve source coverage, but the actual numerical livestock tables, crop-by-wilaya yields, verified producer receipts, farmer-paid input costs, labour, machinery, irrigation/pumping costs and complete regional enterprise budgets have not yet been extracted and validated.",
+    "test_url_available": false,
+    "existing_15_wilaya_lookup": "selector only; do not describe it as an active Mauritania calculator"
+  },
+  "next_actions": [
+    "Extract species-by-wilaya livestock totals, milk output, receipts, expenses and farm typology tables from ANSADE Tome 1/Tome 2 and the regional leaflets.",
+    "Extract the anonymized RGE microdata documentation and identify variables and weighting/coverage rules before calculating unit costs or revenues.",
+    "Extract Ministry crop-by-wilaya tables for rice, maize, sorghum, millet, cowpea, vegetables and dates, preserving the three crop campaigns and production systems.",
+    "Obtain current dated producer receipts for raw paddy and other crops by wilaya, grade, contract and season; keep retail ceilings and milled-rice prices separate.",
+    "Obtain farmer-paid prices and tariffs for seed, fertilizer, crop protection, labour, machinery hire, irrigation water, pumping energy and transport.",
+    "Build and test distinct irrigated-rice, rainfed-cereal, horticulture, oasis/date and livestock enterprise budgets before mapping any values into the calculator."
+  ],
+  "safeguards": [
+    "Do not alter the original 10 active country profiles or calculator formulas.",
+    "Do not activate Mauritania from aggregate output or national programme distribution quantities.",
+    "Do not treat retail price ceilings, World Bank imputed market prices or white-rice prices as paddy farmgate receipts.",
+    "Keep old ouguiya and new ouguiya denominations explicit; do not silently convert.",
+    "Do not publish or redistribute respondent-level census microdata; use authorized access and aggregated outputs."
+  ]
+}
