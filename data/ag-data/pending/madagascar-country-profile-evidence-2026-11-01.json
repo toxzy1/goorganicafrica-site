@@ -6,7 +6,7 @@
     "currency": "MGA",
     "currency_name": "Malagasy ariary"
   },
-  "record_date": "2026-11-04",
+  "record_date": "2026-11-05",
   "status": "research_only_not_published_to_calculator",
   "purpose": "Country evidence register entry. This file records sourced agricultural production, market and policy context and identifies data gaps. It is not a farm enterprise budget, verified farm-gate price feed or calculator profile.",
   "calculator_readiness": "not_ready_research_only",
@@ -451,6 +451,153 @@
         "The ministry page does not provide sample size, region-specific breakdown, crop-cutting protocol or distribution of yields in the summary.",
         "Use only as a programme-specific reference point until the underlying evaluation and beneficiary coverage are extracted; do not generalize to all Malagasy rice farms."
       ]
+    },
+    {
+      "id": "MG-11",
+      "topic": "2025/26 rice production estimate and regional production pattern",
+      "source": "USDA Foreign Agricultural Service, Madagascar Rice: Production Down Sharply from Last Year's Record Crop",
+      "source_url": "https://apps.fas.usda.gov/PSDOnline/Circulars/2025/12/production.pdf",
+      "reference_date": "2025-12",
+      "values": [
+        {
+          "indicator": "MY 2025/26 milled rice production",
+          "value": 2700000,
+          "unit": "tonnes (milled basis)",
+          "period": "2025/26 marketing year",
+          "status": "USDA_estimate",
+          "note": "USDA estimate; not directly interchangeable with national paddy production. Report estimates a 19% decline from prior record and 12% below five-year average."
+        },
+        {
+          "indicator": "MY 2025/26 harvested rice area",
+          "value": 1800000,
+          "unit": "hectares",
+          "period": "2025/26 marketing year",
+          "status": "USDA_estimate",
+          "note": "USDA estimates area 8% below previous year and 6% below five-year average."
+        },
+        {
+          "indicator": "MY 2025/26 rough rice yield",
+          "value": 2.4,
+          "unit": "tonnes per hectare",
+          "period": "2025/26 marketing year",
+          "status": "USDA_estimate",
+          "note": "National-level USDA rough-yield estimate, not region- or farm-specific; retain as an independent cross-check rather than calculator default."
+        },
+        {
+          "indicator": "Regional shares of rice production",
+          "value": "Antananarivo 28%; Toamasina 23%; Mahajanga 22%; Fianarantsoa 12%; Antsiranana 8%; Toliary 7%",
+          "unit": "percent of national production",
+          "period": "2020/21",
+          "status": "historical_regional_distribution",
+          "note": "Map/chart in USDA report cites Madagascar Ministry of Agriculture 2020/21 production by region. Historical shares are not 2025/26 regional yields."
+        }
+      ],
+      "methodology": "USDA Foreign Agricultural Service Global Market Analysis; estimates use ministry production map and satellite/weather context.",
+      "caveats": [
+        "USDA reports milled production and rough yield; do not compare the production total directly with paddy totals without conversion factors.",
+        "Regional distribution is 2020/21 historical shares, not current region-level yield/area data.",
+        "National yield is a cross-check only; no local calculator activation from this record alone."
+      ]
+    },
+    {
+      "id": "MG-12",
+      "topic": "2026 SPM direct paddy purchases and dated producer-price observations",
+      "source": "Moov Madagascar reporting on State Procurement of Madagascar purchase operations",
+      "source_url": "https://new.moov.mg/article/121187-betafo-et-alaotra-mangoro-le-spm-achete-le-paddy-aupres-des-producteurs-a-1-500ariary-le-kilo",
+      "reference_date": "2026-09-15",
+      "values": [
+        {
+          "indicator": "SPM direct paddy purchase price",
+          "value": 1500,
+          "unit": "MGA per kg",
+          "period": "2026-09-14 onward; reported 2026-09-15",
+          "status": "dated_state_procurement_offer",
+          "note": "SPM purchase operation reported in Betafo (Vakinankaratra) and multiple communes in Alaotra-Mangoro. Up to 50 tonnes initially planned for Betafo; separate planned collections in Alaotra-Mangoro. Price is a time- and programme-specific procurement offer, not a general open-market farmgate series."
+        },
+        {
+          "indicator": "SPM planned collection volume",
+          "value": 1500,
+          "unit": "tonnes",
+          "period": "2026-09 campaign; Alaotra-Mangoro",
+          "status": "planned_volume_not_verified_completed",
+          "note": "Reported target across Tanambe, Andilamena and Ampitatsimo; do not treat as completed volume."
+        }
+      ],
+      "methodology": "Contemporary local reporting of SPM state procurement operation; secondary source, transaction terms not fully documented.",
+      "caveats": [
+        "This is a dated state-procurement offer, not a persistent national farmgate price.",
+        "Quality, moisture, deductions, delivery/collection terms and individual receipts were not published in the report.",
+        "A separate April 2026 Alaotra-Mangoro SPM operation was reported at MGA 1,700/kg; the two dated campaigns must not be merged into one price series."
+      ]
+    },
+    {
+      "id": "MG-13",
+      "topic": "2026 SPM paddy procurement price in Alaotra-Mangoro",
+      "source": "2424.mg reporting regional authority communiqué and SPM partnership",
+      "source_url": "https://www.2424.mg/commerce-le-spm-achetera-jusqua-200-tonnes-par-semaine-de-paddy-a-1-700-ariary-par-kilo-dans-lalaotra-mangoro/",
+      "reference_date": "2026-04-17",
+      "values": [
+        {
+          "indicator": "SPM paddy purchase price offered to producers",
+          "value": 1700,
+          "unit": "MGA per kg",
+          "period": "April 2026",
+          "status": "dated_state_procurement_offer_reported_from_regional_announcement",
+          "note": "Reported SPM procurement in Alaotra-Mangoro; volume initially 50 tonnes then up to 200 tonnes per week. This is a local, dated procurement offer, not a nationwide reference or ordinary farmgate market quote."
+        }
+      ],
+      "methodology": "Local news report citing a regional communiqué and SPM-region agreement.",
+      "caveats": [
+        "Offer is specific to Alaotra-Mangoro and April 2026; September 2026 reports a separate MGA 1,500/kg SPM buying campaign.",
+        "Need actual delivery receipts, quality grades, moisture and transport terms before using as calculator sale price."
+      ]
+    },
+    {
+      "id": "MG-14",
+      "topic": "2026 consumer rice prices and southern crop/livelihood outlook",
+      "source": "FEWS NET Madagascar Key Message Update September 2026-January 2027",
+      "source_url": "https://fews.net/southern-africa/madagascar",
+      "reference_date": "2026-09",
+      "values": [
+        {
+          "indicator": "Urban retail rice price range",
+          "value": "1,650-2,590",
+          "unit": "MGA per kg",
+          "period": "end of May 2026; five urban markets",
+          "status": "consumer_market_price_range",
+          "note": "FEWS NET reports these prices were about 37% below May 2025 and 17% below the five-year average for May. These are consumer/urban prices, not paddy producer prices."
+        },
+        {
+          "indicator": "Annual food inflation",
+          "value": 10.4,
+          "unit": "percent",
+          "period": "July 2026",
+          "status": "reported_inflation_rate",
+          "note": "FEWS NET reports inflation rising from 6.8% in January to 10.4% in July 2026."
+        },
+        {
+          "indicator": "Androy cassava and sweet potato production",
+          "value": "10-30 below average",
+          "unit": "percent versus five-year average",
+          "period": "2026 main/secondary harvest context",
+          "status": "qualitative_regional_outlook",
+          "note": "Key informants report production 10-30% below five-year average in Androy; not a numeric yield or national estimate."
+        },
+        {
+          "indicator": "Androy groundnut production",
+          "value": "more than 30 below average",
+          "unit": "percent versus five-year average",
+          "period": "2026",
+          "status": "qualitative_regional_outlook",
+          "note": "Key informants report more than 30% below five-year average."
+        }
+      ],
+      "methodology": "FEWS NET market monitoring and food-security analysis.",
+      "caveats": [
+        "Retail prices cannot substitute for producer prices or paddy prices.",
+        "Regional crop performance statements are qualitative and should not be converted to yields.",
+        "The FAO national rice-price decline and FEWS NET regional staple-price pressures refer to different periods, products and geography; retain source scopes separately."
+      ]
     }
   ],
   "data_quality": {
@@ -460,7 +607,8 @@
       "FAO GIEWS provides a current 2026 crop outlook and identifies regional weather risks.",
       "World Bank RTFP dataset has broad market coverage and recent metadata.",
       "World Bank AgPER documents the scarcity and limitations of historical farm-gate and wholesale price observations.",
-      "FAO GIEWS 2026-09-23 update provides current direction for paddy and maize production and percentage rice-price movements; the Ministry's 2026 paddy-price coordination initiative and PAPRIZ III beneficiary yield result are documented with explicit scope caveats."
+      "FAO GIEWS 2026-09-23 update provides current direction for paddy and maize production and percentage rice-price movements; the Ministry's 2026 paddy-price coordination initiative and PAPRIZ III beneficiary yield result are documented with explicit scope caveats.",
+      "USDA FAS December 2025 provides an independent MY2025/26 rice production, harvested-area and rough-yield estimate plus historical 2020/21 regional production shares; dated SPM paddy procurement offers were found for April and September 2026 in specific regions; FEWS NET September 2026 provides five-market urban rice price range and regional crop-risk context."
     ],
     "limitations": [
       "No validated current district-level farm-gate prices were extracted.",
@@ -470,7 +618,10 @@
       "Market price estimates include imputed observations and are not equivalent to producer prices.",
       "The Ministry's April 2026 paddy-price coordination page does not publish a numeric producer price schedule; an announced price-setting process cannot fill the farmgate-price gap.",
       "The Ministry's 5 t/ha PAPRIZ III yield is limited to supported programme producers and lacks a published sample/region breakdown in the summary; it is not a national yield assumption.",
-      "The Ministry's 2026 5-million-tonne paddy expectation and FAO's September qualitative below-five-year-average outlook use different source framing; final official 2026 production statistics and definitions must be reconciled."
+      "The Ministry's 2026 5-million-tonne paddy expectation and FAO's September qualitative below-five-year-average outlook use different source framing; final official 2026 production statistics and definitions must be reconciled.",
+      "Two dated SPM procurement prices (MGA 1,700/kg in Alaotra-Mangoro in April and MGA 1,500/kg in September operations across Betafo and Alaotra-Mangoro) are campaign-specific state buying offers reported by local media, not a continuous or nationwide farmgate price series; actual quality, moisture, delivery and transaction receipts remain unverified.",
+      "USDA FAS MY2025/26 national rice estimate is in milled tonnes with rough yield and cannot be directly equated to WTO 2023 paddy production without conversion and year alignment.",
+      "FEWS NET five-urban-market rice prices are retail, not producer prices; regional crop losses are qualitative."
     ]
   },
   "missing_before_calculator_activation": [
@@ -479,9 +630,11 @@
     "Current local quotations for seed, fertilizer, crop protection, labour, land preparation, irrigation, energy and transport.",
     "Crop-specific enterprise budgets or validated agronomic input recommendations for at least the priority commodities.",
     "Livestock production and sale-price evidence if livestock enterprises are to be supported.",
-    "Currency and unit validation against the existing calculator data schema and regression testing."
+    "Currency and unit validation against the existing calculator data schema and regression testing.",
+    "Verify SPM procurement notices and producer receipts for the April and September 2026 paddy campaigns, including grade, moisture, weight, delivery point, transport deductions and whether prices were actually paid to farmers.",
+    "Extract current region-by-crop crop-cutting/harvested-area data and reconcile USDA MY2025/26 estimates with final Malagasy official paddy statistics."
   ],
-  "activation_recommendation": "Do not activate Madagascar from this evidence record alone. It is suitable for the research register and for prioritising subsequent data extraction; it is not yet a validated calculator profile.",
+  "activation_recommendation": "Keep Madagascar inactive. New evidence adds two dated, geographically scoped SPM paddy procurement offers and recent consumer-market context, plus an independent USDA national rice estimate; it still does not provide a validated current farmgate price series across the 17 calculator enterprises, matched regional crop yields, current input costs or complete regional enterprise budgets.",
   "administrative_geography": {
     "first_level_unit": "Region",
     "verified_region_count": 23,
