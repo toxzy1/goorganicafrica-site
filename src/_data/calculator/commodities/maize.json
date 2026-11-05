@@ -427,7 +427,12 @@
       "data_quality": "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy",
       "yield_as_of": "2024",
       "price_as_of": "2026-08",
-      "cost_as_of": "2026-10"
+      "cost_as_of": "2026-10",
+      "yield_source_url": "https://data.worldbank.org/indicator/AG.YLD.MAIZ.KG?locations=BW",
+      "price_source_url": "https://www.bamb.co.bw/bamb-prices",
+      "price_secondary_source_url": "https://www.farmersplatform.co.bw/market-data",
+      "cost_source_url": "https://www.statsbots.org.bw/agriculture",
+      "cost_note": "No verified Botswana maize enterprise budget or current input-cost schedule was found in the reviewed sources. Keep the existing Africa benchmark proxy clearly disclosed; do not present it as Botswana-specific."
     },
     {
       "country_code": "GQ",
