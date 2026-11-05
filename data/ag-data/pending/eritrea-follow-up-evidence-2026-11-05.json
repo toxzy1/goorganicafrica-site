@@ -69,20 +69,52 @@
       "url": "https://knowledge-for-policy.ec.europa.eu/publication/eritrea-innovative-agro-inputs-enhance-sustainable-agricultural-practices_en",
       "finding": "IFAD describes higher fertilizer and fuel costs, reduced input use, and interventions to improve local seed production and access to inputs.",
       "qualification": "No validated unit prices, crop-specific application costs or farmgate prices extracted."
+    },
+    "un_national_report_2024": {
+      "source": "State of Eritrea, National report submitted to the UN Human Rights Council Universal Periodic Review, document A/HRC/WG.6/46/ERI/1, dated 23 February 2024",
+      "url": "https://upr-info.org/sites/default/files/country-document/2026-01/A_HRC_WG.6_46_ERI_1_E.pdf",
+      "source_scope": "Government national report covering 2019–2023; reported indicators and programme claims, not a current crop census or 2026 season survey.",
+      "findings": [
+        "Agriculture is reported as the primary livelihood for approximately 65% of the rural population.",
+        "The report states 2.1 million hectares of arable land, 500,000 hectares currently used for rain-fed cultivation (primarily cereals), about 600,000 hectares suitable for irrigation, and only 37,000 hectares currently irrigated. These are national land/water context figures, not crop-specific harvested area.",
+        "The report states that average yields on an ordinary farm increased over the preceding five-year programme period: sorghum from 8 to 16 quintals/ha, pearl millet from 6 to 12 quintals/ha, wheat from 12 to 20–25 quintals/ha, and barley from 8 to 16 quintals/ha. Assuming the standard 100-kg quintal, these convert to 800–1,600 kg/ha sorghum, 600–1,200 kg/ha pearl millet, 1,200–2,500 kg/ha wheat, and 800–1,600 kg/ha barley.",
+        "Lowland table potato programme reported 36.8 ha planted in nine Gash-Barka sub-regions, 2.7 ha in two Northern Red Sea sub-regions and 6.75 ha in two Southern Red Sea sub-regions using 926 quintals of improved seed potatoes; reported yields were 267 q/ha at Shambko, 74 q/ha at Ghindae and 170 q/ha at Afambo.",
+        "The report describes 44 micro-dams capable of irrigating 440 ha and supporting 1,920 households; this is programme infrastructure capacity, not proof that all hectares were irrigated in each season.",
+        "The report describes vaccination of 3,814,833 large and small ruminants and dogs over its reporting period, plus 414,135 commercial/backyard chicks vaccinated. These are disease-control service counts, not livestock inventory.",
+        "It estimates egg production from distributed backyard chicks using explicit assumed mortality and sex ratios. This is a modelled programme estimate, not measured national layer output."
+      ],
+      "qualifications": [
+        "The report does not specify crop-year, region or sample size for the ordinary-farm yield figures; retain as official-reported indicative yield ranges only, not calibrated regional calculator defaults.",
+        "The potato yields are programme observations in named sub-regions, not national averages; the very high Shambko result should be validated against source tables before use.",
+        "Do not use the livestock vaccination counts as herd size or the modelled egg figure as a national production statistic."
+      ]
+    },
+    "aagwa_2024_millet_forecast": {
+      "source": "AKADEMIYA2063 Africa Agriculture Watch, Crop Production Forecasts Brief Series No. 219, Eritrea–Millet, November 2024",
+      "url": "https://akademiya2063.org/publications/AAgWa%20Crop%20Production%20Forecasts/AAgWa%20Crop%20Production%20Forecasts%20Series%20No.%20219_Eritrea%20-%20Millet.pdf",
+      "method": "AfCP AI model using remotely sensed geo-biophysical data; pixel and administrative-level forecasts, not field-survey measurements.",
+      "findings": [
+        "2024 millet production forecast: 27,729 metric tonnes, 15% above the 2023 forecast.",
+        "Largest forecast-producing sub-regions: Omhajer (5,268 MT), Shemboko (2,140 MT), Mansura (1,915 MT), Teseneye (1,869 MT), all in Gash Barka, and Afabet (1,814 MT) in Semenawi Keyih Bahri.",
+        "Lowest listed forecasts include Sel'a (17 MT), Dibarwa (24 MT), Nakfa (68 MT), Karora (74 MT) and Gheleb (74 MT)."
+      ],
+      "qualification": "These are modelled forecasts, not measured harvests. The brief supplies production estimates but not harvested area or yields, so it cannot by itself produce yield-per-hectare calculator inputs."
     }
   },
   "readiness_update": {
-    "national_crop_area_and_output": "partial_official_aggregate_reports_with_internal_unit_and_scope_conflicts",
-    "crop_specific_regional_yields": "not_verified",
+    "national_crop_area_and_output": "partial_official_2024_ministry_aggregate_reports_with_scope_conflicts_plus_2024_modelled_subregional_millet_forecast",
+    "crop_specific_regional_yields": "partial_official_ordinary_farm_yield_ranges_for_sorghum_pearl_millet_wheat_barley_and_programme_potato_yields_in_named_subregions; dates_and_sampling_details_missing",
     "current_2026_crop_outlook": "material_drought_risk_reported_by_FAO_for_main_producing_regions",
     "farmgate_prices": "not_verified",
     "seed_fertilizer_crop_protection_costs": "programme_and_supply_context_only_no_unit_costs",
     "labour_machinery_irrigation_budgets": "not_verified",
     "enterprise_budgets": "not_available",
     "calculator_mapping_and_test_cases": "not_started",
-    "decision": "remain_directory_only_not_active"
+    "decision": "remain_directory_only_not_active",
+    "livestock_data": "vaccination_and_backyard_chick_programme_counts_only; no national herd inventory or measured enterprise productivity"
   },
   "next_actions": [
+    "Cross-check the 2024 ordinary-farm cereal yield ranges and named lowland potato yields against Ministry/NARI crop tables; establish crop-year, sampling basis and region coverage before mapping.",
     "Obtain the underlying Ministry of Agriculture 2024 regional crop statistics and resolve the 414,000-ha land-use classification discrepancy.",
     "Verify whether the fruit and vegetable outputs in the February 2025 Ministry reports are tonnes or thousand tonnes.",
     "Extract crop- and region-specific 2024 production and harvested area for sorghum, millet, teff, wheat, barley, maize, pulses, vegetables and supported livestock.",
