@@ -3,7 +3,7 @@
   "version": 1,
   "created_at": "2026-11-03",
   "status": "baseline_gap_register_not_calculator_data",
-  "scope": "Tracks evidence-to-calculator completion for the 43 research-only countries outside the 11 calculator-enabled profiles. The 44-country evidence register includes Botswana, which is now enabled in mixed-source operational mode but is not fully locally data-ready. This is a work queue, not a certification of data quality.",
+  "scope": "Tracks evidence-to-calculator completion for the 42 research-only countries outside the 12 calculator-enabled profiles. The 44-country evidence register includes Botswana (mixed-source operational) and Equatorial Guinea (benchmark-only operational); neither is fully locally data-ready. This is a work queue, not a certification of data quality.",
   "safeguards": [
     "Do not modify the 10 original active country profiles or calculator formulas in this workstream.",
     "Botswana is calculator-enabled in mixed-source mode; do not describe its 17 commodity profiles as fully locally validated.",
@@ -13,11 +13,12 @@
   ],
   "summary": {
     "registry_countries": 54,
-    "calculator_enabled_profiles": 11,
-    "research_only_countries": 43,
+    "calculator_enabled_profiles": 12,
+    "research_only_countries": 42,
     "research_evidence_records_including_mixed_source_Botswana": 44,
     "mixed_source_operational_profiles_not_fully_local": 1,
-    "readiness_certified": 0
+    "readiness_certified": 0,
+    "benchmark_only_operational_profiles_not_fully_local": 1
   },
   "readiness_criteria": [
     {
@@ -713,18 +714,18 @@
       "code": "ER",
       "name": "Eritrea",
       "evidence_file": "data/ag-data/pending/eritrea-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "November 2026 refresh: FAO GIEWS 30-Sep-2026 confirms 2026 Kiremti rainfall 20–40% below average in Anseba, Debub, Maekel and Gash Barka; 2026 wheat/barley/sorghum/maize/teff/pulses planted by July, harvest from November, significant shortfalls expected. GEOGLAM 1-Oct-2026 corroborates delayed/below-average rain and crop-stage impacts in central/western Eritrea. FAO ASIS archive updated through Dekad 3 Oct 2026; zonal series still to extract. These are seasonal risk indicators, not final harvest/yield data. Existing 2024 Ministry aggregates and 2025 Dighe/Gala Nefhi horticulture/Asmara wholesale-price study remain non-farmgate evidence.",
+      "existing_research_note": "Ministry 2024 national crop area and horticulture outputs; peer-reviewed 2015–2024 Dighe/Gala/Nefhi irrigation and Asmara wholesale price index; UN 2025 programme results; FAO 30-Sep-2026 drought warning (20–40% below-average Kiremti rainfall in main producing regions); Ministry 2024 area and horticulture unit/scope discrepancies identified. Crop-specific yields, farmgate prices and enterprise budgets remain missing.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_Ministry_2024_national_area_and_aggregate_horticulture_outputs_plus_Dighe_Gala_Nefhi_subzoba_series; 2026_FAO_GIEWS_and_GEOGLAM_drought_risk_added_but_final_2026_harvest_crop_specific_regional_yields_missing",
-        "dated_local_farmgate_prices_and_units": "blocked_Asmara_wholesale_price_index_and_secondary_retail_wholesale_estimates_are_not_farmgate; current_producer_prices_by_zoba_missing",
+        "crop_area_production_yield_by_commodity_and_season": "partial_official_aggregate_area_and_output_reports_conflicted_on_area_scope_and_fruit_vegetable_units; crop_specific_region_observations_pending",
+        "dated_local_farmgate_prices_and_units": "blocked_no_validated_dated_farmgate_price_rows; Asmara_wholesale_price_index_not_farmgate",
         "seed_and_planting_material_costs": "blocked_no_current_farmer_paid_seed_price_schedule; Ministry_research_variety_release_is_not_a_price",
-        "fertilizer_and_soil_amendment_costs": "blocked_no_current_product_level_fertilizer_compost_prices_or_application_costs",
+        "fertilizer_and_soil_amendment_costs": "partial_IFAD_input_access_and_high_cost_context_only; farmer_paid_unit_prices_and_rates_missing",
         "crop_protection_costs": "blocked_no_current_pesticide_prices_or_crop_application_budgets",
-        "irrigation_water_and_energy_costs": "partial_Dighe_Gala_Nefhi_irrigation_research_and_FAO_water_stress_context; current_zoba_tariffs_pumping_energy_and_crop_costs_missing",
+        "irrigation_water_and_energy_costs": "partial_irrigation_system_context_available; regional_water_fuel_energy_cost_schedules_missing",
         "labour_rates_and_operations": "blocked_no_current_zoba_crop_operation_wages_or_labour_days",
         "machinery_and_land_preparation_costs": "blocked_no_current_machine_hire_land_preparation_and_transport_cost_schedule",
-        "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_crop_specific_regional_enterprise_budgets_for_rainfed_cereals_irrigated_horticulture_or_livestock",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_crop_region_specific_budget; FAO_2026_drought_risk_requires_season_specific_assumptions",
         "currency_and_exchange_rate_method": "partial_ERN_currency_and_official_peg_context_recorded; access_and_calculator_conversion_rounding_methodology_and_tests_pending",
         "source_provenance_and_observation_date": "pass_for_Ministry_2024_report_2025_publication_Springer_2025_FAO_GIEWS_2026_09_30_GEOGLAM_2026_10_01_and_ASIS_2026_10_archive; producer_cost_data_missing",
         "calculator_mapping_and_test_cases": "blocked_no_validated_crop_level_prices_costs_or_regional_enterprise_test_cases"
@@ -737,9 +738,11 @@
         "Obtain farmer-paid seed, fertilizer, compost, crop-protection, labour, machinery, irrigation water, pumping energy, packaging and transport costs.",
         "Build separate rainfed cereal, irrigated horticulture and livestock enterprise budgets with regional production systems.",
         "Document official ERN exchange-rate treatment and calculator conversion/rounding tests.",
-        "Map six zobas and sub-zobas and add 17-commodity regression tests only after the underlying price, yield and cost data are validated."
+        "Map six zobas and sub-zobas and add 17-commodity regression tests only after the underlying price, yield and cost data are validated.",
+        "Resolve Ministry 2024 crop-area wording and fruit/vegetable output unit discrepancies; do not map ambiguous aggregates to calculator yields.",
+        "FAO GIEWS on 30 September 2026 reports Kiremti rainfall 20–40% below average in the main producing regions and significant expected production shortfalls; obtain current crop/region evidence before using 2026 yields."
       ],
-      "next_step": "After the November 2026 harvest, obtain official crop-cut/post-harvest results by zoba and commodity; in parallel extract Eritrea-specific FAO ASIS dekadal stress data and secure producer price and farmer-paid input/labour quotations. Keep wholesale prices separate.",
+      "next_step": "Extract the Ministry's underlying 2024 crop statistics by region and commodity, reconcile the reported land-area and horticulture-unit discrepancies, then obtain dated farmgate prices and farmer-paid input/labour/irrigation costs.",
       "batch_22_review": {
         "review_date": "2026-11-02",
         "country_name": "Eritrea",
@@ -785,7 +788,8 @@
           "No complete regional enterprise budgets or calculator test cases."
         ],
         "decision": "Research refresh saved; Eritrea remains inactive and is not calculator-ready."
-      }
+      },
+      "follow_up_evidence_file": "data/ag-data/pending/eritrea-follow-up-evidence-2026-11-05.json"
     },
     {
       "code": "SZ",
