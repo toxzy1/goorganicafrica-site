@@ -337,7 +337,26 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark"
+          "price_low": 7.7,
+          "price_expected": 10.4125,
+          "price_high": 13.5,
+          "price_unit": "per kg",
+          "price_source": "Botswana Agricultural Marketing Board scheduled-produce producer/market price schedule, July/August 2026, reproduced by The Farmers' Platform. Range: Tswana cowpeas Grade 2 BWP 7.70/kg to Black-eye cowpeas Grade 1 BWP 13.50/kg; intermediate observations include Tswana Grade 1 BWP 11.00/kg and Black-eye Grade 2 BWP 9.45/kg.",
+          "price_as_of": "2026-08",
+          "source": "Botswana-specific BAMB cowpea producer/market price schedule (July/August 2026); yield and production cost remain Africa benchmark estimates, not Botswana farm measurements or enterprise budgets.",
+          "as_of": "2026-08",
+          "cost_source": "Africa benchmark estimate; not a Botswana-specific farmer-paid input or enterprise budget.",
+          "cost_as_of": "2026-10",
+          "data_quality": "country_specific_price_and_yield_with_benchmark_cost",
+          "price_source_url": "https://www.farmersplatform.co.bw/market-data",
+          "price_primary_source_url": "https://www.bamb.co.bw/bamb-prices",
+          "yield_low": 0.139,
+          "yield_expected": 0.3,
+          "yield_high": 0.866,
+          "yield_unit": "tonnes",
+          "yield_source": "Botswana-specific evidence: national cowpea yield reported around 139 kg/ha by Statistics Botswana (2013); peer-reviewed Botswana field-evaluation paper reports national average around 300 kg/ha and trial genotype yields ranging 318–866 kg/ha. The high scenario is an observed trial-genotype ceiling, not a national commercial average.",
+          "yield_source_url": "https://academicjournals.org/journal/AJAR/article-full-text/41CE99A64882",
+          "yield_reference_url": "https://www.statsbots.org.bw/agriculture"
         },
         {
           "country_code": "GQ",
@@ -4439,7 +4458,12 @@
           "data_quality": "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy",
           "yield_as_of": "2024",
           "price_as_of": "2026-08",
-          "cost_as_of": "2026-10"
+          "cost_as_of": "2026-10",
+          "yield_source_url": "https://data.worldbank.org/indicator/AG.YLD.MAIZ.KG?locations=BW",
+          "price_source_url": "https://www.bamb.co.bw/bamb-prices",
+          "price_secondary_source_url": "https://www.farmersplatform.co.bw/market-data",
+          "cost_source_url": "https://www.statsbots.org.bw/agriculture",
+          "cost_note": "No verified Botswana maize enterprise budget or current input-cost schedule was found in the reviewed sources. Keep the existing Africa benchmark proxy clearly disclosed; do not present it as Botswana-specific."
         },
         {
           "country_code": "GQ",
