@@ -469,8 +469,14 @@
       "name": "Togo",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "review_status": "official_agricultural_statistics_and_market_information_portal_identified_dynamic_data_extraction_pending",
-      "calculator_status": "directory_only_not_active"
+      "review_status": "INSEED_2024_national_and_regional_yearbooks_identified_download_endpoint_403_FEWS_NET_2026_27_cereal_forecast_1_956m_t_and_Sep_2026_maize_market_price_155_FCFA_kg_DNCF_Aug_2026_reference_clearing_ploughing_pulverising_costs_added_crop_prefecture_tables_farmgate_prices_and_enterprise_budgets_pending",
+      "calculator_status": "directory_only_not_active",
+      "last_reviewed": "2026-11-05",
+      "november_2026_review": {
+        "date": "2026-11-05",
+        "outcome": "evidence_refreshed_not_ready_not_active",
+        "calculator_status": "directory_only_not_active"
+      }
     },
     {
       "code": "TN",
@@ -489,5 +495,18 @@
       "calculator_status": "directory_only_not_active"
     }
   ],
-  "updated_at": "2026-11-05"
+  "updated_at": "2026-11-05",
+  "review_sequence_progress": {
+    "review_scope": "44_additional_country_review_sequence",
+    "reviewed_in_current_sequence": 42,
+    "total_in_current_sequence": 44,
+    "remaining": 2,
+    "last_completed_country": "Togo",
+    "next_country": "Tunisia",
+    "remaining_countries": [
+      "Tunisia",
+      "Zimbabwe"
+    ],
+    "note": "Review-sequence count only; readiness-certified additional countries remain zero."
+  }
 }
