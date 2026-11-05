@@ -345,9 +345,16 @@
       "as_of": "2026-08",
       "cost_source": "Africa benchmark estimate; not a Botswana-specific farmer-paid input or enterprise budget.",
       "cost_as_of": "2026-10",
-      "data_quality": "partial_country_specific_producer_price_with_benchmark_yield_and_cost",
+      "data_quality": "country_specific_price_and_yield_with_benchmark_cost",
       "price_source_url": "https://www.farmersplatform.co.bw/market-data",
-      "price_primary_source_url": "https://www.bamb.co.bw/bamb-prices"
+      "price_primary_source_url": "https://www.bamb.co.bw/bamb-prices",
+      "yield_low": 0.139,
+      "yield_expected": 0.3,
+      "yield_high": 0.866,
+      "yield_unit": "tonnes",
+      "yield_source": "Botswana-specific evidence: national cowpea yield reported around 139 kg/ha by Statistics Botswana (2013); peer-reviewed Botswana field-evaluation paper reports national average around 300 kg/ha and trial genotype yields ranging 318–866 kg/ha. The high scenario is an observed trial-genotype ceiling, not a national commercial average.",
+      "yield_source_url": "https://academicjournals.org/journal/AJAR/article-full-text/41CE99A64882",
+      "yield_reference_url": "https://www.statsbots.org.bw/agriculture"
     },
     {
       "country_code": "GQ",
