@@ -687,7 +687,7 @@
       "name": "Equatorial Guinea",
       "evidence_file": "data/ag-data/pending/equatorial-guinea-country-profile-evidence-2026-11-01.json",
       "existing_research_note": "Follow-up 5 Nov 2026 extracted the full INEGE 2026 yearbook PDF: official crop-output table (body Table 235; contents list Table 237), separate cocoa grade/campaign series, and statutory monthly minimum-wage reference. Government reports show a draft 2026/27 minimum-price decree for cocoa/coffee/coconut and Oct 2026 input procurement negotiations (up to 10% off initial offers for quicklime/copper sulphate), but no final farmer price schedule or itemized farmer-paid costs. INEGE crop output conflicts sharply with FAOSTAT/GIEWS for staple crops; area values are thresholds, not exact harvested areas.",
-      "calculator_status": "not_active",
+      "calculator_status": "active_benchmark_only_not_locally_validated",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_INEGE_2026_official_crop_table_extracted_but_area_values_are_thresholds_and_FAOSTAT_GIEWS_output_conflicts_unresolved; no valid regional yields",
         "dated_local_farmgate_prices_and_units": "partial_2026_27_draft_minimum_price_policy_identified_but_amounts_not_published_in_report; FAOSTAT country_product_rows_not_extracted",
@@ -700,7 +700,7 @@
         "regional_enterprise_budget_and_gross_margin": "blocked_no_regional_crop_yield_farmgate_price_and_itemized_cost_bundle",
         "currency_and_exchange_rate_method": "partial_XAF_currency_confirmed; calculator rounding_and_locale tests pending",
         "source_provenance_and_observation_date": "improved_INEGE_2026_PDF_tables_and_2026_government_policy_sources_extracted; conflicting series and reference periods explicitly flagged",
-        "calculator_mapping_and_test_cases": "blocked_until_validated_regional_yield_price_cost bundles available"
+        "calculator_mapping_and_test_cases": "17_of_17_commodity_profiles_have_GQ_benchmark_fallback_rows_and_aggregate_sync; automated_site_build_and_live_browser_tests_pending; benchmark-only not local validation"
       },
       "blockers": [
         "Reconcile the INEGE 2026 crop-output table with FAOSTAT/GIEWS 2024 estimates; confirm units, source coverage, scope and whether the INEGE series is partial.",
@@ -709,9 +709,10 @@
         "Extract FAOSTAT GNQ producer-price rows by commodity, unit, year and observation flag; validate against INPAGE purchase records.",
         "Obtain the final 2026/27 cocoa, coffee and coconut minimum-price decree with grade and unit amounts; the March report only describes a draft.",
         "Obtain farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation, transport and post-harvest quotations; Oct 2026 input procurement negotiations are not farmer price lists.",
-        "Build region-specific enterprise budgets only after yields, first-sale prices and local costs are supported."
+        "Build region-specific enterprise budgets only after yields, first-sale prices and local costs are supported.",
+        "Current active calculator values are Africa-wide benchmark estimates only; all 17 profiles still need Equatorial Guinea-specific yields, prices and production costs before country-specific certification."
       ],
-      "next_step": "Extract raw FAOSTAT GNQ crop and producer-price observations with flags and units; obtain the final 2026/27 minimum-price schedule and INPAGE farmer input/purchase records; reconcile these against the INEGE 2026 table before mapping any commodity into the existing calculator."
+      "next_step": "Run project build and calculator smoke tests for all 17 GQ enterprises; then replace benchmark inputs with validated FAOSTAT, INPAGE and regional enterprise-budget observations."
     },
     {
       "code": "ER",
