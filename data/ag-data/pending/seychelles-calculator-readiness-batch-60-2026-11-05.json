@@ -1,0 +1,118 @@
+{
+  "title": "Seychelles calculator readiness evidence — Batch 60",
+  "batch": 60,
+  "review_date": "2026-11-05",
+  "country": {
+    "name": "Seychelles",
+    "iso2": "SC",
+    "iso3": "SYC",
+    "currency": "SCR (Seychelles rupee)",
+    "calculator_status": "not_active"
+  },
+  "review_status": "evidence_refreshed_not_ready",
+  "scope_note": "Evidence refresh only. Census coverage and national indicators are not a substitute for crop-by-island production tables, current farmgate prices or complete enterprise budgets. Do not activate the calculator from this file.",
+  "findings": {
+    "census": "The Agriculture Department conducted an Agriculture Census from 18 November to 13 December 2024, covering 725 registered farmers on Mahé, Praslin, La Digue and the Inner Islands. The stated purpose was to update farm-holding structure and farming activity. The public NBS download catalogue inspected did not expose the detailed agricultural census tables; NBS production and PPI download links redirect to login.",
+    "production": "CBS 2024 annual report estimated agriculture output +10% in 2024; through September, egg production +11%, broiler slaughter -40%, culled pigs -12%, cattle slaughter +19%. CBS 2025 annual report later estimates primary-sector output -4.4% in 2025, principally due to lower agricultural output. These aggregate indicators do not supply crop-by-island yields.",
+    "crop_data": "Secondary FAO-sourced display reports 2024 vegetable primary production 3,012 tonnes; verify against direct FAOSTAT data and obtain area harvested before using. World Bank crop production index is 107.88 in 2024 (2014–2016=100), a 0.3% decline from 2023; this is an index, not tonnage or yield.",
+    "livestock": "Pig production reported at 676 tonnes in 2024, down from 701 tonnes in 2023; pork imports were 908 tonnes in 2024. A 2026 government package offers eligible registered livestock farmers up to 30% reimbursement on eligible animal-feed purchases; budget net cost must use farmer invoice less verified subsidy, not assume all farms qualify.",
+    "farmgate_prices": "A 31 December 2025 report quoting Agriculture Department records large farms selling eggs at SCR3.50–3.90 each and smaller farms at SCR4.00–4.50, versus retail SCR5–7. This is a dated first-sale price lead for eggs only; current 2026 prices, grade/size, island and buyer terms remain unverified.",
+    "geography": "The 2024 census coverage explicitly includes Mahé, Praslin, La Digue and the Inner Islands. This is an island coverage frame, not a validated crop-region yield crosswalk. Do not convert island names into district-specific yield assumptions without census tables.",
+    "costs": "The Ministry identifies high production costs and imported-input dependence. Feed subsidy is a documented policy adjustment for eligible livestock farmers. Current net prices for feed, seed, fertilizer, crop protection, labour, machinery, irrigation, energy, transport and post-harvest handling remain unextracted.",
+    "data_access": "NBS lists 2026 Q1/Q2 production reports and 31-Aug-2026 production time-series workbook; latest PPI/IPI workbook created 30-Oct-2026. The download/view actions for these files redirect to a login page in this review, so source rows, series units and observations could not be audited.",
+    "currency": "SCR (Seychelles rupee); currency is known, but calculator formatting, rounding and exchange-rate regression tests remain outstanding."
+  },
+  "sources": [
+    {
+      "name": "Central Bank of Seychelles Annual Report 2024",
+      "url": "https://www.nationalassembly.sc/sites/default/files/2025-04/CBS%20AR2024.pdf",
+      "finding": "Agriculture Department census ran 18 Nov–13 Dec 2024 and covered 725 registered farmers on Mahé, Praslin, La Digue and Inner Islands. 2024 agriculture output estimated +10%; through September, eggs +11%, broiler chicken slaughter -40%, culled pigs -12%, cattle slaughter +19%. A requisite store at Grand Anse Mahé provides seeds, fertilisers and pesticides."
+    },
+    {
+      "name": "FAO World Programme for the Census of Agriculture",
+      "url": "https://www.fao.org/world-census-agriculture/wca-round/en",
+      "finding": "FAO lists Seychelles' 2024 agricultural census round. This confirms census year, not public release of detailed tables."
+    },
+    {
+      "name": "NBS production indicators",
+      "url": "https://www.nbs.gov.sc/downloads/38-economic-statistics/17-production-indicators",
+      "finding": "Official NBS production reports listed for 2020–2026; 2026 Q1 and Q2 PDF reports, latest Q2 created 31 Aug 2026. The individual View/Download links redirect to NBS login."
+    },
+    {
+      "name": "NBS data series",
+      "url": "https://www.nbs.gov.sc/downloads/51-data-series",
+      "finding": "Official NBS data series page lists Production Statistics time-series workbook created 31 Aug 2026 (559.16 KB), earlier 1 Jun 2026 and Feb 2026 versions; latest PPI/ IPI time series workbook created 30 Oct 2026. Download links redirect to login, so underlying rows and units were not extracted."
+    },
+    {
+      "name": "NBS production statistics portal",
+      "url": "https://www.nbs.gov.sc/statistics/production",
+      "finding": "NBS says production statistics cover quantities of selected goods/services, mostly monthly, published in quarterly statistical bulletins."
+    },
+    {
+      "name": "Central Bank of Seychelles Annual Report 2025",
+      "url": "https://www.cbs.sc/Downloads/publications/Annual%20Report%202025.pdf",
+      "finding": "CBS estimates primary-sector output contracted 4.4% in 2025, principally due to lower agricultural output. This is macro-level context, not crop-specific production."
+    },
+    {
+      "name": "Seychelles Ministry Agriculture Department",
+      "url": "https://mofbe.gov.sc/agriculture-department/",
+      "finding": "Ministry identifies limited arable land, high production costs, imported agricultural input dependence and climate vulnerability; key opportunities include vegetables, fruits, poultry and pork. Ministry identifies greenhouse/protected agriculture, livestock and irrigation as development priorities."
+    },
+    {
+      "name": "Seychelles livestock subsidy package",
+      "url": "https://www.seychellesnewsagency.com/public/articles/22249/news-alert",
+      "finding": "5 Aug 2026 report: SCR20m initial package; eligible registered livestock farmers can claim up to 30% of eligible animal-feed purchases with receipts; subsidy reviewed every six months. Report states feed is 60–67% of livestock production costs; 158 registered livestock farmers, only 7 of 27 broiler farmers active. These are policy/context facts, not universal cost coefficients."
+    },
+    {
+      "name": "Seychelles Nation agriculture milestones 2025",
+      "url": "https://www.nation.sc/articles/28806/seeds-of-progress-seychelles-agricultural-milestones-2025",
+      "finding": "31 Dec 2025 report quoting Agriculture Department: daily egg production 95,000 against estimated demand 110,000; large farms sold eggs SCR3.50–3.90 each, smaller farms SCR4.00–4.50, retail SCR5–7. This is a dated first-sale price lead for eggs, not a current 2026 all-island price series."
+    },
+    {
+      "name": "Seychelles livestock production report",
+      "url": "https://www.nation.sc/www/articles/26498/livestock-production-current-challenges-and-future-vision",
+      "finding": "20 Jun 2025: pig production 701 t in 2023 and 676 t in 2024; pork imports 907 t in 2023 and 908 t in 2024. Reports farmer reliance on butchers, weak margins and feed-cost pressure."
+    },
+    {
+      "name": "FAO vegetable production series (secondary display)",
+      "url": "https://agriculture.statizoid.com/stat/vegetables-primary-production/seychelles/",
+      "finding": "FAO-sourced secondary display reports 2024 vegetable primary production 3,012 t. It does not provide island-level values in this view; verify directly in FAOSTAT and match harvested area before calculating yield."
+    },
+    {
+      "name": "World Bank crop production index (secondary display)",
+      "url": "https://app.indexbox.io/indicators/symbol/crop-production-seychelles/",
+      "finding": "World Bank WDI series AG.PRD.CROP.XD_SC shown as 107.88 for 2024, 0.3% lower than 2023 (2014–2016=100). This is an aggregate index, not absolute production or yield."
+    },
+    {
+      "name": "UNFCCC Seychelles Biennial Update Report",
+      "url": "https://unfccc.int/sites/default/files/resource/Clean%20Version_Seychelles%20FBUR_19%20Feb%202024.pdf",
+      "finding": "Older 2024 report describes limited agricultural land, small islands and protected forest constraints, around 600 ha in use out of 6,000 ha designated for agricultural development (older estimates), and approximately 260 ha equipped for irrigation (older estimate). Treat these as historical structural context, not current land/cost figures."
+    }
+  ],
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_2024_census_coverage_and_national_aggregate_indicators_verified_but_crop_by_island_area_output_yield_tables_not_extracted",
+    "dated_local_farmgate_prices_and_units": "partial_egg_first_sale_price_lead_from_2025_only_current_2026_crop_prices_and_island_grade_series_missing",
+    "seed_and_planting_material_costs": "blocked_nbs_requisite_store_and_ministry_supply_context_but_no_current_itemized_farmer_net_prices",
+    "fertilizer_and_soil_amendment_costs": "blocked_no_current_product_unit_and_farmer_paid_price_schedule",
+    "crop_protection_costs": "blocked_no_current_product_rate_and_price_schedule",
+    "irrigation_water_and_energy_costs": "partial_historical_irrigation_infrastructure_context_only_current_farmer_paid_costs_missing",
+    "labour_rates_and_operations": "blocked_no_current_operation_specific_wage_rates",
+    "machinery_and_land_preparation_costs": "blocked_no_current_hire_and_land_preparation_rate_schedule",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no_crop_or_livestock_budget_by_island_with_verified_current_prices_and_costs",
+    "currency_and_exchange_rate_method": "partial_SCR_confirmed_locale_and_rounding_tests_pending",
+    "source_provenance_and_observation_date": "partial_CBS_2024_2025_NBS_2026_catalogue_Aug_2026_subsidy_and_Dec_2025_egg_price_lead_verified",
+    "calculator_mapping_and_test_cases": "blocked_no_validated_crop_by_island_yield_price_cost_bundle_or_regression_cases"
+  },
+  "blockers": [
+    "Obtain the full 2024 Agriculture Census tables from the Agriculture Department/NBS and extract crop/livestock area, production, farm size, labour and island coverage; verify whether the 725 registered-farmer frame represents all active holdings.",
+    "Obtain the 2026 Q1/Q2 NBS production reports and August 2026 time-series workbook through an authorized public download or NBS release; NBS links currently redirect to login and the series could not be audited.",
+    "Download and extract the 30-Oct-2026 NBS PPI/IPI workbook; distinguish absolute producer prices from index values and verify commodity coverage, units and reference periods.",
+    "Obtain dated 2026 farmgate/first-sale prices by crop, grade, unit, buyer and island; the 2025 egg price lead is insufficient for the full commodity set.",
+    "Obtain farmer invoices/quotations for seed, fertilizer, crop protection, feed, veterinary inputs, labour, machinery, land preparation, irrigation, water, electricity/fuel, transport and post-harvest handling.",
+    "For livestock budgets, model the August 2026 feed subsidy only for eligible registered farmers and apply it to documented eligible purchases; include slaughter/carcass support only where the farmer qualifies and the programme rules are verified.",
+    "Build separate Mahé, Praslin, La Digue and Inner Islands budgets only where data support the distinction; do not infer island yields from national totals.",
+    "Validate all enabled commodity mappings, SCR currency formatting and test cases before any calculator activation."
+  ],
+  "decision": "Seychelles remains inactive and not calculator-ready. Evidence now includes 2024 census coverage, recent national production context, a dated egg first-sale price lead and 2026 livestock subsidy rules, but complete crop-by-island tables, current input prices and regional enterprise budgets are still missing.",
+  "next_step": "Obtain the complete 2024 Agriculture Census and NBS 2026 production/PPI datasets, then validate 2026 island-level first-sale prices and farmer net input costs before constructing budgets."
+}
