@@ -394,8 +394,10 @@
       "name": "Namibia",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "Batch 32: 2026 NAB Grade 1 mahangu farm-gate floor price and standardized rain-fed cost schedule added; 14 administrative regions remain available in selector; multi-crop regional budgets and final crop outputs pending",
-      "calculator_status": "directory_only_not_active"
+      "review_status": "2026-11-05_follow_up_NSA_Q4_2025_crop_specific_quarterly_output_and_cattle_goat_sheep_auction_averages_extracted_NAB_2024_25_local_horticulture_market_purchases_and_grain_price_basis_reconciled_2026_Q2_combined_output_secondary_only_primary_table_pending_regional_budgets_and_direct_farmgate_prices_missing_not_ready",
+      "calculator_status": "directory_only_not_active",
+      "follow_up_evidence_file": "data/ag-data/pending/namibia-follow-up-evidence-2026-11-05.json",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "NE",
