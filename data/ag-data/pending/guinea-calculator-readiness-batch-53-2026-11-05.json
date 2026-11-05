@@ -1,0 +1,124 @@
+{
+  "title": "Guinea calculator-readiness review — Batch 53",
+  "batch": 53,
+  "country_code": "GN",
+  "country_name": "Guinea",
+  "review_date": "2026-11-05",
+  "status": "research_updated_not_calculator_ready",
+  "scope": "Evidence refresh only. No calculator activation, formula change, merge or deployment.",
+  "new_evidence": [
+    {
+      "topic": "2025-2026 integrated annual agricultural survey",
+      "source": "ANASA survey results presentation, reported 9 July 2026 by Guineenews; report presented by the National Agency for Agricultural and Food Statistics (ANASA)",
+      "reference_period": "2025-2026",
+      "observations": {
+        "prefectures_covered": 33,
+        "enumerators": 230,
+        "fieldwork_duration_months": 6,
+        "agricultural_households_identified": 1172574,
+        "sampled_households": 15294,
+        "individuals_in_identified_households": 8344182
+      },
+      "validation_note": "The report presentation and figures are independently repeated by Agronews Guinea. The source says the results were validated by the National Institute of Statistics. These are survey coverage and household counts, not crop output or yield observations.",
+      "source_url": "https://guineenews.org/2026/07/09/guinee-lanasa-presente-les-resultats-de-lenquete-agricole-annuelle-integree-2025-2026-un-outil-strategique-pour-le-programme-simandou-2040/",
+      "crosscheck_url": "https://agronewsgn.com/en/news/dispatch/presentation-et-publication-des-resultats-de-l-enquete-agricole-annuelle-2025-2026"
+    },
+    {
+      "topic": "Agricultural survey programme and public data access",
+      "source": "FAO 50x2030 Agricultural Integrated Survey programme — Guinea",
+      "observations": {
+        "programme_period": "2023-2028",
+        "national_partners": [
+          "ANASA",
+          "Institut National de la Statistique de Guinée"
+        ],
+        "survey_modules_documented": [
+          "annual agricultural core survey",
+          "crop yield and farm loss measurements",
+          "environment module",
+          "livestock module",
+          "non-standard measurement units preparation"
+        ]
+      },
+      "important_limit": "The public microdata catalogue page located during this review exposes the 2025 livestock thematic module, not a downloadable 2025-2026 crop-level prefecture table. Do not infer crop-level access from the programme description.",
+      "source_url": "https://www.fao.org/in-action/agrisurvey/access-to-data/guinea/en",
+      "microdata_catalogue_url": "https://microdata.insguinee.org/index.php/catalog/AGRI",
+      "livestock_module_url": "https://microdata.insguinee.org/index.php/catalog/8/data-dictionary"
+    },
+    {
+      "topic": "Official market information system",
+      "source": "ANASA — Système d'Information sur les Marchés",
+      "observations": {
+        "market_types": [
+          "rural collection markets",
+          "wholesale markets",
+          "retail markets"
+        ],
+        "data_types": [
+          "regular agricultural product prices",
+          "quantities for selected widely traded products"
+        ],
+        "publicly_visible_bulletin_period_in_review": "July-October 2024"
+      },
+      "caveat": "The official portal confirms a recurring price collection system, but the visible public bulletin list found in this review is historical (2024). Current dated farm-gate prices by prefecture, commodity, grade and unit were not verified. Wholesale/retail observations must not be relabelled as farm-gate prices.",
+      "source_url": "https://anasa.gov.gn/2021/sim-guinee/"
+    },
+    {
+      "topic": "National crop production cross-check",
+      "source": "USDA Foreign Agricultural Service production dashboard for Guinea",
+      "reference_period": "MY 2025/2026",
+      "observations": [
+        {"commodity": "groundnut", "production": 1000000, "unit": "metric tonnes", "source_class": "USDA estimate"},
+        {"commodity": "rice", "production": 2480000, "unit": "metric tonnes", "source_class": "USDA estimate"},
+        {"commodity": "maize", "production": 760000, "unit": "metric tonnes", "source_class": "USDA estimate"},
+        {"commodity": "millet", "production": 220000, "unit": "metric tonnes", "source_class": "USDA estimate"},
+        {"commodity": "sorghum", "production": 65000, "unit": "metric tonnes", "source_class": "USDA estimate"},
+        {"commodity": "coffee", "production": 75000, "unit": "60 kg bags", "source_class": "USDA estimate"}
+      ],
+      "caveat": "These are national estimates, not ANASA prefecture observations. Do not map them to regions or treat them as official measured farm yields. The USDA dashboard also displays national harvested-area and yield series for selected commodities; each crop's values and marketing-year definitions require extraction and reconciliation before use.",
+      "source_url": "https://fas-prod.azureedge.us/data/production/gu"
+    }
+  ],
+  "regional_lookup": {
+    "prefectures": 33,
+    "status": "existing national geography confirmed by 2025-2026 ANASA survey coverage",
+    "note": "Do not treat the 33-prefecture survey coverage as proof that each commodity has a prefecture-level published estimate. Prefecture-level crop table extraction remains outstanding."
+  },
+  "currency": {
+    "code": "GNF",
+    "name": "Guinean franc"
+  },
+  "criterion_status": {
+    "crop_area_production_yield_by_commodity_and_season": "partial_national_USDA_MY_2025_26_estimates_and_ANASA_survey_scope_confirmed_prefecture_crop_tables_and_crop_year_reconciliation_pending",
+    "dated_local_farmgate_prices_and_units": "blocked_ANASA_SIM_portal_confirms_regular_market_price_collection_but_publicly_visible_bulletins_found_are_2024_and_market_level_must_be_distinguished",
+    "seed_and_planting_material_costs": "blocked_current_unit_costs_not_extracted",
+    "fertilizer_and_soil_amendment_costs": "blocked_current_product_and_application_costs_not_extracted",
+    "crop_protection_costs": "blocked_crop_specific_costs_not_extracted",
+    "irrigation_water_and_energy_costs": "blocked_system_and_region_specific_costs_not_extracted",
+    "labour_rates_and_operations": "blocked_current regional wage and operation schedules not extracted",
+    "machinery_and_land_preparation_costs": "blocked_current hire and operation rates not extracted",
+    "regional_enterprise_budget_and_gross_margin": "blocked_no validated crop-by-prefecture enterprise budgets",
+    "currency_and_exchange_rate_method": "GNF identified_locale_rounding_and_exchange_rate_method_not_tested",
+    "source_provenance_and_observation_date": "partial_sources_and_dates_recorded_for_survey_scope_and_USDA_estimates; crop-level table provenance incomplete",
+    "calculator_mapping_and_test_cases": "blocked_no Guinea profile mapping or regression tests"
+  },
+  "blockers": [
+    "Obtain the complete ANASA EAAI 2025-2026 report and extract crop-by-prefecture production, harvested area, yield, crop loss and production-system tables.",
+    "Confirm the public release and access terms for the 2025-2026 crop module and any downloadable aggregate tables; do not substitute the livestock-only microdata catalogue entry.",
+    "Extract current dated ANASA SIM prices with market name, market type, commodity, grade, unit, observation date and currency; establish whether any observations are genuine producer/farm-gate prices.",
+    "Extract farmer-paid seed, fertilizer, crop-protection, irrigation, labour, machinery and land-preparation costs by crop and production system.",
+    "Build region-specific enterprise budgets and reconcile national ANASA figures with USDA marketing-year estimates and FAOSTAT series.",
+    "Map the validated data to the 17 calculator commodities and create Guinea-specific test cases before any activation."
+  ],
+  "safeguards": [
+    "Do not treat the 1,172,574 identified agricultural households as production or yield data.",
+    "Do not treat the 15,294 sampled households as a census of all holdings.",
+    "Do not treat national USDA estimates as prefecture-level ANASA statistics.",
+    "Do not treat 2024 SIM market bulletins as current 2026 prices.",
+    "Do not label wholesale or retail prices as farm-gate prices.",
+    "Do not invent costs, prices, yields or regional allocations.",
+    "Keep Guinea research-only and preserve the original ten active country profiles."
+  ],
+  "next_step": "Obtain and extract ANASA EAAI 2025-2026 crop tables and current SIM data; if these remain inaccessible, document the access limitation and move to Guinea-Bissau without certifying Guinea.",
+  "validation": "Research note only; JSON structure to be parsed after commit. No calculator activation, merge or deployment."
+}
