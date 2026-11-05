@@ -1,0 +1,157 @@
+{
+  "country": "Libya",
+  "iso2": "LY",
+  "iso3": "LBY",
+  "batch": 57,
+  "review_date": "2026-11-05",
+  "status": "research_refreshed_not_calculator_ready_not_active",
+  "purpose": "Additional evidence refresh for the 44-country calculator project. Research only; do not activate or merge this record as a calculator profile.",
+  "currency": {
+    "code": "LYD",
+    "name": "Libyan dinar",
+    "caveat": "2026 FAO brief reports about 15% year-on-year dinar weakening by May 2026. Preserve official and any parallel exchange-rate series separately; no input conversion is inferred here."
+  },
+  "production": {
+    "national_2024": {
+      "cereals_production_t": 164800,
+      "cereals_harvested_area_ha": 249794,
+      "cereals_yield_hg_ha": 659.7,
+      "barley_production_t": 65000,
+      "barley_area_ha": 126698,
+      "barley_yield_hg_ha": 513,
+      "source": "https://cesr.sesric.org/cif.php?c_code=26"
+    },
+    "crop_mix_2024_secondary_faostat_compilation": {
+      "potato_t": 369147,
+      "watermelon_t": 233010,
+      "tomato_t": 226332,
+      "dates_t": 187039,
+      "olive_t": 128893,
+      "wheat_t": 90000,
+      "barley_t": 65000,
+      "source": "https://natlas.org/country/libya/agriculture-and-food",
+      "warning": "Secondary FAOSTAT compilation; verify exact item/element/year through primary FAOSTAT before operational use."
+    },
+    "quality": "SESRIC barley yield is displayed as 513 hg/ha (0.0513 t/ha), inconsistent with 65,000 tonnes divided by 126,698 hectares. Retain source value as flagged; do not silently correct. These are national series, not district yields."
+  },
+  "outlook": {
+    "source": "FAO GIEWS Libya Country Brief",
+    "reference_date": "2026-07-16",
+    "cereal_production_2026_forecast_t": 150000,
+    "variance_from_five_year_average_pct": -20,
+    "notes": "2026 winter wheat/barley harvest expected May-July; dry October-November 2025 delayed planting; eastern rainfall remained below average, especially Al Jabal Al Akhdar. 2026/27 cereal import requirement forecast 3.3 million tonnes; not a farm production or profitability input.",
+    "url": "https://cb.apps.fao.org/country.jsp?code=LBY"
+  },
+  "production_geography": {
+    "regional_crop_context": "IFAD country strategy identifies tomatoes, peppers, onions and leafy greens as common crops; olives and pulses in Al Jabal Al Gharbi; citrus around Derna; dates in Al Jufra; barley and fodder in Fezzan. Treat as qualitative crop-location context, not measured county-level yields.",
+    "source": "https://www.ifad.org/documents/48415603/49455873/Libya%2BCSN%2B2023-2024%2B.pdf/cb0c2a95-72c0-92d0-0c65-853f9d3acf71?t=1728301616674"
+  },
+  "market_prices": {
+    "world_bank": {
+      "markets": 41,
+      "period": "2017-01-01 to 2026-10-01",
+      "version": "2026-10-05",
+      "geography": [
+        "West",
+        "East",
+        "South",
+        "Western Region (Tripoli)",
+        "Western Region",
+        "Market Average"
+      ],
+      "source": "https://microdata.worldbank.org/catalog/6168",
+      "method": "Direct WFP/FAO/selected NSO observations plus machine-learning estimates and modeled price ranges; outliers may be adjusted.",
+      "caveat": "Market/consumer price estimates, not verified farmgate producer prices. Keep observed and modeled values distinct."
+    },
+    "official_trade_network": {
+      "dataset_period": "2024-2025",
+      "publisher": "Libya Trade Network, Ministry of Economy and Trade",
+      "url": "https://opendata.gia.gov.ly/dashboard/dashboard/dataset/2024-2025",
+      "scope": "Annual high, low, average and change statistics for food, meat, poultry, eggs, vegetables, fruits, grains and animal feed.",
+      "caveat": "XLSX exists but has not been extracted here; local market price level and geographic coverage must be checked."
+    },
+    "local_price_index": {
+      "publisher": "Libya Trade Network",
+      "url": "https://lpi.ltnet.gov.ly/",
+      "bulletin_date": "2026-11-04",
+      "bulletin_number": 935,
+      "examples": [
+        {
+          "item": "local cucumber",
+          "unit": "LYD/kg",
+          "retail_price": 7
+        },
+        {
+          "item": "local first-grade tomato",
+          "unit": "LYD/kg",
+          "retail_price": 12
+        },
+        {
+          "item": "local first-grade potato",
+          "unit": "LYD/kg",
+          "retail_price": 8
+        },
+        {
+          "item": "local first-grade sweet pepper",
+          "unit": "LYD/kg",
+          "retail_price": 12
+        },
+        {
+          "item": "laying-hen feed",
+          "unit": "LYD/quintal",
+          "retail_price": 310
+        },
+        {
+          "item": "dairy-cattle feed",
+          "unit": "LYD/quintal",
+          "retail_price": 350
+        }
+      ],
+      "caveat": "Retail/local market bulletin; not a farmgate price schedule or complete input quotation. Product brands/grades and market coverage must be preserved."
+    }
+  },
+  "costs_and_enterprise_budgets": {
+    "seed": "No verified current farmer-paid seed price schedule by crop/region extracted.",
+    "fertilizer": "No verified current farmer-paid fertilizer prices and application rates extracted.",
+    "crop_protection": "No crop-specific pesticide/herbicide cost schedule extracted.",
+    "irrigation_energy": "Water scarcity, energy reliability and regional irrigation constraints require farm-level costs; no verified per-hectare water/pumping cost series extracted.",
+    "labour": "No current region-by-operation agricultural wage table validated in this batch.",
+    "machinery": "No current machinery hire/land-preparation price schedule extracted.",
+    "feed": "Local retail feed observations exist, but not a full livestock enterprise budget.",
+    "historic_study": "A 2019/20 Al-Bayda vegetable marketing-cost study covers tomato, cucumber, eggplant and dry onion; historical municipal case study only, not current production budgets. https://journal.su.edu.ly/index.php/bayan/en/article/view/2205"
+  },
+  "readiness": {
+    "crop_area_production_yield": "partial_national_2024_cereal_and_secondary_crop_output_available_regional_yield_tables_missing_barley_yield_inconsistency_open",
+    "farmgate_prices": "blocked_retail_and_market_prices_available_but_no_validated_farmgate_series",
+    "seed_costs": "blocked",
+    "fertilizer_costs": "blocked",
+    "crop_protection_costs": "blocked",
+    "irrigation_water_energy": "partial_context_only_unit_costs_missing",
+    "labour_operations": "blocked",
+    "machinery_land_preparation": "blocked",
+    "regional_enterprise_budgets": "blocked",
+    "currency_exchange": "partial_LYD_confirmed_exchange_rate_volatility_requires_explicit_method",
+    "provenance": "partial_primary_FAO_WB_and_official_LTN_sources_recorded",
+    "calculator_mapping_tests": "blocked"
+  },
+  "blockers": [
+    "Reconcile barley yield against primary FAOSTAT item/element/year; retain source units and do not silently overwrite.",
+    "Download and extract official 2024-2025 Libya Trade Network XLSX with commodity, unit, date, geography and price-level metadata.",
+    "Extract dated market series and keep retail/wholesale/farmgate separate; acquire producer prices by crop, grade and region.",
+    "Obtain current farmer-paid seed, fertilizer, crop-protection, labour, machinery, fuel, water, energy and transport costs.",
+    "Validate crop and region mapping; no district-level yield inference from qualitative crop-location notes.",
+    "Build crop-specific regional enterprise budgets and LYD calculator test cases, including exchange-rate and rounding rules."
+  ],
+  "decision": "Libya is not calculator-ready. Research refresh only; no activation, merge or deployment.",
+  "next_step": "Extract the official Trade Network 2024-2025 XLSX and primary FAOSTAT crop series, then seek current farmgate producer prices and farmer-facing input quotations before enterprise-budget construction.",
+  "sources": [
+    "https://cb.apps.fao.org/country.jsp?code=LBY",
+    "https://microdata.worldbank.org/catalog/6168",
+    "https://opendata.gia.gov.ly/dashboard/dashboard/dataset/2024-2025",
+    "https://lpi.ltnet.gov.ly/",
+    "https://cesr.sesric.org/cif.php?c_code=26",
+    "https://natlas.org/country/libya/agriculture-and-food",
+    "https://www.ifad.org/documents/48415603/49455873/Libya%2BCSN%2B2023-2024%2B.pdf/cb0c2a95-72c0-92d0-0c65-853f9d3acf71?t=1728301616674",
+    "https://journal.su.edu.ly/index.php/bayan/en/article/view/2205"
+  ]
+}
