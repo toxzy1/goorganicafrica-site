@@ -1138,7 +1138,7 @@
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_FAO_2025_household_listing_is_sampling_frame_only_FAO_GIEWS_351kt_aggregate_cereals_no_crop_specific_regional_yields;_2026_27_integrated_survey_results_pending",
-        "dated_local_farmgate_prices_and_units": "partial_2026_official_cashew_producer_reference_XOF_410_per_kg_and_separate_Bissau_intermediary_price_XOF_478_per_kg_verified;_cashew_not_in_17_supported_profiles;_farmgate_prices_for_supported_profiles_still_missing;_RTFP_is_market_estimate_not_farmgate",
+        "dated_local_farmgate_prices_and_units": "partial_2026_cashew_floor_reference_XOF410_per_kg_and_IMF_2025_national_producer_price_estimate_XOF500_per_kg_confirmed_but_cashew_outside_17_profiles; WFP_weekly_series_not_extracted; prices_for_supported_enterprises_missing",
         "seed_and_planting_material_costs": "not_yet_audited",
         "fertilizer_and_soil_amendment_costs": "not_yet_audited",
         "crop_protection_costs": "not_yet_audited",
@@ -1161,9 +1161,10 @@
         "Add XOF currency, region, commodity mapping and gross-margin regression tests after validated enterprise budgets exist.",
         "The official XOF 410/kg 2026 cashew producer reference and XOF 478/kg Bissau intermediary price do not validate any of the existing 17 calculator profiles because cashew is not currently supported; do not relabel cashew as beans.",
         "Reconcile the later reported XOF 425/kg cashew buying price with the official XOF 410/kg reference by observation date, market, quality and transaction stage.",
-        "Incorporate rice post-harvest losses (reported up to 30%) and logistics share (about 42% of retail price) only after obtaining local, region-specific cost and loss parameters; do not apply national value-chain averages as farm budgets."
+        "Incorporate rice post-harvest losses (reported up to 30%) and logistics share (about 42% of retail price) only after obtaining local, region-specific cost and loss parameters; do not apply national value-chain averages as farm budgets.",
+        "New 2026 cashew floor price and 2025 producer price evidence concerns cashew, which is not among the existing 17 calculator enterprises; do not use it as a proxy for other crops."
       ],
-      "next_step": "Extract WFP weekly farmgate cashew price series and official DGPA/INE crop tables; separate observed prices from World Bank modelled estimates.",
+      "next_step": "Extract WFP's dated weekly cashew farmgate series by market/region and quality, obtain official region-by-crop harvested-area and yield tables, and assemble farmer-paid input/labour/irrigation/machinery costs.",
       "batch_07_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Guinea-Bissau government profile and UK Government toponymic factfile confirm eight first-order regions and a separate Autonomous Sector of Bissau. The lookup includes only the eight regions; the autonomous sector is deliberately not mixed into the region array.",
@@ -1210,6 +1211,24 @@
           "Collect regional costs for seed, fertilizer, crop protection, labour, land preparation, machinery, irrigation, energy, storage and transport.",
           "Build and test regional enterprise budgets; keep cashew out of the current 17-profile calculator mapping."
         ]
+      },
+      "last_reviewed": "2026-11-05",
+      "review_2026_11_05": {
+        "source_notes": "CICC 2026 campaign notice confirms Guinea-Bissau raw cashew nut farmgate floor/reference price of XOF410/kg. IMF 2026 review estimates 2025 cashew producer prices around XOF500/kg, exports 211,400t (up from 167,500t in 2024), and export price around USD1,230/t. African Cashew Alliance/N'Kalô Week 13-14 bulletin records 410 XOF/kg pre-season reference and a 270,000t early forecast before campaign start. WFP confirms weekly farmgate cashew monitoring during campaign; World Bank RTFP covers 45 markets through 2026-10 with direct observations plus ML estimates.",
+        "sources": [
+          "https://ciccashew.org/jnec-ci-2026-le-cicc-trace-la-voie-pour-transformer-la-volatilite-des-prix-en-levier-de-croissance-durable-2/",
+          "https://www.elibrary.imf.org/view/journals/002/2026/083/article-A001-en.xml",
+          "https://africancashewalliance.com/sites/default/files/splits/africashewsplits_week_13-14_market_report_2026_aca.pdf",
+          "https://dataviz.vam.wfp.org/GuineaBissau/economic/how-it-works",
+          "https://microdata.worldbank.org/catalog/4493"
+        ],
+        "decisions": [
+          "Keep 410 XOF/kg as the announced 2026 cashew farmgate floor/reference price, not a realized price for all farmers.",
+          "Keep IMF's 2025 average producer price of XOF500/kg distinct from the 2026 floor price and from export price.",
+          "Cashew is outside the current 17 calculator enterprises; do not map it into another crop profile.",
+          "Keep Guinea-Bissau research-only until regional crop yields and complete costed budgets for supported calculator commodities are available."
+        ],
+        "next_step": "Extract WFP's dated weekly cashew farmgate series by market/region and quality, obtain official region-by-crop harvested-area and yield tables, and assemble farmer-paid input/labour/irrigation/machinery costs."
       }
     },
     {
