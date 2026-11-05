@@ -483,8 +483,9 @@
       "name": "Tunisia",
       "classification": "research_evidence_record_present",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "official_2026_2027_cereal_producer_price_schedule_and_recent_cereal_estimates_added_crop_budget_evidence_pending",
-      "calculator_status": "directory_only_not_active"
+      "review_status": "2026_11_05_reviewed_FAO_2026_cereal_estimate_JORT_producer_prices_Office_des_Cereales_2025_governorate_collection_ONAGRI_input_XLSX_ONH_olive_price_XLS_and_INS_wage_series; underlying_input_prices_non_cereal_farmgate_prices_harvested_area_and_enterprise_budgets_pending",
+      "calculator_status": "directory_only_not_active",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "ZW",
@@ -498,13 +499,12 @@
   "updated_at": "2026-11-05",
   "review_sequence_progress": {
     "review_scope": "44_additional_country_review_sequence",
-    "reviewed_in_current_sequence": 42,
+    "reviewed_in_current_sequence": 43,
     "total_in_current_sequence": 44,
-    "remaining": 2,
-    "last_completed_country": "Togo",
-    "next_country": "Tunisia",
+    "remaining": 1,
+    "last_completed_country": "Tunisia",
+    "next_country": "Zimbabwe",
     "remaining_countries": [
-      "Tunisia",
       "Zimbabwe"
     ],
     "note": "Review-sequence count only; readiness-certified additional countries remain zero."
