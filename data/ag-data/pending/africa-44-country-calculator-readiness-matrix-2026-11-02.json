@@ -960,9 +960,9 @@
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial_WTO_ministry_national_2019_2024_area_output_and_2024_25_area_plus_2025_output_estimates_available_region_crop_yields_and_2026_final_harvest_missing",
-        "dated_local_farmgate_prices_and_units": "partial_groundnut_2025_26_official_producer_floor_price_only_other_crop_province_grade_price_series_missing",
+        "dated_local_farmgate_prices_and_units": "partial_2025_26_groundnut_floor_price_GMD38000_per_tonne_confirmed_for_that_season_only; not_current_2026_27_and_groundnut_outside_17_calculator_enterprises; farmgate_prices_for_supported_commodities_missing",
         "seed_and_planting_material_costs": "partial_2026_seed_distribution_quantities_reported_current_farmer_paid_seed_prices_missing",
-        "fertilizer_and_soil_amendment_costs": "partial_2026_official_GMD1100_per_bag_subsidy; North_Bank_Aug_2026_NPK_15_15_15_shortage_reported_near_GMD2000_per_50kg; local_market_not_national_tariff; confirm_product_and_season",
+        "fertilizer_and_soil_amendment_costs": "partial_2026_subsidized_price_GMD1100_per_50kg_bag_reported; farmer_access_transport_and_non_subsidized_prices_regional_variation_pending; free_organic_fertilizer_distribution_quantity_reported_but_farm_allocation_unknown",
         "crop_protection_costs": "not_yet_audited",
         "irrigation_water_and_energy_costs": "not_yet_audited",
         "labour_rates_and_operations": "not_yet_audited",
@@ -981,9 +981,10 @@
         "Build validated regional enterprise budgets and regression tests before calculator mapping.",
         "Obtain the official 2026/27 groundnut producer price when announced; do not roll forward the 2025/26 GMD 38,000/t price.",
         "Resolve fertilizer access and actual farmer-paid prices by region and product: official subsidy GMD 1,100/bag coexists with a reported North Bank NPK shortage price near GMD 2,000/50kg.",
-        "Obtain region-level crop-cutting yields and complete farmer-paid enterprise budgets; government ploughing service tariff alone is insufficient."
+        "Obtain region-level crop-cutting yields and complete farmer-paid enterprise budgets; government ploughing service tariff alone is insufficient.",
+        "2024/25 WTO report contains a 3-tonne discrepancy between narrative national output (180,364t) and output table (180,361t); resolve before using the total."
       ],
-      "next_step": "Obtain completed 2025 NASC/2026 survey region-level crop-cutting yields, reconcile cereal totals, capture the 2026/27 groundnut floor price when announced, and collect region-specific farmer-paid input, labour and enterprise budgets.",
+      "next_step": "Obtain final E-NASS 2025/NASC crop-cutting outputs by LGA and production system, inspect the World Bank 28-market RTFP CSV without treating it as farmgate, and collect current regional farmgate prices and full farmer-paid budgets.",
       "batch_09_review": {
         "review_date": "2026-11-02",
         "source_notes": "The Gambia has five administrative regions plus separate Banjul City Council and Kanifing Municipal Council. The regional lookup contains only West Coast, Lower River, North Bank, Central River and Upper River. Banjul and Kanifing are separate city/municipal local-government areas and are not misrepresented as regions. Some sources use older names such as Western Region or MacCarthy Island; current regional naming is used here.",
@@ -1007,6 +1008,27 @@
           "Do not carry the 2025/26 groundnut floor price into the 2026/27 season without a new official announcement.",
           "Keep Gambia research-only until region-specific crop-cutting yields, producer prices and complete costs are available."
         ]
+      },
+      "last_reviewed": "2026-11-05",
+      "review_2026_11_05": {
+        "source_notes": "Follow-up cross-check adds FAO GIEWS 22-Sep-2026: 2025 aggregate cereal production about 135,000t, 2026 season conditions and fertilizer support; 2025/26 groundnut producer floor price GMD38,000/t confirmed from Ministry announcement and reported NFSPMC purchases; 2026 subsidized fertilizer price GMD1,100/50kg, free organic fertilizer and seed distribution quantities reported. WTO 2025 Trade Policy Review crop-area/output ratios remain screening-only because cultivated area is not confirmed harvested area; 2024/25 national total contains a 3-tonne internal discrepancy. World Bank RTFP dataset covers 28 markets through 2026-10 but its estimates are market-price context, not direct farmgate prices.",
+        "sources": [
+          "https://www.fao.org/giews/countrybrief/country.jsp?code=GMB",
+          "https://thepoint.gm/africa/gambia/headlines/gambia-senegal-maintain-last-year-groundnut-prices",
+          "https://thepoint.gm/africa/gambia/headlines/govt-maintains-fertiliser-price-at-d1100-subsidizes-d1-6b-for-2026-farming-season",
+          "https://www.wto.org/english/news_e/news_docs/G482_e.pdf",
+          "https://microdata.worldbank.org/catalog/4492/",
+          "https://help.fews.net/fde/v3/gambia-country-book",
+          "https://www.fao.org/in-action/agrisurvey/access-to-data/gambia/en"
+        ],
+        "decisions": [
+          "Keep the GMD38,000/t groundnut price restricted to the 2025/26 season; it is not a current 2026/27 price and groundnut is outside the current 17 enterprise profiles.",
+          "Record GMD1,100 per 50kg fertilizer as a 2026 subsidized programme price only; a reported maize-seed quantity has an implausible unit and is excluded.",
+          "Do not use cultivated-area production ratios as validated crop yields; obtain E-NASS/NASC crop-cutting and harvested-area tables.",
+          "Do not substitute World Bank estimated market/retail prices for producer/farmgate prices.",
+          "No calculator profile or formula changes."
+        ],
+        "next_step": "Obtain final E-NASS 2025/NASC crop-cutting outputs by LGA and production system, inspect 28-market RTFP CSV, and collect current regional farmgate prices and full farmer-paid budgets."
       }
     },
     {
