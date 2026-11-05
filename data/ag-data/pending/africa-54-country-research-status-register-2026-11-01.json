@@ -275,8 +275,8 @@
       "code": "GN",
       "name": "Guinea",
       "classification": "research_evidence_record_present",
-      "evidence_file": "data/ag-data/pending/west-africa-country-profile-evidence.json",
-      "review_status": "2026_11_04_ANASA_EAAI_2025_26_results_release_verified_33_prefectures_15294_sampled_households_but_regional_tables_not_extracted_USDA_FAS_national_crosschecks_only_ANASA_SIM_public_page_exposes_2024_bulletins_current_farmgate_prices_and_enterprise_budgets_pending",
+      "evidence_file": "data/ag-data/pending/guinea-calculator-readiness-batch-53-2026-11-05.json",
+      "review_status": "Batch_53_2026_11_05_ANASA_EAAI_2025_26_scope_33_prefectures_15294_sampled_households_confirmed_FAO_50x2030_microdata_and_ANASA_SIM_routes_checked_USDA_MY_2025_26_national_crosschecks_added_prefecture_crop_tables_current_farmgate_prices_and_enterprise_costs_pending",
       "calculator_status": "directory_only_not_active",
       "last_reviewed": "2026-11-04"
     },
@@ -284,8 +284,8 @@
       "code": "GW",
       "name": "Guinea-Bissau",
       "classification": "research_evidence_record_present",
-      "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "review_status": "2026_11_04_FAO_2025_rural_household_listing_metadata_verified_eight_region_sampling_frame_not_crop_survey_FAO_2025_cereal_estimate_351kt_World_Bank_RTFP_45_market_estimates_to_2026_10_with_ML_imputation_not_farmgate_crop_tables_and_enterprise_costs_pending",
+      "evidence_file": "data/ag-data/pending/guinea-bissau-calculator-readiness-batch-54-2026-11-05.json",
+      "review_status": "Batch_54_2026_11_05_FAO_2025_agricultural_household_listing_122000_households_87pct_cashew_and_90pct_rainfed_livestock_households_recorded_FAO_2025_351kt_cereal_estimate_WFP_weekly_farmgate_cashew_monitoring_and_World_Bank_45_market_RTFP_to_2026_10_reviewed_crop_specific_regional_tables_and_full_input_budgets_pending",
       "calculator_status": "directory_only_not_active",
       "last_reviewed": "2026-11-04"
     },
@@ -294,8 +294,8 @@
       "name": "Lesotho",
       "classification": "research_evidence_record_present",
       "calculator_status": "directory_only_not_active",
-      "evidence_file": "data/ag-data/pending/lesotho-country-profile-evidence-2026-11-01.json",
-      "review_status": "FAO_Aug_2026_provisional_cereal_balance_and_import_requirements_BoS_2022_23_crop_area_output_yield_and_input_expenditure_Livestock_2022_23_inventory_LVAC_2025_crop_assessment_IFAD_wool_mohair_value_chain_recorded_latest_2025_26_final_crop_tables_current_farmgate_prices_and_crop_enterprise_budgets_pending"
+      "evidence_file": "data/ag-data/pending/lesotho-calculator-readiness-batch-55-2026-11-05.json",
+      "review_status": "Batch_55_2026_11_05_BoS_2025_26_crop_forecast_and_cereal_balance_publications_confirmed_FAO_Aug_2026_42000t_provisional_cereal_aggregate_FEWS_NET_Sep_2026_district_pattern_and_70pct_seed_80pct_fertilizer_subsidies_added_final_crop_tables_current_farmgate_prices_and_enterprise_budgets_pending"
     },
     {
       "code": "LR",
@@ -477,5 +477,6 @@
       "review_status": "official_2024_25_post_harvest_survey_and_2026_market_price_evidence_added_area_yield_and_farm_budget_reconciliation_pending",
       "calculator_status": "directory_only_not_active"
     }
-  ]
+  ],
+  "updated_at": "2026-11-05"
 }
