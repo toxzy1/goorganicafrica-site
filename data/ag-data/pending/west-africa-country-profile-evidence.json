@@ -1135,7 +1135,7 @@
     {
       "country_code": "TG",
       "country_name": "Togo",
-      "evidence_status": "official_DS​​ID_agricultural_statistics_and_market_price_portal_identified_with_2026_FAO_FEWS_NET_and_DNCF_reference_cost_evidence; crop_level_and_farmgate_validation_pending",
+      "evidence_status": "official_DSID_and_INSEED_crop_statistics_and_price_portals_identified_2024_national_and_regional_yearbooks_listed_2026_27_FEWS_NET_cereal_forecast_and_maize_market_price_added_DNCF_August_2026_reference_costs_added_crop_prefecture_tables_and_farmgate_enterprise_costs_pending",
       "survey": {
         "title": "Système d'information agricole du Togo — Statagritogo / DSID",
         "publisher": "Direction des Statistiques Agricoles, de l'Informatique et de la Documentation (DSID), Ministère de l'Agriculture",
@@ -1392,6 +1392,60 @@
           "Do not treat DNCF public procurement reference rates as actual farmer transaction prices without local verification.",
           "Do not activate Togo in the calculator until crop data, current farmgate prices, input costs, regional enterprise budgets and test cases are validated."
         ]
+      },
+      "november_2026_refresh": {
+        "review_date": "2026-11-05",
+        "outcome": "evidence_refreshed_not_ready_not_active",
+        "new_evidence": [
+          "INSEED official portal lists the National Statistical Yearbook 2024 and 2024 regional statistical yearbooks for Maritime, Centrale, Kara and Savanes; download access for the national yearbook returned 403 in this review, so tables were not transcribed.",
+          "FEWS NET September 2026 reports 2026/27 cereal production forecast 1,955,893 tonnes, 4.3% above 2025/26 and 25.2% above the five-year average; this is a forecast, not final harvest output.",
+          "FEWS NET September 2026 reports average maize market price 155 FCFA/kg, 54% below September 2025 and 44% below the five-year average; low producer prices constrain farm income. Treat as market price, not verified farmgate.",
+          "DNCF August 2026 official reference directory (v2026.08.26 rev.149, updated 20-Oct-2026) lists land clearing/stumping 350,000 FCFA/ha, ploughing 35,000 FCFA/ha, pulverising 20,000 FCFA/ha; these are procurement reference values, not farmer transaction quotes.",
+          "DNCF August 2026 agricultural equipment/irrigation category includes 56 items; official page lists tractor, tillage, planter, harvester and irrigation equipment benchmarks. Irrigation kit and machinery costs require local scope/availability verification.",
+          "FAO GIEWS August 2026 reports 2025 cereal output nearly 1.7m tonnes, about 15% above five-year average; 2026 southern/central bimodal and northern unimodal season conditions differ, with early dryness in parts of Kara/Savanes and reported 10–20% labour-cost increase in Savanes."
+        ],
+        "production": {
+          "aggregate_cereal_2025_tonnes_approx": 1700000,
+          "2025_vs_five_year_average_percent": 15,
+          "2026_27_cereal_forecast_tonnes": 1955893,
+          "2026_27_forecast_vs_2025_26_percent": 4.3,
+          "2026_27_forecast_vs_five_year_average_percent": 25.2,
+          "forecast_source": "FEWS NET September 2026",
+          "caution": "The 2025 FAO figure is a national aggregate; the 2026/27 FEWS NET figure is a forecast. Neither is crop-specific regional yield."
+        },
+        "market_observations": {
+          "maize_september_2026_fcfa_per_kg": 155,
+          "year_on_year_change_percent": -54,
+          "five_year_average_change_percent": -44,
+          "source": "FEWS NET September 2026",
+          "transaction_level": "market price; farmgate status not verified"
+        },
+        "cost_reference_2026": {
+          "source": "DNCF official price directory, August 2026 edition v2026.08.26 revision 149, updated 2026-10-20",
+          "clearing_stumping_fcfa_per_ha": 350000,
+          "ploughing_fcfa_per_ha": 35000,
+          "pulverising_fcfa_per_ha": 20000,
+          "use_limit": "Public procurement/financial-control reference rates only; verify farmer-paid/local contractor rates, scope, tax and availability before calculator use."
+        },
+        "source_urls": [
+          "https://inseed.tg/annuaires/",
+          "https://help.fews.net/fde/v3/togo-country-book",
+          "https://fews.net/west-africa/togo/key-message-update/september-2026",
+          "https://cb.apps.fao.org/country.jsp?code=TGO",
+          "https://dncf-togo.org/mercuriale?category=travaux-et-materiels-agricoles-et-d-irrigation",
+          "https://dncf-togo.org/mercuriale?category=produits-alimentaires&family=cereales-mais-sorgho-riz-etc",
+          "https://agriculture.gouv.tg/statistiques-agricoles/",
+          "https://statagritogo.tg/stat/index.html"
+        ],
+        "blockers": [
+          "Download the INSEED National Statistical Yearbook 2024 and regional yearbooks; the national 2024 download endpoint returned 403 during this review. Extract crop-by-prefecture planted/harvested area, production and yield.",
+          "Extract DSID/Statagritogo crop survey and price series with observation date, market, commodity, grade, unit and transaction level.",
+          "Verify FEWS NET maize market price coverage and producer-versus-retail status; obtain actual farmgate prices by region and crop.",
+          "Obtain current farmer-paid seed, fertilizer, crop-protection, labour, machinery, irrigation, fuel, transport and post-harvest costs by region.",
+          "Use DNCF reference prices as procurement benchmarks only; obtain local contractor and farmer transaction quotes.",
+          "Build separate regional enterprise budgets for southern/central bimodal and northern unimodal systems, including Savanes access/security constraints and the 2026/27 season."
+        ],
+        "readiness_decision": "not_calculator_ready_not_active"
       }
     },
     {
