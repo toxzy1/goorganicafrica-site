@@ -1,6 +1,298 @@
 {
   "country": "Liberia",
   "iso2": "LR",
+  "iso3": "LBR",
   "batch": 56,
-  "status": "research_refreshed_not_calculator_ready_not_active"
+  "review_date": "2026-11-05",
+  "status": "research_refreshed_not_calculator_ready_not_active",
+  "purpose": "Research evidence only; not an enabled calculator profile.",
+  "geography": {
+    "counties": 15,
+    "survey_regions": [
+      "Southeastern A",
+      "Southeastern B",
+      "North Central",
+      "North Western",
+      "Montserrado",
+      "South Central"
+    ],
+    "note": "Six survey regions are not counties; validate county-to-region crosswalk before county selectors or estimates."
+  },
+  "currency": {
+    "code": "LRD",
+    "name": "Liberian dollar"
+  },
+  "survey": {
+    "name": "Liberia 2024 Annual Agriculture Survey (LAAS-2024)",
+    "publisher": "LISGIS",
+    "report": "October/November 2025; disseminated 2025-12-22",
+    "reference_year": "2024 agricultural year",
+    "coverage": "National and regional sample estimates; Table 10 is national, not county-level.",
+    "microdata": "Anonymized public-use dataset catalogued; redistribution restricted; statistical/scientific use only.",
+    "sources": [
+      "https://lisgis.gov.lr/census/reports",
+      "https://www.lisgis.gov.lr/admin_area/surveys/pdf/202512223466300ILP_Report_12-17-2025_cleaned_final.pdf",
+      "https://microdata.lisgis.gov.lr/index.php/catalog/43",
+      "https://www.fao.org/in-action/agrisurvey/news/news-detail/new-data-for-better-decisions-in-liberia/en"
+    ]
+  },
+  "production": {
+    "year": 2024,
+    "scope": "Table 10 gives national totals; no regional yield values should be inferred from crop participation shares.",
+    "table10": [
+      [
+        "Rice/paddy",
+        237543,
+        186907,
+        139707,
+        201074,
+        2
+      ],
+      [
+        "Cassava",
+        178252,
+        87430,
+        20192,
+        14591,
+        1
+      ],
+      [
+        "Maize",
+        24599,
+        4635,
+        3438,
+        2937,
+        1.5
+      ],
+      [
+        "Eddoes",
+        18564,
+        4321,
+        614,
+        243,
+        0.8
+      ],
+      [
+        "Sweet potatoes",
+        6564,
+        2031,
+        749,
+        383,
+        0.5
+      ],
+      [
+        "Beans",
+        8995,
+        1367,
+        433,
+        208,
+        0.8
+      ],
+      [
+        "Plantain",
+        29989,
+        10930,
+        3145,
+        3388,
+        2.1
+      ],
+      [
+        "Bitterballs",
+        39384,
+        6998,
+        3918,
+        1248,
+        0.5
+      ],
+      [
+        "Cucumber",
+        12052,
+        1452,
+        1053,
+        1638,
+        2.7
+      ],
+      [
+        "Eggplant",
+        6042,
+        807,
+        429,
+        411,
+        1.1
+      ],
+      [
+        "Okra",
+        32703,
+        4323,
+        2956,
+        1385,
+        0.6
+      ],
+      [
+        "Pepper",
+        57418,
+        19660,
+        5104,
+        1731,
+        0.4
+      ],
+      [
+        "Cocoa",
+        35874,
+        76171,
+        33457,
+        2013,
+        0.1
+      ],
+      [
+        "Coffee",
+        5519,
+        6119,
+        3677,
+        426,
+        0.2
+      ],
+      [
+        "Palm oil",
+        17651,
+        28502,
+        10260,
+        8017,
+        1.5
+      ],
+      [
+        "Rubber",
+        23223,
+        91125,
+        62306,
+        14004,
+        0.6
+      ],
+      [
+        "Sugar cane",
+        11392,
+        11941,
+        8089,
+        15708,
+        2.7
+      ]
+    ],
+    "table_columns": [
+      "crop",
+      "holdings",
+      "planted_ha",
+      "harvested_ha",
+      "output_mt",
+      "reported_yield_mt_ha"
+    ],
+    "quality": [
+      "Do not recompute yield from printed aggregate area and quantity until LISGIS confirms estimator/denominator; rice output divided by harvested area does not equal printed yield.",
+      "Cassava estimate is timing-sensitive: only 28.3% reported harvesting; 87.5% of non-harvesters said it was not harvest season.",
+      "Report flags high-CV/low-precision estimates for sweet potato area/output, eggplant area/output, okra output, pepper planted area, and rubber planted/harvested area."
+    ],
+    "source": "https://www.lisgis.gov.lr/admin_area/surveys/pdf/202512223466300ILP_Report_12-17-2025_cleaned_final.pdf"
+  },
+  "prices": {
+    "source": "World Bank Real Time Food Prices, Liberia",
+    "markets": 27,
+    "latest_version": "2026-10-05",
+    "observations_through": "2026-10-01",
+    "frequency": "Monthly product-market estimates",
+    "limitation": "Combines direct observations and machine-learning estimates; metadata include coverage/confidence and spatial interpolation. Not automatically farmgate prices; classify observation/model and price level.",
+    "urls": [
+      "https://microdata.worldbank.org/catalog/4498",
+      "https://microdata.worldbank.org/index.php/catalog/4498/data-dictionary/LBR_2021_RTFP_MKT?file_name=LBR_RTFP_mkt_2007_2025-07-07.csv"
+    ]
+  },
+  "costs": {
+    "currency": "LRD",
+    "seed": "Use/source shares available; current farmer-paid unit prices missing.",
+    "fertilizer": "About 7% use inorganic fertilizer and 17% organic manure; adoption shares are not prices, application rates or quantities.",
+    "regional_daily_hired_labour_wages_lrd": {
+      "Southeastern A": {
+        "men": 464.8,
+        "women": 441.3,
+        "children": 280.2
+      },
+      "Southeastern B": {
+        "men": 476.4,
+        "women": 451.6
+      },
+      "North Central": {
+        "men": 322.6,
+        "women": 290.1,
+        "children": 234.1
+      },
+      "North Western": {
+        "men": 450.4,
+        "women": 394.1
+      },
+      "Montserrado": {
+        "men": 543.5,
+        "women": 496
+      },
+      "South Central": {
+        "men": 366,
+        "women": 351.2
+      },
+      "national": {
+        "men": 380.1,
+        "women": 327.6,
+        "children": 247.4
+      }
+    },
+    "other_costs_lrd_day": {
+      "routine_hired_workers": {
+        "households_pct": 22.8,
+        "amount": 454.7,
+        "days": 152.2
+      },
+      "transport": {
+        "households_pct": 10.1,
+        "amount": 206.7,
+        "days": 136.5
+      },
+      "post_harvest_labour": {
+        "households_pct": 1.7,
+        "amount": 243.6,
+        "days": 99.3
+      },
+      "contract_services": {
+        "households_pct": 2.6,
+        "amount": 162,
+        "days": 168.1
+      },
+      "fuel_lubricants": {
+        "households_pct": 0.7,
+        "amount": 105.7,
+        "days": 112.9
+      }
+    },
+    "caveat": "2023/24 survey-period amounts, not current 2026 quotes. Sparse observations are withheld; low prevalence is not zero cost.",
+    "source": "https://www.lisgis.gov.lr/admin_area/surveys/pdf/202512223466300ILP_Report_12-17-2025_cleaned_final.pdf"
+  },
+  "readiness": {
+    "crop_yield": "partial_national_table_only_yield_denominators_need_reconciliation",
+    "farmgate_prices": "partial_27_market_series_not_validated_farmgate_and_contains_modelled_estimates",
+    "seed_costs": "partial_shares_only_prices_missing",
+    "fertilizer_costs": "partial_adoption_shares_only",
+    "crop_protection": "partial_use_shares_only",
+    "irrigation_energy": "partial_coverage_context_costs_missing",
+    "labour": "partial_2023_24_regional_wages_only",
+    "machinery": "blocked_current_hire_rates_missing",
+    "enterprise_budgets": "blocked",
+    "currency": "partial_LRD_confirmed_tests_pending",
+    "provenance": "partial",
+    "calculator_tests": "blocked"
+  },
+  "blockers": [
+    "Reconcile Table 10 yield estimator/denominators with LISGIS; do not silently recompute.",
+    "Extract statistically valid crop area/output/yield by county or survey region; Table 10 is national.",
+    "Validate 15-county to six-survey-region crosswalk.",
+    "Classify World Bank prices by commodity/date/market/currency and direct versus ML estimate; obtain true farmgate prices.",
+    "Obtain current farmer-paid seed, fertilizer, pesticide, irrigation, machinery, fuel, transport and labour quotations.",
+    "Build regional enterprise budgets and calculator regression tests."
+  ],
+  "next_step": "Reconcile LAAS yield estimators with LISGIS; extract county/region crop tables; classify 27-market RTFP records; obtain current farmer-paid costs and build regional budgets.",
+  "decision": "Liberia is not calculator-ready. Research refresh only; no activation, merge or deployment."
 }
