@@ -909,7 +909,7 @@
         "Do not use INSTAT IHPC July 2026 or September 2026 agricultural-fair prices as farmgate prices; obtain dated producer quotations by province, commodity, grade and unit.",
         "Obtain farmer-paid input, labour, irrigation, machinery, transport, packaging and storage costs and complete province-specific enterprise budgets."
       ],
-      "next_step": "Recheck the original EPVA Volume 2 Tables 119-121 to resolve province/national arithmetic differences; retain July 2026 IHPC and September 2026 fair prices only as consumer-market context, then source producer prices and current farm costs.",
+      "next_step": "Extract RGA 2023 Volume II and relevant modules; seek INSTAT clarification for EPVA Tables 120-121 arithmetic discrepancies; obtain current provincial farmgate prices and full cost schedules.",
       "batch_15_review": {
         "review_date": "2026-11-02",
         "source_notes": "Verified the nine first-level provinces using the Gabon Ministry of Interior territorial-organisation page, which separately reports 48 departments, 52 communes, 26 districts and 164 cantons. The Ministry of Agriculture's RGA report page confirms the national agricultural census and lists its report volumes. FAO GIEWS' 4 June 2026 brief reports cassava and plantain as the main food crops, small maize production, a 2026 cereal import requirement forecast of 255,000 tonnes and above-average first-half rainfall that may have affected the secondary maize crop. Existing research evidence includes RGA/EPVA survey leads and World Bank sector context, but the crop/province tables and current enterprise costs remain unextracted.",
@@ -948,7 +948,9 @@
           "Do not substitute retail/event prices for farmgate prices.",
           "Do not activate Gabon until the EPVA transcription discrepancies are resolved and producer prices plus current operating costs are validated."
         ]
-      }
+      },
+      "review_status": "2026_11_05_primary_EPVA_Volume_2_Tables_119_121_audited; cassava_and_plantain_province_rows_confirmed_not_to_sum_to_published_national_totals; INSTAT_RGA_2023_eight_volume_release_identified_as_next_extraction_priority; prices_and_current_costed_budgets_missing",
+      "last_reviewed": "2026-11-05"
     },
     {
       "code": "GM",
