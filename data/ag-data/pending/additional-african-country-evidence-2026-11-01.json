@@ -6081,7 +6081,7 @@
     {
       "country_code": "TN",
       "country_name": "Tunisia",
-      "evidence_status": "november_2026_refresh_expanded_2025_official_cereal_collection_by_governorate_ONAGRI_input_service_XLSX_ONH_olive_producer_price_XLSX_and_INS_agricultural_wage_series; underlying_cost_rows_and_regional_enterprise_budgets_not_extracted",
+      "evidence_status": "november_2026_review_and_2026_11_05_followup_added_official_2025_governorate_cereal_collection_ONAGRI_input_price_dataset_ONH_olive_producer_price_dataset_and_INS_wage_series; underlying_XLS_values_and_enterprise_budgets_pending",
       "sources": [
         {
           "title": "Arrêté conjoint du 24 juillet 2026 fixant les prix et modalités des céréales pour la campagne 2026-2027",
@@ -6573,6 +6573,63 @@
           "No full regional enterprise budgets across the 17 calculator commodities; non-cereal farmgate prices, input costs, water/energy, machinery, transport and livestock cost schedules remain incomplete."
         ],
         "decision": "Research refresh saved; Tunisia remains inactive and is not calculator-ready."
+      },
+      "november_2026_review_followup": {
+        "review_date": "2026-11-05",
+        "observations": [
+          {
+            "source": "Office des Céréales 2025 collection by crop",
+            "url": "https://www.oc.com.tn/fr/evolution-de-collecte-des-cereales-de-tous-les-produits/",
+            "values": {
+              "durum_wheat_quintals": 8319791,
+              "common_wheat_quintals": 648985,
+              "barley_quintals": 2939121,
+              "triticale_quintals": 43382,
+              "total_quintals": 11951279
+            },
+            "caution": "Collection only; not total production or yield."
+          },
+          {
+            "source": "Office des Céréales 2025 collection by governorate",
+            "url": "https://www.oc.com.tn/fr/evolution-de-collecte-des-cereales-par-repartition/",
+            "values": {
+              "Beja_quintals": 2856232,
+              "Bizerte_quintals": 1831087,
+              "Siliana_quintals": 1582328,
+              "Le_Kef_quintals": 1391549,
+              "Jendouba_quintals": 1293235
+            },
+            "caution": "Collection volumes, not harvested area or total production."
+          },
+          {
+            "source": "ONAGRI input and service price dataset",
+            "url": "https://catalog.data.gov.tn/fr/dataset/459c2931-8bfb-4f46-8258-a1d41da2db27",
+            "status": "XLSX resources listed; catalogue updated 2026-11-04; underlying price dates and values not extracted."
+          },
+          {
+            "source": "ONH extra-virgin olive-oil producer prices by governorate",
+            "url": "https://catalog.data.gov.tn/fr/dataset/prix-moyens-a-la-production-de-l-huile-d-olive-extra-vierge",
+            "status": "XLS resource listed; metadata updated 2026-08-27; actual values and observation dates not extracted."
+          },
+          {
+            "source": "INS guaranteed minimum agricultural wage",
+            "url": "https://www.ins.tn/ar/statistiques/98",
+            "values": {
+              "monthly_series_TND_per_day": 20.32,
+              "period": "2025-06 to 2026-02",
+              "annual_2026_TND_per_day": 21.336
+            },
+            "caution": "Statutory minimum, not actual regional or operation-specific labour rates."
+          }
+        ],
+        "decision": "not_calculator_ready_not_active",
+        "remaining_gaps": [
+          "Extract ONAGRI input/service and fertilizer XLSX rows with observation dates, units and regional scope.",
+          "Extract ONH olive producer-price XLS values and dates.",
+          "Match governorate crop production with harvested area; collection volumes cannot substitute.",
+          "Obtain non-cereal farmgate prices and farmer-paid input, labour, irrigation, machinery, harvest and transport costs.",
+          "Construct and test region-specific enterprise budgets across the enabled commodity profiles."
+        ]
       }
     },
     {
