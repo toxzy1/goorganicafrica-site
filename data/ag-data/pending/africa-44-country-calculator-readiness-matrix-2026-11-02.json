@@ -1854,7 +1854,7 @@
       "code": "MZ",
       "name": "Mozambique",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "batch_31_maap_2025_26_campaign_snapshot_and_ine_2025_publication_identified",
+      "existing_research_note": "batch_31_maap_2025_26_campaign_snapshot_and_ine_2025_publication_identified 2026-11-05 follow-up confirms INE Yearbook 2024 national producer-price table and livestock inventory tables, district CAP ZIP archive, 2026 ICM market reference quotations and SIMA weekly producer/wholesale/retail methodology; unit verification, district extraction and farm budgets pending.",
       "calculator_status": "not_active",
       "criterion_status": {
         "crop_area_production_yield_by_commodity_and_season": "partial",
@@ -1877,10 +1877,36 @@
         "Farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation-energy and transport costs remain incomplete.",
         "Regional enterprise budgets and deterministic calculator mapping/regression tests are not yet implemented."
       ],
-      "next_step": "Cross-check CAP provincial productivity against the final district Excel tables and sampling errors; extend crop extraction to all relevant commodities; obtain dated producer-level prices and itemized provincial input budgets before calculator mapping.",
+      "next_step": "Verify INE yearbook producer-price units from the original PDF, download the CAP district ZIP and extract crop tables, then obtain current SIMA producer-level prices and province-level input budgets.",
       "reviews": [
         "batch_32_CAP_2023_24_provincial_productivity_extraction"
-      ]
+      ],
+      "follow_up_2026_11_05": {
+        "review_date": "2026-11-05",
+        "source_file": "data/ag-data/pending/mozambique-follow-up-evidence-2026-11-05.json",
+        "status": "research_only_not_active",
+        "note": "INE Statistical Yearbook 2024 table 3.1.6 confirms national average producer-price series for rice, cowpea, national white maize and other crops, but extracted table does not expose unit; no values admitted until PDF footnote/unit is verified. Tables 3.2.1-3.2.2 provide national livestock inventory counts, with a sharp sheep-series discontinuity flagged. INE CAP district ZIP route confirmed. ICM 6 Oct 2026 provincial market references transcribed from secondary reproduction, not farmgate. Official SIMA weekly producer/wholesale/retail collection method confirmed; current public bulletins remain inaccessible through archive.",
+        "updates": [
+          "INE Statistical Yearbook 2024 table 3.1.6 reports average producer prices sourced from SIMA for national rice, Feijão Nhemba (cowpea), national white maize, Feijão Manteiga and Feijão Boer, but the accessible extracted table does not expose units. No numerical values imported pending verification.",
+          "INE yearbook tables 3.2.1 and 3.2.2 report 2024 livestock inventories: cattle 2,467,082; goats 4,669,773; chickens 22,236,048; pigs 1,161,931; sheep 239,206. These are national inventory counts, not enterprise budgets; sheep series discontinuity flagged.",
+          "INE official district CAP 2023/24 ZIP archive confirmed, published 2 July 2026; download and district extraction remain pending.",
+          "ICM provincial reference quotation table for 6 October 2026 identified through secondary transcription, with separate maize, rice, paddy and cowpea references; not confirmed farmgate transactions.",
+          "MAAP SIMA official page confirms weekly producer, wholesale and retail price collection and transport cost monitoring, but current public weekly bulletin archive surfaced is old."
+        ],
+        "criterion_updates": {
+          "dated_local_farmgate_prices_and_units": "partial_national_average_producer_price_series_found_2020_24_but_unit_and_footnote_not_verified_current_provincial_SIMA_raw_quotes_pending",
+          "crop_area_production_yield_by_commodity_and_season": "partial_CAP_provincial_selected_crop_productivity_extracted_district_ZIP_confirmed_but_not_yet_extracted",
+          "regional_enterprise_budget_and_gross_margin": "blocked",
+          "source_provenance_and_observation_date": "pass_additional_INE_yearbook_SIMA_ICM_and_CAP_archive_sources_logged",
+          "calculator_mapping_and_test_cases": "blocked"
+        },
+        "blockers": [
+          "Verify unit and footnotes for INE table 3.1.6 before admitting national producer-price values.",
+          "Download and extract official CAP district ZIP and 2025 agriculture indicators; cross-check denominators, district coverage and sampling notes.",
+          "Obtain current dated SIMA producer-level price observations; do not substitute ICM market reference prices.",
+          "Obtain farmer-paid input, labour, machinery, irrigation, energy and transport costs and construct provincial enterprise budgets."
+        ]
+      }
     },
     {
       "code": "NA",
