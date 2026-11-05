@@ -2098,31 +2098,55 @@
     {
       "code": "SC",
       "name": "Seychelles",
-      "evidence_file": "data/ag-data/pending/seychelles-country-profile-evidence-2026-11-01.json",
-      "existing_research_note": "2024 agriculture census coverage of 725 registered farmers; NBS production-statistics time-series workbook located (latest listed 31 Aug 2026) but agricultural series not yet extracted; FAO-supported compilation/validation of 2023-2025 Food Balance Sheets reported 4 Nov 2026; CBS 2025 annual report gives aggregate sector changes; Aug 2026 livestock subsidy terms and supply-share leads identified; crop-specific island yields, current farmgate prices, input costs and enterprise budgets remain missing.",
+      "evidence_file": "data/ag-data/pending/seychelles-calculator-readiness-batch-60-2026-11-05.json",
+      "existing_research_note": "Batch 60: 2024 Agriculture Census covered 725 registered farmers on Mahé, Praslin, La Digue and Inner Islands; full crop tables not exposed in NBS public download view. CBS 2024 reports agriculture output +10%, eggs +11%, broiler slaughter -40%, culled pigs -12%, cattle slaughter +19%; CBS 2025 estimates primary sector -4.4%. 2024 pig output 676t, pork imports 908t. NBS 2026 Q2 report/time-series and Oct-2026 PPI listed but download links login-gated. August 2026 feed subsidy up to 30% for eligible livestock farmers; 2025 egg first-sale SCR3.50-4.50 each is dated lead only. Crop-by-island yields, current farmgate prices, inputs and budgets missing.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial",
-        "dated_local_farmgate_prices_and_units": "partial",
-        "seed_and_planting_material_costs": "blocked",
-        "fertilizer_and_soil_amendment_costs": "blocked",
-        "crop_protection_costs": "blocked",
-        "irrigation_water_and_energy_costs": "blocked",
-        "labour_rates_and_operations": "blocked",
-        "machinery_and_land_preparation_costs": "blocked",
-        "regional_enterprise_budget_and_gross_margin": "blocked",
-        "currency_and_exchange_rate_method": "partial",
-        "source_provenance_and_observation_date": "partial",
-        "calculator_mapping_and_test_cases": "blocked"
+        "crop_area_production_yield_by_commodity_and_season": "partial_2024_census_coverage_and_national_aggregate_indicators_verified_but_crop_by_island_area_output_yield_tables_not_extracted",
+        "dated_local_farmgate_prices_and_units": "partial_egg_first_sale_price_lead_from_2025_only_current_2026_crop_prices_and_island_grade_series_missing",
+        "seed_and_planting_material_costs": "blocked_nbs_requisite_store_and_ministry_supply_context_but_no_current_itemized_farmer_net_prices",
+        "fertilizer_and_soil_amendment_costs": "blocked_no_current_product_unit_and_farmer_paid_price_schedule",
+        "crop_protection_costs": "blocked_no_current_product_rate_and_price_schedule",
+        "irrigation_water_and_energy_costs": "partial_historical_irrigation_infrastructure_context_only_current_farmer_paid_costs_missing",
+        "labour_rates_and_operations": "blocked_no_current_operation_specific_wage_rates",
+        "machinery_and_land_preparation_costs": "blocked_no_current_hire_and_land_preparation_rate_schedule",
+        "regional_enterprise_budget_and_gross_margin": "blocked_no_crop_or_livestock_budget_by_island_with_verified_current_prices_and_costs",
+        "currency_and_exchange_rate_method": "partial_SCR_confirmed_locale_and_rounding_tests_pending",
+        "source_provenance_and_observation_date": "partial_CBS_2024_2025_NBS_2026_catalogue_Aug_2026_subsidy_and_Dec_2025_egg_price_lead_verified",
+        "calculator_mapping_and_test_cases": "blocked_no_validated_crop_by_island_yield_price_cost_bundle_or_regression_cases"
       },
       "blockers": [
-        "Extract the NBS Production Statistics time-series workbook and 2024 Agriculture Census tables; verify crop/livestock series, units, years and island coverage.",
-        "Wait for and validate the 2023-2025 Food Balance Sheet tables; compilation workshop announcement is not a published data table.",
-        "Obtain current crop-specific farmgate/first-sale prices by island, grade, unit and season; dated egg-price leads are insufficient.",
-        "Verify farmer net costs after feed subsidies and collect current feed, veterinary, seed, fertiliser, crop-protection, labour, irrigation, energy and transport quotations.",
-        "Build island-appropriate enterprise budgets and add calculator mapping/test cases only after source data are validated."
+        "Obtain the full 2024 Agriculture Census tables from the Agriculture Department/NBS and extract crop/livestock area, production, farm size, labour and island coverage; verify whether the 725 registered-farmer frame represents all active holdings.",
+        "Obtain the 2026 Q1/Q2 NBS production reports and August 2026 time-series workbook through an authorized public download or NBS release; NBS links currently redirect to login and the series could not be audited.",
+        "Download and extract the 30-Oct-2026 NBS PPI/IPI workbook; distinguish absolute producer prices from index values and verify commodity coverage, units and reference periods.",
+        "Obtain dated 2026 farmgate/first-sale prices by crop, grade, unit, buyer and island; the 2025 egg price lead is insufficient for the full commodity set.",
+        "Obtain farmer invoices/quotations for seed, fertilizer, crop protection, feed, veterinary inputs, labour, machinery, land preparation, irrigation, water, electricity/fuel, transport and post-harvest handling.",
+        "For livestock budgets, model the August 2026 feed subsidy only for eligible registered farmers and apply it to documented eligible purchases; include slaughter/carcass support only where the farmer qualifies and the programme rules are verified.",
+        "Build separate Mahé, Praslin, La Digue and Inner Islands budgets only where data support the distinction; do not infer island yields from national totals.",
+        "Validate all enabled commodity mappings, SCR currency formatting and test cases before any calculator activation."
       ],
-      "next_step": "Continue extracting the NBS production workbook and census tables; then verify farmgate prices and input quotations. Keep Seychelles inactive until crop/livestock enterprise budgets and calculator tests pass."
+      "next_step": "Obtain the complete 2024 Agriculture Census and NBS 2026 production/PPI datasets, then validate 2026 island-level first-sale prices and farmer net input costs before constructing budgets.",
+      "batch_60_review": {
+        "review_date": "2026-11-05",
+        "review_status": "evidence_refreshed_not_ready",
+        "sources": [
+          "https://www.nationalassembly.sc/sites/default/files/2025-04/CBS%20AR2024.pdf",
+          "https://www.fao.org/world-census-agriculture/wca-round/en",
+          "https://www.nbs.gov.sc/downloads/38-economic-statistics/17-production-indicators",
+          "https://www.nbs.gov.sc/downloads/51-data-series",
+          "https://www.nbs.gov.sc/statistics/production",
+          "https://www.cbs.sc/Downloads/publications/Annual%20Report%202025.pdf",
+          "https://mofbe.gov.sc/agriculture-department/",
+          "https://www.seychellesnewsagency.com/public/articles/22249/news-alert",
+          "https://www.nation.sc/articles/28806/seeds-of-progress-seychelles-agricultural-milestones-2025",
+          "https://www.nation.sc/www/articles/26498/livestock-production-current-challenges-and-future-vision",
+          "https://agriculture.statizoid.com/stat/vegetables-primary-production/seychelles/",
+          "https://app.indexbox.io/indicators/symbol/crop-production-seychelles/",
+          "https://unfccc.int/sites/default/files/resource/Clean%20Version_Seychelles%20FBUR_19%20Feb%202024.pdf"
+        ],
+        "key_findings": "2024 Agriculture Census covered 725 registered farmers across Mahé, Praslin, La Digue and Inner Islands. NBS lists 2026 Q2 production report and Aug 2026 production workbook, but downloads redirect to login. CBS 2024 livestock/egg indicators, CBS 2025 primary-sector contraction, 2024 pig production/imports, 2026 feed subsidy rules and 2025 egg first-sale price lead recorded. No complete crop-by-island tables or current cost schedules.",
+        "activation_decision": "not_active_blocked_pending_census_tables_current_producer_prices_net_input_costs_island_budgets_and_tests"
+      }
     },
     {
       "code": "SL",
@@ -2469,8 +2493,8 @@
     }
   ],
   "next_country": {
-    "code": "SC",
-    "name": "Seychelles"
+    "code": "SL",
+    "name": "Sierra Leone"
   },
   "updated_at": "2026-11-05"
 }
