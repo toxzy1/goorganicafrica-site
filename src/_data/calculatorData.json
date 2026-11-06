@@ -3738,7 +3738,13 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark"
+          "data_quality": "benchmark",
+          "market_listing_reference_bwp_per_kg": 50,
+          "market_listing_reference_product": "Red habanero chillies",
+          "market_listing_reference_as_of": "2026-01-23",
+          "market_listing_reference_source": "Mpatlise Horticultural Market Commercial Association Portal; farmer listing from Moshupa/Ramoshengwane Lands",
+          "market_listing_reference_source_url": "https://www.mpatise.com/agric/esales/fa/cmarket.php?id=BoHoCo1",
+          "market_listing_reference_note": "A dated farmer-market listing for red habanero at P50/kg. This is a single seller's asking/listing price, not a verified transaction, national farmgate average or current quotation. It is retained as market evidence only; Botswana-specific yield and full production costs remain unverified, so the profile stays benchmark-only."
         },
         {
           "country_code": "GQ",
