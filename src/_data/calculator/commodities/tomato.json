@@ -508,7 +508,12 @@
       "historical_yield_reference_as_of": "2024",
       "historical_yield_reference_source": "FAOSTAT tomato yield series, reproduced by Geo Factbook for Botswana; 2024 value",
       "historical_yield_reference_source_url": "https://geofactbook.com/countries/botswana/tomato-yield-per-hectare",
-      "historical_yield_reference_note": "National historical yield reference only; retained as evidence metadata and not substituted for the calculator's scenario yields. Local production costs and current farmgate selling prices remain unverified."
+      "historical_yield_reference_note": "National historical yield reference only; retained as evidence metadata and not substituted for the calculator's scenario yields. Local production costs and current farmgate selling prices remain unverified.",
+      "recent_market_listing_reference_bwp_per_kg": 15,
+      "recent_market_listing_reference_as_of": "2026-09-24",
+      "recent_market_listing_reference_source": "Mpatlise Horticultural Market Commercial Association Portal; Francistown tomato listing explicitly stated P15.00 per kg, posted 24 September 2026",
+      "recent_market_listing_reference_source_url": "https://www.mpatise.com/agric/esales/fa/cmarket.php?id=BoHoCo1",
+      "recent_market_listing_reference_note": "Farmer-market listing snapshot, not an official national farmgate price series. A separate 28 July 2026 listing reported P18/kg. These observations are retained as market evidence only and are not used as the calculator selling-price assumption; current representative prices and full production costs remain unverified."
     },
     {
       "country_code": "GQ",
