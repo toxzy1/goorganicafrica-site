@@ -375,7 +375,12 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "local_suitability_reference": "Northern Botswana identified by the Ministry of Agriculture in 2016 as the more favourable zone for cassava establishment because of rainfall and temperature conditions",
+      "local_suitability_reference_as_of": "2016-06",
+      "local_suitability_reference_source": "Mmegi report quoting Botswana Ministry of Agriculture Director of Crop Production",
+      "local_suitability_reference_source_url": "https://www.mmegi.bw/news/cassava-production-favourable-for-northern-botswana/news",
+      "local_suitability_reference_note": "Historical suitability statement only, not evidence of established commercial production, current yield, farmgate price or production costs. Cassava remains unverified for calculator assumptions."
     },
     {
       "country_code": "GQ",
