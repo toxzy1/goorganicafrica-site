@@ -6627,7 +6627,12 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark"
+          "data_quality": "benchmark",
+          "historical_yield_reference_tonnes_per_ha": 28.55,
+          "historical_yield_reference_as_of": "2024",
+          "historical_yield_reference_source": "FAOSTAT tomato yield series, reproduced by Geo Factbook for Botswana; 2024 value",
+          "historical_yield_reference_source_url": "https://geofactbook.com/countries/botswana/tomato-yield-per-hectare",
+          "historical_yield_reference_note": "National historical yield reference only; retained as evidence metadata and not substituted for the calculator's scenario yields. Local production costs and current farmgate selling prices remain unverified."
         },
         {
           "country_code": "GQ",
