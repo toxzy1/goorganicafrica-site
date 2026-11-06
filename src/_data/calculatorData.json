@@ -4184,7 +4184,36 @@
           "layer_eggs_per_hen_per_year_reference": 23,
           "national_poultry_sector_reference_source": "Business Botswana Poultry Desk, Poultry Sector Preliminary Outlook (2024 production data; preliminary sector statistics)",
           "national_poultry_sector_reference_source_url": "https://bb.org.bw/common_up/business-botswana/doc_1749631817.pdf",
-          "national_poultry_sector_reference_note": "National industry context only. The report's 2024 figures are preliminary and its fieldwork initially focused on commercial/large-scale operations; reported small-producer mortality is an industry estimate. These statistics are not farm-specific production assumptions, feed conversion ratios, selling prices or complete farm budgets. They are not used to overwrite calculator inputs."
+          "national_poultry_sector_reference_note": "National industry context only. The report's 2024 figures are preliminary and its fieldwork initially focused on commercial/large-scale operations; reported small-producer mortality is an industry estimate. These statistics are not farm-specific production assumptions, feed conversion ratios, selling prices or complete farm budgets. They are not used to overwrite calculator inputs.",
+          "ifad_layers_model_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, dated 22 October 2025; poultry-layers financial models for 50, 150, 250, 400 and 1,200 birds.",
+          "ifad_layers_model_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+          "ifad_layers_model_reference_as_of": "2025-10-22",
+          "ifad_layers_model_parameters_bwp": {
+            "egg_selling_price_per_egg": 3,
+            "modelled_chicken_selling_price_per_bird": 85,
+            "day_old_chick_price": 10,
+            "family_labour_per_day": 25,
+            "family_labour_days_in_50_bird_micro_model": 40,
+            "chicks_mortality_rate_steady_state_percent": 15,
+            "adult_hen_mortality_rate_steady_state_percent": 10,
+            "modelled_egg_output_per_hen_annual": 25,
+            "modelled_herd_sizes": [
+              50,
+              150,
+              250,
+              400,
+              1200
+            ]
+          },
+          "ifad_layers_model_income_reference_bwp": {
+            "50_bird_model_incremental_income": 4860,
+            "150_bird_model_incremental_income": 30457,
+            "250_bird_model_incremental_income": 60441,
+            "400_bird_model_incremental_income": 26670,
+            "1200_bird_model_incremental_income": 83764
+          },
+          "ifad_layers_model_data_quality_note": "Botswana-specific project-design assumptions and financial models, not audited farm accounts or current retail/farmgate quotations. The 50-bird micro model includes 80% egg own-consumption, 15% chick mortality, 10% adult mortality, and a stated 25 eggs per hen annually; its annual egg output assumption is not representative of a standard commercial laying cycle. The model set uses differing scales and its income tables are incremental project benefits, not gross margins. Retain as supporting evidence only; do not populate calculator cost_per_unit, price_per_unit or production yield from these figures without reconciling model definitions and checking current local egg prices and feed costs.",
+          "source_verification_checked_as_of": "2026-11-06"
         },
         {
           "country_code": "GQ",
