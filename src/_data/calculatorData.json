@@ -5520,7 +5520,28 @@
           "government_piggery_guide_feed_intake_reference_as_of": "legacy government guide (hosted 2019-12; original table date not stated)",
           "government_piggery_guide_feed_intake_reference_source": "Government of Botswana, Technical Guide for Establishing a Piggery Project, Feed Requirements and Feed Intake Program (Department of Animal Production)",
           "government_piggery_guide_feed_intake_reference_source_url": "https://www.gov.bw/sites/default/files/2019-12/TECHNICAL%20GUIDE%20FOR%20ESTABLISHING%20A%20PIGGERY%20%20PROJECT.pdf",
-          "government_piggery_guide_feed_intake_reference_note": "Botswana-specific feeding-stage and daily intake reference. The guide says feed accounts for about 70% of pig-meat production cost. This is a legacy husbandry reference, not a current feed quotation or complete per-pig cost budget; intake figures are not used to calculate a new selling price or cost_per_unit."
+          "government_piggery_guide_feed_intake_reference_note": "Botswana-specific feeding-stage and daily intake reference. The guide says feed accounts for about 70% of pig-meat production cost. This is a legacy husbandry reference, not a current feed quotation or complete per-pig cost budget; intake figures are not used to calculate a new selling price or cost_per_unit.",
+          "ifad_piggery_sector_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, 22 October 2025; piggery value-chain assessment.",
+          "ifad_piggery_sector_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+          "ifad_piggery_sector_reference_as_of": "2025-10-22",
+          "ifad_piggery_sector_structure": {
+            "micro_farms_share_of_pig_production_percent": 84,
+            "small_scale_farms_share_of_pig_production_percent": 16,
+            "typical_herd_size": "Fewer than 20 pigs for most producers",
+            "large_scale_operations_count": 1,
+            "large_scale_operation_sow_units": 200,
+            "live_pig_domestic_sourcing_share_for_processing_percent": 19,
+            "feed_manufacturers_count": 6,
+            "feed_manufacturers_annual_output_tonnes": 825,
+            "feed_manufacturers_annual_value_bwp": 2400000,
+            "feed_suppliers_count": 5,
+            "feed_suppliers_annual_supply_tonnes": 354,
+            "feed_suppliers_annual_value_bwp": 1100000
+          },
+          "ifad_piggery_input_supply_note": "Feeder pigs are supplied by the government-owned Sebele Multiplication Unit or imported mainly from South Africa. IFAD reports six large-scale feed manufacturers producing about 825 tonnes/year valued at BWP2.4m, and five large-scale suppliers supplying about 354 tonnes/year valued at BWP1.1m. Reported 70/30 local-input sourcing regulation affects feed costs.",
+          "ifad_piggery_market_note": "IFAD reports only 19% of live pigs for processing are sourced domestically. The report describes two micro slaughter facilities and two registered processors; market structure and imports are important context but do not establish a current farmgate price per liveweight kilogram.",
+          "ifad_piggery_data_quality_note": "This 2025 Botswana-specific value-chain assessment strengthens local sector context, but it does not supply a validated per-pig production budget, feed consumption by growth stage, current feeder-pig purchase price, market liveweight or current farmgate price. Do not use its turnover/value-chain amounts as farm-level calculator costs or prices.",
+          "source_verification_checked_as_of": "2026-11-06"
         },
         {
           "country_code": "GQ",
