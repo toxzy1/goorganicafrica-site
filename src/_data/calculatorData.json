@@ -6742,7 +6742,18 @@
           "recent_market_listing_reference_as_of": "2026-09-24",
           "recent_market_listing_reference_source": "Mpatlise Horticultural Market Commercial Association Portal; Francistown tomato listing explicitly stated P15.00 per kg, posted 24 September 2026",
           "recent_market_listing_reference_source_url": "https://www.mpatise.com/agric/esales/fa/cmarket.php?id=BoHoCo1",
-          "recent_market_listing_reference_note": "Farmer-market listing snapshot, not an official national farmgate price series. A separate 28 July 2026 listing reported P18/kg. These observations are retained as market evidence only and are not used as the calculator selling-price assumption; current representative prices and full production costs remain unverified."
+          "recent_market_listing_reference_note": "Farmer-market listing snapshot, not an official national farmgate price series. A separate 28 July 2026 listing reported P18/kg. These observations are retained as market evidence only and are not used as the calculator selling-price assumption; current representative prices and full production costs remain unverified.",
+          "lea_enterprise_budget_reference": "Five Botswana open-field tomato farmer budgets across Kgatleng, Ngami, Boteti, North East and Chobe districts; separate Central District shade-net case excluded from the comparable ranges",
+          "lea_enterprise_budget_reference_as_of": "2024-03",
+          "lea_open_field_yield_reference_tonnes_per_ha_low": 8.25,
+          "lea_open_field_yield_reference_tonnes_per_ha_high": 22.8,
+          "lea_open_field_farmgate_price_reference_bwp_per_kg_low": 10,
+          "lea_open_field_farmgate_price_reference_bwp_per_kg_high": 15,
+          "lea_open_field_enterprise_cost_reference_bwp_per_ha_low": 33841,
+          "lea_open_field_enterprise_cost_reference_bwp_per_ha_high": 133880,
+          "lea_enterprise_budget_reference_source": "Local Enterprise Authority, Tomato Enterprise Budgets, March 2024; farmer-record-based open-field cases in Kgatleng, Ngami, Boteti, North East and Chobe districts",
+          "lea_enterprise_budget_reference_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "lea_enterprise_budget_reference_note": "Historical farmer-record enterprise budgets, not a current national average. Comparable open-field cases reported yields of 8.25–22.8 t/ha, farmgate prices of BWP10–15/kg and reported enterprise cost totals of BWP33,841–133,880/ha. The report notes farmer-to-farmer variation, possible cost allocation/omission errors and excludes some overheads. A separate Central District shade-net case used crates and is not included in these ranges. Retained as reference evidence only; not used to set calculator scenario inputs."
         },
         {
           "country_code": "GQ",
