@@ -312,7 +312,16 @@
       "feed_reference_as_of": "2026-09",
       "feed_reference_source": "US Grains & Bioproducts Council Africa Feed Price report; Botswana September 2026 country entry",
       "feed_reference_source_url": "https://www.africafeedprice.com/feed-price",
-      "feed_reference_note": "National reference price for compound broiler feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost."
+      "feed_reference_note": "National reference price for compound broiler feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost.",
+      "local_feed_reference_as_of": "2025",
+      "local_feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+      "local_feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+      "local_feed_reference_prices_bwp": {
+        "broiler_finisher_50kg": 410.89,
+        "broiler_grower_50kg": 421.4,
+        "broiler_starter_50kg": 429.47
+      },
+      "local_feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. Dated feed-input references only; not current retail quotations or a complete per-bird production cost. Kept separate from calculator assumptions."
     },
     {
       "country_code": "GQ",
