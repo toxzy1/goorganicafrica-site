@@ -538,7 +538,16 @@
       "retail_price_reference_source_url": "https://www.selinawamucii.com/insights/prices/botswana/capsicum-bell-pepper/",
       "market_channel_reference": "Letsema Horticulture Market, Gaborone lists sweet pepper among traded crops; sold by crate",
       "market_channel_reference_source_url": "https://divisi.africa/markets/botswana/letsema-horticulture-market/",
-      "retail_price_reference_note": "Indicative third-party retail reference for Gaborone/Francistown, not a verified producer or wholesale quotation. Letsema market confirms sweet pepper is traded by crate, but does not publish official daily prices. Not used as the calculator's farmgate selling-price assumption."
+      "retail_price_reference_note": "Indicative third-party retail reference for Gaborone/Francistown, not a verified producer or wholesale quotation. Letsema market confirms sweet pepper is traded by crate, but does not publish official daily prices. Not used as the calculator's farmgate selling-price assumption.",
+      "government_horticulture_manual_green_pepper_yield_reference_tonnes_per_ha_low": 30,
+      "government_horticulture_manual_green_pepper_yield_reference_tonnes_per_ha_high": 70,
+      "government_horticulture_manual_green_pepper_water_requirement_reference_mm": 23.8,
+      "government_horticulture_manual_green_pepper_irrigation_interval_reference_days_winter": 6,
+      "government_horticulture_manual_green_pepper_irrigation_interval_reference_days_summer": 2,
+      "government_horticulture_manual_reference_as_of": "legacy Botswana Ministry of Agriculture horticulture manual; publication year reported as 2003",
+      "government_horticulture_manual_source": "Government of Botswana, Ministry of Agriculture, Manual for Vegetable Production in Botswana, Horticultural Research Program; Green Pepper chapter",
+      "government_horticulture_manual_source_url": "https://www.researchgate.net/publication/362469461_Manual_for_Vegetable_Production_in_Botswana_GOVERNMENT_OF_BOTSWANA_MINISTRY_OF_AGRICULTURE_Manual_for_vegetable_production_in_Botswana_PREPARED_BY_THE_HORTICULTURAL_RESEARCH_PROGRAM",
+      "government_horticulture_manual_note": "Legacy technical production reference reports 30–70 tonnes/ha as a good green-pepper yield and gives a water requirement of 23.8 mm with irrigation intervals of 6 days in winter and 2 days in summer. This is an old technical guide, not a current measured Botswana national yield, current farmgate price or full enterprise budget. Kept as context only; not used to set calculator scenarios."
     },
     {
       "country_code": "GQ",
