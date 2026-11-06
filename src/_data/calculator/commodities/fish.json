@@ -302,7 +302,14 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "national_production_reference_tonnes": 117,
+      "national_production_reference_as_of": "2026-11",
+      "national_production_reference_source": "Government of Botswana report on Mmadinare Fish Hatchery restoration; national fish production estimate stated by the Minister of Lands and Agriculture",
+      "national_production_reference_source_url": "https://dailynews.gov.bw/news-detail/93926",
+      "national_recognised_fish_farmers_reference": 50,
+      "national_fish_food_security_requirement_tonnes": 5000,
+      "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified."
     },
     {
       "country_code": "GQ",
