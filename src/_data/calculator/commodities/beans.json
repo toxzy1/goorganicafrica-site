@@ -365,7 +365,12 @@
       "local_production_suitability_reference": "BAMB describes Tswana cowpeas as drought tolerant and suitable for cultivation throughout Botswana; Black-eyed cowpeas can be produced successfully in most areas.",
       "local_market_and_suitability_source": "Botswana Agricultural Marketing Board, Pulses/Beans information page",
       "local_market_and_suitability_source_url": "https://bamb.co.bw/pulsesbeans",
-      "local_market_and_suitability_note": "Official market and agronomic context only. The BAMB statement confirms local procurement and a reported supply gap but does not quantify demand, guarantee a purchase, or establish a farm budget. The existing cowpea selling-price and yield inputs remain supported by their separately cited sources; the production cost remains an Africa benchmark proxy."
+      "local_market_and_suitability_note": "Official market and agronomic context only. The BAMB statement confirms local procurement and a reported supply gap but does not quantify demand, guarantee a purchase, or establish a farm budget. The existing cowpea selling-price and yield inputs remain supported by their separately cited sources; the production cost remains an Africa benchmark proxy.",
+      "lemang_dijo_grant_total_reference_bwp_per_ha": 4400,
+      "lemang_dijo_grant_reference_as_of": "2026/27",
+      "lemang_dijo_grant_reference_source": "National Development Bank of Botswana, Lemang Dijo Programme description",
+      "lemang_dijo_grant_reference_url": "https://www.ndb.bw/lemang-dijo/",
+      "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit."
     },
     {
       "country_code": "GQ",
