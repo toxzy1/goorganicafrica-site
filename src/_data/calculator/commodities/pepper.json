@@ -451,7 +451,15 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "retail_price_reference_bwp_per_kg_low": 32.89,
+      "retail_price_reference_bwp_per_kg_high": 59.2,
+      "retail_price_reference_as_of": "2026-10",
+      "retail_price_reference_source": "Selina Wamucii Botswana peppers (various types) market price page",
+      "retail_price_reference_source_url": "https://www.selinawamucii.com/insights/prices/botswana/peppers-various-types/",
+      "market_channel_reference": "Local restricted horticulture crop list includes chilli peppers; Letsema market sweet pepper listing is not evidence for hot-pepper farmgate price",
+      "market_channel_reference_source_url": "https://businessweekly.co.bw/news/pace-of-vegetable-farmers-not-fast-enough-to-meet-demand",
+      "retail_price_reference_note": "Indicative third-party retail range for mixed pepper types in Gaborone/Francistown; not a cultivar-specific chilli/habanero or farmgate price. Not used as the calculator selling-price assumption."
     },
     {
       "country_code": "GQ",
