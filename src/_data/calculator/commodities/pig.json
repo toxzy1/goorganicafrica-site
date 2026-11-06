@@ -388,7 +388,16 @@
       "ifad_piggery_input_supply_note": "Feeder pigs are supplied by the government-owned Sebele Multiplication Unit or imported mainly from South Africa. IFAD reports six large-scale feed manufacturers producing about 825 tonnes/year valued at BWP2.4m, and five large-scale suppliers supplying about 354 tonnes/year valued at BWP1.1m. Reported 70/30 local-input sourcing regulation affects feed costs.",
       "ifad_piggery_market_note": "IFAD reports only 19% of live pigs for processing are sourced domestically. The report describes two micro slaughter facilities and two registered processors; market structure and imports are important context but do not establish a current farmgate price per liveweight kilogram.",
       "ifad_piggery_data_quality_note": "This 2025 Botswana-specific value-chain assessment strengthens local sector context, but it does not supply a validated per-pig production budget, feed consumption by growth stage, current feeder-pig purchase price, market liveweight or current farmgate price. Do not use its turnover/value-chain amounts as farm-level calculator costs or prices.",
-      "source_verification_checked_as_of": "2026-11-06"
+      "source_verification_checked_as_of": "2026-11-06",
+      "ifad_piggery_historical_value_chain_price_reference_bwp_per_kg": {
+        "input_cost": 21.2,
+        "wholesale": 24.8,
+        "retail": 28.4
+      },
+      "ifad_piggery_historical_value_chain_price_reference_source": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, Chapter 4 piggery value-chain diagram, adapted from Hellyer et al. (2015).",
+      "ifad_piggery_historical_value_chain_price_reference_as_of": "2015",
+      "ifad_piggery_historical_value_chain_price_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+      "ifad_piggery_historical_value_chain_price_reference_note": "Historical chain-level input-cost, wholesale and retail reference prices in BWP/kg, reproduced in the 2025 IFAD report from Hellyer et al. (2015). These are not current producer farmgate prices and are not comparable to a live pig selling price. Retained only as historical market-chain context; not used as calculator price_per_unit or current input costs."
     },
     {
       "country_code": "GQ",
