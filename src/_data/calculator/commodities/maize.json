@@ -443,7 +443,17 @@
       "lemang_dijo_grant_reference_as_of": "2026/27",
       "lemang_dijo_grant_reference_source": "National Development Bank of Botswana, Lemang Dijo Programme description",
       "lemang_dijo_grant_reference_url": "https://www.ndb.bw/lemang-dijo/",
-      "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit."
+      "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit.",
+      "local_maize_demand_and_supply_context": "Botswana Agricultural Marketing Board states white maize demand exceeds 100,000 tonnes/year while local production averages below 10,000 tonnes/year; it reports that 95% of white maize is imported. BAMB identifies Pandamatenga, Chobe Enclave, Barolong Farms and southern Ngwaketse as suitable production areas.",
+      "local_maize_demand_and_supply_context_source": "Botswana Agricultural Marketing Board, Grains information page.",
+      "local_maize_demand_and_supply_context_source_url": "https://bamb.co.bw/grains",
+      "local_maize_demand_and_supply_context_checked_as_of": "2026-11-06",
+      "local_maize_demand_and_supply_context_note": "National market-demand and production context, not a farmgate price, guaranteed buyer contract, district yield or production budget. Does not change the calculator's current yield or price inputs.",
+      "maize_exchange_market_reference_bwp_per_tonne": 3350,
+      "maize_exchange_market_reference_as_of": "2026-10-01",
+      "maize_exchange_market_reference_source": "RicherFin BMX commodities market listing, latest maize instrument observation dated 1 October 2026.",
+      "maize_exchange_market_reference_source_url": "https://www.richerfin.com/en/bmx/",
+      "maize_exchange_market_reference_note": "A market instrument quotation in BWP/tonne, not confirmed as a producer farmgate price or directly comparable to BAMB's grade-specific producer schedule. Retained as a separate market reference only; not used to overwrite calculator price scenarios."
     },
     {
       "country_code": "GQ",
