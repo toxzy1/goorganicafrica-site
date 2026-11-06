@@ -531,7 +531,14 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "retail_price_reference_bwp_per_kg": 13.12,
+      "retail_price_reference_as_of": "2026-10",
+      "retail_price_reference_source": "Selina Wamucii Botswana capsicum (bell pepper) market price page",
+      "retail_price_reference_source_url": "https://www.selinawamucii.com/insights/prices/botswana/capsicum-bell-pepper/",
+      "market_channel_reference": "Letsema Horticulture Market, Gaborone lists sweet pepper among traded crops; sold by crate",
+      "market_channel_reference_source_url": "https://divisi.africa/markets/botswana/letsema-horticulture-market/",
+      "retail_price_reference_note": "Indicative third-party retail reference for Gaborone/Francistown, not a verified producer or wholesale quotation. Letsema market confirms sweet pepper is traded by crate, but does not publish official daily prices. Not used as the calculator's farmgate selling-price assumption."
     },
     {
       "country_code": "GQ",
