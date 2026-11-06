@@ -438,7 +438,12 @@
       "seed_rate_source_url": "https://seedcogroup.com/bw/fieldcrops/media/faqs/",
       "cost_reference": "Botswana's 2026/27 Lemang Dijo one-hectare voucher lists programme support values for seeds (P580), harrowing (P495), ploughing (P1,045), planting (P495), pesticides/herbicides (P480), and fertiliser support up to P3,600 after soil testing. These are subsidy/voucher values, not a complete farmer-paid maize enterprise budget; they are not substituted for the calculator's disclosed benchmark cost.",
       "cost_reference_as_of": "2026/27",
-      "cost_reference_url": "https://lemangdijo.com/"
+      "cost_reference_url": "https://lemangdijo.com/",
+      "lemang_dijo_grant_total_reference_bwp_per_ha": 4400,
+      "lemang_dijo_grant_reference_as_of": "2026/27",
+      "lemang_dijo_grant_reference_source": "National Development Bank of Botswana, Lemang Dijo Programme description",
+      "lemang_dijo_grant_reference_url": "https://www.ndb.bw/lemang-dijo/",
+      "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit."
     },
     {
       "country_code": "GQ",
