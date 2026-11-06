@@ -5379,7 +5379,51 @@
             "pig_starter_50kg": 395,
             "pig_weaner_50kg": 405.73
           },
-          "feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. These are dated input-price references, not current retail quotations or a complete per-pig feed budget; not used to overwrite the calculator's benchmark production cost."
+          "feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. These are dated input-price references, not current retail quotations or a complete per-pig feed budget; not used to overwrite the calculator's benchmark production cost.",
+          "government_piggery_guide_feed_intake_reference": {
+            "dry_sow_meal": {
+              "body_mass": "adult",
+              "intake_kg_per_day": 2,
+              "duration_weeks": 41
+            },
+            "lactating_sow_meal": {
+              "body_mass": "adult",
+              "intake_kg_per_day_reference": "2–2.5 in week 1; 7 in weeks 2–8 (as table is rendered in source)",
+              "duration_weeks": 8
+            },
+            "creep_meal": {
+              "body_mass": "piglet 10–23 kg",
+              "intake_kg_per_day": 0.008,
+              "duration_weeks": 8
+            },
+            "weaner_meal": {
+              "body_mass": "18–25 kg",
+              "crude_protein_percent": 18,
+              "intake_kg_per_day": 0.8,
+              "duration_weeks": 5
+            },
+            "grower_meal": {
+              "body_mass": "57–70 kg",
+              "crude_protein_percent": 16,
+              "intake_kg_per_day": 1.5,
+              "duration_weeks": 6
+            },
+            "finisher_meal": {
+              "body_mass": "71–110 kg",
+              "crude_protein_percent": 14,
+              "intake_kg_per_day": 2.6,
+              "duration_weeks": 4
+            },
+            "boar_meal": {
+              "body_mass": "adult",
+              "intake_kg_per_day": 2,
+              "duration_weeks": 12
+            }
+          },
+          "government_piggery_guide_feed_intake_reference_as_of": "legacy government guide (hosted 2019-12; original table date not stated)",
+          "government_piggery_guide_feed_intake_reference_source": "Government of Botswana, Technical Guide for Establishing a Piggery Project, Feed Requirements and Feed Intake Program (Department of Animal Production)",
+          "government_piggery_guide_feed_intake_reference_source_url": "https://www.gov.bw/sites/default/files/2019-12/TECHNICAL%20GUIDE%20FOR%20ESTABLISHING%20A%20PIGGERY%20%20PROJECT.pdf",
+          "government_piggery_guide_feed_intake_reference_note": "Botswana-specific feeding-stage and daily intake reference. The guide says feed accounts for about 70% of pig-meat production cost. This is a legacy husbandry reference, not a current feed quotation or complete per-pig cost budget; intake figures are not used to calculate a new selling price or cost_per_unit."
         },
         {
           "country_code": "GQ",
