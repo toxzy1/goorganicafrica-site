@@ -6832,7 +6832,7 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark",
+          "data_quality": "country_specific_price_yield_and_cost",
           "historical_yield_reference_tonnes_per_ha": 28.55,
           "historical_yield_reference_as_of": "2024",
           "historical_yield_reference_source": "FAOSTAT tomato yield series, reproduced by Geo Factbook for Botswana; 2024 value",
@@ -6896,7 +6896,61 @@
           "lea_kgatleng_open_field_case_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
           "lea_kgatleng_open_field_case_note": "A single farmer-record example, not a national average or current quote. Reported yield 22.5 t/ha, farmgate price BWP12/kg, revenue BWP270,000/ha and total variable costs BWP68,121/ha (including harvest/distribution and other variable costs); gross margin BWP201,879/ha. The report excludes farm-level overheads and warns that farmer cost allocation and omissions may distort results. This case is retained as a local observed budget reference, not a calculator scenario by itself.",
           "government_vegetable_guideline_tomato_arithmetic_verification_note": "Rechecked against the Government PDF on 2026-11-06. The legacy tomato table states 30 tonnes, 4,200 x 7 kg, BWP12/kg, revenue BWP50,400, production costs BWP12,320, marketing costs BWP12,940, total variable costs BWP25,260 and gross margin BWP25,140. The printed revenue does not reconcile with 4,200 x 7 kg at BWP12/kg (which would be BWP352,800), nor with 30 tonnes at BWP12/kg (BWP360,000). The printed gross margin reconciles to the printed BWP50,400 revenue less BWP25,260 costs. Treat this legacy table's revenue/yield arithmetic as internally inconsistent; do not use its tomato price/revenue/yield values to calibrate calculator scenarios. The separate 30-tonne yield guidance in the maturity table is also historical and not a current observed farm yield.",
-          "government_vegetable_guideline_tomato_arithmetic_checked_as_of": "2026-11-06"
+          "government_vegetable_guideline_tomato_arithmetic_checked_as_of": "2026-11-06",
+          "cost_per_unit": 68121,
+          "cost_breakdown": [
+            {
+              "label": "Planting material",
+              "amount": 10200
+            },
+            {
+              "label": "Fertilizers",
+              "amount": 9066
+            },
+            {
+              "label": "Agrochemicals",
+              "amount": 18840
+            },
+            {
+              "label": "Labour",
+              "amount": 6000
+            },
+            {
+              "label": "Other pre-harvest costs",
+              "amount": 1400
+            },
+            {
+              "label": "Harvest and distribution",
+              "amount": 20740
+            },
+            {
+              "label": "Other variable costs",
+              "amount": 1875
+            }
+          ],
+          "yield_low": 15.75,
+          "yield_expected": 22.5,
+          "yield_high": 29.25,
+          "yield_unit": "tonnes",
+          "price_low": 8.4,
+          "price_expected": 12,
+          "price_high": 15.6,
+          "price_unit": "per kg",
+          "source": "Local Enterprise Authority, Tomato Enterprise Budgets, March 2024; Kgatleng District (Malotwana), one-hectare open-field farmer budget and its published ±30% sensitivity analysis",
+          "as_of": "2024-03",
+          "cost_source": "LEA Kgatleng open-field tomato enterprise budget: total variable costs BWP68,121/ha, with seven published cost categories. Excludes farm overheads and fixed costs.",
+          "cost_as_of": "2024-03",
+          "yield_source": "LEA Kgatleng farmer-record case: actual yield 22.5 t/ha; published sensitivity analysis tests output at -30% and +30%, giving 15.75 and 29.25 t/ha. Scenario bounds are modelled sensitivities, not national yield percentiles.",
+          "yield_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "price_source": "LEA Kgatleng farmer-record case: farmgate price BWP12/kg; published sensitivity analysis tests selling price at -30% and +30%, giving BWP8.40 and BWP15.60/kg. Scenario bounds are modelled sensitivities, not observed market minimum/maximum.",
+          "price_as_of": "2024-03",
+          "price_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "cost_breakdown_source": "LEA Kgatleng District (Malotwana), one-hectare open-field budget. Planting material BWP10,200; fertilizers BWP9,066; agrochemicals BWP18,840; labour BWP6,000; other pre-harvest BWP1,400; harvest/distribution BWP20,740; other variable costs BWP1,875; total BWP68,121/ha.",
+          "cost_breakdown_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "scenario_method_note": "The calculator's low/expected/high yield and selling-price inputs are built from the LEA report's explicit -30% / actual / +30% sensitivity cases around 22.5 t/ha and BWP12/kg. The per-hectare cost and breakdown use the same observed Kgatleng budget baseline (BWP68,121/ha). The report is historical (March 2024), based on a single district farmer case for these baseline inputs, and excludes farm overheads; use as a transparent Botswana-specific planning estimate, not a current guaranteed quote or national average.",
+          "recent_market_check_reference": "A current Mpatlise supplier stall page lists a Francistown supplier's tomato offer at BWP15/kg; this is a supplier asking price, not a verified transaction or national farmgate average.",
+          "recent_market_check_as_of": "2026-11-06",
+          "recent_market_check_source_url": "https://www.mpatise.com/agric/esales/crop/svstall.php?id=BW00001411160"
         },
         {
           "country_code": "GQ",
