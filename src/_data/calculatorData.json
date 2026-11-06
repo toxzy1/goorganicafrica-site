@@ -1227,7 +1227,16 @@
           "feed_reference_as_of": "2026-09",
           "feed_reference_source": "US Grains & Bioproducts Council Africa Feed Price report; Botswana September 2026 country entry",
           "feed_reference_source_url": "https://www.africafeedprice.com/feed-price",
-          "feed_reference_note": "National reference price for compound broiler feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost."
+          "feed_reference_note": "National reference price for compound broiler feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost.",
+          "local_feed_reference_as_of": "2025",
+          "local_feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+          "local_feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+          "local_feed_reference_prices_bwp": {
+            "broiler_finisher_50kg": 410.89,
+            "broiler_grower_50kg": 421.4,
+            "broiler_starter_50kg": 429.47
+          },
+          "local_feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. Dated feed-input references only; not current retail quotations or a complete per-bird production cost. Kept separate from calculator assumptions."
         },
         {
           "country_code": "GQ",
@@ -4071,7 +4080,15 @@
           "feed_reference_as_of": "2026-09",
           "feed_reference_source": "US Grains & Bioproducts Council Africa Feed Price report; Botswana September 2026 country entry",
           "feed_reference_source_url": "https://www.africafeedprice.com/feed-price",
-          "feed_reference_note": "National reference price for compound layer feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost."
+          "feed_reference_note": "National reference price for compound layer feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost.",
+          "local_feed_reference_as_of": "2025",
+          "local_feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+          "local_feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+          "local_feed_reference_prices_bwp": {
+            "layer_grower_50kg": 325,
+            "layer_mash_20kg": 325.06
+          },
+          "local_feed_reference_note": "Official 2025 public-procurement reference prices for Gaborone: layer grower per 50kg bag and layer mash per 20kg bag. Dated feed-input references only; not current retail quotations or a complete annual layer cost. Kept separate from calculator assumptions."
         },
         {
           "country_code": "GQ",
@@ -5306,7 +5323,17 @@
           "national_pork_demand_reference_tonnes": 5000,
           "national_pork_production_reference_source": "Botswana Ministry of Agriculture figures reported by BOPA/Daily News at the pig farmers workshop, November 2025",
           "national_pork_production_reference_source_url": "https://dailynews.gov.bw/news-detail/89014",
-          "national_pork_production_reference_note": "National industry context: reported pig population 19,010 and annual domestic pork production 1,768 tonnes against demand of 5,000 tonnes (2024/2025 figures). These figures are not farm-level growth rates, liveweight prices, feed costs or production budgets. Local calculator price and full cost inputs remain unverified."
+          "national_pork_production_reference_note": "National industry context: reported pig population 19,010 and annual domestic pork production 1,768 tonnes against demand of 5,000 tonnes (2024/2025 figures). These figures are not farm-level growth rates, liveweight prices, feed costs or production budgets. Local calculator price and full cost inputs remain unverified.",
+          "feed_reference_as_of": "2025",
+          "feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+          "feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+          "feed_reference_prices_bwp": {
+            "pig_lactating_sow_50kg": 329.26,
+            "pig_grower_50kg": 343.29,
+            "pig_starter_50kg": 395,
+            "pig_weaner_50kg": 405.73
+          },
+          "feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. These are dated input-price references, not current retail quotations or a complete per-pig feed budget; not used to overwrite the calculator's benchmark production cost."
         },
         {
           "country_code": "GQ",
