@@ -382,7 +382,14 @@
       "government_vegetable_guideline_crop_reference_as_of": "legacy guide hosted 2019-12; original publication date not stated",
       "government_vegetable_guideline_crop_reference_source": "Government of Botswana, Vegetable Enterprise Guideline, crop maturity and yield table",
       "government_vegetable_guideline_crop_reference_source_url": "https://gov.bw/sites/default/files/2019-12/VEGETABLE%20ENTERPRISE%20GUIDELINES.pdf",
-      "government_vegetable_guideline_crop_reference_note": "Legacy national planning-guide reference lists watermelon maturity at 150 days and yield at 16 tonnes. This is not a current measured national yield or farm budget; retained as historical context only and not used to overwrite calculator scenario inputs."
+      "government_vegetable_guideline_crop_reference_note": "Legacy national planning-guide reference lists watermelon maturity at 150 days and yield at 16 tonnes. This is not a current measured national yield or farm budget; retained as historical context only and not used to overwrite calculator scenario inputs.",
+      "government_horticulture_manual_watermelon_yield_reference_tonnes_per_ha_low": 9,
+      "government_horticulture_manual_watermelon_yield_reference_tonnes_per_ha_high": 11,
+      "government_horticulture_manual_watermelon_variety_maturity_days_reference": "85–105",
+      "government_horticulture_manual_reference_as_of": "legacy Botswana Ministry of Agriculture horticulture manual; publication year reported as 2003",
+      "government_horticulture_manual_source": "Government of Botswana, Ministry of Agriculture, Manual for Vegetable Production in Botswana, Horticultural Research Program; Cucurbits chapter",
+      "government_horticulture_manual_source_url": "https://www.researchgate.net/publication/362469461_Manual_for_Vegetable_Production_in_Botswana_GOVERNMENT_OF_BOTSWANA_MINISTRY_OF_AGRICULTURE_Manual_for_vegetable_production_in_Botswana_PREPARED_BY_THE_HORTICULTURAL_RESEARCH_PROGRAM",
+      "government_horticulture_manual_note": "Legacy technical manual gives expected watermelon yields of 9–11 tonnes/ha and recommended variety maturity examples of 85–105 days. A separate older government enterprise guideline gives a 16 t/ha planning yield and 150-day maturity assumption. These sources differ and are historical; they are retained as a range of published planning references, not a current verified yield. No local full farm budget or current farmgate price is established."
     },
     {
       "country_code": "GQ",
