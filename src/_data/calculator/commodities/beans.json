@@ -347,7 +347,6 @@
       "cost_as_of": "2026-10",
       "data_quality": "country_specific_price_and_yield_with_benchmark_cost",
       "price_source_url": "https://www.farmersplatform.co.bw/market-data",
-      "price_primary_source_url": "https://www.bamb.co.bw/bamb-prices",
       "yield_low": 0.139,
       "yield_expected": 0.3,
       "yield_high": 0.866,
@@ -370,7 +369,10 @@
       "lemang_dijo_grant_reference_as_of": "2026/27",
       "lemang_dijo_grant_reference_source": "National Development Bank of Botswana, Lemang Dijo Programme description",
       "lemang_dijo_grant_reference_url": "https://www.ndb.bw/lemang-dijo/",
-      "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit."
+      "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit.",
+      "price_source_verification_note": "Verification check on 2026-11-06: BAMB's official BAMB Prices page links to a producer-price PDF explicitly dated June 2022 and a contract-price PDF dated 2021. Those official files do not independently verify the July/August 2026 cowpea price range reproduced by The Farmers' Platform. The 2026 range is retained as secondary-reproduced market evidence only, pending direct confirmation from BAMB; it must not be described as verified against a current official BAMB price file.",
+      "price_source_verification_checked_as_of": "2026-11-06",
+      "price_source_verification_reference_url": "https://www.bamb.co.bw/bamb-prices"
     },
     {
       "country_code": "GQ",
