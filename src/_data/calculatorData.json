@@ -4255,7 +4255,18 @@
             "1200_bird_model_incremental_income": 83764
           },
           "ifad_layers_model_data_quality_note": "Botswana-specific project-design assumptions and financial models, not audited farm accounts or current retail/farmgate quotations. The 50-bird micro model includes 80% egg own-consumption, 15% chick mortality, 10% adult mortality, and a stated 25 eggs per hen annually; its annual egg output assumption is not representative of a standard commercial laying cycle. The model set uses differing scales and its income tables are incremental project benefits, not gross margins. Retain as supporting evidence only; do not populate calculator cost_per_unit, price_per_unit or production yield from these figures without reconciling model definitions and checking current local egg prices and feed costs.",
-          "source_verification_checked_as_of": "2026-11-06"
+          "source_verification_checked_as_of": "2026-11-06",
+          "national_egg_market_reference_as_of": "2025 production figures reported 2026-08",
+          "national_egg_production_reference_dozen_latest": 14700000,
+          "national_egg_demand_reference_dozen_annual": 13000000,
+          "national_egg_market_reference_source": "Mmegi report of Parliament statement, 10 August 2026: Botswana table egg production 14.7 million dozen against estimated annual demand of 13 million dozen.",
+          "national_egg_market_reference_source_url": "https://www.mmegi.bw/ampArticle/123625",
+          "national_egg_market_reference_note": "National market context only. The reported output exceeds estimated domestic demand; it does not establish a farmgate egg price, individual farm sales volume, laying rate or a complete layer enterprise budget. Not used as calculator revenue input.",
+          "poultry_feed_cost_pressure_reference_as_of": "2026-08-18",
+          "poultry_feed_cost_share_reference_percent": 80,
+          "poultry_feed_cost_pressure_reference_source": "Botswana Daily News/BOPA, Poultry farmers face high feed costs, 18 August 2026. Assistant Minister stated imported raw materials can account for up to 80% of production expenses and that the industry relies entirely on imported soya.",
+          "poultry_feed_cost_pressure_reference_url": "https://dailynews.gov.bw/news-detail/92782",
+          "poultry_feed_cost_pressure_reference_note": "Sector-level cost pressure, not a layer-farm-specific feed-cost percentage or annual ration budget. Supports the need for current local feed quotations before a Botswana layer profile can be marked complete."
         },
         {
           "country_code": "GQ",
