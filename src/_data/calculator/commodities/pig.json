@@ -306,7 +306,14 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "national_pig_population_reference": 19010,
+      "national_pig_population_reference_as_of": "2024/2025",
+      "national_pork_production_reference_tonnes": 1768,
+      "national_pork_demand_reference_tonnes": 5000,
+      "national_pork_production_reference_source": "Botswana Ministry of Agriculture figures reported by BOPA/Daily News at the pig farmers workshop, November 2025",
+      "national_pork_production_reference_source_url": "https://dailynews.gov.bw/news-detail/89014",
+      "national_pork_production_reference_note": "National industry context: reported pig population 19,010 and annual domestic pork production 1,768 tonnes against demand of 5,000 tonnes (2024/2025 figures). These figures are not farm-level growth rates, liveweight prices, feed costs or production budgets. Local calculator price and full cost inputs remain unverified."
     },
     {
       "country_code": "GQ",
