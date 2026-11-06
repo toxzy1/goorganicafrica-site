@@ -6827,7 +6827,19 @@
           "lea_open_field_enterprise_cost_reference_bwp_per_ha_high": 133880,
           "lea_enterprise_budget_reference_source": "Local Enterprise Authority, Tomato Enterprise Budgets, March 2024; farmer-record-based open-field cases in Kgatleng, Ngami, Boteti, North East and Chobe districts",
           "lea_enterprise_budget_reference_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
-          "lea_enterprise_budget_reference_note": "Historical farmer-record enterprise budgets, not a current national average. Comparable open-field cases reported yields of 8.25–22.8 t/ha, farmgate prices of BWP10–15/kg and reported enterprise cost totals of BWP33,841–133,880/ha. The report notes farmer-to-farmer variation, possible cost allocation/omission errors and excludes some overheads. A separate Central District shade-net case used crates and is not included in these ranges. Retained as reference evidence only; not used to set calculator scenario inputs."
+          "lea_enterprise_budget_reference_note": "Historical farmer-record enterprise budgets, not a current national average. Comparable open-field cases reported yields of 8.25–22.8 t/ha, farmgate prices of BWP10–15/kg and reported enterprise cost totals of BWP33,841–133,880/ha. The report notes farmer-to-farmer variation, possible cost allocation/omission errors and excludes some overheads. A separate Central District shade-net case used crates and is not included in these ranges. Retained as reference evidence only; not used to set calculator scenario inputs.",
+          "government_vegetable_guideline_budget_reference": "Botswana Government Vegetable Enterprise Guideline, tomato open-field one-hectare illustrative budget",
+          "government_vegetable_guideline_budget_reference_as_of": "legacy guide hosted 2019-12; original publication date not stated",
+          "government_vegetable_guideline_yield_reference_tonnes_per_ha": 30,
+          "government_vegetable_guideline_farmgate_price_reference_bwp_per_kg": 12,
+          "government_vegetable_guideline_production_cost_reference_bwp_per_ha": 12320,
+          "government_vegetable_guideline_marketing_cost_reference_bwp_per_ha": 12940,
+          "government_vegetable_guideline_total_variable_cost_reference_bwp_per_ha": 25260,
+          "government_vegetable_guideline_gross_margin_reference_bwp_per_ha": 25140,
+          "government_vegetable_guideline_break_even_price_reference_bwp_per_kg": 0.84,
+          "government_vegetable_guideline_source": "Government of Botswana, Vegetable Enterprise Guideline, tomato crop budget for one hectare",
+          "government_vegetable_guideline_source_url": "https://gov.bw/sites/default/files/2019-12/VEGETABLE%20ENTERPRISE%20GUIDELINES.pdf",
+          "government_vegetable_guideline_note": "Legacy illustrative government budget, not a current quote or observed national average. The table reports 30 tonnes, BWP12/kg, BWP12,320 production costs and BWP12,940 marketing costs (BWP25,260 total variable costs); the printed break-even price is BWP0.84/kg. The guide itself says crop budgets are guides only and should be adjusted for price movements, season and farm characteristics. Fixed assets and some overheads are separate/not fully included. Kept as evidence metadata only; not substituted for current calculator scenarios."
         },
         {
           "country_code": "GQ",
