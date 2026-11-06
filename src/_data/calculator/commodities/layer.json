@@ -351,7 +351,15 @@
         "layer_grower_50kg": 325,
         "layer_mash_20kg": 325.06
       },
-      "local_feed_reference_note": "Official 2025 public-procurement reference prices for Gaborone: layer grower per 50kg bag and layer mash per 20kg bag. Dated feed-input references only; not current retail quotations or a complete annual layer cost. Kept separate from calculator assumptions."
+      "local_feed_reference_note": "Official 2025 public-procurement reference prices for Gaborone: layer grower per 50kg bag and layer mash per 20kg bag. Dated feed-input references only; not current retail quotations or a complete annual layer cost. Kept separate from calculator assumptions.",
+      "national_poultry_sector_reference_as_of": "2024 production data (preliminary report)",
+      "national_layer_hens_produced_reference": 850000,
+      "national_egg_production_reference_dozen": 19600000,
+      "layer_eggs_per_hen_per_year_reference": 23,
+      "layer_large_scale_production_performance_reference_percent": 86,
+      "national_poultry_sector_reference_source": "Business Botswana Poultry Desk, Poultry Sector Preliminary Outlook (2024 production data; preliminary sector statistics)",
+      "national_poultry_sector_reference_source_url": "https://bb.org.bw/common_up/business-botswana/doc_1749631817.pdf",
+      "national_poultry_sector_reference_note": "National industry context only. The report's 2024 figures are preliminary and its fieldwork initially focused on commercial/large-scale operations; reported small-producer mortality is an industry estimate. These statistics are not farm-specific production assumptions, feed conversion ratios, selling prices or complete farm budgets. They are not used to overwrite calculator inputs."
     },
     {
       "country_code": "GQ",
