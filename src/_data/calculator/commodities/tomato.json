@@ -536,7 +536,19 @@
       "government_vegetable_guideline_break_even_price_reference_bwp_per_kg": 0.84,
       "government_vegetable_guideline_source": "Government of Botswana, Vegetable Enterprise Guideline, tomato crop budget for one hectare",
       "government_vegetable_guideline_source_url": "https://gov.bw/sites/default/files/2019-12/VEGETABLE%20ENTERPRISE%20GUIDELINES.pdf",
-      "government_vegetable_guideline_note": "Legacy illustrative government budget, not a current quote or observed national average. The table reports 30 tonnes, BWP12/kg, BWP12,320 production costs and BWP12,940 marketing costs (BWP25,260 total variable costs); the printed break-even price is BWP0.84/kg. The guide itself says crop budgets are guides only and should be adjusted for price movements, season and farm characteristics. Fixed assets and some overheads are separate/not fully included. Kept as evidence metadata only; not substituted for current calculator scenarios."
+      "government_vegetable_guideline_note": "Legacy illustrative government budget, not a current quote or observed national average. The table reports 30 tonnes, BWP12/kg, BWP12,320 production costs and BWP12,940 marketing costs (BWP25,260 total variable costs); the printed break-even price is BWP0.84/kg. The guide itself says crop budgets are guides only and should be adjusted for price movements, season and farm characteristics. Fixed assets and some overheads are separate/not fully included. Kept as evidence metadata only; not substituted for current calculator scenarios.",
+      "ministry_vegetable_manual_reference": "Botswana Ministry of Agriculture, Manual for Vegetable Production (first published 2003; reprinted 2006), tomato cultivar and production guidance",
+      "ministry_vegetable_manual_reference_as_of": "2003 first edition; reprinted 2006",
+      "ministry_tomato_cultivar_yield_potential_tonnes_per_ha_low": 60,
+      "ministry_tomato_cultivar_yield_potential_tonnes_per_ha_high": 75,
+      "ministry_tomato_cultivar_yield_reference": "Moneymaker 62 t/ha; Expresso 65 t/ha; Heinz 1370 60 t/ha; Zeal 66 t/ha; Zest 75 t/ha; Sixpack 60 t/ha",
+      "ministry_tomato_first_harvest_days_after_transplanting_reference": "80–90 days for the named cultivars; some September–January plantings reported at 60–70 days",
+      "ministry_tomato_seasonal_water_requirement_mm": 500,
+      "ministry_tomato_irrigation_application_mm_reference": 16.2,
+      "ministry_tomato_irrigation_interval_days_reference": "1.5 days in summer; 4 days in cool/winter season",
+      "ministry_vegetable_manual_source": "Government of Botswana, Ministry of Agriculture, Department of Agricultural Research, Manual for Vegetable Production in Botswana, first published May 2003 and reprinted 2006",
+      "ministry_vegetable_manual_source_url": "https://www.researchgate.net/publication/362469461_Manual_for_Vegetable_Production_in_Botswana_GOVERNMENT_OF_BOTSWANA_MINISTRY_OF_AGRICULTURE_Manual_for_vegetable_production_in_Botswana_PREPARED_BY_THE_HORTICULTURAL_RESEARCH_PROGRAM",
+      "ministry_vegetable_manual_note": "Historical cultivar-potential and husbandry references from a Botswana government horticultural manual. The 60–75 t/ha figures are named-cultivar mean/potential yields, not observed current national farm averages; irrigation and maturity guidance are legacy technical recommendations. These figures are not used as calculator scenario yields, prices or costs."
     },
     {
       "country_code": "GQ",
