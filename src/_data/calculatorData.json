@@ -7226,7 +7226,13 @@
           "historical_market_price_reference_as_of": "2019",
           "historical_market_price_reference_source": "Statistics Botswana, Annual Agricultural Survey Report 2019, Traditional Sector, Table 7.12E: national total watermelon sales revenue divided by quantity sold",
           "historical_market_price_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/ANNUAL%20AGRICULTURAL%20SURVEY%20REPORT%202019%20TRADITIONAL%20SECTOR.pdf",
-          "historical_market_price_reference_note": "Historical traditional-sector average only; not a current producer quotation and not used as the calculator selling-price assumption. Current price and full cost evidence remain unverified."
+          "historical_market_price_reference_note": "Historical traditional-sector average only; not a current producer quotation and not used as the calculator selling-price assumption. Current price and full cost evidence remain unverified.",
+          "government_vegetable_guideline_maturity_days_reference": 150,
+          "government_vegetable_guideline_yield_reference_tonnes_per_ha": 16,
+          "government_vegetable_guideline_crop_reference_as_of": "legacy guide hosted 2019-12; original publication date not stated",
+          "government_vegetable_guideline_crop_reference_source": "Government of Botswana, Vegetable Enterprise Guideline, crop maturity and yield table",
+          "government_vegetable_guideline_crop_reference_source_url": "https://gov.bw/sites/default/files/2019-12/VEGETABLE%20ENTERPRISE%20GUIDELINES.pdf",
+          "government_vegetable_guideline_crop_reference_note": "Legacy national planning-guide reference lists watermelon maturity at 150 days and yield at 16 tonnes. This is not a current measured national yield or farm budget; retained as historical context only and not used to overwrite calculator scenario inputs."
         },
         {
           "country_code": "GQ",
