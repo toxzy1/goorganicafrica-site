@@ -531,7 +531,13 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "historical_export_unit_value_reference_bwp_per_kg": 30.31,
+      "historical_export_unit_value_reference_as_of": "2023",
+      "historical_export_quantity_reference_tonnes": 0.6,
+      "historical_export_unit_value_reference_source": "UN Comtrade 2023 cucumber export unit value, reproduced by Selina Wamucii Botswana cucumber trade page",
+      "historical_export_unit_value_reference_source_url": "https://www.selinawamucii.com/insights/prices/botswana/cucumber/",
+      "historical_export_unit_value_reference_note": "Very small historical export flow (approximately 0.6 tonnes); trade unit value is not a domestic farmgate or wholesale price and is not used as the calculator selling-price assumption. Local production costs, yields and representative domestic prices remain unverified."
     },
     {
       "country_code": "GQ",
