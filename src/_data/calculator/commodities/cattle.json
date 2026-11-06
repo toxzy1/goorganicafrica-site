@@ -306,7 +306,14 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "national_population_reference_head": 1638543,
+      "national_population_reference_births": 373807,
+      "national_population_reference_deaths": 143076,
+      "national_population_reference_as_of": "2025 census (reference period Oct 2024-Sep 2025)",
+      "national_population_reference_source": "Statistics Botswana, Agricultural Census 2025 Stats Brief: Livestock Sector (September 2026)",
+      "national_population_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Agricultural%20Census%20Stats%20Brief%202025%20-Livestock%20Sector.pdf",
+      "national_population_reference_note": "National herd inventory reference only; census population, births and deaths are not sale weights, offtake rates, farmgate prices or production costs. The census results are provisional."
     },
     {
       "country_code": "GQ",
