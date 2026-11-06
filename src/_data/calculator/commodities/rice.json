@@ -411,7 +411,14 @@
     },
     {
       "country_code": "BW",
-      "data_quality": "benchmark"
+      "data_quality": "benchmark",
+      "import_value_reference_bwp_million": 42.7,
+      "import_reference_period": "January 2024–February 2025",
+      "import_reference_product": "Semi-milled or wholly milled rice, excluding broken rice",
+      "paddy_import_value_reference_bwp_million": 3.1,
+      "import_reference_source": "Statistics Botswana, Botswana Food and Beverages Imports February 2025, cereal import table",
+      "import_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Botswana%20Food%20and%20Beverages%20Imports%20February%202025.pdf",
+      "import_reference_note": "Import-value evidence only: BWP 42.7 million for semi/wholly milled rice and BWP 3.1 million for paddy rice over Jan 2024–Feb 2025. These are national import values, not local paddy farmgate prices, yields or production costs."
     },
     {
       "country_code": "GQ",
