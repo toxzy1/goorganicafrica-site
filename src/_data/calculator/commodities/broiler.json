@@ -321,7 +321,15 @@
         "broiler_grower_50kg": 421.4,
         "broiler_starter_50kg": 429.47
       },
-      "local_feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. Dated feed-input references only; not current retail quotations or a complete per-bird production cost. Kept separate from calculator assumptions."
+      "local_feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. Dated feed-input references only; not current retail quotations or a complete per-bird production cost. Kept separate from calculator assumptions.",
+      "national_poultry_sector_reference_as_of": "2024 production data (preliminary report)",
+      "national_broiler_day_old_chicks_hatched_reference": 39355114,
+      "national_poultry_meat_production_reference_tonnes": 52000,
+      "broiler_mortality_reference_percent_large_scale": 8.2,
+      "broiler_mortality_reference_percent_small_scale": 15,
+      "national_poultry_sector_reference_source": "Business Botswana Poultry Desk, Poultry Sector Preliminary Outlook (2024 production data; preliminary sector statistics)",
+      "national_poultry_sector_reference_source_url": "https://bb.org.bw/common_up/business-botswana/doc_1749631817.pdf",
+      "national_poultry_sector_reference_note": "National industry context only. The report's 2024 figures are preliminary and its fieldwork initially focused on commercial/large-scale operations; reported small-producer mortality is an industry estimate. These statistics are not farm-specific production assumptions, feed conversion ratios, selling prices or complete farm budgets. They are not used to overwrite calculator inputs."
     },
     {
       "country_code": "GQ",
