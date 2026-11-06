@@ -2804,7 +2804,14 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark"
+          "data_quality": "benchmark",
+          "national_production_reference_tonnes": 117,
+          "national_production_reference_as_of": "2026-11",
+          "national_production_reference_source": "Government of Botswana report on Mmadinare Fish Hatchery restoration; national fish production estimate stated by the Minister of Lands and Agriculture",
+          "national_production_reference_source_url": "https://dailynews.gov.bw/news-detail/93926",
+          "national_recognised_fish_farmers_reference": 50,
+          "national_fish_food_security_requirement_tonnes": 5000,
+          "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified."
         },
         {
           "country_code": "GQ",
@@ -5292,7 +5299,14 @@
         },
         {
           "country_code": "BW",
-          "data_quality": "benchmark"
+          "data_quality": "benchmark",
+          "national_pig_population_reference": 19010,
+          "national_pig_population_reference_as_of": "2024/2025",
+          "national_pork_production_reference_tonnes": 1768,
+          "national_pork_demand_reference_tonnes": 5000,
+          "national_pork_production_reference_source": "Botswana Ministry of Agriculture figures reported by BOPA/Daily News at the pig farmers workshop, November 2025",
+          "national_pork_production_reference_source_url": "https://dailynews.gov.bw/news-detail/89014",
+          "national_pork_production_reference_note": "National industry context: reported pig population 19,010 and annual domestic pork production 1,768 tonnes against demand of 5,000 tonnes (2024/2025 figures). These figures are not farm-level growth rates, liveweight prices, feed costs or production budgets. Local calculator price and full cost inputs remain unverified."
         },
         {
           "country_code": "GQ",
