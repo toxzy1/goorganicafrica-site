@@ -6877,7 +6877,26 @@
           "ministry_tomato_irrigation_interval_days_reference": "1.5 days in summer; 4 days in cool/winter season",
           "ministry_vegetable_manual_source": "Government of Botswana, Ministry of Agriculture, Department of Agricultural Research, Manual for Vegetable Production in Botswana, first published May 2003 and reprinted 2006",
           "ministry_vegetable_manual_source_url": "https://www.researchgate.net/publication/362469461_Manual_for_Vegetable_Production_in_Botswana_GOVERNMENT_OF_BOTSWANA_MINISTRY_OF_AGRICULTURE_Manual_for_vegetable_production_in_Botswana_PREPARED_BY_THE_HORTICULTURAL_RESEARCH_PROGRAM",
-          "ministry_vegetable_manual_note": "Historical cultivar-potential and husbandry references from a Botswana government horticultural manual. The 60–75 t/ha figures are named-cultivar mean/potential yields, not observed current national farm averages; irrigation and maturity guidance are legacy technical recommendations. These figures are not used as calculator scenario yields, prices or costs."
+          "ministry_vegetable_manual_note": "Historical cultivar-potential and husbandry references from a Botswana government horticultural manual. The 60–75 t/ha figures are named-cultivar mean/potential yields, not observed current national farm averages; irrigation and maturity guidance are legacy technical recommendations. These figures are not used as calculator scenario yields, prices or costs.",
+          "lea_kgatleng_open_field_case_yield_tonnes_per_ha": 22.5,
+          "lea_kgatleng_open_field_case_farmgate_price_bwp_per_kg": 12,
+          "lea_kgatleng_open_field_case_total_variable_cost_bwp_per_ha": 68121,
+          "lea_kgatleng_open_field_case_revenue_bwp_per_ha": 270000,
+          "lea_kgatleng_open_field_case_gross_margin_bwp_per_ha": 201879,
+          "lea_kgatleng_open_field_case_cost_breakdown_bwp_per_ha": {
+            "planting_material": 10200,
+            "fertilizers": 9066,
+            "agrochemicals": 18840,
+            "labour": 6000,
+            "other_pre_harvest": 1400,
+            "harvest_and_distribution": 20740,
+            "other_variable": 1875
+          },
+          "lea_kgatleng_open_field_case_source": "Local Enterprise Authority, Tomato Enterprise Budgets, March 2024; Kgatleng District (Malotwana), one-hectare open-field farmer-record case, three-month cropping period",
+          "lea_kgatleng_open_field_case_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "lea_kgatleng_open_field_case_note": "A single farmer-record example, not a national average or current quote. Reported yield 22.5 t/ha, farmgate price BWP12/kg, revenue BWP270,000/ha and total variable costs BWP68,121/ha (including harvest/distribution and other variable costs); gross margin BWP201,879/ha. The report excludes farm-level overheads and warns that farmer cost allocation and omissions may distort results. This case is retained as a local observed budget reference, not a calculator scenario by itself.",
+          "government_vegetable_guideline_tomato_arithmetic_verification_note": "Rechecked against the Government PDF on 2026-11-06. The legacy tomato table states 30 tonnes, 4,200 x 7 kg, BWP12/kg, revenue BWP50,400, production costs BWP12,320, marketing costs BWP12,940, total variable costs BWP25,260 and gross margin BWP25,140. The printed revenue does not reconcile with 4,200 x 7 kg at BWP12/kg (which would be BWP352,800), nor with 30 tonnes at BWP12/kg (BWP360,000). The printed gross margin reconciles to the printed BWP50,400 revenue less BWP25,260 costs. Treat this legacy table's revenue/yield arithmetic as internally inconsistent; do not use its tomato price/revenue/yield values to calibrate calculator scenarios. The separate 30-tonne yield guidance in the maturity table is also historical and not a current observed farm yield.",
+          "government_vegetable_guideline_tomato_arithmetic_checked_as_of": "2026-11-06"
         },
         {
           "country_code": "GQ",
