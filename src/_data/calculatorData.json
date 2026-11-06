@@ -1937,7 +1937,13 @@
           "national_population_reference_as_of": "2025 census (reference period Oct 2024-Sep 2025)",
           "national_population_reference_source": "Statistics Botswana, Agricultural Census 2025 Stats Brief: Livestock Sector (September 2026)",
           "national_population_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Agricultural%20Census%20Stats%20Brief%202025%20-Livestock%20Sector.pdf",
-          "national_population_reference_note": "National herd inventory reference only; census population, births and deaths are not sale weights, offtake rates, farmgate prices or production costs. The census results are provisional."
+          "national_population_reference_note": "National herd inventory reference only; census population, births and deaths are not sale weights, offtake rates, farmgate prices or production costs. The census results are provisional.",
+          "official_processor_carcass_price_eu_bwp_per_kg": 45,
+          "official_processor_carcass_price_other_markets_bwp_per_kg": 31,
+          "official_processor_price_as_of": "2026-11-06 (BMC FAQ page accessed)",
+          "official_processor_price_source": "Botswana Meat Commission, cattle buying FAQ; stated carcass-mass prices for eligible cattle at BMC Lobatse",
+          "official_processor_price_source_url": "https://bmc.bw/faq",
+          "official_processor_price_note": "Processor carcass-mass buying prices, not liveweight farmgate prices. EU price requires grading and compliance; Other Markets price differs. BMC Lobatse zone and animal eligibility restrictions apply. Not used as the calculator's generic live-animal selling-price assumption."
         },
         {
           "country_code": "GQ",
