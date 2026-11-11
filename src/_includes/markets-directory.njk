@@ -202,11 +202,6 @@
         var isMarketsPath = /^\/(?:en\/|fr\/|ar\/|pt\/|sw\/)?markets$/i.test(targetPath);
         if (!isGoOrganicHost || !isMarketsPath) return;
         var context = (link.closest("article") && link.closest("article").textContent || "").toLowerCase();
-        if (/tanzania ministry of agriculture/.test(context)) {
-          link.href = "https://www.kilimo.go.tz/publications/market-bulletin";
-          link.setAttribute("data-source-link-repaired", "true");
-          return;
-        }
         var notice = document.createElement("span");
         notice.setAttribute("data-i18n", "markets.sourceLinkUnavailable");
         notice.textContent = "Source link unavailable — use the source registry to locate the original publication.";
