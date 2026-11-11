@@ -319,7 +319,15 @@
         "participating_farmers": 137,
         "hatchery_potential_fingerlings": 500000,
         "note": "National aquaculture sector output and farmer count only. Not a farm-level yield, stocking density, survival rate, production cost or farm-gate selling price. Retained as contextual evidence and not used as calculator financial inputs."
-      }
+      },
+      "national_feed_cost_share_reference_percent": {
+        "low": 60,
+        "high": 70
+      },
+      "national_feed_cost_share_reference_as_of": "2026-09-08",
+      "national_feed_cost_share_reference_source": "Botswana DailyNews, Untapped resources opportunity for aquaculture growth (8 September 2026), reporting remarks by Okavango Research Institute",
+      "national_feed_cost_share_reference_source_url": "https://dailynews.gov.bw/news-detail/93170",
+      "national_feed_cost_share_reference_note": "Reported sector-level share of aquaculture production costs attributable to feed. Not a measured cost share for an individual farm and not converted into a pula cost assumption."
     }
   ],
   "active": true
