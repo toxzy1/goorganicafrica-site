@@ -1,0 +1,35 @@
+name: Monitor agricultural directories
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check approved directory sources
+        run: python scripts/update-directories.py
+      - name: Create review PR for queue and monitoring state
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automated/directory-review-queue
+          delete-branch: true
+          commit-message: "Update agricultural directory review queue"
+          title: "Automated agricultural directory review queue"
+          body: |
+            Automated review queue generated from approved agricultural resource sources.
+            Review candidates before publishing or changing public directory records.
+            Monitoring state records each source fingerprint and last-check timestamp.
+          add-paths: |
+            data/directories/pending/directory-candidates-latest.json
+            data/directories/pending/directory-monitor-state.json
