@@ -356,7 +356,23 @@
       "local_broiler_market_price_reference_source": "IFAD BoLCoP 2025 financial model, modelled selling price for a four-month broiler",
       "local_broiler_market_price_reference_as_of": "2025-10",
       "local_broiler_market_price_reference_note": "Modelled price assumption in a project design financial model, not an observed current transaction or current farmgate quote.",
-      "source_verification_checked_as_of": "2026-11-06"
+      "source_verification_checked_as_of": "2026-11-06",
+      "official_sector_update_2026": {
+        "source": "Botswana Government statements to Parliament, reported by DailyNews/BOPA",
+        "source_url": "https://dailynews.gov.bw/news-detail/92782",
+        "reported_date": "2026-08-18",
+        "feed_cost_share_of_production_costs_up_to_percent": 80,
+        "note": "Government statement that imported raw materials can account for up to 80% of poultry production expenses. Sector-level upper-bound statement, not a measured share for an individual farm or a complete cost budget."
+      },
+      "chick_supply_update_2025": {
+        "source": "Botswana Government statement to Parliament, reported by DailyNews/BOPA",
+        "source_url": "https://dailynews.gov.bw/news-detail/90387",
+        "reported_date": "2026-03-04",
+        "reference_period": "2025-01 to 2025-12",
+        "broiler_chicks_produced": 38890722,
+        "small_scale_allocation_percent": 35,
+        "note": "National hatchery production and allocation context only. Does not establish a farm's chick purchase price, survival, growth rate or selling price."
+      }
     }
   ],
   "active": true
