@@ -309,7 +309,17 @@
       "national_production_reference_source_url": "https://dailynews.gov.bw/news-detail/93926",
       "national_recognised_fish_farmers_reference": 50,
       "national_fish_food_security_requirement_tonnes": 5000,
-      "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified."
+      "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified.",
+      "national_aquaculture_reference": {
+        "source": "Government of Botswana, Ministry of Lands and Agriculture — 2026 Budget Hansard",
+        "source_url": "https://www.parliament.gov.bw/documents/DAILY-HANSARD--02-MARCH-2026---Budget-Meeting--2nd-meeting-of-the-2nd-session-of-the-13th-Parliament_04_47_10_05_03_2026.pdf",
+        "reported_date": "2026-03-02",
+        "reference_period": "2025/2026 financial year",
+        "national_aquaculture_production_tonnes": 120,
+        "participating_farmers": 137,
+        "hatchery_potential_fingerlings": 500000,
+        "note": "National aquaculture sector output and farmer count only. Not a farm-level yield, stocking density, survival rate, production cost or farm-gate selling price. Retained as contextual evidence and not used as calculator financial inputs."
+      }
     }
   ],
   "active": true
