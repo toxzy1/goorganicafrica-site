@@ -156,7 +156,31 @@
       "slug": "botswana",
       "default_language": "en",
       "source_profile": "bw-ag-data",
-      "directory_only": true
+      "data_mode": "mixed_source",
+      "localized_commodities": [
+        "beans",
+        "maize",
+        "tomato"
+      ],
+      "benchmark_fallback_commodities": 14,
+      "data_quality_note": "Botswana has one complete locally sourced profile (tomato), two partial local profiles (beans/cowpea and maize) with benchmark cost proxies, and 14 benchmark-only profiles. Benchmark assumptions are clearly disclosed and must not be described as local farm budgets.",
+      "localized_data_components": {
+        "beans": [
+          "yield",
+          "producer_price"
+        ],
+        "maize": [
+          "yield",
+          "producer_price"
+        ],
+        "tomato": [
+          "yield",
+          "producer_price",
+          "production_cost",
+          "cost_breakdown"
+        ]
+      },
+      "directory_only": false
     },
     {
       "code": "BF",

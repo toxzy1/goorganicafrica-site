@@ -299,6 +299,61 @@
       "price_low": 120,
       "price_high": 280,
       "price_unit": "per kg (farm-gate, ~1kg fish)"
+    },
+    {
+      "country_code": "BW",
+      "data_quality": "benchmark",
+      "national_production_reference_tonnes": 117,
+      "national_production_reference_as_of": "2026-11",
+      "national_production_reference_source": "Government of Botswana report on Mmadinare Fish Hatchery restoration; national fish production estimate stated by the Minister of Lands and Agriculture",
+      "national_production_reference_source_url": "https://dailynews.gov.bw/news-detail/93926",
+      "national_recognised_fish_farmers_reference": 50,
+      "national_fish_food_security_requirement_tonnes": 5000,
+      "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified.",
+      "national_aquaculture_reference": {
+        "source": "Government of Botswana, Ministry of Lands and Agriculture — 2026 Budget Hansard",
+        "source_url": "https://www.parliament.gov.bw/documents/DAILY-HANSARD--02-MARCH-2026---Budget-Meeting--2nd-meeting-of-the-2nd-session-of-the-13th-Parliament_04_47_10_05_03_2026.pdf",
+        "reported_date": "2026-03-02",
+        "reference_period": "2025/2026 financial year",
+        "national_aquaculture_production_tonnes": 120,
+        "participating_farmers": 137,
+        "hatchery_potential_fingerlings": 500000,
+        "note": "National aquaculture sector output and farmer count only. Not a farm-level yield, stocking density, survival rate, production cost or farm-gate selling price. Retained as contextual evidence and not used as calculator financial inputs."
+      },
+      "national_feed_cost_share_reference_percent": {
+        "low": 60,
+        "high": 70
+      },
+      "national_feed_cost_share_reference_as_of": "2026-09-08",
+      "national_feed_cost_share_reference_source": "Botswana DailyNews, Untapped resources opportunity for aquaculture growth (8 September 2026), reporting remarks by Okavango Research Institute",
+      "national_feed_cost_share_reference_source_url": "https://dailynews.gov.bw/news-detail/93170",
+      "national_feed_cost_share_reference_note": "Reported sector-level share of aquaculture production costs attributable to feed. Not a measured cost share for an individual farm and not converted into a pula cost assumption.",
+      "official_aquaculture_system_yield_reference_kg_per_ha_year": {
+        "extensive": {
+          "low": 500,
+          "high": 1500
+        },
+        "semi_intensive": {
+          "low": 2000,
+          "high": 20000
+        }
+      },
+      "official_aquaculture_system_yield_reference_source": "Government of Botswana, Development of Aquaculture in Botswana — Fisheries booklet",
+      "official_aquaculture_system_yield_reference_source_url": "https://www.gov.bw/sites/default/files/2020-08/Fisheries%20booklet-Development%20of%20Aquaculture%20in%20Botswana.pdf",
+      "official_aquaculture_system_yield_reference_note": "Published system-level production ranges, not a verified farm yield or a catfish-specific yield. The extensive and semi-intensive systems differ in stocking density, feed and management; do not apply these ranges as a default farm assumption without selecting a matching system.",
+      "official_intensive_aquaculture_system_yield_reference_kg_per_m2_year": {
+        "flow_through": {
+          "low": 5,
+          "high": 50
+        },
+        "bio_filter_recirculating": {
+          "low": 70,
+          "high": 100
+        }
+      },
+      "official_intensive_aquaculture_system_yield_reference_source": "Government of Botswana, Development of Aquaculture in Botswana — Fisheries booklet",
+      "official_intensive_aquaculture_system_yield_reference_source_url": "https://www.gov.bw/sites/default/files/2020-08/Fisheries%20booklet-Development%20of%20Aquaculture%20in%20Botswana.pdf",
+      "official_intensive_aquaculture_system_yield_reference_note": "Published intensive-system output ranges expressed per square metre per year. The source describes flow-through systems at 5–50 kg/m²/year and bio-filter recirculating systems at 70–100 kg/m²/year. These are system-level technical references, not verified farm results or catfish-specific guarantees; keep the unit separate from hectare-based pond references and do not use as a default calculator assumption."
     }
   ],
   "active": true

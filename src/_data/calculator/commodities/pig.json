@@ -303,6 +303,101 @@
       "price_low": 6000,
       "price_high": 15000,
       "price_unit": "per pig (live, ~80kg)"
+    },
+    {
+      "country_code": "BW",
+      "data_quality": "benchmark",
+      "national_pig_population_reference": 19010,
+      "national_pig_population_reference_as_of": "2024/2025",
+      "national_pork_production_reference_tonnes": 1768,
+      "national_pork_demand_reference_tonnes": 5000,
+      "national_pork_production_reference_source": "Botswana Ministry of Agriculture figures reported by BOPA/Daily News at the pig farmers workshop, November 2025",
+      "national_pork_production_reference_source_url": "https://dailynews.gov.bw/news-detail/89014",
+      "national_pork_production_reference_note": "National industry context: reported pig population 19,010 and annual domestic pork production 1,768 tonnes against demand of 5,000 tonnes (2024/2025 figures). These figures are not farm-level growth rates, liveweight prices, feed costs or production budgets. Local calculator price and full cost inputs remain unverified.",
+      "feed_reference_as_of": "2025",
+      "feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+      "feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+      "feed_reference_prices_bwp": {
+        "pig_lactating_sow_50kg": 329.26,
+        "pig_grower_50kg": 343.29,
+        "pig_starter_50kg": 395,
+        "pig_weaner_50kg": 405.73
+      },
+      "feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. These are dated input-price references, not current retail quotations or a complete per-pig feed budget; not used to overwrite the calculator's benchmark production cost.",
+      "government_piggery_guide_feed_intake_reference": {
+        "dry_sow_meal": {
+          "body_mass": "adult",
+          "intake_kg_per_day": 2,
+          "duration_weeks": 41
+        },
+        "lactating_sow_meal": {
+          "body_mass": "adult",
+          "intake_kg_per_day_reference": "2–2.5 in week 1; 7 in weeks 2–8 (as table is rendered in source)",
+          "duration_weeks": 8
+        },
+        "creep_meal": {
+          "body_mass": "piglet 10–23 kg",
+          "intake_kg_per_day": 0.008,
+          "duration_weeks": 8
+        },
+        "weaner_meal": {
+          "body_mass": "18–25 kg",
+          "crude_protein_percent": 18,
+          "intake_kg_per_day": 0.8,
+          "duration_weeks": 5
+        },
+        "grower_meal": {
+          "body_mass": "57–70 kg",
+          "crude_protein_percent": 16,
+          "intake_kg_per_day": 1.5,
+          "duration_weeks": 6
+        },
+        "finisher_meal": {
+          "body_mass": "71–110 kg",
+          "crude_protein_percent": 14,
+          "intake_kg_per_day": 2.6,
+          "duration_weeks": 4
+        },
+        "boar_meal": {
+          "body_mass": "adult",
+          "intake_kg_per_day": 2,
+          "duration_weeks": 12
+        }
+      },
+      "government_piggery_guide_feed_intake_reference_as_of": "legacy government guide (hosted 2019-12; original table date not stated)",
+      "government_piggery_guide_feed_intake_reference_source": "Government of Botswana, Technical Guide for Establishing a Piggery Project, Feed Requirements and Feed Intake Program (Department of Animal Production)",
+      "government_piggery_guide_feed_intake_reference_source_url": "https://www.gov.bw/sites/default/files/2019-12/TECHNICAL%20GUIDE%20FOR%20ESTABLISHING%20A%20PIGGERY%20%20PROJECT.pdf",
+      "government_piggery_guide_feed_intake_reference_note": "Botswana-specific feeding-stage and daily intake reference. The guide says feed accounts for about 70% of pig-meat production cost. This is a legacy husbandry reference, not a current feed quotation or complete per-pig cost budget; intake figures are not used to calculate a new selling price or cost_per_unit.",
+      "ifad_piggery_sector_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, 22 October 2025; piggery value-chain assessment.",
+      "ifad_piggery_sector_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+      "ifad_piggery_sector_reference_as_of": "2025-10-22",
+      "ifad_piggery_sector_structure": {
+        "micro_farms_share_of_pig_production_percent": 84,
+        "small_scale_farms_share_of_pig_production_percent": 16,
+        "typical_herd_size": "Fewer than 20 pigs for most producers",
+        "large_scale_operations_count": 1,
+        "large_scale_operation_sow_units": 200,
+        "live_pig_domestic_sourcing_share_for_processing_percent": 19,
+        "feed_manufacturers_count": 6,
+        "feed_manufacturers_annual_output_tonnes": 825,
+        "feed_manufacturers_annual_value_bwp": 2400000,
+        "feed_suppliers_count": 5,
+        "feed_suppliers_annual_supply_tonnes": 354,
+        "feed_suppliers_annual_value_bwp": 1100000
+      },
+      "ifad_piggery_input_supply_note": "Feeder pigs are supplied by the government-owned Sebele Multiplication Unit or imported mainly from South Africa. IFAD reports six large-scale feed manufacturers producing about 825 tonnes/year valued at BWP2.4m, and five large-scale suppliers supplying about 354 tonnes/year valued at BWP1.1m. Reported 70/30 local-input sourcing regulation affects feed costs.",
+      "ifad_piggery_market_note": "IFAD reports only 19% of live pigs for processing are sourced domestically. The report describes two micro slaughter facilities and two registered processors; market structure and imports are important context but do not establish a current farmgate price per liveweight kilogram.",
+      "ifad_piggery_data_quality_note": "This 2025 Botswana-specific value-chain assessment strengthens local sector context, but it does not supply a validated per-pig production budget, feed consumption by growth stage, current feeder-pig purchase price, market liveweight or current farmgate price. Do not use its turnover/value-chain amounts as farm-level calculator costs or prices.",
+      "source_verification_checked_as_of": "2026-11-06",
+      "ifad_piggery_historical_value_chain_price_reference_bwp_per_kg": {
+        "input_cost": 21.2,
+        "wholesale": 24.8,
+        "retail": 28.4
+      },
+      "ifad_piggery_historical_value_chain_price_reference_source": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, Chapter 4 piggery value-chain diagram, adapted from Hellyer et al. (2015).",
+      "ifad_piggery_historical_value_chain_price_reference_as_of": "2015",
+      "ifad_piggery_historical_value_chain_price_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+      "ifad_piggery_historical_value_chain_price_reference_note": "Historical chain-level input-cost, wholesale and retail reference prices in BWP/kg, reproduced in the 2025 IFAD report from Hellyer et al. (2015). These are not current producer farmgate prices and are not comparable to a live pig selling price. Retained only as historical market-chain context; not used as calculator price_per_unit or current input costs."
     }
   ],
   "active": true

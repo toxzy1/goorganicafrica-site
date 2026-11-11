@@ -303,6 +303,89 @@
       "price_low": 16000,
       "price_high": 40000,
       "price_unit": "per head (fattened)"
+    },
+    {
+      "country_code": "BW",
+      "data_quality": "benchmark",
+      "national_population_reference_head": 1638543,
+      "national_population_reference_births": 373807,
+      "national_population_reference_deaths": 143076,
+      "national_population_reference_as_of": "2025 census (reference period Oct 2024-Sep 2025)",
+      "national_population_reference_source": "Statistics Botswana, Agricultural Census 2025 Stats Brief: Livestock Sector (September 2026)",
+      "national_population_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Agricultural%20Census%20Stats%20Brief%202025%20-Livestock%20Sector.pdf",
+      "national_population_reference_note": "National herd inventory reference only; census population, births and deaths are not sale weights, offtake rates, farmgate prices or production costs. The census results are provisional.",
+      "official_processor_carcass_price_eu_bwp_per_kg": 45,
+      "official_processor_carcass_price_other_markets_bwp_per_kg": 31,
+      "official_processor_price_as_of": "2026-11-06 (BMC FAQ page accessed)",
+      "official_processor_price_source": "Botswana Meat Commission, cattle buying FAQ; stated carcass-mass prices for eligible cattle at BMC Lobatse",
+      "official_processor_price_source_url": "https://bmc.bw/faq",
+      "official_processor_price_note": "Processor carcass-mass buying prices, not liveweight farmgate prices. EU price requires grading and compliance; Other Markets price differs. BMC Lobatse zone and animal eligibility restrictions apply. Not used as the calculator's generic live-animal selling-price assumption.",
+      "bmc_minimum_carcass_weight_reference_kg": 160,
+      "bmc_minimum_carcass_weight_reference_source": "Botswana Meat Commission cattle buying FAQ; BMC states it buys ready-to-slaughter cattle weighing 160 kg carcass mass and above.",
+      "bmc_minimum_carcass_weight_reference_url": "https://bmc.bw/faq",
+      "bmc_minimum_carcass_weight_reference_note": "Eligibility threshold at BMC; carcass mass is not liveweight. BMC's EU market requires additional zone, age, traceability and compliance conditions.",
+      "smallholder_cattle_cost_study_reference_as_of": "2023 study, published 2023",
+      "smallholder_cattle_cost_study_mean_bwp_per_production_unit": {
+        "feed_and_licks": 2142,
+        "veterinary": 10226,
+        "labour": 3750
+      },
+      "smallholder_cattle_cost_study_source": "Otieno et al., Productive efficiency of beef cattle production in Botswana: a latent class stochastic meta-frontier analysis, Frontiers in Sustainable Food Systems (2023), survey production-unit descriptive statistics.",
+      "smallholder_cattle_cost_study_source_url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1098642/full",
+      "smallholder_cattle_cost_study_note": "Study sample mean input costs per production unit, not a standardized per-head annual budget or current 2026 quote. The unit represents a surveyed farm/production unit; values are context only and are not used as calculator cost_per_unit.",
+      "cattle_transport_cost_market_reference_bwp_per_head": 1500,
+      "cattle_transport_cost_market_reference_as_of": "2026-10-01",
+      "cattle_transport_cost_market_reference_source": "Farmers' Platform expert column, Botswana's Crippled Beef Industry, 1 October 2026; reports that farmers in remote areas may face transport costs of approximately P1,500 per animal.",
+      "cattle_transport_cost_market_reference_url": "https://www.farmersplatform.co.bw/articles/expert-columns/botswanas-crippled-beef-industry",
+      "cattle_transport_cost_market_reference_note": "Reported farmer/industry estimate for some remote routes, not a universal freight tariff or farm-specific cost. Transport distance, loading, holding and route conditions vary; not used as a generic calculator cost.",
+      "source_verification_checked_as_of": "2026-11-06",
+      "national_census_reference": {
+        "source": "Statistics Botswana, Agricultural Census 2025 — Livestock Sector Stats Brief",
+        "source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Agricultural%20Census%20Stats%20Brief%202025%20-Livestock%20Sector.pdf",
+        "published": "2026-09",
+        "reference_period": "2024-10 to 2025-09",
+        "provisional": true,
+        "note": "National and district population, holdings, births and deaths are contextual census indicators only. They are not farm-level production costs, sale prices, growth rates or complete enterprise budgets, and must not be used as calculator financial inputs.",
+        "national_population": 1638543,
+        "population_2015": 1744166,
+        "population_change_percent": -6.1,
+        "holdings": 36788,
+        "births": 373807,
+        "deaths": 143076
+      },
+      "official_feed_input_reference_2025": {
+        "locality": "Gaborone",
+        "source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025",
+        "source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+        "prices_bwp": [
+          {
+            "item": "Bull ration",
+            "unit": "40 kg bag",
+            "price": 235.87
+          },
+          {
+            "item": "Coarse salt",
+            "unit": "50 kg bag",
+            "price": 108.6
+          },
+          {
+            "item": "Drought pellets",
+            "unit": "50 kg bag",
+            "price": 235.25
+          },
+          {
+            "item": "Lucerne, first grade",
+            "unit": "30 kg bale",
+            "price": 144.93
+          },
+          {
+            "item": "Wheat bran",
+            "unit": "25 kg bag",
+            "price": 130.96
+          }
+        ],
+        "note": "Dated 2025 public-procurement reference prices for Gaborone, not current farm-retail quotations or actual purchase costs for a specific producer. Keep each product and pack size distinct; these references are not used as a per-head calculator cost assumption."
+      }
     }
   ],
   "active": true
