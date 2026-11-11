@@ -373,6 +373,53 @@
         "small_scale_allocation_percent": 35,
         "note": "National hatchery production and allocation context only. Does not establish a farm's chick purchase price, survival, growth rate or selling price."
       }
+    },
+    {
+      "country_code": "DZ",
+      "data_quality": "provisional_local_cost_and_market_scenario",
+      "cost_per_unit": 662.5,
+      "cost_low_per_unit": 625,
+      "cost_high_per_unit": 700,
+      "cost_breakdown": [
+        {
+          "label": "Day-old chick (September 2026 hatchery reference)",
+          "amount": 140
+        },
+        {
+          "label": "Feed (5 kg per bird at 8,000 DZD/quintal)",
+          "amount": 400
+        },
+        {
+          "label": "Veterinary, heating, litter, energy and labour (modelled residual)",
+          "amount": 122.5
+        }
+      ],
+      "survival_rate": 95,
+      "price_per_unit": 700,
+      "price_low": 500,
+      "price_high": 1025,
+      "price_unit": "per bird (live, approximately 2.5 kg)",
+      "source": "Provisional Algeria broiler planning model: ProfitPilot Algeria poultry simulator (updated 2026-09-26); ONAB–FNA agreement (January 2026); TSA report on producer costs/prices (December 2025).",
+      "as_of": "2026-09",
+      "cost_source": "Estimated cost range of DZD250–280/kg live weight reported by Algerian poultry farmers at end-2025, converted at a 2.5 kg live sale weight to DZD625–700 per bird. Expected cost DZD662.50/bird is the midpoint, not an audited farm budget.",
+      "cost_as_of": "2025-12",
+      "cost_source_url": "https://www.tsa-algerie.com/algerie-les-prix-du-poulet-en-chute-libre/",
+      "cost_breakdown_source": "Modelled decomposition using a DZD140 day-old chick reference and 5 kg feed per 2.5 kg live bird at DZD8,000/quintal; the DZD122.50 balance is an estimated allowance for veterinary, heating, litter, energy and labour. This breakdown is not a published farm account.",
+      "feed_conversion_reference": 2,
+      "sale_weight_kg_reference": 2.5,
+      "feed_price_dzd_per_quintal_reference": 8000,
+      "chick_price_dzd_reference": 140,
+      "chick_price_as_of": "2026-09-23",
+      "chick_price_source": "ProfitPilot Algeria poultry profitability simulator, hatchery listings recorded 23 September 2026.",
+      "chick_price_source_url": "https://profitpilot.dz/outils/simulateur-rentabilite-elevage",
+      "price_source": "Low: DZD200/kg producer-gate price reported at end-2025; expected: DZD280/kg ONAB contract price (January 2026); high: DZD410/kg upper wholesale reference recorded September 2026. The upper value is a wholesale-market reference, not a farmgate quote.",
+      "price_as_of": "2026-09",
+      "price_source_url": "https://news.radioalgerie.dz/fr/node/77160",
+      "yield_source": "ENSA Algiers broiler trial reference reproduced by ProfitPilot: approximately 2.5 kg live weight at seven weeks. Used as the planning output per bird, not a guaranteed farm result.",
+      "yield_source_url": "https://profitpilot.dz/outils/simulateur-rentabilite-elevage",
+      "survival_rate_source": "ProfitPilot summary of Algerian well-managed farm mortality benchmarks: 3–6.5%; 95% survival is a rounded planning assumption.",
+      "survival_rate_as_of": "2026-09",
+      "scenario_method_note": "This is a provisional, locally grounded planning scenario, not a fully verified farm budget. The cost range is derived from reported DZD250–280/kg live production cost multiplied by 2.5 kg. The cost breakdown is a transparent modelled allocation. Selling-price scenarios span different channels and periods: historical producer-gate, ONAB contract, and September 2026 wholesale; compare like-for-like channels before making investment decisions. Do not mark Algeria calculator-ready on this profile alone."
     }
   ],
   "active": true
