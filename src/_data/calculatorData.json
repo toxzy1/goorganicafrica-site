@@ -2906,7 +2906,20 @@
           "national_feed_cost_share_reference_as_of": "2026-09-08",
           "national_feed_cost_share_reference_source": "Botswana DailyNews, Untapped resources opportunity for aquaculture growth (8 September 2026), reporting remarks by Okavango Research Institute",
           "national_feed_cost_share_reference_source_url": "https://dailynews.gov.bw/news-detail/93170",
-          "national_feed_cost_share_reference_note": "Reported sector-level share of aquaculture production costs attributable to feed. Not a measured cost share for an individual farm and not converted into a pula cost assumption."
+          "national_feed_cost_share_reference_note": "Reported sector-level share of aquaculture production costs attributable to feed. Not a measured cost share for an individual farm and not converted into a pula cost assumption.",
+          "official_aquaculture_system_yield_reference_kg_per_ha_year": {
+            "extensive": {
+              "low": 500,
+              "high": 1500
+            },
+            "semi_intensive": {
+              "low": 2000,
+              "high": 20000
+            }
+          },
+          "official_aquaculture_system_yield_reference_source": "Government of Botswana, Development of Aquaculture in Botswana — Fisheries booklet",
+          "official_aquaculture_system_yield_reference_source_url": "https://www.gov.bw/sites/default/files/2020-08/Fisheries%20booklet-Development%20of%20Aquaculture%20in%20Botswana.pdf",
+          "official_aquaculture_system_yield_reference_note": "Published system-level production ranges, not a verified farm yield or a catfish-specific yield. The extensive and semi-intensive systems differ in stocking density, feed and management; do not apply these ranges as a default farm assumption without selecting a matching system."
         }
       ],
       "active": true
