@@ -4806,7 +4806,10 @@
           "maize_exchange_market_reference_as_of": "2026-10-01",
           "maize_exchange_market_reference_source": "RicherFin BMX commodities market listing, latest maize instrument observation dated 1 October 2026.",
           "maize_exchange_market_reference_source_url": "https://www.richerfin.com/en/bmx/",
-          "maize_exchange_market_reference_note": "A market instrument quotation in BWP/tonne, not confirmed as a producer farmgate price or directly comparable to BAMB's grade-specific producer schedule. Retained as a separate market reference only; not used to overwrite calculator price scenarios."
+          "maize_exchange_market_reference_note": "A market instrument quotation in BWP/tonne, not confirmed as a producer farmgate price or directly comparable to BAMB's grade-specific producer schedule. Retained as a separate market reference only; not used to overwrite calculator price scenarios.",
+          "price_source_verification_note": "Verification checked 2026-11-11: Botswana Agricultural Marketing Board's official BAMB Prices page currently links a producer-price file named June_Producer_Prices.pdf and a contract-price PDF dated 2021; the page does not independently verify the July/August 2026 grade-specific prices reproduced by The Farmers' Platform. Retain those 2026 values as secondary-reproduced market evidence only, pending direct confirmation from BAMB. Do not describe them as independently verified against a current official BAMB price file.",
+          "price_source_verification_checked_as_of": "2026-11-11",
+          "price_source_verification_reference_url": "https://www.bamb.co.bw/bamb-prices"
         }
       ],
       "active": true
