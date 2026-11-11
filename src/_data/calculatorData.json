@@ -2898,7 +2898,15 @@
           "national_production_reference_source_url": "https://dailynews.gov.bw/news-detail/93926",
           "national_recognised_fish_farmers_reference": 50,
           "national_fish_food_security_requirement_tonnes": 5000,
-          "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified."
+          "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified.",
+          "national_feed_cost_share_reference_percent": {
+            "low": 60,
+            "high": 70
+          },
+          "national_feed_cost_share_reference_as_of": "2026-09-08",
+          "national_feed_cost_share_reference_source": "Botswana DailyNews, Untapped resources opportunity for aquaculture growth (8 September 2026), reporting remarks by Okavango Research Institute",
+          "national_feed_cost_share_reference_source_url": "https://dailynews.gov.bw/news-detail/93170",
+          "national_feed_cost_share_reference_note": "Reported sector-level share of aquaculture production costs attributable to feed. Not a measured cost share for an individual farm and not converted into a pula cost assumption."
         }
       ],
       "active": true
