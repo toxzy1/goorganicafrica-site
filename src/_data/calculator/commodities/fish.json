@@ -340,7 +340,20 @@
       },
       "official_aquaculture_system_yield_reference_source": "Government of Botswana, Development of Aquaculture in Botswana — Fisheries booklet",
       "official_aquaculture_system_yield_reference_source_url": "https://www.gov.bw/sites/default/files/2020-08/Fisheries%20booklet-Development%20of%20Aquaculture%20in%20Botswana.pdf",
-      "official_aquaculture_system_yield_reference_note": "Published system-level production ranges, not a verified farm yield or a catfish-specific yield. The extensive and semi-intensive systems differ in stocking density, feed and management; do not apply these ranges as a default farm assumption without selecting a matching system."
+      "official_aquaculture_system_yield_reference_note": "Published system-level production ranges, not a verified farm yield or a catfish-specific yield. The extensive and semi-intensive systems differ in stocking density, feed and management; do not apply these ranges as a default farm assumption without selecting a matching system.",
+      "official_intensive_aquaculture_system_yield_reference_kg_per_m2_year": {
+        "flow_through": {
+          "low": 5,
+          "high": 50
+        },
+        "bio_filter_recirculating": {
+          "low": 70,
+          "high": 100
+        }
+      },
+      "official_intensive_aquaculture_system_yield_reference_source": "Government of Botswana, Development of Aquaculture in Botswana — Fisheries booklet",
+      "official_intensive_aquaculture_system_yield_reference_source_url": "https://www.gov.bw/sites/default/files/2020-08/Fisheries%20booklet-Development%20of%20Aquaculture%20in%20Botswana.pdf",
+      "official_intensive_aquaculture_system_yield_reference_note": "Published intensive-system output ranges expressed per square metre per year. The source describes flow-through systems at 5–50 kg/m²/year and bio-filter recirculating systems at 70–100 kg/m²/year. These are system-level technical references, not verified farm results or catfish-specific guarantees; keep the unit separate from hectare-based pond references and do not use as a default calculator assumption."
     }
   ],
   "active": true
