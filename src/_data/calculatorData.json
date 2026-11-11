@@ -2028,7 +2028,40 @@
           "cattle_transport_cost_market_reference_source": "Farmers' Platform expert column, Botswana's Crippled Beef Industry, 1 October 2026; reports that farmers in remote areas may face transport costs of approximately P1,500 per animal.",
           "cattle_transport_cost_market_reference_url": "https://www.farmersplatform.co.bw/articles/expert-columns/botswanas-crippled-beef-industry",
           "cattle_transport_cost_market_reference_note": "Reported farmer/industry estimate for some remote routes, not a universal freight tariff or farm-specific cost. Transport distance, loading, holding and route conditions vary; not used as a generic calculator cost.",
-          "source_verification_checked_as_of": "2026-11-06"
+          "source_verification_checked_as_of": "2026-11-06",
+          "official_feed_input_reference_2025": {
+            "locality": "Gaborone",
+            "source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025",
+            "source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+            "prices_bwp": [
+              {
+                "item": "Bull ration",
+                "unit": "40 kg bag",
+                "price": 235.87
+              },
+              {
+                "item": "Coarse salt",
+                "unit": "50 kg bag",
+                "price": 108.6
+              },
+              {
+                "item": "Drought pellets",
+                "unit": "50 kg bag",
+                "price": 235.25
+              },
+              {
+                "item": "Lucerne, first grade",
+                "unit": "30 kg bale",
+                "price": 144.93
+              },
+              {
+                "item": "Wheat bran",
+                "unit": "25 kg bag",
+                "price": 130.96
+              }
+            ],
+            "note": "Dated 2025 public-procurement reference prices for Gaborone, not current farm-retail quotations or actual purchase costs for a specific producer. Keep each product and pack size distinct; these references are not used as a per-head calculator cost assumption."
+          }
         }
       ],
       "active": true
