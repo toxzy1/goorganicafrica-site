@@ -75,8 +75,8 @@
       "output_low": 220,
       "output_expected": 270,
       "output_high": 320,
-      "price_low": 1.0,
-      "price_high": 2.0,
+      "price_low": 1,
+      "price_high": 2,
       "price_unit": "per egg"
     },
     {
@@ -334,6 +334,72 @@
       "price_low": 8,
       "price_high": 18,
       "price_unit": "per egg"
+    },
+    {
+      "country_code": "BW",
+      "data_quality": "benchmark",
+      "feed_reference_usd_per_tonne": 322,
+      "feed_reference_product": "Compound layer feed",
+      "feed_reference_as_of": "2026-09",
+      "feed_reference_source": "US Grains & Bioproducts Council Africa Feed Price report; Botswana September 2026 country entry",
+      "feed_reference_source_url": "https://www.africafeedprice.com/feed-price",
+      "feed_reference_note": "National reference price for compound layer feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost.",
+      "local_feed_reference_as_of": "2025",
+      "local_feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+      "local_feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+      "local_feed_reference_prices_bwp": {
+        "layer_grower_50kg": 325,
+        "layer_mash_20kg": 325.06
+      },
+      "local_feed_reference_note": "Official 2025 public-procurement reference prices for Gaborone: layer grower per 50kg bag and layer mash per 20kg bag. Dated feed-input references only; not current retail quotations or a complete annual layer cost. Kept separate from calculator assumptions.",
+      "national_poultry_sector_reference_as_of": "2024 production data (preliminary report)",
+      "national_layer_hens_produced_reference": 850000,
+      "national_egg_production_reference_dozen": 19600000,
+      "layer_eggs_per_hen_per_year_reference": 23,
+      "layer_large_scale_production_performance_reference_percent": 86,
+      "national_poultry_sector_reference_source": "Business Botswana Poultry Desk, Poultry Sector Preliminary Outlook (2024 production data; preliminary sector statistics)",
+      "national_poultry_sector_reference_source_url": "https://bb.org.bw/common_up/business-botswana/doc_1749631817.pdf",
+      "national_poultry_sector_reference_note": "National industry context only. The report's 2024 figures are preliminary and its fieldwork initially focused on commercial/large-scale operations; reported small-producer mortality is an industry estimate. These statistics are not farm-specific production assumptions, feed conversion ratios, selling prices or complete farm budgets. They are not used to overwrite calculator inputs.",
+      "ifad_layers_model_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, dated 22 October 2025; poultry-layers financial models for 50, 150, 250, 400 and 1,200 birds.",
+      "ifad_layers_model_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+      "ifad_layers_model_reference_as_of": "2025-10-22",
+      "ifad_layers_model_parameters_bwp": {
+        "egg_selling_price_per_egg": 3,
+        "modelled_chicken_selling_price_per_bird": 85,
+        "day_old_chick_price": 10,
+        "family_labour_per_day": 25,
+        "family_labour_days_in_50_bird_micro_model": 40,
+        "chicks_mortality_rate_steady_state_percent": 15,
+        "adult_hen_mortality_rate_steady_state_percent": 10,
+        "modelled_egg_output_per_hen_annual": 25,
+        "modelled_herd_sizes": [
+          50,
+          150,
+          250,
+          400,
+          1200
+        ]
+      },
+      "ifad_layers_model_income_reference_bwp": {
+        "50_bird_model_incremental_income": 4860,
+        "150_bird_model_incremental_income": 30457,
+        "250_bird_model_incremental_income": 60441,
+        "400_bird_model_incremental_income": 26670,
+        "1200_bird_model_incremental_income": 83764
+      },
+      "ifad_layers_model_data_quality_note": "Botswana-specific project-design assumptions and financial models, not audited farm accounts or current retail/farmgate quotations. The 50-bird micro model includes 80% egg own-consumption, 15% chick mortality, 10% adult mortality, and a stated 25 eggs per hen annually; its annual egg output assumption is not representative of a standard commercial laying cycle. The model set uses differing scales and its income tables are incremental project benefits, not gross margins. Retain as supporting evidence only; do not populate calculator cost_per_unit, price_per_unit or production yield from these figures without reconciling model definitions and checking current local egg prices and feed costs.",
+      "source_verification_checked_as_of": "2026-11-06",
+      "national_egg_market_reference_as_of": "2025 production figures reported 2026-08",
+      "national_egg_production_reference_dozen_latest": 14700000,
+      "national_egg_demand_reference_dozen_annual": 13000000,
+      "national_egg_market_reference_source": "Mmegi report of Parliament statement, 10 August 2026: Botswana table egg production 14.7 million dozen against estimated annual demand of 13 million dozen.",
+      "national_egg_market_reference_source_url": "https://www.mmegi.bw/ampArticle/123625",
+      "national_egg_market_reference_note": "National market context only. The reported output exceeds estimated domestic demand; it does not establish a farmgate egg price, individual farm sales volume, laying rate or a complete layer enterprise budget. Not used as calculator revenue input.",
+      "poultry_feed_cost_pressure_reference_as_of": "2026-08-18",
+      "poultry_feed_cost_share_reference_percent": 80,
+      "poultry_feed_cost_pressure_reference_source": "Botswana Daily News/BOPA, Poultry farmers face high feed costs, 18 August 2026. Assistant Minister stated imported raw materials can account for up to 80% of production expenses and that the industry relies entirely on imported soya.",
+      "poultry_feed_cost_pressure_reference_url": "https://dailynews.gov.bw/news-detail/92782",
+      "poultry_feed_cost_pressure_reference_note": "Sector-level cost pressure, not a layer-farm-specific feed-cost percentage or annual ration budget. Supports the need for current local feed quotations before a Botswana layer profile can be marked complete."
     }
   ],
   "active": true
