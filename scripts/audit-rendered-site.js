@@ -227,8 +227,8 @@ function normalizedSourceHref(value) {
 
 const enabledLanguages = ["en", "fr", "ar", "pt", "sw"];
 const languagePrefix = (lang) => lang === "en" ? "" : lang + "/";
-const hasLang = (html, lang) => { const match = html.match(/<html\\b[^>]*\\blang=["\\']([^"\\']+)["\\']/i); return !!match && match[1].split("-")[0].toLowerCase() === lang; };
-const hasRtl = (html) => /<html\\b[^>]*\\bdir=["\\']rtl["\\']/i.test(html);
+const hasLang = (html, lang) => { const match = html.match(/<html\b[^>]*\blang="([^"]+)"/i); return !!match && match[1].split("-")[0].toLowerCase() === lang; };
+const hasRtl = (html) => /<html\b[^>]*\bdir="rtl"/i.test(html);
 const newsPages = enabledLanguages.map((lang) => ({ lang, rel: languagePrefix(lang) + "agricultural-news/index.html" }));
 
 for (const item of newsPages) {
