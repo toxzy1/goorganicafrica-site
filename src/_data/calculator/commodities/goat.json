@@ -303,6 +303,59 @@
       "price_low": 3000,
       "price_high": 8000,
       "price_unit": "per mature goat"
+    },
+    {
+      "country_code": "BW",
+      "data_quality": "benchmark",
+      "national_population_reference_head": 1271407,
+      "national_population_reference_births": 550066,
+      "national_population_reference_deaths": 256861,
+      "national_population_reference_as_of": "2025 census (reference period Oct 2024-Sep 2025)",
+      "national_population_reference_source": "Statistics Botswana, Agricultural Census 2025 Stats Brief: Livestock Sector (September 2026)",
+      "national_population_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Agricultural%20Census%20Stats%20Brief%202025%20-Livestock%20Sector.pdf",
+      "national_population_reference_note": "National herd inventory reference only; census population, births and deaths are not sale weights, offtake rates, farmgate prices or production costs. The census results are provisional.",
+      "ifad_small_ruminant_model_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, 22 October 2025; combined goat-and-sheep enterprise models and 100-head infrastructure/breeding-stock budget.",
+      "ifad_small_ruminant_model_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+      "ifad_small_ruminant_model_reference_as_of": "2025-10-22",
+      "ifad_small_ruminant_model_parameters_bwp": {
+        "model_units": [
+          {
+            "type": "goat",
+            "heads": 6,
+            "without_project_output_heads": 2,
+            "with_project_output_heads": 4,
+            "modelled_price_per_head": 1000
+          },
+          {
+            "type": "goat_and_sheep",
+            "heads": 14,
+            "without_project_output_heads": 6,
+            "with_project_output_heads": 14,
+            "modelled_price_per_head": 1000
+          },
+          {
+            "type": "goat_and_sheep",
+            "heads": 22,
+            "without_project_output_heads": 6,
+            "with_project_output_heads": 20,
+            "modelled_price_per_head": 1000
+          },
+          {
+            "type": "goat_and_sheep",
+            "heads": 125,
+            "without_project_output_heads": 14,
+            "with_project_output_heads": 125,
+            "modelled_price_per_head": 1000
+          }
+        ],
+        "combined_100_head_unit_infrastructure_investment_bwp": 143000,
+        "combined_100_head_unit_equipment_investment_bwp": 10530,
+        "combined_100_head_unit_medication_operating_budget_bwp": 23000,
+        "combined_100_head_unit_consumables_operating_budget_bwp": 14000,
+        "combined_100_head_unit_breeding_stock_budget_bwp": 112500
+      },
+      "ifad_small_ruminant_model_data_quality_note": "The IFAD report models one 6-head goat unit and several combined goat-and-sheep units. Its 100-head infrastructure and breeding-stock budget is for a combined goat/sheep enterprise, not a standalone goat budget. The modelled BWP1,000/head value and project output counts are planning assumptions, not current market transactions or independently verified annual offtake. Keep as supporting evidence only; do not populate the goat calculator cost_per_unit, sale price or yield from these mixed-species/project assumptions.",
+      "source_verification_checked_as_of": "2026-11-06"
     }
   ],
   "active": true
