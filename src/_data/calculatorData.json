@@ -3327,7 +3327,36 @@
             "combined_100_head_unit_breeding_stock_budget_bwp": 112500
           },
           "ifad_small_ruminant_model_data_quality_note": "The IFAD report models one 6-head goat unit and several combined goat-and-sheep units. Its 100-head infrastructure and breeding-stock budget is for a combined goat/sheep enterprise, not a standalone goat budget. The modelled BWP1,000/head value and project output counts are planning assumptions, not current market transactions or independently verified annual offtake. Keep as supporting evidence only; do not populate the goat calculator cost_per_unit, sale price or yield from these mixed-species/project assumptions.",
-          "source_verification_checked_as_of": "2026-11-06"
+          "source_verification_checked_as_of": "2026-11-06",
+          "official_small_stock_feed_reference_2025": {
+            "source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025",
+            "source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+            "reference_year": 2025,
+            "locality_prices_bwp": {
+              "Francistown": {
+                "calf_and_goat_maintenance_50kg": 310.08,
+                "goat_and_sheep_finisher_meal_40kg": 274.37,
+                "small_stock_grower_40kg": 278.37,
+                "mineral_block_10kg": 59.5,
+                "lucerne_first_grade_30kg": 153.41
+              },
+              "Gaborone": {
+                "calf_and_goat_maintenance_50kg": 306.9,
+                "goat_and_sheep_finisher_meal_40kg": 289.83,
+                "small_stock_grower_40kg": 280.33,
+                "mineral_block_10kg": 49.76,
+                "lucerne_first_grade_30kg": 144.93
+              },
+              "Maun": {
+                "calf_and_goat_maintenance_50kg": 346.04,
+                "goat_and_sheep_finisher_meal_40kg": 250.31,
+                "small_stock_grower_40kg": 291.98,
+                "mineral_block_10kg": 53.13,
+                "lucerne_first_grade_30kg": 146.11
+              }
+            },
+            "note": "Dated 2025 public-procurement reference prices by locality. Product formulations and pack sizes differ; these are not current retail quotations or a full per-goat ration/cost budget. Keep as input price references only and do not apply as calculator cost_per_unit without a farm-specific feeding plan and consumption quantities."
+          }
         }
       ],
       "active": true
