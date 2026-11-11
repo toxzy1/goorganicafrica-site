@@ -334,6 +334,47 @@
           "price_expected": 65,
           "price_high": 110,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "price_low": 7.7,
+          "price_expected": 10.4125,
+          "price_high": 13.5,
+          "price_unit": "per kg",
+          "price_source": "Botswana Agricultural Marketing Board scheduled-produce producer/market price schedule, July/August 2026, reproduced by The Farmers' Platform. Range: Tswana cowpeas Grade 2 BWP 7.70/kg to Black-eye cowpeas Grade 1 BWP 13.50/kg; intermediate observations include Tswana Grade 1 BWP 11.00/kg and Black-eye Grade 2 BWP 9.45/kg.",
+          "price_as_of": "2026-08",
+          "source": "Botswana-specific BAMB cowpea producer/market price schedule (July/August 2026); yield and production cost remain Africa benchmark estimates, not Botswana farm measurements or enterprise budgets.",
+          "as_of": "2026-08",
+          "cost_source": "Africa benchmark estimate; not a Botswana-specific farmer-paid input or enterprise budget. Botswana 2026/27 Lemang Dijo voucher values are recorded separately as subsidy evidence only.",
+          "cost_as_of": "2026-10",
+          "data_quality": "country_specific_price_and_yield_with_benchmark_cost",
+          "price_source_url": "https://www.farmersplatform.co.bw/market-data",
+          "yield_low": 0.139,
+          "yield_expected": 0.3,
+          "yield_high": 0.866,
+          "yield_unit": "tonnes",
+          "yield_source": "Botswana-specific evidence: national cowpea yield reported around 139 kg/ha by Statistics Botswana (2013); peer-reviewed Botswana field-evaluation paper reports national average around 300 kg/ha and trial genotype yields ranging 318–866 kg/ha. The high scenario is an observed trial-genotype ceiling, not a national commercial average.",
+          "yield_source_url": "https://academicjournals.org/journal/AJAR/article-full-text/41CE99A64882",
+          "yield_reference_url": "https://www.statsbots.org.bw/agriculture",
+          "seed_rate_kg_per_ha": 10,
+          "seed_rate_source": "Seed Co Botswana rain-fed crop guidance: cowpeas 10 kg/ha. This is a recommended sowing rate, not a seed price.",
+          "seed_rate_source_url": "https://seedcogroup.com/bw/fieldcrops/media/faqs/",
+          "cost_reference": "Botswana's 2026/27 Lemang Dijo one-hectare voucher lists programme support values for seeds (P580), harrowing (P495), ploughing (P1,045), planting (P495), pesticides/herbicides (P480), and fertiliser support up to P3,600 after soil testing. These are subsidy/voucher values, not a complete farmer-paid cowpea enterprise budget; they are not substituted for the calculator's disclosed benchmark cost.",
+          "cost_reference_as_of": "2026/27",
+          "cost_reference_url": "https://lemangdijo.com/",
+          "local_market_demand_reference": "Botswana Agricultural Marketing Board states demand for Tswana cowpeas currently exceeds supply and that it promotes production; BAMB buys Tswana and Black-eyed cowpeas from local farmers.",
+          "local_production_suitability_reference": "BAMB describes Tswana cowpeas as drought tolerant and suitable for cultivation throughout Botswana; Black-eyed cowpeas can be produced successfully in most areas.",
+          "local_market_and_suitability_source": "Botswana Agricultural Marketing Board, Pulses/Beans information page",
+          "local_market_and_suitability_source_url": "https://bamb.co.bw/pulsesbeans",
+          "local_market_and_suitability_note": "Official market and agronomic context only. The BAMB statement confirms local procurement and a reported supply gap but does not quantify demand, guarantee a purchase, or establish a farm budget. The existing cowpea selling-price and yield inputs remain supported by their separately cited sources; the production cost remains an Africa benchmark proxy.",
+          "lemang_dijo_grant_total_reference_bwp_per_ha": 4400,
+          "lemang_dijo_grant_reference_as_of": "2026/27",
+          "lemang_dijo_grant_reference_source": "National Development Bank of Botswana, Lemang Dijo Programme description",
+          "lemang_dijo_grant_reference_url": "https://www.ndb.bw/lemang-dijo/",
+          "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit.",
+          "price_source_verification_note": "Verification check on 2026-11-06: BAMB's official BAMB Prices page links to a producer-price PDF explicitly dated June 2022 and a contract-price PDF dated 2021. Those official files do not independently verify the July/August 2026 cowpea price range reproduced by The Farmers' Platform. The 2026 range is retained as secondary-reproduced market evidence only, pending direct confirmation from BAMB; it must not be described as verified against a current official BAMB price file.",
+          "price_source_verification_checked_as_of": "2026-11-06",
+          "price_source_verification_reference_url": "https://www.bamb.co.bw/bamb-prices"
         }
       ],
       "active": true
@@ -868,6 +909,31 @@
           "price_expected": 60,
           "price_high": 120,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "retail_price_reference_bwp_per_kg": 13.12,
+          "retail_price_reference_as_of": "2026-10",
+          "retail_price_reference_source": "Selina Wamucii Botswana capsicum (bell pepper) market price page",
+          "retail_price_reference_source_url": "https://www.selinawamucii.com/insights/prices/botswana/capsicum-bell-pepper/",
+          "market_channel_reference": "Letsema Horticulture Market, Gaborone lists sweet pepper among traded crops; sold by crate",
+          "market_channel_reference_source_url": "https://divisi.africa/markets/botswana/letsema-horticulture-market/",
+          "retail_price_reference_note": "Indicative third-party retail reference for Gaborone/Francistown, not a verified producer or wholesale quotation. Letsema market confirms sweet pepper is traded by crate, but does not publish official daily prices. Not used as the calculator's farmgate selling-price assumption.",
+          "government_horticulture_manual_green_pepper_yield_reference_tonnes_per_ha_low": 30,
+          "government_horticulture_manual_green_pepper_yield_reference_tonnes_per_ha_high": 70,
+          "government_horticulture_manual_green_pepper_water_requirement_reference_mm": 23.8,
+          "government_horticulture_manual_green_pepper_irrigation_interval_reference_days_winter": 6,
+          "government_horticulture_manual_green_pepper_irrigation_interval_reference_days_summer": 2,
+          "government_horticulture_manual_reference_as_of": "legacy Botswana Ministry of Agriculture horticulture manual; publication year reported as 2003",
+          "government_horticulture_manual_source": "Government of Botswana, Ministry of Agriculture, Manual for Vegetable Production in Botswana, Horticultural Research Program; Green Pepper chapter",
+          "government_horticulture_manual_source_url": "https://www.researchgate.net/publication/362469461_Manual_for_Vegetable_Production_in_Botswana_GOVERNMENT_OF_BOTSWANA_MINISTRY_OF_AGRICULTURE_Manual_for_vegetable_production_in_Botswana_PREPARED_BY_THE_HORTICULTURAL_RESEARCH_PROGRAM",
+          "government_horticulture_manual_note": "Legacy technical production reference reports 30–70 tonnes/ha as a good green-pepper yield and gives a water requirement of 23.8 mm with irrigation intervals of 6 days in winter and 2 days in summer. This is an old technical guide, not a current measured Botswana national yield, current farmgate price or full enterprise budget. Kept as context only; not used to set calculator scenarios.",
+          "recent_market_listing_reference": "Mpatlise farmer-market listing for Green Pepper in Serowe/Mogorosi/Gaborone: BWP200, posted 26 October 2026",
+          "recent_market_listing_reference_as_of": "2026-10-26",
+          "recent_market_listing_reference_source": "Mpatlise Horticulture Market supplier listings",
+          "recent_market_listing_reference_source_url": "https://www.mpatise.com/agric/esales/crop/svsale.php",
+          "recent_market_listing_reference_note": "Individual seller listing amount; listing does not establish the package weight or unit, so it cannot be converted to BWP/kg or treated as a farmgate/wholesale transaction price. Letsema market guidance independently indicates sweet pepper is traded by crate. Neither figure is used as the calculator price assumption."
         }
       ],
       "active": true
@@ -1177,6 +1243,60 @@
           "price_low": 250,
           "price_high": 500,
           "price_unit": "per bird (live, ~2kg)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "feed_reference_usd_per_tonne": 431,
+          "feed_reference_product": "Compound broiler feed",
+          "feed_reference_as_of": "2026-09",
+          "feed_reference_source": "US Grains & Bioproducts Council Africa Feed Price report; Botswana September 2026 country entry",
+          "feed_reference_source_url": "https://www.africafeedprice.com/feed-price",
+          "feed_reference_note": "National reference price for compound broiler feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost.",
+          "local_feed_reference_as_of": "2025",
+          "local_feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+          "local_feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+          "local_feed_reference_prices_bwp": {
+            "broiler_finisher_50kg": 410.89,
+            "broiler_grower_50kg": 421.4,
+            "broiler_starter_50kg": 429.47
+          },
+          "local_feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. Dated feed-input references only; not current retail quotations or a complete per-bird production cost. Kept separate from calculator assumptions.",
+          "national_poultry_sector_reference_as_of": "2024 production data (preliminary report)",
+          "national_broiler_day_old_chicks_hatched_reference": 39355114,
+          "national_poultry_meat_production_reference_tonnes": 52000,
+          "broiler_mortality_reference_percent_large_scale": 8.2,
+          "broiler_mortality_reference_percent_small_scale": 15,
+          "national_poultry_sector_reference_source": "Business Botswana Poultry Desk, Poultry Sector Preliminary Outlook (2024 production data; preliminary sector statistics)",
+          "national_poultry_sector_reference_source_url": "https://bb.org.bw/common_up/business-botswana/doc_1749631817.pdf",
+          "national_poultry_sector_reference_note": "National industry context only. The report's 2024 figures are preliminary and its fieldwork initially focused on commercial/large-scale operations; reported small-producer mortality is an industry estimate. These statistics are not farm-specific production assumptions, feed conversion ratios, selling prices or complete farm budgets. They are not used to overwrite calculator inputs.",
+          "ifad_broiler_model_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, dated 22 October 2025; financial model for 400 broilers per batch, medium-scale emerging commercial farmer.",
+          "ifad_broiler_model_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+          "ifad_broiler_model_reference_as_of": "2025-10-22",
+          "ifad_broiler_model_parameters_bwp": {
+            "batch_size_chicks": 400,
+            "batches_per_year": 3,
+            "selling_price_per_bird": 85,
+            "day_old_chick_price": 10,
+            "starter_feed_annual": 3600,
+            "grower_feed_annual": 12000,
+            "finisher_feed_annual": 10260,
+            "feed_transport_annual": 10344,
+            "veterinary_and_vaccination_annual": 750,
+            "water_and_electricity_annual": 150,
+            "brooding_charcoal_annual": 180,
+            "miscellaneous_annual": 180,
+            "family_labour_annual": 3600
+          },
+          "ifad_broiler_model_per_chick_placed_cost_bwp_estimate": 44.22,
+          "ifad_broiler_model_per_chick_placed_cost_note": "Derived from the IFAD steady-state annual operating-input schedule (BWP49,464) plus family labour (BWP3,600), divided by 1,200 chicks placed across three 400-chick batches. Includes feed, transport, chick purchase, veterinary, utilities, brooding, miscellaneous and family labour. Excludes initial housing/equipment capital and does not resolve the model's revenue/output inconsistencies. Retained as evidence only; not used as calculator cost_per_unit.",
+          "ifad_broiler_model_output_note": "The IFAD model states 400 chicks per batch, three batches annually, 5% chick/adult mortality in mature years, 10% own consumption, net production 975 birds/year, and selling price BWP85/head. Its reported revenue (BWP87,364) does not equal 975 × BWP85 (BWP82,875). The annual financial table also includes a BWP1,200 equipment replacement line in one year. Do not use model revenue to set calculator selling price or claim a verified gross margin until reconciled.",
+          "ifad_broiler_model_data_quality_note": "This is a Botswana-specific, 2025 IFAD planning model for a medium-scale 400-bird unit, not an observed farm's audited accounts or a smallholder enterprise budget. It is much stronger than a generic regional proxy for cost structure, but it must remain supporting evidence until output arithmetic and live-bird selling-price assumptions are independently validated.",
+          "local_broiler_market_price_reference_bwp_per_bird": 85,
+          "local_broiler_market_price_reference_source": "IFAD BoLCoP 2025 financial model, modelled selling price for a four-month broiler",
+          "local_broiler_market_price_reference_as_of": "2025-10",
+          "local_broiler_market_price_reference_note": "Modelled price assumption in a project design financial model, not an observed current transaction or current farmgate quote.",
+          "source_verification_checked_as_of": "2026-11-06"
         }
       ],
       "active": true
@@ -1555,6 +1675,15 @@
           "price_expected": 20,
           "price_high": 40,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "local_suitability_reference": "Northern Botswana identified by the Ministry of Agriculture in 2016 as the more favourable zone for cassava establishment because of rainfall and temperature conditions",
+          "local_suitability_reference_as_of": "2016-06",
+          "local_suitability_reference_source": "Mmegi report quoting Botswana Ministry of Agriculture Director of Crop Production",
+          "local_suitability_reference_source_url": "https://www.mmegi.bw/news/cassava-production-favourable-for-northern-botswana/news",
+          "local_suitability_reference_note": "Historical suitability statement only, not evidence of established commercial production, current yield, farmgate price or production costs. Cassava remains unverified for calculator assumptions."
         }
       ],
       "active": true
@@ -1864,6 +1993,42 @@
           "price_low": 16000,
           "price_high": 40000,
           "price_unit": "per head (fattened)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "national_population_reference_head": 1638543,
+          "national_population_reference_births": 373807,
+          "national_population_reference_deaths": 143076,
+          "national_population_reference_as_of": "2025 census (reference period Oct 2024-Sep 2025)",
+          "national_population_reference_source": "Statistics Botswana, Agricultural Census 2025 Stats Brief: Livestock Sector (September 2026)",
+          "national_population_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Agricultural%20Census%20Stats%20Brief%202025%20-Livestock%20Sector.pdf",
+          "national_population_reference_note": "National herd inventory reference only; census population, births and deaths are not sale weights, offtake rates, farmgate prices or production costs. The census results are provisional.",
+          "official_processor_carcass_price_eu_bwp_per_kg": 45,
+          "official_processor_carcass_price_other_markets_bwp_per_kg": 31,
+          "official_processor_price_as_of": "2026-11-06 (BMC FAQ page accessed)",
+          "official_processor_price_source": "Botswana Meat Commission, cattle buying FAQ; stated carcass-mass prices for eligible cattle at BMC Lobatse",
+          "official_processor_price_source_url": "https://bmc.bw/faq",
+          "official_processor_price_note": "Processor carcass-mass buying prices, not liveweight farmgate prices. EU price requires grading and compliance; Other Markets price differs. BMC Lobatse zone and animal eligibility restrictions apply. Not used as the calculator's generic live-animal selling-price assumption.",
+          "bmc_minimum_carcass_weight_reference_kg": 160,
+          "bmc_minimum_carcass_weight_reference_source": "Botswana Meat Commission cattle buying FAQ; BMC states it buys ready-to-slaughter cattle weighing 160 kg carcass mass and above.",
+          "bmc_minimum_carcass_weight_reference_url": "https://bmc.bw/faq",
+          "bmc_minimum_carcass_weight_reference_note": "Eligibility threshold at BMC; carcass mass is not liveweight. BMC's EU market requires additional zone, age, traceability and compliance conditions.",
+          "smallholder_cattle_cost_study_reference_as_of": "2023 study, published 2023",
+          "smallholder_cattle_cost_study_mean_bwp_per_production_unit": {
+            "feed_and_licks": 2142,
+            "veterinary": 10226,
+            "labour": 3750
+          },
+          "smallholder_cattle_cost_study_source": "Otieno et al., Productive efficiency of beef cattle production in Botswana: a latent class stochastic meta-frontier analysis, Frontiers in Sustainable Food Systems (2023), survey production-unit descriptive statistics.",
+          "smallholder_cattle_cost_study_source_url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1098642/full",
+          "smallholder_cattle_cost_study_note": "Study sample mean input costs per production unit, not a standardized per-head annual budget or current 2026 quote. The unit represents a surveyed farm/production unit; values are context only and are not used as calculator cost_per_unit.",
+          "cattle_transport_cost_market_reference_bwp_per_head": 1500,
+          "cattle_transport_cost_market_reference_as_of": "2026-10-01",
+          "cattle_transport_cost_market_reference_source": "Farmers' Platform expert column, Botswana's Crippled Beef Industry, 1 October 2026; reports that farmers in remote areas may face transport costs of approximately P1,500 per animal.",
+          "cattle_transport_cost_market_reference_url": "https://www.farmersplatform.co.bw/articles/expert-columns/botswanas-crippled-beef-industry",
+          "cattle_transport_cost_market_reference_note": "Reported farmer/industry estimate for some remote routes, not a universal freight tariff or farm-specific cost. Transport distance, loading, holding and route conditions vary; not used as a generic calculator cost.",
+          "source_verification_checked_as_of": "2026-11-06"
         }
       ],
       "active": true
@@ -2398,6 +2563,26 @@
           "price_expected": 30,
           "price_high": 60,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "historical_export_unit_value_reference_bwp_per_kg": 30.31,
+          "historical_export_unit_value_reference_as_of": "2023",
+          "historical_export_quantity_reference_tonnes": 0.6,
+          "historical_export_unit_value_reference_source": "UN Comtrade 2023 cucumber export unit value, reproduced by Selina Wamucii Botswana cucumber trade page",
+          "historical_export_unit_value_reference_source_url": "https://www.selinawamucii.com/insights/prices/botswana/cucumber/",
+          "historical_export_unit_value_reference_note": "Very small historical export flow (approximately 0.6 tonnes); trade unit value is not a domestic farmgate or wholesale price and is not used as the calculator selling-price assumption. Local production costs, yields and representative domestic prices remain unverified.",
+          "market_channel_reference": "Letsema Horticulture Market, Gaborone includes cucumber (sticks) in its weekly produce price schedule",
+          "market_channel_reference_as_of": "January 2025 published weekly price schedule",
+          "market_channel_reference_source": "Letsema Horticulture Market official weekly prices page",
+          "market_channel_reference_source_url": "https://letsemahm.co.bw/weekly-prices/",
+          "historical_market_price_reference": "January 2025 Letsema weekly table lists cucumber (sticks): buying 9.00, wholesale 1,305.00, PNP price 13.00; currency BWP",
+          "historical_market_price_reference_as_of": "2025-01",
+          "historical_market_price_reference_note": "Historical market schedule confirms cucumber trading at Letsema, but the page's table does not clearly define the weight/pack basis for the cucumber 'sticks' row and its wholesale figure is not directly comparable with per-kg prices. Values are preserved exactly as printed as market-history evidence only; not converted to BWP/kg and not used as calculator price assumptions.",
+          "market_access_context": "Letsema describes itself as a digital marketplace for local horticulture farmers selling produce to businesses and says farmers are paid within five days; this is market-access context, not a guarantee of price or purchase volume.",
+          "market_access_context_source": "Letsema Horticulture Market official website",
+          "market_access_context_source_url": "https://letsemahm.co.bw/"
         }
       ],
       "active": true
@@ -2703,6 +2888,17 @@
           "price_low": 120,
           "price_high": 280,
           "price_unit": "per kg (farm-gate, ~1kg fish)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "national_production_reference_tonnes": 117,
+          "national_production_reference_as_of": "2026-11",
+          "national_production_reference_source": "Government of Botswana report on Mmadinare Fish Hatchery restoration; national fish production estimate stated by the Minister of Lands and Agriculture",
+          "national_production_reference_source_url": "https://dailynews.gov.bw/news-detail/93926",
+          "national_recognised_fish_farmers_reference": 50,
+          "national_fish_food_security_requirement_tonnes": 5000,
+          "national_production_reference_note": "National aquaculture/fish production context only: about 50 recognised fish farmers and 117 metric tonnes of fish production against a stated 5,000-tonne requirement. This is not a farm yield, farmgate price, or production-cost estimate. Fish price, yield and full operating-cost inputs remain unverified."
         }
       ],
       "active": true
@@ -3012,6 +3208,59 @@
           "price_low": 3000,
           "price_high": 8000,
           "price_unit": "per mature goat"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "national_population_reference_head": 1271407,
+          "national_population_reference_births": 550066,
+          "national_population_reference_deaths": 256861,
+          "national_population_reference_as_of": "2025 census (reference period Oct 2024-Sep 2025)",
+          "national_population_reference_source": "Statistics Botswana, Agricultural Census 2025 Stats Brief: Livestock Sector (September 2026)",
+          "national_population_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Agricultural%20Census%20Stats%20Brief%202025%20-Livestock%20Sector.pdf",
+          "national_population_reference_note": "National herd inventory reference only; census population, births and deaths are not sale weights, offtake rates, farmgate prices or production costs. The census results are provisional.",
+          "ifad_small_ruminant_model_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, 22 October 2025; combined goat-and-sheep enterprise models and 100-head infrastructure/breeding-stock budget.",
+          "ifad_small_ruminant_model_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+          "ifad_small_ruminant_model_reference_as_of": "2025-10-22",
+          "ifad_small_ruminant_model_parameters_bwp": {
+            "model_units": [
+              {
+                "type": "goat",
+                "heads": 6,
+                "without_project_output_heads": 2,
+                "with_project_output_heads": 4,
+                "modelled_price_per_head": 1000
+              },
+              {
+                "type": "goat_and_sheep",
+                "heads": 14,
+                "without_project_output_heads": 6,
+                "with_project_output_heads": 14,
+                "modelled_price_per_head": 1000
+              },
+              {
+                "type": "goat_and_sheep",
+                "heads": 22,
+                "without_project_output_heads": 6,
+                "with_project_output_heads": 20,
+                "modelled_price_per_head": 1000
+              },
+              {
+                "type": "goat_and_sheep",
+                "heads": 125,
+                "without_project_output_heads": 14,
+                "with_project_output_heads": 125,
+                "modelled_price_per_head": 1000
+              }
+            ],
+            "combined_100_head_unit_infrastructure_investment_bwp": 143000,
+            "combined_100_head_unit_equipment_investment_bwp": 10530,
+            "combined_100_head_unit_medication_operating_budget_bwp": 23000,
+            "combined_100_head_unit_consumables_operating_budget_bwp": 14000,
+            "combined_100_head_unit_breeding_stock_budget_bwp": 112500
+          },
+          "ifad_small_ruminant_model_data_quality_note": "The IFAD report models one 6-head goat unit and several combined goat-and-sheep units. Its 100-head infrastructure and breeding-stock budget is for a combined goat/sheep enterprise, not a standalone goat budget. The modelled BWP1,000/head value and project output counts are planning assumptions, not current market transactions or independently verified annual offtake. Keep as supporting evidence only; do not populate the goat calculator cost_per_unit, sale price or yield from these mixed-species/project assumptions.",
+          "source_verification_checked_as_of": "2026-11-06"
         }
       ],
       "active": true
@@ -3586,6 +3835,16 @@
           "price_expected": 100,
           "price_high": 200,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "market_listing_reference_bwp_per_kg": 50,
+          "market_listing_reference_product": "Red habanero chillies",
+          "market_listing_reference_as_of": "2026-01-23",
+          "market_listing_reference_source": "Mpatlise Horticultural Market Commercial Association Portal; farmer listing from Moshupa/Ramoshengwane Lands",
+          "market_listing_reference_source_url": "https://www.mpatise.com/agric/esales/fa/cmarket.php?id=BoHoCo1",
+          "market_listing_reference_note": "A dated farmer-market listing for red habanero at P50/kg. This is a single seller's asking/listing price, not a verified transaction, national farmgate average or current quotation. It is retained as market evidence only; Botswana-specific yield and full production costs remain unverified, so the profile stays benchmark-only."
         }
       ],
       "active": true
@@ -3926,6 +4185,72 @@
           "price_low": 8,
           "price_high": 18,
           "price_unit": "per egg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "feed_reference_usd_per_tonne": 322,
+          "feed_reference_product": "Compound layer feed",
+          "feed_reference_as_of": "2026-09",
+          "feed_reference_source": "US Grains & Bioproducts Council Africa Feed Price report; Botswana September 2026 country entry",
+          "feed_reference_source_url": "https://www.africafeedprice.com/feed-price",
+          "feed_reference_note": "National reference price for compound layer feed, not a farm-specific delivered quotation; kept separate from the calculator's benchmark production cost.",
+          "local_feed_reference_as_of": "2025",
+          "local_feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+          "local_feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+          "local_feed_reference_prices_bwp": {
+            "layer_grower_50kg": 325,
+            "layer_mash_20kg": 325.06
+          },
+          "local_feed_reference_note": "Official 2025 public-procurement reference prices for Gaborone: layer grower per 50kg bag and layer mash per 20kg bag. Dated feed-input references only; not current retail quotations or a complete annual layer cost. Kept separate from calculator assumptions.",
+          "national_poultry_sector_reference_as_of": "2024 production data (preliminary report)",
+          "national_layer_hens_produced_reference": 850000,
+          "national_egg_production_reference_dozen": 19600000,
+          "layer_eggs_per_hen_per_year_reference": 23,
+          "national_poultry_sector_reference_source": "Business Botswana Poultry Desk, Poultry Sector Preliminary Outlook (2024 production data; preliminary sector statistics)",
+          "national_poultry_sector_reference_source_url": "https://bb.org.bw/common_up/business-botswana/doc_1749631817.pdf",
+          "national_poultry_sector_reference_note": "National industry context only. The report's 2024 figures are preliminary and its fieldwork initially focused on commercial/large-scale operations; reported small-producer mortality is an industry estimate. These statistics are not farm-specific production assumptions, feed conversion ratios, selling prices or complete farm budgets. They are not used to overwrite calculator inputs.",
+          "ifad_layers_model_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, dated 22 October 2025; poultry-layers financial models for 50, 150, 250, 400 and 1,200 birds.",
+          "ifad_layers_model_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+          "ifad_layers_model_reference_as_of": "2025-10-22",
+          "ifad_layers_model_parameters_bwp": {
+            "egg_selling_price_per_egg": 3,
+            "modelled_chicken_selling_price_per_bird": 85,
+            "day_old_chick_price": 10,
+            "family_labour_per_day": 25,
+            "family_labour_days_in_50_bird_micro_model": 40,
+            "chicks_mortality_rate_steady_state_percent": 15,
+            "adult_hen_mortality_rate_steady_state_percent": 10,
+            "modelled_egg_output_per_hen_annual": 25,
+            "modelled_herd_sizes": [
+              50,
+              150,
+              250,
+              400,
+              1200
+            ]
+          },
+          "ifad_layers_model_income_reference_bwp": {
+            "50_bird_model_incremental_income": 4860,
+            "150_bird_model_incremental_income": 30457,
+            "250_bird_model_incremental_income": 60441,
+            "400_bird_model_incremental_income": 26670,
+            "1200_bird_model_incremental_income": 83764
+          },
+          "ifad_layers_model_data_quality_note": "Botswana-specific project-design assumptions and financial models, not audited farm accounts or current retail/farmgate quotations. The 50-bird micro model includes 80% egg own-consumption, 15% chick mortality, 10% adult mortality, and a stated 25 eggs per hen annually; its annual egg output assumption is not representative of a standard commercial laying cycle. The model set uses differing scales and its income tables are incremental project benefits, not gross margins. Retain as supporting evidence only; do not populate calculator cost_per_unit, price_per_unit or production yield from these figures without reconciling model definitions and checking current local egg prices and feed costs.",
+          "source_verification_checked_as_of": "2026-11-06",
+          "national_egg_market_reference_as_of": "2025 production figures reported 2026-08",
+          "national_egg_production_reference_dozen_latest": 14700000,
+          "national_egg_demand_reference_dozen_annual": 13000000,
+          "national_egg_market_reference_source": "Mmegi report of Parliament statement, 10 August 2026: Botswana table egg production 14.7 million dozen against estimated annual demand of 13 million dozen.",
+          "national_egg_market_reference_source_url": "https://www.mmegi.bw/ampArticle/123625",
+          "national_egg_market_reference_note": "National market context only. The reported output exceeds estimated domestic demand; it does not establish a farmgate egg price, individual farm sales volume, laying rate or a complete layer enterprise budget. Not used as calculator revenue input.",
+          "poultry_feed_cost_pressure_reference_as_of": "2026-08-18",
+          "poultry_feed_cost_share_reference_percent": 80,
+          "poultry_feed_cost_pressure_reference_source": "Botswana Daily News/BOPA, Poultry farmers face high feed costs, 18 August 2026. Assistant Minister stated imported raw materials can account for up to 80% of production expenses and that the industry relies entirely on imported soya.",
+          "poultry_feed_cost_pressure_reference_url": "https://dailynews.gov.bw/news-detail/92782",
+          "poultry_feed_cost_pressure_reference_note": "Sector-level cost pressure, not a layer-farm-specific feed-cost percentage or annual ration budget. Supports the need for current local feed quotations before a Botswana layer profile can be marked complete.",
+          "layer_large_scale_production_performance_reference_percent": 86
         }
       ],
       "active": true
@@ -4340,6 +4665,52 @@
           "price_expected": 109,
           "price_high": 160,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "cost_source": "Africa benchmark estimate — costs are a planning proxy derived from the ten established calculator countries; not Botswana supplier quotations or a verified Botswana enterprise budget.",
+          "yield_low": 0.6,
+          "yield_expected": 0.6,
+          "yield_high": 0.6,
+          "yield_unit": "tonnes",
+          "yield_source": "FAOSTAT 2024 maize yield: 600 kg/ha (0.6 tonnes/ha), reproduced by Africa API from FAOSTAT; national annual harvested-area yield, not a district-specific forecast.",
+          "price_low": 1.519,
+          "price_expected": 3.1,
+          "price_high": 3.1,
+          "price_unit": "per kg",
+          "price_source": "Botswana Agricultural Marketing Board schedule reproduced by The Farmers' Platform, July/August 2026: white maize Grade 3 P1,519/tonne and Grade 1 P3,100/tonne. Grade and delivery conditions apply.",
+          "source": "Botswana-specific maize yield (FAOSTAT 2024) and BAMB-reproduced white-maize producer schedule (July/August 2026); costs remain Africa benchmark proxy, not local costs.",
+          "as_of": "2026-08",
+          "data_quality": "mixed_country_specific_yield_and_price_with_benchmark_cost_proxy",
+          "yield_as_of": "2024",
+          "price_as_of": "2026-08",
+          "cost_as_of": "2026-10",
+          "yield_source_url": "https://data.worldbank.org/indicator/AG.YLD.MAIZ.KG?locations=BW",
+          "price_source_url": "https://www.bamb.co.bw/bamb-prices",
+          "price_secondary_source_url": "https://www.farmersplatform.co.bw/market-data",
+          "cost_source_url": "https://www.statsbots.org.bw/agriculture",
+          "cost_note": "No verified Botswana maize enterprise budget or current input-cost schedule was found in the reviewed sources. Keep the existing Africa benchmark proxy clearly disclosed; do not present it as Botswana-specific.",
+          "seed_rate_kg_per_ha": 10,
+          "seed_rate_source": "Seed Co Botswana rain-fed crop guidance: maize 10 kg/ha. This is a recommended sowing rate, not a seed price.",
+          "seed_rate_source_url": "https://seedcogroup.com/bw/fieldcrops/media/faqs/",
+          "cost_reference": "Botswana's 2026/27 Lemang Dijo one-hectare voucher lists programme support values for seeds (P580), harrowing (P495), ploughing (P1,045), planting (P495), pesticides/herbicides (P480), and fertiliser support up to P3,600 after soil testing. These are subsidy/voucher values, not a complete farmer-paid maize enterprise budget; they are not substituted for the calculator's disclosed benchmark cost.",
+          "cost_reference_as_of": "2026/27",
+          "cost_reference_url": "https://lemangdijo.com/",
+          "lemang_dijo_grant_total_reference_bwp_per_ha": 4400,
+          "lemang_dijo_grant_reference_as_of": "2026/27",
+          "lemang_dijo_grant_reference_source": "National Development Bank of Botswana, Lemang Dijo Programme description",
+          "lemang_dijo_grant_reference_url": "https://www.ndb.bw/lemang-dijo/",
+          "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit.",
+          "local_maize_demand_and_supply_context": "Botswana Agricultural Marketing Board states white maize demand exceeds 100,000 tonnes/year while local production averages below 10,000 tonnes/year; it reports that 95% of white maize is imported. BAMB identifies Pandamatenga, Chobe Enclave, Barolong Farms and southern Ngwaketse as suitable production areas.",
+          "local_maize_demand_and_supply_context_source": "Botswana Agricultural Marketing Board, Grains information page.",
+          "local_maize_demand_and_supply_context_source_url": "https://bamb.co.bw/grains",
+          "local_maize_demand_and_supply_context_checked_as_of": "2026-11-06",
+          "local_maize_demand_and_supply_context_note": "National market-demand and production context, not a farmgate price, guaranteed buyer contract, district yield or production budget. Does not change the calculator's current yield or price inputs.",
+          "maize_exchange_market_reference_bwp_per_tonne": 3350,
+          "maize_exchange_market_reference_as_of": "2026-10-01",
+          "maize_exchange_market_reference_source": "RicherFin BMX commodities market listing, latest maize instrument observation dated 1 October 2026.",
+          "maize_exchange_market_reference_source_url": "https://www.richerfin.com/en/bmx/",
+          "maize_exchange_market_reference_note": "A market instrument quotation in BWP/tonne, not confirmed as a producer farmgate price or directly comparable to BAMB's grade-specific producer schedule. Retained as a separate market reference only; not used to overwrite calculator price scenarios."
         }
       ],
       "active": true
@@ -4794,6 +5165,23 @@
           "price_expected": 50,
           "price_high": 100,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "retail_price_reference_bwp_per_kg_low": 32.89,
+          "retail_price_reference_bwp_per_kg_high": 59.2,
+          "retail_price_reference_as_of": "2026-10",
+          "retail_price_reference_source": "Selina Wamucii Botswana peppers (various types) market price page",
+          "retail_price_reference_source_url": "https://www.selinawamucii.com/insights/prices/botswana/peppers-various-types/",
+          "market_channel_reference": "Local restricted horticulture crop list includes chilli peppers; Letsema market sweet pepper listing is not evidence for hot-pepper farmgate price",
+          "market_channel_reference_source_url": "https://businessweekly.co.bw/news/pace-of-vegetable-farmers-not-fast-enough-to-meet-demand",
+          "retail_price_reference_note": "Indicative third-party retail range for mixed pepper types in Gaborone/Francistown; not a cultivar-specific chilli/habanero or farmgate price. Not used as the calculator selling-price assumption.",
+          "local_production_case_reference": "Botswana green-pepper farm case: 0.5 ha planted; first harvest reported about three months after planting; 10,000 high-breed plants harvested over five months; two cultivars described",
+          "local_production_case_reference_as_of": "2019-02",
+          "local_production_case_reference_source": "Daily News/BOPA interview at Borakallo Farm, Mochudi area",
+          "local_production_case_reference_url": "https://dailynews.gov.bw/news-detail/47439",
+          "local_production_case_reference_note": "Single-farm historical case study, not a representative yield or current budget. No verified harvest tonnage or farmgate price was reported; not used to set calculator assumptions."
         }
       ],
       "active": true
@@ -5103,6 +5491,101 @@
           "price_low": 6000,
           "price_high": 15000,
           "price_unit": "per pig (live, ~80kg)"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "national_pig_population_reference": 19010,
+          "national_pig_population_reference_as_of": "2024/2025",
+          "national_pork_production_reference_tonnes": 1768,
+          "national_pork_demand_reference_tonnes": 5000,
+          "national_pork_production_reference_source": "Botswana Ministry of Agriculture figures reported by BOPA/Daily News at the pig farmers workshop, November 2025",
+          "national_pork_production_reference_source_url": "https://dailynews.gov.bw/news-detail/89014",
+          "national_pork_production_reference_note": "National industry context: reported pig population 19,010 and annual domestic pork production 1,768 tonnes against demand of 5,000 tonnes (2024/2025 figures). These figures are not farm-level growth rates, liveweight prices, feed costs or production budgets. Local calculator price and full cost inputs remain unverified.",
+          "feed_reference_as_of": "2025",
+          "feed_reference_source": "Botswana Public Procurement Regulatory Authority, Price Reference Guide for Animal Feed 2025; Gaborone locality",
+          "feed_reference_source_url": "https://www.ppadb.co.bw/Price%20Guides/PPRA%20Price%20Guide%202025/Animal%20Feed_2025.pdf",
+          "feed_reference_prices_bwp": {
+            "pig_lactating_sow_50kg": 329.26,
+            "pig_grower_50kg": 343.29,
+            "pig_starter_50kg": 395,
+            "pig_weaner_50kg": 405.73
+          },
+          "feed_reference_note": "Official 2025 public-procurement reference prices per 50kg bag for Gaborone. These are dated input-price references, not current retail quotations or a complete per-pig feed budget; not used to overwrite the calculator's benchmark production cost.",
+          "government_piggery_guide_feed_intake_reference": {
+            "dry_sow_meal": {
+              "body_mass": "adult",
+              "intake_kg_per_day": 2,
+              "duration_weeks": 41
+            },
+            "lactating_sow_meal": {
+              "body_mass": "adult",
+              "intake_kg_per_day_reference": "2–2.5 in week 1; 7 in weeks 2–8 (as table is rendered in source)",
+              "duration_weeks": 8
+            },
+            "creep_meal": {
+              "body_mass": "piglet 10–23 kg",
+              "intake_kg_per_day": 0.008,
+              "duration_weeks": 8
+            },
+            "weaner_meal": {
+              "body_mass": "18–25 kg",
+              "crude_protein_percent": 18,
+              "intake_kg_per_day": 0.8,
+              "duration_weeks": 5
+            },
+            "grower_meal": {
+              "body_mass": "57–70 kg",
+              "crude_protein_percent": 16,
+              "intake_kg_per_day": 1.5,
+              "duration_weeks": 6
+            },
+            "finisher_meal": {
+              "body_mass": "71–110 kg",
+              "crude_protein_percent": 14,
+              "intake_kg_per_day": 2.6,
+              "duration_weeks": 4
+            },
+            "boar_meal": {
+              "body_mass": "adult",
+              "intake_kg_per_day": 2,
+              "duration_weeks": 12
+            }
+          },
+          "government_piggery_guide_feed_intake_reference_as_of": "legacy government guide (hosted 2019-12; original table date not stated)",
+          "government_piggery_guide_feed_intake_reference_source": "Government of Botswana, Technical Guide for Establishing a Piggery Project, Feed Requirements and Feed Intake Program (Department of Animal Production)",
+          "government_piggery_guide_feed_intake_reference_source_url": "https://www.gov.bw/sites/default/files/2019-12/TECHNICAL%20GUIDE%20FOR%20ESTABLISHING%20A%20PIGGERY%20%20PROJECT.pdf",
+          "government_piggery_guide_feed_intake_reference_note": "Botswana-specific feeding-stage and daily intake reference. The guide says feed accounts for about 70% of pig-meat production cost. This is a legacy husbandry reference, not a current feed quotation or complete per-pig cost budget; intake figures are not used to calculate a new selling price or cost_per_unit.",
+          "ifad_piggery_sector_reference": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, 22 October 2025; piggery value-chain assessment.",
+          "ifad_piggery_sector_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+          "ifad_piggery_sector_reference_as_of": "2025-10-22",
+          "ifad_piggery_sector_structure": {
+            "micro_farms_share_of_pig_production_percent": 84,
+            "small_scale_farms_share_of_pig_production_percent": 16,
+            "typical_herd_size": "Fewer than 20 pigs for most producers",
+            "large_scale_operations_count": 1,
+            "large_scale_operation_sow_units": 200,
+            "live_pig_domestic_sourcing_share_for_processing_percent": 19,
+            "feed_manufacturers_count": 6,
+            "feed_manufacturers_annual_output_tonnes": 825,
+            "feed_manufacturers_annual_value_bwp": 2400000,
+            "feed_suppliers_count": 5,
+            "feed_suppliers_annual_supply_tonnes": 354,
+            "feed_suppliers_annual_value_bwp": 1100000
+          },
+          "ifad_piggery_input_supply_note": "Feeder pigs are supplied by the government-owned Sebele Multiplication Unit or imported mainly from South Africa. IFAD reports six large-scale feed manufacturers producing about 825 tonnes/year valued at BWP2.4m, and five large-scale suppliers supplying about 354 tonnes/year valued at BWP1.1m. Reported 70/30 local-input sourcing regulation affects feed costs.",
+          "ifad_piggery_market_note": "IFAD reports only 19% of live pigs for processing are sourced domestically. The report describes two micro slaughter facilities and two registered processors; market structure and imports are important context but do not establish a current farmgate price per liveweight kilogram.",
+          "ifad_piggery_data_quality_note": "This 2025 Botswana-specific value-chain assessment strengthens local sector context, but it does not supply a validated per-pig production budget, feed consumption by growth stage, current feeder-pig purchase price, market liveweight or current farmgate price. Do not use its turnover/value-chain amounts as farm-level calculator costs or prices.",
+          "source_verification_checked_as_of": "2026-11-06",
+          "ifad_piggery_historical_value_chain_price_reference_bwp_per_kg": {
+            "input_cost": 21.2,
+            "wholesale": 24.8,
+            "retail": 28.4
+          },
+          "ifad_piggery_historical_value_chain_price_reference_source": "Botswana Livestock Commercialisation Project (BoLCoP), IFAD Project Design Report No. 7326-BW, Chapter 4 piggery value-chain diagram, adapted from Hellyer et al. (2015).",
+          "ifad_piggery_historical_value_chain_price_reference_as_of": "2015",
+          "ifad_piggery_historical_value_chain_price_reference_url": "https://webapps.ifad.org/members/eb-seminars/2025-11-25-EB-Consultations/docs/EB-2025-146-R-3-Project-Design-Report.pdf",
+          "ifad_piggery_historical_value_chain_price_reference_note": "Historical chain-level input-cost, wholesale and retail reference prices in BWP/kg, reproduced in the 2025 IFAD report from Hellyer et al. (2015). These are not current producer farmgate prices and are not comparable to a live pig selling price. Retained only as historical market-chain context; not used as calculator price_per_unit or current input costs."
         }
       ],
       "active": true
@@ -5517,6 +6000,17 @@
           "price_expected": 80,
           "price_high": 130,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "import_value_reference_bwp_million": 42.7,
+          "import_reference_period": "January 2024–February 2025",
+          "import_reference_product": "Semi-milled or wholly milled rice, excluding broken rice",
+          "paddy_import_value_reference_bwp_million": 3.1,
+          "import_reference_source": "Statistics Botswana, Botswana Food and Beverages Imports February 2025, cereal import table",
+          "import_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/publications/Botswana%20Food%20and%20Beverages%20Imports%20February%202025.pdf",
+          "import_reference_note": "Import-value evidence only: BWP 42.7 million for semi/wholly milled rice and BWP 3.1 million for paddy rice over Jan 2024–Feb 2025. These are national import values, not local paddy farmgate prices, yields or production costs."
         }
       ],
       "active": true
@@ -5931,6 +6425,13 @@
           "price_expected": 55,
           "price_high": 90,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "seed_rate_kg_per_ha": "25–50",
+          "seed_rate_source": "Seed Co Botswana recommends 25–50 kg/ha for rain-fed soybean; actual rate should follow variety, seed size, row spacing and agronomist guidance.",
+          "seed_rate_source_url": "https://seedcogroup.com/bw/fieldcrops/media/faqs/"
         }
       ],
       "active": true
@@ -6437,6 +6938,128 @@
           "price_expected": 35,
           "price_high": 80,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "country_specific_price_yield_and_cost",
+          "historical_yield_reference_tonnes_per_ha": 28.55,
+          "historical_yield_reference_as_of": "2024",
+          "historical_yield_reference_source": "FAOSTAT tomato yield series, reproduced by Geo Factbook for Botswana; 2024 value",
+          "historical_yield_reference_source_url": "https://geofactbook.com/countries/botswana/tomato-yield-per-hectare",
+          "historical_yield_reference_note": "National historical yield reference only; retained as evidence metadata and not substituted for the calculator's scenario yields. Local production costs and current farmgate selling prices remain unverified.",
+          "recent_market_listing_reference_bwp_per_kg": 15,
+          "recent_market_listing_reference_as_of": "2026-09-24",
+          "recent_market_listing_reference_source": "Mpatlise Horticultural Market Commercial Association Portal; Francistown tomato listing explicitly stated P15.00 per kg, posted 24 September 2026",
+          "recent_market_listing_reference_source_url": "https://www.mpatise.com/agric/esales/fa/cmarket.php?id=BoHoCo1",
+          "recent_market_listing_reference_note": "Farmer-market listing snapshot, not an official national farmgate price series. A separate 28 July 2026 listing reported P18/kg. These observations are retained as market evidence only and are not used as the calculator selling-price assumption; current representative prices and full production costs remain unverified.",
+          "lea_enterprise_budget_reference": "Five Botswana open-field tomato farmer budgets across Kgatleng, Ngami, Boteti, North East and Chobe districts; separate Central District shade-net case excluded from the comparable ranges",
+          "lea_enterprise_budget_reference_as_of": "2024-03",
+          "lea_open_field_yield_reference_tonnes_per_ha_low": 8.25,
+          "lea_open_field_yield_reference_tonnes_per_ha_high": 22.8,
+          "lea_open_field_farmgate_price_reference_bwp_per_kg_low": 10,
+          "lea_open_field_farmgate_price_reference_bwp_per_kg_high": 15,
+          "lea_open_field_enterprise_cost_reference_bwp_per_ha_low": 33841,
+          "lea_open_field_enterprise_cost_reference_bwp_per_ha_high": 133880,
+          "lea_enterprise_budget_reference_source": "Local Enterprise Authority, Tomato Enterprise Budgets, March 2024; farmer-record-based open-field cases in Kgatleng, Ngami, Boteti, North East and Chobe districts",
+          "lea_enterprise_budget_reference_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "lea_enterprise_budget_reference_note": "Historical farmer-record enterprise budgets, not a current national average. Comparable open-field cases reported yields of 8.25–22.8 t/ha, farmgate prices of BWP10–15/kg and reported enterprise cost totals of BWP33,841–133,880/ha. The report notes farmer-to-farmer variation, possible cost allocation/omission errors and excludes some overheads. A separate Central District shade-net case used crates and is not included in these ranges. Retained as reference evidence only; not used to set calculator scenario inputs.",
+          "government_vegetable_guideline_budget_reference": "Botswana Government Vegetable Enterprise Guideline, tomato open-field one-hectare illustrative budget",
+          "government_vegetable_guideline_budget_reference_as_of": "legacy guide hosted 2019-12; original publication date not stated",
+          "government_vegetable_guideline_yield_reference_tonnes_per_ha": 30,
+          "government_vegetable_guideline_farmgate_price_reference_bwp_per_kg": 12,
+          "government_vegetable_guideline_production_cost_reference_bwp_per_ha": 12320,
+          "government_vegetable_guideline_marketing_cost_reference_bwp_per_ha": 12940,
+          "government_vegetable_guideline_total_variable_cost_reference_bwp_per_ha": 25260,
+          "government_vegetable_guideline_gross_margin_reference_bwp_per_ha": 25140,
+          "government_vegetable_guideline_break_even_price_reference_bwp_per_kg": 0.84,
+          "government_vegetable_guideline_source": "Government of Botswana, Vegetable Enterprise Guideline, tomato crop budget for one hectare",
+          "government_vegetable_guideline_source_url": "https://gov.bw/sites/default/files/2019-12/VEGETABLE%20ENTERPRISE%20GUIDELINES.pdf",
+          "government_vegetable_guideline_note": "Legacy illustrative government budget, not a current quote or observed national average. The table reports 30 tonnes, BWP12/kg, BWP12,320 production costs and BWP12,940 marketing costs (BWP25,260 total variable costs); the printed break-even price is BWP0.84/kg. The guide itself says crop budgets are guides only and should be adjusted for price movements, season and farm characteristics. Fixed assets and some overheads are separate/not fully included. Kept as evidence metadata only; not substituted for current calculator scenarios.",
+          "ministry_vegetable_manual_reference": "Botswana Ministry of Agriculture, Manual for Vegetable Production (first published 2003; reprinted 2006), tomato cultivar and production guidance",
+          "ministry_vegetable_manual_reference_as_of": "2003 first edition; reprinted 2006",
+          "ministry_tomato_cultivar_yield_potential_tonnes_per_ha_low": 60,
+          "ministry_tomato_cultivar_yield_potential_tonnes_per_ha_high": 75,
+          "ministry_tomato_cultivar_yield_reference": "Moneymaker 62 t/ha; Expresso 65 t/ha; Heinz 1370 60 t/ha; Zeal 66 t/ha; Zest 75 t/ha; Sixpack 60 t/ha",
+          "ministry_tomato_first_harvest_days_after_transplanting_reference": "80–90 days for the named cultivars; some September–January plantings reported at 60–70 days",
+          "ministry_tomato_seasonal_water_requirement_mm": 500,
+          "ministry_tomato_irrigation_application_mm_reference": 16.2,
+          "ministry_tomato_irrigation_interval_days_reference": "1.5 days in summer; 4 days in cool/winter season",
+          "ministry_vegetable_manual_source": "Government of Botswana, Ministry of Agriculture, Department of Agricultural Research, Manual for Vegetable Production in Botswana, first published May 2003 and reprinted 2006",
+          "ministry_vegetable_manual_source_url": "https://www.researchgate.net/publication/362469461_Manual_for_Vegetable_Production_in_Botswana_GOVERNMENT_OF_BOTSWANA_MINISTRY_OF_AGRICULTURE_Manual_for_vegetable_production_in_Botswana_PREPARED_BY_THE_HORTICULTURAL_RESEARCH_PROGRAM",
+          "ministry_vegetable_manual_note": "Historical cultivar-potential and husbandry references from a Botswana government horticultural manual. The 60–75 t/ha figures are named-cultivar mean/potential yields, not observed current national farm averages; irrigation and maturity guidance are legacy technical recommendations. These figures are not used as calculator scenario yields, prices or costs.",
+          "lea_kgatleng_open_field_case_yield_tonnes_per_ha": 22.5,
+          "lea_kgatleng_open_field_case_farmgate_price_bwp_per_kg": 12,
+          "lea_kgatleng_open_field_case_total_variable_cost_bwp_per_ha": 68121,
+          "lea_kgatleng_open_field_case_revenue_bwp_per_ha": 270000,
+          "lea_kgatleng_open_field_case_gross_margin_bwp_per_ha": 201879,
+          "lea_kgatleng_open_field_case_cost_breakdown_bwp_per_ha": {
+            "planting_material": 10200,
+            "fertilizers": 9066,
+            "agrochemicals": 18840,
+            "labour": 6000,
+            "other_pre_harvest": 1400,
+            "harvest_and_distribution": 20740,
+            "other_variable": 1875
+          },
+          "lea_kgatleng_open_field_case_source": "Local Enterprise Authority, Tomato Enterprise Budgets, March 2024; Kgatleng District (Malotwana), one-hectare open-field farmer-record case, three-month cropping period",
+          "lea_kgatleng_open_field_case_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "lea_kgatleng_open_field_case_note": "A single farmer-record example, not a national average or current quote. Reported yield 22.5 t/ha, farmgate price BWP12/kg, revenue BWP270,000/ha and total variable costs BWP68,121/ha (including harvest/distribution and other variable costs); gross margin BWP201,879/ha. The report excludes farm-level overheads and warns that farmer cost allocation and omissions may distort results. This case is retained as a local observed budget reference, not a calculator scenario by itself.",
+          "government_vegetable_guideline_tomato_arithmetic_verification_note": "Rechecked against the Government PDF on 2026-11-06. The legacy tomato table states 30 tonnes, 4,200 x 7 kg, BWP12/kg, revenue BWP50,400, production costs BWP12,320, marketing costs BWP12,940, total variable costs BWP25,260 and gross margin BWP25,140. The printed revenue does not reconcile with 4,200 x 7 kg at BWP12/kg (which would be BWP352,800), nor with 30 tonnes at BWP12/kg (BWP360,000). The printed gross margin reconciles to the printed BWP50,400 revenue less BWP25,260 costs. Treat this legacy table's revenue/yield arithmetic as internally inconsistent; do not use its tomato price/revenue/yield values to calibrate calculator scenarios. The separate 30-tonne yield guidance in the maturity table is also historical and not a current observed farm yield.",
+          "government_vegetable_guideline_tomato_arithmetic_checked_as_of": "2026-11-06",
+          "cost_per_unit": 68121,
+          "cost_breakdown": [
+            {
+              "label": "Planting material",
+              "amount": 10200
+            },
+            {
+              "label": "Fertilizers",
+              "amount": 9066
+            },
+            {
+              "label": "Agrochemicals",
+              "amount": 18840
+            },
+            {
+              "label": "Labour",
+              "amount": 6000
+            },
+            {
+              "label": "Other pre-harvest costs",
+              "amount": 1400
+            },
+            {
+              "label": "Harvest and distribution",
+              "amount": 20740
+            },
+            {
+              "label": "Other variable costs",
+              "amount": 1875
+            }
+          ],
+          "yield_low": 15.75,
+          "yield_expected": 22.5,
+          "yield_high": 29.25,
+          "yield_unit": "tonnes",
+          "price_low": 8.4,
+          "price_expected": 12,
+          "price_high": 15.6,
+          "price_unit": "per kg",
+          "source": "Local Enterprise Authority, Tomato Enterprise Budgets, March 2024; Kgatleng District (Malotwana), one-hectare open-field farmer budget and its published ±30% sensitivity analysis",
+          "as_of": "2024-03",
+          "cost_source": "LEA Kgatleng open-field tomato enterprise budget: total variable costs BWP68,121/ha, with seven published cost categories. Excludes farm overheads and fixed costs.",
+          "cost_as_of": "2024-03",
+          "yield_source": "LEA Kgatleng farmer-record case: actual yield 22.5 t/ha; published sensitivity analysis tests output at -30% and +30%, giving 15.75 and 29.25 t/ha. Scenario bounds are modelled sensitivities, not national yield percentiles.",
+          "yield_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "price_source": "LEA Kgatleng farmer-record case: farmgate price BWP12/kg; published sensitivity analysis tests selling price at -30% and +30%, giving BWP8.40 and BWP15.60/kg. Scenario bounds are modelled sensitivities, not observed market minimum/maximum.",
+          "price_as_of": "2024-03",
+          "price_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "cost_breakdown_source": "LEA Kgatleng District (Malotwana), one-hectare open-field budget. Planting material BWP10,200; fertilizers BWP9,066; agrochemicals BWP18,840; labour BWP6,000; other pre-harvest BWP1,400; harvest/distribution BWP20,740; other variable costs BWP1,875; total BWP68,121/ha.",
+          "cost_breakdown_source_url": "https://www.lea.co.bw/documents/enterprise_budgets/TOMATO%20%20ENTERPRISE%20BUDGETS.pdf",
+          "scenario_method_note": "The calculator's low/expected/high yield and selling-price inputs are built from the LEA report's explicit -30% / actual / +30% sensitivity cases around 22.5 t/ha and BWP12/kg. The per-hectare cost and breakdown use the same observed Kgatleng budget baseline (BWP68,121/ha). The report is historical (March 2024), based on a single district farmer case for these baseline inputs, and excludes farm overheads; use as a transparent Botswana-specific planning estimate, not a current guaranteed quote or national average.",
+          "recent_market_check_reference": "A current Mpatlise supplier stall page lists a Francistown supplier's tomato offer at BWP15/kg; this is a supplier asking price, not a verified transaction or national farmgate average.",
+          "recent_market_check_as_of": "2026-11-06",
+          "recent_market_check_source_url": "https://www.mpatise.com/agric/esales/crop/svstall.php?id=BW00001411160"
         }
       ],
       "active": true
@@ -6811,6 +7434,33 @@
           "price_expected": 20,
           "price_high": 40,
           "price_unit": "per kg"
+        },
+        {
+          "country_code": "BW",
+          "data_quality": "benchmark",
+          "historical_market_price_reference_bwp_per_kg": 1.23,
+          "historical_market_price_reference_as_of": "2019",
+          "historical_market_price_reference_source": "Statistics Botswana, Annual Agricultural Survey Report 2019, Traditional Sector, Table 7.12E: national total watermelon sales revenue divided by quantity sold",
+          "historical_market_price_reference_source_url": "https://www.statsbots.org.bw/sites/default/files/ANNUAL%20AGRICULTURAL%20SURVEY%20REPORT%202019%20TRADITIONAL%20SECTOR.pdf",
+          "historical_market_price_reference_note": "Historical traditional-sector average only; not a current producer quotation and not used as the calculator selling-price assumption. Current price and full cost evidence remain unverified.",
+          "government_vegetable_guideline_maturity_days_reference": 150,
+          "government_vegetable_guideline_yield_reference_tonnes_per_ha": 16,
+          "government_vegetable_guideline_crop_reference_as_of": "legacy guide hosted 2019-12; original publication date not stated",
+          "government_vegetable_guideline_crop_reference_source": "Government of Botswana, Vegetable Enterprise Guideline, crop maturity and yield table",
+          "government_vegetable_guideline_crop_reference_source_url": "https://gov.bw/sites/default/files/2019-12/VEGETABLE%20ENTERPRISE%20GUIDELINES.pdf",
+          "government_vegetable_guideline_crop_reference_note": "Legacy national planning-guide reference lists watermelon maturity at 150 days and yield at 16 tonnes. This is not a current measured national yield or farm budget; retained as historical context only and not used to overwrite calculator scenario inputs.",
+          "government_horticulture_manual_watermelon_yield_reference_tonnes_per_ha_low": 9,
+          "government_horticulture_manual_watermelon_yield_reference_tonnes_per_ha_high": 11,
+          "government_horticulture_manual_watermelon_variety_maturity_days_reference": "85–105",
+          "government_horticulture_manual_reference_as_of": "legacy Botswana Ministry of Agriculture horticulture manual; publication year reported as 2003",
+          "government_horticulture_manual_source": "Government of Botswana, Ministry of Agriculture, Manual for Vegetable Production in Botswana, Horticultural Research Program; Cucurbits chapter",
+          "government_horticulture_manual_source_url": "https://www.researchgate.net/publication/362469461_Manual_for_Vegetable_Production_in_Botswana_GOVERNMENT_OF_BOTSWANA_MINISTRY_OF_AGRICULTURE_Manual_for_vegetable_production_in_Botswana_PREPARED_BY_THE_HORTICULTURAL_RESEARCH_PROGRAM",
+          "government_horticulture_manual_note": "Legacy technical manual gives expected watermelon yields of 9–11 tonnes/ha and recommended variety maturity examples of 85–105 days. A separate older government enterprise guideline gives a 16 t/ha planning yield and 150-day maturity assumption. These sources differ and are historical; they are retained as a range of published planning references, not a current verified yield. No local full farm budget or current farmgate price is established.",
+          "recent_market_listing_reference": "Two Mpatlise farmer-market watermelon listings: BWP60 at Tshesebe (2 November 2026) and BWP50 at Sefhare (27 October 2026)",
+          "recent_market_listing_reference_as_of": "2026-11-02",
+          "recent_market_listing_reference_source": "Mpatlise Horticulture Market supplier listings",
+          "recent_market_listing_reference_source_url": "https://www.mpatise.com/agric/esales/crop/svsale.php",
+          "recent_market_listing_reference_note": "Individual seller listing amounts only. The listing page does not clearly establish a common weight/size unit for these watermelon offers, so they are not comparable BWP/kg prices and are not used as the calculator selling-price assumption."
         }
       ],
       "active": true
