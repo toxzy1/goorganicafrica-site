@@ -622,6 +622,28 @@
       "recent_market_check_reference": "A current Mpatlise supplier stall page lists a Francistown supplier's tomato offer at BWP15/kg; this is a supplier asking price, not a verified transaction or national farmgate average.",
       "recent_market_check_as_of": "2026-11-06",
       "recent_market_check_source_url": "https://www.mpatise.com/agric/esales/crop/svstall.php?id=BW00001411160"
+    },
+    {
+      "country_code": "DZ",
+      "cost_per_unit": 887200,
+      "cost_breakdown": [
+        {
+          "label": "Total seasonal production expenditure (30-farm Biskra greenhouse survey average; category split not fully reliable in extracted paper)",
+          "amount": 887200
+        }
+      ],
+      "yield_low": 37.35,
+      "yield_expected": 55.11,
+      "yield_high": 71.72,
+      "yield_unit": "tonnes",
+      "price_low": 25,
+      "price_expected": 34.34,
+      "price_high": 105,
+      "price_unit": "per kg",
+      "source": "Djaghrouri, Faci & Cherif (2024), 'Drip Irrigation of Tomatoes in Biskra: Water Saving and Economic Profitability', Annals of Arid Zone 63(3):61–68, DOI 10.56093/aaz.v63i3.148227. Field survey of 30 Biskra greenhouse tomato farms.",
+      "as_of": "2024",
+      "data_quality": "local_survey_historical_greenhouse",
+      "notes": "Historical Algeria-specific greenhouse baseline for Biskra, not a current 2026 budget and not an open-field estimate. Survey average seasonal expenditure was DZD 887,200/ha; average yield 55.11 t/ha, with observed farm-class yields 37.35–71.72 t/ha. Observed selling prices ranged DZD 25–105/kg. Expected DZD 34.34/kg is a derived ratio of reported average sales (DZD 1,892,300/ha) to average yield (55.11 t/ha), not a separately reported average price. The study reports 220–250 day production cycles; this calculator commodity has a shorter generic cycle label, so the study's crop duration must be disclosed to users. Refresh with current regional costs and prices before treating as a current recommendation."
     }
   ],
   "active": true
