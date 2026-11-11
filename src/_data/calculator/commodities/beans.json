@@ -373,7 +373,12 @@
       "price_source_verification_note": "Verification checked 2026-11-11: BAMB's official July Producer Prices page links a PDF headed '2018/2019 Marketing Season' and stating validity through 31 July 2019, not July 2026. BAMB's general price page also links older producer/contract files. Therefore the July/August 2026 prices reproduced by The Farmers' Platform remain secondary-reproduced market evidence; they are not independently verified by the currently linked BAMB PDFs. Keep the dated grade-specific values as contextual reference only and do not describe them as confirmed by a current official BAMB price file. The 2026 cowpea range should likewise remain labelled as secondary-reproduced and pending direct BAMB confirmation.",
       "price_source_verification_checked_as_of": "2026-11-11",
       "price_source_verification_reference_url": "https://www.bamb.co.bw/july-producer-prices",
-      "price_source_verification_pdf_url": "https://www.bamb.co.bw/sites/default/files/July%20Prices.pdf"
+      "price_source_verification_pdf_url": "https://www.bamb.co.bw/sites/default/files/July%20Prices.pdf",
+      "black_eye_cowpeas_exchange_market_reference_bwp_per_tonne": 8250,
+      "black_eye_cowpeas_exchange_market_reference_as_of": "2026-11-01",
+      "black_eye_cowpeas_exchange_market_reference_source": "RicherFin BMX commodities market listing, latest Black Eyed Cowpeas instrument observation dated 1 November 2026.",
+      "black_eye_cowpeas_exchange_market_reference_source_url": "https://richerfin.com/en/bmx/",
+      "black_eye_cowpeas_exchange_market_reference_note": "Market instrument quotation in BWP/tonne, not confirmed as a producer farmgate price and not necessarily equivalent to the Tswana/Black-eye cowpea grade-specific BAMB schedule. Retained as a separate market reference only; not used to overwrite calculator price scenarios."
     }
   ],
   "active": true
