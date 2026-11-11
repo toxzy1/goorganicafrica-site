@@ -370,9 +370,10 @@
       "lemang_dijo_grant_reference_source": "National Development Bank of Botswana, Lemang Dijo Programme description",
       "lemang_dijo_grant_reference_url": "https://www.ndb.bw/lemang-dijo/",
       "lemang_dijo_grant_reference_note": "Government grant support is stated at up to BWP4,400/ha and covers crop-production services and inputs including tillage, pesticides, shelling/threshing and fertiliser (four bags/ha). It is a programme subsidy ceiling, not a crop-specific full production budget or the farmer's total economic cost; not used as cost_per_unit.",
-      "price_source_verification_note": "Verification check on 2026-11-06: BAMB's official BAMB Prices page links to a producer-price PDF explicitly dated June 2022 and a contract-price PDF dated 2021. Those official files do not independently verify the July/August 2026 cowpea price range reproduced by The Farmers' Platform. The 2026 range is retained as secondary-reproduced market evidence only, pending direct confirmation from BAMB; it must not be described as verified against a current official BAMB price file.",
-      "price_source_verification_checked_as_of": "2026-11-06",
-      "price_source_verification_reference_url": "https://www.bamb.co.bw/bamb-prices"
+      "price_source_verification_note": "Verification checked 2026-11-11: BAMB's official July Producer Prices page links a PDF headed '2018/2019 Marketing Season' and stating validity through 31 July 2019, not July 2026. BAMB's general price page also links older producer/contract files. Therefore the July/August 2026 prices reproduced by The Farmers' Platform remain secondary-reproduced market evidence; they are not independently verified by the currently linked BAMB PDFs. Keep the dated grade-specific values as contextual reference only and do not describe them as confirmed by a current official BAMB price file. The 2026 cowpea range should likewise remain labelled as secondary-reproduced and pending direct BAMB confirmation.",
+      "price_source_verification_checked_as_of": "2026-11-11",
+      "price_source_verification_reference_url": "https://www.bamb.co.bw/july-producer-prices",
+      "price_source_verification_pdf_url": "https://www.bamb.co.bw/sites/default/files/July%20Prices.pdf"
     }
   ],
   "active": true
