@@ -26,7 +26,8 @@ for (const f of files) {
   if (!a) throw new Error(`${f} missing from aggregate source`);
   if (JSON.stringify(a) !== JSON.stringify(d)) throw new Error(`${f} differs from aggregate calculator source`);
   const cd = Array.isArray(d.country_data) ? d.country_data : Object.entries(d.country_data || {}).map(([country_code, data]) => ({country_code, ...data}));
-  for (const c of calculatorCountries) if (!cd.some(x => x.country_code === c.code)) throw new Error(`${f} missing ${c.code}`);
+  const fallbackRates = json("src/_data/calculator/fallback.json").currency_per_usd || {};
+  for (const c of calculatorCountries) if (!cd.some(x => x.country_code === c.code) && !fallbackRates[c.code]) throw new Error(`${f} missing ${c.code} and no benchmark FX rate is configured`);
 }
 
 for (const f of fs.readdirSync(path.join(root, 'src/blog/posts')).filter(f => f.endsWith('.md'))) {
