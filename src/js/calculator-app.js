@@ -105,10 +105,11 @@
     if (!usable.length) return null;
     var rates = {NG:1327.65,GH:11.75,KE:129,UG:3570,TZ:2639.43,ZA:16.64,ZM:19.77,RW:1477,CM:566.75,ET:158.22};
     function moneyMedian(key) {
-      return median(usable.map(function (r) {
+      var value = median(usable.map(function (r) {
         var rate = rates[r.country_code];
-        return rate && r[key] != null ? Number(r[key]) / rate : null;
-      })) * targetRate;
+        return rate && r[key] != null && isFinite(Number(r[key])) ? Number(r[key]) / rate : null;
+      }));
+      return value === null ? null : value * targetRate;
     }
     var out = {
       cost_per_unit: moneyMedian("cost_per_unit"),
@@ -118,6 +119,7 @@
       yield_unit: usable.find(function(r){return r.yield_unit;})?.yield_unit,
       price_low: moneyMedian("price_low"),
       price_expected: moneyMedian("price_expected"),
+      price_per_unit: moneyMedian("price_per_unit"),
       price_high: moneyMedian("price_high"),
       price_unit: usable.find(function(r){return r.price_unit;})?.price_unit,
       output_low: median(usable.map(function(r){return r.output_low;})),
