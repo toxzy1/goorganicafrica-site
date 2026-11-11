@@ -378,7 +378,12 @@
       "black_eye_cowpeas_exchange_market_reference_as_of": "2026-11-01",
       "black_eye_cowpeas_exchange_market_reference_source": "RicherFin BMX commodities market listing, latest Black Eyed Cowpeas instrument observation dated 1 November 2026.",
       "black_eye_cowpeas_exchange_market_reference_source_url": "https://richerfin.com/en/bmx/",
-      "black_eye_cowpeas_exchange_market_reference_note": "Market instrument quotation in BWP/tonne, not confirmed as a producer farmgate price and not necessarily equivalent to the Tswana/Black-eye cowpea grade-specific BAMB schedule. Retained as a separate market reference only; not used to overwrite calculator price scenarios."
+      "black_eye_cowpeas_exchange_market_reference_note": "Market instrument quotation in BWP/tonne, not confirmed as a producer farmgate price and not necessarily equivalent to the Tswana/Black-eye cowpea grade-specific BAMB schedule. Retained as a separate market reference only; not used to overwrite calculator price scenarios.",
+      "beans_exchange_market_reference_bwp_per_tonne": 8400,
+      "beans_exchange_market_reference_as_of": "2026-11-11",
+      "beans_exchange_market_reference_source": "Botswana Stock Exchange (BMX), Soft Commodities marketplace reference quote observed 2026-11-11.",
+      "beans_exchange_market_reference_source_url": "https://www.bmx.co.bw/marketplace",
+      "beans_exchange_market_reference_note": "BMX marketplace reference quote, retained as a separate market indicator only. It is not confirmed as a producer farmgate price, a BAMB grade-specific producer price, or a guaranteed sale price; it does not overwrite the calculator's price scenarios."
     }
   ],
   "active": true
