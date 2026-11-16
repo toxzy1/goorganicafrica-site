@@ -12,7 +12,42 @@
   },
   "geographic_coverage": {
     "country": "Democratic Republic of the Congo",
-    "note": "National aggregates conceal major differences between provinces, agroecological zones, crop seasons, transport corridors and conflict-affected areas. Any eventual farm budget must be localized."
+    "note": "National aggregates conceal major differences between provinces, agroecological zones, crop seasons, transport corridors and conflict-affected areas. Any eventual farm budget must be localized.",
+    "administrative_level_1": {
+      "unit": "province",
+      "count": 26,
+      "units": [
+        "Kinshasa",
+        "Kongo Central",
+        "Kwango",
+        "Kwilu",
+        "Mai-Ndombe",
+        "Kasaï",
+        "Kasaï-Central",
+        "Kasaï-Oriental",
+        "Lomami",
+        "Sankuru",
+        "Bas-Uélé",
+        "Haut-Uélé",
+        "Ituri",
+        "Maniema",
+        "Nord-Kivu",
+        "Sud-Kivu",
+        "Tshopo",
+        "Équateur",
+        "Mongala",
+        "Nord-Ubangi",
+        "Sud-Ubangi",
+        "Tshuapa",
+        "Haut-Katanga",
+        "Haut-Lomami",
+        "Lualaba",
+        "Tanganyika"
+      ],
+      "special_status": "Kinshasa is a city-province with special status and is included in the 26 provincial-level entities.",
+      "official_source": "https://interieur.gouv.cd/ministere/territoires",
+      "verification_date": "2026-11-16"
+    }
   },
   "evidence": [
     {
@@ -172,6 +207,28 @@
         "FAO reported that prices of beans, corn flour and rice in April 2024 were on average 50 percent higher than one year earlier and above the five-year average."
       ],
       "caveat": "Historical price movement only; no absolute price level, district, quality grade or farm-gate price is provided in this summary. Do not treat this 2024 observation as a current 2026 price."
+    },
+    {
+      "topic": "Verified first-level administrative geography and selector coverage",
+      "reference_date": "2026-11-16",
+      "source": "Ministry of Interior, Democratic Republic of the Congo — Provinces and territories",
+      "source_url": "https://interieur.gouv.cd/ministere/territoires",
+      "observations": [
+        "The Ministry confirms 26 provincial-level entities, including Kinshasa as a city-province with special status.",
+        "The Ministry page enumerates Kinshasa, Kongo Central, Kwango, Kwilu, Mai-Ndombe, Kasaï, Kasaï-Central, Kasaï-Oriental, Lomami, Sankuru, Bas-Uélé, Haut-Uélé, Ituri, Maniema, Nord-Kivu, Sud-Kivu, Tshopo, Équateur, Mongala, Nord-Ubangi, Sud-Ubangi, Tshuapa, Haut-Katanga, Haut-Lomami, Lualaba and Tanganyika.",
+        "The Ministry explicitly says its displayed map uses open boundary data for indicative display and that legal texts, official maps and Journal officiel publications prevail."
+      ],
+      "caveat": "This verifies first-level names and count for a country selector only. It does not validate provincial agricultural statistics, crop yields, producer prices or enterprise budgets. The official page cautions that displayed map geometry is indicative."
+    },
+    {
+      "topic": "Potential lower-level administrative crosswalk source — not yet integrated",
+      "reference_date": "2026-09-08",
+      "source": "Open Admin Data — DR Congo administrative divisions dataset",
+      "source_url": "https://github.com/open-admin-data/dr-congo-administrative-divisions",
+      "observations": [
+        "The public dataset advertises 26 provinces, 164 territories and 519 sectors, with coordinates and a CC-BY-4.0 licence; its stated last update is 8 September 2026."
+      ],
+      "caveat": "This is an open-data compilation, not a substitute for current legal instruments or an official boundary gazette. Territory/sector names and geometries are not added to the calculator selector; validate official codes, status and crop-statistics crosswalk first."
     }
   ],
   "data_quality_and_use": [
@@ -179,7 +236,9 @@
     "The current sources include FAO seasonal/food-security reporting, FAOSTAT-derived aggregate cereal yield, USDA marketing-year estimates and a model-based maize forecast. They are different evidence types and must remain separately labelled.",
     "The current source set does not provide a verified, complete crop-specific national dataset with consistent area, production, yield and method across the major crops.",
     "Conflict-related displacement and restricted field access can affect both agricultural production and the representativeness/recency of field observations.",
-    "No verified, dated province-level farm-gate prices, input costs or crop enterprise budgets were established in this review."
+    "No verified, dated province-level farm-gate prices, input costs or crop enterprise budgets were established in this review.",
+    "The 26 first-level provincial entities, including Kinshasa's special city-province status, are now represented in the separate region lookup. This is selector geography only; it must not be interpreted as province-level crop-data coverage.",
+    "A public open-data compilation advertises 164 territories and 519 sectors, but those lower-level names/geometries remain a validation lead only and have not been integrated."
   ],
   "missing_data_before_calculator_use": [
     "Current province- and market-specific producer prices for maize, cassava, rice, beans, groundnuts, plantain/banana and horticultural crops, with date, grade, unit and price type.",
@@ -188,7 +247,8 @@
     "Crop calendars, planting density, crop duration, harvest frequency, marketable share, post-harvest losses and realistic farm-level yield distributions.",
     "Province-specific logistics and security constraints affecting access to inputs, fields and markets.",
     "Livestock production systems, breeds, herd/flock productivity, feed and veterinary costs, mortality and dated producer sale prices.",
-    "Validation of USDA and model-based estimates against DRC national statistical publications and any available agricultural survey or census tables."
+    "Validation of USDA and model-based estimates against DRC national statistical publications and any available agricultural survey or census tables.",
+    "Validate province identifiers and boundaries against current legal instruments and the Journal officiel; crosswalk any territory/city and sector/chiefdom/commune agricultural tables before adding lower-level selectors or regional data joins."
   ],
   "recommendation": "Retain DRC as research-only. Current evidence is useful for national context and broad crop production cross-checks, but source types, periods and geographic coverage are not sufficiently harmonized for a farm-profit calculator. Do not activate a country profile or derive farm profitability until official province-level crop data, dated farm-gate prices and input budgets are obtained and reconciled."
 }
