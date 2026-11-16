@@ -115,11 +115,19 @@
       "source": "Open Admin Data — DR Congo administrative divisions",
       "url": "https://github.com/open-admin-data/dr-congo-administrative-divisions",
       "reference_date": "2026-09-08"
+    },
+    {
+      "topic": "Current market information system observations — price stage unresolved",
+      "detail": "SIMA RDC's public market-price page was checked on 16 November 2026. Its latest displayed table is dated 15 November 2026 and lists eight CDF/kg quotes: KADUTU — potato 1,095; white rice 2,000; parchment coffee 12,500; yoghurt milk 2,000; maize grain 2,000; pineapple 1,000; IHUSI — maize grain 2,001; parchment coffee 4,000. The SIMA site says its network covers Nord-Kivu and Sud-Kivu and uses a province → territory → market selection.",
+      "limitation": "The static table does not identify farmgate/wholesale/retail stage or map each market name to province/territory. Only the latest public rows are visible; the historical 12-month chart is interactive and raw row export was not available. No SIMA value is admitted as a farmgate price.",
+      "source": "SIMA RDC — Prix sur les marchés",
+      "url": "https://sima-rdc.org/data",
+      "reference_date": "2026-11-15"
     }
   ],
   "readiness": {
     "crop_area_production_yield_by_commodity_and_season": "partial_USDA_FAS_marketing_year_estimates_and_AAgWa_modelled_maize_forecast_available_but_matching_official_province_crop_area_production_yield_series_not_extracted",
-    "dated_local_farmgate_prices_and_units": "partial_World_Bank_RTFP_215_markets_through_2026_10_01_market_estimates_not_farmgate_SIM_or_producer_price_records_need_extraction",
+    "dated_local_farmgate_prices_and_units": "partial_SIMA_public_market_quotes_8_rows_2026_11_15_CDF_per_kg_Nord_and_South_Kivu_network_price_stage_and_market_to_province_crosswalk_unresolved_not_farmgate",
     "seed_and_planting_material_costs": "blocked_no_dated_province_crop_specific_farmer_paid_seed_prices_extracted",
     "fertilizer_and_soil_amendment_costs": "blocked_no_current_farmer_paid_unit_price_and_application_rate_schedule_extracted",
     "crop_protection_costs": "blocked_no_province_crop_specific_product_and_application_cost_schedule_extracted",
@@ -141,7 +149,8 @@
     "Obtain dated farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, energy and transport costs by province and production system.",
     "Account for security, displacement and transport constraints in eastern provinces and avoid treating national averages as representative.",
     "Build crop-specific regional enterprise budgets and test cases for the current 17 commodity profiles only where the production system and crop identity match.",
-    "Validate province identifiers and boundary geometries against legal instruments before spatial joins; obtain official current territory/city and sector/chiefdom/commune crosswalks before lower-level selectors."
+    "Validate province identifiers and boundary geometries against legal instruments before spatial joins; obtain official current territory/city and sector/chiefdom/commune crosswalks before lower-level selectors.",
+    "Obtain SIMA collection protocol and full dated market/territory export; identify whether each quote is farmgate, wholesale or retail and map KADUTU/IHUSI to official province/territory codes."
   ],
   "safeguards": [
     "No aggregate cereal yield used as maize or rice yield.",
@@ -151,5 +160,5 @@
     "No province selector treated as evidence of province-specific crop data.",
     "No calculator profile or formula activated or changed."
   ],
-  "conclusion": "The DRC now has a Ministry-verified 26-province first-level selector in the separate region lookup. The Ministry notes that its displayed geometry is indicative and legal instruments prevail. The 215-market price dataset and mixed-method crop estimates still require extraction and reconciliation; no province-level farmgate price, farmer-paid input budget or regional enterprise budget has been validated. Retain research-only status."
+  "conclusion": "The DRC now has a Ministry-verified 26-province first-level selector in the separate region lookup and a newly identified SIMA public market-price source with eight dated 15 November 2026 observations in CDF/kg for the Nord-Kivu/Sud-Kivu network. SIMA's displayed table does not identify price stage or each market's province/territory, so none is admitted as farmgate. The 215-market World Bank data and mixed-method crop estimates still require extraction and reconciliation; farmer-paid input costs and regional enterprise budgets remain incomplete. Retain research-only status."
 }
