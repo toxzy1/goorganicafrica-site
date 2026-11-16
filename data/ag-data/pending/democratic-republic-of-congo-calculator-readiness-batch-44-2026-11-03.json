@@ -8,8 +8,48 @@
   "administrative_geography": {
     "selector_level": "province",
     "count": 26,
-    "note": "The Ministry of Interior confirms 26 provinces including Kinshasa, which has special status. Province names and boundaries should be aligned to official legal references and geospatial boundary files before building lower-level selectors.",
-    "source": "https://interieur.gouv.cd/ministere/territoires"
+    "verified_regions": [
+      "Kinshasa",
+      "Kongo Central",
+      "Kwango",
+      "Kwilu",
+      "Mai-Ndombe",
+      "Kasaï",
+      "Kasaï-Central",
+      "Kasaï-Oriental",
+      "Lomami",
+      "Sankuru",
+      "Bas-Uélé",
+      "Haut-Uélé",
+      "Ituri",
+      "Maniema",
+      "Nord-Kivu",
+      "Sud-Kivu",
+      "Tshopo",
+      "Équateur",
+      "Mongala",
+      "Nord-Ubangi",
+      "Sud-Ubangi",
+      "Tshuapa",
+      "Haut-Katanga",
+      "Haut-Lomami",
+      "Lualaba",
+      "Tanganyika"
+    ],
+    "first_level_unit": "Province; Kinshasa is a city-province with special status.",
+    "selector_added": true,
+    "source": "https://interieur.gouv.cd/ministere/territoires",
+    "verification_date": "2026-11-16",
+    "lower_levels": {
+      "candidate_source": "https://github.com/open-admin-data/dr-congo-administrative-divisions",
+      "advertised_counts": {
+        "territories": 164,
+        "sectors": 519
+      },
+      "status": "candidate_open_dataset_not_integrated_pending_official_legal_and_geospatial_crosswalk",
+      "note": "Do not treat the public open-data compilation as legal authority or assume its 164 territory/519 sector counts are final official counts."
+    },
+    "map_caveat": "The Ministry page states its displayed boundaries are indicative open data and that legal texts and official maps prevail."
   },
   "findings": [
     {
@@ -59,6 +99,22 @@
       "limitation": "Dashboard indicators and hotspot warnings are monitoring products, not a substitute for official crop-specific province-level area, production and yield tables. Export and source metadata must be inspected before numerical use.",
       "source": "European Commission ASAP",
       "url": "https://agricultural-production-hotspots.ec.europa.eu/country.php?cntry=118"
+    },
+    {
+      "topic": "First-level administrative selector completed",
+      "detail": "On 16 November 2026, the DRC Ministry of Interior page was checked directly. It confirms 26 provincial-level entities and enumerates all names, including Kinshasa as a city-province with special status. The 26 names have now been added to src/_data/calculator/regions.json.",
+      "limitation": "This is a country/region selector update only. It does not prove province-level crop area, production, yield, farmgate prices or input-cost coverage. Ministry map geometry is explicitly indicative; legal boundary files remain necessary for spatial joins.",
+      "source": "Ministry of Interior, DRC",
+      "url": "https://interieur.gouv.cd/ministere/territoires",
+      "reference_date": "2026-11-16"
+    },
+    {
+      "topic": "Lower-level divisions — follow-up lead only",
+      "detail": "An open CC-BY-4.0 administrative dataset advertises 164 territories and 519 sectors, updated 8 September 2026. These may support a later lower-level selector and data crosswalk.",
+      "limitation": "The dataset is not treated as a legal source. Territory/sector names, codes and geometries were not imported; official status and crop-statistics crosswalk must be checked before integration.",
+      "source": "Open Admin Data — DR Congo administrative divisions",
+      "url": "https://github.com/open-admin-data/dr-congo-administrative-divisions",
+      "reference_date": "2026-09-08"
     }
   ],
   "readiness": {
@@ -73,7 +129,8 @@
     "regional_enterprise_budget_and_gross_margin": "blocked_no_validated_province_crop_enterprise_budgets",
     "currency_and_exchange_rate_method": "partial_CDF_currency_known_but_current_exchange_rate_method_price_normalisation_and_rounding_tests_pending",
     "source_provenance_and_observation_date": "improved_FAO_2026_06_24_World_Bank_2026_10_05_Ministry_of_Interior_and_ASAP_sources_linked",
-    "calculator_mapping_and_test_cases": "blocked_no_validated_regional_enterprise_inputs_or_regression_test_cases"
+    "calculator_mapping_and_test_cases": "blocked_no_validated_regional_enterprise_inputs_or_regression_test_cases",
+    "administrative_geography": "pass_first_level_26_province_names_verified_by_DRC_Ministry_of_Interior_and_added_to_separate_region_lookup_lower_level_territory_sector_crosswalk_pending"
   },
   "outstanding": [
     "Extract the October 2026 World Bank market CSV for all 215 DRC markets and catalogue the commodity, date, currency, price type, data coverage, confidence and interpolation fields.",
@@ -81,10 +138,10 @@
     "Extract crop-specific harvested area, production and yield from DRC Ministry/INS and FAOSTAT sources, retaining source flags and calendar/marketing-year definitions.",
     "Cross-check USDA FAS corn and rice marketing-year estimates against national statistics; do not combine with AAgWa modelled forecasts.",
     "Export ASAP subnational crop-production shares and monitoring metadata as a screening layer, not a replacement for official crop statistics.",
-    "Build and validate the 26-province lookup, including Kinshasa special status and current boundary crosswalk.",
     "Obtain dated farmer-paid seed, fertilizer, crop protection, labour, machinery, irrigation, energy and transport costs by province and production system.",
     "Account for security, displacement and transport constraints in eastern provinces and avoid treating national averages as representative.",
-    "Build crop-specific regional enterprise budgets and test cases for the current 17 commodity profiles only where the production system and crop identity match."
+    "Build crop-specific regional enterprise budgets and test cases for the current 17 commodity profiles only where the production system and crop identity match.",
+    "Validate province identifiers and boundary geometries against legal instruments before spatial joins; obtain official current territory/city and sector/chiefdom/commune crosswalks before lower-level selectors."
   ],
   "safeguards": [
     "No aggregate cereal yield used as maize or rice yield.",
@@ -94,5 +151,5 @@
     "No province selector treated as evidence of province-specific crop data.",
     "No calculator profile or formula activated or changed."
   ],
-  "conclusion": "The DRC has a materially improved market-price evidence base with 215 markets through October 2026 and a verified 26-province administrative framework. Crop production estimates remain mixed-method and not yet reconciled to province-level harvested area; farmgate prices, farmer-paid input costs and regional enterprise budgets remain incomplete. Retain research-only status."
+  "conclusion": "The DRC now has a Ministry-verified 26-province first-level selector in the separate region lookup. The Ministry notes that its displayed geometry is indicative and legal instruments prevail. The 215-market price dataset and mixed-method crop estimates still require extraction and reconciliation; no province-level farmgate price, farmer-paid input budget or regional enterprise budget has been validated. Retain research-only status."
 }
