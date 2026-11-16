@@ -229,6 +229,88 @@
         "The public dataset advertises 26 provinces, 164 territories and 519 sectors, with coordinates and a CC-BY-4.0 licence; its stated last update is 8 September 2026."
       ],
       "caveat": "This is an open-data compilation, not a substitute for current legal instruments or an official boundary gazette. Territory/sector names and geometries are not added to the calculator selector; validate official codes, status and crop-statistics crosswalk first."
+    },
+    {
+      "topic": "Public market-price observations from the SIMA network",
+      "reference_date": "2026-11-15",
+      "source": "SIMA RDC — Prix sur les marchés",
+      "source_url": "https://sima-rdc.org/data",
+      "observations": [
+        {
+          "commodity": "Potato",
+          "market": "KADUTU",
+          "date": "2026-11-15",
+          "price": 1095,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        },
+        {
+          "commodity": "White rice",
+          "market": "KADUTU",
+          "date": "2026-11-15",
+          "price": 2000,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        },
+        {
+          "commodity": "Parchment coffee",
+          "market": "KADUTU",
+          "date": "2026-11-15",
+          "price": 12500,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        },
+        {
+          "commodity": "Yoghurt milk",
+          "market": "KADUTU",
+          "date": "2026-11-15",
+          "price": 2000,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        },
+        {
+          "commodity": "Maize grain",
+          "market": "KADUTU",
+          "date": "2026-11-15",
+          "price": 2000,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        },
+        {
+          "commodity": "Pineapple",
+          "market": "KADUTU",
+          "date": "2026-11-15",
+          "price": 1000,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        },
+        {
+          "commodity": "Maize grain",
+          "market": "IHUSI",
+          "date": "2026-11-15",
+          "price": 2001,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        },
+        {
+          "commodity": "Parchment coffee",
+          "market": "IHUSI",
+          "date": "2026-11-15",
+          "price": 4000,
+          "currency": "CDF",
+          "unit": "kg",
+          "price_type": "market_quote_unspecified_stage"
+        }
+      ],
+      "scope": "The SIMA site states its public market network covers markets in Nord-Kivu and Sud-Kivu and reports last-collected market prices. The page's current table provides eight product-market observations dated 15 November 2026.",
+      "caveat": "The page labels these as market prices in CDF/kg but does not identify whether each quote is farmgate, wholesale or retail, and does not expose a province/territory mapping for each named market in the displayed table. Therefore these values are retained as market-context evidence only and are not used as farmgate prices or calculator revenue inputs. The 12-month chart is interactive and historical row-level data are not exposed in the static page; the 'request a price' flow asks for a phone number and a CAPTCHA."
     }
   ],
   "data_quality_and_use": [
@@ -238,7 +320,8 @@
     "Conflict-related displacement and restricted field access can affect both agricultural production and the representativeness/recency of field observations.",
     "No verified, dated province-level farm-gate prices, input costs or crop enterprise budgets were established in this review.",
     "The 26 first-level provincial entities, including Kinshasa's special city-province status, are now represented in the separate region lookup. This is selector geography only; it must not be interpreted as province-level crop-data coverage.",
-    "A public open-data compilation advertises 164 territories and 519 sectors, but those lower-level names/geometries remain a validation lead only and have not been integrated."
+    "A public open-data compilation advertises 164 territories and 519 sectors, but those lower-level names/geometries remain a validation lead only and have not been integrated.",
+    "SIMA RDC publishes current market quotes for the Nord-Kivu/Sud-Kivu network. The 15 November 2026 public table lists eight observations in CDF/kg, but price stage and per-market province/territory mapping are not stated in the static table; keep them as market context, not farmgate inputs."
   ],
   "missing_data_before_calculator_use": [
     "Current province- and market-specific producer prices for maize, cassava, rice, beans, groundnuts, plantain/banana and horticultural crops, with date, grade, unit and price type.",
@@ -248,7 +331,8 @@
     "Province-specific logistics and security constraints affecting access to inputs, fields and markets.",
     "Livestock production systems, breeds, herd/flock productivity, feed and veterinary costs, mortality and dated producer sale prices.",
     "Validation of USDA and model-based estimates against DRC national statistical publications and any available agricultural survey or census tables.",
-    "Validate province identifiers and boundaries against current legal instruments and the Journal officiel; crosswalk any territory/city and sector/chiefdom/commune agricultural tables before adding lower-level selectors or regional data joins."
+    "Validate province identifiers and boundaries against current legal instruments and the Journal officiel; crosswalk any territory/city and sector/chiefdom/commune agricultural tables before adding lower-level selectors or regional data joins.",
+    "Obtain SIMA's collection protocol, quote-stage definition, full dated market/territory export and producer-level observations; confirm whether quotes are farmgate, wholesale or retail before any calculator use."
   ],
   "recommendation": "Retain DRC as research-only. Current evidence is useful for national context and broad crop production cross-checks, but source types, periods and geographic coverage are not sufficiently harmonized for a farm-profit calculator. Do not activate a country profile or derive farm profitability until official province-level crop data, dated farm-gate prices and input budgets are obtained and reconciled."
 }
