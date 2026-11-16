@@ -1,0 +1,90 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — DRC follow-up: first-level geography",
+  "country": {
+    "name": "Democratic Republic of the Congo",
+    "iso_alpha2": "CD",
+    "iso_alpha3": "COD"
+  },
+  "review_date": "2026-11-16",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "geography_selector_updated_research_only_not_calculator_ready",
+  "administrative_geography": {
+    "first_level_unit": "Province",
+    "verified_count": 26,
+    "verified_regions": [
+      "Kinshasa",
+      "Kongo Central",
+      "Kwango",
+      "Kwilu",
+      "Mai-Ndombe",
+      "Kasaï",
+      "Kasaï-Central",
+      "Kasaï-Oriental",
+      "Lomami",
+      "Sankuru",
+      "Bas-Uélé",
+      "Haut-Uélé",
+      "Ituri",
+      "Maniema",
+      "Nord-Kivu",
+      "Sud-Kivu",
+      "Tshopo",
+      "Équateur",
+      "Mongala",
+      "Nord-Ubangi",
+      "Sud-Ubangi",
+      "Tshuapa",
+      "Haut-Katanga",
+      "Haut-Lomami",
+      "Lualaba",
+      "Tanganyika"
+    ],
+    "special_status": "Kinshasa is a city-province and is included in the 26 provincial-level entities.",
+    "official_source": "https://interieur.gouv.cd/ministere/territoires",
+    "verification_date": "2026-11-16",
+    "lower_level_candidate": {
+      "source": "https://github.com/open-admin-data/dr-congo-administrative-divisions",
+      "advertised_counts": {
+        "territories": 164,
+        "sectors": 519
+      },
+      "source_updated": "2026-09-08",
+      "status": "not_integrated_pending_official_validation"
+    },
+    "caveats": [
+      "The Ministry says its map geometry is indicative and legal texts/official maps prevail.",
+      "Province selector presence is not province-level crop-data coverage.",
+      "Lower-level territory/sector records were not added."
+    ]
+  },
+  "agricultural_data_status": {
+    "crop_area_production_yield": "partial_USDA_FAS_marketing_year_estimates_and_AAgWa_modelled_forecast_not_reconciled_to_official_province_crop_area_and_yield_tables",
+    "farmgate_prices": "blocked_market_database_contains_observed_and_modelled_market_prices_not_automatically_producer_prices",
+    "inputs_and_costs": "blocked_no_complete_current_province_crop_farmer_paid_seed_fertilizer_crop_protection_irrigation_energy_labour_machinery_schedule",
+    "enterprise_budgets": "blocked_no_validated_province_crop_enterprise_budgets",
+    "currency": "CDF_identified_exchange_rate_normalisation_and_rounding_tests_pending",
+    "mapping_tests": "blocked_no_validated_regional_input_bundle_or_regression_cases"
+  },
+  "new_findings": [
+    "The DRC Ministry of Interior page confirms 26 provincial-level entities and lists all 26 names, including Kinshasa city-province.",
+    "The Ministry warns that its displayed map boundaries are indicative open data; legal instruments and official maps prevail.",
+    "An open CC-BY-4.0 dataset advertises 164 territories and 519 sectors, but this lower-level compilation is a lead only and was not integrated."
+  ],
+  "sources": [
+    "https://interieur.gouv.cd/ministere/territoires",
+    "https://github.com/open-admin-data/dr-congo-administrative-divisions",
+    "https://cb.apps.fao.org/country.jsp?code=COD&lang=fr",
+    "https://microdata.worldbank.org/catalog/4490",
+    "https://agricultural-production-hotspots.ec.europa.eu/country.php?cntry=118",
+    "https://fas-prod.azureedge.us/data/production/cg"
+  ],
+  "safeguards": [
+    "DRC remains not_active.",
+    "No existing active country profile or calculator formula was changed.",
+    "No national aggregate or modelled forecast was converted to a province-level observation.",
+    "No World Bank market estimate was relabelled as a farmgate price.",
+    "Lower-level divisions were not integrated without legal and spatial crosswalk validation.",
+    "No merge, pull request or production deployment was performed."
+  ],
+  "next_step": "Extract and reconcile official crop-specific province/season observations, inspect market data price-type/confidence flags, and obtain dated farmgate prices and farmer-paid input costs before enterprise budgets or calculator tests."
+}
