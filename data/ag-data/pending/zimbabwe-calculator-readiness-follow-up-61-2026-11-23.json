@@ -113,8 +113,110 @@
       "These are second-round assessment estimates, not completed post-harvest survey results.",
       "No zeros were imputed for Harare or Bulawayo.",
       "2024/25 soybean baseline conflicts with the separate Post-Harvest Survey and remains unresolved.",
-      "Sorghum natural-region Table 10a has an apparent Region 4 production error; excluded."
-    ]
+      "Sorghum natural-region Table 10a has an apparent Region 4 production error; excluded.",
+      "Some province rows sum 1-2 ha or MT away from the national printed total because the source publishes rounded values. These are recorded in a reconciliation object, not silently corrected."
+    ],
+    "province_sum_reconciliation": {
+      "maize": {
+        "provincial_row_sum_area_ha": 1916149,
+        "printed_total_area_ha": 1916150,
+        "area_difference": -1,
+        "provincial_row_sum_production_mt": 2346256,
+        "printed_total_production_mt": 2346256,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "sorghum": {
+        "provincial_row_sum_area_ha": 375303,
+        "printed_total_area_ha": 375303,
+        "area_difference": 0,
+        "provincial_row_sum_production_mt": 290218,
+        "printed_total_production_mt": 290216,
+        "production_difference": 2,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "pearl_millet": {
+        "provincial_row_sum_area_ha": 214232,
+        "printed_total_area_ha": 214232,
+        "area_difference": 0,
+        "provincial_row_sum_production_mt": 87677,
+        "printed_total_production_mt": 87677,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "finger_millet": {
+        "provincial_row_sum_area_ha": 34848,
+        "printed_total_area_ha": 34849,
+        "area_difference": -1,
+        "provincial_row_sum_production_mt": 12378,
+        "printed_total_production_mt": 12379,
+        "production_difference": -1,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "soybean": {
+        "provincial_row_sum_area_ha": 45048,
+        "printed_total_area_ha": 45048,
+        "area_difference": 0,
+        "provincial_row_sum_production_mt": 96129,
+        "printed_total_production_mt": 96129,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "irish_potato": {
+        "provincial_row_sum_area_ha": 12004,
+        "printed_total_area_ha": 12004,
+        "area_difference": 0,
+        "provincial_row_sum_production_mt": 323093,
+        "printed_total_production_mt": 323093,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "sweet_potato": {
+        "provincial_row_sum_area_ha": 33107,
+        "printed_total_area_ha": 33108,
+        "area_difference": -1,
+        "provincial_row_sum_production_mt": 135565,
+        "printed_total_production_mt": 135565,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "groundnut": {
+        "provincial_row_sum_area_ha": 241113,
+        "printed_total_area_ha": 241113,
+        "area_difference": 0,
+        "provincial_row_sum_production_mt": 109301,
+        "printed_total_production_mt": 109301,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "sugar_bean": {
+        "provincial_row_sum_area_ha": 33074,
+        "printed_total_area_ha": 33075,
+        "area_difference": -1,
+        "provincial_row_sum_production_mt": 18704,
+        "printed_total_production_mt": 18703,
+        "production_difference": 1,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "african_pea": {
+        "provincial_row_sum_area_ha": 69269,
+        "printed_total_area_ha": 69268,
+        "area_difference": 1,
+        "provincial_row_sum_production_mt": 20877,
+        "printed_total_production_mt": 20877,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      },
+      "rice": {
+        "provincial_row_sum_area_ha": 1352,
+        "printed_total_area_ha": 1353,
+        "area_difference": -1,
+        "provincial_row_sum_production_mt": 716,
+        "printed_total_production_mt": 716,
+        "production_difference": 0,
+        "interpretation": "Small 1-2 unit discrepancies are preserved as printed and treated as table-rounding/reconciliation differences; do not overwrite the national printed total."
+      }
+    }
   },
   "readiness_effect": {
     "first_level_region_lookup_entries_before": 35,
