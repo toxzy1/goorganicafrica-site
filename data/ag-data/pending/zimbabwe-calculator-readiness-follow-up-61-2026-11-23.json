@@ -1,0 +1,153 @@
+{
+  "title": "GoOrganicAfrica 44-country calculator readiness — Zimbabwe follow-up 61",
+  "country": {
+    "name": "Zimbabwe",
+    "iso_alpha2": "ZW",
+    "iso_alpha3": "ZWE"
+  },
+  "review_date": "2026-11-23",
+  "branch": "data/44-country-calculator-readiness",
+  "status": "research_only_not_calculator_ready",
+  "administrative_geography": {
+    "first_level_units": [
+      "Manicaland",
+      "Mashonaland Central",
+      "Mashonaland East",
+      "Mashonaland West",
+      "Masvingo",
+      "Matabeleland North",
+      "Matabeleland South",
+      "Midlands",
+      "Bulawayo",
+      "Harare"
+    ],
+    "verified_by": "Government of Zimbabwe Ministry of Foreign Affairs; ZIMSTAT 2022 census administrative map",
+    "lower_levels": {
+      "districts": 91,
+      "wards": 1961
+    },
+    "lower_level_status": "Metadata identified; boundary geodatabase download requires login and has not been imported.",
+    "selector_added": true
+  },
+  "crop_data_follow_up": {
+    "source": "2025/26 CLAFA-2 official second-round assessment",
+    "reference_period": "2025/26 summer season",
+    "report_version_date": "2026-04-17 (from official PDF filename)",
+    "geographic_coverage": "Eight rural provinces; Harare and Bulawayo not represented in the provincial crop tables.",
+    "unit_definitions": {
+      "area": "ha",
+      "yield": "t/ha",
+      "production": "MT"
+    },
+    "crop_groups_with_province_data": [
+      "maize",
+      "sorghum",
+      "pearl_millet",
+      "finger_millet",
+      "soybean",
+      "irish_potato",
+      "sweet_potato",
+      "groundnut",
+      "sugar_bean",
+      "african_pea",
+      "rice"
+    ],
+    "national_totals_as_printed": {
+      "maize": {
+        "area_ha": 1916150,
+        "yield_t_per_ha": 1.22,
+        "production_mt": 2346256
+      },
+      "sorghum": {
+        "area_ha": 375303,
+        "yield_t_per_ha": 0.77,
+        "production_mt": 290216
+      },
+      "pearl_millet": {
+        "area_ha": 214232,
+        "yield_t_per_ha": 0.41,
+        "production_mt": 87677
+      },
+      "finger_millet": {
+        "area_ha": 34849,
+        "yield_t_per_ha": 0.36,
+        "production_mt": 12379
+      },
+      "soybean": {
+        "area_ha": 45048,
+        "yield_t_per_ha": 2.13,
+        "production_mt": 96129
+      },
+      "irish_potato": {
+        "area_ha": 12004,
+        "yield_t_per_ha": 28,
+        "production_mt": 323093
+      },
+      "sweet_potato": {
+        "area_ha": 33108,
+        "yield_t_per_ha": 4.09,
+        "production_mt": 135565
+      },
+      "groundnut": {
+        "area_ha": 241113,
+        "yield_t_per_ha": 0.45,
+        "production_mt": 109301
+      },
+      "sugar_bean": {
+        "area_ha": 33075,
+        "yield_t_per_ha": 0.57,
+        "production_mt": 18703
+      },
+      "african_pea": {
+        "area_ha": 69268,
+        "yield_t_per_ha": 0.3,
+        "production_mt": 20877
+      },
+      "rice": {
+        "area_ha": 1353,
+        "yield_t_per_ha": 0.53,
+        "production_mt": 716
+      }
+    },
+    "caveats": [
+      "These are second-round assessment estimates, not completed post-harvest survey results.",
+      "No zeros were imputed for Harare or Bulawayo.",
+      "2024/25 soybean baseline conflicts with the separate Post-Harvest Survey and remains unresolved.",
+      "Sorghum natural-region Table 10a has an apparent Region 4 production error; excluded."
+    ]
+  },
+  "readiness_effect": {
+    "first_level_region_lookup_entries_before": 35,
+    "first_level_region_lookup_entries_after": 36,
+    "research_records_without_first_level_region_lookup_before": 9,
+    "research_records_without_first_level_region_lookup_after": 8,
+    "crop_area_production_yield": "Improved to partial with 11 crop-group provincial datasets; not passed for all 17 enterprises or all 10 administrative units.",
+    "dated_farmgate_prices": "Still partial; GMB policy prices and ZMX exchange transactions are not automatically realized farmgate netbacks.",
+    "input_and_operation_costs": "Still partial or blocked; current farmer-paid prices and operation costs not complete.",
+    "enterprise_budgets": "Blocked; no validated complete regional budgets.",
+    "calculator_mapping_and_tests": "Blocked; no validated Zimbabwe region-enterprise regression cases."
+  },
+  "source_conflicts": [
+    "2024/25 PHS soybean output: 57,750 MT in Tables 3.2/3.8 versus 7,750 MT printed in Table 3.7; 2025/26 CLAFA-2 uses 41,919 MT as the 2024/25 comparator.",
+    "2025/26 CLAFA-1 preliminary maize area was 1,898,528 ha; the later CLAFA-2 second-round assessment reports 1,916,150 ha and 2,346,256 MT.",
+    "Sorghum natural-region Table 10a reports 679,222 MT for Region 4 against 290,216 MT national total; not used."
+  ],
+  "sources": [
+    "https://www.zimfa.gov.zw/index.php/about-us/zimbabwe-in-brief/facts-and-figures",
+    "https://www.zimstat.co.zw/wp-content/uploads/Census/2022_PHC_Report_27012023_Final.pdf",
+    "https://zimgeoportal.org.zw/datasets/zimbabwe-administrative-boundaries/",
+    "https://www.agric.gov.zw/wp-content/uploads/2020/07/CLAFA-2-Report-2026-Final-17-April-Print-3.pdf",
+    "https://www.zimstat.co.zw/wp-content/uploads/production/agriculture/2024_25_POST_HARVEST_SURVEY_REPORT_141025.pdf",
+    "https://zimstat.co.zw/agriculture-statistics/"
+  ],
+  "safeguards": [
+    "Zimbabwe remains not_active.",
+    "No existing active country profile or calculator formula was changed.",
+    "Only the separate first-level region lookup was updated.",
+    "No lower-level districts or wards were imported from an access-restricted boundary file.",
+    "No policy producer prices, wholesale/exchange prices or retail prices were relabelled as verified farmgate realizations.",
+    "No national crop totals were substituted for missing city-province crop data.",
+    "No merge, pull request or production deployment was performed."
+  ],
+  "next_step": "Continue with the eight countries still missing first-level region lookup entries, then close Zimbabwe's producer-price, input-cost, enterprise-budget and functional-test gaps."
+}
