@@ -19,8 +19,8 @@
     "mixed_source_operational_profiles_not_fully_local": 1,
     "readiness_certified": 0,
     "benchmark_only_operational_profiles_not_fully_local": 1,
-    "first_level_region_lookup_entries": 35,
-    "research_records_without_first_level_region_lookup": 9
+    "first_level_region_lookup_entries": 36,
+    "research_records_without_first_level_region_lookup": 8
   },
   "readiness_criteria": [
     {
@@ -2616,10 +2616,10 @@
       "code": "ZW",
       "name": "Zimbabwe",
       "evidence_file": "data/ag-data/pending/additional-african-country-evidence-2026-11-01.json",
-      "existing_research_note": "November 2026 refresh: ZIMSTAT September 2026 agricultural PPI portal lists USD, ZWG and weighted datasets; GMB 2026/27 reported producer incentive prices (wheat USD531.93/MT, maize/traditional grains USD432/MT, soybean USD660.95/MT, sunflower USD826.19/MT); FEWS NET Sep 2026-Jan 2027 El Niño/market/livestock risk; Government 21-Oct 2026 cereal plan projection 1.607m MT vs 2.270m MT requirement; 3-Nov input distribution progress. AMA June 2025 agro-input prices retained as historical only. PPI data rows, PHS harvested-area tables, and current farmer-paid input costs remain unextracted.",
+      "existing_research_note": "2026-11-23 follow-up verifies all 10 first-level administrative units and extracts official 2025/26 CLAFA-2 province area/yield/production for 11 crop groups. District/ward crosswalk, producer prices, full input and operation costs, complete enterprise budgets and calculator tests remain pending.",
       "calculator_status": "not_active",
       "criterion_status": {
-        "crop_area_production_yield_by_commodity_and_season": "partial_2024_25_official_post_harvest_crop_output_and_provincial_sector_splits; matched_crop_specific_harvested_area_and_weighted_yields_pending; soybean_output_conflict_requires_ZIMSTAT_clarification",
+        "crop_area_production_yield_by_commodity_and_season": "partial_official_2025_26_CLAFA2_province_area_yield_production_tables_extracted_for_11_crop_groups; eight_rural_provinces_only; Harare_and_Bulawayo_crop_tables_missing; 17_enterprise_mapping_and_historical_PHS_conflicts_remain",
         "dated_local_farmgate_prices_and_units": "partial_2026_27_GMB_policy_incentive_prices_for_selected_grains_oilseeds; ZIMSTAT_PPI_A_September_2026_dataset_available_but_product_level_rows_not_extracted; horticulture_livestock_transaction_prices_missing",
         "seed_and_planting_material_costs": "partial_2025_AMA_agrodealer_seed_quotes_historical_only; 2026_27_input_distribution_progress_reported_but_farmer_paid_prices_and_subsidy_terms_missing",
         "fertilizer_and_soil_amendment_costs": "partial_2025_AMA_fertilizer_quotes_historical_only_and_2026_27_distribution_progress; current_2026_27_product_unit_prices_and_farmer_copayments_missing",
@@ -2629,7 +2629,7 @@
         "machinery_and_land_preparation_costs": "blocked_no_current_district_machinery_hire_land_preparation_and_transport_cost_schedule_extracted",
         "regional_enterprise_budget_and_gross_margin": "blocked_no_complete_province_and_agroecological_zone_enterprise_budgets; rainfed_irrigated_horticulture_and_livestock_systems_need_separate_costs",
         "currency_and_exchange_rate_method": "partial_USD_and_ZWG_PPI_series_available; calculator_currency_rules_and_exchange_rate_date_policy_not_validated",
-        "source_provenance_and_observation_date": "pass_for_2024_25_ZIMSTAT_PHS_2026_09_PPI_2026_09_11_GMB_price_announcement_2026_09_FEWS_NET_and_2026_10_21_2026_11_03_policy_updates; underlying_PPI_rows_not_extracted",
+        "source_provenance_and_observation_date": "pass_official_2025_26_CLAFA2_report_version_2026_04_17_and_table_reference_periods_recorded; unresolved_table_conflicts_explicitly_flagged",
         "calculator_mapping_and_test_cases": "blocked_no_validated_province_enterprise_mapping_or_calculator_regression_cases"
       },
       "blockers": [
@@ -2640,9 +2640,12 @@
         "Refresh district-level 2026/27 AMA agro-input monitor prices for seed, fertilizer, pesticides, feed and veterinary products; 2025 quotes are not current.",
         "Obtain farmer-paid costs for labour, land preparation, machinery, irrigation, pumping energy, diesel, transport and crop protection by province.",
         "Separate rainfed summer crops, irrigated winter wheat, horticulture and livestock budgets; incorporate El Niño risk without inventing yield scenarios.",
-        "Build and test validated province/zone-specific enterprise budgets before enabling Zimbabwe."
+        "Build and test validated province/zone-specific enterprise budgets before enabling Zimbabwe.",
+        "First-level selector now includes all ten official units; do not treat Harare or Bulawayo as having zero crop output merely because the eight-rural-province crop tables omit them.",
+        "The lower-level district/ward boundary file is identified but requires login; obtain and validate current official codes and boundaries before adding a lower-level selector.",
+        "Resolve the 2024/25 soybean discrepancy between the Post-Harvest Survey and 2025/26 CLAFA-2 prior-season comparator before using soybean historical baselines."
       ],
-      "next_step": "Extract the ZIMSTAT September 2026 PPI-A datasets and the PHS crop-specific harvested-area/provincial tables; resolve the soybean discrepancy, then refresh AMA district input quotes and collect non-cereal farmgate prices and full production costs.",
+      "next_step": "Extract remaining 2025/26 crop and livestock tables and 2026/27 dated farmgate/producer transaction prices; obtain current farmer-paid seed, fertilizer, crop protection, irrigation, energy, labour and machinery costs; validate region-specific enterprise budgets and calculator test cases.",
       "november_2026_review": {
         "review_date": "2026-11-05",
         "status": "review_completed_not_ready",
@@ -2906,11 +2909,32 @@
             "readiness_effect": "Partial progress on dated exchange transaction-price evidence for three commodities only. This does not satisfy broad farmgate-price or full cost-budget criteria. Zimbabwe remains inactive."
           }
         }
+      },
+      "administrative_geography_review": {
+        "first_level_units": [
+          "Manicaland",
+          "Mashonaland Central",
+          "Mashonaland East",
+          "Mashonaland West",
+          "Masvingo",
+          "Matabeleland North",
+          "Matabeleland South",
+          "Midlands",
+          "Bulawayo",
+          "Harare"
+        ],
+        "first_level_verified": true,
+        "lower_level_units_identified": {
+          "districts": 91,
+          "wards": 1961
+        },
+        "lower_level_boundary_file_imported": false,
+        "lower_level_blocker": "ZimStats/UNOCHA geodatabase download requires login; validate current names, codes, boundary vintage and province crosswalk before importing."
       }
     }
   ],
   "next_country": null,
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-23",
   "last_completed_country": {
     "code": "ZW",
     "name": "Zimbabwe"
@@ -2923,9 +2947,9 @@
     "note": "Evidence review complete; calculator readiness is a separate certification. No additional country is certified ready by completion of this review."
   },
   "last_follow_up_country": {
-    "code": "CD",
-    "name": "Democratic Republic of the Congo",
-    "review_date": "2026-11-16",
-    "focus": "official first-level province list and selector coverage"
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "review_date": "2026-11-23",
+    "focus": "verify first-level administrative units and extract current 2025/26 province-level crop area, yield and production tables"
   }
 }
