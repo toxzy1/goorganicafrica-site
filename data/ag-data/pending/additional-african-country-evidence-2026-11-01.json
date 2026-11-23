@@ -2428,7 +2428,7 @@
     {
       "country_code": "ZW",
       "country_name": "Zimbabwe",
-      "evidence_status": "november_2026_review_added_2026_27_GMB_producer_price_schedule_ZIMSTAT_September_2026_agricultural_PPI_portal_current_El_Nino_and_input_distribution_updates; crop_harvest_area_yields_and_farm_budget_costs_pending",
+      "evidence_status": "2026_11_23_follow_up_verified_ten_admin1_units_and_extracted_2025_26_CLAFA2_provincial_area_yield_production_for_11_crop_groups; farmgate_price_and_full_enterprise_cost_gaps_remain",
       "survey": {
         "title": "2024/25 Post-Harvest Survey; Crops, Livestock and Fisheries Assessments",
         "publisher": "Zimbabwe National Statistics Agency (ZIMSTAT) and Ministry of Lands, Agriculture, Fisheries, Water and Rural Development",
@@ -2872,6 +2872,29 @@
           "quality_notes": [
             "Secondary reporting summarizes AMA Agro-Input Monitor Issue 6. Retrieve the original AMA bulletin and obtain 2026/27 quotes; these 2025 prices are not calculator-ready."
           ]
+        },
+        {
+          "title": "Zimbabwe 2025/26 Second Round Crops, Livestock and Fisheries Assessment (CLAFA-2)",
+          "publisher": "Ministry of Lands, Agriculture, Fisheries, Water and Rural Development; ZIMSTAT",
+          "url": "https://www.agric.gov.zw/wp-content/uploads/2020/07/CLAFA-2-Report-2026-Final-17-April-Print-3.pdf",
+          "report_version_date": "2026-04-17 (from official PDF filename)",
+          "reference_period": "2025/26 summer season",
+          "status": "official_second_round_crop_assessment",
+          "note": "Provincial area, yield and production tables extracted for 11 crop groups. Assessment estimates are not post-harvest actuals."
+        },
+        {
+          "title": "Zimbabwe administrative divisions — Ministry of Foreign Affairs",
+          "publisher": "Government of Zimbabwe",
+          "url": "https://www.zimfa.gov.zw/index.php/about-us/zimbabwe-in-brief/facts-and-figures",
+          "status": "official_first_level_administrative_geography",
+          "note": "Confirms eight provinces and two cities with provincial status: Bulawayo and Harare."
+        },
+        {
+          "title": "Zimbabwe administrative boundaries",
+          "publisher": "Zimbabwe Geoportal; metadata attributes source to ZIMSTAT and UNOCHA",
+          "url": "https://zimgeoportal.org.zw/datasets/zimbabwe-administrative-boundaries/",
+          "status": "lower_level_boundary_metadata_access_restricted",
+          "note": "Metadata identifies Admin1 provinces, Admin2 districts and Admin3 wards; download file requires login. A separate COD-AB metadata listing reports 91 districts and 1,961 wards; codes/boundaries have not been imported."
         }
       ],
       "priority_commodities": [
@@ -2897,9 +2920,736 @@
         "Obtain labour rates, land preparation, machinery hire, irrigation water, pumping energy, diesel and transport costs by province and agro-ecological zone.",
         "Separate rainfed summer crops, irrigated winter wheat, horticulture and livestock budgets; account for the forecast El Niño and drought exposure in southern/western zones.",
         "Obtain full livestock and poultry enterprise budgets including purchase/liveweight price, feed, veterinary inputs, mortality, labour and water.",
-        "Map province/district selectors and calculator tests only after source-backed yield, farmgate revenue and cost inputs are complete."
+        "Map province/district selectors and calculator tests only after source-backed yield, farmgate revenue and cost inputs are complete.",
+        "The 10 first-level units are now verified and present in the lookup. District/ward codes and boundaries remain unimported pending download and validation of the ZimStats/UNOCHA boundary file.",
+        "2025/26 CLAFA-2 provincial tables have been extracted for 11 crop groups, but the 17 supported enterprise profiles, livestock datasets, local transaction prices and itemized costs are not yet fully covered."
       ],
-      "extraction_status": "November 2026 refresh adds ZIMSTAT's September 2026 monthly agricultural PPI data portal (USD, ZWG and weighted series; dataset rows not yet extracted), GMB's reported 2026/27 incentive prices (winter wheat USD531.93/MT, maize/traditional grains USD432/MT, soybean USD660.95/MT, sunflower USD826.19/MT), FEWS NET's Sep 2026-Jan 2027 El Niño/market/livestock risk update, Government's Oct 21 2026 2026/27 cereal plan projection (1.607m tonnes against 2.270m tonnes requirement), and Nov 3 input-distribution update. Government input distribution is not a farmer price. AMA agro-input price examples from June 2025 are retained only as historical district price leads and must be refreshed. No new calculator values admitted."
+      "extraction_status": "November 2026 refresh adds ZIMSTAT's September 2026 monthly agricultural PPI data portal (USD, ZWG and weighted series; dataset rows not yet extracted), GMB's reported 2026/27 incentive prices (winter wheat USD531.93/MT, maize/traditional grains USD432/MT, soybean USD660.95/MT, sunflower USD826.19/MT), FEWS NET's Sep 2026-Jan 2027 El Niño/market/livestock risk update, Government's Oct 21 2026 2026/27 cereal plan projection (1.607m tonnes against 2.270m tonnes requirement), and Nov 3 input-distribution update. Government input distribution is not a farmer price. AMA agro-input price examples from June 2025 are retained only as historical district price leads and must be refreshed. No new calculator values admitted.",
+      "administrative_geography_follow_up_2026_11_23": {
+        "verified_first_level_units": [
+          "Manicaland",
+          "Mashonaland Central",
+          "Mashonaland East",
+          "Mashonaland West",
+          "Masvingo",
+          "Matabeleland North",
+          "Matabeleland South",
+          "Midlands",
+          "Bulawayo",
+          "Harare"
+        ],
+        "unit_definition": "Eight rural provinces plus Harare and Bulawayo, each a city with provincial status.",
+        "lower_level_geography": {
+          "district_level": "91 districts reported in the ZimStats/UNOCHA COD-AB administrative-boundary metadata.",
+          "ward_level": "1,961 wards reported in the same metadata.",
+          "decision": "Do not insert districts or wards into the first-level region array. The ZimGeoportal source file requires login to download; validate current official codes, names, boundaries and province crosswalk before adding a lower-level selector."
+        },
+        "selector_added": true,
+        "sources": [
+          "https://www.zimfa.gov.zw/index.php/about-us/zimbabwe-in-brief/facts-and-figures",
+          "https://www.zimstat.co.zw/wp-content/uploads/Census/2022_PHC_Report_27012023_Final.pdf",
+          "https://zimgeoportal.org.zw/datasets/zimbabwe-administrative-boundaries/"
+        ]
+      },
+      "crop_tables_follow_up_2026_11_23": {
+        "report": "2025/26 Second Round Crops, Livestock and Fisheries Assessment (CLAFA-2)",
+        "publisher": "Ministry of Lands, Agriculture, Fisheries, Water and Rural Development and Zimbabwe National Statistics Agency",
+        "report_url": "https://www.agric.gov.zw/wp-content/uploads/2020/07/CLAFA-2-Report-2026-Final-17-April-Print-3.pdf",
+        "report_version_date": "2026-04-17 (from official PDF filename)",
+        "reference_period": "2025/26 summer season; second-round crop assessment estimates, not a completed post-harvest survey",
+        "geography": "Eight rural provinces in the crop tables; Harare and Bulawayo remain in the administrative selector but are not represented in these provincial crop tables.",
+        "units": {
+          "area": "hectares",
+          "yield": "metric tonnes per hectare",
+          "production": "metric tonnes"
+        },
+        "table_values_schema": [
+          "province",
+          "area_ha",
+          "yield_t_per_ha",
+          "production_mt"
+        ],
+        "provincial_crop_tables": {
+          "maize": [
+            {
+              "province": "Manicaland",
+              "area_ha": 251453,
+              "yield_t_per_ha": 0.84,
+              "production_mt": 212308
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 181412,
+              "yield_t_per_ha": 1.58,
+              "production_mt": 286149
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 263048,
+              "yield_t_per_ha": 1.22,
+              "production_mt": 319851
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 375616,
+              "yield_t_per_ha": 2.07,
+              "production_mt": 776343
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 242695,
+              "yield_t_per_ha": 0.56,
+              "production_mt": 136142
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 134676,
+              "yield_t_per_ha": 1.09,
+              "production_mt": 146638
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 87250,
+              "yield_t_per_ha": 0.87,
+              "production_mt": 75845
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 379999,
+              "yield_t_per_ha": 1.03,
+              "production_mt": 392980
+            }
+          ],
+          "sorghum": [
+            {
+              "province": "Manicaland",
+              "area_ha": 57334,
+              "yield_t_per_ha": 0.6,
+              "production_mt": 34331
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 76227,
+              "yield_t_per_ha": 0.96,
+              "production_mt": 73476
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 23641,
+              "yield_t_per_ha": 0.77,
+              "production_mt": 18136
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 27934,
+              "yield_t_per_ha": 1.2,
+              "production_mt": 33476
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 79789,
+              "yield_t_per_ha": 0.77,
+              "production_mt": 61580
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 30630,
+              "yield_t_per_ha": 0.69,
+              "production_mt": 21117
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 32583,
+              "yield_t_per_ha": 0.52,
+              "production_mt": 16946
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 47165,
+              "yield_t_per_ha": 0.66,
+              "production_mt": 31156
+            }
+          ],
+          "pearl_millet": [
+            {
+              "province": "Manicaland",
+              "area_ha": 40182,
+              "yield_t_per_ha": 0.34,
+              "production_mt": 13615
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 4364,
+              "yield_t_per_ha": 0.45,
+              "production_mt": 1946
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 4413,
+              "yield_t_per_ha": 0.35,
+              "production_mt": 1556
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 572,
+              "yield_t_per_ha": 0.5,
+              "production_mt": 285
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 72669,
+              "yield_t_per_ha": 0.38,
+              "production_mt": 27292
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 58298,
+              "yield_t_per_ha": 0.5,
+              "production_mt": 28981
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 23799,
+              "yield_t_per_ha": 0.37,
+              "production_mt": 8852
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 9935,
+              "yield_t_per_ha": 0.52,
+              "production_mt": 5150
+            }
+          ],
+          "finger_millet": [
+            {
+              "province": "Manicaland",
+              "area_ha": 12587,
+              "yield_t_per_ha": 0.33,
+              "production_mt": 4208
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 212,
+              "yield_t_per_ha": 0.42,
+              "production_mt": 88
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 5463,
+              "yield_t_per_ha": 0.37,
+              "production_mt": 2030
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 557,
+              "yield_t_per_ha": 0.52,
+              "production_mt": 291
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 10100,
+              "yield_t_per_ha": 0.36,
+              "production_mt": 3644
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 98,
+              "yield_t_per_ha": 0.6,
+              "production_mt": 59
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 852,
+              "yield_t_per_ha": 0.47,
+              "production_mt": 397
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 4979,
+              "yield_t_per_ha": 0.33,
+              "production_mt": 1661
+            }
+          ],
+          "soybean": [
+            {
+              "province": "Manicaland",
+              "area_ha": 252,
+              "yield_t_per_ha": 3.25,
+              "production_mt": 819
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 23519,
+              "yield_t_per_ha": 2.36,
+              "production_mt": 55504
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 2855,
+              "yield_t_per_ha": 2.8,
+              "production_mt": 7994
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 16894,
+              "yield_t_per_ha": 1.68,
+              "production_mt": 28382
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 19,
+              "yield_t_per_ha": 1.34,
+              "production_mt": 25
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 180,
+              "yield_t_per_ha": 1.49,
+              "production_mt": 268
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 164,
+              "yield_t_per_ha": 2.36,
+              "production_mt": 388
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 1165,
+              "yield_t_per_ha": 2.36,
+              "production_mt": 2749
+            }
+          ],
+          "irish_potato": [
+            {
+              "province": "Manicaland",
+              "area_ha": 2921,
+              "yield_t_per_ha": 29,
+              "production_mt": 81788
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 2287,
+              "yield_t_per_ha": 27,
+              "production_mt": 61749
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 2381,
+              "yield_t_per_ha": 25,
+              "production_mt": 64287
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 3461,
+              "yield_t_per_ha": 26,
+              "production_mt": 89986
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 59,
+              "yield_t_per_ha": 24,
+              "production_mt": 1416
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 168,
+              "yield_t_per_ha": 26,
+              "production_mt": 4368
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 65,
+              "yield_t_per_ha": 25,
+              "production_mt": 1625
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 662,
+              "yield_t_per_ha": 27,
+              "production_mt": 17874
+            }
+          ],
+          "sweet_potato": [
+            {
+              "province": "Manicaland",
+              "area_ha": 6930,
+              "yield_t_per_ha": 6.57,
+              "production_mt": 45556
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 1684,
+              "yield_t_per_ha": 5.85,
+              "production_mt": 9853
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 6230,
+              "yield_t_per_ha": 4.23,
+              "production_mt": 26322
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 3367,
+              "yield_t_per_ha": 5.49,
+              "production_mt": 18489
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 7200,
+              "yield_t_per_ha": 2.71,
+              "production_mt": 19489
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 511,
+              "yield_t_per_ha": 1.55,
+              "production_mt": 792
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 474,
+              "yield_t_per_ha": 1.72,
+              "production_mt": 816
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 6711,
+              "yield_t_per_ha": 2.12,
+              "production_mt": 14248
+            }
+          ],
+          "groundnut": [
+            {
+              "province": "Manicaland",
+              "area_ha": 43688,
+              "yield_t_per_ha": 0.38,
+              "production_mt": 16758
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 21696,
+              "yield_t_per_ha": 0.53,
+              "production_mt": 11407
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 43391,
+              "yield_t_per_ha": 0.46,
+              "production_mt": 19761
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 17615,
+              "yield_t_per_ha": 0.66,
+              "production_mt": 11662
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 43624,
+              "yield_t_per_ha": 0.38,
+              "production_mt": 16786
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 6302,
+              "yield_t_per_ha": 0.4,
+              "production_mt": 2511
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 7834,
+              "yield_t_per_ha": 0.31,
+              "production_mt": 2454
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 56963,
+              "yield_t_per_ha": 0.49,
+              "production_mt": 27962
+            }
+          ],
+          "sugar_bean": [
+            {
+              "province": "Manicaland",
+              "area_ha": 7755,
+              "yield_t_per_ha": 0.46,
+              "production_mt": 3604
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 5521,
+              "yield_t_per_ha": 0.65,
+              "production_mt": 3588
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 6723,
+              "yield_t_per_ha": 0.46,
+              "production_mt": 3096
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 7730,
+              "yield_t_per_ha": 0.8,
+              "production_mt": 6206
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 1310,
+              "yield_t_per_ha": 0.56,
+              "production_mt": 734
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 510,
+              "yield_t_per_ha": 0.43,
+              "production_mt": 218
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 643,
+              "yield_t_per_ha": 0.24,
+              "production_mt": 157
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 2882,
+              "yield_t_per_ha": 0.38,
+              "production_mt": 1101
+            }
+          ],
+          "african_pea": [
+            {
+              "province": "Manicaland",
+              "area_ha": 5853,
+              "yield_t_per_ha": 0.24,
+              "production_mt": 1429
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 13030,
+              "yield_t_per_ha": 0.34,
+              "production_mt": 4366
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 6754,
+              "yield_t_per_ha": 0.28,
+              "production_mt": 1898
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 7982,
+              "yield_t_per_ha": 0.44,
+              "production_mt": 3528
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 5423,
+              "yield_t_per_ha": 0.25,
+              "production_mt": 1382
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": 5127,
+              "yield_t_per_ha": 0.28,
+              "production_mt": 1450
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 3015,
+              "yield_t_per_ha": 0.22,
+              "production_mt": 650
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 22085,
+              "yield_t_per_ha": 0.28,
+              "production_mt": 6174
+            }
+          ],
+          "rice": [
+            {
+              "province": "Manicaland",
+              "area_ha": 185,
+              "yield_t_per_ha": 0.8,
+              "production_mt": 148
+            },
+            {
+              "province": "Mashonaland Central",
+              "area_ha": 53,
+              "yield_t_per_ha": 0.51,
+              "production_mt": 27
+            },
+            {
+              "province": "Mashonaland East",
+              "area_ha": 93,
+              "yield_t_per_ha": 0.4,
+              "production_mt": 37
+            },
+            {
+              "province": "Mashonaland West",
+              "area_ha": 28,
+              "yield_t_per_ha": 0.39,
+              "production_mt": 11
+            },
+            {
+              "province": "Masvingo",
+              "area_ha": 763,
+              "yield_t_per_ha": 0.49,
+              "production_mt": 372
+            },
+            {
+              "province": "Matabeleland North",
+              "area_ha": null,
+              "yield_t_per_ha": null,
+              "production_mt": null
+            },
+            {
+              "province": "Matabeleland South",
+              "area_ha": 8,
+              "yield_t_per_ha": 0.25,
+              "production_mt": 2
+            },
+            {
+              "province": "Midlands",
+              "area_ha": 222,
+              "yield_t_per_ha": 0.54,
+              "production_mt": 119
+            }
+          ]
+        },
+        "national_totals_as_printed": {
+          "maize": {
+            "area_ha": 1916150,
+            "yield_t_per_ha": 1.22,
+            "production_mt": 2346256
+          },
+          "sorghum": {
+            "area_ha": 375303,
+            "yield_t_per_ha": 0.77,
+            "production_mt": 290216
+          },
+          "pearl_millet": {
+            "area_ha": 214232,
+            "yield_t_per_ha": 0.41,
+            "production_mt": 87677
+          },
+          "finger_millet": {
+            "area_ha": 34849,
+            "yield_t_per_ha": 0.36,
+            "production_mt": 12379
+          },
+          "soybean": {
+            "area_ha": 45048,
+            "yield_t_per_ha": 2.13,
+            "production_mt": 96129
+          },
+          "irish_potato": {
+            "area_ha": 12004,
+            "yield_t_per_ha": 28,
+            "production_mt": 323093
+          },
+          "sweet_potato": {
+            "area_ha": 33108,
+            "yield_t_per_ha": 4.09,
+            "production_mt": 135565
+          },
+          "groundnut": {
+            "area_ha": 241113,
+            "yield_t_per_ha": 0.45,
+            "production_mt": 109301
+          },
+          "sugar_bean": {
+            "area_ha": 33075,
+            "yield_t_per_ha": 0.57,
+            "production_mt": 18703
+          },
+          "african_pea": {
+            "area_ha": 69268,
+            "yield_t_per_ha": 0.3,
+            "production_mt": 20877
+          },
+          "rice": {
+            "area_ha": 1353,
+            "yield_t_per_ha": 0.53,
+            "production_mt": 716
+          }
+        },
+        "extraction_notes": [
+          "Eleven province-level crop datasets were transcribed from the report tables: maize, sorghum, pearl millet, finger millet, soybean, Irish potato, sweet potato, groundnut, sugar bean, African pea and rice.",
+          "The crop tables list eight rural provinces, not Harare or Bulawayo. Missing metropolitan observations are not imputed as zero.",
+          "The maize total in Table 2 is 2,346,256 MT and 1,916,150 ha; the 2025/26 first-round report's preliminary maize planted-area estimate was 1,898,528 ha. Use the later second-round assessment for this season's provincial crop estimate, retaining the earlier first-round figure as a preliminary vintage.",
+          "The 2025/26 second-round report revises 2024/25 maize area to 1,839,373 ha, while the 2025/26 first-round report's comparison table used 1,822,906 ha. The former matches the 2024/25 final CLAFA-2 table; preserve the revision history rather than silently mixing vintages.",
+          "The 2024/25 Post-Harvest Survey soybean figure (57,750 MT in Tables 3.2/3.8; Table 3.7 printed 7,750 MT) conflicts with the 2025/26 CLAFA-2 prior-season comparator (41,919 MT). This remains unresolved; do not choose one value as the canonical 2024/25 result without ZIMSTAT clarification.",
+          "The report's sorghum natural-region table contains an internally inconsistent Region 4 production value (679,222 MT) against the national total of 290,216 MT and province table. Exclude that natural-region table from calculator mapping pending correction.",
+          "Some row values are estimates and may not reconcile exactly with rounded totals; retain the published numbers and source table references."
+        ],
+        "source_tables": [
+          {
+            "crop": "maize",
+            "table": "Table 2: Maize expected production by province",
+            "page": 27
+          },
+          {
+            "crop": "sorghum",
+            "table": "Table 4: Sorghum production by province",
+            "page": 30
+          },
+          {
+            "crop": "pearl_millet",
+            "table": "Table 6: Pearl millet production by province",
+            "page": 34
+          },
+          {
+            "crop": "finger_millet",
+            "table": "Table 9: Finger millet production by province",
+            "page": 36
+          },
+          {
+            "crop": "irish_potato",
+            "table": "Table 11: Irish potato production by province",
+            "page": 39
+          },
+          {
+            "crop": "soybean",
+            "table": "Table 21: Soya bean production",
+            "page": 47
+          },
+          {
+            "crop": "groundnut",
+            "table": "Table 23: Groundnut production by province",
+            "page": 48
+          },
+          {
+            "crop": "sugar_bean",
+            "table": "Table 27: Sugar bean production by province",
+            "page": 51
+          },
+          {
+            "crop": "african_pea",
+            "table": "Table 28: African pea production by province",
+            "page": 52
+          },
+          {
+            "crop": "sweet_potato",
+            "table": "Table 29: Sweet potato production by province",
+            "page": 52
+          },
+          {
+            "crop": "rice",
+            "table": "Table 30: Rice production by province",
+            "page": 53
+          }
+        ],
+        "not_extracted_or_incomplete": [
+          "Sunflower, sesame, roundnut, cotton and tobacco tables were identified but not transcribed in this follow-up.",
+          "The report's horticulture crop production table is national-only; only Irish potato has a complete provincial area/yield/production table in this follow-up.",
+          "Livestock production tables, district-level area/yield microdata and the remaining supported calculator enterprises still require extraction and schema mapping."
+        ]
+      }
     },
     {
       "country_code": "NA",
